@@ -30,7 +30,7 @@ Provides a low-level interface to time zone information about the result of conv
 |Name|Value|Description|
 |------|------|-------------|
 |`unique` | 0 | The result of the conversion is unique. |
-|`nonexistent` | 1 | There isn't a corresponding `sys_time` for the `local_time`. |
+|`nonexistent` | 1 | There isn't a corresponding `sys_time` to convert the `local_time` to. |
 |`ambiguous` | 2 | The result of the conversion is ambiguous. |
 
 ## Non-members
@@ -52,7 +52,7 @@ int result;
 The result can be one of the following values: 
 - `unique`: The `local_time` was successfully converted to a `sys_time`.
 - `nonexistent`: There isn't a mapping from the `local_time` to the `sys_time`.
-- `ambiguous`: The `local_time` lands during a transition between daylight saving time and standard time and so could resolve to two `sys_time` values.
+- `ambiguous`: The `local_time` lands during a transition between daylight saving time and standard time and so could be converted to two `sys_time` values.
 
 ### Remarks
 
@@ -77,15 +77,15 @@ sys_seconds end;
 |`nonexistent`| A `sys_info` that ends just before the `local_time`|A `sys_info` that begins just after the `local_time`.|
 | `ambiguous` | A `sys_info` that ends just after the `local_time` | A `sys_info` that starts just before the `local_time`.|
 
-** `nonexistent` result code**
+**`nonexistent` result code**
 
-During the transition from standard time to daylight saving time in the spring, clocks effectively lose an hour. This can be confusing because doesn't the transition to daylight saving time mean gaining an hour? By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" and so you can expect `result` to have the `nonexistent` code. See [`nonexistent_local_time`](nonexistent-local-time.md#example-nonexistent_local_time) for an example.
+During the transition from standard time to daylight saving time in the spring, clocks essentially lose an hour. This can be confusing because doesn't the transition to daylight saving time mean adding an hour? By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" and so you can expect `result` to have the `nonexistent` code. See [`nonexistent_local_time`](nonexistent-local-time.md#example-nonexistent_local_time) for an example.
 
 **`ambiguous` result code**
 
-During the transition from daylight saving time to standard time in the fall, clocks effectively gain an extra hour. This can be confusing because doesn't the transition to standard time mean losing an hour? By falling back an hour, the hour before the transition will be repeated after the clock adjusts for standard time. Consider the change to standard time in New York, which happens on the first Sunday in November at 2:00am. The clock notes that 1:00am goes by. At 2am, the clock transitions to standard time. Now it's 1:00am again. That means the time between 1am and 2am will be "repeated" now that the clock has adjusted, effectively adding an hour. See [`ambiguous_local_time`](ambiguous-local-time.md#example-ambiguous_local_time) for an example.
+During the transition from daylight saving time to standard time in the fall, clocks essentially gain an extra hour. This can be confusing because doesn't the transition to standard time mean losing an hour? By falling back an hour, the hour before the transition will be repeated after the clock adjusts for standard time. Consider the change to standard time in New York, which happens on the first Sunday in November at 2:00am. First, 1:00am goes by. At 2am, the clock transitions to standard time. Now it's 1:00am again. That means the time between 1am and 2am will be "repeated", effectively adding an hour. See [`ambiguous_local_time`](ambiguous-local-time.md#example-ambiguous_local_time) for an example.
 
-If a `local_time` specifies a time during this hour, it isn't clear how to convert it. Should the converted `sys_time` be treated as being in daylight saving or standard time? If the [`choose`](choose-enum.md) isn't specified to indicate which it should be, you'd expect an `ambiguous` `result` code and `first` and `second` will reflect the two options the `local_time` could be converted to.
+If a `local_time` specifies a time during this hour, it isn't clear how to convert it. Should the converted `sys_time` be treated as daylight saving or standard time? If the [`choose`](choose-enum.md) isn't specified to indicate which it should be, you'd expect `result` to be set to `ambiguous`, and `first` and `second` will reflect the two times the `local_time` could be converted to.
 
 ## Example: get a `local_info`
 
@@ -126,9 +126,12 @@ result: unique, first: (begin: 2021-03-14 10:00:00, end: 2021-11-07 09:00:00, of
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
 [`<chrono>`](chrono.md)\
-[`file_clock class`](file-clock-class.md)\
+[`ambiguous_local_time` exception](ambiguous-local-time.md#example-ambiguous_local_time)
+[`choose` enum](choose-enum.md)\
+[`file_clock` class](file-clock-class.md)\
 [`high_resolution_clock`](high-resolution-clock-struct.md)\
 [`local_t` struct](local_t.md)\
+[`non_existent` exception](nonexistent-local-time.md)\
 [`system_clock` struct](system-clock-structure.md)\
 [`tai_clock` class](tai-clock-class.md)\
 [`utc_clock` class](utc-clock-class.md)\

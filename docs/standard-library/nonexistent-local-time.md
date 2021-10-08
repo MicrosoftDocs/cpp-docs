@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: nonexistent_local_time class"
 title: "nonexistent_local_time class"
-ms.date: 10/05/2021
+ms.date: 10/08/2021
 f1_keywords: ["chrono/std::chrono::nonexistent_local_time", "chrono/std::chrono::nonexistent_local_time::what"]
 helpviewer_keywords: ["std::chrono [C++],  nonexistent_local_time"]
 ---
 
 # `nonexistent_local_time` class
 
-The exception thrown when attempting to convert a `local_time` to a non-existent `sys_time`.
+This exception is thrown when attempting to convert a `local_time` to a non-existent `sys_time`.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ class nonexistent_local_time : public runtime_error; // c++ 20
 
 ## Remarks
 
-During the transition from standard time to daylight saving time in the spring, clocks effectively lose an hour. This can be confusing because doesn't the transition to daylight saving time mean gaining an hour? By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" and so is "nonexistent".
+During the transition from standard time to daylight saving time in the spring, clocks essentially lose an hour. This can be confusing because doesn't the transition to daylight saving time mean adding an hour? By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" and so is "nonexistent".
 
 The following example demonstrates a nonexistent time conversion error. In this example, daylight saving time in New York starts at 2:00am. The time being converted is 2:30am. That's during the hour that is removed because the transition from standard time to daylight saving time. So, a `nonexistent_local_time` exception is thrown.
 
