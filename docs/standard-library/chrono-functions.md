@@ -136,7 +136,7 @@ Returns a pointer to a [`time_zone`](./time-zone-class.md) as if by a call to `g
 
 ## <a name="std-chrono-duration-cast"></a> `duration_cast`
 
-Cast a [`duration`](../standard-library/duration-class.md) to the specified target `duration` type.
+Casts a [`duration`](../standard-library/duration-class.md) to the specified target `duration` type.
 
 ### Syntax
 

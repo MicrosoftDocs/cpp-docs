@@ -119,7 +119,7 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 9\) Returns the result of adding months or years to a `year_month_day`.  If `ymd.month()` is `February` and `ymd.day()` is not in the range [1d, 28d], `ok()` may return `false` for the result of the addition.
 
-10\) Returns `(ymdl.year() / ymdl.month() + dm) / last`. Note: The `/` used here isn't a division operator but the date operator.
+10\) Returns `(ymdl.year() / ymdl.month() + dm) / last`. Note: The `/` used here isn't a division operator. It's the date operator.
 
 11\) Returns `ymdl + dm`.
 
@@ -457,8 +457,8 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-1) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* aren't equal. Otherwise, returns **`false`**.\
-2) Returns **`true`**  if the two [`time_point`](time-point-class.md) objects don't represent the same point in time. Otherwise, returns **`false`**.\
+1\) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* aren't equal. Otherwise, returns **`false`**.\
+2\) Returns **`true`**  if the two [`time_point`](time-point-class.md) objects don't represent the same point in time. Otherwise, returns **`false`**.\
 
 ## <a name="op_star"></a> `operator*`
 
@@ -491,11 +491,11 @@ An integral value.
 
 ### Return value
 
-Each function returns a `duration` object whose interval length is *`Mult`* multiplied by the length of *`Dur`*.
+Returns a `duration` object whose interval length is *`Mult`* multiplied by the length of *`Dur`*.
 
-Unless `is_convertible<Rep2, common_type<Rep1, Rep2>>`*holds `true`*, the first function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+1\) Unless `is_convertible<Rep2, common_type<Rep1, Rep2>>`*holds `true`*, this function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
-Unless `is_convertible<Rep1, common_type<Rep1, Rep2>>`*holds `true`*, the second function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+2\) Unless `is_convertible<Rep1, common_type<Rep1, Rep2>>`*holds `true`*, this function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
 ## <a name="op_lt"></a> `operator<`
 
@@ -527,9 +527,9 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-1) Returns **`true`** if number of ticks for *`Left`* is less than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
+1\) Returns **`true`** if number of ticks for *`Left`* is less than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
 
-2) Returns **`true`** if *`Left`* precedes *`Right`*. Otherwise, returns **`false`**.
+2\) Returns **`true`** if *`Left`* precedes *`Right`*. Otherwise, returns **`false`**.
 
 ## <a name="op_lt_eq"></a> `operator<=`
 
@@ -701,9 +701,9 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-1) Returns **`true`** if number of ticks for *`Left`* is greater than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
+1\) Returns **`true`** if number of ticks for *`Left`* is greater than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
 
-2) Returns **`true`** if *`Left`* comes after *`Right`*. Otherwise, returns **`false`**.
+2\) Returns **`true`** if *`Left`* comes after *`Right`*. Otherwise, returns **`false`**.
 
 ## <a name="op_gt_eq"></a> `operator>=`
 
@@ -1175,16 +1175,16 @@ A `duration` object.
 An integral value.
 
 *`Left`*\
-The left `duration` object.
+The dividend. The modulo is the remainder after dividing the dividend by the divisor.
 
 *`Right`*\
-The right `duration` object.
+The right `duration` object, the divisor.
 
 ### Return value
 
-1) Returns a `duration` object whose interval length is *`Dur`* modulo *`Div`*.
+1\) Returns a `duration` object whose interval length is *`Dur`* modulo *`Div`*.
 
-2) Returns a value that represents *`Left`* modulo *`Right`*.
+2\) Returns a value that represents *`Left`* modulo *`Right`*.
 
 ## <a name="op_div"></a> `operator/` for `duration`
 
@@ -1198,7 +1198,7 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period1>
      const duration<Rep1, Period1>& Dur,
      const Rep2& Div);
 
-// 2)
+2)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr typename common_type<Rep1, Rep2>::type
    operator/(

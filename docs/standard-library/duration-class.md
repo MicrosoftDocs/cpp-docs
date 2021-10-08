@@ -20,7 +20,7 @@ template <class Rep, class Period1, class Period2> class duration <duration<Rep,
 
 ## Remarks
 
-The template argument `Rep` describes the type that is used to hold the number of clock ticks in the interval. The template argument `Period` is an instantiation of [ratio](ratio.md) that describes the size of the interval that each tick represents.
+The template argument `Rep` describes the type that is used to hold the number of clock ticks in the interval. The template argument `Period` is an instantiation of [`ratio`](ratio.md) that describes the size of the interval that each tick represents.
 
 ## Members
 
