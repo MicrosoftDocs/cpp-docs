@@ -126,7 +126,7 @@ result: unique, first: (begin: 2021-03-14 10:00:00, end: 2021-11-07 09:00:00, of
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
 [`<chrono>`](chrono.md)\
-[`ambiguous_local_time` exception](ambiguous-local-time.md#example-ambiguous_local_time)
+[`ambiguous_local_time` exception](ambiguous-local-time.md#example-ambiguous_local_time)\
 [`choose` enum](choose-enum.md)\
 [`file_clock` class](file-clock-class.md)\
 [`high_resolution_clock`](high-resolution-clock-struct.md)\
