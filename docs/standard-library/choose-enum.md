@@ -8,7 +8,7 @@ helpviewer_keywords: ["std::choose"]
 
 # `choose` enum
 
-Used with [`time_zone`](time-zone-class.md) and [`zoned_time`](zoned-time-class.md) to indicate how to handle ambiguous or nonexistent `local_time` to `sys_time` conversions.
+Used with [`time_zone`](time-zone-class.md) and [`zoned_time`](zoned-time-class.md) to indicate how to handle an ambiguous or nonexistent `local_time` to `sys_time` conversion.
 
 ## Syntax
 
@@ -34,11 +34,11 @@ If the result of the conversion is a `nonexistent_local_time`, the time in `earl
 
 During the transition from daylight saving time to standard time in the fall, clocks essentially gain an extra hour. This can be confusing because doesn't the transition to standard time mean losing an hour? By falling back an hour, the hour before the transition will be repeated after the clock adjusts for standard time. Consider the change to standard time in New York, which happens on the first Sunday in November at 2:00am. First, 1:00am goes by. At 2am, the clock transitions to standard time, so now it's 1:00am again. That means the time between 1am and 2am will be "repeated", effectively adding an hour.
 
-If a `local_time` specifies a time during this "extra" hour, it isn't clear how to convert it. Should the converted time be treated as the "first" time that hour happens, or the "second"? If the [`choose`](choose-enum.md) isn't specified to indicate which it should be, you'll get an `ambiguous_local_time` exception.
+If a `local_time` specifies a time during this "extra" hour, it isn't clear how to convert it. Should the converted time be treated as the "first" time that hour happens, or the "second"? If the enum [`choose`](choose-enum.md) isn't specified to indicate which it should be, you'll get an `ambiguous_local_time` exception.
 
 **Nonexistent conversion error**
 
-This problem doesn't exist when converting from standard time to daylight saving time. In that case, a different problem can arise. During the transition from standard time to daylight saving time in the spring, clocks essentially lose an hour. This can be confusing because doesn't the transition to daylight saving time mean adding an hour? By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" and so is "nonexistent".
+When converting from standard time to daylight saving time, a different problem can arise. In that case, a different problem can arise. During the transition from standard time to daylight saving time in the spring, clocks essentially lose an hour. This can be confusing because doesn't the transition to daylight saving time mean adding an hour? By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" and so is "nonexistent".
 
 ## Requirements
 
