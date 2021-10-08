@@ -4,6 +4,7 @@ description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-logi
 ms.date: 09/29/2021
 f1_keywords: ["lnt-logical-bitwise-mismatch"]
 helpviewer_keywords: ["lnt-logical-bitwise-mismatch"]
+monikerRange: ">=msvc-160"
 ---
 # `lnt-logical-bitwise-mismatch`
 

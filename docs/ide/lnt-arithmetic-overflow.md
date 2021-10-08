@@ -4,6 +4,7 @@ description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-arit
 ms.date: 09/29/2021
 f1_keywords: ["lnt-arithmetic-overflow"]
 helpviewer_keywords: ["lnt-arithmetic-overflow"]
+monikerRange: ">=msvc-160"
 ---
 # `lnt-arithmetic-overflow`
 

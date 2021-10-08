@@ -4,6 +4,7 @@ description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-unin
 ms.date: 09/29/2021
 f1_keywords: ["lnt-uninitialized-local"]
 helpviewer_keywords: ["lnt-uninitialized-local"]
+monikerRange: ">=msvc-160"
 ---
 # `lnt-uninitialized-local`
 

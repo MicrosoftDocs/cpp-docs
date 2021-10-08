@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "IntelliSense, linter"
   - "lightbulbs, linter"
   - "suggested actions, linter"
+monikerRange: ">=msvc-160"
 ---
 # IntelliSense code linter for C++ overview
 
@@ -19,7 +20,16 @@ The IntelliSense code linter for C++ helps developers find and fix common C++ pr
 
 ## Find problems
 
-In Visual Studio 2019, the C++ linter is available as an experimental option. Starting in Visual Studio 2022, the C++ Linter is enabled by default. To use it, just open a source file in the editor. The linter shows any problems it finds by annotations in the editor window and in the Error List window.
+::: moniker range=">=msvc-170"
+
+In Visual Studio 2019, the C++ linter is available as an option. Starting in Visual Studio 2022, the C++ Linter is enabled by default. To use it, just open a source file in the editor. The linter shows any problems it finds by annotations in the editor window and in the Error List window.
+
+::: moniker-end
+::: moniker range="msvc-160"
+
+In Visual Studio 2019, the C++ linter is available as an option. To enable it, follow the instructions in [Configure the linter](#configure-the-linter). Then just open a source file in the editor. The linter shows any problems it finds by annotations in the editor window and in the Error List window.
+
+::: moniker-end
 
 ## Fix problems
 
@@ -29,19 +39,32 @@ Most of the linter checks have suggestions for fixing the problem. Hover over th
 
 You can enable or disable the linter, or configure the severity level for each check, in the C++ Code Style options.
 
-To change the C++ Code Style options, on the menu bar, select **Tools** > **Options**. In the Options dialog, expand  **Text Editor** > **C/C++** > **Code Style** > **Linter**.
+To change the linter options, on the menu bar, select **Tools** > **Options**. In the Options dialog, expand  **Text Editor** > **C/C++** > **Code Style** > **Linter**.
 
 By default, many of the checks have **Suggestion** severity so the Linter results aren't intrusive while you write code. You can set the severity to **Warning** or **Error**. Individual checks can be disabled by changing their severity to **None**.
 
 When you change the check severity level, it changes how the problem is shown in the editor window and in the Error List window. Changes take effect for newly opened files.
 
+::: moniker range=">=msvc-170"
+
 ![Screenshot that shows the C&#43;&#43; linter configuration.](../ide/media/linter-settings.png)
 
 (The presentation in Visual Studio 2019 is slightly different, but the options are similar.)
 
+::: moniker-end
+
 ## Known issues
 
-- The **Comparison/Bitwise Precedence** check isn't available yet, even though you can configure it in the Options dialog.
+::: moniker range=">=msvc-170"
+
+- The **Comparison/Bitwise Precedence** check isn't available in the initial release of Visual Studio 2022, even though you can configure it in the Options dialog.
+
+::: moniker-end
+::: moniker range="msvc-160"
+
+- The **Comparison/Bitwise Mismatch** check isn't available in Visual Studio 2019, even though you can configure it in the Options dialog.
+
+::: moniker-end
 
 ## See also
 

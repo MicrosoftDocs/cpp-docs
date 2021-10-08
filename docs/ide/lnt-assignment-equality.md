@@ -4,6 +4,7 @@ description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-assi
 ms.date: 09/29/2021
 f1_keywords: ["lnt-assignment-equality"]
 helpviewer_keywords: ["lnt-assignment-equality"]
+monikerRange: ">=msvc-160"
 ---
 # `lnt-assignment-equality`
 
@@ -11,7 +12,16 @@ A variable is assigned a constant in a Boolean context.
 
 An assignment expression that takes a constant always evaluates to the value of the constant. A comparison operation, such as `==` or `!=`, was probably intended instead.
 
-The `lnt-assignment-equality` check is controlled by the **Accidental Assignment** setting in the C/C++ Code Style options. For information on how to change this setting, see [Configure the linter](cpp-linter-overview.md#configure-the-linter).
+::: moniker range=">=msvc-170"
+
+In Visual Studio 2022, The `lnt-assignment-equality` check is controlled by the **Accidental Assignment** setting in the C/C++ Code Style options. For information on how to change this setting, see [Configure the linter](cpp-linter-overview.md#configure-the-linter).
+
+::: moniker-end
+::: moniker range="msvc-160"
+
+In Visual Studio 2019, the `lnt-assignment-equality` check is controlled by the **Assignation Instead of Equality** setting in the C/C++ Code Style options. For information on how to change this setting, see [Configure the linter](cpp-linter-overview.md#configure-the-linter).
+
+::: moniker-end
 
 ## Examples
 

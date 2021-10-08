@@ -4,6 +4,7 @@ description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-acci
 ms.date: 09/29/2021
 f1_keywords: ["lnt-accidental-copy"]
 helpviewer_keywords: ["lnt-accidental-copy"]
+monikerRange: ">=msvc-160"
 ---
 # `lnt-accidental-copy`
 
