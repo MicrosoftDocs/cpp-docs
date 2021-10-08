@@ -13,8 +13,8 @@ Describes a type that holds a *time interval*, which is the number of ticks over
 ## Syntax
 
 ```cpp
-template <class Rep, class Period = ratio<1>> class duration;
 template <class Rep, class Period> class duration;
+template <class Rep, class Period = ratio<1>> class duration;
 template <class Rep, class Period1, class Period2> class duration <duration<Rep, Period1>, Period2>;
 ```
 
@@ -49,10 +49,10 @@ The template argument `Rep` describes the type that is used to hold the number o
 |[`duration::operator+`](#op_add)|Returns **`*this`**.|
 |[`duration::operator++`](#op_++)|Increments the stored tick count.|
 |[`duration::operator+=`](#op_+=)|Adds the tick count of a specified `duration` to the stored tick count.|
-|[`duration::operator%=`](#op_%=)|Reduces the stored tick count modulo a specified value.|
+|[`duration::operator=`](#op_=)|Assigns one duration to another.|
 |[`duration::operator*=`](#op_star_eq)|Multiplies the stored tick count by a specified value.|
 |[`duration::operator/=`](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
-|[`duration::operator=`](#op_=)|Assigns one duration to another.|
+|[`duration::operator%=`](#op_%=)|Reduces the stored tick count modulo a specified value.|
 
 ## Non-members
 
@@ -73,7 +73,7 @@ The template argument `Rep` describes the type that is used to hold the number o
 |--|--|
 | [`operator+`](chrono-operators.md#op_add) | After converting the durations being added to their common type, returns a `duration` with a tick count equal to the sum of the converted tick counts. |
 | [`operator-`](chrono-operators.md#op_minus) |After converting the durations being subtracted to their common type, returns a `duration` with a tick count equal to the number of ticks in the RHS `duration` subtracted from the number of ticks in the LHS `duration`. |
-| [`operator*`](chrono-operators.md#op_star) | After converting the durations being multiplied to their common type, returns a `duration` with a tick count equal to the multiplication of the converted tick counts .|
+| [`operator*`](chrono-operators.md#op_star) | After converting the durations being multiplied to their common type, returns a `duration` with a tick count equal to the multiplication of the converted tick counts.|
 | [`operator/`](chrono-operators.md#op_div) | After converting the durations being divided to their common type, returns a `duration` with a tick count equal to the division of the converted tick counts. |
 | [`operator%`](chrono-operators.md#op_modulo) |After converting the `duration` and the divisor to their common type, returns a `duration` with a tick count equal to the remainder of the division. |
 | [`operator==`](chrono-operators.md#op_eq_eq) | After converting the `duration` types being compared to their common type, determines if the number of ticks are equal. |

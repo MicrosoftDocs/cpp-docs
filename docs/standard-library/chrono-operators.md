@@ -111,11 +111,11 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 5\) Returns the result of `m+ms.count()`. If the result is out of the range [1, 12], it's reduced modulo 12 and then +1.
 
-6\) Returns the result of adding the number of days/weekdays to the `weekday`. The result will be modulo 7, so always in the range \[0,6]
+6\) Returns the result of adding the number of days and weekdays to the `weekday`. The result will be modulo 7, so always in the range \[0,6]
 
 7\) Returns the result of adding the year to the specified number of years.
 
-8\) Returns the result of adding the number of months and/or years to the specified month and year.
+8\) Returns the result of adding the number of months and years to the specified month and year.
 
 9\) Returns the result of adding months or years to a `year_month_day`.  If `ymd.month()` is `February` and `ymd.day()` is not in the range [1d, 28d], `ok()` may return `false` for the result of the addition.
 
