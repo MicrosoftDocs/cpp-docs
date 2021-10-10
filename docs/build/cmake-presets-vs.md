@@ -223,6 +223,22 @@ Build with `clang`:
 }
 ```
 
+*OR* use the `toolset` configure preset to specify the `ClangCL` toolset like so:
+  
+```json
+"cacheVariables": {
+  "CMAKE_BUILD_TYPE": "Debug",
+  "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+},
+"toolset": "ClangCL",
+
+"vendor": {
+  "microsoft.com/VisualStudioSettings/CMake/1.0": {
+    "intelliSenseMode": "windows-clang-x64"
+  }
+}
+```
+  
 > [!IMPORTANT]
 > In Visual Studio 2019, you must explicitly specify a Clang IntelliSense mode when you're building with `clang` or `clang-cl`.
 
