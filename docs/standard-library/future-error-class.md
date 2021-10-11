@@ -3,11 +3,10 @@ description: "Learn more about: future_error Class"
 title: "future_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::future_error"]
-ms.assetid: 6071c545-ac2a-49ef-9967-07b0125da861
 ---
-# future_error Class
+# `future_error` class
 
-Describes an exception object that can be thrown by methods of types that manage [future](../standard-library/future-class.md) objects.
+Describes an exception object that can be thrown by methods of types that manage [`future`](future-class.md) objects.
 
 ## Syntax
 
@@ -19,18 +18,17 @@ public:
 const error_code& code() const throw();
 
 const char *what() const throw();
-
 };
 ```
 
 ## Requirements
 
-**Header:** \<future>
+**Header:** `<future>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[logic_error Class](../standard-library/logic-error-class.md)\
-[error_code Class](../standard-library/error-code-class.md)
+[Header Files Reference](cpp-standard-library-header-files.md)\
+[`logic_error` class](logic-error-class.md)\
+[`error_code` class](error-code-class.md)

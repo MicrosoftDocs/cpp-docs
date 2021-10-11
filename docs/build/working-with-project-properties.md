@@ -66,7 +66,7 @@ Has the syntax `%(name)`. For a file, an item macro applies only to that file—
 
 ### User-defined macros
 
-You can create *user-defined macros* to use as variables in project builds. For example, you could create a user-defined macro that provides a value to a custom build step or a custom build tool. A user-defined macro is a name/value pair. In a project file, use the **$(**<em>name</em>**)** notation to access the value.
+You can create *user-defined macros* to use as variables in project builds. For example, you could create a user-defined macro that provides a value to a custom build step or a custom build tool. A user-defined macro is a name/value pair. In a project file, use the `$(name)` notation to access the value.
 
 A user-defined macro is stored in a property sheet. If your project does not already contain a property sheet, you can create one by following the steps under [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md).
 
@@ -78,7 +78,7 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 1. In the dialog box, specify a name and value for the macro. Optionally, select the **Set this macro as an environment variable in the build environment** check box.
 
-## <a name="property_editor">Property Editor</a>
+## <a name="property_editor"></a> Property Editor
 
 You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains **\<Edit>**, then you can choose it to display the Property Editor for that property.
 
