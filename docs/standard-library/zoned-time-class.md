@@ -83,7 +83,7 @@ Construct a `zoned_time`.
 ### Parameters
 
 *`c`*\
-Indicates how to handle ambiguous or nonexistent local times when resolving a time for a time zone. For more information, see [`choose` enum](choose-enum.md).
+Indicates how to handle ambiguous or nonexistent local times when converting a `local_time` to a `sys_time`. For more information, see [`choose` enum](choose-enum.md).
 
 *`name`*\
 The name of a time zone.
