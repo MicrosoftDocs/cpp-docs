@@ -38,7 +38,9 @@ If a `local_time` specifies a time during this "extra" hour, it isn't clear how 
 
 **Nonexistent conversion error**
 
-When converting from standard time to daylight saving time, a different problem can arise. In that case, a different problem can arise. During the transition from standard time to daylight saving time in the spring, clocks essentially lose an hour. This can be confusing because doesn't the transition to daylight saving time mean adding an hour? 
+
+When converting from standard time to daylight saving time, a different problem can arise. During the transition from standard time to daylight saving time in the spring, clocks essentially lose an hour. This can be confusing because doesn't the transition to daylight saving time mean adding an hour? 
+
 
 By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" and so is "nonexistent", resulting in a [`nonexistent_local_time`](nonexistent-local-time.md#example-nonexistent_local_time) exception.
 
