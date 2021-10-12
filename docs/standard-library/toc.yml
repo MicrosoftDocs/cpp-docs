@@ -148,6 +148,8 @@
           href: chrono-operators.md
         - name: <chrono> literals
           href: chrono-literals.md
+        - name: ambiguous_local_time
+          href: ambiguous-local-time.md
         - name: choose enum
           href: choose-enum.md
         - name: common_type struct
@@ -188,6 +190,8 @@
           href: month-weekday-class.md
         - name: month_weekday_last class
           href: month-weekday-last-class.md
+        - name: nonexistent_local_time
+          href: nonexistent-local-time.md
         - name: steady_clock struct
           href: steady-clock-struct.md
         - name: sys_info struct
