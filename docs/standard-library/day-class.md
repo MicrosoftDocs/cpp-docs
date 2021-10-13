@@ -35,11 +35,11 @@ A `day` normally holds values in the range [1, 31]. It may hold non-negative val
 
 | Name | Description |
 |--|--|
-| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a day from the given stream using the specified format. |
+| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `day` from the given stream using the specified format. |
 | [`operator+`](chrono-operators.md#op_add) | Add specified number of days to this `day`, returning a new `day` object. |
 | [`operator-`](chrono-operators.md#op_minus) | Subtract the specified number of days from this `day`, returning a new `day` object. |
-| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two days are equal. |
-| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this day against another day. The `>, >=, <=, <, !=` operators are synthesized by the compiler. |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `day` instances are equal. |
+| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `day` against another `day`. The `>, >=, <=, <, !=` operators are synthesized by the compiler. |
 | [`operator<<`](chrono-operators.md#op_left_shift) | Output a `day` to the given stream. |
 | [`operator""d`](chrono-literals.md) | Create a `day` literal for a day in the month. |
 
