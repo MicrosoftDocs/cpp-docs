@@ -20,8 +20,6 @@ LRESULT CMyRichEditView::OnFindReplace(WPARAM wparam, LPARAM lparam)
                                                 _T("FindString"), csFindString));
          VERIFY(AfxGetApp()->WriteProfileString(AfxGetApp()->m_pszAppName,
                                                 _T("ReplaceString"), csReplaceString));
-
-         VERIFY(pDlg->DestroyWindow());
       }
    }
 
