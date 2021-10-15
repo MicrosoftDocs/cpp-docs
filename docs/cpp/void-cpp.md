@@ -12,7 +12,7 @@ When used as a function return type, the **`void`** keyword specifies that the f
 
 If a pointer's type is `void*`, the pointer can point to any variable that's not declared with the **`const`** or **`volatile`** keyword. A `void*` pointer can't be dereferenced unless it's cast to another type. A `void*` pointer can be converted into any other type of data pointer.
 
-A **`void`** pointer can point to a function, but not to a class member function in C++.
+In C++, a **`void`** pointer can point to a free function (a function that's not a member of a class), or to a static member function, but not to a non-static member function.
 
 You can't declare a variable of type **`void`**.
 
