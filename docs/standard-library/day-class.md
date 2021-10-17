@@ -12,7 +12,7 @@ Represents a day of the month. For example, the 25th day of the month.
 ## Syntax
 
 ```cpp
-class day; // c++ 20
+class day; // C++ 20
 ```
 
 ## Remarks

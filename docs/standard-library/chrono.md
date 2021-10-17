@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono>"
 title: "<chrono>"
-ms.date: 09/30/2021
+ms.date: 10/13/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 
@@ -70,7 +70,10 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 | [`sys_info`](sys-info-struct.md) | Provides a low-level interface to time zone information about the result of converting a `sys_time` to a `local_time`. |
 | [`time_zone` class](time-zone-class.md) | All time zone transitions for a specific geographic area. |
 | [`time_zone_link` class](time-zone-link-class.md) | An alternative name for a `time_zone`. |
+| [`tzdb` struct](tzdb-struct.md) | Represents a copy of the time zone database. |
+| [`tzdb_list` class](tzdb-list-class.md) | A singleton list of time zone databases. |
 | [`zoned_time` class](zoned-time-class.md) | A pairing of a [`time_zone`](time-zone-class.md) and a [`time_point`](time-point-class.md) with a specified precision. |
+| [`zoned_traits` struct](zoned-traits-struct.md) | Used to associate a different default time zone with a `zoned_time`, and optionally map a custom name to that default time zone. |
 
 **Exceptions**
 
@@ -85,6 +88,7 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 |--|--|
 | [`ceil(duration)`](chrono-functions.md#std-chrono-ceil-duration) | Returns the `ceil` of a `duration` object as a specified type. |
 | [`ceil(time_point)`](chrono-functions.md#std-chrono-ceil-time-point) | Returns the `ceil` of a `time_point` object as a specified type. |
+| [`clock_cast`](chrono-functions.md#std-chrono-clock-cast) | Converts a [`time_point`](time-point-class.md) from one clock to an equivalent `time_point` for another clock. |
 | [`duration_cast`](chrono-functions.md#std-chrono-duration-cast) | Casts a `duration` object to a specified type. |
 | [`floor(duration)`](chrono-functions.md#std-chrono-floor-duration) | Returns the `floor` of a `duration` object as a specified type. |
 | [`floor(time_point)`](chrono-functions.md#std-chrono-floor-time-point) | Returns the `floor` of a `time_point` object as a specified type. |
@@ -104,8 +108,8 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 | Name | Description |
 |--|--|
 | [`current_zone`](chrono-functions.md#std-chrono-current-zone) | Gets the current time zone. |
-| [`get_tzdb_list`](chrono-functions.md#std-chrono-get-tzdb-list) | Gets the list of time zone database entries. |
 | [`get_tzdb`](chrono-functions.md#std-chrono-get-tzdb) | Gets the first time zone database entry. |
+| [`get_tzdb_list`](chrono-functions.md#std-chrono-get-tzdb-list) | Gets the list of time zone database entries. |
 | [`reload_tzdb`](chrono-functions.md#std-chrono-reload-tzdb) | Gets an updated time zone database entry. |
 | [`remote_version`](chrono-functions.md#std-chrono-remote-version) | Checks for an updated time zone database entry. |
 
@@ -163,6 +167,7 @@ For more information about ratio types that are used in the following typedefs, 
 
 | Name | Description |
 |--|--|
+| [`clock_time_conversion`](clock-time-conversion-struct.md) | A trait that specifies how to convert a [`time_point`](time-point-class.md) from one clock to another. |
 | [is_clock](is-clock-struct.md) | Check if a type is a clock. |
 | [treat_as_floating_point](treat-as-floating-point-structure.md) | Check if a `duration` can be converted to another `duration` that has a different tick period. |
 
@@ -185,7 +190,7 @@ For more information about ratio types that are used in the following typedefs, 
 | `nanoseconds operator "" ns(unsigned long long Val)` | Specifies nanoseconds as an integral value. |
 | `duration<double, nano> operator "" ns(long double Val)` | Specifies nanoseconds as a floating-point value. |
 
-The following examples show how to use `<chrono>` literals.
+The following examples show how to use `<chrono>` literals:
 
 ```cpp
 constexpr auto day = 24h;
