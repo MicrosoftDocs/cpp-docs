@@ -34,7 +34,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 ## Prerequisites
 
-- A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience.
+- A computer that runs Microsoft Windows 7 or later versions. We recommend the latest version of Windows for the best development experience.
 
 ::: moniker range=">=msvc-150"
 

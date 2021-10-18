@@ -25,7 +25,7 @@ If you use the default list view in the right pane, the wizard creates additiona
 
 1. Follow the directions in [Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md).
 
-1. In the MFC Application Wizard [Application Type](../../mfc/reference/application-type-mfc-application-wizard.md) page, select the **File Explorer** project style.  (It may show as **Windows Explorer** in your version of Visual Studio. In the past, the file manager was renamed Windows Explorer. In Windows 10, it was renamed back to File Explorer. If your version of Visual Studio has **Windows Explorer** in the dropdown, this is the option you want for a File Explorer project).
+1. In the MFC Application Wizard [Application Type](../../mfc/reference/application-type-mfc-application-wizard.md) page, select the **File Explorer** project style.  (It may show as **Windows Explorer** in your version of Visual Studio. In the past, the file manager was renamed Windows Explorer. Starting in Windows 10, it was renamed back to File Explorer. If your version of Visual Studio has **Windows Explorer** in the dropdown, this is the option you want for a File Explorer project).
 
 1. Set any other options you want on the other pages of the wizard.
 

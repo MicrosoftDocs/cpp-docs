@@ -3,7 +3,6 @@ description: "Learn more about: Windows Runtime C++ Template Library (WRL)"
 title: "Windows Runtime C++ Template Library (WRL)"
 ms.date: "11/04/2016"
 ms.topic: "overview"
-ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
 ms.custom: intro-overview
 ---
 # Windows Runtime C++ Template Library (WRL)
@@ -11,7 +10,7 @@ ms.custom: intro-overview
 The Windows Runtime C++ Template Library (WRL) is a template library that provides a low-level way to author and use Windows Runtime components.
 
 > [!NOTE]
-> WRL is now superseded by C++/WinRT, a standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and designed to provide you with first-class access to the modern Windows API.
+> WRL is now superseded by C++/WinRT, a standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows SDK from version 1803 (10.0.17134.0) onward. C++/WinRT is implemented entirely in header files, and designed to provide you with first-class access to the modern Windows API.
 >
 > With C++/WinRT, you can both consume and author Windows Runtime APIs using any standards-conformant C++17 compiler. C++/WinRT typically performs better and produces smaller binaries than any other language option for the Windows Runtime. We will continue to support C++/CX and WRL, but highly recommend that new applications use C++/WinRT. For more information, see [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/index).
 
@@ -35,9 +34,6 @@ The Windows Runtime C++ Template Library and C++/CX provide different benefits. 
 ## Getting Started
 
 Here are some resources that can help you get working with the Windows Runtime C++ Template Library right away.
-
-[The Windows Runtime Library (WRL)](https://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
-In this Channel 9 video, learn more about how the Windows Runtime C++ Template Library helps you write Universal Windows Platform (UWP) apps and how to author and consume Windows Runtime components.
 
 [How to: Activate and Use a Windows Runtime Component](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
 Shows how to use the Windows Runtime C++ Template Library to initialize the Windows Runtime and activate and use a Windows Runtime component.

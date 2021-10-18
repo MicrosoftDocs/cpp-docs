@@ -27,7 +27,7 @@ Specifies the platform that the project runs on. For example, Windows, Android, 
 
 ### Target Platform Version
 
-Specifies the version of the Windows SDK used to build the project. This property appears only if the project type supports it. You can select Windows 10.0 to specify the latest version of the Windows 10 SDK. If your app can take advantage of features in this Windows SDK version, but can still run on earlier versions without those features, perhaps with some loss of functionality, then the value of this property and the **Target Platform Min. Version** property might be different. If so, your code should check the version of the platform it's running against at runtime and disable features that aren't available in older platform versions.
+Specifies the version of the Windows SDK used to build the project. This property appears only if the project type supports it. You can select 10.0 to specify the latest version of the Windows SDK. If your app can take advantage of features in this Windows SDK version, but can still run on earlier versions without those features, perhaps with some loss of functionality, then the value of this property and the **Target Platform Min. Version** property might be different. If so, your code should check the version of the platform it's running against at runtime and disable features that aren't available in older platform versions.
 
 ### Target Platform Min. Version
 

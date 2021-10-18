@@ -1,20 +1,20 @@
 ---
 description: "Learn more about: zoned_time class"
 title: "zoned_time class"
-ms.date: 09/20/2021
+ms.date: 10/11/2021
 f1_keywords: ["chrono/std::chrono::zoned_time::get_info", "chrono/std::chrono::zoned_time::get_local_time", "chrono/std::chrono::zoned_time::get_sys_time", "chrono/std::chrono::zoned_time::get_time_zone","chrono/std::chrono::zoned_time:operator=", "chrono/std::chrono::zoned_time:operator local_time", "chrono/std::chrono::zoned_time:operator sys_time"]
 helpviewer_keywords: ["std::chrono [C++], zoned_time class", "std::chrono::zoned_time::get_info function", "std::chrono::zoned_time::get_local_time function", "std::chrono::zoned_time::get_sys_time function", "std::chrono::zoned_time::get_time_zone function"]
 ---
 
 # `zoned_time` class
 
-A `zoned_time` is a pairing of a [`time_zone`](time-zone-class.md) and a [`time_point`](time-point-class.md).
+A `zoned_time` is a pairing of a [`time_zone`](time-zone-class.md) and a [`time_point`](time-point-class.md). It gives a `time_point` meaning within a specific time zone.
 
 ## Syntax
 
 ```cpp
 template<class Duration, class TimeZonePtr = const time_zone*>
-class zoned_time ;  // Since C++20
+class zoned_time ;  // C++20
 ```
 
 ## Remarks
@@ -47,6 +47,7 @@ Microsoft C++ supports the `zoned_time` class starting in Visual Studio 2019 ver
 
 | Name | Description |
 |--|--|
+| `zoned_seconds` | A synonym for `zoned_time<seconds>;`|
 | `zoned_time::duration` | A duration measured in seconds. It's a synonym for `common_type_t<Duration, seconds>;` |
 
 ## Requirements
@@ -83,7 +84,7 @@ Construct a `zoned_time`.
 ### Parameters
 
 *`c`*\
-Indicates how to handle ambiguous or nonexistent local times when resolving a time for a time zone. For more information, see [`choose` enum](choose-enum.md).
+Indicates how to handle ambiguous or nonexistent local times when converting a `local_time` to a `sys_time`. For more information, see [`choose` enum](choose-enum.md).
 
 *`name`*\
 The name of a time zone.
@@ -101,33 +102,33 @@ A `zoned_time` copied to construct a new `zoned_time`.
 A [`time_zone`](time-zone-class.md) that is `std::move(z)`'d into the constructed `zoned_time`.
 
 *`zt`*\
-A `zoned_time` pointer to a  that is `std::move(z)`'d into the constructed `zoned_time`.
+A `zoned_time` pointer that is `std::move(zt)`'d into the constructed `zoned_time`.
 
 ### Remarks
 
-1) Initializes the time zone with `traits::default_zone()`, and default constructs the time point.
-2) The default copy constructor.
-3) Initializes the time zone with `std::move(z)`, and default constructs the time point.
-4) Initializes the time zone with `traits::default_zone()`, and the time with `st`.
-5) Initializes the time zone with `traits::locate_zone(name)` and default constructs the time point.
-6) Initializes the time zone with `std::move(z)`, and the time by converting `tp` as though by `z->to_sys(tp)`.
-7) Initializes the time zone with `std::move(z)`, and the time as though by `z->to_sys(tp, c)`. See [`choose` enum](choose-enum.md) for how `c` affects the time.
-8) Initializes the time zone with `std::move(z)`, and the time with `st`.
-9) Equivalent to construction with `{traits::locate_zone(name), tp}`.
-10) Equivalent to construction with `{traits::locate_zone(name), tp, c}`.
-11) Equivalent to construction with `{traits::locate_zone(name), st}`.
-12) Equivalent to construction with `{traits::locate_zone(name), y}`.
-13) Equivalent to construction with `{traits::locate_zone(name), y, c}`. The `choose` parameter, `c`, has no effect.
-14) Initializes the time zone from `y`'s time zone and time point.
-15) Initializes the time zone with `std::move(z)` and the time from `y`'s time point.
-16) Equivalent to construction with `{z, y}`. The `choose` parameter, `c`, has no effect.
+1\) Initializes the time zone with `traits::default_zone()`, and default constructs the time point.\
+2\) The default copy constructor.\
+3\) Initializes the time zone with `std::move(z)`, and default constructs the time point.\
+4\) Initializes the time zone with `traits::default_zone()`, and the time with `st`.\
+5\) Initializes the time zone with `traits::locate_zone(name)` and default constructs the time point.\
+6\) Initializes the time zone with `std::move(z)`, and the time by converting `tp` as though by `z->to_sys(tp)`.\
+7\) Initializes the time zone with `std::move(z)`, and the time as though by `z->to_sys(tp, c)`. See [`choose` enum](choose-enum.md) for how the parameter `c` affects the outcome.\
+8\) Initializes the time zone with `std::move(z)`, and the time with `st`.\
+9\) Equivalent to construction with `{traits::locate_zone(name), tp}`.\
+10\) Equivalent to construction with `{traits::locate_zone(name), tp, c}`.\
+11\) Equivalent to construction with `{traits::locate_zone(name), st}`.\
+12\) Equivalent to construction with `{traits::locate_zone(name), y}`.\
+13\) Equivalent to construction with `{traits::locate_zone(name), y, c}`. The `choose` parameter, `c`, has no effect.\
+14\) Initializes the time zone from `y`'s time zone and time point.\
+15\) Initializes the time zone with `std::move(z)` and the time from `y`'s time point.\
+16\) Equivalent to construction with `{z, y}`. The `choose` parameter, `c`, has no effect.
 
 > [!NOTE]
-> `zoned_time` doesn't have a move constructor. Trying to move it results in a copy using the defaulted copy constructor.
+> `zoned_time` doesn't have a move constructor. Trying to move it results in a copy using the default copy constructor.
 
-## Example: construct a `zoned_time`
+### Example: construct a `zoned_time`
 
-The following shows how to create a `zoned_time` instance for the time zone "Antartica/Casey", on 9/15/2021 at 4:45pm:
+The following shows how to create a `zoned_time` instance for the time zone `"Antartica/Casey"`, on 9/15/2021 at 4:45pm:
 
 ```cpp
 // compile using: /std:c++latest
@@ -188,7 +189,6 @@ begin: 2020-10-03 16:01:00, end: 32767-12-31 23:59:59, offset: 39600s, save: 0mi
 
 Gets a `local_time<duration>` that represents the local time given this `zoned_time`'s time zone and time point.
 
-
 ```cpp
 local_time<duration> get_local_time() const;
 ```
@@ -221,7 +221,7 @@ int main()
 
 ## <a name="get_sys_time"></a> `get_sys_time`
 
-Gets the time stored in the `zoned_time` in terms of the [`system_clock`](system-clock-structure.md).
+Gets the time stored in the `zoned_time` for the [`system_clock`](system-clock-structure.md).
 
 ```cpp
 sys_time<duration> get_sys_time() const;
@@ -340,9 +340,9 @@ int main()
 
 ### Remarks
 
-1) The default copy assignment operator. Copies (doesn't move) the stored [`time_point`](time-point-class.md) and [time_zone](time-zone-class.md) pointer from the other `zoned_time` into this `zoned_time`.
-2) Assigns `st` to the [`time_point`](time-point-class.md) in this `zoned_time`.  After the assignment, `*this->get_sys_time() == st;`
-3) Converts `lt` (a `local_time`) to a `sys_time`. It does this essentially as `timeZone->to_sys(lt)`, and assigns the result to the [`time_point`] in this `zoned_time`. After the assignment, `*this->get_local_time() == lt;`
+1\) The default copy assignment operator. Copies (doesn't move) the stored [`time_point`](time-point-class.md) and [time_zone](time-zone-class.md) pointer from the other `zoned_time` into this `zoned_time`.
+2\) Assigns `st` to the [`time_point`](time-point-class.md) in this `zoned_time`.  After the assignment, `*this->get_sys_time() == st;`
+3\) Converts `lt` (a `local_time`) to a `sys_time`. It does this essentially as `timeZone->to_sys(lt)`, and assigns the result to the [`time_point`] in this `zoned_time`. After the assignment, `*this->get_local_time() == lt;`
 
 ## <a name="op_local_time"></a> `operator local_time`
 
@@ -419,4 +419,5 @@ int main()
 [`<chrono>`](chrono.md)\
 [`time_point`](time-point-class.md)\
 [`time_zone`](time-zone-class.md)\
+[`zoned_traits` struct](zoned-traits-struct.md)\
 [Header files reference](./cpp-standard-library-header-files.md)

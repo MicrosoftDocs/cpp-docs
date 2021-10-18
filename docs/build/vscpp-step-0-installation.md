@@ -129,7 +129,7 @@ In Visual Studio 2017, it's easy to choose and install just the features you nee
 
 - A broadband internet connection. The Visual Studio installer can download several gigabytes of data.
 
-- A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience. Make sure that the latest updates are applied to your system before you install Visual Studio.
+- A computer that runs Microsoft Windows 7 or later versions. We recommend the latest version of Windows for the best development experience. Make sure that the latest updates are applied to your system before you install Visual Studio.
 
 - Enough free disk space. Visual Studio requires at least 7 GB of disk space, and can take 50 GB or more if many common options are installed. We recommend you install it on your C: drive.
 

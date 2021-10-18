@@ -40,7 +40,7 @@ In both cases, if you specify the link option `/DEPENDENTLOADFLAG:0x800` (the va
 
 To see the value set by the **/DEPENDENTLOADFLAG** option in any DLL, use the [DUMPBIN](dumpbin-reference.md) command with the [/LOADCONFIG](loadconfig.md) option.
 
-The **/DEPENDENTLOADFLAG** option is new in Visual Studio 2017. It applies only to apps running on Windows 10 RS1 and later versions. This option is ignored by other operating systems that run the app.
+The **/DEPENDENTLOADFLAG** option is new in Visual Studio 2017. It applies only to apps running on Windows 10 RS1 and later Windows versions. This option is ignored by other operating systems that run the app.
 
 ### To set the DEPENDENTLOADFLAG linker option in the Visual Studio development environment
 

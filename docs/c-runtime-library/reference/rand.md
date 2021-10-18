@@ -27,7 +27,7 @@ int rand(void);
 
 The **`rand`** function returns a pseudorandom integer in the range 0 to **`RAND_MAX`** (32767). Use the [`srand`](srand.md) function to seed the pseudorandom-number generator before calling **`rand`**.
 
-The **`rand`** function generates a well-known sequence and isn't appropriate for use as a cryptographic function. For more cryptographically secure random number generation, use [`rand_s`](rand-s.md) or the functions declared in the C++ Standard Library in [`<random>`](../../standard-library/random.md). For information about what's wrong with **`rand`** and how `<random>` addresses these shortcomings, see this video entitled [rand Considered Harmful](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful).
+The **`rand`** function generates a well-known sequence and isn't appropriate for use as a cryptographic function. For more cryptographically secure random number generation, use [`rand_s`](rand-s.md) or the functions declared in the C++ Standard Library in [`<random>`](../../standard-library/random.md).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

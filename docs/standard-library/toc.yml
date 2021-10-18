@@ -148,8 +148,12 @@
           href: chrono-operators.md
         - name: <chrono> literals
           href: chrono-literals.md
+        - name: ambiguous_local_time
+          href: ambiguous-local-time.md
         - name: choose enum
           href: choose-enum.md
+        - name: clock_time_conversion struct
+          href: clock-time-conversion-struct.md
         - name: common_type struct
           href: common-type-structure.md
         - name: day class
@@ -176,7 +180,7 @@
           href: leap-second-info-struct.md
         - name: local_info struct
           href: local-info-struct.md
-        - name: local_t
+        - name: local_t struct
           href: local_t.md
         - name: month class
           href: month-class.md
@@ -188,6 +192,8 @@
           href: month-weekday-class.md
         - name: month_weekday_last class
           href: month-weekday-last-class.md
+        - name: nonexistent_local_time
+          href: nonexistent-local-time.md
         - name: steady_clock struct
           href: steady-clock-struct.md
         - name: sys_info struct
@@ -204,6 +210,10 @@
           href: time-zone-link-class.md
         - name: treat_as_floating_point struct
           href: treat-as-floating-point-structure.md
+        - name: tzdb struct
+          href: tzdb-struct.md
+        - name: tzcb_list class
+          href: tzdb-list-class.md
         - name: utc_clock class
           href: utc-clock-class.md
         - name: weekday class
@@ -226,6 +236,8 @@
           href: year-month-weekday-last-class.md
         - name: zoned_time class
           href: zoned-time-class.md
+        - name: zoned_traits struct
+          href: zoned-traits-struct.md
     - name: <cinttypes>
       href: cinttypes.md
     - name: <ciso646>

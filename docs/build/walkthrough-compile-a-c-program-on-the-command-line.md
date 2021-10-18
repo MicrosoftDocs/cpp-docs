@@ -27,13 +27,19 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 These instructions vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
+::: moniker range="msvc-170"
+
+## Open a developer command prompt in Visual Studio 2022
+
+If you've installed Visual Studio 2022 on Windows 10 or later, open the Start menu, and choose **All apps**. Then, scroll down and open the **Visual Studio 2022** folder (not the Visual Studio 2022 app). Choose **Developer Command Prompt for VS 2022** to open the command prompt window.
+
+::: moniker-end
+
 ::: moniker range="msvc-160"
 
 ## Open a developer command prompt in Visual Studio 2019
 
-If you have installed Visual Studio 2019 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2019** folder (not the Visual Studio 2019 app). Choose **Developer Command Prompt for VS 2019** to open the command prompt window.
-
-If you're using a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+If you've installed Visual Studio 2019 on Windows 10 or later, open the Start menu, and choose **All apps**. Then, scroll down and open the **Visual Studio 2019** folder (not the Visual Studio 2019 app). Choose **Developer Command Prompt for VS 2019** to open the command prompt window.
 
 ::: moniker-end
 
@@ -41,9 +47,7 @@ If you're using a different version of Windows, look in your Start menu or Start
 
 ## Open a developer command prompt in Visual Studio 2017
 
-If you have installed Visual Studio 2017 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
-
-If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+If you've installed Visual Studio 2017 on Windows 10 or later, open the Start menu, and choose **All apps**. Then, scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
 
 ::: moniker-end
 
@@ -51,11 +55,11 @@ If you're running a different version of Windows, look in your Start menu or Sta
 
 ## Open a developer command prompt in Visual Studio 2015
 
-If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
-
-If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+If you've installed Microsoft Visual C++ Build Tools 2015 on Windows 10 or later, open the Start menu, and choose **All apps**. Then, scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
 
 ::: moniker-end
+
+If you're using a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
 Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
@@ -170,7 +174,7 @@ You can use NMAKE and makefiles, or MSBuild and project files to configure and b
 
 The C and C++ languages are similar, but not the same. The Microsoft C/C++ compiler (MSVC) uses a basic rule to determine which language to use when it compiles your code. By default, the MSVC compiler treats all files that end in *`.c`* as C source code, and all files that end in *`.cpp`* as C++ source code. To force the compiler to treat all files as C no matter the file name extension, use the [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
 
-MSVC is compatible with the ANSI C89 and ISO C99 standards, but not strictly conforming. In most cases, portable C code will compile and run as expected. The compiler provides optional support for the changes in ISO C11/C17. To compile with C11/C17 support, use the compiler flag **`/std:c11`** or **`/std:c17`**. C11/C17 support requires Windows SDK 10.0.20201.0 or later. Windows SDK 10.0.20348.0 (version 2104) or later is recommended. You can download the latest SDK from the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) page. For more information, and instructions on how to install and use this SDK for C development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
+MSVC is compatible with the ANSI C89 and ISO C99 standards, but not strictly conforming. In most cases, portable C code will compile and run as expected. The compiler provides optional support for the changes in ISO C11/C17. To compile with C11/C17 support, use the compiler flag **`/std:c11`** or **`/std:c17`**. C11/C17 support requires Windows SDK 10.0.20201.0 or later. Windows SDK 10.0.22000.0 or later is recommended. You can download the latest SDK from the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) page. For more information, and instructions on how to install and use this SDK for C development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
 
 Certain library functions and POSIX function names are deprecated by MSVC. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
