@@ -239,10 +239,6 @@ BOOL IsTerminating() const;
 
 Nonzero if the user has decided to terminate the dialog box; otherwise 0.
 
-### Remarks
-
-If this function returns nonzero, you should call the `DestroyWindow` member function of the current dialog box and set any dialog box pointer variable to NULL. Optionally, you can also store the find/replace text last entered and use it to initialize the next find/replace dialog box.
-
 ### Example
 
   See the example for [CFindReplaceDialog::GetFindString](#getfindstring).

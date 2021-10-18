@@ -14,10 +14,6 @@ Provides a low-level interface to time zone information about the result of conv
 struct local_info;
 ```
 
-## Remarks
-
-Provides a low-level interface to time zone information about the result of converting a `local_time` to a `sys_time`.
-
 ## Members
 
 |Function|Description|
@@ -56,7 +52,7 @@ The result can be one of the following values:
 
 ### Remarks
 
-For information about how `first` and `second` are set based on `result`, see [`first`, `second`](#firstsecond).
+For information about how `first` and `second` are set based on `result`, see the following section about [`first`, `second`](#firstsecond).
 
 ## <a name="firstsecond"></a> `first`, `second`
 
