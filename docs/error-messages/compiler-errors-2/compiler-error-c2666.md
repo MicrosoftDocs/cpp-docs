@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-This error can be generated as a result fo compiler conformance work that was done for Visual Studio 2019 version 16.1:
+This error can be generated as a result of compiler conformance work that was done for Visual Studio 2019 version 16.1:
 
 - A conversion that promotes an enumeration whose underlying type is fixed to its underlying type is better than one that promotes to the promoted underlying type, if the two are different.
 
