@@ -1,14 +1,16 @@
 ---
 description: "Learn more about: duration Class"
 title: "duration Class"
-ms.date: 10/07/2021
+ms.date: 10/12/2021
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
 helpviewer_keywords: ["std::chrono [C++], duration"]
 ---
 
 # `duration` class
 
-Describes a type that holds a *time interval*, which is the number of ticks over a time unit. For example, five minutes is five ticks, with each tick a minute apart. 42 seconds is 42 ticks, with each tick a second apart.
+Measures a time span such as one minute, two hours, ten milliseconds, and so on.
+
+A `duration` holds a *time interval*, which is the number of ticks over a time unit. For example, five minutes is five ticks, with each tick a minute apart. 42 seconds is 42 ticks, with each tick a second apart.
 
 ## Syntax
 

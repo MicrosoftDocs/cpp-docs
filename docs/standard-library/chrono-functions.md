@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: <chrono> functions"
 title: "<chrono> functions"
-ms.date: 10/06/2021
-f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::abs", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
-helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
+ms.date: 10/15/2021
+f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::clock_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::abs", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
+helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function",  "std::chrono::clock_cast", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
 
 # `<chrono>` functions
@@ -119,6 +119,83 @@ Returns the smallest time point representable using `ToDuration` that's greater 
 ### Remarks
 
 `ceil` doesn't participate in overload resolution unless the `ToDuration` type is an instance of a [`duration`](../standard-library/duration-class.md).
+
+## <a name="std-chrono-clock-cast"></a> `clock_cast`
+
+Converts a [`time_point`](time-point-class.md) for one clock to an equivalent `time_point` for another clock.
+
+### Syntax
+
+```cpp
+template <class DestClock, class SourceClock, class Duration> 
+auto clock_cast(const time_point<SourceClock, Duration>& t); // C++ 20
+```
+
+### Parameters
+
+*`DestClock`*\
+The clock type to convert the `time_point` to.
+
+*`Duration`*\
+The [`duration`](duration-class.md) of the `SourceClock`, or one that you specify.
+
+*`SourceClock`*\
+The clock type that the `time_point` to convert is based on.
+
+*`t`*\
+The `time_point` to convert.
+
+### Return value
+
+A [`time_point`](time-point-class.md) equivalent to **`t`**, but specific to `DestClock`.
+
+### Remarks
+
+The parameters `SourceClock` and `Duration` can be inferred via class template argument deduction when not explicitly passed. For example, given `clock_cast<utc_clock>(file_clock::now())`, `SourceClock` is deduced to be `file_clock`, and `Duration` is deduced to be `file_clock::duration`.
+
+From the following list of well-formed clock conversions, the one that requires the fewest conversion steps to get from the `SourceClock` to the `DestClock` is selected.
+
+```cpp
+clock_time_conversion<DestClock, SourceClock>{}(t)
+
+clock_time_conversion<DestClock, system_clock>{}(
+	clock_time_conversion<system_clock, SourceClock>{}(t))
+
+clock_time_conversion<DestClock, utc_clock>{}(
+	clock_time_conversion<utc_clock, SourceClock>{}(t))
+
+clock_time_conversion<DestClock, utc_clock>{}(
+	clock_time_conversion<utc_clock, system_clock>{}(
+		clock_time_conversion<system_clock, SourceClock>{}(t)))
+
+clock_time_conversion<DestClock, system_clock>{}(
+	clock_time_conversion<system_clock, utc_clock>{}(
+		clock_time_conversion<utc_clock, SourceClock>{}(t)))
+```
+
+For more information about what `clock_time_conversion` does, see [`clock_time_conversion` struct](clock-time-conversion-struct.md).
+
+### Example `clock_cast`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    utc_clock::time_point t = clock_cast<utc_clock>(file_clock::now());
+    std::cout << t;
+
+    return 0;
+}
+```
+
+```output
+2021-10-11 22:58:17.8540720
+```
 
 ## <a name="std-chrono-current-zone"></a> `current_zone`
 
