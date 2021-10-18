@@ -8,9 +8,9 @@ helpviewer_keywords: ["wsl2", "cmake", "linux", "build"]
 ---
 # Walkthrough: Build and Debug C++ with WSL 2 and Visual Studio 2022
 
-Visual Studio 2022 introduces a native Windows Subsystem for Linux version 2 (WSL 2) toolset for C++ development. This toolset is available now in [Visual Studio 2022 version 17.0 Preview 2](https://visualstudio.microsoft.com/vs/preview/vs2022/). WSL 2 is the new, recommended version of the [Windows Subsystem for Linux](/windows/wsl/about) (WSL) architecture that provides better Linux file system performance, GUI support, and full system call compatibility. Visual Studio’s WSL 2 toolset allows you to build and debug C++ code on WSL 2 distros from Visual Studio without ever adding an SSH connection. You can already build and debug C++ code on WSL 1 distros using the native [WSL 1 toolset](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/) introduced in Visual Studio 2019 version 16.1.
+Visual Studio 2022 introduces a native Windows Subsystem for Linux version 2 (WSL 2) toolset for C++ development. This toolset is available now in [Visual Studio 2022 version 17.0 Preview 2](https://visualstudio.microsoft.com/vs/preview/vs2022/). WSL 2 is the new, recommended version of the [Windows Subsystem for Linux](/windows/wsl/about) (WSL). It provides better Linux file system performance, GUI support, and full system call compatibility. Visual Studio’s WSL 2 toolset allows you use Visual Studio to build and debug C++ code on WSL 2 distros without ever adding an SSH connection. You can already build and debug C++ code on WSL 1 distros using the native [WSL 1 toolset](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/) introduced in Visual Studio 2019 version 16.1.
 
-Visual Studio’s WSL 2 toolset supports both CMake and MSBuild-based Linux projects. However, CMake is our recommendation for all C++ cross-platform development with Visual Studio because it allows you to build and debug the same project on Windows, WSL, and remote systems.
+Visual Studio’s WSL 2 toolset supports both CMake and MSBuild-based Linux projects. However, CMake is our recommendation for all C++ cross-platform development with Visual Studio. We recommend it because it allows you to build and debug the same project on Windows, WSL, and remote systems.
 
 For a video overview of what is covered in this topic, see:
 
@@ -18,7 +18,7 @@ For a video overview of what is covered in this topic, see:
 
 ## WSL 2 toolset background
 
-Our C++ cross-platform support in Visual Studio assumes all source files originate in the Windows file system. When targeting a WSL 2 distro, Visual Studio will execute a local rsync copy to copy files from the Windows file system to the WSL file system. This local rsync copy will occur automatically when Visual Studio detects you're using a WSL 2 distro and will require no user intervention. See [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions) to learn more about the differences between WSL 1 and WSL 2.
+Our C++ cross-platform support in Visual Studio assumes all source files originate in the Windows file system. When targeting a WSL 2 distro, Visual Studio will execute a local rsync copy to copy files from the Windows file system to the WSL file system. This local rsync copy will occur automatically when Visual Studio detects you're using a WSL 2 distro. It doesn't require any user intervention. See [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions) to learn more about the differences between WSL 1 and WSL 2.
 
 The WSL 2 toolset is supported by our CMake Presets integration in Visual Studio. You can learn more about CMake Presets in our[ announcement blog post](https://devblogs.microsoft.com/cppblog/cmake-presets-integration-in-visual-studio-and-visual-studio-code/) and [documentation](cmake-presets-vs.md).
 
@@ -29,10 +29,10 @@ Continue reading for a step-by-step guide on getting started with CMake and WSL 
 1. Install WSL and a WSL 2 distro. Follow the instructions at [Install WSL](/windows/wsl/install-win10).
 1. Use the following commands to install the required build tools on your WSL 2 distro. They ensure that will have:
     * A C++ compiler
-    * gdb
-    * CMake
-    * rsync
-    * zip
+    * `gdb`
+    * `CMake`
+    * `rsync`
+    * `zip`
     * An underlying build system generator
 
 Install these dependencies on distros that use `apt` with the following commands:
@@ -44,9 +44,9 @@ sudo apt install g++ gdb make ninja-build rsync zip
 
 ## Cross-platform CMake development with a WSL 2 distro
 
-This walkthrough uses GCC and Ninja on Ubuntu. You'll install a recent version of CMake using Visual Studio’s CMake binary deployment in step TBD.
+This walkthrough uses GCC and Ninja on Ubuntu. You'll install a recent version of CMake using Visual Studio’s CMake binary deployment in step 7.
 
-1. Open a CMake project in Visual Studio 2022 version 17.0 Preview 2 or later. Visual Studio defines a CMake project as a folder with a CMakeLists.txt file at the project root. You can either clone a CMake repository (like bullet3), open a local CMake project, or create a new CMake project with the CMake Project template. In this walkthrough, I’m going to create a new CMake project with the CMake Project template.
+1. Open a CMake project in Visual Studio 2022 version 17.0 Preview 2 or later. Visual Studio defines a CMake project as a folder with a CMakeLists.txt file at the project root. You can either clone a CMake repository (like [bullet3](https://github.com/esweet431/bullet3), open a local CMake project, or create a new CMake project with the CMake Project template. In this walkthrough, I’m going to create a new CMake project with the CMake Project template.
 
 ![Screenshot of the Visual Studio 2022 get started dialog box that shows options to clone a repository, open a project or solution, open a local folder, create a new project, or continue without code](media/vs2022-get-started.png)
 
@@ -54,18 +54,18 @@ This walkthrough uses GCC and Ninja on Ubuntu. You'll install a recent version o
 
 ![Screenshot of CMake general options screen with Prefer using CMake Presets for configure, build, and test highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
 
-3. There are three dropdowns across the menu bar. Use the dropdown on the left to select your active Target System. This is the system where CMake will be invoked to configure and build the project. Visual Studio queries for WSL installations with wsl -l -v. In the following image, the **Target System** selected is **WSL2: Ubuntu-20.04**:
+3. There are three dropdowns across the Visual Studio main menu bar. Use the dropdown on the left to select your active Target System. This is the system where CMake will be invoked to configure and build the project. Visual Studio queries for WSL installations with wsl -l -v. In the following image, the **Target System** selected is **WSL2: Ubuntu-20.04**:
 
 ![Target system dropdown displaying WSL2: Ubuntu-20.04 as being selected](media/vs2022-target-system-dropdown.png)
 
 > [!NOTE]
-> If Visual Studio starts to configure your project automatically, read step TBD to manage CMake binary deployment and then return to step TBD. See [Modify automatic configuration and cache notifications](cmake-presets-vs.md) to customize this behavior.
+> If Visual Studio starts to configure your project automatically, read step 7 to manage CMake binary deployment, and then continue to the next step below. See [Modify automatic configuration and cache notifications](cmake-presets-vs.md) to customize this behavior.
 
-4. Use the dropdown in the middle to select your active Configure Preset. Configure Presets tell Visual Studio how to invoke CMake and generate the underlying build system. In the example in Step TBD (above), my active Configure Preset is the **linux-default** Preset created by Visual Studio. If you want to create a custom Configure Preset, select **Manage Configurations…** See [Select a Configure Preset](cmake-presets-vs.md#select-a-configure-preset) and [Edit Presets](cmake-presets-vs.md#edit-presets) for more information.
+4. Use the dropdown in the middle to select your active Configure Preset. Configure Presets tell Visual Studio how to invoke CMake and generate the underlying build system. In the example in step 3 (above), my active Configure Preset is the **linux-default** Preset created by Visual Studio. If you want to create a custom Configure Preset, select **Manage Configurations…** For more information, see [Select a Configure Preset](cmake-presets-vs.md#select-a-configure-preset) and [Edit Presets](cmake-presets-vs.md#edit-presets).
 
 ![Active configure preset dropdown, showing Manage Configurations... selected](media/vs2022-ActivePresetDropdown.png)
 
-5. Use the dropdown on the right to select your active Build Preset. Build Presets tell Visual Studio how to invoke build. In the example in Step TBD (above), my active Build Preset is the **Default** Preset created by Visual Studio. See [Select a Build Preset](cmake-presets-vs.md#select-a-build-preset) for more information.
+5. Use the dropdown on the right to select your active Build Preset. Build Presets tell Visual Studio how to invoke build. In the example in step 3 (above), the active Build Preset is the **Default** Preset created by Visual Studio. For more information, see [Select a Build Preset](cmake-presets-vs.md#select-a-build-preset).
 
 6. Configure the project on WSL 2. If project generation doesn't start automatically, then manually invoke configure with **Project** > **Configure** *project-name*
 
