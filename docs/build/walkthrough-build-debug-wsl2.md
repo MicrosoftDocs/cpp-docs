@@ -46,11 +46,11 @@ sudo apt install g++ gdb make ninja-build rsync zip
 
 This walkthrough uses GCC and Ninja on Ubuntu. You'll install a recent version of CMake using Visual Studio’s CMake binary deployment in step 7.
 
-1. Open a CMake project in Visual Studio 2022 version 17.0 Preview 2 or later. Visual Studio defines a CMake project as a folder with a CMakeLists.txt file at the project root. You can either clone a CMake repository (like [bullet3](https://github.com/esweet431/bullet3), open a local CMake project, or create a new CMake project with the CMake Project template. In this walkthrough, I’m going to create a new CMake project with the CMake Project template.
+1. Open a CMake project in Visual Studio 2022 version 17.0 Preview 2 or later. Visual Studio defines a CMake project as a folder with a CMakeLists.txt file at the project root. In this walkthrough, I’m going to create a new CMake project with the CMake Project template.
 
 ![Screenshot of the Visual Studio 2022 get started dialog box that shows options to clone a repository, open a project or solution, open a local folder, create a new project, or continue without code](media/vs2022-get-started.png)
 
-2. Enable Visual Studio’s CMake Presets integration. You can add a CMakePresets.json file to the root of the project or enable the integration globally in **Tools** > **Options** > **CMake** > **General**. Close and reopen the folder in Visual Studio to activate the integration. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#enable-cmakepresetsjson-integration-in-visual-studio-2019).
+2. Enable Visual Studio’s CMake Presets integration. You can add a `CMakePresets.json` file to the root of the project or enable the integration globally in **Tools** > **Options** > **CMake** > **General**. Close and reopen the folder in Visual Studio to activate the integration. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md).
 
 ![Screenshot of CMake general options screen with Prefer using CMake Presets for configure, build, and test highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
 
