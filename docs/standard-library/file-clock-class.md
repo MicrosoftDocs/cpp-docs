@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: file_clock class"
-title: "fiie_clock class"
+title: "file_clock class"
 ms.date: 08/19/2021
 f1_keywords: ["chrono/std::chrono::file_clock", "chrono/std::chrono::file_clock::now", "chrono/std::chrono::file_clock::to_utc", "chrono/std::chrono::file_clock::from_utc", "chrono/std::chrono::file_clock::is_steady Constant"]
 ---
