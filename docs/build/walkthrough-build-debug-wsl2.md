@@ -12,10 +12,6 @@ Visual Studio 2022 introduces a native Windows Subsystem for Linux version 2 (WS
 
 Visual Studio’s WSL 2 toolset supports both CMake and MSBuild-based Linux projects. CMake is our recommendation for all C++ cross-platform development with Visual Studio. We recommend it because it allows you to build and debug the same project on Windows, WSL, and remote systems.
 
-For a video overview of what is covered in this topic, see:
-
-> [!VIDEO <iframe width="557" height="310" src="https://www.youtube.com/embed/IKI2w75aAow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>]
-
 ## WSL 2 toolset background
 
  C++ cross-platform support in Visual Studio assumes all source files originate in the Windows file system. When targeting a WSL 2 distro, Visual Studio will execute a local rsync copy to copy files from the Windows file system to the WSL file system. This local rsync copy will occur automatically when Visual Studio detects you're using a WSL 2 distro. It doesn't require any user intervention. To to learn more about the differences between WSL 1 and WSL 2, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
@@ -121,6 +117,7 @@ In most cases, it’s best to use the WSL 2 toolset with WSL 2 distributions bec
  
 ## See also
 
+[Video: Debug C++ with WSL 2 Distributions and Visual Studio 2022](https://youtu.be/IKI2w75aAow)
 [Download Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/)\
 [Create a CMake Linux project in Visual Studio](../linux/cmake-linux-project.md)\
 [Tutorial: Debug a CMake project on a remote Windows machine](cmake-remote-debugging.md)
