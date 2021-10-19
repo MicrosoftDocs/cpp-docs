@@ -22,6 +22,8 @@ For a video overview of what is covered in this topic, see:
 
 The WSL 2 toolset is supported by CMake Presets integration in Visual Studio. To learn more about CMake Presets, see [CMake Presets integration in Visual Studio and Visual Studio Code](https://devblogs.microsoft.com/cppblog/cmake-presets-integration-in-visual-studio-and-visual-studio-code/) and [Configure and build with CMake Presets in Visual Studio](cmake-presets-vs.md).
 
+For more advanced information about using WSL 2 and CMake projects, see the advanced notes near the end of this article.
+
 ## Install the build tools
 
 First, install the tools necessary to build and debug on WSL 2:
@@ -93,11 +95,29 @@ This walkthrough uses GCC and Ninja on Ubuntu. You'll install a recent version o
 
 You've now built and debugged a C++ app with WSL 2 and Visual Studio 2022.
 
-## MSBuild-based Linux development with WSL 2
+## Advanced WSL 2 and CMake projects considerations
+
+Visual Studio’s native support for WSL 2 is only supported by CMake projects that use `CMakePresets.json` as the active configuration file. To migrate from `CMakeSettings.json` to `CMakePresets.json`, see [Enable CMake Presets integration in Visual Studio](cmake-presets-vs.md#-enable--cmakepresetsjson-integration-in-visual-studio-2019).
+
+If you are targeting a WSL 2 distribution and you do not want to use the WSL 2 toolset, then set **forceWSL1Toolset** to **true** in the Visual Studio Remote Settings vendor map in `CMakePresets.json` (see [Visual Studio Remote Settings vendor map](cmake-presets-json-reference.md#visual-studio-remote-settings-vendor-map) for details).
+
+If **forceWSL1Tooslet** is set to **true**, then Visual Studio won't maintain a copy of your source files in the WSL file system. Instead, it'll access source files in the mounted Windows drive (`/mnt/`…)
+
+In most cases, it’s best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project file are stored in the Windows file system. To to learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
+
+Specify advanced settings such as the path to the directory on WSL 2 where the project will be copied, copy source options, and rsync command arguments, in the Visual Studio Remote Settings vendor map in `CMakePresets.json`.
+
+System headers are still automatically copied to the Windows file system for a native IntelliSense experience. You can customize the headers that are included or excluded from this copy in the Visual Studio Remote Settings vendor map in `CMakePresets.json`. You can change the IntelliSense mode, or specify additional IntelliSense options, in the Visual Studio Settings vendor map in `CMakePresets.json`. For details about the vendor map, see [Visual Studio Remote Settings vendor map](cmake-presets-json-reference.md#visual-studio-remote-settings-vendor-map).
+
+## WSL 2 and MSBuild-based Linux projects
 
 CMake is our recommendation for all C++ cross-platform development with Visual Studio because it allows you to build and debug the same project on Windows, WSL, and remote systems. If you're already using a MSBuild-based Linux project, then you can upgrade to the WSL 2 toolset in Visual Studio via **Property pages** > **General** > **Platform Toolset**:
 
 ![A screenshot of a dropdown with Platform Toolset selected, and to the right, another dropdown with WSL2 Toolset selected](media/wsl-platform-toolset-selection.png)
+
+If you are targeting a WSL 2 distribution and you do not want to use the WSL 2 toolset, then select the **GCC for Windows Subsystem for Linux** or **Clang for Windows Subsystem for Linux** toolset in **Property Pages** > **General** > **Platform Toolset**. If either of these toolsets are selected, then Visual Studio won't maintain a copy of your source files in the WSL file system and will instead access source files over the mounted Windows drive (`/mnt/`…). System headers are still automatically copied to the Windows file system for a native IntelliSense experience. Customize the headers that are include or excluded from this copy in **Property Pages** >**General**.
+
+In most cases, it’s best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project file are stored in the Windows file system. To to learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
  
 ## See also
 
