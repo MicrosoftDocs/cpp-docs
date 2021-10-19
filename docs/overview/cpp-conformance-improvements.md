@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
-ms.date: 06/11/2021
+ms.date: 10/18/2021
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2019
@@ -522,6 +522,58 @@ void f() {
 ### Designated initialization
 
 [P0329R4](https://wg21.link/p0329r4) (C++20) *Designated initialization* allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11).
+
+### Ranking of enum conversion to its fixed underlying type
+
+The compiler now ranks enum conversions according to [N4800](https://wg21.link/n4800) 11.3.3.2 Ranking implicit conversion sequences (4.2):
+
+- A conversion that promotes an enumeration whose underlying type is fixed to its underlying type is better than one that promotes to the promoted underlying type, if the two are different.
+
+This conversion ranking wasn't implemented correctly before Visual Studio 2019 version 16.1. The conforming behavior may change overload resolution behavior or expose an ambiguity where one previously was not detected.
+
+This compiler behavior change applies to all **`/std`** modes and is both a source and binary breaking change.
+
+The following example demonstrates how compiler behavior changes in 16.1 and later versions:
+
+```cpp
+#include <type_traits>
+
+enum E : unsigned char { e };
+
+int f(unsigned int)
+{
+    return 1;
+}
+
+int f(unsigned char)
+{
+    return 2;
+}
+
+struct A {};
+struct B : public A {};
+
+int f(unsigned int, const B&)
+{
+    return 3;
+}
+
+int f(unsigned char, const A&)
+{
+    return 4;
+}
+
+int main()
+{
+    // Calls f(unsigned char) in 16.1 and later. Called f(unsigned int) in earlier versions.
+    // The conversion from 'E' to the fixed underlying type 'unsigned char' is better than the
+    // conversion from 'E' to the promoted type 'unsigned int'.
+    f(e);
+  
+    // Error C2666. This call is ambiguous, but previously called f(unsigned int, const B&). 
+    f(e, B{});
+}
+```
 
 ### New and updated standard library functions (C++20)
 
@@ -2461,6 +2513,12 @@ struct S {
    int j = 2;
 };
 ```
+
+## <a name="improvements_16b"></a> Conformance improvements in Visual Studio 2019 version 16.11
+
+### `/std:c++20` compiler mode
+
+Starting in Visual Studio 2019 version 16.11, the compiler now supports the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler mode. Previously, C++20 features were available only in [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) mode in Visual Studio 2019. Features that originally required **`/std:c++latest`** mode now work in **`/std:c++20`** mode or later in the latest versions of Visual Studio.
 
 ## See also
 

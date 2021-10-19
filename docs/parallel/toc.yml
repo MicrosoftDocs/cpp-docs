@@ -1,3 +1,4 @@
+items: 
 - name: Parallel programming in MSVC
   href: ../parallel/parallel-programming-in-visual-cpp.md
 - name: Auto-parallelization and auto-vectorization
