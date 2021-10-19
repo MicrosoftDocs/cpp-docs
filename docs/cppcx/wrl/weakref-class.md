@@ -46,7 +46,7 @@ A `WeakRef` object maintains a *strong reference*, which is associated with an o
 
 A `WeakRef` object is typically used to represent an object whose existence is controlled by an external thread or application. For example, construct a `WeakRef` object from a reference to a file object. While the file is open, the strong reference is valid. But if the file is closed, the strong reference becomes invalid.
 
-Note that there is a behavior change in the [As](#as), [AsIID](#asiid) and [CopyTo](#copyto) methods in the Windows 10 SDK. Previously, after calling any of these methods, you could check the `WeakRef` for **`nullptr`** to determine if a strong reference was successfully obtained, as in the following code:
+Note that there is a behavior change in the [As](#as), [AsIID](#asiid) and [CopyTo](#copyto) methods in the Windows SDK. Previously, after calling any of these methods, you could check the `WeakRef` for **`nullptr`** to determine if a strong reference was successfully obtained, as in the following code:
 
 ```cpp
 WeakRef wr;

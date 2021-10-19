@@ -1139,7 +1139,26 @@
                 - name: Define an NMAKE macro
                   href: ../build/reference/defining-an-nmake-macro.md
                 - name: Use an NMAKE macro
-                  href: ../build/reference/using-an-nmake-macro.md
+                  expanded: false
+                  items: 
+                    - name: Use an NMAKE macro
+                      href: ../build/reference/using-an-nmake-macro.md
+                    - name: abspath
+                      href: ../build/reference/nmake-function-abspath.md
+                    - name: basename
+                      href: ../build/reference/nmake-function-basename.md
+                    - name: filter, filteri
+                      href: ../build/reference/nmake-function-filter.md
+                    - name: filterout, filterouti
+                      href: ../build/reference/nmake-function-filterout.md
+                    - name: findstring, findstringi
+                      href: ../build/reference/nmake-function-findstring.md
+                    - name: patsubst, patsubsti
+                      href: ../build/reference/nmake-function-patsubst.md
+                    - name: strip
+                      href: ../build/reference/nmake-function-strip.md
+                    - name: subst, substi
+                      href: ../build/reference/nmake-function-subst.md
                 - name: Special NMAKE macros
                   href: ../build/reference/special-nmake-macros.md
             - name: Inference rules

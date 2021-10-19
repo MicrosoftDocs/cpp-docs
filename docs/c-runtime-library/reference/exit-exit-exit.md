@@ -14,7 +14,7 @@ helpviewer_keywords: ["exit function", "_exit function", "processes, terminating
 Terminates the calling process. The **`exit`** function terminates it after cleanup; **`_exit`** and **`_Exit`** terminate it immediately.
 
 > [!NOTE]
-> Do not use this method to shut down a Universal Windows Platform (UWP) app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP App lifecycle](/windows/uwp/launch-resume/app-lifecycle). For more information about Windows 10 apps, see [How-to guides for Windows 10 apps](https://developer.microsoft.com/windows/apps).
+> Do not use this method to shut down a Universal Windows Platform (UWP) app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP App lifecycle](/windows/uwp/launch-resume/app-lifecycle). For more information about UWP apps, see [Universal Windows Platform documentation](https://developer.microsoft.com/windows/apps).
 
 ## Syntax
 

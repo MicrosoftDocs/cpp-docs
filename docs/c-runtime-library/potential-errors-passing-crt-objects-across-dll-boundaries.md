@@ -24,7 +24,7 @@ There was a version-specific CRT library for every version of Visual Studio buil
 
 Because each copy of the CRT library has its own heap manager, allocating memory in one CRT library and passing the pointer across a DLL boundary to be freed by a different copy of the CRT library, can cause heap corruption. If you design your DLL so that it passes CRT objects across the DLL boundary, or allocates memory and expects it to be freed outside the DLL, clients of the DLL must use the same copy of the CRT library as the DLL.
 
-The DLL and its clients normally use the same copy of the CRT library only if both are linked at load time to the same version of the CRT DLL. Because the DLL version of the Universal CRT library used by Visual Studio 2015, and later on Windows 10, is now a centrally deployed Windows component (ucrtbase.dll), it's the same for apps built with Visual Studio 2015 and later versions. However, even when the CRT code is identical, you can't give memory allocated in one heap to a component that uses a different heap.
+The DLL and its clients normally use the same copy of the CRT library only if both are linked at load time to the same version of the CRT DLL. Because the DLL version of the Universal CRT library used by Visual Studio 2015 and later is now a centrally deployed Windows component (ucrtbase.dll), it's the same for apps built with Visual Studio 2015 and later versions. However, even when the CRT code is identical, you can't give memory allocated in one heap to a component that uses a different heap.
 
 ## Example: Pass file handle across DLL boundary
 

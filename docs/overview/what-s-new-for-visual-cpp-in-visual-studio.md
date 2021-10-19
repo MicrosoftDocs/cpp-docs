@@ -472,7 +472,7 @@ IncrediBuild is included as an optional component in the **Desktop development w
 
   Sample code for these technologies is archived at Microsoft Docs and the VCSamples GitHub repository.
 
-- The Windows 8.1 Software Development Kit (SDK) is no longer available in the Visual Studio installer. We recommend you upgrade your C++ projects to the latest Windows 10 SDK. If you have a hard dependency on 8.1, you can download it from the Windows SDK archive.
+- The Windows 8.1 Software Development Kit (SDK) is no longer available in the Visual Studio installer. We recommend you upgrade your C++ projects to the latest Windows SDK. If you have a hard dependency on 8.1, you can download it from the Windows SDK archive.
 
 - Windows XP targeting will no longer be available for the latest C++ toolset. XP targeting with VS 2017-level MSVC compiler & libraries is still supported and can be installed via "Individual components."
 
