@@ -1,7 +1,7 @@
 ---
 title: "/analyze (Code analysis)"
 description: "The Microsoft C++ compiler /analyze option syntax and usage."
-ms.date: 05/21/2021
+ms.date: 10/19/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
@@ -73,7 +73,7 @@ Ruleset options:
 **`/analyze`**\[**`-`**]\
 Turns on code analysis. Use **`/analyze-`** to explicitly turn off analysis. **`/analyze-`** is the default behavior.
 
-By default, analysis output goes to the console or the Visual Studio Output window like other error messages. Code analysis also creates a log file named *`filename.nativeanalysis.xml`*, where *`filename`* is the name of the analyzed source file.
+By default, analysis output goes to the console or the Visual Studio Output window like other error messages. Code analysis also creates a log file named *`filename.nativecodeanalysis.xml`*, where *`filename`* is the name of the analyzed source file.
 
 **`/analyze:only`**\
 By default, the compiler compiles the code to generate object files before code analysis runs. The **`/analyze:only`** option makes the compiler skip the code generation pass, and does code analysis directly. Compiler errors still prevent code analysis from running. However, the compiler won't report other warnings that it might find during the code generation pass. If the program isn't free of code-generation warnings, analysis results might be unreliable. We recommend you use this option only if the code passes code-generation syntax checks without errors or warnings.
