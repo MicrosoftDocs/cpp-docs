@@ -1,7 +1,7 @@
 ---
 title: "/Og (Global Optimizations)"
 description: "Describes the deprecated MSVC compiler option /Og, formerly used to enable global optimizations."
-ms.date: 07/08/2020
+ms.date: 10/19/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.GlobalOptimizations", "/og"]
 helpviewer_keywords: ["-Og compiler option [C++]", "global optimizations compiler option [C++]", "automatic register allocation", "/Og compiler option [C++]", "loop structures, optimizing", "common subexpression elimination", "Og compiler option [C++]"]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
@@ -34,7 +34,7 @@ The following optimizations are available under **`/Og`**:
 
 - Automatic register allocation
 
-   This optimization allows the compiler to store frequently used variables and subexpressions in registers; the **`register`** keyword is ignored.
+   This optimization allows the compiler to store frequently used variables and subexpressions in registers. The **`register`** keyword is ignored by default, and causes a diagnostic under **`/std:c++17`** or later.
 
 - Loop optimization
 
