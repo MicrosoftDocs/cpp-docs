@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 06/22/2021
+ms.date: 10/22/2021
 ms.technology: "cpp-language"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
@@ -11,7 +11,7 @@ Standards conformance for the Microsoft C/C++ compiler in Visual Studio (MSVC) i
 For details on conformance improvements, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md). For a list of other changes, see [What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [C++ team blog](https://devblogs.microsoft.com/cppblog/).
 
 > [!NOTE]
-> There are no binary breaking changes between Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019. For more information, see [C++ binary compatibility between Visual Studio 2015, 2017, and 2019](../porting/binary-compat-2015-2017.md)
+> There are no binary breaking changes between Visual Studio 2015, 2017, 2019, and 2022. For more information, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
 
 ## C++ compiler features
 

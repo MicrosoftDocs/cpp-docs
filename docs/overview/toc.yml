@@ -6,8 +6,10 @@ items:
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Overview of C++ development in Visual Studio
       href: ../overview/overview-of-cpp-development.md
-    - name: What's new for C++ in Visual Studio 2019
+    - name: What's new for C++ in Visual Studio 2022 Preview
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
+    - name: What's new for C++ in Visual Studio 2019
+      href: ../overview/what-s-new-for-cpp-2019.md
     - name: What's new for C++ in Visual Studio 2017
       href: ../overview/what-s-new-for-cpp-2017.md
     - name: What's new for Microsoft C++ docs 
