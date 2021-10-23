@@ -176,7 +176,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 
 ##### Visual Studio 2017 version 15.6
 
-- \<memory_resource>
+- `<memory_resource>`
 - Library Fundamentals V1
 - Deleting `polymorphic_allocator` assignment
 - Improving class template argument deduction
@@ -184,7 +184,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 ##### Visual Studio 2017 version 15.7
 
 - Support for parallel algorithms is no longer experimental
-- A new implementation of \<filesystem>
+- A new implementation of `<filesystem>`
 - Elementary string conversions (partial)
 - `std::launder()`
 - `std::byte`

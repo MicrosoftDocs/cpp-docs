@@ -51,7 +51,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ### C++ AMP deprecated
 
-- C++ AMP headers are now deprecated. Including *`<amp.h>`* in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](https://aka.ms/amp_deprecate).
+- C++ AMP headers are now deprecated. Including `<amp.h>` in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](https://aka.ms/amp_deprecate).
 
 ### IntelliSense improvements
 

@@ -101,9 +101,9 @@ For a summary of new features and bug fixes in Visual Studio version 16.9, see [
 
 For a summary of new features and bug fixes in Visual Studio version 16.8, see [What's New in Visual Studio 2019 version 16.8](/visualstudio/releases/2019/release-notes-v16.8).
 
-- C++20 Coroutines are now supported under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11) and the \<coroutine> header.
+- C++20 Coroutines are now supported under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11) and the `<coroutine>` header.
 
-- IntelliSense now provides support for C++20 \<concepts> and \<ranges> headers, and rename and browsing for concept definitions.
+- IntelliSense now provides support for C++20 `<concepts>` and `<ranges>` headers, and rename and browsing for concept definitions.
 
 - Our STL now has support for the majority of C++20 Ranges.
 
@@ -371,7 +371,7 @@ Improved analysis with [`/Qspectre`](../build/reference/qspectre.md) for providi
 
 - Clang-Format has been applied to the C++ standard library headers for improved readability.
 
-- Because Visual Studio now supports Just My Code for C++, the standard library no longer needs to provide custom machinery for `std::function` and `std::visit` to achieve the same effect. Removing that machinery largely has no user-visible effects. One exception is that the compiler will no longer produce diagnostics that indicate issues on line 15732480 or 16707566 of \<type_traits> or \<variant>.
+- Because Visual Studio now supports Just My Code for C++, the standard library no longer needs to provide custom machinery for `std::function` and `std::visit` to achieve the same effect. Removing that machinery largely has no user-visible effects. One exception is that the compiler will no longer produce diagnostics that indicate issues on line 15732480 or 16707566 of `<type_traits>` or `<variant>`.
 
 ### Performance/throughput improvements in the compiler and standard library
 
@@ -395,7 +395,7 @@ Improved analysis with [`/Qspectre`](../build/reference/qspectre.md) for providi
 
   - Improved optimization of code using `memmove`, such as `std::copy` or `std::vector` and `std::string` construction.
 
-- Optimized the standard library physical design to avoid compiling parts of the standard library not directly included. This change cut the build time of an empty file that includes only \<vector> in half. As a consequence, you may need to add `#include` directives for headers that were previously indirectly included. For example, code that uses `std::out_of_range` may now need to add `#include <stdexcept>`. Code that uses a stream insertion operator may now need to add `#include <ostream>`. The benefit is that only translation units actually using \<stdexcept> or \<ostream> components pay the throughput cost to compile them.
+- Optimized the standard library physical design to avoid compiling parts of the standard library not directly included. This change cut the build time of an empty file that includes only `<vector>` in half. As a consequence, you may need to add `#include` directives for headers that were previously indirectly included. For example, code that uses `std::out_of_range` may now need to add `#include <stdexcept>`. Code that uses a stream insertion operator may now need to add `#include <ostream>`. The benefit is that only translation units actually using `<stdexcept>` or `<ostream>` components pay the throughput cost to compile them.
 
 - `if constexpr` was applied in more places in the standard library for improved throughput and reduced code size in copy operations, in permutations like reverse and rotate, and in the parallel algorithms library.
 
@@ -524,7 +524,7 @@ The Clang/C2 experimental component has been removed. Use the MSVC toolset for f
 
 - Code analysis now runs automatically in the background. Warnings display as green squiggles in-editor as you type. For more information, see [In-editor code analysis in Visual Studio 2019 Preview 2](https://devblogs.microsoft.com/cppblog/in-editor-code-analysis-in-visual-studio-2019-preview-2/).
 
-- New experimental ConcurrencyCheck rules for well-known standard library types from the \<mutex> header. For more information, see [Concurrency Code Analysis in Visual Studio 2019](https://devblogs.microsoft.com/cppblog/concurrency-code-analysis-in-visual-studio-2019/).
+- New experimental ConcurrencyCheck rules for well-known standard library types from the `<mutex>` header. For more information, see [Concurrency Code Analysis in Visual Studio 2019](https://devblogs.microsoft.com/cppblog/concurrency-code-analysis-in-visual-studio-2019/).
 
 - An updated partial implementation of the [Lifetime profile checker](https://herbsutter.com/2018/09/20/lifetime-profile-v1-0-posted/), which detects dangling pointers and references. For more information, see [Lifetime Profile Update in Visual Studio 2019 Preview 2](https://devblogs.microsoft.com/cppblog/lifetime-profile-update-in-visual-studio-2019-preview-2/).
 

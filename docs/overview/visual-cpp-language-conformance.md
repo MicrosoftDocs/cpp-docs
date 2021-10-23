@@ -498,7 +498,7 @@ These algorithms aren't presently parallelized:
 - These algorithms haven't been evaluated yet. We may implement parallelism in a future release:
   - `copy_if`, `includes`, `inplace_merge`, `lexicographical_compare`, `max_element`, `merge`, `min_element`, `minmax_element`, `nth_element`, `partition_copy`, `remove_copy`, `remove_copy_if`, `replace_copy`, `replace_copy_if`, `set_symmetric_difference`, `set_union`, `stable_partition`, `unique`, `unique_copy`
 
-<a name="note_H"></a> __H__ This is a wholly new implementation, incompatible with the previous `std::experimental` version, made necessary by symlink support, bug fixes, and changes in standard-required behavior. Currently, \<filesystem> provides both the new `std::filesystem` and the previous `std::experimental::filesystem`. The \<experimental/filesystem> header provides only the old experimental implementation. The experimental implementation will be removed in the next ABI-breaking release of the libraries.
+<a name="note_H"></a> __H__ This is a wholly new implementation, incompatible with the previous `std::experimental` version, made necessary by symlink support, bug fixes, and changes in standard-required behavior. Currently, `<filesystem>` provides both the new `std::filesystem` and the previous `std::experimental::filesystem`. The `<experimental/filesystem>` header provides only the old experimental implementation. The experimental implementation will be removed in the next ABI-breaking release of the libraries.
 
 <a name="note_I"></a> __I__ Supported by a compiler intrinsic.
 

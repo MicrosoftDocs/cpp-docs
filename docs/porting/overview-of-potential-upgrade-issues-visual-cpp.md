@@ -32,7 +32,7 @@ If you link to an import library, any later version of the Visual Studio redistr
 
 ### Libraries
 
-If you `#include` a particular version of the header files, you must link the resulting object file to the same version of the libraries. So, for example, if your source file includes the Visual Studio 2015 Update 3 *`<immintrin.h>`*, you must link with the Visual Studio 2015 Update 3 *`vcruntime`* library. Similarly, if your source file includes the Visual Studio 2017 version 15.5 *`<iostream>`*, you must link with the Visual Studio 2017 version 15.5 Standard C++ library, *`msvcprt`*. Mixing-and-matching isn't supported.
+If you `#include` a particular version of the header files, you must link the resulting object file to the same version of the libraries. So, for example, if your source file includes the Visual Studio 2015 Update 3 `<immintrin.h>`, you must link with the Visual Studio 2015 Update 3 *`vcruntime`* library. Similarly, if your source file includes the Visual Studio 2017 version 15.5 `<iostream>`, you must link with the Visual Studio 2017 version 15.5 Standard C++ library, *`msvcprt`*. Mixing-and-matching isn't supported.
 
 For the C++ Standard Library, mixing-and-matching has been explicitly disallowed by use of `#pragma detect_mismatch` in the standard headers since Visual Studio 2010. If you try to link incompatible object files, or if you link with the wrong standard library, the link fails.
 
@@ -112,11 +112,11 @@ One example of a common compiler error you might see when upgrading is when a no
 
 For more information on specific conformance improvements, see [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) and [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md).
 
-## Errors involving *`<stdint.h>`* integral types
+## Errors involving `<stdint.h>` integral types
 
-The *`<stdint.h>`* header defines typedefs and macros that, unlike built-in integral types, are guaranteed to have a specified length on all platforms. Some examples are `uint32_t` and `int64_t`. The *`<stdint.h>`* header was added in Visual Studio 2010. Code that was written before 2010 might have provided private definitions for those types. And, those definitions might not always be consistent with the *`<stdint.h>`* definitions.
+The `<stdint.h>` header defines typedefs and macros that, unlike built-in integral types, are guaranteed to have a specified length on all platforms. Some examples are `uint32_t` and `int64_t`. The `<stdint.h>` header was added in Visual Studio 2010. Code that was written before 2010 might have provided private definitions for those types. And, those definitions might not always be consistent with the `<stdint.h>` definitions.
 
-If the error is C2371, and a `stdint` type is involved, it probably means that the type is defined in a header either in your code or a third-party library file. When upgrading, you should eliminate any custom definitions of *`<stdint.h>`* types, but first compare the custom definitions to the current standard definitions to ensure you don't introduce new problems.
+If the error is C2371, and a `stdint` type is involved, it probably means that the type is defined in a header either in your code or a third-party library file. When upgrading, you should eliminate any custom definitions of `<stdint.h>` types, but first compare the custom definitions to the current standard definitions to ensure you don't introduce new problems.
 
 You can press **F12** (**Go to Definition**) to see where the type in question is defined.
 
