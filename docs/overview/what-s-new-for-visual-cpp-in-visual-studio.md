@@ -11,13 +11,13 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environmen
 
 ## What's new for C++ in Visual Studio version 17.0
 
-For a summary of new features and bug fixes in Visual Studio version 17.0, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes).
+For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes).
 
 - The Visual Studio IDE, *`deveenv.exe`*, is now a native 64-bit application.
 
 - The MSVC toolset now defaults to SHA-256 source hashing in debug records. Previously, the toolset used MD5 for source hashing by default.
 
-- The v143 build tools are now available through the Visual Studio installer as well as the [standalone build tools](https://aka.ms/vs/17/pre/vs_BuildTools.exe).
+- The v143 build tools are now available through the Visual Studio installer and in the [standalone build tools](https://aka.ms/vs/17/pre/vs_BuildTools.exe).
 
 ### Hot Reload for native C++
 
@@ -25,7 +25,7 @@ For a summary of new features and bug fixes in Visual Studio version 17.0, see [
 
 ### WSL2 support
 
-- You can now build and debug natively on WSL2 without establishing a SSH connection. Both cross-platform CMake projects and MSBuild-based Linux projects are supported.
+- You can now build and debug natively on WSL2 without establishing an SSH connection. Both cross-platform CMake projects and MSBuild-based Linux projects are supported.
 
 ### Improved CMake support
 
@@ -35,11 +35,11 @@ For a summary of new features and bug fixes in Visual Studio version 17.0, see [
 
 - You can now configure and build your CMake projects with CMake 3.21 and *`CMakePresets.json`* v3.
 
-- Visual Studio now supports the `buildPresets.targets` option in *`CMakePresets.json`*. This allows you to build a subset of targets in your CMake project.
+- Visual Studio now supports the `buildPresets.targets` option in *`CMakePresets.json`*. This option allows you to build a subset of targets in your CMake project.
 
 - The Project menu in CMake projects has been streamlined and exposes options to "Delete Cache and Reconfigure" and "View Cache".
 
-- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689r3](https://wg21.link/P1689r3). This is a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
+- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689r3](https://wg21.link/P1689r3). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
 
 ### Clang and LLVM support
 
@@ -47,7 +47,7 @@ For a summary of new features and bug fixes in Visual Studio version 17.0, see [
 
 - Clang-cl support was updated to LLVM 12.
 
-- You can now debug processes running on a remote systems from Visual Studio with LLDB.
+- You can now debug processes running on a remote system from Visual Studio by using LLDB.
 
 ### C++ AMP deprecated
 
@@ -55,7 +55,7 @@ For a summary of new features and bug fixes in Visual Studio version 17.0, see [
 
 ### IntelliSense improvements
 
-- We made improvements in C++ IntelliSense when providing navigation and syntax highlighting for types from imported Modules and Header Units. This is an active area of investment for us, please continue to share your feedback on Developer Community using Help->Send Feedback.
+- We made improvements in C++ IntelliSense when providing navigation and syntax highlighting for types from imported Modules and Header Units. IntelliSense is an active area of investment for us. Help us improve: Share your feedback on Developer Community by using **Help** > **Send Feedback**.
 
 - Improved C++ IntelliSense performance by optimizing cached header usage and symbol database access, providing improved load times to get into your code.
 
@@ -79,7 +79,7 @@ For a summary of new features and bug fixes in Visual Studio version 17.0, see [
 
 ## Release notes for older versions
 
-Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## Known Issues
 
@@ -91,4 +91,4 @@ We'd love to hear from you! You can [Report a Problem or Suggest a Feature](http
 
 ## Blogs
 
-Take advantage of the insights and recommendations available in the [Microsoft Developer Blogs](https://devblogs.microsoft.com/) site to keep you up-to-date on all new releases and include deep dive posts on a broad range of features. You'll find the [C++ Team Blog](https://devblogs.microsoft.com/cppblog) and the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio) of particular interest.
+Take advantage of the insights and recommendations available in the [Microsoft Developer Blogs](https://devblogs.microsoft.com/) site. They'll keep you up to date on all new releases. The blogs include deep dive posts on a broad range of features. You'll find the [C++ Team Blog](https://devblogs.microsoft.com/cppblog) and the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio) of particular interest.
