@@ -7,13 +7,13 @@ ms.custom: intro-whats-new
 ---
 # What's new for C++ in Visual Studio 2022 Preview
 
-Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
+Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
 
 ## What's new for C++ in Visual Studio version 17.0
 
 For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes).
 
-- The Visual Studio IDE, *`deveenv.exe`*, is now a native 64-bit application.
+- The Visual Studio IDE, *`devenv.exe`*, is now a native 64-bit application.
 
 - The MSVC toolset now defaults to SHA-256 source hashing in debug records. Previously, the toolset used MD5 for source hashing by default.
 
@@ -75,19 +75,19 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 - Added support for `gsl::not_null` to code analysis.
 
-- Support for libfuzzer under the **`/fsanitize=fuzzer`** compiler option.
+- Support for Libfuzzer under the **`/fsanitize=fuzzer`** compiler option.
 
 ## Release notes for older versions
 
 Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
-## Known Issues
+## Known issues
 
-For more information on open issues and available workarounds for C++ in Visual Studio 2022, see the C++ Developer Community [Known issues](https://developercommunity.visualstudio.com/search?space=62&stateGroup=active&ftype=problem&sort=votes&q=2022) list.
+For more information on open issues and available workarounds for C++ in Visual Studio 2022, see the C++ Developer Community [issues list](https://developercommunity.visualstudio.com/search?space=62&stateGroup=active&ftype=problem&sort=votes&q=2022).
 
 ## Feedback and suggestions
 
-We'd love to hear from you! You can [Report a Problem or Suggest a Feature](https://docs.microsoft.com/en-us/visualstudio/ide/visualstudio/ide/how-to-report-a-problem-with-visual-studio) by using the Send Feedback icon in the upper right-hand corner of either the installer or the Visual Studio IDE, or from **Help** > **Send Feedback**. You can track your issues by using [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), where you add comments or find solutions. You can also get free installation help through our [Live Chat support](https://visualstudio.microsoft.com/vs/support/#talktous).
+We'd love to hear from you! You can [Report a Problem or Suggest a Feature](/visualstudio/ide/visualstudio/ide/how-to-report-a-problem-with-visual-studio) by using the Send Feedback icon in the upper right-hand corner of either the installer or the Visual Studio IDE, or from **Help** > **Send Feedback**. You can track your issues by using [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), where you add comments or find solutions. You can also get free installation help through our [Live Chat support](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 ## Blogs
 
