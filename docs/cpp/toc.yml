@@ -1,3 +1,4 @@
+items: 
 - name: C++ language documentation
   href: ../cpp/index.yml
 - name: C++ language reference
@@ -69,9 +70,9 @@
           href: ../cpp/void-cpp.md
         - name: bool
           href: ../cpp/bool-cpp.md
-        - name: false
+        - name: "false"
           href: ../cpp/false-cpp.md
-        - name: true
+        - name: "true"
           href: ../cpp/true-cpp.md
         - name: char, wchar_t, char8_t, char16_t, char32_t
           href: ../cpp/char-wchar-t-char16-t-char32-t.md
@@ -419,8 +420,6 @@
           href: ../cpp/special-member-functions.md
         - name: Static members
           href: ../cpp/static-members-cpp.md
-        - name: C++ classes as value types
-          href: ../cpp/value-types-modern-cpp.md
         - name: User-defined type conversions
           href: ../cpp/user-defined-type-conversions-cpp.md
         - name: Mutable data members
@@ -481,8 +480,6 @@
           href: ../cpp/how-to-create-and-use-weak-ptr-instances.md
         - name: "How to: Create and use CComPtr and CComQIPtr instances"
           href: ../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
-        - name: Pimpl for compile-time encapsulation
-          href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md  
     - name: Exception handling in C++
       items: 
         - name: Exception handling in C++

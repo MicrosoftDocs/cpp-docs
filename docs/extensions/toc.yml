@@ -1,3 +1,4 @@
+items: 
 - name: Component Extensions for .NET and UWP
   href: ../extensions/component-extensions-for-runtime-platforms.md
 - name: Tracking reference operator
