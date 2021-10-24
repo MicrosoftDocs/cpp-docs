@@ -1,3 +1,4 @@
+items: 
 - name: C++ Standard Library reference
   href: cpp-standard-library-reference.md
 - name: C++ Standard Library header files
@@ -212,7 +213,7 @@
           href: treat-as-floating-point-structure.md
         - name: tzdb struct
           href: tzdb-struct.md
-        - name: tzcb_list class
+        - name: tzdb_list class
           href: tzdb-list-class.md
         - name: utc_clock class
           href: utc-clock-class.md

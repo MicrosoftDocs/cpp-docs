@@ -1,3 +1,4 @@
+items: 
 - name: Microsoft C++ Porting and Upgrade Guide
   href: ../porting/visual-cpp-porting-and-upgrading-guide.md
 - name: Upgrade projects from earlier versions

@@ -1,3 +1,4 @@
+items: 
 - name: .NET programming with C++/CLI
   href: ../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md
 - name: "Walkthrough: Compile a C++/CLI program that targets the CLR"

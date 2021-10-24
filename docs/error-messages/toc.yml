@@ -1,3 +1,4 @@
+items: 
 - name: C/C++ Compiler and build tools errors and warnings
   href: compiler-errors-1/c-cpp-build-errors.md
 - name: BSCMAKE errors and warnings
@@ -4282,6 +4283,8 @@
           href: compiler-warnings/compiler-warning-level-1-c4997.md
         - name: Compiler warning (level 1) C4999
           href: compiler-warnings/compiler-warning-level-1-c4999.md
+        - name: Compiler warning (level 1) C5033
+          href: compiler-warnings/c5033.md
         - name: Compiler warning C5037
           href: compiler-warnings/c5037.md
         - name: Compiler warning C5038
