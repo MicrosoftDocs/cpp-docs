@@ -162,5 +162,3 @@ If red squiggles appear under anything in the source code editor, check that you
 [Go back](#add-code-to-the-source-file).
 
 ::: moniker-end
-
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

@@ -1326,7 +1326,7 @@ error C2280: 'std::basic_ostream<wchar_t,std::char_traits<wchar_t>> &std::<<<std
 
 You can achieve the effect of the old behavior in all language modes by converting character types to **`unsigned int`**, or pointer-to-character types to `const void*`:
 
-```c++
+```cpp
 #include <iostream>
 int main() {
     const wchar_t cw = L'x', *pw = L"meow";
