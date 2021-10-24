@@ -52,7 +52,7 @@ You need these prerequisites to complete this walkthrough:
 
 ## Create the C++ source files
 
-In this walkthrough, you'll create a project that has a source file and a header file. The source file *`main.cpp`* contains the `main` function for the console application. The header file *`main.h`* contains code to include the *`<iostream>`* header file. You can create these C++ files by using Visual Studio or a text editor such as Visual Studio Code.
+In this walkthrough, you'll create a project that has a source file and a header file. The source file *`main.cpp`* contains the `main` function for the console application. The header file *`main.h`* contains code to include the `<iostream>` header file. You can create these C++ files by using Visual Studio or a text editor such as Visual Studio Code.
 
 ### To create the C++ source files for your project
 
