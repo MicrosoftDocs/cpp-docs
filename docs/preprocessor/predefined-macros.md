@@ -208,6 +208,8 @@ MSVC supports these additional predefined macros.
 
 - `_M_CEE_SAFE` Deprecated beginning in Visual Studio 2015. Defined as 001 if the [`/clr:safe`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
+- `_M_FP_CONTRACT` Available beginning in Visual Studio 2022. Defined as 1 if the [`/fp:contract`](../build/reference/fp-specify-floating-point-behavior.md) or [`/fp:fast`](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
+
 - `_M_FP_EXCEPT` Defined as 1 if the [`/fp:except`](../build/reference/fp-specify-floating-point-behavior.md) or [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
 
 - `_M_FP_FAST` Defined as 1 if the [`/fp:fast`](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.

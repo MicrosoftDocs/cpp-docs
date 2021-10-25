@@ -188,5 +188,3 @@ When Visual Studio is running, you're ready to continue to the next step.
 
 > [!div class="nextstepaction"]
 > [Create a C++ project](vscpp-step-1-create.md)
-
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
