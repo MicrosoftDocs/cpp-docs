@@ -9,7 +9,7 @@ ms.custom: intro-whats-new
 
 Visual Studio 2017 brings many updates and fixes to the C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools. Many were submitted by customers through the [Report a Problem and Provide a Suggestion](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017&preserve-view=true) options under **Send Feedback**. Thank you for reporting bugs!
 
-For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017&preserve-view=true). For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md?preserve-view=true&view=msvc-160). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
+For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017&preserve-view=true). For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-visual-cpp-in-visual-studio.md?preserve-view=true&view=msvc-160). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
 
 ## Visual Studio 2017 C++ compiler
 
@@ -101,8 +101,8 @@ There are more standard library improvements in Visual Studio 2017 RTM. For a co
 - `condition_variable::wait_for(lock, relative_time, predicate)` would wait for the entire relative time if there was a spurious wake. Now it waits for only a single interval of the relative time.
 - `future::get()` now invalidates the `future`, as the standard requires.
 - `iterator_traits<void *>` used to be a hard error because it attempted to form `void&`; it now cleanly becomes an empty struct to allow use of `iterator_traits` in "is iterator" SFINAE conditions.
-- Some warnings reported by Clang **-Wsystem-headers** were fixed.
-- Also fixed "exception specification in declaration does not match previous declaration" reported by Clang **-Wmicrosoft-exception-spec**.
+- Some warnings reported by Clang **`-Wsystem-headers`** were fixed.
+- Also fixed "exception specification in declaration does not match previous declaration" reported by Clang **`-Wmicrosoft-exception-spec`**.
 - Also fixed mem-initializer-list ordering warnings reported by Clang and C1XX.
 - The unordered containers didn't swap their hash functions or predicates when the containers themselves were swapped. Now they do.
 - Many container swap operations are now marked **`noexcept`** (as our standard library never intends to throw an exception when detecting the non-`propagate_on_container_swap` non-equal-allocator undefined behavior condition).
@@ -147,7 +147,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 - Changed `static_assert(false, "message")` to `#error message`. This change improves compiler diagnostics because `#error` immediately stops compilation.
 - The standard library no longer marks functions as `__declspec(dllimport)`. Modern linker technology no longer requires it.
 - Extracted SFINAE to default template arguments, which reduced clutter compared to return types and function argument types.
-- Debug checks in \<random\> now use the standard library's usual machinery, instead of the internal function `_Rng_abort()`, which called `fputs()` to **stderr**. This function's implementation has been kept for binary compatibility. We'll remove it in the next binary-incompatible version of the standard library.
+- Debug checks in \<random\> now use the standard library's usual machinery, instead of the internal function `_Rng_abort()`, which called `fputs()` to `stderr`. This function's implementation has been kept for binary compatibility. We'll remove it in the next binary-incompatible version of the standard library.
 
 ##### Visual Studio 2017 version 15.5
 
@@ -176,7 +176,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 
 ##### Visual Studio 2017 version 15.6
 
-- \<memory_resource>
+- `<memory_resource>`
 - Library Fundamentals V1
 - Deleting `polymorphic_allocator` assignment
 - Improving class template argument deduction
@@ -184,7 +184,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 ##### Visual Studio 2017 version 15.7
 
 - Support for parallel algorithms is no longer experimental
-- A new implementation of \<filesystem>
+- A new implementation of `<filesystem>`
 - Elementary string conversions (partial)
 - `std::launder()`
 - `std::byte`

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Fatal Error C1047"
 title: "Fatal Error C1047"
-ms.date: 02/17/2021
+ms.date: 10/22/2021
 f1_keywords: ["C1047"]
 helpviewer_keywords: ["C1047"]
 ---
@@ -21,4 +21,4 @@ To resolve C1047, rebuild all object files or libraries by using the same versio
 
 [`/GL` (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md)\
 [`/LTCG` (Link-time code generation)](../../build/reference/ltcg-link-time-code-generation.md)\
-[C++ binary compatibility 2015-2019](../../porting/binary-compat-2015-2017.md)
+[C++ binary compatibility between Visual Studio versions](../../porting/binary-compat-2015-2017.md)

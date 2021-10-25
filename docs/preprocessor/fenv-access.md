@@ -1,7 +1,7 @@
 ---
 title: "fenv_access pragma"
 description: "Describes the usage and effects of the fenv_access pragma directive. The fenv_access directive controls access to the floating-point environment at runtime."
-ms.date: 01/22/2021
+ms.date: 08/10/2021
 f1_keywords: ["vc-pragma.fenv_access", "fenv_access_CPP"]
 helpviewer_keywords: ["pragma, fenv_access", "fenv_access pragma"]
 no-loc: ["pragma"]
@@ -20,13 +20,19 @@ By default, **`fenv_access`** is **`off`**. The compiler assumes your code doesn
 
 Enable **`fenv_access`** if your code tests floating-point status flags, exceptions, or sets control mode flags. The compiler disables floating-point optimizations, so your code can access the floating-point environment consistently.
 
-The [/fp:strict] command-line option automatically enables **`fenv_access`**. For more information on this and other floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
+The [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md) command-line option automatically enables **`fenv_access`**. For more information on this and other floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
 
 There are restrictions on the ways you can use the **`fenv_access`** pragma in combination with other floating-point settings:
 
 - You can't enable **`fenv_access`** unless precise semantics are enabled. Precise semantics can be enabled either by the [`float_control`](float-control.md) pragma, or by using the [`/fp:precise`](../build/reference/fp-specify-floating-point-behavior.md) or [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md) compiler options. The compiler defaults to **`/fp:precise`** if no other floating-point command-line option is specified.
 
 - You can't use **`float_control`** to disable precise semantics when **`fenv_access(on)`** is set.
+
+::: moniker range=">msvc-160"
+
+The **`fenv_access(on)`** directive disables generation of floating-point *contractions*, machine instructions that combine floating-point operations. **`fenv_access(off)`** restores the previous behavior for contractions. This behavior is new in Visual Studio 2022. Previous compiler versions could generate contractions by default under **`fenv_access(on)`**. For more information about floating-point contractions, see [`/fp:contract`](../build/reference/fp-specify-floating-point-behavior.md#contract).
+
+::: moniker-end
 
 The kinds of optimizations that are subject to **`fenv_access`** are:
 

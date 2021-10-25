@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Linker Tools Error LNK2001"
 title: "Linker Tools Error LNK2001"
-ms.date: "12/19/2019"
+ms.date: 10/22/2021
 f1_keywords: ["LNK2001"]
 helpviewer_keywords: ["LNK2001"]
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
@@ -36,7 +36,7 @@ This error can occur:
 
 - If you link to the release mode libraries when building a debug version of an application. Similarly, if you use options **/MTd** or **/MDd** or define `_DEBUG` and then link to the release libraries, you should expect many potential unresolved externals, among other problems. Linking a release mode build with the debug libraries also causes similar problems. To fix this issue, make sure you use the debug libraries in your debug builds, and retail libraries in your retail builds.
 
-- If your code refers to a symbol from one library version, but you link a different version of the library. Generally, you can't mix object files or libraries that are built for different versions of the compiler. The libraries that ship in one version may contain symbols that can't be found in the libraries included with other versions. To fix this issue, build all the object files and libraries with the same version of the compiler before linking them together. For more information, see [C++ binary compatibility 2015-2019](../../porting/binary-compat-2015-2017.md).
+- If your code refers to a symbol from one library version, but you link a different version of the library. Generally, you can't mix object files or libraries that are built for different versions of the compiler. The libraries that ship in one version may contain symbols that can't be found in the libraries included with other versions. To fix this issue, build all the object files and libraries with the same version of the compiler before linking them together. For more information, see [C++ binary compatibility between Visual Studio versions](../../porting/binary-compat-2015-2017.md).
 
 - If library paths are out of date. The **Tools > Options > Projects > VC++ Directories** dialog, under the **Library files** selection, allows you to change the library search order. The Linker folder in the project's Property Pages dialog box may also contain paths that could be out of date.
 
