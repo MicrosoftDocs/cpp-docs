@@ -1,7 +1,7 @@
 ---
 title: "float_control pragma"
 description: "Describes the usage and effects of the float_control pragma directive. The float_control directive controls the state of floating-point precise semantics and exception semantics at runtime."
-ms.date: 04/15/2021
+ms.date: 08/10/2021
 f1_keywords: ["vc-pragma.float_control", "float_control_CPP"]
 helpviewer_keywords: ["float_control pragma", "pragma, float_control"]
 no-loc: ["pragma"]
@@ -37,11 +37,26 @@ Removes the **`float_control`** setting from the top of the internal compiler st
 
 The **`float_control`** pragma doesn't have the same behavior as the [`/fp`](../build/reference/fp-specify-floating-point-behavior.md) compiler option. The **`float_control`** pragma only governs part of the floating-point behavior. It must be combined with [`fp_contract`](../preprocessor/fp-contract.md) and [`fenv_access`](../preprocessor/fenv-access.md) pragma directives to recreate the **`/fp`** compiler options. The following table shows the equivalent pragma settings for each compiler option:
 
+::: moniker range=">msvc-160"
+
 | Option | `float_control(precise, *)` | `float_control(except, *)` | `fp_contract(*)` | `fenv_access(*)` |
 |-|-|-|-|-|
 | `/fp:strict`             | `on`  | `on`  | `off` | `on`  |
-| `/fp:precise`            | `on`  | `off` | `on`  | `off` |
+| `/fp:precise`            | `on`  | `off` | `off`\*  | `off` |
 | `/fp:fast`               | `off` | `off` | `on`  | `off` |
+
+\* In versions of Visual Studio before Visual Studio 2022, the **`/fp:precise`** behavior defaulted to `fp_contract(on)`.
+
+::: moniker-end
+::: moniker range="<=msvc-160"
+
+| Option | `float_control(precise, *)` | `float_control(except, *)` | `fp_contract(*)` | `fenv_access(*)` |
+|-|-|-|-|-|
+| `/fp:strict`             | `on`  | `on`  | `off` | `on`  |
+| `/fp:precise`            | `on`  | `off` | `off`  | `off` |
+| `/fp:fast`               | `off` | `off` | `on`  | `off` |
+
+::: moniker-end
 
 In other words, you may need to use several pragma directives in combination to emulate the **`/fp:fast`**, **`/fp:precise`**, and **`/fp:strict`** command-line options.
 
@@ -57,12 +72,25 @@ There are restrictions on the ways you can use the **`float_control`** and **`fe
 
 These restrictions mean the order of some floating-point pragma directives is significant. To go from a fast model to a strict model using pragma directives, use the following code:
 
+::: moniker range=">msvc-160"
+
+```cpp
+#pragma float_control(precise, on)  // enable precise semantics
+#pragma fenv_access(on)             // enable environment sensitivity
+#pragma float_control(except, on)   // enable exception semantics
+```
+
+::: moniker-end
+::: moniker range="<=msvc-160"
+
 ```cpp
 #pragma float_control(precise, on)  // enable precise semantics
 #pragma fenv_access(on)             // enable environment sensitivity
 #pragma float_control(except, on)   // enable exception semantics
 #pragma fp_contract(off)            // disable contractions
 ```
+
+::: moniker-end
 
 To go from a strict model to a fast model by using the **`float_control`** pragma, use the following code:
 
@@ -74,6 +102,12 @@ To go from a strict model to a fast model by using the **`float_control`** pragm
 ```
 
 If no options are specified, **`float_control`** has no effect.
+
+::: moniker range=">msvc-160"
+
+The **`float_control`** directive disables contractions when it turns on **`precise`** or **`except`**. Use of **`float_control`** to turn off **`precise`** or **`except`** restores the previous setting for contractions. You can use the **`fp_contract`** pragma directive to change the compiler behavior on contractions. **`float_control(push)`** and **`float_control(pop)`** push and pop the setting for contractions as part of the **`float_control`** setting on to the internal compiler stack. This behavior is new in Visual Studio 2022. The **`float_control`** directive in previous compiler versions did not affect contraction settings.
+
+::: moniker-end
 
 ## Example
 

@@ -1,7 +1,7 @@
 ---
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
-ms.date: 06/14/2021
+ms.date: 10/22/2021
 f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c11", "/std:c17", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ---
 # `/std` (Specify Language Standard Version)
@@ -51,7 +51,7 @@ The **`/std:c++20`** option disables compiler and standard library support for f
 **`/std:c++latest`**\
 The **`/std:c++latest`** option enables all currently implemented compiler and standard library features proposed for the next draft standard, as well as some in-progress and experimental features. This option is available starting in Visual Studio 2015 Update 3.
 
-Depending on the MSVC compiler version or update level, C++17 or C++20 features may not be fully implemented or fully conforming when you specify the **`/std:c++latest`** option. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
+Depending on the MSVC compiler version or update level, C++17, C++20, or proposed C++23 features may not be fully implemented or fully conforming when you specify the **`/std:c++latest`** option. We recommend you use the latest version of Visual Studio for maximum standards conformance. For an overview of C++ language and library conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 
 In versions of Visual Studio 2019 before version 16.11, **`/std:c++latest`** is required to enable all the compiler and standard library features of C++20.
 
