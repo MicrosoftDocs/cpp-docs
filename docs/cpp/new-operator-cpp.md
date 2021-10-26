@@ -7,7 +7,7 @@ ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
 ---
 # new Operator (C++)
 
-Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.
+Allocates memory for an object or array of objects of *type-name* from the free store, or the "heap", and returns a suitably typed, nonzero pointer to the object.
 
 > [!NOTE]
 > Microsoft C++ Component Extensions provides support for the **`new`** keyword to add vtable slot entries. For more information, see [new (new slot in vtable)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
