@@ -35,6 +35,11 @@ long _InterlockedCompareExchange_HLERelease(
    long Exchange,
    long Comparand
 );
+long _InterlockedCompareExchange_nf(
+   long volatile * Destination,
+   long Exchange,
+   long Comparand
+);
 long _InterlockedCompareExchange_np(
    long volatile * Destination,
    long Exchange,
