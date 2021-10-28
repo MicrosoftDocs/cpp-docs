@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Matrix Multiplication"
 title: "Walkthrough: Matrix Multiplication"
-ms.date: "04/23/2019"
+ms.date: 10/27/2021
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
 ---
 # Walkthrough: Matrix Multiplication
@@ -22,9 +22,9 @@ Before you start:
 
 Instructions for creating a new project vary depending on which version of Visual Studio you have installed. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create the project in Visual Studio 2019
+### To create the project in Visual Studio
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
@@ -32,7 +32,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 1. From the filtered list of project types, choose **Empty Project** then choose **Next**. In the next page, enter *MatrixMultiply* in the **Name** box to specify a name for the project, and specify the project location if desired.
 
-   ![New console app.](../../build/media/mathclient-project-name-2019.png "New console app")
+   ![Screenshot showing the Create a new project dialog with the Console App template selected.](../../build/media/mathclient-project-name-2019.png)
 
 1. Choose the **Create** button to create the client project.
 

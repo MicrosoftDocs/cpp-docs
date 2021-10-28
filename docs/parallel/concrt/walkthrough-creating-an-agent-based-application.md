@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Creating an Agent-Based Application"
 title: "Walkthrough: Creating an Agent-Based Application"
-ms.date: "04/25/2019"
+ms.date: 10/27/2021
 helpviewer_keywords: ["asynchronous agents, creating", "agent class, example"]
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
 ---
@@ -35,9 +35,9 @@ This walkthrough demonstrates how to perform the following tasks:
 
 This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a C++ console application in Visual Studio 2019
+### To create a C++ console application in Visual Studio
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
@@ -63,13 +63,17 @@ This section shows how to create a C++ console application that references the h
 
 ::: moniker-end
 
-1. In *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), add the following code:
+**Update the header file**
+
+In the *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) file, add the following code:
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
-   The header file agents.h contains the functionality of the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class.
+The header file *agents.h* contains the functionality of the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class.
 
-1. Verify that the application was created successfully by building and running it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run the application by clicking **Start Debugging** on the **Debug** menu.
+**Verify the application**
+
+Finally, verify the application was created successfully by building and running it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run the application by clicking **Start Debugging** on the **Debug** menu.
 
 [[Top](#top)]
 
@@ -83,37 +87,37 @@ This section shows how to create the `file_reader` class. The runtime schedules 
 
 1. In file_reader.h, add the following code.
 
-[!code-cpp[concrt-basic-agent#17](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_2.h)]
+    [!code-cpp[concrt-basic-agent#17](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_2.h)]
 
 1. In file_reader.h, create a class that is named `file_reader` that derives from `agent`.
 
-[!code-cpp[concrt-basic-agent#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_3.h)]
+    [!code-cpp[concrt-basic-agent#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_3.h)]
 
 1. Add the following data members to the **`private`** section of your class.
 
-[!code-cpp[concrt-basic-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_4.h)]
+    [!code-cpp[concrt-basic-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_4.h)]
 
-   The `_file_name` member is the file name that the agent reads from. The `_target` member is a [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) object that the agent writes the contents of the file to. The `_error` member holds any error that occurs during the life of the agent.
+    The `_file_name` member is the file name that the agent reads from. The `_target` member is a [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) object that the agent writes the contents of the file to. The `_error` member holds any error that occurs during the life of the agent.
 
 1. Add the following code for the `file_reader` constructors to the **`public`** section of the `file_reader` class.
 
-[!code-cpp[concrt-basic-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_5.h)]
+    [!code-cpp[concrt-basic-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_5.h)]
 
-   Each constructor overload sets the `file_reader` data members. The second and third constructor overload enables your application to use a specific scheduler with your agent. The first overload uses the default scheduler with your agent.
+    Each constructor overload sets the `file_reader` data members. The second and third constructor overload enables your application to use a specific scheduler with your agent. The first overload uses the default scheduler with your agent.
 
 1. Add the `get_error` method to the public section of the `file_reader` class.
 
-[!code-cpp[concrt-basic-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_6.h)]
+    [!code-cpp[concrt-basic-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_6.h)]
 
-   The `get_error` method retrieves any error that occurs during the life of the agent.
+    The `get_error` method retrieves any error that occurs during the life of the agent.
 
 1. Implement the [concurrency::agent::run](reference/agent-class.md#run) method in the **`protected`** section of your class.
 
-[!code-cpp[concrt-basic-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_7.h)]
+    [!code-cpp[concrt-basic-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_7.h)]
 
 The `run` method opens the file and reads data from it. The `run` method uses exception handling to capture any errors that occur during file processing.
 
-   Each time this method reads data from the file, it calls the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.
+Each time this method reads data from the file, it calls the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.
 
 The following example shows the complete contents of file_reader.h.
 
@@ -129,37 +133,37 @@ This section shows how to use the `file_reader` class to read the contents of a 
 
 1. In BasicAgent.cpp, add the following `#include` statement.
 
-[!code-cpp[concrt-basic-agent#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_9.cpp)]
+    [!code-cpp[concrt-basic-agent#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_9.cpp)]
 
 1. In BasicAgent.cpp, add the following **`using`** directives.
 
-[!code-cpp[concrt-basic-agent#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_10.cpp)]
+    [!code-cpp[concrt-basic-agent#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_10.cpp)]
 
 1. In the `_tmain` function, create a [concurrency::event](../../parallel/concrt/reference/event-class.md) object that signals the end of processing.
 
-[!code-cpp[concrt-basic-agent#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_11.cpp)]
+    [!code-cpp[concrt-basic-agent#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_11.cpp)]
 
 1. Create a `call` object that updates the checksum when it receives data.
 
-[!code-cpp[concrt-basic-agent#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_12.cpp)]
+    [!code-cpp[concrt-basic-agent#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_12.cpp)]
 
-   This `call` object also sets the `event` object when it receives the empty string to signal the end of processing.
+    This `call` object also sets the `event` object when it receives the empty string to signal the end of processing.
 
 1. Create a `file_reader` object that reads from the file test.txt and writes the contents of that file to the `call` object.
 
-[!code-cpp[concrt-basic-agent#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_13.cpp)]
+    [!code-cpp[concrt-basic-agent#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_13.cpp)]
 
 1. Start the agent and wait for it to finish.
 
-[!code-cpp[concrt-basic-agent#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_14.cpp)]
+    [!code-cpp[concrt-basic-agent#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_14.cpp)]
 
 1. Wait for the `call` object to receive all data and finish.
 
-[!code-cpp[concrt-basic-agent#14](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_15.cpp)]
+    [!code-cpp[concrt-basic-agent#14](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_15.cpp)]
 
 1. Check the file reader for errors. If no error occurred, calculate the final Adler-32 sum and print the sum to the console.
 
-[!code-cpp[concrt-basic-agent#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_16.cpp)]
+    [!code-cpp[concrt-basic-agent#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_16.cpp)]
 
 The following example shows the complete BasicAgent.cpp file.
 
