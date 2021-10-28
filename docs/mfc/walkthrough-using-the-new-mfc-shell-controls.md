@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Using the New MFC Shell Controls"
 title: "Walkthrough: Using the New MFC Shell Controls"
-ms.date: "04/25/2019"
+ms.date: 10/27/2021
 helpviewer_keywords: ["shell controls (MFC)"]
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
 ---
@@ -19,9 +19,9 @@ In this walkthrough, you'll create an application that resembles File Explorer. 
 
 These steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create an MFC project in Visual Studio 2019
+### To create an MFC project in Visual Studio
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 

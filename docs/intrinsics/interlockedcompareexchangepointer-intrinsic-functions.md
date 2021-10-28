@@ -45,7 +45,7 @@ void * _InterlockedCompareExchangePointer_np (
    void * Exchange,
    void * Comparand
 );
-long _InterlockedCompareExchangePointer_rel (
+void * _InterlockedCompareExchangePointer_rel (
    void * volatile * Destination,
    void * Exchange,
    void * Comparand
