@@ -16,9 +16,9 @@ This topic describes how to configure a MSBuild-based Linux project as described
 
 You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL).
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-**Visual Studio 2019 version 16.1**:
+**Visual Studio 2019 version 16.1** and later:
 
 - When you target WSL, you can avoid the copy operations needed to build and get IntelliSense that are required when you target a remote Linux system.
 
@@ -48,9 +48,9 @@ To change settings related to the remote Linux computer, configure the remote se
 
    ![Screenshot showing the Remote Build Machine.](media/remote-build-machine-vs2019.png)
 
-   ::: moniker range="msvc-160"
+   ::: moniker range=">=msvc-160"
 
-   **Visual Studio 2019 version 16.7**: To target Windows Subsystem for Linux (WSL), set the **Platform Toolset** drop-down to **GCC for Windows Subsystem for Linux**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
+   **Visual Studio 2019 version 16.7** and later: To target Windows Subsystem for Linux (WSL), set the **Platform Toolset** drop-down to **GCC for Windows Subsystem for Linux**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
 
    ![Screenshot showing the WSL build machine.](media/wsl-remote-vs2019.png)
 
@@ -69,9 +69,10 @@ To change settings related to the remote Linux computer, configure the remote se
 
 ## Copy sources (remote systems only)
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-This section doesn't apply when targeting WSL.
+> [!NOTE]
+> This section doesn't apply when targeting WSL.
 
 ::: moniker-end
 
@@ -112,7 +113,7 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 ![Screenshot showing the Options dialog box with Cross Platform > Connection Manager selected.](media/connection-manager-vs2019.png)
 
