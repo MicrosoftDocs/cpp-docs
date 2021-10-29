@@ -8,16 +8,17 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 
 ::: moniker range="<=msvc-150"
 
-The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
+The C++ Build Insights tools are available starting in Visual Studio 2019 and later. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019 or later. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-This article lists and describes the commands available in *vcperf.exe*, and how to use them.
+This article lists and describes the commands available in *`vcperf.exe`*, and how to use them.
 
 ## Commands to start and stop traces
 
-*IMPORTANT: the following commands all require administrative privileges.*
+> [!IMPORTANT]
+> The following commands all require administrative privileges.
 
 | Option           | Arguments and description |
 |------------------|---------------------------|

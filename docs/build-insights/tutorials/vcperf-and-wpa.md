@@ -8,18 +8,18 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 
 ::: moniker range="<=msvc-150"
 
-The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
+The C++ Build Insights tools are available in Visual Studio 2019 and later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019 or later. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-In this tutorial, you'll learn how to use *vcperf.exe* to collect a trace of your C++ build. You'll also learn how to view this trace in Windows Performance Analyzer.
+In this tutorial, you'll learn how to use *`vcperf.exe`* to collect a trace of your C++ build. You'll also learn how to view this trace in Windows Performance Analyzer.
 
 ## Step 1: Install and configure Windows Performance Analyzer
 
 WPA is a trace viewer available in the Windows Assessment and Deployment Kit (ADK). It's a separate utility that's not part of the components you can install with the Visual Studio installer.
 
-A version of WPA that supports C++ Build Insights is currently only available in the most recent versions of the Windows ADK, 10.1.19041.0 or later.
+A version of WPA that supports C++ Build Insights is only available in versions of the Windows ADK numbered 10.1.19041.0 or later.
 
 ### To download and install WPA
 
@@ -42,10 +42,11 @@ Viewing C++ Build Insights traces in WPA requires a special add-in. Follow these
     1. [C++ Build Insights NuGet package](https://www.nuget.org/packages/Microsoft.Cpp.BuildInsights/).
 
 1. Copy the `perf_msvcbuildinsights.dll` file into your WPA installation directory.
-    1. In Visual Studio 2019 version 16.6 and above, this file is located here: `C:\Program Files (x86)\Microsoft Visual Studio\2019\{Edition}\VC\Tools\MSVC\{Version}\bin\Host{Architecture}\{Architecture}`.
+    1. In Visual Studio 2019 version 16.6 and above, this file is located here: `C:\Program Files (x86)\Microsoft Visual Studio\{Year}\{Edition}\VC\Tools\MSVC\{Version}\bin\Host{Architecture}\{Architecture}`.
     1. In the C++ Build Insights NuGet package, this file is located here: `wpa\{Architecture}`.
     1. In the paths above, replace the variables surrounded by curly brackets as follows:
-        1. `{Edition}` is your Visual Studio 2019 edition such as Community, Professional, or Enterprise.
+        1. `{Year}` is your Visual Studio product year, such as 2019 or 2022.
+        1. `{Edition}` is your Visual Studio edition such as Community, Professional, or Enterprise.
         1. `{Version}` is your MSVC version. Choose the highest one available.
         1. `{Architecture}`: choose `x64` if you have a 64-bit version of Windows. Otherwise, choose `x86`.
     1. The WPA installation directory is typically: `C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit`.
