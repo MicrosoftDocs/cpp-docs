@@ -347,7 +347,7 @@ These options allow you to run commands on the remote system before and after bu
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 In a CMake project, build configurations are stored in a *`CMakeSettings.json`* file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
 

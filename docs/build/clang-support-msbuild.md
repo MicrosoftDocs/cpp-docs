@@ -13,7 +13,7 @@ Clang support for both CMake and MSBuild projects is available in Visual Studio 
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 You can use Visual Studio 2019 version 16.2 and later with Clang to edit, build, and debug C++ Visual Studio projects (MSBuild) that target Windows or Linux.
 

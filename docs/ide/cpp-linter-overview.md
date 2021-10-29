@@ -20,16 +20,7 @@ The IntelliSense code linter for C++ helps developers find and fix common C++ pr
 
 ## Find problems
 
-::: moniker range=">=msvc-170"
-
-In Visual Studio 2019, the C++ linter is available as an option. Starting in Visual Studio 2022, the C++ Linter is enabled by default. To use it, just open a source file in the editor. The linter shows any problems it finds by annotations in the editor window and in the Error List window.
-
-::: moniker-end
-::: moniker range="msvc-160"
-
-In Visual Studio 2019, the C++ linter is available as an option. To enable it, follow the instructions in [Configure the linter](#configure-the-linter). Then just open a source file in the editor. The linter shows any problems it finds by annotations in the editor window and in the Error List window.
-
-::: moniker-end
+Starting in Visual Studio 2022, the C++ Linter is enabled by default. To use it, just open a source file in the editor. The linter shows any problems it finds by annotations in the editor window and in the Error List window. In Visual Studio 2019, the C++ linter is available as an option. To enable it, follow the instructions in [Configure the linter](#configure-the-linter).
 
 ## Fix problems
 

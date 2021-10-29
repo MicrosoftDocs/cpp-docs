@@ -7,7 +7,7 @@ ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
 ---
 # Field Status Data Members in Wizard-Generated Accessors
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 

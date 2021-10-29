@@ -33,9 +33,9 @@ When writing C++, IntelliCode will assist when using popular libraries such as t
 
 ![Screenshot of C&#43;&#43; IntelliCode.](../ide/media/intellicode-cpp.png "C++ IntelliCode")
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-In Visual Studio 2019, IntelliCode is available as an optional component in the **C++ Desktop Development** workload. To make sure that IntelliCode is active for C++, go to **Tools** > **Options** > **IntelliCode** > **General** and set **C++ base model** to **Enabled**.
+In Visual Studio 2022 and Visual Studio 2019, IntelliCode is available as an optional component in the **C++ Desktop Development** workload. To make sure that IntelliCode is active for C++, go to **Tools** > **Options** > **IntelliCode** > **General** and set **C++ base model** to **Enabled**.
 
 ::: moniker-end
 

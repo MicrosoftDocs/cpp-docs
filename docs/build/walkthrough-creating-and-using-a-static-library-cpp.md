@@ -2,7 +2,7 @@
 title: "Walkthrough: Create and use a static library (C++)"
 description: "Use C++ to create a static library (.lib) in Visual Studio."
 ms.custom: "get-started-article"
-ms.date: "04/13/2020"
+ms.date: 10/28/2021
 helpviewer_keywords: ["libraries [C++], static", "static libraries [C++]"]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
 ---
@@ -30,11 +30,11 @@ An understanding of the fundamentals of the C++ language.
 
 The instructions for how to create the project vary depending on your version of Visual Studio. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a static library project in Visual Studio 2019
+### To create a static library project in Visual Studio
 
-1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog.
 
 1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Library**.
 
@@ -162,11 +162,11 @@ The instructions for how to create the project vary depending on your version of
 
 ## <a name="CreateAppToRefTheLib"></a> Create a C++ console app that references the static library
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a C++ console app that references the static library in Visual Studio 2019
+### To create a C++ console app that references the static library in Visual Studio
 
-1. In **Solution Explorer**, right-click on the top node, **Solution 'StaticMath'**, to open the shortcut menu. Choose **Add** > **New Project** to open the **Add a New Project** dialog box.
+1. In **Solution Explorer**, right-click on the top node, **Solution 'StaticMath'**, to open the shortcut menu. Choose **Add** > **New Project** to open the **Add a New Project** dialog.
 
 1. At the top of the dialog, set the **Project type** filter to **Console**.
 

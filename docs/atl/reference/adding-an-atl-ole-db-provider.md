@@ -7,7 +7,7 @@ ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
 ---
 # Adding an ATL OLE DB Provider
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 

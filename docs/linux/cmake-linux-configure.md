@@ -50,8 +50,8 @@ The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Stud
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
-To change the default CMake settings in Visual Studio 2019, from the main toolbar, open the **Configuration** dropdown and choose **Manage Configurations**.
+::: moniker range=">=msvc-160"
+To change the default CMake settings in Visual Studio 2019 or later, from the main toolbar, open the **Configuration** dropdown and choose **Manage Configurations**.
 
 ![Screenshot showing CMake Manage Configurations highlighted in the Configuration dropdown.](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
@@ -107,7 +107,7 @@ After you select a target, CMake runs automatically on the Linux system to gener
 ![Screenshot of Visual Studio showing the output of Generate CMake cache on Linux.](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
 ::: moniker-end
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 ### Target Windows Subsystem for Linux
 

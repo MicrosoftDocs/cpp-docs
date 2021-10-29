@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Static libraries (C++/CX)"
 title: "Static libraries (C++/CX)"
-ms.date: "02/03/2017"
+ms.date: 10/28/2021
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
 ---
 # Static libraries (C++/CX)
@@ -12,11 +12,11 @@ A static library that's used in a Universal Windows Platform (UWP) app can conta
 
 Instructions for creating a new project vary depending on which version of Visual Studio you have installed. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a UWP static library in Visual Studio 2019
+### To create a UWP static library in Visual Studio
 
-1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog.
 
 1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **UWP**.
 

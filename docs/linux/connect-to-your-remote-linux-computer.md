@@ -17,7 +17,7 @@ You can configure a Linux project to target a remote machine or the Windows Subs
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 You can configure a Linux project to target a remote machine or the Windows Subsystem for Linux (WSL). For a remote machine, you need to set up a remote connection in Visual Studio. To connect to WSL, skip ahead to the [Connect to WSL](#connect-to-wsl) section.
 
@@ -30,10 +30,10 @@ To build the project, Visual Studio copies the source code to your remote Linux 
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 > [!NOTE]
-> Visual Studio 2019 version 16.5 and later also supports secure, Federal Information Processing Standard (FIPS) 140-2 compliant cryptographic connections to Linux systems for remote development. To use a FIPS-compliant connection, follow the steps in [Set up FIPS-compliant secure remote Linux development](set-up-fips-compliant-secure-remote-linux-development.md) instead.
+> Starting in Visual Studio 2019 version 16.5, Visual Studio supports secure, Federal Information Processing Standard (FIPS) 140-2 compliant cryptographic connections to Linux systems for remote development. To use a FIPS-compliant connection, follow the steps in [Set up FIPS-compliant secure remote Linux development](set-up-fips-compliant-secure-remote-linux-development.md) instead.
 
 ::: moniker-end
 
@@ -205,9 +205,7 @@ The `rsync` command is used by both MSBuild-based Linux projects and CMake proje
 
 ![Screenshot showing an Rsync Error.](media/port-forwarding-copy-error.png)
 
-
 `gdbserver` can be used for debugging on embedded devices. If you can't enable TCP port forwarding, then you must use `gdb` for all remote debugging scenarios. `gdb` is used by default when debugging projects on a remote system.
-
 
 Visual Studio's Linux support has a dependency on TCP port forwarding. Both `rsync` and `gdbserver` are affected if TCP port forwarding is disabled on your remote system. If this dependency impacts you, vote for this [suggestion ticket](https://developercommunity2.visualstudio.com/t/shDonshshtsh-shrelysh-s/840265?space=62) on Developer Community.
 
@@ -221,9 +219,9 @@ In Visual Studio 2017, you use the same steps to connect to WSL as you use for a
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-Visual Studio 2019 version 16.1 added native support for using C++ with the [Windows Subsystem for Linux (WSL)](/windows/wsl/about). That means you can build and debug on your local WSL installation directly. You no longer need to add a remote connection or configure SSH. You can find details on [how to install WSL](/windows/wsl/install-win10) here.
+Starting in Visual Studio 2019 version 16.1, Visual Studio has native support for using C++ with the [Windows Subsystem for Linux (WSL)](/windows/wsl/about). That means you can build and debug on your local WSL installation directly. You no longer need to add a remote connection or configure SSH. You can find details on [how to install WSL](/windows/wsl/install-win10) here.
 
 To configure your WSL installation to work with Visual Studio, you need the following tools installed: `gcc` or `clang`, `gdb`, `make`, `ninja-build` (only required for CMake projects using Visual Studio 2019 version 16.6 or later), `rsync`, and `zip`. You can install them on distros that use `apt` by using this command, which also installs the g++ compiler:
 
