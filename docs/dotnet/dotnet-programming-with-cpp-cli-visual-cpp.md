@@ -1,7 +1,7 @@
 ---
 title: ".NET programming with C++/CLI"
 description: "Learn how to use C++/CLI to create .NET apps and components in Visual Studio."
-ms.date: 9/21/2021
+ms.date: 10/28/2021
 helpviewer_keywords: ["programming [C++], .NET programming", ".NET Framework [C++]", ".NET applications [C++]", "Visual C++, .NET programming"]
 ---
 # .NET programming with C++/CLI
@@ -27,6 +27,15 @@ In Visual Studio 2019, the default target framework for .NET Core projects is 5.
 ## Install C++/CLI support in Visual Studio 2019
 
 C++/CLI itself isn't installed by default when you install a Visual Studio C++ workload. To install the component after Visual Studio is installed, open the Visual Studio Installer by selecting the Windows **Start** menu and searching for **visual studio installer**. Choose the **Modify** button next to your installed version of Visual Studio. Select the **Individual components** tab. Scroll down to the **Compilers, build tools, and runtimes** section, and select **C++/CLI support for v142 build tools (Latest)**. Select **Modify** to download the necessary files and update Visual Studio.
+
+::: moniker-end
+::: moniker range="msvc-170"
+
+In Visual Studio 2022, the default target framework for .NET Core projects is 6.0. For .NET Frameworks projects, the default is 4.7.2. The .NET Framework version selector is on the **Configure your new project** page of the **Create a new project** dialog.
+
+## Install C++/CLI support in Visual Studio 2022
+
+C++/CLI itself isn't installed by default when you install a Visual Studio C++ workload. To install the component after Visual Studio is installed, open the Visual Studio Installer by selecting the Windows **Start** menu and searching for **visual studio installer**. Choose the **Modify** button next to your installed version of Visual Studio. Select the **Individual components** tab. Scroll down to the **Compilers, build tools, and runtimes** section, and select **C++/CLI support for v143 build tools (Latest)**. Select **Modify** to download the necessary files and update Visual Studio.
 
 ::: moniker-end
 
