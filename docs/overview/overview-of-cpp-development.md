@@ -20,15 +20,15 @@ Visual Studio provides support for any project system or custom build tools that
 
 - **MSBuild** is the native project system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
-   ::: moniker range="msvc-160"
+   ::: moniker range=">=msvc-160"
 
-   ![Screenshot of the Create a new Project dialog showing new project templates.](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 New Project Dialog")
+   ![Screenshot of the Create a new Project dialog showing new project templates.](../build/media/mathclient-project-name-2019.png)
 
    ::: moniker-end
 
    ::: moniker range="<=msvc-150"
 
-   ![Screenshot of the New Project dialog showing project templates.](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+   ![Screenshot of the New Project dialog showing project templates.](media/vs2017-new-project.png)
 
    ::: moniker-end
 
@@ -42,15 +42,15 @@ Visual Studio provides support for any project system or custom build tools that
 
 Source control enables you to coordinate work among multiple developers, isolate in-progress work from production code, and backup your source code. Visual Studio supports Git and [Team Foundation Version Control \(TFVC\)](/azure/devops/repos/tfvc/) through its **Team Explorer** window.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png )
 
 ::: moniker-end
 
 ::: moniker range="<=msvc-150"
 
-![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png )
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ For more information about Git integration with repos in Azure, see [Share your 
 
 ## Obtain libraries
 
-Use the [vcpkg](https://vcpkg.io/) package manager to obtain and install third-party libraries. Over 900 open-source libraries are currently available in the catalog.
+Use the [vcpkg](https://vcpkg.io/) package manager to obtain and install third-party libraries. Over 1700 open-source library packages are currently available in the catalog.
 
 ## Create user interfaces with designers
 

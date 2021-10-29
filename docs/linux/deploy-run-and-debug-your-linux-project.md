@@ -13,9 +13,9 @@ Linux support is available in Visual Studio 2017 and later. To see the documenta
 
 Once you've created a MSBuild-based Linux C++ project in Visual Studio and you've connected to the project using the [Linux Connection Manager](connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-**Visual Studio 2019 version 16.1** You can target different Linux systems for debugging and building. For example, you can cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios. For more information, see [Specify different machines for building and debugging](#separate_build_debug) later in this article.
+**Visual Studio 2019 version 16.1** and later: You can target different Linux systems for debugging and building. For example, you can cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios. For more information, see [Specify different machines for building and debugging](#separate_build_debug) later in this article.
 
 ::: moniker-end
 
@@ -29,11 +29,11 @@ There are several ways to interact with and debug your Linux project.
 
 1. Select debugging mode in the **Debugging** property page.
 
-   ::: moniker range="msvc-160"
+   ::: moniker range=">=msvc-160"
 
    GDB is used to debug applications running on Linux. When debugging on a remote system (not WSL) GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
-   ![Screenshot of the Visual Studio 2019 Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G B D selected and highlighted from the dropdown list.](media/vs2019-debugger-settings.png)
+   ![Screenshot of the Visual Studio Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G D B selected and highlighted from the dropdown list.](media/vs2019-debugger-settings.png)
 
    ::: moniker-end
 
@@ -41,7 +41,7 @@ There are several ways to interact with and debug your Linux project.
 
    GDB is used to debug applications running on Linux. GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
-   ![Screenshot of the Visual Studio 2017 Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G B D selected and highlighted from the dropdown list.](media/vs2017-debugger-settings.png)
+   ![Screenshot of the Visual Studio 2017 Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G D B selected and highlighted from the dropdown list.](media/vs2017-debugger-settings.png)
 
    ::: moniker-end
 
@@ -118,11 +118,11 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 
 The **AttachOptionsForConnection** has most of the attributes you might need. The example above shows how to specify a location to search for additional .so libraries. The child element **ServerOptions** enables attaching to the remote process with gdbserver instead. To do that, you need to specify a local gdb client (the one shipped in Visual Studio 2017 is shown above) and a local copy of the binary with symbols. The **SetupCommands** element enables you to pass commands directly to gdb. You can find all the options available in the [LaunchOptions.xsd schema](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd) on GitHub.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 ## <a name="separate_build_debug"></a> Specify different machines for building and debugging in MSBuild-based Linux projects
 
-In Visual Studio 2019 version 16.1, you can separate your remote build machine from your remote debug machine for both MSBuild-based Linux projects and CMake projects that target a remote Linux machine. For example, you can now cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios.
+You can separate your remote build machine from your remote debug machine for both MSBuild-based Linux projects and CMake projects that target a remote Linux machine. For example, you can now cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios.
 
 By default, the remote debug machine is the same as the remote build machine (**Configuration Properties** > **General** > **Remote Build Machine**). To specify a new remote debug machine, right-click on the project in **Solution Explorer** and go to **Configuration Properties** > **Debugging** > **Remote Debug Machine**.  
 

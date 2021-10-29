@@ -6,7 +6,7 @@ helpviewer_keywords: ["CMake build settings"]
 ---
 # Customize CMake build settings
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 In Visual Studio 2019 and later, you can add configurations and customize their settings by using the **CMake settings editor**. The editor is intended to be a simpler alternative to manually editing the *CMakeSettings.json* file, but if you prefer to edit the file directly, you can click the **Edit JSON** link in the upper right of the editor.
 

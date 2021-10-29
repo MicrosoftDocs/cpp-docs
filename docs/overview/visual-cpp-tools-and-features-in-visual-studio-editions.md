@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: C++ Tools and Features in Visual Studio Editions"
 title: "C++ Tools and Features in Visual Studio Editions"
-ms.date: "05/21/2019"
+ms.date: 10/27/2021
 helpviewer_keywords: ["tools and platforms [C++]"]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
@@ -53,7 +53,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 - MSVC 64-bit compiler for x86, x64, ARM, and ARM64
 - GCC cross-compiler for ARM
 - Clang/LLVM
-  - On Windows, Clang/LLVM 7.0, targeting x86 or x64 (CMake support only). Other Clang versions might work but are not officially supported.
+  - On Windows, Clang/LLVM 12.0, targeting x86 or x64 (CMake support only).
   - On Linux, any Clang/LLVM installation supported by the distro.
 
 ::: moniker-end
@@ -106,7 +106,9 @@ Optional Components:
 - C++ Clang tools for Windows (12.0.0 - x64/x86)
 - JavaScript diagnostics
 - IncrediBuild - Build Acceleration
+- Windows 11 SDK
 - Windows 10 SDK (other versions)
+- MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.29)
 - MSVC v141 - VS 2017 C++ x64/x86 build tools (v14.16)
 - MSVC v140 - VS 2015 C++ build tools (v14.00)
 
@@ -133,6 +135,7 @@ Optional Components:
 - C++ Clang tools for Windows
 - JavaScript diagnostics
 - IncrediBuild - Build Acceleration
+- Windows 11 SDK
 - Windows 10 SDK (other versions)
 - MSVC v141 - VS 2017 C++ x64/x86 build tools (v14.16)
 - MSVC v140 - VS 2015 C++ build tools (v14.00)
@@ -174,9 +177,12 @@ Optional Components:
 - IntelliTrace (Enterprise only)
 - USB Device Connectivity
 - C++ (v143) Universal Windows Platform tools
+- C++ (v142) Universal Windows Platform tools
 - C++ (v141) Universal Windows Platform tools
 - Graphics debugger and GPU profiler for DirectX
+- Windows 11 SDK
 - Windows 10 SDK (other versions)
+- Architecture and analysis tools
 
 ::: moniker-end
 
@@ -188,6 +194,7 @@ Optional Components:
 - C++ (v142) Universal Windows Platform tools
 - C++ (v141) Universal Windows Platform tools
 - Graphics debugger and GPU profiler for DirectX
+- Windows 11 SDK
 - Windows 10 SDK (other versions)
 - Architecture and analysis tools
 
@@ -215,6 +222,7 @@ Optional Components:
 - Windows 10 SDK (latest for this Visual Studio version)
 - IntelliCode
 - IntelliTrace (Enterprise only)
+- Windows 11 SDK
 - Windows 10 SDK (other versions)
 - IncrediBuild - Build Acceleration
 - Cocos
@@ -236,6 +244,7 @@ Optional Components:
 - Windows 10 SDK (latest for this Visual Studio version)
 - IntelliCode
 - IntelliTrace (Enterprise only)
+- Windows 11 SDK
 - Windows 10 SDK (other versions)
 - IncrediBuild - Build Acceleration
 - Cocos

@@ -7,7 +7,7 @@ ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
 ---
 # Add Class from Typelib Wizard
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
