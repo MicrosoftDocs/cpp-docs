@@ -61,6 +61,8 @@ items:
       href: tool-errors/command-line-error-d8045.md
     - name: Command-line error D8048
       href: tool-errors/command-line-error-d8048.md
+    - name: Command-line error D8049
+      href: tool-errors/command-line-error-d8049.md
     - name: Command-line warning D9024
       href: tool-errors/command-line-warning-d9024.md
     - name: Command-line warning D9025

@@ -47,11 +47,11 @@ On Windows 10 and later, you can install and target your favorite Linux distro o
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
 
-- **A compiler** - Visual Studio 2019 has full support for GCC and [Clang](../build/clang-support-cmake.md).
+- **A compiler** - Visual Studio 2019 and later have full support for GCC and [Clang](../build/clang-support-cmake.md).
 - **gdb** - Visual Studio automatically launches gdb on the Linux system, and uses the front end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux.
 - **rsync** and **zip** - the inclusion of rsync and zip allows Visual Studio to extract header files from your Linux system to the Windows filesystem for use by IntelliSense.
 - **make**
@@ -76,7 +76,7 @@ Linux projects in Visual Studio require the following dependencies to be install
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 ## Linux setup: Ubuntu on WSL
 
@@ -112,7 +112,7 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **ma
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 ## Fedora on WSL
 

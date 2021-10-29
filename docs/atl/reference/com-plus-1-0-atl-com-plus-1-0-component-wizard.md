@@ -7,7 +7,7 @@ ms.assetid: 2fbe259c-6be1-4d0e-9cfe-721c75c97cb1
 ---
 # COM+ 1.0, ATL COM+ 1.0 Component Wizard
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 

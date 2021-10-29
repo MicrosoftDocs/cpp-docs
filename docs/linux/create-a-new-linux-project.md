@@ -36,7 +36,7 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 First, make sure you have the **Linux Development Workload** for Visual Studio installed. For more information, see [Download, install, and set up the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
@@ -46,7 +46,7 @@ If you have an existing Windows Visual Studio solution that you would like to ex
 
 ## Create a new Linux project
 
-To create a new Linux project in Visual Studio 2019, follow these steps:
+To create a new Linux project in Visual Studio, follow these steps:
 
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**. The Create a new project dialog appears.
 1. In the **Search for templates** textbox, enter **Linux** to list the available templates for Linux projects.

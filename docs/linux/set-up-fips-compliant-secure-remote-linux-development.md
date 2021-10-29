@@ -11,7 +11,7 @@ Linux support is available in Visual Studio 2017 and later. FIPS-compliant secur
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 Federal Information Processing Standard (FIPS) Publication 140-2 is a U.S. government standard for cryptographic modules. Implementations of the standard are validated by NIST. Windows has [validated support for FIPS-compliant cryptographic modules](/windows/security/threat-protection/fips-140-validation). In Visual Studio 2019 version 16.5 and later, you can use a secure, FIPS-compliant cryptographic connection to your Linux system for remote development.
 

@@ -18,7 +18,7 @@ You can use the **CLR Console App** template in the **New Project** dialog to cr
 C++/CLI support isn't installed by default when you install a Visual Studio C++ workload. If you don't see a CLR heading under Visual C++ in the **New Project** dialog, you may need to install C++/CLI support. For more information, see [.NET programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 ::: moniker-end
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 You can use the **CLR Console App (.NET Framework)** template in the **Create a new project** dialog to create a console app project that already has essential project references and files.
 
@@ -121,7 +121,7 @@ When you use the CLR Console App template to create a project, it automatically 
 1. Choose the **OK** button to generate the project and source files.
 
 ::: moniker-end
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 1. On the menu bar, choose **File** > **New** > **Project**.
 

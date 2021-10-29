@@ -18,7 +18,9 @@ The articles in this section provide a reference to the command-line errors and 
 [Command-Line Error D8027](../../error-messages/tool-errors/command-line-error-d8027.md) \
 [Command-Line Error D8036](../../error-messages/tool-errors/command-line-error-d8036.md) \
 [Command-Line Error D8037](../../error-messages/tool-errors/command-line-error-d8037.md) \
-[Command-Line Error D8045](../../error-messages/tool-errors/command-line-error-d8045.md)
+[Command-Line Error D8045](../../error-messages/tool-errors/command-line-error-d8045.md) \
+[Command-Line Error D8048](../../error-messages/tool-errors/command-line-error-d8048.md) \
+[Command-Line Error D8049](../../error-messages/tool-errors/command-line-error-d8049.md)
 
 ## Command-line warning messages
 
