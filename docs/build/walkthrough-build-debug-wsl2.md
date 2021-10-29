@@ -49,52 +49,52 @@ This walkthrough uses GCC and Ninja on Ubuntu. And Visual Studio 2022 version 17
 
 Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file at the project root. In this walkthrough, you'll create a new CMake project by using the Visual Studio **CMake Project** template:
 
-1. From the Visual Studio **Get started** screen, select **Create a new project**.
+3. From the Visual Studio **Get started** screen, select **Create a new project**.
 
     ![Screenshot of the Visual Studio 2022 get started dialog box that shows options to clone a repository, open a project or solution, open a local folder, create a new project, or continue without code](media/vs2022-get-started.png)
 
-1. In the **Search for templates** textbox, type "cmake".  Choose the **CMake Project** type and select **Next**. Give the project a name and location, and then select **Create**.
+4. In the **Search for templates** textbox, type "cmake".  Choose the **CMake Project** type and select **Next**. Give the project a name and location, and then select **Create**.
 
-1. Enable Visual Studio’s CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#-enable--cmakepresetsjson-integration-in-visual-studio-2019).
+5. Enable Visual Studio’s CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#-enable--cmakepresetsjson-integration-in-visual-studio-2019).
 
     ![Screenshot of CMake general options screen with Prefer using CMake Presets for configure, build, and test highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
 
-4. To activate the integration: from the main menu, select **File** > **Close Folder**. The **Get started** page appears. Under **Open recent**, select the folder you just closed to reopen the folder.
+6. To activate the integration: from the main menu, select **File** > **Close Folder**. The **Get started** page appears. Under **Open recent**, select the folder you just closed to reopen the folder.
 
-5. There are three dropdowns across the Visual Studio main menu bar. Use the dropdown on the left to select your active target system. This is the system where CMake will be invoked to configure and build the project. Visual Studio queries for WSL installations with `wsl -l -v`. In the following image, **WSL2: Ubuntu-20.04** is shown selected as the **Target System**.
+7. There are three dropdowns across the Visual Studio main menu bar. Use the dropdown on the left to select your active target system. This is the system where CMake will be invoked to configure and build the project. Visual Studio queries for WSL installations with `wsl -l -v`. In the following image, **WSL2: Ubuntu-20.04** is shown selected as the **Target System**.
 
     ![Target system dropdown displaying WSL2: Ubuntu-20.04 as being selected](media/vs2022-target-system-dropdown.png)
 
-> [!NOTE]
-> If Visual Studio starts to configure your project automatically, read step 7 to manage CMake binary deployment, and then continue to the next step below. To customize this behavior, see [Modify automatic configuration and cache notifications](cmake-presets-vs.md#modify-automatic-configuration-and-cache-notifications).
+    > [!NOTE]
+    > If Visual Studio starts to configure your project automatically, read step 11 to manage CMake binary deployment, and then continue to the step below. To customize this behavior, see [Modify automatic configuration and cache notifications](cmake-presets-vs.md#modify-automatic-configuration-and-cache-notifications).
 
-6. Use the dropdown in the middle to select your active Configure Preset. Configure Presets tell Visual Studio how to invoke CMake and generate the underlying build system. In step 3, the active Configure Preset is the **linux-default** Preset created by Visual Studio. To create a custom Configure Preset, select **Manage Configurations…** For more information about Configure Presets, see [Select a Configure Preset](cmake-presets-vs.md#select-a-configure-preset) and [Edit Presets](cmake-presets-vs.md#edit-presets).
+8. Use the dropdown in the middle to select your active Configure Preset. Configure Presets tell Visual Studio how to invoke CMake and generate the underlying build system. In step 7, the active Configure Preset is the **linux-default** Preset created by Visual Studio. To create a custom Configure Preset, select **Manage Configurations…** For more information about Configure Presets, see [Select a Configure Preset](cmake-presets-vs.md#select-a-configure-preset) and [Edit Presets](cmake-presets-vs.md#edit-presets).
 
     ![Active configure preset dropdown, showing Manage Configurations... selected](media/vs2022-ActivePresetDropdown.png)
 
-7. Use the dropdown on the right to select your active Build Preset. Build Presets tell Visual Studio how to invoke build. In the illustration for step 3, the active Build Preset is the **Default** Build Preset created by Visual Studio. For more information about Build Presets, see [Select a Build Preset](cmake-presets-vs.md#select-a-build-preset).
+9. Use the dropdown on the right to select your active Build Preset. Build Presets tell Visual Studio how to invoke build. In the illustration for step 7, the active Build Preset is the **Default** Build Preset created by Visual Studio. For more information about Build Presets, see [Select a Build Preset](cmake-presets-vs.md#select-a-build-preset).
 
-8. Configure the project on WSL 2. If project generation doesn't start automatically, then manually invoke configure with **Project** > **Configure** *project-name*
+10. Configure the project on WSL 2. If project generation doesn't start automatically, then manually invoke configure with **Project** > **Configure** *project-name*
 
     ![Project configure drop-down showing Configure CMakeProject selected](media/vs2022-project-configure.png)
 
-9. If you don't have a supported version of CMake installed on your WSL 2 distro, then Visual Studio will prompt you beneath the main menu ribbon to deploy a recent version of CMake. Select **Yes** to deploy CMake binaries to your WSL 2 distro.
+11. If you don't have a supported version of CMake installed on your WSL 2 distro, then Visual Studio will prompt you beneath the main menu ribbon to deploy a recent version of CMake. Select **Yes** to deploy CMake binaries to your WSL 2 distro.
 
     ![Visual Studio prompt beneath the toolbar that says: supported cmake version is not present. Install latest CMake binaries from Cmake.org? Yes no](media/vs2022-supported-cmake-not-present-prompt.png)
 
-10. Confirm that the configure step has completed and that you can see the **CMake generation finished** message in the **Output** window under the **CMake** pane. Build files are written to a directory in the WSL 2 distro’s file system.
+12. Confirm that the configure step has completed and that you can see the **CMake generation finished** message in the **Output** window under the **CMake** pane. Build files are written to a directory in the WSL 2 distro’s file system.
 
     ![Output window showing message that CMake generation is done](media/vs-output-window-cmake-generation.png)
 
-11. Select the active debug target. The debug dropdown menu lists all the CMake targets available to the project.
+13. Select the active debug target. The debug dropdown menu lists all the CMake targets available to the project.
 
     ![Debug dropdown menu showing CMakeProject selected](media/vs-debug-dropdown-menu-cmake.png)
 
-12. Expand the project subfolder in the **Solution Explorer**. In the `CMakeProject.cpp` file, set a breakpoint in `main()`. You can also navigate to CMake targets view by selecting the View Picker button in the **Solution Explorer**, highlighted in following screenshot:
+14. Expand the project subfolder in the **Solution Explorer**. In the `CMakeProject.cpp` file, set a breakpoint in `main()`. You can also navigate to CMake targets view by selecting the View Picker button in the **Solution Explorer**, highlighted in following screenshot:
 
     ![Solution explorer showing the button to switch views. The button is just to the right of the home (house) button](media/solution-explorer-switch-view.png)
 
-13. Select **Debug** > **Start**, or press **F5**. Your project will build, the executable will launch on your WSL 2 distro, and Visual Studio will stop execution at the breakpoint. You can see the output of your program (in this case, `"Hello CMake."`) in the Linux Console Window:
+15. Select **Debug** > **Start**, or press **F5**. Your project will build, the executable will launch on your WSL 2 distro, and Visual Studio will stop execution at the breakpoint. You can see the output of your program (in this case, `"Hello CMake."`) in the Linux Console Window:
 
     ![Linux console window, displaying the text "Hello Cmake." Also shows the sample program with a breakpoint on the line following cout << "Hello CMake."](media/walkthrough-build-debug-wsl2-breakpoint.png)
 
