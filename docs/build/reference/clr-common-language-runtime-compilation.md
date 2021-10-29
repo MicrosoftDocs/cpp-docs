@@ -23,7 +23,7 @@ One or more of the following comma-separated arguments.
 
    With no options, **`/clr`** creates metadata for the component. The metadata can be consumed by other CLR applications, and enables the component to consume types and data in the metadata of other CLR components. For more information, see [Mixed (Native and Managed) Assemblies](../../dotnet/mixed-native-and-managed-assemblies.md).
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 - **`netcore`**
 

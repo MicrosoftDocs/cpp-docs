@@ -2,7 +2,7 @@
 title: "Walkthrough: Create a traditional Windows Desktop application (C++)"
 description: "How to create a minimal, traditional Windows Desktop application using Visual Studio, C++, and the Win32 API"
 ms.custom: "get-started-article"
-ms.date: "05/28/2020"
+ms.date: 10/27/2021
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
 ---
 # Walkthrough: Create a traditional Windows Desktop application (C++)
@@ -30,9 +30,9 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 Follow these steps to create your first Windows desktop project. As you go, you'll enter the code for a working Windows desktop application. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a Windows desktop project in Visual Studio 2019
+### To create a Windows desktop project in Visual Studio
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
@@ -46,11 +46,11 @@ Follow these steps to create your first Windows desktop project. As you go, you'
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
-   ![Short video showing the user adding a new item to DesktopApp Project in Visual Studio 2019.](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
+   ![Short video showing the user adding a new item to DesktopApp Project in Visual Studio 2019.](../build/media/desktop-app-project-add-new-item-153.gif)
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Screenshot of the Add New Item dialog box in Visual Studio 2019 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
+   ![Screenshot of the Add New Item dialog box in Visual Studio 2019 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-153.png)
 
 Your project is now created and your source file is opened in the editor. To continue, skip ahead to [Create the code](#create-the-code).
 

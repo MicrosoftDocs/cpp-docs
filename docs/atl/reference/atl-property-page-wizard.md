@@ -8,7 +8,7 @@ ms.assetid: 6113e325-facd-4f68-b491-144d75209922
 ---
 # ATL Property Page Wizard
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 

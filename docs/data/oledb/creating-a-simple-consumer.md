@@ -7,7 +7,7 @@ ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
 ---
 # Creating a Simple Consumer
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 

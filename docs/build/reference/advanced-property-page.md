@@ -8,7 +8,7 @@ f1_keywords: ["VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguratio
 
 ::: moniker range="<=msvc-150"
 
-The Advanced property page is available in Visual Studio 2019 and later. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page. In earlier versions of Visual Studio, these properties appear on the [General property page](./general-property-page-project.md):
+The Advanced property page is available in Visual Studio 2019 and later. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019 or later. It's found at the top of the table of contents on this page. In earlier versions of Visual Studio, these properties appear on the [General property page](./general-property-page-project.md):
 
 - [Target Extension](./general-property-page-project.md#target-extension)
 - [Extensions to Delete on Clean](./general-property-page-project.md#extensions-to-delete-on-clean)
@@ -22,7 +22,7 @@ The Advanced property page is available in Visual Studio 2019 and later. To see 
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The Advanced property page is available in Visual Studio 2019 and later. The specific properties shown depend on the project type. Windows Runtime (Universal Windows Platform, or UWP) projects don't show this page.
 

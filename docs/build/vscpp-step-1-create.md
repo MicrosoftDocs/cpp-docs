@@ -113,7 +113,7 @@ Come here for solutions to common issues when you create your first C++ project.
 
 ### Create your app project: issues
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The **New Project** dialog should show a **Console App** template that has **C++**, **Windows**, and **Console** tags. If you don't see it, there are two possible causes. It might be filtered out of the list, or it might not be installed. First, check the filter dropdowns at the top of the list of templates. Set them to **C++**, **Windows**, and **Console**. The C++ **Console App** template should appear; otherwise, the **Desktop development with C++** workload isn't installed.
 

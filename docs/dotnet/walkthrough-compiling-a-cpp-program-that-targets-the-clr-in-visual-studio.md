@@ -1,11 +1,11 @@
 ---
-title: "Compile a C++/CLI Program that Targets the CLR"
+title: "Compile a C++/CLI program that targets the CLR"
 description: "Use Microsoft C++ to create programs and libraries that can connect native C++ code and .NET programs."
-ms.date: "04/23/2019"
+ms.date: 10/28/2021
 helpviewer_keywords: ["command-line applications [C++], managed code", "compiling programs [C++]", "Visual C++, managed code", "managed code [C++]"]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
 ---
-# Walkthrough: Compile a C++/CLI Program that Targets the CLR in Visual Studio
+# Walkthrough: Compile a C++/CLI program that targets the CLR in Visual Studio
 
 By using C++/CLI you can create C++ programs that use .NET classes as well as native C++ types. C++/CLI is intended for use in console applications and in DLLs that wrap native C++ code and make it accessible from .NET programs. To create a Windows user interface based on .NET, use C# or Visual Basic.
 
@@ -20,9 +20,9 @@ For this procedure, you can type your own C++ program or use one of the sample p
 
 The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a C++/CLI project in Visual Studio 2019
+### To create a C++/CLI project in Visual Studio
 
 1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
 

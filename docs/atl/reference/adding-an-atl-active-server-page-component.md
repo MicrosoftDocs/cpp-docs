@@ -6,7 +6,7 @@ ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
 ---
 # Adding an ATL Active Server Page Component
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL Active Server Pages component wizard is not available in Visual Studio 2019 and later.
 

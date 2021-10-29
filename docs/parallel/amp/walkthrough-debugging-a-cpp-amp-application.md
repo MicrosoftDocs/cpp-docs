@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Debugging a C++ AMP application"
 title: "Walkthrough: Debugging a C++ AMP application"
-ms.date: 03/07/2021
+ms.date: 10/27/2021
 helpviewer_keywords: ["debugging, C++ Accelerated Massive Parallelism", "C++ AMP, debugging", "C++ Accelerated Massive Parallelism, debugging", "debugging, C++ AMP"]
 ---
 # Walkthrough: Debugging a C++ AMP application
@@ -36,9 +36,9 @@ Before you start this walkthrough:
 
 The instructions for creating a project vary depending on which version of Visual Studio you're using. Make sure you have the correct documentation version selected above the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create the sample project in Visual Studio 2019
+### To create the sample project in Visual Studio
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
@@ -46,7 +46,7 @@ The instructions for creating a project vary depending on which version of Visua
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `AMPMapReduce` in the **Name** box to specify a name for the project, and specify the project location if you want a different one.
 
-   ![Name the project.](../../build/media/mathclient-project-name-2019.png "Name the project")
+   ![Screenshot showing the Create a new project dialog with the Console App template selected.](../../build/media/mathclient-project-name-2019.png)
 
 1. Choose the **Create** button to create the client project.
 
@@ -76,7 +76,7 @@ Next:
 
 1. Open AMPMapReduce.cpp and replace its content with the following code.
 
-```cpp
+    ```cpp
     // AMPMapReduce.cpp defines the entry point for the program.
     // The program performs a parallel-sum reduction that computes the sum of an array of integers.
 
@@ -191,7 +191,7 @@ Next:
 
         return 0;
     }
-```
+    ```
 
 1. On the menu bar, choose **File** > **Save All**.
 
