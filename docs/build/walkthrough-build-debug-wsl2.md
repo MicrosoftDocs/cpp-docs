@@ -59,7 +59,7 @@ Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file a
 
 ![Screenshot of CMake general options screen with Prefer using CMake Presets for configure, build, and test highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
 
-1. Close the folder and reopen it to activate the integration.
+1. To activate the integration: from the main menu select **File** > **Close Folder**. The **Get started** page appears. Under **Open recent**, select the folder you just closed to reopen the folder.
 
 1. There are three dropdowns across the Visual Studio main menu bar. Use the dropdown on the left to select your active target system. This is the system where CMake will be invoked to configure and build the project. Visual Studio queries for WSL installations with `wsl -l -v`. In the following image, **WSL2: Ubuntu-20.04** is shown selected as the **Target System**.
 
