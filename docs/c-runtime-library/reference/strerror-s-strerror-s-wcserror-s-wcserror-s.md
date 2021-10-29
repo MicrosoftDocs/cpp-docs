@@ -99,7 +99,7 @@ The **strerror_s** function maps *errnum* to an error-message string, returning 
 ```C
 if (( _access( "datafile",2 )) == -1 )
 {
-   _strerror_s(buffer, 80);
+   _strerror_s(buffer, 80, NULL);
    fprintf( stderr, buffer );
 }
 ```
