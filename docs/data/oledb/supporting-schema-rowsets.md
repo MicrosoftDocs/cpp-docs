@@ -23,7 +23,7 @@ Schema rowsets allow consumers to get information about a data store without kno
 
 ## ATL OLE DB Provider Wizard Support
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 

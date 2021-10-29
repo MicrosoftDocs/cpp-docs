@@ -7,7 +7,7 @@ ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
 ---
 # ATL Active Server Page Component Wizard
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 

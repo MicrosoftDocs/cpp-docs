@@ -37,7 +37,7 @@ With **`/FC`**, the compiler output looks similar to this diagnostic text:
 - c:\test\compiler_option_fc.cpp(5): error C2143: syntax error: missing ';' before '}'
 
 ::: moniker-end
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 - C:\test\compiler_option_FC.cpp(5): error C2143: syntax error: missing ';' before '}'
 
