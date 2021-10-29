@@ -18,7 +18,7 @@ For a video presentation of the information in this topic, see [Video: Debug C++
 
 ## WSL 2 toolset background
 
- C++ cross-platform support in Visual Studio assumes all source files originate in the Windows file system. When targeting a WSL 2 distro, Visual Studio will execute a local `rsync` command to copy to copy files from the Windows file system to the WSL file system. The local `rsync` copy doesn't require any user intervention. It occurs automatically when Visual Studio detects you're using a WSL 2 distro. To learn more about the differences between WSL 1 and WSL 2, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
+ C++ cross-platform support in Visual Studio assumes all source files originate in the Windows file system. When targeting a WSL 2 distro, Visual Studio will execute a local `rsync` command to copy files from the Windows file system to the WSL file system. The local `rsync` copy doesn't require any user intervention. It occurs automatically when Visual Studio detects you're using a WSL 2 distro. To learn more about the differences between WSL 1 and WSL 2, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
 
 The WSL 2 toolset is supported by CMake Presets integration in Visual Studio. To learn more, see [CMake Presets integration in Visual Studio and Visual Studio Code](https://devblogs.microsoft.com/cppblog/cmake-presets-integration-in-visual-studio-and-visual-studio-code/) and [Configure and build with CMake Presets in Visual Studio](cmake-presets-vs.md). There's also more advanced information in this article under [Advanced WSL 2 and CMake projects considerations](walkthrough-build-debug-wsl2.md#advanced-wsl-2-and-cmake-projects-considerations).
 
