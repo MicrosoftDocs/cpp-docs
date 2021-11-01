@@ -56,6 +56,8 @@ items:
       href: ../build/cmake-projects-in-visual-studio.md
     - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
       href: ../build/get-started-linux-cmake.md
+    - name: "Walkthrough: Build and Debug C++ with WSL 2 in Visual Studio"
+      href: ../build/walkthrough-build-debug-wsl2.md
     - name: "Tutorial: Run and debug a CMake project remotely"
       href: ../build/cmake-remote-debugging.md
     - name: Clang/LLVM in CMake projects
