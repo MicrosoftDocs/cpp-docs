@@ -102,7 +102,7 @@ When you create a new resource, Visual C++ assigns a unique name to it, for exam
    > [!NOTE]
    > If you don't already have an .rc file in your project, this step will create one. You can then repeat this step to add specific resource types to the new .rc file.
 
-- In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the class, select **Add** > **Add Resource** and choose the type of resource to add to your project.
+- In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the project, select **Add** > **Add Resource** and choose the type of resource to add to your project.
 
 - Use the menu **Project** > **Add Resource**.
 
