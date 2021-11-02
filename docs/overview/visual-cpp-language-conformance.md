@@ -20,6 +20,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | __C++03/11 Core language features__ | __Supported__ |
 | &emsp;Everything else | VS 2015 <sup>[A](#note_A)</sup> |
 | &emsp;Two-phase name lookup | VS 2017 15.7 <sup>[B](#note_B)</sup> |
+| &emsp;[`LWG-3518 Exception requirements on char trait operations unclear`](https://wg21.link/lwg3518) | VS 2022 17.0 |
 | &emsp;[`N2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15.7 |
 | &emsp;[`N1653 C99 preprocessor`](https://wg21.link/N1653) | VS 2019 16.6 <sup>[C](#note_C)</sup> |
 | __C++14 Core language features__ | __Supported__ |
@@ -291,6 +292,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P0618R0 Deprecating <codecvt>`](https://wg21.link/p0618r0) | VS 2017 15.5 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0682R1 Repairing Elementary String Conversions`](https://wg21.link/P0682R1) | VS 2015 15.7 <sup>[17](#note_17)</sup> |
 | __C++20 Standard library features__ | __Supported__ |
+| &emsp;[`LWG-3533 Make base() const & consistent across iterator wrappers that support input_iterators`](https://wg21.link/p0809r0) | VS 2020 17.0 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0809R0 Comparing Unordered Containers`](https://wg21.link/p0809r0) | VS 2010 <sup>[14](#note_14)</sup> |
 | &emsp;[`P0858R0 Constexpr Iterator Requirements`](https://wg21.link/p0858r0) | VS 2017 15.3 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0777R1 Avoiding Unnecessary Decay`](https://wg21.link/p0777r1) | VS 2017 15.7 <sup>[14](#note_14)</sup> |
@@ -394,27 +396,33 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P1502R1 Standard Library Header Units`](https://wg21.link/P1502R1) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | N/A |
-| __C++20 Core language features (Defect reports)__ | __Supported__ |
-| __C++20 Core language features (Defect reports)__ | __Supported__ |
-| &emsp;[`P2325R3 Views Should Not Be Required To Be Default Constructible`](https://wg21.link/P2325r3l) | VS 2020 17.0 |
-| &emsp;[`P2328R1 join_view should join all views of ranges`](https://wg21.link/P2328R1) | VS 2020 17.0 |
-| &emsp;[`P2367R0 Remove misuses of list-initialization from clause 24 ranges`](https://wg21.link/P2367R0) | VS 2020 17.0 |
+| __C++20 Standard library features (Defect reports)__ | __Supported__ |
+| &emsp;[`P2210R2 Superior string splitting`](https://wg21.link/P2210R2) | VS 2020 17.0 <sup>[20](#note_20)</sup> |
+| &emsp;[`P2231R1 Completing constexpr In optional And variant`](https://wg21.link/P2231R1) | VS 2020 17.0 <sup>[20](#note_20)</sup> |
+| &emsp;[`P2325R3 Views Should Not Be Required To Be Default Constructible`](https://wg21.link/P2325r3) | VS 2020 17.0 <sup>[20](#note_20)</sup> |
+| &emsp;[`P2328R1 join_view should join all views of ranges`](https://wg21.link/P2328R1) | VS 2020 17.0 <sup>[20](#note_20)</sup> |
+| &emsp;[`P2367R0 Remove misuses of list-initialization from clause 24 ranges`](https://wg21.link/P2367R0) | VS 2020 17.0  <sup>[20](#note_20)</sup> |
 | __C++23 Standard library features__ | __Supported__ |
-| &emsp;[`LWG 3430 std::fstream & co. should be constructible from string_view`](https://cplusplus.github.io/LWG/issue3430) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`LWG 3494 Allow ranges to be conditionally borrowed`](https://cplusplus.github.io/LWG/issue3494) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
-| &emsp;[`LWG 3502 elements_view should not be allowed to return dangling references`](https://cplusplus.github.io/LWG/issue3502) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
-| &emsp;[`LWG 3541 indirectly_readable_traits should be SFINAE-friendly for all types`](https://cplusplus.github.io/LWG/issue3541) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
-| &emsp;[`LWG 3548 shared_ptr construction from unique_ptr should move (not copy) the deleter`](https://cplusplus.github.io/LWG/issue3548) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
-| &emsp;[`LWG 3553 Useless constraint in split_view::outer-iterator::value_type::begin()`](https://cplusplus.github.io/LWG/issue3553) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
-| &emsp;[`LWG 3555 {transform,elements}_view::iterator::iterator_concept should consider const-qualification of the underlying range`](https://cplusplus.github.io/LWG/issue3555) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
+| &emsp;[`LWG-3430 std::fstream & co. should be constructible from string_view`](https://cplusplus.github.io/LWG/issue3430) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`LWG-3494 Allow ranges to be conditionally borrowed`](https://cplusplus.github.io/LWG/issue3494) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
+| &emsp;[`LWG-3502 elements_view should not be allowed to return dangling references`](https://cplusplus.github.io/LWG/issue3502) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
+| &emsp;[`LWG-3541 indirectly_readable_traits should be SFINAE-friendly for all types`](https://cplusplus.github.io/LWG/issue3541) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
+| &emsp;[`LWG-3548 shared_ptr construction from unique_ptr should move (not copy) the deleter`](https://cplusplus.github.io/LWG/issue3548) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
+| &emsp;[`LWG-3553 Useless constraint in split_view::outer-iterator::value_type::begin()`](https://cplusplus.github.io/LWG/issue3553) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
+| &emsp;[`LWG-3555 {transform,elements}_view::iterator::iterator_concept should consider const-qualification of the underlying range`](https://cplusplus.github.io/LWG/issue3555) | VS 2022 17.0 <sup>[23](#note_23)</sup>|
 | &emsp;[`P0401R6 Providing size feedback in the allocator interface`](https://wg21.link/P0401R6) | <sup>[23](#note_23)</sup> |
+| &emsp;[`P0448R4 <spanstream>`](https://wg21.link/P0448R4) | <sup>[23](#note_23)</sup> |
 | &emsp;[`P0881R7 <stacktrace>`](https://wg21.link/p0881r7) | No |
-| &emsp;[`P0943R6 Supporting C Atomics In C++`](https://wg21.link/P0943R6) | No |
+| &emsp;[`P0943R6 Supporting C Atomics In C++`](https://wg21.link/P0943R6) | VS 2022 17.0  <sup>[T](#note_T)</sup> |
 | &emsp;[`P1048R1 is_scoped_enum`](https://wg21.link/P1048R1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1132R7 out_ptr(), inout_ptr()`](https://wg21.link/P1132R7) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1425R4 Iterator pair constructors for stack and queue`](https://wg21.link/P1425R4) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1518R2 Stop overconstraining allocators in container deduction guides`](https://wg21.link/P1518R2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1679R3 contains() for basic_string/basic_string_view`](https://wg21.link/P1679R3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1682R3 to_underlying() for enumerations`](https://wg21.link/P1682R3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1951R1 Default template arguments ror pair's forwarding constructor`](https://wg21.link/P1951R1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1989R2 Range Constructor For string_view`](https://wg21.link/P1989R2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2136R3 invoke_r()`](https://wg21.link/P2136R3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2162R2 Inheriting from std::variant`](https://wg21.link/P2162R2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2166R1 Prohibit basic_string and basic_string_view from being constructed from nullptr`](https://wg21.link/P2166R1) | VS 2022 17.0 <sup>[23](#note_23), [R](#note_R)</sup> |
 | &emsp;[`P2186R2 Removed garbage collection support`](https://wg21.link/P2186R2) | VS 2022 17.0 <sup>[23](#note_23), [Q](#note_Q)</sup> |
@@ -540,15 +548,17 @@ These algorithms aren't presently parallelized:
 
 <a name="note_S"></a> __S__ The `counted_iterator` part is implemented; the input range adaptors part is not yet implemented.
 
+<a name="note_T"></a> __T__ `<stdatomic.h>` is currently supported when compiling as C++ (`/std:c++latest`). It is not yet supported when compiling as C (`/std:c11` and `/std:c17`)
+
 <a name="note_14"></a> __14__ These C++17 and C++20 features are always enabled, even when [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) (the default) is specified. The reason is either because the feature was implemented before the introduction of the **`/std`** options, or because conditional implementation was undesirably complex.
 
 <a name="note_17"></a> __17__ These features are enabled by the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 <a name="note_20"></a> __20__ In versions through Visual Studio 2019 version 16.10, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Visual Studio 2019 version 16.11 added the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option to enable these features.
 
-<a name="note_23"></a> __23__ In Visual Studio 2020 version 17.0 and up, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
-
 <a name="note_20abi"></a> __20abi__ Because of ongoing post-release work on the C++20 standard, `<format>`, the formatting parts of `<chrono>` (which rely on `<format>`), and the range factories and range adaptors from `<ranges>` (everything that needs the `view` concept) are only available under **`/std:c++latest`**. We'll make these features available under **`/std:c++20`** after reaching agreement with WG21 that no further ABI-breaking changes are necessary. The remaining parts of `<chrono>` and the algorithms that apply to ranges are enabled under the **`/std:c++20`** compiler option starting in Visual Studio 2019 version 16.11.
+
+<a name="note_23"></a> __23__ In Visual Studio 2020 version 17.0 and up, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 <a name="note_C11"></a> __C11__ Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
 
