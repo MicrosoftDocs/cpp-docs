@@ -15,7 +15,7 @@ This article contains information about *`CMakePresets.json`* integration with V
 
 - For more information about the format of *`CMakePresets.json`*, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id1).
 - For more information about the Microsoft vendor maps and macro expansion, see [`CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps](cmake-presets-json-reference.md).
-- For more information about how to use *`CMakePresets.json`* in Visual Studio Code, see [Configure and build with CMake Presets](https://github.com/microsoft/vscode-cmake-tools/tree/develop/docs/cmake-presets.md).
+- For more information about how to use *`CMakePresets.json`* in Visual Studio Code, see [Configure and build with CMake Presets](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-presets.md).
 
 We recommend *`CMakePresets.json`* as an alternative to *`CMakeSettings.json`*. Visual Studio will never read from both *`CMakePresets.json`* and *`CMakeSettings.json`* at the same time. To enable or disable *`CMakePresets.json`* integration in Visual Studio, see [Enable `CMakePresets.json` in Visual Studio 2019](#enable-cmakepresets-json-integration).
 
@@ -446,7 +446,7 @@ cmake --build --preset <buildPreset-name>
 
 ## Example *`CMakePresets.json`* file
 
-The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/main/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets.
+The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/vs-launch/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets.
 
 ## Next steps
 
