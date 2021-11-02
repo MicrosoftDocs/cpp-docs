@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 11/01/2021
+ms.date: 11/02/2021
 ms.technology: "cpp-language"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
@@ -20,7 +20,6 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | __C++03/11 Core language features__ | __Supported__ |
 | &emsp;Everything else | VS 2015 <sup>[A](#note_A)</sup> |
 | &emsp;Two-phase name lookup | VS 2017 15.7 <sup>[B](#note_B)</sup> |
-| &emsp;[`LWG-3518 Exception requirements on char trait operations unclear`](https://wg21.link/lwg3518) | VS 2022 17.0 |
 | &emsp;[`N2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15.7 |
 | &emsp;[`N1653 C99 preprocessor`](https://wg21.link/N1653) | VS 2019 16.6 <sup>[C](#note_C)</sup> |
 | __C++14 Core language features__ | __Supported__ |
@@ -182,6 +181,8 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 
 | Feature | Supported |
 |--|--|
+| __C++11 Standard library features__ | __Supported__ |
+| &emsp;[`LWG-3518 Exception requirements on char trait operations unclear`](https://wg21.link/lwg3518) | VS 2022 17.0 |
 | __C++14 Standard library features__ | __Supported__ |
 | &emsp;[`N3462 SFINAE-Friendly result_of`](https://wg21.link/n3462) | VS 2015.2 |
 | &emsp;[`N3302 constexpr For <complex>`](https://wg21.link/n3302) | VS 2015 |
@@ -546,9 +547,9 @@ These algorithms aren't presently parallelized:
 
 <a name="note_R"></a> __R__ This is a common **source-breaking** change. However, code that previously had undefined behavior at runtime will now be rejected with compiler errors.
 
-<a name="note_S"></a> __S__ The `counted_iterator` part is implemented; the input range adaptors part is not yet implemented.
+<a name="note_S"></a> __S__ The `counted_iterator` part is implemented; the input range adaptors part isn't yet implemented.
 
-<a name="note_T"></a> __T__ `<stdatomic.h>` is currently supported when compiling as C++ (`/std:c++latest`). It is not yet supported when compiling as C (`/std:c11` and `/std:c17`)
+<a name="note_T"></a> __T__ `<stdatomic.h>` is currently supported when compiling as C++ (`/std:c++latest`). It isn't yet supported when compiling as C (`/std:c11` and `/std:c17`)
 
 <a name="note_14"></a> __14__ These C++17 and C++20 features are always enabled, even when [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) (the default) is specified. The reason is either because the feature was implemented before the introduction of the **`/std`** options, or because conditional implementation was undesirably complex.
 
