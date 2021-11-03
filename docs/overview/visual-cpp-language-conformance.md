@@ -31,7 +31,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`N3760 [[deprecated]] attribute`](https://wg21.link/n3760) | VS 2015 |
 | &emsp;[`N3778 Sized deallocation`](https://wg21.link/n3778) | VS 2015 |
 | &emsp;[`N3781 Digit separators`](https://wg21.link/n3781) | VS 2015 |
-| &emsp;[`N3651 Variable templates`](https://wg21.link/n3651) | VS 2015.2 |
+| &emsp;[`N3651 Variable templates`](https://wg21.link/n3651) | VS 2015 Update 2 |
 | &emsp;[`N3652 Extended constexpr`](https://wg21.link/n3652) | VS 2017 15.0 |
 | &emsp;[`N3653 Default member initializers for aggregates`](https://wg21.link/n3653) | VS 2017 15.0 |
 | __C++17 Core language features__ | __Supported__ |
@@ -181,10 +181,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 
 | Feature | Supported |
 |--|--|
-| __C++11 Standard library features__ | __Supported__ |
-| &emsp;[`LWG-3518 Exception requirements on char trait operations unclear`](https://wg21.link/lwg3518) | VS 2022 17.0 |
 | __C++14 Standard library features__ | __Supported__ |
-| &emsp;[`LWG-3548 shared_ptr construction from unique_ptr should move (not copy) the deleter`](https://cplusplus.github.io/LWG/issue3548) | VS 2022 17.0 |
 | &emsp;[`N3462 SFINAE-Friendly result_of`](https://wg21.link/n3462) | VS 2015.2 |
 | &emsp;[`N3302 constexpr For <complex>`](https://wg21.link/n3302) | VS 2015 |
 | &emsp;[`N3469 constexpr For <chrono>`](https://wg21.link/n3469) | VS 2015 |
@@ -211,8 +208,6 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`N3655 Alias Templates For <type_traits> (decay_t, etc.)`](https://wg21.link/n3655) | VS 2013 |
 | &emsp;[`N3656 make_unique()`](https://wg21.link/n3656) | VS 2013 |
 | __C++17 Standard library features__ | __Supported__ |
-| &emsp;[`LWG-2221 Formatted output operator for nullptr`](https://cplusplus.github.io/LWG/issue2221) | VS 2019 16.1 |
-| &emsp;[`LWG-3430 std::fstream & co. should be constructible from string_view`](https://cplusplus.github.io/LWG/issue3430) | VS 2022 17.0 <sup>[17](#note_17)</sup> |
 | &emsp;[`N3911 void_t`](https://wg21.link/n3911) | VS 2015 <sup>[14](#note_14)</sup> |
 | &emsp;[`N4089 Safe Conversions In unique_ptr<T[]>`](https://wg21.link/n4089) | VS 2015 <sup>[14](#note_14)</sup> |
 | &emsp;[`N4169 invoke()`](https://wg21.link/n4169) | VS 2015 <sup>[14](#note_14)</sup> |
@@ -296,12 +291,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P0682R1 Repairing Elementary String Conversions`](https://wg21.link/P0682R1) | VS 2015 15.7 <sup>[17](#note_17)</sup> |
 | &emsp;[`P2162R2 Inheriting from std::variant`](https://wg21.link/P2162R2) | VS 2022 17.0 <sup>[17](#note_17)</sup> |
 | __C++20 Standard library features__ | __Supported__ |
-| &emsp;[`LWG-3494 Allow ranges to be conditionally borrowed`](https://cplusplus.github.io/LWG/issue3494) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup>|
-| &emsp;[`LWG-3502 elements_view should not be allowed to return dangling references`](https://cplusplus.github.io/LWG/issue3502) | VS 2022 17.0 <sup>[20](#note_20abi)</sup>|
-| &emsp;[`LWG-3533 Make base() const & consistent across iterator wrappers that support input_iterators`](https://wg21.link/lwg3533) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
-| &emsp;[`LWG-3541 indirectly_readable_traits should be SFINAE-friendly for all types`](https://cplusplus.github.io/LWG/issue3541) | VS 2022 17.0 <sup>[20](#note_20)</sup>|
-| &emsp;[`LWG-3553 Useless constraint in split_view::outer-iterator::value_type::begin()`](https://cplusplus.github.io/LWG/issue3553) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup>|
-| &emsp;[`LWG-3555 {transform,elements}_view::iterator::iterator_concept should consider const-qualification of the underlying range`](https://cplusplus.github.io/LWG/issue3555) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup>|
+| VS 2022 17.0 <sup>[20abi](#note_20abi)</sup>|
 | &emsp;[`P0809R0 Comparing Unordered Containers`](https://wg21.link/p0809r0) | VS 2010 <sup>[14](#note_14)</sup> |
 | &emsp;[`P0858R0 Constexpr Iterator Requirements`](https://wg21.link/p0858r0) | VS 2017 15.3 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0777R1 Avoiding Unnecessary Decay`](https://wg21.link/p0777r1) | VS 2017 15.7 <sup>[14](#note_14)</sup> |
@@ -484,7 +474,8 @@ __VS 2019 16.6__ Supported in Visual Studio 2019 version 16.6.\
 __VS 2019 16.7__ Supported in Visual Studio 2019 version 16.7.\
 __VS 2019 16.8__ Supported in Visual Studio 2019 version 16.8.\
 __VS 2019 16.9__ Supported in Visual Studio 2019 version 16.9.\
-__VS 2019 16.10__ Supported in Visual Studio 2019 version 16.10.
+__VS 2019 16.10__ Supported in Visual Studio 2019 version 16.10.\
+__VS 2020 17.0__ Supported in Visual Studio 2020 version 17.0.
 
 ### Notes
 
