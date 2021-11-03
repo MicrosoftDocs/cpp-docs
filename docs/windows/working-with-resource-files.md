@@ -15,7 +15,7 @@ ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
 Resources can be composed of a wide range of elements, like:
 
 - Interface elements that provide information to the user such as a bitmap, icon, or cursor.
-- Custom resources that contain data and application needs.
+- Custom resources that contain data an application needs.
 - Version resources that are used by setup APIs.
 - Menu and dialog box resources.
 
