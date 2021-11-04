@@ -16,7 +16,7 @@ CMake supports two files, *`CMakePresets.json`* and *`CMakeUserPresets.json`*, t
 
 For more information about how to use *`CMakePresets.json`* in Visual Studio, see [Configure and build with CMake Presets in Visual Studio](cmake-presets-vs.md)
 
-For more information about how to use *`CMakePresets.json`* in Visual Studio Code, see [Configure and build with CMake Presets in VS Code](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/cmake-presets.md)
+For more information about how to use *`CMakePresets.json`* in Visual Studio Code, see [Configure and build with CMake Presets in VS Code](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-presets.md)
 
 ## Visual Studio Settings vendor map
 
