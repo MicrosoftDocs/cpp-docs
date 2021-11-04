@@ -7,7 +7,7 @@ helpviewer_keywords: ["/fsanitize-coverage [C++]", "sanitizer compiler option [C
 ---
 # `/fsanitize-coverage` (Configure sanitizer coverage)
 
-The **`/fsanitize-coverage`** compiler options instruct the compiler to add various kinds of instrumentation points where user-defined functions are called. These options are useful for fuzzing scenarios that use **`/fsanitize=fuzzer`**, like OneFuzz. For more information, see the [OneFuzz documentation](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [OneFuzz GitHub project](https://github.com/microsoft/onefuzz).
+The **`/fsanitize-coverage`** compiler options instruct the compiler to add various kinds of instrumentation points where user-defined functions are called. These options are useful for fuzzing scenarios that use **`/fsanitize=fuzzer`**, like OneFuzz. For more information, see the [OneFuzz documentation](https://www.microsoft.com/research/project/project-onefuzz/) and [OneFuzz GitHub project](https://github.com/microsoft/onefuzz).
 
 ## Syntax
 
