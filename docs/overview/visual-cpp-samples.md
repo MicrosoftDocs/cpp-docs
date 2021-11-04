@@ -15,8 +15,6 @@ Samples for Visual Studio C++ are available on the web. Microsoft has produced m
 
 - [Windows Dev Center code samples](https://developer.microsoft.com/windows/samples)
 
-- [CodePlex sample archive](https://archive.codeplex.com/)
-
 - [ADO code samples](/office/client-developer/access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c)
 
 - [Windows Hardware development samples](/samples/browse/?products=windows-wdk)
