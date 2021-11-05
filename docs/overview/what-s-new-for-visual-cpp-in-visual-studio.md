@@ -41,9 +41,9 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 - Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689r3](https://wg21.link/P1689r3). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
 
-### Standard Template Library improvements
+### Standard Library improvements
 
-Select Standard Template Library (STL) improvements are highlighted here. For a comprehensive list of new functionality, changes, bug fixes, and performance improvements, see the STL team's [Changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022).
+Select Standard Library (STL) improvements are highlighted here. For a comprehensive list of new functionality, changes, bug fixes, and performance improvements, see the STL team's [Changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022).
 
 - Added debugging visualizers to improve how the following types are displayed: `source_location`, `bind_front()`, `u8string` (and its iterators), `default_sentinel_t`, `unreachable_sentinel_t`, `ranges::empty_view`, `ranges::single_view`, `ranges::iota_view` (and its iterator/sentinel), `ranges::ref_view`, `thread`, `thread::id`, `jthread`, and `filesystem::path`
 - Added `[[nodiscard]]` to the `stoi()` family of functions in `<string>` and to various functions in `<locale>` such as the `collate` member functions, `has_facet()`, and the `isalnum()` and `tolower()` families.
