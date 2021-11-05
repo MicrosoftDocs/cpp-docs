@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 10/22/2021
+ms.date: 11/05/2021
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
@@ -41,6 +41,32 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 - Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689r3](https://wg21.link/P1689r3). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
 
+### Standard Template Library improvements
+
+Select Standard Template Library (STL) improvements are highlighted here. For a comprehensive list of new functionality, changes, bug fixes, and performance improvements, see the STL team's [Changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022).
+
+- Added debugging visualizers to improve how the following types are displayed: `source_location`, `bind_front()`, `u8string` (and its iterators), `default_sentinel_t`, `unreachable_sentinel_t`, `ranges::empty_view`, `ranges::single_view`, `ranges::iota_view` (and its iterator/sentinel), `ranges::ref_view`, `thread`, `thread::id`, `jthread`, and `filesystem::path`
+- Added `[[nodiscard]]` to the `stoi()` family of functions in `<string>` and to various functions in `<locale>` such as the `collate` member functions, `has_facet()`, and the `isalnum()` and `tolower()` families.
+- [P0980R1](https://wg21.link/P0980R1) Made `std::string` `constexpr` in VS 2019 16.10. Now it's also supported for Clang.
+- [P1004R2](https://wg21.link/P1004R2) Made `std::vector` `constexpr`in VS 2019 16.10. Now it's also supported for Clang.
+
+**Highlighted C++23 features**
+
+- [P1048R1](https://wg21.link/P1048R1) Added `is_scoped_enum`, a new trait for the C++ Standard library, which detects whether a type is a scoped enumeration.
+- [P1132R7](https://wg21.link/P1132R7) `out_ptr()`, `inout_ptr()`
+- [P1679R3](https://wg21.link/P1679R3) `contains()` For `basic_string` and `basic_string_view`
+- [P1682R3](https://wg21.link/P1682R3) `to_underlying()` for enumerations
+- [P2162R2](https://wg21.link/P2162R2) Allow inheriting from `std::variant`
+- [P2166R1](https://wg21.link/P2166R1) Prohibit constructing`basic_string` and `basic_string_view` from `nullptr`. This is a source-breaking change. Code that previously had undefined behavior at runtime will now be rejected with compiler errors.
+- [P2186R2](https://wg21.link/P2186R2) Removed garbage collection support. This removes `declare_reachable`, `undeclare_reachable`, `declare_no_pointers`, `undeclare_no_pointers`, `get_pointer_safety`. Previously, these functions had no effect.
+
+**Highlighted performance improvements**
+
+- `<format>` now detects when it's writing to a `back_insert_iterator` for a `basic_string` or a `vector`, and makes a faster call to `insert()` at the `end()` of the container.
+- Improved the performance of `std::find()` and `std::count()` for `vector<bool>` 19x and 26x (times, not percent).
+- Improved the performance of `std::count()` for `vector<bool>`
+- `std::byte` now has the same performance as `unsigned char` in `reverse()` and `variant::swap()`
+
 ### Clang and LLVM support
 
 - LLVM tools shipped with Visual Studio have been upgraded to LLVM 12. For more information, see the [LLVM release notes](https://releases.llvm.org/12.0.0/docs/ReleaseNotes.html).
@@ -79,7 +105,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ## Release notes for older versions
 
-Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019.](what-s-new-for-cpp-2019.md) For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017.](what-s-new-for-cpp-2017.md) For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015.](../porting/visual-cpp-what-s-new-2003-through-2015.md)
 
 ## Known issues
 
