@@ -183,7 +183,7 @@ This article lists major changes to the Microsoft C++ docs July 2021 through Oct
 
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md) - Update version info
 
-## C++ Standard Template Library (STL) reference
+## C++ Standard Library (STL)
 
 ### New articles
 
