@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Upgrading an Existing ActiveX Control"
 title: "Upgrading an Existing ActiveX Control"
-ms.date: "09/12/2018"
+ms.date: 11/03/2021
 helpviewer_keywords: ["ActiveX controls [MFC], Internet", "LPK files for Internet controls", "safe for scripting and initialization (controls)", "OLE controls [MFC], upgrading to ActiveX", "CAB files, for ActiveX controls", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], packaging code for download", "upgrading ActiveX controls", "licensing ActiveX controls"]
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
 ---
@@ -10,7 +10,7 @@ ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
 Existing ActiveX controls (formerly OLE controls) can be used on the Internet without modification. However, you may want to modify controls to improve their performance.
 
 > [!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md). Support for ActiveX controls was deprecated in later versions of Internet Explorer, and is not supported by modern browsers. Microsoft no longer supplies web-accessible ActiveX components.
 
 When using your control on a Web page, there are additional considerations. The .ocx file and all supporting files must be on the target machine or be downloaded across the Internet. This makes code size and download time an important consideration. Downloads can be packaged in a signed .cab file. You can mark your control as safe for scripting, and as safe for initializing.
 
@@ -41,7 +41,7 @@ ActiveX controls are embedded in Web pages using the `<OBJECT>` tag. The `CODEBA
 ### Using the CODEBASE Tag with an OCX File
 
 ```
-CODEBASE="http://example.microsoft.com/mycontrol.ocx#version=4,
+CODEBASE="http://example.contoso.com/mycontrol.ocx#version=4,
     70,
     0,
     1086"
@@ -52,7 +52,7 @@ This solution downloads only the control's .ocx file, and requires any supportin
 ### Using the CODEBASE Tag with an INF File
 
 ```
-CODEBASE="http://example.microsoft.com/trustme.inf"
+CODEBASE="http://example.contoso.com/trustme.inf"
 ```
 
 An .inf file will control the installation of an .ocx and its supporting files. This method is not recommended because it is not possible to sign an .inf file (see [Signing Code](#_core_signing_code) for pointers on code signing).
@@ -60,7 +60,7 @@ An .inf file will control the installation of an .ocx and its supporting files. 
 ### Using the CODEBASE Tag with a CAB File
 
 ```
-CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
+CODEBASE="http://example.contoso.com/acontrol.cab#version=1,
     2,
     0,
     0"
@@ -78,12 +78,12 @@ For details on how to create a CAB file, see [Creating a CAB File](/windows/win3
 
 ### The INF File
 
-The following example, spindial.inf, lists the supporting files and the version information needed for the MFC Spindial control. Notice the location for the MFC DLLs is a Microsoft Web site. The mfc42.cab is provided and signed by Microsoft.
+The following example, spindial.inf, lists the supporting files and the version information needed for the MFC Spindial control. The mfc42.cab is provided and signed by Microsoft.
 
 ```
 Contents of spindial.inf:
 [mfc42installer]
-file-win32-x86=http://activex.microsoft.com/controls/vc/mfc42.cab
+file-win32-x86=http://example.contoso.com/controls/vc/mfc42.cab
 [Olepro32.dll] - FileVersion=5,
     0,
     4261,
@@ -105,7 +105,7 @@ The following example illustrates using the `<OBJECT>` tag to package the MFC Sp
 ```
 <OBJECT ID="Spindial1" WIDTH=100 HEIGHT=51
     CLASSID="CLSID:06889605-B8D0-101A-91F1-00608CEAD5B3"
-    CODEBASE="http://example.microsoft.com/spindial.cab#Version=1,0,0,001">
+    CODEBASE="http://example.contoso.com/spindial.cab#Version=1,0,0,001">
 <PARAM NAME="_Version" VALUE="65536">
 <PARAM NAME="_ExtentX" VALUE="2646">
 <PARAM NAME="_ExtentY" VALUE="1323">
