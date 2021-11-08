@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 ms.technology: "cpp-language"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
@@ -475,7 +475,7 @@ __VS 2019 16.7__ Supported in Visual Studio 2019 version 16.7.\
 __VS 2019 16.8__ Supported in Visual Studio 2019 version 16.8.\
 __VS 2019 16.9__ Supported in Visual Studio 2019 version 16.9.\
 __VS 2019 16.10__ Supported in Visual Studio 2019 version 16.10.\
-__VS 2020 17.0__ Supported in Visual Studio 2020 version 17.0.
+__VS 2022 17.0__ Supported in Visual Studio 2022 version 17.0.
 
 ### Notes
 
