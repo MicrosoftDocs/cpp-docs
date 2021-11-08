@@ -6,7 +6,7 @@ items:
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Overview of C++ development in Visual Studio
       href: ../overview/overview-of-cpp-development.md
-    - name: What's new for C++ in Visual Studio 2022 Preview
+    - name: What's new for C++ in Visual Studio 2022
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
     - name: What's new for C++ in Visual Studio 2019
       href: ../overview/what-s-new-for-cpp-2019.md
@@ -14,7 +14,7 @@ items:
       href: ../overview/what-s-new-for-cpp-2017.md
     - name: What's new for Microsoft C++ docs 
       href: ../overview/whats-new-cpp-docs.md
-    - name: C++ conformance improvements in Visual Studio 2022 Preview
+    - name: C++ conformance improvements in Visual Studio 2022
       href: ../overview/cpp-conformance-improvements.md
     - name: C++ conformance improvements in Visual Studio 2019
       href: ../overview/cpp-conformance-improvements-2019.md
