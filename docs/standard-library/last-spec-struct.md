@@ -5,9 +5,9 @@ ms.date: 09/15/2021
 f1_keywords: ["chrono/std::chrono::last_spec"]
 ---
 
-# last_spec struct
+# `last_spec` struct
 
-Indicates the last item in a month, such as last day of the week of a month (the last Tuesday of February 2020) or the last day of a month (the last day of April 2019).
+Indicates the last item in a month. For example, the last day of the week of a month, such as the last Tuesday of February 2020. Or the last day of a month, such as the last day of April 2019.
 
 ## Syntax
 
@@ -19,9 +19,9 @@ inline constexpr last_spec last{} // C++20
 ## <a name="example"></a> Example: `last`
 
 Use `last_spec` to indicate the last item in a month. The following example uses `last` to indicate the:
-- last day in December as a `monthDayLast`
-- last Friday in July of 2021 as a `year_month_weekday_last`
-- last day in April of 1975 as a `year_month_day_last`
+- Last day in December as a `monthDayLast`
+- Last Friday in July of 2021 as a `year_month_weekday_last`
+- Last day in April of 1975 as a `year_month_day_last`
 
 ```cpp
 // compile using: /std:c++latest

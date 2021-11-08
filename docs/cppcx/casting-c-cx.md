@@ -50,7 +50,7 @@ Use safe_cast if the code does not declare the relationship but you are sure tha
 
 ## dynamic_cast
 
-Use **`dynamic_cast`** when you cast an object (more specifically, a hat **^**) to a more derived type, you expect either that the target object might sometimes be **`nullptr`** or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Blank App (Universal Windows)** project template, the `OnLaunched` method in app.xamp.cpp uses **`dynamic_cast`** to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.
+Use **`dynamic_cast`** when you cast an object (more specifically, a hat **^**) to a more derived type, you expect either that the target object might sometimes be **`nullptr`** or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Blank App (Universal Windows)** project template, the `OnLaunched` method in app.xaml.cpp uses **`dynamic_cast`** to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.
 
 ```cpp
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)
@@ -87,7 +87,7 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 // ...
 ```
 
-If you use **`reinterpret_cast`** to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-C++ component extensions interface.
+If you use **`reinterpret_cast`** to convert from one Windows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-C++ component extensions interface.
 
 ## ABI types
 

@@ -6,13 +6,13 @@ f1_keywords: ["<any>"]
 helpviewer_keywords: ["<any>"]
 no-loc: ["any", "std", "class"]
 ---
-# &lt;any&gt;
+# `<any>`;
 
 Defines the class `std::any` and several supporting functions and classes.
 
 ## Requirements
 
-**Header:** \<any>
+**Header:** `<any>`
 
 **Namespace:** `std`
 
