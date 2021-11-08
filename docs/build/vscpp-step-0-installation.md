@@ -2,7 +2,7 @@
 title: Install C and C++ support in Visual Studio
 description: "Learn how to install Visual Studio with support for Microsoft C/C++ and related workloads."
 ms.custom: vs-acquisition, intro-installation
-ms.date: 11/05/2020
+ms.date: 11/08/2021
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -10,6 +10,110 @@ ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 # Install C and C++ support in Visual Studio
 
 If you haven't downloaded and installed Visual Studio and the Microsoft C/C++ tools yet, here's how to get started.
+
+::: moniker range="msvc-170"
+
+## Visual Studio 2022 Installation
+
+Welcome to Visual Studio 2022! In this version, it's easy to choose and install just the features you need. And because of its reduced minimum footprint, it installs quickly and with less system impact.
+
+> [!NOTE]
+> This topic applies to installation of Visual Studio on Windows. [Visual Studio Code](https://code.visualstudio.com/) is a lightweight, cross-platform development environment that runs on Windows, Mac, and Linux systems. The Microsoft [C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension supports IntelliSense, debugging, code formatting, auto-completion. Visual Studio for Mac doesn't support Microsoft C++, but does support .NET languages and cross-platform development. For installation instructions, see [Install Visual Studio for Mac](/visualstudio/mac/installation/).
+
+Want to know more about what else is new in this version? See the Visual Studio [release notes](/visualstudio/releases/2022/release-notes/).
+
+Ready to install? We'll walk you through it, step-by-step.
+
+### Step 1 - Make sure your computer is ready for Visual Studio
+
+Before you begin installing Visual Studio:
+
+1. Check the [system requirements](/visualstudio/releases/2022/system-requirements). These requirements help you know whether your computer supports Visual Studio 2022.
+
+1. Apply the latest Windows updates. These updates ensure that your computer has both the latest security updates and the required system components for Visual Studio.
+
+1. Reboot. The reboot ensures that any pending installs or updates don't hinder the Visual Studio install.
+
+1. Free up space. Remove unneeded files and applications from your %SystemDrive% by, for example, running the Disk Cleanup app.
+
+For questions about running previous versions of Visual Studio side by side with Visual Studio 2022, see the [Visual Studio 2022 Platform Targeting and Compatibility](/visualstudio/releases/2022/compatibility/) page.
+
+### Step 2 - Download Visual Studio
+
+Next, download the Visual Studio bootstrapper file. To do so, choose the following button to go to the Visual Studio download page. Select the edition of Visual Studio that you want and choose the **Free trial** or **Free download** button.
+
+ > [!div class="button"]
+ > [Download Visual Studio](https://visualstudio.microsoft.com/downloads/)
+
+### Step 3 - Install the Visual Studio installer
+
+Run the bootstrapper file you downloaded to install the Visual Studio Installer. This new lightweight installer includes everything you need to both install and customize Visual Studio.
+
+1. From your **Downloads** folder, double-click the bootstrapper that matches or is similar to one of the following files:
+
+   - **vs_community.exe** for Visual Studio Community
+   - **vs_professional.exe** for Visual Studio Professional
+   - **vs_enterprise.exe** for Visual Studio Enterprise
+
+   If you receive a User Account Control notice, choose **Yes** to allow the bootstrapper to run.
+
+1. We'll ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
+
+### Step 4 - Choose workloads
+
+After the installer is installed, you can use it to customize your installation by selecting the *workloads*, or feature sets, that you want. Here's how.
+
+1. Find the workload you want in the **Installing Visual Studio** screen.
+
+   ![Visual Studio 2022: Install a workload.](../get-started/media/vs2022-installer-workloads.png)
+
+   For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
+
+   Additional workloads support other kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
+
+   The **Installation details** pane lists the included and optional components installed by each workload. You can select or deselect optional components in this list. For example, to support development by using the Visual Studio 2017 or 2015 compiler toolsets, choose the MSVC v141 or MSVC v140 optional components. You can add support for MFC, the experimental Modules language extension, IncrediBuild, and more.
+
+1. After you choose the workload(s) and optional components you want, choose **Install**.
+
+   Next, status screens appear that show the progress of your Visual Studio installation.
+
+> [!TIP]
+> At any time after installation, you can install workloads or components that you didn't install initially. If you have Visual Studio open, go to **Tools** > **Get Tools and Features...** which opens the Visual Studio Installer. Or, open **Visual Studio Installer** from the Start menu. From there, you can choose the workloads or components that you wish to install. Then, choose **Modify**.
+
+### Step 5 - Choose individual components (Optional)
+
+If you don't want to use the Workloads feature to customize your Visual Studio installation, or you want to add more components than a workload installs, you can do so by installing or adding individual components from the **Individual components** tab. Choose what you want, and then follow the prompts.
+
+### Step 6 - Install language packs (Optional)
+
+By default, the installer program tries to match the language of the operating system when it runs for the first time. To install Visual Studio in a language of your choosing, choose the **Language packs** tab from the Visual Studio Installer, and then follow the prompts.
+
+  ![Screenshot of the Visual Studio Installer, showing the Install language packs tab view.](../get-started/media/vs-installer-language-packs.png)
+
+#### Change the installer language from the command line
+
+Another way that you can change the default language is by running the installer from the command line. For example, you can force the installer to run in English by using the following command: `vs_installer.exe --locale en-US`. The installer will remember this setting when it's run the next time. The installer supports the following language tokens: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru, and tr-tr.
+
+### Step 7 - Change the installation location (Optional)
+
+You can reduce the installation footprint of Visual Studio on your system drive. You can choose to move the download cache, shared components, SDKs, and tools to different drives, and keep Visual Studio on the drive that runs it the fastest.
+
+> [!IMPORTANT]
+> You can select a different drive only when you first install Visual Studio. If you've already installed it and want to change drives, you must uninstall Visual Studio and then reinstall it.
+
+### Step 8 - Start developing
+
+1. After Visual Studio installation is complete, choose the **Launch** button to get started developing with Visual Studio.
+
+1. On the start window, choose **Create a new project**.
+
+1. In the search box, enter the type of app you want to create to see a list of available templates. The list of templates depends on the workload(s) that you chose during installation. To see different templates, choose different workloads.
+
+   You can also filter your search for a specific programming language by using the **Language** drop-down list. You can filter by using the **Platform** list and the **Project type** list, too.
+
+1. Visual Studio opens your new project, and you're ready to code!
+
+::: moniker-end
 
 ::: moniker range="msvc-160"
 
