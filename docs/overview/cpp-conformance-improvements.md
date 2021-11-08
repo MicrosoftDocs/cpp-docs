@@ -10,9 +10,9 @@ Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug f
 
 This document lists the changes in Visual Studio 2022. For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
-## <a name="improvements_170_preview"></a> Conformance improvements in Visual Studio 2022 Preview and RC (version 17.0)
+## <a name="improvements_170_preview"></a> Conformance improvements in Visual Studio 2022 version 17.0
 
-Visual Studio 2022 Preview and RC version 17.0 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+Visual Studio 2022 version 17.0 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
 
 ### Warning on bitfield width for enumeration type
 
