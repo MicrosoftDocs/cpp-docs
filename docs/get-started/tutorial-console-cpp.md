@@ -21,9 +21,9 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It also manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
 
-1. If you've just started Visual Studio, you'll see the Visual Studio 2019 dialog box. Choose **Create a new project** to get started.
+1. If you've just started Visual Studio, you'll see the Visual Studio Start dialog box. Choose **Create a new project** to get started.
 
-   ![Screenshot of the Visual Studio 2019 initial dialog.](./media/calc-vs2019-initial-dialog.png "The Visual Studio 2019 initial dialog")
+   ![Screenshot of the Visual Studio 2022 initial dialog.](./media/calc-vs2022-initial-dialog.png)
 
    Otherwise, on the menubar in Visual Studio, choose **File** > **New** > **Project**. The **Create a new project** window opens.
 

@@ -5,7 +5,7 @@ ms.date: 11/05/2021
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
-# What's new for C++ in Visual Studio 2022 Preview
+# What's new for C++ in Visual Studio 2022
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
 
@@ -21,7 +21,11 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ### Hot Reload for native C++
 
-- [Hot Reload for C++](https://devblogs.microsoft.com/cppblog/edit-your-c-code-while-debugging-with-hot-reload-in-visual-studio-2022/) makes it possible to make many types of code edits to your running app and apply them without needing to pause app execution with something like a breakpoint. We've improved the Hot Reload experience in the debugger and the underlying Edit and Continue mechanism. Hot Reload now supports CMake and OpenFolder projects.
+- [Hot Reload for C++](https://devblogs.microsoft.com/cppblog/edit-your-c-code-while-debugging-with-hot-reload-in-visual-studio-2022/) makes it possible to make many types of code edits to your running app and apply them without needing to pause app execution with something like a breakpoint.
+
+In Visual Studio 2022, when you start your app in the debugger, you can use the Hot Reload button to modify your application while it's still running. This experience is powered by native Edit and Continue. For more information about supported edits, see [Edot and Continue (C++)](/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2022&preserve-view=true).
+
+- Hot Reload supports CMake and Open Folder projects.
 
 ### WSL2 support
 
@@ -89,7 +93,9 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 - C++ IntelliSense for CMake projects now works when using a preset with a display name.
 
-- Updated to NDK r21 LTS in C++ Mobile Development workload.
+### C++ Workload updates
+
+- Updated to NDK r21 LTS in the **C++ Mobile Development** workload.
 
 - The **Game development with C++** workload now installs the latest Unreal Engine with support with for Visual Studio 2022.
 
@@ -109,7 +115,11 @@ Release notes for older C++ versions are also available. For information on what
 
 ## Known issues
 
-For more information on open issues and available workarounds for C++ in Visual Studio 2022, see the C++ Developer Community [issues list](https://developercommunity.visualstudio.com/search?space=62&stateGroup=active&ftype=problem&sort=votes&q=2022).
+**C++ IntelliSense**
+
+- [When importing a C++20 module or header unit, IntelliSense may stop working or 'There are too many errors' error is shown](https://aka.ms/vcmoduleintellisenseinfo).
+
+For more information on other open issues and available workarounds for C++ in Visual Studio 2022, see the C++ Developer Community [issues list](https://developercommunity.visualstudio.com/search?space=62&stateGroup=active&ftype=problem&sort=votes&q=2022).
 
 ## Feedback and suggestions
 
