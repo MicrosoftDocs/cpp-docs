@@ -397,7 +397,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | __C++20 Standard library features (Defect reports)__ | __Supported__ |
 | &emsp;[`P2325R3 Views Should Not Be Required To Be Default Constructible`](https://wg21.link/P2325r3) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P2328R1 join_view should join all views of ranges`](https://wg21.link/P2328R1) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
-| &emsp;[`P2367R0 Remove misuses of list-initialization from clause 24 ranges`](https://wg21.link/P2367R0) | VS 202 17.0  <sup>[20abi](#note_20abi)</sup> |
+| &emsp;[`P2367R0 Remove misuses of list-initialization from clause 24 ranges`](https://wg21.link/P2367R0) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
 | __C++23 Standard library features__ | __Supported__ |
 | &emsp;[`P0401R6 Providing size feedback in the allocator interface`](https://wg21.link/P0401R6) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P0881R7 <stacktrace>`](https://wg21.link/p0881r7) | No |
