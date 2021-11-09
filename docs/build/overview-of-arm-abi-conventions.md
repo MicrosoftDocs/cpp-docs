@@ -38,28 +38,6 @@ The instruction set for Windows on ARM is strictly limited to Thumb-2. All code 
 
 A side-effect of this requirement is that all code pointers must have the low bit set. Then, when they're loaded and branched to via BLX or BX, the processor remains in Thumb mode. It doesn't try to execute the target code as 32-bit ARM instructions.
 
-### IT Instructions
-
-The use of IT instructions in Thumb-2 code is disallowed except for these specific cases:
-
-- The IT instruction can only be used to modify one target instruction.
-
-- The target must be one of these 16-bit instructions:
-
-   |16-Bit Opcodes|Class|Restrictions|
-   |---------------------|-----------|------------------|
-   |MOV, MVN|Move|`Rm != PC`, `Rd != PC`|
-   |LDR, LDR[S]B, LDR[S]H|Load from memory|But not LDR literal forms|
-   |STR, STRB, STRH|Store to memory||
-   |ADD, ADC, RSB, SBC, SUB|Add or subtract|But not ADD/SUB SP, SP, imm7 forms<br /><br /> `Rm != PC`, `Rdn != PC`, `Rdm != PC`|
-   |CMP, CMN|Compare|`Rm != PC`, `Rn != PC`|
-   |MUL|Multiply||
-   |ASR, LSL, LSR, ROR|Bit shift||
-   |AND, BIC, EOR, ORR, TST|Bitwise arithmetic||
-   |BX|Branch to register|`Rm != PC`|
-
-Although current ARMv7 CPUs can't report the use of disallowed instruction forms, future generations are expected to. If these forms are detected, any program that uses them may be terminated with an undefined instruction exception.
-
 ### SDIV/UDIV instructions
 
 The use of integer divide instructions SDIV and UDIV is fully supported, even on platforms without native hardware to handle them. The extra overhead per SDIV or UDIV divide on a Cortex-A9 processor is approximately 80 cycles. That's added to the overall divide time of 20-250 cycles, depending on the inputs.
