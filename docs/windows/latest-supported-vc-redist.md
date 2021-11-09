@@ -31,13 +31,13 @@ Download additional languages and versions, including for long term servicing re
 
 | Architecture | Link | Notes |
 |--|:-:|-:|
-| ARM64 | [https://aka.ms/vs/16/release/vc_redist.arm64.exe](https://aka.ms/vs/16/release/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
-| X86 | [https://aka.ms/vs/16/release/vc_redist.x86.exe](https://aka.ms/vs/16/release/vc_redist.x86.exe) | Permalink for latest supported x86 version |
-| X64 | [https://aka.ms/vs/16/release/vc_redist.x64.exe](https://aka.ms/vs/16/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. To make it easy to install required Visual C++ ARM64 binaries when the X64 redistributable is installed on an ARM64 device, the X64 redistributable package contains both ARM64 and X64 binaries |
+| ARM64 | [https://aka.ms/vs/17/release/vc_redist.arm64.exe](https://aka.ms/vs/17/release/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
+| X86 | [https://aka.ms/vs/17/release/vc_redist.x86.exe](https://aka.ms/vs/17/release/vc_redist.x86.exe) | Permalink for latest supported x86 version |
+| X64 | [https://aka.ms/vs/17/release/vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. To make it easy to install required Visual C++ ARM64 binaries when the X64 redistributable is installed on an ARM64 device, the X64 redistributable package contains both ARM64 and X64 binaries |
 
 ### Notes
 
-- Visual Studio versions since Visual Studio 2015 share the same redistributable files. For example, the latest Microsoft Visual C++ Redistributable can be used by apps built using the Visual Studio 2015, 2017, or 2019 toolsets. However, the version of the Microsoft Visual C++ redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. For more information about which version of the Redistributable to install, see [Determining Which DLLs to Redistribute](determining-which-dlls-to-redistribute.md).
+- Visual Studio versions since Visual Studio 2015 share the same redistributable files. For example, the latest Microsoft Visual C++ Redistributable can be used by apps built using the Visual Studio 2015, 2017, 2019, or 2022 toolsets. However, the version of the Microsoft Visual C++ redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. For more information about which version of the Redistributable to install, see [Determining Which DLLs to Redistribute](determining-which-dlls-to-redistribute.md).
 
 - **Windows XP Support**: Microsoft ended support for Windows XP on April 8, 2014. While the current version of the Visual C++ Redistributable for Visual Studio 2015-2019 only supports Windows Vista, 7, 8.1, 10, and 11, older versions of the C++ Redistributable can be installed on Windows XP. The last version of the C++ Redistributable for Visual Studio 2015-2019 that works on Windows XP shipped in Visual Studio 2019 version 16.7 (file versions starting with **14.27**). The redistributable file is available in the [my.visualstudio.com](https://my.visualstudio.com/) Downloads section, as [Visual C++ Redistributable for Visual Studio 2019 - Version 16.7](https://my.visualstudio.com/Downloads?q=Redistributable%20for%20Visual%20Studio%202019%20Version%2016.7). To download the files, select the platform and language you need, and then choose the Download button.
 
