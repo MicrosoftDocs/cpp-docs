@@ -43,7 +43,7 @@ Download other languages and versions, including versions for long term servicin
 ## Visual Studio 2013 (VC++ 12.0)
 
 These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
-You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [my.visualstudio.com](https://my.visualstudio.com/).
+You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [my.visualstudio.com](https://my.visualstudio.com/).
 
 | Architecture |   Version    |                                                    Link |
 | ------------ | :----------: | ------------------------------------------------------: |
@@ -57,7 +57,7 @@ You can download other versions and languages from [Update for Visual C++ 2013 R
 
 ## Visual Studio 2012 (VC++ 11.0) Update 4
 
-These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2012 Update 4. You can download other versions and languages from [Microsoft Visual C++ Redistributable Packages for Visual Studio 2012 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=30679) or from [my.visualstudio.com](https://my.visualstudio.com/Downloads?pid=1452).
+These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2012 Update 4. You can download other versions and languages from [Microsoft Visual C++ Redistributable Packages for Visual Studio 2012 Update 4](https://www.microsoft.com/download/details.aspx?id=30679) or from [my.visualstudio.com](https://my.visualstudio.com/Downloads?pid=1452).
 
 | Architecture | Version | Link |
 |--|:-:|-:|
@@ -90,7 +90,7 @@ Download redistributable files for other languages and architectures from:
 
 Download redistributable files for other languages and architectures from:
 
-- [Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/en-us/download/details.aspx?id=26368)
+- [Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26368)
 
 ## Visual Studio 2005 (VC++ 8.0) SP1 (no longer supported)
 
