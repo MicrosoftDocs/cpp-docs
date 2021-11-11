@@ -7,7 +7,7 @@ ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
 ---
 # Indirection and Address-of Operators
 
-The unary indirection operator (__&#42;__) accesses a value indirectly, through a pointer. The operand must be a pointer type. The result of the operation is the value addressed by the operand; that is, the value at the address to which its operand points. The type of the result is the type that the operand addresses.
+The unary indirection operator (**`*`**) accesses a value indirectly, through a pointer. The operand must be a pointer type. The result of the operation is the value addressed by the operand; that is, the value at the address to which its operand points. The type of the result is the type that the operand addresses.
 
 The result of the indirection operator is *type* if the operand is of type *pointer to type*. If the operand points to a function, the result is a function designator. If it points to an object, the result is an lvalue that designates the object.
 
@@ -21,9 +21,9 @@ If the pointer value is not valid, the result of the indirection operator is und
 
 - The pointer specifies an address not used by the executing program.
 
-The unary address-of operator (**&**) gives the address of its operand. The operand must be either an lvalue that designates an object that is not declared __register__ and is not a bit-field, or the result of a unary __&#42;__ operator or an array dereference (__&#91;&#93;__) operator, or a function designator. The result is of type *pointer to type* for an operand of type *type*.
+The unary address-of operator (**&**) gives the address of its operand. The operand must be either an lvalue that designates an object that is not declared __register__ and is not a bit-field, or the result of a unary **`*`** operator or an array dereference (__&#91;&#93;__) operator, or a function designator. The result is of type *pointer to type* for an operand of type *type*.
 
-If the operand is the result of a unary __&#42;__ operator, neither operator is evaluated and the result is as if both were omitted. The result is not an lvalue, and the constraints on the operators still apply. If the operand is the result of a __&#91;&#93;__ operator, neither the __&__ operator nor the unary __&#42;__ implied by the __&#91;&#93;__ operator is evaluated. The result has the same effect as removing the __&__ operator and changing the __&#91;&#93;__ operator to a __+__ operator. Otherwise, the result is a pointer to the object or function designated by the operand.
+If the operand is the result of a unary **`*`** operator, neither operator is evaluated and the result is as if both were omitted. The result is not an lvalue, and the constraints on the operators still apply. If the operand is the result of a __&#91;&#93;__ operator, neither the __&__ operator nor the unary **`*`** implied by the __&#91;&#93;__ operator is evaluated. The result has the same effect as removing the __&__ operator and changing the __&#91;&#93;__ operator to a __+__ operator. Otherwise, the result is a pointer to the object or function designated by the operand.
 
 ## Examples
 
@@ -41,7 +41,7 @@ This statement uses the address-of operator (**&**) to take the address of the s
 pa = &a[5];
 ```
 
-The indirection operator (__&#42;__) is used in this example to access the **`int`** value at the address stored in `pa`. The value is assigned to the integer variable `x`:
+The indirection operator (**`*`**) is used in this example to access the **`int`** value at the address stored in `pa`. The value is assigned to the integer variable `x`:
 
 ```C
 x = *pa;
@@ -67,5 +67,5 @@ Once the function `roundup` is declared, two pointers to `roundup` are declared 
 
 ## See also
 
-[Indirection Operator: &#42;](../cpp/indirection-operator-star.md)<br/>
+[Indirection Operator: `*`](../cpp/indirection-operator-star.md)<br/>
 [Address-of Operator: &](../cpp/address-of-operator-amp.md)

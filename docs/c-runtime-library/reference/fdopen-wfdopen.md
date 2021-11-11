@@ -45,7 +45,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 The **_fdopen** function associates an I/O stream with the file that is identified by *fd*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **_wfdopen** is a wide-character version of **_fdopen**; the *mode* argument to **_wfdopen** is a wide-character string. **_wfdopen** and **_fdopen** otherwise behave identically.
 
-File descriptors passed into **_fdopen** are owned by the returned **FILE &#42;** stream. If **_fdopen** is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned **FILE &#42;** also closes the file descriptor.
+File descriptors passed into **_fdopen** are owned by the returned `FILE *` stream. If **_fdopen** is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned `FILE *` also closes the file descriptor.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
