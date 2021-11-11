@@ -343,7 +343,7 @@ virtual BOOL DrawComboBorderWinXP(CDC*,
 
 ### Parameters
 
-[in] *CDC&#42;*<br/>
+[in] *`CDC*`*<br/>
 [in] *CRect*<br/>
 [in] *BOOL*<br/>
 
@@ -363,9 +363,9 @@ virtual BOOL DrawComboDropButtonWinXP(CDC*,
 
 ### Parameters
 
-[in] *CDC&#42;*<br/>
-[in] *CRect*<br/>
-[in] *BOOL*<br/>
+[in] *`CDC*`*<br/>
+[in] *`CRect`*<br/>
+[in] *`BOOL`*<br/>
 
 ### Return Value
 
@@ -382,10 +382,10 @@ virtual BOOL DrawPushButtonWinXP(CDC*,
 
 ### Parameters
 
-[in] *CDC&#42;*<br/>
-[in] *CRect*<br/>
-[in] *CMFCButton&#42;*<br/>
-[in] *UINT*<br/>
+[in] *`CDC*`*<br/>
+[in] *`CRect`*<br/>
+[in] *`CMFCButton*`*<br/>
+[in] *`UINT`*<br/>
 
 ### Return Value
 
@@ -726,7 +726,7 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
 
 ### Parameters
 
-[in] *CMFCRibbonPanelMenu&#42;*<br/>
+[in] *`CMFCRibbonPanelMenu*`*<br/>
 
 ### Return Value
 
@@ -934,7 +934,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 
 ### Parameters
 
-[in] *CMFCBaseTabCtrl&#42;*<br/>
+[in] *`CMFCBaseTabCtrl*`*<br/>
 
 ### Return Value
 
@@ -951,9 +951,9 @@ virtual COLORREF GetTabTextColor(
 
 ### Parameters
 
-[in] *CMFCBaseTabCtrl&#42;*<br/>
-[in] *int*<br/>
-[in] *BOOL*<br/>
+[in] *`CMFCBaseTabCtrl*`*<br/>
+[in] *`int`*<br/>
+[in] *`BOOL`*<br/>
 
 ### Return Value
 
@@ -1170,7 +1170,7 @@ virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;
 
 ### Parameters
 
-[in] *CMFCDesktopAlertWndButton&#42;*<br/>
+[in] *`CMFCDesktopAlertWndButton*`*<br/>
 
 ### Return Value
 
@@ -1358,7 +1358,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
 
 ### Parameters
 
-[in] *CMFCToolBar&#42;*<br/>
+[in] *`CMFCToolBar*`*<br/>
 
 ### Return Value
 

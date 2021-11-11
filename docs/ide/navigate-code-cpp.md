@@ -11,7 +11,7 @@ Visual Studio provides a suite of tools that you can use to navigate around your
 
 Right-click an `#include` directive, and select **Go To Document**. Or, select **F12** with the cursor over that line to open the file.
 
-![Screenshot of the C&#43;&#43; Go To Document menu option.](../ide/media/go-to-document.png "Go To Document")
+![Screenshot of the C plus plus Go To Document menu option.](../ide/media/go-to-document.png)
 
 ## Toggle Header/Code File
 
@@ -21,7 +21,7 @@ You can switch between a header file and its corresponding source file. Right-cl
 
 You can navigate to the definition of a code symbol by right-clicking it in the editor and selecting **Go To Definition**, or by selecting **F12**. You can navigate to a declaration similarly by right-clicking to open the context menu, or by selecting **Ctrl+F12**.
 
-![Screenshot of C&#43;&#43; Go To Definition.](../ide/media/go-to-def.png "Go To Definition")
+![Screenshot of C plus plus Go To Definition.](../ide/media/go-to-def.png)
 
 ## Go To
 
@@ -29,7 +29,7 @@ You can navigate to the definition of a code symbol by right-clicking it in the 
 
 You can open **Go To** with **Ctrl+,**. This action creates a search box over the document you're editing.
 
-![Screenshot of C&#43;&#43; Go To.](../ide/media/go-to-cpp.png "Go To")
+![Screenshot of C plus plus Go To.](../ide/media/go-to-cpp.png)
 
 **Go To** includes these search filters:
 
@@ -74,7 +74,7 @@ You can run a text search for anything in your solution with **Find** (**Ctrl+F*
 
 **Find** can be scoped to a selection, the current document, all open documents, the current project, or the entire solution. You can use regular expressions and plain text. It also highlights all matches automatically in the IDE.
 
-![Screenshot of C&#43;&#43; Find.](../ide/media/find-cpp.png "Find")
+![Screenshot of C plus plus Find.](../ide/media/find-cpp.png)
 
 **Find in Files** is a more powerful version of **Find** that displays results in the **Find Results** window. You can search external code dependencies, filter by file types, and more.
 
@@ -90,7 +90,7 @@ For more information, see [Find in Files](/visualstudio/ide/find-in-files) in th
 
 To find all usages of a symbol in your codebase, place the caret in or just after the symbol, right-click, and then select **Find All References**. You can filter, sort, or group results in many different ways. Results populate incrementally. They're classified as Reads or Writes to help you see what's in your solution as opposed to system headers or other libraries.
 
-![Screenshot of C&#43;&#43; Find all references.](../ide/media/find-all-references-results-cpp.png "Find all references")
+![Screenshot of C plus plus Find all references.](../ide/media/find-all-references-results-cpp.png)
 
 You group results by the following categories:
 
@@ -104,7 +104,7 @@ You group results by the following categories:
 
 To filter results, hover over a column and select the filtering icon that pops up. You can filter results from the first column to hide things like string and comment references that you might not want to see.
 
-![Screenshot of C&#43;&#43; Find all references filters.](../ide/media/find-all-references-filters-cpp.png "Find all references filters")
+![Screenshot of C plus plus Find all references filters.](../ide/media/find-all-references-filters-cpp.png)
 
 - **Confirmed results**: Actual code references to the symbol being searched for. For example, searching for a member function called `Size` returns all references to `Size` that match the scope of the class that defines `Size`.
 
@@ -120,7 +120,7 @@ You can sort results by any column by selecting that column. You can swap betwee
 
 You can navigate to the definition of a type in a file, or to type members, by using the **Navigation Bar** that's above the editor window.
 
-![Screenshot of the C&#43;&#43; Navigation Bar.](../ide/media/navbar-cpp.png "Navigation Bar")
+![Screenshot of the C plus plus Navigation Bar.](../ide/media/navbar-cpp.png)
 
 ## See also
 

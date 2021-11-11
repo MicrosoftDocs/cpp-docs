@@ -106,7 +106,7 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 |Name|Description|
 |-|-|
-|[operator&#91;&#93;](#op_at)|Returns a reference to the `deque` element at a specified position.|
+|[`operator[]`](#op_at)|Returns a reference to the `deque` element at a specified position.|
 |[operator=](#op_eq)|Replaces the elements of the `deque` with a copy of another `deque`.|
 
 ## <a name="allocator_type"></a> allocator_type

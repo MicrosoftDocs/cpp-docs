@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: Visual C++ What&#39;s New 2003 through 2015"
-title: "Visual C++ What&#39;s New 2003 through 2015"
+description: "Learn more about: Visual C++ What's New 2003 through 2015"
+title: "Visual C++ What's New 2003 through 2015"
 ms.date: "07/02/2019"
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
 ---
-# Visual C++ What&#39;s New 2003 through 2015
+# Visual C++ What's New 2003 through 2015
 
 This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual Studio.
 

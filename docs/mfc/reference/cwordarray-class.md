@@ -58,7 +58,7 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CWordArray::operator &#91;&#93;](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
+|[`CWordArray::operator[]`](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 

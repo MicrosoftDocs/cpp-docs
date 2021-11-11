@@ -48,7 +48,7 @@ Simulated lunch-line graph
 
 In the figure, `Queue` is the base class for both `CashierQueue` and `LunchQueue`. However, when both classes are combined to form `LunchCashierQueue`, the following problem arises: the new class contains two subobjects of type `Queue`, one from `CashierQueue` and the other from `LunchQueue`. The following figure shows the conceptual memory layout (the actual memory layout might be optimized).
 
-![Simulated lunch line object.](../cpp/media/vc38xp2.gif "Simulated lunch&#45;line object") <br/>
+![Simulated lunch line object.](../cpp/media/vc38xp2.gif) <br/>
 Simulated lunch-line object
 
 Note that there are two `Queue` subobjects in the `LunchCashierQueue` object. The following code declares `Queue` to be a virtual base class:
@@ -64,17 +64,17 @@ class LunchCashierQueue : public LunchQueue, public CashierQueue {};
 
 The **`virtual`** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).
 
-![Simulated lunch line object, virtual base classes.](../cpp/media/vc38xp3.gif "Simulated lunch&#45;line object, virtual base classes") <br/>
+![Diagram showing a simulated lunch line object, with virtual base classes.](../cpp/media/vc38xp3.gif)<br/>
 Simulated lunch-line object with virtual base classes
 
 A class can have both a virtual component and a nonvirtual component of a given type. This happens in the conditions illustrated in the following figure.
 
-![Virtual and nonvirtual components of a class.](../cpp/media/vc38xp4.gif "Virtual and non&#45;virtual components of a class") <br/>
+![Diagram showing virtual and non virtual components of a class.](../cpp/media/vc38xp4.gif)<br/>
 Virtual and non-virtual components of the same class
 
 In the figure, `CashierQueue` and `LunchQueue` use `Queue` as a virtual base class. However, `TakeoutQueue` specifies `Queue` as a base class, not a virtual base class. Therefore, `LunchTakeoutCashierQueue` has two subobjects of type `Queue`: one from the inheritance path that includes `LunchCashierQueue` and one from the path that includes `TakeoutQueue`. This is illustrated in the following figure.
 
-![Virtual & nonvirtual inheritance in object layout.](../cpp/media/vc38xp5.gif "Virtual & non&#45;virtual inheritance in object layout") <br/>
+![Diagram showing virtual and non virtual inheritance in object layout.](../cpp/media/vc38xp5.gif)<br/>
 Object layout with virtual and non-virtual inheritance
 
 > [!NOTE]
@@ -199,7 +199,7 @@ If virtual base classes are used, functions, objects, types, and enumerators can
 
 The following figure shows how objects are composed using virtual and nonvirtual inheritance.
 
-![Diagram showing virtual derivation and nonvirtual derivation.](../cpp/media/vc38xr1.gif "Virtual derivation and non&#45;virtual derivation") <br/>
+![Diagram showing virtual derivation and nonvirtual derivation.](../cpp/media/vc38xr1.gif)<br/>
 Virtual and non-virtual derivation
 
 In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there is no question which subobject is being accessed.

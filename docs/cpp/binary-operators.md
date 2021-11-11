@@ -20,14 +20,14 @@ The following table shows a list of operators that can be overloaded.
 |**&**|Bitwise AND|
 |**&&**|Logical AND|
 |**&=**|Bitwise AND/assignment|
-|**&#42;**|Multiplication|
-|**&#42;=**|Multiplication/assignment|
+|**`*`**|Multiplication|
+|**`*=`**|Multiplication/assignment|
 |**+**|Addition|
 |**+=**|Addition/assignment|
 |**-**|Subtraction|
 |**-=**|Subtraction/assignment|
 |**->**|Member selection|
-|**->&#42;**|Pointer-to-member selection|
+|**`->*`**|Pointer-to-member selection|
 |**/**|Division|
 |**/=**|Division/assignment|
 |**<**|Less than|
