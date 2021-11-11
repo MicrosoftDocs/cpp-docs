@@ -1246,7 +1246,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
 
 ### Parameters
 
-[in] *CMFCPropertyGridProperty&#42;*<br/>
+[in] *`CMFCPropertyGridProperty*`*<br/>
 
 ### Remarks
 
@@ -1341,7 +1341,7 @@ virtual void OnSetSelection CMFCPropertyGridProperty*);
 
 ### Parameters
 
-[in] *CMFCPropertyGridProperty&#42;*<br/>
+[in] *`CMFCPropertyGridProperty*`*<br/>
 
 ### Remarks
 
