@@ -27,7 +27,7 @@ template <class T>
 ### Parameters
 
 *ptr*\
-The address of a byte in memory which holds an object whose type is similar to *T*.
+The address of a byte in memory that holds an object whose type is similar to *T*.
 
 ### Return Value
 
@@ -77,7 +77,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 ### Parameters
 
-*Pnew*\
+*`Pnew`*\
 The `new_handler` to be installed.
 
 ### Return Value
@@ -86,7 +86,7 @@ The `new_handler` to be installed.
 
 ### Remarks
 
-The function stores *Pnew* in a static [new handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The new handler is used by [operator new](../standard-library/new-operators.md#op_new)(**size_t**).
+The function stores *`Pnew`* in a static [`new` handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The `new` handler is used by [`operator new`](../standard-library/new-operators.md#op_new).
 
 ### Example
 
