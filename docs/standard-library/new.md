@@ -48,10 +48,10 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 |Name|Description|
 |-|-|
-|[operator delete](../standard-library/new-operators.md#op_delete)|The function called by a delete expression to deallocate storage for individual of objects.|
-|[operator delete&#91;&#93;](../standard-library/new-operators.md#op_delete_arr)|The function called by a delete expression to deallocate storage for an array of objects.|
-|[operator new](../standard-library/new-operators.md#op_new)|The function called by a new expression to allocate storage for individual objects.|
-|[operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)|The function called by a new expression to allocate storage for an array of objects.|
+|[`operator delete`](../standard-library/new-operators.md#op_delete)|The function called by a delete expression to deallocate storage for individual of objects.|
+|[`operator delete[]`](../standard-library/new-operators.md#op_delete_arr)|The function called by a delete expression to deallocate storage for an array of objects.|
+|[`operator new`](../standard-library/new-operators.md#op_new)|The function called by a new expression to allocate storage for individual objects.|
+|[`operator new[]`](../standard-library/new-operators.md#op_new_arr)|The function called by a new expression to allocate storage for an array of objects.|
 
 ### Enums
 

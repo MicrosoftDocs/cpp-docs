@@ -161,7 +161,7 @@ int main()
 |[operator+](#op_add)|Adds an offset to an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|
 |[operator-=](#operator-_eq)|Decrements a specified offset from a `checked_array_iterator`.|
 |[operator-](#operator-)|Decrements an offset from an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|
-|[operator&#91;&#93;](#op_at)|Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.|
+|[`operator[]`](#op_at)|Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.|
 
 ## Requirements
 

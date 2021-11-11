@@ -65,7 +65,7 @@ The object is used as a function argument to match the parameter type [std::noth
 
 ### Example
 
-See [operator new](../standard-library/new-operators.md#op_new) and [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) for examples of how `std::nothrow_t` is used as a function parameter.
+See [`operator new`](../standard-library/new-operators.md#op_new) and [`operator new[]`](../standard-library/new-operators.md#op_new_arr) for examples of how `std::nothrow_t` is used as a function parameter.
 
 ## <a name="set_new_handler"></a> set_new_handler
 
