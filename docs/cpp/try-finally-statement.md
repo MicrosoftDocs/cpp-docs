@@ -51,7 +51,7 @@ If an exception occurs in the **`__try`** block, the operating system must find 
 
 For example, suppose a series of function calls links function A to function D, as shown in the following figure. Each function has one termination handler. If an exception is raised in function D and handled in A, the termination handlers are called in this order as the system unwinds the stack: D, C, B.
 
-![Diagram of the order of termination handler execution.](../cpp/media/vc38cx1.gif "Order of termination&#45;handler execution") <br/>
+![Diagram of the order of termination handler execution.](../cpp/media/vc38cx1.gif)<br/>
 Order of Termination-Handler Execution
 
 > [!NOTE]

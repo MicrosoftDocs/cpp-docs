@@ -80,7 +80,7 @@ Since many of the drawing tools are available from the [keyboard](../windows/acc
 
 With the **Option** selector you can specify the width of a line, brush stroke, and more. The icon on the **Option** selector button changes depending on which tool you've selected.
 
-![Drawing&#45;shape selector on the Image Editor toolbar.](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")<br/>
+![Screenshot showing the drawing shape selector on the Image Editor toolbar.](../mfc/media/vcimageeditortoolbaroptionselector.gif)<br/>
 **Option** selector on the **Image Editor** toolbar
 
 ### Text tool

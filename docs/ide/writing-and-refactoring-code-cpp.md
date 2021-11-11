@@ -114,7 +114,7 @@ You can move lines of code up and down by selecting them, holding down Alt, and 
 
 A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).
 
-![Screenshot of C plus plus Insert Snippet Drop&#45;down.](../ide/media/vs2015_cpp_surround_with.png)
+![Screenshot of C plus plus Insert Snippet Drop down control.](../ide/media/vs2015_cpp_surround_with.png)
 
 ## Add Class
 
