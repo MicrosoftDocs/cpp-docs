@@ -7,7 +7,7 @@ ms.date: "05/24/2019"
 
 In Visual Studio 2019 and Visual Studio Code, you can use **Live Share** to collaborate on C++ projects in real-time. With **Live Share** another person can edit and debug your code without having to install your project or any of its dependencies. You see each other's edits as they occur, and each edit is tagged with the name of the person who made it.
 
-![Screenshot of C&#43;&#43; Live Share Editing.](../ide/media/live-share-edit-cpp.png "Live Share Editing in C++")
+![Screenshot of C plus plus Live Share Editing.](../ide/media/live-share-edit-cpp.png)
 
 ## Live Share host and guests
 
@@ -27,7 +27,7 @@ The host and guests can use these IntelliSense features:
 - Reference Highlighting
 - Diagnostics/Errors/Squiggles
 
-![Screenshot of C&#43;&#43; Live Share Debugging.](../ide/media/live-share-debug-cpp.png "Live Share Debugging in C++")
+![Screenshot of C plus plus Live Share Debugging.](../ide/media/live-share-debug-cpp.png)
 
 ## Start and end a Live Share session
 

@@ -14,7 +14,7 @@ Visual Studio provides several tools to help you write, edit, and refactor your 
 
 IntelliSense is a powerful code completion tool that suggests symbols and code snippets for you as you type. C++ IntelliSense in Visual Studio runs in real time, analyzing your codebase as you update it and providing recommendations. As you type more characters, the list of recommended results narrows down.
 
-![Screenshot of the C&#43;&#43; member list drop down.](../ide/media/cpp-statement-completion.png)
+![Screenshot of the C plus plus member list drop down.](../ide/media/cpp-statement-completion.png)
 
 Some symbols are omitted automatically to help narrow down the results. For example, when accessing a class object's members from outside the class, you will not be able to see private members by default, or protected members (if you are not in the context of a child class). You can adjust the filtering by using the buttons at the bottom.
 
@@ -31,7 +31,7 @@ IntelliCode is AI-assisted IntelliSense. It puts the most likely candidate at th
 
 When writing C++, IntelliCode will assist when using popular libraries such as the C++ Standard Library. The context of your code is used to provide the most useful recommendations first. In the following example, the `size` member function is commonly used with the `sort` function, so it is surfaced to the top of the results list.
 
-![Screenshot of C&#43;&#43; IntelliCode.](../ide/media/intellicode-cpp.png "C++ IntelliCode")
+![Screenshot of C plus plus IntelliCode.](../ide/media/intellicode-cpp.png)
 
 ::: moniker range=">=msvc-160"
 
@@ -51,7 +51,7 @@ In Visual Studio 2017, IntelliCode is available as an extension in the Visual St
 
 To override **Predictive IntelliSense** and show the longer list, press **Ctrl + J**. If **Predictive IntelliSense** is on, invoking **Ctrl + J** removes the Predictive filter. Pressing **Ctrl + J** again removes the accessibility filter from Member List results where relevant. The ([+]) button under the IntelliSense dropdown list does the same thing as **Ctrl + J**. Hover over the button to see tooltip information about what is being shown.
 
-![Screenshot of C&#43;&#43; Predictive IntelliSense.](../ide/media/predictive-intellisense-cpp.png "Predictive IntelliSense")
+![Screenshot of C plus plus Predictive IntelliSense.](../ide/media/predictive-intellisense-cpp.png)
 
 The preceding screenshot shows several buttons under the dropdown list. These enable IntelliSense Filters for different kinds of results:
 
@@ -68,21 +68,21 @@ A button is displayed only if it is relevant to your current IntelliSense sessio
 
 When the caret is inside a template definition, a **Template Bar** appears, which enables you to provide sample template arguments for IntelliSense.
 
-![Screenshot of C&#43;&#43; Template IntelliSense Show Existing Instantiations.](../ide/media/template-intellisense-cpp-1.png "Template IntelliSense Show Existing Instantiations")
+![Screenshot of C plus plus Template IntelliSense Show Existing Instantiations.](../ide/media/template-intellisense-cpp-1.png)
 
 Click the **\<T>** icon to expand/collapse the **Template Bar**. Click the pencil icon or double-click the **Template Bar** to open the **Edit** window.
 
-![Screenshot of C&#43;&#43; Template IntelliSense.](../ide/media/template-intellisense-cpp-3.png "Template IntelliSense")
+![Screenshot of C plus plus Template IntelliSense.](../ide/media/template-intellisense-cpp-3.png)
 
 Edits that you make in the window are applied directly to the source code, so that you can see the effects in real time.
 
 The Template Bar can auto-populate candidates based on instantiations in your code. Click on **Add All Existing Instantiations** to see a list of all concrete arguments that have been used to instantiate the template throughout your code base.
 
-![Screenshot of C&#43;&#43; Template IntelliSense Results List.](../ide/media/template-intellisense-cpp-2.png "Template IntelliSense Results List")
+![Screenshot of C plus plus Template IntelliSense Results List.](../ide/media/template-intellisense-cpp-2.png)
 
 A window at the bottom of the editor shows where each instantiation was found, and what its arguments were.
 
-![Screenshot of C&#43;&#43; Template IntelliSense Instantiation Map.](../ide/media/template-intellisense-cpp-4.png "Template IntelliSense Instantiation Map")
+![Screenshot of C plus plus Template IntelliSense Instantiation Map.](../ide/media/template-intellisense-cpp-4.png)
 
 **Template Bar** information is treated as user-specific. It is stored in the .vs folder and is not committed to source control.
 
@@ -104,7 +104,7 @@ The editor also offers Quick Fixes for some refactoring opportunities. For examp
 
 Whenever you make a change to a file, a yellow bar appears on the left to indicate that unsaved changes were made. When you save the file, the bar turns green. The green and yellow bars are preserved as long as the document is open in the editor. They represent the changes that were made since you last opened the document.
 
-![Screenshot of C&#43;&#43; change tracking.](../ide/media/change-tracking-cpp.png "Change tracking")
+![Screenshot of C plus plus change tracking.](../ide/media/change-tracking-cpp.png)
 
 ## Move code
 
@@ -114,17 +114,17 @@ You can move lines of code up and down by selecting them, holding down Alt, and 
 
 A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).
 
-![Screenshot of C&#43;&#43; Insert Snippet Drop&#45;down.](../ide/media/vs2015_cpp_surround_with.png "vs2015_cpp_surround_with")
+![Screenshot of C plus plus Insert Snippet Drop&#45;down.](../ide/media/vs2015_cpp_surround_with.png)
 
 ## Add Class
 
 Add a new class from the **Project** menu, or from the context menu in **Solution Explorer**:
 
-![Add New Class in C&#43;&#43;.](../ide/media/vs2017-add-class.png "vs2015_cpp_add_class")
+![Add New Class in C plus plus.](../ide/media/vs2017-add-class.png)
 
 You can also use Class Wizard to modify or examine an existing class.
 
-![C&#43;&#43; Class Wizard.](../ide/media/vs2017-class-wizard.png)
+![C plus plus Class Wizard.](../ide/media/vs2017-class-wizard.png)
 
 For more information, see [Adding Functionality with Code Wizards (C++)](../ide/adding-functionality-with-code-wizards-cpp.md).
 
@@ -155,7 +155,7 @@ You can also provide your own .clang-format or _clang-format file to apply custo
 
 The files are easily shareable via source control, so you can enforce coding conventions across your whole development team.
 
-![Screenshot showing C&#43;&#43; Clang Format.](../ide/media/clang-format-cpp.png "Clang Format")
+![Screenshot showing C plus plus Clang Format.](../ide/media/clang-format-cpp.png)
 
 Visual Studio 2017 and later also supports [EditorConfig](https://editorconfig.org/), which works in a similar way. ClangFormat, however, has more style options than EditorConfig, including rules that are specific to C++. With **EditorConfig**, you create **.editorconfig** files and place them in different folders of your codebase to specify code styles for those folders and their subfolders. An **.editorconfig** file supersedes any other **.editorconfig** files in parent folders and overwrites any formatting settings configured via **Tools** > **Options**. You can set rules for tabs vs. spaces, indent size, and more. For more information, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options).
 

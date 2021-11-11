@@ -481,7 +481,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane*);
 
 ### Parameters
 
-[in] *CDockablePane&#42;*<br/>
+[in] *`CDockablePane*`*<br/>
 
 ### Return Value
 
@@ -495,7 +495,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 
 ### Parameters
 
-[in] *CPaneFrameWnd&#42;*<br/>
+[in] *`CPaneFrameWnd*`*<br/>
 
 ### Return Value
 
