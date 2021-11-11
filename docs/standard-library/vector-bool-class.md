@@ -37,10 +37,10 @@ Operations that deal with the **`bool`** type correspond to values in the contai
 |-|-|
 |[flip](#flip)|Reverses all bits in the `vector<bool>`.|
 |[swap](#swap)|Exchanges the elements of two `vector<bool>`s.|
-|[operator&#91;&#93;](#op_at)|Returns a simulated reference to the `vector<bool>` element at a specified position.|
-|`at`|Functions the same as the unspecialized [vector](../standard-library/vector-class.md)::at function, except that it uses the proxy class [vector\<bool>::reference](#reference_class). Also see [operator&#91;&#93;](#op_at).|
-|`front`|Functions the same as the unspecialized [vector](../standard-library/vector-class.md)::front function, except that it uses the proxy class [vector\<bool>::reference](#reference_class). Also see [operator&#91;&#93;](#op_at).|
-|`back`|Functions the same as the unspecialized [vector](../standard-library/vector-class.md)::back function, except that it uses the proxy class [vector\<bool>::reference](#reference_class). Also see [operator&#91;&#93;](#op_at).|
+|[`operator[]`](#op_at)|Returns a simulated reference to the `vector<bool>` element at a specified position.|
+|`at`|Functions the same as the unspecialized [vector](../standard-library/vector-class.md)::at function, except that it uses the proxy class [vector\<bool>::reference](#reference_class). Also see [`operator[]`](#op_at).|
+|`front`|Functions the same as the unspecialized [vector](../standard-library/vector-class.md)::front function, except that it uses the proxy class [vector\<bool>::reference](#reference_class). Also see [`operator[]`](#op_at).|
+|`back`|Functions the same as the unspecialized [vector](../standard-library/vector-class.md)::back function, except that it uses the proxy class [vector\<bool>::reference](#reference_class). Also see [`operator[]`](#op_at).|
 
 ### Proxy Class
 
@@ -182,7 +182,7 @@ The `vector<bool>::reference` class is a proxy class provided by the [vector\<bo
 
 ### Remarks
 
-A simulated reference is required because C++ does not natively allow direct references to bits. `vector<bool>` uses only one bit per element, which can be referenced by using this proxy class. However, the reference simulation is not complete because certain assignments are not valid. For example, because the address of the `vector<bool>::reference` object cannot be taken, the following code that uses [vector\<bool>::operator&#91;&#93;](#op_at) is not correct:
+A simulated reference is required because C++ does not natively allow direct references to bits. `vector<bool>` uses only one bit per element, which can be referenced by using this proxy class. However, the reference simulation is not complete because certain assignments are not valid. For example, because the address of the `vector<bool>::reference` object cannot be taken, the following code that uses [`vector<bool>::operator[]`](#op_at) is not correct:
 
 ```cpp
 vector<bool> vb;

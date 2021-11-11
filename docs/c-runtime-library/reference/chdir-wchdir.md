@@ -42,7 +42,7 @@ The **_chdir** function changes the current working directory to the directory s
 _chdir("c:\temp");
 ```
 
-When you use the optional backslash character (**&#92;**) in paths, you must place two backslashes (**&#92;&#92;**) in a C string literal to represent a single backslash (**&#92;**).
+When you use the optional backslash character (**`\`**) in paths, you must place two backslashes (**`\\`**) in a C string literal to represent a single backslash (**`\`**).
 
 **_wchdir** is a wide-character version of **_chdir**; the *dirname* argument to **_wchdir** is a wide-character string. **_wchdir** and **_chdir** behave identically otherwise.
 

@@ -67,7 +67,7 @@ In practice, this means that in the reversed sequence the reverse_iterator will 
 |[operator--](#operator--)|Decrements the `reverse_iterator` to the previous element.|
 |[operator-=](#operator-_eq)|Subtracts a specified offset from a `reverse_iterator`.|
 |[operator->](#op-arrow)|Returns a pointer to the element addressed by the `reverse_iterator`.|
-|[operator&#91;&#93;](#op_at)|Returns a reference to an element offset from the element addressed by a `reverse_iterator` by a specified number of positions.|
+|[`operator[]`](#op_at)|Returns a reference to an element offset from the element addressed by a `reverse_iterator` by a specified number of positions.|
 
 ## Requirements
 
@@ -160,7 +160,7 @@ The type is a synonym for the iterator trait typename `iterator_traits`\< **Rand
 
 ### Example
 
-See [reverse_iterator::operator&#91;&#93;](#op_at) for an example of how to declare and use `difference_type`.
+See [`reverse_iterator::operator[]`](#op_at) for an example of how to declare and use `difference_type`.
 
 ## <a name="iterator_type"></a> reverse_iterator::iterator_type
 
@@ -927,7 +927,7 @@ The type is a synonym for the iterator trait typename `iterator_traits`\< *Rando
 
 ### Example
 
-See [reverse_iterator::operator&#91;&#93;](#op_at) or [reverse_iterator::operator*](#op_star) for examples of how to declare and use `reference`.
+See [`reverse_iterator::operator[]`](#op_at) or [reverse_iterator::operator*](#op_star) for examples of how to declare and use `reference`.
 
 ## <a name="reverse_iterator"></a> reverse_iterator::reverse_iterator
 
