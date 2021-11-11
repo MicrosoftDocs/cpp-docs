@@ -369,7 +369,7 @@ Many articles were updated to prevent the machine translation of code elements.
 **Updated articles**
 
 - [Introduction to Microsoft C++ for UNIX Users](../porting/introduction-to-visual-cpp-for-unix-users.md) - Visual Studio 16.10 updates to C17 conformance
-- [Visual C++ What&#39;s New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md) - note change to `pow(T,int)` starting in VS 2015 update 1
+- [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md) - note change to `pow(T,int)` starting in VS 2015 update 1
 
 #### C/C++ compiler and tools errors and warnings
 

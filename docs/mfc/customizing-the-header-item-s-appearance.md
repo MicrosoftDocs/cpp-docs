@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: Customizing the Header Item&#39;s Appearance"
-title: "Customizing the Header Item&#39;s Appearance"
+description: "Learn more about: Customizing the Header Item's Appearance"
+title: "Customizing the Header Item's Appearance"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], customization of items", "CHeaderCtrl class [MFC], customizing the items", "HDS_ styles"]
 ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
 ---
-# Customizing the Header Item&#39;s Appearance
+# Customizing the Header Item's Appearance
 
 By setting the *dwStyle* parameter when you first create a header control ([CHeaderCtrl::Create](reference/cheaderctrl-class.md#create)), you can define the appearance and behavior of header items or of the header control itself.
 
