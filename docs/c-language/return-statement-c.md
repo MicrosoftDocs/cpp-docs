@@ -12,7 +12,7 @@ A **`return`** statement ends the execution of a function, and returns control t
 ## Syntax
 
 > *jump-statement*:\
-> &nbsp;&nbsp;&nbsp;&nbsp;**`return`** *expression*&#8203;<sub>opt</sub> **`;`**
+> &nbsp;&nbsp;&nbsp;&nbsp;**`return`** *expression*<sub>opt</sub> **`;`**
 
 The value of *expression*, if present, is returned to the calling function. If *expression* is omitted, the return value of the function is undefined. The expression, if present, is evaluated and then converted to the type returned by the function. When a **`return`** statement contains an expression in functions that have a **`void`** return type, the compiler generates a warning, and the expression isn't evaluated.
 

@@ -335,13 +335,13 @@ The length in characters of the converted string.
 
 Possible conversions performed by this function are shown in the table:
 
-|Source|Destination|
-|------------|-----------------|
-|\<|&lt;|
-|>|&gt;|
-|&|&amp;|
-|'|&apos;|
-|"|&quot;|
+| Source | Destination |
+|--|--|
+| \< | \&lt; |
+| > | \&gt; |
+| & | \&amp; |
+| ' | \&apos; |
+| " | \&quot; |
 
 ## <a name="getextendedchars"></a> GetExtendedChars
 

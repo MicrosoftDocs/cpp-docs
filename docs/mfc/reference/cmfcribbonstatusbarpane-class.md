@@ -190,7 +190,7 @@ virtual void OnDrawBorder(CDC*);
 
 ### Parameters
 
-[in] *CDC&#42;*<br/>
+[in] *`CDC*`*<br/>
 
 ### Remarks
 

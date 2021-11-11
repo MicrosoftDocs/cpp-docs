@@ -16,7 +16,7 @@ monikerRange: ">=msvc-160"
 
 The IntelliSense code linter for C++ helps developers find and fix common C++ problems right inside Visual Studio. It's based on the same engine that provides C++ IntelliSense, so problems are flagged as soon as you type them.
 
-![Animation showing the C&#43;&#43; linter in action.](../ide/media/linter-demo-animation.gif)
+![Animation showing the C plus plus linter in action.](../ide/media/linter-demo-animation.gif)
 
 ## Find problems
 
@@ -38,7 +38,7 @@ When you change the check severity level, it changes how the problem is shown in
 
 ::: moniker range=">=msvc-170"
 
-![Screenshot that shows the C&#43;&#43; linter configuration.](../ide/media/linter-settings.png)
+![Screenshot that shows the C plus plus linter configuration.](../ide/media/linter-settings.png)
 
 (The presentation in Visual Studio 2019 is slightly different, but the options are similar.)
 

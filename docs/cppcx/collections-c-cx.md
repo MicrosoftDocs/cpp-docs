@@ -10,7 +10,7 @@ In a C++/CX program, you can make free use of Standard Template Library (STL) co
 
 The Windows Runtime defines the interfaces for collections and related types, and C++/CX provides the concrete C++ implementations in the collection.h header file. This illustration shows the relationships between the collection types:
 
-![C&#43;&#43;&#47;CX inheritance tree for collection types.](../cppcx/media/cppcxcollectionsinheritancetree.png "C&#43;&#43;&#47;CX inheritance tree for collection types")
+![Diagram of C plus plus C X inheritance tree for collection types.](../cppcx/media/cppcxcollectionsinheritancetree.png)
 
 - The [Platform::Collections::Vector class](../cppcx/platform-collections-vector-class.md) resembles the [std::vector class](../standard-library/vector-class.md).
 

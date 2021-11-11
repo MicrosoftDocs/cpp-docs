@@ -128,7 +128,7 @@ The iterator provided by the hash_map class is a bidirectional iterator, but the
 
 |Operator|Description|
 |-|-|
-|[operator&#91;&#93;](#op_at)|Inserts an element into a `hash_map` with a specified key value.|
+|[`operator[]`](#op_at)|Inserts an element into a `hash_map` with a specified key value.|
 |[hash_map::operator=](#op_eq)|Replaces the elements of a `hash_map` with a copy of another `hash_map`.|
 
 ## Requirements
