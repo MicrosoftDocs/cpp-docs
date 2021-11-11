@@ -155,7 +155,7 @@ The illustration shows some of the physical directories in a Visual Studio C++ p
 
 ### Hint File Directories
 
-![Common and project&#45;specific hint file directories.](media/hintfile.png "HintFile")
+![Diagram showing the common and project specific hint file directories.](media/hintfile.png)
 
 ### Directories and Hint File Contents
 
