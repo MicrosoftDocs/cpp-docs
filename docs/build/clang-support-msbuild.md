@@ -19,7 +19,7 @@ You can use Visual Studio 2019 version 16.2 and later with Clang to edit, build,
 
 ## Install
 
-For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have the tools, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose the **C++ Clang-cl for v142 build tools.** optional component.
+For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have the tools, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose **C++ Clang-cl for v142 build tools**.
 
 The Microsoft C++ Standard Library requires at least Clang 8.0.0.
 
