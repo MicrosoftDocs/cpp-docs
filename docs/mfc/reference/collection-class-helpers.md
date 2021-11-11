@@ -23,7 +23,7 @@ The Microsoft Foundation Class Library provides the following global functions i
 
 ## <a name="compareelements"></a> CompareElements
 
-Called directly by [CList::Find](clist-class.md#not_found.md#clist__find and indirectly by [cmap__lookup](cmap-class.md#lookup) and [cmap__operator &#91;&#93;](cmap-class.md#operator_at).
+Called directly by [`CList::Find`](clist-class.md#find) and indirectly by [`CMap::Lookup`](cmap-class.md#lookup) and [`CMap::operator[]`](cmap-class.md#operator_at).
 
 ```
 template<class TYPE, class ARG_TYPE>
@@ -158,7 +158,7 @@ The key's hash value.
 
 ### Remarks
 
-This function is called directly by [CMap::RemoveKey](cmap-class.md#removekey) and indirectly by [CMap::Lookup](cmap-class.md#lookup) and [CMap::Operator &#91;&#93;](cmap-class.md#operator_at).
+This function is called directly by [`CMap::RemoveKey`](cmap-class.md#removekey) and indirectly by [`CMap::Lookup`](cmap-class.md#lookup) and [`CMap::operator[]`](cmap-class.md#operator_at).
 
 The default implementation creates a hash value by shifting *key* right by four positions. Override this function so that it returns hash values appropriate for your application.
 
