@@ -10,7 +10,7 @@ In the Windows Runtime the [Windows::Storage::Streams::IBuffer](/uwp/api/windows
 
 The following diagram shows a XAML image element, whose source is a [Windows::UI::Xaml::Media::Imaging WriteableBitmap](/uwp/api/windows.ui.xaml.media.imaging.writeablebitmap). A client app that's written in any language can pass a reference to the `WriteableBitmap` to C++ code and then C++ can use the reference to get at the underlying buffer. In a Universal Windows Platform app that's written in C++, you can use the function in the following example directly in the source code without packaging it in a Windows Runtime component.
 
-![Diagram showing a code component that accesses pixel data directly.](../cppcx/media/ibufferbyteaccessdiagram.png "C&#43;&#43; code that accesses pixel data directly")
+![Diagram showing a code component that accesses pixel data directly.](../cppcx/media/ibufferbyteaccessdiagram.png)
 
 ## GetPointerToPixelData
 
