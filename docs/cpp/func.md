@@ -5,9 +5,9 @@ ms.date: "10/19/2017"
 f1_keywords: ["__func__"]
 ms.assetid: a5299b8d-f0ee-4af2-91dd-8fb165e68798
 ---
-# __func__
+# `__func__`
 
-**(C++11)** The predefined identifier &#95;&#95;func&#95;&#95; is implicitly defined as a string that contains the unqualified and unadorned name of the enclosing function. &#95;&#95;func&#95;&#95; is mandated by the C++ standard and is not a Microsoft extension.
+**(C++11)** The predefined identifier `__func__` is implicitly defined as a string that contains the unqualified and unadorned name of the enclosing function. `__func__` is mandated by the C++ standard and is not a Microsoft extension.
 
 ## Syntax
 

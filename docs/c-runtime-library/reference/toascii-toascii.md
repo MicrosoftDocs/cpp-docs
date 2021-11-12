@@ -36,7 +36,7 @@ Character to convert.
 
 The **__toascii** routine converts the given character to an ASCII character by truncating it to the low-order 7 bits. No other transformation is applied.
 
-The **__toascii** routine is defined as a macro unless the preprocessor macro _CTYPE_DISABLE_MACROS is defined. For backward compatibility, **toascii** is defined as a macro only when [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise it is undefined.
+The **__toascii** routine is defined as a macro unless the preprocessor macro _CTYPE_DISABLE_MACROS is defined. For backward compatibility, **toascii** is defined as a macro only when [`__STDC__`](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise it is undefined.
 
 ## Requirements
 
