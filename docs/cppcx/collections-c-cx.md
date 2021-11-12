@@ -58,7 +58,7 @@ When you use a range-based **`for`** loop over `IVector` containers, use `auto&&
 
 The following illustration shows a `range for` loop over an `IVector<Person^>`. Notice that execution is stopped on the breakpoint on line 64. The **QuickWatch** window shows that the iterator variable `p` is in fact a `VectorProxy<Person^>` that has `m_v` and `m_i` member variables. However, when you call `GetType` on this variable, it returns the identical type to the `Person` instance `p2`. The takeaway is that although `VectorProxy` and `ArrowProxy` might appear in **QuickWatch**, the debugger certain compiler errors, or other places, you typically don't have to explicitly code for them.
 
-![Screenshot of debugging VectorProxy in a range based for loop.](../cppcx/media/vectorproxy-1.png "VectorProxy in range&#45;based for loop")
+![Screenshot of debugging VectorProxy in a range based for loop.](../cppcx/media/vectorproxy-1.png)
 
 One scenario in which you have to code around the proxy object is when you have to perform a **`dynamic_cast`** on the elements—for example, when you are looking for XAML objects of a particular type in a `UIElement` element collection. In this case, you must first cast the element to [Platform::Object](../cppcx/platform-object-class.md)^ and then perform the dynamic cast:
 

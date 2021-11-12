@@ -28,7 +28,7 @@ int main() {
 }
 ```
 
-C2975 also occurs when you use &#95;&#95;LINE&#95;&#95; as a compile-time constant with [/ZI](../../build/reference/z7-zi-zi-debug-information-format.md). One solution would be to compile with [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) instead of **/ZI**.
+C2975 also occurs when you use `__LINE__` as a compile-time constant with [`/ZI`](../../build/reference/z7-zi-zi-debug-information-format.md). One solution would be to compile with [`/Zi`](../../build/reference/z7-zi-zi-debug-information-format.md) instead of **`/ZI`**.
 
 ```cpp
 // C2975b.cpp
