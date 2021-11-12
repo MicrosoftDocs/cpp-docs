@@ -65,7 +65,7 @@ Both **__iscsym** and **__iswcsym** return a nonzero value if *c* is a letter, u
 
 These routines are defined as macros unless the preprocessor macro _CTYPE_DISABLE_MACROS is defined. When you use the macro versions of these routines, the arguments can be evaluated more than once. Be careful when you use expressions that have side effects within the argument list.
 
-For backward compatibility, **iscsym** and **iscsymf** are defined as macros only when [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise they are undefined.
+For backward compatibility, **iscsym** and **iscsymf** are defined as macros only when [`__STDC__`](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise they are undefined.
 
 ## Requirements
 

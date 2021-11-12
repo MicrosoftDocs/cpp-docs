@@ -14,16 +14,16 @@ The source character set and execution character set include the ASCII character
 
 |Escape Sequence|Character|ASCII Value|
 |---------------------|---------------|-----------------|
-|&#92;a|Alert/bell|7|
-|&#92;b|Backspace|8|
-|&#92;f|Form feed|12|
-|&#92;n|Newline|10|
-|&#92;r|Carriage return|13|
-|&#92;t|Horizontal tab|9|
-|&#92;v|Vertical tab|11|
-|&#92;"|Double quotation|34|
-|&#92;'|Single quotation|39|
-|&#92;&#92;|Backslash|92|
+|`\a`|Alert/bell|7|
+|`\b`|Backspace|8|
+|`\f`|Form feed|12|
+|`\n`|Newline|10|
+|`\r`|Carriage return|13|
+|`\t`|Horizontal tab|9|
+|`\v`|Vertical tab|11|
+|`\"`|Double quotation|34|
+|`\'`|Single quotation|39|
+|`\\`|Backslash|92|
 
 ## See also
 
