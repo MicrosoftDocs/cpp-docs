@@ -154,6 +154,8 @@ An *environment* encapsulates the environment variables set in the process that 
 - `msvc_arm_x64`: Target ARM Windows with the 64-bit MSVC compiler.
 - `msvc_arm64`: Target ARM64 Windows with the MSVC compiler.
 - `msvc_arm64_x64`: Target ARM64 Windows with the 64-bit MSVC compiler.
+- `msvc_arm64ec`: Target ARM64EC Windows with the MSVC compiler.
+- `msvc_arm64ec_x64`: Target ARM64EC Windows with the 64-bit MSVC compiler.
 - `msvc_x64`: Target x64 Windows with the MSVC compiler.
 - `msvc_x64_x64`: Target x64 Windows with the 64-bit MSVC compiler.
 - `msvc_x86`: Target x86 Windows with the MSVC compiler.
