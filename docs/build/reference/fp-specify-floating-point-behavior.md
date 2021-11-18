@@ -14,19 +14,19 @@ Specifies how the compiler treats floating-point expressions, optimizations, and
 
 ::: moniker range=">msvc-160"
 
-**`/fp:contract`**
+**`/fp:contract`**\
 **`/fp:except`**\[**`-`**]\
 **`/fp:fast`**\
 **`/fp:precise`**\
-**`/fp:strict`**\
+**`/fp:strict`**
 
 ::: moniker-end
 ::: moniker range="<=msvc-160"
 
-**`/fp:except`**\[**`-`**]
+**`/fp:except`**\[**`-`**]\
 **`/fp:fast`**\
 **`/fp:precise`**\
-**`/fp:strict`**\
+**`/fp:strict`**
 
 ::: moniker-end
 
