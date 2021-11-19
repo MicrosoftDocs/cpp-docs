@@ -35,6 +35,8 @@ Returns *`input`*, but all instances of *`oldString`* are replaced by *`newStrin
 
 `substi` is the case-insensitive version of `subst`.
 
+This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+
 ## Example
 
 ```makefile

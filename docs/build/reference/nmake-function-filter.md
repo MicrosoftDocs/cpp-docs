@@ -32,6 +32,8 @@ A list of all of the items in *`input`* that match at least one pattern in *`fil
 
 `filteri` is the case-insensitive version of `filter`.
 
+This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+
 ## Example
 
 ```makefile
