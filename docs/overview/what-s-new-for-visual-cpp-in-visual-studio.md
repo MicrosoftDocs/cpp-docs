@@ -81,7 +81,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 ### C++ AMP deprecated
 
-- C++ AMP headers are now deprecated. Including `<amp.h>` in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](https://aka.ms/amp_deprecate).
+- C++ AMP headers are now deprecated. Including `<amp.h>` in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](/cpp/parallel/amp/cpp-amp-overview).
 
 ### IntelliSense improvements
 
