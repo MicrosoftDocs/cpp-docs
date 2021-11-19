@@ -59,6 +59,10 @@ The time in the form of a time structure.
 *`time_format`*\
 The format to use to get the time value.
 
+### Remarks
+
+The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `time_get` associated with `str`, using `tptr` to indicate the time structure and `fmt` to indicate the beginning of a null-terminated format string. If successful, the call stores in the time structure the values associated with any extracted time fields. The manipulator then returns `str`.
+
 ### Example
 
 ```cpp
@@ -79,10 +83,6 @@ int main()
     return (int)std::cin.fail();
 }
 ```
-
-### Remarks
-
-The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `time_get` associated with `str`, using `tptr` to indicate the time structure and `fmt` to indicate the beginning of a null-terminated format string. If successful, the call stores in the time structure the values associated with any extracted time fields. The manipulator then returns `str`.
 
 ## <a name="iomanip_put_money"></a> `put_money`
 
