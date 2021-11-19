@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: &lt;iomanip&gt; functions"
-title: "&lt;iomanip&gt; functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <iomanip> functions"
+title: "<iomanip> functions"
+ms.date: 11/19/2021
 f1_keywords: ["iomanip/std::get_money", "iomanip/std::get_time", "iomanip/std::put_money", "iomanip/std::put_time", "iomanip/std::quoted", "iomanip/std::resetiosflags", "iomanip/std::setbase", "iomanip/std::setfill", "iomanip/std::setiosflags", "iomanip/std::setprecision", "iomanip/std::setw"]
-ms.assetid: 3ddde610-70cc-4cfa-8a89-3e83d1d356a8
 helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_money [C++]", "std::put_time [C++]", "std::quoted [C++]", "std::resetiosflags [C++]", "std::setbase [C++]", "std::setfill [C++]", "std::setiosflags [C++]", "std::setprecision [C++]", "std::setw [C++]"]
 ---
 # `<iomanip>` functions
@@ -22,7 +21,7 @@ helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_m
 
 ## <a name="iomanip_get_money"></a> `get_money`
 
-Extracts a monetary value from a stream using the desired format, and returns the value in a parameter.
+Extracts a monetary value from a stream using the specified format, and returns the value in a parameter.
 
 ```cpp
 template <class Money>
@@ -45,11 +44,11 @@ The manipulator returns an object that, when extracted from the stream `str`, be
 
 ## <a name="iomanip_get_time"></a> `get_time`
 
-Extracts a time value from a stream using a desired format. Returns the value in a parameter as a time structure.
+Extracts a time value from a stream using the specified format. Returns the value in a parameter as a time structure.
 
 ```cpp
 template <class Elem>
-T10 put_time(struct tm *time_ptr, const Elem *time_format);
+T10 get_time(struct tm *time_ptr, const Elem *time_format);
 ```
 
 ### Parameters
@@ -58,7 +57,28 @@ T10 put_time(struct tm *time_ptr, const Elem *time_format);
 The time in the form of a time structure.
 
 *`time_format`*\
-The desired format to use to obtain the time value.
+The format to use to get the time value.
+
+### Example
+
+```cpp
+#include <ctime>
+#include <iomanip>
+#include <iostream>
+
+int main()
+{
+    std::cout << "Enter a time, e.g. 15:24 for 3:24pm: ";
+    struct std::tm when;
+    std::cin >> std::get_time(&when, "%R");
+    if (!std::cin.fail())
+    {
+        std::cout << "Entered: " << when.tm_hour << " hours, " << when.tm_min << " minutes\n";
+    }
+
+    return (int)std::cin.fail();
+}
+```
 
 ### Remarks
 
@@ -66,7 +86,7 @@ The manipulator returns an object that, when extracted from the stream `str`, be
 
 ## <a name="iomanip_put_money"></a> `put_money`
 
-Inserts a monetary amount using the desired format into a stream.
+Inserts a monetary amount using the specified format into a stream.
 
 ```cpp
 template <class Money>
@@ -106,7 +126,7 @@ T10 put_time(struct tm* time_ptr, const Elem* time_format);
 The time value to write to the stream, provided in a time structure.
 
 *`time_format`*\
-The desired format to write the time value.
+The format to write the time value.
 
 ### Remarks
 
