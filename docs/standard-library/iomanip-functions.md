@@ -68,7 +68,7 @@ The format to use to get the time value.
 
 int main()
 {
-    std::cout << "Enter a time, e.g. 15:24 for 3:24pm: ";
+    std::cout << "Enter a time, for example 15:24 for 3:24pm: ";
     struct std::tm when;
     std::cin >> std::get_time(&when, "%R");
     if (!std::cin.fail())
@@ -99,7 +99,7 @@ T8 put_money(const Money& amount, bool use_intl);
 The monetary amount to insert into the stream.
 
 *`use_intl`*\
-Set to **`true`** if manipulator should use international format, **`false`** if it should not.
+Set to **`true`** if manipulator should use international format, **`false`** if it shouldn't.
 
 ### Return Value
 
@@ -134,7 +134,7 @@ The manipulator returns an object that, when inserted into the stream `str`, beh
 
 ## <a name="quoted"></a> `quoted`
 
-**(New in C++14)** An iostream manipulator that enables convenient round-tripping of strings into and out of streams using the `>>` and `<<` operators.
+**(New in C++14)** An `iostream` manipulator that enables convenient round-tripping of strings into and out of streams using the `>>` and `<<` operators.
 
 ```cpp
 quoted(std::string str) // or wstring
@@ -146,7 +146,7 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 ### Parameters
 
 *`str`*\
-A std::string, char\*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
+A `std::string`, `char*`, string literal or raw string literal, or a wide version of any of these (for example, `std::wstring`, `wchar_t*`).
 
 *`delimiter`*\
 A user-specified character, or wide character, to use as the delimiter for the beginning and end of the string.
@@ -540,7 +540,6 @@ int main( int argc, char* argv[] )
 ```
 
 ```Output
-
 default display
 d1 = 1.23457
 d2 = 12.3457
