@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: /IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
-title: "/IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
+description: "Learn more about: /IGNOREIDL (Don't Process Attributes into MIDL)"
+title: "/IGNOREIDL (Don't Process Attributes into MIDL)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreEmbeddedIDL", "/ignoreidl"]
 helpviewer_keywords: ["IGNOREIDL linker option", "-IGNOREIDL linker option", "/IGNOREIDL linker option"]
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
 ---
-# /IGNOREIDL (Don&#39;t Process Attributes into MIDL)
+# /IGNOREIDL (Don't Process Attributes into MIDL)
 
 ```
 /IGNOREIDL

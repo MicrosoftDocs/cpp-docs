@@ -41,7 +41,7 @@ The type of accessor class that you want the rowset to use.
 
 | Name | Description |
 |--|--|
-| [Operator&#91;&#93;](#operator) | Accesses an element of the rowset. |
+| [`operator[]`](#operator) | Accesses an element of the rowset. |
 
 ### Data Members
 

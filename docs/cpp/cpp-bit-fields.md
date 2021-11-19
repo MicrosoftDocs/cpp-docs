@@ -62,7 +62,7 @@ struct Date {
 
 then the memory layout is as shown in the following figure:
 
-![Layout of a Date object with a zero length bit field, which forces alignment padding.](../cpp/media/vc38uq2.png "Layout of Date object with zero&#45;length bit field") <br/>
+![Layout of a Date object with a zero length bit field, which forces alignment padding.](../cpp/media/vc38uq2.png) <br/>
 Layout of Date Object with Zero-Length Bit Field
 
 The underlying type of a bit field must be an integral type, as described in [Built-in types](../cpp/fundamental-types-cpp.md).

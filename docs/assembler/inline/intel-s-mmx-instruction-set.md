@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: Intel&#39;s MMX Instruction Set"
-title: "Intel&#39;s MMX Instruction Set"
+description: "Learn more about: Intel's MMX Instruction Set"
+title: "Intel's MMX Instruction Set"
 ms.date: "08/30/2018"
 ms.topic: "reference"
 helpviewer_keywords: ["MMX instruction set"]
 ms.assetid: 705deb2d-c3fd-4696-9e22-8bcf25866daf
 ---
-# Intel&#39;s MMX Instruction Set
+# Intel's MMX Instruction Set
 
 **Microsoft Specific**
 

@@ -16,7 +16,7 @@ The class is a representation of the mathematical concept of an ordered set of v
 
 - It defines numerous arithmetic operations between corresponding elements of `valarray<Type>` objects of the same type and length, such as *xarr* = cos( *yarr*) + sin( *zarr*).
 
-- It defines a variety of interesting ways to subscript a `valarray<Type>` object, by overloading [operator&#91;&#93;](#op_at).
+- It defines a variety of interesting ways to subscript a `valarray<Type>` object, by overloading [`operator[]`](#op_at).
 
 An object of class `Type`:
 
@@ -71,9 +71,9 @@ In particular, no subtle differences may exist between copy construction and def
 |[operator-=](#operator-_eq)|Subtracts the elements of a specified `valarray` or a value of the element type, element-wise, from an operand `valarray`.|
 |[operator/=](#op_div_eq)|Divides an operand `valarray` element-wise by the elements of a specified `valarray` or a value of the element type.|
 |[operator=](#op_eq)|Assigns elements to a `valarray` whose values are specified either directly or as part of some other `valarray` or by a `slice_array`, `gslice_array`, `mask_array`, or `indirect_array`.|
-|[operator&#91;&#93;](#op_at)|Returns a reference to an element or its value at specified index or a specified subset.|
+|[`operator[]`](#op_at)|Returns a reference to an element or its value at specified index or a specified subset.|
 |[operator^=](#op_xor_eq)|Obtains the element-wise exclusive logical or operator ( `XOR`) of an array with either a specified valarray or a value of the element type.|
-|[operator&#124;=](#op_or_eq)|Obtains the bitwise `OR` of elements in an array either with the corresponding elements in a specified `valarray` or with a value of the element type.|
+|[`operator|=`](#op_or_eq)|Obtains the bitwise `OR` of elements in an array either with the corresponding elements in a specified `valarray` or with a value of the element type.|
 |[operator~](#op_dtor)|A unary operator that obtains the bitwise `NOT` values of each element in a `valarray`.|
 
 ## <a name="apply"></a> apply
@@ -1118,7 +1118,7 @@ The second member operator is the same as the first, but with an [Rvalue Referen
 
 The third member operator replaces each element of the controlled sequence with a copy of *val*.
 
-The remaining member operators replace those elements of the controlled sequence selected by their arguments, which are generated only by [operator&#91;&#93;](#op_at).
+The remaining member operators replace those elements of the controlled sequence selected by their arguments, which are generated only by [`operator[]`](#op_at).
 
 If the value of a member in the replacement controlled sequence depends on a member in the initial controlled sequence, the result is undefined.
 

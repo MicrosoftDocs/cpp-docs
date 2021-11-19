@@ -12,9 +12,9 @@ ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
 
 As the table of generic-text routine mappings indicates (see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)), when the manifest constant **_MBCS** is defined, a given generic-text routine maps to one of the following kinds of routines:
 
-- An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type **char&#42;**. For example, **_tprintf** maps to **printf**; the string arguments to **printf** are of type **char&#42;**. If you use the **_TCHAR** generic-text data type for your string types, the formal and actual parameter types for **printf** match because **_TCHAR&#42;** maps to **char&#42;**.
+- An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type `char*`. For example, **_tprintf** maps to **printf**; the string arguments to **printf** are of type `char*`. If you use the **_TCHAR** generic-text data type for your string types, the formal and actual parameter types for **printf** match because `_TCHAR*` maps to `char*`.
 
-- An MBCS-specific routine. In this case, the string arguments are expected to be of type __unsigned char&#42;__. For example, **_tcsrev** maps to **_mbsrev**, which expects and returns a string of type __unsigned char&#42;__. Again, if you use the **_TCHAR** generic-text data type for your string types, there's a potential type conflict because **_TCHAR** maps to type **`char`**.
+- An MBCS-specific routine. In this case, the string arguments are expected to be of type `unsigned char*`. For example, **_tcsrev** maps to **_mbsrev**, which expects and returns a string of type `unsigned char*`. Again, if you use the **_TCHAR** generic-text data type for your string types, there's a potential type conflict because **_TCHAR** maps to type **`char`**.
 
 Following are three solutions for preventing this type conflict (and the C compiler warnings or C++ compiler errors that would result):
 
@@ -24,7 +24,7 @@ Following are three solutions for preventing this type conflict (and the C compi
    char *_tcsrev(char *);
    ```
 
-   In the default case, the prototype for **_tcsrev** maps to **_mbsrev** through a thunk in LIBC.LIB. This changes the types of the **_mbsrev** incoming parameters and outgoing return value from **_TCHAR &#42;** (such as **char &#42;**) to **unsigned char &#42;**. This method ensures type matching when you're using **_TCHAR**, but it's relatively slow because of the function call overhead.
+   In the default case, the prototype for **_tcsrev** maps to **_mbsrev** through a thunk in LIBC.LIB. This changes the types of the **_mbsrev** incoming parameters and outgoing return value from `_TCHAR*` (such as `char*`) to `unsigned char*`. This method ensures type matching when you're using **_TCHAR**, but it's relatively slow because of the function call overhead.
 
 - Use function inlining by incorporating the following preprocessor statement in your code.
 

@@ -16,7 +16,7 @@ C includes the following unary operators:
 |Symbol|Name|
 |------------|----------|
 |**-** **~** **!**|Negation and complement operators|
-|**&#42;** **&**|Indirection and address-of operators|
+|**`*`** **`&`**|Indirection and address-of operators|
 |**`sizeof`**|Size operator|
 |**+**|Unary plus operator|
 |**++** **--**|Unary increment and decrement operators|
@@ -25,7 +25,7 @@ Binary operators associate from left to right. C provides the following binary o
 
 |Symbol|Name|
 |------------|----------|
-|**&#42;** **/** **%**|Multiplicative operators|
+|**`*`** **`/`** **`%`**|Multiplicative operators|
 |**+** **-**|Additive operators|
 |**\<\<** **>>**|Shift operators|
 |**\<** **>** **\<=** **>=** **==** **!=**|Relational operators|

@@ -9,7 +9,7 @@ ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 
 In "single inheritance," a common form of inheritance, classes have only one base class. Consider the relationship illustrated in the following figure.
 
-![Diagram of a basic single inheritance hierarchy.](../cpp/media/vc38xj1.gif "Basic single&#45;inheritance graph") <br/>
+![Diagram of a basic single inheritance hierarchy.](../cpp/media/vc38xj1.gif)<br/>
 Simple Single-Inheritance Graph
 
 Note the progression from general to specific in the figure. Another common attribute found in the design of most class hierarchies is that the derived class has a "kind of" relationship with the base class. In the figure, a `Book` is a kind of a `PrintedDocument`, and a `PaperbackBook` is a kind of a `book`.
