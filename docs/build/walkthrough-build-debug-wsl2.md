@@ -55,7 +55,7 @@ Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file a
 
 4. In the **Search for templates** textbox, type "cmake".  Choose the **CMake Project** type and select **Next**. Give the project a name and location, and then select **Create**.
 
-5. Enable Visual Studio’s CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#-enable--cmakepresetsjson-integration-in-visual-studio-2019).
+5. Enable Visual Studio’s CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#-enable--cmakepresetsjson-integration-in-visual-studio).
 
     ![Screenshot of CMake general options screen with Prefer using CMake Presets for configure, build, and test highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
 
@@ -102,7 +102,7 @@ You've now built and debugged a C++ app with WSL 2 and Visual Studio 2022.
 
 ## Advanced WSL 2 and CMake projects considerations
 
-Visual Studio only provides native support for WSL 2 for CMake projects that use `CMakePresets.json` as the active configuration file. To migrate from `CMakeSettings.json` to `CMakePresets.json`, see [Enable CMake Presets integration in Visual Studio](cmake-presets-vs.md#-enable--cmakepresetsjson-integration-in-visual-studio-2019).
+Visual Studio only provides native support for WSL 2 for CMake projects that use `CMakePresets.json` as the active configuration file. To migrate from `CMakeSettings.json` to `CMakePresets.json`, see [Enable CMake Presets integration in Visual Studio](cmake-presets-vs.md#-enable--cmakepresetsjson-integration-in-visual-studio).
 
 If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 toolset, then in the Visual Studio Remote Settings vendor map in `CMakePresets.json`, set **forceWSL1Toolset** to **true** . See [Visual Studio Remote Settings vendor map](cmake-presets-json-reference.md#visual-studio-remote-settings-vendor-map) for details.
 
