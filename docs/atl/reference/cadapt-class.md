@@ -92,7 +92,7 @@ T m_T;
 
 This **`public`** data member can be accessed directly or indirectly with [operator const T&](#operator_const_t_amp) and [operator T&](#operator_t_amp).
 
-## <a name="operator_const_t_amp"></a> CAdapt::operator const T&amp;
+## <a name="operator_const_t_amp"></a> CAdapt::operator const T&
 
 Returns a **`const`** reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
 
@@ -104,7 +104,7 @@ operator const T&() const;
 
 A **`const`** reference to `m_T`.
 
-## <a name="operator_t_amp"></a> CAdapt::operator T&amp;
+## <a name="operator_t_amp"></a> CAdapt::operator T&
 
 Returns a reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
 

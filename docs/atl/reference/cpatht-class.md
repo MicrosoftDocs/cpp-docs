@@ -598,7 +598,7 @@ The string to append.
 
 Returns the updated path.
 
-## <a name="operator_const_stringtype_amp"></a> CPathT::operator const StringType &amp;
+## <a name="operator_const_stringtype_amp"></a> CPathT::operator const StringType &
 
 This operator allows the object to be treated like a string.
 
@@ -622,7 +622,7 @@ operator PCXSTR() const throw();
 
 Returns a string representing the current path managed by this object.
 
-## <a name="operator_stringtype_amp"></a> CPathT::operator StringType &amp;
+## <a name="operator_stringtype_amp"></a> CPathT::operator StringType &
 
 This operator allows the object to be treated like a string.
 
