@@ -1,12 +1,12 @@
 ---
-title: "Bitwise AND operator: &amp;"
+title: "Bitwise AND operator: &"
 description: "The C++ standard language bitwise AND operator syntax and use."
 ms.date: 07/23/2020
 f1_keywords: ["bitand_cpp"]
 helpviewer_keywords: ["AND operator", "bitwise operators [C++], AND operator", "& operator [C++], bitwise operators"]
 ms.assetid: 76f40de3-c417-47b9-8a77-532f3fc990a5
 ---
-# Bitwise AND operator: &amp;
+# Bitwise AND operator: `&`
 
 ## Syntax
 

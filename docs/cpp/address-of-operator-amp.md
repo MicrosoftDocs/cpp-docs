@@ -1,12 +1,12 @@
 ---
-title: "Address-of Operator: &amp;"
+title: "Address-of Operator: &"
 description: "The address-of operator in the C++ language."
 ms.date: 10/02/2020
 f1_keywords: ["&"]
 helpviewer_keywords: ["address-of operator (&)", "& operator", "& operator [C++], address-of operator"]
 ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
 ---
-# Address-of Operator: &amp;
+# Address-of Operator: `&`
 
 ## Syntax
 

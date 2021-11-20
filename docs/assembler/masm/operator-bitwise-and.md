@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: operator &amp;"
-title: "operator &amp;"
+description: "Learn more about: operator &"
+title: "operator &"
 ms.date: "12/17/2019"
 f1_keywords: ["&", "operator &"]
 helpviewer_keywords: ["& operator, syntax", "AND operator", "& operator"]
