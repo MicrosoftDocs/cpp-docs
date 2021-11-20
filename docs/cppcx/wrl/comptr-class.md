@@ -357,7 +357,7 @@ unsigned long InternalRelease();
 
 This method is protected.
 
-## <a name="operator-ampersand"></a> ComPtr::operator&amp;
+## <a name="operator-ampersand"></a> ComPtr::operator&
 
 Releases the interface associated with this `ComPtr` object and then retrieves the address of the `ComPtr` object.
 

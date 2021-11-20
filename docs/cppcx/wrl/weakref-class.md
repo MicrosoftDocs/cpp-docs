@@ -210,7 +210,7 @@ A return value of S_OK means that this operation succeeded, but doesn't indicate
 
 Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to **`nullptr`** if the weak reference could not be obtained, so you should avoid error checking code that checks the `WeakRef` for **`nullptr`**. Instead, check *ptr* for **`nullptr`**.
 
-## <a name="operator-ampersand-operator"></a> WeakRef::operator&amp; Operator
+## <a name="operator-ampersand-operator"></a> WeakRef::operator& Operator
 
 Returns a `ComPtrRef` object that represents the current `WeakRef` object.
 
