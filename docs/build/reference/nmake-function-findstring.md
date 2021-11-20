@@ -32,6 +32,8 @@ If *`searchFor`* is found within *`input`*, then the function returns *`searchFo
 
 `findstringi` is the case-insensitive version of `findstring`.
 
+This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+
 ## Example
 
 ```makefile
