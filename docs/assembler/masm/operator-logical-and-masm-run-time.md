@@ -6,7 +6,7 @@ f1_keywords: ["operator &&"]
 helpviewer_keywords: ["operator &&", "&& operator"]
 ms.assetid: 0a633a40-114c-48f5-88ff-09bc8d9b281a
 ---
-# operator `&&` (MASM Run Time)
+# operator &amp;&amp; (MASM Run Time)
 
 Logical **AND**. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [.REPEAT](dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
