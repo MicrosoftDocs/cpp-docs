@@ -2,9 +2,9 @@
 description: "Learn more about: &lt;valarray&gt; operators"
 title: "&lt;valarray&gt; operators"
 ms.date: "03/27/2019"
-f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&amp;", "valarray/std::operator&amp;&amp;", "valarray/std::operator&gt;", "valarray/std::operator&gt;&gt;", "valarray/std::operator&gt;=", "valarray/std::operator&lt;", "valarray/std::operator&lt;&lt;", "valarray/std::operator&lt;=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]
+f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&", "valarray/std::operator&&", "valarray/std::operator&gt;", "valarray/std::operator&gt;&gt;", "valarray/std::operator&gt;=", "valarray/std::operator&lt;", "valarray/std::operator&lt;&lt;", "valarray/std::operator&lt;=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]
 ms.assetid: 8a53562c-90ab-4eb3-85d3-ada5259d90b0
-helpviewer_keywords: ["std::operator!= (valarray), std::operator&amp; (valarray)", "std::operator&amp;&amp; (valarray)", "std::operator&gt; (valarray)", "std::operator&gt;&gt; (valarray)", "std::operator&gt;= (valarray)", "std::operator&lt; (valarray)", "std::operator&lt;&lt; (valarray)", "std::operator&lt;= (valarray), std::operator== (valarray)"]
+helpviewer_keywords: ["std::operator!= (valarray), std::operator& (valarray)", "std::operator&& (valarray)", "std::operator&gt; (valarray)", "std::operator&gt;&gt; (valarray)", "std::operator&gt;= (valarray)", "std::operator&lt; (valarray)", "std::operator&lt;&lt; (valarray)", "std::operator&lt;= (valarray), std::operator== (valarray)"]
 ---
 # &lt;valarray&gt; operators
 
@@ -190,7 +190,7 @@ The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
 ```
 
-## <a name="op_amp"></a> operator&amp;
+## <a name="op_amp"></a> operator&
 
 Obtains the bitwise **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.
 
@@ -281,7 +281,7 @@ The element-by-element result of the bitwise operator & is the
 valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
 ```
 
-## <a name="op_amp_amp"></a> operator&amp;&amp;
+## <a name="op_amp_amp"></a> operator&&
 
 Obtains the logical **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray's element type.
 
