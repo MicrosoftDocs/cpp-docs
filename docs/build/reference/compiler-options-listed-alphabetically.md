@@ -50,6 +50,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Fo`](fo-object-file-name.md) | Creates an object file. |
 | [`/fp`](fp-specify-floating-point-behavior.md) | Specify floating-point behavior. |
 | [`/Fp`](fp-name-dot-pch-file.md) | Specifies a precompiled header file name. |
+| [`/fpcvt`](fpcvt.md) | Specify floating-point to unsigned integer conversion behavior. |
 | [`/FR`](fr-fr-create-dot-sbr-file.md)<br /><br /> [`/Fr`](fr-fr-create-dot-sbr-file.md) | Generates browser files. **`/Fr`** is deprecated. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | Forces serialization of all writes to the program database (PDB) file through MSPDBSRV.EXE. |
 | [`/fsanitize`](fsanitize.md) | Enables compilation of sanitizer instrumentation such as AddressSanitizer. |

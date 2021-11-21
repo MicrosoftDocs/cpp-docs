@@ -561,6 +561,8 @@ items:
                   href: ../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
                 - name: /fp (Specify floating-point behavior)
                   href: ../build/reference/fp-specify-floating-point-behavior.md
+                - name: /fpcvt (Floating-point to unsigned integer conversion behavior)
+                  href: ../build/reference/fpcvt.md
                 - name: /FS (Force synchronous PDB writes)
                   href: ../build/reference/fs-force-synchronous-pdb-writes.md
                 - name: /fsanitize (Enable sanitizers)
