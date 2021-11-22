@@ -16,6 +16,7 @@ The platform toolset consists of the C++ compiler (cl.exe) and linker (link.exe)
 - Visual Studio 2015: v140
 - Visual Studio 2017: v141
 - Visual Studio 2019: v142
+- Visual Studio 2022: v143
 
 These toolsets support the .NET Framework 4.5 and later.
 
