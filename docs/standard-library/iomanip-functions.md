@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: &lt;iomanip&gt; functions"
-title: "&lt;iomanip&gt; functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <iomanip> functions"
+title: "<iomanip> functions"
+ms.date: 11/19/2021
 f1_keywords: ["iomanip/std::get_money", "iomanip/std::get_time", "iomanip/std::put_money", "iomanip/std::put_time", "iomanip/std::quoted", "iomanip/std::resetiosflags", "iomanip/std::setbase", "iomanip/std::setfill", "iomanip/std::setiosflags", "iomanip/std::setprecision", "iomanip/std::setw"]
-ms.assetid: 3ddde610-70cc-4cfa-8a89-3e83d1d356a8
 helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_money [C++]", "std::put_time [C++]", "std::quoted [C++]", "std::resetiosflags [C++]", "std::setbase [C++]", "std::setfill [C++]", "std::setiosflags [C++]", "std::setprecision [C++]", "std::setw [C++]"]
 ---
 # `<iomanip>` functions
@@ -22,7 +21,7 @@ helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_m
 
 ## <a name="iomanip_get_money"></a> `get_money`
 
-Extracts a monetary value from a stream using the desired format, and returns the value in a parameter.
+Extracts a monetary value from a stream using the specified format, and returns the value in a parameter.
 
 ```cpp
 template <class Money>
@@ -45,11 +44,11 @@ The manipulator returns an object that, when extracted from the stream `str`, be
 
 ## <a name="iomanip_get_time"></a> `get_time`
 
-Extracts a time value from a stream using a desired format. Returns the value in a parameter as a time structure.
+Extracts a time value from a stream using the specified format. Returns the value in a parameter as a time structure.
 
 ```cpp
 template <class Elem>
-T10 put_time(struct tm *time_ptr, const Elem *time_format);
+T10 get_time(struct tm *time_ptr, const Elem *time_format);
 ```
 
 ### Parameters
@@ -58,15 +57,36 @@ T10 put_time(struct tm *time_ptr, const Elem *time_format);
 The time in the form of a time structure.
 
 *`time_format`*\
-The desired format to use to obtain the time value.
+The format to use to get the time value.
 
 ### Remarks
 
 The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `time_get` associated with `str`, using `tptr` to indicate the time structure and `fmt` to indicate the beginning of a null-terminated format string. If successful, the call stores in the time structure the values associated with any extracted time fields. The manipulator then returns `str`.
 
+### Example
+
+```cpp
+#include <ctime>
+#include <iomanip>
+#include <iostream>
+
+int main()
+{
+    std::cout << "Enter a time, for example 15:24 for 3:24pm: ";
+    struct std::tm when;
+    std::cin >> std::get_time(&when, "%R");
+    if (!std::cin.fail())
+    {
+        std::cout << "Entered: " << when.tm_hour << " hours, " << when.tm_min << " minutes\n";
+    }
+
+    return (int)std::cin.fail();
+}
+```
+
 ## <a name="iomanip_put_money"></a> `put_money`
 
-Inserts a monetary amount using the desired format into a stream.
+Inserts a monetary amount using the specified format into a stream.
 
 ```cpp
 template <class Money>
@@ -79,7 +99,7 @@ T8 put_money(const Money& amount, bool use_intl);
 The monetary amount to insert into the stream.
 
 *`use_intl`*\
-Set to **`true`** if manipulator should use international format, **`false`** if it should not.
+Set to **`true`** if manipulator should use international format, **`false`** if it shouldn't.
 
 ### Return Value
 
@@ -106,7 +126,7 @@ T10 put_time(struct tm* time_ptr, const Elem* time_format);
 The time value to write to the stream, provided in a time structure.
 
 *`time_format`*\
-The desired format to write the time value.
+The format to write the time value.
 
 ### Remarks
 
@@ -114,7 +134,7 @@ The manipulator returns an object that, when inserted into the stream `str`, beh
 
 ## <a name="quoted"></a> `quoted`
 
-**(New in C++14)** An iostream manipulator that enables convenient round-tripping of strings into and out of streams using the `>>` and `<<` operators.
+**(New in C++14)** An `iostream` manipulator that enables convenient round-tripping of strings into and out of streams using the `>>` and `<<` operators.
 
 ```cpp
 quoted(std::string str) // or wstring
@@ -126,7 +146,7 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 ### Parameters
 
 *`str`*\
-A std::string, char\*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
+A `std::string`, `char*`, string literal or raw string literal, or a wide version of any of these (for example, `std::wstring`, `wchar_t*`).
 
 *`delimiter`*\
 A user-specified character, or wide character, to use as the delimiter for the beginning and end of the string.
@@ -520,7 +540,6 @@ int main( int argc, char* argv[] )
 ```
 
 ```Output
-
 default display
 d1 = 1.23457
 d2 = 12.3457

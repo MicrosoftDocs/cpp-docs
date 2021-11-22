@@ -28,6 +28,8 @@ A [list](using-an-nmake-macro.md#function-list-syntax) of the exact same items a
 
 NMAKE outputs a [list](using-an-nmake-macro.md#function-list-syntax) that has a single space between each item and no leading or trailing whitespace. `strip` doesn't change any item within a list, but it does ensure that the returned list is in this canonical form. The canonical form can be useful for later operations that operate on strings instead of lists.
 
+This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+
 ## Example
 
 ```makefile

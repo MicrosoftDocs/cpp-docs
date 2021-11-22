@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: Lvalue Reference Declarator: &amp;"
-title: "Lvalue Reference Declarator: &amp;"
+description: "Learn more about: Lvalue Reference Declarator: &"
+title: "Lvalue Reference Declarator: &"
 ms.date: "11/04/2016"
 f1_keywords: ["&"]
 helpviewer_keywords: ["reference operator", "& operator [C++], reference operator"]
 ms.assetid: edf0513d-3dcc-4663-b276-1269795dda51
 ---
-# Lvalue Reference Declarator: &amp;
+# Lvalue Reference Declarator: `&`
 
 Holds the address of an object but behaves syntactically like an object.
 

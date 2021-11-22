@@ -160,7 +160,7 @@ T* m_pData;
 
 This member variable holds the pointer information.
 
-## <a name="operator_amp"></a> CHeapPtrBase::operator &amp;
+## <a name="operator_amp"></a> CHeapPtrBase::operator &
 
 The & operator.
 
