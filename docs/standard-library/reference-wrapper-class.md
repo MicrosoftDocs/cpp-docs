@@ -61,7 +61,7 @@ The helper functions [std::ref](functional-functions.md#ref) and [std::cref](fun
 
 |Name|Description|
 |-|-|
-|[operator Ty&amp;](#op_ty_amp)|Gets a pointer to the wrapped reference.|
+|[`operator Ty&`](#op_ty_amp)|Gets a pointer to the wrapped reference.|
 |[operator()](#op_call)|Calls the wrapped reference.|
 
 ## <a name="get"></a> get
@@ -103,7 +103,7 @@ rwi = 1
 i = -1
 ```
 
-## <a name="op_ty_amp"></a> operator Ty&amp;
+## <a name="op_ty_amp"></a> operator Ty&
 
 Gets the wrapped reference.
 

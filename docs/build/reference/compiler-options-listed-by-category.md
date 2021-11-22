@@ -33,6 +33,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/clr`](clr-common-language-runtime-compilation.md) | Produces an output file to run on the common language runtime. |
 | [`/EH`](eh-exception-handling-model.md) | Specifies the model of exception handling. |
 | [`/fp`](fp-specify-floating-point-behavior.md) | Specifies floating-point behavior. |
+| [`/fpcvt`](fpcvt.md) | Specify floating-point to unsigned integer conversion behavior. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Optimizes for Windows applications. |
 | [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__cdecl`** calling convention. (x86 only) |
 | [`/Ge`](ge-enable-stack-probes.md) | Deprecated. Activates stack probes. |

@@ -160,7 +160,7 @@ operator bool() throw();
 
 Returns a **`bool`** (C++ data type) value. **`true`** means the current session is open; **`false`** means the current session is closed.
 
-## <a name="op_cdata_amp"></a> CDataConnection::operator CDataSource&amp;
+## <a name="op_cdata_amp"></a> CDataConnection::operator CDataSource&
 
 Returns a reference to the contained `CDataSource` object.
 
@@ -198,7 +198,7 @@ This operator returns a pointer to the contained `CDataSource` object, allowing 
 
 See [operator CDataSource&](#op_cdata_amp) for a usage example.
 
-## <a name="op_csession_amp"></a> CDataConnection::operator CSession&amp;
+## <a name="op_csession_amp"></a> CDataConnection::operator CSession&
 
 Returns a reference to the contained `CSession` object.
 

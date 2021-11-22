@@ -2,13 +2,13 @@
 description: "Learn more about: &lt;bitset&gt; operators"
 title: "&lt;bitset&gt; operators"
 ms.date: "11/04/2016"
-f1_keywords: ["bitset/std::operator&amp;", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]
+f1_keywords: ["bitset/std::operator&", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
-helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
+helpviewer_keywords: ["std::operator& (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
 ---
 # &lt;bitset&gt; operators
 
-## <a name="op_amp"></a> operator&amp;
+## <a name="op_amp"></a> operator&
 
 Performs a bitwise `AND` between two bitsets.
 

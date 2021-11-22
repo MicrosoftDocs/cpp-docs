@@ -480,7 +480,7 @@ The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
 ```
 
-## <a name="op_and_eq"></a> operator&amp;=
+## <a name="op_and_eq"></a> operator&=
 
 Obtains the bitwise **AND** of elements in an array either with the corresponding elements in a specified valarray or with a value of the element type.
 

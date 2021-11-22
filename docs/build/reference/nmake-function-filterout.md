@@ -32,6 +32,8 @@ A [list](using-an-nmake-macro.md#function-list-syntax) of all of the items in *`
 
 `filterouti` is the case-insensitive version of `filterout`.
 
+This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+
 ## Example
 
 ```makefile
