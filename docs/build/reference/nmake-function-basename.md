@@ -30,6 +30,8 @@ A [list](using-an-nmake-macro.md#function-list-syntax) with each of the items fr
 
 The `basename` function is equivalent to using the [`R` modifier in a filename macro](special-nmake-macros.md#filename-macros).
 
+This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+
 ## Example
 
 ```makefile

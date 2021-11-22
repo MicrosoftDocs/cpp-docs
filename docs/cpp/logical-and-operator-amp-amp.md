@@ -1,12 +1,12 @@
 ---
-title: "Logical AND Operator: &amp;&amp;"
+title: "Logical AND Operator: &&"
 description: "The C++ standard language logical AND operator syntax and use."
 ms.date: 07/23/2020
 f1_keywords: ["&&", "and_cpp"]
 helpviewer_keywords: ["logical AND operator", "AND operator", "&& operator"]
 ms.assetid: 50cfa664-a8c4-4b31-9bab-2f80d7cd2d1f
 ---
-# Logical AND operator: &amp;&amp;
+# Logical AND operator: `&&`
 
 ## Syntax
 

@@ -237,7 +237,7 @@ bool operator!() const throw();
 
 Returns true if the `CComHeapPtr` pointer is equal to NULL, false otherwise.
 
-## <a name="operator_amp"></a> CComPtrBase::operator &amp;
+## <a name="operator_amp"></a> CComPtrBase::operator &
 
 The & operator.
 
