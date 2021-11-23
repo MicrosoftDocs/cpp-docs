@@ -10,11 +10,13 @@ ms.assetid: 50cfa664-a8c4-4b31-9bab-2f80d7cd2d1f
 
 ## Syntax
 
-> *expression* **`&&`** *expression*
+*`logical-and-expression`*:\
+&emsp; *`equality-expression`*\
+&emsp; *`logical-and-expression`* **`&&`** *`equality-expression`*
 
 ## Remarks
 
-The logical AND operator (**&&**) returns **`true`** if both operands are **`true`** and returns **`false`** otherwise. The operands are implicitly converted to type **`bool`** before evaluation, and the result is of type **`bool`**. Logical AND has left-to-right associativity.
+The logical AND operator (**`&&`**) returns **`true`** if both operands are **`true`** and returns **`false`** otherwise. The operands are implicitly converted to type **`bool`** before evaluation, and the result is of type **`bool`**. Logical AND has left-to-right associativity.
 
 The operands to the logical AND operator don't need to have the same type, but they must have boolean, integral, or pointer type. The operands are commonly relational or equality expressions.
 
@@ -30,7 +32,7 @@ char *pch = 0;
 
 If `pch` is null (0), the right side of the expression is never evaluated. This short-circuit evaluation makes the assignment through a null pointer impossible.
 
-## Operator keyword for &&
+## Operator keyword for `&&`
 
 C++ specifies **`and`** as an alternative spelling for **`&&`**. In C, the alternative spelling is provided as a macro in the \<iso646.h> header. In C++, the alternative spelling is a keyword; use of \<iso646.h> or the C++ equivalent \<ciso646> is deprecated. In Microsoft C++, the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to enable the alternative spelling.
 
@@ -58,5 +60,5 @@ int main() {
 
 ## See also
 
-[C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)\
 [C logical operators](../c-language/c-logical-operators.md)
