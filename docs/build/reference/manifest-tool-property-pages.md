@@ -82,11 +82,11 @@ Generates a manifest from a managed assembly. (-managedassemblyname:\[file])
 
 ### Suppress Dependency Element
 
-Used with -managedassembly. suppresses the generation of dependency elements in the final manifest. (-nodependency)
+Used with -managedassemblyname. suppresses the generation of dependency elements in the final manifest. (-nodependency)
 
 ### Generate Category Tags
 
-Used with -managedassembly. -category causes the category tags to be generated. (-category)
+Used with -managedassemblyname. -category causes the category tags to be generated. (-category)
 
 ### DPI Awareness
 
