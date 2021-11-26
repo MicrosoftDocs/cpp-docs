@@ -60,14 +60,14 @@ The ATL/MFC string class to use for the path (see [CStringT](../../atl-mfc-share
 |[CPathT::GetDriveNumber](#getdrivenumber)|Call this method to search the path for a drive letter within the range of 'A' to 'Z' and return the corresponding drive number.|
 |[CPathT::GetExtension](#getextension)|Call this method to get the file extension from the path.|
 |[CPathT::IsDirectory](#isdirectory)|Call this method to check whether the path is a valid directory.|
-|[CPathT::IsFileSpec](#isfilespec)|Call this method to search a path for any path-delimiting characters (for example, ':' or '\\' ). If there are no path-delimiting characters present, the path is considered to be a File Spec path.|
+|[CPathT::IsFileSpec](#isfilespec)|Call this method to search a path for any path-delimiting characters (for example, `:` or `\`). If there are no path-delimiting characters present, the path is considered to be a File Spec path.|
 |[CPathT::IsPrefix](#isprefix)|Call this method to determine whether a path contains a valid prefix of the type passed by *pszPrefix*.|
 |[CPathT::IsRelative](#isrelative)|Call this method to determine if the path is relative.|
 |[CPathT::IsRoot](#isroot)|Call this method to determine if the path is a directory root.|
 |[CPathT::IsSameRoot](#issameroot)|Call this method to determine whether another path has a common root component with the current path.|
 |[CPathT::IsUNC](#isunc)|Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server and share.|
 |[CPathT::IsUNCServer](#isuncserver)|Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server only.|
-|[CPathT::IsUNCServerShare](#isuncservershare)|Call this method to determine whether the path is a valid UNC (universal naming convention) share path, \\\ *server*\ *share*.|
+|[CPathT::IsUNCServerShare](#isuncservershare)|Call this method to determine whether the path is a valid UNC (universal naming convention) share path, *`\\server\share`*.|
 |[CPathT::MakePretty](#makepretty)|Call this method to convert a path to all lowercase characters to give the path a consistent appearance.|
 |[CPathT::MatchSpec](#matchspec)|Call this method to search the path for a string containing a wildcard match type.|
 |[CPathT::QuoteSpaces](#quotespaces)|Call this method to enclose the path in quotation marks if it contains any spaces.|
@@ -177,7 +177,7 @@ void BuildRoot(int iDrive);
 ### Parameters
 
 *iDrive*<br/>
-The drive number (0 is A:, 1 is B:, and so on).
+The drive number (0 is *`A:`*, 1 is *`B:`*, and so on).
 
 ### Remarks
 
@@ -396,7 +396,7 @@ For more information, see [PathIsDirectory](/windows/win32/api/shlwapi/nf-shlwap
 
 ## <a name="isfilespec"></a> CPathT::IsFileSpec
 
-Call this method to search a path for any path-delimiting characters (for example, ':' or '\\' ). If there are no path-delimiting characters present, the path is considered to be a File Spec path.
+Call this method to search a path for any path-delimiting characters (for example, `:` or `\`). If there are no path-delimiting characters present, the path is considered to be a File Spec path.
 
 ```
 BOOL IsFileSpec() const;

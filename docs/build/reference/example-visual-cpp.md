@@ -1,29 +1,29 @@
 ---
-description: "Learn more about: &lt;example&gt;"
+description: "Learn more about: XML documentation tag <example>"
 title: "&lt;example>  (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<example>"]
 helpviewer_keywords: ["<example> C++ XML tag", "example C++ XML tag"]
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
 ---
-# &lt;example&gt;
+# `<example>` documentation tag
 
-The \<example> tag lets you specify an example of how to use a method or other library member. Commonly, this would also involve use of the [\<code>](code-visual-cpp.md) tag.
+The `<example>` tag lets you specify an example of how to use a method or other library member. Commonly, use of this tag would also involve the [`<code>`](code-visual-cpp.md) tag.
 
 ## Syntax
 
-```
-<example>description</example>
+```cpp
+/// <example>description</example>
 ```
 
-#### Parameters
+### Parameters
 
-*description*<br/>
+*`description`*\
 A description of the code sample.
 
 ## Remarks
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -54,4 +54,4 @@ public:
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)
