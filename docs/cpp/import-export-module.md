@@ -45,7 +45,7 @@ Non-exported names are not visible to code that imports the module:
 ```cpp
 //MyProgram.cpp
 
-import module ModuleA;
+import ModuleA;
 
 int main() {
   Bar::f(); // OK
