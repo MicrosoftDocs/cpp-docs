@@ -26,7 +26,7 @@ ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
    :::column-end:::
 :::row-end:::
 
-## <a name="operator_lor"></a> operator&#124;&#124; Operator
+## <a name="operator_lor"></a> `operator||` Operator
 
 Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.
 
@@ -70,7 +70,7 @@ A task that completes successfully when either of the input tasks has completed 
 
 If both of the tasks are canceled or throw exceptions, the returned task will complete in the canceled state, and one of the exceptions, if any are encountered, will be thrown when you call `get()` or `wait()` on that task.
 
-## <a name="operator_amp_amp"></a> operator&& Operator
+## <a name="operator_amp_amp"></a> `operator&&` Operator
 
 Creates a task that will complete successfully when both of the tasks supplied as arguments complete successfully.
 
