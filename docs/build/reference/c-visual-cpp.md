@@ -1,29 +1,29 @@
 ---
-description: "Learn more about: &lt;c&gt;"
-title: "&lt;c> (C++ documentation comments)"
+description: "Learn more about: XML documentation tag <c>"
+title: "<c> (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<c>"]
 helpviewer_keywords: ["<c> C++ XML tag", "c C++ XML tag"]
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
 ---
-# &lt;c&gt;
+# `<c>` documentation tag
 
-The \<c> tag indicates that text within a description should be marked as code. Use [\<code>](code-visual-cpp.md) to indicate multiple lines as code.
+The `<c>` tag indicates that text within a description should be marked as code. Use [`<code>`](code-visual-cpp.md) to indicate multiple lines as code.
 
 ## Syntax
 
-```
-<c>text</c>
+```cpp
+/// <c>text</c>
 ```
 
-#### Parameters
+### Parameters
 
-*text*<br/>
+*`text`*\
 The text you want to indicate as code.
 
 ## Remarks
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -48,4 +48,4 @@ public:
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)

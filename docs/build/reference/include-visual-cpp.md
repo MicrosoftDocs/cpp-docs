@@ -1,44 +1,44 @@
 ---
-description: "Learn more about: &lt;include&gt;"
+description: "Learn more about: XML documentation tag <include>"
 title: "&lt;include>  (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<include>"]
 helpviewer_keywords: ["include C++ XML tag", "<include> C++ XML tag"]
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
 ---
-# &lt;include&gt;
+# `<include>` documentation tag
 
-The \<include> tag lets you refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file.  For example, you can use \<include> to insert standard "boilerplate" comments that are used throughout your team or company.
+The `<include>` tag lets you refer to comments in another file that describe the types and members in your source code. This tag is an alternative to placing documentation comments directly in your source code file. For example, you can use `<include>` to insert standard "boilerplate" comments that are used throughout your team or company.
 
 ## Syntax
 
+```cpp
+/// <include file='filename' path='tag-path[@name="ID"' />
 ```
-<include file='filename' path='tagpath' />
-```
 
-#### Parameters
+### Parameters
 
-*filename*<br/>
-The name of the file containing the documentation. The file name can be qualified with a path.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `filename`.
+*`filename`*\
+The name of the file containing the documentation. The file name can be qualified with a path. Enclose the name in single or double quotation marks. The compiler issues a warning if it doesn't find *`filename`*.
 
-*tagpath*<br/>
-A valid XPath expression that selects the desired node-set contained in the file.
+*`tag-path`*\
+A valid XPath expression that selects the wanted node-set contained in the file.
 
-*name*<br/>
-The name specifier in the tag that precedes the comments; `name` will have an `id`.
+*`name`*\
+The name specifier in the tag that precedes the comments; *`name`* will have an *`ID`*.
 
-*id*<br/>
-The ID for the tag that precedes the comments.  Enclose the name in single or double quotation marks.
+*`ID`*\
+The ID for the tag that precedes the comments.  Enclose the ID in single or double quotation marks.
 
 ## Remarks
 
-The \<include> tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize using \<include>.
+The `<include>` tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize using `<include>`.
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
-This is a multifile example. The first file, which uses \<include>, contains the following documentation comments:
+This example uses multiple files. The first file, which uses `<include>`, contains the following documentation comments:
 
 ```cpp
 // xml_include_tag.cpp
@@ -58,7 +58,7 @@ public ref class Test2 {
 };
 ```
 
-The second file, xml_include_tag.doc, contains the following documentation comments:
+The second file, *`xml_include_tag.doc`*, contains the following documentation comments:
 
 ```xml
 <MyDocs>
@@ -103,4 +103,4 @@ The summary for this other type.
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)

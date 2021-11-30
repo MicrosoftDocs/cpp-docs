@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: wbuffer_convert Class"
-title: "wbuffer_convert Class"
-ms.date: "11/04/2016"
+description: "Learn more about: wbuffer_convert class"
+title: "wbuffer_convert class"
+ms.date: "11/29/2021"
 f1_keywords: ["xlocmon/stdext::cvt::wbuffer_convert"]
 helpviewer_keywords: ["wbuffer_convert class"]
-ms.assetid: 4a56f9bf-4138-4612-b516-525fea401358
 ---
-# wbuffer_convert Class
+# `wbuffer_convert` class
 
 Describes a stream buffer that controls the transmission of elements to and from a byte stream buffer.
 
@@ -20,14 +19,14 @@ class wbuffer_convert
 
 ### Parameters
 
-*Codecvt*\
-The [locale](../standard-library/locale-class.md) facet that represents the conversion object.
+*`Codecvt`*\
+The [`locale`](../standard-library/locale-class.md) facet that represents the conversion object.
 
-*Elem*\
+*`Elem`*\
 The wide-character element type.
 
-*Traits*\
-The traits associated with *Elem*.
+*`Traits`*\
+The traits associated with *`Elem`*.
 
 ## Remarks
 
@@ -37,6 +36,5 @@ Conversion between a sequence of `Elem` values and multibyte sequences is perfor
 
 An object of this class template stores:
 
-- A pointer to its underlying byte stream buffer
-
-- A pointer to the allocated conversion object (which is freed when the [wbuffer_convert](../standard-library/wbuffer-convert-class.md)
+- A pointer to its underlying byte stream buffer.\
+- A pointer to an allocated conversion facet object, which is freed when the `wbuffer_convert`is destroyed.
