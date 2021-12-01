@@ -99,7 +99,7 @@ Optional Components:
 - IntelliCode
 - C++ AddressSanitizer
 - IntelliTrace (Enterprise only)
-- MSVC v143 - VS 2019 C++ ARM64 build tools (latest)
+- MSVC v143 - VS 2022 C++ ARM64 build tools (latest)
 - C++ MFC for latest v143 build tools (x86 & x64)
 - C++/CLI support for v143 build tools (latest)
 - C++ Modules for v143 build tools (x64/x86 – experimental)
