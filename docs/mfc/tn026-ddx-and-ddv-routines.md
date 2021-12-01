@@ -113,7 +113,7 @@ There are several ways to extend the default DDX/DDV mechanism. You can:
     > [!NOTE]
     > Such arbitrary expressions cannot be edited by ClassWizard and therefore should be moved outside of the special format comments (//{{AFX_DATA_MAP(CMyClass)).
 
-Have the `DoDialogExchange` member function include conditionals or any other valid C++ statements with intermixed exchange and validation function calls.
+Have the `DoDataExchange` member function include conditionals or any other valid C++ statements with intermixed exchange and validation function calls.
 
 ```cpp
 //{{AFX_DATA_MAP(CMyClass)

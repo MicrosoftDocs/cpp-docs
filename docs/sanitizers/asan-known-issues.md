@@ -21,6 +21,7 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 - [OpenMP](../build/reference/openmp-enable-openmp-2-0-support.md) is unsupported, and should be disabled.
 - [Managed C++](../build/reference/clr-common-language-runtime-compilation.md) is unsupported, and should be disabled.
 - [C++ AMP](../parallel/amp/cpp-amp-overview.md) is unsupported, and should be disabled.
+- [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
 
 ## Standard library support
