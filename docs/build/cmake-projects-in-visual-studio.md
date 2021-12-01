@@ -38,6 +38,9 @@ When you **open a folder** containing a *`CMakeLists.txt`* file, the following t
 
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
+> [!NOTE]
+> Starting in Visual Studio 17.1 Preview 2 if your folder does not contain a root `CMakeLists.txt` then you will be prompted whether you'd like to enable CMake integration or not. For more information, see [CMake Partial Activation](#cmake-partial-activation).
+
 Once CMake cache generation has succeeded, you can also view your projects organized logically by targets. Choose **Targets view** from the dropdown in the **Solution Explorer** toolbar:
 
 ![CMake targets view button.](media/cmake-targets-view.png)
@@ -143,6 +146,15 @@ endif()
 Visual Studio allows you to debug a process running on a remote Linux system or WSL and debug it with the GDB debugger. To get started, select **Debug** > **Attach to Process...**, set the **Connection type** to **SSH**, and select your **Connection target** from the list of connections in the Connection Manager. Select a process from the list of available processes and press **Attach**. GDB must be installed on your Linux machine. For more information on SSH connections, see the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md)
 
 ![A screenshot of the Attach to Process menu](media/attach-to-process.png) 
+
+## <a name="cmake-partial-activation"></a> CMake Partial Activation
+Starting in Visual Studio 17.1 Preview 2, CMake functionality will not automatically enable if your root folder does not contain a `CMakeLists.txt`. Instead, a dialog will prompt you on whether you'd like to enable CMake functionality for your project. If you decline, CMake cache generation will not start and CMake configurations (from `CMakeSettings.json` or `CMakePresets.json`) will not appear in the configuration dropdown. If you accept, you will be taken to a workspace-level configuration file, `CMakeWorkspaceSettings.json` (stored in the `.vs` directory), to specify the folders you'd like to enable CMake for (these folders contain your root `CMakeLists.txt`files). The accepted properties are
+| Property | Description |
+|--|--|
+| `enableCMake` | Enable Visual Studio's integration for this workspace. |
+| `sourceDirectory` | A string or array of strings specifying the directory or directories with `CMakeLists.txt`. Macros (such as `${workspaceRoot}`) are allowed and relative paths are relative to the workspace root. Note that directories outside of the current workspace will be ignored. |
+
+At any time you can reach `CMakeWorkspaceSettings.json` through the `Project > CMake WorkspaceSettings` menu command (even if CMake functionality is currently disabled).
 
 ## Open an existing cache
 
