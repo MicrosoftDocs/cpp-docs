@@ -1,8 +1,8 @@
 ---
 description: "Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects."
 title: "Advanced Property Page (Project)"
-ms.date: 05/28/2021
-f1_keywords: ["VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PreferredToolArchitecture", "VC.Project.VCConfiguration.UseDebugLibraries", "VC.Project.VCConfiguration.EnableUnitySupport", "VC.Project.VCConfiguration.CopyLocalDeploymentContent", "VC.Project.VCConfiguration.CopyLocalProjectReference", "VC.Project.VCConfiguration.CopyLocalDebugSymbols", "VC.Project.VCConfiguration.CopyCppRuntimeToOutputDir", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCConfiguration.VCToolsVersion", "VC.Project.VCConfiguration.LLVMToolsVersion", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.TargetFrameworkVersion", "VC.Project.VCConfiguration.EnableManagedIncrementalBuild"]
+ms.date: 11/22/2021
+f1_keywords: ["VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PreferredToolArchitecture", "VC.Project.VCConfiguration.UseDebugLibraries", "VC.Project.VCConfiguration.EnableUnitySupport", "VC.Project.VCConfiguration.CopyLocalDeploymentContent", "VC.Project.VCConfiguration.CopyLocalProjectReference", "VC.Project.VCConfiguration.CopyLocalDebugSymbols", "VC.Project.VCConfiguration.CopyCppRuntimeToOutputDir", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCConfiguration.VCToolsVersion", "VC.Project.VCConfiguration.LLVMToolsVersion", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.TargetFrameworkVersion", "VC.Project.VCConfiguration.EnableManagedIncrementalBuild", "VC.Project.VCConfiguration.ManagedAssembly"]
 ---
 # Advanced Property Page
 
@@ -111,5 +111,9 @@ In managed projects, specifies the .NET framework version to target.
 ### Enable Managed Incremental Build
 
 For managed projects, this option enables detection of external visibility when you generate assemblies. If a change to a managed project isn't visible to other projects, dependent projects aren't rebuilt. Managed incremental builds can dramatically improve build times in solutions that include managed projects.
+
+### Enable CLR Support for Individual Files
+
+This option sets a `ManagedAssembly` build property that enables building only some files in the project as managed code. You must set **Enable CLR Support for Individual Files** to **Yes** if some but not all of your project files are built as managed code. This property is only available in projects that use the v143 or later toolset in Visual Studio 2022 and later versions.
 
 ::: moniker-end
