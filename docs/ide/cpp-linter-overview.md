@@ -46,7 +46,7 @@ When you change the check severity level, it changes how the problem is shown in
 
 ## Known issues
 
-::: moniker range="msvc-170"
+::: moniker range=">=msvc-170"
 
 - The **Comparison/Bitwise Precedence** check isn't available in the initial release of Visual Studio 2022, even though you can configure it in the Options dialog.
 
