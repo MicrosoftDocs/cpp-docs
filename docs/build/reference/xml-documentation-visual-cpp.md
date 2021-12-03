@@ -28,7 +28,7 @@ For details on creating an XML file with documentation comments, see the followi
 | Tags you can use to provide commonly used functionality in documentation | [Recommended tags for documentation comments](recommended-tags-for-documentation-comments-visual-cpp.md) |
 | The ID strings that the compiler produces to identify the constructs in your code | [Processing the XML File](dot-xml-file-processing.md) |
 | How to delimit documentation tags | [Delimiters for Visual C++ documentation tags](delimiters-for-visual-cpp-documentation-tags.md) |
-| Generating an XML file from one or more XDC files. | [XDCMake reference]XDCmake-reference.md) |
+| Generating an XML file from one or more XDC files. | [XDCMake reference](xdcmake-reference.md) |
 | Links to information about XML as it relates to Visual Studio feature areas | [XML in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio) |
 
 If you need to put XML special characters in the text of a documentation comment, you must use XML entities or a CDATA section.
