@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /Zc:externC (Use Standard C++ extern "C" rules)"
-title: "/Zc:externC (Use Standard C++ extern "C" rules)"
+description: 'Learn more about: /Zc:externC (Use Standard C++ extern "C" rules)'
+title: '/Zc:externC (Use Standard C++ extern "C" rules)'
 ms.date: 12/02/2021
 f1_keywords: ["/Zc:externC"]
 helpviewer_keywords: ["-Zc:externConstexpr compiler option (C++)", "extern constexpr variables (C++)"]
@@ -21,7 +21,7 @@ The **`/Zc:externC`** compiler option checks the definitions of functions declar
 
 The **`/Zc:externC`** option is available starting in Visual Studio 2019 version 16.3. It's off when the [`/permissive-`](permissive-standards-conformance.md) option isn't set. In earlier versions of Visual Studio, and by default or if **`/Zc:externC-`** is specified, Visual Studio is permissive about matching declarations of `extern "C"` functions. The **`/permissive-`** option enables **`/Zc:externC`**, so it's on by default in projects that use **`/std:c++20`** or **`/std:c++latest`**. The **`/Zc:externC`** option must come after a **`/permissive-`** option on the command line.
 
-Mismatched `extern "C"` declarations can cause compiler errors [C2116](../../error-messages/compiler-errors-1/compiler-error-c2116.md) and [C2733](../../error-messages/compiler-errors-1/compiler-error-c2733.md). In C++ code, an error can occur if you declare an `extern "C"` function more than once and use different parameter types, even if the types have the same definitions. The **`/Zc:externC-`** option relaxes this check, and doesn't produce these errors.
+Mismatched `extern "C"` declarations can cause compiler errors [C2116](../../error-messages/compiler-errors-1/compiler-error-c2116.md) and [C2733](../../error-messages/compiler-errors-2/compiler-error-c2733.md). In C++ code, an error can occur if you declare an `extern "C"` function more than once and use different parameter types, even if the types have the same definitions. The **`/Zc:externC-`** option relaxes this check, and doesn't produce these errors.
 
 ### To set this compiler option in Visual Studio
 

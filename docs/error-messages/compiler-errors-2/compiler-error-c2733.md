@@ -33,6 +33,6 @@ extern "C" {
 
 ## See also
 
-[Compiler Error C2116](compiler-error-c2116.md)\
+[Compiler Error C2116](../compiler-errors-1/compiler-error-c2116.md)\
 [`extern` (C++)](../../cpp/extern-cpp.md)\
 [`/Zc:externC` (Use Standard C++ `extern "C"` rules)](../../build/reference/zc-externc.md)

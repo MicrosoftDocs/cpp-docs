@@ -20,6 +20,6 @@ This error may occur after an upgrade because of conformance changes in Visual S
 
 ## See also
 
-[Compiler Error C2733](compiler-error-c2733.md)\
+[Compiler Error C2733](../compiler-errors-2/compiler-error-c2733.md)\
 [`extern` (C++)](../../cpp/extern-cpp.md)\
 [`/Zc:externC` (Use Standard C++ `extern "C"` rules)](../../build/reference/zc-externc.md)
