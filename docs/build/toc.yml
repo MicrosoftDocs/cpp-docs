@@ -772,6 +772,8 @@ items:
                       href: ../build/reference/zc-char8-t.md
                     - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
                       href: ../build/reference/zc-cplusplus.md
+                    - name: '/Zc:externC (Use Standard C++ extern "C" rules)'
+                      href: ../build/reference/zc-externc.md
                     - name: "/Zc:externConstexpr (Enable extern constexpr variables)"
                       href: ../build/reference/zc-externconstexpr.md
                     - name: "/Zc:forScope (Force conformance in for loop scope)"
