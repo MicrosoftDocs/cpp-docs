@@ -1,7 +1,7 @@
 ---
 title: "/Zc (Conformance)"
 description: "The /Zc conformance compiler options enable or disable support for conforming or backward-compatible behavior."
-ms.date: 08/12/2021
+ms.date: 12/02/2021
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ---
 # `/Zc` (Conformance)
@@ -26,6 +26,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:auto`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`** (on by default). |
 | [`/Zc:char8_t`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t` (off by default, except under **`/std:c++20`**). |
 | [`/Zc:__cplusplus`](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard (off by default). |
+| [`/Zc:externC`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions (implied by **`/permissive-`**). |
 | [`/Zc:externConstexpr`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
 | [`/Zc:hiddenFriend`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**) |

@@ -1,29 +1,29 @@
 ---
-description: "Learn more about: &lt;remarks&gt;"
-title: "&lt;remarks> (C++ documentation comments)"
-ms.date: "11/04/2016"
+description: "Learn more about: XML documentation tag <remarks>"
+title: "<remarks> (C++ documentation comments)"
+ms.date: 12/03/2021
 f1_keywords: ["<remarks>"]
 helpviewer_keywords: ["<remarks> C++ XML tag", "remarks C++ XML tag"]
 ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247
 ---
-# &lt;remarks&gt;
+# `<remarks>` documentation tag
 
-The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](summary-visual-cpp.md). This information is displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.
+The `<remarks>` tag is used to add information about a type, supplementing the information specified with [`<summary>`](summary-visual-cpp.md). This information is displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.
 
 ## Syntax
 
-```
-<remarks>description</remarks>
+```cpp
+/// <remarks>description</remarks>
 ```
 
-#### Parameters
+### Parameters
 
-*description*<br/>
+*`description`*\
 A description of the member.
 
 ## Remarks
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -45,4 +45,4 @@ public ref class MyClass {};
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)
