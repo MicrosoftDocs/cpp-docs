@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: XML documentation tag <example>"
-title: "&lt;example>  (C++ documentation comments)"
-ms.date: "11/04/2016"
+title: "<example>  (C++ documentation comments)"
+ms.date: 12/03/2021
 f1_keywords: ["<example>"]
 helpviewer_keywords: ["<example> C++ XML tag", "example C++ XML tag"]
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
