@@ -1,29 +1,29 @@
 ---
-title: "&lt;paramref> (C++ documentation comments)"
+title: "<paramref> (C++ documentation comments)"
 description: "Learn more about the paramref C++ XML documentation tag."
-ms.date: "11/04/2016"
+ms.date: 12/03/2021
 f1_keywords: ["<paramref>"]
 helpviewer_keywords: ["paramref C++ XML tag", "<paramref> C++ XML tag"]
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
 ---
-# &lt;paramref&gt;
+# `<paramref>` documentation tag
 
-The \<paramref> tag gives you a way to indicate that a word is a parameter. The .xml file can be processed to format this parameter in some distinct way.
+The `<paramref>` tag gives you a way to indicate that a word is a parameter. The XML file can be processed to format this parameter in some distinct way.
 
 ## Syntax
 
-```
-<paramref name="name"/>
+```cpp
+/// <paramref name="ref-name"/>
 ```
 
-#### Parameters
+### Parameters
 
-*name*<br/>
-The name of the parameter to refer to.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `name`.
+*`ref-name`*\
+The name of the parameter to refer to.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it doesn't find *`ref-name`*.
 
 ## Remarks
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -42,4 +42,4 @@ public ref class MyClass {
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)

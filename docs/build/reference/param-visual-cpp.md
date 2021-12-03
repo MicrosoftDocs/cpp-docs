@@ -1,34 +1,34 @@
 ---
-description: "Learn more about: &lt;param&gt;"
-title: "&lt;param> (C++ documentation comments)"
-ms.date: "11/04/2016"
+description: "Learn more about: XML documentation tag <param>"
+title: "<param> (C++ documentation comments)"
+ms.date: 12/03/2021
 f1_keywords: ["<param>"]
 helpviewer_keywords: ["param C++ XML tag", "<param> C++ XML tag"]
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
 ---
-# &lt;param&gt;
+# `<param>` documentation tag
 
-The \<param> tag should be used in the comment for a method declaration to describe one of the parameters for the method.
+The `<param>` tag should be used in the comment for a method declaration to describe one of the parameters for the method.
 
 ## Syntax
 
+```cpp
+/// <param name='param-name'>description</param>
 ```
-<param name='name'>description</param>
-```
 
-#### Parameters
+### Parameters
 
-*name*<br/>
-The name of a method parameter.  Enclose the name in single or double quotation marks.  The compiler issues a warning if it does not find `name`.
+*`param-name`*\
+The name of a method parameter. Enclose the name in single or double quotation marks.  The compiler issues a warning if it doesn't find *`param-name`*.
 
-*description*<br/>
+*`description`*\
 A description for the parameter.
 
 ## Remarks
 
-The text for the \<param> tag will be displayed in IntelliSense, the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code), and in the Code Comment Web Report.
+The text for the `<param>` tag will be displayed in IntelliSense, the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code), and in the Code Comment Web Report.
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -46,4 +46,4 @@ public ref class MyClass {
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)
