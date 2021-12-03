@@ -24,7 +24,7 @@ items:
         href: ../ide/lnt-arithmetic-overflow.md
       - name: lnt-assignment-equality
         href: ../ide/lnt-assignment-equality.md
-      - name: lnt-comparison-bitwise-precedence.md
+      - name: lnt-comparison-bitwise-precedence
         href: ../ide/lnt-comparison-bitwise-precedence.md
       - name: lnt-integer-float-division
         href: ../ide/lnt-integer-float-division.md
