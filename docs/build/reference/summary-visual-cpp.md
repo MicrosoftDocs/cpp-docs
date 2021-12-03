@@ -1,31 +1,31 @@
 ---
-description: "Learn more about: &lt;summary&gt;"
-title: "&lt;summary> (C++ Documentation Comments)"
-ms.date: "11/04/2016"
+description: "Learn more about: XML documentation tag <summary>"
+title: "<summary> (C++ Documentation Comments)"
+ms.date: 12/03/2021
 f1_keywords: ["<summary>"]
 helpviewer_keywords: ["<summary> C++ XML tag", "summary C++ XML tag"]
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
 ---
-# &lt;summary&gt;
+# `<summary>`
 
-The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](remarks-visual-cpp.md) to add supplemental information to a type description.
+The `<summary>` tag should be used to describe a type or a type member. Use [`<remarks>`](remarks-visual-cpp.md) to add supplemental information to a type description.
 
 ## Syntax
 
-```
-<summary>description</summary>
+```cpp
+/// <summary>description</summary>
 ```
 
-#### Parameters
+### Parameters
 
-*description*<br/>
+*`description`*\
 A summary of the object.
 
 ## Remarks
 
-The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.
+The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -50,4 +50,4 @@ public:
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)
