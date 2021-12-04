@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;functional&gt;"
-title: "&lt;functional&gt;"
+description: "Learn more about: <functional>"
+title: "<functional>"
 ms.date: "02/21/2019"
 f1_keywords: ["<functional>"]
 helpviewer_keywords: ["functors", "functional header"]

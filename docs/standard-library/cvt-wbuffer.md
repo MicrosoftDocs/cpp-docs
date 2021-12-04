@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cvt/wbuffer&gt;"
-title: "&lt;cvt-wbuffer&gt;"
+description: "Learn more about: <cvt/wbuffer>"
+title: "<cvt-wbuffer>"
 ms.date: "11/04/2016"
 f1_keywords: ["stdext.cvt.<cvt/wbuffer>", "stdext::cvt::<cvt/wbuffer>", "<cvt/wbuffer>"]
 helpviewer_keywords: ["cvt/wbuffer header"]

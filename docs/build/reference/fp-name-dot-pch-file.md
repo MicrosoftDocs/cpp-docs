@@ -1,5 +1,5 @@
 ---
-title: "/Fp (Name &period;pch file)"
+title: "/Fp (Name .pch file)"
 description: "Use the /Fp compiler option to specify the precompiled header file name."
 ms.date: "05/31/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.PrecompiledHeaderFile", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile"]

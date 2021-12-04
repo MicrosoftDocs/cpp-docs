@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;bitset&gt;"
-title: "&lt;bitset&gt;"
+description: "Learn more about: <bitset>"
+title: "<bitset>"
 ms.date: "11/04/2016"
 f1_keywords: ["<bitset>"]
 helpviewer_keywords: ["<bitset> header", "bitset header"]

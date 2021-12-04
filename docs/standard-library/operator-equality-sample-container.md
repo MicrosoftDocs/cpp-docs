@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: operator== (&lt;sample container&gt;)"
-title: "operator== (&lt;sample container&gt;)"
+description: "Learn more about: operator== (<sample container>)"
+title: "operator== (<sample container>)"
 ms.date: "11/04/2016"
 f1_keywords: ["std.==", "std::==", "operator==", "std.operator==", "std::operator==", "=="]
 helpviewer_keywords: ["operator ==, containers", "operator==, containers", "== operator, with specific standard C++ objects"]

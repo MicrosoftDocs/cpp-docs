@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;memory_resource&gt; operators"
-title: "&lt;memory_resource&gt; operators"
+description: "Learn more about: <memory_resource> operators"
+title: "<memory_resource> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::operator!=", "memory_resource/std::operator=="]
 helpviewer_keywords: ["std::operator!= (memory_resource)", "std::operator== (memory_resource)"]

@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;complex&gt; operators"
-title: "&lt;complex&gt; operators"
+description: "Learn more about: <complex> operators"
+title: "<complex> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator&gt;&gt;", "xcomplex/std::operator&lt;&lt;", "xcomplex/std::operator*", "xcomplex/std::operator+", "xcomplex/std::operator-", "xcomplex/std::operator/", "xcomplex/std::operator=="]
+f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator>>", "xcomplex/std::operator<<", "xcomplex/std::operator*", "xcomplex/std::operator+", "xcomplex/std::operator-", "xcomplex/std::operator/", "xcomplex/std::operator=="]
 ms.assetid: aa282604-dcb9-46a2-bf1d-34c50aa6c4ba
-helpviewer_keywords: ["std::operator!= (complex)", "std::operator&gt;&gt; (complex)", "std::operator&lt;&lt; (complex), std::operator== (complex)"]
+helpviewer_keywords: ["std::operator!= (complex)", "std::operator>> (complex)", "std::operator<< (complex), std::operator== (complex)"]
 ---
 # &lt;complex&gt; operators
 

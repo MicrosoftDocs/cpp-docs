@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: complex&lt;float&gt;"
-title: "complex&lt;float&gt;"
+description: "Learn more about: complex<float>"
+title: "complex<float>"
 ms.date: "11/04/2016"
 f1_keywords: ["complex/std::complex<float>"]
 helpviewer_keywords: ["complex<float> function"]

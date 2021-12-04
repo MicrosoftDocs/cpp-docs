@@ -1,8 +1,8 @@
 ---
-description: "Learn more about: &lt;ostream&gt; operators"
-title: "&lt;ostream&gt; operators"
+description: "Learn more about: <ostream> operators"
+title: "<ostream> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["ostream/std::operator&lt;&lt;"]
+f1_keywords: ["ostream/std::operator<<"]
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
 ---
 # &lt;ostream&gt; operators

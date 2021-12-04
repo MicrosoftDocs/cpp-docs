@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;forward_list&gt; operators"
-title: "&lt;forward_list&gt; operators"
+description: "Learn more about: <forward_list> operators"
+title: "<forward_list> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "forward_list/std::operatoroperator&gt;", "forward_list/std::operatoroperator&gt=;", "forward_list/std::operatoroperator&lt;", "forward_list/std::operatoroperator&lt;="]
+f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "forward_list/std::operatoroperator>", "forward_list/std::operatoroperator&gt=;", "forward_list/std::operatoroperator&lt;", "forward_list/std::operatoroperator&lt;="]
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
-helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forward_list)", "std::operatoroperator&gt; (forward_list)", "std::operatoroperator&gt=; (forward_list)", "std::operatoroperator&lt; (forward_list)", "std::operatoroperator&lt;= (forward_list)"]
+helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forward_list)", "std::operatoroperator> (forward_list)", "std::operatoroperator&gt=; (forward_list)", "std::operatoroperator&lt; (forward_list)", "std::operatoroperator&lt;= (forward_list)"]
 ---
 # &lt;forward_list&gt; operators
 

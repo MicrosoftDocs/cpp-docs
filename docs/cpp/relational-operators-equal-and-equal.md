@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Relational Operators: &lt;, &gt;, &lt;=, and &gt;="
-title: "Relational Operators: &lt;, &gt;, &lt;=, and &gt;="
+description: "Learn more about: Relational Operators: <, >, <=, and >="
+title: "Relational Operators: <, >, <=, and >="
 ms.date: "11/04/2016"
 f1_keywords: ["<", ">"]
 helpviewer_keywords: ["> operator", "less than operator", "relational operators [C++], syntax", ">= operator", "greater than or equal to operators [C++]", "greater than operators [C++]", "< operator", "less than or equal to operator", "<= operator"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cwchar&gt;"
-title: "&lt;cwchar&gt;"
+description: "Learn more about: <cwchar>"
+title: "<cwchar>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cwchar>"]
 helpviewer_keywords: ["cwchar header"]

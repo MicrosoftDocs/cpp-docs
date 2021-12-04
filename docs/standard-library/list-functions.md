@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;list&gt; functions"
-title: "&lt;list&gt; functions | Microsoft Docs"
+description: "Learn more about: <list> functions"
+title: "<list> functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.topic: "reference"

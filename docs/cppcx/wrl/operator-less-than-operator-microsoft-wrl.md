@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: operator&lt; Operator (Microsoft::WRL)"
-title: "operator&lt; Operator (Microsoft::WRL)"
+description: "Learn more about: operator< Operator (Microsoft::WRL)"
+title: "operator< Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator<"]

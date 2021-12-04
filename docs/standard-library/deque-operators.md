@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;deque&gt; operators"
-title: "&lt;deque&gt; operators"
+description: "Learn more about: <deque> operators"
+title: "<deque> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["deque/std::operator!=", "deque/std::operator&gt;", "deque/std::operator&gt;=", "deque/std::operator&lt;", "deque/std::operator&lt;=", "deque/std::operator=="]
+f1_keywords: ["deque/std::operator!=", "deque/std::operator>", "deque/std::operator>=", "deque/std::operator<", "deque/std::operator<=", "deque/std::operator=="]
 ms.assetid: 482d7c92-54c7-493b-99e6-2a73617481a5
-helpviewer_keywords: ["std::operator!= (deque)", "std::operator&gt; (deque)", "std::operator&gt;= (deque)", "std::operator&lt; (deque)", "std::operator&lt;= (deque)", "std::operator== (deque)"]
+helpviewer_keywords: ["std::operator!= (deque)", "std::operator> (deque)", "std::operator>= (deque)", "std::operator< (deque)", "std::operator<= (deque)", "std::operator== (deque)"]
 ---
 # &lt;deque&gt; operators
 

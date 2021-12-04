@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;filesystem&gt; enumerations"
-title: "&lt;filesystem&gt; enumerations"
+description: "Learn more about: <filesystem> enumerations"
+title: "<filesystem> enumerations"
 ms.date: "11/04/2016"
 f1_keywords: ["filesystem/std::filesystem::copy_options", "filesystem/std::experimental::filesystem::copy_options", "filesystem/std::filesystem::directory_options", "filesystem/std::experimental::filesystem::directory_options", "filesystem/std::filesystem::file_type", "filesystem/std::experimental::filesystem::file_type", "filesystem/std::filesystem::perms", "filesystem/std::experimental::filesystem::perms"]
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;functional&gt; operators"
-title: "&lt;functional&gt; operators"
+description: "Learn more about: <functional> operators"
+title: "<functional> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::operator!=", "functional/std::operator=="]
 helpviewer_keywords: ["functional operators"]

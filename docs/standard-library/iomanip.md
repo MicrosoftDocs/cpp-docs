@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;iomanip&gt;"
-title: "&lt;iomanip&gt;"
+description: "Learn more about: <iomanip>"
+title: "<iomanip>"
 ms.date: "11/04/2016"
 f1_keywords: ["<iomanip>"]
 helpviewer_keywords: ["iomanip header"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;string&gt;"
-title: "&lt;string&gt;"
+description: "Learn more about: <string>"
+title: "<string>"
 ms.date: "11/04/2016"
 f1_keywords: ["<string>"]
 helpviewer_keywords: ["string header"]

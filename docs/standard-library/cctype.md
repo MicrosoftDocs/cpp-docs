@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cctype&gt;"
-title: "&lt;cctype&gt;"
+description: "Learn more about: <cctype>"
+title: "<cctype>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cctype>"]
 helpviewer_keywords: ["cctype header"]

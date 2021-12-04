@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;array&gt;"
-title: "&lt;array&gt;"
+description: "Learn more about: <array>"
+title: "<array>"
 ms.date: "11/04/2016"
 f1_keywords: ["<array>"]
 helpviewer_keywords: ["array header"]

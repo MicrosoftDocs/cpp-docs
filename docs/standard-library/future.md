@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;future&gt;"
-title: "&lt;future&gt;"
+description: "Learn more about: <future>"
+title: "<future>"
 ms.date: "11/04/2016"
 f1_keywords: ["<future>"]
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2

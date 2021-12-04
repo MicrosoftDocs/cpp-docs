@@ -1,5 +1,5 @@
 ---
-title: "&lt;bit&gt; functions"
+title: "<bit> functions"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits"
 ms.date: "08/28/2020"
 f1_keywords: ["bit/std::bit_cast", "bit/std::has_single_bit", "bit/std::bit_ceil", "bit/std::bit_floor", "bit/std::bit_width", "bit/std::rotl", "bit/std::rotr", "bit/std::countl_zero", "bit/std::countl_one","bit/std::countr_zero","bit/std::countr_one","bit/std::popcount"]

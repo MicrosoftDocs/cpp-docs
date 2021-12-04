@@ -1,5 +1,5 @@
 ---
-title: "&lt;unordered_map&gt;"
+title: "<unordered_map>"
 description: "API overview for the C++ Standard Library container class `map`."
 ms.date: "11/04/2016"
 f1_keywords: ["<unordered_map>"]

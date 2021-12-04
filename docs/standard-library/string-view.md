@@ -1,5 +1,5 @@
 ---
-title: "&lt;string_view&gt;"
+title: "<string_view>"
 description: "Overview of `basic_string_view` which refers to a constant contiguous sequence of char-like objects."
 ms.date: "9/4/2020"
 helpviewer_keywords: ["string_view header"]

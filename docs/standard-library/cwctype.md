@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cwctype&gt;"
-title: "&lt;cwctype&gt;"
+description: "Learn more about: <cwctype>"
+title: "<cwctype>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cwctype>"]
 helpviewer_keywords: ["cwctype header"]

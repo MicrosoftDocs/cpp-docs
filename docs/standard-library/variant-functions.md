@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;variant&gt; functions"
-title: "&lt;variant&gt; functions"
+description: "Learn more about: <variant> functions"
+title: "<variant> functions"
 ms.date: "04/04/2019"
 f1_keywords: ["variant/std::get", "variant/std::get_if", "variant/std::holds_alternative", "variant/std::visit"]
 ---

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: complex&lt;long double&gt;"
-title: "complex&lt;long double&gt;"
+description: "Learn more about: complex<long double>"
+title: "complex<long double>"
 ms.date: "11/04/2016"
 f1_keywords: ["std::complex<long double>", "complex<long double>", "std.complex<long double>"]
 helpviewer_keywords: ["complex<long double> function"]

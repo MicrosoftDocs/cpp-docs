@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;queue&gt; operators"
-title: "&lt;queue&gt; operators"
+description: "Learn more about: <queue> operators"
+title: "<queue> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["queue/std::operator!=", "queue/std::operator&gt;", "queue/std::operator&gt;=", "queue/std::operator&lt;", "queue/std::operator&lt;=", "queue/std::operator=="]
+f1_keywords: ["queue/std::operator!=", "queue/std::operator>", "queue/std::operator>=", "queue/std::operator<", "queue/std::operator<=", "queue/std::operator=="]
 ms.assetid: 7c435b48-175c-45b0-88eb-24561044019c
-helpviewer_keywords: ["std::operator!= (queue)", "std::operator&gt; (queue)", "std::operator&gt;= (queue)", "std::operator&lt; (queue)", "std::operator&lt;= (queue)", "std::operator== (queue)"]
+helpviewer_keywords: ["std::operator!= (queue)", "std::operator> (queue)", "std::operator>= (queue)", "std::operator< (queue)", "std::operator<= (queue)", "std::operator== (queue)"]
 ---
 # &lt;queue&gt; operators
 

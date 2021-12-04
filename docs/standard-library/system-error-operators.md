@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;system_error&gt; operators"
-title: "&lt;system_error&gt; operators"
+description: "Learn more about: <system_error> operators"
+title: "<system_error> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c

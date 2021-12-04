@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cuchar&gt; functions"
-title: "&lt;cuchar&gt; functions"
+description: "Learn more about: <cuchar> functions"
+title: "<cuchar> functions"
 ms.date: "04/04/2019"
 f1_keywords: ["cuchar/std::c16rtomb", "cuchar/std::c32rtomb", "cuchar/std::mbrtoc16", "cuchar/std::mbrtoc32"]
 helpviewer_keywords: ["std::c16rtomb [C++]", "std::c32rtomb [C++]", "mbrtoc16 [C++]", "mbrtoc32 [C++]"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;complex&gt;"
-title: "&lt;complex&gt;"
+description: "Learn more about: <complex>"
+title: "<complex>"
 ms.date: "01/15/2021"
 f1_keywords: ["<complex>", 'complex/std::literals::complex_literals', 'std::literals::complex_literals', 'complex_literals', 'complex/std::literals::complex_literals::operator "i', 'std::literals::complex_literals::operator i', 'complex/std::literals::complex_literals::operator "if', 'std::literals::complex_literals::operator if', 'complex/std::literals::complex_literals::operator "i', 'std::literals::complex_literals::operator i']
 helpviewer_keywords: ["complex header"]

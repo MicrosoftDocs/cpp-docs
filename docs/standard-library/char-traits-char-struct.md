@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: char_traits&lt;char&gt; Struct"
-title: "char_traits&lt;char&gt; Struct"
+description: "Learn more about: char_traits<char> Struct"
+title: "char_traits<char> Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::char_traits<char>", "char_traits<char >"]
 helpviewer_keywords: ["char_traits<char> class"]

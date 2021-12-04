@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: vector&lt;bool&gt;::reference Class"
-title: "vector&lt;bool&gt;::reference Class"
+description: "Learn more about: vector<bool>::reference Class"
+title: "vector<bool>::reference Class"
 ms.date: "11/04/2016"
 f1_keywords: ["vector/vector<bool>::reference"]
 helpviewer_keywords: ["vector<bool> reference class"]
