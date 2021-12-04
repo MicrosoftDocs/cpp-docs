@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;scoped_allocator&gt;"
-title: "&lt;scoped_allocator&gt;"
+description: "Learn more about: <scoped_allocator>"
+title: "<scoped_allocator>"
 ms.date: "11/04/2016"
 f1_keywords: ["<scoped_allocator>"]
 helpviewer_keywords: ["scoped_allocator Header"]

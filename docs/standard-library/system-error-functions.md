@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;system_error&gt; functions"
-title: "&lt;system_error&gt; functions"
+description: "Learn more about: <system_error> functions"
+title: "<system_error> functions"
 ms.date: "03/15/2019"
 f1_keywords: ["system_error/std::generic_category", "system_error/std::make_error_code", "system_error/std::make_error_condition", "system_error/std::system_category"]
 ms.assetid: 57d6f15f-f0b7-4e2f-80fe-31d3c320ee33

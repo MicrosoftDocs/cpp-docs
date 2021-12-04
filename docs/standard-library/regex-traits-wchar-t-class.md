@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: regex_traits&lt;wchar_t&gt; Class"
-title: "regex_traits&lt;wchar_t&gt; Class"
+description: "Learn more about: regex_traits<wchar_t> Class"
+title: "regex_traits<wchar_t> Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_traits<wchar_t>"]
 helpviewer_keywords: ["regex_traits<wchar_t> class"]

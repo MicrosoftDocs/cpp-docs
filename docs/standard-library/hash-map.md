@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;hash_map&gt;"
-title: "&lt;hash_map&gt;"
+description: "Learn more about: <hash_map>"
+title: "<hash_map>"
 ms.date: "01/18/2018"
 f1_keywords: ["<hash_map>"]
 helpviewer_keywords: ["hash_map header"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;strstream&gt;"
-title: "&lt;strstream&gt;"
+description: "Learn more about: <strstream>"
+title: "<strstream>"
 ms.date: "11/04/2016"
 f1_keywords: ["<strstream>"]
 helpviewer_keywords: ["strstream header"]

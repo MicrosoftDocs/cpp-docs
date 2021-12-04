@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;ostream&gt; functions"
-title: "&lt;ostream&gt; functions"
+description: "Learn more about: <ostream> functions"
+title: "<ostream> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["ostream/std::swap", "ostream/std::endl", "ostream/std::ends", "ostream/std::flush"]
 ms.assetid: d6e56cc0-c8df-4dbe-be10-98e14c35ed3a

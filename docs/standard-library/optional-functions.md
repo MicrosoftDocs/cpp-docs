@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;optional&gt; functions"
-title: "&lt;optional&gt; functions"
+description: "Learn more about: <optional> functions"
+title: "<optional> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["optional/std::swap"]
 ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756

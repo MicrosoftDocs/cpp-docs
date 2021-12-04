@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;set&gt; operators"
-title: "&lt;set&gt; operators"
+description: "Learn more about: <set> operators"
+title: "<set> operators"
 ms.date: "03/27/2019"
-f1_keywords: ["set/std::operator!=", "set/std::operator&gt;", "set/std::operator&gt;=", "set/std::operator&lt;", "set/std::operator&lt;=", "set/std::operator=="]
+f1_keywords: ["set/std::operator!=", "set/std::operator>", "set/std::operator>=", "set/std::operator<", "set/std::operator<=", "set/std::operator=="]
 ms.assetid: b4256ebc-c449-4688-95db-fced42d20d4d
-helpviewer_keywords: ["std::operator!= (set)", "std::operator&gt; (set)", "std::operator&gt;= (set)", "std::operator&lt; (set)", "std::operator&lt;= (set)", "std::operator== (set)"]
+helpviewer_keywords: ["std::operator!= (set)", "std::operator> (set)", "std::operator>= (set)", "std::operator< (set)", "std::operator<= (set)", "std::operator== (set)"]
 ---
 # &lt;set&gt; operators
 

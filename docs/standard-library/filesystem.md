@@ -1,5 +1,5 @@
 ---
-title: "&lt;filesystem&gt;"
+title: "<filesystem>"
 description: "Describes the classes, functions, and types in the filesystem header of the Standard C++ library."
 ms.date: "09/02/2021"
 f1_keywords: ["<filesystem>", "filesystem/std::filesystem", "std::filesystem", "std::experimental::filesystem"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
-title: "Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
+description: "Learn more about: Left Shift and Right Shift Operators (>> and <<)"
+title: "Left Shift and Right Shift Operators (>> and <<)"
 ms.date: "08/13/2018"
 f1_keywords: ["<<", ">>"]
 helpviewer_keywords: ["<< operator [C++], with specific objects", "left shift operators [C++]", "right shift operators [C++]", "bitwise-shift operators [C++]", ">> operator", "shift operators [C++]", "operators [C++], shift"]

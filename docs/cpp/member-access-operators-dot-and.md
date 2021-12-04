@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Member Access Operators: . and -&gt;"
-title: "Member Access Operators: . and -&gt;"
+description: "Learn more about: Member Access Operators: . and ->"
+title: "Member Access Operators: . and ->"
 ms.date: "11/04/2016"
 f1_keywords: [".", "->"]
 helpviewer_keywords: ["member access, expressions", "operators [C++], member access", "dot operator (.)", "-> operator", "member access, operators", "postfix operators [C++]", ". operator", "member access"]

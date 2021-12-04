@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;typeindex&gt;"
-title: "&lt;typeindex&gt;"
+description: "Learn more about: <typeindex>"
+title: "<typeindex>"
 ms.date: "11/04/2016"
 f1_keywords: ["<typeindex>"]
 ms.assetid: a9551137-f74b-4f02-af64-ff00214cea1f

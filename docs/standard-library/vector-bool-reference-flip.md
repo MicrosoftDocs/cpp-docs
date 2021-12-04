@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: vector&lt;bool&gt;::reference::flip"
-title: "vector&lt;bool&gt;::reference::flip"
+description: "Learn more about: vector<bool>::reference::flip"
+title: "vector<bool>::reference::flip"
 ms.date: "11/04/2016"
 f1_keywords: ["vector/std::vector<bool>::reference::flip"]
 helpviewer_keywords: ["reference::flip method"]

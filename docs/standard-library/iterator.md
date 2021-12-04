@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;iterator&gt;"
-title: "&lt;iterator&gt;"
+description: "Learn more about: <iterator>"
+title: "<iterator>"
 ms.date: "11/04/2016"
 f1_keywords: ["<iterator>"]
 helpviewer_keywords: ["iterator header"]

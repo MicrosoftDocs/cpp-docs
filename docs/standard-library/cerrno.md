@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cerrno&gt;"
-title: "&lt;cerrno&gt;"
+description: "Learn more about: <cerrno>"
+title: "<cerrno>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cerrno>"]
 helpviewer_keywords: ["cerrno header"]

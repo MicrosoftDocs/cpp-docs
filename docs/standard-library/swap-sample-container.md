@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: swap (&lt;sample container&gt;)"
-title: "swap (&lt;sample container&gt;)"
+description: "Learn more about: swap (<sample container>)"
+title: "swap (<sample container>)"
 ms.date: "11/04/2016"
 f1_keywords: ["std.swap", "std::swap", "swap"]
 helpviewer_keywords: ["swap function"]

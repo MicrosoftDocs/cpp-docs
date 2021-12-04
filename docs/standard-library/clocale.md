@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;clocale&gt;"
-title: "&lt;clocale&gt;"
+description: "Learn more about: <clocale>"
+title: "<clocale>"
 ms.date: "11/04/2016"
 f1_keywords: ["<clocale>"]
 helpviewer_keywords: ["clocale header"]

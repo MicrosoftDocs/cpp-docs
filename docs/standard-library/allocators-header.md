@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;allocators&gt;"
-title: "&lt;allocators&gt;"
+description: "Learn more about: <allocators>"
+title: "<allocators>"
 ms.date: "11/04/2016"
 f1_keywords: ["<allocators>"]
 helpviewer_keywords: ["allocators header"]

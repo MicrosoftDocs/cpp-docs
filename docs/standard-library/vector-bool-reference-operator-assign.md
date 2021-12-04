@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: vector&lt;bool&gt;::reference::operator="
-title: "vector&lt;bool&gt;::reference::operator="
+description: "Learn more about: vector<bool>::reference::operator="
+title: "vector<bool>::reference::operator="
 ms.date: "11/04/2016"
 f1_keywords: ["=", "operator=", "vector<bool>::reference::operator=", "std::vector<bool>::reference::operator="]
 helpviewer_keywords: ["= operator, with specific C++ Standard Library objects", "reference::operator="]

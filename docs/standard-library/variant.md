@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;variant&gt;"
-title: "&lt;variant&gt;"
+description: "Learn more about: <variant>"
+title: "<variant>"
 ms.date: "04/04/2019"
 f1_keywords: ["<variant>"]
 helpviewer_keywords: ["<variant>"]

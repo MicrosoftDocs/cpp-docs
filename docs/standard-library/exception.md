@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;exception&gt;"
-title: "&lt;exception&gt;"
+description: "Learn more about: <exception>"
+title: "<exception>"
 ms.date: "11/04/2016"
 f1_keywords: ["<exception>"]
 helpviewer_keywords: ["exception header"]

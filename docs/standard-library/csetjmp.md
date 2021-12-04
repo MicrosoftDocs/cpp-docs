@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;csetjmp&gt;"
-title: "&lt;csetjmp&gt;"
+description: "Learn more about: <csetjmp>"
+title: "<csetjmp>"
 ms.date: "11/04/2016"
 f1_keywords: ["<csetjmp>"]
 helpviewer_keywords: ["csetjmp header"]

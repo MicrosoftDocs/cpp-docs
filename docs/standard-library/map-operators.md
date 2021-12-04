@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;map&gt; operators"
-title: "&lt;map&gt; operators"
+description: "Learn more about: <map> operators"
+title: "<map> operators"
 ms.date: "03/27/2019"
-f1_keywords: ["map/std::operator!=", "map/std::operator&gt;", "map/std::operator&gt;=", "map/std::operator&lt;", "map/std::operator&lt;=", "map/std::operator=="]
+f1_keywords: ["map/std::operator!=", "map/std::operator>", "map/std::operator>=", "map/std::operator<", "map/std::operator<=", "map/std::operator=="]
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
-helpviewer_keywords: ["std::operator!= (map)", "std::operator&gt; (map)", "std::operator&gt;= (map)", "std::operator&lt; (map)", "std::operator&lt;= (map)", "std::operator== (map)"]
+helpviewer_keywords: ["std::operator!= (map)", "std::operator> (map)", "std::operator>= (map)", "std::operator< (map)", "std::operator<= (map)", "std::operator== (map)"]
 ---
 # &lt;map&gt; operators
 

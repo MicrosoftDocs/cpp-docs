@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;vector&gt; functions"
-title: "&lt;vector&gt; functions"
+description: "Learn more about: <vector> functions"
+title: "<vector> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["vector/std::swap"]
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;limits&gt;"
-title: "&lt;limits&gt;"
+description: "Learn more about: <limits>"
+title: "<limits>"
 ms.date: "11/04/2016"
 f1_keywords: ["<limits>"]
 helpviewer_keywords: ["limits header"]

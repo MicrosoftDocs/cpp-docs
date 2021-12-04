@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cvt/wstring&gt;"
-title: "&lt;cvt-wstring&gt;"
+description: "Learn more about: <cvt/wstring>"
+title: "<cvt-wstring>"
 ms.date: "11/04/2016"
 f1_keywords: ["stdext.cvt.<cvt/wstring>", "<cvt/wstring>", "stdext::cvt::<cvt/wstring>"]
 helpviewer_keywords: ["cvt/wstring header"]

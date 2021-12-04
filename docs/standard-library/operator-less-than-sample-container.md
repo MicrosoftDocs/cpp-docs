@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: operator&lt; (&lt;sample container&gt;)"
-title: "operator&lt; (&lt;sample container&gt;)"
+description: "Learn more about: operator< (<sample container>)"
+title: "operator< (<sample container>)"
 ms.date: "11/04/2016"
 f1_keywords: ["std::operator<", "operator<", "std.<", "<", "std.operator<", "std::<"]
 helpviewer_keywords: ["< operator, comparing specific objects", "operator<, valarrays", "< operator", "operator <, valarrays"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;typeinfo&gt;"
-title: "&lt;typeinfo&gt;"
+description: "Learn more about: <typeinfo>"
+title: "<typeinfo>"
 ms.date: "11/04/2016"
 f1_keywords: ["typeinfo"]
 helpviewer_keywords: ["typeinfo header"]

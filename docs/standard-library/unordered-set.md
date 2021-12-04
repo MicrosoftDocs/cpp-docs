@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;unordered_set&gt;"
-title: "&lt;unordered_set&gt;"
+description: "Learn more about: <unordered_set>"
+title: "<unordered_set>"
 ms.date: "11/04/2016"
 f1_keywords: ["<unordered_set>"]
 helpviewer_keywords: ["unordered_set header"]

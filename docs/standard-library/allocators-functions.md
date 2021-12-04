@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;allocators&gt; macros"
-title: "&lt;allocators&gt; macros"
+description: "Learn more about: <allocators> macros"
+title: "<allocators> macros"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/std::ALLOCATOR_DECL", "allocators/std::CACHE_CHUNKLIST", "allocators/std::CACHE_FREELIST", "allocators/std::CACHE_SUBALLOC", "allocators/std::SYNC_DEFAULT"]
 ms.assetid: 9cb5ee07-1ff9-4594-ae32-3c8c6efb511a

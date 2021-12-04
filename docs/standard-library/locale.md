@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;locale&gt;"
-title: "&lt;locale&gt;"
+description: "Learn more about: <locale>"
+title: "<locale>"
 ms.date: "11/04/2016"
 f1_keywords: ["<locale>"]
 helpviewer_keywords: ["locale header"]

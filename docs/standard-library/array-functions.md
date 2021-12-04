@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;array&gt; functions"
-title: "&lt;array&gt; functions"
+description: "Learn more about: <array> functions"
+title: "<array> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8

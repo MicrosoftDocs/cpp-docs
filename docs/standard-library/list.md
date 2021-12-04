@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;list&gt;"
-title: "&lt;list&gt;"
+description: "Learn more about: <list>"
+title: "<list>"
 ms.date: "11/04/2016"
 f1_keywords: ["<list>"]
 helpviewer_keywords: ["list header"]

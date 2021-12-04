@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: regex_traits&lt;char&gt; Class"
-title: "regex_traits&lt;char&gt; Class"
+description: "Learn more about: regex_traits<char> Class"
+title: "regex_traits<char> Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_traits<char>"]
 helpviewer_keywords: ["regex_traits<char> class"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;tuple&gt; operators"
-title: "&lt;tuple&gt; operators"
+description: "Learn more about: <tuple> operators"
+title: "<tuple> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["tuple/std::operator!=", "tuple/std::operator>", "tuple/std::operator>=", "tuple/std::operator<", "tuple/std::operator<=", "tuple/std::operator=="]
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
