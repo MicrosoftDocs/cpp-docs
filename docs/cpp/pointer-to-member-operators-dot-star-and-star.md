@@ -1,23 +1,23 @@
 ---
-description: "Learn more about: Pointer-to-Member Operators: .* and ->*"
-title: "Pointer-to-Member Operators: .* and ->*"
-ms.date: "11/04/2016"
+description: "Learn more about: Pointer-to-member operators: '.*' and '->*'"
+title: "Pointer-to-member operators: '.*' and '->*'"
+ms.date: 12/04/2021
 f1_keywords: [".*", "->*"]
 helpviewer_keywords: ["expressions [C++], pointer", "pointer-to-member operators [C++]", ".* operator", "expressions [C++], operators", "->* operator"]
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
 ---
-# Pointer-to-Member Operators: .* and -&gt;*
+# Pointer-to-member operators: `.*` and `->*`
 
 ## Syntax
 
-```
-expression .* expression
-expression ->* expression
-```
+*`pm-expression`*:\
+&emsp; *`cast-expression`*\
+&emsp; *`pm-expression`* **`.*`** *`cast-expression`*\
+&emsp; *`pm-expression`* **`->*`** *`cast-expression`*
 
 ## Remarks
 
-The pointer-to-member operators, .* and ->\*, return the value of a specific class member for the object specified on the left side of the expression.  The right side must specify a member of the class.  The following example shows how to use these operators:
+The pointer-to-member operators **`.*`** and **`->*`** return the value of a specific class member for the object specified on the left side of the expression.  The right side must specify a member of the class.  The following example shows how to use these operators:
 
 ```cpp
 // expre_Expressions_with_Pointer_Member_Operators.cpp
@@ -68,13 +68,13 @@ m_func1
 
 In the preceding example, a pointer to a member, `pmfn`, is used to invoke the member function `m_func1`. Another pointer to a member, `pmd`, is used to access the `m_num` member.
 
-The binary operator .* combines its first operand, which must be an object of class type, with its second operand, which must be a pointer-to-member type.
+The binary operator **`.*`** combines its first operand, which must be an object of class type, with its second operand, which must be a pointer-to-member type.
 
-The binary operator ->* combines its first operand, which must be a pointer to an object of class type, with its second operand, which must be a pointer-to-member type.
+The binary operator **`->*`** combines its first operand, which must be a pointer to an object of class type, with its second operand, which must be a pointer-to-member type.
 
-In an expression containing the .* operator, the first operand must be of the class type of, and be accessible to, the pointer to member specified in the second operand or of an accessible type unambiguously derived from and accessible to that class.
+In an expression containing the **`.*`** operator, the first operand must be of the class type of, and be accessible to, the pointer to member specified in the second operand or of an accessible type unambiguously derived from and accessible to that class.
 
-In an expression containing the ->* operator, the first operand must be of the type "pointer to the class type" of the type specified in the second operand, or it must be of a type unambiguously derived from that class.
+In an expression containing the **`->*`** operator, the first operand must be of the type "pointer to the class type" of the type specified in the second operand, or it must be of a type unambiguously derived from that class.
 
 ## Example
 
@@ -116,11 +116,11 @@ int main() {
 }
 ```
 
-The result of the .* or ->\* pointer-to-member operators is an object or function of the type specified in the declaration of the pointer to member. So, in the preceding example, the result of the expression `ADerived.*pmfnFunc1()` is a pointer to a function that returns void. This result is an l-value if the second operand is an l-value.
+The result of the **`.*`** or **`->*`** pointer-to-member operators is an object or function of the type specified in the declaration of the pointer to member. So, in the preceding example, the result of the expression `ADerived.*pmfnFunc1()` is a pointer to a function that returns void. This result is an l-value if the second operand is an l-value.
 
 > [!NOTE]
 > If the result of one of the pointer-to-member operators is a function, then the result can be used only as an operand to the function call operator.
 
 ## See also
 
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
