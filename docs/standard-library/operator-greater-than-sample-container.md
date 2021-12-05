@@ -6,7 +6,7 @@ f1_keywords: ["std::operator>", "operator>", "std::>", ">"]
 helpviewer_keywords: ["> operator, comparing specific objects", "operator >"]
 ms.assetid: 49bd417a-3305-4ffa-9884-39d3904ed87d
 ---
-# operator&gt; (&lt;sample container&gt;)
+# `operator>` (`<sample container>`)
 
 > [!NOTE]
 > This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).

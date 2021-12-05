@@ -6,7 +6,7 @@ f1_keywords: ["=", "operator=", "vector<bool>::reference::operator=", "std::vect
 helpviewer_keywords: ["= operator, with specific C++ Standard Library objects", "reference::operator="]
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
 ---
-# vector&lt;bool&gt;::reference::operator=
+# `vector<bool>::reference::operator=`
 
 Assigns a Boolean value to a bit, or the value held by a referenced element to a bit.
 

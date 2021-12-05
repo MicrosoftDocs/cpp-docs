@@ -6,7 +6,7 @@ f1_keywords: ["<<", ">>"]
 helpviewer_keywords: ["<< operator [C++], with specific objects", "left shift operators [C++]", "right shift operators [C++]", "bitwise-shift operators [C++]", ">> operator", "shift operators [C++]", "operators [C++], shift"]
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
 ---
-# Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)
+# Left Shift and Right Shift Operators (`<<` and `>>`)
 
 The bitwise shift operators are the right-shift operator (**&gt;&gt;**), which moves the bits of *shift-expression* to the right, and the left-shift operator (**&lt;&lt;**), which moves the bits of *shift-expression* to the left. <sup>1</sup>
 

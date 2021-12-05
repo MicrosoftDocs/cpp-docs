@@ -6,7 +6,7 @@ f1_keywords: ["iosfwd/std::char_traits<char_32t>", "char_traits<char32_t>"]
 helpviewer_keywords: ["char_traits<char32_t> class"]
 ms.assetid: c0315466-45d0-4a99-b83e-3b1dbfbfbbc3
 ---
-# char_traits&lt;char32_t&gt; Struct
+# `char_traits<char32_t>` Struct
 
 A struct that is a specialization of the template struct **char_traits\<CharType>** to an element of type **`char32_t`**.
 

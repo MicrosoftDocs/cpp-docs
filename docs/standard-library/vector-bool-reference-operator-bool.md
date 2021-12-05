@@ -6,7 +6,7 @@ f1_keywords: ["operatorbool", "vector<bool>::reference::operatorbool", "bool", "
 helpviewer_keywords: ["BOOL operator", "reference::operator bool"]
 ms.assetid: b0e57869-18cc-4296-9061-da502f30120d
 ---
-# vector&lt;bool&gt;::reference::operator bool
+# `vector<bool>::reference::operator bool`
 
 Provides an implicit conversion from `vector<bool>::reference` to **`bool`**.
 

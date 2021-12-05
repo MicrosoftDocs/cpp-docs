@@ -6,7 +6,7 @@ f1_keywords: [".*", "->*"]
 helpviewer_keywords: ["expressions [C++], pointer", "pointer-to-member operators [C++]", ".* operator", "expressions [C++], operators", "->* operator"]
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
 ---
-# Pointer-to-Member Operators: .* and -&gt;*
+# Pointer-to-Member Operators: `.*` and `->*`
 
 ## Syntax
 

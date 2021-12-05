@@ -6,7 +6,7 @@ f1_keywords: ["complex/std::complex<double>"]
 helpviewer_keywords: ["complex<double> function"]
 ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47
 ---
-# complex&lt;double&gt;
+# `complex<double>`
 
 Describes an object that stores an ordered pair of objects both of type **`double`**, the first representing the real part of a complex number and the second representing the imaginary part.
 

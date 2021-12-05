@@ -6,7 +6,7 @@ f1_keywords: ["VC.Project.VCCLCompilerTool.PrecompiledHeaderFile", "VC.Project.V
 helpviewer_keywords: ["Fp compiler option [C++]", "-Fp compiler option [C++]", "naming precompiler header files", "PCH files, naming", "names [C++], PCH", ".pch files, naming", "precompiled header files, naming", "/Fp compiler option [C++]"]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
 ---
-# /Fp (Name &period;pch file)
+# /Fp (Name .pch file)
 
 Provides a path name for a precompiled header instead of using the default path name.
 

@@ -6,7 +6,7 @@ f1_keywords: [".", "->"]
 helpviewer_keywords: ["member access, expressions", "operators [C++], member access", "dot operator (.)", "-> operator", "member access, operators", "postfix operators [C++]", ". operator", "member access"]
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
 ---
-# Member Access Operators: . and -&gt;
+# Member Access Operators: `.` and `->`
 
 ## Syntax
 

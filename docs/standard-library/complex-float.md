@@ -6,7 +6,7 @@ f1_keywords: ["complex/std::complex<float>"]
 helpviewer_keywords: ["complex<float> function"]
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
 ---
-# complex&lt;float&gt;
+# `complex<float>`
 
 Describes an object that stores an ordered pair of objects both of type **`float`**, the first representing the real part of a complex number and the second representing the imaginary part.
 

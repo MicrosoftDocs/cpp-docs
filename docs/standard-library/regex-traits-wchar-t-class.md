@@ -6,7 +6,7 @@ f1_keywords: ["regex/std::regex_traits<wchar_t>"]
 helpviewer_keywords: ["regex_traits<wchar_t> class"]
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
 ---
-# regex_traits&lt;wchar_t&gt; Class
+# `regex_traits<wchar_t>` Class
 
 Specialization of `regex_traits` for **`wchar_t`**.
 

@@ -6,7 +6,7 @@ f1_keywords: ["valarray<bool>", "valarray/std::valarray<bool>"]
 helpviewer_keywords: ["valarray<bool> class"]
 ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
 ---
-# valarray&lt;bool&gt; Class
+# `valarray<bool>` Class
 
 A specialized version of the class template **valarray\<Type>** to elements of type **`bool`**.
 

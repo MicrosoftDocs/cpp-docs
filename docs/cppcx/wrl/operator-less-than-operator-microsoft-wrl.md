@@ -6,7 +6,7 @@ ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator<"]
 ms.assetid: bfae0e1c-1648-482b-99c2-3217d62aba46
 ---
-# operator&lt; Operator (Microsoft::WRL)
+# `operator<` Operator (Microsoft::WRL)
 
 Determines if the address of one object is less than another.
 
