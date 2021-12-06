@@ -1,5 +1,5 @@
 ---
-title: "&lt;bit&gt;"
+title: "<bit>"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits."
 ms.date: "08/28/2020"
 f1_keywords: ["<bit>"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cstdio&gt;"
-title: "&lt;cstdio&gt;"
+description: "Learn more about: <cstdio>"
+title: "<cstdio>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstdio>"]
 helpviewer_keywords: ["cstdio header"]

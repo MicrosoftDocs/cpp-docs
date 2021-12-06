@@ -1,5 +1,5 @@
 ---
-title: "&lt;cstddef&gt;"
+title: "<cstddef>"
 description: "Describes <stddef.h>, which ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace."
 ms.date: "9/4/2020"
 f1_keywords: ["<cstddef>"]

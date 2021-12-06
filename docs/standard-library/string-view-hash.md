@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: hash&lt;string_view&gt; Specialization"
-title: "hash&lt;string_view&gt; Specialization"
+description: "Learn more about: hash<string_view> Specialization"
+title: "hash<string_view> Specialization"
 ms.date: "04/19/2019"
 f1_keywords: ["xstring/basic_string_view::hash"]
 helpviewer_keywords: ["std::basic_string_view::hash"]
 ---
-# hash&lt;string_view&gt; Specialization
+# `hash<string_view>` Specialization
 
 A template specialization that produces a hash value given a string_view.
 

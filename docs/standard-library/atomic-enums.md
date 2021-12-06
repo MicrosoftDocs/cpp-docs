@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;atomic&gt; enums"
-title: "&lt;atomic&gt; enums"
+description: "Learn more about: <atomic> enums"
+title: "<atomic> enums"
 ms.date: "11/04/2016"
 f1_keywords: ["atomic/std::memory_order"]
 ms.assetid: cd3a81c5-a19e-448f-952a-c34c717f21a9

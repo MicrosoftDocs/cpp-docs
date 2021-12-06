@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;tuple&gt;"
-title: "&lt;tuple&gt;"
+description: "Learn more about: <tuple>"
+title: "<tuple>"
 ms.date: "11/04/2016"
 f1_keywords: ["<tuple>"]
 helpviewer_keywords: ["tuple header"]

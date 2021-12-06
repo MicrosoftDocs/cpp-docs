@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;sample container&gt; Operators"
-title: "&lt;sample container&gt; Operators"
+description: "Learn more about: <sample container> Operators"
+title: "<sample container> Operators"
 ms.date: "11/04/2016"
 ms.assetid: 6cd28cdc-8318-4941-a06c-2c32758383fd
 ---

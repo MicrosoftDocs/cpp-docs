@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;hash_set&gt;"
-title: "&lt;hash_set&gt;"
+description: "Learn more about: <hash_set>"
+title: "<hash_set>"
 ms.date: "11/04/2016"
 f1_keywords: ["<hash_set>"]
 helpviewer_keywords: ["hash_set header"]

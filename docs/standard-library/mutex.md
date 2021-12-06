@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;mutex&gt;"
-title: "&lt;mutex&gt;"
+description: "Learn more about: <mutex>"
+title: "<mutex>"
 ms.date: "11/04/2016"
 f1_keywords: ["<mutex>"]
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3

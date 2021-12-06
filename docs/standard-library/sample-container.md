@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;sample container&gt;"
-title: "&lt;sample container&gt;"
+description: "Learn more about: <sample container>"
+title: "<sample container>"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["headers, C++ sample container", "sample container", "container headers"]
 ms.assetid: 4ab3dcf9-49c3-4e49-b5d6-1ec573e2aee4

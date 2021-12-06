@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;thread&gt; operators"
-title: "&lt;thread&gt; operators"
+description: "Learn more about: <thread> operators"
+title: "<thread> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["thread/std::operator!=", "thread/std::operator&gt;", "thread/std::operator&gt;=", "thread/std::operator&lt;", "thread/std::operator&lt;&lt;", "thread/std::operator&lt;=", "thread/std::operator=="]
+f1_keywords: ["thread/std::operator!=", "thread/std::operator>", "thread/std::operator>=", "thread/std::operator<", "thread/std::operator<<", "thread/std::operator<=", "thread/std::operator=="]
 ms.assetid: e6bb6c0f-64f9-4cb2-9ff2-05b88a6ba7ac
-helpviewer_keywords: ["std::operator!= (thread)", "std::operator&gt; (thread)", "std::operator&gt;= (thread)", "std::operator&lt; (thread)", "std::operator&lt;&lt; (thread)", "std::operator&lt;= (thread)", "std::operator== (thread)"]
+helpviewer_keywords: ["std::operator!= (thread)", "std::operator> (thread)", "std::operator>= (thread)", "std::operator< (thread)", "std::operator<< (thread)", "std::operator<= (thread)", "std::operator== (thread)"]
 ---
 # &lt;thread&gt; operators
 

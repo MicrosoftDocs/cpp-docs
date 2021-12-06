@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;sample container&gt; Specialized Template Functions"
-title: "&lt;sample container&gt; Specialized Template Functions"
+description: "Learn more about: <sample container> Specialized Template Functions"
+title: "<sample container> Specialized Template Functions"
 ms.date: "11/04/2016"
 ms.assetid: 853d4b30-167a-471b-8325-86a868943568
 ---

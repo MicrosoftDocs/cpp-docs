@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;functional&gt; functions"
-title: "&lt;functional&gt; functions"
+description: "Learn more about: <functional> functions"
+title: "<functional> functions"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::bind", "functional/std::bind1st", "functional/std::bind2nd", "functional/std::bit_and", "functional/std::bit_not", "functional/std::bit_or", "functional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "functional/std::mem_fn", "functional/std::mem_fun_ref", "functional/std::not1", "functional/std::not2", "functional/std::not_fn", "functional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
 helpviewer_keywords: ["std::bind [C++]", "std::bind1st", "std::bind2nd", "std::bit_and [C++]", "std::bit_not [C++]", "std::bit_or [C++]", "std::bit_xor [C++]", "std::cref [C++]"]

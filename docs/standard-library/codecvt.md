@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;codecvt&gt;"
-title: "&lt;codecvt&gt;"
+description: "Learn more about: <codecvt>"
+title: "<codecvt>"
 ms.date: "11/04/2016"
 f1_keywords: ["<codecvt>"]
 helpviewer_keywords: ["codecvt header"]

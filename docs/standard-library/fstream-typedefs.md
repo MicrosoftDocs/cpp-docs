@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;fstream&gt; typedefs"
-title: "&lt;fstream&gt; typedefs"
+description: "Learn more about: <fstream> typedefs"
+title: "<fstream> typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["fstream/std::filebuf", "fstream/std::fstream", "fstream/std::ifstream", "fstream/std::ofstream", "fstream/std::wfilebuf", "fstream/std::wfstream", "fstream/std::wifstream", "fstream/std::wofstream"]
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23

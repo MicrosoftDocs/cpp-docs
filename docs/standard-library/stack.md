@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;stack&gt;"
-title: "&lt;stack&gt;"
+description: "Learn more about: <stack>"
+title: "<stack>"
 ms.date: "11/04/2016"
 f1_keywords: ["<stack>"]
 helpviewer_keywords: ["stack, stack header", "stack header"]

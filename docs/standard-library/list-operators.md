@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;list&gt; operators"
-title: "&lt;list&gt; operators"
+description: "Learn more about: <list> operators"
+title: "<list> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["list/std::operator!=", "list/std::operator&gt;", "list/std::operator&gt;=", "list/std::operator&lt;", "list/std::operator&lt;=", "list/std::operator=="]
+f1_keywords: ["list/std::operator!=", "list/std::operator>", "list/std::operator>=", "list/std::operator<", "list/std::operator<=", "list/std::operator=="]
 ms.assetid: 8103d8f2-c30f-49ad-ac50-b3ba6a907ebe
-helpviewer_keywords: ["std::operator!= (list)", "std::operator&gt; (list)", "std::operator&gt;= (list)", "std::operator&lt; (list)", "std::operator&lt;= (list)", "std::operator== (list)"]
+helpviewer_keywords: ["std::operator!= (list)", "std::operator> (list)", "std::operator>= (list)", "std::operator< (list)", "std::operator<= (list)", "std::operator== (list)"]
 ---
 # &lt;list&gt; operators
 

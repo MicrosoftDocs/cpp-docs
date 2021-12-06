@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;new&gt; operators and enums"
-title: "&lt;new&gt; operators and enums"
+description: "Learn more about: <new> operators and enums"
+title: "<new> operators and enums"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd

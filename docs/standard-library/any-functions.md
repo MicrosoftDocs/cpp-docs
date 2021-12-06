@@ -1,6 +1,6 @@
 ---
 description: "Learn more about the free functions for use with the std::any class in the C++ Standard Library."
-title: "&lt;any&gt; functions"
+title: "<any> functions"
 ms.date: 09/20/2021
 f1_keywords: ["any/std::any_cast", "any/std::make_any", "any/std::swap"]
 no-loc: ["any", "std", "class"]

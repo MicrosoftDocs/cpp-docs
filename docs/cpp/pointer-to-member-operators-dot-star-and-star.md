@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: Pointer-to-Member Operators: .* and -&gt;*"
-title: "Pointer-to-Member Operators: .* and -&gt;*"
+description: "Learn more about: Pointer-to-Member Operators: .* and ->*"
+title: "Pointer-to-Member Operators: .* and ->*"
 ms.date: "11/04/2016"
 f1_keywords: [".*", "->*"]
 helpviewer_keywords: ["expressions [C++], pointer", "pointer-to-member operators [C++]", ".* operator", "expressions [C++], operators", "->* operator"]
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
 ---
-# Pointer-to-Member Operators: .* and -&gt;*
+# Pointer-to-Member Operators: `.*` and `->*`
 
 ## Syntax
 

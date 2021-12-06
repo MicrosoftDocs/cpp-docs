@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;csignal&gt;"
-title: "&lt;csignal&gt;"
+description: "Learn more about: <csignal>"
+title: "<csignal>"
 ms.date: "11/04/2016"
 f1_keywords: ["<csignal>"]
 helpviewer_keywords: ["csignal header"]

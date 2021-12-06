@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;vector&gt; operators"
-title: "&lt;vector&gt; operators"
+description: "Learn more about: <vector> operators"
+title: "<vector> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["vector/std::operator!=", "vector/std::operator&gt;", "vector/std::operator&gt;=", "vector/std::operator&lt;", "vector/std::operator&lt;=", "vector/std::operator=="]
+f1_keywords: ["vector/std::operator!=", "vector/std::operator>", "vector/std::operator>=", "vector/std::operator<", "vector/std::operator<=", "vector/std::operator=="]
 ms.assetid: 1d14f312-6f59-4ec7-88ae-95f89a558823
-helpviewer_keywords: ["std::operator!= (vector)", "std::operator&gt; (vector)", "std::operator&gt;= (vector)", "std::operator&lt; (vector)", "std::operator&lt;= (vector)", "std::operator== (vector)"]
+helpviewer_keywords: ["std::operator!= (vector)", "std::operator> (vector)", "std::operator>= (vector)", "std::operator< (vector)", "std::operator<= (vector)", "std::operator== (vector)"]
 ---
 # &lt;vector&gt; operators
 

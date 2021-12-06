@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Overloading the &gt;&gt; Operator for Your Own Classes"
-title: "Overloading the &gt;&gt; Operator for Your Own Classes"
+description: "Learn more about: Overloading the >> Operator for Your Own Classes"
+title: "Overloading the >> Operator for Your Own Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operator>>", "operator>>, overloading for your own classes", "operator >>, overloading for your own classes"]
 ms.assetid: 40dab4e0-3f97-4745-9cc8-b86e740fa246

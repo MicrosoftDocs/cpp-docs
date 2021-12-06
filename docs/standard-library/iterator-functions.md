@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;iterator&gt; functions"
-title: "&lt;iterator&gt; functions"
+description: "Learn more about: <iterator> functions"
+title: "<iterator> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
 ms.assetid: 4a57c9a3-7e36-411f-8655-e0be2eec88e7
