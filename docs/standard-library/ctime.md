@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;ctime&gt;"
-title: "&lt;ctime&gt;"
+description: "Learn more about: <ctime>"
+title: "<ctime>"
 ms.date: "11/04/2016"
 f1_keywords: ["<ctime>"]
 helpviewer_keywords: ["ctime header"]

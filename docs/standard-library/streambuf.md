@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;streambuf&gt;"
-title: "&lt;streambuf&gt;"
+description: "Learn more about: <streambuf>"
+title: "<streambuf>"
 ms.date: "11/04/2016"
 f1_keywords: ["<streambuf>"]
 helpviewer_keywords: ["streambuf header"]

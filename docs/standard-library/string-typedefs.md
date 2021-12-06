@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;string&gt; typedefs"
-title: "&lt;string&gt; typedefs"
+description: "Learn more about: <string> typedefs"
+title: "<string> typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["string/std::string", "string/std::u16string", "string/std::u32string", "string/std::wstring"]
 ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc

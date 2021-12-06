@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;ccomplex&gt;"
-title: "&lt;ccomplex&gt;"
+description: "Learn more about: <ccomplex>"
+title: "<ccomplex>"
 ms.date: "07/11/2019"
 f1_keywords: ["<ccomplex>"]
 helpviewer_keywords: ["ccomplex header"]

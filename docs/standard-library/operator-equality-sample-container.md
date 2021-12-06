@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: operator== (&lt;sample container&gt;)"
-title: "operator== (&lt;sample container&gt;)"
+description: "Learn more about: operator== (<sample container>)"
+title: "operator== (<sample container>)"
 ms.date: "11/04/2016"
 f1_keywords: ["std.==", "std::==", "operator==", "std.operator==", "std::operator==", "=="]
 helpviewer_keywords: ["operator ==, containers", "operator==, containers", "== operator, with specific standard C++ objects"]
 ms.assetid: d3d8754e-5157-4b8b-bf9c-da41856f5eed
 ---
-# operator== (&lt;sample container&gt;)
+# `operator==` (`<sample container>`)
 
 > [!NOTE]
 > This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).

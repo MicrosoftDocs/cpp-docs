@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;utility&gt; operators"
-title: "&lt;utility&gt; operators"
+description: "Learn more about: <utility> operators"
+title: "<utility> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["utility/std::operator!=", "utility/std::operator&gt;", "utility/std::operator&gt;=", "utility/std::operator&lt;", "utility/std::operator&lt;=", "utility/std::operator=="]
+f1_keywords: ["utility/std::operator!=", "utility/std::operator>", "utility/std::operator>=", "utility/std::operator<", "utility/std::operator<=", "utility/std::operator=="]
 ms.assetid: a6617109-2cec-4a69-948f-6c87116eda5f
-helpviewer_keywords: ["std::operator!= (utility)", "std::operator&gt; (utility)", "std::operator&gt;= (utility)", "std::operator&lt; (utility)", "std::operator&lt;= (utility)", "std::operator== (utility)"]
+helpviewer_keywords: ["std::operator!= (utility)", "std::operator> (utility)", "std::operator>= (utility)", "std::operator< (utility)", "std::operator<= (utility)", "std::operator== (utility)"]
 ---
 # &lt;utility&gt; operators
 

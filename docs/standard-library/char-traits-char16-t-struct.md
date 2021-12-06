@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: char_traits&lt;char16_t&gt; Struct"
-title: "char_traits&lt;char16_t&gt; Struct"
+description: "Learn more about: char_traits<char16_t> Struct"
+title: "char_traits<char16_t> Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["char_traits<char16_t>", "iosfwd/std::char_traits<char16_t>"]
 helpviewer_keywords: ["char_traits<char16_t> class"]
 ms.assetid: 5daf3b62-dd6e-451f-b189-0350a04ff966
 ---
-# char_traits&lt;char16_t&gt; Struct
+# `char_traits<char16_t>` Struct
 
 A struct that is a specialization of the template struct **char_traits\<CharType>** to an element of type **`char16_t`**.
 

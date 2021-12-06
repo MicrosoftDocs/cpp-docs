@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: vector&lt;bool&gt;::reference Class"
-title: "vector&lt;bool&gt;::reference Class"
+description: "Learn more about: vector<bool>::reference Class"
+title: "vector<bool>::reference Class"
 ms.date: "11/04/2016"
 f1_keywords: ["vector/vector<bool>::reference"]
 helpviewer_keywords: ["vector<bool> reference class"]
 ms.assetid: f27854f9-0ef0-4e7e-ad2e-cd53b6cb3334
 ---
-# vector&lt;bool&gt;::reference Class
+# `vector<bool>::reference` Class
 
 The `vector<bool>::reference` class is a proxy class provided by the [vector\<bool> Class](../standard-library/vector-bool-class.md) to simulate `bool&`.
 

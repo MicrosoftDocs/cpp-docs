@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;memory&gt; enums"
-title: "&lt;memory&gt; enums"
+description: "Learn more about: <memory> enums"
+title: "<memory> enums"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::pointer_safety"]
 ms.assetid: b9be0a7b-0beb-40b2-8183-911de371c6b9

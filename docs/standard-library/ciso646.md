@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;ciso646&gt;"
-title: "&lt;ciso646&gt;"
+description: "Learn more about: <ciso646>"
+title: "<ciso646>"
 ms.date: "07/11/2019"
 f1_keywords: ["<ciso646>"]
 helpviewer_keywords: ["ciso646 header"]

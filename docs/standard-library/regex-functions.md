@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;regex&gt; functions"
-title: "&lt;regex&gt; functions"
+description: "Learn more about: <regex> functions"
+title: "<regex> functions"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::regex_search", "regex/std::swap"]
 ms.assetid: 91a8314b-6f7c-4e33-b7d6-d8583dd75585

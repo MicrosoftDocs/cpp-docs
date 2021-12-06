@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;exception&gt; typedefs"
-title: "&lt;exception&gt; typedefs"
+description: "Learn more about: <exception> typedefs"
+title: "<exception> typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::exception_ptr", "exception/std::terminate_handler", "exception/std::unexpected_handler"]
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768

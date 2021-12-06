@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;algorithm&gt;"
-title: "&lt;algorithm&gt;"
+description: "Learn more about: <algorithm>"
+title: "<algorithm>"
 ms.date: "11/04/2016"
 f1_keywords: ["<algorithm>"]
 helpviewer_keywords: ["algorithm header [C++]", "C++ Standard Library, algorithms", "<algorithm> header"]

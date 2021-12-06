@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;unordered_map&gt; functions"
-title: "&lt;unordered_map&gt; functions"
+description: "Learn more about: <unordered_map> functions"
+title: "<unordered_map> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["unordered_map/std::swap", "unordered_map/std::swap (unordered_map)", "unordered_map/std::swap (unordered_multimap)"]
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44

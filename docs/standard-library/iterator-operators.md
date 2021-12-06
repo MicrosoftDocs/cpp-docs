@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;iterator&gt; operators"
-title: "&lt;iterator&gt; operators"
+description: "Learn more about: <iterator> operators"
+title: "<iterator> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["xutility/std::operator!=", "xutility/std::operator&gt;", "xutility/std::operator&gt;=", "xutility/std::operator&lt;", "xutility/std::operator&lt;=", "xutility/std::operator+", "xutility/std::operator-", "xutility/std::operator=="]
+f1_keywords: ["xutility/std::operator!=", "xutility/std::operator>", "xutility/std::operator>=", "xutility/std::operator<", "xutility/std::operator<=", "xutility/std::operator+", "xutility/std::operator-", "xutility/std::operator=="]
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc
-helpviewer_keywords: ["std::operator!= (iterator)", "std::operator&gt; (iterator)", "std::operator&gt;= (iterator)", "std::operator&lt; (iterator)", "std::operator&lt;= (iterator), std::operator== (iterator)"]
+helpviewer_keywords: ["std::operator!= (iterator)", "std::operator> (iterator)", "std::operator>= (iterator)", "std::operator< (iterator)", "std::operator<= (iterator), std::operator== (iterator)"]
 ---
 # &lt;iterator&gt; operators
 

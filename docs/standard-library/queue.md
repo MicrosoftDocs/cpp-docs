@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;queue&gt;"
-title: "&lt;queue&gt;"
+description: "Learn more about: <queue>"
+title: "<queue>"
 ms.date: "11/04/2016"
 f1_keywords: ["<queue>"]
 helpviewer_keywords: ["queue header"]

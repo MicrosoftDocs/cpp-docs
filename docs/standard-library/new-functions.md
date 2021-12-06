@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;new&gt; functions"
-title: "&lt;new&gt; functions"
+description: "Learn more about: <new> functions"
+title: "<new> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::get_new_handler", "new/std::nothrow", "new/std::set_new_handler"]
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d

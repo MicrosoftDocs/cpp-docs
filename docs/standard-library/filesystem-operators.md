@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;filesystem&gt; operators"
-title: "&lt;filesystem&gt; operators"
+description: "Learn more about: <filesystem> operators"
+title: "<filesystem> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["FILESYSTEM/std::experimental::filesystem::operator==", "FILESYSTEM/std::experimental::filesystem::operator!=", "FILESYSTEM/std::experimental::filesystem::operator<", "FILESYSTEM/std::experimental::filesystem::operator<=", "FILESYSTEM/std::experimental::filesystem::operator>", "FILESYSTEM/std::experimental::filesystem::operator>=", "FILESYSTEM/std::experimental::filesystem::operator/", "FILESYSTEM/std::experimental::filesystem::operator<<", "FILESYSTEM/std::experimental::filesystem::operator>>"]
 ms.assetid: 102c4833-aa3b-41a8-8998-f5003c546bfd

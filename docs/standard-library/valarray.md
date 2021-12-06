@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;valarray&gt;"
-title: "&lt;valarray&gt;"
+description: "Learn more about: <valarray>"
+title: "<valarray>"
 ms.date: "11/04/2016"
 f1_keywords: ["<valarray>"]
 helpviewer_keywords: ["valarray header"]

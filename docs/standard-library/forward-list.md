@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;forward_list&gt;"
-title: "&lt;forward_list&gt;"
+description: "Learn more about: <forward_list>"
+title: "<forward_list>"
 ms.date: "11/04/2016"
 f1_keywords: ["<forward_list>"]
 helpviewer_keywords: ["<forward_list>"]

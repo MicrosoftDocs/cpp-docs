@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;set&gt;"
-title: "&lt;set&gt;"
+description: "Learn more about: <set>"
+title: "<set>"
 ms.date: "11/04/2016"
 f1_keywords: ["<set>"]
 helpviewer_keywords: ["set header"]
