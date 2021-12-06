@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;vector&gt;"
-title: "&lt;vector&gt;"
+description: "Learn more about: <vector>"
+title: "<vector>"
 ms.date: "11/04/2016"
 f1_keywords: ["<vector>"]
 helpviewer_keywords: ["vector header"]

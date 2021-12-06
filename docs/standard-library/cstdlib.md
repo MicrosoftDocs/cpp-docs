@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cstdlib&gt;"
-title: "&lt;cstdlib&gt;"
+description: "Learn more about: <cstdlib>"
+title: "<cstdlib>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstdlib>"]
 helpviewer_keywords: ["cstdlib header"]

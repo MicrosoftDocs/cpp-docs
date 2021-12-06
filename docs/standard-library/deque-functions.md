@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;deque&gt; functions"
-title: "&lt;deque&gt; functions"
+description: "Learn more about: <deque> functions"
+title: "<deque> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["deque/std::swap"]
 ms.assetid: 1d14be53-b0b7-4f66-90cc-65bdeac563fd

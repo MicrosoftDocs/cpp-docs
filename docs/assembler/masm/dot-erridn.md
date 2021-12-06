@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &period;ERRIDN, &period;ERRIDNI"
-title: "&period;ERRIDN, &period;ERRIDNI"
+description: "Learn more about: .ERRIDN, .ERRIDNI"
+title: ".ERRIDN, .ERRIDNI"
 ms.date: "05/23/2019"
 f1_keywords: [".ERRIDN", ".ERRIDNI"]
 helpviewer_keywords: [".ERRIDN directive", ".ERRIDNI directive"]

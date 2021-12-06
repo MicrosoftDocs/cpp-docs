@@ -1,8 +1,8 @@
 ---
-description: "Learn more about: &lt;istream&gt; operators"
-title: "&lt;istream&gt; operators"
+description: "Learn more about: <istream> operators"
+title: "<istream> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["istream/std::operator&gt;&gt;"]
+f1_keywords: ["istream/std::operator>>"]
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
 ---
 # &lt;istream&gt; operators

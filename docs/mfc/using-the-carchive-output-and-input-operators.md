@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: Using the CArchive &lt;&lt; and &gt;&gt; Operators"
-title: "Using the CArchive &lt;&lt; and &gt;&gt; Operators"
+description: "Learn more about: Using the CArchive << and >> Operators"
+title: "Using the CArchive << and >> Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], loading from previously stored values", "CArchive class [MFC], storing and loading objects", "CArchive class [MFC], operators"]
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
 ---
-# Using the CArchive &lt;&lt; and &gt;&gt; Operators
+# Using the CArchive `<<` and `>>` Operators
 
 `CArchive` provides <\< and >> operators for writing and reading simple data types as well as `CObject`s to and from a file.
 

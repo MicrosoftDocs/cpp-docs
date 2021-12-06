@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;numeric&gt;"
-title: "&lt;numeric&gt;"
+description: "Learn more about: <numeric>"
+title: "<numeric>"
 ms.date: "11/04/2016"
 f1_keywords: ["<numeric>"]
 helpviewer_keywords: ["<numeric> header"]

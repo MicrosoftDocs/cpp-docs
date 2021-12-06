@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;iostream&gt;"
-title: "&lt;iostream&gt;"
+description: "Learn more about: <iostream>"
+title: "<iostream>"
 ms.date: "09/20/2017"
 f1_keywords: ["<iostream>", "iostream/std::cerr", "iostream/std::cin", "iostream/std::clog", "iostream/std::cout", "iostream/std::wcerr", "iostream/std::wcin", "iostream/std::wclog", "iostream/std::wcout"]
 helpviewer_keywords: ["iostream header"]

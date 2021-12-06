@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: operator&lt; Operator (Microsoft::WRL)"
-title: "operator&lt; Operator (Microsoft::WRL)"
+description: "Learn more about: operator< Operator (Microsoft::WRL)"
+title: "operator< Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator<"]
 ms.assetid: bfae0e1c-1648-482b-99c2-3217d62aba46
 ---
-# operator&lt; Operator (Microsoft::WRL)
+# `operator<` Operator (Microsoft::WRL)
 
 Determines if the address of one object is less than another.
 

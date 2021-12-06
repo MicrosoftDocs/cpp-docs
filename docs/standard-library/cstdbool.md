@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cstdbool&gt;"
-title: "&lt;cstdbool&gt;"
+description: "Learn more about: <cstdbool>"
+title: "<cstdbool>"
 ms.date: "07/11/2019"
 f1_keywords: ["<cstdbool>"]
 helpviewer_keywords: ["cstdbool header"]

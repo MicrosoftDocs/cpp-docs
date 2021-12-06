@@ -1,6 +1,6 @@
 ---
 description: "Learn more about the classes and functions declared in the <any> header in the C++ Standard Library."
-title: "&lt;any&gt;"
+title: "<any>"
 ms.date: 09/20/2021
 f1_keywords: ["<any>"]
 helpviewer_keywords: ["<any>"]

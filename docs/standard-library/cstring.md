@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cstring&gt;"
-title: "&lt;cstring&gt;"
+description: "Learn more about: <cstring>"
+title: "<cstring>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstring>"]
 helpviewer_keywords: ["<cstring> header", "cstring header"]

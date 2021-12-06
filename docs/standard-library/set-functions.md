@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;set&gt; functions"
-title: "&lt;set&gt; functions"
+description: "Learn more about: <set> functions"
+title: "<set> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["set/std::swap (map)", "set/std::swap (multiset)"]
 ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406

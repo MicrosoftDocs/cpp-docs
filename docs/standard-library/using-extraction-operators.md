@@ -2,7 +2,7 @@
 description: "Learn more about: Using Extraction Operators"
 title: "Using Extraction Operators"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["extraction operators [C++]", "&gt;&gt; operator [C++], extraction operators", "operators [C++], extraction"]
+helpviewer_keywords: ["extraction operators [C++]", ">> operator [C++], extraction operators", "operators [C++], extraction"]
 ms.assetid: a961e1a9-4897-41de-b210-89d5b2d051ae
 ---
 # Using Extraction Operators

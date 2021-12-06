@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;random&gt;"
-title: "&lt;random&gt;"
+description: "Learn more about: <random>"
+title: "<random>"
 ms.date: "08/24/2017"
 f1_keywords: ["<random>"]
 helpviewer_keywords: ["random header"]

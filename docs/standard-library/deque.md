@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;deque&gt;"
-title: "&lt;deque&gt;"
+description: "Learn more about: <deque>"
+title: "<deque>"
 ms.date: "11/04/2016"
 f1_keywords: ["<deque>"]
 helpviewer_keywords: ["deque header"]

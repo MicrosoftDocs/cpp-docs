@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cstdarg&gt;"
-title: "&lt;cstdarg&gt;"
+description: "Learn more about: <cstdarg>"
+title: "<cstdarg>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstdarg>"]
 helpviewer_keywords: ["cstdarg header"]

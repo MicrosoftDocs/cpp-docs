@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;random&gt; functions"
-title: "&lt;random&gt; functions"
+description: "Learn more about: <random> functions"
+title: "<random> functions"
 ms.date: "09/04/2019"
 f1_keywords: ["random/std::generate_canonical"]
 ms.assetid: 2ac9ec59-619b-4b85-a425-f729277c1bc8

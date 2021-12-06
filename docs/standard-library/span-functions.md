@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;span&gt; functions"
-title: "&lt;span&gt; functions"
+description: "Learn more about: <span> functions"
+title: "<span> functions"
 ms.date: "05/28/2020"
 f1_keywords: ["span/std::span::as_bytes", "span/std::as_writable_bytes"]
 helpviewer_keywords: ["std::span [C++], as_writable_bytes", "std::as_bytes [C++]"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;execution&gt;"
-title: "&lt;execution&gt;"
+description: "Learn more about: <execution>"
+title: "<execution>"
 ms.date: "08/17/2021"
 f1_keywords: ["<execution>", "execution/std::execution", "std::execution"]
 helpviewer_keywords: ["execution header"]

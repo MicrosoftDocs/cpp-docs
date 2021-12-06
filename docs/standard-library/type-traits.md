@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;type_traits&gt;"
-title: "&lt;type_traits&gt;"
+description: "Learn more about: <type_traits>"
+title: "<type_traits>"
 ms.date: "02/21/2019"
 f1_keywords: ["<type_traits>"]
 helpviewer_keywords: ["typetrait header", "type_traits"]

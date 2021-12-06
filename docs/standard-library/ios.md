@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;ios&gt;"
-title: "&lt;ios&gt;"
+description: "Learn more about: <ios>"
+title: "<ios>"
 ms.date: "11/04/2016"
 f1_keywords: ["<ios>"]
 helpviewer_keywords: ["ios header"]

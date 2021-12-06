@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;complex&gt; functions"
-title: "&lt;complex&gt; functions"
+description: "Learn more about: <complex> functions"
+title: "<complex> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["xcomplex/std::abs", "xcomplex/std::acos", "xcomplex/std::acosh", "xcomplex/std::arg", "xcomplex/std::conj", "xcomplex/std::cos", "xcomplex/std::cosh", "xcomplex/std::exp", "xxcomplex/std::imag", "xcomplex/std::log", "xcomplex/std::log10", "xcomplex/std::norm", "xcomplex/std::polar", "xcomplex/std::pow", "xxcomplex/std::real", "xcomplex/std::sin", "xcomplex/std::sinh", "xcomplex/std::sqrt", "xcomplex/std::tan", "xcomplex/std::tanh"]
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2

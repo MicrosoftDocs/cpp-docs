@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: &lt;cassert&gt;"
-title: "&lt;cassert&gt;"
+description: "Learn more about: <cassert>"
+title: "<cassert>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cassert>"]
 helpviewer_keywords: ["cassert header"]

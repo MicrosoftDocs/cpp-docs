@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;optional&gt; operators"
-title: "&lt;optional&gt; operators"
+description: "Learn more about: <optional> operators"
+title: "<optional> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operatoroperator&gt;", "optional/std::operatoroperator&gt=;", "optional/std::operatoroperator&lt;", "optional/std::operatoroperator&lt;="]
+f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operatoroperator>", "optional/std::operatoroperator&gt=;", "optional/std::operatoroperator&lt;", "optional/std::operatoroperator&lt;="]
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
-helpviewer_keywords: ["std::operator!= (optional)", "std::operator== (optional)", "std::operatoroperator&gt; (optional)", "std::operatoroperator&gt=; (optional)", "std::operatoroperator&lt; (optional)", "std::operatoroperator&lt;= (optional)"]
+helpviewer_keywords: ["std::operator!= (optional)", "std::operator== (optional)", "std::operatoroperator> (optional)", "std::operatoroperator&gt=; (optional)", "std::operatoroperator&lt; (optional)", "std::operatoroperator&lt;= (optional)"]
 ---
 # &lt;optional&gt; operators
 
