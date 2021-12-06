@@ -6,7 +6,7 @@ f1_keywords: ["queue/std::operator!=", "queue/std::operator>", "queue/std::opera
 ms.assetid: 7c435b48-175c-45b0-88eb-24561044019c
 helpviewer_keywords: ["std::operator!= (queue)", "std::operator> (queue)", "std::operator>= (queue)", "std::operator< (queue)", "std::operator<= (queue)", "std::operator== (queue)"]
 ---
-# &lt;queue&gt; operators
+`<queue>` operators
 
 ## <a name="op_neq"></a> operator!=
 

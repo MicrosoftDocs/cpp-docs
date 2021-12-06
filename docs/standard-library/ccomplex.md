@@ -6,7 +6,7 @@ f1_keywords: ["<ccomplex>"]
 helpviewer_keywords: ["ccomplex header"]
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f
 ---
-# &lt;ccomplex&gt;
+`<ccomplex>`
 
 Includes the C++ standard library header [\<complex>](complex.md).
 

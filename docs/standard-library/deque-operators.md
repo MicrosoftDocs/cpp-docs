@@ -6,7 +6,7 @@ f1_keywords: ["deque/std::operator!=", "deque/std::operator>", "deque/std::opera
 ms.assetid: 482d7c92-54c7-493b-99e6-2a73617481a5
 helpviewer_keywords: ["std::operator!= (deque)", "std::operator> (deque)", "std::operator>= (deque)", "std::operator< (deque)", "std::operator<= (deque)", "std::operator== (deque)"]
 ---
-# &lt;deque&gt; operators
+`<deque>` operators
 
 ## <a name="op_neq"></a> operator!=
 

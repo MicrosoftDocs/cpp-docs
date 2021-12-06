@@ -6,7 +6,7 @@ f1_keywords: ["<ctime>"]
 helpviewer_keywords: ["ctime header"]
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
 ---
-# &lt;ctime&gt;
+`<ctime>`
 
 Includes the Standard C library header \<time.h> and adds the associated names to the `std` namespace.
 

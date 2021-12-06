@@ -6,7 +6,7 @@ f1_keywords: ["<bit>"]
 helpviewer_keywords: ["bit header"]
 ---
 
-# &lt;bit&gt;
+`<bit>`
 
 Defines functions to access, manipulate, and process individual bits and sequences of bits.
 

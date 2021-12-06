@@ -6,7 +6,7 @@ f1_keywords: ["<tuple>"]
 helpviewer_keywords: ["tuple header"]
 ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
 ---
-# &lt;tuple&gt;
+`<tuple>`
 
 Defines a template `tuple` whose instances hold objects of varying types.
 

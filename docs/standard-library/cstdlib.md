@@ -6,7 +6,7 @@ f1_keywords: ["<cstdlib>"]
 helpviewer_keywords: ["cstdlib header"]
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
 ---
-# &lt;cstdlib&gt;
+`<cstdlib>`
 
 Includes the C Standard library header \<stdlib.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 

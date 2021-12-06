@@ -6,7 +6,7 @@ f1_keywords: ["<system_error>"]
 helpviewer_keywords: ["system_error header"]
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
 ---
-# &lt;system_error&gt;
+`<system_error>`
 
 Include the header \<system_error> to define the exception class `system_error` and related templates for processing low-level system errors.
 

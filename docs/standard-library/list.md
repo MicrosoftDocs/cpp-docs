@@ -6,7 +6,7 @@ f1_keywords: ["<list>"]
 helpviewer_keywords: ["list header"]
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
 ---
-# &lt;list&gt;
+`<list>`
 
 Defines the container class template list and several supporting templates.
 

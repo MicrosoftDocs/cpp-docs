@@ -6,7 +6,7 @@ f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
 helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]"]
 ---
-# &lt;array&gt; functions
+`<array>` functions
 
 The \<array> header includes two non-member functions, `get` and `swap`, that operate on **array** objects.
 

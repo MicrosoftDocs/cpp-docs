@@ -6,7 +6,7 @@ f1_keywords: ["vector/std::swap"]
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords: ["std::swap [vector]"]
 ---
-# &lt;vector&gt; functions
+`<vector>` functions
 
 ## <a name="swap"></a> swap
 

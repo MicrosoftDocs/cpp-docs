@@ -5,7 +5,7 @@ ms.date: "03/27/2019"
 f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 ---
-# &lt;hash_set&gt; operators
+`<hash_set>` operators
 
 [operator!=](#op_neq)\
 [operator!= (hash_multiset)](#op_neq_hash_multiset)\

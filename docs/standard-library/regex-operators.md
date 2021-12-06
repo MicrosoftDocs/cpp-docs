@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["regex/std::operator!=", "regex/std::operator>", "regex/std::operator>=", "regex/std::operator<", "regex/std::operator<=", "regex/std::operator==", "regex/std::operator<<"]
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 ---
-# &lt;regex&gt; operators
+`<regex>` operators
 
 [operator!=](#op_neq)\
 [operator&gt;](#op_gt)\

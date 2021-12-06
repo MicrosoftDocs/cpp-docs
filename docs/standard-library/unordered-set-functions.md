@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["unordered_set/std::swap (set)", "unordered_set/std::swap (unordered_multiset)"]
 ms.assetid: 66b35671-4023-4411-ad50-83786580d8ee
 ---
-# &lt;unordered_set&gt; functions
+`<unordered_set>` functions
 
 ## <a name="swap"></a> swap (unordered_set)
 

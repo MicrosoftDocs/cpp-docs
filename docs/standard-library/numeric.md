@@ -6,7 +6,7 @@ f1_keywords: ["<numeric>"]
 helpviewer_keywords: ["<numeric> header"]
 ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a
 ---
-# &lt;numeric&gt;
+`<numeric>`
 
 Defines container template functions that perform algorithms for numerical processing.
 

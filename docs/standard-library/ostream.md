@@ -6,7 +6,7 @@ f1_keywords: ["<ostream>"]
 helpviewer_keywords: ["ostream header"]
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
 ---
-# &lt;ostream&gt;
+`<ostream>`
 
 Defines the class template [basic_ostream](../standard-library/basic-ostream-class.md), which mediates insertions for the iostreams. The header also defines several related manipulators. (This header is typically included for you by another of the iostreams headers. You rarely need to include it directly.)
 

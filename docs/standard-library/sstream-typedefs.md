@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::istringstream", "iosfwd/std::ostringstream", "iosfwd/std::stringbuf", "iosfwd/std::stringstream", "iosfwd/std::wistringstream", "iosfwd/std::wostringstream", "iosfwd/std::wstringbuf", "iosfwd/std::wstringstream"]
 ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
 ---
-# &lt;sstream&gt; typedefs
+`<sstream>` typedefs
 
 [istringstream](#istringstream)\
 [ostringstream](#ostringstream)\

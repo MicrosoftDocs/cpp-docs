@@ -6,7 +6,7 @@ f1_keywords: ["list/std::operator!=", "list/std::operator>", "list/std::operator
 ms.assetid: 8103d8f2-c30f-49ad-ac50-b3ba6a907ebe
 helpviewer_keywords: ["std::operator!= (list)", "std::operator> (list)", "std::operator>= (list)", "std::operator< (list)", "std::operator<= (list)", "std::operator== (list)"]
 ---
-# &lt;list&gt; operators
+`<list>` operators
 
 ## <a name="op_neq"></a> operator!=
 

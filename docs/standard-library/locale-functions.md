@@ -6,7 +6,7 @@ f1_keywords: ["locale/std::has_facet", "locale/std::isalnum", "locale/std::isalp
 ms.assetid: b06c1ceb-33a7-48d3-8d4b-2714bbb27f14
 helpviewer_keywords: ["std::has_facet [C++]", "std::isalnum [C++]", "std::isalpha [C++]", "std::iscntrl [C++]", "std::isdigit [C++]", "std::isgraph [C++]", "std::islower [C++]", "std::isprint [C++]", "std::ispunct [C++]", "std::isspace [C++]", "std::isupper [C++]", "std::isxdigit [C++]", "std::tolower [C++]", "std::toupper [C++]", "std::use_facet [C++]"]
 ---
-# &lt;locale&gt; functions
+`<locale>` functions
 
 [has_facet](#has_facet)\
 [isalnum](#isalnum)\

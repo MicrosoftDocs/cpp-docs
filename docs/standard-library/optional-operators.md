@@ -6,7 +6,7 @@ f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
 helpviewer_keywords: ["std::operator!= (optional)", "std::operator== (optional)", "std::operatoroperator> (optional)", "std::operatoroperator&gt=; (optional)", "std::operatoroperator&lt; (optional)", "std::operatoroperator&lt;= (optional)"]
 ---
-# &lt;optional&gt; operators
+`<optional>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 

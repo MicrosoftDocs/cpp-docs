@@ -6,7 +6,7 @@ f1_keywords: ["random/std::generate_canonical"]
 ms.assetid: 2ac9ec59-619b-4b85-a425-f729277c1bc8
 helpviewer_keywords: ["std::generate_canonical"]
 ---
-# &lt;random&gt; functions
+`<random>` functions
 
 ## <a name="generate_canonical"></a> generate_canonical
 

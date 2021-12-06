@@ -6,7 +6,7 @@ f1_keywords: ["<csignal>"]
 helpviewer_keywords: ["csignal header"]
 ms.assetid: d18bcf82-a89a-476c-a6bf-726af956f7c0
 ---
-# &lt;csignal&gt;
+`<csignal>`
 
 Includes the C Standard library header \<signal.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
 

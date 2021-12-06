@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["scoped_allocator/std::operator!=", "scoped_allocator/std::operator=="]
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
 ---
-# &lt;scoped_allocator&gt; operators
+`<scoped_allocator>` operators
 
 [operator!=](#op_neq)\
 [operator==](#op_eq_eq)

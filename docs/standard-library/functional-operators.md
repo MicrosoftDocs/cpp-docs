@@ -6,7 +6,7 @@ f1_keywords: ["functional/std::operator!=", "functional/std::operator=="]
 helpviewer_keywords: ["functional operators"]
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
 ---
-# &lt;functional&gt; operators
+`<functional>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 

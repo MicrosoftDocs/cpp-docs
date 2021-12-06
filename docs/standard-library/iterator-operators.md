@@ -6,7 +6,7 @@ f1_keywords: ["xutility/std::operator!=", "xutility/std::operator>", "xutility/s
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc
 helpviewer_keywords: ["std::operator!= (iterator)", "std::operator> (iterator)", "std::operator>= (iterator)", "std::operator< (iterator)", "std::operator<= (iterator), std::operator== (iterator)"]
 ---
-# &lt;iterator&gt; operators
+`<iterator>` operators
 
 ## <a name="op_neq"></a> operator!=
 

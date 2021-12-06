@@ -6,7 +6,7 @@ ms.date: "11/04/2016"
 ms.topic: "reference"
 f1_keywords: ["list/std::swap"]
 ---
-# &lt;list&gt; functions
+`<list>` functions
 
 ## <a name="swap"></a> swap
 

@@ -6,7 +6,7 @@ f1_keywords: ["<forward_list>"]
 helpviewer_keywords: ["<forward_list>"]
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
 ---
-# &lt;forward_list&gt;
+`<forward_list>`
 
 Defines the container class template forward_list and several supporting templates.
 

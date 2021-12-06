@@ -6,7 +6,7 @@ f1_keywords: ["<stdexcept>"]
 helpviewer_keywords: ["stdexcept header"]
 ms.assetid: 495c10b1-1e60-4514-9f8f-7fda11a2f522
 ---
-# &lt;stdexcept&gt;
+`<stdexcept>`
 
 Defines several standard classes used for reporting exceptions. The classes form a derivation hierarchy all derived from class [exception](../standard-library/exception-class.md) and include two general types of exceptions: logical errors and run-time errors. The logical errors are caused programmer mistakes. They derive from the base class logic_error and include:
 
