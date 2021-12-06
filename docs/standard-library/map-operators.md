@@ -6,7 +6,7 @@ f1_keywords: ["map/std::operator!=", "map/std::operator>", "map/std::operator>="
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
 helpviewer_keywords: ["std::operator!= (map)", "std::operator> (map)", "std::operator>= (map)", "std::operator< (map)", "std::operator<= (map)", "std::operator== (map)"]
 ---
-# &lt;map&gt; operators
+# `<map>` operators
 
 ## <a name="op_neq"></a> operator!=
 

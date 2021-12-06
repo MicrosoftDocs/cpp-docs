@@ -6,7 +6,7 @@ f1_keywords: ["<functional>"]
 helpviewer_keywords: ["functors", "functional header"]
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
 ---
-# &lt;functional&gt;
+# `<functional>`
 
 Defines C++ Standard Library functions that help construct *function objects*, also known as *functors*, and their binders. A function object is an object of a type that defines `operator()`. A function object can be a function pointer, but more typically, the object is used to store additional information that can be accessed during a function call.
 

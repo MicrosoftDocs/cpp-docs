@@ -6,7 +6,7 @@ f1_keywords: ["xcomplex/std::abs", "xcomplex/std::acos", "xcomplex/std::acosh", 
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2
 helpviewer_keywords: ["std::abs [C++]", "std::arg [C++]", "std::conj [C++]", "std::cos [C++]", "std::cosh [C++]", "std::exp [C++]", "std::imag [C++]", "std::log [C++]", "std::log10", "std::norm [C++]", "std::polar [C++]", "std::pow [C++]", "std::real [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---
-# &lt;complex&gt; functions
+# `<complex>` functions
 
 ## <a name="abs"></a> abs
 

@@ -309,7 +309,7 @@ The selection operator returns [get](#get)`( )`, so that the expression *ap*-> *
 
 For an example of how to use the member function, see [auto_ptr](#auto_ptr).
 
-### <a name="op_auto_ptr_lt_other_gt"></a> operator auto_ptr&lt;Other&gt;
+### <a name="op_auto_ptr_lt_other_gt"></a> `operator auto_ptr<Other>`
 
 Casts from one kind of `auto_ptr` to another kind of `auto_ptr`.
 
@@ -339,7 +339,7 @@ int main()
 }
 ```
 
-### <a name="op_auto_ptr_ref_lt_other_gt"></a> operator auto_ptr_ref&lt;Other&gt;
+### <a name="op_auto_ptr_ref_lt_other_gt"></a> `operator auto_ptr_ref<Other>`
 
 Casts from an `auto_ptr` to an `auto_ptr_ref`.
 

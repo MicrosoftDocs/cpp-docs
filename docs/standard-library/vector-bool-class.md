@@ -72,7 +72,7 @@ typedef bool const_reference;
 
 ### Remarks
 
-For more information and code examples, see [vector&lt;bool&gt;::reference::operator=](#reference_operator_eq).
+For more information and code examples, see [`vector<bool>::reference::operator=`](#reference_operator_eq).
 
 ## <a name="flip"></a> vector\<bool>::flip
 
