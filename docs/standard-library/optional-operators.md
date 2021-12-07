@@ -2,7 +2,7 @@
 description: "Learn more about: <optional> operators"
 title: "<optional> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operatoroperator>", "optional/std::operatoroperator&gt=;", "optional/std::operator<", "optional/std::operator<="]
+f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operator>", "optional/std::operator&gt=;", "optional/std::operator<", "optional/std::operator<="]
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
 helpviewer_keywords: ["std::operator!= (optional)", "std::operator== (optional)", "std::operator> (optional)", "std::operator>= (optional)", "std::operator< (optional)", "std::`operator<=` (optional)"]
 ---
