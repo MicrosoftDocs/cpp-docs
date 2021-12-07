@@ -5,7 +5,7 @@ ms.date: "07/17/2019"
 f1_keywords: ["<cuchar>"]
 helpviewer_keywords: ["cuchar header"]
 ---
-`<cuchar>`
+# `<cuchar>`
 
 Includes the C standard library header \<uchar.h> and adds the associated names to the `std` namespace.
 

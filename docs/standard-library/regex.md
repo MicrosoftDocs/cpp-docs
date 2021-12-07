@@ -6,7 +6,7 @@ f1_keywords: ["<regex>"]
 helpviewer_keywords: ["regex header"]
 ms.assetid: 5dd4ef74-6063-4dbc-b692-1960bb736f0b
 ---
-`<regex>`
+# `<regex>`
 
 Defines a class template to parse [Regular Expressions (C++)](../standard-library/regular-expressions-cpp.md), and several class templates and functions to search text for matches to a regular expression object.
 

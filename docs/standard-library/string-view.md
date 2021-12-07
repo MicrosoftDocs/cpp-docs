@@ -5,7 +5,7 @@ ms.date: "9/4/2020"
 helpviewer_keywords: ["string_view header"]
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
 ---
-`<string_view>`
+# `<string_view>`
 
 Defines the class template `basic_string_view` and related types and operators. (Requires compiler option [std:c++17](../build/reference/std-specify-language-standard-version.md) or later.)
 

@@ -6,7 +6,7 @@ f1_keywords: ["<streambuf>"]
 helpviewer_keywords: ["streambuf header"]
 ms.assetid: 4365b25c-5831-488b-b9c2-867bfe961b89
 ---
-`<streambuf>`
+# `<streambuf>`
 
 Include the iostreams standard header \<streambuf> to define the class template [basic_streambuf](../standard-library/basic-streambuf-class.md), which is basic to the operation of the iostreams classes. This header is typically included for you by another of the iostreams headers; you rarely need to include it directly.
 

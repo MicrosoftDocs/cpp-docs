@@ -6,7 +6,7 @@ f1_keywords: ["ostream/std::swap", "ostream/std::endl", "ostream/std::ends", "os
 ms.assetid: d6e56cc0-c8df-4dbe-be10-98e14c35ed3a
 helpviewer_keywords: ["std::swap [C++]", "std::endl [C++]", "std::ends [C++]", "std::flush [C++]"]
 ---
-`<ostream>` functions
+# `<ostream>` functions
 
 These are the global template functions defined in &lt;ostream&gt;. For member functions, see the [basic_ostream Class](basic-ostream-class.md) documentation.
 

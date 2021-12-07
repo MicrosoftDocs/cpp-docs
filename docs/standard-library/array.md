@@ -6,7 +6,7 @@ f1_keywords: ["<array>"]
 helpviewer_keywords: ["array header"]
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
 ---
-`<array>`
+# `<array>`
 
 Defines the container class template **array** and several supporting templates.
 

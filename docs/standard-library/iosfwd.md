@@ -6,7 +6,7 @@ f1_keywords: ["<iosfwd>"]
 helpviewer_keywords: ["iosfwd header"]
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
 ---
-`<iosfwd>`
+# `<iosfwd>`
 
 Declares forward references to several class templates used throughout iostreams. All such class templates are defined in other standard headers. You include this header explicitly only when you need one of its declarations, but not its definition.
 

@@ -6,7 +6,7 @@ f1_keywords: ["string/std::operator!=", "string/std::operator>", "string/std::op
 ms.assetid: 33ce8f05-06c7-45d3-a0cb-bcd27cf93910
 helpviewer_keywords: ["std::operator!= (string)", "std::operator> (string)", "std::operator>> (string)", "std::operator>= (string)", "std::operator< (string)", "std::operator<< (string)", "std::operator<= (string), std::operator== (string)"]
 ---
-`<string>` operators
+# `<string>` operators
 
 [operator!=](#op_neq)\
 [operator&gt;](#op_gt)\

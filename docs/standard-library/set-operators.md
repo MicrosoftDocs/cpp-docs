@@ -6,7 +6,7 @@ f1_keywords: ["set/std::operator!=", "set/std::operator>", "set/std::operator>="
 ms.assetid: b4256ebc-c449-4688-95db-fced42d20d4d
 helpviewer_keywords: ["std::operator!= (set)", "std::operator> (set)", "std::operator>= (set)", "std::operator< (set)", "std::operator<= (set)", "std::operator== (set)"]
 ---
-`<set>` operators
+# `<set>` operators
 
 ## <a name="op_neq"></a> operator!= (set)
 

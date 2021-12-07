@@ -6,7 +6,7 @@ f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/s
 ms.assetid: 8a53562c-90ab-4eb3-85d3-ada5259d90b0
 helpviewer_keywords: ["std::operator!= (valarray), std::operator& (valarray)", "std::operator&& (valarray)", "std::operator&gt; (valarray)", "std::operator&gt;&gt; (valarray)", "std::operator&gt;= (valarray)", "std::operator&lt; (valarray)", "std::operator&lt;&lt; (valarray)", "std::operator&lt;= (valarray), std::operator== (valarray)"]
 ---
-`<valarray>` operators
+# `<valarray>` operators
 
 ## <a name="op_neq"></a> operator!=
 

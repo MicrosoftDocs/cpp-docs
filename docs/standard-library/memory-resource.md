@@ -5,7 +5,7 @@ ms.date: "04/04/2019"
 f1_keywords: ["<memory_resource>"]
 helpviewer_keywords: ["memory_resource header"]
 ---
-`<memory_resource>`
+# `<memory_resource>`
 
 Defines the container class template memory_resource and its supporting templates.
 

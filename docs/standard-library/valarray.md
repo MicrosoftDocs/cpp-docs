@@ -6,7 +6,7 @@ f1_keywords: ["<valarray>"]
 helpviewer_keywords: ["valarray header"]
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
 ---
-`<valarray>`
+# `<valarray>`
 
 Defines the class template valarray and numerous supporting class templates and functions.
 

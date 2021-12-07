@@ -6,7 +6,7 @@ f1_keywords: ["<utility>"]
 helpviewer_keywords: ["utility header"]
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
 ---
-`<utility>`
+# `<utility>`
 
 Defines C++ Standard Library types, functions, and operators that help to construct and manage pairs of objects, which are useful whenever two objects need to be treated as if they were one.
 

@@ -6,7 +6,7 @@ f1_keywords: ["<cstdbool>"]
 helpviewer_keywords: ["cstdbool header"]
 ms.assetid: 44ccb8b2-d808-4715-8097-58ba09ab33ed
 ---
-`<cstdbool>`
+# `<cstdbool>`
 
 Includes the C standard library header \<stdbool.h> and adds the associated names to the `std` namespace.
 

@@ -6,7 +6,7 @@ f1_keywords: ["mutex/std::adopt_lock", "mutex/std::call_once", "mutex/std::defer
 ms.assetid: 78ab3c8b-c7db-4226-ac93-e2e78ff8b964
 helpviewer_keywords: ["std::adopt_lock [C++]", "std::call_once [C++]", "std::defer_lock [C++]", "std::lock [C++]", "std::try_to_lock [C++]"]
 ---
-`<mutex>` functions and variables
+# `<mutex>` functions and variables
 
 ## <a name="adopt_lock"></a> adopt_lock
 

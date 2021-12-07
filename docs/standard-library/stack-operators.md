@@ -6,7 +6,7 @@ f1_keywords: ["stack/std::operator!=", "stack/std::operator>", "stack/std::opera
 ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2
 helpviewer_keywords: ["std::operator!= (stack)", "std::operator> (stack)", "std::operator>= (stack)", "std::operator< (stack)", "std::operator<= (stack)", "std::operator== (stack)"]
 ---
-`<stack>` operators
+# `<stack>` operators
 
 ## <a name="op_neq"></a> operator!=
 

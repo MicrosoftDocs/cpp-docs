@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["tuple/std::operator!=", "tuple/std::operator>", "tuple/std::operator>=", "tuple/std::operator<", "tuple/std::operator<=", "tuple/std::operator=="]
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
 ---
-`<tuple>` operators
+# `<tuple>` operators
 
 ## <a name="op_neq"></a> operator!=
 

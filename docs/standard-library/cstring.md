@@ -6,7 +6,7 @@ f1_keywords: ["<cstring>"]
 helpviewer_keywords: ["<cstring> header", "cstring header"]
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
 ---
-`<cstring>`
+# `<cstring>`
 
 Includes the Standard C library header \<string.h> and adds the associated names to the `std` namespace.
 

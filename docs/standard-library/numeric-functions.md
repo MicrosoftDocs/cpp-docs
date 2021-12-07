@@ -6,7 +6,7 @@ f1_keywords: ["numeric/std::accumulate", "numeric/std::adjacent_difference", "nu
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
 helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]", "std::exclusive_scan [C++]", "std::gcd [C++]", "std::inclusive_scan [C++]", "std::inner_product [C++]", "std::iota [C++]", "std::lcm [C++]", "std::partial_sum [C++]", "std::reduce [C++]", "std::transform_exclusive_scan [C++]", "std::transform_inclusive_scan [C++]", "std::transform_reduce [C++]"]
 ---
-`<numeric>` functions
+# `<numeric>` functions
 
 ## <a name="accumulate"></a> accumulate
 

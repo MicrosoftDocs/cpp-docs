@@ -6,7 +6,7 @@ f1_keywords: ["<cstdarg>"]
 helpviewer_keywords: ["cstdarg header"]
 ms.assetid: 639b4ef7-8408-4640-9343-41631f0ab663
 ---
-`<cstdarg>`
+# `<cstdarg>`
 
 Includes the C Standard library header \<stdarg.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C Standard library header are declared in the `std` namespace.
 

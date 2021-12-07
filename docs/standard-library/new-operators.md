@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 ---
-`<new>` operators and enums
+# `<new>` operators and enums
 
 ## <a name="op_align_val_t"></a> enum align_val_t
 

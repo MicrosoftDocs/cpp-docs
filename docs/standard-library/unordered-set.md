@@ -6,7 +6,7 @@ f1_keywords: ["<unordered_set>"]
 helpviewer_keywords: ["unordered_set header"]
 ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226
 ---
-`<unordered_set>`
+# `<unordered_set>`
 
 Defines the container class templates [unordered_multiset](../standard-library/unordered-multiset-class.md) and [unordered_set](../standard-library/unordered-set-class.md) and their supporting templates.
 

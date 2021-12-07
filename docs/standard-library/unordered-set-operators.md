@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 ---
-`<unordered_set>` operators
+# `<unordered_set>` operators
 
 ## <a name="op_neq"></a> operator!=
 

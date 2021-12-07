@@ -6,7 +6,7 @@ f1_keywords: ["vector/std::operator!=", "vector/std::operator>", "vector/std::op
 ms.assetid: 1d14f312-6f59-4ec7-88ae-95f89a558823
 helpviewer_keywords: ["std::operator!= (vector)", "std::operator> (vector)", "std::operator>= (vector)", "std::operator< (vector)", "std::operator<= (vector)", "std::operator== (vector)"]
 ---
-`<vector>` operators
+# `<vector>` operators
 
 ## <a name="op_neq"></a> operator!=
 

@@ -4,7 +4,7 @@ title: "<initializer_list>"
 ms.date: "11/04/2016"
 ms.assetid: 820b6448-fb01-49a4-aeaa-546ad7576ea4
 ---
-`<initializer_list>`
+# `<initializer_list>`
 
 Defines the container class template `initializer_list` and several supporting templates.
 

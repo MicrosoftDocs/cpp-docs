@@ -6,7 +6,7 @@ f1_keywords: ["allocators/std::ALLOCATOR_DECL", "allocators/std::CACHE_CHUNKLIST
 ms.assetid: 9cb5ee07-1ff9-4594-ae32-3c8c6efb511a
 helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]", "std::CACHE_FREELIST [C++]", "std::CACHE_SUBALLOC [C++]", "std::SYNC_DEFAULT [C++]"]
 ---
-`<allocators>` macros
+# `<allocators>` macros
 
 :::row:::
    :::column span="":::

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["memory/std::operator!=", "memory/std::operator>", "memory/std::operator>=", "memory/std::operator<", "memory/std::operator<=", "memory/std::operator<<", "memory/std::operator=="]
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
 ---
-`<memory>` operators
+# `<memory>` operators
 
 ## <a name="op_neq"></a> operator!=
 

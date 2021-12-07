@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::get_default_resource", "memory_resource/std::new_delete_resource", "memory_resource/std::null_memory_resource", "memory_resource/std::polymorphic_allocator", "memory_resource/std::set_default_resource"]
 helpviewer_keywords: ["std::get_default_resource [C++]", "std::new_delete_resource [C++]", "std::null_memory_resource [C++]", "std::polymorphic_allocator [C++]", "std::set_default_resource [C++]"]
 ---
-`<memory_resource>` functions
+# `<memory_resource>` functions
 
 ## <a name="get_default"></a> get_default_resource
 

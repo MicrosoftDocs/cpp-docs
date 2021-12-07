@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["istream/std::operator>>"]
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
 ---
-`<istream>` operators
+# `<istream>` operators
 
 ## <a name="op_gt_gt"></a> operator&gt;&gt;
 

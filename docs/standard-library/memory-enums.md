@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["memory/std::pointer_safety"]
 ms.assetid: b9be0a7b-0beb-40b2-8183-911de371c6b9
 ---
-`<memory>` enums
+# `<memory>` enums
 
 ## <a name="pointer_safety"></a> pointer_safety Enumeration
 
