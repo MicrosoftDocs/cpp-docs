@@ -6,7 +6,7 @@ f1_keywords: ["<hash_set>"]
 helpviewer_keywords: ["hash_set header"]
 ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
 ---
-# &lt;hash_set&gt;
+# `<hash_set>`
 
 > [!NOTE]
 > This header is obsolete. The alternative is [<unordered_set>](../standard-library/unordered-set.md).

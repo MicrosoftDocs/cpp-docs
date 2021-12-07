@@ -13,10 +13,10 @@ The binary relational and equality operators compare their first operand to thei
 
 *relational-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;=** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>=** *shift-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **`<`** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **`>`** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **`<=`** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **`>=`** *shift-expression*
 
 *equality-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*relational-expression*<br/>
@@ -27,10 +27,10 @@ The relational and equality operators test the following relationships:
 
 |Operator|Relationship Tested|
 |--------------|-------------------------|
-|**&lt;**|First operand less than second operand|
-|**>**|First operand greater than second operand|
-|**&lt;=**|First operand less than or equal to second operand|
-|**>=**|First operand greater than or equal to second operand|
+|**`<`**|First operand less than second operand|
+|**`>`**|First operand greater than second operand|
+|**`<=`**|First operand less than or equal to second operand|
+|**`>=`**|First operand greater than or equal to second operand|
 |**==**|First operand equal to second operand|
 |**!=**|First operand not equal to second operand|
 

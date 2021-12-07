@@ -13,7 +13,7 @@ ms.assetid: 5ebc2f40-e47e-4f8e-b7b9-960b9cfc9f6d
 
 ## Remarks
 
-The operand for [&period;ALLOCSTACK](dot-allocstack.md) and [&period;SAVEREG](dot-savereg.md) must be a multiple of 8.  The operand for [&period;SAVEXMM128](dot-savexmm128.md) and [&period;SETFRAME](dot-setframe.md) must be a multiple of 16.
+The operand for [`.ALLOCSTACK`](dot-allocstack.md) and [`.SAVEREG`](dot-savereg.md) must be a multiple of 8.  The operand for [`.SAVEXMM128`](dot-savexmm128.md) and [`.SETFRAME`](dot-setframe.md) must be a multiple of 16.
 
 ## See also
 

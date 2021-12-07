@@ -189,7 +189,7 @@ The object to be tested for inequality.
 
 The member operator returns `(!*this == right)`.
 
-### <a name="op_lt"></a> operator&lt;
+### <a name="op_lt"></a> `operator<`
 
 Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.
 

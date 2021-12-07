@@ -26,7 +26,7 @@ public value struct Guid
 |[Guid](#ctor)|Initializes a new instance of a `Platform::Guid`.|
 |[operator==](#operator-equality)|Equals operator.|
 |[operator!=](#operator-inequality)|Not equals operator.|
-|[operator&lt;](#operator-less)|Less than operator.|
+|[`operator<`](#operator-less)|Less than operator.|
 |[operator()](#operator-call)|Converts a `Platform::Guid` to a `GUID`.|
 
 ### Remarks
@@ -162,7 +162,7 @@ The second `Platform::Guid` to compare.
 
 True if the two `Platform::Guid` instances are not equal.
 
-## <a name="operator-less"></a> Guid::operator&lt; Operator
+## <a name="operator-less"></a> `Guid::operator<` Operator
 
 Compares two `Platform::Guid` instances for ordering.
 

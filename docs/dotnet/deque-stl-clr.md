@@ -2308,7 +2308,7 @@ int main()
 a b c
 ```
 
-## <a name="op_lt"></a> operator&lt; (deque) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (deque) (STL/CLR)
 
 Deque less than comparison.
 
@@ -2377,7 +2377,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> operator&lt;= (deque) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (deque) (STL/CLR)
 
 Deque less than or equal comparison.
 
@@ -2568,7 +2568,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> operator&gt; (deque) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (deque) (STL/CLR)
 
 Deque greater than comparison.
 
@@ -2637,7 +2637,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> operator&gt;= (deque) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (deque) (STL/CLR)
 
 Deque greater than or equal comparison.
 

@@ -2,11 +2,11 @@
 description: "Learn more about: <bitset> operators"
 title: "<bitset> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["bitset/std::operator&", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]
+f1_keywords: ["bitset/std::operator&", "bitset/std::operator>>", "bitset/std::operator<<", "bitset/std::operator^", "bitset/std::operator|"]
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
-helpviewer_keywords: ["std::operator& (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
+helpviewer_keywords: ["std::operator& (bitset)", "std::operator>> (bitset)", "std::operator<< (bitset)"]
 ---
-# &lt;bitset&gt; operators
+# `<bitset>` operators
 
 ## <a name="op_amp"></a> operator&
 
@@ -60,7 +60,7 @@ bitset 2: 0011
 bitset 3: 0001
 ```
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
+## <a name="op_lt_lt"></a> `operator<<`
 
 Inserts a text representation of the bit sequence into the output stream.
 
@@ -117,7 +117,7 @@ int main( )
 }
 ```
 
-## <a name="op_gt_gt"></a> operator&gt;&gt;
+## <a name="op_gt_gt"></a> `operator>>`
 
 Reads a string of bit characters into a bitset.
 

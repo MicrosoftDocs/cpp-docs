@@ -116,7 +116,7 @@ operator T&();
 
 A reference to `m_T`.
 
-## <a name="operator_lt"></a> CAdapt::operator &lt;
+## <a name="operator_lt"></a> `CAdapt::operator <`
 
 Compares an object of the adapted type with [m_T](#m_t).
 

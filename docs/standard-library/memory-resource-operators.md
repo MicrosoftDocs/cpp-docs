@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::operator!=", "memory_resource/std::operator=="]
 helpviewer_keywords: ["std::operator!= (memory_resource)", "std::operator== (memory_resource)"]
 ---
-# &lt;memory_resource&gt; operators
+# `<memory_resource>` operators
 
 ## <a name="op_neq"></a> operator!=
 

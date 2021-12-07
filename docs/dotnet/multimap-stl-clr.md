@@ -2426,7 +2426,7 @@ int main()
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> operator&lt; (multimap) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (multimap) (STL/CLR)
 
 List less than comparison.
 
@@ -2497,7 +2497,7 @@ int main()
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> operator&lt;= (multimap) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (multimap) (STL/CLR)
 
 List less than or equal comparison.
 
@@ -2639,7 +2639,7 @@ int main()
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> operator&gt; (multimap) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (multimap) (STL/CLR)
 
 List greater than comparison.
 
@@ -2710,7 +2710,7 @@ int main()
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> operator&gt;= (multimap) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (multimap) (STL/CLR)
 
 List greater than or equal comparison.
 
