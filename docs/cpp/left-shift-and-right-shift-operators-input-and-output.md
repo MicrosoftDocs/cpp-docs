@@ -8,7 +8,7 @@ ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
 ---
 # Left Shift and Right Shift Operators (`<<` and `>>`)
 
-The bitwise shift operators are the right-shift operator (**&gt;&gt;**), which moves the bits of *shift-expression* to the right, and the left-shift operator (**&lt;&lt;**), which moves the bits of *shift-expression* to the left. <sup>1</sup>
+The bitwise shift operators are the right-shift operator (**`>>`**), which moves the bits of *shift-expression* to the right, and the left-shift operator (**`<<`**), which moves the bits of *shift-expression* to the left. <sup>1</sup>
 
 ## Syntax
 

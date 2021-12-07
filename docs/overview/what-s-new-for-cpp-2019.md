@@ -337,7 +337,7 @@ The new IntelliCode features (Custom Models, C++ support, and EditorConfig infer
 
 ### Code Analysis
 
-- New quick fixes for uninitialized variable checks were added. Code Analysis warnings [C6001: using uninitialized memory &lt;variable&gt;](../code-quality/c6001.md) and [C26494 VAR_USE_BEFORE_INIT](../code-quality/c26494.md) are available in the lightbulb menu on relevant lines. They're enabled by default in the Microsoft Native Minimum ruleset and C++ Core Check Type rulesets, respectively. For more information, see [New code analysis quick fixes for uninitialized memory (C6001) and use before init (C26494) warnings](https://devblogs.microsoft.com/cppblog/new-code-analysis-quick-fixes-for-uninitialized-memory-c6001-and-use-before-init-c26494-warnings/).
+- New quick fixes for uninitialized variable checks were added. Code Analysis warnings [C6001: using uninitialized memory `<variable>`](../code-quality/c6001.md) and [C26494 VAR_USE_BEFORE_INIT](../code-quality/c26494.md) are available in the lightbulb menu on relevant lines. They're enabled by default in the Microsoft Native Minimum ruleset and C++ Core Check Type rulesets, respectively. For more information, see [New code analysis quick fixes for uninitialized memory (C6001) and use before init (C26494) warnings](https://devblogs.microsoft.com/cppblog/new-code-analysis-quick-fixes-for-uninitialized-memory-c6001-and-use-before-init-c26494-warnings/).
 
 ### Remote builds
 

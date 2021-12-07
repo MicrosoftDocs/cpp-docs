@@ -7,7 +7,7 @@ ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
 ---
 # `<allocators>` operators
 
-These are the global template operator functions defined in &lt;allocators&gt;. For class member operator functions, see the class documentation.
+These are the global template operator functions defined in `<allocators>`. For class member operator functions, see the class documentation.
 
 [operator!=](#op_neq)\
 [operator==](#op_eq_eq)

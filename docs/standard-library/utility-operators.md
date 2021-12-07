@@ -149,7 +149,7 @@ int main( )
 }
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if the pair object on the left side of the operator is less than the pair object on the right side.
 
@@ -223,7 +223,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the pair object on the left side of the operator is less than or equal to the pair object on the right side.
 
@@ -308,7 +308,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the pair object on the left side of the operator is greater than the pair object on the right side.
 
@@ -395,7 +395,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the pair object on the left side of the operator is greater than or equal to the pair object on the right side.
 

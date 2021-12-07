@@ -205,7 +205,7 @@ The iterator to compare to.
 
 The member function returns true if **`*this`** and *right* are both end-of-sequence iterators or if neither is an end-of-sequence iterator and `begin == right.begin`, `end == right.end`, `pregex == right.pregex`, and `flags == right.flags`. Otherwise it returns false.
 
-## <a name="op_arrow"></a> regex_iterator::operator-&gt;
+## <a name="op_arrow"></a> `regex_iterator::operator->`
 
 Accesses the designated match.
 

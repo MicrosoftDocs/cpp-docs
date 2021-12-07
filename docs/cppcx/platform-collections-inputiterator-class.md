@@ -77,7 +77,7 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 *iterator*<br/>
 An iterator object.
 
-## <a name="operator-arrow"></a> InputIterator::operator-&gt; Operator
+## <a name="operator-arrow"></a> `InputIterator::operator->` Operator
 
 Retrieves the address of the element specified by the current InputIterator.
 

@@ -38,7 +38,7 @@ class CDumpContext
 
 |Name|Description|
 |----------|-----------------|
-|[CDumpContext::operator &lt;&lt;](#operator_lt_lt)|Inserts variables and objects into the dump context.|
+|[`CDumpContext::operator <<`](#operator_lt_lt)|Inserts variables and objects into the dump context.|
 
 ## Remarks
 
@@ -184,7 +184,7 @@ To dump a single, specific item type as a hexadecimal number, call [CDumpContext
 
 [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]
 
-## <a name="operator_lt_lt"></a> CDumpContext::operator &lt;&lt;
+## <a name="operator_lt_lt"></a> `CDumpContext::operator <<`
 
 Outputs the specified data to the dump context.
 

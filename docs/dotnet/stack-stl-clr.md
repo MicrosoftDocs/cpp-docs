@@ -1164,7 +1164,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> operator&lt; (stack) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (stack) (STL/CLR)
 
 Stack less than comparison.
 
@@ -1235,7 +1235,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> operator&lt;= (stack) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (stack) (STL/CLR)
 
 Stack less than or equal comparison.
 
@@ -1377,7 +1377,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> operator&gt; (stack) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (stack) (STL/CLR)
 
 Stack greater than comparison.
 
@@ -1448,7 +1448,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> operator&gt;= (stack) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (stack) (STL/CLR)
 
 Stack greater than or equal comparison.
 

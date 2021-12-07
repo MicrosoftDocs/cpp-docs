@@ -391,7 +391,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]
 
-## <a name="operator_stream"></a> COleCurrency::operator &lt;&lt;, &gt;&gt;
+## <a name="operator_stream"></a> `operator <<`, `operator >>`
 
 Supports diagnostic dumping and storing to an archive.
 

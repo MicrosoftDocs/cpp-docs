@@ -43,7 +43,7 @@ The .NET Framework user control to be displayed in the MFC application.
 
 |Name|Description|
 |----------|-|
-|[CWinFormsDialog::operator -&gt;](#operator_-_gt)|Replaces [CWinFormsDialog::GetControl](#getcontrol) in expressions.|
+|[`CWinFormsDialog::operator ->`](#operator_-_gt)|Replaces [CWinFormsDialog::GetControl](#getcontrol) in expressions.|
 |[CWinFormsDialog::operator TManagedControl^](#operator-tmanagedcontrol-hat)|Casts a type as a reference to a Windows Forms user control.|
 
 ## Remarks
@@ -111,7 +111,7 @@ When the MFC dialog box is created (using the [Create](../../mfc/reference/cdial
 
 Override this member function if you need to perform special processing when the dialog box is initialized. For more information on using this method, see [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog).
 
-## <a name="operator_-_gt"></a> CWinFormsDialog::operator -&gt;
+## <a name="operator_-_gt"></a> `CWinFormsDialog::operator ->`
 
 Replaces [CWinFormsDialog::GetControl](#getcontrol) in expressions.
 
