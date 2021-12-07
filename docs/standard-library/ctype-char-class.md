@@ -6,7 +6,7 @@ f1_keywords: ["ctype<char>", "locale/std::ctype<char>"]
 helpviewer_keywords: ["ctype<char> class"]
 ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
 ---
-# ctype&lt;char&gt; Class
+# `ctype<char>` Class
 
 The class is an explicit specialization of class template `ctype\<CharType>` to type **`char`**, describing an object that can serve as a locale facet to characterize various properties of a character of type **`char`**.
 

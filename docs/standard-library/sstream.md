@@ -6,7 +6,7 @@ f1_keywords: ["<sstream>"]
 helpviewer_keywords: ["sstream header"]
 ms.assetid: 56f55bc5-549d-4e7f-aaad-99e0ffa49c9e
 ---
-# &lt;sstream&gt;
+# `<sstream>`
 
 Defines several class templates that support iostreams operations on sequences stored in an allocated array object. Such sequences are easily converted to and from objects of class template [basic_string](../standard-library/basic-string-class.md).
 

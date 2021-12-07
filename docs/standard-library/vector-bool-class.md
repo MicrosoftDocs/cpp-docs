@@ -6,7 +6,7 @@ f1_keywords: ["vector<bool>", "vector/std::vector::flip"]
 helpviewer_keywords: ["std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
 ---
-# vector&lt;bool&gt; Class
+# `vector<bool>` Class
 
 The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type **`bool`**. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one **`bool`** value per bit.
 
@@ -72,7 +72,7 @@ typedef bool const_reference;
 
 ### Remarks
 
-For more information and code examples, see [vector&lt;bool&gt;::reference::operator=](#reference_operator_eq).
+For more information and code examples, see [`vector<bool>::reference::operator=`](#reference_operator_eq).
 
 ## <a name="flip"></a> vector\<bool>::flip
 

@@ -6,7 +6,7 @@ f1_keywords: ["vector/std::vector<bool>::reference::flip"]
 helpviewer_keywords: ["reference::flip method"]
 ms.assetid: ef940365-cbe4-4a87-a3e2-1f3cfa357e29
 ---
-# vector&lt;bool&gt;::reference::flip
+# `vector<bool>::reference::flip`
 
 Inverts the Boolean value of a referenced [vector\<bool>](../standard-library/vector-bool-class.md) element.
 

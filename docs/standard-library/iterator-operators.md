@@ -6,7 +6,7 @@ f1_keywords: ["xutility/std::operator!=", "xutility/std::operator>", "xutility/s
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc
 helpviewer_keywords: ["std::operator!= (iterator)", "std::operator> (iterator)", "std::operator>= (iterator)", "std::operator< (iterator)", "std::operator<= (iterator), std::operator== (iterator)"]
 ---
-# &lt;iterator&gt; operators
+# `<iterator>` operators
 
 ## <a name="op_neq"></a> operator!=
 
@@ -207,7 +207,7 @@ in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.
 
@@ -298,7 +298,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.
 
@@ -393,7 +393,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.
 
@@ -482,7 +482,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.
 

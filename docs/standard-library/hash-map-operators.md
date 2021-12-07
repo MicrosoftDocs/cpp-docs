@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["hash_map/std::operator!=", "hash_map/std::operator=="]
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 ---
-# &lt;hash_map&gt; operators
+# `<hash_map>` operators
 
 [operator!=](#op_neq)\
 [operator!= (multimap)](#op_neq_mm)\

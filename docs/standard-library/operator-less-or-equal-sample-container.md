@@ -6,7 +6,7 @@ f1_keywords: ["std::<=", "std.operator<=", "operator<=", "std.<=", "std::operato
 helpviewer_keywords: ["operator<=", "operator <=", "<= operator, with specific objects", "<= operator"]
 ms.assetid: 338577dd-dc88-4a2b-9e12-0379c54fc8a2
 ---
-# operator&lt;= (&lt;sample container&gt;)
+# `operator<=` (`<sample container>`)
 
 > [!NOTE]
 > This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).

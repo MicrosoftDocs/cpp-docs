@@ -6,7 +6,7 @@ f1_keywords: ["stack/std::operator!=", "stack/std::operator>", "stack/std::opera
 ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2
 helpviewer_keywords: ["std::operator!= (stack)", "std::operator> (stack)", "std::operator>= (stack)", "std::operator< (stack)", "std::operator<= (stack)", "std::operator== (stack)"]
 ---
-# &lt;stack&gt; operators
+# `<stack>` operators
 
 ## <a name="op_neq"></a> operator!=
 
@@ -73,7 +73,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if the stack object on the left side of the operator is less than the stack object on the right side.
 
@@ -157,7 +157,7 @@ The stack s1 is greater than or equal to the stack s3.
 The stack s1 from the top down is: ( 8 6 4 2 ).
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the stack object on the left side of the operator is less than or equal to the stack object on the right side.
 
@@ -289,7 +289,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the stack object on the left side of the operator is greater than the stack object on the right side.
 
@@ -358,7 +358,7 @@ The stack s1 is not greater than the stack s2.
 The stack s1 is greater than the stack s3.
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the stack object on the left side of the operator is greater than or equal to the stack object on the right side.
 

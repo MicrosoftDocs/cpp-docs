@@ -195,7 +195,7 @@ Two concurrent vectors are equal if they have the same number of elements and th
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_lt"></a> operator&lt; Operator
+## <a name="operator_lt"></a> `operator<` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.
 
@@ -233,7 +233,7 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_lt_eq"></a> operator&lt;= Operator
+## <a name="operator_lt_eq"></a> `operator<=` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.
 
@@ -271,7 +271,7 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_gt"></a> operator&gt; Operator
+## <a name="operator_gt"></a> `operator>` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.
 
@@ -309,7 +309,7 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_gt_eq"></a> operator&gt;= Operator
+## <a name="operator_gt_eq"></a> `operator>=` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.
 

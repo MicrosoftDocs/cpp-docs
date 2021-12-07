@@ -6,7 +6,7 @@ f1_keywords: ["?:", "?"]
 helpviewer_keywords: ["conditional operators [C++]", "? : operator"]
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
 ---
-# Conditional Operator: &quest; :
+# Conditional Operator: `?:`
 
 ## Syntax
 

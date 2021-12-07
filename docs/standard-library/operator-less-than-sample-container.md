@@ -6,7 +6,7 @@ f1_keywords: ["std::operator<", "operator<", "std.<", "<", "std.operator<", "std
 helpviewer_keywords: ["< operator, comparing specific objects", "operator<, valarrays", "< operator", "operator <, valarrays"]
 ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
 ---
-# operator&lt; (&lt;sample container&gt;)
+# `operator<` (`<sample container>`)
 
 > [!NOTE]
 > This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).

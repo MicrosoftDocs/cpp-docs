@@ -2,11 +2,11 @@
 description: "Learn more about: <valarray> operators"
 title: "<valarray> operators"
 ms.date: "03/27/2019"
-f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&", "valarray/std::operator&&", "valarray/std::operator&gt;", "valarray/std::operator&gt;&gt;", "valarray/std::operator&gt;=", "valarray/std::operator&lt;", "valarray/std::operator&lt;&lt;", "valarray/std::operator&lt;=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]
+f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&", "valarray/std::operator&&", "valarray/std::operator>", "valarray/std::operator>>", "valarray/std::operator>=", "valarray/std::operator<", "valarray/std::operator<<", "valarray/std::operator<=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]
 ms.assetid: 8a53562c-90ab-4eb3-85d3-ada5259d90b0
-helpviewer_keywords: ["std::operator!= (valarray), std::operator& (valarray)", "std::operator&& (valarray)", "std::operator&gt; (valarray)", "std::operator&gt;&gt; (valarray)", "std::operator&gt;= (valarray)", "std::operator&lt; (valarray)", "std::operator&lt;&lt; (valarray)", "std::operator&lt;= (valarray), std::operator== (valarray)"]
+helpviewer_keywords: ["std::operator!= (valarray), std::operator& (valarray)", "std::operator&& (valarray)", "std::operator> (valarray)", "std::operator>> (valarray)", "std::operator>= (valarray)", "std::operator< (valarray)", "std::operator<< (valarray)", "std::operator<= (valarray), std::operator== (valarray)"]
 ---
-# &lt;valarray&gt; operators
+# `<valarray>` operators
 
 ## <a name="op_neq"></a> operator!=
 
@@ -370,7 +370,7 @@ The element-by-element result of the logical AND operator&& is the
 valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests whether the elements of one valarray are greater than the elements of an equally sized valarray or whether all the elements of a valarray are greater or less than a specified value.
 
@@ -463,7 +463,7 @@ The element-by-element result of the greater than comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests whether the elements of one valarray are greater than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.
 
@@ -556,7 +556,7 @@ The element-by-element result of the greater than or equal test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="op_gt_gt"></a> operator&gt;&gt;
+## <a name="op_gt_gt"></a> `operator>>`
 
 Right-shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.
 
@@ -645,7 +645,7 @@ The element-by-element result of the right shift is the
 valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests whether the elements of one valarray are less than the elements of an equally sized valarray or whether all the elements of a valarray are greater or less than a specified value.
 
@@ -738,7 +738,7 @@ The element-by-element result of the less-than comparson test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests whether the elements of one valarray are less than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.
 
@@ -831,7 +831,7 @@ The element-by-element result of the less than or equal test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
+## <a name="op_lt_lt"></a> `operator<<`
 
 Left shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.
 

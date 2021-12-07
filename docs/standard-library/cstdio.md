@@ -6,7 +6,7 @@ f1_keywords: ["<cstdio>"]
 helpviewer_keywords: ["cstdio header"]
 ms.assetid: 838ca50b-dea5-4ee3-a39c-e7c23a6ee016
 ---
-# &lt;cstdio&gt;
+# `<cstdio>`
 
 Includes the Standard C library header \<stdio.h> and adds the associated names to the `std` namespace.
 

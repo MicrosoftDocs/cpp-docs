@@ -342,7 +342,7 @@ The second `String` object to compare.
 
 This operator is equivalent to [String::CompareOrdinal](#compareordinal).
 
-## <a name="operator-greater-than"></a> String::operator&gt;
+## <a name="operator-greater-than"></a> `String::operator>`
 
 Indicates whether the value of one `String` object is greater than the value of a second `String` object.
 
@@ -368,7 +368,7 @@ The second `String` object.
 
 This operator is equivalent to explicitly calling [String::CompareOrdinal](#compareordinal) and getting a result greater than zero.
 
-## <a name="operator-greater-than-or-equals"></a> String::operator&gt;=
+## <a name="operator-greater-than-or-equals"></a> `String::operator>=`
 
 Indicates whether the value of one `String` object is greater than or equal to the value of a second `String` object.
 
@@ -412,7 +412,7 @@ The second `String` object to compare.
 
 **`true`** if `str1` is not equal to `str2`; otherwise, **`false`**.
 
-## <a name="operator-less-than"></a> String::operator&lt;
+## <a name="operator-less-than"></a> `String::operator<`
 
 Indicates whether the value of one `String` object is less than the value of a second `String` object.
 

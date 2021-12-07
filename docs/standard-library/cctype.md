@@ -6,7 +6,7 @@ f1_keywords: ["<cctype>"]
 helpviewer_keywords: ["cctype header"]
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
 ---
-# &lt;cctype&gt;
+# `<cctype>`
 
 Includes the Standard C library header \<ctype.h> and adds the associated names to the `std` namespace.
 

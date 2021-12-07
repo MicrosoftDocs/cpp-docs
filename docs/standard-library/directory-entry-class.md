@@ -2,9 +2,9 @@
 description: "Learn more about: directory_entry Class"
 title: "directory_entry Class"
 ms.date: "09/10/2018"
-f1_keywords: ["filesystem/std::experimental::filesystem::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "filesystem/std::experimental::filesystem::directory_entry::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator=", "filesystem/std::experimental::filesystem::directory_entry::assign", "filesystem/std::experimental::filesystem::directory_entry::replace_filename", "filesystem/std::experimental::filesystem::directory_entry::path", "filesystem/std::experimental::filesystem::directory_entry::status", "filesystem/std::experimental::filesystem::directory_entry::symlink_status", "filesystem/std::experimental::filesystem::directory_entry::operator&lt;", "filesystem/std::experimental::filesystem::directory_entry::operator==", "filesystem/std::experimental::filesystem::directory_entry::operator!=", "filesystem/std::experimental::filesystem::directory_entry::operator&lt;=", "filesystem/std::experimental::filesystem::directory_entry::operator&gt;", "filesystem/std::experimental::filesystem::directory_entry::operator&gt;="]
+f1_keywords: ["filesystem/std::experimental::filesystem::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "filesystem/std::experimental::filesystem::directory_entry::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator=", "filesystem/std::experimental::filesystem::directory_entry::assign", "filesystem/std::experimental::filesystem::directory_entry::replace_filename", "filesystem/std::experimental::filesystem::directory_entry::path", "filesystem/std::experimental::filesystem::directory_entry::status", "filesystem/std::experimental::filesystem::directory_entry::symlink_status", "filesystem/std::experimental::filesystem::directory_entry::operator<", "filesystem/std::experimental::filesystem::directory_entry::operator==", "filesystem/std::experimental::filesystem::directory_entry::operator!=", "filesystem/std::experimental::filesystem::directory_entry::operator<=", "filesystem/std::experimental::filesystem::directory_entry::operator>", "filesystem/std::experimental::filesystem::directory_entry::operator>="]
 ms.assetid: 1827c67b-4137-4548-adb0-f955f7acaf08
-helpviewer_keywords: ["std::experimental::filesystem::directory_entry", "std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "std::experimental::filesystem::directory_entry::directory_entry", "std::experimental::filesystem::directory_entry::operator=", "std::experimental::filesystem::directory_entry::assign", "std::experimental::filesystem::directory_entry::replace_filename", "std::experimental::filesystem::directory_entry::path", "std::experimental::filesystem::directory_entry::status", "std::experimental::filesystem::directory_entry::symlink_status", "std::experimental::filesystem::directory_entry::operator&lt;", "std::experimental::filesystem::directory_entry::operator==", "std::experimental::filesystem::directory_entry::operator!=", "std::experimental::filesystem::directory_entry::operator&lt;=", "std::experimental::filesystem::directory_entry::operator&gt;", "std::experimental::filesystem::directory_entry::operator&gt;="]
+helpviewer_keywords: ["std::experimental::filesystem::directory_entry", "std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "std::experimental::filesystem::directory_entry::directory_entry", "std::experimental::filesystem::directory_entry::operator=", "std::experimental::filesystem::directory_entry::assign", "std::experimental::filesystem::directory_entry::replace_filename", "std::experimental::filesystem::directory_entry::path", "std::experimental::filesystem::directory_entry::status", "std::experimental::filesystem::directory_entry::symlink_status", "std::experimental::filesystem::directory_entry::operator<", "std::experimental::filesystem::directory_entry::operator==", "std::experimental::filesystem::directory_entry::operator!=", "std::experimental::filesystem::directory_entry::operator<=", "std::experimental::filesystem::directory_entry::operator>", "std::experimental::filesystem::directory_entry::operator>="]
 ---
 # directory_entry Class
 
@@ -53,7 +53,7 @@ For more information and code examples, see [File System Navigation (C++)](../st
 
 ## Requirements
 
-**Header:** \<experimental/filesystem&gt;
+**Header:** \<experimental/filesystem>
 
 **Namespace:** std::experimental::filesystem
 
@@ -142,7 +142,7 @@ bool operator==(const directory_entry& right) const noexcept;
 *right*\
 The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 The member function returns `mypath < right.mypath`.
 
@@ -155,12 +155,12 @@ bool operator<(const directory_entry& right) const noexcept;
 *right*\
 The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.
 
-## <a name="op_lteq"></a> operator&lt;=
+## <a name="op_lteq"></a> `operator<=`
 
 The member function returns `!(right < *this)`.
 
 ```cpp
-bool operator&lt;=(const directory_entry& right) const noexcept;
+bool operator<=(const directory_entry& right) const noexcept;
 ```
 
 ### Parameters
@@ -168,12 +168,12 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 *right*\
 The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 The member function returns `right < *this`.
 
 ```cpp
-bool operator&gt;(const directory_entry& right) const noexcept;
+bool operator>(const directory_entry& right) const noexcept;
 ```
 
 ### Parameters
@@ -181,12 +181,12 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 *right*\
 The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.
 
-## <a name="op_gteq"></a> operator&gt;=
+## <a name="op_gteq"></a> `operator>=`
 
 The member function returns `!(*this < right)`.
 
 ```cpp
-bool operator&gt;=(const directory_entry& right) const noexcept;
+bool operator>=(const directory_entry& right) const noexcept;
 ```
 
 ### Parameters
@@ -267,4 +267,4 @@ The status error code.
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<filesystem&gt;](../standard-library/filesystem.md)
+[`<filesystem>`](../standard-library/filesystem.md)

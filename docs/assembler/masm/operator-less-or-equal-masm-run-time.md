@@ -6,7 +6,7 @@ f1_keywords: ["operator <="]
 helpviewer_keywords: ["operator <=", "<= operator, comparing specific objects"]
 ms.assetid: a5676804-07ef-40ab-8251-cde5b11ebdf9
 ---
-# operator &lt;= (MASM Run Time)
+# operator `<=` (MASM Run Time)
 
 Is less than or equal to. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [.REPEAT](dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 

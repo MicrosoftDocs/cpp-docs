@@ -6,7 +6,7 @@ f1_keywords: ["valarray/std::abs", "valarray/std::acos", "valarray/std::asin", "
 ms.assetid: 109778fc-440e-4239-b23e-bafda2b165c2
 helpviewer_keywords: ["std::abs [C++]", "std::acos [C++]", "std::asin [C++]", "std::atan [C++]", "std::atan2", "std::begin [C++]", "std::cos [C++]", "std::cosh [C++]", "std::end [C++]", "std::exp [C++]", "std::log [C++]", "std::log10", "std::pow [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::swap [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---
-# &lt;valarray&gt; functions
+# `<valarray>` functions
 
 ## <a name="abs"></a> abs
 

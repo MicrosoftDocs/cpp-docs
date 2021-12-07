@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["unordered_map/std::operator!=", "unordered_map/std::operator=="]
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
 ---
-# &lt;unordered_map&gt; operators
+# `<unordered_map>` operators
 
 [unordered_map::operator!=](#op_neq)\
 [unordered_map::operator==](#op_eq_eq)\
