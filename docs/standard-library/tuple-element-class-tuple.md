@@ -77,7 +77,7 @@ The class template specialization for arrays provides an interface to an `array`
 
 The template specializations for `pair` types each provide a single member typedef, `type`, which is a synonym for the type of the element at the specified position in the pair, with any const and/or volatile qualifications preserved. The typedef `tuple_element_t` is a convenient alias for `tuple_element<N, pair<T1, T2>>::type`.
 
-Use the [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get) to return the element at a specified position, or of a specified type.
+Use the [`get` Function](../standard-library/utility-functions.md#get) to return the element at a specified position, or of a specified type.
 
 ## Example: Get an element from a tuple
 

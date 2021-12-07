@@ -113,7 +113,7 @@ int main( )
 100
 ```
 
-## <a name="ios_defaultfloat"></a> &lt;ios&gt; defaultfloat
+## <a name="ios_defaultfloat"></a> defaultfloat
 
 Configures the flags of an `ios_base` object to use a default display format for float values.
 

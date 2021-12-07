@@ -28,7 +28,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 The C++ Standard Library defines two explicit specializations of this class template:
 
-- `ctype<char>`, an explicit specialization whose differences are described separately. For more information, see [ctype&lt;char&gt; Class](../standard-library/ctype-char-class.md).
+- `ctype<char>`, an explicit specialization whose differences are described separately. For more information, see [`ctype<char>` Class](../standard-library/ctype-char-class.md).
 
 - `ctype<wchar_t>`, which treats elements as wide characters.
 
