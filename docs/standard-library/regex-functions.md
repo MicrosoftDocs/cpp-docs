@@ -6,7 +6,7 @@ f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::
 ms.assetid: 91a8314b-6f7c-4e33-b7d6-d8583dd75585
 helpviewer_keywords: ["std::regex_match [C++]", "std::regex_replace [C++]", "std::regex_search [C++]", "std::swap [C++]", "std::swap [C++]"]
 ---
-# &lt;regex&gt; functions
+# `<regex>` functions
 
 |Name|Description|
 |-|-|

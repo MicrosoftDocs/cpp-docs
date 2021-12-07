@@ -6,7 +6,7 @@ f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator>>", "xcomplex/
 ms.assetid: aa282604-dcb9-46a2-bf1d-34c50aa6c4ba
 helpviewer_keywords: ["std::operator!= (complex)", "std::operator>> (complex)", "std::operator<< (complex), std::operator== (complex)"]
 ---
-# &lt;complex&gt; operators
+# `<complex>` operators
 
 ## <a name="op_neq"></a> operator!=
 
@@ -646,7 +646,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
+## <a name="op_lt_lt"></a> `operator<<`
 
 Inserts a complex number specified into the output stream.
 
@@ -847,7 +847,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_gt_gt"></a> operator&gt;&gt;
+## <a name="op_gt_gt"></a> `operator>>`
 
 Extracts a complex value from the input stream.
 

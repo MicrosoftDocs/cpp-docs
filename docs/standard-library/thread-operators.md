@@ -6,17 +6,17 @@ f1_keywords: ["thread/std::operator!=", "thread/std::operator>", "thread/std::op
 ms.assetid: e6bb6c0f-64f9-4cb2-9ff2-05b88a6ba7ac
 helpviewer_keywords: ["std::operator!= (thread)", "std::operator> (thread)", "std::operator>= (thread)", "std::operator< (thread)", "std::operator<< (thread)", "std::operator<= (thread)", "std::operator== (thread)"]
 ---
-# &lt;thread&gt; operators
+# `<thread>` operators
 
 [operator!=](#op_neq)\
-[operator&gt;](#op_gt)\
-[operator&gt;=](#op_gt_eq)\
-[operator&lt;](#op_lt)\
-[operator&lt;&lt;](#op_lt_lt)\
-[operator&lt;=](#op_lt_eq)\
+[`operator>`](#op_gt)\
+[`operator>=`](#op_gt_eq)\
+[`operator<`](#op_lt)\
+[`operator<<`](#op_lt_lt)\
+[`operator<=`](#op_lt_eq)\
 [operator==](#op_eq_eq)
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Determines whether one `thread::id` object is greater than or equal to another.
 
@@ -42,7 +42,7 @@ The right `thread::id` object.
 
 This function does not throw any exceptions.
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Determines whether one `thread::id` object is greater than another.
 
@@ -68,7 +68,7 @@ The right `thread::id` object.
 
 This function does not throw any exceptions.
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Determines whether one `thread::id` object is less than or equal to another.
 
@@ -94,7 +94,7 @@ The right `thread::id` object.
 
 This function does not throw any exceptions.
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Determines whether one `thread::id` object is less than another.
 
@@ -174,7 +174,7 @@ The right `thread::id` object.
 
 This function does not throw any exceptions.
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
+## <a name="op_lt_lt"></a> `operator<<`
 
 Inserts a text representation of a `thread::id` object into a stream.
 

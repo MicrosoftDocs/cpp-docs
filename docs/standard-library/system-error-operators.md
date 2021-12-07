@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
 ---
-# &lt;system_error&gt; operators
+# `<system_error>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 
@@ -65,7 +65,7 @@ The object to be tested for inequality.
 
 This function returns `!(left == right)`.
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if an object is less than the object passed in for comparison.
 
@@ -109,7 +109,7 @@ The object to be compared.
 
 This function tests the error order.
 
-## <a name="op_ostream"></a> operator&lt;&lt;
+## <a name="op_ostream"></a> `operator<<`
 
 ```cpp
 template <class charT, class traits>

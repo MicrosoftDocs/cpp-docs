@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["<future>"]
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
 ---
-# &lt;future&gt;
+# `<future>`
 
 Include the standard header \<future> to define class templates and supporting templates that simplify running a function—possibly in a separate thread—and retrieving its result. The result is either the value that is returned by the function or an exception that is emitted by the function but is not caught in the function.
 

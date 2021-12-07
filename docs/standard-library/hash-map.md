@@ -5,7 +5,7 @@ ms.date: "01/18/2018"
 f1_keywords: ["<hash_map>"]
 helpviewer_keywords: ["hash_map header"]
 ---
-# &lt;hash_map&gt;
+# `<hash_map>`
 
 > [!NOTE]
 > This header is obsolete. The alternative is [\<unordered_map>](unordered-map.md).

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["memory/std::operator!=", "memory/std::operator>", "memory/std::operator>=", "memory/std::operator<", "memory/std::operator<=", "memory/std::operator<<", "memory/std::operator=="]
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
 ---
-# &lt;memory&gt; operators
+# `<memory>` operators
 
 ## <a name="op_neq"></a> operator!=
 
@@ -224,7 +224,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests for one object being greater than or equal to a second object.
 
@@ -258,7 +258,7 @@ The type controlled by the right shared pointer.
 
 The template operators return `left.get() >= right.get()`.
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests for one object being less than a second object.
 
@@ -288,7 +288,7 @@ The type controlled by the left pointer.
 *Ty2*\
 The type controlled by the right pointer.
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests for one object being less than or equal to a second object.
 
@@ -322,7 +322,7 @@ The type controlled by the right shared pointer.
 
 The template operators return `left.get() <= right.get()`
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests for one object being greater than a second object.
 
@@ -352,7 +352,7 @@ The type controlled by the left shared pointer.
 *Ty2*\
 The type controlled by the right shared pointer.
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
+## <a name="op_lt_lt"></a> `operator<<`
 
 Writes the shared pointer to the stream.
 

@@ -1269,7 +1269,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> operator&lt; (queue) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (queue) (STL/CLR)
 
 Queue less than comparison.
 
@@ -1340,7 +1340,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> operator&lt;= (queue) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (queue) (STL/CLR)
 
 Queue less than or equal comparison.
 
@@ -1482,7 +1482,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> operator&gt; (queue) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (queue) (STL/CLR)
 
 Queue greater than comparison.
 
@@ -1553,7 +1553,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> operator&gt;= (queue) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (queue) (STL/CLR)
 
 Queue greater than or equal comparison.
 

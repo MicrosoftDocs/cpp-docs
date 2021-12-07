@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::ostream", "iosfwd/std::wostream"]
 ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
 ---
-# &lt;ostream&gt; typedefs
+# `<ostream>` typedefs
 
 [ostream](#ostream)\
 [wostream](#wostream)

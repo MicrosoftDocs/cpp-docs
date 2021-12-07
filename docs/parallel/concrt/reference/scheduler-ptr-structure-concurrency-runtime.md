@@ -34,7 +34,7 @@ struct scheduler_ptr;
 |Name|Description|
 |----------|-----------------|
 |[scheduler_ptr::operator bool](#operator_bool)|Test whether the scheduler pointer is non-null|
-|[scheduler_ptr::operator-&gt;](#operator_ptr)|Behave like a pointer|
+|[`scheduler_ptr::operator->`](#operator_ptr)|Behave like a pointer|
 
 ## Inheritance Hierarchy
 
@@ -64,7 +64,7 @@ Tests whether the scheduler pointer is non-null.
 operator bool() const;
 ```
 
-## <a name="operator_ptr"></a> scheduler_ptr::operator-&gt;
+## <a name="operator_ptr"></a> `scheduler_ptr::operator->`
 
 Behaves like a pointer.
 

@@ -6,7 +6,7 @@ f1_keywords: ["<istream>"]
 helpviewer_keywords: ["istream header"]
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
 ---
-# &lt;istream&gt;
+# `<istream>`
 
 Defines the class template basic_istream, which mediates extractions for the iostreams, and the class template basic_iostream, which mediates both insertions and extractions. The header also defines a related manipulator. This header file is typically included for you by another iostreams header; you rarely have to include it directly.
 

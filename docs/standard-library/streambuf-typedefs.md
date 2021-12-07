@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::streambuf", "iosfwd/std::wstreambuf"]
 ms.assetid: 2678e18f-f0f0-4995-bc53-f1bc7dfc4ec6
 ---
-# &lt;streambuf&gt; typedefs
+# `<streambuf>` typedefs
 
 [streambuf](#streambuf)\
 [wstreambuf](#wstreambuf)

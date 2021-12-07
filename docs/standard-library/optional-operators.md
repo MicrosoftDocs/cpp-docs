@@ -2,11 +2,11 @@
 description: "Learn more about: <optional> operators"
 title: "<optional> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operatoroperator>", "optional/std::operatoroperator&gt=;", "optional/std::operatoroperator&lt;", "optional/std::operatoroperator&lt;="]
+f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operator>", "optional/std::operator&gt=;", "optional/std::operator<", "optional/std::operator<="]
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
-helpviewer_keywords: ["std::operator!= (optional)", "std::operator== (optional)", "std::operatoroperator> (optional)", "std::operatoroperator&gt=; (optional)", "std::operatoroperator&lt; (optional)", "std::operatoroperator&lt;= (optional)"]
+helpviewer_keywords: ["std::operator!= (optional)", "std::operator== (optional)", "std::operator> (optional)", "std::operator>= (optional)", "std::operator< (optional)", "std::`operator<=` (optional)"]
 ---
-# &lt;optional&gt; operators
+# `<optional>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 
@@ -52,7 +52,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 This template function returns `!(left == right)`.
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if the `optional` object on the left side of the operator is less than the `optional` object on the right side.
 
@@ -76,7 +76,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 **`true`** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **`false`**.
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the `optional` object on the left side of the operator is less than or equal to the `optional` object on the right side.
 
@@ -104,7 +104,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 This template function returns `!(right < left)`.
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the `optional` object on the left side of the operator is greater than the `optional` object on the right side.
 
@@ -132,7 +132,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 This template function returns `right < left`.
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the `optional` object on the left side of the operator is greater than or equal to the `optional` object on the right side.
 

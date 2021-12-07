@@ -47,7 +47,7 @@ The managed type to be embedded.
 
 |Name|Description|
 |---------|-----------|
-|[auto_gcroot::operator-&gt;](#operator-arrow)|The member access operator.|  
+|[`auto_gcroot::operator->`](#operator-arrow)|The member access operator.|  
 |[auto_gcroot::operator=](#operator-assign)|Assignment operator.|
 |[auto_gcroot::operator&nbsp;auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.|
 |[auto_gcroot::operator&nbsp;bool](#operator-bool)|Operator for using `auto_gcroot` in a conditional expression.|  
@@ -547,7 +547,7 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="operator-arrow"></a> auto_gcroot::operator-&gt;
+## <a name="operator-arrow"></a> `auto_gcroot::operator->`
 
 The member access operator.
 

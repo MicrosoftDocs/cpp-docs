@@ -185,7 +185,7 @@ void Release() throw();
 
 The current Agile object's underlying object and context are discarded, if they exist, and then the value of the Agile object is set to null.
 
-## <a name="operator-arrow"></a> Agile::operator-&gt; Operator
+## <a name="operator-arrow"></a> `Agile::operator->` Operator
 
 Retrieves a handle to the object represented by the current Agile object.
 
