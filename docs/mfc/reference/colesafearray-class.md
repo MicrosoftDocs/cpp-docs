@@ -63,7 +63,7 @@ class COleSafeArray : public tagVARIANT
 |[COleSafeArray::operator LPVARIANT](#operator_lpvariant)|Accesses the underlying `VARIANT` structure of the `COleSafeArray` object.|
 |[COleSafeArray::operator =](#operator_eq)|Copies values into a `COleSafeArray` object (`SAFEARRAY`, `VARIANT`, `COleVariant`, or `COleSafeArray` array).|
 |[COleSafeArray::operator ==](#operator_eq_eq)|Compares two variant arrays (`SAFEARRAY`, `VARIANT`, `COleVariant`, or `COleSafeArray` arrays).|
-|[COleSafeArray::operator &lt;&lt;](#operator_lt_lt)|Outputs the contents of a `COleSafeArray` object to the dump context.|
+|[`COleSafeArray::operator <<`](#operator_lt_lt)|Outputs the contents of a `COleSafeArray` object to the dump context.|
 
 ## Remarks
 
@@ -565,7 +565,7 @@ BOOL operator==(LPCVARIANT pSrc) const;  BOOL operator==(const COleVariant& varS
 
 Two arrays are equal if they have an equal number of dimensions, equal size in each dimension, and equal element values.
 
-## <a name="operator_lt_lt"></a> COleSafeArray::operator &lt;&lt;
+## <a name="operator_lt_lt"></a> `COleSafeArray::operator <<`
 
 The `COleSafeArray` insertion (<<) operator supports diagnostic dumping and storing of a `COleSafeArray` object to an archive.
 

@@ -72,7 +72,7 @@ false
 true
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Compare `tuple` objects for less.
 
@@ -137,7 +137,7 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Compare `tuple` objects for less or equal.
 
@@ -267,7 +267,7 @@ true
 false
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Compare `tuple` objects for greater.
 
@@ -332,7 +332,7 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Compare `tuple` objects for greater or equal.
 

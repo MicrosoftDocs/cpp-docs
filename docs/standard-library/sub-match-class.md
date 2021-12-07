@@ -197,7 +197,7 @@ bool matched;
 
 The member holds **`true`** only if the capture group associated with **`*this`** was part of the regular expression match.
 
-## <a name="op_basic_string_lt_value_type_gt"></a> sub_match::operator basic_string&lt;value_type&gt;
+## <a name="op_basic_string_lt_value_type_gt"></a> `sub_match::operator basic_string<value_type>`
 
 Casts submatch to a string.
 

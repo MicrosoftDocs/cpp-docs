@@ -106,8 +106,8 @@ The UCRT versions of these functions don't support conversion of Fortran-style (
 
 |Routine|Required header|
 |-------------|---------------------|
-|**strtod**, **_strtod_l**|C: &lt;stdlib.h> C++: &lt;cstdlib> or &lt;stdlib.h> |
-|**wcstod**, **_wcstod_l**|C: &lt;stdlib.h> or &lt;wchar.h> C++: &lt;cstdlib>, &lt;stdlib.h> or &lt;wchar.h> |
+|**strtod**, **_strtod_l**|C: `<stdlib.h>` C++: `<cstdlib>` or `<stdlib.h>` |
+|**wcstod**, **_wcstod_l**|C: `<stdlib.h>` or `<wchar.h>` C++: `<cstdlib>`, `<stdlib.h>`, or `<wchar.h>` |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -2325,7 +2325,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> operator&lt; (set) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (set) (STL/CLR)
 
 List less than comparison.
 
@@ -2395,7 +2395,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> operator&lt;= (set) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (set) (STL/CLR)
 
 List less than or equal comparison.
 
@@ -2535,7 +2535,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> operator&gt; (set) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (set) (STL/CLR)
 
 List greater than comparison.
 
@@ -2605,7 +2605,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> operator&gt;= (set) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (set) (STL/CLR)
 
 List greater than or equal comparison.
 

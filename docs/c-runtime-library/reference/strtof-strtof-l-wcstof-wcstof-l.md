@@ -85,8 +85,8 @@ The UCRT versions of these functions do not support conversion of Fortran-style 
 
 |Routine|Required header|
 |-------------|---------------------|
-|**strtof**, **_strtof_l**|C: \<stdlib.h> C++: &lt;cstdlib> or \<stdlib.h>|
-|**wcstof**, **_wcstof_l**|C: \<stdlib.h> or \<wchar.h> C++: &lt;cstdlib>, \<stdlib.h> or \<wchar.h>|
+|**strtof**, **_strtof_l**|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
+|**wcstof**, **_wcstof_l**|C: \<stdlib.h> or \<wchar.h> C++: \<cstdlib>, \<stdlib.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

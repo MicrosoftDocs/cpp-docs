@@ -7,7 +7,7 @@ ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
 ---
 # `<istream>` operators
 
-## <a name="op_gt_gt"></a> operator&gt;&gt;
+## <a name="op_gt_gt"></a> `operator>>`
 
 Extracts characters and strings from the stream.
 
