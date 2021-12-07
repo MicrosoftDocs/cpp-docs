@@ -5,8 +5,7 @@ ms.date: "08/28/2020"
 f1_keywords: ["<bit>"]
 helpviewer_keywords: ["bit header"]
 ---
-
-`<bit>`
+# `<bit>`
 
 Defines functions to access, manipulate, and process individual bits and sequences of bits.
 
