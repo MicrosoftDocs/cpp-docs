@@ -54,8 +54,8 @@ class CArchive
 
 |Name|Description|
 |----------|-----------------|
-|[CArchive::operator &lt;&lt;](#operator_lt_lt)|Stores objects and primitive types to the archive.|
-|[CArchive::operator &gt;&gt;](#operator_gt_gt)|Loads objects and primitive types from the archive.|
+|[`CArchive::operator <<`](#operator_lt_lt)|Stores objects and primitive types to the archive.|
+|[`CArchive::operator >>`](#operator_gt_gt)|Loads objects and primitive types from the archive.|
 
 ### Public Data Members
 
@@ -336,7 +336,7 @@ The framework sets *m_pDocument* to the document being serialized when a user is
 
 [!code-cpp[NVC_MFCSerialization#35](../../mfc/codesnippet/cpp/carchive-class_11.cpp)]
 
-## <a name="operator_lt_lt"></a> CArchive::operator &lt;&lt;
+## <a name="operator_lt_lt"></a> `CArchive::operator <<`
 
 Stores the indicated object or primitive type to the archive.
 
@@ -404,7 +404,7 @@ This example demonstrates the use of the `CArchive` insertion operator << with t
 
 [!code-cpp[NVC_MFCSerialization#32](../../mfc/codesnippet/cpp/carchive-class_13.cpp)]
 
-## <a name="operator_gt_gt"></a> CArchive::operator &gt;&gt;
+## <a name="operator_gt_gt"></a> `CArchive::operator >>`
 
 Loads the indicated object or primitive type from the archive.
 

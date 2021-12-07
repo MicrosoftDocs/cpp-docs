@@ -540,7 +540,7 @@ int main()
 [x 3] != [x 4] is True
 ```
 
-## <a name="op_lt"></a> operator&lt; (pair) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (pair) (STL/CLR)
 
 Pair less than comparison.
 
@@ -594,7 +594,7 @@ int main()
 [x 3] < [x 4] is True
 ```
 
-## <a name="op_lteq"></a> operator&lt;= (pair) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (pair) (STL/CLR)
 
 Pair less than or equal comparison.
 
@@ -702,7 +702,7 @@ int main()
 [x 3] == [x 4] is False
 ```
 
-## <a name="op_gt"></a> operator&gt; (pair) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (pair) (STL/CLR)
 
 Pair greater than comparison.
 
@@ -756,7 +756,7 @@ int main()
 [x 4] > [x 3] is True
 ```
 
-## <a name="op_gteq"></a> operator&gt;= (pair) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (pair) (STL/CLR)
 
 Pair greater than or equal comparison.
 

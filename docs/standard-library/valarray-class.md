@@ -553,7 +553,7 @@ The element-by-element result of the logical AND operator&= is the
 valarray: ( 0 0 0 2 0 4 0 6 0 8 ).
 ```
 
-## <a name="op_gt_gt_eq"></a> operator&gt;&gt;=
+## <a name="op_gt_gt_eq"></a> `operator>>=`
 
 Right-shifts the bits for each element of a valarray operand a specified number of positions or by an element-wise amount specified by a second valarray.
 
@@ -624,7 +624,7 @@ The element-by-element result of the right shift is the
 valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 ```
 
-## <a name="op_lt_lt_eq"></a> operator&lt;&lt;=
+## <a name="op_lt_lt_eq"></a> `operator<<=`
 
 Left-shifts the bits for each element of a valarray operand a specified number of positions or by an element-wise amount specified by a second valarray.
 

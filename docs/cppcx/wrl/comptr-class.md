@@ -375,7 +375,7 @@ A weak reference to the current `ComPtr`.
 
 This method differs from [ComPtr::GetAddressOf](#getaddressof) in that this method releases a reference to the interface pointer. Use `ComPtr::GetAddressOf` when you require the address of the interface pointer but don't want to release that interface.
 
-## <a name="operator-arrow"></a> ComPtr::operator-&gt;
+## <a name="operator-arrow"></a> `ComPtr::operator->`
 
 Retrieves a pointer to the type specified by the current template parameter.
 

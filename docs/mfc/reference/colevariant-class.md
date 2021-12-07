@@ -43,7 +43,7 @@ class COleVariant : public tagVARIANT
 |[COleVariant::operator LPVARIANT](#operator_lpvariant)|Converts a `COleVariant` object into an `LPVARIANT`.|
 |[COleVariant::operator =](#operator_eq)|Copies a `COleVariant` value.|
 |[COleVariant::operator ==](#operator_eq_eq)|Compares two `COleVariant` values.|
-|[COleVariant::operator &lt;&lt;, &gt;&gt;](#operator_lt_lt__gt_gt)|Outputs a `COleVariant` value to `CArchive` or `CDumpContext` and inputs a `COleVariant` object from `CArchive`.|
+|[`COleVariant::operator <<`, `COleVariant::operator >>`](#operator_lt_lt__gt_gt)|Outputs a `COleVariant` value to `CArchive` or `CDumpContext` and inputs a `COleVariant` object from `CArchive`.|
 
 ## Remarks
 
@@ -335,7 +335,7 @@ BOOL operator==(const VARIANT& varSrc) const;
 BOOL operator==(LPCVARIANT pSrc) const;
 ```
 
-## <a name="operator_lt_lt__gt_gt"></a> COleVariant::operator &lt;&lt;, &gt;&gt;
+## <a name="operator_lt_lt__gt_gt"></a> `COleVariant::operator <<`, `COleVariant::operator >>`
 
 Outputs a `COleVariant` value to `CArchive` or `CdumpContext` and inputs a `COleVariant` object from `CArchive`.
 

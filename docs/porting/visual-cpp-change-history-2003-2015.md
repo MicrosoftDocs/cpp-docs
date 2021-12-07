@@ -2980,7 +2980,7 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
   - `CMFCMaskedEdit::OnPaste` changed to no parameters instead of (WPARAM, LPARAM) so that the new ON_WM_PASTE macro can be used in the message map.
 
-- `#ifdef` directives in the MFC header files are removed. Numerous `#ifdef` directives in the MFC header files related to unsupported versions of Windows (WINVER &lt; 0x0501) are removed.
+- `#ifdef` directives in the MFC header files are removed. Numerous `#ifdef` directives in the MFC header files related to unsupported versions of Windows (`WINVER < 0x0501`) are removed.
 
 - ATL DLL (atl120.dll) is removed. ATL is now provided as headers and a static library (atls.lib).
 

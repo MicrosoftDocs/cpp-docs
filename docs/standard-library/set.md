@@ -6,7 +6,7 @@ f1_keywords: ["<set>"]
 helpviewer_keywords: ["set header"]
 ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596
 ---
-# &lt;set&gt;
+# `<set>`
 
 Defines the container class templates set and multiset and their supporting templates.
 

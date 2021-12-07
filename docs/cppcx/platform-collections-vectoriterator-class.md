@@ -73,7 +73,7 @@ The typename of the VectorIterator template class.
 
 **Namespace:** Platform::Collections
 
-## <a name="operator-arrow"></a> VectorIterator::operator-&gt; Operator
+## <a name="operator-arrow"></a> `VectorIterator::operator->` Operator
 
 Retrieves the address of the element referenced by the current VectorIterator.
 
@@ -144,7 +144,7 @@ Another VectorIterator.
 
 **`true`** if the current VectorIterator is equal to *other*; otherwise, **`false`**.
 
-## <a name="operator-greater-than"></a> VectorIterator::operator&gt; Operator
+## <a name="operator-greater-than"></a> `VectorIterator::operator>` Operator
 
 Indicates whether the current VectorIterator is greater than a specified VectorIterator.
 
@@ -163,7 +163,7 @@ Another VectorIterator.
 
 **`true`** if the current VectorIterator is greater than *other*; otherwise, **`false`**.
 
-## <a name="operator-greater-than-or-equals"></a> VectorIterator::operator&gt;= Operator
+## <a name="operator-greater-than-or-equals"></a> `VectorIterator::operator>=` Operator
 
 Indicates whether the current VectorIterator is greater than or equal to the specified VectorIterator.
 
@@ -222,7 +222,7 @@ Another VectorIterator.
 
 **`true`** if the current VectorIterator is not equal to *other*; otherwise, **`false`**.
 
-## <a name="operator-less-than"></a> VectorIterator::operator&lt; Operator
+## <a name="operator-less-than"></a> `VectorIterator::operator<` Operator
 
 Indicates whether the current VectorIterator is less than a specified VectorIterator.
 
@@ -241,7 +241,7 @@ Another VectorIterator.
 
 **`true`** if the current VectorIterator is less than *other*; otherwise, **`false`**.
 
-## <a name="operator-less-than-or-equals"></a> VectorIterator::operator&lt;= Operator
+## <a name="operator-less-than-or-equals"></a> `VectorIterator::operator<=` Operator
 
 Indicates whether the current VectorIterator is less than or equal to a specified VectorIterator.
 

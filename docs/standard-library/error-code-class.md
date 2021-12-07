@@ -204,7 +204,7 @@ The object to be tested for inequality.
 
 The member operator returns `!(*this == right)`.
 
-### <a name="op_lt"></a> operator&lt;
+### <a name="op_lt"></a> `operator<`
 
 Tests if the `error_code` object is less than the `error_code` object passed in for comparison.
 

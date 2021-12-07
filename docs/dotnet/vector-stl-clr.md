@@ -2377,7 +2377,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> operator&lt; (vector) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (vector) (STL/CLR)
 
 Vector less than comparison.
 
@@ -2446,7 +2446,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> operator&lt;= (vector) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (vector) (STL/CLR)
 
 Vector less than or equal comparison.
 
@@ -2584,7 +2584,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> operator&gt; (vector) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (vector) (STL/CLR)
 
 Vector greater than comparison.
 
@@ -2653,7 +2653,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> operator&gt;= (vector) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (vector) (STL/CLR)
 
 Vector greater than or equal comparison.
 

@@ -42,7 +42,7 @@ A .NET Framework Windows Forms control to be displayed in the MFC application.
 
 |Name|Description|
 |----------|-----------------|
-|[CWinFormsControl::operator -&gt;](#operator_-_gt)|Replaces [CWinFormsControl::GetControl](#getcontrol) in expressions.|
+|[`CWinFormsControl::operator ->`](#operator_-_gt)|Replaces [CWinFormsControl::GetControl](#getcontrol) in expressions.|
 |[CWinFormsControl::operator TManagedControl^](#operator_tmanagedcontrol)|Casts a type as a pointer to a Windows Forms control.|
 
 ## Remarks
@@ -175,7 +175,7 @@ Returns a handle to the Windows Forms control.
 
 `GetControlHandle` is a helper method that returns the window handle stored in the .NET Framework control properties. The window handle value is copied to [CWnd::m_hWnd](../../mfc/reference/cwnd-class.md#m_hwnd) during the call to [CWnd::Attach](../../mfc/reference/cwnd-class.md#attach).
 
-## <a name="operator_-_gt"></a> CWinFormsControl::operator -&gt;
+## <a name="operator_-_gt"></a> `CWinFormsControl::operator ->`
 
 Replaces [CWinFormsControl::GetControl](#getcontrol) in expressions.
 
