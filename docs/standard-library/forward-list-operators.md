@@ -6,7 +6,7 @@ f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "f
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
 helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forward_list)", "std::operatoroperator> (forward_list)", "std::operatoroperator&gt=; (forward_list)", "std::operatoroperator&lt; (forward_list)", "std::operatoroperator&lt;= (forward_list)"]
 ---
-# &lt;forward_list&gt; operators
+# `<forward_list>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 

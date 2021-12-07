@@ -6,7 +6,7 @@ f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator>>", "xcomplex/
 ms.assetid: aa282604-dcb9-46a2-bf1d-34c50aa6c4ba
 helpviewer_keywords: ["std::operator!= (complex)", "std::operator>> (complex)", "std::operator<< (complex), std::operator== (complex)"]
 ---
-# &lt;complex&gt; operators
+# `<complex>` operators
 
 ## <a name="op_neq"></a> operator!=
 

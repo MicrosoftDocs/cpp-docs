@@ -6,7 +6,7 @@ f1_keywords: ["functional/std::bind", "functional/std::bind1st", "functional/std
 helpviewer_keywords: ["std::bind [C++]", "std::bind1st", "std::bind2nd", "std::bit_and [C++]", "std::bit_not [C++]", "std::bit_or [C++]", "std::bit_xor [C++]", "std::cref [C++]"]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 ---
-# &lt;functional&gt; functions
+# `<functional>` functions
 
 These functions are deprecated in C++11 and removed in C++17:
 

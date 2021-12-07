@@ -6,7 +6,7 @@ f1_keywords: ["exception/std::current_exception", "exception/std::get_terminate"
 ms.assetid: c09ac569-5e35-4fe8-872d-ca5810274dd7
 helpviewer_keywords: ["std::current_exception [C++]", "std::get_terminate [C++]", "std::get_unexpected [C++]", "std::make_exception_ptr [C++]", "std::rethrow_exception [C++]", "std::set_terminate [C++]", "std::set_unexpected [C++]", "std::terminate [C++]", "std::uncaught_exception [C++]", "std::unexpected [C++]"]
 ---
-# &lt;exception&gt; functions
+# `<exception>` functions
 
 ## <a name="current_exception"></a> current_exception
 

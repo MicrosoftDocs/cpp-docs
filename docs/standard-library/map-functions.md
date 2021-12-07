@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["map/std::swap (map)", "map/std::swap (multimap)"]
 ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
 ---
-# &lt;map&gt; functions
+# `<map>` functions
 
 ## <a name="swap_multimap"></a> swap (map)
 

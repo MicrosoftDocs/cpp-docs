@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["<mutex>"]
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
 ---
-# &lt;mutex&gt;
+# `<mutex>`
 
 Include the standard header \<mutex> to define the classes `mutex`, `recursive_mutex`, `timed_mutex`, and `recursive_timed_mutex`; the templates `lock_guard` and `unique_lock`; and supporting types and functions that define mutual-exclusion code regions.
 
