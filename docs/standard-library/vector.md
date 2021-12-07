@@ -6,7 +6,7 @@ f1_keywords: ["<vector>"]
 helpviewer_keywords: ["vector header"]
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
 ---
-# &lt;vector&gt;
+# `<vector>`
 
 Defines the container class template vector and several supporting templates.
 

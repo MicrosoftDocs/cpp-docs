@@ -5,7 +5,7 @@ ms.date: "04/04/2019"
 f1_keywords: ["cuchar/std::c16rtomb", "cuchar/std::c32rtomb", "cuchar/std::mbrtoc16", "cuchar/std::mbrtoc32"]
 helpviewer_keywords: ["std::c16rtomb [C++]", "std::c32rtomb [C++]", "mbrtoc16 [C++]", "mbrtoc32 [C++]"]
 ---
-# &lt;cuchar&gt; functions
+# `<cuchar>` functions
 
 ## <a name="c16rtomb"></a> c16rtomb
 

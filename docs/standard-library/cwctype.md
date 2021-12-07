@@ -6,7 +6,7 @@ f1_keywords: ["<cwctype>"]
 helpviewer_keywords: ["cwctype header"]
 ms.assetid: 46476f95-b8c3-4ab2-a172-9a1be91124b7
 ---
-# &lt;cwctype&gt;
+# `<cwctype>`
 
 Includes the Standard C library header \<wctype.h> and adds the associated names to the `std` namespace.
 

@@ -5,8 +5,7 @@ ms.date: "07/22/2020"
 f1_keywords: ["<charconv>"]
 helpviewer_keywords: ["charconv header"]
 ---
-
-# &lt;charconv&gt;
+# `<charconv>`
 
 Quickly convert a character sequence to an integer or floating-point value, and the other way around.
 One way to use this library is to write and roundtrip floating-point values in JSON and text files.

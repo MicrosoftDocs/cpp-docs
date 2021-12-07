@@ -6,7 +6,7 @@ f1_keywords: ["<cfloat>"]
 helpviewer_keywords: ["cfloat header"]
 ms.assetid: 25ec4ab9-3c1d-46e3-9e68-ad9a8762cadb
 ---
-# &lt;cfloat&gt;
+# `<cfloat>`
 
 Includes the Standard C library header \<float.h>.
 

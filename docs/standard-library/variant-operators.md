@@ -5,7 +5,7 @@ ms.date: "04/04/2019"
 f1_keywords: ["variant/std::operator!=", "variant/std::operator==", "variant/std::operatoroperator>", "variant/std::operatoroperator&gt=;", "variant/std::operatoroperator&lt;", "variant/std::operatoroperator&lt;="]
 helpviewer_keywords: ["std::operator!= (variant)", "std::operator== (variant)", "std::operatoroperator> (variant)", "std::operatoroperator&gt=; (variant)", "std::operatoroperator&lt; (variant)", "std::operatoroperator&lt;= (variant)"]
 ---
-# &lt;variant&gt; operators
+# `<variant>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 
