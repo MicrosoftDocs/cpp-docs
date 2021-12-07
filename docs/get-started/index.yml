@@ -37,7 +37,7 @@ landingContent:
             url: ../build/vscpp-step-1-create.md
           - text: Build and run your "Hello World" console app
             url: ../build/vscpp-step-2-build.md
-      - linkListType: tutorial
+      - linkListType: overview
         links:
           - text: Learn about the Modern C++ language
             url: ../cpp/welcome-back-to-cpp-modern-cpp.md
