@@ -44,7 +44,7 @@ Name                                                  | Description
 [HStringReference::operator=](#operator-assign)       | Moves the value of another `HStringReference` object to the current `HStringReference` object.
 [HStringReference::operator==](#operator-equality)    | Indicates whether the two parameters are equal.
 [HStringReference::operator!=](#operator-inequality)  | Indicates whether the two parameters are not equal.
-[HStringReference::operator&lt;](#operator-less-than) | Indicates whether the first parameter is less than the second parameter.
+[`HStringReference::operator<`](#operator-less-than) | Indicates whether the first parameter is less than the second parameter.
 
 ## Inheritance Hierarchy
 
@@ -218,7 +218,7 @@ The second parameter to compare.  *rhs* can be an `HStringReference` object or a
 
 **`true`** if the *lhs* and *rhs* parameters are not equal; otherwise, **`false`**.
 
-## <a name="operator-less-than"></a> HStringReference::operator&lt;
+## <a name="operator-less-than"></a> `HStringReference::operator<`
 
 Indicates whether the first parameter is less than the second parameter.
 

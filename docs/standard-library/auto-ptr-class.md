@@ -289,7 +289,7 @@ The indirection operator returns `*`[get](#get). Hence, the stored pointer must 
 
 For an example of how to use the member function, see [auto_ptr](#auto_ptr).
 
-### <a name="op_arrow"></a> operator-&gt;
+### <a name="op_arrow"></a> `operator->`
 
 The operator for allowing member access.
 

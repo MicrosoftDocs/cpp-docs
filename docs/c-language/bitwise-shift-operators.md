@@ -7,14 +7,14 @@ ms.assetid: d0485785-5c72-47e1-a7c0-0adde03ade23
 ---
 # Bitwise Shift Operators
 
-The shift operators shift their first operand left (**&lt;&lt;**) or right (**>>**) by the number of positions the second operand specifies.
+The shift operators shift their first operand left (**`<<`**) or right (**`>>`**) by the number of positions the second operand specifies.
 
 ## Syntax
 
 *shift-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression* **&lt;&lt;** *additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression* **>>** *additive-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression* **`<<`** *additive-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression* **`>>`** *additive-expression*
 
 Both operands must be integral values. These operators perform the usual arithmetic conversions; the type of the result is the type of the left operand after conversion.
 

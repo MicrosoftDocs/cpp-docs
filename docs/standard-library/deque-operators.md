@@ -59,7 +59,7 @@ int main( )
 The deques are not equal.
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if the deque object on the left side of the operator is less than the deque object on the right side.
 
@@ -114,7 +114,7 @@ int main( )
 Deque c1 is less than deque c2.
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the deque object on the left side of the operator is less than or equal to the deque object on the right side.
 
@@ -227,7 +227,7 @@ The deques are equal.
 The deques are not equal.
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the deque object on the left side of the operator is greater than the deque object on the right side.
 
@@ -283,7 +283,7 @@ int main( )
 Deque c1 is greater than deque c2.
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the deque object on the left side of the operator is greater than or equal to the deque object on the right side.
 

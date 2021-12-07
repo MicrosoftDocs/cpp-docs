@@ -73,7 +73,7 @@ The typename of the VectorViewIterator template class.
 
 **Namespace:** Platform::Collections
 
-## <a name="operator-arrow"></a> VectorViewIterator::operator-&gt; Operator
+## <a name="operator-arrow"></a> `VectorViewIterator::operator->` Operator
 
 Retrieves the address of the element referenced by the current VectorViewIterator.
 
@@ -143,7 +143,7 @@ Another VectorViewIterator.
 
 **`true`** if the current `VectorViewIterator` is equal to *other*; otherwise, **`false`**.
 
-## <a name="operator-greater-than"></a> VectorViewIterator::operator&gt; Operator
+## <a name="operator-greater-than"></a> `VectorViewIterator::operator>` Operator
 
 Indicates whether the current VectorViewIterator is greater than a specified VectorViewIterator.
 
@@ -163,7 +163,7 @@ Another VectorViewIterator.
 
 **`true`** if the current VectorViewIterator is greater than *other*; otherwise, **`false`**.
 
-## <a name="operator-greater-than-or-equals"></a> VectorViewIterator::operator&gt;= Operator
+## <a name="operator-greater-than-or-equals"></a> `VectorViewIterator::operator>=` Operator
 
 Indicates whether the current `VectorViewIterator` is greater than or equal to the specified `VectorViewIterator`.
 
@@ -224,7 +224,7 @@ Another VectorViewIterator.
 
 **`true`** if the current `VectorViewIterator` is not equal to *other*; otherwise, **`false`**.
 
-## <a name="operator-less-than"></a> VectorViewIterator::operator&lt; Operator
+## <a name="operator-less-than"></a> `VectorViewIterator::operator<` Operator
 
 Indicates whether the current VectorIterator is less than a specified VectorIterator.
 
@@ -243,7 +243,7 @@ Another `VectorIterator`.
 
 **`true`** if the current `VectorIterator` is less than *other*; otherwise, **`false`**.
 
-## <a name="operator-less-than-or-equals"></a> VectorViewIterator::operator&lt;= Operator
+## <a name="operator-less-than-or-equals"></a> `VectorViewIterator::operator<=` Operator
 
 Indicates whether the current `VectorIterator` is less than or equal to a specified `VectorIterator`.
 

@@ -228,7 +228,7 @@ int main( )
 }
 ```
 
-## <a name="op_arrow"></a> istream_iterator::operator-&gt;
+## <a name="op_arrow"></a> `istream_iterator::operator->`
 
 Returns the value of a member, if any.
 
