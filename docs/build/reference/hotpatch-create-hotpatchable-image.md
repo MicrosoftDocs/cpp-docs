@@ -18,7 +18,7 @@ Prepares an image for hot patching.
 
 ## Remarks
 
-When **/hotpatch** is used in a compilation, the compiler ensures that first instruction of each function is at least two bytes, and there's no jump to the first instruction from within the function, which is required for hot patching.
+When **/hotpatch** is used in a compilation, the compiler ensures that the first instruction of each function is at least two bytes, and no jump within the function goes to the first instruction. These conditions are required for hot patching.
 
 To complete the preparation for making an image hotpatchable, after you use **/hotpatch** to compile, you must use [/FUNCTIONPADMIN (Create Hotpatchable Image)](functionpadmin-create-hotpatchable-image.md) to link. When you compile and link an image by using one invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.
 
