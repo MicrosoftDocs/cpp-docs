@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /hotpatch (Create Hotpatchable Image)"
 title: "/hotpatch (Create Hotpatchable Image)"
-ms.date: "11/12/2018"
+ms.date: "12/7/2021"
 f1_keywords: ["/hotpatch", "VC.Project.VCCLCompilerTool.CreateHotpatchableImage"]
 helpviewer_keywords: ["hot patching", "-hotpatch compiler option [C++]", "/hotpatch compiler option [C++]", "hotpatching"]
 ms.assetid: aad539b6-c053-4c78-8682-853d98327798
@@ -18,7 +18,7 @@ Prepares an image for hot patching.
 
 ## Remarks
 
-When **/hotpatch** is used in a compilation, the compiler ensures that first instruction of each function is at least two bytes, which is required for hot patching.
+When **/hotpatch** is used in a compilation, the compiler ensures that the first instruction of each function is at least two bytes, and no jump within the function goes to the first instruction. These conditions are required for hot patching.
 
 To complete the preparation for making an image hotpatchable, after you use **/hotpatch** to compile, you must use [/FUNCTIONPADMIN (Create Hotpatchable Image)](functionpadmin-create-hotpatchable-image.md) to link. When you compile and link an image by using one invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.
 
