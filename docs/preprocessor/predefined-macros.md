@@ -36,7 +36,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 - `__FILE__` The name of the current source file. `__FILE__` expands to a character string literal. To ensure that the full path to the file is displayed, use [**`/FC`** (Full Path of Source Code File in Diagnostics)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md). This macro is always defined.
 
-- `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. The type of the value of `__LINE__` can vary depending on context: if tested, it may report a type of `int` or `long`. This macro is always defined.
+- `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
 
 - `__STDC__` Defined as 1 only when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Otherwise, undefined.
 
