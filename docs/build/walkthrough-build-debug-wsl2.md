@@ -8,7 +8,7 @@ helpviewer_keywords: ["wsl2", "cmake", "linux", "build"]
 ---
 # Walkthrough: Build and debug C++ with WSL 2 and Visual Studio 2022
 
-Visual Studio 2022 introduces a native C++ toolset for Windows Subsystem for Linux version 2 (WSL 2) development. This toolset is available now in [Visual Studio 2022 version 17.0 Preview 2](https://visualstudio.microsoft.com/vs/preview/vs2022/) or higher.
+Visual Studio 2022 introduces a native C++ toolset for Windows Subsystem for Linux version 2 (WSL 2) development. This toolset is available now in [Visual Studio 2022 version 17.0](https://visualstudio.microsoft.com/downloads/) or higher.
 
 WSL 2 is the new, recommended version of the [Windows Subsystem for Linux](/windows/wsl/about) (WSL). It provides better Linux file system performance, GUI support, and full system call compatibility. Visual Studio’s WSL 2 toolset allows you to use Visual Studio to build and debug C++ code on WSL 2 distros without adding a SSH connection. You can already build and debug C++ code on WSL 1 distros using the native [WSL 1 toolset](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/) introduced in Visual Studio 2019 version 16.1.
 
@@ -129,6 +129,6 @@ In most cases, it’s best to use the WSL 2 toolset with WSL 2 distributions bec
 ## See also
 
 [Video: Debug C++ with WSL 2 Distributions and Visual Studio 2022](https://youtu.be/IKI2w75aAow)\
-[Download Visual Studio 2022 preview](https://visualstudio.microsoft.com/vs/preview/)\
+[Download Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)\
 [Create a CMake Linux project in Visual Studio](../linux/cmake-linux-project.md)\
 [Tutorial: Debug a CMake project on a remote Windows machine](cmake-remote-debugging.md)

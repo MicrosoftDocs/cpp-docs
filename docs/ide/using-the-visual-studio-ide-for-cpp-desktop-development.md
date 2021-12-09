@@ -11,23 +11,11 @@ The Visual Studio Integrated Development Environment (IDE) offers a set of featu
 
 ## Prerequisites
 
-If you haven't installed Visual Studio yet, now is the time. For download links and a quick walkthrough, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md). For more information about how to install Visual Studio in general, and troubleshooting tips if something goes wrong, see [Install Visual Studio](/visualstudio/install/install-visual-studio). Be sure to choose the **Desktop development with C++** workload to include the C++ compilers, tools, and libraries when you install Visual Studio, because they are not installed by default.
+If you haven't installed Visual Studio yet, now is the time. For download links and a quick walkthrough, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md). For more information about how to install Visual Studio in general, and troubleshooting tips if something goes wrong, see [Install Visual Studio](/visualstudio/install/install-visual-studio). Be sure to choose the **Desktop development with C++** workload to include the C++ compilers, tools, and libraries when you install Visual Studio, because they're not installed by default.
 
-These walkthroughs assume that you have installed Visual Studio and the C++ components required for Windows Desktop development. We also assume you understand the fundamentals of the C++ language. If you need to learn C++, there are many books and web resources available. One good place to start is the [Get Started](https://isocpp.org/get-started) page of the Standard C++ Foundation website.
+These walkthroughs assume that you've installed Visual Studio and the C++ components required for Windows Desktop development. We also assume you understand the fundamentals of the C++ language. If you need to learn C++, there are many books and web resources available. One good place to start is the [Get Started](https://isocpp.org/get-started) page of the Standard C++ Foundation website.
 
-If you haven't installed Visual Studio yet, now is the time. In general, we highly recommend that you use Visual Studio 2019 even if you need to compile your code using the Visual Studio 2017 or Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
-
-**Visual Studio 2019 Installation**
-
-To get Visual Studio 2019, you can download it from [Visual Studio Downloads](https://www.visualstudio.com/downloads/). Be sure to include the C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
-
-**Visual Studio 2017 Installation**
-
-To get Visual Studio 2017, you can download it from [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Be sure to include the C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). To see the instructions for Visual Studio 2017, set the Visual Studio **Version** selector control to Visual Studio 2017. It's found at the top of the table of contents on the page.
-
-**Visual Studio 2015 Installation**
-
-To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component.
+In general, we highly recommend that you use the latest version of Visual Studio even if you need to compile your code using an earlier version of the compiler toolset. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 Once your Visual Studio installation is complete, you are ready to continue.
 

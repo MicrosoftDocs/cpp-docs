@@ -23,7 +23,7 @@ Basic C++ compilation involves three main steps:
 
 ## The MSVC toolset
 
-The Microsoft C++ compiler, linker, standard libraries, and related utilities make up the MSVC compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the toolset as a free standalone package from [Build Tools for Visual Studio 2019 download](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
+The Microsoft C++ compiler, linker, standard libraries, and related utilities make up the MSVC compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the command-line toolset as a free standalone package. For more information, see [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) on the Visual Studio Downloads page.
 
 You can build simple programs by invoking the MSVC compiler (cl.exe) directly from the command line. The following command accepts a single source code file, and invokes cl.exe to build an executable called *hello.exe*:
 
