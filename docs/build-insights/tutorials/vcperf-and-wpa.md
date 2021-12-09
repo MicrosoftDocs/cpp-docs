@@ -38,8 +38,8 @@ NOTE: Windows 8 or above is required for installing the Windows Performance Anal
 Viewing C++ Build Insights traces in WPA requires a special add-in. Follow these steps to install it:
 
 1. Obtain the add-in by downloading one of the components below. You don't need to get both. Choose the one that you find most convenient.
-    1. [Visual Studio 2019 version 16.6 and above](https://visualstudio.microsoft.com/downloads/), or,
-    1. [C++ Build Insights NuGet package](https://www.nuget.org/packages/Microsoft.Cpp.BuildInsights/).
+    - Visual Studio 2019 version 16.6 and above. For the latest version, see [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+    - [C++ Build Insights NuGet package](https://www.nuget.org/packages/Microsoft.Cpp.BuildInsights/).
 
 1. Copy the `perf_msvcbuildinsights.dll` file into your WPA installation directory.
     1. In Visual Studio 2019 version 16.6 and above, this file is located here: `C:\Program Files (x86)\Microsoft Visual Studio\{Year}\{Edition}\VC\Tools\MSVC\{Version}\bin\Host{Architecture}\{Architecture}`.
@@ -57,7 +57,7 @@ Viewing C++ Build Insights traces in WPA requires a special add-in. Follow these
 
 To view C++ Build Insights data, first collect it into a trace file by following these steps:
 
-1. Open an **x64** or **x86 Native Tools Command Prompt for VS 2019** in administrator mode. (Right-click the Start menu item and choose **More** > **Run as administrator**.)
+1. Open an **x64** or **x86 Native Tools Command Prompt for VS** in administrator mode. (Right-click the Start menu item and choose **More** > **Run as administrator**.)
     1. Choose **x64** if you have a 64-bit version of Windows. Otherwise, choose **x86**.
 
 1. In the command prompt window, enter this command:
