@@ -1,26 +1,26 @@
 ---
-description: "Learn more about: Generic Functions (C++/CLI)"
+description: "Learn more about: Generic functions (C++/CLI)"
 title: "Generic Functions (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
 helpviewer_keywords: ["functions [C++], generic", "generic methods", "generics [C++], functions", "methods [C++], generic", "generic functions"]
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
 ---
-# Generic Functions (C++/CLI)
+# Generic functions (C++/CLI)
 
 A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.
 
-## All Platforms
+## All platforms
 
 ### Remarks
 
-This feature does not apply to all platforms.
+This feature doesn't apply to all platforms.
 
 ## Windows Runtime
 
 ### Remarks
 
-This feature is not supported in the Windows Runtime.
+This feature isn't supported in the Windows Runtime.
 
 ### Requirements
 
@@ -28,14 +28,14 @@ Compiler option: `/ZW`
 
 ## Common Language Runtime
 
-A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.
+A generic function is a function that's declared with type parameters. When called, actual types are used instead of the type parameters.
 
 ### Syntax
 
 ```cpp
 [attributes] [modifiers]
-return-type identifier<type-parameter identifier(s)>
-[type-parameter-constraints clauses]
+return-type identifier<type-parameter-identifier-list>
+[type-parameter-constraints-clauses]
 
 ([formal-parameters])
 {function-body}
@@ -43,37 +43,37 @@ return-type identifier<type-parameter identifier(s)>
 
 ### Parameters
 
-*attributes*<br/>
-(Optional) Additional declarative information. For more information on attributes and attribute classes, see attributes.
+*`attributes`*\
+(Optional) Additional declarative information. For more information on attributes and attribute classes, see [attributes](../cppcx/attributes-c-cx.md).
 
-*modifiers*<br/>
-(Optional) A modifier for the function, such as static.  **`virtual`** is not allowed since virtual methods may not be generic.
+*`modifiers`*\
+(Optional) A modifier for the function, such as `static`.  **`virtual`** isn't allowed since virtual methods may not be generic.
 
-*return-type*<br/>
+*`return-type`*\
 The type returned by the method. If the return type is void, no return value is required.
 
-*identifier*<br/>
+*`identifier`*\
 The function name.
 
-*type-parameter identifier(s)*<br/>
+*`type-parameter-identifier-list`*\
 Comma-separated identifiers list.
 
-*formal-parameters*<br/>
+*`formal-parameters`*\
 (Optional) Parameter list.
 
-*type-parameter-constraints-clauses*<br/>
-This specifies restrictions on the types that may be used as type arguments, and takes the form specified in [Constraints on Generic Type Parameters (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md).
+*`type-parameter-constraints-clauses`*\
+This set specifies restrictions on the types that may be used as type arguments, and takes the form specified in [Constraints on Generic Type Parameters (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md).
 
-*function-body*<br/>
+*`function-body`*\
 The body of the method, which may refer to the type parameter identifiers.
 
 ### Remarks
 
-Generic functions are functions declared with a generic type parameter. They may be methods in a class or struct, or standalone functions. A single generic declaration implicitly declares a family of functions that differ only in the substitution of a different actual type for the generic type parameter.
+Generic functions are functions declared with a generic type parameter. They may be methods in a `class` or `struct`, or standalone functions. A single generic declaration implicitly declares a family of functions that differ only in the substitution of a different actual type for the generic type parameter.
 
-A class or struct constructor may not be declared with generic type parameters.
+A `class` or `struct` constructor may not be declared with generic type parameters.
 
-When called, the generic type parameter is replaced by an actual type. The actual type may be explicitly specified in angled brackets using syntax similar to a template function call. If called without the type parameters, the compiler will attempt to deduce the actual type from the parameters supplied in the function call. If the intended type argument cannot be deduced from the parameters used, the compiler will report an error.
+When called, the generic type parameter is replaced by an actual type. The actual type may be explicitly specified in angled brackets using syntax similar to a template function call. If called without the type parameters, the compiler will attempt to deduce the actual type from the parameters supplied in the function call. The compiler reports an error if the intended type argument cannot be deduced from the parameters used.
 
 ### Requirements
 
@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-Generic functions can be overloaded based on signature or arity, the number of type parameters on a function. Also, generic functions can be overloaded with non-generic functions of the same name, as long as the functions differ in some type parameters. For example, the following functions can be overloaded:
+Generic functions can be overloaded based on signature or *arity*, the number of type parameters on a function. Also, generic functions can be overloaded with non-generic functions of the same name, as long as the functions differ in some type parameters. For example, the following functions can be overloaded:
 
 ```cpp
 // generics_generic_function_2.cpp
@@ -173,5 +173,5 @@ My function returned a string: Hello generic functions!
 
 ## See also
 
-[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)<br/>
+[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)\
 [Generics](generics-cpp-component-extensions.md)
