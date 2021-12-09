@@ -1,41 +1,41 @@
 ---
-description: "Learn more about: Constraints on Generic Type Parameters (C++/CLI)"
-title: "Constraints on Generic Type Parameters (C++/CLI)"
+description: "Learn more about: Constraints on generic type parameters (C++/CLI)"
+title: "Constraints on generic type parameters (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
 f1_keywords: ["where"]
 helpviewer_keywords: ["where keyword [C++]", "constraints, C++"]
 ms.assetid: eb828cc9-684f-48a3-a898-b327700c0a63
 ---
-# Constraints on Generic Type Parameters (C++/CLI)
+# Constraints on generic type parameters (C++/CLI)
 
-In generic type or method declarations, you can qualify a type parameter with constraints. A constraint is a requirement that types used as type arguments must satisfy. For example, a constraint might be that the type argument must implement a certain interface or inherit from a specific class.
+In generic type or method declarations, you can qualify a type parameter with *constraints*. A constraint is a requirement that types used as type arguments must satisfy. For example, a constraint might be that the type argument must implement a certain interface or inherit from a specific class.
 
 Constraints are optional; not specifying a constraint on a parameter is equivalent to constraining that parameter to <xref:System.Object>.
 
 ## Syntax
 
 ```cpp
-where type-parameter: constraint list
+where type-parameter: constraint-list
 ```
 
 ### Parameters
 
-*type-parameter*<br/>
+*`type-parameter`*\
 One of the type parameters, to be constrained.
 
-*constraint list*<br/>
-*constraint list* is a comma-separated list of constraint specifications. The list can include interfaces to be implemented by the type parameter.
+*`constraint-list`*\
+*`constraint-list`* is a comma-separated list of constraint specifications. The list can include interfaces to be implemented by the type parameter.
 
 The list can also include a class. For the type argument to satisfy a base class constraint, it must be the same class as the constraint or derive from the constraint.
 
-You can also specify **gcnew()** to indicate the type argument must have a public parameterless constructor; or **ref class** to indicate the type argument must be a reference type, including any class, interface, delegate, or array type; or **value class** to indicate the type argument must be a value type. Any value type except Nullable\<T> can be specified.
+You can also specify **`gcnew()`** to indicate the type argument must have a public parameterless constructor; or **`ref class`** to indicate the type argument must be a reference type, including any class, interface, delegate, or array type; or **`value class`** to indicate the type argument must be a value type. Any value type except `Nullable<T>` can be specified.
 
-You can also specify a generic parameter as a constraint. The type argument supplied for the type you are constraining must be or derive from the type of the constraint. This is called a naked type constraint.
+You can also specify a generic parameter as a constraint. The type argument supplied for the type you're constraining must be or derive from the type of the constraint. This parameter is called a *naked type constraint*.
 
 ## Remarks
 
-The constraint clause consists of **where** followed by a type parameter, a colon (**:**), and the constraint, which specifies the nature of the restriction on the type parameter. **where** is a context-sensitive keyword; see [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md) for more information. Separate multiple **where** clauses with a space.
+The constraint clause consists of **`where`** followed by a type parameter, a colon (**`:`**), and the constraint, which specifies the nature of the restriction on the type parameter. **`where`** is a context-sensitive keyword. For more information, see [Context-sensitive keywords](context-sensitive-keywords-cpp-component-extensions.md). Separate multiple **`where`** clauses with a space.
 
 Constraints are applied to type parameters to place limitations on the types that can be used as arguments for a generic type or method.
 
@@ -54,11 +54,11 @@ ref class List {};
 
 This constraint requires that a type argument used for `T` implements `IComparable<T>` at compile time. It also allows interface methods, such as `CompareTo`, to be called. No cast is needed on an instance of the type parameter to call interface methods.
 
-Static methods in the type argument's class cannot be called through the type parameter; they can be called only through the actual named type.
+Static methods in the type argument's class can't be called through the type parameter; they can be called only through the actual named type.
 
-A constraint cannot be a value type, including built-in types such as **`int`** or **`double`**. Since value types cannot have derived classes, only one class would ever be able to satisfy the constraint. In that case, the generic can be rewritten with the type parameter replaced by the specific value type.
+A constraint can't be a value type, including built-in types such as **`int`** or **`double`**. Since value types cannot have derived classes, only one class could ever satisfy the constraint. In that case, the generic can be rewritten with the type parameter replaced by the specific value type.
 
-Constraints are required in some cases since the compiler will not allow the use of methods or other features of an unknown type unless the constraints imply that the unknown type supports the methods or interfaces.
+Constraints are required in some cases since the compiler won't allow the use of methods or other features of an unknown type unless the constraints imply that the unknown type supports the methods or interfaces.
 
 Multiple constraints for the same type parameter can be specified in a comma-separated list
 
@@ -86,13 +86,13 @@ generic <typename K, typename V>
 ref class Dictionary {};
 ```
 
-To summarize, use constraints in your code according to the following rules:
+Use constraints in your code according to the following rules:
 
 - If multiple constraints are listed, the constraints may be listed in any order.
 
-- Constraints can also be class types, such as abstract base classes. However, constraints cannot be value types or sealed classes.
+- Constraints can also be class types, such as abstract base classes. However, constraints can't be value types or `sealed` classes.
 
-- Constraints cannot themselves be type parameters, but they can involve the type parameters in an open constructed type. For example:
+- Constraints can't themselves be type parameters, but they can involve the type parameters in an open constructed type. For example:
 
     ```cpp
     // generics_constraints_4.cpp
@@ -167,7 +167,7 @@ int main() {
 "grandfather" is a senior
 ```
 
-When a generic type parameter is used as a constraint, it is called a naked type constraint. Naked type constraints are useful when a member function with its own type parameter needs to constrain that parameter to the type parameter of the containing type.
+When a generic type parameter is used as a constraint, it's called a *naked type constraint*. Naked type constraints are useful when a member function with its own type parameter needs to constrain that parameter to the type parameter of the containing type.
 
 In the following example, `T` is a naked type constraint in the context of the `Add` method.
 

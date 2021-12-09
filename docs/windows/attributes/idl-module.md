@@ -14,51 +14,51 @@ Specifies an entry point in a .dll file.
 
 ```cpp
 [ idl_module (name=module_name, dllname=dll, uuid="uuid", helpstring="help text", helpstringcontext=helpcontextID, helpcontext=helpcontext, hidden, restricted) ]
-function declaration
+function_declaration
 ```
 
 ### Parameters
 
-*name*<br/>
+*`name`*\
 A user-defined name for the code block that will appear in the .idl file.
 
-*dllname*<br/>
+*`dllname`*\
 (Optional) The .dll file that contains the export.
 
-*uuid*<br/>
+*`uuid`*\
 (Optional) A unique ID.
 
-*helpstring*<br/>
+*`helpstring`*\
 (Optional) A character string used to describe the type library.
 
-*helpstringcontext*<br/>
-(Optional) The ID of a help topic in an .hlp or .chm file.
+*`helpstringcontext`*\
+(Optional) The ID of a help topic in a *`.hlp`* or *`.chm`* file.
 
-*helpcontext*<br/>
+*`helpcontext`*\
 (Optional) The Help ID for this type library.
 
-*hidden*<br/>
-(Optional) A parameter that prevents the library from being displayed. See the [hidden](/windows/win32/Midl/hidden) MIDL attribute for more information.
+*`hidden`*\
+(Optional) A parameter that prevents the library from being displayed. For more information, see the [`hidden`](/windows/win32/Midl/hidden) MIDL attribute.
 
-*restricted*<br/>
-(Optional) Members of the library cannot be arbitrarily called. See the [restricted](/windows/win32/Midl/restricted) MIDL attribute for more information.
+*`restricted`*\
+(Optional) Members of the library cannot be arbitrarily called. For more information, see the [`restricted`](/windows/win32/Midl/restricted) MIDL attribute.
 
-*function declaration*<br/>
-The function that you will define.
+*`function_declaration`*\
+The function that you'll define.
 
 ## Remarks
 
-The **idl_module** C++ attribute lets you specify the entry point in a .dll file, which allows you to import from a .dll file.
+The **`idl_module`** C++ attribute lets you specify the entry point in a *`.dll`* file, which allows you to import from a *`.dll`* file.
 
-The **idl_module** attribute has functionality similar to the [module](/windows/win32/Midl/module) MIDL attribute.
+The **`idl_module`** attribute has functionality similar to the [`module`](/windows/win32/Midl/module) MIDL attribute.
 
-You can export anything from a COM object that you can export from a .dll file by putting a DLL entry point in the library block of an .idl file.
+You can export anything from a COM object that you can export from a *`.dll`* file by putting a DLL entry point in the library block of an *`.idl`* file.
 
-Your must use **idl_module** in two steps. First, you must define a name/DLL pair. Then, when you use **idl_module** to specify an entry point, specify the name and any additional attributes.
+Use **`idl_module`** in two steps. First, define a name/DLL pair. Then, when you use **`idl_module`** to specify an entry point, specify the name and any additional attributes.
 
 ## Example
 
-The following code shows how to use the **idl_module** attribute:
+The following code shows how to use the **`idl_module`** attribute:
 
 ```cpp
 // cpp_attr_ref_idl_module.cpp
@@ -72,16 +72,16 @@ void FuncName(int i);
 ## Requirements
 
 | Attribute context | Value |
-|-|-|
-|**Applies to**|Anywhere|
-|**Repeatable**|No|
-|**Required attributes**|None|
-|**Invalid attributes**|None|
+|--|--|
+| **Applies to** | Anywhere |
+| **Repeatable** | No |
+| **Required attributes** | None |
+| **Invalid attributes** | None |
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
 ## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)<br/>
-[entry](entry.md)
+[IDL attributes](idl-attributes.md)<br/>
+[Stand-alone attributes](stand-alone-attributes.md)<br/>
+[`entry`](entry.md)
