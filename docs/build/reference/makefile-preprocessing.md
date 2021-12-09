@@ -1,11 +1,11 @@
 ---
 description: "Learn more about: Makefile Preprocessing"
-title: "Makefile Preprocessing"
+title: "Makefile preprocessing"
 ms.date: 09/30/2021
 f1_keywords: ["!UNDEF", "!INCLUDE", "!IFNDEF", "!MESSAGE"]
 helpviewer_keywords: ["preprocessing makefiles", "makefiles, preprocessing", "!CMDSWITCHES directive", "!ELSE directive", "!ELSEIF directive", "!ELSEIFDEF directive", "!ELSEIFNDEF directive", "!ENDIF directive", "!ERROR directive", "!IF directive", "!IFDEF directive", "!IFNDEF directive", "!INCLUDE directive", "!MESSAGE directive", "!UNDEF directive", "directives, makefile preprocessing", "preprocessing directives, makefiles", "NMAKE program, expressions", "NMAKE program, preprocessor directives", "makefiles, preprocessing directives", "expressions [C++], makefile preprocessing", "operators [C++], makefile preprocessing", "EXIST operator", "preprocessing NMAKE makefile operators", "NMAKE program, operators", "DEFINED operator", "makefiles, preprocessing operators"]
 ---
-# Makefile Preprocessing
+# Makefile preprocessing
 
 You can control the NMAKE session by using preprocessing directives and expressions. Preprocessing instructions can be placed in the makefile or in *`Tools.ini`*. Using directives, you can conditionally process your makefile, display error messages, include other makefiles, undefine a macro, and turn certain options on or off.
 
@@ -128,6 +128,14 @@ Expressions can use the following operators. The operators of equal precedence a
 ## <a name="executing-a-program-in-preprocessing"> Executing a program in preprocessing
 
 To use a command's exit code during preprocessing, specify the command, with any arguments, within brackets (**`[ ]`**). Any macros are expanded before the command is executed. NMAKE replaces the command specification with the command's exit code, which can be used in an expression to control preprocessing.
+
+### Example
+
+```Makefile
+!IF [my_command.exe arg1 arg2] != 0
+!MESSAGE my_command.exe failed!
+!ENDIF
+```
 
 ## See also
 
