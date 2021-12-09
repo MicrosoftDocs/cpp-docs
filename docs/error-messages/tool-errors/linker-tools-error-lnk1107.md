@@ -10,9 +10,9 @@ ms.assetid: a37a893d-5efa-4eba-8f40-6c5518b4b9d0
 
 invalid or corrupt file: cannot read at location
 
-The tool could not read the file. Recreate the file.
+The tool could not read the file. Recreate the file. 
 
-LNK1107 could also occur if you attempt to pass a module (.dll or .netmodule extension created with [/clr:noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) or  [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)) to the linker; pass the .obj file instead.
+LNK1107 could also occur if you attempt to pass a module (.dll or .netmodule extension created with [/clr:noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) or  [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)) to the linker; pass the .lib file instead.
 
 If you compile the following sample:
 
