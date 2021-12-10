@@ -56,7 +56,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4365](../error-messages/compiler-warnings/compiler-warning-level-4-c4365.md) (level 4) | '*action*': conversion from '*type_1*' to '*type_2*', signed/unsigned mismatch |
 | C4370 (level 3) | layout of class has changed from a previous version of the compiler due to better packing |
 | [C4371](../error-messages/compiler-warnings/c4371.md) (level 3) | '*classname*': layout of class may have changed from a previous version of the compiler due to better packing of member '*member*' |
-| C4388 (level 4) | signed/unsigned mismatch |
+| [C4388](../error-messages/compiler-warnings/c4388.md) (level 4) | signed/unsigned mismatch |
 | [C4412](../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md) (level 2) | '*function*': function signature contains type '*type*'; C++ objects are unsafe to pass between pure code and mixed or native |
 | C4426 (level 1) | optimization flags changed after including header, may be due to #pragma optimize() <sup>14.1</sup> |
 | [C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (level 4) | '*class1*' : Object layout under /vd2 will change due to virtual base '*class2*' |
@@ -76,7 +76,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4557](../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md) (level 3) | '__assume' contains effect '*effect*' |
 | [C4571](../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md) (level 4) | informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught |
 | C4574 (level 4) | '*identifier*' is defined to be '0': did you mean to use '#if *identifier*'? |
-| C4577 (level 1) | 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc |
+| [C4577](../error-messages/compiler-warnings/compiler-warning-level-1-c4577.md) (level 1) | '`noexcept`' used with no exception handling mode specified; termination on exception is not guaranteed. Specify `/EHsc` |
 | C4582 (level 4) | '*type*': constructor is not implicitly called |
 | C4583 (level 4) | '*type*': destructor is not implicitly called |
 | C4587 (level 1) | '*anonymous_structure*': behavior change: constructor is no longer implicitly called |
@@ -112,7 +112,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (level 1) | '*member*': local class member function does not have a body |
 | C4826 (level 2) | Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior. |
 | C4837 (level 4) | trigraph detected: '??*character*' replaced by '*character*' |
-| C4841 (level 4) | non-standard extension used: compound member designator used in offsetof |
+| [C4841](../error-messages/compiler-warnings/c4841.md) (level 4) | non-standard extension used: compound member designator used in offsetof |
 | C4842 (level 4) | the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases |
 | [C4866](../error-messages/compiler-warnings/c4866.md) (level 4) | '*file*(*line-number*)' compiler may not enforce left-to-right evaluation order for call to *operator* |
 | [C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (level 4) | '_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
@@ -122,7 +122,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4928](../error-messages/compiler-warnings/compiler-warning-level-1-c4928.md) (level 1) | illegal copy-initialization; more than one user-defined conversion has been implicitly applied |
 | [C4931](../error-messages/compiler-warnings/compiler-warning-level-4-c4931.md) (level 4) | we are assuming the type library was built for number-bit pointers |
 | [C4946](../error-messages/compiler-warnings/compiler-warning-level-1-c4946.md) (level 1) | reinterpret_cast used between related classes: '*class1*' and '*class2*' |
-| C4962 | '*function*': profile-guided optimizations disabled because optimizations caused profile data to become inconsistent |
+| [C4962](../error-messages/compiler-warnings/compiler-warning-c4962.md) | '*function*': profile-guided optimizations disabled because optimizations caused profile data to become inconsistent |
 | [C4986](../error-messages/compiler-warnings/compiler-warning-c4986.md) (level 4) | '*symbol*': exception specification does not match previous declaration |
 | C4987 (level 4) | nonstandard extension used: 'throw (...)' |
 | C4988 (level 4) | '*symbol*': variable declared outside class/function scope |
