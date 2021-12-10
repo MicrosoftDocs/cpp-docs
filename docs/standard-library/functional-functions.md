@@ -149,7 +149,7 @@ The unary function object that results from binding the first argument of the bi
 
 Function binders are a kind of function adaptor. Because they return function objects, they can be used in certain types of function composition to construct more complicated and powerful expressions.
 
-If *`func`* is an object of type `Operation` and `c` is a constant, then `bind1st( func, c )` is the same as the [binder1st](../standard-library/binder1st-class.md) class constructor `binder1st<Operation>(func, c)`, and is more convenient to use.
+If *`func`* is an object of type `Operation` and `c` is a constant, then `bind1st( func, c )` is the same as the [`binder1st`](../standard-library/binder1st-class.md) class constructor `binder1st<Operation>(func, c)`, and is more convenient to use.
 
 ### Example
 
@@ -243,7 +243,7 @@ The unary function object result of binding the second argument of the binary fu
 
 Function binders are a kind of function adaptor. Because they return function objects, they can be used in certain types of function composition to construct more complicated and powerful expressions.
 
-If *`func`* is an object of type `Operation` and `c` is a constant, then `bind2nd(func, c)` is the same as the [binder2nd](../standard-library/binder2nd-class.md) class constructor `binder2nd<Operation>(func, c)`, and more convenient to use.
+If *`func`* is an object of type `Operation` and `c` is a constant, then `bind2nd(func, c)` is the same as the [`binder2nd`](../standard-library/binder2nd-class.md) class constructor `binder2nd<Operation>(func, c)`, and more convenient to use.
 
 ### Example
 
