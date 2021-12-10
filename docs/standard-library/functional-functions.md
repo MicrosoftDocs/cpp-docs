@@ -243,7 +243,7 @@ The unary function object result of binding the second argument of the binary fu
 
 Function binders are a kind of function adaptor. Because they return function objects, they can be used in certain types of function composition to construct more complicated and powerful expressions.
 
-If*`func`*is an object of type `Operation` and `c` is a constant, then `bind2nd(func, c)` is the same as the [binder2nd](../standard-library/binder2nd-class.md) class constructor `binder2nd<Operation>(func, c)`, and more convenient to use.
+If *`func`* is an object of type `Operation` and `c` is a constant, then `bind2nd(func, c)` is the same as the [binder2nd](../standard-library/binder2nd-class.md) class constructor `binder2nd<Operation>(func, c)`, and more convenient to use.
 
 ### Example
 
@@ -740,7 +740,7 @@ A pointer to the member function of class `Type` to be converted to a function o
 
 ### Return Value
 
-A **`const`** or **non_const** function object of type `mem_fun_t` or `mem_fun1_t`.
+A `const` or non-const function object of type `mem_fun_t` or `mem_fun1_t`.
 
 ### Example
 
@@ -827,7 +827,7 @@ A pointer to the member function of class `Type` to be converted to a function o
 
 ### Return Value
 
-A **`const`** or `non_const` function object of type `mem_fun_ref_t` or `mem_fun1_ref_t`.
+A `const` or `non_const` function object of type `mem_fun_ref_t` or `mem_fun1_ref_t`.
 
 ### Example
 
@@ -1174,9 +1174,9 @@ The unary or binary function pointer to be converted to an adaptable function.
 
 ### Return Value
 
-The first template function returns the unary function [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) <`Arg`, **Result**>(\* `pfunc`).
+The first template function returns the unary function [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) <`Arg`, **`Result`**>(\* `pfunc`).
 
-The second template function returns binary function [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \<**Arg1**, **Arg2**, **Result**>(\* `pfunc`).
+The second template function returns binary function [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \<**`Arg1`**, **`Arg2`**, **`Result`**>(\* `pfunc`).
 
 ### Remarks
 
