@@ -119,7 +119,7 @@ Destroying TestClass!
 Executing SEH __except block
 ```
 
-If you use **`/EHa`** to compile the code, the `TestClass` destructor executes whether the exception was thrown by using `std::throw` or by using SEH to trigger the exception. That is, whether `CPPEX` is defined or not. The output looks like this:
+If you use **`/EHa`** to compile the code, the `TestClass` destructor executes whether an exception was thrown using a standard C++ `throw` expression or by using SEH. That is, whether `CPPEX` is defined or not. The output looks like this:
 
 ```Output
 Throwing C++ exception
