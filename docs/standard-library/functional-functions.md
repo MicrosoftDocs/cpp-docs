@@ -38,7 +38,7 @@ template <class RTy, class FT, class T1, class T2, ..., class TN>
 The type of the object to call. For example, the type of the function, function object, function pointer/reference, or member function pointer.
 
 *`RTy`*\
-The return type. When specified, it will be the return type of the bound call. Otherwise, the return type is the return type of the `FT`.
+The return type. When specified, it will be the return type of the bound call. Otherwise, the return type is the return type of `FT`.
 
 *`TN`*\
 The type of the Nth call argument.
@@ -59,13 +59,13 @@ The second template function returns a forwarding call wrapper `g` with a nested
 
 The values of the bound arguments `v1, v2, ..., vN` and their corresponding types `V1, V2, ..., VN` depend on the type of the corresponding argument `ti` of type `Ti` in the call to `bind` and the cv-qualifiers `cv` of the call wrapper `g` as follows:
 
-if `ti` is of type `reference_wrapper<T>` the argument `vi` is `ti.get()` and its type `Vi` is `T&`;
+If `ti` is of type `reference_wrapper<T>` the argument `vi` is `ti.get()` and its type `Vi` is `T&`;
 
-if the value of `std::is_bind_expression<Ti>::value` is **`true`** the argument `vi` is `ti(u1, u2, ..., uM)` and its type `Vi` is `result_of<Ti` `cv` `(U1&, U2&, ..., UN&>::type`;
+If the value of `std::is_bind_expression<Ti>::value` is **`true`** the argument `vi` is `ti(u1, u2, ..., uM)` and its type `Vi` is `result_of<Ti` `cv` `(U1&, U2&, ..., UN&>::type`;
 
-if the value `j` of `std::is_placeholder<Ti>::value` isn't zero the argument `vi` is `uj` and its type `Vi` is `Uj&`;
+If the value `j` of `std::is_placeholder<Ti>::value` isn't zero the argument `vi` is `uj` and its type `Vi` is `Uj&`;
 
-otherwise the argument `vi` is `ti` and its type `Vi` is `Ti` `cv` `&`.
+Otherwise the argument `vi` is `ti` and its type `Vi` is `Ti` `cv` `&`.
 
 For example, given a function `f(int, int)` the expression `bind(f, _1, 0)` returns a forwarding call wrapper `cw` such that `cw(x)` calls `f(x, 0)`. The expression `bind(f, 0, _1)` returns a forwarding call wrapper `cw` such that `cw(x)` calls `f(0, x)`.
 
@@ -673,9 +673,9 @@ The type of the member function pointer.
 
 The template function returns a simple call wrapper `cw`, with a weak result type, such that the expression `cw(t, a2, ..., aN)` is the same as `INVOKE(pm, t, a2, ..., aN)`. It doesn't throw any exceptions.
 
-The returned call wrapper is derived from `std::unary_function<cv Ty*, RTy>` (and defining the nested type `result_type` as a synonym for *`RTy`* and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes no arguments.
+The returned call wrapper is derived from `std::unary_function<cv Ty*, RTy>` (and defining the nested type `result_type` as a synonym for *`RTy`* and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type *`Ty`* is a pointer to member function with cv-qualifier `cv` that takes no arguments.
 
-The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, RTy>` (and defining the nested type `result_type` as a synonym for *RTy*, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
+The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, RTy>` (and defining the nested type `result_type` as a synonym for *`RTy`*, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type *`Ty`* is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
 
 ### Example
 
