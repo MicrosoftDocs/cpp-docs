@@ -4,7 +4,6 @@ title: "Linker tools error LNK1107"
 ms.date: 12/10/2021
 f1_keywords: ["LNK1107"]
 helpviewer_keywords: ["LNK1107"]
-ms.assetid: a37a893d-5efa-4eba-8f40-6c5518b4b9d0
 ---
 # Linker tools error LNK1107
 
