@@ -1,13 +1,20 @@
 ---
 title: "Named modules tutorial in C++"
-ms.date: "12/9/2021"
+ms.date: "12/10/2021"
 ms.topic: "tutorial"
 helpviewer_keywords: ["modules [C++]", "modules [C++], named modules tutorial"]
 description: Named modules in C++20 provide a modern alternative to header files.
 ---
 # Named modules tutorial (C++)
 
- This tutorial introduces the basics of creating C++20 modules. Modules are a new way to componentize C++ programs, replacing the venerable header file. You'll learn how modules are an improvement on header files and build an app that shows how to create and consume modules, module partitions, and module implementation files.
+ This tutorial introduces the basics of creating C++20 modules. Modules are a new way to componentize C++ programs, replacing the venerable header file. You'll learn how modules are an improvement on header files and build an app that shows how to create and consume a module.
+
+In this tutorial, you learn how to:
+
+- Create and import a module
+- Create a primary module interface unit
+- Create a module partition file
+- Create a module unit implementation file
 
 ## Prerequisites
 
