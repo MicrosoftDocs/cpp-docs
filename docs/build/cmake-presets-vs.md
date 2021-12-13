@@ -223,7 +223,7 @@ Build with `clang`:
 }
 ```
 
-*OR* use the `toolset` configure preset to specify the `ClangCL` toolset like so:
+*OR* if you are using a generator that supports specifying a native build system toolset, such as Visual Studio Generators for VS 2010 and above, then you can use the `toolset` configure preset to specify the `ClangCL` toolset like so:
   
 ```json
 "cacheVariables": {
@@ -238,7 +238,9 @@ Build with `clang`:
   }
 }
 ```
-  
+
+See the documentation on [CMAKE_GENERATOR_TOOLSET](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html) for more information on generators that support the `toolset` specification.
+
 > [!IMPORTANT]
 > In Visual Studio 2019, you must explicitly specify a Clang IntelliSense mode when you're building with `clang` or `clang-cl`.
 
