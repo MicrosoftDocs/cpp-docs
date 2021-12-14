@@ -223,8 +223,8 @@ Build with `clang`:
 }
 ```
 
-*OR* if you are using a generator that supports specifying a native build system toolset, such as Visual Studio Generators for VS 2010 and above, then you can use the `toolset` configure preset to specify the `ClangCL` toolset like so:
-  
+*OR* if you are using either `Visual Studio 16 2019` or `Visual Studio 17 2022` as your generator, then you can use the `toolset` configure preset to specify the `ClangCL` toolset:
+
 ```json
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
