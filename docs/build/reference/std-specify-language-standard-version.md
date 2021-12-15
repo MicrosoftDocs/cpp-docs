@@ -101,7 +101,7 @@ The compiler doesn't support most optional features of ISO C11. Several of these
 
 - `aligned_alloc` support is missing, because of the Windows heap implementation. The alternative is to use [`_aligned_malloc`](../../c-runtime-library/reference/aligned-malloc.md).
 
-- [DR 400](http://www.open-std.org/jtc1/sc22/wg14/www/docs/summary.htm#dr_400) support is currently unimplemented for `realloc`, because this change would break the ABI.
+- [DR 400](https://wg14.link/n2148#dr_400) support is currently unimplemented for `realloc`, because this change would break the ABI.
 
 - Variable length array (VLA) support isn't planned. VLAs provide attack vectors comparable to [`gets`](../../c-runtime-library/gets-getws.md), which is deprecated and planned for removal.
 
