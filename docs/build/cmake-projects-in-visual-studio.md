@@ -1,7 +1,7 @@
 ---
 title: "CMake projects in Visual Studio"
 description: "How to create and build C++ projects using CMake in Visual Studio."
-ms.date: "01/08/2020"
+ms.date: 12/15/2021
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
@@ -18,7 +18,7 @@ Visual Studio's native support for CMake enables you to edit, build, and debug C
 
 ## Installation
 
-**C++ CMake tools for Windows** is installed as part of the **Desktop development with C++** and **Linux Development with C++** workloads. Both **C++ CMake tools for Windows** and **Linux Development with C++** are required for cross-platform CMake development. 
+**C++ CMake tools for Windows** is installed as part of the **Desktop development with C++** and **Linux Development with C++** workloads. Both **C++ CMake tools for Windows** and **Linux Development with C++** are required for cross-platform CMake development.
 
 ![Screenshot of the Desktop development with C plus plus dropdown selected and the C plus plus C Make tools for Windows option called out.](media/cmake-install-2019.png)
 
@@ -28,7 +28,7 @@ For more information, see [Install the C++ Linux workload in Visual Studio](../l
 
 When you **open a folder** containing a *`CMakeLists.txt`* file, the following things happen.
 
-![A screenshot of the Start Window in Visual Studio](media/start-window.png)
+![A screenshot of the Start Window in Visual Studio.](media/start-window.png)
 
 - Visual Studio adds **CMake** items to the **Project** menu, with commands for viewing and editing CMake scripts.
 
@@ -68,11 +68,11 @@ Most Visual Studio and C++ language features are supported by CMake projects in 
 
 ## Configuring CMake projects
 
-The CMake configure step generates the project build system. It is equivalent to invoking `cmake.exe` from the command line. For more information on the CMake configure step, see the [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake.1.html#generate-a-project-buildsystem).
+The CMake configure step generates the project build system. It's equivalent to invoking `cmake.exe` from the command line. For more information on the CMake configure step, see the [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake.1.html#generate-a-project-buildsystem).
 
-Visual Studio uses a CMake configuration file to drive CMake generation and build. **CMakePresets.json** is supported by Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file. **CMakePresets.json** is supported directly by CMake and can be used to drive CMake generation and build from Visual Studio, from VS Code, in a Continuous Integration pipeline, and from the command line on Windows, Linux, and Mac. For more information on **CMakePresets.json**, see [Configure and build with CMake Presets](cmake-presets-vs.md). **CMakeSettings.json** is available for customers using an earlier version of Visual Studio. For more information on **CMakeSettings.json**, see [Customize CMake build settings](customize-cmake-settings.md).
+Visual Studio uses a CMake configuration file to drive CMake generation and build. *`CMakePresets.json`* is supported by Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file. *`CMakePresets.json`* is supported directly by CMake and can be used to drive CMake generation and build from Visual Studio, from VS Code, in a Continuous Integration pipeline, and from the command line on Windows, Linux, and Mac. For more information on *`CMakePresets.json`*, see [Configure and build with CMake Presets](cmake-presets-vs.md). *`CMakeSettings.json`* is available for customers using an earlier version of Visual Studio. For more information on *`CMakeSettings.json`*, see [Customize CMake build settings](customize-cmake-settings.md).
 
-When you make significant changes to your CMake configuration file or a *`CMakeLists.txt`* file, Visual Studio will automatically run the CMake configure step. You can manually invoke configure by selecting **Project > Configure Cache** from the toolbar. You can also change your configuration preferences in **Tools > Options > CMake > General**.
+When you make significant changes to your CMake configuration file or a *`CMakeLists.txt`* file, Visual Studio will automatically run the CMake configure step. You can invoke the configure step manually: Select **Project > Configure Cache** from the toolbar. You can also change your configuration preferences in **Tools** > **Options** > **CMake** > **General**.
 
 ![CMake configuration options.](media/cmake-configure-options.png)
 
@@ -90,7 +90,7 @@ You can also disable all CMake cache notifications (gold bars) by deselecting **
 
 If you need more information about the state of the CMake cache to diagnose a problem, open the **Project** main menu or the *`CMakeLists.txt`* context menu in **Solution Explorer** to run one of these commands:
 
-- **View CMakeCache.txt** opens the *`CMakeCache.txt`* file from the build directory in the editor. Any edits you make here to *`CMakeCache.txt`* are wiped out if you clean the cache. To make changes that persist after the cache is cleaned, see [Customize CMake settings](customize-cmake-settings.md) or [Configure and Build with CMake Presets](cmake-presets-vs.md).
+- **View CMakeCache.txt** opens the *`CMakeCache.txt`* file from the build directory in the editor. Any edits you make here to *`CMakeCache.txt`* are wiped out if you clean the cache. To make changes that persist after you clean the cache, see [Customize CMake settings](customize-cmake-settings.md) or [Configure and Build with CMake Presets](cmake-presets-vs.md).
 
 - **Delete Cache and Reconfigure** deletes the build directory and reconfigures from a clean cache.
 
@@ -98,13 +98,13 @@ If you need more information about the state of the CMake cache to diagnose a pr
 
 ## Building CMake projects
 
-The CMake build step builds an already generated project binary tree. It is equivalent to invoking `cmake --build` from the command line. For more information on the CMake build step, see the [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake.1.html#build-a-project).
+The CMake build step builds an already generated project binary tree. It's equivalent to invoking `cmake --build` from the command line. For more information on the CMake build step, see the [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake.1.html#build-a-project).
 
 To build a CMake project, you have these choices:
 
 1. In the toolbar, find the **Startup Item** dropdown. Select the preferred target and press **F5**, or choose the **Run** button on the toolbar. The project automatically builds first, just like a Visual Studio solution.
 
-1. Right-click on CMake target with **CMake Targets View** active in the **Solution Explorer** and select **Build** from the context menu. 
+1. Right-click on CMake target with **CMake Targets View** active in the **Solution Explorer** and select **Build** from the context menu.
 
 1. From the main menu, select **Build > Build All**. Make sure that a CMake target is already selected in the **Startup Item** dropdown in the toolbar.
 
@@ -114,15 +114,15 @@ As you would expect, build results are shown in the **Output Window** and **Erro
 
 ### Edit build settings
 
-Visual Studio uses a CMake configuration file to drive CMake builds. CMake configuration files encapsulate build options like native build tool switches and environment variables. If **CMakePresets.json** is your active configuration file, see [Configure and build with CMake Presets](cmake-presets-vs.md#configure-and-build). If **CMakeSettings.json** is your active configuration file, see [Customize CMake build settings](customize-cmake-settings.md). **CMakePresets.json** is available in Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file.
+Visual Studio uses a CMake configuration file to drive CMake builds. CMake configuration files encapsulate build options like native build tool switches and environment variables. If *`CMakePresets.json`* is your active configuration file, see [Configure and build with CMake Presets](cmake-presets-vs.md#configure-and-build). If *`CMakeSettings.json`* is your active configuration file, see [Customize CMake build settings](customize-cmake-settings.md). *`CMakePresets.json`* is available in Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file.
 
 ## Debugging CMake projects
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the toolbar. To start debugging, select one and press the **Debug > Start Debugging** button in the toolbar. In a CMake project, the "Current document" option is only valid for .cpp files.
 
-![A screenshot of the Startup Item dropdown in a CMake project](media/debug-target.png "The Startup Item dropdown in a CMake project")
+![A screenshot of the Startup Item dropdown in a CMake project.](media/debug-target.png "The Startup Item dropdown in a CMake project")
 
-The **Debug** or **F5** commands first build the project if changes have been made since the previous build. Changes to the CMake configuration file (**CMakePresets.json** or **CMakeSettings.json**) or a *`CMakeLists.txt`* causes the CMake cache to be regenerated.
+The **Debug** or **F5** commands first build the project if changes have been made since the previous build. Changes to the CMake configuration file (*`CMakePresets.json`* or *`CMakeSettings.json`*) or a *`CMakeLists.txt`* causes the CMake cache to be regenerated.
 
 You can customize a CMake debugging session by setting properties in the *`launch.vs.json`* file. To customize debug settings for a specific target, select the target in the **Startup Item** dropdown and press **Debug > Debug and Launch Settings for \<active-target>**. For more information on CMake debugging sessions, see [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md).
 
@@ -137,15 +137,15 @@ When you build for Windows with the MSVC compiler, CMake projects have support f
 ```
 if(MSVC)
   target_compile_options(<target> PUBLIC "/ZI")
-  target_link_options(<target> PUBLIC "/ZI" "/INCREMENTAL")
+  target_link_options(<target> PUBLIC "/INCREMENTAL")
 endif()
 ```
 
-### Attach to a CMake project running on Linux 
+### Attach to a CMake project running on Linux
 
 Visual Studio allows you to debug a process running on a remote Linux system or WSL and debug it with the GDB debugger. To get started, select **Debug** > **Attach to Process...**, set the **Connection type** to **SSH**, and select your **Connection target** from the list of connections in the Connection Manager. Select a process from the list of available processes and press **Attach**. GDB must be installed on your Linux machine. For more information on SSH connections, see the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md)
 
-![A screenshot of the Attach to Process menu](media/attach-to-process.png) 
+![A screenshot of the Attach to Process menu.](media/attach-to-process.png)
 
 ## <a name="cmake-partial-activation"></a> CMake partial activation
 
@@ -156,7 +156,7 @@ The accepted properties are:
 | Property | Description |
 |--|--|
 | `enableCMake` | Enable Visual Studio's integration for this workspace. |
-| `sourceDirectory` | A string or array of strings specifying the directory or directories with `CMakeLists.txt`. Macros (such as `${workspaceRoot}`) are allowed. Relative paths are relative to the workspace root. Directories outside of the current workspace will be ignored. |
+| `sourceDirectory` | A string or array of strings specifying the directory or directories with `CMakeLists.txt`. Macros (such as `${workspaceRoot}`) are allowed. Relative paths are based on the workspace root. Directories outside of the current workspace will be ignored. |
 
 You can reach `CMakeWorkspaceSettings.json` through the **Project** > **CMake Workspace Settings** menu command at any time, even if CMake functionality is currently disabled.
 
@@ -168,6 +168,7 @@ You can add an existing CMake cache to an open project. It's done the same way y
 
 > [!NOTE]
 > The default existing cache experience relies on `cmake-server`, which was removed from CMake in version 3.20. To continue using existing cache functionality in Visual Studio 2019 version 16.10 and later, take one of these steps:
+>
 > - Manually install CMake version 3.19 or lower. Then, set the `cmakeExecutable` property in your existing cache configuration to use that version of CMake.
 > - In your existing cache configuration, set the `cacheGenerationCommand` property to let Visual Studio request the necessary CMake file-based API files. For more information on that property, see [CMakeSettings.json reference](cmakesettings-reference.md#configurations).
 > - Use a query file to request the CMake file-based API files when generating your cache before it's opened in Visual Studio. For query file instructions, see the next section, [Advanced CMake cache troubleshooting](#advanced).
@@ -198,39 +199,39 @@ As soon as you save the file, the configuration step automatically runs again an
 
 Language services for CMake are available in Visual Studio 2019 version 16.5 or later. Code navigation features like Go To Definition, Peek Definition, and Find All References are supported for CMake variables, functions, and targets in CMake script files. For more information, see [Code Navigation for CMake Scripts](https://devblogs.microsoft.com/cppblog/code-navigation-for-cmake-scripts/).
 
-![Find All References on a CMake variable, target, or function](media/cmake-find-all-refs.png)
+![Find All References on a CMake variable, target, or function.](media/cmake-find-all-refs.png)
 
 ### CMake project manipulation
 
-CMake project manipulation is available in Visual Studio 2019 version 16.5 or later. Project manipulation enables you to add, remove, and rename source files and targets in your CMake project without manually editing your CMake scripts. When you add or remove files from the Solution Explorer, Visual Studio will automatically edit your CMake project. If there is more than one place where it makes sense to add or remove a reference to a CMake script, then Visual Studio will ask you where you want to make the change and display a preview of the proposed changes. For step-by-step instructions, see [Add, Remove, and Rename Files and Targets in CMake Projects](https://devblogs.microsoft.com/cppblog/easily-add-remove-and-rename-files-and-targets-in-cmake-projects/).
+CMake project manipulation is available in Visual Studio 2019 version 16.5 or later. Project manipulation enables you to add, remove, and rename source files and targets in your CMake project without manually editing your CMake scripts. When you add or remove files from the Solution Explorer, Visual Studio automatically edits your CMake project. There could be more than one place where it makes sense to add or remove a reference to a CMake script. If so, Visual Studio asks you where you want to make the change and displays a preview of the proposed changes. For step-by-step instructions, see [Add, Remove, and Rename Files and Targets in CMake Projects](https://devblogs.microsoft.com/cppblog/easily-add-remove-and-rename-files-and-targets-in-cmake-projects/).
 
-![Resolving ambiguity with CMake project manipulation](media/cmake-project-manipulation.png)
+![Resolving ambiguity with CMake project manipulation.](media/cmake-project-manipulation.png)
 
 ## IntelliSense for CMake projects
 
-By default, Visual Studio uses the IntelliSense mode that matches the compiler and target architecture specified by the active CMake configuration. 
+By default, Visual Studio uses the IntelliSense mode that matches the compiler and target architecture specified by the active CMake configuration.
 
-If **CMakePresets.json** is your active CMake configuration file, then additional IntelliSense options may be specified with `intelliSenseMode` and `intelliSenseOptions` in the Visual Studio Settings vendor map. For more information, see the [Visual Studio Settings vendor map reference](cmake-presets-json-reference.md#visual-studio-settings-vendor-map).
+If *`CMakePresets.json`* is your active CMake configuration file, then you can specify IntelliSense options using `intelliSenseMode` and `intelliSenseOptions` in the Visual Studio Settings vendor map. For more information, see the [Visual Studio Settings vendor map reference](cmake-presets-json-reference.md#visual-studio-settings-vendor-map).
 
-If **CMakeSettings.json** is your active CMake configuration file, then additional IntelliSense options may be specified with `intelliSenseMode` in **CMakeSettings.json**. For more information, see the [CMakeSettings.json reference](cmakesettings-reference.md).
+If *`CMakeSettings.json`* is your active CMake configuration file, then you can specify IntelliSense options using `intelliSenseMode` in *`CMakeSettings.json`*. For more information, see the [`CMakeSettings.json` reference](cmakesettings-reference.md).
 
-### Configure IntelliSense with CMake toolchain files 
+### Configure IntelliSense with CMake toolchain files
 
-Visual Studio will automatically configure IntelliSense in CMake projects based on the value of CMake variables set by a CMake toolchain file in Visual Studio 2019 version 16.9 or later. This provides automatic IntelliSense configuration when a CMake toolchain file is used for CMake configuration and build. For more information, see [Configure IntelliSense with CMake Toolchain Files](https://devblogs.microsoft.com/cppblog/configure-intellisense-with-cmake-toolchain-files-in-visual-studio-2019-16-9-preview-2/).
+In Visual Studio 2019 version 16.9 and later, Visual Studio automatically configures IntelliSense in CMake projects based on CMake variables when you use a CMake toolchain file. For more information, see [Configure IntelliSense with CMake Toolchain Files](https://devblogs.microsoft.com/cppblog/configure-intellisense-with-cmake-toolchain-files-in-visual-studio-2019-16-9-preview-2/).
 
 ## Vcpkg integration
 
 CMake projects opened in Visual Studio integrate with vcpkg, a cross-platform C/C++ dependency manager. Before using vcpkg with Visual Studio, you must run `vcpkg integrate install`. For instructions and more information on vcpkg, see the [vcpkg documentation](https://vcpkg.io/).
 
-If **CMakeSettings.json** is your active configuration file, then Visual Studio will automatically pass the vcpkg toolchain file (`vcpkg.cmake`) to CMake. This behavior is disabled automatically when you specify any other toolchain in your CMake Settings configuration. 
+If *`CMakeSettings.json`* is your active configuration file, Visual Studio automatically passes the vcpkg toolchain file (`vcpkg.cmake`) to CMake. This behavior is disabled automatically when you specify any other toolchain in your CMake Settings configuration.
 
-If **CMakePresets.json** is your active configuration file, then you will need to set the path to `vcpkg.cmake` in **CMakePresets.json**. We recommend using the `VCPKG_ROOT` environment variable instead of an absolute path to keep the file shareable. For more information, see [Enable vcpkg integration with CMake Presets](cmake-presets-vs.md#enable-vcpkg-integration). **CMakePresets.json** is available in Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file. 
+If *`CMakePresets.json`* is your active configuration file, you'll need to set the path to `vcpkg.cmake` in *`CMakePresets.json`*. We recommend using the `VCPKG_ROOT` environment variable instead of an absolute path to keep the file shareable. For more information, see [Enable vcpkg integration with CMake Presets](cmake-presets-vs.md#enable-vcpkg-integration). *`CMakePresets.json`* is available in Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file.
 
 ## Run CMake from the command line
 
-If **CMakePresets.json** is your active CMake configuration file, then you can easily reproduce your local builds outside of Visual Studio. For more information, see [Run CMake from the command line or a CI pipeline](cmake-presets-vs.md#run-cmake-from-the-command-line-or-a-ci-pipeline). **CMakePresets.json** is supported in Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file. 
+If *`CMakePresets.json`* is your active CMake configuration file, then you can easily reproduce your local builds outside of Visual Studio. For more information, see [Run CMake from the command line or a CI pipeline](cmake-presets-vs.md#run-cmake-from-the-command-line-or-a-ci-pipeline). *`CMakePresets.json`* is supported in Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file.
 
-If **CMakeSettings.json** is your active CMake configuration file, then you will need to manually pass the arguments that are encoded in your **CMakeSettings.json** file to CMake. If you have installed CMake from the Visual Studio Installer, you can run it from the command line by following these steps:
+If *`CMakeSettings.json`* is your active CMake configuration file, then you'll need to manually pass the arguments that are encoded in your *`CMakeSettings.json`* file to CMake. If you have installed CMake from the Visual Studio Installer, you can run it from the command line by following these steps:
 
 1. Run the appropriate *`vsdevcmd.bat`* file (x86/x64). For more information, see [Building on the command line](building-on-the-command-line.md) .
 

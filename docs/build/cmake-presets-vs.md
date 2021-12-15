@@ -1,7 +1,7 @@
 ---
 title: Configure and build with CMake Presets
 description: "Reference for using CMake Presets to configure and build CMake projects."
-ms.date: 04/15/2021
+ms.date: 12/15/2021
 ms.topic: reference
 ---
 
@@ -17,7 +17,7 @@ This article contains information about *`CMakePresets.json`* integration with V
 - For more information about the Microsoft vendor maps and macro expansion, see [`CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps](cmake-presets-json-reference.md).
 - For more information about how to use *`CMakePresets.json`* in Visual Studio Code, see [Configure and build with CMake Presets](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-presets.md).
 
-We recommend *`CMakePresets.json`* as an alternative to *`CMakeSettings.json`*. Visual Studio will never read from both *`CMakePresets.json`* and *`CMakeSettings.json`* at the same time. To enable or disable *`CMakePresets.json`* integration in Visual Studio, see [Enable `CMakePresets.json` in Visual Studio 2019](#enable-cmakepresets-json-integration).
+We recommend *`CMakePresets.json`* as an alternative to *`CMakeSettings.json`*. Visual Studio never reads from both *`CMakePresets.json`* and *`CMakeSettings.json`* at the same time. To enable or disable *`CMakePresets.json`* integration in Visual Studio, see [Enable `CMakePresets.json` in Visual Studio 2019](#enable-cmakepresets-json-integration).
 
 ## Supported CMake and  *`CMakePresets.json`* versions
 
@@ -34,11 +34,11 @@ CMake version 3.20 or later is required when you're invoking CMake with *`CMakeP
 > [!Important]
 > Close and reopen the folder in Visual Studio to activate the integration.
 
-In Visual Studio 2022 version 17.0 and Visual Studio 2019, **Tools** > **Options** > **CMake** > **General** has a single option to enable *`CMakePresets.json`* integration. 
+In Visual Studio 2022 and Visual Studio 2019 version 16.10 and later, **Tools** > **Options** > **CMake** > **General** has a single option to enable *`CMakePresets.json`* integration.
 
 ![Screenshot showing the checkbox to enable CMakePresets.json on the CMake General page of the Tools Options dialog in Visual Studio 2019.](./media/enable-cmakepresets.png)
 
-The following table indicates when *`CMakePresets.json`* is used instead of *`CMakeSettings.json`* to drive CMake configuration and build in Visual Studio 2022 version 17.0 and Visual Studio 2019. If no configuration file is present, default Configure Presets are used.
+The following table indicates when *`CMakePresets.json`* is used instead of *`CMakeSettings.json`* to drive CMake configuration and build in Visual Studio 2022 and Visual Studio 2019 version 16.10 and later. If no configuration file is present, default Configure Presets are used.
 
 In the table, "**Tools** > **Options** enabled" means **Use CMakePresets.json to drive CMake configure, build, and test** is selected in **Tools** > **Options** > **CMake** > **General**.
 
@@ -55,7 +55,7 @@ By default, Visual Studio automatically invokes `configure` each time the active
 
 ## Default Configure Presets
 
-If no *`CMakePresets.json`* or *`CMakeUserPresets.json`* file exists, or if *`CMakePresets.json`* or *`CMakeUserPresets.json`* is invalid, Visual Studio will fall back on the following default Configure Presets:
+If no *`CMakePresets.json`* or *`CMakeUserPresets.json`* file exists, or if *`CMakePresets.json`* or *`CMakeUserPresets.json`* is invalid, Visual Studio falls back on the following default Configure Presets:
 
 ### Windows example
 
@@ -131,7 +131,7 @@ Select **Manage Connections** to open Connection Manager.
 
 The dropdown list in the middle indicates the active *Configure Preset*. It's the `configurePreset` value that's used when CMake is invoked to generate the project build system. This dropdown list includes the union of non-hidden Configure Presets defined in *`CMakePresets.json`* and *`CMakeUserPresets.json`*.
 
-Visual Studio will use the value of `hostOS` in the Microsoft Visual Studio Settings vendor map to hide Configure Presets that don't apply to the active Target System. For more information, see the entry for `hostOS` in the table under [Visual Studio Settings vendor map](cmake-presets-json-reference.md#visual-studio-settings-vendor-map).
+Visual Studio uses the value of `hostOS` in the Microsoft Visual Studio Settings vendor map to hide Configure Presets that don't apply to the active Target System. For more information, see the entry for `hostOS` in the table under [Visual Studio Settings vendor map](cmake-presets-json-reference.md#visual-studio-settings-vendor-map).
 
 Select **Manage Configurations** to open the *`CMakePresets.json`* file located at the root of the project. *`CMakePresets.json`* is created if it doesn't already exist.
 
@@ -141,7 +141,7 @@ The dropdown list on the right indicates the active *Build Preset*. It's the `bu
   
 All Build Presets are required to specify an associated `configurePreset` value. Visual Studio hides Build Presets that don't apply to the active Configure Preset. For more information, see the [list of Build Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#build-preset).
 
-If there are no Build Presets associated with the active Configure Preset, Visual Studio will list the default Build Preset. The default Build Preset is equivalent to passing `cmake --build` with no other arguments from the command line.
+If there are no Build Presets associated with the active Configure Preset, Visual Studio lists the default Build Preset. The default Build Preset is equivalent to passing `cmake --build` with no other arguments from the command line.
 
 ### Configure
 
@@ -232,6 +232,7 @@ If you use either `Visual Studio 16 2019` or `Visual Studio 17 2022` as your gen
   "CMAKE_BUILD_TYPE": "Debug",
   "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
 },
+
 "toolset": "ClangCL",
 
 "vendor": {
@@ -280,7 +281,7 @@ You can set the target architecture (x64, Win32, ARM64, or ARM) by using `archit
 
 You can set the host architecture (x64 or x86) and toolset by using `toolset.value`. It's equivalent to passing `-T` to CMake from the command line. For more information, see [Toolset Selection](https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2016%202019.html#toolset-selection).
 
-The `architecture.strategy` and `toolset.strategy` values tell CMake how to handle the architecture and toolset fields. `set` means CMake will set the respective value, and `external` means CMake won't set the respective value.
+The `architecture.strategy` and `toolset.strategy` values tell CMake how to handle the architecture and toolset fields. `set` means CMake sets the respective value, and `external` means CMake won't set the respective value.
 
 We recommend you use `set` with IDE generators like the Visual Studio Generator. Use `external` with command-line generators like Ninja. These values allow vendors like Visual Studio to supply the required environment before CMake is invoked. For more information about the architecture and toolset fields, see the [list of Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
 
@@ -379,7 +380,7 @@ Instead, set the path to `vcpkg.cmake` by using the `VCPKG_ROOT` environment var
 
 If you're already using a CMake toolchain file and want to enable vcpkg integration, see [Using multiple toolchain files](https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md#using-multiple-toolchain-files). Follow those instructions to use an external toolchain file with a project by using vcpkg.
 
-## Substitute variables in  *`launch.vs.json`* and  *`tasks.vs.json`*
+## Variable substitution in  *`launch.vs.json`* and  *`tasks.vs.json`*
 
 *`CMakePresets.json`* supports variable substitution in *`launch.vs.json`* and *`tasks.vs.json`*. Here are some considerations:
 
@@ -399,7 +400,7 @@ If either *`CMakePresets.json`* or *`CMakeUserPresets.json`* is invalid, Visual 
 
 To check if your preset files are valid, run `cmake --list-presets` from the command line at the root of your project directory. (CMake 3.20 or later is required.) If either file is invalid, you'll see the following error:
 
-```DOS
+```cmd
 CMake Error: Could not read presets from
 C:/Users/<user>/source/repos/<project-name>: JSON parse error
 ```
@@ -418,7 +419,7 @@ You can enable logging for remote connections if you're having trouble connectin
 
 ## Enable AddressSanitizer for Windows and Linux
 
-AddressSanitizer (ASAN) is a runtime memory error detector for C and C++ that's supported in Visual Studio for both Windows and Linux development. AddressSanitizer was enabled with an option (`addressSanitizerEnabled`) in *`CMakeSettings.json`*. *`CMakePresets.json`* doesn't support this behavior.
+Visual Studio supports AddressSanitizer (ASAN), a C and C++ runtime memory error detector, for both Windows and Linux development. The `addressSanitizerEnabled` option in *`CMakeSettings.json`* enables AddressSanitizer. *`CMakePresets.json`* doesn't support this behavior.
 
 Instead, enable and disable AddressSanitizer by setting the required compiler and linker flags yourself. Setting them removes Visual Studio-specific behavior and ensures that the same *`CMakePresets.json`* file can reproduce your build from the command line.
 
@@ -437,7 +438,7 @@ if(ASAN_ENABLED)
 endif()
 ```
 
-The `<additional-options>` part lists other compilation flags, like `"-fno-omit-frame-pointer"`. For more information about AddressSanitizer for Linux, see [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer). For more information about using AddressSanitizer with the Microsoft Visual C++ (MSVC) compiler, see [Use AddressSanitizer from a developer command prompt](../sanitizers/asan.md#command-prompt).
+The `<additional-options>` part lists other compilation flags, like `"-fno-omit-frame-pointer"`. For more information about AddressSanitizer for Linux, see [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer). For more information about using AddressSanitizer with MSVC, see [Use AddressSanitizer from a developer command prompt](../sanitizers/asan.md#command-prompt).
 
 Pass runtime flags to AddressSanitizer by using the `ASAN_OPTIONS` field in *`launch.vs.json`*. `ASAN_OPTIONS` defaults to `detect_leaks=0` when no other runtime options are specified because LeakSanitizer isn't supported in Visual Studio.
 
