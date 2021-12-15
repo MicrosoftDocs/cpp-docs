@@ -81,7 +81,7 @@ Due to possible redundancies in the encodings above, these restrictions apply:
 
 - If the *`C`* flag is set to 1:
 
-  - The *`L`* flag must also be set to 1, because frame chaining required both r11 and LR.
+  - The *`L`* flag must also be set to 1, because frame chaining requires both r11 and LR.
 
   - r11 must not be included in the set of registers described by *`Reg`*. That is, if r4-r11 are pushed, *`Reg`* should only describe r4-r10, because the *`C`* flag implies r11.
 
@@ -101,8 +101,8 @@ Prologues for canonical functions may have up to 5 instructions (notice that 3a 
 |-----------------|-----------------------------------|----------|------------|------------------|
 |1|*`H`*==1|16|`push {r0-r3}`|04|
 |2|*`C`*==1 or *`L`*==1 or *`R`*==0 or *`PF`*==1|16/32|`push {registers}`|80-BF/D0-DF/EC-ED|
-|3a|*`C`*==1 and (*`L`*==0 and *`R`*==1 and *`PF`*==0)|16|`mov r11,sp`|C0-CF/FB|
-|3b|*`C`*==1 and (*`L`*==1 or *`R`*==0 or *`PF`*==1)|32|`add r11,sp,#xx`|FC|
+|3a|*`C`*==1 and (*`R`*==1 and *`PF`*==0)|16|`mov r11,sp`|FB|
+|3b|*`C`*==1 and (*`R`*==0 or *`PF`*==1)|32|`add r11,sp,#xx`|FC|
 |4|*`R`*==1 and *`Reg`* != 7|32|`vpush {d8-dE}`|E0-E7|
 |5|*`Stack Adjust`* != 0 and *`PF`*==0|16/32|`sub sp,sp,#xx`|00-7F/E8-EB|
 
@@ -124,10 +124,10 @@ Instructions 2 and 4 are set based on whether a push is required. This table sum
 |0|1|0|1|r*`S`* - r*`N`*, LR|none|
 |0|1|1|0|LR|d8 - d*`E`*|
 |0|1|1|1|r*`S`* - r3, LR|d8 - d*`E`*|
-|1|0|0|0|r4 - r*`N`*, r11|none|
-|1|0|0|1|r*`S`* - r*`N`*, r11|none|
-|1|0|1|0|r11|d8 - d*`E`*|
-|1|0|1|1|r*`S`* - r3, r11|d8 - d*`E`*|
+|1|0|0|0|(invalid encoding)|(invalid encoding)|
+|1|0|0|1|(invalid encoding)|(invalid encoding)|
+|1|0|1|0|(invalid encoding)|(invalid encoding)|
+|1|0|1|1|(invalid encoding)|(invalid encoding)|
 |1|1|0|0|r4 - r*`N`*, r11, LR|none|
 |1|1|0|1|r*`S`* - r*`N`*, r11, LR|none|
 |1|1|1|0|r11, LR|d8 - d*`E`*|
@@ -139,17 +139,17 @@ The epilogues for canonical functions follow a similar form, but in reverse and 
 |-----------------|-----------------------------------|----------|------------|
 |6|*`Stack Adjust`*!=0 and *`EF`*==0|16/32|`add   sp,sp,#xx`|
 |7|*`R`*==1 and *`Reg`*!=7|32|`vpop  {d8-dE}`|
-|8|*`C`*==1 or (*`L`*==1 and *`H`*==0) or *`R`*==0 or *`EF`*==1|16/32|`pop   {registers}`|
-|9a|*`H`*==1 and *`L`*==0|16|`add   sp,sp,#0x10`|
-|9b|*`H`*==1 and *`L`*==1|32|`ldr   pc,[sp],#0x14`|
+|8|*`C`*==1 or (*`L`*==1 and (*`H`*==0 or *`Ret`* !=0)) or *`R`*==0 or *`EF`*==1|16/32|`pop   {registers}`|
+|9a|*`H`*==1 and (*`L`*==0 or *`Ret`*!=0)|16|`add   sp,sp,#0x10`|
+|9b|*`H`*==1 and *`L`*==1 and *`Ret`*==0|32|`ldr   pc,[sp],#0x14`|
 |10a|*`Ret`*==1|16|`bx    reg`|
 |10b|*`Ret`*==2|32|`b     address`|
 
 Instruction 6 is the explicit stack adjustment if a non-folded adjustment is specified. Because *`PF`* is independent of *`EF`*, it is possible to have instruction 5 present without instruction 6, or vice-versa.
 
-Instructions 7 and 8 use the same logic as the prologue to determine which registers are restored from the stack, but with these two changes: first, *`EF`* is used in place of *`PF`*; second, if *`Ret`* = 0, then LR is replaced with PC in the register list and the epilogue ends immediately.
+Instructions 7 and 8 use the same logic as the prologue to determine which registers are restored from the stack, but with these three changes: first, *`EF`* is used in place of *`PF`*; second, if *`Ret`* = 0 and *`H`* = 0, then LR is replaced with PC in the register list and the epilogue ends immediately; third, if *`Ret`* = 0 and *`H`* = 1, then LR is omitted from the register list and popped by instruction 9b.
 
-If *`H`* is set, then either instruction 9a or 9b is present. Instruction 9a is used when *`L`* is 0, to indicate that the LR is not on the stack. In this case, the stack is manually adjusted and *`Ret`* must be 1 or 2 to specify an explicit return. Instruction 9b is used when *`L`* is 1, to indicate an early end to the epilogue, and to return and adjust the stack at the same time.
+If *`H`* is set, then either instruction 9a or 9b is present. Instruction 9a is used when *`Ret`* is nonzero, which also implies the presence of either 10a or 10b. If L=1, then LR was popped as part of instruction 8. Instruction 9b is used when *`L`* is 1 and *`Ret`*  is zero, to indicate an early end to the epilogue, and to return and adjust the stack at the same time.
 
 If the epilogue has not already ended, then either instruction 10a or 10b is present, to indicate a 16-bit or 32-bit branch, based on the value of *`Ret`*.
 
