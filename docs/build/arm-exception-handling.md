@@ -60,22 +60,22 @@ Every `.pdata` record for ARM is 8 bytes long. The general format of a record pl
 
 ### Packed Unwind Data
 
-For functions whose prologues and epilogues follow the canonical form described below, packed unwind data can be used. This eliminates the need for an `.xdata` record and significantly reduces the space required to provide unwind data. The canonical prologues and epilogues are designed to meet the common requirements of a simple function that does not require an exception handler, and performs its setup and teardown operations in a standard order.
+For functions whose prologues and epilogues follow the canonical form described below, packed unwind data can be used. It eliminates the need for an `.xdata` record and significantly reduces the space required to provide the unwind data. The canonical prologues and epilogues are designed to meet the common requirements of a simple function that doesn't require an exception handler, and performs its setup and teardown operations in a standard order.
 
 This table shows the format of a `.pdata` record that has packed unwind data:
 
-|Word Offset|Bits|Purpose|
-|-----------------|----------|-------------|
-|0|0-31|*`Function Start RVA`* is the 32-bit RVA of the start of the function. If the function contains thumb code, the low bit of this address must be set.|
-|1|0-1|*`Flag`* is a 2-bit field that has these meanings:<br /><br />- 00 = packed unwind data not used; remaining bits point to `.xdata` record.<br />- 01 = packed unwind data.<br />- 10 = packed unwind data where the function is assumed to have no prologue. This is useful for describing function fragments that are discontiguous with the start of the function.<br />- 11 = reserved.|
-|1|2-12|*`Function Length`* is an 11-bit field that provides the length of the entire function in bytes divided by 2. If the function is larger than 4K bytes, a full `.xdata` record must be used instead.|
-|1|13-14|*`Ret`* is a 2-bit field that indicates how the function returns:<br /><br />- 00 = return via pop {pc} (the *`L`* flag bit must be set to 1 in this case).<br />- 01 = return by using a 16-bit branch.<br />- 10 = return by using a 32-bit branch.<br />- 11 = no epilogue at all. This is useful for describing a discontiguous function fragment that may only contain a prologue, but whose epilogue is elsewhere.|
-|1|15|*`H`* is a 1-bit flag that indicates whether the function "homes" the integer parameter registers (r0-r3) by pushing them at the start of the function, and deallocates the 16 bytes of stack before returning. (0 = does not home registers, 1 = homes registers.)|
-|1|16-18|*`Reg`* is a 3-bit field that indicates the index of the last saved non-volatile register. If the *`R`* bit is 0, then only integer registers are being saved, and are assumed to be in the range of r4-rN, where N is equal to 4 + *`Reg`*. If the *`R`* bit is 1, then only floating-point registers are being saved, and are assumed to be in the range of d8-dN, where N is equal to 8 + *`Reg`*. The special combination of *`R`* = 1 and *`Reg`* = 7 indicates that no registers are saved.|
-|1|19|*`R`* is a 1-bit flag that indicates whether the saved non-volatile registers are integer registers (0) or floating-point registers (1). If *`R`* is set to 1 and the *`Reg`* field is set to 7, no non-volatile registers were pushed.|
-|1|20|*`L`* is a 1-bit flag that indicates whether the function saves/restores LR, along with other registers indicated by the *`Reg`* field. (0 = does not save/restore, 1 = does save/restore.)|
-|1|21|*`C`* is a 1-bit flag that indicates whether the function includes extra instructions to set up a frame chain for fast stack walking (1) or not (0). If this bit is set, r11 is implicitly added to the list of integer non-volatile registers saved. (See restrictions below if the *`C`* flag is used.)|
-|1|22-31|*`Stack Adjust`* is a 10-bit field that indicates the number of bytes of stack that are allocated for this function, divided by 4. However, only values between 0x000-0x3F3 can be directly encoded. Functions that allocate more than 4044 bytes of stack must use a full `.xdata` record. If the *`Stack Adjust`* field is 0x3F4 or larger, then the low 4 bits have special meaning:<br /><br />- Bits 0-1 indicate the number of words of stack adjustment (1-4) minus 1.<br />- Bit 2 is set to 1 if the prologue combined this adjustment into its push operation.<br />- Bit 3 is set to 1 if the epilogue combined this adjustment into its pop operation.|
+| Word Offset | Bits | Purpose |
+|--|--|--|
+| 0 | 0-31 | *`Function Start RVA`* is the 32-bit RVA of the start of the function. If the function contains thumb code, the low bit of this address must be set. |
+| 1 | 0-1 | *`Flag`* is a 2-bit field that has these meanings:<br /><br />- 00 = packed unwind data not used; remaining bits point to `.xdata` record.<br />- 01 = packed unwind data.<br />- 10 = packed unwind data where the function is assumed to have no prologue. This is useful for describing function fragments that are discontiguous with the start of the function.<br />- 11 = reserved. |
+| 1 | 2-12 | *`Function Length`* is an 11-bit field that provides the length of the entire function in bytes divided by 2. If the function is larger than 4K bytes, a full `.xdata` record must be used instead. |
+| 1 | 13-14 | *`Ret`* is a 2-bit field that indicates how the function returns:<br /><br />- 00 = return via pop {pc} (the *`L`* flag bit must be set to 1 in this case).<br />- 01 = return by using a 16-bit branch.<br />- 10 = return by using a 32-bit branch.<br />- 11 = no epilogue at all. This is useful for describing a discontiguous function fragment that may only contain a prologue, but whose epilogue is elsewhere. |
+| 1 | 15 | *`H`* is a 1-bit flag that indicates whether the function "homes" the integer parameter registers (r0-r3) by pushing them at the start of the function, and deallocates the 16 bytes of stack before returning. (0 = doesn't home registers, 1 = homes registers.) |
+| 1 | 16-18 | *`Reg`* is a 3-bit field that indicates the index of the last saved non-volatile register. If the *`R`* bit is 0, then only integer registers are being saved, and are assumed to be in the range of r4-rN, where N is equal to 4 + *`Reg`*. If the *`R`* bit is 1, then only floating-point registers are being saved, and are assumed to be in the range of d8-dN, where N is equal to 8 + *`Reg`*. The special combination of *`R`* = 1 and *`Reg`* = 7 indicates that no registers are saved. |
+| 1 | 19 | *`R`* is a 1-bit flag that indicates whether the saved non-volatile registers are integer registers (0) or floating-point registers (1). If *`R`* is set to 1 and the *`Reg`* field is set to 7, no non-volatile registers were pushed. |
+| 1 | 20 | *`L`* is a 1-bit flag that indicates whether the function saves/restores LR, along with other registers indicated by the *`Reg`* field. (0 = doesn't save/restore, 1 = does save/restore.) |
+| 1 | 21 | *`C`* is a 1-bit flag that indicates whether the function includes extra instructions to set up a frame chain for fast stack walking (1) or not (0). If this bit is set, r11 is implicitly added to the list of integer non-volatile registers saved. (See restrictions below if the *`C`* flag is used.) |
+| 1 | 22-31 | *`Stack Adjust`* is a 10-bit field that indicates the number of bytes of stack that are allocated for this function, divided by 4. However, only values between 0x000-0x3F3 can be directly encoded. Functions that allocate more than 4044 bytes of stack must use a full `.xdata` record. If the *`Stack Adjust`* field is 0x3F4 or larger, then the low 4 bits have special meaning:<br /><br />- Bits 0-1 indicate the number of words of stack adjustment (1-4) minus 1.<br />- Bit 2 is set to 1 if the prologue combined this adjustment into its push operation.<br />- Bit 3 is set to 1 if the epilogue combined this adjustment into its pop operation. |
 
 Due to possible redundancies in the encodings above, these restrictions apply:
 
@@ -97,14 +97,14 @@ For purposes of the discussion below, two pseudo-flags are derived from *`Stack 
 
 Prologues for canonical functions may have up to 5 instructions (notice that 3a and 3b are mutually exclusive):
 
-|Instruction|Opcode is assumed present if:|Size|Opcode|Unwind Codes|
-|-----------------|-----------------------------------|----------|------------|------------------|
-|1|*`H`*==1|16|`push {r0-r3}`|04|
-|2|*`C`*==1 or *`L`*==1 or *`R`*==0 or *`PF`*==1|16/32|`push {registers}`|80-BF/D0-DF/EC-ED|
-|3a|*`C`*==1 and (*`R`*==1 and *`PF`*==0)|16|`mov r11,sp`|FB|
-|3b|*`C`*==1 and (*`R`*==0 or *`PF`*==1)|32|`add r11,sp,#xx`|FC|
-|4|*`R`*==1 and *`Reg`* != 7|32|`vpush {d8-dE}`|E0-E7|
-|5|*`Stack Adjust`* != 0 and *`PF`*==0|16/32|`sub sp,sp,#xx`|00-7F/E8-EB|
+| Instruction | Opcode is assumed present if: | Size | Opcode | Unwind Codes |
+|--|--|--|--|--|
+| 1 | *`H`*==1 | 16 | `push {r0-r3}` | 04 |
+| 2 | *`C`*==1 or *`L`*==1 or *`R`*==0 or *`PF`*==1 | 16/32 | `push {registers}` | 80-BF/D0-DF/EC-ED |
+| 3a | *`C`*==1 and (*`R`*==1 and *`PF`*==0) | 16 | `mov r11,sp` | FB |
+| 3b | *`C`*==1 and (*`R`*==0 or *`PF`*==1) | 32 | `add r11,sp,#xx` | FC |
+| 4 | *`R`*==1 and *`Reg`* != 7 | 32 | `vpush {d8-dE}` | E0-E7 |
+| 5 | *`Stack Adjust`* != 0 and *`PF`*==0 | 16/32 | `sub sp,sp,#xx` | 00-7F/E8-EB |
 
 Instruction 1 is always present if the *`H`* bit is set to 1.
 
@@ -114,36 +114,36 @@ If a non-folded adjustment is specified, instruction 5 is the explicit stack adj
 
 Instructions 2 and 4 are set based on whether a push is required. This table summarizes which registers are saved based on the *`C`*, *`L`*, *`R`*, and *`PF`* fields. In all cases, *`N`* is equal to *`Reg`* + 4, *`E`* is equal to *`Reg`* + 8, and *`S`* is equal to (~*`Stack Adjust`*) & 3.
 
-|C|L|R|PF|Integer Registers Pushed|VFP Registers pushed|
-|-------|-------|-------|--------|------------------------------|--------------------------|
-|0|0|0|0|r4 - r*`N`*|none|
-|0|0|0|1|r*`S`* - r*`N`*|none|
-|0|0|1|0|none|d8 - d*`E`*|
-|0|0|1|1|r*`S`* - r3|d8 - d*`E`*|
-|0|1|0|0|r4 - r*`N`*, LR|none|
-|0|1|0|1|r*`S`* - r*`N`*, LR|none|
-|0|1|1|0|LR|d8 - d*`E`*|
-|0|1|1|1|r*`S`* - r3, LR|d8 - d*`E`*|
-|1|0|0|0|(invalid encoding)|(invalid encoding)|
-|1|0|0|1|(invalid encoding)|(invalid encoding)|
-|1|0|1|0|(invalid encoding)|(invalid encoding)|
-|1|0|1|1|(invalid encoding)|(invalid encoding)|
-|1|1|0|0|r4 - r*`N`*, r11, LR|none|
-|1|1|0|1|r*`S`* - r*`N`*, r11, LR|none|
-|1|1|1|0|r11, LR|d8 - d*`E`*|
-|1|1|1|1|r*`S`* - r3, r11, LR|d8 - d*`E`*|
+| C | L | R | PF | Integer Registers Pushed | VFP Registers pushed |
+|--|--|--|--|--|--|
+| 0 | 0 | 0 | 0 | r4 - r*`N`* | none |
+| 0 | 0 | 0 | 1 | r*`S`* - r*`N`* | none |
+| 0 | 0 | 1 | 0 | none | d8 - d*`E`* |
+| 0 | 0 | 1 | 1 | r*`S`* - r3 | d8 - d*`E`* |
+| 0 | 1 | 0 | 0 | r4 - r*`N`*, LR | none |
+| 0 | 1 | 0 | 1 | r*`S`* - r*`N`*, LR | none |
+| 0 | 1 | 1 | 0 | LR | d8 - d*`E`* |
+| 0 | 1 | 1 | 1 | r*`S`* - r3, LR | d8 - d*`E`* |
+| 1 | 0 | 0 | 0 | (invalid encoding) | (invalid encoding) |
+| 1 | 0 | 0 | 1 | (invalid encoding) | (invalid encoding) |
+| 1 | 0 | 1 | 0 | (invalid encoding) | (invalid encoding) |
+| 1 | 0 | 1 | 1 | (invalid encoding) | (invalid encoding) |
+| 1 | 1 | 0 | 0 | r4 - r*`N`*, r11, LR | none |
+| 1 | 1 | 0 | 1 | r*`S`* - r*`N`*, r11, LR | none |
+| 1 | 1 | 1 | 0 | r11, LR | d8 - d*`E`* |
+| 1 | 1 | 1 | 1 | r*`S`* - r3, r11, LR | d8 - d*`E`* |
 
 The epilogues for canonical functions follow a similar form, but in reverse and with some additional options. The epilogue may be up to 5 instructions long, and its form is strictly dictated by the form of the prologue.
 
-|Instruction|Opcode is assumed present if:|Size|Opcode|
-|-----------------|-----------------------------------|----------|------------|
-|6|*`Stack Adjust`*!=0 and *`EF`*==0|16/32|`add   sp,sp,#xx`|
-|7|*`R`*==1 and *`Reg`*!=7|32|`vpop  {d8-dE}`|
-|8|*`C`*==1 or (*`L`*==1 and (*`H`*==0 or *`Ret`* !=0)) or *`R`*==0 or *`EF`*==1|16/32|`pop   {registers}`|
-|9a|*`H`*==1 and (*`L`*==0 or *`Ret`*!=0)|16|`add   sp,sp,#0x10`|
-|9b|*`H`*==1 and *`L`*==1 and *`Ret`*==0|32|`ldr   pc,[sp],#0x14`|
-|10a|*`Ret`*==1|16|`bx    reg`|
-|10b|*`Ret`*==2|32|`b     address`|
+| Instruction | Opcode is assumed present if: | Size | Opcode |
+|--|--|--|--|
+| 6 | *`Stack Adjust`*!=0 and *`EF`*==0 | 16/32 | `add   sp,sp,#xx` |
+| 7 | *`R`*==1 and *`Reg`*!=7 | 32 | `vpop  {d8-dE}` |
+| 8 | *`C`*==1 or (*`L`*==1 and (*`H`*==0 or *`Ret`* !=0)) or *`R`*==0 or *`EF`*==1 | 16/32 | `pop   {registers}` |
+| 9a | *`H`*==1 and (*`L`*==0 or *`Ret`*!=0) | 16 | `add   sp,sp,#0x10` |
+| 9b | *`H`*==1 and *`L`*==1 and *`Ret`*==0 | 32 | `ldr   pc,[sp],#0x14` |
+| 10a | *`Ret`*==1 | 16 | `bx    reg` |
+| 10b | *`Ret`*==2 | 32 | `b     address` |
 
 Instruction 6 is the explicit stack adjustment if a non-folded adjustment is specified. Because *`PF`* is independent of *`EF`*, it is possible to have instruction 5 present without instruction 6, or vice-versa.
 
@@ -151,7 +151,7 @@ Instructions 7 and 8 use the same logic as the prologue to determine which regis
 
 If *`H`* is set, then either instruction 9a or 9b is present. Instruction 9a is used when *`Ret`* is nonzero, which also implies the presence of either 10a or 10b. If L=1, then LR was popped as part of instruction 8. Instruction 9b is used when *`L`* is 1 and *`Ret`*  is zero, to indicate an early end to the epilogue, and to return and adjust the stack at the same time.
 
-If the epilogue has not already ended, then either instruction 10a or 10b is present, to indicate a 16-bit or 32-bit branch, based on the value of *`Ret`*.
+If the epilogue hasn't already ended, then either instruction 10a or 10b is present, to indicate a 16-bit or 32-bit branch, based on the value of *`Ret`*.
 
 ### `.xdata` Records
 
@@ -165,7 +165,7 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
    |0|18-19|*Vers* is a 2-bit field that describes the version of the remaining`.xdata`. Only version 0 is currently defined; values of 1-3 are reserved.|
    |0|20|*X* is a 1-bit field that indicates the presence (1) or absence (0) of exception data.|
    |0|21|*`E`* is a 1-bit field that indicates that information that describes a single epilogue is packed into the header (1) rather than requiring additional scope words later (0).|
-   |0|22|*F* is a 1-bit field that indicates that this record describes a function fragment (1) or a full function (0). A fragment implies that there is no prologue and that all prologue processing should be ignored.|
+   |0|22|*F* is a 1-bit field that indicates that this record describes a function fragment (1) or a full function (0). A fragment implies that there's no prologue and that all prologue processing should be ignored.|
    |0|23-27|*Epilogue Count* is a 5-bit field that has two meanings, depending on the state of the *`E`* bit:<br /><br /> -   If *`E`* is 0, this field is a count of the total number of exception scopes described in section 3. If more than 31 scopes exist in the function, then this field and the *Code Words* field must both be set to 0 to indicate that an extension word is required.<br />-   If *`E`* is 1, this field specifies the index of the first unwind code that describes the only epilogue.|
    |0|28-31|*Code Words* is a 4-bit field that specifies the number of 32-bit words required to contain all of the unwind codes in section 4. If more than 15 words are required for more than 63 unwind code bytes, this field and the *Epilogue Count* field must both be set to 0 to indicate that an extension word is required.|
    |1|0-15|*Extended Epilogue Count* is a 16-bit field that provides more space for encoding an unusually large number of epilogues. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
@@ -218,7 +218,7 @@ ULONG ComputeXdataSize(PULONG Xdata)
 }
 ```
 
-Although the prologue and each epilogue has an index into the unwind codes, the table is shared between them. It is not uncommon that they can all share the same unwind codes. We recommend that compiler writers optimize for this case, because the largest index that can be specified is 255, and that limits the total number of unwind codes possible for a particular function.
+Although the prologue and each epilogue has an index into the unwind codes, the table is shared between them. It's not uncommon that they can all share the same unwind codes. We recommend that compiler writers optimize for this case, because the largest index that can be specified is 255, and that limits the total number of unwind codes possible for a particular function.
 
 ### Unwind Codes
 
@@ -234,32 +234,32 @@ If exceptions were guaranteed to only ever occur within a function body, and nev
 
 The following table shows the mapping from unwind codes to opcodes. The most common codes are just one byte, while less common ones require two, three, or even four bytes. Each code is stored from most significant byte to least significant byte. The unwind code structure differs from the encoding described in the ARM EABI, because these unwind codes are designed to have a one-to-one mapping to the opcodes in the prologue and epilogue to allow for unwinding of partially executed prologues and epilogues.
 
-|Byte 1|Byte 2|Byte 3|Byte 4|Opsize|Explanation|
-|------------|------------|------------|------------|------------|-----------------|
-|00-7F||||16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x7F) \* 4|
-|80-BF|00-FF|||32|`pop   {r0-r12, lr}`<br /><br /> where LR is popped if Code & 0x2000 and r0-r12 are popped if the corresponding bit is set in Code & 0x1FFF|
-|C0-CF||||16|`mov   sp,rX`<br /><br /> where X is Code & 0x0F|
-|D0-D7||||16|`pop   {r4-rX,lr}`<br /><br /> where X is (Code & 0x03) + 4 and LR is popped if Code & 0x04|
-|D8-DF||||32|`pop   {r4-rX,lr}`<br /><br /> where X is (Code & 0x03) + 8 and LR is popped if Code & 0x04|
-|E0-E7||||32|`vpop  {d8-dX}`<br /><br /> where X is (Code & 0x07) + 8|
-|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> where X is (Code & 0x03FF) \* 4|
-|EC-ED|00-FF|||16|`pop   {r0-r7,lr}`<br /><br /> where LR is popped if Code & 0x0100 and r0-r7 are popped if the corresponding bit is set in Code & 0x00FF|
-|EE|00-0F|||16|Microsoft-specific|
-|EE|10-FF|||16|Available|
-|EF|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> where X is (Code & 0x000F) \* 4|
-|EF|10-FF|||32|Available|
-|F0-F4||||-|Available|
-|F5|00-FF|||32|`vpop  {dS-dE}`<br /><br /> where S is (Code & 0x00F0) >> 4 and E is Code & 0x000F|
-|F6|00-FF|||32|`vpop  {dS-dE}`<br /><br /> where S is ((Code & 0x00F0) >> 4) + 16 and E is (Code & 0x000F) + 16|
-|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) \* 4|
-|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) \* 4|
-|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) \* 4|
-|FA|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) \* 4|
-|FB||||16|nop (16-bit)|
-|FC||||32|nop (32-bit)|
-|FD||||16|end + 16-bit nop in epilogue|
-|FE||||32|end + 32-bit nop in epilogue|
-|FF||||-|end|
+| Byte 1 | Byte 2 | Byte 3 | Byte 4 | Opsize | Explanation |
+|--|--|--|--|--|--|
+| 00-7F |  |  |  | 16 | `add   sp,sp,#X`<br /><br /> where X is (Code & 0x7F) \* 4 |
+| 80-BF | 00-FF |  |  | 32 | `pop   {r0-r12, lr}`<br /><br /> where LR is popped if Code & 0x2000 and r0-r12 are popped if the corresponding bit is set in Code & 0x1FFF |
+| C0-CF |  |  |  | 16 | `mov   sp,rX`<br /><br /> where X is Code & 0x0F |
+| D0-D7 |  |  |  | 16 | `pop   {r4-rX,lr}`<br /><br /> where X is (Code & 0x03) + 4 and LR is popped if Code & 0x04 |
+| D8-DF |  |  |  | 32 | `pop   {r4-rX,lr}`<br /><br /> where X is (Code & 0x03) + 8 and LR is popped if Code & 0x04 |
+| E0-E7 |  |  |  | 32 | `vpop  {d8-dX}`<br /><br /> where X is (Code & 0x07) + 8 |
+| E8-EB | 00-FF |  |  | 32 | `addw  sp,sp,#X`<br /><br /> where X is (Code & 0x03FF) \* 4 |
+| EC-ED | 00-FF |  |  | 16 | `pop   {r0-r7,lr}`<br /><br /> where LR is popped if Code & 0x0100 and r0-r7 are popped if the corresponding bit is set in Code & 0x00FF |
+| EE | 00-0F |  |  | 16 | Microsoft-specific |
+| EE | 10-FF |  |  | 16 | Available |
+| EF | 00-0F |  |  | 32 | `ldr   lr,[sp],#X`<br /><br /> where X is (Code & 0x000F) \* 4 |
+| EF | 10-FF |  |  | 32 | Available |
+| F0-F4 |  |  |  | - | Available |
+| F5 | 00-FF |  |  | 32 | `vpop  {dS-dE}`<br /><br /> where S is (Code & 0x00F0) >> 4 and E is Code & 0x000F |
+| F6 | 00-FF |  |  | 32 | `vpop  {dS-dE}`<br /><br /> where S is ((Code & 0x00F0) >> 4) + 16 and E is (Code & 0x000F) + 16 |
+| F7 | 00-FF | 00-FF |  | 16 | `add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) \* 4 |
+| F8 | 00-FF | 00-FF | 00-FF | 16 | `add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) \* 4 |
+| F9 | 00-FF | 00-FF |  | 32 | `add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) \* 4 |
+| FA | 00-FF | 00-FF | 00-FF | 32 | `add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) \* 4 |
+| FB |  |  |  | 16 | nop (16-bit) |
+| FC |  |  |  | 32 | nop (32-bit) |
+| FD |  |  |  | 16 | end + 16-bit nop in epilogue |
+| FE |  |  |  | 32 | end + 32-bit nop in epilogue |
+| FF |  |  |  | - | end |
 
 This shows the range of hexadecimal values for each byte in an unwind code *Code*, along with the opcode size *Opsize* and the corresponding original instruction interpretation. Empty cells indicate shorter unwind codes. In instructions that have large values covering multiple bytes, the most significant bits are stored first. The *Opsize* field shows the implicit opcode size associated with each Thumb-2 operation. The apparent duplicate entries in the table with different encodings are used to distinguish between different opcode sizes.
 
@@ -300,7 +300,7 @@ In the example, if an exception occurs while the function body between the prolo
 
 Similar logic works in reverse for the prologue. If unwinding from offset 0 in the prologue, nothing has to be executed. If unwinding from one instruction in, the unwind sequence should start one unwind code from the end because prologue unwind codes are stored in reverse order. In the general case, if unwinding from instruction *n* in the prologue, unwinding should start executing at *n* unwind codes from the end of the list of codes.
 
-Prologue and epilogue unwind codes do not always match exactly. In that case, the unwind code array may have to contain several sequences of codes. To determine the offset to begin processing codes, use this logic:
+Prologue and epilogue unwind codes don't always match exactly. In that case, the unwind code array may have to contain several sequences of codes. To determine the offset to begin processing codes, use this logic:
 
 1. If unwinding from within the body of the function, begin executing unwind codes at index 0 and continue until an end opcode is reached.
 
@@ -308,7 +308,7 @@ Prologue and epilogue unwind codes do not always match exactly. In that case, th
 
 3. If unwinding from within the prologue, start from index 0 in the unwind codes. Calculate the length of the prologue code from the sequence, and then calculate how many bytes the PC is from the end of the prologue. Skip forward through the unwind codes until all of the unexecuted instructions are accounted for. Execute the unwind sequence starting at that point.
 
-The unwind codes for the prologue must always be the first in the array. They are also the codes used to unwind in the general case of unwinding from within the body. Any epilogue-specific code sequences should follow immediately after the prologue code sequence.
+The unwind codes for the prologue must always be the first in the array. they're also the codes used to unwind in the general case of unwinding from within the body. Any epilogue-specific code sequences should follow immediately after the prologue code sequence.
 
 ### Function Fragments
 
@@ -318,31 +318,31 @@ Assuming that the function prologue is at the beginning of the function and can'
 
 - Prologue only; all epilogues in other fragments.
 
-- Prologue and one or more epilogues; additional epilogues in other fragments.
+- Prologue and one or more epilogues; more epilogues in other fragments.
 
 - No prologue or epilogues; prologue and one or more epilogues in other fragments.
 
-- Epilogues only; prologue and possibly additional epilogues in other fragments.
+- Epilogues only; prologue and possibly more epilogues in other fragments.
 
 In the first case, only the prologue must be described. This can be done in compact `.pdata` form by describing the prologue normally and specifying a *`Ret`* value of 3 to indicate no epilogue. In the full `.xdata` form, this can be done by providing the prologue unwind codes at index 0 as usual, and specifying an epilogue count of 0.
 
 The second case is just like a normal function. If there's only one epilogue in the fragment, and it is at the end of the fragment, then a compact `.pdata` record can be used. Otherwise, a full `.xdata` record must be used. Keep in mind that the offsets specified for the epilogue start are relative to the start of the fragment, not the original start of the function.
 
-The third and fourth cases are variants of the first and second cases, respectively, except they don't contain a prologue. In these situations, it is assumed that there is code before the start of the epilogue and it is considered part of the body of the function, which would normally be unwound by undoing the effects of the prologue. These cases must therefore be encoded with a pseudo-prologue, which describes how to unwind from within the body, but which is treated as 0-length when determining whether to perform a partial unwind at the start of the fragment. Alternatively, this pseudo-prologue may be described by using the same unwind codes as the epilogue because they presumably perform equivalent operations.
+The third and fourth cases are variants of the first and second cases, respectively, except they don't contain a prologue. In these situations, it is assumed that there's code before the start of the epilogue and it is considered part of the body of the function, which would normally be unwound by undoing the effects of the prologue. These cases must therefore be encoded with a pseudo-prologue, which describes how to unwind from within the body, but which is treated as 0-length when determining whether to perform a partial unwind at the start of the fragment. Alternatively, this pseudo-prologue may be described by using the same unwind codes as the epilogue because they presumably perform equivalent operations.
 
 In the third and fourth cases, the presence of a pseudo-prologue is specified either by setting the *`Flag`* field of the compact `.pdata` record to 2, or by setting the *F* flag in the `.xdata` header to 1. In either case, the check for a partial prologue unwind is ignored, and all non-epilogue unwinds are considered to be full.
 
 #### Large Functions
 
-Fragments can be used to describe functions larger than the 512 KB limit imposed by the bit fields in the `.xdata` header. To describe a very large function, just break it into fragments smaller than 512 KB. Each fragment should be adjusted so that it does not split an epilogue into multiple pieces.
+Fragments can be used to describe functions larger than the 512 KB limit imposed by the bit fields in the `.xdata` header. To describe a larger function, just break it into fragments smaller than 512 KB. Each fragment should be adjusted so it doesn't split an epilogue into multiple pieces.
 
-Only the first fragment of the function contains a prologue; all other fragments are marked as having no prologue. Depending on the number of epilogues, each fragment may contain zero or more epilogues. Keep in mind that each epilogue scope in a fragment specifies its starting offset relative to the start of the fragment, not the start of the function.
+Only the first fragment of the function contains a prologue. All other fragments are marked as having no prologue. Depending on the number of epilogues, each fragment may contain zero or more epilogues. Keep in mind that each epilogue scope in a fragment specifies its starting offset relative to the start of the fragment, not the start of the function.
 
 If a fragment has no prologue and no epilogue, it still requires its own `.pdata`—and possibly `.xdata`—record to describe how to unwind from within the body of the function.
 
 #### Shrink-wrapping
 
-A more complex special case of function fragments is *shrink-wrapping*, a technique for deferring register saves from the start of the function to later in the function, to optimize for simple cases that don't require register saving. This can be described as an outer region that allocates the stack space but saves a minimal set of registers, and an inner region that saves and restores additional registers.
+A more complex special case of function fragments is called *shrink-wrapping*. It's a technique for deferring register saves from the start of the function to later in the function. It optimizes for simple cases that don't require register saving. This case has two parts: there's an outer region that allocates the stack space but saves a minimal set of registers, and an inner region that saves and restores other registers.
 
 ```asm
 ShrinkWrappedFunction
@@ -358,19 +358,19 @@ ShrinkWrappedFunction
     pop    {r4, pc}          ; C:
 ```
 
-Shrink-wrapped functions are typically expected to pre-allocate the space for the extra register saves in the regular prologue, and then perform the register saves by using `str` or `stm` instead of `push`. This keeps all stack-pointer manipulation in the function's original prologue.
+Shrink-wrapped functions are typically expected to pre-allocate the space for the extra register saves in the regular prologue, and then save the registers by using `str` or `stm` instead of `push`. This action keeps all stack-pointer manipulation in the function's original prologue.
 
-The example shrink-wrapped function must be broken into three regions, which are marked as A, B, and C in the comments. The first A region covers the start of the function through the end of the additional non-volatile saves. A `.pdata` or `.xdata` record must be constructed to describe this fragment as having a prologue and no epilogues.
+The example shrink-wrapped function must be broken into three regions, which are marked as `A`, `B`, and `C` in the comments. The first `A` region covers the start of the function through the end of the additional non-volatile saves. A `.pdata` or `.xdata` record must be constructed to describe this fragment as having a prologue and no epilogues.
 
-The middle B region gets its own `.pdata` or `.xdata` record that describes a fragment that has no prologue and no epilogue. However, the unwind codes for this region must still be present because it's considered a function body. The codes must describe a composite prologue that represents both the original registers saved in the region-A prologue and the additional registers saved before entering region B, as if they were produced by one sequence of operations.
+The middle `B` region gets its own `.pdata` or `.xdata` record that describes a fragment that has no prologue and no epilogue. However, the unwind codes for this region must still be present because it's considered a function body. The codes must describe a composite prologue that represents both the original registers saved in the region `A` prologue and the extra registers saved before entering region `B`, as if they were produced by one sequence of operations.
 
-The register saves for region B can't be considered as an "inner prologue" because the composite prologue described for region B must describe both the region-A prologue and the additional registers saved. If fragment B were described as having a prologue, the unwind codes would also imply the size of that prologue, and there is no way to describe the composite prologue in a way that maps one-to-one with the opcodes that only save the additional registers.
+The register saves for region `B` can't be considered as an "inner prologue" because the composite prologue described for region `B` must describe both the region `A` prologue and the additional registers saved. If fragment `B` had a prologue, the unwind codes would also imply the size of that prologue, and there's no way to describe the composite prologue in a way that maps one-to-one with the opcodes that only save the additional registers.
 
-The additional register saves must be considered part of region A, because until they are complete, the composite prologue does not accurately describe the state of the stack.
+The extra register saves must be considered part of region `A`, because until they're complete, the composite prologue doesn't accurately describe the state of the stack.
 
-The last C region gets its own `.pdata` or `.xdata` record, describing a fragment that has no prologue but does have an epilogue.
+The last `C` region gets its own `.pdata` or `.xdata` record, describing a fragment that has no prologue but does have an epilogue.
 
-An alternative approach can also work if the stack manipulation done before entering region B can be reduced to one instruction:
+An alternative approach can also work if the stack manipulation done before entering region `B` can be reduced to one instruction:
 
 ```asm
 ShrinkWrappedFunction
@@ -384,23 +384,23 @@ ShrinkWrappedFunction
     pop    {r4, pc}          ; C: restore non-volatile registers
 ```
 
-The key here is that on each instruction boundary, the stack is fully consistent with the unwind codes for the region. If an unwind occurs before the inner push in this example, it is considered part of region A, and only the region A prologue is unwound. If the unwind occurs after the inner push, it is considered part of region B, which has no prologue, but has unwind codes that describe both the inner push and the original prologue from region A. Similar logic holds for the inner pop.
+The key insight is that on each instruction boundary, the stack is fully consistent with the unwind codes for the region. If an unwind occurs before the inner push in this example, it's considered part of region `A`. Only the region `A` prologue is unwound. If the unwind occurs after the inner push, it's considered part of region `B`, which has no prologue. However, it has unwind codes that describe both the inner push and the original prologue from region `A`. Similar logic holds for the inner pop.
 
 ### Encoding Optimizations
 
-Because of the richness of the unwind codes, and the ability to leverage compact and expanded forms of data, there are many opportunities to optimize the encoding to further reduce space. With aggressive use of these techniques, the net overhead of describing functions and fragments by using unwind codes can be minimized.
+The richness of the unwind codes, and the ability to make use of compact and expanded forms of data, provide many opportunities to optimize the encoding to further reduce space. With aggressive use of these techniques, the net overhead of describing functions and fragments by using unwind codes can be minimized.
 
-The most important optimization is to be careful not to confuse prologue/epilogue boundaries for unwinding purposes with logical prologue/epilogue boundaries from a compiler perspective. The unwinding boundaries can be shrunk and made tighter to improve efficiency. For example, a prologue may contain code after the stack setup to perform additional verification checks. But once all the stack manipulation is complete, there is no need to encode further operations, and anything beyond that can be removed from the unwinding prologue.
+The most important optimization idea: Don't confuse prologue and epilogue boundaries for unwinding purposes with logical prologue and epilogue boundaries from a compiler perspective. The unwinding boundaries can be shrunk and made tighter to improve efficiency. For example, a prologue may contain code after the stack setup to do verification checks. But once all the stack manipulation is complete, there's no need to encode further operations, and anything beyond that can be removed from the unwinding prologue.
 
-This same rule applies to the function length. If there's data—for example, a literal pool—that follows an epilogue in a function, it shouldn't be included as part of the function length. By shrinking the function to just the code that's part of the function, the chances are much greater that the epilogue will be at the very end and a compact `.pdata` record can be used.
+This same rule applies to the function length. If there's data (such as a literal pool) that follows an epilogue in a function, it shouldn't be included as part of the function length. By shrinking the function to just the code that's part of the function, the chances are much greater that the epilogue is at the very end and a compact `.pdata` record can be used.
 
-In a prologue, once the stack pointer is saved to another register, there's typically no need to record any further opcodes. To unwind the function, the first thing that's done is to recover SP from the saved register, and so further operations don't have any impact on the unwind.
+In a prologue, once the stack pointer is saved to another register, there's typically no need to record any further opcodes. To unwind the function, the first thing that's done is to recover SP from the saved register. Further operations don't have any effect on the unwind.
 
-Single-instruction epilogues don't have to be encoded at all, either as scopes or as unwind codes. If an unwind takes place before that instruction is executed, then it can be assumed to be from within the body of the function; just executing the prologue unwind codes is sufficient. If the unwind takes place after the single instruction is executed, then by definition it takes place in another region.
+Single-instruction epilogues don't have to be encoded at all, either as scopes or as unwind codes. If an unwind takes place before that instruction is executed, then it's safe to assume it's from within the body of the function. Just executing the prologue unwind codes is sufficient. When the unwind takes place after the single instruction is executed, then by definition it takes place in another region.
 
-Multi-instruction epilogues don't have to encode the first instruction of the epilogue, for the same reason as the previous point: if the unwind takes place before that instruction executes, a full prologue unwind is sufficient. If the unwind takes place after that instruction, then only the subsequent operations have to be considered.
+Multi-instruction epilogues don't have to encode the first instruction of the epilogue, for the same reason as the previous point: if the unwind takes place before that instruction executes, a full prologue unwind is sufficient. If the unwind takes place after that instruction, then only the later operations have to be considered.
 
-Unwind code reuse should be aggressive. The index specified by each epilogue scope points to an arbitrary starting point in the array of unwind codes. It does not have to point to the start of a previous sequence; it can point in the middle. The best approach here is to generate the desired code sequence and then scan for an exact byte match in the already-encoded pool of sequences. Use any perfect match as a starting point for reuse.
+Unwind code reuse should be aggressive. The index each epilogue scope specifies points to an arbitrary starting point in the array of unwind codes. It doesn't have to point to the start of a previous sequence; it can point in the middle. The best approach is to generate the unwind code sequence. Then, scan for an exact byte match in the already-encoded pool of sequences. Use any perfect match as a starting point for reuse.
 
 After single-instruction epilogues are ignored, if there are no remaining epilogues, consider using a compact `.pdata` form; it becomes much more likely in the absence of an epilogue.
 
