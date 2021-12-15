@@ -26,7 +26,7 @@ When distributing applications, you must install and register the .ocx for the A
 
 - Stdole2.tlb
 
-If these DLLs are not available on the target system, you need to get them updated using the prescribed mechanism for updating the corresponding operating system. You can download the latest service packs for Windows operating systems from [http://windowsupdate.microsoft.com](https://windowsupdate.microsoft.com).
+If these DLLs are not available on the target system, you need to get them updated using the prescribed mechanism for updating the corresponding operating system.
 
 When using an ActiveX control that connects to a database, you also need to replicate the data source name on the target computer. You can do this programmatically with functions such as `ConfigDSN`.
 
