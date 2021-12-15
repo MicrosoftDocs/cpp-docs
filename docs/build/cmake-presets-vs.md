@@ -225,6 +225,24 @@ Build with `clang`:
 }
 ```
 
+If you use either `Visual Studio 16 2019` or `Visual Studio 17 2022` as your generator, you can use the `toolset` Configure Preset to specify the `ClangCL` toolset:
+
+```json
+"cacheVariables": {
+  "CMAKE_BUILD_TYPE": "Debug",
+  "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+},
+"toolset": "ClangCL",
+
+"vendor": {
+  "microsoft.com/VisualStudioSettings/CMake/1.0": {
+    "intelliSenseMode": "windows-clang-x64"
+  }
+}
+```
+
+For more information on generators that support the `toolset` specification, see [`CMAKE_GENERATOR_TOOLSET`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html) in the CMake documentation.
+
 > [!IMPORTANT]
 > In Visual Studio 2019, you must explicitly specify a Clang IntelliSense mode when you're building with `clang` or `clang-cl`.
 
