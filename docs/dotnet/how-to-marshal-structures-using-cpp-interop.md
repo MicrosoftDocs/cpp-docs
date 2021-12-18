@@ -38,7 +38,7 @@ double GetDistance(Location loc1, Location loc2) {
    printf_s(" loc2(%d,%d)\n", loc2.x, loc2.y);
 
    double h = loc1.x - loc2.x;
-   double v = loc1.y = loc2.y;
+   double v = loc1.y - loc2.y;
    double dist = sqrt( pow(h,2) + pow(v,2) );
 
    return dist;
