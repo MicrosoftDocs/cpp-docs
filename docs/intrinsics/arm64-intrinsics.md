@@ -131,6 +131,8 @@ NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. Th
 |_CountLeadingSigns64||unsigned int _CountLeadingSigns64(\__int64)|
 |_CountLeadingZeros||unsigned int _CountLeadingZeros(unsigned long)|
 |_CountLeadingZeros64||unsigned int _CountLeadingZeros64(unsigned \__int64)|
+|_CountOneBits||unsigned int _CountOneBits(unsigned long)|
+|_CountOneBits64||unsigned int _CountOneBits64(unsigned \__int64)|
 |_ReadStatusReg|MRS|\__int64 _ReadStatusReg(int)|
 |_WriteStatusReg|MSR|void _WriteStatusReg(int, \__int64)|
 
