@@ -1,4 +1,4 @@
-{:allowed-branchname-matches ["^main$" "^release..*"]
+{:allowed-branchname-matches ["main" "release-.*"]
  :allowed-filename-matches ["docs" "styleguide"]
 
  :template-header
