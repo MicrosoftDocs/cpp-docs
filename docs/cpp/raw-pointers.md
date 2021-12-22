@@ -34,7 +34,7 @@ A pointer (if it isn't declared as **`const`**) can be incremented or decremente
     const char* str = "Hello world";
 
     const int c = 1;
-    const int* pconst = &c; // declare a non-const pointer to const int
+    int* pconst = &c; // declare a non-const pointer to const int
     const int c2 = 2;
     pconst = &c2;  // OK pconst itself isn't const
     const int* const pconst2 = &c;
