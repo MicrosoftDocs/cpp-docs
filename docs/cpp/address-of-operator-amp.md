@@ -15,7 +15,7 @@ ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
 
 ## Remarks
 
-The unary address-of operator (**`&`**) returns the address of (that is, a pointer to) its operand. The operand of the address-of operator can be a function designator. Or, it can be an lvalue that refers to an object that's not a bit field.
+The unary address-of operator (**`&`**) returns the address of (that is, a pointer to) its operand. The operand of the address-of operator can be a function designator or an lvalue that refers to an object that's not a bit field.
 
 The address-of operator can only be applied to certain lvalue expressions: either to variables of fundamental, structure, class, or union types, or to subscripted array references. In these expressions, a constant expression (one that doesn't include the address-of operator) can be added to or subtracted from the address-of expression.
 
