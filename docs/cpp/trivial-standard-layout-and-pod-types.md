@@ -83,7 +83,7 @@ struct Base
    int j;
 };
 
-// std::is_standard_layout<<Derived> == false!
+// std::is_standard_layout<Derived> == false!
 struct Derived : public Base
 {
    int x;
@@ -99,7 +99,7 @@ struct Base
    void Foo() {}
 };
 
-// std::is_standard_layout<<Derived> == true
+// std::is_standard_layout<Derived> == true
 struct Derived : public Base
 {
    int x;
