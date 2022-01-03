@@ -22,7 +22,7 @@ When there are repeated references to the same objects, the choice of schedule f
 }
 ```
 
-In the remaining examples, it's assumed that memory access isn't the dominant consideration. Unless otherwise stated, that all threads receive comparable computational resources. In these cases, the choice of schedule for a `for` construct depends on all the shared work that's to be performed between the nearest preceding barrier and either the implied closing barrier or the nearest upcoming  barrier, if there's a `nowait` clause. For each kind of schedule, a short example shows how that schedule kind is likely to be the best choice. A brief discussion follows each example.
+In the remaining examples, it's assumed that memory access isn't the dominant consideration. Unless otherwise stated, it is assumed that all threads receive comparable computational resources. In these cases, the choice of schedule for a `for` construct depends on all the shared work that's to be performed between the nearest preceding barrier and either the implied closing barrier or the nearest upcoming  barrier, if there's a `nowait` clause. For each kind of schedule, a short example shows how that schedule kind is likely to be the best choice. A brief discussion follows each example.
 
 The `static` schedule is also appropriate for the simplest case, a parallel region containing a single `for` construct, with each iteration requiring the same amount of work.
 
