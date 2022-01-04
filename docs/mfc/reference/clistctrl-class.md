@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: CListCtrl Class"
 title: "CListCtrl Class"
-ms.date: "06/13/2019"
+ms.date: "01/03/2022"
 f1_keywords: ["CListCtrl", "AFXCMN/CListCtrl", "AFXCMN/CListCtrl::CListCtrl", "AFXCMN/CListCtrl::ApproximateViewRect", "AFXCMN/CListCtrl::Arrange", "AFXCMN/CListCtrl::CancelEditLabel", "AFXCMN/CListCtrl::Create", "AFXCMN/CListCtrl::CreateDragImage", "AFXCMN/CListCtrl::CreateEx", "AFXCMN/CListCtrl::DeleteAllItems", "AFXCMN/CListCtrl::DeleteColumn", "AFXCMN/CListCtrl::DeleteItem", "AFXCMN/CListCtrl::DrawItem", "AFXCMN/CListCtrl::EditLabel", "AFXCMN/CListCtrl::EnableGroupView", "AFXCMN/CListCtrl::EnsureVisible", "AFXCMN/CListCtrl::FindItem", "AFXCMN/CListCtrl::GetBkColor", "AFXCMN/CListCtrl::GetBkImage", "AFXCMN/CListCtrl::GetCallbackMask", "AFXCMN/CListCtrl::GetCheck", "AFXCMN/CListCtrl::GetColumn", "AFXCMN/CListCtrl::GetColumnOrderArray", "AFXCMN/CListCtrl::GetColumnWidth", "AFXCMN/CListCtrl::GetCountPerPage", "AFXCMN/CListCtrl::GetEditControl", "AFXCMN/CListCtrl::GetEmptyText", "AFXCMN/CListCtrl::GetExtendedStyle", "AFXCMN/CListCtrl::GetFirstSelectedItemPosition", "AFXCMN/CListCtrl::GetFocusedGroup", "AFXCMN/CListCtrl::GetGroupCount", "AFXCMN/CListCtrl::GetGroupInfo", "AFXCMN/CListCtrl::GetGroupInfoByIndex", "AFXCMN/CListCtrl::GetGroupMetrics", "AFXCMN/CListCtrl::GetGroupRect", "AFXCMN/CListCtrl::GetGroupState", "AFXCMN/CListCtrl::GetHeaderCtrl", "AFXCMN/CListCtrl::GetHotCursor", "AFXCMN/CListCtrl::GetHotItem", "AFXCMN/CListCtrl::GetHoverTime", "AFXCMN/CListCtrl::GetImageList", "AFXCMN/CListCtrl::GetInsertMark", "AFXCMN/CListCtrl::GetInsertMarkColor", "AFXCMN/CListCtrl::GetInsertMarkRect", "AFXCMN/CListCtrl::GetItem", "AFXCMN/CListCtrl::GetItemCount", "AFXCMN/CListCtrl::GetItemData", "AFXCMN/CListCtrl::GetItemIndexRect", "AFXCMN/CListCtrl::GetItemPosition", "AFXCMN/CListCtrl::GetItemRect", "AFXCMN/CListCtrl::GetItemSpacing", "AFXCMN/CListCtrl::GetItemState", "AFXCMN/CListCtrl::GetItemText", "AFXCMN/CListCtrl::GetNextItem", "AFXCMN/CListCtrl::GetNextItemIndex", "AFXCMN/CListCtrl::GetNextSelectedItem", "AFXCMN/CListCtrl::GetNumberOfWorkAreas", "AFXCMN/CListCtrl::GetOrigin", "AFXCMN/CListCtrl::GetOutlineColor", "AFXCMN/CListCtrl::GetSelectedColumn", "AFXCMN/CListCtrl::GetSelectedCount", "AFXCMN/CListCtrl::GetSelectionMark", "AFXCMN/CListCtrl::GetStringWidth", "AFXCMN/CListCtrl::GetSubItemRect", "AFXCMN/CListCtrl::GetTextBkColor", "AFXCMN/CListCtrl::GetTextColor", "AFXCMN/CListCtrl::GetTileInfo", "AFXCMN/CListCtrl::GetTileViewInfo", "AFXCMN/CListCtrl::GetToolTips", "AFXCMN/CListCtrl::GetTopIndex", "AFXCMN/CListCtrl::GetView", "AFXCMN/CListCtrl::GetViewRect", "AFXCMN/CListCtrl::GetWorkAreas", "AFXCMN/CListCtrl::HasGroup", "AFXCMN/CListCtrl::HitTest", "AFXCMN/CListCtrl::InsertColumn", "AFXCMN/CListCtrl::InsertGroup", "AFXCMN/CListCtrl::InsertGroupSorted", "AFXCMN/CListCtrl::InsertItem", "AFXCMN/CListCtrl::InsertMarkHitTest", "AFXCMN/CListCtrl::IsGroupViewEnabled", "AFXCMN/CListCtrl::IsItemVisible", "AFXCMN/CListCtrl::MapIDToIndex", "AFXCMN/CListCtrl::MapIndexToID", "AFXCMN/CListCtrl::MoveGroup", "AFXCMN/CListCtrl::MoveItemToGroup", "AFXCMN/CListCtrl::RedrawItems", "AFXCMN/CListCtrl::RemoveAllGroups", "AFXCMN/CListCtrl::RemoveGroup", "AFXCMN/CListCtrl::Scroll", "AFXCMN/CListCtrl::SetBkColor", "AFXCMN/CListCtrl::SetBkImage", "AFXCMN/CListCtrl::SetCallbackMask", "AFXCMN/CListCtrl::SetCheck", "AFXCMN/CListCtrl::SetColumn", "AFXCMN/CListCtrl::SetColumnOrderArray", "AFXCMN/CListCtrl::SetColumnWidth", "AFXCMN/CListCtrl::SetExtendedStyle", "AFXCMN/CListCtrl::SetGroupInfo", "AFXCMN/CListCtrl::SetGroupMetrics", "AFXCMN/CListCtrl::SetHotCursor", "AFXCMN/CListCtrl::SetHotItem", "AFXCMN/CListCtrl::SetHoverTime", "AFXCMN/CListCtrl::SetIconSpacing", "AFXCMN/CListCtrl::SetImageList", "AFXCMN/CListCtrl::SetInfoTip", "AFXCMN/CListCtrl::SetInsertMark", "AFXCMN/CListCtrl::SetInsertMarkColor", "AFXCMN/CListCtrl::SetItem", "AFXCMN/CListCtrl::SetItemCount", "AFXCMN/CListCtrl::SetItemCountEx", "AFXCMN/CListCtrl::SetItemData", "AFXCMN/CListCtrl::SetItemIndexState", "AFXCMN/CListCtrl::SetItemPosition", "AFXCMN/CListCtrl::SetItemState", "AFXCMN/CListCtrl::SetItemText", "AFXCMN/CListCtrl::SetOutlineColor", "AFXCMN/CListCtrl::SetSelectedColumn", "AFXCMN/CListCtrl::SetSelectionMark", "AFXCMN/CListCtrl::SetTextBkColor", "AFXCMN/CListCtrl::SetTextColor", "AFXCMN/CListCtrl::SetTileInfo", "AFXCMN/CListCtrl::SetTileViewInfo", "AFXCMN/CListCtrl::SetToolTips", "AFXCMN/CListCtrl::SetView", "AFXCMN/CListCtrl::SetWorkAreas", "AFXCMN/CListCtrl::SortGroups", "AFXCMN/CListCtrl::SortItems", "AFXCMN/CListCtrl::SortItemsEx", "AFXCMN/CListCtrl::SubItemHitTest", "AFXCMN/CListCtrl::Update"]
 helpviewer_keywords: ["CListCtrl [MFC], CListCtrl", "CListCtrl [MFC], ApproximateViewRect", "CListCtrl [MFC], Arrange", "CListCtrl [MFC], CancelEditLabel", "CListCtrl [MFC], Create", "CListCtrl [MFC], CreateDragImage", "CListCtrl [MFC], CreateEx", "CListCtrl [MFC], DeleteAllItems", "CListCtrl [MFC], DeleteColumn", "CListCtrl [MFC], DeleteItem", "CListCtrl [MFC], DrawItem", "CListCtrl [MFC], EditLabel", "CListCtrl [MFC], EnableGroupView", "CListCtrl [MFC], EnsureVisible", "CListCtrl [MFC], FindItem", "CListCtrl [MFC], GetBkColor", "CListCtrl [MFC], GetBkImage", "CListCtrl [MFC], GetCallbackMask", "CListCtrl [MFC], GetCheck", "CListCtrl [MFC], GetColumn", "CListCtrl [MFC], GetColumnOrderArray", "CListCtrl [MFC], GetColumnWidth", "CListCtrl [MFC], GetCountPerPage", "CListCtrl [MFC], GetEditControl", "CListCtrl [MFC], GetEmptyText", "CListCtrl [MFC], GetExtendedStyle", "CListCtrl [MFC], GetFirstSelectedItemPosition", "CListCtrl [MFC], GetFocusedGroup", "CListCtrl [MFC], GetGroupCount", "CListCtrl [MFC], GetGroupInfo", "CListCtrl [MFC], GetGroupInfoByIndex", "CListCtrl [MFC], GetGroupMetrics", "CListCtrl [MFC], GetGroupRect", "CListCtrl [MFC], GetGroupState", "CListCtrl [MFC], GetHeaderCtrl", "CListCtrl [MFC], GetHotCursor", "CListCtrl [MFC], GetHotItem", "CListCtrl [MFC], GetHoverTime", "CListCtrl [MFC], GetImageList", "CListCtrl [MFC], GetInsertMark", "CListCtrl [MFC], GetInsertMarkColor", "CListCtrl [MFC], GetInsertMarkRect", "CListCtrl [MFC], GetItem", "CListCtrl [MFC], GetItemCount", "CListCtrl [MFC], GetItemData", "CListCtrl [MFC], GetItemIndexRect", "CListCtrl [MFC], GetItemPosition", "CListCtrl [MFC], GetItemRect", "CListCtrl [MFC], GetItemSpacing", "CListCtrl [MFC], GetItemState", "CListCtrl [MFC], GetItemText", "CListCtrl [MFC], GetNextItem", "CListCtrl [MFC], GetNextItemIndex", "CListCtrl [MFC], GetNextSelectedItem", "CListCtrl [MFC], GetNumberOfWorkAreas", "CListCtrl [MFC], GetOrigin", "CListCtrl [MFC], GetOutlineColor", "CListCtrl [MFC], GetSelectedColumn", "CListCtrl [MFC], GetSelectedCount", "CListCtrl [MFC], GetSelectionMark", "CListCtrl [MFC], GetStringWidth", "CListCtrl [MFC], GetSubItemRect", "CListCtrl [MFC], GetTextBkColor", "CListCtrl [MFC], GetTextColor", "CListCtrl [MFC], GetTileInfo", "CListCtrl [MFC], GetTileViewInfo", "CListCtrl [MFC], GetToolTips", "CListCtrl [MFC], GetTopIndex", "CListCtrl [MFC], GetView", "CListCtrl [MFC], GetViewRect", "CListCtrl [MFC], GetWorkAreas", "CListCtrl [MFC], HasGroup", "CListCtrl [MFC], HitTest", "CListCtrl [MFC], InsertColumn", "CListCtrl [MFC], InsertGroup", "CListCtrl [MFC], InsertGroupSorted", "CListCtrl [MFC], InsertItem", "CListCtrl [MFC], InsertMarkHitTest", "CListCtrl [MFC], IsGroupViewEnabled", "CListCtrl [MFC], IsItemVisible", "CListCtrl [MFC], MapIDToIndex", "CListCtrl [MFC], MapIndexToID", "CListCtrl [MFC], MoveGroup", "CListCtrl [MFC], MoveItemToGroup", "CListCtrl [MFC], RedrawItems", "CListCtrl [MFC], RemoveAllGroups", "CListCtrl [MFC], RemoveGroup", "CListCtrl [MFC], Scroll", "CListCtrl [MFC], SetBkColor", "CListCtrl [MFC], SetBkImage", "CListCtrl [MFC], SetCallbackMask", "CListCtrl [MFC], SetCheck", "CListCtrl [MFC], SetColumn", "CListCtrl [MFC], SetColumnOrderArray", "CListCtrl [MFC], SetColumnWidth", "CListCtrl [MFC], SetExtendedStyle", "CListCtrl [MFC], SetGroupInfo", "CListCtrl [MFC], SetGroupMetrics", "CListCtrl [MFC], SetHotCursor", "CListCtrl [MFC], SetHotItem", "CListCtrl [MFC], SetHoverTime", "CListCtrl [MFC], SetIconSpacing", "CListCtrl [MFC], SetImageList", "CListCtrl [MFC], SetInfoTip", "CListCtrl [MFC], SetInsertMark", "CListCtrl [MFC], SetInsertMarkColor", "CListCtrl [MFC], SetItem", "CListCtrl [MFC], SetItemCount", "CListCtrl [MFC], SetItemCountEx", "CListCtrl [MFC], SetItemData", "CListCtrl [MFC], SetItemIndexState", "CListCtrl [MFC], SetItemPosition", "CListCtrl [MFC], SetItemState", "CListCtrl [MFC], SetItemText", "CListCtrl [MFC], SetOutlineColor", "CListCtrl [MFC], SetSelectedColumn", "CListCtrl [MFC], SetSelectionMark", "CListCtrl [MFC], SetTextBkColor", "CListCtrl [MFC], SetTextColor", "CListCtrl [MFC], SetTileInfo", "CListCtrl [MFC], SetTileViewInfo", "CListCtrl [MFC], SetToolTips", "CListCtrl [MFC], SetView", "CListCtrl [MFC], SetWorkAreas", "CListCtrl [MFC], SortGroups", "CListCtrl [MFC], SortItems", "CListCtrl [MFC], SortItemsEx", "CListCtrl [MFC], SubItemHitTest", "CListCtrl [MFC], Update"]
-ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
 ---
 # `CListCtrl` Class
 
@@ -12,7 +11,7 @@ Encapsulates the functionality of a "list view control," which displays a collec
 
 ## Syntax
 
-```
+```cpp
 class CListCtrl : public CWnd
 ```
 
@@ -213,7 +212,7 @@ Each item in a list view control consists of an icon (from an image list), a lab
 
 Class `CListCtrl` provides several functions for inserting, deleting, finding, and modifying these items. For more information, see [`CListCtrl::GetItem`](#getitem), [`CListCtrl::InsertItem`](#insertitem), and [`CListCtrl::FindItem`](#finditem), [Adding Items to the Control](../adding-items-to-the-control.md), and [Scrolling, Arranging, Sorting, and Finding in list controls](../scrolling-arranging-sorting-and-finding-in-list-controls.md).
 
-By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using `CListCtrl`: Callback Items and the Callback Mask](../callback-items-and-the-callback-mask.md).
+By default, the list view control is responsible for storing an item's icon and text attributes. However, in addition to these item types, class `CListCtrl` supports "callback items." A "callback item" is a list view item for which the application—rather than the control—stores the text, icon, or both. A callback mask is used to specify which item attributes (text and/or icon) are supplied by the application. If an application uses callback items, it must be able to supply the text and/or icon attributes on demand. Callback items are helpful when your application already maintains some of this information. For more information, see [Using `CListCtrl`: Callback Items and the Callback Mask](../callback-items-and-the-callback-mask.md).
 
 ## Image Lists
 
@@ -235,7 +234,7 @@ The icons, header item images, and application- defined states for list view ite
 
    Used in the report view for small images that appear in each header control item.
 
-By default, a list view control destroys the image lists assigned to it when it is destroyed; however, the developer can customize this behavior by destroying each image list when it is no longer used, as determined by the application. For more information, see [Using `CListCtrl`: List Items and Image Lists](../list-items-and-image-lists.md).
+By default, a list view control destroys the image lists assigned to it when it's destroyed; however, the developer can customize this behavior by destroying each image list when it's no longer used, as determined by the application. For more information, see [Using `CListCtrl`: List Items and Image Lists](../list-items-and-image-lists.md).
 
 ## Inheritance Hierarchy
 
@@ -255,7 +254,7 @@ By default, a list view control destroys the image lists assigned to it when it 
 
 Determines the width and height required to display the items of a list view control.
 
-```
+```cpp
 CSize ApproximateViewRect(
     CSize sz = CSize(-1, -1),
     int iCount = -1) const;
@@ -263,10 +262,10 @@ CSize ApproximateViewRect(
 
 ### Parameters
 
-*`sz`*<br/>
-The proposed dimensions of the control, in pixels. If dimensions are not specified, the framework uses the current width or height values of the control.
+*`sz`*\
+The proposed dimensions of the control, in pixels. If dimensions aren't specified, the framework uses the current width or height values of the control.
 
-*`iCount`*<br/>
+*`iCount`*\
 Number of items to be displayed in the control. Pass -1 to use the total number of items currently in the control.
 
 ### Return Value
@@ -281,21 +280,18 @@ This member function implements the behavior of the Win32 macro, [`ListView_Appr
 
 Repositions items in an icon view so that they align on a grid.
 
-```
+```cpp
 BOOL Arrange(UINT nCode);
 ```
 
 ### Parameters
 
-*`nCode`*<br/>
+*`nCode`*\
 Specifies the alignment style for the items. It can be one of the following values:
 
 - `LVA_ALIGNLEFT` Aligns items along the left edge of the window.
-
 - `LVA_ALIGNTOP` Aligns items along the top edge of the window.
-
 - `LVA_DEFAULT` Aligns items according to the list view's current alignment styles (the default value).
-
 - `LVA_SNAPTOGRID` Snaps all icons to the nearest grid position.
 
 ### Return Value
@@ -309,10 +305,10 @@ The *`nCode`* parameter specifies the alignment style.
 ### Example
 
 ```cpp
-    // Align all of the list view control items along the top
-    // of the window (the list view control must be in icon or
-    // small icon mode).
-    m_myListCtrl.Arrange(LVA_ALIGNTOP);
+// Align all of the list view control items along the top
+// of the window (the list view control must be in icon or
+// small icon mode).
+m_myListCtrl.Arrange(LVA_ALIGNTOP);
 ```
 
 ## <a name="canceleditlabel"></a> `CListCtrl::CancelEditLabel`
@@ -331,7 +327,7 @@ This member function emulates the functionality of the [`LVM_CANCELEDITLABEL`](/
 
 Constructs a `CListCtrl` object.
 
-```
+```cpp
 CListCtrl();
 ```
 
@@ -339,7 +335,7 @@ CListCtrl();
 
 Creates a list control and attaches it to a `CListCtrl` object.
 
-```
+```cpp
 virtual BOOL Create(
     DWORD dwStyle,
     const RECT& rect,
@@ -349,16 +345,16 @@ virtual BOOL Create(
 
 ### Parameters
 
-*`dwStyle`*<br/>
+*`dwStyle`*\
 Specifies the list control's style. Apply any combination of list control styles to the control. See [List view window styles](/windows/win32/Controls/list-view-window-styles) in the Windows SDK for a complete list of these styles. Set extended styles specific to a control using [`SetExtendedStyle`](#setextendedstyle).
 
-*`rect`*<br/>
+*`rect`*\
 Specifies the list control's size and position. It can be either a `CRect` object or a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure.
 
-*`pParentWnd`*<br/>
+*`pParentWnd`*\
 Specifies the list control's parent window, usually a `CDialog`. It must not be NULL.
 
-*`nID`*<br/>
+*`nID`*\
 Specifies the list control's ID.
 
 ### Return Value
@@ -374,16 +370,16 @@ To apply extended Windows styles to the list control object, call [`CreateEx`](#
 ### Example
 
 ```cpp
-    m_myListCtrl.Create(
-        WS_CHILD|WS_VISIBLE|WS_BORDER|LVS_REPORT|LVS_EDITLABELS,
-        CRect(10,10,400,200), pParentWnd, IDD_MYLISTCTRL);
+m_myListCtrl.Create(
+    WS_CHILD|WS_VISIBLE|WS_BORDER|LVS_REPORT|LVS_EDITLABELS,
+    CRect(10,10,400,200), pParentWnd, IDD_MYLISTCTRL);
 ```
 
 ## <a name="createex"></a> `CListCtrl::CreateEx`
 
 Creates a control (a child window) and associates it with the `CListCtrl` object.
 
-```
+```cpp
 virtual BOOL CreateEx(
     DWORD dwExStyle,
     DWORD dwStyle,
@@ -394,19 +390,19 @@ virtual BOOL CreateEx(
 
 ### Parameters
 
-*`dwExStyle`*<br/>
+*`dwExStyle`*\
 Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
-*`dwStyle`*<br/>
+*`dwStyle`*\
 Specifies the list control's style. Apply any combination of list control styles to the control. For a complete list of these styles, see [List view window styles](/windows/win32/Controls/list-view-window-styles) in the Windows SDK.
 
-*`rect`*<br/>
+*`rect`*\
 A reference to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure describing the size and position of the window to be created, in client coordinates of *`pParentWnd`*.
 
-*`pParentWnd`*<br/>
+*`pParentWnd`*\
 A pointer to the window that is the control's parent.
 
-*`nID`*<br/>
+*`nID`*\
 The control's child-window ID.
 
 ### Return Value
@@ -423,7 +419,7 @@ Use `CreateEx` instead of [`Create`](#create) to apply extended Windows styles, 
 
 Creates a drag image list for the item specified by *`nItem`*.
 
-```
+```cpp
 CImageList* CreateDragImage(
     int nItem,
     LPPOINT lpPoint);
@@ -431,10 +427,10 @@ CImageList* CreateDragImage(
 
 ### Parameters
 
-*`nItem*`<br/>
+*`nItem*`\
 Index of the item whose drag image list is to be created.
 
-*`lpPoint`*<br/>
+*`lpPoint`*\
 Address of a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure that receives the initial location of the upper-left corner of the image, in view coordinates.
 
 ### Return Value
@@ -446,18 +442,18 @@ A pointer to the drag image list if successful; otherwise `NULL`.
 The `CImageList` object is permanent, and you must delete it when finished. For example:
 
 ```cpp
-        CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
+CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
 
-        // do something
+// do something
 
-        delete pImageList;
+delete pImageList;
 ```
 
 ## <a name="deleteallitems"></a> `CListCtrl::DeleteAllItems`
 
 Deletes all items from the list view control.
 
-```
+```cpp
 BOOL DeleteAllItems();
 ```
 
@@ -468,22 +464,22 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-    // Delete all of the items from the list view control.
-    m_myListCtrl.DeleteAllItems();
-    ASSERT(m_myListCtrl.GetItemCount() == 0);
+// Delete all of the items from the list view control.
+m_myListCtrl.DeleteAllItems();
+ASSERT(m_myListCtrl.GetItemCount() == 0);
 ```
 
 ## <a name="deletecolumn"></a> `CListCtrl::DeleteColumn`
 
 Deletes a column from the list view control.
 
-```
+```cpp
 BOOL DeleteColumn(int nCol);
 ```
 
 ### Parameters
 
-*`nCol`*<br/>
+*`nCol`*\
 Index of the column to be deleted.
 
 ### Return Value
@@ -493,26 +489,26 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-        int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
+int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
 
-        // Delete all of the columns.
-        for (int i=0; i < nColumnCount; i++)
-        {
-            m_myListCtrl.DeleteColumn(0);
-        }
+// Delete all of the columns.
+for (int i=0; i < nColumnCount; i++)
+{
+    m_myListCtrl.DeleteColumn(0);
+}
 ```
 
 ## <a name="deleteitem"></a> `CListCtrl::DeleteItem`
 
 Deletes an item from a list view control.
 
-```
+```cpp
 BOOL DeleteItem(int nItem);
 ```
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Specifies the index of the item to be deleted.
 
 ### Return Value
@@ -522,26 +518,26 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-        int nCount = m_myListCtrl.GetItemCount();
+int nCount = m_myListCtrl.GetItemCount();
 
-        // Delete all of the items from the list view control.
-        for (int i=0; i < nCount; i++)
-        {
-            m_myListCtrl.DeleteItem(0);
-        }
+// Delete all of the items from the list view control.
+for (int i=0; i < nCount; i++)
+{
+    m_myListCtrl.DeleteItem(0);
+}
 ```
 
 ## <a name="drawitem"></a> `CListCtrl::DrawItem`
 
 Called by the framework when a visual aspect of an owner-draw list view control changes.
 
-```
+```cpp
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```
 
 ### Parameters
 
-*`lpDrawItemStruct`*<br/>
+*`lpDrawItemStruct`*\
 A long pointer to a `DRAWITEMSTRUCT` structure that contains information about the type of drawing required.
 
 ### Remarks
@@ -556,13 +552,13 @@ The application should restore all graphics device interface (GDI) objects selec
 
 Begins in-place editing of an item's text.
 
-```
+```cpp
 CEdit* EditLabel(int nItem);
 ```
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the list view item that is to be edited.
 
 ### Return Value
@@ -578,26 +574,26 @@ Use this function to begin in-place editing of the specified list view item's te
 ### Example
 
 ```cpp
-        // Make sure the focus is set to the list view control.
-        m_myListCtrl.SetFocus();
+// Make sure the focus is set to the list view control.
+m_myListCtrl.SetFocus();
 
-        // Show the edit control on the label of the first
-        // item in the list view control.
-        CEdit* pmyEdit = m_myListCtrl.EditLabel(1);
-        ASSERT(pmyEdit != NULL);
+// Show the edit control on the label of the first
+// item in the list view control.
+CEdit* pmyEdit = m_myListCtrl.EditLabel(1);
+ASSERT(pmyEdit != NULL);
 ```
 
 ## <a name="enablegroupview"></a> `CListCtrl::EnableGroupView`
 
 Enables or disables whether the items in a list view control display as a group.
 
-```
+```cpp
 LRESULT EnableGroupView(BOOL fEnable);
 ```
 
 ### Parameters
 
-*`fEnable`*<br/>
+*`fEnable`*\
 Indicates whether to enable a listview control to group displayed items. `TRUE` to enable grouping; `FALSE` to disable it.
 
 ### Return Value
@@ -605,9 +601,7 @@ Indicates whether to enable a listview control to group displayed items. `TRUE` 
 Returns one of the following values:
 
 - **0** The ability to display list view items as a group is already enabled or disabled.
-
 - **1** The state of the control was successfully changed.
-
 - **-1** The operation failed.
 
 ### Remarks
@@ -618,7 +612,7 @@ This member function emulates the functionality of the [`LVM_ENABLEGROUPVIEW`](/
 
 Ensures that a list view item is at least partially visible.
 
-```
+```cpp
 BOOL EnsureVisible(
     int nItem,
     BOOL bPartialOK);
@@ -626,10 +620,10 @@ BOOL EnsureVisible(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the list view item that is to be visible.
 
-*`bPartialOK`*<br/>
+*`bPartialOK`*\
 Specifies whether partial visibility is acceptable.
 
 ### Return Value
@@ -643,17 +637,17 @@ The list view control is scrolled if necessary. If the *bPartialOK* parameter is
 ### Example
 
 ```cpp
-        // Ensure that the last item is visible.
-        int nCount = m_myListCtrl.GetItemCount();
-        if (nCount > 0)
-            m_myListCtrl.EnsureVisible(nCount-1, FALSE);
+// Ensure that the last item is visible.
+int nCount = m_myListCtrl.GetItemCount();
+if (nCount > 0)
+    m_myListCtrl.EnsureVisible(nCount-1, FALSE);
 ```
 
 ## <a name="finditem"></a> `CListCtrl::FindItem`
 
 Searches for a list view item having specified characteristics.
 
-```
+```cpp
 int FindItem(
     LVFINDINFO* pFindInfo,
     int nStart = -1) const;
@@ -661,11 +655,11 @@ int FindItem(
 
 ### Parameters
 
-*`pFindInfo`*<br/>
+*`pFindInfo`*\
 A pointer to an [`LVFINDINFO`](/windows/win32/api/commctrl/ns-commctrl-lvfindinfow) structure containing information about the item to be searched for.
 
-*`nStart`*<br/>
-Index of the item to begin the search with, or -1 to start from the beginning. The item at *`nStart`* is excluded from the search if *`nStart`* is not equal to -1.
+*`nStart`*\
+Index of the item to begin the search with, or -1 to start from the beginning. The item at *`nStart`* is excluded from the search if *`nStart`* isn't equal to -1.
 
 ### Return Value
 
@@ -678,24 +672,24 @@ The *`pFindInfo`* parameter points to an `LVFINDINFO` structure, which contains 
 ### Example
 
 ```cpp
-        LVFINDINFO info;
-        int nIndex;
+LVFINDINFO info;
+int nIndex;
 
-        info.flags = LVFI_PARTIAL|LVFI_STRING;
-        info.psz = _T("item");
+info.flags = LVFI_PARTIAL|LVFI_STRING;
+info.psz = _T("item");
 
-        // Delete all of the items that begin with the string.
-        while ((nIndex = m_myListCtrl.FindItem(&info)) != -1)
-        {
-            m_myListCtrl.DeleteItem(nIndex);
-        }
+// Delete all of the items that begin with the string.
+while ((nIndex = m_myListCtrl.FindItem(&info)) != -1)
+{
+    m_myListCtrl.DeleteItem(nIndex);
+}
 ```
 
 ## <a name="getbkcolor"></a> `CListCtrl::GetBkColor`
 
 Retrieves the background color of a list view control.
 
-```
+```cpp
 COLORREF GetBkColor() const;
 ```
 
@@ -711,13 +705,13 @@ See the example for [`CListCtrl::SetBkColor`](#setbkcolor).
 
 Retrieves the current background image of a list view control.
 
-```
+```cpp
 BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
 ```
 
 ### Parameters
 
-*`plvbkImage`*<br/>
+*`plvbkImage`*\
 A pointer to an `LVBKIMAGE` structure containing the current background image of the list view.
 
 ### Return Value
@@ -731,23 +725,23 @@ This method implements the behavior of the Win32 macro, [`ListView_GetBkImage`](
 ### Example
 
 ```cpp
-        LVBKIMAGE bki;
+LVBKIMAGE bki;
 
-        // If no background image is set for the list view control use
-        // the Microsoft homepage image as the background image.
-        if (m_myListCtrl.GetBkImage(&bki) && (bki.ulFlags == LVBKIF_SOURCE_NONE))
-        {
-            m_myListCtrl.SetBkImage(
-                _T("https://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
-                TRUE);
-        }
+// If no background image is set for the list view control use
+// the Microsoft homepage image as the background image.
+if (m_myListCtrl.GetBkImage(&bki) && (bki.ulFlags == LVBKIF_SOURCE_NONE))
+{
+    m_myListCtrl.SetBkImage(
+        _T("https://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
+        TRUE);
+}
 ```
 
 ## <a name="getcallbackmask"></a> `CListCtrl::GetCallbackMask`
 
 Retrieves the callback mask for a list view control.
 
-```
+```cpp
 UINT GetCallbackMask() const;
 ```
 
@@ -757,7 +751,7 @@ The list view control's callback mask.
 
 ### Remarks
 
-A "callback item" is a list view item for which the application — rather than the control — stores the text, icon, or both. Although a list view control can store these attributes for you, you may want to use callback items if your application already maintains some of this information. The callback mask specifies which item state bits are maintained by the application, and it applies to the whole control rather than to a specific item. The callback mask is zero by default, meaning that the control tracks all item states. If an application uses callback items or specifies a nonzero callback mask, it must be able to supply list view item attributes on demand.
+A "callback item" is a list view item for which the application—rather than the control—stores the text, icon, or both. Although a list view control can store these attributes for you, you may want to use callback items if your application already maintains some of this information. The callback mask specifies which item state bits are maintained by the application, and it applies to the whole control rather than to a specific item. The callback mask is zero by default, meaning that the control tracks all item states. If an application uses callback items or specifies a nonzero callback mask, it must be able to supply list view item attributes on demand.
 
 ### Example
 
@@ -767,13 +761,13 @@ See the example for [`CListCtrl::SetCallbackMask`](#setcallbackmask).
 
 Retrieves the current display status of the state image that is associated with an item.
 
-```
+```cpp
 BOOL GetCheck(int nItem) const;
 ```
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 The zero-based index of a list control item.
 
 ### Return Value
@@ -792,7 +786,7 @@ See the example for [`CListCtrl::SetCheck`](#setcheck).
 
 Retrieves the attributes of a list view control's column.
 
-```
+```cpp
 BOOL GetColumn(
     int nCol,
     LVCOLUMN* pColumn) const;
@@ -800,10 +794,10 @@ BOOL GetColumn(
 
 ### Parameters
 
-*`nCol`*<br/>
+*`nCol`*\
 Index of the column whose attributes are to be retrieved.
 
-*`pColumn`*<br/>
+*`pColumn`*\
 Address of an [`LVCOLUMN`](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) structure that specifies the information to retrieve and receives information about the column. The `mask` member specifies which column attributes to retrieve. If the `mask` member specifies the LVCF_TEXT value, the `pszText` member must contain the address of the buffer that receives the item text and the `cchTextMax` member must specify the size of the buffer.
 
 ### Return Value
@@ -817,23 +811,23 @@ The `LVCOLUMN` structure contains information about a column in report view.
 ### Example
 
 ```cpp
-        LVCOLUMN col;
+LVCOLUMN col;
 
-        col.mask = LVCF_WIDTH;
+col.mask = LVCF_WIDTH;
 
-        // Double the column width of the first column.
-        if (m_myListCtrl.GetColumn(0, &col))
-        {
-            col.cx *= 2;
-            m_myListCtrl.SetColumn(0, &col);
-        }
+// Double the column width of the first column.
+if (m_myListCtrl.GetColumn(0, &col))
+{
+    col.cx *= 2;
+    m_myListCtrl.SetColumn(0, &col);
+}
 ```
 
 ## <a name="getcolumnorderarray"></a> `CListCtrl::GetColumnOrderArray`
 
 Retrieves the column order (left to right) of a list view control.
 
-```
+```cpp
 BOOL GetColumnOrderArray(
     LPINT piArray,
     int iCount = -1);
@@ -841,10 +835,10 @@ BOOL GetColumnOrderArray(
 
 ### Parameters
 
-*`piArray`*<br/>
+*`piArray`*\
 A pointer to a buffer that will contain the index values of the columns in the list view control. The buffer must be large enough to contain the total number of columns in the list view control.
 
-*`iCount`*<br/>
+*`iCount`*\
 Number of columns in the list view control. If this parameter is -1, the number of columns is automatically retrieved by the framework.
 
 ### Return Value
@@ -858,42 +852,42 @@ This member function implements the behavior of the Win32 macro, [`ListView_GetC
 ### Example
 
 ```cpp
-        // Reverse the order of the columns in the list view control
-        // (i.e. make the first column the last, the last column
-        // the first, and so on...).
-        CHeaderCtrl* pHeaderCtrl = m_myListCtrl.GetHeaderCtrl();
+// Reverse the order of the columns in the list view control
+// (i.e. make the first column the last, the last column
+// the first, and so on...).
+CHeaderCtrl* pHeaderCtrl = m_myListCtrl.GetHeaderCtrl();
 
-        if (pHeaderCtrl != NULL)
-        {
-            int  nColumnCount = pHeaderCtrl->GetItemCount();
-            LPINT pnOrder = (LPINT) malloc(nColumnCount*sizeof(int));
-            ASSERT(pnOrder != NULL);
-            m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
+if (pHeaderCtrl != NULL)
+{
+    int  nColumnCount = pHeaderCtrl->GetItemCount();
+    LPINT pnOrder = (LPINT) malloc(nColumnCount*sizeof(int));
+    ASSERT(pnOrder != NULL);
+    m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
 
-            int i, j, nTemp;
-            for (i = 0, j = nColumnCount-1; i < j; i++, j--)
-            {
-                nTemp = pnOrder[i];
-                pnOrder[i] = pnOrder[j];
-                pnOrder[j] = nTemp;
-            }
+    int i, j, nTemp;
+    for (i = 0, j = nColumnCount-1; i < j; i++, j--)
+    {
+        nTemp = pnOrder[i];
+        pnOrder[i] = pnOrder[j];
+        pnOrder[j] = nTemp;
+    }
 
-            m_myListCtrl.SetColumnOrderArray(nColumnCount, pnOrder);
-            free(pnOrder);
-        }
+    m_myListCtrl.SetColumnOrderArray(nColumnCount, pnOrder);
+    free(pnOrder);
+}
 ```
 
 ## <a name="getcolumnwidth"></a> `CListCtrl::GetColumnWidth`
 
 Retrieves the width of a column in report view or list view.
 
-```
+```cpp
 int GetColumnWidth(int nCol) const;
 ```
 
 ### Parameters
 
-*`nCol`*<br/>
+*`nCol`*\
 Specifies the index of the column whose width is to be retrieved.
 
 ### Return Value
@@ -903,16 +897,16 @@ The width, in pixels, of the column specified by *`nCol`*.
 ### Example
 
 ```cpp
-        // Increase the column width of the second column by 20.
-        int nWidth = m_myListCtrl.GetColumnWidth(1);
-        m_myListCtrl.SetColumnWidth(1, 20 + nWidth);
+// Increase the column width of the second column by 20.
+int nWidth = m_myListCtrl.GetColumnWidth(1);
+m_myListCtrl.SetColumnWidth(1, 20 + nWidth);
 ```
 
 ## <a name="getcountperpage"></a> `CListCtrl::GetCountPerPage`
 
 Calculates the number of items that can fit vertically in the visible area of a list view control when in list view or report view.
 
-```
+```cpp
 int GetCountPerPage() const;
 ```
 
@@ -928,7 +922,7 @@ See the example for [`CListCtrl::GetTopIndex`](#gettopindex).
 
 Retrieves the handle of the edit control used to edit a list view item's text.
 
-```
+```cpp
 CEdit* GetEditControl() const;
 ```
 
@@ -939,23 +933,23 @@ If successful, a pointer to the [`CEdit`](cedit-class.md) object that is used to
 ### Example
 
 ```cpp
-        // The string replacing the text in the edit control.
-        LPCTSTR lpszmyString = _T("custom label!");
+// The string replacing the text in the edit control.
+LPCTSTR lpszmyString = _T("custom label!");
 
-        // If possible, replace the text in the label edit control.
-        CEdit* pEdit = m_myListCtrl.GetEditControl();
+// If possible, replace the text in the label edit control.
+CEdit* pEdit = m_myListCtrl.GetEditControl();
 
-        if (pEdit != NULL)
-        {
-            pEdit->SetWindowText(lpszmyString);
-        }
+if (pEdit != NULL)
+{
+    pEdit->SetWindowText(lpszmyString);
+}
 ```
 
 ## <a name="getemptytext"></a> `CListCtrl::GetEmptyText`
 
 Retrieves the string to display if the current list-view control is empty.
 
-```
+```cpp
 CString GetEmptyText() const;
 ```
 
@@ -971,7 +965,7 @@ This method sends the [`LVM_GETEMPTYTEXT`](/windows/win32/Controls/lvm-getemptyt
 
 Retrieves the current extended styles of a list view control.
 
-```
+```cpp
 DWORD GetExtendedStyle();
 ```
 
@@ -991,7 +985,7 @@ See the example for [`CListCtrl::SetExtendedStyle`](#setextendedstyle).
 
 Gets the position of the first selected item in the list view control.
 
-```
+```cpp
 POSITION GetFirstSelectedItemPosition() const;
 ```
 
@@ -1004,33 +998,33 @@ A `POSITION` value that can be used for iteration or object pointer retrieval; `
 The following code sample demonstrates the usage of this function.
 
 ```cpp
-        POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
-        if (pos == NULL)
-        {
-            TRACE(_T("No items were selected!\n"));
-        }
-        else
-        {
-            while (pos)
-            {
-                int nItem = m_myListCtrl.GetNextSelectedItem(pos);
-                TRACE(_T("Item %d was selected!\n"), nItem);
-                // you could do your own processing on nItem here
-            }
-        }
+POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
+if (pos == NULL)
+{
+    TRACE(_T("No items were selected!\n"));
+}
+else
+{
+    while (pos)
+    {
+        int nItem = m_myListCtrl.GetNextSelectedItem(pos);
+        TRACE(_T("Item %d was selected!\n"), nItem);
+        // you could do your own processing on nItem here
+    }
+}
 ```
 
 ## <a name="getfocusedgroup"></a> `CListCtrl::GetFocusedGroup`
 
 Retrieves the group that has the keyboard focus in the current list-view control.
 
-```
+```cpp
 int GetFocusedGroup() const;
 ```
 
 ### Return Value
 
-The index of the group whose state is `LVGS_FOCUSED`, if there is such a group; otherwise, -1.
+The index of the group whose state is `LVGS_FOCUSED`, if there's such a group; otherwise, -1.
 
 ### Remarks
 
@@ -1040,7 +1034,7 @@ This method sends the [`LVM_GETFOCUSEDGROUP`](/windows/win32/Controls/lvm-getfoc
 
 Retrieves the number of groups in the current list-view control.
 
-```
+```cpp
 int GetGroupCount()const;
 ```
 
@@ -1056,7 +1050,7 @@ This method sends the [`LVM_GETGROUPCOUNT`](/windows/win32/Controls/lvm-getgroup
 
 Gets the information for a specified group of the list view control.
 
-```
+```cpp
 int GetGroupInfo(
     int iGroupId,
     PLVGROUP pgrp) const;
@@ -1064,10 +1058,10 @@ int GetGroupInfo(
 
 ### Parameters
 
-*`iGroupId`*<br/>
+*`iGroupId`*\
 The identifier of the group whose information is to be retrieved.
 
-*`pgrp`*<br/>
+*`pgrp`*\
 A pointer to the [`LVGROUP`](/windows/win32/api/commctrl/ns-commctrl-lvgroup) containing information on the group specified.
 
 ### Return Value
@@ -1082,7 +1076,7 @@ This member function emulates the functionality of the [`LVM_GETGROUPINFO`](/win
 
 Retrieves information about a specified group in the current list-view control.
 
-```
+```cpp
 BOOL GetGroupInfoByIndex(
     int iIndex,
     PLVGROUP pGroup) const;
@@ -1117,30 +1111,30 @@ public:
 The next code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.
 
 ```cpp
-    // GetGroupInfoByIndex
-    const int GROUP_HEADER_BUFFER_SIZE = 40;
+// GetGroupInfoByIndex
+const int GROUP_HEADER_BUFFER_SIZE = 40;
 
 // Initialize the structure
-    LVGROUP gInfo = {0};
-    gInfo.cbSize = sizeof(LVGROUP);
-    wchar_t wstrHeadGet[GROUP_HEADER_BUFFER_SIZE] = {0};
-    gInfo.cchHeader = GROUP_HEADER_BUFFER_SIZE;
-    gInfo.pszHeader = wstrHeadGet;
-    gInfo.mask = (LVGF_ALIGN | LVGF_STATE | LVGF_HEADER | LVGF_GROUPID);
-    gInfo.state = LVGS_NORMAL;
-    gInfo.uAlign  = LVGA_HEADER_LEFT;
+LVGROUP gInfo = {0};
+gInfo.cbSize = sizeof(LVGROUP);
+wchar_t wstrHeadGet[GROUP_HEADER_BUFFER_SIZE] = {0};
+gInfo.cchHeader = GROUP_HEADER_BUFFER_SIZE;
+gInfo.pszHeader = wstrHeadGet;
+gInfo.mask = (LVGF_ALIGN | LVGF_STATE | LVGF_HEADER | LVGF_GROUPID);
+gInfo.state = LVGS_NORMAL;
+gInfo.uAlign  = LVGA_HEADER_LEFT;
 
-    BOOL bRet = m_listCtrl.GetGroupInfoByIndex( 0, &gInfo );
-    if (bRet == TRUE) {
-        CString strHeader = CString( gInfo.pszHeader );
-        CString str;
-        str.Format(_T("Header: '%s'"), strHeader);
-        AfxMessageBox(str, MB_ICONINFORMATION);
-    }
-    else
-    {
-        AfxMessageBox(_T("No group information was retrieved."));
-    }
+BOOL bRet = m_listCtrl.GetGroupInfoByIndex( 0, &gInfo );
+if (bRet == TRUE) {
+    CString strHeader = CString( gInfo.pszHeader );
+    CString str;
+    str.Format(_T("Header: '%s'"), strHeader);
+    AfxMessageBox(str, MB_ICONINFORMATION);
+}
+else
+{
+    AfxMessageBox(_T("No group information was retrieved."));
+}
 ```
 
 ## <a name="getgroupmetrics"></a> `CListCtrl::GetGroupMetrics`
@@ -1153,7 +1147,7 @@ void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 
 ### Parameters
 
-*`pGroupMetrics`*<br/>
+*`pGroupMetrics`*\
 A pointer to a [`LVGROUPMETRICS`](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics) containing the group metrics information.
 
 ### Remarks
@@ -1164,7 +1158,7 @@ This member function emulates the functionality of the [`LVM_GETGROUPMETRICS`](/
 
 Retrieves the bounding rectangle for a specified group in the current list-view control.
 
-```
+```cpp
 BOOL GetGroupRect(
     int iGroupId,
     LPRECT lpRect,
@@ -1183,9 +1177,7 @@ BOOL GetGroupRect(
 [in] Specifies the rectangle coordinates to retrieve. Use one of these values:
 
 - `LVGGR_GROUP` - (Default) Coordinates of the entire expanded group.
-
 - `LVGGR_HEADER` - Coordinates of only the header (collapsed group).
-
 - `LVGGR_SUBSETLINK` - Coordinates of only the subset link (markup subset).
 
 ### Return Value
@@ -1211,25 +1203,25 @@ public:
 The next code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.
 
 ```cpp
-    // GetGroupRect
+// GetGroupRect
 
-    // Get the graphics rectangle that surrounds group 0.
-    CRect rect;
-    BOOL bRet = m_listCtrl.GetGroupRect( 0, &rect, LVGGR_GROUP);
-    // Draw a blue rectangle around group 0.
-    if (bRet == TRUE) {
-        m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(0, 0, 255), RGB(0, 0, 255));
-    }
-    else {
-        AfxMessageBox(_T("No group information was retrieved."), MB_ICONINFORMATION);
-    }
+// Get the graphics rectangle that surrounds group 0.
+CRect rect;
+BOOL bRet = m_listCtrl.GetGroupRect( 0, &rect, LVGGR_GROUP);
+// Draw a blue rectangle around group 0.
+if (bRet == TRUE) {
+    m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(0, 0, 255), RGB(0, 0, 255));
+}
+else {
+    AfxMessageBox(_T("No group information was retrieved."), MB_ICONINFORMATION);
+}
 ```
 
 ## <a name="getgroupstate"></a> `CListCtrl::GetGroupState`
 
 Retrieves the state for a specified group in the current list-view control.
 
-```
+```cpp
 UINT GetGroupState(
     int iGroupId,
     DWORD dwMask) const;
@@ -1257,7 +1249,7 @@ This method sends the [`LVM_GETGROUPSTATE`](/windows/win32/Controls/lvm-getgroup
 
 Retrieves the header control of a list view control.
 
-```
+```cpp
 CHeaderCtrl* GetHeaderCtrl();
 ```
 
@@ -1277,7 +1269,7 @@ See the example for [`CListCtrl::GetColumnOrderArray`](#getcolumnorderarray).
 
 Retrieves the cursor used when hot tracking is enabled for a list view control.
 
-```
+```cpp
 HCURSOR GetHotCursor();
 ```
 
@@ -1292,17 +1284,17 @@ This member function implements the behavior of the Win32 macro, [`ListView_GetH
 ### Example
 
 ```cpp
-        // Set the hot cursor to be the system app starting cursor.
-        HCURSOR hCursor = ::LoadCursor(NULL, IDC_APPSTARTING);
-        m_myListCtrl.SetHotCursor(hCursor);
-        ASSERT(m_myListCtrl.GetHotCursor() == hCursor);
+// Set the hot cursor to be the system app starting cursor.
+HCURSOR hCursor = ::LoadCursor(NULL, IDC_APPSTARTING);
+m_myListCtrl.SetHotCursor(hCursor);
+ASSERT(m_myListCtrl.GetHotCursor() == hCursor);
 ```
 
 ## <a name="gethotitem"></a> `CListCtrl::GetHotItem`
 
 Retrieves the list view item currently under the cursor.
 
-```
+```cpp
 int GetHotItem();
 ```
 
@@ -1319,23 +1311,23 @@ If hot tracking is enabled, when a user pauses over a list view item, the item l
 ### Example
 
 ```cpp
-    // Set the hot item to the first item only if no other item is
-    // highlighted.
-    if (m_myListCtrl.GetHotItem() == -1)
-        m_myListCtrl.SetHotItem(0);
+// Set the hot item to the first item only if no other item is
+// highlighted.
+if (m_myListCtrl.GetHotItem() == -1)
+    m_myListCtrl.SetHotItem(0);
 ```
 
 ## <a name="gethovertime"></a> `CListCtrl::GetHoverTime`
 
 Retrieves the current hover time of a list view control.
 
-```
+```cpp
 DWORD GetHoverTime() const;
 ```
 
 ### Return Value
 
-Returns the delay, in milliseconds, which the mouse cursor must hover over an item before it is selected. If the return value is -1, then the hover time is the default hover time.
+Returns the delay, in milliseconds, which the mouse cursor must hover over an item before it's selected. If the return value is -1, then the hover time is the default hover time.
 
 ### Remarks
 
@@ -1344,29 +1336,27 @@ This member function implements the behavior of the Win32 macro, [`ListView_GetH
 ### Example
 
 ```cpp
-        // If the hover time is the default set to 1 sec.
-        DWORD dwTime = m_myListCtrl.GetHoverTime();
-        if (dwTime == -1)
-            m_myListCtrl.SetHoverTime(1000);
+// If the hover time is the default set to 1 sec.
+DWORD dwTime = m_myListCtrl.GetHoverTime();
+if (dwTime == -1)
+    m_myListCtrl.SetHoverTime(1000);
 ```
 
 ## <a name="getimagelist"></a> `CListCtrl::GetImageList`
 
 Retrieves the handle of an image list used for drawing list view items.
 
-```
+```cpp
 CImageList* GetImageList(int nImageList) const;
 ```
 
 ### Parameters
 
-*`nImageList`*<br/>
+*`nImageList`*\
 Value specifying which image list to retrieve. It can be one of these values:
 
 - `LVSIL_NORMAL` Image list with large icons.
-
 - `LVSIL_SMALL` Image list with small icons.
-
 - `LVSIL_STATE` Image list with state images.
 
 ### Return Value
@@ -1376,27 +1366,27 @@ A pointer to the image list used for drawing list view items.
 ### Example
 
 ```cpp
-        ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
-        m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
-        ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
+ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
+m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
+ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
 ```
 
 ## <a name="getinsertmark"></a> `CListCtrl::GetInsertMark`
 
 Retrieves the current position of the insertion mark.
 
-```
+```cpp
 BOOL GetInsertMark(LPLVINSERTMARK plvim) const;
 ```
 
 ### Parameters
 
-*`plvim`*<br/>
+*`plvim`*\
 A pointer to an [`LVINSERTMARK`](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) structure containing the information for the insert mark.
 
 ### Return Value
 
-Returns `TRUE` if successful, or `FALSE` otherwise. `FALSE` is returned if the size in the `cbSize` member of the `LVINSERTMARK` structure does not equal the actual size of the structure.
+Returns `TRUE` if successful, or `FALSE` otherwise. `FALSE` is returned if the size in the `cbSize` member of the `LVINSERTMARK` structure doesn't equal the actual size of the structure.
 
 ### Remarks
 
@@ -1406,7 +1396,7 @@ This member function emulates the functionality of the [`LVM_GETINSERTMARK`](/wi
 
 Retrieves the current color of the insertion mark.
 
-```
+```cpp
 COLORREF GetInsertMarkColor() const;
 ```
 
@@ -1422,13 +1412,13 @@ This member function emulates the functionality of the [`LVM_GETINSERTMARKCOLOR`
 
 Retrieves the rectangle that bounds the insertion point.
 
-```
+```cpp
 int GetInsertMarkRect(LPRECT pRect) const;
 ```
 
 ### Parameters
 
-*`pRect`*<br/>
+*`pRect`*\
 Pointer to a `RECT` structure that contains the coordinates of a rectangle that bounds the insertion point.
 
 ### Return Value
@@ -1436,7 +1426,6 @@ Pointer to a `RECT` structure that contains the coordinates of a rectangle that 
 Returns one of the following values:
 
 - **0** No insertion point found.
-
 - **1** Insertion point found.
 
 ### Remarks
@@ -1447,13 +1436,13 @@ This member function emulates the functionality of the [`LVM_GETINSERTMARKRECT`]
 
 Retrieves some or all of a list view item's attributes.
 
-```
+```cpp
 BOOL GetItem(LVITEM* pItem) const;
 ```
 
 ### Parameters
 
-*`pItem`*<br/>
+*`pItem`*\
 Pointer to an [`LVITEM`](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure that receives the item's attributes.
 
 ### Return Value
@@ -1468,7 +1457,7 @@ The `LVITEM` structure specifies or receives the attributes of a list view item.
 
 Retrieves the number of items in a list view control.
 
-```
+```cpp
 int GetItemCount() const;
 ```
 
@@ -1482,20 +1471,20 @@ See the example for [`CListCtrl::DeleteItem`](#deleteitem).
 
 ## <a name="getitemdata"></a> `CListCtrl::GetItemData`
 
-Retrieves the 32-bit application-specific value associated with the item specified by `nItem`.
+Retrieves the 32-bit application-specific value (64-bit if you're compiling for x64) associated with the item specified by `nItem`.
 
-```
+```cpp
 DWORD_PTR GetItemData(int nItem) const;
 ```
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the list item whose data is to be retrieved.
 
 ### Return Value
 
-A 32-bit application-specific value associated with the specified item.
+A 32-bit (64-bit if you're compiling for x64) application-specific value associated with the specified item.
 
 ### Remarks
 
@@ -1504,21 +1493,21 @@ This value is the `lParam` member of the [`LVITEM`](/windows/win32/api/commctrl/
 ### Example
 
 ```cpp
-    // If any item's data is equal to zero then reset it to -1.
-    for (int i=0; i < m_myListCtrl.GetItemCount(); i++)
+// If any item's data is equal to zero then reset it to -1.
+for (int i=0; i < m_myListCtrl.GetItemCount(); i++)
+{
+    if (m_myListCtrl.GetItemData(i) == 0)
     {
-        if (m_myListCtrl.GetItemData(i) == 0)
-        {
-            m_myListCtrl.SetItemData(i, (DWORD) -1);
-        }
+        m_myListCtrl.SetItemData(i, (DWORD) -1);
     }
+}
 ```
 
 ## <a name="getitemindexrect"></a> `CListCtrl::GetItemIndexRect`
 
 Retrieves the bounding rectangle for all or part of a subitem in the current list-view control.
 
-```
+```cpp
 BOOL GetItemIndexRect(
     PLVITEMINDEX pItemIndex,
     int iColumn,
@@ -1538,9 +1527,7 @@ BOOL GetItemIndexRect(
 [in] Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:
 
 - `LVIR_BOUNDS` - Returns the bounding rectangle of the entire subitem, including the icon and label.
-
 - `LVIR_ICON` - Returns the bounding rectangle of the icon or small icon of the subitem.
-
 - `LVIR_LABEL` - Returns the bounding rectangle of the subitem text.
 
 *`pRect`*\
@@ -1564,27 +1551,27 @@ public:
     CListCtrl m_listCtrl;
 ```
 
-The next code example demonstrates the `GetGroupRect` method. Prior to entering this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.
+The next code example demonstrates the `GetGroupRect` method. Before entering this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.
 
 ```cpp
-    // GetItemIndexRect
-    // Get the rectangle that bounds the second item in the first group.
-    LVITEMINDEX lvItemIndex;
-    lvItemIndex.iGroup = 0;
-    lvItemIndex.iItem = 1;
-    CRect rect;
-    BOOL bRet = m_listCtrl.GetItemIndexRect(
-        &lvItemIndex, 0, LVIR_BOUNDS, &rect);
+// GetItemIndexRect
+// Get the rectangle that bounds the second item in the first group.
+LVITEMINDEX lvItemIndex;
+lvItemIndex.iGroup = 0;
+lvItemIndex.iItem = 1;
+CRect rect;
+BOOL bRet = m_listCtrl.GetItemIndexRect(
+    &lvItemIndex, 0, LVIR_BOUNDS, &rect);
 
-    // Draw a red rectangle around the item.
-    m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(255, 0, 0), RGB(255, 0, 0) );
+// Draw a red rectangle around the item.
+m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(255, 0, 0), RGB(255, 0, 0) );
 ```
 
 ## <a name="getitemposition"></a> `CListCtrl::GetItemPosition`
 
 Retrieves the position of a list view item.
 
-```
+```cpp
 BOOL GetItemPosition(
     int nItem,
     LPPOINT lpPoint) const;
@@ -1592,10 +1579,10 @@ BOOL GetItemPosition(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 The index of the item whose position is to be retrieved.
 
-*`lpPoint`*<br/>
+*`lpPoint`*\
 Address of a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure that receives the position of the item's upper-left corner, in view coordinates.
 
 ### Return Value
@@ -1605,24 +1592,24 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-        POINT pt;
+POINT pt;
 
-        // Move all items in the list control 100 pixels to the right.
-        UINT i, nCount = m_myListCtrl.GetItemCount();
+// Move all items in the list control 100 pixels to the right.
+UINT i, nCount = m_myListCtrl.GetItemCount();
 
-        for (i=0; i < nCount; i++)
-        {
-            m_myListCtrl.GetItemPosition(i, &pt);
-            pt.x += 100;
-            m_myListCtrl.SetItemPosition(i, pt);
-        }
+for (i=0; i < nCount; i++)
+{
+    m_myListCtrl.GetItemPosition(i, &pt);
+    pt.x += 100;
+    m_myListCtrl.SetItemPosition(i, pt);
+}
 ```
 
 ## <a name="getitemrect"></a> `CListCtrl::GetItemRect`
 
 Retrieves the bounding rectangle for all or part of an item in the current view.
 
-```
+```cpp
 BOOL GetItemRect(
     int nItem,
     LPRECT lpRect,
@@ -1631,19 +1618,17 @@ BOOL GetItemRect(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 The index of the item whose position is to be retrieved.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Address of a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure that receives the bounding rectangle.
 
-*`nCode`*<br/>
+*`nCode`*\
 Portion of the list view item for which to retrieve the bounding rectangle. It can be one of these values:
 
 - `LVIR_BOUNDS` Returns the bounding rectangle of the entire item, including the icon and label.
-
 - `LVIR_ICON` Returns the bounding rectangle of the icon or small icon.
-
 - `LVIR_LABEL` Returns the bounding rectangle of the item text.
 
 ### Return Value
@@ -1696,7 +1681,7 @@ void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 
 Calculates the spacing between items in the current list-view control.
 
-```
+```cpp
 BOOL GetItemSpacing(
     BOOL fSmall,
     int* pnHorzSpacing,
@@ -1726,7 +1711,7 @@ This method sends the [`LVM_GETITEMSPACING`](/windows/win32/Controls/lvm-getitem
 
 Retrieves the state of a list view item.
 
-```
+```cpp
 UINT GetItemState(
     int nItem,
     UINT nMask) const;
@@ -1734,10 +1719,10 @@ UINT GetItemState(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 The index of the item whose state is to be retrieved.
 
-*`nMask`*<br/>
+*`nMask`*\
 Mask specifying which of the item's state flags to return.
 
 ### Return Value
@@ -1756,7 +1741,7 @@ See the example for [`CListCtrl::GetTopIndex`](#gettopindex).
 
 Retrieves the text of a list view item or subitem.
 
-```
+```cpp
 int GetItemText(
     int nItem,
     int nSubItem,
@@ -1770,16 +1755,16 @@ CString GetItemText(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 The index of the item whose text is to be retrieved.
 
-*`nSubItem`*<br/>
+*`nSubItem`*\
 Specifies the subitem whose text is to be retrieved.
 
-*`lpszText`*<br/>
+*`lpszText`*\
 Pointer to a string that is to receive the item text.
 
-*`nLen`*<br/>
+*`nLen`*\
 Length of the buffer pointed to by *`lpszText`*.
 
 ### Return Value
@@ -1796,7 +1781,7 @@ If *`nSubItem`* is zero, this function retrieves the item label; if *`nSubItem`*
 
 Searches for a list view item that has the specified properties and that bears the specified relationship to a given item.
 
-```
+```cpp
 int GetNextItem(
     int nItem,
     int nFlags) const;
@@ -1804,31 +1789,25 @@ int GetNextItem(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the item to begin the searching with, or -1 to find the first item that matches the specified flags. The specified item itself is excluded from the search.
 
-*`nFlags`*<br/>
+*`nFlags`*\
 Geometric relation of the requested item to the specified item, and the state of the requested item. The geometric relation can be one of these values:
 
 - `LVNI_ABOVE` Searches for an item that is above the specified item.
-
 - `LVNI_ALL` Searches for a subsequent item by index (the default value).
-
 - `LVNI_BELOW` Searches for an item that is below the specified item.
-
 - `LVNI_TOLEFT` Searches for an item to the left of the specified item.
-
 - `LVNI_TORIGHT` Searches for an item to the right of the specified item.
 
 The state can be zero, or it can be one or more of these values:
 
 - `LVNI_DROPHILITED` The item has the `LVIS_DROPHILITED` state flag set.
-
 - `LVNI_FOCUSED` The item has the `LVIS_FOCUSED` state flag set.
-
 - `LVNI_SELECTED` The item has the `LVIS_SELECTED` state flag set.
 
-If an item does not have all of the specified state flags set, the search continues with the next item.
+If an item doesn't have all of the specified state flags set, the search continues with the next item.
 
 ### Return Value
 
@@ -1838,7 +1817,7 @@ The index of the next item if successful, or -1 otherwise.
 
 Retrieves the index of the item in the current list-view control that has a specified set of properties.
 
-```
+```cpp
 BOOL GetNextItemIndex(
     PLVITEMINDEX pItemIndex,
     int nFlags) const;
@@ -1866,13 +1845,13 @@ This method sends the [`LVM_GETNEXTITEMINDEX`](/windows/win32/controls/lvm-getne
 
 Gets the index of the list item identified by *`pos`*, then sets *`pos`* to the POSITION value.
 
-```
+```cpp
 int GetNextSelectedItem(POSITION& pos) const;
 ```
 
 ### Parameters
 
-*`pos`*<br/>
+*`pos`*\
 A reference to a POSITION value returned by a previous call to `GetNextSelectedItem` or `GetFirstSelectedItemPosition`. The value is updated to the next position by this call.
 
 ### Return Value
@@ -1883,34 +1862,34 @@ The index of the list item identified by *`pos`*.
 
 You can use `GetNextSelectedItem` in a forward iteration loop if you establish the initial position with a call to `GetFirstSelectedItemPosition`.
 
-You must ensure that your `POSITION` value is valid. If it is invalid, then the Debug version of the Microsoft Foundation Class Library asserts.
+You must ensure that your `POSITION` value is valid. If it's invalid, then the Debug version of the Microsoft Foundation Class Library asserts.
 
 ### Example
 
 The following code sample demonstrates the usage of this function.
 
 ```cpp
-        POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
-        if (pos == NULL)
-        {
-            TRACE(_T("No items were selected!\n"));
-        }
-        else
-        {
-            while (pos)
-            {
-                int nItem = m_myListCtrl.GetNextSelectedItem(pos);
-                TRACE(_T("Item %d was selected!\n"), nItem);
-                // you could do your own processing on nItem here
-            }
-        }
+POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
+if (pos == NULL)
+{
+    TRACE(_T("No items were selected!\n"));
+}
+else
+{
+    while (pos)
+    {
+        int nItem = m_myListCtrl.GetNextSelectedItem(pos);
+        TRACE(_T("Item %d was selected!\n"), nItem);
+        // you could do your own processing on nItem here
+    }
+}
 ```
 
 ## <a name="getnumberofworkareas"></a> `CListCtrl::GetNumberOfWorkAreas`
 
 Retrieves the current number of working areas for a list view control.
 
-```
+```cpp
 UINT GetNumberOfWorkAreas() const;
 ```
 
@@ -1925,35 +1904,35 @@ This member function implements the behavior of the Win32 macro, [`ListView_GetN
 ### Example
 
 ```cpp
-        UINT i, uCount = m_myListCtrl.GetNumberOfWorkAreas();
-        LPRECT lpRects = (LPRECT) malloc(uCount*sizeof(RECT));
+UINT i, uCount = m_myListCtrl.GetNumberOfWorkAreas();
+LPRECT lpRects = (LPRECT) malloc(uCount*sizeof(RECT));
 
-        if (lpRects != NULL)
-        {
-            // Dump all of the work area dimensions.
-            m_myListCtrl.GetWorkAreas(uCount, lpRects);
+if (lpRects != NULL)
+{
+    // Dump all of the work area dimensions.
+    m_myListCtrl.GetWorkAreas(uCount, lpRects);
 
-            for (i=0; i < uCount; i++)
-            {
-                TRACE(_T("Work area %d; left = %d, top = %d, right = %d, ")
-                    _T("bottom = %d\r\n"),
-                    i, lpRects[i].left, lpRects[i].top, lpRects[i].right,
-                    lpRects[i].bottom);
-            }
+    for (i=0; i < uCount; i++)
+    {
+        TRACE(_T("Work area %d; left = %d, top = %d, right = %d, ")
+            _T("bottom = %d\r\n"),
+            i, lpRects[i].left, lpRects[i].top, lpRects[i].right,
+            lpRects[i].bottom);
+    }
 
-            free(lpRects);
-        }
-        else
-        {
-            TRACE(_T("Couldn't allocate enough memory!"));
-        }
+    free(lpRects);
+}
+else
+{
+    TRACE(_T("Couldn't allocate enough memory!"));
+}
 ```
 
 ## <a name="getoutlinecolor"></a> `CListCtrl::GetOutlineColor`
 
 Retrieves the color of the border of a list view control.
 
-```
+```cpp
 COLORREF GetOutlineColor() const;
 ```
 
@@ -1969,13 +1948,13 @@ This member function emulates the functionality of the [`LVM_GETOUTLINECOLOR`](/
 
 Retrieves the current view origin for a list view control.
 
-```
+```cpp
 BOOL GetOrigin(LPPOINT lpPoint) const;
 ```
 
 ### Parameters
 
-*`lpPoint`*<br/>
+*`lpPoint`*\
 Address of a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure that receives the view origin.
 
 ### Return Value
@@ -1986,7 +1965,7 @@ Nonzero if successful; otherwise zero. However, if the control is in report view
 
 Retrieves the index of the currently selected column in the list control.
 
-```
+```cpp
 UINT GetSelectedColumn() const;
 ```
 
@@ -2002,7 +1981,7 @@ This member function emulates the functionality of the [`LVM_GETSELECTEDCOLUMN`]
 
 Retrieves the number of selected items in the list view control.
 
-```
+```cpp
 UINT GetSelectedCount() const;
 ```
 
@@ -2013,32 +1992,32 @@ The number of selected items in the list view control.
 ### Example
 
 ```cpp
-        UINT i, uSelectedCount = m_myListCtrl.GetSelectedCount();
-        int  nItem = -1;
+UINT i, uSelectedCount = m_myListCtrl.GetSelectedCount();
+int  nItem = -1;
 
-        // Update all of the selected items.
-        if (uSelectedCount > 0)
-        {
-            for (i=0; i < uSelectedCount; i++)
-            {
-                nItem = m_myListCtrl.GetNextItem(nItem, LVNI_SELECTED);
-                ASSERT(nItem != -1);
-                m_myListCtrl.Update(nItem);
-            }
-        }
+// Update all of the selected items.
+if (uSelectedCount > 0)
+{
+    for (i=0; i < uSelectedCount; i++)
+    {
+        nItem = m_myListCtrl.GetNextItem(nItem, LVNI_SELECTED);
+        ASSERT(nItem != -1);
+        m_myListCtrl.Update(nItem);
+    }
+}
 ```
 
 ## <a name="getselectionmark"></a> `CListCtrl::GetSelectionMark`
 
 Retrieves the selection mark of a list view control.
 
-```
+```cpp
 int GetSelectionMark();
 ```
 
 ### Return Value
 
-The zero-based selection mark, or -1 if there is no selection mark.
+The zero-based selection mark, or -1 if there's no selection mark.
 
 ### Remarks
 
@@ -2047,23 +2026,23 @@ This member function implements the behavior of the Win32 macro, [`ListView_GetS
 ### Example
 
 ```cpp
-    // Set the selection mark to the first item only if no other item is
-    // selected.
-    if (m_myListCtrl.GetSelectionMark() == -1)
-        m_myListCtrl.SetSelectionMark(0);
+// Set the selection mark to the first item only if no other item is
+// selected.
+if (m_myListCtrl.GetSelectionMark() == -1)
+    m_myListCtrl.SetSelectionMark(0);
 ```
 
 ## <a name="getstringwidth"></a> `CListCtrl::GetStringWidth`
 
 Determines the minimum column width necessary to display all of a given string.
 
-```
+```cpp
 int GetStringWidth(LPCTSTR lpsz) const;
 ```
 
 ### Parameters
 
-*`lpsz`*<br/>
+*`lpsz`*\
 Address of a null-terminated string whose width is to be determined.
 
 ### Return Value
@@ -2077,24 +2056,24 @@ The returned width takes into account the control's current font and column marg
 ### Example
 
 ```cpp
-        CString strColumn;
-        int nWidth;
+CString strColumn;
+int nWidth;
 
-        // Insert six columns in the list view control. Make the width of
-        // the column be the width of the column header plus 50%.
-        for (int i = 0; i < 6; i++)
-        {
-            strColumn.Format(_T("column %d"), i);
-            nWidth = 3*m_myListCtrl.GetStringWidth(strColumn)/2;
-            m_myListCtrl.InsertColumn(i, strColumn, LVCFMT_LEFT, nWidth);
-        }
+// Insert six columns in the list view control. Make the width of
+// the column be the width of the column header plus 50%.
+for (int i = 0; i < 6; i++)
+{
+    strColumn.Format(_T("column %d"), i);
+    nWidth = 3*m_myListCtrl.GetStringWidth(strColumn)/2;
+    m_myListCtrl.InsertColumn(i, strColumn, LVCFMT_LEFT, nWidth);
+}
 ```
 
 ## <a name="getsubitemrect"></a> `CListCtrl::GetSubItemRect`
 
 Retrieves the bounding rectangle of an item in a list view control.
 
-```
+```cpp
 BOOL GetSubItemRect(
     int iItem,
     int iSubItem,
@@ -2104,22 +2083,20 @@ BOOL GetSubItemRect(
 
 ### Parameters
 
-*`iItem`*<br/>
+*`iItem`*\
 Index of the subitem's parent item.
 
-*`iSubItem`*<br/>
+*`iSubItem`*\
 The one-based index of the subitem.
 
-*`nArea`*<br/>
+*`nArea`*\
 Determines the portion of the bounding rectangle (of the list view subitem) to be retrieved. The portion (icon, label, or both) of the bounding rectangle is specified by applying the bitwise `OR` operator to one or more of the following values:
 
 - `LVIR_BOUNDS` Returns the bounding rectangle of the entire item, including the icon and label.
-
 - `LVIR_ICON` Returns the bounding rectangle of the icon or small icon.
-
 - `LVIR_LABEL` Returns the bounding rectangle of the entire item, including the icon and label. This is identical to `LVIR_BOUNDS`.
 
-*`ref`*<br/>
+*`ref`*\
 Reference to a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that contains the coordinates of the subitem's bounding rectangle.
 
 ### Return Value
@@ -2134,7 +2111,7 @@ This member function implements the behavior of the Win32 macro, [`ListView_GetS
 
 Retrieves the text background color of a list view control.
 
-```
+```cpp
 COLORREF GetTextBkColor() const;
 ```
 
@@ -2150,7 +2127,7 @@ See the example for [`CListCtrl::SetTextBkColor`](#settextbkcolor).
 
 Retrieves the text color of a list view control.
 
-```
+```cpp
 COLORREF GetTextColor() const;
 ```
 
@@ -2166,18 +2143,18 @@ See the example for [`CListCtrl::SetTextColor`](#settextcolor).
 
 Retrieves information about a tile in a list view control.
 
-```
+```cpp
 BOOL GetTileInfo(PLVTILEINFO plvti) const;
 ```
 
 ### Parameters
 
-*`plvti`*<br/>
+*`plvti`*\
 A pointer to an [`LVTILEINFO`](/windows/win32/api/commctrl/ns-commctrl-lvtileinfo) structure that receives the tile information.
 
 ### Return Value
 
-The return value is not used.
+The return value isn't used.
 
 ### Remarks
 
@@ -2187,18 +2164,18 @@ This member function emulates the functionality of the [`LVM_GETTILEINFO`](/wind
 
 Retrieves information about a list view control in tile view.
 
-```
+```cpp
 BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
 ```
 
 ### Parameters
 
-*`ptvi`*<br/>
+*`ptvi`*\
 A pointer to an [`LVTILEVIEWINFO`](/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo) structure that receives the retrieved information.
 
 ### Return Value
 
-The return value is not used.
+The return value isn't used.
 
 ### Remarks
 
@@ -2208,7 +2185,7 @@ This member function emulates the functionality of the [`LVM_GETTILEVIEWINFO`](/
 
 Retrieves the tooltip control that the list view control uses to display tooltips.
 
-```
+```cpp
 CToolTipCtrl* GetToolTips() const;
 ```
 
@@ -2223,19 +2200,19 @@ This member function implements the behavior of the Win32 message [`LVM_GETTOOLT
 ### Example
 
 ```cpp
-        CToolTipCtrl* pTip = m_myListCtrl.GetToolTips();
-        if (NULL != pTip)
-        {
-            pTip->UpdateTipText(_T("I'm a list view!"), &m_myListCtrl,
-                IDD_MYLISTCTRL);
-        }
+CToolTipCtrl* pTip = m_myListCtrl.GetToolTips();
+if (NULL != pTip)
+{
+    pTip->UpdateTipText(_T("I'm a list view!"), &m_myListCtrl,
+        IDD_MYLISTCTRL);
+}
 ```
 
 ## <a name="gettopindex"></a> `CListCtrl::GetTopIndex`
 
 Retrieves the index of the topmost visible item when in list view or report view.
 
-```
+```cpp
 int GetTopIndex() const;
 ```
 
@@ -2246,25 +2223,25 @@ The index of the topmost visible item.
 ### Example
 
 ```cpp
-        // Make sure the focus is set to the list view control.
-        m_myListCtrl.SetFocus();
+// Make sure the focus is set to the list view control.
+m_myListCtrl.SetFocus();
 
-        // Select all of the items that are completely visible.
-        int n = m_myListCtrl.GetTopIndex();
-        int nLast = n + m_myListCtrl.GetCountPerPage();
+// Select all of the items that are completely visible.
+int n = m_myListCtrl.GetTopIndex();
+int nLast = n + m_myListCtrl.GetCountPerPage();
 
-        for (; n < nLast; n++)
-        {
-            m_myListCtrl.SetItemState(n, LVIS_SELECTED, LVIS_SELECTED);
-            ASSERT(m_myListCtrl.GetItemState(n, LVIS_SELECTED) == LVIS_SELECTED);
-        }
+for (; n < nLast; n++)
+{
+    m_myListCtrl.SetItemState(n, LVIS_SELECTED, LVIS_SELECTED);
+    ASSERT(m_myListCtrl.GetItemState(n, LVIS_SELECTED) == LVIS_SELECTED);
+}
 ```
 
 ## <a name="getview"></a> `CListCtrl::GetView`
 
 Gets the view of the list view control.
 
-```
+```cpp
 DWORD GetView() const;
 ```
 
@@ -2280,13 +2257,13 @@ This member function emulates the functionality of the [`LVM_GETVIEW`](/windows/
 
 Retrieves the bounding rectangle of all items in the list view control.
 
-```
+```cpp
 BOOL GetViewRect(LPRECT lpRect) const;
 ```
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Address of a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure.
 
 ### Return Value
@@ -2309,10 +2286,10 @@ void GetWorkAreas(
 
 ### Parameters
 
-*`nWorkAreas`*<br/>
+*`nWorkAreas`*\
 The number of `RECT` structures contained in the *`pRect`* array.
 
-*`pRect`*<br/>
+*`pRect`*\
 A pointer to an array of `RECT` structures (or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) objects) that receive the working areas of the list view control. Values in these structures are in client coordinates.
 
 ### Remarks
@@ -2327,13 +2304,13 @@ See the example for [`CListCtrl::GetNumberOfWorkAreas`](#getnumberofworkareas).
 
 Determines if the list view control has the specified group.
 
-```
+```cpp
 BOOL HasGroup(int iGroupId) const;
 ```
 
 ### Parameters
 
-*`iGroupId`*<br/>
+*`iGroupId`*\
 The identifier of the group being requested.
 
 ### Return Value
@@ -2348,7 +2325,7 @@ This member function emulates the functionality of the [`LVM_HASGROUP`](/windows
 
 Determines which list view item, if any, is at a specified position.
 
-```
+```cpp
 int HitTest(LVHITTESTINFO* pHitTestInfo) const;
 
 int HitTest(
@@ -2358,13 +2335,13 @@ int HitTest(
 
 ### Parameters
 
-*`pHitTestInfo`*<br/>
+*`pHitTestInfo`*\
 Address of an `LVHITTESTINFO` structure that contains the position to hit test and that receives information about the results of the hit test.
 
-*`pt`*<br/>
+*`pt`*\
 Point to be tested.
 
-*`pFlags`*<br/>
+*`pFlags`*\
 Pointer to an integer that receives information about the results of the test. See the explanation of the `flags` member of the [`LVHITTESTINFO`](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) structure in the Windows SDK.
 
 ### Return Value
@@ -2403,7 +2380,7 @@ void CListCtrlDlg::OnRClick(NMHDR* pNMHDR, LRESULT* pResult)
 
 Inserts a new column in a list view control.
 
-```
+```cpp
 int InsertColumn(
     int nCol,
     const LVCOLUMN* pColumn);
@@ -2418,22 +2395,22 @@ int InsertColumn(
 
 ### Parameters
 
-*`nCol`*<br/>
+*`nCol`*\
 The index of the new column.
 
-*`pColumn`*<br/>
+*`pColumn`*\
 Address of an `LVCOLUMN` structure that contains the attributes of the new column.
 
-*`lpszColumnHeading`*<br/>
+*`lpszColumnHeading`*\
 Address of a string containing the column's heading.
 
-*`nFormat`*<br/>
+*`nFormat`*\
 Integer specifying the alignment of the column. It can be one of these values: `LVCFMT_LEFT`, `LVCFMT_RIGHT`, or `LVCFMT_CENTER`.
 
-*`nWidth`*<br/>
-Width of the column, in pixels. If this parameter is -1, the column width is not set.
+*`nWidth`*\
+Width of the column, in pixels. If this parameter is -1, the column width isn't set.
 
-*`nSubItem`*<br/>
+*`nSubItem`*\
 Index of the subitem associated with the column. If this parameter is -1, no subitem is associated with the column.
 
 ### Return Value
@@ -2444,13 +2421,13 @@ The index of the new column if successful or -1 otherwise.
 
 The leftmost column in a list view control must be left-aligned.
 
-The [`LVCOLUMN`](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) structure contains the attributes of a column in report view. It is also used to receive information about a column. This structure is described in the Windows SDK.
+The [`LVCOLUMN`](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) structure contains the attributes of a column in report view. It's also used to receive information about a column. This structure is described in the Windows SDK.
 
 ## <a name="insertgroup"></a> `CListCtrl::InsertGroup`
 
 Inserts a group into the list view control.
 
-```
+```cpp
 LRESULT InsertGroup(
     int index,
     PLVGROUP pgrp);
@@ -2458,10 +2435,10 @@ LRESULT InsertGroup(
 
 ### Parameters
 
-*`index`*<br/>
+*`index`*\
 The index of the item where the group is to be inserted.
 
-*`pgrp`*<br/>
+*`pgrp`*\
 A pointer to an [`LVGROUP`](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure containing the group to be added.
 
 ### Return Value
@@ -2476,18 +2453,18 @@ This member function emulates the functionality of the [`LVM_INSERTGROUP`](/wind
 
 Inserts the specified group into an ordered list of groups.
 
-```
+```cpp
 LRESULT InsertGroupSorted(PLVINSERTGROUPSORTED pStructInsert);
 ```
 
 ### Parameters
 
-*`pStructInsert`*<br/>
+*`pStructInsert`*\
 A pointer to an [`LVINSERTGROUPSORTED`](/windows/win32/api/commctrl/ns-commctrl-lvinsertgroupsorted) structure that contains the group to insert.
 
 ### Return Value
 
-The return value is not used.
+The return value isn't used.
 
 ### Remarks
 
@@ -2497,7 +2474,7 @@ This member function emulates the functionality of the [`LVM_INSERTGROUPSORTED`]
 
 Inserts an item into the list view control.
 
-```
+```cpp
 int InsertItem(const LVITEM* pItem);
 
 int InsertItem(
@@ -2521,29 +2498,29 @@ int InsertItem(
 
 ### Parameters
 
-*`pItem`*<br/>
+*`pItem`*\
 Pointer to an [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure that specifies the item's attributes, as described in the Windows SDK.
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the item to be inserted.
 
-*`lpszItem`*<br/>
+*`lpszItem`*\
 Address of a string containing the item's label, or `LPSTR_TEXTCALLBACK` if the item is a callback item. For information on callback items, see [`CListCtrl::GetCallbackMask`](#getcallbackmask).
 
-*`nImage`*<br/>
+*`nImage`*\
 Index of the item's image, or `I_IMAGECALLBACK` if the item is a callback item. For information on callback items, see [`CListCtrl::GetCallbackMask`](#getcallbackmask).
 
-*`nMask`*<br/>
+*`nMask`*\
 The *`nMask`* parameter specifies which item attributes passed as parameters are valid. It can be one or more of the mask values described in [`LVITEM` Structure](/windows/win32/api/commctrl/ns-commctrl-lvitemw) in the Windows SDK. The valid values can be combined with the bitwise OR operator.
 
-*`nState`*<br/>
+*`nState`*\
 Indicates the item's state, state image, and overlay image. For more information, see the Windows SDK topics [`LVITEM` Structure](/windows/win32/api/commctrl/ns-commctrl-lvitemw) and [List-View Item States](/windows/win32/Controls/list-view-item-states) for a list of valid flags.
 
-*`nStateMask`*<br/>
+*`nStateMask`*\
 Indicates which bits of the state member will be retrieved or modified. For more information, see [`LVITEM` Structure](/windows/win32/api/commctrl/ns-commctrl-lvitemw) in the Windows SDK.
 
-*`lParam`*<br/>
-A 32-bit application-specific value associated with the item. If this parameter is specified, you must set the *`nMask`* attribute `LVIF_PARAM`.
+*`lParam`*\
+A 32-bit application-specific value (64-bit if you're compiling for x64) associated with the item. If this parameter is specified, you must set the *`nMask`* attribute `LVIF_PARAM`.
 
 ### Return Value
 
@@ -2556,32 +2533,32 @@ Calling this method may cause the `LVM_INSERTITEM` message to be sent to your co
 ### Example
 
 ```cpp
-        CString strText;
-        int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
+CString strText;
+int nColumnCount = m_myListCtrl.GetHeaderCtrl()->GetItemCount();
 
-        // Insert 10 items in the list view control.
-        for (int i = 0; i < 10; i++)
-        {
-            strText.Format(TEXT("item %d"), i);
+// Insert 10 items in the list view control.
+for (int i = 0; i < 10; i++)
+{
+    strText.Format(TEXT("item %d"), i);
 
-            // Insert the item, select every other item.
-            m_myListCtrl.InsertItem(LVIF_TEXT | LVIF_STATE, i, strText,
-                (i % 2) == 0 ? LVIS_SELECTED : 0, LVIS_SELECTED, 0, 0);
+    // Insert the item, select every other item.
+    m_myListCtrl.InsertItem(LVIF_TEXT | LVIF_STATE, i, strText,
+        (i % 2) == 0 ? LVIS_SELECTED : 0, LVIS_SELECTED, 0, 0);
 
-            // Initialize the text of the subitems.
-            for (int j = 1; j < nColumnCount; j++)
-            {
-                strText.Format(TEXT("sub-item %d %d"), i, j);
-                m_myListCtrl.SetItemText(i, j, strText);
-            }
-        }
+    // Initialize the text of the subitems.
+    for (int j = 1; j < nColumnCount; j++)
+    {
+        strText.Format(TEXT("sub-item %d %d"), i, j);
+        m_myListCtrl.SetItemText(i, j, strText);
+    }
+}
 ```
 
 ## <a name="insertmarkhittest"></a> `CListCtrl::InsertMarkHitTest`
 
 Retrieves the insertion point closest to a specified point.
 
-```
+```cpp
 int InsertMarkHitTest(
     LPPOINT pPoint,
     LPLVINSERTMARK plvim) const;
@@ -2589,10 +2566,10 @@ int InsertMarkHitTest(
 
 ### Parameters
 
-*`pPoint`*<br/>
+*`pPoint`*\
 A pointer to a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure that contains the hit test coordinates, relative to the client area of the list control.
 
-*`plvim`*<br/>
+*`plvim`*\
 A pointer to an [`LVINSERTMARK`](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) structure that specifies the insertion point closest to the coordinates defined by the point parameter.
 
 ### Return Value
@@ -2607,7 +2584,7 @@ This member function emulates the functionality of the [`LVM_INSERTMARKHITTEST`]
 
 Determines whether group view is enabled for a list view control.
 
-```
+```cpp
 BOOL IsGroupViewEnabled() const;
 ```
 
@@ -2623,7 +2600,7 @@ This member function emulates the functionality of the [`LVM_ISGROUPVIEWENABLED`
 
 Indicates whether a specified item in the current list-view control is visible.
 
-```
+```cpp
 BOOL IsItemVisible(int index) const;
 ```
 
@@ -2644,7 +2621,7 @@ This method sends the [`LVM_ISITEMVISIBLE`](/windows/win32/Controls/lvm-isitemvi
 
 Maps the unique ID of an item in the current list-view control to an index.
 
-```
+```cpp
 UINT MapIDToIndex(UINT id) const;
 ```
 
@@ -2661,7 +2638,7 @@ The current index for the specified ID.
 
 A list-view control internally tracks items by index. This can present problems because indexes can change during the control's lifetime. The list-view control can tag an item with an ID when the item is created and you can use this ID to guarantee uniqueness during the lifetime of the list-view control.
 
-Note that in a multithreaded environment the index is guaranteed only on the thread that hosts the list-view control, not on background threads.
+In a multithreaded environment the index is guaranteed only on the thread that hosts the list-view control, not on background threads.
 
 This method sends the [`LVM_MAPIDTOINDEX`](/windows/win32/controls/lvm-mapidtoindex) message, which is described in the Windows SDK.
 
@@ -2669,7 +2646,7 @@ This method sends the [`LVM_MAPIDTOINDEX`](/windows/win32/controls/lvm-mapidtoin
 
 Maps the index of an item in the current list-view control to a unique ID.
 
-```
+```cpp
 UINT MapIndexToID(UINT index) const;
 ```
 
@@ -2686,7 +2663,7 @@ A unique ID for the specified item.
 
 A list-view control internally tracks items by index. This can present problems because indexes can change during the control's lifetime. The list-view control can tag an item with an ID when the item is created. You can use this ID to access a specific item for the lifetime of the list-view control.
 
-Note that in a multithreaded environment the index is guaranteed only on the thread that hosts the list-view control, not on background threads.
+In a multithreaded environment the index is guaranteed only on the thread that hosts the list-view control, not on background threads.
 
 This method sends the [`LVM_MAPINDEXTOID`](/windows/win32/Controls/lvm-mapindextoid) message, which is described in the Windows SDK.
 
@@ -2703,36 +2680,36 @@ public:
 The next code example demonstrates the `MapIndexToID` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following example maps the index of each list-view item to an identification number, and then retrieves the index for each identification number. Finally, the example reports whether the original indexes were retrieved.
 
 ```cpp
-    // MapIndexToID
-    int iCount = m_listCtrl.GetItemCount();
-    UINT nId = 0;
-    UINT nIndex = 0;
-    for (int iIndexOriginal = 0; iIndexOriginal < iCount; iIndexOriginal++)
+// MapIndexToID
+int iCount = m_listCtrl.GetItemCount();
+UINT nId = 0;
+UINT nIndex = 0;
+for (int iIndexOriginal = 0; iIndexOriginal < iCount; iIndexOriginal++)
+{
+    // Map index to ID.
+    nId = m_listCtrl.MapIndexToID((UINT)iIndexOriginal);
+
+    // Map ID to index.
+    nIndex = m_listCtrl.MapIDToIndex(nId);
+
+    if (nIndex != (UINT)(iIndexOriginal))
     {
-        // Map index to ID.
-        nId = m_listCtrl.MapIndexToID((UINT)iIndexOriginal);
-
-        // Map ID to index.
-        nIndex = m_listCtrl.MapIDToIndex(nId);
-
-        if (nIndex != (UINT)(iIndexOriginal))
-        {
-            CString str;
-            str.Format(_T("Mapped index (%d) is not equal to original index (%d)"),
-                nIndex, (UINT)(iIndexOriginal));
-            AfxMessageBox(str);
-            return;
-        }
+        CString str;
+        str.Format(_T("Mapped index (%d) is not equal to original index (%d)"),
+            nIndex, (UINT)(iIndexOriginal));
+        AfxMessageBox(str);
+        return;
     }
-    AfxMessageBox(_T("The mapped indexes and original indexes are equal."),
-        MB_ICONINFORMATION);
+}
+AfxMessageBox(_T("The mapped indexes and original indexes are equal."),
+    MB_ICONINFORMATION);
 ```
 
 ## <a name="movegroup"></a> `CListCtrl::MoveGroup`
 
 Moves the specified group to the specified zero based index of the list view control.
 
-```
+```cpp
 LRESULT MoveGroup(
     int iGroupId,
     int toIndex);
@@ -2740,15 +2717,15 @@ LRESULT MoveGroup(
 
 ### Parameters
 
-*`iGroupId`*<br/>
+*`iGroupId`*\
 The identifier of the group to be moved.
 
-*`toIndex`*<br/>
+*`toIndex`*\
 The zero-based index where the group is to be moved.
 
 ### Return Value
 
-The return value is not used.
+The return value isn't used.
 
 ### Remarks
 
@@ -2766,16 +2743,16 @@ void MoveItemToGroup(
 
 ### Parameters
 
-*`idItemFrom`*<br/>
+*`idItemFrom`*\
 [in] The index of the item to be moved.
 
-*`idGroupTo`*<br/>
+*`idGroupTo`*\
 [in] The identifier of the group the item will be moved to.
 
 ### Remarks
 
 > [!NOTE]
-> This method currently is not implemented.
+> This method currently isn't implemented.
 
 This method emulates the functionality of the [`LVM_MOVEITEMTOGROUP`](/windows/win32/Controls/lvm-moveitemtogroup) message, as described in the Windows SDK.
 
@@ -2783,7 +2760,7 @@ This method emulates the functionality of the [`LVM_MOVEITEMTOGROUP`](/windows/w
 
 Forces a list view control to repaint a range of items.
 
-```
+```cpp
 BOOL RedrawItems(
     int nFirst,
     int nLast);
@@ -2791,10 +2768,10 @@ BOOL RedrawItems(
 
 ### Parameters
 
-*`nFirst`*<br/>
+*`nFirst`*\
 Index of the first item to be repainted.
 
-*`nLast`*<br/>
+*`nLast`*\
 Index of the last item to be repainted.
 
 ### Return Value
@@ -2803,7 +2780,7 @@ Nonzero if successful; otherwise zero.
 
 ### Remarks
 
-The specified items are not actually repainted until the list view window receives a WM_PAINT message. To repaint immediately, call the Windows [`UpdateWindow`](/windows/win32/api/winuser/nf-winuser-updatewindow) function after using this function.
+The specified items aren't repainted until the list view window receives a WM_PAINT message. To repaint immediately, call the Windows [`UpdateWindow`](/windows/win32/api/winuser/nf-winuser-updatewindow) function after using this function.
 
 ## <a name="removeallgroups"></a> `CListCtrl::RemoveAllGroups`
 
@@ -2821,13 +2798,13 @@ This member function emulates the functionality of the [`LVM_REMOVEALLGROUPS`](/
 
 Removes the specified group from the list view control.
 
-```
+```cpp
 LRESULT RemoveGroup(int iGroupId);
 ```
 
 ### Parameters
 
-*`iGroupId`*<br/>
+*`iGroupId`*\
 The identifier of the group to be removed.
 
 ### Return Value
@@ -2842,13 +2819,13 @@ This member function emulates the functionality of the [`LVM_REMOVEGROUP`](/wind
 
 Scrolls the content of a list view control.
 
-```
+```cpp
 BOOL Scroll(CSize size);
 ```
 
 ### Parameters
 
-*`size`*<br/>
+*`size`*\
 A `CSize` object specifying the amount of horizontal and vertical scrolling, in pixels. The `y` member of *size* is divided by the height, in pixels, of the list view control's line, and the control is scrolled by the resulting number of lines.
 
 ### Return Value
@@ -2859,13 +2836,13 @@ Nonzero if successful; otherwise zero.
 
 Sets the background color of the list view control.
 
-```
+```cpp
 BOOL SetBkColor(COLORREF cr);
 ```
 
 ### Parameters
 
-*`cr`*<br/>
+*`cr`*\
 Background color to set, or the `CLR_NONE` value for no background color. List view controls with background colors redraw themselves significantly faster than those without background colors. For information, see [`COLORREF`](/windows/win32/gdi/colorref) in the Windows SDK.
 
 ### Return Value
@@ -2875,17 +2852,17 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-        // Use the 3D button face color for the background.
-        COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
-        m_myListCtrl.SetBkColor(crBkColor);
-        ASSERT(m_myListCtrl.GetBkColor() == crBkColor);
+// Use the 3D button face color for the background.
+COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
+m_myListCtrl.SetBkColor(crBkColor);
+ASSERT(m_myListCtrl.GetBkColor() == crBkColor);
 ```
 
 ## <a name="setbkimage"></a> `CListCtrl::SetBkImage`
 
 Sets the background image of a list view control.
 
-```
+```cpp
 BOOL SetBkImage(LVBKIMAGE* plvbkImage);
 
 BOOL SetBkImage(
@@ -2903,22 +2880,22 @@ BOOL SetBkImage(
 
 ### Parameters
 
-*`plvbkImage`*<br/>
+*`plvbkImage`*\
 Address of an `LVBKIMAGE` structure, containing the new background image information.
 
-*`hBitmap`*<br/>
+*`hBitmap`*\
 Handle to a bitmap.
 
-*`pszUrl`*<br/>
+*`pszUrl`*\
 A `NULL`-terminated string that contains the URL of the background image.
 
-*`fTile`*<br/>
+*`fTile`*\
 Nonzero if the image is to be tiled in the background of the list view control; otherwise 0.
 
-*`xOffsetPercent`*<br/>
+*`xOffsetPercent`*\
 The offset, in pixels, of the image's left edge, from origin of the list view control.
 
-*`yOffsetPercent`*<br/>
+*`yOffsetPercent`*\
 The offset, in pixels, of the image's top edge, from origin of the list view control.
 
 ### Return Value
@@ -2928,7 +2905,7 @@ Returns nonzero if successful, or zero otherwise.
 ### Remarks
 
 > [!NOTE]
-> Because `CListCtrl::SetBkImage` makes use of OLE COM functionality, the OLE libraries must be initialized before using `SetBkImage`. It is best to initialize the COM libraries when the application is initialized and uninitialize the libraries when the application terminates. This is automatically done in MFC applications that make use of ActiveX technology, OLE Automation, OLE Linking/Embedding, or ODBC/DAO operations.
+> Because `CListCtrl::SetBkImage` makes use of OLE COM functionality, the OLE libraries must be initialized before using `SetBkImage`. It's best to initialize the COM libraries when the application is initialized and uninitialize the libraries when the application terminates. This is automatically done in MFC applications that make use of ActiveX technology, OLE Automation, OLE Linking/Embedding, or ODBC/DAO operations.
 
 ### Example
 
@@ -2938,13 +2915,13 @@ See the example for [`CListCtrl::GetBkImage`](#getbkimage).
 
 Sets the callback mask for a list view control.
 
-```
+```cpp
 BOOL SetCallbackMask(UINT nMask);
 ```
 
 ### Parameters
 
-*`nMask`*<br/>
+*`nMask`*\
 New value of the callback mask.
 
 ### Return Value
@@ -2954,18 +2931,18 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-    // Set the callback mask so that only the selected and focused states
-    // are stored for each item.
-    m_myListCtrl.SetCallbackMask(LVIS_SELECTED|LVIS_FOCUSED);
-    ASSERT(m_myListCtrl.GetCallbackMask() ==
-        (LVIS_SELECTED|LVIS_FOCUSED));
+// Set the callback mask so that only the selected and focused states
+// are stored for each item.
+m_myListCtrl.SetCallbackMask(LVIS_SELECTED|LVIS_FOCUSED);
+ASSERT(m_myListCtrl.GetCallbackMask() ==
+    (LVIS_SELECTED|LVIS_FOCUSED));
 ```
 
 ## <a name="setcheck"></a> `CListCtrl::SetCheck`
 
 Determines if the state image of a list control item is visible.
 
-```
+```cpp
 BOOL SetCheck(
     int nItem,
     BOOL fCheck = TRUE);
@@ -2973,11 +2950,11 @@ BOOL SetCheck(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 The zero-based index of a list control item.
 
-*`fCheck`*<br/>
-Specifies whether the state image of the item should be visible or not. By default, *`fCheck`* is `TRUE` and the state image is visible. If *`fCheck`* is `FALSE`, it is not visible.
+*`fCheck`*\
+Specifies whether the state image of the item should be visible or not. By default, *`fCheck`* is `TRUE` and the state image is visible. If *`fCheck`* is `FALSE`, it's not visible.
 
 ### Return Value
 
@@ -2986,25 +2963,25 @@ Nonzero if the item is checked, otherwise 0.
 ### Example
 
 ```cpp
-        int nCount = m_myListCtrl.GetItemCount();
-        BOOL fCheck = FALSE;
+int nCount = m_myListCtrl.GetItemCount();
+BOOL fCheck = FALSE;
 
-        // Set the check state of every other item to TRUE and
-        // all others to FALSE.
-        for (int i = 0; i < nCount; i++)
-        {
-            m_myListCtrl.SetCheck(i, fCheck);
-            ASSERT((m_myListCtrl.GetCheck(i) && fCheck) ||
-                (!m_myListCtrl.GetCheck(i) && !fCheck));
-            fCheck = !fCheck;
-        }
+// Set the check state of every other item to TRUE and
+// all others to FALSE.
+for (int i = 0; i < nCount; i++)
+{
+    m_myListCtrl.SetCheck(i, fCheck);
+    ASSERT((m_myListCtrl.GetCheck(i) && fCheck) ||
+        (!m_myListCtrl.GetCheck(i) && !fCheck));
+    fCheck = !fCheck;
+}
 ```
 
 ## <a name="setcolumn"></a> `CListCtrl::SetColumn`
 
 Sets the attributes of a list view column.
 
-```
+```cpp
 BOOL SetColumn(
     int nCol,
     const LVCOLUMN* pColumn);
@@ -3012,10 +2989,10 @@ BOOL SetColumn(
 
 ### Parameters
 
-*`nCol`*<br/>
+*`nCol`*\
 Index of the column whose attributes are to be set.
 
-*`pColumn`*<br/>
+*`pColumn`*\
 Address of an [`LVCOLUMN`](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) structure that contains the new column attributes, as described in the Windows SDK. The structure's `mask` member specifies which column attributes to set. If the `mask` member specifies the `LVCF_TEXT` value, the structure's `pszText` member is the address of a null-terminated string and the structure's `cchTextMax` member is ignored.
 
 ### Return Value
@@ -3030,7 +3007,7 @@ See the example for [`CListCtrl::GetColumn`](#getcolumn).
 
 Sets the column order (left to right) of a list view control.
 
-```
+```cpp
 BOOL SetColumnOrderArray(
     int iCount,
     LPINT piArray);
@@ -3038,10 +3015,10 @@ BOOL SetColumnOrderArray(
 
 ### Parameters
 
-*`piArray`*<br/>
+*`piArray`*\
 A pointer to a buffer containing the index values of the columns in the list view control (from left to right). The buffer must be large enough to contain the total number of columns in the list view control.
 
-*`iCount`*<br/>
+*`iCount`*\
 Number of columns in the list view control.
 
 ### Return Value
@@ -3060,7 +3037,7 @@ See the example for [`CListCtrl::GetColumnOrderArray`](#getcolumnorderarray).
 
 Changes the width of a column in report view or list view.
 
-```
+```cpp
 BOOL SetColumnWidth(
     int nCol,
     int cx);
@@ -3068,10 +3045,10 @@ BOOL SetColumnWidth(
 
 ### Parameters
 
-*`nCol`*<br/>
+*`nCol`*\
 Index of the column for which the width is to be set. In list view, this parameter must be 0.
 
-*`cx`*<br/>
+*`cx`*\
 The new width of the column. Can be either `LVSCW_AUTOSIZE` or `LVSCW_AUTOSIZE_USEHEADER`, as described in [`LVM_SETCOLUMNWIDTH`](/windows/win32/Controls/lvm-setcolumnwidth) in the Windows SDK.
 
 ### Return Value
@@ -3082,13 +3059,13 @@ Nonzero if successful; otherwise zero.
 
 Sets the current extended styles of a list view control.
 
-```
+```cpp
 DWORD SetExtendedStyle(DWORD dwNewStyle);
 ```
 
 ### Parameters
 
-*`dwNewStyle`*<br/>
+*`dwNewStyle`*\
 A combination of extended styles to be used by the list view control. For a descriptive list of these styles, see the [Extended List View Styles](/windows/win32/Controls/extended-list-view-styles) topic in the Windows SDK.
 
 ### Return Value
@@ -3102,16 +3079,16 @@ This member function implements the behavior of the Win32 macro, [`ListView_SetE
 ### Example
 
 ```cpp
-    // Allow the header controls item to be movable by the user.
-    m_myListCtrl.SetExtendedStyle
-        (m_myListCtrl.GetExtendedStyle()|LVS_EX_HEADERDRAGDROP);
+// Allow the header controls item to be movable by the user.
+m_myListCtrl.SetExtendedStyle
+    (m_myListCtrl.GetExtendedStyle()|LVS_EX_HEADERDRAGDROP);
 ```
 
 ## <a name="setgroupinfo"></a> `CListCtrl::SetGroupInfo`
 
 Sets the information that describes the specified group of the current list-view control.
 
-```
+```cpp
 int SetGroupInfo(
     int iGroupId,
     PLVGROUP pgrp);
@@ -3119,10 +3096,10 @@ int SetGroupInfo(
 
 ### Parameters
 
-*`iGroupId`*<br/>
+*`iGroupId`*\
 The identifier of the group whose information is set.
 
-*`pgrp`*<br/>
+*`pgrp`*\
 Pointer to an [`LVGROUP`](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure that contains the information to set. The caller is responsible for allocating this structure and setting its members.
 
 ### Return Value
@@ -3143,7 +3120,7 @@ void SetGroupMetrics(PLVGROUPMETRICS pGroupMetrics);
 
 ### Parameters
 
-*`pGroupMetrics`*<br/>
+*`pGroupMetrics`*\
 A pointer to an [`LVGROUPMETRICS`](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics) structure containing the group metrics information to be set.
 
 ### Remarks
@@ -3154,13 +3131,13 @@ This member function emulates the functionality of the [`LVM_SETGROUPMETRICS`](/
 
 Sets the cursor used when hot tracking is enabled for a list view control.
 
-```
+```cpp
 HCURSOR SetHotCursor(HCURSOR hc);
 ```
 
 ### Parameters
 
-*`hc`*<br/>
+*`hc`*\
 A handle to a cursor resource, used to represent the hot cursor.
 
 ### Return Value
@@ -3181,13 +3158,13 @@ See the example for [`CListCtrl::GetHotCursor`](#gethotcursor).
 
 Sets the current hot item of a list view control.
 
-```
+```cpp
 int SetHotItem(int iIndex);
 ```
 
 ### Parameters
 
-*`iIndex`*<br/>
+*`iIndex`*\
 Zero-based index of the item to be set as the hot item.
 
 ### Return Value
@@ -3206,14 +3183,14 @@ See the example for [`CListCtrl::GetHotItem`](#gethotitem).
 
 Sets the current hover time of a list view control.
 
-```
+```cpp
 DWORD SetHoverTime(DWORD dwHoverTime = (DWORD)-1);
 ```
 
 ### Parameters
 
-*`dwHoverTime`*<br/>
-The new delay, in milliseconds, which the mouse cursor must hover over an item before it is selected. If the default value is passed, the time is set to the default hover time.
+*`dwHoverTime`*\
+The new delay, in milliseconds, which the mouse cursor must hover over an item before it's selected. If the default value is passed, the time is set to the default hover time.
 
 ### Return Value
 
@@ -3231,7 +3208,7 @@ See the example for [`CListCtrl::GetHoverTime`](#gethovertime).
 
 Sets the spacing between icons in a list view control.
 
-```
+```cpp
 CSize SetIconSpacing(
     int cx,
     int cy);
@@ -3241,13 +3218,13 @@ CSize SetIconSpacing(CSize size);
 
 ### Parameters
 
-*`cx`*<br/>
+*`cx`*\
 The distance (in pixels) between icons on the x-axis.
 
-*`cy`*<br/>
+*`cy`*\
 The distance (in pixels) between icons on the y-axis.
 
-*`size`*<br/>
+*`size`*\
 A `CSize` object specifying the distance (in pixels) between icons on the x- and y-axes.
 
 ### Return Value
@@ -3261,15 +3238,15 @@ This member function implements the behavior of the Win32 macro, [`ListView_SetI
 ### Example
 
 ```cpp
-    // Leave lots of space between icons.
-    m_myListCtrl.SetIconSpacing(CSize(100, 100));
+// Leave lots of space between icons.
+m_myListCtrl.SetIconSpacing(CSize(100, 100));
 ```
 
 ## <a name="setimagelist"></a> `CListCtrl::SetImageList`
 
 Assigns an image list to a list view control.
 
-```
+```cpp
 CImageList* SetImageList(
     CImageList* pImageList,
     int nImageListType);
@@ -3277,16 +3254,14 @@ CImageList* SetImageList(
 
 ### Parameters
 
-*`pImageList`*<br/>
+*`pImageList`*\
 Pointer to the image list to assign.
 
-*`nImageListType`*<br/>
+*`nImageListType`*\
 Type of image list. It can be one of these values:
 
 - `LVSIL_NORMAL` Image list with large icons.
-
 - `LVSIL_SMALL` Image list with small icons.
-
 - `LVSIL_STATE` Image list with state images.
 
 ### Return Value
@@ -3301,13 +3276,13 @@ See the example for [`CListCtrl::GetImageList`](#getimagelist).
 
 Sets the tooltip text.
 
-```
+```cpp
 BOOL SetInfoTip(PLVSETINFOTIP plvInfoTip);
 ```
 
 ### Parameters
 
-*`plvInfoTip`*<br/>
+*`plvInfoTip`*\
 A pointer to an [`LVFSETINFOTIP`](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) structure containing the information to be set.
 
 ### Return Value
@@ -3322,18 +3297,18 @@ This member function emulates the functionality of the [`LVM_SETINFOTIP`](/windo
 
 Sets the insertion point to the defined position.
 
-```
+```cpp
 BOOL SetInsertMark(LPLVINSERTMARK plvim);
 ```
 
 ### Parameters
 
-*`plvim`*<br/>
+*`plvim`*\
 A pointer to an [`LVINSERTMARK`](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) structure specifying where to set the insertion point.
 
 ### Return Value
 
-Returns `TRUE` if successful, or `FALSE` otherwise. `FALSE` is returned if the size in the `cbSize` member of the `LVINSERTMARK` structure does not equal the actual size of the structure, or when an insertion point does not apply in the current view.
+Returns `TRUE` if successful, or `FALSE` otherwise. `FALSE` is returned if the size in the `cbSize` member of the `LVINSERTMARK` structure doesn't equal the actual size of the structure, or when an insertion point doesn't apply in the current view.
 
 ### Remarks
 
@@ -3343,13 +3318,13 @@ This member function emulates the functionality of the [`LVM_SETINSERTMARK`](/wi
 
 Sets the color of the insertion point.
 
-```
+```cpp
 COLORREF SetInsertMarkColor(COLORREF color);
 ```
 
 ### Parameters
 
-*`color`*<br/>
+*`color`*\
 A [`COLORREF`](/windows/win32/gdi/colorref) structure specifying the color to set the insertion point.
 
 ### Return Value
@@ -3364,7 +3339,7 @@ This member function emulates the functionality of the [`LVM_SETINSERTMARKCOLOR`
 
 Sets some or all of a list view item's attributes.
 
-```
+```cpp
 BOOL SetItem(const LVITEM* pItem);
 
 BOOL SetItem(
@@ -3391,34 +3366,34 @@ BOOL SetItem(
 
 ### Parameters
 
-*`pItem`*<br/>
+*`pItem`*\
 Address of an [`LVITEM`](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure that contains the new item attributes, as described in the Windows SDK. The structure's `iItem` and `iSubItem` members identify the item or subitem, and the structure's `mask` member specifies which attributes to set. For more information on the `mask` member, see the **Remarks**.
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the item whose attributes are to be set.
 
-*`nSubItem`*<br/>
+*`nSubItem`*\
 Index of the subitem whose attributes are to be set.
 
-*`nMask`*<br/>
+*`nMask`*\
 Specifies which attributes are to be set (see the Remarks).
 
-*`lpszItem`*<br/>
+*`lpszItem`*\
 Address of a null-terminated string specifying the item's label.
 
-*`nImage`*<br/>
+*`nImage`*\
 Index of the item's image within the image list.
 
-*`nState`*<br/>
+*`nState`*\
 Specifies values for states to be changed (see the Remarks).
 
-*`nStateMask`*<br/>
+*`nStateMask`*\
 Specifies which states are to be changed (see the Remarks).
 
-*`lParam`*<br/>
-A 32-bit application-specific value to be associated with the item.
+*`lParam`*\
+A 32-bit (64-bit if you're compiling for x64) application-specific value to associate with the item.
 
-*`nIndent`*<br/>
+*`nIndent`*\
 Width, in pixels, of the indentation. If *`nIndent`* is less than the system-defined minimum width, the new width is set to the system-defined minimum
 
 ### Return Value
@@ -3432,7 +3407,6 @@ The `iItem` and `iSubItem` members of the `LVITEM` structure and the *`nItem`* a
 The `mask` member of the `LVITEM` structure and the *`nMask`* parameter specify which item attributes are to be set:
 
 - `LVIF_TEXT` The `pszText` member or the *`lpszItem`* parameter is the address of a null-terminated string; the `cchTextMax` member is ignored.
-
 - `LVIF_STATE` The `stateMask` member or *`nStateMask`* parameter specifies which item states to change and the `state` member or *`nState`* parameter contains the values for those states.
 
 ### Example
@@ -3449,7 +3423,7 @@ void SetItemCount(int nItems);
 
 ### Parameters
 
-*`nItems`*<br/>
+*`nItems`*\
 Number of items that the control will ultimately contain.
 
 ### Remarks
@@ -3461,23 +3435,23 @@ This member function implements the behavior of the Win32 macro, [`ListView_SetI
 ### Example
 
 ```cpp
-        CString str;
+CString str;
 
-        // Add 1024 items to the list view control.
-        m_myListCtrl.SetItemCount(1024);
+// Add 1024 items to the list view control.
+m_myListCtrl.SetItemCount(1024);
 
-        for (int i = 0; i < 1024; i++)
-        {
-            str.Format(TEXT("item %d"), i);
-            m_myListCtrl.InsertItem(i, str);
-        }
+for (int i = 0; i < 1024; i++)
+{
+    str.Format(TEXT("item %d"), i);
+    m_myListCtrl.InsertItem(i, str);
+}
 ```
 
 ## <a name="setitemcountex"></a> `CListCtrl::SetItemCountEx`
 
 Sets the item count for a virtual list view control.
 
-```
+```cpp
 BOOL SetItemCountEx(
     int iCount,
     DWORD dwFlags = LVSICF_NOINVALIDATEALL);
@@ -3485,15 +3459,14 @@ BOOL SetItemCountEx(
 
 ### Parameters
 
-*`iCount`*<br/>
+*`iCount`*\
 Number of items that the control will ultimately contain.
 
-*`dwFlags`*<br/>
+*`dwFlags`*\
 Specifies the behavior of the list view control after resetting the item count. This value can be a combination of the following:
 
-- `LVSICF_NOINVALIDATEALL` The list view control will not repaint unless affected items are currently in view. This is the default value.
-
-- `LVSICF_NOSCROLL` The list view control will not change the scroll position when the item count changes.
+- `LVSICF_NOINVALIDATEALL` The list view control won't repaint unless affected items are currently in view. This is the default value.
+- `LVSICF_NOSCROLL` The list view control won't change the scroll position when the item count changes.
 
 ### Return Value
 
@@ -3506,37 +3479,37 @@ This member function implements the behavior of the Win32 macro, [`ListView_SetI
 ### Example
 
 ```cpp
-        CString str;
+CString str;
 
-        // Add 1024 items to the list view control.
+// Add 1024 items to the list view control.
 
-        // Force my virtual list view control to allocate
-        // enough memory for my 1024 items.
-        m_myVirtualListCtrl.SetItemCountEx(1024, LVSICF_NOSCROLL|
-            LVSICF_NOINVALIDATEALL);
+// Force my virtual list view control to allocate
+// enough memory for my 1024 items.
+m_myVirtualListCtrl.SetItemCountEx(1024, LVSICF_NOSCROLL|
+    LVSICF_NOINVALIDATEALL);
 
-        for (int i = 0; i < 1024; i++)
-        {
-            str.Format(TEXT("item %d"), i);
-            m_myVirtualListCtrl.InsertItem(i, str);
-        }
+for (int i = 0; i < 1024; i++)
+{
+    str.Format(TEXT("item %d"), i);
+    m_myVirtualListCtrl.InsertItem(i, str);
+}
 ```
 
 ## <a name="setitemdata"></a> `CListCtrl::SetItemData`
 
-Sets the 32-bit application-specific value associated with the item specified by *`nItem`*.
+Sets the 32-bit (64-bit if you're compiling for x64) application-specific value associated with the item specified by *`nItem`*.
 
-```
+```cpp
 BOOL SetItemData(int nItem, DWORD_PTR dwData);
 ```
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the list item whose data is to be set.
 
-*`dwData`*<br/>
-A 32-bit value to be associated with the item.
+*`dwData`*\
+A 32-bit value (64-bit if you're compiling for x64) to associate with the item.
 
 ### Return Value
 
@@ -3549,18 +3522,18 @@ This value is the `lParam` member of the [`LVITEM`](/windows/win32/api/commctrl/
 ### Example
 
 ```cpp
-    // Set the data of each item to be equal to its index.
-    for (int i = 0; i < m_myListCtrl.GetItemCount(); i++)
-    {
-        m_myListCtrl.SetItemData(i, i);
-    }
+// Set the data of each item to be equal to its index.
+for (int i = 0; i < m_myListCtrl.GetItemCount(); i++)
+{
+    m_myListCtrl.SetItemData(i, i);
+}
 ```
 
 ## <a name="setitemindexstate"></a> `CListCtrl::SetItemIndexState`
 
 Sets the state of an item in the current list-view control.
 
-```
+```cpp
 BOOL SetItemIndexState(
     PLVITEMINDEX pItemIndex,
     DWORD dwState,
@@ -3594,7 +3567,7 @@ This method sends the [`LVM_SETITEMINDEXSTATE`](/windows/win32/Controls/lvm-seti
 
 Moves an item to a specified position in a list view control.
 
-```
+```cpp
 BOOL SetItemPosition(
     int nItem,
     POINT pt);
@@ -3602,10 +3575,10 @@ BOOL SetItemPosition(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the item whose position is to be set.
 
-*`pt`*<br/>
+*`pt`*\
 A [`POINT`](/windows/win32/api/windef/ns-windef-point) structure specifying the new position, in view coordinates, of the item's upper-left corner.
 
 ### Return Value
@@ -3626,7 +3599,7 @@ See the example for [`CListCtrl::GetItemPosition`](#getitemposition).
 
 Changes the state of an item in a list view control.
 
-```
+```cpp
 BOOL SetItemState(
     int nItem,
     LVITEM* pItem);
@@ -3639,16 +3612,16 @@ BOOL SetItemState(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the item whose state is to be set. Pass -1 to apply the state change to all items.
 
-*`pItem`*<br/>
+*`pItem`*\
 Address of an [`LVITEM`](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure, as described in the Windows SDK. The structure's `stateMask` member specifies which state bits to change, and the structure's `state` member contains the new values for those bits. The other members are ignored.
 
-*`nState`*<br/>
+*`nState`*\
 New values for the state bits. For a list of possible values, see [`CListCtrl::GetNextItem`](#getnextitem) and the [`LVITEM`](/windows/win32/api/commctrl/ns-commctrl-lvitemw) state member.
 
-*`nMask`*<br/>
+*`nMask`*\
 Mask specifying which state bits to change. This value corresponds to the stateMask member of  the [`LVITEM`](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure.
 
 ### Return Value
@@ -3667,7 +3640,7 @@ See the example for [`CListCtrl::GetTopIndex`](#gettopindex).
 
 Changes the text of a list view item or subitem.
 
-```
+```cpp
 BOOL SetItemText(
     int nItem,
     int nSubItem,
@@ -3676,13 +3649,13 @@ BOOL SetItemText(
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the item whose text is to be set.
 
-*`nSubItem`*<br/>
+*`nSubItem`*\
 Index of the subitem, or zero to set the item label.
 
-*`lpszText`*<br/>
+*`lpszText`*\
 Pointer to a string that contains the new item text.
 
 ### Return Value
@@ -3691,7 +3664,7 @@ Nonzero if successful; otherwise zero.
 
 ### Remarks
 
-This method is not intended for use with controls containing the `LVS_OWNERDATA` window style (in fact, this will cause an assertion in Debug builds). For more information about this list control style, see [List-View Controls Overview](/windows/win32/Controls/list-view-controls-overview).
+This method isn't intended for use with controls containing the `LVS_OWNERDATA` window style (in fact, this will cause an assertion in Debug builds). For more information about this list control style, see [List-View Controls Overview](/windows/win32/Controls/list-view-controls-overview).
 
 ### Example
 
@@ -3701,13 +3674,13 @@ See the example for [`CListCtrl::InsertItem`](#insertitem).
 
 Sets the color of the border of a list-view control if the [`LVS_EX_BORDERSELECT`](/windows/win32/Controls/list-view-window-styles) extended window style is set.
 
-```
+```cpp
 COLORREF SetOutlineColor(COLORREF color);
 ```
 
 ### Parameters
 
-*`color`*<br/>
+*`color`*\
 The new [`COLORREF`](/windows/win32/gdi/colorref) structure containing the outline color.
 
 ### Return Value
@@ -3722,18 +3695,18 @@ This member function emulates the functionality of the [`LVM_SETOUTLINECOLOR`](/
 
 Sets the selected column of the list view control.
 
-```
+```cpp
 LRESULT SetSelectedColumn(int iCol);
 ```
 
 ### Parameters
 
-*`iCol`*<br/>
+*`iCol`*\
 The index of the column to be selected.
 
 ### Return Value
 
-The return value is not used.
+The return value isn't used.
 
 ### Remarks
 
@@ -3743,13 +3716,13 @@ This member function emulates the functionality of the [`LVM_SETSELECTEDCOLUMN`]
 
 Sets the selection mark of a list view control.
 
-```
+```cpp
 int SetSelectionMark(int iIndex);
 ```
 
 ### Parameters
 
-*`iIndex`*<br/>
+*`iIndex`*\
 The zero-based index of the first item in a multiple selection.
 
 ### Return Value
@@ -3768,13 +3741,13 @@ See the example for [`CListCtrl::GetSelectionMark`](#getselectionmark).
 
 Sets the background color of text in a list view control.
 
-```
+```cpp
 BOOL SetTextBkColor(COLORREF cr);
 ```
 
 ### Parameters
 
-*`cr`*<br/>
+*`cr`*\
 A `COLORREF` specifying the new text background color. For information, see [`COLORREF`](/windows/win32/gdi/colorref) in the Windows SDK.
 
 ### Return Value
@@ -3784,23 +3757,23 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-        // Use the 3D button face color for the background.
-        COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
-        m_myListCtrl.SetTextBkColor(crBkColor);
-        ASSERT(m_myListCtrl.GetTextBkColor() == crBkColor);
+// Use the 3D button face color for the background.
+COLORREF crBkColor = ::GetSysColor(COLOR_3DFACE);
+m_myListCtrl.SetTextBkColor(crBkColor);
+ASSERT(m_myListCtrl.GetTextBkColor() == crBkColor);
 ```
 
 ## <a name="settextcolor"></a> `CListCtrl::SetTextColor`
 
 Sets the text color of a list view control.
 
-```
+```cpp
 BOOL SetTextColor(COLORREF cr);
 ```
 
 ### Parameters
 
-*`cr`*<br/>
+*`cr`*\
 A `COLORREF` specifying the new text color. For information, see [`COLORREF`](/windows/win32/gdi/colorref) in the Windows SDK.
 
 ### Return Value
@@ -3810,24 +3783,24 @@ Nonzero if successful; otherwise zero.
 ### Example
 
 ```cpp
-    // Use the window text color for
-    // the item text of the list view control.
-    COLORREF crTextColor = ::GetSysColor(COLOR_WINDOWTEXT);
-    m_myListCtrl.SetTextColor(crTextColor);
-    ASSERT(m_myListCtrl.GetTextColor() == crTextColor);
+// Use the window text color for
+// the item text of the list view control.
+COLORREF crTextColor = ::GetSysColor(COLOR_WINDOWTEXT);
+m_myListCtrl.SetTextColor(crTextColor);
+ASSERT(m_myListCtrl.GetTextColor() == crTextColor);
 ```
 
 ## <a name="settileinfo"></a> `CListCtrl::SetTileInfo`
 
 Sets the information for a tile of the list view control.
 
-```
+```cpp
 BOOL SetTileInfo(PLVTILEINFO pTileInfo);
 ```
 
 ### Parameters
 
-*`pTileInfo`*<br/>
+*`pTileInfo`*\
 A pointer to an [`LVTILEINFO`](/windows/win32/api/commctrl/ns-commctrl-lvtileinfo) structure containing the information to be set.
 
 ### Return Value
@@ -3842,13 +3815,13 @@ This member function emulates the functionality of the [`LVM_SETTILEINFO`](/wind
 
 Sets information that a list view control uses in tile view.
 
-```
+```cpp
 BOOL SetTileViewInfo(PLVTILEVIEWINFO ptvi);
 ```
 
 ### Parameters
 
-*`ptvi`*<br/>
+*`ptvi`*\
 A pointer to an [`LVTILEVIEWINFO`](/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo) structure containing the information to set.
 
 ### Return Value
@@ -3863,13 +3836,13 @@ This member function emulates the functionality of the [`LVM_SETTILEVIEWINFO`](/
 
 Sets the tooltip control that the list view control will use to display tooltips.
 
-```
+```cpp
 CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
 ```
 
 ### Parameters
 
-*`pWndTip`*<br/>
+*`pWndTip`*\
 A pointer to a `CToolTipCtrl` object that the list control will use.
 
 ### Return Value
@@ -3886,13 +3859,13 @@ To not use tooltips, indicate the `LVS_NOTOOLTIPS` style when you create the `CL
 
 Sets the view of the list view control.
 
-```
+```cpp
 DWORD SetView(int iView);
 ```
 
 ### Parameters
 
-*`iView`*<br/>
+*`iView`*\
 The view to be selected.
 
 ### Return Value
@@ -3915,10 +3888,10 @@ void SetWorkAreas(
 
 ### Parameters
 
-*`nWorkAreas`*<br/>
+*`nWorkAreas`*\
 The number of `RECT` structures (or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) objects) in the array pointed to by *`lpRect`*.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 The address of an array of `RECT` structures (or `CRect` objects) that specify the new work areas of the list view control. These areas must be specified in client coordinates. If this parameter is `NULL`, the working area will be set to the client area of the control.
 
 ### Remarks
@@ -3928,15 +3901,15 @@ This member function implements the behavior of the Win32 macro, [`ListView_SetW
 ### Example
 
 ```cpp
-    // Remove all working areas.
-    m_myListCtrl.SetWorkAreas(0, NULL);
+// Remove all working areas.
+m_myListCtrl.SetWorkAreas(0, NULL);
 ```
 
 ## <a name="sortgroups"></a> `CListCtrl::SortGroups`
 
 Uses an application-defined comparison function to sort groups by ID within a list view control.
 
-```
+```cpp
 BOOL SortGroups(
     PFNLVGROUPCOMPARE _pfnGroupCompare,
     LPVOID _plv);
@@ -3944,10 +3917,10 @@ BOOL SortGroups(
 
 ### Parameters
 
-*`_pfnGroupCompare`*<br/>
+*`_pfnGroupCompare`*\
 A pointer to the group comparison function.
 
-*`_plv`*<br/>
+*`_plv`*\
 A void pointer.
 
 ### Return Value
@@ -3962,7 +3935,7 @@ This member function emulates the functionality of the [`LVM_SORTGROUPS`](/windo
 
 Sorts list view items by using an application-defined comparison function.
 
-```
+```cpp
 BOOL SortItems(
     PFNLVCOMPARE pfnCompare,
     DWORD_PTR dwData);
@@ -3970,12 +3943,12 @@ BOOL SortItems(
 
 ### Parameters
 
-*`pfnCompare`*<br/>
+*`pfnCompare`*\
 [in] Address of the application-defined comparison function.
 
-The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.
+The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that isn't a member of any class.
 
-*`dwData`*<br/>
+*`dwData`*\
 [in] Application-defined value that is passed to the comparison function.
 
 ### Return Value
@@ -3988,7 +3961,7 @@ This method changes the index of each item to reflect the new sequence.
 
 The comparison function, *`pfnCompare`*, has the following form:
 
-```
+```cpp
 int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
@@ -3996,7 +3969,7 @@ int CALLBACK CompareFunc(LPARAM lParam1,
 
 The comparison function must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equal.
 
-The *`lParam1`* parameter is the 32-bit value associated with the first item that is compared, and the *`lParam2`* parameter is the value associated with the second item. These are the values that were specified in the *`lParam`* member of the items' [`LVITEM`](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure when they were inserted into the list. The *`lParamSort`* parameter is the same as the *`dwData`* value.
+The *`lParam1`* parameter is the 32-bit value (64-bit if you're compiling for x64) associated with the first item that is compared, and the *`lParam2`* parameter is the value associated with the second item. These are the values that were specified in the *`lParam`* member of the items' [`LVITEM`](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure when they were inserted into the list. The *`lParamSort`* parameter is the same as the *`dwData`* value.
 
 This method sends the [`LVM_SORTITEMS`](/windows/win32/Controls/lvm-sortitems) message, which is described in the Windows SDK.
 
@@ -4026,7 +3999,7 @@ void CListCtrlDlg::Sort()
 
 Sorts the items of the current list-view control by using an application-defined comparison function.
 
-```
+```cpp
 BOOL SortItemsEx(
     PFNLVCOMPARE pfnCompare,
     DWORD_PTR dwData);
@@ -4035,7 +4008,7 @@ BOOL SortItemsEx(
 ### Parameters
 
 *`pfnCompare`*\
-[in] Address of the application-defined comparison function. The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.
+[in] Address of the application-defined comparison function. The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that isn't a member of any class.
 
 *`dwData`*\
 [in] Application-defined value passed to the comparison function.
@@ -4050,7 +4023,7 @@ This method changes the index of each item to reflect the new sequence.
 
 The comparison function, *`pfnCompare`*, has the following form:
 
-```
+```cpp
 int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParam2,
     LPARAM lParamSort);
@@ -4111,13 +4084,13 @@ void CCListCtrl_s2Dlg::OnBnClickedButton1()
 
 Determines which list view item, if any, is at a given position.
 
-```
+```cpp
 int SubItemHitTest(LPLVHITTESTINFO pInfo);
 ```
 
 ### Parameters
 
-*`pInfo`*<br/>
+*`pInfo`*\
 A pointer to the [`LVHITTESTINFO`](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) structure.
 
 ### Return Value
@@ -4152,13 +4125,13 @@ void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 
 Forces the list view control to repaint the item specified by *`nItem`*.
 
-```
+```cpp
 BOOL Update(int nItem);
 ```
 
 ### Parameters
 
-*`nItem`*<br/>
+*`nItem`*\
 Index of the item to be updated.
 
 ### Return Value
@@ -4175,7 +4148,7 @@ See the example for [`CListCtrl::GetSelectedCount`](#getselectedcount).
 
 ## See also
 
-[MFC Sample ROWLIST](../../overview/visual-cpp-samples.md)<br/>
-[`CWnd` Class](cwnd-class.md)<br/>
-[Hierarchy Chart](../hierarchy-chart.md)<br/>
+[MFC Sample ROWLIST](../../overview/visual-cpp-samples.md)\
+[`CWnd` Class](cwnd-class.md)\
+[Hierarchy Chart](../hierarchy-chart.md)\
 [`CImageList` Class](cimagelist-class.md)
