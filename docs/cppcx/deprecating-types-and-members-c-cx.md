@@ -10,7 +10,7 @@ In C++/CX, deprecation of Windows Runtime types and members for producers and co
 
 > [!CAUTION]
 > The [Deprecated](/uwp/api/windows.foundation.metadata.deprecatedattribute) attribute is for use only with Windows Runtime types. For standard C++ classes and members, use 
-[[[deprecated]]](../cpp/deprecated-cpp) (C++14 and later) or [__declspec(deprecated)](../cpp/deprecated-cpp.md).
+[[[deprecated]]](../cpp/deprecated-cpp.md) (C++14 and later) or [__declspec(deprecated)](../cpp/deprecated-cpp.md).
 
 ### Example
 
