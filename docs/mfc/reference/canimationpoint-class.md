@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: CAnimationPoint Class"
-title: "CAnimationPoint Class"
+description: "Learn more about: CAnimationPoint class"
+title: "CAnimationPoint class"
 ms.date: 01/05/2022
 f1_keywords: ["CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetX", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetY", "AFXANIMATIONCONTROLLER/CAnimationPoint::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue"]
 helpviewer_keywords: ["CAnimationPoint [MFC], CAnimationPoint", "CAnimationPoint [MFC], AddTransition", "CAnimationPoint [MFC], GetDefaultValue", "CAnimationPoint [MFC], GetValue", "CAnimationPoint [MFC], GetX", "CAnimationPoint [MFC], GetY", "CAnimationPoint [MFC], SetDefaultValue", "CAnimationPoint [MFC], GetAnimationVariableList", "CAnimationPoint [MFC], m_xValue", "CAnimationPoint [MFC], m_yValue"]
 ---
-# `CAnimationPoint` Class
+# `CAnimationPoint` class
 
 Implements the functionality of a point whose coordinates can be animated.
 
@@ -30,15 +30,15 @@ class CAnimationPoint : public CAnimationBaseObject;
 |[`CAnimationPoint::AddTransition`](#addtransition)|Adds transitions for X and Y coordinates.|
 |[`CAnimationPoint::GetDefaultValue`](#getdefaultvalue)|Returns the default values for X and Y coordinates.|
 |[`CAnimationPoint::GetValue`](#getvalue)|Returns current value.|
-|[`CAnimationPoint::GetX`](#getx)|Provides access to `CAnimationVariable` for X coordinate.|
-|[`CAnimationPoint::GetY`](#gety)|Provides access to `CAnimationVariable` for Y coordinate.|
-|[`CAnimationPoint::SetDefaultValue`](#setdefaultvalue)|Sets default value.|
+|[`CAnimationPoint::GetX`](#getx)|Provides access to the `CAnimationVariable` X coordinate.|
+|[`CAnimationPoint::GetY`](#gety)|Provides access to the `CAnimationVariable` Y coordinate.|
+|[`CAnimationPoint::SetDefaultValue`](#setdefaultvalue)|Sets the default value.|
 
 ### Protected Methods
 
 |Name|Description|
 |----------|-----------------|
-|[`CAnimationPoint::GetAnimationVariableList`](#getanimationvariablelist)|Puts the encapsulated animation variables into a list. (Overrides [`CAnimationBaseObject::GetAnimationVariableList`](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist).)|
+|[`CAnimationPoint::GetAnimationVariableList`](#getanimationvariablelist)|Puts the encapsulated animation variables into a list. Overrides [`CAnimationBaseObject::GetAnimationVariableList`](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist)|
 
 ### Public Operators
 
@@ -51,8 +51,8 @@ class CAnimationPoint : public CAnimationBaseObject;
 
 |Name|Description|
 |----------|-----------------|
-|[`CAnimationPoint::m_xValue`](#m_xvalue)|The encapsulated animation variable that represents X coordinate of animation point.|
-|[`CAnimationPoint::m_yValue`](#m_yvalue)|The encapsulated animation variable that represents Y coordinate of animation point.|
+|[`CAnimationPoint::m_xValue`](#m_xvalue)|The encapsulated animation variable that represents the X coordinate of the animation point.|
+|[`CAnimationPoint::m_yValue`](#m_yvalue)|The encapsulated animation variable that represents the Y coordinate of the animation point.|
 
 ## Remarks
 
@@ -88,7 +88,7 @@ A pointer to transition for Y coordinate.
 
 ### Remarks
 
-Call this function to add the specified transitions to the internal list of transitions to be applied to animation variables for X and Y coordinates. When you add transitions, they aren't applied immediately and stored in an internal list. Transitions are applied (added to a storyboard for a particular value) when you call `CAnimationController::AnimateGroup`. If you don't need to apply a transition to one of coordinates, you can pass NULL.
+Call this function to add the specified transitions to the internal list of transitions to be applied to animation variables for X and Y coordinates. When you add transitions, they aren't applied immediately and stored in an internal list. Transitions are applied (added to a storyboard for a particular value) when you call `CAnimationController::AnimateGroup`. If you don't need to apply a transition to one of coordinates, you can pass `NULL`.
 
 ## <a name="canimationpoint"></a> `CAnimationPoint::CAnimationPoint`
 
@@ -170,11 +170,11 @@ Output. Contains the current value when this method returns.
 
 ### Remarks
 
-Call this function to retrieve the current value of animation point. If this method fails or underlying COM objects for X and Y coordinates haven't been initialized, `ptValue` contains default value, which was previously set in constructor or by `SetDefaultValue`.
+Call this function to retrieve the current value of the animation point. If this method fails or underlying COM objects for X and Y coordinates haven't been initialized, `ptValue` contains the default value previously set in the constructor or by `SetDefaultValue`.
 
 ## <a name="getx"></a> `CAnimationPoint::GetX`
 
-Provides access to `CAnimationVariable` for X coordinate.
+Provides access to `CAnimationVariable` for the X coordinate.
 
 ```cpp
 CAnimationVariable& GetX();
@@ -190,7 +190,7 @@ You can call this method to get direct access to underlying `CAnimationVariable`
 
 ## <a name="gety"></a> `CAnimationPoint::GetY`
 
-Provides access to `CAnimationVariable` for Y coordinate.
+Provides access to `CAnimationVariable` for the Y coordinate.
 
 ```cpp
 CAnimationVariable& GetY();
@@ -198,15 +198,15 @@ CAnimationVariable& GetY();
 
 ### Return Value
 
-A reference to encapsulated `CAnimationVariable` representing Y coordinate.
+A reference to the encapsulated `CAnimationVariable` representing the Y coordinate.
 
 ### Remarks
 
-You can call this method to get direct access to underlying `CAnimationVariable` representing Y coordinate.
+You can call this method to get direct access to the underlying `CAnimationVariable` representing the Y coordinate.
 
 ## <a name="m_xvalue"></a> CAnimationPoint::m_xValue
 
-The encapsulated animation variable that represents X coordinate of animation point.
+The encapsulated animation variable that represents the X coordinate of the animation point.
 
 ```cpp
 CAnimationVariable m_xValue;
@@ -214,7 +214,7 @@ CAnimationVariable m_xValue;
 
 ## <a name="m_yvalue"></a> `CAnimationPoint::m_yValue`
 
-The encapsulated animation variable that represents Y coordinate of animation point.
+The encapsulated animation variable that represents the Y coordinate of the animation point.
 
 ```cpp
 CAnimationVariable m_yValue;
@@ -234,7 +234,7 @@ Current value of `CAnimationPoint` as `CPoint`.
 
 ### Remarks
 
-This function internally calls `GetValue`. If `GetValue` for some reason fails, the returned point will contain default values for X and Y coordinates.
+This function internally calls `GetValue`. If `GetValue` fails, the returned point will contain default values for the X and Y coordinates.
 
 ## <a name="operator_eq"></a> `CAnimationPoint::operator=`
 
@@ -251,11 +251,11 @@ Refers to `CPoint` or `POINT`.
 
 ### Remarks
 
-Assigns `ptSrc` to `CAnimationPoint`. It's recommended to do that before animation start, because this operator calls `SetDefaultValue`, which recreates the underlying COM objects for X and Y coordinates if they've been created. If you subscribed this animation object to events (`ValueChanged` or `IntegerValueChanged`), re-enable these events.
+Assigns `ptSrc` to `CAnimationPoint`. It's recommended to do that before animation start, because this operator calls `SetDefaultValue`, which recreates the underlying COM objects for the X and Y coordinates if they've been created. If you subscribed this animation object to events (`ValueChanged` or `IntegerValueChanged`), re-enable these events.
 
 ## <a name="setdefaultvalue"></a> `CAnimationPoint::SetDefaultValue`
 
-Sets default value.
+Sets the default value.
 
 ```cpp
 void SetDefaultValue(const POINT& ptDefault);
