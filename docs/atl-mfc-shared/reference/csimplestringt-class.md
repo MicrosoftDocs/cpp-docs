@@ -160,12 +160,20 @@ static void CopyChars(
     XCHAR* pchDest,
     const XCHAR* pchSrc,
     int nChars) throw();
+static void CopyChars(
+    XCHAR* pchDest,
+    size_t nDestLen,
+    const XCHAR* pchSrc,
+    int nChars) throw();
 ```
 
 #### Parameters
 
 *`pchDest`*<br/>
 A pointer to a character string.
+
+*`nDestLen`*<br/>
+Buffer size of *`pchDest`*
 
 *`pchSrc`*<br/>
 A pointer to a string containing the characters to be copied.

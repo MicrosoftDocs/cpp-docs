@@ -131,7 +131,7 @@ return _hr; \
 
 `_Pragma` is similar to the Microsoft-specific [`__pragma`](#the-pragma-keyword) keyword. It was introduced into the C standard in C99, and the C++ standard in C++11. It's available in C only when you specify the [`/std:c11` or `/std:c17`](../build/reference/std-specify-language-standard-version.md) option. For C++, it's available in all **`/std`** modes, including the default.
 
-Unlike **`__pragma`**, **`_Pragma`** allows you to put pragma directives into a macro definition. The string literal should be what you would otherwise put following a **`#pragma`** statement. For example:
+Unlike **`#pragma`**, **`_Pragma`** allows you to put pragma directives into a macro definition. The string literal should be what you would otherwise put following a **`#pragma`** statement. For example:
 
 ```c
 #pragma message("the #pragma way")

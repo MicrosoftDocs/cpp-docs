@@ -65,7 +65,7 @@ The **`new`** operator can't be used to allocate a function, but it can be used 
 
 ```cpp
 int (**p) () = new (int (*[7]) ());
-delete *p;
+delete p;
 ```
 
 If you use the operator **`new`** without any extra arguments, and compile with the [`/GX`](../build/reference/gx-enable-exception-handling.md), [`/EHa`](../build/reference/eh-exception-handling-model.md), or [`/EHs`](../build/reference/eh-exception-handling-model.md) option, the compiler generates code to call operator **`delete`** if the constructor throws an exception.
