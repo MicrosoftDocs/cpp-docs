@@ -6,9 +6,9 @@ ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
 ---
 # UWP Apps, the Windows Runtime, and the C Run-Time
 
-Universal Windows Platform (UWP) apps are programs that run in the Windows Runtime that executes on Windows 8. The Windows Runtime is a trustworthy environment that controls the functions, variables, and resources that are available to a UWP app. However, by design, Windows Runtime restrictions prevent the use of most C Run-Time Library (CRT) features in UWP apps.
+Universal Windows Platform (UWP) apps are programs that run in the Windows Runtime that executes on Windows 8 and later. The Windows Runtime is a trustworthy environment that controls the functions, variables, and resources that are available to a UWP app. However, by design, Windows Runtime restrictions prevent the use of most C Run-Time Library (CRT) features in UWP apps.
 
-The Windows Runtime does not support the following CRT features:
+UWP apps does not support the following CRT features:
 
 - Most CRT functions that are related to unsupported functionality.
 
