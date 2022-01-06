@@ -1,11 +1,11 @@
 ---
 description: "Learn more about: time_point Class"
 title: "time_point Class"
-ms.date: "09/15/2021"
+ms.date: 01/05/2022
 f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
 helpviewer_keywords: ["std::chrono [C++], time_point"]
 ---
-# time_point class
+# `time_point` class
 
 A `time_point` represents a point in time that is relative to the epoch of a clock.
 
@@ -41,8 +41,8 @@ The clock that supplies the reference point for the epoch is specified by the te
 
 |Name|Description|
 |----------|-----------------|
-|[`max`](#max)|Specifies the upper limit for `ref`.|
-|[`min`](#min)|Specifies the lower limit for `ref`.|
+|[`max`](#max)|Specifies the upper limit for `rep`.|
+|[`min`](#min)|Specifies the lower limit for `rep`.|
 |[`time_since_epoch`](#time_since_epoch)|Returns the amount of time between this `time_point` and the clock's epoch (or time and date that the clock starts measuring time).|
 
 ### Public operators
@@ -60,7 +60,7 @@ The clock that supplies the reference point for the epoch is specified by the te
 
 ## <a name="max"></a> `max`
 
-Static method that returns the upper bound for values of type `ref`.
+Static method that returns the upper bound for values of type `rep`.
 
 ```cpp
 static constexpr time_point max();
@@ -72,7 +72,7 @@ In effect, returns `time_point(duration::max())`.
 
 ## <a name="min"></a> `min`
 
-Static method that returns the lower bound for values of type `ref`.
+Static method that returns the lower bound for values of type `rep`.
 
 ```cpp
 static constexpr time_point min();
@@ -84,7 +84,7 @@ In effect, returns `time_point(duration::min())`.
 
 ## <a name="op_add_eq"></a> `operator+=`
 
-Adds a specified value to the stored [duration](../standard-library/duration-class.md) value.
+Adds a specified value to the stored [`duration`](../standard-library/duration-class.md) value.
 
 ```cpp
 time_point& operator+=(const duration& Dur);
@@ -101,7 +101,7 @@ The `time_point` object after the addition is done.
 
 ## <a name="operator-_eq"></a> `operator-=`
 
-Subtracts a specified value from the stored [duration](../standard-library/duration-class.md) value.
+Subtracts a specified value from the stored [`duration`](../standard-library/duration-class.md) value.
 
 ```cpp
 time_point& operator-=(const duration& Dur);
@@ -116,7 +116,7 @@ A `duration` object.
 
 The `time_point` object after the subtraction is done.
 
-## <a name="time_point"></a> `time_point Constructor`
+## <a name="time_point"></a> `time_point` constructor
 
 Constructs a `time_point` object.
 

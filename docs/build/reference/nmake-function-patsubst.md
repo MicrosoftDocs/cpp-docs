@@ -49,7 +49,7 @@ $(patsubst %lo,Bye,Hello Hey Hi) # Evaluates to "Bye Hey Hi"
 # A wildcard can be used in the pattern without a wildcard in the replacement
 
 $(patsubst he%,_%_,Hello Hey Hi) # Evaluates to "Hello Hey Hi" - patsubst is case-sensitive, so no substitutions performed
-$(patsubst he%,_%_,Hello Hey Hi) # Evaluates to "_llo_ _y_ Hi" - patsubsti is case-insensitive
+$(patsubsti he%,_%_,Hello Hey Hi) # Evaluates to "_llo_ _y_ Hi" - patsubsti is case-insensitive
 
 # patsubsti is commonly used to change the file extensions of a list of files
 OBJ_FILES=$(patsubst %.c,%.obj,$(C_SOURCES)) $(patsubst %.cpp,%.obj,$(patsubst %.cxx,%.obj,$(CPP_SOURCES)))

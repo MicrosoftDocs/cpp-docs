@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: duration Class"
+description: "Learn more about: duration class"
 title: "duration Class"
-ms.date: 10/12/2021
+ms.date: 01/05/2022
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
 helpviewer_keywords: ["std::chrono [C++], duration"]
 ---
@@ -37,8 +37,8 @@ The template argument `Rep` describes the type that is used to hold the number o
 |Name|Description|
 |----------|-----------------|
 |[`count`](#count)|Returns the number of clock ticks in the time interval.|
-|[`max`](#max)|Static. Returns the maximum allowable value of template parameter `Ref`.|
-|[`min`](#min)|Static. Returns the lowest allowable value of template parameter `Ref`.|
+|[`max`](#max)|Static. Returns the maximum allowable value of template parameter `Rep`.|
+|[`min`](#min)|Static. Returns the lowest allowable value of template parameter `Rep`.|
 |[`zero`](#zero)|Static. In effect, returns `Rep(0)`.|
 
 ### Operators
@@ -79,7 +79,7 @@ The template argument `Rep` describes the type that is used to hold the number o
 | [`operator/`](chrono-operators.md#op_div) | After converting the durations being divided to their common type, returns a `duration` with a tick count equal to the division of the converted tick counts. |
 | [`operator%`](chrono-operators.md#op_modulo) |After converting the `duration` and the divisor to their common type, returns a `duration` with a tick count equal to the remainder of the division. |
 | [`operator==`](chrono-operators.md#op_eq_eq) | After converting the `duration` types being compared to their common type, determines if the number of ticks are equal. |
-| [`operator!=`](chrono-operators.md#op_neq)  |Determine if `duration` is not equal to another.|
+| [`operator!=`](chrono-operators.md#op_neq)  |Determine if `duration` isn't equal to another.|
 | [`operator<`](chrono-operators.md#op_lt) | Determine if one `duration` is less than another. |
 | [`operator<=`](chrono-operators.md#op_lt_eq) | Determine if one `duration` is less than or equal to another.|
 | [`operator>`](chrono-operators.md#op_gt) |  Determine if one `duration` is greater than another. |
@@ -112,7 +112,7 @@ constexpr Rep count() const;
 
 The number of clock ticks in the time interval.
 
-## <a name="duration"></a> `duration::duration` Constructor
+## <a name="duration"></a> `duration::duration` constructor
 
 Constructs a `duration` object.
 
@@ -188,7 +188,7 @@ int main()
 
 ## <a name="max"></a> `duration::max`
 
-Static method that returns the upper bound for values of template parameter type `Ref`.
+Static method that returns the upper bound for values of template parameter type `Rep`.
 
 ```cpp
 static constexpr duration max();
@@ -200,7 +200,7 @@ In effect, returns `duration(duration_values<rep>::max())`.
 
 ## <a name="min"></a> `duration::min`
 
-Static method that returns the lower bound for values of template parameter type `Ref`.
+Static method that returns the lower bound for values of template parameter type `Rep`.
 
 ```cpp
 static constexpr duration min();
