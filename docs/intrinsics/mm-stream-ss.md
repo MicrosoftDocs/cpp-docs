@@ -86,7 +86,7 @@ Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Rep
 ## See also
 
 [_mm_stream_sd](../intrinsics/mm-stream-sd.md)\
-[_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)\
-[_mm_store_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_ss)\
-[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
+[_mm_stream_ps](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_stream_ps)\
+[_mm_store_ss](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_store_ss)\
+[_mm_sfence](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_sfence)\
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
