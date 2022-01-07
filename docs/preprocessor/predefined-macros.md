@@ -38,7 +38,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 - `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
 
-- `__STDC__` Defined as 1 only when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Otherwise, undefined.
+- `__STDC__` Defined as 1 only when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) or [`/std:c11`/`/std:c17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. Otherwise, undefined.
 
 - `__STDC_HOSTED__` Defined as 1 if the implementation is a *hosted implementation*, one that supports the entire required standard library. Otherwise, defined as 0.
 
