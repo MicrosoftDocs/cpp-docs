@@ -43,11 +43,11 @@ items:
   expanded: false
   items:
     - name: Open code from a repo
-      href: /visualstudio/get-started/tutorial-open-project-from-repo.md
+      href: /visualstudio/get-started/tutorial-open-project-from-repo
     - name: Write and edit code 
-      href: /visualstudio/get-started/tutorial-editor.md
+      href: /visualstudio/get-started/tutorial-editor
     - name: Compile and build 
-      href: /visualstudio/ide/compiling-and-building-in-visual-studio.md
+      href: /visualstudio/ide/compiling-and-building-in-visual-studio
     - name: Debug your C++ code
       href: /visualstudio/debugger/quickstart-debug-with-cplusplus
     - name: Test your C++ code

@@ -381,7 +381,7 @@ Improved analysis with [`/Qspectre`](../build/reference/qspectre.md) for providi
 
 - Added a new inlining command-line switch **`/Ob3`**, which is a more aggressive version of **`/Ob2`**. **`/O2`** (optimize the binary for speed) still implies **`/Ob2`** by default. If you find that the compiler doesn't inline aggressively enough, consider passing **`/O2 -Ob3`**.
 
-- We've added support for Short Vector Math Library (SVML) intrinsic functions. These functions compute the 128-bit, 256-bit, or 512-bit vector equivalents. We added them to support hand vectorization of loops with calls to math library functions, and certain other operations like integer division. See the [Intel Intrinsic Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#!=undefined&techs=SVML) for definitions of the supported functions.
+- We've added support for Short Vector Math Library (SVML) intrinsic functions. These functions compute the 128-bit, 256-bit, or 512-bit vector equivalents. We added them to support hand vectorization of loops with calls to math library functions, and certain other operations like integer division. See the [Intel Intrinsic Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#!=undefined&techs=SVML) for definitions of the supported functions.
 
 - New and improved optimizations:
 
