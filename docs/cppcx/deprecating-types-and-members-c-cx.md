@@ -9,8 +9,8 @@ ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
 In C++/CX, deprecation of Windows Runtime types and members for producers and consumers by using the [Deprecated](/uwp/api/windows.foundation.metadata.deprecatedattribute) attribute is supported. If you consume an API to which this attribute has been applied, you get a compile-time warning message that indicates that the API is deprecated and also recommends an alternative API to use. In your own public types and methods, you can apply this attribute and supply your own custom message.
 
 > [!CAUTION]
-> The [Deprecated](/uwp/api/windows.foundation.metadata.deprecatedattribute) attribute is for use only with Windows Runtime types. For standard C++ classes and members, use 
-[[[deprecated]]](../cpp/deprecated-cpp.md) (C++14 and later) or [__declspec(deprecated)](../cpp/deprecated-cpp.md).
+> The [`Deprecated`](/uwp/api/windows.foundation.metadata.deprecatedattribute) attribute is for use only with Windows Runtime types. For standard C++ classes and members, use 
+[`[[deprecated]]`](../cpp/deprecated-cpp.md) (C++14 and later) or [`__declspec(deprecated)`](../cpp/deprecated-cpp.md).
 
 ### Example
 
