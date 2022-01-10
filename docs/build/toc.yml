@@ -662,6 +662,8 @@ items:
                       href: ../build/reference/oy-frame-pointer-omission.md
                 - name: /openmp (Enable OpenMP 2.0 support)
                   href: ../build/reference/openmp-enable-openmp-2-0-support.md
+                - name: /options:strict (Unrecognized compiler options are errors)
+                  href: ../build/reference/options-strict.md
                 - name: /P (Preprocess to a file)
                   href: ../build/reference/p-preprocess-to-a-file.md
                 - name: /permissive- (Standards conformance)
