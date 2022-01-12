@@ -11,7 +11,7 @@ items:
     - name: Type system
       expanded: false
       items: 
-        - name: Type system
+        - name: Type system overview
           href: ../cppcx/type-system-c-cx.md
         - name: Namespaces and type visibility (C++/CX )
           href: ../cppcx/namespaces-and-type-visibility-c-cx.md
