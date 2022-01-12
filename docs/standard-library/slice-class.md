@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: slice class"
 title: "slice class"
-ms.date: "11/04/2016"
+ms.date: 01/12/2022
 f1_keywords: ["valarray/std::slice", "valarray/std::slice::size", "valarray/std::slice::start", "valarray/std::slice::stride"]
 helpviewer_keywords: ["std::slice [C++]", "std::slice [C++], size", "std::slice [C++], start", "std::slice [C++], stride"]
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
@@ -18,7 +18,7 @@ The class stores the parameters that characterize an object of type [`slice_arra
 
 - A total length, or number of elements in the `slice`.
 
-- A stride, or distance between subsequent indices of elements in the `valarray`.
+- A stride, or distance between the indices of elements in the `valarray`.
 
 If the set defined by a `slice` is the subset of a constant `valarray`, then the `slice` is a new `valarray`. If the set defined by a `slice` is the subset of a nonconstant `valarray`, then the `slice` has reference semantics to the original `valarray`. The evaluation mechanism for nonconstant `valarray` objects saves time and memory.
 
@@ -28,7 +28,7 @@ Operations on `valarray` objects are guaranteed only if the source and destinati
 
 | Constructor | Description |
 |--|--|
-| [`slice`](#slice) | Defines a subset of a `valarray` that consists of a number of elements that are an equal distance apart and that start at a specified element. |
+| [`slice`](#slice) | Defines a subset of a `valarray` that consists of a collection of elements that are an equal distance apart and that start at a specified element. |
 
 ### Member functions
 
@@ -110,7 +110,7 @@ The size of slice vaSlice is: 6.
 
 ## <a name="slice"></a> `slice::slice`
 
-Defines a subset of a `valarray` that consists of a number of elements that are an equal distance apart and that start at a specified element.
+Defines a subset of a `valarray` that consists of a collection of elements that are an equal distance apart and that start at a specified element.
 
 ```cpp
 slice();

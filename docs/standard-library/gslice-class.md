@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: gslice Class"
 title: "gslice class"
-ms.date: "11/04/2016"
+ms.date: 01/12/2022
 f1_keywords: ["valarray/std::gslice", "valarray/std::gslice::size", "valarray/std::gslice::start", "valarray/std::gslice::stride"]
 helpviewer_keywords: ["std::gslice [C++]", "std::gslice [C++], size", "std::gslice [C++], start", "std::gslice [C++], stride"]
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3
@@ -76,7 +76,7 @@ The default constructor stores zero for the starting index, and zero-length vect
 
 ### Remarks
 
-`gslice` defines a subset of a `valarray` that consists of multiple slices of the `valarray` that each start at the same specified element. The ability to use arrays to define multiple slices is the only difference between `gslice` and [`slice::slice`](../standard-library/slice-class.md#slice). The first slice has a first element with an index of *`_StartIndex`*, a number of elements specified by the first element of *`_LenArray`*, and a stride given by the first element of *`_IncArray`*. The next set of orthogonal slices has first elements given by the first slice. The second element of *`_LenArray`* specifies the number of elements. The stride is given by the second element of *`_IncArray`*. A third dimension of slices would take the elements of the two-dimensional array as the starting elements and proceed analogously.
+`gslice` defines a subset of a `valarray` that consists of multiple slices of the `valarray` that each start at the same specified element. The ability to use arrays to define multiple slices is the only difference between `gslice` and [`slice::slice`](../standard-library/slice-class.md#slice). The first slice has a first element with an index of *`_StartIndex`*, a count of elements specified by the first element of *`_LenArray`*, and a stride given by the first element of *`_IncArray`*. The next set of orthogonal slices has first elements given by the first slice. The second element of *`_LenArray`* specifies the number of elements. The stride is given by the second element of *`_IncArray`*. A third dimension of slices would take the elements of the two-dimensional array as the starting elements and continue analogously.
 
 ### Example
 

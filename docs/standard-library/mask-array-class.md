@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: mask_array class"
 title: "mask_array class"
-ms.date: "11/04/2016"
+ms.date: 01/12/2022
 f1_keywords: ["valarray/std::mask_array"]
 helpviewer_keywords: ["mask_array class"]
 ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
@@ -16,7 +16,7 @@ The class describes an object that stores a reference to an object `va` of class
 
 You construct a `mask_array<Type>` object only by writing an expression of the form [`va[ba]`](../standard-library/valarray-class.md#op_at). The member functions of class `mask_array` then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
 
-The sequence consists of at most `ba.size` elements. An element *`J`* is included only if `ba[J]` is `true`. Thus, there are as many elements in the sequence as there are `true` elements in `ba`. If `I` is the index of the lowest true element in `ba`, then `va[I]` is element zero in the selected sequence.
+The sequence consists of at most `ba.size` elements. An element *`J`* is included only if `ba[J]` is `true`. There are as many elements in the sequence as there are `true` elements in `ba`. If `I` is the index of the lowest true element in `ba`, then `va[I]` is element zero in the selected sequence.
 
 ## Example
 

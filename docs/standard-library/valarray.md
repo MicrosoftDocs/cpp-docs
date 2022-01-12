@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <valarray>"
 title: "<valarray>"
-ms.date: 01/11/2022
+ms.date: 01/12/2022
 f1_keywords: ["<valarray>"]
 helpviewer_keywords: ["valarray header"]
 ---

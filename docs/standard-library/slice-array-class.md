@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: slice_array class"
 title: "slice_array class"
-ms.date: "11/04/2016"
+ms.date: 01/12/2022
 f1_keywords: ["valarray/std::slice_array"]
 helpviewer_keywords: ["slice_array class"]
 ms.assetid: a182d5f7-f35c-4e76-86f2-b5ac64ddc846

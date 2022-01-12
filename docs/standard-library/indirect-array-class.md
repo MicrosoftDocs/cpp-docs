@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: indirect_array class"
 title: "indirect_array class"
-ms.date: "11/04/2016"
+ms.date: 01/12/2022
 f1_keywords: ["valarray/std::indirect_array"]
 helpviewer_keywords: ["indirect_array class"]
 ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: valarray Class"
 title: "valarray class"
-ms.date: "03/27/2019"
+ms.date: 01/12/2022
 f1_keywords: ["valarray/std::valarray", "valarray/std::valarray::value_type", "valarray/std::valarray::apply", "valarray/std::valarray::cshift", "valarray/std::valarray::free", "valarray/std::valarray::max", "valarray/std::valarray::min", "valarray/std::valarray::resize", "valarray/std::valarray::shift", "valarray/std::valarray::size", "valarray/std::valarray::sum", "valarray/std::valarray::swap"]
 helpviewer_keywords: ["std::valarray [C++]", "std::valarray [C++], value_type", "std::valarray [C++], apply", "std::valarray [C++], cshift", "std::valarray [C++], free", "std::valarray [C++], max", "std::valarray [C++], min", "std::valarray [C++], resize", "std::valarray [C++], shift", "std::valarray [C++], size", "std::valarray [C++], sum", "std::valarray [C++], swap"]
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
@@ -12,11 +12,11 @@ The class template `valarray<Type>` describes an object that controls a sequence
 
 ## Remarks
 
-The class is a representation of the mathematical concept of an ordered set of values and the elements are numbered sequentially from zero. The class is described as a *near container* because it supports some, but not all, of the capabilities that first-class sequence containers, such as [`vector`](../standard-library/vector-class.md), support. It differs from class template `vector` in two important ways:
+The class is a representation of the mathematical concept of an ordered set of values. Its elements are numbered sequentially from zero. The class is described as a *near container* because it supports some, but not all, of the capabilities that first-class sequence containers, such as [`vector`](../standard-library/vector-class.md), support. It differs from class template `vector` in two important ways:
 
 - It defines many arithmetic operations between corresponding elements of `valarray<Type>` objects of the same type and length, such as `varr_x* = cos(varr_y) + sin(varr_z)`.
 
-- It defines a variety of interesting ways to subscript a `valarray<Type>` object, by overloading [`operator[]`](#op_at).
+- It defines various interesting ways to subscript a `valarray<Type>` object, by overloading [`operator[]`](#op_at).
 
 An object of class `Type`:
 
@@ -167,7 +167,7 @@ The number of places the elements are to be shifted forward.
 
 ### Return value
 
-A new `valarray` in which all the elements have been moved *`count`* positions cyclically toward the front of the `valarray`, left with respect to their positions in the operand `valarray`.
+A new `valarray` in which all the elements have been moved *`count`* positions cyclically toward the front of the `valarray`, or leftward compared to their positions in the operand `valarray`.
 
 ### Remarks
 
@@ -763,7 +763,7 @@ valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
 
 ## <a name="op_add"></a> `operator+`
 
-A unary operator that applies a plus to each element in a `valarray`.
+A unary operator that applies a plus to each element in a `valarray`. For normal arithmetic values, this operation has no effect.
 
 ```cpp
 valarray<Type> operator+() const;
@@ -771,7 +771,7 @@ valarray<Type> operator+() const;
 
 ### Return value
 
-A `valarray` whose elements are plus those of the operand array.
+A `valarray` whose elements are the unary plus result of the operand array.
 
 ### Example
 
@@ -891,7 +891,7 @@ valarray<Type> operator-() const;
 
 ### Return value
 
-A `valarray` whose elements are arithmetically negated from those of the operand `valarray`.
+A `valarray` whose elements are arithmetically negated from the elements of the operand `valarray`.
 
 ### Example
 
@@ -1122,7 +1122,7 @@ If the value of a member in the replacement controlled sequence depends on a mem
 
 ### Remarks
 
-If the length of the controlled sequence changes, the result is generally undefined. In this implementation, however, the effect is merely to invalidate any pointers or references to elements in the controlled sequence.
+If the length of the controlled sequence changes, normally the result is undefined. In this implementation, however, the effect is merely to invalidate any pointers or references to elements in the controlled sequence.
 
 ### Example
 
@@ -1226,7 +1226,7 @@ A reference to an element or its value at specified index or a specified subset.
 
 ### Remarks
 
-The member operator is overloaded to provide several ways to select sequences of elements from among those controlled by `*this`. The first group of five member operators work in conjunction with various overloads of [`operator=`](#op_eq) (and other assigning operators) to allow selective replacement (slicing) of the controlled sequence. The selected elements must exist.
+The member operator is overloaded to provide several ways to select sequences of elements from among the ones controlled by `*this`. The first group of five member operators work together with various overloads of [`operator=`](#op_eq) (and other assigning operators) to allow selective replacement (*slicing*) of the controlled sequence. The selected elements must exist.
 
 When compiled by using [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element outside the bounds of the `valarray`. For more information, see [Checked iterators](../standard-library/checked-iterators.md).
 
@@ -1406,7 +1406,7 @@ The `valarray` of values that are the unary bitwise complement of the element va
 
 ### Remarks
 
-A bitwise operation can only manipulate bits in integral types, such as **`char`** and **`int`**. It doesn't work on **`float`**, **`double`**, **`long double`**, **`void`**, **`bool`** or other, more complex data types.
+A bitwise operation can only manipulate bits in integral types, such as **`char`** and **`int`**. It doesn't work on **`float`**, **`double`**, **`long double`**, **`void`**, **`bool`**, or other, more complex data types.
 
 The unary bitwise complement operator **`~`** applies to the data type at the level of the individual bits. Given bit `b`, `~b` is 1 if `b` is 0 and 0 if `b` is 1.
 
@@ -1582,7 +1582,7 @@ The number of places the elements are to be shifted forward.
 
 ### Return value
 
-A new `valarray` in which all the elements have been moved *`count`* positions toward the front of the `valarray`, left with respect to their positions in the operand `valarray`.
+A new `valarray` in which all the elements have been moved *`count`* positions toward the front of the `valarray`, or leftward when compared to their positions in the operand `valarray`.
 
 ### Remarks
 
@@ -1733,7 +1733,7 @@ The sum of the elements of the operand `valarray`.
 
 ### Remarks
 
-If the length is greater than one, the member function adds values to the sum by applying `operator+=` between pairs of elements of class `Type`, which operator, consequently, needs be provided for elements of type `Type`.
+If the length is greater than one, the member function adds values to the sum by applying `operator+=` between pairs of elements of class `Type`. It means the operator needs be provided for elements of type `Type`.
 
 ### Example
 
@@ -1784,7 +1784,7 @@ A `valarray` providing the elements to be swapped.
 
 ### Remarks
 
-The member function swaps the controlled sequences between **`*this`** and *`right`*. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.
+The member function swaps the controlled sequences between **`*this`** and *`right`*. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators to elements in the two controlled sequences.
 
 ## <a name="valarray"></a> `valarray`
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: gslice_array class"
 title: "gslice_array class"
-ms.date: "11/04/2016"
+ms.date: 01/12/2022
 f1_keywords: ["valarray/std::gslice_array"]
 helpviewer_keywords: ["gslice_array class"]
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
@@ -47,7 +47,7 @@ public:
 
 ## Remarks
 
-The class describes an object that stores a reference to an object `va` of class [`valarray<Type>`](../standard-library/valarray-class.md), along with an object `gs` of class [`gslice`](../standard-library/gslice-class.md) which describes the sequence of elements to select from the `valarray<Type>` object.
+The class describes an object that stores a reference to an object `va` of class [`valarray<Type>`](../standard-library/valarray-class.md), along with an object `gs` of class [`gslice`](../standard-library/gslice-class.md), which describes the sequence of elements to select from the `valarray<Type>` object.
 
 You construct a `gslice_array<Type>` object only by writing an expression of the form [`va[gs]`](../standard-library/valarray-class.md#op_at). The member functions of class `gslice_array` then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
 
