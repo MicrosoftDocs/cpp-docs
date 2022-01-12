@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: Type system (C++/CX)"
-title: "Type system (C++/CX)"
+title: "Type system overview (C++/CX)"
 ms.date: 01/07/2022
 ---
-# Type System (C++/CX)
+# Type system overview (C++/CX)
 
 By using the Windows Runtime architecture, you can use C++/WinRT, C++/CX, Visual Basic, Visual C#, and JavaScript to write apps and components. They can directly access the Windows API and interoperate with other Windows Runtime apps and components. Universal Windows Platform (UWP) apps that are written in C++ compile to native code that executes directly in the CPU. UWP apps that are written in C# or Visual Basic compile to Microsoft intermediate language (MSIL) and execute in the common language runtime (CLR). UWP apps that are written in JavaScript execute in a JavaScript run-time environment. The Windows Runtime operating system components themselves are written in C++ and run as native code. All of these components and UWP apps communicate directly through the Windows Runtime application binary interface (ABI).
 
@@ -169,7 +169,7 @@ For more information, see [Boxing](../cppcx/boxing-c-cx.md).
 
 An attribute is a metadata value that can be applied to any Windows Runtime type or type member. Attributes can be inspected at run time. The Windows Runtime defines a set of common attributes in the `Windows::Foundation::Metadata` namespace. User-defined attributes on public interfaces are not supported by Windows Runtime in this release.
 
-## API Deprecation
+## API deprecation
 
 You can mark public APIs as deprecated by using the same attribute that's used by the Windows Runtime system types.
 
