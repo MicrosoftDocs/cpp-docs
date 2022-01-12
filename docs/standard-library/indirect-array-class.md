@@ -1,24 +1,24 @@
 ---
-description: "Learn more about: indirect_array Class"
-title: "indirect_array Class"
+description: "Learn more about: indirect_array class"
+title: "indirect_array class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray/std::indirect_array"]
 helpviewer_keywords: ["indirect_array class"]
 ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7
 ---
-# indirect_array Class
+# `indirect_array` class
 
-An internal, auxiliary class template that supports objects that are subsets of valarrays by providing operations between subset arrays defined by specifying a subset of indices of a parent valarray.
+An internal, auxiliary class template that supports objects that are subsets of `valarray` objects by providing operations between subset arrays defined by specifying a subset of indices of a parent `valarray`.
 
 ## Syntax
 
 ## Remarks
 
-The class describes an object that stores a reference to an object `va` of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object `xa` of class `valarray<size_t>`, which describes the sequence of elements to select from the `valarray<Type>` object.
+The class describes an object that stores a reference to an object `va` of class [`valarray<Type>`](../standard-library/valarray-class.md), along with an object `xa` of class `valarray<size_t>`, which describes the sequence of elements to select from the `valarray<Type>` object.
 
-You construct an `indirect_array<Type>` object only by writing an expression of the form `va[xa]`. The member functions of class indirect_array then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
+You construct an `indirect_array<Type>` object only by writing an expression of the form `va[xa]`. The member functions of class `indirect_array` then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
 
-The sequence consists of **xa.**[size](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index **xa**[ `I`] within `va`.
+The sequence consists of [`xa.size`](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index `xa[I]` within `va`.
 
 ## Example:
 
@@ -70,8 +70,8 @@ The modified operand valarray is:  (0 -1 10 -1 10 -1 10 -1 8 -1).
 
 **Header:** \<valarray>
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Thread safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

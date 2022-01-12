@@ -1,24 +1,22 @@
 ---
-description: "Learn more about: mask_array Class"
-title: "mask_array Class"
+description: "Learn more about: mask_array class"
+title: "mask_array class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray/std::mask_array"]
 helpviewer_keywords: ["mask_array class"]
 ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
 ---
-# mask_array Class
+# `mask_array` class
 
-An internal, auxiliary class template that supports objects that are subsets of parent valarrays, specified with a Boolean expression, by providing operations between the subset arrays.
-
-## Syntax
+An internal, auxiliary class template that supports objects that are subsets of parent `valarray` objects, specified with a Boolean expression, by providing operations between the subset arrays.
 
 ## Remarks
 
-The class describes an object that stores a reference to an object `va` of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object `ba` of class [valarray\<bool>](../standard-library/valarray-bool-class.md), which describes the sequence of elements to select from the `valarray<Type>` object.
+The class describes an object that stores a reference to an object `va` of class [`valarray<Type>`](../standard-library/valarray-class.md), along with an object `ba` of class [`valarray<bool>`](../standard-library/valarray-bool-class.md), which describes the sequence of elements to select from the `valarray<Type>` object.
 
-You construct a `mask_array<Type>` object only by writing an expression of the form [`va[ba]`](../standard-library/valarray-class.md#op_at). The member functions of class mask_array then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
+You construct a `mask_array<Type>` object only by writing an expression of the form [`va[ba]`](../standard-library/valarray-class.md#op_at). The member functions of class `mask_array` then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
 
-The sequence consists of at most `ba.size` elements. An element *J* is included only if **ba**[ *J*] is true. Thus, there are as many elements in the sequence as there are true elements in `ba`. If `I` is the index of the lowest true element in `ba`, then **va**[ `I`] is element zero in the selected sequence.
+The sequence consists of at most `ba.size` elements. An element *`J`* is included only if `ba[J]` is `true`. Thus, there are as many elements in the sequence as there are `true` elements in `ba`. If `I` is the index of the lowest true element in `ba`, then `va[I]` is element zero in the selected sequence.
 
 ## Example
 
@@ -65,7 +63,7 @@ The modified operand valarray is:  (0 -1 2 -1 10 -1 10 -1 10 -1).
 
 **Header:** \<valarray>
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
