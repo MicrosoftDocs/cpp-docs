@@ -18,7 +18,7 @@ This command-line option is similar to [`/sourceDependencies`](sourcedependencie
 - The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
 - The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this option does a scan of the project files, not a compilation. So there are no built modules or header units to list.
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
-- Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed.
+- Header file dependencies aren't listed. That is, `#include <file>` or `#include "file"` dependencies aren't listed.
 - `/sourceDependencies:directives` is meant to be used before *`.ifc`* files are built.
 
 ## Syntax
@@ -52,7 +52,7 @@ This switch is used in combination with [`/translateInclude`](translateinclude.m
 
 `header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files found in the source files that are scanned, that are also listed in `header-units.json`, are considered eligible to be compiled into header units. Files not in the list are treated as a normal `#include`.
 
-The compiler looks for `header-units.json` where the header being loaded is located. For more information about the format of this file, see [C++ header-units.json reference](..\header-unit-json-reference.md)
+The compiler looks for `header-units.json` where the header being loaded is located. For more information about the format of this file, see [C++ header-units.json reference](header-unit-json-reference.md)
 
 ### Examples
 
@@ -102,7 +102,7 @@ No *`.ifc`* files are listed in the output because they weren't built. Unlike `/
 
 ## To set this compiler option in Visual Studio
 
-You normally shouldn't set this yourself in the Visual Studio development environment. It is set by the build system.
+You normally shouldn't set this yourself in the Visual Studio development environment. It's set by the build system.
 
 ## See also
 

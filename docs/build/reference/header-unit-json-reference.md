@@ -14,7 +14,7 @@ The `header-units.json` file lists which header files can be automatically built
 
 Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` at compile time to determine its behavior. Using `#define` can't be used to change the behavior of a header unit, so `<cassert>` shouldn't be compiled into a header unit because it wouldn't provide the expected behavior.
 
-When the command-line switch [`/translateInclude` (Translate include directives into import directives)](./reference/translateinclude.md) is used, the build system looks for `#include` files that can be compiled as header units.
+When the command-line switch [`/translateInclude` (Translate include directives into import directives)](translateinclude.md) is used, the build system looks for `#include` files that can be compiled as header units.
 
 There's an allowlist for the Standard Template Library (STL) headers that the build system consults when `/translateInclude` is used. The build system uses it to determine whether to create a header unit for an STL header file, and for its dependencies. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
 

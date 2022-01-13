@@ -53,7 +53,7 @@ int main() { }
 
 The **`/translateInclude`** option allows the compiler to treat an `#include` as an `import` for header files that have a corresponding compiled header unit file (*`.ifc`*) and that have been specified on the command line via the `/headerUnit` switch.
 
-If an `#include` is encountered that doesn't have a corresponding header unit specified via the `/headerUnit` switch, it is processed by the preprocessor as a normal `#include` directive.
+If an `#include` is found that doesn't have a corresponding header unit specified via the `/headerUnit` switch, it's processed by the preprocessor as a normal `#include` directive.
 
  This example command line translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
 

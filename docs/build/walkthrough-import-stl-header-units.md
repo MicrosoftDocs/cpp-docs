@@ -31,7 +31,7 @@ There are two approaches to compiling the STL header files you use into a header
 
 **Scan for module dependencies**
 
-With this approach, the build system scans your sources for `#import "header";` and `import <header>;` statements. Although, if you don't want to first modify your code to change `#include` directives to `import` statements, you can use the `/translateIncludes` compiler switch so that `#include` directives are treated as if they were `import` statements. That is, `#include <library>` will be treated as if you had written `import <library>;`, as long as the compiler was able to build a header unit for the included file.
+With this approach, the build system scans your sources for `#import "header";` and `import <header>;` statements. Although if you don't want to first modify your code to change `#include` directives to `import` statements, you can use the `/translateIncludes` compiler switch so that `#include` directives are treated as if they were `import` statements. That is, `#include <library>` will be treated as if you had written `import <library>;`, as long as the compiler built a header unit for the included file.
 
  The header files and their dependencies are compiled into header units. Then, the compiler imports the compiled header unit files (*`.ifc`*) instead of running the header file through the preprocessor.
 
@@ -53,8 +53,7 @@ See [Approach 2: Build a static library project](#approach2) in this article to 
 
 We'll start with the easiest way to import STL libraries as header units. This approach might not be appropriate for larger projects because it doesn't guarantee an optimal build time because all of the sources need to be scanned for `import` statements.
 
-This option is convenient when there are ma
-ny header files or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. Though header units that are part of referenced static library projects are reused.
+This option is convenient when there are many header files or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. Though header units that are part of referenced static library projects are reused.
 
 You can import your STL libraries as header units without changing your code. To do so, enable the Visual C++ project **Scan Sources for Module Dependencies** option. This setting causes the build system to scan your source code for `#include` directives and tries to compile the imported header file into a header unit. There are other ways to indicate that a header file should be treated as a header unit besides scanning your entire project. For more information, see [Walkthrough: Build and import header units in Visual C++ projects](walkthrough-header-units.md).
 
@@ -91,7 +90,7 @@ Follow these steps to set the options that cause the build system to scan for im
 1. Set **Scan Sources for Module Dependencies** to **Yes**. Because we're setting the project property, all source files in this project will be scanned.
 1. Set **Translate Includes to Imports** to **Yes**
 
-:::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the Scan Sources for Module Dependencies, and Translate Includes to Imports settings, in the project properties page under Configuration Properities > C/C++ > General.":::
+:::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the Scan Sources for Module Dependencies, and Translate Includes to Imports settings, in the project properties page under Configuration Properties > C/C++ > General.":::
 
 Change the C++ language standard used by the compiler. The [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later option is required to use header units.
 
@@ -223,7 +222,7 @@ But if you need to use a built header unit that you don't have the project for, 
 
 ## Select among multiple copies of a header unit
 
-If you reference two or more projects that built two or more header units with the same name, or that built two or more header units for the same header file, there will be multiple header units to choose from for the same import. You might have different versions of the header unit that were built with different compiler settings, for example, and need to specify which one to use.
+If you reference two or more projects that built two or more header units with the same name, or that built two or more header units for the same header file, there will be multiple header units to choose from for the same import. You might have different versions of the header unit built with different compiler settings, for example, and need to specify which one to use.
 
 Use  the project properties **C/C++** > **Additional Header Unit Dependencies** setting to resolve collisions by specifying which header unit to use. Otherwise, you can't predict which one will be picked.
 

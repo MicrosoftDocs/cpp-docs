@@ -62,7 +62,7 @@ cl ... /std:c++latest /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit:quot
 
 ### To set this compiler option in the Visual Studio development environment
 
-You normally shouldn't set this in the Visual Studio development environment. It is set by the build system.
+You normally shouldn't set this in the Visual Studio development environment. It's set by the build system.
 
 ## See also
 
