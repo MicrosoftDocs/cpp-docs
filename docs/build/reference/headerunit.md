@@ -68,4 +68,5 @@ You normally shouldn't set this in the Visual Studio development environment. It
 
 [`/exportHeader` (Create header units)](module-exportheader.md)\
 [`/headerName` (Create a header unit from the specified header)](headername.md)\
-[`/reference` (Use named module IFC)](module-reference.md)
+[`/reference` (Use named module IFC)](module-reference.md)\
+[`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

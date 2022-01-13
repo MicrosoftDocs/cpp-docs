@@ -55,7 +55,7 @@ The **`/translateInclude`** option allows the compiler to treat an `#include` as
 
 If an `#include` is encountered that doesn't have a corresponding header unit specified via the `/headerUnit` switch, it is processed by the preprocessor as a normal `#include` directive.
 
- Here's an example command line that translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
+ This example command line translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
 
 ```CMD
 cl /IC:\ /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc

@@ -1,7 +1,7 @@
 ---
 title: "/sourceDependencies:directives (List module and header unit dependencies)"
 description: "Reference guide to the /sourceDependencies:directives compiler option in Microsoft C++."
-ms.date: 04/13/2020
+ms.date: 01/11/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies:directives"]
@@ -48,6 +48,12 @@ When a non-fatal compiler error occurs, the dependency information still gets wr
 
 All file paths appear as absolute paths in the output.
 
+This switch is used in combination with [`/translateInclude`](translateinclude.md).
+
+`header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files found in the source files that are scanned, that are also listed in `header-units.json`, are considered eligible to be compiled into header units. Files not in the list are treated as a normal `#include`.
+
+The compiler looks for `header-units.json` where the header being loaded is located. For more information about the format of this file, see [C++ header-units.json reference](..\header-unit-json-reference.md)
+
 ### Examples
 
 Given the following sample code:
@@ -66,7 +72,7 @@ import "t.h";
 int main() {}
 ```
 
-> `cl /std:c++latest /sourceDependencies:directives output.json main.cpp`
+> `cl /std:c++latest /translateInclude /sourceDependencies:directives output.json main.cpp`
 
 This command line produces a JSON file *`output.json`* with content like:
 
