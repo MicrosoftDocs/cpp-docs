@@ -26,8 +26,8 @@ The **`VEX2`**, **`VEX3`**, **`VEX`**, and **`EVEX`** options are available in V
 | Keyword | Usage |
 |--|--|
 | **`REP`** | Repeat the string operation by the count in (E)CX. |
-| **`REPE`** | Repeat the string operation while the comparison is equal, limited by the count in (E)CX. |
-| **`REPE`** | Repeat the string operation while the comparison is not-equal, limited by the count in (E)CX. |
+| **`REPE`**<br>**`REPZ`** | Repeat the string operation while the comparison is equal, limited by the count in (E)CX. |
+| **`REPNE`**<br>**`REPNZ`** | Repeat the string operation while the comparison is not-equal, limited by the count in (E)CX. |
 | **`LOCK`** | Perform the operation atomically on a memory operand. |
 | **`XACQUIRE`** | Begin an HLE transaction, most often used with **`LOCK`** prefix. |
 | **`XRELEASE`** | Complete an HLE transaction, most often used with **`LOCK`** prefix. |
