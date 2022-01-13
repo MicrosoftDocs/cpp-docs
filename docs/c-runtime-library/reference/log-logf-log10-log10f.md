@@ -10,7 +10,7 @@ f1_keywords: ["logf", "logl", "_log10l", "log", "_logl", "log10f", "log10l", "lo
 helpviewer_keywords: ["calculating logarithms", "log10f function", "log10 function", "log function", "log10l function", "logl function", "logf function", "logarithms"]
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
 ---
-# log, logf, logl, log10, log10f, log10l
+# `log`, `logf`, `logl`, `log10`, `log10f`, `log10l`
 
 Calculates logarithms.
 
@@ -34,26 +34,26 @@ long double log10(long double x);  // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Value whose logarithm is to be found.
 
 ## Return Value
 
-The **log** functions return the natural logarithm (base *e*) of *x* if successful. The **log10** functions return the base-10 logarithm. If *x* is negative, these functions return an indefinite (IND), by default. If *x* is 0, they return infinity (INF).
+The **`log`** functions return the natural logarithm (base *`e`*) of *`x`* if successful. The **`log10`** functions return the base-10 logarithm. If *`x`* is negative, these functions return an indefinite (`IND`), by default. If *`x`* is 0, they return infinity (`INF`).
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|none|_DOMAIN|
-|± 0|ZERODIVIDE|_SING|
-|*x* < 0|INVALID|_DOMAIN|
+|± `QNAN`, `IND`|none|`_DOMAIN`|
+|± 0|`ZERODIVIDE`|`_SING`|
+|*`x`* < 0|`INVALID`|`_DOMAIN`|
 
-**log** and **log10** have an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
+**`log`** and **`log10`** have an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
 ## Remarks
 
-C++ allows overloading, so you can call overloads of **log** and **log10** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **log** and **log10** always take and return a **`double`**.
+C++ allows overloading, so you can call overloads of **`log`** and **`log10`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`log`** and **`log10`** always take and return a **`double`**.
 
-If you use the \<tgmath.h> `log()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h> log()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -61,8 +61,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
-|**log** macro | \<tgmath.h> |
+|**`log`**, **`logf`**, **`logl`**, **`log10`**, **`log10f`**, **`log10l`**|`<math.h>`|
+|**`log`** macro | `<tgmath.h>` |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -124,8 +124,8 @@ Log base 2 of 65536.000000 is 16.000000
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md) <br/>
-[exp, expf, expl](exp-expf.md) <br/>
-[_matherr](matherr.md) <br/>
-[pow, powf, powl](pow-powf-powl.md) <br/>
-[_CIlog](../../c-runtime-library/cilog.md) <br/>
-[_CIlog10](../../c-runtime-library/cilog10.md)<br/>
+[`exp`, `expf`, `expl`](exp-expf.md) <br/>
+[`_matherr`](matherr.md) <br/>
+[`pow`, `powf`, `powl`](pow-powf-powl.md) <br/>
+[`_CIlog`](../../c-runtime-library/cilog.md) <br/>
+[`_CIlog10`](../../c-runtime-library/cilog10.md)<br/>
