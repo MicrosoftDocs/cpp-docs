@@ -135,7 +135,7 @@ If the call succeeds, subsequent calls to [`get_id`](#get_id) for the calling ob
 
 ## <a name="joinable"></a> `joinable`
 
-Specifies whether the associated thread is *`joinable`*.
+Specifies whether the associated thread is joinable.
 
 ```cpp
 bool joinable() const noexcept;
@@ -143,11 +143,11 @@ bool joinable() const noexcept;
 
 ### Return Value
 
-**`true`** if the associated thread is *`joinable`*; otherwise, **`false`**.
+**`true`** if the associated thread is joinable; otherwise, **`false`**.
 
 ### Remarks
 
-A thread object is *`joinable`* if `get_id() != id()`.
+A thread object is joinable if `get_id() != id()`.
 
 ## <a name="native_handle"></a> `native_handle`
 

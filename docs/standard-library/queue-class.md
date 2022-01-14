@@ -19,8 +19,7 @@ class queue
 ### Parameters
 
 *`Type`*\
-The element data type to be stored in the `queue`
-
+The element data type to be stored in the `queue`.
 *`Container`*\
 The type of the underlying container used to implement the `queue`.
 
@@ -34,11 +33,11 @@ The `queue` objects are equality comparable if and only if the elements of class
 
 There are three types of container adaptors defined by the C++ Standard Library: `stack`, `queue`, and `priority_queue`. Each restricts the functionality of some underlying container class to provide a precisely controlled interface to a standard data structure.
 
-- The [`stack`](../standard-library/stack-class.md) class supports a last-in, first-out (LIFO) data structure. A good analogue to keep in mind would be a stack of plates. Elements (plates) may be inserted, inspected, or removed only from the top of the stack, which is the last element at the end of the base container. The restriction to accessing only the `top` element is the reason for using the `stack` class.
+- The [`stack` class](../standard-library/stack-class.md) supports a last-in, first-out (LIFO) data structure. A good analogue to keep in mind would be a stack of plates. Elements (plates) may be inserted, inspected, or removed only from the top of the stack, which is the last element at the end of the base container. The restriction to accessing only the `top` element is the reason for using the `stack` class.
 
 - The `queue` class supports a first-in, first-out (FIFO) data structure. A good analogue to keep in mind would be people lining up for a bank teller. Elements (people) may be added to the back of the line and are removed from the front of the line. Both the front and the back of a line may be inspected. The restriction to accessing only the `front` and `back` elements in this way is the reason for using the `queue` class.
 
-- The [`priority_queue class`](../standard-library/priority-queue-class.md) orders its elements so that the largest element is always at the top position. It supports insertion of an element and the inspection and removal of the `top` element. A good analogue to keep in mind would be people lining up where they are arranged by age, height, or some other criterion.
+- The [`priority_queue` class](../standard-library/priority-queue-class.md) orders its elements so that the largest element is always at the top position. It supports insertion of an element and the inspection and removal of the `top` element. A good analogue to keep in mind would be people lining up where they are arranged by age, height, or some other criterion.
 
 ## Members
 
