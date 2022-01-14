@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["logf", "logl", "_log10l", "log", "_logl", "log10f", "log10l", "log10"]
 helpviewer_keywords: ["calculating logarithms", "log10f function", "log10 function", "log function", "log10l function", "logl function", "logf function", "logarithms"]
-ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
 ---
 # `log`, `logf`, `logl`, `log10`, `log10f`, `log10l`
 
@@ -45,7 +44,7 @@ The **`log`** functions return the natural logarithm (base *`e`*) of *`x`* if su
 |-----------|-------------------|-----------------------|
 |± `QNAN`, `IND`|none|`_DOMAIN`|
 |± 0|`ZERODIVIDE`|`_SING`|
-|*`x`* < 0|`INVALID`|`_DOMAIN`|
+|*`x < 0`*|`INVALID`|`_DOMAIN`|
 
 **`log`** and **`log10`** have an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
@@ -123,9 +122,9 @@ Log base 2 of 65536.000000 is 16.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md) <br/>
-[`exp`, `expf`, `expl`](exp-expf.md) <br/>
-[`_matherr`](matherr.md) <br/>
-[`pow`, `powf`, `powl`](pow-powf-powl.md) <br/>
-[`_CIlog`](../../c-runtime-library/cilog.md) <br/>
-[`_CIlog10`](../../c-runtime-library/cilog10.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md) \
+[`exp`, `expf`, `expl`](exp-expf.md) \
+[`_matherr`](matherr.md) \
+[`pow`, `powf`, `powl`](pow-powf-powl.md) \
+[`_CIlog`](../../c-runtime-library/cilog.md) \
+[`_CIlog10`](../../c-runtime-library/cilog10.md)\

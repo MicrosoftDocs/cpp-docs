@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["calloc"]
 helpviewer_keywords: ["memory allocation, arrays", "calloc function"]
-ms.assetid: 17bb79a1-98cf-4096-90cb-1f9365cd6829
 ---
 # `calloc`
 
@@ -25,10 +24,10 @@ void *calloc(
 
 ### Parameters
 
-*`number`*<br/>
+*`number`*\
 Number of elements.
 
-*`size`*<br/>
+*`size`*\
 Length in bytes of each element.
 
 ## Return Value
@@ -94,7 +93,7 @@ Allocated 40 long integers
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[`free`](free.md)<br/>
-[`malloc`](malloc.md)<br/>
-[`realloc`](realloc.md)<br/>
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)\
+[`free`](free.md)\
+[`malloc`](malloc.md)\
+[`realloc`](realloc.md)\
