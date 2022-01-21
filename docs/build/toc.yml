@@ -800,6 +800,8 @@ items:
                       href: ../build/reference/zc-rvaluecast-enforce-type-conversion-rules.md
                     - name: "/Zc:sizedDealloc (Enable global sized deallocation functions)"
                       href: ../build/reference/zc-sizeddealloc-enable-global-sized-dealloc-functions.md
+                    - name: "/Zc:static_assert (Strict static_assert handling)"
+                      href: ../build/reference/zc-static-assert.md
                     - name: "/Zc:strictStrings (Disable string literal type conversion)"
                       href: ../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
                     - name: "/Zc:ternary (Enforce conditional operator rules)"
