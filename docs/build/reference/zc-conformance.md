@@ -39,6 +39,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules (off by default). |
 | [`/Zc:sizedDealloc`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | Enable C++14 global sized deallocation functions (on by default). |
 | [`/Zc:strictStrings`](zc-strictstrings-disable-string-literal-type-conversion.md) | Disable string-literal to `char*` or `wchar_t*` conversion (off by default). |
+| [`/Zc:static_assert`](zc-static-assert.md) | strict handling of `static_assert` (implied by  **`/permissive-`**). |
 | [`/Zc:ternary`](zc-ternary.md) | Enforce conditional operator rules on operand types (off by default). |
 | [`/Zc:threadSafeInit`](zc-threadsafeinit-thread-safe-local-static-initialization.md) | Enable thread-safe local static initialization (on by default). |
 | [`/Zc:throwingNew`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure (off by default). |
