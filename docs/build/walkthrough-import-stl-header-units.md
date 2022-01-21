@@ -13,7 +13,7 @@ This walkthrough shows how to import C++ Standard Template Library (STL) librari
 
 Importing an STL header as a header unit is simpler than using [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and use than a shared precompiled header file (PCH), but provide similar performance benefits.
 
-For more detailed information about what header units are and the benefits they provide, see [What is a header unit?](walkthrough-import-stl-header-units.md#what-is-a-header-unit)
+For more detailed information about what header units are and the benefits they provide, see [What is a header unit?](walkthrough-header-units.md#what-is-a-header-unit)
 
 ## Prerequisites
 
@@ -165,11 +165,11 @@ To access this setting:
 
 At the beginning of this topic, another approach to importing STL libraries as header units was mentioned. That's to have Visual Studio scan for the STL headers you `#include` in your project and compile them into header units. The compiler will then import rather than include those headers.
 
-This option is convenient when your project includes many STL header files across many files, or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. But it is useful if you have a large codebase because you don't have to change your source code to take advantage of the benefits of header units for most of the STL libraries you use.
+This option is convenient when your project includes many STL header files across many files, or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. But it's useful if you have a large codebase because you don't have to change your source code to take advantage of the benefits of header units for most of the STL libraries you use.
 
 This approach is less flexible than the static library approach because it doesn't lend itself towards reusing the built header units in other projects. This approach might not be appropriate for larger projects because it doesn't guarantee an optimal build time since all of the sources need to be scanned for `#include` statements.
 
-Not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via `#define` won't as header units. There's an allowlist for the STL headers that the build system uses when `/translateInclude` is specified to determine which STL headers can be compiled into header units. The `header-units.json` file is under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json` It's consulted before the build system attempts to create a header unit for an STL header file, and also when dependencies are resolved for an STL header file. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
+Not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via `#define` won't be converted to header units. There's an allowlist for the STL headers that the build system uses when `/translateInclude` is specified to determine which STL headers can be compiled into header units. The `header-units.json` file is under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json` It's consulted before the build system attempts to create a header unit for an STL header file, and also when dependencies are resolved for an STL header file. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
 
 To demonstrate this approach, we'll create a project that includes two STL libraries and then change the project properties so that it imports the libraries as header units instead of including them. We'll do it without changing the code.
 

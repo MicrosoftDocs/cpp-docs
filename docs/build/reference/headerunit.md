@@ -54,7 +54,7 @@ Given a project that references two header files and their header units, listed 
 | *`C:\utils\util.h`* | *`C:\util.h.ifc`* |
 | *`C:\app\app.h`* | *`C:\app\app.h.ifc`* |
 
-The compiler options to reference the header units for these particular header files would look similar to this:
+The compiler options to reference the header units for these particular header files would look similar to:
 
 ```CMD
 cl ... /std:c++latest /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit:quote app.h=app.h.ifc
