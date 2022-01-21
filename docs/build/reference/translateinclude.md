@@ -1,7 +1,7 @@
 ---
 title: "/translateInclude (Translate include directives into import directives)"
 description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
-ms.date: 4/13/2021
+ms.date: 01/21/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/translateInclude"]
@@ -17,24 +17,25 @@ Instructs the compiler to treat `#include` as `import` for those headers that ha
 
 ## Remarks
 
-The **`/translateInclude`** compiler option requires you enable the [/std:c++20](std-specify-language-standard-version.md) or later option (such as **`/std:c++latest`**). `/translateInclude` is available starting in Visual Studio 2019 version 16.10.
+The **`/translateInclude`** compiler option requires you enable the [/std:c++20](std-specify-language-standard-version.md) or later option (such as **`/std:c++latest`**).\
+`/translateInclude` is available starting in Visual Studio 2019 version 16.10.
 
-This switch only applies to `#include` statements, and only to those that are specified in a `header-unit.json` file that lists which header files can be compiled into header units. The `header-unit.json` file  must be in the same directory as the included file. You can see an example of a `header-units.json` file under the installation directory for Visual Studio (`%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`). That `header-units.json` file is used by the build system to determine whether a Standard Template Library header can be compiled as a header unit. If the #include file isn't listed, it's treated as a normal #include. Otherwise, the included header file will be compiled into a header unit and treated as an `import`.
-This doesn't require scan dependencies to be turned on. You don't need the IDE project setting **Scan Sources for Module Dependencies** enabled for this because the build system does a scan automatically when `/translateInclude` is specified.
+This switch only applies to `#include` statements, and only to header files specified in a `header-unit.json` file which lists which header files can be compiled into header units. The `header-unit.json` file must be in the same directory as the included file. You can see an example of a `header-units.json` file under the installation directory for Visual Studio (`%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`). That `header-units.json` file is used by the build system to determine whether a Standard Template Library header can be compiled as a header unit. If the `#include` file isn't listed in the file, it's treated as a normal `#include`. Otherwise, the included header file will be compiled into a header unit and treated as an `import` instead of an `#include`.
+You don't need the IDE project setting **Scan Sources for Module Dependencies** enabled for this switch to work because the build system automatically scans your sources for `#include` directives when `/translateInclude` is specified.
 
-The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` has been prebuilt into an importable header unit:
+The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` has been prebuilt by the build system into an importable header unit because it is listed in the `header-units.json` file that ships with Visual Studio.
 
 ```cpp
 #include <vector>
 ```
 
-The compiler replaces this directive with:
+The compiler replaces this directive as if you had written:
 
 ```cpp
 import <vector>;
 ```
 
-In MSVC, available header units are made available by the **`/headerUnit`** option, which maps a header file to its corresponding prebuilt importable header unit. For more information, see [`/headerUnit` (Specify where to find the header unit file (`.ifc`) for the specified header)](headerunit.md).
+In MSVC, available header units are made available by the **`/headerUnit`** option, which maps a header file to its corresponding importable header unit, assuming one has been built. For more information, see [`/headerUnit` (Specify where to find the header unit file (`.ifc`) for the specified header)](headerunit.md).
 
 ### Examples
 

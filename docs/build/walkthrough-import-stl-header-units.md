@@ -13,7 +13,7 @@ This walkthrough shows how to import C++ Standard Template Library (STL) librari
 
 Importing an STL header as a header unit is simpler than using [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and use than a shared precompiled header file (PCH), but provide similar performance benefits.
 
-For more detailed information about what header units are and the benefits they provide, see [What is a header unit?](walkthrough-header-units.md#what-is-a-header-unit)
+For more detailed information about what header units are and the benefits they provide, see [What is a header unit?](walkthrough-header-units.md#what-is-a-header-unit).
 
 ## Prerequisites
 
@@ -23,23 +23,23 @@ To use header units, you need Visual Studio 2019 16.10 or later.
 
 Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file and ends with an *`.ifc`* extension.
 
-[The recommended approach](#approach1) is to create a static library that contains the built header units for the STL headers you want to use. Then reference that project and `import` its header units. This can result in faster builds and better reuse.
+[The recommended approach](#approach1) is to create a static library that contains the built header units for the STL headers you want to use. Then reference that library and `import` its header units. This can result in faster builds and better reuse.
 
 [Another approach](#approach2) is to have Visual Studio scan for the STL headers you `#include` in your project, compile them into header units, and import rather than include those headers. This is useful if you have a large codebase because you don't have to change your source code. This approach is less flexible than the static library approach because it doesn't lend itself towards reusing the built header units in other projects. But you still get the performance advantage of importing individual STL libraries as header units.
 
 ## <a name="approach1"></a>Create a static library of STL library header units
 
-The recommended way to consume STL libraries as header units is to create one or more static library projects consisting of header units built from the STL library headers that you want to use. Then, reference the library project(s) to consume those STL headers as header units.  It's like using [shared precompiled headers](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio/), but easier.
+The recommended way to consume STL libraries as header units is to create one or more static library projects consisting of header units built from the STL library headers that you want to use. Then, reference the library project(s) to consume those STL headers as header units. It's like using [shared precompiled headers](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio/), but easier.
 
 Header units (and modules) built in a static library project are automatically available to referencing projects because the project system automatically adds the appropriate [`/headerUnit`](./reference/headerunit.md) command-line options to the compiler so that the referencing projects can import the header units.
 
 This approach ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but is much easier, allows you to import some or all of the header units (something not possible with a PCH), and you can include them in any order.
 
-In the following example, you'll create a static library project that imports `<iostream>` and `<vector>`. After the solution is built, you'll reference this shared header unit project from another C++ project. Everywhere `import <iostream>;` or `import <vector>;` is found, those projects will import the built header unit for that library instead of running the library header through the preprocessor.
+In the following example, you'll create a static library project that imports `<iostream>` and `<vector>`. After the solution is built, you'll reference this shared header unit project from another C++ project. Everywhere `import <iostream>;` or `import <vector>;` is found, the built header unit for that library will be used instead of running the library header through the preprocessor.
 
-In projects that include the same library header in multiple files, this change will improve build performance like PCH files do. The header won't have to be processed over and over by the files that include it. Instead, the already processed compiled header unit will be imported.
+In projects that include the same library header in multiple files, this will improve build performance like PCH files do. The header won't have to be processed over and over by the files that include it. Instead, the already processed compiled header unit will be imported.
 
-To create a static library that contains the STL libraries that you want to compile into header units that you can import later, follow these steps:
+To create a static library that contains the STL libraries that you want to compile into header units, follow these steps:
 
 1. Create an empty C++ project. For this example, call it **SharedPrj**.\
  Select empty C++ project from the project types available in the **Create a new project** window:
@@ -62,13 +62,13 @@ Set project properties to share the header units from this project:
 1. Change the **Configuration Type** option to **Static library (.lib)**.
 1. Change **C++ Language Standard** to **ISO C++20 Standard (/std:c++20)** or later. In versions before Visual Studio 2019 version 16.11, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.
 1. In the left pane of the project property pages dialog, select **C/C++** > **General**.
-1. In the **Scan Sources for Module Dependencies** list, select **Yes**:
+1. In the **Scan Sources for Module Dependencies** list, select **Yes** (this just helps ensure that all dependencies that can be built into a header unit will be):
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the scan module dependencies property setting.":::
 1. Choose **OK** to close the project property pages dialog. Build the solution by selecting **Build** > **Build Solution** on the main menu.
 
 ### Reference the header unit library
 
-To import `<iostream>` and `<vector>` as header units from the static library, create a project that will reference the static library as follows:
+To import `<iostream>` and `<vector>` as header units from the static library, create a project that references the static library as follows:
 
 1. With the current solution still open, on the Visual Studio menu, select **File** > **Add**  > **New Project**.
 1. Add a C++ console app project. For this example, call it **Walkthrough**.
@@ -165,7 +165,7 @@ To access this setting:
 
 At the beginning of this topic, another approach to importing STL libraries as header units was mentioned. That's to have Visual Studio scan for the STL headers you `#include` in your project and compile them into header units. The compiler will then import rather than include those headers.
 
-This option is convenient when your project includes many STL header files across many files, or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. But it's useful if you have a large codebase because you don't have to change your source code to take advantage of the benefits of header units for most of the STL libraries you use.
+This option is convenient when your project includes many STL header files across many files, or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. But it's useful if you have a large codebase because you don't have to change your source code to take advantage of the benefits of header units for many of the STL libraries you use.
 
 This approach is less flexible than the static library approach because it doesn't lend itself towards reusing the built header units in other projects. This approach might not be appropriate for larger projects because it doesn't guarantee an optimal build time since all of the sources need to be scanned for `#include` statements.
 
@@ -199,7 +199,7 @@ The following steps set the options that cause the build system to scan for incl
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the scan module dependencies property setting in the project property pages.":::
 1. Select **All Configurations** in the **Configuration** list and **All Platforms** in the **Platform** list. Doing so ensures the settings you change apply whether you're building for debug or release, and other configurations.
 1. In the left pane of the project property pages dialog, select **C/C++** > **General**.
-1. Set **Scan Sources for Module Dependencies** to **Yes**. Because we're setting the project property, all source files in this project will be scanned.
+1. Set **Scan Sources for Module Dependencies** to **Yes**. This setting helps ensure that all files that can be compiled into a header unit will be. It may not be necessary for your projects.
 1. Set **Translate Includes to Imports** to **Yes**
 
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the Scan Sources for Module Dependencies, and Translate Includes to Imports settings, in the project properties page under Configuration Properties > C/C++ > General.":::
