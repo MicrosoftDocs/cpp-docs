@@ -72,7 +72,7 @@ A value of type `Ty`.
 
 ### Remarks
 
-This method performs an atomic compare and exchange operation by using implicit `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum) arguments. For more information, see [`atomic_compare_exchange_strong_explicit`](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit).
+This method performs an atomic compare and exchange operation by using implicit [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum) arguments. For more information, see [`atomic_compare_exchange_strong_explicit`](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit).
 
 ## <a name="atomic_compare_exchange_strong_explicit"></a> `atomic_compare_exchange_strong_explicit`
 
@@ -156,7 +156,7 @@ A value of type `Ty`.
 
 ### Remarks
 
-This method performs a *weak atomic compare and exchange operation* that has implicit `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum) arguments. For more information, see [`atomic_compare_exchange_weak_explicit`](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit).
+This method performs a *weak atomic compare and exchange operation* that has implicit [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum) arguments. For more information, see [`atomic_compare_exchange_weak_explicit`](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit).
 
 ## <a name="atomic_compare_exchange_weak_explicit"></a> `atomic_compare_exchange_weak_explicit`
 
@@ -231,7 +231,7 @@ The stored value of *`Atom`* before the exchange.
 
 ### Remarks
 
-The `atomic_exchange` function performs a read-modify-write operation to exchange the value that is stored in *`Atom`* with *`Value`*, using the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
+The `atomic_exchange` function performs a read-modify-write operation to exchange the value that is stored in *`Atom`* with *`Value`*, using the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_exchange_explicit"></a> `atomic_exchange_explicit`
 
@@ -295,7 +295,7 @@ The value of the pointer contained by the `atomic` object immediately before the
 
 ### Remarks
 
-The `atomic_fetch_add` function performs a read-modify-write operation to atomically add *`Value`* to the stored value in *`Atom`*, using the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
+The `atomic_fetch_add` function performs a read-modify-write operation to atomically add *`Value`* to the stored value in *`Atom`*, using the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
 
 When the atomic type is `atomic_address`, *`Value`* has type `ptrdiff_t` and the operation treats the stored pointer as a `char *`.
 
@@ -382,7 +382,7 @@ The value contained by the `atomic` object immediately before the operation was 
 
 ### Remarks
 
-The `atomic_fetch_and` function performs a read-modify-write operation to replace the stored value of *`Atom`* with a bitwise `&` of *`Value`* and the current value that is stored in *`Atom`*, using the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
+The `atomic_fetch_and` function performs a read-modify-write operation to replace the stored value of *`Atom`* with a bitwise `&` of *`Value`* and the current value that is stored in *`Atom`*, using the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
 
 ## <a name="atomic_fetch_and_explicit"></a> `atomic_fetch_and_explicit`
 
@@ -446,7 +446,7 @@ The value contained by the `atomic` object immediately before the operation was 
 
 ### Remarks
 
-The `atomic_fetch_or` function performs a read-modify-write operation to replace the stored value of *`Atom`* with a bitwise `or` of *`Value`* and the current value that is stored in *`Atom`*, using the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
+The `atomic_fetch_or` function performs a read-modify-write operation to replace the stored value of *`Atom`* with a bitwise `or` of *`Value`* and the current value that is stored in *`Atom`*, using the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_fetch_or_explicit"></a> `atomic_fetch_or_explicit`
 
@@ -515,7 +515,7 @@ The value of the pointer contained by the `atomic` object immediately before the
 
 ### Remarks
 
-The `atomic_fetch_sub` function performs a read-modify-write operation to atomically subtract *`Value`* from the stored value in *`Atom`*, using the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
+The `atomic_fetch_sub` function performs a read-modify-write operation to atomically subtract *`Value`* from the stored value in *`Atom`*, using the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
 
 When the atomic type is `atomic_address`, *`Value`* has type `ptrdiff_t` and the operation treats the stored pointer as a `char *`.
 
@@ -601,11 +601,11 @@ The value contained by the `atomic` object immediately before the operation was 
 
 ### Remarks
 
-The `atomic_fetch_xor` function performs a read-modify-write operation to replace the stored value of *`Atom`* with a bitwise `exclusive or` of *`Value`* and the current value that is stored in *`Atom`*, using the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
+The `atomic_fetch_xor` function performs a read-modify-write operation to replace the stored value of *`Atom`* with a bitwise `exclusive or` of *`Value`* and the current value that is stored in *`Atom`*, using the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_fetch_xor_explicit"></a> `atomic_fetch_xor_explicit`
 
-Performs a bitwise `exclusive or` on a value and an existing value that is stored in an `atomic` object.
+Performs a bitwise `exclusive or` on a value and an existing value stored in an `atomic` object.
 
 ```cpp
 template <class T>
@@ -642,7 +642,7 @@ The `atomic_fetch_xor_explicit` function performs a read-modify-write operation 
 
 ## <a name="atomic_flag_clear"></a> `atomic_flag_clear`
 
-Sets the **`bool`** flag in an [`atomic_flag`](../standard-library/atomic-flag-structure.md) object to **`false`**, within the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
+Sets the **`bool`** flag in an [`atomic_flag`](../standard-library/atomic-flag-structure.md) object to **`false`**, within the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline void atomic_flag_clear(volatile atomic_flag* Flag) noexcept;
@@ -673,7 +673,7 @@ A [`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flag_test_and_set"></a> `atomic_flag_test_and_set`
 
-Sets the **`bool`** flag in an [`atomic_flag`](../standard-library/atomic-flag-structure.md) object to **`true`**, within the constraints of the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
+Sets the **`bool`** flag in an [`atomic_flag`](../standard-library/atomic-flag-structure.md) object to **`true`**, within the constraints of the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline bool atomic_flag_test_and_set(volatile atomic_flag* Flag,) noexcept;
@@ -779,7 +779,7 @@ The retrieved value that is stored in *`Atom`*.
 
 ### Remarks
 
-`atomic_load` implicitly uses the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
+`atomic_load` implicitly uses the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_load_explicit"></a> `atomic_load_explicit`
 
@@ -851,7 +851,7 @@ A value of type `Ty`.
 
 ### Remarks
 
-`atomic_store` stores *`Value`* in the object that is pointed to by *`Atom`*, within the `memory_order_seq_cst`[`memory_order`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
+`atomic_store` stores *`Value`* in the object that is pointed to by *`Atom`*, within the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum) constraint.
 
 ## <a name="atomic_store_explicit"></a> `atomic_store_explicit`
 
