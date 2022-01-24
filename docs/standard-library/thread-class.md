@@ -103,7 +103,7 @@ An estimate of the number of hardware thread contexts. If the value cannot be co
 
 `hardware_concurrency` is currently defined to return the number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously. It takes into account the number of physical processors, the number of cores in each physical processor, and simultaneous multithreading on each single core.
  
-However, on systems with more than 64 logical processors this number is capped by the number of logical processor in a single group; see [Processor Groups](/windows/win32/procthread/processor-groups).
+However, on systems with more than 64 logical processors this number is capped by the number of logical processors in a single group; see [Processor Groups](/windows/win32/procthread/processor-groups).
 
 ## <a name="id_class"></a> `id` class
 
