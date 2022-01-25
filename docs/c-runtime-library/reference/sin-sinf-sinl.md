@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_sinl", "sinf", "sinl", "sin"]
 helpviewer_keywords: ["_sinl function", "sinl function", "calculating sines", "sin function", "trigonometric functions", "sinf function"]
-ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
 ---
-# sin, sinf, sinl
+# `sin`, `sinf`, `sinl`
 
 Calculates the sine of a floating-point value.
 
@@ -30,25 +29,25 @@ long double sin(long double x);  // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Angle in radians.
 
 ## Return value
 
-The **sin** functions return the sine of *x*. If *x* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
+The **`sin`** functions return the sine of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± QNAN,IND|None|_DOMAIN|
-|± ∞ (sin, sinf, sinl)|INVALID|_DOMAIN|
+|± `QNAN`,`IND`|None|`_DOMAIN`|
+|± ∞ (`sin`, `sinf`, `sinl`)|`INVALID`|`_DOMAIN`|
 
-For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **sin** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **sin** always takes and returns **`double`**.
+Because C++ allows overloading, you can call overloads of **`sin`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`sin`** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `sin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h> sin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -56,8 +55,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header (C)|Required header (C++)|
 |-|-|-|
-|**sin**, **sinf**, **sinl**|\<math.h>|\<cmath> or \<math.h>|
-|**sin()** macro | \<tgmath.h> ||
+|**`sin`**, **`sinf`**, **`sinl`**|`<math.h>`|`<cmath>` or `<math.h>`|
+|**`sin()`** macro | `<tgmath.h>` ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -91,10 +90,10 @@ cos( 1.570796 ) = 0.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
-[_CIsin](../../c-runtime-library/cisin.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)\
+[`_CIsin`](../../c-runtime-library/cisin.md)\
