@@ -4,11 +4,10 @@ title: "<cmath>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cmath>"]
 helpviewer_keywords: ["cmath header"]
-ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6
 ---
 # `<cmath>`
 
-Includes the Standard C library header \<math.h> and adds the associated names to the `std` namespace.
+Includes the Standard C library header `<math.h>` and adds the associated names to the `std` namespace.
 
 ## Syntax
 
