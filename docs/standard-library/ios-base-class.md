@@ -4,13 +4,12 @@ description: "API reference for the Microsoft Visual C++ standard library `ios_b
 ms.date: "10/23/2020"
 f1_keywords: ["xiosbase/std::ios_base", "ios/std::ios_base::event_callback", "xiosbase/std::ios_base::fmtflags", "xiosbase/std::ios_base::iostate", "xiosbase/std::ios_base::openmode", "xiosbase/std::ios_base::seekdir", "xiosbase/std::ios_base::event", "xiosbase/std::ios_base::adjustfield", "xiosbase/std::ios_base::app", "xiosbase/std::ios_base::ate", "xiosbase/std::ios_base::badbit", "xiosbase/std::ios_base::basefield", "xiosbase/std::ios_base::beg", "xiosbase/std::ios_base::binary", "xiosbase/std::ios_base::boolalpha", "xiosbase/std::ios_base::cur", "xiosbase/std::ios_base::dec", "xiosbase/std::ios_base::end", "xiosbase/std::ios_base::eofbit", "xiosbase/std::ios_base::failbit", "xiosbase/std::ios_base::fixed", "xiosbase/std::ios_base::floatfield", "xiosbase/std::ios_base::goodbit", "xiosbase/std::ios_base::hex", "xiosbase/std::ios_base::in", "xiosbase/std::ios_base::internal", "xiosbase/std::ios_base::left", "xiosbase/std::ios_base::oct", "xiosbase/std::ios_base::out", "xiosbase/std::ios_base::right", "xiosbase/std::ios_base::scientific", "xiosbase/std::ios_base::showbase", "xiosbase/std::ios_base::showpoint", "xiosbase/std::ios_base::showpos", "xiosbase/std::ios_base::skipws", "xiosbase/std::ios_base::trunc", "xiosbase/std::ios_base::unitbuf", "xiosbase/std::ios_base::uppercase", "xiosbase/std::ios_base::failure", "xiosbase/std::ios_base::flags", "xiosbase/std::ios_base::getloc", "xiosbase/std::ios_base::imbue", "xiosbase/std::ios_base::Init", "xiosbase/std::ios_base::iword", "xiosbase/std::ios_base::precision", "xiosbase/std::ios_base::pword", "ios/std::ios_base::register_callback", "xiosbase/std::ios_base::setf", "xiosbase/std::ios_base::sync_with_stdio", "xiosbase/std::ios_base::unsetf", "xiosbase/std::ios_base::width", "xiosbase/std::ios_base::xalloc"]
 helpviewer_keywords: ["std::ios_base [C++]", "std::ios_base [C++], event_callback", "std::ios_base [C++], fmtflags", "std::ios_base [C++], iostate", "std::ios_base [C++], openmode", "std::ios_base [C++], seekdir", "std::ios_base [C++], event", "std::ios_base [C++], adjustfield", "std::ios_base [C++], app", "std::ios_base [C++], ate", "std::ios_base [C++], badbit", "std::ios_base [C++], basefield", "std::ios_base [C++], beg", "std::ios_base [C++], binary", "std::ios_base [C++], boolalpha", "std::ios_base [C++], cur", "std::ios_base [C++], dec", "std::ios_base [C++], end", "std::ios_base [C++], eofbit", "std::ios_base [C++], failbit", "std::ios_base [C++], fixed", "std::ios_base [C++], floatfield", "std::ios_base [C++], goodbit", "std::ios_base [C++], hex", "std::ios_base [C++], in", "std::ios_base [C++], internal", "std::ios_base [C++], left", "std::ios_base [C++], oct", "std::ios_base [C++], out", "std::ios_base [C++], right", "std::ios_base [C++], scientific", "std::ios_base [C++], showbase", "std::ios_base [C++], showpoint", "std::ios_base [C++], showpos", "std::ios_base [C++], skipws", "std::ios_base [C++], trunc", "std::ios_base [C++], unitbuf", "std::ios_base [C++], uppercase", "std::ios_base [C++], failure", "std::ios_base [C++], flags", "std::ios_base [C++], getloc", "std::ios_base [C++], imbue", "std::ios_base [C++], Init", "std::ios_base [C++], iword", "std::ios_base [C++], precision", "std::ios_base [C++], pword", "std::ios_base [C++], register_callback", "std::ios_base [C++], setf", "std::ios_base [C++], sync_with_stdio", "std::ios_base [C++], unsetf", "std::ios_base [C++], width", "std::ios_base [C++], xalloc"]
-ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
 ---
-# ios_base Class
+# `ios_base` Class
 
 The class describes the storage and member functions common to both input and output streams that do not depend on the template parameters. (The class template [`basic_ios`](../standard-library/basic-ios-class.md) describes what is common and is dependent on template parameters.)
 
-An object of class ios_base stores formatting information, which consists of:
+An object of class `ios_base` stores formatting information, which consists of:
 
 - Format flags in an object of type [`fmtflags`](#fmtflags).
 
@@ -20,11 +19,11 @@ An object of class ios_base stores formatting information, which consists of:
 
 - A display precision in an object of type `int`.
 
-- A locale object in an object of type `locale`.
+- A `locale` object in an object of type `locale`.
 
 - Two extensible arrays, with elements of type `long` and `void` pointer.
 
-An object of class ios_base also stores stream state information, in an object of type [`iostate`](#iostate), and a callback stack.
+An object of class `ios_base` also stores stream state information, in an object of type [`iostate`](#iostate), and a callback stack.
 
 ## Members
 
@@ -90,9 +89,9 @@ An object of class ios_base also stores stream state information, in an object o
 
 |Name|Description|
 |-|-|
-|[`failure`](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in class template [basic_ios](../standard-library/basic-ios-class.md).|
+|[`failure`](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in class template [`basic_ios`](../standard-library/basic-ios-class.md).|
 |[`flags`](#flags)|Sets or returns the current flag settings.|
-|[`getloc`](#getloc)|Returns the stored locale object.|
+|[`getloc`](#getloc)|Returns the stored `locale` object.|
 |[`imbue`](#imbue)|Changes the locale.|
 |[`Init`](#init)|Creates the standard `iostream` objects when constructed.|
 |[`iword`](#iword)|Assigns a value to be stored as an `iword`.|
@@ -113,9 +112,9 @@ An object of class ios_base also stores stream state information, in an object o
 
 ## Requirements
 
-**Header:** \<ios>
+**Header:** `<ios>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## <a name="event"></a> `event`
 
@@ -348,7 +347,7 @@ For examples of functions that modify these format flags, see [`<iomanip>`](../s
 
 ## <a name="getloc"></a> `getloc`
 
-Returns the stored locale object.
+Returns the stored `locale` object.
 
 ```cpp
 locale getloc() const;
@@ -356,7 +355,7 @@ locale getloc() const;
 
 ### Return Value
 
-The stored locale object.
+The stored `locale` object.
 
 ### Example
 
@@ -395,7 +394,7 @@ The previous locale.
 
 ### Remarks
 
-The member function stores *`_Loc`* in the locale object and then reports the callback event and `imbue_event`. It returns the previous stored value.
+The member function stores *`_Loc`* in the `locale` object and then reports the callback event and `imbue_event`. It returns the previous stored value.
 
 ### Example
 
@@ -415,7 +414,7 @@ The nested class describes an object whose construction ensures that the standar
 
 ## <a name="ios_base"></a> `ios_base`
 
-Constructs ios_base objects.
+Constructs `ios_base` objects.
 
 ```cpp
 ios_base();
@@ -423,7 +422,7 @@ ios_base();
 
 ### Remarks
 
-The (protected) constructor does nothing. A later call to `basic_ios::`[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for class template [basic_ios](../standard-library/basic-ios-class.md).
+The (protected) constructor does nothing. A later call to `basic_ios::`[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class `ios_base` is as a base class for class template [`basic_ios`](../standard-library/basic-ios-class.md).
 
 ## <a name="iostate"></a> `iostate`
 
@@ -505,7 +504,7 @@ The opening mode for several `iostream` objects. The flag values are:
 | `binary`| Open in binary mode. (See [`fopen`](../c-runtime-library/reference/fopen-wfopen.md) for a description of binary mode.)|
 | `in` |   Open for reading |
 | `out` | Open for writing |
-| `trunc` | delete the contents of the file after open |
+| `trunc` | Delete the contents of the file after open |
 
 ### Example
 
@@ -527,7 +526,7 @@ int main ( )
 
 ## <a name="op_eq"></a> `operator=`
 
-The assignment operator for ios_base objects.
+The assignment operator for `ios_base` objects.
 
 ```cpp
 ios_base& operator=(const ios_base& right);
@@ -564,11 +563,11 @@ The number of significant digits to display, or the number of digits after the d
 
 ### Return Value
 
-The first member function returns the stored [display precision](../standard-library/ios-base-class.md). The second member function stores *_Prec* in the display precision and returns its previous stored value.
+The first member function returns the stored [display precision](../standard-library/ios-base-class.md). The second member function stores *`_Prec`* in the display precision and returns its previous stored value.
 
 ### Remarks
 
-Floating-point numbers are displayed in fixed notation with [fixed](../standard-library/ios-functions.md#fixed).
+Floating-point numbers are displayed in fixed notation with [`fixed`](../standard-library/ios-functions.md#fixed).
 
 ### Example
 
@@ -854,7 +853,7 @@ Previous setting for this function.
 
 ### Remarks
 
-The static member function stores a `stdio` sync flag, which is initially `true`. When `true`, this flag ensures that operations on the same file are properly synchronized between the [`iostreams`](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+The static member function stores a `stdio` sync flag, which is initially `true`. When `true`, this flag ensures that operations on the same file are properly synchronized between the [`iostreams`](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *`_Sync`* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
 ## <a name="unsetf"></a> `unsetf`
 
