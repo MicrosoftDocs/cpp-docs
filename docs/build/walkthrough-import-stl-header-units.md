@@ -62,7 +62,7 @@ Set project properties to share the header units from this project:
 1. Change the **Configuration Type** option to **Static library (.lib)**.
 1. Change **C++ Language Standard** to **ISO C++20 Standard (/std:c++20)** or later. In versions before Visual Studio 2019 version 16.11, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.
 1. In the left pane of the project property pages dialog, select **C/C++** > **General**.
-1. In the **Scan Sources for Module Dependencies** list, select **Yes** (this just helps ensure that all dependencies that can be built into a header unit will be):
+1. In the **Scan Sources for Module Dependencies** list, select **Yes** (this helps ensure that all dependencies that can be built into a header unit will be):
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the scan module dependencies property setting.":::
 1. Choose **OK** to close the project property pages dialog. Build the solution by selecting **Build** > **Build Solution** on the main menu.
 
