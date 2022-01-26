@@ -57,7 +57,7 @@ int main() { }
 
 The **`/translateInclude`** option allows the compiler to treat an `#include` as an `import` for header files that have a corresponding compiled header unit file (*`.ifc`*) and that have been specified on the command line via the `/headerUnit` switch.
 
-For an `#include` to be treated as an import, it must be on the list of header files that can compile into header units. This list is stored in a [`header-units.json`](./reference/header-unit-json-reference.md) file.
+For an `#include` to be treated as an import, it must be on the list of header files that can compile into header units. This list is stored in a [`header-units.json`](header-unit-json-reference.md) file.
 
 If an `#include` is found that doesn't have a corresponding header unit specified via the `/headerUnit` switch, or it isn't listed in the `header-units.json`] file, it's processed by the preprocessor as a normal `#include` directive.
 
