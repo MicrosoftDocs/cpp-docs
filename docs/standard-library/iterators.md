@@ -3,7 +3,6 @@ description: "Learn more about: Iterators"
 title: "Iterators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["iterator conventions", "C++ Standard Library, iterator conventions"]
-ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
 ---
 # Iterators
 
