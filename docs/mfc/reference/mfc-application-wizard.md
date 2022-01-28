@@ -56,15 +56,15 @@ This wizard page describes the current application settings for the MFC applicat
 
 - [Generated Classes, MFC Application Wizard](../../mfc/reference/generated-classes-mfc-application-wizard.md)
 
-  - The project's view class is derived from the [CView Class](../../mfc/reference/cview-class.md).
+  - The project's view class is derived from the [`CView` Class](../../mfc/reference/cview-class.md).
 
-  - The project's application class is derived from the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).
+  - The project's application class is derived from the [`CWinAppEx` Class](../../mfc/reference/cwinappex-class.md).
 
-  - The project's document class is derived from the [CDocument Class](../../mfc/reference/cdocument-class.md).
+  - The project's document class is derived from the [`CDocument` Class](../../mfc/reference/cdocument-class.md).
 
-  - The project's main frame class is derived from the [CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md).
+  - The project's main frame class is derived from the [`CMDIFrameWndEx` Class](../../mfc/reference/cmdiframewndex-class.md).
 
-  - The project's child frame class is derived from the [CMDIChildWndEx Class](../../mfc/reference/cmdichildwndex-class.md).
+  - The project's child frame class is derived from the [`CMDIChildWndEx` Class](../../mfc/reference/cmdichildwndex-class.md).
 
 To change these default settings, select the appropriate tab title in the left column of the wizard and make the changes on the page that appears.
 

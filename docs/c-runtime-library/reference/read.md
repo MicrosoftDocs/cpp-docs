@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_read"]
 helpviewer_keywords: ["data [CRT]", "_read function", "read function", "data [C++], reading", "reading data [C++]", "files [C++], reading"]
-ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
 ---
-# _read
+# `_read`
 
 Reads data from a file.
 
@@ -26,30 +25,30 @@ int _read(
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*\
 File descriptor referring to the open file.
 
-*buffer*<br/>
+*`buffer`*\
 Storage location for data.
 
-*buffer_size*<br/>
+*`buffer_size`*\
 Maximum number of bytes to read.
 
 ## Return Value
 
-**_read** returns the number of bytes read, which might be less than *buffer_size* if there are fewer than *buffer_size* bytes left in the file, or if the file was opened in text mode. In text mode, each carriage return-line feed pair `\r\n` is replaced with a single line feed character `\n`. Only the single line feed character is counted in the return value. The replacement does not affect the file pointer.
+**`_read`** returns the number of bytes read, which might be less than *`buffer_size`* if there are fewer than *`buffer_size`* bytes left in the file, or if the file was opened in text mode. In text mode, each carriage return-line feed pair `\r\n` is replaced with a single line feed character `\n`. Only the single line feed character is counted in the return value. The replacement does not affect the file pointer.
 
-If the function tries to read at end of file, it returns 0. If *fd* is not valid, the file isn't open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EBADF**.
+If the function tries to read at end of file, it returns 0. If *`fd`* is not valid, the file isn't open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EBADF`**.
 
-If *buffer* is **NULL**, or if *buffer_size* > **INT_MAX**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and **errno** is set to **EINVAL**.
+If *`buffer`* is `NULL`, or if *`buffer_size`* > **`INT_MAX`**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and **`errno`** is set to **`EINVAL`**.
 
-For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about this and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_read** function reads a maximum of *buffer_size* bytes into *buffer* from the file associated with *fd*. The read operation begins at the current position of the file pointer associated with the given file. After the read operation, the file pointer points to the next unread character.
+The **`_read`** function reads a maximum of *`buffer_size`* bytes into *`buffer`* from the file associated with *`fd`*. The read operation begins at the current position of the file pointer associated with the given file. After the read operation, the file pointer points to the next unread character.
 
-If the file was opened in text mode, the read terminates when **_read** encounters a CTRL+Z character, which is treated as an end-of-file indicator. Use [_lseek](lseek-lseeki64.md) to clear the end-of-file indicator.
+If the file was opened in text mode, the read terminates when **`_read`** encounters a CTRL+Z character, which is treated as an end-of-file indicator. Use [`_lseek`](lseek-lseeki64.md) to clear the end-of-file indicator.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -57,7 +56,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_read**|\<io.h>|
+|**`_read`**|`<io.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -120,8 +119,8 @@ Read 19 bytes from file
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[fread](fread.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_write](write.md)<br/>
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)\
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`fread`](fread.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_write`](write.md)\
