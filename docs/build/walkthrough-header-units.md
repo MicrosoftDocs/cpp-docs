@@ -1,7 +1,7 @@
 ---
 description: "Learn more about C++ header units by converting a header file to a header unit using Visual Studio 2019."
 title: "Walkthrough: Build and import header units in Visual C++ projects"
-ms.date: 01/21/2022
+ms.date: 01/27/2022
 ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -10,7 +10,7 @@ helpviewer_keywords: ["import", "header unit", "ifc"]
 
 # Walkthrough: Build and import header units in Microsoft Visual C++
 
-This article is about building and importing header units using Visual Studio 2022. To learn specifically how to import Standard Template Library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md) 
+This article is about building and importing header units using Visual Studio 2022. To learn specifically how to import Standard Template Library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
 Header units are the recommended alternative to [precompiled header files](creating-precompiled-header-files.md) (PCH). They're easier to set up and use, and are more flexible than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio), but they provide similar performance benefits.
 
@@ -28,9 +28,9 @@ A related benefit of header units is that they can be imported in any order. Thi
 
 Everything visible from a header file is also visible from a header unit, including macros defined within the header unit.
 
-Before you can import a header unit, you need to compile the header file into a header unit. An advantage of header units over PCH is that they can be used in distributed builds. For example, as long as you compile the *`.ifc`* and the program that imports it with the same compiler, and target the same platform and architecture, a header unit produced on one computer can be used on another. Unlike a PCH, when a header unit changes, only it and what depends on it rebuild. Header units can be up to a magnitude smaller than a traditional `.pch`.
+Before you can import a header unit, you need to compile the header file into a header unit. An advantage of header units over PCH is that they can be used in distributed builds. For example, as long as you compile the *`.ifc`* and the program that imports it with the same compiler, and target the same platform and architecture, a header unit produced on one computer can be used on another. Unlike a PCH, when a header unit changes, only it and what depends on it rebuild. Header units can be up to a magnitude smaller in size than a traditional `.pch`.
 
-Header units require fewer constraints on the parity of compiler switches between creation of the header unit and the code that consumes it, unlike PCH. However, some switch combinations and macro definitions can create one definition rule (ODR) violations between various translation units.
+Header units impose fewer constraints on the parity of compiler switches used to create the header unit and to compile the code that consumes it, unlike PCH. However, some switch combinations and macro definitions may create one definition rule (ODR) violations between various translation units.
 
 Finally, header units are more flexible than a PCH. With a PCH, you can't choose to select to bring in only one of the headers in the PCH--the compiler must bring them all in. With header units, even when you compile them together into a static library, you only bring the contents of the header unit you import into your application.
 
@@ -42,11 +42,11 @@ Consider replacing your PCH implementation with header units. You'll get the sam
 
 There are several ways to compile a file into a header unit:
 
-- **Choose individual header units to build**. This approach gives you file-by-file control over what is treated as a header unit. It's also useful when you need to compile a file as a header unit that, because of its extension, wouldn't normally be compiled by the build system into a header unit. This approach is demonstrated in this walkthrough. See [Choose individual header units to build](#approach1), below, to get started.
+- **Choose individual header units to build**. This approach gives you file-by-file control over what is treated as a header unit. It's also useful when you need to compile a file as a header unit that, because it doesn't have the default extension (`.ixx`), wouldn't normally be compiled into a header unit. This approach is demonstrated in this walkthrough. See [Choose individual header units to build](#approach1), below, to get started.
 
-- **Build a shared header unit project**. This is the recommended approach and provides more control over the organization of the imported header units. Create a static library project that contains the header units that you want and then reference it to import the header units. For information about this approach, see [Build a header unit static library project for header units](walkthrough-import-stl-header-units.md#approach2).
+- **Build a shared header unit project**. This is the recommended approach and provides more control over the organization and reuse of the imported header units. Create a static library project that contains the header units that you want and then reference it to import the header units. For a walkthrough of this approach, see [Build a header unit static library project for header units](walkthrough-import-stl-header-units.md#approach2).
 
-- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it can't guarantee optimal build throughput. For details about this approach, see [Automatically scan for header units](#approach3) below.
+- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it can't guarantee optimal build throughput. For details about this approach, see [Automatically scan for header units](#approach3) in this topic.
 
 - As mentioned in the introduction, you can build and import STL header files as header units, and automatically treat `#include` for STL library headers as `import` without rewriting your code. To see how, refer to [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
@@ -115,19 +115,43 @@ If you want to convert only a few header files to header units, this approach is
 This approach is best suited to smaller projects because it can't guarantee optimal build throughput. That's because it scans all of your source files to find and build header units.
 
 This approach combines two Visual Studio project settings:
-- **Scan Sources for Module Dependencies** scans your project for any files, and their dependencies, that may be treated as header units but might normally be identified as header units. The files that can be treated as header units are compiled as header units and imported.
-- **Translate Includes to Imports** so that you don't have to change your code from `#include` to `import` for  files that can be treated as header units. If an `#include` refers to a header unit that exists (there's an `.IFC` for it), or to a known header unit that can be built from an `#include` file (as specified in a `header-units.json` file) then the `#include` will be treated as `import`. Otherwise, it acts as a normal `#include`.
+- **Scan Sources for Module Dependencies** scans your project for files and their dependencies that may be treated as header units.
+- **Translate Includes to Imports** When combined with **Scan Sources for Module Dependencies**, if an `#include` refers to a header file that can be compiled as a header unit (as specified in a `header-units.json` file) then the header file will be compiled as a header unit and the `#include` treated as `import`. Otherwise, it acts as a normal `#include`.
 
-You can turn on these settings in the properties for your project (right-click the project in the **Solution Explorer** and choose **Properties**):
+You can turn on these settings in the properties for your project. To do so, right-click the project in the **Solution Explorer** and choose **Properties**:
 
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the project properties screen with Configuration highlighted and All Configurations selected. Under C/C++ > General, Scan Sources for Module Dependencies is highlighted and set to yes, and Translate Includes to Imports is highlighted and set to Yes (/translateInclude)":::
 
 There are conditions under which these settings work to automatically build and import header units. They are:
 
-- **Scan Sources for Module Dependencies**  scans your sources for `#include "header";` and `include <header>;` directives. If  the `/translateInclude` switch is specified, and a `.cpp` file has `include <someFile.h>;`, but `someFile.h` isn't part of this or a referenced project, or isn't marked to build as a header unit (as described in this walkthrough above), and the header file is listed in the [`header-units.json`](./reference/header-unit-json-reference.md) file, then the compiler builds `someFile.h`into a header unit and imports it. This setting causes the compiler to scan all C++ sources, not just module interface and header unit sources, for module and header units dependencies. Whether an `#include` directive is treated as a header unit is subject to the conditions described in the next paragraph.
-- **Translate Includes to Imports** The compiler does a scan for `#include` statements that have a matching header unit file (`.ifc`) when `/translateInclude` is specified and imports the header unit instead of running the include file through the preprocessor. When combined with **Scan for dependencies**,  ensures that all the header units that can be found by the build system will be found, as described above. An allow-list is used to decide which header files can compile into header units. This list is stored in a [`header-units.json`](./reference/header-unit-json-reference.md) file that must be in the same directory as the included file. You can see an example of a `header-units.json` file under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json` is used by the compiler when determining whether a Standard Template Library header can be compiled into a header unit. This functionality exists to serve as a bridge with legacy code to get some benefits of header units.
+- **Scan Sources for Module Dependencies**  scans your sources for any files, and their dependencies, that may be treated as header units. This includes `import` statements , and if `/translateInclude` is specified, also `#include` directives. A dependency graph is built of all the modules and header units in your project.
+- **Translate Includes to Imports** The compiler scans for `#include` statements. If a matching header unit file (`.ifc`) exists for the specified header file, the compiler imports the header unit instead of running the header file through the preprocessor. When combined with **Scan for dependencies**,  the compiler finds all of the header files that can be compiled into header units. An allow-list is consulted by the compiler to decide which header files can compile into header units. This list is stored in a [`header-units.json`](./reference/header-unit-json-reference.md) file that must be in the same directory as the included file. You can see an example of a `header-units.json` file under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json` is used by the compiler when determining whether a Standard Template Library header can be compiled into a header unit. This functionality exists to serve as a bridge with legacy code to get some benefits of header units.
+
+The `header-units.json` file serves two roles. In addition to specifying which header files can be compiled into header units, it helps minimize duplicated symbols and thus increase build throughput. For instance, given:
+
+```cpp
+a.h:
+#include "b.h"
+ 
+c.h:
+#include "b.h"
+ 
+Source.cpp
+import "a.h";
+import "c.h";
+```
+
+If the compiler built header units for `a.h`, `b.h` and `c.h`, then the compiled header units `a.h.ifc`, `b.h.ifc`, and `c.h.ifc` would each contain all of the types from `b.h`. Compiling `Source.cpp` (which imports both `a.h` and `c.h`) would require the compiler to deduplicate the `b.h` types, which would impact build performance.
+
+But if there is a `header-units.json` in the `b.h` directory, and `/translateInclude` is specified, the following happens:
+
+1. The scan of `a.h` and `c.h` will list `b.h` as a header unit import in the dependency scan files generated by the compiler.
+2. The build system will read the dependency scan files and determine to build `b.h.ifc` first.
+3. Then the build system will add `/headerUnit` for `b.h.ifc` to the command lines for compiling `a.h` and `c.h`. It will call the compiler to build the header units `a.h.ifc` and `c.h.ifc`. Because `/translateInclude` is specified, and `/headerUnit for b.h.ifc` is also specified, `a.h.ifc` and `c.h.ifc` won't contain `b.h` types and there won't be any duplication in the produced header units.
 
 These switches and the `header-unit.json` provide some of the benefits of header units. The convenience comes at the cost of build throughput. This approach might not be the best for larger projects because it doesn't guarantee optimal build times. The same header files may be encountered and reprocessed repeatedly, which will increase build time. However, the convenience may be worth it to you depending on your project.
+
+For an example of how this technique is used to import STL header files as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2).
 
 These features are designed for legacy code. For new code, we highly recommend that you move to modules instead of header units or `#include` files. For a tutorial on using modules, see [Name modules tutorial (C++)](../cpp/tutorial-named-modules-cpp.md).
 

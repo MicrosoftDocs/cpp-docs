@@ -1,7 +1,7 @@
 ---
 title: "/translateInclude (Translate include directives into import directives)"
 description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
-ms.date: 01/21/2022
+ms.date: 01/27/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/translateInclude"]
@@ -9,7 +9,9 @@ helpviewer_keywords: ["/translateInclude", "Translate include directives into im
 ---
 # `/translateInclude` (Translate include directives into import directives)
 
-Instructs the compiler to treat `#include` as `import` for those headers that have been prebuilt into a header unit (`.ifc`) file.
+This switch has two functions:
+* Instructs the compiler to treat `#include` as `import` for header files that have been built into header unit (`.ifc`) files and that are specified on the command line with [`/headerUnit` (Use header unit IFC)](headerunit.md).
+* When used in conjunction with [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies-directives`](sourcedependencies-directives.md) and a [`header-units.json`](header-unit-json-reference.md) file (which specifies which header files can be compiled as header units), the compiler generates a JSON file that lists module and header-unit dependencies according to C++ Standard proposal [`P1689R3`](https://wg21.link/P1689r3). This dependency file is used by the build system to generate compiled header unit files (`.ifc` files) and then instead of running the specified header files through the preprocessor, they are imported. For more details, see [Walkthrough: Build and import header units in Microsoft Visual C++](../build/walkthrough-header-units.md).
 
 ## Syntax
 
@@ -17,55 +19,31 @@ Instructs the compiler to treat `#include` as `import` for those headers that ha
 
 ## Remarks
 
-The **`/translateInclude`** compiler option requires you enable the [/std:c++20](std-specify-language-standard-version.md) or later option (such as **`/std:c++latest`**).\
+The **`/translateInclude`** compiler option requires [/std:c++20](std-specify-language-standard-version.md) or a later option such as **`/std:c++latest`**.\
 `/translateInclude` is available starting in Visual Studio 2019 version 16.10.
 
-This switch only applies to `#include` statements, and only to header files that were either prebuilt into a header unit (`.ifc`) file or are specified in a `header-unit.json` file which lists which header files can be compiled into header units. The `header-unit.json` file must be in the same directory as the included file. You can see an example of a `header-units.json` file under the installation directory for Visual Studio (`%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`). The `header-units.json` file is used by the compiler to determine whether a Standard Template Library header can be compiled as a header unit. If the `#include` file isn't listed in the `header-units.json` file, it's treated as a normal `#include`. Otherwise, the included header file will be compiled into a header unit and treated as an `import` instead of an `#include`.
-The `header-units.json` file is only used when both `/translateInclude` and the IDE project setting **Scan Sources for Module Dependencies** is enabled.
+This is what the Microsoft build system does when **`/translateInclude`** and `/scanDependencies` or `/sourceDependencies:directives` is specified:
 
-The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` has been prebuilt by the build system into an importable header unit because it is listed in the `header-units.json` file that ships with Visual Studio.
+1. Get all header units and modules from referenced projects and add them, as well as their dependencies, via `/reference` and `/headerUnit` to the command line for all sources in the project.
+1. The compiler scans all of the sources that are marked to be scanned. They are marked by default based on file extension, or may be marked explicitly in the IDE. For an example of marking files explicitly, see [Walkthrough: Build and import header units in Microsoft Visual C++](../build/walkthrough-header-units.md).
+1. Read the produced dependencies JSON files. If header units dependencies are reported in the dependency files, scan those headers too.
+1. Repeat step #3 until no new header unit dependencies are reported.
+1. Create a dependency graph using all dependency data.
+1. Add `/reference` and `/headerUnit` for all directly and indirectly referenced modules and header units, as well as those from step #1.
+1. Build the scanned sources based on the order of their dependencies.  
+1. Build the rest of the sources, adding `/reference` and `/headerUnit` for all built modules and header units, their dependencies, and referenced projects from step #1.
 
-```cpp
-#include <vector>
-```
+Next, the compiler will translate `#include` to `import` when encountered in your source, and report it as a header init dependency in the scan data. As far as the build system is concerned, it looks like the code was written with `import` as long as one of the following conditions is true:
+* A `/headerUnit` for the included header is specified on the command line.
+* A `header-units.json` file exists in the header directory and it contains the header file name.
 
-The compiler replaces this directive as if you had written:
+You can see an example of a `header-units.json` file under the installation directory for Visual Studio (`%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`). This file, which is shipped with Microsoft Visual C++, is used by the compiler to determine whether a Standard Template Library header can be compiled as a header unit. If an `#include` file isn't listed in the `header-units.json` file, it's treated as a normal `#include`
 
-```cpp
-import <vector>;
-```
+The `header-units.json` file is only consulted when both `/translateInclude` and `/scanDependencies` or `/sourceDependencies:directives` is specified.
 
-In MSVC, available header units are made available by the **`/headerUnit`** option, which maps a header file to its corresponding importable header unit, assuming one has been built. For more information, see [`/headerUnit` (Specify where to find the header unit file (`.ifc`) for the specified header)](headerunit.md).
+### Example
 
-### Examples
-
-Given a project that references two header files and their header units, listed in this table:
-
-| Header file | IFC file |
-|--|--|
-| *`C:\utils\util.h`* | *`C:\util.h.ifc`* |
-| *`C:\app\app.h`* | *`C:\app.h.ifc`* |
-
-And a source *`.cpp`* file that includes the headers,
-
-```cpp
-#include "utils/util.h"
-#include "app/app.h"
-
-int main() { }
-```
-
-The **`/translateInclude`** option allows the compiler to treat an `#include` as an `import` for header files that have a corresponding compiled header unit file (*`.ifc`*) and that have been specified on the command line via the `/headerUnit` switch.
-
-For an `#include` to be treated as an import, it must be on the list of header files that can compile into header units. This list is stored in a [`header-units.json`](header-unit-json-reference.md) file.
-
-If an `#include` is found that doesn't have a corresponding header unit specified via the `/headerUnit` switch, or it isn't listed in the `header-units.json`] file, it's processed by the preprocessor as a normal `#include` directive.
-
- This example command line translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
-
-```CMD
-cl /IC:\ /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
-```
+For an example, see  [Walkthrough: Build and import header units in Microsoft Visual C++](../build/walkthrough-header-units.md).
 
 ## To set this compiler option in Visual Studio
 
@@ -79,4 +57,6 @@ To enable `/translateInclude`, set the **Translate Includes to Imports** option 
 
 [`/headerUnit` (Use header unit IFC)](headerunit.md).\
 [`/exportHeader` (Create header units)](module-exportheader.md)\
-[`/reference` (Use named module IFC)](module-reference.md)
+[`/reference` (Use named module IFC)](module-reference.md)\
+[`/scanDependencies`](scandependencies.md)\
+[`/sourceDependencies-directives`](sourcedependencies-directives.md)
