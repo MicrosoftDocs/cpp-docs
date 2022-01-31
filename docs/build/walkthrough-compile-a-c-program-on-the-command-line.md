@@ -61,7 +61,7 @@ If you've installed Microsoft Visual C++ Build Tools 2015 on Windows 10 or later
 
 If you're using a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
-Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
+Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` (or `CL`, case doesn't matter for the compiler name, but it does matter for compiler options). The output should look something like this:
 
 ```Output
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl

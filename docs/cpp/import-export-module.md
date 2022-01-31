@@ -32,7 +32,7 @@ In an interface file, use the **`export`** modifier on names that are intended t
 
 export module ModuleA;
 
-namespace Bar
+namespace ModuleA_NS
 {
    export int f();
    export double d();
@@ -48,9 +48,9 @@ Non-exported names are not visible to code that imports the module:
 import ModuleA;
 
 int main() {
-  Bar::f(); // OK
-  Bar::d(); // OK
-  Bar::internal_f(); // Ill-formed: error C2065: 'internal_f': undeclared identifier
+  ModuleA_NS::f(); // OK
+  ModuleA_NS::d(); // OK
+  ModuleA_NS::internal_f(); // Ill-formed: error C2065: 'internal_f': undeclared identifier
 }
 ```
 
@@ -58,7 +58,7 @@ The **`export`** keyword may not appear in a module implementation file. When **
 
 ## import
 
-Use an **import** declaration to make a module's names visible in your program. The import declaration must appear after the module declaration and after any #include directives, but before any declarations in the file.
+Use an **`import`** declaration to make a module's names visible in your program. The `import` declaration must appear after the `module` declaration and after any `#include` directives, but before any declarations in the file.
 
 ```cpp
 module ModuleA;
@@ -100,7 +100,7 @@ int i; module ;
 
 **Microsoft Specific**
 
-In Microsoft C++, the tokens **import** and **module** are always identifiers and never keywords when they are used as arguments to a macro.
+In Microsoft C++, the tokens **`import`** and **`module`** are always identifiers and never keywords when they are used as arguments to a macro.
 
 ### Example
 

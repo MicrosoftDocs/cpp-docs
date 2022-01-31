@@ -297,7 +297,7 @@ MSVC supports these additional predefined macros.
   - Available beginning with Visual Studio 2019 version 16.5: Defined as 0 when the preprocessor conformance mode [`/Zc:preprocessor`](../build/reference/zc-preprocessor.md) compiler option is set. Defined as 1 by default, or when the `/Zc:preprocessor-` compiler option is set, to indicate the traditional preprocessor is in use (essentially, `/Zc:preprocessor` replaces the deprecated `/experimental:preprocessor`).
 
    ```cpp
-   #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
+   #if !defined(_MSVC_TRADITIONAL) || _MSVC_TRADITIONAL
    // Logic using the traditional preprocessor
    #else
    // Logic using cross-platform compatible preprocessor
