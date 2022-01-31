@@ -1,7 +1,7 @@
 ---
 title: "/translateInclude (Translate include directives into import directives)"
 description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
-ms.date: 01/28/2022
+ms.date: 01/31/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/translateInclude"]
@@ -11,7 +11,7 @@ helpviewer_keywords: ["/translateInclude", "Translate include directives into im
 
 This switch has two functions:
 * Instructs the compiler to treat `#include` as `import` for header files that have been built into header unit (`.ifc`) files and that are specified on the command line with [`/headerUnit` (Use header unit IFC)](headerunit.md).
-* When used in conjunction with [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies-directives`](sourcedependencies-directives.md) and a [`header-units.json`](header-unit-json-reference.md) file (which specifies which header files can be compiled as header units), the compiler generates a JSON file that lists module and header-unit dependencies according to C++ Standard proposal [`P1689R3`](https://wg21.link/P1689r3). This dependency file is used by the build system to generate compiled header unit files (`.ifc` files). Then, instead of running the specified header files through the preprocessor, they are imported. For more details, see [Walkthrough: Build and import header units in Microsoft Visual C++](../walkthrough-header-units.md).
+* When used in conjunction with [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies-directives`](sourcedependencies-directives.md), the compiler lists headers that are included both in the source and also listed in a [`header-units.json`](header-unit-json-reference.md) file as imported header units in the generated dependency file. This dependency file is used by the build system to generate compiled header unit files (`.ifc` files). Then, instead of running the specified header files through the preprocessor, they are imported. For more details, see [Walkthrough: Build and import header units in Microsoft Visual C++](../walkthrough-header-units.md).
 
 ## Syntax
 
@@ -22,7 +22,7 @@ This switch has two functions:
 `/translateInclude` is available starting in Visual Studio 2019 version 16.10.\
 The **`/translateInclude`** compiler option requires [/std:c++20](std-specify-language-standard-version.md) or a later option such as **`/std:c++latest`**.
 
-This following outlines what the Microsoft build system does when **`/translateInclude`** and `/scanDependencies` or `/sourceDependencies:directives` is specified:
+This following outlines what the Microsoft build system does when **`/translateInclude`** and [`/scanDependencies`]() or [`/sourceDependencies:directives`](sourcedependencies-directives.md) is specified:
 
 1. Get all header units and modules from referenced projects and add them, as well as their dependencies, via `/reference` and `/headerUnit` to the command line for all sources in the project.
 1. The compiler scans all of the sources that are marked to be scanned. They are marked by default based on file extension, or may be marked explicitly in the IDE. For an example of marking files explicitly, see [Walkthrough: Build and import header units in Microsoft Visual C++](../walkthrough-header-units.md).

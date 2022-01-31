@@ -23,7 +23,7 @@ Starting in Visual Studio 2019 version 16.5, preprocessor support for the C++20 
 You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [`_MSVC_TRADITIONAL`](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conforming preprocessor.
 
 ```cpp
-#if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
+#if !defined(_MSVC_TRADITIONAL) || _MSVC_TRADITIONAL
 // Logic using the traditional preprocessor
 #else
 // Logic using cross-platform compatible preprocessor
@@ -64,7 +64,7 @@ int myVal;
 The traditional preprocessor incorrectly combines a string prefix to the result of the [stringizing operator (#)](stringizing-operator-hash.md) operator:
 
 ```cpp
- #define DEBUG_INFO(val) L"debug prefix:" L#val
+#define DEBUG_INFO(val) L"debug prefix:" L#val
 //                                       ^
 //                                       this prefix
 

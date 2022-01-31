@@ -116,19 +116,21 @@ This approach is best suited to smaller projects because it can't guarantee opti
 
 This approach combines two Visual Studio project settings:
 
-- **Scan Sources for Module Dependencies** scans your project for files and their dependencies that may be treated as header units. When combined with **Translate Includes to Imports**, header files that are specified in a `header-units.json` file are compiled into header units.
+- **Scan Sources for Module Dependencies** causes the build system to call the compiler to ensure that all imported modules and header units are built before compiling the file that depends on them.  When combined with **Translate Includes to Imports**, header files that are specified in a `header-units.json` file are also compiled into header units.
 - **Translate Includes to Imports** If an `#include` refers to a header file that can be compiled as a header unit (as specified in a `header-units.json` file), and a compiled header unit is available for the header file, then the header file is treated treated as `import`. Otherwise, it acts as a normal `#include`.
 
 You can turn on these settings in the properties for your project. To do so, right-click the project in the **Solution Explorer** and choose **Properties**:
 
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the project properties screen with Configuration highlighted and All Configurations selected. Under C/C++ > General, Scan Sources for Module Dependencies is highlighted and set to yes, and Translate Includes to Imports is highlighted and set to Yes (/translateInclude)":::
 
+**Scan Sources for Module Dependencies option** can be set for all of the files in the project (in **Project Properties** as shown above) or for individual files in **File Properties**. Modules and header units are always scanned. Set this option is when you have a `.cpp` file that imports header units that aren't built yet and that you want to build automatically.
+
 There are conditions under which these settings work to automatically build and import header units. They are:
 
 - **Scan Sources for Module Dependencies**  scans your sources for files, and their dependencies, that may be treated as header units. Files that have the extension `.ixx`, and those which have their **File properties** > **C/C++** > **Compile As** property set to **Compile as C++ Header Unit (/export)**, are always scanned regardless of this setting. The compiler also looks for `import` statements to identify header unit dependencies. If `/translateInclude` is specified, the compiler also scans for `#include` directives that could be treated as header units. A dependency graph is built of all the modules and header units in your project.
 - **Translate Includes to Imports** When the compiler encounters an `#include` statement, and a matching header unit file (`.ifc`) exists for the specified header file, the compiler imports the header unit instead of running the header file through the preprocessor. When combined with **Scan for dependencies**, the compiler finds all of the header files that can be compiled into header units. An allow-list is consulted by the compiler to decide which header files can compile into header units. This list is stored in a [`header-units.json`](./reference/header-unit-json-reference.md) file that must be in the same directory as the included file. You can see an example of a `header-units.json` file under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json` is used by the compiler when determining whether a Standard Template Library header can be compiled into a header unit. This functionality exists to serve as a bridge with legacy code to get some benefits of header units.
 
-The `header-units.json` file serves two roles. In addition to specifying which header files can be compiled into header units, it helps minimize duplicated symbols and thus increase build throughput. For instance, given:
+The `header-units.json` file serves two roles. In addition to specifying which header files can be compiled into header units, it minimizes duplicated symbols to increase build throughput. For instance, given:
 
 ```cpp
 a.h:

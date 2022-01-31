@@ -96,7 +96,7 @@ Expressions can use the following operators. The operators of equal precedence a
 | **`~`** | Unary one's complement. |
 | **`-`** | Unary negation. |
 |  |  |
-| **`*`*** | Multiplication. |
+| **`*`** | Multiplication. |
 | **`/`** | Division. |
 | **`%`** | Modulus (remainder). |
 |  |  |
@@ -120,7 +120,7 @@ Expressions can use the following operators. The operators of equal precedence a
 |  |  |
 | **`&&`** | Logical AND. |
 |  |  |
-| **` |  | `** | Logical OR. |
+| **` || `** | Logical OR. |
 
 > [!NOTE]
 > The bitwise XOR operator (**`^`**) is the same as the escape character, and must be escaped (as **`^^`**) when it's used in an expression.

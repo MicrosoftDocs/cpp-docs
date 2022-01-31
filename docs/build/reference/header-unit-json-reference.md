@@ -1,7 +1,7 @@
 ---
 description: "Reference for header-units.json file"
 title: "C++ header unit.json reference"
-ms.date: 01/11/2022
+ms.date: 01/31/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["header-units.json"]
@@ -10,15 +10,38 @@ helpviewer_keywords: ["header-units.json", "header unit"]
 
 # C++ header-units.json reference
 
-The `header-units.json` file lists which header files can be automatically built by the build system into header units, and then treated as an `import` instead of an `#include`.
+The `header-units.json` file lists which header files can be built by the build system into header units. This file must be in the same directory as the header files being included. This file is only used when [/translateInclude](translateinclude.md) is specified along with either [/scanDependencies](scandependencies.md) or [/sourceDependencies:directives]([`/sourceDependencies`](sourcedependencies.md).
 
-Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` at compile time to determine its behavior. Using `#define` can't be used to change the behavior of a header unit, so `<cassert>` shouldn't be compiled into a header unit because it wouldn't provide the expected behavior.
+## Rationale
 
-When the command-line switch [`/translateInclude` (Translate include directives into import directives)](translateinclude.md) is used, the build system looks for `#include` files that can be compiled as header units.
+Some header files can't be compiled into header units. For example, given `a.h`, `b.h` and `macros.h` which are all in the same directory:
 
-There's an allowlist for the Standard Template Library (STL) headers that the build system consults when `/translateInclude` is used. The build system uses it to determine whether to create a header unit for an STL header file, and for its dependencies. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
+**a.h**
+```cpp
+#include "macros.h" // #defines MACRO=1
+#ifdef MACRO
+#include "b.h"
+#endif
+```
+
+The `header-units.json` in this directory can contain `a.h` and `b.h`, but not `macros.h`. It would look something like this:
+
+```json
+{
+    "Version": "1.0",
+    "BuildAsHeaderUnits": [
+        // macros.h should not be listed
+        "a.h",
+        "b.h"         
+     ] 
+}
+```
+
+The reason `macros.h` can't be listed in the `headerunits.json` file is that during the scan phase, the header unit (`.ifc`) may not be compiled yet for `macros.h`, so `MACRO` may not be defined whn `a.h` is compiled. That results in `b.h` missing from the list of dependencies for `a.h`, so the build system won't build a header unit for `b.h` despite it being listed in the `header-units.json` file. To avoid this problem, which results from a dependency on a macro in another header file, the header file defining the macro is excluded from the list of header files that can be compiled into a header unit.
 
 ## Schema
+
+There's a `headerunits.json` file for the Standard Template Library (STL) headers. The build system uses it to determine whether to create a header unit for an STL header file, and for its dependencies. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
 
 You can see the `header-units.json` file under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`
 
