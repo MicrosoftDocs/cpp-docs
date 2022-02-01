@@ -11,7 +11,7 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 
 This command-line option generates a JSON file that lists module and header-unit dependencies.
 
-It identifies which modules and header units need to be compiled before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
+It identifies which modules and header units to compile before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
 
 This command-line option is similar to [`/sourceDependencies`](sourcedependencies.md), but differs in the following ways:
 
@@ -50,7 +50,7 @@ All file paths appear as absolute paths in the output.
 
 This switch is used in combination with [`/translateInclude`](translateinclude.md).
 
-`header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files found in the source files that are scanned, that are also listed in `header-units.json`, are considered eligible to be compiled into header units. Files not in the list are treated as a normal `#include`.
+`header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files found in the source files that are scanned, that are also listed in `header-units.json`, are considered eligible to compile into header units. Files not in the list are treated as a normal `#include`.
 
 The compiler looks for `header-units.json` where the header being loaded is located. For more information about the format of this file, see [C++ header-units.json reference](header-unit-json-reference.md)
 
@@ -94,7 +94,7 @@ This command line produces a JSON file *`output.json`* with content like:
 }
 ```
 
-We've used `...` to abbreviate the reported paths. The report will contain the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
+The previous example uses `...` to abbreviate the reported paths. The report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you might want to check your project's include path settings.
 
 `ProvidedModule` lists exported module or module partition names.
 

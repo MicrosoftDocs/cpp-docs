@@ -10,11 +10,13 @@ helpviewer_keywords: ["header-units.json", "header unit"]
 
 # C++ header-units.json reference
 
-The `header-units.json` file lists which header files can be built into header units. This file must be in the same directory as the header files being included. This file is only used when [`/translateInclude`](translateinclude.md) is specified along with either [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies:directives`]((sourcedependencies-directives.md).
+The `header-units.json` file lists which header files can be built into header units. This file must be in the same directory as the included header files. This file is only used when [`/translateInclude`](translateinclude.md) is specified along with either [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies:directives`]((sourcedependencies-directives.md).
 
 ## Rationale
 
-Some header files can't be compiled into header units. For example, given `a.h`, `b.h` and `macros.h` which are all in the same directory:
+Some header files can't be safely translated to header units. Header files that use macros that aren't defined on the command line, or aren't defined in the header files included by this header, can't be built as header units.
+
+If a header defines macros which affect whether other headers are included, it cannot be safely translated. For example, given `a.h`, `b.h` and `macros.h`, which are all in the same directory:
 
 ```cpp
 // a.h
@@ -38,9 +40,9 @@ The `header-units.json` in this directory can contain `a.h` and `b.h`, but not `
 }
 ```
 
-The reason `macros.h` can't be listed in this `header-units.json` file is that during the scan phase, the header unit (`.ifc`) may not be compiled yet for `macros.h`. So `MACRO` may not be defined when `a.h` is compiled. That means `b.h` will be missing from the list of dependencies for `a.h`. Because it isn't in the list of dependencies, the build system won't build a header unit for `b.h` despite it being listed in the `header-units.json` file.
+The reason `macros.h` can't be listed in this `header-units.json` file is that during the scan phase, the header unit (`.ifc`) might not be compiled yet for `macros.h`. In that case, `MACRO` won't be defined when `a.h` is compiled. That means `b.h` will be missing from the list of dependencies for `a.h`. Because it isn't in the list of dependencies, the build system won't build a header unit for `b.h` despite it being listed in the `header-units.json` file.
 
-To avoid this problem when there is a dependency on a macro in another header file, the header file defining the macro is excluded from the list of those that can be compiled into a header unit.
+To avoid this problem when there is a dependency on a macro in another header file, the header file that defines the macro is excluded from the list of those that can be compiled into a header unit. This way the header file that defines the macro is treated as an `#include` and `MACRO` will be visible so that `b.h` is included and listed as one of the dependencies.
 
 ## Schema
 
@@ -74,7 +76,7 @@ The schema also supports comments, as shown here:
 
 ## Search rules
 
-The build system looks for this file in the same directory as the header file being processed. If your library is organized into subdirectories, each subdirectory needs its own `header-units.json` file.
+The compiler looks for this file in the same directory as the header file being processed. If your library is organized into subdirectories, each subdirectory needs its own `header-units.json` file.
 
 ## See also
 

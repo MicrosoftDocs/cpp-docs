@@ -29,7 +29,7 @@ The name of a file that contains compiled header unit information. To import mor
 
 The **`/headerUnit`** compiler option requires the [`/std:c++20`](std-specify-language-standard-version.md) or later compiler option (such as **`/std:c++latest`**).
 
-The **`/headerUnit`** compiler option is available starting in Visual Studio 2019 version 16.10.
+The **`/headerUnit`** compiler option is available in Visual Studio 2019 version 16.10, or later.
 
 When the compiler comes across `import "file";` or `import <file>;`, this compiler option helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
 
@@ -39,9 +39,9 @@ When the compiler comes across `import "file";` or `import <file>;`, this compil
 
 **`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
 
-The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. While mapping multiple *`header-name`* arguments to a single *`.ifc`* is possible, we don't recommend it. The contents of the *`.ifc`* get imported as if it was only the header specified by *`header-name`*.
+The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. While mapping multiple *`header-name`* arguments to a single *`.ifc`* is possible, it isn't recommended. The contents of the *`.ifc`* get imported as if it was only the header specified by *`header-name`*.
 
-The compiler implicitly enables the new preprocessor when this option is used. That is, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler if any form of `/headerUnit` is specified on the command line. To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
+The compiler implicitly enables the new preprocessor when this option is used. If any form of `/headerUnit` is specified on the command line, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler . To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
 
 If you disable the new preprocessor, but a file you compile imports a header unit, the compiler will report an error.
 
