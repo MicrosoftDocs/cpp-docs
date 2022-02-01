@@ -61,4 +61,4 @@ These routines operate on null-terminated single-byte character, wide-character,
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)\
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
