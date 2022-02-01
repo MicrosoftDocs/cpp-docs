@@ -1,7 +1,7 @@
 ---
 description: "Learn to use header units to import C++ Standard Template Library (STL) libraries in Visual Studio."
 title: "Walkthrough: Import STL libraries as header units"
-ms.date: 01/28/2022
+ms.date: 01/31/2022
 ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -21,7 +21,7 @@ To use header units, use Visual Studio 2019 16.10 or later.
 
 ## Two approaches to import STL headers as header units
 
-Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file and ends with an *`.ifc`* extension.
+Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file that ends with an *`.ifc`* extension.
 
 [The recommended approach](#approach1) is to create a static library that contains the built header units for the STL headers you want to use. Then reference that library and `import` its header units. This can result in faster builds and better reuse.
 

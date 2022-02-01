@@ -71,7 +71,7 @@ The schema also supports comments, as shown below:
 
 ## Search rules
 
-The build system looks for this file in the same directory as the header file being processed. If your library is organized into subdirectories, each subdirectory will need its own `header-units.json` file.
+The build system looks for this file in the same directory as the header file being processed. If your library is organized into subdirectories, each subdirectory needs its own `header-units.json` file.
 
 ## See also
 

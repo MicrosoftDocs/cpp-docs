@@ -10,7 +10,7 @@ helpviewer_keywords: ["import", "header unit", "ifc"]
 
 # Walkthrough: Build and import header units in Microsoft Visual C++
 
-This article is about building and importing header units using Visual Studio 2022. To learn specifically how to import Standard Template Library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
+This article is about building and importing header units using Visual Studio 2022. To learn how to import Standard Template Library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
 Header units are the recommended alternative to [precompiled header files](creating-precompiled-header-files.md) (PCH). They're easier to set up and use, and are more flexible than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio), but they provide similar performance benefits.
 
@@ -46,7 +46,7 @@ There are several ways to compile a file into a header unit:
 
 - **Build a shared header unit project**. This is the recommended approach and provides more control over the organization and reuse of the imported header units. Create a static library project that contains the header units that you want and then reference it to import the header units. For a walkthrough of this approach, see [Build a header unit static library project for header units](walkthrough-import-stl-header-units.md#approach2).
 
-- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it can't guarantee optimal build throughput. For details about this approach, see [Automatically scan for header units](#approach3) later in this topic.
+- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it can't guarantee optimal build throughput. For details about this approach, see [Automatically scan for header units](#approach3) in this topic.
 
 - As mentioned in the introduction, you can build and import STL header files as header units, and automatically treat `#include` for STL library headers as `import` without rewriting your code. To see how, refer to [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
@@ -102,7 +102,7 @@ If you want to compile a file that doesn't have an *`.h`* or *`.hpp`* extension 
 
 In the source file for the example project that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` Don't forget the trailing semicolon that's required for `import` statements.
 
-When compiling a header unit from a system header, use angle brackets: `import <file>;` If it's a header local to your project, use quotes: `import "file";`.
+When compiling a header unit from a system header, use angle brackets: `import <file>;` If it's a header in a directory local to your project, use quotes: `import "file";`.
 
 Build the solution by selecting **Build** > **Build Solution** on the main menu. Run it to see that it produces the expected output: `Pythagorean triple a:2 b:3 c:13`
 
@@ -116,7 +116,7 @@ This approach is best suited to smaller projects because it can't guarantee opti
 
 This approach combines two Visual Studio project settings:
 
-- **Scan Sources for Module Dependencies** causes the build system to call the compiler to ensure that all imported modules and header units are built before compiling the file that depends on them.  When combined with **Translate Includes to Imports**, header files that are specified in a `header-units.json` file are also compiled into header units.
+- **Scan Sources for Module Dependencies** causes the build system to call the compiler to ensure that all imported modules and header units are built before compiling the file that depends on them.  When combined with **Translate Includes to Imports**, header files included in your source, that are also specified in a `header-units.json` file, are compiled into header units.
 - **Translate Includes to Imports** If an `#include` refers to a header file that can be compiled as a header unit (as specified in a `header-units.json` file), and a compiled header unit is available for the header file, then the header file is treated treated as `import`. Otherwise, it acts as a normal `#include`.
 
 You can turn on these settings in the properties for your project. To do so, right-click the project in the **Solution Explorer** and choose **Properties**:
@@ -125,9 +125,9 @@ You can turn on these settings in the properties for your project. To do so, rig
 
 **Scan Sources for Module Dependencies option** can be set for all of the files in the project (in **Project Properties** as shown above) or for individual files in **File Properties**. Modules and header units are always scanned. Set this option is when you have a `.cpp` file that imports header units that aren't built yet and that you want to build automatically.
 
-There are conditions under which these settings work to automatically build and import header units. They are:
+These are conditions under which these settings work to automatically build and import header units:
 
-- **Scan Sources for Module Dependencies**  scans your sources for files, and their dependencies, that may be treated as header units. Files that have the extension `.ixx`, and those which have their **File properties** > **C/C++** > **Compile As** property set to **Compile as C++ Header Unit (/export)**, are always scanned regardless of this setting. The compiler also looks for `import` statements to identify header unit dependencies. If `/translateInclude` is specified, the compiler also scans for `#include` directives that could be treated as header units. A dependency graph is built of all the modules and header units in your project.
+- **Scan Sources for Module Dependencies** scans your sources for files, and their dependencies, that may be treated as header units. Files that have the extension `.ixx`, and those which have their **File properties** > **C/C++** > **Compile As** property set to **Compile as C++ Header Unit (/export)**, are always scanned regardless of this setting. The compiler also looks for `import` statements to identify header unit dependencies. If `/translateInclude` is specified, the compiler also scans for `#include` directives that are also specified in a `header-units.json` file to treat as header units. A dependency graph is built of all the modules and header units in your project.
 - **Translate Includes to Imports** When the compiler encounters an `#include` statement, and a matching header unit file (`.ifc`) exists for the specified header file, the compiler imports the header unit instead of running the header file through the preprocessor. When combined with **Scan for dependencies**, the compiler finds all of the header files that can be compiled into header units. An allow-list is consulted by the compiler to decide which header files can compile into header units. This list is stored in a [`header-units.json`](./reference/header-unit-json-reference.md) file that must be in the same directory as the included file. You can see an example of a `header-units.json` file under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json` is used by the compiler when determining whether a Standard Template Library header can be compiled into a header unit. This functionality exists to serve as a bridge with legacy code to get some benefits of header units.
 
 The `header-units.json` file serves two roles. In addition to specifying which header files can be compiled into header units, it minimizes duplicated symbols to increase build throughput. For instance, given:
