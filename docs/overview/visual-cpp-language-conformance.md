@@ -6,7 +6,7 @@ ms.technology: "cpp-language"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
 
-Standards conformance for the Microsoft C/C++ compiler in Visual Studio (MSVC) is a work in progress. Here's a summary of our ISO Standard C and C++ language and library conformance by Visual Studio version. Each C++ compiler and standard library feature name links to the ISO Standard C++ proposal paper that describes the feature, if one is available at publication time. The **Supported** column lists the Visual Studio version in which support for the feature first appeared.
+Standards conformance for the Microsoft C/C++ compiler in Visual Studio (MSVC) is a work in progress. Here's a summary of ISO Standard C and C++ language and library conformance by Visual Studio version. Each C++ compiler and standard library feature name has a link to the ISO Standard C++ proposal paper that describes the feature, when one is available at publication time. The **Supported** column lists the Visual Studio version in which support for the feature first appeared.
 
 For details on conformance improvements, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md). For a list of other changes, see [What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [C++ team blog](https://devblogs.microsoft.com/cppblog/).
 
@@ -17,12 +17,13 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 
 | Feature | Supported |
 |--|--|
-| __C++03/11 Core language features__ | __Supported__ |
+| **C++03/11 Core language features** | **Supported** |
 | &emsp;Everything else | VS 2015 <sup>[A](#note_A)</sup> |
 | &emsp;Two-phase name lookup | VS 2017 15.7 <sup>[B](#note_B)</sup> |
 | &emsp;[`N2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15.7 |
 | &emsp;[`N1653 C99 preprocessor`](https://wg21.link/N1653) | VS 2019 16.6 <sup>[C](#note_C)</sup> |
-| __C++14 Core language features__ | __Supported__ |
+| **C++03/11 Core language features (Defect reports)** | **Supported** |
+| **C++14 Core language features** | **Supported** |
 | &emsp;[`N3323 Tweaked wording for contextual conversions`](https://wg21.link/N3323) | VS 2013 |
 | &emsp;[`N3472 Binary literals`](https://wg21.link/N3472) | VS 2015 |
 | &emsp;[`N3638 auto and decltype(auto) return types`](https://wg21.link/n3638) | VS 2015 |
@@ -34,7 +35,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`N3651 Variable templates`](https://wg21.link/n3651) | VS 2015 Update 2 |
 | &emsp;[`N3652 Extended constexpr`](https://wg21.link/n3652) | VS 2017 15.0 |
 | &emsp;[`N3653 Default member initializers for aggregates`](https://wg21.link/n3653) | VS 2017 15.0 |
-| __C++17 Core language features__ | __Supported__ |
+| **C++17 Core language features** | **Supported** |
 | &emsp;[`N4086 Removing trigraphs`](https://wg21.link/n4086) | VS 2010 <sup>[14](#note_14)</sup> |
 | &emsp;[`N3922 New rules for auto with braced-init-lists`](https://wg21.link/n3922) | VS 2015 <sup>[14](#note_14)</sup> |
 | &emsp;[`N4051 typename in template template-parameters`](https://wg21.link/n4051) | VS 2015 <sup>[14](#note_14)</sup> |
@@ -76,7 +77,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P0145R3 Refining expression evaluation order`](https://wg21.link/p0145r3)<br/>&emsp;[`P0400R0 Order of evaluation of function arguments`](https://wg21.link/p0400r0) | VS 2017 15.7 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0195R2 Pack expansions in using-declarations`](https://wg21.link/p0195r2) | VS 2017 15.7 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0283R2 Ignoring unrecognized attributes`](https://wg21.link/p0283r2) | VS 2015 <sup>[14](#note_14)</sup> |
-| __C++17 Core language features (Defect reports)__ | __Supported__ |
+| **C++17 Core language features (Defect reports)** | **Supported** |
 | &emsp;[`P0702R1 Fixing class template argument deduction for initializer-list ctors`](https://wg21.link/p0702r1) | VS 2017 15.7 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0961R1 Relaxing the structured bindings customization point finding rules`](https://wg21.link/p0961r1) | VS 2019 16.0 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0969R0 Allowing structured bindings to accessible members`](https://wg21.link/p0969r0) | VS 2019 16.0 <sup>[17](#note_17)</sup> |
@@ -88,7 +89,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P0859R0 CWG 1581: When are constexpr member functions defined`](https://wg21.link/p0859r0) | Partial in VS 2019 16.7 <sup>[E](#note_E)</sup> |
 | &emsp;[`P1009R2 Array size deduction in new-expressions`](https://wg21.link/P1009R2) | VS 2019 16.7 <sup>[17](#note_17)</sup> |
 | &emsp;[`P1286R2 Contra CWG DR1778`](https://wg21.link/P1286R2) | VS 2019 16.8 <sup>[17](#note_17)</sup> |
-| __C++20 Core language features__ | __Supported__ |
+| **C++20 Core language features** | **Supported** |
 | &emsp;[`P0641R2 const mismatch with defaulted copy constructor`](https://wg21.link/P0641R2) | VS 2015 <sup>[14](#note_14)</sup> |
 | &emsp;[`P0704R1 Fixing const lvalue ref-qualified pointers to members`](https://wg21.link/p0704r1) | VS 2015 <sup>[14](#note_14)</sup> |
 | &emsp;[`P1041R4 Make char16_t/char32_t string literals be UTF-16/32`](https://wg21.link/P1041R4) | VS 2015 <sup>[14](#note_14)</sup> |
@@ -181,7 +182,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 
 | Feature | Supported |
 |--|--|
-| __C++14 Standard library features__ | __Supported__ |
+| **C++14 Standard library features** | **Supported** |
 | &emsp;[`N3462 SFINAE-Friendly result_of`](https://wg21.link/n3462) | VS 2015.2 |
 | &emsp;[`N3302 constexpr For <complex>`](https://wg21.link/n3302) | VS 2015 |
 | &emsp;[`N3469 constexpr For <chrono>`](https://wg21.link/n3469) | VS 2015 |
@@ -207,7 +208,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`N3421 Transparent Operator Functors (less<>, etc.)`](https://wg21.link/n3421) | VS 2013 |
 | &emsp;[`N3655 Alias Templates For <type_traits> (decay_t, etc.)`](https://wg21.link/n3655) | VS 2013 |
 | &emsp;[`N3656 make_unique()`](https://wg21.link/n3656) | VS 2013 |
-| __C++17 Standard library features__ | __Supported__ |
+| **C++17 Standard library features** | **Supported** |
 | &emsp;[`N3911 void_t`](https://wg21.link/n3911) | VS 2015 <sup>[14](#note_14)</sup> |
 | &emsp;[`N4089 Safe Conversions In unique_ptr<T[]>`](https://wg21.link/n4089) | VS 2015 <sup>[14](#note_14)</sup> |
 | &emsp;[`N4169 invoke()`](https://wg21.link/n4169) | VS 2015 <sup>[14](#note_14)</sup> |
@@ -288,13 +289,13 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P0604R0 Changing is_callable/result_of To invoke_result, is_invocable, is_nothrow_invocable`](https://wg21.link/p0604r0) | VS 2017 15.3 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0607R0 Inline Variables for the Standard Library`](https://wg21.link/p0607r0) | VS 2017 15.5 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0618R0 Deprecating <codecvt>`](https://wg21.link/p0618r0) | VS 2017 15.5 <sup>[17](#note_17)</sup> |
+| **C++17 Standard library features (Defect reports)** | **Supported** |
 | &emsp;[`P0682R1 Repairing Elementary String Conversions`](https://wg21.link/P0682R1) | VS 2015 15.7 <sup>[17](#note_17)</sup> |
-| &emsp;[`P2162R2 Inheriting from std::variant`](https://wg21.link/P2162R2) | VS 2022 17.0 <sup>[17](#note_17)</sup> |
-| __C++20 Standard library features__ | __Supported__ |
+| &emsp;[`P1164R1 Making create_directory() Intuitive`](https://wg21.link/P1164R1) | VS 2019 16.0 <sup>[14](#note_14)</sup> |
+| **C++20 Standard library features** | **Supported** |
 | &emsp;[`P0809R0 Comparing Unordered Containers`](https://wg21.link/p0809r0) | VS 2010 <sup>[14](#note_14)</sup> |
 | &emsp;[`P0858R0 Constexpr Iterator Requirements`](https://wg21.link/p0858r0) | VS 2017 15.3 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0777R1 Avoiding Unnecessary Decay`](https://wg21.link/p0777r1) | VS 2017 15.7 <sup>[14](#note_14)</sup> |
-| &emsp;[`P1164R1 Making create_directory() Intuitive`](https://wg21.link/P1164R1) | VS 2019 16.0 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0550R2 remove_cvref`](https://wg21.link/p0550r2) | VS 2019 16.0 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0318R1 unwrap_reference, unwrap_ref_decay`](https://wg21.link/p0318r1) | VS 2019 16.1 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0457R2 starts_with()/ends_with() For basic_string/basic_string_view`](https://wg21.link/p0457r2) | VS 2019 16.1 <sup>[20](#note_20)</sup> |
@@ -319,7 +320,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P0340R3 SFINAE-Friendly underlying_type`](https://wg21.link/P0340R3) | VS 2019 16.5 <sup>[14](#note_14)</sup> |
 | &emsp;[`P0356R5 bind_front()`](https://wg21.link/P0356R5) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0439R0 enum class memory_order`](https://wg21.link/p0439r0) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
-| &emsp;[`P0553R4 <bit> Rotating And Counting Functions`](https://wg21.link/P0553R4) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
+| &emsp;[`P0553R4 <bit> Rotating And Counting Functions`](https://wg21.link/P0553R4) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()`](https://wg21.link/P0556R3) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0595R2 is_constant_evaluated()`](https://wg21.link/P0595R2) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0631R8 <numbers> Math Constants`](https://wg21.link/P0631R8) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
@@ -331,9 +332,9 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P1227R2 Signed std::ssize(), Unsigned span::size()`](https://wg21.link/P1227R2) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1355R2 Narrow Contract For ceil2()`](https://wg21.link/P1355R2) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1357R1 is_bounded_array, is_unbounded_array`](https://wg21.link/P1357R1) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
-| &emsp;[`P1612R1 Relocating endian To <bit>`](https://wg21.link/P1612R1) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
-| &emsp;[`P1651R0 bind_front() Should Not Unwrap reference_wrapper`](https://wg21.link/P1651R0) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
-| &emsp;[`P1690R1 Refining Heterogeneous Lookup For Unordered Containers`](https://wg21.link/P1690R1) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
+| &emsp;[`P1612R1 Relocating endian To <bit>`](https://wg21.link/P1612R1) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
+| &emsp;[`P1651R0 bind_front() Should Not Unwrap reference_wrapper`](https://wg21.link/P1651R0) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
+| &emsp;[`P1690R1 Refining Heterogeneous Lookup For Unordered Containers`](https://wg21.link/P1690R1) | VS 2019 16.5 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1902R1 Missing Feature-Test Macros 2017-2019`](https://wg21.link/P1902R1) | VS 2019 16.5 <sup>[14](#note_14)</sup> |
 | &emsp;[`P0122R7 <span>`](https://wg21.link/p0122r7)<br/>&emsp;[`P1024R3 Enhancing span usability`](https://wg21.link/p1024r3)<br/>&emsp;[`P1085R2 Removing span comparisons`](https://wg21.link/p1085r2)<br/>&emsp;[`P1394R4 Range constructor for span`](https://wg21.link/p1394r4)<br/>&emsp;[`P1872R0 span should have size_type, not index_type`](https://wg21.link/p1872r0) | VS 2019 16.6 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0202R3 constexpr for <algorithm> and exchange()`](https://wg21.link/p0202r3) | VS 2019 16.6 <sup>[20](#note_20)</sup> |
@@ -394,11 +395,12 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P1502R1 Standard Library Header Units`](https://wg21.link/P1502R1) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | N/A |
-| __C++20 Standard library features (Defect reports)__ | __Supported__ |
+| **C++20 Standard library features (Defect reports)** | **Supported** |
 | &emsp;[`P2325R3 Views Should Not Be Required To Be Default Constructible`](https://wg21.link/P2325r3) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P2328R1 join_view should join all views of ranges`](https://wg21.link/P2328R1) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P2367R0 Remove misuses of list-initialization from clause 24 ranges`](https://wg21.link/P2367R0) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
-| __C++23 Standard library features__ | __Supported__ |
+| &emsp;[`P2259R1 Partial LWG issue resolution: repairing Input Range Adaptors and counted_iterator`](https://wg21.link/P2259R1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| **C++23 Standard library features** | **Supported** |
 | &emsp;[`P0401R6 Providing size feedback in the allocator interface`](https://wg21.link/P0401R6) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P0881R7 <stacktrace>`](https://wg21.link/p0881r7) | No |
 | &emsp;[`P0943R6 Supporting C Atomics In C++`](https://wg21.link/P0943R6) | VS 2022 17.0  <sup>[T](#note_T)</sup> |
@@ -408,9 +410,9 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P1682R3 to_underlying() for enumerations`](https://wg21.link/P1682R3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1951R1 Default template arguments for pair's forwarding constructor`](https://wg21.link/P1951R1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1989R2 Range Constructor For string_view`](https://wg21.link/P1989R2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2162R2 Inheriting from std::variant`](https://wg21.link/P2162R2) | VS 2022 17.0 <sup>[17](#note_17)</sup> |
 | &emsp;[`P2166R1 Prohibit basic_string and basic_string_view from being constructed from nullptr`](https://wg21.link/P2166R1) | VS 2022 17.0 <sup>[23](#note_23), [R](#note_R)</sup> |
 | &emsp;[`P2186R2 Removed garbage collection support`](https://wg21.link/P2186R2) | VS 2022 17.0 <sup>[23](#note_23), [Q](#note_Q)</sup> |
-| &emsp;[`P2259R1 Partial LWG issue resolution: repairing Input Range Adaptors and counted_iterator`](https://wg21.link/P2259R1) | VS 2022 17.0 <sup>[23](#note_23), [S](#note_S)</sup> |
 
 A group of papers listed together indicates a Standard feature along with one or more approved improvements or expansions. These features are implemented together.
 
@@ -418,7 +420,7 @@ A group of papers listed together indicates a Standard feature along with one or
 
 | Feature | Supported |
 |--|--|
-| __C99 Standard library features__ | __Supported__ |
+| **C99 Standard library features** | **Supported** |
 | &emsp;Alternative spellings macros `<iso646.h>` | VS 2015 |
 | &emsp;Wide character support `<wchar.h>` and `<wctype.h>` | VS 2015 |
 | &emsp;Complex support in `<complex.h>` | Partial in VS 2015 <sup>[K](#note_K)</sup> |
@@ -435,7 +437,7 @@ A group of papers listed together indicates a Standard feature along with one or
 | &emsp;`boolean` type in `<stdbool.h>` | VS 2015 |
 | &emsp;`va_copy` macro | VS 2015 |
 | &emsp;Additional `strftime` conversion specifiers | Partial in VS 2015 <sup>[L](#note_L)</sup> |
-| __C11 Standard library features__ | __Supported__ |
+| **C11 Standard library features** | **Supported** |
 | &emsp;Alignment specifiers `<stdalign.h>` | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
 | &emsp;`aligned_alloc` | No <sup>[M](#note_M)</sup> |
 | &emsp;No return specifiers `<stdnoreturn.h>` | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
@@ -453,46 +455,46 @@ A group of papers listed together indicates a Standard feature along with one or
 
 ### Supported values
 
-__No__ Not yet implemented.\
-__Partial__ The implementation is incomplete. For more information, see the [Notes](#notes) section.\
-__VS 2010__ Supported in Visual Studio 2010.\
-__VS 2013__ Supported in Visual Studio 2013.\
-__VS 2015__ Supported in Visual Studio 2015 (RTW).\
-__VS 2015.2__ and __VS 2015.3__ indicate features that are supported in Visual Studio 2015 Update 2 and Visual Studio 2015 Update 3, respectively.\
-__VS 2017 15.0__ Supported in Visual Studio 2017 version 15.0 (RTW).\
-__VS 2017 15.3__ Supported in Visual Studio 2017 version 15.3.\
-__VS 2017 15.5__ Supported in Visual Studio 2017 version 15.5.\
-__VS 2017 15.7__ Supported in Visual Studio 2017 version 15.7.\
-__VS 2019 16.0__ Supported in Visual Studio 2019 version 16.0 (RTW).\
-__VS 2019 16.1__ Supported in Visual Studio 2019 version 16.1.\
-__VS 2019 16.2__ Supported in Visual Studio 2019 version 16.2.\
-__VS 2019 16.3__ Supported in Visual Studio 2019 version 16.3.\
-__VS 2019 16.4__ Supported in Visual Studio 2019 version 16.4.\
-__VS 2019 16.5__ Supported in Visual Studio 2019 version 16.5.\
-__VS 2019 16.6__ Supported in Visual Studio 2019 version 16.6.\
-__VS 2019 16.7__ Supported in Visual Studio 2019 version 16.7.\
-__VS 2019 16.8__ Supported in Visual Studio 2019 version 16.8.\
-__VS 2019 16.9__ Supported in Visual Studio 2019 version 16.9.\
-__VS 2019 16.10__ Supported in Visual Studio 2019 version 16.10.\
-__VS 2022 17.0__ Supported in Visual Studio 2022 version 17.0.
+**No** Not yet implemented.\
+**Partial** The implementation is incomplete. For more information, see the [Notes](#notes) section.\
+**VS 2010** Supported in Visual Studio 2010.\
+**VS 2013** Supported in Visual Studio 2013.\
+**VS 2015** Supported in Visual Studio 2015 (RTW).\
+**VS 2015.2** and **VS 2015.3** indicate features that are supported in Visual Studio 2015 Update 2 and Visual Studio 2015 Update 3, respectively.\
+**VS 2017 15.0** Supported in Visual Studio 2017 version 15.0 (RTW).\
+**VS 2017 15.3** Supported in Visual Studio 2017 version 15.3.\
+**VS 2017 15.5** Supported in Visual Studio 2017 version 15.5.\
+**VS 2017 15.7** Supported in Visual Studio 2017 version 15.7.\
+**VS 2019 16.0** Supported in Visual Studio 2019 version 16.0 (RTW).\
+**VS 2019 16.1** Supported in Visual Studio 2019 version 16.1.\
+**VS 2019 16.2** Supported in Visual Studio 2019 version 16.2.\
+**VS 2019 16.3** Supported in Visual Studio 2019 version 16.3.\
+**VS 2019 16.4** Supported in Visual Studio 2019 version 16.4.\
+**VS 2019 16.5** Supported in Visual Studio 2019 version 16.5.\
+**VS 2019 16.6** Supported in Visual Studio 2019 version 16.6.\
+**VS 2019 16.7** Supported in Visual Studio 2019 version 16.7.\
+**VS 2019 16.8** Supported in Visual Studio 2019 version 16.8.\
+**VS 2019 16.9** Supported in Visual Studio 2019 version 16.9.\
+**VS 2019 16.10** Supported in Visual Studio 2019 version 16.10.\
+**VS 2022 17.0** Supported in Visual Studio 2022 version 17.0.
 
 ### Notes
 
-<a name="note_A"></a> __A__ In [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) mode, dynamic exception specifications remain unimplemented, and `throw()` is still treated as a synonym for `__declspec(nothrow)`. In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: `throw()` is deprecated and required to behave as a synonym for **`noexcept`**. In [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode, MSVC now conforms to the Standard by giving `throw()` the same behavior as **`noexcept`**, that is, enforcement via termination.
+<a name="note_A"></a> **A** In [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) mode, dynamic exception specifications remain unimplemented, and `throw()` is still treated as a synonym for `__declspec(nothrow)`. In C++17, dynamic exception specifications were mostly removed by P0003R5, except for one vestige: `throw()` is deprecated and required to behave as a synonym for **`noexcept`**. In [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode, MSVC now conforms to the Standard by giving `throw()` the same behavior as **`noexcept`**, that is, enforcement via termination.
 
-The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md) requests our old behavior of `__declspec(nothrow)`. It's likely that `throw()` will be removed in a future version of C++. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and [`/permissive-`](../build/reference/permissive-standards-conformance.md).
+The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md) requests the old behavior of `__declspec(nothrow)`. It's likely that `throw()` will be removed in a future version of C++. To help with migrating code in response to these changes in the Standard and the Microsoft implementation, new compiler warnings for exception specification issues have been added under [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
-<a name="note_B"></a> __B__ Supported in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [Two-phase name lookup support comes to MSVC](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
+<a name="note_B"></a> **B** Supported in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [`Two-phase name lookup support comes to MSVC`](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 
-<a name="note_C"></a> __C__ Starting in Visual Studio 2019 version 16.6, the compiler fully implements the C99 preprocessor via the [`/Zc:preprocessor`](../build/reference/zc-conformance.md) option. (Before version 16.6, starting in Visual Studio 2017 version 15.8, the compiler provides support for the C99 preprocessor via the [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler option.) This option is on by default when the compiler option [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) is specified.
+<a name="note_C"></a> **C** In Visual Studio 2019 version 16.6 and later versions, the compiler fully implements the standard C99 preprocessor via the [`/Zc:preprocessor`](../build/reference/zc-conformance.md) option. (In Visual Studio 2017 versions 15.8 through 16.5, the compiler supports the standard C99 preprocessor via the [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler option.) This option is on by default when the compiler option [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) is specified.
 
-<a name="note_D"></a> __D__ Supported under [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md).
+<a name="note_D"></a> **D** Supported under [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
-<a name="note_E"></a> __E__ The implementation is sufficient to support the C++20 Standard Library. A complete implementation requires a binary breaking change.
+<a name="note_E"></a> **E** The implementation is sufficient to support the C++20 Standard Library. A complete implementation requires a binary breaking change.
 
-<a name="note_F"></a> __F__ Features removed when the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option is specified. To re-enable these features (to ease the transition to newer language modes), use these macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
+<a name="note_F"></a> **F** Features removed when the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option is specified. To re-enable these features (to ease the transition to newer language modes), use these macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
 
-<a name ="note_G"></a> __G__ C++17's parallel algorithms library is complete. Complete doesn't mean every algorithm is parallelized in every case. The most important algorithms have been parallelized, and execution policy signatures are provided even where we don't parallelize algorithms. Our implementation's central internal header, \<yvals_core.h>, contains the following "Parallel Algorithms Notes": C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms. This implementation parallelizes several common algorithm calls, but not all.
+<a name ="note_G"></a> **G** C++17's parallel algorithms library is complete. Complete doesn't mean that every algorithm is parallelized in every case. The most important algorithms have been parallelized. Execution policy signatures are provided even where the implementation doesn't parallelize algorithms. The central internal header, `<yvals_core.h>`, contains the following "Parallel Algorithms Notes": C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms. This implementation parallelizes several common algorithm calls, but not all.
 
 The following algorithms are parallelized:
 
@@ -504,52 +506,52 @@ These algorithms aren't presently parallelized:
   - `copy`, `copy_n`, `fill`, `fill_n`, `move`, `reverse`, `reverse_copy`, `rotate`, `rotate_copy`, `shift_left`, `shift_right`, `swap_ranges`
 - Confusion over user parallelism requirements exists for these algorithms, which are likely in the above category anyway:
   - `generate`, `generate_n`
-- Effective parallelism of these algorithms may be infeasible:
+- Effective parallelism of these algorithms might be infeasible:
   - `partial_sort`, `partial_sort_copy`
-- These algorithms haven't been evaluated yet. We may implement parallelism in a future release:
+- These algorithms haven't been evaluated yet. The library might implement parallelism in a future release:
   - `copy_if`, `includes`, `inplace_merge`, `lexicographical_compare`, `max_element`, `merge`, `min_element`, `minmax_element`, `nth_element`, `partition_copy`, `remove_copy`, `remove_copy_if`, `replace_copy`, `replace_copy_if`, `set_symmetric_difference`, `set_union`, `stable_partition`, `unique`, `unique_copy`
 
-<a name="note_H"></a> __H__ This is a wholly new implementation, incompatible with the previous `std::experimental` version, made necessary by symlink support, bug fixes, and changes in standard-required behavior. Currently, `<filesystem>` provides both the new `std::filesystem` and the previous `std::experimental::filesystem`. The `<experimental/filesystem>` header provides only the old experimental implementation. The experimental implementation will be removed in the next ABI-breaking release of the libraries.
+<a name="note_H"></a> **H** This is a wholly new implementation, incompatible with the previous `std::experimental` version, made necessary by symlink support, bug fixes, and changes in standard-required behavior. Currently, `<filesystem>` provides both the new `std::filesystem` and the previous `std::experimental::filesystem`. The `<experimental/filesystem>` header provides only the old experimental implementation. Expect removal of the experimental implementation in the next ABI-breaking release of the libraries.
 
-<a name="note_I"></a> __I__ Supported by a compiler intrinsic.
+<a name="note_I"></a> **I** Supported by a compiler intrinsic.
 
-<a name="note_J"></a> __J__ `std::byte` is enabled by [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later, but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. To disable it, define `_HAS_STD_BYTE` as `0`.
+<a name="note_J"></a> **J** `std::byte` is enabled by [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later, but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. To disable it, define `_HAS_STD_BYTE` as `0`.
 
-<a name="note_K"></a> __K__ MSVC doesn't support the `_Complex` keyword or native complex types. The Universal CRT `<complex.h>` uses implementation-specific macros to achieve the same effect. For more information, see [C complex math support](../c-runtime-library/complex-math-support.md).
+<a name="note_K"></a> **K** MSVC doesn't support the `_Complex` keyword or native complex types. The Universal CRT `<complex.h>` uses implementation-specific macros to achieve the same effect. For more information, see [C complex math support](../c-runtime-library/complex-math-support.md).
 
-<a name="note_L"></a> __L__ The Universal CRT doesn't implement the `strftime` `E` and `O` alternative conversion modifiers. These modifiers are ignored (for example, `%Oe` behaves the same as `%e`). The modifiers aren't supported by the underlying locale APIs.
+<a name="note_L"></a> **L** The Universal CRT doesn't implement the `strftime` `E` and `O` alternative conversion modifiers. These modifiers are ignored (for example, `%Oe` behaves the same as `%e`). The modifiers aren't supported by the underlying locale APIs.
 
-<a name="note_M"></a> __M__ The Universal CRT doesn't implement C11 `aligned_alloc`, but does provide [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md) and [`_aligned_free`](../c-runtime-library/reference/aligned-free.md). Because the Windows operating system doesn't support aligned allocations, this function is unlikely to be implemented.
+<a name="note_M"></a> **M** The Universal CRT doesn't implement C11 `aligned_alloc`, but does provide [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md) and [`_aligned_free`](../c-runtime-library/reference/aligned-free.md). Because the Windows operating system doesn't support aligned allocations, this function is unlikely to be implemented.
 
-<a name="note_N"></a> __N__ The declaration is removed, but the export for the function remains for backward compatibility.
+<a name="note_N"></a> **N** The declaration is removed, but the export for the function remains for backward compatibility.
 
-<a name="note_O"></a> __O__ Certain bounds-checking functions are unimplemented, or have different signatures, or aren't part of the C11 or C17 standard. These functions are unimplemented: `abort_handler_s`, `ignore_handler_s`, `memset_s`, `set_constraint_handler_s`, `snprintf_s`, `snwprintf_s`, `strerrorlen_s`, `vsnwprintf_s`. These functions have different signatures: `gmtime_s`, `localtime_s`, `qsort_s`, `strtok_s`, `vsnprintf_s`, `wcstok_s`. These functions don't appear in the standard: `clearerr_s`, `fread_s`.
+<a name="note_O"></a> **O** Certain bounds-checking functions are unimplemented, or have different signatures, or aren't part of the C11 or C17 standard. These functions are unimplemented: `abort_handler_s`, `ignore_handler_s`, `memset_s`, `set_constraint_handler_s`, `snprintf_s`, `snwprintf_s`, `strerrorlen_s`, `vsnwprintf_s`. These functions have different signatures: `gmtime_s`, `localtime_s`, `qsort_s`, `strtok_s`, `vsnprintf_s`, `wcstok_s`. These functions don't appear in the standard: `clearerr_s`, `fread_s`.
 
-<a name="note_P"></a> __P__ Support was added in VS 2019 16.10. Support for Clang was added in VS 2022 17.0.
+<a name="note_P"></a> **P** Support was added in Visual Studio 2019 version 16.10. Support for Clang was added in Visual Studio 2022 version 17.0.
 
-<a name="note_Q"></a> __Q__ This removes `declare_reachable`, `undeclare_reachable`, `declare_no_pointers`, `undeclare_no_pointers`, `get_pointer_safety`. Previously, these functions had no effect.
+<a name="note_Q"></a> **Q** This removes `declare_reachable`, `undeclare_reachable`, `declare_no_pointers`, `undeclare_no_pointers`, `get_pointer_safety`. Previously, these functions had no effect.
 
-<a name="note_R"></a> __R__ This is a common **source-breaking** change. However, code that previously had undefined behavior at runtime will now be rejected with compiler errors.
+<a name="note_R"></a> **R** This is a common **source-breaking** change. However, code that previously had undefined behavior at runtime is now rejected with compiler errors.
 
-<a name="note_S"></a> __S__ The `counted_iterator` part is implemented; the input range adaptors part isn't yet implemented.
+<a name="note_S"></a> **S** Input range adaptors and `counted_iterator` are implemented in VS 2022 17.0. A future update to Visual Studio 2019 version 16.11 is planned to incorporate these changes.
 
-<a name="note_T"></a> __T__ `<stdatomic.h>` is currently supported when compiling as C++ (`/std:c++latest`). It isn't yet supported when compiling as C (`/std:c11` and `/std:c17`)
+<a name="note_T"></a> **T** `<stdatomic.h>` is currently supported when compiled as C++ (`/std:c++latest`). It isn't yet supported when compiled as C (`/std:c11` and `/std:c17`)
 
-<a name="note_14"></a> __14__ These C++17 and C++20 features are always enabled, even when [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) (the default) is specified. The reason is either because the feature was implemented before the introduction of the **`/std`** options, or because conditional implementation was undesirably complex.
+<a name="note_14"></a> **14** These C++17 and C++20 features are always enabled, even when [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) (the default) is specified. The reason is either because the feature was implemented before the introduction of the **`/std`** options, or because conditional implementation was undesirably complex.
 
-<a name="note_17"></a> __17__ These features are enabled by the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
+<a name="note_17"></a> **17** These features are enabled by the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
-<a name="note_20"></a> __20__ In versions through Visual Studio 2019 version 16.10, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Visual Studio 2019 version 16.11 added the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option to enable these features.
+<a name="note_20"></a> **20** In versions through Visual Studio 2019 version 16.10, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Visual Studio 2019 version 16.11 added the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option to enable these features.
 
-<a name="note_20abi"></a> __20abi__ Because of ongoing post-release work on the C++20 standard, `<format>`, the formatting parts of `<chrono>` (which rely on `<format>`), and the range factories and range adaptors from `<ranges>` (everything that needs the `view` concept) are only available under **`/std:c++latest`**. We'll make these features available under **`/std:c++20`** after reaching agreement with WG21 that no further ABI-breaking changes are necessary. The remaining parts of `<chrono>` and the algorithms that apply to ranges are enabled under the **`/std:c++20`** compiler option starting in Visual Studio 2019 version 16.11.
+<a name="note_20abi"></a> **20abi** Because of ongoing post-release work on the C++20 standard, `<format>`, the formatting parts of `<chrono>` (which rely on `<format>`), and the range factories and range adaptors from `<ranges>` (everything that needs the `view` concept) are only available under **`/std:c++latest`**. Expect these features under **`/std:c++20`** after agreement is reached with WG21 that no further ABI-breaking changes are necessary. The remaining parts of `<chrono>` and the algorithms that apply to ranges are enabled under the **`/std:c++20`** compiler option in Visual Studio 2019 version 16.11 and later versions.
 
-<a name="note_23"></a> __23__ In Visual Studio 2022 version 17.0 and up, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+<a name="note_23"></a> **23** In Visual Studio 2022 version 17.0 and up, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-<a name="note_C11"></a> __C11__ Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
+<a name="note_C11"></a> **C11** Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
 
-<a name="note_DR"></a> __DR__ These features are enabled in all C++ [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option modes. The C++ Standard committee adopted this change as a retroactive Defect Report to C++11 and all later versions.
+<a name="note_DR"></a> **DR** These features are enabled in all C++ [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option modes. The C++ Standard committee adopted this change as a retroactive Defect Report to C++11 and all later versions.
 
-<a name="note_2104"></a> __2104__ C11 library support for this feature requires Windows SDK build 10.0.20348.0 (version 2104) or higher.
+<a name="note_2104"></a> **2104** C11 library support for this feature requires Windows SDK build 10.0.20348.0 (version 2104) or higher.
 
 ## See also
 

@@ -4,7 +4,6 @@ title: "MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.overview"]
 helpviewer_keywords: ["MFC Application Wizard", "executable files, creating"]
-ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
 ---
 # MFC Application Wizard
 
@@ -15,7 +14,7 @@ The MFC Application Wizard generates an application that, when compiled, impleme
 
 ## Overview
 
-This wizard page describes the current application settings for the MFC application that you are creating. By default, the wizard creates a project as follows:
+This wizard page describes the current application settings for the MFC application that you’re creating. By default, the wizard creates a project as follows:
 
 - [Application Type, MFC Application Wizard](../../mfc/reference/application-type-mfc-application-wizard.md)
 
@@ -57,22 +56,22 @@ This wizard page describes the current application settings for the MFC applicat
 
 - [Generated Classes, MFC Application Wizard](../../mfc/reference/generated-classes-mfc-application-wizard.md)
 
-  - The project's view class is derived from the [CView Class](../../mfc/reference/cview-class.md).
+  - The project's view class is derived from the [`CView` Class](../../mfc/reference/cview-class.md).
 
-  - The project's application class is derived from the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md).
+  - The project's application class is derived from the [`CWinAppEx` Class](../../mfc/reference/cwinappex-class.md).
 
-  - The project's document class is derived from the [CDocument Class](../../mfc/reference/cdocument-class.md).
+  - The project's document class is derived from the [`CDocument` Class](../../mfc/reference/cdocument-class.md).
 
-  - The project's main frame class is derived from the [CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md).
+  - The project's main frame class is derived from the [`CMDIFrameWndEx` Class](../../mfc/reference/cmdiframewndex-class.md).
 
-  - The project's child frame class is derived from the [CMDIChildWndEx Class](../../mfc/reference/cmdichildwndex-class.md).
+  - The project's child frame class is derived from the [`CMDIChildWndEx` Class](../../mfc/reference/cmdichildwndex-class.md).
 
-To change these default settings, click the appropriate tab title in the left column of the wizard and make the changes on the page that appears.
+To change these default settings, select the appropriate tab title in the left column of the wizard and make the changes on the page that appears.
 
 After you create an MFC application project, you can add objects or controls to your project using Visual C++ [code wizards](../../ide/adding-functionality-with-code-wizards-cpp.md).
 
 ## See also
 
-[Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md)<br/>
-[MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)<br/>
+[Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md)\
+[MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)\
 [Using the Classes to Write Applications for Windows](../../mfc/using-the-classes-to-write-applications-for-windows.md)

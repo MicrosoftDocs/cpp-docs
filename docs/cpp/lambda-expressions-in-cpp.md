@@ -61,9 +61,7 @@ You can use a capture-default mode to indicate how to capture any outside variab
 [&total, factor]
 [factor, &total]
 [&, factor]
-[factor, &]
 [=, &total]
-[&total, =]
 ```
 
 Only variables that are mentioned in the lambda body are captured when a capture-default is used.
