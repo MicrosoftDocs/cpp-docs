@@ -98,7 +98,7 @@ Points to a `CBitmap` object that specifies a bitmap with which the brush paints
 
 ### Remarks
 
-`CBrush` has four overloaded constructors.The constructor with no arguments constructs an uninitialized `CBrush` object that must be initialized before it can be used.
+`CBrush` has four overloaded constructors. The constructor with no arguments constructs an uninitialized `CBrush` object that must be initialized before it can be used.
 
 If you use the constructor with no arguments, you must initialize the resulting `CBrush` object with [`CreateSolidBrush`](#createsolidbrush), [`CreateHatchBrush`](#createhatchbrush), [`CreateBrushIndirect`](#createbrushindirect), [`CreatePatternBrush`](#createpatternbrush), or [`CreateDIBPatternBrush`](#createdibpatternbrush). If you use one of the constructors that takes arguments, then no further initialization is necessary. The constructors with arguments can throw an exception if errors are encountered, while the constructor with no arguments will always succeed.
 
