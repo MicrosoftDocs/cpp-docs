@@ -1,13 +1,13 @@
 ---
 title: "/experimental:module (Enable module support)"
 description: "Use the /experimental:module compiler option to enable experimental compiler support for named modules."
-ms.date: "04/13/2021"
+ms.date: 01/27/2022
 f1_keywords: ["module", "/experimental:module"]
 helpviewer_keywords: ["module", "/experimental:module", "Enable module support"]
 ---
 # `/experimental:module` (Enable module support)
 
-Enables experimental compiler support for C++ Standard modules. This option is obsolete in Visual Studio version 16.11 and later.
+Enables experimental compiler support for C++ Standard modules. This option is obsolete for C++20 standard modules in Visual Studio version 16.11 and later. It's still required (along with [`/std:c++latest`](std-specify-language-standard-version.md)) for the experimental Standard library modules.
 
 ## Syntax
 
