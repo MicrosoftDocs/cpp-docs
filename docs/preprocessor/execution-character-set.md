@@ -21,7 +21,7 @@ Specifies the target execution character set. Currently the only target executio
 
 ## Remarks
 
-This compiler directive is obsolete starting in Visual Studio 2015 Update 2. We recommend that you use the **`/execution-charset:utf-8`** or **`/utf-8`** compiler options together with using the `u8` prefix on narrow character and string literals that contain extended characters. For more information about the `u8` prefix, see [String and character literals](../cpp/string-and-character-literals-cpp.md). For more information about the compiler options, see [`/execution-charset` (Set execution character set)](../build/reference/execution-charset-set-execution-character-set.md) and [`/utf-8` (Set source and executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).
+This compiler directive is obsolete starting in Visual Studio 2015 Update 2. We recommend that you use the **`/execution-charset:utf-8`** or **`/utf-8`** compiler options together with using the `u8` prefix on narrow character and string literals that contain extended characters. For more information about the `u8` prefix, see [String and character literals](../cpp/string-and-character-literals-cpp.md). For more information about the compiler options, see [`/execution-charset` (Set execution character set)](../build/reference/execution-charset-set-execution-character-set.md) and [`/utf-8` (Set source and execution character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).
 
 The `#pragma execution_character_set("utf-8")` directive tells the compiler to encode narrow character and narrow string literals in your source code as UTF-8 in the executable. This output encoding is independent of the source file encoding used.
 
@@ -33,4 +33,4 @@ By default, Visual Studio uses the current code page as the source character set
 
 [Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)\
 [`/execution-charset` (Set execution character set)](../build/reference/execution-charset-set-execution-character-set.md)\
-[`/utf-8` (Set source and executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+[`/utf-8` (Set source and execution character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

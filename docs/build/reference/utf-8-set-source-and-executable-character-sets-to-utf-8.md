@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: `/utf-8` (Set Source and Executable character sets to UTF-8)"
-title: "/utf-8 (Set Source and Executable character sets to UTF-8)"
+description: "Learn more about: `/utf-8` (Set source and execution character sets to UTF-8)"
+title: "/utf-8 (Set source and execution character sets to UTF-8)"
 ms.date: "04/26/2020"
 f1_keywords: ["/utf-8"]
 helpviewer_keywords: ["/utf-8 compiler option"]
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
 no-loc: [UTF, UTF-8, UTF-16]
 ---
-# `/utf-8` (Set Source and Executable character sets to UTF-8)
+# `/utf-8` (Set source and execution character sets to UTF-8)
 
 Specifies both the source character set and the execution character set as UTF-8.
 
