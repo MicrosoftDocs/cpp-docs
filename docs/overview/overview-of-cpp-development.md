@@ -54,7 +54,7 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 ::: moniker-end
 
-For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
+For more information about Git integration with repos in Azure, see [Share your code with Azure Repos and Visual Studio](/azure/devops/repos/git/share-your-code-in-git-vs). For information about Git integration with GitHub, see [Visual Studio and GitHub: Better together](https://visualstudio.github.com/).
 
 ## Obtain libraries
 
