@@ -1,7 +1,7 @@
 ---
 title: "/sourceDependencies:directives (List module and header unit dependencies)"
 description: "Reference guide to the /sourceDependencies:directives compiler option in Microsoft C++."
-ms.date: 01/11/2022
+ms.date: 02/02/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies:directives"]
@@ -9,13 +9,14 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line option generates a JSON file that lists module and header-unit dependencies.
+This command-line option generates a JSON file that lists module, module interface, and header-unit dependencies.
 
 It identifies which modules and header units to compile before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
 
-This command-line option is similar to [`/sourceDependencies`](sourcedependencies.md), but differs in the following ways:
+Although this option scans for `import` statements like [`/sourceDependencies`](sourcedependencies.md) does, it differs from `/sourceDependencies` in the following ways:
 
-- The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
+- The compiler doesn't produce compiled output. No compiled code, modules, or header units are produced. Instead, the files are scanned for module directives.
+- The JSON format is different from what `/sourceDependencies` produces. The `/sourceDependencies` option is intended to be used with other build tools, such as CMake.
 - The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this option does a scan of the project files, not a compilation. So there are no built modules or header units to list.
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
 - Header file dependencies aren't listed. That is, `#include <file>` or `#include "file"` dependencies aren't listed.
@@ -42,7 +43,7 @@ If the argument is a directory, the compiler generates source dependency files i
 
 **`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10. It's not enabled by default.
 
-When you specify the **`/MP`** compiler option, we recommend you use **`/sourceDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. For more information on **`/MP`**, see [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md).
+When you specify the [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md) compiler option, specify the output file location for **`/sourceDependencies`** with a directory argument. The compiler will produce `[directory]\[source file name with extension].json` for each source file.
 
 When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
 
