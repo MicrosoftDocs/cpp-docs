@@ -3,15 +3,14 @@ description: "Learn more about: scanf Type Field Characters"
 title: "scanf Type Field Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scanf function, type field characters"]
-ms.assetid: 5d546a84-715b-44ca-b1c5-bbe997f9ff62
 ---
-# scanf Type Field Characters
+# `scanf` Type Field Characters
 
 The following information applies to any of the `scanf` family of functions, including the secure versions, such as `scanf_s`.
 
 The `type` character is the only required format field; it appears after any optional format fields. The `type` character determines whether the associated argument is interpreted as a character, string, or number.
 
-### Type Characters for scanf functions
+### `type` Characters for `scanf` functions
 
 |Character|Type of input expected|Type of argument|Size argument in secure version?|
 |---------------|----------------------------|----------------------|--------------------------------------|
@@ -26,8 +25,8 @@ The `type` character is the only required format field; it appears after any opt
 |`e`, `E`, `f`, `F`, `g`, `G`|Floating-point value consisting of optional sign (+ or -), series of one or more decimal digits containing decimal point, and optional exponent ("e" or "E") followed by an optionally signed integer value.|Pointer to **`float`**.|No.|
 |`a`, `A`|Floating-point value consisting of a series of one or more hexadecimal digits containing an optional decimal point, and an exponent ("p" or "P") followed by a decimal value.|Pointer to **`float`**.|No.|
 |`n`|No input read from stream or buffer.|Pointer to **`int`**, into which is stored number of characters successfully read from stream or buffer up to that point in current call to `scanf` functions or `wscanf` functions.|No.|
-|`s`|String, up to first white-space character (space, tab or newline). To read strings not delimited by space characters, use set of square brackets (`[ ]`), as discussed in [scanf Width Specification](../c-runtime-library/scanf-width-specification.md).|When used with `scanf` functions, signifies single-byte character array; when used with `wscanf` functions, signifies wide-character array. In either case, character array must be large enough for input field plus terminating null character, which is automatically appended.|Required. Size includes space for a null terminator.|
-|`S`|Opposite-size character string, up to first white-space character (space, tab or newline). To read strings not delimited by space characters, use set of square brackets (`[ ]`), as discussed in [scanf Width Specification](../c-runtime-library/scanf-width-specification.md).|When used with `scanf` functions, signifies wide-character array; when used with `wscanf` functions, signifies single-byte-character array. In either case, character array must be large enough for input field plus terminating null character, which is automatically appended.|Required. Size includes space for a null terminator.|
+|`s`|String, up to first white-space character (space, tab or newline). To read strings not delimited by space characters, use set of square brackets (`[ ]`), as discussed in [`scanf` Width Specification](../c-runtime-library/scanf-width-specification.md).|When used with `scanf` functions, signifies single-byte character array; when used with `wscanf` functions, signifies wide-character array. In either case, character array must be large enough for input field plus terminating null character, which is automatically appended.|Required. Size includes space for a null terminator.|
+|`S`|Opposite-size character string, up to first white-space character (space, tab or newline). To read strings not delimited by space characters, use set of square brackets (`[ ]`), as discussed in [`scanf` Width Specification](../c-runtime-library/scanf-width-specification.md).|When used with `scanf` functions, signifies wide-character array; when used with `wscanf` functions, signifies single-byte-character array. In either case, character array must be large enough for input field plus terminating null character, which is automatically appended.|Required. Size includes space for a null terminator.|
 
 The size arguments, if required, should be passed in the parameter list immediately following the argument they apply to. For example, the following code:
 
@@ -51,4 +50,4 @@ To scan strings with `scanf` functions, and `wscanf` functions, use the above ta
 
 ## See also
 
-[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)

@@ -717,7 +717,7 @@ items:
                   href: ../build/reference/translateinclude.md
                 - name: /U, /u (Undefine symbols)
                   href: ../build/reference/u-u-undefine-symbols.md
-                - name: /utf-8 (Set source and executable character sets to UTF-8)
+                - name: /utf-8 (Set source and execution character sets to UTF-8)
                   href: ../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md
                 - name: /V (Version number)
                   href: ../build/reference/v-version-number.md
