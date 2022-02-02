@@ -1,7 +1,7 @@
 ---
 title: "/headerUnit (Use header unit IFC)"
 description: "Use the /headerUnit compiler option to associate a header file with the header unit to import in its place."
-ms.date: 04/13/2021
+ms.date: 02/01/2022
 f1_keywords: ["/headerUnit"]
 helpviewer_keywords: ["/headerUnit", "Use header unit IFC"]
 author: "tylermsft"
@@ -9,7 +9,7 @@ ms.author: "twhitney"
 ---
 # `/headerUnit` (Use header unit IFC)
 
-Used to import a header unit. Tells the compiler where to find the *`.ifc`* file (the binary representation of the header unit) for the specified header.
+Imports a header unit. Tells the compiler where to find the *`.ifc`* file (the binary representation of the header unit) for the specified header.
 
 ## Syntax
 
@@ -27,21 +27,21 @@ The name of a file that contains compiled header unit information. To import mor
 
 ## Remarks
 
-The **`/headerUnit`** compiler option requires the [`/std:c++20`](std-specify-language-standard-version.md) or later compiler option (such as **`/std:c++latest`**).
+The **`/headerUnit`** compiler option requires [`/std:c++20`](std-specify-language-standard-version.md) or later.
 
-The **`/headerUnit`** compiler option is available in Visual Studio 2019 version 16.10, or later.
+The **`/headerUnit`** compiler option is available in Visual Studio 2019 version 16.10 or later.
 
-When the compiler comes across `import "file";` or `import <file>;`, this compiler option helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
+When the compiler comes across `import "file";` or `import <file>;` this compiler option helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
 
-**`/headerUnit`** looks up the compiled header unit in the current directory, or at the location specified in *`ifc-filename`*.
+- **`/headerUnit`** looks up the compiled header unit in the current directory, or at the location specified in *`ifc-filename`*.
 
-**`/headerUnit:quote`** looks up the compiled header unit file using the same rules as `#include "file"`.
+- **`/headerUnit:quote`** looks up the compiled header unit file using the same rules as `#include "file"`.
 
-**`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
+- **`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
 
-The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. While mapping multiple *`header-name`* arguments to a single *`.ifc`* is possible, it isn't recommended. The contents of the *`.ifc`* get imported as if it was only the header specified by *`header-name`*.
+The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. While mapping multiple *`header-name`* arguments to a single *`.ifc`* is possible, it isn't recommended. The contents of the *`.ifc`* are imported as if it was only the header specified by *`header-name`*.
 
-The compiler implicitly enables the new preprocessor when this option is used. If any form of `/headerUnit` is specified on the command line, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler . To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
+The compiler implicitly enables the new preprocessor when this option is used. If any form of `/headerUnit` is specified on the command line, then [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler . To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
 
 If you disable the new preprocessor, but a file you compile imports a header unit, the compiler will report an error.
 
