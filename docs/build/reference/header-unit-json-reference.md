@@ -10,7 +10,7 @@ helpviewer_keywords: ["header-units.json", "header unit"]
 
 # C++ header-units.json reference
 
-The `header-units.json` file serves two purposes. In addition to specifying which header files can be translated into header units, it minimizes duplicated symbols to increase build throughput.
+The `header-units.json` file serves two purposes. In addition to specifying which header files can be translated into header units when [`/translateInclude`](translateinclude.md) is specified, it minimizes duplicated symbols to increase build throughput.
 
 This file must be in the same directory as the included header files. This file is only used when [`/translateInclude`](translateinclude.md) is specified along with either [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies:directives`]((sourcedependencies-directives.md).
 

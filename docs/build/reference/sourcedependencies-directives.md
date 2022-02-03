@@ -9,11 +9,9 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line option generates a JSON file that lists module, module interface, and header-unit dependencies.
+This command-line option scans source files and their includes to generate a JSON file that lists module export and imports. This information can be used by a build system to determine the build order of modules and header units.
 
-It identifies which modules and header units to compile before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
-
-Although this option scans for `import` statements like [`/sourceDependencies`](sourcedependencies.md) does, it differs from `/sourceDependencies` in the following ways:
+This option scans differs from [`/sourceDependencies`](sourcedependencies.md) in the following ways:
 
 - The compiler doesn't produce compiled output. No compiled code, modules, or header units are produced. Instead, the files are scanned for module directives.
 - The JSON format is different from what `/sourceDependencies` produces. The `/sourceDependencies` option is intended to be used with other build tools, such as CMake.
@@ -21,6 +19,7 @@ Although this option scans for `import` statements like [`/sourceDependencies`](
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
 - Header file dependencies aren't listed. That is, `#include <file>` or `#include "file"` dependencies aren't listed.
 - `/sourceDependencies:directives` is meant to be used before *`.ifc`* files are built.
+- `/sourceDependencies` causes the compiler to report all of the files, such as `#includes`, `.pch` files, `.ifc` files, and so on, that were used for a particular translation unit . Whereas `/sourceDependencies:directives [file1]` scans the specified source file and reports all `import` and `export` statements. `/sourceDependencies` can be used in combination with `/sourceDependencies:directives`.
 
 ## Syntax
 
@@ -41,19 +40,15 @@ If the argument is a directory, the compiler generates source dependency files i
 
 ## Remarks
 
-**`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10. It's not enabled by default.
+**`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10.
 
-When you specify the [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md) compiler option, specify the output file location for **`/sourceDependencies`** with a directory argument. The compiler will produce `[directory]\[source file name with extension].json` for each source file.
+When you specify the [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md) compiler option, specify the output file location for **`/sourceDependencies:directives`** with a directory argument. The compiler will produce `[directory]\[source file name with extension].module.json` for each source file.
 
 When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
 
 All file paths appear as absolute paths in the output.
 
-This switch is used in combination with [`/translateInclude`](translateinclude.md).
-
-`header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files found in the source files that are scanned, that are also listed in `header-units.json`, are considered eligible to compile into header units. Files not in the list are treated as a normal `#include`.
-
-The compiler looks for `header-units.json` where the header being loaded is located. For more information about the format of this file, see [C++ header-units.json reference](header-unit-json-reference.md)
+This switch can be used in combination with [`/translateInclude`](translateinclude.md).
 
 ### Examples
 
@@ -107,5 +102,7 @@ You normally shouldn't set this yourself in the Visual Studio development enviro
 
 ## See also
 
+[`/translateInclude`](translateinclude.md)\
+[C++ header-units.json reference](header-unit-json-reference.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
