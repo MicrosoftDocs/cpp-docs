@@ -1,23 +1,50 @@
 ---
 description: "Learn more about: const (C++)"
 title: "const (C++)"
-ms.date: "11/04/2016"
+ms.date: 02/03/2022
 f1_keywords: ["const_cpp"]
 helpviewer_keywords: ["const keyword [C++]"]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
 ---
-# const (C++)
+# `const` (C++)
 
-When modifying a data declaration, the **`const`** keyword specifies that the object or variable is not modifiable.
+When it modifies a data declaration, the **`const`** keyword specifies that the object or variable isn't modifiable.
 
 ## Syntax
 
-```
-const declaration ;
-member-function const ;
-```
+> *`declarator`*:\
+> &emsp;*`ptr-declarator`*\
+> &emsp;*`noptr-declarator`* *`parameters-and-qualifiers`* *`trailing-return-type`*\
+> *`ptr-declarator`*:\
+> &emsp;*`noptr-declarator`*\
+> &emsp;*`ptr-operator`* *`ptr-declarator`*\
+> *`noptr-declarator`*:\
+> &emsp;*`declarator-id`* *`attribute-specifier-seq`*<sub>opt</sub>\
+> &emsp;*`noptr-declarator`* *`parameters-and-qualifiers`*\
+> &emsp;*`noptr-declarator`* **`[`** *`constant-expression`*<sub>opt</sub> **`]`** *`attribute-specifier-seq`*<sub>opt</sub>\
+> &emsp;**`(`** *`ptr-declarator`* **`)`**\
+> *`parameters-and-qualifiers`*:\
+> &emsp;**`(`** *`parameter-declaration-clause`* **`)`** *`cv-qualifier-seq`*<sub>opt</sub>\
+> &emsp;*`ref-qualifier`*<sub>opt</sub> *`noexcept-specifier`*<sub>opt</sub> *`attribute-specifier-seq`*<sub>opt</sub>\
+> *`trailing-return-type`*:\
+> &emsp;**`->`** *`type-id`*\
+> *`ptr-operator`*:\
+> &emsp;**`*`** *`attribute-specifier-seq`*<sub>opt</sub> *`cv-qualifier-seq`*<sub>opt</sub>\
+> &emsp;**`&`** *`attribute-specifier-seq`*<sub>opt</sub>\
+> &emsp;**`&&`** *`attribute-specifier-seq`*<sub>opt</sub>\
+> &emsp;*`nested-name-specifier`* **`*`** *`attribute-specifier-seq`*<sub>opt</sub> *`cv-qualifier-seq`*<sub>opt</sub>\
+> *`cv-qualifier-seq`*:\
+> &emsp;*`cv-qualifier`* *`cv-qualifier-seq`*<sub>opt</sub>\
+> *`cv-qualifier`*:\
+> &emsp;**`const`**\
+> &emsp;**`volatile`**\
+> *`ref-qualifier`*:\
+> &emsp;**`&`**\
+> &emsp;**`&&`**\
+> *`declarator-id`*:\
+> &emsp;**`...`**<sub>opt</sub> *`id-expression`*
 
-## const values
+## `const` values
 
 The **`const`** keyword specifies that a variable's value is constant and tells the compiler to prevent the programmer from modifying it.
 
@@ -30,7 +57,7 @@ int main() {
 }
 ```
 
-In C++, you can use the **`const`** keyword instead of the [#define](../preprocessor/hash-define-directive-c-cpp.md) preprocessor directive to define constant values. Values defined with **`const`** are subject to type checking, and can be used in place of constant expressions. In C++, you can specify the size of an array with a **`const`** variable as follows:
+In C++, you can use the **`const`** keyword instead of the [`#define`](../preprocessor/hash-define-directive-c-cpp.md) preprocessor directive to define constant values. Values defined with **`const`** are subject to type checking, and can be used in place of constant expressions. In C++, you can specify the size of an array with a **`const`** variable as follows:
 
 ```cpp
 // constant_values2.cpp
@@ -46,9 +73,10 @@ The **`const`** keyword can also be used in pointer declarations.
 ```cpp
 // constant_values3.cpp
 int main() {
-   char *mybuf = 0, *yourbuf;
+   char this_char{'a'}, that_char{'b'};
+   char *mybuf = &this_char, *yourbuf = &that_char;
    char *const aptr = mybuf;
-   *aptr = 'a';   // OK
+   *aptr = 'c';   // OK
    aptr = yourbuf;   // C3892
 }
 ```
@@ -72,20 +100,20 @@ int main() {
 
 You can use pointers to constant data as function parameters to prevent the function from modifying a parameter passed through a pointer.
 
-For objects that are declared as **`const`**, you can only call constant member functions. This ensures that the constant object is never modified.
+For objects that are declared as **`const`**, you can only call constant member functions. The compiler ensures that the constant object is never modified.
 
 ```cpp
 birthday.getMonth();    // Okay
 birthday.setMonth( 4 ); // Error
 ```
 
-You can call either constant or nonconstant member functions for a nonconstant object. You can also overload a member function using the **`const`** keyword; this allows a different version of the function to be called for constant and nonconstant objects.
+You can call either constant or non-constant member functions for a non-constant object. You can also overload a member function using the **`const`** keyword; this feature allows a different version of the function to be called for constant and non-constant objects.
 
-You cannot declare constructors or destructors with the **`const`** keyword.
+You can't declare constructors or destructors with the **`const`** keyword.
 
-## const member functions
+## `const` member functions
 
-Declaring a member function with the **`const`** keyword specifies that the function is a "read-only" function that does not modify the object for which it is called. A constant member function cannot modify any non-static data members or call any member functions that aren't constant.To declare a constant member function, place the **`const`** keyword after the closing parenthesis of the argument list. The **`const`** keyword is required in both the declaration and the definition.
+Declaring a member function with the **`const`** keyword specifies that the function is a "read-only" function that doesn't modify the object for which it's called. A constant member function can't modify any non-static data members or call any member functions that aren't constant. To declare a constant member function, place the **`const`** keyword after the closing parenthesis of the argument list. The **`const`** keyword is required in both the declaration and the definition.
 
 ```cpp
 // constant_member_function.cpp
@@ -117,7 +145,7 @@ int main()
 }
 ```
 
-## C and C++ const differences
+## C and C++ `const` differences
 
 When you declare a variable as **`const`** in a C source code file, you do so as:
 
@@ -147,17 +175,17 @@ to prevent name mangling by the C++ compiler.
 
 ## Remarks
 
-When following a member function's parameter list, the **`const`** keyword specifies that the function does not modify the object for which it is invoked.
+When following a member function's parameter list, the **`const`** keyword specifies that the function doesn't modify the object for which it's invoked.
 
-For more information on **`const`**, see the following topics:
+For more information on **`const`**, see the following articles:
 
-- [const and volatile Pointers](../cpp/const-and-volatile-pointers.md)
+- [`const` and `volatile` pointers](../cpp/const-and-volatile-pointers.md)
 
-- [Type Qualifiers (C Language Reference)](../c-language/type-qualifiers.md)
+- [Type qualifiers (C language reference)](../c-language/type-qualifiers.md)
 
-- [volatile](../cpp/volatile-cpp.md)
+- [`volatile`](../cpp/volatile-cpp.md)
 
-- [#define](../preprocessor/hash-define-directive-c-cpp.md)
+- [`#define`](../preprocessor/hash-define-directive-c-cpp.md)
 
 ## See also
 
