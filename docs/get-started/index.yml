@@ -70,11 +70,11 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Open code from a repo
-            url: /visualstudio/get-started/tutorial-open-project-from-repo.md
+            url: /visualstudio/get-started/tutorial-open-project-from-repo
           - text: Write and edit code 
-            url: /visualstudio/get-started/tutorial-editor.md
+            url: /visualstudio/get-started/tutorial-editor
           - text: Compile and build 
-            url: /visualstudio/ide/compiling-and-building-in-visual-studio.md
+            url: /visualstudio/ide/compiling-and-building-in-visual-studio
           - text: Debug your C++ code
             url: /visualstudio/debugger/quickstart-debug-with-cplusplus
           - text: Test your C++ code
