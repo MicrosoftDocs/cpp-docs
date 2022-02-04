@@ -42,11 +42,11 @@ Consider replacing your PCH implementation with header units. You get the same s
 
 There are several ways to compile a file into a header unit:
 
-- **Choose individual files to translate into header units**. This approach gives you file-by-file control over what is treated as a header unit. It's also useful when you must compile a file as a header unit that, because it doesn't have the default extension (`.ixx`, `.cppm`, `.h`), wouldn't normally be compiled into a header unit. This approach is demonstrated in this walkthrough. To get started, see [Choose individual header units to build](#approach1).
+- **Choose individual files to translate into header units**. This approach gives you file-by-file control over what is treated as a header unit. It's also useful when you must compile a file as a header unit that, because it doesn't have the default extension (`.ixx`, `.cppm`, `.h`, `.hpp`), wouldn't normally be compiled into a header unit. This approach is demonstrated in this walkthrough. To get started, see [Approach 1: Choose individual header units to build](#approach1).
 
 - **Build a shared header unit project**. This is the recommended approach and provides more control over the organization and reuse of the imported header units. Create a static library project that contains the header units that you want and then reference it to import the header units. For a walkthrough of this approach, see [Build a header unit static library project for header units](walkthrough-import-stl-header-units.md#approach2).
 
-- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it doesn't guarantee optimal build throughput. For details about this approach, see [Automatically scan for header units](#approach2).
+- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it doesn't guarantee optimal build throughput. For details about this approach, see [Approach 2: Automatically scan for header units](#approach2).
 
 - As mentioned in the introduction, you can build and import STL header files as header units and automatically treat `#include` for STL library headers as `import` without rewriting your code. To see how, visit [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
@@ -89,20 +89,20 @@ To enable header units, first set the **C++ Language Standard** to [`/std:c++20`
 1. In the left pane of the project property pages window, select **Configuration Properties** > **General**.
 1. In the **C++ Language Standard** list, select **ISO C++20 Standard (/std:c++20)** or later. In versions before Visual Studio 2019 version 16.11, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.
 
-To compile a header file as a header unit:
+Compile the header file as a header unit:
 
 1. In **Solution Explorer**, select the file you want to compile as a header unit (in this case, `Pythagorean.h`). Right-click the file and select **Properties**.
 1. Since this is a header file, set the **Item Type** property to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**. This property also sets **C/C++** > **Advanced** > **Compile As** to **Compile as C++ Header Unit (/exportHeader)**.
 
     :::image type="content" source="media/change-item-type.png" alt-text="Screenshot that shows changing the item type to C/C++ compiler.":::
 
-    This isn't necessary in this walkthrough, but to compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, you would set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
+    The following isn't necessary for this walkthrough, but to compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, you would set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
 
     :::image type="content" source="media/change-compile-as.png" alt-text="Screenshot that shows changing Configuration properties > C/C++ > Advanced > Compile As to Compile as C++ Header Unit (/exportHeader).":::
 
 ### Change your code to import a header unit
 
-In the source file for the example project that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` Don't forget the trailing semicolon that's required for `import` statements.
+In the source file for the example project, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` Don't forget the trailing semicolon that's required for `import` statements.
 
 To compile a header unit from a system header, use angle brackets: `import <file>;`\
 If it's a header in a directory local to your project, use quotes: `import "file";`
@@ -117,18 +117,18 @@ If you're interested in specifically importing STL library headers as header uni
 
 ## <a name="approach2"></a>Approach 2: Automatically scan for and build header units
 
-This approach is best suited for smaller projects because it doesn't guarantee optimal build throughput due to scanning all of your source files to find and build header units.
+Due to scanning all of your source files to find and build header units, this approach is best suited for smaller projects because it doesn't guarantee optimal build throughput .
 
 This approach combines two Visual Studio project settings:
 
-- **Scan Sources for Module Dependencies** causes the build system to call the compiler to ensure that all imported modules and header units are built before compiling the files that depend on them. When combined with **Translate Includes to Imports**, header files included in your source, that are also specified in a [`header-units.json`](./reference/header-unit-json-reference.md) file, are compiled into header units.
+- **Scan Sources for Module Dependencies** causes the build system to call the compiler to ensure that all imported modules and header units are built before compiling the files that depend on them. When combined with **Translate Includes to Imports**, header files included in your source, that are also specified in a [`header-units.json`](./reference/header-unit-json-reference.md) file in the same directory as the header file, are compiled into header units.
 - **Translate Includes to Imports** treats a header file as an `import` if the `#include` refers to a header file that can be compiled as a header unit (as specified in a `header-units.json` file), and a compiled header unit is available for the header file. Otherwise, the header file is treated as a normal `#include`. The [`header-units.json`](./reference/header-unit-json-reference.md) file is used to automatically build header units for each `#include` without symbol duplication.
 
 You can turn these settings on in the properties for your project. To do so, right-click the project in the **Solution Explorer** and choose **Properties**. Then choose **Configuration Properties** > **C/C++** > **General**.
 
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the project properties screen with Configuration highlighted and All Configurations selected. Under C/C++ > General, Scan Sources for Module Dependencies is highlighted and set to yes, and Translate Includes to Imports is highlighted and set to Yes (/translateInclude)":::
 
-**Scan Sources for Module Dependencies** can be set for all of the files in the project (in **Project Properties** as shown here) or for individual files in **File Properties**. Modules and header units are always scanned. Set this option when you have a `.cpp` file that imports header units that you want built automatically and might not be built yet.
+**Scan Sources for Module Dependencies** can be set for all of the files in the project in **Project Properties** as shown here, or for individual files in **File Properties**. Modules and header units are always scanned. Set this option when you have a `.cpp` file that imports header units that you want built automatically and might not be built yet.
 
 These settings work to together to automatically build and import header units under these conditions:
 
@@ -137,7 +137,7 @@ These settings work to together to automatically build and import header units u
 
 The `header-units.json` file serves two purposes. In addition to specifying which header files can be compiled into header units, it minimizes duplicated symbols to increase build throughput. For more information about symbol duplication, see [C++ header-units.json reference](reference/header-unit-json-reference.md#preventing-duplicated-symbols).
 
-These switches and the `header-unit.json` provide some of the benefits of header units. The convenience comes at the cost of build throughput. This approach might not be the best for larger projects because it doesn't guarantee optimal build times. Also, the same header files might be encountered and reprocessed repeatedly, which increases build time. However, the convenience might be worth it depending on the project.
+These switches and the `header-unit.json` provide some of the benefits of header units. The convenience comes at the cost of build throughput. This approach might not be the best for larger projects because it doesn't guarantee optimal build times. Also, the same header files might be reprocessed repeatedly, which increases build time. However, the convenience might be worth it depending on the project.
 
 These features are designed for legacy code. For new code, move to modules instead of header units or `#include` files. For a tutorial on using modules, see [Name modules tutorial (C++)](../cpp/tutorial-named-modules-cpp.md).
 
