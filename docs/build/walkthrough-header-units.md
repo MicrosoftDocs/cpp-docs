@@ -96,7 +96,7 @@ To compile a header file as a header unit:
 
     :::image type="content" source="media/change-item-type.png" alt-text="Screenshot that shows changing the item type to C/C++ compiler.":::
 
-    To compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
+    This isn't necessary in this walkthrough, but to compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, you would set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
 
     :::image type="content" source="media/change-compile-as.png" alt-text="Screenshot that shows changing Configuration properties > C/C++ > Advanced > Compile As to Compile as C++ Header Unit (/exportHeader).":::
 
