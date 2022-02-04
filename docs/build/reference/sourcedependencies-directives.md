@@ -1,7 +1,7 @@
 ---
 title: "/sourceDependencies:directives (List module and header unit dependencies)"
 description: "Reference guide to the /sourceDependencies:directives compiler option in Microsoft C++."
-ms.date: 04/13/2020
+ms.date: 02/02/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies:directives"]
@@ -9,17 +9,17 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line option generates a JSON file that lists module and header-unit dependencies.
+This command-line option scans source files and their `#include` statements to generate a JSON file that lists module export and imports. This information can be used by a build system to determine the build order of modules and header units.
 
-It identifies which modules and header units need to be compiled before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
+This option differs from [`/sourceDependencies`](sourcedependencies.md) in the following ways:
 
-This command-line option is similar to [`/sourceDependencies`](sourcedependencies.md), but differs in the following ways:
-
-- The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
+- The compiler doesn't produce compiled output. No compiled code, modules, or header units are produced. Instead, the files are scanned for module directives.
+- The JSON format is different from what `/sourceDependencies` produces. The `/sourceDependencies` option is intended to be used with other build tools, such as CMake.
 - The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this option does a scan of the project files, not a compilation. So there are no built modules or header units to list.
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
-- Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed.
+- Header file dependencies aren't listed. That is, `#include <file>` or `#include "file"` dependencies aren't listed.
 - `/sourceDependencies:directives` is meant to be used before *`.ifc`* files are built.
+- `/sourceDependencies` causes the compiler to report all of the files, such as `#includes`, `.pch` files, `.ifc` files, and so on, that were used for a particular translation unit, whereas `/sourceDependencies:directives [file1]` scans the specified source file and reports all `import` and `export` statements. `/sourceDependencies` can be used with `/sourceDependencies:directives`.
 
 ## Syntax
 
@@ -40,13 +40,15 @@ If the argument is a directory, the compiler generates source dependency files i
 
 ## Remarks
 
-**`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10. It's not enabled by default.
+**`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10.
 
-When you specify the **`/MP`** compiler option, we recommend you use **`/sourceDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. For more information on **`/MP`**, see [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md).
+When you specify the [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md) compiler option, specify the output file location for **`/sourceDependencies:directives`** with a directory argument. The compiler will produce `[directory]\[source file name with extension].module.json` for each source file.
 
 When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
 
 All file paths appear as absolute paths in the output.
+
+This switch can be used with [`/translateInclude`](translateinclude.md).
 
 ### Examples
 
@@ -66,9 +68,11 @@ import "t.h";
 int main() {}
 ```
 
-> `cl /std:c++latest /sourceDependencies:directives output.json main.cpp`
+This following command line:
 
-This command line produces a JSON file *`output.json`* with content like:
+`cl /std:c++latest /translateInclude /sourceDependencies:directives output.json main.cpp`
+
+produces a JSON file *`output.json`* similar to:
 
 ```JSON
 {
@@ -88,17 +92,19 @@ This command line produces a JSON file *`output.json`* with content like:
 }
 ```
 
-We've used `...` to abbreviate the reported paths. The report will contain the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
+For brevity, the previous example uses `...` to abbreviate the reported paths. The report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you might want to check your project's include path settings.
 
 `ProvidedModule` lists exported module or module partition names.
 
-No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives` is specified, so no compiled modules or header units are produced to import.
+No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives` is specified, so no compiled modules or header units are produced.
 
 ## To set this compiler option in Visual Studio
 
-You normally shouldn't set this yourself in the Visual Studio development environment. It is set by the build system.
+You normally shouldn't set this yourself in the Visual Studio development environment. It's set by the build system.
 
 ## See also
 
+[`/translateInclude`](translateinclude.md)\
+[C++ header-units.json reference](header-unit-json-reference.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
