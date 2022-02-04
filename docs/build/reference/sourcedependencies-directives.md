@@ -9,9 +9,9 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line option scans source files and their includes to generate a JSON file that lists module export and imports. This information can be used by a build system to determine the build order of modules and header units.
+This command-line option scans source files and their `#include` statements to generate a JSON file that lists module export and imports. This information can be used by a build system to determine the build order of modules and header units.
 
-This option scans differs from [`/sourceDependencies`](sourcedependencies.md) in the following ways:
+This option differs from [`/sourceDependencies`](sourcedependencies.md) in the following ways:
 
 - The compiler doesn't produce compiled output. No compiled code, modules, or header units are produced. Instead, the files are scanned for module directives.
 - The JSON format is different from what `/sourceDependencies` produces. The `/sourceDependencies` option is intended to be used with other build tools, such as CMake.
@@ -19,7 +19,7 @@ This option scans differs from [`/sourceDependencies`](sourcedependencies.md) in
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
 - Header file dependencies aren't listed. That is, `#include <file>` or `#include "file"` dependencies aren't listed.
 - `/sourceDependencies:directives` is meant to be used before *`.ifc`* files are built.
-- `/sourceDependencies` causes the compiler to report all of the files, such as `#includes`, `.pch` files, `.ifc` files, and so on, that were used for a particular translation unit . Whereas `/sourceDependencies:directives [file1]` scans the specified source file and reports all `import` and `export` statements. `/sourceDependencies` can be used in combination with `/sourceDependencies:directives`.
+- `/sourceDependencies` causes the compiler to report all of the files, such as `#includes`, `.pch` files, `.ifc` files, and so on, that were used for a particular translation unit, whereas `/sourceDependencies:directives [file1]` scans the specified source file and reports all `import` and `export` statements. `/sourceDependencies` can be used with `/sourceDependencies:directives`.
 
 ## Syntax
 
@@ -48,7 +48,7 @@ When a non-fatal compiler error occurs, the dependency information still gets wr
 
 All file paths appear as absolute paths in the output.
 
-This switch can be used in combination with [`/translateInclude`](translateinclude.md).
+This switch can be used with [`/translateInclude`](translateinclude.md).
 
 ### Examples
 
@@ -68,9 +68,11 @@ import "t.h";
 int main() {}
 ```
 
-> `cl /std:c++latest /translateInclude /sourceDependencies:directives output.json main.cpp`
+This following command line:
 
-This command line produces a JSON file *`output.json`* with content like:
+`cl /std:c++latest /translateInclude /sourceDependencies:directives output.json main.cpp`
+
+produces a JSON file *`output.json`* similar to:
 
 ```JSON
 {
@@ -90,11 +92,11 @@ This command line produces a JSON file *`output.json`* with content like:
 }
 ```
 
-The previous example uses `...` to abbreviate the reported paths. The report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you might want to check your project's include path settings.
+For brevity, the previous example uses `...` to abbreviate the reported paths. The report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you might want to check your project's include path settings.
 
 `ProvidedModule` lists exported module or module partition names.
 
-No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives` is specified, so no compiled modules or header units are produced to import.
+No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives` is specified, so no compiled modules or header units are produced.
 
 ## To set this compiler option in Visual Studio
 

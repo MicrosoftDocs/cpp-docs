@@ -1,7 +1,7 @@
 ---
 description: "Learn to use header units to import C++ Standard Template Library (STL) libraries in Visual Studio."
 title: "Walkthrough: Import STL libraries as header units"
-ms.date: 02/01/2022
+ms.date: 02/03/2022
 ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -21,25 +21,23 @@ To use header units, use Visual Studio 2019 16.10 or later.
 
 ## Two approaches to import STL headers as header units
 
-Before you can import a STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file. It has an *`.ifc`* extension.
+Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file. It has an *`.ifc`* extension.
 
 The recommended approach is to create a static library that contains the built header units for the STL headers you want to use. Then reference that library and `import` its header units. This can result in faster builds and better reuse. To try out this approach, see [Approach 1: Create a static library of STL library header units](#approach1).
 
-Another approach is to have Visual Studio scan for the STL headers you `#include` in your project, compile them into header units, and import rather than include those headers. This is useful if you have a large codebase because you don't have to change your source code. This approach is less flexible than the static library approach because it doesn't lend itself to reusing the built header units in other projects. But you still get the performance advantage of importing individual STL libraries as header units. To try out this approach, see [Approach 2: Scan includes for STL headers to import](#approach2).
+Another approach is to have Visual Studio scan for the STL headers you `#include` in your project, compile them into header units, and `import` rather than `#include` those headers. This is useful if you have a large codebase because you don't have to change your source code. This approach is less flexible than the static library approach because it doesn't lend itself to reusing the built header units in other projects. But you still get the performance advantage of importing individual STL libraries as header units. To try out this approach, see [Approach 2: Scan includes for STL headers to import](#approach2).
 
 ## <a name="approach1"></a>Approach 1: Create a static library of STL library header units
 
-The recommended way to consume STL libraries as header units is to create one or more static library projects consisting of header units built from the STL library headers that you want to use. Then, reference the library project to consume those STL headers as header units. It's similar to using [shared precompiled headers](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio/), but easier.
+The recommended way to consume STL libraries as header units is to create one or more static library projects that consist of the STL library header units that you want to use. Then, reference the library project to consume those STL header units. It's similar to using [shared precompiled headers](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio/), but easier.
 
 Header units (and modules) built in a static library project are automatically available to referencing projects because the project system automatically adds the appropriate [`/headerUnit`](./reference/headerunit.md) command-line option to the compiler so that referencing projects can import the header units.
 
 This approach ensures that the header unit for a particular header is built only once. It allows you to import some or all of the header units, which isn't possible with a PCH. You can include header units in any order.
 
-In the following example, you create a static library project that imports `<iostream>` and `<vector>`. After the solution is built, you'll reference this shared header unit project from another C++ project. Everywhere `import <iostream>;` or `import <vector>;` is found, the built header unit for that library is used instead of translating the header with the preprocessor.
+In the following example, you create a static library project consisting of the `<iostream>` and `<vector>` header units. After the solution is built, you'll reference this shared header unit project from another C++ project. Everywhere `import <iostream>;` or `import <vector>;` is found, the built header unit for that library is used instead of translating the header with the preprocessor. This improves build performance, like PCH files do, when the same header is included in multiple files. The header won't have to be processed over and over by the files that include it. Instead, the already processed compiled header unit is imported.
 
-This improves build performance, like PCH files do, when the same header is included in multiple files. The header won't have to be processed over and over by the files that include it. Instead, the already processed compiled header unit is imported.
-
-To create a static library that contains the STL libraries that you want to compile into header units, follow these steps:
+To create a static library that contains the STL libraries `<iostream>` and `<vector>`, follow these steps:
 
 1. Create an empty C++ project. Call it **SharedPrj**.\
  Select **Empty Project** for C++ from the project types available in the **Create a new project** window:
@@ -85,7 +83,7 @@ To import `<iostream>` and `<vector>` as header units from the static library, c
     }
     ```
 
-To use header units, you need the [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later option. If you are using Visual Studio 2019 version 16.10, use **`/std:c++latest`**. Set the language standard by using the following steps:
+To use header units, you need the [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later option. If you're using Visual Studio 2019 version 16.10, use **`/std:c++latest`**. Set the language standard by using the following steps:
 
 1. In **Solution Explorer**, right-click the **Walkthrough** project and select **Properties**. The project property pages dialog opens:
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot that shows setting the language standard to the preview version.":::
@@ -112,9 +110,9 @@ When you use this approach with your own projects, build the static library proj
 
 ### `/translateInclude`
 
-The [`/translateInclude`](./reference/translateinclude.md) compiler option (available in the project properties dialog under **C/C++** > **General** > **Translate Includes to Imports**) makes it easier for you to use a header unit library in a project that uses `#include` directives. It makes it unnecessary to change `#include` directives to `import` in your project, while still giving you the advantage of importing the header units instead of including them.
+The [`/translateInclude`](./reference/translateinclude.md) compiler option (available in the project properties dialog under **C/C++** > **General** > **Translate Includes to Imports**) makes it easier for you to use a header unit library in older projects projects that `#include` the STL libraries. It makes it unnecessary to change `#include` directives to `import` in your project, while still giving you the advantage of importing the header units instead of including them.
 
-For example, if you have `#include <vector>` in your project and you reference a static library that contains a header unit for `<vector>`, you don't need to manually change `#include <vector>` to `import <vector>;` in your source code. Instead, the compiler automatically treats `#include <vector>` as `import <vector>;` Not all STL header files can be compiled to a header unit.  The `header-units.json` shipped with Visual Studio lists which STL header files can be compiled into header units. A header that relies on macros to specify its behavior often can't be compiled into a header unit.
+For example, if you have `#include <vector>` in your project and you reference a static library that contains a header unit for `<vector>`, you don't need to manually change `#include <vector>` to `import <vector>;` in your source code. Instead, the compiler automatically treats `#include <vector>` as `import <vector>;`  To see this explored in detail, visit [Approach 2: Scan includes for STL headers to import](#approach2) in this topic. Not all STL header files can be compiled to a header unit. The `header-units.json` shipped with Visual Studio lists which STL header files can be compiled into header units. A header that relies on macros to specify its behavior often can't be compiled into a header unit.
 
 An `#include` statement that doesn't refer to a header unit is treated as a normal `#include`.
 
@@ -166,11 +164,11 @@ To access this setting:
 
 Another way to import STL libraries is to have Visual Studio scan for the STL headers you `#include` in your project and compile them into header units. The compiler then imports rather than includes those headers.
 
-This option is convenient when your project includes many STL header files across many files, or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header is built only once. But it's useful if you have a large codebase because you don't have to change your source code to take advantage of the benefits of header units for many of the STL libraries you use.
+This option is convenient when your project includes many STL header files across many files, or when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header file is built only once. But it's useful if you have a large codebase because you don't have to change your source code to take advantage of the benefits of header units for many of the STL libraries you use.
 
 This approach is less flexible than the static library approach because it doesn't lend itself towards reusing the built header units in other projects. This approach might not be appropriate for larger projects because it doesn't guarantee an optimal build time since all of the sources must be scanned for `#include` statements.
 
-Not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via macros shouldn't be converted to header units. There's an allowlist for the STL headers that the compiler uses when `/translateInclude` is specified to determine which STL headers can be compiled into header units. The `header-units.json` file is under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit. Another advantage of the `header-units.json` file is that it prevents symbol duplication in the built header units. That is, if compiling a header unit brings in another library header multiple times, the symbols aren't duplicated.
+Not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via macros shouldn't be converted to header units. There's an allowlist in the form of a `header-units.json`file for the STL headers that the compiler uses when `/translateInclude` is specified. It determines which STL headers can be compiled into header units. The `header-units.json` file is under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit. Another advantage of the `header-units.json` file is that it prevents symbol duplication in the built header units. That is, if compiling a header unit brings in another library header multiple times, the symbols won't be duplicated.
 
 To try out this approach, create a project that includes two STL libraries and then change the project properties so that it imports the libraries as header units instead of including them, as described in the next section.
 
@@ -201,7 +199,7 @@ The following steps set the option that causes the compiler to scan for included
 1. Select **All Configurations** in the **Configuration** list and **All Platforms** in the **Platform** list. Doing so ensures the settings that you change apply whether you're building for debug or release, and other configurations.
 1. In the left pane of the project property pages dialog, select **C/C++** > **General**.
 1. Set **Scan Sources for Module Dependencies** to **Yes**. This setting ensures that all files that can be compiled into a header unit will be.
-1. Set **Translate Includes to Imports** to **Yes** This setting causes included STL header files that are on the allowlist (that is, in the `header-unit.json` file) to be compiled and then imported as header units instead of going through the preprocessor.
+1. Set **Translate Includes to Imports** to **Yes** This setting causes included STL header files that are on the allowlist (that is, in the `header-unit.json` file) to be compiled and then imported as header units instead of going through the preprocessor as an `#include`.
 
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the Scan Sources for Module Dependencies, and Translate Includes to Imports settings, in the project properties page under Configuration Properties > C/C++ > General.":::
 
@@ -214,7 +212,7 @@ The [`/std:c++20`](./reference/std-specify-language-standard-version.md) or late
 
 Run the solution to verify that it produces the expected output: `1`
 
-The main consideration when you use this approach is the balance between convenience and the cost of scanning all your files to determine which header files to build as header units.
+The main consideration for whether to use this approach is the balance between convenience and the cost of scanning all your files to determine which header files to build as header units.
 
 ## See also
 

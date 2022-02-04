@@ -1,7 +1,7 @@
 ---
 description: "Reference for header-units.json file"
 title: "C++ header unit.json reference"
-ms.date: 01/31/2022
+ms.date: 02/03/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["header-units.json"]
@@ -10,15 +10,17 @@ helpviewer_keywords: ["header-units.json", "header unit"]
 
 # C++ header-units.json reference
 
-The `header-units.json` file serves two purposes. In addition to specifying which header files can be translated into header units when [`/translateInclude`](translateinclude.md) is specified, it minimizes duplicated symbols to increase build throughput.
+The `header-units.json` file serves two purposes:
+- Specify which header files can be translated into header units when [`/translateInclude`](translateinclude.md) is specified.
+- Minimize duplicated symbols to increase build throughput.
 
-This file must be in the same directory as the included header files. This file is only used when [`/translateInclude`](translateinclude.md) is specified along with either `/scanDependencies` or [`/sourceDependencies:directives`]((sourcedependencies-directives.md).
+This file must be in the same directory as the included header file. This file is only used when [`/translateInclude`](translateinclude.md) is specified along with either `/scanDependencies` or [`/sourceDependencies:directives`](sourcedependencies-directives.md).
 
 ## Rationale
 
-Some header files can't be safely translated to header units. Header files that use macros that aren't defined on the command line, or aren't defined in the header files included by this header, can't be built as header units.
+Some header files can't be safely translated to header units. Header files that depend on macros that aren't defined on the command line, or that aren't defined in the header files included by the header, can't be translated to header units.
 
-If a header defines macros which affect whether other headers are included, it cannot be safely translated. For example, given `a.h`, `b.h` and `macros.h`, which are all in the same directory:
+If a header defines macros that affect whether other headers are included, it can't be safely translated. For example, given `a.h`, `b.h` and `macros.h`, which are all in the same directory:
 
 ```cpp
 // a.h
@@ -29,7 +31,7 @@ If a header defines macros which affect whether other headers are included, it c
 #endif
 ```
 
-The `header-units.json` in this directory can contain `a.h` and `b.h`, but not `macros.h`. It would look something like this:
+The `header-units.json` in this directory can contain `a.h` and `b.h`, but not `macros.h`. The `header-units.json` for this example would be similar to this:
 
 ```json
 {
@@ -44,13 +46,13 @@ The `header-units.json` in this directory can contain `a.h` and `b.h`, but not `
 
 The reason `macros.h` can't be listed in this `header-units.json` file is that during the scan phase, the header unit (`.ifc`) might not be compiled yet for `macros.h`. In that case, `MACRO` won't be defined when `a.h` is compiled. That means `b.h` will be missing from the list of dependencies for `a.h`. Because it isn't in the list of dependencies, the build system won't build a header unit for `b.h` despite it being listed in the `header-units.json` file.
 
-To avoid this problem when there is a dependency on a macro in another header file, the header file that defines the macro is excluded from the list of those that can be compiled into a header unit. This way the header file that defines the macro is treated as an `#include` and `MACRO` will be visible so that `b.h` is included and listed as one of the dependencies.
+To avoid this problem when there's a dependency on a macro in another header file, the header file that defines the macro is excluded from the list of files that can be compiled into a header unit. This way the header file that defines the macro is treated as an `#include` and `MACRO` will be visible so that `b.h` is included and listed as one of the dependencies.
 
 ### Preventing duplicated symbols
 
-The `header-units.json` file is also important because it allows for automatic header unit creation without duplicated symbols. It does this by creating "atomic" header units for the files listed in `header-units.json`. The imported header units don't contain duplicated symbols from the various includes that were processed while translating the header file.
+The `header-units.json` file is also important because it allows for automatic header unit creation without duplicated symbols. It does this by creating "atomic" header units for the files listed in `header-units.json`. The imported header units don't contain duplicated symbols from the various `#include` directives that were processed while translating the header file.
 
-To understand the benefit of reducing duplicated symbols, consider two header files that both include a common header file, and then both header files are included by the same source file:
+For example, consider two header files that both include a common header file. Both header files are included by the same source file:
 
 ```cpp
 // a.h
@@ -66,17 +68,17 @@ import "c.h";
 
 If the compiler built header units for `a.h`, `b.h` and `c.h`, then the compiled header units `a.h.ifc`, `b.h.ifc`, and `c.h.ifc` would each contain all of the types from `b.h`. Compiling `Source.cpp`, which imports both `a.h` and `c.h`, would require the compiler to deduplicate the `b.h` types, which would impact build performance.
 
-But if there is a `header-units.json` in the `b.h` directory, and `/translateInclude` is specified, the following happens:
+But if there's a `header-units.json` in the `b.h` directory, and `/translateInclude` is specified, the following happens:
 
 1. The scan of `a.h` and `c.h` lists `b.h` as a header unit import in the dependency scan files generated by the compiler.
-1. The build system reads the dependency scan files and determine to build `b.h.ifc` first.
+1. The build system reads the dependency scan files and determines to build `b.h.ifc` first.
 1. Then the build system adds `/headerUnit` for `b.h.ifc` to the command lines for compiling `a.h` and `c.h`. It calls the compiler to build the header units `a.h.ifc` and `c.h.ifc`. Because `/translateInclude` is specified, and `/headerUnit for b.h.ifc` is also specified, `a.h.ifc` and `c.h.ifc` won't contain `b.h` types, so there won't be any duplication in the produced header units.
 
 ## Schema
 
 There's a `headerunits.json` file for the Standard Template Library (STL) headers. The build system uses it to determine whether to create a header unit for an STL header file, and for its dependencies. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
 
-You can see the `header-units.json` file under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`
+You can see the `header-units.json` file under the installation directory for Visual Studio. For example: `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`
 
 The `header-units.json` file starts with the schema version, followed by an array of filenames for headers that can be built into header units.
 
