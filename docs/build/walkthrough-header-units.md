@@ -46,11 +46,11 @@ There are several ways to compile a file into a header unit:
 
 - **Build a shared header unit project**. This is the recommended approach and provides more control over the organization and reuse of the imported header units. Create a static library project that contains the header units that you want and then reference it to import the header units. For a walkthrough of this approach, see [Build a header unit static library project for header units](walkthrough-import-stl-header-units.md#approach2).
 
-- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it doesn't guarantee optimal build throughput. For details about this approach, see [Automatically scan for header units](#approach3).
+- **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it doesn't guarantee optimal build throughput. For details about this approach, see [Automatically scan for header units](#approach2).
 
 - As mentioned in the introduction, you can build and import STL header files as header units and automatically treat `#include` for STL library headers as `import` without rewriting your code. To see how, visit [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
-## <a name="approach1"></a>Choose individual header units to build
+## <a name="approach1"></a>Approach 1: Choose header units to build
 
 This section show how to choose a specific file to translate into a header unit. Compile a header file as a header unit using the following steps in Visual Studio:
 
@@ -82,7 +82,7 @@ This section show how to choose a specific file to translate into a header unit.
     #endif
     ```
 
-## Set project properties
+### Set project properties
 
 To enable header units, first set the **C++ Language Standard** to [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later:
 1. On the Visual Studio main menu, select **Project** > **Properties**.
@@ -115,7 +115,7 @@ If you want to convert only a few header files to header units, this approach is
 
 If you're interested in specifically importing STL library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1).
 
-## <a name="approach3"></a>Automatically scan for and build header units
+## <a name="approach2"></a>Approach 2: Automatically scan for and build header units
 
 This approach is best suited for smaller projects because it doesn't guarantee optimal build throughput due to scanning all of your source files to find and build header units.
 
