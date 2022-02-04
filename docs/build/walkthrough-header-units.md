@@ -82,7 +82,7 @@ This section show how to choose a specific file to translate into a header unit.
     #endif
     ```
 
-## Set build settings
+## Set project properties
 
 To enable header units, first set the **C++ Language Standard** to [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later:
 1. On the Visual Studio main menu, select **Project** > **Properties**.
@@ -96,9 +96,9 @@ To compile a header file as a header unit:
 
     :::image type="content" source="media/change-item-type.png" alt-text="Screenshot that shows changing the item type to C/C++ compiler.":::
 
-If you want to compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
+    To compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
 
-:::image type="content" source="media/change-compile-as.png" alt-text="Screenshot that shows changing Compile As to Compile as C++ Header Unit.":::
+    :::image type="content" source="media/change-compile-as.png" alt-text="Screenshot that shows changing Configuration properties > C/C++ > Advanced > Compile As to Compile as C++ Header Unit (/exportHeader).":::
 
 ### Change your code to import a header unit
 
