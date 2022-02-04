@@ -50,7 +50,7 @@ There are several ways to compile a file into a header unit:
 
 - As mentioned in the introduction, you can build and import STL header files as header units and automatically treat `#include` for STL library headers as `import` without rewriting your code. To see how, visit [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
-## <a name="approach1"></a>Choose individual header unit to build
+## <a name="approach1"></a>Choose individual header units to build
 
 This section show how to choose a specific file to translate into a header unit. Compile a header file as a header unit using the following steps in Visual Studio:
 
@@ -82,6 +82,8 @@ This section show how to choose a specific file to translate into a header unit.
     #endif
     ```
 
+## Set build settings
+
 To enable header units, first set the **C++ Language Standard** to [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later:
 1. On the Visual Studio main menu, select **Project** > **Properties**.
 1. In the left pane of the project property pages window, select **Configuration Properties** > **General**.
@@ -94,9 +96,9 @@ To compile a header file as a header unit:
 
     :::image type="content" source="media/change-item-type.png" alt-text="Screenshot that shows changing the item type to C/C++ compiler.":::
 
-As an aside, if you wanted to compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
+If you want to compile a file that doesn't have a `.h` or `.hpp` extension as a header unit, set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**:
 
-    :::image type="content" source="media/change-compile-as.png" alt-text="Screenshot that shows changing Compile As to Compile as C++ Header Unit.":::
+:::image type="content" source="media/change-compile-as.png" alt-text="Screenshot that shows changing Compile As to Compile as C++ Header Unit.":::
 
 ### Change your code to import a header unit
 
