@@ -85,6 +85,8 @@ items:
       href: ../build/walkthrough-header-units.md
     - name: "Walkthrough: Import STL libraries as header units"
       href: ../build/walkthrough-import-stl-header-units.md
+    - name: C++ header unit.json reference
+      href: ../build/reference/header-unit-json-reference.md
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
 - name: C++ release builds
