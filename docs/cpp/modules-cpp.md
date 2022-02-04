@@ -8,7 +8,7 @@ description: Modules in C++20 provide a modern alternative to header files.
 
 C++20 introduces *modules*, a modern solution for componentization of C++ libraries and programs. A module is a set of source code files that are compiled independently of the [translation units](https://wikipedia.org/wiki/Translation_unit_(programming)) that import them. Modules eliminate or reduce many of the problems associated with the use of header files. They often reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module aren't visible outside the module. They have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit don't participate in overload resolution or name lookup in the imported module. After a module is compiled once, the results are stored in a binary file that describes all the exported types, functions, and templates. That file can be processed much faster than a header file. And, the compiler can reuse it every place where the module is imported in a project.
 
-Modules can be used side by side with header files. A C++ source file can import modules and also #include header files. In some cases, a header file can be imported as a module rather than textually #included by the preprocessor. We recommend you use modules in new projects rather than header files as much as possible. For larger existing projects under active development, we suggest that you experiment with converting legacy headers to modules. Base adoption on whether you get a meaningful reduction in compilation times.
+Modules can be used side by side with header files. A C++ source file can import modules and also #include header files. In some cases, a header file can be imported as a module rather than textually #included by the preprocessor. We recommend you use modules in new projects rather than header files as much as possible. For larger existing projects under active development, experiment with converting legacy headers to modules. Base adoption on whether you get a meaningful reduction in compilation times.
 
 ## Enable modules in the Microsoft C++ compiler
 
@@ -26,7 +26,7 @@ Although not specified by the C++20 standard, Microsoft enables its implementati
 - `std.threading` provides the contents of headers `<atomic>`, `<condition_variable>`, `<future>`, `<mutex>`, `<shared_mutex>`, and `<thread>`
 - `std.core` provides everything else in the C++ Standard Library
 
-To consume these modules, just add an import declaration to the top of the source code file. For example:
+To consume these modules, add an import declaration to the top of the source code file. For example:
 
 ```cpp
 import std.core;
@@ -37,7 +37,7 @@ To consume the Microsoft Standard Library module, compile your program with [`/E
 
 ## Basic example
 
-The following example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. However, the definitions can be also placed in one or more separate files (as shown in a later example). The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier on `f()` indicates that this function will be visible when `Example` is imported by another program or module. The module references a namespace `Example_NS`.
+The following example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. However, the definitions can be also placed in one or more separate files (as shown in a later example). The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier on `f()` indicates that this function is visible when `Example` is imported by another program or module. The module references a namespace `Example_NS`.
 
 ```cpp
 export module Example;
@@ -90,13 +90,13 @@ When it does argument-dependent lookup for overload resolutions in the importing
 
 ### Module partitions
 
-A module can be componentized into *partitions*, each consisting of an interface file and zero or more implementation files. A module partition is similar to a module, except it shares ownership of all declarations in the entire module. All names exported by partition interface files are imported and re-exported by the primary interface file. A partition's name must begin with the module name followed by a colon. Declarations in any of the partitions are visible within the entire module. No special precautions are needed to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, etc.) in one partition and define it in another. A partition implementation file begins like this:
+A module can be componentized into *partitions*, each consisting of an interface file and zero or more implementation files. A module partition is similar to a module, except it shares ownership of all declarations in the entire module. All names exported by partition interface files are imported and re-exported by the primary interface file. A partition's name must begin with the module name followed by a colon. Declarations in any of the partitions are visible within the entire module. No special precautions are needed to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, and so on) in one partition and define it in another. A partition implementation file begins like this:
 
 ```cpp
 module Example:part1
 ```
 
-and the partition interface file begins like this:
+The partition interface file begins like this:
 
 ```cpp
 export module Example:part1
@@ -109,7 +109,7 @@ module Example:part2;
 import :part1;
 ```
 
-The primary interface unit must import and re-export all the module's interface partition files like this:
+The primary interface unit must import and re-export all of the module's interface partition files like this:
 
 ```cpp
 export import :part1
@@ -121,7 +121,7 @@ The primary interface unit can import partition implementation files, but can't 
 
 ## Modules and header files
 
-You can include header files in a module source file by putting the `#include` directive before the module declaration. These files are considered to be in the *global module fragment*. A module can only see the names in the global module fragment that are in headers it explicitly includes. The global module fragment only contains symbols that are actually used.
+You can include header files in a module source file by putting the `#include` directive before the module declaration. These files are considered to be in the *global module fragment*. A module can only see the names in the global module fragment that are in headers it explicitly includes. The global module fragment only contains symbols that are used.
 
 ```cpp
 // MyModuleA.cpp
@@ -147,7 +147,7 @@ import std.filesystem;
 
 ### Imported header files
 
-Some headers are sufficiently self-contained that they may be brought in using the **`import`** keyword. The main difference between an imported header and an imported module is that any preprocessor definitions in the header are visible in the importing program immediately after the `import` statement. However, preprocessor definitions in any files included by that header aren't visible.
+Some headers are sufficiently self-contained that they can be brought in using the **`import`** keyword. The main difference between an imported header and an imported module is that any preprocessor definitions in the header are visible in the importing program immediately after the `import` statement. However, preprocessor definitions in any files included by that header aren't visible.
 
 ```cpp
 import <vector>;

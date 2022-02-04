@@ -1,15 +1,23 @@
 ---
-title: "/translateInclude (Translate include directives into import directives)"
+title: "/translateInclude"
 description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
-ms.date: 4/13/2021
+ms.date: 02/01/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/translateInclude"]
 helpviewer_keywords: ["/translateInclude", "Translate include directives into import directives"]
 ---
-# `/translateInclude` (Translate include directives into import directives)
+# `/translateInclude`
 
-Instructs the compiler to treat `#include` as `import` for those headers that have been prebuilt into a header unit (`.ifc`) file.
+This switch instructs the compiler to treat `#include` as `import` for header files that have been built into header unit (`.ifc`) files and that are specified on the command line with [`/headerUnit`](headerunit.md).
+
+When used with `/scanDependencies` or [`/sourceDependencies-directives`](sourcedependencies-directives.md), the compiler lists as imported header units in the generated dependency file those headers that are both included in the source and have a corresponding entry in a `header-units.json` file. This dependency info is used by the build system to generate compiled header unit `.ifc` files. Once the header units are built, they're treated by the compiler as an `import` instead of an `#include`.
+
+The `header-units.json` file is only consulted when `/translateInclude` is specified. For more information about the format and purpose of the `header-units.json` file,  see [`header-units.json`](header-unit-json-reference.md).
+
+If an `#include` file isn't listed in the `header-units.json` file, it's treated as a normal `#include`.
+
+For an example of how this switch is used, see [Walkthrough: Build and import header units in Microsoft Visual C++](../walkthrough-header-units.md).
 
 ## Syntax
 
@@ -17,53 +25,12 @@ Instructs the compiler to treat `#include` as `import` for those headers that ha
 
 ## Remarks
 
-The **`/translateInclude`** compiler option requires you enable the [/std:c++20](std-specify-language-standard-version.md) or later option (such as **`/std:c++latest`**). `/translateInclude` is available starting in Visual Studio 2019 version 16.10.
-
-The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` has been prebuilt into an importable header unit:
-
-```cpp
-#include <vector>
-```
-
-The compiler replaces this directive with:
-
-```cpp
-import <vector>;
-```
-
-In MSVC, available header units are made available by the **`/headerUnit`** option, which maps a header file to its corresponding prebuilt importable header unit. For more information, see [`/headerUnit` (Specify where to find the header unit file (`.ifc`) for the specified header)](headerunit.md).
-
-### Examples
-
-Given a project that references two header files and their header units, listed in this table:
-
-| Header file | IFC file |
-|--|--|
-| *`C:\utils\util.h`* | *`C:\util.h.ifc`* |
-| *`C:\app\app.h`* | *`C:\app.h.ifc`* |
-
-And a source *`.cpp`* file that includes the headers,
-
-```cpp
-#include "utils/util.h"
-#include "app/app.h"
-
-int main() { }
-```
-
-The **`/translateInclude`** option allows the compiler to treat an `#include` as an `import` for header files that have a corresponding compiled header unit file (*`.ifc`*) and that have been specified on the command line via the `/headerUnit` switch.
-
-If an `#include` is encountered that doesn't have a corresponding header unit specified via the `/headerUnit` switch, it is processed by the preprocessor as a normal `#include` directive.
-
- Here's an example command line that translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
-
-```CMD
-cl /IC:\ /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
-```
+**`/translateInclude`** is available in Visual Studio 2019 version 16.10, or later.\
+**`/translateInclude`** requires [/std:c++20](std-specify-language-standard-version.md) or later.
 
 ## To set this compiler option in Visual Studio
 
-To enable `/translateInclude`, set the **Translate Includes to Imports** option in project properties:
+To enable `/translateInclude`, in the project properties dialog, set **Translate Includes to Imports**:
 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **C/C++** > **General**
 1. Change the **Translate Includes to Imports** dropdown to **Yes**
@@ -73,4 +40,6 @@ To enable `/translateInclude`, set the **Translate Includes to Imports** option 
 
 [`/headerUnit` (Use header unit IFC)](headerunit.md).\
 [`/exportHeader` (Create header units)](module-exportheader.md)\
-[`/reference` (Use named module IFC)](module-reference.md)
+[`/reference` (Use named module IFC)](module-reference.md)\
+[`/sourceDependencies-directives`](sourcedependencies-directives.md)\
+[Walkthrough: Build and import header units in Microsoft Visual C++](../walkthrough-header-units.md)
