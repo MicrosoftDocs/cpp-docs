@@ -40,7 +40,7 @@ An array of null-terminated strings representing command-line arguments entered 
 For information on how to suppress command-line processing, see [Customize C++ command-line processing](#customize).
 
 > [!NOTE]
-> By convention, `argv[0]` is the filename of the program. However, on Windows it's possible to spawn a process by using [`CreateProcess`](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew). If you use both the first and second arguments (*`lpApplicationName`* and *`lpCommandLine`*), `argv[0]` may not be the executable name. You can use [`GetModuleFileName`](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to retrieve the executable name, and its fully-qualified path.
+> By convention, `argv[0]` is the filename of the program. However, on Windows it's possible to spawn a process by using [`CreateProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw). If you use both the first and second arguments (*`lpApplicationName`* and *`lpCommandLine`*), `argv[0]` may not be the executable name. You can use [`GetModuleFileName`](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to retrieve the executable name, and its fully-qualified path.
 
 ## Microsoft-specific extensions
 
