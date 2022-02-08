@@ -1,7 +1,7 @@
 ---
 title: "Redistributing Visual C++ Files"
-description: "Visual Studio includes redistributable libraries and components you can deploy with your app."
-ms.date: 09/17/2021
+description: "Visual Studio includes Redistributable libraries and components you can deploy with your app."
+ms.date: 02/07/2022
 helpviewer_keywords: ["application deployment [C++], file redistributing", "redistributing applications [C++]", "deploying applications [C++], file redistributing", "file redistribution [C++]", "redistributing applications [C++], about redistributing applications"]
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
 ---
@@ -42,36 +42,39 @@ For more information about redistributable files, see [Determining which DLLs to
 
 ## Locate the redistributable files
 
-To deploy redistributable files, you can use the redistributable packages installed by Visual Studio. In versions of Visual Studio since 2017, these files are named *`vc_redist.arm64.exe`*, *`vc_redist.x64.exe`*, and *`vc_redist.x86.exe`*. In Visual Studio 2015, 2017, 2019, and 2022, they're also available under the names *`vcredist_x86.exe`*, *`vcredist_x64.exe`*, and (2015 only) *`vcredist_arm.exe`*.
+To deploy redistributable files, you can use the redistributable packages installed by Visual Studio. In versions of Visual Studio since 2017, these files are named *`vc_redist.arm64.exe`*, *`vc_redist.x64.exe`*, and *`vc_redist.x86.exe`*. In Visual Studio 2015, 2017, and 2019, they're also available under the names *`vcredist_x86.exe`*, *`vcredist_x64.exe`*, and (2015 only) *`vcredist_arm.exe`*.
 
-The easiest way to locate the redistributable files is by using environment variables set in a developer command prompt. In the latest version of Visual Studio 2019, you'll find the redistributable files in the *`%VCINSTALLDIR%Redist\MSVC\v142`* folder. In both Visual Studio 2017 and Visual Studio 2019, they're also found in *`%VCToolsRedistDir%`*. In Visual Studio 2015, these files can be found in *`%VCINSTALLDIR%redist\<locale>`*, where *`<locale>`* is the locale of the redistributable packages.
+The easiest way to locate the redistributable files is by using environment variables set in a developer command prompt. In Visual Studio 2022, the redistributable files are in the *`%VCINSTALLDIR%Redist\MSVC\v143`* folder. In the latest version of Visual Studio 2019, you'll find the redistributable files in the *`%VCINSTALLDIR%Redist\MSVC\v142`* folder. In both Visual Studio 2017 and Visual Studio 2019, they're also found in *`%VCToolsRedistDir%`*. In Visual Studio 2015, these files can be found in *`%VCINSTALLDIR%redist\<locale>`*, where *`<locale>`* is the locale of the redistributable packages.
 
-Another deployment option is to use redistributable merge modules (*`.msm`* files). In Visual Studio 2019, these files are part of an optional installable component named **C++ 2019 Redistributable MSMs** in the Visual Studio Installer. The merge modules are installed by default as part of a C++ install in Visual Studio 2017 and Visual Studio 2015. When installed in the latest version of Visual Studio 2019, you'll find the redistributable merge modules in *`%VCINSTALLDIR%Redist\MSVC\v142\MergeModules`*. In both Visual Studio 2019 and Visual Studio 2017, they're also found in *`%VCToolsRedistDir%MergeModules`*. In Visual Studio 2015, they're found in *`Program Files [(x86)]\Common Files\Merge Modules`*.
+In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named **C++ \<version> Redistributable MSMs** in the Visual Studio Installer. The merge modules are installed by default as part of a C++ install in Visual Studio 2017 and Visual Studio 2015. When installed in Visual Studio 2022, you'll find the redistributable merge modules in *`%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`*. In the latest version of Visual Studio 2019, the redistributable merge modules are in *`%VCINSTALLDIR%Redist\MSVC\v142\MergeModules`*. In both Visual Studio 2019 and Visual Studio 2017, they're also found in *`%VCToolsRedistDir%MergeModules`*. In Visual Studio 2015, they're found in *`Program Files [(x86)]\Common Files\Merge Modules`*.
 
 ## Install the redistributable packages
 
 The Visual C++ Redistributable Packages install and register all Visual C++ libraries. If you use one, run it as a prerequisite on the target system before you install your application. We recommend that you use these packages for your deployments because they enable automatic updating of the Visual C++ libraries. For an example about how to use these packages, see [Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package](deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).
 
-Each Visual C++ Redistributable Package checks for the existence of a more recent version on the machine. If a more recent version is found, the package won't get installed. Starting in Visual Studio 2015, redistributable packages display an error message stating that setup failed. If a package is run by using the **`/quiet`** flag, no error message is displayed. In either case, an error is logged by the Microsoft installer, and an error result is returned to the caller. Starting in Visual Studio 2015 packages, you can avoid this error by checking the registry to find out if a more recent version is installed. The current installed version number is stored in the `HKEY_LOCAL_MACHINE\SOFTWARE[\Wow6432Node]\Microsoft\VisualStudio\14.0\VC\Runtimes\{x86|x64|ARM}` key. The version number is 14.0 for Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019 because the latest redistributable is binary compatible with the 2015 version. The key is `ARM`, `x86`, or `x64` depending on the installed vcredist versions for the platform. (You need to check under the `Wow6432Node` subkey only if you're using Regedit to view the version of the installed x86 package on an x64 platform.) The version number is stored in the REG_SZ string value **`Version`** and also in the set of **`Major`**, **`Minor`**, **`Bld`**, and **`Rbld`** `REG_DWORD` values. To avoid an error at install time, you must skip installation of the redistributable package if the currently installed version is more recent.
+Each Visual C++ Redistributable package checks for the existence of a more recent version on the machine. If a more recent version is found, the package won't get installed. In Visual Studio 2015 or later, Redistributable packages display an error message stating that setup failed. If a package is run by using the **`/quiet`** flag, no error message is displayed. In either case, an error is logged by the Microsoft installer, and an error result is returned to the caller. In Visual Studio 2015 and later, you can avoid this error by checking the registry to find out if a more recent version is installed. The current installed version number is stored in the `HKEY_LOCAL_MACHINE\SOFTWARE[\Wow6432Node]\Microsoft\VisualStudio\14.0\VC\Runtimes\{x86|x64|ARM}` key. The version number is 14.0 for Visual Studio 2015, 2017, 2019, and 2022 because the latest Redistributable is binary compatible with previous versions back to 2015. The key is `ARM`, `x86`, or `x64` depending on the installed vcredist versions for the platform. (You need to check under the `Wow6432Node` subkey only if you're using Regedit to view the version of the installed x86 package on an x64 platform.) The version number is stored in the `REG_SZ` string value **`Version`** and also in the set of **`Major`**, **`Minor`**, **`Bld`**, and **`Rbld`** `REG_DWORD` values. To avoid an error at install time, you must skip installation of the Redistributable package if the currently installed version is more recent.
 
 ## Install the redistributable merge modules
 
-Redistributable merge modules must be included in the Windows Installer package (or similar installation package) that you use to deploy your application. For more information, see [Redistributing By Using Merge Modules](redistributing-components-by-using-merge-modules.md). For an example see [Walkthrough: Deploying a Visual C++ Application By Using a Setup Project](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
+> [!IMPORTANT]
+> Merge modules (*`.msm`* files) for Visual C++ Redistributable files are deprecated. We don't recommend you use them for application deployment. Instead, we recommend central deployment of the Visual C++ Redistributable package. Central deployment by a Redistributable package makes it possible for Microsoft to service runtime library files independently. And, an uninstall of your app can't affect other applications that also use central deployment. When you use a Redistributable package for central deployment, you aren't responsible for tracking and maintaining the runtime libraries. Otherwise, an update to the runtime library files requires you to update and redeploy your *`.msi`* installer. Your app could be vulnerable to bugs or security issues until you do.
+
+Redistributable merge modules must be included in the Windows Installer package (or similar installation package) that you use to deploy your application. For more information, see [Redistributing by using merge modules](redistributing-components-by-using-merge-modules.md). For an example see [Walkthrough: Deploying a Visual C++ application by using a setup project](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
 
 ## Install individual redistributable files
 
-It's also possible to directly install the redistributable DLLs in the *application local folder*. That's the folder that contains your executable application file. For servicing reasons, we don't recommend you use this installation location.
+It's also possible to directly install the Redistributable DLLs in the *application local folder*. The application local folder is the folder that contains your executable application file. For servicing reasons, we don't recommend you use this installation location.
 
 ## Potential run-time errors
 
-If Windows can't find one of the redistributable library DLLs required by your application, it may display a message similar to: "This application has failed to start because *library*.dll was not found. Reinstalling the application may fix this problem."
+If Windows can't find one of the Redistributable library DLLs required by your application, it may display a message similar to: "This application has failed to start because *library*.dll was not found. Reinstalling the application may fix this problem."
 
-To resolve this kind of error, make sure your application installer builds correctly. Verify that the redistributable libraries get deployed correctly on the target system. For more information, see [Understanding the Dependencies of a Visual C++ Application](understanding-the-dependencies-of-a-visual-cpp-application.md).
+To resolve this kind of error, make sure your application installer builds correctly. Verify that the Redistributable libraries get deployed correctly on the target system. For more information, see [Understanding the Dependencies of a Visual C++ Application](understanding-the-dependencies-of-a-visual-cpp-application.md).
 
 ## Related articles
 
-[Redistributing By Using Merge Modules](redistributing-components-by-using-merge-modules.md)\
-Describes how to use Visual C++ redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the *`%windir%\system32\`* folder.
+[Redistributing by using merge modules](redistributing-components-by-using-merge-modules.md)\
+Describes how to use Visual C++ Redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the *`%windir%\system32\`* folder.
 
 [Redistributing Visual C++ ActiveX Controls](redistributing-visual-cpp-activex-controls.md)\
 Describes how to redistribute an application that uses ActiveX Controls.
@@ -80,7 +83,7 @@ Describes how to redistribute an application that uses ActiveX Controls.
 Describes how to redistribute an application that uses MFC.
 
 [Redistributing an ATL application](redistributing-an-atl-application.md)\
-Describes how to redistribute an application that uses ATL. Starting in Visual Studio 2012, no redistributable library for ATL is required.
+Describes how to redistribute an application that uses ATL. In Visual Studio 2012 and later, no ATL library is required.
 
 [Deployment Examples](deployment-examples.md)\
 Links to examples that demonstrate how to deploy Visual C++ applications.

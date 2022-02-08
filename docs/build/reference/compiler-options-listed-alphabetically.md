@@ -159,6 +159,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/RTCc`](rtc-run-time-error-checks.md) | Convert to smaller type checks at run-time. |
 | [`/RTCs`](rtc-run-time-error-checks.md) | Enable stack frame runtime checks. |
 | [`/RTCu`](rtc-run-time-error-checks.md) | Enables uninitialized local usage checks. |
+| [`/scanDependencies`](scandependencies.md) | List module dependencies in C++ Standard JSON form. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enable additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of all include files during compilation. |
 | [`/source-charset`](source-charset-set-source-character-set.md) | Set source character set. |

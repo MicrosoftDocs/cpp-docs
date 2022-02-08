@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["qsort"]
 helpviewer_keywords: ["qsort function", "quick-sort algorithm", "sorting arrays", "arrays [CRT], sorting"]
-ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
 ---
-# qsort
+# `qsort`
 
-Performs a quick sort. A more secure version of this function is available; see [qsort_s](qsort-s.md).
+Performs a quick sort. A more secure version of this function is available; see [`qsort_s`](qsort-s.md).
 
 ## Syntax
 
@@ -67,7 +66,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**`qsort`**|\<stdlib.h> and \<search.h>|
+|**`qsort`**|`<stdlib.h>` and `<search.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

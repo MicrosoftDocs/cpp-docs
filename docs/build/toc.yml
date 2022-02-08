@@ -699,6 +699,8 @@ items:
                       href: ../build/reference/qvec-report-auto-vectorizer-reporting-level.md
                 - name: /RTC (Run-time error checks)
                   href: ../build/reference/rtc-run-time-error-checks.md
+                - name: /scanDependencies (List module dependencies in standard form)
+                  href: ../build/reference/scandependencies.md
                 - name: /sdl (Enable additional security checks)
                   href: ../build/reference/sdl-enable-additional-security-checks.md
                 - name: /showIncludes (List include files)

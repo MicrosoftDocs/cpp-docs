@@ -440,6 +440,8 @@ typedef enum _UNWIND_OP_CODES {
     UWOP_PUSH_MACHFRAME   /* info == 0: no error-code, 1: error-code */
 } UNWIND_CODE_OPS;
 
+typedef unsigned char UBYTE;
+
 typedef union _UNWIND_CODE {
     struct {
         UBYTE CodeOffset;
@@ -488,7 +490,7 @@ typedef struct _RUNTIME_FUNCTION {
     ((PRUNTIME_FUNCTION)((base) + *(PULONG)GetLanguageSpecificDataPtr(info)))
 
 #define GetExceptionDataPtr(info) \
-    ((PVOID)((PULONG)GetLanguageSpecificData(info) + 1)
+    ((PVOID)((PULONG)GetLanguageSpecificData(info) + 1))
 ```
 
 ## See also
