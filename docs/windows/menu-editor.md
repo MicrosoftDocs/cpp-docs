@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Menu Editor (C++)"
 title: "Menu Editor (C++)"
-ms.date: "02/15/2019"
+ms.date: 02/07/2022
 f1_keywords: ["vc.editors.menu.F1", "vc.editors.menu"]
 helpviewer_keywords: ["resource editors [C++], Menu editor", "editors, menus", "Menu editor", "menus [C++], Menu editor", "mnemonics [C++], associating menu items", "menus [C++], associating commands with mnemonic keys", "menus [C++], creating", "menus [C++], adding items", "commands [C++], adding to menus", "menu items, adding to menus", "submenus", "submenus [C++], creating", "menus [C++], creating", "context menus [C++], Menu Editor", "pop-up menus [C++], creating", "menus [C++], pop-up", "menus [C++], creating", "shortcut menus [C++], creating", "pop-up menus [C++], displaying", "pop-up menus [C++], connecting to applications", "context menus [C++], connecting to applications", "shortcut menus [C++], connecting to applications", "pop-up menus", "menu commands [C++], selecting", "menus [C++], selecting", "commands [C++], menu commands", "commands [C++], copying on menus", "menu items, moving", "commands [C++], moving on menus", "menu items, copying", "menu items, deleting", "commands [C++], deleting from menus", "menus [C++], deleting"]
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
@@ -19,20 +19,20 @@ The **Menu Editor** enables you:
 
 ### To create a standard menu
 
-1. Go to menu **View** > **Other Windows** > **Resource View** and right-click on the **Menu** heading. Choose **Add Resource**, then **Menu**.
+1. Go to menu **View** > **Resource View** or **View** > **Other Windows** > **Resource View** and right-click on the **Menu** heading. Choose **Add Resource**, then **Menu**.
 
 1. Select the **New Item** box (the rectangle that contains *Type Here*) on the menu bar.
 
-   ![New Item box in the menu editor.](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
+   ![New Item box in the menu editor.](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")\
    **New Item** box
 
 1. Type a name for your new menu, for example, *File*.
 
    The text you type appears in both the **Menu Editor** and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.
 
-   Once you have given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu), and another new-item box opens below your first menu so you can add menu commands to it.
+   Once you've given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu). Another new-item box opens below your first menu so you can add menu commands to it.
 
-   ![Expanded New Item box.](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
+   ![Expanded New Item box.](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")\
    **New Item** box with focus shifted after you type menu name
 
    > [!NOTE]
@@ -44,7 +44,7 @@ The **Menu Editor** enables you:
 
 1. In the **New Item** box that appears to the right, type the name of the new menu command. This new command will appear first on the submenu menu.
 
-1. Add additional menu commands to the submenu menu.
+1. Add more menu commands to the submenu menu.
 
 ### To insert a new menu between existing menus
 
@@ -77,7 +77,7 @@ Select an existing menu name and press the **Insert** key, or right-click on the
 
 1. Press **Enter** to complete the menu command.
 
-   The new item box is selected so you can create additional menu commands.
+   The new item box is selected so you can create more menu commands.
 
 ### To select multiple menu commands to run bulk operations such as deleting or changing properties
 
@@ -124,7 +124,7 @@ Once you've created the menu resource, your application code needs to load the m
 > [!NOTE]
 > For Microsoft Foundation Class (MFC) library programs and ATL programs, use **Code Wizards** to hook menu commands to code. For more information, see [Adding an Event](../ide/adding-an-event-visual-cpp.md) and [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).
 
-- To create a pop-up menu, create a menu with an empty title and don't provide a *Caption*. Then, add a menu command to the new menu, move to the first menu command below the blank menu title with the temporary caption *Type Here* and type a *Caption* and any other information.
+- To create a pop-up menu, create a menu with an empty title and don't provide a *Caption*. Then, add a menu command to the new menu. Move to the first menu command below the blank menu title (it has the temporary caption *Type Here*) and type a *Caption* and any other information.
 
    Repeat this process for any other menu commands in the pop-up menu and be sure to save the menu resource.
 
@@ -156,8 +156,8 @@ Win32
 
 ## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Menu Commands](../windows/menu-command-properties.md)<br/>
-[User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)<br/>
-[Menus](../mfc/menus-mfc.md)<br/>
+[Resource Editors](../windows/resource-editors.md)\
+[Menu Commands](../windows/menu-command-properties.md)\
+[User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)\
+[Menus](../mfc/menus-mfc.md)\
 [Menus](/windows/win32/menurc/menus)
