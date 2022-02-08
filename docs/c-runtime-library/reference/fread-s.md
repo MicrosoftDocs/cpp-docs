@@ -7,11 +7,10 @@ api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvc
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fread_s", "stdio/fread_s"]
-ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
 ---
-# fread_s
+# `fread_s`
 
-Reads data from a stream. This version of [fread](fread.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads data from a stream. This version of [`fread`](fread.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -27,32 +26,32 @@ size_t fread_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Storage location for data.
 
-*bufferSize*<br/>
+*`bufferSize`*\
 Size of the destination buffer in bytes.
 
-*elementSize*<br/>
+*`elementSize`*\
 Size of the item to read in bytes.
 
-*count*<br/>
+*`count`*\
 Maximum number of items to be read.
 
-*stream*<br/>
-Pointer to **FILE** structure.
+*`stream`*\
+Pointer to **`FILE`** structure.
 
 ## Return Value
 
-**fread_s** returns the number of (whole) items that were read into the buffer, which may be less than *count* if a read error or the end of the file is encountered before *count* is reached. Use the **feof** or **ferror** function to distinguish an error from an end-of-file condition. If *size* or *count* is 0, **fread_s** returns 0 and the buffer contents are unchanged. If *stream* or *buffer* is a null pointer, **fread_s** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns 0.
+**`fread_s`** returns the number of (whole) items that were read into the buffer, which may be less than *`count`* if a read error or the end of the file is encountered before *`count`* is reached. Use the **`feof`** or **`ferror`** function to distinguish an error from an end-of-file condition. If *`size`* or *`count`* is 0, **`fread_s`** returns 0 and the buffer contents are unchanged. If *`stream`* or *`buffer`* is a null pointer, **`fread_s`** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns 0.
 
-For more information about error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **fread_s** function reads up to *count* items of *elementSize* bytes from the input *stream* and stores them in *buffer*.  The file pointer that is associated with *stream* (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-line feed pairs are replaced with single line feed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.
+The **`fread_s`** function reads up to *`count`* items of *`elementSize`* bytes from the input *`stream`* and stores them in *`buffer`*.  The file pointer that is associated with *`stream`* (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-line feed pairs are replaced with single line feed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.
 
-This function locks out other threads. If you require a non-locking version, use **_fread_nolock**.
+This function locks out other threads. If you require a non-locking version, use **`_fread_nolock`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -60,7 +59,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**fread_s**|\<stdio.h>|
+|**`fread_s`**|`<stdio.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -133,6 +132,6 @@ Contents of buffer after write/read:
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](fwrite.md)<br/>
-[_read](read.md)<br/>
+[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[`fwrite`](fwrite.md)\
+[`_read`](read.md)

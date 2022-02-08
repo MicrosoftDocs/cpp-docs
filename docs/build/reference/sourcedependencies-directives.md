@@ -42,7 +42,7 @@ If the argument is a directory, the compiler generates source dependency files i
 
 **`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10.
 
-When you specify the [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md) compiler option, specify the output file location for **`/sourceDependencies:directives`** with a directory argument. The compiler will produce `[directory]\[source file name with extension].module.json` for each source file.
+When you specify the [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md) compiler option, we recommend you use **`/sourceDependencies:directives`** with a directory argument. This option makes the compiler output a separate *`*.module.json`* file for each source file. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error.
 
 When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
 
@@ -107,4 +107,6 @@ You normally shouldn't set this yourself in the Visual Studio development enviro
 [`/translateInclude`](translateinclude.md)\
 [C++ header-units.json reference](header-unit-json-reference.md)\
 [MSVC compiler options](compiler-options.md)\
-[MSVC compiler command-line syntax](compiler-command-line-syntax.md)
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)\
+[`/scanDependencies` (List module dependencies in standard form)](scandependencies.md)\
+[`/sourceDependencies` (List all source-level dependencies)](sourcedependencies.md)

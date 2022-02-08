@@ -69,15 +69,15 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |Name|Description|
 |-|-|
 |[`operator!=`](#op_neq)|Tests a target `bitset` for inequality with a specified `bitset`.|
-|[`operator&=`](#op_and_eq)|Does a bitwise combination of bitsets with the bitwise `AND` operation.|
+|[`operator&=`](#op_and_eq)|Does a bitwise combination of bitsets with the bitwise "and" (`&`) operation.|
 |[`operator<<`](#op_lshift)|Shifts the bits in a `bitset` to the left a specified number of positions and returns the result to a new `bitset`.|
 |[`operator<<=`](#op_lshift_eq)|Shifts the bits in a `bitset` to the left a specified number of positions and returns the result to the targeted `bitset`.|
 |[`operator==`](#op_eq_eq)|Tests a target `bitset` for equality with a specified `bitset`.|
 |[`operator>>`](#op_rshift)|Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to a new `bitset`.|
 |[`operator>>=`](#op_rshift_eq)|Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to the targeted `bitset`.|
 |[`operator[]`](#op_at)|Returns a reference to a bit at a specified position in a `bitset` if the `bitset` is modifiable; otherwise, it returns the value of the bit at that position.|
-|[operator^=](#op_xor_eq)|Does a bitwise combination of bitsets with the bitwise **XOR** (`^`) operation.|
-|[`operator|=`](#op_or_eq)|Does a bitwise combination of bitsets with the bitwise **OR** (`|`) operation.|
+|[operator^=](#op_xor_eq)|Does a bitwise combination of bitsets with the bitwise "xor" (`^`) operation.|
+|[`operator|=`](#op_or_eq)|Does a bitwise combination of bitsets with the bitwise "or" (`|`) operation.|
 |[`operator~`](#op_not)|Inverts all the bits in a target `bitset` and returns the result.|
 
 ### Structures
@@ -555,12 +555,12 @@ bool operator!=(const bitset<N>& right) const;
 
 #### Parameters
 
-*right*\
+*`right`*\
 The `bitset` that is to be compared to the target bitset for inequality.
 
 #### Return Value
 
-**`true`** if the `bitset`s are different; **`false`** if they're the same.
+**`true`** if the bitsets are different; **`false`** if they're the same.
 
 #### Remarks
 
@@ -609,7 +609,7 @@ Bitset b1 is different from bitset b3.
 
 ### <a name="op_and_eq"></a> `operator&=`
 
-Does a bitwise combination of bitsets with the bitwise `AND` (`&`) operation.
+Does a bitwise combination of bitsets with the bitwise "and" (`&`) operation.
 
 ```cpp
 bitset<N>& operator&=(const bitset<N>& right);
@@ -622,13 +622,13 @@ The `bitset` that is to be combined bitwise with the target bitset.
 
 #### Return Value
 
-The modified target bitset that results from the bitwise `AND` operation with the `bitset` specified as a parameter.
+The modified target bitset that results from the bitwise "and" (`&`) operation with the `bitset` specified as a parameter.
 
 #### Remarks
 
 Two bits combined by the `AND` operator return **`true`** if each bit is true; otherwise, their combination returns **`false`**.
 
-The two `bitset`s must be the same size.
+The two bitsets must be the same size.
 
 #### Example
 
@@ -788,7 +788,7 @@ The `bitset` that is to be compared to the target bitset for equality.
 
 #### Return Value
 
-**`true`** if the `bitset`s are the same; **`false`** if they're different.
+**`true`** if the bitsets are the same; **`false`** if they're different.
 
 #### Remarks
 
@@ -951,7 +951,7 @@ The position locating the bit within the `bitset`.
 
 #### Remarks
 
-When you define [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) as 1 or 2 in your build, a runtime error will occur in your executable if you attempt to access an element outside the bounds of the `bitset`. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
+When you define [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) as 1 or 2 in your build, a runtime error will occur in your executable if you attempt to access an element outside the bounds of the `bitset`. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
 #### Example
 
@@ -981,7 +981,7 @@ int main( )
 
 ### <a name="op_xor_eq"></a> `operator^=`
 
-Does a bitwise combination of bitsets with the bitwise **XOR* (`^`)  operation.
+Does a bitwise combination of bitsets with the bitwise "xor" (`^`)  operation.
 
 ```cpp
 bitset<N>& operator^=(const bitset<N>& right);
@@ -994,11 +994,11 @@ The `bitset` that is to be combined bitwise with the target bitset.
 
 #### Return Value
 
-The modified target bitset that results from the bitwise **XOR** (`^`) operation with the `bitset` specified as a parameter.
+The modified target bitset that results from the bitwise "xor" (`^`) operation with the `bitset` specified as a parameter.
 
 #### Remarks
 
-Two bits combined by the bitwise **XOR** operator (`^`) return **`true`** if at least one, but not both, of the bits is **`true`**; otherwise, their combination returns **`false`**.
+Two bits combined by the bitwise "xor" operator (`^`) return **`true`** if at least one, but not both, of the bits is **`true`**; otherwise, their combination returns **`false`**.
 
 Bitsets must be the same size.
 
@@ -1047,7 +1047,7 @@ The parameter bitset b2 remains: ( 01011 ).
 
 ### <a name="op_or_eq"></a> `operator|=`
 
-Combines two bitsets using the bitwise `OR` (`|`) operation.
+Combines two bitsets using the bitwise "or" (`|`) operation.
 
 ```cpp
 bitset<N>& operator|=(const bitset<N>& right);
@@ -1060,7 +1060,7 @@ The `bitset` that is to be combined bitwise with the target `bitset`.
 
 #### Return Value
 
-The modified target bitset that results from the bitwise `OR` (`|`) operation with the `bitset` specified as a parameter.
+The modified target bitset that results from the bitwise "or" (`|`) operation with the `bitset` specified as a parameter.
 
 #### Remarks
 
@@ -1179,7 +1179,7 @@ public:
 The value of the object of type **`bool`** to be assigned to a bit in a `bitset`.
 
 *`bitref`*\
-A reference of the form *x [ i ]* to the bit at position *i* in `bitset` *x*.
+A reference of the form *`x [ i ]`* to the bit at position *`i`* in `bitset` *`x`*.
 
 #### Return Value
 
@@ -1187,15 +1187,15 @@ A reference to the bit in the `bitset` specified by the argument position for th
 
 #### Remarks
 
-The class `reference` exists only as a helper class for the `bitset` `operator[]`. The member class describes an object that can access an individual bit within a `bitset`. Let *b* be an object of type **`bool`**, *x* and *y* objects of type **`bitset<N>`**, and *i* and *j* valid positions within such an object. The notation *x [i]* references the bit at position *i* in bitset *x*. The member functions of class `reference` provide, in order, the following operations:
+The class `reference` exists only as a helper class for the `bitset` `operator[]`. The member class describes an object that can access an individual bit within a `bitset`. Let *`b`* be an object of type **`bool`**, *`x`* and *`y`* objects of type **`bitset<N>`**, and *`i`* and *`j`* valid positions within such an object. The notation *`x [i]`* references the bit at position *`i`* in bitset *`x`*. The member functions of class `reference` provide, in order, the following operations:
 
 |Operation|Definition|
 |---------------|----------------|
-|*x*[*i*] = *b*|Stores **`bool`** value *b* at bit position *i* in bitset *x*.|
-|*x*[*i*] = *y*[*j*]|Stores the value of the bit *y*[ *j*] at bit position *i* in bitset *x*.|
-|*b* = ~ *x*[*i*]|Stores the flipped value of the bit *x*[ *i*] in **`bool`** *b*.|
-|*b* = *x*[*i*]|Stores the value of the bit *x*[ *i*] in **`bool`** *b*.|
-|*x*[*i*]. `flip`( )|Stores the flipped value of the bit *x*[ *i*] back at bit position *i* in *x*.|
+|*`x`*[*`i`*] = *`b`*|Stores **`bool`** value *`b`* at bit position *`i`* in bitset *`x`*.|
+|*`x`*[*`i`*] = *`y`*[*`j`*]|Stores the value of the bit *`y`*[ *`j`*] at bit position *`i`* in bitset *`x`*.|
+|*`b`* = ~ *`x`*[*`i`*]|Stores the flipped value of the bit *`x`*[ *`i`*] in **`bool`** *`b`*.|
+|*`b`* = *`x`*[*`i`*]|Stores the value of the bit *`x`*[ *`i`*] in **`bool`** *`b`*.|
+|*`x`*[*`i`*]. `flip`( )|Stores the flipped value of the bit *`x`*[ *`i`*] back at bit position *`i`* in *`x`*.|
 
 #### Example
 
@@ -1466,7 +1466,7 @@ The position of the bit in the `bitset` to be tested for its value.
 
 #### Remarks
 
-The member function throws an [out_of_range](../standard-library/out-of-range-class.md)
+The member function throws an [`out_of_range`](../standard-library/out-of-range-class.md)
 
 ### <a name="to_string"></a> `to_string`
 
