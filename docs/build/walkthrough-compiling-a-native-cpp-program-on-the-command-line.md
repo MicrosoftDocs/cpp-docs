@@ -139,7 +139,7 @@ Before you can build a C or C++ program on the command line, verify that the too
 
 This "Hello, World" example is about as simple as a C++ program can get. Real world programs usually have header files, more source files, and link to libraries.
 
-You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writeable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions may put projects in a *Documents\\Visual Studio \<version>\\*Projects* folder.
+You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writeable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions may put projects in a *Documents\\Visual Studio \<version>\\Projects* folder.
 
 To compile a program that has additional source code files, enter them all on the command line, like:
 

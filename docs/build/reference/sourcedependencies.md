@@ -110,3 +110,4 @@ You normally shouldn't set this yourself in the Visual Studio development enviro
 
 [MSVC compiler options](compiler-options.md)<br/>
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)<br/>
+[`/scanDependencies` (List module dependencies in standard form)](scandependencies.md)

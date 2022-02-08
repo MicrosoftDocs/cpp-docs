@@ -76,6 +76,7 @@ cl ... /std:c++latest /reference m=m.ifc /reference M:Part1=m-part.ifc /referenc
 
 ## See also
 
+[`/scanDependencies` (List module dependencies in standard form)](scandependencies.md)\
 [`/sourceDependencies:directives` (List module and header unit dependencies)](sourcedependencies-directives.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/exportHeader` (Create header units)](module-exportheader.md)
