@@ -9,6 +9,10 @@ ms.custom: intro-whats-new
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
 
+## What's new for C++ in Visual Studio version 17.1
+
+For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.1](/visualstudio/releases/2022/release-notes).
+
 ## What's new for C++ in Visual Studio version 17.0
 
 For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes).
