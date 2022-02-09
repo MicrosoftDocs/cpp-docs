@@ -5,9 +5,8 @@ ms.date: "11/04/2016"
 ms.topic: "reference"
 ms.custom: contperf-fy21q1
 helpviewer_keywords: ["width, specifications in scanf function", "scanf format specifications", "scanf width specifications", "scanf type field characters", "type fields, scanf function", "format specification fields for scanf function", "type fields"]
-ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
 ---
-# Format Specification Fields: scanf and wscanf Functions
+# Format Specification Fields: `scanf` and `wscanf` Functions
 
 The information here applies to the entire `scanf` family of functions, including the secure versions and describes the symbols used to tell the `scanf` functions how to parse the input stream, such as the input stream `stdin` for `scanf`, into values that are inserted into program variables.
 
@@ -17,7 +16,7 @@ A format specification has the following form:
 
 The `format` argument specifies the interpretation of the input and can contain one or more of the following:
 
-- White-space characters: blank (' '); tab ('\t'); or newline ('\n'). A white-space character causes `scanf` to read, but not store, all consecutive white-space characters in the input up to the next non-white-space character. One white-space character in the format matches any number (including 0) and combination of white-space characters in the input.
+- White-space characters: blank (` `); tab (`\t`); or newline (`\n`). A white-space character causes `scanf` to read, but not store, all consecutive white-space characters in the input up to the next non-white-space character. One white-space character in the format matches any number (including 0) and combination of white-space characters in the input.
 
 - Non-white-space characters, except for the percent sign (`%`). A non-white-space character causes `scanf` to read, but not store, a matching non-white-space character. If the next character in the input stream does not match, `scanf` terminates.
 
@@ -35,11 +34,11 @@ The simplest format specification contains only the percent sign and a `type` ch
 
 An asterisk (`*`) following the percent sign suppresses assignment of the next input field, which is interpreted as a field of the specified type. The field is scanned but not stored.
 
-The secure versions (those with the `_s` suffix) of the `scanf` family of functions require that a buffer size parameter be passed immediately following each parameter of type `c`, `C`, `s`, `S` or `[`. For more information on the secure versions of the `scanf` family of functions, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
+The secure versions (those with the `_s` suffix) of the `scanf` family of functions require that a buffer size parameter be passed immediately following each parameter of type `c`, `C`, `s`, `S` or `[`. For more information on the secure versions of the `scanf` family of functions, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
 
 ## See also
 
-[scanf Width Specification](../c-runtime-library/scanf-width-specification.md)<br/>
-[scanf Type Field Characters](../c-runtime-library/scanf-type-field-characters.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)
+[`scanf` Width Specification](../c-runtime-library/scanf-width-specification.md)\
+[`scanf` Type Field Characters](../c-runtime-library/scanf-type-field-characters.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)\
+[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)
