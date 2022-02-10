@@ -791,7 +791,7 @@ During emplacement, if an exception is thrown, the container's state is not modi
 
 The [`value_type`](../standard-library/map-class.md#value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.
 
-For a code example, see [map::emplace_hint](../standard-library/map-class.md#emplace_hint).
+For a code example, see [`map::emplace_hint`](../standard-library/map-class.md#emplace_hint).
 
 ## <a name="empty"></a> `multimap::empty`
 
@@ -879,7 +879,7 @@ The argument key to be compared with the sort key of an element from the `multim
 
 A pair of iterators such that the first is the [`lower_bound`](#lower_bound) of the key and the second is the [`upper_bound`](#upper_bound) of the key.
 
-To access the first iterator of a pair `pr` returned by the member function, use `pr. first` and to dereference the lower bound iterator, use \*( `pr. first`). To access the second iterator of a pair `pr` returned by the member function, use `pr. second` and to dereference the upper bound iterator, use \*( `pr. second`).
+To access the first iterator of a pair `pr` returned by the member function, use `pr.first` and to dereference the lower bound iterator, use \*( `pr.first`). To access the second iterator of a pair `pr` returned by the member function, use `pr.second` and to dereference the upper bound iterator, use \*( `pr.second`).
 
 ### Example
 
@@ -2215,7 +2215,7 @@ After swapping with m3, multimap m1 is: 300.
 
 ## <a name="upper_bound"></a> `multimap::upper_bound`
 
-Returns an iterator to the first element in a `multimap` that with a key that is greater than a specified key.
+Returns an `iterator` to the first element in a `multimap` that with a key that is greater than a specified key.
 
 ```cpp
 iterator upper_bound(const Key& key);
@@ -2230,7 +2230,7 @@ The argument key to be compared with the sort key of an element from the `multim
 
 ### Return Value
 
-An iterator or `const_iterator` that addresses the location of an element in a `multimap` that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the `multimap` if no match is found for the key.
+An `iterator` or `const_iterator` that addresses the location of an element in a `multimap` that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the `multimap` if no match is found for the key.
 
 If the return value is assigned to a `const_iterator`, the `multimap` object can't be modified. If the return value is assigned to a `iterator`, the `multimap` object can be modified.
 

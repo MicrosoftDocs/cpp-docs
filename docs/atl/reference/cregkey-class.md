@@ -83,7 +83,7 @@ class CRegKey
 When you close a key, its registry data is written (flushed) to the hard disk. This process may take several seconds. If your application must explicitly write registry data to the hard disk, you can call the [`RegFlushKey`](/windows/win32/api/winreg/nf-winreg-regflushkey) Win32 function. However, `RegFlushKey` uses many system resources and should be called only when absolutely necessary.
 
 > [!IMPORTANT]
-> Any methods that allow the caller to specify a registry location have the potential to read data that cannot be trusted. Methods that make use of [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) should take into consideration that this function does not explicitly handle strings which are null-terminated. Both conditions should be checked for by the calling code.
+> Any methods that allow the caller to specify a registry location have the potential to read data that cannot be trusted. Methods that make use of [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) should take into consideration that this function does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.
 
 ## Requirements
 
@@ -469,7 +469,7 @@ LONG QueryBinaryValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL` terminated string containing the name of the value to query.
 
 *`pValue`*\
 Pointer to a buffer that receives the value's data.
@@ -486,7 +486,7 @@ If the method succeeds, `ERROR_SUCCESS` is returned. If the method fails to read
 This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) for more details.
 
 > [!IMPORTANT]
-> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are null-terminated. Both conditions should be checked for by the calling code.
+> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.
 
 ## <a name="querydwordvalue"></a> `CRegKey::QueryDWORDValue`
 
@@ -501,7 +501,7 @@ LONG QueryDWORDValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL` terminated string containing the name of the value to query.
 
 *`dwValue`*\
 Pointer to a buffer that receives the `DWORD`.
@@ -515,7 +515,7 @@ If the method succeeds, `ERROR_SUCCESS` is returned. If the method fails to read
 This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) for more details.
 
 > [!IMPORTANT]
-> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are null-terminated. Both conditions should be checked for by the calling code.
+> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.
 
 ## <a name="queryguidvalue"></a> `CRegKey::QueryGUIDValue`
 
@@ -530,7 +530,7 @@ LONG QueryGUIDValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL` terminated string containing the name of the value to query.
 
 *`guidValue`*\
 Pointer to a variable that receives the GUID.
@@ -560,10 +560,10 @@ LONG QueryMultiStringValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL` terminated string containing the name of the value to query.
 
 *`pszValue`*\
-Pointer to a buffer that receives the multistring data. A multistring is an array of null-terminated strings, terminated by two null characters.
+Pointer to a buffer that receives the multistring data. A multistring is an array of `NULL` terminated strings, terminated by two null characters.
 
 *`pnChars`*\
 The size, in `TCHARs`, of the buffer pointed to by *`pszValue`*. When the method returns, *`pnChars`* contains the size, in `TCHARs`, of the multistring retrieved, including a terminating null character.
@@ -577,7 +577,7 @@ If the method succeeds, `ERROR_SUCCESS` is returned. If the method fails to read
 This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) for more details.
 
 > [!IMPORTANT]
-> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are null-terminated. Both conditions should be checked for by the calling code.
+> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.
 
 ## <a name="queryqwordvalue"></a> `CRegKey::QueryQWORDValue`
 
@@ -592,7 +592,7 @@ LONG QueryQWORDValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL` terminated string containing the name of the value to query.
 
 *`qwValue`*\
 Pointer to a buffer that receives the `QWORD`.
@@ -606,7 +606,7 @@ If the method succeeds, `ERROR_SUCCESS` is returned. If the method fails to read
 This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) for more details.
 
 > [!IMPORTANT]
-> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are null-terminated. Both conditions should be checked for by the calling code.
+> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.
 
 ## <a name="querystringvalue"></a> `CRegKey::QueryStringValue`
 
@@ -622,7 +622,7 @@ LONG QueryStringValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL` terminated string containing the name of the value to query.
 
 *`pszValue`*\
 Pointer to a buffer that receives the string data.
@@ -639,7 +639,7 @@ If the method succeeds, `ERROR_SUCCESS` is returned. If the method fails to read
 This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) for more details.
 
 > [!IMPORTANT]
-> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are null-terminated. Both conditions should be checked for by the calling code.
+> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [`RegQueryValueEx`](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw) function used by this method does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.
 
 ## <a name="queryvalue"></a> `CRegKey::QueryValue`
 
@@ -665,7 +665,7 @@ ATL_DEPRECATED LONG QueryValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query. If *`pszValueName`* is `NULL` or an empty string, "", the method retrieves the type and data for the key's unnamed or default value, if any.
+Pointer to a `NULL` terminated string containing the name of the value to query. If *`pszValueName`* is `NULL` or an empty string, "", the method retrieves the type and data for the key's unnamed or default value, if any.
 
 *`pdwType`*\
 Pointer to a variable that receives a code indicating the type of data stored in the specified value. The *`pdwType`* parameter can be `NULL` if the type code isn't required.
@@ -699,7 +699,7 @@ The two original versions of `QueryValue` are no longer supported and are marked
 The remaining method calls `RegQueryValueEx`.
 
 > [!IMPORTANT]
-> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the `RegQueryValueEx` function used by this method does not explicitly handle strings which are null-terminated. Both conditions should be checked for by the calling code.
+> This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the `RegQueryValueEx` function used by this method does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.
 
 ## <a name="recursedeletekey"></a> `CRegKey::RecurseDeleteKey`
 
@@ -774,7 +774,7 @@ If the method succeeds, the return value is `ERROR_SUCCESS`. If the method fails
 
 ### Remarks
 
-This method uses [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) to write the value to the registry.
+This method uses [`RegSetValueEx`](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) to write the value to the registry.
 
 ## <a name="setguidvalue"></a> `CRegKey::SetGUIDValue`
 
@@ -875,7 +875,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 Pointer to a string containing the name of the value to set. If a value with this name isn't already present, the method adds it to the key.
 
 *`pszValue`*\
-Pointer to the multistring data to be stored with the specified value name. A multistring is an array of null-terminated strings, terminated by two null characters.
+Pointer to the multistring data to be stored with the specified value name. A multistring is an array of `NULL` terminated strings, terminated by two null characters.
 
 ### Return Value
 

@@ -236,7 +236,7 @@ The following table shows other member functions that are similar to `CObList::F
 
 |Class|Member Function|
 |-----------|---------------------|
-|[`CPtrList`](../../mfc/reference/cptrlist-class.md)|`POSITION Find( void * searchValue , POSITION startAfter = NULL ) const;`|
+|[`CPtrList`](../../mfc/reference/cptrlist-class.md)|`POSITION Find( void *searchValue , POSITION startAfter = NULL ) const;`|
 |[`CStringList`](../../mfc/reference/cstringlist-class.md)|`POSITION Find( LPCTSTR searchValue , POSITION startAfter = NULL ) const;`|
 
 ### Example
