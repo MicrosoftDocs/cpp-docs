@@ -73,11 +73,11 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**`_pipe`**|`<io.h>`|`<fcntl.h>,1 <errno.h>2`|
+|**`_pipe`**|`<io.h>`|`<fcntl.h>`,<sup>1</sup> `<errno.h>`<sup>2</sup>|
 
-1 For **`_O_BINARY`** and **`_O_TEXT`** definitions.
+<sup>1</sup> For **`_O_BINARY`** and **`_O_TEXT`** definitions.
 
-2 **`errno`** definitions.
+<sup>2</sup> **`errno`** definitions.
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
