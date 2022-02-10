@@ -37,15 +37,15 @@ Operations that deal with the **`bool`** type correspond to values in the contai
 |[`flip`](#flip)|Reverses all bits in the `vector<bool>`.|
 |[`swap`](#swap)|Exchanges the elements of two `vector<bool>`s.|
 |[`operator[]`](#op_at)|Returns a simulated reference to the `vector<bool>` element at a specified position.|
-|`at`|Functions the same as the unspecialized [`vector`](../standard-library/vector-class.md)::at function, except that it uses the proxy class [`vector\<bool>::reference`](#reference_class). Also see [`operator[]`](#op_at).|
-|`front`|Functions the same as the unspecialized [`vector`](../standard-library/vector-class.md)::front function, except that it uses the proxy class [`vector\<bool>::reference`](#reference_class). Also see [`operator[]`](#op_at).|
-|`back`|Functions the same as the unspecialized [`vector`](../standard-library/vector-class.md)::back function, except that it uses the proxy class [`vector\<bool>::reference`](#reference_class). Also see [`operator[]`](#op_at).|
+|`at`|Functions the same as the unspecialized [`vector`](../standard-library/vector-class.md)::at function, except that it uses the proxy class [`vector<bool>::reference`](#reference_class). Also see [`operator[]`](#op_at).|
+|`front`|Functions the same as the unspecialized [`vector`](../standard-library/vector-class.md)::front function, except that it uses the proxy class [`vector<bool>::reference`](#reference_class). Also see [`operator[]`](#op_at).|
+|`back`|Functions the same as the unspecialized [`vector`](../standard-library/vector-class.md)::back function, except that it uses the proxy class [`vector<bool>::reference`](#reference_class). Also see [`operator[]`](#op_at).|
 
 ### Proxy Class
 
 |Name|Description|
 |-|-|
-|[`vector\<bool> reference` Class](#reference_class)|A class that acts as a proxy to simulate `bool&` behavior, and whose objects can provide references to elements (single bits) within a `vector<bool>` object.|
+|[`vector<bool> reference` Class](#reference_class)|A class that acts as a proxy to simulate `bool&` behavior, and whose objects can provide references to elements (single bits) within a `vector<bool>` object.|
 
 ## Requirements
 
@@ -53,7 +53,7 @@ Operations that deal with the **`bool`** type correspond to values in the contai
 
 **Namespace:** `std`
 
-## <a name="const_pointer"></a> `vector\<bool>::const_pointer`
+## <a name="const_pointer"></a> `vector<bool>::const_pointer`
 
 A type that describes an object that can serve as a constant pointer to a Boolean element of the sequence contained by the `vector<bool>` object.
 
@@ -61,7 +61,7 @@ A type that describes an object that can serve as a constant pointer to a Boolea
 typedef const_iterator const_pointer;
 ```
 
-## <a name="const_reference"></a> `vector\<bool>::const_reference`
+## <a name="const_reference"></a> `vector<bool>::const_reference`
 
 A type that describes an object that can serve as a constant reference to a Boolean element of the sequence contained by the `vector<bool>` object.
 
@@ -73,7 +73,7 @@ typedef bool const_reference;
 
 For more information and code examples, see [`vector<bool>::reference::operator=`](#reference_operator_eq).
 
-## <a name="flip"></a> `vector\<bool>::flip`
+## <a name="flip"></a> `vector<bool>::flip`
 
 Reverses all bits in a `vector<bool>`.
 
@@ -111,7 +111,7 @@ int main()
 }
 ```
 
-## <a name="op_at"></a> `vector\<bool>::operator[]`
+## <a name="op_at"></a> `vector<bool>::operator[]`
 
 Returns a simulated reference to the `vector<bool>` element at a specified position.
 
@@ -128,7 +128,7 @@ The position of the `vector<bool>` element.
 
 ### Return Value
 
-A [`vector\<bool>::reference`](#reference_class) or [`vector\<bool>::const_reference`](#const_reference) object that contains the value of the indexed element.
+A [`vector<bool>::reference`](#reference_class) or [`vector<bool>::const_reference`](#const_reference) object that contains the value of the indexed element.
 
 If the position specified is greater than or equal to the size of the container, the result is undefined.
 
@@ -167,7 +167,7 @@ int main()
 }
 ```
 
-## <a name="pointer"></a> `vector\<bool>::pointer`
+## <a name="pointer"></a> `vector<bool>::pointer`
 
 A type that describes an object that can serve as a pointer to a Boolean element of the sequence contained by the `vector<bool>` object.
 
@@ -175,9 +175,9 @@ A type that describes an object that can serve as a pointer to a Boolean element
 typedef iterator pointer;
 ```
 
-## <a name="reference_class"></a> `vector\<bool>::reference` Class
+## <a name="reference_class"></a> `vector<bool>::reference` Class
 
-The `vector<bool>::reference` class is a proxy class provided by the [`vector\<bool>` Class](../standard-library/vector-bool-class.md) to simulate `bool&`.
+The `vector<bool>::reference` class is a proxy class provided by the [`vector<bool>` Class](../standard-library/vector-bool-class.md) to simulate `bool&`.
 
 ### Remarks
 
@@ -190,9 +190,9 @@ bool* pb = &vb[1]; // conversion error - do not use
 bool& refb = vb[1];   // conversion error - do not use
 ```
 
-### <a name="reference_flip"></a> `vector\<bool>::reference::flip`
+### <a name="reference_flip"></a> `vector<bool>::reference::flip`
 
-Inverts the Boolean value of a referenced [`vector\<bool>`](../standard-library/vector-bool-class.md) element.
+Inverts the Boolean value of a referenced [`vector<bool>`](../standard-library/vector-bool-class.md) element.
 
 ```cpp
 void flip();
@@ -237,7 +237,7 @@ The vector with first element flipped is:
     false false false true true
 ```
 
-### <a name="reference_operator_bool"></a> `vector\<bool>::reference::operator bool`
+### <a name="reference_operator_bool"></a> `vector<bool>::reference::operator bool`
 
 Provides an implicit conversion from `vector<bool>::reference` to **`bool`**.
 
@@ -247,13 +247,13 @@ operator bool() const;
 
 #### Return Value
 
-The Boolean value of the element of the `vector\<bool>` object.
+The Boolean value of the element of the `vector<bool>` object.
 
 #### Remarks
 
 The `vector<bool>` object can’t be modified by this operator.
 
-### <a name="reference_operator_eq"></a> `vector\<bool>::reference::operator=`
+### <a name="reference_operator_eq"></a> `vector<bool>::reference::operator=`
 
 Assigns a Boolean value to a bit, or the value held by a referenced element to a bit.
 
@@ -341,9 +341,9 @@ The original value of the 2nd element still stored in a bool: false
 The original value of the 3rd element still stored in a bool: false
 ```
 
-## <a name="swap"></a> `vector\<bool>::swap`
+## <a name="swap"></a> `vector<bool>::swap`
 
-Static member function that exchanges two elements of Boolean vectors ( `vector<bool>`) by using the proxy class [`vector\<bool>::reference`](#reference_class).
+Static member function that exchanges two elements of Boolean vectors ( `vector<bool>`) by using the proxy class [`vector<bool>::reference`](#reference_class).
 
 ```cpp
 static void swap(
