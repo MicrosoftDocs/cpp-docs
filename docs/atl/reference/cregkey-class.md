@@ -665,7 +665,7 @@ ATL_DEPRECATED LONG QueryValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a `NULL` terminated string containing the name of the value to query. If *`pszValueName`* is `NULL` or an empty string, "", the method retrieves the type and data for the key's unnamed or default value, if any.
+Pointer to a `NULL` terminated string containing the name of the value to query. If *`pszValueName`* is `NULL` or an empty string, `""`, the method retrieves the type and data for the key's unnamed or default value, if any.
 
 *`pdwType`*\
 Pointer to a variable that receives a code indicating the type of data stored in the specified value. The *`pdwType`* parameter can be `NULL` if the type code isn't required.
@@ -970,7 +970,7 @@ ATL_DEPRECATED LONG SetValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a string containing the name of the value to set. If a value with this name isn't already present in the key, the method adds it to the key. If *`pszValueName`* is `NULL` or an empty string, "", the method sets the type and data for the key's unnamed or default value.
+Pointer to a string containing the name of the value to set. If a value with this name isn't already present in the key, the method adds it to the key. If *`pszValueName`* is `NULL` or an empty string, `""`, the method sets the type and data for the key's unnamed or default value.
 
 *`dwType`*\
 Specifies a code indicating the type of data pointed to by the *`pValue`* parameter.
