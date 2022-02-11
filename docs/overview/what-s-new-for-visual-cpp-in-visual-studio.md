@@ -23,7 +23,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 - [Hot Reload for C++](https://devblogs.microsoft.com/cppblog/edit-your-c-code-while-debugging-with-hot-reload-in-visual-studio-2022/) makes it possible to make many types of code edits to your running app and apply them without needing to pause app execution with something like a breakpoint.
 
-In Visual Studio 2022, when you start your app in the debugger, you can use the Hot Reload button to modify your application while it's still running. This experience is powered by native Edit and Continue. For more information about supported edits, see [Edot and Continue (C++)](/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2022&preserve-view=true).
+In Visual Studio 2022, when you start your app in the debugger, you can use the Hot Reload button to modify your application while it's still running. This experience is powered by native Edit and Continue. For more information about supported edits, see [Edit and Continue (C++)](/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2022&preserve-view=true).
 
 - Hot Reload supports CMake and Open Folder projects.
 
