@@ -3,7 +3,6 @@ description: "Learn more about: Output Streams"
 title: "Output Streams"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output streams"]
-ms.assetid: b49410e3-5caa-4153-9d0d-c4266408dc83
 ---
 # Output Streams
 
@@ -43,6 +42,6 @@ Like the run-time function `sprintf_s`, the `ostringstream` class supports outpu
 
 ## See also
 
-[ofstream](../standard-library/basic-ofstream-class.md)\
-[ostringstream](../standard-library/basic-ostringstream-class.md)\
-[iostream Programming](../standard-library/iostream-programming.md)
+[`ofstream`](../standard-library/basic-ofstream-class.md)\
+[`ostringstream`](../standard-library/basic-ostringstream-class.md)\
+[`iostream` Programming](../standard-library/iostream-programming.md)
