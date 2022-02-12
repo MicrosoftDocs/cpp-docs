@@ -1,7 +1,7 @@
 ---
 title: "/translateInclude"
 description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
-ms.date: 02/01/2022
+ms.date: 02/11/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/translateInclude"]
@@ -11,7 +11,7 @@ helpviewer_keywords: ["/translateInclude", "Translate include directives into im
 
 This switch instructs the compiler to treat `#include` as `import` for header files that have been built into header unit (`.ifc`) files and that are specified on the command line with [`/headerUnit`](headerunit.md).
 
-When used with `/scanDependencies` or [`/sourceDependencies-directives`](sourcedependencies-directives.md), the compiler lists as imported header units in the generated dependency file those headers that are both included in the source and have a corresponding entry in a `header-units.json` file. This dependency info is used by the build system to generate compiled header unit `.ifc` files. Once the header units are built, they're treated by the compiler as an `import` instead of an `#include`.
+When used with [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies-directives`](sourcedependencies-directives.md), the compiler lists as imported header units in the generated dependency file those headers that are both included in the source and have a corresponding entry in a `header-units.json` file. This dependency info is used by the build system to generate compiled header unit `.ifc` files. Once the header units are built, they're treated by the compiler as an `import` instead of an `#include`.
 
 The `header-units.json` file is only consulted when `/translateInclude` is specified. For more information about the format and purpose of the `header-units.json` file,  see [`header-units.json`](header-unit-json-reference.md).
 
@@ -41,5 +41,6 @@ To enable `/translateInclude`, in the project properties dialog, set **Translate
 [`/headerUnit` (Use header unit IFC)](headerunit.md).\
 [`/exportHeader` (Create header units)](module-exportheader.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
+[`/scanDependencies`](scandependencies.md)\
 [`/sourceDependencies-directives`](sourcedependencies-directives.md)\
 [Walkthrough: Build and import header units in Microsoft Visual C++](../walkthrough-header-units.md)

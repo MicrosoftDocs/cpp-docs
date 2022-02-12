@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getwchar", "GetChar"]
 helpviewer_keywords: ["gettchar function", "characters, reading", "getwchar function", "_gettchar function", "standard input, reading from"]
-ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
 ---
-# getchar, getwchar
+# `getchar`, `getwchar`
 
 Reads a character from standard input.
 
@@ -25,30 +24,30 @@ wint_t getwchar();
 
 Returns the character read. These functions wait for input and don't return until input is available.
 
-To indicate a read error or end-of-file condition, **getchar** returns **EOF**, and **getwchar** returns **WEOF**. For **getchar**, use **ferror** or **feof** to check for an error or for end of file.
+To indicate a read error or end-of-file condition, **`getchar`** returns **`EOF`**, and **`getwchar`** returns **`WEOF`**. For **`getchar`**, use **`ferror`** or **`feof`** to check for an error or for end of file.
 
 ## Remarks
 
-Each routine reads a single character from **stdin** and increments the associated file pointer to point to the next character. **getchar** is the same as [_fgetchar](fgetc-fgetwc.md), but it's implemented as a function and as a macro.
+Each routine reads a single character from **`stdin`** and increments the associated file pointer to point to the next character. **`getchar`** is the same as [`_fgetchar`](fgetc-fgetwc.md), but it's implemented as a function and as a macro.
 
-These functions also lock the calling thread and are thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
+These functions also lock the calling thread and are thread-safe. For a non-locking version, see [`_getchar_nolock`, `_getwchar_nolock`](getchar-nolock-getwchar-nolock.md).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_gettchar**|**getchar**|**getchar**|**getwchar**|
+|**`_gettchar`**|**`getchar`**|**`getchar`**|**`getwchar`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**getchar**|\<stdio.h>|
-|**getwchar**|\<stdio.h> or \<wchar.h>|
+|**`getchar`**|`<stdio.h>`|
+|**`getwchar`**|`<stdio.h>` or `<wchar.h>`|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -83,8 +82,8 @@ This textInput was: This text
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[_getch, _getwch](getch-getwch.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
-[ungetc, ungetwc](ungetc-ungetwc.md)<br/>
+[`getc`, `getwc`](getc-getwc.md)<br/>
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)<br/>
+[`_getch`, `_getwch`](getch-getwch.md)<br/>
+[`putc`, `putwc`](putc-putwc.md)<br/>
+[`ungetc`, `ungetwc`](ungetc-ungetwc.md)<br/>
