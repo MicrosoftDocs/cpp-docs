@@ -37,7 +37,7 @@ The preceding code could mean "copy the contents of FILE1.DAT to FILE2.DAT" or i
 
 - Use the copy constructor.
 
-If you don't declare a copy constructor, the compiler generates a member-wise copy constructor for you.  Similarly, if you don't declare a copy assignment operator, the compiler generates a member-wise copy assignment operator for you. Declaring a copy constructor doesn't suppress the compiler-generated copy assignment operator, and vice-versa. If you implement either one, we recommend that you implement the other one, too. When you implement both, the meaning of the code is clear.
+If you don't declare a copy constructor, the compiler generates a member-wise copy constructor for you. Similarly, if you don't declare a copy assignment operator, the compiler generates a member-wise copy assignment operator for you. Declaring a copy constructor doesn't suppress the compiler-generated copy assignment operator, and vice-versa. If you implement either one, we recommend that you implement the other one, too. When you implement both, the meaning of the code is clear.
 
 The copy constructor takes an argument of type `ClassName&`, where *`ClassName`* is the name of the class. For example:
 
@@ -46,7 +46,8 @@ The copy constructor takes an argument of type `ClassName&`, where *`ClassName`*
 class Window
 {
 public:
-    Window( const Window& ); // Declare copy constructor.
+    Window( const Window& );            // Declare copy constructor.
+    Window& operator=(const Window& x); // Declare copy assignment.
     // ...
 };
 
