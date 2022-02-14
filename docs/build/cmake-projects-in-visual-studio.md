@@ -43,7 +43,7 @@ When you **open a folder** containing a *`CMakeLists.txt`* file, the following t
 
 Once CMake cache generation has succeeded, you can also view your projects organized logically by targets. Choose the **Select View** button on the **Solution Explorer** toolbar. From the list in **Solution Explorer - Views**, select **CMake Targets View** and press **Enter** to open the targets view:
 
-:::image type="content" source="media/cmake-targets-view-dark.png" alt-text="Screenshot of the Solution Explorer window with the Select View toolbar button highlighted.":::
+:::image type="content" source="media/cmake-targets-view2.png" alt-text="Screenshot of the Solution Explorer Views window with the C Make Targets View highlighted.":::
 
 Choose the **Show All Files** button at the top of **Solution Explorer** to see all the CMake-generated output in the *`out/build/<config>`* folders.
 
