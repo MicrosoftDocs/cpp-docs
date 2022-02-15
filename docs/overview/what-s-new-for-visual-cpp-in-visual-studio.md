@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 11/05/2021
+ms.date: 02/15/2022
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
@@ -12,6 +12,18 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environmen
 ## What's new for C++ in Visual Studio version 17.1
 
 For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.1](/visualstudio/releases/2022/release-notes).
+
+- A new **Configure Preset** template has been added to configure and build CMake projects on a remote macOS system with *`CMakePresets.json`*. You can also launch CMake targets on a remote macOS system, and then debug remotely in the Visual Studio debugger backed by GDB or LLDB.
+
+- You can now debug core dumps on a remote macOS system from Visual Studio with LLDB or GDB.
+
+- The versions of [`Clang`](https://releases.llvm.org/13.0.0/tools/clang/docs/ReleaseNotes.html) and [`LLVM`](https://releases.llvm.org/13.0.0/docs/ReleaseNotes.html) shipped with Visual Studio have been upgraded to v13.
+
+- Visual Studio's CMake integration is only active when a *`CMakeLists.txt`* is identified at the root of the open workspace. If a *`CMakeLists.txt`* is identified at another level of the workspace, then you'll be prompted to activate Visual Studio's CMake integration with a notification.
+
+- Added a new register visualization window for embedded targets, available through **Debug** > **Windows** > **Embedded Registers**.
+
+- Added a new thread view for RTOS projects, available through **Debug** > **Windows** > **RTOS Objects**.
 
 ## What's new for C++ in Visual Studio version 17.0
 
@@ -27,7 +39,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 - [Hot Reload for C++](https://devblogs.microsoft.com/cppblog/edit-your-c-code-while-debugging-with-hot-reload-in-visual-studio-2022/) makes it possible to make many types of code edits to your running app and apply them without needing to pause app execution with something like a breakpoint.
 
-In Visual Studio 2022, when you start your app in the debugger, you can use the Hot Reload button to modify your application while it's still running. This experience is powered by native Edit and Continue. For more information about supported edits, see [Edot and Continue (C++)](/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2022&preserve-view=true).
+In Visual Studio 2022, when you start your app in the debugger, you can use the Hot Reload button to modify your application while it's still running. This experience is powered by native Edit and Continue. For more information about supported edits, see [Edit and Continue (C++)](/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2022&preserve-view=true).
 
 - Hot Reload supports CMake and Open Folder projects.
 
@@ -65,14 +77,14 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 - [P1679R3](https://wg21.link/P1679R3) `contains()` For `basic_string` and `basic_string_view`
 - [P1682R3](https://wg21.link/P1682R3) `to_underlying()` for enumerations
 - [P2162R2](https://wg21.link/P2162R2) Allow inheriting from `std::variant`
-- [P2166R1](https://wg21.link/P2166R1) Prohibit constructing`basic_string` and `basic_string_view` from `nullptr`. This is a source-breaking change. Code that previously had undefined behavior at runtime will now be rejected with compiler errors.
-- [P2186R2](https://wg21.link/P2186R2) Removed garbage collection support. This removes `declare_reachable`, `undeclare_reachable`, `declare_no_pointers`, `undeclare_no_pointers`, `get_pointer_safety`. Previously, these functions had no effect.
+- [P2166R1](https://wg21.link/P2166R1) Prohibit constructing`basic_string` and `basic_string_view` from `nullptr`. This change is a source-breaking change. Code that previously had undefined behavior at runtime is now rejected with compiler errors.
+- [P2186R2](https://wg21.link/P2186R2) Removed garbage collection support. This change removes `declare_reachable`, `undeclare_reachable`, `declare_no_pointers`, `undeclare_no_pointers`, `get_pointer_safety`. Previously, these functions had no effect.
 
 **Highlighted performance improvements**
 
 - `<format>` now detects when it's writing to a `back_insert_iterator` for a `basic_string` or a `vector`, and makes a faster call to `insert()` at the `end()` of the container.
-- Improved the performance of `std::find()` and `std::count()` for `vector<bool>` 19x and 26x (times, not percent).
-- Improved the performance of `std::count()` for `vector<bool>`
+- We improved the performance of `std::find()` and `std::count()` for `vector<bool>` 19x and 26x (times, not percent).
+- We improved the performance of `std::count()` for `vector<bool>`
 - `std::byte` now has the same performance as `unsigned char` in `reverse()` and `variant::swap()`
 
 ### Clang and LLVM support
@@ -91,7 +103,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 - We made improvements in C++ IntelliSense when providing navigation and syntax highlighting for types from imported Modules and Header Units. IntelliSense is an active area of investment for us. Help us improve: Share your feedback on Developer Community by using **Help** > **Send Feedback**.
 
-- Improved C++ IntelliSense performance by optimizing cached header usage and symbol database access, providing improved load times to get into your code.
+- We improved C++ IntelliSense performance by optimizing cached header usage and symbol database access, providing improved load times to get into your code.
 
 - The IntelliSense Code Linter for C++ is now on by default, providing instant as-you-type suggestions and fix suggestions for common code defects.
 
@@ -121,7 +133,7 @@ Release notes for older C++ versions are also available. For information on what
 
 **C++ IntelliSense**
 
-- [When importing a C++20 module or header unit, IntelliSense may stop working or 'There are too many errors' error is shown](https://aka.ms/vcmoduleintellisenseinfo).
+- [`When importing a C++20 module or header unit, IntelliSense may stop working or 'There are too many errors' error is shown`](https://aka.ms/vcmoduleintellisenseinfo).
 
 For more information on other open issues and available workarounds for C++ in Visual Studio 2022, see the C++ Developer Community [issues list](https://developercommunity.visualstudio.com/search?space=62&stateGroup=active&ftype=problem&sort=votes&q=2022).
 
