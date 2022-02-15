@@ -1,6 +1,6 @@
 ---
 title: "Overview of modules in C++"
-ms.date: 02/03/2022
+ms.date: 02/14/2022
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 description: Modules in C++20 provide a modern alternative to header files.
 ---
@@ -93,13 +93,13 @@ When it does argument-dependent lookup for overload resolutions in the importing
 A module can be componentized into *partitions*, each consisting of an interface file and zero or more implementation files. A module partition is similar to a module, except it shares ownership of all declarations in the entire module. All names exported by partition interface files are imported and re-exported by the primary interface file. A partition's name must begin with the module name followed by a colon. Declarations in any of the partitions are visible within the entire module. No special precautions are needed to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, and so on) in one partition and define it in another. A partition implementation file begins like this:
 
 ```cpp
-module Example:part1
+module Example:part1;
 ```
 
 The partition interface file begins like this:
 
 ```cpp
-export module Example:part1
+export module Example:part1;
 ```
 
 To access declarations in another partition, a partition must import it, but it can only use the partition name, not the module name:
@@ -112,8 +112,8 @@ import :part1;
 The primary interface unit must import and re-export all of the module's interface partition files like this:
 
 ```cpp
-export import :part1
-export import :part2
+export import :part1;
+export import :part2;
 ...
 ```
 

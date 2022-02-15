@@ -154,7 +154,7 @@
       },
       "author": {
         "index.md": "corob-msft",
-        "assembler/**.md": "tylermsft",
+        "assembler/**.md": "corob-msft",
         "attributes/**.md": "corob-msft",
         "atl/**.md": "tylermsft",
         "atl-mfc-shared/**.md": "tylermsft",
@@ -191,7 +191,7 @@
       },
       "ms.author": {
         "index.md": "corob",
-        "assembler/**.md": "twhitney",
+        "assembler/**.md": "corob",
         "atl/**.md": "twhitney",
         "atl-mfc-shared/**.md": "twhitney",
         "attributes/**.md": "corob",

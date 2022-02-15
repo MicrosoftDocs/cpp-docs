@@ -10,7 +10,9 @@ ms.assetid: e95a5a14-dbed-4edc-8551-344fe48613cb
 
 You can add a generic C++ class by using **Class View**. A generic C++ class is a class that you define or that is derived from a class that you define.
 
-**To add a generic C++ class to a project:**
+::: moniker range="msvc-140"
+
+## To add a generic C++ class to a project:
 
 1. In **Class View**, right-click the project to which you want to add the new class, choose **Add**, and then choose **Class**.
 
@@ -19,6 +21,8 @@ You can add a generic C++ class by using **Class View**. A generic C++ class is 
 1. In the wizard, provide a class name, and then define settings or accept the defaults.
 
 1. To close the wizard and view the new generic C++ class in the project, select **Finish**.
+
+::: moniker-end
 
 ## In this section
 
