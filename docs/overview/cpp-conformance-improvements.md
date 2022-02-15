@@ -65,7 +65,7 @@ int main(void)
 
 ### Error on a non-dependent static_assert
 
-In Visual Studio 2022 version 17.1 and later, If the expression associated with a `static_assert` is not dependent, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
+In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` is not dependent, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
 This change is a source breaking change. It applies in any mode that implies **`/Zc:permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 
