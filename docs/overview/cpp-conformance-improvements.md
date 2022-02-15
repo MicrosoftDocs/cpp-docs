@@ -10,7 +10,93 @@ Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug f
 
 This document lists the changes in Visual Studio 2022. For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
-## <a name="improvements_170_preview"></a> Conformance improvements in Visual Studio 2022 version 17.0
+## <a name="improvements_171"></a> Conformance improvements in Visual Studio 2022 version 17.1
+
+Visual Studio 2022 version 17.1 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+
+### Detect ill-formed capture default in non-local lambda-expressions
+
+The C++ Standard only allows a lambda expression in block scope to have a capture-default. In Visual C++ 2022 version 17.1 and later, the compiler now detects when a capture default isn't allowed in a non-local lambda expression and emits a new level 4 warning, C5253.
+
+This change is a source breaking change. It applies in any mode that uses the new lambda processor: **`/Zc:lambda`**, **`/std:c++20`**, or **`/std:c++latest`**.
+
+#### Example
+
+In Visual C++ 2022 version 17.1 this code now emits an error:
+
+```cpp
+#pragma warning(error:5253)
+
+auto incr = [=](int value) { return value + 1; };
+
+// capture_default.cpp(3,14): error C5253: a non-local lambda cannot have a capture default
+// auto incr = [=](int value) { return value + 1; };
+//              ^
+```
+
+To fix this issue, remove the capture default:
+
+```cpp
+#pragma warning(error:5253)
+
+auto incr = [](int value) { return value + 1; };
+```
+
+### C4028 is now C4133 for function-to-pointer operations
+
+Before Visual Studio 2022 version 17.1, the compiler reported an incorrect error message on certain pointer-to-function comparisons in C code. The incorrect message was reported when you compared two function pointers that had the same argument counts but incompatible types. Now, we issue a different warning that complains about pointer-to-function incompatibility rather than function parameter mismatch.
+
+This change is a source breaking change. It applies when code is compiled as C.
+
+#### Example
+
+```C
+int f1(int); 
+int f2(char*); 
+int main(void) 
+{ 
+    return (f1 == f2); 
+}
+// Old warning:
+// C4028: formal parameter 1 different from declaration
+// New warning:
+// C4113: 'int (__cdecl *)(char *)' differs in parameter lists from 'int (__cdecl *)(int)'
+```
+
+### Error on a non-dependent static_assert
+
+In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` is not dependent, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
+
+This change is a source breaking change. It applies in any mode that implies **`/Zc:permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
+
+#### Example
+
+In Visual Studio 2022 version 17.1 and later, this code now causes an error:
+
+```cpp
+template<typename T>
+void f()
+{
+   static_assert(false, "BOOM!");
+}
+```
+
+To fix this issue, make the expression dependent. For example:
+
+```cpp
+template<typename>
+constexpr bool dependent_false = false;
+
+template<typename T>
+void f()
+{
+   static_assert(dependent_false<T>, "BOOM!");
+}
+```
+
+With this change, the compiler only emits an error if the function template `f` is instantiated.
+
+## <a name="improvements_170"></a> Conformance improvements in Visual Studio 2022 version 17.0
 
 Visual Studio 2022 version 17.0 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
 
