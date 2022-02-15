@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["remove", "_wremove", "_tremove"]
 helpviewer_keywords: ["tremove function", "_wremove function", "files [C++], deleting", "_tremove function", "files [C++], removing", "wremove function", "remove function"]
-ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
 ---
-# remove, _wremove
+# `remove`, `_wremove`
 
 Delete a file.
 
@@ -27,33 +26,33 @@ int _wremove(
 
 ### Parameters
 
-*path*<br/>
+*`path`*\
 Path of file to be removed.
 
 ## Return Value
 
-Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets **errno** either to **EACCES** to indicate that the path specifies a read-only file, specifies a directory, or the file is open, or to **ENOENT** to indicate that the filename or path was not found.
+Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets **`errno`** either to **`EACCES`** to indicate that the path specifies a read-only file, specifies a directory, or the file is open, or to **`ENOENT`** to indicate that the filename or path wasn't found.
 
-See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these and other return codes.
+See [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these and other return codes.
 
 ## Remarks
 
-The **remove** function deletes the file specified by *path.* **_wremove** is a wide-character version of **_remove**; the *path* argument to **_wremove** is a wide-character string. **_wremove** and **_remove** behave identically otherwise. All handles to a file must be closed before it can be deleted.
+The **`remove`** function deletes the file specified by *`path`.* **`_wremove`** is a wide-character version of **`_remove`**; the *`path`* argument to **`_wremove`** is a wide-character string. **`_wremove`** and **`_remove`** behave identically otherwise. All handles to a file must be closed before it can be deleted.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tremove**|**remove**|**remove**|**_wremove**|
+|**`_tremove`**|**`remove`**|**`remove`**|**`_wremove`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**remove**|\<stdio.h> or \<io.h>|
-|**_wremove**|\<stdio.h> or \<wchar.h>|
+|**`remove`**|`<stdio.h>` or `<io.h>`|
+|**`_wremove`**|`<stdio.h>` or `<wchar.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -78,7 +77,7 @@ int main( void )
 }
 ```
 
-### Input: crt_remove.txt
+### Input: `crt_remove.txt`
 
 ```Input
 This file will be deleted.
@@ -92,5 +91,5 @@ Deleted 'CRT_REMOVE.TXT'
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_unlink, _wunlink](unlink-wunlink.md)<br/>
+[File Handling](../../c-runtime-library/file-handling.md)\
+[`_unlink`, `_wunlink`](unlink-wunlink.md)
