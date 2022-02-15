@@ -1,7 +1,7 @@
 ---
 title: "CMake projects in Visual Studio"
 description: "How to create and build C++ projects using CMake in Visual Studio."
-ms.date: 12/15/2021
+ms.date: 02/14/2022
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
@@ -41,9 +41,9 @@ When you **open a folder** containing a *`CMakeLists.txt`* file, the following t
 > [!NOTE]
 > Starting in Visual Studio 2022 version 17.1 Preview 2, if your folder doesn't contain a root `CMakeLists.txt` you'll be prompted whether you'd like to enable CMake integration or not. For more information, see [CMake partial activation](#cmake-partial-activation).
 
-Once CMake cache generation has succeeded, you can also view your projects organized logically by targets. Choose **Targets view** from the dropdown in the **Solution Explorer** toolbar:
+Once CMake cache generation has succeeded, you can also view your projects organized logically by targets. Choose the **Select View** button on the **Solution Explorer** toolbar. From the list in **Solution Explorer - Views**, select **CMake Targets View** and press **Enter** to open the targets view:
 
-![CMake targets view button.](media/cmake-targets-view.png)
+:::image type="content" source="media/cmake-targets-view2.png" alt-text="Screenshot of the Solution Explorer Views window with the C Make Targets View highlighted.":::
 
 Choose the **Show All Files** button at the top of **Solution Explorer** to see all the CMake-generated output in the *`out/build/<config>`* folders.
 
@@ -90,7 +90,7 @@ You can also disable all CMake cache notifications (gold bars) by deselecting **
 
 If you need more information about the state of the CMake cache to diagnose a problem, open the **Project** main menu or the *`CMakeLists.txt`* context menu in **Solution Explorer** to run one of these commands:
 
-- **View CMakeCache.txt** opens the *`CMakeCache.txt`* file from the build directory in the editor. Any edits you make here to *`CMakeCache.txt`* are wiped out if you clean the cache. To make changes that persist after you clean the cache, see [Customize CMake settings](customize-cmake-settings.md) or [Configure and Build with CMake Presets](cmake-presets-vs.md).
+- **View CMakeCache.txt** opens the *`CMakeCache.txt`* file from the build directory in the editor. Any edits you make here to *`CMakeCache.txt`* are wiped out if you clean the cache. To make changes that persist after you clean the cache, see [Customize CMake settings](customize-cmake-settings.md) or [Configure and build with CMake Presets](cmake-presets-vs.md).
 
 - **Delete Cache and Reconfigure** deletes the build directory and reconfigures from a clean cache.
 
@@ -149,7 +149,7 @@ Visual Studio allows you to debug a process running on a remote Linux system or 
 
 ## <a name="cmake-partial-activation"></a> CMake partial activation
 
-Starting in Visual Studio 2022 version 17.1 Preview 2, CMake functionality won't be enabled automatically if your root folder doesn't contain a `CMakeLists.txt` file. Instead, a dialog will prompt you on whether you'd like to enable CMake functionality for your project. If you decline, CMake cache generation won't start and CMake configurations (from `CMakeSettings.json` or `CMakePresets.json`) won't appear in the configuration dropdown. If you accept, you'll be taken to a workspace-level configuration file, `CMakeWorkspaceSettings.json` (stored in the `.vs` directory), to specify the folders you'd like to enable CMake for. (These folders contain your root `CMakeLists.txt` files).
+In Visual Studio 2022 version 17.1 and later, CMake functionality won't be enabled automatically if your root folder doesn't contain a `CMakeLists.txt` file. Instead, a dialog will prompt you on whether you'd like to enable CMake functionality for your project. If you decline, CMake cache generation won't start and CMake configurations (from `CMakeSettings.json` or `CMakePresets.json`) won't appear in the configuration dropdown. If you accept, you'll be taken to a workspace-level configuration file, `CMakeWorkspaceSettings.json` (stored in the `.vs` directory), to specify the folders you'd like to enable CMake for. (These folders contain your root `CMakeLists.txt` files).
 
 The accepted properties are:
 
@@ -197,7 +197,7 @@ As soon as you save the file, the configuration step automatically runs again an
 
 ### Language services for CMake
 
-Language services for CMake are available in Visual Studio 2019 version 16.5 or later. Code navigation features like Go To Definition, Peek Definition, and Find All References are supported for CMake variables, functions, and targets in CMake script files. For more information, see [Code Navigation for CMake Scripts](https://devblogs.microsoft.com/cppblog/code-navigation-for-cmake-scripts/).
+Language services for CMake are available in Visual Studio 2019 version 16.5 or later. It supports code navigation features like Go To Definition, Peek Definition, and Find All References for CMake variables, functions, and targets in CMake script files. For more information, see [Code Navigation for CMake Scripts](https://devblogs.microsoft.com/cppblog/code-navigation-for-cmake-scripts/).
 
 ![Find All References on a CMake variable, target, or function.](media/cmake-find-all-refs.png)
 

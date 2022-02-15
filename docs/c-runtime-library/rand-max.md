@@ -4,9 +4,8 @@ title: "RAND_MAX"
 ms.date: "11/04/2016"
 f1_keywords: ["RAND_MAX"]
 helpviewer_keywords: ["RAND_MAX constant"]
-ms.assetid: a2039697-8908-4911-bd2d-a2bdd19912a0
 ---
-# RAND_MAX
+# `RAND_MAX`
 
 ## Syntax
 
@@ -20,5 +19,5 @@ The constant `RAND_MAX` is the maximum value that can be returned by the `rand` 
 
 ## See also
 
-[rand](../c-runtime-library/reference/rand.md)<br/>
+[`rand`](../c-runtime-library/reference/rand.md)\
 [Global Constants](../c-runtime-library/global-constants.md)

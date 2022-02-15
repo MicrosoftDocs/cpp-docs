@@ -182,9 +182,9 @@ So far, we've defined the primary module interface, which exposes the API surfac
 
 ## Create a module unit implementation file
 
-Module unit implementation files don't end with an `.ixx` extension. They're normal `.cpp` files. Add a module unit implementation file by creating a source file with a right-click in the **Solution Explorer** on **Source Files**, select **Add** > **New item...** and then select **C++ File (.cpp)**. Give the new file the name `BasicPlane.Figures-Rectangle.cpp`, then select **Add**.
+Module unit implementation files don't end with an *`.ixx`* extension. They're normal *`.cpp`* files. Add a module unit implementation file by creating a source file with a right-click in the **Solution Explorer** on **Source Files**, select **Add** > **New item** and then select **C++ File (.cpp)**. Give the new file the name `BasicPlane.Figures-Rectangle.cpp`, then select **Add**.
 
-The naming convention for the module partition's implementation file follows the naming convention for partition. But it has a `.cpp` extension because it's an implementation file.
+The naming convention for the module partition's implementation file follows the naming convention for partition. But it has a *`.cpp`* extension because it's an implementation file.
 
 Replace the contents of the `BasicPlane.Figures-Rectangle.cpp` file with:
 
@@ -297,7 +297,7 @@ Module implementation units belong to a named module. The named module they belo
 
 Module implementation units are useful for breaking up a large module to factor dependencies to get faster build times. This technique is covered briefly in the [Best practices](#module-best-practices) section.
 
-Module implementation unit files have a `.cpp` extension. The basic outline of a module implementation unit file is:
+Module implementation unit files have a *`.cpp`* extension. The basic outline of a module implementation unit file is:
 
 ```cpp
 // optional #include or import statements. These only apply to this file
@@ -351,7 +351,7 @@ A module and the code that imports it must be compiled with the same compiler op
 - The name of the file that contains the module primary interface is generally the name of the module. For example, given the module name `BasicPlane.Figures`, the name of the file containing the primary interface would be named `BasicPlane.Figures.ixx`.
 - The name of a module partition file is generally `<primary-module-name>-<module-partition-name>` where the name of the module is followed by a hyphen ('-') and then the name of the partition. For example, `BasicPlane.Figures-Rectangle.ixx`
 
-If you're building from the command line and you use this naming convention for module partitions, then you won't have to explicitly add `/reference` for each module partition file. The compiler will look for them automatically based on the name of the module. The name of the compiled partition file (ending with an `.ifc` extension) is generated implicitly from the module name. Consider the module name `BasicPlane.Figures:Rectangle`. The compiler will anticipate that the corresponding compiled partition file for `Rectangle` is named `BasicPlane.Figures-Rectangle.ifc`. The compiler uses this naming scheme to ease using module partitions by automatically finding the interface unit files for partitions.
+If you're building from the command line and you use this naming convention for module partitions, then you won't have to explicitly add `/reference` for each module partition file. The compiler will look for them automatically based on the name of the module. The name of the compiled partition file (ending with an *`.ifc`* extension) is generated implicitly from the module name. Consider the module name `BasicPlane.Figures:Rectangle`. The compiler will anticipate that the corresponding compiled partition file for `Rectangle` is named `BasicPlane.Figures-Rectangle.ifc`. The compiler uses this naming scheme to ease using module partitions by automatically finding the interface unit files for partitions.
 
 Or, you can name them using your own convention. But then you'll need to specify corresponding [`/reference`](../build/reference/module-reference.md) arguments to the command-line compiler.
 
