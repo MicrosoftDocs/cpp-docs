@@ -135,8 +135,9 @@ This article contains a categorical list of compiler options. For an alphabetica
 | Option | Purpose |
 |--|--|
 | [`/exportHeader`](module-exportheader.md) | Create the header units files (*`.ifc`*) specified by the input arguments. |
-| [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (`.ifc`) for the specified header. |
+| [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (*`.ifc`*) for the specified header. |
 | [`/headerName`](headername.md) | Build a header unit from the specified header. |
+| **`/ifcOutput`** | Specify output file or directory for *`.ifc`* files. |
 | [`/reference`](module-reference.md) | Use named module IFC. |
 | [`/scanDependencies`](scandependencies.md) | List module and header unit dependencies in C++ Standard JSON form. |
 | [`/sourceDependencies`](sourcedependencies.md) | List all source-level dependencies. |
