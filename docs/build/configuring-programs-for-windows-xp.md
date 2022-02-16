@@ -47,7 +47,7 @@ Along with the Windows XP platform toolset, several libraries include runtime su
 - Universal C Runtime Library (UCRT)
 - C++ Standard Library
 - Active Template Library (ATL)
-- Concurrency Runtime Library (ConCRT)
+- Concurrency Runtime Library (ConcRT)
 - Parallel Patterns Library (PPL)
 - Microsoft Foundation Class Library (MFC)
 - C++ AMP (C++ Accelerated Massive Programming) library.
@@ -61,7 +61,7 @@ These libraries are supported by the platform toolsets installed by Visual Studi
 |CRT|X|X|X|
 |C++ Standard Library|X|X|X|
 |ATL|X|X|X|
-|ConCRT/PPL|X|X|X|
+|ConcRT/PPL|X|X|X|
 |MFC|X||X|
 |C++ AMP|X|X||
 

@@ -167,7 +167,7 @@ items:
               href: ../parallel/amp/reference/concurrency-precise-math-namespace.md
             - name: "Concurrency::precise_math namespace functions"
               href: ../parallel/amp/reference/concurrency-precise-math-namespace-functions.md
-- name: Concurrency Runtime (ConCRT)
+- name: Concurrency Runtime (ConcRT)
   expanded: false
   items:
     - name: Concurrency Runtime
