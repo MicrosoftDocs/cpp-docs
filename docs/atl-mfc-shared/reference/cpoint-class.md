@@ -4,9 +4,8 @@ title: "CPoint Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPoint", "ATLTYPES/ATL::CPoint", "ATLTYPES/ATL::CPoint::CPoint", "ATLTYPES/ATL::CPoint::Offset"]
 helpviewer_keywords: ["LPPOINT structure", "POINT structure", "CPoint class"]
-ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
 ---
-# CPoint Class
+# `CPoint` Class
 
 Similar to the Windows `POINT` structure.
 
@@ -22,30 +21,30 @@ class CPoint : public tagPOINT
 
 |Name|Description|
 |----------|-----------------|
-|[CPoint::CPoint](#cpoint)|Constructs a `CPoint`.|
+|[`CPoint::CPoint`](#cpoint)|Constructs a `CPoint`.|
 
 ### Public Methods
 
 |Name|Description|
 |----------|-----------------|
-|[CPoint::Offset](#offset)|Adds values to the `x` and `y` members of the `CPoint`.|
+|[`CPoint::Offset`](#offset)|Adds values to the `x` and `y` members of the `CPoint`.|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[CPoint::operator -](#operator_-)|Returns the difference of a `CPoint` and a size, or the negation of a point, or the size difference between two points, or the offset by a negative size.|
-|[CPoint::operator !=](#operator_neq)|Checks for inequality between two points.|
-|[CPoint::operator +](#operator_add)|Returns the sum of a `CPoint` and a size or point, or a `CRect` offset by a size.|
-|[CPoint::operator +=](#operator_add_eq)|Offsets `CPoint` by adding a size or point.|
-|[CPoint::operator -=](#operator_-_eq)|Offsets `CPoint` by subtracting a size or point.|
-|[CPoint::operator ==](#operator_eq_eq)|Checks for equality between two points.|
+|[`CPoint::operator -`](#operator_-)|Returns the difference of a `CPoint` and a `SIZE`, or the negation of a `POINT`, or the `CSize` difference between two `POINT`s, or the offset by a negative `SIZE`.|
+|[`CPoint::operator !=`](#operator_neq)|Checks for inequality between two `POINT`s.|
+|[`CPoint::operator +`](#operator_add)|Returns the sum of a `CPoint` and a `SIZE` or `POINT`, or a `CRect` offset by a `SIZE`.|
+|[`CPoint::operator +=`](#operator_add_eq)|Offsets `CPoint` by adding a `SIZE` or `POINT`.|
+|[`CPoint::operator -=`](#operator_-_eq)|Offsets `CPoint` by subtracting a `SIZE` or `POINT`.|
+|[`CPoint::operator ==`](#operator_eq_eq)|Checks for equality between two `POINT`s.|
 
 ## Remarks
 
-It also includes member functions to manipulate `CPoint` and [POINT](/windows/win32/api/windef/ns-windef-point) structures.
+It also includes member functions to manipulate `CPoint` and [`POINT`](/windows/win32/api/windef/ns-windef-point) structures.
 
-A `CPoint` object can be used wherever a `POINT` structure is used. The operators of this class that interact with a "size" accept either [CSize](../../atl-mfc-shared/reference/csize-class.md) objects or [SIZE](/windows/win32/api/windef/ns-windef-size) structures, since the two are interchangeable.
+A `CPoint` object can be used wherever a `POINT` structure is used. The operators of this class that interact with a `SIZE` accept either [`CSize`](../../atl-mfc-shared/reference/csize-class.md) objects or [`SIZE`](/windows/win32/api/windef/ns-windef-size) structures, since the two are interchangeable.
 
 > [!NOTE]
 > This class is derived from the `tagPOINT` structure. (The name `tagPOINT` is a less commonly used name for the `POINT` structure.) This means that the data members of the `POINT` structure, `x` and `y`, are accessible data members of `CPoint`.
@@ -61,9 +60,9 @@ A `CPoint` object can be used wherever a `POINT` structure is used. The operator
 
 ## Requirements
 
-**Header:** atltypes.h
+**Header:** `atltypes.h`
 
-## <a name="cpoint"></a> CPoint::CPoint
+## <a name="cpoint"></a> `CPoint::CPoint`
 
 Constructs a `CPoint` object.
 
@@ -77,20 +76,20 @@ CPoint(LPARAM dwPoint) throw();
 
 ### Parameters
 
-*initX*<br/>
+*`initX`*\
 Specifies the value of the `x` member of `CPoint`.
 
-*initY*<br/>
+*`initY`*\
 Specifies the value of the `y` member of `CPoint`.
 
-*initPt*<br/>
-[POINT](/windows/win32/api/windef/ns-windef-point) structure or `CPoint` that specifies the values used to initialize `CPoint`.
+*`initPt`*\
+[`POINT`](/windows/win32/api/windef/ns-windef-point) structure or `CPoint` that specifies the values used to initialize `CPoint`.
 
-*initSize*<br/>
-[SIZE](/windows/win32/api/windef/ns-windef-size) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) that specifies the values used to initialize `CPoint`.
+*`initSize`*\
+[`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) that specifies the values used to initialize `CPoint`.
 
-*dwPoint*<br/>
-Sets the `x` member to the low-order word of *dwPoint* and the `y` member to the high-order word of *dwPoint*.
+*`dwPoint`*\
+Sets the `x` member to the low-order word of *`dwPoint`* and the `y` member to the high-order word of *`dwPoint`*.
 
 ### Remarks
 
@@ -123,7 +122,7 @@ CPoint ptFromDouble(dwSize);
 ASSERT(ptFromDouble == ptMFCHere);
 ```
 
-## <a name="offset"></a> CPoint::Offset
+## <a name="offset"></a> `CPoint::Offset`
 
 Adds values to the `x` and `y` members of the `CPoint`.
 
@@ -135,25 +134,25 @@ void Offset(SIZE size) throw();
 
 ### Parameters
 
-*xOffset*<br/>
+*`xOffset`*\
 Specifies the amount to offset the `x` member of the `CPoint`.
 
-*yOffset*<br/>
+*`yOffset`*\
 Specifies the amount to offset the `y` member of the `CPoint`.
 
-*point*<br/>
-Specifies the amount ( [POINT](/windows/win32/api/windef/ns-windef-point) or `CPoint`) to offset the `CPoint`.
+*`point`*\
+Specifies the amount ([`POINT`](/windows/win32/api/windef/ns-windef-point) or `CPoint`) to offset the `CPoint`.
 
-*size*<br/>
-Specifies the amount ( [SIZE](/windows/win32/api/windef/ns-windef-size) or [CSize](../../atl-mfc-shared/reference/csize-class.md)) to offset the `CPoint`.
+*`size`*\
+Specifies the amount ([`SIZE`](/windows/win32/api/windef/ns-windef-size) or [`CSize`](../../atl-mfc-shared/reference/csize-class.md)) to offset the `CPoint`.
 
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_1.cpp)]
 
-## <a name="operator_eq_eq"></a> CPoint::operator ==
+## <a name="operator_eq_eq"></a> `CPoint::operator ==`
 
-Checks for equality between two points.
+Checks for equality between two `POINT`s.
 
 ```
 BOOL operator==(POINT point) const throw();
@@ -161,20 +160,20 @@ BOOL operator==(POINT point) const throw();
 
 ### Parameters
 
-*point*<br/>
-Contains a [POINT](/windows/win32/api/windef/ns-windef-point) structure or `CPoint` object.
+*`point`*\
+Contains a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or `CPoint` object.
 
 ### Return Value
 
-Nonzero if the points are equal; otherwise 0.
+Nonzero if the `POINT`s are equal; otherwise 0.
 
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#29](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_2.cpp)]
 
-## <a name="operator_neq"></a> CPoint::operator !=
+## <a name="operator_neq"></a> `CPoint::operator !=`
 
-Checks for inequality between two points.
+Checks for inequality between two `POINT`s.
 
 ```
 BOOL operator!=(POINT point) const throw();
@@ -182,20 +181,20 @@ BOOL operator!=(POINT point) const throw();
 
 ### Parameters
 
-*point*<br/>
-Contains a [POINT](/windows/win32/api/windef/ns-windef-point) structure or `CPoint` object.
+*`point`*\
+Contains a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or `CPoint` object.
 
 ### Return Value
 
-Nonzero if the points are not equal; otherwise 0.
+Nonzero if the `POINT`s aren't equal; otherwise 0.
 
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#30](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_3.cpp)]
 
-## <a name="operator_add_eq"></a> CPoint::operator +=
+## <a name="operator_add_eq"></a> `CPoint::operator +=`
 
-The first overload adds a size to the `CPoint`.
+The first overload adds a `SIZE` to the `CPoint`.
 
 ```cpp
 void operator+=(SIZE size) throw();
@@ -204,27 +203,27 @@ void operator+=(POINT point) throw();
 
 ### Parameters
 
-*size*<br/>
-Contains a [SIZE](/windows/win32/api/windef/ns-windef-size) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.
+*`size`*\
+Contains a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
-*point*<br/>
-Contains a [POINT](/windows/win32/api/windef/ns-windef-point) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.
+*`point`*\
+Contains a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object.
 
 ### Remarks
 
-The second overload adds a point to the `CPoint`.
+The second overload adds a `POINT` to the `CPoint`.
 
 In both cases, addition is done by adding the `x` (or `cx`) member of the right-hand operand to the `x` member of the `CPoint` and adding the `y` (or `cy`) member of the right-hand operand to the `y` member of the `CPoint`.
 
-For example, adding `CPoint(5, -7)` to a variable which contains `CPoint(30, 40)` changes the variable to `CPoint(35, 33)`.
+For example, adding `CPoint(5, -7)` to a variable that contains `CPoint(30, 40)` changes the variable to `CPoint(35, 33)`.
 
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#31](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_4.cpp)]
 
-## <a name="operator_-_eq"></a> CPoint::operator -=
+## <a name="operator_-_eq"></a> `CPoint::operator -=`
 
-The first overload subtracts a size from the `CPoint`.
+The first overload subtracts a `SIZE` from the `CPoint`.
 
 ```cpp
 void operator-=(SIZE size) throw();
@@ -233,25 +232,25 @@ void operator-=(POINT point) throw();
 
 ### Parameters
 
-*size*<br/>
-Contains a [SIZE](/windows/win32/api/windef/ns-windef-size) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.
+*`size`*\
+Contains a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
-*point*<br/>
-Contains a [POINT](/windows/win32/api/windef/ns-windef-point) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.
+*`point`*\
+Contains a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object.
 
 ### Remarks
 
-The second overload subtracts a point from the `CPoint`.
+The second overload subtracts a `POINT` from the `CPoint`.
 
 In both cases, subtraction is done by subtracting the `x` (or `cx`) member of the right-hand operand from the `x` member of the `CPoint` and subtracting the `y` (or `cy`) member of the right-hand operand from the `y` member of the `CPoint`.
 
-For example, subtracting `CPoint(5, -7)` from a variable which contains `CPoint(30, 40)` changes the variable to `CPoint(25, 47)`.
+For example, subtracting `CPoint(5, -7)` from a variable that contains `CPoint(30, 40)` changes the variable to `CPoint(25, 47)`.
 
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#32](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_5.cpp)]
 
-## <a name="operator_add"></a> CPoint::operator +
+## <a name="operator_add"></a> `CPoint::operator +`
 
 Use this operator to offset `CPoint` by a `CPoint` or `CSize` object, or to offset a `CRect` by a `CPoint`.
 
@@ -263,30 +262,30 @@ CRect operator+(const RECT* lpRect) const throw();
 
 ### Parameters
 
-*size*<br/>
-Contains a [SIZE](/windows/win32/api/windef/ns-windef-size) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.
+*`size`*\
+Contains a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
-*point*<br/>
-Contains a [POINT](/windows/win32/api/windef/ns-windef-point) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.
+*`point`*\
+Contains a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object.
 
-*lpRect*<br/>
-Contains a pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object.
+*`lpRect`*\
+Contains a pointer to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object.
 
 ### Return Value
 
-A `CPoint` that is offset by a size, a `CPoint` that is offset by a point, or a `CRect` offset by a point.
+A `CPoint` that is offset by a `SIZE`, a `CPoint` that is offset by a `POINT`, or a `CRect` offset by a `POINT`.
 
 ### Remarks
 
 For example, using one of the first two overloads to offset the point `CPoint(25, -19)` by a point `CPoint(15, 5)` or size `CSize(15, 5)` returns the value `CPoint(40, -14)`.
 
-Adding a rectangle to a point returns the rectangle after being offset by the `x` and `y` values specified in the point. For example, using the last overload to offset a rectangle `CRect(125, 219, 325, 419)` by a point `CPoint(25, -19)` returns `CRect(150, 200, 350, 400)`.
+Adding a `CRect` to a `POINT` returns the `CRect` after being offset by the `x` and `y` values specified in the `POINT`. For example, using the last overload to offset a rectangle `CRect(125, 219, 325, 419)` by a point `CPoint(25, -19)` returns `CRect(150, 200, 350, 400)`.
 
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_6.cpp)]
 
-## <a name="operator_-"></a> CPoint::operator -
+## <a name="operator_-"></a> `CPoint::operator -`
 
 Use one of the first two overloads to subtract a `CPoint` or `CSize` object from `CPoint`.
 
@@ -299,18 +298,18 @@ CPoint operator-() const throw();
 
 ### Parameters
 
-*point*<br/>
-A [POINT](/windows/win32/api/windef/ns-windef-point) structure or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object.
+*`point`*\
+A [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object.
 
-*size*<br/>
-A [SIZE](/windows/win32/api/windef/ns-windef-size) structure or [CSize](../../atl-mfc-shared/reference/csize-class.md) object.
+*`size`*\
+A [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
-*lpRect*<br/>
-A pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object.
+*`lpRect`*\
+A pointer to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object.
 
 ### Return Value
 
-A `CSize` that is the difference between two points, a `CPoint` that is offset by the negation of a size, a `CRect` that is offset by the negation of a point, or a `CPoint` that is the negation of a point.
+A `CSize` that is the difference between two `POINT`s, a `CPoint` that is offset by the negation of a `SIZE`, a `CRect` that is offset by the negation of a `POINT`, or a `CPoint` that is the negation of a `POINT`.
 
 ### Remarks
 
@@ -320,9 +319,9 @@ For example, using the first overload to find the difference between two points 
 
 Subtracting a `CSize` from `CPoint` does the same calculation as above but returns a `CPoint` object, not a `CSize` object. For example, using the second overload to find the difference between the point `CPoint(25, -19)` and the size `CSize(15, 5)` returns `CPoint(10, -24)`.
 
-Subtracting a rectangle from a point returns the rectangle offset by the negatives of the `x` and `y` values specified in the point. For example, using the last overload to offset the rectangle `CRect(125, 200, 325, 400)` by the point `CPoint(25, -19)` returns `CRect(100, 219, 300, 419)`.
+Subtracting a rectangle from a `POINT` returns the rectangle offset by the negatives of the `x` and `y` values specified in the `POINT`. For example, using the last overload to offset the rectangle `CRect(125, 200, 325, 400)` by the point `CPoint(25, -19)` returns `CRect(100, 219, 300, 419)`.
 
-Use the unary operator to negate a point. For example, using the unary operator with the point `CPoint(25, -19)` returns `CPoint(-25, 19)`.
+Use the unary operator to negate a `POINT`. For example, using the unary operator with the point `CPoint(25, -19)` returns `CPoint(-25, 19)`.
 
 ### Example
 
@@ -330,8 +329,8 @@ Use the unary operator to negate a point. For example, using the unary operator 
 
 ## See also
 
-[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[POINT Structure](/windows/win32/api/windef/ns-windef-point)<br/>
-[CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
-[CSize Class](../../atl-mfc-shared/reference/csize-class.md)
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)\
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[`POINT` Structure](/windows/win32/api/windef/ns-windef-point)\
+[`CRect` Class](../../atl-mfc-shared/reference/crect-class.md)\
+[`CSize` Class](../../atl-mfc-shared/reference/csize-class.md)
