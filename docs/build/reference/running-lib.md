@@ -32,7 +32,7 @@ An option consists of an option specifier, which is either a dash (**-**) or a f
 
 The following options apply to all modes of LIB:
 
-> **/ERRORREPORT** \[**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
+> **/ERRORREPORT** \[**NONE** \| **PROMPT** \| **QUEUE** \| **SEND**]
 
 The /ERRORREPORT option is deprecated. Starting in Windows Vista, error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings.
 

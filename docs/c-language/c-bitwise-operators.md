@@ -7,7 +7,7 @@ ms.assetid: e22127b1-9a2d-4876-b01d-c8f72cec3317
 ---
 # C Bitwise Operators
 
-The bitwise operators perform bitwise-AND (**&**), bitwise-exclusive-OR (**^**), and bitwise-inclusive-OR (**&#124;**) operations.
+The bitwise operators perform bitwise-AND (**&**), bitwise-exclusive-OR (**^**), and bitwise-inclusive-OR (**\|**) operations.
 
 ## Syntax
 
@@ -21,7 +21,7 @@ The bitwise operators perform bitwise-AND (**&**), bitwise-exclusive-OR (**^**),
 
 *inclusive-OR-expression*:
 &nbsp;&nbsp;*exclusive-OR-expression*
-&nbsp;&nbsp;*inclusive-OR-expression* &#124; *exclusive-OR-expression*
+&nbsp;&nbsp;*inclusive-OR-expression* \| *exclusive-OR-expression*
 
 The operands of bitwise operators must have integral types, but their types can be different. These operators perform the usual arithmetic conversions; the type of the result is the type of the operands after conversion.
 
@@ -31,7 +31,7 @@ The C bitwise operators are described below:
 |--------------|-----------------|
 |**&**|The bitwise-AND operator compares each bit of its first operand to the corresponding bit of its second operand. If both bits are 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.|
 |**^**|The bitwise-exclusive-OR operator compares each bit of its first operand to the corresponding bit of its second operand. If one bit is 0 and the other bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.|
-|**&#124;**|The bitwise-inclusive-OR operator compares each bit of its first operand to the corresponding bit of its second operand. If either bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.|
+|**\|**|The bitwise-inclusive-OR operator compares each bit of its first operand to the corresponding bit of its second operand. If either bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.|
 
 ## Examples
 
@@ -74,4 +74,4 @@ The result of the bitwise AND is 96 decimal.
 
 [Bitwise AND Operator: &](../cpp/bitwise-and-operator-amp.md)<br/>
 [Bitwise Exclusive OR Operator: ^](../cpp/bitwise-exclusive-or-operator-hat.md)<br/>
-[Bitwise Inclusive OR Operator: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)
+[Bitwise Inclusive OR Operator: \|](../cpp/bitwise-inclusive-or-operator-pipe.md)
