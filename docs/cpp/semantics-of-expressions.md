@@ -85,9 +85,9 @@ An expression can modify an object's value only once between consecutive "sequen
 
 The C++ language definition does not currently specify sequence points. Microsoft C++ uses the same sequence points as ANSI C for any expression involving C operators and not involving overloaded operators. When operators are overloaded, the semantics change from operator sequencing to function-call sequencing. Microsoft C++ uses the following sequence points:
 
-- Left operand of the logical AND operator (&&). The left operand of the logical AND operator is completely evaluated and all side effects completed before continuing. There is no guarantee that the right operand of the logical AND operator will be evaluated.
+- Left operand of the logical AND operator (`&&`). The left operand of the logical AND operator is completely evaluated and all side effects completed before continuing. There's no guarantee that the right operand of the logical AND operator will be evaluated.
 
-- Left operand of the logical OR operator (&#124;&#124;). The left operand of the logical OR operator is completely evaluated and all side effects completed before continuing. There is no guarantee that the right operand of the logical OR operator will be evaluated.
+- Left operand of the logical OR operator (`||`). The left operand of the logical OR operator is completely evaluated and all side effects completed before continuing. There's no guarantee that the right operand of the logical OR operator will be evaluated.
 
 - Left operand of the comma operator. The left operand of the comma operator is completely evaluated and all side effects completed before continuing. Both operands of the comma operator are always evaluated.
 
