@@ -27,35 +27,35 @@ In a value type, one of the parameters of a static user-defined operator must be
 
 You can define the following operators:
 
-| Operator | Unary/Binary Forms? |
-|--|--|
-| `!` | Unary |
-| `!=` | Binary |
-| `%` | Binary |
-| `&` | Unary and Binary |
-| `&&` | Binary |
-| `*` | Unary and Binary |
-| `+` | Unary and Binary |
-| `++` | Unary |
-| `,` | Binary |
-| `-` | Unary and Binary |
-| `--` | Unary |
-| `->` | Unary |
-| `/` | Binary |
-| `<` | Binary |
-| `<<` | Binary |
-| `<=` | Binary |
-| `=` | Binary |
-| `==` | Binary |
-| `>` | Binary |
-| `>=` | Binary |
-| `>>` | Binary |
-| `^` | Binary |
-| `false` | Unary |
-| `true` | Unary |
+|Operator|Unary/Binary Forms?|
+|--------------|--------------------------|
+|!|Unary|
+|!=|Binary|
+|%|Binary|
+|&|Unary and Binary|
+|&&|Binary|
+|*|Unary and Binary|
+|+|Unary and Binary|
+|++|Unary|
+|,|Binary|
+|-|Unary and Binary|
+|--|Unary|
+|->|Unary|
+|/|Binary|
+|<|Binary|
+|<<|Binary|
+|\<=|Binary|
+|=|Binary|
+|==|Binary|
+|>|Binary|
+|>=|Binary|
+|>>|Binary|
+|^|Binary|
+|false|Unary|
+|true|Unary|
 | `|` | Binary |
 | `||` | Binary |
-| `~` | Unary |
+|~|Unary|
 
 ## Example: User-defined operators
 
