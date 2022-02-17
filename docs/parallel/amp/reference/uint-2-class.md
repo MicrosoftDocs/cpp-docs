@@ -56,7 +56,7 @@ class uint_2;
 |uint_2::operator*=||
 |uint_2::operator/=||
 |uint_2::operator^=||
-|uint_2::operator&#124;=||
+|uint_2::operator\|=||
 |uint_2::operator~||
 |uint_2::operator++||
 |uint_2::operator+=||
