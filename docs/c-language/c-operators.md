@@ -29,8 +29,8 @@ Binary operators associate from left to right. C provides the following binary o
 |**+** **-**|Additive operators|
 |**\<\<** **>>**|Shift operators|
 |**\<** **>** **\<=** **>=** **==** **!=**|Relational operators|
-|**&** **&#124;** **^**|Bitwise operators|
-|**&&** **&#124;&#124;**|Logical operators|
+|**&** **\|** **^**|Bitwise operators|
+|**&&** **\|\|**|Logical operators|
 |**,**|Sequential-evaluation operator|
 
 The base operator (**:>**), supported by previous versions of the Microsoft 16-bit C compiler, is described in [C Language Syntax Summary](../c-language/c-language-syntax-summary.md).
