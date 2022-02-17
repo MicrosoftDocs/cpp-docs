@@ -4,7 +4,6 @@ title: "CComVariant class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComVariant", "ATLCOMCLI/ATL::CComVariant", "ATLCOMCLI/ATL::CComVariant::CComVariant", "ATLCOMCLI/ATL::CComVariant::Attach", "ATLCOMCLI/ATL::CComVariant::ChangeType", "ATLCOMCLI/ATL::CComVariant::Clear", "ATLCOMCLI/ATL::CComVariant::Copy", "ATLCOMCLI/ATL::CComVariant::CopyTo", "ATLCOMCLI/ATL::CComVariant::Detach", "ATLCOMCLI/ATL::CComVariant::GetSize", "ATLCOMCLI/ATL::CComVariant::ReadFromStream", "ATLCOMCLI/ATL::CComVariant::SetByRef", "ATLCOMCLI/ATL::CComVariant::WriteToStream"]
 helpviewer_keywords: ["VARIANT macro", "CComVariant class", "VARIANT macro, ATL"]
-ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
 ---
 # `CComVariant` class
 
@@ -52,7 +51,7 @@ class CComVariant : public tagVARIANT
 
 ## Remarks
 
-`CComVariant` wraps the `VARIANT` and `VARIANTARG` type, which consists of a union and a member indicating the type of the data stored in the union. VARIANTs are typically used in Automation.
+`CComVariant` wraps the `VARIANT` and `VARIANTARG` type, which consists of a union and a member indicating the type of the data stored in the union. `VARIANT`s are typically used in Automation.
 
 `CComVariant` derives from the `VARIANT` type so it can be used wherever a `VARIANT` can be used. You can, for example, use the `V_VT` macro to extract the type of a `CComVariant` or you can access the `vt` member directly just as you can with a `VARIANT`.
 
@@ -63,7 +62,7 @@ class CComVariant : public tagVARIANT
 
 ## Requirements
 
-**Header:** atlcomcli.h
+**Header:** `atlcomcli.h`
 
 ## <a name="attach"></a> `CComVariant::Attach`
 
@@ -183,7 +182,7 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 [in] The new type for the `CComVariant` object.
 
 *`pSrc`*\
-[in] A pointer to the `VARIANT` whose value is converted to the new type. The default value is NULL, meaning the `CComVariant` object is converted in place.
+[in] A pointer to the `VARIANT` whose value is converted to the new type. The default value is `NULL`, meaning the `CComVariant` object is converted in place.
 
 ### Return value
 
@@ -270,7 +269,7 @@ The contents of the `VARIANT` referenced by *`pDest`* are automatically cleared 
 
 ## <a name="getsize"></a> `CComVariant::GetSize`
 
-For simple-fixed size VARIANTs, this method returns the **`sizeof`** value for the underlying data type plus `sizeof(VARTYPE)`.
+For simple-fixed size `VARIANT`s, this method returns the **`sizeof`** value for the underlying data type plus `sizeof(VARTYPE)`.
 
 ```cpp
 ULONG GetSize() const;
@@ -282,9 +281,9 @@ The size in bytes of the current contents of the `CComVariant` object.
 
 ### Remarks
 
-If the `VARIANT` contains an interface pointer, `GetSize` queries for `IPersistStream` or `IPersistStreamInit`. If successful, the return value is the low-order 32 bits of the value returned by `GetSizeMax` plus `sizeof(CLSID)` and `sizeof(VARTYPE)`. If the interface pointer is NULL, `GetSize` returns `sizeof(CLSID)` plus `sizeof(VARTYPE)`. If the total size is larger than `ULONG_MAX`, `GetSize` returns `sizeof(VARTYPE)`, which indicates an error.
+If the `VARIANT` contains an interface pointer, `GetSize` queries for `IPersistStream` or `IPersistStreamInit`. If successful, the return value is the low-order 32 bits of the value returned by `GetSizeMax` plus `sizeof(CLSID)` and `sizeof(VARTYPE)`. If the interface pointer is `NULL`, `GetSize` returns `sizeof(CLSID)` plus `sizeof(VARTYPE)`. If the total size is larger than `ULONG_MAX`, `GetSize` returns `sizeof(VARTYPE)`, which indicates an error.
 
-In all other cases, a temporary `VARIANT` of type `VT_BSTR` is coerced from the current `VARIANT`. The length of this `BSTR` is calculated as the size of the length of the string plus the length of the string itself plus the size of the null character plus `sizeof(VARTYPE)`. If the `VARIANT` cannot be coerced to a `VARIANT` of type `VT_BSTR`, `GetSize` returns `sizeof(VARTYPE)`.
+In all other cases, a temporary `VARIANT` of type `VT_BSTR` is coerced from the current `VARIANT`. The length of this `BSTR` is calculated as the size of the length of the string plus the length of the string itself plus the size of the `NULL` character plus `sizeof(VARTYPE)`. If the `VARIANT` can’t be coerced to a `VARIANT` of type `VT_BSTR`, `GetSize` returns `sizeof(VARTYPE)`.
 
 The size returned by this method matches the number of bytes used by [`CComVariant::WriteToStream`](#writetostream) under successful conditions.
 

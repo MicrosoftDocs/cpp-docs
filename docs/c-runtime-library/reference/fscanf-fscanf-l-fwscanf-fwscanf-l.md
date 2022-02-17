@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fscanf", "fwscanf", "_ftscanf_l", "_fwscanf_l", "_ftscanf", "_fscanf_l"]
 helpviewer_keywords: ["fscanf function", "fwscanf function", "formatted data [C++], reading from streams", "ftscanf_l function", "_ftscanf_l function", "_fwscanf_l function", "data [CRT], reading from streams", "_fscanf_l function", "ftscanf function", "fscanf_l function", "streams [C++], reading formatted data from", "_ftscanf function", "fwscanf_l function"]
-ms.assetid: 9004e978-6c5f-4bb2-98fd-51e5948933f2
 ---
-# fscanf, _fscanf_l, fwscanf, _fwscanf_l
+# `fscanf`, `_fscanf_l`, `fwscanf`, `_fwscanf_l`
 
-Read formatted data from a stream. More secure versions of these functions are available; see [fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md).
+Read formatted data from a stream. More secure versions of these functions are available; see [`fscanf_s`, `_fscanf_s_l`, `fwscanf_s`, `_fwscanf_s_l`](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md).
 
 ## Syntax
 
@@ -43,47 +42,47 @@ int _fwscanf_l(
 
 ### Parameters
 
-*stream*<br/>
-Pointer to **FILE** structure.
+*`stream`*\
+Pointer to **`FILE`** structure.
 
-*format*<br/>
+*`format`*\
 Format-control string.
 
-*argument*<br/>
+*`argument`*\
 Optional arguments.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return Value
 
-Each of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is **EOF** for **fscanf** and **fwscanf**.
+Each of these functions returns the number of fields successfully converted and assigned; the return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is **`EOF`** for **`fscanf`** and **`fwscanf`**.
 
-These functions validate their parameters. If *stream* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
+These functions validate their parameters. If *`stream`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`EOF`** and set **`errno`** to **`EINVAL`**.
 
 ## Remarks
 
-The **fscanf** function reads data from the current position of *stream* into the locations given by *argument* (if any). Each *argument* must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for **scanf**; see [scanf](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
+The **`fscanf`** function reads data from the current position of *`stream`* into the locations given by *`argument`* (if any). Each *`argument`* must be a pointer to a variable of a type that corresponds to a type specifier in *`format`*. *`format`* controls the interpretation of the input fields and has the same form and function as the *`format`* argument for **`scanf`**; see [`scanf`](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *`format`*.
 
-**fwscanf** is a wide-character version of **fscanf**; the format argument to **fwscanf** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **fscanf** doesn't currently support input from a UNICODE stream.
+**`fwscanf`** is a wide-character version of **`fscanf`**; the format argument to **`fwscanf`** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **`fscanf`** doesn't currently support input from a UNICODE stream.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_ftscanf**|**fscanf**|**fscanf**|**fwscanf**|
-|**_ftscanf_l**|**_fscanf_l**|**_fscanf_l**|**_fwscanf_l**|
+|**`_ftscanf`**|**`fscanf`**|**`fscanf`**|**`fwscanf`**|
+|**`_ftscanf_l`**|**`_fscanf_l`**|**`_fscanf_l`**|**`_fwscanf_l`**|
 
-For more information, see [Format Specification Fields - scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+For more information, see [Format Specification Fields - `scanf` functions and `wscanf` Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|**fscanf**, **_fscanf_l**|\<stdio.h>|
-|**fwscanf**, **_fwscanf_l**|\<stdio.h> or \<wchar.h>|
+|**`fscanf`**, **`_fscanf_l`**|`<stdio.h>`|
+|**`fwscanf`**, **`_fwscanf_l`**|`<stdio.h>` or `<wchar.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -148,9 +147,9 @@ x
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)<br/>
+[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[`_cscanf`, `_cscanf_l`, `_cwscanf`, `_cwscanf_l`](cscanf-cscanf-l-cwscanf-cwscanf-l.md)\
+[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
+[`fscanf_s`, `_fscanf_s_l`, `fwscanf_s`, `_fwscanf_s_l`](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)
