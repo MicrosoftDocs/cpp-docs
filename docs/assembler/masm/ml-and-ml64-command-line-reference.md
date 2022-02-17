@@ -34,7 +34,7 @@ The options listed in the following table:
 | **`/Cx`** | Preserves case in public and extern symbols. |
 | **`/D`** *`symbol`*⟦=*`value`*⟧ | Defines a text macro with the given name *`symbol`*. If *`value`* is missing, it's blank. Multiple tokens separated by spaces must be enclosed in quotation marks. |
 | **`/EP`** | Generates a preprocessed source listing (sent to `STDOUT`). See **`/Sf`**. |
-| **`/ERRORREPORT`** [ **`NONE`** &#124; **`PROMPT`** &#124; **`QUEUE`** &#124; **`SEND`** ] | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
+| **`/ERRORREPORT`** [ **`NONE`** \| **`PROMPT`** \| **`QUEUE`** \| **`SEND`** ] | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 | **`/F`** *`hexnum`* | Sets stack size to *`hexnum`* bytes (the same as **`/link /STACK:<number>`**). The value must be expressed in hexadecimal notation. There must be a space between **`/F`** and *`hexnum`*. |
 | **`/Fe`** *`filename`* | Names the executable file. |
 | **`/Fl`**⟦*`filename`*⟧ | Generates an assembled code listing. See **/Sf**. |
