@@ -94,7 +94,7 @@ When you add an include directory to a project, it's important not to override a
 
 ## Quickly browse and search all properties
 
-The **All Options** property page (under the **Configuration Properties &#124; C/C++** node in the **Property Pages** dialog box) provides a quick way to browse and search the properties that are available in the current context. It has a special search box and a simple syntax to help you filter results:
+The **All Options** property page (under the **Configuration Properties** > **C/C++** node in the **Property Pages** dialog box) provides a quick way to browse and search the properties that are available in the current context. It has a special search box and a simple syntax to help you filter results:
 
 No prefix:\
 Search in property names only (case-insensitive substring).

@@ -181,7 +181,7 @@ class int_4;
 |int_4::operator*=||
 |int_4::operator/=||
 |int_4::operator^=||
-|int_4::operator&#124;=||
+|int_4::operator\|=||
 |int_4::operator~||
 |int_4::operator++||
 |int_4::operator+=||

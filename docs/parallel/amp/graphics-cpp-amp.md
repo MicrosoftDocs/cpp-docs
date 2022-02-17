@@ -16,7 +16,7 @@ C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/
 
 ## The norm and unorm Types
 
-The `norm` and `unorm` types are scalar types that limit the range of **`float`** values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to **`float`** and then clamped to the respective region that's allowed by norm [-1.0, 1.0] or unorm [0.0, 1.0]. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A norm can be implicitly constructed from a unorm and there is no loss of data. The implicit conversion operator to float is defined on these types. Binary operators are defined between these types and other built-in scalar types such as **`float`** and **`int`**: +, -, \*, /, ==, !=, >, \<, >=, <=. The compound assignment operators are also supported: +=, -=, \*=, /=. The unary negation operator (-) is defined for norm types.
+The `norm` and `unorm` types are scalar types that limit the range of **`float`** values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to **`float`** and then clamped to the respective region that's allowed by `norm [-1.0, 1.0]` or `unorm [0.0, 1.0]`. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A `norm` can be implicitly constructed from a `unorm` and there is no loss of data. The implicit conversion operator to **`float`** is defined on these types. Binary operators are defined between these types and other built-in scalar types such as **`float`** and **`int`**: `+`, `-`, `*`, `/`, `==`, `!=`, `>`, `<`, `>=`, `<=`. The compound assignment operators are also supported: `+=`, `-=`, `*=`, `/=`. The unary negation operator (`-`) is defined for `norm` types.
 
 ## Short Vector Library
 
@@ -35,20 +35,20 @@ The Short Vector Library provides some of the functionality of the [Vector Type]
 
 If an operator is defined between two short vectors, then it is also defined between a short vector and a scalar. Also, one of these must be true:
 
-- The scalar’s type must be the same as the short vector’s element type.
+- The scalar's type must be the same as the short vector's element type.
 
-- The scalar’s type can be implicitly converted to the vector’s element type by using only one user-defined conversion.
+- The scalar's type can be implicitly converted to the vector's element type by using only one user-defined conversion.
 
 The operation is carried component-wise between each component of the short vector and the scalar. Here are the valid operators:
 
 |Operator type|Valid types|
 |-------------------|-----------------|
-|Binary operators|Valid on all types: +, -, \*, /,<br /><br /> Valid on integer types: %, ^, &#124;, &, <\<, >><br /><br /> The two vectors must have the same size, and the result is a vector of the same size.|
-|Relational operators|Valid on all types: == and !=|
-|Compound assignment operator|Valid on all types: +=, -=, \*=, /=<br /><br /> Valid on integer types: %=, ^=, &#124;=, &=, <\<=, >>=|
-|Increment and decrement operators|Valid on all types: ++, --<br /><br /> Both prefix and postfix are valid.|
-|Bitwise NOT operator (~)|Valid on integer types.|
-|Unary - operator|Valid on all types except `unorm` and `uint`.|
+|Binary operators|Valid on all types: `+`, `-`, `*`, `/`,<br /><br /> Valid on integer types: `%`, `^`, `|`, `&`, `<<`, `>>`<br /><br /> The two vectors must have the same size, and the result is a vector of the same size.|
+|Relational operators|Valid on all types: `==` and `!=`|
+|Compound assignment operator|Valid on all types: `+=`, `-=`, `*=`, `/=`<br /><br /> Valid on integer types: `%=`, `^=`, `|=`, `&=`, `<<=`, `>>=`|
+|Increment and decrement operators|Valid on all types: `++`, `--`<br /><br /> Both prefix and postfix are valid.|
+|Bitwise NOT operator (`~`)|Valid on integer types.|
+|Unary `-` operator|Valid on all types except `unorm` and `uint`.|
 
 ### Swizzling Expressions
 

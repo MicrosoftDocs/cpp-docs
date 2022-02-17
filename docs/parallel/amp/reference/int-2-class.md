@@ -57,7 +57,7 @@ class int_2;
 |int_2::operator*=||
 |int_2::operator/=||
 |int_2::operator^=||
-|int_2::operator&#124;=||
+|int_2::operator\|=||
 |int_2::operator~||
 |int_2::operator++||
 |int_2::operator+=||

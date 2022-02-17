@@ -22,7 +22,10 @@ MFC hosts a Windows Forms control as a special kind of ActiveX control and commu
 
 ## Reference
 
-[CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md) &#124; [CDialog Class](../mfc/reference/cdialog-class.md) &#124; [CWnd Class](../mfc/reference/cwnd-class.md) &#124; <xref:System.Windows.Forms.Control>
+[`CWinFormsControl` Class](../mfc/reference/cwinformscontrol-class.md)\
+[`CDialog` Class](../mfc/reference/cdialog-class.md)\
+[`CWnd` Class](../mfc/reference/cwnd-class.md)\
+<xref:System.Windows.Forms.Control>
 
 ## See also
 

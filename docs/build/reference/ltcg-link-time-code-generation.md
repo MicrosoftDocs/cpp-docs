@@ -12,18 +12,18 @@ Use **`/LTCG`** to perform whole-program optimization, or to create profile-guid
 
 ## Syntax
 
-> **`/LTCG`**[**`:`**{**`INCREMENTAL`**|**`NOSTATUS`**|**`STATUS`**|**`OFF`**}]
+> **`/LTCG`**[**`:`**{**`INCREMENTAL`**\|**`NOSTATUS`**\|**`STATUS`**\|**`OFF`**}]
 
 These options are deprecated starting in Visual Studio 2015:
 
-> **`/LTCG:`**{**`PGINSTRUMENT`**|**`PGOPTIMIZE`**|**`PGUPDATE`**}
+> **`/LTCG:`**{**`PGINSTRUMENT`**\|**`PGOPTIMIZE`**\|**`PGUPDATE`**}
 
 ### Arguments
 
 **`INCREMENTAL`**<br/>
 (Optional) Specifies that the linker only applies whole program optimization or link-time code generation (LTCG) to files affected by an edit, instead of the entire project. By default, this flag isn't set when **`/LTCG`** is specified, and the entire project is linked by using whole program optimization.
 
-**`NOSTATUS`** &#124; **`STATUS`**<br/>
+**`NOSTATUS`** \| **`STATUS`**<br/>
 (Optional) Specifies whether the linker displays a progress indicator that shows what percentage of the link is complete. By default, this status information isn't displayed.
 
 **`OFF`**<br/>

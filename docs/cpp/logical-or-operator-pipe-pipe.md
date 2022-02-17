@@ -1,12 +1,12 @@
 ---
-title: "Logical OR operator: &#124;&#124;"
+title: "Logical OR operator: ||"
 description: "The C++ standard language logical OR operator syntax and use."
 ms.date: 07/23/2020
 f1_keywords: ["||", "or_cpp"]
 helpviewer_keywords: ["OR operator [C++], logical", "|| operator", "OR operator", "logical OR operator"]
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
 ---
-# Logical OR operator: &#124;&#124;
+# Logical OR operator: `||`
 
 ## Syntax
 
@@ -28,7 +28,7 @@ printf( "%d" , (x == w || x == y || x == z) );
 
 In the above example, if `x` is equal to either `w`, `y`, or `z`, the second argument to the `printf` function evaluates to **`true`**, which is then promoted to an integer, and the value 1 is printed. Otherwise, it evaluates to **`false`** and the value 0 is printed. As soon as one of the conditions evaluates to **`true`**, evaluation stops.
 
-## Operator keyword for &#124;&#124;
+## Operator keyword for `||`
 
 C++ specifies **`or`** as an alternative spelling for **`||`**. In C, the alternative spelling is provided as a macro in the \<iso646.h> header. In C++, the alternative spelling is a keyword; use of \<iso646.h> or the C++ equivalent \<ciso646> is deprecated. In Microsoft C++, the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to enable the alternative spelling.
 

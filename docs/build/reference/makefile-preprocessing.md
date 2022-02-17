@@ -13,7 +13,7 @@ You can control the NMAKE session by using preprocessing directives and expressi
 
 Preprocessing directives aren't case-sensitive. The initial exclamation point (**`!`**) must appear at the beginning of the line. Zero or more spaces or tabs can appear after the exclamation point, for indentation.
 
-- **`!CMDSWITCHES`** { **`+`**_option_ &#124; **`-`**_option_ } ...
+- **`!CMDSWITCHES`** { **`+`**_option_ \| **`-`**_option_ } ...
 
    Turns each listed *option* on or off. Spaces or tabs must appear before the **`+`** or **`-`** operator. No spaces can appear between the operator and the [option letters](running-nmake.md#nmake-options). Letters aren't case-sensitive and are specified without a slash (`/`). To turn on some options and turn off others, use separate specifications of **`!CMDSWITCHES`**.
 
@@ -43,7 +43,7 @@ Preprocessing directives aren't case-sensitive. The initial exclamation point (*
 
    Processes statements between **`!IFNDEF`** and the next **`!ELSE`** or **`!ENDIF`** if *macro_name* isn't defined.
 
-- **`!ELSE`** [ **`IF`** *constant_expression* &#124; **`IFDEF`** *macro_name* &#124; **`IFNDEF`** *macro_name* ]
+- **`!ELSE`** [ **`IF`** *constant_expression* \| **`IFDEF`** *macro_name* \| **`IFNDEF`** *macro_name* ]
 
    Processes statements between **`!ELSE`** and the next **`!ENDIF`** if the prior **`!IF`**, **`!IFDEF`**, or **`!IFNDEF`** statement evaluated to zero. The optional keywords give further control of preprocessing.
 

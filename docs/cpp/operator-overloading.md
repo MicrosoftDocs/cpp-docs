@@ -63,9 +63,9 @@ The name of an overloaded operator is **`operator`** *x*, where *x* is the opera
 |**[ ]**|Array subscript|—|
 |**^**|Exclusive OR|Binary|
 |**^=**|Exclusive OR assignment|Binary|
-|**&#124;**|Bitwise inclusive OR|Binary|
-|**&#124;=**|Bitwise inclusive OR assignment|Binary|
-|**&#124;&#124;**|Logical OR|Binary|
+|**\|**|Bitwise inclusive OR|Binary|
+|**\|=**|Bitwise inclusive OR assignment|Binary|
+|**\|\|**|Logical OR|Binary|
 |**~**|One's complement|Unary|
 |**`delete`**|Delete|—|
 |**`new`**|New|—|

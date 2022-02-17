@@ -125,7 +125,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 4) C4336](../../error-messages/compiler-warnings/compiler-warning-level-4-c4336.md)|import cross-referenced type library '*library1*' before importing '*library2*'|
 |[Compiler warning (level 4) C4337](../../error-messages/compiler-warnings/compiler-warning-level-4-c4337.md)|cross-referenced type library '*library1*' in '*library2*' is being automatically imported|
 |Compiler warning (level 4) C4338|#pragma *directive*: standard section '*section*' is used|
-|[Compiler warning (level 4) C4339](../../error-messages/compiler-warnings/compiler-warning-level-4-c4339.md)|'*type*': use of undefined type detected in 'WinRT&#124;CLR' meta-data - use of this type may lead to a runtime exception|
+|[Compiler warning (level 4) C4339](../../error-messages/compiler-warnings/compiler-warning-level-4-c4339.md)|'*type*': use of undefined type detected in 'WinRT\|CLR' meta-data - use of this type may lead to a runtime exception|
 |[Compiler warning (level 1) C4340](../../error-messages/compiler-warnings/compiler-warning-level-1-c4340.md)|'*value*': value wrapped from positive to negative value|
 |[Compiler warning (level 1) C4342](../../error-messages/compiler-warnings/compiler-warning-level-1-c4342.md)|behavior change: '*function*' called, but a member operator was called in previous versions|
 |[Compiler warning (level 4) C4343](compiler-warning-level-4-c4343.md)|#pragma optimize("g",off) overrides /Og option|
