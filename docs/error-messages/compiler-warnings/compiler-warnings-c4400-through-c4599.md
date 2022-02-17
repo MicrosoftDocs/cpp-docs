@@ -25,7 +25,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4405](../../error-messages/compiler-warnings/compiler-warning-level-1-c4405.md)|'*identifier*': identifier is reserved word|
 |[Compiler warning (level 1) C4406](../../error-messages/compiler-warnings/compiler-warning-level-1-c4406.md)|operand on directive ignored|
 |[Compiler warning (level 1) C4407](../../error-messages/compiler-warnings/compiler-warning-level-1-c4407.md)|cast between different pointer to member representations, compiler may generate incorrect code|
-|[Compiler warning (level 4) C4408](../../error-messages/compiler-warnings/compiler-warning-level-4-c4408.md)|anonymous 'struct&#124;union' did not declare any data members|
+|[Compiler warning (level 4) C4408](../../error-messages/compiler-warnings/compiler-warning-level-4-c4408.md)|anonymous 'struct\|union' did not declare any data members|
 |[Compiler warning (level 1) C4409](../../error-messages/compiler-warnings/compiler-warning-level-1-c4409.md)|illegal instruction size|
 |[Compiler warning (level 1) C4410](../../error-messages/compiler-warnings/compiler-warning-level-1-c4410.md)|illegal size for operand|
 |[Compiler warning (level 1) C4411](../../error-messages/compiler-warnings/compiler-warning-level-1-c4411.md)|'*identifier*': symbol resolves to displacement register|
@@ -58,7 +58,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1) C4442|embedded null terminator in __annotation argument.  Value will be truncated.|
 |Compiler warning (level 1) C4443|expected pragma parameter to be '0', '1', or '2'|
 |Compiler warning (level 3) C4444|'*identifier*': top level '__unaligned' is not implemented in this context|
-|[Compiler warning (level 1) C4445](../../error-messages/compiler-warnings/compiler-warning-level-1-c4445.md)|'*function*': in a 'WinRT&#124;managed' type a virtual method cannot be private|
+|[Compiler warning (level 1) C4445](../../error-messages/compiler-warnings/compiler-warning-level-1-c4445.md)|'*function*': in a 'WinRT\|managed' type a virtual method cannot be private|
 |Compiler warning (level 1) C4446|'*type*': cannot map member '*name1*' into this type, due to conflict with the type name. The method was renamed to '*name2*'|
 |Compiler warning (level 1) C4447|'main' signature found without threading model. Consider using 'int main(Platform::Array\<Platform::String^>^ args)'.|
 |Compiler warning C4448|'*type*1' does not have a default interface specified in metadata. Picking: '*type2*', which may fail at runtime.|
@@ -73,14 +73,14 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 4) C4457](compiler-warning-level-4-c4457.md)|declaration of '*identifier*' hides function parameter|
 |[Compiler warning (level 4) C4458](compiler-warning-level-4-c4458.md)|declaration of '*identifier*' hides class member|
 |[Compiler warning (level 4) C4459](compiler-warning-level-4-c4459.md)|declaration of '*identifier*' hides global declaration|
-|[Compiler warning (level 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|'WinRT&#124;managed' operator '*operator*', has parameter passed by reference. 'WinRT&#124;managed' operator '*operator*' has different semantics from C++ operator '*cpp_operator*', did you intend to pass by value?|
+|[Compiler warning (level 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|'WinRT\|managed' operator '*operator*', has parameter passed by reference. 'WinRT\|managed' operator '*operator*' has different semantics from C++ operator '*cpp_operator*', did you intend to pass by value?|
 |[Compiler warning (level 1) C4461](../../error-messages/compiler-warnings/compiler-warning-level-1-c4461.md)|'*classname*': this class has a finalizer '!*finalizer*' but no destructor '~*dtor*'|
 |[Compiler warning (level 1, Error) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|
 |[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|
 |[Compiler warning (level 4) C4464](../../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md)|relative include path contains '..'|
 |[Compiler warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|
 |[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|
-|Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT&#124;managed' enum|
+|Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT\|managed' enum|
 |[Compiler warning (level 1) C4473](c4473.md)|'*function*' : not enough arguments passed for format string|
 |Compiler warning (level 3) C4474|'*function*' : too many arguments passed for format string|
 |Compiler warning (level 3) C4475|'*function*' : length modifier '*modifier*' cannot be used with type field character '*character*' in format specifier|
