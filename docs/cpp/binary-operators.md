@@ -42,9 +42,9 @@ The following table shows a list of operators that can be overloaded.
 |**>>=**|Right shift/assignment|
 |**^**|Exclusive OR|
 |**^=**|Exclusive OR/assignment|
-|**&#124;**|Bitwise inclusive OR|
-|**&#124;=**|Bitwise inclusive OR/assignment|
-|**&#124;&#124;**|Logical OR|
+|**\|**|Bitwise inclusive OR|
+|**\|=**|Bitwise inclusive OR/assignment|
+|**\|\|**|Logical OR|
 
 To declare a binary operator function as a nonstatic member, you must declare it in the form:
 

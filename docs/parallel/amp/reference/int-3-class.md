@@ -81,7 +81,7 @@ class int_3;
 |int_3::operator*=||
 |int_3::operator/=||
 |int_3::operator^=||
-|int_3::operator&#124;=||
+|int_3::operator\|=||
 |int_3::operator~||
 |int_3::operator++||
 |int_3::operator+=||

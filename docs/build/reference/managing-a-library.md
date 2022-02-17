@@ -40,7 +40,7 @@ Overrides the default output filename. By default, the output library is created
 **/REMOVE:** *object*<br/>
 Omits the specified *object* from the output library. LIB creates an output library by combining all objects (whether in object files or libraries), and then deleting any objects specified with /REMOVE.
 
-**/SUBSYSTEM:**{**CONSOLE** &#124; **EFI_APPLICATION** &#124; **EFI_BOOT_SERVICE_DRIVER** &#124; **EFI_ROM** &#124; **EFI_RUNTIME_DRIVER** &#124; **NATIVE** &#124; **POSIX** &#124; **WINDOWS** &#124; **WINDOWSCE**}[,#[.##]]<br/>
+**/SUBSYSTEM:**{**CONSOLE** \| **EFI_APPLICATION** \| **EFI_BOOT_SERVICE_DRIVER** \| **EFI_ROM** \| **EFI_RUNTIME_DRIVER** \| **NATIVE** \| **POSIX** \| **WINDOWS** \| **WINDOWSCE**}[,#[.##]]<br/>
 Tells the operating system how to run a program created by linking to the output library. For more information, see the description of the LINK [/SUBSYSTEM](subsystem-specify-subsystem.md) option.
 
 LIB options specified on the command line are not case sensitive.

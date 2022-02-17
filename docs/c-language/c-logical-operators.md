@@ -17,7 +17,7 @@ The logical operators perform logical-AND (**&&**) and logical-OR (**||**) opera
 
 *logical-OR-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*logical-AND-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*logical-OR-expression*  **&#124;&#124;**  *logical-AND-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*logical-OR-expression*  **\|\|**  *logical-AND-expression*
 
 ## Remarks
 
@@ -28,7 +28,7 @@ The C logical operators are described below:
 |Operator|Description|
 |--------------|-----------------|
 |**&&**|The logical-AND operator produces the value 1 if both operands have nonzero values. If either operand is equal to 0, the result is 0. If the first operand of a logical-AND operation is equal to 0, the second operand is not evaluated.|
-|**&#124;&#124;**|The logical-OR operator performs an inclusive-OR operation on its operands. The result is 0 if both operands have 0 values. If either operand has a nonzero value, the result is 1. If the first operand of a logical-OR operation has a nonzero value, the second operand is not evaluated.|
+|**\|\|**|The logical-OR operator performs an inclusive-OR operation on its operands. The result is 0 if both operands have 0 values. If either operand has a nonzero value, the result is 1. If the first operand of a logical-OR operation has a nonzero value, the second operand is not evaluated.|
 
 The operands of logical-AND and logical-OR expressions are evaluated from left to right. If the value of the first operand is sufficient to determine the result of the operation, the second operand is not evaluated. This is called "short-circuit evaluation." There is a sequence point after the first operand. See [Sequence Points](../c-language/c-sequence-points.md) for more information.
 
@@ -54,4 +54,4 @@ In this example, if `x` is equal to either `w`, `y`, or `z`, the second argument
 ## See also
 
 - [Logical AND Operator: &&](../cpp/logical-and-operator-amp-amp.md)
-- [Logical OR Operator: &#124;&#124;](../cpp/logical-or-operator-pipe-pipe.md)
+- [Logical OR Operator: \|\|](../cpp/logical-or-operator-pipe-pipe.md)

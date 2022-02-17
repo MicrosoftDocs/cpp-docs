@@ -49,13 +49,13 @@ Binary operators act on two operands in an expression. The binary operators are:
 
   - [Bitwise exclusive OR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
 
-  - [Bitwise inclusive OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
+  - [Bitwise inclusive OR (\|)](../cpp/bitwise-inclusive-or-operator-pipe.md)
 
 - Logical operators
 
   - [Logical AND (&&)](../cpp/logical-and-operator-amp-amp.md)
 
-  - [Logical OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
+  - [Logical OR (\|\|)](../cpp/logical-or-operator-pipe-pipe.md)
 
 - [Assignment operators](../cpp/assignment-operators.md)
 
@@ -79,7 +79,7 @@ Binary operators act on two operands in an expression. The binary operators are:
 
   - Bitwise exclusive OR assignment (^=)
 
-  - Bitwise inclusive OR assignment (&#124;=)
+  - Bitwise inclusive OR assignment (\|=)
 
 - [Comma Operator](../cpp/comma-operator.md) (,)
 

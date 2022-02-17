@@ -134,7 +134,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (Level 1) C4742](../../error-messages/compiler-warnings/compiler-warning-level-1-c4742.md)|'var' has different alignment in 'file1' and 'file2': number and number|
 |[Compiler warning (Level 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type' has different size in 'file1' and 'file2': number and number bytes|
 |[Compiler warning (Level 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var' has different type in 'file1' and 'file2': 'type1' and 'type2'|
-|[Compiler warning C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile access of '*expression*' is subject to /volatile:\<iso&#124;ms> setting; consider using __iso_volatile_load/store intrinsic functions|
+|[Compiler warning C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile access of '*expression*' is subject to /volatile:\<iso\|ms> setting; consider using __iso_volatile_load/store intrinsic functions|
 |[Compiler warning (level 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|Calling managed 'entrypoint': Managed code may not be run under loader lock, including the DLL entrypoint and calls reached from the DLL entrypoint|
 |Compiler warning (level 4) C4749|conditionally supported: offsetof applied to non-standard-layout type '*type*'|
 |[Compiler warning (level 1) C4750](compiler-warning-level-1-c4750.md)|'identifier': function with _alloca() inlined into a loop|

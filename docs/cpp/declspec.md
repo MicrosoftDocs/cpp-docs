@@ -38,7 +38,7 @@ The extended attribute syntax for specifying storage-class information uses the 
 &emsp;**`novtable`**\
 &emsp;**`no_sanitize_address`**\
 &emsp;**`process`**\
-&emsp;**`property(`** { **`get=`**_get-func-name_ &#124; **`,put=`**_put-func-name_ } **`)`**\
+&emsp;**`property(`** { **`get=`**_get-func-name_ \| **`,put=`**_put-func-name_ } **`)`**\
 &emsp;**`restrict`**\
 &emsp;**`safebuffers`**\
 &emsp;**`selectany`**\

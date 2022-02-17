@@ -27,7 +27,7 @@ NMAKE options are described in the following table. Options are preceded by eith
 | **`/C`** | Suppresses default output, including nonfatal NMAKE errors or warnings, timestamps, and NMAKE copyright message. Suppresses warnings issued by **`/K`**. |
 | **`/D`** | Displays timestamps of each evaluated target and dependent and a message when a target doesn't exist. Useful with **`/P`** for debugging a makefile. Use `!CMDSWITCHES` to set or clear **`/D`** for part of a makefile. |
 | **`/E`** | Causes environment variables to override makefile macro definitions. |
-| **`/ERRORREPORT`** [ **`NONE`** &#124; **`PROMPT`** &#124; **`QUEUE`** &#124; **`SEND`** ] | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control reporting. |
+| **`/ERRORREPORT`** [ **`NONE`** \| **`PROMPT`** \| **`QUEUE`** \| **`SEND`** ] | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control reporting. |
 | **`/F`** *filename* | Specifies *filename* as a makefile. Spaces or tabs can precede *filename*. Specify **`/F`** once for each makefile. To supply a makefile from standard input, specify a dash (`-`) for *filename*, and end keyboard input with either **F6** or **CTRL+Z**. |
 | **`/G`** | Displays the makefiles included with the `!INCLUDE` directive. For more information, see [Makefile preprocessing directives](makefile-preprocessing.md#makefile-preprocessing-directives). |
 | **`/HELP`**, **`/?`** | Displays a brief summary of NMAKE command-line syntax. |
