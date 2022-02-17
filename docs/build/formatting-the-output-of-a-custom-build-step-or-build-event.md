@@ -19,11 +19,11 @@ If the output of a custom build step or build event is formatted correctly, user
 
 The format of the output should be:
 
-> {<em>filename</em>**(**<em>line#</em> \[**,** <em>column#</em>]**)** &#124; *toolname*} **:** \[ <em>any text</em> ] {**error** &#124; **warning**} <em>code+number</em>**:**<em>localizable string</em> \[ <em>any text</em> ]
+> {<em>filename</em>**(**<em>line#</em> \[**,** <em>column#</em>]**)** \| *toolname*} **:** \[ <em>any text</em> ] {**error** \| **warning**} <em>code+number</em>**:**<em>localizable string</em> \[ <em>any text</em> ]
 
 Where:
 
-- {*a* &#124; *b*} is a choice of either *a* or *b*.
+- {*a* \| *b*} is a choice of either *a* or *b*.
 
 - \[<em>item</em>] is an optional string or parameter.
 

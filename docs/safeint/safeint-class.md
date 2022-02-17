@@ -152,11 +152,11 @@ The type of integer or Boolean parameter for the secondary operand.
 | ^=       |  `SafeInt<T,E>& operator^= (SafeInt<T,E> rhs) throw()` |
 | ^=       |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator^= (U rhs) throw()` |
 | ^=       |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator^= (SafeInt<U, E> rhs) throw()` |
-| &#124;   |  `SafeInt<T,E> operator&#124; (SafeInt<T,E> rhs) const throw()` |
-| &#124;   |  `template<typename U>`<br /><br /> `SafeInt<T,E> operator&#124; (U rhs) const throw()` |
-| &#124;=  |  `SafeInt<T,E>& operator&#124;= (SafeInt<T,E> rhs) throw()` |
-| &#124;=  |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator&#124;= (U rhs) throw()` |
-| &#124;=  |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator&#124;= (SafeInt<U, E> rhs) throw()` |
+| \|   |  `SafeInt<T,E> operator| (SafeInt<T,E> rhs) const throw()` |
+| \|   |  `template<typename U>`<br /><br /> `SafeInt<T,E> operator| (U rhs) const throw()` |
+| \|=  |  `SafeInt<T,E>& operator|= (SafeInt<T,E> rhs) throw()` |
+| \|=  |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator|= (U rhs) throw()` |
+| \|=  |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator|= (SafeInt<U, E> rhs) throw()` |
 
 ## Remarks
 

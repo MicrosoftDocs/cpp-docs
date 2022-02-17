@@ -47,7 +47,7 @@ There are a number of predefined accelerator keys that may be part of a Windows 
 |VK_OEM_2|(Windows) For the US standard keyboard, the **/?** key|
 |VK_OEM_3|(Windows) For the US standard keyboard, the **`~** key|
 |VK_OEM_4|(Windows) For the US standard keyboard, the **[{** key|
-|VK_OEM_5|(Windows) For the US standard keyboard, the **\\&#124;** key|
+|VK_OEM_5|(Windows) For the US standard keyboard, the **\\ \|** key|
 |VK_OEM_6|(Windows) For the US standard keyboard, the **]}** key|
 |VK_OEM_7|(Windows) For the US standard keyboard, the 'single-quote/double-quote' key|
 |VK_OEM_COMMA|(Windows) For any country/region, the **,** key|

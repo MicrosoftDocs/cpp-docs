@@ -237,7 +237,7 @@ Under **/Ze**, you have to include iso646.h if you want to use text forms of the
 
 - & (bitand)
 
-- &#124; (bitor)
+- \| (bitor)
 
 - ~ (compl)
 
@@ -245,9 +245,9 @@ Under **/Ze**, you have to include iso646.h if you want to use text forms of the
 
 - != (not_eq)
 
-- &#124;&#124; (or)
+- \|\| (or)
 
-- &#124;= (or_eq)
+- \|= (or_eq)
 
 - ^ (xor)
 
