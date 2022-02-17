@@ -73,20 +73,20 @@ a and day2 are the same
 
 The following operators are valid on enums in C++/CLI:
 
-|Operator|
-|--------------|
-|== != \< > \<= >=|
-|+ -|
-|&#124; ^ & ~|
-|++ --|
-|sizeof|
+| Operator |
+|--|
+| `==` `!=` `<` `>` `<=` `>=` |
+| `+` `-` |
+| `|` `^` `&` `~` |
+| `++` `--` |
+| `sizeof` |
 
-Operators &#124; ^ & ~ ++ -- are defined only for enumerations with integral underlying types, not including bool.  Both operands must be of the enumeration type.
+Operators `|`, `^`, `&`, `~`, `++`, and `--` are defined only for enumerations with integral underlying types, not including `bool`.  Both operands must be of the enumeration type.
 
 The compiler does no static or dynamic checking of the result of an enum operation; an operation may result in a value not in the range of the enum's valid enumerators.
 
 > [!NOTE]
-> C++11 introduces enum class types in unmanaged code which are significantly different than managed enum classes in C++/CLI. In particular, the C++11 enum class type does not support the same operators as the managed enum class type in C++/CLI, and C++/CLI source code must provide an accessibility specifier in managed enum class declarations in order to distinguish them from unmanaged (C++11) enum class declarations. For more information about enum classes in C++/CLI, C++/CX, and C++11, see [enum class](../extensions/enum-class-cpp-component-extensions.md).
+> C++11 introduces `enum class` types in unmanaged code which are significantly different than managed `enum class` types in C++/CLI. In particular, the C++11 `enum class` type does not support the same operators as the managed `enum class` type in C++/CLI, and C++/CLI source code must provide an accessibility specifier in managed enum class declarations in order to distinguish them from unmanaged (C++11) `enum class` declarations. For more information about `enum class` use in C++/CLI, C++/CX, and C++11, see [enum class](../extensions/enum-class-cpp-component-extensions.md).
 
 ```cpp
 // mcppv2_enum_5.cpp
