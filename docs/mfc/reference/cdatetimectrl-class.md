@@ -310,9 +310,9 @@ A pointer to the [`SYSTEMTIME`](/windows/win32/api/minwinbase/ns-minwinbase-syst
 
 ### Return Value
 
-In the first version, nonzero if the time is successfully written to the `COleDateTime` object; otherwise 0. In the second and third versions, a `DWORD` value equal to the *`dwFlag`* member set in the [`NMDATETIMECHANGE`](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) structure. See the **Remarks** section below for more information.
+In the first version, nonzero if the time is successfully written to the `COleDateTime` object; otherwise 0. In the second and third versions, a `DWORD` value equal to the *`dwFlag`* member set in the [`NMDATETIMECHANGE`](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) structure. See the [**Remarks**](#gettime-remarks) section below for more information.
 
-### Remarks
+### <a name="gettime-remarks"></a> Remarks
 
 This member function implements the behavior of the Win32 message [`DTM_GETSYSTEMTIME`](/windows/win32/Controls/dtm-getsystemtime), as described in the Windows SDK. In the MFC implementation of `GetTime`, you can use `COleDateTime` or `CTime` classes, or you can use a `SYSTEMTIME` structure, to store the time information.
 

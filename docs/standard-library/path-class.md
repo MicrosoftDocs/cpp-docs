@@ -633,7 +633,7 @@ static constexpr value_type preferred_separator == '/';
 
 ### Remarks
 
-Note that it's equally permissible in most contexts under Windows to use L'/' in its place.
+Note that it's equally permissible in most contexts under Windows to use `L'/'` in its place.
 
 ## <a name="relative_path"></a> `path::relative_path`
 
@@ -670,7 +670,7 @@ The new extension.
 
 ### Remarks
 
-First removes the suffix `extension().native()` from `myname`. Then if `!newext.empty() && newext[0] != dot` (where `dot` is `*path(".").c_str()`), then `dot` is appended to `myname`. Then *`newext`* is appended to `myname`.
+First removes the suffix `extension().native()` from `myname`. Then if `!newext.empty() && newext[0] != dot` (where *dot* is `*path(".").c_str()`), then *dot* is appended to `myname`. Then *`newext`* is appended to `myname`.
 
 ## <a name="replace_filename"></a> `path::replace_filename`
 

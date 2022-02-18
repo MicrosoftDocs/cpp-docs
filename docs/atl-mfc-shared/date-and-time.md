@@ -10,7 +10,7 @@ MFC supports several different ways of working with dates and times:
 
 - Support for the Automation [`DATE` data type](../atl-mfc-shared/date-type.md). `DATE` supports date, time, and date/time values. The [`COleDateTime`](../atl-mfc-shared/reference/coledatetime-class.md) and [`COleDateTimeSpan`](../atl-mfc-shared/reference/coledatetimespan-class.md) classes encapsulate this functionality. They work with the [`COleVariant`](../mfc/reference/colevariant-class.md) class using Automation support.
 
-- General-purpose time classes. The [`CTime`](../atl-mfc-shared/reference/ctime-class.md) and [`CTimeSpan`](../atl-mfc-shared/reference/ctimespan-class.md) classes encapsulate most of the functionality associated with the ANSI-standard time library, which is declared in `TIME`.H.
+- General-purpose time classes. The [`CTime`](../atl-mfc-shared/reference/ctime-class.md) and [`CTimeSpan`](../atl-mfc-shared/reference/ctimespan-class.md) classes encapsulate most of the functionality associated with the ANSI-standard time library, which is declared in `time.h`.
 
 - Support for system clock. With MFC version 3.0, support was added to `CTime` for the Win32 `SYSTEMTIME` and `FILETIME` data types.
 
@@ -80,7 +80,7 @@ Starting in version 4.0, MFC database programming uses the [`COleDateTime`](../a
 
 ## Date and Time: `SYSTEMTIME` Support
 
-The [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) class has constructors that accept system and file times from Win32.
+The [`COleDateTime`](../atl-mfc-shared/reference/coledatetime-class.md) class has constructors that accept system and file times from Win32.
 
 The Win32 `FILETIME` structure represents time as a 64-bit value. It's a more convenient format for internal storage than a `SYSTEMTIME` structure, and the format used by Win32 to represent the time of file creation. For information about the `SYSTEMTIME` structure, see [`SYSTEMTIME`](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime). For information about the `FILETIME` structure, see [`FILETIME`](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 

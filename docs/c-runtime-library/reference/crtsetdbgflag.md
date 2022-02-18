@@ -88,7 +88,7 @@ The upper 16 bits of the *`newFlag`* parameter are ignored when `_CRTDBG_CHECK_A
 
 1. Turn on any bits by a bitwise "or" (`|`) of the temporary variable with the corresponding bitmasks (represented in the application code by manifest constants).
 
-1. Turn off the other bits by **AND**-ing the variable with a bitwise "not" (`~`) of the appropriate bitmasks.
+1. Turn off the other bits with a bitwise "and" (`&`) of the variable with a bitwise "not" (`~`) of the appropriate bitmasks.
 
 1. Call **`_CrtSetDbgFlag`** with *`newFlag`* equal to the value stored in the temporary variable to set the new state for **`_crtDbgFlag`**.
 
@@ -113,7 +113,7 @@ _CrtSetDbgFlag( tmpFlag );
 
 For an overview of memory management and the debug heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
 
-To disable a flag with the **`_CrtSetDbgFlag`** function, you should **AND** the variable with the bitwise "not" (`~`) of the bitmask.
+To disable a flag with the **`_CrtSetDbgFlag`** function, use a bitwise "and" (`&`) of the variable with the bitwise "not" (`~`) of the bitmask.
 
 If *`newFlag`* isn't a valid value, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns the previous state of **`_crtDbgFlag`**.
 

@@ -481,7 +481,7 @@ void clear();
 
 ### Remarks
 
-The member function calls `unordered_set::erase( unordered_set::begin(), unordered_set::end())`. For more information, see [unordered_set::erase](#erase), [unordered_set::begin](#begin), and [unordered_set::end](#end).
+The member function calls `unordered_set::erase( unordered_set::begin()`, `unordered_set::end())`. For more information, see [`unordered_set::erase`](#erase), [`unordered_set::begin`](#begin), and [`unordered_set::end`](#end).
 
 ### Example
 
