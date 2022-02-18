@@ -1,8 +1,8 @@
 ---
 title: "/Zc:preprocessor (Enable preprocessor conformance mode)"
 description: "Use the /Zc:preprocessor compiler option to enable compiler support for a standard conforming preprocessor."
-ms.date: 09/10/2020
-f1_keywords: ["preprocessor", "/Zc:preprocessor"]
+ms.date: 02/17/2022
+f1_keywords: ["preprocessor", "/Zc:preprocessor", "VC.Project.VCCLCompilerTool.PreprocessorStandard"]
 helpviewer_keywords: ["preprocessor conformance", "/Zc:preprocessor", "Enable preprocessor conformance mode"]
 ---
 # `/Zc:preprocessor` (Enable preprocessor conformance mode)
@@ -11,7 +11,7 @@ This option enables a token-based preprocessor that conforms to C99 and C++11 an
 
 ## Syntax
 
-> **`/Zc:preprocessor`**[**-**]
+> **`/Zc:preprocessor`**[**`-`**]
 
 ## Remarks
 
@@ -23,9 +23,9 @@ The **`/Zc:preprocessor`** option is available starting in Visual Studio 2019 ve
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Preprocessor** property page.
 
-1. Modify the **Additional Options** property to include *`/Zc:preprocessor`* and then choose **OK**.
+1. Modify the **Use Standard Conforming Preprocessor** property and then choose **OK**.
 
 ## See also
 

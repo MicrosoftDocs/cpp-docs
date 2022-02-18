@@ -1,10 +1,10 @@
 ---
 title: "/translateInclude"
 description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
-ms.date: 02/11/2022
+ms.date: 02/17/2022
 author: "tylermsft"
 ms.author: "twhitney"
-f1_keywords: ["/translateInclude"]
+f1_keywords: ["/translateInclude", "VC.Project.VCCLCompilerTool.TranslateIncludes"]
 helpviewer_keywords: ["/translateInclude", "Translate include directives into import directives"]
 ---
 # `/translateInclude`
@@ -32,9 +32,13 @@ For an example of how this switch is used, see [Walkthrough: Build and import he
 
 To enable `/translateInclude`, in the project properties dialog, set **Translate Includes to Imports**:
 
-1. In the left-hand pane of the project property pages, select **Configuration Properties** > **C/C++** > **General**
-1. Change the **Translate Includes to Imports** dropdown to **Yes**
-![Screenshot of the Property Pages dialog with the Translate Includes to Imports property highlighted.](../media/vs2019-translate-includes-option.png)
+1. In the left-hand pane of the project property pages, select **Configuration Properties** > **C/C++** > **General**.
+
+1. Change the **Translate Includes to Imports** dropdown to **Yes**.
+
+   ![Screenshot of the Property Pages dialog with the Translate Includes to Imports property highlighted.](../media/vs2019-translate-includes-option.png)
+
+1. Choose **OK** or **Apply** to save your changes.
 
 ## See also
 
