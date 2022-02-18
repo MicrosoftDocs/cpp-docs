@@ -37,7 +37,7 @@ Include files can be *nested*: An **`#include`** directive can appear in a file 
 
 When include files are nested and when compiling occurs on the command line, directory searching begins in the directory of the parent file. Then it proceeds through the directories of any grandparent files. That is, searching begins relative to the directory that contains the source that's currently being processed. If the file isn't found, the search moves to directories that are specified by the [`/I` (Additional include directories)](../build/reference/i-additional-include-directories.md) compiler option. Finally, the directories that are specified by the `INCLUDE` environment variable are searched.
 
-Within the Visual Studio development environment, the `INCLUDE` environment variable is ignored. The values specified in the project properties for include directories are used instead. For more information about how to set the include directories in Visual Studio, see [Include Directories](../build/reference/vcpp-directories-property-page.md#directory-types) and [Additional Include Directories](../build/reference/c-cpp-prop-page.md#additional-include-directories).
+Within the Visual Studio development environment, the `INCLUDE` environment variable is ignored. The values specified in the project properties for include directories are used instead. For more information about how to set the include directories in Visual Studio, see [Include Directories](../build/reference/vcpp-directories-property-page.md#general) and [Additional Include Directories](../build/reference/c-cpp-prop-page.md#additional-include-directories).
 
 This example shows file inclusion by using angle brackets:
 

@@ -75,8 +75,7 @@ Directories in which to search for executable files. Corresponds to the **`PATH`
 Directories in which to search for include files that are referenced in the source code. Corresponds to the **`INCLUDE`** environment variable.
 
 **External Include Directories**\
-Paths for include files to treat as external or system files during compilation. These files are skipped in build up-to-date checks. These paths are also used by the [External Includes](./c
-) properties. For more information on how to set these options in the IDE, see the [`/external`](../../build/reference/external-external-headers-diagnostics.md) compiler option.
+Paths for include files to treat as external or system files during compilation. These files are skipped in build up-to-date checks. These paths are also used by the [External Includes](c-cpp-prop-page.md#external-includes) properties. For more information on how to set these options in the IDE, see the [`/external`](../../build/reference/external-external-headers-diagnostics.md) compiler option.
 
 **Reference Directories**\
 Directories in which to search for assembly and module (metadata) files that are referenced in the source code by the [#using](../../preprocessor/hash-using-directive-cpp.md) directive. Corresponds to the **`LIBPATH`** environment variable.
