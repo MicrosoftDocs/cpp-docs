@@ -1,8 +1,8 @@
 ---
 title: "/external (External headers diagnostics)"
 description: "The Microsoft C++ compiler /external headers diagnostic options syntax and usage."
-ms.date: 07/02/2021
-f1_keywords: ["/external", "/external:anglebrackets", "/external:env:", "/external:I", "/external:W0", "/external:W1", "/external:W2", "/external:W3", "/external:W4", "/external:templates-", "/experimental:external"]
+ms.date: 02/17/2022
+f1_keywords: ["/external", "/external:anglebrackets", "/external:env:", "/external:I", "/external:W0", "/external:W1", "/external:W2", "/external:W3", "/external:W4", "/external:templates-", "/experimental:external", "VC.Project.VCCLCompilerTool.ExternalDirectoriesEnv", "VC.Project.VCCLCompilerTool.ExternalIncludeDirectories", "VC.Project.VCCLCompilerTool.ExternalWarningLevel", "VC.Project.VCCLCompilerTool.TreatExternalTemplatesAsInternal"]
 helpviewer_keywords: ["/external compiler option [C++]", "-external compiler option [C++]", "external compiler option [C++]"]
 ---
 # `/external` (External headers diagnostics)
@@ -18,7 +18,7 @@ Use external header options (Not required in 16.10 and later):
 
 Specify external headers:
 > **`/external:anglebrackets`**\
-> **`/external:env:`**_`var`_\
+> **`/external:env:`***`var`*\
 > **`/external:I`** *`path`*
 
 Specify diagnostics behavior:
@@ -40,7 +40,7 @@ Treats all headers included by `#include <header>`, where the *`header`* file is
 **`/external:I`** *`path`*\
 Defines a root directory that contains external headers. All recursive subdirectories of *`path`* are considered external, but only the *`path`* value is added to the list of directories the compiler searches for include files. The space between **`/external:I`** and *`path`* is optional. Directories that include spaces must be enclosed in double quotes. A directory may be an absolute path or a relative path.
 
-**`/external:env:`**_`var`_\
+**`/external:env:`***`var`*\
 Specifies the name of an environment variable *`var`* that holds a semicolon-separated list of external header directories. It's useful for build systems that rely on environment variables such as `INCLUDE`, which you use to specify the list of external include files. Or, `CAExcludePath`, for files that shouldn't be analyzed by `/analyze`. For example, you can specify `/external:env:INCLUDE` to make every directory in `INCLUDE` an external header directory at once. It's the same as using **`/external:I`** to specify the individual directories, but much less verbose. There should be no space between *`var`* and **`/external:env:`**.
 
 **`/external:Wn`**\
@@ -97,7 +97,7 @@ cl /EHsc /I include_dir /W4 program.cpp
 
 As expected, this sample generates a warning:
 
-```console
+```Output
 program.cpp
 include_dir\header_file.h(6): warning C4245: 'initializing': conversion from 'int' to 'const T', signed/unsigned mismatch
         with
@@ -167,17 +167,41 @@ Some warnings emitted by the compiler's back-end code generation aren't affected
 
 ### To set this compiler option in the Visual Studio development environment
 
+In Visual Studio 2019 version 16.10 and later:
+
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+
+1. Select the **Configuration Properties** > **VC++ Directories** property page.
+
+1. Set the **External Include Directories** property to specify the IDE equivalent of the **`/external:I path`** option for each semicolon-delimited path.
+
+1. Select the **Configuration Properties** > **C/C++** > **External Includes** property page.
+
+1. Set properties:
+
+   - Set **Treat Files Included with Angle Brackets as External** to **Yes** to set the **`/external:anglebrackets`** option.
+
+   - **External Header Warning Level** allows you to set the **`/external:Wn`** option. If this value is set to **Inherit Project Warning Level** or the default, other **`/external`** options are ignored.
+
+   - Set **Template Diagnostics in External Headers** to **Yes** to set the **`/external:templates-`** option.
+
+1. Choose **OK** or **Apply** to save your changes.
+
+In versions of Visual Studio before Visual Studio 2019 version 16.10:
+
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Enter the compiler options[\*](#note_experimental) in the **Additional Options** box.
+1. Enter the **`/experimental:external`** option and other **`/external`** compiler options in the **Additional Options** box.
+
+1. Choose **OK** or **Apply** to save your changes.
 
 ### To set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-<a name="note_experimental"></a>\* Add the `/experimental:external` option to enable the external headers options in versions of Visual Studio before Visual Studio 2019 version 16.10.
+<a name="note_experimental"></a>\* Add the **`/experimental:external`** option to enable the external headers options in versions of Visual Studio before Visual Studio 2019 version 16.10.
 
 ## See also
 

@@ -1,8 +1,8 @@
 ---
 description: "Learn more about the /fsanitize (enable sanitizers) compiler option"
 title: "/fsanitize (Enable sanitizers)"
-ms.date: 09/15/2021
-f1_keywords: ["/fsanitize", "-fsanitize", "/fsanitize=address", "/fsanitize=fuzzer", "/fsanitize-address-use-after-return", "-fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib", "-fno-sanitize-address-vcasan-lib"]
+ms.date: 02/17/2022
+f1_keywords: ["/fsanitize", "-fsanitize", "/fsanitize=address", "/fsanitize=fuzzer", "/fsanitize-address-use-after-return", "-fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib", "-fno-sanitize-address-vcasan-lib", "VC.Project.VCCLCompilerTool.EnableASAN"]
 helpviewer_keywords: ["/fsanitize [C++]", "-fsanitize=address [C++]", "address sanitizer compiler option [C++]", "/fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib"]
 ---
 # `/fsanitize` (Enable sanitizers)
