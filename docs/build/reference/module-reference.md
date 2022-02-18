@@ -2,7 +2,7 @@
 title: "/reference (Use named module IFC)"
 description: "Use the /reference compiler option to create module header units for the header-name or include files specified."
 ms.date: 04/13/2020
-f1_keywords: ["/reference"]
+f1_keywords: ["/reference", "VC.Project.VCCLCompilerTool.AdditionalModuleDependencies"]
 helpviewer_keywords: ["/reference", "Use named module IFC"]
 ---
 # `/reference` (Use named module IFC)
