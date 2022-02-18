@@ -1,8 +1,8 @@
 ---
 title: "/analyze (Code analysis)"
 description: "The Microsoft C++ compiler /analyze option syntax and usage."
-ms.date: 10/19/2021
-f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
+ms.date: 02/17/2022
+f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins", "VC.Project.VCCLCompilerTool.DisableAnalyzeExternal", "VC.Project.VCCLCompilerTool.AnalyzeExternalRuleset"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
 ---
@@ -135,7 +135,7 @@ Then, use compiler option `/analyze:plugin EspXEngine.dll` to use the EspXEngine
 
 #### External file analysis options
 
-Starting in Visual Studio 2019 version 16.10, you can specify different analysis rules and behavior for external headers. By using the **`/external:I`**, **`/external:env`**, or **`/external:anglebrackets`** options, directories can be specified as "external" directories. Any files that are included by using `#include`from an external directory or one of its subdirectories are considered as external headers. For more information, see [`/external` (External headers diagnostics)](external-external-headers-diagnostics.md).
+Starting in Visual Studio 2019 version 16.10, you can specify different analysis rules and behavior for external headers. Use the **`/external:I`**, **`/external:env`**, or **`/external:anglebrackets`** options to specify directories as "external" directories. Any files that are included by using `#include`from an external directory or its subdirectories are considered as external headers. For more information, see [`/external` (External headers diagnostics)](external-external-headers-diagnostics.md).
 
 Code analysis provides these options to control analysis of external files:
 
@@ -206,14 +206,14 @@ Specifies the current project directory. If the ruleset (or an item it includes)
 Specifies a semicolon-separated list of ruleset search paths. If the ruleset (or an item it includes) is a file name, then the compiler first looks for the file under the *`project_directory`* specified by **`/analyze:projectdirectory`**, if any, followed by the specified *`ruleset_directories`*. This option is available starting in Visual Studio 2019 version 16.9.
 
 **`/analyze:ruleset`** *`ruleset_files`*\
-Specifies one or more ruleset files to use for analysis. This option can make analysis more efficient. That's because the analysis engine tries to exclude checkers that have no active rules specified in the ruleset files before running. Otherwise, the engine runs all checkers enabled.
+Specifies one or more ruleset files to use for analysis. This option can make analysis more efficient; the analysis engine tries to exclude checkers that have no active rules specified in the ruleset files before running. Otherwise, the engine runs all checkers enabled.
 
 ::: moniker-end
 
 ::: moniker range="msvc-150"
 
 **`/analyze:ruleset`** *`ruleset_file`*\
-Specifies a ruleset file to use for analysis. This option can make analysis more efficient. That's because the analysis engine tries to exclude checkers that have no active rules specified in the ruleset file before running. Otherwise, the engine runs all checkers enabled.
+Specifies a ruleset file to use for analysis. This option can make analysis more efficient; the analysis engine tries to exclude checkers that have no active rules specified in the ruleset file before running. Otherwise, the engine runs all checkers enabled.
 
 ::: moniker-end
 
@@ -266,6 +266,26 @@ For more information, see [Code analysis for C/C++ overview](../../code-quality/
 1. Select the **Configuration Properties** > **Code Analysis** > **General** property page.
 
 1. Modify one or more of the **Code Analysis** properties.
+
+1. Choose **OK** or **Apply** to save your changes.
+
+::: moniker range=">=msvc-160"
+
+To set external file analysis options in Visual Studio 2019 version 16.10 and later:
+
+1. Open the project's **Property Pages** dialog box.
+
+1. Select the **Configuration Properties** > **C/C++** > **External Includes** property page.
+
+1. Set properties:
+
+   - **Disable Code Analysis for External Headers** sets the **`/analyze:external-`** option.
+
+   - **Analysis Ruleset for External Headers** sets the **`/analyze:external:ruleset path`** option.
+
+1. Choose **OK** or **Apply** to save your changes.
+
+::: moniker-end
 
 ### To set this compiler option programmatically
 
