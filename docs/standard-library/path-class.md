@@ -3,11 +3,10 @@ description: "Learn more about: path Class"
 title: "path Class"
 ms.date: "09/27/2018"
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
-ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
 ---
-# path Class
+# `path` Class
 
-The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **`wchar_t`** on Windows or **`char`** on POSIX.
+The **`path`** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **`wchar_t`** on Windows or **`char`** on POSIX.
 
 For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
@@ -21,82 +20,82 @@ class path;
 
 |Constructor|Description|
 |-|-|
-|[path](#path)|Constructs a `path`.|
+|[`path`](#path)|Constructs a `path`.|
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[const_iterator](#const_iterator)|A synonym for `iterator`.|
-|[iterator](#iterator)|A bidirectional constant iterator that designates the `path` components of `myname`.|
-|[string_type](#string_type)|The type is a synonym for `basic_string<value_type>`.|
+|[`const_iterator`](#const_iterator)|A synonym for `iterator`.|
+|[`iterator`](#iterator)|A bidirectional constant iterator that designates the `path` components of `myname`.|
+|[`string_type`](#string_type)|The type is a synonym for `basic_string<value_type>`.|
 
 ### Member functions
 
 |Member function|Description|
 |-|-|
-|[append](#append)|Appends the specified sequence to `mypath`, converted and inserting a preferred_separator as needed.|
-|[assign](#assign)|Replaces `mypath` with the specified sequence, converted as needed.|
-|[begin](#begin)|Returns a `path::iterator` designating the first path element in the pathname, if present.|
-|[c_str](#c_str)|Returns a pointer to the first character in `mypath`.|
-|[clear](#clear)|Executes `mypath.clear()`.|
-|[compare](#compare)|Returns comparison values.|
-|[concat](#compare)|Appends the specified sequence to `mypath`, converted (but not inserting a separator) as needed.|
-|[empty](#empty)|Returns `mypath.empty()`.|
-|[end](#end)|Returns an end-of-sequence iterator of type `iterator`.|
-|[extension](#extension)|Returns the suffix of `filename()`.|
-|[filename](#filename)|Returns the root directory component of myname, specifically `empty() ? path() : *--end()`. The component may be empty.|
-|[generic_string](#generic_string)|Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.|
-|[generic_u16string](#generic_u16string)|Returns `u16string()` with (under Windows) any backslash converted to a forward slash.|
-|[generic_u32string](#generic_u32string)|Returns `u32string()` with (under Windows) any backslash converted to a forward slash.|
-|[generic_u8string](#generic_u8string)|Returns `u8string()` with (under Windows) any backslash converted to a forward slash.|
-|[generic_wstring](#generic_wstring)|Returns `wstring()` with (under Windows) any backslash converted to a forward slash.|
-|[has_extension](#has_extension)|Returns `!extension().empty()`.|
-|[has_filename](#has_filename)|Returns `!filename().empty()`.|
-|[has_parent_path](#has_parent_path)|Returns `!parent_path().empty()`.|
-|[has_relative_path](#has_relative_path)|Returns `!relative_path().empty()`.|
-|[has_root_directory](#has_root_directory)|Returns `!root_directory().empty()`.|
-|[has_root_name](#has_root_name)|Returns `!root_name().empty()`.|
-|[has_root_path](#has_root_path)|Returns `!root_path().empty()`.|
-|[has_stem](#has_stem)|Returns `!stem().empty()`.|
-|[is_absolute](#is_absolute)|For Windows, the function returns `has_root_name() && has_root_directory()`. For POSIX, the function returns `has_root_directory()`.|
-|[is_relative](#is_relative)|Returns `!is_absolute()`.|
-|[make_preferred](#make_preferred)|Converts each separator to a preferred_separator as needed.|
-|[native](#native)|Returns `myname`.|
-|[parent_path](#parent_path)|Returns the parent path component of `myname`.|
-|[preferred_separator](#preferred_separator)|The constant object gives the preferred character for separating path components, depending on the host operating system. |
-|[relative_path](#relative_path)|Returns the relative path component of `myname`. |
-|[remove_filename](#remove_filename)|Removes the filename.|
-|[replace_extension](#replace_extension)|Replaces the extension of `myname`. |
-|[replace_filename](#replace_filename)|RReplaces the filename.|
-|[root_directory](#root_directory)|Returns the root directory component of `myname`. |
-|[root_name](#root_name)|Returns the root name component of `myname`. |
-|[root_path](#root_path)|Returns the root path component of `myname`.|
-|[stem](#stem)|Returns the `stem` component of `myname`.|
-|[string](#string)|Converts the sequence stored in `mypath`.|
-|[swap](#swap)|Executes `swap(mypath, right.mypath)`.|
-|[u16string](#u16string)|Converts the sequence stored in `mypath` to UTF-16 and returns it stored in an object of type `u16string`.|
-|[u32string](#u32string)|Converts the sequence stored in `mypath` to UTF-32 and returns it stored in an object of type `u32string`.|
-|[u8string](#u8string)|Converts the sequence stored in `mypath` to UTF-8 and returns it stored in an object of type `u8string`.|
-|[value_type](#value_type)|The type describes the path elements favored by the host operating system.|
-|[wstring](#wstring)|Converts the sequence stored in `mypath` to the encoding favored by the host system for a **`wchar_t`** sequence and returns it stored in an object of type `wstring`.|
+|[`append`](#append)|Appends the specified sequence to `mypath`, converted and inserting a preferred_separator as needed.|
+|[`assign`](#assign)|Replaces `mypath` with the specified sequence, converted as needed.|
+|[`begin`](#begin)|Returns a `path::iterator` designating the first path element in the pathname, if present.|
+|[`c_str`](#c_str)|Returns a pointer to the first character in `mypath`.|
+|[`clear`](#clear)|Executes `mypath.clear()`.|
+|[`compare`](#compare)|Returns comparison values.|
+|[`concat`](#compare)|Appends the specified sequence to `mypath`, converted (but not inserting a separator) as needed.|
+|[`empty`](#empty)|Returns `mypath.empty()`.|
+|[`end`](#end)|Returns an end-of-sequence iterator of type `iterator`.|
+|[`extension`](#extension)|Returns the suffix of `filename()`.|
+|[`filename`](#filename)|Returns the root directory component of `myname`, specifically `empty() ? path() : *--end()`. The component may be empty.|
+|[`generic_string`](#generic_string)|Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.|
+|[`generic_u16string`](#generic_u16string)|Returns `u16string()` with (under Windows) any backslash converted to a forward slash.|
+|[`generic_u32string`](#generic_u32string)|Returns `u32string()` with (under Windows) any backslash converted to a forward slash.|
+|[`generic_u8string`](#generic_u8string)|Returns `u8string()` with (under Windows) any backslash converted to a forward slash.|
+|[`generic_wstring`](#generic_wstring)|Returns `wstring()` with (under Windows) any backslash converted to a forward slash.|
+|[`has_extension`](#has_extension)|Returns `!extension().empty()`.|
+|[`has_filename`](#has_filename)|Returns `!filename().empty()`.|
+|[`has_parent_path`](#has_parent_path)|Returns `!parent_path().empty()`.|
+|[`has_relative_path`](#has_relative_path)|Returns `!relative_path().empty()`.|
+|[`has_root_directory`](#has_root_directory)|Returns `!root_directory().empty()`.|
+|[`has_root_name`](#has_root_name)|Returns `!root_name().empty()`.|
+|[`has_root_path`](#has_root_path)|Returns `!root_path().empty()`.|
+|[`has_stem`](#has_stem)|Returns `!stem().empty()`.|
+|[`is_absolute`](#is_absolute)|For Windows, the function returns `has_root_name() && has_root_directory()`. For POSIX, the function returns `has_root_directory()`.|
+|[`is_relative`](#is_relative)|Returns `!is_absolute()`.|
+|[`make_preferred`](#make_preferred)|Converts each separator to a `preferred_separator` as needed.|
+|[`native`](#native)|Returns `myname`.|
+|[`parent_path`](#parent_path)|Returns the parent path component of `myname`.|
+|[`preferred_separator`](#preferred_separator)|The constant object gives the preferred character for separating path components, depending on the host operating system. |
+|[`relative_path`](#relative_path)|Returns the relative path component of `myname`. |
+|[`remove_filename`](#remove_filename)|Removes the filename.|
+|[`replace_extension`](#replace_extension)|Replaces the extension of `myname`. |
+|[`replace_filename`](#replace_filename)|Replaces the filename.|
+|[`root_directory`](#root_directory)|Returns the root directory component of `myname`. |
+|[`root_name`](#root_name)|Returns the root name component of `myname`. |
+|[`root_path`](#root_path)|Returns the root path component of `myname`.|
+|[`stem`](#stem)|Returns the `stem` component of `myname`.|
+|[`string`](#string)|Converts the sequence stored in `mypath`.|
+|[`swap`](#swap)|Executes `swap(mypath, right.mypath)`.|
+|[`u16string`](#u16string)|Converts the sequence stored in `mypath` to UTF-16 and returns it stored in an object of type `u16string`.|
+|[`u32string`](#u32string)|Converts the sequence stored in `mypath` to UTF-32 and returns it stored in an object of type `u32string`.|
+|[`u8string`](#u8string)|Converts the sequence stored in `mypath` to UTF-8 and returns it stored in an object of type `u8string`.|
+|[`value_type`](#value_type)|The type describes the path elements favored by the host operating system.|
+|[`wstring`](#wstring)|Converts the sequence stored in `mypath` to the encoding favored by the host system for a **`wchar_t`** sequence and returns it stored in an object of type `wstring`.|
 
 ### Operators
 
 |Operator|Description|
 |-|-|
-|[operator=](#op_as)|Replaces the elements of the path with a copy of another path.|
-|[operator+=](#op_add)|Various `concat` expressions.|
-|[operator/=](#op_divide)|Various `append` expressions.|
-|[operator string_type](#op_string)|Returns `myname`.|
+|[`operator=`](#op_as)|Replaces the elements of the path with a copy of another path.|
+|[`operator+=`](#op_add)|Various `concat` expressions.|
+|[`operator/=`](#op_divide)|Various `append` expressions.|
+|[`operator string_type`](#op_string)|Returns `myname`.|
 
 ## Requirements
 
-**Header:** \<filesystem>
+**Header:** `<filesystem>`
 
-**Namespace:** std::experimental::filesystem
+**Namespace:** `std::experimental::filesystem`
 
-## <a name="append"></a> path::append
+## <a name="append"></a> `path::append`
 
 Appends the specified sequence to `mypath`, converted and inserting a `preferred_separator` as needed.
 
@@ -110,16 +109,16 @@ path& append(InIt first, InIt last);
 
 ### Parameters
 
-*source*\
+*`source`*\
 Specified sequence.
 
-*first*\
+*`first`*\
 Start of specified sequence.
 
-*last*\
+*`last`*\
 End of specified sequence.
 
-## <a name="assign"></a> path::assign
+## <a name="assign"></a> `path::assign`
 
 Replaces `mypath` with the specified sequence, converted as needed.
 
@@ -133,16 +132,16 @@ path& assign(InIt first, InIt last);
 
 ### Parameters
 
-*source*\
+*`source`*\
 Specified sequence.
 
-*first*\
+*`first`*\
 Start of specified sequence.
 
-*last*\
+*`last`*\
 End of specified sequence.
 
-## <a name="begin"></a> path::begin
+## <a name="begin"></a> `path::begin`
 
 Returns a `path::iterator` designating the first path element in the pathname, if present.
 
@@ -150,7 +149,7 @@ Returns a `path::iterator` designating the first path element in the pathname, i
 iterator begin() const;
 ```
 
-## <a name="c_str"></a> path::c_str
+## <a name="c_str"></a> `path::c_str`
 
 Returns a pointer to the first character in `mypath`.
 
@@ -158,7 +157,7 @@ Returns a pointer to the first character in `mypath`.
 const value_type& *c_str() const noexcept;
 ```
 
-## <a name="clear"></a> path::clear
+## <a name="clear"></a> `path::clear`
 
 Executes `mypath.clear()`.
 
@@ -166,7 +165,7 @@ Executes `mypath.clear()`.
 void clear() noexcept;
 ```
 
-## <a name="compare"></a> path::compare
+## <a name="compare"></a> `path::compare`
 
 The first function returns `mypath.compare(pval.native())`. The second function returns `mypath.compare(str)`. The third function returns `mypath.compare(ptr)`.
 
@@ -178,16 +177,16 @@ int compare(const value_type *ptr) const;
 
 ### Parameters
 
-*pval*\
+*`pval`*\
 Path to compare.
 
-*str*\
+*`str`*\
 String to compare.
 
-*ptr*\
+*`ptr`*\
 Pointer to compare.
 
-## <a name="concat"></a> path::concat
+## <a name="concat"></a> `path::concat`
 
 Appends the specified sequence to `mypath`, converted (but not inserting a separator) as needed.
 
@@ -201,16 +200,16 @@ path& concat(InIt first, InIt last);
 
 ### Parameters
 
-*source*\
+*`source`*\
 Specified sequence.
 
-*first*\
+*`first`*\
 Start of specified sequence.
 
-*last*\
+*`last`*\
 End of specified sequence.
 
-## <a name="const_iterator"></a> path::const_iterator
+## <a name="const_iterator"></a> `path::const_iterator`
 
 A synonym for `iterator`.
 
@@ -218,7 +217,7 @@ A synonym for `iterator`.
 typedef iterator const_iterator;
 ```
 
-## <a name="empty"></a> path::empty
+## <a name="empty"></a> `path::empty`
 
 Returns `mypath.empty()`.
 
@@ -226,7 +225,7 @@ Returns `mypath.empty()`.
 bool empty() const noexcept;
 ```
 
-## <a name="end"></a> path::end
+## <a name="end"></a> `path::end`
 
 Returns an end-of-sequence iterator of type `iterator`.
 
@@ -234,7 +233,7 @@ Returns an end-of-sequence iterator of type `iterator`.
 iterator end() const;
 ```
 
-## <a name="extension"></a> path::extension
+## <a name="extension"></a> `path::extension`
 
 Returns the suffix of `filename()`.
 
@@ -250,15 +249,15 @@ If `X == path(".") || X == path("..")` or if `X` contains no dot, the suffix is 
 
 Otherwise, the suffix begins with (and includes) the rightmost dot.
 
-## <a name="filename"></a> path::filename
+## <a name="filename"></a> `path::filename`
 
-Returns the root directory component of myname, specifically `empty() path() : *--end()`. The component may be empty.
+Returns the root directory component of `myname`, specifically `empty() path() : *--end()`. The component may be empty.
 
 ```cpp
 path filename() const;
 ```
 
-## <a name="generic_string"></a> path::generic_string
+## <a name="generic_string"></a> `path::generic_string`
 
 Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.
 
@@ -272,7 +271,7 @@ template <class Elem,
 string generic_string() const;
 ```
 
-## <a name="generic_u16string"></a> path::generic_u16string
+## <a name="generic_u16string"></a> `path::generic_u16string`
 
 Returns `u16string()` with (under Windows) any backslash converted to a forward slash.
 
@@ -280,7 +279,7 @@ Returns `u16string()` with (under Windows) any backslash converted to a forward 
 u16string generic_u16string() const;
 ```
 
-## <a name="generic_u32string"></a> path::generic_u32string
+## <a name="generic_u32string"></a> `path::generic_u32string`
 
 Returns `u32string()` with (under Windows) any backslash converted to a forward slash.
 
@@ -288,7 +287,7 @@ Returns `u32string()` with (under Windows) any backslash converted to a forward 
 u32string generic_u32string() const;
 ```
 
-## <a name="generic_u8string"></a> path::generic_u8string
+## <a name="generic_u8string"></a> `path::generic_u8string`
 
 Returns `u8string()` with (under Windows) any backslash converted to a forward slash.
 
@@ -296,7 +295,7 @@ Returns `u8string()` with (under Windows) any backslash converted to a forward s
 string generic_u8string() const;
 ```
 
-## <a name="generic_wstring"></a> path::generic_wstring
+## <a name="generic_wstring"></a> `path::generic_wstring`
 
 Returns `wstring()` with (under Windows) any backslash converted to a forward slash.
 
@@ -304,7 +303,7 @@ Returns `wstring()` with (under Windows) any backslash converted to a forward sl
 wstring generic_wstring() const;
 ```
 
-## <a name="has_extension"></a> path::has_extension
+## <a name="has_extension"></a> `path::has_extension`
 
 Returns `!extension().empty()`.
 
@@ -312,7 +311,7 @@ Returns `!extension().empty()`.
 bool has_extension() const;
 ```
 
-## <a name="has_filename"></a> path::has_filename
+## <a name="has_filename"></a> `path::has_filename`
 
 Returns `!filename().empty()`.
 
@@ -320,7 +319,7 @@ Returns `!filename().empty()`.
 bool has_filename() const;
 ```
 
-## <a name="has_parent_path"></a> path::has_parent_path
+## <a name="has_parent_path"></a> `path::has_parent_path`
 
 Returns `!parent_path().empty()`.
 
@@ -328,7 +327,7 @@ Returns `!parent_path().empty()`.
 bool has_parent_path() const;
 ```
 
-## <a name="has_relative_path"></a> path::has_relative_path
+## <a name="has_relative_path"></a> `path::has_relative_path`
 
 Returns `!relative_path().empty()`.
 
@@ -336,7 +335,7 @@ Returns `!relative_path().empty()`.
 bool has_relative_path() const;
 ```
 
-## <a name="has_root_directory"></a> path::has_root_directory
+## <a name="has_root_directory"></a> `path::has_root_directory`
 
 Returns `!root_directory().empty()`.
 
@@ -344,7 +343,7 @@ Returns `!root_directory().empty()`.
 bool has_root_directory() const;
 ```
 
-## <a name="has_root_name"></a> path::has_root_name
+## <a name="has_root_name"></a> `path::has_root_name`
 
 Returns `!root_name().empty()`.
 
@@ -352,7 +351,7 @@ Returns `!root_name().empty()`.
 bool has_root_name() const;
 ```
 
-## <a name="has_root_path"></a> path::has_root_path
+## <a name="has_root_path"></a> `path::has_root_path`
 
 Returns `!root_path().empty()`.
 
@@ -360,7 +359,7 @@ Returns `!root_path().empty()`.
 bool has_root_path() const;
 ```
 
-## <a name="has_stem"></a> path::has_stem
+## <a name="has_stem"></a> `path::has_stem`
 
 Returns `!stem().empty()`.
 
@@ -368,7 +367,7 @@ Returns `!stem().empty()`.
 bool has_stem() const;
 ```
 
-## <a name="is_absolute"></a> path::is_absolute
+## <a name="is_absolute"></a> `path::is_absolute`
 
 For Windows, the function returns `has_root_name() && has_root_directory()`. For POSIX, the function returns `has_root_directory()`.
 
@@ -376,7 +375,7 @@ For Windows, the function returns `has_root_name() && has_root_directory()`. For
 bool is_absolute() const;
 ```
 
-## <a name="is_relative"></a> path::is_relative
+## <a name="is_relative"></a> `path::is_relative`
 
 Returns `!is_absolute()`.
 
@@ -384,7 +383,7 @@ Returns `!is_absolute()`.
 bool is_relative() const;
 ```
 
-## <a name="iterator"></a> path::iterator
+## <a name="iterator"></a> `path::iterator`
 
 A bidirectional constant iterator that designates the path components of `myname`.
 
@@ -415,7 +414,7 @@ For `pval` an object of type `path`:
 
 1. `path::iterator X = pval.begin()` designates the first `path` element in the pathname, if present.
 
-1. `X == pval.end()` is true when `X` points just past the end of the sequence of components.
+1. `X == pval.end()` is `true` when `X` points just past the end of the sequence of components.
 
 1. `*X` returns a string that matches the current component
 
@@ -425,7 +424,7 @@ For `pval` an object of type `path`:
 
 1. Altering `myname` invalidates all iterators designating elements in `myname`.
 
-## <a name="make_preferred"></a> path::make_preferred
+## <a name="make_preferred"></a> `path::make_preferred`
 
 Converts each separator to a `preferred_separator` as needed.
 
@@ -433,7 +432,7 @@ Converts each separator to a `preferred_separator` as needed.
 path& make_preferred();
 ```
 
-## <a name="native"></a> path::native
+## <a name="native"></a> `path::native`
 
 Returns `myname`.
 
@@ -441,7 +440,7 @@ Returns `myname`.
 const string_type& native() const noexcept;
 ```
 
-## <a name="op_as"></a> path::operator=
+## <a name="op_as"></a> `path::operator=`
 
 Replaces the elements of the path with a copy of another path.
 
@@ -455,17 +454,17 @@ path& operator=(const Source& source);
 
 ### Parameters
 
-*right*\
-The [path](../standard-library/path-class.md) being copied into the `path`.
+*`right`*\
+The [`path`](../standard-library/path-class.md) being copied into the `path`.
 
-*source*\
-The source path.
+*`source`*\
+The source `path`.
 
 ### Remarks
 
 The first member operator copies `right.myname` to `myname`. The second member operator moves `right.myname` to `myname`. The third member operator behaves the same as `*this = path(source)`.
 
-## <a name="op_add"></a> path::operator+=
+## <a name="op_add"></a> `path::operator+=`
 
 Various `concat` expressions.
 
@@ -484,19 +483,19 @@ path& operator+=(Elem elem);
 
 ### Parameters
 
-*right*\
+*`right`*\
 The added path.
 
-*str*\
+*`str`*\
 The added string.
 
-*ptr*\
+*`ptr`*\
 The added pointer.
 
-*elem*\
+*`elem`*\
 The added `value_type` or `Elem`.
 
-*source*\
+*`source`*\
 The added source.
 
 ### Remarks
@@ -515,7 +514,7 @@ The member functions behave the same as the following corresponding expressions:
 
 1. `concat(path(basic_string<Elem>(1, elem)));`
 
-## <a name="op_divide"></a> path::operator/=
+## <a name="op_divide"></a> `path::operator/=`
 
 Various `append` expressions.
 
@@ -528,10 +527,10 @@ path& operator/=(const Source& source);
 
 ### Parameters
 
-*right*\
+*`right`*\
 The added path.
 
-*source*\
+*`source`*\
 The added source.
 
 ### Remarks
@@ -542,7 +541,7 @@ The member functions behave the same as the following corresponding expressions:
 
 1. `append(source);`
 
-## <a name="op_string"></a> path::operator string_type
+## <a name="op_string"></a> `path::operator string_type`
 
 Returns `myname`.
 
@@ -550,7 +549,7 @@ Returns `myname`.
 operator string_type() const;
 ```
 
-## <a name="parent_path"></a> path::parent_path
+## <a name="parent_path"></a> `path::parent_path`
 
 Returns the parent path component of `myname`.
 
@@ -560,9 +559,9 @@ path parent_path() const;
 
 ### Remarks
 
-Returns the parent path component of `myname`, specifically the prefix of `myname` after removing `filename().native()` and any immediately preceding directory separators. (Equally, if `begin() != end()`, it is the combining of all elements in the range `[begin(), --end())` by successively applying `operator/=`.) The component may be empty.
+Returns the parent path component of `myname`, specifically the prefix of `myname` after removing `filename().native()` and any immediately preceding directory separators. (Equally, if `begin() != end()`, it's the combining of all elements in the range `[begin(), --end())` by successively applying `operator/=`.) The component may be empty.
 
-## <a name="path"></a> path::path
+## <a name="path"></a> `path::path`
 
 Constructs a `path` in various ways.
 
@@ -587,40 +586,40 @@ path(InIt first, InIt last, const locale& loc);
 
 ### Parameters
 
-*right*\
+*`right`*\
 The path of which the constructed path is to be a copy.
 
-*source*\
+*`source`*\
 The source of which the constructed path is to be a copy.
 
-*loc*\
+*`loc`*\
 The specified locale.
 
-*first*\
+*`first`*\
 The position of the first element to be copied.
 
-*last*\
+*`last`*\
 The position of the last element to be copied.
 
 ### Remarks
 
 The constructors all construct `myname` in various ways:
 
-For `path()` it is `myname()`.
+For `path()` it's `myname()`.
 
-For `path(const path& right`) it is `myname(right.myname)`.
+For `path(const path& right`) it's `myname(right.myname)`.
 
-For `path(path&& right)` it is `myname(right.myname)`.
+For `path(path&& right)` it's `myname(right.myname)`.
 
-For `template<class Source> path(const Source& source)` it is `myname(source)`.
+For `template<class Source> path(const Source& source)` it's `myname(source)`.
 
-For `template<class Source> path(const Source& source, const locale& loc)` it is `myname(source)`, obtaining any needed codecvt facets from `loc`.
+For `template<class Source> path(const Source& source, const locale& loc)` it's `myname(source)`, obtaining any needed `codecvt` facets from `loc`.
 
-For `template<class InIt> path(InIt first, InIt last)` it is `myname(first, last)`.
+For `template<class InIt> path(InIt first, InIt last)` it's `myname(first, last)`.
 
-For `template<class InIt> path(InIt first, InIt last, const locale& loc)` it is `myname(first, last)`, obtaining any needed codecvt facets from `loc`.
+For `template<class InIt> path(InIt first, InIt last, const locale& loc)` it's `myname(first, last)`, obtaining any needed `codecvt` facets from `loc`.
 
-## <a name="preferred_separator"></a> path::preferred_separator
+## <a name="preferred_separator"></a> `path::preferred_separator`
 
 The constant object gives the preferred character for separating path components, depending on the host operating system.
 
@@ -634,9 +633,9 @@ static constexpr value_type preferred_separator == '/';
 
 ### Remarks
 
-Note that it is equally permissible in most contexts under Windows to use L'/' in its place.
+Note that it's equally permissible in most contexts under Windows to use `L'/'` in its place.
 
-## <a name="relative_path"></a> path::relative_path
+## <a name="relative_path"></a> `path::relative_path`
 
 Returns the relative path component of `myname`.
 
@@ -648,7 +647,7 @@ path relative_path() const;
 
 Returns the relative path component of `myname`, specifically the suffix of `myname` after removing `root_path().native()` and any immediately subsequent redundant directory separators. The component may be empty.
 
-## <a name="remove_filename"></a> path::remove_filename
+## <a name="remove_filename"></a> `path::remove_filename`
 
 Removes the filename.
 
@@ -656,7 +655,7 @@ Removes the filename.
 path& remove_filename();
 ```
 
-## <a name="replace_extension"></a> path::replace_extension
+## <a name="replace_extension"></a> `path::replace_extension`
 
 Replaces the extension of `myname`.
 
@@ -666,14 +665,14 @@ path& replace_extension(const path& newext = path());
 
 ### Parameters
 
-*newext*\
+*`newext`*\
 The new extension.
 
 ### Remarks
 
-First removes the suffix `extension().native()` from `myname`. Then if `!newext.empty() && newext[0] != dot` (where `dot` is `*path(".").c_str()`), then `dot` is appended to `myname`. Then *newext* is appended to `myname`.
+First removes the suffix `extension().native()` from `myname`. Then if `!newext.empty() && newext[0] != dot` (where *dot* is `*path(".").c_str()`), then *dot* is appended to `myname`. Then *`newext`* is appended to `myname`.
 
-## <a name="replace_filename"></a> path::replace_filename
+## <a name="replace_filename"></a> `path::replace_filename`
 
 Replaces the filename.
 
@@ -683,7 +682,7 @@ path& replace_filename(const path& pval);
 
 ### Parameters
 
-*pval*\
+*`pval`*\
 The path of the filename.
 
 ### Remarks
@@ -697,7 +696,7 @@ remove_filename();
 return (*this);
 ```
 
-## <a name="root_directory"></a> path::root_directory
+## <a name="root_directory"></a> `path::root_directory`
 
 Returns the root directory component of `myname`.
 
@@ -709,7 +708,7 @@ path root_directory() const;
 
 The component may be empty.
 
-## <a name="root_name"></a> path::root_name
+## <a name="root_name"></a> `path::root_name`
 
 Returns the root name component of `myname`.
 
@@ -721,7 +720,7 @@ path root_name() const;
 
 The component may be empty.
 
-## <a name="root_path"></a> path::root_path
+## <a name="root_path"></a> `path::root_path`
 
 Returns the root path component of `myname`.
 
@@ -733,7 +732,7 @@ path root_path() const;
 
 Returns the root path component of `myname`, specifically `root_name()` / `root_directory`. The component may be empty.
 
-## <a name="stem"></a> path::stem
+## <a name="stem"></a> `path::stem`
 
 Returns the `stem` component of `myname`.
 
@@ -745,7 +744,7 @@ path stem() const;
 
 Returns the `stem` component of `myname`, specifically `filename().native()` with any trailing `extension().native()` removed. The component may be empty.
 
-## <a name="string"></a> path::string
+## <a name="string"></a> `path::string`
 
 Converts the sequence stored in `mypath`.
 
@@ -769,7 +768,7 @@ The first (template) member function converts the sequence stored in `mypath` th
 
 The second member function converts the sequence stored in `mypath` to the encoding favored by the host system for a **`char`** sequence and returns it stored in an object of type `string`.
 
-## <a name="string_type"></a> path::string_type
+## <a name="string_type"></a> `path::string_type`
 
 The type is a synonym for `basic_string<value_type>`.
 
@@ -777,7 +776,7 @@ The type is a synonym for `basic_string<value_type>`.
 typedef basic_string<value_type> string_type;
 ```
 
-## <a name="swap"></a> path::swap
+## <a name="swap"></a> `path::swap`
 
 Executes `swap(mypath, right.mypath)`.
 
@@ -785,7 +784,7 @@ Executes `swap(mypath, right.mypath)`.
 void swap(path& right) noexcept;
 ```
 
-## <a name="u16string"></a> path::u16string
+## <a name="u16string"></a> `path::u16string`
 
 Converts the sequence stored in `mypath` to UTF-16 and returns it stored in an object of type `u16string`.
 
@@ -793,7 +792,7 @@ Converts the sequence stored in `mypath` to UTF-16 and returns it stored in an o
 u16string u16string() const;
 ```
 
-## <a name="u32string"></a> path::u32string
+## <a name="u32string"></a> `path::u32string`
 
 Converts the sequence stored in `mypath` to UTF-32 and returns it stored in an object of type `u32string`.
 
@@ -801,7 +800,7 @@ Converts the sequence stored in `mypath` to UTF-32 and returns it stored in an o
 u32string u32string() const;
 ```
 
-## <a name="u8string"></a> path::u8string
+## <a name="u8string"></a> `path::u8string`
 
 Converts the sequence stored in `mypath` to UTF-8 and returns it stored in an object of type `u8string`.
 
@@ -809,7 +808,7 @@ Converts the sequence stored in `mypath` to UTF-8 and returns it stored in an ob
 string u8string() const;
 ```
 
-## <a name="value_type"></a> path::value_type
+## <a name="value_type"></a> `path::value_type`
 
 The type describes the `path` elements favored by the host operating system.
 
@@ -821,7 +820,7 @@ typedef char value_type;
 #endif // filesystem model now defined
 ```
 
-## <a name="wstring"></a> path::wstring
+## <a name="wstring"></a> `path::wstring`
 
 Converts the sequence stored in `mypath` to the encoding favored by the host system for a **`wchar_t`** sequence and returns it stored in an object of type `wstring`.
 

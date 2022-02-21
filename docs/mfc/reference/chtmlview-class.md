@@ -69,27 +69,27 @@ class CHtmlView : public CFormView
 |[`CHtmlView::OnEnableModeless`](#onenablemodeless)|Called to enable or disable modeless dialog boxes when the container creates or destroys a modal dialog box.|
 |[`CHtmlView::OnFilterDataObject`](#onfilterdataobject)|Called on the host by Internet Explorer or MSHTML to allow the host to replace Internet Explorer or MSHTML's data object.|
 |[`CHtmlView::OnFrameWindowActivate`](#onframewindowactivate)|Called from [`IOleInPlaceActiveObject::OnFrameWindowActivate`](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) to notify the object when the container's top-level frame window is activated or deactivated.|
-|[`CHtmlView::OnFullScreen`](#onfullscreen)|Called when the FullScreen property has changed.|
+|[`CHtmlView::OnFullScreen`](#onfullscreen)|Called when the `FullScreen` property has changed.|
 |[`CHtmlView::OnGetDropTarget`](#ongetdroptarget)|Called by Internet Explorer or MSHTML when it's being used as a drop target to allow the host to supply an alternative [`IDropTarget`](/windows/win32/api/oleidl/nn-oleidl-idroptarget).|
 |[`CHtmlView::OnGetExternal`](#ongetexternal)|Called by Internet Explorer or MSHTML to obtain the host's `IDispatch` interface.|
 |[`CHtmlView::OnGetHostInfo`](#ongethostinfo)|Retrieves the UI capabilities of the Internet Explorer or MSHTML host.|
 |[`CHtmlView::OnGetOptionKeyPath`](#ongetoptionkeypath)|Returns the registry key under which Internet Explorer or MSHTML stores user preferences.|
 |[`CHtmlView::OnHideUI`](#onhideui)|Called when Internet Explorer or MSHTML removes its menus and toolbars.|
-|[`CHtmlView::OnMenuBar`](#onmenubar)|Called when the MenuBar property has changed.|
+|[`CHtmlView::OnMenuBar`](#onmenubar)|Called when the `MenuBar` property has changed.|
 |[`CHtmlView::OnNavigateComplete2`](#onnavigatecomplete2)|Called after navigation to a hyperlink completes (on either a window or frameset element).|
 |[`CHtmlView::OnNavigateError`](#onnavigateerror)|Called by the framework if navigation to a hyperlink fails.|
 |[`CHtmlView::OnNewWindow2`](#onnewwindow2)|Called when a new window is to be created for displaying a resource.|
 |[`CHtmlView::OnProgressChange`](#onprogresschange)|Called to notify an application that the progress of a download operation has been updated.|
-|[`CHtmlView::OnPropertyChange`](#onpropertychange)|Called to notify an application that the [PutProperty](#putproperty) method has changed the value of a property.|
+|[`CHtmlView::OnPropertyChange`](#onpropertychange)|Called to notify an application that the [`PutProperty`](#putproperty) method has changed the value of a property.|
 |[`CHtmlView::OnQuit`](#onquit)|Called to notify an application that the Internet Explorer application is ready to quit. (Applies to Internet Explorer only)|
 |[`CHtmlView::OnResizeBorder`](#onresizeborder)|Called from the Internet Explorer or MSHTML implementation of [`IOleInPlaceActiveObject::ResizeBorder`](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), which alerts the object that it needs to resize its border space.|
 |[`CHtmlView::OnShowContextMenu`](#onshowcontextmenu)|Called from Internet Explorer or MSHTML when it's about to show its context menu.|
 |[`CHtmlView::OnShowUI`](#onshowui)|Called before Internet Explorer or MSHTML displays its menus and toolbars.|
-|[`CHtmlView::OnStatusBar`](#onstatusbar)|Called when the StatusBar property has changed.|
+|[`CHtmlView::OnStatusBar`](#onstatusbar)|Called when the `StatusBar` property has changed.|
 |[`CHtmlView::OnStatusTextChange`](#onstatustextchange)|Called to notify an application that the text of the status bar associated with the WebBrowser control has changed.|
-|[`CHtmlView::OnTheaterMode`](#ontheatermode)|Called when the TheaterMode property has changed.|
+|[`CHtmlView::OnTheaterMode`](#ontheatermode)|Called when the `TheaterMode` property has changed.|
 |[`CHtmlView::OnTitleChange`](#ontitlechange)|Called to notify an application if the title of a document in the WebBrowser control becomes available or changes.|
-|[`CHtmlView::OnToolBar`](#ontoolbar)|Called when the ToolBar property has changed.|
+|[`CHtmlView::OnToolBar`](#ontoolbar)|Called when the `ToolBar` property has changed.|
 |[`CHtmlView::OnTranslateAccelerator`](#ontranslateaccelerator)|Called by Internet Explorer or MSHTML when [`IOleInPlaceActiveObject::TranslateAccelerator`](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) or [`IOleControlSite::TranslateAccelerator`](/windows/win32/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) is called to process menu accelerator-key messages from the container's message queue.|
 |[`CHtmlView::OnTranslateUrl`](#ontranslateurl)|Called by Internet Explorer or MSHTML to allow the host an opportunity to modify the URL to be loaded.|
 |[`CHtmlView::OnUpdateUI`](#onupdateui)|Notifies the host that the command state has changed.|
@@ -120,7 +120,7 @@ class CHtmlView : public CFormView
 
 The WebBrowser control is a window in which the user can browse sites on the World Wide Web, and folders in the local file system and on a network. The WebBrowser control supports hyperlinking, Uniform Resource Locator (URL) navigation, and maintains a history list.
 
-## Using the CHtmlView Class in an MFC Application
+## Using the `CHtmlView` Class in an MFC Application
 
 In the standard MFC framework application (either SDI or MDI based), the view object is commonly derived from a specialized set of classes. These classes, all derived from `CView`, provide specialized functionality beyond that provided by `CView`.
 
@@ -599,7 +599,7 @@ BOOL GetSilent() const;
 
 ### Return Value
 
-Nonzero if dialog boxes cannot be displayed from the WebBrowser control; otherwise zero.
+Nonzero if dialog boxes can’t be displayed from the WebBrowser control; otherwise zero.
 
 ### Remarks
 
@@ -837,7 +837,7 @@ void Navigate(
 A caller-allocated string that contains the URL to navigate to, or the full path of the file to display.
 
 *`dwFlags`*\
-The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.
+The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [`BrowserNavConstants`](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.
 
 *`lpszTargetFrameName`*\
 A pointer to a string that contains the name of the frame in which to display the resource.
@@ -887,7 +887,7 @@ void Navigate2(
 A pointer to an [`ITEMIDLIST`](/windows/win32/api/shtypes/ns-shtypes-itemidlist) structure.
 
 *`dwFlags`*\
-The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.
+The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [`BrowserNavConstants`](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.
 
 *`lpszTargetFrameName`*\
 A pointer to a string that contains the name of the frame in which to display the resource.
@@ -905,7 +905,7 @@ Length in bytes of the data pointed to by the *`lpvPostData`* parameter.
 A pointer to a value that specifies the HTTP or HTTPS headers to send to the server. These headers are added to the default Internet Explorer headers. The headers can specify such things as the action required of the server, the type of data being passed to the server, or a status code. This parameter is ignored if *`URL`* isn't an HTTP or HTTPS URL.
 
 *`baPostedData`*\
-A reference to a [CByteArray](../../mfc/reference/cbytearray-class.md) object.
+A reference to a [`CByteArray`](../../mfc/reference/cbytearray-class.md) object.
 
 ### Remarks
 
@@ -1063,7 +1063,7 @@ virtual HRESULT OnFilterDataObject(
 ### Parameters
 
 *`pDataObject`*\
-Address of the [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) interface supplied by Internet Explorer or MSHTML.
+Address of the [`IDataObject`](/windows/win32/api/objidl/nn-objidl-idataobject) interface supplied by Internet Explorer or MSHTML.
 
 *`ppDataObject`*\
 Address that receives the `IDataObject` interface pointer supplied by the host. The contents of this parameter should always be initialized to `NULL`, even if the method fails.
@@ -1273,7 +1273,7 @@ The URL for which navigation failed.
 The name of the frame in which the resource is to be displayed, or `NULL` if no named frame was targeted for the resource.
 
 *`dwError`*\
-An error status code, if available. For a list of the possible `HRESULT` and HTTP status codes, see [NavigateError Event Status Codes.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768365\(v=vs.85\)).
+An error status code, if available. For a list of the possible `HRESULT` and HTTP status codes, see [`NavigateError` Event Status Codes.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768365\(v=vs.85\)).
 
 *`pbCancel`*\
 Specifies whether to cancel the navigation to an error page or any further autosearch. If `TRUE` (the default), continue with navigation to an error page or autosearch; if `FALSE`, cancel navigation to an error page or autosearch.
@@ -1748,7 +1748,7 @@ void Refresh2(int nLevel);
 ### Parameters
 
 *`nLevel`*\
-The address of the variable specifying the refresh level. The possible variables are defined in [RefreshConstants](/previous-versions/aa768363\(v=vs.85\)), in the Windows SDK.
+The address of the variable specifying the refresh level. The possible variables are defined in [`RefreshConstants`](/previous-versions/aa768363\(v=vs.85\)), in the Windows SDK.
 
 ### Remarks
 
@@ -2025,7 +2025,7 @@ Applies to Internet Explorer and WebBrowser.
 
 ## See also
 
-[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)\
+[MFC Sample `MFCIE`](../../overview/visual-cpp-samples.md)\
 [`CFormView` class](../../mfc/reference/cformview-class.md)\
 [Hierarchy chart](../../mfc/hierarchy-chart.md)\
 [`IWebBrowser2`](/windows/win32/api/exdisp/nn-exdisp-iwebbrowser2)
