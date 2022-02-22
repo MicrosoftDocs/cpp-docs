@@ -4,7 +4,6 @@ title: "Input and Output"
 ms.date: "11/04/2016"
 f1_keywords: ["c.io"]
 helpviewer_keywords: ["input routines", "I/O [CRT]", "I/O routines", "I/O [CRT], routines", "output routines"]
-ms.assetid: 1c177301-e341-4ca0-aedc-0a87fe1c75ae
 ---
 # Input and Output
 
@@ -21,4 +20,4 @@ The I/O functions read and write data to and from files and devices. File I/O op
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
