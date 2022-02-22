@@ -414,10 +414,10 @@ virtual BOOL OnCmdMsg(
 Contains the command ID.
 
 *`nCode`*\
-Identifies the command notification code. See **Remarks** for more information about values for *`nCode`*.
+Identifies the command notification code. See [**Remarks**](#oncmdmsg-remarks) for more information about values for *`nCode`*.
 
 *`pExtra`*\
-Used according to the value of *`nCode`*. See **Remarks** for more information about *`pExtra`*.
+Used according to the value of *`nCode`*. See [**Remarks**](#oncmdmsg-remarks) for more information about *`pExtra`*.
 
 *`pHandlerInfo`*\
 If not `NULL`, `OnCmdMsg` fills in the *`pTarget`* and *`pmf`* members of the *`pHandlerInfo`* structure instead of dispatching the command. Typically, this parameter should be `NULL`.
@@ -426,7 +426,7 @@ If not `NULL`, `OnCmdMsg` fills in the *`pTarget`* and *`pmf`* members of the *`
 
 Nonzero if the message is handled; otherwise 0.
 
-### Remarks
+### <a name="oncmdmsg-remarks"></a> Remarks
 
 This is the main implementation routine of the framework command architecture.
 
