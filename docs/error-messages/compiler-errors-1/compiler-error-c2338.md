@@ -24,7 +24,7 @@ These errors are often unrecoverable, and may be followed by a fatal compiler er
 
 To fix these issues, correct the attribute usage. For example, in some cases, attribute parameters must be declared before they can be used. If an ATL error number is provided, check the documentation for that error for more specific information.
 
-In Standard C++11 and later, **`constexpr`** functions are no longer considered **`noexcept`** by default when used in a constant expression. This behavior change comes from the resolution of Core Working Group (CWG) [1351](https://wg21.link/cwg1351) and is enabled in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode. The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
+In Standard C++11 and later, **`constexpr`** functions are no longer considered **`noexcept`** by default when used in a constant expression. This behavior change comes from the resolution of Core Working Group (CWG) [CWG 1351](https://wg21.link/cwg1351) and is enabled in [`/permissive-`](../../build/reference/permissive-standards-conformance.md) mode. The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
 
 ```cpp
 // c2338.cpp
