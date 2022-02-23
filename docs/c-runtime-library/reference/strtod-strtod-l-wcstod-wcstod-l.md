@@ -77,17 +77,17 @@ If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan
 
 **`strtod`** expects *`strSource`* to point to a string of one of the following forms:
 
-[*whitespace*] [*sign*] {*digits* [*radix* *digits*] | *radix* *digits*} [{**`e`** | **`E`**} [*sign*] *digits*]\
-[*whitespace*] [*sign*] {**`0x`** | **`0X`**} {*hexdigits* [*radix* *hexdigits*] | *radix* *hexdigits*} [{**`p`** | **`P`**} [*sign*] *digits*]\
-[*whitespace*] [*sign*] {**`INF`** | **`INFINITY`**}\
-[*whitespace*] [*sign*] **`NAN`** [*sequence*]
+[*`whitespace`*] [*`sign`*] {*`digits`* [*`radix`* *`digits`*] | *`radix`* *`digits`*} [{**`e`** | **`E`**} [*`sign`*] *`digits`*]\
+[*`whitespace`*] [*`sign`*] {**`0x`** | **`0X`**} {*`hexdigits`* [*`radix`* *`hexdigits`*] | *`radix`* *`hexdigits`*} [{**`p`** | **`P`**} [*`sign`*] *`digits`*]\
+[*`whitespace`*] [*`sign`*] {**`INF`** | **`INFINITY`**}\
+[*`whitespace`*] [*`sign`*] **`NAN`** [*`sequence`*]
 
-The optional leading *whitespace* may consist of space and tab characters, which are ignored.\
-*sign* is either plus (+) or minus (-).\
-*digits* are one or more decimal digits.\
-*hexdigits* are one or more hexadecimal digits.\
-*radix* is the radix point character, either a period (.) in the default "C" locale, or the locale-specific value if the current locale is different or when *`locale`* is specified.\
- A *sequence* is a sequence of alphanumeric or underscore characters.
+The optional leading *`whitespace`* may consist of space and tab characters, which are ignored.\
+*`sign`* is either plus (+) or minus (-).\
+*`digits`* are one or more decimal digits.\
+*`hexdigits`* are one or more hexadecimal digits.\
+*`radix`* is the radix point character, either a period (.) in the default "C" locale, or the locale-specific value if the current locale is different or when *`locale`* is specified.\
+ A *`sequence`* is a sequence of alphanumeric or underscore characters.
 
 In both decimal and hexadecimal number forms, if no digits appear before the radix point character, at least one must appear after the radix point character.
 
