@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Declarations and definitions (C++)"
 title: "Declarations and definitions (C++)"
-ms.date: 07/23/2021
+ms.date: 02/22/2022
 ---
 # Declarations and definitions (C++)
 
@@ -18,8 +18,8 @@ int main()
 {
     const double pi = 3.14; //OK
     int i = f(2); //OK. f is forward-declared
-    std::string str; // OK std::string is declared in <string> header
     C obj; // error! C not yet declared.
+    std::string str; // OK std::string is declared in <string> header
     j = 0; // error! No type specified.
     auto k = 0; // OK. type inferred as int by compiler.
 }
@@ -36,7 +36,7 @@ namespace N {
 
 On line 5, the `main` function is declared. On line 7, a **`const`** variable named `pi` is declared and *initialized*. On line 8, an integer `i` is declared and initialized with the value produced by the function `f`. The name `f` is visible to the compiler because of the *forward declaration* on line 3.
 
-In line 9, a variable named `obj` of type `C` is declared. However, this declaration raises an error because `C` isn't declared until later in the program, and isn't forward-declared. To fix the error, you can either move the entire *definition* of `C` before `main` or else add a forward-declaration for it. This behavior is different from other languages such as C#, in which functions and classes can be used before their point of declaration in a source file.
+In line 9, a variable named `obj` of type `C` is declared. However, this declaration raises an error because `C` isn't declared until later in the program, and isn't forward-declared. To fix the error, you can either move the entire *definition* of `C` before `main` or else add a forward-declaration for it. This behavior is different from other languages such as C#. In those languages, functions and classes can be used before their point of declaration in a source file.
 
 In line 10, a variable named `str` of type `std::string` is declared. The name `std::string` is visible because it's introduced in the `string` [header file](header-files-cpp.md), which is merged into the source file in line 1. `std` is the namespace in which the `string` class is declared.
 
@@ -82,25 +82,25 @@ In older versions of C++, the [`typedef`](aliases-and-typedefs-cpp.md) keyword i
 
 ## Static class members
 
-Because static class data members are discrete variables that are shared by all objects of the class, they must be defined and initialized outside the class definition. (For more information, see [Classes](../cpp/classes-and-structs-cpp.md).)
+Static class data members are discrete variables that are shared by all objects of the class. Because they're shared, they must be defined and initialized outside the class definition. For more information, see [Classes](../cpp/classes-and-structs-cpp.md).
 
 ## extern declarations
 
-A C++ program might contain more than one [compilation unit](header-files-cpp.md). To declare an entity that is defined in a separate compilation unit, use the [`extern`](extern-cpp.md) keyword. The information in the declaration is sufficient for the compiler, but if the definition of the entity can't be found in the linking step, then the linker will raise an error.
+A C++ program might contain more than one [compilation unit](header-files-cpp.md). To declare an entity that's defined in a separate compilation unit, use the [`extern`](extern-cpp.md) keyword. The information in the declaration is sufficient for the compiler. However, if the definition of the entity can't be found in the linking step, then the linker will raise an error.
 
 ## In this section
 
-[Storage classes](storage-classes-cpp.md)<br/>
-[`const`](const-cpp.md)<br/>
-[`constexpr`](constexpr-cpp.md)<br/>
-[`extern`](extern-cpp.md)<br/>
-[Initializers](initializers.md)<br/>
-[Aliases and typedefs](aliases-and-typedefs-cpp.md)<br/>
-[`using` declaration](using-declaration.md)<br/>
-[`volatile`](volatile-cpp.md)<br/>
-[`decltype`](decltype-cpp.md)<br/>
-[Attributes in C++](attributes.md)<br/>
+[Storage classes](storage-classes-cpp.md)\
+[`const`](const-cpp.md)\
+[`constexpr`](constexpr-cpp.md)\
+[`extern`](extern-cpp.md)\
+[Initializers](initializers.md)\
+[Aliases and typedefs](aliases-and-typedefs-cpp.md)\
+[`using` declaration](using-declaration.md)\
+[`volatile`](volatile-cpp.md)\
+[`decltype`](decltype-cpp.md)\
+[Attributes in C++](attributes.md)
 
 ## See also
 
-[Basic Concepts](../cpp/basic-concepts-cpp.md)<br/>
+[Basic Concepts](../cpp/basic-concepts-cpp.md)
