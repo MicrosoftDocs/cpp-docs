@@ -35,7 +35,7 @@ Returns *`input`*, but each item that matches *`pattern`* is replaced by *`repla
 
 `patsubsti` is the case-insensitive version of `patsubst`.
 
-This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+This macro function is available starting in Visual Studio 2022 version 17.1, in NMAKE version 14.31 or later.
 
 ## Example
 

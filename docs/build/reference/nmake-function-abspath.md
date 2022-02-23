@@ -28,7 +28,7 @@ A [list](using-an-nmake-macro.md#function-list-syntax) with each of the items fr
 
 `abspath` supports extended-length paths, either by using the `\\?\` prefix, or when long paths are enabled. For more information about long paths, see [Maximum Path Length Limitation](/windows/win32/fileio/maximum-file-path-limitation).
 
-This macro function is available starting in Visual Studio 2022, in NMAKE version 14.30 or later.
+This macro function is available starting in Visual Studio 2022 version 17.1, in NMAKE version 14.31 or later.
 
 ## Example
 
