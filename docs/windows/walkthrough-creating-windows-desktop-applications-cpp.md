@@ -446,6 +446,7 @@ As promised, here's the complete code for the working application.
    // The string that appears in the application's title bar.
    static TCHAR szTitle[] = _T("Windows Desktop Guided Tour Application");
 
+   // Stored instance handle for use in Win32 API calls such as FindResource
    HINSTANCE hInst;
 
    // Forward declarations of functions included in this code module:

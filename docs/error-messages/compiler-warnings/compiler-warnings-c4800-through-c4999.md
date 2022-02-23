@@ -1,9 +1,9 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 description: "Table of Microsoft C/C++ compiler warnings C4800 through C5999."
-ms.date: 12/01/2021
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254"]
+ms.date: 02/22/2022
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254"]
 ---
 # Compiler warnings C4800 through C5999
 
@@ -162,9 +162,9 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C5051 | attribute 'attribute-name' requires at least 'standard-level'; ignored |
 | Compiler warning (level 3, off) C5052 | Keyword 'keyword-name' was introduced in C++\<version> and requires use of the 'option-name' command-line option |
 | Compiler warning (level 1) C5053 | support for '`explicit(<expr>)`' in C++17 and earlier is a vendor extension |
-| Compiler warning (level 4) C5054 | operator 'operator-name': deprecated between enumerations of different types |
-| Compiler warning (level 1) C5055 | operator 'operator-name': deprecated between enumerations and floating-point types |
-| Compiler warning (level 1) C5056 | operator 'operator-name': deprecated for array types |
+| [Compiler warning (level 4) C5054](c5054.md) | operator 'operator-name': deprecated between enumerations of different types |
+| [Compiler warning (level 1) C5055](c5055.md) | operator 'operator-name': deprecated between enumerations and floating-point types |
+| [Compiler warning (level 1) C5056](c5056.md) | operator 'operator-name': deprecated for array types |
 | Compiler warning (level 1) C5057 | header unit reference to 'name' already exists.  Ignoring header unit 'header-name' |
 | Compiler warning (level 1) C5058 | file system error: cannot find header file 'file-name' for header unit 'unit-name' |
 | Compiler warning C5059 | runtime checks and address sanitizer is not currently supported - disabling runtime checks |
@@ -220,7 +220,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C5237 | cannot resolve header unit entry '*name*' to a header file in '*filename*'; ignoring entry |
 | Compiler warning (level 1) C5238 | file system error: cannot open '*filename*' for reading; ignoring |
 | Compiler warning (level 4) C5239 | '*symbol*': potentially-throwing function called from a function declared `__declspec(nothrow)`. Undefined behavior may occur if an exception is thrown. |
-| Compiler warning (level 4) C5240 | '*name*': attribute is ignored in this syntactic position |
+| [Compiler warning (level 4) C5240](c5240.md) | '*attribute-name*': attribute is ignored in this syntactic position |
 | Compiler warning (level 1) C5241 | '`/exportHeader`' usage to lookup header-name is deprecated; prefer '/headerName:name value=filename' |
 | Compiler warning (level 1) C5242 | syntax error in pragma '*identifier*' |
 | [Compiler warning (level 1, off) C5243](c5243.md) | '*type-name*': using incomplete class 'class-name' can cause potential one definition rule violation due to ABI limitation |
@@ -238,5 +238,5 @@ The articles in this section of the documentation explain a subset of the warnin
 
 ## See also
 
-[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md)\
 [Compiler warnings C4000 - C5999](compiler-warnings-c4000-c5999.md)

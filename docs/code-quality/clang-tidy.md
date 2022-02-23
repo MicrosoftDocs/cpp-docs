@@ -1,7 +1,7 @@
 ---
 title: Using Clang-Tidy in Visual Studio
 description: "How to use Clang-Tidy in Visual Studio for Microsoft C++ code analysis."
-ms.date: 02/19/2020
+ms.date: 02/22/2022
 ms.topic: "conceptual"
 f1_keywords: ["vs.codeanalysis.clangtidy"]
 ---
@@ -9,7 +9,7 @@ f1_keywords: ["vs.codeanalysis.clangtidy"]
 
 ::: moniker range="<=msvc-150"
 
-Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
+Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019 or later. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
@@ -45,11 +45,11 @@ Clang-Tidy runs result in warnings displayed in the Error List, and as in-editor
 
 ## Clang-Tidy configuration
 
-You can configure the checks that clang-tidy runs inside Visual Studio via the **Clang-Tidy Checks** option. This input is provided to the **`--checks`** argument of the tool. Any further configuration can be included in custom *`.clang-tidy`* files. For more information, see the [Clang-Tidy documentation on LLVM.org](https://clang.llvm.org/extra/clang-tidy/).
+By default, Clang-Tidy does not set any checks when enabled. To see the list of checks in the command-line version, run `clang-tidy -list-checks` in a developer command prompt. You can configure the checks that Clang-Tidy runs inside Visual Studio. In the project Property Pages dialog, open the **Configuration Properties** > **Code Analysis** > **Clang-Tidy** page. Enter checks to run in the **Clang-Tidy Checks** property. A good default set is `clang-analyzer-*`. This property value is provided to the **`--checks`** argument of the tool. Any further configuration can be included in custom *`.clang-tidy`* files. For more information, see the [Clang-Tidy documentation on LLVM.org](https://clang.llvm.org/extra/clang-tidy/).
 
 ## See also
 
-- [Clang/LLVM Support for MSBuild Projects](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
-- [Clang/LLVM Support for CMake Projects](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)
+- [Clang/LLVM support for MSBuild projects](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
+- [Clang/LLVM support for CMake projects](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)
 
 ::: moniker-end
