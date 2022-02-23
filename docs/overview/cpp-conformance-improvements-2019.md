@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
-ms.date: 10/23/2021
+ms.date: 02/22/2022
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2019
@@ -318,7 +318,7 @@ The Microsoft C++ team was recently made aware of a security issue in which the 
 
 The only use of inline assembler within a lambda expression that we have found 'in the wild' was to capture the return address. In this scenario, you can capture the return address on all platforms simply by using a compiler intrinsic `_ReturnAddress()`.
 
-The following code produces C7552 in both Visual Studio 2017 15.9 and in Visual Studio 2019:
+The following code produces [C7553](../error-messages/compiler-errors-2/compiler-error-c7553.md) in Visual Studio 2017 15.9 and later versions of Visual Studio:
 
 ```cpp
 #include <cstdio>
@@ -330,7 +330,7 @@ int f()
 
     auto lambda = [&]
     {
-        __asm {  // C7552: inline assembler is not supported in a lambda
+        __asm {  // C7553: inline assembler is not supported in a lambda
 
             mov eax, x
             mov y, eax
@@ -586,7 +586,7 @@ int main()
 
 ### `noexcept` `constexpr` functions
 
-**`constexpr`** functions are no longer considered **`noexcept`** by default when used in a constant expression. This behavior change comes from the resolution of Core Working Group (CWG) [1351](https://wg21.link/cwg1351) and is enabled in [`/permissive-`](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
+**`constexpr`** functions are no longer considered **`noexcept`** by default when used in a constant expression. This behavior change comes from the resolution of Core Working Group (CWG) [CWG 1351](https://wg21.link/cwg1351) and is enabled in [`/permissive-`](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
 
 ```cpp
 constexpr int f() { return 0; }
@@ -616,7 +616,7 @@ C++20 has deprecated the usual arithmetic conversions on operands, where:
 
 For more information, see [P1120R0](https://wg21.link/p1120r0).
 
-In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 C5054 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 enum E1 { a };
@@ -636,7 +636,7 @@ int main() {
 }
 ```
 
-Using a binary operation between an enumeration and a floating-point type is now a warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+Using a binary operation between an enumeration and a floating-point type is now a level 1 C5055 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 enum E1 { a };
@@ -656,7 +656,7 @@ int main() {
 
 ### Equality and relational comparisons of arrays
 
-Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces C5056 when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces level 1 warning C5056 when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 int main() {
