@@ -318,7 +318,7 @@ The Microsoft C++ team was recently made aware of a security issue in which the 
 
 The only use of inline assembler within a lambda expression that we have found 'in the wild' was to capture the return address. In this scenario, you can capture the return address on all platforms simply by using a compiler intrinsic `_ReturnAddress()`.
 
-The following code produces C7552 in both Visual Studio 2017 15.9 and in Visual Studio 2019:
+The following code produces [C7553](../error-messages/compiler-errors-2/compiler-error-c7553.md) in Visual Studio 2017 15.9 and later versions of Visual Studio:
 
 ```cpp
 #include <cstdio>
@@ -330,7 +330,7 @@ int f()
 
     auto lambda = [&]
     {
-        __asm {  // C7552: inline assembler is not supported in a lambda
+        __asm {  // C7553: inline assembler is not supported in a lambda
 
             mov eax, x
             mov y, eax
@@ -586,7 +586,7 @@ int main()
 
 ### `noexcept` `constexpr` functions
 
-**`constexpr`** functions are no longer considered **`noexcept`** by default when used in a constant expression. This behavior change comes from the resolution of Core Working Group (CWG) [1351](https://wg21.link/cwg1351) and is enabled in [`/permissive-`](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
+**`constexpr`** functions are no longer considered **`noexcept`** by default when used in a constant expression. This behavior change comes from the resolution of Core Working Group (CWG) [CWG 1351](https://wg21.link/cwg1351) and is enabled in [`/permissive-`](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
 
 ```cpp
 constexpr int f() { return 0; }
