@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
-ms.date: 10/23/2021
+ms.date: 02/22/2022
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2019
@@ -616,7 +616,7 @@ C++20 has deprecated the usual arithmetic conversions on operands, where:
 
 For more information, see [P1120R0](https://wg21.link/p1120r0).
 
-In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 C5054 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 enum E1 { a };
@@ -636,7 +636,7 @@ int main() {
 }
 ```
 
-Using a binary operation between an enumeration and a floating-point type is now a warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+Using a binary operation between an enumeration and a floating-point type is now a level 1 C5055 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 enum E1 { a };
@@ -656,7 +656,7 @@ int main() {
 
 ### Equality and relational comparisons of arrays
 
-Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces C5056 when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces level 1 warning C5056 when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 int main() {
