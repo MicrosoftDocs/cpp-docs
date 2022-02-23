@@ -29,14 +29,14 @@ For information about how to enable output messages for the auto-parallelizer, s
 
 1. Modify the **Enable Parallel Code Generation** property. Choose **OK** or **Apply** to save your changes.
 
-### To set the /Qpar compiler option programmatically
+### To set the `/Qpar` compiler option programmatically
 
 - Use the code example in <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## See also
 
-[/Q options (Low-level operations)](q-options-low-level-operations.md)\
-[/Qpar-report (Auto-parallelizer reporting level)](qpar-report-auto-parallelizer-reporting-level.md)\
+[`/Q` options (Low-level operations)](q-options-low-level-operations.md)\
+[`/Qpar-report` (Auto-parallelizer reporting level)](qpar-report-auto-parallelizer-reporting-level.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)\
 [`#pragma loop()`](../../preprocessor/loop.md)\
