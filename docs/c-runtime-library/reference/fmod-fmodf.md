@@ -47,11 +47,11 @@ Floating-point values.
 
 ## Return Value
 
-**`fmod`** returns the floating-point remainder of *`x`* / *`y`*. If the value of *`y`* is 0.0, **`fmod`** returns a quiet NaN. For information about representation of a quiet NaN by the **`printf`** family, see [printf](printf-printf-l-wprintf-wprintf-l.md).
+**`fmod`** returns the floating-point remainder of `x / y`. If the value of *`y`* is 0.0, **`fmod`** returns a quiet `NaN`. For information about representation of a quiet `NaN` by the **`printf`** family, see [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
 
-The **`fmod`** function calculates the floating-point remainder *f* of *`x`* / *`y`* such that *`x`* = *i* \* *`y`* + *`f`*, where *`i`* is an integer, *`f`* has the same sign as *`x`*, and the absolute value of *`f`* is less than the absolute value of *`y`*.
+The **`fmod`** function calculates the floating-point remainder *`f`* of `x / y` such that `x = i * y + f`, where *`i`* is an integer, *`f`* has the same sign as *`x`*, and the absolute value of *`f`* is less than the absolute value of *`y`*.
 
 C++ allows overloading, so you can call overloads of **`fmod`** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`fmod`** always takes two **`double`** arguments and returns a **`double`**.
 
