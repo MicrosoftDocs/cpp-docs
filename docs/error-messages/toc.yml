@@ -3123,6 +3123,8 @@ items:
           href: compiler-errors-2/compiler-error-c7510.md
         - name: Compiler error C7536
           href: compiler-errors-2/compiler-error-c7536.md
+        - name: Compiler error C7553
+          href: compiler-errors-2/compiler-error-c7553.md
         - name: Compiler error C7626
           href: compiler-warnings/c5208.md
 - name: Compiler warnings C4000 Through C5999
@@ -4301,6 +4303,8 @@ items:
           href: compiler-warnings/c5105.md
         - name: Compiler warning (level 1) C5208
           href: compiler-warnings/c5208.md
+        - name: Compiler warning (level 1) C5240
+          href: compiler-warnings/c5240.md
         - name: Compiler warning (level 1) C5243
           href: compiler-warnings/c5243.md
         - name: Compiler warning (level 1) C5247
