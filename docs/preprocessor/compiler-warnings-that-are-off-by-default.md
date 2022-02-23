@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: 12/01/2021
+ms.date: 02/22/2022
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
@@ -152,7 +152,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5219 (level 2) | implicit conversion from '*type-1*' to '*type-2*', possible loss of data <sup>16.7</sup> |
 | C5220 (level 4) | '*member*': a non-static data member with a volatile qualified type no longer implies that<br/> compiler generated copy/move constructors and copy/move assignment operators are not trivial <sup>16.7</sup> |
 | C5233 (level 4) | explicit lambda capture '*identifier*' is not used <sup>16.10</sup> |
-| C5240 (level 4) | '*attribute-name*': attribute is ignored in this syntactic position <sup>16.10</sup> |
+| [C5240 (level 4)](../error-messages/compiler-warnings/c5240.md)  | '*attribute-name*': attribute is ignored in this syntactic position <sup>16.10</sup> |
 | [C5243 (level 1)](../error-messages/compiler-warnings/c5247.md) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
 | C5245 (level 4) | '*function*': unreferenced function with internal linkage has been removed |
 | C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
