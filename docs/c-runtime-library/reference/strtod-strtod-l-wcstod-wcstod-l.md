@@ -77,9 +77,9 @@ If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan
 
 **`strtod`** expects *`strSource`* to point to a string of one of the following forms:
 
-[*whitespace*] [*sign*] {*digits* [*radix* *digits*] &#124; *radix* *digits*} [{**e** &#124; **E**} [*sign*] *digits*]\
-[*whitespace*] [*sign*] {**0x** &#124; **0X**} {*hexdigits* [*radix* *hexdigits*] &#124; *radix* *hexdigits*} [{**p** &#124; **P**} [*sign*] *digits*]\
-[*whitespace*] [*sign*] {**`INF`** &#124; **INFINITY**}\
+[*whitespace*] [*sign*] {*digits* [*radix* *digits*] | *radix* *digits*} [{**`e`** | **`E`**} [*sign*] *digits*]\
+[*whitespace*] [*sign*] {**`0x`** | **`0X`**} {*hexdigits* [*radix* *hexdigits*] | *radix* *hexdigits*} [{**`p`** | **`P`**} [*sign*] *digits*]\
+[*whitespace*] [*sign*] {**`INF`** | **`INFINITY`**}\
 [*whitespace*] [*sign*] **`NAN`** [*sequence*]
 
 The optional leading *whitespace* may consist of space and tab characters, which are ignored.\
@@ -99,7 +99,7 @@ In either form, if there isn't an exponent part or a radix point character, a ra
 
 Case is ignored in both the **`INF`** and **`NAN`** forms. The first character that doesn't fit one of these forms stops the scan.
 
-The UCRT versions of these functions don't support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code. The UCRT versions support hexadecimal strings and round-tripping of `INF` and `NAN` values, which weren't supported in earlier versions. This can also cause breaking changes in your code. For example, the string "0x1a" would be interpreted by **`strtod`** as 0.0 in previous versions, but as 26.0 in the UCRT version.
+The UCRT versions of these functions don't support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code. The UCRT versions support hexadecimal strings and round-tripping of `INF` and `NAN` values, which weren't supported in earlier versions. This can also cause breaking changes in your code. For example, the string "`0x1a`" would be interpreted by **`strtod`** as 0.0 in previous versions, but as 26.0 in the UCRT version.
 
 ## Requirements
 

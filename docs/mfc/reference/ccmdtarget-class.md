@@ -115,7 +115,7 @@ BOOL DoOleVerb(
 Numerical identifier of the verb.
 
 *`lpMsg`*\
-Pointer to the [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure describing the event (such as a double-click) that invoked the verb.
+Pointer to the [`MSG`](/windows/win32/api/winuser/ns-winuser-msg) structure describing the event (such as a double-click) that invoked the verb.
 
 *`hWndParent`*\
 Handle of the document window containing the object.
