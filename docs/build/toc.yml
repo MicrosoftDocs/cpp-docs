@@ -1168,12 +1168,16 @@ items:
                       href: ../build/reference/nmake-function-filterout.md
                     - name: findstring, findstringi
                       href: ../build/reference/nmake-function-findstring.md
+                    - name: lowercase
+                      href: ../build/reference/nmake-function-lowercase.md
                     - name: patsubst, patsubsti
                       href: ../build/reference/nmake-function-patsubst.md
                     - name: strip
                       href: ../build/reference/nmake-function-strip.md
                     - name: subst, substi
                       href: ../build/reference/nmake-function-subst.md
+                    - name: uppercase
+                      href: ../build/reference/nmake-function-uppercase.md
                 - name: Special NMAKE macros
                   href: ../build/reference/special-nmake-macros.md
             - name: Inference rules

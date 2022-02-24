@@ -93,7 +93,9 @@ $(filter \\a%f,\\abcdef) # Evaluates to "\\abcdef" - any `\\` that isn't directl
 | Function | Purpose |
 |--|--|
 | [`findstring`, `findstringi`](nmake-function-findstring.md) | Checks if the input contains a string. |
+| [`lowercase`](nmake-function-lowercase.md) | Converts a string to lowercase. |
 | [`subst`, `substi`](nmake-function-subst.md) | Replaces all instances of one string with another. |
+| [`uppercase`](nmake-function-uppercase.md) | Converts a string to uppercase. |
 
 #### List functions
 
