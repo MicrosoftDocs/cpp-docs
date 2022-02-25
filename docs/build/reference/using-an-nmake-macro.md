@@ -88,28 +88,21 @@ $(filter \\a%f,\\abcdef) # Evaluates to "\\abcdef" - any `\\` that isn't directl
 
 ### <a name="functions-by-category"> Functions by category
 
-#### Text functions
-
-| Function | Purpose |
-|--|--|
-| [`findstring`, `findstringi`](nmake-function-findstring.md) | Checks if the input contains a string. |
-| [`subst`, `substi`](nmake-function-subst.md) | Replaces all instances of one string with another. |
-
-#### List functions
-
-| Function | Purpose |
-|--|--|
-| [`filter`, `filteri`](nmake-function-filter.md) | Keeps items in a list that match at least one pattern. |
-| [`filterout`, `filterouti`](nmake-function-filterout.md) | Keeps items in a list that don't match any patterns. |
-| [`patsubst`, `patsubsti`](nmake-function-patsubst.md) | Transforms each item that matches a pattern, items that don't match are left as-is. |
-| [`strip`](nmake-function-strip.md) | Cleans the whitespace in and around a list of items. |
-
-#### File path functions
-
-| Function | Purpose |
-|--|--|
-| [`abspath`](nmake-function-abspath.md) | Gets the absolute path for each item in a list. |
-| [`basename`](nmake-function-basename.md) | Gets the base name for each item in a list. |
+| Function | Purpose | Supported |
+|--|--|--|
+| **Text functions** | **Purpose** | **Supported** |
+| &emsp;[`findstring`, `findstringi`](nmake-function-findstring.md) | Checks if the input contains a string. | VS 2022 17.0 |
+| &emsp;[`lowercase`](nmake-function-lowercase.md) | Converts a string to lowercase. | VS 2022 17.2 |
+| &emsp;[`subst`, `substi`](nmake-function-subst.md) | Replaces all instances of one string with another. | VS 2022 17.0 |
+| &emsp;[`uppercase`](nmake-function-uppercase.md) | Converts a string to uppercase. | VS 2022 17.2 |
+| **List functions** | **Purpose** | **Supported** |
+| &emsp;[`filter`, `filteri`](nmake-function-filter.md) | Keeps items in a list that match at least one pattern. | VS 2022 17.0 |
+| &emsp;[`filterout`, `filterouti`](nmake-function-filterout.md) | Keeps items in a list that don't match any patterns. | VS 2022 17.0 |
+| &emsp;[`patsubst`, `patsubsti`](nmake-function-patsubst.md) | Transforms each item that matches a pattern, items that don't match are left as-is. | VS 2022 17.1 |
+| &emsp;[`strip`](nmake-function-strip.md) | Cleans the whitespace in and around a list of items. | VS 2022 17.0 |
+| **File path functions** | **Purpose** | **Supported** |
+| &emsp;[`abspath`](nmake-function-abspath.md) | Gets the absolute path for each item in a list. | VS 2022 17.1 |
+| &emsp;[`basename`](nmake-function-basename.md) | Gets the base name for each item in a list. | VS 2022 17.1 |
 
 ::: moniker-end
 

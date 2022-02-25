@@ -4,20 +4,19 @@ title: "<cstdlib>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstdlib>"]
 helpviewer_keywords: ["cstdlib header"]
-ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
 ---
 # `<cstdlib>`
 
-Includes the C Standard library header \<stdlib.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
+Includes the C Standard library header `<stdlib.h>` and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 
 > [!NOTE]
-> \<stdlib.h> doesn't include the type **`wchar_t`**.
+> `<stdlib.h>` doesn't include the type **`wchar_t`**.
 
 ## Requirements
 
-**Header**: \<cstdlib>
+**Header**: `<cstdlib>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## Namespace and Macros
 
@@ -49,16 +48,16 @@ extern "C++" using compare-pred = int(const void*, const void*);
 
 |Function|Description|
 |-|-|
-|[_Exit](#_exit)|Terminates program without using destructors or registered functions.|
-|[abort](#abort)|Terminates program without using destructors.|
-|[atexit](#atexit)|Registers function for program termination.|
-|[exit](#exit)|Destroys objects with thread and static storage, then returns control.|
-|[at_quick_exit](#at_quick_exit)|Registers function without arguments for program termination.|
-|[quick_exit](#quick_exit)|Registers function with preserved objects for program termination.|
-|[getenv](#getenv)|See C standard library reference.|
-|[system](#system)|See C standard library reference.|
+|[`_Exit`](#_exit)|Terminates program without using destructors or registered functions.|
+|[`abort`](#abort)|Terminates program without using destructors.|
+|[`atexit`](#atexit)|Registers function for program termination.|
+|[`exit`](#exit)|Destroys objects with thread and static storage, then returns control.|
+|[`at_quick_exit`](#at_quick_exit)|Registers function without arguments for program termination.|
+|[`quick_exit`](#quick_exit)|Registers function with preserved objects for program termination.|
+|[`getenv`](#getenv)|See C standard library reference.|
+|[`system`](#system)|See C standard library reference.|
 
-### <a name="_exit"></a> _Exit
+### <a name="_exit"></a> `_Exit`
 
 ```cpp
 [[noreturn]] void _Exit(int status) noexcept;
@@ -68,7 +67,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 
 The program is terminated without executing destructors for objects of automatic, thread, or static storage duration and without calling functions passed to `atexit()`. The function `_Exit` is signal-safe.
 
-### <a name="abort"></a> abort
+### <a name="abort"></a> `abort`
 
 ```cpp
 [[noreturn]] void abort() noexcept;
@@ -78,7 +77,7 @@ The program is terminated without executing destructors for objects of automatic
 
 The program is terminated without executing destructors for objects of automatic, thread, or static storage duration and without calling functions passed to `atexit()`. The function `abort` is signal-safe.
 
-### <a name="at_quick_exit"></a> at_quick_exit
+### <a name="at_quick_exit"></a> `at_quick_exit`
 
 ```cpp
 int at_quick_exit(c-atexit-handler * func) noexcept;
@@ -91,9 +90,9 @@ Zero if the registration succeeds, non-zero if it fails.
 
 #### Remarks
 
-The `at_quick_exit()` functions register a function *func*, which is called without arguments when `quick_exit` is called. A call to `at_quick_exit()` that doesn't happen before all calls to `quick_exit` may not succeed. The `at_quick_exit()` functions don't introduce a data race. The order of registration may be indeterminate if `at_quick_exit` was called from more than one thread. Since `at_quick_exit` registrations are distinct from the `atexit` registrations, applications may need to call both registration functions using the same argument. MSVC supports the registration of at least 32 functions.
+The `at_quick_exit()` functions register a function *`func`*, which is called without arguments when `quick_exit()` is called. A call to `at_quick_exit()` that doesn't happen before all calls to `quick_exit()` may not succeed. The `at_quick_exit()` functions don't introduce a data race. The order of registration may be indeterminate if `at_quick_exit()` was called from more than one thread. Since `at_quick_exit()` registrations are distinct from the `atexit()` registrations, applications may need to call both registration functions using the same argument. MSVC supports the registration of at least 32 functions.
 
-### <a name="atexit"></a> atexit
+### <a name="atexit"></a> `atexit`
 
 ```cpp
 int atexit(c-atexit-handler * func) noexcept;
@@ -102,13 +101,13 @@ int atexit(atexit-handler * func) noexcept;
 
 #### Remarks
 
-The `atexit()` functions register the function pointed to by *func* to be called without arguments at normal program termination. A call to `atexit()` that doesn't happen before a call to `exit()` may not succeed. The `atexit()` functions don't introduce a data race.
+The `atexit()` functions register the function pointed to by *`func`* to be called without arguments at normal program termination. A call to `atexit()` that doesn't happen before a call to `exit()` may not succeed. The `atexit()` functions don't introduce a data race.
 
 #### Return Value
 
 Returns zero if the registration succeeds, nonzero if it fails.
 
-### <a name="exit"></a> exit
+### <a name="exit"></a> `exit`
 
 ```cpp
 [[noreturn]] void exit(int status);
@@ -118,19 +117,19 @@ Returns zero if the registration succeeds, nonzero if it fails.
 
 First, objects with thread storage duration and associated with the current thread are destroyed.
 
-Next, objects with static storage duration are destroyed and functions registered by calling `atexit` are called. Automatic objects aren't destroyed when `exit()` is called. If control leaves a registered function called by `exit` because the function doesn't provide a handler for a thrown exception, `std::terminate()` is called. A function is called once for every time it's registered. Objects with automatic storage duration are all destroyed in a program whose `main` function contains no automatic objects and executes the call to `exit()`. Control can be transferred directly to such a `main` function by throwing an exception that's caught in `main`.
+Next, objects with static storage duration are destroyed and functions registered by calling `atexit()` are called. Automatic objects aren't destroyed when `exit()` is called. If control leaves a registered function called by `exit()` because the function doesn't provide a handler for a thrown exception, `std::terminate()` is called. A function is called once for every time it's registered. Objects with automatic storage duration are all destroyed in a program whose `main` function contains no automatic objects and executes the call to `exit()`. Control can be transferred directly to such a `main` function by throwing an exception that's caught in `main`.
 
-Next, all open C streams (as mediated by the function signatures declared in \<cstdio>) with unwritten buffered data are flushed, all open C streams are closed, and all files created by calling `tmpfile()` are removed.
+Next, all open C streams (as mediated by the function signatures declared in `<cstdio>`) with unwritten buffered data are flushed, all open C streams are closed, and all files created by calling `tmpfile()` are removed.
 
-Finally, control is returned to the host environment. When *status* is zero or EXIT_SUCCESS, an implementation-defined form of the status successful termination is returned. MSVC returns a value of zero. If *status* is EXIT_FAILURE, MSVC returns a value of 3. Otherwise, MSVC returns the *status* parameter value.
+Finally, control is returned to the host environment. When *`status`* is zero or `EXIT_SUCCESS`, an implementation-defined form of the status successful termination is returned. MSVC returns a value of zero. If *`status`* is `EXIT_FAILURE`, MSVC returns a value of 3. Otherwise, MSVC returns the *`status`* parameter value.
 
-### <a name="getenv"></a> getenv
+### <a name="getenv"></a> `getenv`
 
 ```cpp
 char* getenv(const char* name);
 ```
 
-### <a name="quick_exit"></a> quick_exit
+### <a name="quick_exit"></a> `quick_exit`
 
 ```cpp
 [[noreturn]] void quick_exit(int status) noexcept;
@@ -138,9 +137,9 @@ char* getenv(const char* name);
 
 #### Remarks
 
-Generally, functions registered by calls to `at_quick_exit` are called in the reverse order of their registration. This order doesn't apply to functions registered after other registered functions have already been called. No objects are destroyed when `quick_exit` is called. If control leaves a registered function called by `quick_exit` because the function doesn't provide a handler for a thrown exception, `std::terminate()` is called. A function registered via `at_quick_exit` is invoked by the thread that calls `quick_exit`, which can be a different thread than the one that registered it. That means registered functions shouldn't rely on the identity of objects that have thread storage duration. After calling registered functions, `quick_exit` calls `_Exit(status)`. The standard file buffers aren't flushed. The function `quick_exit` is signal-safe when the functions registered with `at_quick_exit` are.
+Generally, functions registered by calls to `at_quick_exit()` are called in the reverse order of their registration. This order doesn't apply to functions registered after other registered functions have already been called. No objects are destroyed when `quick_exit()` is called. If control leaves a registered function called by `quick_exit()` because the function doesn't provide a handler for a thrown exception, `std::terminate()` is called. A function registered via `at_quick_exit()` is invoked by the thread that calls `quick_exit()`, which can be a different thread than the one that registered it. That means registered functions shouldn't rely on the identity of objects that have thread storage duration. After calling registered functions, `quick_exit()` calls `_Exit(status)`. The standard file buffers aren't flushed. The function `quick_exit()` is signal-safe when the functions registered with `at_quick_exit()` are.
 
-### <a name="system"></a> system
+### <a name="system"></a> `system`
 
 ```cpp
 int system(const char* string);
