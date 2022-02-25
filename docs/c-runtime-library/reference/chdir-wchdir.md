@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tchdir", "_chdir", "_wchdir", "_tchdir", "wchdir"]
 helpviewer_keywords: ["_tchdir function", "_chdir function", "_wchdir function", "tchdir function", "wchdir function", "chdir function", "directories [C++], changing"]
-ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
 ---
-# _chdir, _wchdir
+# `_chdir`, `_wchdir`
 
 Changes the current working directory.
 
@@ -27,16 +26,16 @@ int _wchdir(
 
 ### Parameters
 
-*dirname*<br/>
+*`dirname`*\
 Path of new working directory.
 
 ## Return Value
 
-These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path could not be found, **errno** is set to **ENOENT**. If *dirname* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns -1.
+These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path couldn't be found, **`errno`** is set to **`ENOENT`**. If *`dirname`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns -1.
 
 ## Remarks
 
-The **_chdir** function changes the current working directory to the directory specified by *dirname*. The *dirname* parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in *dirname*, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:
+The **`_chdir`** function changes the current working directory to the directory specified by *`dirname`*. The *`dirname`* parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in *`dirname`*, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:
 
 ```C
 _chdir("c:\temp");
@@ -44,22 +43,22 @@ _chdir("c:\temp");
 
 When you use the optional backslash character (**`\`**) in paths, you must place two backslashes (**`\\`**) in a C string literal to represent a single backslash (**`\`**).
 
-**_wchdir** is a wide-character version of **_chdir**; the *dirname* argument to **_wchdir** is a wide-character string. **_wchdir** and **_chdir** behave identically otherwise.
+**`_wchdir`** is a wide-character version of **`_chdir`**; the *`dirname`* argument to **`_wchdir`** is a wide-character string. **`_wchdir`** and **`_chdir`** behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mapping:
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tchdir**|**_chdir**|**_chdir**|**_wchdir**|
+|**`_tchdir`**|**`_chdir`**|**`_chdir`**|**`_wchdir`**|
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**_chdir**|\<direct.h>|\<errno.h>|
-|**_wchdir**|\<direct.h> or \<wchar.h>|\<errno.h>|
+|**`_chdir`**|`<direct.h>`|`<errno.h>`|
+|**`_wchdir`**|`<direct.h>` or `<wchar.h>`|`<errno.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -124,7 +123,7 @@ Directory of c:\windows
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Directory Control](../../c-runtime-library/directory-control.md)\
+[`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\
+[`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)\
+[`system`, `_wsystem`](system-wsystem.md)
