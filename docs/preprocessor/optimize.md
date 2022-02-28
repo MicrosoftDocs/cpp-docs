@@ -24,7 +24,7 @@ The *optimization-list* can be zero or more of the parameters shown in the follo
 
 | Parameter(s) | Type of optimization |
 |--------------------|--------------------------|
-| **`g`** | Enable global optimizations. |
+| **`g`** | Enable global optimizations. Deprecated, see https://docs.microsoft.com/en-us/cpp/build/reference/og-global-optimizations?view=msvc-160|
 | **`s`** or **`t`** | Specify short or fast sequences of machine code. |
 | **`y`** | Generate frame pointers on the program stack. |
 
