@@ -59,7 +59,7 @@ In Visual Studio 2022, when you start your app in the debugger, you can use the 
 
 - The Project menu in CMake projects has been streamlined and exposes options to "Delete Cache and Reconfigure" and "View Cache".
 
-- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689r3](https://wg21.link/P1689r3). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
+- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689R4](https://wg21.link/P1689r4). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
 
 ### Standard Library improvements
 
