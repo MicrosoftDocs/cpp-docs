@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 You can provide hints to the code analysis tool for C/C++ code that will help the analysis process and reduce warnings. To provide additional information, use the following function macro:
 
-`_Analysis_assume( expr )`
+`_Analysis_assume_( expr )`
 
 *`expr`* - any expression that is assumed to evaluate to true.
 
