@@ -26,7 +26,7 @@ Three common output stream situations involve mode options:
    // Equivalent to above
    ```
 
-- Appending records to an existing file or creating one if it does not exist.
+- Appending records to an existing file or creating one if it doesn't exist.
 
    ```cpp
    ofstream ofile("FILENAME", ios::app);
@@ -79,11 +79,11 @@ int main( )
 }
 ```
 
-The `write` function does not stop when it reaches a null character, so the complete class structure is written. The function takes two arguments: a **`char`** pointer and a count of characters to write. Note the required cast to **`char *`** before the address of the structure object.
+The `write` function doesn't stop when it reaches a `NULL` character, so the complete class structure is written. The function takes two arguments: a **`char`** pointer and a count of characters to write. Note the required cast to **`char *`** before the address of the structure object.
 
 ## The seekp and tellp Functions
 
-An output file stream keeps an internal pointer that points to the position where data is to be written next. The `seekp` member function sets this pointer and thus provides random-access disk file output. The `tellp` member function returns the file position. For examples that use the input stream equivalents to `seekp` and `tellp`, see [The seekg and tellg Functions](../standard-library/input-stream-member-functions.md).
+An output file stream keeps an internal pointer that points to the position where data is to be written next. The `seekp` member function sets this pointer and thus provides random-access disk file output. The `tellp` member function returns the file position. For examples that use the input stream equivalents to `seekp` and `tellp`, see [The `seekg` and `tellg` Functions](../standard-library/input-stream-member-functions.md).
 
 ## The close Function for Output Streams
 
@@ -97,14 +97,14 @@ Use these member functions to test for errors while writing to a stream:
 
 |Function|Return value|
 |--------------|------------------|
-|[`bad`](basic-ios-class.md#bad)|Returns **`true`** if there is an unrecoverable error.|
-|[`fail`](basic-ios-class.md#fail)|Returns **`true`** if there is an unrecoverable error or an "expected" condition, such as a conversion error, or if the file is not found. Processing can often resume after a call to `clear` with a zero argument.|
-|[`good`](basic-ios-class.md#good)|Returns **`true`** if there is no error condition (unrecoverable or otherwise) and the end-of-file flag is not set.|
+|[`bad`](basic-ios-class.md#bad)|Returns **`true`** if there's an unrecoverable error.|
+|[`fail`](basic-ios-class.md#fail)|Returns **`true`** if there's an unrecoverable error or an "expected" condition, such as a conversion error, or if the file isn't found. Processing can often resume after a call to `clear` with a zero argument.|
+|[`good`](basic-ios-class.md#good)|Returns **`true`** if there's no error condition (unrecoverable or otherwise) and the end-of-file flag isn't set.|
 |[`eof`](basic-ios-class.md#eof)|Returns **`true`** on the end-of-file condition.|
 |[`clear`](basic-ios-class.md#clear)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
 |[`rdstate`](basic-ios-class.md#rdstate|Returns the current error state.|
 
-The **!** operator is overloaded to perform the same function as the `fail` function. Thus the expression:
+The **`!`** operator is overloaded to perform the same function as the `fail` function. Thus the expression:
 
 ```cpp
 if(!cout)...
@@ -128,7 +128,7 @@ is equal to:
 if(!cout.fail())...
 ```
 
-The **`void*()`** operator is not equivalent to `good` because it does not test for the end of file.
+The **`void*()`** operator isn't equivalent to `good` because it doesn't test for the end of file.
 
 ## See also
 
