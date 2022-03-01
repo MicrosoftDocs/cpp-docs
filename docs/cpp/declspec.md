@@ -51,9 +51,9 @@ White space separates the declaration modifier sequence. Examples appear in late
 
 Extended attribute grammar supports these Microsoft-specific storage-class attributes: [`align`](../cpp/align-cpp.md), [`allocate`](../cpp/allocate.md), [`allocator`](../cpp/allocator.md), [`appdomain`](../cpp/appdomain.md), [`code_seg`](../cpp/code-seg-declspec.md), [`deprecated`](../cpp/deprecated-cpp.md), [`dllexport`](../cpp/dllexport-dllimport.md), [`dllimport`](../cpp/dllexport-dllimport.md), [`empty_bases`](../cpp/empty-bases.md), [`jitintrinsic`](../cpp/jitintrinsic.md), [`naked`](../cpp/naked-cpp.md), [`noalias`](../cpp/noalias.md), [`noinline`](../cpp/noinline.md), [`noreturn`](../cpp/noreturn.md), [`nothrow`](../cpp/nothrow-cpp.md), [`novtable`](../cpp/novtable.md), [`no_sanitize_address`](../cpp/no-sanitize-address.md),[`process`](../cpp/process.md), [`restrict`](../cpp/restrict.md), [`safebuffers`](../cpp/safebuffers.md), [`selectany`](../cpp/selectany.md), [`spectre`](../cpp/spectre.md), and [`thread`](../cpp/thread.md). It also supports these COM-object attributes: [`property`](../cpp/property-cpp.md) and [`uuid`](../cpp/uuid-cpp.md).
 
-The **`code_seg`**, **`dllexport`**, **`dllimport`**, **`naked`**, **`noalias`**, **`nothrow`**, **`no_sanitize_address`**, **`property`**, **`restrict`**, **`selectany`**, **`thread`**, and **`uuid`** storage-class attributes are properties only of the declaration of the object or function to which they're applied. The **`thread`** attribute affects data and objects only. The **`naked`** and **`spectre`** attributes affect functions only. The **`dllimport`** and **`dllexport`** attributes affect functions, data, and objects. The **`property`**, **`selectany`**, and **`uuid`** attributes affect COM objects.
+The **`code_seg`**, **`dllexport`**, **`dllimport`**, **`empty_bases`**, **`naked`**, **`noalias`**, **`nothrow`**, **`no_sanitize_address`**, **`property`**, **`restrict`**, **`selectany`**, **`thread`**, and **`uuid`** storage-class attributes are properties only of the declaration of the object or function to which they're applied. The **`thread`** attribute affects data and objects only. The **`naked`** and **`spectre`** attributes affect functions only. The **`dllimport`** and **`dllexport`** attributes affect functions, data, and objects. The **`property`**, **`selectany`**, and **`uuid`** attributes affect COM objects.
 
-For compatibility with previous versions, **`_declspec`** is a synonym for **`__declspec`** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **`_declspec`** is a synonym for **`__declspec`** unless compiler option [`/Za` (Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 The **`__declspec`** keywords should be placed at the beginning of a simple declaration. The compiler ignores, without warning, any **`__declspec`** keywords placed after * or & and in front of the variable identifier in a declaration.
 
@@ -73,9 +73,9 @@ In this case, the attribute applies to `X`.
 
 The general guideline for using the **`__declspec`** attribute for simple declarations is as follows:
 
-*decl-specifier-seq* *init-declarator-list*;
+*`decl-specifier-seq`* *`init-declarator-list`* `;`
 
-The *decl-specifier-seq* should contain, among other things, a base type (for example, **`int`**, **`float`**, a **`typedef`**, or a class name), a storage class (for example, **`static`**, **`extern`**), or the **`__declspec`** extension. The *init-declarator-list* should contain, among other things, the pointer part of declarations. For example:
+The *`decl-specifier-seq`* should contain, among other things, a base type (for example, **`int`**, **`float`**, a **`typedef`**, or a class name), a storage class (for example, **`static`**, **`extern`**), or the **`__declspec`** extension. The *`init-declarator-list`* should contain, among other things, the pointer part of declarations. For example:
 
 ```cpp
 __declspec(selectany) int * pi1 = 0;   //Recommended, selectany & int both part of decl-specifier
