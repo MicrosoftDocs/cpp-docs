@@ -39,7 +39,7 @@ Time of the last write to file. This time is stored in UTC format. To convert to
 Length of the file in bytes.
 
 `char name`[ `_MAX_PATH`]
-`NULL` terminated name of matched file or directory, without the path.
+Null-terminated name of matched file or directory, without the path.
 
 In file systems that don't support the creation and last access times of a file, such as the FAT system, the `time_create` and `time_access` fields are always `-1L`.
 

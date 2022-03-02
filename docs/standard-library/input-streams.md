@@ -12,7 +12,7 @@ The `istream` class is best used for sequential text-mode input. You can configu
 
 The `ifstream` class supports disk file input. If you need an input-only disk file, construct an object of class `ifstream`. You can specify binary or text-mode data. If you specify a filename in the constructor, the file is automatically opened when the object is constructed. Otherwise, you can use the `open` function after invoking the default constructor. Many formatting options and member functions apply to `ifstream` objects. All functionality of the base classes `ios` and `istream` is included in `ifstream`.
 
-Like the library function `sscanf_s`, the `istringstream` class supports input from in-memory strings. To extract data from a character array that has a `NULL` terminator, allocate and initialize the string, then construct an object of class `istringstream`.
+Like the library function `sscanf_s`, the `istringstream` class supports input from in-memory strings. To extract data from a character array that has a null terminator, allocate and initialize the string, then construct an object of class `istringstream`.
 
 ## In This Section
 

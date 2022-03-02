@@ -95,7 +95,7 @@ CInternetSession(
 ### Parameters
 
 *`pstrAgent`*\
-A pointer to a string that identifies the name of the application or entity calling the Internet functions (for example, "Microsoft Internet Browser"). If *`pstrAgent`* is `NULL` (the default), the framework calls the global function [`AfxGetAppName`](application-information-and-management.md#afxgetappname), which returns a `NULL` terminated string containing an application's name. Some protocols use this string to identify your application to the server.
+A pointer to a string that identifies the name of the application or entity calling the Internet functions (for example, "Microsoft Internet Browser"). If *`pstrAgent`* is `NULL` (the default), the framework calls the global function [`AfxGetAppName`](application-information-and-management.md#afxgetappname), which returns a null-terminated string containing an application's name. Some protocols use this string to identify your application to the server.
 
 *`dwContext`*\
 The context identifier for the operation. *`dwContext`* identifies the operation's status information returned by [`CInternetSession::OnStatusCallback`](#onstatuscallback). The default is set to 1; however, you can explicitly assign a specific context ID for the operation. The object and any work it does will be associated with that context ID.
@@ -279,10 +279,10 @@ CFtpConnection* GetFtpConnection(
 A pointer to a string containing the FTP server name.
 
 *`pstrUserName`*\
-Pointer to a `NULL` terminated string that specifies the name of the user to log in. If `NULL`, the default is anonymous.
+Pointer to a null-terminated string that specifies the name of the user to log in. If `NULL`, the default is anonymous.
 
 *`pstrPassword`*\
-A pointer to a `NULL` terminated string that specifies the password to use to log in. If both *`pstrPassword`* and *`pstrUserName`* are `NULL`, the default anonymous password is the user's email name. If *`pstrPassword`* is `NULL` (or an empty string) but *`pstrUserName`* isn't `NULL`, a blank password is used. The following table describes the behavior for the four possible settings of *`pstrUserName`* and *`pstrPassword`*:
+A pointer to a null-terminated string that specifies the password to use to log in. If both *`pstrPassword`* and *`pstrUserName`* are `NULL`, the default anonymous password is the user's email name. If *`pstrPassword`* is `NULL` (or an empty string) but *`pstrUserName`* isn't `NULL`, a blank password is used. The following table describes the behavior for the four possible settings of *`pstrUserName`* and *`pstrPassword`*:
 
 | *`pstrUserName`*  | *`pstrPassword`*  | Username sent to FTP server | Password sent to FTP server |
 |-----------------|-----------------|-----------------------------|-----------------------------|
@@ -530,7 +530,7 @@ static BOOL SetCookie(
 ### Parameters
 
 *`pstrUrl`*\
-A pointer to a `NULL` terminated string that specifies the URL for which the cookie should be set.
+A pointer to a null-terminated string that specifies the URL for which the cookie should be set.
 
 *`pstrCookieName`*\
 A pointer to a string containing the name of the cookie.

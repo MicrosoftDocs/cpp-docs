@@ -8,7 +8,7 @@ helpviewer_keywords: ["Unicode, string objects"]
 
 Visual C++ provides several ways to manage string data:
 
-- [String Manipulation](../c-runtime-library/string-manipulation-crt.md) for working with C-style `NULL` terminated strings
+- [String Manipulation](../c-runtime-library/string-manipulation-crt.md) for working with C-style null-terminated strings
 
 - Win32 API functions for managing strings
 

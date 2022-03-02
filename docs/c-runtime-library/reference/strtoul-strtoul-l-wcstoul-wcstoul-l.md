@@ -43,7 +43,7 @@ unsigned long _wcstoul_l(
 ### Parameters
 
 *`strSource`*\
-`NULL` terminated string to convert.
+Null-terminated string to convert.
 
 *`endptr`*\
 Pointer to character that stops scan.
@@ -64,7 +64,7 @@ See [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-libr
 
 Each of these functions converts the input string *`strSource`* to an **`unsigned long`**.
 
-**`strtoul`** stops reading the string *`strSource`* at the first character it can’t recognize as part of a number. This may be the terminating `NULL` character, or it may be the first numeric character greater than or equal to *`base`*. The **`LC_NUMERIC`** category setting of the locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). **`strtoul`** and **`wcstoul`** use the current locale; **`_strtoul_l`** and **`_wcstoul_l`** are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**`strtoul`** stops reading the string *`strSource`* at the first character it can’t recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *`base`*. The **`LC_NUMERIC`** category setting of the locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). **`strtoul`** and **`wcstoul`** use the current locale; **`_strtoul_l`** and **`_wcstoul_l`** are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
 
