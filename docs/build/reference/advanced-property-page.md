@@ -42,7 +42,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 Allows you to specify a non-default location for the log file that's created whenever you build a project. The default location is specified by the macros `$(IntDir)$(MSBuildProjectName).log`.
 
-You can use project macros to change the directory location. See [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
+You can use project macros to change the directory location. For more information, see [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
 
 ### Preferred Build Tool Architecture
 
