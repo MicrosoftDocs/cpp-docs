@@ -11,7 +11,7 @@ This article describes how to implement consistent exception-handling in C++ cod
 
 Sometimes C++ code has to interface with code that doesn't use exceptions (non-exceptional code). Such an interface is known as an *exception boundary*. For example, you may want to call the Win32 function `CreateFile` in your C++ program. `CreateFile` doesn't throw exceptions. Instead, it sets error codes that can be retrieved by the `GetLastError` function. If your C++ program is non-trivial, then you probably prefer to have a consistent exception-based error-handling policy. And, you probably don't want to abandon exceptions just because you interface with non-exceptional code. You also don't want to mix exception-based and non-exception-based error policies in your C++ code.
 
-## Calling non-exceptional functions from C++
+## <a name="calling-non-exceptional-functions-from-c"></a> Call non-exceptional functions from C++
 
 When you call a non-exceptional function from C++, the idea is to wrap that function in a C++ function that detects any errors and then possibly throws an exception. When you design such a wrapper function, first decide which type of exception guarantee to provide: noexcept, strong, or basic. Second, design the function so that all resources, for example, file handles, are correctly released if an exception is thrown. Typically, it means that you use smart pointers or similar resource managers to own the resources. For more information about design considerations, see [How to: Design for exception safety](how-to-design-for-exception-safety.md).
 
@@ -152,7 +152,7 @@ int main ( int argc, char* argv[] )
 }
 ```
 
-## Calling exceptional code from non-exceptional code
+## <a name="calling-exceptional-code-from-non-exceptional-code"></a> Call exceptional code from non-exceptional code
 
 C++ functions that are declared as `extern "C"` can be called by C programs. C++ COM servers can be consumed by code written in any number of different languages. When you implement public exception-aware functions in C++ to be called by non-exceptional code, the C++ function must not allow any exceptions to propagate back to the caller. Such callers have no way to catch or handle C++ exceptions. The program may terminate, leak resources, or cause undefined behavior.
 
@@ -230,7 +230,7 @@ bool DiffFiles3(const string& file1, const string& file2)
 
 For more information about lambda expressions, see [Lambda expressions](lambda-expressions-in-cpp.md).
 
-## Calling exceptional code through non-exceptional code from exceptional code
+## Call exceptional code through non-exceptional code from exceptional code
 
 It's possible, but not recommended, to throw exceptions across exception-unaware code. For example, your C++ program may call a library that uses callback functions you provide. In some circumstances, you can throw exceptions from the callback functions across the non-exceptional code that your original caller can handle. However, the circumstances when exceptions can work successfully are strict. You must compile the library code in a way that preserves stack unwinding semantics. The exception-unaware code can't do anything that might trap the C++ exception. Also, the library code between the caller and the callback can't allocate local resources. For example, the code that isn't exception-aware can't have locals that point to allocated heap memory. These resources are leaked when the stack is unwound.
 
