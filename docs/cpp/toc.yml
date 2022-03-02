@@ -690,6 +690,8 @@ items:
                   href: ../cpp/general-rules-and-limitations.md
                 - name: Using dllimport and dllexport in C++ classes
                   href: ../cpp/using-dllimport-and-dllexport-in-cpp-classes.md
+            - name: empty_bases
+              href: ../cpp/empty-bases.md
             - name: jitintrinsic
               href: ../cpp/jitintrinsic.md
             - name: naked
