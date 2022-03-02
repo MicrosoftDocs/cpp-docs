@@ -23,7 +23,7 @@ The linker creates a signed assembly by inserting a public key into the assembly
 
 If you compile with [/LN](ln-create-msil-module.md), the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly that includes an explicit reference to the module, via [#using](../../preprocessor/hash-using-directive-cpp.md), or when linking with [/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md).
 
-You can also pass your encryption information to the compiler with [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md). Use [/DELAYSIGN](delaysign-partially-sign-an-assembly.md) if you want a partially signed assembly. See [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) for more information on signing an assembly.
+You can also pass your encryption information to the compiler with [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md). Use [/DELAYSIGN](delaysign-partially-sign-an-assembly.md) if you want a partially signed assembly. For more information on signing an assembly, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
 Other linker options that affect assembly generation are:
 

@@ -23,7 +23,7 @@ Note the following restrictions on the use of **/clr**:
 
 - The [naked](../../cpp/naked-cpp.md) [__declspec](../../cpp/declspec.md) modifier is ignored under /clr.
 
-- The translator function set by [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) will affect only catches in unmanaged code. See [Exception Handling](../../extensions/exception-handling-cpp-component-extensions.md) for more information.
+- The translator function set by [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) will affect only catches in unmanaged code. For more information, see [Exception Handling](../../extensions/exception-handling-cpp-component-extensions.md).
 
 - The comparison of function pointers is not permitted under **/clr**.
 

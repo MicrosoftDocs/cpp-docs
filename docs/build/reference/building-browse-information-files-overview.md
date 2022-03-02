@@ -14,7 +14,7 @@ To create browse information for symbol browsing, the compiler creates an .sbr f
 
 Generating .sbr and .bsc files takes time, so Visual Studio turns these functions off by default. If you want to browse current information, you must turn the browse options on and build your project again.
 
-Use [/FR](fr-fr-create-dot-sbr-file.md) or [/Fr](fr-fr-create-dot-sbr-file.md) to tell the compiler to create .sbr files. To create .bsc files, you can call [BSCMAKE](bscmake-command-line.md) from the command line. Using BSCMAKE from the command line gives you more precise control over the manipulation of browse information files. See [BSCMAKE Reference](bscmake-reference.md) for more information.
+Use [/FR](fr-fr-create-dot-sbr-file.md) or [/Fr](fr-fr-create-dot-sbr-file.md) to tell the compiler to create .sbr files. To create .bsc files, you can call [BSCMAKE](bscmake-command-line.md) from the command line. Using BSCMAKE from the command line gives you more precise control over the manipulation of browse information files. For more information, see [BSCMAKE Reference](bscmake-reference.md).
 
 > [!TIP]
 > You can turn on .sbr file generation but leave .bsc file generation turned off. This provides fast builds but also enables you to create a fresh .bsc file quickly by turning on .bsc file generation and building the project.

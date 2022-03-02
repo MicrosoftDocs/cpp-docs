@@ -21,7 +21,7 @@ When you right-click on a file node **Solution Explorer**, the **General** prope
 
 - **Item Type**
 
-   The **Item Type** specifies the tool that will be used to process the file during the build process. [Files whose extension is known to Visual Studio](/visualstudio/extensibility/visual-cpp-project-extensibility#project-items) have a default value in this property. You can specify a custom tool here if you have a custom file type or wish to override the default tool for a known file type. See [Specifying Custom Build Tools](../specifying-custom-build-tools.md) for more information. You can also use this property page to specify that a file is not part of the build process.
+   The **Item Type** specifies the tool that will be used to process the file during the build process. [Files whose extension is known to Visual Studio](/visualstudio/extensibility/visual-cpp-project-extensibility#project-items) have a default value in this property. You can specify a custom tool here if you have a custom file type or wish to override the default tool for a known file type. For more information, see [Specifying Custom Build Tools](../specifying-custom-build-tools.md). You can also use this property page to specify that a file is not part of the build process.
 
    The following illustration shows the property page for a *.cpp* file. The default **Item Type** for this kind of file is the **C/C++ Compiler** (*cl.exe*) and the property page exposes various compiler settings that can be applied to this file only.
 
