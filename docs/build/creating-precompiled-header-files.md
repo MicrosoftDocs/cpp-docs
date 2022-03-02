@@ -171,7 +171,7 @@ Beginning at the top of the diagram, both STABLEHDRS and BOUNDRY are NMAKE macro
 
 only if the precompiled header file (STABLE.pch) does not exist or if you make changes to the files listed in the two macros. In either case, the precompiled header file will contain code only from the files listed in the STABLEHDRS macro. List the last file you want precompiled in the BOUNDRY macro.
 
-The files you list in these macros can be either header files or C or C++ source files. (A single PCH file cannot be used with both C and C++ modules.) Note that you can use the **hdrstop** macro to stop precompilation at some point within the BOUNDRY file. See [hdrstop](../preprocessor/hdrstop.md) for more information.
+The files you list in these macros can be either header files or C or C++ source files. (A single PCH file cannot be used with both C and C++ modules.) Note that you can use the **hdrstop** macro to stop precompilation at some point within the BOUNDRY file. For more information, see [hdrstop](../preprocessor/hdrstop.md).
 
 Continuing down the diagram, APPLIB.obj represents the support code used in your final application. It is created from APPLIB.cpp, the files listed in the UNSTABLEHDRS macro, and precompiled code from the precompiled header.
 

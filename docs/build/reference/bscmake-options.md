@@ -40,7 +40,7 @@ Displays a summary of the BSCMAKE command-line syntax.
 Includes unreferenced symbols. By default, BSCMAKE doesn't record any symbols that are defined but not referenced. If an *`.sbr`* file has been packed, this option has no effect for that input file because the compiler has already removed the unreferenced symbols.
 
 **/n**\
-Forces a nonincremental build. Use **/n** to force a full build of the browse information file whether a *`.bsc`* file exists or not, and to prevent *`.sbr`* files from being truncated. See [How BSCMAKE Builds a .bsc File](how-bscmake-builds-a-dot-bsc-file.md).
+Forces a nonincremental build. Use **/n** to force a full build of the browse information file whether a *`.bsc`* file exists or not, and to prevent *`.sbr`* files from being truncated. For more information, see [How BSCMAKE builds a `.bsc` file](how-bscmake-builds-a-dot-bsc-file.md).
 
 **/NOLOGO**\
 Suppresses the BSCMAKE copyright message.
