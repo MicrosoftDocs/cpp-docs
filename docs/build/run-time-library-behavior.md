@@ -41,7 +41,7 @@ extern "C" BOOL WINAPI DllMain (
 Some libraries wrap the `DllMain` function for you. For example, in a regular MFC DLL, implement the `CWinApp` object's `InitInstance` and `ExitInstance` member functions to perform initialization and termination required by your DLL. For more details, see the [Initialize regular MFC DLLs](#initializing-regular-dlls) section.
 
 > [!WARNING]
-> There are significant limits on what you can safely do in a DLL entry point. See [General Best Practices](/windows/win32/Dlls/dynamic-link-library-best-practices) for specific Windows APIs that are unsafe to call in `DllMain`. If you need anything but the simplest initialization then do that in an initialization function for the DLL. You can require applications to call the initialization function after `DllMain` has run and before they call any other functions in the DLL.
+> There are significant limits on what you can safely do in a DLL entry point. For more information about specific Windows APIs that are unsafe to call in `DllMain`, see [General Best Practices](/windows/win32/Dlls/dynamic-link-library-best-practices). If you need anything but the simplest initialization then do that in an initialization function for the DLL. You can require applications to call the initialization function after `DllMain` has run and before they call any other functions in the DLL.
 
 <a name="initializing-non-mfc-dlls"></a>
 
