@@ -12,7 +12,7 @@ C++ projects often need to call functions or access data in a binary file such a
 
 ## Consuming libraries downloaded via vcpkg
 
-To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. See [vcpkg.io](https://vcpkg.io/) for more information.
+To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. For more information, see [vcpkg.io](https://vcpkg.io/).
 
 ## Consuming static libraries
 
@@ -33,7 +33,7 @@ If the DLL gets built as part of the same solution as the application, follow th
 
 If the DLL isn't part of the application solution, you need: the DLL file, the header(s) with prototypes for the exported functions and classes, and a LIB file that provides the necessary linking information.
 
-1. Copy the DLL to the output folder of your project, or to another folder in the standard Windows search path for DLLs. See [Dynamic-Link Library Search Order](/windows/win32/dlls/dynamic-link-library-search-order).
+1. Copy the DLL to the output folder of your project, or to another folder in the standard Windows search path for DLLs. For more information, see [Dynamic-Link Library Search Order](/windows/win32/dlls/dynamic-link-library-search-order).
 2. Follow steps 1-3 for static libraries to provide the paths to the headers and LIB file.
 
 ## COM objects
