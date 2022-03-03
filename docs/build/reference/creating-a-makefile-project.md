@@ -50,7 +50,7 @@ The output file that you specify in the project has no effect on the name that t
 
 ::: moniker-end
 
-You can view and edit the project's properties in its property page. See [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md) for information about displaying the property page.
+You can view and edit the project's properties in its property page. For more information about displaying the property page, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 ## Makefile project wizard
 

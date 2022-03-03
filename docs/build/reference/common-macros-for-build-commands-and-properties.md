@@ -37,7 +37,7 @@ This table describes a commonly used subset of the available macros; there are m
 |**$(ProjectName)**|The base name of the project.|
 |**$(ProjectPath)**|The absolute path name of the project (defined as drive + path + base name + file extension).|
 |**$(PublishDir)**|The output location for the publish target; includes the trailing backslash '\\'. Defaults to the **$(OutDir)app.publish\\** folder.|
-|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration) for more information.|
+|**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. For more information, see [Changing Project Settings for a C/C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).|
 |**$(RootNameSpace)**|The namespace, if any, containing the application.|
 |**$(SolutionDir)**|The directory of the solution (defined as drive + path); includes the trailing backslash '\\'. Defined only when building a solution in the IDE.|
 |**$(SolutionExt)**|The file extension of the solution. It includes the '.' before the file extension. Defined only when building a solution in the IDE.|
