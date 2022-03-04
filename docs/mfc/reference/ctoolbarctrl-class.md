@@ -630,7 +630,7 @@ UINT GetBitmapFlags() const;
 
 ### Return Value
 
-A UINT that has the `TBBF_LARGE` flag set if the display can support large toolbar bitmaps, clear otherwise.
+A `UINT` that has the `TBBF_LARGE` flag set if the display can support large toolbar bitmaps, clear otherwise.
 
 ### Remarks
 
@@ -1059,7 +1059,7 @@ Command identifier of the button for which to retrieve information.
 
 ### Return Value
 
-The button state information if successful or - 1 otherwise. The button state information can be a combination of the values listed in [`CToolBarCtrl::AddButtons`](#addbuttons).
+The button state information if successful or -1 otherwise. The button state information can be a combination of the values listed in [`CToolBarCtrl::AddButtons`](#addbuttons).
 
 ### Remarks
 
@@ -1426,7 +1426,7 @@ BOOL MapAccelerator(
 Accelerator character to be mapped. This character is the same character that is underlined in the button's text.
 
 *`pIDBtn`*\
-A pointer to a UINT that receives the command identifier of the button that corresponds to the accelerator specified in *`chAccel`*.
+A pointer to a `UINT` that receives the command identifier of the button that corresponds to the accelerator specified in *`chAccel`*.
 
 ### Return Value
 

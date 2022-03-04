@@ -11,7 +11,7 @@ The following map entries on the left correspond to the function prototypes on t
 
 |Map entry|Function prototype|
 |---------------|------------------------|
-|`ON_WM_ACTIVATE()`|``afx_msg void`` [`OnActivate`](../../mfc/reference/cwnd-class.md#onactivate)`(UINT, CWnd*, BOOL);`|
+|`ON_WM_ACTIVATE()`|`afx_msg void` [`OnActivate`](../../mfc/reference/cwnd-class.md#onactivate)`(UINT, CWnd*, BOOL);`|
 |`ON_WM_ACTIVATEAPP()`|`afx_msg void` [`OnActivateApp`](../../mfc/reference/cwnd-class.md#onactivateapp)`(BOOL, DWORD);`|
 |`ON_WM_APPCOMMAND()`|`afx_msg void` [`OnAppCommand`](../../mfc/reference/cwnd-class.md#onappcommand)`(CWnd*, UINT, UINT, UINT);`|
 |`ON_WM_ASKCBFORMATNAME()`|`afx_msg void` [`OnAskCbFormatName`](../../mfc/reference/cwnd-class.md#onaskcbformatname)`(UINT, LPSTR);`|
