@@ -469,7 +469,7 @@ LONG QueryBinaryValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL`-terminated string containing the name of the value to query.
 
 *`pValue`*\
 Pointer to a buffer that receives the value's data.
@@ -501,7 +501,7 @@ LONG QueryDWORDValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL`-terminated string containing the name of the value to query.
 
 *`dwValue`*\
 Pointer to a buffer that receives the `DWORD`.
@@ -530,7 +530,7 @@ LONG QueryGUIDValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL`-terminated string containing the name of the value to query.
 
 *`guidValue`*\
 Pointer to a variable that receives the GUID.
@@ -560,10 +560,10 @@ LONG QueryMultiStringValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL`-terminated string containing the name of the value to query.
 
 *`pszValue`*\
-Pointer to a buffer that receives the multistring data. A multistring is an array of null-terminated strings, terminated by two null characters.
+Pointer to a buffer that receives the multistring data. A multistring is an array of `NULL`-terminated strings, terminated by two null characters.
 
 *`pnChars`*\
 The size, in `TCHARs`, of the buffer pointed to by *`pszValue`*. When the method returns, *`pnChars`* contains the size, in `TCHARs`, of the multistring retrieved, including a terminating null character.
@@ -592,7 +592,7 @@ LONG QueryQWORDValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL`-terminated string containing the name of the value to query.
 
 *`qwValue`*\
 Pointer to a buffer that receives the `QWORD`.
@@ -622,7 +622,7 @@ LONG QueryStringValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query.
+Pointer to a `NULL`-terminated string containing the name of the value to query.
 
 *`pszValue`*\
 Pointer to a buffer that receives the string data.
@@ -665,7 +665,7 @@ ATL_DEPRECATED LONG QueryValue(
 ### Parameters
 
 *`pszValueName`*\
-Pointer to a null-terminated string containing the name of the value to query. If *`pszValueName`* is `NULL` or an empty string, `""`, the method retrieves the type and data for the key's unnamed or default value, if any.
+Pointer to a `NULL`-terminated string containing the name of the value to query. If *`pszValueName`* is `NULL` or an empty string, `""`, the method retrieves the type and data for the key's unnamed or default value, if any.
 
 *`pdwType`*\
 Pointer to a variable that receives a code indicating the type of data stored in the specified value. The *`pdwType`* parameter can be `NULL` if the type code isn't required.
@@ -875,7 +875,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 Pointer to a string containing the name of the value to set. If a value with this name isn't already present, the method adds it to the key.
 
 *`pszValue`*\
-Pointer to the multistring data to be stored with the specified value name. A multistring is an array of null-terminated strings, terminated by two null characters.
+Pointer to the multistring data to be stored with the specified value name. A multistring is an array of `NULL`-terminated strings, terminated by two null characters.
 
 ### Return Value
 
