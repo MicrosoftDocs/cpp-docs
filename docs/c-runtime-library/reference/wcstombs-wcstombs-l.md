@@ -58,7 +58,7 @@ The locale to use.
 
 ## Return Value
 
-If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating null (if any). If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can’t convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets **`errno`** to **`EILSEQ`**.
+If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can’t convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets **`errno`** to **`EILSEQ`**.
 
 ## Remarks
 
