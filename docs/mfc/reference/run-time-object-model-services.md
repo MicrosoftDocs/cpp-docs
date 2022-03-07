@@ -60,7 +60,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
 ### Parameters
 
 *`proc`*\
-Pointer to a `NULL` terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.
+Pointer to a null-terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.
 
 ### Remarks
 
@@ -83,7 +83,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
 ### Parameters
 
 *`proc`*\
-Pointer to a `NULL` terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.
+Pointer to a null-terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.
 
 ### Remarks
 
