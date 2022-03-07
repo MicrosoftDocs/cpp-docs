@@ -212,7 +212,7 @@ For a list of additional Microsoft-specific keywords, see [C keywords](./c-keywo
 ## <a name="string-literals"></a> String literals
 
 *`string-literal`*:\
-&emsp;*`encoding-prefix`* *`s-char-sequence`*<sub>opt</sub> **`"`**
+&emsp;*`encoding-prefix`* **`"`** *`s-char-sequence`*<sub>opt</sub> **`"`**
 
 *`encoding-prefix`*:\
 &emsp;**`u8`**\
