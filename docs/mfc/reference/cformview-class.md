@@ -69,7 +69,7 @@ CFormView(UINT nIDTemplate);
 ### Parameters
 
 *`lpszTemplateName`*\
-Contains a `NULL` terminated string that is the name of a dialog-template resource.
+Contains a `NULL`-terminated string that is the name of a dialog-template resource.
 
 *`nIDTemplate`*\
 Contains the ID number of a dialog-template resource.
