@@ -1,7 +1,7 @@
 ---
 title: "C lexical grammar"
 description: "Describes the standard C language lexical grammar implemented by the Microsoft C/C++ compiler."
-ms.date: 10/30/2020
+ms.date: 03/07/2022
 helpviewer_keywords: ["lexical grammar"]
 ms.assetid: cb5847fa-aef3-47f5-8825-97c2bf4a3d87
 ---
