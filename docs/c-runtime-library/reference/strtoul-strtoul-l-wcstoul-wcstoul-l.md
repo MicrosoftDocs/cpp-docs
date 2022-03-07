@@ -43,7 +43,7 @@ unsigned long _wcstoul_l(
 ### Parameters
 
 *`strSource`*\
-`NULL` terminated string to convert.
+Null-terminated string to convert.
 
 *`endptr`*\
 Pointer to character that stops scan.
