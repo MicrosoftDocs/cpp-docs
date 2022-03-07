@@ -1,7 +1,7 @@
 ---
 title: "C lexical grammar"
 description: "Describes the standard C language lexical grammar implemented by the Microsoft C/C++ compiler."
-ms.date: 10/30/2020
+ms.date: 03/07/2022
 helpviewer_keywords: ["lexical grammar"]
 ms.assetid: cb5847fa-aef3-47f5-8825-97c2bf4a3d87
 ---
@@ -114,7 +114,7 @@ For a list of additional Microsoft-specific keywords, see [C keywords](./c-keywo
 &emsp;**`0`** **`1`** **`2`** **`3`** **`4`** **`5`** **`6`** **`7`**
 
 *`hexadecimal-digit`*: one of\
-&emsp;**`0`** **`1`** **`2`** **`3`** **`4`** **`5`** **`6`** **`7`** **`8`**\
+&emsp;**`0`** **`1`** **`2`** **`3`** **`4`** **`5`** **`6`** **`7`** **`8`** **`9`**\
 &emsp;**`a`** **`b`** **`c`** **`d`** **`e`** **`f`**\
 &emsp;**`A`** **`B`** **`C`** **`D`** **`E`** **`F`**
 
@@ -212,7 +212,7 @@ For a list of additional Microsoft-specific keywords, see [C keywords](./c-keywo
 ## <a name="string-literals"></a> String literals
 
 *`string-literal`*:\
-&emsp;*`encoding-prefix`* *`s-char-sequence`*<sub>opt</sub> **`"`**
+&emsp;*`encoding-prefix`* **`"`** *`s-char-sequence`*<sub>opt</sub> **`"`**
 
 *`encoding-prefix`*:\
 &emsp;**`u8`**\
