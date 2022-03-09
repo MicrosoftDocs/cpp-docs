@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Add a method"
 title: "Add a method"
-ms.date: "03/08/2022"
+ms.date: "03/09/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
@@ -35,7 +35,7 @@ You can use the [add method wizard](#add-method-wizard) to add a method to an in
 
 ## Add method wizard
 
-Use this wizard to add a method to an interface. Depending on the project type or interface type to which you're adding a method, the wizard displays different options.
+Use this wizard to add a method to an interface. The wizard displays different options depending on the project or interface type to which you're adding a method.
 
 ### Names
 
@@ -61,7 +61,7 @@ Use this wizard to add a method to an interface. Depending on the project type o
 
 - **Return type**
 
-  The data type returned by the method. `HRESULT` is recommended for all interface types, because it provides a standard way to return errors.
+  The data type returned by the method. `HRESULT` is recommended for all interface types, as it provides a standard way to return errors.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -90,7 +90,7 @@ Use this wizard to add a method to an interface. Depending on the project type o
 
   Sets the name of a parameter to pass through your method. After you type the name, select **`+`** to add it to the list of parameters that will pass through your method. If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
 
-  Once you select **`+`**, the parameter name appears in **Parameters**.
+  When you select **`+`**, the parameter name appears in **Parameters**.
 
   > [!NOTE]
   > If you supply a parameter name and then select **OK** before you select **+**, the parameter isn't added to the method. You must find the method and insert the parameter manually.
