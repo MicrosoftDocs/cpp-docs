@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: Add a method"
 title: "Add a method"
-ms.date: "11/09/2018"
+ms.date: "03/08/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
+ms.custom: devdivchpfy22
 ---
 # Add a method
 
@@ -73,7 +74,7 @@ Use this wizard to add a method to an interface. Depending on the project type o
 
 - **Internal name**
 
-  Available for only custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (.h) file, and the implementation (.cpp) file. By default, this name is the same as **Method name**. You can change the method name if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
+  Available for only custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (.h) file, and the implementation (.cpp) file. By default, this name is the same as **Method name**. You can change the method name, if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
 
   |Interface type|Description|
   |--------------------|-----------------|
