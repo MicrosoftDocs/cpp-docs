@@ -3,12 +3,11 @@ description: "Learn more about: <utility> functions"
 title: "<utility> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::exchange", "utility/std::forward", "utility/std::make_pair", "utility/std::move", "utility/std::swap"]
-ms.assetid: b1df38cd-3a59-4098-9c81-83342eb719a4
 helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pair [C++]", "std::move [C++]", "std::swap [C++]"]
 ---
 # `<utility>` functions
 
-## <a name="asconst"></a> as_const
+## <a name="asconst"></a> `as_const`
 
 ```cpp
 template <class T> constexpr add_const_t<T>& as_const(T& t) noexcept;
@@ -17,17 +16,17 @@ template <class T> void as_const(const T&&) = delete;
 
 ### Return Value
 
-Returns *T*.
+Returns *`T`*.
 
-## <a name="declval"></a> declval
+## <a name="declval"></a> `declval`
 
 ```cpp
 template <class T> add_rvalue_reference_t<T> declval() noexcept;  // as unevaluated operand
 ```
 
-## <a name="exchange"></a> exchange
+## <a name="exchange"></a> `exchange`
 
-**(C++14)** Assigns a new value to an object and returns its old value.
+**`(C++14)`** Assigns a new value to an object and returns its old value.
 
 ```cpp
 template <class T, class Other = T>
@@ -36,15 +35,15 @@ template <class T, class Other = T>
 
 ### Parameters
 
-*val*\
-The object that will receive the value of new_val.
+*`val`*\
+The object that will receive the value of `new_val`.
 
-*new_val*\
-The object whose value is copied or moved into val.
+*`new_val`*\
+The object whose value is copied or moved into `val`.
 
 ### Remarks
 
-For complex types, `exchange` avoids copying the old value when a move constructor is available, avoids copying the new value if it’s a temporary object or is moved, and accepts any type as the new value, using any available converting assignment operator. The exchange function is different from [std::swap](../standard-library/algorithm-functions.md#swap) in that the left argument isn't moved or copied to the right argument.
+For complex types, `exchange` avoids copying the old value when a move constructor is available, avoids copying the new value if it’s a temporary object or is moved, and accepts any type as the new value, using any available converting assignment operator. The exchange function is different from [`std::swap`](../standard-library/algorithm-functions.md#swap) in that the left argument isn't moved or copied to the right argument.
 
 ### Example
 
@@ -80,7 +79,7 @@ The old value of c1 is: 1
 The new value of c1 after exchange is: 2
 ```
 
-## <a name="forward"></a> forward
+## <a name="forward"></a> `forward`
 
 Conditionally casts its argument to an rvalue reference if the argument is an rvalue or rvalue reference. This restores the rvalue-ness of an argument to the forwarding function in support of perfect forwarding.
 
@@ -94,15 +93,15 @@ template <class Type>    // accepts everything else
 
 ### Parameters
 
-*Type*\
-The type of the value passed in *Arg*, which might be different than the type of *Arg*. Typically determined by a template argument of the forwarding function.
+*`Type`*\
+The type of the value passed in *`Arg`*, which might be different than the type of *`Arg`*. Typically determined by a template argument of the forwarding function.
 
-*Arg*\
+*`Arg`*\
 The argument to cast.
 
 ### Return Value
 
-Returns an rvalue reference to *Arg* if the value passed in *Arg* was originally an rvalue or a reference to an rvalue; otherwise, returns *Arg* without modifying its type.
+Returns an rvalue reference to *`Arg`* if the value passed in *`Arg`* was originally an rvalue or a reference to an rvalue; otherwise, returns *`Arg`* without modifying its type.
 
 ### Remarks
 
@@ -124,7 +123,7 @@ from_chars_result from_chars(const char* first, const char* last, double& value,
 from_chars_result from_chars(const char* first, const char* last, long double& value, chars_format fmt = chars_format::general);
 ```
 
-## <a name="get"></a> get
+## <a name="get"></a> `get`
 
 Gets an element from a `pair` object by index position, or by type.
 
@@ -171,25 +170,25 @@ template <class T2, class T1>
 
 ### Parameters
 
-*Index*\
+*`Index`*\
 The 0-based index of the chosen element.
 
-*T1*\
+*`T1`*\
 The type of the first pair element.
 
-*T2*\
+*`T2`*\
 The type of the second pair element.
 
-*pr*\
+*`pr`*\
 The pair to select from.
 
 ### Remarks
 
 The template functions each return a reference to an element of its `pair` argument.
 
-For the indexed overloads, if the value of *Index* is 0 the functions return `pr.first` and if the value of *Index* is 1 the functions return `pr.second`. The type `RI` is the type of the returned element.
+For the indexed overloads, if the value of *`Index`* is 0 the functions return `pr.first` and if the value of *`Index`* is 1 the functions return `pr.second`. The type `RI` is the type of the returned element.
 
-For the overloads that don't have an Index parameter, the element to return is deduced by the type argument. Calling `get<T>(Tuple)` will produce a compiler error if *pr* contains more or less than one element of type T.
+For the overloads that don't have an `Index` parameter, the element to return is deduced by the type argument. Calling `get<T>(Tuple)` will produce a compiler error if *`pr`* contains more or less than one element of type `T`.
 
 ### Example
 
@@ -220,35 +219,35 @@ int main()
 1 0.27
 ```
 
-## <a name="index_sequence"></a> index_sequence
+## <a name="index_sequence"></a> `index_sequence`
 
 ```cpp
 template<size_t... I>
     using index_sequence = integer_sequence<size_t, I...>;
 ```
 
-## <a name="index_sequence_for"></a> index_sequence_for
+## <a name="index_sequence_for"></a> `index_sequence_for`
 
 ```cpp
 template<class... T>
     using index_sequence_for = make_index_sequence<sizeof...(T)>;
 ```
 
-## <a name="make_index_sequence"></a> make_index_sequence
+## <a name="make_index_sequence"></a> `make_index_sequence`
 
 ```cpp
 template<size_t N>
     using make_index_sequence = make_integer_sequence<size_t, N>;
 ```
 
-## <a name="make_integer_sequence"></a> make_integer_sequence
+## <a name="make_integer_sequence"></a> `make_integer_sequence`
 
 ```cpp
 template<class T, T N>
     using make_integer_sequence = integer_sequence<T, see below >;
 ```
 
-## <a name="make_pair"></a> make_pair
+## <a name="make_pair"></a> `make_pair`
 
 A template function that you can use to construct objects of type `pair`, where the component types are automatically chosen based on the data types that are passed as parameters.
 
@@ -268,10 +267,10 @@ template <class T, class U>
 
 ### Parameters
 
-*Val1*\
+*`Val1`*\
 Value that initializes the first element of `pair`.
 
-*Val2*\
+*`Val2`*\
 Value that initializes the second element of `pair`.
 
 ### Return Value
@@ -280,13 +279,13 @@ The pair object that's constructed: `pair`<`T`,`U`>(`Val1`, `Val2`).
 
 ### Remarks
 
-`make_pair` converts object of type [reference_wrapper Class](../standard-library/reference-wrapper-class.md) to reference types and converts decaying arrays and functions to pointers.
+`make_pair` converts object of type [`reference_wrapper` Class](../standard-library/reference-wrapper-class.md) to reference types and converts decaying arrays and functions to pointers.
 
 In the returned `pair` object, `T` is determined as follows:
 
 - If the input type `T` is `reference_wrapper<X>`, the returned type `T` is `X&`.
 
-- Otherwise, the returned type `T` is `decay<T>::type`. If [decay Class](../standard-library/decay-class.md) isn't supported, the returned type `T` is the same as the input type `T`.
+- Otherwise, the returned type `T` is `decay<T>::type`. If [`decay` Class](../standard-library/decay-class.md) isn't supported, the returned type `T` is the same as the input type `T`.
 
 The returned type `U` is similarly determined from the input type `U`.
 
@@ -296,9 +295,9 @@ The `make_pair` helper function also makes it possible to pass two values to a f
 
 ### Example
 
-For an example about how to use the helper function `make_pair` to declare and initialize a pair, see [pair Structure](../standard-library/pair-structure.md).
+For an example about how to use the helper function `make_pair` to declare and initialize a pair, see [`pair` Structure](../standard-library/pair-structure.md).
 
-## <a name="move"></a> move
+## <a name="move"></a> `move`
 
 Unconditionally casts its argument to an rvalue reference, and thereby signals that it can be moved if its type is move-enabled.
 
@@ -309,11 +308,11 @@ template <class Type>
 
 ### Parameters
 
-*Type*\
-A type deduced from the type of the argument passed in *Arg*, together with the reference collapsing rules.
+*`Type`*\
+A type deduced from the type of the argument passed in *`Arg`*, together with the reference collapsing rules.
 
-*Arg*\
-The argument to cast. Although the type of *Arg* appears to be specified as an rvalue reference, `move` also accepts lvalue arguments because lvalue references can bind to rvalue references.
+*`Arg`*\
+The argument to cast. Although the type of *`Arg`* appears to be specified as an rvalue reference, `move` also accepts lvalue arguments because lvalue references can bind to rvalue references.
 
 ### Return Value
 
@@ -321,21 +320,21 @@ The argument to cast. Although the type of *Arg* appears to be specified as an r
 
 ### Remarks
 
-The template argument *Type* isn't intended to be specified explicitly, but to be deduced from the type of the value passed in *Arg*. The type of *Type* is further adjusted according to the reference collapsing rules.
+The template argument *`Type`* isn't intended to be specified explicitly, but to be deduced from the type of the value passed in *`Arg`*. The type of *`Type`* is further adjusted according to the reference collapsing rules.
 
-`move` doesn't move its argument. Instead, by unconditionally casting its argument—which might be an lvalue—to an rvalue reference, it enables the compiler to subsequently move, rather than copy, the value passed in *Arg* if its type is move-enabled. If its type isn't move-enabled, it's copied instead.
+`move` doesn't move its argument. Instead, by unconditionally casting its argument—which might be an lvalue—to an rvalue reference, it enables the compiler to subsequently move, rather than copy, the value passed in *`Arg`* if its type is move-enabled. If its type isn't move-enabled, it's copied instead.
 
-If the value passed in *Arg* is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Don't refer to the value passed in *Arg* by its name or address after it's been moved.
+If the value passed in *`Arg`* is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Don't refer to the value passed in *`Arg`* by its name or address after it's been moved.
 
-## <a name="moveif"></a> move_if_noexcept
+## <a name="moveif"></a> `move_if_noexcept`
 
 ```cpp
 template <class T> constexpr conditional_t< !is_nothrow_move_constructible_v<T> && is_copy_constructible_v<T>, const T&, T&&> move_if_noexcept(T& x) noexcept;
 ```
 
-## <a name="swap"></a> swap
+## <a name="swap"></a> `swap`
 
-Exchanges the elements of two type or [pair Structure](../standard-library/pair-structure.md) objects.
+Exchanges the elements of two type or [`pair` Structure](../standard-library/pair-structure.md) objects.
 
 ```cpp
 template <class T>
@@ -348,17 +347,17 @@ template <class T, class U>
 
 ### Parameters
 
-*left*\
+*`left`*\
 An object of type or type `pair`.
 
-*right*\
+*`right`*\
 An object of type or type `pair`.
 
 ### Remarks
 
 One advantage of `swap` is that the types of objects that are being stored are determined automatically by the compiler and don't have to be explicitly specified. Don't use explicit template arguments such as `swap<int, int>(1, 2)` when you use `swap` because it's verbose and adds complex rvalue reference problems that might cause compilation failure.
 
-## <a name="to_chars"></a> to_chars
+## <a name="to_chars"></a> `to_chars`
 
 ```cpp
 to_chars_result to_chars(char* first, char* last, see below value, int base = 10);
