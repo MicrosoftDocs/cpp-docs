@@ -24,7 +24,7 @@ You can use the [add method wizard](#add-method-wizard) to add a method to an in
 
 1. In the Add Method Wizard, provide the information to create the method.
 
-1. Specify any interface definition language settings for the method in the [IDL attributes](#idl-attributes-add-method-wizard) page of the wizard.
+1. Specify interface definition language settings for the method in the [IDL attributes](#idl-attributes-add-method-wizard) page of the wizard.
 
 1. Select **OK** to add the method.
 
@@ -35,13 +35,13 @@ You can use the [add method wizard](#add-method-wizard) to add a method to an in
 
 ## Add method wizard
 
-Use this wizard to add a method to an interface. The wizard displays different options depending on the project or interface type to which you're adding a method.
+Use this wizard to add a method to an interface.
 
 ### Names
 
 - **Method name**
 
-  Sets the name for the method.
+  Sets the method name.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -51,7 +51,7 @@ Use this wizard to add a method to an interface. The wizard displays different o
 
 - **Internal name**
 
-  Available for only custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (.h) file, and the implementation (.cpp) file. By default, this name is the same as **Method name**. You can change the method name, if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
+  Available for only custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (`.h`) file, and the implementation (`.cpp`) file. By default, this name is the same as **Method name**. You can change the method name, if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -73,7 +73,7 @@ Use this wizard to add a method to an interface. The wizard displays different o
 
 - **Method type**
 
-  Available only for MFC ActiveX controls. If you provide a method name in the **Method name** box, rather than selecting a method from the list, this box is unavailable.
+  Available only for MFC projects, ActiveX control projects, and ATL projects that support MFC. If you provide a method name in the **Method name** box, rather than selecting a method from the list, this box is unavailable.
 
   If you select one of the methods in the **Method name** list, select either the stock implementation or a custom implementation.
 
@@ -84,22 +84,20 @@ Use this wizard to add a method to an interface. The wizard displays different o
 
 - **Parameter type**
 
-  Sets the data type of the parameter. Select the type from the list.
+  Sets the data type of the parameter. You can type it or select the type from the list.
 
 - **Parameter name**
 
-  Sets the name of a parameter to pass through your method. After you type the name, select **`+`** to add it to the list of parameters that will pass through your method. If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
-
-  When you select **`+`**, the parameter name appears in **Parameters**.
+  Sets the name of a parameter. Select **+** to add the parameter to the list of parameters. If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
 
   > [!NOTE]
   > If you supply a parameter name and then select **OK** before you select **+**, the parameter isn't added to the method. You must find the method and insert the parameter manually.
 
-- **`+`**
+- **+**
 
-  Adds the parameter you specify in **Parameter name**, and its type and parameter attributes, to **Parameters**. Select **`+`** to add a parameter to the list.
+  Adds the parameter to the list of parameters. Specify parameter name in **Parameter name**, and its type and parameter attributes, to **Parameters**.
 
-- **`x`**
+- **x**
 
   Removes the parameter you select in **Parameters** from the list.
 
@@ -110,12 +108,13 @@ Use this wizard to add a method to an interface. The wizard displays different o
 - **Parameter attributes**
 
   Sets any other attributes for the parameter specified in **Parameter name**.
+    1. **Infer in/out parameters values from types**
 
-  |Parameter attribute|Description|Allowed combinations|
-  |-------------------------|-----------------|--------------------------|
-  |**In**|Indicates that the parameter is passed from the calling procedure to the called procedure.|`in` only<br /><br /> `in` and `out`|
-  |**Out**|Indicates that the pointer parameter is returned from the called procedure to the calling procedure (from the server to the client).|`out` only<br /><br /> `in` and `out`<br /><br /> `out` and `retval`|
-  |**Retval**|Indicates that the parameter receives the return value of the member.|`retval` and `out`|
+        Select the checkbox to infer in or out parameter values from type of parameter.
+
+    1. **Set the last parameter as the return value (retval)**
+
+        Select the checkbox to set the last parameter as the return value.
 
 ## IDL attributes, add method wizard
 
