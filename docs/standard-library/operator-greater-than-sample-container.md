@@ -17,7 +17,7 @@ Overloads **operator>** to compare two objects of class template [Container](../
 
 ```cpp
 template <class Ty>
-bool operator*gt;(
+bool operator*gt(
     const Container <Ty>& left,
     const Container <Ty>& right);
 ```
