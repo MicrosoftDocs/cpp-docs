@@ -18,7 +18,7 @@ The **#line** directive tells the preprocessor to set the compiler's reported va
 
 The compiler uses the line number and optional filename to refer to errors that it finds during compilation. The line number usually refers to the current input line, and the filename refers to the current input file. The line number is incremented after each line is processed.
 
-The *digit-sequence* value can be any integer constant. Macro replacement can be used on the preprocessing tokens, but the result must evaluate to the correct syntax. The *filename* can be any combination of characters and must be enclosed in double quotation marks (`" "`). If *filename* is omitted, the previous filename remains unchanged.
+The *digit-sequence* value can be any integer constant within the range from 0 to 2147483647, inclusive. Macro replacement can be used on the preprocessing tokens, but the result must evaluate to the correct syntax. The *filename* can be any combination of characters and must be enclosed in double quotation marks (`" "`). If *filename* is omitted, the previous filename remains unchanged.
 
 You can alter the source line number and filename by writing a **`#line`** directive. The **`#line`** directive sets the value for the line that immediately follows the directive in the source file. The translator uses the line number and filename to determine the values of the predefined macros `__FILE__` and `__LINE__`. You can use these macros to insert self-descriptive error messages into the program text. For more information on these predefined macros, see [Predefined macros](../preprocessor/predefined-macros.md).
 
