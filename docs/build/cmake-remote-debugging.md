@@ -60,7 +60,7 @@ Select the Visual Studio **Configuration** dropdown and select **Manage Configur
 ![Choose Manage Configurations in the Visual Studio configurations drop-down.](media/vs2019-cmake-manage-configurations.png)
 
 Add a new configuration by selecting **Add a new configuration** (the green **+** button).\
-In the **CMakeSettings** dialog that appears, select **arm64-debug**, and then press **Select**:
+In the **CMakeSettings** dialog that appears, select **arm64-debug**, and then choose **Select**:
 
 ![Add arm64-debug configuration.](media/cmake-add-config-icon-with-target-dialog.png)
 
@@ -71,12 +71,11 @@ The **Toolset** dropdown is set to **msvc_arm64_x64**. Your settings should now 
 ![CMake settings dialog.](media/cmake-settings-editor2.png)
 
 > [!Note]
-> In the **Toolset** dropdown, **msvc_arm64** selects 32-bit host tools to cross-compile to ARM64, whereas **msvc_arm64 x64** selects 64-bit host tools to cross-compile to ARM64, which is what you'll do in this tutorial.
+> In the **Toolset** dropdown, **msvc_arm64** selects 32-bit host tools to cross-compile to ARM64, whereas **msvc_arm64 x64** selects 64-bit host tools to cross-compile to ARM64, which is what you'll do in this tutorial. For more information about the available toolset environments, see [Pre-defined environments](cppproperties-schema-reference.md#pre-defined-environments).
 
 Save the *`CMakeSettings.json`* file. In the configuration dropdown, select **arm64-debug**. (It may take a moment after saving the *`CMakeSettings.json`* file for it to appear in the list):
 
 ![Ensure that arm64-debug is selected in the Visual Studio configurations drop-down.](media/vs2019-cmake-manage-configurations-arm.png)
-
 
 ## Add a debug configuration file
 
