@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Add a method"
+description: "Learn more about: Add a method to an interface in your project"
 title: "Add a method"
-ms.date: "03/09/2022"
+ms.date: "03/11/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
@@ -95,26 +95,26 @@ Use this wizard to add a method to an interface.
 
 - **+**
 
-  Adds the parameter to the list of parameters. Specify parameter name in **Parameter name**, and its type and parameter attributes, to **Parameters**.
+  Adds the parameter to the list of parameters. Specify the parameter name in **Parameter name**, and its type and parameter attributes, to **Parameters** list.
 
 - **x**
 
-  Removes the parameter you select in **Parameters** from the list.
+  Removes the selected parameter from the **Parameters** list.
 
 - **Parameters**
 
-  Displays all parameters and their modifiers and types currently added for the method. As you add parameters, the wizard updates **Parameters** to display each parameter, with its modifier and type.
+  Displays all of the methods parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
 
 - **Parameter attributes**
 
   Sets any other attributes for the parameter specified in **Parameter name**.
     1. **Infer in/out parameters values from types**
 
-        Select the checkbox to infer in or out parameter values from type of parameter.
+        Infer in or out parameter values from their types.
 
     1. **Set the last parameter as the return value (retval)**
 
-        Select the checkbox to set the last parameter as the return value.
+        Set the last parameter as the return value.
 
 ## IDL attributes, add method wizard
 
