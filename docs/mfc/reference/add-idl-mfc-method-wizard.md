@@ -46,7 +46,7 @@ Use this wizard to add an IDL MFC method to an interface.
   |--------------------|-----------------|
   |ATL dual interface, custom interface, and local custom interface|Provide your own method name.|
   |MFC dispinterface|Provide your own method name or select a suggested method name from the list. If you select a name from the list, the appropriate value appears in the **Return type** box, and it's unchangeable.|
-  |MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../mfc/reference/colecontrol-class.md#doclick) and [Refresh](../mfc/reference/colecontrol-class.md#refresh). For more information, see [MFC ActiveX controls: Adding stock methods](../mfc/mfc-activex-controls-adding-stock-methods.md).|
+  |MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../reference/colecontrol-class.md#doclick) and [Refresh](../reference/colecontrol-class.md#refresh). For more information, see [MFC ActiveX controls: Adding stock methods](../mfc-activex-controls-adding-stock-methods.md).|
 
 - **Internal name**
 
