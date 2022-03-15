@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Add an IDL MFC method to an interface in your MFC project"
 title: "Add an IDL MFC method"
-ms.date: "03/14/2022"
+ms.date: "03/15/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL MFC method wizard [C++]", "IDL MFC methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL MFC method wizard"]
 ms.custom: devdivchpfy22
@@ -21,7 +21,7 @@ You can use the [Add an IDL MFC method wizard](#add-an-idl-mfc-method-wizard) to
 
 1. On the shortcut menu, choose **Add**, and then choose **Add Method**.
 
-1. In the Add Method Wizard, provide the information to create the method.
+1. In the **Add Method** Wizard, provide the information to create the method.
 
 1. Specify any interface definition language settings for this method in the [IDL attributes](#idl-attributes-add-method-wizard) page of the wizard.
 
