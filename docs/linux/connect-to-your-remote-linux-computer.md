@@ -1,7 +1,7 @@
 ---
 title: "Connect to your target Linux system in Visual Studio"
 description: "How to connect to a remote Linux machine or Windows Subsystem for Linux from inside a Visual Studio C++ project."
-ms.date: "01/8/2021"
+ms.date: 03/14/2022
 ---
 # Connect to your target Linux system in Visual Studio
 
@@ -93,6 +93,8 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    ![Screenshot showing a Connection Manager Error.](media/settings_connectionmanagererror.png)
 
    If you use key files for authentication, make sure the target machine's SSH server is running and configured properly.
+
+   If you have trouble connecting to WSL on `localhost`, see [Fix WSL `localhost` connection problems](#fix-wsl-localhost-connection-problems).
 
 ::: moniker-end
 
@@ -228,6 +230,25 @@ To configure your WSL installation to work with Visual Studio, you need the foll
 ```bash
 sudo apt install g++ gdb make ninja-build rsync zip
 ```
+
+### Fix WSL `localhost` connection problems
+
+When connecting to Windows Subsystem for Linux (WSL) on `localhost`, you may run into a conflict with the Windows `ssh` client on port 22. In WSL, change the port that `ssh`expects requests from to 23 in `/etc/ssh/sshd_config`:
+
+```bash
+Port 23
+```
+
+If you're connecting using a password, ensure that the following is set in `/etc/ssh/sshd_config`:
+
+```bash
+# To disable tunneled clear text passwords, change to no here!
+PasswordAuthentication yes
+```
+
+After making these changes, restart the SSH server (`sudo service ssh restart` on Ubuntu).
+
+Then retry your connection to `localhost` using port 23.
 
 For more information, see [Download, install, and set up the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
