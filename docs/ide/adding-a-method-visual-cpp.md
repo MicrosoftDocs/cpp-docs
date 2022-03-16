@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Add a method to an interface in your Visual C++ project"
+description: "Learn more about: Add a method to an interface in Visual C++ project"
 title: "Add a method"
 ms.date: "03/16/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
