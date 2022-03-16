@@ -15,15 +15,17 @@ You can use the [Add an IDL MFC method wizard](#add-an-idl-mfc-method-wizard) to
 
 **To add a method to your object:**
 
+1. On the View menu, choose **Class View**.
+
 1. In **Class View**, expand the project node to display the interface to which you want to add the method.
 
 1. Right-click the name of the interface.
 
 1. On the shortcut menu, choose **Add**, and then choose **Add Method**.
 
-1. In the **Add Method** Wizard, provide the information to create the method.
+1. In the **Add Method** wizard, provide the information to create the method.
 
-1. Specify any interface definition language settings for this method in the [IDL attributes](#idl-attributes-add-method-wizard) page of the wizard.
+1. Specify any IDL settings for this method in the [IDL attributes](#idl-attributes-add-method-wizard) page of the wizard.
 
 1. Select **OK** to add the method.
 
@@ -45,7 +47,7 @@ Use this wizard to add an IDL MFC method to an interface.
   |Interface type|Description|
   |--------------------|-----------------|
   |ATL dual interface, custom interface, and local custom interface|Provide your own method name.|
-  |MFC dispinterface|Provide your own method name or select a suggested method name from the list. If you select a name from the list, the appropriate value appears in the **Return type** box, and it's unchangeable.|
+  |MFC dispinterface|Provide your own method name or select a suggested method name from the list. If you select a name from the list, the appropriate value appears in the **Return type** box, and it can't be changed.|
   |MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../reference/colecontrol-class.md#doclick) and [Refresh](../reference/colecontrol-class.md#refresh). For more information, see [MFC ActiveX controls: Adding stock methods](../mfc-activex-controls-adding-stock-methods.md).|
 
 - **Internal name**
@@ -72,14 +74,14 @@ Use this wizard to add an IDL MFC method to an interface.
 
 - **Method type**
 
-  Available only for MFC ActiveX controls. If you provide a method name in the **Method name** box, rather than selecting a method from the list, this box is unavailable.
+  Available only for MFC ActiveX controls. Unavailable if you provide a method name in **Method name** rather than selecting a method from the list.
 
   If you select one of the methods in the **Method name** list, select either the stock implementation or a custom implementation.
 
   |Method type|Description|
   |-----------------|-----------------|
-  |**Stock**|The default. Inserts the stock implementation of the method you select in the **Method name** list. **Return type** is unchangeable if you select **Stock**.|
-  |**Custom**|Inserts a stub implementation of the method selected in the **Method name** list. For custom method types, you can provide your own return type, or you can select one from the **Return type** list.|
+  |**Stock**|The default. Inserts the default implementation of the method you select in the **Method name** list. **Return type** is unchangeable if you select **Stock**.|
+  |**Custom**|Inserts a default implementation of the method selected in the **Method name** list. For custom method types, you can provide your own return type, or you can select one from the **Return type** list.|
 
 - **Parameter type**
 
@@ -87,10 +89,10 @@ Use this wizard to add an IDL MFC method to an interface.
 
 - **Parameter name**
 
-  Sets the name of a parameter. Select **+** to add the parameter in **parameters**. If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
+  Sets the name of a parameter. Select **+** to add the parameter to the **parameters** list. If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
 
   > [!NOTE]
-  > If you supply a parameter name and then select **OK** before you select **+**, the parameter isn't added to the method. You must find the method and insert the parameter manually.
+  > If you supply a parameter name and then select **OK** before you select **+**, the parameter isn't added to the method. You must find the method in the code and insert the parameter manually.
 
 - **+**
 
@@ -106,7 +108,7 @@ Use this wizard to add an IDL MFC method to an interface.
 
 ## IDL attributes, add method wizard
 
-Use this page of the Add Method Wizard to specify any interface definition language (IDL) settings for the method.
+Use this page to specify any interface definition language (IDL) settings for the method.
 
 - `id`
 
