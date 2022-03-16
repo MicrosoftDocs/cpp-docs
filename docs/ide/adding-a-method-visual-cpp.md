@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Add a method to an interface in your project"
+description: "Learn more about: Add a method to an interface in your Visual C++ project"
 title: "Add a method"
-ms.date: "03/14/2022"
+ms.date: "03/16/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
@@ -95,7 +95,7 @@ Use this wizard to add a method to an interface.
 
 - **+**
 
-  Adds the parameter in the list of parameters. Specify the parameter name in **Parameter name**, and its type and parameter attributes in **Parameters**.
+  Adds the parameter to the list of parameters. Specify the parameter name in **Parameter name**, and its type and parameter attributes in **Parameters**.
 
 - **x**
 
