@@ -11,8 +11,6 @@ ms.custom: devdivchpfy22
 
 The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
 
-:::image type="content" source="../reference/media/add-idl-mfc-method-wizard.png" alt-text="Add an IDL MFC method screenshot.":::
-
 **To add a method to your object:**
 
 1. On the View menu, choose **Class View**.
@@ -37,6 +35,8 @@ The Add an IDL MFC Method wizard adds a method to an interface defined in an Int
 ## Add an IDL MFC method wizard
 
 Use this wizard to add an IDL MFC method to an interface.
+
+:::image type="content" source="../reference/media/add-idl-mfc-method-wizard.png" alt-text="Add an IDL MFC method screenshot.":::
 
 ### Names
 
