@@ -23,3 +23,4 @@ The Microsoft Foundation Class (MFC) wizards generate boilerplate code for vario
 |[ATL Support in an MFC Project](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)|Creates headers and macros that are required by the Active Template Library (ATL).|
 |[MFC Class Wizard](../../mfc/reference/mfc-class-wizard.md)|Creates an .h file and a .cpp file.|
 |[MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)|Links to the MFC documentation.|
+|[Add an IDL MFC Method Wizard](../../mfc/reference/add-idl-mfc-method-wizard.md)| Adds a method to an interface defined in an IDL in a MFC project.|
