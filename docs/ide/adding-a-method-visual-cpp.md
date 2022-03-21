@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Add a method to an interface in Visual C++ project"
+description: "Learn more about: Add a method to an interface in a Visual C++ project"
 title: "Add a method"
 ms.date: "03/16/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
-ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
 ms.custom: devdivchpfy22
 ---
 # Add a method
@@ -51,7 +50,7 @@ Use this wizard to add a method to an interface.
 
 - **Internal name**
 
-  Available for only custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (`.h`) file, and the implementation (`.cpp`) file. By default, this name is the same as **Method name**. You can change the method name, if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
+  Available only for custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (`.h`) file, and the implementation (`.cpp`) file. By default, this name is the same as **Method name**. You can change the method name, if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -73,7 +72,7 @@ Use this wizard to add a method to an interface.
 
 - **Method type**
 
-  Available only for MFC projects, ActiveX control projects, and ATL projects that support MFC. If you provide a method name in the **Method name** box, rather than selecting a method from the list, this box is unavailable.
+  Available only for MFC projects, ActiveX control projects, and ATL projects that support MFC. This field is unavailable, if you provide a method name in the **Method name**, rather than selecting a method from the list.
 
   If you select one of the methods in the **Method name** list, select either the stock implementation or a custom implementation.
 
