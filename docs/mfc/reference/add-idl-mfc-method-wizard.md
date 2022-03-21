@@ -9,7 +9,7 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC method
 
-The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the IDL MFC method wizard you must be on an MFC Project, ActiveX project or an ATL project that supports MFC. If the atl project doesn't support MFC it will just be the IDL Method. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
+The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the IDL MFC method wizard you must be on an MFC Project, ActiveX project or an ATL project that supports MFC. If the atl project doesn't support MFC, it will just be the IDL Method. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
 
 **Add a method to your object**
 
@@ -62,7 +62,7 @@ Use this wizard to add an IDL MFC method to an interface.
 
 - **Return type**
 
-  The data type returned by the method. Use `HRESULT` interface types because it is the standard way to return error codes.
+  The data type returned by the method. Use `HRESULT` interface types because it's the standard way to return error codes.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -124,4 +124,4 @@ Use this page to specify any interface definition language (IDL) settings for th
 
 - `helpstring`
 
-  Specifies a text that describes the associated element. By default it is *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a text that describes the associated element. By default it's *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
