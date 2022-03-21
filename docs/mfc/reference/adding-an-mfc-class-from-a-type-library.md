@@ -11,7 +11,7 @@ ms.custom: devdivchpfy22
 Use this wizard to create an MFC class from an interface in an available type library. You can add an MFC class to an [MFC application](../../mfc/reference/creating-an-mfc-application.md), an [MFC DLL](../../mfc/reference/creating-an-mfc-dll-project.md), or an [MFC ActiveX control](../../mfc/reference/creating-an-mfc-activex-control.md).
 
 > [!NOTE]
-> You do not need to create your MFC project with Automation enabled to add a class from a type library.
+> You don't need to create your MFC project with Automation enabled to add a class from a type library.
 
 A type library contains a binary description of the interfaces exposed by a component, defining the methods along with their parameters and return types. Your type library must be registered for it to appear in the **Available type libraries** list in the Add Class from Typelib Wizard.
 
@@ -21,7 +21,7 @@ A type library contains a binary description of the interfaces exposed by a comp
 
 1. From the shortcut menu, select **Add**, and then select **New Item**.
 
-1. In the **Add New Item** dialog box, select **Installed** packages and then select **Visual C++**.
+1. In the **Add New Item** dialog, select **Installed** packages and then select **Visual C++**.
 
 1. In the Templates pane, select **MFC Class from Typelib**, and then select **Add** to display the [Add Class from Typelib Wizard](../../mfc/reference/add-class-from-typelib-wizard.md).
 
