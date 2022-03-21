@@ -9,9 +9,9 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC method
 
-The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
+The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the IDL MFC method wizard you must be on an MFC Project, ActiveX project or an ATL project that supports MFC. If the atl project doesn't support MFC it will just be the IDL Method. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
 
-**To add a method to your object:**
+**Add a method to your object**
 
 1. On the View menu, choose **Class View**.
 
@@ -47,12 +47,12 @@ Use this wizard to add an IDL MFC method to an interface.
   |Interface type|Description|
   |--------------------|-----------------|
   |ATL dual interface, custom interface, and local custom interface|Provide your own method name.|
-  |MFC dispinterface|Provide your own method name or select a suggested method name from the list. If you select a name from the list, the appropriate value appears in the **Return type** box, and it can't be changed.|
+  |MFC dispinterface|Provide your own method name or select a suggested method name from the list. If you select a name from the list, the appropriate value appears in the **Return type**, and it can't be changed.|
   |MFC ActiveX control dispinterface|Provide your own or select either of the stock methods [DoClick](../reference/colecontrol-class.md#doclick) and [Refresh](../reference/colecontrol-class.md#refresh). For more information, see [MFC ActiveX controls: Adding stock methods](../mfc-activex-controls-adding-stock-methods.md).|
 
 - **Internal name**
 
-  Available for only custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (`.h`) file, and the implementation (`.cpp`) file. By default, this name is the same as **Method name**. You can change the method name if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
+  Only available for custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (`.h`) file, and the implementation (`.cpp`) file. By default, this name is the same as **Method name**. You can change the method name if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -62,7 +62,7 @@ Use this wizard to add an IDL MFC method to an interface.
 
 - **Return type**
 
-  The data type returned by the method. `HRESULT` is recommended for all interface types, it provides a standard way to return errors.
+  The data type returned by the method. Use `HRESULT` interface types because it is the standard way to return error codes.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -112,11 +112,11 @@ Use this page to specify any interface definition language (IDL) settings for th
 
 - `id`
 
-  Sets the numerical ID that identifies the method. For more information, see [id](/windows/win32/Midl/id) in the *MIDL Reference*.
+  Sets the numeric ID that identifies the method. For more information, see [id](/windows/win32/Midl/id) in the *MIDL Reference*.
 
 - `call_as`
 
-  Specifies the name of a remote method to which this local method can be mapped. For more information, see [call_as](/windows/win32/Midl/call-as) in the *MIDL Reference*.
+  Specifies the name of the remote method to map to this local method. For more information, see [call_as](/windows/win32/Midl/call-as) in the *MIDL Reference*.
 
 - `helpcontext`
 
@@ -124,4 +124,4 @@ Use this page to specify any interface definition language (IDL) settings for th
 
 - `helpstring`
 
-  Specifies a character string that's used to describe the element to which it applies. It's set by default to "method *Method name*." For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a text that describes the associated element. By default it is *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
