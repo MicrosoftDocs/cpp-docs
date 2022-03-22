@@ -8,7 +8,7 @@ ms.custom: devdivchpfy22
 ---
 # Add a method
 
-You can use the [add method wizard](#add-method-wizard) to add a method to an interface in your project. In any type of project, add interface and follow the given steps to get the **Add method** wizard. If the project contains a class associated with the interface, the wizard modifies the class, too.
+You can use the [add method wizard](#add-method-wizard) to add a method to an interface in your project. In your project, add interface and follow the given steps to get the **Add method** wizard. If the project contains a class associated with the interface, the wizard modifies the class, too.
 
 **To add a method to your object:**
 
