@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Add an IDL MFC method to an interface in your MFC project"
+description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC method"
-ms.date: "03/17/2022"
+ms.date: "03/22/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL MFC method wizard [C++]", "IDL MFC methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL MFC method wizard"]
 ms.custom: devdivchpfy22
@@ -9,7 +9,36 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC method
 
-The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the IDL MFC method wizard you must be on an MFC Project, ActiveX project or an ATL project that supports MFC. If the atl project doesn't support MFC, it will just be the IDL Method. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
+The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the IDL MFC method wizard you must be in an MFC Project, ActiveX project or an ATL project that supports MFC.
+
+If the ATL project doesn't support MFC, only the wizard that adds a method to an IDL interface is available. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
+
+This wizard differs from the Add method wizard. The [Add method](../../ide/adding-a-method-visual-cpp.md) wizard adds default method to your project. The Add an IDL MFC method wizard is specific to MFC, ActiveX, or ATL projects that support MFC. For ATL projects that don't support MFC, only the Add method wizard is available.
+
+Whereas the Add an IDL MFC method wizard adds a method to an IDL interface, this wizard also:
+
+- Adds the following entries if a Dispatch map is found in the project.
+```cpp
+BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
+  DISP_FUNCTION_ID(CMFCApplication2Doc, "name", dispidname, name, VT_EMPTY, VTS_NONE)
+  DISP_FUNCTION_ID(CMFCApplication2Doc, "nombre", dispidnombre, nombrenom, VT_EMPTY, VTS_NONE)
+END_DISPATCH_MAP()
+```
+- Generates following associated method implementations:
+```cpp
+void CMFCApplication2Doc::name()
+{
+   AFX_MANAGE_STATE(AfxGetAppModuleState());
+
+      // TODO: Add your dispatch handler code here
+}
+void CMFCApplication2Doc::nombrenom()
+{
+   AFX_MANAGE_STATE(AfxGetAppModuleState());
+
+      // TODO: Add your dispatch handler code here
+}
+```
 
 **Add a method to your object**
 
@@ -23,14 +52,7 @@ The Add an IDL MFC Method wizard adds a method to an interface defined in an Int
 
 1. In the **Add Method** wizard, provide the information to create the method.
 
-1. Specify any IDL settings for this method in the [IDL attributes](#idl-attributes-add-method-wizard) page of the wizard.
-
 1. Select **OK** to add the method.
-
-## In this section
-
-- [Add an IDL MFC method wizard](#add-an-idl-mfc-method-wizard)
-- [IDL attributes, add method wizard](#idl-attributes-add-method-wizard)
 
 ## Add an IDL MFC method wizard
 
@@ -106,9 +128,7 @@ Use this wizard to add an IDL MFC method to an interface.
 
   Displays all of the methods parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
 
-## IDL attributes, add method wizard
-
-Use this page to specify any interface definition language (IDL) settings for the method.
+### Attributes
 
 - `id`
 
