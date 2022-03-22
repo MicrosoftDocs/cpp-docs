@@ -36,7 +36,7 @@ landingContent:
       - linkListType: video
         links:
           - text: "Learn C++ - A general purpose language and library"
-            url: https://docs.microsoft.com/shows/cplusplus-language-library
+            url: /shows/cplusplus-language-library
       - linkListType: learn
         links:
           - text: Welcome back to C++ - Modern C++
