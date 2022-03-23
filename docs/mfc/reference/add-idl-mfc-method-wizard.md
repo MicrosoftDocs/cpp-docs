@@ -9,13 +9,13 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC method
 
-The Add an IDL MFC Method wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the IDL MFC method wizard you must be in an MFC Project, ActiveX project or an ATL project that supports MFC.
+The **Add IDL MFC Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the **Add IDL MFC Method** wizard you must be in an MFC Project, ActiveX project or an ATL project that supports MFC.
 
-If the ATL project doesn't support MFC, only the wizard that adds a method to an IDL interface is available. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard modifies the class, too.
+If the ATL project doesn't support MFC, only the wizard that adds a method to an IDL interface is available. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard will add the method to the class, too.
 
-This wizard differs from the Add method wizard. The [Add method](../../ide/adding-a-method-visual-cpp.md) wizard adds default method to your project. The Add an IDL MFC method wizard is specific to MFC, ActiveX, or ATL projects that support MFC. For ATL projects that don't support MFC, only the Add method wizard is available.
+This wizard differs from the **Add Method** wizard. The [Add method](../../ide/adding-a-method-visual-cpp.md) wizard adds a default method to your project. The **Add IDL MFC Method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC. For ATL projects that don't support MFC, only the **Add Method** wizard is available.
 
-Whereas the Add an IDL MFC method wizard adds a method to an IDL interface, this wizard also:
+Whereas the **Add IDL MFC Method** wizard adds a method to an IDL interface, this wizard also:
 
 - Adds the following entries if a Dispatch map is found in the project.
 ```cpp
@@ -24,7 +24,7 @@ BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
   DISP_FUNCTION_ID(CMFCApplication2Doc, "nombre", dispidnombre, nombrenom, VT_EMPTY, VTS_NONE)
 END_DISPATCH_MAP()
 ```
-- Generates following associated method implementations:
+- Generates following associated method implementations.
 ```cpp
 void CMFCApplication2Doc::name()
 {
@@ -40,9 +40,11 @@ void CMFCApplication2Doc::nombrenom()
 }
 ```
 
-**Add a method to your object**
+## Add an IDL MFC method wizard
 
-1. On the View menu, choose **Class View**.
+**Add a method to your interface**
+
+1. On the **View** menu, choose **Class View**.
 
 1. In **Class View**, expand the project node to display the interface to which you want to add the method.
 
@@ -50,17 +52,15 @@ void CMFCApplication2Doc::nombrenom()
 
 1. On the shortcut menu, choose **Add**, and then choose **Add Method**.
 
-1. In the **Add Method** wizard, provide the information to create the method.
+1. In the **Add IDL MFC Method** wizard, provide the information to create the method.
 
 1. Select **OK** to add the method.
 
-## Add an IDL MFC method wizard
+### UI element list
 
-Use this wizard to add an IDL MFC method to an interface.
+The following section describes the UI that you'll use to add a method:
 
-:::image type="content" source="../reference/media/add-idl-mfc-method-wizard.png" alt-text="Add an IDL MFC method screenshot.":::
-
-### Names
+:::image type="content" source="../reference/media/add-idl-mfc-method-wizard.png" alt-text="Add IDL MFC method screenshot.":::
 
 - **Method name**
 
@@ -84,7 +84,7 @@ Use this wizard to add an IDL MFC method to an interface.
 
 - **Return type**
 
-  The data type returned by the method. Use `HRESULT` interface types because it's the standard way to return error codes.
+  The data type returned by the method. The standard way to return error codes from methods defined in an interface is with a `HRESULT`.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -127,8 +127,6 @@ Use this wizard to add an IDL MFC method to an interface.
 - **Parameters**
 
   Displays all of the methods parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
-
-### Attributes
 
 - `id`
 
