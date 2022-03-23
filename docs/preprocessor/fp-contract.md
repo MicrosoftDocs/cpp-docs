@@ -1,7 +1,7 @@
 ---
 description: "Learn more about the fp_contract pragma directive in Microsoft C/C++"
 title: "fp_contract pragma"
-ms.date: 03/15/2022
+ms.date: 03/22/2022
 f1_keywords: ["vc-pragma.fp_contract", "fp_contract_CPP"]
 helpviewer_keywords: ["pragma, fp_contract", "fp_contract pragma"]
 no-loc: ["pragma"]
@@ -18,12 +18,12 @@ Determines whether floating-point contraction takes place. A floating-point cont
 
 ::: moniker range=">msvc-160"
 
-By default, **`fp_contract`** is **`off`**, which tells the compiler to preserve individual floating-point instructions. Set **`fp_contract`** to **`on`** to use floating-point contraction instructions where possible. This behavior is new in Visual Studio 2022 version 17.0. In previous compiler versions, **`fp_contract`** defaulted to **`on`**.
+When you use the default compiler options, **`fp_contract`** is **`off`**, which tells the compiler to preserve individual floating-point instructions. Set **`fp_contract`** to **`on`** to use floating-point contraction instructions where possible. This behavior is new in Visual Studio 2022 version 17.0. In previous compiler versions, **`fp_contract`** defaulted to **`on`**.
 
 ::: moniker-end
 ::: moniker range="<=msvc-160"
 
-By default, **`fp_contract`** is **`on`**. This setting tells the compiler to use floating-point contraction instructions where possible. Set **`fp_contract`** to **`off`** to preserve individual floating-point instructions. In Visual Studio 2022 version 17.0 and later, **`fp_contract`** defaults to **`off`**.
+When you use the default compiler options, **`fp_contract`** is **`on`**. This setting tells the compiler to use floating-point contraction instructions where possible. Set **`fp_contract`** to **`off`** to preserve individual floating-point instructions. In Visual Studio 2022 version 17.0 and later, **`fp_contract`** defaults to **`off`**.
 
 ::: moniker-end
 
@@ -41,7 +41,7 @@ The **`/fp:fast`** compiler option enables contractions by default, but the `#pr
 
 ```cpp
 // pragma_directive_fp_contract.cpp
-// on x86 and x64 compile with: /O2 /fp:fast /arch:AVX2
+// On x86 and x64 compile with: /O2 /fp:fast /arch:AVX2
 
 #include <stdio.h>
 
