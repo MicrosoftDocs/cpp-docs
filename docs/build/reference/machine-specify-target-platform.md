@@ -9,7 +9,7 @@ ms.assetid: 8d41bf4b-7e53-4ab9-9085-d852b08d31c2
 # /MACHINE (Specify Target Platform)
 
 ```
-/MACHINE:{ARM|EBC|X64|X86}
+/MACHINE:{ARM|ARM64|EBC|X64|X86}
 ```
 
 ## Remarks
