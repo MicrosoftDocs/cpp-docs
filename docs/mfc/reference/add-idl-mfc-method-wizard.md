@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC method"
-ms.date: "03/22/2022"
+ms.date: "03/24/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL MFC method wizard [C++]", "IDL MFC methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL MFC method wizard"]
 ms.custom: devdivchpfy22
@@ -24,7 +24,7 @@ BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
   DISP_FUNCTION_ID(CMFCApplication2Doc, "nombre", dispidnombre, nombrenom, VT_EMPTY, VTS_NONE)
 END_DISPATCH_MAP()
 ```
-- Generates following associated method implementations.
+- Generates the following associated method implementations:
 ```cpp
 void CMFCApplication2Doc::name()
 {
@@ -40,9 +40,7 @@ void CMFCApplication2Doc::nombrenom()
 }
 ```
 
-## Add an IDL MFC method wizard
-
-**Add a method to your interface**
+## Add a method to your interface
 
 1. On the **View** menu, choose **Class View**.
 
@@ -143,3 +141,7 @@ The following section describes the UI that you'll use to add a method:
 - `helpstring`
 
   Specifies a text that describes the associated element. By default it's *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+
+## See also
+
+[Adding a Default Method](../../ide/adding-a-method-visual-cpp.md)
