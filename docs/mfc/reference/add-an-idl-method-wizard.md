@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an IDL interface in your ATL project"
+description: "Learn more about: Use a Microsoft Visual Studio wizard to add a IDL method to an IDL interface in your project"
 title: "Add an IDL method"
-ms.date: "03/24/2022"
+ms.date: "03/25/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
 ms.custom: devdivchpfy22
@@ -9,21 +9,21 @@ ms.custom: devdivchpfy22
 
 # Add an IDL method
 
-The **Add IDL Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in an Active Template Library(ATL) project. To use the **Add IDL Method** wizard, you must be in an ATL project that doesn't supports MFC.
+The **Add IDL Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a project which has IDL file. To use the **Add IDL Method** wizard, you must be in a project that doesn't support MFC.
 
-For example, if you have an ATL project, and you add ATL simple object, using following procedure you can add the method to interface.
+For example, if you have an ATL project, and it has an IDL file, using the following procedure you can add the method to interface.
 
 This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wizard. The [Add Method](../../ide/adding-a-method-visual-cpp.md) wizard adds a default method to your project. The [Add IDL MFC Method](../reference/add-an-adl-mfc-method-wizard) wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
 ## Add a method to your interface
 
-1. On the **View** menu, choose **Class View**.
+1. On the **View** menu, select **Class View**.
 
-1. In **Class View**, expand the project node to display the interface to which you want to add the method.
+1. In the **Class View**, expand the project node to display the interface to which you want to add the method.
 
 1. Right-click the name of the interface.
 
-1. On the shortcut menu, choose **Add**, and then choose **Add Method**.
+1. On the shortcut menu, select **Add**, and then select **Add Method**.
 
 1. In the **Add IDL Method** wizard, provide the information to create the method.
 
@@ -37,11 +37,12 @@ The following section describes the UI that you'll use to add a method:
 
 - **Method name**
 
-  Sets the name for the method. Provide your own method name.
+  Provide the name of the method.
 
 - **Return type**
 
   The data type returned by the method. The standard way to return error codes from methods defined in an interface is with a `HRESULT`.
+  Enter the return type according to the type of interface you have in the method, following table describes the interface type and it's return type. In dual interface and custom interface the return type must be `HRESULT`, UI dosn't allow you to change this type :
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -78,11 +79,11 @@ The following section describes the UI that you'll use to add a method:
     Sets any other attributes for the parameter specified in **Parameter name**.
     1. **Infer in/out parameters values from types**
 
-        Infer in or out parameter values from their types.
+        This attribute decides the parameter is in/out from the type of the parameter.
 
     1. **Set the last parameter as the return value (retval)**
 
-        Set the last parameter as the return value.
+        The last parameter will be treated as return value. It will be set to the return value when the function completes it's task.
 
 - `id`
 
@@ -102,4 +103,4 @@ The following section describes the UI that you'll use to add a method:
 
 ## See also
 
-[Adding a Default Method](../../ide/adding-a-method-visual-cpp.md)
+[Add a Method](../../ide/adding-a-method-visual-cpp.md)
