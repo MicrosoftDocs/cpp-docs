@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Use a Microsoft Visual Studio wizard to add a IDL method to an IDL interface in your project"
+description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL method to an IDL interface in your project"
 title: "Add an IDL method"
 ms.date: "03/25/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
@@ -9,7 +9,7 @@ ms.custom: devdivchpfy22
 
 # Add an IDL method
 
-The **Add IDL Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a project which has IDL file. To use the **Add IDL Method** wizard, you must be in a project that doesn't support MFC.
+The **Add IDL Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a project that has IDL file. To use the **Add IDL Method** wizard, you must be in a project that doesn't support MFC.
 
 For example, if you have an ATL project, and it has an IDL file, using the following procedure you can add the method to interface.
 
@@ -42,7 +42,7 @@ The following section describes the UI that you'll use to add a method:
 - **Return type**
 
   The data type returned by the method. The standard way to return error codes from methods defined in an interface is with a `HRESULT`.
-  Enter the return type according to the type of interface you have in the method, following table describes the interface type and it's return type. In dual interface and custom interface the return type must be `HRESULT`, UI dosn't allow you to change this type :
+  Enter the return type according to the type of interface you have in the method, following table describes the interface type and its return type. In dual interface and custom interface the return type must be `HRESULT`, UI doesn't allow you to change this type.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -83,7 +83,7 @@ The following section describes the UI that you'll use to add a method:
 
     1. **Set the last parameter as the return value (retval)**
 
-        The last parameter will be treated as return value. It will be set to the return value when the function completes it's task.
+        The last parameter will be treated as return value. It will be set to the return value when the function completes its task.
 
 - `id`
 
