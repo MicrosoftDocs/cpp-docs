@@ -13,18 +13,18 @@ The **Add IDL MFC Method** wizard adds a method to an interface defined in an In
 
 If the ATL project doesn't support MFC, only the wizard that adds a method to an IDL interface is available. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard will add the method to the class, too.
 
-This wizard differs from the **Add Method** wizard. The [Add method](../../ide/adding-a-method-visual-cpp.md) wizard adds a default method to your project. The **Add IDL MFC Method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC. For ATL projects that don't support MFC, only the **Add Method** wizard is available.
+This wizard differs from the [Add Method](../../ide/adding-a-method-visual-cpp.md)  wizard (which adds a method to an IDL interface) in the following ways:
 
-Whereas the **Add IDL MFC Method** wizard adds a method to an IDL interface, this wizard also:
+- It's specific to MFC, ActiveX, or ATL projects that support MFC. For ATL projects that don't support MFC, only the **Add Method** wizard is available.
 
-- Adds the following entries if a Dispatch map is found in the project.
+- It adds the following entries if a Dispatch map is found in the project.
 ```cpp
 BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
   DISP_FUNCTION_ID(CMFCApplication2Doc, "name", dispidname, name, VT_EMPTY, VTS_NONE)
   DISP_FUNCTION_ID(CMFCApplication2Doc, "nombre", dispidnombre, nombrenom, VT_EMPTY, VTS_NONE)
 END_DISPATCH_MAP()
 ```
-- Generates the following associated method implementations:
+- It generates the following associated method implementations:
 ```cpp
 void CMFCApplication2Doc::name()
 {
@@ -39,6 +39,7 @@ void CMFCApplication2Doc::nombrenom()
       // TODO: Add your dispatch handler code here
 }
 ```
+For ATL projects that don't support MFC, this wizard isn't available.
 
 ## Add a method to your interface
 
@@ -72,7 +73,9 @@ The following section describes the UI that you'll use to add a method:
 
 - **Internal name**
 
-  Only available for custom methods added to an MFC dispinterface. Sets the name used in the dispatch map, the header (`.h`) file, and the implementation (`.cpp`) file. By default, this name is the same as **Method name**. You can change the method name if you're working with an MFC dispinterface or if you're adding a custom method to an MFC ActiveX control dispinterface.
+  Only available for custom methods (if **Method type** is selected as custom) added to an MFC dispinterface. The name that will be used in the dispatch map, the header (.h) file, and the implementation (.cpp) file. By default, this name is the same as **Method name**.
+
+  You can change the method name according to the following table if you are adding the method to an MFC dispinterface or MFC ActiveX control dispinterface.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -83,6 +86,8 @@ The following section describes the UI that you'll use to add a method:
 - **Return type**
 
   The data type returned by the method. The standard way to return error codes from methods defined in an interface is with a `HRESULT`.
+
+  If the interface type is dual interface or custom interface, only `HRESULT` return type is allowed. You can set the data type according to the interface type, as defined in the following table:
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -101,7 +106,7 @@ The following section describes the UI that you'll use to add a method:
   |Method type|Description|
   |-----------------|-----------------|
   |**Stock**|The default. Inserts the default implementation of the method you select in the **Method name** list. **Return type** is unchangeable if you select **Stock**.|
-  |**Custom**|Inserts a default implementation of the method selected in the **Method name** list. For custom method types, you can provide your own return type, or you can select one from the **Return type** list.|
+  |**Custom**|You provide a custom implementation for the method selected in **Method name**. You can provide your own return type, or select one from the **Return type** list|
 
 - **Parameter type**
 
@@ -109,7 +114,7 @@ The following section describes the UI that you'll use to add a method:
 
 - **Parameter name**
 
-  Sets the name of a parameter. Select **+** to add the parameter to the **parameters** list. If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
+  Sets the name of a parameter. Select **+** to add the parameter to the **parameters** list.
 
   > [!NOTE]
   > If you supply a parameter name and then select **OK** before you select **+**, the parameter isn't added to the method. You must find the method in the code and insert the parameter manually.
@@ -117,6 +122,8 @@ The following section describes the UI that you'll use to add a method:
 - **+**
 
   Adds the parameter to the list of **parameters**. Specify the parameter name in **Parameter name**, and its type and parameter attributes in **Parameters**.
+
+  If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
 
 - **x**
 
@@ -140,7 +147,7 @@ The following section describes the UI that you'll use to add a method:
 
 - `helpstring`
 
-  Specifies a text that describes the associated element. By default it's *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a text that describes the associated element. By default its *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 ## See also
 
