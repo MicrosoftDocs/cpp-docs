@@ -21,7 +21,7 @@ Use the [add method wizard](#add-method-wizard-dialog-box) to add a method to an
 
 1. On the shortcut menu, choose **Add** > **Add Method**.
 
-1. In the **Add Method** wizard dialog box, provide the information to create the method, as described in the next section.
+1. In the **Add Method** wizard dialog box, provide the information to create the method as described in the next section.
 
 1. Select **OK** to add the method.
 
@@ -29,7 +29,7 @@ Use the [add method wizard](#add-method-wizard-dialog-box) to add a method to an
 
 Add a method to an interface by using the add method wizard dialog box:
 
-:::image type="content" source="../ide/media/add-method-wizard.png" alt-text="Screenshot of Add method wizard with the method name field set to aMethod and the return type set to HRESULT. There are two two parameters in the Parameters section, defined as int x, and bool clip":::
+:::image type="content" source="../ide/media/add-method-wizard.png" alt-text="Screenshot of Add method wizard with the method name field set to aMethod and the return type set to HRESULT. In the Parameters section, two parameters are defined: int x, and bool clip":::
 
 ### Names
 
