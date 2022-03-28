@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Add a method to an interface in a Microsoft Visual C++ project"
+description: "Learn more about: Add a method to an interface in a Microsoft Visual Studio C++ project"
 title: "Add a method"
 ms.date: "03/28/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
@@ -27,7 +27,7 @@ Use the [add method wizard](#add-method-wizard-dialog-box) to add a method to an
 
 ## Add method wizard dialog box
 
-Add a method to an interface using the following dialog box.
+Add a method to an interface by using the add method wizard dialog box:
 
 :::image type="content" source="../ide/media/add-method-wizard.png" alt-text="Screenshot of Add method wizard with the method name field set to aMethod and the return type set to HRESULT. There are two two parameters in the Parameters section, defined as int x, and bool clip":::
 
@@ -47,7 +47,7 @@ Add a method to an interface using the following dialog box.
 
   **+**
 
-Add a parameter. In **Parameters**, type the type, name, and any modifiers. For example, `int x`, and choose **OK**.
+Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `int x`, and choose **OK**.
 
 - **x**
 
