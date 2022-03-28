@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC method"
-ms.date: "03/24/2022"
+ms.date: "03/28/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL MFC method wizard [C++]", "IDL MFC methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL MFC method wizard"]
 ms.custom: devdivchpfy22
@@ -9,9 +9,7 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC method
 
-The **Add IDL MFC Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the **Add IDL MFC Method** wizard you must be in an MFC Project, ActiveX project or an ATL project that supports MFC.
-
-If the ATL project doesn't support MFC, only the wizard that adds a method to an IDL interface is available. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard will add the method to the class, too.
+The **Add IDL MFC Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a Microsoft Framework Class (MFC) project. To use the **Add IDL MFC Method** wizard you must be in an MFC Project, ActiveX project or an ATL project that supports MFC. For example, if you have a Microsoft ActiveX control project, and you open the IDL library, using following procedure you can add the method to interface. If the project contains a class associated with the interface, the wizard will add the method to the class, too.
 
 This wizard differs from the [Add Method](../../ide/adding-a-method-visual-cpp.md)  wizard (which adds a method to an IDL interface) in the following ways:
 
@@ -20,22 +18,14 @@ This wizard differs from the [Add Method](../../ide/adding-a-method-visual-cpp.m
 - It adds the following entries if a Dispatch map is found in the project.
 ```cpp
 BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
-  DISP_FUNCTION_ID(CMFCApplication2Doc, "name", dispidname, name, VT_EMPTY, VTS_NONE)
-  DISP_FUNCTION_ID(CMFCApplication2Doc, "nombre", dispidnombre, nombrenom, VT_EMPTY, VTS_NONE)
+  DISP_FUNCTION_ID(CMFCApplication2Doc, "methodName", dispidmethodName, internalName, VT_EMPTY, VTS_NONE)
 END_DISPATCH_MAP()
 ```
 - It generates the following associated method implementations:
 ```cpp
-void CMFCApplication2Doc::name()
+void CMFCApplication2Doc::internalName()
 {
    AFX_MANAGE_STATE(AfxGetAppModuleState());
-
-      // TODO: Add your dispatch handler code here
-}
-void CMFCApplication2Doc::nombrenom()
-{
-   AFX_MANAGE_STATE(AfxGetAppModuleState());
-
       // TODO: Add your dispatch handler code here
 }
 ```
