@@ -8,12 +8,6 @@ helpviewer_keywords: ["std::get_id [C++]", "std::sleep_for [C++]", "std::sleep_u
 ---
 # `<thread>` functions
 
-[get_id](#get_id)\
-[sleep_for](#sleep_for)\
-[sleep_until](#sleep_until)\
-[swap](#swap)\
-[yield](#yield)
-
 ## <a name="get_id"></a> get_id
 
 Uniquely identifies the current thread of execution.
