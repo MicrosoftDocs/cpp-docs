@@ -6,7 +6,7 @@ metadata:
   title: C++ docs - get started, tutorials, reference.
   description: C++ programming reference for users of Microsoft C++ and Visual Studio.
   ms.topic: landing-page
-  ms.date: 05/08/2020
+  ms.date: 03/22/2022
   ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -33,6 +33,10 @@ landingContent:
             url: ../build/vscpp-step-1-create.md
           - text: Create a console calculator in C++
             url: ../get-started/tutorial-console-cpp.md
+      - linkListType: video
+        links:
+          - text: "Learn C++ - A general purpose language and library"
+            url: /shows/cplusplus-language-library
       - linkListType: learn
         links:
           - text: Welcome back to C++ - Modern C++

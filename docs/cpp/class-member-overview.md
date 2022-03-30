@@ -1,27 +1,27 @@
 ---
-description: "Learn more about: Class Member Overview"
-title: "Class Member Overview"
-ms.date: "11/04/2016"
+description: "Learn more about: Class member overview"
+title: "Class member overview"
+ms.date: 03/15/2022
 helpviewer_keywords: ["members [C++], types of class members", "members [C++]", "class members [C++], types of", "class members"]
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
 ---
-# Class Member Overview
+# Class member overview
 
-A class or struct consists of its members. The work that a class does is performed by its member functions. The state that it maintains is stored in its data members. Initialization of members is done by constructors, and cleanup work such as freeing of memory and releasing of resources is done by destructors. In C++11 and later, data members can (and usually should) be initialized at the point of declaration.
+A `class` or `struct` consists of its members. The work that a class does is performed by its member functions. The state that it maintains is stored in its data members. Initialization of members is done by constructors, and cleanup work such as freeing of memory and releasing of resources is done by destructors. In C++11 and later, data members can (and usually should) be initialized at the point of declaration.
 
 ## Kinds of class members
 
 The full list of member categories is as follows:
 
-- [Special Member Functions](special-member-functions.md).
+- [Special member functions](special-member-functions.md).
 
-- [Overview of Member Functions](overview-of-member-functions.md).
+- [Overview of member functions](overview-of-member-functions.md).
 
 - [Data members](static-members-cpp.md) including built-in types and other user defined types.
 
 - Operators
 
-- [Nested Class Declarations](nested-class-declarations.md) and.)
+- [Nested class declarations](nested-class-declarations.md) and.)
 
 - [Unions](unions.md)
 
@@ -47,7 +47,7 @@ class TestRun
 {
     // Start member list.
 
-    //The class interface accessible to all callers.
+    // The class interface accessible to all callers.
 public:
     // Use compiler-generated default constructor:
     TestRun() = default;
@@ -83,31 +83,31 @@ int TestRun::_instances{ 0 };
 
 ## Member accessibility
 
-The members of a class are declared in the member list. The member list of a class may be divided into any number of **`private`**, **`protected`** and **`public`** sections using keywords known as access specifiers.  A colon **:** must follow the access specifier.  These sections need not be contiguous, that is, any of these keywords may appear several times in the member list.  The keyword designates the access of all members up until the next access specifier or the closing brace. For more information, see [Member Access Control (C++)](../cpp/member-access-control-cpp.md).
+The members of a class are declared in the member list. The member list of a class may be divided into any number of **`private`**, **`protected`** and **`public`** sections using keywords known as access specifiers. A colon **`:`** must follow the access specifier.  These sections don't have to be contiguous; that is, any of these keywords may appear several times in the member list. The keyword designates the access of all members up until the next access specifier or the closing brace. For more information, see [Member access control (C++)](../cpp/member-access-control-cpp.md).
 
 ## Static members
 
-A data member may be declared as static, which means all objects of the class have access to the same copy of it. A member function may be declared as static, in which case it can only access static data members of the class (and has no *this* pointer). For more information, see [Static Data Members](../cpp/static-members-cpp.md).
+A data member may be declared as static, which means all objects of the class have access to the same copy of it. A member function may be declared as static, in which case it can only access static data members of the class (and has no **`this`** pointer). For more information, see [Static Data Members](../cpp/static-members-cpp.md).
 
 ## Special member functions
 
-Special member functions are functions that are automatically provided by the compiler if you do not specify them in your source code.
+Special member functions are functions that the compiler provides automatically if you don't specify them in your source code.
 
-1. Default constructor
+- Default constructor
 
-1. Copy constructor
+- Copy constructor
 
-1. **(C++11)** Move constructor
+- **(C++11)** Move constructor
 
-1. Copy assignment operator
+- Copy assignment operator
 
-1. **(C++11)** Move assignment operator
+- **(C++11)** Move assignment operator
 
-1. Destructor
+- Destructor
 
-For more information, see [Special Member Functions](../cpp/special-member-functions.md).
+For more information, see [Special member functions](../cpp/special-member-functions.md).
 
-## Memberwise initialization
+## Member-wise initialization
 
 In C++11 and later, non-static member declarators can contain initializers.
 
@@ -131,9 +131,9 @@ int main()
 }
 ```
 
-If a member is assigned a value in a constructor, that value overwrites the value with which the member was initialized at the point of declaration.
+If a member is assigned a value in a constructor, that value overwrites the value assigned at declaration.
 
-There is only one shared copy of static data members for all objects of a given class type. Static data members must be defined and can be initialized at file scope. (For more information about static data members, see [Static Data Members](../cpp/static-members-cpp.md).) The following example shows how to perform these initializations:
+There's only one shared copy of static data members for all objects of a given class type. Static data members must be defined and can be initialized at file scope. For more information about static data members, see [Static data members](../cpp/static-members-cpp.md). The following example shows how to initialize static data members:
 
 ```cpp
 // class_members2.cpp
