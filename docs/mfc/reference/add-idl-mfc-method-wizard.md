@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC method"
-ms.date: "03/28/2022"
+ms.date: "03/30/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL MFC method wizard [C++]", "IDL MFC methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL MFC method wizard"]
 ms.custom: devdivchpfy22
@@ -53,7 +53,7 @@ The following section describes the UI that you'll use to add a method:
 
 - **Method name**
 
-  Sets the name for the method.
+  Set the name for the method.
 
   |Interface type|Description|
   |--------------------|-----------------|
@@ -98,20 +98,13 @@ The following section describes the UI that you'll use to add a method:
   |**Stock**|The default. Inserts the default implementation of the method you select in the **Method name** list. **Return type** is unchangeable if you select **Stock**.|
   |**Custom**|You provide a custom implementation for the method selected in **Method name**. You can provide your own return type, or select one from the **Return type** list|
 
-- **Parameter type**
+- **Parameters**
 
-  Sets the data type of the parameter. You can type it or select the type from the list.
-
-- **Parameter name**
-
-  Sets the name of a parameter. Select **+** to add the parameter to the **parameters** list.
-
-  > [!NOTE]
-  > If you supply a parameter name and then select **OK** before you select **+**, the parameter isn't added to the method. You must find the method in the code and insert the parameter manually.
+  Displays the method's parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
 
 - **+**
 
-  Adds the parameter to the list of **parameters**. Specify the parameter name in **Parameter name**, and its type and parameter attributes in **Parameters**.
+  Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `int x`, and choose **OK**.
 
   If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
 
@@ -119,9 +112,9 @@ The following section describes the UI that you'll use to add a method:
 
   Removes the selected parameter from the **Parameters** list.
 
-- **Parameters**
+- **Pencil icon**
 
-  Displays all of the methods parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
+  Edit the selected parameter.
 
 - `id`
 
@@ -141,4 +134,4 @@ The following section describes the UI that you'll use to add a method:
 
 ## See also
 
-[Adding a Default Method](../../ide/adding-a-method-visual-cpp.md)
+[Add Method ](../../ide/adding-a-method-visual-cpp.md)
