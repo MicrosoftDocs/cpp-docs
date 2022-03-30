@@ -19,7 +19,7 @@ In this walkthrough, you watch the value of a variable as the program runs and d
 
 ### To run a program in Debug mode
 
-1. Open Games.cpp for editing.
+1. Open Game.cpp for editing.
 
 1. Select this line of code:
 
