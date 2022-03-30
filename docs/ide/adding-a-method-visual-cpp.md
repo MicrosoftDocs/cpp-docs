@@ -45,9 +45,9 @@ Add a method to an interface by using the add method wizard dialog box:
 
   Displays the method's parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
 
-  **+**
+- **+**
 
-Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `int x`, and choose **OK**.
+  Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `int x`, and choose **OK**.
 
 - **x**
 
