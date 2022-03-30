@@ -13,7 +13,7 @@ The **Add IDL Method** wizard adds a method to an interface defined in an Interf
 
 For example, if you have an ATL project, and it has an IDL file, using the following procedure you can add the method to interface.
 
-This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wizard. The [Add Method](../../ide/adding-a-method-visual-cpp.md) wizard adds a default method to your project. The [Add IDL MFC Method](../reference/add-an-adl-mfc-method-wizard) wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
+This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wizard. The [Add Method](../../ide/adding-a-method-visual-cpp.md) wizard adds a default method to your project. The Add IDL MFC Method wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
 ## Add a method to your interface
 
