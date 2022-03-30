@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL method to an IDL interface in your project"
 title: "Add an IDL method"
-ms.date: "03/25/2022"
+ms.date: "03/30/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
 ms.custom: devdivchpfy22
@@ -51,28 +51,17 @@ The following section describes the UI that you'll use to add a method:
   |Local custom interface|Provide your own return type or select from the list.|
   |Dispinterface|Provide your own return type or select from the list.|
 
-- **Parameter type**
+- **Parameters**
 
-  Sets the data type of the parameter. You can type it or select the type from the list.
-
-- **Parameter name**
-
-  Sets the name of a parameter. Select **+** to add the parameter to the **parameters** list. If you don't provide a parameter name, the wizard ignores any parameter attributes (ATL only) or **Parameter type** selections.
-
-  > [!NOTE]
-  > If you supply a parameter name and then select **OK** before you select **+**, the parameter isn't added to the method. You must find the method in the code and insert the parameter manually.
+  Displays all of the methods parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
 
 - **+**
 
-  Adds the parameter to the list of **parameters**. Specify the parameter name in **Parameter name**, and its type and parameter attributes in **Parameters**.
+  Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `int x`, and choose **OK**.
 
 - **x**
 
   Removes the selected parameter from the **Parameters** list.
-
-- **Parameters**
-
-  Displays all of the methods parameters, modifiers, and types. The wizard updates the **Parameters** list as you add parameters.
 
 - **Parameter attributes**
 
@@ -101,6 +90,19 @@ The following section describes the UI that you'll use to add a method:
 
   Specifies a text that describes the associated element. By default its *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
-## See also
+- **Additional attributes**
+    1. `hidden`
 
-[Add a Method](../../ide/adding-a-method-visual-cpp.md)
+        The *hidden* attribute indicates that the item exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden) in the *MIDL Reference*.
+
+    1. `local`
+
+        The *local* attribute specifies to the MIDL compiler that an interface or function isn't remote. For more information, see [local](/windows/win32/Midl/local) in the *MIDL Reference*.
+
+    1. `restricted`
+
+        The *restricted* attribute specifies that a library, or member of a module, interface, or dispinterface can't be called arbitrarily. For more information, see [restricted](/windows/win32/Midl/restricted) in the *MIDL Reference*.
+
+    1. `source`
+
+        The *source* attribute indicates that a member of a [coclass](/windows/win32/Midl/coclass), property, or method is a source of events. For a member of a coclass, this attribute means that the member is called rather than implemented. For more information, see [source](/windows/win32/Midl/source) in the *MIDL Reference*.
