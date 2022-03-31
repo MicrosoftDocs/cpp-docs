@@ -14,14 +14,14 @@ Use the [Add Property wizard](#add-property-wizard) to add a method to an interf
 
 **To add a property to your interface:**
 
-1. From the Visual Studio main menu, choose **View** > **Class view**. In the [Class View](/visualstudio/ide/viewing-the-structure-of-code) pane, expand the project node to display the interface you want to add the method to.
+1. From the Visual Studio main menu, select **View** > **Class view**. In the [Class View](/visualstudio/ide/viewing-the-structure-of-code) pane, expand the project node to display the interface you want to add the method to.
 
    > [!NOTE]
    > You can also add properties to dispinterfaces, which, unless the project is attributed, are nested within the library node.
 
 1. Right-click the name of interface.
 
-1. From the shortcut menu, choose **Add** > **Add Property**.
+1. From the shortcut menu, select **Add** > **Add Property**.
 
 1. In the [Add property wizard](#add-property-wizard), provide the information to create the property.
 
@@ -29,7 +29,7 @@ Use the [Add Property wizard](#add-property-wizard) to add a method to an interf
 
 ## Add Property wizard
 
-Add a property to an interface by using the add property wizard dialog box:
+Add a property to an interface by using the add property wizard:
 
 :::image type="content" source="../ide/media/add-property-wizard.png" alt-text="Screenshot of Add property wizard with the method name field set to sample and the property type set to int a":::
 
@@ -43,7 +43,7 @@ Add a property to an interface by using the add property wizard dialog box:
 
 - **Get function**
 
-  Sets the name of the function to get the property. By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map. The `Get`*PropertyName* function specifies that the property as readable.
+  Sets the name of the function to get the property. By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map. The `Get`*PropertyName* function specifies the property as readable.
 
   For ATL interfaces. Sets the property as readable; that is, it creates the `Get` method for retrieving this property from the object. Select **Get**, **Put**, or both.
 
