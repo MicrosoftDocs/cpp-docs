@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Add a method to an interface in a Microsoft Visual Studio C++ project"
 title: "Add a method"
-ms.date: "03/30/2022"
+ms.date: "03/31/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
 ms.custom: devdivchpfy22
