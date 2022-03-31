@@ -1,19 +1,19 @@
 ---
 title: "Pragma directives and the __pragma and _Pragma keywords"
 description: "Describes the pragma directives available in Microsoft Visual C and C++ (MSVC)"
-ms.date: "01/19/2021"
+ms.date: 03/22/2022
 f1_keywords: ["#pragma", "_Pragma", "__pragma"]
 helpviewer_keywords: ["#pragma directives, C/C++", "__pragma keyword", "_Pragma keyword", "pragma directives, C/C++", "pragmas, C/C++", "preprocessor", "pragmas", "preprocessor, pragmas", "pragma directives (#pragma)"]
 no-loc: ["pragma"]
 ---
 # Pragma directives and the `__pragma` and `_Pragma` keywords
 
-Pragma directives specify machine-specific or operating system-specific compiler features. The **`__pragma`** keyword, which is specific to the Microsoft compiler, enables you to code pragma directives within macro definitions. The standard **`_Pragma`** preprocessor operator was introduced in C99 and adopted by C++11.
+Pragma directives specify machine-specific or operating system-specific compiler features. A line that starts with `#pragma` specifies a pragma directive. The Microsoft-specific **`__pragma`** keyword enables you to code pragma directives within macro definitions. The standard **`_Pragma`** preprocessor operator, introduced in C99 and adopted by C++11, is similar.
 
 ## Syntax
 
 > **`#pragma`** *token-string*\
-> **`__pragma(`** *token-string* **`)`** // two leading underscores - Microsoft specific extension\
+> **`__pragma(`** *token-string* **`)`** // two leading underscores - Microsoft-specific extension\
 > **`_Pragma(`** *string-literal* **`)`** // C99
 
 ## Remarks
@@ -142,7 +142,7 @@ Quotation marks and back-slashes should be escaped, as shown above. A pragma str
 
 The following code example demonstrates how the **`_Pragma`** keyword could be used in an assert-like macro. It creates a pragma directive that suppresses a warning when the condition expression happens to be constant.
 
-The macro definition uses the `do`-`while(0)` idiom for multi-statement macros so that it can be used as though it were one statement. For more information, see [C multi-line macro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) on Stack Overflow. The **`_Pragma`** statement only applies to the line of code that follows it.
+The macro definition uses the `do ... while(0)` idiom for multi-statement macros so that it can be used as though it were one statement. For more information, see [C multi-line macro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) on Stack Overflow. The **`_Pragma`** statement in the example only applies to the line of code that follows it.
 
 ```C
 // Compile with /W4
