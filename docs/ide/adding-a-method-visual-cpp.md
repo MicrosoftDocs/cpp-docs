@@ -29,7 +29,7 @@ Use the [add method wizard](#add-method-wizard) to add a method to an interface 
 
 Add a method to an interface by using the add method wizard:
 
-:::image type="content" source="../ide/media/add-method-wizard.png" alt-text="Screenshot of Add method wizard. Method name is aMethod, return type is HRESULT. Two parameters are defined: int x, bool clip":::
+:::image type="content" source="../ide/media/add-method-wizard.png" alt-text="Screenshot of Add method wizard. Method name is aMethod, return type is H RESULT. Two parameters are defined: int x, bool clip":::
 
 - **Method name**
 
