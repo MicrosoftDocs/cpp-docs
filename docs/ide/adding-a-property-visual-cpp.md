@@ -10,7 +10,7 @@ ms.custom: devdivchpfy22
 
 # Add a property
 
-Use the [Add property wizard](#add-property-wizard) to add a method to an interface in your project.
+Use the [Add Property wizard](#add-property-wizard) to add a method to an interface in your project.
 
 **To add a property to your interface:**
 
@@ -27,7 +27,7 @@ Use the [Add property wizard](#add-property-wizard) to add a method to an interf
 
 1. Select **OK** to add the property.
 
-## Add property wizard
+## Add Property wizard
 
 Add a property to an interface by using the add property wizard dialog box:
 
