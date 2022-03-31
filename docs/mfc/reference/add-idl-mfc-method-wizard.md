@@ -18,21 +18,21 @@ This wizard differs from the [Add Method](../../ide/adding-a-method-visual-cpp.m
 - It's specific to MFC, ActiveX, or ATL projects that support MFC. For ATL projects that don't support MFC, only the **Add Method** wizard is available.
 - It adds the following entries if a Dispatch map is found in the project:
 
-> ```cpp
-BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
-  DISP_FUNCTION_ID(CMFCApplication2Doc, "methodName", dispidmethodName, internalName, VT_EMPTY, VTS_NONE)
-END_DISPATCH_MAP()
-```
+   ```cpp
+   BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
+      DISP_FUNCTION_ID(CMFCApplication2Doc, "methodName", dispidmethodName, internalName, VT_EMPTY, VTS_NONE)
+   END_DISPATCH_MAP()
+   ```
 
 - It generates the following associated method implementation:
 
-> ```cpp
-void CMFCApplication2Doc::internalName()
-{
-    AFX_MANAGE_STATE(AfxGetAppModuleState());
-    // TODO: Add your dispatch handler code here
-}
-```
+   ```cpp
+   void CMFCApplication2Doc::internalName()
+   {
+       AFX_MANAGE_STATE(AfxGetAppModuleState());
+       // TODO: Add your dispatch handler code here
+   }
+   ```
 
 ## Add a method to an interface
 
