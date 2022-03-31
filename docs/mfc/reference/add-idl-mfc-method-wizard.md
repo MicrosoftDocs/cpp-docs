@@ -18,20 +18,20 @@ This wizard differs from the [Add Method](../../ide/adding-a-method-visual-cpp.m
 - It's specific to MFC, ActiveX, or ATL projects that support MFC. For ATL projects that don't support MFC, only the **Add Method** wizard is available.
 - It adds the following entries if a Dispatch map is found in the project:
 
-```cpp
-    BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
-      DISP_FUNCTION_ID(CMFCApplication2Doc, "methodName", dispidmethodName, internalName, VT_EMPTY, VTS_NONE)
-    END_DISPATCH_MAP()
+> ```cpp
+BEGIN_DISPATCH_MAP(CMFCApplication2Doc, CDocument)
+  DISP_FUNCTION_ID(CMFCApplication2Doc, "methodName", dispidmethodName, internalName, VT_EMPTY, VTS_NONE)
+END_DISPATCH_MAP()
 ```
 
 - It generates the following associated method implementation:
 
-```cpp
-    void CMFCApplication2Doc::internalName()
-    {
-       AFX_MANAGE_STATE(AfxGetAppModuleState());
-       // TODO: Add your dispatch handler code here
-    }
+> ```cpp
+void CMFCApplication2Doc::internalName()
+{
+    AFX_MANAGE_STATE(AfxGetAppModuleState());
+    // TODO: Add your dispatch handler code here
+}
 ```
 
 ## Add a method to an interface
@@ -123,15 +123,15 @@ The following section describes the Add IDL MFC Method wizard UI:
 
 - **`id`**
 
-  Sets the numeric ID that identifies the method. For more information, see [id](/windows/win32/midl/id) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
+  Sets the numeric ID that identifies the method. For more information, see [`id`](/windows/win32/midl/id) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
 
 - **`call_as`**
 
-  Specifies the name of the remote method to map to this local method. For more information, see [call_as](/windows/win32/midl/call-as) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
+  Specifies the name of the remote method to map to this local method. For more information, see [`call_as`](/windows/win32/midl/call-as) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
 
 - **`helpcontext`**
 
-  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [helpcontext](/windows/win32/Midl/helpcontext) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
+  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [`helpcontext`](/windows/win32/Midl/helpcontext) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
 
 - **`helpstring`**
 
@@ -140,4 +140,4 @@ The following section describes the Add IDL MFC Method wizard UI:
 ## See also
 
 [Add method wizard](../../ide/adding-a-method-visual-cpp.md)\
-[MFC wizards and dialog boxes](mfc-wizards-and-dialog-boxes)
+[MFC wizards and dialog boxes](mfc-wizards-and-dialog-boxes.md)
