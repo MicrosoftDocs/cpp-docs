@@ -8,7 +8,7 @@ ms.custom: devdivchpfy22
 ---
 # Add a method
 
-Use the [add method wizard](#add-method-wizard-dialog-box) to add a method to an interface in your project. If the project contains a class associated with the interface, the wizard also adds the method to the class.
+Use the [add method wizard](#add-method-wizard) to add a method to an interface in your project. If the project contains a class associated with the interface, the wizard also adds the method to the class.
 
 **Add a method to your interface:**
 
@@ -25,13 +25,11 @@ Use the [add method wizard](#add-method-wizard-dialog-box) to add a method to an
 
 1. Select **OK** to add the method.
 
-## Add method wizard dialog box
+## Add method wizard
 
-Add a method to an interface by using the add method wizard dialog box:
+Add a method to an interface by using the add method wizard:
 
-:::image type="content" source="../ide/media/add-method-wizard.png" alt-text="Screenshot of Add method wizard with the method name field set to aMethod and the return type set to HRESULT. In the Parameters section, two parameters are defined: int x, and bool clip":::
-
-### Names
+:::image type="content" source="../ide/media/add-method-wizard.png" alt-text="Screenshot of Add method wizard. Method name is aMethod, return type is HRESULT. Two parameters are defined: int x, bool clip":::
 
 - **Method name**
 
@@ -56,3 +54,7 @@ Add a method to an interface by using the add method wizard dialog box:
 - **Pencil icon**
 
   Edit the selected parameter.
+
+## See also
+
+[Adding functionality with code wizards](adding-functionality-with-code-wizards-cpp.md)
