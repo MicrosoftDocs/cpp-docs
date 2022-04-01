@@ -11,7 +11,7 @@ ms.custom: devdivchpfy22
 
 The **Add IDL MFC Method** wizard adds a method to an Interface Definition Library (IDL) interface defined in your Microsoft Framework Class (MFC) project. If the project contains a class associated with the interface, the wizard also adds the method to the class.
 
-To use the this wizard, you must be in an MFC Project, ActiveX project, or an ATL project that supports MFC. For example, if you have a Microsoft ActiveX control project, you can use the following procedure to add a method to an IDL interface in the solution.
+To use this wizard, you must be in an MFC Project, ActiveX project, or an ATL project that supports MFC. For example, if you have a Microsoft ActiveX control project, you can use the following procedure to add a method to an IDL interface in the solution.
 
 This wizard differs from the [Add Method](../../ide/adding-a-method-visual-cpp.md) wizard (which adds a method to an IDL interface) in the following ways:
 
@@ -66,7 +66,7 @@ The following section describes the Add IDL MFC Method wizard UI:
 
 - **Internal name**
 
-  Only available when **Method type** is **custom**. This is the name that will be used in the dispatch map, the header (.h) file, and the implementation (.cpp) file. By default, this name is the same as **Method name**. It is added to the MFC dispinterface.
+  Only available when **Method type** is **custom**. **Internal name** is the name that will be used in the dispatch map, the header (.h) file, and the implementation (.cpp) file. By default, this name is the same as **Method name**. It's added to the MFC dispinterface.
 
   If you're adding the method to an MFC or MFC ActiveX control dispinterface, you can change the method name as described by the following table:
 
@@ -96,7 +96,7 @@ The following section describes the Add IDL MFC Method wizard UI:
 
   Available only for MFC ActiveX controls. Unavailable if you provided a method name in **Method name** rather than selecting a method from the list.
 
-  If you select one of the methods in the **Method name** list, in the **Method type** drop-down select either the **Stock** or **Custom** implementation. This affects the return type and method implementation that the wizard provides, as described in the following table:
+  If you select one of the methods in the **Method name** list, in the **Method type** drop-down select either the **Stock** or **Custom** implementation. The selection of the method affects the return type and method implementation that the wizard provides, as described in the following table:
 
   |Method type|Description|
   |-----------------|-----------------|
