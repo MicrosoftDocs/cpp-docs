@@ -21,7 +21,7 @@ A stock method differs from a custom method in that it is already implemented by
 
 ## <a name="_core_adding_a_stock_method_using_classwizard"></a> Adding a Stock Method Using the Add Method Wizard
 
-Adding a stock method is simple using the [Add Method Wizard](../ide/adding-a-method-visual-cpp.md#add-method-wizard). The following procedure demonstrates adding the Refresh method to a control created using the MFC ActiveX Control Wizard.
+Adding a stock method is simple using the [Add Method Wizard](../ide/adding-a-method-visual-cpp.md). The following procedure demonstrates adding the Refresh method to a control created using the MFC ActiveX Control Wizard.
 
 #### To add the stock Refresh method using the Add Method Wizard
 
