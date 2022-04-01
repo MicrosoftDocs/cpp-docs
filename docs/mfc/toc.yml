@@ -2916,5 +2916,7 @@ items:
           href: reference/adding-atl-support-to-your-mfc-project.md
         - name: Details of ATL support added by the ATL wizard
           href: reference/details-of-atl-support-added-by-the-atl-wizard.md
+    - name: Add a method to an IDL interface in a MFC project
+      href: reference/add-idl-mfc-method-wizard.md
     - name: MFC class wizard
-      href: reference/mfc-class-wizard.md
+      href: reference/mfc-class-wizard.md    

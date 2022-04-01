@@ -45,10 +45,10 @@ Add a property to an interface by using the add property wizard:
 
   Sets the name of the function to get the property. By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map. The `Get`*PropertyName* function specifies the property as readable.
 
-  For ATL interfaces. Sets the property as readable; that is, it creates the `Get` method for retrieving this property from the object. Select **Get**, **Put**, or both.
+  For ATL interfaces **Get function** sets the property as readable; that is, it creates the `Get` method for retrieving this property from the object. Select **Get**, **Put**, or both.
 
 - **Set function**
 
   Sets the name of the function to set the property. By default, the name of the `Set` function is set to `Set`*PropertyName*. You can edit this name. If you delete the name, the function [SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported) is inserted into the interface dispatch map. The `Set`*PropertyName* function specifies that the property is writable.
 
-  ATL interfaces only. Sets the property writable; that is, it creates the `Put` method for setting, or "putting," this property of the object. Select **Get**, **Put**, or both.
+  For ATL interfaces **Set function** sets the property writable; that is, it creates the `Put` method for setting, or "putting," this property of the object. Select **Get**, **Put**, or both.
