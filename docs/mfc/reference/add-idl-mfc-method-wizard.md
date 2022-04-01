@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use the Microsoft Visual Studio Add IDL MFC wizard to add a method to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC method"
-ms.date: "03/31/2022"
+ms.date: "04/01/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL MFC method wizard [C++]", "IDL MFC methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL MFC method wizard"]
 ms.custom: devdivchpfy22
@@ -36,13 +36,13 @@ This wizard differs from the [Add Method](../../ide/adding-a-method-visual-cpp.m
 
 ## Add a method to an interface
 
-1. On the **View** menu, choose **Class View**.
+1. On the **View** menu, select **Class View**.
 
 1. In **Class View**, expand the project node to display the interface to which you want to add the method.
 
 1. Right-click the name of the interface.
 
-1. On the shortcut menu, choose **Add** and then choose **Add Method**.
+1. On the shortcut menu, select **Add** and then select **Add Method**.
 
 1. In the **Add IDL MFC Method** wizard, provide information about the method.
 
