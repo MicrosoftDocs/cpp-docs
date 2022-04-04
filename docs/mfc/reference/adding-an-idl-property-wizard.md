@@ -64,8 +64,8 @@ The following section describes the UI that you'll use to add an IDL property:
 
   |Option|Description|
   |------------|-----------------|
-  |**PropPut**|The [PropPut](../windows/attributes/propput.md) function returns a copy of the object. **PropPut** is the default and the most common way to make the property writable.|
-  |**PropPutRef**|The [PropPutRef](../windows/attributes/propputref.md) function returns a reference to the object, rather than returning the copy of the object itself. Consider using **PropPutRef** option for objects, such as large structs or arrays, that may have initialization overhead.|
+  |**PropPut**|The [PropPut](../../windows/attributes/propput.md) function returns a copy of the object. **PropPut** is the default and the most common way to make the property writable.|
+  |**PropPutRef**|The [PropPutRef](../../windows/attributes/propputref.md) function returns a reference to the object, rather than returning the copy of the object itself. Consider using **PropPutRef** option for objects, such as large structs or arrays, that may have initialization overhead.|
 
 - **Parameters**
 
