@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL method to an IDL interface in your project"
 title: "Add an IDL method"
-ms.date: "03/30/2022"
+ms.date: "04/05/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
 ms.custom: devdivchpfy22
