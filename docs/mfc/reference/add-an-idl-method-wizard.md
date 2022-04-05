@@ -9,7 +9,7 @@ ms.custom: devdivchpfy22
 
 # Add an IDL method
 
-The **Add IDL Method** wizard adds a method to an interface defined in an Interface Definition Library (IDL) in a project that has IDL file. To use the **Add IDL Method** wizard, you must be in a project that doesn't support MFC.
+The **Add IDL Method** wizard adds a method to an Interface Definition Library (IDL) interface in a project that has IDL file. To use the **Add IDL Method** wizard, you must be in a project that doesn't support MFC.
 
 For example, if you have an ATL project, and it has an IDL file, using the following procedure you can add the method to interface.
 
@@ -46,10 +46,10 @@ The following section describes the UI that you'll use to add a method:
 
   |Interface type|Description|
   |--------------------|-----------------|
-  |Dual interface|`HRESULT`. Unchangeable.|
-  |Custom interface|`HRESULT`. Unchangeable.|
+  |[Dual interface](/windows/win32/winauto/dual-interfaces--iaccessible-and-idispatch)|`HRESULT`. Unchangeable.|
+  |[Custom interface](/windows/win32/winauto/custom-user-interface-elements)|`HRESULT`. Unchangeable.|
   |Local custom interface|Provide your own return type or select from the list.|
-  |Dispinterface|Provide your own return type or select from the list.|
+  |[Dispinterface](/windows/win32/midl/dispinterface)|Provide your own return type or select from the list.|
 
 - **Parameters**
 
@@ -68,11 +68,11 @@ The following section describes the UI that you'll use to add a method:
     Sets any other attributes for the parameter specified in **Parameter name**.
     1. **Infer in/out parameters values from types**
 
-        This attribute decides the parameter is in/out from the type of the parameter.
+        Appends in/out attributes to the parameters based on their types.
 
     1. **Set the last parameter as the return value (retval)**
 
-        The last parameter will be treated as return value. It will be set to the return value when the function completes its task.
+        The last parameter will be treated as return value.
 
 - `id`
 
@@ -88,7 +88,7 @@ The following section describes the UI that you'll use to add a method:
 
 - `helpstring`
 
-  Specifies a text that describes the associated element. By default its *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a character string that is used to describe the element to which it applies. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 - **Additional attributes**
     1. `hidden`
