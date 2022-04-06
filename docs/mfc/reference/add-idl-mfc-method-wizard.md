@@ -123,19 +123,19 @@ The following section describes the Add IDL MFC Method wizard UI:
 
 - **`id`**
 
-  Sets the numeric ID that identifies the method. For more information, see [`id`](/windows/win32/midl/id) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
+  Sets the numeric ID that identifies the method. For more information, see [`id`](/windows/win32/midl/id) in the [MIDL reference](/windows/win32/midl/midl-language-reference).
 
 - **`call_as`**
 
-  Specifies the name of the remote method to map to this local method. For more information, see [`call_as`](/windows/win32/midl/call-as) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
+  Specifies the name of the remote method to map to this local method. For more information, see [`call_as`](/windows/win32/midl/call-as) in the [MIDL reference](/windows/win32/midl/midl-language-reference).
 
 - **`helpcontext`**
 
-  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [`helpcontext`](/windows/win32/Midl/helpcontext) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
+  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [`helpcontext`](/windows/win32/Midl/helpcontext) in the [MIDL reference](/windows/win32/midl/midl-language-reference).
 
 - **`helpstring`**
 
-  Specifies a text that describes the associated element. By default its *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the [MIDL reference](/windows/win32/midl/midl-language-reference.md).
+  Specifies a text that describes the associated element. By default its *Method name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the [MIDL reference](/windows/win32/midl/midl-language-reference).
 
 ## See also
 
