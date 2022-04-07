@@ -1,7 +1,7 @@
 ---
 title: Configure and build with CMake Presets
 description: "Reference for using CMake Presets to configure and build CMake projects."
-ms.date: 12/15/2021
+ms.date: 04/07/2022
 ms.topic: reference
 ---
 
@@ -34,7 +34,7 @@ CMake version 3.20 or later is required when you're invoking CMake with *`CMakeP
 > [!Important]
 > Close and reopen the folder in Visual Studio to activate the integration.
 
-In Visual Studio 2022 and Visual Studio 2019 version 16.10 and later, **Tools** > **Options** > **CMake** > **General** has a single option to enable *`CMakePresets.json`* integration.
+In some older versions of Visual Studio, **Tools** > **Options** > **CMake** > **General** only has a single option to enable *`CMakePresets.json`* integration:
 
 ![Screenshot showing the checkbox to enable CMakePresets.json on the CMake General page of the Tools Options dialog in Visual Studio 2019.](./media/enable-cmakepresets.png)
 
@@ -283,7 +283,7 @@ You can set the host architecture (x64 or x86) and toolset by using `toolset.val
 
 The `architecture.strategy` and `toolset.strategy` values tell CMake how to handle the architecture and toolset fields. `set` means CMake sets the respective value, and `external` means CMake won't set the respective value.
 
-We recommend you use `set` with IDE generators like the Visual Studio Generator. Use `external` with command-line generators like Ninja. These values allow vendors like Visual Studio to supply the required environment before CMake is invoked. For more information about the architecture and toolset fields, see the [list of Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
+We recommend using `set` with IDE generators like the Visual Studio Generator. Use `external` with command-line generators like Ninja. These values allow vendors like Visual Studio to supply the required environment before CMake is invoked. For more information about the architecture and toolset fields, see the [list of Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
 
 If you don't want to source an environment, you can set `architecture.strategy` to `external` and `architecture.value` to `unspecified`. You might find it useful not to source an environment for any one of these reasons:
 
