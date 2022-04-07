@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL method to an IDL interface in your project"
 title: "Add an IDL method"
-ms.date: "04/05/2022"
+ms.date: "04/07/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
 ms.custom: devdivchpfy22
@@ -23,7 +23,7 @@ This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wi
 
 1. Right-click the name of the interface.
 
-1. On the shortcut menu, select **Add**, and then select **Add Method**.
+1. On the shortcut menu, select **Add** > **Add Method**.
 
 1. In the **Add IDL Method** wizard, provide the information to create the method.
 
@@ -76,33 +76,33 @@ The following section describes the UI that you'll use to add a method:
 
 - `id`
 
-  Sets the numeric ID that identifies the method. For more information, see [id](/windows/win32/Midl/id) in the *MIDL Reference*.
+  Sets the numeric ID that identifies the method. For more information, see [id](/windows/win32/Midl/id) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
 - `call_as`
 
-  Specifies the name of the remote method to map to this local method. For more information, see [call_as](/windows/win32/Midl/call-as) in the *MIDL Reference*.
+  Specifies the name of the remote method to map to this local method. For more information, see [call_as](/windows/win32/Midl/call-as) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
 - `helpcontext`
 
-  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [helpcontext](/windows/win32/Midl/helpcontext) in the *MIDL Reference*.
+  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [helpcontext](/windows/win32/Midl/helpcontext) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
 - `helpstring`
 
-  Specifies a character string that is used to describe the element to which it applies. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a character string that is used to describe the element to which it applies. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
 - **Additional attributes**
     1. `hidden`
 
-        The *hidden* attribute indicates that the item exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden) in the *MIDL Reference*.
+        The *hidden* attribute indicates that the item exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
     1. `local`
 
-        The *local* attribute specifies to the MIDL compiler that an interface or function isn't remote. For more information, see [local](/windows/win32/Midl/local) in the *MIDL Reference*.
+        The *local* attribute specifies to the MIDL compiler that an interface or function isn't remote. For more information, see [local](/windows/win32/Midl/local) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
     1. `restricted`
 
-        The *restricted* attribute specifies that a library, or member of a module, interface, or dispinterface can't be called arbitrarily. For more information, see [restricted](/windows/win32/Midl/restricted) in the *MIDL Reference*.
+        The *restricted* attribute specifies that a library, or member of a module, interface, or dispinterface can't be called arbitrarily. For more information, see [restricted](/windows/win32/Midl/restricted) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
     1. `source`
 
-        The *source* attribute indicates that a member of a [coclass](/windows/win32/Midl/coclass), property, or method is a source of events. For a member of a coclass, this attribute means that the member is called rather than implemented. For more information, see [source](/windows/win32/Midl/source) in the *MIDL Reference*.
+        The *source* attribute indicates that a member of a [coclass](/windows/win32/Midl/coclass), property, or method is a source of events. For a member of a coclass, this attribute means that the member is called rather than implemented. For more information, see [source](/windows/win32/Midl/source) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
