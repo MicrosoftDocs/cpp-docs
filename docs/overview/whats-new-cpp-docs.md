@@ -270,7 +270,7 @@ This article lists major changes to the Microsoft C++ docs July 2021 through Oct
 
 The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See [Microsoft Docs contributor guide overview](/contribute/) if you'd like to learn how to contribute.
 
-- [mohammad-ghasemi-2549](https://github.com/mohammad-ghasemi-2549) (5)
+- [mohammad-ghasemi-dev](https://github.com/mohammad-ghasemi-dev) (5)
 - [Jaiganeshkumaran](https://github.com/Jaiganeshkumaran) - Jaiganesh Kumaran (2)
 - [workingjubilee](https://github.com/workingjubilee) - Jubilee (2)
 - [adr26](https://github.com/adr26) (1)
