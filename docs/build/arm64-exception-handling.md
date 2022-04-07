@@ -368,19 +368,19 @@ Step 5: Allocate remaining stack, including local area, \<x29,lr> pair, and outg
 | Step # | Flag values | # of instructions | Opcode | Unwind Code |
 |--|--|--|--|--|
 | 0 |  |  | `#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz` |
-| 1 | 0 < **RegI** <= 10 | RegI / 2 + **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
-| 2 | **CR**==01* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
-| 3 | 0 < **RegF** <=7 | (RegF + 1) / 2 +<br/>(RegF + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
+| 1 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
+| 2 | **CR** == 01\* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
+| 3 | 0 < **RegF** <= 7 | (**RegF** + 1) / 2 +<br/>(**RegF** + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
 | 4 | **H** == 1 | 4 | `stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]` | `nop`<br/>`nop`<br/>`nop`<br/>`nop` |
-| 5a | **CR** == 11 && #locsz<br/> <= 512 | 2 | `stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\* | `save_fplr_x`<br/>`set_fp` |
-| 5b | **CR** == 11 &&<br/>512 < #locsz <= 4080 | 3 | `sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`save_fplr`<br/>`set_fp` |
-| 5c | **CR** == 11 && #locsz > 4080 | 4 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp` |
-| 5d | (**CR** == 00 \ | \ | **CR**==01) &&<br/>#locsz <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
-| 5e | (**CR** == 00 \ | \ | **CR**==01) &&<br/>#locsz > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
+| 5a | **CR** == 11 &&<br/> `#locsz` <= 512 | 2 | `stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\* | `save_fplr_x`<br/>`set_fp` |
+| 5b | **CR** == 11 &&<br/>512 < `#locsz` <= 4080 | 3 | `sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`save_fplr`<br/>`set_fp` |
+| 5c | **CR** == 11 &&<br/> `#locsz` > 4080 | 4 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp` |
+| 5d | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
+| 5e | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
 
-\* If **CR** == 01 and **RegI** is an odd number, Step 2 and last save_rep in step 1 are merged into one save_regp.
+\* If **CR** == 01 and **RegI** is an odd number, Step 2 and last `save_rep` in step 1 are merged into one `save_regp`.
 
-\*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first stp for the floating-point does the predecrement.
+\*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first `stp` for the floating-point does the predecrement.
 
 \*\*\* No instruction corresponding to `mov x29,sp` is present in the epilog. Packed unwind data can't be used if a function requires restoration of sp from x29.
 
