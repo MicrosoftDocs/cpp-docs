@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL property to an IDL interface in your project"
 title: "Add an IDL property"
-ms.date: "04/04/2022"
+ms.date: "04/07/2022"
 f1_keywords: ["vc.codewiz.prop.overview", "vc.codewiz.prop.idlattributes"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "IDL attributes", "stock properties, about stock properties", "stock properties"]
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
@@ -89,31 +89,31 @@ The following section describes the UI that you'll use to add an IDL property:
 
 1. `helpcontext`
 
-    Specifies a context ID that lets the user view information about this property in the Help file. For more information, see [helpcontext](/windows/win32/Midl/helpcontext) in the *MIDL Reference*.
+    Specifies a context ID that lets the user view information about this property in the Help file. For more information, see [helpcontext](/windows/win32/Midl/helpcontext) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
 1. `helpstring`
 
-    Specifies a character string that's used to describe the element to which it applies. By default, it's set to **`property`**&nbsp;*Property&nbsp;name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+    Specifies a character string that's used to describe the element to which it applies. By default, it's set to **`property`**&nbsp;*Property&nbsp;name*. For more information, see [helpstring](/windows/win32/Midl/helpstring) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
 1. `id`
 
-    Sets the numerical ID that identifies the property. This option isn't available for properties of custom interfaces. For more information, see [id](/windows/win32/Midl/id) in the *MIDL Reference*.
+    Sets the numerical ID that identifies the property. This option isn't available for properties of custom interfaces. For more information, see [id](/windows/win32/Midl/id) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
 
 - **Additional attributes**
 
   |Option|Description|
   |------------|-----------------|
-  |`bindable`|Indicates that the property supports data binding. For more information, see [bindable](/windows/win32/Midl/bindable) in the *MIDL Reference*.|
-  |`defaultbind`|Indicates that this single, bindable property best represents the object. For more information, see [defaultbind](/windows/win32/Midl/defaultbind) in the *MIDL Reference*.|
-  |`defaultcollelem`|Indicates that the property is an accessor function for an element of the default collection. For more information, see [defaultcollelem](/windows/win32/Midl/defaultcollelem) in the *MIDL Reference*.|
-  |`displaybind`|Indicates that this property should be displayed to the user as bindable. For more information, see [displaybind](/windows/win32/Midl/displaybind) in the *MIDL Reference*.|
-  |`hidden`|Indicates that the property exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden) in the *MIDL Reference*.|
-  |`immediatebind`|Indicates that the database will be notified immediately of all changes to this property of a data-bound object. For more information, see [immediatebind](/windows/win32/Midl/immediatebind) in the *MIDL Reference*.|
-  |`local`|Specifies to the MIDL compiler that the property isn't remote. For more information, see [local](/windows/win32/Midl/local) in the *MIDL Reference*.|
-  |`nonbrowsable`|Tags an interface or dispinterface member that shouldn't be displayed in a properties browser. For more information, see [nonbrowsable](/windows/win32/Midl/nonbrowsable) in the *MIDL Reference*.|
-  |`requestedit`|Indicates that the property supports the `OnRequestEdit` notification. For more information, see [requestedit](/windows/win32/Midl/requestedit) in the *MIDL Reference*.|
-  |`restricted`|Specifies that the property can't be called arbitrarily. For more information, see [restricted](/windows/win32/Midl/restricted) in the *MIDL Reference*.|
-  |`source`|Indicates that a member of the property is a source of events. For more information, see [source](/windows/win32/Midl/source) in the *MIDL Reference*.|
+  |`bindable`|Indicates that the property supports data binding. For more information, see [bindable](/windows/win32/Midl/bindable) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`defaultbind`|Indicates that this single, bindable property best represents the object. For more information, see [defaultbind](/windows/win32/Midl/defaultbind) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`defaultcollelem`|Indicates that the property is an accessor function for an element of the default collection. For more information, see [defaultcollelem](/windows/win32/Midl/defaultcollelem) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`displaybind`|Indicates that this property should be displayed to the user as bindable. For more information, see [displaybind](/windows/win32/Midl/displaybind) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`hidden`|Indicates that the property exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`immediatebind`|Indicates that the database will be notified immediately of all changes to this property of a data-bound object. For more information, see [immediatebind](/windows/win32/Midl/immediatebind) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`local`|Specifies to the MIDL compiler that the property isn't remote. For more information, see [local](/windows/win32/Midl/local) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`nonbrowsable`|Tags an interface or dispinterface member that shouldn't be displayed in a properties browser. For more information, see [nonbrowsable](/windows/win32/Midl/nonbrowsable) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`requestedit`|Indicates that the property supports the `OnRequestEdit` notification. For more information, see [requestedit](/windows/win32/Midl/requestedit) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`restricted`|Specifies that the property can't be called arbitrarily. For more information, see [restricted](/windows/win32/Midl/restricted) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
+  |`source`|Indicates that a member of the property is a source of events. For more information, see [source](/windows/win32/Midl/source) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).|
 
 ## **See also**
 
