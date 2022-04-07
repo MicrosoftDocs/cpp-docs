@@ -13,7 +13,7 @@ helpviewer_keywords:
   ]
 ---
 
-# Microsoft Visual C++ Redistributable Latest Supported Downloads
+# Microsoft Visual C++ Redistributable latest supported downloads
 
 The Visual C++ Redistributable installs Microsoft C and C++ (MSVC) runtime libraries. These libraries are required by many applications built by using Microsoft C and C++ tools. If your app uses those libraries, a Microsoft Visual C++ Redistributable package must be installed on the target system before you install your app. The Redistributable package architecture must match your app's target architecture. The Redistributable version must be at least as recent as the MSVC build toolset used to build your app. We recommend you use the latest Redistributable available for your version of Visual Studio, with some exceptions noted below.
 
@@ -96,6 +96,5 @@ Download Redistributable files for other languages and architectures from:
 
 > [!NOTE]
 > Visual Studio 2005 [reached end of extended support on April 12, 2016](/lifecycle/products/microsoft-visual-studio-2005)
-
 
 - Redistributable files for X86, X64, and IA64 architectures are available from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26347).
