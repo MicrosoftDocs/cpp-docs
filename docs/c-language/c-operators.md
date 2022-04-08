@@ -1,15 +1,17 @@
 ---
-description: "Learn more about: C Operators"
-title: "C Operators"
-ms.date: "06/14/2018"
+description: "Learn more about: C operators"
+title: "C operators"
+ms.date: 04/07/2022
 helpviewer_keywords: ["ternary operators", "operators [C]", "symbols, operators", "binary operators", "associativity of operators", "binary data, binary expressions"]
 ms.assetid: 13bc4c8e-2dc9-4b23-9f3a-25064e8777ed
 ---
-# C Operators
+# C operators
 
 The C operators are a subset of the [C++ built-in operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md).
 
-There are three types of operators. A unary expression consists of either a unary operator followed by an operand, or the **`sizeof`** keyword followed by an expression. The expression can be either the name of a variable or a cast expression. If the expression is a cast expression, it must be enclosed in parentheses. A binary expression consists of two operands joined by a binary operator. A ternary expression consists of three operands joined by the conditional-expression operator.
+
+There are three types of operators. A unary expression consists of either a unary operator followed by an operand, or the **`sizeof`** or **`_Alignof`** keyword followed by an expression. The expression can be either the name of a variable or a cast expression. If the expression is a cast expression, it must be enclosed in parentheses. A binary expression consists of two operands joined by a binary operator. A ternary expression consists of three operands joined by the conditional-expression operator.
+
 
 C includes the following unary operators:
 

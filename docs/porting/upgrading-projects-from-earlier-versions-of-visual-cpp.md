@@ -1,7 +1,7 @@
 ---
 title: "Upgrade C++ projects from earlier versions of Visual Studio"
 description: "How to upgrade Microsoft C++ projects from older versions of Visual Studio."
-ms.date: "01/21/2020"
+ms.date: 04/07/2022
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ---
@@ -12,6 +12,9 @@ To upgrade a project created in an earlier version of Visual Studio, just open t
 If you choose **No**, the project doesn't get upgraded. For projects created in Visual Studio 2010 and later, you can still use the project in the newer version of Visual Studio. Just set your project properties to continue to target the older toolset. If you leave the older version of Visual Studio on your computer, its toolset is available in later versions. For example, if your project must continue to run on Windows XP, you can upgrade to Visual Studio 2019. You then specify the toolset as v141_xp or earlier in your project properties. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
 
 If you choose **Yes**, then the project gets upgraded in place. It can't be converted back to the earlier version. In upgrade scenarios, that's why it's good practice to make a backup copy of the existing project and solution files.
+
+> [!NOTE]
+> Visual Studio 2022 has deprecated support for the upgrade of project types that have *`.dsw`* or *`.dsp`* extensions. You can use an earlier version of Visual Studio, such as Visual Studio 2019, to upgrade these projects, then upgrade them in Visual Studio 2022 to use the latest tools and features of Visual Studio.
 
 ## Upgrade reports
 
@@ -62,7 +65,7 @@ For hard-to-fix errors, you can search for solutions or post a question on [Micr
 [Update WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)\
 [Fix your dependencies on library internals](fix-your-dependencies-on-library-internals.md)\
 [Floating-point migration issues](floating-point-migration-issues.md)\
-[C++ features deprecated in Visual Studio 2019](features-deprecated-in-visual-studio.md)\
+[C++ features deprecated in Visual Studio](features-deprecated-in-visual-studio.md)\
 [VCBuild vs. MSBuild](build-system-changes.md)\
 [Port 3rd-party libraries](porting-third-party-libraries.md)
 

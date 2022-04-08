@@ -11,39 +11,41 @@ Windows on ARM64 uses the same structured exception handling mechanism for async
 
 The exception unwinding data conventions, and this description, are intended to:
 
-1. Provide enough description to allow unwinding without code probing in all cases.
+- Provide enough description to allow unwinding without code probing in all cases.
 
-   - Analyzing the code requires the code to be paged in. It prevents unwinding in some circumstances where it's useful (tracing, sampling, debugging).
+  - Analyzing the code requires the code to be paged in. It prevents unwinding in some circumstances where it's useful (tracing, sampling, debugging).
 
-   - Analyzing the code is complex; the compiler must be careful to only generate instructions that the unwinder can decode.
 
-   - If unwinding can't be fully described by using unwind codes, then in some cases it must fall back to instruction decoding. Instruction decoding increases the overall complexity, and ideally should be avoided.
+  - Analyzing the code is complex; the compiler must be careful to only generate instructions that the unwinder can decode.
 
-1. Support unwinding in mid-prolog and mid-epilog.
+  - If unwinding can't be fully described by using unwind codes, then in some cases it must fall back to instruction decoding. Instruction decoding increases the overall complexity, and ideally should be avoided.
 
-   - Unwinding is used in Windows for more than exception handling. It's critical that code can unwind accurately even when in the middle of a prolog or epilog code sequence.
 
-1. Take up a minimal amount of space.
+- Support unwinding in mid-prolog and mid-epilog.
 
-   - The unwind codes must not aggregate to significantly increase the binary size.
+  - Unwinding is used in Windows for more than exception handling. It's critical that code can unwind accurately even when in the middle of a prolog or epilog code sequence.
 
-   - Since the unwind codes are likely to be locked in memory, a small footprint ensures a minimal overhead for each loaded binary.
+- Take up a minimal amount of space.
+
+  - The unwind codes must not aggregate to significantly increase the binary size.
+
+  - Since the unwind codes are likely to be locked in memory, a small footprint ensures a minimal overhead for each loaded binary.
 
 ## Assumptions
 
 These assumptions are made in the exception handling description:
 
-1. Prologs and epilogs tend to mirror each other. By taking advantage of this common trait, the size of the metadata needed to describe unwinding can be greatly reduced. Within the body of the function, it doesn't matter whether the prolog's operations are undone, or the epilog's operations are done in a forward manner. Both should produce identical results.
+- Prologs and epilogs tend to mirror each other. By taking advantage of this common trait, the size of the metadata needed to describe unwinding can be greatly reduced. Within the body of the function, it doesn't matter whether the prolog's operations are undone, or the epilog's operations are done in a forward manner. Both should produce identical results.
 
-1. Functions tend on the whole to be relatively small. Several optimizations for space rely on this fact to achieve the most efficient packing of data.
+- Functions tend on the whole to be relatively small. Several optimizations for space rely on this fact to achieve the most efficient packing of data.
 
-1. There's no conditional code in epilogs.
+- There's no conditional code in epilogs.
 
-1. Dedicated frame pointer register: If the sp is saved in another register (x29) in the prolog, that register remains untouched throughout the function. It means the original sp may be recovered at any time.
+- Dedicated frame pointer register: If the sp is saved in another register (x29) in the prolog, that register remains untouched throughout the function. It means the original sp may be recovered at any time.
 
-1. Unless the sp is saved in another register, all manipulation of the stack pointer occurs strictly within the prolog and epilog.
+- Unless the sp is saved in another register, all manipulation of the stack pointer occurs strictly within the prolog and epilog.
 
-1. The stack frame layout is organized as described in the next section.
+- The stack frame layout is organized as described in the next section.
 
 ## ARM64 stack frame layout
 
@@ -275,11 +277,13 @@ The array of unwind codes is a pool of sequences that describe exactly how to un
 
 If exceptions were guaranteed to only ever occur within a function body, and never within a prolog or any epilog, then only a single sequence would be necessary. However, the Windows unwinding model requires that code can unwind from within a partially executed prolog or epilog. To meet this requirement, the unwind codes have been carefully designed so they unambiguously map 1:1 to each relevant opcode in the prolog and epilog. This design has several implications:
 
-1. By counting the number of unwind codes, it's possible to compute the length of the prolog and epilog.
 
-1. By counting the number of instructions past the start of an epilog scope, it's possible to skip the equivalent number of unwind codes. We can execute the rest of a sequence to complete the partially executed unwind done by the epilog.
+- By counting the number of unwind codes, it's possible to compute the length of the prolog and epilog.
 
-1. By counting the number of instructions before the end of the prolog, it's possible to skip the equivalent number of unwind codes. We can execute the rest of the sequence to undo only those parts of the prolog that have completed execution.
+- By counting the number of instructions past the start of an epilog scope, it's possible to skip the equivalent number of unwind codes. We can execute the rest of a sequence to complete the partially executed unwind done by the epilog.
+
+- By counting the number of instructions before the end of the prolog, it's possible to skip the equivalent number of unwind codes. We can execute the rest of the sequence to undo only those parts of the prolog that have completed execution.
+
 
 The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack. There are 21 unwind codes in total. Each unwind code maps exactly one instruction in the prolog/epilog, to allow for unwinding of partially executed prologs and epilogs.
 
@@ -365,7 +369,7 @@ Step 4: Save input arguments in the home parameter area.
 
 Step 5: Allocate remaining stack, including local area, \<x29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
 
-| Step # | Flag values | # of instructions | Opcode | Unwind Code |
+| Step # | Flag values | # of instructions | Opcode | Unwind code |
 |--|--|--|--|--|
 | 0 |  |  | `#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz` |
 | 1 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
@@ -624,5 +628,5 @@ Epilog Start Index [4] points to the middle of Prolog unwind code (partially reu
 
 ## See also
 
-[Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md)<br/>
-[ARM Exception Handling](arm-exception-handling.md)
+[Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md)\
+[ARM exception handling](arm-exception-handling.md)

@@ -1,8 +1,7 @@
 ---
 description: "Learn more about: Sample Multithread C Program"
 title: "Sample Multithread C Program"
-ms.date: "08/09/2019"
-ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
+ms.date: 04/07/2022
 ---
 # Sample Multithread C Program
 
@@ -45,11 +44,14 @@ Programs are compiled as multithreaded by default.
 1. On the **Build** menu, build the project by choosing the **Build Solution** command.
 
 1. Press **F5** to start the program in the debugger.
+1. Press **a** to create a new thread. Each thread bounces a character of a different color around the screen.
+1. Press **q** to quit.
 
 ::: moniker-end
 
 ### To compile and link the multithread program Bounce.c from the command line
 
+1. Open a Visual Studio tools command prompt. This ensures the path is set to include the compiler.
 1. Compile and link the program:
 
     ```cmd
@@ -86,7 +88,7 @@ To build on the command line, copy and save this sample in a source file with a 
 
 int main(void);                    // Thread 1: main
 void KbdFunc(void);                // Keyboard input, thread dispatch
-void BounceProc(void* MyID);       // Threads 2 to n: display
+void BounceProc(void* pMyID);      // Threads 2 to n: display
 void ClearScreen(void);            // Screen clear
 void ShutDown(void);               // Program shutdown
 void WriteTitle(int ThreadNum);    // Display title bar information
@@ -94,12 +96,14 @@ void WriteTitle(int ThreadNum);    // Display title bar information
 HANDLE  hConsoleOut;                 // Handle to the console
 HANDLE  hRunMutex;                   // "Keep Running" mutex
 HANDLE  hScreenMutex;                // "Screen update" mutex
-int     ThreadNr;                    // Number of threads started
+int     ThreadNr = 0;                // Number of threads started
 CONSOLE_SCREEN_BUFFER_INFO csbiInfo; // Console information
 COORD   consoleSize;
-BOOL    bTrails;
+BOOL    bTrails = FALSE;
 
-int main() // Thread One
+HANDLE  hThreads[MAX_THREADS] = { NULL }; // Handles for created threads
+
+int main(void) // Thread One
 {
     // Get display screen information & clear the screen.
     hConsoleOut = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -112,8 +116,6 @@ int main() // Thread One
     // Create the mutexes and reset thread count.
     hScreenMutex = CreateMutexW(NULL, FALSE, NULL);  // Cleared
     hRunMutex = CreateMutexW(NULL, TRUE, NULL);      // Set
-    ThreadNr = 0;
-    bTrails = FALSE;
 
     // Start waiting for keyboard input to dispatch threads or exit.
     KbdFunc();
@@ -126,11 +128,13 @@ int main() // Thread One
 
 void ShutDown(void) // Shut down threads
 {
+    // Tell all threads to die
+    ReleaseMutex(hRunMutex);
+
     while (ThreadNr > 0)
     {
-        // Tell thread to die and record its death.
-        ReleaseMutex(hRunMutex);
-        ThreadNr--;
+        // Wait for each thread to complete
+        WaitForSingleObject(hThreads[--ThreadNr], INFINITE);
     }
 
     // Clean up display when done
@@ -148,10 +152,12 @@ void KbdFunc(void) // Dispatch and count threads.
         if (tolower(KeyInfo) == 'a' &&
             ThreadNr < MAX_THREADS)
         {
-            ThreadNr++;
-            _beginthread(BounceProc, 0, &ThreadNr);
+            ++ThreadNr;
+            hThreads[ThreadNr] = 
+                (HANDLE)_beginthread(BounceProc, 0, (void*)(uintptr_t)ThreadNr);
             WriteTitle(ThreadNr);
         }
+
         if (tolower(KeyInfo) == 't')
         {
             bTrails = !bTrails;
@@ -169,11 +175,11 @@ void BounceProc(void* pMyID)
     COORD   Coords, Delta;
     COORD   Old = { 0,0 };
     DWORD   Dummy;
-    char* MyID = (char*)pMyID;
+    int MyID = (int)(uintptr_t)pMyID;
 
     // Generate update increments and initial
     // display coordinates.
-    srand((unsigned int)* MyID * 3);
+    srand(MyID * 3);
 
     Coords.X = getrandom(0, consoleSize.X - 1);
     Coords.Y = getrandom(0, consoleSize.Y - 1);
@@ -182,11 +188,11 @@ void BounceProc(void* pMyID)
 
     // Set up character & generate color
     // attribute from thread number.
-    if (*MyID > 16)
-        MyCell = 0x60 + *MyID - 16; // lower case
+    if (MyID > 16)
+        MyCell = (wchar_t)(0x60 + MyID - 16); // lower case
     else
-        MyCell = 0x40 + *MyID;      // upper case
-    MyAttrib = *MyID & 0x0f;   // force black background
+        MyCell = (wchar_t)(0x40 + MyID);      // upper case
+    MyAttrib = MyID & 0x0f;   // force black background
 
     do
     {
