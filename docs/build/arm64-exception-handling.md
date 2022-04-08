@@ -15,9 +15,11 @@ The exception unwinding data conventions, and this description, are intended to:
 
   - Analyzing the code requires the code to be paged in. It prevents unwinding in some circumstances where it's useful (tracing, sampling, debugging).
 
+
   - Analyzing the code is complex; the compiler must be careful to only generate instructions that the unwinder can decode.
 
   - If unwinding can't be fully described by using unwind codes, then in some cases it must fall back to instruction decoding. Instruction decoding increases the overall complexity, and ideally should be avoided.
+
 
 - Support unwinding in mid-prolog and mid-epilog.
 
@@ -275,11 +277,13 @@ The array of unwind codes is a pool of sequences that describe exactly how to un
 
 If exceptions were guaranteed to only ever occur within a function body, and never within a prolog or any epilog, then only a single sequence would be necessary. However, the Windows unwinding model requires that code can unwind from within a partially executed prolog or epilog. To meet this requirement, the unwind codes have been carefully designed so they unambiguously map 1:1 to each relevant opcode in the prolog and epilog. This design has several implications:
 
+
 - By counting the number of unwind codes, it's possible to compute the length of the prolog and epilog.
 
 - By counting the number of instructions past the start of an epilog scope, it's possible to skip the equivalent number of unwind codes. We can execute the rest of a sequence to complete the partially executed unwind done by the epilog.
 
 - By counting the number of instructions before the end of the prolog, it's possible to skip the equivalent number of unwind codes. We can execute the rest of the sequence to undo only those parts of the prolog that have completed execution.
+
 
 The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack. There are 21 unwind codes in total. Each unwind code maps exactly one instruction in the prolog/epilog, to allow for unwinding of partially executed prologs and epilogs.
 
