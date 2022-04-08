@@ -1915,6 +1915,8 @@ items:
           href: compiler-errors-2/compiler-error-c2953.md
         - name: Compiler error C2955
           href: compiler-errors-2/compiler-error-c2955.md
+        - name: Compiler error C2956
+          href: compiler-errors-2/compiler-error-c2956.md
         - name: Compiler error C2957
           href: compiler-errors-2/compiler-error-c2957.md
         - name: Compiler error C2958

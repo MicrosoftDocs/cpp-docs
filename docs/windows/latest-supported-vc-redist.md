@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article lists the download links for the latest versions of Visual C++ Redistributable packages."
-ms.date: 11/09/2021
+ms.date: 04/07/2022
 helpviewer_keywords:
   [
     "redist",
@@ -13,7 +13,7 @@ helpviewer_keywords:
   ]
 ---
 
-# Microsoft Visual C++ Redistributable Latest Supported Downloads
+# Microsoft Visual C++ Redistributable latest supported downloads
 
 The Visual C++ Redistributable installs Microsoft C and C++ (MSVC) runtime libraries. These libraries are required by many applications built by using Microsoft C and C++ tools. If your app uses those libraries, a Microsoft Visual C++ Redistributable package must be installed on the target system before you install your app. The Redistributable package architecture must match your app's target architecture. The Redistributable version must be at least as recent as the MSVC build toolset used to build your app. We recommend you use the latest Redistributable available for your version of Visual Studio, with some exceptions noted below.
 
@@ -27,7 +27,7 @@ This table lists the latest supported English (en-US) Microsoft Visual C++ Redis
 |--|:-:|-:|
 | ARM64 | [https://aka.ms/vs/17/release/vc_redist.arm64.exe](https://aka.ms/vs/17/release/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
 | X86 | [https://aka.ms/vs/17/release/vc_redist.x86.exe](https://aka.ms/vs/17/release/vc_redist.x86.exe) | Permalink for latest supported x86 version |
-| X64 | [https://aka.ms/vs/17/release/vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 redistributable is installed on an ARM64 device. |
+| X64 | [https://aka.ms/vs/17/release/vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
 
 Download other languages and versions, including versions for long term servicing release channels (LTSC), from [my.visualstudio.com](https://my.visualstudio.com/).
 
@@ -36,9 +36,9 @@ Download other languages and versions, including versions for long term servicin
 
 ### Notes
 
-- Visual Studio versions since Visual Studio 2015 share the same redistributable files. For example, any apps built by the Visual Studio 2015, 2017, 2019, or 2022 toolsets can use the latest Microsoft Visual C++ Redistributable. However, the version of the Microsoft Visual C++ redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. For more information about which version of the Redistributable to install, see [Determining which DLLs to redistribute](determining-which-dlls-to-redistribute.md).
+- Visual Studio versions since Visual Studio 2015 share the same Redistributable files. For example, any apps built by the Visual Studio 2015, 2017, 2019, or 2022 toolsets can use the latest Microsoft Visual C++ Redistributable. However, the version of the Microsoft Visual C++ Redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. For more information about which version of the Redistributable to install, see [Determining which DLLs to redistribute](determining-which-dlls-to-redistribute.md).
 
-- **Windows XP Support**: Microsoft ended support for Windows XP on April 8, 2014. Current versions of the Visual C++ Redistributable for Visual Studio 2015-2022 only support Windows Vista, 7, 8.1, 10, and 11. The last version of the Visual C++ Redistributable that works on Windows XP shipped in Visual Studio 2019 version 16.7 (file versions starting with **14.27**). The redistributable is available in the [my.visualstudio.com Downloads](https://my.visualstudio.com/Downloads/) section as **Visual C++ Redistributable for Visual Studio 2019 - Version 16.7**. Use the Search box to find this version. To download the files, select the platform and language you need, and then choose the **Download** button.
+- **Windows XP Support**: Microsoft ended support for Windows XP on April 8, 2014. Current versions of the Visual C++ Redistributable for Visual Studio 2015-2022 only support Windows Vista, 7, 8.1, 10, and 11. The last version of the Visual C++ Redistributable that works on Windows XP shipped in Visual Studio 2019 version 16.7 (file versions starting with **14.27**). The Redistributable is available in the [my.visualstudio.com Downloads](https://my.visualstudio.com/Downloads/) section as **Visual C++ Redistributable for Visual Studio 2019 - Version 16.7**. Use the Search box to find this version. To download the files, select the platform and language you need, and then choose the **Download** button.
 
 ## Visual Studio 2013 (VC++ 12.0)
 
@@ -71,10 +71,10 @@ These links download the latest supported en-US Microsoft Visual C++ Redistribut
 
 | Architecture | Version | Link |
 |--|:-:|-:|
-| X86 | 10.0.40219.1 | [vcredist_x86.exe](https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe) |
-| X64 | 10.0.40219.1 | [vcredist_x64.exe](https://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe) |
+| X86 | 10.0.40219.325 | [vcredist_x86.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe) |
+| X64 | 10.0.40219.325 | [vcredist_x64.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe) |
 
-Download redistributable files for other languages and architectures from:
+Download Redistributable files for other languages and architectures from:
 
 - [Microsoft Visual C++ 2010 SP1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26999)
 
@@ -88,7 +88,7 @@ Download redistributable files for other languages and architectures from:
 | X86 | 9.0.30729.5677 | [vcredist_x86.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe) |
 | X64 | 9.0.30729.5677 | [vcredist_x64.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe) |
 
-Download redistributable files for other languages and architectures from:
+Download Redistributable files for other languages and architectures from:
 
 - [Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26368)
 
@@ -96,6 +96,5 @@ Download redistributable files for other languages and architectures from:
 
 > [!NOTE]
 > Visual Studio 2005 [reached end of extended support on April 12, 2016](/lifecycle/products/microsoft-visual-studio-2005)
-
 
 - Redistributable files for X86, X64, and IA64 architectures are available from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26347).
