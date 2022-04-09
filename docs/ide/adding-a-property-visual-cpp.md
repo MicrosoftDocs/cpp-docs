@@ -28,7 +28,7 @@ Use the [Add Property wizard](#add-property-wizard) to add a method to an interf
 
 ## Add Property wizard
 
-Add a property to an interface by using the add property wizard:
+The following section describes the UI that you'll use to add a property:
 
 :::image type="content" source="../ide/media/add-property-wizard.png" alt-text="Screenshot of Add property wizard with the method name field set to sample and the property type set to int a":::
 
