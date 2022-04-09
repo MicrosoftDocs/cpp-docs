@@ -233,7 +233,7 @@ If you build and run the code again at this point, it will still exit after aski
         {
             cin >> x >> oper >> y;
             result = c.Calculate(x, oper, y);
-            cout << "Result is: " << result << endl;
+            cout << "Result "<<"of "<< x << oper << y <<" is : "<< result << endl;
         }
 
         return 0;
@@ -599,7 +599,7 @@ If you build and run the code again at this point, it will still exit after aski
         {
             cin >> x >> oper >> y;
             result = c.Calculate(x, oper, y);
-            cout << "Result is: " << result << endl;
+            cout << "Result"<<" of "<< x << oper << y <<" is : "<< result << endl;
         }
 
         return 0;
@@ -711,13 +711,14 @@ Let's handle division by zero more gracefully, so a user can understand the prob
             if (oper == '/' && y == 0)
             {
                 cout << "Division by 0 exception" << endl;
+                cout << "Math error: Attempted to divide by Zero! "<<endl;
                 continue;
             }
             else
             {
                 result = c.Calculate(x, oper, y);
             }
-            cout << "Result is: " << result << endl;
+            cout << "Result"<<" of "<< x << oper << y <<" is : "<< result << endl;
         }
 
         return 0;
