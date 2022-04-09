@@ -81,7 +81,7 @@ items:
     - name: Add a property
       href: ../ide/adding-a-property-visual-cpp.md
     - name: Add an IDL property
-      href: ../ide/adding-a-property-visual-cpp.md
+      href: ../ide/add-an-idl-property-wizard.md
     - name: Add an event
       href: ../ide/adding-an-event-visual-cpp.md
     - name: Add an event handler
