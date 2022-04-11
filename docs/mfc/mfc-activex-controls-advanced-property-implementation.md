@@ -30,7 +30,7 @@ The Add Property Wizard provides a quick and easy method to implement read-only 
 
 1. From the shortcut menu, click **Add** and then click **Add Property**.
 
-   This opens the [Add Property Wizard](../ide/adding-a-property-visual-cpp.md#names-add-property-wizard).
+   This opens the [Add Property Wizard](../ide/adding-a-property-visual-cpp.md#add-property-wizard).
 
 1. In the **Property Name** box, type the name of your property.
 
