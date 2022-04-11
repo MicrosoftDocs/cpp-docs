@@ -2,7 +2,7 @@
 title: "Use the Microsoft C++ toolset from the command line"
 description: "Use the Microsoft C++ (MSVC) compiler toolset from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: 09/08/2021
+ms.date: 04/07/2022
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
@@ -11,7 +11,7 @@ ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 You can build C and C++ applications on the command line by using tools that are included in Visual Studio. The Microsoft C++ (MSVC) compiler toolset is also downloadable as a standalone package. You don't need to install the Visual Studio IDE if you don't plan to use it.
 
 > [!NOTE]
-> This article is about how to set up an environment to use the individual compilers, linkers, librarian, and other basic tools. The native project build system, MSBuild, does not use the environment as described in this article. For more information on how to use MSBuild from the command line, see [MSBuild on the command line - C++](msbuild-visual-cpp.md).
+> This article is about how to set up an environment to use the individual compilers, linkers, librarian, and other basic tools. The native project build system in Visual Studio, based on MSBuild, doesn't use the environment as described in this article. For more information on how to use MSBuild from the command line, see [MSBuild on the command line - C++](msbuild-visual-cpp.md).
 
 ## Download and install the tools
 
@@ -28,19 +28,19 @@ If you've installed Visual Studio and a C++ workload, you have all the command-l
 
 ## How to use the command-line tools
 
-When you choose one of the C++ workloads in the Visual Studio Installer, it installs the Visual Studio *platform toolset*. A platform toolset has all the C and C++ tools for a specific Visual Studio version. The tools include the C/C++ compilers, linkers, assemblers, and other build tools, and matching libraries. You can use all of these tools at the command line. They're also used internally by the Visual Studio IDE. There are separate x86-hosted and x64-hosted compilers and tools to build code for x86, x64, ARM, and ARM64 targets. Each set of tools for a particular host and target build architecture is stored in its own directory.
+When you choose one of the C++ workloads in the Visual Studio Installer, it installs the Visual Studio *platform toolset*. A platform toolset has all the C and C++ tools for a specific Visual Studio version. The tools include the C/C++ compilers, linkers, assemblers, and other build tools, and matching libraries and header files. You can use all of these tools at the command line. They're also used internally by the Visual Studio IDE. There are separate x86-hosted and x64-hosted compilers and tools to build code for x86, x64, ARM, and ARM64 targets. Each set of tools for a particular host and target build architecture is stored in its own directory.
 
-To work correctly, the tools require several specific environment variables to be set. These variables are used to add the tools to the path, and to set include file, library file, and SDK locations. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset. For convenience, the installer also creates shortcuts in your Start menu. The shortcuts start developer command prompt windows by using these command files for specific combinations of host and target. These shortcuts ensure all the required environment variables are set and ready to use.
+To work correctly, the tools require several specific environment variables to be set. These variables are used to add the tools to the path, and to set the locations of include files, library files, and SDKs. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset. For convenience, the installer also creates shortcuts in your Start menu. The shortcuts open developer command prompt windows by using these command files for specific combinations of host and target. These shortcuts ensure all the required environment variables are set and ready to use.
 
-The required environment variables are specific to your installation and to the build architecture you choose. They also might be changed by product updates or upgrades. That's why we recommend you use an installed command prompt shortcut or command file, instead of setting the environment variables yourself.
+The required environment variables are specific to your installation and to the build architecture you choose. They also might be changed by product updates or upgrades. This variability is one reason why we recommend you use an installed command prompt shortcut or command file, instead of setting the environment variables yourself.
 
 The toolsets, command files, and shortcuts installed depend on your computer processor and the options you selected during installation. The x86-hosted tools and cross tools that build x86 and x64 code are always installed. If you have 64-bit Windows, the x64-hosted tools and cross tools that build x86 and x64 code are also installed. If you choose the optional C++ Universal Windows Platform tools, then the x86 and x64 tools that build ARM and ARM64 code also get installed. Other workloads may install these and other tools.
 
 ## <a name="path_and_environment"></a> Path and environment variables for command-line builds
 
-The MSVC command-line tools use the `PATH`, `TMP`, `INCLUDE`, `LIB`, and `LIBPATH` environment variables, and also use other environment variables specific to your installed tools, platforms, and SDKs. Even a simple Visual Studio installation may set twenty or more environment variables. The values of these environment variables are specific to your installation and your choice of build configuration, and can be changed by product updates or upgrades. That's why we strongly recommend that you use a [developer command prompt shortcut](#developer_command_prompt_shortcuts) or one of the [customized command files](#developer_command_file_locations) to set them. We don't recommend you set them in the Windows environment yourself.
+The MSVC command-line tools use the `PATH`, `TMP`, `INCLUDE`, `LIB`, and `LIBPATH` environment variables, and also use other environment variables specific to your installed tools, platforms, and SDKs. Even a simple Visual Studio installation may set twenty or more environment variables. This complexity is why we strongly recommend that you use a [developer command prompt shortcut](#developer_command_prompt_shortcuts) or one of the [customized command files](#developer_command_file_locations). We don't recommend you set these variables in the Windows environment yourself.
 
-To see which environment variables are set by a developer command prompt shortcut, you can use the `SET` command. Open a plain command prompt window and capture the output of the `SET` command for a baseline. Open a developer command prompt window and capture the output of the `SET` command for comparison. A diff tool such as the one built into the Visual Studio IDE can be useful to compare the environment variables and see what's set by the developer command prompt. For information about the specific environment variables used by the compiler and linker, see [CL Environment Variables](reference/cl-environment-variables.md).
+To see which environment variables are set by a developer command prompt shortcut, you can use the `SET` command. Open a plain command prompt window and capture the output of the `SET` command for a baseline. Open a developer command prompt window and capture the output of the `SET` command for comparison. Use a diff tool such as the one built into Visual Studio to highlight the environment variables set by the developer command prompt. For more information about the compiler and linker environment variables, see [CL environment variables](reference/cl-environment-variables.md).
 
 ## <a name="developer_command_prompt_shortcuts"></a> Developer command prompt shortcuts
 
@@ -54,7 +54,7 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 
 ::: moniker range=">= msvc-160"
 
-The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2019, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2019 (Latest)**, in a folder named **Visual Studio 2019**.
+The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2022, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2022 (Latest)**, in a folder named **Visual Studio 2022**.
 
 ::: moniker-end
 ::: moniker range="msvc-150"
@@ -73,7 +73,7 @@ The Start menu folder and shortcut names vary depending on the installed version
 
 ### <a name="developer_command_prompt"></a> To open a developer command prompt window
 
-1. On the desktop, open the Windows **Start** menu, and then scroll to find and open the folder for your version of Visual Studio, for example, **Visual Studio 2019**.
+1. On the desktop, open the Windows **Start** menu. In Windows 11, choose the **All apps** button to open the list of installed apps. In Windows 10, the list is open to the left. Scroll down the list to find and open the folder (not the app) for your version of Visual Studio, for example, **Visual Studio 2022**.
 
 1. In the folder, choose the **Developer Command Prompt** for your version of Visual Studio. This shortcut starts a developer command prompt window that uses the default build architecture of 32-bit, x86-native tools to build 32-bit, x86-native code. If you prefer a non-default build architecture, choose one of the native or cross tools command prompts to specify the host and target architecture.
 
@@ -83,23 +83,28 @@ For an even faster way to open a developer command prompt, enter *developer comm
 
 If you prefer to set the build environment in an existing command prompt window, you can use one of the command files created by the installer. We recommend you set the environment in a new command prompt window. We don't recommend you later switch environments in the same command window.
 
-::: moniker range=">= msvc-160"
+::: moniker range=">= msvc-170"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is in \\Program Files (x86)\\Microsoft Visual Studio\\2019\\*edition*. *Edition* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is in *`\Program Files\Microsoft Visual Studio\2022\<edition>`*. The *`<edition>`* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
+
+::: moniker-end
+::: moniker range="= msvc-160"
+
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is in *`\Program Files (x86)\Microsoft Visual Studio\2019\<edition>`*. The *`<edition>`* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
 
 ::: moniker-end
 ::: moniker range="= msvc-150"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit system is in \\Program Files (x86)\\Microsoft Visual Studio\\2017\\*edition*. *Edition* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit system is in *`\Program Files (x86)\Microsoft Visual Studio\2017\<edition>`*. The *`<edition>`* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
 
 ::: moniker-end
 ::: moniker range="< msvc-150"
 
-The command file location depends on the Visual Studio version, and the installation directory. For Visual Studio 2015, the typical installation location is in \\Program Files (x86)\\Microsoft Visual Studio 14.0.
+The command file location depends on the Visual Studio version, and the installation directory. For Visual Studio 2015, the typical installation location on a 64-bit system is in *`\Program Files (x86)\Microsoft Visual Studio 14.0`*.
 
 ::: moniker-end
 
-The primary developer command prompt command file, *`VsDevCmd.bat`*, is located in the Common7\\Tools subdirectory. When no parameters are specified, it sets the environment to use the x86-native tools to build 32-bit x86 code.
+The primary developer command prompt command file, *`VsDevCmd.bat`*, is located in the *`Common7\Tools`* subdirectory. When no parameters are specified, it sets the environment to use the x86-native tools to build 32-bit x86 code.
 
 ::: moniker range=">= msvc-150"
 

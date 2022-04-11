@@ -27,13 +27,13 @@ public:
 };
 ```
 
-A program consists of one or more *translation units*. A translation unit consists of an implementation file and all the headers that it includes directly or indirectly. Implementation files typically have a file extension of *`.cpp`* or *`.cxx`*. Header files typically have an extension of *`.h`* or *`.hpp`*. Each translation unit is compiled independently by the compiler. After the compilation is complete, the linker merges the compiled translation units into a single *program*. Violations of the ODR rule typically show up as linker errors. Linker errors occur when the same name has two different definitions in different translation units.
+A program consists of one or more *translation units*. A translation unit consists of an implementation file and all the headers that it includes directly or indirectly. Implementation files typically have a file extension of *`.cpp`* or *`.cxx`*. Header files typically have an extension of *`.h`* or *`.hpp`*. Each translation unit is compiled independently by the compiler. After the compilation is complete, the linker merges the compiled translation units into a single *program*. Violations of the ODR rule typically show up as linker errors. Linker errors occur when the same name is defined in more than one translation unit.
 
-In general, the best way to make a variable visible across multiple files is to put it in a header file. Then add an #include directive in every *`.cpp`* file that requires the declaration. By adding *include guards* around the header contents, you ensure that the names it declares are only defined once.
+In general, the best way to make a variable visible across multiple files is to declare it in a header file. Then add an `#include` directive in every *`.cpp`* file that requires the declaration. By adding *include guards* around the header contents, you ensure that the names a header declares are only declared once for each translation unit. Define the name in only one implementation file.
 
 In C++20, [modules](modules-cpp.md) are introduced as an improved alternative to header files.
 
-In some cases, it may be necessary to declare a global variable or class in a *`.cpp`* file. In those cases, you need a way to tell the compiler and linker what kind of *linkage* the name has. The type of linkage specifies whether the name of the object applies just to the one file, or to all files. The concept of linkage applies only to global names. The concept of linkage doesn't apply to names that are declared within a scope. A scope is specified by a set of enclosing braces such as in function or class definitions.
+In some cases, it may be necessary to declare a global variable or class in a *`.cpp`* file. In those cases, you need a way to tell the compiler and linker what kind of *linkage* the name has. The type of linkage specifies whether the name of the object is visible only in one file, or in all files. The concept of linkage applies only to global names. The concept of linkage doesn't apply to names that are declared within a scope. A scope is specified by a set of enclosing braces such as in function or class definitions.
 
 ## External vs. internal linkage
 
