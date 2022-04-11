@@ -1,18 +1,18 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL property to an IDL interface in your project"
 title: "Add an IDL property"
-ms.date: 04/08/2022
+ms.date: 04/11/2022
 f1_keywords: ["vc.codewiz.prop.overview", "vc.codewiz.prop.idlattributes"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "IDL attributes", "stock properties, about stock properties", "stock properties"]
 ms.custom: devdivchpfy22
 ---
 # Add an IDL property
 
-The **Add IDL Property** wizard adds a method to an interface defined in an Interface Definition Library (IDL). To use the **Add IDL Property** wizard, you're project can't support MFC.
+The **Add IDL Property** wizard adds a method to an interface defined in an Interface Definition Library (IDL). To use the **Add IDL Property** wizard, your project can't support MFC.
 
 For example, if you have an ATL project, and it has an `.idl` file in it, use the following procedure to add a property to an interface.
 
-This wizard differs from the **Add Property** wizard and **Add IDL MFC Property** wizard. The [Add Property](adding-a-property-visual-cpp.md) wizard adds a property to your project. The Add IDL MFC Property wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
+This wizard differs from the **Add Property** wizard and **Add IDL MFC Property** wizard. The [Add Property](adding-a-property-visual-cpp.md) wizard adds a property to your project. The **Add IDL MFC Property** wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
 **To add an IDL property**
 
