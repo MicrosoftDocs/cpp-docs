@@ -37,7 +37,7 @@ For ATL interfaces, the `Get` and `Put` functions are added to the `.cpp` and `.
 
 The following section describes the UI that you'll use to add an IDL property:
 
-:::image type="content" source="media/add-idl-property-wizard.png" alt-text="Screenshot of adding IDL property to the interface.":::
+:::image type="content" source="media/add-interface-definition-library-property-wizard.png" alt-text="Screenshot of adding IDL property to the interface.":::
 
 - **Property name**
 
