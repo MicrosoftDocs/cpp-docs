@@ -22,7 +22,7 @@ Stock Font properties are preimplemented by the class [COleControl](reference/co
 
 Access the font object through the [GetFont](reference/colecontrol-class.md#getfont), [SetFont](reference/colecontrol-class.md#setfont), and [InternalGetFont](reference/colecontrol-class.md#internalgetfont) functions of `COleControl`. The control user will access the font object via the `GetFont` and `SetFont` functions in the same manner as any other Get/Set property. When access to the font object is required from within a control, use the `InternalGetFont` function.
 
-As discussed in [MFC ActiveX Controls: Properties](mfc-activex-controls-properties.md), adding stock properties is easy with the [Add Property Wizard](../ide/adding-a-property-visual-cpp.md#names-add-property-wizard). You choose the Font property, and the Add Property Wizard automatically inserts the stock Font entry into the control's dispatch map.
+As discussed in [MFC ActiveX Controls: Properties](mfc-activex-controls-properties.md), adding stock properties is easy with the [Add Property Wizard](../ide/adding-a-property-visual-cpp.md#add-property-wizard). You choose the Font property, and the Add Property Wizard automatically inserts the stock Font entry into the control's dispatch map.
 
 #### To add the stock Font property using the Add Property Wizard
 

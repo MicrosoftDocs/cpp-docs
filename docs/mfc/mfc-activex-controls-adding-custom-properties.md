@@ -49,7 +49,7 @@ This same procedure can also be used to add other custom properties you want. Su
 
 1. From the shortcut menu, click **Add** and then click **Add Property**.
 
-   This opens the [Add Property Wizard](../ide/adding-a-property-visual-cpp.md#names-add-property-wizard).
+   This opens the [Add Property Wizard](../ide/adding-a-property-visual-cpp.md#add-property-wizard).
 
 1. In the **Property Name** box, type *CircleOffset*.
 
