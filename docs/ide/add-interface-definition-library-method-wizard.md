@@ -13,7 +13,7 @@ The **Add IDL Method** wizard adds a method to an Interface Definition Library (
 
 For example, if you have an ATL project, and it has an IDL file, using the following procedure you can add the method to interface.
 
-This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wizard. The [Add Method](../../ide/adding-a-method-visual-cpp.md) wizard adds a default method to your project. The Add IDL MFC Method wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
+This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wizard. The [Add Method](adding-a-method-visual-cpp.md) wizard adds a default method to your project. The Add IDL MFC Method wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
 ## Add a method to your interface
 
@@ -106,3 +106,9 @@ The following section describes the user interface that you'll use to add a meth
     1. `source`
 
         The *source* attribute indicates that a member of a [coclass](/windows/win32/Midl/coclass), property, or method is a source of events. For a member of a coclass, this attribute means that the member is called rather than implemented. For more information, see [source](/windows/win32/Midl/source) in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
+
+## See also
+
+[Add a method](adding-a-method-visual-cpp.md)
+
+[Add an IDL MFC method](../mfc/reference/add-idl-mfc-method-wizard.md)
