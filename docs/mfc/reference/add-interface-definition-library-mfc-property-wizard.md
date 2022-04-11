@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use the Microsoft Visual Studio Add IDL MFC property wizard to add a method to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC property"
-ms.date: "04/06/2022"
+ms.date: "04/11/2022"
 f1_keywords: ["vc.codewiz.prop.overview"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "add property wizard", "stock properties, about stock properties", "stock properties"]
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
@@ -31,9 +31,9 @@ For MFC dispinterfaces, if you select **Member variable** as the implementation 
 
 ## User Interface element list
 
-The following section describes the **Add IDL MFC Property** wizard UI:
+The following section describes the **Add IDL MFC Property** wizard:
 
-:::image type="content" source="../reference/media/add-idl-mfc-property-wizard.png" alt-text="Add IDL MFC Property Wizard UI.":::
+:::image type="content" source="../reference/media/add-interface-definition-library-mfc-property-wizard.png" alt-text="Screenshot of IDL MFC Property Wizard.":::
 
 - **Property name**
 
@@ -58,7 +58,7 @@ The following section describes the **Add IDL MFC Property** wizard UI:
 
 - **Get function**
 
-  This UI element is available only for MFC dispinterfaces. Available only if you specify **Get/Set methods** under **Implementation type**. Sets the name of the function to get the property. By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](../../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map. The `Get`*PropertyName* function specifies that the property as readable.
+  This UI element is available only for MFC dispinterfaces. Available only if you specify **Get/Set methods** under **Implementation type**. Sets the name of the function to get the property. By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](../../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map. The `Get`*PropertyName* function specifies the property as readable.
 
 - **Set function**
 
@@ -76,7 +76,7 @@ The following section describes the **Add IDL MFC Property** wizard UI:
 
 - **Default property**
 
-  This selection is available only for MFC dispinterface. Sets this property as the default for the interface. An interface can have only one default property; once you specify the default property, for any other properties you add to the interface, this box is unavailable.
+  This selection is available only for MFC dispinterface. Sets this property as the default for the interface. An interface can have only one default property. Once you specify the default property, for any other properties you add to the interface, this box is unavailable.
 
 - **Parameters**
 
@@ -84,7 +84,7 @@ The following section describes the **Add IDL MFC Property** wizard UI:
 
 - **+**
 
-  Add a parameter. In **Parameters**, type the parameter type and name. For example, `int x`, and choose **OK**.
+  Adds a parameter. In **Parameters**, type the parameter type and name. For example, `int x`, and choose **OK**.
 
 - **x**
 
@@ -92,7 +92,7 @@ The following section describes the **Add IDL MFC Property** wizard UI:
 
 - **Pencil icon**
 
-  Edit the selected parameter.
+  Edits the selected parameter.
 
 - `id`
 
