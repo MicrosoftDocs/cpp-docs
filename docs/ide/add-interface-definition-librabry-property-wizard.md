@@ -37,7 +37,7 @@ For ATL interfaces, the `Get` and `Put` functions are added to the `.cpp` and `.
 
 The following section describes the UI that you'll use to add an IDL property:
 
-:::image type="content" source="media/add-idl-property-wizard.png" alt-text="Adding IDL property to the interface":::
+:::image type="content" source="media/add-idl-property-wizard.png" alt-text="Screenshot of adding IDL property to the interface.":::
 
 - **Property name**
 
@@ -97,7 +97,7 @@ The following section describes the UI that you'll use to add an IDL property:
 
 1. `id`
 
-    Sets the numerical ID that identifies the property. This option isn't available for properties of custom interfaces. For more information, see [id](/windows/win32/Midl/id).
+    Sets the numerical identifier that identifies the property. This option isn't available for properties of custom interfaces. For more information, see [id](/windows/win32/Midl/id).
 
 - **Additional attributes**
 
