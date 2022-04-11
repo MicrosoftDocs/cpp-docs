@@ -109,7 +109,7 @@ Keywords in the Microsoft Interface Definition Language (MIDL) are described in 
   |`defaultbind`|Indicates that this single, bindable property best represents the object. For more information, see [defaultbind](/windows/win32/Midl/defaultbind).|
   |`defaultcollelem`|Indicates that the property is an accessor function for an element of the default collection. For more information, see [defaultcollelem](/windows/win32/Midl/defaultcollelem).|
   |`displaybind`|Indicates that this property should be displayed to the user as bindable. For more information, see [displaybind](/windows/win32/Midl/displaybind).|
-  |`hidden`|Indicates that the property exists but shouldn't be displayed in the a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden).|
+  |`hidden`|Indicates that the property exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden).|
   |`immediatebind`|Indicates that the database will be notified immediately of all changes to this property of a data-bound object. For more information, see [immediatebind](/windows/win32/Midl/immediatebind).|
   |`local`|Specifies to the MIDL compiler that the property isn't remote. For more information, see [local](/windows/win32/Midl/local).|
   |`nonbrowsable`|Tags an interface or dispinterface member that shouldn't be displayed in a properties browser. For more information, see [nonbrowsable](/windows/win32/Midl/nonbrowsable).|
