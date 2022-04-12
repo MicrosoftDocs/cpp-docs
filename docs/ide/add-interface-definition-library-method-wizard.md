@@ -11,8 +11,8 @@ ms.custom: devdivchpfy22
 
 The **Add IDL Method** wizard adds a method to an Interface Definition Library (IDL) interface, such as in an ATL project that contains an IDL file. This wizard isn't available in projects that support MFC.
 
-This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wizard and the **Add IDL MFC method** wizard:
-- The **Add method** wizard adds a method to your project.
+This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wizard and the [**Add IDL MFC method**](../mfc/reference/add-idl-mfc-method-wizard.md) wizard:
+- The **Add method** wizard adds a method to an interface in our project and updates the class associated with the interface.
 - The **Add IDL MFC method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
 ## Add a method to your interface
@@ -43,7 +43,7 @@ The following section describes the wizard interface that you'll use to add a me
 
   The data type returned by the method. The standard way to return error codes from methods defined in an interface is with a `HRESULT`.
 
-  The following table describes the different kinds of interfaces that you can add method to, and the allowable return types for methods defined on those interfaces. For dual and custom interfaces, the return type must be `HRESULT`. The UI won't allow you to change this return type.
+  The following table describes the different kinds of interfaces that you can add a method to, and the allowed return type. For dual and custom interfaces, the return type must be `HRESULT` and the wizard won't allow you to change it.
 
   |Interface kind|Return type|
   |--------------------|-----------------|
@@ -58,7 +58,7 @@ The following section describes the wizard interface that you'll use to add a me
 
 - **+**
 
-  Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `int x`, and choose **OK**.
+  Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `[in] int x`, and choose **OK**.
 
 - **x**
 
