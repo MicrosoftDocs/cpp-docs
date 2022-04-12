@@ -9,9 +9,11 @@ ms.custom: devdivchpfy22
 
 # Add an IDL method
 
-The **Add IDL Method** wizard adds a method to an Interface Definition Library (IDL) interface, such as in an ATL project that contains an IDL file. The **Add IDL Method** wizard isn't available in projects that support MFC.
+The **Add IDL Method** wizard adds a method to an Interface Definition Library (IDL) interface, such as in an ATL project that contains an IDL file. This wizard isn't available in projects that support MFC.
 
-This wizard differs from the [**Add Method**](adding-a-method-visual-cpp.md) wizard and **ADD IDL MFC Method** wizard. The **Add Method** wizard adds a default method to your project. The **Add IDL MFC Method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
+This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wizard and the **Add IDL MFC method** wizard:
+- The **Add method** wizard adds a method to your project.
+- The **Add IDL MFC method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
 ## Add a method to your interface
 
@@ -23,15 +25,15 @@ This wizard differs from the [**Add Method**](adding-a-method-visual-cpp.md) wiz
 
 1. On the shortcut menu, select **Add** > **Add Method**.
 
-1. In the **Add IDL Method** wizard, provide the following information to create the method.
+1. In the **Add IDL Method** wizard, provide the information to create the method.
 
 1. Select **OK** to add the method.
 
 ### User Interface element list
 
-The following section describes the user interface that you'll use to add a method:
+The following section describes the wizard interface that you'll use to add a method:
 
-:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of adding a method using the Add IDL MFC method wizard. Shows two parameters: [ in ] int i and [ in ] float f. Return type is H RESULT.":::
+:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of adding a method using the wizard. Shows 2 parameters: [ in ] int i and [ in ] float f. Return type is H RESULT. Infer in out parameter values from type is selected.":::
 
 - **Method name**
 
@@ -40,14 +42,15 @@ The following section describes the user interface that you'll use to add a meth
 - **Return type**
 
   The data type returned by the method. The standard way to return error codes from methods defined in an interface is with a `HRESULT`.
+
   The following table describes the different kinds of interfaces that you can add method to, and the allowable return types for methods defined on those interfaces. For dual and custom interfaces, the return type must be `HRESULT`. The UI won't allow you to change this return type.
 
-  |Interface kind|Description|
+  |Interface kind|Return type|
   |--------------------|-----------------|
   |[Dual interface](/windows/win32/winauto/dual-interfaces--iaccessible-and-idispatch)|`HRESULT`. Unchangeable.|
   |[Custom interface](/windows/win32/winauto/custom-user-interface-elements)|`HRESULT`. Unchangeable.|
-  |Local custom interface|Provide your own return type or select from the list.|
-  |[Dispinterface](/windows/win32/midl/dispinterface)|Provide your own return type or select from the list.|
+  |Local custom interface|Provide your own return type or select it from the drop-down list.|
+  |[Dispinterface](/windows/win32/midl/dispinterface)|Provide your own return type or select it from the drop-down list.|
 
 - **Parameters**
 
@@ -58,12 +61,15 @@ The following section describes the user interface that you'll use to add a meth
   Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `int x`, and choose **OK**.
 
 - **x**
+
   Removes the selected parameter from the **Parameters** list.
 
 - **Infer in/out parameters values from types**
+
   Inserts the `[in]` or `[out]` attribute based on the parameter's type.
 
 - **Set the last parameter as the return value (retval)**
+
   The last parameter will be treated as the method's return value.
 
 - **Attributes**
