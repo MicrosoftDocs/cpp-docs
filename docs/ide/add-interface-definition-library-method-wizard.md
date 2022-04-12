@@ -11,8 +11,8 @@ ms.custom: devdivchpfy22
 
 The **Add IDL Method** wizard adds a method to an Interface Definition Library (IDL) interface, such as in an ATL project that contains an IDL file. This wizard isn't available in projects that support MFC.
 
-This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wizard and the [**Add IDL MFC method**](../mfc/reference/add-idl-mfc-method-wizard.md) wizard:
-- The **Add method** wizard adds a method to an interface in our project and updates the class associated with the interface.
+This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wizard and the [**Add IDL MFC method**](../mfc/reference/add-idl-mfc-method-wizard.md) wizard in the following ways:
+- The **Add method** wizard adds a method to an interface in your project and can update the class associated with the interface.
 - The **Add IDL MFC method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
 ## Add a method to your interface
@@ -58,7 +58,7 @@ The following section describes the wizard interface that you'll use to add a me
 
 - **+**
 
-  Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `[in] int x`, and choose **OK**.
+  Add a parameter. In **Parameters**, type the parameter type, name, and any modifiers. For example, `[in] int i`, and choose **OK**.
 
 - **x**
 
