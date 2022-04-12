@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL method to an IDL interface in your project"
 title: "Add an IDL method"
-ms.date: "04/11/2022"
+ms.date: "04/12/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
 ms.custom: devdivchpfy22
@@ -33,7 +33,7 @@ This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wi
 
 The following section describes the user interface that you'll use to add a method:
 
-:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of IDL MFC method wizard.":::
+:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of IDL method dialog. Shows 2 parameters: [ in ] int i and [ in ] float f. Return type is HRESULT.":::
 
 - **Method name**
 
