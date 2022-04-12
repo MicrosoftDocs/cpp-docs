@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Use the Microsoft Visual Studio Add IDL MFC property wizard to add a method to an IDL interface in your MFC or ATL project"
+description: "Learn more about: Use the Microsoft Visual Studio Add IDL MFC property wizard to add a property to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC property"
-ms.date: "04/11/2022"
+ms.date: "04/12/2022"
 f1_keywords: ["vc.codewiz.prop.overview"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "add property wizard", "stock properties, about stock properties", "stock properties"]
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
@@ -10,7 +10,7 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC property
 
-The **Add IDL MFC Property** wizard adds a method to an Interface Definition Library (IDL) interface defined in your Microsoft Framework Class (MFC) project. To use this wizard, you must be in an MFC Project, ActiveX project, or an ATL project that supports MFC. For example, if you have a Microsoft ActiveX control project, you can use the following procedure to add a method to an IDL interface in the solution.
+The **Add IDL MFC Property** wizard adds a property to an Interface Definition Library (IDL) interface defined in your Microsoft Framework Class (MFC) project. To use this wizard, you must be in an MFC Project, ActiveX project, or an ATL project that supports MFC. For example, if you have a Microsoft ActiveX control project, you can use the following procedure to add a property to an IDL interface in the solution.
 
 **To add an IDL MFC property to your interface**
 
@@ -33,7 +33,7 @@ For MFC dispinterfaces, if you select **Member variable** as the implementation 
 
 The following section describes the **Add IDL MFC Property** wizard:
 
-:::image type="content" source="../reference/media/add-interface-definition-library-mfc-property-wizard.png" alt-text="Screenshot of IDL MFC Property Wizard.":::
+:::image type="content" source="../reference/media/add-interface-definition-library-mfc-property-wizard.png" alt-text="Screenshot of Add IDL MFC Property with two parameters: int i and char c. Property type is OLE_COLOR.":::
 
 - **Property name**
 
@@ -126,3 +126,5 @@ If you're adding a property to an MFC dispinterface using the **Add IDL MFC Prop
 ## See Also
 
 [Add Property](../../ide/adding-a-property-visual-cpp.md)
+
+[Add IDL Property](../../ide/add-interface-definition-library-property-wizard.md)

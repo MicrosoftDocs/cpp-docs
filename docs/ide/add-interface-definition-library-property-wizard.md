@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add an IDL property to an IDL interface in your project"
 title: "Add an IDL property"
-ms.date: 04/11/2022
+ms.date: 04/12/2022
 f1_keywords: ["vc.codewiz.prop.overview", "vc.codewiz.prop.idlattributes"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "IDL attributes", "stock properties, about stock properties", "stock properties"]
 ms.custom: devdivchpfy22
 ---
 # Add an IDL property
 
-The **Add IDL Property** wizard adds a method to an interface defined in an Interface Definition Library (IDL). To use the **Add IDL Property** wizard, your project can't support MFC.
+The **Add IDL Property** wizard adds a property to an interface defined in an Interface Definition Library (IDL). To use the **Add IDL Property** wizard, your project can't support MFC.
 
 For example, if you have an ATL project, and it has an `.idl` file in it, use the following procedure to add a property to an interface.
 
@@ -37,7 +37,7 @@ For ATL interfaces, the `Get` and `Put` functions are added to the `.cpp` and `.
 
 The following section describes the UI that you'll use to add an IDL property:
 
-:::image type="content" source="media/add-interface-definition-library-property-wizard.png" alt-text="Screenshot of adding IDL property to the interface.":::
+:::image type="content" source="media/add-interface-definition-library-property-wizard.png" alt-text="Screenshot of Add IDL Property with two parameters: [ in ] int i and [ in ] char c. Return type is HRESULT. Property type is float.":::
 
 - **Property name**
 
@@ -45,7 +45,7 @@ The following section describes the UI that you'll use to add an IDL property:
 
 - **Property type**
 
-  Sets whether your property will have a getter, setter, or both.
+  The data type of the property.
 
 - **Return type**
 
@@ -120,3 +120,5 @@ Keywords in the Microsoft Interface Definition Language (MIDL) are described in 
 ## **See also**
 
 [Add Property](adding-a-property-visual-cpp.md)
+
+[Add IDL MFC Property](../mfc/reference/add-interface-definition-library-mfc-property-wizard.md)
