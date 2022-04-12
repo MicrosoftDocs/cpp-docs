@@ -33,7 +33,7 @@ This wizard differs from the **Add Method** wizard and **ADD IDL MFC Method** wi
 
 The following section describes the user interface that you'll use to add a method:
 
-:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of IDL method dialog. Shows 2 parameters: [ in ] int i and [ in ] float f. Return type is HRESULT.":::
+:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of IDL method dialog. Shows two parameters: [ in ] int i and [ in ] float f. Return type is HRESULT.":::
 
 - **Method name**
 
