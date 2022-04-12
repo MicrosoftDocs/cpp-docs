@@ -15,11 +15,11 @@ This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wiz
 - The **Add method** wizard adds a method to an interface in your project and can update the class associated with the interface.
 - The **Add IDL MFC method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
-## Add a method to your interface
+## Add a method to your IDL interface
 
 1. On the **View** menu, select **Class View**.
 
-1. In the **Class View** pane, expand the project node to display the interface to which you want to add the method.
+1. In the **Class View** pane, expand the project node to display the IDL interface (`.idl`file) to which you want to add the method.
 
 1. Right-click the name of the interface.
 
