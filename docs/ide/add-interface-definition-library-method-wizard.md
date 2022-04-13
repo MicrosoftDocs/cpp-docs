@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an interface definition language (IDL) interface in your project"
 title: "Add an IDL method"
-ms.date: "04/12/2022"
+ms.date: "04/13/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
 ms.custom: devdivchpfy22
@@ -12,6 +12,7 @@ ms.custom: devdivchpfy22
 The **Add IDL Method** wizard adds a method to an Interface Definition Library (IDL) interface, such as in an ATL project that contains an IDL file. This wizard isn't available in projects that support MFC.
 
 This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wizard and the [**Add IDL MFC method**](../mfc/reference/add-idl-mfc-method-wizard.md) wizard in the following ways:
+
 - The **Add method** wizard adds a method to an interface in your project and can update the class associated with the interface.
 - The **Add IDL MFC method** wizard is specific to MFC, ActiveX, or ATL projects that support MFC.
 
@@ -33,7 +34,7 @@ This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wiz
 
 The following section describes the wizard interface that you'll use to add a method:
 
-:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of adding a method using the wizard. Shows 2 parameters: [ in ] int i and [ in ] float f. Return type is H RESULT. Infer in out parameter values from type is selected.":::
+:::image type="content" source= "media/add-interface-definition-library-method-wizard.png" alt-text="Screenshot of adding a method using the wizard. Shows two parameters: [ in ] int i and [ in ] float f. Return type is HRESULT. Infer in out parameter values from type is selected.":::
 
 - **Method name**
 
@@ -94,19 +95,19 @@ The following section describes the wizard interface that you'll use to add a me
 
 - **Additional attributes**
 
-    * `hidden`
+    - `hidden`
 
       Indicates that the item exists but shouldn't be displayed in a user-oriented browser. For more information, see [`hidden`](/windows/win32/Midl/hidden).
 
-    * `local`
+    - `local`
 
       Specifies that an interface or function isn't remote. For more information, see [`local`](/windows/win32/Midl/local).
 
-    * `restricted`
+    - `restricted`
 
       Specifies that a library, or member of a module, interface, or dispinterface can't be called arbitrarily. For more information, see [`restricted`](/windows/win32/Midl/restricted).
 
-    * `source`
+    - `source`
 
       Indicates that a member of a [`coclass`](/windows/win32/Midl/coclass), property, or method is a source of events. For a member of a `coclass`, this attribute means that the member is called rather than implemented. For more information, see [`source`](/windows/win32/Midl/source).
 
