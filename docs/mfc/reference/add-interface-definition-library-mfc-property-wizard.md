@@ -55,44 +55,65 @@ The following section describes the **Add IDL MFC Property** wizard:
 - **Property type**
 
   Sets the type of property you're adding.
+
   For MFC dispinterfaces, provide your own type or select from the predefined list. If you provide a stock implementation of a property, **Property type** is set to the stock type and can't be changed.
 
 - **Variable name**
 
-  Sets the name of the member variable with which the property is associated. By default, the variable name is set to `m_`*PropertyName*. You can edit this name.
-  Only available for MFC dispinterfaces and if you specify **Member variable** under **Implementation type**.
+  Sets the name of the member variable with which the property is associated.
+
+  By default, the variable name is set to `m_`*PropertyName*. You can edit this name.
+
+  This field is only visible for MFC dispinterfaces and if you specify **Member variable** under **Implementation type**.
 
 - **Notification function**
 
-  Sets the name of the notification function called if the property changes. By default, the name of the notification function is set to `On`*PropertyName*`Changed`. You can edit this name.
-  Only available for MFC dispinterfaces and if you specify **Member variable** under **Implementation type**. 
+  Sets the name of the notification function called if the property changes.
+
+  By default, the name of the notification function is set to `On`*PropertyName*`Changed`. You can edit this name.
+
+  This field is only visible for MFC dispinterfaces and if you specify **Member variable** under **Implementation type**.
 
 - **Get function**
 
-  Sets the name of the function to get the property. By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name. If you delete the name, the function [GetNotSupported](../../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map. The `Get`*PropertyName* function specifies the property as readable.
-  Only available for MFC dispinterfaces and if you specify **Get/Set methods** under **Implementation type**.
+  Sets the name of the function to get the property.
+
+  By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name.
+
+  If you delete the name, the function [GetNotSupported](../../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map.
+
+  This field is only visible for MFC dispinterfaces and if you specify **Get/Set methods** under **Implementation type**.
 
 - **Set function**
 
-  Sets the name of the function to set the property. By default, the name of the `Set` function is set to `Set`*PropertyName*. You can edit this name. If you delete the name, the function [SetNotSupported](../../mfc/reference/colecontrol-class.md#setnotsupported) is inserted into the interface dispatch map. The `Set`*PropertyName* function specifies that the property is writable.
-  Only available for MFC dispinterfaces and if you specify **Get/Set methods** under **Implementation type**.
+  Sets the name of the function to set the property.
+
+  By default, the name of the `Set` function is set to `Set`*PropertyName*. You can edit this name.
+
+  If you delete the name, the function [SetNotSupported](../../mfc/reference/colecontrol-class.md#setnotsupported) is inserted into the interface dispatch map.
+
+  This field is only visible for MFC dispinterfaces and if you specify **Get/Set methods** under **Implementation type**.
 
 - **Implementation type**
 
   Specifies how to implement the property you're adding.
-  Only available for MFC dispinterfaces. 
+
+  Only available for MFC dispinterfaces.
 
   |Implementation type|Description|
   |-------------------------|-----------------|
-  |**Stock**|Specifies a default implementation for the property selected in **Property name**. For more information, see [stock properties](#stock-properties).<br /><br /> If you specify **Stock**, then **Property type**, **Parameter type**, and **Parameter name** are dimmed.|
-  |**Member variable**|Adds the property as a member variable. You can add custom properties or most stock properties as member variables.<br />Provides default names under **Variable name** and **Notification function**. You can edit this name.<br />You can't specify **Member variable** for the `Caption`, `hWnd`, or `Text` properties.|
-  |**Get/Set methods**|Specifies the property is added as `Get`*PropertyName* and `Set`*PropertyName* functions, by default. These names appear under **Get function** and **Set function**.<br />You can change the default **Property type**, which passes a value for the Get function. You can specify parameters for the `Get` and `Set` functions.|
+  |**Stock**|Specifies a default implementation for the property selected in **Property name**. For more information, see [stock properties](#stock-properties).<br /> If you specify **Stock**, then **Property type**, **Parameter type**, and **Parameter name** are dimmed.|
+  |**Member variable**|Adds the property as a member variable.<br />You can add custom properties or most stock properties as member variables.<br />Provides default names under **Variable name** and **Notification function**. You can edit this name.<br />You can't specify **Member variable** for the `Caption`, `hWnd`, or `Text` properties.|
+  |**Get/Set methods**|Specifies the property is added as `Get`*PropertyName* and `Set`*PropertyName* functions by default. These names appear under **Get function** and **Set function**.<br />You can change the default **Property type**, which passes a value for the Get function.<br/>You can specify parameters for the `Get` and `Set` functions.|
 
 - **Default property**
 
-  Sets this property as the default for the interface. An interface can have only one default property.
+  Sets the property as the default for the interface.
+
+  An interface can have only one default property.
+
   Once you specify the default property, this checkbox is unavailable for any other properties that you add to the interface.
-  Only available for MFC dispinterface. 
+  Only available for a MFC dispinterface.
 
 - **Parameters**
 
@@ -112,15 +133,19 @@ The following section describes the **Add IDL MFC Property** wizard:
 
 - **id**
 
-  Sets the numerical ID that identifies the property. This option isn't available for properties of custom interfaces. For more information, see [`id`](/windows/win32/Midl/id) in the *MIDL Reference*.
+  Sets the numerical ID that identifies the property.
+  This option isn't available for properties of custom interfaces. For more information, see [`id`](/windows/win32/Midl/id) in the *MIDL Reference*.
 
 - **helpcontext**
 
-  Specifies a context ID that lets the user view information about this property in the Help file. For more information, see [`helpcontext`](/windows/win32/Midl/helpcontext) in the *MIDL Reference*.
+  Specifies a context ID that lets the user view information about this property in the Help file.
+  For more information, see [`helpcontext`](/windows/win32/Midl/helpcontext) in the *MIDL Reference*.
 
 - **helpstring**
 
-  Specifies a character string that's used to describe the element to which it applies. By default, it's set to **`property`**&nbsp;*Property&nbsp;name*. For more information, see [`helpstring`](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a character string that's used to describe the element to which it applies. By default, it's set to **`property`**&nbsp;*Property&nbsp;name*.
+
+  For more information, see [`helpstring`](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 ### Stock properties
 
@@ -128,16 +153,16 @@ If you're adding a property to an MFC dispinterface, you can choose one of the f
 
 |Property name|Description|
 |-------------------|-----------------|
-|`Appearance`|Returns or sets a value that determines the appearance of the control. The control's `Appearance` property can include or omit three-dimensional display effects. This property is an ambient read/write property.|
-|`BackColor`|Returns or sets the control's ambient `BackColor` property to either a palette (RGB) color or a predefined system color. By default, its value corresponds to the foreground color of the control's container. This property is an ambient read/write property.|
-|`BorderStyle`|Returns or sets the border style for a control. This property is a read/write property.|
-|`Caption`|Returns or sets the control's `Caption` property. The caption is the title of the window. `Caption` has no **Member variable** implementation type.|
-|`Enabled`|Returns or sets the control's `Enabled` property. An enabled control can respond to user-generated events.|
-|`Font`|Returns or sets the control's ambient font. `Null` if the control has no font.|
+|`Appearance`|Returns or sets a value that determines the appearance of the control.<br/>The control's `Appearance` property can include or omit three-dimensional display effects. This property is an ambient read/write property.|
+|`BackColor`|Returns or sets the control's ambient `BackColor` property to either a palette (RGB) color or a predefined system color.<br/>By default, its value corresponds to the foreground color of the control's container.<br/>This property is an ambient read/write property.|
+|`BorderStyle`|Returns or sets the border style for a control.<br/>This property is a read/write property.|
+|`Caption`|Returns or sets the control's `Caption` property.<br/>The caption is the title of the window. `Caption` has no **Member variable** implementation type.|
+|`Enabled`|Returns or sets the control's `Enabled` property.<br/>An enabled control can respond to user-generated events.|
+|`Font`|Returns or sets the control's ambient font.<br/>`Null` if the control has no font.|
 |`ForeColor`|Returns or sets the control's ambient `ForeColor` property.|
-|`hWnd`|Returns or sets the control's `hWnd` property. `hWnd` has no **Member variable** implementation type.|
-|`ReadyState`|Returns or sets the control's `ReadyState` property. A control can be uninitialized, initialized, loading, interactive, or complete. For more information, see [READYSTATE](/previous-versions/aa768362\(v=vs.85\)) in the *Internet SDK*.|
-|`Text`|Returns or sets the text contained in a control. `Text` has no **Member variable** implementation type.|
+|`hWnd`|Returns or sets the control's `hWnd` property.<br/>Has no **Member variable** implementation type.|
+|`ReadyState`|Returns or sets the control's `ReadyState` property.<br/>A control can be uninitialized, initialized, loading, interactive, or complete.<br/>For more information, see [READYSTATE](/previous-versions/aa768362\(v=vs.85\)) in the *Internet SDK*.|
+|`Text`|Returns or sets the text contained in a control.<br/>Has no **Member variable** implementation type.|
 
 ## See Also
 
