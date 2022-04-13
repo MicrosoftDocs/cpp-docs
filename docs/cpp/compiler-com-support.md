@@ -7,8 +7,6 @@ ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
 ---
 # Compiler COM Support
 
-**Microsoft Specific**
-
 The Microsoft C++ compiler can directly read component object model (COM) type libraries and translate the contents into C++ source code that can be included in the compilation. Language extensions are available to facilitate COM programming on the client side for desktop apps.
 
 By using the [#import preprocessor directive](../preprocessor/hash-import-directive-cpp.md), the compiler can read a type library and convert it into a C++ header file that describes the COM interfaces as classes. A set of `#import` attributes is available for user control of the content for the resulting type library header files.
@@ -26,8 +24,6 @@ A set of COM support global functions and classes is provided to support the `VA
 - [_com_ptr_t](../cpp/com-ptr-t-class.md)
 
 - [_variant_t](../cpp/variant-t-class.md)
-
-**END Microsoft Specific**
 
 ## See also
 
