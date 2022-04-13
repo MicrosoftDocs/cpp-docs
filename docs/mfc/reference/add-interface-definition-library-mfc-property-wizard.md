@@ -134,17 +134,20 @@ The following section describes the **Add IDL MFC Property** wizard:
 - **id**
 
   Sets the numerical ID that identifies the property.
+
   This option isn't available for properties of custom interfaces.
   For more information, see [`id`](/windows/win32/Midl/id) in the *MIDL Reference*.
 
 - **helpcontext**
 
   Specifies a context ID that lets the user view information about this property in the Help file.
+
   For more information, see [`helpcontext`](/windows/win32/Midl/helpcontext) in the *MIDL Reference*.
 
 - **helpstring**
 
   Specifies a character string that's used to describe the element to which it applies. By default, it's **`property`**&nbsp;*Property&nbsp;name*.
+
   For more information, see [`helpstring`](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 ### Stock properties
