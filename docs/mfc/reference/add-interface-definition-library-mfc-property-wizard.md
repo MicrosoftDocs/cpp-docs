@@ -56,13 +56,13 @@ The following section describes the **Add IDL MFC Property** wizard:
 
   Sets the type of property you're adding.
 
-  For MFC dispinterfaces, provide your own type or select from the predefined list. If you provide a stock implementation of a property, **Property type** is set to the stock type and can't be changed.
+  For MFC dispinterfaces, provide your own type or select from the predefined list. If you provide a stock implementation of a property, **Property type** is the stock type and can't be changed.
 
 - **Variable name**
 
   Sets the name of the member variable with which the property is associated.
 
-  By default, the variable name is set to `m_`*PropertyName*. You can edit this name.
+  By default, the variable name is `m_`*PropertyName*. You can edit this name.
 
   This field is only visible for MFC dispinterfaces and if you specify **Member variable** under **Implementation type**.
 
@@ -70,7 +70,7 @@ The following section describes the **Add IDL MFC Property** wizard:
 
   Sets the name of the notification function called if the property changes.
 
-  By default, the name of the notification function is set to `On`*PropertyName*`Changed`. You can edit this name.
+  By default, the name of the notification function is `On`*PropertyName*`Changed`. You can edit this name.
 
   This field is only visible for MFC dispinterfaces and if you specify **Member variable** under **Implementation type**.
 
@@ -78,7 +78,7 @@ The following section describes the **Add IDL MFC Property** wizard:
 
   Sets the name of the function to get the property.
 
-  By default, the name of the `Get` function is set to `Get`*PropertyName*. You can edit this name.
+  By default, the name of the `Get` function is `Get`*PropertyName*. You can edit this name.
 
   If you delete the name, the function [GetNotSupported](../../mfc/reference/colecontrol-class.md#getnotsupported) is inserted into the interface dispatch map.
 
@@ -88,7 +88,7 @@ The following section describes the **Add IDL MFC Property** wizard:
 
   Sets the name of the function to set the property.
 
-  By default, the name of the `Set` function is set to `Set`*PropertyName*. You can edit this name.
+  By default, the name of the `Set` function is `Set`*PropertyName*. You can edit this name.
 
   If you delete the name, the function [SetNotSupported](../../mfc/reference/colecontrol-class.md#setnotsupported) is inserted into the interface dispatch map.
 
@@ -113,7 +113,7 @@ The following section describes the **Add IDL MFC Property** wizard:
   An interface can have only one default property.
 
   Once you specify the default property, this checkbox is unavailable for any other properties that you add to the interface.
-  Only available for a MFC dispinterface.
+  Only available for an MFC dispinterface.
 
 - **Parameters**
 
@@ -121,7 +121,7 @@ The following section describes the **Add IDL MFC Property** wizard:
 
 - **+**
 
-  Adds a parameter. In **Parameters**, type the parameter type and name and choose **OK**. For example `int x`
+  Adds a parameter. In **Parameters**, type the parameter type and name and choose **OK**. For example, `int x`
 
 - **x**
 
@@ -134,7 +134,8 @@ The following section describes the **Add IDL MFC Property** wizard:
 - **id**
 
   Sets the numerical ID that identifies the property.
-  This option isn't available for properties of custom interfaces. For more information, see [`id`](/windows/win32/Midl/id) in the *MIDL Reference*.
+  This option isn't available for properties of custom interfaces.
+  For more information, see [`id`](/windows/win32/Midl/id) in the *MIDL Reference*.
 
 - **helpcontext**
 
@@ -143,8 +144,7 @@ The following section describes the **Add IDL MFC Property** wizard:
 
 - **helpstring**
 
-  Specifies a character string that's used to describe the element to which it applies. By default, it's set to **`property`**&nbsp;*Property&nbsp;name*.
-
+  Specifies a character string that's used to describe the element to which it applies. By default, it's **`property`**&nbsp;*Property&nbsp;name*.
   For more information, see [`helpstring`](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 ### Stock properties
