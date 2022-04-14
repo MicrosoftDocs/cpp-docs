@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: steady_clock struct"
 title: "steady_clock struct"
-ms.date: 08/19/2021
+ms.date: 04/14/2022
 f1_keywords: ["chrono/std::chrono::steady_clock"]
 ---
 # `steady_clock` struct
@@ -16,11 +16,55 @@ struct steady_clock;
 
 ## Remarks
 
-A `steady_clock` is a monotonic clock, which means that time only moves forward. A `steady_clock` ensures that the time between clicks doesn't vary, making it better for measuring intervals than using a system clock that provides wall-clock time. The problem with using wall-clock time to measure elapsed time is that the wall-clock time may get modified while measuring an interval. It could be modified by synchronizing with another clock over the network, adjusting the time for daylight savings time, and so on. A `steady_clock` isn't subject to these adjustments, making it the preferred way to keep track of elapsed time.
+A `steady_clock` is a monotonic clock, which means that time only moves forward.
+
+A `steady_clock` ensures that the time between clicks doesn't vary, making it better for measuring intervals than using a system clock, which provides wall-clock time. The problem with using wall-clock time to measure elapsed time is that the wall-clock time may get modified while measuring an interval. It could be modified by synchronizing with another clock over the network, adjusting the time for daylight savings time, and so on. A `steady_clock` isn't subject to these adjustments, making it the preferred way to keep track of elapsed time.
 
 The value that is returned by a first call to `now` is always less than or equal to the value that is returned by the next call to `now`.
 
 `high_resolution_clock` is a typedef for `steady_clock`. On Windows, `steady_clock` wraps the `QueryPerformanceCounter` function.
+
+## Example
+
+```cpp
+#include <chrono> 
+#include <thread>
+#include <iostream>
+
+using namespace std::chrono;
+
+int main()
+{
+    auto begin = steady_clock::now();
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+    auto end = steady_clock::now();
+    
+    std::cout << "Elapsed seconds:      "
+        << duration_cast<seconds>(end - begin).count()
+        << "s\n";
+
+    std::cout << "Elapsed milliseconds: "
+        << duration_cast<milliseconds>(end - begin).count()
+        << "ms\n";
+
+    std::cout << "Elapsed microseconds: "
+        << duration_cast<microseconds>(end - begin).count()
+        << "us\n";
+
+    std::cout << "Elapsed nanoseconds:  "
+        << duration_cast<nanoseconds>(end - begin).count()
+        << " ns\n";
+
+    return 0;
+}
+```
+
+```Output
+Elapsed seconds:      1s
+Elapsed milliseconds: 1007ms
+Elapsed microseconds: 1007266us
+Elapsed nanoseconds:  1007266700 ns
+```
 
 ### Convenience type aliases
 
