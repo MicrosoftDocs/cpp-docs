@@ -57,6 +57,6 @@ Add a method to an interface by using the add method wizard:
 
 ## See also
 
-[Add an IDL method wizard](add-interface-definition-library-method-wizard)\
+[Add an IDL method wizard](add-interface-definition-library-method-wizard.md)\
 [Add an IDL MFC method wizard](../mfc/reference/add-idl-mfc-method-wizard.md)\
 [Adding functionality with code wizards](adding-functionality-with-code-wizards-cpp.md)
