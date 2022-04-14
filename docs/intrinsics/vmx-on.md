@@ -23,7 +23,7 @@ unsigned char __vmx_on(
 ### Parameters
 
 *VmsSupportPhysicalAddress*\
-[in] A pointer to a 64-bit physical address that points to a virtual-machine control structure (VMCS).
+[in] A pointer to a 64-bit physical address that points to a VMXON region.
 
 ## Return value
 
