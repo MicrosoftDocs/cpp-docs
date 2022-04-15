@@ -140,4 +140,5 @@ The following section describes the Add IDL MFC Method wizard UI:
 ## See also
 
 [Add method wizard](../../ide/adding-a-method-visual-cpp.md)\
+[Add an IDL method wizard](../../ide/add-interface-definition-library-method-wizard.md)\
 [MFC wizards and dialog boxes](mfc-wizards-and-dialog-boxes.md)
