@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 12/15/2021
+ms.date: 04/15/2022
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -112,6 +112,8 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hotpatchable image. |
 | [`/I<dir>`](i-additional-include-directories.md) | Searches a directory for include files. |
 | **`/ifcOutput`** | Specify output file or directory for *`.ifc`* files. |
+| [`/interface`](interface.md) | Treat the input file as a module interface unit. |
+| [`/internalPartition`](internal-partition.md) | Treat the input file as an internal partition unit. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
 | [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker will create a binary that can be executed in the Windows kernel. |
@@ -161,7 +163,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/RTCs`](rtc-run-time-error-checks.md) | Enable stack frame runtime checks. |
 | [`/RTCu`](rtc-run-time-error-checks.md) | Enables uninitialized local usage checks. |
 | [`/scanDependencies`](scandependencies.md) | List module dependencies in C++ Standard JSON form. |
-| [`/sdl`](sdl-enable-additional-security-checks.md) | Enable additional security features and warnings. |
+| [`/sdl`](sdl-enable-additional-security-checks.md) | Enable more security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of all include files during compilation. |
 | [`/source-charset`](source-charset-set-source-character-set.md) | Set source character set. |
 | [`/sourceDependencies`](sourcedependencies.md) | List all source-level dependencies. |
