@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: __vmx_on"
 title: "__vmx_on"
-ms.date: 04/14/2022"
+ms.date: 04/14/2022
 f1_keywords: ["__vmx_on"]
 helpviewer_keywords: ["VMXON instruction", "__vmx_on intrinsic"]
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
