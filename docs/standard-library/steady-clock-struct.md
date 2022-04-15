@@ -16,11 +16,9 @@ struct steady_clock;
 
 ## Remarks
 
-A `steady_clock` is a monotonic clock, which means that time only moves forward.
+A `steady_clock` is a monotonic clock, which means that the time it reports only moves forward. The value returned by a call to `now` is always less than or equal to the value that is returned by the next call to `now`.
 
-A `steady_clock` ensures that the time between clicks doesn't vary, making it better for measuring intervals than using a system clock, which provides wall-clock time. The problem with using wall-clock time to measure elapsed time is that the wall-clock time may get modified while measuring an interval. It could be modified by synchronizing with another clock over the network, adjusting the time for daylight savings time, and so on. A `steady_clock` isn't subject to these adjustments, making it the preferred way to keep track of elapsed time.
-
-The value that is returned by a first call to `now` is always less than or equal to the value that is returned by the next call to `now`.
+A `steady_clock` ensures that the time between ticks is constant, making it better for measuring intervals than using a system clock. The system clock provides wall-clock time. The problem with using wall-clock time to measure elapsed time is that wall-clock time may get modified while measuring a time interval. It could be modified by synchronizing with another clock over the network, by a transition to daylight savings time, and so on. A `steady_clock` isn't subject to these adjustments, making it the preferred way to keep track of elapsed time.
 
 `high_resolution_clock` is a typedef for `steady_clock`. On Windows, `steady_clock` wraps the `QueryPerformanceCounter` function.
 
