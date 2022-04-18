@@ -16,7 +16,7 @@ Handles math errors.
 ## Syntax
 
 ```C
-int _matherr(struct _exception * except);
+int _matherr(struct _exception *except);
 ```
 
 ### Parameters
@@ -26,7 +26,9 @@ Pointer to the structure containing error information.
 
 ## Return Value
 
-**`_matherr`** returns 0 to indicate an error, or a nonzero value to indicate success. If **`_matherr`** returns 0, an error message can be displayed and **`errno`** is set to an appropriate error value. If **`_matherr`** returns a nonzero value, no error message is displayed and **`errno`** remains unchanged.
+**`_matherr`** returns 0 to indicate an error, or a nonzero value to indicate success.\
+If **`_matherr`** returns 0, an error message can be displayed and **`errno`** is set to an appropriate error value.\
+If **`_matherr`** returns a nonzero value, no error message is displayed and **`errno`** remains unchanged.
 
 For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -49,7 +51,7 @@ struct _exception
 };
 ```
 
-The **type** member specifies the type of math error. It's one of the following values, defined in `<math.h>`:
+The **`type`** member specifies the type of math error. It's one of the following values, defined in `<math.h>`:
 
 |Macro|Meaning|
 |-|-|
@@ -77,8 +79,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ```C
 /* crt_matherr.c
 * Illustrates writing an error routine for math
-* functions. The error function must be:
-*      _matherr
+* functions. 
+* The error handling function must be named _matherr
 */
 
 #include <math.h>
