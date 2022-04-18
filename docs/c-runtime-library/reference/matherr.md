@@ -26,9 +26,9 @@ Pointer to the structure containing error information.
 
 ## Return Value
 
-**`_matherr`** returns 0 to indicate an error, or a nonzero value to indicate success.\
-If **`_matherr`** returns 0, an error message can be displayed and **`errno`** is set to an appropriate error value.\
-If **`_matherr`** returns a nonzero value, no error message is displayed and **`errno`** remains unchanged.
+**`_matherr`** returns 0 to indicate an error, or a nonzero value to indicate success:\
+* If **`_matherr`** returns 0, an error message can be displayed and **`errno`** is set to an appropriate error value.\
+* If **`_matherr`** returns a nonzero value, no error message is displayed and **`errno`** remains unchanged.
 
 For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
