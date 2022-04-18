@@ -1,17 +1,17 @@
 ---
-description: "Learn more about: interface class  (C++/CLI and C++/CX)"
+description: "Learn more about: interface class (C++/CLI and C++/CX)"
 title: "interface class  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+ms.date: 04/15/2022
 ms.topic: "reference"
-f1_keywords: ["interface_CPP"]
+f1_keywords: ["interface_CPP", "interface class", "interface class_CPP"]
 helpviewer_keywords: ["interface class keyword", "interface struct keyword"]
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
 ---
-# interface class  (C++/CLI and C++/CX)
+# `interface class`  (C++/CLI and C++/CX)
 
-Declares an interface.  For information on native interfaces, see [__interface](../cpp/interface.md).
+Declares an interface.  For information on native interfaces, see [`__interface`](../cpp/interface.md).
 
-## All Runtimes
+## All runtimes
 
 ### Syntax
 
@@ -22,39 +22,39 @@ interface_access interface struct name : inherit_access base_interface {};
 
 ### Parameters
 
-*interface_access*<br/>
-The accessibility of an interface outside the assembly.  Possible values are **`public`** and **`private`**.  **`private`** is the default. Nested interfaces cannot have an *interface_access* specifier.
+*`interface_access`*\
+The accessibility of an interface outside the assembly.  Possible values are **`public`** and **`private`**.  **`private`** is the default. Nested interfaces can't have an *`interface_access`* specifier.
 
-*name*<br/>
+*`name`*\
 The name of the interface.
 
-*inherit_access*<br/>
-The accessibility of *base_interface*.  The only permitted accessibility for a base interface is **`public`** (the default).
+*`inherit_access`*\
+The accessibility of *`base_interface`*.  The only permitted accessibility for a base interface is **`public`** (the default).
 
-*base_interface*<br/>
-(Optional) A base interface for interface *name*.
+*`base_interface`*\
+(Optional) A base interface for interface *`name`*.
 
 ### Remarks
 
-**interface struct** is equivalent to **interface class**.
+**`interface struct`** is equivalent to **`interface class`**.
 
 An interface can contain declarations for functions, events, and properties.  All interface members have public accessibility. An interface can also contain static data members, functions, events, and properties, and these static members must be defined in the interface.
 
-An interface defines how a class may be implemented. An interface is not a class and classes can only implement interfaces. When a class defines a function declared in an interface, the function is implemented, not overridden. Therefore, name lookup does not include interface members.
+An interface defines how a class may be implemented. An interface isn't a class and classes can only implement interfaces. When a class defines a function declared in an interface, the function is implemented, not overridden. Therefore, name lookup doesn't include interface members.
 
-A class or struct that derives from an interface must implement all members of the interface. When implementing interface *name* you must also implement the interfaces in the `base_interface` list.
+A `class` or `struct` that derives from an interface must implement all members of the interface. When implementing interface *`name`*, you must also implement the interfaces in the *`base_interface`* list.
 
 For more information, see:
 
-- [Interface Static Constructor](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
+- [Interface static constructor](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
 
-- [Generic Interfaces (C++/CLI)](generic-interfaces-visual-cpp.md)
+- [Generic interfaces (C++/CLI)](generic-interfaces-visual-cpp.md)
 
 For information on other CLR types, see [Classes and Structs](classes-and-structs-cpp-component-extensions.md).
 
-You can detect at compile time if a type is an interface with `__is_interface_class(type)`. For more information, see [Compiler Support for Type Traits](compiler-support-for-type-traits-cpp-component-extensions.md).
+You can detect at compile time if a type is an interface with `__is_interface_class(type)`. For more information, see [Compiler support for type traits](compiler-support-for-type-traits-cpp-component-extensions.md).
 
-In the development environment, you can get F1 help on these keywords by highlighting the keyword, (**`interface class`**, for example) and pressing F1.
+In the development environment, you can get F1 help on these keywords by highlighting the keyword (for example, **`interface class`**) and pressing **F1**.
 
 ## Windows Runtime
 
