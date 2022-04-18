@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 12/15/2021
+ms.date: 04/15/2022
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -130,7 +130,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/u`](u-u-undefine-symbols.md) | Removes all predefined macros. |
 | [`/X`](x-ignore-standard-include-paths.md) | Ignores the standard include directory. |
 
-## Header units
+## Header units/modules
 
 | Option | Purpose |
 |--|--|
@@ -138,6 +138,8 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (*`.ifc`*) for the specified header. |
 | [`/headerName`](headername.md) | Build a header unit from the specified header. |
 | **`/ifcOutput`** | Specify output file or directory for *`.ifc`* files. |
+| [`/interface`](interface.md) | Treat the input file as a module interface unit. |
+| [`/internalPartition`](internal-partition.md) | Treat the input file as an internal partition unit. |
 | [`/reference`](module-reference.md) | Use named module IFC. |
 | [`/scanDependencies`](scandependencies.md) | List module and header unit dependencies in C++ Standard JSON form. |
 | [`/sourceDependencies`](sourcedependencies.md) | List all source-level dependencies. |
@@ -274,7 +276,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/external:templates[-]`](external-external-headers-diagnostics.md) | Evaluate warning level across template instantiation chain. |
 | [`/external:W<n>`](external-external-headers-diagnostics.md) | Set warning level for external headers. |
 | [`/options:strict`](options-strict.md) | Unrecognized compiler options are errors. |
-| [`/sdl`](sdl-enable-additional-security-checks.md) | Enable additional security features and warnings. |
+| [`/sdl`](sdl-enable-additional-security-checks.md) | Enable more security features and warnings. |
 | [`/w`](compiler-option-warning-level.md) | Disable all warnings. |
 | [`/W0`, `/W1`, `/W2`, `/W3`, `/W4`](compiler-option-warning-level.md) | Set output warning level. |
 | [`/w1<n>`, `/w2<n>`, `/w3<n>`, `/w4<n>`](compiler-option-warning-level.md) | Set warning level for the specified warning. |
