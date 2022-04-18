@@ -8,7 +8,7 @@ ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
 ---
 # `/Os`, `/Ot` (Favor Small Code, Favor Fast Code)
 
-Minimizes or maximizes the size of EXEs and DLLs.
+Minimizes size or maximizes speed of EXEs and DLLs.
 
 ## Syntax
 
