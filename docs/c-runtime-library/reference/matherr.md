@@ -62,7 +62,7 @@ The **type** member specifies the type of math error. It's one of the following 
 
 The structure member **`name`** is a pointer to a null-terminated string containing the name of the function that caused the error. The structure members **`arg1`** and **`arg2`** specify the values that caused the error. If only one argument is given, it's stored in **`arg1`**.
 
-The default return value for the given error is **re`tval**. If you change the return value, it must specify whether an error actually occurred.
+The default return value for the given error is **`retval`**. If you change the return value, it must specify whether an error actually occurred.
 
 ## Requirements
 
