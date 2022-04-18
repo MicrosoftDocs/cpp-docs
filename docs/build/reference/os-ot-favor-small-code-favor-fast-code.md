@@ -1,14 +1,14 @@
 ---
 title: "/Os, /Ot (Favor Small Code, Favor Fast Code)"
 description: "The MSVC compiler options /Os and /Ot specify whether to favor size or speed when optimizing code."
-ms.date: 07/08/2020
+ms.date: 04/18/2022
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.FavorSizeOrSpeed", "/os", "VC.Project.VCCLCompilerTool.FavorSizeOrSpeed"]
 helpviewer_keywords: ["favor fast code compiler option [C++]", "/Os compiler option [C++]", "Ot compiler option [C++]", "/Ot compiler option [C++]", "small machine code", "-Ot compiler option [C++]", "fast code", "favor small code compiler option [C++]", "Os compiler option [C++]", "-Os compiler option [C++]"]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
 ---
 # `/Os`, `/Ot` (Favor Small Code, Favor Fast Code)
 
-Minimizes size or maximizes speed of EXEs and DLLs.
+The **`/Os`** and **`/Ot`** compiler options specify whether to favor size (**`/Os`**) or speed (**`/Ot`**) when optimizing code.
 
 ## Syntax
 
