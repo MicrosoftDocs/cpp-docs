@@ -621,6 +621,10 @@ items:
                   href: ../build/reference/hotpatch-create-hotpatchable-image.md
                 - name: /I (Additional include directories)
                   href: ../build/reference/i-additional-include-directories.md
+                - name: /interface (treat input file as a module interface unit)
+                  href: ../build/reference/interface.md
+                - name: /internalPartition (treat the input file as an internal partition unit.)
+                  href: ../build/reference/internal-partition.md
                 - name: /J (Default char type is unsigned)
                   href: ../build/reference/j-default-char-type-is-unsigned.md
                 - name: /JMC (Just My Code debugging)
