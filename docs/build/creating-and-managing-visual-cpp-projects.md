@@ -6,7 +6,7 @@ helpviewer_keywords: ["Visual Studio C++ projects, creating", "projects [C++], c
 ---
 # Visual Studio projects - C++
 
-A *Visual Studio project* is a collection of code files and assets such as icons, images, and so on that are built together using the MSBuild build system. MSBuild is the native build system for Visual Studio and is generally the best build system to use for Windows-specific programs. MSBuild is tightly integrated with Visual Studio, but you can also use it from the command line.
+A *Visual Studio project* is a collection of code files and assets such as icons, images, and so on, that are built together using the MSBuild build system. MSBuild is the native build system for Visual Studio and is generally the best build system to use for Windows-specific programs. MSBuild is tightly integrated with Visual Studio, but you can also use it from the command line.
 
 For cross-platform projects, or projects that use open-source libraries, we recommend using [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md) in Visual Studio 2017 and later. For information about upgrading MSBuild projects from older versions of Visual Studio, see the [Microsoft C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md).
 
@@ -25,7 +25,7 @@ For cross-platform projects, or projects that use open-source libraries, we reco
 ::: moniker range="msvc-150"
 
 1. Create a C++ project by choosing **File** > **New** > **Project**.
-1. Choose **Visual C++** in the left pane. In the center pane you see a list of project templates:
+1. Choose **Visual C++** in the left pane. In the center pane, a list of project templates will appear:
 
    ![Screenshot of the New Project dialog, showing available project templates for C++ such as Windows Console Application.](../overview/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
@@ -39,9 +39,9 @@ After you create a project, it appears in the [Solution Explorer](/visualstudio/
 
    ![Screenshot of the Solution Explorer window, showing source files, header files, and resource files.](media/mathlibrary-solution-explorer-153.png)
 
-When you create a new project, a solution file (.sln) is also created. A *Visual Studio solution* is a collection of one or more projects. You can add additional projects to the solution by right-clicking the solution name in **Solution Explorer**. 
+When you create a new project, a solution file (.sln) is also created. A *Visual Studio solution* is a collection of one or more projects. You can add another project to the solution by right-clicking the solution name in **Solution Explorer** > **Add** > **New project**.
 
-The solution file is used to coordinate build dependencies when you have multiple related projects. Compiler options are set at the project level.
+The solution file coordinates build dependencies when you have multiple related projects. Compiler options are set at the project level.
 
 ## Add code, icons, and other assets to a project
 
@@ -59,7 +59,7 @@ To configure build settings for a project, right-click on the project in **Solut
 
 To compile and run the new project, press **F5** or click the *debug dropdown* with the green arrow on the main toolbar. The *configuration dropdown* is where you choose whether to perform a *Debug* or *Release* build (or some other custom configuration).
 
-A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project.
+A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning doesn't. All errors and warnings will appear both in the Output Window and in the Error List when you build the project.
 
    ![Screenshot of the Output window and Error list.](../overview/media/vs2017-output-error-list.png)
 
