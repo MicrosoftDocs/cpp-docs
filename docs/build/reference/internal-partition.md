@@ -1,7 +1,7 @@
 ---
 title: "/internalPartition"
 description: "Use the /internalPartition compiler option to treat the input file as an internal partition unit."
-ms.date: 04/15/2022
+ms.date: 04/18/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/internalPartition", "VC.Project.VCCLCompilerTool.Interface"]
@@ -9,7 +9,7 @@ helpviewer_keywords: ["/internalPartition", "Translate include directives into i
 ---
 # `/internalPartition`
 
-Use this switch to treat the input file on the command line as an [internal partition unit](http://eel.is/c%2B%2Bdraft/module#unit-4.3).
+Use the **`/internalPartition`** compiler option to treat the input file as an *internal partition unit*, which is a [module partition implementation unit](../../cpp/modules-cpp.md#implementing-modules) that doesn't contribute to the external interface of the module.
 
 ## Syntax
 
@@ -17,19 +17,17 @@ Use this switch to treat the input file on the command line as an [internal part
 
 ## Remarks
 
-The following example demonstrates using the `/internalPartition` switch:
-
-`m-internals.cpp`:
+The following example demonstrates how to use the `/internalPartition` option:
 
 ```cpp
+// m-internals.cpp
 module m:internals;
 
 void internalFunc() {} // cannot have `export` since this is an internal partition
 ```
 
-`m.ixx`:
-
 ```cpp
+// m.ixx
 export module m;
 import :internals; // Cannot export this partition.
 
@@ -43,7 +41,7 @@ To compile this interface:
 cl /std:c++latest /internalPartition /c m-internals.cpp
 ```
 
-This switch can't be used with the [`/interface`](interface.md) compiler switch.
+This option can't be used with the [`/interface`](interface.md) compiler option.
 
 **`/internalPartition`** is available in Visual Studio 2019 version 16.10, or later.\
 **`/internalPartition`** requires [/std:c++20](std-specify-language-standard-version.md) or later.
