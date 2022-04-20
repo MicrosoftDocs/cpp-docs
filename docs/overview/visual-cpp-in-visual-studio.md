@@ -1,9 +1,9 @@
 ---
 title: "C and C++ in Visual Studio"
-description: "Learn how to use the Microsoft C/C++ compiler, Visual Studio, and related tools to develop C++ and assembly programs for Windows, Linux, Android, and iOS. Learn what's new in Visual Studio C++ and how conformant it is with the C/C++ standards. Refresh your C/C++ language skills, learn about Visual Studio tools for developing C++ apps, and what C/C++ libraries are available for you to use to develop apps."
-ms.date: 04/19/2022
+description: "Learn how to use the Microsoft C/C++ compiler and related tools to develop C++ and assembly programs for Windows, Linux, Android, and iOS."
+ms.date: 04/20/2022
 ms.technology: "cpp-ide"
-helpviewer_keywords: ["Visual C++, home page, "]
+helpviewer_keywords: ["Visual C++, home page"]
 ---
 # C and C++ in Visual Studio
 
@@ -47,7 +47,7 @@ Microsoft Visual C++ (MSVC) refers to the C++, C, and assembly language developm
 
 Visual Studio 2015, 2017, 2019, and 2022 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
 
-## What's new for C++ in Visual Studio and conformance progress
+## What's new for C++ in Visual Studio
 
 [What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
 Find out what's new in Visual Studio.
@@ -112,7 +112,7 @@ Use SAL annotations or the C++ Core Guidelines checkers to perform static analys
 [Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)\
 Create unit tests using the Microsoft Unit Testing Framework for C++, Google Test, Boost.Test, or CTest.
 
-## Write Visual Studio C/C++ applications
+## Write C/C++ applications using Visual Studio
 
 [Desktop applications (C++)](../windows/desktop-applications-visual-cpp.md)\
 Learn how to create traditional native C++ desktop applications for Windows.
@@ -159,7 +159,7 @@ A common reference to the shared C and C++ language preprocessor.
 The reference guide to the Microsoft extensions to the C++ language for creating C++ Universal Windows Platform apps, C++ Windows runtime components that can be consumed by JavaScript-based Windows apps, and Windows DirectX games and graphics-intensive apps.
 
 [C++/CLI language reference](https://www.ecma-international.org/wp-content/uploads/ECMA-372_1st_edition_december_2005.pdf)\
-The ECMA standard for the C++/CLI language.
+The ECMA standard for the C++/CLI programming language.
 
 [Compiler intrinsics and assembly language](../intrinsics/compiler-intrinsics-and-assembly-language.md)\
 Guides to the compiler intrinsics supported or implemented by the Microsoft C/C++ compilers on each platform.
