@@ -45,9 +45,9 @@ helpviewer_keywords: ["Visual C++, home page, "]
 
 Microsoft Visual C++ (MSVC) refers to the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create Universal Windows Platform (UWP) apps, native Windows desktop and server applications, cross-platform libraries and apps that run on Windows, Linux, Android, and iOS, as well as managed apps and libraries that use the .NET Framework. You can use MSVC to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop, from device drivers and operating system components to cross-platform games for mobile devices, and from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
 
-Visual Studio 2015, 2017, 2019 and 2022 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
+Visual Studio 2015, 2017, 2019, and 2022 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
 
-## What's new for Visual Studio C++ and conformance history
+## What's new for C++ in Visual Studio and conformance progress
 
 [What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
 Find out what's new in Visual Studio.
@@ -149,11 +149,13 @@ Learn about working with different text and string formats and encodings for loc
 [C++ language reference](../cpp/cpp-language-reference.md)\
 The reference guide to the Microsoft implementation of the C++ programming language.
 
+[C language reference](../c-language/c-language-reference.md)\
+The reference guide to the Microsoft implementation of the C programming language.
+
 [C/C++ preprocessor reference](../preprocessor/c-cpp-preprocessor-reference.md)\
 A common reference to the shared C and C++ language preprocessor.
 
-[C language reference](../c-language/c-language-reference.md)\
-The reference guide to the Microsoft implementation of the C programming language.
+[C++/CX language reference](/cpp/cppcx/visual-c-language-reference-c-cx)\
 
 [Compiler intrinsics and assembly language](../intrinsics/compiler-intrinsics-and-assembly-language.md)\
 Guides to the compiler intrinsics supported or implemented by the Microsoft C/C++ compilers on each platform.
