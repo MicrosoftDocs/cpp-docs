@@ -18,10 +18,11 @@ For cross-platform projects, or projects that use open-source libraries, we reco
 
 1. Create a C++ project by choosing **File** > **New** > **Project**.
 1. In the **Create a new project** dialog, set the **Language** dropdown to **C++**. This filters the list of project templates to C++ projects. You can filter the templates by setting the **Platform**, **Project Type**, or by entering keywords in the search box.
-1. Select a project template, then choose **Next**.
-1. On the **Configure your new project page**, enter project-specific settings such as the project name or location and then choose **Create** to create your project.
 
    ![Screenshot of the Create a new project wizard. The Console App project template is selected.](../build/media/vs2019-choose-console-app.png)
+
+1. Select a project template, then choose **Next**.
+1. On the **Configure your new project page**, enter project-specific settings such as the project name or location and then choose **Create** to create your project.
 
 ::: moniker-end
 
