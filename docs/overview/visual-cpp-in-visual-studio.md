@@ -156,6 +156,10 @@ The reference guide to the Microsoft implementation of the C programming languag
 A common reference to the shared C and C++ language preprocessor.
 
 [C++/CX language reference](/cpp/cppcx/visual-c-language-reference-c-cx)\
+The reference guide to the Microsoft extensions to the C++ language for creating C++ Universal Windows Platform apps, C++ Windows runtime components that can be consumed by JavaScript-based Windows apps, and Windows DirectX games and graphics-intensive apps.
+
+[C++/CLI language reference](https://www.ecma-international.org/wp-content/uploads/ECMA-372_1st_edition_december_2005.pdf)\
+The ECMA standard for the C++/CLI language.
 
 [Compiler intrinsics and assembly language](../intrinsics/compiler-intrinsics-and-assembly-language.md)\
 Guides to the compiler intrinsics supported or implemented by the Microsoft C/C++ compilers on each platform.
