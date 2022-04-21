@@ -35,7 +35,7 @@ struct Date {
 
 The conceptual memory layout of an object of type `Date` is shown in the following figure.
 
-![Memory layout of a date object](../cpp/media/vc38uq1.png "Memory layout of a date object") <br/>
+![Memory layout of a date object, showing the nWeekDay, nMonthDay, nMonth, and nYear bit fields.](../cpp/media/vc38uq1.png "Memory layout of a date object") <br/>
 Memory Layout of Date Object
 
 Note that `nYear` is 8 bits long and would overflow the word boundary of the declared type, **`unsigned short`**. Therefore, it is begun at the beginning of a new **`unsigned short`**. It is not necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
@@ -62,7 +62,7 @@ struct Date {
 
 then the memory layout is as shown in the following figure:
 
-![Layout of Date object with zero&#45;length bit field](../cpp/media/vc38uq2.png "Layout of Date object with zero&#45;length bit field") <br/>
+![Layout of a Date object with a zero length bit field, which forces alignment padding.](../cpp/media/vc38uq2.png) <br/>
 Layout of Date Object with Zero-Length Bit Field
 
 The underlying type of a bit field must be an integral type, as described in [Built-in types](../cpp/fundamental-types-cpp.md).

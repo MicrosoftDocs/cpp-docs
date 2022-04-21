@@ -7,7 +7,7 @@ ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
 ---
 # Implementing Property Pages
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 

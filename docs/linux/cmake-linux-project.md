@@ -81,7 +81,7 @@ The following example shows a simple *CMakeLists.txt* file and .cpp file:
 
 int main(int argc, char* argv[])
 {
-    std::cout << "Hello from Linux CMake" << std::endl;
+    std::cout << "Hello from Linux CMake \n";
 }
 ```
 

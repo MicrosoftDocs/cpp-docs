@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: &lt;cmath&gt;"
-title: "&lt;cmath&gt;"
+description: "Learn more about: <cmath>"
+title: "<cmath>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cmath>"]
 helpviewer_keywords: ["cmath header"]
-ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6
 ---
-# &lt;cmath&gt;
+# `<cmath>`
 
-Includes the Standard C library header \<math.h> and adds the associated names to the `std` namespace.
+Includes the Standard C library header `<math.h>` and adds the associated names to the `std` namespace.
 
 ## Syntax
 

@@ -1,3 +1,4 @@
+items: 
 - name: Read and write C++ code in Visual Studio
   expanded: true
   items: 
@@ -11,6 +12,26 @@
       href: ../ide/how-to-set-preferences.md
     - name: Collaborate using Live Share for C++
       href: ../ide/live-share-cpp.md
+    - name: Find and fix common code problems
+      items:
+      - name: Find and fix common code problems
+        displayName: C++ Linter Overview
+        expanded: false
+        href: ../ide/cpp-linter-overview.md
+      - name: lnt-accidental-copy
+        href: ../ide/lnt-accidental-copy.md
+      - name: lnt-arithmetic-overflow
+        href: ../ide/lnt-arithmetic-overflow.md
+      - name: lnt-assignment-equality
+        href: ../ide/lnt-assignment-equality.md
+      - name: lnt-comparison-bitwise-precedence
+        href: ../ide/lnt-comparison-bitwise-precedence.md
+      - name: lnt-integer-float-division
+        href: ../ide/lnt-integer-float-division.md
+      - name: lnt-logical-bitwise-mismatch
+        href: ../ide/lnt-logical-bitwise-mismatch.md
+      - name: lnt-uninitialized-local
+        href: ../ide/lnt-uninitialized-local.md
     - name: Change signature
       href: ../ide/refactoring/change-signature.md
     - name: Convert to raw string literal
@@ -57,8 +78,12 @@
       href: ../ide/adding-a-member-variable-visual-cpp.md
     - name: Add a method
       href: ../ide/adding-a-method-visual-cpp.md
+    - name: Add an IDL method
+      href: ../ide/add-interface-definition-library-method-wizard.md 
     - name: Add a property
       href: ../ide/adding-a-property-visual-cpp.md
+    - name: Add an IDL property
+      href: ../ide/add-interface-definition-library-property-wizard.md
     - name: Add an event
       href: ../ide/adding-an-event-visual-cpp.md
     - name: Add an event handler

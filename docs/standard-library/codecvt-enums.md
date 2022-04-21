@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;codecvt&gt; enums"
-title: "&lt;codecvt&gt; enums"
+description: "Learn more about: <codecvt> enums"
+title: "<codecvt> enums"
 ms.date: "11/04/2016"
 f1_keywords: ["codecvt/std::codecvt_mode"]
 ms.assetid: 46a8b073-01bc-46d3-b3d3-a8540f9422c1
 helpviewer_keywords: ["std::codecvt_mode"]
 ---
-# &lt;codecvt&gt; enums
+# `<codecvt>` enums
 
 ## <a name="codecvt_mode"></a> codecvt_mode Enumeration
 

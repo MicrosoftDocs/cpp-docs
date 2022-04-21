@@ -10,7 +10,7 @@ f1_keywords: ["_kbhit", "conio/_kbhit"]
 helpviewer_keywords: ["keyboard input", "user input, checking for keyboard", "kbhit function", "console", "console, checking", "keyboards, keyboard input", "_kbhit function", "keyboards, checking input"]
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4
 ---
-# _kbhit
+# `_kbhit`
 
 Checks the console for keyboard input.
 
@@ -26,11 +26,11 @@ int _kbhit( void );
 
 ## Return Value
 
-**_kbhit** returns a nonzero value if a key has been pressed. Otherwise, it returns 0.
+**`_kbhit`** returns a nonzero value if a key has been pressed. Otherwise, it returns 0.
 
 ## Remarks
 
-The **_kbhit** function checks the console for a recent keystroke. If the function returns a nonzero value, a keystroke is waiting in the buffer. The program can then call **_getch** or **_getche** to get the keystroke.
+The **`_kbhit`** function checks the console for a recent keystroke. If the function returns a nonzero value, a keystroke is waiting in the buffer. The program can then call **`_getch`** or **`_getche`** to get the keystroke.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -38,7 +38,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_kbhit**|\<conio.h>|
+|**`_kbhit`**|`<conio.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

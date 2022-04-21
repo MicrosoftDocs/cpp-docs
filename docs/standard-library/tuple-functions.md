@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;tuple&gt; functions"
-title: "&lt;tuple&gt; functions"
+description: "Learn more about: <tuple> functions"
+title: "<tuple> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["tuple/std::get", "tuple/std::make_tuple", "tuple/std::tie"]
 ms.assetid: bc6be38f-5258-4c14-b81b-63caa335fd44
 helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]", "std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]"]
 ---
-# &lt;tuple&gt; functions
+# `<tuple>` functions
 
 ## <a name="apply"></a> apply
 

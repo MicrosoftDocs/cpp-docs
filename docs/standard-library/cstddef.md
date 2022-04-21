@@ -1,12 +1,12 @@
 ---
-title: "&lt;cstddef&gt;"
+title: "<cstddef>"
 description: "Describes <stddef.h>, which ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace."
 ms.date: "9/4/2020"
 f1_keywords: ["<cstddef>"]
 helpviewer_keywords: ["cstddef header"]
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
 ---
-# &lt;cstddef&gt;
+# `<cstddef>`
 
 Includes the C standard library header \<stddef.h> and adds associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 

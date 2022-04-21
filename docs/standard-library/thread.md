@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;thread&gt;"
-title: "&lt;thread&gt;"
+description: "Learn more about: <thread>"
+title: "<thread>"
 ms.date: "11/04/2016"
 f1_keywords: ["<thread>"]
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
 ---
-# &lt;thread&gt;
+# `<thread>`
 
 Include the standard header \<thread> to define the class `thread` and various supporting functions.
 

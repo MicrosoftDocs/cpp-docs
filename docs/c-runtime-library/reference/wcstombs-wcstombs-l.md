@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wcstombs", "_wcstombs_l"]
 helpviewer_keywords: ["_wcstombs_l function", "wcstombs function", "string conversion, wide characters", "wide characters, converting", "wcstombs_l function", "characters, converting", "string conversion, multibyte character strings"]
-ms.assetid: 91234252-9ea1-423a-af99-e9d0ce4a40e3
 ---
-# wcstombs, _wcstombs_l
+# `wcstombs`, `_wcstombs_l`
 
-Converts a sequence of wide characters to a corresponding sequence of multibyte characters. More secure versions of these functions are available; see [wcstombs_s, _wcstombs_s_l](wcstombs-s-wcstombs-s-l.md).
+Converts a sequence of wide characters to a corresponding sequence of multibyte characters. More secure versions of these functions are available; see [`wcstombs_s`, `_wcstombs_s_l`](wcstombs-s-wcstombs-s-l.md).
 
 ## Syntax
 
@@ -45,33 +44,33 @@ size_t _wcstombs_l(
 
 ### Parameters
 
-*mbstr*<br/>
+*`mbstr`*\
 The address of a sequence of multibyte characters.
 
-*wcstr*<br/>
+*`wcstr`*\
 The address of a sequence of wide characters.
 
-*count*<br/>
+*`count`*\
 The maximum number of bytes that can be stored in the multibyte output string.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return Value
 
-If **wcstombs** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating null (if any). If the *mbstr* argument is **NULL**, **wcstombs** returns the required size in bytes of the destination string. If **wcstombs** encounters a wide character it cannot convert to a multibyte character, it returns -1 cast to type **size_t** and sets **errno** to **EILSEQ**.
+If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can’t convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets **`errno`** to **`EILSEQ`**.
 
 ## Remarks
 
-The **wcstombs** function converts the wide-character string pointed to by *wcstr* to the corresponding multibyte characters and stores the results in the *mbstr* array. The *count* parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of *mbstr*). In general, it is not known how many bytes will be required when converting a wide-character string. Some wide characters will require only one byte in the output string; others require two. If there are two bytes in the multibyte output string for every wide character in the input string (including the wide character null), the result is guaranteed to fit.
+The **`wcstombs`** function converts the wide-character string pointed to by *`wcstr`* to the corresponding multibyte characters and stores the results in the *`mbstr`* array. The *`count`* parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of *`mbstr`*). In general, it isn't known how many bytes will be required when converting a wide-character string. Some wide characters will require only one byte in the output string; others require two. If there are two bytes in the multibyte output string for every wide character in the input string (including the wide character `NULL`), the result is guaranteed to fit.
 
-If **wcstombs** encounters the wide-character null character (L'\0') either before or when *count* occurs, it converts it to an 8-bit 0 and stops. Thus, the multibyte character string at *mbstr* is null-terminated only if **wcstombs** encounters a wide-character null character during conversion. If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of **wcstombs** is undefined.
+If **`wcstombs`** encounters the wide-character `NULL` character (L'\0') either before or when *`count`* occurs, it converts it to an 8-bit 0 and stops. Thus, the multibyte character string at *`mbstr`* is null-terminated only if **`wcstombs`** encounters a wide-character `NULL` character during conversion. If the sequences pointed to by *`wcstr`* and *`mbstr`* overlap, the behavior of **`wcstombs`** is undefined.
 
-If the *mbstr* argument is **NULL**, **wcstombs** returns the required size in bytes of the destination string.
+If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string.
 
-**wcstombs** validates its parameters. If *wcstr* is **NULL**, or if *count* is greater than **INT_MAX**, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns -1.
+**`wcstombs`** validates its parameters. If *`wcstr`* is **`NULL`**, or if *`count`* is greater than **`INT_MAX`**, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **`errno`** to **`EINVAL`** and returns -1.
 
-**wcstombs** uses the current locale for any locale-dependent behavior; **_wcstombs_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**`wcstombs`** uses the current locale for any locale-dependent behavior; **`_wcstombs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -81,14 +80,14 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**wcstombs**|\<stdlib.h>|
-|**_wcstombs_l**|\<stdlib.h>|
+|**`wcstombs`**|`<stdlib.h>`|
+|**`_wcstombs_l`**|`<stdlib.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-This program illustrates the behavior of the **wcstombs** function.
+This program illustrates the behavior of the **`wcstombs`** function.
 
 ```C
 // crt_wcstombs.c
@@ -130,10 +129,10 @@ Convert wide-character string:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[Data Conversion](../../c-runtime-library/data-conversion.md)\
+[Locale](../../c-runtime-library/locale.md)\
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`wctomb`, `_wctomb_l`](wctomb-wctomb-l.md)\
+[`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)

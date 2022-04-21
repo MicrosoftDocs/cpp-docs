@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;memory&gt;"
-title: "&lt;memory&gt;"
+description: "Learn more about: <memory>"
+title: "<memory>"
 ms.date: "08/04/2019"
 f1_keywords: ["<memory>"]
 helpviewer_keywords: ["memory header"]
 ---
-# &lt;memory&gt;
+# `<memory>`
 
 Defines a class, an operator, and several templates that help allocate and free objects.
 

@@ -16,7 +16,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
     :::column:::
         [`alignas`](align-cpp.md)\
         [`alignof`](alignof-operator.md)\
-        [`and`](bitwise-and-operator-amp.md) <sup>b</sup>\
+        [`and`](logical-and-operator-amp-amp.md) <sup>b</sup>\
         [`and_eq`](assignment-operators.md) <sup>b</sup>\
         [`asm`](../assembler/inline/asm.md) <sup>a</sup>\
         [`auto`](./auto-cpp.md)\
@@ -120,7 +120,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 
 <sup>b</sup> The extended operator synonyms are keywords when [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified. They aren't keywords when Microsoft extensions are enabled.
 
-<sup>c</sup> Supported when [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) is specified.
+<sup>c</sup> Supported when [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later (such as **`/std:c++latest`**) is specified.
 
 ## Microsoft-specific C++ keywords
 
@@ -128,7 +128,7 @@ In C++, identifiers that contain two consecutive underscores are reserved for co
 
 Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. These options disable some Microsoft-specific keywords.
 
-When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI compliance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of many of the double-underscored keywords are supported. The **`__cdecl`** keyword is available with no leading underscore.
+When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI conformance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of many of the double-underscored keywords are supported. The **`__cdecl`** keyword is available with no leading underscore.
 
 The **`__asm`** keyword replaces C++ **`asm`** syntax. **`asm`** is reserved for compatibility with other C++ implementations, but not implemented. Use **`__asm`**.
 
@@ -215,13 +215,14 @@ These identifiers are extended attributes for the **`__declspec`** modifier. The
     :::column-end:::
     :::column:::
         [`noreturn`](noreturn.md)\
+        [`no_sanitize_address`](no-sanitize-address.md)\
         [`nothrow`](nothrow-cpp.md)\
         [`novtable`](novtable.md)\
         [`process`](process.md)\
-        [`property`](property-cpp.md)\
-        [`restrict`](restrict.md)
+        [`property`](property-cpp.md)
     :::column-end:::
     :::column:::
+        [`restrict`](restrict.md)\
         [`safebuffers`](safebuffers.md)\
         [`selectany`](selectany.md)\
         [`spectre`](spectre.md)\

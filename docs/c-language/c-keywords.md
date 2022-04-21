@@ -59,7 +59,7 @@ The C language uses the following keywords:
         **`_Atomic`** <sup>2, b</sup>\
         **`_Bool`** <sup>1, a</sup>\
         **`_Complex`** <sup>1, b</sup>\
-        **[`_Generic`](generic_selection.md)** <sup>2, a</sup>\
+        **[`_Generic`](generic-selection.md)** <sup>2, a</sup>\
         **`_Imaginary`** <sup>1, b</sup>\
         **`_Noreturn`** <sup>2, a</sup>\
         **`_Static_assert`** <sup>2, a</sup>\
@@ -123,7 +123,7 @@ The following keywords and special identifiers are recognized by the Microsoft C
 
 Microsoft extensions are enabled by default. To assist in creating portable code, you can disable Microsoft extensions by specifying the [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. When you use this option, some Microsoft-specific keywords are disabled.
 
-When Microsoft extensions are enabled, you can use the keywords listed above in your programs. For standards compliance, most of these keywords are prefaced by a double underscore. The four exceptions, **`dllexport`**, **`dllimport`**, **`naked`**, and **`thread`**, are used only with **`__declspec`** and don't require a leading double underscore. For backward compatibility, single-underscore versions of the rest of the keywords are supported.
+When Microsoft extensions are enabled, you can use the keywords listed above in your programs. To conform to the language standard, most of these keywords are prefaced by a double underscore. The four exceptions, **`dllexport`**, **`dllimport`**, **`naked`**, and **`thread`**, are used only with **`__declspec`** and don't require a leading double underscore. For backward compatibility, single-underscore versions of the rest of the keywords are supported.
 
 ## See also
 

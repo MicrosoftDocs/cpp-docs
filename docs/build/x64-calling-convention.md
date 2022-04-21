@@ -1,8 +1,7 @@
 ---
 title: "x64 calling convention"
-description: "Details of the default x64 calling convention."
-ms.date: "07/06/2020" 
-ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
+description: "Learn about the details of the default x64 calling convention."
+ms.date: 04/21/2022
 ---
 # x64 calling convention
 
@@ -16,13 +15,13 @@ There's a strict one-to-one correspondence between a function call's arguments a
 
 The x87 register stack is unused. It may be used by the callee, but consider it volatile across function calls. All floating point operations are done using the 16 XMM registers.
 
-Integer arguments are passed in registers RCX, RDX, R8, and R9. Floating point arguments are passed in XMM0L, XMM1L, XMM2L, and XMM3L. 16-byte arguments are passed by reference. Parameter passing is described in detail in [Parameter passing](#parameter-passing). These registers, and RAX, R10, R11, XMM4, and XMM5, are considered volatile. Register usage is documented in detail in [Register usage](../build/x64-software-conventions.md#register-usage) and [Caller/callee saved registers](#callercallee-saved-registers).
+Integer arguments are passed in registers RCX, RDX, R8, and R9. Floating point arguments are passed in XMM0L, XMM1L, XMM2L, and XMM3L. 16-byte arguments are passed by reference. Parameter passing is described in detail in [Parameter passing](#parameter-passing). These registers, and RAX, R10, R11, XMM4, and XMM5, are considered volatile. Register usage is documented in detail in [x64 register usage](x64-software-conventions.md#x64-register-usage) and [Caller/callee saved registers](#callercallee-saved-registers).
 
 For prototyped functions, all arguments are converted to the expected callee types before passing. The caller is responsible for allocating space for the callee's parameters. The caller must always allocate sufficient space to store four register parameters, even if the callee doesn't take that many parameters. This convention simplifies support for unprototyped C-language functions and vararg C/C++ functions. For vararg or unprototyped functions, any floating point values must be duplicated in the corresponding general-purpose register. Any parameters beyond the first four must be stored on the stack after the shadow store before the call. Vararg function details can be found in [Varargs](#varargs). Unprototyped function information is detailed in [Unprototyped functions](#unprototyped-functions).
 
 ## Alignment
 
-Most structures are aligned to their natural alignment. The primary exceptions are the stack pointer and `malloc` or `alloca` memory, which are 16-byte aligned to aid performance. Alignment above 16 bytes must be done manually. Since 16 bytes is a common alignment size for XMM operations, this value should work for most code. For more information about structure layout and alignment, see [Types and Storage](../build/x64-software-conventions.md#types-and-storage). For information about the stack layout, see [x64 stack usage](../build/stack-usage.md).
+Most structures are aligned to their natural alignment. The primary exceptions are the stack pointer and `malloc` or `alloca` memory, which are 16-byte aligned to aid performance. Alignment above 16 bytes must be done manually. Since 16 bytes is a common alignment size for XMM operations, this value should work for most code. For more information about structure layout and alignment, see [x64 type and storage layout](x64-software-conventions.md#x64-type-and-storage-layout). For information about the stack layout, see [x64 stack usage](../build/stack-usage.md).
 
 ## Unwindability
 

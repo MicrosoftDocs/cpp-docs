@@ -165,7 +165,7 @@ BOOL SetFont(
 
 ### Parameters
 
-`lpszName*
+*lpszName*\
 Specifies the name of the font to select.
 
 *nCharSet*<br/>

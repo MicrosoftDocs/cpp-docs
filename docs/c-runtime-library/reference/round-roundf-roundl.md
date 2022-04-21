@@ -10,7 +10,7 @@ f1_keywords: ["roundf", "roundl", "round"]
 helpviewer_keywords: ["roundl function", "round function", "roundf function"]
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
 ---
-# round, roundf, roundl
+# `round`, `roundf`, `roundl`
 
 Rounds a floating-point value to the nearest integer value.
 
@@ -37,22 +37,22 @@ long double roundl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The floating-point value to round.
 
 ## Return Value
 
-The **round** functions return a floating-point value that represents the nearest integer to *x*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
+The **`round`** functions return a floating-point value that represents the nearest integer to *`x`*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|none|**_DOMAIN**|
+|± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **round** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **round** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`round`** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`round`** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `round()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `round()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -60,8 +60,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**round**, **roundf**, **roundl**|\<math.h>|
-|**round** macro | \<tgmath.h> ||
+|**`round`**, **`roundf`**, **`roundl`**|`<math.h>`|
+|**`round`** macro | `<tgmath.h>` |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -118,10 +118,10 @@ roundl(-2.499999900000000163657887242152355611324310302734375) is -2
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)\
-[floor, floorf, floorl](floor-floorf-floorl.md)\
-[fmod, fmodf](fmod-fmodf.md)\
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)\
-[lround, lroundf, lroundl, llround, llroundf, llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md)\
-[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)\
-[rint, rintf, rintl](rint-rintf-rintl.md)
+[`ceil`, `ceilf`, `ceill`](ceil-ceilf-ceill.md)\
+[`floor`, `floorf`, `floorl`](floor-floorf-floorl.md)\
+[`fmod`, `fmodf`](fmod-fmodf.md)\
+[`lrint`, `lrintf`, `lrintl`, `llrint`, `llrintf`, `llrintl`](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)\
+[`lround`, `lroundf`, `lroundl`, `llround`, `llroundf`, `llroundl`](lround-lroundf-lroundl-llround-llroundf-llroundl.md)\
+[`nearbyint`, `nearbyintf`, `nearbyintl`](nearbyint-nearbyintf-nearbyintl1.md)\
+[`rint`, `rintf`, `rintl`](rint-rintf-rintl.md)

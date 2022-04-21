@@ -25,9 +25,9 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 <!-- markdownlint-disable MD034 -->
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To install the setup and deployment project template for Visual Studio 2019
+### To install the setup and deployment project template for Visual Studio
 
 1. If you haven't already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Extensions** > **Manage Extensions**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
 

@@ -18,7 +18,7 @@ Controls the optimizations that LINK performs during a build.
 
 ## Arguments
 
-**REF** &#124; **NOREF**
+**REF** \| **NOREF**
 
 **/OPT:REF** eliminates functions and data that are never referenced; **/OPT:NOREF** keeps functions and data that are never referenced.
 
@@ -30,7 +30,7 @@ By default, **/OPT:REF** is enabled by the linker unless **/OPT:NOREF** or [/DEB
 
 If [/DEBUG](debug-generate-debug-info.md) is specified, the default for **/OPT** is **NOREF**, and all functions are preserved in the image. To override this default and optimize a debug build, specify **/OPT:REF**. This can reduce the size of your executable, and can be a useful optimization even in debug builds. We recommend that you also specify **/OPT:NOICF** to preserve identical functions in debug builds. This makes it easier to read stack traces and set breakpoints in functions that would otherwise be folded together.
 
-**ICF**\[**=**_iterations_] &#124; **NOICF**
+**ICF**\[**=**_iterations_] \| **NOICF**
 
 Use **ICF**\[**=**_iterations_] to perform identical COMDAT folding. Redundant COMDATs can be removed from the linker output. The optional *iterations* parameter specifies the number of times to traverse the symbols for duplicates. The default number of iterations is 1. Additional iterations may locate more duplicates that are uncovered through folding in the previous iteration.
 
@@ -41,7 +41,7 @@ In a debug build, you must explicitly specify **/OPT:ICF** to enable COMDAT fold
 > [!NOTE]
 > Because **/OPT:ICF** can cause the same address to be assigned to different functions or read-only data members (that is, **`const`** variables when compiled by using **/Gy**), it can break a program that depends on unique addresses for functions or read-only data members. For more information, see [/Gy (Enable Function-Level Linking)](gy-enable-function-level-linking.md).
 
-**LBR** &#124; **NOLBR**
+**LBR** \| **NOLBR**
 
 The **/OPT:LBR** and **/OPT:NOLBR** options apply only to ARM binaries. Because certain ARM processor branch instructions have a limited range, if the linker detects a jump to an out-of-range address, it replaces the branch instruction's destination address with the address of a code "island" that contains a branch instruction that targets the actual destination. You can use **/OPT:LBR** to optimize the detection of long branch instructions and the placement of intermediate code islands to minimize overall code size. **/OPT:NOLBR** instructs the linker to generate code islands for long branch instructions as they are encountered, without optimization.
 

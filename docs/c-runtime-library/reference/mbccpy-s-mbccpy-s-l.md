@@ -31,7 +31,7 @@ errno_t _mbccpy_s_l(
    size_t buffSizeInBytes,
    int * pCopied,
    const unsigned char *src,
-   locale_t locale
+   _locale_t locale
 );
 template <size_t size>
 errno_t _mbccpy_s(
@@ -44,7 +44,7 @@ errno_t _mbccpy_s_l(
    unsigned char (&dest)[size],
    int * pCopied,
    const unsigned char *src,
-   locale_t locale
+   _locale_t locale
 ); // C++ only
 ```
 

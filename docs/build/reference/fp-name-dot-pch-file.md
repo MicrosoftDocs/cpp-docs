@@ -1,12 +1,12 @@
 ---
-title: "/Fp (Name &period;pch file)"
+title: "/Fp (Name .pch file)"
 description: "Use the /Fp compiler option to specify the precompiled header file name."
 ms.date: "05/31/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.PrecompiledHeaderFile", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile"]
 helpviewer_keywords: ["Fp compiler option [C++]", "-Fp compiler option [C++]", "naming precompiler header files", "PCH files, naming", "names [C++], PCH", ".pch files, naming", "precompiled header files, naming", "/Fp compiler option [C++]"]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
 ---
-# /Fp (Name &period;pch file)
+# /Fp (Name .pch file)
 
 Provides a path name for a precompiled header instead of using the default path name.
 
@@ -24,7 +24,7 @@ If you don't specify an extension as part of the *pathname*, an extension of *pc
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Open the **Configuration Properties** > **C/C++** > **Precompiled Headers** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Precompiled Headers** property page.
 
 1. Modify the **Precompiled Header Output File** property.
 

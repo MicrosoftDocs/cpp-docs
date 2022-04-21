@@ -1,0 +1,62 @@
+items: 
+- name: Get started with Visual C++
+  expanded: true
+  items:
+    - name: Install C++ support in Visual Studio
+      href: ../build/vscpp-step-0-installation.md
+    - name: Visual Studio guided tour
+      href: /visualstudio/get-started/visual-studio-ide
+    - name: Create and edit a C++ console app project
+      href: ../build/vscpp-step-1-create.md
+    - name: Build and run a C++ console app project
+      href: ../build/vscpp-step-2-build.md
+    - name: Welcome to Modern C++
+      href: ../cpp/welcome-back-to-cpp-modern-cpp.md
+    - name: Create a console calculator in C++
+      href: ../get-started/tutorial-console-cpp.md
+    - name: Create a UWP app
+      href: /windows/uwp/cpp-and-winrt-apis/get-started
+    - name: Create a Windows Desktop application
+      href: /windows/desktop/learnwin32/learn-to-program-for-windows
+    - name: Create a DirectX game
+      href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+- name: Create C and C++ apps in Visual Studio
+  expanded: false
+  items:
+    - name: Create a console app
+      href: tutorial-console-cpp.md
+    - name: Create a Universal Windows Platform app 
+      href: /windows/uwp/cpp-and-winrt-apis/get-started
+    - name: Create a Windows Desktop app
+      href: /windows/desktop/learnwin32/learn-to-program-for-windows
+    - name: Create a Windows Desktop app with MFC
+      href: ../mfc/reference/creating-an-mfc-application.md
+    - name: Create a Windows DLL
+      href: ../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md
+    - name: Create a static library
+      href: ../build/walkthrough-creating-and-using-a-static-library-cpp.md
+    - name: Create a .NET component
+      href: ../dotnet/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md
+    - name: Create a DirectX game
+      href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+- name: Learn Visual Studio
+  expanded: false
+  items:
+    - name: Open code from a repo
+      href: /visualstudio/get-started/tutorial-open-project-from-repo
+    - name: Write and edit code 
+      href: /visualstudio/get-started/tutorial-editor
+    - name: Compile and build 
+      href: /visualstudio/ide/compiling-and-building-in-visual-studio
+    - name: Debug your C++ code
+      href: /visualstudio/debugger/quickstart-debug-with-cplusplus
+    - name: Test your C++ code
+      href: /visualstudio/test/writing-unit-tests-for-c-cpp
+    - name: Compile C++ on the command line
+      href: ../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md
+    - name: Compile C on the command line
+      href: ../build/walkthrough-compile-a-c-program-on-the-command-line.md
+    - name: Compile C++/CX on the command line
+      href: ../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
+    - name: Compile C++/CLI on the command line
+      href: ../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md

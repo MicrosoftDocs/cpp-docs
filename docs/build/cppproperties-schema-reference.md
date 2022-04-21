@@ -6,7 +6,7 @@ helpviewer_keywords: ["CppProperties.json file [C++]"]
 ---
 # CppProperties.json reference
 
-Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a *CppProperties.json* file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. See [Open Folder projects for C++](open-folder-projects-cpp.md) for more information about how to add configurations in an Open Folder project. The following sections summarize the various settings. For a complete description of the schema, navigate to *CppProperties_schema.json*, whose full path is given at the top of the code editor when *CppProperties.json* is open.
+Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a *CppProperties.json* file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. For more information about how to add configurations in an Open Folder project, see [Open Folder projects for C++](open-folder-projects-cpp.md). The following sections summarize the various settings. For a complete description of the schema, navigate to *CppProperties_schema.json*, whose full path is given at the top of the code editor when *CppProperties.json* is open.
 
 ## Configuration properties
 
@@ -28,7 +28,7 @@ A configuration may have any of the following properties:
 
 The code editor shows the available options when you start to type:
 
-![Open Folder IntelliSense](media/open-folder-intellisense-mode.png "Open Folder IntelliSense")
+![Screenshot of the IntelliSense pop-up in the editor.](media/open-folder-intellisense-mode.png "Open Folder IntelliSense")
 
 These are the supported values:
 
@@ -156,7 +156,7 @@ If your project has an include folder and also includes *windows.h* and other co
 
 If you are not seeing the IntelliSense that you expect, you can troubleshoot by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Advanced** and setting **Enable Logging** to **`true`**. To start with, try setting **Logging Level** to 5, and **Logging Filters** to 8.
 
-![Diagnostic logging](media/diagnostic-logging.png)
+![Screenshot of the Diagnostic logging settings in the Options dialog.](media/diagnostic-logging.png)
 
 Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log**. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *CppProperties.json*, try closing the folder and deleting the *.vs* sub-folder which contains cached browsing data.
 

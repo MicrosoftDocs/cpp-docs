@@ -2,7 +2,7 @@
 description: "Learn more about: concurrency namespace Operators"
 title: "concurrency namespace Operators"
 ms.date: "11/04/2016"
-f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency:[operator&amp;&amp"]
+f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency::operator&&"]
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 ---
 # concurrency namespace Operators
@@ -26,7 +26,7 @@ ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
    :::column-end:::
 :::row-end:::
 
-## <a name="operator_lor"></a> operator&#124;&#124; Operator
+## <a name="operator_lor"></a> `operator||` Operator
 
 Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.
 
@@ -70,7 +70,7 @@ A task that completes successfully when either of the input tasks has completed 
 
 If both of the tasks are canceled or throw exceptions, the returned task will complete in the canceled state, and one of the exceptions, if any are encountered, will be thrown when you call `get()` or `wait()` on that task.
 
-## <a name="operator_amp_amp"></a> operator&amp;&amp; Operator
+## <a name="operator_amp_amp"></a> `operator&&` Operator
 
 Creates a task that will complete successfully when both of the tasks supplied as arguments complete successfully.
 
@@ -195,7 +195,7 @@ Two concurrent vectors are equal if they have the same number of elements and th
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_lt"></a> operator&lt; Operator
+## <a name="operator_lt"></a> `operator<` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.
 
@@ -233,7 +233,7 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_lt_eq"></a> operator&lt;= Operator
+## <a name="operator_lt_eq"></a> `operator<=` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.
 
@@ -271,7 +271,7 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_gt"></a> operator&gt; Operator
+## <a name="operator_gt"></a> `operator>` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.
 
@@ -309,7 +309,7 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## <a name="operator_gt_eq"></a> operator&gt;= Operator
+## <a name="operator_gt_eq"></a> `operator>=` Operator
 
 Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.
 

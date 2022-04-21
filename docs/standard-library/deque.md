@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;deque&gt;"
-title: "&lt;deque&gt;"
+description: "Learn more about: <deque>"
+title: "<deque>"
 ms.date: "11/04/2016"
 f1_keywords: ["<deque>"]
 helpviewer_keywords: ["deque header"]
 ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
 ---
-# &lt;deque&gt;
+# `<deque>`
 
 Defines the container class template deque and several supporting templates.
 

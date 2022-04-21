@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Output File Stream Member Functions"
 title: "Output File Stream Member Functions"
-ms.date: "11/04/2016"
+ms.date: "08/25/2021"
 helpviewer_keywords: ["output streams [C++], member functions"]
-ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
 ---
 # Output File Stream Member Functions
 
@@ -11,23 +10,23 @@ Output stream member functions have three types: those that are equivalent to ma
 
 ## The open Function for Output Streams
 
-To use an output file stream ([ofstream](../standard-library/basic-ofstream-class.md)), you must associate that stream with a specific disk file in the constructor or the `open` function. If you use the `open` function, you can reuse the same stream object with a series of files. In either case, the arguments describing the file are the same.
+To use an output file stream ([`ofstream`](../standard-library/basic-ofstream-class.md)), you must associate that stream with a specific disk file in the constructor or the `open` function. If you use the `open` function, you can reuse the same stream object with a series of files. In either case, the arguments describing the file are the same.
 
-When you open the file associated with an output stream, you generally specify an `open_mode` flag. You can combine these flags, which are defined as enumerators in the `ios` class, with the bitwise OR ( &#124; ) operator. See [ios_base::openmode](../standard-library/ios-base-class.md#openmode) for a list of the enumerators.
+When you open the file associated with an output stream, you generally specify an `open_mode` flag. You can combine these flags, which are defined as enumerators in the `ios` class, with the bitwise OR ( `|` ) operator. See [`ios_base::openmode`](../standard-library/ios-base-class.md#openmode) for a list of the enumerators.
 
 Three common output stream situations involve mode options:
 
 - Creating a file. If the file already exists, the old version is deleted.
 
    ```cpp
-   ostream ofile("FILENAME");
+   ofstream ofile("FILENAME");
    // Default is ios::out
 
    ofstream ofile("FILENAME", ios::out);
    // Equivalent to above
    ```
 
-- Appending records to an existing file or creating one if it does not exist.
+- Appending records to an existing file or creating one if it doesn't exist.
 
    ```cpp
    ofstream ofile("FILENAME", ios::app);
@@ -46,9 +45,9 @@ Three common output stream situations involve mode options:
    // When ofile goes out of scope it is destroyed.
    ```
 
-## The put
+## The `put` function
 
-The **put** function writes one character to the output stream. The following two statements are the same by default, but the second is affected by the stream's format arguments:
+The `put` function writes one character to the output stream. The following two statements are the same by default, but the second is affected by the stream's format arguments:
 
 ```cpp
 cout.put('A');
@@ -57,7 +56,7 @@ cout.put('A');
 cout <<'A'; // Format arguments 'width' and 'fill' apply
 ```
 
-## The write
+## The `write` function
 
 The `write` function writes a block of memory to an output file stream. The length argument specifies the number of bytes written. This example creates an output file stream and writes the binary value of the `Date` structure to it:
 
@@ -80,11 +79,11 @@ int main( )
 }
 ```
 
-The `write` function does not stop when it reaches a null character, so the complete class structure is written. The function takes two arguments: a **`char`** pointer and a count of characters to write. Note the required cast to **`char`**<strong>\*</strong> before the address of the structure object.
+The `write` function doesn't stop when it reaches a `NULL` character, so the complete class structure is written. The function takes two arguments: a **`char`** pointer and a count of characters to write. Note the required cast to **`char *`** before the address of the structure object.
 
 ## The seekp and tellp Functions
 
-An output file stream keeps an internal pointer that points to the position where data is to be written next. The `seekp` member function sets this pointer and thus provides random-access disk file output. The `tellp` member function returns the file position. For examples that use the input stream equivalents to `seekp` and `tellp`, see [The seekg and tellg Functions](../standard-library/input-stream-member-functions.md).
+An output file stream keeps an internal pointer that points to the position where data is to be written next. The `seekp` member function sets this pointer and thus provides random-access disk file output. The `tellp` member function returns the file position. For examples that use the input stream equivalents to `seekp` and `tellp`, see [The `seekg` and `tellg` Functions](../standard-library/input-stream-member-functions.md).
 
 ## The close Function for Output Streams
 
@@ -98,14 +97,14 @@ Use these member functions to test for errors while writing to a stream:
 
 |Function|Return value|
 |--------------|------------------|
-|[bad](basic-ios-class.md#bad)|Returns **`true`** if there is an unrecoverable error.|
-|[fail](basic-ios-class.md#fail)|Returns **`true`** if there is an unrecoverable error or an "expected" condition, such as a conversion error, or if the file is not found. Processing can often resume after a call to `clear` with a zero argument.|
-|[good](basic-ios-class.md#good)|Returns **`true`** if there is no error condition (unrecoverable or otherwise) and the end-of-file flag is not set.|
-|[eof](basic-ios-class.md#eof)|Returns **`true`** on the end-of-file condition.|
-|[clear](basic-ios-class.md#clear)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
-|[rdstate](basic-ios-class.md#rdstate|Returns the current error state.|
+|[`bad`](basic-ios-class.md#bad)|Returns **`true`** if there's an unrecoverable error.|
+|[`fail`](basic-ios-class.md#fail)|Returns **`true`** if there's an unrecoverable error or an "expected" condition, such as a conversion error, or if the file isn't found. Processing can often resume after a call to `clear` with a zero argument.|
+|[`good`](basic-ios-class.md#good)|Returns **`true`** if there's no error condition (unrecoverable or otherwise) and the end-of-file flag isn't set.|
+|[`eof`](basic-ios-class.md#eof)|Returns **`true`** on the end-of-file condition.|
+|[`clear`](basic-ios-class.md#clear)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
+|[`rdstate`](basic-ios-class.md#rdstate|Returns the current error state.|
 
-The **!** operator is overloaded to perform the same function as the `fail` function. Thus the expression:
+The **`!`** operator is overloaded to perform the same function as the `fail` function. Thus the expression:
 
 ```cpp
 if(!cout)...
@@ -117,7 +116,7 @@ is equivalent to:
 if(cout.fail())...
 ```
 
-The **void\*()** operator is overloaded to be the opposite of the **!** operator; thus the expression:
+The **`void*()`** operator is overloaded to be the opposite of the **`!`** operator; thus the expression:
 
 ```cpp
 if(cout)...
@@ -129,7 +128,7 @@ is equal to:
 if(!cout.fail())...
 ```
 
-The **void\*()** operator is not equivalent to `good` because it does not test for the end of file.
+The **`void*()`** operator isn't equivalent to `good` because it doesn't test for the end of file.
 
 ## See also
 

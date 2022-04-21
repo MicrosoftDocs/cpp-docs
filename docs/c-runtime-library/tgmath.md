@@ -1,8 +1,8 @@
 ---
 title: "Type-generic math"
-description: "Describes macros in <tgmath.h> that make it easier to write C code that calls the right math function, based on argument type." 
+description: "Describes macros in <tgmath.h> that make it easier to write C code that calls the correct math function, based on argument type." 
 ms.topic: "conceptual"
-ms.date: "12/10/2020"
+ms.date: "6/28/2021"
 helpviewer_keywords: ["CRT tgmath.h"]
 ---
 
@@ -10,7 +10,7 @@ helpviewer_keywords: ["CRT tgmath.h"]
 
 For ISO C Standard 11 (C11) and later, the `<tgmath.h>` header, in addition to including `<math.h>` and `<complex.h>`, provides macros that invoke a corresponding math function based on the types of the parameters.
 
-C runtime library math functions come in real and complex variants. Each variant comes in three flavors, depending on the type of the argument: `float`, `double`, and `long double`. Because C doesn't support overloading like C++ does, each variant has a different name. For example, to get the absolute value of a real floating-point value, you'd call either `fabsf`, `fabs`, or `fabsl` depending on whether you're passing a `float`, `double`, or `long double` value, respectively. To get the complex absolute value, you'd call one of `cabsf`, `cabs`, or `cabsl` depending on whether you're passing a `float`, `double`, and `long double`complex value, respectively. If the arguments do not match any of the above mentioned types, the function is chosen as though the arguments were doubles.
+C runtime library math functions come in real and complex variants. Each variant comes in three flavors, depending on the type of the argument: `float`, `double`, and `long double`. Because C doesn't support overloading like C++ does, each variant has a different name. For example, to get the absolute value of a real floating-point value, you'd call either `fabsf`, `fabs`, or `fabsl` depending on whether you're passing a `float`, `double`, or `long double` value, respectively. To get the complex absolute value, you'd call one of `cabsf`, `cabs`, or `cabsl` depending on whether you're passing a `float`, `double`, and `long double` complex value, respectively. If the arguments do not match any of the above mentioned types, the function is chosen as though the arguments were doubles.
 
 `<tgmath.h>` contains macros that simplify the selection of the right math function to call. The macros examine the type they're passed and then call the right function. For example, the `sqrt` macro binds `sqrt(9.9f)` to `sqrtf()`, but it binds `sqrt(9.9)` to `sqrt()`. If at least one macro argument for a generic parameter is complex, then the macro binds to a complex function; otherwise, it invokes a real function.
 
@@ -85,9 +85,9 @@ The following table lists the macros that are available in `<tgmath.h>` and what
 
 ## Requirements
 
-[std:c++11](../build/reference/std-specify-language-standard-version.md) or later is required.
+Compile with [`/std:c11`](../build/reference/std-specify-language-standard-version.md).
 
-Windows SDK version 10.0.20201.0 or later. This is currently an Insider build which you can download from [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK). See [C11 and C17: Getting Started](https://devblogs.microsoft.com/cppblog/c11-and-c17-standard-support-arriving-in-msvc/#c11-and-c17-getting-started) for instructions on installing and using this SDK.
+Windows SDK 10.0.20348.0 (version 2104) or later. See [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) to download the latest SDK. For instructions to install and use the SDK for C11 and C17 development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
 
 ## See also
 

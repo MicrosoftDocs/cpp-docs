@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;map&gt;"
-title: "&lt;map&gt;"
+description: "Learn more about: <map>"
+title: "<map>"
 ms.date: "11/04/2016"
 f1_keywords: ["<map>"]
 helpviewer_keywords: ["map header"]
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
 ---
-# &lt;map&gt;
+# `<map>`
 
 Defines the container class templates map and multimap and their supporting templates.
 

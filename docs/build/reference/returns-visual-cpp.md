@@ -1,29 +1,29 @@
 ---
-description: "Learn more about: &lt;returns&gt;"
-title: "&lt;returns> (C++ Documentation Comments)"
-ms.date: "11/04/2016"
+description: "Learn more about: XML documentation tag <returns>"
+title: "<returns> (C++ Documentation Comments)"
+ms.date: 12/03/2021
 f1_keywords: ["<returns>"]
 helpviewer_keywords: ["returns C++ XML tag", "<returns> C++ XML tag"]
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
 ---
-# &lt;returns&gt;
+# `<returns>` documentation tag
 
-The \<returns> tag should be used in the comment for a method declaration to describe the return value.
+The `<returns>` tag should be used in the comment for a method declaration to describe the return value.
 
 ## Syntax
 
-```
-<returns>description</returns>
+```cpp
+/// <returns>description</returns>
 ```
 
-#### Parameters
+### Parameters
 
-*description*<br/>
+*`description`*\
 A description of the return value.
 
 ## Remarks
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -42,4 +42,4 @@ public:
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)

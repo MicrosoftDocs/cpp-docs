@@ -2,7 +2,7 @@
 description: "Learn more about: Walkthrough: Creating a Standard C++ Program (C++)"
 title: "Walkthrough: Creating a Standard C++ Program (C++)"
 ms.custom: "get-started-article"
-ms.date: "04/25/2019"
+ms.date: 10/27/2021
 helpviewer_keywords: ["command-line applications [C++], standard", "standard applications [C++]"]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
 ---
@@ -13,7 +13,7 @@ You can use Visual Studio to create Standard C++ programs. By following the step
 You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the C++ Standard Library.
 
 > [!NOTE]
-> If compliance with a specific version of the C++ language standard (i.e. C++14 or C++17) is required, use the `/std:c++14` or `/std:c++17` compiler option. (Visual Studio 2017 and later.)
+> If conformance with a specific version of the C++ language standard (for example, C++14, C++17, or C++20) is required, use the **`/std:c++14`**, **`/std:c++17`**, or **`/std:c++20`** compiler option. (Visual Studio 2017 and later.)
 
 ## Prerequisites
 
@@ -23,9 +23,9 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a C++ project in Visual Studio 2019
+### To create a C++ project in Visual Studio
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 

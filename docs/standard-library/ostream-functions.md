@@ -1,14 +1,14 @@
 ---
-description: "Learn more about: &lt;ostream&gt; functions"
-title: "&lt;ostream&gt; functions"
+description: "Learn more about: <ostream> functions"
+title: "<ostream> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["ostream/std::swap", "ostream/std::endl", "ostream/std::ends", "ostream/std::flush"]
 ms.assetid: d6e56cc0-c8df-4dbe-be10-98e14c35ed3a
 helpviewer_keywords: ["std::swap [C++]", "std::endl [C++]", "std::ends [C++]", "std::flush [C++]"]
 ---
-# &lt;ostream&gt; functions
+# `<ostream>` functions
 
-These are the global template functions defined in &lt;ostream&gt;. For member functions, see the [basic_ostream Class](basic-ostream-class.md) documentation.
+These are the global template functions defined in `<ostream>`. For member functions, see the [basic_ostream Class](basic-ostream-class.md) documentation.
 
 [endl](#endl)\
 [ends](#ends)\

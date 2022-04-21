@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: Visual C++ What&#39;s New 2003 through 2015"
-title: "Visual C++ What&#39;s New 2003 through 2015"
+description: "Learn more about: Visual C++ What's New 2003 through 2015"
+title: "Visual C++ What's New 2003 through 2015"
 ms.date: "07/02/2019"
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
 ---
-# Visual C++ What&#39;s New 2003 through 2015
+# Visual C++ What's New 2003 through 2015
 
 This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual Studio.
 
@@ -37,7 +37,7 @@ Although these differences can affect your source code or other build artifacts,
     Command line warning  D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
    ```
 
-   The option was usually used in order to allow nonstandard code that uses loop variables after the point where, according to the standard, they should have gone out of scope. It was only necessary when you are compiling with the `/Za` option, since without `/Za`, using a for loop variable after the end of the loop is always allowed. If you don't care about standards conformance (for example, if your code isn't meant to portable to other compilers), you could turn off the `/Za` option (or set the **Disable Language Extensions** property to **No**). If you do care about writing portable, standards-compliant code, you should rewrite your code so that it conforms to the standard by moving the declaration of such variables to a point outside the loop.
+   The option was usually used in order to allow nonstandard code that uses loop variables after the point where, according to the standard, they should have gone out of scope. It was only necessary when you are compiling with the `/Za` option, since without `/Za`, using a for loop variable after the end of the loop is always allowed. If you don't care about standards conformance (for example, if your code isn't meant to portable to other compilers), you could turn off the `/Za` option (or set the **Disable Language Extensions** property to **No**). If you do care about writing portable, standards-conformant code, you should rewrite your code so that it conforms to the standard by moving the declaration of such variables to a point outside the loop.
 
    ```cpp
     // zc_forScope.cpp
@@ -122,7 +122,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   The current compiler correctly gives an error, because the template parameter type doesn't match the template argument (the parameter is a pointer to a const member, but the function f is non-const):
+   The current compiler correctly gives an error, because the template parameter type does not match the template argument (the parameter is a pointer to a const member, but the function f is non-const):
 
    ```Output
     error C2893: Failed to specialize function template 'void S2::f(void)'note: With the following template arguments:note: 'C=S1'note: 'Function=S1::f'
@@ -581,7 +581,7 @@ Although these differences can affect your source code or other build artifacts,
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'
    ```
 
-   Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
+   Additionally, although the compiler does not give a specific diagnostic, inline operator new is considered ill-formed.
 
 - **Calling 'operator *type*()' (user-defined conversion) on non-class types**  Previous versions of the compiler allowed 'operator *type*()' to be called on non-class types while silently ignoring it. This old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2228 instead.
 
@@ -1008,16 +1008,42 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
+- **Removal of `pow(T, int)` unrolling optimization**
+
+   Previous versions of the C++ standard library defined a `pow(T, int)` function template that would unroll a `pow` function call into a series of multiplication operations. This technique would accrue a large amount of inaccuracy due to the nature of floating point operations, causing end results that could be significantly inaccurate. In Visual Studio 2015 Update 1, this behavior was removed to avoid unintentional loss of accuracy when using the `pow` function. However, this version of `pow` was much faster than the correct calculation. If this change causes a significant performance regression and your project does not require precise floating point results (for example, your project already compiles with /fp:fast), consider replacing calls to `pow` with this workaround function:
+
+   ```cpp
+   template <class T> 
+   inline T pow_int(T x, int y) throw() {
+       unsigned int n;
+       if (y >= 0) {
+           n = (unsigned int)(y);
+       } else {
+           n = (unsigned int)(-y);
+       }
+       for (T z = T(1); ; x *= x) {
+           if ((n & 1) != 0) {
+               z *= x;
+           }
+           if ((n >>= 1) == 0) {
+               return (y < 0 ? T(1) / z : z);
+           }
+       }
+   }
+   ```
+
+   This implementation is identical to what was included in previous versions of Visual Studio.
+
 ### <a name="VS_Update2"></a> Conformance Improvements in Visual Studio 2015 Update 2
 
 - **Additional warnings and errors might be issued as a result of partial support for expression SFINAE**
 
-   Previous versions of the compiler did not parse certain kinds of expressions inside **`decltype`** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
+   Previous versions of the compiler did not parse certain kinds of expressions inside **`decltype`** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in expressions that previous versions of the compiler did not parse.
 
    When this new behavior parses a **`decltype`** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
 
    ```Output
-    error C2039: 'type': is not a member of '`global namespace''
+    error C2039: 'type': is not a member of 'global namespace'
    ```
 
    Example 1:  use of an undeclared type (before)
@@ -1185,7 +1211,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Forward declaration of enum is not allowed in WinRT code** (affects `/ZW` only)
 
-   Code compiled for the Windows Runtime (WinRT) doesn't allow **`enum`** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
+   Code compiled for the Windows Runtime (WinRT) does not allow **`enum`** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
 
    ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -1883,7 +1909,7 @@ The addition of the YMMWORD data type supports the 256-bit multimedia operands t
 
 ### Visual C++ Integrated Development Environment (IDE)
 
-- Dialog boxes that are created in ATL, MFC, and Win32 applications now comply with the Windows Vista style guidelines. When you create a new project by using Visual Studio 2008, all dialog boxes that you insert into your application will comply with the Windows Vista style guideline. If you recompile a project that you created with an earlier version of Visual Studio, any existing dialog boxes will maintain the same look that they previously had. For more information about how to insert dialog boxes into your application, see **Dialog Editor**.
+- Dialog boxes that are created in ATL, MFC, and Win32 applications now conform to the Windows Vista style guidelines. When you create a new project by using Visual Studio 2008, all dialog boxes that you insert into your application will conform to the Windows Vista style guideline. If you recompile a project that you created with an earlier version of Visual Studio, any existing dialog boxes will maintain the same look that they previously had. For more information about how to insert dialog boxes into your application, see **Dialog Editor**.
 
 - The **ATL Project** wizard now has an option to register components for all users. Beginning with Visual Studio 2008, the COM components and type libraries that are created by the **ATL Project** wizard are registered in the HKEY_CURRENT_USER node of the registry unless you select **Register component for all users**.
 - The **ATL Project** wizard no longer provides an option to create attributed ATL projects. Beginning with Visual Studio 2008, the **ATL Project** wizard does not have an option to change the attributed status of a new project. All new ATL projects that the wizard creates are now unattributed.
@@ -1979,7 +2005,7 @@ __sptr, __uptr
 
 The compiler has breaking changes in this release.
 
-- `64-bit native and cross-compilers.
+- 64-bit native and cross-compilers.
 - `/analyze` (Enterprise Code Analysis) compiler option has been added.
 - `/bigobj` compiler option has been added.
 - `/clr:pure`, `/clr:safe`, and `/clr:oldSyntax` have been added. (Later deprecated in Visual Studio 2015 and removed in Visual Studio 2017.)

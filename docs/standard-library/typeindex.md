@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;typeindex&gt;"
-title: "&lt;typeindex&gt;"
+description: "Learn more about: <typeindex>"
+title: "<typeindex>"
 ms.date: "11/04/2016"
 f1_keywords: ["<typeindex>"]
 ms.assetid: a9551137-f74b-4f02-af64-ff00214cea1f
 ---
-# &lt;typeindex&gt;
+# `<typeindex>`
 
 Include the standard header \<typeindex> to define a class and function that support the indexing of objects of class [type_info](../cpp/type-info-class.md).
 

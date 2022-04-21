@@ -157,7 +157,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 
 ### Parameters
 
-[in] *CDC&#42;*<br/>
+[in] *`CDC*`*<br/>
 [in] *CRect*<br/>
 
 ### Return Value

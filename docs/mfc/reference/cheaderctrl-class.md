@@ -391,13 +391,11 @@ This method sends the [HDM_GETFOCUSEDITEM](/windows/win32/Controls/hdm-getfocuse
 
 ### Example
 
-The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
+The first code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
-### Example
-
-The following code example demonstrates the `SetFocusedItem` and `GetFocusedItem` methods. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. The following example sets and then confirms the last column header as the focus item.
+The next code example demonstrates the `SetFocusedItem` and `GetFocusedItem` methods. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. The following example sets and then confirms the last column header as the focus item.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]
 
@@ -491,13 +489,11 @@ This method sends the [HDM_GETITEMDROPDOWNRECT](/windows/win32/Controls/hdm-geti
 
 ### Example
 
-The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
+The first code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
-### Example
-
-The following code example demonstrates the `GetItemDropDownRect` method. In an earlier section of the code, we created a header control with five columns. The following code example draws a 3D rectangle around the location on the first column that is reserved for the header drop-down button.
+The next code example demonstrates the `GetItemDropDownRect` method. In an earlier section of the code, we created a header control with five columns. The following code example draws a 3D rectangle around the location on the first column that is reserved for the header drop-down button.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_13.cpp)]
 
@@ -582,13 +578,11 @@ This method sends the [HDM_GETOVERFLOWRECT](/windows/win32/Controls/hdm-getoverf
 
 ### Example
 
-The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
+The first code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
-### Example
-
-The following code example demonstrates the `GetOverflowRect` method. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. If some columns are not visible, the header control draws an overflow button. The following code example draws a 3D rectangle around the location of the overflow button.
+The next code example demonstrates the `GetOverflowRect` method. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. If some columns are not visible, the header control draws an overflow button. The following code example draws a 3D rectangle around the location of the overflow button.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_15.cpp)]
 
@@ -615,13 +609,11 @@ This method sends the [HDM_HITTEST](/windows/win32/Controls/hdm-hittest) message
 
 ### Example
 
-The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
+The first code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
-### Example
-
-The following code example demonstrates the `HitTest` method. In an earlier section of this code example, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. This example reports the index of the column if it is visible and -1 if the column is not visible.
+The next code example demonstrates the `HitTest` method. In an earlier section of this code example, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. This example reports the index of the column if it is visible and -1 if the column is not visible.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_16.cpp)]
 
@@ -770,13 +762,11 @@ This method sends the [HDM_SETFOCUSEDITEM](/windows/win32/Controls/hdm-setfocuse
 
 ### Example
 
-The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
+The first code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]
 
-### Example
-
-The following code example demonstrates the `SetFocusedItem` and `GetFocusedItem` methods. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. The following example sets and then confirms the last column header as the focus item.
+The next code example demonstrates the `SetFocusedItem` and `GetFocusedItem` methods. In an earlier section of the code, we created a header control with five columns. However, you can drag a column separator so that the column is not visible. The following example sets and then confirms the last column header as the focus item.
 
 [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]
 

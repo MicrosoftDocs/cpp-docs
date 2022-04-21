@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: allocator&lt;void&gt; Class"
-title: "allocator&lt;void&gt; Class"
+description: "Learn more about: allocator<void> Class"
+title: "allocator<void> Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::allocator<void>", "allocator<void>"]
 helpviewer_keywords: ["allocator<void> class"]
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
 ---
-# allocator&lt;void&gt; Class
+# `allocator<void>` Class
 
 A specialization of the class template allocator to type **`void`**, defining the types that make sense in this context.
 

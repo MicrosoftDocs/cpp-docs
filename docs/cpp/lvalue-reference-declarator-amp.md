@@ -1,20 +1,19 @@
 ---
-description: "Learn more about: Lvalue Reference Declarator: &amp;"
-title: "Lvalue Reference Declarator: &amp;"
+description: "Learn more about: Lvalue reference declarator: &"
+title: "Lvalue reference declarator: &"
 ms.date: "11/04/2016"
 f1_keywords: ["&"]
 helpviewer_keywords: ["reference operator", "& operator [C++], reference operator"]
 ms.assetid: edf0513d-3dcc-4663-b276-1269795dda51
 ---
-# Lvalue Reference Declarator: &amp;
+# Lvalue reference declarator: `&`
 
 Holds the address of an object but behaves syntactically like an object.
 
 ## Syntax
 
-```
-type-id & cast-expression
-```
+*`lvalue-reference-type-id`*:\
+&emsp;*`type-specifier-seq`* **`&`** *`attribute-specifier-seq`*<sub>opt</sub> *`ptr-abstract-declarator`*<sub>opt</sub>
 
 ## Remarks
 
@@ -22,7 +21,7 @@ You can think of an lvalue reference as another name for an object. An lvalue re
 
 Any object whose address can be converted to a given pointer type can also be converted to the similar reference type. For example, any object whose address can be converted to type `char *` can also be converted to type `char &`.
 
-Do not confuse reference declarations with use of the [address-of operator](../cpp/address-of-operator-amp.md). When the `&`*identifier* is preceded by a type, such as **`int`** or **`char`**, *identifier* is declared as a reference to the type. When `&`*identifier* is not preceded by a type, the usage is that of the address-of operator.
+Don't confuse reference declarations with use of the [address-of operator](../cpp/address-of-operator-amp.md). When the `&`*identifier* is preceded by a type, such as **`int`** or **`char`**, *identifier* is declared as a reference to the type. When `&`*identifier* is not preceded by a type, the usage is that of the address-of operator.
 
 ## Example
 
@@ -65,7 +64,7 @@ Bill is 40
 
 ## See also
 
-[References](../cpp/references-cpp.md)<br/>
-[Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)<br/>
-[Reference-Type Function Returns](../cpp/reference-type-function-returns.md)<br/>
-[References to Pointers](../cpp/references-to-pointers.md)
+[References](../cpp/references-cpp.md)\
+[Reference-type function arguments](../cpp/reference-type-function-arguments.md)\
+[Reference-type function returns](../cpp/reference-type-function-returns.md)\
+[References to pointers](../cpp/references-to-pointers.md)

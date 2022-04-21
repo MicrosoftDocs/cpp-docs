@@ -25,9 +25,9 @@ LINK ignores /NATVIS when a PDB file is not created by using a [/DEBUG](debug-ge
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Command Line** property page in the **Linker** folder.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. Add the /NATVIS option to the **Additional Options** text box.
+1. Add the *`/NATVIS`* option to the **Additional Options** text box.
 
 ### To set this linker option programmatically
 

@@ -10,7 +10,7 @@ f1_keywords: ["_outpw", "_outpd", "_outp", "outp", "outpw", "outpd"]
 helpviewer_keywords: ["outpw function", "words", "_outpd function", "outpd function", "outp function", "ports, writing bytes at", "bytes, writing to ports", "words, writing to ports", "double words", "double words, writing to ports", "_outpw function", "_outp function"]
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
 ---
-# outp, outpw, _outp, _outpw, _outpd
+# `outp`, `outpw`, `_outp`, `_outpw`, `_outpd`
 
 Outputs, at a port, a byte (`outp`, `_outp`), a word (`outpw`, `_outpw`), or a double word (`_outpd`).
 
@@ -37,10 +37,10 @@ unsigned long _outpd(
 
 ### Parameters
 
-*port*\
+*`port`*\
 Port number.
 
-*data_byte, data_word*\
+*`data_byte`*, *`data_word`*\
 Output values.
 
 ## Return Value
@@ -49,7 +49,7 @@ The functions return the data output. There's no error return.
 
 ## Remarks
 
-The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *port* argument can be any unsigned integer in the range 0 - 65,535. *data_byte* can be any integer in the range 0 - 255. *data_word* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.
+The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *`port`* argument can be any unsigned integer in the range 0 - 65,535. *`data_byte`* can be any integer in the range 0 - 255. *`data_word`* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.
 
 Because these functions write directly to an I/O port, they can't be used in user-mode Windows code.
 

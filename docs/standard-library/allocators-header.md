@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;allocators&gt;"
-title: "&lt;allocators&gt;"
+description: "Learn more about: <allocators>"
+title: "<allocators>"
 ms.date: "11/04/2016"
 f1_keywords: ["<allocators>"]
 helpviewer_keywords: ["allocators header"]
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
 ---
-# &lt;allocators&gt;
+# `<allocators>`
 
 Defines several templates that help allocate and free memory blocks for node-based containers.
 

@@ -10,7 +10,7 @@ f1_keywords: ["memcmp", "wmemcmp"]
 helpviewer_keywords: ["wmemcmp function", "memcmp function"]
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
 ---
-# memcmp, wmemcmp
+# `memcmp`, `wmemcmp`
 
 Compares characters in two buffers.
 
@@ -31,35 +31,35 @@ int wmemcmp(
 
 ### Parameters
 
-*buffer1*<br/>
+*`buffer1`*<br/>
 First buffer.
 
-*buffer2*<br/>
+*`buffer2`*<br/>
 Second buffer.
 
-*count*<br/>
-Number of characters to compare. (Compares bytes for **memcmp**, wide characters for **wmemcmp**).
+*`count`*<br/>
+Number of characters to compare. (Compares bytes for **`memcmp`**, wide characters for **`wmemcmp`**).
 
 ## Return Value
 
 The return value indicates the relationship between the buffers.
 
-|Return value|Relationship of first *count* characters of buf1 and buf2|
+|Return value|Relationship of first *`count`* characters of `buf1` and `buf2`|
 |------------------|---------------------------------------------------------------|
-|< 0|*buffer1* less than *buffer2*|
-|0|*buffer1* identical to *buffer2*|
-|> 0|*buffer1* greater than *buffer2*|
+|< 0|*`buffer1`* less than *`buffer2`*|
+|0|*`buffer1`* identical to *`buffer2`*|
+|> 0|*`buffer1`* greater than *`buffer2`*|
 
 ## Remarks
 
-Compares the first *count* characters of *buffer1* and *buffer2* and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as **`unsigned char`** for **memcmp**, and as **`wchar_t`** for **wmemcmp**.
+Compares the first *`count`* characters of *`buffer1`* and *`buffer2`* and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as **`unsigned char`** for **`memcmp`**, and as **`wchar_t`** for **`wmemcmp`**.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**memcmp**|\<memory.h> or \<string.h>|
-|**wmemcmp**|\<wchar.h>|
+|**`memcmp`**|`<memory.h>` or `<string.h>`|
+|**`wmemcmp`**|`<wchar.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -118,9 +118,9 @@ int_arr1 is equal to int_arr2.
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memchr, wmemchr](memchr-wmemchr.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+[`_memccpy`](memccpy.md)<br/>
+[`memchr`, `wmemchr`](memchr-wmemchr.md)<br/>
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)<br/>
+[`memset`, `wmemset`](memset-wmemset.md)<br/>
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)<br/>
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>

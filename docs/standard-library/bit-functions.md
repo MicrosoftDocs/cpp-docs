@@ -1,28 +1,28 @@
 ---
-title: "&lt;bit&gt; functions"
+title: "<bit> functions"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits"
 ms.date: "08/28/2020"
 f1_keywords: ["bit/std::bit_cast", "bit/std::has_single_bit", "bit/std::bit_ceil", "bit/std::bit_floor", "bit/std::bit_width", "bit/std::rotl", "bit/std::rotr", "bit/std::countl_zero", "bit/std::countl_one","bit/std::countr_zero","bit/std::countr_one","bit/std::popcount"]
 helpviewer_keywords: ["std::bit [C++], bit_cast", "std::bit [C++], has_single_bit", "std::bit [C++], bit_ceil", "std::bit [C++], bit_floor", "std::bit [C++], bit_width", "std::bit [C++], rotl", "std::bit [C++], rotr", "std::bit [C++], countl_zero", "std::bit [C++], countl_one", "std::bit [C++], countr_zero", "std::bit [C++], countr_one", "std::bit [C++], popcount"]
 ---
-# &lt;bit&gt; functions
+# `<bit>` functions
 
-The \<bit> header includes the following non-member template functions:
+The `<bit>` header includes the following non-member template functions:
 
 | **Non-member functions** | **Description** |
 |--------|---------|
-|[bit_cast](#bit_cast) | Reinterpret the object representation from one type to another. |
-|[bit_ceil](#bit_ceil) | Find the smallest power of two greater than or equal to a value. |
-|[bit_floor](#bit_floor) | Find the largest power of two not greater than a value. |
-|[bit_width](#bit_width) | Find the smallest number of bits needed to represent a value. |
-|[countl_zero](#countl_zero) | Count the number of consecutive bits set to zero, starting from the most significant bit. |
-|[countl_one](#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
-|[countr_zero](#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
-|[countr_one](#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
-|[has_single_bit](#has_single_bit) | Check if a value has only a single bit set to one. This is the same as testing whether a value is a power of two. |
-|[popcount](#popcount) | Count the number of bits set to one. |
-|[rotl](#rotl) | Compute the result of a bitwise left rotation. |
-|[rotr](#rotr) | Compute the result of a bitwise right rotation. |
+|[`bit_cast`](#bit_cast) | Reinterpret the object representation from one type to another. |
+|[`bit_ceil`](#bit_ceil) | Find the smallest power of two greater than or equal to a value. |
+|[`bit_floor`](#bit_floor) | Find the largest power of two not greater than a value. |
+|[`bit_width`](#bit_width) | Find the smallest number of bits needed to represent a value. |
+|[`countl_zero`](#countl_zero) | Count the number of consecutive bits set to zero, starting from the most significant bit. |
+|[`countl_one`](#countl_one) | Count the number of consecutive bits set to one, starting from the most significant bit. |
+|[`countr_zero`](#countr_zero) | Count the number of consecutive bits set to zero, starting from the least significant bit. |
+|[`countr_one`](#countl_one) | Count the number of consecutive bits set to one, starting from the least significant bit. |
+|[`has_single_bit`](#has_single_bit) | Check if a value has only a single bit set to one. This is the same as testing whether a value is a power of two. |
+|[`popcount`](#popcount) | Count the number of bits set to one. |
+|[`rotl`](#rotl) | Compute the result of a bitwise left rotation. |
+|[`rotr`](#rotr) | Compute the result of a bitwise right rotation. |
 
 ## <a name="bit_cast"></a>`bit_cast`
 
@@ -61,14 +61,14 @@ int main()
     float f = std::numeric_limits<float>::infinity();
     int i = std::bit_cast<int>(f);
     std::cout << "float f = " << std::hex << f
-              << "\nstd::bit_cat<int>(f) = " << std::hex << i << '\n';
+              << "\nstd::bit_cast<int>(f) = " << std::hex << i << '\n';
     return 0;
 }
 ```
 
 ```Output
 float f = inf
-std::bit_cat<int>(f) = 7f800000
+std::bit_cast<int>(f) = 7f800000
 ```
 
 ### Remarks
@@ -87,10 +87,10 @@ This overload only participates in overload resolution if:
 
 This function template is `constexpr` if and only if `To`, `From`, and the types of their subobjects are:
 
-- not a union or pointer type
-- not a pointer to member type
-- not volatile-qualified
-- have no non-static data member that is a reference type
+- Not a union or pointer type
+- Not a pointer to member type
+- Not volatile-qualified
+- Have no non-static data member that is a reference type
 
 ## <a name="bit_ceil"></a>`bit_ceil`
 
@@ -103,7 +103,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -153,7 +153,7 @@ template< class T >
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -206,7 +206,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -258,7 +258,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -311,7 +311,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -364,7 +364,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -418,7 +418,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -471,12 +471,12 @@ template <class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
 
-`true` if `value` has only one bit set which also means that `value` is a power of two. Otherwise, `false`.
+`true` if `value` has only one bit set, which also means that `value` is a power of two. Otherwise, `false`.
 
 ### Example
 
@@ -525,7 +525,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to test.
 
 ### Return value
@@ -584,7 +584,7 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to rotate.
 
 *s*\
@@ -646,10 +646,10 @@ template<class T>
 
 ### Parameters
 
-*value*\
+*`value`*\
 The unsigned integer value to rotate.
 
-*s*\
+*`s`*\
 The number of right rotations to perform.
 
 ### Return value
@@ -699,12 +699,12 @@ This template function only participates in overload resolution if `T` is an uns
 
 ## Requirements
 
-**Header:** \<bit>
+**Header:** `<bit>`
 
 **Namespace:** std
 
-[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
+[`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
 
 ## See also
 
-[\<bit>](bit.md)
+[`<bit>`](bit.md)

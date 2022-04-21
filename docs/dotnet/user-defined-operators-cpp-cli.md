@@ -53,8 +53,8 @@ You can define the following operators:
 |^|Binary|
 |false|Unary|
 |true|Unary|
-|&#124;|Binary|
-|&#124;&#124;|Binary|
+| `|` | Binary |
+| `||` | Binary |
 |~|Unary|
 
 ## Example: User-defined operators

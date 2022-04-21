@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;variant&gt;"
-title: "&lt;variant&gt;"
+description: "Learn more about: <variant>"
+title: "<variant>"
 ms.date: "04/04/2019"
 f1_keywords: ["<variant>"]
 helpviewer_keywords: ["<variant>"]
 ---
-# &lt;variant&gt;
+# `<variant>`
 
 A variant object holds and manages a value. If the variant holds a value, that value’s type has to be one of the template argument types given to variant. These template arguments are called alternatives.
 

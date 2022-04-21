@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Template Specialization (C++)"
 title: "Template Specialization (C++)"
-ms.date: "11/04/2016"
+ms.date: 07/09/2021
 helpviewer_keywords: ["partial specialization of class templates"]
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
 ---
@@ -17,6 +17,8 @@ Class templates can be partially specialized, and the resulting class is still a
 
 ```cpp
 // partial_specialization_of_class_templates.cpp
+#include <stdio.h>
+
 template <class T> struct PTS {
    enum {
       IsPointer = 0,
@@ -40,14 +42,12 @@ template <class T, class U> struct PTS<T U::*> {
 
 struct S{};
 
-extern "C" int printf_s(const char*,...);
-
 int main() {
-   printf_s("PTS<S>::IsPointer == %d PTS<S>::IsPointerToDataMember == %d\n",
+   printf_s("PTS<S>::IsPointer == %d \nPTS<S>::IsPointerToDataMember == %d\n",
            PTS<S>::IsPointer, PTS<S>:: IsPointerToDataMember);
-   printf_s("PTS<S*>::IsPointer == %d PTS<S*>::IsPointerToDataMember ==%d\n"
+   printf_s("PTS<S*>::IsPointer == %d \nPTS<S*>::IsPointerToDataMember == %d\n"
            , PTS<S*>::IsPointer, PTS<S*>:: IsPointerToDataMember);
-   printf_s("PTS<int S::*>::IsPointer == %d PTS"
+   printf_s("PTS<int S::*>::IsPointer == %d \nPTS"
            "<int S::*>::IsPointerToDataMember == %d\n",
            PTS<int S::*>::IsPointer, PTS<int S::*>::
            IsPointerToDataMember);
@@ -55,9 +55,12 @@ int main() {
 ```
 
 ```Output
-PTS<S>::IsPointer == 0 PTS<S>::IsPointerToDataMember == 0
-PTS<S*>::IsPointer == 1 PTS<S*>::IsPointerToDataMember ==0
-PTS<int S::*>::IsPointer == 0 PTS<int S::*>::IsPointerToDataMember == 1
+PTS<S>::IsPointer == 0 
+PTS<S>::IsPointerToDataMember == 0
+PTS<S*>::IsPointer == 1 
+PTS<S*>::IsPointerToDataMember == 0
+PTS<int S::*>::IsPointer == 0 
+PTS<int S::*>::IsPointerToDataMember == 1
 ```
 
 ## Example: Partial specialization for pointer types
@@ -159,6 +162,7 @@ int main() {
    xp.add(&j);
    xp.add(p);
    xp.add(p + 1);
+   delete[] p;
    p = NULL;
    xp.add(p);
    xp.print();
@@ -285,23 +289,23 @@ public:
 };
 
 int main() {
-   Dictionary<char*, char*>* dict = new Dictionary<char*, char*>(10);
-   dict->print();
-   dict->add("apple", "fruit");
-   dict->add("banana", "fruit");
-   dict->add("dog", "animal");
-   dict->print();
+   Dictionary<const char*, const char*> dict(10);
+   dict.print();
+   dict.add("apple", "fruit");
+   dict.add("banana", "fruit");
+   dict.add("dog", "animal");
+   dict.print();
 
-   Dictionary<int, char*>* dict_specialized = new Dictionary<int, char*>(10);
-   dict_specialized->print();
-   dict_specialized->add(100, "apple");
-   dict_specialized->add(101, "banana");
-   dict_specialized->add(103, "dog");
-   dict_specialized->add(89, "cat");
-   dict_specialized->print();
-   dict_specialized->sort();
+   Dictionary<int, const char*> dict_specialized(10);
+   dict_specialized.print();
+   dict_specialized.add(100, "apple");
+   dict_specialized.add(101, "banana");
+   dict_specialized.add(103, "dog");
+   dict_specialized.add(89, "cat");
+   dict_specialized.print();
+   dict_specialized.sort();
    cout << endl << "Sorted list:" << endl;
-   dict_specialized->print();
+   dict_specialized.print();
 }
 ```
 

@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;new&gt; operators and enums"
-title: "&lt;new&gt; operators and enums"
+description: "Learn more about: <new> operators and enums"
+title: "<new> operators and enums"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 ---
-# &lt;new&gt; operators and enums
+# `<new>` operators and enums
 
 ## <a name="op_align_val_t"></a> enum align_val_t
 
@@ -59,7 +59,7 @@ The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
 
-The first function is called by an `delete[]` expression to render the value of *ptr* invalid. The function is replaceable because the program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of *ptr* that is null or that was returned by an earlier call to [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). The default behavior for a null value of *ptr* is to do nothing. Any other value of *ptr* must be a value returned earlier by a call as previously described. The default behavior for such a non-null value of *ptr* is to reclaim storage allocated by the earlier call. It is unspecified under what conditions part or all of such reclaimed storage is allocated by a subsequent call to [operator new](../standard-library/new-operators.md#op_new)(**size_t**), or to any of `calloc`(**size_t**), `malloc`(**size_t**), or `realloc`( **`void`**<strong>\*</strong>, **size_t**).
+The first function is called by an `delete[]` expression to render the value of *ptr* invalid. The function is replaceable because the program can define a function with this function signature that replaces the default version defined by the C++ Standard Library. The required behavior is to accept a value of *ptr* that is null or that was returned by an earlier call to [`operator new[]`](../standard-library/new-operators.md#op_new_arr)(**size_t**). The default behavior for a null value of *ptr* is to do nothing. Any other value of *ptr* must be a value returned earlier by a call as previously described. The default behavior for such a non-null value of *ptr* is to reclaim storage allocated by the earlier call. It is unspecified under what conditions part or all of such reclaimed storage is allocated by a subsequent call to [operator new](../standard-library/new-operators.md#op_new)(**size_t**), or to any of `calloc`(**size_t**), `malloc`(**size_t**), or `realloc`( **`void`**<strong>\*</strong>, **size_t**).
 
 The second function is called by a placement `delete[]` expression corresponding to a `new[]` expression of the form `new[]`(**std::size_t**). It does nothing.
 
@@ -67,7 +67,7 @@ The third function is called by a placement delete expression corresponding to a
 
 ### Example
 
-See [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) for examples of the use of `operator delete[]`.
+See [`operator new[]`](../standard-library/new-operators.md#op_new_arr) for examples of the use of `operator delete[]`.
 
 ## <a name="op_new"></a> operator new
 
@@ -194,7 +194,7 @@ The second function is called by a placement `new[]` expression to allocate `cou
 
 The third function is called by a placement `new[]` expression, of the form **`new`** ( *args*) **T**[ **N**]. Here, *args* consists of a single object pointer. The function returns `ptr`.
 
-To free storage allocated by `operator new[]`, call [operator delete&#91;&#93;](../standard-library/new-operators.md#op_delete_arr).
+To free storage allocated by `operator new[]`, call [`operator delete[]`](../standard-library/new-operators.md#op_delete_arr).
 
 For information on throwing or nonthrowing behavior of new, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
 

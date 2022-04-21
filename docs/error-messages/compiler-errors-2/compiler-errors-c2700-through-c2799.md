@@ -53,7 +53,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2734](compiler-error-c2734.md)|'*identifier*': 'const' object must be initialized if not 'extern'|
 |[Compiler error C2735](compiler-error-c2735.md)|'*keyword*' keyword is not permitted in formal parameter type specifier|
 |[Compiler error C2736](compiler-error-c2736.md)|'*keyword*' keyword is not permitted in cast|
-|Compiler error C2737|'*identifier*': 'constexpr' object must be initialized|
+|Compiler error C2737|'*identifier*': `const`/`constexpr` object must be initialized|
 |[Compiler error C2738](compiler-error-c2738.md)|'operator *type*': is ambiguous or is not a member of '*class*'|
 |[Compiler error C2739](compiler-error-c2739.md)|'*number*': explicit managed/WinRT array dimensions must be between 1 and 32|
 |Compiler error C2740|value of operand '*number*' is out of range '*lower_bound* - *upper_bound*'|
@@ -120,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

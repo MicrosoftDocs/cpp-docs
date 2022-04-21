@@ -1,12 +1,11 @@
 ---
-title: "&lt;bit&gt;"
+title: "<bit>"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits."
 ms.date: "08/28/2020"
 f1_keywords: ["<bit>"]
 helpviewer_keywords: ["bit header"]
 ---
-
-# &lt;bit&gt;
+# `<bit>`
 
 Defines functions to access, manipulate, and process individual bits and sequences of bits.
 
@@ -18,7 +17,7 @@ For example, there are functions to rotate bits, find the number of consecutive 
 
 **Namespace:** std
 
-[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
+[`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
 
 ## Members
 

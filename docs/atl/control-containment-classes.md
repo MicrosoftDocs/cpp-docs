@@ -20,7 +20,7 @@ The following classes provide containment support for hosting controls:
 
 ## Related Articles
 
-[ATL Control Containment FAQ](../atl/atl-control-containment-faq.md)
+[ATL Control Containment FAQ](../atl/atl-control-containment-faq.yml)
 
 ## See also
 

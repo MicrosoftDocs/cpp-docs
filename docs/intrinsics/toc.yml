@@ -1,3 +1,4 @@
+items: 
 - name: Compiler intrinsics and assembly language
   href: ../intrinsics/index.yml
 - name: Compiler intrinsics
@@ -56,6 +57,12 @@
           href: ../intrinsics/fastfail.md
         - name: __faststorefence
           href: ../intrinsics/faststorefence.md
+        - name: Floating-point fast conversion functions
+          href: ../intrinsics/fast-conversion-functions.md
+        - name: Floating-point saturation conversion functions
+          href: ../intrinsics/saturation-conversion-functions.md
+        - name: Floating-point sentinel conversion functions
+          href: ../intrinsics/sentinel-conversion-functions.md
         - name: __getcallerseflags
           href: ../intrinsics/getcallerseflags.md
         - name: __halt

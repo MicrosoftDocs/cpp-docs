@@ -80,7 +80,7 @@ class uint_3;
 |uint_3::operator*=||
 |uint_3::operator/=||
 |uint_3::operator^=||
-|uint_3::operator&#124;=||
+|uint_3::operator\|=||
 |uint_3::operator~||
 |uint_3::operator++||
 |uint_3::operator+=||

@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;limits&gt;"
-title: "&lt;limits&gt;"
+description: "Learn more about: <limits>"
+title: "<limits>"
 ms.date: "11/04/2016"
 f1_keywords: ["<limits>"]
 helpviewer_keywords: ["limits header"]
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
 ---
-# &lt;limits&gt;
+# `<limits>`
 
 Defines the class template `numeric_limits` and two enumerations concerning floating-point representations and rounding.
 

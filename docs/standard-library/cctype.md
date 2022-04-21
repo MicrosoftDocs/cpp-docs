@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;cctype&gt;"
-title: "&lt;cctype&gt;"
+description: "Learn more about: <cctype>"
+title: "<cctype>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cctype>"]
 helpviewer_keywords: ["cctype header"]
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
 ---
-# &lt;cctype&gt;
+# `<cctype>`
 
 Includes the Standard C library header \<ctype.h> and adds the associated names to the `std` namespace.
 

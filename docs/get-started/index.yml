@@ -1,0 +1,89 @@
+### YamlMime:Landing
+
+title: Visual Studio tutorials | C++ 
+summary: Create C++ apps with Visual Studio.
+
+metadata:
+  title: C++ development with Visual Studio
+  description: Create C++ apps by using Visual Studio.
+  ms.custom: vs-acquisition
+  ms.topic: landing-page
+  ms.date: 12/06/2021
+  author: corob-msft
+  ms.author: corob 
+  manager: markl
+  ms.prod: visual-cpp
+  ms.technology: vs-acquisition  
+  dev_langs:
+    - C++
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent: 
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Install C++ support in Visual Studio
+            url: ../build/vscpp-step-0-installation.md
+      - linkListType: get-started
+        links:
+          - text: Start a guided tour of Visual Studio
+            url: /visualstudio/get-started/visual-studio-ide
+      - linkListType: quickstart
+        links:
+          - text: Create a "Hello World" console app
+            url: ../build/vscpp-step-1-create.md
+          - text: Build and run your "Hello World" console app
+            url: ../build/vscpp-step-2-build.md
+      - linkListType: overview
+        links:
+          - text: Learn about the Modern C++ language
+            url: ../cpp/welcome-back-to-cpp-modern-cpp.md
+
+  # Card
+  - title: Create C and C++ apps in Visual Studio
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Create a console app
+            url: tutorial-console-cpp.md
+          - text: Create a Universal Windows Platform app 
+            url: /windows/uwp/cpp-and-winrt-apis/get-started
+          - text: Create a Windows Desktop app
+            url: /windows/desktop/learnwin32/learn-to-program-for-windows
+          - text: Create a Windows Desktop app with MFC
+            url: ../mfc/reference/creating-an-mfc-application.md
+          - text: Create a Windows DLL
+            url: ../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md
+          - text: Create a static library
+            url: ../build/walkthrough-creating-and-using-a-static-library-cpp.md
+          - text: Create a .NET component
+            url: ../dotnet/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md
+          - text: Create a DirectX game
+            url: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+
+  # Card
+  - title: Learn Visual Studio
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Open code from a repo
+            url: /visualstudio/get-started/tutorial-open-project-from-repo
+          - text: Write and edit code 
+            url: /visualstudio/get-started/tutorial-editor
+          - text: Compile and build 
+            url: /visualstudio/ide/compiling-and-building-in-visual-studio
+          - text: Debug your C++ code
+            url: /visualstudio/debugger/quickstart-debug-with-cplusplus
+          - text: Test your C++ code
+            url: /visualstudio/test/writing-unit-tests-for-c-cpp
+          - text: Compile C++ on the command line
+            url: ../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md
+          - text: Compile C on the command line
+            url: ../build/walkthrough-compile-a-c-program-on-the-command-line.md
+          - text: Compile C++/CX on the command line
+            url: ../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
+          - text: Compile C++/CLI on the command line
+            url: ../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md

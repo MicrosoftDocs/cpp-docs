@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;exception&gt;"
-title: "&lt;exception&gt;"
+description: "Learn more about: <exception>"
+title: "<exception>"
 ms.date: "11/04/2016"
 f1_keywords: ["<exception>"]
 helpviewer_keywords: ["exception header"]
 ms.assetid: 28900768-5dd7-4834-b907-5e37ab3407db
 ---
-# &lt;exception&gt;
+# `<exception>`
 
 Defines several types and functions related to the handling of exceptions. Exception handling is used in situations in which the system can recover from an error. It provides a means for control to be returned from a function to the program. The objective of incorporating exception handling is to increase the program's robustness while providing a way to recover from an error in an orderly fashion.
 

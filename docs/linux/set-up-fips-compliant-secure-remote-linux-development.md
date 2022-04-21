@@ -11,7 +11,7 @@ Linux support is available in Visual Studio 2017 and later. FIPS-compliant secur
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 Federal Information Processing Standard (FIPS) Publication 140-2 is a U.S. government standard for cryptographic modules. Implementations of the standard are validated by NIST. Windows has [validated support for FIPS-compliant cryptographic modules](/windows/security/threat-protection/fips-140-validation). In Visual Studio 2019 version 16.5 and later, you can use a secure, FIPS-compliant cryptographic connection to your Linux system for remote development.
 
@@ -99,11 +99,11 @@ You've successfully set up ssh, created and deployed encryption keys, and tested
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   ![Connection Manager](media/settings_connectionmanager.png)
+   ![Screenshot showing the Connection Manager dialog.](media/settings_connectionmanager.png)
 
    The **Connect to Remote System** window is displayed.
 
-   ![Connect to Remote System](media/connect.png)
+   ![Screenshot showing the Connect to Remote System window.](media/connect.png)
 
 1. In the **Connect to Remote System** dialog, enter the connection details of your remote machine.
 
@@ -124,7 +124,7 @@ You've successfully set up ssh, created and deployed encryption keys, and tested
 
    If the connection fails, the entry boxes that need to be changed are outlined in red.
 
-   ![Connection Manager Error](media/settings_connectionmanagererror.png)
+   ![Screenshot showing a Connection Manager Error.](media/settings_connectionmanagererror.png)
 
    For more information on troubleshooting your connection, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 

@@ -1,29 +1,28 @@
 ---
-description: "Learn more about: Member Access Operators: . and -&gt;"
-title: "Member Access Operators: . and -&gt;"
-ms.date: "11/04/2016"
+description: "Learn more about: Member access operators: '.' and '->'"
+title: "Member access operators: '.' and '->'"
+ms.date: 12/04/2021
 f1_keywords: [".", "->"]
 helpviewer_keywords: ["member access, expressions", "operators [C++], member access", "dot operator (.)", "-> operator", "member access, operators", "postfix operators [C++]", ". operator", "member access"]
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
 ---
-# Member Access Operators: . and -&gt;
+# Member access operators: `.` and `->`
 
 ## Syntax
 
-```
-postfix-expression . name
-postfix-expression -> name
-```
+*`postfix-expression`*:\
+&emsp; *`postfix-expression`* **`.`** **`template`**<sub>opt</sub> *`id-expression`*\
+&emsp; *`postfix-expression`* **`->`** **`template`**<sub>opt</sub> *`id-expression`*
 
 ## Remarks
 
-The member access operators **.** and **->** are used to refer to members of structures, unions, and classes. Member access expressions have the value and type of the selected member.
+The member access operators **`.`** and **`->`** are used to refer to members of `struct`, `union`, and `class` types. Member access expressions have the value and type of the selected member.
 
 There are two forms of member access expressions:
 
-1. In the first form, *postfix-expression* represents a value of struct, class, or union type, and *name* names a member of the specified structure, union, or class. The value of the operation is that of *name* and is an l-value if *postfix-expression* is an l-value.
+1. In the first form, *`postfix-expression`* represents a value of `struct`, `class`, or `union` type, and *`id-expression`* names a member of the specified `struct`, `union`, or `class`. The value of the operation is that of *`id-expression`* and is an l-value if *`postfix-expression`* is an l-value.
 
-1. In the second form, *postfix-expression* represents a pointer to a structure, union, or class, and *name* names a member of the specified structure, union, or class. The value is that of *name* and is an l-value. The **->** operator dereferences the pointer. Therefore, the expressions `e->member` and `(*e).member` (where *e* represents a pointer) yield identical results (except when the operators **->** or <strong>\*</strong> are overloaded).
+1. In the second form, *`postfix-expression`* represents a pointer to a `struct`, `union`, or `class`, and *`id-expression`* names a member of the specified `struct`, `union`, or `class`. The value is that of `id-expression` and is an l-value. The **`->`** operator dereferences the pointer. The expressions `e->member` and `(*(e)).member` (where *`e`* represents a pointer) yield identical results (except when the operators **`->`** or **`*`** are overloaded).
 
 ## Example
 
@@ -63,7 +62,7 @@ int main() {
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)<br/>
-[Structure and Union Members](../c-language/structure-and-union-members.md)
+[Postfix expressions](../cpp/postfix-expressions.md)\
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
+[Classes and Structs](../cpp/classes-and-structs-cpp.md)\
+[Structure and union members](../c-language/structure-and-union-members.md)

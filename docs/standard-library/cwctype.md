@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;cwctype&gt;"
-title: "&lt;cwctype&gt;"
+description: "Learn more about: <cwctype>"
+title: "<cwctype>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cwctype>"]
 helpviewer_keywords: ["cwctype header"]
 ms.assetid: 46476f95-b8c3-4ab2-a172-9a1be91124b7
 ---
-# &lt;cwctype&gt;
+# `<cwctype>`
 
 Includes the Standard C library header \<wctype.h> and adds the associated names to the `std` namespace.
 

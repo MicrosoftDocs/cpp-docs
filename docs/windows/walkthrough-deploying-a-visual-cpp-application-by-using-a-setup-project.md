@@ -4,6 +4,7 @@ title: "Deploy a Visual C++ Application By Using a Setup Project"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["deployment for Visual C++"]
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
+ms.custom: intro-deployment
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using a Setup Project
 
@@ -27,7 +28,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-   ![MFC App project](media/vs2019-mfc-app-new-project.png "New MFC app")
+   ![Screenshot of the Create a new project dialog showing an MFC App project template.](media/vs2019-mfc-app-new-project.png "New MFC app")
 
 1. At the top of the dialog, type `MFC` in the search box and then choose **MFC App** from the results list. If you do not see it, you will need to launch the Visual Studio Installer program from the Windows Start menu and click on the **C++ Desktop Development workload** tile. Under **Individual Components**, ensure that the MFC component is checked.
 
@@ -41,7 +42,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 1. If you haven't already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Extensions** > **Manage Extensions**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Press **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
 
-   ![Visual Studio setup project](media/vs2019-extension-dialog-installer-project.png "Name the client project")
+   ![The Manage Extensions dialog showing the Visual Studio setup project extension.](media/vs2019-extension-dialog-installer-project.png "Name the client project")
 
 1. On the Visual Studio menu bar, choose **File** > **Recent Projects and Solutions**, and then choose to reopen your project.
 

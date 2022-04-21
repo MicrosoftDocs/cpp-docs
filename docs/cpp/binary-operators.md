@@ -20,14 +20,14 @@ The following table shows a list of operators that can be overloaded.
 |**&**|Bitwise AND|
 |**&&**|Logical AND|
 |**&=**|Bitwise AND/assignment|
-|**&#42;**|Multiplication|
-|**&#42;=**|Multiplication/assignment|
+|**`*`**|Multiplication|
+|**`*=`**|Multiplication/assignment|
 |**+**|Addition|
 |**+=**|Addition/assignment|
 |**-**|Subtraction|
 |**-=**|Subtraction/assignment|
 |**->**|Member selection|
-|**->&#42;**|Pointer-to-member selection|
+|**`->*`**|Pointer-to-member selection|
 |**/**|Division|
 |**/=**|Division/assignment|
 |**<**|Less than|
@@ -42,9 +42,9 @@ The following table shows a list of operators that can be overloaded.
 |**>>=**|Right shift/assignment|
 |**^**|Exclusive OR|
 |**^=**|Exclusive OR/assignment|
-|**&#124;**|Bitwise inclusive OR|
-|**&#124;=**|Bitwise inclusive OR/assignment|
-|**&#124;&#124;**|Logical OR|
+|**\|**|Bitwise inclusive OR|
+|**\|=**|Bitwise inclusive OR/assignment|
+|**\|\|**|Logical OR|
 
 To declare a binary operator function as a nonstatic member, you must declare it in the form:
 

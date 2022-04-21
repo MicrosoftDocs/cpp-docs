@@ -2,8 +2,8 @@
 description: "Learn more about: Compiler warnings C4400 Through C4599"
 title: "Compiler warnings C4400 Through C4599"
 ms.date: "04/21/2019"
-f1_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4452", "C4453", "C4454", "C4455", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
-helpviewer_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4459", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
+f1_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4452", "C4453", "C4454", "C4455", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595", "C4598", "C4599"]
+helpviewer_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4459", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595", "C4598", "C4599"]
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
 ---
 # Compiler warnings C4400 Through C4599
@@ -25,7 +25,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4405](../../error-messages/compiler-warnings/compiler-warning-level-1-c4405.md)|'*identifier*': identifier is reserved word|
 |[Compiler warning (level 1) C4406](../../error-messages/compiler-warnings/compiler-warning-level-1-c4406.md)|operand on directive ignored|
 |[Compiler warning (level 1) C4407](../../error-messages/compiler-warnings/compiler-warning-level-1-c4407.md)|cast between different pointer to member representations, compiler may generate incorrect code|
-|[Compiler warning (level 4) C4408](../../error-messages/compiler-warnings/compiler-warning-level-4-c4408.md)|anonymous 'struct&#124;union' did not declare any data members|
+|[Compiler warning (level 4) C4408](../../error-messages/compiler-warnings/compiler-warning-level-4-c4408.md)|anonymous 'struct\|union' did not declare any data members|
 |[Compiler warning (level 1) C4409](../../error-messages/compiler-warnings/compiler-warning-level-1-c4409.md)|illegal instruction size|
 |[Compiler warning (level 1) C4410](../../error-messages/compiler-warnings/compiler-warning-level-1-c4410.md)|illegal size for operand|
 |[Compiler warning (level 1) C4411](../../error-messages/compiler-warnings/compiler-warning-level-1-c4411.md)|'*identifier*': symbol resolves to displacement register|
@@ -58,7 +58,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1) C4442|embedded null terminator in __annotation argument.  Value will be truncated.|
 |Compiler warning (level 1) C4443|expected pragma parameter to be '0', '1', or '2'|
 |Compiler warning (level 3) C4444|'*identifier*': top level '__unaligned' is not implemented in this context|
-|[Compiler warning (level 1) C4445](../../error-messages/compiler-warnings/compiler-warning-level-1-c4445.md)|'*function*': in a 'WinRT&#124;managed' type a virtual method cannot be private|
+|[Compiler warning (level 1) C4445](../../error-messages/compiler-warnings/compiler-warning-level-1-c4445.md)|'*function*': in a 'WinRT\|managed' type a virtual method cannot be private|
 |Compiler warning (level 1) C4446|'*type*': cannot map member '*name1*' into this type, due to conflict with the type name. The method was renamed to '*name2*'|
 |Compiler warning (level 1) C4447|'main' signature found without threading model. Consider using 'int main(Platform::Array\<Platform::String^>^ args)'.|
 |Compiler warning C4448|'*type*1' does not have a default interface specified in metadata. Picking: '*type2*', which may fail at runtime.|
@@ -73,14 +73,14 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 4) C4457](compiler-warning-level-4-c4457.md)|declaration of '*identifier*' hides function parameter|
 |[Compiler warning (level 4) C4458](compiler-warning-level-4-c4458.md)|declaration of '*identifier*' hides class member|
 |[Compiler warning (level 4) C4459](compiler-warning-level-4-c4459.md)|declaration of '*identifier*' hides global declaration|
-|[Compiler warning (level 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|'WinRT&#124;managed' operator '*operator*', has parameter passed by reference. 'WinRT&#124;managed' operator '*operator*' has different semantics from C++ operator '*cpp_operator*', did you intend to pass by value?|
+|[Compiler warning (level 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|'WinRT\|managed' operator '*operator*', has parameter passed by reference. 'WinRT\|managed' operator '*operator*' has different semantics from C++ operator '*cpp_operator*', did you intend to pass by value?|
 |[Compiler warning (level 1) C4461](../../error-messages/compiler-warnings/compiler-warning-level-1-c4461.md)|'*classname*': this class has a finalizer '!*finalizer*' but no destructor '~*dtor*'|
 |[Compiler warning (level 1, Error) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|
 |[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|
-|[Compiler warning (level 4) C4464](../../error-messages/compiler-warnings/c4464.md)|relative include path contains '..'|
+|[Compiler warning (level 4) C4464](../../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md)|relative include path contains '..'|
 |[Compiler warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|
 |[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|
-|Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT&#124;managed' enum|
+|Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT\|managed' enum|
 |[Compiler warning (level 1) C4473](c4473.md)|'*function*' : not enough arguments passed for format string|
 |Compiler warning (level 3) C4474|'*function*' : too many arguments passed for format string|
 |Compiler warning (level 3) C4475|'*function*' : length modifier '*modifier*' cannot be used with type field character '*character*' in format specifier|
@@ -187,7 +187,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 3) C4594|'*type*': destructor will not be implicitly called if an exception is thrown|
 |Compiler warning (level 1) C4595|'*type*': behavior change: destructor will no longer be implicitly called if an exception is thrown|
 |[Compiler warning (level 4) C4596](../../error-messages/compiler-warnings/c4596.md)|'*identifier*': illegal qualified name in member declaration|
-|Compiler warning (error) C4597|undefined behavior: offsetof applied to a member of a virtual base|
+|[Compiler warning (error) C4597](c4597.md)|undefined behavior: offsetof applied to a member of a virtual base|
 |Compiler warning (level 1 and level 3) C4598|'#include "*header*"': header number *number* in the precompiled header does not match current compilation at that position|
 |Compiler warning (level 3) C4599|'*flag* *path*': command line argument number *number* does not match precompiled header|
 

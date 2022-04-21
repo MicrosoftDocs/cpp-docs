@@ -1,3 +1,4 @@
+items: 
 - name: C++ language documentation
   href: ../cpp/index.yml
 - name: C++ language reference
@@ -69,11 +70,11 @@
           href: ../cpp/void-cpp.md
         - name: bool
           href: ../cpp/bool-cpp.md
-        - name: false
+        - name: "false"
           href: ../cpp/false-cpp.md
-        - name: true
+        - name: "true"
           href: ../cpp/true-cpp.md
-        - name: char, wchar_t, char16_t, char32_t
+        - name: char, wchar_t, char8_t, char16_t, char32_t
           href: ../cpp/char-wchar-t-char16-t-char32-t.md
         - name: __int8, __int16, __int32, __int64
           href: ../cpp/int8-int16-int32-int64.md
@@ -419,8 +420,6 @@
           href: ../cpp/special-member-functions.md
         - name: Static members
           href: ../cpp/static-members-cpp.md
-        - name: C++ classes as value types
-          href: ../cpp/value-types-modern-cpp.md
         - name: User-defined type conversions
           href: ../cpp/user-defined-type-conversions-cpp.md
         - name: Mutable data members
@@ -481,8 +480,6 @@
           href: ../cpp/how-to-create-and-use-weak-ptr-instances.md
         - name: "How to: Create and use CComPtr and CComQIPtr instances"
           href: ../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
-        - name: Pimpl for compile-time encapsulation
-          href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md  
     - name: Exception handling in C++
       items: 
         - name: Exception handling in C++
@@ -557,6 +554,8 @@
           href: ../cpp/modules-cpp.md
         - name: module, import, export
           href: ../cpp/import-export-module.md
+        - name: Named modules tutorial in C++
+          href: ../cpp/tutorial-named-modules-cpp.md
     - name: Templates
       items: 
         - name: Templates
@@ -691,6 +690,8 @@
                   href: ../cpp/general-rules-and-limitations.md
                 - name: Using dllimport and dllexport in C++ classes
                   href: ../cpp/using-dllimport-and-dllexport-in-cpp-classes.md
+            - name: empty_bases
+              href: ../cpp/empty-bases.md
             - name: jitintrinsic
               href: ../cpp/jitintrinsic.md
             - name: naked
@@ -701,6 +702,8 @@
               href: ../cpp/noinline.md
             - name: noreturn
               href: ../cpp/noreturn.md
+            - name: no_sanitize_address
+              href: ../cpp/no-sanitize-address.md
             - name: nothrow
               href: ../cpp/nothrow-cpp.md
             - name: novtable

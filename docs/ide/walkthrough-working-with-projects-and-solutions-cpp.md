@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Working with Projects and Solutions (C++)"
 title: "Walkthrough: Working with Projects and Solutions (C++)"
-ms.date: "05/14/2019"
+ms.date: 10/27/2021
 helpviewer_keywords: ["solutions [C++]", "projects [C++], about projects", "projects [C++]", "solutions [C++], about solutions"]
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
 ---
@@ -21,9 +21,9 @@ It helps if you understand the fundamentals of the C++ language, and know what a
 
 To create a project, first choose a project-type template. For each project type, Visual Studio sets compiler settings and—depending on the type—generates starter code that you can modify later. The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-### To create a project in Visual Studio 2019
+### To create a project in Visual Studio
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 

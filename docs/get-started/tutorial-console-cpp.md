@@ -1,8 +1,8 @@
 ---
 title: "Create a console calculator in C++"
 description: "Create a Hello World console app and a calculator app in Visual C++"
-ms.custom: "mvc"
-ms.date: 08/19/2019
+ms.custom: "acquisition, mvc"
+ms.date: 08/31/2021
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -21,22 +21,22 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It also manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
 
-1. If you've just started Visual Studio, you'll see the Visual Studio 2019 dialog box. Choose **Create a new project** to get started.
+1. If you've just started Visual Studio, you'll see the Visual Studio Start dialog box. Choose **Create a new project** to get started.
 
-   ![The Visual Studio 2019 initial dialog](./media/calc-vs2019-initial-dialog.png "The Visual Studio 2019 initial dialog")
+   ![Screenshot of the Visual Studio 2022 initial dialog.](./media/calc-vs2022-initial-dialog.png)
 
    Otherwise, on the menubar in Visual Studio, choose **File** > **New** > **Project**. The **Create a new project** window opens.
 
 1. In the list of project templates, choose **Console App**, then choose **Next**.
 
-   ![Choose the Console App template](./media/calc-vs2019-choose-console-app.png "Choose the Console App template")
+   ![Screenshot of choosing the Console App template.](./media/calc-vs2019-choose-console-app.png "Choose the Console App template")
 
    > [!Important]
    > Make sure you choose the C++ version of the **Console App** template. It has the **C++**, **Windows**, and **Console** tags, and the icon has "++" in the corner.
 
 1. In the **Configure your new project** dialog box, select the **Project name** edit box, name your new project *CalculatorTutorial*, then choose **Create**.
 
-   ![Name your project in the Configure your new project dialog](./media/calc-vs2019-name-your-project.png "Name your project in the Configure your new project dialog")
+   ![Name your project in the Configure your new project dialog.](./media/calc-vs2019-name-your-project.png "Name your project in the Configure your new project dialog")
 
    An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
@@ -168,7 +168,7 @@ It's time to add some math logic.
 
    A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *Calculator.cpp*.
 
-   ![Pop-up with definition of Calculate](./media/calc-vs2019-pop-up-definition.png "Pop-up with definition of Calculate")
+   ![Pop-up with definition of Calculate.](./media/calc-vs2019-pop-up-definition.png "Pop-up with definition of Calculate")
 
    Currently, it just returns 0.0. Let's change that. Press **Esc** to close the pop-up.
 
@@ -369,9 +369,11 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 
 - If it's still running, close the console window for the calculator app.
 
+[!INCLUDE[includes/git-source-control.md](includes/git-source-control.md)]
+
 ## The finished app
 
-Congratulations! You've completed the code for the calculator app, and built and debugged it in Visual Studio.
+Congratulations! You've completed the code for the calculator app, built and debugged it, and added it to a repo, all in Visual Studio.
 
 ## Next steps
 
@@ -397,7 +399,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 3. In the **Name** edit box at the bottom, name the new project *CalculatorTutorial*, then choose **OK**.
 
-   ![The New Project dialog](./media/calculator-new-project-dialog.png "The New Project dialog")
+   ![The New Project dialog.](./media/calculator-new-project-dialog.png "The New Project dialog")
 
    An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
@@ -490,7 +492,7 @@ Now let's turn the code in this template into a calculator app.
 
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then choose **Yes** to build your application. You should see a console window appear that displays the text specified in the code.
 
-   ![Build and start your application](./media/calculator-first-launch.gif "Build and start your application")
+   ![Build and start your application.](./media/calculator-first-launch.gif "Build and start your application")
 
 1. Close the console window when you're done.
 
@@ -650,7 +652,7 @@ Since the user is free to type anything into the console window, let's make sure
 
 Whenever you debug your code, you may notice that some new windows appear. These windows can assist your debugging experience. Take a look at the **Autos** window. The **Autos** window shows you the current values of variables used at least three lines before and up to the current line.
 
-   ![The Autos window](./media/calculator-autos.png "The Autos window")
+   ![The Autos window.](./media/calculator-autos.png "The Autos window")
 
 To see all of the variables from that function, switch to the **Locals** window. You can actually modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we'll leave them alone.
 
@@ -668,7 +670,7 @@ You can also just hover over variables in the code itself to see their current v
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
-   ![Step out of Calculate and check result](./media/calculator-undefined-zero.gif "Step out of Calculate and check result")
+   ![Step out of Calculate and check result.](./media/calculator-undefined-zero.gif "Step out of Calculate and check result")
 
    It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. You'll see its value is listed as "inf", which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
@@ -739,8 +741,6 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 ### Close the app
 
 - If it's still running, close the console window for the calculator app.
-
-## The finished app
 
 Congratulations! You've completed the code for the calculator app, and built and debugged it in Visual Studio.
 

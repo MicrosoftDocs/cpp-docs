@@ -1,15 +1,15 @@
 ---
 title: "Welcome back to C++ - Modern C++"
 description: "Describes the new programming idioms in Modern C++ and their rationale."
-ms.date: "05/17/2020"
+ms.date: 02/07/2022
 ms.topic: "conceptual"
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
 ---
 # Welcome back to C++ - Modern C++
 
-Since its creation, C++ has become one of the most widely used programming languages in the world. Well-written C++ programs are fast and efficient. The language is more flexible than other languages: It can work at the highest levels of abstraction, and down at the level of the silicon. C++ supplies highly optimized standard libraries. It enables access to low-level hardware features, to maximize speed and minimize memory requirements. Using C++, you can create a wide range of apps. Games, device drivers, and high-performance scientific software. Embedded programs. Windows client apps. Even libraries and compilers for other programming languages get written in C++.
+Since its creation, C++ has become one of the most widely used programming languages in the world. Well-written C++ programs are fast and efficient. The language is more flexible than other languages: It can work at the highest levels of abstraction, and down at the level of the silicon. C++ supplies highly optimized standard libraries. It enables access to low-level hardware features, to maximize speed and minimize memory requirements. C++ can create almost any kind of program: Games, device drivers, HPC, cloud, desktop, embedded, and mobile apps, and much more. Even libraries and compilers for other programming languages get written in C++.
 
-One of the original requirements for C++ was backward compatibility with the C language. As a result, C++ has always permitted C-style programming, with raw pointers, arrays, null-terminated character strings, and other features. They may enable great performance, but can also spawn bugs and complexity. The evolution of C++ has emphasized features that greatly reduce the need to use C-style idioms. The old C-programming facilities are there when you need them, but with modern C++ code you should need them less and less. Modern C++ code is simpler, safer, more elegant, and still as fast as ever.
+One of the original requirements for C++ was backward compatibility with the C language. As a result, C++ has always permitted C-style programming, with raw pointers, arrays, null-terminated character strings, and other features. They may enable great performance, but can also spawn bugs and complexity. The evolution of C++ has emphasized features that greatly reduce the need to use C-style idioms. The old C-programming facilities are still there when you need them. However, in modern C++ code you should need them less and less. Modern C++ code is simpler, safer, more elegant, and still as fast as ever.
 
 The following sections provide an overview of the main features of modern C++. Unless noted otherwise, the features listed here are available in C++11 and later. In the Microsoft C++ compiler, you can set the [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option to specify which version of the standard to use for your project.
 
@@ -40,7 +40,7 @@ void functionUsingWidget() {
 
 ```
 
-Whenever possible, use a smart pointer when allocating heap memory. If you must use the new and delete operators explicitly, follow the principle of RAII. For more information, see [Object lifetime and resource management (RAII)](object-lifetime-and-resource-management-modern-cpp.md).
+Whenever possible, use a smart pointer to manage heap memory. If you must use the **`new`** and **`delete`** operators explicitly, follow the principle of RAII. For more information, see [Object lifetime and resource management (RAII)](object-lifetime-and-resource-management-modern-cpp.md).
 
 ## `std::string` and `std::string_view`
 
@@ -75,7 +75,7 @@ Don’t use C-style arrays. For older APIs that need direct access to the data, 
 
 ## Standard Library algorithms
 
-Before you assume that you need to write a custom algorithm for your program, first review the C++ Standard Library [algorithms](../standard-library/algorithm.md). The Standard Library contains an ever-growing assortment of algorithms for many common operations such as searching, sorting, filtering, and randomizing. The math library is extensive. Starting in C++17, parallel versions of many algorithms are provided.
+Before you assume that you need to write a custom algorithm for your program, first review the C++ Standard Library [algorithms](../standard-library/algorithm.md). The Standard Library contains an ever-growing assortment of algorithms for many common operations such as searching, sorting, filtering, and randomizing. The math library is extensive. In C++17 and later, parallel versions of many algorithms are provided.
 
 Here are some important examples:
 
@@ -95,7 +95,7 @@ auto comp = [](const widget& w1, const widget& w2)
 
 sort( v.begin(), v.end(), comp );
 
-auto i = lower_bound( v.begin(), v.end(), comp );
+auto i = lower_bound( v.begin(), v.end(), widget{0}, comp );
 ```
 
 ## `auto` instead of explicit type names
@@ -185,7 +185,7 @@ Modern C++ provides *move semantics*, which make it possible to eliminate unnece
 
 ## Lambda expressions
 
-In C-style programming, a function can be passed to another function by using a *function pointer*. Function pointers are inconvenient to maintain and understand. The function they refer to may be defined elsewhere in the source code, far away from the point at which it's invoked. Also, they're not type-safe. Modern C++ provides *function objects*, classes that override the [`operator()`](function-call-operator-parens.md) operator, which enables them to be called like a function. The most convenient way to create function objects is with inline [lambda expressions](../cpp/lambda-expressions-in-cpp.md). The following example shows how to use a lambda expression to pass a function object, that the `for_each` function will invoke on each element in the vector:
+In C-style programming, a function can be passed to another function by using a *function pointer*. Function pointers are inconvenient to maintain and understand. The function they refer to may be defined elsewhere in the source code, far away from the point at which it's invoked. Also, they're not type-safe. Modern C++ provides *function objects*, classes that override the [`operator()`](function-call-operator-parens.md) operator, which enables them to be called like a function. The most convenient way to create function objects is with inline [lambda expressions](../cpp/lambda-expressions-in-cpp.md). The following example shows how to use a lambda expression to pass a function object, that the `find_if` function will invoke on each element in the vector:
 
 ```cpp
     std::vector<int> v {1,2,3,4,5};
@@ -198,7 +198,7 @@ The lambda expression `[=](int i) { return i > x && i < y; }` can be read as "fu
 
 ## Exceptions
 
-Modern C++ emphasizes exceptions rather than error codes as the best way to report and handle error conditions. For more information, see [Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md).
+Modern C++ emphasizes exceptions, not error codes, as the best way to report and handle error conditions. For more information, see [Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md).
 
 ## `std::atomic`
 
@@ -213,4 +213,4 @@ Unions are commonly used in C-style programming to conserve memory by enabling m
 [C++ Language Reference](../cpp/cpp-language-reference.md)\
 [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)\
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)\
-[Microsoft C++ language conformance table](../overview/visual-cpp-language-conformance.md)
+[Microsoft C/C++ language conformance](../overview/visual-cpp-language-conformance.md)

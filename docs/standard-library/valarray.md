@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;valarray&gt;"
-title: "&lt;valarray&gt;"
+description: "Learn more about: <valarray>"
+title: "<valarray>"
 ms.date: "11/04/2016"
 f1_keywords: ["<valarray>"]
 helpviewer_keywords: ["valarray header"]
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
 ---
-# &lt;valarray&gt;
+# `<valarray>`
 
 Defines the class template valarray and numerous supporting class templates and functions.
 
@@ -17,7 +17,7 @@ Defines the class template valarray and numerous supporting class templates and 
 **Namespace:** std
 
 > [!NOTE]
-> The \<valarray> library uses the `#include <initializer_list>' statement.
+> The \<valarray> library uses the `#include <initializer_list>` statement.
 
 ## Remarks
 

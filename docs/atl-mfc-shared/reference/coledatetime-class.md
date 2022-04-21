@@ -128,11 +128,9 @@ The `COleDateTime` object to be compared.
 > [!NOTE]
 > An ATLASSERT will occur if either of the two operands is invalid.
 
-### Example
+### Examples
 
 [!code-cpp[NVC_ATLMFC_Utilities#13](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_2.cpp)]
-
-### Example
 
 The operators **>=**, **\<=**, **>**, and **<**, will assert if the `COleDateTime` object is set to null.
 

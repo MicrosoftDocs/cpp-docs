@@ -7,7 +7,7 @@ ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
 ---
 # Consumer Wizard-Generated Classes
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually.
 

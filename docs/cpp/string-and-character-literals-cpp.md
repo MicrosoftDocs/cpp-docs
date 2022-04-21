@@ -1,7 +1,7 @@
 ---
 title: "String and character literals (C++)"
 description: "How to declare and define string and character literals in C++."
-ms.date: "02/18/2020"
+ms.date: 08/27/2021
 f1_keywords: ["R", "L", "u", "u8", "LR", "uR", "u8R"]
 helpviewer_keywords: ["literal strings [C++]", "string literals [C++]"]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
@@ -28,28 +28,31 @@ int main()
 
     // String literals
     auto s0 =   "hello"; // const char*
-    auto s1 = u8"hello"; // const char*, encoded as UTF-8
+    auto s1 = u8"hello"; // const char* before C++20, encoded as UTF-8,
+                         // const char8_t* in C++20
     auto s2 =  L"hello"; // const wchar_t*
     auto s3 =  u"hello"; // const char16_t*, encoded as UTF-16
     auto s4 =  U"hello"; // const char32_t*, encoded as UTF-32
 
     // Raw string literals containing unescaped \ and "
     auto R0 =   R"("Hello \ world")"; // const char*
-    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
+    auto R1 = u8R"("Hello \ world")"; // const char* before C++20, encoded as UTF-8,
+                                      // const char8_t* in C++20
     auto R2 =  LR"("Hello \ world")"; // const wchar_t*
     auto R3 =  uR"("Hello \ world")"; // const char16_t*, encoded as UTF-16
     auto R4 =  UR"("Hello \ world")"; // const char32_t*, encoded as UTF-32
 
     // Combining string literals with standard s-suffix
     auto S0 =   "hello"s; // std::string
-    auto S1 = u8"hello"s; // std::string
+    auto S1 = u8"hello"s; // std::string before C++20, std::u8string in C++20
     auto S2 =  L"hello"s; // std::wstring
     auto S3 =  u"hello"s; // std::u16string
     auto S4 =  U"hello"s; // std::u32string
 
     // Combining raw string literals with standard s-suffix
     auto S5 =   R"("Hello \ world")"s; // std::string from a raw const char*
-    auto S6 = u8R"("Hello \ world")"s; // std::string from a raw const char*, encoded as UTF-8
+    auto S6 = u8R"("Hello \ world")"s; // std::string from a raw const char* before C++20, encoded as UTF-8,
+                                       // std::u8string in C++20
     auto S7 =  LR"("Hello \ world")"s; // std::wstring from a raw const wchar_t*
     auto S8 =  uR"("Hello \ world")"s; // std::u16string from a raw const char16_t*, encoded as UTF-16
     auto S9 =  UR"("Hello \ world")"s; // std::u32string from a raw const char32_t*, encoded as UTF-32
@@ -229,9 +232,15 @@ const char *escaped = "yes\\no";
 
 A UTF-8 encoded string is a u8-prefixed, double-quote delimited, null-terminated array of type `const char[n]`, where *n* is the length of the encoded array in bytes. A u8-prefixed string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A u8-prefixed string literal may also contain the escape sequences listed above, and any universal character name.
 
+C++20 introduces the portable **`char8_t`** (UTF-8 encoded 8-bit Unicode) character type. In C++20, `u8` literal prefixes specify characters or strings of **`char8_t`** instead of **`char`**.
+
 ```cpp
+// Before C++20
 const char* str1 = u8"Hello World";
 const char* str2 = u8"\U0001F607 is O:-)";
+// C++20 and later
+const char8_t* u8str1 = u8"Hello World";
+const char8_t* u8str2 = u8"\U0001F607 is O:-)";
 ```
 
 ### Wide string literals
@@ -254,13 +263,14 @@ auto s4 = U"hello"; // const char32_t*
 
 ### Raw string literals (C++11)
 
-A raw string literal is a null-terminated array—of any character type—that contains any graphic character, including the double quotation mark (**`"`**), backslash (**`\`**), or newline character. Raw string literals are often used in regular expressions that use character classes, and in HTML strings and XML strings. For examples, see the following article: [Bjarne Stroustrup's FAQ on C++11](http://www.stroustrup.com/C++11FAQ.html).
+A raw string literal is a null-terminated array—of any character type—that contains any graphic character, including the double quotation mark (**`"`**), backslash (**`\`**), or newline character. Raw string literals are often used in regular expressions that use character classes, and in HTML strings and XML strings. For examples, see the following article: [Bjarne Stroustrup's FAQ on C++11](https://www.stroustrup.com/C++11FAQ.html).
 
 ```cpp
 // represents the string: An unescaped \ character
 const char* raw_narrow = R"(An unescaped \ character)";
-const wchar_t* raw_wide = LR"(An unescaped \ character)";
-const char*       raw_utf8  = u8R"(An unescaped \ character)";
+const wchar_t*  raw_wide  = LR"(An unescaped \ character)";
+const char*     raw_utf8a = u8R"(An unescaped \ character)"; // Before C++20
+const char8_t*  raw_utf8b = u8R"(An unescaped \ character)"; // C++20
 const char16_t* raw_utf16 = uR"(An unescaped \ character)";
 const char32_t* raw_utf32 = UR"(An unescaped \ character)";
 ```
@@ -295,7 +305,8 @@ goodbye)";
 //#include <string>
 //using namespace std::string_literals;
 string str{ "hello"s };
-string str2{ u8"Hello World" };
+string str2{ u8"Hello World" };     // Before C++20
+u8string u8str2{ u8"Hello World" }; // C++20
 wstring str3{ L"hello"s };
 u16string str4{ u"hello"s };
 u32string str5{ U"hello"s };
@@ -335,7 +346,7 @@ wchar_t* str = L"hello";
 str[2] = L'a'; // run-time error: access violation
 ```
 
-You can cause the compiler to emit an error when a string literal is converted to a non-const character pointer when you set the [`/Zc:strictStrings` (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It's also a good practice to use the **`auto`** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
+You can cause the compiler to emit an error when a string literal is converted to a non-const character pointer when you set the [`/Zc:strictStrings` (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-conformant portable code. It's also a good practice to use the **`auto`** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
 
 ```cpp
 auto str = L"hello";
@@ -380,18 +391,17 @@ The actual result is a hexadecimal 5F, which is the ASCII code for an underscore
 "\x05" "five"  // Use string splicing.
 ```
 
-`std::string` literals, because they're `std::string` types, can be concatenated with the **`+`** operator that is defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
+`std::string` literals (and the related `std::u8string`, `std::u16string`, and `ste::u32string`) can be concatenated with the **`+`** operator that's defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
 
 ```cpp
 auto x1 = "hello" " " " world"; // OK
 auto x2 = U"hello" " " L"world"; // C2308: disagree on prefix
-auto x3 = u8"hello" " "s u8"world"s; // OK, agree on prefixes and suffixes
-auto x4 = u8"hello" " "s u8"world"z; // C3688, disagree on suffixes
+auto x3 = u8"hello" " "s u8"world"z; // C3688, disagree on suffixes
 ```
 
 ### String literals with universal character names
 
-Native (non-raw) string literals may use universal character names to represent any character, as long as the universal character name can be encoded as one or more characters in the string type.  For example, a universal character name representing an extended character can't be encoded in a narrow string using the ANSI code page, but it can be encoded in narrow strings in some multi-byte code pages, or in UTF-8 strings, or in a wide string. In C++11, Unicode support is extended by the `char16_t*` and `char32_t*` string types:
+Native (non-raw) string literals may use universal character names to represent any character, as long as the universal character name can be encoded as one or more characters in the string type.  For example, a universal character name representing an extended character can't be encoded in a narrow string using the ANSI code page, but it can be encoded in narrow strings in some multi-byte code pages, or in UTF-8 strings, or in a wide string. In C++11, Unicode support is extended by the `char16_t*` and `char32_t*` string types, and C++20 extends it to the `char8_t` type:
 
 ```cpp
 // ASCII smiling face
@@ -401,7 +411,8 @@ const char*     s1 = ":-)";
 const wchar_t*  s2 = L"😉 = \U0001F609 is ;-)";
 
 // UTF-8  encoded SMILING FACE WITH HALO (U+1F607)
-const char*     s3 = u8"😇 = \U0001F607 is O:-)";
+const char*     s3a = u8"😇 = \U0001F607 is O:-)"; // Before C++20
+const char8_t*  s3b = u8"😇 = \U0001F607 is O:-)"; // C++20
 
 // UTF-16 encoded SMILING FACE WITH OPEN MOUTH (U+1F603)
 const char16_t* s4 = u"😃 = \U0001F603 is :-D";
@@ -414,4 +425,4 @@ const char32_t* s5 = U"😎 = \U0001F60E is B-)";
 
 [Character sets](../cpp/character-sets.md)\
 [Numeric, Boolean, and pointer literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)\
-[User-Defined Literals](../cpp/user-defined-literals-cpp.md)
+[User-defined literals](../cpp/user-defined-literals-cpp.md)

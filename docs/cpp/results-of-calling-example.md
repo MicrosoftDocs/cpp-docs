@@ -9,26 +9,26 @@ ms.assetid: aa70a7cb-ba1d-4aa6-bd0a-ba783da2e642
 
 **Microsoft Specific**
 
-## __cdecl
+## `__cdecl`
 
 The C decorated function name is `_MyFunc`.
 
-![CDECL calling convention](../cpp/media/vc37i01.gif "CDECL calling convention") <br/>
+![Diagram showing the stack and registers for the CDECL calling convention.](../cpp/media/vc37i01.gif "CDECL calling convention") <br/>
 The **`__cdecl`** calling convention
 
-## __stdcall and thiscall
+## `__stdcall` and `thiscall`
 
 The C decorated name (**`__stdcall`**) is `_MyFunc@20`. The C++ decorated name is implementation-specific.
 
-![&#95;&#95;stdcall and thiscall calling conventions](../cpp/media/vc37i02.gif "&#95;&#95;stdcall and thiscall calling conventions") <br/>
+![Diagram showing the stack and registers for the S T D call and this call calling conventions.](../cpp/media/vc37i02.gif )<br/>
 The __stdcall and thiscall calling conventions
 
-## __fastcall
+## `__fastcall`
 
 The C decorated name (**`__fastcall`**) is `@MyFunc@20`. The C++ decorated name is implementation-specific.
 
-![Calling convention for &#95;&#95;fastcall](../cpp/media/vc37i03.gif "Calling convention for &#95;&#95;fastcall") <br/>
-The __fastcall calling convention
+![Diagram showing the stack and registers for the fast call calling convention.](../cpp/media/vc37i03.gif)<br/>
+The `__fastcall` calling convention
 
 **END Microsoft Specific**
 

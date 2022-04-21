@@ -20,7 +20,7 @@ ASan is a runtime memory error detector for C/C++ that catches the following err
 
 When ASan detects an error, it stops execution immediately. If you run an ASan-enabled program in the debugger, you see a message that describes the type of error, the memory address, and the location in the source file where the error occurred:
 
-   ![ASan error message](media/asan-error.png)
+   ![Screenshot showing an ASan error message.](media/asan-error.png)
 
 You can also view the full ASan output (including where the corrupted memory was allocated/deallocated) in the Debug pane of the output window.
 
@@ -31,13 +31,16 @@ You can also view the full ASan output (including where the corrupted memory was
 
 To enable ASan for MSBuild-based Linux projects, right-click on the project in **Solution Explorer** and select **Properties**. Next, navigate to **Configuration Properties** > **C/C++** > **Sanitizers**. ASan is enabled via compiler and linker flags, and requires your project to be recompiled to work.
 
-![Enable ASan for an MSBuild project](media/msbuild-asan-prop-page.png)
+![Enable ASan for an MSBuild project.](media/msbuild-asan-prop-page.png)
 
 You can pass optional ASan runtime flags by navigating to **Configuration Properties** > **Debugging** > **AddressSanitizer Runtime Flags**. Click the down-arrow to add or remove flags.
 
-![Configure ASan runtime flags](media/msbuild-asan-runtime-flags.png)
+![Configure ASan runtime flags.](media/msbuild-asan-runtime-flags.png)
 
 ## Enable ASan for Visual Studio CMake projects
+
+> [!NOTE]
+> To build with CMake Presets, first enable ASan in your CMakeLists.txt file. For more information, see [Enable AddressSanitizer for Windows and Linux](../build/cmake-presets-vs.md#enable-addresssanitizer-for-windows-and-linux).
 
 To enable ASan for CMake, right-click on the CMakeLists.txt file in **Solution Explorer** and choose **CMake Settings for Project**.
 

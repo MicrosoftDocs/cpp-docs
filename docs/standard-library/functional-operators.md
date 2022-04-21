@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;functional&gt; operators"
-title: "&lt;functional&gt; operators"
+description: "Learn more about: <functional> operators"
+title: "<functional> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::operator!=", "functional/std::operator=="]
 helpviewer_keywords: ["functional operators"]
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
 ---
-# &lt;functional&gt; operators
+# `<functional>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 

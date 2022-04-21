@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;clocale&gt;"
-title: "&lt;clocale&gt;"
+description: "Learn more about: <clocale>"
+title: "<clocale>"
 ms.date: "11/04/2016"
 f1_keywords: ["<clocale>"]
 helpviewer_keywords: ["clocale header"]
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e
 ---
-# &lt;clocale&gt;
+# `<clocale>`
 
 Includes the Standard C library header \<locale.h> and adds the associated names to the `std` namespace.
 

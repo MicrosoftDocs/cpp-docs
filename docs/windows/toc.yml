@@ -1,3 +1,4 @@
+items: 
 - name: Overview of Windows programming in C++
   href: ../windows/overview-of-windows-programming-in-cpp.md
 - name: Desktop Applications in C++
@@ -18,7 +19,7 @@
   href: ../text/text-and-strings-in-visual-cpp.md
 - name: Resources for creating a game Using DirectX
   href: ../windows/resources-for-creating-a-game-using-directx.md
-- name: "How to: Use the Windows 10 SDK in a Windows Desktop application"
+- name: "How to: Use the Windows SDK in a Windows Desktop application"
   href: ../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md
 - name: Work with resource files
   expanded: false
@@ -146,6 +147,8 @@
           href: ../windows/redistributing-the-mfc-library.md
         - name: Redistribute an ATL application
           href: ../windows/redistributing-an-atl-application.md
+        - name: Latest Supported Visual C++ Redistributable Downloads
+          href: ../windows/latest-supported-vc-redist.md
     - name: Deployment examples
       expanded: false
       items: 
@@ -168,7 +171,7 @@
 - name: C++ Attributes for COM and .NET
   href: ../windows/attributes/cpp-attributes-com-net.md
 - name: Attribute programming FAQ
-  href: ../windows/attributes/attribute-programming-faq.md
+  href: ../windows/attributes/attribute-programming-faq.yml
 - name: Attributes by group
   expanded: false
   items: 

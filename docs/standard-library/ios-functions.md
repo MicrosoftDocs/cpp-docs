@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;ios&gt; functions"
-title: "&lt;ios&gt; functions"
+description: "Learn more about: <ios> functions"
+title: "<ios> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["xiosbase/std::defaultfloat", "xiosbase/std::boolalpha", "xiosbase/std::dec", "ios/std::fixed", "ios/std::hex", "ios/std::internal", "ios/std::left", "ios/std::noboolalpha", "ios/std::noshowbase", "ios/std::noshowpoint", "ios/std::noshowpos", "ios/std::noskipws", "ios/std::nounitbuf", "ios/std::nouppercase", "ios/std::oct", "ios/std::right", "ios/std::scientific", "ios/std::showbase", "ios/std::showpoint", "ios/std::showpos", "ios/std::skipws", "ios/std::unitbuf", "ios/std::uppercase"]
 ms.assetid: 1382d53f-e531-4b41-adf6-6a1543512e51
 helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::dec [C++]", "std::fixed [C++]", "std::hex [C++]", "std::hexfloat [C++]", "std::io_errc [C++]", "std::internal [C++]", "std::iostream_category [C++]", "std::is_error_code_enum [C++]", "std::left [C++]", "std::make_error_code [C++]", "std::make_error_condition [C++]", "std::noboolalpha [C++]", "std::noshowbase [C++]", "std::noshowpoint [C++]", "std::noshowpos [C++]", "std::noskipws [C++]", "std::nounitbuf [C++]", "std::nouppercase [C++]", "std::oct [C++]", "std::right [C++]", "std::scientific [C++]", "std::showbase [C++]", "std::showpoint [C++]", "std::showpos [C++]", "std::skipws [C++]", "std::unitbuf [C++]", "std::uppercase [C++]"]
 ---
-# &lt;ios&gt; functions
+# `<ios>` functions
 
 ## <a name="boolalpha"></a> boolalpha
 
@@ -113,7 +113,7 @@ int main( )
 100
 ```
 
-## <a name="ios_defaultfloat"></a> &lt;ios&gt; defaultfloat
+## <a name="ios_defaultfloat"></a> defaultfloat
 
 Configures the flags of an `ios_base` object to use a default display format for float values.
 

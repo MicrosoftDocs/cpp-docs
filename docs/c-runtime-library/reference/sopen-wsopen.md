@@ -81,8 +81,8 @@ The integer expression *oflag* is formed by combining one or more of the followi
 | **_O_BINARY** | Opens the file in binary (untranslated) mode. (See [fopen](fopen-wfopen.md) for a description of binary mode.) |
 | **_O_CREAT** | Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists. The *pmode* argument is required when **_O_CREAT** is specified. |
 | **_O_CREAT** &#124; **_O_SHORT_LIVED** | Creates a file as temporary and if possible does not flush to disk. The *pmode* argument is required when **_O_CREAT** is specified. |
-| **_O_CREAT** &#124; **_O_TEMPORARY** | Creates a file as temporary; the file is deleted when the last file descriptor is closed. The *pmode* argument is required when **_O_CREAT** is specified. |
-| **_O_CREAT** &#124; `_O_EXCL` | Returns an error value if a file specified by *filename* exists. Applies only when used with **_O_CREAT**. |
+| **_O_CREAT** &#124; **_O_TEMPORARY** | Creates a file as temporary; the file is deleted when the last file descriptor is closed. The *pmode* argument is required when **_O_CREAT** is specified. To preserve legacy behavior for app-compatibility, other processes are not prevented from deleting this file. |
+| **_O_CREAT** &#124; **`_O_EXCL`** | Returns an error value if a file specified by *filename* exists. Applies only when used with **_O_CREAT**. |
 | **_O_NOINHERIT** | Prevents creation of a shared file descriptor. |
 | **_O_RANDOM** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **_O_RDONLY** | Opens a file for reading only. Cannot be specified with **_O_RDWR** or **_O_WRONLY**. |

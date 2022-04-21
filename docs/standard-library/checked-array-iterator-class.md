@@ -161,7 +161,7 @@ int main()
 |[operator+](#op_add)|Adds an offset to an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|
 |[operator-=](#operator-_eq)|Decrements a specified offset from a `checked_array_iterator`.|
 |[operator-](#operator-)|Decrements an offset from an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|
-|[operator&#91;&#93;](#op_at)|Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.|
+|[`operator[]`](#op_at)|Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.|
 
 ## Requirements
 
@@ -404,7 +404,7 @@ checked_array_iterators are not equal
 */
 ```
 
-## <a name="op_lt"></a> checked_array_iterator::operator&lt;
+## <a name="op_lt"></a> `checked_array_iterator::operator<`
 
 Tests if the `checked_array_iterator` on the left side of the operator is less than the `checked_array_iterator` on the right side.
 
@@ -460,7 +460,7 @@ checked_output_iterator2 is less than checked_output_iterator
 */
 ```
 
-## <a name="op_gt"></a> checked_array_iterator::operator&gt;
+## <a name="op_gt"></a> `checked_array_iterator::operator>`
 
 Tests if the `checked_array_iterator` on the left side of the operator is greater than the `checked_array_iterator` on the right side.
 
@@ -475,11 +475,11 @@ The `checked_array_iterator` to compare against.
 
 ### Remarks
 
-See [checked_array_iterator::operator&lt;](#op_lt) for a code sample.
+See [`checked_array_iterator::operator<`](#op_lt) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## <a name="op_lt_eq"></a> checked_array_iterator::operator&lt;=
+## <a name="op_lt_eq"></a> `checked_array_iterator::operator<=`
 
 Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.
 
@@ -494,11 +494,11 @@ The `checked_array_iterator` to compare against.
 
 ### Remarks
 
-See [checked_array_iterator::operator&gt;=](#op_gt_eq) for a code sample.
+See [`checked_array_iterator::operator>=`](#op_gt_eq) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## <a name="op_gt_eq"></a> checked_array_iterator::operator&gt;=
+## <a name="op_gt_eq"></a> `checked_array_iterator::operator>=`
 
 Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.
 
@@ -615,7 +615,7 @@ c[0].first = 10
 */
 ```
 
-## <a name="op_arrow"></a> checked_array_iterator::operator-&gt;
+## <a name="op_arrow"></a> `checked_array_iterator::operator->`
 
 Returns a pointer to the element addressed by the `checked_array_iterator`.
 

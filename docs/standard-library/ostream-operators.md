@@ -1,15 +1,15 @@
 ---
-description: "Learn more about: &lt;ostream&gt; operators"
-title: "&lt;ostream&gt; operators"
+description: "Learn more about: <ostream> operators"
+title: "<ostream> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["ostream/std::operator&lt;&lt;"]
+f1_keywords: ["ostream/std::operator<<"]
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
 ---
-# &lt;ostream&gt; operators
+# `<ostream>` operators
 
-[operator&lt;&lt;](#op_lt_lt)
+[`operator<<`](#op_lt_lt)
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
+## <a name="op_lt_lt"></a> `operator<<`
 
 Writes various types to the stream.
 
@@ -96,7 +96,7 @@ The stream.
 
 ### Remarks
 
-The `basic_ostream` class also defines several insertion operators. For more information, see [basic_ostream::operator&lt;&lt;](../standard-library/basic-ostream-class.md#basic_ostream_operator_lt_lt).
+The `basic_ostream` class also defines several insertion operators. For more information, see [`basic_ostream::operator<<`](../standard-library/basic-ostream-class.md#basic_ostream_operator_lt_lt).
 
 The template function
 

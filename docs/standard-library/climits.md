@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;climits&gt;"
-title: "&lt;climits&gt;"
+description: "Learn more about: <climits>"
+title: "<climits>"
 ms.date: "11/04/2016"
 f1_keywords: ["<climits>"]
 helpviewer_keywords: ["climits header"]
 ms.assetid: 7ca8a539-aa45-4ac3-86e8-74513be3f07e
 ---
-# &lt;climits&gt;
+# `<climits>`
 
 Includes the C standard library header \<limits.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 

@@ -28,11 +28,11 @@ A subset of C++ Core Check rules is included in the Microsoft Native Recommended
 
 1. Select the **Enable Code Analysis on Build** checkbox.
 
-![Property page for Code Analysis General settings](media/cppcorecheck_codeanalysis_general.png)
+![Property page for Code Analysis General settings.](media/cppcorecheck_codeanalysis_general.png)
 
 To enable additional Core Check rules, open the dropdown list and choose which rule sets you want to include:
 
-![Dropdown for additional C++ Core Check rule sets](media/cppcorecheck_codeanalysis_extensions.png)
+![Dropdown for additional C++ Core Check rule sets.](media/cppcorecheck_codeanalysis_extensions.png)
 
 ::: moniker-end
 ::: moniker range=">=msvc-160"
@@ -303,7 +303,7 @@ Code Analysis requires a few environment variables and compiler command-line opt
 
 ## Use the Guideline Support Library
 
-The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL project is available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL). The library is open-source, so you can view the sources, make comments, or contribute. You can also use the [vcpkg](../build/vcpkg.md) package manager to download and install the library locally.
+The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL project is available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL). The library is open-source, so you can view the sources, make comments, or contribute. You can also use the [vcpkg](https://vcpkg.io/) package manager to download and install the library locally.
 
 ::: moniker range="msvc-140"
 
@@ -321,7 +321,7 @@ Because of the way the code analysis rules get loaded within Visual Studio 2015,
 
 1. In the **NuGet Package Manager** window, search for Microsoft.CppCoreCheck.
 
-    ![Nuget Package Manager window shows CppCoreCheck package](../code-quality/media/cppcorecheck_nuget_window.png)
+    ![Nuget Package Manager window showing the CppCoreCheck package.](../code-quality/media/cppcorecheck_nuget_window.png)
 
 1. Select the Microsoft.CppCoreCheck package and then choose the **Install** button to add the rules to your project.
 

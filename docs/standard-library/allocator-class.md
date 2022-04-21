@@ -24,7 +24,7 @@ The type of object for which storage is being allocated or deallocated.
 
 ## Remarks
 
-All the C++ Standard Library containers have a template parameter that defaults to `allocator`. Constructing a container with a custom allocator provide control over allocation and freeing of that container's elements.
+All the C++ Standard Library containers have a template parameter that defaults to `allocator`. Constructing a container with a custom allocator provides control over allocation and freeing of that container's elements.
 
 For example, an allocator object might allocate storage on a private heap or in shared memory, or it might optimize for small or large object sizes. It might also specify, through the type definitions it supplies, that elements be accessed through special accessor objects that manage shared memory, or perform automatic garbage collection. Hence, a class that allocates storage using an allocator object should use these types for declaring pointer and reference objects, as the containers in the C++ Standard Library do.
 

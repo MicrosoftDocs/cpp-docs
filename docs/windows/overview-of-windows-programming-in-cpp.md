@@ -38,13 +38,13 @@ The [Component Object Model (COM)](/windows/win32/com/the-component-object-model
 
 ## Universal Windows Platform apps
 
-The Universal Windows Platform (UWP) is the modern Windows API. UWP apps run on any Windows 10 device, use XAML for the user-interface, and are fully touch-enabled. For more information about UWP, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/whats-a-uwp) and [Guide to Windows Universal Apps](/windows/uwp/get-started/universal-application-platform-guide).
+The Universal Windows Platform (UWP) is the modern Windows API. UWP apps run on any Windows 10 or Windows 11 device. They use XAML for the user-interface, and are fully touch-enabled. For more information about UWP, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/whats-a-uwp) and [Guide to Windows Universal Apps](/windows/uwp/get-started/universal-application-platform-guide).
 
-The original C++ support for UWP consisted of (1) C++/CX, a dialect of C++ with syntax extensions, or (2) the Windows Runtime Library (WRL), which is based on standard C++ and COM. Both C++/CX and WRL are still supported. For new projects, we recommend [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt), which is entirely based on standard C++ and provides faster performance.
+The original C++ support for UWP consisted of (1) C++/CX, a dialect of C++ with syntax extensions, or (2) the Windows Runtime Library (WRL), which is based on standard C++ and COM. Both C++/CX and WRL are still supported, but not recommended for new development. For new projects, we recommend [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt), which is entirely based on standard C++ and provides faster performance.
 
 ## Desktop Bridge
 
-In Windows 10, you can package your existing desktop application or COM object as a UWP app, and add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
+In Windows 10 and later, you can package your existing desktop application or COM object as a UWP app. It can use UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, package them together in a single package, and use Windows APIs to communicate between them.
 
 Visual Studio 2017 version 15.4 and later lets you create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply to the registry calls or APIs your desktop application can use. However, in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
@@ -68,7 +68,7 @@ A Windows *service* is a program that can run in the background with little or n
 
 Visual Studio includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. Most of the include folders that contain header files for these libraries are located in the Visual Studio installation directory under the \VC\ folder. The Windows and CRT header files are found in the Windows SDK installation folder.
 
-The [Vcpkg package manager](../build/vcpkg.md) lets you conveniently install hundreds of third-party open-source libraries for Windows.
+The vcpkg package manager lets you conveniently install hundreds of third-party open-source libraries for Windows. For more information, see [vcpkg](https://vcpkg.io/).
 
 The Microsoft libraries include:
 
@@ -80,7 +80,7 @@ The Microsoft libraries include:
 
 - Concurrency Runtime: A library that simplifies the work of parallel and asynchronous programming for multicore and many-core devices. For more information, see [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md).
 
-Many Windows programming scenarios also require the Windows SDK, which includes the header files that enable access to the Windows operating system components. By default, Visual Studio installs the Windows SDK as a component of the C++ Desktop workload, which enables development of Universal Windows apps. To develop UWP apps, you need the Windows 10 version of the Windows SDK. For information, see [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk). (For more information about the Windows SDKs for earlier versions of Windows, see the [Windows SDK archive](https://developer.microsoft.com/windows/downloads/sdk-archive)).
+Many Windows programming scenarios also require the Windows SDK, which includes the header files that enable access to the Windows operating system components. By default, Visual Studio installs the Windows SDK as a component of the C++ Desktop workload, which enables development of Universal Windows apps. To develop UWP apps, you need a Windows 10 or later version of the Windows SDK. For more information, and a download link, see [Windows SDK](https://dev.windows.com/downloads/windows-sdk). (For more information about the Windows SDKs for earlier versions of Windows, see the [Windows SDK archive](https://developer.microsoft.com/windows/downloads/sdk-archive)).
 
 **Program Files (x86)\Windows Kits** is the default location for all versions of the Windows SDK that you've installed.
 
@@ -92,22 +92,21 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 
 ## In this section
 
-|Title|Description|
-|-----------|-----------------|
-|[Walkthrough: Creating a Standard C++ Program](walkthrough-creating-a-standard-cpp-program-cpp.md)| Create a Windows console application.|
-|[Walkthrough: Creating Windows Desktop Applications (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Create a native Windows desktop application.|
-|[Windows Desktop Wizard](windows-desktop-wizard.md)|Use the wizard to create new Windows projects.|
-|[Active Template Library (ATL)](../atl/atl-com-desktop-components.md)|Use the ATL library to create COM components in C++.|
-|[Microsoft Foundation Classes (MFC)](../mfc/mfc-desktop-applications.md)|Use MFC to create large or small Windows applications with dialogs and controls|
-|[ATL and MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)|Use classes such as CString that are shared in ATL and MFC.|
-|[Data Access](../data/data-access-in-cpp.md)| OLE DB and ODBC|
-|[Text and Strings](../text/text-and-strings-in-visual-cpp.md)|Various string types on Windows.|
-|[Resources for Creating a Game Using DirectX](resources-for-creating-a-game-using-directx.md)
-|[How to: Use the Windows 10 SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows SDK|
-|[Working with Resource Files](working-with-resource-files.md)|How to add images, icons, string tables, and other resources to a desktop application.|
-|[Resources for Creating a Game Using DirectX (C++)](resources-for-creating-a-game-using-directx.md)|Links to content for creating games in C++.|
-|[How to: Use the Windows 10 SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows 10 SDK.|
-|[Deploying Native Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Deploy native applications on Windows.|
+|--|--|
+| ----------- | ----------------- |
+| [Walkthrough: Creating a Standard C++ Program](walkthrough-creating-a-standard-cpp-program-cpp.md) | Create a Windows console application. |
+| [Walkthrough: Creating Windows Desktop Applications (C++)](walkthrough-creating-windows-desktop-applications-cpp.md) | Create a native Windows desktop application. |
+| [Windows Desktop Wizard](windows-desktop-wizard.md) | Use the wizard to create new Windows projects. |
+| [Active Template Library (ATL)](../atl/atl-com-desktop-components.md) | Use the ATL library to create COM components in C++. |
+| [Microsoft Foundation Classes (MFC)](../mfc/mfc-desktop-applications.md) | Use MFC to create large or small Windows applications with dialogs and controls |
+| [ATL and MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md) | Use classes such as CString that are shared in ATL and MFC. |
+| [Data Access](../data/data-access-in-cpp.md) | OLE DB and ODBC |
+| [Text and Strings](../text/text-and-strings-in-visual-cpp.md) | Various string types on Windows. |
+| [Resources for Creating a Game Using DirectX](resources-for-creating-a-game-using-directx.md) |
+| [Working with Resource Files](working-with-resource-files.md) | How to add images, icons, string tables, and other resources to a desktop application. |
+| [Resources for Creating a Game Using DirectX (C++)](resources-for-creating-a-game-using-directx.md) | Links to content for creating games in C++. |
+| [How to: Use the Windows SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md) | Contains steps for setting up your project to build using the Windows SDK. |
+| [Deploying Native Desktop Applications](deploying-native-desktop-applications-visual-cpp.md) | Deploy native applications on Windows. |
 
 ## Related Articles
 

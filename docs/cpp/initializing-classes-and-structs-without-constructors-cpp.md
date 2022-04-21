@@ -1,12 +1,12 @@
 ---
 title: "Brace initialization for classes, structs, and unions"
-description: "Use brace initialization with any C++ class, struct or union"
-ms.date: "11/19/2019"
+description: "Use brace initialization with any C++ class, struct, or union"
+ms.date: 09/28/2021
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
 ---
 # Brace initialization
 
-It is not always necessary to define a constructor for a class, especially ones that are relatively simple. Users can initialize objects of a class or struct by using uniform initialization, as shown in the following example:
+It isn't always necessary to define a constructor for a `class`, especially ones that are relatively simple. Users can initialize objects of a `class` or `struct` by using uniform initialization, as shown in the following example:
 
 ```cpp
 // no_constructor.cpp
@@ -55,7 +55,7 @@ int main()
 }
 ```
 
-Note that when a class or struct has no constructor, you provide the list elements in the order that the members are declared in the class. If the class has a constructor, provide the elements in the order of the parameters. If a type has a default constructor, either implicitly or explicitly declared, you can use default brace initialization (with empty braces). For example, the following class may be initialized by using both default and non-default brace initialization:
+When a `class` or `struct` has no constructor, you provide the list elements in the order that the members are declared in the `class`. If the `class` has a constructor, provide the elements in the order of the parameters. If a type has a default constructor, either implicitly or explicitly declared, you can use default brace initialization (with empty braces). For example, the following `class` may be initialized by using both default and non-default brace initialization:
 
 ```cpp
 #include <string>
@@ -84,7 +84,7 @@ int main()
 }
 ```
 
-If a class has non-default constructors, the order in which class members appear in the brace initializer is the order in which the corresponding parameters appear in the constructor, not the order in which the members are declared (as with `class_a` in the previous example). Otherwise, if the type has no declared constructor, the order in which the members appear in the brace initializer is the same as the order in which they are declared; in this case, you can initialize as many of the public members as you wish, but you cannot skip any member. The following example shows the order that's used in brace initialization when there is no declared constructor:
+If a class has non-default constructors, the order in which class members appear in the brace initializer is the order in which the corresponding parameters appear in the constructor, not the order in which the members are declared (as with `class_a` in the previous example). Otherwise, if the type has no declared constructor, member initializers must appear in the brace initializer in the same order as they're declared. In this case, you can initialize as many of the public members as you wish, but you can't skip any member. The following example shows the order that's used in brace initialization when there's no declared constructor:
 
 ```cpp
 class class_d {
@@ -106,7 +106,7 @@ int main()
 }
 ```
 
-If the default constructor is explicitly declared but marked as deleted, default brace initialization cannot be used:
+If the default constructor is explicitly declared but marked as deleted, default brace initialization can't be used:
 
 ```cpp
 class class_f {
@@ -130,7 +130,7 @@ kr->add_d({ 4.5 });
 return { 4.5 };
 ```
 
-In **/std:c++17** mode, the rules for empty brace initialization are slightly more restrictive. See [Derived constructors and extended aggregate initialization](constructors-cpp.md#extended_aggregate).
+In **`/std:c++17`** mode and later, the rules for empty brace initialization are slightly more restrictive. See [Derived constructors and extended aggregate initialization](constructors-cpp.md#extended_aggregate).
 
 ## initializer_list constructors
 

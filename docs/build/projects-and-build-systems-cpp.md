@@ -5,6 +5,7 @@ ms.date: "07/17/2019"
 helpviewer_keywords: ["builds [C++]", "C++ projects, building", "projects [C++], building", "builds [C++], options", "C++, build options"]
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ms.topic: "overview"
+ms.custom: intro-overview
 ---
 # C/C++ projects and build systems in Visual Studio
 
@@ -22,7 +23,7 @@ Basic C++ compilation involves three main steps:
 
 ## The MSVC toolset
 
-The Microsoft C++ compiler, linker, standard libraries, and related utilities make up the MSVC compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the toolset as a free standalone package from [Build Tools for Visual Studio 2019 download](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
+The Microsoft C++ compiler, linker, standard libraries, and related utilities make up the MSVC compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the command-line toolset as a free standalone package. For more information, see [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) on the Visual Studio Downloads page.
 
 You can build simple programs by invoking the MSVC compiler (cl.exe) directly from the command line. The following command accepts a single source code file, and invokes cl.exe to build an executable called *hello.exe*:
 
@@ -34,7 +35,7 @@ Here the compiler (cl.exe) automatically invokes the C++ preprocessor and the li
 
 ## Build systems and projects
 
-Most real-world programs use some kind of *build system* to manage complexities of compiling multiple source files for multiple configurations (debug vs. release), multiple platforms (x86, x64, ARM, and so on), custom build steps, and even multiple executables that must be compiled in a certain order. You make settings in a build configuration file(s), and the build system accepts that file as input before it invoke the compiler. The set of source code files and build configuration files needed to build an executable file is called a *project*.
+Most real-world programs use some kind of *build system* to manage complexities of compiling multiple source files for multiple configurations (debug vs. release), multiple platforms (x86, x64, ARM, and so on), custom build steps, and even multiple executables that must be compiled in a certain order. You make settings in a build configuration file(s), and the build system accepts that file as input before it invokes the compiler. The set of source code files and build configuration files needed to build an executable file is called a *project*.
 
 The following list shows various options for Visual Studio Projects - C++:
 

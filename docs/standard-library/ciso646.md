@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;ciso646&gt;"
-title: "&lt;ciso646&gt;"
+description: "Learn more about: <ciso646>"
+title: "<ciso646>"
 ms.date: "07/11/2019"
 f1_keywords: ["<ciso646>"]
 helpviewer_keywords: ["ciso646 header"]
 ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903
 ---
-# &lt;ciso646&gt;
+# `<ciso646>`
 
 Includes the C standard library header \<iso646.h>, and adds the associated names to the `std` namespace.
 

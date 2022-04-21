@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;system_error&gt;"
-title: "&lt;system_error&gt;"
+description: "Learn more about: <system_error>"
+title: "<system_error>"
 ms.date: "03/15/2019"
 f1_keywords: ["<system_error>"]
 helpviewer_keywords: ["system_error header"]
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
 ---
-# &lt;system_error&gt;
+# `<system_error>`
 
 Include the header \<system_error> to define the exception class `system_error` and related templates for processing low-level system errors.
 

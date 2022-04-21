@@ -2,7 +2,7 @@
 title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
 description: "Use the Microsoft C++ compiler from a command prompt."
 ms.custom: "conceptual"
-ms.date: "04/02/2020"
+ms.date: 03/25/2021
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
 ---
@@ -20,18 +20,18 @@ To complete this walkthrough, you must have installed either Visual Studio and t
 
 Visual Studio is an *integrated development environment* (IDE). It supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. Versions available include the free Visual Studio Community edition, and all can support C and C++ development. For information on how to download and install Visual Studio, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
-The Build Tools for Visual Studio installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, look for Build Tools for Visual Studio on the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) page.
+The Build Tools for Visual Studio installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, look for Build Tools for Visual Studio on the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) page.
 
 Before you can build a C or C++ program on the command line, verify that the tools are installed, and you can access them from the command line. Visual C++ has complex requirements for the command-line environment to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window** without doing some preparation. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they're located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.
 
 > [!NOTE]
-> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you use a regular **Command Prompt** window. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md). We recommend you use a developer command prompt shortcut instead of building your own.
+> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you use a regular **Command Prompt** window. For more information, see [Use the MSVC toolset from the command line](./building-on-the-command-line.md). We recommend you use a developer command prompt shortcut instead of building your own.
 
 ### Open a developer command prompt
 
-1. If you have installed Visual Studio 2017 or later on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio** folder (not the Visual Studio application). Choose **Developer Command Prompt for VS** to open the command prompt window.
+1. If you have installed Visual Studio 2017 or later on Windows 10 or later, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio** folder (not the Visual Studio application). Choose **Developer Command Prompt for VS** to open the command prompt window.
 
-   If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
+   If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10 or later, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
 
    You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
@@ -57,11 +57,11 @@ Before you can build a C or C++ program on the command line, verify that the too
 
 ### Create a Visual C++ source file and compile it on the command line
 
-1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This directory is where your source file and the compiled program are created in.
+1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This directory is where both your source file and the compiled program get created.
 
 1. Enter `notepad hello.cpp` in the command prompt window.
 
-   Choose **Yes** when Notepad prompts you to create a file. This step opens a blank Notepad window, ready for you to enter your code in a file named hello.cpp.
+   Choose **Yes** when Notepad prompts you to create a new file. This step opens a blank Notepad window, ready for you to enter your code in a file named hello.cpp.
 
 1. In Notepad, enter the following lines of code:
 
@@ -97,7 +97,10 @@ Before you can build a C or C++ program on the command line, verify that the too
 
    ```
 
-   The dates and other details will differ on your computer. If you don't see your source code file, *hello.cpp*, make sure you've changed to the *c:\\hello* directory you created. In Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension.
+   The dates and other details will differ on your computer.
+
+   > [!NOTE]
+   > If you don't see your source code file, *`hello.cpp`*, make sure the current working directory in your command prompt is the *`C:\hello`* directory you created. Also make sure that this is the directory where you saved your source file. And make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension. Your source file gets saved in the current directory as a *`.cpp`* file automatically if you open Notepad at the command prompt by using the **`notepad hello.cpp`** command. Notepad's behavior is different if you open it another way: By default, Notepad appends a *`.txt`* extension to new files when you save them. It also defaults to saving files in your *Documents* directory. To save your file with a *`.cpp`* extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *`C:\hello`* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter *`hello.cpp`* in the **File name** edit control, and then choose **Save** to save the file.
 
 1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
@@ -136,7 +139,7 @@ Before you can build a C or C++ program on the command line, verify that the too
 
 This "Hello, World" example is about as simple as a C++ program can get. Real world programs usually have header files, more source files, and link to libraries.
 
-You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writeable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions may put projects in a *Documents\\Visual Studio \<version>\\*Projects* folder.
+You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writeable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions may put projects in a *Documents\\Visual Studio \<version>\\Projects* folder.
 
 To compile a program that has additional source code files, enter them all on the command line, like:
 

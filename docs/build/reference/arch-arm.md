@@ -32,9 +32,7 @@ When you use [/clr](clr-common-language-runtime-compilation.md) to compile, **/a
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **C/C++** folder.
-
-1. Select the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. In the **Additional options** box, add `/arch:ARMv7VE` or `/arch:VFPv4`.
 

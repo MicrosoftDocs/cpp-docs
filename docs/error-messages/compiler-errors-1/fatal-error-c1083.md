@@ -56,7 +56,7 @@ then the file is not found. Use the correct path relative to the directory speci
 
 ## Third-party library issues and vcpkg
 
-If you see this error when you are trying to configure a third-party library as part of your build, consider using [`vcpkg`](../../build/vcpkg.md), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project.
+If you see this error when you are trying to configure a third-party library as part of your build, consider using [vcpkg](https://vcpkg.io/), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## The file is in your project, but not the include search path
 

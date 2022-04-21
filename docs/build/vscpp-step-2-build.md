@@ -19,17 +19,17 @@ You've created a C++ console app project and entered your code. Now you can buil
 
 If Visual Studio looks like this, you're ready to build and run your app:
 
-   ![Ready to build the new project](media/vscpp-ready-to-build.png "Ready to build the new project")
+   ![Screenshot of Visual Studio showing the Hello World source code in the editor.](media/vscpp-ready-to-build.png "Ready to build the new project")
 
 ## Build and run your code in Visual Studio
 
 1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
 
-   ![Build the project](media/vscpp-build-solution.gif "Build the project")
+   ![View of the sequence of actions you take to build the project.](media/vscpp-build-solution.gif "Build the project")
 
 1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
 
-   ![Start the project](media/vscpp-start-without-debugging.gif "Start the project")
+   ![View of the actions you take to start the project.](media/vscpp-start-without-debugging.gif "Start the project")
 
    A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to continue . . ." to give you a chance to see the output.
 
@@ -49,7 +49,7 @@ Normally, you run console apps at the command prompt, not in Visual Studio. Once
 
 1. In the command prompt window, right-click to paste the path to your app into the command prompt. Press Enter to run your app.
 
-   ![Run the app at the command prompt](media/vscpp-run-in-cmd.gif "Run the app at the command prompt")
+   ![View of what happens when you run the app at the command prompt.](media/vscpp-run-in-cmd.gif "Run the app at the command prompt")
 
 Congratulations, you've built and run a console app in Visual Studio!
 
@@ -78,5 +78,3 @@ You can also navigate to the solution Debug folder at the command line to run yo
 If you don't see **Copy as path** in the shortcut menu, dismiss the menu, and then hold down the **Shift** key while you open it again. This command is just for convenience. You can also copy the path to the folder from the File Explorer search bar, and paste it into the **Run** dialog, and then enter the name of your executable at the end. It's just a little more typing, but it has the same result.
 
 [Go back.](#run-your-code-in-a-command-window)
-
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

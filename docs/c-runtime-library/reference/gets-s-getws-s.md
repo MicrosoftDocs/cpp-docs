@@ -10,9 +10,9 @@ f1_keywords: ["_getws_s", "gets_s"]
 helpviewer_keywords: ["getws_s function", "_getws_s function", "lines, getting", "streams, getting lines", "buffers, avoiding overruns", "buffer overruns", "buffers, buffer overruns", "gets_s function", "standard input, reading from"]
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
 ---
-# gets_s, _getws_s
+# `gets_s`, `_getws_s`
 
-Gets a line from the **stdin** stream. These versions of [gets, _getws](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Gets a line from the **`stdin`** stream. These versions of [`gets`, `_getws`](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -37,25 +37,25 @@ wchar_t *_getws_s( wchar_t (&buffer)[size] ); // C++ only
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*<br/>
 Storage location for input string.
 
-*sizeInCharacters*<br/>
+*`sizeInCharacters`*<br/>
 The size of the buffer.
 
 ## Return Value
 
-Returns *buffer* if successful. A **NULL** pointer indicates an error or end-of-file condition. Use [ferror](ferror.md) or [feof](feof.md) to determine which one has occurred.
+Returns *`buffer`* if successful. A **`NULL`** pointer indicates an error or end-of-file condition. Use [`ferror`](ferror.md) or [`feof`](feof.md) to determine which one has occurred.
 
 ## Remarks
 
-The **gets_s** function reads a line from the standard input stream **stdin** and stores it in *buffer*. The line consists of all characters up to and including the first newline character ('\n'). **gets_s** then replaces the newline character with a null character ('\0') before returning the line. In contrast, the **fgets_s** function retains the newline character.
+The **`gets_s`** function reads a line from the standard input stream **`stdin`** and stores it in *`buffer`*. The line consists of all characters up to and including the first newline character ('`\n`'). **`gets_s`** then replaces the newline character with a null character ('`\0`') before returning the line. In contrast, the **`fgets_s`** function retains the newline character.
 
-If the first character read is the end-of-file character, a null character is stored at the beginning of *buffer* and **NULL** is returned.
+If the first character read is the end-of-file character, a null character is stored at the beginning of *`buffer`* and **`NULL`** is returned.
 
-**_getws_s** is a wide-character version of **gets_s**; its argument and return value are wide-character strings.
+**`_getws_s`** is a wide-character version of **`gets_s`**; its argument and return value are wide-character strings.
 
-If *buffer* is **NULL** or *sizeInCharacters* is less than or equal to zero, or if the buffer is too small to contain the input line and null terminator, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set errno to **ERANGE**.
+If *`buffer`* is **`NULL`** or *`sizeInCharacters`* is less than or equal to zero, or if the buffer is too small to contain the input line and null terminator, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set errno to **`ERANGE`**.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -63,18 +63,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-Text Routine Mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_getts_s**|**gets_s**|**gets_s**|**_getws_s**|
+|**`_getts_s`**|**`gets_s`**|**`gets_s`**|**`_getws_s`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**gets_s**|\<stdio.h>|
-|**_getws_s**|\<stdio.h> or \<wchar.h>|
+|**`gets_s`**|`<stdio.h>`|
+|**`_getws_s`**|`<stdio.h>` or `<wchar.h>`|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -104,7 +104,7 @@ The line entered was: Hello there!
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[fgets, fgetws](fgets-fgetws.md)<br/>
-[fputs, fputws](fputs-fputws.md)<br/>
-[puts, _putws](puts-putws.md)<br/>
+[`gets`, `_getws`](../../c-runtime-library/gets-getws.md)<br/>
+[`fgets`, `fgetws`](fgets-fgetws.md)<br/>
+[`fputs`, `fputws`](fputs-fputws.md)<br/>
+[`puts`, `_putws`](puts-putws.md)<br/>

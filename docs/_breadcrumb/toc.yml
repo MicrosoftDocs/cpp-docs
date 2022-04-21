@@ -1,3 +1,4 @@
+items: 
 - name: Docs
   tocHref: /
   topicHref: /
@@ -58,6 +59,9 @@
     - name: Code analysis
       tocHref: /cpp/code-quality/
       topicHref: /cpp/code-quality/index
+    - name: Code sanitizers
+      tocHref: /cpp/sanitizers/
+      topicHref: /cpp/sanitizers/index
     - name: C++ language
       tocHref: /cpp/cpp/
       topicHref: /cpp/cpp/index

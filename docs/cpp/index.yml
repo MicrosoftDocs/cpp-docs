@@ -6,7 +6,8 @@ metadata:
   title: C++ docs - get started, tutorials, reference.
   description: C++ programming reference for users of Microsoft C++ and Visual Studio.
   ms.topic: landing-page
-  ms.date: 05/08/2020
+  ms.date: 03/22/2022
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -25,7 +26,7 @@ landingContent:
           - text: Install C/C++ support in Visual Studio
             url: ../build/vscpp-step-0-installation.md
           - text: Download only the command-line build tools
-            url: https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019
+            url: https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022
       - linkListType: get-started
         links:
           - text: Hello world in Visual Studio with C++
@@ -35,7 +36,7 @@ landingContent:
       - linkListType: video
         links:
           - text: "Learn C++ - A general purpose language and library"
-            url: https://channel9.msdn.com/Series/cplusplus-language-library
+            url: /shows/cplusplus-language-library
       - linkListType: learn
         links:
           - text: Welcome back to C++ - Modern C++

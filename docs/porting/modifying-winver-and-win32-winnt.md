@@ -39,6 +39,7 @@ The macros in the example are set to target every version of the Windows 10 oper
 #define _WIN32_WINNT_WINBLUE                0x0603 // Windows 8.1
 #define _WIN32_WINNT_WINTHRESHOLD           0x0A00 // Windows 10
 #define _WIN32_WINNT_WIN10                  0x0A00 // Windows 10
+// . . .
 ```
 
 For a more fine-grained approach to versioning, you can use the NTDDI version constants in *sdkddkver.h*. Here are some of the macros defined by *sdkddkver.h* in Windows 10 SDK version 10.0.18362.0:
@@ -79,7 +80,7 @@ For a more fine-grained approach to versioning, you can use the NTDDI version co
 
 The **OSVER**, **SPVER**, and **SUBVER** macros can be used in your code to control conditional compilation for different levels of API support.
 
-You may not see all of these versions of Windows listed in the *sdkddkver.h* that you're looking at. That means you're probably using an older version of the Windows SDK. By default, new Windows projects in Visual Studio use the Windows 10 SDK.
+You may not see all of these versions of Windows listed in the *sdkddkver.h* that you're looking at. That means you're probably using an older version of the Windows SDK. (If you see more, you're probably looking at a newer version of the SDK.) By default, new Windows projects in Visual Studio use the latest Windows SDK that ships with Visual Studio. To use a newer SDK you've installed separately, you'll have to set the Windows SDK explicitly in your project properties.
 
 > [!NOTE]
 > Values are not guaranteed to work if you include internal MFC headers in your application.

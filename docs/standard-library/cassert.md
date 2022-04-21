@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;cassert&gt;"
-title: "&lt;cassert&gt;"
+description: "Learn more about: <cassert>"
+title: "<cassert>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cassert>"]
 helpviewer_keywords: ["cassert header"]
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
 ---
-# &lt;cassert&gt;
+# `<cassert>`
 
 Includes the C Standard library header \<assert.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C Standard library header are declared in the `std` namespace.
 

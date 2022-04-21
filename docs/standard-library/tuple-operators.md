@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;tuple&gt; operators"
-title: "&lt;tuple&gt; operators"
+description: "Learn more about: <tuple> operators"
+title: "<tuple> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["tuple/std::operator!=", "tuple/std::operator>", "tuple/std::operator>=", "tuple/std::operator<", "tuple/std::operator<=", "tuple/std::operator=="]
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
 ---
-# &lt;tuple&gt; operators
+# `<tuple>` operators
 
 ## <a name="op_neq"></a> operator!=
 
@@ -72,7 +72,7 @@ false
 true
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Compare `tuple` objects for less.
 
@@ -137,7 +137,7 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Compare `tuple` objects for less or equal.
 
@@ -267,7 +267,7 @@ true
 false
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Compare `tuple` objects for greater.
 
@@ -332,7 +332,7 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Compare `tuple` objects for greater or equal.
 

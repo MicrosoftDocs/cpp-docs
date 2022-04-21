@@ -1,18 +1,12 @@
 ---
-description: "Learn more about: &lt;thread&gt; functions"
-title: "&lt;thread&gt; functions"
+description: "Learn more about: <thread> functions"
+title: "<thread> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::get_id", "thread/std::sleep_for", "thread/std::sleep_until", "thread/std::swap", "thread/std::yield"]
 ms.assetid: bb1aa1ef-fe3f-4e2c-8b6e-e22dbf2f5a19
 helpviewer_keywords: ["std::get_id [C++]", "std::sleep_for [C++]", "std::sleep_until [C++]", "std::swap [C++]", "std::yield [C++]"]
 ---
-# &lt;thread&gt; functions
-
-[get_id](#get_id)\
-[sleep_for](#sleep_for)\
-[sleep_until](#sleep_until)\
-[swap](#swap)\
-[yield](#yield)
+# `<thread>` functions
 
 ## <a name="get_id"></a> get_id
 

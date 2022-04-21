@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;deque&gt; operators"
-title: "&lt;deque&gt; operators"
+description: "Learn more about: <deque> operators"
+title: "<deque> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["deque/std::operator!=", "deque/std::operator&gt;", "deque/std::operator&gt;=", "deque/std::operator&lt;", "deque/std::operator&lt;=", "deque/std::operator=="]
+f1_keywords: ["deque/std::operator!=", "deque/std::operator>", "deque/std::operator>=", "deque/std::operator<", "deque/std::operator<=", "deque/std::operator=="]
 ms.assetid: 482d7c92-54c7-493b-99e6-2a73617481a5
-helpviewer_keywords: ["std::operator!= (deque)", "std::operator&gt; (deque)", "std::operator&gt;= (deque)", "std::operator&lt; (deque)", "std::operator&lt;= (deque)", "std::operator== (deque)"]
+helpviewer_keywords: ["std::operator!= (deque)", "std::operator> (deque)", "std::operator>= (deque)", "std::operator< (deque)", "std::operator<= (deque)", "std::operator== (deque)"]
 ---
-# &lt;deque&gt; operators
+# `<deque>` operators
 
 ## <a name="op_neq"></a> operator!=
 
@@ -59,7 +59,7 @@ int main( )
 The deques are not equal.
 ```
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if the deque object on the left side of the operator is less than the deque object on the right side.
 
@@ -114,7 +114,7 @@ int main( )
 Deque c1 is less than deque c2.
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the deque object on the left side of the operator is less than or equal to the deque object on the right side.
 
@@ -227,7 +227,7 @@ The deques are equal.
 The deques are not equal.
 ```
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the deque object on the left side of the operator is greater than the deque object on the right side.
 
@@ -283,7 +283,7 @@ int main( )
 Deque c1 is greater than deque c2.
 ```
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the deque object on the left side of the operator is greater than or equal to the deque object on the right side.
 

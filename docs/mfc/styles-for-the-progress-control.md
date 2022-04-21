@@ -25,11 +25,11 @@ Use PBS_VERTICAL to orient the control vertically, rather than horizontally. Use
 
 Without PBS_SMOOTH style:
 
-![Standard progress bar style](../mfc/media/vc4ruw1.gif "Standard progress bar style")
+![Standard progress bar style.](../mfc/media/vc4ruw1.gif "Standard progress bar style")
 
 With PBS_SMOOTH and PBS_VERTICAL styles:
 
-![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "Progress bar style, smooth and vertical")
+![Progress bar style, smooth and vertical.](../mfc/media/vc4ruw2.gif "Progress bar style, smooth and vertical")
 
 For more information, see [Window Styles](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) in the *MFC Reference*.
 

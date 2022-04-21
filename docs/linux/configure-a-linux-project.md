@@ -16,9 +16,9 @@ This topic describes how to configure a MSBuild-based Linux project as described
 
 You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL).
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-**Visual Studio 2019 version 16.1**:
+**Visual Studio 2019 version 16.1** and later:
 
 - When you target WSL, you can avoid the copy operations needed to build and get IntelliSense that are required when you target a remote Linux system.
 
@@ -30,7 +30,7 @@ You can configure a Linux project to target a physical Linux machine, a virtual 
 
 To view configuration options, select the **Project > Properties** menu, or right-click on the project in **Solution Explorer** and select **Properties** from the context menu. The **General** settings appear.
 
-![General configuration](media/settings_general.png)
+![Screenshot of the Property Pages dialog General configuration.](media/settings_general.png)
 
 By default, an executable (.out) is built. To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** setting.
 
@@ -46,13 +46,13 @@ To change settings related to the remote Linux computer, configure the remote se
 
 - To specify a remote target Linux computer, use the **Remote Build Machine** entry. This will allow you to select one of the connections created previously. To create a new entry, see the [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md) section.
 
-   ![Build Machine](media/remote-build-machine-vs2019.png)
+   ![Screenshot showing the Remote Build Machine.](media/remote-build-machine-vs2019.png)
 
-   ::: moniker range="msvc-160"
+   ::: moniker range=">=msvc-160"
 
-   **Visual Studio 2019 version 16.7**: To target Windows Subsystem for Linux (WSL), set the **Platform Toolset** drop-down to **GCC for Windows Subsystem for Linux**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
+   **Visual Studio 2019 version 16.7** and later: To target Windows Subsystem for Linux (WSL), set the **Platform Toolset** drop-down to **GCC for Windows Subsystem for Linux**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
 
-   ![WSL build machine](media/wsl-remote-vs2019.png)
+   ![Screenshot showing the WSL build machine.](media/wsl-remote-vs2019.png)
 
    If you have side-by-side WSL installations, you can specify a different path here. For more information about managing multiple distros, see [Manage and configure Windows Subsystem for Linux](/windows/wsl/wsl-config#set-a-default-distribution).
 
@@ -69,9 +69,10 @@ To change settings related to the remote Linux computer, configure the remote se
 
 ## Copy sources (remote systems only)
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-This section doesn't apply when targeting WSL.
+> [!NOTE]
+> This section doesn't apply when targeting WSL.
 
 ::: moniker-end
 
@@ -89,7 +90,7 @@ When building on remote systems, the source files on your development PC are cop
 
 Since all compilation is happening on a remote computer (or WSL), several additional Build Events have been added to the Build Events section in Project Properties. These are **Remote Pre-Build Event**, **Remote Pre-Link Event**, and **Remote Post-Build Event**, and will occur on the remote computer before or after the individual steps in the process.
 
-![Build Events](media/settings_buildevents.png)
+![Screenshot of the Property Pages dialog showing Build Events.](media/settings_buildevents.png)
 
 ## <a name="remote_intellisense"></a> IntelliSense for headers on remote systems
 
@@ -112,13 +113,13 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 ![Screenshot showing the Options dialog box with Cross Platform > Connection Manager selected.](media/connection-manager-vs2019.png)
 
 You can enable logging to help troubleshoot problems:
 
-![Remote Logging](media/remote-logging-vs2019.png)
+![Screenshot of the Options dialog showing Remote Logging options.](media/remote-logging-vs2019.png)
 
 ::: moniker-end
 

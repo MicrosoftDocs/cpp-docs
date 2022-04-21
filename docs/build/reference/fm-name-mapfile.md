@@ -18,23 +18,21 @@ Tells the linker to produce a mapfile containing a list of segments in the order
 
 ## Remarks
 
-By default, the mapfile is given the base name of the corresponding C or C++ source file with a .MAP extension.
+By default, the map file is given the base name of the corresponding C or C++ source file with a *`.MAP`* extension.
 
 Specifying **/Fm** has the same effect as if you had specified the [/MAP (Generate Mapfile)](map-generate-mapfile.md) linker option.
 
 If you specify [/c (Compile Without Linking)](c-compile-without-linking.md) to suppress linking, **/Fm** has no effect.
 
-Global symbols in a mapfile usually have one or more leading underscores because the compiler adds a leading underscore to variable names. Many global symbols that appear in the mapfile are used internally by the compiler and the standard libraries.
+Global symbols in a map file usually have one or more leading underscores. It's because the compiler adds a leading underscore to variable names. Many global symbols that appear in the map file are used internally by the compiler and the standard libraries.
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Click the **Command Line** property page.
-
-1. Type the compiler option in the **Additional Options** box.
+1. Enter the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 

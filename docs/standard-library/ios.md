@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;ios&gt;"
-title: "&lt;ios&gt;"
+description: "Learn more about: <ios>"
+title: "<ios>"
 ms.date: "11/04/2016"
 f1_keywords: ["<ios>"]
 helpviewer_keywords: ["ios header"]
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
 ---
-# &lt;ios&gt;
+# `<ios>`
 
 Defines several types and functions basic to the operation of iostreams. This header is typically included for you by another iostream headers; you rarely include it directly.
 

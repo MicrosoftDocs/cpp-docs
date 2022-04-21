@@ -1,7 +1,7 @@
 ---
 title: "memset, wmemset"
 description: "Learn more about: memset, wmemset"
-ms.date: "1/15/2021"
+ms.date: "11/29/2021"
 api_name: ["wmemset", "memset", "_o_memset"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -11,7 +11,7 @@ helpviewer_keywords: ["wmemset function", "memset function"]
 ---
 # `memset`, `wmemset`
 
-Sets buffers to a specified character.
+Sets a buffer to a specified character.
 
 ## Syntax
 
@@ -85,14 +85,14 @@ int main( void )
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 Before: This is a test of the memset function
 After:  **** is a test of the memset function
 ```
 
-Here's an example of the use of wmemset:
+Here's an example of the use of `wmemset`:
 
 ```C
 // crt_wmemset.c
@@ -108,12 +108,12 @@ int main( void )
    wchar_t buffer[] = L"This is a test of the wmemset function";
 
    wprintf( L"Before: %s\n", buffer );
-   wmemset( buffer, '*', 4 );
+   wmemset( buffer, L'*', 4 );
    wprintf( L"After:  %s\n", buffer );
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 Before: This is a test of the wmemset function
@@ -126,5 +126,5 @@ After:  **** is a test of the wmemset function
 [`_memccpy`](memccpy.md)\
 [`memchr`, `wmemchr`](memchr-wmemchr.md)\
 [`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
-[`memcpy`, wmemcpy](memcpy-wmemcpy.md)\
-[`_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`_strnset`, `_strnset_l`, `_wcsnset`, `_wcsnset_l`, `_mbsnset`, `_mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)

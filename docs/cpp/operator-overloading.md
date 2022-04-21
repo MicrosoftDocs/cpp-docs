@@ -35,9 +35,9 @@ The name of an overloaded operator is **`operator`** *x*, where *x* is the opera
 |**&=**|Bitwise AND assignment|Binary|
 |**( )**|Function call|—|
 |**( )**|Cast Operator|Unary|
-|**&#42;**|Multiplication|Binary|
-|**&#42;**|Pointer dereference|Unary|
-|**&#42;=**|Multiplication assignment|Binary|
+|**`*`**|Multiplication|Binary|
+|**`*`**|Pointer dereference|Unary|
+|**`*=`**|Multiplication assignment|Binary|
 |**+**|Addition|Binary|
 |**+**|Unary Plus|Unary|
 |**++**|Increment <sup>1</sup>|Unary|
@@ -47,7 +47,7 @@ The name of an overloaded operator is **`operator`** *x*, where *x* is the opera
 |**--**|Decrement <sup>1</sup>|Unary|
 |**-=**|Subtraction assignment|Binary|
 |**->**|Member selection|Binary|
-|**->&#42;**|Pointer-to-member selection|Binary|
+|**`->*`**|Pointer-to-member selection|Binary|
 |**/**|Division|Binary|
 |**/=**|Division assignment|Binary|
 |**\<**|Less than|Binary|
@@ -63,9 +63,9 @@ The name of an overloaded operator is **`operator`** *x*, where *x* is the opera
 |**[ ]**|Array subscript|—|
 |**^**|Exclusive OR|Binary|
 |**^=**|Exclusive OR assignment|Binary|
-|**&#124;**|Bitwise inclusive OR|Binary|
-|**&#124;=**|Bitwise inclusive OR assignment|Binary|
-|**&#124;&#124;**|Logical OR|Binary|
+|**\|**|Bitwise inclusive OR|Binary|
+|**\|=**|Bitwise inclusive OR assignment|Binary|
+|**\|\|**|Logical OR|Binary|
 |**~**|One's complement|Unary|
 |**`delete`**|Delete|—|
 |**`new`**|New|—|
@@ -98,7 +98,7 @@ The operators shown in the following table cannot be overloaded. The table inclu
 |Operator|Name|
 |-|-|
 |**.**|Member selection|
-|**.&#42;**|Pointer-to-member selection|
+|**`.*`**|Pointer-to-member selection|
 |**::**|Scope resolution|
 |**? :**|Conditional|
 |**#**|Preprocessor convert to string|

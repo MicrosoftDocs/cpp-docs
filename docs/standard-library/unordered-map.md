@@ -1,12 +1,12 @@
 ---
-title: "&lt;unordered_map&gt;"
+title: "<unordered_map>"
 description: "API overview for the C++ Standard Library container class `map`."
 ms.date: "11/04/2016"
 f1_keywords: ["<unordered_map>"]
 helpviewer_keywords: ["unordered_map header"]
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
 ---
-# &lt;unordered_map&gt;
+# `<unordered_map>`
 
 Defines the container class templates [unordered_map](../standard-library/unordered-map-class.md) and [unordered_multimap](../standard-library/unordered-multimap-class.md) and their supporting templates.
 

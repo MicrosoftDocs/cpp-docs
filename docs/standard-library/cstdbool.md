@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;cstdbool&gt;"
-title: "&lt;cstdbool&gt;"
+description: "Learn more about: <cstdbool>"
+title: "<cstdbool>"
 ms.date: "07/11/2019"
 f1_keywords: ["<cstdbool>"]
 helpviewer_keywords: ["cstdbool header"]
 ms.assetid: 44ccb8b2-d808-4715-8097-58ba09ab33ed
 ---
-# &lt;cstdbool&gt;
+# `<cstdbool>`
 
 Includes the C standard library header \<stdbool.h> and adds the associated names to the `std` namespace.
 

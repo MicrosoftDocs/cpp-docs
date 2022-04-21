@@ -20,15 +20,15 @@ Visual Studio provides support for any project system or custom build tools that
 
 - **MSBuild** is the native project system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
-   ::: moniker range="msvc-160"
+   ::: moniker range=">=msvc-160"
 
-   ![New Project Templates](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 New Project Dialog")
+   ![Screenshot of the Create a new Project dialog showing new project templates.](../build/media/mathclient-project-name-2019.png)
 
    ::: moniker-end
 
    ::: moniker range="<=msvc-150"
 
-   ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+   ![Screenshot of the New Project dialog showing project templates.](media/vs2017-new-project.png)
 
    ::: moniker-end
 
@@ -42,29 +42,29 @@ Visual Studio provides support for any project system or custom build tools that
 
 Source control enables you to coordinate work among multiple developers, isolate in-progress work from production code, and backup your source code. Visual Studio supports Git and [Team Foundation Version Control \(TFVC\)](/azure/devops/repos/tfvc/) through its **Team Explorer** window.
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
-![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png )
 
 ::: moniker-end
 
 ::: moniker range="<=msvc-150"
 
-![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png )
 
 ::: moniker-end
 
-For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
+For more information about Git integration with repos in Azure, see [Share your code with Azure Repos and Visual Studio](/azure/devops/repos/git/share-your-code-in-git-vs). For information about Git integration with GitHub, see [Visual Studio and GitHub: Better together](https://visualstudio.github.com/).
 
 ## Obtain libraries
 
-Use the [vcpkg](../build/vcpkg.md) package manager to obtain and install third-party libraries. Over 900 open-source libraries are currently available in the catalog.
+Use the [vcpkg](https://vcpkg.io/) package manager to obtain and install third-party libraries. Over 1700 open-source library packages are currently available in the catalog.
 
 ## Create user interfaces with designers
 
 If your program has a user interface, you can use a designer to quickly populate it with controls such as buttons, list boxes and so on. When you drag a control from the toolbox window and drop it onto the design surface, Visual Studio generates the resources and code required to make it all work. You then write the code to customize the appearance and behavior.
 
-![Designer and Toolbox](media/vs2017-toolbox-designer.png "Visual Studio 2017 Toolbox and designer")
+![Screenshot of the Designer and Toolbox windows.](media/vs2017-toolbox-designer.png "Visual Studio 2017 Toolbox and designer")
 
 For more information about designing a user interface for a Universal Windows Platform app, see [Design and UI](https://developer.microsoft.com/windows/design).
 
@@ -74,7 +74,7 @@ For more information about creating a user interface for an MFC application, see
 
 After you create a project, all the project files are displayed in the **Solution Explorer** window. (A *solution* is a logical container for one or more related projects.) When you click on a .h or .cpp file in **Solution Explorer**, the file opens up in the code editor.
 
-![Solution Explorer and code editor](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Solution Explorer and code editor")
+![Screenshot of the Solution Explorer and code editor windows.](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Solution Explorer and code editor")
 
 The code editor is a specialized word processor for C++ source code. It color-codes language keywords, method and variable names, and other elements of your code to make the code more readable and easier to understand. It also provides tools for refactoring code, navigating between different files, and understanding how the code is structured. For more information, see [Writing and refactoring code](../ide/writing-and-refactoring-code-cpp.md).
 
@@ -86,7 +86,7 @@ A Windows program or DLL usually includes some *resources*, such as dialogs, ico
 
 Choose **Build** > **Build Solution** on the menu bar, or enter the **Ctrl+Shift+B** key combination to compile and link a project. Build errors and warnings are reported in the Error List (**Ctrl+\\, E**). The **Output** Window (**Alt+2**) shows information about the build process.
 
-![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
+![Screenshot of the Output Window and Error List.](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
 
 For more information about configuring builds, see [Working with Project Properties](../build/working-with-project-properties.md) and [Projects and build systems](../build/projects-and-build-systems-cpp.md).
 
@@ -96,7 +96,7 @@ You can also use the compiler (cl.exe) and many other build-related standalone t
 
 You can start debugging by pressing **F5**. Execution pauses on any breakpoints you have set (by pressing **F9**). You can also step through code one line at a time (**F10**), view the values of variables or registers, and even in some cases make changes in code and continue debugging without re-compiling. The following illustration shows a debugging session in which execution is stopped on a breakpoint. The values of the data structure members are visible in the **Watch Window**.
 
-![Debugging session](media/vs2017-debug-watch.png "Visual Studio 2017 debugging session")
+![Screenshot of a debugging session.](media/vs2017-debug-watch.png "Visual Studio 2017 debugging session")
 
 For more information, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).
 
@@ -104,7 +104,7 @@ For more information, see [Debugging in Visual Studio](/visualstudio/debugger/de
 
 Visual Studio includes the Microsoft Unit Test Framework for C++, as well as support for Boost.Test, Google Test, and CTest. Run your tests from the **Test Explorer** window:
 
-![Test Explorer](media/cpp-test-explorer-passed.png "Visual Studio 2017 Test Explorer")
+![Screenshot showing Test Explorer.](media/cpp-test-explorer-passed.png "Visual Studio 2017 Test Explorer")
 
 For more information, see [Verifying Code by Using Unit Tests](/visualstudio/test/unit-test-your-code) and [Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp).
 

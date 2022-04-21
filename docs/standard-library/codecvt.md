@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;codecvt&gt;"
-title: "&lt;codecvt&gt;"
+description: "Learn more about: <codecvt>"
+title: "<codecvt>"
 ms.date: "11/04/2016"
 f1_keywords: ["<codecvt>"]
 helpviewer_keywords: ["codecvt header"]
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
 ---
-# &lt;codecvt&gt;
+# `<codecvt>`
 
 Defines several class templates that describe objects based on class template [codecvt](../standard-library/codecvt-class.md). These objects can serve as [locale facets](../standard-library/locale-class.md#facet_class) that control conversions between a sequence of values of type `Elem` and a sequence of values of type **`char`**.
 

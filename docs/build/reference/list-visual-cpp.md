@@ -1,14 +1,14 @@
 ---
-description: "Learn more about: &lt;list&gt; and &lt;listheader&gt;"
-title: "&lt;list> (C++ documentation comments)"
-ms.date: "11/04/2016"
+description: "Learn more about: <list> and <listheader>"
+title: "<list> (C++ documentation comments)"
+ms.date: 12/03/2021
 f1_keywords: ["list"]
 helpviewer_keywords: ["list C++ XML tag", "<list> C++ XML tag"]
 ms.assetid: c792a10b-0451-422c-9aa0-604116e69d64
 ---
-# &lt;list&gt; and &lt;listheader&gt;
+# `<list>` and `<listheader>` documentation tags
 
-The \<listheader> block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading.
+The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading.
 
 ## Syntax
 
@@ -25,21 +25,21 @@ The \<listheader> block is used to define the heading row of either a table or d
 </list>
 ```
 
-#### Parameters
+### Parameters
 
-*term*<br/>
-A term to define, which will be defined in `description`.
+*`term`*\
+A term to define, which will be defined in *`description`*.
 
-*description*<br/>
-Either an item in a bullet or numbered list or the definition of a `term`.
+*`description`*\
+Either an item in a bullet or numbered list or the definition of a *`term`*.
 
 ## Remarks
 
-Each item in the list is specified with an \<item> block. When creating a definition list, you will need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`.
+Each item in the list is specified with an `<item>` block. When creating a definition list, you'll need to specify both *`term`* and *`description`*. However, for a table, bulleted list, or numbered list, you only need to supply an entry for *`description`*.
 
-A list or table can have as many \<item> blocks as needed.
+A list or table can have as many `<item>` blocks as needed.
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -62,4 +62,4 @@ class MyClass {};
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)

@@ -7,7 +7,7 @@ ms.assetid: 6e1ac94b-eb90-4abf-82b3-06944b947ebc
 ---
 # Provider Wizard-Generated Files
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 

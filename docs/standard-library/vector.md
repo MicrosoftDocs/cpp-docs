@@ -1,21 +1,20 @@
 ---
-description: "Learn more about: &lt;vector&gt;"
-title: "&lt;vector&gt;"
+description: "Learn more about: <vector>"
+title: "<vector>"
 ms.date: "11/04/2016"
 f1_keywords: ["<vector>"]
 helpviewer_keywords: ["vector header"]
-ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
 ---
-# &lt;vector&gt;
+# `<vector>`
 
 Defines the container class template vector and several supporting templates.
 
 The `vector` is a container that organizes elements of a given type in a linear sequence. It enables fast random access to any element, and dynamic additions and removals to and from the sequence. The `vector` is the preferred container for a sequence when random-access performance is at a premium.
 
 > [!NOTE]
-> The \<vector> library also uses the `#include <initializer_list>` statement.
+> The `<vector>` library also uses the `#include <initializer_list>` statement.
 
-For more information about the class `vector`, see [vector Class](../standard-library/vector-class.md). For information about the specialization `vector<bool>`, see [vector\<bool> Class](../standard-library/vector-bool-class.md).
+For more information about the class `vector`, see [`vector` Class](../standard-library/vector-class.md). For information about the specialization `vector<bool>`, see [`vector\<bool>` Class](../standard-library/vector-bool-class.md).
 
 ## Syntax
 
@@ -70,16 +69,16 @@ void swap (
 
 ### Parameters
 
-*Type*\
+*`Type`*\
 The template parameter for the type of data stored in the vector.
 
-*Allocator*\
+*`Allocator`*\
 The template parameter for the stored allocator object responsible for memory allocation and deallocation.
 
-*left*\
+*`left`*\
 The first (left) vector in a compare operation
 
-*right*\
+*`right`*\
 The second (right) vector in a compare operation.
 
 ## Members
@@ -88,31 +87,31 @@ The second (right) vector in a compare operation.
 
 |Name|Description|
 |-|-|
-|[operator! =](../standard-library/vector-operators.md#op_neq)|Tests if the vector object on the left side of the operator is not equal to the vector object on the right side.|
-|[operator<](../standard-library/vector-operators.md#op_lt)|Tests if the vector object on the left side of the operator is less than the vector object on the right side.|
-|[operator\<=](../standard-library/vector-operators.md#op_gt_eq)|Tests if the vector object on the left side of the operator is less than or equal to the vector object on the right side.|
-|[operator==](../standard-library/vector-operators.md#op_eq_eq)|Tests if the vector object on the left side of the operator is equal to the vector object on the right side.|
-|[operator>](../standard-library/vector-operators.md#op_gt)|Tests if the vector object on the left side of the operator is greater than the vector object on the right side.|
-|[operator>=](../standard-library/vector-operators.md#op_gt_eq)|Tests if the vector object on the left side of the operator is greater than or equal to the vector object on the right side.|
+|[`operator! =`](../standard-library/vector-operators.md#op_neq)|Tests if the `vector` object on the left side of the operator is not equal to the `vector` object on the right side.|
+|[`operator<`](../standard-library/vector-operators.md#op_lt)|Tests if the `vector` object on the left side of the operator is less than the `vector` object on the right side.|
+|[`operator\<=`](../standard-library/vector-operators.md#op_gt_eq)|Tests if the `vector` object on the left side of the operator is less than or equal to the `vector` object on the right side.|
+|[`operator==`](../standard-library/vector-operators.md#op_eq_eq)|Tests if the `vector` object on the left side of the operator is equal to the `vector` object on the right side.|
+|[`operator>`](../standard-library/vector-operators.md#op_gt)|Tests if the `vector` object on the left side of the operator is greater than the `vector` object on the right side.|
+|[`operator>=`](../standard-library/vector-operators.md#op_gt_eq)|Tests if the `vector` object on the left side of the operator is greater than or equal to the `vector` object on the right side.|
 
 ### Classes
 
 |Name|Description|
 |-|-|
-|[vector Class](../standard-library/vector-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
+|[`vector Class`](../standard-library/vector-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
 
 ### Specializations
 
 |Name|Description|
 |-|-|
 |hash|Returns a hash of the vector.|
-|[vector\<bool> Class](../standard-library/vector-bool-class.md)|A full specialization of the class template vector for elements of type **`bool`** with an allocator for the underlying type used by the specialization.|
+|[`vector\<bool> Class`](../standard-library/vector-bool-class.md)|A full specialization of the class template vector for elements of type **`bool`** with an allocator for the underlying type used by the specialization.|
 
 ## Requirements
 
-**Header:** \<vector>
+**Header:** `<vector>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 

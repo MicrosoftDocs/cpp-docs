@@ -357,7 +357,7 @@ unsigned long InternalRelease();
 
 This method is protected.
 
-## <a name="operator-ampersand"></a> ComPtr::operator&amp;
+## <a name="operator-ampersand"></a> ComPtr::operator&
 
 Releases the interface associated with this `ComPtr` object and then retrieves the address of the `ComPtr` object.
 
@@ -375,7 +375,7 @@ A weak reference to the current `ComPtr`.
 
 This method differs from [ComPtr::GetAddressOf](#getaddressof) in that this method releases a reference to the interface pointer. Use `ComPtr::GetAddressOf` when you require the address of the interface pointer but don't want to release that interface.
 
-## <a name="operator-arrow"></a> ComPtr::operator-&gt;
+## <a name="operator-arrow"></a> `ComPtr::operator->`
 
 Retrieves a pointer to the type specified by the current template parameter.
 

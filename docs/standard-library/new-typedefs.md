@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;new&gt; typedefs"
-title: "&lt;new&gt; typedefs"
+description: "Learn more about: <new> typedefs"
+title: "<new> typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::new_handler"]
 ms.assetid: aef01de1-06b5-4b6c-aebc-2c9f423d7e47
 ---
-# &lt;new&gt; typedefs
+# `<new>` typedefs
 
 ## <a name="hardware_constructive_interference_size"></a> hardware_constructive_interference_size
 

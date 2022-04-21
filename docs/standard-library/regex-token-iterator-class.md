@@ -259,7 +259,7 @@ The iterator to compare to.
 
 The member function returns `it == right.it && subs == right.subs && pos == right.pos`.
 
-## <a name="op_arrow"></a> regex_token_iterator::operator-&gt;
+## <a name="op_arrow"></a> `regex_token_iterator::operator->`
 
 Accesses the designated submatch.
 

@@ -9,7 +9,7 @@ ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 
 In "single inheritance," a common form of inheritance, classes have only one base class. Consider the relationship illustrated in the following figure.
 
-![Basic single&#45;inheritance graph](../cpp/media/vc38xj1.gif "Basic single&#45;inheritance graph") <br/>
+![Diagram of a basic single inheritance hierarchy.](../cpp/media/vc38xj1.gif)<br/>
 Simple Single-Inheritance Graph
 
 Note the progression from general to specific in the figure. Another common attribute found in the design of most class hierarchies is that the derived class has a "kind of" relationship with the base class. In the figure, a `Book` is a kind of a `PrintedDocument`, and a `PaperbackBook` is a kind of a `book`.
@@ -36,7 +36,7 @@ In the preceding example, the access specifier **`public`** is used. The meaning
 
 A class can serve as the base class for many specific classes, as illustrated in the following figure.
 
-![Directed acyclic graph](../cpp/media/vc38xj2.gif "Directed acyclic graph") <br/>
+![Diagram showing an inheritance hierarchy as a directed acyclic graph.](../cpp/media/vc38xj2.gif "Directed acyclic graph") <br/>
 Sample of Directed Acyclic Graph
 
 In the diagram shown above, called a "directed acyclic graph" (or "DAG"), some of the classes are base classes for more than one derived class. However, the reverse is not true: there is only one direct base class for any given derived class. The graph in the figure depicts a "single inheritance" structure.

@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;cuchar&gt;"
-title: "&lt;cuchar&gt;"
+description: "Learn more about: <cuchar>"
+title: "<cuchar>"
 ms.date: "07/17/2019"
 f1_keywords: ["<cuchar>"]
 helpviewer_keywords: ["cuchar header"]
 ---
-# &lt;cuchar&gt;
+# `<cuchar>`
 
 Includes the C standard library header \<uchar.h> and adds the associated names to the `std` namespace.
 

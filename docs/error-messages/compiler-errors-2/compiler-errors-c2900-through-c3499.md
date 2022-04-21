@@ -72,7 +72,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2953](compiler-error-c2953.md)|'*type*': class template has already been defined|
 |Compiler error C2954|instruction word argument not in range|
 |[Compiler error C2955](compiler-error-c2955.md)|'*type*': use of class template/generic requires template/generic argument list|
-|Compiler error C2956|sized deallocation function 'operator delete(void*, size_t)' would be chosen as placement deallocation function.|
+|[Compiler error C2956](compiler-error-c2956.md)|usual deallocation function '*function*' would be chosen as placement deallocation function|
 |[Compiler error C2957](compiler-error-c2957.md)|'*token*': invalid left delimiter: expected '<'|
 |[Compiler error C2958](compiler-error-c2958.md)|the left *delimiter* found at '*file*(*line_number*)' was not matched correctly|
 |[Compiler error C2959](compiler-error-c2959.md)|a generic class or function may not be a member of a template|
@@ -120,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 10/18/2020
+ms.date: 12/01/2021
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -38,12 +38,99 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2019 version 16.5 | 19.25.28610.0 |
 | Visual Studio 2019 version 16.6 | 19.26.28805.0 |
 | Visual Studio 2019 version 16.7 | 19.27.29112.0 |
+| Visual Studio 2019 version 16.8 | 19.28.29333.0 |
+| Visual Studio 2019 version 16.9 | 19.28.29700.0 |
+| Visual Studio 2019 version 16.10 | 19.29.30000.0 |
+| Visual Studio 2019 version 16.11 | 19.29.30100.0 |
+| Visual Studio 2022 version 17.0 RTW | 19.30 |
+| Visual Studio 2022 version 17.1 | 19.31 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
+::: moniker range=">= msvc-170"
+
+## Warnings introduced in Visual Studio 2022 version 17.1 (compiler version 19.31)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.30`**.
+
+| Warning | Message |
+|--|--|
+| C5251 | *segment-name* changed after including header |
+| C5253 | a non-local lambda cannot have a capture default |
+| C5254 | language feature 'terse static assert' requires compiler flag '`/std:c++17`' |
+
+## Warnings introduced in Visual Studio 2022 version 17.0 (compiler version 19.30)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.29`**.
+
+| Warning | Message |
+|--|--|
+| C5244 | '#include \<*filename*>' in the purview of module '*module-name-1*' appears erroneous.  Consider moving that directive before the module declaration, or replace the textual inclusion with 'import \<*filename*>;'. |
+| C5245 | '*function*': unreferenced function with internal linkage has been removed |
+| C5246 | '*member*': the initialization of a subobject should be wrapped in braces |
+| C5249 | '*bitfield*' of type '*enumeration_name*' has named enumerators with values that cannot be represented in the given bit field width of '*bitfield_width*'. |
+| C5250 | '*function_name*': intrinsic function not declared. |
+| C5252 | Multiple different types resulted in the same XFG type-hash *hash-value*; the PDB will only record information for one of them |
+
+::: moniker-end
+
 ::: moniker range=">= msvc-160"
+
+## Warnings introduced in Visual Studio 2019 version 16.11 (compiler version 19.29.30100.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.29.30099`**.
+
+| Warning | Message |
+|--|--|
+| C5247 | section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior |
+| C5248 | section '*section-name*' is reserved for C++ dynamic initialization. Variables manually put into the section may be optimized out and their order relative to compiler generated dynamic initializers is unspecified |
+
+## Warnings introduced in Visual Studio 2019 version 16.10 (compiler version 19.29.30000.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.28`**.
+
+| Warning | Message |
+|--|--|
+| C5233 | explicit lambda capture '*identifier*' is not used |
+| C5234 | file system error: '*filename*' is not a valid header-name; ignoring |
+| C5235 | JSON parse error: issue; ignoring '*filename*' |
+| C5236 | JSON ill-formed: issue; ignoring '*filename*' |
+| C5237 | cannot resolve header unit entry '*string*' to a header file in '*filename*'; ignoring entry |
+| C5238 | file system error: cannot open '*filename*' for reading; ignoring |
+| C5239 | '*Symbol*': potentially-throwing function called from a function declared `__declspec(nothrow)`. Undefined behavior may occur if an exception is thrown. |
+| C5240 | '*attribute-string*': attribute is ignored in this syntactic position |
+| C5241 | '`/exportHeader`' usage to lookup header-name is deprecated; prefer '`/headerName:arg-1 arg-2=filename`' |
+| C5242 | syntax error in pragma '*pragma-name*' |
+| C5243 | '*Type-name*': using incomplete class '*symbol*' can cause potential one definition rule violation due to ABI limitation |
+
+## Warnings introduced in Visual Studio 2019 version 16.9 (compiler version 19.28.29700.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.28.29699`**.
+
+| Warning | Message |
+|--|--|
+| C5232 | in C++20 this comparison calls '*identifier*' recursively |
+
+## Warnings introduced in Visual Studio 2019 version 16.8 (compiler version 19.28.29333.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.27`**.
+
+| Warning | Message |
+|--|--|
+| C5072 | `ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting` |
+| C5211 | `'keyword-1' has been deprecated; prefer using 'keyword-2' instead` |
+| C5222 | `'attribute-name': all unscoped attribute names are reserved for future standardization` |
+| C5223 | `all attribute names in the attribute namespace 'msvc' are reserved for the implementation` |
+| C5224 | `all attribute names in the attribute namespace 'a-namespace' are reserved for future standardization` |
+| C5225 | `'symbol': exported inline function defined in a private module fragment is a non-standard extension` |
+| C5226 | `'symbol': exported template defined in private module fragment has no reachable instantiation` |
+| C5227 | `nonstandard extension, resolved 'symbol' to 'instance' which is not visible with /permissive- on.` |
+| C5228 | `nonstandard extension, 'identifier' resolved to a member of a dependent base. This lookup is not allowed under /permissive-.` |
+| C5229 | `nonstandard extension, the hidden friend function 'function-name' was found by name lookup which isn't allowed under /permissive-.` |
+| C5230 | `nonstandard extension, 'identifier' was resolved to 'symbol' under /permissive. Under /permissive- it would resolve to 'other-symbol'.` |
+| C5231 | `the expression 'co_await promise.final_suspend()' must be non-throwing`)
 
 ## Warnings introduced in Visual Studio 2019 version 16.7 (compiler version 19.27.29112.0)
 
@@ -94,7 +181,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 | Warning | Message |
 |--|--|
-| C5200 | `feature 'feature-name' requires compiler flag 'option-name'` | // Warning equivalent to C2429 for language features
+| C5200 | `feature 'feature-name' requires compiler flag 'option-name'` |
 | C5201 | `a module declaration can appear only at the start of a translation unit unless a global module fragment is used` |
 | C5202 | `a global module fragment can only contain preprocessor directives` |
 | C5203 | `a parenthesized declarator name after 'explicit' will be considered an explicit-specifier in C++20` |

@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;iterator&gt;"
-title: "&lt;iterator&gt;"
+description: "Learn more about: <iterator>"
+title: "<iterator>"
 ms.date: "11/04/2016"
 f1_keywords: ["<iterator>"]
 helpviewer_keywords: ["iterator header"]
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
 ---
-# &lt;iterator&gt;
+# `<iterator>`
 
 Defines the iterator primitives, predefined iterators and stream iterators, as well as several supporting templates. The predefined iterators include insert and reverse adaptors. There are three classes of insert iterator adaptors: front, back, and general. They provide insert semantics rather than the overwrite semantics that the container member function iterators provide.
 

@@ -10,4 +10,4 @@ ms.assetid: 6513c6b9-6772-4849-b96c-5bb093d54de6
 
 > assuming #pragma pointers_to_members(full_generality, inheritance)
 
-A **#pragma pointers_to_members(** *single* &#124; *multiple* &#124; *virtual* **)** was issued without an accompanying **#pragma pointers_to_members(full_generality)**.
+A `#pragma pointers_to_members( single | multiple | virtual )` was issued without an accompanying `#pragma pointers_to_members(full_generality)`.

@@ -3,12 +3,13 @@ title: C++ Build Insights | Automate build tool chain analysis # < 60 chars
 summary: Use C++ Build Insights for real-time and automated build analysis and optimization. # < 160 chars
 
 metadata:
-  title: C++ Build Insights # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: C++ Build Insights
   description: Learn how to use C++ Build Insights to analyze and optimize your builds.
   ms.topic: landing-page
   author: corob-msft
   ms.author: corob
   ms.date: 05/26/2020
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

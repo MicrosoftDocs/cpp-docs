@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: Using Replaceable Parameters (The Registrar&#39;s Preprocessor)"
+description: "Learn more about: Using Replaceable Parameters (The Registrar's Preprocessor)"
 title: "Using Replaceable Parameters (ATL Registrar)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["%MODULE%"]
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
 ---
-# Using Replaceable Parameters (The Registrar&#39;s Preprocessor)
+# Using Replaceable Parameters (The Registrar's Preprocessor)
 
 Replaceable parameters allow a Registrar's client to specify run-time data. To do this, the Registrar maintains a replacement map into which it enters the values associated with the replaceable parameters in your script. The Registrar makes these entries at run time.
 

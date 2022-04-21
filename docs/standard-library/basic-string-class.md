@@ -106,7 +106,7 @@ The type that represents the stored allocator object that encapsulates details a
 |-|-|
 |[`operator+=`](#op_add_eq)|Appends characters to a string.|
 |[`operator=`](#op_eq)|Assigns new character values to the contents of a string.|
-|[`operator`&#91;&#93;](#op_at)|Provides a reference to the character with a specified index in a string.|
+|[`operator[]`](#op_at)|Provides a reference to the character with a specified index in a string.|
 
 ### Literals
 
@@ -508,7 +508,7 @@ A reference to the character of the string at the position specified by the para
 
 The first element of the string has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string of length *n* has an *n*th element indexed by the number *n -* 1.
 
-The member [`operator`&#91;&#93;](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
+The member [`operator[]`](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
 
 The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less that zero or greater than or equal to the size of the string, passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
 
@@ -644,7 +644,7 @@ basic_string(
 ### Parameters
 
 *`ptr`*\
-The C-string whose characters are to be used to initialize the `string` being constructed. This value can't be a null pointer.
+The C-string whose characters are to be used to initialize the `string` being constructed. This value can't be a null pointer unless *`count`* is zero.
 
 *`alloc_type`*\
 The storage allocator class for the string object being constructed.
@@ -1575,7 +1575,7 @@ If you modify the contents of the string returned by the `const` overload of `da
 
 Before C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
 
-The non-`const` overload is new in C++17. To use it, specify the **`/std:c++17`** or **`/std:c++latest`** compiler option.
+The non-`const` overload is new in C++17. To use it, specify the **`/std:c++17`** or later compiler option.
 
 ### Example
 
@@ -1820,14 +1820,14 @@ Null-terminated character string containing the suffix to look for.
 
 ### Remarks
 
-`ends_with()` is new in C++20. To use it, specify the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+`ends_with()` is new in C++20. To use it, specify the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 See [`starts_with`](#starts_with) to check if a string starts with the specified prefix.
 
 ### Example
 
 ```cpp
-// Requires /std:c++latest
+// Requires /std:c++20 or /std:c++latest
 #include <string>
 #include <iostream>
 
@@ -3916,7 +3916,7 @@ An iterator, const_pointer, or const_iterator addressing the first character to 
 An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
 
 *`count`*\
-The number of times *char_value* is copied into the operand string.
+The number of times *`char_value`* is copied into the operand string.
 
 ### Return value
 
@@ -4641,14 +4641,14 @@ Null-terminated character string containing the prefix to look for.
 
 ### Remarks
 
-`starts_with()` is new in C++20. To use it, specify the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+`starts_with()` is new in C++20. To use it, specify the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 See [`ends_with`](#ends_with) to see if a string ends with the specified suffix.
 
 ### Example
 
 ```cpp
-// Requires /std:c++latest
+// Requires /std:c++20 or /std:c++latest
 #include <string>
 #include <iostream>
 

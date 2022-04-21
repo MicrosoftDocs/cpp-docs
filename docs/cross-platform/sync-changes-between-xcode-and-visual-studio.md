@@ -14,7 +14,7 @@ To use the Remote Machine options, your project must be an iOS Application proje
 
 In **Solution Explorer**, right-click on an iOS Application project to show the context menu. Select the **Remote Machine** item to show the remote options available.
 
-![The Remote Machine menu item in Solution Explorer](../cross-platform/media/cppmdd-u2-remotemachine-menu.jpg "The Remote Machine menu item in Solution Explorer")
+![The Remote Machine menu item in Solution Explorer.](../cross-platform/media/cppmdd-u2-remotemachine-menu.jpg "The Remote Machine menu item in Solution Explorer")
 
 These commands let you open your project in Xcode, move local changes or the entire project between Visual Studio and Xcode, and clean the temporary files on the remote machine.
 

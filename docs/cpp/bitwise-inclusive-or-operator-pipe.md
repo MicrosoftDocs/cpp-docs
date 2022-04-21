@@ -1,12 +1,12 @@
 ---
-title: "Bitwise inclusive OR operator: &#124;"
+title: "Bitwise inclusive OR operator: |"
 description: "The C++ standard language bitwise inclusive OR operator syntax and use."
 ms.date: 07/23/2020
 f1_keywords: ["|", "bitor_cpp"]
 helpviewer_keywords: ["OR operator [C++], bitwise inclusive", "bitwise operators [C++], OR operator", "inclusive OR operator", "| operator"]
 ms.assetid: 4c8a6a68-d828-447d-875a-aedb4ce3aa9a
 ---
-# Bitwise inclusive OR operator: &#124;
+# Bitwise inclusive OR operator: `|`
 
 ## Syntax
 
@@ -18,7 +18,7 @@ The bitwise inclusive OR operator (**`|`**) compares each bit of its first opera
 
 Both operands to the operator must have integral types. The usual arithmetic conversions covered in [Standard Conversions](standard-conversions.md) are applied to the operands.
 
-## Operator keyword for &#124;
+## Operator keyword for `|`
 
 C++ specifies **`bitor`** as an alternative spelling for **`|`**. In C, the alternative spelling is provided as a macro in the \<iso646.h> header. In C++, the alternative spelling is a keyword; use of \<iso646.h> or the C++ equivalent \<ciso646> is deprecated. In Microsoft C++, the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to enable the alternative spelling.
 

@@ -44,14 +44,14 @@ friend F;
 
 The first form introduces a new class F if no existing class by that name was found in the innermost namespace. **C++11**: The second form does not introduce a new class; it can be used when the class has already been declared, and it must be used when declaring a template type parameter or a typedef as a friend.
 
-Use `class friend F` when the referenced type has not yet been declared:
+Use `friend class F` when the referenced type has not yet been declared:
 
 ```cpp
 namespace NS
 {
     class M
     {
-        class friend F;  // Introduces F but doesn't define it
+        friend class F;  // Introduces F but doesn't define it
     };
 }
 ```
@@ -221,7 +221,7 @@ Friendship is not inherited, meaning that classes derived from `YourOtherClass` 
 
 The following figure shows four class declarations: `Base`, `Derived`, `aFriend`, and `anotherFriend`. Only class `aFriend` has direct access to the private members of `Base` (and to any members `Base` might have inherited).
 
-![Implications of friend relationship](../cpp/media/vc38v41.gif "Implications of friend relationship") <br/>
+![Diagram showing the derivation implications of a friend relationship.](../cpp/media/vc38v41.gif "Implications of friend relationship") <br/>
 Implications of friend relationship
 
 ## Inline friend definitions

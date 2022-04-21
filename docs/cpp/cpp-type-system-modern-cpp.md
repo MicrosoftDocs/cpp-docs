@@ -7,7 +7,7 @@ ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
 ---
 # C++ type system
 
-The concept of *type* is very important in C++. Every variable, function argument, and function return value must have a type in order to be compiled. Also, every expression (including literal values) is implicitly given a type by the compiler before it is evaluated. Some examples of types include **`int`** to store integral values, **`double`** to store floating-point values (also known as *scalar* data types), or the Standard Library class [std::basic_string](../standard-library/basic-string-class.md) to store text. You can create your own type by defining a **`class`** or **`struct`**. The type specifies the amount of memory that will be allocated for the variable (or expression result), the kinds of values that may be stored in that variable, how those values (as bit patterns) are interpreted, and the operations that can be performed on it. This article contains an informal overview of the major features of the C++ type system.
+The concept of *type* is very important in C++. Every variable, function argument, and function return value must have a type in order to be compiled. Also, every expression (including literal values) is implicitly given a type by the compiler before it is evaluated. Some examples of types include **`int`** to store integer values, **`double`** to store floating-point values (also known as *scalar* data types), or the Standard Library class [std::basic_string](../standard-library/basic-string-class.md) to store text. You can create your own type by defining a **`class`** or **`struct`**. The type specifies the amount of memory that will be allocated for the variable (or expression result), the kinds of values that may be stored in that variable, how those values (as bit patterns) are interpreted, and the operations that can be performed on it. This article contains an informal overview of the major features of the C++ type system.
 
 ## Terminology
 
@@ -52,7 +52,7 @@ The fundamental types are recognized by the compiler, which has built-in rules t
 
 The following illustration shows the relative sizes of the built-in types in the Microsoft C++ implementation:
 
-![Size in bytes of built&#45;in types](../cpp/media/built-intypesizes.png "Size in bytes of built&#45;in types")
+![Diagram of the relative size in bytes of several built in types.](../cpp/media/built-intypesizes.png)
 
 The following table lists the most frequently used fundamental types, and their sizes in the Microsoft C++ implementation:
 
@@ -89,7 +89,7 @@ A **`const`** type is distinct from its non-const version; for example, **`const
 
 ## String types
 
-Strictly speaking, the C++ language has no built-in string type; **`char`** and **`wchar_t`** store single characters - you must declare an array of these types to approximate a string, adding a terminating null value (for example, ASCII `'\0'`) to the array element one past the last valid character (also called a *C-style string*). C-style strings required much more code to be written or the use of external string utility library functions. But in modern C++, we have the Standard Library types `std::string` (for 8-bit **`char`**-type character strings) or `std::wstring` (for 16-bit **`wchar_t`**-type character strings). These C++ Standard Library containers can be thought of as native string types because they are part of the standard libraries that are included in any compliant C++ build environment. Simply use the `#include <string>` directive to make these types available in your program. (If you are using MFC or ATL, the `CString` class is also available, but is not part of the C++ standard.) The use of null-terminated character arrays (the C-style strings previously mentioned) is strongly discouraged in modern C++.
+Strictly speaking, the C++ language has no built-in string type; **`char`** and **`wchar_t`** store single characters - you must declare an array of these types to approximate a string, adding a terminating null value (for example, ASCII `'\0'`) to the array element one past the last valid character (also called a *C-style string*). C-style strings required much more code to be written or the use of external string utility library functions. But in modern C++, we have the Standard Library types `std::string` (for 8-bit **`char`**-type character strings) or `std::wstring` (for 16-bit **`wchar_t`**-type character strings). These C++ Standard Library containers can be thought of as native string types because they are part of the standard libraries that are included in any conformant C++ build environment. Simply use the `#include <string>` directive to make these types available in your program. (If you are using MFC or ATL, the `CString` class is also available, but is not part of the C++ standard.) The use of null-terminated character arrays (the C-style strings previously mentioned) is strongly discouraged in modern C++.
 
 ## User-defined types
 

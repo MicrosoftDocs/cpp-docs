@@ -45,7 +45,7 @@ The managed type to be embedded.
 
 |Name|Description|  
 |---------|-----------|
-|[auto_handle::operator-&gt;](#operator-arrow)|The member access operator.|
+|[`auto_handle::operator->`](#operator-arrow)|The member access operator.|
 |[auto_handle::operator=](#operator-assign)|Assignment operator.|
 |[auto_handle::operator auto_handle](#operator-auto-handle)|Type-cast operator between `auto_handle` and compatible types.|  
 |[auto_handle::operator bool](#operator-bool)|Operator for using `auto_handle` in a conditional expression.|
@@ -426,7 +426,7 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="operator-arrow"></a> auto_handle::operator-&gt;
+## <a name="operator-arrow"></a> `auto_handle::operator->`
 
 The member access operator.
 

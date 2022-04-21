@@ -23,14 +23,13 @@ class CTabCtrl : public CWnd
 |----------|-----------------|
 |[`CTabCtrl::CTabCtrl`](#ctabctrl) | Constructs a `CTabCtrl` object.|
 
-
 ### Public methods
 
 |Name  |Description  |
 |---------|---------|
 |[`CTabCtrl::AdjustRect`](#adjustrect) | Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area. |
 |[`CTabCtrl::Create`](#create) | Creates a tab control and attaches it to an instance of a `TabCtrl` object  |
-|[`CTabCtrl::CreateEx`](#createex) | Creates a tab control with the specified Windows extended styles and attaches it to an instance of a CTabCtrl object.|
+|[`CTabCtrl::CreateEx`](#createex) | Creates a tab control with the specified Windows extended styles and attaches it to an instance of a `CTabCtrl` object.|
 |[`CTabCtrl::DeleteAllItems`](#deleteallitems) | Removes all items from a tab control.|
 |[`CTabCtrl::DeleteItem`](#deleteitem) | Removes an item from a tab control.|
 |[`CTabCtrl::DeselectAll`](#deselectall) | Resets items in a tab control, clearing any that were pressed.|
@@ -122,7 +121,7 @@ Specifies the tab control's style. Apply any combination of [tab control styles]
 Specifies the tab control's size and position. It can be either a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object or a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure.
 
 *`pParentWnd`*\
-Specifies the tab control's parent window, usually a `CDialog`. It must not be NULL.
+Specifies the tab control's parent window, usually a `CDialog`. It must not be `NULL`.
 
 *`nID`*\
 Specifies the tab control's ID.
@@ -165,7 +164,7 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *`dwExStyle`*\
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *`dwExStyle`* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *`dwExStyle`* parameter for [`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *`dwStyle`*\
 Specifies the tab control's style. Apply any combination of [tab control styles](/windows/win32/Controls/tab-control-styles), described in the Windows SDK. See **Remarks** in [`Create`](#create) for a list of window styles that you can also apply to the control.
@@ -185,9 +184,9 @@ Nonzero if successful otherwise 0.
 
 ### Remarks
 
-Use `CreateEx` instead of [`Create`](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
+Use `CreateEx` instead of [`Create`](#create) to apply extended Windows styles, specified by the Windows extended style preface **`WS_EX_`**.
 
-`CreateEx` creates the control with the extended Windows styles specified by *`dwExStyle`*. Set extended styles specific to a control using [`SetExtendedStyle`](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as TCS_EX_FLATSEPARATORS. For more information, see the styles described in [Tab Control Extended Styles](/windows/win32/Controls/tab-control-extended-styles) in the Windows SDK.
+`CreateEx` creates the control with the extended Windows styles specified by *`dwExStyle`*. Set extended styles specific to a control using [`SetExtendedStyle`](#setextendedstyle). For example, use `CreateEx` to set such styles as `WS_EX_CONTEXTHELP`, but use `SetExtendedStyle` to set such styles as `TCS_EX_FLATSEPARATORS`. For more information, see the styles described in [Tab Control Extended Styles](/windows/win32/Controls/tab-control-extended-styles) in the Windows SDK.
 
 ## <a name="ctabctrl"></a> `CTabCtrl::CTabCtrl`
 
@@ -306,7 +305,7 @@ Represents the extended styles currently in use for the tab control. This value 
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [TCM_GETEXTENDEDSTYLE](/windows/win32/Controls/tcm-getextendedstyle), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [`TCM_GETEXTENDEDSTYLE`](/windows/win32/Controls/tcm-getextendedstyle), as described in the Windows SDK.
 
 ## <a name="getimagelist"></a> `CTabCtrl::GetImageList`
 
@@ -318,7 +317,7 @@ CImageList* GetImageList() const;
 
 ### Return Value
 
-If successful, a pointer to the image list of the tab control; otherwise, NULL.
+If successful, a pointer to the image list of the tab control; otherwise, `NULL`.
 
 ## <a name="getitem"></a> `CTabCtrl::GetItem`
 
@@ -367,7 +366,7 @@ Index into the tab control's image list, or -1 if there is no image for the tab.
 
 - `lParam`
 
-   Application-defined data associated with the tab. If there are more than 4 bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](/windows/win32/api/commctrl/ns-commctrl-tcitemheaderw)structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.
+   Application-defined data associated with the tab. If there are more than 4 bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [`TCITEMHEADER`](/windows/win32/api/commctrl/ns-commctrl-tcitemheaderw)structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.
 
 ### Example
 
@@ -458,7 +457,7 @@ The number of rows of tabs in the tab control.
 
 ### Remarks
 
-Only tab controls that have the TCS_MULTILINE style can have multiple rows of tabs.
+Only tab controls that have the `TCS_MULTILINE` style can have multiple rows of tabs.
 
 ## <a name="gettooltips"></a> `CTabCtrl::GetToolTips`
 
@@ -470,11 +469,11 @@ CToolTipCtrl* GetToolTips() const;
 
 ### Return Value
 
-Handle of the tool tip control if successful; otherwise NULL.
+Handle of the tool tip control if successful; otherwise `NULL`.
 
 ### Remarks
 
-A tab control creates a tool tip control if it has the TCS_TOOLTIPS style. You can also assign a tool tip control to a tab control by using the `SetToolTips` member function.
+A tab control creates a tool tip control if it has the `TCS_TOOLTIPS` style. You can also assign a tool tip control to a tab control by using the `SetToolTips` member function.
 
 ## <a name="highlightitem"></a> `CTabCtrl::HighlightItem`
 
@@ -510,7 +509,7 @@ int HitTest(TCHITTESTINFO* pHitTestInfo) const;
 
 ### Parameters
 
-*pHitTestInfo*\
+*`pHitTestInfo`*\
 Pointer to a [`TCHITTESTINFO`](/windows/win32/api/commctrl/ns-commctrl-tchittestinfo) structure, as described in the Windows SDK, which specifies the screen position to test.
 
 ### Return Value
@@ -624,7 +623,7 @@ Specifies the index of the tab that gets the focus.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [TCM_SETCURFOCUS](/windows/win32/Controls/tcm-setcurfocus), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [`TCM_SETCURFOCUS`](/windows/win32/Controls/tcm-setcurfocus), as described in the Windows SDK.
 
 ## <a name="setcursel"></a> `CTabCtrl::SetCurSel`
 
@@ -645,7 +644,7 @@ Zero-based index of the previously selected tab if successful, otherwise -1.
 
 ### Remarks
 
-A tab control does not send a TCN_SELCHANGING or TCN_SELCHANGE notification message when a tab is selected using this function. These notifications are sent, using WM_NOTIFY, when the user clicks or uses the keyboard to change tabs.
+A tab control does not send a `TCN_SELCHANGING` or `TCN_SELCHANGE` notification message when a tab is selected using this function. These notifications are sent, using `WM_NOTIFY`, when the user clicks or uses the keyboard to change tabs.
 
 ## <a name="setextendedstyle"></a> `CTabCtrl::SetExtendedStyle`
 
@@ -667,7 +666,7 @@ A DWORD value that indicates which styles in *`dwNewStyle`* are to be affected. 
 
 A DWORD value that contains the previous [tab control extended styles](/windows/win32/Controls/tab-control-extended-styles), as described in the Windows SDK.
 
-### Return Value
+### Remarks
 
 This member function implements the behavior of the Win32 message [`TCM_SETEXTENDEDSTYLE`](/windows/win32/Controls/tcm-setextendedstyle), as described in the Windows SDK.
 
@@ -686,7 +685,7 @@ Pointer to the image list to be assigned to the tab control.
 
 ### Return Value
 
-Returns a pointer to the previous image list or NULL if there is no previous image list.
+Returns a pointer to the previous image list or `NULL` if there is no previous image list.
 
 ## <a name="setitem"></a> `CTabCtrl::SetItem`
 
@@ -710,7 +709,7 @@ Nonzero if successful; otherwise 0.
 
 ### Example
 
-  See the example for [GetItem](#getitem).
+  See the example for [`GetItem`](#getitem).
 
 ## <a name="setitemextra"></a> `CTabCtrl::SetItemExtra`
 
@@ -798,7 +797,7 @@ Minimum width to be set for a tab control item. If this parameter is set to -1, 
 
 The previous minimum tab width.
 
-### Return Value
+### Remarks
 
 This member function implements the behavior of the Win32 message [`TCM_SETMINTABWIDTH`](/windows/win32/Controls/tcm-setmintabwidth), as described in the Windows SDK.
 
@@ -840,5 +839,5 @@ You can get the tool tip control associated with a tab control by making a call 
 
 [`CWnd` Class](../../mfc/reference/cwnd-class.md)\
 [`CHeaderCtrl` Class](../../mfc/reference/cheaderctrl-class.md)\
-[`CListCtrl` Class](../../mfc/reference/clistctrl-class.md)
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[`CListCtrl` Class](../../mfc/reference/clistctrl-class.md)\
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)

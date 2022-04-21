@@ -22,7 +22,7 @@ The relative or absolute path and base file name, or relative or absolute path t
 
 ## Remarks
 
-The **/Fe** option allows you to specify the output directory, output executable name, or both, for the generated executable file. If *pathname* ends in a path separator (**&#92;**), it is assumed to specify only the output directory. Otherwise, the last component of *pathname* is used as the output file base name, and the rest of *pathname* specifies the output directory. If *pathname* does not have any path separators, it's assumed to specify the output file name in the current directory. The *pathname* must be enclosed in double quotes (**"**) if it contains any characters that can't be in a short path, such as spaces, extended characters, or path components more than eight characters long.
+The **/Fe** option allows you to specify the output directory, output executable name, or both, for the generated executable file. If *pathname* ends in a path separator (**`\`**), it is assumed to specify only the output directory. Otherwise, the last component of *pathname* is used as the output file base name, and the rest of *pathname* specifies the output directory. If *pathname* does not have any path separators, it's assumed to specify the output file name in the current directory. The *pathname* must be enclosed in double quotes (**"**) if it contains any characters that can't be in a short path, such as spaces, extended characters, or path components more than eight characters long.
 
 When the **/Fe** option is not specified, or when a file base name is not specified in *pathname*, the compiler gives the output file a default name using the base name of the first source or object file specified on the command line and the extension .exe or .dll.
 
@@ -32,7 +32,7 @@ If you specify the [/c (Compile Without Linking)](c-compile-without-linking.md) 
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Open the **Configuration Properties** > **Linker** > **General** property page.
+1. Select the **Configuration Properties** > **Linker** > **General** property page.
 
 1. Modify the **Output File** property. Choose **OK** to save your changes.
 

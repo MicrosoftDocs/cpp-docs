@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;locale&gt; functions"
-title: "&lt;locale&gt; functions"
+description: "Learn more about: <locale> functions"
+title: "<locale> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["locale/std::has_facet", "locale/std::isalnum", "locale/std::isalpha", "locale/std::iscntrl", "locale/std::isdigit", "locale/std::isgraph", "locale/std::islower", "locale/std::isprint", "locale/std::ispunct", "locale/std::isspace", "locale/std::isupper", "locale/std::isxdigit", "locale/std::tolower", "locale/std::toupper", "locale/std::use_facet"]
 ms.assetid: b06c1ceb-33a7-48d3-8d4b-2714bbb27f14
 helpviewer_keywords: ["std::has_facet [C++]", "std::isalnum [C++]", "std::isalpha [C++]", "std::iscntrl [C++]", "std::isdigit [C++]", "std::isgraph [C++]", "std::islower [C++]", "std::isprint [C++]", "std::ispunct [C++]", "std::isspace [C++]", "std::isupper [C++]", "std::isxdigit [C++]", "std::tolower [C++]", "std::toupper [C++]", "std::use_facet [C++]"]
 ---
-# &lt;locale&gt; functions
+# `<locale>` functions
 
 [has_facet](#has_facet)\
 [isalnum](#isalnum)\

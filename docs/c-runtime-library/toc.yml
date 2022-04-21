@@ -1,10 +1,9 @@
+items: 
 - name: C runtime library (CRT) reference
   href: ../c-runtime-library/c-run-time-library-reference.md
 - name: CRT library features
   expanded: false
   items: 
-    - name: CRT library features
-      href: ../c-runtime-library/crt-library-features.md
     - name: Compatibility
       expanded: false
       items: 
@@ -12,7 +11,7 @@
           href: ../c-runtime-library/compatibility.md
         - name: UWP apps, the Windows Runtime, and the C Run-time
           href: ../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md
-        - name: ANSI C compliance
+        - name: ANSI C conformance
           href: ../c-runtime-library/ansi-c-compliance.md
         - name: UNIX
           href: ../c-runtime-library/unix.md
@@ -66,6 +65,8 @@
       href: ../c-runtime-library/global-state.md
     - name: Type-generic math
       href: ../c-runtime-library/tgmath.md 
+    - name: C runtime (CRT) and C++ Standard Library (STL) .lib files
+      href: ../c-runtime-library/crt-library-features.md
 - name: Universal C runtime routines by category
   expanded: false
   items: 

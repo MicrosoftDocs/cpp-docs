@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 title: "Clang/LLVM support in Visual Studio projects"
-ms.date: 02/05/2021
+ms.date: 11/11/2021
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -13,13 +13,13 @@ Clang support for both CMake and MSBuild projects is available in Visual Studio 
 
 ::: moniker-end
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 You can use Visual Studio 2019 version 16.2 and later with Clang to edit, build, and debug C++ Visual Studio projects (MSBuild) that target Windows or Linux.
 
 ## Install
 
-For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have the tools, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose the **C++ Clang-cl for v142 build tools.** optional component.
+For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have the tools, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose **C++ Clang-cl for v142 build tools**.
 
 The Microsoft C++ Standard Library requires at least Clang 8.0.0.
 
@@ -31,11 +31,11 @@ Later versions of Visual Studio provide newer versions of the Clang toolset. The
 
 To configure a Visual Studio project to use Clang, right-click on the project node in **Solution Explorer** and choose **Properties**. Typically, you should first choose **All configurations** at the top of the dialog. Then, under **General** > **Platform Toolset**, choose **LLVM (clang-cl)** and then **OK**.
 
-![Screenshot of the Property Pages dialog box with Configuration Properties > General selected and the Platform Toolset and L L V M (clang c l) options highlighted.](media/clang-msbuild-prop-page.png)
+![Screenshot of the Property Pages dialog box with Configuration Properties > General selected and the Platform Toolset and LLVM (clang-cl) option highlighted.](media/llvm-msbuild-prop-page.png)
 
 If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in *%VCINSTALLDIR%\\Tools\\Llvm\\bin\\* and *%VCINSTALLDIR%\\Tools\\Llvm\\x64\\bin\\*.
 
-If you're using a custom Clang installation, you can either modify **Project** > **Properties** > **VC++ DIrectories** > **Configuration Properties** > **Executable Directories** by adding the custom Clang installation root as the first directory there, or change the value of the `LLVMInstallDir` property. For more information, see [Set a custom LLVM location](#custom_llvm_location).
+If you're using a custom Clang installation, you can either modify **Project** > **Properties** > **VC++ Directories** > **Configuration Properties** > **Executable Directories** by adding the custom Clang installation root as the first directory there, or change the value of the `LLVMInstallDir` property. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 
 ## Configure a Linux project to use Clang tools
 
@@ -45,7 +45,7 @@ To configure a Visual Studio Linux project to use Clang:
 
 1. Right-click on the project node in **Solution Explorer** and choose **Properties**.
 1. Typically, you should first choose **All configurations** at the top of the dialog.
-1. Under **General** > **Platform Toolset**, choose **WSL_Clang_1_0** if you're using Windows Subsystem for Linux (WSL). Choose **Remote_Clang_1_0** if you're using a remote machine or VM.
+1. Under **General** > **Platform Toolset**, choose **Clang for Windows Subsystem for Linux** if you're using Windows Subsystem for Linux (WSL). Choose **Clang for Remote Linux** if you're using a remote machine or VM.
 1. Press **OK**.
 
 ![Screenshot of the Console App clang Visual Studio 2019 Property Pages dialog box with Configuration Properties > General selected and the Platform Toolset and L L V M (clang c l) options highlighted.](media/clang-msbuild-prop-page.png)
@@ -111,6 +111,6 @@ After you have set up a Clang configuration, right-click again on the project no
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
-![Clang debugging](media/clang-debug-msbuild.png)
+![Screenshot of Visual Studio showing Clang debugging.](media/clang-debug-msbuild.png)
 
 ::: moniker-end

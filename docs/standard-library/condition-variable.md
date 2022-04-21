@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;condition_variable&gt;"
-title: "&lt;condition_variable&gt;"
+description: "Learn more about: <condition_variable>"
+title: "<condition_variable>"
 ms.date: "11/04/2016"
 f1_keywords: ["<condition_variable>"]
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
 ---
-# &lt;condition_variable&gt;
+# `<condition_variable>`
 
 Defines the classes [condition_variable](../standard-library/condition-variable-class.md) and [condition_variable_any](../standard-library/condition-variable-any-class.md) that are used to create objects that wait for a condition to become true.
 

@@ -923,7 +923,7 @@ Calling this method is equivalent to calling [IAxWinHostWindowLic::CreateControl
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.
 
 ## <a name="createcontrollicex"></a> IAxWinHostWindowLic::CreateControlLicEx
 
@@ -951,7 +951,7 @@ See [IAxWinHostWindow::CreateControlEx](#createcontrolex) for a description of t
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
 
 ## See also
 

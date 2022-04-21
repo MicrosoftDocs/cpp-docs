@@ -7,7 +7,7 @@ ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 ---
 # Example: Implementing a Property Page
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
@@ -60,7 +60,7 @@ Click **OK** to have the wizard generate your property page.
 
 Now that your property page has been generated, you'll need to add a few controls to the dialog resource representing your page. Add an edit box, a static text control, and a check box and set their IDs as shown below:
 
-![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "Editing a dialog resource")
+![Screenshot of a dialog resource in the visual editor.](../atl/media/ppgresourcelabeled.gif "Editing a dialog resource")
 
 These controls will be used to display the file name of the document and its read-only status.
 

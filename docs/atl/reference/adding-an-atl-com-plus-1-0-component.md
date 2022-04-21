@@ -6,7 +6,7 @@ ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
 ---
 # Adding an ATL COM+ 1.0 Component
 
-::: moniker range="msvc-160"
+::: moniker range=">=msvc-160"
 
 The ATL COM+ 1.0 Component wizard is not available in Visual Studio 2019 and later.
 

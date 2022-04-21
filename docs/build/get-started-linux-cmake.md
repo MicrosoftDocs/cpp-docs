@@ -2,7 +2,7 @@
 title: Create C++ cross-platform projects in Visual Studio
 description: "How to set up, compile, and debug a C++ open-source CMake project in Visual Studio that targets both Linux and Windows."
 ms.topic: tutorial
-ms.date: "01/08/2020"
+ms.date: 02/07/2022
 ---
 # Tutorial: Create C++ cross-platform projects in Visual Studio
 
@@ -38,7 +38,7 @@ In this tutorial, you learn how to:
     chmod +x cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh
     ```
 
-  * You can see the options for running the script with `-–help`. We recommend that you use the `–prefix` option to specify installing in the **/usr** path, because **/usr/bin** is the default location where Visual Studio looks for CMake. The following example shows the Linux-x86_64 script. Change it as needed if you're using a different target platform.
+  * You can see the options for running the script with `--help`. We recommend that you use the `-prefix` option to specify installing in the **/usr** path, because **/usr/bin** is the default location where Visual Studio looks for CMake. The following example shows the Linux-x86_64 script. Change it as needed if you're using a different target platform.
 
     ```cmd
     sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr
@@ -57,17 +57,17 @@ git clone https://github.com/bulletphysics/bullet3.git
 
 1. On the Visual Studio main menu, choose **File > Open > CMake**. Navigate to the CMakeLists.txt file in the root of the bullet3 repo you just downloaded.
 
-    ![Visual Studio menu for File > Open > CMake](media/cmake-open-cmake.png)
+    ![Visual Studio menu for File > Open > CMake.](media/cmake-open-cmake.png)
 
     As soon as you open the folder, your folder structure becomes visible in the **Solution Explorer**.
 
-    ![Visual Studio Solution Explorer Folder View](media/cmake-bullet3-solution-explorer.png)
+    ![Solution Explorer window in Folder View mode.](media/cmake-bullet3-solution-explorer.png)
 
     This view shows you exactly what is on disk, not a logical or filtered view. By default, it doesn't show hidden files.
 
 1. Choose the **Show all files** button to see all the files in the folder.
 
-    ![Visual Studio Solution Explorer Show All Files button](media/cmake-bullet3-show-all-files.png)
+    ![Solution Explorer window with the Show All Files button highlighted.](media/cmake-bullet3-show-all-files.png)
 
 ## Switch to targets view
 
@@ -75,17 +75,17 @@ When you open a folder that uses CMake, Visual Studio automatically generates th
 
 1. In the **Output Window**, select **Show output from** and then choose **CMake** to monitor the status of the cache generation process. When the operation is complete, it says "Target info extraction done".
 
-   ![Visual Studio Output window showing output from CMake](media/cmake-bullet3-output-window.png)
+   ![Output window showing output from CMake.](media/cmake-bullet3-output-window.png)
 
    After this operation completes, IntelliSense is configured. You can build the project, and debug the application. Visual Studio now shows a logical view of the solution, based on the targets specified in the CMakeLists files.
 
 1. Use the **Solutions and Folders** button in the **Solution Explorer** to switch to CMake Targets View.
 
-   ![Solutions and Folders button in the Solution Explorer to show CMake targets view](media/cmake-bullet3-show-targets.png)
+   ![Solutions and Folders button in the Solution Explorer to show CMake targets view.](media/cmake-bullet3-show-targets.png)
 
    Here is what that view looks like for the Bullet SDK:
 
-   ![Solution Explorer CMake targets view](media/cmake-bullet3-targets-view.png)
+   ![Solution Explorer CMake targets view.](media/cmake-bullet3-targets-view.png)
 
    Targets view provides a more intuitive view of what is in this source base. You can see some targets are libraries and others are executables.
 
@@ -97,11 +97,11 @@ Visual Studio creates a default **x64-Debug** configuration for Windows. Configu
 
 1. Add a new configuration. Open the **Configuration** drop-down in the toolbar and select **Manage Configurations**.
 
-   ![Manage Configuration drop-down](media/cmake-bullet3-manage-configurations.png)
+   ![Manage Configuration command highlighted in the Configuration drop-down.](media/cmake-bullet3-manage-configurations.png)
 
    The [CMake Settings Editor](customize-cmake-settings.md) opens. Select the green plus sign on the left-hand side of the editor to add a new configuration. The **Add Configuration to CMakeSettings** dialog appears.
 
-   ![Add Configuration to CMakeSettings dialog](media/cmake-bullet3-add-configuration-x64-debug.png)
+   ![Add Configuration to CMakeSettings dialog.](media/cmake-bullet3-add-configuration-x64-debug.png)
 
    This dialog shows all the configurations included with Visual Studio, plus any custom configurations that you create. If you want to continue to use a **x64-Debug** configuration, that should be the first one you add. Select **x64-Debug**, and then choose the **Select** button. Visual Studio creates the CMakeSettings.json file with a configuration for **x64-Debug**, and saves it to disk. You can use whatever names you like for your configurations by changing the name parameter directly in CMakeSettings.json.
 
@@ -121,17 +121,17 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
    1. In the browser view above your source, you should see that you're in the `CommonRigidBodyBase`. To the right, you can select members to examine. Open the drop-down and select `mouseButtonCallback` to go to the definition of that function in the header.
 
-      ![Visual Studio member list toolbar](media/cmake-bullet3-member-list-toolbar.png)
+      ![Member list toolbar drop-down in the editor window, with mouse button callback item highlighted.](media/cmake-bullet3-member-list-toolbar.png)
 
 1. Place a breakpoint on the first line within this function. It gets hit when you click a mouse button within the window of the application, when run under the Visual Studio debugger.
 
 1. To launch the application, select the launch drop-down in the toolbar. It's the one with the green play icon that says "Select Startup Item". In the drop-down, select AppBasicExampleGui.exe. The executable name now displays on the launch button:
 
-   ![Visual Studio toolbar launch drop-down for Select Startup Item](media/cmake-bullet3-launch-button.png)
+   ![Visual Studio toolbar launch drop-down for Select Startup Item.](media/cmake-bullet3-launch-button.png)
 
 1. Choose the launch button to build the application and necessary dependencies, then launch it with the Visual Studio debugger attached. After a few moments, the running application appears:
 
-   ![Visual Studio debugging a Windows application](media/cmake-bullet3-launched.png)
+   ![Visual Studio debugging a Windows application.](media/cmake-bullet3-launched.png)
 
 1. Move your mouse into the application window, then click a button to trigger the breakpoint. The breakpoint brings Visual Studio back to the foreground, and the editor shows the line where execution is paused. You can inspect the application variables, objects, threads, and memory, or step through your code interactively. Choose **Continue** to let the application resume, and then exit it normally. Or, halt execution within Visual Studio by using the stop button.
 
@@ -143,11 +143,11 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
 1. Select **Linux-Debug** in the configuration drop-down.
 
-   ![Launch configuration drop-down with X64-Debug and Linux-Debug options](media/cmake-bullet3-linux-configuration-item.png)
+   ![Launch configuration drop-down with X64-Debug and Linux-Debug options.](media/cmake-bullet3-linux-configuration-item.png)
 
    If it's the first time you're connecting to a Linux system, the **Connect to Remote System** dialog appears.
 
-   ![Visual Studio Connect to Remote System dialog](media/cmake-bullet3-connection-manager.png)
+   ![Visual Studio Connect to Remote System dialog.](media/cmake-bullet3-connection-manager.png)
 
    If you've already added a remote connection, you can open this window by navigating to **Tools > Options > Cross Platform > Connection Manager**.
 
@@ -175,13 +175,13 @@ Because it's a desktop application, you need to provide some additional configur
 
 1. Move your mouse into the application window, and click a button. The breakpoint is hit. Program execution pauses, Visual Studio comes back to the foreground, and you see your breakpoint. You should also see a Linux Console Window appear in Visual Studio. The window provides output from the remote Linux machine, and it can also accept input for `stdin`. Like any Visual Studio window, you can dock it where you prefer to see it. Its position is persisted in future sessions.
 
-   ![Visual Studio Linux Console Window](media/cmake-bullet3-linux-console.png)
+   ![Visual Studio Linux Console Window.](media/cmake-bullet3-linux-console.png)
 
 1. You can inspect the application variables, objects, threads, memory, and step through your code interactively using Visual Studio. But this time, you're doing it all on a remote Linux machine instead of your local Windows environment. You can choose **Continue** to let the application resume and exit normally, or you can choose the stop button, just as with local execution.
 
 1. Look at the Call Stack window and view the Calls to `x11OpenGLWindow` since Visual Studio launched the application on Linux.
 
-   ![Call Stack window showing Linux call stack](media/cmake-bullet3-linux-callstack.png)
+   ![Call Stack window showing Linux call stack.](media/cmake-bullet3-linux-callstack.png)
 
 ## What you learned
 

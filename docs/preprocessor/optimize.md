@@ -24,7 +24,7 @@ The *optimization-list* can be zero or more of the parameters shown in the follo
 
 | Parameter(s) | Type of optimization |
 |--------------------|--------------------------|
-| **`g`** | Enable global optimizations. |
+| **`g`** | Enable global optimizations. Deprecated. For more information, see [`/Og` (Global optimizations)](../build/reference/og-global-optimizations.md). |
 | **`s`** or **`t`** | Specify short or fast sequences of machine code. |
 | **`y`** | Generate frame pointers on the program stack. |
 

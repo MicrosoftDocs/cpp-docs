@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: Formatting the Output of a Custom Build Step or Build Event"
-title: "Formatting the Output of a Custom Build Step or Build Event"
-ms.date: "08/27/2018"
+description: "Learn more about: Formatting the output of a custom build step or build event"
+title: "Formatting the output of a custom build step or build event"
+ms.date: 03/15/2022
 helpviewer_keywords: ["builds [C++], build events", "custom build steps [C++], output format", "events [C++], build", "build events [C++], output format", "build steps [C++], output format", "builds [C++], custom build steps"]
 ms.assetid: 92ad3e38-24d7-4b89-90e6-5a16f5f998da
 ---
-# Formatting the Output of a Custom Build Step or Build Event
+# Formatting the output of a custom build step or build event
 
 If the output of a custom build step or build event is formatted correctly, users get the following benefits:
 
@@ -13,28 +13,30 @@ If the output of a custom build step or build event is formatted correctly, user
 
 - Output appears in the **Task List** window.
 
-- Clicking on the output in the **Output** window displays the appropriate topic.
+- Clicking on the output in the **Output** window displays the appropriate location.
 
-- F1 operations are enabled in the **Task List** window or **Output** window.
+- **F1** operations are enabled in the **Task List** window or **Output** window.
+
+## Output format
 
 The format of the output should be:
 
-> {<em>filename</em>**(**<em>line#</em> \[**,** <em>column#</em>]**)** &#124; *toolname*} **:** \[ <em>any text</em> ] {**error** &#124; **warning**} <em>code+number</em>**:**<em>localizable string</em> \[ <em>any text</em> ]
+> { *filename*`(`*line-number* \[`,` *column-number*]`)` \| *tool-name* } `:` \[ *any-text* ] {`error` \| `warning`} *code-type-and-number* `:` *localizable-string* \[ *any-text* ]
 
 Where:
 
-- {*a* &#124; *b*} is a choice of either *a* or *b*.
+- { *a* \| *b* } is a choice of either *a* or *b*,
 
-- \[<em>item</em>] is an optional string or parameter.
+- \[ *item* ] is an optional string or parameter,
 
-- **Bold** represents a literal.
+- `text` represents a literal.
 
 For example:
 
-> C:\\*sourcefile.cpp*(134) : error C2143: syntax error : missing ';' before '}'
+> C:\\sourcefile.cpp(134) : error C2143: syntax error : missing ';' before '}'
 >
-> LINK : fatal error LNK1104: cannot open file '*somelib.lib*'
+> LINK : fatal error LNK1104: cannot open file 'some-library.lib'
 
 ## See also
 
-[Understanding Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md)
+[Understanding custom build steps and build events](understanding-custom-build-steps-and-build-events.md)

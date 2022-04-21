@@ -44,7 +44,7 @@ When you open the icon or cursor resource in the [Image Editor](../windows/image
 > [!NOTE]
 > If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
-The **New &lt;Device&gt; Image Type** dialog box enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, go to menu **Image** > **New Image Type**. The following properties included are **Target Image Type** and **Custom**.
+The **New \<Device> Image Type** dialog box enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, go to menu **Image** > **New Image Type**. The following properties included are **Target Image Type** and **Custom**.
 
 The **Target Image Type** property lists the available image types where you select the image type you want to open:
 
@@ -85,7 +85,7 @@ The **Custom Image** dialog box enables you to create a new image with a custom 
 |**Height**|Provides a space for you to enter the height for the custom image in pixels (1 - 512, limit of 2048).|
 |**Colors**|Provides a space for you to choose the number of colors for the custom image: 2, 16, or 256.|
 
-Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ projects. It lists existing device images in the current resource (images that are part of the current resource). The following property included is:
+Use the **Open \<Device> Image** dialog box to open device images in C++ projects. It lists existing device images in the current resource (images that are part of the current resource). The following property included is:
 
 |Property|Description|
 |---|---|

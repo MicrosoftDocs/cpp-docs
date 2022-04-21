@@ -184,7 +184,7 @@ int main( )
 test
 ```
 
-## <a name="basic_ostream_operator_lt_lt"></a> basic_ostream::operator&lt;&lt;
+## <a name="basic_ostream_operator_lt_lt"></a> `basic_ostream::operator<<`
 
 Writes to the stream.
 

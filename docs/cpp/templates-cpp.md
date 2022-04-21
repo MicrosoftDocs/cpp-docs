@@ -133,7 +133,7 @@ Other kinds of values including pointers and references can be passed in as non-
 
 ### Type deduction for non-type template parameters
 
-In Visual Studio 2017 and later, in **/std:c++17** mode the compiler deduces the type of a non-type template argument that is declared with **`auto`**:
+In Visual Studio 2017 and later, and in **`/std:c++17`** mode or later, the compiler deduces the type of a non-type template argument that's declared with **`auto`**:
 
 ```cpp
 template <auto x> constexpr auto constant = x;

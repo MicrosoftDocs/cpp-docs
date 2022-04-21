@@ -1,12 +1,12 @@
 ---
-title: "&lt;numeric&gt; functions"
-description: "Describes the function templates provided by the &lt;numeric&gt;header in the C++ Standard library."
+title: "<numeric> functions"
+description: "Describes the function templates provided by the <numeric>header in the C++ Standard library."
 ms.date: "10/30/2019"
 f1_keywords: ["numeric/std::accumulate", "numeric/std::adjacent_difference", "numeric/std::exclusive_scan", "numeric/std::gcd", "numeric/std::inclusive_scan", "numeric/std::inner_product", "numeric/std::iota", "numeric/std::lcm", "numeric/std::partial_sum", "numeric/std::reduce", "numeric/std::transform_exclusive_scan", "numeric/std::transform_inclusive_scan", "numeric/std::transform_reduce"]
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
 helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]", "std::exclusive_scan [C++]", "std::gcd [C++]", "std::inclusive_scan [C++]", "std::inner_product [C++]", "std::iota [C++]", "std::lcm [C++]", "std::partial_sum [C++]", "std::reduce [C++]", "std::transform_exclusive_scan [C++]", "std::transform_inclusive_scan [C++]", "std::transform_reduce [C++]"]
 ---
-# &lt;numeric&gt; functions
+# `<numeric>` functions
 
 ## <a name="accumulate"></a> accumulate
 

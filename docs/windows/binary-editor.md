@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Binary Editor (C++)"
 title: "Binary Editor (C++)"
-ms.date: "02/14/2019"
+ms.date: 11/09/2021
 f1_keywords: ["vc.editors.binary.F1", "vc.editors.binary"]
 helpviewer_keywords: ["editors, Binary", "resources [C++], editing", "resource editors [C++], Binary editor", "Binary editor", "binary data, editing", "resources [C++], opening for binary editing", "binary data", "hexadecimal bytes in binary data", "strings [C++], searching for", "file searches [C++]", "binary data, finding", "ASCII characters, finding in binary data", "custom resources [C++]", "data resources [C++]", "resources [C++], creating"]
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
@@ -13,11 +13,11 @@ ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
 
 The **Binary Editor** allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](/visualstudio/ide/reference/find-command) to search for either ASCII strings or hexadecimal bytes. Use the **Binary Editor** only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment. The **Binary Editor** is not available in Express editions.
 
-- To open the **Binary Editor** on a new file, go to menu **File** > **New** > **File**, select the type of file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
+- To open the **Binary Editor** on a new file, go to menu **File** > **New** > **File**, select the type of file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**. The dropdown selection in the New file dialog isn't available in Visual Studio 2019, but is available in Visual Studio 2022.
 
 - To open the **Binary Editor** on an existing file, go to menu **File** > **Open** > **File**, select the file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
 
-   ![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+   ![Binary Editor.](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
    Binary data for a dialog box displayed in the **Binary Editor**
 
 Only certain ASCII values are represented in the **Binary Editor** (0x20 through 0x7E). Extended characters are displayed as periods in the right panel ASCII value section of the **Binary Editor**. The printable characters are ASCII values 32 through 126.

@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["sqrt", "sqrtf", "_sqrtl"]
 helpviewer_keywords: ["sqrtf function", "sqrt function", "sqrtl function", "_sqrtl function", "calculating square roots", "square roots, calculating"]
-ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
 ---
-# sqrt, sqrtf, sqrtl
+# `sqrt`, `sqrtf`, `sqrtl`
 
 Calculates the square root.
 
@@ -37,33 +36,33 @@ long double sqrtl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 Non-negative floating-point value
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **sqrt** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **sqrt** always takes and returns **`double`**.
+Because C++ allows overloading, you can call overloads of **`sqrt`** that take **`float`** or **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`sqrt`** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `sqrt()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h> sqrt()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Return Value
 
-The **sqrt** functions return the square-root of *x*. By default, if *x* is negative, **sqrt** returns an indefinite NaN.
+The **`sqrt`** functions return the square-root of *`x`*. By default, if *`x`* is negative, **`sqrt`** returns an indefinite `NaN`.
 
-|Input|SEH Exception|**_matherr** Exception|
+|Input|SEH Exception|**`_matherr`** Exception|
 |-----------|-------------------|--------------------------|
-|± QNAN,IND|none|_DOMAIN|
-|- ∞|none|_DOMAIN|
-|x<0|none|_DOMAIN|
+|± `QNAN`,`IND`|none|`_DOMAIN`|
+|- ∞|none|`_DOMAIN`|
+|`x<0`|none|`_DOMAIN`|
 
 ## Requirements
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**sqrt**, **sqrtf**, **sqrtl**|\<math.h>|\<cmath>|
-|**sqrt()** macro | \<tgmath.h> ||
+|**`sqrt`**, **`sqrtf`**, **`sqrtl`**|`<math.h>`|`<cmath>`|
+|**`sqrt()`** macro | `<tgmath.h>` ||
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -94,8 +93,8 @@ The square root of 45.35 is 6.73
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[exp, expf, expl](exp-expf.md)<br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
-[pow, powf, powl](pow-powf-powl.md)<br/>
-[_CIsqrt](../../c-runtime-library/cisqrt.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[`exp`, `expf`, `expl`](exp-expf.md)\
+[`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)\
+[`pow`, `powf`, `powl`](pow-powf-powl.md)\
+[`_CIsqrt`](../../c-runtime-library/cisqrt.md)\

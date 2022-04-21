@@ -1,3 +1,4 @@
+items: 
 - name: Projects and build systems
   href: ../build/projects-and-build-systems-cpp.md
 - name: Visual Studio projects - C++
@@ -55,12 +56,18 @@
       href: ../build/cmake-projects-in-visual-studio.md
     - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
       href: ../build/get-started-linux-cmake.md
+    - name: "Walkthrough: Build and Debug C++ with WSL 2 in Visual Studio"
+      href: ../build/walkthrough-build-debug-wsl2.md
     - name: "Tutorial: Run and debug a CMake project remotely"
       href: ../build/cmake-remote-debugging.md
     - name: Clang/LLVM in CMake projects
       href: ../build/clang-support-cmake.md
     - name: Configure a Linux CMake project
       href: ../build/../linux/cmake-linux-project.md
+    - name: Configure and build with CMake Presets
+      href: ../build/cmake-presets-vs.md
+    - name: CMakePresets.json reference
+      href: ../build/cmake-presets-json-reference.md
     - name: Customize CMake build settings
       href: ../build/customize-cmake-settings.md
     - name: Configure CMake debugging sessions
@@ -69,21 +76,17 @@
       href: ../build/cmakesettings-reference.md
     - name: CMake predefined configuration schema reference
       href: ../build/cmake-predefined-configuration-reference.md
-- name: "vcpkg: A package manager for C++"
-  expanded: false
-  items: 
-    - name: "vcpkg: A package manager for C++"
-      href: ../build/vcpkg.md
-    - name: "Install vcpkg"
-      href: ../build/install-vcpkg.md
-    - name: "Integrate vcpkg"
-      href: ../build/integrate-vcpkg.md
-    - name: "Manage libraries with vcpkg"
-      href: ../build/manage-libraries-with-vcpkg.md
-    - name: "vcpkg command-line reference"
-      href: ../build/vcpkg-command-line-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
+- name: "Build and import header units"
+  expanded: false
+  items:
+    - name: "Walkthrough: Build and import header units in Visual C++ projects"
+      href: ../build/walkthrough-header-units.md
+    - name: "Walkthrough: Import STL libraries as header units"
+      href: ../build/walkthrough-import-stl-header-units.md
+    - name: C++ header unit.json reference
+      href: ../build/reference/header-unit-json-reference.md
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
 - name: C++ release builds
@@ -155,8 +158,6 @@
       href: ../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md
     - name: "Walkthrough: Compiling a C++/CX program on the command line"
       href: ../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
-    - name: Set the path and environment variables for command-line builds
-      href: ../build/setting-the-path-and-environment-variables-for-command-line-builds.md
 - name: Use MSBuild from the command line
   expanded: false
   items: 
@@ -197,7 +198,7 @@
         - name: "MFC extension DLLs: Overview"
           href: ../build/extension-dlls-overview.md
     - name: MFC DLL frequently asked questions
-      href: ../build/dll-frequently-asked-questions.md
+      href: ../build/dll-frequently-asked-questions.yml
     - name: Link an executable to a DLL
       href: ../build/linking-an-executable-to-a-dll.md
     - name: DLLs and MSVC run-time library behavior
@@ -307,10 +308,10 @@
       href: ../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md
     - name: Common MSVC 64-bit migration issues
       href: ../build/common-visual-cpp-64-bit-migration-issues.md
-    - name: x64 software conventions
+    - name: x64 ABI conventions
       expanded: false
       items: 
-        - name: x64 software conventions
+        - name: Overview of x64 ABI conventions
           href: ../build/x64-software-conventions.md
         - name: x64 calling convention
           href: ../build/x64-calling-convention.md
@@ -339,6 +340,8 @@
   href: ../build/configuring-programs-for-windows-xp.md
 - name: Code analysis for C/C++
   href: ../code-quality/
+- name: "Code sanitizers for C/C++"
+  href: ../sanitizers/
 - name: Compiler and build tools reference
   expanded: false
   items: 
@@ -519,6 +522,8 @@
                   href: ../build/reference/experimental-module.md
                 - name: /experimental:preprocessor
                   href: ../build/reference/experimental-preprocessor.md
+                - name: /external (External headers diagnostics)
+                  href: ../build/reference/external-external-headers-diagnostics.md
                 - name: /F (Set stack size)
                   href: ../build/reference/f-set-stack-size.md
                 - name: Output-file (/F) options
@@ -558,8 +563,14 @@
                   href: ../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
                 - name: /fp (Specify floating-point behavior)
                   href: ../build/reference/fp-specify-floating-point-behavior.md
+                - name: /fpcvt (Floating-point to unsigned integer conversion behavior)
+                  href: ../build/reference/fpcvt.md
                 - name: /FS (Force synchronous PDB writes)
                   href: ../build/reference/fs-force-synchronous-pdb-writes.md
+                - name: /fsanitize (Enable sanitizers)
+                  href: ../build/reference/fsanitize.md
+                - name: /fsanitize-coverage (Configure sanitizer coverage)
+                  href: ../build/reference/fsanitize-coverage.md
                 - name: /GA (Optimize for Windows application)
                   href: ../build/reference/ga-optimize-for-windows-application.md
                 - name: /Gd, /Gr, /Gv, /Gz (Calling convention)
@@ -598,6 +609,8 @@
                   href: ../build/reference/gz-enable-stack-frame-run-time-error-checking.md
                 - name: /H (Restrict length of external names)
                   href: ../build/reference/h-restrict-length-of-external-names.md
+                - name: /headerName (Build a header unit from the specified header)
+                  href: ../build/reference/headername.md
                 - name: /headerUnit (Use header unit IFC)
                   href: ../build/reference/headerunit.md
                 - name: /HELP (Compiler command-line help)
@@ -608,6 +621,10 @@
                   href: ../build/reference/hotpatch-create-hotpatchable-image.md
                 - name: /I (Additional include directories)
                   href: ../build/reference/i-additional-include-directories.md
+                - name: /interface (treat input file as a module interface unit)
+                  href: ../build/reference/interface.md
+                - name: /internalPartition (treat the input file as an internal partition unit.)
+                  href: ../build/reference/internal-partition.md
                 - name: /J (Default char type is unsigned)
                   href: ../build/reference/j-default-char-type-is-unsigned.md
                 - name: /JMC (Just My Code debugging)
@@ -620,9 +637,9 @@
                   href: ../build/reference/ln-create-msil-module.md
                 - name: /MD, /MT, /LD (Use Run-time library)
                   href: ../build/reference/md-mt-ld-use-run-time-library.md
-                - name: /module:exportHeader (Create header units)
+                - name: /exportHeader (Create header units)
                   href: ../build/reference/module-exportheader.md
-                - name: /module:reference (Use named module IFC)
+                - name: /reference (Use named module IFC)
                   href: ../build/reference/module-reference.md
                 - name: /MP (Build with multiple processes)
                   href: ../build/reference/mp-build-with-multiple-processes.md
@@ -651,6 +668,8 @@
                       href: ../build/reference/oy-frame-pointer-omission.md
                 - name: /openmp (Enable OpenMP 2.0 support)
                   href: ../build/reference/openmp-enable-openmp-2-0-support.md
+                - name: /options:strict (Unrecognized compiler options are errors)
+                  href: ../build/reference/options-strict.md
                 - name: /P (Preprocess to a file)
                   href: ../build/reference/p-preprocess-to-a-file.md
                 - name: /permissive- (Standards conformance)
@@ -684,14 +703,18 @@
                       href: ../build/reference/qvec-report-auto-vectorizer-reporting-level.md
                 - name: /RTC (Run-time error checks)
                   href: ../build/reference/rtc-run-time-error-checks.md
-                - name: /sdl (Enable additional security checks)
+                - name: /scanDependencies (List module dependencies in standard form)
+                  href: ../build/reference/scandependencies.md
+                - name: /sdl (Enable more security checks)
                   href: ../build/reference/sdl-enable-additional-security-checks.md
                 - name: /showIncludes (List include files)
                   href: ../build/reference/showincludes-list-include-files.md
                 - name: /source-charset (Set source character set)
                   href: ../build/reference/source-charset-set-source-character-set.md
-                - name: /sourceDependencies (Report source-level dependencies)
+                - name: /sourceDependencies (List all source-level dependencies)
                   href: ../build/reference/sourcedependencies.md
+                - name: /sourceDependencies:directives (List module and header unit dependencies)
+                  href: ../build/reference/sourcedependencies-directives.md
                 - name: /std (Specify language standard version)
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: /Tc, /Tp, /TC, /TP (Specify source file type)
@@ -700,7 +723,7 @@
                   href: ../build/reference/translateinclude.md
                 - name: /U, /u (Undefine symbols)
                   href: ../build/reference/u-u-undefine-symbols.md
-                - name: /utf-8 (Set source and executable character sets to UTF-8)
+                - name: /utf-8 (Set source and execution character sets to UTF-8)
                   href: ../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md
                 - name: /V (Version number)
                   href: ../build/reference/v-version-number.md
@@ -755,8 +778,12 @@
                       href: ../build/reference/zc-alignednew.md
                     - name: "/Zc:auto (Deduce variable type)"
                       href: ../build/reference/zc-auto-deduce-variable-type.md
+                    - name: "/Zc:char8_t (Enable C++20 char8_t type)"
+                      href: ../build/reference/zc-char8-t.md
                     - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
                       href: ../build/reference/zc-cplusplus.md
+                    - name: '/Zc:externC (Use Standard C++ extern "C" rules)'
+                      href: ../build/reference/zc-externc.md
                     - name: "/Zc:externConstexpr (Enable extern constexpr variables)"
                       href: ../build/reference/zc-externconstexpr.md
                     - name: "/Zc:forScope (Force conformance in for loop scope)"
@@ -767,6 +794,8 @@
                       href: ../build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md
                     - name: "/Zc:inline (Remove unreferenced COMDAT)"
                       href: ../build/reference/zc-inline-remove-unreferenced-comdat.md
+                    - name: "/Zc:lambda (Enable updated lambda processor)"
+                      href: ../build/reference/zc-lambda.md
                     - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
                       href: ../build/reference/zc-noexcepttypes.md
                     - name: "/Zc:preprocessor (Enable preprocessor conformance mode)"
@@ -777,6 +806,8 @@
                       href: ../build/reference/zc-rvaluecast-enforce-type-conversion-rules.md
                     - name: "/Zc:sizedDealloc (Enable global sized deallocation functions)"
                       href: ../build/reference/zc-sizeddealloc-enable-global-sized-dealloc-functions.md
+                    - name: "/Zc:static_assert (Strict static_assert handling)"
+                      href: ../build/reference/zc-static-assert.md
                     - name: "/Zc:strictStrings (Disable string literal type conversion)"
                       href: ../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
                     - name: "/Zc:ternary (Enforce conditional operator rules)"
@@ -939,6 +970,8 @@
               href: ../build/reference/ignore-ignore-specific-warnings.md
             - name: /IGNOREIDL (Don't process attributes into MIDL)
               href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
+            - name: /INFERASANLIBS (Use inferred sanitizer libs)
+              href: ../build/reference/inferasanlibs.md
             - name: /IMPLIB (Name import library)
               href: ../build/reference/implib-name-import-library.md
             - name: /INCLUDE (Force symbol references)
@@ -1090,10 +1123,10 @@
               href: ../build/reference/error-handling-and-notification.md
             - name: Understand the delay load helper function
               href: ../build/reference/understanding-the-helper-function.md
-    - name: Additional MSVC build tools
+    - name: Other MSVC build tools
       expanded: false
       items: 
-        - name: Additional MSVC build tools
+        - name: Other MSVC build tools
           href: ../build/reference/c-cpp-build-tools.md
         - name: NMAKE reference
           expanded: false
@@ -1104,21 +1137,10 @@
               href: ../build/reference/creating-a-makefile-project.md
             - name: Running NMAKE 
               href: ../build/reference/running-nmake.md
-            - name: Contents of a makefile
-              expanded: false
-              items: 
-                - name: Contents of a makefile
-                  href: ../build/reference/contents-of-a-makefile.md
-                - name: Wildcards and NMAKE
-                  href: ../build/reference/wildcards-and-nmake.md
-                - name: Long filenames in a makefile
-                  href: ../build/reference/long-filenames-in-a-makefile.md
-                - name: Comments in a makefile
-                  href: ../build/reference/comments-in-a-makefile.md
-                - name: Special characters in a makefile
-                  href: ../build/reference/special-characters-in-a-makefile.md
-                - name: Sample makefile
-                  href: ../build/reference/sample-makefile.md
+            - name: Makefile contents and features
+              href: ../build/reference/contents-of-a-makefile.md
+            - name: Sample makefile
+              href: ../build/reference/sample-makefile.md
             - name: Description blocks
               href: ../build/reference/description-blocks.md
             - name: Commands in a makefile
@@ -1126,99 +1148,48 @@
               items: 
                 - name: Commands in a makefile
                   href: ../build/reference/commands-in-a-makefile.md
-                - name: Command modifiers
-                  href: ../build/reference/command-modifiers.md
-                - name: Filename-parts syntax
-                  href: ../build/reference/filename-parts-syntax.md
                 - name: Inline files in a makefile
-                  expanded: false
-                  items: 
-                    - name: Inline files in a makefile
-                      href: ../build/reference/inline-files-in-a-makefile.md
-                    - name: Specifying an inline file
-                      href: ../build/reference/specifying-an-inline-file.md
-                    - name: Creating inline file text
-                      href: ../build/reference/creating-inline-file-text.md
-                    - name: Reusing inline files
-                      href: ../build/reference/reusing-inline-files.md
-                    - name: Multiple inline files
-                      href: ../build/reference/multiple-inline-files.md
+                  href: ../build/reference/inline-files-in-a-makefile.md
             - name: Macros and NMAKE
               expanded: false
               items: 
                 - name: Macros and NMAKE
                   href: ../build/reference/macros-and-nmake.md
-                - name: Defining an NMAKE macro
+                - name: Define an NMAKE macro
+                  href: ../build/reference/defining-an-nmake-macro.md
+                - name: Use an NMAKE macro
                   expanded: false
                   items: 
-                    - name: Defining an NMAKE macro
-                      href: ../build/reference/defining-an-nmake-macro.md
-                    - name: Special characters in macros
-                      href: ../build/reference/special-characters-in-macros.md
-                    - name: Null and undefined macros
-                      href: ../build/reference/null-and-undefined-macros.md
-                    - name: Where to define macros
-                      href: ../build/reference/where-to-define-macros.md
-                    - name: Precedence in macro definitions
-                      href: ../build/reference/precedence-in-macro-definitions.md
-                - name: Using an NMAKE macro
-                  expanded: false
-                  items: 
-                    - name: Using an NMAKE macro
+                    - name: Use an NMAKE macro
                       href: ../build/reference/using-an-nmake-macro.md
-                    - name: Macro substitution
-                      href: ../build/reference/macro-substitution.md
+                    - name: abspath
+                      href: ../build/reference/nmake-function-abspath.md
+                    - name: basename
+                      href: ../build/reference/nmake-function-basename.md
+                    - name: filter, filteri
+                      href: ../build/reference/nmake-function-filter.md
+                    - name: filterout, filterouti
+                      href: ../build/reference/nmake-function-filterout.md
+                    - name: findstring, findstringi
+                      href: ../build/reference/nmake-function-findstring.md
+                    - name: lowercase
+                      href: ../build/reference/nmake-function-lowercase.md
+                    - name: patsubst, patsubsti
+                      href: ../build/reference/nmake-function-patsubst.md
+                    - name: strip
+                      href: ../build/reference/nmake-function-strip.md
+                    - name: subst, substi
+                      href: ../build/reference/nmake-function-subst.md
+                    - name: uppercase
+                      href: ../build/reference/nmake-function-uppercase.md
                 - name: Special NMAKE macros
-                  expanded: false
-                  items: 
-                    - name: Special NMAKE macros
-                      href: ../build/reference/special-nmake-macros.md
-                    - name: Filename macros
-                      href: ../build/reference/filename-macros.md
-                    - name: Recursion macros
-                      href: ../build/reference/recursion-macros.md
-                    - name: Command macros and options macros
-                      href: ../build/reference/command-macros-and-options-macros.md
-                    - name: Environment-variable macros
-                      href: ../build/reference/environment-variable-macros.md
+                  href: ../build/reference/special-nmake-macros.md
             - name: Inference rules
-              expanded: false
-              items: 
-                - name: Inference rules
-                  href: ../build/reference/inference-rules.md
-                - name: Defining a rule
-                  expanded: false
-                  items: 
-                    - name: Defining a rule
-                      href: ../build/reference/defining-a-rule.md
-                    - name: Search paths in rules
-                      href: ../build/reference/search-paths-in-rules.md
-                - name: Batch-mode rules
-                  href: ../build/reference/batch-mode-rules.md
-                - name: Predefined rules
-                  href: ../build/reference/predefined-rules.md
-                - name: Inferred dependents and rules
-                  href: ../build/reference/inferred-dependents-and-rules.md
-                - name: Precedence in inference rules
-                  href: ../build/reference/precedence-in-inference-rules.md
+              href: ../build/reference/inference-rules.md
             - name: Dot directives
               href: ../build/reference/dot-directives.md
             - name: Makefile preprocessing
-              expanded: false
-              items: 
-                - name: Makefile preprocessing
-                  href: ../build/reference/makefile-preprocessing.md
-                - name: Makefile preprocessing directives
-                  href: ../build/reference/makefile-preprocessing-directives.md
-                - name: Expressions in makefile preprocessing
-                  expanded: false
-                  items: 
-                    - name: Expressions in makefile preprocessing
-                      href: ../build/reference/expressions-in-makefile-preprocessing.md
-                    - name: Makefile preprocessing operators
-                      href: ../build/reference/makefile-preprocessing-operators.md
-                    - name: Executing a program in preprocessing
-                      href: ../build/reference/executing-a-program-in-preprocessing.md
+              href: ../build/reference/makefile-preprocessing.md
         - name: LIB reference
           expanded: false
           items: 

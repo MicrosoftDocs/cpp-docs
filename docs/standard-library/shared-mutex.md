@@ -1,15 +1,15 @@
 ---
-description: "Learn more about: &lt;shared_mutex>"
-title: "&lt;shared_mutex&gt;"
+description: "Learn more about: <shared_mutex>"
+title: "<shared_mutex>"
 ms.date: "03/27/2019"
 f1_keywords: ["<shared_mutex>", "shared_mutex/std::swap", "shared_mutex/std::shared_lock", "shared_mutex/std::shared_lock::shared_lock", "shared_mutex/std::shared_lock::operator=", "shared_mutex/std::shared_lock::operator =", "shared_mutex/std::shared_lock::lock", "shared_mutex/std::shared_lock::try_lock", "shared_mutex/std::shared_lock::try_lock_for", "shared_mutex/std::shared_lock::try_lock_until", "shared_mutex/std::shared_lock::unlock", "shared_mutex/std::shared_lock::swap", "shared_mutex/std::shared_lock::release", "shared_mutex/std::shared_lock::owns_lock", "shared_mutex/std::shared_lock::operator bool", "shared_mutex/std::shared_lock::mutex", "shared_mutex/std::shared_mutex", "shared_mutex/std::shared_mutex::native_handle_type", "shared_mutex/std::shared_mutex::shared_mutex", "shared_mutex/std::shared_mutex::operator=", "shared_mutex/std::shared_mutex::operator =", "shared_mutex/std::shared_mutex::lock", "shared_mutex/std::shared_mutex::try_lock", "shared_mutex/std::shared_mutex::unlock", "shared_mutex/std::shared_mutex::lock_shared", "shared_mutex/std::shared_mutex::try_lock_shared", "shared_mutex/std::shared_mutex::unlock_shared", "shared_mutex/std::shared_mutex::native_handle", "shared_mutex/std::shared_timed_mutex", "shared_mutex/std::shared_timed_mutex::shared_timed_mutex", "shared_mutex/std::shared_timed_mutex::operator=", "shared_mutex/std::shared_timed_mutex::operator =", "shared_mutex/std::shared_timed_mutex::lock", "shared_mutex/std::shared_timed_mutex::try_lock", "shared_mutex/std::shared_timed_mutex::try_lock_for", "shared_mutex/std::shared_timed_mutex::try_lock_until", "shared_mutex/std::shared_timed_mutex::unlock", "shared_mutex/std::shared_timed_mutex::lock_shared", "shared_mutex/std::shared_timed_mutex::try_lock_shared", "shared_mutex/std::shared_timed_mutex::try_lock_shared_for", "shared_mutex/std::shared_timed_mutex::try_lock_shared_until", "shared_mutex/std::shared_timed_mutex::unlock_shared"]
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
 ---
-# &lt;shared_mutex>
+# `<shared_mutex>`
 
-The &lt;shared_mutex> header provides synchronization primitives for protection of shared data that can be accessed by multiple threads. In addition to the exclusive access control provided by mutex classes, the shared mutex classes also allow shared ownership by multiple threads for non-exclusive access. Shared mutexes can be used to control resources that can be read by several threads without causing a race condition, but must be written exclusively by a single thread.
+The `<shared_mutex>` header provides synchronization primitives for protection of shared data that can be accessed by multiple threads. In addition to the exclusive access control provided by mutex classes, the shared mutex classes also allow shared ownership by multiple threads for non-exclusive access. Shared mutexes can be used to control resources that can be read by several threads without causing a race condition, but must be written exclusively by a single thread.
 
-The header &lt;shared_mutex> defines the classes `shared_mutex` and `shared_timed_mutex`, the class template `shared_lock`, and the template function `swap` for shared mutex support.
+The header `<shared_mutex>` defines the classes `shared_mutex` and `shared_timed_mutex`, the class template `shared_lock`, and the template function `swap` for shared mutex support.
 
 |Classes|Description|
 |-------------|-----------------|
@@ -57,7 +57,7 @@ A shared timed mutex type supports the additional methods `try_lock_shared_for` 
 The `shared_lock` class template extends support for timed locking and transfer of ownership to a shared mutex. Ownership of the mutex may be obtained at or after construction, and may be transferred to another `shared_lock` object. Objects of type `shared_lock` can be moved, but not copied.
 
 > [!WARNING]
-> Beginning in Visual Studio 2015, the C++ Standard Library synchronization types are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in &lt;shared_mutex> should not be used with any ConcRT types or functions.
+> Beginning in Visual Studio 2015, the C++ Standard Library synchronization types are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in `<shared_mutex>` should not be used with any ConcRT types or functions.
 
 ## Classes
 
@@ -181,11 +181,11 @@ Exchanges the content of two `shared_lock` objects. Effectively the same as `x.s
 
 ## Requirements
 
-**Header:** &lt;shared_mutex>
+**Header:** \<shared_mutex>
 
 **Namespace:** std
 
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[&lt;mutex>](../standard-library/mutex.md)
+[`<mutex>`](../standard-library/mutex.md)

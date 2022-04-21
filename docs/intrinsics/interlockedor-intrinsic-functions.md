@@ -45,7 +45,7 @@ long _InterlockedOr_rel(
 );
 char _InterlockedOr8(
    char volatile * Value,
-   long Mask
+   char Mask
 );
 char _InterlockedOr8_acq(
    char volatile * Value,

@@ -3,6 +3,7 @@ description: "Learn more about: Install cross-platform mobile development with C
 title: "Install cross-platform mobile development with C++"
 ms.date: "10/17/2019"
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
+ms.custom: intro-installation
 ---
 # Install cross-platform mobile development with C++
 
@@ -22,7 +23,7 @@ This article describes how to install the tools and third-party software require
 ::: moniker-end
 ::: moniker range=">=msvc-160"
 
-- For installation requirements, see [Visual Studio product family system requirements](/visualstudio/releases/2019/system-requirements).
+- For installation requirements, see [Visual Studio product family system requirements](/visualstudio/releases/2022/system-requirements).
 
    > [!IMPORTANT]
    > If you are using Windows 7 or Windows Server 2008 R2, you can develop code for Windows Desktop applications, Android Native Activity apps and libraries, and apps and code libraries for iOS, but not Windows Phone or UWP apps.
@@ -98,7 +99,7 @@ In most cases, Visual Studio can detect the configurations for the third-party s
 
 1. In the **Options** dialog box, select **Cross Platform** > **C++** > **Android**.
 
-   ![Android tool path options](../cross-platform/media/cppmdd-options-android.png "Android tool path options")
+   ![Screenshot of the Android tool path options in the Options dialog.](../cross-platform/media/cppmdd-options-android.png "Android tool path options")
 
 1. To change the path used by a tool, check the checkbox next to the path, and edit the folder path in the textbox. You can also use the browse button (**...**) to open a **Select location** dialog to choose the folder.
 

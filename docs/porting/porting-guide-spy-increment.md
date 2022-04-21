@@ -20,7 +20,7 @@ The project file, two old .dsw files from Visual C++ 6.0, converted easily with 
 
 After upgrading the two projects, our solution looked like this:
 
-![The Spy&#43;&#43; Solution](../porting/media/spyxxsolution.PNG "The Spy&#43;&#43; Solution")
+![Screenshot of the Spy plus plus Solution.](../porting/media/spyxxsolution.PNG)
 
 We have two projects, one with a large number of C++ files, and another a DLL that's written in C.
 
@@ -650,7 +650,7 @@ The above code produces the error:
 'n': undeclared identifier
 ```
 
-This occurs because the compiler has deprecated a compiler option that allowed code that no longer complies with the C++ standard. In the standard, declaring a variable inside a loop restricts its scope to the loop only, so the common practice of using a loop counter outside of the loop requires that the declaration of the counter also be moved outside the loop, as in the following revised code:
+This occurs because the compiler has deprecated a compiler option that allowed code that no longer conforms to the C++ standard. In the standard, declaring a variable inside a loop restricts its scope to the loop only, so the common practice of using a loop counter outside of the loop requires that the declaration of the counter also be moved outside the loop, as in the following revised code:
 
 ```cpp
 int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const

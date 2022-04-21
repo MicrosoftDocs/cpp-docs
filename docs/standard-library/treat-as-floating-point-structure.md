@@ -1,32 +1,48 @@
 ---
-description: "Learn more about: treat_as_floating_point Structure"
+description: "Learn more about: treat_as_floating_point structure"
 title: "treat_as_floating_point Structure"
-ms.date: "11/04/2016"
+ms.date: 07/16/2021
 f1_keywords: ["chrono/std::chrono::treat_as_floating_point"]
-ms.assetid: d0a2161c-bbb2-4924-8961-7568d5ad5434
 ---
-# treat_as_floating_point Structure
+# `treat_as_floating_point` structure
 
-Specifies whether `Rep` can be treated as a floating-point type.
+Checks whether the specified type can be treated as a floating-point type.
 
 ## Syntax
 
 ```cpp
-template <class Rep>
-struct treat_as_floating_point : is_floating_point<Rep>;
+template <class T>
+struct treat_as_floating_point : is_floating_point<T>;
 ```
+
+**Helper variable template**
+
+```cpp
+template<class T>
+inline constexpr bool treat_as_floating_point_v = treat_as_floating_point<T>::value;
+```
+
+### Parameters
+
+*`T`*\
+The type to test.
 
 ## Remarks
 
-`Rep` can be treated as a floating-point type only when the specialization `treat_as_floating_point<Rep>` is derived from [true_type](../standard-library/type-traits-typedefs.md#true_type). The class template can be specialized for a user-defined type.
+The purpose of this trait is to indicate whether a given class behaves like a floating-point type, and thus allows division of one value by another with acceptable loss of precision. If `treat_as_floating_point_v<T>` is false, `T` will be treated as if it behaves as an integral type for these conversions.
+
+The [`duration`](duration-class.md) template uses the `treat_as_floating_point trait` to help determine if a `duration` object
+can be converted to another `duration` with a different tick `period`.
+
+If `treat_as_floating_point_v<T>` is true, implicit conversions are allowed between durations. Otherwise, the implicit convertibility depends on the tick periods of the durations.
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<chrono>](../standard-library/chrono.md)
+[`<chrono>`](chrono.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

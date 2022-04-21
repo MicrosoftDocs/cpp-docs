@@ -1,29 +1,29 @@
 ---
-description: "Learn more about: &lt;value&gt;"
-title: "&lt;value> (C++ Documentation Comments)"
-ms.date: "11/04/2016"
+description: "Learn more about: XML documentation tag <value>"
+title: "<value> (C++ Documentation Comments)"
+ms.date: 12/03/2021
 f1_keywords: ["<value>"]
 helpviewer_keywords: ["value C++ XML tag", "<value> C++ XML tag"]
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
 ---
-# &lt;value&gt;
+# `<value>` documentation tag
 
-The \<value> tag lets you describe a property and property accessor methods. Note that when you add a property with a code wizard in the Visual Studio integrated development environment, it will add a [\<summary>](summary-visual-cpp.md) tag for the new property. You should then manually add a \<value> tag to describe the value that the property represents.
+The `<value>` tag lets you describe a property and property accessor methods. When you add a property with a code wizard in the Visual Studio integrated development environment, it will add a [`<summary>`](summary-visual-cpp.md) tag for the new property. You need to manually add a `<value>` tag to describe the value that the property represents.
 
 ## Syntax
 
-```
-<value>property-description</value>
+```cpp
+/// <value>property-description</value>
 ```
 
-#### Parameters
+### Parameters
 
-*property-description*<br/>
+*`property-description`*\
 A description for the property.
 
 ## Remarks
 
-Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [`/doc`](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -51,4 +51,4 @@ public:
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[XML documentation](xml-documentation-visual-cpp.md)

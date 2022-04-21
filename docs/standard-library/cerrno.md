@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;cerrno&gt;"
-title: "&lt;cerrno&gt;"
+description: "Learn more about: <cerrno>"
+title: "<cerrno>"
 ms.date: "11/04/2016"
 f1_keywords: ["<cerrno>"]
 helpviewer_keywords: ["cerrno header"]
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a
 ---
-# &lt;cerrno&gt;
+# `<cerrno>`
 
 Includes the C Standard library header \<errno.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C Standard library header are declared in the `std` namespace.
 

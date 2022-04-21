@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: /IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
-title: "/IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
+description: "Learn more about: /IGNOREIDL (Don't Process Attributes into MIDL)"
+title: "/IGNOREIDL (Don't Process Attributes into MIDL)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreEmbeddedIDL", "/ignoreidl"]
 helpviewer_keywords: ["IGNOREIDL linker option", "-IGNOREIDL linker option", "/IGNOREIDL linker option"]
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
 ---
-# /IGNOREIDL (Don&#39;t Process Attributes into MIDL)
+# /IGNOREIDL (Don't Process Attributes into MIDL)
 
 ```
 /IGNOREIDL
@@ -20,9 +20,7 @@ The /IGNOREIDL option specifies that any [IDL attributes](../../windows/attribut
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **Embedded IDL** property page.
+1. Select the **Configuration Properties** > **Linker** > **Embedded IDL** property page.
 
 1. Modify the **Ignore Embedded IDL** property.
 

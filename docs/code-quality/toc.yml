@@ -1,3 +1,4 @@
+items: 
 - name: Code analysis documentation
   href: ../code-quality/index.yml
 - name: Overview
@@ -137,6 +138,8 @@
     href: ../code-quality/c26455.md
   - name: C26456
     href: ../code-quality/c26456.md
+  - name: C26457
+    href: ../code-quality/c26457.md
   - name: C26460
     href: ../code-quality/c26460.md
   - name: C26461
@@ -460,6 +463,8 @@
     href: ../code-quality/c6387.md
   - name: C6388
     href: ../code-quality/c6388.md
+  - name: C6389
+    href: ../code-quality/c6389.md
   - name: C6400
     href: ../code-quality/c6400.md
   - name: C6401
@@ -574,6 +579,14 @@
     href: ../code-quality/c26810.md
   - name: C26811
     href: ../code-quality/c26811.md
+  - name: C26813
+    href: ../code-quality/c26813.md
+  - name: C26826
+    href: ../code-quality/c26826.md
+  - name: C26827
+    href: ../code-quality/c26827.md
+  - name: C26828
+    href: ../code-quality/c26828.md
   - name: C28020
     href: ../code-quality/c28020.md
   - name: C28021

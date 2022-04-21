@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;scoped_allocator&gt;"
-title: "&lt;scoped_allocator&gt;"
+description: "Learn more about: <scoped_allocator>"
+title: "<scoped_allocator>"
 ms.date: "11/04/2016"
 f1_keywords: ["<scoped_allocator>"]
 helpviewer_keywords: ["scoped_allocator Header"]
 ms.assetid: d20175b8-96be-4896-8141-3faba45e0005
 ---
-# &lt;scoped_allocator&gt;
+# `<scoped_allocator>`
 
 Defines the container class template scoped_allocator.
 

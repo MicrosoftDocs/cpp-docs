@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;memory_resource&gt;"
-title: "&lt;memory_resource&gt;"
+description: "Learn more about: <memory_resource>"
+title: "<memory_resource>"
 ms.date: "04/04/2019"
 f1_keywords: ["<memory_resource>"]
 helpviewer_keywords: ["memory_resource header"]
 ---
-# &lt;memory_resource&gt;
+# `<memory_resource>`
 
 Defines the container class template memory_resource and its supporting templates.
 

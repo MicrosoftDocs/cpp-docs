@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;initializer_list&gt;"
-title: "&lt;initializer_list&gt;"
+description: "Learn more about: <initializer_list>"
+title: "<initializer_list>"
 ms.date: "11/04/2016"
 ms.assetid: 820b6448-fb01-49a4-aeaa-546ad7576ea4
 ---
-# &lt;initializer_list&gt;
+# `<initializer_list>`
 
 Defines the container class template `initializer_list` and several supporting templates.
 

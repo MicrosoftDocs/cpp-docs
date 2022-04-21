@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: logic_error Class"
 title: "logic_error Class"
-ms.date: "11/04/2016"
+ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::logic_error"]
 helpviewer_keywords: ["logic_error class"]
 ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a
@@ -30,27 +30,29 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 
 ```cpp
 // logic_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
+#include <stdexcept>
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
    try
    {
-      throw logic_error( "logic error" );
+      throw logic_error("Does not compute!");
    }
-   catch ( exception &e )
+   catch (const exception& e)
    {
-      cerr << "Caught: " << e.what( ) << endl;
-      cerr << "Type: " << typeid( e ).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
-```
-
-```Output
-Caught: logic error
+/* Output:
+Caught: Does not compute!
 Type: class std::logic_error
+*/
 ```
 
 ## Requirements

@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;string_view&gt; typedefs"
-title: "&lt;string_view&gt; typedefs"
+description: "Learn more about: <string_view> typedefs"
+title: "<string_view> typedefs"
 ms.date: "04/19/2019"
 f1_keywords: ["xstring/std::string_view", "xstring/std::u16string_view", "xstring/std::u32string_view", "xstring/std::wstring_view"]
 ---
-# &lt;string_view&gt; typedefs
+# `<string_view>` typedefs
 
 [string_view](#string_view)\
 [u16string_view](#u16string_view)\

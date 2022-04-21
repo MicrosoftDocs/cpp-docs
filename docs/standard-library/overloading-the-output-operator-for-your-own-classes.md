@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: Overloading the &lt;&lt; Operator for Your Own Classes"
-title: "Overloading the &lt;&lt; Operator for Your Own Classes"
+description: "Learn more about: Overloading the << Operator for Your Own Classes"
+title: "Overloading the << Operator for Your Own Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operator<<, overloading for your own classes", "operator <<, overloading for your own classes"]
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
 ---
-# Overloading the &lt;&lt; Operator for Your Own Classes
+# Overloading the `<<` Operator for Your Own Classes
 
 Output streams use the insertion (`<<`) operator for standard types. You can also overload the `<<` operator for your own classes.
 

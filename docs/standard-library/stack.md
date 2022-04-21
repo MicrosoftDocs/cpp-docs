@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;stack&gt;"
-title: "&lt;stack&gt;"
+description: "Learn more about: <stack>"
+title: "<stack>"
 ms.date: "11/04/2016"
 f1_keywords: ["<stack>"]
 helpviewer_keywords: ["stack, stack header", "stack header"]
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
 ---
-# &lt;stack&gt;
+# `<stack>`
 
 Defines the class template stack and two supporting templates.
 

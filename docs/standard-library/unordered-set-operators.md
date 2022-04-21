@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: &lt;unordered_set&gt; operators"
-title: "&lt;unordered_set&gt; operators"
+description: "Learn more about: <unordered_set> operators"
+title: "<unordered_set> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 ---
-# &lt;unordered_set&gt; operators
+# `<unordered_set>` operators
 
 ## <a name="op_neq"></a> operator!=
 

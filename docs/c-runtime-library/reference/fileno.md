@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fileno"]
 helpviewer_keywords: ["file handles [C++], getting from streams", "fileno function", "_fileno function", "streams, getting file handles"]
-ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
 ---
-# _fileno
+# `_fileno`
 
 Gets the file descriptor associated with a stream.
 
@@ -24,21 +23,21 @@ int _fileno(
 
 ### Parameters
 
-*stream*<br/>
-Pointer to the **FILE** structure.
+*`stream`*\
+Pointer to the **`FILE`** structure.
 
 ## Return Value
 
-**_fileno** returns the file descriptor. There's no error return. The result is undefined if *stream* does not specify an open file. If stream is **NULL**, **_fileno** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **errno** to **EINVAL**.
+**`_fileno`** returns the file descriptor. There's no error return. The result is undefined if *`stream`* doesn't specify an open file. If stream is **`NULL`**, **`_fileno`** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to **`EINVAL`**.
 
-For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 > [!NOTE]
-> If **stdout** or **stderr** is not associated with an output stream (for example, in a Windows application without a console window), the file descriptor returned is -2. In previous versions, the file descriptor returned was -1. This change allows applications to distinguish this condition from an error.
+> If **`stdout`** or **`stderr`** is not associated with an output stream (for example, in a Windows application without a console window), the file descriptor returned is -2. In previous versions, the file descriptor returned was -1. This change allows applications to distinguish this condition from an error.
 
 ## Remarks
 
-The **_fileno** routine returns the file descriptor currently associated with *stream*. This routine is implemented both as a function and as a macro. For information about choosing either implementation, see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
+The **`_fileno`** routine returns the file descriptor currently associated with *`stream`*. This routine is implemented both as a function and as a macro. For information about choosing either implementation, see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -46,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**_fileno**|\<stdio.h>|
+|**`_fileno`**|`<stdio.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -76,8 +75,8 @@ The file descriptor for stderr is 2
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
-[_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[freopen, _wfreopen](freopen-wfreopen.md)<br/>
+[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
+[`_filelength`, `_filelengthi64`](filelength-filelengthi64.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`freopen`, `_wfreopen`](freopen-wfreopen.md)

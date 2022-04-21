@@ -8,9 +8,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CrtlsValidHeapPointer", "_CrtIsValidHeapPointer"]
 helpviewer_keywords: ["_CrtIsValidHeapPointer function", "CrtIsValidHeapPointer function"]
-ms.assetid: caf597ce-1b05-4764-9f37-0197a982bec5
 ---
-# _CrtIsValidHeapPointer
+# `_CrtIsValidHeapPointer`
 
 Verifies that a specified pointer is in a heap allocated by some C run-time library, but not necessarily by the caller's CRT library. In versions of the CRT before Visual Studio 2010, this verifies that the specified pointer is in the local heap (debug version only).
 
@@ -24,30 +23,30 @@ int _CrtIsValidHeapPointer(
 
 ### Parameters
 
-*userData*<br/>
+*`userData`*\
 Pointer to the beginning of an allocated memory block.
 
 ## Return Value
 
-**_CrtIsValidHeapPointer** returns TRUE if the specified pointer is in the heap shared by all CRT library instances. In versions of the CRT before Visual Studio 2010, this returns TRUE if the specified pointer is in the local heap. Otherwise, the function returns FALSE.
+**`_CrtIsValidHeapPointer`** returns `TRUE` if the specified pointer is in the heap shared by all CRT library instances. In versions of the CRT before Visual Studio 2010, this returns `TRUE` if the specified pointer is in the local heap. Otherwise, the function returns `FALSE`.
 
 ## Remarks
 
-We do not recommend that you use this function. Starting with the Visual Studio 2010 CRT library, all CRT libraries share one OS heap, the *process heap*. The **_CrtIsValidHeapPointer** function reports whether the pointer was allocated in a CRT heap, but not that it was allocated by the caller's CRT library. For example, consider a block allocated by using the Visual Studio 2010 version of the CRT library. If the **_CrtIsValidHeapPointer** function exported by the Visual Studio 2012 version of the CRT library tests the pointer, it returns TRUE. This is no longer a useful test. In versions of the CRT library before Visual Studio 2010, the function is used to ensure that a specific memory address is within the local heap. The local heap refers to the heap created and managed by a particular instance of the C run-time library. If a dynamic-link library (DLL) contains a static link to the run-time library, it has its own instance of the run-time heap, and therefore its own heap, independent of the application's local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to **_CrtIsValidHeapPointer** are removed during preprocessing.
+We don't recommend that you use this function. Starting with the Visual Studio 2010 CRT library, all CRT libraries share one OS heap, the *process heap*. The **`_CrtIsValidHeapPointer`** function reports whether the pointer was allocated in a CRT heap, but not that it was allocated by the caller's CRT library. For example, consider a block allocated by using the Visual Studio 2010 version of the CRT library. If the **`_CrtIsValidHeapPointer`** function exported by the Visual Studio 2012 version of the CRT library tests the pointer, it returns `TRUE`. This is no longer a useful test. In versions of the CRT library before Visual Studio 2010, the function is used to ensure that a specific memory address is within the local heap. The local heap refers to the heap created and managed by a particular instance of the C run-time library. If a dynamic-link library (DLL) contains a static link to the run-time library, it has its own instance of the run-time heap, and therefore its own heap, independent of the application's local heap. When [`_DEBUG`](../../c-runtime-library/debug.md) isn't defined, calls to **`_CrtIsValidHeapPointer`** are removed during preprocessing.
 
-Because this function returns TRUE or FALSE, it can be passed to one of the [_ASSERT](assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the specified address is not located within the local heap:
+Because this function returns `TRUE` or `FALSE`, it can be passed to one of the [`_ASSERT`](assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the specified address isn't located within the local heap:
 
 ```C
 _ASSERTE( _CrtIsValidHeapPointer( userData ) );
 ```
 
-For more information about how **_CrtIsValidHeapPointer** can be used with other debug functions and macros, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about how **`_CrtIsValidHeapPointer`** can be used with other debug functions and macros, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_CrtIsValidHeapPointer**|\<crtdbg.h>|
+|**`_CrtIsValidHeapPointer`**|`<crtdbg.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -57,7 +56,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-The following example demonstrates how to test whether memory is valid when it is used with C run-time libraries before Visual Studio 2010. This example is provided for users of legacy CRT library code.
+The following example demonstrates how to test whether memory is valid when it's used with C run-time libraries before Visual Studio 2010. This example is provided for users of legacy CRT library code.
 
 ```C
 // crt_isvalid.c
@@ -111,4 +110,4 @@ my_pointer is within the local heap.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+[Debug Routines](../../c-runtime-library/debug-routines.md)

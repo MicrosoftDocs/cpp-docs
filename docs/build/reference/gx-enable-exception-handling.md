@@ -26,9 +26,9 @@ By default, **/EHsc**, the equivalent of **/GX**, is in effect when you compile 
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. In the navigation pane, choose **Configuration Properties**, **C/C++**, **Command Line**.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Type the compiler option in the **Additional Options** box.
+1. Enter the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 

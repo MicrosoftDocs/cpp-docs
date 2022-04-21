@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;strstream&gt;"
-title: "&lt;strstream&gt;"
+description: "Learn more about: <strstream>"
+title: "<strstream>"
 ms.date: "11/04/2016"
 f1_keywords: ["<strstream>"]
 helpviewer_keywords: ["strstream header"]
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5
 ---
-# &lt;strstream&gt;
+# `<strstream>`
 
 Defines several classes that support iostreams operations on sequences stored in an allocated array of **`char`** object. Such sequences are easily converted to and from C strings.
 

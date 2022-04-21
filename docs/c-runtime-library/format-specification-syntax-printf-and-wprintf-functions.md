@@ -5,7 +5,7 @@ ms.date: "10/26/2020"
 helpviewer_keywords: ["format specification fields for printf function", "printf function format specification fields", "flag directives, printf function", "type fields, printf function", "width fields, printf function", "precision fields, printf function"]
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 ---
-# Format specification syntax: printf and wprintf functions
+# Format specification syntax: `printf` and `wprintf` functions
 
 The various `printf` and `wprintf` functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string contains zero or more *directives*, which are either literal characters for output or encoded *conversion specifications* that describe how to format an argument in the output. This article describes the syntax used to encode conversion specifications in the format string. For a listing of these functions, see [Stream I/O](../c-runtime-library/stream-i-o.md).
 
@@ -114,7 +114,7 @@ The first optional field in a conversion specification contains *flag directives
 |**`+`**|Use a sign (+ or -) to prefix the output value if it's of a signed type.|Sign appears only for negative signed values (-).|
 |**`0`**|If *width* is prefixed by **`0`**, leading zeros are added until the minimum width is reached. If both **`0`** and **`-`** appear, the **`0`** is ignored. If **`0`** is specified for an integer format (**`i`**, **`u`**, **`x`**, **`X`**, **`o`**, **`d`**) and a precision specification is also present—for example, `%04.d`—the **`0`** is ignored. If **`0`** is specified for the **`a`** or **`A`** floating-point format, leading zeros are prepended to the mantissa, after the `0x` or `0X` prefix.|No padding.|
 |**blank (' ')**|Use a blank to prefix the output value if it's signed and positive. The blank is ignored if both the blank and + flags appear.|No blank appears.|
-|**`#`**|When it's used with the **`o`**, **`x`**, or **`X`** format, the **`#`** flag uses `0`, `0x`, or `0X`, respectively, to prefix any nonzero output value.|No blank appears.|
+|**`#`**|When it's used with the **`o`**, **`x`**, or **`X`** format, the **`#`** flag uses `0`, `0x`, or `0X`, respectively, to prefix any nonzero output value.|No prefix appears.|
 ||When it's used with the **`e`**, **`E`**, **`f`**, **`F`**, **`a`**, or **`A`** format, the **`#`** flag forces the output value to contain a decimal point.|Decimal point appears only if digits follow it.|
 ||When it's used with the **`g`** or **`G`** format, the **`#`** flag forces the output value to contain a decimal point and prevents the truncation of trailing zeros.<br /><br /> Ignored when used with **`c`**, **`d`**, **`i`**, **`u`**, or **`s`**.|Decimal point appears only if digits follow it. Trailing zeros are truncated.|
 
@@ -122,15 +122,15 @@ The first optional field in a conversion specification contains *flag directives
 
 ## Width specification
 
-In a conversion specification, the optional width specification field appears after any *flags* characters. The *width* argument is a non-negative decimal integer that controls the minimum number of characters that are output. If the number of characters in the output value is less than the specified width, blanks are added to the left or the right of the values—depending on whether the left-alignment flag (**`-`**) is specified—until the minimum width is reached. If *width* is prefixed by 0, leading zeros are added to integer or floating-point conversions until the minimum width is reached, except when conversion is to an infinity or NaN.
+In a conversion specification, the optional width specification field appears after any *flags* characters. The *`width`* argument is a non-negative decimal integer that controls the minimum number of characters that are output. If the number of characters in the output value is less than the specified width, blanks are added to the left or the right of the values—depending on whether the left-alignment flag (**`-`**) is specified—until the minimum width is reached. If *`width`* is prefixed by 0, leading zeros are added to integer or floating-point conversions until the minimum width is reached, except when conversion is to an infinity or `NaN`.
 
-The width specification never causes a value to be truncated. If the number of characters in the output value is greater than the specified width, or if *width* isn't provided, all characters of the value are output, subject to the *precision* specification.
+The width specification never causes a value to be truncated. If the number of characters in the output value is greater than the specified width, or if *`width`* isn't provided, all characters of the value are output, subject to the precision specification.
 
-If the width specification is an asterisk (`*`), an `int` argument from the argument list supplies the value. The *width* argument must precede the value that's being formatted in the argument list, as shown in this example:
+If the width specification is an asterisk (`*`), an `int` argument from the argument list supplies the value. The *`width`* argument must precede the value that's being formatted in the argument list, as shown in this example:
 
 `printf("%0*d", 5, 3);  /* 00003 is output */`
 
-A missing or small *width* value in a conversion specification doesn't cause the truncation of an output value. If the result of a conversion is wider than the *width* value, the field expands to contain the conversion result.
+A missing or small *`width`* value in a conversion specification doesn't cause the truncation of an output value. If the result of a conversion is wider than the *`width`* value, the field expands to contain the conversion result.
 
 <a name="precision"></a>
 
@@ -138,15 +138,15 @@ A missing or small *width* value in a conversion specification doesn't cause the
 
 In a conversion specification, the third optional field is the precision specification. It consists of a period (`.`) followed by a non-negative decimal integer that, depending on the conversion type, specifies the number of string characters, the number of decimal places, or the number of significant digits to be output.
 
-Unlike the width specification, the precision specification can cause either truncation of the output value or rounding of a floating-point value. If *precision* is specified as 0, and the value to be converted is 0, the result is no characters output, as shown in this example:
+Unlike the width specification, the precision specification can cause either truncation of the output value or rounding of a floating-point value. If *`precision`* is specified as 0, and the value to be converted is 0, the result is no characters output, as shown in this example:
 
 `printf( "%.0d", 0 );      /* No characters output */`
 
-If the precision specification is an asterisk (`*`), an `int` argument from the argument list supplies the value. In the argument list, the *precision* argument must precede the value that's being formatted, as shown in this example:
+If the precision specification is an asterisk (`*`), an `int` argument from the argument list supplies the value. In the argument list, the *`precision`* argument must precede the value that's being formatted, as shown in this example:
 
 `printf( "%.*f", 3, 3.14159265 );  /* 3.142 output */`
 
-The *type* character determines either the interpretation of *precision* or the default precision when *precision* is omitted, as shown in the following table.
+The *`type`* character determines either the interpretation of *`precision`* or the default precision when *`precision`* is omitted, as shown in the following table.
 
 ### How Precision Values Affect Type
 
@@ -199,6 +199,6 @@ An **`hc`** or **`hC`** type specifier is synonymous with **`c`** in `printf` fu
 
 ## See also
 
-[`printf, _printf_l, wprintf, _wprintf_l`](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)\
-[`printf_s, _printf_s_l, wprintf_s, _wprintf_s_l`](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)\
+[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
 [`printf_p` Positional Parameters](../c-runtime-library/printf-p-positional-parameters.md)

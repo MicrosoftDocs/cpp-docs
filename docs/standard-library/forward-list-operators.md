@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: &lt;forward_list&gt; operators"
-title: "&lt;forward_list&gt; operators"
+description: "Learn more about: <forward_list> operators"
+title: "<forward_list> operators"
 ms.date: "11/04/2016"
-f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "forward_list/std::operatoroperator&gt;", "forward_list/std::operatoroperator&gt=;", "forward_list/std::operatoroperator&lt;", "forward_list/std::operatoroperator&lt;="]
+f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "forward_list/std::operator>", "forward_list/std::operator&gt=;", "forward_list/std::operator<", "forward_list/std::operator<="]
 ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
-helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forward_list)", "std::operatoroperator&gt; (forward_list)", "std::operatoroperator&gt=; (forward_list)", "std::operatoroperator&lt; (forward_list)", "std::operatoroperator&lt;= (forward_list)"]
+helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forward_list)", "std::operator> (forward_list)", "std::operator&gt=; (forward_list)", "std::operator< (forward_list)", "std::operator<= (forward_list)"]
 ---
-# &lt;forward_list&gt; operators
+# `<forward_list>` operators
 
 ## <a name="op_eq_eq"></a> operator==
 
@@ -56,7 +56,7 @@ An object of type `forward_list`.
 
 This template function returns `!(left == right)`.
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
 Tests if the forward list object on the left side of the operator is less than the forward list object on the right side.
 
@@ -82,7 +82,7 @@ An object of type `forward_list`.
 
 This template function overloads `operator<` to compare two objects of class template `forward_list`. The function returns `lexicographical_compare(lhs. begin(), lhs. end(), rhs.begin(), rhs.end())`.
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the forward list object on the left side of the operator is less than or equal to the forward list object on the right side.
 
@@ -108,7 +108,7 @@ An object of type `forward_list`.
 
 This template function returns `!(right < left)`.
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the forward list object on the left side of the operator is greater than the forward list object on the right side.
 
@@ -134,7 +134,7 @@ An object of type `forward_list`.
 
 This template function returns `right < left`.
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the forward list object on the left side of the operator is greater than or equal to the forward list object on the right side.
 

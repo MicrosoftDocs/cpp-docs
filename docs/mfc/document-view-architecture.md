@@ -33,7 +33,7 @@ The [CView](reference/cview-class.md) (or one of its many derived classes) provi
 
 The following figure shows the relationship between a document and its view.
 
-![View is the part of the document that's displayed](../mfc/media/vc379n1.gif "View is the part of the document that's displayed") <br/>
+![View is the part of the document that's displayed.](../mfc/media/vc379n1.gif "View is the part of the document that's displayed") <br/>
 Document and View
 
 The document/view implementation in the class library separates the data itself from its display and from user operations on the data. All changes to the data are managed through the document class. The view calls this interface to access and update the data.

@@ -44,20 +44,20 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2425](compiler-error-c2425.md)|'*token*': non-constant expression in '*context*'|
 |[Compiler error C2426](compiler-error-c2426.md)|'*token*': illegal operator in '*context*'|
 |[Compiler error C2427](compiler-error-c2427.md)|'*class*': cannot define class in this scope|
-|[Compiler error C2428](compiler-error-c2428.md)|'*operation*': not allowed on operand of type 'bool'|
+|[Compiler error C2428](compiler-error-c2428.md)|'*operation*': not allowed on operand of type '`bool`'|
 |[Compiler error C2429](compiler-error-c2429.md)|'*language feature*' requires compiler flag '*compiler option*'|
 |[Compiler error C2430](compiler-error-c2430.md)|more than one index register in '*context*'|
 |[Compiler error C2431](compiler-error-c2431.md)|illegal index register in '*context*'|
 |[Compiler error C2432](compiler-error-c2432.md)|illegal reference to 16-bit data in '*context*'|
 |[Compiler error C2433](compiler-error-c2433.md)|'*identifier*': '*modifier*' not permitted on data declarations|
-|[Compiler error C2434](compiler-error-c2434.md)|'*symbol*': a symbol declared with __declspec(process) cannot be dynamically initialized in /clr:pure mode|
-|[Compiler error C2435](compiler-error-c2435.md)|'var': dynamic initialization requires managed CRT, cannot compile with /clr:safe|
+|[Compiler error C2434](compiler-error-c2434.md)|'*symbol*': a symbol declared with `__declspec(process)` cannot be dynamically initialized in `/clr:pure` mode|
+|[Compiler error C2435](compiler-error-c2435.md)|'var': dynamic initialization requires managed CRT, cannot compile with `/clr:safe`|
 |[Compiler error C2436](compiler-error-c2436.md)|'*identifier*': member function or nested class in constructor initializer list|
 |[Compiler error C2437](compiler-error-c2437.md)|'*identifier*': has already been initialized|
 |[Compiler error C2438](compiler-error-c2438.md)|'*identifier*': cannot initialize static class data via constructor|
 |[Compiler error C2439](compiler-error-c2439.md)|'*identifier*': member could not be initialized|
 |[Compiler error C2440](compiler-error-c2440.md)|'*conversion*': cannot convert from '*type_1*' to '*type_2*'|
-|[Compiler error C2441](compiler-error-c2441.md)|'*variable*': a symbol declared with __declspec(process) must be const in /clr:pure mode|
+|[Compiler error C2441](compiler-error-c2441.md)|'*variable*': a symbol declared with `__declspec(process)` must be `const` in /clr:pure mode|
 |Compiler error C2442|'*identifier*': nested-namespace-definition cannot be inline or have attributes|
 |[Compiler error C2443](compiler-error-c2443.md)|operand size conflict|
 |[Compiler error C2444](compiler-error-c2444.md)|'*identifier*': used ANSI prototype, found 'type', expected '{' or ';'|
@@ -67,53 +67,53 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2449](compiler-error-c2449.md)|found '{' at file scope (missing function header?)|
 |[Compiler error C2450](compiler-error-c2450.md)|switch expression of type '*type*' is illegal|
 |[Compiler error C2451](compiler-error-c2451.md)|conditional expression of type '*type*' is illegal|
-|[Compiler error C2452](compiler-error-c2452.md)|'*type*': invalid source type for safe_cast|
+|[Compiler error C2452](compiler-error-c2452.md)|'*type*': invalid source type for `safe_cast`|
 |Compiler error C2453|'*type*': invalid target type for safe_cast|
 |Compiler error C2454|'*identifier*': namespace alias name cannot be declared using a qualified name|
 |Compiler error C2455|'*class*' a WinRT ref class that derives from an imported base class cannot be abstract.|
-|Compiler error C2456|'*class*' an unsealed ref class cannot have a public visible constructor. Seal the class, or specify constructor as 'internal', 'protected private' or 'private' instead.|
+|Compiler error C2456|'*class*' an unsealed ref class cannot have a public visible constructor. Seal the class, or specify constructor as '`internal`', '`protected private`' or '`private`' instead.|
 |[Compiler error C2457](compiler-error-c2457.md)|'*identifier*': predefined macro cannot appear outside of a function body|
 |[Compiler error C2458](compiler-error-c2458.md)|'*identifier*': redefinition within definition|
 |[Compiler error C2459](compiler-error-c2459.md)|'*identifier*': is being defined; cannot add as an anonymous member|
 |[Compiler error C2460](compiler-error-c2460.md)|'*identifier_1*': uses '*identifier_2*', which is being defined|
 |[Compiler error C2461](compiler-error-c2461.md)|'*class*': constructor syntax missing formal parameters|
 |[Compiler error C2462](compiler-error-c2462.md)|'*identifier*': cannot define a type in a 'new-expression'|
-|[Compiler error C2464](compiler-error-c2464.md)|'*type*': cannot use 'new' to allocate a reference|
+|[Compiler error C2464](compiler-error-c2464.md)|'*type*': cannot use '`new`' to allocate a reference|
 |[Compiler error C2465](compiler-error-c2465.md)|cannot define an anonymous type inside parentheses|
 |[Compiler error C2466](compiler-error-c2466.md)|cannot allocate an array of constant size 0|
 |[Compiler error C2467](compiler-error-c2467.md)|illegal declaration of anonymous '*user_defined_type*'|
-|Compiler error C2468|constructor cannot be 'constexpr' in a class or struct with virtual base classes|
-|[Compiler error C2469](compiler-error-c2469.md)|'new': cannot allocate 'void' objects|
+|Compiler error C2468|constructor cannot be '`constexpr`' in a class or struct with virtual base classes|
+|[Compiler error C2469](compiler-error-c2469.md)|'`new`': cannot allocate '`void`' objects|
 |[Compiler error C2470](compiler-error-c2470.md)|'*function*': looks like a function definition, but there is no parameter list; skipping apparent body|
 |[Compiler error C2471](compiler-error-c2471.md)|cannot update program database '*filename*'|
 |[Compiler error C2472](compiler-error-c2472.md)|'*function*' cannot be generated in managed code: '*message*'; compile with /clr to generate a mixed image|
 |[Compiler error C2473](compiler-error-c2473.md)|'*identifier*': looks like a function definition, but there is no parameter list.|
 |[Compiler error C2474](compiler-error-c2474.md)|'*identifier*': missing an adjacent semicolon, could be either keyword or identifier.|
-|Compiler error C2475|'*identifier*': redefinition; 'constexpr' specifier mismatch|
+|Compiler error C2475|'*identifier*': redefinition; '`constexpr`' specifier mismatch|
 |[Compiler error C2477](compiler-error-c2477.md)|'*member*': static data member cannot be initialized via derived class|
 |Compiler error C2478|declaration is incompatible with '*instance*'|
-|[Compiler error C2479](compiler-error-c2479.md)|'*identifier*': 'allocate( )' is only valid for data items of static extent|
-|[Compiler error C2480](compiler-error-c2480.md)|'*identifier*': 'thread' is only valid for data items of static extent|
-|Compiler error C2481|'*identifier*': thread_local is only valid on static members and variables at namespace or block scope|
+|[Compiler error C2479](compiler-error-c2479.md)|'*identifier*': '`allocate( )`' is only valid for data items of static extent|
+|[Compiler error C2480](compiler-error-c2480.md)|'*identifier*': '`thread`' is only valid for data items of static extent|
+|Compiler error C2481|'*identifier*': `thread_local` is only valid on static members and variables at namespace or block scope|
 |[Compiler error C2482](compiler-error-c2482.md)|'*identifier*': dynamic initialization of thread local data not allowed in managed/WINRT code|
 |[Compiler error C2483](compiler-error-c2483.md)|'*identifier*': object with destructor or non-aggregate type cannot be declared with thread storage duration in managed/WINRT code|
 |[Compiler error C2485](compiler-error-c2485.md)|'*identifier*': unrecognized extended attribute|
-|[Compiler error C2486](compiler-error-c2486.md)|'__LOCAL_SIZE' only allowed in function with the 'naked' attribute|
+|[Compiler error C2486](compiler-error-c2486.md)|'`__LOCAL_SIZE`' only allowed in function with the '`naked`' attribute|
 |[Compiler error C2487](compiler-error-c2487.md)|'*identifier*': member of dll interface class may not be declared with dll interface|
-|[Compiler error C2488](compiler-error-c2488.md)|'*identifier*': 'naked' can only be applied to non-member function definitions|
+|[Compiler error C2488](compiler-error-c2488.md)|'*identifier*': '`naked`' can only be applied to non-member function definitions|
 |[Compiler error C2489](compiler-error-c2489.md)|'*identifier*': initialized auto or register variable not allowed at function scope in 'naked' function|
-|[Compiler error C2490](compiler-error-c2490.md)|'*keyword*' not allowed in function with 'naked' attribute|
+|[Compiler error C2490](compiler-error-c2490.md)|'*keyword*' not allowed in function with '`naked`' attribute|
 |[Compiler error C2491](compiler-error-c2491.md)|'*identifier*': definition of dllimport *function* not allowed|
 |[Compiler error C2492](compiler-error-c2492.md)|'*variable*': data with thread storage duration may not have dll interface|
-|[Compiler error C2493](compiler-error-c2493.md)|illegal form of __based|
-|[Compiler error C2494](compiler-error-c2494.md)|'*keyword*' cannot be called from within a filter expression or &#95;&#95;finally/finally block|
-|[Compiler error C2495](compiler-error-c2495.md)|'*identifier*': '__declspec(noexcept)' can only be applied to function declarations or definitions|
-|[Compiler error C2496](compiler-error-c2496.md)|'*identifier*': 'selectany' can only be applied to data items with external linkage|
-|Compiler error C2497|'*identifier*': 'implementation_key' can only be applied to function declarations|
-|[Compiler error C2498](compiler-error-c2498.md)|'*function*': 'novtable' can only be applied to class declarations or definitions|
+|[Compiler error C2493](compiler-error-c2493.md)|illegal form of `__based`|
+|[Compiler error C2494](compiler-error-c2494.md)|'*keyword*' cannot be called from within a filter expression or `__finally`/`finally` block|
+|[Compiler error C2495](compiler-error-c2495.md)|'*identifier*': '`__declspec(noexcept)`' can only be applied to function declarations or definitions|
+|[Compiler error C2496](compiler-error-c2496.md)|'*identifier*': '`selectany`' can only be applied to data items with external linkage|
+|Compiler error C2497|'*identifier*': '`implementation_key`' can only be applied to function declarations|
+|[Compiler error C2498](compiler-error-c2498.md)|'*function*': '`novtable`' can only be applied to class declarations or definitions|
 |[Compiler error C2499](compiler-error-c2499.md)|'*class*': a class cannot be its own base class|
 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

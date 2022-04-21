@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: &lt;cinttypes&gt;"
-title: "&lt;cinttypes&gt;"
+description: "Learn more about: <cinttypes>"
+title: "<cinttypes>"
 ms.date: "11/04/2016"
 ms.assetid: 18eb738c-aa74-4ed3-9cdd-049ef4c64b80
 ---
-# &lt;cinttypes&gt;
+# `<cinttypes>`
 
 Includes the Standard C library header \<inttypes.h>. Including this header also includes \<cstdint>.
 
