@@ -1,7 +1,7 @@
 ---
 title: "/headerName (Build a header unit from the specified header)"
 description: "Use the /headerName compiler option to establish a mapping between a header file and the header unit to build."
-ms.date: 04/13/2021
+ms.date: 04/21/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/headerName"]
@@ -68,6 +68,6 @@ cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algo
 ## See also
 
 [`/exportHeader` (Create header units)](module-exportheader.md)\
-[`/headerUnit` (Create header units)](headerunit.md)\
+[`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)
