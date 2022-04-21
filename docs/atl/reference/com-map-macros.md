@@ -2,7 +2,7 @@
 description: "Learn more about: COM Map Macros"
 title: "COM Map Macros"
 ms.date: "11/04/2016"
-f1_keywords: ["atlcom/ATL::BEGIN_COM_MAP", "atlcom/ATL::END_COM_MAP"]
+f1_keywords: ["atlcom/ATL::BEGIN_COM_MAP", "atlcom/ATL::END_COM_MAP", "ATLCOM/BEGIN_COM_MAP", "ATLCOM/END_COM_MAP"]
 helpviewer_keywords: ["COM interfaces, COM map macros"]
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
 ---
