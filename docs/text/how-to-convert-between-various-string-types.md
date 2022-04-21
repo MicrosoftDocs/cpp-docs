@@ -11,15 +11,15 @@ This topic shows how to convert various Visual C++ string types into other strin
 
 The strings types that are covered include `char *`, `wchar_t*`, [`_bstr_t`](../cpp/bstr-t-class.md), [`CComBSTR`](../atl/reference/ccombstr-class.md), [`CString`](../atl-mfc-shared/using-cstring.md), [`basic_string`](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>.
 
-In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.
+In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string won't affect the original string, and vice versa.
 
-For more background information about converting narrow and wide strings, see [Background: converting between narrow strings and wide strings](#background-converting-between-narrow-strings-and-wide-strings)
+For more background information about converting narrow and wide strings, see [Background: converting between narrow strings and wide strings](#background-converting-between-narrow-and-wide-strings).
 
 ## Example: Convert from `char *`
 
 ### Description
 
-This example demonstrates how to convert from a `char *` to the string types listed above. A `char *` string (also known as a C-style string) uses a null character to indicate the end of the string. C-style strings usually require one byte per character, but can also use two bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
+This example demonstrates how to convert from a `char *` to the string types listed above. A `char *` string (also known as a C-style string) uses a null character to indicate the end of the string. C-style strings usually require 1 byte per character, but can also use 2 bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
 
 ### Code
 
@@ -159,7 +159,7 @@ int main()
     // character in the input string (including a wide character
     // null). Because a multibyte character can be one or two bytes,
     // you should allot two bytes for each character. Having extra
-    // space for the new string is not an error, but having
+    // space for the new string isn't an error, but having
     // insufficient space is a potential security problem.
     const size_t newsize = origsize*2;
     // The new string will contain a converted copy of the original
@@ -240,7 +240,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a `_bstr_t` to other string types. The `_bstr_t` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and does not use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
+This example demonstrates how to convert from a `_bstr_t` to other string types. The `_bstr_t` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
 
 ### Code
 
@@ -338,7 +338,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a `CComBSTR` to other string types. Like `_bstr_t`, a `CComBSTR` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and does not use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
+This example demonstrates how to convert from a `CComBSTR` to other string types. Like `_bstr_t`, a `CComBSTR` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
 
 ### Code
 
@@ -394,7 +394,7 @@ int main()
     wcscpy_s(wcstring, widesize, orig);
     wcscat_s(wcstring, widesize, strConcat);
 
-    // Display the result. Unlike CStringW, a wchar_t does not need
+    // Display the result. Unlike CStringW, a wchar_t doesn't need
     // a cast to (LPCTSTR) with wcout.
     wcout << wcstring << endl;
 
@@ -446,9 +446,9 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a `CString` to other string types. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` is not defined, `TCHAR` is defined to be `char` and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
+This example demonstrates how to convert from a `CString` to other string types. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` isn't defined, `TCHAR` is defined to be `char` and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
 
-`CStringA` contains the `char` type and supports single-byte or multibyte strings. `CStringW` is the wide character version. Neither `CStringA` nor `CStringW` use `_UNICODE` to determine how they should compile. `CStringA` and `CStringW` are used in this example to clarify minor differences in buffer size allocation and output handling.
+`CStringA` contains the `char` type and supports single-byte or multibyte strings. `CStringW` is the wide character version. `CStringA` and `CStringW` don't use `_UNICODE` to determine how they should compile. `CStringA` and `CStringW` are used in this example to clarify minor differences in buffer size allocation and output handling.
 
 ### Code
 
@@ -795,9 +795,9 @@ There's a mismatch in the way that `CStringA` performs wide to narrow conversion
 
 `CStringA` passes `CP_THREAD_ACP`, which means to use the current thread code page, to the narrowing conversion method. But `string.ctor(sbyte*)` passes `CP_ACP`, which means to use the current system code page, to the widening conversion method. If the system and thread code pages are out of sync, it can cause round-trip data corruption.
 
-To reconcile this difference, there's a constant definition you can include in your C program to get it to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [_CONVERSION_DONT_USE_THREAD_LOCALE](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
+To reconcile this difference, you can use the constant `_CONVERSION_DONT_USE_THREAD_LOCALE`) to get it to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [_CONVERSION_DONT_USE_THREAD_LOCALE](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
 
-Another approach is to `pinvoke` [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale) and use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo?view=net-6.0), and then use `CultureInfo.TextInfo` to get the code page you can use in the conversion.
+Another approach is to `pinvoke` [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale) and use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo?view=net-6.0). Then use `CultureInfo.TextInfo` to get the code page you can use in the conversion.
 
 ## See also
 
