@@ -797,7 +797,7 @@ There's a mismatch in the way that `CStringA` performs wide to narrow conversion
 
 To reconcile this difference, you can use the constant `_CONVERSION_DONT_USE_THREAD_LOCALE`) to get it to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [_CONVERSION_DONT_USE_THREAD_LOCALE](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
 
-Another approach is to `pinvoke` [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale) and use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo?view=net-6.0). Then use `CultureInfo.TextInfo` to get the code page you can use in the conversion.
+Another approach is to `pinvoke` [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale) and use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo). Then use `CultureInfo.TextInfo` to get the code page you can use in the conversion.
 
 ## See also
 
