@@ -2,15 +2,20 @@
 description: "Learn more about: How to: Convert Between Various String Types"
 title: "How to: Convert Between Various String Types"
 ms.custom: "get-started-article"
-ms.date: "02/08/2021"
+ms.date: 04/21/2022
 helpviewer_keywords: ["converting string types", "string conversion [C++]", "strings [C++], converting"]
-ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
 ---
 # How to: Convert between various string types
 
-This topic shows how to convert various Visual C++ string types into other strings. The strings types that are covered include `char *`, `wchar_t*`, [`_bstr_t`](../cpp/bstr-t-class.md), [`CComBSTR`](../atl/reference/ccombstr-class.md), [`CString`](../atl-mfc-shared/using-cstring.md), [`basic_string`](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>. In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.
+This topic shows how to convert various Visual C++ string types into other strings.
 
-## Example: Convert from char *
+The strings types that are covered include `char *`, `wchar_t*`, [`_bstr_t`](../cpp/bstr-t-class.md), [`CComBSTR`](../atl/reference/ccombstr-class.md), [`CString`](../atl-mfc-shared/using-cstring.md), [`basic_string`](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>.
+
+In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.
+
+For more background information about converting narrow and wide strings, see [Background: converting between narrow strings and wide strings](#background-converting-between-narrow-strings-and-wide-strings)
+
+## Example: Convert from `char *`
 
 ### Description
 
@@ -777,6 +782,22 @@ Hello, World! (CStringA)
 Hello, World! (CStringW)
 Hello, World! (basic_string)
 ```
+
+## Background: converting between narrow and wide strings
+
+When dealing with narrow strings ("C"-style strings) and wide strings ("Unicode" strings), legacy C and Windows apps use code pages rather than Unicode encodings. .NET strings are UTF-16, but ATL's `CStringA` is a narrow string, and the conversion from wide to narrow is performed by the [`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte) Win32 function. When converting a C-style `CHAR*` (important: a C-style `CHAR*` is a .NET `byte*`) to a string, the opposite Win32 function, [`MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)` is called.
+
+Per the documentation, both functions rely on the Windows concept of a code page, not the .NET concept of a culture. To change the system code page, use the Region setting (**Control Panel** > **Region** > **Administrative** tab > **Change system local**).
+
+On an `en-US` version of Windows, the code page defaults to 1033. If you install a different language of Windows, you'll get a different code page. Or you can change it after the fact using the control panel.
+
+There's a mismatch in the way that `CStringA` performs wide to narrow conversion and the way that `gcnew string(CHAR*)` performs narrow to wide conversion.
+
+`CStringA` passes `CP_THREAD_ACP`, which means to use the current thread code page, to the narrowing conversion method. But `string.ctor(sbyte*)` passes `CP_ACP`, which means to use the current system code page, to the widening conversion method. If the system and thread code pages are out of sync, it can cause round-trip data corruption.
+
+To reconcile this difference, there's a constant definition you can include in your C program to get it to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [_CONVERSION_DONT_USE_THREAD_LOCALE](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
+
+Another approach is to `pinvoke` [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale) and use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo?view=net-6.0), and then use `CultureInfo.TextInfo` to get the code page you can use in the conversion.
 
 ## See also
 
