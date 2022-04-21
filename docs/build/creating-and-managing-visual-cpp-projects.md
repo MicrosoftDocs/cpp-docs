@@ -8,9 +8,11 @@ helpviewer_keywords: ["Visual Studio C++ projects, creating", "projects [C++], c
 
 A *Visual Studio project* is a collection of code files and assets such as icons, images, and so on, that are built together using the MSBuild build system. MSBuild is the native build system for Visual Studio and is generally the best build system to use for Windows-specific programs. MSBuild is tightly integrated with Visual Studio, but you can also use it from the command line.
 
+
 For information about upgrading MSBuild projects from older versions of Visual Studio, see the [Microsoft C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md).
 
 For cross-platform projects, or projects that use open-source libraries, we recommend using [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md) in Visual Studio 2017 and later.
+
 
 ## Create a Visual Studio C++ project
 
@@ -51,9 +53,11 @@ The solution file coordinates build dependencies when you have multiple related 
 
 Add source code files, icons, or any other items to your project by right-clicking on the project in **Solution Explorer** and choosing **Add > New** or **Add > Existing**.
 
+
 ## Add third-party libraries to a project
 
 Over 900 C++ open source libraries are available via the [vcpkg](https://vcpkg.io/) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
+
 
 There are also commercial third-party libraries that you can install. Follow their installation instructions.
 
@@ -65,7 +69,9 @@ To configure build settings for a project, right-click on the project in **Solut
 
 To compile and run the new project, press **F5** or click the *debug dropdown* with the green arrow on the main toolbar. The *configuration dropdown* is where you choose whether to perform a *Debug* or *Release* build (or some other custom configuration).
 
+
 A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning doesn't. All errors and warnings appear both in the Output Window and in the Error List when you build the project.
+
 
    ![Screenshot of the Output window and Error list.](../overview/media/vs2017-output-error-list.png)
 
