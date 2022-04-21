@@ -1,7 +1,7 @@
 ---
 title: "C and C++ in Visual Studio"
-description: "Learn how to use the Microsoft C/C++ compiler, code editor, and related tools in Visual Studio to develop programs for Windows, Linux, Android and iOS."
-ms.date: 09/20/2021
+description: "Learn how to use the Microsoft C/C++ compiler and related tools to develop C++ and assembly programs for Windows, Linux, Android, and iOS."
+ms.date: 04/20/2022
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
@@ -45,9 +45,9 @@ helpviewer_keywords: ["Visual C++, home page"]
 
 Microsoft Visual C++ (MSVC) refers to the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create Universal Windows Platform (UWP) apps, native Windows desktop and server applications, cross-platform libraries and apps that run on Windows, Linux, Android, and iOS, as well as managed apps and libraries that use the .NET Framework. You can use MSVC to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop, from device drivers and operating system components to cross-platform games for mobile devices, and from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
 
-Visual Studio 2015, 2017 and 2019 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
+Visual Studio 2015, 2017, 2019, and 2022 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
 
-## What's New and Conformance History
+## What's new for C++ in Visual Studio
 
 [What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
 Find out what's new in Visual Studio.
@@ -64,7 +64,7 @@ Find feature-level language conformance status in the MSVC compiler by Visual St
 [Microsoft C/C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)\
 Learn about the breaking changes in previous versions.
 
-## Install Visual Studio and upgrade from earlier versions
+## Install Visual Studio C++ and upgrade from earlier versions
 
 [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md)\
 Download Visual Studio and install the Microsoft C/C++ toolset.
@@ -78,7 +78,7 @@ Find out about different Visual Studio editions.
 [Supported platforms](supported-platforms-visual-cpp.md)\
 Find out which platforms the Microsoft C/C++ compiler supports.
 
-## Learn C++
+## Learn C++ using Visual Studio
 
 [Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)\
 Learn more about modern C++ programming techniques based on C++11 and later that enable you to write fast, safe code and avoid many of the pitfalls of C-style programming.
@@ -92,7 +92,7 @@ Start learning how to write C++ in Visual Studio.
 [Visual Studio C++ samples](visual-cpp-samples.md)\
 Information about the C++ code samples provided by Microsoft.
 
-## C++ development tools
+## Visual Studio C/C++ development tools
 
 [Overview of C++ development in Visual Studio](overview-of-cpp-development.md)\
 How to use the Visual Studio IDE to create projects, edit code, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
@@ -112,16 +112,16 @@ Use SAL annotations or the C++ Core Guidelines checkers to perform static analys
 [Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)\
 Create unit tests using the Microsoft Unit Testing Framework for C++, Google Test, Boost.Test, or CTest.
 
-## Write applications in C++
-
-[Universal Windows Apps (C++)](../cppcx/universal-windows-apps-cpp.md)\
-Find guides and reference content on the Windows Developer Center. For information about developing UWP apps, see [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) and [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
+## Write C/C++ applications using Visual Studio
 
 [Desktop applications (C++)](../windows/desktop-applications-visual-cpp.md)\
 Learn how to create traditional native C++ desktop applications for Windows.
 
 [.NET programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)\
 Learn how to create DLLs that enable interoperability between native C++ and .NET programs written in languages such as C# or Visual Basic.
+
+[Universal Windows Apps (C++)](../cppcx/universal-windows-apps-cpp.md)\
+Find guides and reference content on the Windows Developer Center. For information about developing UWP apps, see [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) and [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 [Linux programming](../linux/index.yml)\
 Use the Visual Studio IDE to code and deploy to a remote Linux machine for compilation with GCC.
@@ -144,21 +144,27 @@ Connect to databases using ODBC and OLE DB.
 [Text and strings](../text/text-and-strings-in-visual-cpp.md)\
 Learn about working with different text and string formats and encodings for local and international development.
 
-## Languages reference
+## C/C++ language reference
 
 [C++ language reference](../cpp/cpp-language-reference.md)\
 The reference guide to the Microsoft implementation of the C++ programming language.
 
+[C language reference](../c-language/c-language-reference.md)\
+The reference guide to the Microsoft implementation of the C programming language.
+
 [C/C++ preprocessor reference](../preprocessor/c-cpp-preprocessor-reference.md)\
 A common reference to the shared C and C++ language preprocessor.
 
-[C language reference](../c-language/c-language-reference.md)\
-The reference guide to the Microsoft implementation of the C programming language.
+[C++/CX language reference](/cpp/cppcx/visual-c-language-reference-c-cx)\
+The reference guide to the Microsoft extensions to the C++ language for creating C++ Universal Windows Platform apps, C++ Windows runtime components that can be consumed by JavaScript-based Windows apps, and Windows DirectX games and graphics-intensive apps.
+
+[C++/CLI language reference](https://www.ecma-international.org/wp-content/uploads/ECMA-372_1st_edition_december_2005.pdf)\
+The ECMA standard for the C++/CLI programming language.
 
 [Compiler intrinsics and assembly language](../intrinsics/compiler-intrinsics-and-assembly-language.md)\
 Guides to the compiler intrinsics supported or implemented by the Microsoft C/C++ compilers on each platform.
 
-## C++ Libraries in Visual Studio
+## C/C++ libraries available in Visual Studio
 
 The following sections provide information about the different C and C++ libraries that are included in Visual Studio.
 
@@ -186,11 +192,11 @@ Universal Windows Platform (UWP) apps and components.
 [.NET programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)\
 Programming for the common language runtime (CLR).
 
-## Third-party open source C++ libraries
+## Third-party open source C++ libraries in Visual Studio
 
 The cross-platform **vcpkg** command-line tool greatly simplifies the discovery and installation of over 900 C++ open source libraries. For more information, see [vcpkg](https://vcpkg.io/).
 
-## Feedback and community
+## Visual Studio C++ feedback and community
 
 [Microsoft Docs Q&A](/answers/topics/c%2B%2B.html)\
 Microsoft Docs hosts searchable forums for questions and answers. Add a `C++` tag to your post for community assistance on C++-related issues.
