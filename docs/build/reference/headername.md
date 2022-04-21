@@ -39,7 +39,7 @@ Given a project that references a header file it defines called `m.h`, the compi
 cl /std:c++latest /exportHeader /headerName:quote m.h /Fom.h.obj
 ```
 
-The `/headerName:{quote,angle}` option acts like a flag and does not explicitly need an argument. The following examples are valid:
+The `/headerName:{quote,angle}` option acts like a flag and doesn't need an argument. The following examples are valid:
 
 ```Bash
 cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algorithm
