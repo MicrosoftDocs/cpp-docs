@@ -7,7 +7,7 @@ helpviewer_keywords: ["converting string types", "string conversion [C++]", "str
 ---
 # How to: Convert between various string types
 
-This topic shows how to convert various Visual C++ string types into other strings.
+This article shows how to convert various Visual C++ string types into other strings.
 
 The strings types that are covered include `char *`, `wchar_t*`, [`_bstr_t`](../cpp/bstr-t-class.md), [`CComBSTR`](../atl/reference/ccombstr-class.md), [`CString`](../atl-mfc-shared/using-cstring.md), [`basic_string`](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>.
 
