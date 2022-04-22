@@ -115,7 +115,7 @@ STDMETHOD(QueryService)(
 
 ### Return Value
 
-The returned HRESULT value is one of the following:
+The returned HRESULT is one of the following values:
 
 |Return value|Meaning|
 |------------------|-------------|
@@ -123,23 +123,23 @@ The returned HRESULT value is one of the following:
 |E_INVALIDARG|One or more of the arguments is invalid.|
 |E_OUTOFMEMORY|Memory is insufficient to create the service.|
 |E_UNEXPECTED|An unknown error occurred.|
-|E_NOINTERFACE|The requested interface is not part of this service, or the service is unknown.|
+|E_NOINTERFACE|The requested interface isn't part of this service, or the service is unknown.|
 
 ### Remarks
 
-`QueryService` returns an indirect pointer to the requested interface in the specified service. The caller is responsible for releasing this pointer when it is no longer required.
+`QueryService` returns an indirect pointer to the requested interface in the specified service. The caller is responsible for releasing this pointer when it's no longer required.
 
 When you call `QueryService`, you pass both a service identifier (*guidService*) and an interface identifier (*riid*). The *guidService* specifies the service to which you want access, and the *riid* identifies an interface that is part of the service. In return, you receive an indirect pointer to the interface.
 
-The object that implements the interface might also implement interfaces that are part of other services. Consider the following:
+The object that implements the interface might also implement interfaces that are part of other services. Consider the following possibilities:
 
 - Some of these interfaces might be optional. Not all interfaces defined in the service description are necessarily present on every implementation of the service or on every returned object.
 
-- Unlike calls to `QueryInterface`, passing a different service identifier does not necessarily mean that a different Component Object Model (COM) object is returned.
+- Unlike calls to `QueryInterface`, passing a different service identifier doesn't necessarily mean that a different Component Object Model (COM) object is returned.
 
-- The returned object might have additional interfaces that are not part of the definition of the service.
+- The returned object might have other interfaces that aren't part of the definition of the service.
 
-Two different services, such as SID_SMyService and SID_SYourService, can both specify the use of the same interface, even though the implementation of the interface might have nothing in common between the two services. This works, because a call to `QueryService` (SID_SMyService, IID_IDispatch) can return a different object than `QueryService` (SID_SYourService, IID_IDispatch). Object identity is not assumed when you specify a different service identifier.
+Two different services, such as SID_SMyService and SID_SYourService, can both specify the use of the same interface, even though the implementation of the interface might have nothing in common between the two services. This approach works, because a call to `QueryService` (SID_SMyService, IID_IDispatch) can return a different object than `QueryService` (SID_SYourService, IID_IDispatch). Object identity isn't assumed when you specify a different service identifier.
 
 ## See also
 
