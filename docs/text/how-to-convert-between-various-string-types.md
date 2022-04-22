@@ -789,7 +789,7 @@ When dealing with narrow strings ("C"-style strings) and wide strings ("Unicode"
 
 Both functions rely on the Windows concept of a code page, not the .NET concept of a culture. To change the system code page, use the region setting, which is set from **Control Panel** > **Region** > **Administrative** tab > **Change system local**.
 
-On an `en-US` language version of Windows, the code page defaults to 1033. If you install a different language of Windows, it'll have a different code page. You can change it using the control panel.
+On an `en-US` language version of Windows, the code page defaults to 1033. If you install a different language of Windows, it will have a different code page. You can change it using the control panel.
 
 There's a mismatch in the way that `CStringA` performs a wide to narrow conversion and the way that `gcnew string(CHAR*)` performs a narrow to wide conversion.
 
