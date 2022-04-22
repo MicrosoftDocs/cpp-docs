@@ -785,7 +785,7 @@ Hello, World! (basic_string)
 
 ## Converting between narrow and wide strings
 
-Legacy C and Windows apps use code pages rather than Unicode encodings when handling narrow strings ("C"-style strings) and wide strings ("Unicode" strings). 
+Legacy C and Windows apps use code pages rather than Unicode encodings when handling narrow strings (C-style strings) and wide strings (Unicode strings).
 
 .NET strings are UTF-16, but ATL's `CStringA` is a narrow string, and the conversion from wide to narrow is performed by the [`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte) Win32 function. When converting a C-style `CHAR*` (a C-style `CHAR*` is a .NET `byte*`) to a string, the opposite Win32 function, [`MultiByteToWideChar`](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) is called.
 
@@ -801,11 +801,11 @@ Another approach is to use [`pinvoke`](/dotnet/standard/native-interop/pinvoke) 
 
 ## See also
 
-[ATL and MFC String Conversion Macros](../atl/reference/string-conversion-macros.md)\
-[CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)\
-[How to: Convert Standard String to `System::String`](../dotnet/how-to-convert-standard-string-to-system-string.md)\
-[How to: Convert `System::String` to Standard String](../dotnet/how-to-convert-system-string-to-standard-string.md)\
-[How to: Convert `System::String` to `wchar_t*` or `char*`](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)\
+[ATL and MFC string conversion macros](../atl/reference/string-conversion-macros.md)\
+[`CString` operations relating to C-style strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)\
+[How to: convert standard `String` to `System::String`](../dotnet/how-to-convert-standard-string-to-system-string.md)\
+[How to: convert `System::String` to standard `String`](../dotnet/how-to-convert-system-string-to-standard-string.md)\
+[How to: convert `System::String` to `wchar_t*` or `char*`](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)\
 [Programming with `CComBSTR`](../atl/programming-with-ccombstr-atl.md)\
 [`mbstowcs_s, _mbstowcs_s_l`](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)\
 [`wcstombs_s, _wcstombs_s_l`](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)\
