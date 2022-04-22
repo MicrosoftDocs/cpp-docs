@@ -1,14 +1,14 @@
 ---
 title: "for statement (C++)"
 description: "Reference to the Standard C++ for statement in Microsoft Visual Studio C++."
-f1_keywords: ["for_cpp"]
-ms.date: 07/31/2020
+f1_keywords: ["for_CPP"]
+ms.date: 04/15/2022
 helpviewer_keywords: ["for keyword [C++]"]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
 ---
 # `for` statement (C++)
 
-Executes a statement repeatedly until the condition becomes false. For information on the range-based **`for`** statement, see [Range-based `for` statement (C++)](../cpp/range-based-for-statement-cpp.md).
+Executes a statement repeatedly until the condition becomes false. For information on the range-based **`for`** statement, see [Range-based `for` statement (C++)](../cpp/range-based-for-statement-cpp.md). For information on the C++/CLI **`for each`** statement, see [`for each`, `in`](../dotnet/for-each-in.md).
 
 ## Syntax
 
@@ -68,10 +68,11 @@ int main(){
         cout << "i + j = " << (i + j) << '\n';
     }
 }
-    // Output:
+/* Output:
     i + j = 15
     i + j = 17
     i + j = 19
+*/
 ```
 
 *`loop-expression`* can be incremented or decremented, or modified in other ways.
@@ -88,7 +89,8 @@ for (int i = 10; i > 0; i--) {
     for (int i = 10; i < 20; i = i+2) {
         cout << i << ' ';
     }
-    // Output: 10 12 14 16 18
+}
+// Output: 10 12 14 16 18
 ```
 
 A **`for`** loop terminates when a [`break`](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [`goto`](../cpp/goto-statement-cpp.md) (to a labeled statement outside the **`for`** loop) within *`statement`* is executed. A [`continue`](../cpp/continue-statement-cpp.md) statement in a **`for`** loop terminates only the current iteration.
@@ -121,9 +123,9 @@ for (int i = 0 ; i < 5 ; i++) {
 // i is now out of scope under /Za or /Zc:forScope
 ```
 
-By default, under [/Ze](../build/reference/za-ze-disable-language-extensions.md), a variable declared in a **`for`** loop remains in scope until the **`for`** loop's enclosing scope ends.
+By default, under [`/Ze`](../build/reference/za-ze-disable-language-extensions.md), a variable declared in a **`for`** loop remains in scope until the **`for`** loop's enclosing scope ends.
 
-[/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) enables standard behavior of variables declared in for loops without needing to specify `/Za`.
+[`/Zc:forScope`](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) enables standard behavior of variables declared in for loops without needing to specify `/Za`.
 
 It's also possible to use the scoping differences of the **`for`** loop to redeclare variables under `/Ze` as follows:
 
@@ -141,8 +143,8 @@ This behavior more closely mimics the standard behavior of a variable declared i
 
 ## See also
 
-[Iteration statements](../cpp/iteration-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[while statement (C++)](../cpp/while-statement-cpp.md)<br/>
-[do-while statement (C++)](../cpp/do-while-statement-cpp.md)<br/>
-[Range-based for statement (C++)](../cpp/range-based-for-statement-cpp.md)
+[Iteration statements](../cpp/iteration-statements-cpp.md)\
+[Keywords](../cpp/keywords-cpp.md)\
+[`while` statement (C++)](../cpp/while-statement-cpp.md)\
+[`do-while` statement (C++)](../cpp/do-while-statement-cpp.md)\
+[Range-based `for` statement (C++)](../cpp/range-based-for-statement-cpp.md)

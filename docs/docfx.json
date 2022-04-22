@@ -45,12 +45,13 @@
       "ms.topic": "conceptual",
       "audience": "developer",
       "ms.prod": "visual-cpp",
-      "ms.tgt_pltfrm": "",
+      "ms.tgt_pltfrm": "Windows",
       "ms.workload": [
         "cplusplus"
       ],
       "dev_langs": [
-        "C++"
+        "C++",
+        "cpp"
       ],
       "searchScope": [
         "C++"

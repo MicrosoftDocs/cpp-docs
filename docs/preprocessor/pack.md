@@ -50,7 +50,7 @@ For more information about how to modify alignment, see these articles:
 
 - [`__unaligned`](../cpp/unaligned.md)
 
-- [Examples of structure alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
+- [x64 structure alignment examples](../build/x64-software-conventions.md#x64-structure-alignment-examples)
 
    > [!WARNING]
    > In Visual Studio 2015 and later you can use the standard **`alignas`** and **`alignof`** operators, which unlike **`__alignof`** and **`__declspec( align )`** are portable across compilers. The C++ standard doesn't address packing, so you must still use **`pack`** (or the corresponding extension on other compilers) to specify alignments smaller than the target architecture's word size.

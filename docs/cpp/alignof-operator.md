@@ -4,9 +4,8 @@ title: "alignof Operator"
 ms.date: "12/17/2018" 
 f1_keywords: ["__alignof_cpp", "alignof_cpp", "__alignof", "_alignof"]
 helpviewer_keywords: ["alignas [C++]", "alignment of structures", "__alignof keyword [C++]", "alignof [C++]", "types [C++], alignment requirements"]
-ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
 ---
-# alignof Operator
+# `alignof` operator
 
 The **`alignof`** operator returns the alignment in bytes of the specified type as a value of type **`size_t`**.
 
@@ -56,15 +55,11 @@ S* p = (S*)aligned_malloc(n * sizeof(S), alignof(S));
 
 For more information on modifying alignment, see:
 
-- [pack](../preprocessor/pack.md)
-
-- [align](../cpp/align-cpp.md)
-
-- [__unaligned](../cpp/unaligned.md)
-
-- [/Zp (Struct Member Alignment)](../build/reference/zp-struct-member-alignment.md)
-
-- [Examples of Structure Alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
+- [`pack`](../preprocessor/pack.md)
+- [`align`](../cpp/align-cpp.md)
+- [`__unaligned`](../cpp/unaligned.md)
+- [`/Zp` (Struct member alignment)](../build/reference/zp-struct-member-alignment.md)
+- [x64 structure alignment examples](../build/x64-software-conventions.md#x64-structure-alignment-examples)
 
 For more information on differences in alignment in code for x86 and x64, see:
 
@@ -78,5 +73,5 @@ For compatibility with previous versions, **`_alignof`** is a synonym for **`__a
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
+[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)\
 [Keywords](../cpp/keywords-cpp.md)
