@@ -4,9 +4,8 @@ title: "align (C++)"
 ms.date: "12/17/2018" 
 f1_keywords: ["align_cpp"]
 helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], align"]
-ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
 ---
-# align (C++)
+# `align` (C++)
 
 In Visual Studio 2015 and later, use the C++11 standard **`alignas`** specifier to control alignment. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).
 
@@ -20,7 +19,7 @@ Use `__declspec(align(#))` to precisely control the alignment of user-defined da
 
 ## Remarks
 
-Writing applications that use the latest processor instructions introduces some new constraints and issues. Many new instructions require data that's aligned to 16-byte boundaries. Additionally, by aligning frequently used data to the processor's cache line size, you improve cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32 byte alignment to make sure that objects of that structure type are efficiently cached.
+Writing applications that use the latest processor instructions introduces some new constraints and issues. Many new instructions require data that's aligned to 16-byte boundaries. Aligning frequently used data to the processor's cache line size improves cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32-byte alignment to make sure that objects of that structure type are efficiently cached.
 
 \# is the alignment value. Valid entries are integer powers of two from 1 to 8192 (bytes), such as 2, 4, 8, 16, 32, or 64. `declarator` is the data that you're declaring as aligned.
 
@@ -42,7 +41,7 @@ __declspec(align(32)) struct Str1{
 };
 ```
 
-This type now has a 32-byte alignment attribute. It means that all static and automatic instances start on a 32-byte boundary. Additional structure types declared with this type as a member preserve this type's alignment attribute, that is, any structure with `Str1` as an element has an alignment attribute of at least 32.
+This type now has a 32-byte alignment attribute. It means that all static and automatic instances start on a 32-byte boundary. Other structure types declared with this type as a member preserve this type's alignment attribute. That is, any structure with `Str1` as an element has an alignment attribute of at least 32.
 
 Here, `sizeof(struct Str1)` is equal to 32. It implies that if an array of `Str1` objects is created, and the base of the array is 32-byte aligned, each member of the array is also 32-byte aligned. To create an array whose base is correctly aligned in dynamic memory, use [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md). Or, write your own allocator.
 
@@ -63,16 +62,12 @@ The compiler uses these rules for structure alignment:
 For more information, see:
 
 - [`align` Examples](#vclrfalignexamples)
-
 - [Defining New Types with `__declspec(align(#))`](#vclrf_declspecaligntypedef)
-
 - [Aligning Data in Thread Local Storage](#vclrfthreadlocalstorageallocation)
-
 - [How `align` Works with Data Packing](#vclrfhowalignworkswithdatapacking)
+- [x64 structure alignment examples](../build/x64-software-conventions.md#x64-structure-alignment-examples)
 
-- [Examples of Structure Alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
-
-## <a name="vclrfalignexamples"></a> align Examples
+## <a name="vclrfalignexamples"></a> `align` Examples
 
 The following examples show how `__declspec(align(#))` affects the size and alignment of data structures. The examples assume the following definitions:
 
@@ -150,7 +145,7 @@ struct S7 {
 
 `S6` and `S7` have identical alignment, allocation, and size characteristics.
 
-In this example, the alignment of the starting addresses of a, b, c, and d are 4, 1, 4, and 1, respectively.
+In this example, the alignment of the starting addresses of `a`, `b`, `c`, and `d` are 4, 1, 4, and 1, respectively.
 
 ```cpp
 void fn() {
@@ -161,7 +156,7 @@ void fn() {
 }
 ```
 
-The alignment when memory is allocated on the heap depends on which allocation function is called.  For example, if you use `malloc`, the result depends on the operand size. If *arg* >= 8, the memory returned is 8 byte aligned. If *arg* < 8, the alignment of the memory returned is the first power of 2 less than *arg*. For example, if you use `malloc(7)`, the alignment is 4 bytes.
+The alignment when memory is allocated on the heap depends on which allocation function is called.  For example, if you use `malloc`, the result depends on the operand size. If *arg* >= 8, the memory returned is 8-byte aligned. If *arg* < 8, the alignment of the memory returned is the first power of 2 less than *arg*. For example, if you use `malloc(7)`, the alignment is 4 bytes.
 
 ## <a name="vclrf_declspecaligntypedef"></a> Defining new types with `__declspec(align(#))`
 

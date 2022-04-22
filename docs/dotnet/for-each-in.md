@@ -1,13 +1,13 @@
 ---
 title: "for each, in"
 description: "C++/CLI for each, in statement description and examples."
-ms.date: 09/25/2020
+ms.date: 04/15/2022
 ms.topic: "reference"
-f1_keywords: ["cliext::foreach", "for", "each", "in"]
+f1_keywords: ["cliext::foreach", "each_CPP", "in_CPP", "for each_CPP", "for each", "in"]
 helpviewer_keywords: ["for each keyword [C++]"]
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
 ---
-# for each, in
+# `for each`, `in`
 
 Iterates through an array or collection. This non-standard keyword is available in both C++/CLI and native C++ projects. However, its use isn't recommended. Consider using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) instead.
 
@@ -15,29 +15,29 @@ Iterates through an array or collection. This non-standard keyword is available 
 
 ### Syntax
 
-> **for each (** *type* *identifier* **in** *expression* **) {**\
-> &nbsp;&nbsp;&nbsp;&nbsp;*statements*\
-> **}**
+> **`for each (`** *`type`* *`identifier`* **`in`** *`expression`* **`) {`**\
+> &emsp;*`statements`*\
+> **`}`**
 
 ### Parameters
 
-*type*<br/>
+*`type`*\
 The type of `identifier`.
 
-*identifier*<br/>
+*`identifier`*\
 The iteration variable that represents the collection element.  When `identifier` is a [Tracking Reference Operator](../extensions/tracking-reference-operator-cpp-component-extensions.md), you can modify the element.
 
-*expression*<br/>
+*`expression`*\
 An array expression or collection. The collection element must be such that the compiler can convert it to the `identifier` type.
 
-*statements*<br/>
+*`statements`*\
 One or more statements to be executed.
 
 ### Remarks
 
 The `for each` statement is used to iterate through a collection. You can modify elements in a collection, but you can't add or delete elements.
 
-The *statements* are executed for each element in the array or collection. After the iteration has been completed for all the elements in the collection, control is transferred to the statement that follows the `for each` block.
+The *`statements`* are executed for each element in the array or collection. After the iteration has been completed for all the elements in the collection, control is transferred to the statement that follows the `for each` block.
 
 `for each` and `in` are [context-sensitive keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md).
 
@@ -45,7 +45,7 @@ The *statements* are executed for each element in the array or collection. After
 
 ### Requirements
 
-Compiler option: **/ZW**
+Compiler option: **`/ZW`**
 
 ### Example
 
@@ -89,14 +89,14 @@ Testing
 
 The CLR syntax is the same as the **All Runtimes** syntax, except as follows.
 
-*expression*<br/>
-A managed array expression or collection. The collection element must be such that the compiler can convert it from <xref:System.Object> to the *identifier* type.
+*`expression`*\
+A managed array expression or collection. The collection element must be such that the compiler can convert it from <xref:System.Object> to the *`identifier`* type.
 
-*expression* evaluates to a type that implements <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, or a type that defines a `GetEnumerator` method that either returns a type that implements <xref:System.Collections.IEnumerator> or declares all of the methods that are defined in `IEnumerator`.
+*`expression`* evaluates to a type that implements <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, or a type that defines a `GetEnumerator` method that either returns a type that implements <xref:System.Collections.IEnumerator> or declares all of the methods that are defined in `IEnumerator`.
 
 ### Requirements
 
-Compiler option: **/clr**
+Compiler option: **`/clr`**
 
 ### Example
 
