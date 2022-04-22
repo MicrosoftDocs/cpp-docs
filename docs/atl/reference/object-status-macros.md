@@ -2,7 +2,7 @@
 description: "Learn more about: Object Status Macros"
 title: "Object Status Macros"
 ms.date: "11/04/2016"
-f1_keywords: ["atlcom/ATL::DECLARE_OLEMISC_STATUS"]
+f1_keywords: ["atlcom/ATL::DECLARE_OLEMISC_STATUS", "ATLCOM/DECLARE_OLEMISC_STATUS"]
 ms.assetid: 727dbef2-a342-4157-9d64-a421805d9747
 ---
 # Object Status Macros

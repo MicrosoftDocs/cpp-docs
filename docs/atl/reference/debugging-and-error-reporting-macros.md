@@ -2,7 +2,7 @@
 description: "Learn more about: Debugging and Error Reporting Macros"
 title: "Debugging and Error Reporting Macros"
 ms.date: "05/06/2019"
-f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]
+f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE", "ATLDEF/_ATL_DEBUG_INTERFACES", "ATLDEF/_ATL_DEBUG_QI", "ATLDEF/ATLASSERT", "AFX/ATLENSURE", "ATLTRACE/ATLTRACENOTIMPL", "ATLTRACE/ATLTRACE", "ATLDEF/ATLSTATIC_ASSERT"]
 helpviewer_keywords: ["macros, error reporting"]
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
 ---

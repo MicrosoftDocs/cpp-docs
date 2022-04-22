@@ -2,7 +2,7 @@
 description: "Learn more about: Exception Handling Macros"
 title: "Exception Handling Macros"
 ms.date: "11/04/2016"
-f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY"]
+f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY", "ATLDEF/_ATLCATCH", "ATLDEF/_ATLCATCHALL", "ATLDEF/_ATLTRY"]
 helpviewer_keywords: ["exception handling, macros", "C++ exception handling, macros"]
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
 ---
