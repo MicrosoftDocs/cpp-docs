@@ -785,11 +785,11 @@ Hello, World! (basic_string)
 
 ## Converting between narrow and wide strings
 
-Legacy C and Windows apps use code pages rather than Unicode encodings when handling narrow strings (C-style strings) and wide strings.
+Legacy C and Windows apps use code pages rather than Unicode encodings when handling narrow strings and wide strings.
 
 .NET strings are UTF-16, but ATL's `CStringA` is a narrow string, and the conversion from wide to narrow is performed by the [`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte) Win32 function. When converting a C-style `CHAR*` (a C-style `CHAR*` is a .NET `byte*`) to a string, the opposite Win32 function, [`MultiByteToWideChar`](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) is called.
 
-Both functions rely on the Windows concept of a code page; not the .NET concept of a culture. To change the system code page, use the region setting using **Control Panel** > enter `Region` into the search box > Choose **Region (change date, time, or number formats)** > **Administrative** > **Change system locale**.
+Both functions rely on the Windows concept of a code page; not the .NET concept of a culture. To change the system code page, use the region setting using **Control Panel** > enter `Region` into the search box > **Region (change date, time, or number formats)** > **Administrative** > **Change system locale**.
 
 On an `en-US` language version of Windows, the code page defaults to 1033. If you install a different language of Windows, it will have a different code page. You can change it using the control panel.
 
