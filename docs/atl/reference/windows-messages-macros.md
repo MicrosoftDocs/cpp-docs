@@ -2,7 +2,7 @@
 description: "Learn more about: Windows Messages Macros"
 title: "Windows Messages Macros"
 ms.date: "11/04/2016"
-f1_keywords: ["atlbase/ATL::WM_FORWARDMSG"]
+f1_keywords: ["atlbase/ATL::WM_FORWARDMSG", "ATLBASE/WM_FORWARDMSG"]
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
 ---
 # Windows Messages Macros
