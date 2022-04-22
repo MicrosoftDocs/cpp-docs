@@ -19,7 +19,7 @@ For more background information about converting narrow and wide strings, see [C
 
 ### Description
 
-This example demonstrates how to convert from a `char *` to the string types listed above. A `char *` string (also known as a C-style string) uses a null character to indicate the end of the string. C-style strings usually require 1 byte per character, but can also use 2 bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
+This example demonstrates how to convert from a `char *` to the string types listed above. A `char *` string (also known as a C-style string) uses a null character to indicate the end of the string. C-style strings usually require 1 byte per character, but can also use 2 bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from wide Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
 
 ### Code
 
@@ -446,7 +446,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a `CString` to other string types. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` isn't defined, `TCHAR` is defined to be `char` and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
+This example demonstrates how to convert from a `CString` to other string types. `CString` is based on the `TCHAR` data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` isn't defined, `TCHAR` is defined to be `char` and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
 
 `CStringA` contains the `char` type and supports single-byte or multibyte strings. `CStringW` is the wide character version. `CStringA` and `CStringW` don't use `_UNICODE` to determine how they should compile. `CStringA` and `CStringW` are used in this example to clarify minor differences in buffer size allocation and output handling.
 
@@ -682,7 +682,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a wide character (Unicode) [System::String](/dotnet/api/system.string) to other string types.
+This example demonstrates how to convert from a wide character [System::String](/dotnet/api/system.string) to other string types.
 
 ### Code
 
@@ -785,11 +785,11 @@ Hello, World! (basic_string)
 
 ## Converting between narrow and wide strings
 
-Legacy C and Windows apps use code pages rather than Unicode encodings when handling narrow strings (C-style strings) and wide strings (Unicode strings).
+Legacy C and Windows apps use code pages rather than Unicode encodings when handling narrow strings (C-style strings) and wide strings.
 
 .NET strings are UTF-16, but ATL's `CStringA` is a narrow string, and the conversion from wide to narrow is performed by the [`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte) Win32 function. When converting a C-style `CHAR*` (a C-style `CHAR*` is a .NET `byte*`) to a string, the opposite Win32 function, [`MultiByteToWideChar`](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) is called.
 
-Both functions rely on the Windows concept of a code page; not the .NET concept of a culture. To change the system code page, use the region setting using **Control Panel** > **Region** > **Administrative** > **Change system local**.
+Both functions rely on the Windows concept of a code page; not the .NET concept of a culture. To change the system code page, use the region setting using **Control Panel** > enter `Region` into the search box > Choose **Region (change date, time, or number formats)** > **Administrative** > **Change system locale**.
 
 On an `en-US` language version of Windows, the code page defaults to 1033. If you install a different language of Windows, it will have a different code page. You can change it using the control panel.
 
