@@ -787,17 +787,17 @@ Hello, World! (basic_string)
 
 When dealing with narrow strings ("C"-style strings) and wide strings ("Unicode" strings), legacy C and Windows apps use code pages rather than Unicode encodings. .NET strings are UTF-16, but ATL's `CStringA` is a narrow string, and the conversion from wide to narrow is performed by the [`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte) Win32 function. When converting a C-style `CHAR*` (important: a C-style `CHAR*` is a .NET `byte*`) to a string, the opposite Win32 function, [`MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)` is called.
 
-Per the documentation, both functions rely on the Windows concept of a code page, not the .NET concept of a culture. To change the system code page, use the Region setting (**Control Panel** > **Region** > **Administrative** tab > **Change system local**).
+Both functions rely on the Windows concept of a code page, not the .NET concept of a culture. To change the system code page, use the region setting, which is set from **Control Panel** > **Region** > **Administrative** tab > **Change system local**.
 
-On an `en-US` version of Windows, the code page defaults to 1033. If you install a different language of Windows, you'll get a different code page. Or you can change it after the fact using the control panel.
+On an `en-US` language version of Windows, the code page defaults to 1033. If you install a different language of Windows, it'll have a different code page. You can change it using the control panel.
 
-There's a mismatch in the way that `CStringA` performs wide to narrow conversion and the way that `gcnew string(CHAR*)` performs narrow to wide conversion.
+There's a mismatch in the way that `CStringA` performs a wide to narrow conversion and the way that `gcnew string(CHAR*)` performs a narrow to wide conversion.
 
-`CStringA` passes `CP_THREAD_ACP`, which means to use the current thread code page, to the narrowing conversion method. But `string.ctor(sbyte*)` passes `CP_ACP`, which means to use the current system code page, to the widening conversion method. If the system and thread code pages are out of sync, it can cause round-trip data corruption.
+`CStringA` passes `CP_THREAD_ACP`, which means to use the current *thread* code page, to the narrowing conversion method. But `string.ctor(sbyte*)` passes `CP_ACP`, which means to use the current *system* code page, to the widening conversion method. If the system and thread code pages don't match, it can cause round-trip data corruption.
 
-To reconcile this difference, you can use the constant `_CONVERSION_DONT_USE_THREAD_LOCALE`) to get it to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [_CONVERSION_DONT_USE_THREAD_LOCALE](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
+To reconcile this difference, use the constant `_CONVERSION_DONT_USE_THREAD_LOCALE`) to get it to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [_CONVERSION_DONT_USE_THREAD_LOCALE](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
 
-Another approach is to `pinvoke` [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale) and use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo). Then use `CultureInfo.TextInfo` to get the code page you can use in the conversion.
+Another approach is to use [`pinvoke`](/dotnet/standard/native-interop/pinvoke) to call [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale) and use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo). Then use `CultureInfo.TextInfo` to get the code page to use in the conversion.
 
 ## See also
 
