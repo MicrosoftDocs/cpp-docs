@@ -73,10 +73,10 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 #include <stdio.h>
 #include <tchar.h>
 
-TCHAR   g_szBorder[] = _T("======================================================================\n");
-TCHAR   g_szTitle1[] = _T("|DRIVE|TOTAL CLUSTERS|AVAIL CLUSTERS|SECTORS / CLUSTER|BYTES / SECTOR|\n");
-TCHAR   g_szTitle2[] = _T("|=====|==============|==============|=================|==============|\n");
-TCHAR   g_szLine[]   = _T("|  A: |              |              |                 |              |\n");
+TCHAR   g_szBorder[] = _T("======================================================================");
+TCHAR   g_szTitle1[] = _T("|DRIVE|TOTAL CLUSTERS|AVAIL CLUSTERS|SECTORS / CLUSTER|BYTES / SECTOR|");
+TCHAR   g_szTitle2[] = _T("|=====|==============|==============|=================|==============|");
+TCHAR   g_szLine[]   = _T("|  A: |              |              |                 |              |");
 
 void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal);
 
@@ -86,9 +86,9 @@ int main(int argc, char* argv[]) {
    ULONG uDriveMask = _getdrives();
    unsigned uErr, uLen, uDrive;
 
-   printf(g_szBorder);
-   printf(g_szTitle1);
-   printf(g_szTitle2);
+   puts(g_szBorder);
+   puts(g_szTitle1);
+   puts(g_szTitle2);
 
    for (uDrive=1; uDrive<=26; ++uDrive) {
       if (uDriveMask & 1) {
@@ -108,15 +108,20 @@ int main(int argc, char* argv[]) {
             szMsg[uLen+6] = ' ';
             szMsg[uLen+7] = ' ';
             szMsg[uLen+8] = ' ';
+            if (uLen + 9 >= sizeof(g_szLine)) {
+                /* Make sure szMsg is NUL-terminated if we
+                 * wrote past the end of g_szLine */
+                szMsg[uLen+6] = 0;
+            }
          }
 
-         printf(szMsg);
+         puts(szMsg);
       }
 
       uDriveMask >>= 1;
    }
 
-   printf(g_szBorder);
+   puts(g_szBorder);
 }
 
 void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal) {
