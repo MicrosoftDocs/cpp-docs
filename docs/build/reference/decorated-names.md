@@ -47,7 +47,7 @@ The function and class names are encoded in the decorated name. The rest of the 
 
 ## <a name="FormatC"></a> Format of a C decorated name
 
-The form of decoration for a C function depends on the calling convention used in its declaration, as shown in the following table. This is also the decoration format that is used when C++ code is declared to have `extern "C"` linkage. The default calling convention is **`__cdecl`**. Note that in a 64-bit environment, functions are not decorated.
+The form of decoration for a C function depends on the calling convention used in its declaration, as shown in the following table. This is also the decoration format that is used when C++ code is declared to have `extern "C"` linkage. The default calling convention is **`__cdecl`**. Note that in a 64-bit environment, functions are not decorated except for the `__vectorcall` calling convention.
 
 |Calling convention|Decoration|
 |------------------------|----------------|
