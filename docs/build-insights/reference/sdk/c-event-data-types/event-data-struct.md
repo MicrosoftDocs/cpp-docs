@@ -1,7 +1,9 @@
 ---
-title: "EVENT_DATA structure"
-description: "The C++ Build Insights SDK EVENT_DATA structure reference."
-ms.date: "02/12/2020"
+title: "C++ Build Insights SDK EVENT_DATA structure"
+description: "The C++ Build Insights SDK EVENT_DATA structure reference. The EVENT_DATA structure describes an event received from an analysis or relogging session."
+ms.date: "04/27/2022"
+ms.topic: language-reference
+ms.custom: kr2b-contr-experiment
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "EVENT_DATA", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # EVENT_DATA structure
@@ -13,7 +15,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and later. To s
 ::: moniker-end
 ::: moniker range=">=msvc-150"
 
-The `EVENT_DATA` structure describes an event received from an analysis or relogging session. These sessions are started by calling the [Analyze](../functions/analyze.md), [AnalyzeA](../functions/analyze-a.md), [AnalyzeW](../functions/analyze-w.md), [Relog](../functions/relog.md), [RelogA](../functions/relog-a.md), or [RelogW](../functions/relog-w.md) functions.
+The `EVENT_DATA` structure describes an event from an analysis or relogging session. The [Analyze](../functions/analyze.md), [AnalyzeA](../functions/analyze-a.md), [AnalyzeW](../functions/analyze-w.md), [Relog](../functions/relog.md), [RelogA](../functions/relog-a.md), or [RelogW](../functions/relog-w.md) functions start these sessions.
 
 ## Syntax
 
@@ -51,14 +53,14 @@ typedef struct EVENT_DATA_TAG
 | `EventId` | A number that identifies the event. For a list of event identifiers, see [EVENT_ID](event-id-enum.md). |
 | `EventInstanceId` | A number that uniquely identifies the current event inside a trace. This value doesn't change when analyzing or relogging the same trace multiple times. Use this field to identify the same event in multiple analysis or relogging passes over the same trace. |
 | `TickFrequency` | The number of ticks per second to use when evaluating a duration measured in ticks. |
-| `StartTimestamp` | When the event is an *Activity*, this field is set to a tick value captured at the time the activity started. If this event is a *Simple Event*, this field is set to a tick value captured at the time the event occurred. |
-| `StopTimestamp` | When the event is an *Activity*, this field is set to a tick value captured at the time the activity stopped. If the stop event hasn't yet been received for this activity, this field is set to zero. If this event is a *Simple Event*, this field is set to zero. |
-| `ExclusiveDurationTicks` | If this event is an *Activity*, this field is set to the number of ticks that occurred directly in this activity. The number of ticks that occurred in a child activity are excluded. This field is set to zero for *Simple Events*. |
-| `CPUTicks` | If this event is an *Activity*, this field is set to the number of CPU ticks that occurred during this activity. A CPU tick is different from a regular tick. CPU ticks are only counted when the CPU is executing code in an activity. CPU ticks aren't counted when the thread associated with the activity is sleeping. This field is set to zero for *Simple Events*. |
-| `ExclusiveCPUTicks` | This field has the same meaning as `CPUTicks`, except that it doesn't include CPU ticks that occurred in children activities. This field is set to zero for *Simple Events*. |
-| `WallClockTimeResponsibilityTicks` | If this event is an *Activity*, this field is set to a tick count that represents this activity's contribution to overall wall-clock time. A wall-clock time responsibility tick is different from a regular tick. Wall-clock time responsibility ticks take into account parallelism between activities. For example, two parallel activities may have a duration of 50 ticks and the same start and stop time. In this case, both will be assigned a wall-clock time responsibility of 25 ticks. This field is set to zero for *Simple Events*. |
-| `ExclusiveWallClockTimeResponsibilityTicks` | This field has the same meaning as `WallClockTimeResponsibilityTicks`, except that it doesn't include the wall-clock time responsibility ticks of children activities. This field is set to zero for *Simple Events*. |
-| `Data` | Points to additional data stored in the event. The type of data pointed to is different, depending on the `EventId` field. |
+| `StartTimestamp` | When the event is an *Activity*, this field is the tick value captured at the time the activity started. If this event is a *Simple Event*, this field is a tick value captured at the time the event occurred. |
+| `StopTimestamp` | When the event is an *Activity*, this field is the tick value captured at the time the activity stopped. If the stop event hasn't yet been received for this activity, this field is zero. If this event is a *Simple Event*, this field is zero. |
+| `ExclusiveDurationTicks` | If this event is an *Activity*, this field is the number of ticks that occurred directly in this activity. The number of ticks that occurred in a child activity are excluded. This field is zero for *Simple Events*. |
+| `CPUTicks` | If this event is an *Activity*, this field is the number of CPU ticks that occurred during this activity. A CPU tick is different from a regular tick. CPU ticks are only counted when the CPU is executing code in an activity. CPU ticks aren't counted when the thread associated with the activity is sleeping. This field is zero for *Simple Events*. |
+| `ExclusiveCPUTicks` | This field has the same meaning as `CPUTicks`, except that it doesn't include CPU ticks that occurred in children activities. This field is zero for *Simple Events*. |
+| `WallClockTimeResponsibilityTicks` | If this event is an *Activity*, this field is a tick count that represents this activity's contribution to overall wall-clock time. A wall-clock time responsibility tick is different from a regular tick. Wall-clock time responsibility ticks take into account parallelism between activities. For example, two parallel activities may have a duration of 50 ticks and the same start and stop time. In this case, both will be assigned a wall-clock time responsibility of 25 ticks. This field is zero for *Simple Events*. |
+| `ExclusiveWallClockTimeResponsibilityTicks` | This field has the same meaning as `WallClockTimeResponsibilityTicks`, except that it doesn't include the wall-clock time responsibility ticks of children activities. This field is zero for *Simple Events*. |
+| `Data` | Points to other data stored in the event. The type of data pointed to is different, depending on the `EventId` field. |
 | `ProcessId` | The identifier for the process in which the event occurred. |
 | `ThreadId` | The identifier for the thread in which the event occurred. |
 | `ProcessorIndex` | The zero-indexed CPU number on which the event occurred. |
@@ -67,9 +69,13 @@ typedef struct EVENT_DATA_TAG
 
 ## Remarks
 
-Many fields in `EVENT_DATA` contain tick counts. C++ Build Insights uses Window's performance counter as a source of ticks. A tick count must be used with the `TickFrequency` field to convert it into an appropriate time unit such as seconds. See the example below for performing this conversion. `EVENT_DATA` doesn't contain a field for the regular tick count of an activity. To obtain this value, subtract `StartTimestamp` from `StopTimestamp`. `EVENT_DATA` is a structure that's meant to be used by C API users. For C++ API users, classes like [Event](../cpp-event-data-types/event.md) do time conversions automatically.
+Many fields in `EVENT_DATA` contain tick counts. C++ Build Insights uses the Windows performance counter as a source of ticks. A tick count must be used with the `TickFrequency` field to convert it into an appropriate time unit such as seconds. See the [tick conversion example](#tick-conversion-example), below.
 
-The value of the `EVENT_DATA` `Data` field depends on the value of its `EventId` field. The value of `Data` is described in the table below. Some entity identifiers may be missing from the table below. In this case, the `Data` field is set to **`nullptr`** or zero.
+`EVENT_DATA` doesn't contain a field for the regular tick count of an activity. To obtain this value, subtract `StartTimestamp` from `StopTimestamp`.
+
+`EVENT_DATA` is a structure that's meant to be used by C API users. For C++ API users, classes like [Event](../cpp-event-data-types/event.md) do time conversions automatically.
+
+The value of the `EVENT_DATA` `Data` field depends on the value of its `EventId` field. The value of `Data` is described in the table below. Some entity identifiers may be missing from the table below. In this case, the `Data` field is set to `nullptr` or zero.
 
 | `EventId` value | Type pointed to by `Data` |
 |--|--|
