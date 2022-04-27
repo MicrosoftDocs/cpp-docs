@@ -1,7 +1,9 @@
 ---
-title: "Function class"
-description: "The C++ Build Insights SDK Function class reference."
-ms.date: "02/12/2020"
+title: "C++ Build Insights SDK Function class"
+description: "The C++ Build Insights SDK Function class reference. Use the Function class to match a FUNCTION event."
+ms.date: "04/27/2022"
+ms.topic: language-reference
+ms.custom: kr2b-contr-experiment
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "Function", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # Function class
@@ -29,7 +31,7 @@ public:
 
 ## Members
 
-Along with the inherited members from its [Activity](activity.md) base class, the `Function` class contains the following members:
+Along with the inherited members from the [Activity](activity.md) base class, the `Function` class contains the following members:
 
 ### Constructors
 
@@ -39,7 +41,7 @@ Along with the inherited members from its [Activity](activity.md) base class, th
 
 [Name](#name)
 
-## <a name="function"></a> Function
+## Function
 
 ```cpp
 Function(const RawEvent& event);
@@ -50,7 +52,7 @@ Function(const RawEvent& event);
 *event*\
 A [FUNCTION](../event-table.md#function) event.
 
-## <a name="name"></a> Name
+## Name
 
 ```cpp
 const char* Name() const;

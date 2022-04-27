@@ -1,7 +1,9 @@
 ---
-title: "Pass1 class"
-description: "The C++ Build Insights SDK Pass1 class reference."
-ms.date: "02/12/2020"
+title: "C++ Build Insights SDK Pass1 class"
+description: "The C++ Build Insights SDK Pass1 class reference. Use the Pass1 class to match a PASS1 event"
+ms.date: "04/27/2022"
+ms.topic: language-reference
+ms.custom: kr2b-contr-experiment
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "Pass1", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # Pass1 class
@@ -27,13 +29,13 @@ public:
 
 ## Members
 
-Along with the inherited members from its [LinkerPass](linker-pass.md) base class, the `Pass1` class contains the following members:
+Along with the inherited members from the [LinkerPass](linker-pass.md) base class, the `Pass1` class contains the following members:
 
 ### Constructors
 
 [Pass1](#pass1)
 
-## <a name="pass1"></a> Pass1
+## Pass1
 
 ```cpp
 Pass1(const RawEvent& event);
