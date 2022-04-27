@@ -1,7 +1,9 @@
 ---
-title: "StopTracingSession"
-description: "The C++ Build Insights SDK StopTracingSession function reference."
-ms.date: "02/12/2020"
+title: "C++ Build Insights SDK StopTracingSession"
+description: "The C++ Build Insights SDK StopTracingSession function reference. StopTracingSession stops an ongoing tracing session and produces a raw trace file."
+ms.date: "04/27/2022"
+ms.topic: language-reference
+ms.custom: kr2b-contr-experiment
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "StopTracingSession", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # StopTracingSession
@@ -13,7 +15,9 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and later. To s
 ::: moniker-end
 ::: moniker range=">=msvc-150"
 
-The `StopTracingSession` function stops an ongoing tracing session and produces a raw trace file. Raw trace files can be passed to the [Analyze](analyze.md), [AnalzeA](analyze-a.md), and [AnalyzeW](analyze-w.md) functions to start an analysis session. Raw trace files can also be passed to the [Relog](relog.md), [RelogA](relog-a.md), and [RelogW](relog-w.md) functions to start a relogging session. Executables calling `StopTracingSession` must have administrator privileges.
+The `StopTracingSession` function stops an ongoing tracing session and produces a raw trace file. You can pass raw trace files to the [Analyze](analyze.md), [AnalzeA](analyze-a.md), and [AnalyzeW](analyze-w.md) functions to start an analysis session. You can pass raw trace files to the [Relog](relog.md), [RelogA](relog-a.md), and [RelogW](relog-w.md) functions to start a relogging session.
+
+The caller must have administrator permissions to use `StopTracingSession`.
 
 ## Syntax
 
@@ -32,10 +36,10 @@ inline RESULT_CODE StopTracingSession(
 ### Parameters
 
 *sessionName*\
-The name of the tracing session to stop. Use the same session name as the one passed to [StartTracingSession](start-tracing-session.md), [StartTracingSessionA](start-tracing-session-a.md), or [StartTracingSessionW](start-tracing-session-w.md).
+The name of the tracing session to stop. Use the same session name as used for [StartTracingSession](start-tracing-session.md), [StartTracingSessionA](start-tracing-session-a.md), or [StartTracingSessionW](start-tracing-session-w.md).
 
 *outputLogFile*\
-Path to the final output log file where the raw trace should be saved.
+Full path of the final output log file to save the raw trace.
 
 *statistics*\
 Pointer to a [TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) object. `StopTracingSession` writes trace collection statistics in this object before returning.
