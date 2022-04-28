@@ -24,7 +24,7 @@ In general, the rules for allocating and releasing memory allocated for `BSTR`s 
 
    [!code-cpp[NVC_ATLMFC_Utilities#195](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_4.cpp)]
 
-- When you implement a function that returns a `BSTR`, allocate the string but do not free it. The receiving the function releases the memory. For example:
+- When you implement a function that returns a `BSTR`, allocate the string but do not free it. The receiving function releases the memory. For example:
 
    [!code-cpp[NVC_ATLMFC_Utilities#196](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_5.cpp)]
 
