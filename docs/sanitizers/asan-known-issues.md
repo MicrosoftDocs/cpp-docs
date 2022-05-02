@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer known issues"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 03/02/2021
+ms.date: 04/15/2022
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
@@ -26,9 +26,11 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 
 ## Standard library support
 
-The MSVC standard library (STL) isn't enlightened to understand the AddressSanitizer. AddressSanitizer exceptions raised in STL code do identify true bugs. However, they aren't as precise as they could be.
+The MSVC standard library (STL) is partially enlightened to understand the AddressSanitizer and provide additional checks. For more information, see [container-overflow error](./error-container-overflow.md).
 
-This example demonstrates the lack of precision:
+When annotations are disabled or in versions without support, AddressSanitizer exceptions raised in STL code do still identify true bugs. However, they aren't as precise as they could be.
+
+This example demonstrates the lack of precision and the benefits of enabling annotations:
 
 ```cpp
 // Compile with: cl /fsanitize=address /Zi
@@ -39,12 +41,14 @@ int main() {
     std::vector<int> v(10);
     v.reserve(20);
 
-    // Currently, MSVC ASan does NOT raise an exception here.
+    // In versions prior to 17.2, MSVC ASan does NOT raise an exception here.
     // While this is an out-of-bounds write to 'v', MSVC ASan
     // ensures the write is within the heap allocation size (20).
+    // With 17.2 and later, MSVC ASan will raise a 'container-overflow' exception:
+    // ==18364==ERROR: AddressSanitizer: container-overflow on address 0x1263cb8a0048 at pc 0x7ff6466411ab bp 0x005cf81ef7b0 sp 0x005cf81ef7b8
     v[10] = 1;
 
-    // MSVC ASan DOES raise an exception here, as this write
+    // Regardless of version, MSVC ASan DOES raise an exception here, as this write
     // is out of bounds from the heap allocation.
     v[20] = 1;
 }

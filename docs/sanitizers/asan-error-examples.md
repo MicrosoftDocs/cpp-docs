@@ -20,6 +20,8 @@ Each error example provides source code and compilation instructions for a comma
 
 - [Error: `calloc-overflow`](./error-calloc-overflow.md)
 
+- [Error: `container-overflow`](./error-container-overflow.md)
+
 - [Error: `double-free`](./error-double-free.md)
 
 - [Error: `dynamic-stack-buffer-overflow`](./error-dynamic-stack-buffer-overflow.md)

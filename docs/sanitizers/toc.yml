@@ -27,6 +27,8 @@ items:
           href: ../sanitizers/error-allocation-size-too-big.md
         - name: "calloc-overflow error"
           href: ../sanitizers/error-calloc-overflow.md
+        - name: "container-overflow error"
+          href: ../sanitizers/error-container-overflow.md
         - name: "double-free error"
           href: ../sanitizers/error-double-free.md
         - name: "dynamic-stack-buffer-overflow error"
