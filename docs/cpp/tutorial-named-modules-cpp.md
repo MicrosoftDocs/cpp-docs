@@ -365,7 +365,7 @@ Module partitions make it easier to logically factor a large module. They can be
 
 ## Summary
 
-In this tutorial, you've been introduced t the basics of C++20 modules. You've created a primary module interface, defined a module partition, and built a module implementation file. These files factor the module and present an API to the files that import it.
+In this tutorial, you've been introduced to the basics of C++20 modules. You've created a primary module interface, defined a module partition, and built a module implementation file. These files factor the module and present an API to the files that import it.
 
 ## See also
 
