@@ -6,7 +6,7 @@ api_name: ["rand", "_o_rand"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["rand"]
+f1_keywords: ["STDLIB/rand", "rand"]
 helpviewer_keywords: ["generating pseudorandom numbers", "random numbers, generating", "numbers, pseudorandom", "rand function", "pseudorandom numbers", "numbers, generating pseudorandom"]
 ---
 # `rand`
