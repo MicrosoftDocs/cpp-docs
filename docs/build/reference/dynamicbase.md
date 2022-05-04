@@ -20,6 +20,8 @@ The **/DYNAMICBASE** option modifies the header of an *executable image*, a .dll
 
 By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICBASE:NO**. The **/DYNAMICBASE** option is required for the [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md) option to have an effect.
 
+This option is not supported for Arm32 or Arm64 architectures.
+
 ## See also
 
 - [EDITBIN Options](editbin-options.md)
