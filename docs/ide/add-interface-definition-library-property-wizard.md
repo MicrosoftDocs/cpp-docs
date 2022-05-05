@@ -103,7 +103,7 @@ The following section describes the UI that you'll use to add an IDL property:
 
 - **Additional attributes**
 
-Keywords in the Microsoft Interface Definition Language (MIDL) are described in detail in the [MIDL language reference](/windows/win32/midl/midl-language-reference.md).
+Keywords in the Microsoft Interface Definition Language (MIDL) are described in detail in the [MIDL language reference](/windows/win32/midl/midl-language-reference).
 
   |Option|Description|
   |------------|-----------------|

@@ -75,7 +75,7 @@ The following section describes the wizard interface that you'll use to add a me
 
 - **Attributes**
 
-  The following attributes are also described in the [MIDL Reference](/windows/win32/midl/midl-language-reference.md).
+  The following attributes are also described in the [MIDL Reference](/windows/win32/midl/midl-language-reference).
 
   - `id`
 
