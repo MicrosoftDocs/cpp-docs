@@ -114,6 +114,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/STUB](stub-ms-dos-stub-file-name.md)|Attaches an MS-DOS stub program to a Win32 program.|
 |[/SUBSYSTEM](subsystem-specify-subsystem.md)|Tells the operating system how to run the *`.exe`* file.|
 |[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md)|Tells the operating system to copy the linker output to a swap file before it's run.|
+|[/TIME](time-linker.md)|Outputs the timings of the linker passes.|
 |[/TLBID](tlbid-specify-resource-id-for-typelib.md)|Specifies the resource ID of the linker-generated type library.|
 |[/TLBOUT](tlbout-name-dot-tlb-file.md)|Specifies the name of the *`.tlb`* file and other MIDL output files.|
 |[/TSAWARE](tsaware-create-terminal-server-aware-application.md)|Creates an application that is designed specifically to run under Terminal Server.|
