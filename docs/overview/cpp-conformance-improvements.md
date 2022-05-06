@@ -28,6 +28,10 @@ In versions of Visual Studio before Visual Studio 2022 version 17.2, an untermin
 // bidi.cpp
 int main() {
     const char *access_level = "user";
+    // The following source line contains bidirectional Unicode equivalent to:
+    //    if ( strcmp(access_level, "user\u202e \u2066// Check if admin \u2069 \u2066") ) {
+    // In most editors, it's rendered as:
+    //    if ( strcmp(access_level, "user") ) { // Check if admin
     if ( strcmp(access_level, "user‮ ⁦// Check if admin ⁩ ⁦") ) {
         printf("You are an admin.\n");
     }
@@ -35,8 +39,8 @@ int main() {
 }
 
 /* build output
-bidi.cpp(4): warning C5255: unterminated bidirectional character encountered: 'U+202e'
-bidi.cpp(4): warning C5255: unterminated bidirectional character encountered: 'U+2066'
+bidi.cpp(8): warning C5255: unterminated bidirectional character encountered: 'U+202e'
+bidi.cpp(8): warning C5255: unterminated bidirectional character encountered: 'U+2066'
 */
 ```
 
