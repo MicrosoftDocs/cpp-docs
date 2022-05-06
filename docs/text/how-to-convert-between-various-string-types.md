@@ -17,9 +17,15 @@ For more background information about converting narrow and wide strings, see [C
 
 ## Run the examples
 
-To run the examples in Visual Studio 2022, create a new C++ Windows Console App and copy the sample code into it. The Windows Console project type is available from the **Create a new project** dialog after setting the language dropdown to **C++**, the platform dropdown to **Windows**, and the platform dropdown to **All project types**.
+To run the examples in Visual Studio 2022, you can either create a new C++ Windows Console App or, if you have installed C++/CLI support, you can create a CLR Console App (.NET Framework).
 
-Add the `/clr` and `/Zc:twoPhase-` command line arguments to **Project Properties** > **C++** > **Command Line** > **Additional Options**.
+If you create a CLR Console App, you don't have to make the following changes to the compiler and debugger settings. However, you'll need to add `#include "pch.h"` to the top of each example.
+
+Either way, add `comsuppw.lib` to **Project Properties** > **Linker** > **Input** > **Additional Dependencies**.
+
+If you create a new C++ Windows Console app to run the examples, make the following project changes:
+
+- Add the `/clr` and `/Zc:twoPhase-` command line arguments to **Project Properties** > **C++** > **Command Line** > **Additional Options**.
 
 The `/clr` switch conflicts with some compiler switches that are set when you create a C++ Windows Console App project. The following links provide instructions for where in the IDE you can turn off the conflicting switches:
 
@@ -27,11 +33,6 @@ The `/clr` switch conflicts with some compiler switches that are set when you cr
 - Turn off [/EHS (Exception handling model)](../build/reference/eh-exception-handling-model.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **Code Generation** > **Enable C++ Exceptions** > **No**
 - Exchange [/Zi (Debug information format)](../build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment) for [/Z7](/cpp/build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Debug Information Format** > **C7 compatible**.
 - Turn off [/JMC (Just My Code debugging)](../build/reference/jmc.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Support Just My Code Debugging** > **No**
-
-Add `comsuppw.lib`, to **Project Properties** > **Linker** > **Input** > **Additional Dependencies**.
-
-To debug the samples:
-
 - Set the debugger type to mixed: **Project Properties** > **Debugging** > **Debugger Type** > **Mixed (.NET framework)**
 - Turn on [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute.md#to-set-this-linker-option-in-the-visual-studio-development-environment): **Project properties** > **Linker** > **Debugging** > **Debuggable Assembly** > **Yes (ASSEMBLYDEBUG)**
 
