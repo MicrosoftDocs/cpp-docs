@@ -16,7 +16,7 @@ Visual Studio 2022 version 17.2 contains the following conformance improvements,
 
 ### Unterminated bidirectional character warnings
 
-Visual Studio 2022 version 17.2 adds level 3 warning C5255 for unterminated Unicode bidirectional characters in comments and strings. The warning addresses a security concern raised by a feedback ticket, as described in [Trojan Source: Invisible Vulnerabilities](https://www.trojansource.codes/trojan-source.pdf) by Nicholas Boucher and Ross Anderson. For more information on Unicode bidirectional characters, see [Unicode® Standard Annex #9: UNICODE BIDIRECTIONAL ALGORITHM](https://unicode.org/reports/tr9/).
+Visual Studio 2022 version 17.2 adds level 3 warning C5255 for unterminated Unicode bidirectional characters in comments and strings. The warning addresses a security concern described in [Trojan Source: Invisible Vulnerabilities](https://www.trojansource.codes/trojan-source.pdf) by Nicholas Boucher and Ross Anderson. For more information on Unicode bidirectional characters, see [Unicode® Standard Annex #9: UNICODE BIDIRECTIONAL ALGORITHM](https://unicode.org/reports/tr9/).
 
 Warning C5255 only addresses files that, after conversion, contain Unicode bidirectional characters. This warning applies to UTF-8, UTF-16, and UTF-32 files, so the proper source-encoding must be provided. This change is a source breaking change.
 
@@ -28,7 +28,7 @@ In versions of Visual Studio before Visual Studio 2022 version 17.2, an untermin
 // bidi.cpp
 int main() {
     const char *access_level = "user";
-    // The following source line contains bidirectional Unicode equivalent to:
+    // The following source line contains bidirectional Unicode characters equivalent to:
     //    if ( strcmp(access_level, "user\u202e \u2066// Check if admin \u2069 \u2066") ) {
     // In most editors, it's rendered as:
     //    if ( strcmp(access_level, "user") ) { // Check if admin
