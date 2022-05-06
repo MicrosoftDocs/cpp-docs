@@ -10,6 +10,168 @@ Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug f
 
 This document lists the changes in Visual Studio 2022. For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
+## <a name="improvements_172"></a> Conformance improvements in Visual Studio 2022 version 17.2
+
+Visual Studio 2022 version 17.2 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+
+### Unterminated bidirectional character warnings
+
+| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
+| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
+|  Source                        |   Any mode            |      Yes                |    N/A          | [cb382c5](https://devdiv.visualstudio.com/DevDiv/_git/msvc/commit/cb382c5578c4dcf6aaeec3276351b297f10f80f7?refName=refs%2Fheads%2Fdev%2Feldakesh%2Fbidi)|
+
+#### Description/Rationale
+
+Adds a W3 warning C5255 to warn about unterminated Unicode bidirectional characters in comments and strings.
+This was a security concern that was raised by a feedback ticket and is covered in https://www.trojansource.codes/trojan-source.pdf.
+This warning only concerns files that, after conversion, contain Unicode bidirectional characters. This applies to UTF-8/16/32 files, so the proper source encoding must be provided.
+
+#### Example (before/after)
+
+Before, an unterminated bidi character (see https://unicode.org/reports/tr9/) did not produce a warning.
+Now it does:
+
+```cpp
+int main() {
+    const char *access_level = "user";
+    if (strcmp(access_level, "user‮ ⁦// Check if admin ⁩ ⁦")) {
+        printf("You are an admin.\n");
+    }
+    return 0;
+}
+
+bidi.cpp(4): warning C5255: unterminated bidirectional character encountered: 'U+202e'
+bidi.cpp(4): warning C5255: unterminated bidirectional character encountered: 'U+2066'
+```
+
+### `from_chars()` `float` tiebreaking
+
+| Source/Binary Breaking Change? | Compiler mode  | Backward compatible? | EDG Behavior  | Commit       |
+| ------------------------------ | -------------- | -------------------- | ------------- | ------------ |
+| Runtime behavior only          | C++17 or later | Yes                  | N/A (runtime) | [b24e13c4][] |
+
+[b24e13c4]: https://devdiv.visualstudio.com/DevDiv/_git/msvc/commit/b24e13c449def96d4ad504eb2aae6602eaecdf13?refName=refs%2Fheads%2Fprod%2Ffe
+
+#### Description/Rationale
+
+Fixed a bug in `<charconv>` `from_chars()` `float` tiebreaking that produced incorrect results. This affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range (the smallest and largest affected values were `"32768.009765625"` and `"131071.98828125"`), where the tiebreaker rule wanted to round to "even" and "even" happened to be "down", but the implementation incorrectly rounded "up". (`double` was unaffected.) [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366)
+
+#### Example (before/after)
+
+```cmd
+C:\Temp>type meow.cpp
+```
+```cpp
+#include <cassert>
+#include <charconv>
+#include <cstdio>
+#include <string_view>
+#include <system_error>
+using namespace std;
+int main() {
+    const double dbl  = 32768.009765625;
+    const auto sv     = "32768.009765625"sv;
+    float flt         = 0.0f;
+    const auto result = from_chars(sv.data(), sv.data() + sv.size(), flt);
+    assert(result.ec == errc{});
+    printf("from_chars() returned: %.1000g\n", flt);
+    printf("This rounded %s.\n", flt < dbl ? "DOWN" : "UP");
+}
+```
+
+Before:
+
+```
+C:\Temp>cl /EHsc /nologo /W4 /std:c++17 meow.cpp && meow
+meow.cpp
+from_chars() returned: 32768.01171875
+This rounded UP.
+```
+
+After:
+
+```
+C:\Temp>cl /EHsc /nologo /W4 /std:c++17 meow.cpp && meow
+meow.cpp
+from_chars() returned: 32768.0078125
+This rounded DOWN.
+```
+
+### `/Zc:__STDC__` makes `__STDC__` available for C
+
+| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
+| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
+|  Source                        |   C11/C17           |      Yes               |    Follows us         | [d315cf09](https://dev.azure.com/devdiv/DevDiv/_git/msvc/commit/d315cf097bfab063473ad1c579206ef75a846f99?refName=refs%2Fheads%2Fdev%2Feldakesh%2Fstdc) [3afb22](https://devdiv.visualstudio.com/DevDiv/_git/msvc/commit/3afb22a8059a95cab1406237c04df8f12bd5333f)|
+
+#### Description/Rationale
+
+The C standard requires that a conforming C implementation defines `__STDC__` as `1`. Due to the behavior of the UCRT, which doesn't expose POSIX functions when `__STDC__` is `1`, it isn't possible to define this macro for C by default without introducing breaking changes to the stable language versions. Visual Studio 2022 version 17.2 and later add a conformance option, `/Zc:__STDC__`, that defines this macro. There's no negative version of the option. Currently, we plan to use this option by default for future versions of C.
+
+This change is a source breaking change. It applies when C11 or C17 mode is enabled, **`/std:c11`** or **`/std:c17`**, together with `/Zc:__STDC__`.
+
+#### Example
+
+```c
+#include <io.h>
+#include <fcntl.h>
+#include <stdio.h>
+
+int main() {
+#if __STDC__
+    int f = _open("file.txt", _O_RDONLY);
+    _close(f);
+#else
+    int f = open("file.txt", O_RDONLY);
+    close(f);
+#endif
+}
+
+/* Command line behavior
+
+C:\Temp>cl /EHsc /W4 /Zc:__STDC__ meow.c && meow
+
+*/
+```
+
+### Additional warning for missing braces
+
+Warning C5246 reports missing braces during aggregate initialization of a subobject. Before Visual Studio 2022 version 17.2, the warning didn't handle the case of an anonymous `struct` or `union`.
+
+This change is a source breaking change. It applies when the off-by-default warning C5246 is enabled.
+
+#### Example
+
+In Visual Studio 2022 version 17.2 and later, this code now causes an error:
+
+```cpp
+struct S {
+   union {
+      float f[4];
+      double d[2];
+   };
+};
+
+void f()
+{
+   S s = { 1.0f, 2.0f, 3.14f, 4.0f };
+}
+
+/* Command line behavior
+cl /Wall /c t.cpp
+
+t.cpp(10): warning C5246: 'anonymous struct or union': the initialization of a subobject should be wrapped in braces
+*/
+```
+
+To resolve this issue, add braces to the initializer:
+
+```cpp
+void f()
+{
+   S s = { { 1.0f, 2.0f, 3.14f, 4.0f } };
+}
+```
+
 ## <a name="improvements_171"></a> Conformance improvements in Visual Studio 2022 version 17.1
 
 Visual Studio 2022 version 17.1 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
