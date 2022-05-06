@@ -1,7 +1,7 @@
 ---
 title: "setlocale, _wsetlocale"
 description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
-ms.date: "6/8/2021"
+ms.date: 05/05/2022
 api_name: ["_wsetlocale", "setlocale", "_o__wsetlocale", "_o_setlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -37,9 +37,11 @@ Locale specifier.
 
 ## Return value
 
-If a valid *`locale`* and *`category`* are given, returns a pointer to the string associated with the specified *`locale`* and *`category`*. If the *`locale`* or *`category`* isn't valid, returns a null pointer, and the current locale settings of the program are unchanged.
+If a valid *`locale`* and *`category`* are given, returns a pointer to the string associated with the specified *`locale`* and *`category`*.
 
-For example, the call
+If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
+
+The call
 
 ```C
 setlocale( LC_ALL, "en-US" );
