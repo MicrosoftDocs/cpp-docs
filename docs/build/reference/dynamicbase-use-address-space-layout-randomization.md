@@ -1,24 +1,26 @@
 ---
 description: "Learn more about: /DYNAMICBASE (Use address space layout randomization)"
 title: "/DYNAMICBASE (Use address space layout randomization)"
-ms.date: "06/12/2018"
+ms.date: 05/05/2022
 f1_keywords: ["VC.Project.VCLinkerTool.RandomizedBaseAddress"]
 helpviewer_keywords: ["-DYNAMICBASE linker option", "/DYNAMICBASE linker option", "DYNAMICBASE linker option"]
 ms.assetid: 6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2
 ---
-# /DYNAMICBASE (Use address space layout randomization)
+# `/DYNAMICBASE` (Use address space layout randomization)
 
-Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature of Windows that was first available in Windows Vista.
+Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature of Windows. ASLR was first available in Windows Vista.
 
 ## Syntax
 
-> **/DYNAMICBASE**[**:NO**]
+> **`/DYNAMICBASE`**[**`:NO`**]
 
 ## Remarks
 
-The **/DYNAMICBASE** option modifies the header of an *executable image*, a .dll or .exe file, to indicate whether the application should be randomly rebased at load time, and enables virtual address allocation randomization, which affects the virtual memory location of heaps, stacks, and other operating system allocations. The **/DYNAMICBASE** option applies to both 32-bit and 64-bit images. ASLR is supported on Windows Vista and later operating systems. The option is ignored by earlier operating systems.
+The **`/DYNAMICBASE`** option modifies the header of an *executable image*, a .dll or .exe file, to indicate whether the application should be randomly rebased at load time, and enables virtual address allocation randomization, which affects the virtual memory location of heaps, stacks, and other operating system allocations. The **`/DYNAMICBASE`** option applies to both 32-bit and 64-bit images. ASLR is supported on Windows Vista and later operating systems. The option is ignored by earlier operating systems.
 
-By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICBASE:NO**. The **/DYNAMICBASE** option is required for the [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md) option to have an effect.
+By default, **`/DYNAMICBASE`** is enabled. To disable this option, use **`/DYNAMICBASE:NO`**. The **`/DYNAMICBASE`** option is required for the [`/HIGHENTROPYVA`](highentropyva-support-64-bit-aslr.md) option to have an effect.
+
+Because ASLR can't be disabled on ARM, ARM64, or ARM64EC architectures, **`/DYNAMICBASE:NO`** isn't supported for these targets.
 
 ### To set this linker option in Visual Studio
 
@@ -35,6 +37,6 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 ## See also
 
 - [MSVC linker reference](linking.md)
-- [MSVC Linker Options](linker-options.md)
-- [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
+- [MSVC linker options](linker-options.md)
+- [`/HIGHENTROPYVA`](highentropyva-support-64-bit-aslr.md)
 - [Windows ISV Software Security Defenses](/previous-versions/bb430720(v=msdn.10))
