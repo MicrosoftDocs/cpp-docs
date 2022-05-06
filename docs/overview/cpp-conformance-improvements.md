@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 10/23/2021
+ms.date: 05/05/2022
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
@@ -16,52 +16,40 @@ Visual Studio 2022 version 17.2 contains the following conformance improvements,
 
 ### Unterminated bidirectional character warnings
 
-| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
-| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
-|  Source                        |   Any mode            |      Yes                |    N/A          | [cb382c5](https://devdiv.visualstudio.com/DevDiv/_git/msvc/commit/cb382c5578c4dcf6aaeec3276351b297f10f80f7?refName=refs%2Fheads%2Fdev%2Feldakesh%2Fbidi)|
+Visual Studio 2022 version 17.2 adds level 3 warning C5255 for unterminated Unicode bidirectional characters in comments and strings. The warning addresses a security concern raised by a feedback ticket, as described in [Trojan Source: Invisible Vulnerabilities](https://www.trojansource.codes/trojan-source.pdf) by Nicholas Boucher and Ross Anderson. For more information on Unicode bidirectional characters, see [Unicode® Standard Annex #9: UNICODE BIDIRECTIONAL ALGORITHM](https://unicode.org/reports/tr9/).
 
-#### Description/Rationale
-
-Adds a W3 warning C5255 to warn about unterminated Unicode bidirectional characters in comments and strings.
-This was a security concern that was raised by a feedback ticket and is covered in https://www.trojansource.codes/trojan-source.pdf.
-This warning only concerns files that, after conversion, contain Unicode bidirectional characters. This applies to UTF-8/16/32 files, so the proper source encoding must be provided.
+Warning C5255 only addresses files that, after conversion, contain Unicode bidirectional characters. This warning applies to UTF-8, UTF-16, and UTF-32 files, so the proper source-encoding must be provided. This change is a source breaking change.
 
 #### Example (before/after)
 
-Before, an unterminated bidi character (see https://unicode.org/reports/tr9/) did not produce a warning.
-Now it does:
+In versions of Visual Studio before Visual Studio 2022 version 17.2, an unterminated bidirectional character didn't produce a warning. Visual Studio 2022 version 17.2 produces warning C5255:
 
 ```cpp
+// bidi.cpp
 int main() {
     const char *access_level = "user";
-    if (strcmp(access_level, "user‮ ⁦// Check if admin ⁩ ⁦")) {
+    if ( strcmp(access_level, "user‮ ⁦// Check if admin ⁩ ⁦") ) {
         printf("You are an admin.\n");
     }
     return 0;
 }
 
+/* build output
 bidi.cpp(4): warning C5255: unterminated bidirectional character encountered: 'U+202e'
 bidi.cpp(4): warning C5255: unterminated bidirectional character encountered: 'U+2066'
+*/
 ```
 
-### `from_chars()` `float` tiebreaking
+### `from_chars()` `float` tiebreaker
 
-| Source/Binary Breaking Change? | Compiler mode  | Backward compatible? | EDG Behavior  | Commit       |
-| ------------------------------ | -------------- | -------------------- | ------------- | ------------ |
-| Runtime behavior only          | C++17 or later | Yes                  | N/A (runtime) | [b24e13c4][] |
+Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even" and "even" happened to be "down", but the implementation incorrectly rounded "up". (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
 
-[b24e13c4]: https://devdiv.visualstudio.com/DevDiv/_git/msvc/commit/b24e13c449def96d4ad504eb2aae6602eaecdf13?refName=refs%2Fheads%2Fprod%2Ffe
+This change affects runtime behavior in the specified range of cases.
 
-#### Description/Rationale
+#### Example
 
-Fixed a bug in `<charconv>` `from_chars()` `float` tiebreaking that produced incorrect results. This affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range (the smallest and largest affected values were `"32768.009765625"` and `"131071.98828125"`), where the tiebreaker rule wanted to round to "even" and "even" happened to be "down", but the implementation incorrectly rounded "up". (`double` was unaffected.) [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366)
-
-#### Example (before/after)
-
-```cmd
-C:\Temp>type meow.cpp
-```
 ```cpp
+// from_chars_float.cpp
 #include <cassert>
 #include <charconv>
 #include <cstdio>
@@ -79,31 +67,25 @@ int main() {
 }
 ```
 
-Before:
+In versions before Visual Studio 2022 version 17.2:
 
-```
-C:\Temp>cl /EHsc /nologo /W4 /std:c++17 meow.cpp && meow
-meow.cpp
+```Output
+C:\Temp>cl /EHsc /nologo /W4 /std:c++17 from_chars_float.cpp && from_chars_float
+from_chars_float.cpp
 from_chars() returned: 32768.01171875
 This rounded UP.
 ```
 
-After:
+In Visual Studio 2022 version 17.2 and after:
 
-```
-C:\Temp>cl /EHsc /nologo /W4 /std:c++17 meow.cpp && meow
-meow.cpp
+```Output
+C:\Temp>cl /EHsc /nologo /W4 /std:c++17 from_chars_float.cpp && from_chars_float
+from_chars_float.cpp
 from_chars() returned: 32768.0078125
 This rounded DOWN.
 ```
 
 ### `/Zc:__STDC__` makes `__STDC__` available for C
-
-| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
-| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
-|  Source                        |   C11/C17           |      Yes               |    Follows us         | [d315cf09](https://dev.azure.com/devdiv/DevDiv/_git/msvc/commit/d315cf097bfab063473ad1c579206ef75a846f99?refName=refs%2Fheads%2Fdev%2Feldakesh%2Fstdc) [3afb22](https://devdiv.visualstudio.com/DevDiv/_git/msvc/commit/3afb22a8059a95cab1406237c04df8f12bd5333f)|
-
-#### Description/Rationale
 
 The C standard requires that a conforming C implementation defines `__STDC__` as `1`. Due to the behavior of the UCRT, which doesn't expose POSIX functions when `__STDC__` is `1`, it isn't possible to define this macro for C by default without introducing breaking changes to the stable language versions. Visual Studio 2022 version 17.2 and later add a conformance option, `/Zc:__STDC__`, that defines this macro. There's no negative version of the option. Currently, we plan to use this option by default for future versions of C.
 
@@ -112,6 +94,7 @@ This change is a source breaking change. It applies when C11 or C17 mode is enab
 #### Example
 
 ```c
+// test__STDC__.c
 #include <io.h>
 #include <fcntl.h>
 #include <stdio.h>
@@ -128,12 +111,12 @@ int main() {
 
 /* Command line behavior
 
-C:\Temp>cl /EHsc /W4 /Zc:__STDC__ meow.c && meow
+C:\Temp>cl /EHsc /W4 /Zc:__STDC__ test__STDC__.c && test__STDC__
 
 */
 ```
 
-### Additional warning for missing braces
+### Warning for missing braces
 
 Warning C5246 reports missing braces during aggregate initialization of a subobject. Before Visual Studio 2022 version 17.2, the warning didn't handle the case of an anonymous `struct` or `union`.
 
@@ -178,7 +161,7 @@ Visual Studio 2022 version 17.1 contains the following conformance improvements,
 
 ### Detect ill-formed capture default in non-local lambda-expressions
 
-The C++ Standard only allows a lambda expression in block scope to have a capture-default. In Visual C++ 2022 version 17.1 and later, the compiler now detects when a capture default isn't allowed in a non-local lambda expression and emits a new level 4 warning, C5253.
+The C++ Standard only allows a lambda expression in block scope to have a capture-default. In Visual C++ 2022 version 17.1 and later, the compiler detects when a capture default isn't allowed in a non-local lambda expression. It emits a new level 4 warning, C5253.
 
 This change is a source breaking change. It applies in any mode that uses the new lambda processor: **`/Zc:lambda`**, **`/std:c++20`**, or **`/std:c++latest`**.
 
@@ -227,7 +210,7 @@ int main(void)
 
 ### Error on a non-dependent static_assert
 
-In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` is not dependent, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
+In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
 This change is a source breaking change. It applies in any mode that implies **`/Zc:permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 
