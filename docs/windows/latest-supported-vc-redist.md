@@ -32,7 +32,7 @@ This table lists the latest supported English (en-US) Microsoft Visual C++ Redis
 Download other languages and versions, including versions for long term servicing release channels (LTSC), from [my.visualstudio.com](https://my.visualstudio.com/).
 
 > [!NOTE]
-> Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Make sure to log in by using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by selecting the link in **No account? Create one!**.
+> Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Make sure to log in by using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by selecting the link in **No account? Create one!**
 
 ### Notes
 
