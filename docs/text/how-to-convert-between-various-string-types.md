@@ -2,7 +2,7 @@
 description: "Learn more about: How to: Convert Between Various String Types"
 title: "How to: Convert Between Various String Types"
 ms.custom: "get-started-article"
-ms.date: 05/04/2022
+ms.date: 05/09/2022
 helpviewer_keywords: ["converting string types", "string conversion [C++]", "strings [C++], converting"]
 ---
 # How to: Convert between various string types
@@ -40,7 +40,7 @@ The `/clr` switch conflicts with some compiler switches that are set when you cr
 
 ### Description
 
-This example demonstrates how to convert from a `char *` to the string types listed above. A `char *` string (also known as a C-style string) uses a null character to indicate the end of the string. C-style strings usually require 1 byte per character, but can also use 2 bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from wide Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
+This example demonstrates how to convert from a `char *` to the string types listed above. A `char *` string (also known as a C-style string) uses a terminating null to indicate the end of the string. C-style strings usually require 1 byte per character, but can also use 2 bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from wide Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
 
 For information about running and debugging this example, see [Run the examples](#run-the-examples).
 
@@ -267,7 +267,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a `_bstr_t` to other string types. The `_bstr_t` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
+This example demonstrates how to convert from a `_bstr_t` to other string types. The `_bstr_t` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating null character.
 
 For information about running and debugging this example, see [Run the examples](#run-the-examples).
 ### Code
@@ -296,7 +296,7 @@ int main()
 
     // Convert the wide character _bstr_t string to a C-style
     // string. To be safe, allocate two bytes for each character
-    // in the char* string, including the terminating NULL.
+    // in the char* string, including the terminating null.
     const size_t newsize = (orig.length() + 1) * 2;
     char* nstring = new char[newsize];
 
@@ -368,7 +368,7 @@ Hello, World! (System::String)
 
 ### Description
 
-This example demonstrates how to convert from a `CComBSTR` to other string types. Like `_bstr_t`, a `CComBSTR` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
+This example demonstrates how to convert from a `CComBSTR` to other string types. Like `_bstr_t`, a `CComBSTR` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating null.
 
 For information about running and debugging this example, see [Run the examples](#run-the-examples).
 
@@ -403,7 +403,7 @@ int main()
     // Convert a wide character CComBSTR string to a
     // regular multibyte char* string. Allocate enough space
     // in the new string for the largest possible result,
-    // including space for a terminating NULL.
+    // including space for a terminating null.
     const size_t newsize = (orig.Length() + 1) * 2;
     char* nstring = new char[newsize];
 
@@ -657,7 +657,7 @@ int main()
 
     // Convert a wide character basic_string string to a multibyte char*
     // string. To be safe, we allocate two bytes for each character
-    // in the original string, including the terminating NULL.
+    // in the original string, including the terminating null.
     const size_t newsize = (orig.size() + 1) * 2;
 
     char* nstring = new char[newsize];
@@ -765,7 +765,7 @@ int main()
     // Make a copy of the System::String as a multibyte
     // char* string. Allocate two bytes in the multibyte
     // output string for every wide character in the input
-    // string, including space for a terminating NULL.
+    // string, including space for a terminating null.
     size_t origsize = wcslen(wch) + 1;
     const size_t newsize = origsize * 2;
     size_t convertedChars = 0;
