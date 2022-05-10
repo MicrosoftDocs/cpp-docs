@@ -1,29 +1,37 @@
 ---
-description: "Learn more about: Indirection and Address-of Operators"
-title: "Indirection and Address-of Operators"
-ms.date: "02/16/2018"
+description: "Learn more about: Indirection and address-of operators"
+title: "Indirection and address-of operators"
+ms.date: 05/09/2022
 helpviewer_keywords: ["address-of operator (&)", "* operator", "operators [C++], address-of", "ampersand operator (&)", "* operator, indirection operator", "addresses [C++], indirection", "addresses [C++]", "indirection operator", "& operator, address-of operator", "null pointers [C++]", "* operator, address-of operator", "operators [C++], indirection"]
 ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
 ---
-# Indirection and Address-of Operators
+# Indirection and address-of operators
 
 The unary indirection operator (**`*`**) accesses a value indirectly, through a pointer. The operand must be a pointer type. The result of the operation is the value addressed by the operand; that is, the value at the address to which its operand points. The type of the result is the type that the operand addresses.
 
 The result of the indirection operator is *type* if the operand is of type *pointer to type*. If the operand points to a function, the result is a function designator. If it points to an object, the result is an lvalue that designates the object.
 
-If the pointer value is not valid, the result of the indirection operator is undefined. These are some of the most common conditions that invalidate a pointer value:
+If the pointer value isn't valid, the result of the indirection operator is undefined. Here are some of the most common conditions that invalidate a pointer value:
 
 - The pointer is a null pointer.
 
-- The pointer specifies the address of an object after the end of its lifetime (such as an object that's gone out of scope or that's been deallocated) at the time of the reference.
+- The pointer specifies the address of an object after the end of its lifetime at the time of the reference. (For example, an object that's gone out of scope or that's been deallocated.)
 
-- The pointer specifies an address that is inappropriately aligned for the type of the object pointed to.
+- The pointer specifies an address that's inappropriately aligned for the type of the object pointed to.
 
 - The pointer specifies an address not used by the executing program.
 
-The unary address-of operator (**`&`**) gives the address of its operand. The operand must be either an lvalue that designates an object that is not declared **`register`** and is not a bit-field, or the result of a unary **`*`** operator or an array dereference (**`[]`**) operator, or a function designator. The result is of type *pointer to type* for an operand of type *type*.
+The unary address-of operator (**`&`**) gives the address of its operand. The operand must be one of these things:
 
-If the operand is the result of a unary **`*`** operator, neither operator is evaluated and the result is as if both were omitted. The result is not an lvalue, and the constraints on the operators still apply. If the operand is the result of a **`[]`** operator, neither the **`&`** operator nor the unary **`*`** implied by the **`[]`** operator is evaluated. The result has the same effect as removing the **`&`** operator and changing the **`[]`** operator to a **`+`** operator. Otherwise, the result is a pointer to the object or function designated by the operand.
+- An lvalue that designates an object that isn't declared **`register`** and isn't a bit-field.
+
+- The result of a unary dereference (**`*`**) or array dereference (**`[]`**) operator.
+
+- A function designator.
+
+The result is of type *pointer to operand_type* for an operand of type *operand_type*.
+
+If the operand is the result of a unary **`*`** operator, neither operator is evaluated and the result is as if both were omitted. The result isn't an lvalue, and the constraints on the operators still apply. If the operand is the result of a **`[]`** operator, the **`&`** operator and the unary **`*`** implied by the **`[]`** operator aren't evaluated. The result has the same effect as removing the **`&`** operator and changing the **`[]`** operator to a **`+`** operator. Otherwise, the result is a pointer to the object or function designated by the operand.
 
 ## Examples
 
@@ -32,7 +40,6 @@ The following examples use these common declarations:
 ```C
 int *pa, x;
 int a[20];
-double d;
 ```
 
 This statement uses the address-of operator (**`&`**) to take the address of the sixth element of the array `a`. The result is stored in the pointer variable `pa`:
@@ -67,5 +74,5 @@ Once the function `roundup` is declared, two pointers to `roundup` are declared 
 
 ## See also
 
-[Indirection Operator: `*`](../cpp/indirection-operator-star.md)<br/>
-[Address-of Operator: &](../cpp/address-of-operator-amp.md)
+[Indirection operator: `*`](../cpp/indirection-operator-star.md)\
+[Address-of operator: `&`](../cpp/address-of-operator-amp.md)
