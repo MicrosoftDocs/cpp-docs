@@ -369,9 +369,9 @@ Specifies that only the master thread should execute a section of the program.
 
 The `master` directive supports no clauses.
 
-The [single](#single) directive lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.
-
 For more information, see [2.6.1 master construct](../2-directives.md#261-master-construct).
+
+To specify that a section of code should be executed on a single thread, not necessarily the master thread, use the [single](#single) directive instead.
 
 ### Example
 
@@ -629,9 +629,9 @@ The `single` directive supports the following clauses:
 - [copyprivate](openmp-clauses.md#copyprivate)
 - [nowait](openmp-clauses.md#nowait)
 
-The [master](#master) directive lets you specify that a section of code should be executed only on the master thread.
-
 For more information, see [2.4.3 single construct](../2-directives.md#243-single-construct).
+
+To specify that a section of code should only be executed on the master thread, use the [master](#master) directive instead.
 
 ### Example
 
