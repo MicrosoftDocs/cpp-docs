@@ -34,11 +34,11 @@ Final: Total time = 0.063s
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. In the **Additional Options** box, add the `/TIME` linker option. Choose **OK** to save your changes.
+1. In the **Additional Options** box, add the *`/TIME`* linker option. Choose **OK** to save your changes.
 
 ### To set this linker option programmatically
 
-1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## See also
 
