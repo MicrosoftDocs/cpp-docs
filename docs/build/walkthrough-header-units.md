@@ -1,7 +1,7 @@
 ---
 description: "Learn more about C++ header units. Convert a header file to a header unit using Visual Studio 2022."
 title: "Walkthrough: Build and import header units in Visual C++ projects"
-ms.date: 05/09/2022
+ms.date: 05/11/2022
 ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -147,9 +147,9 @@ For an example of how this technique is used to import STL header files as heade
 
 The compiler implicitly enables the new C99 and C++11 conforming preprocessor when compiling header units. That is, [`/Zc:preprocessor`](/cpp/build/reference/zc-preprocessor) is added to the command line by the compiler if any form of `/exportHeader` is used.
 
-Enabling the new preprocessor affects processing variadic macros. See the remarks section of [Variadic macros](/cpp/preprocessor/variadic-macros#remarks) for details.
+Enabling the new preprocessor affects processing variadic macros. For more information, see the [Variadic macros](/cpp/preprocessor/variadic-macros#remarks) remarks section.
 
-To opt out of the implicit `/Zc:preprocessor`, add `/Zc:preprocessor-` to the command line switches to use the traditional (non-conforming) preprocessor.
+To opt out of the implicit `/Zc:preprocessor` and use the traditional (non-conforming) preprocessor, after `/exportheader` add `/Zc:preprocessor-` to the command line switches.
 
 ## See also
 
