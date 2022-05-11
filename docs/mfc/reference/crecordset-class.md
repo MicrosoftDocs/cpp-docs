@@ -1,30 +1,29 @@
 ---
 description: "Learn more about: CRecordset Class"
 title: "CRecordset Class"
-ms.date: "11/04/2016"
+ms.date: "05/11/2022"
 f1_keywords: ["CRecordset", "AFXDB/CRecordset", "AFXDB/CRecordset::CRecordset", "AFXDB/CRecordset::AddNew", "AFXDB/CRecordset::CanAppend", "AFXDB/CRecordset::CanBookmark", "AFXDB/CRecordset::Cancel", "AFXDB/CRecordset::CancelUpdate", "AFXDB/CRecordset::CanRestart", "AFXDB/CRecordset::CanScroll", "AFXDB/CRecordset::CanTransact", "AFXDB/CRecordset::CanUpdate", "AFXDB/CRecordset::CheckRowsetError", "AFXDB/CRecordset::Close", "AFXDB/CRecordset::Delete", "AFXDB/CRecordset::DoBulkFieldExchange", "AFXDB/CRecordset::DoFieldExchange", "AFXDB/CRecordset::Edit", "AFXDB/CRecordset::FlushResultSet", "AFXDB/CRecordset::GetBookmark", "AFXDB/CRecordset::GetDefaultConnect", "AFXDB/CRecordset::GetDefaultSQL", "AFXDB/CRecordset::GetFieldValue", "AFXDB/CRecordset::GetODBCFieldCount", "AFXDB/CRecordset::GetODBCFieldInfo", "AFXDB/CRecordset::GetRecordCount", "AFXDB/CRecordset::GetRowsetSize", "AFXDB/CRecordset::GetRowsFetched", "AFXDB/CRecordset::GetRowStatus", "AFXDB/CRecordset::GetSQL", "AFXDB/CRecordset::GetStatus", "AFXDB/CRecordset::GetTableName", "AFXDB/CRecordset::IsBOF", "AFXDB/CRecordset::IsDeleted", "AFXDB/CRecordset::IsEOF", "AFXDB/CRecordset::IsFieldDirty", "AFXDB/CRecordset::IsFieldNull", "AFXDB/CRecordset::IsFieldNullable", "AFXDB/CRecordset::IsOpen", "AFXDB/CRecordset::Move", "AFXDB/CRecordset::MoveFirst", "AFXDB/CRecordset::MoveLast", "AFXDB/CRecordset::MoveNext", "AFXDB/CRecordset::MovePrev", "AFXDB/CRecordset::OnSetOptions", "AFXDB/CRecordset::OnSetUpdateOptions", "AFXDB/CRecordset::Open", "AFXDB/CRecordset::RefreshRowset", "AFXDB/CRecordset::Requery", "AFXDB/CRecordset::SetAbsolutePosition", "AFXDB/CRecordset::SetBookmark", "AFXDB/CRecordset::SetFieldDirty", "AFXDB/CRecordset::SetFieldNull", "AFXDB/CRecordset::SetLockingMode", "AFXDB/CRecordset::SetParamNull", "AFXDB/CRecordset::SetRowsetCursorPosition", "AFXDB/CRecordset::SetRowsetSize", "AFXDB/CRecordset::Update", "AFXDB/CRecordset::m_hstmt", "AFXDB/CRecordset::m_nFields", "AFXDB/CRecordset::m_nParams", "AFXDB/CRecordset::m_pDatabase", "AFXDB/CRecordset::m_strFilter", "AFXDB/CRecordset::m_strSort"]
 helpviewer_keywords: ["CRecordset [MFC], CRecordset", "CRecordset [MFC], AddNew", "CRecordset [MFC], CanAppend", "CRecordset [MFC], CanBookmark", "CRecordset [MFC], Cancel", "CRecordset [MFC], CancelUpdate", "CRecordset [MFC], CanRestart", "CRecordset [MFC], CanScroll", "CRecordset [MFC], CanTransact", "CRecordset [MFC], CanUpdate", "CRecordset [MFC], CheckRowsetError", "CRecordset [MFC], Close", "CRecordset [MFC], Delete", "CRecordset [MFC], DoBulkFieldExchange", "CRecordset [MFC], DoFieldExchange", "CRecordset [MFC], Edit", "CRecordset [MFC], FlushResultSet", "CRecordset [MFC], GetBookmark", "CRecordset [MFC], GetDefaultConnect", "CRecordset [MFC], GetDefaultSQL", "CRecordset [MFC], GetFieldValue", "CRecordset [MFC], GetODBCFieldCount", "CRecordset [MFC], GetODBCFieldInfo", "CRecordset [MFC], GetRecordCount", "CRecordset [MFC], GetRowsetSize", "CRecordset [MFC], GetRowsFetched", "CRecordset [MFC], GetRowStatus", "CRecordset [MFC], GetSQL", "CRecordset [MFC], GetStatus", "CRecordset [MFC], GetTableName", "CRecordset [MFC], IsBOF", "CRecordset [MFC], IsDeleted", "CRecordset [MFC], IsEOF", "CRecordset [MFC], IsFieldDirty", "CRecordset [MFC], IsFieldNull", "CRecordset [MFC], IsFieldNullable", "CRecordset [MFC], IsOpen", "CRecordset [MFC], Move", "CRecordset [MFC], MoveFirst", "CRecordset [MFC], MoveLast", "CRecordset [MFC], MoveNext", "CRecordset [MFC], MovePrev", "CRecordset [MFC], OnSetOptions", "CRecordset [MFC], OnSetUpdateOptions", "CRecordset [MFC], Open", "CRecordset [MFC], RefreshRowset", "CRecordset [MFC], Requery", "CRecordset [MFC], SetAbsolutePosition", "CRecordset [MFC], SetBookmark", "CRecordset [MFC], SetFieldDirty", "CRecordset [MFC], SetFieldNull", "CRecordset [MFC], SetLockingMode", "CRecordset [MFC], SetParamNull", "CRecordset [MFC], SetRowsetCursorPosition", "CRecordset [MFC], SetRowsetSize", "CRecordset [MFC], Update", "CRecordset [MFC], m_hstmt", "CRecordset [MFC], m_nFields", "CRecordset [MFC], m_nParams", "CRecordset [MFC], m_pDatabase", "CRecordset [MFC], m_strFilter", "CRecordset [MFC], m_strSort"]
-ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
 ---
-# `CRecordset` Class
+# `CRecordset` class
 
 Represents a set of records selected from a data source.
 
 ## Syntax
 
-```
+```cpp
 class CRecordset : public CObject
 ```
 
 ## Members
 
-### Public Constructors
+### Public constructors
 
 |Name|Description|
 |----------|-----------------|
 |[`CRecordset::CRecordset`](#crecordset)|Constructs a `CRecordset` object. Your derived class must provide a constructor that calls this one.|
 
-### Public Methods
+### Public methods
 
 |Name|Description|
 |----------|-----------------|
@@ -84,7 +83,7 @@ class CRecordset : public CObject
 |[`CRecordset::SetRowsetSize`](#setrowsetsize)|Specifies the number of records you wish to retrieve during a fetch.|
 |[`CRecordset::Update`](#update)|Completes an `AddNew` or `Edit` operation by saving the new or edited data on the data source.|
 
-### Public Data Members
+### Public data members
 
 |Name|Description|
 |----------|-----------------|
@@ -120,7 +119,7 @@ In a derived `CRecordset` class, record field exchange (RFX) or bulk record fiel
 
 For more information about recordsets and record field exchange, see the articles [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md), [Recordset (ODBC)](../../data/odbc/recordset-odbc.md), [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md), and [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md). For a focus on dynasets and snapshots, see the articles [Dynaset](../../data/odbc/dynaset.md) and [Snapshot](../../data/odbc/snapshot.md).
 
-## Inheritance Hierarchy
+## Inheritance hierarchy
 
 [`CObject`](../../mfc/reference/cobject-class.md)
 
@@ -134,7 +133,7 @@ For more information about recordsets and record field exchange, see the article
 
 Prepares for adding a new record to the table.
 
-```
+```cpp
 virtual void AddNew();
 ```
 
@@ -167,11 +166,11 @@ See the article [Transaction: Performing a Transaction in a Recordset (ODBC)](..
 
 Determines whether the previously opened recordset allows you to add new records.
 
-```
+```cpp
 BOOL CanAppend() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset allows adding new records; otherwise 0. `CanAppend` will return 0 if you opened the recordset as read-only.
 
@@ -179,11 +178,11 @@ Nonzero if the recordset allows adding new records; otherwise 0. `CanAppend` wil
 
 Determines whether the recordset allows you to mark records using bookmarks.
 
-```
+```cpp
 BOOL CanBookmark() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset supports bookmarks; otherwise 0.
 
@@ -229,11 +228,11 @@ For more information about updating data, see the article [Recordset: Adding, Up
 
 Determines whether the recordset allows restarting its query (to refresh its records) by calling the `Requery` member function.
 
-```
+```cpp
 BOOL CanRestart() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if requery is allowed; otherwise 0.
 
@@ -241,11 +240,11 @@ Nonzero if requery is allowed; otherwise 0.
 
 Determines whether the recordset allows scrolling.
 
-```
+```cpp
 BOOL CanScroll() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset allows scrolling; otherwise 0.
 
@@ -257,11 +256,11 @@ For more information about scrolling, see the article [Recordset: Scrolling (ODB
 
 Determines whether the recordset allows transactions.
 
-```
+```cpp
 BOOL CanTransact() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset allows transactions; otherwise 0.
 
@@ -273,11 +272,11 @@ For more information, see the article [Transaction (ODBC)](../../data/odbc/trans
 
 Determines whether the recordset can be updated.
 
-```
+```cpp
 BOOL CanUpdate() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset can be updated; otherwise 0.
 
@@ -289,13 +288,13 @@ A recordset might be read-only if the underlying data source is read-only or if 
 
 Called to handle errors generated during record fetching.
 
-```
+```cpp
 virtual void CheckRowsetError(RETCODE nRetCode);
 ```
 
 ### Parameters
 
-*`nRetCode`*<br/>
+*`nRetCode`*\
 An ODBC API function return code. For details, see Remarks.
 
 ### Remarks
@@ -319,7 +318,7 @@ For more information about `SQLError`, see the Windows SDK. For more information
 
 Closes the recordset.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -337,13 +336,13 @@ You can call `Open` again after calling `Close`. This lets you reuse the records
 
 Constructs a `CRecordset` object.
 
-```
+```cpp
 CRecordset(CDatabase* pDatabase = NULL);
 ```
 
 ### Parameters
 
-*`pDatabase`*<br/>
+*`pDatabase`*\
 Contains a pointer to a `CDatabase` object or the value `NULL`. If not `NULL` and the `CDatabase` object's `Open` member function has not been called to connect it to the data source, the recordset attempts to open it for you during its own `Open` call. If you pass `NULL`, a `CDatabase` object is constructed and connected for you using the data source information you specified when you derived your recordset class with ClassWizard.
 
 ### Remarks
@@ -363,7 +362,7 @@ For more information, see the article [Recordset: Declaring a Class for a Table 
 
 Deletes the current record.
 
-```
+```cpp
 virtual void Delete();
 ```
 
@@ -389,13 +388,13 @@ This example shows a recordset created on the frame of a function. The example a
 
 Called to exchange bulk rows of data from the data source to the recordset. Implements bulk record field exchange (Bulk RFX).
 
-```
+```cpp
 virtual void DoBulkFieldExchange(CFieldExchange* pFX);
 ```
 
 ### Parameters
 
-*`pFX`*<br/>
+*`pFX`*\
 A pointer to a [`CFieldExchange`](../../mfc/reference/cfieldexchange-class.md) object. The framework will already have set up this object to specify a context for the field exchange operation.
 
 ### Remarks
@@ -417,13 +416,13 @@ For more information about bulk row fetching, see the article [Recordset: Fetchi
 
 Called to exchange data (in both directions) between the field data members of the recordset and the corresponding record on the data source. Implements record field exchange (RFX).
 
-```
+```cpp
 virtual void DoFieldExchange(CFieldExchange* pFX);
 ```
 
 ### Parameters
 
-*`pFX`*<br/>
+*`pFX`*\
 A pointer to a [`CFieldExchange`](../../mfc/reference/cfieldexchange-class.md) object. The framework will already have set up this object to specify a context for the field exchange operation.
 
 ### Remarks
@@ -451,7 +450,7 @@ For further examples and details about `DoFieldExchange`, see the article [Recor
 
 Allows changes to the current record.
 
-```
+```cpp
 virtual void Edit();
 ```
 
@@ -482,11 +481,11 @@ For more information, see the articles [Transaction (ODBC)](../../data/odbc/tran
 
 Retrieves the next result set of a predefined query (stored procedure), if there are multiple result sets.
 
-```
+```cpp
 BOOL FlushResultSet();
 ```
 
-### Return Value
+### Return value
 
 Nonzero if there are more result sets to be retrieved; otherwise 0.
 
@@ -518,7 +517,7 @@ void GetBookmark(CDBVariant& varBookmark);
 
 ### Parameters
 
-*`varBookmark`*<br/>
+*`varBookmark`*\
 A reference to a [`CDBVariant`](../../mfc/reference/cdbvariant-class.md) object representing the bookmark on the current record.
 
 ### Remarks
@@ -539,11 +538,11 @@ For more information about bookmarks and recordset navigation, see the articles 
 
 Called to get the default connection string.
 
-```
+```cpp
 virtual CString GetDefaultConnect();
 ```
 
-### Return Value
+### Return value
 
 A `CString` that contains the default connection string.
 
@@ -555,11 +554,11 @@ The framework calls this member function to get the default connection string fo
 
 Called to get the default SQL string to execute.
 
-```
+```cpp
 virtual CString GetDefaultSQL();
 ```
 
-### Return Value
+### Return value
 
 A `CString` that contains the default SQL statement.
 
@@ -587,6 +586,16 @@ void GetFieldValue(
     short nFieldType = DEFAULT_FIELD_TYPE);
 
 void GetFieldValue(
+    LPCTSTR lpszName,
+    CStringA& strValue
+);
+
+void GetFieldValue(
+    LPCTSTR lpszName,
+    CStringW& strValue
+);
+
+void GetFieldValue(
     short nIndex,
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
@@ -602,13 +611,13 @@ void GetFieldValue(
 
 ### Parameters
 
-*`lpszName`*<br/>
+*`lpszName`*\
 The name of a field.
 
 *`varValue`*
 A reference to a [`CDBVariant`](../../mfc/reference/cdbvariant-class.md) object that will store the field's value.
 
-*`nFieldType`*<br/>
+*`nFieldType`*\
 The ODBC C data type of the field. Using the default value, `DEFAULT_FIELD_TYPE`, forces `GetFieldValue` to determine the C data type from the SQL data type, based on the following table. Otherwise, you can specify the data type directly or choose a compatible data type; for example, you can store any data type into `SQL_C_CHAR`.
 
 |C data type|SQL data type|
@@ -625,10 +634,10 @@ The ODBC C data type of the field. Using the default value, `DEFAULT_FIELD_TYPE`
 
 For more information about ODBC data types, see the topics "SQL Data Types" and "C Data Types" in Appendix D of the Windows SDK.
 
-*`nIndex`*<br/>
+*`nIndex`*\
 The zero-based index of the field.
 
-*`strValue`*<br/>
+*`strValue`*\
 A reference to a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object that will store the field's value converted to text, regardless of the field's data type.
 
 ### Remarks
@@ -659,11 +668,11 @@ For more information about bulk row fetching, see the article [Recordset: Fetchi
 
 Retrieves the total number of fields in your recordset object.
 
-```
+```cpp
 short GetODBCFieldCount() const;
 ```
 
-### Return Value
+### Return value
 
 The number of fields in the recordset.
 
@@ -687,13 +696,13 @@ void GetODBCFieldInfo(
 
 ### Parameters
 
-*`lpszName`*<br/>
+*`lpszName`*\
 The name of a field.
 
-*`fieldinfo`*<br/>
+*`fieldinfo`*\
 A reference to a `CODBCFieldInfo` structure.
 
-*`nIndex`*<br/>
+*`nIndex`*\
 The zero-based index of the field.
 
 ### Remarks
@@ -708,11 +717,11 @@ For more information about creating recordsets, see the article [Recordset: Crea
 
 Determines the size of the recordset.
 
-```
+```cpp
 long GetRecordCount() const;
 ```
 
-### Return Value
+### Return value
 
 The number of records in the recordset; 0 if the recordset contains no records; or -1 if the record count cannot be determined.
 
@@ -725,11 +734,11 @@ The number of records in the recordset; 0 if the recordset contains no records; 
 
 Obtains the current setting for the number of rows you wish to retrieve during a given fetch.
 
-```
+```cpp
 DWORD GetRowsetSize() const;
 ```
 
-### Return Value
+### Return value
 
 The number of rows to retrieve during a given fetch.
 
@@ -745,11 +754,11 @@ For more information about bulk row fetching, see the article [Recordset: Fetchi
 
 Determines how many records were actually retrieved after a fetch.
 
-```
+```cpp
 DWORD GetRowsFetched() const;
 ```
 
-### Return Value
+### Return value
 
 The number of rows retrieved from the data source after a given fetch.
 
@@ -769,16 +778,16 @@ For more information about bulk row fetching, see the article [Recordset: Fetchi
 
 Obtains the status for a row in the current rowset.
 
-```
+```cpp
 WORD GetRowStatus(WORD wRow) const;
 ```
 
 ### Parameters
 
-*`wRow`*<br/>
+*`wRow`*\
 The one-based position of a row in the current rowset. This value can range from 1 to the size of the rowset.
 
-### Return Value
+### Return value
 
 A status value for the row. For details, see Remarks.
 
@@ -807,7 +816,7 @@ void GetStatus(CRecordsetStatus& rStatus) const;
 
 ### Parameters
 
-*`rStatus`*<br/>
+*`rStatus`*\
 A reference to a `CRecordsetStatus` object. See the Remarks section for more information.
 
 ### Remarks
@@ -834,11 +843,11 @@ The two members of `CRecordsetStatus` have the following meanings:
 
 Call this member function to get the SQL statement that was used to select the recordset's records when it was opened.
 
-```
+```cpp
 const CString& GetSQL() const;
 ```
 
-### Return Value
+### Return value
 
 A **`const`** reference to a `CString` that contains the SQL statement.
 
@@ -855,11 +864,11 @@ The string returned by `GetSQL` is typically different from any string you may h
 
 Gets the name of the SQL table on which the recordset's query is based.
 
-```
+```cpp
 const CString& GetTableName() const;
 ```
 
-### Return Value
+### Return value
 
 A **`const`** reference to a `CString` that contains the table name, if the recordset is based on a table; otherwise, an empty string.
 
@@ -874,11 +883,11 @@ A **`const`** reference to a `CString` that contains the table name, if the reco
 
 Returns nonzero if the recordset has been positioned before the first record. There is no current record.
 
-```
+```cpp
 BOOL IsBOF() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset contains no records or if you have scrolled backward before the first record; otherwise 0.
 
@@ -898,11 +907,11 @@ This example uses `IsBOF` and `IsEOF` to detect the limits of a recordset as the
 
 Determines whether the current record has been deleted.
 
-```
+```cpp
 BOOL IsDeleted() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset is positioned on a deleted record; otherwise 0.
 
@@ -921,11 +930,11 @@ For more information about `CRecordset::skipDeletedRecords` and driver packing, 
 
 Returns nonzero if the recordset has been positioned after the last record. There is no current record.
 
-```
+```cpp
 BOOL IsEOF() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset contains no records or if you have scrolled beyond the last record; otherwise 0.
 
@@ -943,16 +952,16 @@ See the example for [`IsBOF`](#isbof).
 
 Determines whether the specified field data member has been changed since [`Edit`](#edit) or [`AddNew`](#addnew) was called.
 
-```
+```cpp
 BOOL IsFieldDirty(void* pv);
 ```
 
 ### Parameters
 
-*`pv`*<br/>
+*`pv`*\
 A pointer to the field data member whose status you want to check, or `NULL` to determine if any of the fields are dirty.
 
-### Return Value
+### Return value
 
 Nonzero if the specified field data member has changed since calling `AddNew` or `Edit`; otherwise 0.
 
@@ -973,16 +982,16 @@ For more information on the dirty flag, see the article [Recordset: How Recordse
 
 Returns nonzero if the specified field in the current record is Null (has no value).
 
-```
+```cpp
 BOOL IsFieldNull(void* pv);
 ```
 
 ### Parameters
 
-*`pv`*<br/>
+*`pv`*\
 A pointer to the field data member whose status you want to check, or `NULL` to determine if any of the fields are Null.
 
-### Return Value
+### Return value
 
 Nonzero if the specified field data member is flagged as Null; otherwise 0.
 
@@ -999,13 +1008,13 @@ Call this member function to determine whether the specified field data member o
 
 Returns nonzero if the specified field in the current record can be set to Null (having no value).
 
-```
+```cpp
 BOOL IsFieldNullable(void* pv);
 ```
 
 ### Parameters
 
-*`pv`*<br/>
+*`pv`*\
 A pointer to the field data member whose status you want to check, or `NULL` to determine if any of the fields can be set to a Null value.
 
 ### Remarks
@@ -1035,11 +1044,11 @@ This means you cannot set all `param` fields to `NULL`, as you can with `outputC
 
 Determines if the recordset is already open.
 
-```
+```cpp
 BOOL IsOpen() const;
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset object's [`Open`](#open) or [`Requery`](#requery) member function has previously been called and the recordset has not been closed; otherwise 0.
 
@@ -1148,7 +1157,7 @@ For more information about SQL clauses, see the article [SQL](../../data/odbc/sq
 
 Moves the current record pointer within the recordset, either forward or backward.
 
-```
+```cpp
 virtual void Move(
     long nRows,
     WORD wFetchType = SQL_FETCH_RELATIVE);
@@ -1156,10 +1165,10 @@ virtual void Move(
 
 ### Parameters
 
-*`nRows`*<br/>
+*`nRows`*\
 The number of rows to move forward or backward. Positive values move forward, toward the end of the recordset. Negative values move backward, toward the beginning.
 
-*`wFetchType`*<br/>
+*`wFetchType`*\
 Determines the rowset that `Move` will fetch. For details, see Remarks.
 
 ### Remarks
@@ -1332,13 +1341,13 @@ For more information about recordset navigation, see the articles [Recordset: Sc
 
 Called to set options (used on selection) for the specified ODBC statement.
 
-```
+```cpp
 virtual void OnSetOptions(HSTMT hstmt);
 ```
 
 ### Parameters
 
-*`hstmt`*<br/>
+*`hstmt`*\
 The `HSTMT` of the ODBC statement whose options are to be set.
 
 ### Remarks
@@ -1353,13 +1362,13 @@ For more information about cursors, see the article [ODBC](../../data/odbc/odbc-
 
 Called to set options (used on update) for the specified ODBC statement.
 
-```
+```cpp
 virtual void OnSetUpdateOptions(HSTMT hstmt);
 ```
 
 ### Parameters
 
-*`hstmt`*<br/>
+*`hstmt`*\
 The `HSTMT` of the ODBC statement whose options are to be set.
 
 ### Remarks
@@ -1374,7 +1383,7 @@ For more information about cursors, see the article [ODBC](../../data/odbc/odbc-
 
 Opens the recordset by retrieving the table or performing the query that the recordset represents.
 
-```
+```cpp
 virtual BOOL Open(
     UINT nOpenType = AFX_DB_USE_DEFAULT_TYPE,
     LPCTSTR lpszSQL = NULL,
@@ -1383,7 +1392,7 @@ virtual BOOL Open(
 
 ### Parameters
 
-*`nOpenType`*<br/>
+*`nOpenType`*\
 Accept the default value, `AFX_DB_USE_DEFAULT_TYPE`, or use one of the following values from the `enum OpenType`:
 
 - `CRecordset::dynaset` A recordset with bi-directional scrolling. The membership and ordering of the records are determined when the recordset is opened, but changes made by other users to the data values are visible following a fetch operation. Dynasets are also known as keyset-driven recordsets.
@@ -1401,7 +1410,7 @@ For more information about these recordset types, see the article [Recordset (OD
 > [!CAUTION]
 > If the requested type is not supported, the framework throws an exception.
 
-*`lpszSQL`*<br/>
+*`lpszSQL`*\
 A string pointer containing one of the following:
 
 - A `NULL` pointer.
@@ -1417,7 +1426,7 @@ For more information about this string, see the table and the discussion of Clas
 > [!NOTE]
 > The order of the columns in your result set must match the order of the RFX or Bulk RFX function calls in your [`DoFieldExchange`](#dofieldexchange) or [`DoBulkFieldExchange`](#dobulkfieldexchange) function override.
 
-*`dwOptions`*<br/>
+*`dwOptions`*\
 A bitmask which can specify a combination of the values listed below. Some of these are mutually exclusive. The default value is **`none`**.
 
 - `CRecordset::none` No options set. This parameter value is mutually exclusive with all other values. By default, the recordset can be updated with [`Edit`](#edit) or [`Delete`](#delete) and allows appending new records with [`AddNew`](#addnew). Updatability depends on the data source as well as on the *`nOpenType`* option you specify. Optimization for bulk additions is not available. Bulk row fetching will not be implemented. Deleted records will not be skipped during recordset navigation. Bookmarks are not available. Automatic dirty field checking is implemented.
@@ -1442,7 +1451,7 @@ A bitmask which can specify a combination of the values listed below. Some of th
 
 - `CRecordset::userAllocMultiRowBuffers` The user will allocate storage buffers for the data. Use this option in conjunction with `CRecordset::useMultiRowFetch` if you want to allocate your own storage; otherwise, the framework will automatically allocate the necessary storage. For more information, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). Note that specifying `CRecordset::userAllocMultiRowBuffers` without specifying `CRecordset::useMultiRowFetch` will result in a failed assertion.
 
-### Return Value
+### Return value
 
 Nonzero if the `CRecordset` object was successfully opened; otherwise 0 if [`CDatabase::Open`](../../mfc/reference/cdatabase-class.md#open) (if called) returns 0.
 
@@ -1495,10 +1504,10 @@ void RefreshRowset(
 
 ### Parameters
 
-*`wRow`*<br/>
+*`wRow`*\
 The one-based position of a row in the current rowset. This value can range from zero to the size of the rowset.
 
-*`wLockType`*<br/>
+*`wLockType`*\
 A value indicating how to lock the row after it has been refreshed. For details, see Remarks.
 
 ### Remarks
@@ -1521,11 +1530,11 @@ For more information about `SQLSetPos`, see the Windows SDK. For more informatio
 
 Rebuilds (refreshes) a recordset.
 
-```
+```cpp
 virtual BOOL Requery();
 ```
 
-### Return Value
+### Return value
 
 Nonzero if the recordset was successfully rebuilt; otherwise 0.
 
@@ -1558,7 +1567,7 @@ void SetAbsolutePosition(long nRows);
 
 ### Parameters
 
-*`nRows`*<br/>
+*`nRows`*\
 The one-based ordinal position for the current record in the recordset.
 
 ### Remarks
@@ -1587,7 +1596,7 @@ void SetBookmark(const CDBVariant& varBookmark);
 
 ### Parameters
 
-*`varBookmark`*<br/>
+*`varBookmark`*\
 A reference to a [`CDBVariant`](../../mfc/reference/cdbvariant-class.md) object containing the bookmark value for a specific record.
 
 ### Remarks
@@ -1614,10 +1623,10 @@ void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 
 ### Parameters
 
-*`pv`*<br/>
+*`pv`*\
 Contains the address of a field data member in the recordset or `NUL`L. If `NULL`, all field data members in the recordset are flagged. (C++ `NULL` is not the same as Null in database terminology, which means "having no value.")
 
-*`bDirty`*<br/>
+*`bDirty`*\
 `TRUE` if the field data member is to be flagged as "dirty" (changed). Otherwise `FALSE` if the field data member is to be flagged as "clean" (unchanged).
 
 ### Remarks
@@ -1654,10 +1663,10 @@ void SetFieldNull(void* pv, BOOL bNull = TRUE);
 
 ### Parameters
 
-*`pv`*<br/>
+*`pv`*\
 Contains the address of a field data member in the recordset or `NULL`. If `NULL`, all field data members in the recordset are flagged. (C++ `NULL` is not the same as Null in database terminology, which means "having no value.")
 
-*`bNull`*<br/>
+*`bNull`*\
 Nonzero if the field data member is to be flagged as having no value (Null). Otherwise 0 if the field data member is to be flagged as non-Null.
 
 ### Remarks
@@ -1699,7 +1708,7 @@ void SetLockingMode(UINT nMode);
 
 ### Parameters
 
-*`nMode`*<br/>
+*`nMode`*\
 Contains one of the following values from the `enum LockMode`:
 
 - `optimistic` Optimistic locking locks the record being updated only during the call to `Update`.
@@ -1722,10 +1731,10 @@ void SetParamNull(
 
 ### Parameters
 
-*`nIndex`*<br/>
+*`nIndex`*\
 The zero-based index of the parameter.
 
-*`bNull`*<br/>
+*`bNull`*\
 If `TRUE` (the default value), the parameter is flagged as Null. Otherwise, the parameter is flagged as non-Null.
 
 ### Remarks
@@ -1744,10 +1753,10 @@ void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 
 ### Parameters
 
-*`wRow`*<br/>
+*`wRow`*\
 The one-based position of a row in the current rowset. This value can range from 1 to the size of the rowset.
 
-*`wLockType`*<br/>
+*`wLockType`*\
 Value indicating how to lock the row after it has been refreshed. For details, see Remarks.
 
 ### Remarks
@@ -1770,13 +1779,13 @@ For more information about `SQLSetPos`, see the Windows SDK. For more informatio
 
 Specifies the number of records you wish to retrieve during a fetch.
 
-```
+```cpp
 virtual void SetRowsetSize(DWORD dwNewRowsetSize);
 ```
 
 ### Parameters
 
-*`dwNewRowsetSize`*<br/>
+*`dwNewRowsetSize`*\
 The number of rows to retrieve during a given fetch.
 
 ### Remarks
@@ -1799,11 +1808,11 @@ For more information about bulk row fetching, see the article [Recordset: Fetchi
 
 Completes an `AddNew` or `Edit` operation by saving the new or edited data on the data source.
 
-```
+```cpp
 virtual BOOL Update();
 ```
 
-### Return Value
+### Return value
 
 Nonzero if one record was successfully updated; otherwise 0 if no columns have changed. If no records were updated, or if more than one record was updated, an exception is thrown. An exception is also thrown for any other failure on the data source.
 
@@ -1829,7 +1838,7 @@ See the article [Transaction: Performing a Transaction in a Recordset (ODBC)](..
 
 ## See also
 
-[`CObject` Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[`CDatabase` Class](../../mfc/reference/cdatabase-class.md)<br/>
-[`CRecordView` Class](../../mfc/reference/crecordview-class.md)
+[`CObject` class](../../mfc/reference/cobject-class.md)\
+[Hierarchy chart](../../mfc/hierarchy-chart.md)\
+[`CDatabase` class](../../mfc/reference/cdatabase-class.md)\
+[`CRecordView` class](../../mfc/reference/crecordview-class.md)
