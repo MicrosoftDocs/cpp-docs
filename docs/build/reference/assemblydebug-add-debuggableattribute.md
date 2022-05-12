@@ -8,7 +8,7 @@ ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982
 ---
 # `/ASSEMBLYDEBUG` (Add DebuggableAttribute)
 
-Specify whether to emit the `DebuggableAttribute` attribute with debug information tracking and to disables JIT optimizations.
+Specify whether to emit the `DebuggableAttribute` attribute with debug information tracking and to disable JIT optimizations.
 
 ## Syntax
 
@@ -16,7 +16,7 @@ Specify whether to emit the `DebuggableAttribute` attribute with debug informati
 
 ## Remarks
 
-The **`/ASSEMBLYDEBUG`** linker option emits the `DebuggableAttribute` attribute with debug information tracking and disables JIT optimizations. This is the same as specifying the following attribute in source:
+The **`/ASSEMBLYDEBUG`** linker option emits the `DebuggableAttribute` attribute with debug information tracking and disables JIT optimizations. This option is the same as specifying the following attribute in source:
 
 ```cpp
 [assembly:Debuggable(true, true)];   // same as /ASSEMBLYDEBUG

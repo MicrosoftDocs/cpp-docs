@@ -25,11 +25,11 @@ The **`/ASSEMBLYLINKRESOURCE`** linker option creates a link to a .NET Framework
 
 Linked resources are public in the assembly when created with the linker.
 
-**`/ASSEMBLYLINKRESOURCE`** requires that the compilation include the [`/clr`](clr-common-language-runtime-compilation.md) compiler option. The [`/LN`](ln-create-msil-module.md) or [`/NOASSEMBLY`](noassembly-create-a-msil-module.md) options aren't allowed with **`/ASSEMBLYLINKRESOURCE`**.
+**`/ASSEMBLYLINKRESOURCE`** requires the [`/clr`](clr-common-language-runtime-compilation.md) compiler option. The [`/LN`](ln-create-msil-module.md) or [`/NOASSEMBLY`](noassembly-create-a-msil-module.md) options aren't allowed with **`/ASSEMBLYLINKRESOURCE`**.
 
 If *`filename`* is a .NET Framework resource file that's created, for example, by [`Resgen.exe`](/dotnet/framework/tools/resgen-exe-resource-file-generator) or in the development environment, it can be accessed with members in the `System.Resources` namespace. For more information, see [`System.Resources.ResourceManager`](/dotnet/api/system.resources.resourcemanager). For all other resources, use the `GetManifestResource*` methods in the `System.Reflection.Assembly` class to access the resource at run time.
 
-*`filename`* can have any file format. For example, you may want to make a native DLL part of the assembly, so it can be installed into the Global Assembly Cache and accessed from managed code in the assembly.
+*`filename`* can have any file format. For example, you may want to make a native DLL part of the assembly. Then it can be installed into the Global Assembly Cache and accessed from managed code in the assembly.
 
 Other linker options that affect assembly generation are:
 

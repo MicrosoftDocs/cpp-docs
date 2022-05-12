@@ -16,7 +16,7 @@ Set a flag to disallow DLL binding.
 
 ## Remarks
 
-The **`/ALLOWBIND:NO`** linker option sets a bit in a DLL's header that indicates to Bind.exe that the image isn't allowed to be bound. You may not want a DLL to be bound if it's been digitally signed (binding invalidates the signature).
+The **`/ALLOWBIND:NO`** linker option sets a bit in a DLL's header that indicates to Bind.exe that the image can't be bound. You may not want a DLL to be bound if it's been digitally signed (binding invalidates the signature).
 
 You can edit an existing DLL for **`/ALLOWBIND`** functionality with the [`/ALLOWBIND`](allowbind.md) option of the EDITBIN utility.
 
