@@ -1134,6 +1134,12 @@ int main()
 }
 ```
 
+```Output
+v1 and v2 are equal: 1
+v1 and v3 are equal: 1
+v1 and v3 are equal with dual-range overload: 0
+```
+
 ## <a name="equal_range"></a> `equal_range`
 
 Given an ordered range, finds the subrange in which all elements are equivalent to a given value.
@@ -1221,13 +1227,13 @@ template<class T> void equal_range_demo( const vector<T>& original_vector, T val
 
     sort( v.begin(), v.end() );
     cout << "Vector sorted by the default binary predicate <:" << endl << '\t';
-    for ( vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
+    for (typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
     {
         cout << *i << " ";
     }
     cout << endl << endl;
 
-    pair<vector<T>::iterator, vector<T>::iterator> result
+    pair<typename vector<T>::iterator, typename vector<T>::iterator> result
         = equal_range( v.begin(), v.end(), value );
 
     cout << "Result of equal_range with value = " << value << ":" << endl << '\t';
@@ -1298,6 +1304,39 @@ int main()
     equal_range_demo<string>( v2, "fred" );
     equal_range_demo<string>( v2, "fred", shorter_than, "shorter_than" );
 }
+```
+
+```Output
+Vector sorted by the default binary predicate <:
+	-3 -2 -1 -1 0 0 1 2 3 4 
+
+Result of equal_range with value = 3:
+	-3 -2 -1 -1 0 0 1 2 [ 3 ] 4 
+
+Vector sorted by the binary predicate greater:
+	4 3 2 1 0 0 -1 -1 -2 -3 
+
+Result of equal_range with value = 3:
+	4 [ 3 ] 2 1 0 0 -1 -1 -2 -3 
+
+Vector sorted by the binary predicate abs_lesser:
+	0 0 -1 1 -1 2 -2 3 -3 4 
+
+Result of equal_range with value = 3:
+	0 0 -1 1 -1 2 -2 [ 3 -3 ] 4 
+
+Vector sorted by the default binary predicate <:
+	blah cute fluffy fun kittens meowmeowmeow 
+
+Result of equal_range with value = fred:
+	blah cute fluffy [ ] fun kittens meowmeowmeow 
+
+Vector sorted by the binary predicate shorter_than:
+	fun cute blah fluffy kittens meowmeowmeow 
+
+Result of equal_range with value = fred:
+	fun [ cute blah ] fluffy kittens meowmeowmeow 
+
 ```
 
 ## <a name="fill"></a> `fill`
@@ -1436,7 +1475,7 @@ int main()
     for ( auto i = 0 ; i < 9 ; ++i )
         v.push_back( 0 );
 
-    cout << " vector v = ( " ;
+    cout << "vector v = ( " ;
     for ( const auto &w : v )
         cout << w << " ";
     cout << ")" << endl;
@@ -1465,6 +1504,13 @@ int main()
         cout << w << " ";
     cout << ")" << endl;
 }
+```
+
+```Output
+vector v = ( 0 0 0 0 0 0 0 0 0 )
+modified v = ( 1 1 1 0 0 0 0 0 0 )
+modified v = ( 1 1 1 2 2 2 0 0 0 )
+modified v = ( 1 1 1 2 2 2 3 3 3 )
 ```
 
 ## <a name="find"></a> `find`
@@ -1963,6 +2009,24 @@ int main()
 }
 ```
 
+```Output
+array x[] contents: (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) 
+Test std::find() with array...
+value 10 found.
+value 42 not found.
+Test std::find_if() with array...
+first odd integer found: 1
+first even integer found: 2
+
+vector v contents: (10) (20) (30) (40) (50) (60) (70) (80) (90) (100) 
+Test std::find() with vector...
+value 20 found.
+value 12 not found.
+Test std::find_if() with vector...
+odd integer not found.
+first even integer found: 10
+```
+
 ## <a name="find_if_not"></a> `find_if_not`
 
 Returns the first element in the indicated range that does not satisfy a condition.
@@ -2338,6 +2402,11 @@ int main()
     generate_n(dq.begin(), elemcount, [&](){ return dist(engine); });
     print("deque dq is: ", dq);
 }
+```
+
+```Output
+vector v is: 5 8 2 -9 6 
+deque dq is: 7 6 9 3 4 
 ```
 
 ## <a name="includes"></a> `includes`
@@ -2998,12 +3067,15 @@ int main()
 
     cout << "animals_2 is a permutation of animals_1: " << is_perm << endl; // true
 
-    cout << "Press a letter" << endl;
-    char c;
-    cin >> c;
-
     return 0;
 }
+```
+
+```Output
+(1) Compare using built-in == operator: true
+(2) Compare after modifying vec_2: false
+(3) vec_3 is a permutation of vec_4: true
+animals_2 is a permutation of animals_1: true
 ```
 
 ## <a name="is_sorted"></a> `is_sorted`
@@ -3574,6 +3646,19 @@ int main()
 }
 ```
 
+```Output
+Starting vector v1 = ( -1 0 1 2 3 4 -3 -2 -1 0 ).
+Original vector v1 with range sorted by the
+ binary predicate less than is v1 = ( -3 -2 -1 -1 0 0 1 2 3 4 ).
+Original vector v2 with range sorted by the
+ binary predicate greater is v2 = ( 4 3 2 1 0 0 -1 -1 -2 -3 ).
+Original vector v3 with range sorted by the
+ binary predicate mod_lesser is v3 = ( 0 0 -1 -1 1 -2 2 -3 3 4 ).
+The lower_bound in v1 for the element with a value of 3 is: 3.
+The lower_bound in v2 for the element with a value of 3 is: 3.
+The lower_bound in v3 for the element with a value of 3 is: -3.
+```
+
 ## <a name="make_heap"></a> `make_heap`
 
 Converts elements from a specified range into a heap in which the first element is the largest and for which a sorting criterion may be specified with a binary predicate.
@@ -3654,6 +3739,12 @@ int main() {
         cout << *Iter1 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+Vector v1 is ( 4 3 7 8 0 5 2 1 6 9 ).
+The heaped version of vector v1 is ( 9 8 7 6 3 5 2 1 4 0 ).
+The greater-than heaped version of v1 is ( 0 1 2 4 3 5 7 6 9 8 ).
 ```
 
 ## <a name="max"></a> `max`
@@ -4023,6 +4114,16 @@ int main()
 }
 ```
 
+```Output
+s1 = ( CInt( -3 ), CInt( 1 ), CInt( 2 ) ).
+The largest element in s1 is: CInt( 2 )
+
+Vector v1 is ( 0 1 2 3 -2 -4 -6 -8 ).
+The largest element in v1 is: 3
+The largest element in v1 under the mod_lesser
+ binary predicate is: -8
+```
+
 ## <a name="merge"></a> `merge`
 
 Combines all of the elements from two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
@@ -4216,6 +4317,27 @@ int main() {
         cout << *Iter3 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+Original vector v1a with range sorted by the
+ binary predicate less than is v1a = ( 0 1 2 3 4 5 ).
+Original vector v1b with range sorted by the
+ binary predicate less than is v1b = ( -5 -4 -3 -2 -1 0 ).
+Original vector v2a with range sorted by the
+ binary predicate greater is   v2a = ( 5 4 3 2 1 0 ).
+Original vector v2b with range sorted by the
+ binary predicate greater is   v2b = ( 0 -1 -2 -3 -4 -5 ).
+Original vector v3a with range sorted by the
+ binary predicate mod_lesser is   v3a = ( 0 1 2 3 4 5 ).
+Original vector v3b with range sorted by the
+ binary predicate mod_lesser is   v3b = ( 0 -1 -2 -3 -4 -5 ).
+Merged inplace with default order,
+ vector v1mod = ( -5 -4 -3 -2 -1 0 0 1 2 3 4 5 ).
+Merged inplace with binary predicate greater specified,
+ vector v2mod = ( 5 4 3 2 1 0 0 -1 -2 -3 -4 -5 ).
+Merged inplace with binary predicate mod_lesser specified,
+ vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 ).
 ```
 
 ## <a name="min"></a> `min`
@@ -5284,6 +5406,18 @@ int main() {
 }
 ```
 
+```Output
+ v1 = ( 0 3 6 9 12 15 1 4 7 10 13 16 2 5 8 11 14 17 )
+Position 3 partitioned vector:
+ v1 = ( 1 0 2 3 8 5 9 4 7 6 10 16 13 15 12 11 14 17 )
+Position 4 partitioned (greater) vector:
+ v1 = ( 16 17 14 15 13 12 11 9 7 8 10 6 1 4 5 3 2 0 )
+Shuffled vector:
+ v1 = ( 13 10 6 3 5 2 0 17 11 8 15 9 7 14 16 1 12 4 )
+Position 5 partitioned (UDgreater) vector:
+ v1 = ( 14 17 15 16 13 12 10 11 9 8 0 2 7 5 3 1 6 4 )
+```
+
 ## <a name="none_of"></a> `none_of`
 
 Returns **`true`** when a condition is never present among elements in the given range.
@@ -5600,6 +5734,17 @@ int main() {
 }
 ```
 
+```Output
+Vector v1 = ( 4 3 7 8 0 5 2 1 6 9 )
+List list1 = ( 60 50 20 30 40 10 )
+List list1 Vector v1 = ( 10 20 30 8 0 5 2 1 6 9 )
+The first v1 element one position beyond
+ the last L 1 element inserted was 8.
+List list1 into Vector v2 = ( 10 20 30 40 50 60 9 6 7 8 )
+The first v2 element one position beyond
+ the last L 1 element inserted was 9.
+```
+
 ## <a name="partition"></a> `partition`
 
 Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it.
@@ -5684,6 +5829,11 @@ int main()
         cout << *Iter1 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+Vector v1 is ( 4 10 7 8 0 5 2 1 6 9 3 ).
+The partitioned set of elements in v1 is: ( 9 10 7 8 6 5 2 1 0 4 3 ).
 ```
 
 ## <a name="partition_copy"></a> `partition_copy`
@@ -5871,6 +6021,17 @@ int main()
         cout << *Iter1 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+The heaped version of vector v1 is ( 9 7 8 5 1 6 3 2 4 ).
+The reheaped v1 with 10 added is ( 10 9 8 5 7 6 3 2 4 1 ).
+The heap v1 with 10 removed is ( 9 7 8 5 1 6 3 2 4 10 ).
+
+The 'greater than' reheaped v1 puts the smallest element first:
+ ( 0 1 3 4 2 6 8 5 9 10 7 ).
+The 'greater than' heaped v1 with the smallest element
+ removed from the heap is: ( 1 2 3 4 7 6 8 5 9 10 0 ).
 ```
 
 ## <a name="prev_permutation"></a> `prev_permutation`
@@ -6161,6 +6322,20 @@ int main() {
 }
 ```
 
+```Output
+Vector v1 is ( 5 4 8 9 1 6 3 2 7 ).
+The heaped version of vector v1 is ( 9 7 8 5 1 6 3 2 4 ).
+The heap v1 with 10 pushed back is ( 9 7 8 5 1 6 3 2 4 10 ).
+The reheaped v1 with 10 added is ( 10 9 8 5 7 6 3 2 4 1 ).
+
+The greater-than heaped version of v1 is
+ ( 1 2 3 4 7 6 8 5 10 9 ).
+The greater-than heap v1 with 11 pushed back is
+ ( 1 2 3 4 7 6 8 5 10 9 0 ).
+The greater than reheaped v1 with 11 added is
+ ( 0 1 3 4 2 6 8 5 10 9 7 ).
+```
+
 ## <a name="random_shuffle"></a> `random_shuffle`
 
 The `std::random_shuffle()` function is deprecated, replaced by [`std::shuffle`](algorithm-functions.md#shuffle). For a code example and more information, see [`<random>`](random.md) and the Stack Overflow post [Why are `std::random_shuffle` methods being deprecated in C++14?](https://go.microsoft.com/fwlink/p/?linkid=397954).
@@ -6261,6 +6436,12 @@ int main()
 }
 ```
 
+```Output
+Vector v1 is ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+Vector v1 with value 7 removed is ( 4 0 5 1 6 9 3 8 2 9 3 7 8 2 ).
+Vector v1 resized with value 7 removed is ( 4 0 5 1 6 9 3 8 2 ).
+```
+
 ## <a name="remove_copy"></a> `remove_copy`
 
 Copies elements from a source range to a destination range, except that elements of a specified value are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.
@@ -6357,6 +6538,13 @@ int main()
         cout << *Iter2 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+The original vector v1 is:     ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+Vector v1 is left unchanged as ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+Vector v2 is a copy of v1 with the value 7 removed:
+ ( 4 0 5 1 6 9 3 8 2 0 ).
 ```
 
 ## <a name="remove_copy_if"></a> `remove_copy_if`
@@ -6466,6 +6654,14 @@ int main()
 }
 ```
 
+```Output
+The original vector v1 is:      ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+After the appliation of remove_copy_if to v1,
+ vector v1 is left unchanged as ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+Vector v2 is a copy of v1 with values greater than 6 removed:
+ ( 4 0 5 1 6 3 2 ).
+```
+
 ## <a name="remove_if"></a> `remove_if`
 
 Eliminates elements that satisfy a predicate from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.
@@ -6567,6 +6763,14 @@ int main()
 }
 ```
 
+```Output
+Vector v1 is ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+Vector v1 with elements satisfying greater6 removed is
+ ( 4 0 5 1 6 3 2 1 6 9 3 7 8 2 ).
+Vector v1 resized elements satisfying greater6 removed is
+ ( 4 0 5 1 6 3 2 ).
+```
+
 ## <a name="replace"></a> `replace`
 
 Examines each element in a range and replaces it if it matches a specified value.
@@ -6652,6 +6856,13 @@ int main()
         cout << *Iter1 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+The original vector v1 is:
+ ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+The vector v1 with a value 700 replacing that of 7 is:
+ ( 4 700 700 700 0 5 700 1 6 9 3 700 8 2 ).
 ```
 
 ## <a name="replace_copy"></a> `replace_copy`
@@ -6767,6 +6978,15 @@ int main()
         cout << *L_Iter1 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+The original vector v1 is:
+ ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+The vector v1 with a value 70 replacing that of 7 is:
+ ( 4 70 70 70 0 5 70 1 6 9 3 70 8 2 ).
+The list copy L1 of v1 with the value 0 replacing that of 7 is:
+ ( 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ).
 ```
 
 ## <a name="replace_copy_if"></a> `replace_copy_if`
@@ -6892,6 +7112,17 @@ int main()
 }
 ```
 
+```Output
+The original vector v1 is:
+ ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+The vector v1 with values of 70 replacing those greater
+ than 6 in the 1st half & copied into the 2nd half is:
+ ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+A list copy of vector v1 with the value -1
+ replacing those greater than 6 is:
+ ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+```
+
 ## <a name="replace_if"></a> `replace_if`
 
 Examines each element in a range and replaces it if it satisfies a specified predicate.
@@ -6986,6 +7217,14 @@ int main()
         cout << *Iter1 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+The original vector v1 is:
+ ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+The vector v1 with a value 70 replacing those
+ elements satisfying the greater6 predicate is:
+ ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
 ```
 
 ## <a name="reverse"></a> `reverse`
@@ -7143,6 +7382,15 @@ int main()
         cout << *Iter1 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+The original vector v1 is:
+ ( 0 1 2 3 4 5 6 7 8 9 ).
+The copy v2 of the reversed vector v1 is:
+ ( 9 8 7 6 5 4 3 2 1 0 ).
+The original vector v1 remains unmodified as:
+ ( 0 1 2 3 4 5 6 7 8 9 ).
 ```
 
 ## <a name="rotate"></a> `rotate`
@@ -7365,6 +7613,27 @@ int main()
         iii++;
     }
 }
+```
+
+```Output
+Vector v1 is ( -3 -2 -1 0 1 2 3 4 5 ).
+After rotating, the vector v1 remains unchanged as:
+ v1 = ( -3 -2 -1 0 1 2 3 4 5 ).
+After rotating, the copy of vector v1 in v2 is:
+ v2 = ( 0 1 2 3 4 5 -3 -2 -1 ).
+The original deque d1 is ( 0 1 2 3 4 5 ).
+After the rotation of a single deque element to the back,
+ d2 is   ( 1 2 3 4 5 0 ).
+After the rotation of a single deque element to the back,
+ d2 is   ( 2 3 4 5 0 1 ).
+After the rotation of a single deque element to the back,
+ d2 is   ( 3 4 5 0 1 2 ).
+After the rotation of a single deque element to the back,
+ d2 is   ( 4 5 0 1 2 3 ).
+After the rotation of a single deque element to the back,
+ d2 is   ( 5 0 1 2 3 4 ).
+After the rotation of a single deque element to the back,
+ d2 is   ( 0 1 2 3 4 5 ).
 ```
 
 ## <a name="sample"></a> `sample`
@@ -7912,6 +8181,27 @@ int main()
 }
 ```
 
+```Output
+Original vector v1a with range sorted by the
+ binary predicate less than is v1a = ( -1 0 1 2 3 4 ).
+Original vector v1b with range sorted by the
+ binary predicate less than is v1b = ( -3 -2 -1 0 ).
+Original vector v2a with range sorted by the
+ binary predicate greater is   v2a = ( 4 3 2 1 0 -1 ).
+Original vector v2b with range sorted by the
+ binary predicate greater is   v2b = ( 0 -1 -2 -3 ).
+Original vector v3a with range sorted by the
+ binary predicate mod_lesser is   v3a = ( 0 -1 1 2 3 4 ).
+Original vector v3b with range sorted by the
+ binary predicate mod_lesser is   v3b = ( 0 -1 -2 -3 ).
+Set_difference of source ranges with default order,
+ vector v1mod = ( 1 2 3 4 ).
+Set_difference of source ranges with binarypredicate greater specified,
+ vector v2mod = ( 4 3 2 1 ).
+Set_difference of source ranges with binary predicate mod_lesser specified,
+ vector v3mod = ( 1 4 ).
+```
+
 ## <a name="set_intersection"></a> `set_intersection`
 
 Unites all of the elements that belong to both sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
@@ -8108,6 +8398,27 @@ int main()
         cout << *Iter3 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+Original vector v1a with range sorted by the
+ binary predicate less than is v1a = ( -1 0 1 2 3 ).
+Original vector v1b with range sorted by the
+ binary predicate less than is v1b = ( -3 -2 -1 0 1 ).
+Original vector v2a with range sorted by the
+ binary predicate greater is   v2a = ( 3 2 1 0 -1 ).
+Original vector v2b with range sorted by the
+ binary predicate greater is   v2b = ( 1 0 -1 -2 -3 ).
+Original vector v3a with range sorted by the
+ binary predicate mod_lesser is   v3a = ( 0 -1 1 2 3 ).
+Original vector v3b with range sorted by the
+ binary predicate mod_lesser is   v3b = ( 0 -1 1 -2 -3 ).
+Intersection of source ranges with default order,
+ vector v1mod = ( -1 0 1 ).
+Intersection of source ranges with binary predicate greater specified,
+ vector v2mod = ( 1 0 -1 ).
+Intersection of source ranges with binary predicate mod_lesser specified,
+ vector v3mod = ( 0 -1 1 2 3 ).
 ```
 
 ## <a name="set_symmetric_difference"></a> `set_symmetric_difference`
@@ -8312,6 +8623,27 @@ int main()
 }
 ```
 
+```Output
+Original vector v1a with range sorted by the
+ binary predicate less than is v1a = ( -1 0 1 2 3 4 ).
+Original vector v1b with range sorted by the
+ binary predicate less than is v1b = ( -3 -2 -1 0 ).
+Original vector v2a with range sorted by the
+ binary predicate greater is   v2a = ( 4 3 2 1 0 -1 ).
+Original vector v2b with range sorted by the
+ binary predicate greater is   v2b = ( 0 -1 -2 -3 ).
+Original vector v3a with range sorted by the
+ binary predicate mod_lesser is   v3a = ( 0 -1 1 2 3 4 ).
+Original vector v3b with range sorted by the
+ binary predicate mod_lesser is   v3b = ( 0 -1 -2 -3 ).
+Set_symmetric_difference of source ranges with default order,
+ vector v1mod = ( -3 -2 1 2 3 4 ).
+Set_symmetric_difference of source ranges with binarypredicate greater specified,
+ vector v2mod = ( 4 3 2 1 -2 -3 ).
+Set_symmetric_difference of source ranges with binary predicate mod_lesser specified,
+ vector v3mod = ( 1 4 ).
+```
+
 ## <a name="set_union"></a> `set_union`
 
 Unites all of the elements that belong to at least one of two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
@@ -8512,6 +8844,27 @@ int main()
         cout << *Iter3 << " ";
     cout << ")." << endl;
 }
+```
+
+```Output
+Original vector v1a with range sorted by the
+ binary predicate less than is v1a = ( -1 0 1 2 3 ).
+Original vector v1b with range sorted by the
+ binary predicate less than is v1b = ( -3 -2 -1 0 1 ).
+Original vector v2a with range sorted by the
+ binary predicate greater is   v2a = ( 3 2 1 0 -1 ).
+Original vector v2b with range sorted by the
+ binary predicate greater is   v2b = ( 1 0 -1 -2 -3 ).
+Original vector v3a with range sorted by the
+ binary predicate mod_lesser is   v3a = ( 0 -1 1 2 3 ).
+Original vector v3b with range sorted by the
+ binary predicate mod_lesser is   v3b = ( 0 -1 1 -2 -3 ).
+Union of source ranges with default order,
+ vector v1mod = ( -3 -2 -1 0 1 2 3 ).
+Union of source ranges with binary predicate greater specified,
+ vector v2mod = ( 3 2 1 0 -1 -2 -3 ).
+Union of source ranges with binary predicate mod_lesser specified,
+ vector v3mod = ( 0 -1 1 2 3 ).
 ```
 
 ## <a name="shuffle"></a> `shuffle`
@@ -8761,6 +9114,16 @@ int main()
 }
 ```
 
+```Output
+Initially: ( 1 2 3 4 5 6 7 8 9 )
+After random_shuffle: ( 5 4 8 9 1 6 3 2 7 )
+     After make_heap: ( 9 7 8 5 1 6 3 2 4 )
+     After sort_heap: ( 1 2 3 4 5 6 7 8 9 )
+             After random_shuffle: ( 1 3 6 8 9 5 4 2 7 )
+After make_heap with greater<int>: ( 1 2 4 3 9 5 6 8 7 )
+After sort_heap with greater<int>: ( 9 8 7 6 5 4 3 2 1 )
+```
+
 ## <a name="stable_partition"></a> `stable_partition`
 
 Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it, preserving the relative order of equivalent elements.
@@ -8849,6 +9212,14 @@ int main()
     cout << "The first element in v1 to fail to satisfy the"
          << "\n predicate greater5 is: " << *result << "." << endl;
 }
+```
+
+```Output
+Vector v1 is ( 4 10 5 5 5 5 5 1 6 9 3 7 8 2 0 5 ).
+The partitioned set of elements in v1 is:
+ ( 10 6 9 7 8 4 5 5 5 5 5 1 3 2 0 5 ).
+The first element in v1 to fail to satisfy the
+ predicate greater5 is: 4.
 ```
 
 ## <a name="stable_sort"></a> `stable_sort`
@@ -9599,6 +9970,17 @@ int main() {
 }
 ```
 
+```Output
+Vector v1 is
+ ( 5 -5 5 -5 4 4 4 7 10 10 10 10 10 10 ).
+Copying the first half of the vector to the second half
+ while removing adjacent duplicates gives
+ ( 5 -5 5 -5 4 4 4 7 5 -5 5 -5 4 7 ).
+Copying the first half of the vector to the second half
+  removing adjacent duplicates under mod_equals gives
+ ( 5 -5 5 -5 4 4 4 7 5 -5 5 -5 4 7 5 4 7 5 4 7 ).
+```
+
 ## <a name="upper_bound"></a> `upper_bound`
 
 Finds the position of the first element in an ordered range that has a value that is greater than a specified value, where the ordering criterion may be specified by a binary predicate.
@@ -9736,4 +10118,17 @@ int main()
     cout << "The upper_bound in v3 for the element with a value of 3 is: "
         << *Result << "." << endl;
 }
+```
+
+```Output
+Starting vector v1 = ( -1 0 1 2 3 4 -3 -2 -1 0 ).
+Original vector v1 with range sorted by the
+ binary predicate less than is v1 = ( -3 -2 -1 -1 0 0 1 2 3 4 ).
+Original vector v2 with range sorted by the
+ binary predicate greater is v2 = ( 4 3 2 1 0 0 -1 -1 -2 -3 ).
+Original vector v3 with range sorted by the
+ binary predicate mod_lesser is v3 = ( 0 0 -1 -1 1 -2 2 -3 3 4 ).
+The upper_bound in v1 for the element with a value of 3 is: 4.
+The upper_bound in v2 for the element with a value of 3 is: 2.
+The upper_bound in v3 for the element with a value of 3 is: 4.
 ```
