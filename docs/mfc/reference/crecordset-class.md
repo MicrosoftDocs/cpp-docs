@@ -99,7 +99,7 @@ class CRecordset : public CObject
 Known as "recordsets," `CRecordset` objects are typically used in two forms: dynasets and snapshots. A dynaset stays synchronized with data updates made by other users. A snapshot is a static view of the data. Each form represents a set of records fixed at the time the recordset is opened. When you scroll to a record in a dynaset, it reflects changes made to the record, either by other users or by other recordsets in your application.
 
 > [!NOTE]
-> If you are working with the Data Access Objects (DAO) classes rather than the Open Database Connectivity (ODBC) classes, use class [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md) instead. For more information, see [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
+> If you're working with the Data Access Objects (DAO) classes rather than the Open Database Connectivity (ODBC) classes, use class [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md) instead. For more information, see [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).
 
 To work with either kind of recordset, you typically derive an application-specific recordset class from `CRecordset`. Recordsets select records from a data source, and you can then:
 
@@ -404,7 +404,7 @@ When bulk row fetching is implemented, the framework calls this member function 
 If bulk row fetching isn't implemented, the framework calls [`DoFieldExchange`](#dofieldexchange). To implement bulk row fetching, you must specify the `CRecordset::useMultiRowFetch` option of the *dwOptions* parameter in the [`Open`](#open) member function.
 
 > [!NOTE]
-> `DoBulkFieldExchange` is available only if you are using a class derived from `CRecordset`. If you've created a recordset object directly from `CRecordset`, you must call the [`GetFieldValue`](#getfieldvalue) member function to retrieve data.
+> `DoBulkFieldExchange` is available only if you're using a class derived from `CRecordset`. If you've created a recordset object directly from `CRecordset`, you must call the [`GetFieldValue`](#getfieldvalue) member function to retrieve data.
 
 Bulk record field exchange (Bulk RFX) is similar to record field exchange (RFX). Data is automatically transferred from the data source to the recordset object. However, you can't call `AddNew`, `Edit`, `Delete`, or `Update` to transfer changes back to the data source. Class `CRecordset` currently doesn't provide a mechanism for updating bulk rows of data; however, you can write your own functions by using the ODBC API function `SQLSetPos`.
 
@@ -432,7 +432,7 @@ When bulk row fetching isn't implemented, the framework calls this member functi
 If bulk row fetching is implemented, the framework calls [`DoBulkFieldExchange`](#dobulkfieldexchange). To implement bulk row fetching, you must specify the `CRecordset::useMultiRowFetch` option of the *`dwOptions`* parameter in the [`Open`](#open) member function.
 
 > [!NOTE]
-> `DoFieldExchange` is available only if you are using a class derived from `CRecordset`. If you've created a recordset object directly from `CRecordset`, you must call the [GetFieldValue](#getfieldvalue) member function to retrieve data.
+> `DoFieldExchange` is available only if you're using a class derived from `CRecordset`. If you've created a recordset object directly from `CRecordset`, you must call the [GetFieldValue](#getfieldvalue) member function to retrieve data.
 
 The exchange of field data, called record field exchange (RFX), works in both directions: from the recordset object's field data members to the fields of the record on the data source, and from the record on the data source to the recordset object.
 
@@ -491,7 +491,7 @@ Nonzero if there are more result sets to be retrieved; otherwise 0.
 
 ### Remarks
 
-You should call `FlushResultSet` only when you are finished with the cursor on the current result set. When you retrieve the next result set by calling `FlushResultSet`, your cursor isn't valid on that result set; you should call the [`MoveNext`](#movenext) member function after calling `FlushResultSet`.
+You should call `FlushResultSet` only when you're finished with the cursor on the current result set. When you retrieve the next result set by calling `FlushResultSet`, your cursor isn't valid on that result set; you should call the [`MoveNext`](#movenext) member function after calling `FlushResultSet`.
 
 If a predefined query uses an output parameter or input/output parameters, you must call `FlushResultSet` until it returns `FALSE`(the value 0), in order to obtain these parameter values.
 
@@ -548,7 +548,7 @@ A `CString` that contains the default connection string.
 
 ### Remarks
 
-The framework calls this member function to get the default connection string for the data source on which the recordset is based. `ClassWizard` implements this function for you by identifying the same data source you use in `ClassWizard` to get information about tables and columns. You will probably find it convenient to rely on this default connection while developing your application. But the default connection may not be appropriate for users of your application. If that is the case, you should reimplement this function, discarding `ClassWizard`'s version. For more information about connection strings, see [Data Source (ODBC)](../../data/odbc/data-source-odbc.md).
+The framework calls this member function to get the default connection string for the data source on which the recordset is based. `ClassWizard` implements this function for you by identifying the same data source you use in `ClassWizard` to get information about tables and columns. You'll probably find it convenient to rely on this default connection while developing your application. But the default connection may not be appropriate for users of your application. If that is the case, you should reimplement this function, discarding `ClassWizard`'s version. For more information about connection strings, see [Data Source (ODBC)](../../data/odbc/data-source-odbc.md).
 
 ## <a name="getdefaultsql"></a> `CRecordset::GetDefaultSQL`
 
@@ -744,7 +744,7 @@ The number of rows to retrieve during a given fetch.
 
 ### Remarks
 
-If you are using bulk row fetching, the default rowset size when the recordset is opened is 25; otherwise, it's 1.
+If you're using bulk row fetching, the default rowset size when the recordset is opened is 25; otherwise, it's 1.
 
 To implement bulk row fetching, you must specify the `CRecordset::useMultiRowFetch` option in the *`dwOptions`* parameter of the [`Open`](#open) member function. To change the setting for the rowset size, call [`SetRowsetSize`](#setrowsetsize).
 
@@ -764,7 +764,7 @@ The number of rows retrieved from the data source after a given fetch.
 
 ### Remarks
 
-This is useful when you've implemented bulk row fetching. The rowset size normally indicates how many rows will be retrieved from a fetch. However, the total number of rows in the recordset also affects how many rows will be retrieved in a rowset. For example, if your recordset has ten records with a rowset size setting of four, then looping through the recordset by calling `MoveNext` will result in the final rowset having only two records.
+This is useful when you've implemented bulk row fetching. The rowset size normally indicates how many rows will be retrieved from a fetch. However, the total number of rows in the recordset also affects how many rows will be retrieved in a rowset. For example, if your recordset has 10 records with a rowset size setting of four, then looping through the recordset by calling `MoveNext` will result in the final rowset having only two records.
 
 To implement bulk row fetching, you must specify the `CRecordset::useMultiRowFetch` option in the *dwOptions* parameter of the [`Open`](#open) member function. To specify the rowset size, call [SetRowsetSize](#setrowsetsize).
 
@@ -817,7 +817,7 @@ void GetStatus(CRecordsetStatus& rStatus) const;
 ### Parameters
 
 *`rStatus`*\
-A reference to a `CRecordsetStatus` object. See the Remarks section for more information.
+A reference to a `CRecordsetStatus` object. For more information, see [Remarks](#remarks).
 
 ### Remarks
 
@@ -1476,7 +1476,7 @@ When you call `Open`, a query, usually a SQL **`SELECT`** statement, selects rec
 > [!CAUTION]
 > Don't insert extra whitespace in your SQL string. For example, if you insert whitespace between the curly brace and the **`CALL`** keyword, MFC will misinterpret the SQL string as a table name and incorporate it into a **`SELECT`** statement, which will result in an exception being thrown. Similarly, if your predefined query uses an output parameter, don't insert whitespace between the curly brace and the '' symbol. Finally, you must not insert whitespace before the curly brace in a **`CALL`** statement or before the **`SELECT`** keyword in a **`SELECT`** statment.
 
-The usual procedure is to pass `NULL` to `Open`; in this case, `Open` calls [GetDefaultSQL](#getdefaultsql). If you are using a derived `CRecordset` class, `GetDefaultSQL` gives the table name(s) you specified in `ClassWizard`. You can instead specify other information in the `lpszSQL` parameter.
+The usual procedure is to pass `NULL` to `Open`; in this case, `Open` calls [GetDefaultSQL](#getdefaultsql). If you're using a derived `CRecordset` class, `GetDefaultSQL` gives the table name(s) you specified in `ClassWizard`. You can instead specify other information in the `lpszSQL` parameter.
 
 Whatever you pass, `Open` constructs a final SQL string for the query (the string may have SQL **`WHERE`** and **`ORDER BY`** clauses appended to the `lpszSQL` string you passed) and then executes the query. You can examine the constructed string by calling [`GetSQL`](#getsql) after calling `Open`. For more details about how the recordset constructs a SQL statement and selects records, see [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
 
@@ -1636,7 +1636,7 @@ Marking fields as unchanged ensures the field isn't updated and results in less 
 > [!NOTE]
 > This member function isn't applicable on recordsets that are using bulk row fetching. If you've implemented bulk row fetching, then `SetFieldDirty` will result in a failed assertion. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-The framework marks changed field data members to ensure they'll be written to the record on the data source by the record field exchange (RFX) mechanism. Changing the value of a field generally sets the field dirty automatically, so you will seldom need to call `SetFieldDirty` yourself, but you might sometimes want to ensure that columns will be explicitly updated or inserted regardless of what value is in the field data member.
+The framework marks changed field data members to ensure they'll be written to the record on the data source by the record field exchange (RFX) mechanism. Changing the value of a field generally sets the field dirty automatically, so you'll seldom need to call `SetFieldDirty` yourself, but you might sometimes want to ensure that columns will be explicitly updated or inserted regardless of what value is in the field data member.
 
 > [!CAUTION]
 > Call this member function only after you've called [`Edit`](#edit) or [`AddNew`](#addnew).
@@ -1798,7 +1798,7 @@ This virtual member function specifies how many rows you wish to retrieve during
 Call `SetRowsetSize` before calling `Open` to initially set the rowset size for the recordset. The default rowset size when implementing bulk row fetching is 25.
 
 > [!NOTE]
-> Use caution when calling `SetRowsetSize`. If you are manually allocating storage for the data (as specified by the `CRecordset::userAllocMultiRowBuffers` option of the dwOptions parameter in `Open`), you should check whether you need to reallocate these storage buffers after you call `SetRowsetSize`, but before you perform any cursor navigation operation.
+> Use caution when calling `SetRowsetSize`. If you're manually allocating storage for the data (as specified by the `CRecordset::userAllocMultiRowBuffers` option of the dwOptions parameter in `Open`), you should check whether you need to reallocate these storage buffers after you call `SetRowsetSize`, but before you perform any cursor navigation operation.
 
 To obtain the current setting for the rowset size, call [`GetRowsetSize`](#getrowsetsize).
 
