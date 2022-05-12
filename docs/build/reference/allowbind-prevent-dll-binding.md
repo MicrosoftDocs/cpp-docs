@@ -1,22 +1,24 @@
 ---
-description: "Learn more about: /ALLOWBIND (Prevent DLL Binding)"
-title: "/ALLOWBIND (Prevent DLL Binding)"
-ms.date: "11/04/2016"
+description: "Learn more about: /ALLOWBIND (Prevent DLL binding)"
+title: "/ALLOWBIND (Prevent DLL binding)"
+ms.date: 05/11/2022
 f1_keywords: ["VC.Project.VCLinkerTool.PreventDLLBinding", "/allowbind"]
 helpviewer_keywords: ["/ALLOWBIND linker option", "binding DLLs", "preventing DLL binding", "ALLOWBIND linker option", "-ALLOWBIND linker option", "DLLs [C++], preventing binding"]
 ms.assetid: 30e37e24-12e4-407e-988a-39d357403598
 ---
-# /ALLOWBIND (Prevent DLL Binding)
+# `/ALLOWBIND` (Prevent DLL binding)
 
-```
-/ALLOWBIND[:NO]
-```
+Set a flag to disallow DLL binding.
+
+## Syntax
+
+> **`/ALLOWBIND`**\[**`:NO`**]
 
 ## Remarks
 
-/ALLOWBIND:NO sets a bit in a DLL's header that indicates to Bind.exe that the image is not allowed to be bound. You may not want a DLL to be bound if it has been digitally signed (binding invalidates the signature).
+The **`/ALLOWBIND:NO`** linker option sets a bit in a DLL's header that indicates to Bind.exe that the image isn't allowed to be bound. You may not want a DLL to be bound if it's been digitally signed (binding invalidates the signature).
 
-You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](allowbind.md) option of the EDITBIN utility.
+You can edit an existing DLL for **`/ALLOWBIND`** functionality with the [`/ALLOWBIND`](allowbind.md) option of the EDITBIN utility.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -24,7 +26,7 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. Enter `/ALLOWBIND:NO` into **Additional Options**.
+1. Enter *`/ALLOWBIND:NO`* into **Additional Options**. Choose **OK** or **Apply** to apply the change.
 
 ### To set this linker option programmatically
 
@@ -32,7 +34,7 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
-[MSVC Linker Options](linker-options.md)<br/>
-[BindImage function](/windows/win32/api/imagehlp/nf-imagehlp-bindimage)<br/>
-[BindImageEx function](/windows/win32/api/imagehlp/nf-imagehlp-bindimageex)
+[MSVC linker reference](linking.md)\
+[MSVC linker options](linker-options.md)\
+[`BindImage` function](/windows/win32/api/imagehlp/nf-imagehlp-bindimage)\
+[`BindImageEx` function](/windows/win32/api/imagehlp/nf-imagehlp-bindimageex)
