@@ -7,7 +7,7 @@ helpviewer_keywords: ["/time"]
 ---
 # `/TIME` (Linker time information)
 
-Output the time taken by linker steps and total link time in milliseconds.
+Output the time taken by linker steps and total link time.
 
 ## Syntax
 
@@ -15,18 +15,7 @@ Output the time taken by linker steps and total link time in milliseconds.
 
 ## Remarks
 
-The `/TIME` linker option displays the time taken by the linker steps and the total link time in milliseconds.
-
-Typical output looks something like this example:
-
-```cmd
-C:\temp>link /nologo /time test.obj
-  OptRef: Total time = 0.000s
-  OptIcf: Total time = 0.000s
-Pass 1: Interval #1, time = 0.063s
-Pass 2: Interval #2, time = 0.000s
-Final: Total time = 0.063s
-```
+The `/TIME` linker option displays the time taken by the linker steps and the total link time in seconds, with millisecond precision.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -34,7 +23,7 @@ Final: Total time = 0.063s
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. In the **Additional Options** box, add the *`/TIME`* linker option. Choose **OK** to save your changes.
+1. In the **Additional Options** box, add the *`/TIME`* linker option. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
