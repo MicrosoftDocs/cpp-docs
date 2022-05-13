@@ -44,8 +44,6 @@ This example demonstrates how to convert from a `char *` to the string types lis
 
 For information about running and debugging this example, see [Run the examples](#run-the-examples).
 
-For information about running and debugging this example, see [Run the examples](#run-the-examples).
-
 ### Code
 
 ```cpp
@@ -371,8 +369,6 @@ Hello, World! (System::String)
 ### Description
 
 This example demonstrates how to convert from a `CComBSTR` to other string types. Like `_bstr_t`, a `CComBSTR` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating null.
-
-For information about running and debugging this example, see [Run the examples](#run-the-examples).
 
 For information about running and debugging this example, see [Run the examples](#run-the-examples).
 
