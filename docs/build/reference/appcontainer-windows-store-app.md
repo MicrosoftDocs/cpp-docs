@@ -6,7 +6,7 @@ ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f
 ---
 # `/APPCONTAINER` (Microsoft Store app)
 
-Specifies whether the linker creates an executable image that must be run in an app container.
+Specifies whether the linker creates an executable image that must run in an AppContainer environment.
 
 ## Syntax
 
@@ -14,7 +14,7 @@ Specifies whether the linker creates an executable image that must be run in an 
 
 ## Remarks
 
-The **`/APPCONTAINER`** linker option modifies an executable to indicate whether the app must be run in the AppContainer process-isolation environment. Specify **`/APPCONTAINER`** for an app that must run in the AppContainer environment—for example, a Universal Windows Platform (UWP) or Windows Phone 8.x app. The option is set automatically in Visual Studio when you create a Universal Windows app from a template. For a desktop app, specify **`/APPCONTAINER:NO`** or just omit the option. By default, **`/APPCONTAINER`** is off.
+The **`/APPCONTAINER`** linker option modifies an executable to indicate whether the app must run in the AppContainer process-isolation environment. Specify **`/APPCONTAINER`** for an app that must run in the AppContainer environment—for example, a Universal Windows Platform (UWP) or Windows Phone 8.x app. The option is set automatically in Visual Studio when you create a Universal Windows app from a template. For a desktop app, specify **`/APPCONTAINER:NO`** or just omit the option. By default, **`/APPCONTAINER`** is off.
 
 The **`/APPCONTAINER`** option was introduced in Windows 8.
 
