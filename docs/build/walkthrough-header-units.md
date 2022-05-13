@@ -1,7 +1,7 @@
 ---
 description: "Learn more about C++ header units. Convert a header file to a header unit using Visual Studio 2022."
 title: "Walkthrough: Build and import header units in Visual C++ projects"
-ms.date: 02/04/2022
+ms.date: 05/12/2022
 ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -142,6 +142,12 @@ These switches and the `header-unit.json` provide some of the benefits of header
 These features are designed for legacy code. For new code, move to modules instead of header units or `#include` files. For a tutorial on using modules, see [Name modules tutorial (C++)](../cpp/tutorial-named-modules-cpp.md).
 
 For an example of how this technique is used to import STL header files as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2).
+
+## Preprocessor implications
+
+The standard C99/C++11 conforming preprocessor is required to create and use header units. The compiler enables the new C99/C++11 conforming preprocessor when compiling header units by implicitly adding [`/Zc:preprocessor`](/cpp/build/reference/zc-preprocessor) to the command line whenever any form of `/exportHeader` is used. Attempting to turn it off will result in a compilation error.
+
+Enabling the new preprocessor affects the processing of variadic macros. For more information, see the [Variadic macros](/cpp/preprocessor/variadic-macros#remarks) remarks section.
 
 ## See also
 
