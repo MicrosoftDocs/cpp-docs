@@ -55,7 +55,7 @@ The input string is a sequence of characters that can be interpreted as a numeri
 
 The *`str`* argument to **`atof`** and **`_wtof`** has the following form:
 
-[*whitespace*] [*sign*] [*digits*] [__.__*digits*] [ {**e** &#124; **E** }[*sign*]*digits*]
+[*`whitespace`*] [*`sign`*] [*dig`its*] [**`.`***`digits`*] [ {**`e`** \| **`E`** }[*`sign`*]*`digits`*]
 
 A *`whitespace`* consists of space or tab characters, which are ignored; *`sign`* is either plus (+) or minus (-); and *`digits`* are one or more decimal digits. If no digits appear before the decimal point, at least one must appear after the decimal point. The decimal digits may be followed by an exponent, which consists of an introductory letter (**`e`**, or **`E`**) and an optionally signed decimal integer.
 
