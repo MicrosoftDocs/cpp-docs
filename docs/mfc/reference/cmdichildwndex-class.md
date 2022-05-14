@@ -58,7 +58,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 |[CMDIChildWndEx::IsTabbedPane](#istabbedpane)|Returns TRUE if the MDI child window contains a docking pane. Otherwise returns FALSE.|
 |[CMDIChildWndEx::IsTaskbarTabsSupportEnabled](#istaskbartabssupportenabled)|Tells whether the MDI child can appear on Windows 7 taskbar tabs.|
 |[CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled](#istaskbarthumbnailcliprectenabled)|Tells whether automatic selection of a portion of a window's client area to display  as that window's thumbnail in the taskbar is enabled or disabled.|
-|[CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags](#m_dwdefaulttaskbartabpropertyflags)|A combination of flags, which is passed by the framework to the SetTaskbarTabProperties method, when a tab (MDI child) is being registered with Windows 7 taskbar tabs. The default combination is STPF_USEAPPTHUMBNAILWHENACTIVE &#124; STPF_USEAPPPEEKWHENACTIVE.|
+|[CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags](#m_dwdefaulttaskbartabpropertyflags)|A combination of flags, which is passed by the framework to the SetTaskbarTabProperties method, when a tab (MDI child) is being registered with Windows 7 taskbar tabs. The default combination is `STPF_USEAPPTHUMBNAILWHENACTIVE | STPF_USEAPPPEEKWHENACTIVE`.|
 |[CMDIChildWndEx::OnGetIconicLivePreviewBitmap](#ongeticoniclivepreviewbitmap)|Called by the framework when it needs to obtain a bitmap for live preview of MDI child.|
 |[CMDIChildWndEx::OnGetIconicThumbnail](#ongeticonicthumbnail)|Called by the framework when it needs to obtain a bitmap for iconic thumbnail of MDI child.|
 |[CMDIChildWndEx::OnMoveMiniFrame](#onmoveminiframe)|Called by the framework to move a mini-frame window.|
@@ -927,7 +927,7 @@ AFX_IMPORT_DATA static DWORD m_dwDefaultTaskbarTabPropertyFlags;
 
 ### Remarks
 
-The default combination is STPF_USEAPPTHUMBNAILWHENACTIVE &#124; STPF_USEAPPPEEKWHENACTIVE.
+The default combination is `STPF_USEAPPTHUMBNAILWHENACTIVE | STPF_USEAPPPEEKWHENACTIVE`.
 
 ## <a name="istaskbarthumbnailcliprectenabled"></a> CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled
 
