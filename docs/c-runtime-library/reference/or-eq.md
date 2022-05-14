@@ -11,7 +11,7 @@ ms.assetid: 1eb92464-ed58-40d8-a30e-f0a6aa2f4318
 ---
 # or_eq
 
-An alternative to the &#124;= operator.
+An alternative to the `|=` operator.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ An alternative to the &#124;= operator.
 
 ## Remarks
 
-The macro yields the operator &#124;=.
+The macro yields the operator `|=`.
 
 ## Example
 
