@@ -11,7 +11,7 @@ ms.assetid: 3c0a3711-9c74-41f2-b400-2f7797da30d1
 ---
 # bitor
 
-An alternative to the &#124; operator.
+An alternative to the `|` operator.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ An alternative to the &#124; operator.
 
 ## Remarks
 
-The macro yields the operator &#124;.
+The macro yields the operator `|`.
 
 ## Example
 
