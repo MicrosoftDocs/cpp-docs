@@ -88,7 +88,7 @@ A value that indicates the maximum size, in bytes, of a DAO field object that co
 |`dbGUID`|16|A Globally Unique Identifier/Universally Unique Identifier used with remote procedure calls.|
 
 *m_lAttributes*<br/>
-Specifies characteristics of a field object contained by a tabledef, recordset, querydef, or index object. The value returned can be a sum of these constants, created with the C++ bitwise-OR (**&#124;**) operator:
+Specifies characteristics of a field object contained by a tabledef, recordset, querydef, or index object. The value returned can be a sum of these constants, created with the C++ bitwise-OR (**`|`**) operator:
 
 - `dbFixedField` The field size is fixed (default for Numeric fields).
 
@@ -100,7 +100,7 @@ Specifies characteristics of a field object contained by a tabledef, recordset, 
 
 - `dbDescending` The field is sorted in descending (Z - A or 100 - 0) order (applies only to a field object in a Fields collection of an index object; in MFC, index objects are themselves contained in tabledef objects). If you omit this constant, the field is sorted in ascending (A - Z or 0 - 100) order (default).
 
-When checking the setting of this property, you can use the C++ bitwise-AND operator (**&**) to test for a specific attribute. When setting multiple attributes, you can combine them by combining the appropriate constants with the bitwise-OR (**&#124;**) operator. For details, see the topic "Attributes Property" in DAO Help.
+When checking the setting of this property, you can use the C++ bitwise-AND operator (**`&`**) to test for a specific attribute. When setting multiple attributes, you can combine them by combining the appropriate constants with the bitwise-OR (**`|`**) operator. For details, see the topic "Attributes Property" in DAO Help.
 
 *m_nOrdinalPosition*<br/>
 A value that specifies the numeric order in which you want a field represented by a DAO field object to be displayed relative to other fields. You can set this property with [CDaoTableDef::CreateField](../../mfc/reference/cdaotabledef-class.md#createfield). For details, see the topic "OrdinalPosition Property" in DAO Help.
