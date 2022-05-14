@@ -280,7 +280,7 @@ The name of the primary table in the relation. If the table does not exist, MFC 
 The name of the foreign table in the relation. If the table does not exist, MFC throws an exception of type `CDaoException`.
 
 *lAttributes*<br/>
-A long value that contains information about the relationship type. You can use this value to enforce referential integrity, among other things. You can use the bitwise-OR operator ( **&#124;**) to combine any of the following values (as long as the combination makes sense):
+A long value that contains information about the relationship type. You can use this value to enforce referential integrity, among other things. You can use the bitwise-OR operator (**`|`**) to combine any of the following values (as long as the combination makes sense):
 
 - `dbRelationUnique` Relationship is one-to-one.
 
@@ -393,7 +393,7 @@ void Execute(
 Pointer to a null-terminated string containing a valid SQL command to execute.
 
 *nOptions*<br/>
-An integer that specifies options relating to the integrity of the query. You can use the bitwise-OR operator ( **&#124;**) to combine any of the following constants (provided the combination makes sense — for example, you would not combine `dbInconsistent` with `dbConsistent`):
+An integer that specifies options relating to the integrity of the query. You can use the bitwise-OR operator (**`|`**) to combine any of the following constants (provided the combination makes sense — for example, you would not combine `dbInconsistent` with `dbConsistent`):
 
 - `dbDenyWrite` Deny write permission to other users.
 

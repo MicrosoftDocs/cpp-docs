@@ -37,7 +37,7 @@ Uniquely names the tabledef object. To retrieve the value of this property direc
 Indicates whether changes can be made to the table. The quick way to determine whether a table is updatable is to open a `CDaoTableDef` object for the table and call the object's [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) member function. `CanUpdate` always returns nonzero (TRUE) for a newly created tabledef object and 0 (FALSE) for an attached tabledef object. A new tabledef object can be appended only to a database for which the current user has write permission. If the table contains only nonupdatable fields, `CanUpdate` returns 0. When one or more fields are updatable, `CanUpdate` returns nonzero. You can edit only the updatable fields. For more information, see the topic "Updatable Property" in DAO Help.
 
 *m_lAttributes*<br/>
-Specifies characteristics of the table represented by the tabledef object. To retrieve the current attributes of a tabledef, call its [GetAttributes](../../mfc/reference/cdaotabledef-class.md#getattributes) member function. The value returned can be a combination of these long constants (using the bitwise-OR (**&#124;**) operator):
+Specifies characteristics of the table represented by the tabledef object. To retrieve the current attributes of a tabledef, call its [GetAttributes](../../mfc/reference/cdaotabledef-class.md#getattributes) member function. The value returned can be a combination of these long constants (using the bitwise-OR (**`|`**) operator):
 
 - `dbAttachExclusive` For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.
 

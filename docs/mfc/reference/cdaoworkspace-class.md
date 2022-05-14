@@ -759,7 +759,7 @@ static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
 ### Parameters
 
 *lpszDefaultUser*<br/>
-The default user name. A user name can be 1 - 20 characters long and include alphabetic characters, accented characters, numbers, spaces, and symbols except for: " (quotation marks), / (forward slash), \ (backslash), \[ \] (brackets), : (colon), &#124; (pipe), \< (less-than sign), > (greater-than sign), + (plus sign), = (equal sign), ; (semicolon), , ( comma),  (question mark), \* (asterisk), leading spaces, and control characters (ASCII 00 to ASCII 31). For related information, see the topic "UserName Property" in DAO Help.
+The default user name. A user name can be 1 - 20 characters long and include alphabetic characters, accented characters, numbers, spaces, and symbols except for: `"` (quotation marks), `/` (forward slash), `\` (backslash), `[ ]` (brackets), `:` (colon), `|` (pipe), `<` (less-than sign), `>` (greater-than sign), `+` (plus sign), `=` (equal sign), `;` (semicolon), `,` ( comma),  (question mark), `*` (asterisk), leading spaces, and control characters (ASCII 00 to ASCII 31). For related information, see the topic "UserName Property" in DAO Help.
 
 ### Remarks
 
