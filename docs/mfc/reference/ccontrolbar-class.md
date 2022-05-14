@@ -94,7 +94,7 @@ virtual CSize CalcDynamicLayout(
 The requested dimension of the control bar, either horizontal or vertical, depending on *dwMode*.
 
 *nMode*<br/>
-The following predefined flags are used to determine the height and width of the dynamic control bar. Use the bitwise-OR (&#124;) operator to combine the flags.
+The following predefined flags are used to determine the height and width of the dynamic control bar. Use the bitwise-OR (**`|`**) operator to combine the flags.
 
 |Layout mode flags|What it means|
 |-----------------------|-------------------|
