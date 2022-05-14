@@ -8,9 +8,9 @@ helpviewer_keywords: ["std::operator!= (valarray), std::operator& (valarray)", "
 ---
 # `<valarray>` operators
 
-## <a name="op_neq"></a> operator!=
+## <a name="op_neq"></a> `operator!=`
 
-Tests whether the corresponding elements of two equally sized valarrays are unequal or whether all the elements of a valarray are unequal a specified value.
+Tests whether the corresponding elements of two equally sized `valarray` objects are unequal, or whether all the elements of a `valarray` are unequal to a specified value.
 
 ```cpp
 template <class Type>
@@ -34,27 +34,27 @@ operator!=(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be tested for inequality.
+*`left`*\
+A `valarray` object whose elements are to be tested for inequality against another `valarray` object, or a value of element type to compare against each element in a `valarray`.
 
-*right*\
-The second of the two valarrays whose elements are to be tested for inequality.
+*`right`*\
+A `valarray` object whose elements are to be tested for inequality against another `valarray` object, or a value of element type to compare against each element in a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray of Boolean values, each of which is:
+A `valarray` of Boolean values, each of which is:
 
 - **`true`** if the corresponding elements are unequal.
 
-- **`false`** if the corresponding elements are not unequal.
+- **`false`** if the corresponding elements are equal.
 
 ### Remarks
 
-The first template operator returns an object of class [valarray\<bool>](../standard-library/valarray-bool-class.md), each of whose elements `I` is `left[I] != right[I]`.
+The first template operator returns an object of class [`valarray<bool>`](../standard-library/valarray-bool-class.md), each of whose elements `I` is `left[I] != right[I]`.
 
-The second template operator stores in element `I` `left[I] != right`.
+The second template operator stores `left[I] != right` in element `I`.
 
-The third template operator stores in element `I` `left != right[I]`.
+The third template operator stores `left != right[I]` in element `I`.
 
 ### Example
 
@@ -105,9 +105,9 @@ The element-by-element result of the not equal comparison test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="op_mod"></a> operator%
+## <a name="op_mod"></a> `operator%`
 
-Obtains the remainder of dividing the corresponding elements of two equally sized valarrays or of dividing a valarray by a specified value or of dividing a specified value by a valarray.
+Obtains the remainder of dividing the corresponding elements of two equally sized `valarray` objects, or of dividing a `valarray` by a specified value, or of dividing a specified value by a `valarray`.
 
 ```cpp
 template <class Type>
@@ -131,15 +131,15 @@ operator%(
 
 ### Parameters
 
-*left*\
-A value or valarray that serves as the dividend into which another value or valarray is to be divided.
+*`left`*\
+A value or `valarray` that serves as the dividend into which another value or `valarray` is to be divided.
 
-*right*\
-A value or valarray that serves as the divisor and that divides another value or valarray.
+*`right`*\
+A value or `valarray` that serves as the divisor and that divides another value or `valarray`.
 
-### Return Value
+### Return value
 
-A valarray whose elements are the element-wise remainders of *left* divided by *right*.
+A `valarray` whose elements are the element-wise remainders of *`left`* divided by *`right`*.
 
 ### Example
 
@@ -190,9 +190,9 @@ The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
 ```
 
-## <a name="op_amp"></a> operator&
+## <a name="op_amp"></a> `operator&`
 
-Obtains the bitwise **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.
+Obtains the bitwise AND between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value of the element type.
 
 ```cpp
 template <class Type>
@@ -216,21 +216,21 @@ operator&(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose respective elements are to be combined with the bitwise `AND` or a specified value of the element type to be combined bitwise with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose respective elements are to be combined with the bitwise AND, or a specified value of the element type to be combined by bitwise AND with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose respective elements are to be combined with the bitwise `AND` or a specified value of the element type to be combined bitwise with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose respective elements are to be combined with the bitwise AND, or a specified value of the element type to be combined by bitwise AND with each element of a `valarray`.
 
 ### Return Value
 
-A valarray whose elements are the element-wise combination of the bitwise AND operation of *left* and *right*.
+A `valarray` whose elements are the element-wise combination of the bitwise AND operation of *`left`* and *`right`*.
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **longdouble**, **`void`**, **`bool`** or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **`long double`**, **`void`**, **`bool`** or other, more complex data types.
 
-The bitwise `AND` has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. The [operator&&](#op_amp_amp) applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise `AND` [operator&](#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
+The bitwise AND has the same truth table as the logical AND but applies to the data type on the level of the individual bits. The [`operator&&`](#op_amp_amp) applies on an element level, counting all nonzero values as `true`, and the result is a `valarray` of Boolean values. The bitwise AND [`operator&`](#op_amp), by contrast, can result in a `valarray` of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
 ### Example
 
@@ -281,9 +281,9 @@ The element-by-element result of the bitwise operator & is the
 valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
 ```
 
-## <a name="op_amp_amp"></a> operator&&
+## <a name="op_amp_amp"></a> `operator&&`
 
-Obtains the logical **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray's element type.
+Obtains the logical AND between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value of the `valarray` element type.
 
 ```cpp
 template <class Type>
@@ -307,19 +307,19 @@ operator&&(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose respective elements are to be combined with the logical `AND` or a specified value of the element type to be combined with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose respective elements are to be combined with the logical AND, or a specified value of the element type to be combined with each element of a `valarray`.
 
 *right*\
-The second of the two valarrays whose respective elements are to be combined with the logical `AND` or a specified value of the element type to be combined with each element of a valarray.
+The second of the two `valarray` objects whose respective elements are to be combined with the logical AND, or a specified value of the element type to be combined with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray whose elements are of type bool and are the element-wise combination of the logical `AND` operation of *left* and *right*.
+A `valarray` whose elements are of type `bool` and are the element-wise combination of the logical AND operation of *`left`* and *`right`*.
 
 ### Remarks
 
-The logical `ANDoperator&&` applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise version of `AND`, [operator&,](#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
+The logical AND `operator&&` applies on an element level, counting all nonzero values as `true`, and the result is a `valarray` of Boolean values. The bitwise version of AND, [`operator&`](#op_amp), by contrast, can result in a `valarray` of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
 ### Example
 
@@ -372,7 +372,7 @@ valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
 
 ## <a name="op_gt"></a> `operator>`
 
-Tests whether the elements of one valarray are greater than the elements of an equally sized valarray or whether all the elements of a valarray are greater or less than a specified value.
+Tests whether the elements of one `valarray` are greater than the elements of an equally sized `valarray`, or whether all the elements of a `valarray` are greater or less than a specified value.
 
 ```cpp
 template <class Type>
@@ -396,23 +396,23 @@ operator>(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray of Boolean values, each of which is:
+A `valarray` of Boolean values, each of which is:
 
-- **`true`** if the *left* element or value is greater than the corresponding *right* element or value.
+- **`true`** if the *`left`* element or value is greater than the corresponding *`right`* element or value.
 
-- **`false`** if the *left* element or value is not greater than the corresponding *right* element or value.
+- **`false`** if the *`left`* element or value isn't greater than the corresponding *`right`* element or value.
 
 ### Remarks
 
-If the number of elements in two valarrays is not equal, the result is undefined.
+If the number of elements in the two `valarray` objects isn't equal, the result is undefined.
 
 ### Example
 
@@ -465,7 +465,7 @@ valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 
 ## <a name="op_gt_eq"></a> `operator>=`
 
-Tests whether the elements of one valarray are greater than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.
+Tests whether the elements of one `valarray` are greater than or equal to the elements of an equally sized `valarray`, or whether all the elements of a `valarray` are greater than or equal to or less than or equal to a specified value.
 
 ```cpp
 template <class Type>
@@ -489,23 +489,23 @@ operator>=(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray of Boolean values, each of which is:
+A `valarray` of Boolean values, each of which is:
 
-- **`true`** if the *left* element or value is greater than or equal to the corresponding *right* element or value.
+- **`true`** if the *`left`* element or value is greater than or equal to the corresponding *`right`* element or value.
 
-- **`false`** if the *left* element or value is less than the corresponding *right* element or value.
+- **`false`** if the *`left`* element or value is less than the corresponding *`right`* element or value.
 
 ### Remarks
 
-If the number of elements in two valarrays is not equal, the result is undefined.
+If the number of elements in two `valarray` objects isn't equal, the result is undefined.
 
 ### Example
 
@@ -558,7 +558,7 @@ valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 
 ## <a name="op_gt_gt"></a> `operator>>`
 
-Right-shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.
+Right-shifts the bits for each element of a `valarray` a specified number of positions, or by an element-wise amount specified by a second `valarray`.
 
 ```cpp
 template <class Type>
@@ -582,15 +582,15 @@ operator>>(
 
 ### Parameters
 
-*left*\
-The value to be shifted or the valarray whose elements are to be shifted.
+*`left`*\
+The value to be shifted, or the `valarray` whose elements are to be shifted.
 
-*right*\
-The value indicating the amount of right shift or valarray whose elements indicate the element-wise amount of right shift.
+*`right`*\
+The value indicating the amount of right shift, or a `valarray` whose elements indicate the element-wise amount of right shift.
 
-### Return Value
+### Return value
 
-A valarray whose elements have been shifted right by the specified amount.
+A `valarray` whose elements have been shifted right by the specified amount.
 
 ### Remarks
 
@@ -647,7 +647,7 @@ valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 
 ## <a name="op_lt"></a> `operator<`
 
-Tests whether the elements of one valarray are less than the elements of an equally sized valarray or whether all the elements of a valarray are greater or less than a specified value.
+Tests whether the elements of one `valarray` are less than the elements of an equally sized `valarray`, or whether all the elements of a `valarray` are greater or less than a specified value.
 
 ```cpp
 template <class Type>
@@ -671,23 +671,23 @@ operator<(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray of Boolean values, each of which is:
+A `valarray` of Boolean values, each of which is:
 
-- **`true`** if the *left* element or value is less than the corresponding *right* element or value.
+- **`true`** if the *`left`* element or value is less than the corresponding *`right`* element or value.
 
-- **`false`** if the *left* element or value is not less than the corresponding *right* element or value.
+- **`false`** if the *`left`* element or value isn't less than the corresponding *`right`* element or value.
 
 ### Remarks
 
-If the number of elements two valarrays is not equal, the result is undefined.
+If the number of elements in two `valarray` objects isn't equal, the result is undefined.
 
 ### Example
 
@@ -740,7 +740,7 @@ valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 
 ## <a name="op_lt_eq"></a> `operator<=`
 
-Tests whether the elements of one valarray are less than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.
+Tests whether the elements of one `valarray` are less than or equal to the elements of an equally sized `valarray`, or whether all the elements of a `valarray` are greater than or equal to or less than or equal to a specified value.
 
 ```cpp
 template <class Type>
@@ -764,23 +764,23 @@ operator<=(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose elements are to be compared or a specified value to be compared with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose elements are to be compared, or a specified value to be compared with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray of Boolean values, each of which is:
+A `valarray` of Boolean values, each of which is:
 
-- **`true`** if the *left* element or value is less than or equal to the corresponding *right* element or value.
+- **`true`** if the *`left`* element or value is less than or equal to the corresponding *`right`* element or value.
 
-- **`false`** if the *left* element or value is greater than the corresponding *right* element or value.
+- **`false`** if the *`left`* element or value is greater than the corresponding *`right`* element or value.
 
 ### Remarks
 
-If the number of elements two valarrays is not equal, the result is undefined.
+If the number of elements in two `valarray` objects isn't equal, the result is undefined.
 
 ### Example
 
@@ -833,7 +833,7 @@ valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 
 ## <a name="op_lt_lt"></a> `operator<<`
 
-Left shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.
+Left shifts the bits for each element of a `valarray` a specified number of positions, or by an element-wise amount specified by a second `valarray`.
 
 ```cpp
 template <class Type>
@@ -857,15 +857,15 @@ operator<<(
 
 ### Parameters
 
-*left*\
-The value to be shifted or the valarray whose elements are to be shifted.
+*`left`*\
+The value to be shifted, or the `valarray` whose elements are to be shifted.
 
-*right*\
-The value indicating the amount of left shift or valarray whose elements indicate the element-wise amount of left shift.
+*`right`*\
+The value indicating the amount of left shift, or a `valarray` whose elements indicate the element-wise amount of left shift.
 
-### Return Value
+### Return value
 
-A valarray whose elements have been shifted left by the specified amount.
+A `valarray` whose elements have been shifted left by the specified amount.
 
 ### Remarks
 
@@ -920,9 +920,9 @@ The element-by-element result of the left shift is the
 valarray: ( 1 -2 4 -8 16 -32 64 -128 ).
 ```
 
-## <a name="op_star"></a> operator*
+## <a name="op_star"></a> `operator*`
 
-Obtains the element-wise product between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
+Obtains the element-wise product between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value.
 
 ```cpp
 template <class Type>
@@ -946,15 +946,15 @@ operator*(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be multiplied or a specified value to be multiplied with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose elements are to be multiplied, or a specified value to be multiplied with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose elements are to be multiplied or a specified value to be multiplied with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose elements are to be multiplied, or a specified value to be multiplied with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray whose elements are the element-wise product of *left* and *right*.
+A `valarray` whose elements are the element-wise product of *`left`* and *`right`*.
 
 ### Example
 
@@ -1005,9 +1005,9 @@ The element-by-element result of the multiplication is the
 valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
 ```
 
-## <a name="op_add"></a> operator+
+## <a name="op_add"></a> `operator+`
 
-Obtains the element-wise sum between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
+Obtains the element-wise sum between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value.
 
 ```cpp
 template <class Type>
@@ -1031,15 +1031,15 @@ operator+(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be added or a specified value to be added with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose elements are to be added, or a specified value to be added with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose elements are to be added or a specified value to be added with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose elements are to be added, or a specified value to be added with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray whose elements are the element-wise sum of *left* and *right*.
+A `valarray` whose elements are the element-wise sum of *`left`* and *`right`*.
 
 ### Example
 
@@ -1090,9 +1090,9 @@ The element-by-element result of the sum is the
 valarray: ( 2 0 4 2 6 4 8 6 ).
 ```
 
-## <a name="operator-"></a> operator-
+## <a name="operator-"></a> `operator-`
 
-Obtains the element-wise difference between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
+Obtains the element-wise difference between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value.
 
 ```cpp
 template <class Type>
@@ -1116,15 +1116,15 @@ operator-(
 
 ### Parameters
 
-*left*\
-A value or valarray that serves as the minuend from which other values or valarrays are to be subtracted in forming the difference.
+*`left`*\
+A value or `valarray` that serves as the *minuend*, the value from which other values or `valarray` objects are to be subtracted in forming the difference.
 
-*right*\
-A value or valarray that serves as the subtrahend that is to be subtracted from other values or valarrays in forming the difference.
+*`right`*\
+A value or `valarray` that serves as the *subtrahend*, the value that is to be subtracted from other values or `valarray` objects in forming the difference.
 
-### Return Value
+### Return value
 
-A valarray whose elements are the element-wise difference of *left* and *right*.
+A `valarray` whose elements are the element-wise difference of *`left`* and *`right`*.
 
 ### Remarks
 
@@ -1181,9 +1181,9 @@ The element-by-element result of the difference is the
 valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
 ```
 
-## <a name="op_div"></a> operator/
+## <a name="op_div"></a> `operator/`
 
-Obtains the element-wise quotient between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
+Obtains the element-wise quotient between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value.
 
 ```cpp
 template <class Type>
@@ -1207,15 +1207,15 @@ operator/(
 
 ### Parameters
 
-*left*\
-A value or valarray that serves as the dividend into which another value or valarray is to be divided in forming the quotient.
+*`left`*\
+A value or `valarray` that serves as the *dividend* into which another value or `valarray` is to be divided in forming the quotient.
 
-*right*\
-A value or valarray that serves as the divisor and that divides another value or valarray in forming the quotient.
+*`right`*\
+A value or `valarray` that serves as the *divisor*, and that divides another value or `valarray` in forming the quotient.
 
-### Return Value
+### Return value
 
-A valarray whose elements are the element-wise quotient of *left* divided by *right*.
+A `valarray` whose elements are the element-wise quotient of *`left`* divided by *`right`*.
 
 ### Remarks
 
@@ -1272,9 +1272,9 @@ The element-by-element result of the quotient is the
 valarray: ( inf -50 25 -16.6667 12.5 -10 ).
 ```
 
-## <a name="op_eq_eq"></a> operator==
+## <a name="op_eq_eq"></a> `operator==`
 
-Tests whether the corresponding elements of two equally sized valarrays are equal or whether all the elements of a valarray are equal a specified value.
+Tests whether the corresponding elements of two equally sized `valarray` objects are equal, or whether all the elements of a `valarray` are equal to a specified value.
 
 ```cpp
 template <class Type>
@@ -1298,23 +1298,23 @@ operator==(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose elements are to be tested for equality.
+*`left`*\
+The first of the two `valarray` objects whose elements are to be tested for equality, or a specified value to compare with each `valarray` element.
 
-*right*\
-The second of the two valarrays whose elements are to be tested for equality.
+*`right`*\
+The second of the two `valarray` objects whose elements are to be tested for equality, or a specified value to compare with each `valarray` element.
 
 ### Return Value
 
-A valarray of Boolean values, each of which is:
+A `valarray` of Boolean values, each of which is:
 
 - **`true`** if the corresponding elements are equal.
 
-- **`false`** if the corresponding elements are not equal.
+- **`false`** if the corresponding elements aren't equal.
 
 ### Remarks
 
-The first template operator returns an object of class [valarray\<bool>](../standard-library/valarray-bool-class.md), each of whose elements `I` is `left[I] == right[I]`. The second template operator stores in element `I` `left[I] == right`. The third template operator stores in element `I` `left == right[I]`.
+The first template operator returns an object of class [`valarray<bool>`](../standard-library/valarray-bool-class.md), each of whose elements `I` is `left[I] == right[I]`. The second template operator stores `left[I] == right` in element `I`. The third template operator stores `left == right[I]` in element `I`.
 
 ### Example
 
@@ -1365,9 +1365,9 @@ The element-by-element result of the equality comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="op_xor"></a> operator^
+## <a name="op_xor"></a> `operator^`
 
-Obtains the bitwise exclusive `OR` ( **XOR**) between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.
+Obtains the bitwise exclusive OR (XOR) between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value of the element type.
 
 ```cpp
 template <class Type>
@@ -1391,21 +1391,21 @@ operator^(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose respective elements are to be combined with the bitwise **XOR** or a specified value of the element type to be combined bitwise with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose respective elements are to be combined with the bitwise XOR, or a specified value of the element type to be combined by a bitwise XOR with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose respective elements are to be combined with the bitwise **XOR** or a specified value of the element type to be combined bitwise with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose respective elements are to be combined with the bitwise XOR, or a specified value of the element type to be combined by a bitwise XOR with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray whose elements are the element-wise combination of the bitwise **XOR** operation of *left* and *right*.
+A `valarray` whose elements are the element-wise combination of the bitwise XOR operation of *`left`* and *`right`*.
 
 ### Remarks
 
 A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **`long double`**, **`void`**, **`bool`** or other, more complex data types.
 
-The bitwise exclusive `OR` ( **XOR**) has the following semantics: Given bits *b*1 and *b*2, *b*1 **XOR** *b*2 is **`true`** if exactly one of the bits is true; **`false`** if both bits are false or if both bits are true.
+The bitwise exclusive OR (XOR) has the following semantics: Given bits *b*1 and *b*2, *b*1 XOR *b*2 is 1 if exactly one of the bits is 1; 0 if both bits are 0 or if both bits are 1.
 
 ### Example
 
@@ -1460,9 +1460,9 @@ The element-by-element result of the bitwise XOR operator^ is the
 valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
 ```
 
-## <a name="op_or"></a> operator&#124;
+## <a name="op_or"></a> `operator|`
 
-Obtains the bitwise `OR` between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.
+Obtains the bitwise OR between corresponding elements of two equally sized `valarray` objects or between a `valarray` and a specified value of the element type.
 
 ```cpp
 template <class Type>
@@ -1486,21 +1486,21 @@ operator|(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose respective elements are to be combined with the bitwise `OR` or a specified value of the element type to be combined bitwise with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose respective elements are to be combined with the bitwise OR, or a specified value of the element type to be combined by bitwise OR with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose respective elements are to be combined with the bitwise `OR` or a specified value of the element type to be combined bitwise with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose respective elements are to be combined with the bitwise OR, or a specified value of the element type to be combined by bitwise OR with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray whose elements are the element-wise combination of the bitwise `OR` operation of *left* and *right*.
+A `valarray` whose elements are the element-wise combination of the bitwise OR operation of *`left`* and *`right`*.
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **longdouble**, **`void`**, **`bool`** or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **`long double`**, **`void`**, **`bool`** or other, more complex data types.
 
-The bitwise OR has the same truth table as the logical `OR`, but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `OR` *b*2 is **`true`** if at least one of the bits is true or **`false`** if both bits are false. The logical `OR`[operator&#124;&#124;](../standard-library/valarray-operators.md#op_lor) applies on an element level, counting all nonzero values as **`true`**, and the result is a valarray of Boolean values. The bitwise OR `operator|`, by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
+The bitwise OR has the same truth table as the logical OR, but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 OR *b*2 is 1 if at least one of the bits is 1, or 0 if both bits are 0. The logical OR [`operator||`](../standard-library/valarray-operators.md#op_lor) applies on an element level, counting all nonzero values as **`true`**, and the result is a `valarray` of Boolean values. The bitwise OR `operator|`, by contrast, can result in a `valarray` of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
 ### Example
 
@@ -1555,9 +1555,9 @@ The element-by-element result of the bitwise OR operator| is the
 valarray: ( 1 0 1 3 3 4 7 6 7 9 ).
 ```
 
-## <a name="op_lor"></a> operator&#124;&#124;
+## <a name="op_lor"></a> `operator||`
 
-Obtains the logical `OR` between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray element type.
+Obtains the logical OR between corresponding elements of two equally sized `valarray` objects, or between a `valarray` and a specified value of the `valarray` element type.
 
 ```cpp
 template <class Type>
@@ -1581,19 +1581,19 @@ operator||(
 
 ### Parameters
 
-*left*\
-The first of the two valarrays whose respective elements are to be combined with the logical `OR` or a specified value of the element type to be combined with each element of a valarray.
+*`left`*\
+The first of the two `valarray` objects whose respective elements are to be combined with the logical OR, or a specified value of the element type to be combined with each element of a `valarray`.
 
-*right*\
-The second of the two valarrays whose respective elements are to be combined with the logical `OR` or a specified value of the element type to be combined with each element of a valarray.
+*`right`*\
+The second of the two `valarray` objects whose respective elements are to be combined with the logical OR, or a specified value of the element type to be combined with each element of a `valarray`.
 
-### Return Value
+### Return value
 
-A valarray whose elements are of type **`bool`** and are the element-wise combination of the logical OR operation of *left* and *right*.
+A `valarray` whose elements are of type **`bool`** and are the element-wise combination of the logical OR operation of *`left`* and *`right`*.
 
 ### Remarks
 
-The logical `OR` `operator||` applies on an element level, counting all nonzero values as **`true`**, and the result is a valarray of Boolean values. The bitwise version of `OR`, [operator&#124;](../standard-library/valarray-operators.md#op_or) by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
+The logical OR `operator||` applies on an element level, counting all nonzero values as **`true`**, and the result is a `valarray` of Boolean values. The bitwise version of OR, [`operator|`](../standard-library/valarray-operators.md#op_or), by contrast, can result in a `valarray` of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
 ### Example
 
