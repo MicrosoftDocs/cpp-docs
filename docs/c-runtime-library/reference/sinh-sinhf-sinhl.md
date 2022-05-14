@@ -37,7 +37,7 @@ The **`sinh`** functions return the hyperbolic sine of *`x`*. By default, if the
 |Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|
 |± `QNAN`,`IND`|None|`_DOMAIN`|
-|&#124;x&#124; ≥ 7.104760e+002|`OVERFLOW+INEXACT`|`OVERFLOW`|
+|`|x| ≥ 7.104760e+002`|`OVERFLOW+INEXACT`|`OVERFLOW`|
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
