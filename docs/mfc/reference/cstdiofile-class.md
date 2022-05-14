@@ -149,7 +149,7 @@ virtual BOOL Open(
 A string that is the path to the desired file. The path can be relative or absolute.
 
 *`nOpenFlags`*<br/>
-Sharing and access mode. Specifies the action to take when opening the file. You can combine options by using the bitwise-OR (&#124;) operator. One access permission and one share option are required; the modeCreate and modeNoInherit modes are optional.
+Sharing and access mode. Specifies the action to take when opening the file. You can combine options by using the bitwise-OR (**`|`**) operator. One access permission and one share option are required; the modeCreate and modeNoInherit modes are optional.
 
 *`pError`*<br/>
 A pointer to an existing file-exception object that will receive the status of a failed operation.

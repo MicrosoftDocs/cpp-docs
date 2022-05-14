@@ -292,7 +292,7 @@ A value from the `DROPEFFECT` enumerated type, which indicates the type of drop 
 
 - `DROPEFFECT_NONE` The data object cannot be dropped in this window.
 
-- `DROPEFFECT_LINK` for `MK_CONTROL` &#124; `MK_SHIFT` Creates a linkage between the object and its server.
+- `DROPEFFECT_LINK` for `MK_CONTROL|MK_SHIFT` Creates a linkage between the object and its server.
 
 - `DROPEFFECT_COPY` for `MK_CONTROL` Creates a copy of the dropped object.
 
@@ -346,7 +346,7 @@ A value from the `DROPEFFECT` enumerated type, which indicates the type of drop 
 
 - `DROPEFFECT_NONE` The data object cannot be dropped in this window.
 
-- `DROPEFFECT_LINK` for `MK_CONTROL` &#124; `MK_SHIFT` Creates a linkage between the object and its server.
+- `DROPEFFECT_LINK` for `MK_CONTROL|MK_SHIFT` Creates a linkage between the object and its server.
 
 - `DROPEFFECT_COPY` for `MK_CONTROL` Creates a copy of the dropped object.
 
@@ -384,7 +384,7 @@ A value from the `DROPEFFECT` enumerated type, which indicates the type of drop 
 
 - `DROPEFFECT_NONE` The data object cannot be dropped in this window.
 
-- `DROPEFFECT_LINK` for `MK_CONTROL` &#124; `MK_SHIFT` Creates a linkage between the object and its server.
+- `DROPEFFECT_LINK` for `MK_CONTROL|MK_SHIFT` Creates a linkage between the object and its server.
 
 - `DROPEFFECT_COPY` for `MK_CONTROL` Creates a copy of the dropped object.
 

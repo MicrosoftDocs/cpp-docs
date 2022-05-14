@@ -774,7 +774,7 @@ Nonzero if the styles are changed, otherwise zero.
 
 The control's stock Enabled property will be modified to match the setting for WS_DISABLED. The control's stock Border Style property will be modified to match the requested setting for WS_BORDER. All other styles are applied directly to the control's window handle, if one is present.
 
-Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) function in the Windows SDK for information about the available window styles.
+Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR (**`|`**) operator. See the [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) function in the Windows SDK for information about the available window styles.
 
 If *nFlags* is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:
 
@@ -818,7 +818,7 @@ Nonzero if the styles are changed, otherwise zero.
 
 The control's stock Appearance property will be modified to match the setting for WS_EX_CLIENTEDGE. All other extended window styles are applied directly to the control's window handle, if one is present.
 
-Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function in the Windows SDK for information about the available window styles.
+Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR (**`|`**) operator. See the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function in the Windows SDK for information about the available window styles.
 
 If *nFlags* is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:
 
