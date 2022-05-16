@@ -19,13 +19,13 @@ For parallel work-sharing:
 |[parallel](#parallel)|Defines a parallel region, which is code that will be executed by multiple threads in parallel.|
 |[for](#for-openmp)|Causes the work done in a `for` loop inside a parallel region to be divided among threads.|
 |[sections](#sections-openmp)|Identifies code sections to be divided among all threads.|
-|[single](#single)|Lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.|
+|[single](#single)|Lets you specify that a section of code should be executed on a single thread, not necessarily the main thread.|
 
-For master and synchronization:
+For main thread and synchronization:
 
 |Directive|Description|
 |---------|-----------|
-|[master](#master)|Specifies that only the master thread should execute a section of the program.|
+|[master](#master)|Specifies that only the main thread should execute a section of the program.|
 |[critical](#critical)|Specifies that code is only executed on one thread at a time.|
 |[barrier](#barrier)|Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.|
 |[atomic](#atomic)|Specifies that a memory location that will be updated atomically.|
@@ -356,7 +356,7 @@ The sum of 1 through 10 is 55
 
 ## <a name="master"></a> master
 
-Specifies that only the master thread should execute a section of the program.
+Specifies that only the main thread should execute a section of the program.
 
 ```cpp
 #pragma omp master
@@ -371,12 +371,11 @@ The `master` directive supports no clauses.
 
 For more information, see [2.6.1 master construct](../2-directives.md#261-master-construct).
 
-To specify that a section of code should be executed on a single thread, not necessarily the master thread, use the [single](#single) directive instead.
+To specify that a section of code should be executed on a single thread, not necessarily the main thread, use the [single](#single) directive instead.
 
 ### Example
 
 ```cpp
-// omp_master.cpp
 // compile with: /openmp
 #include <omp.h>
 #include <stdio.h>
@@ -606,7 +605,7 @@ Hello from thread 0
 
 ## <a name="single"></a> single
 
-Lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.
+Lets you specify that a section of code should be executed on a single thread, not necessarily the main thread.
 
 ```cpp
 #pragma omp single [clauses]
@@ -631,7 +630,7 @@ The `single` directive supports the following clauses:
 
 For more information, see [2.4.3 single construct](../2-directives.md#243-single-construct).
 
-To specify that a section of code should only be executed on the master thread, use the [master](#master) directive instead.
+To specify that a section of code should only be executed on the main thread, use the [master](#master) directive instead.
 
 ### Example
 
