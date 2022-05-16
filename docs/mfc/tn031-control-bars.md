@@ -176,13 +176,13 @@ The six official Windows Interface Application Design Guide button styles are re
 
 - Up = 0
 
-- Mouse Down = TBBS_PRESSED (&#124; any other style)
+- Mouse Down = TBBS_PRESSED (\| any other style)
 
 - Disabled = TBBS_DISABLED
 
 - Down = TBBS_CHECKED
 
-- Down Disabled = TBBS_CHECKED &#124; TBBS_DISABLED
+- Down Disabled = TBBS_CHECKED \| TBBS_DISABLED
 
 - Indeterminate = TBBS_INDETERMINATE
 

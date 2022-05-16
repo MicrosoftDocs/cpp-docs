@@ -445,13 +445,13 @@ To enable the user to select multiple files, set the OFN_ALLOWMULTISELECT flag b
 
 To enable the user to resize an Explorer-style dialog box by using either the mouse or keyboard, set the OFN_ENABLESIZING flag. Setting this flag is necessary only if you provide a hook procedure or custom template. The flag works only with an Explorer-style dialog box; old-style dialog boxes cannot be resized.
 
-The *lpszFilter* parameter is used to determine the type of file name a file must have to be displayed in the file list. The first string in the string pair describes the filter; the second string indicates the file name extension to use. Multiple extensions may be specified by using a semicolon (the ';' character) as the delimiter. The string ends with two '&#124;' characters, followed by a NULL character. You can also use a [CString](../../atl-mfc-shared/using-cstring.md) object for this parameter.
+The *lpszFilter* parameter is used to determine the type of file name a file must have to be displayed in the file list. The first string in the string pair describes the filter; the second string indicates the file name extension to use. Multiple extensions may be specified by using a semicolon (the ';' character) as the delimiter. The string ends with two vertical bar characters (`||`), followed by a NULL character. You can also use a [CString](../../atl-mfc-shared/using-cstring.md) object for this parameter.
 
 For example, Microsoft Excel allows users to open files that have extensions .xlc (chart) or .xls (worksheet), among others. The filter for Excel could be written as:
 
 [!code-cpp[NVC_MFCFiles#24](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_2.cpp)]
 
-However, if you plan to use this string to directly update the `OPENFILENAME` structure, you should delimit your strings with the null character, '\0', instead of the vertical bars ('&#124;').
+However, if you plan to use this string to directly update the `OPENFILENAME` structure, you should delimit your strings with the null character, `'\0'`, instead of the vertical bars (`'|'`).
 
 The *bVistaStyle* parameter is applicable only when running under Windows Vista or later. Under earlier versions of Windows, this parameter is ignored. If *bVistaStyle* is set to TRUE, when you compile a program with Visual Studio 2008 or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.
 

@@ -114,7 +114,7 @@ Specifies the window style attributes. These can include standard window styles 
 
 - MFS_BLOCKSYSMENU Disables access to the system menu and the control menu, and converts them to part of the caption (title bar).
 
-See [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of possible window style values. The typical combination used for mini-frame windows is WS_POPUP&#124;WS_CAPTION&#124;WS_SYSMENU.
+See [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of possible window style values. The typical combination used for mini-frame windows is `WS_POPUP|WS_CAPTION|WS_SYSMENU`.
 
 *rect*<br/>
 A `RECT` structure specifying the desired dimensions of the window.

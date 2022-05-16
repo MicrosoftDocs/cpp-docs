@@ -57,7 +57,7 @@ The `get_Sides` method returns the current value of the `Sides` property through
 
 You now have a property called `Sides`. In the next step, you will change the drawing code to use it.
 
-[Back to Step 2](../atl/adding-a-control-atl-tutorial-part-2.md) &#124; [On to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md)
+[Back to Step 2](../atl/adding-a-control-atl-tutorial-part-2.md) \| [On to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md)
 
 ## See also
 

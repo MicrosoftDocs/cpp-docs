@@ -50,7 +50,7 @@ Two icons support MDI applications with single document types: one icon for the 
 
 `CFrameWnd::LoadFrame` will register a `WNDCLASS` using the icon ID you specify as the first parameter and the following standard attributes:
 
-- class style : CS_DBLCLKS &#124; CS_HREDRAW &#124; CS_VREDRAW;
+- class style : `CS_DBLCLKS | CS_HREDRAW | CS_VREDRAW;`
 
 - icon AFX_IDI_STD_FRAME
 

@@ -190,7 +190,7 @@ MFC extends that to allow for scroll bar controls to be either child or siblings
 
 On a side note, there are two **CWnd** derived classes where the scroll bar styles specified at create time are trapped and not passed to Windows. When passed to a creation routine, **WS_HSCROLL** and **WS_VSCROLL** can be independently set, but after creation cannot be changed. Of course, you should not directly test or set the WS_SCROLL style bits of the window that they created.
 
-For **CMDIFrameWnd** the scroll bar styles you pass in to **Create** or **LoadFrame** are used to create the MDICLIENT. If you wish to have a scrollable MDICLIENT area (like the Windows Program Manager) be sure to set both scroll bar styles (**WS_HSCROLL** &#124; **WS_VSCROLL**) for the style used to create the **CMDIFrameWnd**.
+For **CMDIFrameWnd** the scroll bar styles you pass in to **Create** or **LoadFrame** are used to create the MDICLIENT. If you wish to have a scrollable MDICLIENT area (like the Windows Program Manager) be sure to set both scroll bar styles (`WS_HSCROLL | WS_VSCROLL`) for the style used to create the **CMDIFrameWnd**.
 
 For **CSplitterWnd** the scroll bar styles apply to the special shared scroll bars for the splitter regions. For static splitter windows, you will normally not set either scroll bar style. For dynamic splitter windows, you will usually have the scroll bar style set for the direction you will split, That is, **WS_HSCROLL** if you can split rows, **WS_VSCROLL** if you can split columns.
 

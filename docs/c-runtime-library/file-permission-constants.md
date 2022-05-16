@@ -23,7 +23,7 @@ The `pmode` argument specifies the file's permission settings as follows.
 |--------------|-------------|
 |`_S_IREAD`|Reading permitted|
 |`_S_IWRITE`|Writing permitted|
-|`_S_IREAD` &#124; `_S_IWRITE`|Reading and writing permitted|
+|`_S_IREAD | _S_IWRITE`|Reading and writing permitted|
 
 When used as the `pmode` argument for `_umask`, the manifest constant sets the permission setting, as follows.
 
@@ -31,7 +31,7 @@ When used as the `pmode` argument for `_umask`, the manifest constant sets the p
 |--------------|-------------|
 |`_S_IREAD`|Writing not permitted (file is read-only)|
 |`_S_IWRITE`|Reading not permitted (file is write-only)|
-|`_S_IREAD` &#124; `_S_IWRITE`|Neither reading nor writing permitted|
+|`_S_IREAD | _S_IWRITE`|Neither reading nor writing permitted|
 
 ## See also
 

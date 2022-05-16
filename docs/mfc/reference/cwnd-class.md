@@ -4900,7 +4900,7 @@ Nonzero if style was successfully modified; otherwise, 0.
 
 ### Remarks
 
-Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Window Styles](/windows/win32/winmsg/window-styles) and [`CreateWindow`](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK for information about the available window styles.
+Styles to be added or removed can be combined by using the bitwise OR (**`|`**) operator. See the topics [Window Styles](/windows/win32/winmsg/window-styles) and [`CreateWindow`](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK for information about the available window styles.
 
 If *`nFlags`* is nonzero, `ModifyStyle` calls the Windows API function [`SetWindowPos`](/windows/win32/api/winuser/nf-winuser-setwindowpos) and redraws the window by combining *`nFlags`* with the following four preset flags:
 
@@ -4949,7 +4949,7 @@ Nonzero if style was successfully modified; otherwise, 0.
 
 ### Remarks
 
-Styles to be added or removed can be combined by using the bitwise `OR` (&#124;) operator. See the topics [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) in this book and [`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK for information about the available extended styles
+Styles to be added or removed can be combined by using the bitwise-OR (**`|`**) operator. See the topics [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) in this book and [`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK for information about the available extended styles
 
 If *`nFlags`* is nonzero, `ModifyStyleEx` calls the Windows API function [`SetWindowPos`](/windows/win32/api/winuser/nf-winuser-setwindowpos) and redraws the window by combining *`nFlags`* with the following four preset flags:
 
@@ -9091,7 +9091,7 @@ A pointer to a [`TOOLINFO`](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa)
 
 - *`uId`* = `(UINT)hWndChild` Handle to a child window
 
-- *`uFlags`* &#124;= `TTF_IDISHWND` Handle of the tool
+- *`uFlags`* |= `TTF_IDISHWND` Handle of the tool
 
 - *`lpszText`* = `LPSTR_TEXTCALLBACK` Pointer to the string that is to be displayed in the specified window
 

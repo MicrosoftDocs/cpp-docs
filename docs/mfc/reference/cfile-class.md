@@ -517,7 +517,7 @@ virtual BOOL Open(
 A string that contains the path to the desired file. The path can be relative, absolute, or a network name (UNC).
 
 *nOpenFlags*<br/>
-A UINT that defines the file's sharing and access mode. It specifies the action to take when opening the file. You can combine options by using the bitwise-OR ( **&#124;** ) operator. One access permission and one share option are required; the `modeCreate` and `modeNoInherit` modes are optional. See the [CFile](#cfile) constructor for a list of mode options.
+A UINT that defines the file's sharing and access mode. It specifies the action to take when opening the file. You can combine options by using the bitwise-OR ( **`|`** ) operator. One access permission and one share option are required; the `modeCreate` and `modeNoInherit` modes are optional. See the [CFile](#cfile) constructor for a list of mode options.
 
 *pError*<br/>
 A pointer to an existing file-exception object that will receive the status of a failed operation.

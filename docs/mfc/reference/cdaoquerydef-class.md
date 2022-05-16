@@ -234,7 +234,7 @@ virtual void Execute(int nOptions = dbFailOnError);
 ### Parameters
 
 *nOptions*<br/>
-An integer that determines the characteristics of the query. For related information, see the topic "Execute Method" in DAO Help. You can use the bitwise-OR operator ( **&#124;**) to combine the following constants for this argument:
+An integer that determines the characteristics of the query. For related information, see the topic "Execute Method" in DAO Help. You can use the bitwise-OR operator (**`|`**) to combine the following constants for this argument:
 
 - `dbDenyWrite` Deny write permission to other users.
 

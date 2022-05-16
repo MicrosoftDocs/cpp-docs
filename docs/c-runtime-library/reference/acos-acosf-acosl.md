@@ -40,7 +40,7 @@ By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an in
 |-----------|-------------------|-----------------------|
 |`± ∞`|`INVALID`|`_DOMAIN`|
 |`± QNAN, IND`|none|`_DOMAIN`|
-|&#124;`x`&#124;>1|`INVALID`|`_DOMAIN`|
+|`|x| > 1`|`INVALID`|`_DOMAIN`|
 
 ## Remarks
 
