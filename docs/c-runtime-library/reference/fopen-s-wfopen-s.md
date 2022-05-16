@@ -67,22 +67,22 @@ By default, this function's global state is scoped to the application. To change
 
 ## Unicode support
 
-**`fopen_s`** supports Unicode file streams. To open a new or existing Unicode file, pass a *ccs* flag that specifies the desired encoding to **`fopen_s`**:
+**`fopen_s`** supports Unicode file streams. To open a new or existing Unicode file, pass a **`ccs`** flag that specifies the desired encoding to **`fopen_s`**, for example:
 
-**`fopen_s(&fp, "newfile.txt", "rw, ccs=`*`encoding`*`");`**
+**`fopen_s(&fp, "newfile.txt", "rw, ccs=UNICODE");`**
 
-Allowed values of *`encoding`* are **`UNICODE`**, **`UTF-8`**, and **`UTF-16LE`**. If no value is specified for *`encoding`*, **`fopen_s`** uses ANSI encoding.
+Allowed values of the **`ccs`** flag are **`UNICODE`**, **`UTF-8`**, and **`UTF-16LE`**. If no value is specified for **`ccs`**, **`fopen_s`** uses ANSI encoding.
 
-If the file already exists and is opened for reading or appending, the byte order mark (BOM), if present in the file, determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the *`ccs`* flag. The *`ccs`* encoding is only used when no BOM is present or if the file is a new file.
+If the file already exists and is opened for reading or appending, the byte order mark (BOM), if present in the file, determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the **`ccs`** flag. The **`ccs`** encoding is only used when no BOM is present or if the file is a new file.
 
 > [!NOTE]
-> BOM-detection only applies to files that are opened in Unicode mode; that is, by passing the *`ccs`* flag.
+> BOM-detection only applies to files that are opened in Unicode mode; that is, by passing the **`ccs`** flag.
 
-The following table summarizes the modes for various *`ccs`* encoding values that are given to **`fopen_s`** and for BOMs in the file.
+The following table summarizes the modes for various **`ccs`** flag values that are given to **`fopen_s`** and for BOMs in the file.
 
-### Encodings used based on ccs Flag and BOM
+### Encodings used based on `ccs` flag and BOM
 
-| ccs encoding | No BOM (or new file) | BOM: UTF-8 | BOM: UTF-16 |
+| `ccs` flag | No BOM (or new file) | BOM: UTF-8 | BOM: UTF-16 |
 |--|--|--|--|
 | **`UNICODE`** | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
 | **`UTF-8`** | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
@@ -90,7 +90,7 @@ The following table summarizes the modes for various *`ccs`* encoding values tha
 
 Files that are opened for writing in Unicode mode have a BOM written to them automatically.
 
-If *`mode`* is **`"a, ccs=`*`encoding`*`"`**, **`fopen_s`** first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, **`fopen_s`** then reopens the file with write-only access. (This behavior applies to **`a`** mode only, not **`a+`**.)
+If *`mode`* is **`"a, ccs=UNICODE"`**, **`"a, ccs=UTF-8"`**, or **`"a, ccs=UTF-16LE"`**, **`fopen_s`** first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, **`fopen_s`** then reopens the file with write-only access. (This behavior applies to **`a`** mode only, not **`a+`**.)
 
 ### Generic-text routine mappings
 
@@ -106,7 +106,7 @@ The character string *`mode`* specifies the kind of access that's requested for 
 | **`"w"`** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
 | **`"a"`** | Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it doesn't exist. |
 | **`"r+"`** | Opens for both reading and writing. The file must exist. |
-| **"w+"** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
+| **`"w+"`** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
 | **`"a+"`** | Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker isn't restored after writing is completed. Creates the file if it doesn't exist. |
 
 When a file is opened by using the **`"a"`** or **`"a+"`** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), but it's always moved back to the end of the file before any write operation is carried out so that existing data can't be overwritten.
@@ -124,24 +124,26 @@ In addition to the values above, the following characters can be included in *`m
 | **`t`** | Open in text (translated) mode. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
-In text (translated) mode, **CTRL**+**Z** is interpreted as an end-of-file character on input. In files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a **CTRL**+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and **`ftell`** to move within a file that ends with a **CTRL**+**Z**, may cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file.
+In text (translated) mode, **CTRL**+**Z** is interpreted as an end-of-file character on input. In files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a **CTRL**+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a **CTRL**+**Z**, may cause **`fseek`** to behave improperly near the end of the file.
 
 Also, in text mode, carriage return/line feed (CRLF) combinations are translated into single line feed (LF) characters on input, and LF characters are translated to CRLF combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. The Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **`mbtowc`** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **`wctomb`** function).
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
 
-For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
+For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 
 | *`mode`* modifier | Behavior |
 |--|--|
-| **`c`** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
-| **`n`** | Reset the commit flag for the associated *filename* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`COMMODE.OBJ`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`COMMODE.OBJ`* (see [Link Options](../../c-runtime-library/link-options.md)). |
+| **`c`** | Enable the commit flag for the associated *`filename`* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
+| **`n`** | Reset the commit flag for the associated *`filename`* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`COMMODE.OBJ`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`COMMODE.OBJ`* (see [Link Options](../../c-runtime-library/link-options.md)). |
 | **`n`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`t`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
 | **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
-| **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or **`UNICODE`**) for this file. Leave unspecified if you want ANSI encoding. |
+| **`ccs=UNICODE`** | Specifies UNICODE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
+| **`ccs=UTF-8`** | Specifies UTF-8 as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
+| **`ccs=UTF-16LE`** | Specifies UTF-16LE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
 
 Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) correspond to *`oflag`* arguments used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
 
@@ -210,7 +212,7 @@ int main( void )
    }
 
    // Open for write
-   err = fopen_s( &stream2, "data2", "w+" );
+   err = fopen_s( &stream2, "data2", "w+, ccs=UTF-8" );
    if( err == 0 )
    {
       printf( "The file 'data2' was opened\n" );
