@@ -69,7 +69,7 @@ By default, this function's global state is scoped to the application. To change
 
 **`fopen_s`** supports Unicode file streams. To open a new or existing Unicode file, pass a **`ccs`** flag that specifies the desired encoding to **`fopen_s`**, for example:
 
-**`fopen_s(&fp, "newfile.txt", "rw, ccs=UNICODE");`**
+**`fopen_s(&fp, "newfile.txt", "w+, ccs=UNICODE");`**
 
 Allowed values of the **`ccs`** flag are **`UNICODE`**, **`UTF-8`**, and **`UTF-16LE`**. If no value is specified for **`ccs`**, **`fopen_s`** uses ANSI encoding.
 
