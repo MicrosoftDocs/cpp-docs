@@ -109,7 +109,7 @@ Now you can build the control to see it in action.
 
 Next, you'll add a custom property to the control.
 
-[Back to Step 1](../atl/creating-the-project-atl-tutorial-part-1.md) &#124; [On to Step 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)
+[Back to Step 1](../atl/creating-the-project-atl-tutorial-part-1.md) \| [On to Step 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)
 
 ## See also
 

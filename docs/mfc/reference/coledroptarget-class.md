@@ -293,7 +293,7 @@ Points to the data object that contains the data to be dropped.
 The effect that the user chose for the default drop operation based on the current key state. It can be DROPEFFECT_NONE. Drop effects are discussed in the Remarks section.
 
 *dropList*<br/>
-A list of the drop effects that the drop source supports. Drop effect values can be combined using the bitwise OR (**&#124;**) operation. Drop effects are discussed in the Remarks section.
+A list of the drop effects that the drop source supports. Drop effect values can be combined using the bitwise OR (**`|`**) operation. Drop effects are discussed in the Remarks section.
 
 *point*<br/>
 Contains the location of the cursor, in pixels, relative to the screen.

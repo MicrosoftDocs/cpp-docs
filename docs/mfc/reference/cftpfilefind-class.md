@@ -100,7 +100,7 @@ virtual BOOL FindFile(
 A pointer to a string containing the name of the file to find. If NULL, the call will do a wildcard search (*).
 
 *dwFlags*<br/>
-The flags describing how to handle this session. These flags can be combined with the bitwise OR operator (&#124;) and are as follows:
+The flags describing how to handle this session. These flags can be combined with the bitwise OR operator (**`|`**) and are as follows:
 
 - `INTERNET_FLAG_RELOAD`   Get the data from the wire even if it's locally cached. This is the default flag.
 
