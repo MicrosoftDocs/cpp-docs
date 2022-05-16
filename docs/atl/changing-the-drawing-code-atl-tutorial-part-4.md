@@ -151,7 +151,7 @@ After adding `FireViewChange`, rebuild and try the control again in the ActiveX 
 
 In the next step, you will add an event.
 
-[Back to Step 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md) &#124; [On to Step 5](../atl/adding-an-event-atl-tutorial-part-5.md)
+[Back to Step 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md) \| [On to Step 5](../atl/adding-an-event-atl-tutorial-part-5.md)
 
 ## See also
 

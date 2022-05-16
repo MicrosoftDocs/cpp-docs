@@ -29,7 +29,7 @@ The attributes are represented by the following manifest constants:
 |`_A_SUBDIR`| Subdirectory. Value: 0x10|
 |`_A_SYSTEM`| System file. Not normally seen with the DIR command, unless the /AS option is used. Value: 0x04|
 
-Multiple constants can be combined with the OR operator (&#124;).
+Multiple constants can be combined with the OR operator (`|`).
 
 ## See also
 

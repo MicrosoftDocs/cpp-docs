@@ -11,7 +11,7 @@ ms.assetid: 6523b3ac-0a18-44ec-9e9a-b9bab8525ead
 ---
 # or
 
-An alternative to the &#124;&#124; operator.
+An alternative to the `||` operator.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ An alternative to the &#124;&#124; operator.
 
 ## Remarks
 
-The macro yields the operator &#124;&#124;.
+The macro yields the operator `||`.
 
 ## Example
 

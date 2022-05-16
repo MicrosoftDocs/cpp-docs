@@ -38,9 +38,9 @@ By default, if *`x`* is less than -1 or greater than 1, **`asin`** returns an in
 
 |Input|SEH exception|Matherr exception|
 |-----------|-------------------|-----------------------|
-|± ∞|**`INVALID`**|**`_DOMAIN`**|
-|± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
-|&#124;x&#124;>1|**`INVALID`**|**`_DOMAIN`**|
+|`± ∞`|**`INVALID`**|**`_DOMAIN`**|
+|`± QNAN`, `IND`|none|**`_DOMAIN`**|
+|`|x| > 1`|**`INVALID`**|**`_DOMAIN`**|
 
 ## Remarks
 

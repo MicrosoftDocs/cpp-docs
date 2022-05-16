@@ -197,7 +197,7 @@ HWND Create(
 [in] Specifies the name of the window. The default value is NULL.
 
 *dwStyle*<br/>
-[in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK.
+[in] The style of the window. The default value is `WS_CHILD | WS_VISIBLE`. For a list of possible values, see [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK.
 
 *dwExStyle*<br/>
 [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.

@@ -165,7 +165,7 @@ inline HANDLE CreateFile(
 The name of an object to be created or opened.
 
 *dwDesiredAccess*<br/>
-The access to the object, which can be summarized as read, write, both, or neither (zero). The most commonly used values are GENERIC_READ, GENERIC_WRITE, or both: GENERIC_READ &#124; GENERIC_WRITE.
+The access to the object, which can be summarized as read, write, both, or neither (zero). The most commonly used values are `GENERIC_READ`, `GENERIC_WRITE`, or both: `GENERIC_READ | GENERIC_WRITE`.
 
 *dwShareMode*<br/>
 The sharing mode of an object, which can be read, write, both, delete, all of these, or none: 0, FILE_SHARE_DELETE, FILE_SHARE_READ, FILE_SHARE_WRITE.

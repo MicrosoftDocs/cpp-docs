@@ -149,7 +149,7 @@ Now try out your events. Build the control and start the ActiveX Control Test Co
 
 Next, you will add a property page.
 
-[Back to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md) &#124; [On to Step 6](../atl/adding-a-property-page-atl-tutorial-part-6.md)
+[Back to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md) \| [On to Step 6](../atl/adding-a-property-page-atl-tutorial-part-6.md)
 
 ## See also
 

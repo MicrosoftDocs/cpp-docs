@@ -691,7 +691,7 @@ Set of bit flags specifying which file types to exclude from the list. Allowable
 
 - `excludeDefaultLoad` = 0   For load, all file types are included by default
 
-- `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` For saving, these files are excluded by default because they usually have special requirements.
+- `excludeDefaultSave` = `excludeIcon | excludeEMF | excludeWMF` For saving, these files are excluded by default because they usually have special requirements.
 
 *`chSeparator`*<br/>
 The separator used between the image formats. See **Remarks** for more information.
@@ -706,13 +706,13 @@ You can pass the resulting format string to your MFC [`CFileDialog`](../../mfc/r
 
 The parameter *`strExporter`* has the format:
 
-file description0&#124;\*.ext0&#124;filedescription1&#124;\*.ext1&#124;...file description *n*&#124;\*.ext *n*&#124;&#124;
+`file description 0|*.ext0|file description 1|*.ext1|...file description N|*.extN||`
 
-where '&#124;' is the separator character specified by `chSeparator`. For example:
+where `|` is the separator character specified by `chSeparator`. For example:
 
 `"Bitmap format|*.bmp|JPEG format|*.jpg|GIF format|*.gif|PNG format|*.png||"`
 
-Use the default separator '&#124;' if you pass this string to an MFC `CFileDialog` object. Use the null separator '\0' if you pass this string to a common File Save dialog box.
+Use the default separator `|` if you pass this string to an MFC `CFileDialog` object. Use the null separator `'\0'` if you pass this string to a common File Save dialog box.
 
 ## <a name="getheight"></a> `CImage::GetHeight`
 
@@ -786,7 +786,7 @@ Set of bit flags specifying which file types to exclude from the list. Allowable
 
 - `excludeDefaultLoad` = 0   For load, all file types are included by default
 
-- `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` For saving, these files are excluded by default because they usually have special requirements.
+- `excludeDefaultSave` = `excludeIcon | excludeEMF | excludeWMF` For saving, these files are excluded by default because they usually have special requirements.
 
 *`chSeparator`*<br/>
 The separator used between the image formats. See **Remarks** for more information.
@@ -797,13 +797,13 @@ You can pass the resulting format string to your MFC [`CFileDialog`](../../mfc/r
 
 The parameter *`strImporter`* has the format:
 
-file description0&#124;\*.ext0&#124;filedescription1&#124;\*.ext1&#124;...file description *n*&#124;\*.ext *n*&#124;&#124;
+`file description 0|*.ext0|file description 1|*.ext1|...file description N|*.extN||
 
-where '&#124;' is the separator character specified by *`chSeparator`*. For example:
+where `|` is the separator character specified by *`chSeparator`*. For example:
 
 `"Bitmap format|*.bmp|JPEG format|*.jpg|GIF format|*.gif|PNG format|*.png||"`
 
-Use the default separator '&#124;' if you pass this string to an MFC `CFileDialog` object. Use the null separator '\0' if you pass this string to a common **File Open** dialog box.
+Use the default separator `|` if you pass this string to an MFC `CFileDialog` object. Use the null separator `'\0'` if you pass this string to a common **File Open** dialog box.
 
 ## <a name="getmaxcolortableentries"></a> `CImage::GetMaxColorTableEntries`
 

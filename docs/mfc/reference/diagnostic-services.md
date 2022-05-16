@@ -557,7 +557,7 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
 ### Parameters
 
 *dwTarget*<br/>
-Indicates the target of the dump output. Possible values, which can be combined using the bitwise-OR ( **&#124;**) operator, are as follows:
+Indicates the target of the dump output. Possible values, which can be combined using the bitwise-OR (**`|`**) operator, are as follows:
 
 - AFX_STACK_DUMP_TARGET_TRACE Sends output by means of the [TRACE](#trace) macro. The TRACE macro generates output in debug builds only; it generates no output in release builds. Also, TRACE can be redirected to other targets besides the debugger.
 

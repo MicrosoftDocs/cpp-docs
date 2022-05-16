@@ -759,9 +759,9 @@ Characteristics of the table represented by the `CDaoTableDef` object and can be
 
 When setting multiple attributes, you can combine them by summing the appropriate constants using the bitwise-OR operator. Setting `dbAttachExclusive` on a nonattached table produces an exception. Combining the following values also produce an exception:
 
-- **dbAttachExclusive &#124; dbAttachedODBC**
+- `dbAttachExclusive | dbAttachedODBC`
 
-- **dbAttachSavePWD &#124; dbAttachedTable**
+- `dbAttachSavePWD | dbAttachedTable`
 
 For related information, see the topic "Attributes Property" in DAO Help.
 
@@ -804,7 +804,7 @@ The following table shows possible database types and their corresponding databa
 |HTML Export|"HTML Export;"|" `drive`:\\\ *path*"|
 |Text|"Text;"|"drive:\\\path"|
 |ODBC|"ODBC; DATABASE= `database`; UID= *user*;PWD= *password*; DSN= *datasourcename;* LOGINTIMEOUT= *seconds;*" (This may not be a complete connection string for all servers; it is just an example. It is very important not to have spaces between the parameters.)|None|
-|Exchange|"Exchange;<br /><br /> MAPILEVEL= *folderpath*;<br /><br /> [TABLETYPE={ 0 &#124; 1 };]<br /><br /> [PROFILE= *profile*;]<br /><br /> [PWD= *password*;]<br /><br /> [DATABASE= `database`;]"|*"drive*:\\\ *path*\\\ *filename*.MDB"|
+|Exchange|"Exchange;<br /><br /> MAPILEVEL= *folderpath*;<br /><br /> [TABLETYPE={ 0 \| 1 };]<br /><br /> [PROFILE= *profile*;]<br /><br /> [PWD= *password*;]<br /><br /> [DATABASE= `database`;]"|*"drive*:\\\ *path*\\\ *filename*.MDB"|
 
 > [!NOTE]
 > Btrieve is no longer supported as of DAO 3.5.
