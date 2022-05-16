@@ -16,14 +16,14 @@ Activates virtual machine extensions (VMX) operation in the processor.
 
 ```C
 unsigned char __vmx_on(
-   unsigned __int64 *VmsSupportPhysicalAddress
+   unsigned __int64 *VmxonRegionPhysicalAddress
 );
 ```
 
 ### Parameters
 
-*VmsSupportPhysicalAddress*\
-[in] A pointer to a 64-bit physical address that points to a VMXON region.
+*VmxonRegionPhysicalAddress*\
+[in] A pointer to a 64-bit 4KB-aligned physical address that points to a VMXON region.
 
 ## Return value
 
