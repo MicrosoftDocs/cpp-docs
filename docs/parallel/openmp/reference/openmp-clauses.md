@@ -32,12 +32,12 @@ For data-sharing attributes:
 |[shared](#shared-openmp)|Specifies that one or more variables should be shared among all threads.|
 |[default](#default-openmp)|Specifies the behavior of unscoped variables in a parallel region.|
 |[reduction](#reduction)|Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.|
-|[copyin](#copyin)|Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.|
+|[copyin](#copyin)|Allows threads to access the main thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.|
 |[copyprivate](#copyprivate)|Specifies that one or more variables should be shared among all threads.|
 
 ## <a name="copyin"></a> copyin
 
-Allows threads to access the master thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.
+Allows threads to access the main thread's value, for a [threadprivate](openmp-directives.md#threadprivate) variable.
 
 ```cpp
 copyin(var)
@@ -46,7 +46,7 @@ copyin(var)
 ### Parameters
 
 *var*<br/>
-The `threadprivate` variable that will be initialized with the variable's value in the master thread, as it exists before the parallel construct.
+The `threadprivate` variable that will be initialized with the variable's value in the main thread, as it exists before the parallel construct.
 
 ### Remarks
 
@@ -513,7 +513,7 @@ int main() {
    printf_s("These are the variables after exit from "
             "the parallel region.\n");
    printf_s("nThreadPrivate = %d (The last value in the "
-            "master thread)\n", nThreadPrivate);
+            "main thread)\n", nThreadPrivate);
    printf_s("      nPrivate = %d (The value prior to "
             "entering parallel region)\n", nPrivate);
    printf_s(" nFirstPrivate = %d (The value prior to "
@@ -591,7 +591,7 @@ nFirstPrivate = 3
        nShared = 3
 
 These are the variables after exit from the parallel region.
-nThreadPrivate = 0 (The last value in the master thread)
+nThreadPrivate = 0 (The last value in the main thread)
       nPrivate = 4 (The value prior to entering parallel region)
 nFirstPrivate = 4 (The value prior to entering parallel region)
   nLastPrivate = 3 (The value from the last iteration of the loop)
