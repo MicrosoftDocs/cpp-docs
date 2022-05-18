@@ -1,30 +1,31 @@
 ---
-description: "Learn more about: /ALIGN (Section Alignment)"
-title: "/ALIGN (Section Alignment)"
-ms.date: "12/29/2017"
+description: "Learn more about: /ALIGN (Section alignment)"
+title: "/ALIGN (Section alignment)"
+ms.date: 05/11/2022
 f1_keywords: ["VC.Project.VCLinkerTool.Alignment", "/align"]
 helpviewer_keywords: ["sections, specifying alignment", "ALIGN linker option", "/ALIGN linker option", "-ALIGN linker option", "section alignment", "sections"]
 ---
-# /ALIGN (Section Alignment)
+# `/ALIGN` (Section alignment)
 
+Specify the alignment of each section within the executable image.
 ## Syntax
 
-> **/ALIGN**[**:**_number_]
+> **`/ALIGN`**\[**`:`*`number`***]
 
 ### Arguments
 
-*number*<br/>
+*`number`*\
 The alignment value in bytes.
 
 ## Remarks
 
-The **/ALIGN** option specifies the alignment of each section within the linear address space of the program. The *number* argument is in bytes and must be a power of two. The default is 4K (4096). The linker issues a warning if the alignment produces an invalid image.
+The **`/ALIGN`** linker option specifies the alignment of each section within the linear address space of the program. The *`number`* argument is in bytes and must be a power of two. The default is 4K (4096). The linker issues a warning if the alignment produces an invalid image.
 
-Unless you are writing an application such as a device driver, you should not need to modify the alignment.
+Unless you're writing an application such as a device driver, you shouldn't need to modify the alignment.
 
-It is possible to modify the alignment of a particular section with the align parameter to the [/SECTION](section-specify-section-attributes.md) option.
+It's possible to modify the alignment of a particular section with the *`align`* parameter to the [`/SECTION`](section-specify-section-attributes.md) option.
 
-The alignment value that you specify cannot be smaller than the largest section alignment.
+The alignment value that you specify can't be smaller than the largest section alignment.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -40,5 +41,5 @@ The alignment value that you specify cannot be smaller than the largest section 
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
-[MSVC Linker Options](linker-options.md)
+[MSVC linker reference](linking.md)\
+[MSVC linker options](linker-options.md)
