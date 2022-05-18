@@ -1,14 +1,20 @@
 ---
 title: "Inline Functions (C++)"
 description: "The C++ inline keyword can be used to suggest inline functions to the compiler."
-ms.date: "10/09/2018"
+ms.date: 05/17/2022
 f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp", "__inline", "_inline", "__forceinline", "_forceinline"]
 helpviewer_keywords: ["inline functions [C++], class members"]
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
 ---
-# Inline Functions (C++)
+# Inline functions (C++)
 
-A function defined in the body of a class declaration is an inline function.
+The **`inline`** keyword tells the compiler to substitute the code within the function definition for every instance of a function call.
+
+Using inline functions can make your program faster because they eliminate the overhead associated with function calls. The compiler can optimize functions expanded inline in ways that aren't available to normal functions.
+
+Inline code substitution occurs at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if it's too large to inline.
+
+A function defined in the body of a class declaration is implicitly an inline function.
 
 ## Example
 
@@ -61,8 +67,6 @@ The insertion, called *inline expansion* or *inlining*, occurs only if the compi
 
 The **`__forceinline`** keyword overrides the cost-benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using **`__forceinline`**. Indiscriminate use of **`__forceinline`** can result in larger code with only marginal performance gains or, in some cases, even performance losses (because of the increased paging of a larger executable, for example).
 
-Using inline functions can make your program faster because they eliminate the overhead associated with function calls. Functions expanded inline are subject to code optimizations not available to normal functions.
-
 The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that functions will be inlined. You can't force the compiler to inline a particular function, even with the **`__forceinline`** keyword. When compiling with **`/clr`**, the compiler won't inline a function if there are security attributes applied to the function.
 
 The **`inline`** keyword is available only in C++. The **`__inline`** and **`__forceinline`** keywords are available in both C and C++. For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`**, and **`__forceinline`** unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
@@ -74,6 +78,8 @@ The **`inline`** keyword tells the compiler that inline expansion is preferred. 
 - Functions that are referred to through a pointer elsewhere in the translation unit.
 
 These reasons may interfere with inlining, *as may others*, at the discretion of the compiler; you shouldn't depend on the **`inline`** specifier to cause a function to be inlined.
+
+Rather than expand an inline function defined in a header file, the compiler may create it as a callable function in more than one translation unit. The compiler marks the generated function for the linker to prevent one-definition-rule (ODR) violations.
 
 As with normal functions, there's no defined order for argument evaluation in an inline function. In fact, it could be different from the argument evaluation order when passed using the normal function-call protocol.
 
@@ -254,5 +260,5 @@ Sample Output: A
 
 ## See also
 
-[`noinline`](../cpp/noinline.md)<br/>
+[`noinline`](../cpp/noinline.md)\
 [`auto_inline`](../preprocessor/auto-inline.md)
