@@ -271,6 +271,8 @@ MSVC supports these additional predefined macros.
    | Visual Studio 2019 version 16.8, 16.9 | 1928 |
    | Visual Studio 2019 version 16.10, 16.11 | 1929 |
    | Visual Studio 2022 RTW (17.0) | 1930 |
+   | Visual Studio 2022 version 17.1 | 1931 |
+   | Visual Studio 2022 version 17.2 | 1932 |
 
    To test for compiler releases or updates in a given version of Visual Studio or after, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 
