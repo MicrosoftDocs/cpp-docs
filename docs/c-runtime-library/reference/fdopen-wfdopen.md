@@ -49,12 +49,6 @@ File descriptors passed into **`_fdopen`** are owned by the returned `FILE *` st
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
-
-| `<tchar.h>` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
-|--|--|--|--|
-| **`_tfdopen`** | **`_fdopen`** | **`_fdopen`** | **`_wfdopen`** |
-
 The *`mode`* character string specifies the type of file access requested for the file:
 
 | *`mode`* | Access |
@@ -98,12 +92,18 @@ Valid characters for the *`mode`* string used in **`fopen`** and **`_fdopen`** c
 
 ## Requirements
 
-| Function | Required header |
-|--|--|
-| **`_fdopen`** | `<stdio.h>` |
-| **`_wfdopen`** | `<stdio.h>` or `<wchar.h>` |
+| Function | Required header | C++ header |
+|--|--|--|
+| **`_fdopen`** | `<stdio.h>` | `<cstdio>` |
+| **`_wfdopen`** | `<stdio.h>` or `<wchar.h>` | `<cstdio>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+### Generic-text routine mappings
+
+| `<tchar.h>` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|--|--|--|--|
+| **`_tfdopen`** | **`_fdopen`** | **`_fdopen`** | **`_wfdopen`** |
 
 ## Example
 

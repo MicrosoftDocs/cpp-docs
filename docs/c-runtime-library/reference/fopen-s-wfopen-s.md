@@ -53,7 +53,7 @@ Zero if successful; an error code on failure. For more information about these e
 
 ## Remarks
 
-Files that are opened by **`fopen_s`** and **`_wfopen_s`** aren't sharable. If you require a sharable file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, **`_SH_DENYNO`** for read/write sharing.
+The **`fopen_s`** and **`_wfopen_s`** functions can't open a file for sharing. If you need to share the file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, use **`_SH_DENYNO`** for read/write sharing.
 
 The **`fopen_s`** function opens the file that's specified by *filename*. **`_wfopen_s`** is a wide-character version of **`fopen_s`**; the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically otherwise.
 
@@ -91,12 +91,6 @@ The following table summarizes the modes for various **`ccs`** flag values that 
 Files that are opened for writing in Unicode mode have a BOM written to them automatically.
 
 If *`mode`* is **`"a, ccs=UNICODE"`**, **`"a, ccs=UTF-8"`**, or **`"a, ccs=UTF-16LE"`**, **`fopen_s`** first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, **`fopen_s`** then reopens the file with write-only access. (This behavior applies to **`a`** mode only, not **`a+`**.)
-
-### Generic-text routine mappings
-
-| `<TCHAR.H>` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
-|--|--|--|--|
-| **`_tfopen_s`** | **`fopen_s`** | **`fopen_s`** | **`_wfopen_s`** |
 
 The character string *`mode`* specifies the kind of access that's requested for the file, as follows.
 
@@ -167,22 +161,28 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 | **`ccs=UTF-8`** | `_O_UTF8` |
 | **`ccs=UTF-16LE`** | `_O_UTF16` |
 
+The **`c`**, **`n`**, and **`t`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used where you want ANSI portability.
+
 If you're using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
 
 ## Requirements
 
-| Function | Required header |
-|--|--|
-| **`fopen_s`** | `<stdio.h>` |
-| **`_wfopen_s`** | `<stdio.h>` or `<wchar.h>` |
+| Function | Required header | C++ header |
+|--|--|--|
+| **`fopen_s`** | `<stdio.h>` | `<cstdio>` |
+| **`_wfopen_s`** | `<stdio.h>` or `<wchar.h>` | `<cstdio>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+### Generic-text routine mappings
+
+| `<tchar.h>` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|--|--|--|--|
+| **`_tfopen_s`** | **`fopen_s`** | **`fopen_s`** | **`_wfopen_s`** |
 
 ## Libraries
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
-
-The **`c`**, **`n`**, and **`t`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used where you want ANSI portability.
 
 ## Example
 
