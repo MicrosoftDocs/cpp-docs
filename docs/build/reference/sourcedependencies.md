@@ -108,6 +108,7 @@ You normally shouldn't set this option yourself in the Visual Studio development
 
 ## See also
 
-[MSVC compiler options](compiler-options.md)<br/>
-[MSVC compiler command-line syntax](compiler-command-line-syntax.md)<br/>
-[`/scanDependencies` (List module dependencies in standard form)](scandependencies.md)
+[MSVC compiler options](compiler-options.md)\
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)\
+[`/scanDependencies`](scandependencies.md)\
+[`/sourceDependencies:directives`](sourcedependencies-directives.md)
