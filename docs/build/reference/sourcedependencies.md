@@ -20,14 +20,14 @@ This option provides information necessary to build modules and header units in 
 
 ## Syntax
 
-> **`/sourceDependencies`** -\
+> **`/sourceDependencies-`**\
 > **`/sourceDependencies`** *filename*\
 > **`/sourceDependencies`** *directory*
 
 ## Arguments
 
 *`-`*\
-If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout`, or to where compiler output is redirected to.
+If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout`, or to where compiler output is redirected.
 
 *`filename`*\
 The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path. The file is created if it doesn't exist.
@@ -39,7 +39,7 @@ If the argument is a directory, the compiler generates source dependency files i
 
 The **`/sourceDependencies`** compiler option is available starting in Visual Studio 2019 version 16.7. It's not enabled by default.
 
-When you specify the **`/MP`** compiler option, we recommend you use **`/sourceDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. Use of **`/MP`** with **`/sourceDependencies-`** to send output to `stdout` could cause interleaved results. For more information on **`/MP`**, see [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md).
+When you specify the [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md) compiler option, we recommend you use **`/sourceDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. Use of **`/MP`** with **`/sourceDependencies-`** to send output to `stdout` could cause interleaved results.
 
 When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
 
