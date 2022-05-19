@@ -1,7 +1,7 @@
 ---
 title: "/scanDependencies (List module and header unit dependencies per Standard)"
 description: "Reference guide to the /scanDependencies compiler option in Microsoft C++."
-ms.date: 02/01/2022
+ms.date: 05/19/2022
 author: "corob-msft"
 ms.author: "corob"
 f1_keywords: ["/scanDependencies"]
@@ -26,7 +26,7 @@ This command-line option is similar to [`/sourceDependencies-directives`](source
 
 > **`/scanDependencies`** -\
 > **`/scanDependencies`** *`filename`*\
-> **`/scanDependencies`** *`directory`*\
+> **`/scanDependencies`** *`directory`*
 
 ## Arguments
 
@@ -34,16 +34,16 @@ This command-line option is similar to [`/sourceDependencies-directives`](source
 If the single dash is provided, then the compiler emits the source dependencies JSON to `stdout`, or to where compiler output is redirected.
 
 *`filename`*\
-The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.
+The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path. The file is created if it doesn't exist.
 
 *`directory`*\
-If the argument is a directory, the compiler generates source dependency files in the specified directory. The output file name is based on the full name of the input file, with an appended *`.module.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.module.json`*.
+If the argument is a directory, the compiler generates source dependency files in the specified directory. The directory must exist, or the argument is treated as a *`filename`*. The output file name is based on the full name of the input file, with an appended *`.module.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.module.json`*.
 
 ## Remarks
 
 **`/scanDependencies`** is available starting in Visual Studio 2022 version 17.2 preview 1. It's not enabled by default.
 
-When you specify the **`/MP`** compiler option, we recommend you use **`/scanDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. For more information on **`/MP`**, see [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md).
+When you specify the **`/MP`** compiler option, we recommend you use **`/scanDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. Use of **`/MP`** with **`/scanDependencies-`** to send output to `stdout` could cause interleaved results. For more information on **`/MP`**, see [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md).
 
 When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
 
