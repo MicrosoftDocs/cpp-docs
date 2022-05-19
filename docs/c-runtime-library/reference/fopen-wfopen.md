@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: fopen, _wfopen"
 title: "fopen, _wfopen"
-ms.date: 05/14/2022
+ms.date: 05/18/2022
 api_name: ["_wfopen", "fopen", "_o__wfopen", "_o_fopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["fopen", "_wfopen", "_tfopen", "corecrt_wstdio/_wfopen", "stdio/fopen"]
+f1_keywords: ["STDIO/fopen", "CORECRT_WSTDIO/_wfopen", "TCHAR/_tfopen", "fopen", "_wfopen", "_tfopen"]
 helpviewer_keywords: ["opening files, for file I/O", "wfopen function", "tfopen function", "_tfopen function", "_wfopen function", "files [C++], opening", "fopen function"]
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
 ---
@@ -37,7 +37,7 @@ Kind of access that's enabled.
 
 ## Return value
 
-Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
+Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
 
 For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

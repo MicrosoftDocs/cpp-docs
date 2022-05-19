@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: _open, _wopen"
 title: "_open, _wopen"
-ms.date: "11/04/2016"
+ms.date: 05/18/2022
 api_name: ["_open", "_wopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_wopen", "_topen", "_open"]
+f1_keywords: ["CORECRT_IO/_open", "CORECRT_WIO/_wopen", "TCHAR/_topen", "_open", "_wopen", "_topen"]
 helpviewer_keywords: ["opening files, for file I/O", "topen function", "_open function", "_topen function", "_wopen function", "files [C++], opening", "wopen function", "open function"]
 ms.assetid: 13f6a0c3-d1aa-450d-a7aa-74abc91b163e
 ---
@@ -94,7 +94,7 @@ When a file is opened in Unicode mode by using **`_O_WTEXT`**, **`_O_U8TEXT`**, 
 
 If **`_open`** is called with **`_O_WRONLY | _O_APPEND`** (append mode) and **`_O_WTEXT`**, **`_O_U16TEXT`**, or **`_O_U8TEXT`**, it first tries to open the file for reading and writing, read the BOM, then reopen it for writing only. If opening the file for reading and writing fails, it opens the file for writing only and uses the default value for the Unicode mode setting.
 
-When two or more manifest constants are used to form the *`oflag`* argument, the constants are combined with the bitwise-OR operator ( **&#124;** ). For a discussion of binary and text modes, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+When two or more manifest constants are used to form the *`oflag`* argument, the constants are combined with the bitwise-OR operator ( **`|`** ). For a discussion of binary and text modes, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
 The *`pmode`* argument is required only when **`_O_CREAT`** is specified. If the file already exists, *`pmode`* is ignored. Otherwise, *`pmode`* specifies the file permission settings, which are set when the new file is closed the first time. **`_open`** applies the current file-permission mask to *`pmode`* before the permissions are set. (For more information, see [`_umask`](umask.md).) *`pmode`* is an integer expression that contains one or both of the following manifest constants, which are defined in `<sys\stat.h>`.
 
@@ -102,15 +102,15 @@ The *`pmode`* argument is required only when **`_O_CREAT`** is specified. If the
 |--|--|
 | **`_S_IREAD`** | Only reading permitted. |
 | **`_S_IWRITE`** | Writing permitted. (In effect, permits reading and writing.) |
-| **`_S_IREAD`** &#124; **`_S_IWRITE`** | Reading and writing permitted. |
+| **`_S_IREAD | _S_IWRITE`** | Reading and writing permitted. |
 
-When both constants are given, they're joined with the bitwise-OR operator ( **&#124;** ). In Windows, all files are readable; write-only permission isn't available. Therefore, the modes **`_S_IWRITE`** and **`_S_IREAD`** | **`_S_IWRITE`** are equivalent.
+When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). In Windows, all files are readable; write-only permission isn't available. Therefore, the modes **`_S_IWRITE`** and **`_S_IREAD`** | **`_S_IWRITE`** are equivalent.
 
 If a value other than some combination of **`_S_IREAD`** and **`_S_IWRITE`** is specified for *`pmode`*—even if it would specify a valid *`pmode`* in another operating system—or if any value other than the allowed *`oflag`* values is specified, the function generates an assertion in Debug mode and invokes the invalid parameter handler, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EINVAL`**.
 
 ## Requirements
 
-| Routine | Required header | Optional header |
+| Function | Required header | Optional header |
 |--|--|--|
 | **`_open`** | `<io.h>` | `<fcntl.h>`, `<sys\types.h>`, `<sys\stat.h>` |
 | **`_wopen`** | `<io.h>` or `<wchar.h>` | `<fcntl.h>`, `<sys\types.h>`, `<sys\stat.h>` |
@@ -150,8 +150,9 @@ int main( void )
       _close( fh1 );
    }
 
-   fh2 = _open( "CRT_OPEN.OUT", _O_WRONLY | _O_CREAT, _S_IREAD |
-                            _S_IWRITE ); // C4996
+   fh2 = _open( "CRT_OPEN.OUT",
+                _O_WRONLY | _O_CREAT,
+                _S_IREAD | _S_IWRITE ); // C4996
    if( fh2 == -1 )
       perror( "Open failed on output file" );
    else
