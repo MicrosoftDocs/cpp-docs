@@ -85,9 +85,9 @@ An object of type `basic_string`.
 
 ### Remarks
 
-The first constructor initializes the base class by calling [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>. It also initializes **sb** by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode` &#124; `ios_base::out`).
+The first constructor initializes the base class by calling `basic_ostream( sb )`, where `sb` is the stored object of class `basic_stringbuf< Elem, Tr, Alloc>`. It also initializes `sb` by calling `basic_stringbuf< Elem, Tr, Alloc>( _Mode | ios_base::out )`. For more information, see [`basic_ostream`](../standard-library/basic-ostream-class.md) and [`basic_stringbuf`](../standard-library/basic-stringbuf-class.md).
 
-The second constructor initializes the base class by calling basic_ostream( **sb**). It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode` &#124; `ios_base::out`).
+The second constructor initializes the base class by calling `basic_ostream( sb )`. It also initializes `sb` by calling `basic_stringbuf< Elem, Tr, Alloc >( str, _Mode | ios_base::out )`.
 
 ## <a name="rdbuf"></a> basic_ostringstream::rdbuf
 

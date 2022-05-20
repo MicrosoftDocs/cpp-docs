@@ -28,7 +28,7 @@ The modulus of a complex number.
 
 ### Remarks
 
-The *modulus* of a complex number is a measure of the length of the vector representing the complex number. The modulus of a complex number                         a + bi is                         sqrt (a<sup>2</sup> + b<sup>2</sup>),  written                         &#124;a + bi&#124;. The *norm* of a complex number                         a + bi is (a<sup>2</sup> + b<sup>2</sup>), so the modulus of a complex number is the square root of its norm.
+The *modulus* of a complex number is a measure of the length of the vector representing the complex number. The modulus of a complex number *a + bi* is the square root of (*a*<sup>2</sup> + *b*<sup>2</sup>), written \|*a + bi*\|. The *norm* of a complex number *a + bi* is (*a*<sup>2</sup> + *b*<sup>2</sup>). The norm of a complex number is the square of its modulus.
 
 ### Example
 
@@ -758,8 +758,7 @@ The norm of a complex number.
 
 ### Remarks
 
-The norm of a complex number *a + bi* is *(a*<sup>2</sup> *+ b*<sup>2</sup>*).* The norm of a complex number is the square of its modulus. The modulus of a complex number is a measure of the length of the vector representing the complex number. The modulus of a complex number *a + bi* is `sqrt`*(a*<sup>2</sup> *+ b*<sup>2</sup>*),* written *&#124;a + bi&#124;.*
-
+The *norm* of a complex number *a + bi* is (*a*<sup>2</sup> + *b*<sup>2</sup>). The norm of a complex number is the square of its modulus. The *modulus* of a complex number is a measure of the length of the vector representing the complex number. The modulus of a complex number *a + bi* is the square root of (*a*<sup>2</sup> + *b*<sup>2</sup>), written \|*a + bi*\|.
 ### Example
 
 ```cpp

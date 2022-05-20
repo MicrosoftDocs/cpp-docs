@@ -99,10 +99,10 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |[bind](../standard-library/functional-functions.md#bind)|Binds arguments to a callable object.|
 |[bind1st](../standard-library/functional-functions.md#bind1st)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.<br/> (Deprecated in C++11, removed in C++17.) |
 |[bind2nd](../standard-library/functional-functions.md#bind2nd)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.<br/> (Deprecated in C++11, removed in C++17.) |
-|[bit_and](../standard-library/functional-functions.md#bit_and)|Returns the bitwise logical AND (binary operator&) of the two parameters.|
-|[bit_not](../standard-library/functional-functions.md#bit_not)|Returns the bitwise logical complement (operator~) of the parameter.<br/> (Added in C++14.) |
-|[bit_or](../standard-library/functional-functions.md#bit_or)|Returns the bitwise logical OR (operator&#124;) of the two parameters.|
-|[bit_xor](../standard-library/functional-functions.md#bit_xor)|Returns the bitwise logical XOR (operator^) of the two parameters.|
+|[bit_and](../standard-library/functional-functions.md#bit_and)|Returns the bitwise AND (binary `operator&`) of the two parameters.|
+|[bit_not](../standard-library/functional-functions.md#bit_not)|Returns the bitwise complement (`operator~`) of the parameter.<br/> (Added in C++14.) |
+|[bit_or](../standard-library/functional-functions.md#bit_or)|Returns the bitwise OR (`operator|`) of the two parameters.|
+|[bit_xor](../standard-library/functional-functions.md#bit_xor)|Returns the bitwise XOR (`operator^`) of the two parameters.|
 |[cref](../standard-library/functional-functions.md#cref)|Constructs a const `reference_wrapper` from an argument.|
 |[invoke](../standard-library/functional-functions.md#invoke)||
 |[mem_fn](../standard-library/functional-functions.md#mem_fn)|Generates a simple call wrapper.|
