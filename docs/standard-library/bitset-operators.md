@@ -253,9 +253,9 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a> operator&#124;
+## <a name="op_or"></a> `operator|`
 
-Performs a bitwise `OR` between two bitsets.
+Performs a bitwise OR between two `bitset` objects.
 
 ```cpp
 template <size_t size>
