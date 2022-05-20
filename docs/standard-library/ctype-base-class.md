@@ -62,7 +62,7 @@ It defines an enumeration mask. Each enumeration constant characterizes a differ
 
 - **graph** (function [isgraph](../standard-library/locale-functions.md#isgraph))
 
-You can characterize a combination of classifications by a bitwise OR of these constants. In particular, it's always true that **alnum** == ( **alpha** \| **digit**\) and **graph** == \( **alnum** \| **punct**).
+You can characterize a combination of classifications by a bitwise OR of these constants. In particular, it's always true that **alnum** == ( **alpha** \| **digit** ) and **graph** == ( **alnum** \| **punct** ).
 
 ## Requirements
 
