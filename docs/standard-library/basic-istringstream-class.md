@@ -101,9 +101,9 @@ An rvalue reference of a `basic_istringstream` object.
 
 ### Remarks
 
-The first constructor initializes the base class by calling [basic_istream](../standard-library/basic-istream-class.md)(`sb`), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>. It also initializes `sb` by calling `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `_Mode` &#124; `ios_base::in`).
+The first constructor initializes the base class by calling [basic_istream](../standard-library/basic-istream-class.md)(`sb`), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>. It also initializes `sb` by calling `basic_stringbuf< Elem, Tr, Alloc >( _Mode | ios_base::in)`.
 
-The second constructor initializes the base class by calling `basic_istream(sb)`. It also initializes `sb` by calling `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `str`, `_Mode` &#124; `ios_base::in`).
+The second constructor initializes the base class by calling `basic_istream(sb)`. It also initializes `sb` by calling `basic_stringbuf< Elem, Tr, Alloc >( str, _Mode | ios_base::in)`.
 
 The third constructor initializes the object with the contents of *right*, treated as an rvalue reference.
 

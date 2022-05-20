@@ -202,7 +202,7 @@ Two more useful values are:
 
 - `all`, corresponding to the C union of all categories LC_ALL
 
-You can represent an arbitrary group of categories by using `OR` with these constants, as in `monetary` &#124; `time`.
+You can represent an arbitrary group of categories by using a bitwise-OR with these constants, as in `monetary | time`.
 
 ## <a name="classic"></a> locale::classic
 
