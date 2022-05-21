@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono>"
 title: "<chrono>"
-ms.date: 10/13/2021
+ms.date: 05/20/2022
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 
@@ -14,7 +14,11 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 - `high_resolution_clock` is now a typedef for `steady_clock`
 In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typedef` for `chrono::time_point<steady_clock>`.  However, this isn't necessarily the case for other implementations.
 
-While the STL generally provides all features on all supported versions of Windows, leap seconds and time zones (which change over time) require OS support that was added to Windows 10. Specifically, updating the leap second database requires Windows 10 version 1809 or later, and time zones require icu.dll which is provided by Windows 10 version 1903/19H1 or later. This applies to both client and server OSes; note that Windows Server 2019 is based on Windows 10 version 1809. Attempting to use the time-zone facilities when running on older versions of windows will result in a runtime error.
+Leap seconds and time zones, which change over time, require OS support that was added to Windows 10.
+- Updating the leap second database requires Windows 10 version 1809 or later.
+- Time zones require `icu.dll` which is provided by Windows 10 version 1903/19H1 or later. This applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809. 
+
+Using the time-zone facilities when running on older versions of Windows results in a runtime error.
 
 ## Requirements
 
