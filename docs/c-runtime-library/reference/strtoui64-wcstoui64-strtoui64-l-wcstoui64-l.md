@@ -69,9 +69,9 @@ For more information on return codes, see [`_doserrno`, `errno`, `_sys_errlist`,
 
 The **`_strtoui64`** function converts *`strSource`* to an **`unsigned __int64`**. **`_wcstoui64`** is a wide-character version of **`_strtoui64`**; its *`strSource`* argument is a wide-character string. Otherwise these functions behave identically.
 
-Both functions stop reading the string *`strSource`* at the first character they can't recognize as part of a number. This character may be the terminating null character, or it may be the first numeric character greater than or equal to *`base`*.
+Both functions stop reading the string *`strSource`* at the first character they can't recognize as part of a number. It may be the terminating null character, or it may be the first numeric character greater than or equal to *`base`*.
 
-By default, this function's global state is scoped to the application. to change it, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
@@ -80,7 +80,7 @@ By default, this function's global state is scoped to the application. to change
 |**`_tcstoui64`**|**`_strtoui64`**|**`_strtoui64`**|**`_wcstoui64`**|
 |**`_tcstoui64_l`**|**`_strtoui64_l`**|**`_strtoui64_l`**|**`_wcstoui64_l`**|
 
-The current locale's **`LC_NUMERIC`** category setting determines recognition of the radix character in *`strSource`*; for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoui64_l`** and **`_wcstoui64_l`** are identical to the corresponding functions without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The current locale's **`LC_NUMERIC`** category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoui64_l`** and **`_wcstoui64_l`** are identical to the corresponding functions without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
 
@@ -88,7 +88,7 @@ If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan
 
 > [*whitespace*] [{**`+`** \| **`-`**}] [**`0`** [{ **`x`** \| **`X`** }]] [*digits*  \| *letters*]
 
-A *whitespace* may consist of space and tab characters, which are ignored. *digits* are one or more decimal digits. *letters* are one or more of the letters 'a' through 'z' (or 'A' through 'Z'). The first character that doesn't fit this form stops the scan. If *`base`* is between 2 and 36, then it's used as the base of the number. If *`base`* is 0, the initial characters of the string pointed to by *`strSource`* are used to determine the base. If the first character is 0 and the second character isn't 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *`base`* are permitted. The first character outside the range of the base stops the scan. For example, if *`base`* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan.
+A *whitespace* may consist of space and tab characters, which are ignored. *digits* are one or more decimal digits. *letters* are one or more of the letters 'a' through 'z' (or 'A' through 'Z'). The first character that doesn't fit this form stops the scan. If *`base`* is between 2 and 36, then it's used as the base of the number. If *`base`* is 0, the initial characters of the string pointed to by *`strSource`* are used to determine the base. If the first character is '0' and the second character isn't 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *`base`* are permitted. The first character outside the range of the base stops the scan. For example, if *`base`* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan.
 
 ## Requirements
 
@@ -126,7 +126,7 @@ u = 18446744073709551615
 [Data conversion](../../c-runtime-library/data-conversion.md)\
 [Locale](../../c-runtime-library/locale.md)\
 [`localeconv`](localeconv.md)\
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
 [String to numeric value functions](../../c-runtime-library/string-to-numeric-value-functions.md)\
 [`strtod`, `_strtod_l`, `wcstod`, `_wcstod_l`](strtod-strtod-l-wcstod-wcstod-l.md)\
 [`strtoul`, `_strtoul_l`, `wcstoul`, `_wcstoul_l`](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\

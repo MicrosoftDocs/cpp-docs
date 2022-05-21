@@ -80,9 +80,9 @@ By default, this function's global state is scoped to the application. To change
 |--|--|--|--|
 | **`_tsopen_s`** | **`_sopen_s`** | **`_sopen_s`** | **`_wsopen_s`** |
 
-The integer expression *oflag* is formed by combining one or more manifest constants, which are defined in `<fcntl.h>`. When two or more constants form the argument *`oflag`*, they're combined with the bitwise-OR operator ( **`|`** ).
+The integer expression *`oflag`* is formed by combining one or more manifest constants, which are defined in `<fcntl.h>`. When two or more constants form the argument *`oflag`*, they're combined with the bitwise-OR operator ( **`|`** ).
 
-| *oflag* constant | Behavior |
+| *`oflag`* constant | Behavior |
 |--|--|
 | **`_O_APPEND`** | Moves the file pointer to the end of the file before every write operation. |
 | **`_O_BINARY`** | Opens the file in binary (untranslated) mode. (See [`fopen`](fopen-wfopen.md) for a description of binary mode.) |

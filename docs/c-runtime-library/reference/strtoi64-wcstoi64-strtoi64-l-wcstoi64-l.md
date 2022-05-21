@@ -67,7 +67,7 @@ For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlis
 
 ## Remarks
 
-The **`_strtoi64`** function converts *`strSource`* to an **`__int64`**. Both functions stop reading the string *`strSource`* at the first character they can't recognize as part of a number. This character may be the terminating null character, or it may be the first numeric character greater than or equal to *`base`*. **`_wcstoi64`** is a wide-character version of **`_strtoi64`**; its *`strSource`* argument is a wide-character string. These functions behave identically otherwise.
+The **`_strtoi64`** function converts *`strSource`* to an **`__int64`**. Both functions stop reading the string *`strSource`* at the first character they can't recognize as part of a number. It may be the terminating null character, or it may be the first numeric character greater than or equal to *`base`*. **`_wcstoi64`** is a wide-character version of **`_strtoi64`**; its *`strSource`* argument is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
@@ -84,9 +84,9 @@ If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan
 
 **`_strtoi64`** expects *`strSource`* to point to a string of the following form:
 
-> [*whitespace*] [{**`+`** \| **`-`**}] [**`0`** [{ **`x`** \| **`X`** }]] [*digits*  \| *letters*]
+> [*whitespace*] [{**`+`** \| **`-`**}] [**`0`** [{ **`x`** \| **`X`** }]] [*digits* \| *letters*]
 
-A *whitespace* may consist of space and tab characters, which are ignored. *digits* are one or more decimal digits. *letters* are one or more of the letters 'a' through 'z' (or 'A' through 'Z'). The first character that doesn't fit this form stops the scan. If *`base`* is between 2 and 36, then it's used as the base of the number. If *`base`* is 0, the initial characters of the string pointed to by *`strSource`* are used to determine the base. If the first character is 0 and the second character isn't 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *`base`* are permitted. The first character outside the range of the base stops the scan. For example, if *`base`* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan.
+A *whitespace* may consist of space and tab characters, which are ignored. *digits* are one or more decimal digits. *letters* are one or more of the letters 'a' through 'z' (or 'A' through 'Z'). The first character that doesn't fit this form stops the scan. If *`base`* is between 2 and 36, then it's used as the base of the number. If *`base`* is 0, the initial characters of the string pointed to by *`strSource`* are used to determine the base. If the first character is '0' and the second character isn't 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *`base`* are permitted. The first character outside the range of the base stops the scan. For example, if *`base`* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan.
 
 ## Requirements
 
