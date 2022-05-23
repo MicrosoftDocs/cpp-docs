@@ -9,8 +9,6 @@ helpviewer_keywords: ["std::chrono [C++], leap_second_info struct", "std::chrono
 
 Call [`get_leap_second_info`](./chrono-functions.md#std-chrono-get-leap-second-info) to get a `leap_second_info`. This type only has public data members. It doesn't have base classes or members other than the ones specified.
 
-Microsoft C++ supports the `leap_second_info` struct starting in Visual Studio 2019 version 16.10. The `leap_second_info` struct is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
-
 ## Syntax
 
 ```cpp
@@ -27,6 +25,12 @@ struct leap_second_info; // C++20
 ## Requirements
 
 **Header:** `<chrono>`
+
+Microsoft C++ supports the `leap_second` class starting in Visual Studio 2019 version 16.10. The `leap_second` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
+
+Leap seconds are added by an international standards body. OS support for a database of these changes was added to Windows 10.
+
+Updates to the leap second database require Windows 10 version 1809 or later.
 
 **Namespace:** `std::chrono`
 

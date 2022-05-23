@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: time_zone class"
 title: "time_zone class"
-ms.date: 09/30/2021
+ms.date: 05/23/2022
 f1_keywords: ["chrono/std::chrono::time_zone::name", "chrono/std::chrono::time_zone::get_info", "chrono/std::chrono::time_zone::to_sys", "chrono/std::chrono::time_zone::to_local"]
 helpviewer_keywords: ["std::chrono [C++], time_zone class", "std::chrono::time_zone::name function", "std::chrono::time_zone::get_info function", "std::chrono::time_zone::to_sys function", "std::chrono::time_zone::to_local function"]
 ---
@@ -44,6 +44,12 @@ Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 vers
 ## Requirements
 
 **Header:** `<chrono>`
+
+At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
+
+Regional legislatures may change time zones. Leap seconds are added by an international standards body. OS support for a database of these changes was added to Windows 10.
+- Updates to the leap second database require Windows 10 version 1809 or later.
+- Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
 
 **Namespace:** `std::chrono`
 

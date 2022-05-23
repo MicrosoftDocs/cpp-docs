@@ -31,8 +31,6 @@ struct zoned_traits<const time_zone*>; // C++20
 
 The pointer to the type that you supply doesn't have to provide the static functions `default_zone()` or `locate_zone()`. But if it doesn't, the `zoned_time` constructors won't be considered during overload resolution.
 
-Microsoft C++ supports `zoned_traits` starting in Visual Studio 2019 version 16.10.
-
 ## Members
 
 |Name|Description|
@@ -47,6 +45,10 @@ Microsoft C++ supports `zoned_traits` starting in Visual Studio 2019 version 16.
 **Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
+
+Microsoft C++ supports the `leap_second` class starting in Visual Studio 2019 version 16.10. The `leap_second` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
+
+Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
 
 ## <a name="default_zone"></a> `default_zone`
 

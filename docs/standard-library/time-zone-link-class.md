@@ -25,9 +25,6 @@ Although this type has a default move constructor and move assignment operator, 
 
 In Microsoft's implementation, time zone data can differ in some cases from the Internet Assigned Numbers Authority (IANA) time zone database. For example, `"America/Nuuk"` is returned instead of `"America/Godthab"` (`"America/Nuuk"` was renamed `"America/Godthab"` in April 2020). We don't supply the `"Eastern War Time EWT"` time zone at this time. See [Issue #1786](https://github.com/microsoft/STL/issues/1786) on the Microsoft STL GitHub repo for more details.
 
-> [!NOTE]
-> At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
-
 ## Members
 
 ### Public member functions and function templates
@@ -47,6 +44,12 @@ In Microsoft's implementation, time zone data can differ in some cases from the 
 ## Requirements
 
 **Header:** `<chrono>`
+
+At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
+
+Regional legislatures may change time zones. OS support for a database of these changes was added to Windows 10.
+
+Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
 
 **Namespace:** `std::chrono`
 
