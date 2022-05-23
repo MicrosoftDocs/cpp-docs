@@ -47,9 +47,9 @@ Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 vers
 
 At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
 
-Regional legislatures may change time zones. Leap seconds are added by an international standards body. OS support for a database of these changes was added to Windows 10.
-- Updates to the leap second database require Windows 10 version 1809 or later.
-- Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
+Regional legislatures may change time zones. OS support for a database of these changes was added to Windows 10.
+
+Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
 
 **Namespace:** `std::chrono`
 
