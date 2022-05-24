@@ -14,11 +14,11 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 - `high_resolution_clock` is now a typedef for `steady_clock`
 In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typedef` for `chrono::time_point<steady_clock>`.  However, this isn't necessarily the case for other implementations.
 
-Leap seconds and time zones, which change over time, require OS support that was added to Windows 10.
-- Updating the leap second database requires Windows 10 version 1809 or later.
-- Time zones require `icu.dll` which is provided by Windows 10 version 1903/19H1 or later. This applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809. 
+Time zones are changed over time by regional legislatures. Leap seconds are added by an international standards body. OS support for a database of these changes was added to Windows 10.
+- Updates to the leap second database require Windows 10 version 1809 or later.
+- Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809. 
 
-Using the time-zone facilities when running on older versions of Windows results in a runtime error.
+Use of the time-zone facilities when running on older versions of Windows results in a runtime error.
 
 ## Requirements
 
