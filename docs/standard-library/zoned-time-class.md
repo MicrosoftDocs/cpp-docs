@@ -58,7 +58,7 @@ At this time, time-zone data is only available on Windows version 19H1, and late
 
 Regional legislatures may change time zones. OS support for a database of these changes was added to Windows 10.
 
-Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
+Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
 
 **Namespace:** `std::chrono`
 
