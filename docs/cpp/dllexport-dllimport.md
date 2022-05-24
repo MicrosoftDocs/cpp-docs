@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: dllexport, dllimport"
 title: "dllexport, dllimport"
-ms.date: "11/04/2016"
+ms.date: 05/24/2022
 f1_keywords: ["dllimport_cpp", "dllexport_cpp"]
 helpviewer_keywords: ["dllexport __declspec keyword", "__declspec keyword [C++], dllexport", "dllimport __declspec keyword", "__declspec keyword [C++], dllimport"]
 ms.assetid: ff95b645-ef55-4e72-b848-df44657b3208
 ---
-# dllexport, dllimport
+# `dllexport`, `dllimport`
 
 **Microsoft Specific**
 
@@ -14,20 +14,18 @@ The **`dllexport`** and **`dllimport`** storage-class attributes are Microsoft-s
 
 ## Syntax
 
-```
-   __declspec( dllimport ) declarator
-   __declspec( dllexport ) declarator
-```
+> **`__declspec( dllimport )`** *`declarator`*\
+> **`__declspec( dllexport )`** *`declarator`*
 
 ## Remarks
 
-These attributes explicitly define the DLL's interface to its client, which can be the executable file or another DLL. Declaring functions as **`dllexport`** eliminates the need for a module-definition (.def) file, at least with respect to the specification of exported functions. The **`dllexport`** attribute replaces the **__export** keyword.
+These attributes explicitly define the DLL's interface to its client, which can be the executable file or another DLL. Declaring functions as **`dllexport`** eliminates the need for a module-definition (`.def`) file, at least with respect to the specification of exported functions. The **`dllexport`** attribute replaces the **`__export`** keyword.
 
-If a class is marked declspec(dllexport), any specializations of class templates in the class hierarchy are implicitly marked as declspec(dllexport). This means that class templates are explicitly instantiated and the class's members must be defined.
+If a class is marked `__declspec(dllexport)`, any specializations of class templates in the class hierarchy are implicitly marked as `__declspec(dllexport)`. It means that class templates are explicitly instantiated and the class's members must be defined.
 
-**`dllexport`** of a function exposes the function with its decorated name. For C++ functions, this includes name mangling. For C functions or functions that are declared as `extern "C"`, this includes platform-specific decoration that's based on the calling convention. For information on name decoration in C/C++ code, see [Decorated Names](../build/reference/decorated-names.md). No name decoration is applied to exported C functions or C++ `extern "C"` functions using the **`__cdecl`** calling convention.
+**`dllexport`** of a function exposes the function with its decorated name, sometimes known as "name mangling". For C++ functions, the decorated name includes extra characters that encode type and parameter information. C functions or functions that are declared as `extern "C"` include platform-specific decoration that's based on the calling convention. No name decoration is applied to exported C functions or C++ `extern "C"` functions that use the **`__cdecl`** calling convention. For more information on name decoration in C/C++ code, see [Decorated names](../build/reference/decorated-names.md).
 
-To export an undecorated name, you can link by using a Module Definition (.def) file that defines the undecorated name in an EXPORTS section. For more information, see [EXPORTS](../build/reference/exports.md). Another way to export an undecorated name is to use a `#pragma comment(linker, "/export:alias=decorated_name")` directive in the source code.
+To export an undecorated name, you can link by using a Module Definition (`.def`) file that defines the undecorated name in an `EXPORTS` section. For more information, see [`EXPORTS`](../build/reference/exports.md). Another way to export an undecorated name is to use a `#pragma comment(linker, "/export:alias=decorated_name")` directive in the source code.
 
 When you declare **`dllexport`** or **`dllimport`**, you must use [extended attribute syntax](../cpp/declspec.md) and the **`__declspec`** keyword.
 
@@ -53,17 +51,17 @@ DllExport int n;
 
 For more information, see:
 
-- [Definitions and Declarations](../cpp/definitions-and-declarations-cpp.md)
+- [Definitions and declarations](../cpp/definitions-and-declarations-cpp.md)
 
-- [Defining Inline C++ Functions with dllexport and dllimport](../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md)
+- [Defining inline C++ functions with `dllexport` and `dllimport`](../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md)
 
-- [General Rules and Limitations](../cpp/general-rules-and-limitations.md)
+- [General rules and limitations](../cpp/general-rules-and-limitations.md)
 
-- [Using dllimport and dllexport in C++ Classes](../cpp/using-dllimport-and-dllexport-in-cpp-classes.md)
+- [Using `dllimport` and `dllexport` in C++ classes](../cpp/using-dllimport-and-dllexport-in-cpp-classes.md)
 
 **END Microsoft Specific**
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
+[`__declspec`](../cpp/declspec.md)\
 [Keywords](../cpp/keywords-cpp.md)

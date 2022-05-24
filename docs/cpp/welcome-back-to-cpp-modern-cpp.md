@@ -142,7 +142,7 @@ Macros in C and C++ are tokens that are processed by the preprocessor before com
 constexpr int size = 10; // modern C++
 ```
 
-### Uniform initialization
+## Uniform initialization
 
 In modern C++, you can use brace initialization for any type. This form of initialization is especially convenient when initializing arrays, vectors, or other containers. In the following example, `v2` is initialized with three instances of `S`. `v3` is initialized with three instances of `S` that are themselves initialized using braces. The compiler infers the type of each element based on the declared type of `v3`.
 
