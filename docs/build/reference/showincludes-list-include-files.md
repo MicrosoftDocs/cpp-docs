@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /showIncludes (List include files)"
 title: "/showIncludes (List include files)"
-ms.date: 04/15/2021
+ms.date: 05/24/2022
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ShowIncludes", "VC.Project.VCCLCompilerTool.ShowIncludes", "/showincludes"]
 helpviewer_keywords: ["include files", "/showIncludes compiler option [C++]", "include files, displaying in compilation", "-showIncludes compiler option [C++]", "showIncludes compiler option [C++]"]
 ---
@@ -29,8 +29,6 @@ Note: including file:  d:\temp\2.h
 ```
 
 In this case, *`2.h`* was included from within *`1.h`*, causing the indentation.
-
-The **`/showIncludes`** option emits to `stderr`, not `stdout`.
 
 ### To set this compiler option in the Visual Studio development environment
 

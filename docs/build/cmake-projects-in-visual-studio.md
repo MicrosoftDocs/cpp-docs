@@ -39,7 +39,7 @@ When you **open a folder** containing a *`CMakeLists.txt`* file, the following t
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
 > [!NOTE]
-> Starting in Visual Studio 2022 version 17.1 Preview 2, if your folder doesn't contain a root `CMakeLists.txt` you'll be prompted whether you'd like to enable CMake integration or not. For more information, see [CMake partial activation](#cmake-partial-activation).
+> Starting in Visual Studio 2022 version 17.1 Preview 2, if your top-level `CMakeLists.txt` exists in a subfolder and not at the root of the workspace, you'll be prompted whether you'd like to enable CMake integration or not. For more information, see [CMake partial activation](#cmake-partial-activation).
 
 Once CMake cache generation has succeeded, you can also view your projects organized logically by targets. Choose the **Select View** button on the **Solution Explorer** toolbar. From the list in **Solution Explorer - Views**, select **CMake Targets View** and press **Enter** to open the targets view:
 
