@@ -61,7 +61,7 @@ set OMP_NESTED[=TRUE | =FALSE]
 
 The `OMP_NESTED` environment variable can be overridden by the [omp_set_nested](openmp-functions.md#omp-set-nested) function.
 
-The default value in the Visual C++ implementation of the OpenMP standard is `OMP_DYNAMIC=FALSE`.
+The default value in the Visual C++ implementation of the OpenMP standard is `OMP_NESTED=FALSE`.
 
 For more information, see [4.4 OMP_NESTED](../4-environment-variables.md#44-omp_nested).
 
