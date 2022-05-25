@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 02/15/2022
+ms.date: 05/24/2022
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
@@ -9,9 +9,34 @@ ms.custom: intro-whats-new
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
 
+## What's new for C++ in Visual Studio version 17.2
+
+For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.2](/visualstudio/releases/2022/release-notes).
+
+- Added compiler support for C++23 feature [deducing `this`](https://wg21.link/p0847), available under the **`/std:c++latest`** option.
+
+- Added IntelliSense support for C++23 features [deducing `this`](https://wg21.link/p0847) and [`if consteval`](http://wg21.link/p1938).
+
+- Added inline parameter name and type hint support, toggled by pressing **Alt+F1** or double-tapping **Ctrl**. This behavior can be customized under **Tools > Options > Text Editors > C/C++ > IntelliSense**.
+
+- Added experimental support for C++20 modules in CMake projects. This support is currently only available with the Visual Studio (MSBuild) generator.
+
+- In 17.1, we introduced peripheral register and RTOS views for embedded developers. We continue to improve the capabilities of those views with usability improvements in 17.2:
+  - The RTOS tool window is now hidden by default. It prevents showing a tool window with error messages that aren't relevant when you're not using an RTOS.
+  - When you double click on an RTOS object in the tool window, it adds a watch for the object.
+  - When you select the start and end values for the stack pointer in the RTOS tool window, it's opened in the memory window.
+  - We've added thread awareness for device targets to the call stack window.
+  - Users can now select a pin icon next to peripherals, registers, or fields to pin them the top of the Peripheral View.
+
+- We've added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20 `** option. For more information about the implemented backports, see the [C++20 Defect Reports project](https://github.com/microsoft/STL/projects/9) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
+
+- We added various C++23 Library features, available under the **`/std:c++latest`** option. For more information about the new features, see the [STL Repo changelog](https://github.com/microsoft/STL/wiki/Changelog).
+
+- Improved performance of the initial C++ indexing by up to 20%, depending on the depth of the include graph.
+
 ## What's new for C++ in Visual Studio version 17.1
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.1](/visualstudio/releases/2022/release-notes).
+For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.1](/visualstudio/releases/2022/release-notes-v17.1).
 
 - A new **Configure Preset** template has been added to configure and build CMake projects on a remote macOS system with *`CMakePresets.json`*. You can also launch CMake targets on a remote macOS system, and then debug remotely in the Visual Studio debugger backed by GDB or LLDB.
 
@@ -27,7 +52,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ## What's new for C++ in Visual Studio version 17.0
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes).
+For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes-v17.0).
 
 - The Visual Studio IDE, *`devenv.exe`*, is now a native 64-bit application.
 
