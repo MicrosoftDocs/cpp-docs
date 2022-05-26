@@ -20,7 +20,7 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 
 Regional legislatures may change time zones. Leap seconds are added by an international standards body. OS support for a database of these changes was added to Windows 10.
 - Updates to the leap second database require Windows 10 version 1809 or later.
-- Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809.
+- Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 if the latest Windows updates are applied.
 - Using the time-zone facilities on older versions of Windows results in a runtime error.
 
 **Namespace:** `std`
