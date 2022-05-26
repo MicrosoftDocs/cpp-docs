@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: Compiler errors C3500 through C3999"
 title: "Compiler errors C3500 through C3999"
-ms.date: "04/21/2019"
-f1_keywords: ["C3502", "C3503", "C3504", "C3511", "C3512", "C3513", "C3514", "C3515", "C3516", "C3517", "C3518", "C3520", "C3521", "C3522", "C3523", "C3524", "C3525", "C3526", "C3527", "C3528", "C3529", "C3534", "C3542", "C3543", "C3544", "C3545", "C3546", "C3547", "C3548", "C3549", "C3557", "C3558", "C3559", "C3560", "C3561", "C3562", "C3563", "C3564", "C3565", "C3566", "C3567", "C3568", "C3569", "C3570", "C3571", "C3572", "C3573", "C3574", "C3575", "C3576", "C3577", "C3578", "C3579", "C3580", "C3581", "C3582", "C3583", "C3584", "C3585", "C3586", "C3587", "C3588", "C3589", "C3590", "C3591", "C3592", "C3593", "C3594", "C3595", "C3596", "C3597", "C3598", "C3599", "C3600", "C3601", "C3602", "C3604", "C3605", "C3613", "C3614", "C3616", "C3620", "C3621", "C3635", "C3636", "C3649", "C3658", "C3659", "C3660", "C3663", "C3664", "C3667", "C3674", "C3676", "C3677", "C3678", "C3679", "C3680", "C3681", "C3682", "C3683", "C3684", "C3685", "C3686", "C3687", "C3688", "C3689", "C3690", "C3691", "C3696", "C3716", "C3720", "C3725", "C3726", "C3729", "C3730", "C3735", "C3742", "C3746", "C3750", "C3751", "C3756", "C3757", "C3758", "C3759", "C3760", "C3770", "C3773", "C3774", "C3775", "C3776", "C3777", "C3778", "C3780", "C3781", "C3782", "C3783", "C3784", "C3785", "C3786", "C3787", "C3801", "C3802", "C3806", "C3811", "C3814", "C3819", "C3822", "C3823", "C3826", "C3827", "C3829", "C3837", "C3840", "C3841", "C3843", "C3844", "C3845", "C3863", "C3870", "C3871", "C3875", "C3879", "C3881", "C3882", "C3884", "C3885", "C3897", "C3905", "C3906", "C3916", "C3921", "C3924", "C3925", "C3926", "C3927", "C3928", "C3930", "C3931", "C3932", "C3933", "C3934", "C3935", "C3936", "C3937", "C3938", "C3939", "C3940", "C3941", "C3945", "C3946", "C3947", "C3948", "C3949", "C3950", "C3951", "C3952", "C3953", "C3954", "C3955", "C3956", "C3957", "C3958", "C3959", "C3960", "C3961", "C3962", "C3963", "C3964", "C3965", "C3966", "C3967", "C3968", "C3969", "C3970", "C3971", "C3972", "C3975", "C3976", "C3977", "C3978", "C3979", "C3980", "C3981", "C3982", "C3983", "C3984", "C3985", "C3986", "C3987", "C3988", "C3989", "C3990", "C3991", "C3992", "C3993", "C3994", "C3995", "C3996", "C3997", "C3998", "C3999"]
+ms.date: 05/25/2022
+f1_keywords: ["C3502", "C3503", "C3504", "C3511", "C3512", "C3513", "C3514", "C3515", "C3516", "C3517", "C3518", "C3520", "C3521", "C3522", "C3523", "C3524", "C3525", "C3526", "C3527", "C3528", "C3529", "C3534", "C3542", "C3543", "C3544", "C3545", "C3546", "C3547", "C3548", "C3549", "C3557", "C3558", "C3559", "C3560", "C3561", "C3562", "C3563", "C3564", "C3565", "C3566", "C3567", "C3568", "C3569", "C3570", "C3571", "C3572", "C3573", "C3574", "C3575", "C3576", "C3577", "C3578", "C3579", "C3580", "C3581", "C3582", "C3583", "C3584", "C3585", "C3586", "C3587", "C3588", "C3589", "C3590", "C3591", "C3592", "C3593", "C3594", "C3595", "C3596", "C3597", "C3598", "C3599", "C3600", "C3601", "C3602", "C3604", "C3605", "C3606", "C3613", "C3614", "C3616", "C3617", "C3620", "C3621", "C3635", "C3636", "C3639", "C3643", "C3649", "C3658", "C3659", "C3660", "C3663", "C3664", "C3667", "C3674", "C3676", "C3677", "C3678", "C3679", "C3680", "C3681", "C3682", "C3683", "C3684", "C3685", "C3686", "C3687", "C3688", "C3689", "C3690", "C3691", "C3692", "C3693", "C3694", "C3695", "C3696", "C3700", "C3716", "C3720", "C3725", "C3726", "C3729", "C3730", "C3735", "C3742", "C3746", "C3750", "C3751", "C3756", "C3757", "C3758", "C3759", "C3760", "C3770", "C3773", "C3774", "C3775", "C3776", "C3777", "C3778", "C3780", "C3781", "C3782", "C3783", "C3784", "C3785", "C3786", "C3787", "C3788", "C3789", "C3790", "C3791", "C3792", "C3793", "C3794", "C3795", "C3796", "C3801", "C3802", "C3806", "C3810", "C3811", "C3814", "C3819", "C3822", "C3823", "C3826", "C3827", "C3829", "C3837", "C3840", "C3841", "C3843", "C3844", "C3845", "C3847", "C3863", "C3870", "C3871", "C3875", "C3876", "C3877", "C3878", "C3879", "C3881", "C3882", "C3884", "C3885", "C3897", "C3905", "C3906", "C3907", "C3916", "C3921", "C3924", "C3925", "C3926", "C3927", "C3928", "C3930", "C3931", "C3932", "C3933", "C3934", "C3935", "C3936", "C3937", "C3938", "C3939", "C3940", "C3941", "C3945", "C3946", "C3947", "C3948", "C3949", "C3950", "C3951", "C3952", "C3953", "C3954", "C3955", "C3956", "C3957", "C3958", "C3959", "C3960", "C3961", "C3962", "C3963", "C3964", "C3965", "C3966", "C3967", "C3968", "C3969", "C3970", "C3971", "C3972", "C3973", "C3974", "C3975", "C3976", "C3977", "C3978", "C3979", "C3980", "C3981", "C3982", "C3983", "C3984", "C3985", "C3986", "C3987", "C3988", "C3989", "C3990", "C3991", "C3992", "C3993", "C3994", "C3995", "C3996", "C3997", "C3998", "C3999"]
 ms.assetid: bd6f23ad-b300-4e07-8e35-9661cab1585f
 ---
 # Compiler errors C3500 through C3999
@@ -25,7 +25,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3507](compiler-error-c3507.md)|a ProgID can have no more than 39 characters '*progid*'; nor contain any punctuation apart from '.'; nor start with a digit|
 |[Compiler error C3508](compiler-error-c3508.md)|'*type*': is not a valid Automation type|
 |[Compiler error C3509](compiler-error-c3509.md)|'*type*': invalid Automation return type; when a parameter is marked 'retval', the return type must be 'void', 'HRESULT' or 'SCODE'|
-|[Compiler error C3510](compiler-error-c3510.md)|cannot locate dependent type library *library*|
+|[Compiler error C3510](compiler-error-c3510.md)|cannot locate dependent type library *library_name*|
 |Compiler error C3511|'*identifier*': a call to a delegating constructor shall be the only member-initializer|
 |Compiler error C3512|the delimiting character sequence for a raw string literal shall have no more than 16 characters|
 |Compiler error C3513|'*string*': unsupported raw string literal delimiter character|
@@ -121,9 +121,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3603](compiler-error-c3603.md)|'*symbol*': type '*type*' not yet supported|
 |Compiler error C3604|'*identifier*': can only create a managed object on the gc heap|
 |Compiler error C3605|The total number of samplers (*number* captured and *number* predefined) exceed *number* when compiling the call graph for the concurrency::parallel_for_each at: '*function*'|
-|Compiler error C3606|Obsolete.|
-|Compiler error C3607|Obsolete.|
-|Compiler error C3608|Obsolete.|
+| Compiler error C3606 | intrinsic function '*function*' cannot be mapped to HLSL |
 |[Compiler error C3609](compiler-error-c3609.md)|'*identifier*': a 'sealed/final' function must be virtual|
 |[Compiler error C3610](compiler-error-c3610.md)|'*identifier*': value type must be 'boxed' before method '*method*' can be called|
 |[Compiler error C3611](compiler-error-c3611.md)|'*identifier*': a sealed function cannot have a pure-specifier|
@@ -132,7 +130,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3614|Differing values for pack size within the same class; previous was '*value*', new value is '*value*'|
 |[Compiler error C3615](compiler-error-c3615.md)|constexpr function '*function*' cannot result in a constant expression|
 |Compiler error C3616|Obsolete.|
-|Compiler error C3617|Obsolete.|
+| Compiler error C3617 | initializers of structured bindings must be of array or non-union class type; type '*type_name*' is not permitted |
 |[Compiler error C3618](compiler-error-c3618.md)|'*declaration*': a method marked DllImport cannot be defined|
 |[Compiler error C3619](compiler-error-c3619.md)|a template cannot be declared within a managed/WinRT type|
 |Compiler error C3620|'*type*': setting the alignment is not allowed on WinRT types|
@@ -145,7 +143,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3627](compiler-error-c3627.md)|Only a value type can be boxed|
 |[Compiler error C3628](compiler-error-c3628.md)|'*class*': managed/WinRT classes only support public inheritance|
 |Compiler error C3629|'*token*': a capture default can only appear at the beginning of a lambda capture list|
-|[Compiler error C3630](compiler-error-c3630.md)|error when processing the token '*token*'|
+|[Compiler error C3630](compiler-error-c3630.md)|error when processing the token '*token*' (Obsolete in Visual Studio 2022.)|
 |[Compiler error C3631](compiler-error-c3631.md)|'*event*': cannot overload managed/WinRT events|
 |[Compiler error C3632](compiler-error-c3632.md)|'*event*': illegal style of event for *construct*|
 |[Compiler error C3633](compiler-error-c3633.md)|cannot define '*identifier*' as a member of managed '*class*'|
@@ -154,11 +152,11 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3636|'*identifier*': cannot be applied to this type|
 |[Compiler error C3637](compiler-error-c3637.md)|'*function*': a friend function definition cannot be a specialization of a function template/generic|
 |[Compiler error C3638](compiler-error-c3638.md)|'*operator*': the standard boxing and unboxing conversion operators cannot be redefined|
-|Compiler error C3639|Obsolete.|
+| Compiler error C3639 | a lambda that is part of a default argument can only have an init-capture |
 |[Compiler error C3640](compiler-error-c3640.md)|'*member*': a referenced or virtual member function of a local class must be defined|
-|[Compiler error C3641](compiler-error-c3641.md)|'*function*': invalid calling convention '*convention*' for function compiled with /clr:pure or /clr:safe|
+|[Compiler error C3641](compiler-error-c3641.md)|'*function*': invalid calling convention '*convention*' for function compiled with `/clr:pure` or `/clr:safe`|
 |[Compiler error C3642](compiler-error-c3642.md)|'*function*': cannot call a function with __clrcall calling convention from native code|
-|Compiler error C3643|Obsolete.|
+| Compiler error C3643 | '%$S': cannot decompose type with non-static data-members in both '%$S' and '%$S' |
 |[Compiler error C3644](compiler-error-c3644.md)|'*function*': cannot compile the function to generate managed code|
 |[Compiler error C3645](compiler-error-c3645.md)|'*function*': __clrcall cannot be used on functions compiled to native code|
 |[Compiler error C3646](compiler-error-c3646.md)|'*identifier*': unknown override specifier|
@@ -207,15 +205,15 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3689|'operator *identifier*': literal operator/literal operator template must be in a global or namespace scope|
 |Compiler error C3690|expected a string literal, but found a user-defined string literal instead|
 |Compiler error C3691|invalid literal prefix '*prefix*'|
-|Compiler error C3692|Obsolete.|
-|Compiler error C3693|Obsolete.|
-|Compiler error C3694|Obsolete.|
-|Compiler error C3695|Obsolete.|
+| Compiler error C3692 | non-scalar type '*type_name*' cannot be used in a pseudo-destructor expression |
+| Compiler error C3693 | '*identifier*': bit-fields cannot be captured by reference |
+| Compiler error C3694 | a structured binding declaration can contain no specifiers other than 'static', 'thread_local', 'auto', and cv-qualifiers |
+| Compiler error C3695 | '%$S': cannot decompose a type containing an anonymous union or struct |
 |Compiler error C3696|'*keyword*': cannot use this qualifier on '%'|
 |[Compiler error C3697](compiler-error-c3697.md)|'*keyword*': cannot use this qualifier on '^'|
 |[Compiler error C3698](compiler-error-c3698.md)|'*type*': cannot use this type as argument of '*operator*'|
 |[Compiler error C3699](compiler-error-c3699.md)|'*operator*': cannot use this indirection on type '*type*'|
-|Compiler error C3700|Obsolete.|
+| Compiler error C3700 | filename is missing terminating '%c' |
 |[Compiler error C3701](compiler-error-c3701.md)|'*function*': event source has no events|
 |[Compiler error C3702](compiler-error-c3702.md)|ATL is required for COM events|
 |[Compiler error C3703](compiler-error-c3703.md)|'*event_handler*': an event handler method must have the same storage class as the source '*event*'|
@@ -231,26 +229,26 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3713](compiler-error-c3713.md)|'*event_handler*': an event handler method must have the same function parameters as the source '*event*'|
 |[Compiler error C3714](compiler-error-c3714.md)|'*event_handler*': an event handler method must have the same calling convention as the source '*event*'|
 |[Compiler error C3715](compiler-error-c3715.md)|'*pointer*': must be a pointer to '*type*'|
-|Compiler error C3716|Obsolete.|
+| Compiler error C3716 | '%$L': building precompiled header with module constructs is not allowed |
 |[Compiler error C3717](compiler-error-c3717.md)|'*member*': a method that fires events cannot be defined|
 |[Compiler error C3718](compiler-error-c3718.md)|can only call '__*keyword*' in the context of a member function of the receiving class|
 |[Compiler error C3719](compiler-error-c3719.md)|'*member*': an interface based event source can only be used for COM events|
-|Compiler error C3720|'*type*': can only implement IDispatch on a dual or dispinterface|
+|Compiler error C3720|'*type*': can only implement `IDispatch` on a dual or dispinterface|
 |[Compiler error C3721](compiler-error-c3721.md)|'*signature*': incompatible signature for event|
 |[Compiler error C3722](compiler-error-c3722.md)|a generic event is not allowed|
 |[Compiler error C3723](compiler-error-c3723.md)|'*function*': could not resolve event|
 |[Compiler error C3724](compiler-error-c3724.md)|must #include \<windows.h> to use multi-threading with events|
 |Compiler error C3725|Obsolete.|
-|Compiler error C3726|Obsolete.|
+| Compiler error C3726 | Could not apply SecureHotPatch transformations to '%s'. *explanation* |
 |[Compiler error C3727](compiler-error-c3727.md)|'*event*': a managed event must be a member function or a data member that is a pointer to a delegate|
 |[Compiler error C3728](compiler-error-c3728.md)|'*event*': event does not have a raise method|
-|Compiler error C3729|Obsolete.|
+| Compiler error C3729 | attribute specifier cannot contain both using namespace prefix and scoped attribute |
 |Compiler error C3730|Obsolete.|
 |[Compiler error C3731](compiler-error-c3731.md)|incompatible event '*event*' and handler '*event_handler*'; event source and event handler must have the same event type|
-|[Compiler error C3732](compiler-error-c3732.md)|'*interface*': a custom interface that fires COM events cannot inherit from IDispatch|
+|[Compiler error C3732](compiler-error-c3732.md)|'*interface*': a custom interface that fires COM events cannot inherit from `IDispatch`|
 |[Compiler error C3733](compiler-error-c3733.md)|'*event*': improper syntax for specifying a COM event; did you forget '__interface'?|
 |[Compiler error C3734](compiler-error-c3734.md)|'*class*': a managed/WinRT class cannot be a coclass|
-|Compiler error C3735|Obsolete.|
+| Compiler error C3735 | template or generic redefined |
 |[Compiler error C3736](compiler-error-c3736.md)|'*member*': must be a method or, in the case of managed events, optionally a data member|
 |[Compiler error C3737](compiler-error-c3737.md)|'*identifier*': a delegate may not have an explicit calling convention|
 |[Compiler error C3738](compiler-error-c3738.md)|'*convention*': the calling convention of the explicit instantiation must match that of the template being instantiated|
@@ -272,26 +270,26 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3754](compiler-error-c3754.md)|delegate constructor: member function '*member*' cannot be called on an instance of type '*type*'|
 |[Compiler error C3755](compiler-error-c3755.md)|'*identifier*': a delegate may not be defined|
 |Compiler error C3756|Obsolete.|
-|Compiler error C3757|'*type*': type not allowed for 'constexpr' function|
+| Compiler error C3757 | '*type*': type not allowed for 'constexpr' function (Obsolete in Visual Studio 2022.) |
 |Compiler error C3758|'*member*': virtual function cannot be declared 'constexpr'|
-|Compiler error C3759|'*member*': member function of non-literal type cannot be declared 'constexpr'|
-|Compiler error C3760|please use __property keyword to declare property in managed/WinRT '*class*'|
-|[Compiler error C3761](compiler-error-c3761.md)|'*function*': 'retval' can only appear on the last argument of a function|
+| Compiler error C3759 | '*member*': member function of non-literal type cannot be declared 'constexpr' (Obsolete in Visual Studio 2022.) |
+|Compiler error C3760|please use `__property` keyword to declare property in managed/WinRT '*class*'|
+|[Compiler error C3761](compiler-error-c3761.md)|'*function*': '`retval`' can only appear on the last argument of a function|
 |[Compiler error C3762](compiler-error-c3762.md)|unable to process attribute '*attribute*'|
-|[Compiler error C3763](compiler-error-c3763.md)|'*type*': 'retval' and 'out' can only appear on a data-pointer type|
+|[Compiler error C3763](compiler-error-c3763.md)|'*type*': '`retval`' and '`out`' can only appear on a data-pointer type|
 |[Compiler error C3764](compiler-error-c3764.md)|'*member*': cannot override base class method '*member*'|
 |[Compiler error C3765](compiler-error-c3765.md)|'*event*': cannot define an event in a class/struct '*type*' marked as an event_receiver|
 |[Compiler error C3766](compiler-error-c3766.md)|'*type*' must provide an implementation for the interface method '*function*'|
 |[Compiler error C3767](compiler-error-c3767.md)|'*function*': candidate function(s) not accessible|
-|[Compiler error C3768](compiler-error-c3768.md)|cannot take the address of a virtual vararg function in pure managed code|
+|[Compiler error C3768](compiler-error-c3768.md)|cannot take the address of a virtual `vararg` function in pure managed code|
 |[Compiler error C3769](compiler-error-c3769.md)|'*identifier*': a nested class cannot have the same name as the immediately enclosing class|
 |Compiler error C3770|'*type*': is not a valid base class|
 |[Compiler error C3771](compiler-error-c3771.md)|'*identifier*': friend declaration cannot be found in the nearest namespace scope|
 |[Compiler error C3772](compiler-error-c3772.md)|'*identifier*': invalid friend template declaration|
 |Compiler error C3773|please use /await compiler switch to enable coroutines|
-|Compiler error C3774|cannot find '*scope*::*identifier*': Please include *header* header|
+|Compiler error C3774|cannot find '*scope*::*identifier*': Please include *header_name* header|
 |Compiler error C3775|return type of '*function*' should not be '*type*'|
-|Compiler error C3776|cannot return an expresssion of type void in a coroutine with non-void eventual return type|
+|Compiler error C3776|cannot return an expression of type void in a coroutine with non-void eventual return type|
 |Compiler error C3777|'*function*': a coroutine cannot take a variable argument list|
 |Compiler error C3778|alloca: cannot be used in a coroutine|
 |[Compiler error C3779](compiler-error-c3779.md)|'*function*': a function that returns '*auto*' cannot be used before it is defined|
@@ -303,15 +301,15 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3785|the first template argument to 'std::integer_sequence' must be an integer type|
 |Compiler error C3786|the second template argument to 'std::make_integer_sequence' must be an integer constant greater than or equal to zero|
 |Compiler error C3787|cannot deduce the return type of this coroutine|
-|Compiler error C3788|Obsolete.|
-|Compiler error C3789|Obsolete.|
-|Compiler error C3790|Obsolete.|
-|Compiler error C3791|Obsolete.|
-|Compiler error C3792|Obsolete.|
-|Compiler error C3793|Obsolete.|
-|Compiler error C3794|Obsolete.|
-|Compiler error C3795|Obsolete.|
-|Compiler error C3796|Obsolete.|
+| Compiler error C3788 | this function cannot be a coroutine: '*type_name*' is not a class |
+| Compiler error C3789 | this function cannot be a coroutine: '%$T' does not declare the member '%$I()' |
+| Compiler error C3790 | capturing '*this' requires '%1$M' |
+| Compiler error C3791 | 'this' cannot be explicitly captured when the default capture mode is by copy (=) |
+| Compiler error C3792 | unrecognized hash algorithm '%$I' |
+| Compiler error C3793 | hash value for algorithm '%$I' must be exactly %u characters long |
+| Compiler error C3794 | file '%$S' specified in #pragma file_hash is also part of the current compilation unit |
+| Compiler error C3795 | multiple conflicting hash values for file '%$S' |
+| Compiler error C3796 | 'operator %$I': is neither a string literal operator template nor a numeric literal operator template |
 |[Compiler error C3797](compiler-error-c3797.md)|'*keyword*': event declaration cannot have override specifier (should be placed on event add/remove/raise methods instead)|
 |[Compiler error C3798](compiler-error-c3798.md)|'*keyword*': property declaration cannot have override specifier (should be placed on property get/set methods instead)|
 |[Compiler error C3799](compiler-error-c3799.md)|indexed property cannot have an empty parameter list|
@@ -325,7 +323,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3807](compiler-error-c3807.md)|'*type*': a class with the ComImport attribute cannot derive from '*type*', only interface implementation is allowed|
 |[Compiler error C3808](compiler-error-c3808.md)|'*type*': a class with the ComImport attribute cannot define member '*member*', only abstract or dllimport functions are allowed|
 |[Compiler error C3809](compiler-error-c3809.md)|'*type*': a managed/WinRT type cannot have any friend functions/classes/interfaces|
-|Compiler error C3810|Obsolete.|
+| Compiler error C3810 | '%1$S': cannot decompose type with ambiguous base class '*type_name*' |
 |Compiler error C3811|Obsolete.|
 |[Compiler error C3812](compiler-error-c3812.md)|'__property' must be the first token in a property declaration|
 |[Compiler error C3813](compiler-error-c3813.md)|a property declaration can only appear within the definition of a managed/WinRT type|
@@ -362,7 +360,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3844|'*identifier*': cannot import symbol from '*source*': as '*identifier*' already exists in the current scope|
 |Compiler error C3845|Obsolete.|
 |[Compiler error C3846](compiler-error-c3846.md)|'*identifier*': cannot import symbol from '*source*': as '*identifier*' has already been imported from another assembly '*assembly*'|
-|Compiler error C3847|Obsolete.|
+| Compiler error C3847 | a noexcept-specifier on an explicit instantiation must match that of the template being instantiated |
 |[Compiler error C3848](compiler-error-c3848.md)|expression having type '*type*' would lose some const-volatile qualifiers in order to call '*identifier*'|
 |[Compiler error C3849](compiler-error-c3849.md)|function-style call on an expression of type '*type*' would lose const and/or volatile qualifiers for all *number* available operator overloads|
 |[Compiler error C3850](compiler-error-c3850.md)|'*token*': a universal-character-name specifies an invalid character|
@@ -374,10 +372,10 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3856](compiler-error-c3856.md)|'*class*': class is not a class template/generic|
 |[Compiler error C3857](compiler-error-c3857.md)|'*template*': multiple template/generic parameter lists are not allowed|
 |[Compiler error C3858](compiler-error-c3858.md)|'*identifier*': cannot be redeclared in current scope|
-|[Compiler error C3859](compiler-error-c3859.md)|virtual memory range for PCH exceeded; please recompile with a command line option of '-Zm*number*' or greater|
+|[Compiler error C3859](compiler-error-c3859.md)|virtual memory range for PCH exceeded; please recompile with a command line option of '`-Zm`*number*' or greater|
 |[Compiler error C3860](compiler-error-c3860.md)|template/generic argument list following class template/generic name must list parameters in the order used in template/generic parameter list|
 |[Compiler error C3861](compiler-error-c3861.md)|'*identifier*': identifier not found|
-|[Compiler error C3862](compiler-error-c3862.md)|'*function*': cannot compile an unmanaged function with /clr:pure or /clr:safe|
+|[Compiler error C3862](compiler-error-c3862.md)|'*function*': cannot compile an unmanaged function with `/clr:pure` or `/clr:safe`|
 |Compiler error C3863|array type '*type*' is not assignable|
 |Compiler error C3864|Obsolete.|
 |[Compiler error C3865](compiler-error-c3865.md)|'*keyword*': can only be used on native member functions|
@@ -391,9 +389,9 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3873](compiler-error-c3873.md)|'0x*value*': this character is not allowed as a first character of an identifier|
 |[Compiler error C3874](compiler-error-c3874.md)|return type of '*identifier*' should be '*type1*' instead of '*type2*'|
 |Compiler error C3875|call of non-static member function missing argument list|
-|Compiler error C3876|Obsolete.|
-|Compiler error C3877|Obsolete.|
-|Compiler error C3878|Obsolete.|
+| Compiler error C3876 | hexadecimal floating literal requires an exponent |
+| Compiler error C3877 | invalid type argument to the TypeForwardedTo attribute |
+| Compiler error C3878 | syntax error: unexpected token '%1$L' following '%2s' |
 |Compiler error C3879|'*member*': cannot be an initonly data member|
 |[Compiler error C3880](compiler-error-c3880.md)|'*member*': cannot be a literal data member|
 |Compiler error C3881|can only inherit constructor from direct base|
@@ -404,7 +402,6 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3886](compiler-error-c3886.md)|'*member*': a literal data member must be initialized|
 |[Compiler error C3887](compiler-error-c3887.md)|'*member*': the initializer for a literal data member must be a constant expression|
 |[Compiler error C3888](compiler-error-c3888.md)|'*member*': the const expression associated with this literal data member is not supported by C++/CLI|
-|Compiler error C3889|Obsolete.|
 |[Compiler error C3890](compiler-error-c3890.md)|'*member*': you cannot take the address of a literal data member|
 |[Compiler error C3891](compiler-error-c3891.md)|'*member*': a literal data member cannot be used as a l-value|
 |[Compiler error C3892](compiler-error-c3892.md)|'*variable*': you cannot assign to a variable that is const|
@@ -422,7 +419,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3904](compiler-error-c3904.md)|'*property*': must specify *number* parameter(s)|
 |Compiler error C3905|unaligned accesses are not supported for intrinsic type '*type*'|
 |Compiler error C3906|intrinsic type '*type*' is not a supported return or argument type for vararg or unprototyped functions|
-|Compiler error C3907|Obsolete.|
+| Compiler error C3907 | cannot jump to a label that is in a different 'if constexpr' statement or substatement |
 |[Compiler error C3908](compiler-error-c3908.md)|access level less restrictive than that of '*identifier*'|
 |[Compiler error C3909](compiler-error-c3909.md)|a managed/WinRT event declaration must occur in a managed/WinRT type|
 |[Compiler error C3910](compiler-error-c3910.md)|'*event*': must define member '*member*'|
@@ -431,20 +428,18 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3913](compiler-error-c3913.md)|a default property must be indexed|
 |[Compiler error C3914](compiler-error-c3914.md)|a default property cannot be static|
 |[Compiler error C3915](compiler-error-c3915.md)|'*identifier*' has no default indexed property (class indexer)|
-|Compiler error C3916|Obsolete.|
+| Compiler error C3916 | function parameter with index %d and requested alignment of %d won't be aligned |
 |[Compiler error C3917](compiler-error-c3917.md)|'*token*': obsolete *construct* declaration style (did you mean to use '[' ']' instead?)|
 |[Compiler error C3918](compiler-error-c3918.md)|usage requires '*identifier*' to be a data member|
 |[Compiler error C3919](compiler-error-c3919.md)|'*function*': function must have type '*return_type* (*type*)'|
 |[Compiler error C3920](compiler-error-c3920.md)|'*operator*': cannot define a postfix increment/decrement CLR/WinRT operator Calling the postfix CLR/WinRT operator will call the corresponding prefix CLR/WinRT operator (op_Increment/op_Decrement), but with postfix semantics|
 |Compiler error C3921|Obsolete.|
-|Compiler error C3922|Obsolete.|
 |[Compiler error C3923](compiler-error-c3923.md)|'*member*': local class, struct or union definitions are not allowed in a member function of a managed/WinRT class|
 |Compiler error C3924|error in argument #*number* of delegate constructor call '*constructor*':|
-|Compiler error C3925|expected a loop (for, while, or do) following '*directive*' directive|
+|Compiler error C3925|expected a loop (`for`, `while`, or `do`) following '*directive_name*' directive|
 |Compiler error C3926|invalid constant in 'parallel' directive|
 |Compiler error C3927|'->': trailing return type is not allowed after a non-function declarator|
 |Compiler error C3928|'->': trailing return type is not allowed after a parenthesized declarator|
-|Compiler error C3929|Obsolete.|
 |Compiler error C3930|'*function*': no overloaded function has restriction specifiers that are compatible with the ambient context '*context*'|
 |Compiler error C3931|'*type*': cannot call a function that has restriction specifiers that are incompatible with the ambient context|
 |Compiler error C3932|Obsolete.|
@@ -457,9 +452,6 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3939|'*identifier*': pointer to member functions, function pointers, references to functions with 'amp' restriction specifier are not allowed|
 |Compiler error C3940|'*identifier*': identifier not found - possible mismatch between compiler and library versions. Please ensure vccorlib.h/.lib, vccorlib120.dll and c1xx.dll match|
 |Compiler error C3941|'*condition*': requires '/clr' command line option|
-|Compiler error C3942|Obsolete.|
-|Compiler error C3943|Obsolete.|
-|Compiler error C3944|Obsolete.|
 |Compiler error C3945|'*type*': unable to throw or catch a winrt object which doesn't derive from Platform::Exception|
 |Compiler error C3946|'*type*': typeid cannot be applied to this type|
 |Compiler error C3947|'*typeid*': typeid cannot be applied to a pack expansion|
@@ -468,7 +460,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3950|Obsolete.|
 |Compiler error C3951|Cannot use pointer-to-member in projected WinRT type '*type*'. Use a delegate instead.|
 |Compiler error C3952|'*type*': WinRT does not support 'in/out' arrays. Use 'const Array\<T>^' for 'in' and 'WriteOnlyArray\<T>' or 'Array\<T>^*' for 'out' on public APIs|
-|Compiler error C3953|Cannot use managed class '*type*' in WinRT module.|
+| Compiler error C3953 | Cannot use managed class '*type*' in WinRT module. (Obsolete in Visual Studio 2022.) |
 |Compiler error C3954|'*type*': An array returned from a published method on a WinRT type must use the form 'Array\<T>^'|
 |Compiler error C3955|'*type*': A public constructor cannot contain an 'out' parameter or 'WriteOnlyArray\<T>'|
 |Compiler error C3956|'*type*': Type is marked as Exclusive To '*type*' and cannot be used as a base of '*derived_type*'|
@@ -488,8 +480,8 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3970|'*identifier*': '*keyword*' can only be applied to 'ref class' or 'ref struct' at global scope or namespace scope|
 |Compiler error C3971|'*type*': partial definition cannot appear after full definition|
 |Compiler error C3972|'*type*': 'partial' can only be applied to class declarations or definitions|
-|Compiler error C3973|Obsolete.|
-|Compiler error C3974|Obsolete.|
+| Compiler error C3973 | Unimplemented feature: %$M |
+| Compiler error C3974 | '%$S': index variable in OpenMP 'for' statement must have integral type |
 |Compiler error C3975|'class/struct *identifier*' was previously declared or defined with a different modifier|
 |Compiler error C3976|'*identifier1*' must be declared as 'public' in order to use '*identifier2*'|
 |Compiler error C3977|Usage requires a reference to an assembly that defines '*identifier*'|
@@ -512,8 +504,9 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3994|'*type*': a value type cannot implement interfaces or have virtual functions|
 |Compiler error C3995|'*type*': a value type cannot have any event members '*identifier*'|
 |Compiler error C3996|Obsolete.|
+| Compiler error C3997 | Warbird: *message* |
 |Compiler error C3998|'c++*version*': unsupported C++ version; defaulting to 'c++*version*'|
-|Compiler error C3999|UNKNOWN ERROR  Please choose the Technical Support command on the Visual C++  Help menu, or open the Technical Support help file for more information|
+|Compiler error C3999|UNKNOWN ERROR *message* Please choose the Technical Support command on the Visual C++  Help menu, or open the Technical Support help file for more information|
 
 ## See also
 
