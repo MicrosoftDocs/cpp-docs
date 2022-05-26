@@ -56,9 +56,9 @@ Microsoft C++ supports the `zoned_time` class starting in Visual Studio 2019 ver
 
 At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
 
-Regional legislatures may make changes to time zones. OS support for a database of these changes was added to Windows 10.
+Regional legislatures occasionally make changes to time zones. OS support for a database of these changes was added to Windows 10.
 
-Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 if the latest Windows updates are applied.
+Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 when the latest Windows updates are applied.
 
 **Namespace:** `std::chrono`
 
