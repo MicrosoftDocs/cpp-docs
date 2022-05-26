@@ -23,7 +23,7 @@ Although this type has a default move constructor and move assignment operator, 
 
 **Differences with IANA database**
 
-In Microsoft's implementation, time zone data can differ in some cases from the Internet Assigned Numbers Authority (IANA) time zone database. For example, `"America/Nuuk"` is returned instead of `"America/Godthab"` (`"America/Nuuk"` was renamed `"America/Godthab"` in April 2020). We don't supply the `"Eastern War Time EWT"` time zone at this time. See [Issue #1786](https://github.com/microsoft/STL/issues/1786) on the Microsoft STL GitHub repo for more details.
+In Microsoft's implementation, time zone data can differ in some cases from the Internet Assigned Numbers Authority (IANA) time zone database. For example, `"America/Nuuk"` is returned instead of `"America/Godthab"` (`"America/Nuuk"` was renamed `"America/Godthab"` in April 2020). We don't supply the `"Eastern War Time EWT"` time zone at this time. For more information, see [Issue #1786](https://github.com/microsoft/STL/issues/1786) on the Microsoft STL GitHub repo.
 
 ## Members
 
