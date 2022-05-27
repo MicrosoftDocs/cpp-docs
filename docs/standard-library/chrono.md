@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono>"
 title: "<chrono>"
-ms.date: 05/20/2022
+ms.date: 05/25/2022
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 
@@ -14,15 +14,17 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 - `high_resolution_clock` is now a typedef for `steady_clock`
 In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typedef` for `chrono::time_point<steady_clock>`.  However, this isn't necessarily the case for other implementations.
 
-Time zones are changed over time by regional legislatures. Leap seconds are added by an international standards body. OS support for a database of these changes was added to Windows 10.
-- Updates to the leap second database require Windows 10 version 1809 or later.
-- Time zone support requires `icu.dll`, which is provided by Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Windows Server 2019 is based on Windows 10 version 1809. 
-
-Use of the time-zone facilities when running on older versions of Windows results in a runtime error.
-
 ## Requirements
 
 **Header:** `<chrono>`
+
+Regional legislatures occasionally make changes to time zones. OS support for a database of these changes was added to Windows 10.
+
+An international standards body specifies when new leap seconds should be accounted for. A database of leap second updates was added to Windows 10.
+
+- Updates to the leap second database require Windows 10 version 1809 or later.
+- Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 when the latest Windows updates are applied.
+- Using the time-zone facilities on older versions of Windows results in a runtime error.
 
 **Namespace:** `std`
 
