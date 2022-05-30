@@ -2270,9 +2270,9 @@ The complexity is linear with at most *`count`* operations.
 ```cpp
 // alg_for_each_n.cpp
 // compile with: /EHsc
-#include <iostream>
-#include <algorithm>
 #include <vector>
+#include <algorithm>
+#include <iostream>
 
 // The function object multiplies an element by a Factor
 template <class Type>
