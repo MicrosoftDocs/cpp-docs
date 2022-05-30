@@ -1,14 +1,12 @@
 ---
 title: "new and delete operators"
 description: "The C++ language new and delete operators allow control over allocation."
-ms.date: 07/07/2020
+ms.date: 05/21/2022
 helpviewer_keywords: ["new keyword [C++]", "delete keyword [C++]"]
 ---
 # `new` and `delete` operators
 
-C++ supports dynamic allocation and deallocation of objects using the [`new`](new-operator-cpp.md) and [`delete`](delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The **`new`** operator calls the special function [`operator new`](new-operator-cpp.md), and the **`delete`** operator calls the special function [`operator delete`](delete-operator-cpp.md).
-
-The **`new`** function in the C++ Standard Library supports the behavior specified in the C++ standard, which is to throw a `std::bad_alloc` exception if the memory allocation fails. If you still want the non-throwing version of **`new`**, link your program with *`nothrownew.obj`*. However, when you link with *`nothrownew.obj`*, the default **`operator new`** in the C++ Standard Library no longer functions.
+C++ supports dynamic allocation and deallocation of objects using the [`new`](new-operator-cpp.md) and [`delete`](delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the *free store* (also known as the *heap*). The **`new`** operator calls the special function [`operator new`](new-operator-cpp.md), and the **`delete`** operator calls the special function [`operator delete`](delete-operator-cpp.md).
 
 For a list of the library files in the C Runtime Library and the C++ Standard Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).
 
@@ -20,9 +18,9 @@ The compiler translates a statement such as this one into a call to the function
 char *pch = new char[BUFFER_SIZE];
 ```
 
-If the request is for zero bytes of storage, **`operator new`** returns a pointer to a distinct object. That is, repeated calls to **`operator new`** return different pointers. If there's insufficient memory for the allocation request, **`operator new`** throws a `std::bad_alloc` exception. Or, it returns **`nullptr`** if you've linked in non-throwing **`operator new`** support.
+If the request is for zero bytes of storage, **`operator new`** returns a pointer to a distinct object. That is, repeated calls to **`operator new`** return different pointers.
 
-You can write a routine that attempts to free memory and retry the allocation. For more information, see [`_set_new_handler`](../c-runtime-library/reference/set-new-handler.md). For details on the recovery scheme, see the [Handling insufficient memory](#handling-insufficient-memory) section.
+If there's insufficient memory for the allocation request, **`operator new`** throws a `std::bad_alloc` exception. Or, it returns **`nullptr`** if you've used the *placement* form `new(std::nothrow)`, or if you've linked in non-throwing **`operator new`** support. For more information, see [Allocation failure behavior](#allocation-failure-behavior).
 
 The two scopes for **`operator new`** functions are described in the following table.
 
@@ -33,7 +31,7 @@ The two scopes for **`operator new`** functions are described in the following t
 | **`::operator new`** | Global |
 | *class-name* **`::operator new`** | Class |
 
-The first argument to **`operator new`** must be of type `size_t`, defined in \<stddef.h>, and the return type is always **`void*`**.
+The first argument of **`operator new`** must be of type `size_t`, and the return type is always **`void*`**.
 
 The global **`operator new`** function is called when the **`new`** operator is used to allocate objects of built-in types, objects of class type that don't contain user-defined **`operator new`** functions, and arrays of any type. When the **`new`** operator is used to allocate objects of a class type where an **`operator new`** is defined, that class's **`operator new`** is called.
 
@@ -94,24 +92,67 @@ int main()
 }
 ```
 
+### Allocation failure behavior
+
+The **`new`** function in the C++ Standard Library supports the behavior specified in the C++ standard since C++98. When there's insufficient memory for an allocation request, **`operator new`** throws a [`std::bad_alloc`](../standard-library/bad-alloc-class.md) exception.
+
+Older C++ code returned a null pointer for a failed allocation. If you have code that expects the non-throwing version of **`new`**, link your program with *`nothrownew.obj`*. The *`nothrownew.obj`* file replaces global **`operator new`** with a version that returns **`nullptr`** if an allocation fails. **`operator new`** no longer throws `std::bad_alloc`. For more information about *`nothrownew.obj`* and other linker option files, see [Link options](../c-runtime-library/link-options.md).
+
+You can't mix code that checks for exceptions from global **`operator new`** with code that checks for null pointers in the same application. However, you can still create class-local **`operator new`** that behaves differently. This possibility means the compiler must act defensively by default and include checks for null pointer returns in **`new`** calls. For more information on a way to optimize these compiler checks, see [`/Zc:throwingnew`](../build/reference/zc-throwingnew-assume-operator-new-throws.md).
+
 ### Handling insufficient memory
 
-Testing for failed memory allocation can be done as shown here:
+The way you test for a failed allocation from a **`new`** expression depends on whether you use the standard exception mechanism, or you use a **`nullptr`** return. Standard C++ expects an allocator to throw either `std::bad_alloc` or a class derived from `std::bad_alloc`. You can handle such an exception as shown in this sample:
 
 ```cpp
 #include <iostream>
+#include <new>
 using namespace std;
-#define BIG_NUMBER 100000000
+#define BIG_NUMBER 10000000000LL
 int main() {
-   int *pI = new int[BIG_NUMBER];
-   if( pI == 0x0 ) {
+   try {
+      int *pI = new int[BIG_NUMBER];
+   }
+   catch (bad_alloc& ex) {
+      cout << "Caught bad_alloc: " << ex.what() << endl;
+      return -1;
+   }
+}
+```
+
+When you use the `nothrow` form of **`new`**, you can test for an allocation failure as shown in this sample:
+
+```cpp
+#include <iostream>
+#include <new>
+using namespace std;
+#define BIG_NUMBER 10000000000LL
+int main() {
+   int *pI = new(nothrow) int[BIG_NUMBER];
+   if ( pI == nullptr ) {
       cout << "Insufficient memory" << endl;
       return -1;
    }
 }
 ```
 
-There's another way to handle failed memory allocation requests. Write a custom recovery routine to handle such a failure, then register your function by calling the [`_set_new_handler`](../c-runtime-library/reference/set-new-handler.md) run-time function.
+You can test for a failed memory allocation when you've used *`nothrownew.obj`* file to replace global **`operator new`** as shown here:
+
+```cpp
+#include <iostream>
+#include <new>
+using namespace std;
+#define BIG_NUMBER 10000000000LL
+int main() {
+   int *pI = new int[BIG_NUMBER];
+   if ( !pI ) {
+      cout << "Insufficient memory" << endl;
+      return -1;
+   }
+}
+```
+
+You can provide a handler for failed memory allocation requests. It's possible to write a custom recovery routine to handle such a failure. It could, for example, release some reserved memory, then allow the allocation to run again. For more information, see [`_set_new_handler`](../c-runtime-library/reference/set-new-handler.md).
 
 ## <a id="delete_operator"> </a> The `delete` operator
 
