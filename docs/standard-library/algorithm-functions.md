@@ -2191,7 +2191,7 @@ int main()
 
     // The function object is templatized and so can be
     // used again on the elements with a different Factor
-    for_each (v1.begin( ), v1.end( ), MultValue<int> ( 5 ) );
+    for_each ( v1.begin( ), v1.end( ), MultValue<int> ( 5 ) );
 
     cout << "Multiplying the elements of the vector v1mod\n "
             << "by the factor 5 gives:\n v1mod2 = ( " ;
