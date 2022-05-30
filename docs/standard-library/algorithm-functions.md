@@ -2223,8 +2223,7 @@ Average ( v1mod2 ) = 10.
 
 ## <a name="for_each_n"></a> `for_each_n`
 
-Applies a specified function objcet to a specified number of elements in a range
-beginning with a particular element, returning an iterator to the last element processed.
+Applies a specified function object to a specified number of elements in a range beginning with a particular element.
 
 ```cpp
 template<class InputIterator, class Size, class Function>
