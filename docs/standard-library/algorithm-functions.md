@@ -2272,6 +2272,7 @@ otherwise the first element.
 #include <algorithm>
 #include <iostream>
 #include <vector>
+using namespace std;  // Global standard namespace (bad practice)
 
 // The function object multiplies an element by a Factor
 template <class Type> class MultValue
@@ -2291,11 +2292,21 @@ template <class Type> class MultValue
     }
 };
 
+template <class Vector> void print_vector(const Vector &vec)
+{
+    cout << "( ";
+
+    for (typename vector<int>::const_iterator iter = vec.begin(); iter != vec.end(); iter++)
+    {
+        std::cout << *iter << ' ';
+    }
+
+    cout << ")." << endl;
+}
+
 int main()
 {
-    using namespace std;
     vector<int> v;
-    vector<int>::iterator Iter;
 
     // Constructing vector v
     for (int i = -4; i <= 2; i++)
@@ -2303,52 +2314,37 @@ int main()
         v.push_back(i);
     }
 
-    cout << "Original vector v = ( ";
-    for (Iter = v.begin(); Iter != v.end(); Iter++)
-    {
-        cout << *Iter << " ";
-    }
-
-    cout << ")." << endl;
+    cout << "Original vector v = ";
+    print_vector(v);
 
     // Using for_each_n to multiply the first 3 elements by a Factor,
     // saving position
     auto pos = for_each_n(v.begin(), 3, MultValue<int>(-2));
 
     cout << "Multiplying the first 3 elements of the vector v\n "
-         << "by the factor -2 gives:\n vmod1 = ( ";
-    for (Iter = v.begin(); Iter != v.end(); Iter++)
-    {
-        cout << *Iter << " ";
-    }
+         << "by the factor -2 gives:\n vmod1 = ";
+    print_vector(v);
 
-    cout << ")." << endl;
-
-    // Using for_each_n to multiply the next 3 elements by a Factor,
+    // Using for_each_n to multiply the next 4 elements by a Factor,
     // starting at the position saved by the previous for_each_n
     for_each_n(pos, 4, MultValue<int>(-3));
 
     cout << "Multiplying the next 4 elements of the vector v\n "
-         << "by the factor -3 gives:\n vmod2 = ( ";
-    for (Iter = v.begin(); Iter != v.end(); Iter++)
-    {
-        cout << *Iter << " ";
-    }
-
-    cout << ")." << endl;
+         << "by the factor -3 gives:\n vmod2 = ";
+    print_vector(v);
 
     return 0;
 }
 ```
 
 ```Output
-Original vector v1 = ( -4 -3 -2 -1 0 1 2 ).
-Multiplying the first 3 elements of the vector v1
+Original vector v = ( -4 -3 -2 -1 0 1 2 ).
+Multiplying the first 3 elements of the vector v
  by the factor -2 gives:
- v1mod1 = ( 8 6 4 -1 0 1 2 ).
-Multiplying the next 4 elements of the vector v1
+ vmod1 = ( 8 6 4 -1 0 1 2 ).
+Multiplying the next 4 elements of the vector v
  by the factor -3 gives:
- v1mod2 = ( 8 6 4 3 0 -3 -6 ).
+ vmod2 = ( 8 6 4 3 0 -3 -6 ).
 ```
 
 ## <a name="generate"></a> `generate`
