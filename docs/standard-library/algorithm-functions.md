@@ -2300,7 +2300,7 @@ template <class Vector> void print_vector(const Vector &vec)
 {
     cout << "( ";
 
-    for (typename vector<int>::const_iterator iter = vec.begin(); iter != vec.end(); iter++)
+    for (auto iter = vec.begin(); iter != vec.end(); iter++)
     {
         std::cout << *iter << ' ';
     }
