@@ -2266,13 +2266,11 @@ otherwise the first element.
 ### Example
 
 This example depicts a user-defined function object class, production code often
-uses [`lambda`](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170)s to achieve the same result with less code
-
-Example requires `c++17`
+uses [`lambda`](https://docs.microsoft.com/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170)s to achieve the same result with less code
 
 ```cpp
 // alg_for_each_n.cpp
-// compile with: /EHsc
+// compile with /EHsc and /std:c++17 (or higher)
 #include <algorithm>
 #include <iostream>
 #include <vector>
