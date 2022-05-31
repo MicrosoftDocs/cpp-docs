@@ -2263,7 +2263,6 @@ otherwise the first element.
 
 *`count`* must be non-negative, and there must be at least *`count`* elements in the range starting at *`first`*.
 
-The complexity is linear with at most *`count`* operations.
 
 ### Example
 
