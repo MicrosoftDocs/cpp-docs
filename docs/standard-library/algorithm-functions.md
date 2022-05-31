@@ -2294,7 +2294,7 @@ template <class Type> class MultValue
     }
 };
 
-template <class Vector> void print_vector(const Vector &vec)
+template <class T> void print_vector(const vector<T> &vec)
 {
     cout << "( ";
 
