@@ -2263,8 +2263,12 @@ otherwise the first element.
 
 *`count`* must be non-negative, and there must be at least *`count`* elements in the range starting at *`first`*.
 
-
 ### Example
+
+This example depicts a user-defined function object class, production code often
+uses `[lambda](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170)`s to achieve the same result with less code
+
+Example requires `c++17`
 
 ```cpp
 // alg_for_each_n.cpp
