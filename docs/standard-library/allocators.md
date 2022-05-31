@@ -18,6 +18,35 @@ class vector
 
 The C++ Standard Library provides a default implementation for an allocator. In C++11 and later, the default allocator is updated to expose a smaller interface; the new allocator is called a *minimal allocator*. In particular, the minimal allocator's `construct()` member supports move semantics, which can greatly improve performance. In most cases, this default allocator should be sufficient. In C++11 all the Standard Library types and functions that take an allocator type parameter support the minimal allocator interface, including `std::function`, `shared_ptr, allocate_shared()`, and `basic_string`.  For more information on the default allocator, see [`allocator` Class](allocator-class.md).
 
+## Writing Your Own Allocator (C++20)
+Several Allocator member functions have been removed: **`address`**, **`max_size`**, **`construct`** and **`destroy`**. **`allocate(n)`** creates array space of type T, but does not construct the objects. Possible exceptions are not handled in the minimal example below:
+
+```cpp
+include <iostream>
+#include <memory>
+
+int main()
+{
+  // allocator for integer values
+  std::allocator<int> myAllocator;
+
+  // allocate space for five ints
+  int* arr = myAllocator.allocate( 5 );
+
+  // construct and assign ints to elements 0 and 3
+  arr[ 0 ] = 100;
+  arr[ 3 ] = 10;
+
+  std::cout << arr[ 0 ] << std::endl;
+  std::cout << arr[ 3 ] << std::endl;
+
+  // destruct elements 0 and 3 and deallocate space for the five ints
+  myAllocator.deallocate( arr, 5 );
+
+  return 0;
+}
+```
+
 ## Writing Your Own Allocator (C++11)
 
 The default allocator uses **`new`** and **`delete`** to allocate and deallocate memory. If you want to use a different method of memory allocation, such as using shared memory, then you must create your own allocator. If you are targeting C++11 and you need to write a new custom allocator, make it a minimal allocator if possible. Even if you have already implemented an old-style allocator, consider modifying it to be a *minimal allocator* in order to take advantage of the more efficient `construct()` method that will be provided for you automatically.
