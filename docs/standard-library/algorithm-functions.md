@@ -2270,23 +2270,23 @@ The complexity is linear with at most *`count`* operations.
 ```cpp
 // alg_for_each_n.cpp
 // compile with: /EHsc
-#include <vector>
 #include <algorithm>
 #include <iostream>
+#include <vector>
 
 // The function object multiplies an element by a Factor
-template <class Type>
-class MultValue
+template <class Type> class MultValue
 {
-private:
-    Type Factor;   // The value to multiply by
-public:
+  private:
+    Type Factor; // The value to multiply by
+  public:
     // Constructor initializes the value to multiply by
-    MultValue ( const Type& value ) : Factor ( value ) {
+    MultValue(const Type &value) : Factor(value)
+    {
     }
 
     // The function call for the element to be multiplied
-    void operator( ) ( Type& elem ) const
+    void operator()(Type &elem) const
     {
         elem *= Factor;
     }
@@ -2299,36 +2299,46 @@ int main()
     vector<int>::iterator Iter;
 
     // Constructing vector v
-    int i;
-    for ( i = -4 ; i <= 2 ; i++ )
+    for (int i = -4; i <= 2; i++)
     {
-        v.push_back( i );
+        v.push_back(i);
     }
 
-    cout << "Original vector v = ( " ;
-    for ( Iter = v.begin( ) ; Iter != v.end( ) ; Iter++ )
+    cout << "Original vector v = ( ";
+    for (Iter = v.begin(); Iter != v.end(); Iter++)
+    {
         cout << *Iter << " ";
+    }
+
     cout << ")." << endl;
 
     // Using for_each_n to multiply the first 3 elements by a Factor,
     // saving position
-    auto pos = for_each_n ( v.begin( ), 3, MultValue<int> ( -2 ) );
+    auto pos = for_each_n(v.begin(), 3, MultValue<int>(-2));
 
     cout << "Multiplying the first 3 elements of the vector v\n "
-            << "by the factor -2 gives:\n vmod1 = ( " ;
-    for ( Iter = v.begin( ) ; Iter != v.end( ) ; Iter++ )
+         << "by the factor -2 gives:\n vmod1 = ( ";
+    for (Iter = v.begin(); Iter != v.end(); Iter++)
+    {
         cout << *Iter << " ";
+    }
+
     cout << ")." << endl;
 
     // Using for_each_n to multiply the next 3 elements by a Factor,
     // starting at the position saved by the previous for_each_n
-    for_each_n ( pos, 4, MultValue<int> ( -3 ) );
+    for_each_n(pos, 4, MultValue<int>(-3));
 
     cout << "Multiplying the next 4 elements of the vector v\n "
-            << "by the factor -3 gives:\n vmod2 = ( " ;
-    for ( Iter = v.begin( ) ; Iter != v.end( ) ; Iter++ )
+         << "by the factor -3 gives:\n vmod2 = ( ";
+    for (Iter = v.begin(); Iter != v.end(); Iter++)
+    {
         cout << *Iter << " ";
+    }
+
     cout << ")." << endl;
+
+    return 0;
 }
 ```
 
