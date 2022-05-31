@@ -2261,7 +2261,7 @@ otherwise the first element.
 
 ### Remarks
 
-The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
+*`count`* must be non-negative, and there must be at least *`count`* elements in the range starting at *`first`*.
 
 The complexity is linear with at most *`count`* operations.
 
