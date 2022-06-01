@@ -30,5 +30,5 @@ Describes the encoding scheme for stack unwinding during structured exception ha
 [ARM intrinsics](../intrinsics/arm-intrinsics.md)\
 Describes compiler intrinsics for processors that use the ARM architecture.
 
-[ARM64 intrinsics](../intrinsics/arm-intrinsics.md)\
+[ARM64 intrinsics](../intrinsics/arm64-intrinsics.md)\
 Describes compiler intrinsics for processors that use the ARM64 architecture.
