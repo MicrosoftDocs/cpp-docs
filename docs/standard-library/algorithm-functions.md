@@ -2191,7 +2191,7 @@ int main()
 
     // The function object is templatized and so can be
     // used again on the elements with a different Factor
-    for_each (v1.begin( ), v1.end( ), MultValue<int> (5 ) );
+    for_each ( v1.begin( ), v1.end( ), MultValue<int> ( 5 ) );
 
     cout << "Multiplying the elements of the vector v1mod\n "
             << "by the factor 5 gives:\n v1mod2 = ( " ;
@@ -2223,19 +2223,130 @@ Average ( v1mod2 ) = 10.
 
 ## <a name="for_each_n"></a> `for_each_n`
 
+Applies a specified function object to a specified number of elements in a range beginning with a particular element.
+
 ```cpp
 template<class InputIterator, class Size, class Function>
 InputIterator for_each_n(
     InputIterator first,
-    Size n,
-    Function f);
+    Size count,
+    Function func);
 
 template<class ExecutionPolicy, class ForwardIterator, class Size, class Function>
 ForwardIterator for_each_n(
     ExecutionPolicy&& exec,
     ForwardIterator first,
-    Size n,
-    Function f);
+    Size count,
+    Function func);
+```
+
+### Parameters
+
+*`exec`*\
+The execution policy to use.
+
+*`first`*\
+An input iterator addressing the position of the first element in the range to be operated on.
+
+*`count`*\
+A signed or unsigned integral type specifying the number of elements to be operated on.
+
+*`func`*\
+User-defined function object that is applied to each element in the range [`first`, `first` + `count`).
+
+### Return value
+
+An iterator to the element that follows the last element processed if *`count`* > zero,
+otherwise the first element.
+
+### Remarks
+
+*`count`* must be non-negative, and there must be at least *`count`* elements in the range starting at *`first`*.
+
+### Example
+
+This example depicts a user-defined function object class. Production code often
+uses [`lambda`](https://docs.microsoft.com/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170)s to achieve the same result with less code.
+
+```cpp
+// alg_for_each_n.cpp
+// compile with /EHsc and /std:c++17 (or higher)
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;  // Global standard namespace (bad practice)
+
+// The function object multiplies an element by a Factor
+template <class Type> class MultValue
+{
+  private:
+    Type Factor; // The value to multiply by
+  public:
+    // Constructor initializes the value to multiply by
+    MultValue(const Type &value) : Factor(value)
+    {
+    }
+
+    // The function call for the element to be multiplied
+    void operator()(Type &elem) const
+    {
+        elem *= Factor;
+    }
+};
+
+template <class T> void print_vector(const vector<T> &vec)
+{
+    cout << "( ";
+
+    for (auto iter = vec.begin(); iter != vec.end(); iter++)
+    {
+        std::cout << *iter << ' ';
+    }
+
+    cout << ")." << endl;
+}
+
+int main()
+{
+    vector<int> v;
+
+    // Constructing vector v
+    for (int i = -4; i <= 2; i++)
+    {
+        v.push_back(i);
+    }
+
+    cout << "Original vector v = ";
+    print_vector(v);
+
+    // Using for_each_n to multiply the first 3 elements by a Factor,
+    // saving position
+    auto pos = for_each_n(v.begin(), 3, MultValue<int>(-2));
+
+    cout << "Multiplying the first 3 elements of the vector v\n "
+         << "by the factor -2 gives:\n vmod1 = ";
+    print_vector(v);
+
+    // Using for_each_n to multiply the next 4 elements by a Factor,
+    // starting at the position saved by the previous for_each_n
+    for_each_n(pos, 4, MultValue<int>(-3));
+
+    cout << "Multiplying the next 4 elements of the vector v\n "
+         << "by the factor -3 gives:\n vmod2 = ";
+    print_vector(v);
+
+    return 0;
+}
+```
+
+```Output
+Original vector v = ( -4 -3 -2 -1 0 1 2 ).
+Multiplying the first 3 elements of the vector v
+ by the factor -2 gives:
+ vmod1 = ( 8 6 4 -1 0 1 2 ).
+Multiplying the next 4 elements of the vector v
+ by the factor -3 gives:
+ vmod2 = ( 8 6 4 3 0 -3 -6 ).
 ```
 
 ## <a name="generate"></a> `generate`
