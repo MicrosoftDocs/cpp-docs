@@ -2246,13 +2246,13 @@ ForwardIterator for_each_n(
 The execution policy to use.
 
 *`first`*\
-An input iterator addressing the position of the first element in the range to be operated on.
+An input iterator at the position of the first element in the range to operate on.
 
 *`count`*\
-A signed or unsigned integral type specifying the number of elements to be operated on.
+The number of elements to be operated on.
 
 *`func`*\
-User-defined function object that is applied to each element in the range [`first`, `first` + `count`).
+A user-defined function object that is applied to each element in the range [`first`, `first` + `count`).
 
 ### Return value
 
@@ -2261,12 +2261,11 @@ otherwise the first element.
 
 ### Remarks
 
-*`count`* must be non-negative, and there must be at least *`count`* elements in the range starting at *`first`*.
+*`count`* must be non-negative, and there must be at least *`count`* elements in the range starting from *`first`*.
 
 ### Example
 
-This example depicts a user-defined function object class. Production code often
-uses [`lambda`](https://docs.microsoft.com/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170)s to achieve the same result with less code.
+This example defines a function object class. Production code often uses [`lambda`](/cpp/cpp/lambda-expressions-in-cpp)s to achieve the same result with less code.
 
 ```cpp
 // alg_for_each_n.cpp
@@ -2280,7 +2279,7 @@ using namespace std;  // Global standard namespace (bad practice)
 template <class Type> class MultValue
 {
   private:
-    Type Factor; // The value to multiply by
+    Type Factor; // The value to multiply each element by
   public:
     // Constructor initializes the value to multiply by
     MultValue(const Type &value) : Factor(value)
@@ -2294,6 +2293,7 @@ template <class Type> class MultValue
     }
 };
 
+// Utility to display the contents of a vector 
 template <class T> void print_vector(const vector<T> &vec)
 {
     cout << "( ";
@@ -2310,7 +2310,7 @@ int main()
 {
     vector<int> v;
 
-    // Constructing vector v
+    // Construct vector with the elements -4...2
     for (int i = -4; i <= 2; i++)
     {
         v.push_back(i);
@@ -2319,8 +2319,8 @@ int main()
     cout << "Original vector v = ";
     print_vector(v);
 
-    // Using for_each_n to multiply the first 3 elements by a Factor,
-    // saving position
+    // Use for_each_n to multiply the first 3 elements by a Factor,
+    // saving the position in the vector after the first 3 elements
     auto pos = for_each_n(v.begin(), 3, MultValue<int>(-2));
 
     cout << "Multiplying the first 3 elements of the vector v\n "
@@ -2370,21 +2370,21 @@ void generate(
 ### Parameters
 
 *`first`*\
-A forward iterator addressing the position of the first element in the range to which values are to be assigned.
+A forward iterator at the position of the first element in the range to which values are to be assigned.
 
 *`last`*\
-A forward iterator addressing the position one past the final element in the range to which values are to be assigned.
+A forward iterator at the position one past the final element in the range to which values are to be assigned.
 
 *`gen`*\
-A function object that is called with no arguments that is used to generate the values to be assigned to each of the elements in the range.
+A function object that is called with no arguments to generate the values to be assigned to each of the elements in the range.
 
 ### Remarks
 
-The function object is invoked for each element in the range and does not need to return the same value each time it is called. It may, for example, read from a file or refer to and modify a local state. The generator's result type must be convertible to the value type of the forward iterators for the range.
+The function object is invoked for each element in the range and does not need to return the same value each time it is called. It may, for example, read from a file or refer to and modify a local state. The generator's result type must be convertible to the value type of the forward iterator for the range.
 
-The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
+The range referenced must be valid. All pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
 
-The complexity is linear, with exactly ( `last` - `first`) calls to the generator being required.
+The complexity is linear, with exactly `last` - `first` calls made the generator.
 
 ### Example
 
