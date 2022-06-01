@@ -11,7 +11,7 @@ ms.assetid: eb828cc9-684f-48a3-a898-b327700c0a63
 
 In generic type or method declarations, you can qualify a type parameter with *constraints*. A constraint is a requirement that types used as type arguments must satisfy. For example, a constraint might be that the type argument must implement a certain interface or inherit from a specific class.
 
-Constraints are optional; not specifying a constraint on a parameter is equivalent to constraining that parameter to <xref:System.Object>.
+Constraints are optional; not specifying a constraint on a parameter is equivalent to using a <xref:System.Object> constraint.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ One of the type parameter identifiers to constrain.
 *`constraint-list`*\
 A comma-separated list of constraint specifications. The list can include interfaces to be implemented by the *`type-parameter`*.
 
-The list can also include a class. For the type argument to satisfy a base class constraint, it must be the same class as the constraint or derive from the constraint. Specify **`ref class`** to indicate the type argument must be a reference type, including any `class`, `interface`, `delegate`, or `array` type. Specify **`value class`** to indicate the type argument must be a value type. Any value type except `Nullable<T>` can be specified. 
+The list can also include a class. To satisfy a base class constraint, the type argument must be the same class as the constraint or derive from the constraint. Specify **`ref class`** to indicate the type argument must be a reference type, including any `class`, `interface`, `delegate`, or `array` type. Specify **`value class`** to indicate the type argument must be a value type. Any value type except `Nullable<T>` can be specified. 
 
 You can also specify `gcnew()` to indicate the type argument must have a public parameterless constructor.
 
