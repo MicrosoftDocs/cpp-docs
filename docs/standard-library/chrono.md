@@ -20,10 +20,10 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 
 Regional legislatures occasionally make changes to time zones, and an international standards body specifies when new leap seconds should be accounted for. A database of these changes was added to Windows 10. Specifically:
 
-|Feature | Client version | Server version |
-|---------|---------|---------|
-|Leap second database updates | Windows 10 version 1809 or later | Windows Server 2022 or later |
-|Time zone support |Windows 10 version 1903 or later | Windows Server 2022 or later |
+| Feature | Client version | Server version |
+|--|--|--|
+| Leap second database updates | Windows 10 version 1809 or later | Windows Server 2022 or later |
+| Time zone support | Windows 10 version 1903 or later | Windows Server 2022 or later |
 
 Using the time-zone facilities on older versions of Windows results in a runtime error.
 
