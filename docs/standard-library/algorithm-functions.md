@@ -2384,7 +2384,7 @@ The function object is invoked for each element in the range and doesn't need to
 
 The range referenced must be valid. All pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
 
-The complexity is linear, with exactly `last` - `first` calls made the generator.
+The complexity is linear, with exactly `last` - `first` calls made to the generator.
 
 ### Example
 
