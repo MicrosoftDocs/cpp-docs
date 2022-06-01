@@ -18,13 +18,14 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 
 **Header:** `<chrono>`
 
-Regional legislatures occasionally make changes to time zones. OS support for a database of these changes was added to Windows 10.
+Regional legislatures occasionally make changes to time zones, and an international standards body specifies when new leap seconds should be accounted for. A database of these changes was added to Windows 10. Specifically:
 
-An international standards body specifies when new leap seconds should be accounted for. A database of leap second updates was added to Windows 10.
+|Feature | Client version | Server version |
+|---------|---------|---------|
+|Leap second database | Windows 10 version 1809 or later | Windows Server 2019 or later |
+|Time zone support |Windows 10 version 1903 or later | Windows Server 2022 or later |
 
-- Updates to the leap second database require Windows 10 version 1809 or later.
-- Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 when the latest Windows updates are applied.
-- Using the time-zone facilities on older versions of Windows results in a runtime error.
+Using the time-zone facilities on older versions of Windows results in a runtime error.
 
 **Namespace:** `std`
 
