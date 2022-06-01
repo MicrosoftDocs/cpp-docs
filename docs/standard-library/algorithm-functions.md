@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <algorithm> functions"
 title: "<algorithm> functions"
-ms.date: "09/09/2021"
+ms.date: 06/01/2022
 f1_keywords: ["algorithm/std::adjacent_find", "algorithm/std::all_of", "algorithm/std::any_of", "algorithm/std::binary_search", "algorithm/std::copy", "algorithm/std::copy_backward", "algorithm/std::copy_if", "algorithm/std::copy_n", "algorithm/std::equal", "algorithm/std::equal_range", "algorithm/std::fill", "algorithm/std::fill_n", "algorithm/std::find", "algorithm/std::find_end", "algorithm/std::find_first_of", "algorithm/std::find_if", "algorithm/std::find_if_not", "algorithm/std::for_each", "algorithm/std::generate", "algorithm/std::generate_n", "algorithm/std::includes", "algorithm/std::inplace_merge", "algorithm/std::is_heap", "algorithm/std::is_heap_until", "algorithm/std::is_partitioned", "algorithm/std::is_permutation", "algorithm/std::is_sorted", "algorithm/std::is_sorted_until", "algorithm/std::iter_swap", "algorithm/std::lexicographical_compare", "algorithm/std::lower_bound", "algorithm/std::make_heap", "algorithm/std::max", "algorithm/std::max_element", "algorithm/std::merge", "algorithm/std::min", "algorithm/std::minmax", "algorithm/std::minmax_element", "algorithm/std::min_element", "algorithm/std::mismatch", "algorithm/std::move", "algorithm/std::move_backward", "algorithm/std::next_permutation", "algorithm/std::none_of", "algorithm/std::nth_element", "algorithm/std::partial_sort", "algorithm/std::partial_sort_copy", "algorithm/std::partition", "algorithm/std::partition_point", "algorithm/std::pop_heap", "algorithm/std::prev_permutation", "algorithm/std::push_heap", "algorithm/std::random_shuffle", "algorithm/std::remove", "algorithm/std::remove_copy", "algorithm/std::remove_copy_if", "algorithm/std::remove_if", "algorithm/std::replace", "algorithm/std::replace_copy", "algorithm/std::replace_copy_if", "algorithm/std::replace_if", "algorithm/std::reverse", "algorithm/std::reverse_copy", "algorithm/std::rotate", "algorithm/std::rotate_copy", "algorithm/std::search", "algorithm/std::search_n", "algorithm/std::set_difference", "algorithm/std::set_intersection", "algorithm/std::set_symmetric_difference", "algorithm/std::set_union", "algorithm/std::shuffle", "algorithm/std::sort", "algorithm/std::sort_heap", "algorithm/std::stable_partition", "algorithm/std::stable_sort", "algorithm/std::swap_ranges", "algorithm/std::transform", "algorithm/std::unique", "algorithm/std::unique_copy", "algorithm/std::upper_bound", "xutility/std::copy", "xutility/std::copy_backward", "xutility/std::copy_n", "xutility/std::count", "xutility/std::equal", "xutility/std::fill", "xutility/std::fill_n", "xutility/std::find", "xutility/std::is_permutation", "xutility/std::lexicographical_compare", "xutility/std::move", "xutility/std::move_backward", "xutility/std::reverse", "xutility/std::rotate", "algorithm/std::count_if", "algorithm/std::partition_copy", "algorithm/std::swap"]
 helpviewer_keywords: ["std::adjacent_find [C++]", "std::all_of [C++]", "std::any_of [C++]", "std::binary_search [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_if [C++]", "std::copy_n [C++]", "std::equal [C++]", "std::equal_range [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::find_end [C++]", "std::find_first_of [C++]", "std::find_if [C++]", "std::find_if_not [C++]", "std::for_each [C++]", "std::generate [C++]", "std::generate_n [C++]", "std::includes [C++]", "std::inplace_merge [C++]", "std::is_heap [C++]", "std::is_heap_until [C++]", "std::is_partitioned [C++]", "std::is_permutation [C++]", "std::is_sorted [C++]", "std::is_sorted_until [C++]", "std::iter_swap [C++]", "std::lexicographical_compare [C++]", "std::lower_bound [C++]", "std::make_heap [C++]", "std::max [C++]", "std::max_element [C++]", "std::merge [C++]", "std::min [C++]", "std::minmax [C++]", "std::minmax_element [C++]", "std::min_element [C++]", "std::mismatch [C++]", "std::move [C++]", "std::move_backward [C++]", "std::next_permutation [C++]", "std::none_of [C++]", "std::nth_element [C++]", "std::partial_sort [C++]", "std::partial_sort_copy [C++]", "std::partition [C++]", "std::partition_point [C++]", "std::pop_heap [C++]", "std::prev_permutation [C++]", "std::push_heap [C++]", "std::random_shuffle [C++]", "std::remove [C++]", "std::remove_copy [C++]", "std::remove_copy_if [C++]", "std::remove_if [C++]", "std::replace [C++]", "std::replace_copy [C++]", "std::replace_copy_if [C++]", "std::replace_if [C++]", "std::reverse [C++]", "std::reverse_copy [C++]", "std::rotate [C++]", "std::rotate_copy [C++]", "std::search [C++]", "std::search_n [C++]", "std::set_difference [C++]", "std::set_intersection [C++]", "std::set_symmetric_difference [C++]", "std::set_union [C++]", "std::shuffle [C++]", "std::sort [C++]", "std::sort_heap [C++]", "std::stable_partition [C++]", "std::stable_sort [C++]", "std::swap_ranges [C++]", "std::transform [C++]", "std::unique [C++]", "std::unique_copy [C++]", "std::upper_bound [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_n [C++]", "std::count [C++]", "std::equal [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::is_permutation [C++]", "std::lexicographical_compare [C++]", "std::move [C++]", "std::move_backward [C++]", "std::reverse [C++]", "std::rotate [C++]", "std::count_if [C++]", "std::partition_copy [C++]", "std::swap [C++]"]
 ---
@@ -43,10 +43,10 @@ ForwardIterator adjacent_find(
 The execution policy to use.
 
 *`first`*\
-A forward iterator addressing the position of the first element in the range to be searched.
+A forward iterator at the position of the first element in the range to be searched.
 
 *`last`*\
-A forward iterator addressing the position one past the final element in the range to be searched.
+A forward iterator at the position one past the final element in the range to be searched.
 
 *`pred`*\
 The binary predicate giving the condition to be satisfied by the values of the adjacent elements in the range being searched.
@@ -57,7 +57,7 @@ A forward iterator to the first of the adjacent elements that are either equal t
 
 ### Remarks
 
-The `adjacent_find` algorithm is a nonmutating sequence algorithm. The range to be searched must be valid; all pointers must be dereferenceable and the last position is reachable from the first by incrementation. The time complexity of the algorithm is linear in the number of elements contained in the range.
+The `adjacent_find` algorithm is a nonmutating sequence algorithm. The range to be searched must be valid. All pointers must be dereferenceable, and the last position must be reachable from the first by incrementation. The time complexity of the algorithm is linear in the number of elements contained in the range.
 
 The `operator==` used to determine the match between elements must impose an equivalence relation between its operands.
 
@@ -264,7 +264,7 @@ int main()
         cout << el << " ";
     cout << ")" << endl;
 
-    // Check if there is an even elememt in li.
+    // Check if there's an even element in li.
     auto is_even = [](int const elem){ return !(elem % 2); };
     if (any_of(li.begin(), li.end(), is_even))
         cout << "There's an even element in li.\n";
@@ -323,7 +323,7 @@ The sorted range must each be arranged as a precondition to the application of t
 
 The source ranges aren't modified by `binary_search`.
 
-The value types of the input iterators must be less-than comparable to be ordered. That is, given two elements, you can determine either that one is less than the other, or that they're equivalent. (Here, equivalent means that neither is less than the other.) This comparison results in an ordering between the nonequivalent elements.
+The value types of the forward iterators must be less-than comparable to be ordered. That is, given two elements, you can determine either that one is less than the other, or that they're equivalent. (Here, equivalent means that neither is less than the other.) This comparison results in an ordering between the nonequivalent elements.
 
 The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to (`last` - `first`).
 
@@ -419,7 +419,7 @@ There is an element with a value equivalent to -3 under mod_lesser.
 
 ## <a name="clamp"></a> `clamp`
 
-Compares a value to an upper and lower bound, and returns a reference to the value if it is between the bounds, or a reference to the upper or lower bound if the value is above or below them, respectively.
+Compares a value to an upper and lower bound, and returns a reference to the value if it's between the bounds, or a reference to the upper or lower bound if the value is above or below them, respectively.
 
 ```cpp
 template<class Type>
@@ -2088,7 +2088,7 @@ void for_each(
 ### Parameters
 
 *`first`*\
-An input iterator addressing the position of the first element in the range to be operated on.
+An input iterator addressing the position of the first element in the range to operate on.
 
 *`last`*\
 An input iterator addressing the position one past the final element in the range operated on.
@@ -2246,13 +2246,13 @@ ForwardIterator for_each_n(
 The execution policy to use.
 
 *`first`*\
-An input iterator addressing the position of the first element in the range to be operated on.
+An input iterator at the position of the first element in the range to operate on.
 
 *`count`*\
-A signed or unsigned integral type specifying the number of elements to be operated on.
+The number of elements to operate on.
 
 *`func`*\
-User-defined function object that is applied to each element in the range [`first`, `first` + `count`).
+A user-defined function object to apply to each element in the range [`first`, `first` + `count`).
 
 ### Return value
 
@@ -2261,12 +2261,11 @@ otherwise the first element.
 
 ### Remarks
 
-*`count`* must be non-negative, and there must be at least *`count`* elements in the range starting at *`first`*.
+*`count`* must be non-negative, and there must be at least *`count`* elements in the range starting from *`first`*.
 
 ### Example
 
-This example depicts a user-defined function object class. Production code often
-uses a [`lambda`](../cpp/lambda-expressions-in-cpp.md) to achieve the same result with less code.
+This example defines a function object class. Production code often uses a [`lambda`](../cpp/lambda-expressions-in-cpp.md) to achieve the same result with less code.
 
 ```cpp
 // alg_for_each_n.cpp
@@ -2279,7 +2278,7 @@ uses a [`lambda`](../cpp/lambda-expressions-in-cpp.md) to achieve the same resul
 template <class Type> class MultValue
 {
 private:
-    Type Factor; // The value to multiply by
+    Type Factor; // The value to multiply each element by
 public:
     // Constructor initializes the value to multiply by
     MultValue(const Type &value) : Factor(value) {}
@@ -2291,6 +2290,7 @@ public:
     }
 };
 
+// Utility to display the contents of a vector 
 template <class T> void print_vector(const std::vector<T> &vec)
 {
     std::cout << "( ";
@@ -2307,7 +2307,7 @@ int main()
 {
     std::vector<int> v;
 
-    // Constructing vector v
+    // Construct vector with the elements -4...2
     for (int i = -4; i <= 2; i++)
     {
         v.push_back(i);
@@ -2316,8 +2316,8 @@ int main()
     std::cout << "Original vector v = ";
     print_vector(v);
 
-    // Using for_each_n to multiply the first 3 elements by a Factor,
-    // saving position
+    // Use for_each_n to multiply the first 3 elements by a Factor,
+    // saving the position in the vector after the first 3 elements
     auto pos = for_each_n(v.begin(), 3, MultValue<int>(-2));
 
     std::cout << "Multiplying the first 3 elements of the vector v\n "
@@ -2367,21 +2367,21 @@ void generate(
 ### Parameters
 
 *`first`*\
-A forward iterator addressing the position of the first element in the range to which values are to be assigned.
+A forward iterator at the position of the first element in the range to which values are to be assigned.
 
 *`last`*\
-A forward iterator addressing the position one past the final element in the range to which values are to be assigned.
+A forward iterator at the position one past the final element in the range to which values are to be assigned.
 
 *`gen`*\
-A function object that is called with no arguments that is used to generate the values to be assigned to each of the elements in the range.
+A function object that is called with no arguments to generate the values to be assigned to each of the elements in the range.
 
 ### Remarks
 
-The function object is invoked for each element in the range and doesn't need to return the same value each time it's called. It may, for example, read from a file or refer to and modify a local state. The generator's result type must be convertible to the value type of the forward iterators for the range.
+The function object is invoked for each element in the range and doesn't need to return the same value each time it's called. It may, for example, read from a file or refer to and modify a local state. The generator's result type must be convertible to the value type of the forward iterator for the range.
 
-The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
+The range referenced must be valid. All pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
 
-The complexity is linear, with exactly ( `last` - `first`) calls to the generator being required.
+The complexity is linear, with exactly `last` - `first` calls made to the generator.
 
 ### Example
 
@@ -3065,7 +3065,7 @@ The template function returns **`true`** only if all elements in `[first, last)`
 
 ## <a name="is_permutation"></a> `is_permutation`
 
-Returns true if both ranges contain the same elements, whether or not the elements are in the same order. Use the dual-range overloads in C++14 code because the overloads that only take a single iterator for the second range won't detect differences if the second range is longer than the first range. These overloads will result in undefined behavior if the second range is shorter than the first range.
+Returns `true` if both ranges contain the same elements, whether or not the elements are in the same order. Use the dual-range overloads in C++14 code because the overloads that only take a single iterator for the second range won't detect differences if the second range is longer than the first range. These overloads will result in undefined behavior if the second range is shorter than the first range.
 
 ```cpp
 template<class ForwardIterator1, class ForwardIterator2>
@@ -3660,7 +3660,7 @@ A sorted range is a precondition of using `lower_bound` and where the ordering i
 
 The range isn't modified by the algorithm `lower_bound`.
 
-The value types of the input iterators must be less-than comparable to be ordered. That is, given two elements, you can determine either that one is less than the other, or that they're equivalent. (Here, equivalent means that neither is less than the other.) This comparison results in an ordering between the nonequivalent elements.
+The value types of the forward iterators must be less-than comparable to be ordered. That is, given two elements, you can determine either that one is less than the other, or that they're equivalent. (Here, equivalent means that neither is less than the other.) This comparison results in an ordering between the nonequivalent elements.
 
 The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to (`last - first`).
 
@@ -5064,8 +5064,8 @@ The following example demonstrates how to use mismatch. The C++03 overload is sh
 using namespace std;
 
 // Return whether first element is twice the second
-// Note that this is not a symmetric, reflexive, and transitive equivalence.
-// mismatch and equal accept such predicates, but is_permutation does not.
+// Note that this isn't a symmetric, reflexive, and transitive equivalence.
+// mismatch and equal accept such predicates, but is_permutation doesn't.
 bool twice(int elem1, int elem2)
 {
     return elem1 == elem2 * 2;
@@ -9162,7 +9162,7 @@ Heaps have two properties:
 
 After the application if this algorithm, the range it was applied to is no longer a heap.
 
-It isn't a *stable sort* because the relative order of equivalent elements isn't necessarily preserved.
+`sort_heap` isn't a stable sort because the relative order of equivalent elements isn't necessarily preserved.
 
 Heaps are an ideal way to implement priority queues and they're used in the implementation of the C++ Standard Library container adaptor [`priority_queue` Class](priority-queue-class.md).
 
@@ -9682,19 +9682,19 @@ ForwardIterator transform(
 The execution policy to use.
 
 *`first1`*\
-An input iterator addressing the position of the first element in the first source range to be operated on.
+An input iterator addressing the position of the first element in the first source range to operate on.
 
 *`last1`*\
-An input iterator addressing the position one past the final element in the first source range operated on.
+An input iterator addressing the position one past the final element in the first source range to operate on.
 
 *`first2`*\
-An input iterator addressing the position of the first element in the second source range to be operated on.
+An input iterator addressing the position of the first element in the second source range to operate on.
 
 *`result`*\
 An output iterator addressing the position of the first element in the destination range.
 
 *`func`*\
-User-defined unary function object used in the first version of the algorithm that is applied to each element in the first source range or A user-defined (UD) binary function object used in the second version of the algorithm that is applied pairwise, in a forward order, to the two source ranges.
+User-defined unary function object used in the first version of the algorithm to apply to each element in the first source range or a user-defined (UD) binary function object used in the second version of the algorithm that is applied pairwise, in a forward order, to the two source ranges.
 
 ### Return value
 
