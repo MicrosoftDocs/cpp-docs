@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: time_zone class"
 title: "time_zone class"
-ms.date: 05/23/2022
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::time_zone::name", "chrono/std::chrono::time_zone::get_info", "chrono/std::chrono::time_zone::to_sys", "chrono/std::chrono::time_zone::to_local"]
 helpviewer_keywords: ["std::chrono [C++], time_zone class", "std::chrono::time_zone::name function", "std::chrono::time_zone::get_info function", "std::chrono::time_zone::to_sys function", "std::chrono::time_zone::to_local function"]
 ---

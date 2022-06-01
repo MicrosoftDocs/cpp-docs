@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: leap_second class"
 title: "leap_second class"
-ms.date: 05/25/2022
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::leap_second", "chrono/std::chrono::leap_second::date", "chrono/std::chrono::leap_second::value"]
 helpviewer_keywords: ["std::chrono [C++], leap_second class", "std::chrono::leap_second::date function", "std::chrono::leap_second::value function"]
 ---

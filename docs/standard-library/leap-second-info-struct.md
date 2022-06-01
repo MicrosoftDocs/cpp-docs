@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: leap_second_info struct"
 title: "leap_second_info struct"
-ms.date: 06/07/2021
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::leap_second_info", "chrono/std::chrono::leap_second_info::is_leap_second", "chrono/std::chrono::leap_second_info::elapsed"]
 helpviewer_keywords: ["std::chrono [C++], leap_second_info struct", "std::chrono::leap_second_info::date function", "std::chrono::leap_second_info::value function"]
 ---

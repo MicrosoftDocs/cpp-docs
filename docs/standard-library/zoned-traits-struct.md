@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: zoned_traits struct"
 title: "zoned_traits struct"
-ms.date: 10/15/2021
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::zoned_traits::get_info", "chrono/std::chrono::zoned_traits::default_zone", "chrono/std::chrono::zoned_traits::locate_zone"]
 helpviewer_keywords: ["std::chrono [C++], zoned_traits struct", "std::chrono::zoned_traits::default_zone function", "std::chrono::zoned_traits::locate_zone function"]
 ---
