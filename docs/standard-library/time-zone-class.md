@@ -45,7 +45,7 @@ Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 vers
 
 **Header:** `<chrono>`
 
-At this time, time-zone data is only available starting with Windows 10 version 1903 and Windows Server 2022. If you’re running on an earlier version, you’ll get an exception that "The specified module could not be found".
+Time-zone data is only available starting with Windows 10 version 1903 and Windows Server 2022. If you’re running on an earlier version, you’ll get an exception that "The specified module could not be found".
 
 **Namespace:** `std::chrono`
 
