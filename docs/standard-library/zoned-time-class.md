@@ -54,7 +54,7 @@ A `zoned_time` always refers to a valid time zone and represents a point in time
 
 Microsoft C++ supports the `zoned_time` class starting in Visual Studio 2019 version 16.10.
 
-Time-zone data is only available starting with Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
+Time-zone data is only available for Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
 
 **Namespace:** `std::chrono`
 

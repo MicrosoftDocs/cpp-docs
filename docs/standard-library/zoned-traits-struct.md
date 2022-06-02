@@ -48,7 +48,7 @@ The pointer to the type that you supply doesn't have to provide the static funct
 
 Microsoft C++ supports `zoned_traits` class starting in Visual Studio 2019 version 16.10.
 
-Time-zone data is only available starting with Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
+Time-zone data is only available for Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
 
 ## <a name="default_zone"></a> `default_zone`
 
