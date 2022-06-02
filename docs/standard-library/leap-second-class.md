@@ -29,7 +29,7 @@ class leap_second  // Since C++20
 
 Microsoft C++ supports the `leap_second` class starting in Visual Studio 2019 version 16.10. The `leap_second` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
 
-An international standards body specifies when new leap seconds should be accounted for. A database of these changes was added starting in Windows 10 version 1809 and Windows Server 2022.
+An international standards body specifies when new leap seconds should be accounted for. A database of these changes was added starting in Windows 10 version 1809 and later, and Windows Server 2019 and later.
 
 **Namespace:** `std::chrono`
 

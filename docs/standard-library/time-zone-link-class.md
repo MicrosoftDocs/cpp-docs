@@ -45,7 +45,7 @@ In Microsoft's implementation, time zone data can differ in some cases from the 
 
 **Header:** `<chrono>`
 
-Time-zone data is only available starting with Windows 10 version 1903 and Windows Server 2022.
+Time-zone data is only available starting with Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
 
 **Namespace:** `std::chrono`
 
