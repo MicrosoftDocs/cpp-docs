@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: zoned_traits struct"
 title: "zoned_traits struct"
-ms.date: 10/15/2021
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::zoned_traits::get_info", "chrono/std::chrono::zoned_traits::default_zone", "chrono/std::chrono::zoned_traits::locate_zone"]
 helpviewer_keywords: ["std::chrono [C++], zoned_traits struct", "std::chrono::zoned_traits::default_zone function", "std::chrono::zoned_traits::locate_zone function"]
 ---
@@ -48,7 +48,7 @@ The pointer to the type that you supply doesn't have to provide the static funct
 
 Microsoft C++ supports `zoned_traits` class starting in Visual Studio 2019 version 16.10.
 
-Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 when the latest Windows updates are applied.
+Time-zone data is only available for Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
 
 ## <a name="default_zone"></a> `default_zone`
 

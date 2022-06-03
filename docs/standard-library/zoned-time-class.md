@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: zoned_time class"
 title: "zoned_time class"
-ms.date: 10/11/2021
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::zoned_time::get_info", "chrono/std::chrono::zoned_time::get_local_time", "chrono/std::chrono::zoned_time::get_sys_time", "chrono/std::chrono::zoned_time::get_time_zone","chrono/std::chrono::zoned_time:operator=", "chrono/std::chrono::zoned_time:operator local_time", "chrono/std::chrono::zoned_time:operator sys_time"]
 helpviewer_keywords: ["std::chrono [C++], zoned_time class", "std::chrono::zoned_time::get_info function", "std::chrono::zoned_time::get_local_time function", "std::chrono::zoned_time::get_sys_time function", "std::chrono::zoned_time::get_time_zone function"]
 ---
@@ -54,11 +54,7 @@ A `zoned_time` always refers to a valid time zone and represents a point in time
 
 Microsoft C++ supports the `zoned_time` class starting in Visual Studio 2019 version 16.10.
 
-At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
-
-Regional legislatures occasionally make changes to time zones. OS support for a database of these changes was added to Windows 10.
-
-Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 when the latest Windows updates are applied.
+Time-zone data is only available for Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
 
 **Namespace:** `std::chrono`
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: leap_second class"
 title: "leap_second class"
-ms.date: 05/25/2022
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::leap_second", "chrono/std::chrono::leap_second::date", "chrono/std::chrono::leap_second::value"]
 helpviewer_keywords: ["std::chrono [C++], leap_second class", "std::chrono::leap_second::date function", "std::chrono::leap_second::value function"]
 ---
@@ -29,9 +29,7 @@ class leap_second  // Since C++20
 
 Microsoft C++ supports the `leap_second` class starting in Visual Studio 2019 version 16.10. The `leap_second` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
 
-An international standards body specifies when leap seconds should be accounted for. A database of leap second changes and when they were introduced was added to Windows 10.
-
-To get updates to the leap second database, you need Windows 10 version 1809 or later.
+An international standards body specifies when new leap seconds should be accounted for. A database of these changes was added starting in Windows 10 version 1809 and later, and Windows Server 2019 and later.
 
 **Namespace:** `std::chrono`
 
