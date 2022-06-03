@@ -98,7 +98,7 @@ CFindReplaceDialog();
 
 Because the `CFindReplaceDialog` object is a modeless dialog box, you must construct it on the heap by using the **`new`** operator.
 
-During destruction, the framework tries to perform a **delete this** on the pointer to the dialog box. If you created the dialog box on the stack, the **`this`** pointer does not exist and undefined behavior may result.
+During destruction, the framework tries to perform a `delete this;` on the pointer to the dialog box. If you created the dialog box on the stack, the **`this`** pointer does not exist and undefined behavior may result.
 
 For more information on the construction of `CFindReplaceDialog` objects, see the [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) overview. Use the [CFindReplaceDialog::Create](#create) member function to display the dialog box.
 

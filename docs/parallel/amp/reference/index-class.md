@@ -129,7 +129,7 @@ index operator--(
 
 ### Return values
 
-For the prefix operator, the index object (*this). For the suffix operator, a new index object.
+For the prefix operator, the index object (`*this`). For the suffix operator, a new index object.
 
 ## <a name="operator_mod_eq"></a> operator%=
 
@@ -229,7 +229,7 @@ index<_Rank> operator++(
 
 ### Return Value
 
-For the prefix operator, the index object (*this). For the suffix operator, a new index object.
+For the prefix operator, the index object (`*this`). For the suffix operator, a new index object.
 
 ## <a name="operator_add_eq"></a> operator+=
 

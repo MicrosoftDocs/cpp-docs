@@ -58,7 +58,7 @@ int main() {
 3
 ```
 
-## Example: this pointer
+## Example: `this` pointer
 
 ### Description
 

@@ -368,7 +368,7 @@ Even though the second one requires both a standard conversion and the user-defi
 > [!NOTE]
 > User-defined conversions are considered conversion by construction or conversion by initialization (conversion function). Both methods are considered equal when considering the best match.
 
-## Argument matching and the this pointer
+## Argument matching and the `this` pointer
 
 Class member functions are treated differently, depending on whether they are declared as **`static`**. Because nonstatic functions have an implicit argument that supplies the **`this`** pointer, nonstatic functions are considered to have one more argument than static functions; otherwise, they are declared identically.
 

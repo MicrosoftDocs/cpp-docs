@@ -387,7 +387,7 @@ There's now an implicit conversion for scoped enumerations that's non-narrowing.
 
 ### Capturing `*this` by value
 
-The **`*this`** object in a lambda expression may now be captured by value. This change enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [P0018R3 - Lambda Capture of \*this by Value as \[=,\*this\]](https://wg21.link/p0018r3).
+The **`*this`** object in a lambda expression may now be captured by value. This change enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [`P0018R3 - Lambda Capture of *this by Value as [=,*this]`](https://wg21.link/p0018r3).
 
 ### Removing `operator++` for `bool`
 
