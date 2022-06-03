@@ -24,7 +24,7 @@ The following are the two permitted ways to destroy a Windows object:
 
 - Explicitly deleting with the **`delete`** operator.
 
-The first case is by far the most common. This case applies even if your code does not call `DestroyWindow` directly. When the user directly closes a frame window, this action generates the WM_CLOSE message, and the default response to this message is to call `DestroyWindow.` When a parent window is destroyed, Windows calls `DestroyWindow` for all its children.
+The first case is by far the most common. This case applies even if your code does not call `DestroyWindow` directly. When the user directly closes a frame window, this action generates the WM_CLOSE message, and the default response to this message is to call `DestroyWindow`. When a parent window is destroyed, Windows calls `DestroyWindow` for all its children.
 
 The second case, the use of the **`delete`** operator on Windows objects, should be rare. The following are some cases where using **`delete`** is the correct choice.
 
@@ -82,7 +82,7 @@ Warning: calling DestroyWindow in CWnd::~CWnd
 
 In the case of C++ Windows objects that do perform auto-cleanup, you must call `DestroyWindow`. If you use the **`delete`** operator directly, the MFC diagnostic memory allocator will notify you that you are freeing memory two times. The two occurrences are your first explicit call and the indirect call to `delete this;` in the auto-cleanup implementation of `PostNcDestroy`.
 
-After calling `DestroyWindow` on a non-auto-cleanup object, the C++ object will still be around, but *m_hWnd* will be NULL. After calling `DestroyWindow` on an auto-cleanup object, the C++ object will be gone, freed by the C++ delete operator in the auto-cleanup implementation of `PostNcDestroy`.
+After you call `DestroyWindow` on a non-auto-cleanup object, the C++ object will still be around, but *m_hWnd* will be NULL. After you call `DestroyWindow` on an auto-cleanup object, the C++ object will be gone, freed by the C++ delete operator in the auto-cleanup implementation of `PostNcDestroy`.
 
 ## See also
 
