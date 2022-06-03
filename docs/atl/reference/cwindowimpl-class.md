@@ -276,7 +276,7 @@ virtual void OnFinalMessage(HWND hWnd);
 
 ### Remarks
 
-The default implementation of `OnFinalMessage` does nothing, but you can override this function to handle cleanup before destroying a window. If you want to automatically delete your object upon the window destruction, you can call **delete this;** in this function.
+The default implementation of `OnFinalMessage` does nothing, but you can override this function to handle cleanup before destroying a window. If you want to automatically delete your object upon the window destruction, you can call `delete this;` in this function.
 
 ## <a name="subclasswindow"></a> CWindowImpl::SubclassWindow
 

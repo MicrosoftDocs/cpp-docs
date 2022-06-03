@@ -49,7 +49,7 @@ The `CControlBar` class gives standard implementation for:
 
 - Supporting the implementation of derived classes.
 
-C++ control bar objects will usually be embedded as members of a `CFrameWnd` derived class, and will be cleaned up when the parent `HWND` and object are destroyed. If you need to allocate a control bar object on the heap, you can simply set the *m_bAutoDestruct* member to **TRUE** to make the control bar "**delete this**" when the `HWND` is destroyed.
+C++ control bar objects will usually be embedded as members of a `CFrameWnd` derived class, and will be cleaned up when the parent `HWND` and object are destroyed. If you need to allocate a control bar object on the heap, you can simply set the *m_bAutoDestruct* member to **TRUE** to make the control bar invoke `delete this;` when the `HWND` is destroyed.
 
 > [!NOTE]
 > If you create your own `CControlBar`-derived class, rather than using one of MFC's derived classes, such as `CStatusBar`, `CToolBar`, or `CDialogBar`, you will need to set the *m_dwStyle* data member. This can be done in the override of `Create`:

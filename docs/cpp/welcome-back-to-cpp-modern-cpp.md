@@ -1,7 +1,7 @@
 ---
 title: "Welcome back to C++ - Modern C++"
 description: "Describes the new programming idioms in Modern C++ and their rationale."
-ms.date: 02/07/2022
+ms.date: 06/02/2022
 ms.topic: "conceptual"
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
 ---
@@ -24,15 +24,15 @@ To support easy adoption of RAII principles, the C++ Standard Library provides t
 class widget
 {
 private:
-    std::unique_ptr<int> data;
+    std::unique_ptr<int[]> data;
 public:
-    widget(const int size) { data = std::make_unique<int>(size); }
+    widget(const int size) { data = std::make_unique<int[]>(size); }
     void do_something() {}
 };
 
 void functionUsingWidget() {
-    widget w(1000000);   // lifetime automatically tied to enclosing scope
-                // constructs w, including the w.data gadget member
+    widget w(1000000);  // lifetime automatically tied to enclosing scope
+                        // constructs w, including the w.data gadget member
     // ...
     w.do_something();
     // ...
