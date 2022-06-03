@@ -1,16 +1,18 @@
 ---
 description: "Learn more about: Compiler Error C2931"
 title: "Compiler Error C2931"
-ms.date: "11/04/2016"
+ms.date: 06/01/2022
 f1_keywords: ["C2931"]
 helpviewer_keywords: ["C2931"]
 ms.assetid: 33430407-b149-4ba3-baf8-b0dae1ea3a5d
 ---
 # Compiler Error C2931
 
-'class' : type-class-id redefined as a member function of 'identifier'
+'*class*' : type-class-id redefined as a member function of '*identifier*'
 
-You cannot use a generic or template class as a member function of another class.
+You can't use a generic or template class as a member function of another class.
+
+This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
 

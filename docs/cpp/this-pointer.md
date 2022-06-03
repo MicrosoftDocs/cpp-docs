@@ -1,5 +1,5 @@
 ---
-title: "this pointer"
+title: "The this pointer"
 description: "The this pointer is a compiler-generated pointer to the current object in nonstatic member functions."
 ms.date: "01/22/2020"
 f1_keywords: ["this_cpp"]
@@ -7,7 +7,7 @@ helpviewer_keywords: ["nonstatic member functions [C++]", "pointers, to class in
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
 no-loc: [this, class, struct, union, sizeof, const, volatile]
 ---
-# this pointer
+# The `this` pointer
 
 The **`this`** pointer is a pointer accessible only within the nonstatic member functions of a **`class`**, **`struct`**, or **`union`** type. It points to the object for which the member function is called. Static member functions don't have a **`this`** pointer.
 
@@ -131,7 +131,7 @@ my buffer
 your buffer
 ```
 
-## Type of the this pointer
+## Type of the `this` pointer
 
 The **`this`** pointer's type can be modified in the function declaration by the **`const`** and **`volatile`** keywords. To declare a function that has either of these attributes, add the keyword(s) after the function argument list.
 
@@ -161,15 +161,15 @@ int main()
 }
 ```
 
-The type of **`this`** in a member function is described by the following syntax. The *cv-qualifier-list* is determined from the member function's declarator. It can be **`const`** or **`volatile`** (or both). *class-type* is the name of the class:
+The type of **`this`** in a member function is described by the following syntax. The *`cv-qualifier-list`* is determined from the member function's declarator. It can be **`const`** or **`volatile`** (or both). *`class-type`* is the name of the class:
 
-[*cv-qualifier-list*] *class-type* **\* const this**
+[*`cv-qualifier-list`*] *`class-type`* **`* const this`**
 
-In other words, the **`this`** pointer is always a const pointer. It can't be reassigned.  The **`const`** or **`volatile`** qualifiers used in the member function declaration apply to the class instance the **`this`** pointer points at, in the scope of that function.
+In other words, the **`this`** pointer is always a **`const`** pointer. It can't be reassigned.  The **`const`** or **`volatile`** qualifiers used in the member function declaration apply to the class instance the **`this`** pointer points at, in the scope of that function.
 
 The following table explains more about how these modifiers work.
 
-### Semantics of this modifiers
+### Semantics of `this` modifiers
 
 |Modifier|Meaning|
 |--------------|-------------|

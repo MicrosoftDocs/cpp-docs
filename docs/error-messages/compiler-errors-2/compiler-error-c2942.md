@@ -1,21 +1,22 @@
 ---
 description: "Learn more about: Compiler Error C2942"
 title: "Compiler Error C2942"
-ms.date: "11/04/2016"
+ms.date: 06/01/2022
 f1_keywords: ["C2942"]
 helpviewer_keywords: ["C2942"]
 ms.assetid: 13abf744-8fa1-450d-886d-e5717c04956e
 ---
 # Compiler Error C2942
 
-'class' : type-class-id redefined as a formal argument of a function
+> '*class*' : type-class-id redefined as a formal argument of a function
 
-You cannot use a generic or template class as a formal argument. You cannot pass an argument directly to the constructor of a generic or template class.
+You can't use a generic or template class as a formal argument. You cannot pass an argument directly to the constructor of a generic or template class.
+
+This error is obsolete in Visual Studio 2022 and later versions.
 
 The following sample generates C2942:
 
-```
-
+```cpp
 // C2942.cpp
 // compile with: /c
 template<class T>
