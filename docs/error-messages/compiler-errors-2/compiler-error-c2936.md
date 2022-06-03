@@ -1,16 +1,18 @@
 ---
 description: "Learn more about: Compiler Error C2936"
 title: "Compiler Error C2936"
-ms.date: "11/04/2016"
+ms.date: 06/01/2022
 f1_keywords: ["C2936"]
 helpviewer_keywords: ["C2936"]
 ms.assetid: 5d1ba0fc-0c78-4a37-a83b-1ef8527763be
 ---
 # Compiler Error C2936
 
-'class' : type-class-id redefined as a global data variable
+> '*class*' : type-class-id redefined as a global data variable
 
-You cannot use a generic or template class as a global data variable.
+You can't use a generic or template class as a global data variable.
+
+This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
 

@@ -1,16 +1,20 @@
 ---
 description: "Learn more about: Compiler Error C3485"
 title: "Compiler Error C3485"
-ms.date: "11/04/2016"
+ms.date: 06/01/2022
 f1_keywords: ["C3485"]
 helpviewer_keywords: ["C3485"]
 ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
 ---
 # Compiler Error C3485
 
-a lambda definition cannot have any cv-qualifiers
+> a lambda definition cannot have any cv-qualifiers
 
-You cannot use a **`const`** or **`volatile`** qualifier as part of the definition of a lambda expression.
+## Remarks
+
+You can't use a **`const`** or **`volatile`** qualifier as part of the definition of a lambda expression.
+
+This error is obsolete in Visual Studio 2022.
 
 ### To correct this error
 
@@ -29,6 +33,8 @@ int main()
 }
 ```
 
+To fix it, remove the **`const`** qualifier.
+
 ## See also
 
-[Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda expressions](../../cpp/lambda-expressions-in-cpp.md)

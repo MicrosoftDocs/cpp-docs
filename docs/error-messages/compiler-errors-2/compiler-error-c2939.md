@@ -1,16 +1,18 @@
 ---
 description: "Learn more about: Compiler Error C2939"
 title: "Compiler Error C2939"
-ms.date: "11/04/2016"
+ms.date: 06/01/2022
 f1_keywords: ["C2939"]
 helpviewer_keywords: ["C2939"]
 ms.assetid: 455b050b-f2dc-4b5b-bd6a-e1f81d3d1644
 ---
 # Compiler Error C2939
 
-'class' : type-class-id redefined as a local data variable
+> '*class*' : type-class-id redefined as a local data variable
 
-You cannot use a generic or template class as a local data variable.
+You can't use a generic or template class as a local data variable.
+
+This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
 

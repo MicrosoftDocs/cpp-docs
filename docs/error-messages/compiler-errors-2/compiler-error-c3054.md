@@ -1,16 +1,20 @@
 ---
 description: "Learn more about: Compiler Error C3054"
 title: "Compiler Error C3054"
-ms.date: "11/04/2016"
+ms.date: 06/01/2022
 f1_keywords: ["C3054"]
 helpviewer_keywords: ["C3054"]
 ms.assetid: 6f4b7ac5-0d12-474b-b611-76ff26ee41ac
 ---
 # Compiler Error C3054
 
-'#pragma omp parallel' is currently not supported in a generic class or function
+> '#pragma omp parallel' is currently not supported in a generic class or function
+
+## Remarks
 
 For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md) and [OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md).
+
+This error is obsolete in Visual Studio 2022 and later versions.
 
 ## Example
 
