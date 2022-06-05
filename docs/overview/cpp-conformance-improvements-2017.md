@@ -32,15 +32,15 @@ the message parameter for **`static_assert`** is optional. For more information,
 
 ### C++17: `[[fallthrough]]` attribute
 
-In **`/std:c++17`** mode and later, the `[[fallthrough]]` attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This attribute prevents the compiler from issuing warnings in such cases. For more information, see [P0188R0 - Wording for `[[fallthrough]]` attribute](https://wg21.link/p0188r0).
+In **`/std:c++17`** mode and later, the `[[fallthrough]]` attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This attribute prevents the compiler from issuing warnings in such cases. For more information, see [`P0188R0 - Wording for [[fallthrough]] attribute`](https://wg21.link/p0188r0).
 
 ### Generalized range-based `for` loops
 
-Range-based `for` loops no longer require that `begin()` and `end()` return objects of the same type. This change enables `end()` to return a sentinel as used by ranges in [`range-v3`](https://github.com/ericniebler/range-v3) and the completed-but-not-quite-published Ranges Technical Specification. For more information, see [P0184R0 - Generalizing the Range-Based `for` Loop](https://wg21.link/p0184r0).
+Range-based `for` loops no longer require that `begin()` and `end()` return objects of the same type. This change enables `end()` to return a sentinel as used by ranges in [`range-v3`](https://github.com/ericniebler/range-v3) and the completed-but-not-quite-published Ranges Technical Specification. For more information, see [`P0184R0 - Generalizing the Range-Based for Loop`](https://wg21.link/p0184r0).
 
 ### Copy-list-initialization
 
-Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists. These errors weren't caught in Visual Studio 2015, and could lead to crashes or undefined runtime behavior. As per [N4594 13.3.1.7p1](https://wg21.link/n4594), in *`copy-list-initialization`*, the compiler is required to consider an explicit constructor for overload resolution. However, it must raise an error if that particular overload gets chosen.
+Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists. These errors weren't caught in Visual Studio 2015, and could lead to crashes or undefined runtime behavior. As per [`N4594 13.3.1.7p1`](https://wg21.link/n4594), in *`copy-list-initialization`*, the compiler is required to consider an explicit constructor for overload resolution. However, it must raise an error if that particular overload gets chosen.
 
 The following two examples compile in Visual Studio 2015 but not in Visual Studio 2017.
 
@@ -148,7 +148,7 @@ To correct the error, either declare the `array::size()` function as **`constexp
 
 ### Class types passed to variadic functions
 
-In Visual Studio 2017, classes or structs that are passed to a variadic function such as `printf` must be trivially copyable. When passing such objects, the compiler simply makes a bitwise copy and doesn't call the constructor or destructor.
+In Visual Studio 2017, classes or structs that are passed to a variadic function such as `printf` must be trivially copyable. When such objects are passed, the compiler simply makes a bitwise copy and doesn't call the constructor or destructor.
 
 ```cpp
 #include <atomic>
@@ -250,7 +250,7 @@ template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember':
 
 ### Expression-SFINAE
 
-To support expression-SFINAE, the compiler now parses **`decltype`** arguments when the templates are declared rather than instantiated. So, if a non-dependent specialization is found in the decltype argument, it's not deferred to instantiation-time. It's processed immediately, and any resulting errors are diagnosed at that time.
+To support expression-SFINAE, the compiler now parses **`decltype`** arguments when the templates are declared rather than instantiated. So, if a non-dependent specialization is found in the **`decltype`** argument, it's not deferred until instantiation-time. It's processed immediately, and any resulting errors are diagnosed at that time.
 
 The following example shows such a compiler error that is raised at the point of declaration:
 
@@ -379,11 +379,11 @@ New syntax to enable only a single namespace identifier in an attribute list. Fo
 
 ### Structured bindings
 
-It's now possible in a single declaration to store a value with individual names for its components, when the value is an array, a `std::tuple` or `std::pair`, or has all public non-static data members. For more information, see [P0144R0 - Structured Bindings](https://wg21.link/p0144r0) and [Returning multiple values from a function](../cpp/functions-cpp.md#multi_val).
+It's now possible in a single declaration to store a value with individual names for its components, when the value is an array, a `std::tuple` or `std::pair`, or has all public non-static data members. For more information, see [`P0144R0 - Structured Bindings`](https://wg21.link/p0144r0) and [Returning multiple values from a function](../cpp/functions-cpp.md#multi_val).
 
 ### Construction rules for `enum class` values
 
-There's now an implicit conversion for scoped enumerations that's non-narrowing. It converts from a scoped enumeration's underlying type to the enumeration itself. The conversion is available when its definition doesn't introduce an enumerator, and when the source uses a list-initialization syntax. For more information, see [P0138R2 - Construction Rules for `enum class` Values](https://wg21.link/p0138r2) and [Enumerations](../cpp/enumerations-cpp.md#no_enumerators).
+There's now an implicit conversion for scoped enumerations that's non-narrowing. It converts from a scoped enumeration's underlying type to the enumeration itself. The conversion is available when its definition doesn't introduce an enumerator, and when the source uses a list-initialization syntax. For more information, see [`P0138R2 - Construction Rules for enum class Values`](https://wg21.link/p0138r2) and [Enumerations](../cpp/enumerations-cpp.md#no_enumerators).
 
 ### Capturing `*this` by value
 
@@ -391,11 +391,11 @@ The **`*this`** object in a lambda expression may now be captured by value. This
 
 ### Removing `operator++` for `bool`
 
-`operator++` is no longer supported on **`bool`** types. For more information, see [P0002R1 - Remove Deprecated operator++(bool)](https://wg21.link/p0002r1).
+`operator++` is no longer supported on **`bool`** types. For more information, see [`P0002R1 - Remove Deprecated operator++(bool)`](https://wg21.link/p0002r1).
 
 ### Removing deprecated `register` keyword
 
-The **`register`** keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [P0001R1 - Remove Deprecated Use of the `register` Keyword](https://wg21.link/p0001r1).
+The **`register`** keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [`P0001R1 - Remove Deprecated Use of the register Keyword`](https://wg21.link/p0001r1).
 
 ### Calls to deleted member templates
 
@@ -784,7 +784,7 @@ In earlier versions of Visual Studio, the compiler always gave a **`constexpr`**
 
 ### Removing dynamic exception specifications
 
-[P0003R5](https://wg21.link/p0003r5) Dynamic exception specifications were deprecated in C++11. the feature is removed from C++17, but the (still) deprecated `throw()` specification is kept strictly as an alias for `noexcept(true)`. For more information, see [Dynamic exception specification removal and `noexcept`](#noexcept_removal).
+[P0003R5](https://wg21.link/p0003r5) Dynamic exception specifications were deprecated in C++11. The feature is removed from C++17, but the (still) deprecated `throw()` specification is kept strictly as an alias for `noexcept(true)`. For more information, see [Dynamic exception specification removal and `noexcept`](#noexcept_removal).
 
 ### `not_fn()`
 
@@ -1300,7 +1300,7 @@ int main()
 
 ### C++17 Library Fundamentals V1
 
-[P0220R1](https://wg21.link/p0220r1) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to \<experimental/tuple>, \<experimental/optional>, \<experimental/functional>, \<experimental/any>, \<experimental/string_view>, \<experimental/memory>, \<experimental/memory_resource>, and \<experimental/algorithm>.
+[P0220R1](https://wg21.link/p0220r1) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to *`<experimental/tuple>`*, *`<experimental/optional>`*, *`<experimental/functional>`*, *`<experimental/any>`*, *`<experimental/string_view>`*, *`<experimental/memory>`*, *`<experimental/memory_resource>`*, and *`<experimental/algorithm>`*.
 
 ### C++17: Improving class template argument deduction for the standard library
 
@@ -1450,13 +1450,13 @@ void sample(A<0> *p)
 
 [P0030R1](https://wg21.link/p0030r1) Adds three new overloads to `std::hypot`, for types **`float`**, **`double`**, and **`long double`**, each of which has three input parameters.
 
-### C++17: \<filesystem>
+### C++17: *`<filesystem>`*
 
 [P0218R1](https://wg21.link/p0218r1) Adopts the File System TS into the standard with a few wording modifications.
 
 ### C++17: Mathematical special functions
 
-[P0226R1](https://wg21.link/p0220r1) Adopts previous technical specifications for Mathematical Special Functions into the standard \<cmath> header.
+[P0226R1](https://wg21.link/p0220r1) Adopts previous technical specifications for Mathematical Special Functions into the standard *`<cmath>`* header.
 
 ### C++17: Deduction guides for the standard library
 
@@ -1464,7 +1464,7 @@ void sample(A<0> *p)
 
 ### C++17: Repairing elementary string conversions
 
-[P0682R1](https://wg21.link/p0682r1) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use `std::errc` instead of `std::error_code`.
+[P0682R1](https://wg21.link/p0682r1) Move the new elementary string conversion functions from P0067R5 into a new header *`<charconv>`* and make other improvements, including changing error handling to use `std::errc` instead of `std::error_code`.
 
 ### C++17: `constexpr` for `char_traits` (partial)
 
@@ -1472,7 +1472,7 @@ void sample(A<0> *p)
 
 ### C++17: Default argument in the primary class template
 
-This behavior change is a precondition for [P0091R3 - Template argument deduction for class templates](https://wg21.link/p0091r3).
+This behavior change is a precondition for [`P0091R3 - Template argument deduction for class templates`](https://wg21.link/p0091r3).
 
 Previously, the compiler ignored the default argument in the primary class template:
 
@@ -1500,7 +1500,7 @@ void S<T>::f(int) {} // Default argument is used
 
 ### Dependent name resolution
 
-This behavior change is a precondition for [P0091R3 - Template argument deduction for class templates](https://wg21.link/p0091r3).
+This behavior change is a precondition for [`P0091R3 - Template argument deduction for class templates`](https://wg21.link/p0091r3).
 
 In the following example, the compiler in Visual Studio 15.6 and earlier resolves `D::type` to `B<T>::type` in the primary class template.
 
@@ -1564,7 +1564,7 @@ struct D : B<T>
 D<int> d;
 ```
 
-To fix the error, change the B() expression to B\<T>().
+To fix the error, change the `B()` expression to `B<T>()`.
 
 ### `constexpr` aggregate initialization
 
@@ -1642,7 +1642,7 @@ using  X [[deprecated("msg")]] = T;
 
 Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, the Microsoft C++ compiler would leave an unfound name as not looked up until instantiation time. Now, it requires that non-dependent names are bound in the template body.
 
-One way this can manifest is with lookup into dependent base classes. Previously, the compiler allowed the use of names that are defined in dependent base classes. That's because they'd be looked up during instantiation time when all the types are resolved. Now that code is treated as an error. In these cases, you can force the variable to be looked up at instantiation time by qualifying it with the base class type or otherwise making it dependent, for example, by adding a `this->` pointer.
+One way this can manifest is with lookup into dependent base classes. Previously, the compiler allowed the use of names that are defined in dependent base classes. It's because they'd be looked up during instantiation time when all the types are resolved. Now that code is treated as an error. In these cases, you can force the variable to be looked up at instantiation time by qualifying it with the base class type or otherwise making it dependent, for example, by adding a `this->` pointer.
 
 In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the following code now raises C3861:
 
@@ -1745,7 +1745,7 @@ int main()
 }
 ```
 
-To fix the error, use `offsetof` as defined via \<cstddef>:
+To fix the error, use `offsetof` as defined via *`<cstddef>`*:
 
 ```cpp
 #include <cstddef>
@@ -1767,7 +1767,7 @@ int main()
 
 Previous versions of the Microsoft C++ compiler didn't detect that a base-class had cv-qualifiers if it was also subject to pack expansion.
 
-In Visual Studio 2017 version 15.8, in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode the following code raises C3770:
+In Visual Studio 2017 version 15.8, in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the following code raises C3770:
 
 ```cpp
 template<typename... T>
