@@ -9,23 +9,25 @@ ms.assetid: 6438970c-0aee-4f14-a058-5fe47d0ee216
 ---
 # ML Nonfatal Error A2034
 
-**must be in segment block**
+> **must be in segment block**
 
-One of the following was found outside of a segment block:
+## Remarks
+
+The assembler found one of the following items outside of a segment block:
 
 - An instruction
 
 - A label definition
 
-- A [THIS](operator-this.md) operator
+- A [`THIS`](operator-this.md) operator
 
-- A [$](dollar.md) operator
+- A [`$`](dollar.md) operator
 
 - A procedure definition
 
-- An [ALIGN](align-masm.md) directive
+- An [`ALIGN`](align-masm.md) directive
 
-- An [ORG](org.md) directive
+- An [`ORG`](org.md) directive
 
 ## See also
 

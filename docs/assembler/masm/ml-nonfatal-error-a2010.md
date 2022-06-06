@@ -9,9 +9,11 @@ ms.assetid: 8bcd57f4-1e3f-421f-9ef8-e702daf57fcb
 ---
 # ML Nonfatal Error A2010
 
-**invalid type expression**
+> **invalid type expression**
 
-The operand to [THIS](operator-this.md) or [PTR](operator-ptr.md) was not a valid type expression.
+## Remarks
+
+The operand to [`THIS`](operator-this.md) or [`PTR`](operator-ptr.md) wasn't a valid type expression.
 
 ## See also
 
