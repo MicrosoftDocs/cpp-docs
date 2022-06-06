@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: time_zone_link class"
 title: "time_zone_link class"
-ms.date: 9/15/2021
+ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::time_zone_link::name", "chrono/std::chrono::time_zone_link::target"]
 helpviewer_keywords: ["std::chrono [C++], time_zone_link class", "std::chrono::time_zone_link::name function", "std::chrono::time_zone_link::target function"]
 ---
@@ -45,11 +45,7 @@ In Microsoft's implementation, time zone data can differ in some cases from the 
 
 **Header:** `<chrono>`
 
-At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
-
-Regional legislatures occasionally make changes to time zones. OS support for a database of these changes was added to Windows 10.
-
-Time zone support requires Windows 10 version 1903/19H1 or later. This requirement applies to both client and server operating systems. Time zone support is available on Windows Server 2019 when the latest Windows updates are applied.
+Time-zone data is only available for Windows 10 version 1903/19H1 and later, and Windows Server 2022 and later.
 
 **Namespace:** `std::chrono`
 
