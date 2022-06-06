@@ -31,10 +31,10 @@ The `/clr` switch conflicts with some compiler switches that are set when you cr
 
 - Turn off [Set Basic Runtime Checks to Default (/RTC1)](../build/reference/rtc-run-time-error-checks.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **Code Generation** > **Basic Runtime Checks** > **Default**
 - Turn off [/EHs (Exception handling model)](../build/reference/eh-exception-handling-model.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **Code Generation** > **Enable C++ Exceptions** > **No**
-- Exchange [/Zi (Debug information format)](../build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment) for [/Z7](/cpp/build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Debug Information Format** > **C7 compatible**.
+- Exchange [/Zi (Debug information format)](../build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment) for [/Z7](/cpp/build/reference/z7-zi-zi-debug-information-format#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Debug Information Format** > **C7 compatible**.
 - Turn off [/JMC (Just My Code debugging)](../build/reference/jmc.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Support Just My Code Debugging** > **No**
 - Set the debugger type to mixed: **Project Properties** > **Debugging** > **Debugger Type** > **Mixed (.NET framework)**
-- Turn on [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute.md#to-set-this-linker-option-in-the-visual-studio-development-environment): **Project properties** > **Linker** > **Debugging** > **Debuggable Assembly** > **Yes (ASSEMBLYDEBUG)**
+- Turn on [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute#to-set-this-linker-option-in-the-visual-studio-development-environment): **Project properties** > **Linker** > **Debugging** > **Debuggable Assembly** > **Yes (ASSEMBLYDEBUG)**
 
 ## Example: Convert from `char *`
 
