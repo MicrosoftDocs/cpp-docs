@@ -51,6 +51,8 @@ You must add the AFX_MANAGE_STATE macro at the beginning of all the exported fun
 
 `AFX_MANAGE_STATE(AfxGetStaticModuleState( ))`
 
+Note: New generated MFC projects and DLLs with pch.h headers must explicitly include *afxmfc* header files which are used in your code. For example, using CString requires you to `include <atlstr.h>` in your pch.h.
+
 ## WinMain -> DllMain
 
 The MFC library defines the standard Win32 `DllMain` entry point that initializes your [CWinApp](../mfc/reference/cwinapp-class.md) derived object as in a typical MFC application. Place all DLL-specific initialization in the [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) method as in a typical MFC application.
