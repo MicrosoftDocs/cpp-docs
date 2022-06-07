@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: back_insert_iterator Class"
 title: "back_insert_iterator Class"
-ms.date: "11/04/2016"
+ms.date: 06/07/2022
 f1_keywords: ["iterator/std::back_insert_iterator", "iterator/std::back_insert_iterator::container_type", "iterator/std::back_insert_iterator::reference"]
 helpviewer_keywords: ["std::back_insert_iterator [C++]", "std::back_insert_iterator [C++], container_type", "std::back_insert_iterator [C++], reference"]
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
+ms.custom: devdivchpfy22
 ---
 # back_insert_iterator Class
 
@@ -24,7 +25,7 @@ The type of container into the back of which elements are to be inserted by a `b
 
 ## Remarks
 
-The container must satisfy the requirements for a back insertion sequence where is it possible to insert elements at the end of the sequence in amortized constant time. C++ Standard Library sequence containers defined by the [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md) and [vector Class](../standard-library/vector-class.md) provide the needed `push_back` member function and satisfy these requirements. These three containers as well as strings may each be adapted to use with `back_insert_iterator`s. A `back_insert_iterator` must always be initialized with its container.
+The container must satisfy the requirements for a back insertion sequence where is it possible to insert elements at the end of the sequence in amortized constant time. C++ Standard Library sequence containers defined by the [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md) and [vector Class](../standard-library/vector-class.md) provide the needed `push_back` member function and satisfy these requirements. These three containers and strings may each be adapted to use with `back_insert_iterator`s. A `back_insert_iterator` must always be initialized with its container.
 
 ### Constructors
 
@@ -186,7 +187,7 @@ A reference to the element inserted at the back of the container.
 
 ### Remarks
 
-Used to implement the output iterator expression **\*Iter** = **value**. If **Iter** is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and does not change the total number of elements in the sequence.
+Used to implement the output iterator expression **\*Iter** = **value**. If **Iter** is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and doesn't change the total number of elements in the sequence.
 
 ### Example
 

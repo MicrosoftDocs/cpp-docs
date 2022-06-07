@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: basic_ifstream Class"
 title: "basic_ifstream Class"
-ms.date: "11/04/2016"
+ms.date: 06/07/2022
 f1_keywords: ["fstream/std::basic_ifstream", "fstream/std::basic_ifstream::close", "fstream/std::basic_ifstream::is_open", "fstream/std::basic_ifstream::open", "fstream/std::basic_ifstream::rdbuf", "fstream/std::basic_ifstream::swap"]
 helpviewer_keywords: ["std::basic_ifstream [C++]", "std::basic_ifstream [C++], close", "std::basic_ifstream [C++], is_open", "std::basic_ifstream [C++], open", "std::basic_ifstream [C++], rdbuf", "std::basic_ifstream [C++], swap"]
+ms.custom: devdivchpfy22
 ---
 # `basic_ifstream` Class
 
@@ -87,7 +88,7 @@ This is the contents of basic_ifstream_class.txt.
 
 |Operator|Description|
 |-|-|
-|[`operator=`](#op_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue` that does not leave a copy behind.|
+|[`operator=`](#op_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue` that doesn't leave a copy behind.|
 
 ## Requirements
 
@@ -242,7 +243,7 @@ See [`basic_filebuf::open`](../standard-library/basic-filebuf-class.md#open) for
 
 ## <a name="op_eq"></a> `basic_ifstream::operator=`
 
-Assigns the content of this stream object. This is a move assignment involving an `rvalue` that does not leave a copy behind.
+Assigns the content of this stream object. This is a move assignment involving an `rvalue` that doesn't leave a copy behind.
 
 ```cpp
 basic_ifstream& operator=(basic_ifstream&& right);

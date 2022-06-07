@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: basic_istream Class"
 title: "basic_istream Class"
-ms.date: "11/04/2016"
+ms.date: 06/07/2022
 f1_keywords: ["istream/std::basic_istream", "istream/std::basic_istream::gcount", "istream/std::basic_istream::get", "istream/std::basic_istream::getline", "istream/std::basic_istream::", "istream/std::basic_istream::peek", "istream/std::basic_istream::putback", "istream/std::basic_istream::read", "istream/std::basic_istream::readsome", "istream/std::basic_istream::seekg", "istream/std::basic_istream::sentry", "istream/std::basic_istream::swap", "istream/std::basic_istream::sync", "istream/std::basic_istream::tellg", "istream/std::basic_istream::unget"]
 helpviewer_keywords: ["std::basic_istream [C++]", "std::basic_istream [C++], gcount", "std::basic_istream [C++], get", "std::basic_istream [C++], getline", "std::basic_istream [C++], OVERWRITE", "std::basic_istream [C++], peek", "std::basic_istream [C++], putback", "std::basic_istream [C++], read", "std::basic_istream [C++], readsome", "std::basic_istream [C++], seekg", "std::basic_istream [C++], sentry", "std::basic_istream [C++], swap", "std::basic_istream [C++], sync", "std::basic_istream [C++], tellg", "std::basic_istream [C++], unget"]
+ms.custom: devdivchpfy22
 ---
 # `basic_istream` Class
 
@@ -158,7 +159,7 @@ A `basic_istream` object to copy.
 
 ### Remarks
 
-The first constructor initializes the base class by calling `init(strbuf)`. It also stores zero in the extraction count. For more infomration see [`init`](../standard-library/basic-ios-class.md#init). And for more information about this extraction count, see the Remarks section of the [`basic_istream` Class](../standard-library/basic-istream-class.md) overview.
+The first constructor initializes the base class by calling `init(strbuf)`. It also stores zero in the extraction count. For more infomration, see [`init`](../standard-library/basic-ios-class.md#init). And for more information about this extraction count, see the Remarks section of the [`basic_istream` Class](../standard-library/basic-istream-class.md) overview.
 
 The second constructor initializes the base class by calling `move(right)`. It also stores `right.gcount()` in the extraction count and stores zero in the extraction count for *`right`**.
 
@@ -247,13 +248,13 @@ A buffer in which to write.
 
 ### Return Value
 
-The parameterless form of `get` returns the element read as an integer or end of file. The remaining forms return the stream (* **`this`**).
+The parameterless form of `get` returns the element read as an integer or end of file. The remaining forms return the stream (**`*this`**).
 
 ### Remarks
 
 The first unformatted input function extracts an element, if possible, as if by returning `rdbuf->sbumpc`. Otherwise, it returns `traits_type::`[`eof`](../standard-library/char-traits-struct.md#eof). If the function extracts no element, it calls `setstate(failbit)`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
 
-The second function extracts the [`int_type`](../standard-library/basic-ios-class.md#int_type) element `meta` the same way. If `meta` compares equal to `traits_type::eof`, the function calls `setstate(failbit)`. Otherwise, it stores `traits_type::to_char_type(meta)` in *`Ch`*. The function returns `__*this__`. For more information, see [`to_char_type`](../standard-library/char-traits-struct.md#to_char_type).
+The second function extracts the [`int_type`](../standard-library/basic-ios-class.md#int_type) element `meta` the same way. If `meta` compares equal to `traits_type::eof`, the function calls `setstate(failbit)`. Otherwise, it stores `traits_type::to_char_type(meta)` in *`Ch`*. The function returns `*this`. For more information, see [`to_char_type`](../standard-library/char-traits-struct.md#to_char_type).
 
 The third function returns `get(str, count, widen('\n'))`.
 
@@ -265,11 +266,11 @@ The fourth function extracts up to `count - 1` elements and stores them in the a
 
 - After the function extracts `count - 1` elements.
 
-If the function extracts no elements, it calls `setstate(failbit)`. In any case, it returns `__*this__`.
+If the function extracts no elements, it calls `setstate(failbit)`. In any case, it returns `*this`.
 
 The fifth function returns `get(strbuf, widen('\n'))`.
 
-The sixth function extracts elements and inserts them in *`strbuf`*. Extraction stops on end-of-file or on an element that compares equal to *`delimiter`*, which is not extracted. It also stops, without extracting the element in question, if an insertion fails or throws an exception (which is caught but not rethrown). If the function extracts no elements, it calls `setstate(failbit)`. In any case, the function returns `__*this__`.
+The sixth function extracts elements and inserts them in *`strbuf`*. Extraction stops on end-of-file or on an element that compares equal to *`delimiter`*, which isn't extracted. It also stops, without extracting the element in question, if an insertion fails or throws an exception (which is caught but not rethrown). If the function extracts no elements, it calls `setstate(failbit)`. In any case, the function returns `*this`.
 
 ### Example
 
@@ -324,7 +325,7 @@ A string in which to write.
 
 ### Return Value
 
-The stream (`__*this__`).
+The stream (`*this`).
 
 ### Remarks
 
@@ -338,7 +339,7 @@ The second function extracts up to `count - 1` elements and stores them in the a
 
 - After the function extracts `count - 1` elements.
 
-If the function extracts no elements or `count - 1` elements, it calls `setstate(failbit)`. In any case, it returns `__*this__`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
+If the function extracts no elements or `count - 1` elements, it calls `setstate(failbit)`. In any case, it returns `*this`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
 
 ### Example
 
@@ -381,11 +382,11 @@ The element that, if encountered before count, causes `ignore` to return and all
 
 ### Return Value
 
-The stream (`__*this__`).
+The stream (`*this`).
 
 ### Remarks
 
-The unformatted input function extracts up to *`count`* elements and discards them. If *`count`* equals `numeric_limits<int>::max`, however, it's taken as arbitrarily large. Extraction stops early on end of file or on an element `Ch` such that `traits_type::to_int_type(Ch)` compares equal to *`delimiter`* (which is also extracted). The function returns `__*this__`. For more information, see [`to_int_type`](../standard-library/char-traits-struct.md#to_int_type).
+The unformatted input function extracts up to *`count`* elements and discards them. If *`count`* equals `numeric_limits<int>::max`, however, it's taken as arbitrarily large. Extraction stops early on end of file or on an element `Ch` such that `traits_type::to_int_type(Ch)` compares equal to *`delimiter`* (which is also extracted). The function returns `*this`. For more information, see [`to_int_type`](../standard-library/char-traits-struct.md#to_int_type).
 
 ### Example
 
@@ -446,13 +447,13 @@ The value to read from the stream.
 
 ### Return Value
 
-The stream (`__*this__`).
+The stream (`*this`).
 
 ### Remarks
 
 The `<istream>` header also defines several global extraction operators. For more information, see [`operator>> (\<istream>)`](../standard-library/istream-operators.md#op_gt_gt).
 
-The first member function ensures that an expression of the form `istr >> ws` calls `ws(istr)`, and then returns `__*this__`. For more information, see [`ws`](../standard-library/istream-functions.md#ws).
+The first member function ensures that an expression of the form `istr >> ws` calls `ws(istr)`, and then returns `*this`. For more information, see [`ws`](../standard-library/istream-functions.md#ws).
 
 The second and third functions ensure that other manipulators, such as [`hex`](../standard-library/ios-functions.md#hex), behave similarly. The remaining functions are the formatted input functions.
 
@@ -463,7 +464,7 @@ basic_istream& operator>>(
     basic_streambuf<Char_T, Tr>* strbuf);
 ```
 
-extracts elements, if *`strbuf`* isn't a null pointer, and inserts them in *`strbuf`*. Extraction stops on end of file. It also stops without extracting the element in question, if an insertion fails or throws an exception (which is caught but not rethrown). If the function extracts no elements, it calls `setstate(failbit)`. In any case, the function returns `__*this__`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
+extracts elements, if *`strbuf`* isn't a null pointer, and inserts them in *`strbuf`*. Extraction stops on end of file. It also stops without extracting the element in question, if an insertion fails or throws an exception (which is caught but not rethrown). If the function extracts no elements, it calls `setstate(failbit)`. In any case, the function returns `*this`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
 
 The function:
 
@@ -471,7 +472,7 @@ The function:
 basic_istream& operator>>(bool& val);
 ```
 
-extracts a field and converts it to a Boolean value by calling `use_facet< num_get<Char_T, InIt>(getloc).get( InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`. The function returns `__*this__`.
+extracts a field and converts it to a Boolean value by calling `use_facet< num_get<Char_T, InIt>(getloc).get( InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`. The function returns `*this`.
 
 For more information, see [`use_facet`](../standard-library/basic-filebuf-class.md#open), [`getloc`](../standard-library/ios-base-class.md#getloc), [`get`](#get), [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf), and [`istreambuf_iterator`](../standard-library/istreambuf-iterator-class.md). 
 
@@ -491,7 +492,7 @@ basic_istream& operator>>(void *& val);
 
 extract a field and convert it to a numeric value by calling `use_facet<num_get<Char_T, InIt>(getloc).get(InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`, and *`val`* has type **`long`**, **`unsigned long`**, or **`void *`** as needed.
 
-If the converted value can't be represented as the type of *`val`*, the function calls `setstate(failbit)`. In any case, the function returns `__*this__`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
+If the converted value can't be represented as the type of *`val`*, the function calls `setstate(failbit)`. In any case, the function returns `*this`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
 
 Each of the functions:
 
@@ -503,7 +504,7 @@ basic_istream& operator>>(long double& val);
 
 extract a field and convert it to a numeric value by calling `use_facet<num_get<Char_T, InIt>(getloc).get(InIt(rdbuf), Init(0), *this, getloc, val)`. Here, `InIt` is defined as `istreambuf_iterator<Char_T, Tr>`, and *`val`* has type **`double`** or **`long double`** as needed.
 
-If the converted value can't be represented as the type of *`val`*, the function calls `setstate(failbit)`. In any case, it returns `__*this__`.
+If the converted value can't be represented as the type of *`val`*, the function calls `setstate(failbit)`. In any case, it returns `*this`.
 
 ### Example
 
@@ -557,7 +558,7 @@ An `rvalue` reference to a `basic_ifstream` object.
 
 ### Return Value
 
-Returns `__*this__`.
+Returns `*this`.
 
 ### Remarks
 
@@ -624,11 +625,11 @@ A character to put back into the stream.
 
 ### Return Value
 
-The stream (`__*this__`).
+The stream (`*this`).
 
 ### Remarks
 
-The [unformatted input function](../standard-library/basic-istream-class.md) puts back *`Ch`*, if possible, as if by calling `rdbuf->sputbackc`. If `rdbuf` is a null pointer, or if the call to `sputbackc` returns `traits_type::eof`, the function calls `setstate(badbit)`. In any case, it returns `__*this__`.
+The [unformatted input function](../standard-library/basic-istream-class.md) puts back *`Ch`*, if possible, as if by calling `rdbuf->sputbackc`. If `rdbuf` is a null pointer, or if the call to `sputbackc` returns `traits_type::eof`, the function calls `setstate(badbit)`. In any case, it returns `*this`.
 
 For more information, see [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf), [`sputbackc`](../standard-library/basic-streambuf-class.md#sputbackc), [`eof`](../standard-library/char-traits-struct.md#eof), and [`setstate`](../standard-library/basic-ios-class.md#setstate).
 
@@ -682,7 +683,7 @@ The stream ( **`*this`**).
 
 ### Remarks
 
-The unformatted input function extracts up to *`count`* elements and stores them in the array beginning at *`str`*. Extraction stops early on end of file, in which case the function calls `setstate(failbit)`. In any case, it returns `__*this__`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
+The unformatted input function extracts up to *`count`* elements and stores them in the array beginning at *`str`*. Extraction stops early on end of file, in which case the function calls `setstate(failbit)`. In any case, it returns `*this`. For more information, see [`setstate`](../standard-library/basic-ios-class.md#setstate).
 
 ### Example
 
@@ -745,7 +746,7 @@ The number of characters actually read, [`gcount`](#gcount).
 
 This unformatted input function extracts up to *`count`* elements from the input stream and stores them in the array *`str`*.
 
-This function does not wait for input. It reads whatever data is available.
+This function doesn't wait for input. It reads whatever data is available.
 
 ### Example
 
@@ -799,7 +800,7 @@ One of the [`ios_base::seekdir`](../standard-library/ios-base-class.md#seekdir) 
 
 ### Return Value
 
-The stream (`__*this__`).
+The stream (`*this`).
 
 ### Remarks
 
@@ -808,7 +809,7 @@ The first member function performs an absolute seek, the second member function 
 > [!NOTE]
 > Do not use the second member function with text files, because Standard C++ does not support relative seeks in text files.
 
-If [`fail`](../standard-library/basic-ios-class.md#fail) is `false`, the first member function calls `newpos = rdbuf->pubseekpos(pos)`, for some `pos_type` temporary object `newpos`. If `fail` is `false`, the second function calls `newpos = rdbuf->pubseekoff( off, way)`. In either case, if `(off_type)newpos == (off_type)(-1)` (the positioning operation fails), the function calls `istr.setstate(failbit)`. Both functions return `__*this__`.
+If [`fail`](../standard-library/basic-ios-class.md#fail) is `false`, the first member function calls `newpos = rdbuf->pubseekpos(pos)`, for some `pos_type` temporary object `newpos`. If `fail` is `false`, the second function calls `newpos = rdbuf->pubseekoff( off, way)`. In either case, if `(off_type)newpos == (off_type)(-1)` (the positioning operation fails), the function calls `istr.setstate(failbit)`. Both functions return `*this`.
 
 If [`fail`](../standard-library/basic-ios-class.md#fail) is `true`, the member functions do nothing.
 
@@ -853,7 +854,7 @@ class sentry {
 
 If `_Istr.good` is `true`, the constructor:
 
-- Calls `_Istr.tie->flush` if `_Istr.tie` is not a null pointer.
+- Calls `_Istr.tie->flush` if `_Istr.tie` isn't a null pointer.
 
 - Effectively calls `ws(_Istr)` if `_Istr.flags & skipws` is nonzero.
 
@@ -876,7 +877,7 @@ An `lvalue` reference to a `basic_istream` object.
 
 ### Remarks
 
-The member function calls `basic_ios::swap(right)`. It also exchanges the extraction count with the extraction count for *`right`*. For more information see [`basic_ios::swap`](../standard-library/basic-ios-class.md#swap).
+The member function calls `basic_ios::swap(right)`. It also exchanges the extraction count with the extraction count for *`right`*. For more information, see [`basic_ios::swap`](../standard-library/basic-ios-class.md#swap).
 
 ## <a name="sync"></a> `basic_istream::sync`
 
@@ -942,11 +943,11 @@ basic_istream<Char_T, Tr>& unget();
 
 ### Return Value
 
-The stream (`__*this__`).
+The stream (`*this`).
 
 ### Remarks
 
-The [unformatted input function](../standard-library/basic-istream-class.md) puts back the previous element in the stream, if possible, as if by calling `rdbuf->sungetc` If [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) is a null pointer, or if the call to `sungetc` returns `traits_type::eof`, the function calls `setstate(badbit)`. In any case, it returns `__*this__`.
+The [unformatted input function](../standard-library/basic-istream-class.md) puts back the previous element in the stream, if possible, as if by calling `rdbuf->sungetc` If [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) is a null pointer, or if the call to `sungetc` returns `traits_type::eof`, the function calls `setstate(badbit)`. In any case, it returns `*this`.
 
 For more information, see [`sungetc`](../standard-library/basic-streambuf-class.md#sungetc), [`eof`](../standard-library/basic-ios-class.md#eof), and [`setstate`](../standard-library/basic-ios-class.md#setstate). And for information on how `unget` might fail, see [`basic_streambuf::sungetc`](../standard-library/basic-streambuf-class.md#sungetc).
 

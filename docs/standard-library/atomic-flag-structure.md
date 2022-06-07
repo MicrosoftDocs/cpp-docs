@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: atomic_flag Structure"
 title: "atomic_flag Structure"
-ms.date: "11/04/2016"
+ms.date: 06/07/2022
 f1_keywords: ["atomic/std::atomic_flag", "atomic/std::atomic_flag::clear", "atomic/std::atomic_flag::test_and_set"]
 ms.assetid: 17f0c2f5-fd39-4a44-873a-b569720a670e
+ms.custom: devdivchpfy22
 ---
 # atomic_flag Structure
 
