@@ -2915,7 +2915,7 @@ vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 
 ## <a name="is_heap"></a> is_heap
 
-Returns **`true`** if the elements in the specified range form a heap.
+Returns **`true`**, if the elements in the specified range form a heap.
 
 ```cpp
 template<class RandomAccessIterator>
@@ -6496,7 +6496,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality.
+The complexity is linear with (`last` - `first`) comparisons for equality.
 
 The [`list` class](list-class.md) has a more efficient member function version of `remove`, which also relinks pointers.
 
@@ -6605,7 +6605,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
+The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
 
 ### Example
 
@@ -6710,7 +6710,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
+The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
 
 For information on how these functions behave, see [Checked Iterators](checked-iterators.md).
 
@@ -6818,7 +6818,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality.
+The complexity is linear with (`last` - `first`) comparisons for equality.
 
 List has a more efficient member function version of remove which relinks pointers.
 
@@ -6928,7 +6928,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7031,7 +7031,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7155,7 +7155,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7282,7 +7282,7 @@ The algorithm `replace_if` is a generalization of the algorithm `replace`, allow
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -9383,7 +9383,7 @@ The range referenced must be valid; all pointers must be dereferenceable and wit
 
 Elements are equivalent, but not necessarily equal, if neither is less than the other. The `sort` algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved.
 
-The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is `O(N log N)` and the worst case is `O(N (log N)^2)`, where *N* = *`last`* - *`first`*. Usually, the `sort` algorithm is significantly faster than `stable_sort`.
+The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is `O(N log N)` and the worst case is `O(N (log N)^2)`, where *N* = *`last`* - *`first`*. Usually, the `sort` algorithm is faster than `stable_sort`.
 
 ### Example
 

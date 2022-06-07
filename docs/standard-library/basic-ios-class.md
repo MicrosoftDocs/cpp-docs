@@ -208,7 +208,7 @@ The **`this`** object for the stream to which you're copying the flags.
 
 ### Remarks
 
-The member function reports the callback event **`erase_event`**. It then copies from *`right`* into **`*this`** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event `copyfmt_event`. If, after the copy is complete, `state&exceptions` is nonzero, the function effectively calls [`clear`](#clear) with the argument [`rdstate`](#rdstate). It returns **`*this`**.
+The member function reports the callback event **`erase_event`**. It then copies from *`right`* into **`*this`** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event `copyfmt_event`. If after the copy is complete, `state&exceptions` is nonzero, the function effectively calls [`clear`](#clear) with the argument [`rdstate`](#rdstate). It returns **`*this`**.
 
 ### Example
 
@@ -290,7 +290,7 @@ The flags that are currently specified to thrown an exception for the stream.
 
 ### Remarks
 
-The first member function returns the stored exception mask. The second member function stores *`_Except`* in the exception mask and returns its previous stored value. Note that storing a new exception mask can throw an exception just like the call [`clear`](#clear)( [`rdstate`](#rdstate) ).
+The first member function returns the stored exception mask. The second member function stores *`_Except`* in the exception mask and returns its previous stored value. Storing a new exception mask can throw an exception just like the call [`clear`](#clear)( [`rdstate`](#rdstate) ).
 
 ### Example
 
