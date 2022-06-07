@@ -126,7 +126,7 @@ The entry thunk performs the following:
 
 |Parameter number|Stack usage|Stack unwind codes|
 |---|---|---|
-|0-4|Stores Arm64EC v6 and v7 into the caller-allocated home space<br/><br/>Since the callee is Arm64EC, which does not have the notion of a home space, the stored values aren't subsequently clobbered.<br/><br/>Allocates an additional 128 bytes on the stack and store Arm64EC v8 through v15.|`UWOP_SAVE_XMM128` for `xmm6` and `xmm7`<br/><br/>`UWOP_ALLOC_SMALL` + `UWOP_SAVE_XMM128` for `xmm8-xmm15`|
+|0-4|Stores Arm64EC `v6` and `v7` into the caller-allocated home space<br/><br/>Since the callee is Arm64EC, which does not have the notion of a home space, the stored values aren't subsequently clobbered.<br/><br/>Allocates an additional 128 bytes on the stack and store Arm64EC `v8` through `v15`.|`UWOP_SAVE_XMM128` for `xmm6` and `xmm7`<br/><br/>`UWOP_ALLOC_SMALL` + `UWOP_SAVE_XMM128` for `xmm8-xmm15`|
 |5-8|`x4` = 5th parameter from the stack<br/>`x5` = 6th parameter from the stack<br/>`x6` = 7th parameter from the stack<br/>`x7` = 8th parameter from the stack<br/><br/>If the parameter is SIMD, the `v4-v7` registers will be used instead|Same as above|
 |9+|Allocates _AlignUp(NumParams – 8 , 2) * 8_ bytes on the stack. [*]<br/><br/>Copies the 9th and remaining parameters to this area|`UWOP_ALLOC_SMALL`|
 
