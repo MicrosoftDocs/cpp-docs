@@ -171,6 +171,14 @@ When the helper then returns to the thunk, the thunk:
 
 At the beginning of an x64 function, the stack pointer points to the return address that was pushed onto the stack by the caller's `call` instruction. In contrast, at the beginning of an Arm64EC function, the return address is in the LR register, set by the caller's `bl` instruction. Therefore, when unwinding the deepest frame of a stack, if the frame corresponds to an Arm64EC function, the x64 unwinder must recreate the value of Arm64EC `lr` by reading the value stashed in the x87 registers when the exception occurred. In addition, the new x64 unwind code `UWOP_SAVE_RET` handles the prolog saving Arm64EC `lr` to the stack.
 
+## Arm64EC function name decoration
+
+An Arm64EC function name has a secondary decoration applied after any language-specific decoration. For functions with C linkage (C functions or `extern "C"`), a `#` is prepended to the name. For C++ decorated functions, a `$$h` tag is inserted into the name.
+```
+foo         => #foo
+?foo@@YAHXZ => ?foo@@$$hYAHXZ
+```
+
 ## `__vectorcall`
 
 The Arm64EC toolchain currently doesn't support `__vectorcall`. The compiler emits an error when it detects `__vectorcall` usage with Arm64EC.
