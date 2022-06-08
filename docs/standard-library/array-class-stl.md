@@ -114,8 +114,6 @@ The copy constructor `array(const array& right)` initializes the controlled sequ
 typedef std::array<int, 4> Myarray;
 int main()
 {
-    typedef std::array<int, 4> Myarray;
-
     Myarray c0 = { 0, 1, 2, 3 };
 
     // display contents " 0 1 2 3"
