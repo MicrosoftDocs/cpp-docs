@@ -1406,7 +1406,7 @@ Array to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between **`*this`** and *right*. It performs many element assignments and constructor calls proportional to `N`.
+The member function swaps the controlled sequences between **`*this`** and *right*. It performs element assignments and constructor calls proportional to `N`.
 
 There's also a non-member [`swap`](array-functions.md#swap) function available to swap two **`array`** instances.
 

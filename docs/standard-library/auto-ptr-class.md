@@ -321,7 +321,7 @@ operator auto _ptr<Other>() throw();
 
 #### Return Value
 
-The type cast operator returns `auto_ptr` \< **Other**>( `*this*`).
+The type cast operator returns `auto_ptr` \< **Other**>( `*this`).
 
 #### Example
 

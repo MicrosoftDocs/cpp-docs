@@ -2915,7 +2915,7 @@ vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 
 ## <a name="is_heap"></a> is_heap
 
-Returns **`true`**, if the elements in the specified range form a heap.
+Returns **`true`** if the elements in the specified range form a heap.
 
 ```cpp
 template<class RandomAccessIterator>
