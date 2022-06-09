@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: basic_ios Class"
 title: "basic_ios Class"
-ms.date: "11/04/2016"
+ms.date: 06/07/2022
 f1_keywords: ["ios/std::basic_ios", "ios/std::basic_ios::char_type", "ios/std::basic_ios::int_type", "ios/std::basic_ios::off_type", "ios/std::basic_ios::pos_type", "ios/std::basic_ios::traits_type", "ios/std::basic_ios::bad", "ios/std::basic_ios::clear", "ios/std::basic_ios::copyfmt", "ios/std::basic_ios::eof", "ios/std::basic_ios::exceptions", "ios/std::basic_ios::fail", "ios/std::basic_ios::fill", "ios/std::basic_ios::good", "ios/std::basic_ios::imbue", "ios/std::basic_ios::init", "ios/std::basic_ios::move", "ios/std::basic_ios::narrow", "ios/std::basic_ios::rdbuf", "ios/std::basic_ios::rdstate", "ios/std::basic_ios::set_rdbuf", "ios/std::basic_ios::setstate", "ios/std::basic_ios::swap", "ios/std::basic_ios::tie", "ios/std::basic_ios::widen", "ios/std::basic_ios::explicit operator bool"]
 helpviewer_keywords: ["std::basic_ios [C++]", "std::basic_ios [C++], char_type", "std::basic_ios [C++], int_type", "std::basic_ios [C++], off_type", "std::basic_ios [C++], pos_type", "std::basic_ios [C++], traits_type", "std::basic_ios [C++], bad", "std::basic_ios [C++], clear", "std::basic_ios [C++], copyfmt", "std::basic_ios [C++], eof", "std::basic_ios [C++], exceptions", "std::basic_ios [C++], fail", "std::basic_ios [C++], fill", "std::basic_ios [C++], good", "std::basic_ios [C++], imbue", "std::basic_ios [C++], init", "std::basic_ios [C++], move", "std::basic_ios [C++], narrow", "std::basic_ios [C++], rdbuf", "std::basic_ios [C++], rdstate", "std::basic_ios [C++], set_rdbuf", "std::basic_ios [C++], setstate", "std::basic_ios [C++], swap", "std::basic_ios [C++], tie", "std::basic_ios [C++], widen"]
+ms.custom: devdivchpfy22
 ---
 # `basic_ios` Class
 
@@ -207,7 +208,7 @@ The **`this`** object for the stream to which you're copying the flags.
 
 ### Remarks
 
-The member function reports the callback event **`erase_event`**. It then copies from *`right`* into **`*this`** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event `copyfmt_event`. If, after the copy is complete, `state&exceptions` is nonzero, the function effectively calls [`clear`](#clear) with the argument [`rdstate`](#rdstate). It returns **`*this`**.
+The member function reports the callback event **`erase_event`**. It then copies from *`right`* into **`*this`** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event `copyfmt_event`. If after the copy is complete, `state&exceptions` is nonzero, the function effectively calls [`clear`](#clear) with the argument [`rdstate`](#rdstate). It returns **`*this`**.
 
 ### Example
 
@@ -289,7 +290,7 @@ The flags that are currently specified to thrown an exception for the stream.
 
 ### Remarks
 
-The first member function returns the stored exception mask. The second member function stores *`_Except`* in the exception mask and returns its previous stored value. Note that storing a new exception mask can throw an exception just like the call [`clear`](#clear)( [`rdstate`](#rdstate) ).
+The first member function returns the stored exception mask. The second member function stores *`_Except`* in the exception mask and returns its previous stored value. Storing a new exception mask can throw an exception just like the call [`clear`](#clear)( [`rdstate`](#rdstate) ).
 
 ### Example
 
@@ -863,7 +864,7 @@ The first member function returns the stored tie pointer. The second member func
 
 ### Example
 
-In this example, by tying `cin` to `cout`, it's guaranteed that the `Enter a number:` string will go to the console before the number itself is extracted from `cin`. This eliminates the possibility that the "Enter a number:" string is still sitting in the buffer when the number is read, so that we're certain that the user actually has some prompt to respond to. By default, `cin` and `cout` are tied.
+In the following example, by tying `cin` to `cout`, it's guaranteed that the `Enter a number:` string will go to the console before the number itself is extracted from `cin`. This eliminates the possibility that the "Enter a number:" string is still sitting in the buffer when the number is read, so that we're certain that the user actually has some prompt to respond to. By default, `cin` and `cout` are tied.
 
 ```cpp
 #include <ios>

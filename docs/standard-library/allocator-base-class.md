@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: allocator_base Class"
 title: "allocator_base Class"
-ms.date: "11/04/2016"
+ms.date: 06/07/2022
 f1_keywords: ["allocators/stdext::allocator_base", "allocators/stdext::allocators::allocator_base", "allocators/stdext::allocator_base::const_pointer", "allocators/stdext::allocator_base::const_reference", "allocators/stdext::allocator_base::difference_type", "allocators/stdext::allocator_base::pointer", "allocators/stdext::allocator_base::reference", "allocators/stdext::allocator_base::size_type", "allocators/stdext::allocator_base::value_type", "allocators/stdext::allocator_base::_Charalloc", "allocators/stdext::allocator_base::_Chardealloc", "allocators/stdext::allocator_base::address", "allocators/stdext::allocator_base::allocate", "allocators/stdext::allocator_base::construct", "allocators/stdext::allocator_base::deallocate", "allocators/stdext::allocator_base::destroy", "allocators/stdext::allocator_base::max_size"]
 helpviewer_keywords: ["stdext::allocator_base [C++]", "stdext::allocators [C++], allocator_base", "stdext::allocator_base [C++], const_pointer", "stdext::allocator_base [C++], const_reference", "stdext::allocator_base [C++], difference_type", "stdext::allocator_base [C++], pointer", "stdext::allocator_base [C++], reference", "stdext::allocator_base [C++], size_type", "stdext::allocator_base [C++], value_type", "stdext::allocator_base [C++], _Charalloc", "stdext::allocator_base [C++], _Chardealloc", "stdext::allocator_base [C++], address", "stdext::allocator_base [C++], allocate", "stdext::allocator_base [C++], construct", "stdext::allocator_base [C++], deallocate", "stdext::allocator_base [C++], destroy", "stdext::allocator_base [C++], max_size"]
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
+ms.custom: devdivchpfy22
 ---
 # allocator_base Class
 
@@ -81,7 +82,7 @@ A pointer to the allocated object.
 
 ### Remarks
 
-This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Charalloc` for the user-defined allocator by returning the result of a call to the `allocate` function of the synchronization filter.
+This member function is used by containers when compiled with a compiler that can't compile rebind. It implements `_Charalloc` for the user-defined allocator by returning the result of a call to the `allocate` function of the synchronization filter.
 
 ## <a name="chardealloc"></a> allocator_base::_Chardealloc
 
@@ -101,7 +102,7 @@ The number of objects to be deallocated from storage.
 
 ### Remarks
 
-This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Chardealloc` for the user-defined allocator by calling the `deallocate` function of the synchronization filter. The pointer ptr must have been earlier returned by a call to `_Charalloc` for an allocator object that compares equal to **`*this`**, allocating an array object of the same size and type. `_Chardealloc` never throws an exception.
+This member function is used by containers when compiled with a compiler that can't compile rebind. It implements `_Chardealloc` for the user-defined allocator by calling the `deallocate` function of the synchronization filter. The pointer ptr must have been earlier returned by a call to `_Charalloc` for an allocator object that compares equal to **`*this`**, allocating an array object of the same size and type. `_Chardealloc` never throws an exception.
 
 ## <a name="address"></a> allocator_base::address
 
