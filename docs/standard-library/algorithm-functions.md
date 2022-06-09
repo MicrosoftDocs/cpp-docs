@@ -6496,7 +6496,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality.
 
 The [`list` class](list-class.md) has a more efficient member function version of `remove`, which also relinks pointers.
 
@@ -6605,7 +6605,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
 
 ### Example
 
@@ -6710,7 +6710,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
 
 For information on how these functions behave, see [Checked Iterators](checked-iterators.md).
 
@@ -6818,7 +6818,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality.
 
 List has a more efficient member function version of remove which relinks pointers.
 
@@ -6928,7 +6928,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7031,7 +7031,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7155,7 +7155,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7282,7 +7282,7 @@ The algorithm `replace_if` is a generalization of the algorithm `replace`, allow
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear with (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7541,7 +7541,7 @@ A forward iterator addressing the position one past the final element in the ran
 
 The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
-The complexity is linear with at most (`last` - `first`) swaps.
+The complexity is linear. It makes at most (`last` - `first`) swaps.
 
 ### Example
 
@@ -7664,7 +7664,7 @@ An output iterator addressing the position one past the final element in the des
 
 The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
-The complexity is linear with at most (`last` - `first`) swaps.
+The complexity is linear. It makes at most (`last` - `first`) swaps.
 
 ### Example
 
@@ -9707,7 +9707,7 @@ The ranges referenced must be valid; all pointers must be dereferenceable and wi
 
 If *result* is set equal to *`first1`* in the first version of the algorithm, then the source and destination ranges will be the same and the sequence will be modified in place. But the *`result`* may not address a position within the range [`first1` + 1, `last1`).
 
-The complexity is linear with at most (`last1` - `first1`) comparisons.
+The complexity is linear. It makes at most (`last1` - `first1`) comparisons.
 
 ### Example
 

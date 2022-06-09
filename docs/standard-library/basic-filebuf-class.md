@@ -207,7 +207,7 @@ basic_filebuf(basic_filebuf&& right);
 
 The first constructor stores a null pointer in all the pointers controlling the input buffer and the output buffer. It also stores a null pointer in the file pointer.
 
-The second constructor initializes the object with the contents of `right`, treated as a rvalue reference.
+The second constructor initializes the object with the contents of `right`, treated as an rvalue reference.
 
 ## <a name="char_type"></a> basic_filebuf::char_type
 
@@ -391,7 +391,7 @@ If `mode & ios_base::ate` is nonzero and the file was successfully opened, the c
 
 If the above operations completed successfully, the file conversion facet is determined: `use_facet<codecvt<Char_T, char, traits_type::`[`state_type`](../standard-library/char-traits-struct.md#state_type)`> >(`[`getloc`](../standard-library/basic-streambuf-class.md#getloc)`)`, for use by [underflow](#underflow) and [overflow](#overflow).
 
-If the file couldn't be successfully opened, `NULL` is returned.
+If the file couldn't be successfully opened, `nullptr` is returned.
 
 ### Example
 
@@ -399,7 +399,7 @@ See [`basic_filebuf::close`](#close) for an example that uses `open`.
 
 ## <a name="op_eq"></a> basic_filebuf::operator=
 
-Assign the content of this stream buffer object. This is a move assignment involving a rvalue that doesn't leave a copy behind.
+Assign the content of this stream buffer object. This is a move assignment involving an rvalue that doesn't leave a copy behind.
 
 ```cpp
 basic_filebuf& operator=(basic_filebuf&& right);
@@ -416,7 +416,7 @@ Returns `*this`.
 
 ### Remarks
 
-The member operator replaces the contents of the object by using the contents of `right`, treated as a rvalue reference. For more information, see [Rvalue reference declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference. For more information, see [Rvalue reference declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="overflow"></a> basic_filebuf::overflow
 
