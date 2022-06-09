@@ -8,7 +8,7 @@ helpviewer_keywords: ["std::span [C++]", "std::span [C++], const_pointer", "std:
 ---
 # `span` class (C++ Standard Library)
 
-Provides a lightweight view over a contiguous sequence of objects. A `span` provides a safe way to iterate over, and index into, objects that are arranged back-to-back in memory such as objects stored in a built-in array, `std::array`, or `std::vector`.
+Provides a lightweight view over a contiguous sequence of objects. A `span` provides a safe way to iterate over and index into objects that are arranged back-to-back in memory. Such as objects stored in a built-in array, `std::array`, or `std::vector`.
 
 If you typically access a sequence of back-to-back objects using a pointer and an index, a `span` is a safer, lightweight alternative.
 
@@ -56,7 +56,7 @@ class span;
 |[`back`](#back) | Get the last element in the `span`.|
 |[`data`](#data) | Get the address of the first element in the `span`.|
 |[`front`](#front) | Get the first element in the `span`.|
-|[`operator\[\]`](#op_at) | Access an element at a specified position.|
+|[`operator[]`](#op_at) | Access an element at a specified position.|
 | **Observers** | **Description** |
 |[`empty`](#empty)| Test whether the `span` is empty.|
 |[`size`](#size) | Get the number of elements in the `span`.|
@@ -67,7 +67,7 @@ class span;
 | [`subspan`](#sub_view) | Get a subspan from anywhere in the `span`.|
 | **Operators** | **Description** |
 |[`span::operator=`](#op_eq)| Replace the `span`.|
-|[`span::operator\[\]`](#op_at)| Get the element at the specified position. |
+|[`span::operator[]`](#op_at)| Get the element at the specified position. |
 
 ## Remarks
 
