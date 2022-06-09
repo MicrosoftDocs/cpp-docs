@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: auto_ptr Class"
 title: "auto_ptr Class"
-ms.date: "11/04/2016"
+ms.date: 06/07/2022
 f1_keywords: ["memory/std::auto_ptr", "memory/std::auto_ptr::element_type", "memory/std::auto_ptr::get", "memory/std::auto_ptr::release", "memory/std::auto_ptr::reset"]
 helpviewer_keywords: ["std::auto_ptr [C++]", "std::auto_ptr [C++], element_type", "std::auto_ptr [C++], get", "std::auto_ptr [C++], release", "std::auto_ptr [C++], reset"]
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
+ms.custom: devdivchpfy22
 ---
 # auto_ptr Class
 
@@ -48,9 +49,9 @@ The pointer specified to replace the stored pointer.
 
 ## Remarks
 
-The class template describes a smart pointer, called an `auto_ptr`, to an allocated object. The pointer must be either null or designate an object allocated by **`new`**. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.
+The class template describes a smart pointer, called an `auto_ptr`, to an allocated object. The pointer must be either null or designate an object allocated by **`new`**. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You shouldn't construct two `auto_ptr<Type>` objects that own the same object.
 
-You can pass an `auto_ptr<Type>` object by value as an argument to a function call. An `auto_ptr` cannot be an element of any Standard Library container. You cannot reliably manage a sequence of `auto_ptr<Type>` objects with a C++ Standard Library container.
+You can pass an `auto_ptr<Type>` object by value as an argument to a function call. An `auto_ptr` can't be an element of any Standard Library container. You can't reliably manage a sequence of `auto_ptr<Type>` objects with a C++ Standard Library container.
 
 ## Members
 
@@ -113,7 +114,7 @@ The first constructor stores *ptr* in `myptr`, the stored pointer to the allocat
 
 The third constructor behaves the same as the second, except that it stores `right`. `ref`. `release` in `myptr`, where `ref` is the reference stored in `right`.
 
-The template constructor behaves the same as the second constructor, provided that a pointer to `Other` can be implicitly converted to a pointer to `Type`.
+The template constructor behaves the same as the second constructor, if a pointer to `Other` can be implicitly converted to a pointer to `Type`.
 
 #### Example
 
@@ -263,7 +264,7 @@ A reference to an object of type `auto_ptr<Type>`.
 
 #### Remarks
 
-The assignment evaluates the expression `delete myptr`, but only if the stored pointer `myptr` changes as a result of the assignment. It then transfers ownership of the pointer stored in *right*, by storing *right*.[release](#release) in `myptr`. The function returns __\*this__.
+The assignment evaluates the expression `delete myptr`, but only if the stored pointer `myptr` changes as a result of the assignment. It then transfers ownership of the pointer stored in *right*, by storing *right*.[release](#release) in `myptr`. The function returns `*this`.
 
 #### Example
 
@@ -320,7 +321,7 @@ operator auto _ptr<Other>() throw();
 
 #### Return Value
 
-The type cast operator returns `auto_ptr` \< **Other**>( **\*this**).
+The type cast operator returns `auto_ptr` \< **Other**>( `*this`).
 
 #### Example
 
@@ -350,7 +351,7 @@ operator auto _ptr  _ref<Other>() throw();
 
 #### Return Value
 
-The type cast operator returns **auto_ptr_ref**\< **Other**>( **\*this**).
+The type cast operator returns **auto_ptr_ref**\< **Other**>( `*this`).
 
 #### Example
 
