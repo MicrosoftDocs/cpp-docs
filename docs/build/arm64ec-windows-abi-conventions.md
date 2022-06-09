@@ -26,7 +26,7 @@ Native Arm64 processes shouldn't regress in performance when some or many functi
 
 - The Arm64EC calling convention directly maps to the Arm64 calling convention.
 
-Special helper routines like `__chkstk_Arm64ec` use custom calling conventions and registers. These registers are also included in the Arm64EC subset of registers.
+Special helper routines like `__chkstk_arm64ec` use custom calling conventions and registers. These registers are also included in the Arm64EC subset of registers.
 
 ## Register mapping for integer registers
 
@@ -103,7 +103,7 @@ The following table describes each special ABI routine and the registers the ABI
 | `__os_arm64x_dispatch_call_no_redirect` | Called by an exit thunk to call an x64 target (either an x64 function or an x64 fast-forward sequence). The routine pushes the Arm64EC return address (in the `LR` register) followed by the address of the instruction that succeeds a `blr x16` instruction that invokes the x64 emulator. It then runs the `blr x16` instruction | return value in `x8` (`rax`) |
 | `__os_arm64x_dispatch_ret` | Called by an entry thunk to return to its x64 caller. It pops the x64 return address from the stack and invokes the x64 emulator to jump to it | N/A |
 | `__os_arm64x_check_call` | Called by Arm64EC code with a pointer to an exit thunk and the indirect Arm64EC target address to execute. The Arm64EC target is considered patchable, and execution always returns to the caller with either the same data it was called with, or with modified data | Arguments:<br/>`x9`: The target address<br/>`x10`: The exit thunk address<br/>`x11`: The fast forward sequence address<br/><br/>Out:<br/>`x9`: If the target function was detoured, it contains the address of the fast forward sequence<br/>`x10`: The exit thunk address<br/>`x11`: If the function was detoured, it contains the exit thunk address. Otherwise, the target address jumped to<br/><br/>Preserved registers: `x0`-`x8`, `x15` (`chkstk`). and `q0`-`q7` |
-| `__os_arm64x_check_icall` | Called by Arm64EC code, with a pointer to an exit thunk, to handle a jump to either a target address that is either x64 or Arm64EC. It uses the `Arm64ECCodeRanges` table to determine the architecture of the target. If the target is x64 and the x64 code hasn't been patched, the routine sets the target address register. It points to the Arm64EC version of the function if one exists. Otherwise, it sets the register to point to the exit thunk that transitions to the x64 target. Then, it returns to the calling Arm64EC code, which then jumps to the address in the register. This routine is a non-optimized version of `__os_arm64x_check_call`, where the target address isn't known at compile time<br/><br/>Used at a call-site of an indirect call | Arguments:<br/>`x9`: The target address<br/>`x10`: The exit thunk address<br/>`x11`: The fast forward sequence address<br/><br/>Out:<br/>`x9`: If the target function was detoured, it contains the address of the fast forward sequence<br/>`x10`: The exit thunk address<br/>`x11`: If the function was detoured, it contains the exit thunk address. Otherwise, the target address jumped to<br/><br/>Preserved registers: `x0`-`x8`, `x15` (`chkstk`), and `q0`-`q7` |
+| `__os_arm64x_check_icall` | Called by Arm64EC code, with a pointer to an exit thunk, to handle a jump to either a target address that is either x64 or Arm64EC. If the target is x64 and the x64 code hasn't been patched, the routine sets the target address register. It points to the Arm64EC version of the function if one exists. Otherwise, it sets the register to point to the exit thunk that transitions to the x64 target. Then, it returns to the calling Arm64EC code, which then jumps to the address in the register. This routine is a non-optimized version of `__os_arm64x_check_call`, where the target address isn't known at compile time<br/><br/>Used at a call-site of an indirect call | Arguments:<br/>`x9`: The target address<br/>`x10`: The exit thunk address<br/>`x11`: The fast forward sequence address<br/><br/>Out:<br/>`x9`: If the target function was detoured, it contains the address of the fast forward sequence<br/>`x10`: The exit thunk address<br/>`x11`: If the function was detoured, it contains the exit thunk address. Otherwise, the target address jumped to<br/><br/>Preserved registers: `x0`-`x8`, `x15` (`chkstk`), and `q0`-`q7` |
 | `__os_arm64x_check_icall_cfg` | Same as `__os_arm64x_check_icall` but also checks that the specified address is a valid Control Flow Graph indirect call target | Arguments:<br/>`x10`: The address of the exit thunk<br/>`x11`: The address of the target function<br/><br/>Out:<br/>`x9`: If the target is x64, the address to the function. Otherwise, undefined<br/>`x10`: The address of the exit thunk<br/>`x11`: If the target is x64, it contains the address of the exit thunk. Otherwise, the address of the function<br/><br/>Preserved registers: `x0`-`x8`, `x15` (`chkstk`), and `q0`-`q7` |
 | `__os_arm64x_get_x64_information` | Gets the requested part of the live x64 register context | `_Function_class_(Arm64X_GET_X64_INFORMATION) NTSTATUS LdrpGetX64Information(_In_ ULONG Type, _Out_ PVOID Output, _In_ PVOID ExtraInfo)` |
 | `__os_arm64x_set_x64_information` | Sets the requested part of the live x64 register context | `_Function_class_(Arm64X_SET_X64_INFORMATION) NTSTATUS LdrpSetX64Information(_In_ ULONG Type,_In_ PVOID Input, _In_ PVOID ExtraInfo)` |
@@ -138,7 +138,7 @@ If the function accepts a 32-bit integer parameter, the thunk is permitted to on
 Next, the thunk uses an Arm64 `bl` instruction to call the Arm64EC function. After the function returns, the thunk:
 
 1. Undoes any stack allocations
-1. Calls the `__os_Arm64x_dispatch_ret` emulator helper to pop the x64 return address and resume x64 emulation.
+1. Calls the `__os_arm64x_dispatch_ret` emulator helper to pop the x64 return address and resume x64 emulation.
 
 ### Exit thunk: Arm64EC to x64 function call
 
@@ -154,9 +154,9 @@ First, The thunk pushes the return address that's in the Arm64EC `lr` register a
 
 \* Aligning the value to an even number guarantees that the stack remains aligned to 16 bytes.
 
-Third, the thunk calls the `__os_Arm64x_dispatch_call_no_redirect` emulator helper to invoke the x64 emulator to run the x64 function. The call must be a `blr x16` instruction (conveniently, `x16` is a volatile register). A `blr x16` instruction is required because the x64 emulator parses this instruction as a hint.
+Third, the thunk calls the `__os_arm64x_dispatch_call_no_redirect` emulator helper to invoke the x64 emulator to run the x64 function. The call must be a `blr x16` instruction (conveniently, `x16` is a volatile register). A `blr x16` instruction is required because the x64 emulator parses this instruction as a hint.
 
-The x64 function usually attempts to return to the emulator helper by using an x64 `ret` instruction. At this point, the x64 emulator reads the `Arm64ECCodeRanges` table to detect that it's in Arm64EC code. It then reads the preceding 4-byte hint that happens to be the Arm64 `blr x16` instruction. Since this hint indicates that the return address is in this helper, the emulator jumps directly to this address.
+The x64 function usually attempts to return to the emulator helper by using an x64 `ret` instruction. At this point, the x64 emulator detects that it's in Arm64EC code. It then reads the preceding 4-byte hint that happens to be the Arm64 `blr x16` instruction. Since this hint indicates that the return address is in this helper, the emulator jumps directly to this address.
 
 The x64 function is permitted to return to the emulator helper using any branch instruction, including x64 `jmp` and `call`. The emulator handles these scenarios as well.
 
