@@ -1,8 +1,9 @@
 ---
 description: "Learn more about: atomic Structure"
 title: "atomic Structure"
-ms.date: "04/20/2018"
+ms.date: 06/07/2022
 f1_keywords: ["atomic/std::atomic"]
+ms.custom: devdivchpfy22
 ---
 # `atomic` Structure
 
@@ -97,7 +98,7 @@ Initialization value.
 
 ### Remarks
 
-Atomic objects can’t be copied or moved.
+Atomic objects can't be copied or moved.
 
 Objects that are instantiations of `atomic<Ty>` can be initialized only by the constructor that takes an argument of type *`Ty`* and not by using aggregate initialization. However, `atomic_integral` objects can be initialized only by using aggregate initialization.
 
