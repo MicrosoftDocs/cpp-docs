@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: <algorithm> functions"
 title: "<algorithm> functions"
-ms.date: 06/01/2022
+ms.date: 06/07/2022
 f1_keywords: ["algorithm/std::adjacent_find", "algorithm/std::all_of", "algorithm/std::any_of", "algorithm/std::binary_search", "algorithm/std::copy", "algorithm/std::copy_backward", "algorithm/std::copy_if", "algorithm/std::copy_n", "algorithm/std::equal", "algorithm/std::equal_range", "algorithm/std::fill", "algorithm/std::fill_n", "algorithm/std::find", "algorithm/std::find_end", "algorithm/std::find_first_of", "algorithm/std::find_if", "algorithm/std::find_if_not", "algorithm/std::for_each", "algorithm/std::generate", "algorithm/std::generate_n", "algorithm/std::includes", "algorithm/std::inplace_merge", "algorithm/std::is_heap", "algorithm/std::is_heap_until", "algorithm/std::is_partitioned", "algorithm/std::is_permutation", "algorithm/std::is_sorted", "algorithm/std::is_sorted_until", "algorithm/std::iter_swap", "algorithm/std::lexicographical_compare", "algorithm/std::lower_bound", "algorithm/std::make_heap", "algorithm/std::max", "algorithm/std::max_element", "algorithm/std::merge", "algorithm/std::min", "algorithm/std::minmax", "algorithm/std::minmax_element", "algorithm/std::min_element", "algorithm/std::mismatch", "algorithm/std::move", "algorithm/std::move_backward", "algorithm/std::next_permutation", "algorithm/std::none_of", "algorithm/std::nth_element", "algorithm/std::partial_sort", "algorithm/std::partial_sort_copy", "algorithm/std::partition", "algorithm/std::partition_point", "algorithm/std::pop_heap", "algorithm/std::prev_permutation", "algorithm/std::push_heap", "algorithm/std::random_shuffle", "algorithm/std::remove", "algorithm/std::remove_copy", "algorithm/std::remove_copy_if", "algorithm/std::remove_if", "algorithm/std::replace", "algorithm/std::replace_copy", "algorithm/std::replace_copy_if", "algorithm/std::replace_if", "algorithm/std::reverse", "algorithm/std::reverse_copy", "algorithm/std::rotate", "algorithm/std::rotate_copy", "algorithm/std::search", "algorithm/std::search_n", "algorithm/std::set_difference", "algorithm/std::set_intersection", "algorithm/std::set_symmetric_difference", "algorithm/std::set_union", "algorithm/std::shuffle", "algorithm/std::sort", "algorithm/std::sort_heap", "algorithm/std::stable_partition", "algorithm/std::stable_sort", "algorithm/std::swap_ranges", "algorithm/std::transform", "algorithm/std::unique", "algorithm/std::unique_copy", "algorithm/std::upper_bound", "xutility/std::copy", "xutility/std::copy_backward", "xutility/std::copy_n", "xutility/std::count", "xutility/std::equal", "xutility/std::fill", "xutility/std::fill_n", "xutility/std::find", "xutility/std::is_permutation", "xutility/std::lexicographical_compare", "xutility/std::move", "xutility/std::move_backward", "xutility/std::reverse", "xutility/std::rotate", "algorithm/std::count_if", "algorithm/std::partition_copy", "algorithm/std::swap"]
 helpviewer_keywords: ["std::adjacent_find [C++]", "std::all_of [C++]", "std::any_of [C++]", "std::binary_search [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_if [C++]", "std::copy_n [C++]", "std::equal [C++]", "std::equal_range [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::find_end [C++]", "std::find_first_of [C++]", "std::find_if [C++]", "std::find_if_not [C++]", "std::for_each [C++]", "std::generate [C++]", "std::generate_n [C++]", "std::includes [C++]", "std::inplace_merge [C++]", "std::is_heap [C++]", "std::is_heap_until [C++]", "std::is_partitioned [C++]", "std::is_permutation [C++]", "std::is_sorted [C++]", "std::is_sorted_until [C++]", "std::iter_swap [C++]", "std::lexicographical_compare [C++]", "std::lower_bound [C++]", "std::make_heap [C++]", "std::max [C++]", "std::max_element [C++]", "std::merge [C++]", "std::min [C++]", "std::minmax [C++]", "std::minmax_element [C++]", "std::min_element [C++]", "std::mismatch [C++]", "std::move [C++]", "std::move_backward [C++]", "std::next_permutation [C++]", "std::none_of [C++]", "std::nth_element [C++]", "std::partial_sort [C++]", "std::partial_sort_copy [C++]", "std::partition [C++]", "std::partition_point [C++]", "std::pop_heap [C++]", "std::prev_permutation [C++]", "std::push_heap [C++]", "std::random_shuffle [C++]", "std::remove [C++]", "std::remove_copy [C++]", "std::remove_copy_if [C++]", "std::remove_if [C++]", "std::replace [C++]", "std::replace_copy [C++]", "std::replace_copy_if [C++]", "std::replace_if [C++]", "std::reverse [C++]", "std::reverse_copy [C++]", "std::rotate [C++]", "std::rotate_copy [C++]", "std::search [C++]", "std::search_n [C++]", "std::set_difference [C++]", "std::set_intersection [C++]", "std::set_symmetric_difference [C++]", "std::set_union [C++]", "std::shuffle [C++]", "std::sort [C++]", "std::sort_heap [C++]", "std::stable_partition [C++]", "std::stable_sort [C++]", "std::swap_ranges [C++]", "std::transform [C++]", "std::unique [C++]", "std::unique_copy [C++]", "std::upper_bound [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_n [C++]", "std::count [C++]", "std::equal [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::is_permutation [C++]", "std::lexicographical_compare [C++]", "std::move [C++]", "std::move_backward [C++]", "std::reverse [C++]", "std::rotate [C++]", "std::count_if [C++]", "std::partition_copy [C++]", "std::swap [C++]"]
+ms.custom: devdivchpfy22
 ---
 # `<algorithm>` functions
 
@@ -1308,34 +1309,34 @@ int main()
 
 ```Output
 Vector sorted by the default binary predicate <:
-	-3 -2 -1 -1 0 0 1 2 3 4 
+    -3 -2 -1 -1 0 0 1 2 3 4 
 
 Result of equal_range with value = 3:
-	-3 -2 -1 -1 0 0 1 2 [ 3 ] 4 
+    -3 -2 -1 -1 0 0 1 2 [ 3 ] 4 
 
 Vector sorted by the binary predicate greater:
-	4 3 2 1 0 0 -1 -1 -2 -3 
+    4 3 2 1 0 0 -1 -1 -2 -3 
 
 Result of equal_range with value = 3:
-	4 [ 3 ] 2 1 0 0 -1 -1 -2 -3 
+    4 [ 3 ] 2 1 0 0 -1 -1 -2 -3 
 
 Vector sorted by the binary predicate abs_lesser:
-	0 0 -1 1 -1 2 -2 3 -3 4 
+    0 0 -1 1 -1 2 -2 3 -3 4 
 
 Result of equal_range with value = 3:
-	0 0 -1 1 -1 2 -2 [ 3 -3 ] 4 
+    0 0 -1 1 -1 2 -2 [ 3 -3 ] 4 
 
 Vector sorted by the default binary predicate <:
-	blah cute fluffy fun kittens meowmeowmeow 
+    blah cute fluffy fun kittens meowmeowmeow 
 
 Result of equal_range with value = fred:
-	blah cute fluffy [ ] fun kittens meowmeowmeow 
+    blah cute fluffy [ ] fun kittens meowmeowmeow 
 
 Vector sorted by the binary predicate shorter_than:
-	fun cute blah fluffy kittens meowmeowmeow 
+    fun cute blah fluffy kittens meowmeowmeow 
 
 Result of equal_range with value = fred:
-	fun [ cute blah ] fluffy kittens meowmeowmeow 
+    fun [ cute blah ] fluffy kittens meowmeowmeow 
 
 ```
 
@@ -2102,7 +2103,7 @@ A copy of the function object after it has been applied to all of the elements i
 
 ### Remarks
 
-The algorithm `for_each` is very flexible, allowing the modification of each element within a range in different, user-specified ways. Templatized functions may be reused in a modified form by passing different parameters. User-defined functions may accumulate information within an internal state that the algorithm may return after processing all of the elements in the range.
+The algorithm `for_each` is flexible, allowing the modification of each element within a range in different, user-specified ways. Templatized functions may be reused in a modified form by passing different parameters. User-defined functions may accumulate information within an internal state that the algorithm may return after processing all of the elements in the range.
 
 The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
 
@@ -6495,7 +6496,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality.
 
 The [`list` class](list-class.md) has a more efficient member function version of `remove`, which also relinks pointers.
 
@@ -6604,7 +6605,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
 
 ### Example
 
@@ -6709,7 +6710,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments.
 
 For information on how these functions behave, see [Checked Iterators](checked-iterators.md).
 
@@ -6817,7 +6818,7 @@ The order of the elements not removed remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality.
 
 List has a more efficient member function version of remove which relinks pointers.
 
@@ -6927,7 +6928,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7030,7 +7031,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7154,7 +7155,7 @@ The order of the elements not replaced remains stable.
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear; there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7281,7 +7282,7 @@ The algorithm `replace_if` is a generalization of the algorithm `replace`, allow
 
 The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.
 
-The complexity is linear: there are (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
+The complexity is linear. It makes (`last` - `first`) comparisons for equality and at most (`last` - `first`) assignments of new values.
 
 ### Example
 
@@ -7540,7 +7541,7 @@ A forward iterator addressing the position one past the final element in the ran
 
 The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
-The complexity is linear with at most (`last` - `first`) swaps.
+The complexity is linear. It makes at most (`last` - `first`) swaps.
 
 ### Example
 
@@ -7663,7 +7664,7 @@ An output iterator addressing the position one past the final element in the des
 
 The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
-The complexity is linear with at most (`last` - `first`) swaps.
+The complexity is linear. It makes at most (`last` - `first`) swaps.
 
 ### Example
 
@@ -9382,7 +9383,7 @@ The range referenced must be valid; all pointers must be dereferenceable and wit
 
 Elements are equivalent, but not necessarily equal, if neither is less than the other. The `sort` algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved.
 
-The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is `O(N log N)` and the worst case is `O(N (log N)^2)`, where *N* = *`last`* - *`first`*. Usually, the `sort` algorithm is significantly faster than `stable_sort`.
+The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is `O(N log N)` and the worst case is `O(N (log N)^2)`, where *N* = *`last`* - *`first`*. Usually, the `sort` algorithm is faster than `stable_sort`.
 
 ### Example
 
@@ -9706,7 +9707,7 @@ The ranges referenced must be valid; all pointers must be dereferenceable and wi
 
 If *result* is set equal to *`first1`* in the first version of the algorithm, then the source and destination ranges will be the same and the sequence will be modified in place. But the *`result`* may not address a position within the range [`first1` + 1, `last1`).
 
-The complexity is linear with at most (`last1` - `first1`) comparisons.
+The complexity is linear. It makes at most (`last1` - `first1`) comparisons.
 
 ### Example
 

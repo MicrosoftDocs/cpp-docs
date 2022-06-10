@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: array Class (C++ Standard Library)"
 title: "array Class (C++ Standard Library)| Microsoft Docs"
-ms.date: "11/13/2019"
+ms.date: 06/07/2022
 f1_keywords: ["array/std::array", "array/std::array::const_iterator", "array/std::array::const_pointer", "array/std::array::const_reference", "array/std::array::const_reverse_iterator", "array/std::array::difference_type", "array/std::array::iterator", "array/std::array::pointer", "array/std::array::reference", "array/std::array::reverse_iterator", "array/std::array::size_type", "array/std::array::value_type", "array/std::array::assign", "array/std::array::at", "array/std::array::back", "array/std::array::begin", "array/std::array::cbegin", "array/std::array::cend", "array/std::array::crbegin", "array/std::array::crend", "array/std::array::data", "array/std::array::empty", "array/std::array::end", "array/std::array::fill", "array/std::array::front", "array/std::array::max_size", "array/std::array::rbegin", "array/std::array::rend", "array/std::array::size", "array/std::array::swap", "array/std::array::operator=", "array/std::array::operator[]"]
 helpviewer_keywords: ["std::array [C++]", "std::array [C++], const_iterator", "std::array [C++], const_pointer", "std::array [C++], const_reference", "std::array [C++], const_reverse_iterator", "std::array [C++], difference_type", "std::array [C++], iterator", "std::array [C++], pointer", "std::array [C++], reference", "std::array [C++], reverse_iterator", "std::array [C++], size_type", "std::array [C++], value_type", "std::array [C++], assign", "std::array [C++], at", "std::array [C++], back", "std::array [C++], begin", "std::array [C++], cbegin", "std::array [C++], cend", "std::array [C++], crbegin", "std::array [C++], crend", "std::array [C++], data", "std::array [C++], empty", "std::array [C++], end", "std::array [C++], fill", "std::array [C++], front", "std::array [C++], max_size", "std::array [C++], rbegin", "std::array [C++], rend", "std::array [C++], size", "std::array [C++], swap", ", ", "std::array [C++], const_iterator", "std::array [C++], const_pointer", "std::array [C++], const_reference", "std::array [C++], const_reverse_iterator", "std::array [C++], difference_type", "std::array [C++], iterator", "std::array [C++], pointer", "std::array [C++], reference", "std::array [C++], reverse_iterator", "std::array [C++], size_type", "std::array [C++], value_type", "std::array [C++], assign", "std::array [C++], at", "std::array [C++], back", "std::array [C++], begin", "std::array [C++], cbegin", "std::array [C++], cend", "std::array [C++], crbegin", "std::array [C++], crend", "std::array [C++], data", "std::array [C++], empty", "std::array [C++], end", "std::array [C++], fill", "std::array [C++], front", "std::array [C++], max_size", "std::array [C++], rbegin", "std::array [C++], rend", "std::array [C++], size", "std::array [C++], swap"]
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
+ms.custom: devdivchpfy22
 ---
 # `array` Class (C++ Standard Library)
 
@@ -114,8 +115,6 @@ The copy constructor `array(const array& right)` initializes the controlled sequ
 typedef std::array<int, 4> Myarray;
 int main()
 {
-    typedef std::array<int, 4> Myarray;
-
     Myarray c0 = { 0, 1, 2, 3 };
 
     // display contents " 0 1 2 3"
@@ -297,9 +296,9 @@ A **`const`** random-access iterator that points at the first element of the ran
 
 ### Remarks
 
-With the return value of `cbegin`, the elements in the range cannot be modified.
+With the return value of `cbegin`, the elements in the range can't be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -325,7 +324,7 @@ A random-access iterator that points just beyond the end of the range.
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -335,7 +334,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-The value returned by `cend` should not be dereferenced.
+The value returned by `cend` shouldn't be dereferenced.
 
 ## <a name="const_iterator"></a> `array::const_iterator`
 
@@ -531,7 +530,7 @@ A const reverse random-access iterator addressing the first element in a reverse
 
 ### Remarks
 
-With the return value of `crbegin`, the array object cannot be modified.
+With the return value of `crbegin`, the array object can't be modified.
 
 ### Example
 
@@ -575,13 +574,13 @@ A const reverse random-access iterator that addresses the location succeeding th
 
 ### Remarks
 
-`crend` is used with a reversed array just as [`array::cend`](#cend) is used with a array.
+`crend` is used with a reversed array just as [`array::cend`](#cend) is used with an array.
 
-With the return value of `crend` (suitably decremented), the array object cannot be modified.
+With the return value of `crend` (suitably decremented), the array object can't be modified.
 
 `crend` can be used to test to whether a reverse iterator has reached the end of its array.
 
-The value returned by `crend` should not be dereferenced.
+The value returned by `crend` shouldn't be dereferenced.
 
 ### Example
 
@@ -661,7 +660,7 @@ typedef std::ptrdiff_t difference_type;
 
 ### Remarks
 
-The signed integer type describes an object that can represent the difference between the addresses of any two elements in the controlled sequence. It is a synonym for the type `std::ptrdiff_t`.
+The signed integer type describes an object that can represent the difference between the addresses of any two elements in the controlled sequence. It's a synonym for the type `std::ptrdiff_t`.
 
 ### Example
 
@@ -793,7 +792,7 @@ int main()
 
 ## <a name="fill"></a> `array::fill`
 
-Erases a array and copies the specified elements to the empty array.
+Erases an array and copies the specified elements to the empty array.
 
 ```cpp
 void fill(const Type& val);
@@ -992,7 +991,7 @@ Position of element to access.
 
 The member functions return a reference to the element of the controlled sequence at position *`off`*. If that position is invalid, the behavior is undefined.
 
-There is also a non-member [`get`](array-functions.md#get) function available to get a reference to an element of an **`array`**.
+There's also a non-member [`get`](array-functions.md#get) function available to get a reference to an element of an **`array`**.
 
 ### Example
 
@@ -1348,7 +1347,7 @@ int main()
 
 ## <a name="size_type"></a> `array::size_type`
 
-The type of an unsigned distance between two element.
+The type of an unsigned distance between two elements.
 
 ```cpp
 typedef std::size_t size_type;
@@ -1356,7 +1355,7 @@ typedef std::size_t size_type;
 
 ### Remarks
 
-The unsigned integer type describes an object that can represent the length of any controlled sequence. It is a synonym for the type `std::size_t`.
+The unsigned integer type describes an object that can represent the length of any controlled sequence. It's a synonym for the type `std::size_t`.
 
 ### Example
 
@@ -1405,9 +1404,9 @@ Array to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between **`*this`** and *right*. It performs a number of element assignments and constructor calls proportional to `N`.
+The member function swaps the controlled sequences between **`*this`** and *right*. It performs element assignments and constructor calls proportional to `N`.
 
-There is also a non-member [`swap`](array-functions.md#swap) function available to swap two **`array`** instances.
+There's also a non-member [`swap`](array-functions.md#swap) function available to swap two **`array`** instances.
 
 ### Example
 
