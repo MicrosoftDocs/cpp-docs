@@ -285,7 +285,7 @@ The flags that you want to throw an exception.
 
 ### Return Value
 
-The flags that are currently specified to thrown an exception for the stream.
+The flags that are currently specified to throw an exception for the stream.
 
 ### Remarks
 

@@ -1,9 +1,11 @@
 ---
 description: "Learn more about: bitset Class"
 title: "bitset Class"
-ms.date: "6/8/2021"
+ms.date: 06/10/2022
 f1_keywords: ["bitset/std::bitset", "bitset/std::bitset::element_type", "bitset/std::bitset::all", "bitset/std::bitset::any", "bitset/std::bitset::count", "bitset/std::bitset::flip", "bitset/std::bitset::none", "bitset/std::bitset::reset", "bitset/std::bitset::set", "bitset/std::bitset::size", "bitset/std::bitset::test", "bitset/std::bitset::to_string", "bitset/std::bitset::to_ullong", "bitset/std::bitset::to_ulong", "bitset/std::bitset::reference"]
 helpviewer_keywords: ["std::bitset [C++]", "std::bitset [C++], element_type", "std::bitset [C++], all", "std::bitset [C++], any", "std::bitset [C++], count", "std::bitset [C++], flip", "std::bitset [C++], none", "std::bitset [C++], reset", "std::bitset [C++], set", "std::bitset [C++], size", "std::bitset [C++], test", "std::bitset [C++], to_string", "std::bitset [C++], to_ullong", "std::bitset [C++], to_ulong", "std::bitset [C++], reference"]
+ms.custom: devdivchpfy22
+
 ---
 # `bitset` class
 
@@ -219,7 +221,7 @@ The character that is used to represent a one. The default is '1'.
 
 `4)` Constructs an object of class `bitset<N>` and initializes bits from the characters provided in a string of zeros and ones. If any characters of the string are other than 0 or 1, the constructor throws an object of class [`invalid argument`](../standard-library/invalid-argument-class.md). If the position specified (*`pos`*) is beyond the length of the string, then the constructor throws an object of class [`out_of_range`](../standard-library/out-of-range-class.md). The constructor sets only those bits at position *j* in the `bitset` for which the character in the string at position `pos + j` is 1. By default, *`pos`* is 0.
 
-`5)` Similar to `4)` but includes an another parameter, *`count`*, that specifies the number of bits to initialize. It has two optional parameters, *`_Zero`* and *`_One`*, which indicate what character in *`str`* should be interpreted to mean a 0 bit and a 1 bit, respectively.
+`5)` Similar to `4)` but includes an other parameter, *`count`*, that specifies the number of bits to initialize. It has two optional parameters, *`_Zero`* and *`_One`*, which indicate what character in *`str`* should be interpreted to mean a 0 bit and a 1 bit, respectively.
 
 `6)` Constructs an object of class `bitset<N>`, initializing the N bits to values that correspond to the characters provided in a C-style character string of zeros and ones. You call the constructor without casting the string into a string type, for example: `bitset<5> b5("01011");`
 
@@ -998,7 +1000,7 @@ The modified target bitset that results from the bitwise "xor" (`^`) operation w
 
 #### Remarks
 
-Two bits combined by the bitwise "xor" operator (`^`) return **`true`** if at least one, but not both, of the bits is **`true`**; otherwise, their combination returns **`false`**.
+Two bits combined by the bitwise "xor" operator (`^`) return **`true`** if at least one, but not both, of the bits are **`true`**; otherwise, their combination returns **`false`**.
 
 Bitsets must be the same size.
 
@@ -1530,7 +1532,7 @@ Returns the sum of the bit values that are in the bit sequence as an **`unsigned
 
 #### Exceptions
 
-Throws an [`overflow_error`](overflow-error-class.md) object if any bit in the bit sequence has a bit value that cannot be represented as a value of type **`unsigned long long`**.
+Throws an [`overflow_error`](overflow-error-class.md) object if any bit in the bit sequence has a bit value that can't be represented as a value of type **`unsigned long long`**.
 
 #### Remarks
 
@@ -1552,7 +1554,7 @@ An integer that would generate the bits in a `bitset` if used in the initializat
 
 Applying the member function would return the integer that has the same sequence of 1 and 0 digits as is found in sequence of bits contained in the `bitset`.
 
-The member function throws an [`overflow_error`](overflow-error-class.md) object if any bit in the bit sequence has a bit value that cannot be represented as a value of type **`unsigned long`**.
+The member function throws an [`overflow_error`](overflow-error-class.md) object if any bit in the bit sequence has a bit value that can't be represented as a value of type **`unsigned long`**.
 
 #### Example
 

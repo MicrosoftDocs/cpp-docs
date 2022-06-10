@@ -158,7 +158,7 @@ A `basic_istream` object to copy.
 
 ### Remarks
 
-The first constructor initializes the base class by calling `init(strbuf)`. It also stores zero in the extraction count. For more infomration see [`init`](../standard-library/basic-ios-class.md#init). And for more information about this extraction count, see the Remarks section of the [`basic_istream` Class](../standard-library/basic-istream-class.md) overview.
+The first constructor initializes the base class by calling `init(strbuf)`. It also stores zero in the extraction count. For more information, see [`init`](../standard-library/basic-ios-class.md#init). And for more information about this extraction count, see the Remarks section of the [`basic_istream` Class](../standard-library/basic-istream-class.md) overview.
 
 The second constructor initializes the base class by calling `move(right)`. It also stores `right.gcount()` in the extraction count and stores zero in the extraction count for *`right`**.
 

@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: basic_regex Class"
 title: "basic_regex Class"
-ms.date: "03/27/2019"
+ms.date: 06/10/2022
 f1_keywords: ["regex/std::basic_regex"]
 helpviewer_keywords: ["basic_regex class"]
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
+ms.custom: devdivchpfy22
 ---
+
 # basic_regex Class
 
 Wraps a regular expression.
@@ -27,23 +29,23 @@ Traits class for elements.
 
 ## Remarks
 
-The class template describes an object that holds a regular expression. Objects of this class template can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this class template, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type **`char`**, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type **`wchar_t`**.
+The class template describes an object that holds a regular expression. Objects of this class template can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace). It also passes the suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this class template, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type **`char`**, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type **`wchar_t`**.
 
 The template argument *RXtraits* describes various important properties of the syntax of the regular expressions that the class template supports. A class that specifies these regular expression traits must have the same external interface as an object of type [regex_traits Class](../standard-library/regex-traits-class.md).
 
 Some functions take an operand sequence that defines a regular expression. You can specify such an operand sequence several ways:
 
-`ptr` -- a null-terminated sequence (such as a C string, for *Elem* of type **`char`**) beginning at `ptr` (which must not be a null pointer), where the terminating element is the value `value_type()` and is not part of the operand sequence
+`ptr`: a null-terminated sequence (such as a C string, for *Elem* of type **`char`**) beginning at `ptr` (which must not be a null pointer), where the terminating element is the value `value_type()` and isn't part of the operand sequence
 
-`ptr`, `count` -- a sequence of `count` elements beginning at `ptr` (which must not be a null pointer)
+`ptr`, `count`: a sequence of `count` elements beginning at `ptr` (which must not be a null pointer)
 
-`str` -- the sequence specified by the `basic_string` object `str`
+`str`: the sequence specified by the `basic_string` object `str`
 
-`first`, `last` -- a sequence of elements delimited by the iterators `first` and `last`, in the range `[first, last)`
+`first`, `last`: a sequence of elements delimited by the iterators `first` and `last`, in the range `[first, last)`
 
-`right` -- the `basic_regex` object `right`
+`right`: the `basic_regex` object `right`
 
-These member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to those described by the *RXtraits* type.
+All above member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to options described by the *RXtraits* type.
 
 ### Members
 
@@ -336,7 +338,7 @@ All constructors store a default-constructed object of type `RXtraits`.
 
 The first constructor constructs an empty `basic_regex` object. The other constructors construct a `basic_regex` object that holds the regular expression described by the operand sequence.
 
-An empty `basic_regex` object does not match any character sequence when passed to [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), or [regex_replace](../standard-library/regex-functions.md#regex_replace).
+An empty `basic_regex` object doesn't match any character sequence when passed to [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), or [regex_replace](../standard-library/regex-functions.md#regex_replace).
 
 ## <a name="flag_type"></a> basic_regex::flag_type
 

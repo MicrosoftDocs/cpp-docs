@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: basic_streambuf Class"
 title: "basic_streambuf Class"
-ms.date: "11/04/2016"
+ms.date: 06/10/2022
 f1_keywords: ["streambuf/std::basic_streambuf", "streambuf/std::basic_streambuf::char_type", "streambuf/std::basic_streambuf::int_type", "streambuf/std::basic_streambuf::off_type", "streambuf/std::basic_streambuf::pos_type", "streambuf/std::basic_streambuf::traits_type", "streambuf/std::basic_streambuf::eback", "streambuf/std::basic_streambuf::egptr", "streambuf/std::basic_streambuf::epptr", "streambuf/std::basic_streambuf::gbump", "streambuf/std::basic_streambuf::getloc", "streambuf/std::basic_streambuf::gptr", "streambuf/std::basic_streambuf::imbue", "streambuf/std::basic_streambuf::in_avail", "streambuf/std::basic_streambuf::overflow", "streambuf/std::basic_streambuf::pbackfail", "streambuf/std::basic_streambuf::pbase", "streambuf/std::basic_streambuf::pbump", "streambuf/std::basic_streambuf::pptr", "streambuf/std::basic_streambuf::pubimbue", "streambuf/std::basic_streambuf::pubseekoff", "streambuf/std::basic_streambuf::pubseekpos", "streambuf/std::basic_streambuf::pubsetbuf", "streambuf/std::basic_streambuf::pubsync", "streambuf/std::basic_streambuf::sbumpc", "streambuf/std::basic_streambuf::seekoff", "streambuf/std::basic_streambuf::seekpos", "streambuf/std::basic_streambuf::setbuf", "streambuf/std::basic_streambuf::setg", "streambuf/std::basic_streambuf::setp", "streambuf/std::basic_streambuf::sgetc", "streambuf/std::basic_streambuf::sgetn", "streambuf/std::basic_streambuf::showmanyc", "streambuf/std::basic_streambuf::snextc", "streambuf/std::basic_streambuf::sputbackc", "streambuf/std::basic_streambuf::sputc", "streambuf/std::basic_streambuf::sputn", "streambuf/std::basic_streambuf::stossc", "streambuf/std::basic_streambuf::sungetc", "streambuf/std::basic_streambuf::swap", "streambuf/std::basic_streambuf::sync", "streambuf/std::basic_streambuf::uflow", "streambuf/std::basic_streambuf::underflow", "streambuf/std::basic_streambuf::xsgetn", "streambuf/std::basic_streambuf::xsputn"]
 helpviewer_keywords: ["std::basic_streambuf [C++]", "std::basic_streambuf [C++], char_type", "std::basic_streambuf [C++], int_type", "std::basic_streambuf [C++], off_type", "std::basic_streambuf [C++], pos_type", "std::basic_streambuf [C++], traits_type", "std::basic_streambuf [C++], eback", "std::basic_streambuf [C++], egptr", "std::basic_streambuf [C++], epptr", "std::basic_streambuf [C++], gbump", "std::basic_streambuf [C++], getloc", "std::basic_streambuf [C++], gptr", "std::basic_streambuf [C++], imbue", "std::basic_streambuf [C++], in_avail", "std::basic_streambuf [C++], overflow", "std::basic_streambuf [C++], pbackfail", "std::basic_streambuf [C++], pbase", "std::basic_streambuf [C++], pbump", "std::basic_streambuf [C++], pptr", "std::basic_streambuf [C++], pubimbue", "std::basic_streambuf [C++], pubseekoff", "std::basic_streambuf [C++], pubseekpos", "std::basic_streambuf [C++], pubsetbuf", "std::basic_streambuf [C++], pubsync", "std::basic_streambuf [C++], sbumpc", "std::basic_streambuf [C++], seekoff", "std::basic_streambuf [C++], seekpos", "std::basic_streambuf [C++], setbuf", "std::basic_streambuf [C++], setg", "std::basic_streambuf [C++], setp", "std::basic_streambuf [C++], sgetc", "std::basic_streambuf [C++], sgetn", "std::basic_streambuf [C++], showmanyc", "std::basic_streambuf [C++], snextc", "std::basic_streambuf [C++], sputbackc", "std::basic_streambuf [C++], sputc", "std::basic_streambuf [C++], sputn", "std::basic_streambuf [C++], stossc", "std::basic_streambuf [C++], sungetc", "std::basic_streambuf [C++], swap", "std::basic_streambuf [C++], sync", "std::basic_streambuf [C++], uflow", "std::basic_streambuf [C++], underflow", "std::basic_streambuf [C++], xsgetn", "std::basic_streambuf [C++], xsputn"]
 ms.assetid: 136af6c3-13bf-4501-9288-b93da26efac7
+ms.custom: devdivchpfy22
 ---
+
 # basic_streambuf Class
 
 Describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream.
@@ -31,7 +33,7 @@ The class template describes an abstract base class for deriving a stream buffer
 
 Every stream buffer conceptually controls two independent streams: one for extractions (input) and one for insertions (output). A specific representation may, however, make either or both of these streams inaccessible. It typically maintains some relationship between the two streams. What you insert into the output stream of a [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`> object, for example, is what you later extract from its input stream. When you position one stream of a [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`> object, you position the other stream in tandem.
 
-The public interface to class template `basic_streambuf` supplies the operations that are common to all stream buffers, however specialized. The protected interface supplies the operations needed for a specific representation of a stream to do its work. The protected virtual member functions let you tailor the behavior of a derived stream buffer for a specific representation of a stream. Each derived stream buffer in this library describes how it specializes the behavior of its protected virtual member functions. The default behavior for the base class, which is often to do nothing, is described in this topic.
+The public interface to class template `basic_streambuf` supplies the operations that are common to all stream buffers, however specialized. The protected interface supplies the operations needed for a specific representation of a stream to do its work. The protected virtual member functions let you tailor the behavior of a derived stream buffer for a specific representation of a stream. Each derived stream buffer in this library describes how it specializes the behavior of its protected virtual member functions. The default behavior for the base class, which is often to do nothing, is described in this article.
 
 The remaining protected member functions control copying to and from any storage supplied to buffer transmissions to and from streams. An input buffer, for example, is characterized by:
 
@@ -39,7 +41,7 @@ The remaining protected member functions control copying to and from any storage
 
 - [gptr](#gptr), a pointer to the next element to read.
 
-- [egptr](#egptr), a pointer just past the end of the buffer.
+- [egptr](#egptr), a pointer past the end of the buffer.
 
 Similarly, an output buffer is characterized by:
 
@@ -47,7 +49,7 @@ Similarly, an output buffer is characterized by:
 
 - [pptr](#pptr), a pointer to the next element to write.
 
-- [epptr](#epptr), a pointer just past the end of the buffer.
+- [epptr](#epptr), a pointer past the end of the buffer.
 
 For any buffer, the following protocol is used:
 
@@ -84,8 +86,8 @@ An object of class `basic_streambuf`< `Elem`, `Tr`> stores the six pointers prev
 |Member function|Description|
 |-|-|
 |[eback](#eback)|A protected function that returns a pointer to the beginning of the input buffer.|
-|[egptr](#egptr)|A protected function that returns a pointer just past the end of the input buffer.|
-|[epptr](#epptr)|A protected function that returns a pointer just past the end of the output buffer.|
+|[egptr](#egptr)|A protected function that returns a pointer past the end of the input buffer.|
+|[epptr](#epptr)|A protected function that returns a pointer past the end of the output buffer.|
 |[gbump](#gbump)|A protected function that adds `count` to the next pointer for the input buffer.|
 |[getloc](#getloc)|Gets the `basic_streambuf` object's locale.|
 |[gptr](#gptr)|A protected function that returns a pointer to the next element of the input buffer.|
@@ -109,7 +111,7 @@ An object of class `basic_streambuf`< `Elem`, `Tr`> stores the six pointers prev
 |[setp](#setp)|A protected function that stores `_Pbeg` in the beginning pointer and `_Pend` in the end pointer for the output buffer.|
 |[sgetc](#sgetc)|Returns current element without changing position in the stream.|
 |[sgetn](#sgetn)|Returns the number of elements read.|
-|[showmanyc](#showmanyc)|Protected virtual member function that returns a count of the number of characters that can be extracted from the input stream and ensure that the program will not be subject to an indefinite wait.|
+|[showmanyc](#showmanyc)|Protected virtual member function that returns a count of the number of characters that can be extracted from the input stream. It also ensures that the program won't be subject to an indefinite wait.|
 |[snextc](#snextc)|Reads the current element and returns the following element.|
 |[sputbackc](#sputbackc)|Puts a `char_type` in the stream.|
 |[sputc](#sputc)|Puts a character into the stream.|
@@ -178,7 +180,7 @@ A pointer to the beginning of the input buffer.
 
 ## <a name="egptr"></a> basic_streambuf::egptr
 
-A protected function that returns a pointer just past the end of the input buffer.
+A protected function that returns a pointer past the end of the input buffer.
 
 ```cpp
 char_type *egptr() const;
@@ -186,11 +188,11 @@ char_type *egptr() const;
 
 ### Return Value
 
-A pointer just past the end of the input buffer.
+A pointer past the end of the input buffer.
 
 ## <a name="epptr"></a> basic_streambuf::epptr
 
-A protected function that returns a pointer just past the end of the output buffer.
+A protected function that returns a pointer past the end of the output buffer.
 
 ```cpp
 char_type *epptr() const;
@@ -198,7 +200,7 @@ char_type *epptr() const;
 
 ### Return Value
 
-A pointer just past the end of the output buffer.
+A pointer past the end of the output buffer.
 
 ## <a name="gbump"></a> basic_streambuf::gbump
 
@@ -358,11 +360,11 @@ The character to insert into the buffer, or **traits_type::**[eof](../standard-l
 
 ### Return Value
 
-If the function cannot succeed, it returns **traits_type::eof** or throws an exception. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*). The default behavior is to return **traits_type::eof**.
+If the function can't succeed, it returns **traits_type::eof** or throws an exception. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*). The default behavior is to return **traits_type::eof**.
 
 ### Remarks
 
-If *\_Meta* does not compare equal to **traits_type::eof**, the protected virtual member function endeavors to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) into the output stream. It can do so in various ways:
+If *\_Meta* doesn't compare equal to **traits_type::eof**, the protected virtual member function endeavors to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) into the output stream. It can do so in various ways:
 
 - If a `write position` is available, it can store the element into the write position and increment the next pointer for the output buffer.
 
@@ -374,7 +376,7 @@ The virtual overflow function, together with the [sync](#sync) and [underflow](#
 
 The `overflow` function is most frequently called by public `streambuf` functions like `sputc` and `sputn` when the put area is full, but other classes, including the stream classes, can call `overflow` anytime.
 
-The function consumes the characters in the put area between the `pbase` and `pptr` pointers and then reinitializes the put area. The `overflow` function must also consume `nCh` (if `nCh` is not `EOF`), or it might choose to put that character in the new put area so that it will be consumed on the next call.
+The function consumes the characters in the put area between the `pbase` and `pptr` pointers and then reinitializes the put area. The `overflow` function must also consume `nCh` (if `nCh` isn't `EOF`), or it might choose to put that character in the new put area so that it will be consumed on the next call.
 
 The definition of consume varies among derived classes. For example, the `filebuf` class writes its characters to a file, while the `strstreambuf` class keeps them in its buffer and (if the buffer is designated as dynamic) expands the buffer in response to a call to overflow. This expansion is achieved by freeing the old buffer and replacing it with a new, larger one. The pointers are adjusted as necessary.
 
@@ -393,7 +395,7 @@ The character to insert into the buffer, or **traits_type::**[eof](../standard-l
 
 ### Return Value
 
-If the function cannot succeed, it returns **traits_type::eof** or throws an exception. Otherwise, it returns some other value. The default behavior is to return **traits_type::eof**.
+If the function can't succeed, it returns **traits_type::eof** or throws an exception. Otherwise, it returns some other value. The default behavior is to return **traits_type::eof**.
 
 ### Remarks
 
@@ -498,7 +500,7 @@ Specifies the mode for the pointer position. The default is to allow you to modi
 
 ### Return Value
 
-Returns the new position or an invalid stream position ( [seekoff](#seekoff)(_ *Off*, `_Way`, `_Which`) ).
+Returns the new position or an invalid stream position ([seekoff](#seekoff)(_ *Off*, `_Way`, `_Which`)).
 
 ### Remarks
 
@@ -576,7 +578,7 @@ The current element.
 
 ### Remarks
 
-If a read position is available, the member function returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( <strong>\*</strong>[gptr](#gptr)) and increments the next pointer for the input buffer. Otherwise, it returns [uflow](#uflow).
+If a read position is available, the member function returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)(<strong>\*</strong>[gptr](#gptr)) and increments the next pointer for the input buffer. Otherwise, it returns [uflow](#uflow).
 
 ### Example
 
@@ -627,7 +629,7 @@ Specifies the mode for the pointer position. The default is to allow you to modi
 
 ### Return Value
 
-Returns the new position or an invalid stream position ( `seekoff` (_ *Off*, `_Way`, `_Which`) ).
+Returns the new position or an invalid stream position (`seekoff` (_ *Off*, `_Way`, `_Which`)).
 
 ### Remarks
 
@@ -792,7 +794,7 @@ The number of elements to read.
 
 ### Return Value
 
-The number of elements read. See [streamsize](../standard-library/ios-typedefs.md#streamsize) for more information.
+The number of elements read. For more information, see [streamsize](../standard-library/ios-typedefs.md#streamsize) for more information.
 
 ### Remarks
 
@@ -827,7 +829,7 @@ int main()
 
 ## <a name="showmanyc"></a> basic_streambuf::showmanyc
 
-A protected virtual member function that returns a count of the number of characters that can be extracted from the input stream and ensure that the program will not be subject to an indefinite wait.
+A protected virtual member function that returns a count of the number of characters that can be extracted from the input stream and ensure that the program won't be subject to an indefinite wait.
 
 ```cpp
 virtual streamsize showmanyc();
@@ -944,7 +946,7 @@ Returns the character, if successful.
 
 ### Remarks
 
-If a `write position` is available, the member function stores *_Ch* in the write position, increments the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [overflow](#overflow)( `_Ch`).
+If a `write position` is available, the member function stores *_Ch* in the write position, increment the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [overflow](#overflow)( `_Ch`).
 
 ### Example
 
@@ -986,11 +988,11 @@ The count of characters.
 
 ### Return Value
 
-The number of characters actually inserted into the stream.
+The number of characters inserted into the stream.
 
 ### Remarks
 
-The member function returns [xsputn](#xsputn)( `ptr`, `count`). See the Remarks section of this member for more information.
+The member function returns [xsputn](#xsputn)( `ptr`, `count`). For more information, see the Remarks section of this member for more information.
 
 ### Example
 
@@ -1024,7 +1026,7 @@ void stossc();
 
 ### Remarks
 
-The member function calls [sbumpc](#sbumpc). Note that an implementation is not required to supply this member function.
+The member function calls [sbumpc](#sbumpc). An implementation isn't required to supply this member function.
 
 ### Example
 
@@ -1059,7 +1061,7 @@ Returns either the character or failure.
 
 ### Remarks
 
-If a putback position is available, the member function decrements the next pointer for the input buffer and returns `traits_type::`[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*`[gptr](#gptr)). However, it is not always possible to determine the last character read so that it can be captured in the state of the current buffer. If this is true, then the function returns [pbackfail](#pbackfail). To avoid this situation, keep track of the character to put back and call `sputbackc(ch)`, which will not fail provided you don't call it at the beginning of the stream and you don't try to put back more than one character.
+If a putback position is available, the member function decrements the next pointer for the input buffer and returns `traits_type::`[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*`[gptr](#gptr)). However, it isn't always possible to determine the last character read so that it can be captured in the state of the current buffer. If this is true, then the function returns [pbackfail](#pbackfail). To avoid this situation, keep track of the character to put back and call `sputbackc(ch)`, which won't fail provided you don't call it at the beginning of the stream and you don't try to put back more than one character.
 
 ### Example
 
@@ -1122,11 +1124,11 @@ virtual int sync();
 
 ### Return Value
 
-If the function cannot succeed, it returns -1. The default behavior is to return zero.
+If the function can't succeed, it returns -1. The default behavior is to return zero.
 
 ### Remarks
 
-`sync` involves writing out any elements between the beginning and next pointers for the output buffer. It does not involve putting back any elements between the next and end pointers for the input buffer.
+`sync` involves writing out any elements between the beginning and next pointers for the output buffer. It doesn't involve putting back any elements between the next and end pointers for the input buffer.
 
 ## <a name="traits_type"></a> basic_streambuf::traits_type
 
@@ -1158,7 +1160,7 @@ The protected virtual member function tries to extract the current element **ch*
 
 - For a stream buffer with common input and output streams, it can make a read position available by writing out, to some external destination, some or all of the elements between the beginning and next pointers for the output buffer. Or it can allocate new or additional storage for the input buffer. The function then reads in, from some external source, one or more elements.
 
-If the function cannot succeed, it returns **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), or throws an exception. Otherwise, it returns the current element `ch` in the input stream, converted as described above, and advances the next pointer for the input buffer. The default behavior is to call [underflow](#underflow) and, if that function returns **traits_type::eof**, to return **traits_type::eof**. Otherwise, the function returns the current element **ch** in the input stream, converted as previously described, and advances the next pointer for the input buffer.
+If the function can't succeed, it returns **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), or throws an exception. Otherwise, it returns the current element `ch` in the input stream, converted as described above, and advances the next pointer for the input buffer. The default behavior is to call [underflow](#underflow) and, if that function returns **traits_type::eof**, to return **traits_type::eof**. Otherwise, the function returns the current element **ch** in the input stream, converted as previously described, and advances the next pointer for the input buffer.
 
 ## <a name="underflow"></a> basic_streambuf::underflow
 
@@ -1176,11 +1178,11 @@ The current element.
 
 The protected virtual member function endeavors to extract the current element **ch** from the input stream, without advancing the current stream position, and return it as `traits_type::`[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**). It can do so in various ways:
 
-- If a read position is available, **ch** is the element stored in the read position. For more information on this, see the Remarks section of the [basic_streambuf Class](../standard-library/basic-streambuf-class.md).
+- If a read position is available, **ch** is the element stored in the read position. For more information, see the Remarks section of the [basic_streambuf Class](../standard-library/basic-streambuf-class.md).
 
-- It can make a read position available by allocating new or additional storage for the input buffer, then reading in, from some external source, one or more elements. For more information on this, see the Remarks section of the [basic_streambuf Class](../standard-library/basic-streambuf-class.md).
+- It can make a read position available by allocating new or additional storage for the input buffer, then reading in, from some external source, one or more elements. For more information, see the Remarks section of the [basic_streambuf Class](../standard-library/basic-streambuf-class.md).
 
-If the function cannot succeed, it returns `traits_type::`[eof](../standard-library/char-traits-struct.md#eof)`()` or throws an exception. Otherwise, it returns the current element in the input stream, converted as previously described. The default behavior is to return `traits_type::eof()`.
+If the function can't succeed, it returns `traits_type::`[eof](../standard-library/char-traits-struct.md#eof)`()` or throws an exception. Otherwise, it returns the current element in the input stream, converted as previously described. The default behavior is to return `traits_type::eof()`.
 
 The virtual `underflow` function, with the [sync](#sync) and [overflow](#overflow) functions, defines the characteristics of the `streambuf`-derived class. Each derived class might implement `underflow` differently, but the interface with the calling stream class is the same.
 
@@ -1216,7 +1218,7 @@ The number of elements extracted.
 
 ### Remarks
 
-The protected virtual member function extracts up to *count* elements from the input stream, as if by repeated calls to [sbumpc](#sbumpc), and stores them in the array beginning at *ptr*. It returns the number of elements actually extracted.
+The protected virtual member function extracts up to *count* elements from the input stream, as if by repeated calls to [sbumpc](#sbumpc), and stores them in the array beginning at *ptr*. It returns the number of elements extracted.
 
 ## <a name="xsputn"></a> basic_streambuf::xsputn
 
@@ -1236,11 +1238,11 @@ Number of elements to insert.
 
 ### Return Value
 
-The number of elements actually inserted into the stream.
+The number of elements inserted into the stream.
 
 ### Remarks
 
-The protected virtual member function inserts up to *count* elements into the output stream, as if by repeated calls to [sputc](#sputc), from the array beginning at *ptr*. The insertion of characters into the output stream stops once all *count* characters have been written, or if calling `sputc( count)` would return `traits::eof()`. It returns the number of elements actually inserted.
+The protected virtual member function inserts up to *count* elements into the output stream, as if by repeated calls to [sputc](#sputc), from the array beginning at *ptr*. The insertion of characters into the output stream stops once all *count* characters have been written, or if calling `sputc( count)` would return `traits::eof()`. It returns the number of elements inserted.
 
 ## See also
 

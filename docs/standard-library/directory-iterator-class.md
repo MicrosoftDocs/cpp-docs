@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: directory_iterator Class"
 title: "directory_iterator Class"
-ms.date: "09/10/2018"
+ms.date: 06/10/2022
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_iterator", "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::increment", "filesystem/std::experimental::filesystem::directory_iterator::operator=", "filesystem/std::experimental::filesystem::directory_iterator::operator==", "filesystem/std::experimental::filesystem::directory_iterator::operator!=", "filesystem/std::experimental::filesystem::directory_iterator::operator*", "filesystem/std::experimental::filesystem::directory_iterator::operator->", "filesystem/std::experimental::filesystem::directory_iterator::operator++"]
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8
 helpviewer_keywords: ["std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::directory_iterator::directory_iterator", "std::experimental::filesystem::directory_iterator::increment", "std::experimental::filesystem::directory_iterator::operator=", "std::experimental::filesystem::directory_iterator::operator==", "std::experimental::filesystem::directory_iterator::operator!=", "std::experimental::filesystem::directory_iterator::operator*", "std::experimental::filesystem::directory_iterator::operator->", "std::experimental::filesystem::directory_iterator::operator++"]
+ms.custom: devdivchpfy22
+
 ---
 # directory_iterator Class
 
@@ -44,7 +46,7 @@ class directory_iterator;
 |-|-|
 |[operator!=](#op_neq)|Returns `!(*this == right)`.|
 |[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
-|[operator==](#op_eq)|Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
+|[operator==](#op_eq)|Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both aren't end-of-sequence-iterators.|
 |[operator*](#op_star)|Returns `myentry`.|
 |[operator->](#op_cast)|Returns `&**this`.|
 |[operator++](#op_increment)|Calls `increment()`, then returns **`*this`**, or makes a copy of the object, calls `increment()`, then returns the copy.|
@@ -59,7 +61,7 @@ class directory_iterator;
 
 The first constructor produces an end-of-sequence iterator. The second and third constructors store *pval* in `mydir`, then attempt to open and read `mydir` as a directory. If successful, they store the first filename in the directory in `myentry`; otherwise they produce an end-of-sequence iterator.
 
-The defaulted construtors behave as expected.
+The default constructor behave as expected.
 
 ```cpp
 directory_iterator() noexcept;
@@ -118,7 +120,7 @@ The [directory_iterator](../standard-library/directory-iterator-class.md) being 
 
 ## <a name="op_eq"></a> directory_iterator::operator==
 
-The member operator returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
+The member operator returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both aren't end-of-sequence-iterators.
 
 ```cpp
 bool operator==(const directory_iterator& right) const;
