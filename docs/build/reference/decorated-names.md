@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Decorated names"
-title: "Decorated Names"
+title: "Decorated names"
 ms.date: 06/08/2022
 helpviewer_keywords: ["decorated names, definition", "name decoration [C++]", "names [C++], decorated"]
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
