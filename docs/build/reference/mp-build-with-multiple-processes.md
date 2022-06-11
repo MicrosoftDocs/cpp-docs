@@ -101,7 +101,7 @@ The compiler does not support the use of the [#import](../../preprocessor/hash-i
 
 ### Visual Studio Project Settings
 
-#### The MSBUILD.exe Tool
+#### The MSBuild.exe Tool
 
 Visual Studio uses the [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) tool to build solutions and projects. The **/maxcpucount:**_number_ (or **/m:**_number_) command-line option of the MSBuild.exe tool can build multiple projects at the same time. And the **/MP** compiler option can build multiple compilation units at the same time. If it is appropriate for your application, improve your solution's build time by using either or both **/MP** and **/maxcpucount**.
 
