@@ -61,7 +61,7 @@ class directory_iterator;
 
 The first constructor produces an end-of-sequence iterator. The second and third constructors store *pval* in `mydir`, then attempt to open and read `mydir` as a directory. If successful, they store the first filename in the directory in `myentry`; otherwise they produce an end-of-sequence iterator.
 
-The default constructor behave as expected.
+The default constructor behaves as expected.
 
 ```cpp
 directory_iterator() noexcept;

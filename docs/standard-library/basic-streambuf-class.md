@@ -946,7 +946,7 @@ Returns the character, if successful.
 
 ### Remarks
 
-If a `write position` is available, the member function stores *_Ch* in the write position, increment the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [overflow](#overflow)( `_Ch`).
+If a `write position` is available, the member function stores *_Ch* in the write position, increments the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [overflow](#overflow)( `_Ch`).
 
 ### Example
 

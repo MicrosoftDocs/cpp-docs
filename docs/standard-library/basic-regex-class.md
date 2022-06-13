@@ -45,7 +45,7 @@ Some functions take an operand sequence that defines a regular expression. You c
 
 `right`: the `basic_regex` object `right`
 
-All above member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to options described by the *RXtraits* type.
+The above member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to options described by the *RXtraits* type.
 
 ### Members
 
