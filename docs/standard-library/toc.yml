@@ -926,6 +926,8 @@ items:
       items: 
         - name: <ranges>
           href: ranges.md
+        - name: <ranges> functions
+          href: range-functions.md
     - name: <ratio>
       href: ratio.md
     - name: <regex>
