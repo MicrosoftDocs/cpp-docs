@@ -3579,8 +3579,7 @@ This method repositions buttons within the toolbar, wrapping buttons to addition
 ## <a name="m_bdontscaleimages"></a> `CMFCToolBar::m_bDontScaleImages`
 
 Specifies whether or not to scale toolbar images in high DPI mode.
-Prevents image scaling when image sizes don't match button sizes.
-Set this member to TRUE, when you wish to prevent automatic image scaling if image sizes don't match button sizes.
+Set to `TRUE` to prevent image scaling when an image size doesn't match a button size.
 
 ```
 AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
