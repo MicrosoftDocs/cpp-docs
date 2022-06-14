@@ -3017,7 +3017,10 @@ An input iterator, `const_pointer`, or `const_iterator` addressing the position 
 
 ### Return value
 
-Either a reference to the string object that gets assigned new characters by the member function or, if there is a individual character insertions, an iterator addressing the position of the character inserted, or none, depending on the particular member function.
+The functions that return a value return either:
+
+- A reference to the `basic_string` that contains the original string plus the new characters.
+- If there is a individual character insertions, an iterator at the position of the inserted characters.
 
 ### Example
 
