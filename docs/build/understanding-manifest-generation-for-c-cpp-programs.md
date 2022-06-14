@@ -1,19 +1,292 @@
 ---
-description: "Learn more about: Understanding Manifest Generation for C/C++ Programs"
-title: "Understanding Manifest Generation for C/C++ Programs"
-ms.date: "11/04/2016"
+description: "Learn more about: Understanding manifest generation for C/C++ programs"
+title: "Understanding manifest generation for C/C++ programs"
+ms.date: 06/10/2022
 helpviewer_keywords: ["manifests [C++]"]
 ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
 ---
-# Understanding Manifest Generation for C/C++ Programs
+# Understanding manifest generation for C/C++ programs
 
-A [manifest](/windows/win32/sbscs/manifests) is an XML document that can be an external XML file or a resource embedded inside an application or an assembly. The manifest of an [isolated application](/windows/win32/SbsCs/isolated-applications) is used to manage the names and versions of shared side-by-side assemblies to which the application should bind at run time. The manifest of a side-by-side assembly specifies its dependencies on names, versions, resources, and other assemblies.
+A [manifest](/windows/win32/sbscs/manifests) is an XML document that uniquely identifies an assembly. It contains information used for binding and activation, such as COM classes, interfaces, and type libraries. A manifest can be an external XML file or a resource embedded inside an application or an assembly. The manifest of an [isolated application](/windows/win32/SbsCs/isolated-applications) is used to manage the names and versions of shared side-by-side assemblies the application should bind to at run time. The manifest of a side-by-side assembly specifies its dependencies on names, versions, resources, and other assemblies.
 
-There are two ways to create a manifest for an isolated application or a side-by-side assembly. First, the author of the assembly can manually create a manifest file following rules and naming requirements. Alternatively, if a program only depends on Visual C++ assemblies such as CRT, MFC, ATL or others, then a manifest can be generated automatically by the linker.
+There are two ways to create a manifest for an isolated application or a side-by-side assembly. First, the author of the assembly can manually create a manifest file by following the rules and naming requirements. For more information, see [Manifest files reference](/windows/win32/sbscs/manifest-files-reference). Alternatively, if a program only depends on MSVC assemblies such as CRT, MFC, ATL or others, then the linker can generate a manifest automatically.
 
-The headers of Visual C++ libraries contain assembly information, and when the libraries are included in application code, this assembly information is used by the linker to form a manifest for the final binary. The linker does not embed the manifest file inside the binary, and can only generate the manifest as an external file. Having a manifest as an external file may not work for all scenarios. For example, it is recommended that private assemblies have embedded manifests. In command line builds such as those that use nmake to build code, a manifest can be embedded using the manifest tool; for more information see [Manifest Generation at the Command Line](manifest-generation-at-the-command-line.md). When building in Visual Studio, a manifest can be embedded by setting a property for the manifest tool in the **Project Properties** dialog; see [Manifest Generation in Visual Studio](manifest-generation-in-visual-studio.md).
+The headers of MSVC libraries contain assembly information, and when the libraries are included in application code, this assembly information is used by the linker to form a manifest for the final binary. By default, the linker doesn't embed the manifest file inside the binary. Having a manifest as an external file may not work for all scenarios. For example, it's recommended that private assemblies have embedded manifests. In command line builds such as ones that use NMAKE to build code, you can use the [`/MANIFEST:EMBED`](./reference/manifest-create-side-by-side-assembly-manifest.md) linker option to embed the manifest. Alternatively, a manifest can be embedded using the manifest tool. For more information, see [Manifest generation at the command line](#manifest-generation-at-the-command-line). When you build in Visual Studio, a manifest can be embedded by setting a property for the manifest tool in the **Project Properties** dialog, as described in the next section.
+
+## <a name="manifest-generation-in-visual-studio"></a> Manifest generation in Visual Studio
+
+You can tell Visual Studio to generate a manifest file for a particular project in the project's **Property Pages** dialog. Under **Configuration Properties**, select **Linker** > **Manifest File** > **Generate Manifest**. By default, the project properties of new projects are set to generate a manifest file. However it's possible to disable generation of the manifest for a project by using the **Generate Manifest** property of the project. When this property is set to **Yes**, the manifest for the project is generated. Otherwise the linker ignores assembly information when resolving dependencies of the application code, and doesn't generate the manifest.
+
+The build system in Visual Studio allows the manifest to be embedded in the final binary application file, or generated as an external file. This behavior is controlled by the **Embed Manifest** option in the **Project Properties** dialog. To set this property, open the **Manifest Tool** node, then select **Input and Output**. If the manifest isn't embedded, it's generated as an external file and saved in the same directory as the final binary. If the manifest is embedded, Visual Studio embeds the final manifests using the following process:
+
+1. After the source code is compiled to object files, the linker collects dependent assembly information. While it links the final binary, the linker generates an intermediate manifest that's used later to generate the final manifest.
+
+1. After the intermediate manifest and linking are finished, the manifest tool merges a final manifest and saves it as an external file.
+
+1. The project build system then detects whether the manifest generated by the manifest tool contains different information than the manifest already embedded in the binary.
+
+1. If the manifest embedded in the binary is different from the manifest generated by the manifest tool, or the binary doesn't contain an embedded manifest, Visual Studio invokes the linker one more time to embed the external manifest file inside the binary as a resource.
+
+1. If the manifest embedded in the binary is the same as the manifest generated by the manifest tool, the build continues to the next build steps.
+
+The manifest is embedded inside the final binary as a text resource. You can view it by opening the final binary as a file in Visual Studio. To ensure that the manifest points to the correct libraries, follow the steps described in [Understanding the dependencies of a Visual C++ application](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md). Or, follow the suggestions described in the [Troubleshooting](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) article.
+
+## <a name="manifest-generation-at-the-command-line"></a> Manifest generation at the command line
+
+When you build C/C++ applications from the command line using NMAKE or similar tools, the manifest is generated after the linker has processed all object files and built the final binary. The linker collects assembly information stored in the object files and combines this information into a final manifest file. By default, the linker generates a file named *`<binary_name>.<extension>.manifest`* to describe the final binary. The linker can embed a manifest file inside the binary by specifying the [`/MANIFEST:EMBED`](./reference/manifest-create-side-by-side-assembly-manifest.md) linker option.
+
+There are several other ways to embed a manifest inside the final binary, such as using the [Manifest tool (`mt.exe`)](/windows/win32/sbscs/mt-exe) or compiling the manifest into a resource file. You must follow specific rules when you embed a manifest to enable features such as incremental linking, signing, and Edit and Continue. These rules and other options are discussed in the next section.
+
+## <a name="how-to-embed-a-manifest-inside-a-c-cpp-application"></a> How to embed a manifest inside a C/C++ application
+
+We recommended that you embed the manifest of your application or library inside the final binary. This approach guarantees correct runtime behavior in most scenarios. By default, Visual Studio tries to embed the manifest when it builds a project. However, if you build your application by using NMAKE, you have to make some changes to the makefile. This section shows how to change the makefiles so that it automatically embeds the manifest inside the final binary.
+
+### Two approaches
+
+There are two ways to embed the manifest inside an application or library.
+
+1. If you aren't doing an incremental build, you can directly embed the manifest using a command line similar to the following as a post-build step:
+
+   ```cmd
+   mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1
+   ```
+
+   or
+
+   ```cmd
+   mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2
+   ```
+
+   Use 1 for an EXE and 2 for a DLL.
+
+1. If you're doing an incremental build, use the following steps:
+
+   - Link the binary to generate the *`MyApp.exe.manifest`* file.
+
+   - Convert the manifest to a resource file.
+
+   - Relink (incrementally) to embed the manifest resource into the binary.
+
+The following examples show how to change makefiles to incorporate both techniques.
+
+### Makefiles (Before)
+
+Consider the NMAKE script for *`MyApp.exe`*, a simple application built from one file:
+
+```makefile
+# build MyApp.exe
+!if "$(DEBUG)" == "1"
+CPPFLAGS=$(CPPFLAGS) /MDd
+LFLAGS=$(LFLAGS) /INCREMENTAL
+!else
+CPPFLAGS=$(CPPFLAGS) /MD
+!endif
+
+MyApp.exe : MyApp.obj
+    link $** /out:$@ $(LFLAGS)
+
+MyApp.obj : MyApp.cpp
+
+clean :
+    del MyApp.obj MyApp.exe
+```
+
+If this script is run unchanged with Visual Studio, it successfully creates *`MyApp.exe`*. It also creates the external manifest file *`MyApp.exe.manifest`*, for use by the operating system to load dependent assemblies at runtime.
+
+The NMAKE script for *`MyLibrary.dll`* looks similar:
+
+```makefile
+# build MyLibrary.dll
+!if "$(DEBUG)" == "1"
+CPPFLAGS=$(CPPFLAGS) /MDd
+LFLAGS=$(LFLAGS) /DLL /INCREMENTAL
+
+!else
+CPPFLAGS=$(CPPFLAGS) /MD
+LFLAGS=$(LFLAGS) /DLL
+
+!endif
+
+MyLibrary.dll : MyLibrary.obj
+    link $** /out:$@ $(LFLAGS)
+
+MyLibrary.obj : MyLibrary.cpp
+
+clean :
+    del MyLibrary.obj MyLibrary.dll
+```
+
+### Makefiles (After)
+
+To build with embedded manifests, you have to make four small changes to the original makefiles. For the *`MyApp.exe`* makefile:
+
+```makefile
+# build MyApp.exe
+!include makefile.inc
+#^^^^^^^^^^^^^^^^^^^^ Change #1. (Add full path if necessary.)
+
+!if "$(DEBUG)" == "1"
+CPPFLAGS=$(CPPFLAGS) /MDd
+LFLAGS=$(LFLAGS) /INCREMENTAL
+!else
+CPPFLAGS=$(CPPFLAGS) /MD
+!endif
+
+MyApp.exe : MyApp.obj
+    link $** /out:$@ $(LFLAGS)
+    $(_VC_MANIFEST_EMBED_EXE)
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Change #2
+
+MyApp.obj : MyApp.cpp
+
+clean :
+    del MyApp.obj MyApp.exe
+    $(_VC_MANIFEST_CLEAN)
+#^^^^^^^^^^^^^^^^^^^^^^^^ Change #3
+
+!include makefile.target.inc
+#^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)
+```
+
+For the MyLibrary.dll makefile:
+
+```makefile
+# build MyLibrary.dll
+!include makefile.inc
+#^^^^^^^^^^^^^^^^^^^^ Change #1. (Add full path if necessary.)
+
+!if "$(DEBUG)" == "1"
+CPPFLAGS=$(CPPFLAGS) /MDd
+LFLAGS=$(LFLAGS) /DLL /INCREMENTAL
+
+!else
+CPPFLAGS=$(CPPFLAGS) /MD
+LFLAGS=$(LFLAGS) /DLL
+
+!endif
+
+MyLibrary.dll : MyLibrary.obj
+    link $** /out:$@ $(LFLAGS)
+    $(_VC_MANIFEST_EMBED_DLL)
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Change #2.
+
+MyLibrary.obj : MyLibrary.cpp
+
+clean :
+    del MyLibrary.obj MyLibrary.dll
+    $(_VC_MANIFEST_CLEAN)
+#^^^^^^^^^^^^^^^^^^^^^^^^ Change #3.
+
+!include makefile.target.inc
+#^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)
+```
+
+The makefiles now include two files that do the real work,*` makefile.inc`* and *`makefile.target.inc`*.
+
+Create *`makefile.inc`* and copy the following content into it:
+
+```makefile
+# makefile.inc -- Include this file into existing makefile at the very top.
+
+# _VC_MANIFEST_INC specifies whether build is incremental (1 - incremental).
+# _VC_MANIFEST_BASENAME specifies name of a temporary resource file.
+
+!if "$(DEBUG)" == "1"
+CPPFLAGS=$(CPPFLAGS) /MDd
+LFLAGS=$(LFLAGS) /INCREMENTAL
+_VC_MANIFEST_INC=1
+_VC_MANIFEST_BASENAME=__VC90.Debug
+
+!else
+CPPFLAGS=$(CPPFLAGS) /MD
+_VC_MANIFEST_INC=0
+_VC_MANIFEST_BASENAME=__VC90
+
+!endif
+
+####################################################
+# Specifying name of temporary resource file used only in incremental builds:
+
+!if "$(_VC_MANIFEST_INC)" == "1"
+_VC_MANIFEST_AUTO_RES=$(_VC_MANIFEST_BASENAME).auto.res
+!else
+_VC_MANIFEST_AUTO_RES=
+!endif
+
+####################################################
+# _VC_MANIFEST_EMBED_EXE - command to embed manifest in EXE:
+
+!if "$(_VC_MANIFEST_INC)" == "1"
+
+#MT_SPECIAL_RETURN=1090650113
+#MT_SPECIAL_SWITCH=-notify_resource_update
+MT_SPECIAL_RETURN=0
+MT_SPECIAL_SWITCH=
+_VC_MANIFEST_EMBED_EXE= \
+if exist $@.manifest mt.exe -manifest $@.manifest -out:$(_VC_MANIFEST_BASENAME).auto.manifest $(MT_SPECIAL_SWITCH) & \
+if "%ERRORLEVEL%" == "$(MT_SPECIAL_RETURN)" \
+rc /r $(_VC_MANIFEST_BASENAME).auto.rc & \
+link $** /out:$@ $(LFLAGS)
+
+!else
+
+_VC_MANIFEST_EMBED_EXE= \
+if exist $@.manifest mt.exe -manifest $@.manifest -outputresource:$@;1
+
+!endif
+
+####################################################
+# _VC_MANIFEST_CLEAN - command to clean resources files generated temporarily:
+
+!if "$(_VC_MANIFEST_INC)" == "1"
+
+_VC_MANIFEST_CLEAN=-del $(_VC_MANIFEST_BASENAME).auto.res \
+    $(_VC_MANIFEST_BASENAME).auto.rc \
+    $(_VC_MANIFEST_BASENAME).auto.manifest
+
+!else
+
+_VC_MANIFEST_CLEAN=
+
+!endif
+
+# End of makefile.inc
+####################################################
+```
+
+Now create *`makefile.target.inc`* and copy the following content into it:
+
+```makefile
+# makefile.target.inc - include this at the very bottom of the existing makefile
+
+####################################################
+# Commands to generate initial empty manifest file and the RC file
+# that references it, and for generating the .res file:
+
+$(_VC_MANIFEST_BASENAME).auto.res : $(_VC_MANIFEST_BASENAME).auto.rc
+
+$(_VC_MANIFEST_BASENAME).auto.rc : $(_VC_MANIFEST_BASENAME).auto.manifest
+    type <<$@
+#include <winuser.h>
+1RT_MANIFEST"$(_VC_MANIFEST_BASENAME).auto.manifest"
+<< KEEP
+
+$(_VC_MANIFEST_BASENAME).auto.manifest :
+    type <<$@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+</assembly>
+<< KEEP
+
+# end of makefile.target.inc
+```
 
 ## See also
 
-[Concepts of Isolated Applications and Side-by-side Assemblies](concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
-[Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[Building C/C++ isolated applications and side-by-side assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)\
+[Concepts of isolated applications and side-by-side assemblies](concepts-of-isolated-applications-and-side-by-side-assemblies.md)\
+[Troubleshooting C/C++ isolated applications and side-by-side assemblies](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)\
+[`/INCREMENTAL` (Link incrementally)](./reference/incremental-link-incrementally.md)\
+[`/MANIFEST` (Create side-by-side assembly manifest)](./reference/manifest-create-side-by-side-assembly-manifest.md)\
+[Strong Name assemblies (Assembly signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)\
+[Edit and Continue](/visualstudio/debugger/edit-and-continue)
