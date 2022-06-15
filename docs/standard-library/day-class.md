@@ -4,6 +4,7 @@ title: "day class"
 ms.date: 09/07/2021
 f1_keywords: ["chrono/std::chrono::day", "chrono/std::chrono::day::ok", "chrono/std::chrono::day:operator++", "chrono/std::chrono::day::operator--", "chrono/std::chrono::day::operator unsigned"]
 helpviewer_keywords: ["std::chrono [C++], day"]
+dev_langs: ["C++"]
 ---
 # `day` class  
 

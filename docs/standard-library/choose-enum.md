@@ -2,8 +2,9 @@
 title: "choose enum"
 description: "enum used to specify how to handle ambiguous or nonexistent local times when resolving a time in a time zone"
 ms.date: 10/08/2021
-f1_keywords: ["chrono/std::choose"]
-helpviewer_keywords: ["std::choose"]
+f1_keywords: ["chrono/std::chrono::choose"]
+helpviewer_keywords: ["std::chrono [C++], choose"]
+dev_langs: ["C++"]
 ---
 
 # `choose` enum

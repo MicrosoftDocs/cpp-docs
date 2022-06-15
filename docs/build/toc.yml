@@ -285,16 +285,7 @@ items:
     - name: "How to: Build isolated applications to consume COM components"
       href: ../build/how-to-build-isolated-applications-to-consume-com-components.md
     - name: Understanding manifest generation for C/C++ programs
-      expanded: false
-      items: 
-        - name: Understanding manifest generation for C/C++ programs
-          href: ../build/understanding-manifest-generation-for-c-cpp-programs.md
-        - name: Manifest generation in Visual Studio
-          href: ../build/manifest-generation-in-visual-studio.md
-        - name: Manifest generation at the command line
-          href: ../build/manifest-generation-at-the-command-line.md
-        - name: "How to: Embed a manifest inside a C/C++ application"
-          href: ../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md
+      href: ../build/understanding-manifest-generation-for-c-cpp-programs.md
     - name: Troubleshooting C/C++ isolated applications and side-by-side assemblies
       href: ../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md
 - name: Configure MSVC for 64-bit, x64 targets
@@ -332,6 +323,8 @@ items:
       href: ../build/overview-of-arm-abi-conventions.md
     - name: Overview of ARM64 ABI conventions
       href: ../build/arm64-windows-abi-conventions.md
+    - name: Overview of ARM64EC ABI conventions
+      href: ../build/arm64ec-windows-abi-conventions.md
     - name: ARM exception handling
       href: ../build/arm-exception-handling.md
     - name: ARM64 exception handling

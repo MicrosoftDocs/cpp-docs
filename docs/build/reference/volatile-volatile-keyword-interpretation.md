@@ -17,10 +17,10 @@ Specifies how the [volatile](../../cpp/volatile-cpp.md) keyword is to be interpr
 ## Arguments
 
 **/volatile:iso**<br/>
-Selects strict **`volatile`** semantics as defined by the ISO-standard C++ language. Acquire/release semantics are not guaranteed on volatile accesses. If the compiler targets ARM, this is the default interpretation of **`volatile`**.
+Selects strict **`volatile`** semantics as defined by the ISO-standard C++ language. Acquire/release semantics are not guaranteed on volatile accesses. If the compiler targets ARM (except ARM64EC), this is the default interpretation of **`volatile`**.
 
 **/volatile:ms**<br/>
-Selects Microsoft extended **`volatile`** semantics, which add memory ordering guarantees beyond the ISO-standard C++ language. Acquire/release semantics are guaranteed on volatile accesses. However, this option also forces the compiler to generate hardware memory barriers, which might add significant overhead on ARM and other weak memory-ordering architectures. If the compiler targets any platform except ARM, this is default interpretation of **`volatile`**.
+Selects Microsoft extended **`volatile`** semantics, which add memory ordering guarantees beyond the ISO-standard C++ language. Acquire/release semantics are guaranteed on volatile accesses. However, this option also forces the compiler to generate hardware memory barriers, which might add significant overhead on ARM and other weak memory-ordering architectures. If the compiler targets ARM64EC or any non-ARM platform, this is default interpretation of **`volatile`**.
 
 ## Remarks
 

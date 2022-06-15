@@ -3,6 +3,8 @@ description: "Learn more about: system_clock Structure"
 title: "system_clock Structure"
 ms.date: 07/26/2021
 f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_clock::from_time_t", "chrono/std::chrono::system_clock::now", "chrono/std::chrono::system_clock::to_time_t", "chrono/std::chrono::system_clock::is_steady constant"]
+helpviewer_keywords: ["std::chrono [C++], system_clock"]
+dev_langs: ["C++"]
 ---
 
 # `system_clock` structure
@@ -116,7 +118,7 @@ static time_t to_time_t(const time_point& Time) noexcept;
 ### Parameters
 
 *`Time`*\
-A [time_point](../standard-library/time-point-class.md) object.
+A [`time_point`](../standard-library/time-point-class.md) object.
 
 ## See also
 

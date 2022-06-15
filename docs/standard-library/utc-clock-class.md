@@ -3,6 +3,8 @@ description: "Learn more about: utc_clock class"
 title: "utc_clock class"
 ms.date: 07/27/2021
 f1_keywords: ["chrono/std::chrono::utc_clock", "chrono/std::chrono::utc_clock::now", "chrono/std::chrono::utc_clock::to_sys", "chrono/std::chrono::utc_clock::from_sys", "chrono/std::chrono::utc_clock::is_steady Constant"]
+helpviewer_keywords: ["std::chrono [C++], utc_clock"]
+dev_langs: ["C++"]
 ---
 
 # `utc_clock` class
@@ -119,7 +121,7 @@ Static value that specifies whether the clock type is *steady*. In Microsoft's i
 static const bool is_steady = false;
 ```
 
-## <a name="now"></a> now
+## <a name="now"></a> `now`
 
 Static method that returns the current UTC time. The returned time includes leap seconds.
 
