@@ -39,7 +39,7 @@ Declare your functions explicitly with the **`__vectorcall`** keyword in header 
 
 A member function may be declared by using the **`__vectorcall`** specifier. The hidden **`this`** pointer is passed by register as the first integer type argument.
 
-On ARM machines, **`__vectorcall`** is accepted and ignored by the compiler.
+On ARM machines, **`__vectorcall`** is accepted and ignored by the compiler. On ARM64EC, **`__vectorcall`** is unsupported and  rejected by the compiler.
 
 For non-static class member functions, if the function is defined out-of-line, the calling convention modifier does not have to be specified on the out-of-line definition. That is, for class non-static members, the calling convention specified during declaration is assumed at the point of definition. Given this class definition:
 
