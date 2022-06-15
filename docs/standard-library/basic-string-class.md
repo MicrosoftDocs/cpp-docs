@@ -3020,7 +3020,7 @@ An input iterator, `const_pointer`, or `const_iterator` addressing the position 
 The functions that return a value return either:
 
 - A reference to the `basic_string` that contains the original string plus the new characters.
-- If there is a individual character insertions, an iterator at the position of the inserted characters.
+- An iterator at the start of the inserted character(s).
 
 ### Example
 
