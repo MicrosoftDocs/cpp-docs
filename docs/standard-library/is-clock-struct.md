@@ -2,8 +2,9 @@
 description: "Learn more about is_clock struct"
 title: "is_clock class"
 ms.date: 07/19/2021
-f1_keywords: ["chrono/std::is_clock"]
+f1_keywords: ["chrono/std::is_clock", "std::chrono::is_clock::operator()", "std::chrono::is_clock::operator bool", "std::chrono::value"]
 helpviewer_keywords: ["std::chrono [C++], is_clock"]
+dev_langs: ["C++"]
 ---
 
 # `is_clock` structure
@@ -49,7 +50,7 @@ The following code works because `is_clock`, derives from `Cpp17UnaryTypeTrait`,
 #include <iostream>
 #include <chrono>
 
-using namespace std::chrono;
+using namespace `std::chrono`;
 
 int main()
 {
@@ -66,9 +67,9 @@ true, true, true
 
 ## Requirements
 
-**Header:** \<`chrono`>
+**Header:** `<chrono>`
 
-**Namespace:** `std`
+**Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 

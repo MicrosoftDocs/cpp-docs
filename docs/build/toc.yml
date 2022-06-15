@@ -323,6 +323,8 @@ items:
       href: ../build/overview-of-arm-abi-conventions.md
     - name: Overview of ARM64 ABI conventions
       href: ../build/arm64-windows-abi-conventions.md
+    - name: Overview of ARM64EC ABI conventions
+      href: ../build/arm64ec-windows-abi-conventions.md
     - name: ARM exception handling
       href: ../build/arm-exception-handling.md
     - name: ARM64 exception handling

@@ -2,8 +2,9 @@
 description: "Learn more about: duration class"
 title: "duration Class"
 ms.date: 01/05/2022
-f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
+f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero","chrono/std::chrono::duration::operator-", "chrono/std::chrono::duration::operator--", "chrono/std::chrono::duration::operator%=", "chrono/std::chrono::duration::operator*=", "chrono/std::chrono::duration::operator+", "chrono/std::chrono::duration::operator++", "chrono/std::chrono::duration::operator+=", "chrono/std::chrono::duration::operator-=", "chrono/std::chrono::duration::operator="]
 helpviewer_keywords: ["std::chrono [C++], duration"]
+dev_langs: ["C++"]
 ---
 
 # `duration` class

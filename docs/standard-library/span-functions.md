@@ -4,15 +4,16 @@ title: "<span> functions"
 ms.date: "05/28/2020"
 f1_keywords: ["span/std::span::as_bytes", "span/std::as_writable_bytes"]
 helpviewer_keywords: ["std::span [C++], as_writable_bytes", "std::as_bytes [C++]"]
+dev_langs: ["C++"]
 ---
 # `<span>` functions
 
-The \<span> header includes the following non-member functions that operate on **span** objects.
+The `<span>` header includes the following non-member functions that operate on `span` objects.
 
 | **Non-member functions** | **Description** |
 |-|-|
-|[as_bytes](#as_bytes) | Get a read-only view of the object representation of the elements in the span. |
-|[as_writable_bytes](#as_writable_bytes) | Get a read/write view of the object representation of the elements in the span. |
+|[`as_bytes`](#as_bytes) | Get a read-only view of the object representation of the elements in the span. |
+|[`as_writable_bytes`](#as_writable_bytes) | Get a read/write view of the object representation of the elements in the span. |
 
 ## <a name="as_bytes"></a>`as_bytes`
 
@@ -25,13 +26,13 @@ auto as_bytes(span<T, Extent> s) noexcept;
 
 ### Parameters
 
-*T*\
+*`T`*\
 The type of the elements in the span.
 
-*Extent*\
+*`Extent`*\
 The number of elements in the span (if known at compile time), otherwise `dynamic_extent` indicating that the number of elements isn't known until runtime.
 
-*s*\
+*`s`*\
 The span to get the raw representation of.
 
 ### Return Value
@@ -65,13 +66,13 @@ auto as_writable_bytes(span<T, Extent> s) noexcept;
 
 ### Parameters
 
-*T*\
+*`T`*\
 The type of the elements in the span.
 
-*Extent*\
+*`Extent`*\
 The number of elements in the span (if known at compile time), otherwise `dynamic_extent` indicating that the number of elements isn't known until runtime.
 
-*s*\
+*`s`*\
 The span to get the raw representation of.
 
 ### Return Value
@@ -96,4 +97,4 @@ void main()
 
 ## See also
 
-[\<span>](span.md)
+[`<span>`](span.md)

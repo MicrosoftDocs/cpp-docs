@@ -3,6 +3,7 @@ description: "Learn more about: duration_values Structure"
 title: "duration_values Structure"
 ms.date: 01/05/2022
 f1_keywords: ["chrono/std::chrono::duration_values", "chrono/std::chrono::duration_values::max", "chrono/std::chrono::duration_values::min", "chrono/std::chrono::duration_values::zero"]
+dev_langs: ["C++"]
 ---
 # `duration_values` structure
 

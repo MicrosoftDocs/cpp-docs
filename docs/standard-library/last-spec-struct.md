@@ -3,6 +3,8 @@ description: "Learn more about: last_spec struct"
 title: "last_spec struct"
 ms.date: 09/15/2021
 f1_keywords: ["chrono/std::chrono::last_spec"]
+helpviewer_keywords: ["std::chrono [C++], last_spec"]
+dev_langs: ["C++"]
 ---
 
 # `last_spec` struct
