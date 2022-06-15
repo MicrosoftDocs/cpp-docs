@@ -4,11 +4,12 @@ title: "month_weekday class"
 ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::month_weekday", "chrono/std::chrono::month_weekday::weekday", "chrono/std::chrono::month_weekday::month", "chrono/std::chrono::month_weekday::ok", "chrono/std::chrono::month_weekday::weekday_indexed"]
 helpviewer_keywords: ["std::chrono [C++], month_weekday"]
+dev_langs: ["C++"]
 ---
 
 # `month_weekday` class  
 
-Represents the nth weekday of a specific month. 
+Represents the nth weekday of a specific month.
 
 ## Syntax
 

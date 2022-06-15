@@ -4,6 +4,7 @@ title: "zoned_traits struct"
 ms.date: 05/31/2022
 f1_keywords: ["chrono/std::chrono::zoned_traits::get_info", "chrono/std::chrono::zoned_traits::default_zone", "chrono/std::chrono::zoned_traits::locate_zone"]
 helpviewer_keywords: ["std::chrono [C++], zoned_traits struct", "std::chrono::zoned_traits::default_zone function", "std::chrono::zoned_traits::locate_zone function"]
+dev_lang: ["C++"]
 ---
 
 # `zoned_traits` struct

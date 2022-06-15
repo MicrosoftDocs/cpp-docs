@@ -861,6 +861,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/build/manifest-generation-in-visual-studio.md",
+      "redirect_url": "/cpp/build/understanding-manifest-generation-for-c-cpp-programs#manifest-generation-in-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/manifest-generation-at-the-command-line.md",
+      "redirect_url": "/cpp/build/understanding-manifest-generation-for-c-cpp-programs#manifest-generation-at-the-command-line",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/how-to-embed-a-manifest-inside-a-c-cpp-application.md",
+      "redirect_url": "/cpp/build/understanding-manifest-generation-for-c-cpp-programs#how-to-embed-a-manifest-inside-a-c-cpp-application",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build/unwind-data-for-exception-handling-debugger-support.md",
       "redirect_url": "/cpp/build/exception-handling-x64",
       "redirect_document_id": false

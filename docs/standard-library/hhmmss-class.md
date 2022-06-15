@@ -4,6 +4,7 @@ title: "hh_mm_ss class"
 ms.date: "06/07/2021"
 f1_keywords: ["chrono/std::chrono::hh_mm_ss", "chrono/std::chrono::hh_mm_ss::hh_mm_ss", "chrono/std::chrono::hh_mm_ss::is_negative", "chrono/std::chrono::hh_mm_ss::hours", "chrono/std::chrono::hh_mm_ss::minutes", "chrono/std::chrono::hh_mm_ss::seconds", "chrono/std::chrono::hh_mm_ss::subseconds", "chrono/std::chrono::hh_mm_ss::operator precision", "chrono/std::chrono::hh_mm_ss::to_duration"]
 helpviewer_keywords: ["std::chrono [C++], hh_mm_ss"]
+dev_langs: ["C++"]
 ---
 # hh_mm_ss class
 
