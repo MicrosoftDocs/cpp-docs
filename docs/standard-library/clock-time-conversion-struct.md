@@ -2,8 +2,9 @@
 description: "Learn more about clock_conversion trait"
 title: "clock_conversion struct"
 ms.date: 10/12/2021
-f1_keywords: ["chrono/std::clock_conversion"]
-helpviewer_keywords: ["std::chrono [C++], clock_conversion"]
+f1_keywords: ["chrono/std::chrono::clock_time_conversion"]
+helpviewer_keywords: ["std::chrono [C++], clock_time_conversion"]
+dev_langs: ["C++"]
 ---
 
 # `clock_time_conversion` struct
@@ -59,7 +60,7 @@ You usually won't use this trait directly in your code. It's used by the [`clock
 
 **Header:** \<`chrono`>
 
-**Namespace:** `std`
+**Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 

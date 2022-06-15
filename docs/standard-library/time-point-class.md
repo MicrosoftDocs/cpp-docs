@@ -2,8 +2,9 @@
 description: "Learn more about: time_point Class"
 title: "time_point Class"
 ms.date: 01/05/2022
-f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
+f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::operator +=",  "chrono/std::chrono::time_point::operator -=", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
 helpviewer_keywords: ["std::chrono [C++], time_point"]
+dev_langs: ["C++"]
 ---
 # `time_point` class
 

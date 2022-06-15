@@ -3,6 +3,8 @@ description: "Learn more about: tzdb_list class"
 title: "tzdb_list struct"
 ms.date: 10/13/2021
 f1_keywords: ["chrono/std::chrono::tzdb_list", "chrono/std::chrono::tzdb_list::front", "chrono/std::chrono::tzdb_list::erase_after", "chrono/std::chrono::tzdb_list::begin", "chrono/std::chrono::tzdb_list::cbegin", "chrono/std::chrono::tzdb_list::end", "chrono/std::chrono::tzdb_list::cend"]
+helpviewer_keywords: ["std::chrono [C++], tzdb_list"]
+dev_langs: ["C++"]
 ---
 # `tzdb_list` class
 

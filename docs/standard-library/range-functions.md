@@ -2,8 +2,9 @@
 description: "Learn more about: <ranges> helper functions"
 title: "<ranges> helper functions"
 ms.date: 06/10/2022
-f1_keywords: ["RANGES/std::ranges::begin", "RANGES/std::ranges::end", "RANGES/std::ranges::cbegin", "RANGES/std::ranges::cend", "RANGES/std::ranges::rbegin", "RANGES/std::ranges::rend", "RANGES/std::ranges::crbegin", "RANGES/std::ranges::crend", "RANGES/std::ranges::size","RANGES/std::ranges::ssize","RANGES/std::ranges::empty","RANGES/std::ranges::data","RANGES/std::ranges::cdata"]
-helpviewer_keywords: ["std::ranges::begin", "RANGES/std::ranges::end", "RANGES/std::ranges::cbegin", "RANGES/std::ranges::cend", "RANGES/std::ranges::rbegin", "RANGES/std::ranges::rend", "RANGES/std::ranges::crbegin", "RANGES/std::ranges::crend", "RANGES/std::ranges::size","RANGES/std::ranges::ssize","RANGES/std::ranges::empty","RANGES/std::ranges::data","RANGES/std::ranges::cdata"]
+f1_keywords: ["ranges/std::ranges::begin", "ranges/std::ranges::end", "ranges/std::ranges::cbegin", "ranges/std::ranges::cend", "ranges/std::ranges::rbegin", "ranges/std::ranges::rend", "ranges/std::ranges::crbegin", "ranges/std::ranges::crend", "ranges/std::ranges::size","ranges/std::ranges::ssize","ranges/std::ranges::empty","ranges/std::ranges::data","ranges/std::ranges::cdata"]
+helpviewer_keywords: ["std::ranges [C++], ranges::begin", "std::ranges [C++], ranges::end", "std::ranges [C++], ranges::cbegin", "std::ranges [C++], ranges::cend", "std::ranges [C++], ranges::rbegin", "std::ranges [C++], ranges::rend", "std::ranges [C++], ranges::crbegin", "std::ranges [C++], ranges::crend", "std::ranges [C++], ranges::size","std::ranges [C++], ranges::ssize","std::ranges [C++], ranges::empty","std::ranges [C++], ranges::data","std::ranges [C++], ranges::cdata"]
+dev_langs: ["C++"]
 ---
 # `<ranges>` functions
 

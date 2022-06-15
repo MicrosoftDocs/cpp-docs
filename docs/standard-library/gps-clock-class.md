@@ -3,6 +3,8 @@ description: "Learn more about: gps_clock class"
 title: "gps_clock class"
 ms.date: 08/17/2021
 f1_keywords: ["chrono/std::chrono::gps_clock", "chrono/std::chrono::gps_clock::now", "chrono/std::chrono::gps_clock::to_utc", "chrono/std::chrono::gps_clock::from_utc", "chrono/std::chrono::gps_clock::is_steady constant"]
+helpviewer_keywords: ["std::chrono [C++], gps_clock"]
+dev_langs: ["C++"]
 ---
 
 # `gps_clock` class
