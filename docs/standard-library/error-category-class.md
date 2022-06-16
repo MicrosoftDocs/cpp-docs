@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: error_category Class"
 title: "error_category Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["system_error/std::error_category", "system_error/std::error_category::value_type", "system_error/std::error_category::default_error_condition", "system_error/std::error_category::equivalent", "system_error/std::error_category::message", "system_error/std::error_category::name"]
 helpviewer_keywords: ["std::error_category", "std::error_category::value_type", "std::error_category::default_error_condition", "std::error_category::equivalent", "std::error_category::message", "std::error_category::name"]
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
+ms.custom: devdivchpfy22
 ---
+
 # error_category Class
 
 Represents the abstract, common base for objects that describes a category of error codes.
@@ -162,7 +164,7 @@ The object to be tested for equality.
 
 #### Return Value
 
-**`true`** if the objects are equal; **`false`** if the objects are not equal.
+**`true`** if the objects are equal; **`false`** if the objects aren't equal.
 
 #### Remarks
 
@@ -183,7 +185,7 @@ The object to be tested for inequality.
 
 #### Return Value
 
-**`true`** if the `error_category` object is not equal to the `error_category` object passed in *right*; otherwise **`false`**.
+**`true`** if the `error_category` object isn't equal to the `error_category` object passed in *right*; otherwise **`false`**.
 
 #### Remarks
 

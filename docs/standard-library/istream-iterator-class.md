@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: istream_iterator Class"
 title: "istream_iterator Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["iterator/std::istream_iterator", "iterator/std::istream_iterator::char_type", "iterator/std::istream_iterator::istream_type", "iterator/std::istream_iterator::traits_type"]
 helpviewer_keywords: ["std::istream_iterator [C++]", "std::istream_iterator [C++], char_type", "std::istream_iterator [C++], istream_type", "std::istream_iterator [C++], traits_type"]
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
+ms.custom: devdivchpfy22
 ---
+
 # istream_iterator Class
 
 Describes an input iterator object. It extracts objects of class `Type` from an input stream, which it accesses through an object it stores, of type `pointer` to `basic_istream`< `CharType`, `Traits`>.
@@ -132,7 +134,7 @@ The input stream to be read use to initialize the `istream_iterator`.
 
 The First constructor initializes the input stream pointer with a null pointer and creates an end-of-stream iterator. The second constructor initializes the input stream pointer with *&_Istr*, then attempts to extract and store an object of type `Type`.
 
-The end-of-stream iterator can be use to test whether an `istream_iterator` has reached the end of a stream.
+The end-of-stream iterator can be used to test whether an `istream_iterator` has reached the end of a stream.
 
 ### Example
 
