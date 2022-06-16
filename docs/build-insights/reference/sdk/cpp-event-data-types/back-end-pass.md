@@ -1,9 +1,12 @@
 ---
-title: "BackEndPass class"
-description: "The C++ Build Insights SDK BackEndPass class reference."
-ms.date: "02/12/2020"
+title: "BackEndPass class - C++ Build Insights SDK"
+description: "The C++ Build Insights SDK BackEndPass class reference. Use the BackEndPass class to match a BACK_END_PASS event."
+ms.date: "06/16/2022"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "BackEndPass", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
+ms.custom: kr2b-contr-experiment
 ---
+
 # BackEndPass class
 
 ::: moniker range="<=msvc-140"

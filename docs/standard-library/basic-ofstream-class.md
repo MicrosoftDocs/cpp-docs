@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: basic_ofstream Class"
 title: "basic_ofstream Class"
-ms.date: "11/04/2016"
+ms.date: 06/10/2022
 f1_keywords: ["fstream/std::basic_ofstream", "fstream/std::basic_ofstream::close", "fstream/std::basic_ofstream::is_open", "fstream/std::basic_ofstream::open", "fstream/std::basic_ofstream::rdbuf", "fstream/std::basic_ofstream::swap"]
 helpviewer_keywords: ["std::basic_ofstream [C++]", "std::basic_ofstream [C++], close", "std::basic_ofstream [C++], is_open", "std::basic_ofstream [C++], open", "std::basic_ofstream [C++], rdbuf", "std::basic_ofstream [C++], swap"]
+ms.custom: devdivchpfy22
 ---
+
 # `basic_ofstream` Class
 
 Describes an object that controls insertion of elements and encoded objects into a stream buffer of class `basic_filebuf< Elem, Tr>`, with elements of type `Elem`, whose character traits are determined by the class `Tr`. For more information, see [`basic_filebuf`](../standard-library/basic-filebuf-class.md).

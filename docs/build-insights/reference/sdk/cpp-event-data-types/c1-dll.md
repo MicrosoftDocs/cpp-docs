@@ -1,9 +1,12 @@
 ---
-title: "C1DLL class"
-description: "The C++ Build Insights SDK C1DLL class reference."
-ms.date: "02/12/2020"
+title: "C1DLL class - C++ Build Insights SDK"
+description: "The C++ Build Insights SDK C1DLL class reference. Use the C1DLL class to match a C1_DLL event."
+ms.date: "06/16/2022"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "C1DLL", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
+ms.custom: kr2b-contr-experiment
 ---
+
 # C1DLL class
 
 ::: moniker range="<=msvc-140"
