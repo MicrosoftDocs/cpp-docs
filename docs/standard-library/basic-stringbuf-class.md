@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: basic_stringbuf Class"
 title: "basic_stringbuf Class"
-ms.date: "11/04/2016"
+ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_stringbuf", "sstream/std::basic_stringbuf::allocator_type", "sstream/std::basic_stringbuf::char_type", "sstream/std::basic_stringbuf::int_type", "sstream/std::basic_stringbuf::off_type", "sstream/std::basic_stringbuf::pos_type", "sstream/std::basic_stringbuf::traits_type", "sstream/std::basic_stringbuf::overflow", "sstream/std::basic_stringbuf::pbackfail", "sstream/std::basic_stringbuf::seekoff", "sstream/std::basic_stringbuf::seekpos", "sstream/std::basic_stringbuf::str", "sstream/std::basic_stringbuf::underflow"]
 helpviewer_keywords: ["std::basic_stringbuf [C++]", "std::basic_stringbuf [C++], allocator_type", "std::basic_stringbuf [C++], char_type", "std::basic_stringbuf [C++], int_type", "std::basic_stringbuf [C++], off_type", "std::basic_stringbuf [C++], pos_type", "std::basic_stringbuf [C++], traits_type", "std::basic_stringbuf [C++], overflow", "std::basic_stringbuf [C++], pbackfail", "std::basic_stringbuf [C++], seekoff", "std::basic_stringbuf [C++], seekpos", "std::basic_stringbuf [C++], str", "std::basic_stringbuf [C++], underflow"]
 ms.assetid: 40c85f9e-42a5-4a65-af5c-23c8e3bf8113
+ms.custom: devdivchpfy22
 ---
+
 # basic_stringbuf Class
 
 Describes a stream buffer that controls the transmission of elements of type `Elem`, whose character traits are determined by the class `Tr`, to and from a sequence of elements stored in an array object.
@@ -148,11 +150,11 @@ The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
-If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+If the function can't succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
 ### Remarks
 
-If *\_Meta* does not compare equal to **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the protected virtual member function tries to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) into the output buffer. It can do so in various ways:
+If *\_Meta* doesn't compare equal to **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the protected virtual member function tries to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) into the output buffer. It can do so in various ways:
 
 - If a write position is available, it can store the element into the write position and increment the next pointer for the output buffer.
 
@@ -173,7 +175,7 @@ The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
-If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+If the function can't succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
 ### Remarks
 
@@ -276,11 +278,11 @@ The new string.
 
 ### Return Value
 
-Returns an object of class [basic_string](../standard-library/basic-string-class.md)\< **Elem**, **Tr**, Alloc **>,** whose controlled sequence is a copy of the sequence controlled by **\*this**.
+Returns an object of class [basic_string](../standard-library/basic-string-class.md)\< **Elem**, **Tr**, Alloc **>,** whose controlled sequence is a copy of the sequence controlled by `*this`.
 
 ### Remarks
 
-The first member function returns an object of class basic_string< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by **\*this**. The sequence copied depends on the stored stringbuf mode:
+The first member function returns an object of class basic_string< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by `*this`. The sequence copied depends on the stored stringbuf mode:
 
 - If **mode & ios_base::out** is nonzero and an output buffer exists, the sequence is the entire output buffer ( [epptr](../standard-library/basic-streambuf-class.md#epptr) - [pbase](../standard-library/basic-streambuf-class.md#pbase) elements beginning with `pbase`).
 
@@ -288,7 +290,7 @@ The first member function returns an object of class basic_string< **Elem**, **T
 
 - Otherwise, the copied sequence is empty.
 
-The second member function deallocates any sequence currently controlled by **\*this**. It then allocates a copy of the sequence controlled by *_Newstr*. If **mode & ios_base::in** is nonzero, it sets the input buffer to start reading at the beginning of the sequence. If **mode & ios_base::out** is nonzero, it sets the output buffer to start writing at the beginning of the sequence.
+The second member function deallocates any sequence currently controlled by `*this`. It then allocates a copy of the sequence controlled by *_Newstr*. If **mode & ios_base::in** is nonzero, it sets the input buffer to start reading at the beginning of the sequence. If **mode & ios_base::out** is nonzero, it sets the output buffer to start writing at the beginning of the sequence.
 
 ### Example
 
@@ -344,7 +346,7 @@ virtual int_type underflow();
 
 ### Return Value
 
-If the function cannot succeed, it returns **traits_type::**[eof](../standard-library/char-traits-struct.md#eof). Otherwise, it returns the current element in the input stream, which are converted.
+If the function can't succeed, it returns **traits_type::**[eof](../standard-library/char-traits-struct.md#eof). Otherwise, it returns the current element in the input stream, which is converted.
 
 ### Remarks
 

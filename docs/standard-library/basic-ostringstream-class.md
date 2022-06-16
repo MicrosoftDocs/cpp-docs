@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: basic_ostringstream Class"
 title: "basic_ostringstream Class"
-ms.date: "11/04/2016"
+ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_ostringstream", "sstream/std::basic_ostringstream::allocator_type", "sstream/std::basic_ostringstream::rdbuf", "sstream/std::basic_ostringstream::str"]
 helpviewer_keywords: ["std::basic_ostringstream [C++]", "std::basic_ostringstream [C++], allocator_type", "std::basic_ostringstream [C++], rdbuf", "std::basic_ostringstream [C++], str"]
 ms.assetid: aea699f7-350f-432a-acca-adbae7b483fb
+ms.custom: devdivchpfy22
 ---
+
 # basic_ostringstream Class
 
 Describes an object that controls insertion of elements and encoded objects into a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
@@ -127,7 +129,7 @@ The new string.
 
 ### Return Value
 
-Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by **\*this**.
+Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by `*this`.
 
 ### Remarks
 
