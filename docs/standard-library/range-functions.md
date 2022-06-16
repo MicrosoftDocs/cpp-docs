@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <ranges> helper functions"
 title: "<ranges> helper functions"
-ms.date: 06/10/2022
+ms.date: 06/16/2022
 f1_keywords: ["ranges/std::ranges::begin", "ranges/std::ranges::end", "ranges/std::ranges::cbegin", "ranges/std::ranges::cend", "ranges/std::ranges::rbegin", "ranges/std::ranges::rend", "ranges/std::ranges::crbegin", "ranges/std::ranges::crend", "ranges/std::ranges::size","ranges/std::ranges::ssize","ranges/std::ranges::empty","ranges/std::ranges::data","ranges/std::ranges::cdata"]
 helpviewer_keywords: ["std::ranges [C++], ranges::begin", "std::ranges [C++], ranges::end", "std::ranges [C++], ranges::cbegin", "std::ranges [C++], ranges::cend", "std::ranges [C++], ranges::rbegin", "std::ranges [C++], ranges::rend", "std::ranges [C++], ranges::crbegin", "std::ranges [C++], ranges::crend", "std::ranges [C++], ranges::size","std::ranges [C++], ranges::ssize","std::ranges [C++], ranges::empty","std::ranges [C++], ranges::data","std::ranges [C++], ranges::cdata"]
 dev_langs: ["C++"]
@@ -63,6 +63,8 @@ If `auto(rg.begin())` yields an iterator, returns the equivalent of `auto(rg.beg
 ### `begin` example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -108,6 +110,8 @@ If `auto(rg.cbegin())` yields an iterator, returns the equivalent of `auto(rg.cb
 ### `cbegin` example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -151,6 +155,8 @@ The sentinel that follows the last element in the `const`-qualified range:
 ### `cend` example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -199,6 +205,8 @@ If `auto(rg.crbegin())` yields an iterator, returns the equivalent of `auto(rg.c
 ### `crbegin` example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -243,6 +251,8 @@ The sentinel at the end of what `cbegin()` returns. The sentinel follows the las
 ### `crend`example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -281,6 +291,8 @@ A pointer, based on the type of the range, to the first element in the contiguou
 ### Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -322,6 +334,8 @@ A `const` pointer, based on the type of the range, to the first element data in 
 ### `cdata` Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -369,6 +383,8 @@ The sentinel that follows the last element in the range:
 ### Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -405,12 +421,14 @@ Returns `true` if the range has no elements; otherwise `false.`
 ### Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
 int main()
 {
-    std::vector v{ 10,20,30 };
+    std::vector v{10,20,30};
     std::vector<int> v2;
 
     std::cout << std::boolalpha << std::ranges::empty(v); // outputs: false
@@ -453,6 +471,8 @@ If `auto(rg.rbegin())` yields an iterator, returns the equivalent of `auto(rg.rb
 ### Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -497,6 +517,8 @@ A reverse iterator to the sentinel at the end of the range. The sentinel follows
 ### Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -538,6 +560,8 @@ This function executes in constant time.
 ### Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
@@ -577,6 +601,8 @@ This function executes in constant time.
 ### Example
 
 ```cpp
+// requires /std:c++20 or later
+#include <vector>
 #include <ranges>
 #include <iostream>
 
