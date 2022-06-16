@@ -1,13 +1,15 @@
 ---
 title: "ios_base Class"
 description: "API reference for the Microsoft Visual C++ standard library `ios_base` class"
-ms.date: "10/23/2020"
+ms.date: 06/15/2022
 f1_keywords: ["xiosbase/std::ios_base", "ios/std::ios_base::event_callback", "xiosbase/std::ios_base::fmtflags", "xiosbase/std::ios_base::iostate", "xiosbase/std::ios_base::openmode", "xiosbase/std::ios_base::seekdir", "xiosbase/std::ios_base::event", "xiosbase/std::ios_base::adjustfield", "xiosbase/std::ios_base::app", "xiosbase/std::ios_base::ate", "xiosbase/std::ios_base::badbit", "xiosbase/std::ios_base::basefield", "xiosbase/std::ios_base::beg", "xiosbase/std::ios_base::binary", "xiosbase/std::ios_base::boolalpha", "xiosbase/std::ios_base::cur", "xiosbase/std::ios_base::dec", "xiosbase/std::ios_base::end", "xiosbase/std::ios_base::eofbit", "xiosbase/std::ios_base::failbit", "xiosbase/std::ios_base::fixed", "xiosbase/std::ios_base::floatfield", "xiosbase/std::ios_base::goodbit", "xiosbase/std::ios_base::hex", "xiosbase/std::ios_base::in", "xiosbase/std::ios_base::internal", "xiosbase/std::ios_base::left", "xiosbase/std::ios_base::oct", "xiosbase/std::ios_base::out", "xiosbase/std::ios_base::right", "xiosbase/std::ios_base::scientific", "xiosbase/std::ios_base::showbase", "xiosbase/std::ios_base::showpoint", "xiosbase/std::ios_base::showpos", "xiosbase/std::ios_base::skipws", "xiosbase/std::ios_base::trunc", "xiosbase/std::ios_base::unitbuf", "xiosbase/std::ios_base::uppercase", "xiosbase/std::ios_base::failure", "xiosbase/std::ios_base::flags", "xiosbase/std::ios_base::getloc", "xiosbase/std::ios_base::imbue", "xiosbase/std::ios_base::Init", "xiosbase/std::ios_base::iword", "xiosbase/std::ios_base::precision", "xiosbase/std::ios_base::pword", "ios/std::ios_base::register_callback", "xiosbase/std::ios_base::setf", "xiosbase/std::ios_base::sync_with_stdio", "xiosbase/std::ios_base::unsetf", "xiosbase/std::ios_base::width", "xiosbase/std::ios_base::xalloc"]
 helpviewer_keywords: ["std::ios_base [C++]", "std::ios_base [C++], event_callback", "std::ios_base [C++], fmtflags", "std::ios_base [C++], iostate", "std::ios_base [C++], openmode", "std::ios_base [C++], seekdir", "std::ios_base [C++], event", "std::ios_base [C++], adjustfield", "std::ios_base [C++], app", "std::ios_base [C++], ate", "std::ios_base [C++], badbit", "std::ios_base [C++], basefield", "std::ios_base [C++], beg", "std::ios_base [C++], binary", "std::ios_base [C++], boolalpha", "std::ios_base [C++], cur", "std::ios_base [C++], dec", "std::ios_base [C++], end", "std::ios_base [C++], eofbit", "std::ios_base [C++], failbit", "std::ios_base [C++], fixed", "std::ios_base [C++], floatfield", "std::ios_base [C++], goodbit", "std::ios_base [C++], hex", "std::ios_base [C++], in", "std::ios_base [C++], internal", "std::ios_base [C++], left", "std::ios_base [C++], oct", "std::ios_base [C++], out", "std::ios_base [C++], right", "std::ios_base [C++], scientific", "std::ios_base [C++], showbase", "std::ios_base [C++], showpoint", "std::ios_base [C++], showpos", "std::ios_base [C++], skipws", "std::ios_base [C++], trunc", "std::ios_base [C++], unitbuf", "std::ios_base [C++], uppercase", "std::ios_base [C++], failure", "std::ios_base [C++], flags", "std::ios_base [C++], getloc", "std::ios_base [C++], imbue", "std::ios_base [C++], Init", "std::ios_base [C++], iword", "std::ios_base [C++], precision", "std::ios_base [C++], pword", "std::ios_base [C++], register_callback", "std::ios_base [C++], setf", "std::ios_base [C++], sync_with_stdio", "std::ios_base [C++], unsetf", "std::ios_base [C++], width", "std::ios_base [C++], xalloc"]
+ms.custom: devdivchpfy22
 ---
+
 # `ios_base` Class
 
-The class describes the storage and member functions common to both input and output streams that do not depend on the template parameters. (The class template [`basic_ios`](../standard-library/basic-ios-class.md) describes what is common and is dependent on template parameters.)
+The class describes the storage and member functions common to both input and output streams that don't depend on the template parameters. (The class template [`basic_ios`](../standard-library/basic-ios-class.md) describes what is common and is dependent on template parameters.)
 
 An object of class `ios_base` stores formatting information, which consists of:
 
@@ -192,7 +194,7 @@ namespace std {
 
 ### Remarks
 
-The value returned by `what()` is a copy of `_Message`, possibly augmented with a test based on `_Code`. If `_Code` is not specified, the default value is `make_error_code(io_errc::stream)`.
+The value returned by `what()` is a copy of `_Message`, possibly augmented with a test based on `_Code`. If `_Code` isn't specified, the default value is `make_error_code(io_errc::stream)`.
 
 ### Example
 
@@ -543,7 +545,7 @@ The object being assigned to.
 
 ### Remarks
 
-The operator copies the stored formatting information, making a new copy of any extensible arrays. It then returns `*this`. Note that the callback stack is not copied.
+The operator copies the stored formatting information, making a new copy of any extensible arrays. It then returns `*this`. The callback stack isn't copied.
 
 This operator is only used by classes derived from `ios_base`.
 
@@ -853,11 +855,11 @@ Previous setting for this function.
 
 ### Remarks
 
-The static member function stores a `stdio` sync flag, which is initially `true`. When `true`, this flag ensures that operations on the same file are properly synchronized between the [`iostreams`](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *`_Sync`* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+The static member function stores a `stdio` sync flag, which is initially `true`. When `true`, this flag ensures that operations on the same file are properly synchronized between the [`iostreams`](../standard-library/iostreams-conventions.md) functions and functions defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *`_Sync`* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
 ## <a name="unsetf"></a> `unsetf`
 
-Turns the specified flags off.
+Turns off the specified flags.
 
 ```cpp
 void unsetf(

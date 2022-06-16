@@ -1,14 +1,16 @@
 ---
 description: "Learn more about: insert_iterator Class"
 title: "insert_iterator Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["iterator/std::insert_iterator", "iterator/std::insert_iterator::container_type", "iterator/std::insert_iterator::reference"]
 helpviewer_keywords: ["std::insert_iterator [C++]", "std::insert_iterator [C++], container_type", "std::insert_iterator [C++], reference"]
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
+ms.custom: devdivchpfy22
 ---
+
 # insert_iterator Class
 
-Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence and associative containers. The `insert_iterator` class is templatized on the type of container being adapted.
+Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into a sequence. Thus it provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence and associative containers. The `insert_iterator` class is templatized on the type of container being adapted.
 
 ## Syntax
 
@@ -175,7 +177,7 @@ The member function returns the value of the element addressed.
 
 ### Remarks
 
-Used to implement the output iterator expression **\*Iter** = **value**. If `Iter` is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and does not change the total number of elements in the sequence.
+Used to implement the output iterator expression **\*Iter** = **value**. If `Iter` is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and doesn't change the total number of elements in the sequence.
 
 ### Example
 

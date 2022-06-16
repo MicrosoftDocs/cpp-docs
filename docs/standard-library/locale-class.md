@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: locale Class"
 title: "locale Class"
-ms.date: "07/20/2020"
+ms.date: 06/15/2022
 f1_keywords: ["xlocale/std::locale", "xlocale/std::locale::category", "xlocale/std::locale::combine", "xlocale/std::locale::name", "xlocale/std::locale::classic", "xlocale/std::locale::global", "xlocale/std::locale::operator( )", "xlocale/std::locale::facet", "xlocale/std::locale::id"]
 helpviewer_keywords: ["std::locale [C++]", "std::locale [C++], category", "std::locale [C++], combine", "std::locale [C++], name", "std::locale [C++], classic", "std::locale [C++], global", "std::locale [C++], facet", "std::locale [C++], id"]
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
+ms.custom: devdivchpfy22
 ---
+
 # locale Class
 
 The class that describes a locale object that encapsulates culture-specific information as a set of facets that collectively define a specific localized environment.
@@ -275,7 +277,7 @@ The locale containing the facet to be inserted into the target locale.
 
 ### Return Value
 
-The member function returns a locale object that replaces in or adds to **\*this** the facet `Facet` listed in *source_locale*.
+The member function returns a locale object that replaces in or adds to **`*this`** the facet `Facet` listed in *source_locale*.
 
 ### Example
 
@@ -326,7 +328,7 @@ private:
 
 You can't copy or assign an object of class `facet`. You can construct and destroy objects derived from class `locale::facet` but not objects of the base class proper. Typically, you construct an object `_Myfac` derived from `facet` when you construct a `locale`, as in `locale loc(locale::classic(), new _Myfac);`
 
-In such cases, the constructor for the base class `facet` should have a zero *references* argument. When the object is no longer needed, it's deleted, so you supply a nonzero *references* argument only in those rare cases where you take responsibility for the lifetime of the object.
+In such cases, the constructor for the base class `facet` should have a zero *references* argument. When the object is no longer needed, it's deleted. Supply a nonzero *references* argument only in those rare cases where you take responsibility for the lifetime of the object.
 
 ## <a name="global"></a> locale::global
 
