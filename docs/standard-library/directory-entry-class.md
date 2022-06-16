@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: directory_entry Class"
 title: "directory_entry Class"
-ms.date: "09/10/2018"
+ms.date: 06/10/2022
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "filesystem/std::experimental::filesystem::directory_entry::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator=", "filesystem/std::experimental::filesystem::directory_entry::assign", "filesystem/std::experimental::filesystem::directory_entry::replace_filename", "filesystem/std::experimental::filesystem::directory_entry::path", "filesystem/std::experimental::filesystem::directory_entry::status", "filesystem/std::experimental::filesystem::directory_entry::symlink_status", "filesystem/std::experimental::filesystem::directory_entry::operator<", "filesystem/std::experimental::filesystem::directory_entry::operator==", "filesystem/std::experimental::filesystem::directory_entry::operator!=", "filesystem/std::experimental::filesystem::directory_entry::operator<=", "filesystem/std::experimental::filesystem::directory_entry::operator>", "filesystem/std::experimental::filesystem::directory_entry::operator>="]
 ms.assetid: 1827c67b-4137-4548-adb0-f955f7acaf08
 helpviewer_keywords: ["std::experimental::filesystem::directory_entry", "std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "std::experimental::filesystem::directory_entry::directory_entry", "std::experimental::filesystem::directory_entry::operator=", "std::experimental::filesystem::directory_entry::assign", "std::experimental::filesystem::directory_entry::replace_filename", "std::experimental::filesystem::directory_entry::path", "std::experimental::filesystem::directory_entry::status", "std::experimental::filesystem::directory_entry::symlink_status", "std::experimental::filesystem::directory_entry::operator<", "std::experimental::filesystem::directory_entry::operator==", "std::experimental::filesystem::directory_entry::operator!=", "std::experimental::filesystem::directory_entry::operator<=", "std::experimental::filesystem::directory_entry::operator>", "std::experimental::filesystem::directory_entry::operator>="]
+ms.custom: devdivchpfy22
 ---
+
 # directory_entry Class
 
 Describes an object that is returned by `*X`, where *X* is a [directory_iterator](../standard-library/directory-iterator-class.md) or a [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md).
@@ -18,7 +20,7 @@ class directory_entry;
 
 ## Remarks
 
-The class stores an object of type [path](../standard-library/path-class.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class.md) or of a type that is derived from `path`. It also stores two [file_type](../standard-library/filesystem-enumerations.md#file_type) values; one that represents what is known about the status of the stored file name, and another that represents what is known about the symbolic link status of the file name.
+The class stores an object of type [path](../standard-library/path-class.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class.md) or of a type that is derived from `path`. It also stores two [file_type](../standard-library/filesystem-enumerations.md#file_type) values. One value represents the status of the stored file name. The other represents the symbolic link status of the file name.
 
 For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 

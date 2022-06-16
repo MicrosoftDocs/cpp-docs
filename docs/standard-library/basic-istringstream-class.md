@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: basic_istringstream Class"
 title: "basic_istringstream Class"
-ms.date: "11/04/2016"
+ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_istringstream", "sstream/std::basic_istringstream::allocator_type", "sstream/std::basic_istringstream::rdbuf", "sstream/std::basic_istringstream::str", "sstream/std::basic_istringstream::swap"]
 helpviewer_keywords: ["std::basic_istringstream [C++]", "std::basic_istringstream [C++], allocator_type", "std::basic_istringstream [C++], rdbuf", "std::basic_istringstream [C++], str", "std::basic_istringstream [C++], swap"]
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
+ms.custom: devdivchpfy22
 ---
+
 # basic_istringstream Class
 
 Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
@@ -50,7 +52,7 @@ The class template describes an object that controls extraction of elements and 
 |-|-|
 |[rdbuf](#rdbuf)|Returns the address of the stored stream buffer of type `pointer` to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|
 |[str](#str)|Sets or gets the text in a string buffer without changing the write position.|
-|[swap](#swap)|Exchanges the values in this `basic_istringstream` object for those of the provided object.|
+|[swap](#swap)|Exchanges the values in this `basic_istringstream` object for the provided object.|
 
 ### Operators
 
@@ -158,7 +160,7 @@ The new string.
 
 ### Return Value
 
-Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by **\*this**.
+Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by `*this`.
 
 ### Remarks
 

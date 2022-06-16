@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: basic_stringstream Class"
 title: "basic_stringstream Class"
-ms.date: "11/04/2016"
+ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_stringstream", "sstream/std::basic_stringstream::allocator_type", "sstream/std::basic_stringstream::rdbuf", "sstream/std::basic_stringstream::str"]
 helpviewer_keywords: ["std::basic_stringstream [C++]", "std::basic_stringstream [C++], allocator_type", "std::basic_stringstream [C++], rdbuf", "std::basic_stringstream [C++], str"]
 ms.assetid: 49629814-ca37-45c5-931b-4ff894e6ebd2
+ms.custom: devdivchpfy22
 ---
+
 # basic_stringstream Class
 
 Describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
@@ -123,7 +125,7 @@ The new string.
 
 ### Return Value
 
-Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by **\*this**.
+Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by `*this`.
 
 ### Remarks
 

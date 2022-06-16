@@ -1,9 +1,12 @@
 ---
-title: "Activity class"
-description: "The C++ Build Insights SDK Activity class reference."
-ms.date: "02/12/2020"
+title: "Activity class - C++ Build Insights SDK"
+description: "The C++ Build Insights SDK Activity class reference. Use the Activity class to match any activity event."
+ms.date: "06/16/2022"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "Activity", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
+ms.custom: kr2b-contr-experiment
 ---
+
 # Activity class
 
 ::: moniker range="<=msvc-140"

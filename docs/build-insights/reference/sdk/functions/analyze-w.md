@@ -1,10 +1,13 @@
 ---
-title: "AnalyzeW"
-description: "The C++ Build Insights SDK AnalyzeW function reference."
-ms.date: "02/12/2020"
+title: "AnalyzeW - C++ Build Insights SDK"
+description: "The C++ Build Insights SDK AnalyzeW function reference. Use the AnalyzeW function to analyze MSVC events read from an input Event Tracing for Windows trace."
+ms.date: "06/16/2022"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "AnalyzeW", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
+ms.custom: kr2b-contr-experiment
 ---
-# AnalyzeW
+
+# AnalyzeW function
 
 ::: moniker range="<=msvc-140"
 
