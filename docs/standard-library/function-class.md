@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: function Class"
 title: "function Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["functional/std::function", "functional/std::function::result_type", "functional/std::function::assign", "functional/std::function::swap", "functional/std::function::target", "functional/std::function::target_type", "functional/std::function::operator unspecified", "functional/std::function::operator()"]
 helpviewer_keywords: ["std::function [C++]", "std::function [C++], result_type", "std::function [C++], assign", "std::function [C++], swap", "std::function [C++], target", "std::function [C++], target_type"]
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
+ms.custom: devdivchpfy22
 ---
+
 # function Class
 
 Wrapper for a callable object.
@@ -68,21 +70,21 @@ The allocator function.
 
 ## Remarks
 
-The class template is a call wrapper whose call signature is `Ret(T1, T2, ..., TN)`. You use it to enclose a variety of callable objects in a uniform wrapper.
+The class template is a call wrapper whose call signature is `Ret(T1, T2, ..., TN)`. You use it to enclose various callable objects in a uniform wrapper.
 
 Some member functions take an operand that names the desired target object. You can specify such an operand in several ways:
 
-`fn` -- the callable object `fn`; after the call the `function` object holds a copy of `fn`
+`fn`: The callable object `fn`; after the call the `function` object holds a copy of `fn`
 
-`fnref` -- the callable object named by `fnref.get()`; after the call the `function` object holds a reference to `fnref.get()`
+`fnref`: The callable object named by `fnref.get()`; after the call the `function` object holds a reference to `fnref.get()`
 
-`right` -- the callable object, if any, held by the `function` object `right`
+`right`: The callable object, if any, held by the `function` object `right`
 
-`npc` -- a null pointer; after the call the `function` object is empty
+`npc`: A null pointer; after the call the `function` object is empty
 
-In all cases, `INVOKE(f, t1, t2, ..., tN)`, where `f` is the callable object and `t1, t2, ..., tN` are lvalues of types `T1, T2, ..., TN` respectively, must be well-formed and, if `Ret` is not void, convertible to `Ret`.
+In all cases, `INVOKE(f, t1, t2, ..., tN)`, where `f` is the callable object and `t1, t2, ..., tN` are lvalues of types `T1, T2, ..., TN` respectively, must be well-formed and, if `Ret` isn't void, convertible to `Ret`.
 
-An empty `function` object does not hold a callable object or a reference to a callable object.
+An empty `function` object doesn't hold a callable object or a reference to a callable object.
 
 ## Members
 
@@ -273,7 +275,7 @@ operator unspecified();
 
 ### Remarks
 
-The operator returns a value that is convertible to **`bool`** with a true value only if the object is not empty. You use it to test whether the object is empty.
+The operator returns a value that is convertible to **`bool`** with a true value only if the object isn't empty. You use it to test whether the object is empty.
 
 ### Example
 
@@ -559,7 +561,7 @@ The target callable object type to test.
 
 The type *Fty2* must be callable for the argument types `T1, T2, ..., TN` and the return type `Ret`. If `target_type() == typeid(Fty2)`, the member template function returns the address of the target object; otherwise, it returns 0.
 
-A type *Fty2* is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` is not **`void`**, convertible to `Ret`.
+A type *Fty2* is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` isn't **`void`**, convertible to `Ret`.
 
 ### Example
 
