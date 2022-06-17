@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: forward_list Class"
 title: "forward_list Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["forward_list/std::forward_list", "forward_list/std::forward_list::allocator_type", "forward_list/std::forward_list::const_iterator", "forward_list/std::forward_list::const_pointer", "forward_list/std::forward_list::const_reference", "forward_list/std::forward_list::difference_type", "forward_list/std::forward_list::iterator", "forward_list/std::forward_list::pointer", "forward_list/std::forward_list::reference", "forward_list/std::forward_list::size_type", "forward_list/std::forward_list::value_type", "forward_list/std::forward_list::assign", "forward_list/std::forward_list::before_begin", "forward_list/std::forward_list::begin", "forward_list/std::forward_list::cbefore_begin", "forward_list/std::forward_list::cbegin", "forward_list/std::forward_list::cend", "forward_list/std::forward_list::clear", "forward_list/std::forward_list::emplace_after", "forward_list/std::forward_list::emplace_front", "forward_list/std::forward_list::empty", "forward_list/std::forward_list::end", "forward_list/std::forward_list::erase_after", "forward_list/std::forward_list::front", "forward_list/std::forward_list::get_allocator", "forward_list/std::forward_list::insert_after", "forward_list/std::forward_list::max_size", "forward_list/std::forward_list::merge", "forward_list/std::forward_list::pop_front", "forward_list/std::forward_list::push_front", "forward_list/std::forward_list::remove", "forward_list/std::forward_list::remove_if", "forward_list/std::forward_list::resize", "forward_list/std::forward_list::reverse", "forward_list/std::forward_list::sort", "forward_list/std::forward_list::splice_after", "forward_list/std::forward_list::swap", "forward_list/std::forward_list::unique"]
 helpviewer_keywords: ["std::forward_list", "std::forward_list::allocator_type", "std::forward_list::const_iterator", "std::forward_list::const_pointer", "std::forward_list::const_reference", "std::forward_list::difference_type", "std::forward_list::iterator", "std::forward_list::pointer", "std::forward_list::reference", "std::forward_list::size_type", "std::forward_list::value_type", "std::forward_list::assign", "std::forward_list::before_begin", "std::forward_list::begin", "std::forward_list::cbefore_begin", "std::forward_list::cbegin", "std::forward_list::cend", "std::forward_list::clear", "std::forward_list::emplace_after", "std::forward_list::emplace_front", "std::forward_list::empty", "std::forward_list::end", "std::forward_list::erase_after", "std::forward_list::front", "std::forward_list::get_allocator", "std::forward_list::insert_after", "std::forward_list::max_size", "std::forward_list::merge", "std::forward_list::pop_front", "std::forward_list::push_front", "std::forward_list::remove", "std::forward_list::remove_if", "std::forward_list::resize", "std::forward_list::reverse", "std::forward_list::sort", "std::forward_list::splice_after", "std::forward_list::swap", "std::forward_list::unique"]
+ms.custom: devdivchpfy22
 ---
+
 # forward_list Class
 
 Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of nodes, each containing a member of type `Type`.
@@ -32,7 +34,7 @@ A `forward_list` object allocates and frees storage for the sequence it controls
 > [!NOTE]
 > The stored allocator object is not copied when the container object is assigned.
 
-Iterators, pointers and references might become invalid when elements of their controlled sequence are erased through `forward_list`. Insertions and splices performed on the controlled sequence through `forward_list` do not invalidate iterators.
+Iterators, pointers and references might become invalid when elements of their controlled sequence are erased through `forward_list`. Insertions and splices performed on the controlled sequence through `forward_list` don't invalidate iterators.
 
 Additions to the controlled sequence might occur by calls to [forward_list::insert_after](#insert_after), which is the only member function that calls the constructor `Type(const  T&)`. `forward_list` might also call move constructors. If such an expression throws an exception, the container object inserts no new elements and rethrows the exception. Thus, an object of type `forward_list` is left in a known state when such exceptions occur.
 
@@ -211,9 +213,9 @@ A **`const`** forward-access iterator that points at the first element of the ra
 
 ### Remarks
 
-With the return value of `cbegin`, the elements in the range cannot be modified.
+With the return value of `cbegin`, the elements in the range can't be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -238,7 +240,7 @@ A forward-access iterator that points just beyond the end of the range.
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -248,7 +250,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-The value returned by `cend` should not be dereferenced.
+The value returned by `cend` shouldn't be dereferenced.
 
 ## <a name="clear"></a> clear
 
@@ -272,7 +274,7 @@ typedef implementation-defined const_iterator;
 
 ### Remarks
 
-`const_iterator` describes an object that can serve as a constant forward iterator for the controlled sequence. It is described here as a synonym for an implementation-defined type.
+`const_iterator` describes an object that can serve as a constant forward iterator for the controlled sequence. It's described here as a synonym for an implementation-defined type.
 
 ## <a name="const_pointer"></a> const_pointer
 
@@ -457,7 +459,7 @@ The initializer_list to copy.
 
 ### Remarks
 
-All constructors store an [allocator](../standard-library/allocator-class.md) and initialize the controlled sequence. The allocator object is the argument *Al*, if present. For the copy constructor, it is `right.get_allocator()`. Otherwise, it is `Allocator()`.
+All constructors store an [allocator](../standard-library/allocator-class.md) and initialize the controlled sequence. The allocator object is the argument *Al*, if present. For the copy constructor, it's `right.get_allocator()`. Otherwise, it's `Allocator()`.
 
 The first two constructors specify an empty initial controlled sequence.
 
@@ -561,7 +563,7 @@ typedef implementation-defined iterator;
 
 ### Remarks
 
-`iterator` describes an object that can serve as a forward iterator for the controlled sequence. It is described here as a synonym for an implementation-defined type.
+`iterator` describes an object that can serve as a forward iterator for the controlled sequence. It's described here as a synonym for an implementation-defined type.
 
 ## <a name="max_size"></a> max_size
 
@@ -926,7 +928,7 @@ The forward list providing the elements to be exchanged.
 
 ### Remarks
 
-The member function swaps the controlled sequences between **`*this`** and *right*. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+The member function swaps the controlled sequences between **`*this`** and *right*. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ## <a name="unique"></a> unique
 
