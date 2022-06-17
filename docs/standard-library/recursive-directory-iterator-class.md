@@ -42,7 +42,7 @@ will call visit with the arguments `path("abc/def/ghi")` and `path("abc/jkl")`. 
 
 1. A directory symlink will be scanned only if you construct a `recursive_directory_iterator` with a `directory_options` argument whose value is `directory_options::follow_directory_symlink`.
 
-1. If you call, `disable_recursion_pending` then a subsequent directory encountered during an increment won't be recursively scanned.
+1. If you call `disable_recursion_pending`, a subsequent directory encountered during an increment won't be recursively scanned.
 
 ### Constructors
 
