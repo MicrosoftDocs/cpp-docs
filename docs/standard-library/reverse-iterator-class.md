@@ -925,7 +925,7 @@ typedef typename iterator_traits<RandomIterator>::reference reference;
 
 ### Remarks
 
-The type is a synonym for the iterator trait typename `iterator_traits`\<RandomIterator>::reference**.
+The type is a synonym for the iterator trait typename `iterator_traits<RandomIterator>::reference`.
 
 ### Example
 
@@ -956,7 +956,7 @@ A default `reverse_iterator` or a `reverse_iterator` adapting an underlying iter
 
 The identity that relates all reverse iterators to their underlying iterators is:
 
-&\*(`reverse_iterator` (*i*)) == &\*(*i* - 1).
+`&*(reverse_iterator (i)) == &*(i-1)`.
 
 In practice, this means that in the reversed sequence the reverse_iterator will refer to the element one position beyond (to the right of) the element that the iterator had referred to in the original sequence. So if an iterator addressed the element 6 in the sequence (2, 4, 6, 8), then the `reverse_iterator` will address the element 4 in the reversed sequence (8, 6, 4, 2).
 
