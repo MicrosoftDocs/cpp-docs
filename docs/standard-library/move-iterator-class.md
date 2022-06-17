@@ -172,7 +172,7 @@ The operator evaluates `*this += -_Off`. Then returns **`*this`**.
 
 ## <a name="op_add_add"></a> move_iterator::operator++
 
-Increments the stored iterator that belongs to this `move_iterator.` The current element is accessed by the postincrement operator. The next element is accessed by the preincrement operator.
+Increments the stored iterator that belongs to this `move_iterator`. The current element is accessed by the postincrement operator. The next element is accessed by the preincrement operator.
 
 ```cpp
 move_iterator& operator++();
@@ -248,7 +248,7 @@ The operator returns `move_iterator(*this) -= _Off`.
 
 ## <a name="op_star"></a> move_iterator::operator*
 
-Dereferences the stored iterator and returns the value. This behaves like an `rvalue reference` and performs a move assignment. The operator transfers the current element out of the base iterator. The element that follows becomes the new current element.
+Dereferences the stored iterator and returns the value. This behaves like an `rvalue reference` and performs a move assignment. The operator transfers the current element out of the base iterator and the element to the next position becomes the new current element.
 
 ```cpp
 reference operator*() const;
