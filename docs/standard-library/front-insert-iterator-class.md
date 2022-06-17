@@ -1,14 +1,16 @@
 ---
 description: "Learn more about: front_insert_iterator Class"
 title: "front_insert_iterator Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["iterator/std::front_insert_iterator", "iterator/std::front_insert_iterator::container_type", "iterator/std::front_insert_iterator::reference"]
 helpviewer_keywords: ["std::front_insert_iterator [C++]", "std::front_insert_iterator [C++], container_type", "std::front_insert_iterator [C++], reference"]
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
+ms.custom: devdivchpfy22
 ---
+
 # front_insert_iterator Class
 
-Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into the front of a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence containers. The `front_insert_iterator` class is templatized on the type of container.
+Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into the front of a sequence. Thus it provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence containers. The `front_insert_iterator` class is templatized on the type of container.
 
 ## Syntax
 
@@ -24,7 +26,7 @@ The type of container into the front of which elements are to be inserted by a `
 
 ## Remarks
 
-The container must satisfy the requirements for a front insertion sequence where is it possible to insert elements at the beginning of the sequence in amortized constant time. The C++ Standard Library sequence containers defined by the [deque Class](../standard-library/deque-class.md) and [list Class](../standard-library/list-class.md) provide the needed `push_front` member function and satisfy these requirements. By contrast, sequence containers defined by the [vector Class](../standard-library/vector-class.md) do not satisfy these requirements and cannot be adapted to use with `front_insert_iterator`s. A `front_insert_iterator` must always be initialized with its container.
+The container must satisfy the requirements for a front insertion sequence where is it possible to insert elements at the beginning of the sequence in amortized constant time. The C++ Standard Library sequence containers defined by the [deque Class](../standard-library/deque-class.md) and [list Class](../standard-library/list-class.md) provide the needed `push_front` member function and satisfy these requirements. By contrast, sequence containers defined by the [vector Class](../standard-library/vector-class.md) don't satisfy these requirements and can't be adapted to use with `front_insert_iterator`s. A `front_insert_iterator` must always be initialized with its container.
 
 ### Constructors
 
@@ -172,7 +174,7 @@ The member function returns the value of the element addressed.
 
 ### Remarks
 
-Used to implement the output iterator expression **\*Iter** = **value**. If `Iter` is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and does not change the total number of elements in the sequence.
+Used to implement the output iterator expression **\*Iter** = **value**. If `Iter` is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and doesn't change the total number of elements in the sequence.
 
 ### Example
 

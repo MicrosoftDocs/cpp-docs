@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: istreambuf_iterator Class"
 title: "istreambuf_iterator Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["streambuf/std::istreambuf_iterator", "iterator/std::istreambuf_iterator::char_type", "iterator/std::istreambuf_iterator::int_type", "iterator/std::istreambuf_iterator::istream_type", "iterator/std::istreambuf_iterator::streambuf_type", "iterator/std::istreambuf_iterator::traits_type", "iterator/std::istreambuf_iterator::equal"]
 helpviewer_keywords: ["std::istreambuf_iterator [C++]", "std::istreambuf_iterator [C++], char_type", "std::istreambuf_iterator [C++], int_type", "std::istreambuf_iterator [C++], istream_type", "std::istreambuf_iterator [C++], streambuf_type", "std::istreambuf_iterator [C++], traits_type", "std::istreambuf_iterator [C++], equal"]
 ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
+ms.custom: devdivchpfy22
 ---
+
 # istreambuf_iterator Class
 
 The class template istreambuf_iterator describes an input iterator object that extracts character elements from an input stream buffer, which it accesses through an object it stores, of type pointer to `basic_streambuf`\< **CharType**, **Traits**>.
@@ -30,7 +32,7 @@ The type that represents the character type for the istreambuf_iterator. This ar
 
 The istreambuf_iterator class must satisfy the requirements for an input iterator.
 
-After constructing or incrementing an object of class istreambuf_iterator with a non-null stored pointer, the object effectively attempts to extract and store an object of type *CharType* from the associated input stream. The extraction may be delayed, however, until the object is actually dereferenced or copied. If the extraction fails, the object effectively replaces the stored pointer with a null pointer, thus making an end-of-sequence indicator.
+After constructing or incrementing an object of class istreambuf_iterator with a non-null stored pointer, the object effectively attempts to extract and store an object of type *CharType* from the associated input stream. The extraction may be delayed, however, until the object is dereferenced or copied. If the extraction fails, the object effectively replaces the stored pointer with a null pointer, thus making an end-of-sequence indicator.
 
 ### Constructors
 
@@ -60,7 +62,6 @@ After constructing or incrementing an object of class istreambuf_iterator with a
 |-|-|
 |[operator*](#op_star)|The dereferencing operator returns the next character in the stream.|
 |[operator++](#op_add_add)|Either returns the next character from the input stream or copies the object before incrementing it and returns the copy.|
-|[operator->](#op_arrow)|Returns the value of a member, if any.|
 
 ## Requirements
 
@@ -132,7 +133,7 @@ The iterator for which to check for equality.
 
 ### Remarks
 
-A range is defined by the `istreambuf_iterator` to the current position and the end-of-stream iterator, but since all non-end-of stream iterators are equivalent under the `equal` member function, it is not possible to define any subranges using `istreambuf_iterator`s. The `==` and `!=` operators have the same semantics.
+A range is defined by the `istreambuf_iterator` to the current position and the end-of-stream iterator, but since all non-end-of stream iterators are equivalent under the `equal` member function, it isn't possible to define any subranges using `istreambuf_iterator`s. The `==` and `!=` operators have the same semantics.
 
 ### Example
 
@@ -346,18 +347,6 @@ int main( )
    }
 }
 ```
-
-## <a name="op_arrow"></a> `istreambuf_iterator::operator->`
-
-Returns the value of a member, if any.
-
-```cpp
-const Elem* operator->() const;
-```
-
-### Return Value
-
-The operator returns **&\*\*this**.
 
 ## <a name="streambuf_type"></a> istreambuf_iterator::streambuf_type
 

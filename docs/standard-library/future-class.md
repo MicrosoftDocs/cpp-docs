@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: future Class"
 title: "future Class"
-ms.date: "11/04/2016"
+ms.date: 06/15/2022
 f1_keywords: ["future/std::future", "future/std::future::future", "future/std::future::get", "future/std::future::share", "future/std::future::valid", "future/std::future::wait", "future/std::future::wait_for", "future/std::future::wait_until"]
 ms.assetid: 495e82c3-5341-4e37-87dd-b40107fbdfb6
 helpviewer_keywords: ["std::future [C++]", "std::future [C++], future", "std::future [C++], get", "std::future [C++], share", "std::future [C++], valid", "std::future [C++], wait", "std::future [C++], wait_for", "std::future [C++], wait_until"]
+ms.custom: devdivchpfy22
 ---
+
 # `future` Class
 
 Describes an *asynchronous return object*.
@@ -19,7 +21,7 @@ class future;
 
 ## Remarks
 
-Each standard *asynchronous provider* returns an object whose type is an instantiation of this template. A `future` object provides the only access to the asynchronous provider that it is associated with. If you need multiple asynchronous return objects that are associated with the same asynchronous provider, copy the `future` object to a [`shared_future`](shared-future-class.md) object.
+Each standard *asynchronous provider* returns an object whose type is an instantiation of this template. A `future` object provides the only access to the asynchronous provider that it's associated with. If you need multiple asynchronous return objects that are associated with the same asynchronous provider, copy the `future` object to a [`shared_future`](shared-future-class.md) object.
 
 ## Members
 
@@ -35,7 +37,7 @@ Each standard *asynchronous provider* returns an object whose type is an instant
 |----------|-----------------|
 |[`get`](#get)|Retrieves the result that is stored in the associated asynchronous state.|
 |[`share`](#share)|Converts the object to a `shared_future`.|
-|[`valid`](#valid)|Specifies whether the object is not empty.|
+|[`valid`](#valid)|Specifies whether the object isn't empty.|
 |[`wait`](#wait)|Blocks the current thread until the associated asynchronous state is ready.|
 |[`wait_for`](#wait_for)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|
 |[`wait_until`](#wait_until)|Blocks until the associated asynchronous state is ready or until a specified point in time.|
