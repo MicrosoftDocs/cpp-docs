@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: recursive_directory_iterator Class"
 title: "recursive_directory_iterator Class"
-ms.date: "09/10/2018"
+ms.date: 06/17/2022
 f1_keywords: ["filesystem/std::tr2::sys::recursive_directory_iterator"]
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
+ms.custom: devdivchpfy22
 ---
+
 # recursive_directory_iterator Class
 
 Describes an input iterator that sequences through the filenames in a directory, possibly descending into subdirectories recursively. For an iterator `X`, the expression `*X` evaluates to an object of class `directory_entry` that wraps the filename and anything known about its status.
@@ -40,7 +42,7 @@ will call visit with the arguments `path("abc/def/ghi")` and `path("abc/jkl")`. 
 
 1. A directory symlink will be scanned only if you construct a `recursive_directory_iterator` with a `directory_options` argument whose value is `directory_options::follow_directory_symlink`.
 
-1. If you call `disable_recursion_pending` then a subsequent directory encountered during an increment will not be recursively scanned.
+1. If you call, `disable_recursion_pending` then a subsequent directory encountered during an increment won't be recursively scanned.
 
 ### Constructors
 
@@ -65,7 +67,7 @@ will call visit with the arguments `path("abc/def/ghi")` and `path("abc/jkl")`. 
 |-|-|
 |[operator!=](#op_neq)|Returns `!(*this == right)`.|
 |[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
-|[operator==](#op_eq)|Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
+|[operator==](#op_eq)|Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both aren't end-of-sequence-iterators.|
 |[operator*](#op_multiply)|Returns `myentry`.|
 |[operator->](#op_cast)|Returns `&**this`.|
 |[operator++](#op_increment)|Increments the `recursive_directory_iterator`.|
@@ -138,7 +140,7 @@ The [recursive_directory_iterator](../standard-library/recursive-directory-itera
 
 ## <a name="op_eq"></a> recursive_directory_iterator::operator==
 
-Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
+Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both aren't end-of-sequence-iterators.
 
 ```cpp
 bool operator==(const recursive_directory_iterator& right) const;
@@ -250,7 +252,7 @@ The `recursive_directory_iterator` of which the constructed `recursive_directory
 
 The first constructor produces an end-of-sequence iterator. The second and third constructors store **`false`** in `no_push` and `directory_options::none` in `myoptions`, then attempt to open and read *pval* as a directory. If successful, they initialize `mystack` and `myentry` to designate the first non-directory filename in the nested sequence; otherwise they produce an end-of-sequence iterator.
 
-The fourth and fifth constructors behave the same as the second and third, except that they first store *opts* in `myoptions`. The defaulted construtors behave as expected.
+The fourth and fifth constructors behave the same as the second and third, except that they first store *opts* in `myoptions`. The default constructor behaves as expected.
 
 ## See also
 

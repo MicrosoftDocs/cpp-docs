@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: reverse_iterator Class"
 title: "reverse_iterator Class"
-ms.date: "03/27/2019"
+ms.date: 06/17/2022
 f1_keywords: ["xutility/std::reverse_iterator", "iterator/std::reverse_iterator::difference_type", "iterator/std::reverse_iterator::iterator_type", "iterator/std::reverse_iterator::pointer", "iterator/std::reverse_iterator::reference", "iterator/std::reverse_iterator::base", "iterator/std::reverse_iterator::operator_star"]
 helpviewer_keywords: ["std::reverse_iterator [C++]", "std::reverse_iterator [C++], difference_type", "std::reverse_iterator [C++], iterator_type", "std::reverse_iterator [C++], pointer", "std::reverse_iterator [C++], reference", "std::reverse_iterator [C++], base", "std::reverse_iterator [C++], operator_star"]
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
+ms.custom: devdivchpfy22
 ---
+
 # reverse_iterator Class
 
 The class template is an iterator adaptor that describes a reverse iterator object that behaves like a random-access or bidirectional iterator, only in reverse. It enables the backward traversal of a range.
@@ -28,7 +30,7 @@ Existing C++ Standard Library containers also define `reverse_iterator` and `con
 
 The `reverse_iterator` that requires a bidirectional iterator must not call any of the member functions `operator+=`, `operator+`, `operator-=`, `operator-`, or `operator[]`, which may only be used with random-access iterators.
 
-The range of an iterator is [*first*, *last*), where the square bracket on the left indicates the inclusion of *first* and the parenthesis on the right indicates the inclusion of elements up to but excluding *last* itself. The same elements are included in the reversed sequence [ **rev** - *first*, **rev** - *last*) so that if *last* is the one-past-the-end element in a sequence, then the first element **rev** - *first* in the reversed sequence points to \*(*last* - 1). The identity which relates all reverse iterators to their underlying iterators is:
+The range of an iterator is [*first*, *last*), where the square bracket on the left indicates the inclusion of *first* and the parenthesis on the right indicates the inclusion of elements up to but excluding *last* itself. The same elements are included in the reversed sequence [ **rev** - *first*, **rev** - *last*) so that if *last* is the one-past-the-end element in a sequence, then the first element **rev** - *first* in the reversed sequence points to \*(*last* - 1). The identity that relates all reverse iterators to their underlying iterators is:
 
 &\*( **reverse_iterator** ( *i* ) ) == &\*( *i* - 1 ).
 
@@ -156,7 +158,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type  difference_ty
 
 The `reverse_iterator` difference type is the same as the iterator difference type.
 
-The type is a synonym for the iterator trait typename `iterator_traits`\< **RandomIterator**> **::pointer**.
+The type is a synonym for the iterator trait typename `iterator_traits`\<**RandomIterator**> **::pointer**.
 
 ### Example
 
@@ -626,7 +628,7 @@ The offset to be subtracted from the `reverse_iterator`.
 
 This member function may only be used if the `reverse_iterator` satisfies the requirements for a random-access iterator.
 
-The operator evaluates **current** + *Off* then returns **\*this**.
+The operator evaluates **current** + *Off* then returns **`*this`**.
 
 ### Example
 
@@ -698,7 +700,7 @@ A pointer to the element addressed by the `reverse_iterator`.
 
 ### Remarks
 
-The operator returns **&\*\*this**.
+The operator returns **`&**this`**.
 
 ### Example
 
@@ -782,7 +784,7 @@ The reference to the element offset.
 
 ### Remarks
 
-The operator returns <strong>\*</strong>( **\*this** + `Off`).
+The operator returns <strong>\*</strong>( **`*this`** + `Off`).
 
 ### Example
 
@@ -851,7 +853,7 @@ typedef typename iterator_traits<RandomIterator>::pointer pointer;
 
 ### Remarks
 
-The type is a synonym for the iterator trait typename `iterator_traits`\< *RandomIterator*> **::pointer**.
+The type is a synonym for the iterator trait typename `iterator_traits`\<*RandomIterator*> **::pointer**.
 
 ### Example
 
@@ -923,7 +925,7 @@ typedef typename iterator_traits<RandomIterator>::reference reference;
 
 ### Remarks
 
-The type is a synonym for the iterator trait typename `iterator_traits`\< *RandomIterator*> **::reference**.
+The type is a synonym for the iterator trait typename `iterator_traits`\<RandomIterator>::reference**.
 
 ### Example
 
@@ -952,7 +954,7 @@ A default `reverse_iterator` or a `reverse_iterator` adapting an underlying iter
 
 ### Remarks
 
-The identity which relates all reverse iterators to their underlying iterators is:
+The identity that relates all reverse iterators to their underlying iterators is:
 
 &\*( `reverse_iterator` ( *i* ) ) == &\*( *i* - 1 ).
 

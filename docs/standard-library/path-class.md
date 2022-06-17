@@ -1,9 +1,11 @@
 ---
 description: "Learn more about: path Class"
 title: "path Class"
-ms.date: "09/27/2018"
+ms.date: 06/17/2022
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
+ms.custom: devdivchpfy22
 ---
+
 # `path` Class
 
 The **`path`** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **`wchar_t`** on Windows or **`char`** on POSIX.
@@ -633,7 +635,7 @@ static constexpr value_type preferred_separator == '/';
 
 ### Remarks
 
-Note that it's equally permissible in most contexts under Windows to use `L'/'` in its place.
+It's equally permissible in most contexts under Windows to use `L'/'` in its place.
 
 ## <a name="relative_path"></a> `path::relative_path`
 

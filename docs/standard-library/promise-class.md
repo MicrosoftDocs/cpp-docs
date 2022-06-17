@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: promise Class"
 title: "promise Class"
-ms.date: "10/18/2018"
+ms.date: 06/17/2022
 f1_keywords: ["future/std::promise", "future/std::promise::promise", "future/std::promise::get_future", "future/std::promise::set_exception", "future/std::promise::set_exception_at_thread_exit", "future/std::promise::set_value", "future/std::promise::set_value_at_thread_exit", "future/std::promise::swap"]
 ms.assetid: 2931558c-d94a-4ba1-ac4f-20bf7b6e23f9
 helpviewer_keywords: ["std::promise [C++]", "std::promise [C++], promise", "std::promise [C++], get_future", "std::promise [C++], set_exception", "std::promise [C++], set_exception_at_thread_exit", "std::promise [C++], set_value", "std::promise [C++], set_value_at_thread_exit", "std::promise [C++], swap"]
+ms.custom: devdivchpfy22
 ---
 # promise Class
 
@@ -101,7 +102,7 @@ promise(promise&& Other) noexcept;
 ### Parameters
 
 *Al*\
-A memory allocator. See [\<allocators>](../standard-library/allocators-header.md) for more information.
+A memory allocator. For more information about allocators, see [\<allocators>](../standard-library/allocators-header.md).
 
 *Other*\
 A `promise` object.
@@ -154,7 +155,7 @@ If the promise object has no *associated asynchronous state*, this method throws
 
 If [set_exception](#set_exception), `set_exception_at_thread_exit`, [set_value](#set_value), or [set_value_at_thread_exit](#set_value_at_thread_exit) has already been called for a `promise` object that has the same associated asynchronous state, this method throws a `future_error` that has an error code of `promise_already_satisfied`.
 
-In contrast to [set_exception](#set_exception), this method does not set the associated asynchronous state to ready until after all thread-local objects in the current thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state are not unblocked until the current thread exits.
+In contrast to [set_exception](#set_exception), this method doesn't set the associated asynchronous state to ready until after all thread-local objects in the current thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state aren't unblocked until the current thread exits.
 
 ## <a name="set_value"></a> promise::set_value
 
@@ -180,9 +181,9 @@ If [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exceptio
 
 As a result of this method, any threads that are blocked on the associated asynchronous state become unblocked.
 
-The first method also throws any exception that is thrown when *Val* is copied into the associated asynchronous state. In this situation, the associated asynchronous state is not set to ready.
+The first method also throws any exception that is thrown when *Val* is copied into the associated asynchronous state. In this situation, the associated asynchronous state isn't set to ready.
 
-The second method also throws any exception that is thrown when *Val* is moved into the associated asynchronous state. In this situation, the associated asynchronous state is not set to ready.
+The second method also throws any exception that is thrown when *Val* is moved into the associated asynchronous state. In this situation, the associated asynchronous state isn't set to ready.
 
 For the partial specialization `promise<Ty&>`, the stored value is in effect a reference to *Val*.
 
@@ -210,7 +211,7 @@ If the promise object has no *associated asynchronous state*, this method throws
 
 If [set_exception](#set_exception), [set_exception_at_thread_exit](#set_exception_at_thread_exit), [set_value](#set_value), or `set_value_at_thread_exit` has already been called for a `promise` object that has the same associated asynchronous state, this method throws a `future_error` that has an error code of `promise_already_satisfied`.
 
-In contrast to `set_value`, the associated asynchronous state is not set to ready until after all thread-local objects in the current thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state are not unblocked until the current thread exits.
+In contrast to `set_value`, the associated asynchronous state isn't set to ready until after all thread-local objects in the current thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state aren't unblocked until the current thread exits.
 
 The first method also throws any exception that is thrown when *Val* is copied into the associated asynchronous state.
 

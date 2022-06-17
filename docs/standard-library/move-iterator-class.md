@@ -1,14 +1,16 @@
 ---
 description: "Learn more about: move_iterator Class"
 title: "move_iterator Class"
-ms.date: "03/27/2019"
+ms.date: 06/17/2022
 f1_keywords: ["iterator/std::move_iterator", "iterator/std::move_iterator::iterator_type", "iterator/std::move_iterator::iterator_category", "iterator/std::move_iterator::value_type", "iterator/std::move_iterator::difference_type", "iterator/std::move_iterator::pointer", "iterator/std::move_iterator::reference", "iterator/std::move_iterator::base"]
 helpviewer_keywords: ["std::move_iterator [C++]", "std::move_iterator [C++], iterator_type", "std::move_iterator [C++], iterator_category", "std::move_iterator [C++], value_type", "std::move_iterator [C++], difference_type", "std::move_iterator [C++], pointer", "std::move_iterator [C++], reference", "std::move_iterator [C++], base"]
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
+ms.custom: devdivchpfy22
 ---
+
 # move_iterator Class
 
-Class template `move_iterator` is a wrapper for an iterator. The move_iterator provides the same behavior as the iterator it wraps (stores), except it turns the stored iterator’s dereference operator into an rvalue reference, turning a copy into a move. For more information about rvalues, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+Class template `move_iterator` is a wrapper for an iterator. The move_iterator provides the same behavior as the iterator it wraps (stores), except it turns the stored iterator's dereference operator into an rvalue reference, turning a copy into a move. For more information about rvalues, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## Syntax
 
@@ -20,7 +22,7 @@ class move_iterator;
 
 The class template describes an object that behaves like an iterator except when dereferenced. It stores a random-access iterator of type `Iterator`, accessed by way of the member function `base()`. All operations on a `move_iterator` are performed directly on the stored iterator, except that the result of `operator*` is implicitly cast to `value_type&&` to make an rvalue reference.
 
-A `move_iterator` might be capable of operations that are not defined by the wrapped iterator. These operations should not be used.
+A `move_iterator` might be capable of operations that aren't defined by the wrapped iterator. These operations shouldn't be used.
 
 ### Constructors
 
@@ -50,8 +52,8 @@ A `move_iterator` might be capable of operations that are not defined by the wra
 |Operator|Description|
 |-|-|
 |[move_iterator::operator*](#op_star)|Returns `(reference)*base().`|
-|[move_iterator::operator++](#op_add_add)|Increments the stored iterator. Exact behavior depends on whether it is a preincrement or a postincrement operation.|
-|[move_iterator::operator--](#operator--)|Decrements the stored iterator. Exact behavior depends on whether it is a predecrement or a postdecrement operation.|
+|[move_iterator::operator++](#op_add_add)|Increments the stored iterator. Exact behavior depends on whether it's a preincrement or a postincrement operation.|
+|[move_iterator::operator--](#operator--)|Decrements the stored iterator. Exact behavior depends on whether it's a predecrement or a postdecrement operation.|
 |[`move_iterator::operator->`](#op_arrow)|Returns `&**this`.|
 |[move_iterator::operator-](#operator-)|Returns `move_iterator(*this) -=` by first subtracting the right-hand value from the current position.|
 |[move_iterator::operator[]](#op_at)|Returns `(reference)*(*this + off)`. Allows you to specify an offset from the current base to obtain the value at that location.|
