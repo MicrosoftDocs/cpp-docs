@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: tuple Class"
 title: "tuple Class"
-ms.date: "11/04/2016"
+ms.date: 06/20/2022
 f1_keywords: ["tuple/std::tuple", "tuple/std::tuple::operator="]
 helpviewer_keywords: ["tuple class"]
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
+ms.custom: devdivchpfy22
 ---
+
 # tuple Class
 
 Wraps a fixed-length sequence of elements.

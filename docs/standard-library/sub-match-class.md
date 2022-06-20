@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: sub_match Class"
 title: "sub_match Class"
-ms.date: "09/10/2018"
+ms.date: 06/20/2022
 f1_keywords: ["regex/std::sub_match", "regex/std::sub_match::matched", "regex/std::sub_match::compare", "regex/std::sub_match::length", "regex/std::sub_match::str", "regex/std::sub_match::difference_type", "regex/std::sub_match::iterator", "regex/std::sub_match::value_type"]
 helpviewer_keywords: ["std::sub_match [C++]", "std::sub_match [C++], matched", "std::sub_match [C++], compare", "std::sub_match [C++], length", "std::sub_match [C++], str", "std::sub_match [C++], difference_type", "std::sub_match [C++], iterator", "std::sub_match [C++], value_type"]
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
+ms.custom: devdivchpfy22
 ---
+
 # sub_match Class
 
 Describes a submatch.
@@ -27,7 +29,7 @@ The iterator type for submatches.
 
 The class template describes an object that designates a sequence of characters that matched a capture group in a call to [regex_match](../standard-library/regex-functions.md#regex_match) or to [regex_search](../standard-library/regex-functions.md#regex_search). Objects of type [match_results Class](../standard-library/match-results-class.md) hold an array of these objects, one for each capture group in the regular expression that was used in the search.
 
-If the capture group was not matched the object's data member `matched` holds false, and the two iterators `first` and `second` (inherited from the base `std::pair`) are equal. If the capture group was matched, `matched` holds true, the iterator `first` points to the first character in the target sequence that matched the capture group, and the iterator `second` points one position past the last character in the target sequence that matched the capture group. Note that for a zero-length match the member `matched` holds true, the two iterators will be equal, and both will point to the position of the match.
+If the capture group wasn't matched the object's data member `matched` holds false, and the two iterators `first` and `second` (inherited from the base `std::pair`) are equal. If the capture group was matched, `matched` holds true, the iterator `first` points to the first character in the target sequence that matched the capture group, and the iterator `second` points one position past the last character in the target sequence that matched the capture group. For a zero-length match, the member `matched` holds true, the two iterators will be equal, and both will point to the position of the match.
 
 A zero-length match can occur when a capture group consists solely of an assertion, or of a repetition that allows zero repeats. For example:
 
