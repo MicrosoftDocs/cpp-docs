@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: ostream_iterator Class"
 title: "ostream_iterator Class"
-ms.date: "11/04/2016"
+ms.date: 06/17/2022
 f1_keywords: ["iterator/std::ostream_iterator", "iterator/std::ostream_iterator::char_type", "iterator/std::ostream_iterator::ostream_type", "iterator/std::ostream_iterator::traits_type"]
 helpviewer_keywords: ["std::ostream_iterator [C++]", "std::ostream_iterator [C++], char_type", "std::ostream_iterator [C++], ostream_type", "std::ostream_iterator [C++], traits_type"]
 ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03
+ms.custom: devdivchpfy22
 ---
+
 # ostream_iterator Class
 
 The class template ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction `operator <<`.
@@ -121,7 +123,7 @@ A reference to the `ostream_iterator`.
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* *ii* = *t* be valid and says nothing about the **`operator`** or the `operator=` on their own. The member operator in this implementation returns **\*this**.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* *ii* = *t* be valid and says nothing about the **`operator`** or the `operator=` on their own. The member operator in this implementation returns **`*this`**.
 
 ### Example
 
@@ -171,7 +173,7 @@ A reference to the `ostream_iterator`.
 
 ### Remarks
 
-These member operators both return **\*this**.
+These member operators both return **`*this`**.
 
 ### Example
 

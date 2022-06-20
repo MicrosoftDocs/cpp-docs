@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: match_results Class"
 title: "match_results Class"
-ms.date: "09/10/2018"
+ms.date: 06/17/2022
 f1_keywords: ["regex/std::match_results"]
 helpviewer_keywords: ["match_results class"]
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
+ms.custom: devdivchpfy22
 ---
+
 # match_results Class
 
 Holds a sequence of submatches.
@@ -416,7 +418,7 @@ Index of the submatch.
 
 ### Remarks
 
-The member function returns a reference to element *n* of the controlled sequence, or a reference to an empty `sub_match` object if `size() <= n` or if capture group *n* was not part of the match.
+The member function returns a reference to element *n* of the controlled sequence, or a reference to an empty `sub_match` object if `size() <= n` or if capture group *n* wasn't part of the match.
 
 ## <a name="position"></a> match_results::position
 
@@ -539,7 +541,7 @@ The match_results object to swap with.
 
 ### Remarks
 
-The member function swaps the contents of **`*this`** and *right* in constant time and does not throw exceptions.
+The member function swaps the contents of **`*this`** and *right* in constant time and doesn't throw exceptions.
 
 ## <a name="value_type"></a> match_results::value_type
 
