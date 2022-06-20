@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: regex_iterator Class"
 title: "regex_iterator Class"
-ms.date: "09/10/2018"
+ms.date: 06/17/2022
 f1_keywords: ["regex/std::regex_iterator", "regex/std::regex_iterator::operator==", "regex/std::regex_iterator::operator!=", "regex/std::regex_iterator::operator*", "regex/std::regex_iterator::operator->", "regex/std::regex_iterator::operator++"]
 helpviewer_keywords: ["std::regex_iterator", "std::regex_iterator::operator==", "std::regex_iterator::operator!=", "std::regex_iterator::operator*", "std::regex_iterator::operator->", "std::regex_iterator::operator++"]
 ms.assetid: 0cfd8fd0-5a95-4f3c-bf8e-6ef028c423d3
+ms.custom: devdivchpfy22
 ---
+
 # regex_iterator Class
 
 Iterator class for matches.
@@ -69,7 +71,7 @@ The class template describes a constant forward iterator object. It extracts obj
 
 ## Examples
 
-See the following topics for examples on regular expressions:
+See the following articles for examples on regular expressions:
 
 - [regex_match](../standard-library/regex-functions.md#regex_match)
 
@@ -184,7 +186,7 @@ regex_iterator& operator++(int);
 
 ### Remarks
 
-If the current match has no characters the first operator calls `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail | regex_constants::match_not_null)`; otherwise it advances the stored value `begin` to point to the first character after the current match then calls `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail)`. In either case, if the search fails the operator sets the object to an end-of-sequence iterator. The operator returns the object.
+If the current match has no characters, the first operator calls `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail | regex_constants::match_not_null)`; otherwise it advances the stored value `begin` to point to the first character after the current match then calls `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail)`. In either case, if the search fails the operator sets the object to an end-of-sequence iterator. The operator returns the object.
 
 The second operator makes a copy of the object, increments the object, then returns the copy.
 
