@@ -17,7 +17,7 @@ Filename macros are predefined as filenames specified in the dependency (not ful
 |--|--|
 | **`$@`** | Current target's full name (path, base name, extension), as currently specified. |
 | **`$$@`** | Current target's full name (path, base name, extension), as currently specified. Valid only as a dependent in a dependency. |
-| **`$*`*** | Current target's path and base name minus file extension. |
+| **`$*`** | Current target's path and base name minus file extension. |
 | **`$**`** | All dependents of the current target. |
 | **`$?`** | All dependents with a later timestamp than the current target. |
 | **`$<`** | Dependent file with a later timestamp than the current target. Valid only in commands in inference rules. |
