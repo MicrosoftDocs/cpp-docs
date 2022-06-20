@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: packaged_task Class"
 title: "packaged_task Class"
-ms.date: "11/04/2016"
+ms.date: 06/17/2022
 f1_keywords: ["future/std::packaged_task", "future/std::packaged_task::packaged_task", "future/std::packaged_task::get_future", "future/std::packaged_task::make_ready_at_thread_exit", "future/std::packaged_task::reset", "future/std::packaged_task::swap", "future/std::packaged_task::valid", "future/std::packaged_task::operator()", "future/std::packaged_task::operator bool"]
 ms.assetid: 0a72cbe3-f22a-4bfe-8e50-dcb268c98780
 helpviewer_keywords: ["std::packaged_task [C++]", "std::packaged_task [C++], packaged_task", "std::packaged_task [C++], get_future", "std::packaged_task [C++], make_ready_at_thread_exit", "std::packaged_task [C++], reset", "std::packaged_task [C++], swap", "std::packaged_task [C++], valid"]
+ms.custom: devdivchpfy22
 ---
+
 # packaged_task Class
 
 Describes an *asynchronous provider* that is a call wrapper whose call signature is `Ty(ArgTypes...)`. Its *associated asynchronous state* holds a copy of its callable object in addition to the potential result.
@@ -33,7 +35,7 @@ class packaged_task;
 |[get_future](#get_future)|Returns a [future](../standard-library/future-class.md) object that has the same associated asynchronous state.|
 |[make_ready_at_thread_exit](#make_ready_at_thread_exit)|Calls the callable object that's stored in the associated asynchronous state and atomically stores the returned value.|
 |[reset](#reset)|Replaces the associated asynchronous state.|
-|[swap](#swap)|Exchanges the associated asynchronous state with that of a specified object.|
+|[swap](#swap)|Exchanges the associated asynchronous state with a specified object.|
 |[valid](#valid)|Specifies whether the object has an associated asynchronous state.|
 
 ### Public Operators
@@ -60,7 +62,7 @@ future<Ty> get_future();
 
 ### Remarks
 
-If the `packaged_task` object does not have an associated asynchronous state, this method throws a [future_error](../standard-library/future-error-class.md) that has an error code of `no_state`.
+If the `packaged_task` object doesn't have an associated asynchronous state, this method throws a [future_error](../standard-library/future-error-class.md) that has an error code of `no_state`.
 
 If this method has already been called for a `packaged_task` object that has the same associated asynchronous state, the method throws a `future_error` that has an error code of `future_already_retrieved`.
 
@@ -80,7 +82,7 @@ If this method or [make_ready_at_thread_exit](#make_ready_at_thread_exit) has al
 
 Otherwise, this operator calls `INVOKE(fn, args..., Ty)`, where *fn* is the callable object that's stored in the associated asynchronous state. Any returned value is stored atomically as the returned result of the associated asynchronous state.
 
-In contrast to [packaged_task::operator()](#op_call), the associated asynchronous state is not set to `ready` until after all thread-local objects in the calling thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state are not unblocked until the calling thread exits.
+In contrast to [packaged_task::operator()](#op_call), the associated asynchronous state isn't set to `ready` until after all thread-local objects in the calling thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state aren't unblocked until the calling thread exits.
 
 ## <a name="op_eq"></a> packaged_task::operator=
 
@@ -177,7 +179,7 @@ Destroys a `packaged_task` object.
 
 ### Remarks
 
-If the *associated asynchronous state* is not *ready*, the destructor stores a [future_error](../standard-library/future-error-class.md) exception that has an error code of `broken_promise` as the result in the associated asynchronous state, and any threads that are blocked on the associated asynchronous state become unblocked.
+If the *associated asynchronous state* isn't *ready*, the destructor stores a [future_error](../standard-library/future-error-class.md) exception that has an error code of `broken_promise` as the result in the associated asynchronous state, and any threads that are blocked on the associated asynchronous state become unblocked.
 
 ## <a name="reset"></a> packaged_task::reset
 
@@ -189,11 +191,11 @@ void reset();
 
 ### Remarks
 
-In effect, this method executes `*this = packaged_task(move(fn))`, where *fn* is the function object that's stored in the associated asynchronous state for this object. Therefore, the state of the object is cleared, and [get_future](#get_future), [operator()](#op_call), and [make_ready_at_thread_exit](#make_ready_at_thread_exit) can be called as if on a newly-constructed object.
+In effect, this method executes `*this = packaged_task(move(fn))`, where *fn* is the function object that's stored in the associated asynchronous state for this object. Therefore, the state of the object is cleared, and [get_future](#get_future), [operator()](#op_call), and [make_ready_at_thread_exit](#make_ready_at_thread_exit) can be called as if on a newly constructed object.
 
 ## <a name="swap"></a> packaged_task::swap
 
-Exchanges the associated asynchronous state with that of a specified object.
+Exchanges the associated asynchronous state with a specified object.
 
 ```cpp
 void swap(packaged_task& Right) noexcept;
