@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: shared_future Class"
 title: "shared_future Class"
-ms.date: "11/04/2016"
+ms.date: 06/20/2022
 f1_keywords: ["future/std::shared_future", "future/std::shared_future::shared_future", "future/std::shared_future::get", "future/std::shared_future::valid", "future/std::shared_future::wait", "future/std::shared_future::wait_for", "future/std::shared_future::wait_until"]
 ms.assetid: 454ebedd-f42b-405f-99a5-a25cc9ad7c90
 helpviewer_keywords: ["std::shared_future [C++]", "std::shared_future [C++], shared_future", "std::shared_future [C++], get", "std::shared_future [C++], valid", "std::shared_future [C++], wait", "std::shared_future [C++], wait_for", "std::shared_future [C++], wait_until"]
+ms.custom: devdivchpfy22
 ---
+
 # shared_future Class
 
 Describes an *asynchronous return object*. In contrast with a [future](../standard-library/future-class.md) object, an *asynchronous provider* can be associated with any number of `shared_future` objects.
@@ -19,9 +21,9 @@ class shared_future;
 
 ## Remarks
 
-Do not call any methods other than `valid`, `operator=`, and the destructor on a `shared_future` object that's *empty*.
+Don't call any methods other than `valid`, `operator=`, and the destructor on a `shared_future` object that's *empty*.
 
-`shared_future` objects are not synchronized. Calling methods on the same object from multiple threads introduces a data race that has unpredictable results.
+`shared_future` objects aren't synchronized. Calling methods on the same object from multiple threads introduces a data race that has unpredictable results.
 
 ## Members
 
@@ -36,7 +38,7 @@ Do not call any methods other than `valid`, `operator=`, and the destructor on a
 |Name|Description|
 |----------|-----------------|
 |[get](#get)|Retrieves the result that's stored in the *associated asynchronous state*.|
-|[valid](#valid)|Specifies whether the object is not empty.|
+|[valid](#valid)|Specifies whether the object isn't empty.|
 |[wait](#wait)|Blocks the current thread until the associated asynchronous state is ready.|
 |[wait_for](#wait_for)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|
 |[wait_until](#wait_until)|Blocks until the associated asynchronous state is ready or until a specified point in time.|
