@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: weak_ptr Class"
 title: "weak_ptr Class"
-ms.date: "07/29/2019"
+ms.date: 06/21/2022
 f1_keywords: ["memory/std::weak_ptr", "memory/std::weak_ptr::element_type", "memory/std::weak_ptr::expired", "memory/std::weak_ptr::lock", "memory/std::weak_ptr::owner_before", "memory/std::weak_ptr::reset", "memory/std::weak_ptr::swap", "memory/std::weak_ptr::use_count", "memory/std::weak_ptr::operator="]
 helpviewer_keywords: ["std::weak_ptr [C++]", "std::weak_ptr [C++], element_type", "std::weak_ptr [C++], expired", "std::weak_ptr [C++], lock", "std::weak_ptr [C++], owner_before", "std::weak_ptr [C++], reset", "std::weak_ptr [C++], swap", "std::weak_ptr [C++], use_count", "std::weak_ptr [C++], element_type", "std::weak_ptr [C++], expired", "std::weak_ptr [C++], lock", "std::weak_ptr [C++], owner_before", "std::weak_ptr [C++], reset", "std::weak_ptr [C++], swap", "std::weak_ptr [C++], use_count"]
+ms.custom: devdivchpfy22
 ---
+
 # `weak_ptr` Class
 
 Wraps a weakly linked pointer.

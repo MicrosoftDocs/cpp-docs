@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: index Class"
 title: "index Class"
-ms.date: "03/27/2019"
+ms.date: 06/21/2022
 f1_keywords: ["AMP/index", "AMP/Concurrency::index::index", "AMP/Concurrency::index::rank"]
 helpviewer_keywords: ["index structure"]
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
+ms.custom: devdivchpfy22
 ---
+
 # index Class
 
 Defines an *N*-dimensional index vector.
