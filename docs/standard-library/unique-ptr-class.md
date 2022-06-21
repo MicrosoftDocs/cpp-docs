@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: unique_ptr Class"
 title: "unique_ptr Class"
-ms.date: "11/04/2016"
+ms.date: 06/20/2022
 f1_keywords: ["memory/std::unique_ptr", "memory/std::unique_ptr::deleter_type", "memory/std::unique_ptr::element_type", "memory/std::unique_ptr::pointer", "memory/std::unique_ptr::get", "memory/std::unique_ptr::get_deleter", "memory/std::unique_ptr::release", "memory/std::unique_ptr::reset", "memory/std::unique_ptr::swap"]
 helpviewer_keywords: ["std::unique_ptr [C++]", "std::unique_ptr [C++], deleter_type", "std::unique_ptr [C++], element_type", "std::unique_ptr [C++], pointer", "std::unique_ptr [C++], get", "std::unique_ptr [C++], get_deleter", "std::unique_ptr [C++], release", "std::unique_ptr [C++], reset", "std::unique_ptr [C++], swap"]
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
+ms.custom: devdivchpfy22
 ---
+
 # `unique_ptr` Class
 
 Stores a pointer to an owned object or array. The object/array is owned by no other `unique_ptr`. The object/array is destroyed when the `unique_ptr` is destroyed.
@@ -96,7 +98,7 @@ Use the [`make_unique`](../standard-library/memory-functions.md#make_unique) hel
 
 The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter` `default_delete<T>` assumes that the resource pointed to by `ptr` is allocated with **`new`**, and that it can be freed by calling `delete _Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter` `default_delete<T[]>`, specialized to call `delete[] ptr`.)
 
-The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is `Del::pointer` if defined, and `T *` if not. The stored `deleter` object `stored_deleter` occupies no space in the object if the `deleter` is stateless. Note that `Del` can be a reference type.
+The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It's `Del::pointer` if defined, and `T *` if not. The stored `deleter` object `stored_deleter` occupies no space in the object if the `deleter` is stateless. Note that `Del` can be a reference type.
 
 ## Members
 
@@ -290,9 +292,9 @@ A pointer to the resource to take ownership of.
 
 #### Remarks
 
-Use `reset` to change the stored [`pointer`](#pointer) owned by the `unique_ptr` to *ptr* and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [`get_deleter`](#get_deleter) on the original stored pointer.
+Use `reset` to change the stored [`pointer`](#pointer) owned by the `unique_ptr` to *ptr* and then delete the original stored pointer. If the `unique_ptr` wasn't empty, `reset` invokes the deleter function returned by [`get_deleter`](#get_deleter) on the original stored pointer.
 
-Because `reset` first stores the new pointer *`ptr`*, and then deletes the original stored pointer, it's possible for `reset` to immediately delete *`ptr`* if it is the same as the original stored pointer.
+Because `reset` first stores the new pointer *`ptr`*, and then deletes the original stored pointer, it's possible for `reset` to immediately delete *`ptr`* if it's the same as the original stored pointer.
 
 ### <a name="swap"></a> `swap`
 
