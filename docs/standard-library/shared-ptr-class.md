@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: shared_ptr class"
 title: "shared_ptr class"
-ms.date: "07/29/2019"
+ms.date: 06/20/2022
 f1_keywords: ["memory/std::shared_ptr", "memory/std::shared_ptr::element_type", "memory/std::shared_ptr::get", "memory/std::shared_ptr::owner_before", "memory/std::shared_ptr::reset", "memory/std::shared_ptr::swap", "memory/std::shared_ptr::unique", "memory/std::shared_ptr::use_count", "memory/std::shared_ptr::operator boolean-type", "memory/std::shared_ptr::operator*", "memory/std::shared_ptr::operator=", "memory/std::shared_ptr::operator->"]
 helpviewer_keywords: ["std::shared_ptr [C++]", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count"]
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
+ms.custom: devdivchpfy22
 ---
+
 # `shared_ptr` class
 
 Wraps a reference-counted smart pointer around a dynamically allocated object.
@@ -25,7 +27,7 @@ A `shared_ptr` stops owning a resource when it's reassigned or reset.
 
 The template argument `T` might be an incomplete type except as noted for certain member functions.
 
-When a `shared_ptr<T>` object is constructed from a resource pointer of type `G*` or from a `shared_ptr<G>`, the pointer type `G*` must be convertible to `T*`. If it's not convertible, the code will not compile. For example:
+When a `shared_ptr<T>` object is constructed from a resource pointer of type `G*` or from a `shared_ptr<G>`, the pointer type `G*` must be convertible to `T*`. If it's not convertible, the code won't compile. For example:
 
 ```cpp
 #include <memory>
@@ -63,29 +65,29 @@ The `shared_ptr` objects that own a resource share a control block. The control 
 
 - the custom allocator for the control block if it has one.
 
-A `shared_ptr` object that is initialized by using a null pointer has a control block and is not empty. After a `shared_ptr` object releases a resource, it no longer owns that resource. After a `weak_ptr` object releases a resource, it no longer points to that resource.
+A `shared_ptr` object that is initialized by using a null pointer has a control block and isn't empty. After a `shared_ptr` object releases a resource, it no longer owns that resource. After a `weak_ptr` object releases a resource, it no longer points to that resource.
 
 When the number of `shared_ptr` objects that own a resource becomes zero, the resource is freed, either by deleting it or by passing its address to a deleter, depending on how ownership of the resource was originally created. When the number of `shared_ptr` objects that own a resource is zero, and the number of `weak_ptr` objects that point to that resource is zero, the control block is freed, using the custom allocator for the control block if it has one.
 
-An empty `shared_ptr` object does not own any resources and has no control block.
+An empty `shared_ptr` object doesn't own any resources and has no control block.
 
 A deleter is a function object that has a member function `operator()`. Its type must be copy constructible, and its copy constructor and destructor must not throw exceptions. It accepts one parameter, the object to be deleted.
 
 Some functions take an argument list that defines properties of the resulting `shared_ptr<T>` or `weak_ptr<T>` object. You can specify such an argument list in several ways:
 
-no arguments -- the resulting object is an empty `shared_ptr` object or an empty `weak_ptr` object.
+no arguments: The resulting object is an empty `shared_ptr` object or an empty `weak_ptr` object.
 
-`ptr` -- a pointer of type `Other*` to the resource to be managed. `T` must be a complete type. If the function fails (because the control block can't be allocated), it evaluates the expression `delete ptr`.
+`ptr`: A pointer of type `Other*` to the resource to be managed. `T` must be a complete type. If the function fails (because the control block can't be allocated), it evaluates the expression `delete ptr`.
 
-`ptr, deleter` -- a pointer of type `Other*` to the resource to be managed and a deleter for that resource. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well-defined.
+`ptr, deleter`: A pointer of type `Other*` to the resource to be managed and a deleter for that resource. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well-defined.
 
-`ptr, deleter, alloc` -- a pointer of type `Other*` to the resource to be managed, a deleter for that resource, and an allocator to manage any storage that must be allocated and freed. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well-defined.
+`ptr, deleter, alloc`: A pointer of type `Other*` to the resource to be managed, a deleter for that resource, and an allocator to manage any storage that must be allocated and freed. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well-defined.
 
-`sp` -- a `shared_ptr<Other>` object that owns the resource to be managed.
+`sp`: A `shared_ptr<Other>` object that owns the resource to be managed.
 
-`wp` -- a `weak_ptr<Other>` object that points to the resource to be managed.
+`wp`: A `weak_ptr<Other>` object that points to the resource to be managed.
 
-`ap` -- an `auto_ptr<Other>` object that holds a pointer to the resource to be managed. If the function succeeds, it calls `ap.release()`; otherwise it leaves `ap` unchanged.
+`ap`: An `auto_ptr<Other>` object that holds a pointer to the resource to be managed. If the function succeeds, it calls `ap.release()`; otherwise it leaves `ap` unchanged.
 
 In all cases, the pointer type `Other*` must be convertible to `T*`.
 
@@ -162,7 +164,7 @@ element_type* get() const noexcept;
 
 ### Remarks
 
-The member function returns the address of the owned resource. If the object does not own a resource, it returns 0.
+The member function returns the address of the owned resource. If the object doesn't own a resource, it returns 0.
 
 ### Example
 
@@ -705,7 +707,7 @@ The shared pointer to swap with.
 
 ### Remarks
 
-The member function leaves the resource originally owned by **`*this`** subsequently owned by *`sp`*, and the resource originally owned by *`sp`* subsequently owned by **`*this`**. The function does not change the reference counts for the two resources and it does not throw any exceptions.
+The member function leaves the resource originally owned by **`*this`** subsequently owned by *`sp`*, and the resource originally owned by *`sp`* subsequently owned by **`*this`**. The function doesn't change the reference counts for the two resources and it doesn't throw any exceptions.
 
 ### Example
 

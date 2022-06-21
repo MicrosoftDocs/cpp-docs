@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: User Record"
 title: "User Record"
-ms.date: "05/09/2019"
+ms.date: 06/21/2022
 helpviewer_keywords: ["records, user", "OLE DB providers, user record", "user records", "user records, described", "rowsets, user record"]
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
+ms.custom: devdivchpfy22
 ---
+
 # User Record
 
 > [!NOTE]
@@ -53,7 +55,7 @@ The PROVIDER_COLUMN_MAP macros aid in creating a `GetColumnInfo` function:
 
 - END_PROVIDER_COLUMN_MAP closes the array and the function. It also places the array element count into the *pcCols* parameter.
 
-When a user record is created at run time, `GetColumnInfo` uses the *pThis* parameter to receive a pointer to a rowset or command instance. Commands and rowsets must support the `IColumnsInfo` interface, so column information can be taken from this pointer.
+When a user record is created at run time, `GetColumnInfo` uses the *`pThis`* parameter to receive a pointer to a rowset or command instance. Commands and rowsets must support the `IColumnsInfo` interface, so column information can be taken from this pointer.
 
 `CommandClass` and `RowsetClass` are the command and rowset that use the user record.
 

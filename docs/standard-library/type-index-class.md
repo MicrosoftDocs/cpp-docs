@@ -1,11 +1,13 @@
 ---
 description: "Learn more about: type_index Class"
 title: "type_index Class"
-ms.date: "11/04/2016"
+ms.date: 06/20/2022
 f1_keywords: ["typeindex/std::type_index"]
 helpviewer_keywords: ["type_index class"]
 ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f
+ms.custom: devdivchpfy22
 ---
+
 # type_index Class
 
 The `type_index` class wraps a pointer to [type_info Class](../cpp/type-info-class.md) to assist in indexing by such objects.
