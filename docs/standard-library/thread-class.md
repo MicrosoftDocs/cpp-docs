@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: thread Class"
 title: "thread Class"
-ms.date: "08/17/2021"
+ms.date: 06/20/2022
 f1_keywords: ["thread/std::thread", "thread/std::thread::id Class", "thread/std::thread::thread", "thread/std::thread::detach", "thread/std::thread::get_id", "thread/std::thread::hardware_concurrency", "thread/std::thread::join", "thread/std::thread::joinable", "thread/std::thread::native_handle", "thread/std::thread::swap"]
 helpviewer_keywords: ["std::thread [C++]", "std::thread [C++], thread", "std::thread [C++], detach", "std::thread [C++], get_id", "std::thread [C++], hardware_concurrency", "std::thread [C++], join", "std::thread [C++], joinable", "std::thread [C++], native_handle", "std::thread [C++], swap"]
+ms.custom: devdivchpfy22
 ---
+
 # `thread` Class
 
 Defines an object that's used to observe and manage a thread of execution within an application.
@@ -17,7 +19,7 @@ class thread;
 
 ## Remarks
 
-You can use a `thread` object to observe and manage a thread of execution within an application. A `thread` object that's created by using the default constructor isn't associated with any thread of execution. A `thread` object that's constructed by using a callable object creates a new thread of execution and calls the callable object in that `thread`. `Thread` objects can be moved but not copied. Which is why a thread of execution can be associated with only one `thread` object.
+You can use a `thread` object to observe and manage a thread of execution within an application. A `thread` object that's created by using the default constructor isn't associated with any thread of execution. A `thread` object that's constructed by using a callable object creates a new thread of execution and calls the callable object in that `thread`. `Thread` objects can be moved but not copied, which is why a thread of execution can be associated with only one `thread` object.
 
 Every thread of execution has a unique identifier of type `thread::id`. The function `this_thread::get_id` returns the identifier of the calling thread. The member function `thread::get_id` returns the identifier of the thread that's managed by a `thread` object. For a default-constructed `thread` object, the `thread::get_id` method returns an object that has a value that's the same for all default-constructed `thread` objects and different from the value that's returned by `this_thread::get_id` for any thread of execution that could be joined at the time of the call.
 
@@ -97,7 +99,7 @@ static unsigned int hardware_concurrency() noexcept;
 
 ### Return Value
 
-An estimate of the number of hardware thread contexts. If the value cannot be computed or isn't well defined, this method returns 0.
+An estimate of the number of hardware thread contexts. If the value can't be computed or isn't well defined, this method returns 0.
 
 ### Microsoft Specific
 

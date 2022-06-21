@@ -1,10 +1,12 @@
 ---
 description: "Learn more about: unique_lock Class"
 title: "unique_lock Class"
-ms.date: "11/04/2016"
+ms.date: 06/20/2022
 f1_keywords: ["mutex/std::unique_lock"]
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
+ms.custom: devdivchpfy22
 ---
+
 # unique_lock Class
 
 Represents a template that can be instantiated to create objects that manage the locking and unlocking of a `mutex`.
