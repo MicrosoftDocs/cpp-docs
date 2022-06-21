@@ -29,7 +29,7 @@ double wcstod(
    const wchar_t *strSource,
    wchar_t **endptr
 );
-double wcstod_l(
+double _wcstod_l(
    const wchar_t *strSource,
    wchar_t **endptr,
    _locale_t locale
