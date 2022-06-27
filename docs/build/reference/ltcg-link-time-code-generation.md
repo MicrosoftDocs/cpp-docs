@@ -27,7 +27,7 @@ These options are deprecated starting in Visual Studio 2015:
 (Optional) Specifies whether the linker displays a progress indicator that shows what percentage of the link is complete. By default, this status information isn't displayed.
 
 **`OFF`**<br/>
-(Optional) Disables link-time code generation. This behavior is the same as when **`/LTCG`** isn't specified on the command line.
+(Optional) Disables link-time code generation. The linker treats all modules compiled with **`/GL`** as if they're compiled without that option, and any MSIL modules cause the link to fail.
 
 **`PGINSTRUMENT`**<br/>
 (Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **`/LTCG`** and [`/GENPROFILE` or `/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **`/LTCG:PGI`**.
