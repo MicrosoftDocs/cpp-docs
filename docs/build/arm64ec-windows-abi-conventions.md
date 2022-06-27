@@ -125,11 +125,11 @@ In addition to handling parameters and the return address, the thunk bridges the
 
 The entry thunk performs the following actions:
 
-| Parameter number | Stack usage | Stack unwind codes |
-|--|--|--|
-| 0-4 | Stores ARM64EC `v6` and `v7` into the caller-allocated home space<br/><br/>Since the callee is ARM64EC, which doesn't have the notion of a home space, the stored values aren't clobbered.<br/><br/>Allocates an extra 128 bytes on the stack and store ARM64EC `v8` through `v15`. | `UWOP_SAVE_XMM128` for `xmm6` and `xmm7`<br/><br/>`UWOP_ALLOC_SMALL` + `UWOP_SAVE_XMM128` for `xmm8-xmm15` |
-| 5-8 | `x4` = 5th parameter from the stack<br/>`x5` = 6th parameter from the stack<br/>`x6` = 7th parameter from the stack<br/>`x7` = 8th parameter from the stack<br/><br/>If the parameter is SIMD, the `v4`-`v7` registers are used instead | Same as above |
-| 9+ | Allocates `AlignUp(NumParams - 8 , 2) * 8` bytes on the stack. \*<br/><br/>Copies the 9th and remaining parameters to this area | `UWOP_ALLOC_SMALL` |
+| Parameter number | Stack usage |
+|--|--|
+| 0-4 | Stores ARM64EC `v6` and `v7` into the caller-allocated home space<br/><br/>Since the callee is ARM64EC, which doesn't have the notion of a home space, the stored values aren't clobbered.<br/><br/>Allocates an extra 128 bytes on the stack and store ARM64EC `v8` through `v15`. |
+| 5-8 | `x4` = 5th parameter from the stack<br/>`x5` = 6th parameter from the stack<br/>`x6` = 7th parameter from the stack<br/>`x7` = 8th parameter from the stack<br/><br/>If the parameter is SIMD, the `v4`-`v7` registers are used instead |
+| 9+ | Allocates `AlignUp(NumParams - 8 , 2) * 8` bytes on the stack. \*<br/><br/>Copies the 9th and remaining parameters to this area |
 
 \* Aligning the value to an even number guarantees that the stack remains aligned to 16 bytes
 
@@ -146,11 +146,11 @@ For every call that an ARM64EC C/C++ function makes to potential x64 code, the M
 
 First, The thunk pushes the return address that's in the ARM64EC `lr` register and a dummy 8-byte value to guarantee that the stack is aligned to 16 bytes. Second, the thunk handles the parameters:
 
-| Parameter number | Stack usage | Stack unwind codes |
-|--|--|--|
-| 0-4 | Allocates 32 bytes of home space on the stack | `UWOP_ALLOC_SMALL` |
-| 5-8 | Allocates `AlignUp(NumParams - 4, 2) * 8` more bytes higher up on the stack. \* <br/><br/> Copies the 5th and any subsequent parameters from ARM64EC's `x4`-`x7` to this extra space | `UWOP_ALLOC_SMALL` |
-| 9+ | Copies the 9th and remaining parameters to the extra space | `UWOP_ALLOC_SMALL` |
+| Parameter number | Stack usage |
+|--|--|
+| 0-4 | Allocates 32 bytes of home space on the stack |
+| 5-8 | Allocates `AlignUp(NumParams - 4, 2) * 8` more bytes higher up on the stack. \* <br/><br/> Copies the 5th and any subsequent parameters from ARM64EC's `x4`-`x7` to this extra space |
+| 9+ | Copies the 9th and remaining parameters to the extra space |
 
 \* Aligning the value to an even number guarantees that the stack remains aligned to 16 bytes.
 

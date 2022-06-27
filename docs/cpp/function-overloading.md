@@ -9,7 +9,7 @@ ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 
 C++ lets you specify more than one function of the same name in the same scope. These functions are called *overloaded* functions, or *overloads*. Overloaded functions enable you to supply different semantics for a function, depending on the types and number of its arguments.
 
-For example, consider a `print` function that takes a `std::string` argument. This function might perform very different tasks than a function that takes an argument of type **`double`**. Overloading saves you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the types and number of arguments passed in by the caller. If you call `print(42.0)`, then the `void print(double d)` function is invoked. If you call `print("hello world")`, then the `void print(std::string)` overload is invoked.
+For example, consider a `print` function that takes a `std::string` argument. This function might perform very different tasks than a function that takes an argument of type **`double`**. Overloading keeps you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the types and number of arguments passed in by the caller. If you call `print(42.0)`, then the `void print(double d)` function is invoked. If you call `print("hello world")`, then the `void print(std::string)` overload is invoked.
 
 You can overload both member functions and free functions. The following table shows which parts of a function declaration C++ uses to differentiate between groups of functions with the same name in the same scope.
 
