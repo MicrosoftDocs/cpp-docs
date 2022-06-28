@@ -49,6 +49,8 @@ Visual C++ manages a single .RC resource file and a corresponding .H header file
 
 ### Resource View's Resource Includes dialog
 
+You can access the **Resource Includes** by going to the **Resource View** then right clicking the .rc file and selecting **Resource Includes**
+
 #### Symbol Header File
 
 By default, Visual C++ always names the corresponding header file RESOURCE.H, regardless of the name of the resource file (e.g., MYAPP.RC). The **Symbol Header File:** section in the **Resource Includes** dialog in Visual C++, lets you change the name of this header file. Enter a new file name in the section's edit box.
