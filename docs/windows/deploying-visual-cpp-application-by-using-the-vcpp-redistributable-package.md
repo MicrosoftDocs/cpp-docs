@@ -26,10 +26,10 @@ You must have these components to complete this walkthrough:
 
     ```cmd
     @echo off
-    ::vc_redist.x86.exe    :: remove leading :: to install Redistributable for x86
-    ::vc_redist.x64.exe    :: remove leading :: to install Redistributable for x64
-    ::vc_redist.arm64.exe  :: remove leading :: to install Redistributable for ARM64
-    ::vcredist_arm.exe     :: remove leading :: to install VS 2015 Redistributable for ARM
+    REM Choose one of the following Redistributable files to install
+    ::vc_redist.x86.exe    REM remove leading :: to install Redistributable for x86
+    ::vc_redist.x64.exe    REM remove leading :: to install Redistributable for x64
+    ::vc_redist.arm64.exe  REM remove leading :: to install Redistributable for ARM64
     mkdir "C:\Program Files\MyMFCApp"
     copy MyMFCApp.exe "C:\Program Files\MyMFCApp"
     ```
