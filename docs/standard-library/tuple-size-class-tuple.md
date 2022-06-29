@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: tuple_size Class;"
-title: "tuple_size Class;"
-ms.date: "11/04/2016"
+description: "Learn more about: tuple_size class;"
+title: "tuple_size class;"
+ms.date: 06/29/2022
 f1_keywords: ["tuple_size", "std::tuple_size", "utility/std::tuple_size"]
 helpviewer_keywords: ["std::tuple_size"]
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
 ---
-# tuple_size Class;
+# `tuple_size` class
 
 Reports the number of elements that a `tuple` contains.
 
@@ -43,37 +43,35 @@ template <class Tuple>
 // size of const volatile tuple
 template <class Tuple>
    struct tuple_size<const volatile Tuple>;
-```
 
-```cpp
 template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
 ```
 
 ### Parameters
 
-*Tuple*\
+*`Tuple`*\
 The type of the tuple.
 
-*Elem*\
+*`Elem`*\
 The type of the array elements.
 
-*Size*\
+*`Size`*\
 The size of the array.
 
-*T1*\
+*`T1`*\
 The type of the first member of the pair.
 
-*T2*\
+*`T2`*\
 The type of the second member of the pair.
 
-*Types*\
+*`Types`*\
 The types of the tuple elements.
 
 ## Remarks
 
-The class template has a member `value` that is an integral constant expression whose value is the extent of the tuple type *Tuple*.
+The class template has a member `value` that is an integral constant expression whose value is the extent of the tuple type *`Tuple`*.
 
-The template specialization for arrays has a member `value` that is an integral constant expression whose value is *Size*, which is the size of the array.
+The template specialization for arrays has a member `value` that is an integral constant expression whose value is *`Size`*, which is the size of the array.
 
 The template specialization for pair has a member `value` that is an integral constant expression whose value is 2.
 
@@ -108,10 +106,10 @@ int main()
 
 ## Requirements
 
-**Header:** \<tuple>
+**Header:** `<tuple>`
 
-**Header:** \<array> (for array specialization)
+**Header:** `<array>` (for array specialization)
 
-**Header:** \<utility> (for pair specialization)
+**Header:** `<utility>` (for pair specialization)
 
-**Namespace:** std
+**Namespace:** `std`
