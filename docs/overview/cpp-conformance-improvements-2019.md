@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
-ms.date: 02/22/2022
+ms.date: 06/29/2022
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2019
@@ -23,7 +23,7 @@ Modules are now officially in the C++20 standard. Improved support was added in 
 
 ### Modified specification of aggregate type
 
-The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](https://wg21.link/p1008r1)). In Visual Studio 2019, under **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11), a class with any user-declared constructor (for example, including a constructor declared `= default` or `= delete`) isn't an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts more restrictions on how such types can be initialized.
+The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](https://wg21.link/p1008r1)). In Visual Studio 2019, under **`/std:c++latest`** (or **`/std:c++20`** in Visual Studio 2019 version 16.11 and later), a class with any user-declared constructor (for example, including a constructor declared `= default` or `= delete`) isn't an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts more restrictions on how such types can be initialized.
 
 The following code compiles without errors in Visual Studio 2017 but raises errors C2280 and C2440 in Visual Studio 2019 under **`/std:c++20`** or **`/std:c++latest`**:
 
@@ -445,11 +445,11 @@ The `std::bitset` constructor no longer reads the ones and zeroes in reverse ord
 
 ### `std::pair::operator=` regression
 
-Fixed a regression in the `std::pair` assignment operator introduced when implementing [LWG 2729 "Missing SFINAE on `std::pair::operator=`";](https://cplusplus.github.io/LWG/issue2729). It now correctly accepts types convertible to `std::pair` again.
+We fixed a regression in the `std::pair` assignment operator introduced when implementing [LWG 2729 "Missing SFINAE on `std::pair::operator=`";](https://cplusplus.github.io/LWG/issue2729). It now correctly accepts types convertible to `std::pair` again.
 
 ### Non-deduced contexts for `add_const_t`
 
-Fixed a minor type traits bug, where `add_const_t` and related functions are supposed to be a non-deduced context. In other words, `add_const_t` should be an alias for `typename add_const<T>::type`, not `const T`.
+We fixed a minor type traits bug, where `add_const_t` and related functions are supposed to be a non-deduced context. In other words, `add_const_t` should be an alias for `typename add_const<T>::type`, not `const T`.
 
 ## <a name="improvements_161"></a> Conformance improvements in 16.1
 
@@ -466,7 +466,7 @@ const char8_t* s = u8"Hello"; // C++20
 
 ### `std::type_identity` metafunction and `std::identity` function object
 
-[P0887R1 type_identity](https://wg21.link/p0887r1). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under **`/std:c++latest`** (**`/std:c++20`** starting in Visual Studio 2019 version 16.11).
+[P0887R1 type_identity](https://wg21.link/p0887r1). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under **`/std:c++latest`** (**`/std:c++20`** in Visual Studio 2019 version 16.11 and later).
 
 The following example produces deprecation warning C4996 for `std::identity` (defined in \<type_traits>) in Visual Studio 2017:
 
@@ -493,7 +493,7 @@ long j = static_cast<long>(i);
 
 ### Syntax checks for generic lambdas
 
-The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under **`/std:c++latest`** (**`/std:c++20`** starting in Visual Studio 2019 version 16.11) or under any other language mode with [`/Zc:lambda`](../build/reference/zc-lambda.md) in Visual Studio 2019 version 16.9 or later (previously available as **`/experimental:newLambdaProcessor`** beginning in Visual Studio 2019 version 16.3).
+The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under **`/std:c++latest`** (**`/std:c++20`** in Visual Studio 2019 version 16.11 and later) or under any other language mode with [`/Zc:lambda`](../build/reference/zc-lambda.md) in Visual Studio 2019 version 16.9 or later (previously available as **`/experimental:newLambdaProcessor`** beginning in Visual Studio 2019 version 16.3).
 
 The legacy lambda processor compiles this example without warnings, but the new lambda processor produces error C2760:
 
@@ -517,11 +517,11 @@ void f() {
 
 ### Argument-dependent lookup for function calls
 
-[P0846R0](https://wg21.link/p0846r0) (C++20) Increased ability to find function templates via argument-dependent lookup for function-call expressions with explicit template arguments. Requires **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11).
+[P0846R0](https://wg21.link/p0846r0) (C++20) Increased ability to find function templates via argument-dependent lookup for function-call expressions with explicit template arguments. Requires **`/std:c++latest`** (or **`/std:c++20`** in Visual Studio 2019 version 16.11 and later).
 
 ### Designated initialization
 
-[P0329R4](https://wg21.link/p0329r4) (C++20) *Designated initialization* allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11).
+[P0329R4](https://wg21.link/p0329r4) (C++20) *Designated initialization* allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **`/std:c++latest`** (or **`/std:c++20`** in Visual Studio 2019 version 16.11 and later).
 
 ### Ranking of enum conversion to its fixed underlying type
 
@@ -616,7 +616,7 @@ C++20 has deprecated the usual arithmetic conversions on operands, where:
 
 For more information, see [P1120R0](https://wg21.link/p1120r0).
 
-In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 C5054 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 C5054 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** in Visual Studio 2019 version 16.11 and later):
 
 ```cpp
 enum E1 { a };
@@ -636,7 +636,7 @@ int main() {
 }
 ```
 
-Using a binary operation between an enumeration and a floating-point type is now a level 1 C5055 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+Using a binary operation between an enumeration and a floating-point type is now a level 1 C5055 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** in Visual Studio 2019 version 16.11 and later):
 
 ```cpp
 enum E1 { a };
@@ -656,7 +656,7 @@ int main() {
 
 ### Equality and relational comparisons of arrays
 
-Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces level 1 warning C5056 when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
+Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. In Visual Studio 2019 version 16.2 and later, the following code produces level 1 warning C5056 when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** in Visual Studio 2019 version 16.11 and later):
 
 ```cpp
 int main() {
@@ -818,7 +818,7 @@ int main() {
 
 ### New keywords `requires` and `concept`
 
-New keywords **`requires`** and **`concept`** have been added to the Microsoft C++ compiler. If you attempt to use either one as an identifier in **`/std:c++20`** or **`/std:c++latest`** mode, the compiler will raise C2059: "syntax error".
+New keywords **`requires`** and **`concept`** have been added to the Microsoft C++ compiler. If you attempt to use either one as an identifier in **`/std:c++20`** or **`/std:c++latest`** mode, the compiler raises C2059 to indicate a syntax error.
 
 ### Constructors as type names disallowed
 
@@ -844,7 +844,7 @@ class Foo {
 
 ### Stricter checking of `extern "C"` functions
 
-If an **`extern "C"`** function was declared in different namespaces, previous versions of the Microsoft C++ compiler didn't check whether the declarations were compatible. Starting in Visual Studio 2019 version 16.3, the compiler checks for compatibility. In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the following code produces errors C2371 and C2733:
+If an **`extern "C"`** function was declared in different namespaces, previous versions of the Microsoft C++ compiler didn't check whether the declarations were compatible. In Visual Studio 2019 version 16.3 and later, the compiler checks for compatibility. In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the following code produces errors C2371 and C2733:
 
 ```cpp
 using BOOL = int;
@@ -934,7 +934,7 @@ In conformance mode (enabled by [`/permissive-`](../build/reference/permissive-s
 
 This change can lead to different warning diagnostics being generated, and behavior differences for arithmetic operations on literals.
 
-The following example shows the new behavior in Visual Studio 2019 version 16.4. The `i` variable is now of type **`unsigned int`**. That's why the warning is raised. The high-order bits of the variable `j` are set to 0.
+The following example shows the new behavior in Visual Studio 2019 version 16.4. The `i` variable is now of type **`unsigned int`**, so the warning is raised. The high-order bits of the variable `j` are set to 0.
 
 ```cpp
 void f(int r) {
@@ -1373,7 +1373,7 @@ There are many possible fixes:
 
 ### `switch` warnings for C
 
-Starting in Visual Studio 2019 version 16.6, the compiler implements some preexisting C++ warnings for code compiled as C. The following warnings are now enabled at different levels: C4060, C4061, C4062, C4063, C4064, C4065, C4808, and C4809. Warnings C4065 and C4060 are disabled by default in C.
+In Visual Studio 2019 version 16.6 and later, the compiler implements some preexisting C++ warnings for code compiled as C. The following warnings are now enabled at different levels: C4060, C4061, C4062, C4063, C4064, C4065, C4808, and C4809. Warnings C4065 and C4060 are disabled by default in C.
 
 The warnings trigger on missing **`case`** statements, undefined **`enum`**, and bad **`bool`** switch statements (that is, ones that contain too many cases). For example:
 
@@ -1407,7 +1407,7 @@ int main() {
 
 ### Unnamed classes in `typedef` declarations
 
-Starting in Visual Studio 2019 version 16.6, the behavior of **`typedef`** declarations has been restricted to conform to [P1766R1](https://wg21.link/P1766R1). With this update, unnamed classes within a **`typedef`** declaration can't have any members other than:
+In Visual Studio 2019 version 16.6 and later, the behavior of **`typedef`** declarations has been restricted to conform to [P1766R1](https://wg21.link/P1766R1). With this update, unnamed classes within a **`typedef`** declaration can't have any members other than:
 
 - non-static data members with no default member initializers,
 - member classes, or
@@ -1447,7 +1447,7 @@ typedef struct S_ : B {
 
 ### Default argument import in C++/CLI
 
-An increasing number of APIs have default arguments in .NET Core. That's why we now support default argument import in C++/CLI. This change can break existing code where multiple overloads are declared, as in this example:
+An increasing number of APIs have default arguments in .NET Core. So, we now support default argument import in C++/CLI. This change can break existing code where multiple overloads are declared, as in this example:
 
 ```cpp
 public class R {
@@ -1883,7 +1883,7 @@ struct promise_type {
 
 #### Type of `yield_value`
 
-In C++20, the promise `yield_value` function must return an awaitable. In **`/await`** mode, the `yield_value` function was permitted to return **`void`**, and would always suspend. Such functions can be replaced with a function that returns `std::suspend_always`.
+In C++20, the promise `yield_value` function must return an awaitable type. In **`/await`** mode, the `yield_value` function was permitted to return **`void`**, and would always suspend. Such functions can be replaced with a function that returns `std::suspend_always`.
 
 ```cpp
 // /await
@@ -2160,7 +2160,7 @@ bool f(S a, S b) {
 }
 ```
 
-However, the compiler wouldn't invoke the comparison function the author might expect. The code above should have rewritten `a < b` as `(a <=> b) < 0`. Instead, the compiler used the `operator bool()` user-defined conversion function and compared `bool(a) < bool(b)`. Starting in Visual Studio 2019 version 16.9, the compiler rewrites the expression using the expected spaceship operator expression.
+However, the compiler wouldn't invoke the comparison function the author might expect. The code above should have rewritten `a < b` as `(a <=> b) < 0`. Instead, the compiler used the `operator bool()` user-defined conversion function and compared `bool(a) < bool(b)`. In Visual Studio 2019 version 16.9 and later, the compiler rewrites the expression using the expected spaceship operator expression.
 
 #### Source breaking change
 
@@ -2180,7 +2180,7 @@ struct Derived : Base {
 bool b = Base{} == Derived{};
 ```
 
-In C++17, this code would be accepted because of the derived-to-base conversion of `Derived` on the right-hand side of the expression. In C++20, the synthesized expression candidate is also added: `Derived{} == Base{}`. Because of the rules in the standard about which function wins based on conversions, it turns out that the choice between `Base::operator==` and `Derived::operator==` is undecidable. That's because the conversion sequences in the two expressions are no better or worse than each other, so the example code results in an ambiguity.
+In C++17, this code would be accepted because of the derived-to-base conversion of `Derived` on the right-hand side of the expression. In C++20, the synthesized expression candidate is also added: `Derived{} == Base{}`. Because of the rules in the standard about which function wins based on conversions, it turns out that the choice between `Base::operator==` and `Derived::operator==` is undecidable. Because the conversion sequences in the two expressions are no better or worse than each other, the example code results in an ambiguity.
 
 To resolve the ambiguity, add a new candidate that won't be subject to the two conversion sequences:
 
@@ -2236,7 +2236,7 @@ void f(A);
 f(C{});
 ```
 
-Earlier versions of the compiler would incorrectly convert the argument of `f` from type `C` to an `A` by using the templated converting constructor of `A`. Standard C++ requires use of the conversion operator `B::operator A` instead. Starting in Visual Studio 2019 version 16.10, the overload resolution behavior is changed to use the correct overload.
+Earlier versions of the compiler would incorrectly convert the argument of `f` from type `C` to an `A` by using the templated converting constructor of `A`. Standard C++ requires use of the conversion operator `B::operator A` instead. In Visual Studio 2019 version 16.10 and later, the overload resolution behavior is changed to use the correct overload.
 
 This change can also correct the chosen overload in some other situations:
 
@@ -2265,7 +2265,7 @@ void f(Derived &d)
 
 ### Incorrect parsing of floating-point literals
 
-Starting in Visual Studio 2019 version 16.10, floating-point literals are parsed based on their actual type. Earlier versions of the compiler always parsed a floating-point literal as if it had type **`double`** and then converted the result to the actual type. This behavior could lead to incorrect rounding and rejection of valid values:
+In Visual Studio 2019 version 16.10 and later, floating-point literals are parsed based on their actual type. Earlier versions of the compiler always parsed a floating-point literal as if it had type **`double`** and then converted the result to the actual type. This behavior could lead to incorrect rounding and rejection of valid values:
 
 ```cpp
 // The binary representation is '0x15AE43FE' in VS2019 16.9
@@ -2288,7 +2288,7 @@ struct S {
 S s(4, &s);
 ```
 
-The compiler wouldn't declare the variable `s` until it parsed the whole declaration, including the constructor arguments. The lookup of the `s` in the constructor argument list would fail. Starting in Visual Studio 2019 version 16.10, this example now compiles correctly.
+The compiler wouldn't declare the variable `s` until it parsed the whole declaration, including the constructor arguments. The lookup of the `s` in the constructor argument list would fail. In Visual Studio 2019 version 16.10 and later, this example now compiles correctly.
 
 Unfortunately, this change can break existing code, as in this example:
 
@@ -2300,11 +2300,13 @@ S s(1, nullptr); // outer s
 }
 ```
 
-In earlier versions of the compiler, when it looks up `s` in the constructor arguments for the "inner" declaration of `s`, it finds the previous declaration ("outer" `s`) and the code compiles. Starting in version 16.10, the compiler emits warning [C4700](../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md) instead. That's because the compiler now declares the "inner" `s` before parsing the constructor arguments. So, the `s` lookup finds the "inner" `s`, which hasn't been initialized yet.
+In earlier versions of the compiler, when it looks up `s` in the constructor arguments for the "inner" declaration of `s`, it finds the previous declaration ("outer" `s`) and the code compiles. Starting in version 16.10, the compiler emits warning [C4700](../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md) instead. It's because the compiler now declares the "inner" `s` before parsing the constructor arguments. So, the `s` lookup finds the "inner" `s`, which hasn't been initialized yet.
 
 ### Explicitly specialized member of a class template
 
-Earlier versions of the compiler incorrectly marked an explicit specialization of a class template member as `inline` if it was also defined in the primary template. This behavior meant the compiler would sometimes reject conforming code. Starting in Visual Studio 2019 version 16.10, an explicit specialization is no longer implicitly marked as `inline` in **`/permissive-`** mode. Consider this example:
+Earlier versions of the compiler incorrectly marked an explicit specialization of a class template member as `inline` if it was also defined in the primary template. This behavior meant the compiler would sometimes reject conforming code. In Visual Studio 2019 version 16.10 and later, an explicit specialization is no longer implicitly marked as `inline` in **`/permissive-`** mode. Consider this example:
+
+Source file `s.h`:
 
 ```cpp
 // s.h
@@ -2315,10 +2317,14 @@ struct S {
 template<> int S<int>::f() { return 2; }
 ```
 
+Source file `s.cpp`:
+
 ```cpp
 // s.cpp
 #include "s.h"
 ```
+
+Source file `main.cpp`:
 
 ```cpp
 // main.cpp
@@ -2337,7 +2343,7 @@ template<> inline int S<int>::f() { return 2; }
 
 ### Deduced return type name mangling
 
-Starting in Visual Studio 2019 version 16.10, the compiler changed how it generates mangled names for functions that have deduced return types. For example, consider these functions:
+In Visual Studio 2019 version 16.10 and later, the compiler changed how it generates mangled names for functions that have deduced return types. For example, consider these functions:
 
 ```cpp
 auto f() { return 0; }
@@ -2377,10 +2383,14 @@ Earlier versions of the compiler would include the deduced return type as part o
 
 The new compiler behavior can produce a binary breaking change. Consider this example:
 
+Source file `a.cpp`:
+
 ```cpp
 // a.cpp
 auto f() { return 1; }
 ```
+
+Source file `main.cpp`:
 
 ```cpp
 // main.cpp
@@ -2398,7 +2408,7 @@ Previous versions of the compiler would silently ignore certain uses of a `nodis
 static [[nodiscard]] int f() { return 1; }
 ```
 
-Starting in Visual Studio 2019 version 16.10, the compiler emits level 4 warning C5240 instead:
+In Visual Studio 2019 version 16.10 and later, the compiler emits level 4 warning C5240 instead:
 
 ```Console
 a.cpp(1): warning C5240: 'nodiscard': attribute is ignored in this syntactic position
@@ -2412,7 +2422,7 @@ To fix this issue, move the attribute to the correct syntactic position:
 
 ### Warning for `include` directives with system header-names in module purview
 
-Starting in Visual Studio 2019 version 16.10, the compiler emits a warning to prevent a common module interface authoring mistake. If you include a standard library header after an `export module` statement, the compiler emits warning C5244. Here's an example:
+In Visual Studio 2019 version 16.10 and later, the compiler emits a warning to prevent a common module interface authoring mistake. If you include a standard library header after an `export module` statement, the compiler emits warning C5244. Here's an example:
 
 ```cpp
 export module m;
@@ -2441,7 +2451,7 @@ void f(std::vector<int>);
 
 ### Warning for unused internal linkage functions
 
-Starting in Visual Studio 2019 version 16.10, the compiler warns in more situations where an unreferenced function with internal linkage has been removed. Earlier versions of the compiler would emit warning [C4505](../error-messages/compiler-warnings/compiler-warning-level-4-c4505.md) for the following code:
+In Visual Studio 2019 version 16.10 and later, the compiler warns in more situations where an unreferenced function with internal linkage has been removed. Earlier versions of the compiler would emit warning [C4505](../error-messages/compiler-warnings/compiler-warning-level-4-c4505.md) for the following code:
 
 ```cpp
 static void f() // warning C4505: 'f': unreferenced function with internal linkage has been removed
@@ -2467,7 +2477,7 @@ auto f2() // warning C5245: 'f2': unreferenced function with internal linkage ha
 
 ### Warning on brace elision
 
-Starting in Visual Studio 2019 version 16.10, the compiler warns on initialization lists that don't use braces for subobjects. The compiler emits [off-by-default](../preprocessor/compiler-warnings-that-are-off-by-default.md) warning C5246.
+In Visual Studio 2019 version 16.10 and later, the compiler warns on initialization lists that don't use braces for subobjects. The compiler emits [off-by-default](../preprocessor/compiler-warnings-that-are-off-by-default.md) warning C5246.
 
 Here's an example:
 
@@ -2492,7 +2502,7 @@ S2 s2{ { 1, 2 }, 3 };
 
 ### Correctly detect if a `const` object isn't initialized
 
-Starting in Visual Studio 2019 version 16.10, the compiler now emits error C2737 when you attempt to define a `const` object that isn't fully initialized:
+In Visual Studio 2019 version 16.10 and later, the compiler now emits error C2737 when you attempt to define a `const` object that isn't fully initialized:
 
 ```cpp
 struct S {
@@ -2518,7 +2528,7 @@ struct S {
 
 ### `/std:c++20` compiler mode
 
-Starting in Visual Studio 2019 version 16.11, the compiler now supports the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler mode. Previously, C++20 features were available only in [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) mode in Visual Studio 2019. Features that originally required **`/std:c++latest`** mode now work in **`/std:c++20`** mode or later in the latest versions of Visual Studio.
+In Visual Studio 2019 version 16.11 and later, the compiler now supports the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler mode. Previously, C++20 features were available only in [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) mode in Visual Studio 2019. C++20 features that originally required **`/std:c++latest`** mode now work in **`/std:c++20`** mode or later in the latest versions of Visual Studio.
 
 ## See also
 

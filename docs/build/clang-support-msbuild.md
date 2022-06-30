@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 title: "Clang/LLVM support in Visual Studio projects"
-ms.date: 11/11/2021
+ms.date: 06/29/2022
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -35,7 +35,7 @@ To configure a Visual Studio project to use Clang, right-click on the project no
 
 If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in *%VCINSTALLDIR%\\Tools\\Llvm\\bin\\* and *%VCINSTALLDIR%\\Tools\\Llvm\\x64\\bin\\*.
 
-If you're using a custom Clang installation, you can either modify **Project** > **Properties** > **VC++ Directories** > **Configuration Properties** > **Executable Directories** by adding the custom Clang installation root as the first directory there, or change the value of the `LLVMInstallDir` property. For more information, see [Set a custom LLVM location](#custom_llvm_location).
+If you're using a custom Clang installation, you can change the value of the `LLVMInstallDir` property. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 
 ## Configure a Linux project to use Clang tools
 
