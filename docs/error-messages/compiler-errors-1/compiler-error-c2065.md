@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler Error C2065"
 title: "Compiler Error C2065"
-ms.date: "08/19/2019"
+ms.date: 06/29/2022
 f1_keywords: ["C2065"]
 helpviewer_keywords: ["C2065"]
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
@@ -10,7 +10,7 @@ ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
 
 > '*identifier*' : undeclared identifier
 
-The compiler can't find the declaration for an identifier. There are many possible causes for this error. The most common causes of C2065 are that the identifier hasn't been declared, the identifier is misspelled, the header where the identifier is declared is not included in the file, or the identifier is missing a scope qualifier, for example, `cout` instead of `std::cout`. For more information on declarations in C++, see [Declarations and Definitions (C++)](../../cpp/declarations-and-definitions-cpp.md).
+The compiler can't find the declaration for an identifier. There are many possible causes for this error. The most common causes of C2065 are that the identifier hasn't been declared, the identifier is misspelled, the header where the identifier is declared isn't included in the file, or the identifier is missing a scope qualifier, for example, `cout` instead of `std::cout`. For more information on declarations in C++, see [Declarations and Definitions (C++)](../../cpp/declarations-and-definitions-cpp.md).
 
 Here are some common issues and solutions in greater detail.
 
@@ -22,7 +22,7 @@ If the identifier is a member of a class or struct, or declared in a namespace, 
 
 If the identifier is the tag for a user-defined type, for example, a **`class`** or **`struct`**, the type of the tag must be declared before it can be used. For example, the declaration `struct SomeStruct { /*...*/ };` must exist before you can declare a variable `SomeStruct myStruct;` in your code.
 
-If the identifier is a type alias, the type must be declared by using a **`using`** declaration or **`typedef`** before it can be used. For example, you must declare `using my_flags = std::ios_base::fmtflags;` before you can use `my_flags` as a type alias for `std::ios_base::fmtflags`.
+If the identifier is a type alias, the type must be declared by a **`using`** declaration or **`typedef`** before it can be used. For example, you must declare `using my_flags = std::ios_base::fmtflags;` before you can use `my_flags` as a type alias for `std::ios_base::fmtflags`.
 
 ## Example: misspelled identifier
 
@@ -44,7 +44,7 @@ int main() {
 
 ## Example: use an unscoped identifier
 
-This error can occur if your identifier is not properly scoped. If you see C2065 when you use `cout`, this is the cause. When C++ Standard Library functions and operators are not fully qualified by namespace, or you have not brought the `std` namespace into the current scope by using a **`using`** directive, the compiler can't find them. To fix this issue, you must either fully qualify the identifier names, or specify the namespace with the **`using`** directive.
+This error can occur if your identifier isn't properly scoped. If you see C2065 when you use `cout`, a scope issue is the cause. When C++ Standard Library functions and operators aren't fully qualified by namespace, or you haven't brought the `std` namespace into the current scope by using a **`using`** directive, the compiler can't find them. To fix this issue, you must either fully qualify the identifier names, or specify the namespace with the **`using`** directive.
 
 This example fails to compile because `cout` and `endl` are defined in the `std` namespace:
 
@@ -66,20 +66,24 @@ Identifiers that are declared inside of **`class`**, **`struct`**, or **`enum cl
 
 ## Example: precompiled header isn't first
 
-This error can occur if you put any preprocessor directives, such as #include, #define, or #pragma, before the #include of a precompiled header file. If your source file uses a precompiled header file (that is, if it's compiled by using the **/Yu** compiler option) then all preprocessor directives before the precompiled header file are ignored.
+This error can occur if you put any preprocessor directives, such as `#include`, `#define`, or `#pragma`, before the `#include` of a precompiled header file. If your source file uses a precompiled header file (that is, if it's compiled by using the **`/Yu`** compiler option) then all preprocessor directives before the precompiled header file are ignored.
 
-This example fails to compile because `cout` and `endl` are defined in the \<iostream> header, which is ignored because it is included before the precompiled header file. To build this example, create all three files, then compile stdafx.cpp, then compile C2065_pch.cpp.
+This example fails to compile because `cout` and `endl` are defined in the `<iostream>` header, which is ignored because it's included before the precompiled header file. To build this example, create all three files, then compile `pch.h` (some versions of Visual Studio use `stdafx.cpp`), then compile `C2065_pch.cpp`.
 
 ```cpp
 // pch.h (stdafx.h in Visual Studio 2017 and earlier)
 #include <stdio.h>
 ```
 
+The `pch.h` or `stdafx.h` source file:
+
 ```cpp
 // pch.cpp (stdafx.cpp in Visual Studio 2017 and earlier)
 // Compile by using: cl /EHsc /W4 /c /Ycstdafx.h stdafx.cpp
 #include "pch.h"
 ```
+
+Source file `C2065_pch.cpp`:
 
 ```cpp
 // C2065_pch.cpp
@@ -94,11 +98,11 @@ int main() {
 }
 ```
 
-To fix this issue, add the #include of \<iostream> into the precompiled header file, or move it after the precompiled header file is included in your source file.
+To fix this issue, add the #include of `<iostream>` into the precompiled header file, or move it after the precompiled header file is included in your source file.
 
 ## Example: missing header file
 
-You have not included the header file that declares the identifier. Make sure the file that contains the declaration for the identifier is included in every source file that uses it.
+The error can occur if you haven't included the header file that declares the identifier. Make sure the file that contains the declaration for the identifier is included in every source file that uses it.
 
 ```cpp
 // C2065_header.cpp
@@ -127,11 +131,11 @@ int main() {
 }
 ```
 
-You may see this error in Windows Desktop app source files if you define `VC_EXTRALEAN`, `WIN32_LEAN_AND_MEAN`, or `WIN32_EXTRA_LEAN`. These preprocessor macros exclude some header files from windows.h and afxv\_w32.h to speed compiles. Look in windows.h and afxv_w32.h for an up-to-date description of what's excluded.
+You may see this error in Windows Desktop app source files if you define `VC_EXTRALEAN`, `WIN32_LEAN_AND_MEAN`, or `WIN32_EXTRA_LEAN`. These preprocessor macros exclude some header files from `windows.h` and `afxv_w32.h` to speed compiles. Look in `windows.h` and `afxv_w32.h` for an up-to-date description of what's excluded.
 
 ## Example: missing closing quote
 
-This error can occur if you are missing a closing quote after a string constant. This is an easy way to confuse the compiler. Note that the missing closing quote may be several lines before the reported error location.
+This error can occur if you're missing a closing quote after a string constant. It's an easy way to confuse the compiler. The missing closing quote may be several lines before the reported error location.
 
 ```cpp
 // C2065_quote.cpp
@@ -148,7 +152,7 @@ int main() {
 
 ## Example: use iterator outside for loop scope
 
-This error can occur if you declare an iterator variable in a **`for`** loop, and then you try to use that iterator variable outside the scope of the **`for`** loop. The compiler enables the [/Zc:forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) compiler option by default. See [Debug Iterator Support](../../standard-library/debug-iterator-support.md) for more information.
+This error can occur if you declare an iterator variable in a **`for`** loop, and then you try to use that iterator variable outside the scope of the **`for`** loop. The compiler enables the [`/Zc:forScope`](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) compiler option by default. For more information, see [Debug iterator support](../../standard-library/debug-iterator-support.md).
 
 ```cpp
 // C2065_iter.cpp
@@ -174,9 +178,9 @@ int main() {
 
 ## Example: preprocessor removed declaration
 
-This error can occur if you refer to a function or variable that is in conditionally compiled code that is not compiled for your current configuration. This can also occur if you call a function in a header file that is currently not supported in your build environment. If certain variables or functions are only available when a particular preprocessor macro is defined, make sure the code that calls those functions can only be compiled when the same preprocessor macro is defined. This issue is easy to spot in the IDE, because the declaration for the function is greyed out if the required preprocessor macros are not defined for the current build configuration.
+This error can occur if you refer to a function or variable that is in conditionally compiled code that isn't compiled for your current configuration. The error can also occur if you call a function in a header file that currently isn't supported in your build environment. If certain variables or functions are only available when a particular preprocessor macro is defined, make sure the code that calls those functions can only be compiled when the same preprocessor macro is defined. This issue is easy to spot in the IDE: The declaration for the function is greyed out if the required preprocessor macros aren't defined for the current build configuration.
 
-This is an example of code that works when you build in Debug, but not Retail:
+Here's an example of code that works when you build in Debug, but not Release:
 
 ```cpp
 // C2065_defined.cpp
@@ -198,7 +202,7 @@ int main() {
 
 ## Example: C++/CLI type deduction failure
 
-This error can occur when calling a generic function, if the intended type argument cannot be deduced from the parameters used. For more information, see [Generic Functions (C++/CLI)](../../extensions/generic-functions-cpp-cli.md).
+This error can occur when calling a generic function, if the intended type argument can't be deduced from the parameters used. For more information, see [Generic Functions (C++/CLI)](../../extensions/generic-functions-cpp-cli.md).
 
 ```cpp
 // C2065_b.cpp
