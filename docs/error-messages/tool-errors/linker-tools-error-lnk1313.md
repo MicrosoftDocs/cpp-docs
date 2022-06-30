@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Linker Tools Error LNK1313"
 title: "Linker Tools Error LNK1313"
-ms.date: "11/04/2016"
+ms.date: 06/29/2022
 f1_keywords: ["LNK1313"]
 helpviewer_keywords: ["LNK1313"]
 ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
@@ -12,11 +12,13 @@ ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
 
 ## Remarks
 
-The current version of Visual C++ does not support linking native or mixed managed/native .obj files with .obj files compiled with **/clr:pure**.
+The current version of Visual C++ does not support linking native or mixed managed/native `.obj` files with `.obj` files compiled with **`/clr:pure`**.
 
-The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+The **`/clr:pure`** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
 ## Examples
+
+Source file `LNK1313.cpp`:
 
 ```cpp
 // LNK1313.cpp
@@ -24,6 +26,8 @@ The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupp
 // a pure module
 int main() {}
 ```
+
+Source file `LNK1313_b.cpp`:
 
 ```cpp
 // LNK1313_b.cpp

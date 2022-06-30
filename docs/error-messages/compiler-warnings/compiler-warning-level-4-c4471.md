@@ -39,6 +39,8 @@ enum Example;    // C4471
 
 In C++11, you can add an explicit type to an unscoped enumeration and to its forward declaration. We recommend this solution only if complex header inclusion logic prevents use of the definition instead of a forward declaration. This solution can lead to a maintenance issue: if you change the underlying type used for the enumeration definition, you must also change all of the forward declarations to match, or you may have silent errors in your code. You can put the forward declaration into a header file to minimize this issue.
 
+Source file `C4471c.cpp`:
+
 ```cpp
 // C4471c.cpp
 // Client code for enumeration defined in C4471d.cpp
@@ -48,6 +50,8 @@ enum Example;    // C4471, int assumed
 // enum Example : unsigned;
 // ...
 ```
+
+Source file `C4471d.cpp`:
 
 ```cpp
 // C4471d.cpp
@@ -61,6 +65,8 @@ If you specify an explicit type for an enumeration, we recommend you also enable
 
 You can change your code to use a scoped enum, a feature that is new in C++11. Both the definition and any client code that uses the enumeration type must be changed to use a scoped enum. We recommend you use a scoped enum if you have issues with namespace pollution, as the names of defined enumeration items are limited to the scope of the enum. Another feature of a scoped enum is that its members can't be implicitly converted to another integral or enumeration type, which can be a source of subtle bugs.
 
+Source file `C4471e.cpp`:
+
 ```cpp
 // C4471e.cpp
 // Client code for scoped enumeration defined in C4471f.cpp
@@ -70,6 +76,8 @@ enum Example;    // C4471
 // enum class Example;
 // ...
 ```
+
+Source file `C4471f.cpp`:
 
 ```cpp
 // C4471f.cpp
