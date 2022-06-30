@@ -1,32 +1,31 @@
 ---
 description: "Learn more about: db_command"
 title: "db_command (C++ COM Attribute)"
-ms.date: "07/10/2018"
+ms.date: 06/29/2022
 f1_keywords: ["vc-attr.db_command"]
 helpviewer_keywords: ["db_command attribute"]
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
 ---
-# db_command
+# `db_command`
 
 Creates an OLE DB command.
 
 ## Syntax
 
 ```cpp
-[ db_command(command, name, source_name, hresult, bindings, bulk_fetch)
-]
+[ db_command(command, name, source_name, hresult, bindings, bulk_fetch) ]
 ```
 
 ### Parameters
 
-*command*<br/>
+*`command`*\
 A command string containing the text of an OLE DB command. A simple example is:
 
 ```cpp
 [ db_command ( command = "Select * from Products" ) ]
 ```
 
-The *command* syntax is as follows:
+The *`command`* syntax is as follows:
 
 > binding parameter block 1\
 > &nbsp;&nbsp;OLE DB command\
@@ -37,36 +36,36 @@ The *command* syntax is as follows:
 
 A *binding parameter block* is defined as follows:
 
-> **(\[** *bindtype* **]** *szVar1* \[, *szVar2* \[, *nVar3* \[, ...]]] **)**
+> **`(`** *`bindtype`* *szVar1* \[**`,`** *szVar2* \[**`,`** *nVar3* \[**`,`** ...]]] **`)`**
 
 where:
 
-- **(** marks the start of the data binding block.
+- **`(`** marks the start of the data binding block.
 
-- **\[** *bindtype* **]** is one of the following case-insensitive strings:
+- *`bindtype`* is one of the following case-insensitive strings:
 
-  - **\[db_column]** binds each of the member variables to a column in a rowset.
+  - **`[db_column]`** binds each of the member variables to a column in a rowset.
 
-  - **\[bindto]** (same as **\[db_column]**).
+  - **`[bindto]`** (same as **`[db_column]`**).
 
-  - **\[in]** binds member variables as input parameters.
+  - **`[in]`** binds member variables as input parameters.
 
-  - **\[out]** binds member variables as output parameters.
+  - **`[out]`** binds member variables as output parameters.
 
-  - **\[in,out]** binds member variables as input/output parameters.
+  - **`[in,out]`** binds member variables as input/output parameters.
 
-- *szVarX*, *nVarX* resolves to a member variable within the current scope.
+- *szVarN*, *nVarN* resolve to member variables within the current scope.
 
-- **)** marks the end of the data binding block.
+- **`)`** marks the end of the data binding block.
 
-If the command string contains one or more specifiers such as \[in], \[out], or \[in/out], **db_command** builds a parameter map.
+If the command string contains one or more specifiers such as `[in]`, `[out]`, or `[in/out]`, **`db_command`** builds a parameter map.
 
-If the command string contains one or more parameters such as \[db_column] or \[bindto], **db_command** generates a rowset and an accessor map to service these bound variables. See [db_accessor](db-accessor.md) for more information.
+If the command string contains one or more parameters such as `[db_column]` or `[bindto]`, then **`db_command`** generates both a rowset and an accessor map to service these bound variables. For more information, see [`db_accessor`](db-accessor.md).
 
 > [!NOTE]
-> \[*bindtype*] syntax and the *bindings* parameter are not valid when using **db_command** at the class level.
+> *`bindtype`* syntax and the *`bindings`* parameter are not valid when using **`db_command`** at the class level.
 
-Here are some examples of binding parameter blocks. The following example binds the `m_au_fname` and `m_au_lname` data members to the `au_fname` and `au_lname` columns, respectively, of the authors table in the pubs database:
+Here are some examples of binding parameter blocks. The following example binds the `m_au_fname` and `m_au_lname` data members to the `au_fname` and `au_lname` columns, respectively, of the authors table in the `pubs` database:
 
 ```cpp
 TCHAR m_au_fname[21];
@@ -79,48 +78,50 @@ TCHAR m_state[3] = 'CA';
 ]
 ```
 
-*name*<br/>
-(Optional) The name of the handle you use to work with the rowset. If you specify *name*, **db_command** generates a class with the specified *name*, which can be used to traverse the rowset or to execute multiple action queries. If you do not specify *name*, it will not be possible to return more than one row of results to the user.
+*`name`*\
+(Optional) The name of the handle you use to work with the rowset. If you specify *`name`*, **`db_command`** generates a class with the specified *`name`*, which can be used to traverse the rowset or to execute multiple action queries. If you don't specify *`name`*, it will not be possible to return more than one row of results to the user.
 
-*source_name*<br/>
-(Optional) The `CSession` variable or instance of a class that has the `db_source` attribute applied to it on which the command executes. See [db_source](db-source.md).
+*`source_name`*\
+(Optional) The `CSession` variable or instance of a class that has the `db_source` attribute applied to it on which the command executes. See [`db_source`](db-source.md).
 
-**db_command** checks to ensure that the variable used for *source_name* is valid, so the specified variable should be in function or global scope.
+**`db_command`** checks to ensure that the variable used for *`source_name`* is valid, so the specified variable should be in function or global scope.
 
-*hresult*<br/>
-(Optional) Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.
+*`hresult`*\
+(Optional) Identifies the variable that will receive the HRESULT of this database command. If the variable doesn't exist, it will be automatically injected by the attribute.
 
-*bindings*<br/>
+*`bindings`*\
 (Optional) Allows you to separate the binding parameters from the OLE DB command.
 
-If you specify a value for *bindings*, **db_command** will parse the associated value and will not parse the \[*bindtype*] parameter. This usage allows you to use OLE DB provider syntax. To disable parsing, without binding parameters, specify `Bindings=""`.
+If you specify a value for *`bindings`*, **`db_command`** parses the associated value and doesn't parse the *`bindtype`* parameter. This usage allows you to use OLE DB provider syntax. To disable parsing without binding parameters, specify `Bindings=""`.
 
-If you do not specify a value for *bindings*, **db_command** will parse the binding parameter block, looking for '**(**', followed by **\[**_bindtype_**]** in brackets, followed by one or more previously declared C++ member variables, followed by '**)**'. All text between the parentheses will be stripped from the resulting command, and these parameters will be used to construct column and parameter bindings for this command.
+If you don't specify a value for *`bindings`*, **`db_command`** parses the binding parameter block. It looks for '**`(`**', followed by a *`bindtype`* in brackets, followed by one or more previously declared C++ member variables, followed by '**`)`**'. It strips all text between the parentheses from the resulting command. These parameters are used to construct column and parameter bindings for this command.
 
-*bulk_fetch*<br/>
+*`bulk_fetch`*\
 (Optional) An integer value that specifies the number of rows to fetch.
 
-The default value is 1, which specifies single row fetching (the rowset will be of type [CRowset](../../data/oledb/crowset-class.md)).
+The default value is 1, which specifies single row fetching (the rowset will be of type [`CRowset`](../../data/oledb/crowset-class.md)).
 
-A value greater than 1 specifies bulk row fetching. Bulk row fetching refers to the ability of bulk rowsets to fetch multiple row handles (the rowset will be of type [CBulkRowset](../../data/oledb/cbulkrowset-class.md) and will call `SetRows` with the specified number of rows).
+A value greater than 1 specifies bulk row fetching. Bulk row fetching refers to the ability of bulk rowsets to fetch multiple row handles (the rowset will be of type [`CBulkRowset`](../../data/oledb/cbulkrowset-class.md) and will call `SetRows` with the specified number of rows).
 
-If *bulk_fetch* is less than one, `SetRows` will return zero.
+If *`bulk_fetch`* is less than one, `SetRows` will return zero.
 
 ## Remarks
 
-**db_command** creates a [CCommand](../../data/oledb/ccommand-class.md) object, which is used by an OLE DB consumer to execute a command.
+**`db_command`** creates a [`CCommand`](../../data/oledb/ccommand-class.md) object, which is used by an OLE DB consumer to execute a command.
 
-You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class `CCommand<>`, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an `Accessor` that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.
+You can use **`db_command`** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class `CCommand<>`, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an `Accessor` that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **`db_command`** works together with **`db_column`**.
 
-**db_command** can be used to execute commands that do not return a result set.
+**`db_command`** can be used to execute commands that don't return a result set.
 
-When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
+When the consumer attribute provider applies this attribute to a class, the compiler renames the class to `_[YourClassName]Accessor`, where `[YourClassName]` is the name you gave the class. The compiler also creates a class called `[YourClassName]`, which derives from `_[YourClassName]Accessor`.  In Class View, you'll see both classes.
 
 ## Examples
 
-This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../../data/oledb/crowset-class.md#movenext).
+This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **`db_command`** creates and reads a rowset on which you can call wizard-generated functions such as [`OpenAll` and `CloseAll`](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [`MoveNext`](../../data/oledb/crowset-class.md#movenext).
 
-Note that this code requires you to provide your own connection string that connects to the pubs database. For information on how to do this in the development environment, see [How to: Connect to a Database and Browse Existing Objects](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) and [Add new connections](/visualstudio/data-tools/add-new-connections).
+This code requires you to provide your own connection string that connects to the `pubs` database. For information on how to provide a connection string in the development environment, see [How to: Connect to a database and browse existing objects](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) and [Add new connections](/visualstudio/data-tools/add-new-connections).
+
+Source file `db_command.h`:
 
 ```cpp
 // db_command.h
@@ -155,6 +156,8 @@ struct CAuthors {
    }
 };
 ```
+
+Source file `db_command.cpp`:
 
 ```cpp
 // db_command.cpp
@@ -228,15 +231,15 @@ int main() {
 ## Requirements
 
 | Attribute context | Value |
-|-|-|
-|**Applies to**|**`class`**, **`struct`**, member, method, local|
-|**Repeatable**|No|
-|**Required attributes**|None|
-|**Invalid attributes**|None|
+|--|--|
+| **Applies to** | **`class`**, **`struct`**, member, method, local |
+| **Repeatable** | No |
+| **Required attributes** | None |
+| **Invalid attributes** | None |
 
-For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
+For more information about the attribute contexts, see [Attribute contexts](cpp-attributes-com-net.md#contexts).
 
 ## See also
 
-[OLE DB Consumer Attributes](ole-db-consumer-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)
+[OLE DB consumer attributes](ole-db-consumer-attributes.md)\
+[Stand-alone attributes](stand-alone-attributes.md)

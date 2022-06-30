@@ -1,7 +1,7 @@
 ---
 title: "/internalPartition"
 description: "Use the /internalPartition compiler option to treat the input file as an internal partition unit."
-ms.date: 04/18/2022
+ms.date: 06/29/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/internalPartition", "VC.Project.VCCLCompilerTool.Interface"]
@@ -19,12 +19,16 @@ Use the **`/internalPartition`** compiler option to treat the input file as an *
 
 The following example demonstrates how to use the `/internalPartition` option:
 
+Source file `m-internals.cpp`:
+
 ```cpp
 // m-internals.cpp
 module m:internals;
 
 void internalFunc() {} // cannot have `export` since this is an internal partition
 ```
+
+Source file `m.ixx`:
 
 ```cpp
 // m.ixx

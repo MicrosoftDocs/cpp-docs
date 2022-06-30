@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: #using directive (C++/CLI)"
 title: "#using directive (C++/CLI)"
-ms.date: "08/29/2019"
+ms.date: 06/29/2022
 f1_keywords: ["friend_as_cpp", "#using", "friend_as", "#using_cpp"]
 helpviewer_keywords: ["using directive (#using)", "#using directive", "LIBPATH environment variable", "preprocessor, directives"]
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
@@ -63,11 +63,15 @@ The compiler searches for references along the following path:
 
 You can build an assembly that references a second assembly that itself references a third assembly. You only have to explicitly reference the third assembly from the first one if you explicitly use one of its types.
 
+Source file `using_assembly_A.cpp`:
+
 ```cpp
 // using_assembly_A.cpp
 // compile with: /clr /LD
 public ref class A {};
 ```
+
+Source file `using_assembly_B.cpp`:
 
 ```cpp
 // using_assembly_B.cpp

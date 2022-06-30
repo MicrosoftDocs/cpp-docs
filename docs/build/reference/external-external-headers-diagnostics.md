@@ -1,7 +1,7 @@
 ---
 title: "/external (External headers diagnostics)"
 description: "The Microsoft C++ compiler /external headers diagnostic options syntax and usage."
-ms.date: 02/17/2022
+ms.date: 06/29/2022
 f1_keywords: ["/external", "/external:anglebrackets", "/external:env:", "/external:I", "/external:W0", "/external:W1", "/external:W2", "/external:W3", "/external:W4", "/external:templates-", "/experimental:external", "VC.Project.VCCLCompilerTool.ExternalDirectoriesEnv", "VC.Project.VCCLCompilerTool.ExternalIncludeDirectories", "VC.Project.VCCLCompilerTool.ExternalWarningLevel", "VC.Project.VCCLCompilerTool.TreatExternalTemplatesAsInternal"]
 helpviewer_keywords: ["/external compiler option [C++]", "-external compiler option [C++]", "external compiler option [C++]"]
 ---
@@ -68,6 +68,8 @@ All the existing mechanisms to enable, disable, and suppress warnings still work
 
 This sample program has two source files, *`program.cpp`* and *`header_file.h`*. The *`header_file.h`* file is in an *`include_dir`* subdirectory of the directory containing the *`program.cpp`* file:
 
+Source file `include_dir/header_file.h`:
+
 ```cpp
 // External header: include_dir/header_file.h
 
@@ -78,6 +80,8 @@ struct sample_struct
     // conversion from 'int' to 'unsigned int', signed/unsigned mismatch
 };
 ```
+
+Source file `program.cpp`:
 
 ```cpp
 // User code: program.cpp

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Precompiled header files"
 title: "Precompiled Header Files"
-ms.date: 03/02/2022
+ms.date: 06/29/2022
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ---
@@ -34,9 +34,9 @@ You can precompile both C and C++ programs. In C++ programming, it's common prac
 
 You can precompile any C or C++ code; you're not limited to precompiling only header files.
 
-Precompiling requires planning, but it offers significantly faster compilations if you precompile source code other than simple header files.
+Precompiling requires planning, but it offers much faster compilations if you precompile source code other than simple header files.
 
-Precompile code when you know that your source files use common sets of header files but don't include them in the same order, or when you want to include source code in your precompilation.
+Precompile code when you know that your source files use common sets of header files, or when you want to include source code in your precompilation.
 
 The precompiled-header options are [`/Yc` (Create Precompiled Header File)](reference/yc-create-precompiled-header-file.md) and [`/Yu` (Use Precompiled Header File)](reference/yu-use-precompiled-header-file.md). Use **`/Yc`** to create a precompiled header. When used with the optional [`hdrstop`](../preprocessor/hdrstop.md) pragma, **`/Yc`** lets you precompile both header files and source code. Select **`/Yu`** to use an existing precompiled header in the existing compilation. You can also use **`/Fp`** with the **`/Yc`** and **`/Yu`** options to provide an alternative name for the precompiled header.
 
@@ -50,7 +50,7 @@ Because PCH files contain information about the machine environment and memory a
 
 The [`/Yu`](reference/yu-use-precompiled-header-file.md) compiler option lets you specify which PCH file to use.
 
-When you use a PCH file, the compiler assumes the same compilation environment (one that uses consistent compiler options, pragmas, and so on) that was in effect when you created the PCH file, unless you specify otherwise. If the compiler detects an inconsistency, it issues a warning and identifies the inconsistency where possible. Such warnings don't necessarily indicate a problem with the PCH file; they simply warn you of possible conflicts. Consistency requirements for PCH files are described in the following sections.
+When you use a PCH file, the compiler assumes the same compilation environment that was in effect when you created the PCH file, unless you specify otherwise. The compilation environment includes the compiler options, pragmas, and so on. If the compiler detects an inconsistency, it issues a warning and identifies the inconsistency where possible. Such warnings don't necessarily indicate a problem with the PCH file; they simply warn you of possible conflicts. Consistency requirements for PCH files are described in the following sections.
 
 ### Compiler option consistency
 
@@ -144,7 +144,7 @@ This table lists compiler options that might trigger an inconsistency warning wh
 | **`/D `**| Define constants and macros | Must be the same between the compilation that created the precompiled header and the current compilation. The state of defined constants isn't checked. However, unpredictable results can occur if your files depend on the values of the changed constants. |
 | **`/E`** or **`/EP`** | Copy preprocessor output to standard output | Precompiled headers don't work with the **`/E`** or **`/EP`** option. |
 | **`/Fr`** or **`/FR`** | Generate Microsoft Source Browser information | For the **`/Fr`** and **`/FR`** options to be valid with the **`/Yu`** option, they must also have been in effect when the precompiled header was created. Subsequent compilations that use the precompiled header also generate Source Browser information. Browser information is placed in a single *`.sbr`* file and is referenced by other files in the same manner as CodeView information. You can't override the placement of Source Browser information. |
-| **`/GA`**, **`/GD`**, **`/GE`**, **`/Gw`**, or **`/GW`** | Windows protocol options | Must be the same between the compilation that created the precompiled header and the current compilation. If these options differ, a warning message results. |
+| **`/GA`**, **`/GD`**, **`/GE`**, **`/Gw`**, or **`/GW`** | Windows protocol options | Must be the same between the compilation that created the precompiled header and the current compilation. The compiler emits a warning if these options differ. |
 | **`/Zi`** | Generate complete debugging information | If this option is in effect when the precompiled header is created, subsequent compilations that use the precompilation can use that debugging information. If **`/Zi`** isn't in effect when the precompiled header is created, subsequent compilations that use the precompilation and the **`/Zi`** option trigger a warning. The debugging information is placed in the current object file, and local symbols defined in the precompiled header aren't available to the debugger. |
 
 > [!NOTE]
@@ -158,7 +158,7 @@ For another approach to using the manual precompiled-header options in a project
 
 ## PCH files in the build process
 
-The code base of a software project is often contained in multiple C or C++ source files, object files, libraries, and header files. Typically, a makefile coordinates the combination of these elements into an executable file. The following figure shows the structure of a makefile that uses a precompiled header file. The NMAKE macro names and the file names in this diagram are consistent with the ones in the example code found in [Sample makefile for PCH](#sample-makefile-for-pch) and [Example code for PCH](#example-code-for-pch).
+The code base of a software project is often contained in multiple C or C++ source files, object files, libraries, and header files. Typically, a makefile coordinates the combination of these elements into an executable file. The following figure shows the structure of a makefile that uses a precompiled header file. The NMAKE macro names and the file names in this diagram are consistent with the example code found in [Sample makefile for PCH](#sample-makefile-for-pch) and [Example code for PCH](#example-code-for-pch).
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
@@ -248,6 +248,8 @@ For more information on makefiles, see [NMAKE reference](reference/nmake-referen
 
 The following source files are used in the makefile described in [PCH files in the build process](#pch-files-in-the-build-process) and [Sample makefile for PCH](#sample-makefile-for-pch). The comments contain important information.
 
+Source file `ANOTHER.H`:
+
 ```cpp
 // ANOTHER.H : Contains the interface to code that is not
 //             likely to change.
@@ -258,6 +260,8 @@ The following source files are used in the makefile described in [PCH files in t
 void savemoretime( void );
 #endif // __ANOTHER_H
 ```
+
+Source file `STABLE.H`:
 
 ```cpp
 // STABLE.H : Contains the interface to code that is not likely
@@ -270,6 +274,8 @@ void savemoretime( void );
 void savetime( void );
 #endif // __STABLE_H
 ```
+
+Source file `UNSTABLE.H`:
 
 ```cpp
 // UNSTABLE.H : Contains the interface to code that is
@@ -284,6 +290,8 @@ void savetime( void );
 void notstable( void );
 #endif // __UNSTABLE_H
 ```
+
+Source file `APPLIB.CPP`:
 
 ```cpp
 // APPLIB.CPP : This file contains the code that implements
@@ -309,6 +317,8 @@ void notstable( void )
             << " frequent recompilation.\n";
     }
 ```
+
+Source file `MYAPP.CPP`:
 
 ```cpp
 // MYAPP.CPP : Sample application

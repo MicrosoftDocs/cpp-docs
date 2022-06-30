@@ -1,7 +1,7 @@
 ---
 title: "/Gh (Enable _penter hook function)"
 description: "Describes the /Gh compiler option to call the supplied _penter function."
-ms.date: "07/06/2020"
+ms.date: 06/29/2022
 f1_keywords: ["_penter"]
 helpviewer_keywords: ["/Gh compiler option [C++]", "Gh compiler option [C++]", "_penter function", "-Gh compiler option [C++]"]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
@@ -42,6 +42,8 @@ This declaration isn't available for 64-bit projects.
 
 The following code, when compiled with **/Gh**, shows how `_penter` is called twice; once when entering function `main` and once when entering function `x`. The example consists of two source files, which you compile separately.
 
+Source file `local_penter.cpp`:
+
 ```cpp
 // local_penter.cpp
 // compile with: cl /EHsc /c local_penter.cpp
@@ -74,6 +76,8 @@ extern "C" void __declspec(naked) __cdecl _penter( void ) {
 }
 ```
 
+Source file `Gh_compiler_option.cpp`:
+
 ```cpp
 // Gh_compiler_option.cpp
 // compile with: cl /EHsc /Gh Gh_compiler_option.cpp local_penter.obj
@@ -90,7 +94,6 @@ int main() {
 When run, the local `_penter` function is called on entry to `main` and `x`:
 
 ```Output
-
 In a function!
 In a function!
 ```

@@ -1,7 +1,7 @@
 ---
 title: lnt-comparison-bitwise-precedence
 description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-comparison-bitwise-precedence."
-ms.date: 09/29/2021
+ms.date: 06/29/2022
 f1_keywords: ["lnt-comparison-bitwise-precedence"]
 helpviewer_keywords: ["lnt-comparison-bitwise-precedence"]
 monikerRange: ">=msvc-160"
@@ -19,16 +19,18 @@ The `lnt-comparison-bitwise-precedence` check is controlled by the **Comparison/
 ```cpp
 bool is_flag_set(unsigned value, unsigned flag)
 {
-	return value & flag == flag;  // Flagged: `flag == flag` is evaluated first.
+    return value & flag == flag;  // Flagged: `flag == flag` is evaluated first.
                                   // Then `value & (int)true` is evaluated which
                                   // returns an incorrect result in most cases.
 }
 ```
 
+Use parentheses to force the correct order of operations:
+
 ```cpp
 bool is_flag_set(unsigned value, unsigned flag)
 {
-	return (value & flag) == flag;  // Correct
+    return (value & flag) == flag;  // Correct
 }
 ```
 
