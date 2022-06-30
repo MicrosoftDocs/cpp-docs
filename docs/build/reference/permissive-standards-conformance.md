@@ -1,12 +1,12 @@
 ---
 title: "/permissive- (Standards conformance)"
 description: "Reference guide to the Microsoft C++ /permissive- (Standards conformance) compiler option."
-ms.date: 03/15/2022
+ms.date: 06/29/2022
 f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
 helpviewer_keywords: ["/permissive compiler options [C++]", "-permissive compiler options [C++]", "Standards conformance compiler options", "permissive compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 ---
-# /permissive- (Standards conformance)
+# `/permissive-` (Standards conformance)
 
 Specify standards conformance mode to the compiler. Use this option to help you identify and fix conformance issues in your code, to make it both more correct and more portable.
 
@@ -41,7 +41,7 @@ The MSVC compiler in earlier versions of Visual Studio 2017 doesn't support all 
 
 Here are some examples of code that is detected as non-conforming when you use **`/permissive-`**, along with suggested ways to fix the issues.
 
-#### Use default as an identifier in native code
+#### Use `default` as an identifier in native code
 
 ```cpp
 void func(int default); // Error C2321: 'default' is a keyword, and
@@ -103,6 +103,8 @@ union U
 
 #### Hidden friend name lookup rules
 
+A declaration outside a class can make a hidden friend visible:
+
 ```cpp
 // Example 1
 struct S {
@@ -114,6 +116,8 @@ struct S {
 using type = void (*)(S *);
 type p = &f; // error C2065: 'f': undeclared identifier.
 ```
+
+Use of literal `nullptr` can prevent argument dependent lookup:
 
 ```cpp
 // Example 2
@@ -158,7 +162,9 @@ void func() {
 }
 ```
 
-#### Use of ATL Attributes
+#### Use of ATL attributes
+
+Microsoft-specific ATL attributes can cause issues under **`/permissive-`**:
 
 ```cpp
 // Example 1
@@ -166,10 +172,14 @@ void func() {
 class A {};
 ```
 
+You can fix the issue by using the **`__declspec`** form instead:
+
 ```cpp
 // Fix for example 1
 class __declspec(uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")) B {};
 ```
+
+A more complex example:
 
 ```cpp
 // Example 2
@@ -186,6 +196,8 @@ __interface ICustom {
 class CFoo : public ICustom
 {};
 ```
+
+Resolution requires extra build steps. In this case, create an IDL file:
 
 ```cpp
 // Fix for example 2
@@ -241,7 +253,7 @@ Common errors that may result from this change include:
 
 - `error C2446: ':': no conversion from 'B' to 'A'`
 
-A typical code pattern that can cause this issue is when some class `C` provides both a non-explicit constructor from another type `T` and a non-explicit conversion operator to type `T`. In this case, both the conversion of the second argument to the type of the third argument, and the conversion of the third argument to the type of the second argument, are valid conversions. Since both are valid, it's ambiguous according to the standard.
+A typical code pattern that can cause this issue is when some class `C` provides both a non-explicit constructor from another type `T` and a non-explicit conversion operator to type `T`. The conversion of the second argument to the third argument's type is a valid conversion. So is the conversion of the third argument to the second argument's type. Since both are valid, it's ambiguous according to the standard.
 
 ```cpp
 // Example 1: class that provides conversion to and initialization from some type T
