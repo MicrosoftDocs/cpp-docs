@@ -476,6 +476,8 @@ items:
                       href: ../build/reference/arch-x64.md
                     - name: /arch (ARM)
                       href: ../build/reference/arch-arm.md
+                    - name: /arch (ARM64)
+                      href: ../build/reference/arch-arm64.md
                 - name: /await (Enable coroutine support)
                   href: ../build/reference/await-enable-coroutine-support.md
                 - name: /bigobj (Increase number of sections in .Obj file)

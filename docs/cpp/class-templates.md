@@ -1,17 +1,17 @@
 ---
 description: "Learn more about: Class Templates"
 title: "Class Templates"
-ms.date: "11/04/2016"
+ms.date: 06/30/2022
 helpviewer_keywords: ["classes [C++], operating on type", "class templates", "templates, class templates"]
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
 ---
 # Class Templates
 
-This topic describes rules that are specific to C++ class templates.
+This article describes rules that are specific to C++ class templates.
 
 ## Member functions of class templates
 
-Member functions can be defined inside or outside of a class template. They are defined like function templates if defined outside the class template.
+Member functions can be defined inside or outside of a class template. They're defined like function templates if defined outside the class template.
 
 ```cpp
 // member_function_templates1.cpp
@@ -43,9 +43,9 @@ int main()
 }
 ```
 
-Note that just as with any template class member function, the definition of the class's constructor member function includes the template argument list twice.
+As with any template class member function, the definition of the class's constructor member function includes the template argument list twice.
 
-Member functions can themselves be function templates, specifying additional parameters, as in the following example.
+Member functions can themselves be function templates and specify extra parameters, as in the following example.
 
 ```cpp
 // member_templates.cpp
@@ -69,7 +69,7 @@ int main()
 
 ## Nested class templates
 
-Templates can be defined within classes or class templates, in which case they are referred to as member templates. Member templates that are classes are referred to as nested class templates. Member templates that are functions are discussed in [Member Function Templates](../cpp/member-function-templates.md).
+Templates can be defined within classes or class templates, in which case they're referred to as member templates. Member templates that are classes are referred to as nested class templates. Member templates that are functions are discussed in [Member Function Templates](../cpp/member-function-templates.md).
 
 Nested class templates are declared as class templates inside the scope of the outer class. They can be defined inside or outside of the enclosing class.
 
@@ -108,6 +108,8 @@ int main()
    x.print();
 }
 ```
+
+The following code uses nested template type parameters to create nested class templates:
 
 ```cpp
 // nested_class_template2.cpp
@@ -174,16 +176,17 @@ int main()
    delete xc;
 }
 
-//Output:
+/* Output:
 X<T>::Y<U>::Y()
 X<T>::Y<U>::Y()
 10
 99
 X<T>::Y<U>::~Y()
 X<T>::Y<U>::~Y()
+*/
 ```
 
-Local classes are not allowed to have member templates.
+Local classes aren't allowed to have member templates.
 
 ## Template friends
 
@@ -259,15 +262,16 @@ int main() {
    alpha3->print();
    delete alpha3;
 }
-//Output:
+/* Output:
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 a b c d e f g h i j k l m n o p q r s t u v w x y z
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z
+*/
 ```
 
 The next example involves a friend that has a template specialization. A function template specialization is automatically a friend if the original function template is a friend.
 
-It is also possible to declare only the specialized version of the template as the friend, as the comment before the friend declaration in the following code indicates. If you do this, you must put the definition of the friend template specialization outside of the template class.
+It's also possible to declare only the specialized version of the template as the friend, as the comment before the friend declaration in the following code indicates. If you declare a specialization as a friend, you must put the definition of the friend template specialization outside of the template class.
 
 ```cpp
 // template_friend2.cpp
@@ -346,12 +350,13 @@ int main()
     Array<int> a(10);
     f(a);
 }
-//Output:
+/* Output:
 10 generic
 10 int
+*/
 ```
 
-The next example shows a friend class template declared within a class template. The class template is then used as the template argument for the friend class. Friend class templates must be defined outside of the class template in which they are declared. Any specializations or partial specializations of the friend template are also friends of the original class template.
+The next example shows a friend class template declared within a class template. The class template is then used as the template argument for the friend class. Friend class templates must be defined outside of the class template in which they're declared. Any specializations or partial specializations of the friend template are also friends of the original class template.
 
 ```cpp
 // template_friend3.cpp
@@ -396,11 +401,12 @@ int main()
    x3->print();
    x4->print();
 }
-//Output:
+/* Output:
 65
 97
 A
 a
+*/
 ```
 
 ## Reuse of Template Parameters
