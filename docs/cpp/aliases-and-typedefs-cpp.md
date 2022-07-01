@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: Aliases and typedefs (C++)"
 title: "Aliases and typedefs (C++)"
-ms.date: "11/04/2016"
+ms.date: 06/30/2022
 f1_keywords: ["typedef_cpp"]
 ms.assetid: af1c24d2-4bfd-408a-acfc-482e264232f5
 ---
 # Aliases and typedefs (C++)
 
-You can use an *alias declaration* to declare a name to use as a synonym for a previously declared type. (This mechanism is also referred to informally as a *type alias*). You can also use this mechanism to create an *alias template*, which can be particularly useful for custom allocators.
+You can use an *alias declaration* to declare a name to use as a synonym for a previously declared type. (This mechanism is also referred to informally as a *type alias*). You can also use this mechanism to create an *alias template*, which can be useful for custom allocators.
 
 ## Syntax
 
@@ -21,9 +21,9 @@ using identifier = type;
 The name of the alias.
 
 *type*<br/>
-The type identifier you are creating an alias for.
+The type identifier you're creating an alias for.
 
-An alias does not introduce a new type and cannot change the meaning of an existing type name.
+An alias doesn't introduce a new type and can't change the meaning of an existing type name.
 
 The simplest form of an alias is equivalent to the **`typedef`** mechanism from C++03:
 
@@ -35,7 +35,7 @@ using counter = long;
 // typedef long counter;
 ```
 
-Both of these enable the creation of variables of type "counter". Something more useful would be a type alias like this one for `std::ios_base::fmtflags`:
+Both of these forms enable the creation of variables of type `counter`. Something more useful would be a type alias like this one for `std::ios_base::fmtflags`:
 
 ```cpp
 // C++11
@@ -75,7 +75,7 @@ ptr<int> ptr_int;
 
 ## Example
 
-The following example demonstrates how to use an alias template with a custom allocator—in this case, an integer vector type. You can substitute any type for **`int`** to create a convenient alias to hide the complex parameter lists in your main functional code. By using the custom allocator throughout your code you can improve readability and reduce the risk of introducing bugs caused by typos.
+The following example demonstrates how to use an alias template with a custom allocator—in this case, an integer vector type. You can substitute any type for **`int`** to create a convenient alias to hide the complex parameter lists in your main functional code. By using the custom allocator throughout your code, you can improve readability and reduce the risk of introducing bugs caused by typos.
 
 ```cpp
 #include <stdlib.h>
@@ -137,11 +137,11 @@ int main ()
 
 A **`typedef`** declaration introduces a name that, within its scope, becomes a synonym for the type given by the *type-declaration* portion of the declaration.
 
-You can use typedef declarations to construct shorter or more meaningful names for types already defined by the language or for types that you have declared. Typedef names allow you to encapsulate implementation details that may change.
+You can use typedef declarations to construct shorter or more meaningful names for types already defined by the language or for types that you've declared. Typedef names allow you to encapsulate implementation details that may change.
 
-In contrast to the **`class`**, **`struct`**, **`union`**, and **`enum`** declarations, **`typedef`** declarations do not introduce new types — they introduce new names for existing types.
+In contrast to the **`class`**, **`struct`**, **`union`**, and **`enum`** declarations, **`typedef`** declarations don't introduce new types; they introduce new names for existing types.
 
-Names declared using **`typedef`** occupy the same namespace as other identifiers (except statement labels). Therefore, they cannot use the same identifier as a previously declared name, except in a class-type declaration. Consider the following example:
+Names declared using **`typedef`** occupy the same namespace as other identifiers (except statement labels). Therefore, they can't use the same identifier as a previously declared name, except in a class-type declaration. Consider the following example:
 
 ```cpp
 // typedef_names1.cpp
@@ -163,6 +163,8 @@ int main()
 // typedef UL back in scope
 ```
 
+Another instance of name hiding:
+
 ```cpp
 // typedef_specifier1.cpp
 typedef char FlagType;
@@ -177,7 +179,7 @@ void myproc( int )
 }
 ```
 
-When declaring a local-scope identifier by the same name as a typedef, or when declaring a member of a structure or union in the same scope or in an inner scope, the type specifier must be specified. For example:
+When you declare a local-scope identifier by the same name as a **`typedef`**, or when you declare a member of a structure or union in the same scope or in an inner scope, the type specifier must be specified. For example:
 
 ```cpp
 typedef char FlagType;
@@ -190,19 +192,19 @@ To reuse the `FlagType` name for an identifier, a structure member, or a union m
 const int FlagType;  // Type specifier required
 ```
 
-It is not sufficient to say
+It isn't sufficient to say
 
 ```cpp
 const FlagType;      // Incomplete specification
 ```
 
-because the `FlagType` is taken to be part of the type, not an identifier that is being redeclared. This declaration is taken to be an illegal declaration like
+because the `FlagType` is taken to be part of the type, not an identifier that's being redeclared. This declaration is taken to be an illegal declaration, similar to:
 
 ```cpp
 int;  // Illegal declaration
 ```
 
-You can declare any type with typedef, including pointer, function, and array types. You can declare a typedef name for a pointer to a structure or union type before you define the structure or union type, as long as the definition has the same visibility as the declaration.
+You can declare any type with **`typedef`**, including pointer, function, and array types. You can declare a typedef name for a pointer to a structure or union type before you define the structure or union type, as long as the definition has the same visibility as the declaration.
 
 ### Examples
 
@@ -265,32 +267,42 @@ int main()
 10   0.990000
 ```
 
-### Re-declaration of typedefs
+### Redeclaration of typedefs
 
 The **`typedef`** declaration can be used to redeclare the same name to refer to the same type. For example:
 
+Source file `file1.h`:
+
 ```cpp
-// FILE1.H
+// file1.h
 typedef char CHAR;
+```
 
-// FILE2.H
+Source file `file2.h`:
+
+```cpp
+// file2.h
 typedef char CHAR;
+```
 
-// PROG.CPP
+Source file `prog.cpp`:
+
+```cpp
+// prog.cpp
 #include "file1.h"
 #include "file2.h"   // OK
 ```
 
-The program *PROG.CPP* includes two header files, both of which contain **`typedef`** declarations for the name `CHAR`. As long as both declarations refer to the same type, such redeclaration is acceptable.
+The file *`prog.cpp`* includes two header files, both of which contain **`typedef`** declarations for the name `CHAR`. As long as both declarations refer to the same type, such redeclaration is acceptable.
 
-A **`typedef`** cannot redefine a name that was previously declared as a different type. Therefore, if *FILE2.H* contains
+A **`typedef`** can't redefine a name that was previously declared as a different type. Consider this alternative `file2.h`:
 
 ```cpp
-// FILE2.H
+// file2.h
 typedef int CHAR;     // Error
 ```
 
-the compiler issues an error because of the attempt to redeclare the name `CHAR` to refer to a different type. This extends to constructs such as:
+The compiler issues an error in *`prog.cpp`* because of the attempt to redeclare the name `CHAR` to refer to a different type. This policy extends to constructs such as:
 
 ```cpp
 typedef char CHAR;
@@ -305,7 +317,7 @@ typedef union REGS      // OK: name REGS redeclared
 
 ### typedefs in C++ vs. C
 
-Use of the **`typedef`** specifier with class types is supported largely because of the ANSI C practice of declaring unnamed structures in **`typedef`** declarations. For example, many C programmers use the following:
+Use of the **`typedef`** specifier with class types is supported largely because of the ANSI C practice of declaring unnamed structures in **`typedef`** declarations. For example, many C programmers use the following idiom:
 
 ```cpp
 // typedef_with_class_types1.cpp
@@ -343,8 +355,8 @@ typedef struct {
 
 The preceding example declares a class named `POINT` using the unnamed class **`typedef`** syntax. `POINT` is treated as a class name; however, the following restrictions apply to names introduced this way:
 
-- The name (the synonym) cannot appear after a **`class`**, **`struct`**, or **`union`** prefix.
+- The name (the synonym) can't appear after a **`class`**, **`struct`**, or **`union`** prefix.
 
-- The name cannot be used as constructor or destructor names within a class declaration.
+- The name can't be used as a constructor or destructor name within a class declaration.
 
-In summary, this syntax does not provide any mechanism for inheritance, construction, or destruction.
+In summary, this syntax doesn't provide any mechanism for inheritance, construction, or destruction.

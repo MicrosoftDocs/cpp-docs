@@ -1,27 +1,29 @@
 ---
-description: "Learn more about: Cast Operator: ()"
-title: "Cast Operator: ()"
-ms.date: "11/04/2016"
+description: "Learn more about: Cast operator: ()"
+title: "Cast operator: ()"
+ms.date: 06/30/2022
 helpviewer_keywords: ["cast operators [C++]", "() cast operator"]
 ms.assetid: 4c99eb92-1b19-4a5d-9840-5d8c29b8453e
 ---
-# Cast Operator: ()
+# Cast operator: `()`
 
 A type cast provides a method for explicit conversion of the type of an object in a specific situation.
 
 ## Syntax
 
-```
-unary-expression ( type-name ) cast-expression
-```
+*`cast-expression`*:\
+&emsp;*`unary-expression`*\
+&emsp;**`(`** *`type-name`* **`)`** *`cast-expression`*
 
 ## Remarks
 
 Any unary expression is considered a cast expression.
 
-The compiler treats *cast-expression* as type *type-name* after a type cast has been made. Casts can be used to convert objects of any scalar type to or from any other scalar type. Explicit type casts are constrained by the same rules that determine the effects of implicit conversions. Additional restraints on casts may result from the actual sizes or representation of specific types.
+The compiler treats *`cast-expression`* as type *`type-name`* after a type cast has been made. Casts can be used to convert objects of any scalar type to or from any other scalar type. Explicit type casts are constrained by the same rules that determine the effects of implicit conversions. Other restraints on casts may result from the actual sizes or representation of specific types.
 
 ## Examples
+
+A standard cast conversion between built-in types:
 
 ```cpp
 // expre_CastOperator.cpp
@@ -40,6 +42,8 @@ int main()
     cout << "i = " << i << endl;
 }
 ```
+
+A cast operator defined in a user-defined type:
 
 ```cpp
 // expre_CastOperator2.cpp
@@ -111,8 +115,8 @@ Raw Bytes after cast:   Exciting
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Explicit Type Conversion Operator: ()](../cpp/explicit-type-conversion-operator-parens.md)<br/>
-[Casting Operators](../cpp/casting-operators.md)<br/>
-[Cast Operators](../c-language/cast-operators.md)
+[Expressions with unary operators](../cpp/expressions-with-unary-operators.md)\
+[C++ built-in operators, precedence and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
+[Explicit type conversion operator: `()`](../cpp/explicit-type-conversion-operator-parens.md)\
+[Casting operators (C++)](../cpp/casting-operators.md)\
+[Cast operators (C)](../c-language/cast-operators.md)

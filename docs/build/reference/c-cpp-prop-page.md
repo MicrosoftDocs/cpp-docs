@@ -1,7 +1,7 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
 description: "Reference guide to the Visual Studio Microsoft C/C++ project Property Pages properties."
-ms.date: 02/17/2022
+ms.date: 06/30/2022
 ms.topic: "article"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalModuleDirectories", "VC.Project.VCCLCompilerTool.ScanSourceForModuleDependencies"]
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
@@ -288,7 +288,7 @@ Allows the compiler to generate parallel code for loops identified using `#pragm
 
 ### Enable Enhanced Instruction Set
 
-Enable use of instructions found on processors that support enhanced instruction sets. For example, the SSE, SSE2, AVX, and AVX2 enhancements to IA-32. And, the AVX and AVX2 enhancements to x64. Currently **`/arch:SSE`** and **`/arch:SSE2`** are only available when building for the x86 architecture. If no option is specified, the compiler will use instructions found on processors that support SSE2. Use of enhanced instructions can be disabled with **`/arch:IA32`**. For more information, see [`/arch (x86)`](arch-x86.md), [`/arch (x64)`](arch-x64.md), and [`/arch (ARM)`](arch-arm.md).
+Enable use of instructions found on processors that support enhanced instruction sets. For example, the SSE, SSE2, AVX, and AVX2 enhancements to IA-32. And, the AVX and AVX2 enhancements to x64. Currently **`/arch:SSE`** and **`/arch:SSE2`** are only available when building for the x86 architecture. If no option is specified, the compiler will use instructions found on processors that support SSE2. Use of enhanced instructions can be disabled with **`/arch:IA32`**. For more information, see [`/arch (x86)`](arch-x86.md), [`/arch (x64)`](arch-x64.md), [`/arch (ARM64)`](arch-arm64.md), and [`/arch (ARM)`](arch-arm.md).
 
 #### Choices
 
