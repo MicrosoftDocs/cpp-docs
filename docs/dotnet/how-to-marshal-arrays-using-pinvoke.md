@@ -1,24 +1,22 @@
 ---
-description: "Learn more about: How to: Marshal Arrays Using PInvoke"
-title: "How to: Marshal Arrays Using PInvoke"
+description: "Learn more about: How to: Marshal arrays using P/Invoke"
+title: "How to: Marshal arrays using P/Invoke"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: 06/30/2022
 helpviewer_keywords: ["marshaling [C++], arrays", "platform invoke [C++], arrays", "interop [C++], arrays", "data marshaling [C++], arrays"]
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
 ---
-# How to: Marshal Arrays Using PInvoke
+# How to: Marshal arrays using P/Invoke
 
-This topic explains how native functions that accept C-style strings can be called using the CLR string type <xref:System.String> using .NET Framework Platform Invoke support. Visual C++ programmers are encouraged to use the C++ Interop features instead (when possible) because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement. If the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option (otherwise, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
+You can call native functions that accept C-style strings by using the CLR string type <xref:System.String> when using .NET Framework Platform Invoke (P/Invoke) support. We encourage you to use the C++ Interop features instead of P/Invoke when possible. P/Invoke provides little compile-time error reporting, isn't type-safe, and can be tedious to implement. If the unmanaged API is packaged as a DLL and the source code isn't available, P/Invoke is the only option. Otherwise, see [Using C++ Interop (Implicit P/Invoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
 
 ## Example
 
-Because native and managed arrays are laid out differently in memory, passing them successfully across the managed/unmanaged boundary requires conversion, or marshaling. This topic demonstrates how an array of simple (blitable) items can be passed to native functions from managed code.
+Because native and managed arrays are laid out differently in memory, passing them successfully across the managed/unmanaged boundary requires conversion, or *marshaling*. This article demonstrates how an array of simple (blitable) items can be passed to native functions from managed code.
 
-As is true of managed/unmanaged data marshaling in general, the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute is used to create a managed entry point for each native function that will be used. In the case of functions that take arrays as arguments, the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute must be used as well to specify to the compiler how the data will be marshaled. In the following example, the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration is used to indicate that the managed array will be marshaled as a C-style array.
+As is true of managed/unmanaged data marshaling in general, the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute is used to create a managed entry point for each native function that's used. In functions that take arrays as arguments, the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute must be used to specify how to marshal the data. In the following example, the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration is used to indicate that the managed array is marshaled as a C-style array.
 
-The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a function that accepts an array of integers. The second module is a managed command-line application that imports this function, but defines it in terms of a managed array, and uses the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to specify that the array should be converted to a native array when called.
-
-The managed module is compiled with /clr.
+The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a function that accepts an array of integers. The second module is a managed command-line application that imports this function, but defines it in terms of a managed array. It uses the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to specify that the array should be converted to a native array when called.
 
 ```cpp
 // TraditionalDll4.cpp
@@ -42,6 +40,8 @@ void TakesAnArray(int len, int a[]) {
       printf("%d = %d\n", i, a[i]);
 }
 ```
+
+The managed module is compiled by using **`/clr`**.
 
 ```cpp
 // MarshalBlitArray.cpp
@@ -68,8 +68,8 @@ int main() {
 }
 ```
 
-Note that no portion of the DLL is exposed to the managed code through the traditional #include directive. In fact, because the DLL is accessed at run time only, problems with functions imported with <xref:System.Runtime.InteropServices.DllImportAttribute> will not be detected at compile time.
+No portion of the DLL is exposed to the managed code through the traditional `#include` directive. In fact, because the DLL is accessed at runtime only, problems in functions imported by using <xref:System.Runtime.InteropServices.DllImportAttribute> can't be detected at compile time.
 
 ## See also
 
-[Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+[Using explicit P/Invoke in C++ (`DllImport` attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
