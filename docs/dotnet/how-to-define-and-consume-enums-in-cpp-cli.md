@@ -1,15 +1,15 @@
 ---
 description: "Learn more about: How to: Define and consume enums in C++/CLI"
 title: "How to: Define and consume enums in C++/CLI"
-ms.date: "11/04/2016"
+ms.date: 06/30/2022
 helpviewer_keywords: ["enum class, specifying underlying types"]
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
 ---
 # How to: Define and consume enums in C++/CLI
 
-This topic discusses enums in C++/CLI.
+Enumeration types in C++/CLI have some differences with enumeration types in standard C++. This article explains how to use C++/CLI enumeration types and how to interoperate with standard enumeration types.
 
-## Specifying the underlying type of an enum
+## Specifying the underlying type of an `enum`
 
 By default, the underlying type of an enumeration is **`int`**.  However, you can specify the type to be signed or unsigned forms of **`int`**, **`short`**, **`long`**, **`__int32`**, or **`__int64`**.  You can also use **`char`**.
 
@@ -43,7 +43,7 @@ sun
 
 ## How to convert between managed and standard enumerations
 
-There is no standard conversion between an enum and an integral type; a cast is required.
+There's no standard conversion between an enum and an integral type; a cast is required.
 
 ```cpp
 // mcppv2_enum_4.cpp
@@ -86,7 +86,7 @@ Operators `|`, `^`, `&`, `~`, `++`, and `--` are defined only for enumerations w
 The compiler does no static or dynamic checking of the result of an enum operation; an operation may result in a value not in the range of the enum's valid enumerators.
 
 > [!NOTE]
-> C++11 introduces `enum class` types in unmanaged code which are significantly different than managed `enum class` types in C++/CLI. In particular, the C++11 `enum class` type does not support the same operators as the managed `enum class` type in C++/CLI, and C++/CLI source code must provide an accessibility specifier in managed enum class declarations in order to distinguish them from unmanaged (C++11) `enum class` declarations. For more information about `enum class` use in C++/CLI, C++/CX, and C++11, see [enum class](../extensions/enum-class-cpp-component-extensions.md).
+> C++11 introduces `enum class` types in unmanaged code, which are significantly different than managed `enum class` types in C++/CLI. In particular, the C++11 `enum class` type does not support the same operators as the managed `enum class` type in C++/CLI, and C++/CLI source code must provide an accessibility specifier in managed `enum class` declarations in order to distinguish them from unmanaged (C++11) `enum class` declarations. For more information about `enum class` use in C++/CLI, C++/CX, and C++11, see [`enum class`](../extensions/enum-class-cpp-component-extensions.md).
 
 ```cpp
 // mcppv2_enum_5.cpp
@@ -103,6 +103,8 @@ int main() {
       ;
 }
 ```
+
+Use scope qualifiers to distinguish between `enum` and `enum class` values:
 
 ```cpp
 // mcppv2_enum_6.cpp
@@ -131,4 +133,4 @@ True
 
 ## See also
 
-[enum class](../extensions/enum-class-cpp-component-extensions.md)
+[`enum class`](../extensions/enum-class-cpp-component-extensions.md)
