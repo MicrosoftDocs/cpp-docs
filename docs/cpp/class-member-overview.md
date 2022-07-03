@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Class member overview"
 title: "Class member overview"
-ms.date: 03/15/2022
+ms.date: 07/01/2022
 helpviewer_keywords: ["members [C++], types of class members", "members [C++]", "class members [C++], types of", "class members"]
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
 ---
@@ -17,7 +17,7 @@ The full list of member categories is as follows:
 
 - [Overview of member functions](overview-of-member-functions.md).
 
-- [Data members](static-members-cpp.md) including built-in types and other user defined types.
+- [Mutable](static-members-cpp.md) and [static](static-members-cpp.md) data members, including built-in types and other user defined types.
 
 - Operators
 
