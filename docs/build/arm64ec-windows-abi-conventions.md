@@ -90,7 +90,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 
 ## Struct packing
 
-ARM64EC follows the same struct packing rules for x64 to ensure interoperability between ARM64EC code and x64 code. Please refer to the [Overview of x64 ABI conventions](x64-software-conventions.md) for more details and examples on the x64 struct packing.
+ARM64EC follows the same struct packing rules used for x64 to ensure interoperability between ARM64EC code and x64 code. For more information and examples of x64 struct packing, see [Overview of x64 ABI conventions](x64-software-conventions.md).
 
 ## Emulation helper ABI routines
 
