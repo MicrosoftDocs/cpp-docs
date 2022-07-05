@@ -90,7 +90,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 
 ## Struct packing
 
-ARM64EC uses the struct packing rules that are used for x64 code. Consider a field that has an alignment specifier. Empirically, x64 rounds the size of the struct to the next multiple of the alignment, whereas ARM64 rounds the size of the struct to the next multiple of 8.
+ARM64EC follows the same struct packing rules for x64 to ensure interopeable between ARM64EC code and x64 code. Please refer to the [Overview of x64 ABI conventions](x64-software-conventions.md) for more details and examples on the x64 struct packing.
 
 ## Emulation helper ABI routines
 
