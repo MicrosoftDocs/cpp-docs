@@ -26,7 +26,7 @@ The available packing values are described in the following table:
 |2|Packs structures on 2-byte boundaries.|
 |4|Packs structures on 4-byte boundaries.|
 |8|Packs structures on 8-byte boundaries (default for x86, ARM, and ARM64).|
-|16| Packs structures on 16-byte boundaries (default for x64).|
+|16| Packs structures on 16-byte boundaries (default for x64 and ARM64EC).|
 
 Don't use this option unless you have specific alignment requirements.
 
