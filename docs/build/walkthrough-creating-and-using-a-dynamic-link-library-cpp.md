@@ -188,7 +188,7 @@ Right now, this DLL doesn't do very much. Next, you'll create a header file to d
 
 This header file declares some functions to produce a generalized Fibonacci sequence, given two initial values. A call to `fibonacci_init(1, 1)` generates the familiar Fibonacci number sequence.
 
-Notice the preprocessor statements at the top of the file. The new project template for a DLL project adds `<PROJECTNAME>_EXPORTS` to the defined preprocessor macros. In this example, Visual Studio defines `MATHLIBRARY_EXPORTS` when your MathLibrary DLL project is built.
+Notice the preprocessor statements at the top of the file. The new project template for a DLL project adds `<PROJECTNAME>_EXPORTS` to the defined preprocessor macros. In this example, Visual Studio defines `MATHLIBRARY_EXPORTS` when your MathLibrary DLL project is built. If your project name does not match MATHLIBRARY, make sure that the preprocessor macro you use is defined in your project (either by changing the code to match your project name or by adding a defined preprocessor macro). To add a macro, right-click on the **MathLibrary** node in **Solution Explorer** to open the **Property Pages** dialog. Navigate to Configuration Properties -> C/C++ -> Preprocessor -> Preprocessor Definitions. Edit this field to add your macro, and apply the change.  
 
 When the `MATHLIBRARY_EXPORTS` macro is defined, the `MATHLIBRARY_API` macro sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export a function or variable from the DLL for use by other applications. When `MATHLIBRARY_EXPORTS` is undefined, for example, when the header file is included by a client application, `MATHLIBRARY_API` applies the `__declspec(dllimport)` modifier to the declarations. This modifier optimizes the import of the function or variable in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 
@@ -329,6 +329,8 @@ When the `MATHLIBRARY_EXPORTS` macro is defined, the `MATHLIBRARY_API` macro set
    ```
 
 ::: moniker-end
+
+
 
 To verify that everything works so far, compile the dynamic link library. To compile, choose **Build** > **Build Solution** on the menu bar. The DLL and related compiler output are placed in a folder called *Debug* directly below the solution folder. If you create a Release build, the output is placed in a folder called *Release*. The output should look something like this:
 
