@@ -7293,7 +7293,7 @@ The complexity is linear. It makes (`last` - `first`) comparisons for equality a
 #include <algorithm>
 #include <iostream>
 
-bool greater6 ( int value )
+bool greater6(int value)
 {
     return value > 6;
 }
@@ -7301,41 +7301,40 @@ bool greater6 ( int value )
 int main()
 {
     using namespace std;
-    vector<int> v1;
-    vector<int>::iterator Iter1;
+    vector<int> v;
 
-    int i;
-    for ( i = 0 ; i <= 9 ; i++ )
-        v1.push_back( i );
+    for (int i = 0; i <= 10; i++)
+    {
+        v.push_back(i);
+    }
 
-    int ii;
-    for ( ii = 0 ; ii <= 3 ; ii++ )
-        v1.push_back( 7 );
-
-    random_shuffle ( v1.begin( ), v1.end( ) );
-    cout << "The original vector v1 is:\n ( " ;
-    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-        cout << *Iter1 << " ";
+    cout << "The original vector v:\n ( ";
+    for (auto iter = v.begin(); iter != v.end(); iter++)
+    {
+        cout << *iter << " ";
+    }
     cout << ")." << endl;
 
     // Replace elements satisfying the predicate greater6
     // with a value of 70
-    replace_if ( v1.begin( ), v1.end( ), greater6 , 70);
+    replace_if(v.begin(), v.end(), greater6, 70);
 
-    cout << "The vector v1 with a value 70 replacing those\n "
-         << "elements satisfying the greater6 predicate is:\n ( " ;
-    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-        cout << *Iter1 << " ";
-    cout << ")." << endl;
+    cout << "The vector v with a value 70 replacing those\n "
+        << "elements satisfying the greater6 predicate is:\n ( ";
+    for (auto iter = v.begin(); iter != v.end(); iter++)
+    {
+        cout << *iter << " ";
+    }
+    cout << ").";
 }
 ```
 
 ```Output
-The original vector v1 is:
- ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
-The vector v1 with a value 70 replacing those
+The original vector v:
+ ( 0 1 2 3 4 5 6 7 8 9 10 ).
+The vector v with a value 70 replacing those
  elements satisfying the greater6 predicate is:
- ( 4 70 70 70 0 5 70 1 6 70 3 70 70 2 ).
+ ( 0 1 2 3 4 5 6 70 70 70 70 ).
 ```
 
 ## <a name="reverse"></a> `reverse`
