@@ -25,7 +25,7 @@ Visual Studio supports version 2 or later for the *`CMakePresets.json`* and *`CM
 
 CMake version 3.20 or later is required when you're invoking CMake with *`CMakePresets.json`* (version 2 or later) from the command line. However, Visual Studio reads and evaluates *`CMakePresets.json`* and *`CMakeUserPresets.json`* itself and doesn't invoke CMake directly with the `--preset` option. So, CMake version 3.20 or later isn't strictly required when you're building with *`CMakePresets.json`* inside Visual Studio. We recommend using CMake version 3.14 or later.
 
-## <a name="enable-cmakepresets-json-integration"> Enable  *`CMakePresets.json`* integration in Visual Studio
+## <a name="enable-cmakepresets-json-integration"></a> Enable *`CMakePresets.json`* integration in Visual Studio
 
 *`CMakePresets.json`* integration isn't enabled by default in Visual Studio. You can enable it in **Tools** > **Options** > **CMake** > **General**:
 
