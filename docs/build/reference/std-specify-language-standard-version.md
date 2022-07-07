@@ -1,7 +1,7 @@
 ---
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
-ms.date: 10/22/2021
+ms.date: 07/07/2022
 f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c11", "/std:c17", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ---
 # `/std` (Specify Language Standard Version)
@@ -21,6 +21,8 @@ Enable supported C and C++ language features from the specified version of the C
 
 The **`/std`** options are available in Visual Studio 2017 and later. They're used to control the version-specific ISO C or C++ programming language standard features enabled during compilation of your code. The options allow you to disable support for certain new language and library features: ones that may break your existing code that conforms to a particular version of the language standard.
 
+The Microsoft C++ compiler in Visual Studio 2017 and later versions doesn't support C++ standards modes earlier than C++14 (**`/std:c++14`**). Such support isn't planned. As an imperfect workaround, it's possible to use older Visual C++ compiler toolsets that didn't implement features from later standards. For more information on how to install and use older compiler toolsets in Visual Studio, see [Microsoft C++ porting and upgrading guide](../../porting/visual-cpp-porting-and-upgrading-guide.md).
+
 ### C++ standards support
 
 The **`/std`** option in effect during a C++ compilation can be detected by use of the [`_MSVC_LANG`](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
@@ -39,12 +41,12 @@ The following features remain enabled when the **`/std:c++14`** option is specif
 - [u8 character literals](https://wg21.link/n4267)
 
 **`/std:c++17`**\
-The **`/std:c++17`** option enables C++17 standard-specific features and behavior. It enables the full set of C++17 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are new or changed after C++17. It specifically disables post-C++17 changes in the C++ Standard and versions of the Working Draft. It does not disable retroactive defect updates of the C++ Standard. This option is available starting in Visual Studio 2017 version 15.3.
+The **`/std:c++17`** option enables C++17 standard-specific features and behavior. It enables the full set of C++17 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are new or changed after C++17. It specifically disables post-C++17 changes in the C++ Standard and versions of the Working Draft. It doesn't disable retroactive defect updates of the C++ Standard. This option is available starting in Visual Studio 2017 version 15.3.
 
 Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conforming when you specify the **`/std:c++17`** option. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 
 **`/std:c++20`**\
-The **`/std:c++20`** option enables C++20 standard-specific features and behavior. Available starting in Visual Studio 2019 version 16.11, it enables the full set of C++20 features implemented by the MSVC compiler, with the exception of `std::format`, the C++20 `<chrono>` formatting extensions, and the range factories and range adaptors from `<ranges>`. These features are still only available under **`/std:c++latest`**.
+The **`/std:c++20`** option enables C++20 standard-specific features and behavior. Available starting in Visual Studio 2019 version 16.11, it enables the full set of C++20 features implemented by the MSVC compiler, except for `std::format`, the C++20 `<chrono>` formatting extensions, and the range factories and range adaptors from `<ranges>`. These features are still only available under **`/std:c++latest`**.
 
 The **`/std:c++20`** option disables compiler and standard library support for features that are new or changed after C++20. It specifically disables post-C++20 changes in the C++ Standard and versions of the Working Draft. It doesn't disable retroactive defect updates of the C++ Standard.
 
