@@ -6,7 +6,7 @@ api_name: ["abort", "_o_abort"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["Abort"]
+f1_keywords: ["STDLIB/abort", "abort"]
 helpviewer_keywords: ["aborting current process", "abort function", "processes, aborting"]
 ---
 # `abort`
@@ -52,7 +52,7 @@ For more information about CRT debugging, see [CRT Debugging Techniques](/visual
 
 **End Microsoft Specific**
 
-By default, this function's global state is scoped to the application. To change this default, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
