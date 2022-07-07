@@ -326,7 +326,7 @@ The source ranges aren't modified by `binary_search`.
 
 The value types of the forward iterators must be less-than comparable to be ordered. That is, given two elements, you can determine either that one is less than the other, or that they're equivalent. (Here, equivalent means that neither is less than the other.) This comparison results in an ordering between the nonequivalent elements.
 
-The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to (`last` - `first`).
+The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to (`last-first`).
 
 ### Example
 
@@ -2382,7 +2382,7 @@ The function object is invoked for each element in the range and doesn't need to
 
 The range referenced must be valid. All pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
 
-The complexity is linear, with exactly `last` - `first` calls made to the generator.
+The complexity is linear, with exactly `last - first` calls made to the generator.
 
 ### Example
 
@@ -6941,39 +6941,42 @@ The complexity is linear. It makes (`last` - `first`) comparisons for equality a
 
 int main()
 {
-    using namespace std;
-    vector<int> v1;
-    vector<int>::iterator Iter1;
+    std::vector<int> v;
 
-    int i;
-    for ( i = 0 ; i <= 9 ; i++ )
-        v1.push_back( i );
+    for (int i = 0; i < 10; i++)
+    {
+        v.push_back(i);
+    }
 
-    int ii;
-    for ( ii = 0 ; ii <= 3 ; ii++ )
-        v1.push_back( 7 );
+    for (int i = 0; i < 3; i++)
+    {
+        v.push_back(7);
+    }
 
-    random_shuffle (v1.begin( ), v1.end( ) );
-    cout << "The original vector v1 is:\n ( " ;
-    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-        cout << *Iter1 << " ";
-    cout << ")." << endl;
+    std::cout << "The original vector v is:\n ( ";
+    for (auto iter = v.begin(); iter != v.end(); iter++)
+    {
+        std::cout << *iter << " ";
+    }
+    std::cout << ")." << std::endl;
 
     // Replace elements with a value of 7 with a value of 700
-    replace (v1.begin( ), v1.end( ), 7 , 700);
+    replace(v.begin(), v.end(), 7, 700);
 
-    cout << "The vector v1 with a value 700 replacing that of 7 is:\n ( " ;
-    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-        cout << *Iter1 << " ";
-    cout << ")." << endl;
+    std::cout << "The vector v with 7s replaced with 700s:\n ( ";
+    for (auto iter = v.begin(); iter != v.end(); iter++)
+    {
+        std::cout << *iter << " ";
+    }
+    std::cout << ")." << std::endl;
 }
 ```
 
 ```Output
-The original vector v1 is:
- ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
-The vector v1 with a value 700 replacing that of 7 is:
- ( 4 700 700 700 0 5 700 1 6 9 3 700 8 2 ).
+The original vector v is:
+ ( 0 1 2 3 4 5 6 7 8 9 7 7 7 ).
+The vector v with 7s replaced with 700s:
+ ( 0 1 2 3 4 5 6 700 8 9 700 700 700 ).
 ```
 
 ## <a name="replace_copy"></a> `replace_copy`
