@@ -21,7 +21,7 @@ Enable supported C and C++ language features from the specified version of the C
 
 The **`/std`** options are available in Visual Studio 2017 and later. They're used to control the version-specific ISO C or C++ programming language standard features enabled during compilation of your code. The options allow you to disable support for certain new language and library features: ones that may break your existing code that conforms to a particular version of the language standard.
 
-The Microsoft C++ compiler in Visual Studio 2017 and later versions doesn't support C++ standards modes earlier than C++14 (**`/std:c++14`**). Such support isn't planned. As an imperfect workaround, it's possible to use older Visual C++ compiler toolsets that didn't implement features from later standards. For more information on how to install and use older compiler toolsets in Visual Studio, see [Microsoft C++ porting and upgrading guide](../../porting/visual-cpp-porting-and-upgrading-guide.md).
+The Microsoft C++ compiler in Visual Studio 2017 and later versions doesn't support C++ standards modes earlier than C++14 (**`/std:c++14`**). Such support isn't planned. As an imperfect workaround, it's possible to use older Visual C++ compiler toolsets that didn't implement features from later standards. For more information on how to install and use older compiler toolsets in Visual Studio, see [Use native multi-targeting in Visual Studio to build old projects](../../porting/use-native-multi-targeting.md).
 
 ### C++ standards support
 
