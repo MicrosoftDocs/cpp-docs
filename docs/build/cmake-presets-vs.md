@@ -25,13 +25,13 @@ Visual Studio supports version 2 or later for the *`CMakePresets.json`* and *`CM
 
 CMake version 3.20 or later is required when you're invoking CMake with *`CMakePresets.json`* (version 2 or later) from the command line. However, Visual Studio reads and evaluates *`CMakePresets.json`* and *`CMakeUserPresets.json`* itself and doesn't invoke CMake directly with the `--preset` option. So, CMake version 3.20 or later isn't strictly required when you're building with *`CMakePresets.json`* inside Visual Studio. We recommend using CMake version 3.14 or later.
 
-## <a name="enable-cmakepresets-json-integration"> Enable  *`CMakePresets.json`* integration in Visual Studio
+## <a name="enable-cmakepresets-json-integration"></a> Enable *`CMakePresets.json`* integration in Visual Studio
 
 *`CMakePresets.json`* integration isn't enabled by default in Visual Studio. You can enable it in **Tools** > **Options** > **CMake** > **General**:
 
 ![Screenshot showing the checkbox to enable CMakePresets.json on the CMake General page of the Tools Options dialog in Visual Studio 2022 version 17.1.](./media/enable-cmakepresets-new.png)
 
-> [!Important]
+> [!IMPORTANT]
 > Close and reopen the folder in Visual Studio to activate the integration.
 
 In some older versions of Visual Studio, **Tools** > **Options** > **CMake** > **General** only has a single option to enable *`CMakePresets.json`* integration:
@@ -467,7 +467,7 @@ cmake --build --preset <buildPreset-name>
 
 ## Example *`CMakePresets.json`* file
 
-The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/vs-launch/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets.
+The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/vs-launch/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets. For more information about this example, see the presentation [An Introduction to CMakePresets.json](/events/cpp-pure-virtual-cpp-2021/an-introduction-to-cmakepresetsjson). You can see another example in the [DirectXTK](https://github.com/microsoft/DirectXTK/blob/main/CMakePresets.json) project, which shows many build targets in its `configurePresets` section.
 
 ## Next steps
 
