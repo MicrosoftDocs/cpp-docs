@@ -7335,7 +7335,7 @@ The original vector v1 is:
  ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
 The vector v1 with a value 70 replacing those
  elements satisfying the greater6 predicate is:
- ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
+ ( 4 70 70 70 0 5 70 1 6 70 3 70 70 2 ).
 ```
 
 ## <a name="reverse"></a> `reverse`
