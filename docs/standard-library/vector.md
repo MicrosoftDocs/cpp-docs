@@ -87,7 +87,7 @@ The second (right) vector in a compare operation.
 
 |Name|Description|
 |-|-|
-|[`operator! =`](../standard-library/vector-operators.md#op_neq)|Tests if the `vector` object on the left side of the operator is not equal to the `vector` object on the right side.|
+|[`operator! =`](../standard-library/vector-operators.md#op_neq)|Tests if the `vector` object on the left side of the operator isn't equal to the `vector` object on the right side.|
 |[`operator<`](../standard-library/vector-operators.md#op_lt)|Tests if the `vector` object on the left side of the operator is less than the `vector` object on the right side.|
 |[`operator<=`](../standard-library/vector-operators.md#op_gt_eq)|Tests if the `vector` object on the left side of the operator is less than or equal to the `vector` object on the right side.|
 |[`operator==`](../standard-library/vector-operators.md#op_eq_eq)|Tests if the `vector` object on the left side of the operator is equal to the `vector` object on the right side.|
