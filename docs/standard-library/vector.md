@@ -98,7 +98,7 @@ The second (right) vector in a compare operation.
 
 |Name|Description|
 |-|-|
-|[`vector1 class](../standard-library/vector-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
+|[`vector` class](../standard-library/vector-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
 
 ### Specializations
 
