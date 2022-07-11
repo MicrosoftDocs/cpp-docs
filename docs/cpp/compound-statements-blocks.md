@@ -6,6 +6,7 @@ f1_keywords: ["}", "{"]
 helpviewer_keywords: ["blocks, about blocks", "compound statements"]
 ms.assetid: 23855939-7430-498e-8936-0c70055ea701
 ---
+
 # Compound Statements (Blocks)
 
 A compound statement consists of zero or more statements enclosed in curly braces (**{ }**). A compound statement can be used anywhere a statement is expected. Compound statements are commonly called "blocks."
@@ -29,6 +30,7 @@ if( Amount > 100 )
 else
 {
     Balance -= Amount;
+    Alert();
 }
 ```
 
