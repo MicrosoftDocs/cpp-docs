@@ -14,7 +14,7 @@ The `vector` is a container that organizes elements of a given type in a linear 
 > [!NOTE]
 > The `<vector>` library also uses the `#include <initializer_list>` statement.
 
-For more information about the class `vector`, see [`vector` Class](../standard-library/vector-class.md). For information about the specialization `vector<bool>`, see [`vector\<bool>` Class](../standard-library/vector-bool-class.md).
+For more information about the class `vector`, see [`vector` Class](../standard-library/vector-class.md). For information about the specialization `vector<bool>`, see [`vector<bool>` class](../standard-library/vector-bool-class.md).
 
 ## Syntax
 
@@ -87,9 +87,9 @@ The second (right) vector in a compare operation.
 
 |Name|Description|
 |-|-|
-|[`operator! =`](../standard-library/vector-operators.md#op_neq)|Tests if the `vector` object on the left side of the operator is not equal to the `vector` object on the right side.|
+|[`operator! =`](../standard-library/vector-operators.md#op_neq)|Tests if the `vector` object on the left side of the operator isn't equal to the `vector` object on the right side.|
 |[`operator<`](../standard-library/vector-operators.md#op_lt)|Tests if the `vector` object on the left side of the operator is less than the `vector` object on the right side.|
-|[`operator\<=`](../standard-library/vector-operators.md#op_gt_eq)|Tests if the `vector` object on the left side of the operator is less than or equal to the `vector` object on the right side.|
+|[`operator<=`](../standard-library/vector-operators.md#op_gt_eq)|Tests if the `vector` object on the left side of the operator is less than or equal to the `vector` object on the right side.|
 |[`operator==`](../standard-library/vector-operators.md#op_eq_eq)|Tests if the `vector` object on the left side of the operator is equal to the `vector` object on the right side.|
 |[`operator>`](../standard-library/vector-operators.md#op_gt)|Tests if the `vector` object on the left side of the operator is greater than the `vector` object on the right side.|
 |[`operator>=`](../standard-library/vector-operators.md#op_gt_eq)|Tests if the `vector` object on the left side of the operator is greater than or equal to the `vector` object on the right side.|
@@ -98,14 +98,14 @@ The second (right) vector in a compare operation.
 
 |Name|Description|
 |-|-|
-|[`vector Class`](../standard-library/vector-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
+|[`vector` class](../standard-library/vector-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
 
 ### Specializations
 
 |Name|Description|
 |-|-|
 |hash|Returns a hash of the vector.|
-|[`vector\<bool> Class`](../standard-library/vector-bool-class.md)|A full specialization of the class template vector for elements of type **`bool`** with an allocator for the underlying type used by the specialization.|
+|[`vector<bool>` class](../standard-library/vector-bool-class.md)|A full specialization of the class template vector for elements of type **`bool`** with an allocator for the underlying type used by the specialization.|
 
 ## Requirements
 
