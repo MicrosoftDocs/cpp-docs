@@ -1,51 +1,57 @@
 ---
-description: "Learn more about: Overloading Unary Operators"
-title: "Overloading Unary Operators"
-ms.date: "11/04/2016"
+description: "Learn more about: Overloading unary operators"
+title: "Overloading unary operators"
+ms.date: 07/08/2022
 helpviewer_keywords: ["unary operators [C++], plus", "increment operators [C++], overloaded", "unary operators [C++], minus", "operators [C++], unary", "redefinable unary operators [C++]", "unary operators [C++]", "pointer dereference operator overloading", "plus operator"]
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
 ---
-# Overloading Unary Operators
+# Overloading unary operators
 
-The unary operators that can be overloaded are the following:
+Unary operators produce a result from a single operand. You can define overloads of a standard set of unary operators to work on user-defined types.
 
-1. `!` ([logical NOT](../cpp/logical-negation-operator-exclpt.md))
+## Overloadable unary operators
 
-1. `&` ([address-of](../cpp/address-of-operator-amp.md))
+You can overload the following unary operators on user-defined types:
 
-1. `~` ([one's complement](../cpp/one-s-complement-operator-tilde.md))
+- **`!`** ([logical NOT](../cpp/logical-negation-operator-exclpt.md))
 
-1. `*` ([pointer dereference](../cpp/indirection-operator-star.md))
+- **`&`** ([address-of](../cpp/address-of-operator-amp.md))
 
-1. `+` ([unary plus](../cpp/additive-operators-plus-and.md))
+- **`~`** ([complement](../cpp/one-s-complement-operator-tilde.md))
 
-1. `-` ([unary negation](../cpp/additive-operators-plus-and.md))
+- **`*`** ([pointer dereference](../cpp/indirection-operator-star.md))
 
-1. `++` ([increment](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+- **`+`** ([unary plus](../cpp/unary-plus-and-negation-operators-plus-and.md))
 
-1. `--` ([decrement](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+- **`-`** ([unary negation](../cpp/unary-plus-and-negation-operators-plus-and.md))
 
-1. conversion operators
+- **`++`** ([prefix increment](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)) or ([postfix increment](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md))
 
-The postfix increment and decrement operators (`++` and `--`) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).
+- **`--`** ([prefix decrement](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)) or ([postfix decrement](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md))
 
-Conversion operators are also discussed in a separate topic; see [User-Defined Type Conversions](../cpp/user-defined-type-conversions-cpp.md).
+- [Conversion operators](../cpp/user-defined-type-conversions-cpp.md)
 
-The following rules are true of all other unary operators. To declare a unary operator function as a nonstatic member, you must declare it in the form:
+## Unary operator overload declarations
 
-> *ret-type* **`operator`** *op* **()**
+You can declare overloaded unary operators either as non-static member functions or as nonmember functions. Overloaded unary member functions take no argument because they implicitly operate on **`this`**. Nonmember functions are declared with one argument. When both forms are declared, the compiler follows the rules for overload resolution to determine which function to use, if any.
 
-where *ret-type* is the return type and *op* is one of the operators listed in the preceding table.
+The following rules apply to all prefix unary operators. To declare a unary operator function as a non-static member function, use this declaration form:
 
-To declare a unary operator function as a global function, you must declare it in the form:
+> *`return-type`* **`operator`** *`op`* **`();`**
 
-> *ret-type* **`operator`** *op* **(** *arg* **)**
+In this form, *`return-type`* is the return type and *`op`* is one of the operators listed in the preceding table.
 
-where *ret-type* and *op* are as described for member operator functions and the *arg* is an argument of class type on which to operate.
+To declare a unary operator function as a nonmember function, use this declaration form:
+
+> *`return-type`* **`operator`** *`op`* **`(`** *`class-type`* **`);`**
+
+In this form, *`return-type`* is the return type, *`op`* is one of the operators listed in the preceding table, and *`class-type`* is the class type of the argument on which to operate.
+
+The postfix forms of **`++`** and **`--`** take an extra **`int`** argument to distinguish them from the prefix forms. For more information about the prefix and postfix forms of **`++`** and **`--`**, see [Increment and decrement operator overloading](../cpp/increment-and-decrement-operator-overloading-cpp.md).
 
 > [!NOTE]
-> There is no restriction on the return types of the unary operators. For example, it makes sense for logical NOT (`!`) to return an integral value, but this is not enforced.
+> There's no restriction on the return types of the unary operators. For example, it makes sense for logical NOT (**`!`**) to return a **`bool`** value, but this behavior isn't enforced.
 
 ## See also
 
-[Operator Overloading](../cpp/operator-overloading.md)
+[Operator overloading](../cpp/operator-overloading.md)
