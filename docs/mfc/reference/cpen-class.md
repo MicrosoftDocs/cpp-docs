@@ -125,7 +125,7 @@ The second version of the `CPen` constructor specifies a combination of type, st
 *`nWidth`*\
 Specifies the width of the pen.
 
-- For the first version of the constructor, if this value is 0, the width in device units is always 1 pixel, regardless of the mapping mode.
+- For the first version of the constructor, a value of 0 will be treated similarly to a value of 1, except that the width will not be affected by scale-transform operations that are in effect for the Graphics object that the pen is used for; the width will always be 1 pixel.
 
 - For the second version of the constructor, if *`nPenStyle`* is `PS_GEOMETRIC`, the width is given in logical units. If *`nPenStyle`* is `PS_COSMETIC`, the width must be set to 1.
 
@@ -177,7 +177,7 @@ Specifies the style for the pen. For a list of possible values, see the *`nPenSt
 *`nWidth`*\
 Specifies the width of the pen.
 
-- For the first version of `CreatePen`, if this value is 0, the width in device units is always 1 pixel, regardless of the mapping mode.
+- For the first version of `CreatePen`, a value of 0 will be treated similarly to a value of 1, except that the width will not be affected by scale-transform operations that are in effect for the Graphics object that the pen is used for; the width will always be 1 pixel.
 
 - For the second version of `CreatePen`, if *`nPenStyle`* is `PS_GEOMETRIC`, the width is given in logical units. If *`nPenStyle`* is `PS_COSMETIC`, the width must be set to 1.
 
