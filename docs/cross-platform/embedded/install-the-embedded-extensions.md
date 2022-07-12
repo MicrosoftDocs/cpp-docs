@@ -4,7 +4,7 @@ description: "How to install the Embedded extensions in Visual Studio Code."
 ms.date: "07/12/2022"
 ms.custom: intro-installation
 ---
-# Install the Embedded extensions in VSCode 
+# Install the Embedded extensions in VSCode
 
 Embedded tools like a [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and a [Serial Monitor](./serial-monitor.md) are supported in VSCode. This means that you now can use Microsoft tools to help debug your embedded applications in VSCode.
 

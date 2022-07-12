@@ -19,6 +19,11 @@ landingContent:
   # Card (optional)
   - title: Create Embedded apps in Visual Studio
     linkLists:
+      
+
+  # Card
+  - title: Build and debug embedded projects in Visual Studio and Visual Studio Code
+    linkLists:
       - linkListType: get-started
         links:
           - text: Download the Embedded workload in Visual Studio
@@ -29,15 +34,31 @@ landingContent:
         links:
           - text: Getting started guides
             url: https://github.com/azure-rtos/getting-started
-
-  # Card
-  - title: Build Linux CMake projects in Visual Studio
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Create and configure a Linux CMake project
-            url: ../../linux/cmake-linux-project.md
       - linkListType: tutorial
         links:
-          - text: Create C++ cross-platform projects in Visual Studio
-            url: ../../build/get-started-linux-cmake.md
+          - text: Embedded Software Development in Visual Studio
+            url: https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/
+          - text: Embedded Software Development in Visual Studio Code
+            url: https://devblogs.microsoft.com/cppblog/vscode-embedded-development/
+      - linkListType: whats-new
+        links:
+          - text: Zephyr support in Visual Studio and Visual Studio Code
+            url: https://devblogs.microsoft.com/cppblog/serial-and-zephyr-support/
+
+  - title: Embedded Tooling in Visual Studio and Visual Studio Code
+    linkLists: 
+      - linkListType: reference
+        links:
+          - text: Peripheral Viewer
+            url: ./peripheral-view.md
+          - text: RTOS Object Viewer
+            url: ./rtos-viewer.md
+          - text: Serial Monitor
+            url: ./serial-monitor.md
+
+  - title: Additional Embedded tools!
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Bootstrap your development environment!
+            url: https://devblogs.microsoft.com/cppblog/vcpkg-artifacts/
