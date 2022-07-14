@@ -1,9 +1,9 @@
 items: 
 - name: Embedded development with Visual Studio and Visual Studio code
   href: ../embedded/index.yml
-- name: Install the Embedded Tools
+- name: Download and install the Embedded Tools
   items:
-  - name: Download and install the Embedded Development workload in Visual Studio
+  - name: Visual Studio
     href: download-and-install-the-embedded-workload.md
-  - name: Install the Embedded extensions in Visual Studio Code
+  - name: Visual Studio Code
     href: install-the-embedded-extensions.md

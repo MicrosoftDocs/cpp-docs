@@ -47,7 +47,7 @@ landingContent:
         links:
           - text: Peripheral Viewer
             url: ./peripheral-view.md
-          - text: RTOS Object Viewer
+          - text: RTOS Viewer
             url: ./rtos-view.md
           - text: Serial Monitor
             url: ./serial-monitor.md
