@@ -6,23 +6,13 @@ ms.custom: intro-installation
 ---
 # Download, install, and set up the Embedded workload
 
-::: moniker range="msvc-140"
-
 Embedded tooling is supported in Visual Studio 2022 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2022. It's found at the top of the table of contents on this page.
-
-::: moniker-end
-
-::: moniker range=">=msvc-150"
 
 You can use the Visual Studio IDE on Windows to edit and debug Embedded projects.
 
 You can use tools like the [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and the [Serial Monitor](./serial-monitor.md) to help interact with and debug your embedded projects.
 
 For any of these scenarios, the **Linux and embedded development with C++** workload is required.
-
-::: moniker-end
-
-::: moniker range=">=msvc-150"
 
 ## Visual Studio setup
 
@@ -42,5 +32,3 @@ You're now ready to create or open a Linux project and configure it to run on th
 
 - [Create a new Linux MSBuild C++ project](../../linux/create-a-new-linux-project.md)
 - [Configure a Linux CMake project](../../linux/cmake-linux-project.md)
-
-::: moniker-end
