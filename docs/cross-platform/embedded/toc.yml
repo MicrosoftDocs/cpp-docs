@@ -7,3 +7,23 @@ items:
     href: download-and-install-the-embedded-workload.md
   - name: Visual Studio Code
     href: install-the-embedded-extensions.md
+- name: Getting started guides
+  href: https://github.com/azure-rtos/getting-started
+- name: Build and debug embedded projects
+  items:
+    - name: Embedded Software Development in Visual Studio
+      href: https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/
+    - name: Embedded Software Development in Visual Studio Code
+      href: https://devblogs.microsoft.com/cppblog/vscode-embedded-development/
+    - name: Zephyr support
+      href: https://devblogs.microsoft.com/cppblog/serial-and-zephyr-support/
+- name: Embedded Tooling
+  items: 
+    - name: Peripheral Viewer
+      href: ./peripheral-view.md
+    - name: RTOS Viewer
+      href: ./rtos-view.md
+    - name: Serial Monitor 
+      href: ./serial-monitor.md
+    - name: vcpkg artifacts
+      href: https://devblogs.microsoft.com/cppblog/vcpkg-artifacts/

@@ -14,7 +14,17 @@ The RTOS Object Views allow for users to view various components of an RTOS whil
 |VS|![RTOS View in VS](media/rtos-threads.png)|
 |VSCode|![RTOS View in VSCode](media/rtos-threads-vscode.png)|
 
-## Supported RTOS Object views
+## Supported RTOSes and their supported object types
+
+- ThreadX
+  - All of the **Available Object Types** list
+- FreeRTOS
+  - Threads
+  - Queues
+- Zephyr
+  - All of the **Available Object Types** list
+
+## Available Object Types
 
 - Block Pools
 - Byte Pools
