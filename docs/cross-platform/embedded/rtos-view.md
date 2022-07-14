@@ -37,8 +37,8 @@ The RTOS Object Views allow for users to view various components of an RTOS whil
 
 ## Usage
 
-- Access memory locations of various things
-- Access thread variables or various things in the Watch view
+- Access memory locations of various objects
+- Access thread variables or various objects in the Watch view
 
 ## Accessibility
 
