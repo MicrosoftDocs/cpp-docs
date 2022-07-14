@@ -16,10 +16,6 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: Create Embedded apps in Visual Studio
-    linkLists:
-      
 
   # Card
   - title: Build and debug embedded projects in Visual Studio and Visual Studio Code
