@@ -11,11 +11,15 @@ ms.author: gcampbell
 
 The Serial Monitor allows users to configure, monitor, and communicate with serial ports.
 
-||Serial Monitor|
-|:-:|:-:|
-|VS|![Serial Monitor in VS](media/serial-monitor.png)|
-|VSCode|![Serial Monitor in VSCode](media/serial-monitor-vscode.png)|
-|||
+# [Visual Studio](#tab/visual-studio)
+
+![Serial Monitor in VS](media/serial-monitor.png)
+
+# [Visual Studio Code](#tab/visual-studio-code)
+
+![Serial Monitor in VSCode](media/serial-monitor-vscode.png)
+
+---
 
 ## Capabilities
 

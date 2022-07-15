@@ -11,10 +11,15 @@ ms.author: gcampbell
 
 The RTOS Object Views allow for users to view various components of an RTOS while debugging their application.
 
-||RTOS View|
-|:-:|:-:|
-|VS|![RTOS View in VS](media/rtos-threads.png)|
-|VSCode|![RTOS View in VSCode](media/rtos-threads-vscode.png)|
+# [Visual Studio](#tab/visual-studio)
+
+![RTOS View in VS](media/rtos-threads.png)
+
+# [Visual Studio Code](#tab/visual-studio-code)
+
+![RTOS View in VSCode](media/rtos-threads-vscode.png)
+
+---
 
 ## Supported RTOSes and their supported object types
 

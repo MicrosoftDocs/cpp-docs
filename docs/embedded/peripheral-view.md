@@ -11,9 +11,15 @@ ms.author: gcampbell
 
 The Peripheral View allows embedded developers to view and manipulate registers and peripherals defined SVD (System View Description) files.
 
-|VS|VSCode|
-|:-:|:-:|
-|![Peripheral View in VS](media/peripheral-viewer.png)|![Peripheral View in VSCode](media/peripheral-viewer-vscode.png)|
+# [Visual Studio](#tab/visual-studio)
+
+![Peripheral View in VS](media/peripheral-viewer.png)
+
+# [Visual Studio Code](#tab/visual-studio-code)
+
+![Peripheral View in VSCode](media/peripheral-viewer-vscode.png)
+
+---
 
 ## Capabilities
 
