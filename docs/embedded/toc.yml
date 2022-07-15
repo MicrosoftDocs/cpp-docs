@@ -1,6 +1,6 @@
 items: 
 - name: Embedded development with Visual Studio and Visual Studio code
-  href: ../embedded/index.yml
+  href: ./index.yml
 - name: Download and install the Embedded Tools
   href: download-and-install-the-embedded-tooling.md
 - name: Getting started guides

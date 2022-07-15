@@ -23,7 +23,7 @@ For any of these scenarios, the **Linux and embedded development with C++** work
 
 1. Type "Visual Studio Installer" in the Windows search box:
 
-   ![Screenshot showing the Windows search box.](../../linux/media/visual-studio-installer-search.png)
+   ![Screenshot showing the Windows search box.](../linux/media/visual-studio-installer-search.png)
 
 1. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux and embedded development with C++** workload.
 
@@ -35,8 +35,8 @@ For any of these scenarios, the **Linux and embedded development with C++** work
 
 You're now ready to create or open a Linux project and configure it to run on the target system. For more information, see:
 
-- [Create a new Linux MSBuild C++ project](../../linux/create-a-new-linux-project.md)
-- [Configure a Linux CMake project](../../linux/cmake-linux-project.md)
+- [Create a new Linux MSBuild C++ project](../linux/create-a-new-linux-project.md)
+- [Configure a Linux CMake project](../linux/cmake-linux-project.md)
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
