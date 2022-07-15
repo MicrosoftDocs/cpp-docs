@@ -33,13 +33,6 @@ For any of these scenarios, the **Linux and embedded development with C++** work
 
 1. Click **Modify** to continue with the installation.
 
-## Next Steps
-
-You're now ready to create or open a Linux project and configure it to run on the target system. For more information, see:
-
-- [Create a new Linux MSBuild C++ project](../linux/create-a-new-linux-project.md)
-- [Configure a Linux CMake project](../linux/cmake-linux-project.md)
-
 # [Visual Studio Code](#tab/visual-studio-code)
 
 ## Install the Embedded extensions in VSCode
