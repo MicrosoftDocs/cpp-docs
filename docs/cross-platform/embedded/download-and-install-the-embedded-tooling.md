@@ -5,6 +5,8 @@ ms.date: "07/12/2022"
 ms.custom: intro-installation
 ---
 
+# Download and install the Embedded tooling
+
 # [Visual Studio](#tab/visual-studio)
 
 ## Download, install, and set up the Embedded workload
