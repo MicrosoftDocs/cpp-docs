@@ -22,10 +22,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Download the Embedded workload in Visual Studio
-            url: download-and-install-the-embedded-workload.md
-          - text: Set up Embedded tooling in Visual Studio Code
-            url: install-the-embedded-extensions.md
+          - text: Download the Embedded workload in Visual Studio and Visual Studio Code
+            url: download-and-install-the-embedded-tooling.md
       - linkListType: how-to-guide
         links:
           - text: Getting started guides

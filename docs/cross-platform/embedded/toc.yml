@@ -2,11 +2,7 @@ items:
 - name: Embedded development with Visual Studio and Visual Studio code
   href: ../embedded/index.yml
 - name: Download and install the Embedded Tools
-  items:
-  - name: Visual Studio
-    href: download-and-install-the-embedded-workload.md
-  - name: Visual Studio Code
-    href: install-the-embedded-extensions.md
+  href: download-and-install-the-embedded-tooling.md
 - name: Getting started guides
   href: https://github.com/azure-rtos/getting-started
 - name: Build and debug embedded projects
