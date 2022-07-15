@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Embedded development with C++ | Create and debug embedded applications # < 60 chars
-summary: Use Embedded tooling in Visual Studio 2017 and later to create and debug applications for Linux. # < 160 chars
+summary: Use Embedded tooling in Visual Studio 2022 and later to create and debug applications for Embedded. # < 160 chars
 
 metadata:
   title: Embedded development with C++

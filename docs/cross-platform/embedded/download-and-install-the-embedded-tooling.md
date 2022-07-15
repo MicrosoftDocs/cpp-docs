@@ -1,6 +1,6 @@
 ---
-title: "Install the Embedded workload in Visual Studio"
-description: "How to download and install the Embedded workload in Visual Studio."
+title: "Install the Embedded tooling in Visual Studio and Visual Studio Code"
+description: "How to download and install the Embedded tooling in Visual Studio and Visual Studio Code."
 ms.date: "07/12/2022"
 ms.custom: intro-installation
 ---
