@@ -2,6 +2,8 @@
 title: "Peripheral View"
 ms.date: "07/12/2022"
 description: "Peripheral View that allows users to view and manipulate peripherals."
+author: gcampbell-msft
+ms.author: gcampbell
 ---
 # Peripheral View
 
