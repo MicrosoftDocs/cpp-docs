@@ -61,3 +61,5 @@ Embedded tools like a [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](.
 1. Search for and install the [Serial Monitor](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-serial-monitor) extension.
 
     ![Serial Monitor extension](media/serial-monitor-extension.png)
+
+---
