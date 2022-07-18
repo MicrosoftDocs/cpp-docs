@@ -5,6 +5,7 @@ ms.date: "07/12/2022"
 ms.custom: intro-installation
 author: gcampbell-msft
 ms.author: gcampbell
+monikerRange: '>=msvc-170'
 ---
 
 # Download and install the Embedded tooling

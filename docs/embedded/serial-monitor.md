@@ -4,6 +4,7 @@ ms.date: "07/12/2022"
 description: "Serial Monitor tool that allows user to monitor, and communicate with serial ports."
 author: gcampbell-msft
 ms.author: gcampbell
+monikerRange: '>=msvc-170'
 ---
 # Serial Monitor
 

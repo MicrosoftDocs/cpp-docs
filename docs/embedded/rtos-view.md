@@ -4,6 +4,7 @@ ms.date: "07/12/2022"
 description: "RTOS View that allows users to view RTOS data of their application."
 author: gcampbell-msft
 ms.author: gcampbell
+monikerRange: '>=msvc-170'
 ---
 # RTOS (Real time operating system) Object View
 
