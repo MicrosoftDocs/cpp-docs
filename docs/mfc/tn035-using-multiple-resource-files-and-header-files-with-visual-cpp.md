@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: TN035: Using Multiple Resource Files and Header Files with Visual C++"
-title: "TN035: Using Multiple Resource Files and Header Files with Visual C++"
+description: "Learn more about: TN035: Using multiple resource files and header files with Visual C++"
+title: "TN035: Using multiple resource files and header files with Visual C++"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.resources"]
 helpviewer_keywords: ["resource files, multiple", "TN035"]
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
 ---
-# TN035: Using Multiple Resource Files and Header Files with Visual C++
+# TN035: Using multiple resource files and header files with Visual C++
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
@@ -25,25 +25,25 @@ You should be aware that if you add an additional resource file to your project,
 
 This note is structured to answer the above questions as follows:
 
-- **Overview of How Visual C++ Manages Resource Files and Header Files** provides an overview of how the Resource Set Includes command in Visual C++ lets you use multiple resource files and header files in the same project.
+- **Overview of how Visual C++ manages resource files and header files** provides an overview of how the Resource Set Includes command in Visual C++ lets you use multiple resource files and header files in the same project.
 
 - **Analysis of AppWizard-created `.RC` and `.H` Files** looks at the multiple resource and header files that are used by an AppWizard-created application. These files serve as a good model for additional resource files and header files you might want to add to your project.
 
-- **Including Additional Header Files** describes where you might want to include multiple header files, and provides details how to do so.
+- **Including additional header files** describes where you might want to include multiple header files, and provides details how to do so.
 
-- **Sharing a Header File Between Two `.RC` Files** shows how you can share one header file between multiple `.RC` files in different projects, or perhaps in the same project.
+- **Sharing a header file between two `.RC` files** shows how you can share one header file between multiple `.RC` files in different projects, or perhaps in the same project.
 
-- **Using Multiple Resource Files in the Same Project** describes where you might want to break up your project into multiple `.RC` files, and provides details how to do so.
+- **Using multiple resource files in the same project** describes where you might want to break up your project into multiple `.RC` files, and provides details how to do so.
 
-- **Enforcement of Non-Editable Visual C++ Files** describes how you can make sure Visual C++ doesn't edit and unintentionally reformat a custom resource.
+- **Enforcement of non-editable Visual C++ files** describes how you can make sure Visual C++ doesn't edit and unintentionally reformat a custom resource.
 
-- **Managing Symbols Shared by Multiple Visual C++-Edited `.RC` Files** describes how to share the same symbols across multiple `.RC` files and how to avoid assigning duplicate ID numeric values.
+- **Managing symbols shared by multiple Visual C++-edited `.RC` files** describes how to share the same symbols across multiple `.RC` files and how to avoid assigning duplicate ID numeric values.
 
-- **Managing Dependencies Between `.RC`, `.CPP`, and `.H` Files** describes how Visual C++ avoids unnecessary recompiling `.CPP` files that are dependent on resource symbol files.
+- **Managing dependencies between `.RC`, `.CPP`, and `.H` files** describes how Visual C++ avoids unnecessary recompiling `.CPP` files that are dependent on resource symbol files.
 
-- **How Visual C++ Manages Set Includes Information** provides technical details about how Visual C++ keeps track of multiple (nested) `.RC` files and multiple header files that are included by an `.RC` file.
+- **How Visual C++ manages Set Includes information** provides technical details about how Visual C++ keeps track of multiple (nested) `.RC` files and multiple header files that are included by an `.RC` file.
 
-## Overview of How Visual C++ Manages Resource Files and Header Files
+## Overview of how Visual C++ manages resource files and header files
 
 Visual C++ manages a single `.RC` resource file and a corresponding `.H` header file as a tightly coupled pair of files. When you edit and save resources in an `.RC` file, you indirectly edit and save symbols in the corresponding `.H` file. Although you can open and edit multiple `.RC` files at a time (using Visual C++'s MDI user interface), for any given `.RC` file you indirectly edit exactly one corresponding header file.
 
@@ -60,7 +60,7 @@ By default, Visual C++ always names the corresponding header file `RESOURCE.H`, 
 
 #### Read-Only Symbol Directives
 
-Although Visual C++ only edits one header file for any given `.RC` file, Visual C++ supports references to symbols defined in additional read-only header files. The **Read-Only symbol Directives:** section in the **Resource Includes** dialog lets you specify any number of additional read-only header files as Read-Only Symbol Directives. The "read-only" restriction means that when you add a new resource in the `.RC` file, you can use a symbol defined in the read-only header file. However, if you delete the resource, the symbol still remains defined in the read-only header file. You can't change the numeric value assigned to a read-only symbol.
+Although Visual C++ only edits one header file for any given `.RC` file, Visual C++ supports references to symbols defined in additional read-only header files. The **Read-Only Symbol Directives:** section in the **Resource Includes** dialog lets you specify any number of additional read-only header files as Read-Only Symbol Directives. The "read-only" restriction means that when you add a new resource in the `.RC` file, you can use a symbol defined in the read-only header file. However, if you delete the resource, the symbol still remains defined in the read-only header file. You can't change the numeric value assigned to a read-only symbol.
 
 #### Compile-Time Directives
 
@@ -68,9 +68,9 @@ Visual C++ also supports nesting of resource files, where one `.RC` file is incl
 
 Note what happens if you read into Visual C++ an `.RC` file that includes another `.RC` file that isn't* specified as a Compile-Time Directive. This situation might arise when you bring to Visual C++ an `.RC` file that you had been previously maintaining manually with a text editor. When Visual C++ reads the included `.RC` file, it merges the included resources into the parent `.RC` file. When you save the parent `.RC` file, the `#include` statement, in effect, will be replaced by the included resources. If you don't want this merge to happen, you should remove the `#include` statement from the parent `.RC` file *prior* to reading it into Visual C++; then using Visual C++, add back the same `#include` statement as a Compile-Time Directive.
 
-Visual C++ saves in an `.RC` file the three kinds of above Set Includes information (Symbol Header File, Read-Only Symbol Directives, and Compile-Time Directives) in `#include` directives *and* in `TEXTINCLUDE` resources. The `TEXTINCLUDE` resources, an implementation detail that you don't normally need to deal with, are explained in [How Visual C++ Manages Set Includes Information](#_mfcnotes_tn035_set_includes).
+Visual C++ saves in an `.RC` file the three kinds of above Set Includes information (Symbol Header File, Read-Only Symbol Directives, and Compile-Time Directives) in `#include` directives *and* in `TEXTINCLUDE` resources. The `TEXTINCLUDE` resources, an implementation detail that you don't normally need to deal with, are explained in [How Visual C++ manages set includes information](#_mfcnotes_tn035_set_includes).
 
-## Analysis of AppWizard-Created `.RC` and `.H` Files
+## Analysis of AppWizard-created `.RC` and `.H` files
 
 Examining the application code produced by AppWizard provides insight into how Visual C++ manages multiple resource files and header files. The code excerpts examined below are from a `MYAPP` application produced by AppWizard using the default options.
 
@@ -110,7 +110,7 @@ If you use custom formatted resources, you can add them to `RES\MYAPP.RC2` and e
 
 `AFXRES.H` defines standard symbols, such as `ID_FILE_NEW`, used by the framework and specifically used in `AFXRES.RC`. `AFXRES.H` also uses `#include` to include `WINRES.H`, which contains a subset of `WINDOWS.H` that's needed by Visual C++ generated `.RC` files and `AFXRES.RC`. The symbols defined in `AFXRES.H` are available as you edit the application resource file (`MYAPP.RC`). For example, `ID_FILE_NEW` is used for the `File` `New` menu item in the `MYAPP.RC` file's menu resource. You can't change or delete these framework-defined symbols.
 
-## <a name="_mfcnotes_tn035_including"></a> Including Additional Header Files
+## <a name="_mfcnotes_tn035_including"></a> Including additional header files
 
 The AppWizard-created application includes only two header files: `RESOURCE.H` and `AFXRES.H`. Only `RESOURCE.H` is application-specific. You may need to include additional read-only header files in the following cases:
 
@@ -150,7 +150,7 @@ The new file relationship diagram now looks like this:
         AFXPRINT.RC
 ```
 
-## Sharing a Header File Between Two `.RC` Files
+## Sharing a header file between two `.RC` files
 
 You may want to share a header file between two `.RC` files that are in different projects, or possibly the same project. To do so, apply the Read-Only Directives technique described above to both `.RC` files. In the case where the two `.RC` files are for different applications (different projects), the result is illustrated in the following diagram:
 
@@ -168,7 +168,7 @@ RES\MYAPP1.RC2  AFXRES.RC     RES\MYAPP2.RC2
 
 The case where the second header file is shared by two `.RC` files in the same application (project) is discussed below.
 
-## Using Multiple Resource Files in the Same Project
+## Using multiple resource files in the same project
 
 Visual C++ and the Resource Compiler support multiple `.RC` files in the same project through `#include` directives that include one `.RC` file within another. Multiple nesting is allowed. There are various reasons to split your project's resources into multiple `.RC` files:
 
@@ -209,7 +209,7 @@ The result is illustrated in the following diagram:
 
 Using Compile-Time Directives, you can organize your Visual C++-editable and non-editable resources into multiple `.RC` files, where the main `MYAPP.RC` does nothing but `#include` the other `.RC` files. If you're using a Visual Studio C++ project `.MAK` file, then you should include the main `.RC` file in the project so that all the included resources are compiled with your application.
 
-## Enforcement of Noneditable Visual C++ Files
+## Enforcement of non-editable Visual C++ files
 
 The AppWizard-created `RES\MYAPP.RC2` file is an example of a file that contains resources that you don't want to accidentally read into Visual C++ and then write back out with loss of formatting information. To protect against this problem, place the following lines in the beginning of the `RES\MYAPP.RC2` file:
 
@@ -221,7 +221,7 @@ The AppWizard-created `RES\MYAPP.RC2` file is an example of a file that contains
 
 When Visual C++ compiles the `.RC` file, it defines both `APSTUDIO_INVOKED` and `RC_INVOKED`. If the AppWizard-created file structure is corrupted and Visual C++ reads the #error line above, it reports a fatal error and aborts the reading of the `.RC` file.
 
-## Managing Symbols Shared by Multiple Visual C++-Edited `.RC` Files
+## Managing symbols shared by multiple Visual C++-edited `.RC` files
 
 Two issues arise when you split up your resources into multiple `.RC` files that you want to edit separately in Visual C++:
 
@@ -247,7 +247,7 @@ The `ID_TOOLS_SPELL` symbol is kept in the shared header file, `MYSHARED.H`. You
 
 It's most convenient to anticipate a symbol you'll share before you attempt to use it to identify any resource. Add the symbol to the shared header file and, if you haven't already included the shared header file in the Read-Only Directives for the `.RC` file, do so before using the symbol. If you didn't anticipate sharing the symbol in this way, then you'll have to manually (using a text editor) move the #define statement for the symbol from, say, `MYMENUS.H` to `MYSHARED.H` before using it in `MYSTRS.RC`.
 
-When you manage symbols in multiple `.RC` files, you also must help Visual C++ avoid assigning the same ID numeric values to distinct resources (symbols). For any given `.RC` file, Visual C++ incrementally assigns IDs in each of four ID domains. Between editing sessions, Visual C++ keeps track of the last ID it assigned in each of the domains in the symbol header file for the `.RC` file. Here's what the `APS_NEXT` values are for an empty (new) `.RC` file:
+When you manage symbols in multiple `.RC` files, you also must help Visual C++ avoid assigning the same ID numeric values to distinct resources (symbols). For any given `.RC` file, Visual C++ incrementally assigns IDs in each of four ID domains. Between editing sessions, Visual C++ keeps track of the last ID it assigned in each of the domains in the Symbol Header File for the `.RC` file. Here's what the `APS_NEXT` values are for an empty (new) `.RC` file:
 
 ```rc
 #define _APS_NEXT_RESOURCE_VALUE  101
@@ -279,7 +279,7 @@ To avoid this issue, you should reserve a separate numeric range for each of the
 
 Of course, it's still possible that Visual C++ will assign so many IDs in the first `.RC` file that the numeric values start to overlap the ones reserved for the second `.RC` file. You should reserve sufficiently large ranges so that this collision doesn't happen.
 
-## Managing Dependencies Between `.RC`, `.CPP`, and `.H` Files
+## Managing dependencies between `.RC`, `.CPP`, and `.H` files
 
 When Visual C++ saves an `.RC` file, it also saves symbol changes to the corresponding `RESOURCE.H` file. Any of your `.CPP` files that refer to resources in the `.RC` file must use `#include` to include the `RESOURCE.H` file, usually from within your project's main header file. This inclusion leads to an undesirable side-effect because of the development environment's internal project management, which scans source files for header dependencies. Every time you add a new symbol in Visual C++, all the `.CPP` files that have `#include "RESOURCE.H"` directives would need to be recompiled.
 
@@ -293,7 +293,7 @@ The development environment interprets this comment by ignoring the changes to `
 
 Visual C++ always adds the `//{{NO_DEPENDENCIES}}` comment line to a `.RC` file when it saves the file. In some cases, circumventing of the build dependency on `RESOURCE.H` may lead to run-time errors undetected at link time. For example, if you use the Symbol Browser to change the numeric value assigned to a symbol for a resource, the resource won't be correctly found and loaded at application run-time if the `.CPP` file referring to the resource isn't recompiled. In such cases, you should explicitly recompile any `.CPP` files that you know are affected by the symbol changes in `RESOURCE.H` or select **Rebuild All**. If you have the need to frequently change symbol values for a certain group of resources, you'll probably find it more convenient and safer to break out these symbols into a separate read-only header file, as described in the above section [Including Additional Header Files](#_mfcnotes_tn035_including).
 
-## <a name="_mfcnotes_tn035_set_includes"></a> How Visual C++ Manages Set Includes Information
+## <a name="_mfcnotes_tn035_set_includes"></a> How Visual C++ manages Set Includes information
 
 As discussed above, the File menu Set Includes command lets you specify three types of information:
 
@@ -315,7 +315,7 @@ The purpose of the `TEXTINCLUDE` resource is to safely store Set Include informa
 |2|Read-Only Symbol Directives|
 |3|Compile-Time Directives|
 
-Each of the three types of Set Includes information is illustrated by the default `MYAPP.RC` and `RESOURCE.H` files created by AppWizard, as described below. The extra \0 and "" tokens between `BEGIN` and `END` blocks are required by the RC syntax to specify zero terminated strings and the double quote character respectively.
+Each of the three types of Set Includes information is illustrated by the default `MYAPP.RC` and `RESOURCE.H` files created by AppWizard, as described below. The extra `\0` and `""` tokens between `BEGIN` and `END` blocks are required by the RC syntax to specify zero terminated strings and the double quote character respectively.
 
 ### Symbol Header File
 
