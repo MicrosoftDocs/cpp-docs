@@ -17,6 +17,8 @@ Embedded tooling is supported in Visual Studio 2022 and later. To see the docume
 
 You can use the Visual Studio IDE on Windows to edit and debug Embedded projects.
 
+::: moniker range=">msvc-190"
+
 You can use tools like the [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and the [Serial Monitor](./serial-monitor.md) to help interact with and debug your embedded projects.
 
 For any of these scenarios, the **Linux and embedded development with C++** workload is required.
@@ -32,6 +34,8 @@ For any of these scenarios, the **Linux and embedded development with C++** work
    ![Screenshot showing the Visual C++ for Linux Development workload item in Visual Studio Installer.](media/linux-and-embedded-workload.png)
 
 1. Click **Modify** to continue with the installation.
+
+::: moniker-end
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
