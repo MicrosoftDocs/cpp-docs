@@ -47,17 +47,24 @@ This note is structured to answer the above questions as follows:
 
 Visual C++ manages a single .RC resource file and a corresponding .H header file as a tightly coupled pair of files. When you edit and save resources in an .RC file, you indirectly edit and save symbols in the corresponding .H file. Although you can open and edit multiple .RC files at a time (using Visual C++'s MDI user interface) for any given .RC file you indirectly edit exactly one corresponding header file.
 
-### Symbol Header File
+### Resource View's Resource Includes dialog
 
-By default, Visual C++ always names the corresponding header file RESOURCE.H, regardless of the name of the resource file (e.g., MYAPP.RC). Using the **Resource Includes** command from the **View** menu in Visual C++, you can change the name of this header file by updating the Symbol Header File file in the **Set Includes** dialog box.
+You can access the **Resource Includes** by going to the **Resource View** then right clicking the .rc file and selecting **Resource Includes**
 
-### Read-Only Symbol Directives
+#### Symbol Header File
 
-Although Visual C++ only edits one header file for any given .RC file, Visual C++ supports references to symbols defined in additional read-only header files. Using the **Resource Includes** command from the **View** menu in Visual C++, you can specify any number of additional read-only header files as Read-Only Symbol Directives. The "read-only" restriction means that when you add a new resource in the .RC file, you can use a symbol defined in the read-only header file; but if you delete the resource, the symbol still remains defined in the read-only header file. You cannot change the numeric value assigned to a read-only symbol.
+By default, Visual C++ always names the corresponding header file RESOURCE.H, regardless of the name of the resource file (e.g., MYAPP.RC). The **Symbol Header File:** section in the **Resource Includes** dialog in Visual C++, lets you change the name of this header file. Enter a new file name in the section's edit box.
 
-### Compile-Time Directives
+> [!NOTE]
+> resource files not located in the same directory as the .RC file must prepend a relative path with escaped-'\\' to be read properly.
 
-Visual C++ also supports nesting of resource files, where one .RC file is #include'd within another. When you edit a given .RC file using Visual C++, any resources in the #include'd files are not visible. But when you compile the .RC file, the #include'd files are also compiled. Using the **Resource Includes** command from the **View** menu in Visual C++, you can specify any number of #include'd .RC files as Compile-Time Directives.
+#### Read-Only Symbol Directives
+
+Although Visual C++ only edits one header file for any given .RC file, Visual C++ supports references to symbols defined in additional read-only header files. The **Read-Only symbol Directives:** section in the **Resource Includes** dialog in Visual C++, lets you specify any number of additional read-only header files as Read-Only Symbol Directives. The "read-only" restriction means that when you add a new resource in the .RC file, you can use a symbol defined in the read-only header file; but if you delete the resource, the symbol still remains defined in the read-only header file. You cannot change the numeric value assigned to a read-only symbol.
+
+#### Compile-Time Directives
+
+Visual C++ also supports nesting of resource files, where one .RC file is #include'd within another. When you edit a given .RC file using Visual C++, any resources in the #include'd files are not visible. But when you compile the .RC file, the #include'd files are also compiled. The **Compile-Time Directives:** section in the **Resources Includes** dialog in Visual C++, lets you specify any number of #include'd .RC files as Compile-Time Directives.
 
 Note what happens if you read into Visual C++ an .RC file that #include's another .RC file that is *not* specified as a Compile-Time Directive. This situation might arise when you bring to Visual C++ an .RC file that you had been previously maintaining manually with a text editor. When Visual C++ reads the #include'd .RC file, it merges the #include'd resources into the parent .RC file. When you save the parent .RC file, the #include statement, in effect, will be replaced by the #include'd resources. If you do not want this merge to happen, you should remove the #include statement from the parent .RC file *prior* to reading it into Visual C++; then using Visual C++, add back the same #include statement as a Compile-Time Directive.
 
