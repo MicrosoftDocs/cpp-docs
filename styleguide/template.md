@@ -1,20 +1,20 @@
-# Metadata and Markdown Template
+# Metadata and Markdown Template for C++ Docs
 
-This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+This C++ repo-specific core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content.
 
 ## Metadata
 
-The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
+The full metadata block is yaml data between two lines that only contain `---` above the document contents (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)). It's divided into required fields and optional fields. Some key notes:
 
 - You **must** have a space between the colon (:) and the value for a metadata element.
-- If an optional metadata element does not have a value, comment out the element with a # or remove it (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the #.
-- Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **title**: This title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Developing Libraries with Cross Platform Tools | .NET Core`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
-- **author**, **manager**, **ms.reviewer**: The author field should contain the **GitHub username** of the author, not their alias.  The "manager" and "ms.reviewer" fields, on the other hand, should contain Microsoft aliases. ms.reviewer specifies the name of the PM/dev associated with the article or feature.
-- **ms.devlang** defines the technology. Some of the supported values are: `dotnet`, `cpp`, `csharp`, `fsharp`, `vb` and `xml`.
-- **ms.assetid**: This is the GUID of the article that is used for internal tracking purposes such as Business Intelligence (BI). When creating a new Markdown file, you can get a GUID from [Online GUID Generator](https://www.guidgenerator.com/).
+- If an optional metadata element does not have a value, comment out the element with a `#` or remove it (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the `#`.
+- Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing Windows console apps: An advanced step-by-step guide"`).
+- **`title`**: This title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Developing Libraries with Cross Platform Tools | Microsoft C++`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
+- **`author`**, **`manager`**, **`ms.author`**: These values are optional and will default to per-directory settings in the *`docfx.json`* file. Set them only if the value should be different from the default. The `author` field should contain the **GitHub username** of the author, not their alias.  The `manager` and `ms.author` fields, on the other hand, should contain Microsoft aliases. We don't normally include the **`ms.reviewer`** value, but if present, it specifies the name of the PM/dev associated with the article or feature.
+- **`ms.devlang`** defines the technology. This value is optional and will default to per-directory settings in the *`docfx.json`* file. Set it only if the value should be different from the default. Some of the supported values are: `dotnet`, `cpp`, `csharp`, `fsharp`, `vb` and `xml`.
+- **`ms.assetid`**: Do not set this value in new articles. It exists only as a historical link to archived versions of the document.
 
 ## Basic Markdown, GFM, and special characters
 
@@ -27,12 +27,13 @@ Markdown uses special characters such as \*, \`, and \# for formatting. If you w
 
 - Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
 - Use the [HTML entity code](https://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+- Markdown allows you to use two spaces at the end of a line to indicate a line break. Because this is invisible in most editors and easy to break, use the alternative of a single backslash (`\`) instead.
 
 ## Markdown editing tools
 
 You can use [Visual Studio Code](https://code.visualstudio.com/) to edit Markdown documents. VS Code has many helpful Markdown extensions, such as:
 
-- [docs-markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) by Microsoft
+- [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) by Microsoft
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 ## File name
@@ -59,7 +60,7 @@ There **must** be only one first-level heading (H1) in your topic, which will be
 
 If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.
 
-There should always be one blank line before and after a heading (except for first-level headings).
+There should always be one blank line before and after a heading (except for first-level headings, which should not have a blank line before).
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
@@ -75,11 +76,24 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 
 ## Text styling
 
-*Italics*  
-Use for user-generated filenames, folders, and paths (for long items, split onto their own line); new terms; parameter names; user-entered values; and URLs (unless rendered as links, which is the default).
+*Italics*\
+Use for user-generated filenames, folders, and paths (for long items, split onto their own line); new terms; user-entered values; and URLs (unless rendered as links, which is the default).
 
-**Bold**  
-Use for UI elements and language keywords.
+**Bold**\
+Use for UI elements.
+
+**`Bold Code`**\
+Use for keywords, operators, and compiler and tool options.
+
+*`Italic Code`*\
+Use for parameters.
+
+`Code`\
+Use for non-localizable elements, filenames, and inline code such as a single variable, expression, or statement.
+
+> Blockquote
+
+Use blockquote for error and warning messages, syntax sections, and EBNF content.
 
 ## Links
 
@@ -101,7 +115,7 @@ To link to a header in a Markdown file in the same repo, use relative linking + 
 
 ### Docs Links
 
-To link to a file in a different Docs repo, use the docs.microsoft.com relative URL as the link. Do not include the .md suffix.
+To link to a file in a different Docs repo, use the docs.microsoft.com relative URL as the link. Do not include the .md suffix or the language/locale element.
 
 - Example: [Universal Windows Platform documentation](/windows/uwp)
 
@@ -117,7 +131,7 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ### Links to APIs
 
-The build system has some extensions that allow us to link to .NET Core APIs without having to use external links.  
+The build system has some extensions that allow us to link to Managed APIs without having to use external links.  
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
@@ -188,13 +202,14 @@ ___
 
 ## Tables
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| col 1 is default | left-aligned     |    $1 |
+| Tables | Are | Cool |
+|--|:-:|-:|
+| col 3 is | right-aligned | $1600 |
+| col 2 is | centered | $12 |
+| col 1 is default | left-aligned | $1 |
 
 You can use a [Markdown table generator tool](https://www.tablesgenerator.com/markdown_tables) to help creating them more easily. See also [Markdown editing tools](#markdown-editing-tools).
+The C++ standard is to use the table format created by the **`Docs: Consolidate selected table`** tool in the Docs Authoring Pack. Don't try to align the vertical lines in your tables; it's just extra work that's easy to break.
 
 ## Code
 
@@ -246,6 +261,26 @@ use inline code blocks.
 ### Inline code blocks with language identifier
 
 Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
+
+#### C++
+
+```cpp
+#include <iostream>
+int main()
+{
+    std::cout << "Hello World!\n";
+}
+```
+
+#### C
+
+```C
+#include <stdio.h>
+int main()
+{
+    printf("Hello World!\n");
+}
+```
 
 #### C\#
 
@@ -318,10 +353,10 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ## Videos
 
-### Channel 9
+### Shows
 
-[![Larry Osterman - His one interaction with Bill Gates (over DOS networking stack).](https://sec.ch9.ms/ch9/caf5/f8657a22-5b83-47a3-9748-4c1be9fecaf5/Larry-Osterman-His-one-interaction-with-Bill-Gate_960.jpg)
-](https://channel9.msdn.com/Blogs/TheChannel9Team/Larry-Osterman-His-one-interaction-with-Bill-Gates-over-DOS-networking-stack)
+[![C++ A General Purpose Language and Library: (01) Getting Started](https://docs.microsoft.com/video/media/e8265f2d-9ea3-4052-99cd-b8cfb246b0f0/clanguagelibrarym01_960.jpg)
+](https://docs.microsoft.com/en-us/shows/cplusplus-language-library/01)
 
 ### YouTube
 
