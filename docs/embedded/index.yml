@@ -1,0 +1,59 @@
+### YamlMime:Landing
+title: Embedded development with C++ | Create and debug embedded applications # < 60 chars
+summary: Use Embedded tooling in Visual Studio 2022 and later to create and debug applications for Embedded. # < 160 chars
+
+metadata:
+  title: Embedded development with C++
+  description: Learn how to use Embedded tooling in Visual Studio and Visual Studio Code to create and debug applications for Linux.
+  ms.topic: landing-page
+  author: gcampbell-msft
+  ms.author: gcampbell
+  ms.date: 07/12/2022
+  ms.custom: intro-landing-hub
+  monikerRange: '>=msvc-170'
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card
+  - title: Build and debug embedded projects in Visual Studio and Visual Studio Code
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Download the Embedded workload in Visual Studio and Visual Studio Code
+            url: download-and-install-the-embedded-tooling.md
+      - linkListType: how-to-guide
+        links:
+          - text: Getting started guides
+            url: https://github.com/azure-rtos/getting-started
+      - linkListType: tutorial
+        links:
+          - text: Embedded Software Development in Visual Studio
+            url: https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/
+          - text: Embedded Software Development in Visual Studio Code
+            url: https://devblogs.microsoft.com/cppblog/vscode-embedded-development/
+      - linkListType: whats-new
+        links:
+          - text: Zephyr support in Visual Studio and Visual Studio Code
+            url: https://devblogs.microsoft.com/cppblog/serial-and-zephyr-support/
+
+  - title: Embedded Tooling in Visual Studio and Visual Studio Code
+    linkLists: 
+      - linkListType: reference
+        links:
+          - text: Peripheral Viewer
+            url: ./peripheral-view.md
+          - text: RTOS Viewer
+            url: ./rtos-view.md
+          - text: Serial Monitor
+            url: ./serial-monitor.md
+
+  - title: More embedded tools
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Bootstrap your development environment
+            url: https://devblogs.microsoft.com/cppblog/vcpkg-artifacts/
