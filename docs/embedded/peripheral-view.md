@@ -10,7 +10,7 @@ monikerRange: '>=msvc-170'
 
 ## Overview
 
-The Peripheral View allows embedded developers to view and manipulate registers and peripherals defined in SVD (System View Description) files.
+The Peripheral View allows embedded developers to view and manipulate registers and peripherals defined in SVD (System View Description) files while debugging.
 
 # [Visual Studio](#tab/visual-studio)
 
