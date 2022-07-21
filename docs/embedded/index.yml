@@ -51,9 +51,9 @@ landingContent:
           - text: Serial Monitor
             url: ./serial-monitor.md
 
-  - title: Additional Embedded tools!
+  - title: More embedded tools
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Bootstrap your development environment!
+          - text: Bootstrap your development environment
             url: https://devblogs.microsoft.com/cppblog/vcpkg-artifacts/
