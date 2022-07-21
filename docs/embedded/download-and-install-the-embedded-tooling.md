@@ -12,45 +12,39 @@ monikerRange: '>=msvc-170'
 
 # [Visual Studio](#tab/visual-studio)
 
-## Download, install, and set up the Embedded workload
+In Visual Studio 2022 and later versions, you can use the Visual Studio IDE on Windows to edit and debug embedded projects. Use tools such as the [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and the [Serial Monitor](./serial-monitor.md) to help interact with and debug your embedded projects.
 
-Embedded tooling is supported in Visual Studio 2022 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2022. It's found at the top of the table of contents on this page.
+To use the embedded development tools in Visual Studio, you must install the required **Linux and embedded development with C++** workload.
 
-You can use the Visual Studio IDE on Windows to edit and debug Embedded projects.
+## To install the Linux and embedded development with C++ workload
 
-You can use tools like the [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and the [Serial Monitor](./serial-monitor.md) to help interact with and debug your embedded projects.
-
-For any of these scenarios, the **Linux and embedded development with C++** workload is required.
-
-## Visual Studio setup
-
-1. Type "Visual Studio Installer" in the Windows search box:
+1. Enter "Visual Studio Installer" in the Windows search box:
 
    ![Screenshot showing the Windows search box.](../linux/media/visual-studio-installer-search.png)
 
-1. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux and embedded development with C++** workload.
+1. Open the Visual Studio Installer. In Visual Studio Installer, choose **Modify** next to your installation of Visual Studio, and then select the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux and embedded development with C++** workload.
 
    ![Screenshot showing the Visual C++ for Linux Development workload item in Visual Studio Installer.](media/linux-and-embedded-workload.png)
 
-1. Click **Modify** to continue with the installation.
+1. Choose **Modify** to continue with the installation.
+
+When installation completes, you're ready to use Visual Studio for embedded development.
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-## Install the Embedded extensions in VSCode
+## Install the Embedded extensions in Visual Studio Code
 
-Embedded tools like a [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and a [Serial Monitor](./serial-monitor.md) are supported in VSCode. This means that you now can use Microsoft tools to help debug your embedded applications in VSCode.
+Microsoft provides an extension to Visual Studio Code that lets you use embedded tools such as a [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and a [Serial Monitor](./serial-monitor.md). Now you can use Microsoft tools to help debug your Linux-based embedded applications.
 
-## Visual Studio Code setup
+## To install the embedded extensions for Visual Studio Code
 
-1. Type Visual Studio Code in the Windows search box:
+1. Enter "Visual Studio Code" in the Windows search box:
 
     ![Search-Visual-Studio-Code](media/windows-search-vscode.png)
 
-1. Look for Visual Studio Code under **Apps** and double-click it. When Visual Studio Code opens, open the **Extensions Pane**.
+1. Open Visual Studio Code. In Visual Studio Code, open the **Extensions Pane**.
 
     ![Visual Studio Code Extensions Pane](media/extensions-pane.png)
-
-### Install the Embedded Tools extension
 
 1. Search for and install the [Embedded Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-embedded-tools) extension.
 
@@ -59,5 +53,7 @@ Embedded tools like a [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](.
 1. Search for and install the [Serial Monitor](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-serial-monitor) extension.
 
     ![Serial Monitor extension](media/serial-monitor-extension.png)
+
+When installation completes, you're ready to use Visual Studio Code for embedded development.
 
 ---

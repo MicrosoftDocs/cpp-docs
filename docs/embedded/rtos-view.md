@@ -10,7 +10,7 @@ monikerRange: '>=msvc-170'
 
 ## Overview
 
-The RTOS Object Views allow for users to view various components of an RTOS while debugging their application.
+The RTOS Object View allows users to view various components of an RTOS while debugging their application.
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -25,14 +25,14 @@ The RTOS Object Views allow for users to view various components of an RTOS whil
 ## Supported RTOSes and their supported object types
 
 - ThreadX
-  - All of the **Available Object Types** list
+  - All of the types listed in **Available object types**
 - FreeRTOS
   - Threads
   - Queues
 - Zephyr
-  - All of the **Available Object Types** list
+  - All of the types listed in **Available object types**
 
-## Available Object Types
+### Available object types
 
 - Block Pools
 - Byte Pools
@@ -45,10 +45,9 @@ The RTOS Object Views allow for users to view various components of an RTOS whil
 
 ## Usage
 
-- Access memory locations of various objects
-- Access thread variables or various objects in the Watch view
+Use the RTOS Object View to:
 
-## Accessibility
+- Access memory locations of various objects.
+- Access thread variables or various objects in the Watch view.
 
-- Use the Arrow Keys to navigate the view
-- Press Enter to navigate to linked content
+Use the arrow keys to select objects within the view. Use the **Enter** key to navigate to the linked content.
