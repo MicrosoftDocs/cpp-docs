@@ -57,7 +57,7 @@ You can specify how often the C run-time library performs validation of the debu
 |`_CRTDBG_CHECK_EVERY_1024_DF`|1024|
 |`_CRTDBG_CHECK_DEFAULT_DF`|0 (by default, no heap checks)|
 
-By default, **`_CrtCheckMemory`** is called once every 1,024 times you call **`malloc`**, **`realloc`**, **`free`**, and **`_msize`**.
+By default, **`_CrtCheckMemory`** is never called.
 
 For example, you could specify a heap check every 16 **`malloc`**, **`realloc`**, **`free`**, and **`_msize`** operations with the following code:
 
