@@ -7,6 +7,8 @@ ms.assetid: 2728ecd1-14e2-4ae0-a946-e749e11dbb74
 ---
 # Automation in a DLL
 
+[test](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
+
 When you choose the Automation option in the MFC DLL Wizard, the wizard provides you with the following:
 
 - A starter object description language (.ODL) file
