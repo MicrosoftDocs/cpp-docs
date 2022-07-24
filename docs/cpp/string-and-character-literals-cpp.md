@@ -331,7 +331,8 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
 
 Notice that `strlen()` and `wcslen()` don't include the size of the terminating null character, whose size is equal to the element size of the string type: one byte on a `char*` or `char8_t*` string, two bytes on `wchar_t*` or `char16_t*` strings, and four bytes on `char32_t*` strings.
 
-The maximum length of a string literal is 65,535 bytes. This limit applies to both narrow string literals and wide string literals.
+The maximum length of a string literal was 65,535 bytes. This limit applied to both narrow string literals and wide string literals.
+This limit was removed in VS 2022 17.0 GA.
 
 ### Modifying string literals
 
