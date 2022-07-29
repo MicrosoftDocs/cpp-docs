@@ -167,6 +167,8 @@ additionalContent:
               url: ./windows/desktop-applications-visual-cpp.md
             - text: Linux development
               url: linux/index.yml
+            - text: Embedded development
+              url: embedded/index.yml
             - text: Mobile development
               url: cross-platform/index.yml
             - text: Game development
