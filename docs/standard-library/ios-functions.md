@@ -456,7 +456,7 @@ A reference to the object from which *str* is derived.
 
 `noshowpos` is on by default.
 
-The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showps)`, then returns *str*.
+The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showpos)`, then returns *str*.
 
 ### Example
 
