@@ -6,7 +6,7 @@ f1_keywords: ["_InterlockedCompareExchange", "_InterlockedCompareExchange_acq", 
 helpviewer_keywords: ["_InterlockedCompareExchange intrinsic", "_InterlockedCompareExchange_acq intrinsic", "_InterlockedCompareExchange_acq_cpp intrinsic", "_InterlockedCompareExchange_cpp intrinsic", "_InterlockedCompareExchange_HLEAcquire intrinsic", "_InterlockedCompareExchange_HLERelease intrinsic", "_InterlockedCompareExchange_nf intrinsic", "_InterlockedCompareExchange_np intrinsic", "_InterlockedCompareExchange_rel intrinsic", "_InterlockedCompareExchange_rel_cpp intrinsic", "_InterlockedCompareExchange8 intrinsic", "_InterlockedCompareExchange8_acq intrinsic", "_InterlockedCompareExchange8_nf intrinsic", "_InterlockedCompareExchange8_rel intrinsic", "_InterlockedCompareExchange16 intrinsic", "_InterlockedCompareExchange16_acq intrinsic", "_InterlockedCompareExchange16_acq_cpp intrinsic", "_InterlockedCompareExchange16_cpp intrinsic", "_InterlockedCompareExchange16_nf intrinsic", "_InterlockedCompareExchange16_rel intrinsic", "_InterlockedCompareExchange16_rel_cpp intrinsic", "_InterlockedCompareExchange64 intrinsic", "_InterlockedCompareExchange64_acq intrinsic", "_InterlockedCompareExchange64_acq_cpp intrinsic", "_InterlockedCompareExchange64_cpp intrinsic", "_InterlockedCompareExchange64_HLEAcquire intrinsic", "_InterlockedCompareExchange64_HLERelease intrinsic", "_InterlockedCompareExchange64_nf intrinsic", "_InterlockedCompareExchange64_np intrinsic", "_InterlockedCompareExchange64_rel intrinsic", "_InterlockedCompareExchange64_rel_cpp intrinsic"]
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
 ---
-# _InterlockedCompareExchange intrinsic functions
+# `_InterlockedCompareExchange` intrinsic functions
 
 **Microsoft Specific**
 
@@ -134,37 +134,37 @@ __int64 _InterlockedCompareExchange64_rel(
 
 ### Parameters
 
-*Destination*\
+*`Destination`*\
 [in, out] Pointer to the destination value. The sign is ignored.
 
-*Exchange*\
+*`Exchange`*\
 [in] Exchange value. The sign is ignored.
 
-*Comparand*\
-[in] Value to compare to destination. The sign is ignored.
+*`Comparand`*\
+[in] Value to compare to the value pointed at by *`Destination`*. The sign is ignored.
 
 ## Return value
 
-The return value is the initial value of the `Destination` pointer.
+The return value is the initial value pointed at by the `Destination` pointer.
 
 ## Requirements
 
-|Intrinsic|Architecture|Header|
-|---------------|------------------|------------|
-|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<intrin.h>|
-|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_nf`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<intrin.h>|
-|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|x64|\<intrin.h>|
-|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<immintrin.h>|
+| Intrinsic | Architecture | Header |
+|--|--|--|
+| `_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64` | x86, ARM, x64, ARM64 | \<intrin.h> |
+| `_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_nf`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`, | ARM, ARM64 | \<intrin.h> |
+| `_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np` | x64 | \<intrin.h> |
+| `_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease` | x86, x64 | \<immintrin.h> |
 
 ## Remarks
 
-`_InterlockedCompareExchange` does an atomic comparison of the `Destination` value with the `Comparand` value. If the `Destination` value is equal to the `Comparand` value, the `Exchange` value is stored in the address specified by `Destination`. Otherwise, does no operation.
+`_InterlockedCompareExchange` does an atomic comparison of the value pointed at by `Destination` with the `Comparand` value. If the `Destination` value is equal to the `Comparand` value, the `Exchange` value is stored in the address specified by `Destination`. Otherwise, does no operation.
 
-`_InterlockedCompareExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedCompareExchange](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) function.
+`_InterlockedCompareExchange` provides compiler intrinsic support for the Win32 Windows SDK [`InterlockedCompareExchange`](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) function.
 
 There are several variations on `_InterlockedCompareExchange` that vary based on the data types they involve and whether processor-specific acquire or release semantics are used.
 
-While the `_InterlockedCompareExchange` function operates on long integer values, `_InterlockedCompareExchange8` operates on 8-bit integer values, `_InterlockedCompareExchange16` operates on short integer values, and `_InterlockedCompareExchange64` operates on 64-bit integer values.
+While the `_InterlockedCompareExchange` function operates on 32-bit **`long`** integer values, `_InterlockedCompareExchange8` operates on 8-bit integer values, `_InterlockedCompareExchange16` operates on 16-bit **`short`** integer values, and `_InterlockedCompareExchange64` operates on 64-bit integer values. For more information on similar intrinsics for 128-bit values, see [`_InterlockedCompareExchange128`](./interlockedcompareexchange128.md).
 
 On all ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The ARM intrinsics with an `_nf` ("no fence") suffix don't act as a memory barrier.
 
@@ -390,8 +390,8 @@ int main(
 
 ## See also
 
-[_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)\
-[_InterlockedCompareExchangePointer intrinsic functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
+[`_InterlockedCompareExchange128`](../intrinsics/interlockedcompareexchange128.md)\
+[`_InterlockedCompareExchangePointer` intrinsic functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
