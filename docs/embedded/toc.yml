@@ -15,9 +15,9 @@ items:
       href: https://devblogs.microsoft.com/cppblog/serial-and-zephyr-support/
 - name: Embedded Tooling
   items: 
-    - name: Peripheral Viewer
+    - name: Peripheral View
       href: ./peripheral-view.md
-    - name: RTOS Viewer
+    - name: RTOS View
       href: ./rtos-view.md
     - name: Serial Monitor 
       href: ./serial-monitor.md

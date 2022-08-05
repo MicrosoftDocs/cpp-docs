@@ -12,7 +12,7 @@ monikerRange: '>=msvc-170'
 
 # [Visual Studio](#tab/visual-studio)
 
-In Visual Studio 2022 and later versions, you can use the Visual Studio IDE on Windows to edit and debug embedded projects. Use tools such as the [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and the [Serial Monitor](./serial-monitor.md) to help interact with and debug your embedded projects.
+In Visual Studio 2022 and later versions, you can use the Visual Studio IDE on Windows to edit and debug embedded projects. Use tools such as the [Peripheral View](./peripheral-view.md), [RTOS View](./rtos-view.md), and the [Serial Monitor](./serial-monitor.md) to help interact with and debug your embedded projects.
 
 To use the embedded development tools in Visual Studio, you must install the required **Linux and embedded development with C++** workload.
 
@@ -34,7 +34,7 @@ When installation completes, you're ready to use Visual Studio for embedded deve
 
 ## Install the Embedded extensions in Visual Studio Code
 
-Microsoft provides an extension to Visual Studio Code that lets you use embedded tools such as a [Peripheral Viewer](./peripheral-view.md), [RTOS Viewer](./rtos-view.md), and a [Serial Monitor](./serial-monitor.md). Now you can use Microsoft tools to help debug your Linux-based embedded applications.
+Microsoft provides an extension to Visual Studio Code that lets you use embedded tools such as a [Peripheral View](./peripheral-view.md), [RTOS View](./rtos-view.md), and a [Serial Monitor](./serial-monitor.md). Now you can use Microsoft tools to help debug your Linux-based embedded applications.
 
 ## To install the embedded extensions for Visual Studio Code
 
