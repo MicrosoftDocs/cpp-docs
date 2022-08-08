@@ -1,6 +1,6 @@
 ---
 title: "Named modules tutorial in C++"
-ms.date: 02/10/2022
+ms.date: 08/08/2022
 ms.topic: "tutorial"
 helpviewer_keywords: ["modules [C++]", "modules [C++], named modules tutorial"]
 description: Named modules in C++20 provide a modern alternative to header files.
@@ -50,9 +50,9 @@ As we build a simple project, we'll look at various aspects of modules as we imp
 
 To begin, in Visual Studio 2022, choose **Create a new project** and then the **Console App** (for C++) project type. If this project type isn't available, you may not have selected the **Desktop development with C++** workload when you installed Visual Studio. You can use the Visual Studio Installer to add the C++ workload.
 
-Give the new project the name `ModulesTutorial` and create the project.
+Give the new project the name *`ModulesTutorial`* and create the project.
 
-Because modules are a C++20 feature, the project needs the [`/std:c++20` or `/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Set the **C++ Language Standard** property by right-clicking in the **Solution Explorer** on the project name `ModulesTutorial`, then choose `Properties`. In the project properties page that appears, ensure that `General` is selected on the left, and then change the **C++ Language Standard** dropdown to **ISO C++20 Standard (/std:c++20)**. Select **OK** to accept the change.
+Because modules are a C++20 feature, the project needs the [`/std:c++20` or `/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. To set the **C++ Language Standard** property, in **Solution Explorer**, right-click on the project name `ModulesTutorial`, then choose **Properties**. In the project Property Pages dialog, change **Configuration** to **All Configurations** and **Platform** to **All Platforms**. Select **Configuration Properties** > **General** in the tree view pane on the left. Select the **C++ Language Standard** property. Use the dropdown to change the property value to **ISO C++20 Standard (/std:c++20)**. Select **OK** to accept the change.
 
 ![A screenshot of the ModulesTutorial property page with the left pane open to Configuration Properties > General, and the C++ Language Standard dropdown open with ISO C++20 Standard (/std:c++20) selected](media/language-switch.png)
 
@@ -70,10 +70,11 @@ The default contents of the created module file has two lines:
 
 ```cpp
 export module BasicPlane;
+
 export void MyFunc();
 ```
 
-The first line declares this file to be a module interface unit. Specifically, the `export module` keywords identify this file as a module interface unit. There's a subtle point here. For every named module, there must be exactly one module interface unit with no module partition specified. That module unit is called the primary module interface unit.
+The first line declares this file to be a module interface unit. Specifically, the `export module` keywords identify this file as a module interface unit. There's a subtle point here: For every named module, there must be exactly one module interface unit with no module partition specified. That module unit is called the *primary module interface unit*.
 
 The primary module interface unit is where you declare the functions, types, templates, other modules, and module partitions to expose when source files import the module. A module can consist of multiple files, but only the primary module interface file identifies what to expose.
 
@@ -101,7 +102,7 @@ When you import a partition into the primary module, all its declarations become
 
 ### `Point` module partition
 
-To create a module partition file, in the **Solution Explorer**, right-click **Source Files**, then select **Add** > **Module**. Name the file *`BasicPlane.Figures-Point.ixx`* and select **Add**.
+To create a module partition file, in the **Solution Explorer**, right-click **Source Files**, then select **Add** > **Module**. Name the file *`BasicPlane.Figures-Point.ixx`* and choose **Add**.
 
 Because it's a module partition file, we've added a hyphen and the name of the partition to the module name. This convention aids the compiler in the command-line case: The compiler uses name lookup rules based on the module name to find the compiled *`.ifc`* file for the partition. This way you don't have to provide explicit `/reference` command-line arguments to find the partitions that belong to the module. It's also helpful for organizing the files that belong to a module by name. You can easily see which files belong to which modules.
 
@@ -182,7 +183,7 @@ So far, we've defined the primary module interface, which exposes the API surfac
 
 ## Create a module unit implementation file
 
-Module unit implementation files don't end with an *`.ixx`* extension. They're normal *`.cpp`* files. Add a module unit implementation file by creating a source file with a right-click in the **Solution Explorer** on **Source Files**, select **Add** > **New item** and then select **C++ File (.cpp)**. Give the new file the name `BasicPlane.Figures-Rectangle.cpp`, then select **Add**.
+Module unit implementation files don't end with an *`.ixx`* extension. They're normal *`.cpp`* files. Add a module unit implementation file by creating a source file with a right-click in the **Solution Explorer** on **Source Files**, select **Add** > **New item** and then select **C++ File (.cpp)**. Give the new file the name `BasicPlane.Figures-Rectangle.cpp`, then choose **Add**.
 
 The naming convention for the module partition's implementation file follows the naming convention for partition. But it has a *`.cpp`* extension because it's an implementation file.
 
@@ -206,7 +207,7 @@ When you include a header file, you generally don't want it to be treated as an 
 
 The module implementation file we're building doesn't include any libraries because it doesn't need them as part of its implementation. But if it did, this area is where the `#include` directives would go.
 
-The line `module BasicPlane.Figures;` identifies this file as part of the named module `BasicPlane.Figures`. The compiler automatically brings the types and functions exposed by the primary module interface into this file. A module implementation unit doesn't have the `export` keyword before the `module` keyword in its module-declaration.
+The line `module BasicPlane.Figures:Rectangle;` identifies this file as part of the named module `BasicPlane.Figures`. The compiler automatically brings the types and functions exposed by the primary module interface into this file. A module implementation unit doesn't have the `export` keyword before the `module` keyword in its module-declaration.
 
 Next are the definition of the functions `area()`, `height()`, and `width()`. They were declared in the `Rectangle` partition in `BasicPlane.Figures-Rectangle.ixx`. Because the primary module interface for this module imported the `Point` and `Rectangle` module partitions, those types are visible here in the module unit implementation file. An interesting feature of module implementation units: The compiler automatically makes everything in the corresponding module primary interface visible to the file. No `imports <module-name>` is needed.
 
@@ -232,7 +233,7 @@ int main()
 }
 ```
 
-The first line, `import BasicPlane.Figures;` makes all the exported functions and types from the `BasicPlane.Figures` module visible to this file. It can come before or after `#include` directives.
+The line `import BasicPlane.Figures;` makes all the exported functions and types from the `BasicPlane.Figures` module visible to this file. It can come before or after `#include` directives.
 
 The app then uses the types and functions from the module to output the area and width of the defined rectangle:
 
