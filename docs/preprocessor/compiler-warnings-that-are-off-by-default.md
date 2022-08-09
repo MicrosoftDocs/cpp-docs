@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: 02/22/2022
+ms.date: 08/08/2022
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---

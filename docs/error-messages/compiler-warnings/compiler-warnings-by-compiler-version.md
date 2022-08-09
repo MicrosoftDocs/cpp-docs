@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 12/01/2021
+ms.date: 08/08/2022
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
