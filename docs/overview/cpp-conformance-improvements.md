@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 05/05/2022
+ms.date: 08/08/2022
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
@@ -9,6 +9,30 @@ ms.technology: "cpp-language"
 Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. To jump directly to the changes for a specific version, use the list below **In this article**.
 
 This document lists the changes in Visual Studio 2022. For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_173"></a> Conformance improvements in Visual Studio 2022 version 17.3
+
+Visual Studio 2022 version 17.3 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+
+### C: Improved modifier compatibility checking between pointers
+
+The C compiler didn't properly compare modifiers between pointers, especially `void*`. This could result in an improper diagnosis of incompatibility between `const int**` and `void*` and compatibility between `int* volatile*` and `void*`.
+
+#### Example
+
+```c
+void fn(void* pv) { (pv); }
+
+int main()
+{
+    int t = 42;
+    int* pt = &t;
+    int* volatile * i = &pt;
+    fn(i);    // Now raises C4090
+    const int** j = &pt;
+    fn(j);    // No longer raises C4090
+}
+```
 
 ## <a name="improvements_172"></a> Conformance improvements in Visual Studio 2022 version 17.2
 
