@@ -130,7 +130,7 @@ For more information about using text and binary modes in Unicode and multibyte 
 |--|--|
 | **`c`** | Enable the commit flag for the associated *`filename`* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
 | **`n`** | Reset the commit flag for the associated *`filename`* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`COMMODE.OBJ`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`COMMODE.OBJ`* (see [Link Options](../../c-runtime-library/link-options.md)). |
-| **`n`** | Specifies that the file isn't inherited by child processes. |
+| **`N`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`t`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
