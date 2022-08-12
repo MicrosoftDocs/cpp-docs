@@ -42,7 +42,7 @@ int main() {
 
 ## Using _ITERATOR_DEBUG_LEVEL
 
-You can use the preprocessor macro [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) to turn off the iterator debugging feature in a debug build. This program does not assert, but still triggers undefined behavior.
+You can use the preprocessor macro [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) to turn off the iterator debugging feature in a debug build. This program doesn't assert, but still triggers undefined behavior.
 
 ```cpp
 // iterator_debugging_1.cpp
@@ -75,7 +75,7 @@ int main() {
 
 ## Uninitialized iterators
 
-An assert also occurs if you attempt to use an iterator before it is initialized, as shown here:
+An assert also occurs if you attempt to use an iterator before it's initialized, as shown here:
 
 ```cpp
 // iterator_debugging_2.cpp
@@ -112,7 +112,7 @@ int main()
 }
 ```
 
-Notice that this example uses the lambda expression `[] (int& elem) { elem *= 2; }` instead of a functor. Although this choice has no bearing on the assert failure—a similar functor would cause the same failure—lambdas are a very useful way to accomplish compact function object tasks. For more information about lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md).
+Notice that this example uses the lambda expression `[] (int& elem) { elem *= 2; }` instead of a functor. Although this choice has no bearing on the assert failure—a similar functor would cause the same failure—lambdas are a compact way to do short tasks. For more information about lambda expressions, see [Lambda expressions](../cpp/lambda-expressions-in-cpp.md).
 
 ## Iterators going out of scope
 
@@ -134,7 +134,7 @@ int main() {
 
 ## Destructors for debug iterators
 
-Debug iterators have non-trivial destructors. If a destructor does not run but the object's memory is freed, access violations and data corruption might occur. Consider this example:
+Debug iterators have non-trivial destructors. If a destructor doesn't run but the object's memory is freed, access violations and data corruption might occur. Consider this example:
 
 ```cpp
 // iterator_debugging_5.cpp
