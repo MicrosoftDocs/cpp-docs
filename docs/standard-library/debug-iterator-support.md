@@ -3,7 +3,6 @@ description: "Learn more about: Debug Iterator Support"
 title: "Debug Iterator Support"
 ms.date: "09/13/2018"
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "C++ Standard Library, debug iterator support", "iterators, debug iterator support", "iterators, incompatible", "incompatible iterators", "debug iterator support"]
-ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
 ---
 # Debug Iterator Support
 
@@ -74,7 +73,7 @@ int main() {
 -572662307
 ```
 
-## Unitialized iterators
+## Uninitialized iterators
 
 An assert also occurs if you attempt to use an iterator before it is initialized, as shown here:
 
