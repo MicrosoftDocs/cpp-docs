@@ -112,7 +112,7 @@ int main()
 }
 ```
 
-Notice that this example uses the lambda expression `[] (int& elem) { elem *= 2; }` instead of a functor. Although this choice has no bearing on the assert failure—a similar functor would cause the same failure—lambdas are a compact way to do short tasks. For more information about lambda expressions, see [Lambda expressions](../cpp/lambda-expressions-in-cpp.md).
+Notice that this example uses the lambda expression `[] (int& elem) { elem *= 2; }` instead of a functor. Although this choice has no bearing on the assert failure—a similar functor would cause the same failure—lambdas are a way to write a short block of code. For more information about lambda expressions, see [Lambda expressions](../cpp/lambda-expressions-in-cpp.md).
 
 ## Iterators going out of scope
 
