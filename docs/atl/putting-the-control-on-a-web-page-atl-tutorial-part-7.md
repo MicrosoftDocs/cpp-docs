@@ -15,30 +15,30 @@ In this step, you add functionality to the control and script the Web page to re
 
 ### To add control features
 
-1. Open PolyCtl.cpp and replace the following code:
+Open PolyCtl.cpp and replace the following code:
 
-    ```cpp
-    if (PtInRegion(hRgn, xPos, yPos))
-        Fire_ClickIn(xPos, yPos);
-    else
-        Fire_ClickOut(xPos, yPos);
-    ```
+```cpp
+if (PtInRegion(hRgn, xPos, yPos))
+  Fire_ClickIn(xPos, yPos);
+else
+  Fire_ClickOut(xPos, yPos);
+```
 
-    with
+with
 
-    ```cpp
-    short temp = m_nSides;
-    if (PtInRegion(hRgn, xPos, yPos))
-    {
-        Fire_ClickIn(xPos, yPos);
-        put_Sides(++temp);
-    }
-    else
-    {
-        Fire_ClickOut(xPos, yPos);
-        put_Sides(--temp);
-    }
-    ```
+```cpp
+short temp = m_nSides;
+if (PtInRegion(hRgn, xPos, yPos))
+{
+  Fire_ClickIn(xPos, yPos);
+  put_Sides(++temp);
+}
+else
+{
+  Fire_ClickOut(xPos, yPos);
+  put_Sides(--temp);
+}
+```
 
 The shape will now add or remove sides depending on where you click.
 
