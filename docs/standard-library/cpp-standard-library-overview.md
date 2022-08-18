@@ -10,7 +10,7 @@ All C++ library entities are declared or defined in one or more standard headers
 
 The C++ standard defines two kinds of conforming libraries:
 - A *hosted implementation*, which supports all of the required standard library headers described by the C++ ISO standard.
-- A *freestanding implementation*, which requires only a subset of the standard libary  headers:
+- A *freestanding implementation*, which requires only a subset of the standard library headers. The required subset is:
 
 [`<atomic>`](../standard-library/atomic.md) (declaring at least `atomic_signed_lock_free` and `atomic_unsigned_lock_free`)\
 [`<bit>`](../standard-library/bit.md)\
@@ -43,8 +43,7 @@ The following headers are deprecated since C++11: [`<ciso646>`](../standard-libr
 Other differences between freestanding and hosted implementations are:
 
 - Hosted implementations require a global function named `main`. A freestanding implementation can define its own startup and termination functions.
-- Hosted implementations must support more than one thread running at the same time. A
-freestanding implementation may or may not support concurrent threads.
+- Hosted implementations must support more than one thread running at the same time. Implementors of freestanding implementations decide whether their library supports concurrent threads.
 
 The Microsoft C++ standard library satisfies both freestanding and hosted requirements.
 
