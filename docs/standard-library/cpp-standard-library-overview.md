@@ -12,32 +12,23 @@ The C++ standard defines two kinds of conforming libraries:
 - A *hosted implementation*, which supports all of the required standard library headers described by the C++ ISO standard.
 - A *freestanding implementation*, which requires only a subset of the standard library headers. The required subset is:
 
-[`<atomic>`](../standard-library/atomic.md) (declaring at least `atomic_signed_lock_free` and `atomic_unsigned_lock_free`)\
-[`<bit>`](../standard-library/bit.md)\
-[`<cfloat>`](../standard-library/cfloat.md)\
-[`<climits>`](../standard-library/climits.md)\
-`<compare>`\
-`<concepts>`\
-`<coroutine>`\
-[`<cstdarg>`](../standard-library/cstdarg.md)\
-[`<cstddef>`](../standard-library/cstddef.md)\
-[`<cstdint>`](../standard-library/cstdint.md)\
-[`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, `at_quick_exit`, `exit`, and `quick_exit`)\
-[`<exception>`](../standard-library/exception.md)\
-[`<functional>`](../standard-library/functional.md)\
-[`<initializer_list>`](../standard-library/initializer-list.md)\
-[`<iterator>`](../standard-library/iterator.md)\
-[`<limits>`](../standard-library/limits.md)\
-[`<memory>`](../standard-library/memory.md)\
-[`<new>`](../standard-library/new.md)\
-[`<ranges>`](../standard-library/ranges.md)\
-[`<ratio>`](../standard-library/ratio.md)\
-[`<tuple>`](../standard-library/tuple.md)\
-[`<typeinfo>`](../standard-library/typeinfo.md)\
-`<source_location>`\
-[`<type_traits>`](../standard-library/type-traits.md)\
-`<version>`\
-[`<utility>`](../standard-library/utility.md)\
+| Required subset | Required subset |
+|--|--|
+| [`<atomic>`](../standard-library/atomic.md) (declaring at least `atomic_signed_lock_free` and `atomic_unsigned_lock_free`) | [`<initializer_list>`](../standard-library/initializer-list.md) |
+| [`<bit>`](../standard-library/bit.md) | [`<iterator>`](../standard-library/iterator.md) |
+| [`<cfloat>`](../standard-library/cfloat.md) | [`<limits>`](../standard-library/limits.md) |
+| [`<climits>`](../standard-library/climits.md) | [`<memory>`](../standard-library/memory.md) |
+| `<compare>` | [`<new>`](../standard-library/new.md) |
+| `<concepts>` | [`<ranges>`](../standard-library/ranges.md) |
+| `<coroutine>` | [`<ratio>`](../standard-library/ratio.md) |
+| [`<cstdarg>`](../standard-library/cstdarg.md) | [`<tuple>`](../standard-library/tuple.md) |
+| [`<cstddef>`](../standard-library/cstddef.md) | [`<typeinfo>`](../standard-library/typeinfo.md) |
+| [`<cstdint>`](../standard-library/cstdint.md) | `<source_location>` |
+| [`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, `at_quick_exit`, `exit`, and `quick_exit`) | [`<type_traits>`](../standard-library/type-traits.md) |
+| [`<exception>`](../standard-library/exception.md) | [`<utility>`](../standard-library/utility.md) |
+| [`<functional>`](../standard-library/functional.md) | `<version>` |
+
+
 The following headers are deprecated since C++11: [`<ciso646>`](../standard-library/ciso646.md), [`<cstdalign>`](../standard-library/cstdalign.md), and [`<cstdbool>`](../standard-library/cstdbool.md).
 
 Other differences between freestanding and hosted implementations are:
