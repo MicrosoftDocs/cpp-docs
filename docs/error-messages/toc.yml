@@ -88,8 +88,10 @@ items:
   items: 
     - name: Compiler fatal errors C999 through C1999
       href: compiler-errors-1/compiler-fatal-errors-c999-through-c1999.md
-    - name: Fatal error C999, C1000, C1999
+    - name: Fatal error C999
       href: compiler-errors-1/fatal-error-c999.md
+    - name: Fatal error C1000, C1999
+      href: compiler-errors-1/fatal-error-c1000-c1999.md
     - name: Fatal error C1001
       href: compiler-errors-1/fatal-error-c1001.md
     - name: Fatal error C1002

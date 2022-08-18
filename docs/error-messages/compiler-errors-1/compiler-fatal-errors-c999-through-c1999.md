@@ -14,200 +14,200 @@ The articles in this section of the documentation explain a subset of the error 
 
 ## Error messages
 
-|Error|Message|
-|-----------|-------------|
-|[Fatal error C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|UNKNOWN MESSAGE Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
-| [Fatal error C1000](fatal-error-c999.md) | UNKNOWN FATAL ERROR Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
-|[Fatal error C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|An internal error has occurred in the compiler.<br /> (compiler file '*file*', line *number*)<br /> To work around this problem, try simplifying or changing the program near the locations listed above. Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
-|[Fatal error C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|compiler is out of heap space in pass 2|
-|[Fatal error C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|error count exceeds *number*; stopping compilation|
-|[Fatal error C1004](../../error-messages/compiler-errors-1/fatal-error-c1004.md)|unexpected end-of-file found|
-|[Fatal error C1005](../../error-messages/compiler-errors-1/fatal-error-c1005.md)|string too big for buffer|
+| Error | Message |
+|--|--|
+| [Fatal error C999](fatal-error-c999.md) | UNKNOWN MESSAGE<br />Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
+| [Fatal error C1000](fatal-error-c1000-c1999.md) | UNKNOWN FATAL ERROR<br />Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
+| [Fatal error C1001](fatal-error-c1001.md) | An internal error has occurred in the compiler.<br /> (compiler file '*file*', line *number*)<br /> To work around this problem, try simplifying or changing the program near the locations listed above. Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
+| [Fatal error C1002](fatal-error-c1002.md) | compiler is out of heap space in pass 2 |
+| [Fatal error C1003](fatal-error-c1003.md) | error count exceeds *number*; stopping compilation |
+| [Fatal error C1004](fatal-error-c1004.md) | unexpected end-of-file found |
+| [Fatal error C1005](fatal-error-c1005.md) | string too big for buffer |
 | Fatal error C1006 | write error on compiler intermediate file |
-|[Fatal error C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|unrecognized flag '*string*' in '*option*'|
-|[Fatal error C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|no input file specified|
-|[Fatal error C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|compiler limit: macros nested too deeply|
-|[Fatal error C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|unexpected end of file while looking for precompiled header. Did you forget to add '#include \<*file*>' to your source?|
+| [Fatal error C1007](fatal-error-c1007.md) | unrecognized flag '*string*' in '*option*' |
+| [Fatal error C1008](fatal-error-c1008.md) | no input file specified |
+| [Fatal error C1009](fatal-error-c1009.md) | compiler limit: macros nested too deeply |
+| [Fatal error C1010](fatal-error-c1010.md) | unexpected end of file while looking for precompiled header. Did you forget to add '`#include <`*file*`>`' to your source? |
 | [Fatal error C1011](fatal-error-c1011.md) | cannot locate standard module interface. Did you install the library part of the C++ modules feature in VS setup? |
-|[Fatal error C1012](fatal-error-c1012.md)|unmatched parenthesis: missing '*character*"|
-|[Fatal error C1013](fatal-error-c1013.md)|compiler limit: too many open parentheses|
-|[Fatal error C1014](fatal-error-c1014.md)|too many include files: depth = *number*|
+| [Fatal error C1012](fatal-error-c1012.md) | unmatched parenthesis: missing '*character*" |
+| [Fatal error C1013](fatal-error-c1013.md) | compiler limit: too many open parentheses |
+| [Fatal error C1014](fatal-error-c1014.md) | too many include files: depth = *number* |
 | [Fatal error C1015](fatal-error-c1015.md) | header-names '*header-name*' and '*header-name*' identify the same header and cannot be used as both `/headerUnit:quoted` and `/headerUnit:angle` arguments; please provide this header-name only once |
-|[Fatal error C1016](fatal-error-c1016.md)|#ifdef/#ifndef expected an identifier|
-|[Fatal error C1017](../../error-messages/compiler-errors-1/fatal-error-c1017.md)|invalid integer constant expression|
-|[Fatal error C1018](fatal-error-c1018.md)|unexpected #elif|
-|[Fatal error C1019](fatal-error-c1019.md)|unexpected #else|
-|[Fatal error C1020](fatal-error-c1020.md)|unexpected #endif|
-|[Fatal error C1021](fatal-error-c1021.md)|invalid preprocessor command '*string*'|
-|[Fatal error C1022](fatal-error-c1022.md)|expected #endif|
-|[Fatal error C1023](fatal-error-c1023.md)|'*file*': unexpected error with pch, try rebuilding the pch|
-| Fatal error C1024 | **OBSOLETE** too many symbols |
+| [Fatal error C1016](fatal-error-c1016.md) | `#ifdef`/`#ifndef` expected an identifier |
+| [Fatal error C1017](fatal-error-c1017.md) | invalid integer constant expression |
+| [Fatal error C1018](fatal-error-c1018.md) | unexpected `#elif` |
+| [Fatal error C1019](fatal-error-c1019.md) | unexpected `#else` |
+| [Fatal error C1020](fatal-error-c1020.md) | unexpected `#endif` |
+| [Fatal error C1021](fatal-error-c1021.md) | invalid preprocessor command '*string*' |
+| [Fatal error C1022](fatal-error-c1022.md) | expected `#endif` |
+| [Fatal error C1023](fatal-error-c1023.md) | '*file*': unexpected error with pch, try rebuilding the pch |
+| Fatal error C1024 | **(Obsolete)** too many symbols |
 | [Fatal error C1025](fatal-error-c1025-c1115.md) | too many nested lambdas |
-|[Fatal error C1026](../../error-messages/compiler-errors-1/fatal-error-c1026.md)|parser stack overflow, program too complex|
-| Fatal error C1027 | **OBSOLETE** Inconsistent values for /Ym between creation and use of precompiled header |
+| [Fatal error C1026](fatal-error-c1026.md) | parser stack overflow, program too complex |
+| Fatal error C1027 | **(Obsolete)** Inconsistent values for /Ym between creation and use of precompiled header |
 | Fatal error C1030 | WMMX types not allowed in the function signature by the calling convention |
-| Fatal error C1032 | __eabi requires VFP code generation (/QRfpe-) |
-|[Fatal error C1033](../../error-messages/compiler-errors-1/fatal-error-c1033.md)|cannot open program database '*file*'|
-|Fatal error C1034|*file*: no include path set|
-|[Fatal error C1035](fatal-error-c1035.md)|expression too complex; simplify expression|
-|Fatal error C1036|cannot overwrite earlier program database format, delete '*file*' and recompile|
-|[Fatal error C1037](fatal-error-c1037.md)|cannot open object file '*file*'|
-| [Fatal error C1038](fatal-error-c1038.md) | **OBSOLETE** compiler limit: '*function*': control flow state too complex; simplify function|
+| Fatal error C1032 | `__eabi` requires VFP code generation (`/QRfpe-`) |
+| [Fatal error C1033](fatal-error-c1033.md) | cannot open program database '*file*' |
+| Fatal error C1034 | *file*: no include path set |
+| [Fatal error C1035](fatal-error-c1035.md) | expression too complex; simplify expression |
+| Fatal error C1036 | cannot overwrite earlier program database format, delete '*file*' and recompile |
+| [Fatal error C1037](fatal-error-c1037.md) | cannot open object file '*file*' |
+| [Fatal error C1038](fatal-error-c1038.md) | **(Obsolete)** compiler limit: '*function*': control flow state too complex; simplify function |
 | Fatal error C1039 | more arguments of intrinsic type than allowed by the calling convention |
 | Fatal error C1040 | intrinsic function or type not allowed in Thumb mode |
-|Fatal error C1041|cannot open program database '*file*'; if multiple CL.EXE write to the same `.PDB` file, please use `/FS`|
+| Fatal error C1041 | cannot open program database '*file*'; if multiple CL.EXE write to the same `.PDB` file, please use `/FS` |
 | Fatal error C1042 | cannot open compiler intermediate file - no such file or directory |
 | Fatal error C1043 | cannot open compiler intermediate file |
 | Fatal error C1044 | out of disk space for compiler intermediate file |
-|[Fatal error C1045](fatal-error-c1045.md)|compiler limit: linkage specifications nested too deeply|
-|[Fatal error C1046](../../error-messages/compiler-errors-1/fatal-error-c1046.md)|compiler limit: *structure* nested too deeply|
-|[Fatal error C1047](fatal-error-c1047.md)|The object or library file '*file*' was created with an older compiler than other objects; rebuild old objects and libraries|
-| Fatal error C1048 | unknown option '*string*' in '*option*'|
-|[Fatal error C1049](fatal-error-c1049.md)|invalid numerical argument '*value*'|
-|[Fatal error C1051](../../error-messages/compiler-errors-1/fatal-error-c1051.md)|program database file, '*file*', has an obsolete format, delete it and recompile|
-|[Fatal error C1052](fatal-error-c1052.md)|program database file, '*filename*', was generated by the linker with `/DEBUG:fastlink`; compiler cannot update such PDB files; please delete it or use `/Fd` to specify a different PDB filename|
-|[Fatal error C1053](fatal-error-c1053.md)|'*function*': function too large|
-|[Fatal error C1054](../../error-messages/compiler-errors-1/fatal-error-c1054.md)|compiler limit: initializers nested too deeply|
-|[Fatal error C1055](../../error-messages/compiler-errors-1/fatal-error-c1055.md)|compiler limit: out of keys|
+| [Fatal error C1045](fatal-error-c1045.md) | compiler limit: linkage specifications nested too deeply |
+| [Fatal error C1046](fatal-error-c1046.md) | compiler limit: *structure* nested too deeply |
+| [Fatal error C1047](fatal-error-c1047.md) | The object or library file '*file*' was created with an older compiler than other objects; rebuild old objects and libraries |
+| Fatal error C1048 | unknown option '*string*' in '*option*' |
+| [Fatal error C1049](fatal-error-c1049.md) | invalid numerical argument '*value*' |
+| [Fatal error C1051](fatal-error-c1051.md) | program database file, '*file*', has an obsolete format, delete it and recompile |
+| [Fatal error C1052](fatal-error-c1052.md) | program database file, '*filename*', was generated by the linker with `/DEBUG:fastlink`; compiler cannot update such PDB files; please delete it or use `/Fd` to specify a different PDB filename |
+| [Fatal error C1053](fatal-error-c1053.md) | '*function*': function too large |
+| [Fatal error C1054](fatal-error-c1054.md) | compiler limit: initializers nested too deeply |
+| [Fatal error C1055](fatal-error-c1055.md) | compiler limit: out of keys |
 | Fatal error C1056 | cannot update the time date stamp field in '*object-file*'; error code *error-code* |
-|[Fatal error C1057](../../error-messages/compiler-errors-1/fatal-error-c1057.md)|unexpected end of file in macro expansion|
+| [Fatal error C1057](fatal-error-c1057.md) | unexpected end of file in macro expansion |
 | Fatal error C1058 | compiler limit: too many attributes on symbol '*symbol-name*' |
-| Fatal error C1059 | **OBSOLETE** compiler is out of near heap space |
-|[Fatal error C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md)|compiler is out of heap space|
-|[Fatal error C1061](../../error-messages/compiler-errors-1/fatal-error-c1061.md)|compiler limit: blocks nested too deeply|
-|Fatal error C1063|compiler limit: compiler stack overflow|
-|[Fatal error C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)|compiler limit: token overflowed internal buffer|
-|[Fatal error C1065](../../error-messages/compiler-errors-1/fatal-error-c1065.md)|compiler limit: out of tags|
-|[Fatal error C1067](../../error-messages/compiler-errors-1/fatal-error-c1067.md)|compiler limit: 64K limit on size of a type record has been exceeded|
-|[Fatal error C1068](fatal-error-c1068.md)|cannot open file '*file*'|
-|Fatal error C1069|cannot read compiler command line|
-|[Fatal error C1070](fatal-error-c1070.md)|mismatched #if/#endif pair in file '*file*'|
-|[Fatal error C1071](../../error-messages/compiler-errors-1/fatal-error-c1071.md)|unexpected end of file found in comment|
-| [Fatal error C1073](fatal-error-c1073.md) | **OBSOLETE** Internal error involving incremental compilation(compiler file '*file*', line *number*) |
-|[Fatal error C1074](fatal-error-c1074.md)|'IDB' is illegal extension for PDB file: *file*|
-|[Fatal error C1075](../../error-messages/compiler-errors-1/fatal-error-c1075.md)|the left *token* was unmatched at the end of the file|
-|[Fatal error C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md)|compiler limit: internal heap limit reached; use /Zm to specify a higher limit|
-|[Fatal error C1077](fatal-error-c1077.md)|compiler limit: cannot have more than *number* command line options|
-| [Fatal error C1079](fatal-error-c1079.md) | **OBSOLETE** compiler limit: PCH file size limit exceeded |
-|[Fatal error C1080](../../error-messages/compiler-errors-1/fatal-error-c1080.md)|compiler limit: command line option exceeded limit of *number* characters|
-|[Fatal error C1081](../../error-messages/compiler-errors-1/fatal-error-c1081.md)|'*file*': file name too long|
-|[Fatal error C1082](fatal-error-c1082.md)|cannot close *type* file: '*file*': *message*|
-|[Fatal error C1083](../../error-messages/compiler-errors-1/fatal-error-c1083.md)|cannot open *type* file: '*file*': *message*|
-|[Fatal error C1084](../../error-messages/compiler-errors-1/fatal-error-c1084.md)|cannot read *type* file: '*file*': *message*|
-|[Fatal error C1085](../../error-messages/compiler-errors-1/fatal-error-c1085.md)|cannot write *type* file: '*file*': *message*|
-|[Fatal error C1086](fatal-error-c1086.md)|cannot seek *type* file: '*file*': *message*|
-|[Fatal error C1087](fatal-error-c1087.md)|cannot tell *type* file: '*file*': *message*|
-|[Fatal error C1088](fatal-error-c1088.md)|cannot flush *type* file: '*file*': *message*|
-|[Fatal error C1089](fatal-error-c1089.md)|cannot truncate *type* file: '*file*': *message*|
-|[Fatal error C1090](fatal-error-c1090.md)|PDB API call failed, error code '*code*': '*message*'|
-|[Fatal error C1091](fatal-error-c1091.md)|compiler limit: string exceeds *number* bytes in length|
-|[Fatal error C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md)|Edit and Continue does not support changes to data types; build required|
-|[Fatal error C1093](../../error-messages/compiler-errors-1/fatal-error-c1093.md)|API call '*function*' failed '*HRESULT*': '*description*'|
+| Fatal error C1059 | **(Obsolete)** compiler is out of near heap space |
+| [Fatal error C1060](fatal-error-c1060.md) | compiler is out of heap space |
+| [Fatal error C1061](fatal-error-c1061.md) | compiler limit: blocks nested too deeply |
+| Fatal error C1063 | compiler limit: compiler stack overflow |
+| [Fatal error C1064](fatal-error-c1064.md) | compiler limit: token overflowed internal buffer |
+| [Fatal error C1065](fatal-error-c1065.md) | compiler limit: out of tags |
+| [Fatal error C1067](fatal-error-c1067.md) | compiler limit: 64K limit on size of a type record has been exceeded |
+| [Fatal error C1068](fatal-error-c1068.md) | cannot open file '*file*' |
+| Fatal error C1069 | cannot read compiler command line |
+| [Fatal error C1070](fatal-error-c1070.md) | mismatched `#if`/`#endif` pair in file '*file*' |
+| [Fatal error C1071](fatal-error-c1071.md) | unexpected end of file found in comment |
+| [Fatal error C1073](fatal-error-c1073.md) | **(Obsolete)** Internal error involving incremental compilation(compiler file '*file*', line *number*) |
+| [Fatal error C1074](fatal-error-c1074.md) | 'IDB' is illegal extension for PDB file: *file* |
+| [Fatal error C1075](fatal-error-c1075.md) | the left *token* was unmatched at the end of the file |
+| [Fatal error C1076](fatal-error-c1076.md) | compiler limit: internal heap limit reached; use `/Zm` to specify a higher limit |
+| [Fatal error C1077](fatal-error-c1077.md) | compiler limit: cannot have more than *number* command line options |
+| [Fatal error C1079](fatal-error-c1079.md) | **(Obsolete)** compiler limit: PCH file size limit exceeded |
+| [Fatal error C1080](fatal-error-c1080.md) | compiler limit: command line option exceeded limit of *number* characters |
+| [Fatal error C1081](fatal-error-c1081.md) | '*file*': file name too long |
+| [Fatal error C1082](fatal-error-c1082.md) | cannot close *type* file: '*file*': *message* |
+| [Fatal error C1083](fatal-error-c1083.md) | cannot open *type* file: '*file*': *message* |
+| [Fatal error C1084](fatal-error-c1084.md) | cannot read *type* file: '*file*': *message* |
+| [Fatal error C1085](fatal-error-c1085.md) | cannot write *type* file: '*file*': *message* |
+| [Fatal error C1086](fatal-error-c1086.md) | cannot seek *type* file: '*file*': *message* |
+| [Fatal error C1087](fatal-error-c1087.md) | cannot tell *type* file: '*file*': *message* |
+| [Fatal error C1088](fatal-error-c1088.md) | cannot flush *type* file: '*file*': *message* |
+| [Fatal error C1089](fatal-error-c1089.md) | cannot truncate *type* file: '*file*': *message* |
+| [Fatal error C1090](fatal-error-c1090.md) | PDB API call failed, error code '*code*': '*message*' |
+| [Fatal error C1091](fatal-error-c1091.md) | compiler limit: string exceeds *number* bytes in length |
+| [Fatal error C1092](fatal-error-c1092.md) | Edit and Continue does not support changes to data types; build required |
+| [Fatal error C1093](fatal-error-c1093.md) | API call '*function*' failed '*HRESULT*': '*description*' |
 | [Fatal error C1094](fatal-error-c1094.md) | '`-Zm`*number*': command line option is inconsistent with value used to build precompiled header ('`-Zm`*number*') |
-|[Fatal error C1098](fatal-error-c1098.md)|Version mismatch with Edit and Continue engine|
-|[Fatal error C1099](fatal-error-c1099.md)|Edit and Continue engine terminating compile|
-|[Fatal error C1100](fatal-error-c1100.md)|unable to initialize OLE: *error*|
-|Fatal error C1101|cannot create handler for attribute '*identifier*'|
-|Fatal error C1102|unable to initialize: *error*|
-|[Fatal error C1103](fatal-error-c1103.md)|fatal error importing progid: '*message*'|
-|[Fatal error C1104](fatal-error-c1104.md)|fatal error importing libid: '*message*'|
-| Fatal error C1105  |*message*: *HRESULT error* |
-|[Fatal error C1107](../../error-messages/compiler-errors-1/fatal-error-c1107.md)|could not find assembly '*assembly*': please specify the assembly search path using /AI or by setting the LIBPATH environment variable|
-|[Fatal error C1108](fatal-error-c1108.md)|unable to find DLL: '*file*'|
-|[Fatal error C1109](fatal-error-c1109.md)|unable to find '*symbol*' in DLL '*file*'|
-|Fatal error C1110|too many nested template/generic definitions|
-|Fatal error C1111|too many template/generic parameters|
-|Fatal error C1112|compiler limit: '*number*' too many macro arguments, only *number* allowed|
-|[Fatal error C1113](../../error-messages/compiler-errors-1/fatal-error-c1113.md)|#using failed on '*file*'|
-|Fatal error C1114|'*file*': WinRT does not support #using of a managed assembly|
+| [Fatal error C1098](fatal-error-c1098.md) | Version mismatch with Edit and Continue engine |
+| [Fatal error C1099](fatal-error-c1099.md) | Edit and Continue engine terminating compile |
+| [Fatal error C1100](fatal-error-c1100.md) | unable to initialize OLE: *error* |
+| Fatal error C1101 | cannot create handler for attribute '*identifier*' |
+| Fatal error C1102 | unable to initialize: *error* |
+| [Fatal error C1103](fatal-error-c1103.md) | fatal error importing progid: '*message*' |
+| [Fatal error C1104](fatal-error-c1104.md) | fatal error importing libid: '*message*' |
+| Fatal error C1105 | *message*: *HRESULT error* |
+| [Fatal error C1107](fatal-error-c1107.md) | could not find assembly '*assembly*': please specify the assembly search path using `/AI` or by setting the `LIBPATH` environment variable |
+| [Fatal error C1108](fatal-error-c1108.md) | unable to find DLL: '*file*' |
+| [Fatal error C1109](fatal-error-c1109.md) | unable to find '*symbol*' in DLL '*file*' |
+| Fatal error C1110 | too many nested template/generic definitions |
+| Fatal error C1111 | too many template/generic parameters |
+| Fatal error C1112 | compiler limit: '*number*' too many macro arguments, only *number* allowed |
+| [Fatal error C1113](fatal-error-c1113.md) | `#using` failed on '*file*' |
+| Fatal error C1114 | '*file*': WinRT does not support `#using` of a managed assembly |
 | [Fatal error C1115](fatal-error-c1025-c1115.md) | too many nested lambdas |
 | [Fatal error C1116](fatal-error-c1116.md) | unrecoverable error importing module/headerunit '*name*'. Specialization of '*primary-template*' with arguments '*argument-list*' |
 | [Fatal error C1117](fatal-error-c1117.md) | unrecoverable error importing module/headerunit '*name*': symbol '*symbol-name*' has already been defined |
 | Fatal error C1118 | cannot expand the environment variable *variable-name* in *file-type* filename in object file '*object-file*' |
 | Fatal error C1119 | unrecoverable error importing symbol '*symbol-name*' from module '*module-name*' |
-|[Fatal error C1120](../../error-messages/compiler-errors-1/fatal-error-c1120.md)|call to GetProcAddress failed for '*function*'|
-|[Fatal error C1121](../../error-messages/compiler-errors-1/fatal-error-c1121.md)|call to CryptoAPI failed|
-|[Fatal error C1126](../../error-messages/compiler-errors-1/fatal-error-c1126.md)|automatic allocation exceeds *size*|
+| [Fatal error C1120](fatal-error-c1120.md) | call to `GetProcAddress` failed for '*function*' |
+| [Fatal error C1121](fatal-error-c1121.md) | call to CryptoAPI failed |
+| [Fatal error C1126](fatal-error-c1126.md) | automatic allocation exceeds *size* |
 | Fatal error C1127 | *Operation* requires *option* |
-|[Fatal error C1128](../../error-messages/compiler-errors-1/fatal-error-c1128.md)|number of sections exceeded object file format limit: compile with /bigobj|
-|[Fatal error C1189](../../error-messages/compiler-errors-1/fatal-error-c1189.md)|#error: *message*|
-|[Fatal error C1190](fatal-error-c1190.md)|managed targeted code requires a '/clr' option|
-|[Fatal error C1191](../../error-messages/compiler-errors-1/fatal-error-c1191.md)|'*file*' can only be imported at global scope|
-|[Fatal error C1192](../../error-messages/compiler-errors-1/fatal-error-c1192.md)|#using failed on '*file*'|
-|Fatal error C1193|an error expected in *file*(*line*) not reached|
-| Fatal error C1194 | checkpoint '%s' expected in %s(*number*) not reached |
-|Fatal error C1195|use of /Yu and /Yc on the same command line is incompatible with the /clr option|
-|[Fatal error C1196](fatal-error-c1196.md)|'*identifier*' : identifier found in type library '*typelib*' is not a valid C++ identifier|
-|[Fatal error C1197](../../error-messages/compiler-errors-1/fatal-error-c1197.md)|cannot reference '*file*' as the program has already referenced '*file*'|
+| [Fatal error C1128](fatal-error-c1128.md) | number of sections exceeded object file format limit: compile with `/bigobj` |
+| [Fatal error C1189](fatal-error-c1189.md) | `#error`: *message* |
+| [Fatal error C1190](fatal-error-c1190.md) | managed targeted code requires a '`/clr`' option |
+| [Fatal error C1191](fatal-error-c1191.md) | '*file*' can only be imported at global scope |
+| [Fatal error C1192](fatal-error-c1192.md) | `#using` failed on '*file*' |
+| Fatal error C1193 | an error expected in *file*(*line*) not reached |
+| Fatal error C1194 | **(Obsolete)** checkpoint '*name*' expected in *file*(*line*) not reached |
+| Fatal error C1195 | use of `/Yu` and `/Yc` on the same command line is incompatible with the `/clr` option |
+| [Fatal error C1196](fatal-error-c1196.md) | '*identifier*' : identifier found in type library '*typelib*' is not a valid C++ identifier |
+| [Fatal error C1197](fatal-error-c1197.md) | cannot reference '*file*' as the program has already referenced '*file*' |
 | Fatal error C1198 | *feature* will be supported in a future release |
-| Fatal error C1199 | missing reference to IFC file to resolve an import-declaration; please ensure the proper value for a '/reference' or '/headerUnit' option is provided |
-|[Fatal error C1201](fatal-error-c1201.md)|unable to continue after syntax error in class template definition|
-|[Fatal error C1202](fatal-error-c1202.md)|recursive type or function dependency context too complex|
+| Fatal error C1199 | missing reference to IFC file to resolve an import-declaration; please ensure the proper value for a '`/reference`' or '`/headerUnit`' option is provided |
+| [Fatal error C1201](fatal-error-c1201.md) | unable to continue after syntax error in class template definition |
+| [Fatal error C1202](fatal-error-c1202.md) | recursive type or function dependency context too complex |
 | Fatal error C1203 | invalid symbol name or value specification in `#pragma extern_absolute` |
 | Fatal error C1204 | symbol '*symbol-name*' specified in `#pragma extern_absolute` has different values: *value-1* and *value-2* |
-| [Fatal error C1205](fatal-error-c1205.md) | **OBSOLETE** Generics are not supported by the version of the runtime installed |
-| [Fatal error C1206](fatal-error-c1206.md) | **OBSOLETE** Per-appdomain data is not supported by the version of the runtime installed |
-| [Fatal error C1207](fatal-error-c1207.md) | **OBSOLETE** Managed templates not supported by the version of the runtime installed |
-| [Fatal error C1208](fatal-error-c1208.md) | **OBSOLETE** Allocating reference classes on the stack is not supported by the version of the runtime installed |
-| [Fatal error C1209](fatal-error-c1209.md) | **OBSOLETE** Friend assemblies not supported by the version of the runtime installed |
-| [Fatal error C1210](fatal-error-c1210.md) | **OBSOLETE** /clr:pure and /clr:safe are not supported by the version of the runtime installed |
-| [Fatal error C1211](fatal-error-c1211.md) | **OBSOLETE** The TypeForwardedTo Custom Attribute is not supported by the version of the runtime installed |
+| [Fatal error C1205](fatal-error-c1205.md) | **(Obsolete)** Generics are not supported by the version of the runtime installed |
+| [Fatal error C1206](fatal-error-c1206.md) | **(Obsolete)** Per-appdomain data is not supported by the version of the runtime installed |
+| [Fatal error C1207](fatal-error-c1207.md) | **(Obsolete)** Managed templates not supported by the version of the runtime installed |
+| [Fatal error C1208](fatal-error-c1208.md) | **(Obsolete)** Allocating reference classes on the stack is not supported by the version of the runtime installed |
+| [Fatal error C1209](fatal-error-c1209.md) | **(Obsolete)** Friend assemblies not supported by the version of the runtime installed |
+| [Fatal error C1210](fatal-error-c1210.md) | **(Obsolete)** /clr:pure and /clr:safe are not supported by the version of the runtime installed |
+| [Fatal error C1211](fatal-error-c1211.md) | **(Obsolete)** The TypeForwardedTo Custom Attribute is not supported by the version of the runtime installed |
 | Fatal error C1212 | Input file was modified by another process while building: '*filename*' |
 | Fatal error C1213 | Header units are unsupported without `/Zc:preprocessor` |
 | Fatal error C1214 | Modules conflict with non-standard behavior requested via '*option*' |
-|Fatal error C1300|error accessing program database *file* (*message*)|
-|Fatal error C1301|error accessing program database *file*, invalid format, please delete and rebuild|
-|Fatal error C1302|no profile data for module '*module*' in profile database '*file*'|
+| Fatal error C1300 | error accessing program database *file* (*message*) |
+| Fatal error C1301 | error accessing program database *file*, invalid format, please delete and rebuild |
+| Fatal error C1302 | no profile data for module '*module*' in profile database '*file*' |
 | Fatal error C1303 | profile data corrupt in profile database '*filename*' |
 | Fatal error C1304 | profile data version mismatch in profile database '*filename*' |
-|[Fatal error C1305](../../error-messages/compiler-errors-1/fatal-error-c1305.md)|profile database '*file*' is for a different architecture|
-|Fatal error C1306|last change to profile data base '*file*' was not optimization analysis; optimization decisions may be out of date|
-|[Fatal error C1307](../../error-messages/compiler-errors-1/fatal-error-c1307.md)|program has been edited since profile data was collected|
-|[Fatal error C1308](../../error-messages/compiler-errors-1/fatal-error-c1308.md)|*file*: linking assemblies is not supported|
-|[Fatal error C1309](../../error-messages/compiler-errors-1/fatal-error-c1309.md)|Mismatched versions of C2.DLL and pgodb*ver*.DLL|
-|[Fatal error C1310](fatal-error-c1310.md)|profile guided optimizations are not available with OpenMP|
-|[Fatal error C1311](../../error-messages/compiler-errors-1/fatal-error-c1311.md)|COFF format cannot statically initialize '*symbol*' with *number* byte(s) of an address|
-|[Fatal error C1312](fatal-error-c1312.md)|Too many conditional branches in function.  Simplify or refactor source code.|
-|[Fatal error C1313](../../error-messages/compiler-errors-1/fatal-error-c1313.md)|compiler limit: *type* blocks may not be nested deeper than *number* levels|
-|[Fatal error C1350](../../error-messages/compiler-errors-1/fatal-error-c1350.md)|error loading dll '*file*': dll not found|
-|[Fatal error C1351](../../error-messages/compiler-errors-1/fatal-error-c1351.md)|error loading dll '*file*': incompatible version|
-|[Fatal error C1352](fatal-error-c1352.md)|Invalid or corrupt MSIL in function '*function*' from module '*module*'|
-|[Fatal error C1353](fatal-error-c1353.md)|metadata operation failed: runtime not installed or version mismatch|
-| Fatal error C1354 | error accessing previous object file %s (%s) |
-| Fatal error C1355 | unable to find entrypoint '%s' in %s |
-| Fatal error C1356 | unable to find %s |
-| Fatal error C1357 | C2.DLL unsupported flag combination %s |
+| [Fatal error C1305](fatal-error-c1305.md) | profile database '*file*' is for a different architecture |
+| Fatal error C1306 | last change to profile data base '*file*' was not optimization analysis; optimization decisions may be out of date |
+| [Fatal error C1307](fatal-error-c1307.md) | program has been edited since profile data was collected |
+| [Fatal error C1308](fatal-error-c1308.md) | *file*: linking assemblies is not supported |
+| [Fatal error C1309](fatal-error-c1309.md) | Mismatched versions of C2.DLL and pgodb*version*.DLL |
+| [Fatal error C1310](fatal-error-c1310.md) | profile guided optimizations are not available with OpenMP |
+| [Fatal error C1311](fatal-error-c1311.md) | COFF format cannot statically initialize '*symbol*' with *number* byte(s) of an address |
+| [Fatal error C1312](fatal-error-c1312.md) | Too many conditional branches in function.  Simplify or refactor source code. |
+| [Fatal error C1313](fatal-error-c1313.md) | compiler limit: *type* blocks may not be nested deeper than *number* levels |
+| [Fatal error C1350](fatal-error-c1350.md) | error loading dll '*file*': dll not found |
+| [Fatal error C1351](fatal-error-c1351.md) | error loading dll '*file*': incompatible version |
+| [Fatal error C1352](fatal-error-c1352.md) | Invalid or corrupt MSIL in function '*function*' from module '*module*' |
+| [Fatal error C1353](fatal-error-c1353.md) | metadata operation failed: runtime not installed or version mismatch |
+| Fatal error C1354 | error accessing previous object file *filename* (*reason*) |
+| Fatal error C1355 | unable to find entrypoint '*function-name*' in *PDB helper* |
+| Fatal error C1356 | unable to find *PDB helper* |
+| Fatal error C1357 | C2.DLL unsupported flag combination *`hybrid:x86arm64, CLR`* |
 | Fatal error C1358 | module (key=0x*value*) information unavailable |
-|[Fatal error C1382](../../error-messages/compiler-errors-1/fatal-error-c1382.md)|the PCH file '*file*' has been rebuilt since '*obj*' was generated. Please rebuild this object|
-|[Fatal error C1383](fatal-error-c1383.md)|compiler option /GL is incompatible with the installed version of common language runtime|
-|Fatal error C1384|Incorrect setting for PGO_PATH_TRANSLATION when linking '*file*'|
+| [Fatal error C1382](fatal-error-c1382.md) | the PCH file '*file*' has been rebuilt since '*obj*' was generated. Please rebuild this object |
+| [Fatal error C1383](fatal-error-c1383.md) | compiler option `/GL` is incompatible with the installed version of common language runtime |
+| Fatal error C1384 | Incorrect setting for PGO_PATH_TRANSLATION when linking '*file*' |
 | Fatal error C1385 | profile guided optimizations not available for Thumb; compile '*filename*' as ARM or Thumb-2. |
-|Fatal error C1451|Failed to generate debug information when compiling the call graph for the concurrency::parallel_for_each at: '*callsite*'|
-|Fatal error C1505|unrecoverable parser look-ahead error|
-|[Fatal error C1506](../../error-messages/compiler-errors-1/fatal-error-c1506.md)|unrecoverable block scoping error|
+| Fatal error C1451 | Failed to generate debug information when compiling the call graph for the `concurrency::parallel_for_each` at: '*callsite*' |
+| Fatal error C1505 | unrecoverable parser look-ahead error |
+| [Fatal error C1506](fatal-error-c1506.md) | unrecoverable block scoping error |
 | Fatal error C1507 | previous user errors and subsequent error recovery halt further compilation |
-|[Fatal error C1508](fatal-error-c1508.md)|compiler limit: '*function*': more than 65535 argument bytes|
-|[Fatal error C1509](../../error-messages/compiler-errors-1/fatal-error-c1509.md)|compiler limit: too many exception handler states in function '*function*'; simplify function|
-|[Fatal error C1510](../../error-messages/compiler-errors-1/fatal-error-c1510.md)|Cannot open language resource clui.dll|
+| [Fatal error C1508](fatal-error-c1508.md) | compiler limit: '*function*': more than 65535 argument bytes |
+| [Fatal error C1509](fatal-error-c1509.md) | compiler limit: too many exception handler states in function '*function*'; simplify function |
+| [Fatal error C1510](fatal-error-c1510.md) | Cannot open language resource clui.dll |
 | Fatal error C1511 | *Message* (used by capture_repro option) |
-|[Fatal error C1601](../../error-messages/compiler-errors-1/fatal-error-c1601.md)|unsupported inline assembly opcode|
-|[Fatal error C1602](../../error-messages/compiler-errors-1/fatal-error-c1602.md)|unsupported intrinsic|
-|[Fatal error C1603](../../error-messages/compiler-errors-1/fatal-error-c1603.md)|inline assembly branch target out of range by *number* bytes|
+| [Fatal error C1601](fatal-error-c1601.md) | unsupported inline assembly opcode |
+| [Fatal error C1602](fatal-error-c1602.md) | unsupported intrinsic |
+| [Fatal error C1603](fatal-error-c1603.md) | inline assembly branch target out of range by *number* bytes |
 | Fatal error C1604 | fatal lambda parsing error: see the lambda definition beginning on line *number* |
 | Fatal error C1605 | compiler limit: object file size cannot exceed 4 GB |
-|[Fatal error C1852](fatal-error-c1852.md)|'*file*' is not a valid precompiled header file|
-|[Fatal error C1853](../../error-messages/compiler-errors-1/fatal-error-c1853.md)|'*file*' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)|
-|[Fatal error C1854](../../error-messages/compiler-errors-1/fatal-error-c1854.md)|cannot overwrite information formed during creation of the precompiled header in object file: '*file*'|
-| Fatal error C1859 | **OBSOLETE** '*Message*' unexpected precompiled header error, simply rerunning the compiler might fix this problem |
-|[Fatal error C1900](../../error-messages/compiler-errors-1/fatal-error-c1900.md)|IL mismatch between '*tool*' version '*number*' and '*tool*' version '*number*'|
-| Fatal error C1901 | **OBSOLETE** Internal memory management error |
-|[Fatal error C1902](../../error-messages/compiler-errors-1/fatal-error-c1902.md)|Program database manager mismatch; please check your installation|
-|[Fatal error C1903](fatal-error-c1903.md)|unable to recover from previous error(s); stopping compilation|
-|[Fatal error C1904](fatal-error-c1904.md)|bad provider interaction: '*file*'|
-|[Fatal error C1905](../../error-messages/compiler-errors-1/fatal-error-c1905.md)|Front end and back end not compatible (must target same processor).|
+| [Fatal error C1852](fatal-error-c1852.md) | '*file*' is not a valid precompiled header file |
+| [Fatal error C1853](fatal-error-c1853.md) | '*file*' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa) |
+| [Fatal error C1854](fatal-error-c1854.md) | cannot overwrite information formed during creation of the precompiled header in object file: '*file*' |
+| Fatal error C1859 | **(Obsolete)** '*Message*' unexpected precompiled header error, simply rerunning the compiler might fix this problem |
+| [Fatal error C1900](fatal-error-c1900.md) | IL mismatch between '*tool*' version '*number*' and '*tool*' version '*number*' |
+| Fatal error C1901 | **(Obsolete)** Internal memory management error |
+| [Fatal error C1902](fatal-error-c1902.md) | Program database manager mismatch; please check your installation |
+| [Fatal error C1903](fatal-error-c1903.md) | unable to recover from previous error(s); stopping compilation |
+| [Fatal error C1904](fatal-error-c1904.md) | bad provider interaction: '*file*' |
+| [Fatal error C1905](fatal-error-c1905.md) | Front end and back end not compatible (must target same processor). |
 | Fatal error C1906 | assembly reference '*name*' not resolved for type '*type-name*'; missing option '-FU *filename*.dll'? |
 | Fatal error C1907 | unable to recover from previous error(s); stopping compilation |
-|[Fatal error C1999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|UNKNOWN FATAL ERROR Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
+| [Fatal error C1999](fatal-error-c1000-c1999.md) | UNKNOWN FATAL ERROR Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 
 ## See also
 
