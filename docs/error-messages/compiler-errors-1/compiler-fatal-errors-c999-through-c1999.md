@@ -17,7 +17,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Error|Message|
 |-----------|-------------|
 |[Fatal error C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|UNKNOWN MESSAGE Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
-| [Fatal error C1000](../../error-messages/compiler-errors-1/fatal-error-c999.md) | UNKNOWN FATAL ERROR Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
+| [Fatal error C1000](fatal-error-c999.md) | UNKNOWN FATAL ERROR Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 |[Fatal error C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|An internal error has occurred in the compiler.<br /> (compiler file '*file*', line *number*)<br /> To work around this problem, try simplifying or changing the program near the locations listed above. Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
 |[Fatal error C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|compiler is out of heap space in pass 2|
 |[Fatal error C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|error count exceeds *number*; stopping compilation|
