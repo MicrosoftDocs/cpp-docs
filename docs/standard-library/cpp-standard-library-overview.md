@@ -8,14 +8,37 @@ helpviewer_keywords: ["headers, C++ library", "C++ Standard Library", "libraries
 
 All C++ library entities are declared or defined in one or more standard headers. This implementation includes two other headers, `<hash_map>` and `<hash_set>`, that aren't required by the C++ Standard. For a complete list of headers that this implementation supports, see [Header files reference](../standard-library/cpp-standard-library-header-files.md).
 
-A freestanding implementation of the C++ library provides only a subset of these headers:
+The C++ standard defines the hosted implementation of the standard library which specifies the required library headers. It also defines the freestanding implementation of the standard library, which requires only a subset of those headers:
 
+[`<atomic>`](../standard-library/atomic.md) (declaring at least `atomic_signed_lock_free` and `atomic_unsigned_lock_free`)\
+[`<bit>`](../standard-library/bit.md)\
+[`<cfloat>`](../standard-library/cfloat.md)\
+[`<climits>`](../standard-library/climits.md)\
+`<compare>`\
+`<concepts>`\
+`<coroutine>`\
 [`<cstdarg>`](../standard-library/cstdarg.md)\
 [`<cstddef>`](../standard-library/cstddef.md)\
-[`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, and `exit`)\
+[`<cstdint>`](../standard-library/cstdint.md)\
+[`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, `at_quick_exit`, `exit`, and `quick_exit`)\
 [`<exception>`](../standard-library/exception.md)\
+[`<functional>`](../standard-library/functional.md)\
+[`<initializer_list>`](../standard-library/initializer-list.md)\
+[`<iterator>`](../standard-library/iterator.md)\
 [`<limits>`](../standard-library/limits.md)\
-[`<new>`](../standard-library/new.md)
+[`<memory>`](../standard-library/memory.md)\
+[`<new>`](../standard-library/new.md)\
+[`<ranges>`](../standard-library/ranges.md)\
+[`<ratio>`](../standard-library/ratio.md)\
+[`<tuple>`](../standard-library/tuple.md)\
+[`<typeinfo>`](../standard-library/typeinfo.md)\
+`<source_location>`\
+[`<type_traits>`](../standard-library/type-traits.md)\
+`<version>`\
+[`<utility>`](../standard-library/utility.md)\
+The following headers are deprecated since C++11: [`<ciso646>`](../standard-library/ciso646.md), [`<cstdalign>`](../standard-library/cstdalign.md), and [`<cstdbool>`](../standard-library/cstdbool.md).
+
+The Microsoft C++ standard library satisfies both freestanding and hosted requirements.
 
 The C++ library headers have two broader subdivisions:
 
