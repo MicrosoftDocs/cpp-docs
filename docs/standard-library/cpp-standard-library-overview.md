@@ -1,14 +1,16 @@
 ---
 description: "Learn more about: C++ Standard Library (STL) Overview"
 title: "C++ Standard Library Overview (STL)"
-ms.date: "08/17/2022"
+ms.date: "08/18/2022"
 helpviewer_keywords: ["headers, C++ library", "C++ Standard Library", "libraries, Standard C++", "C++ Standard Library, headers", "STL", "Standard template library, headers"]
 ---
 # C++ Standard Library (STL) overview
 
 All C++ library entities are declared or defined in one or more standard headers. This implementation includes two other headers, `<hash_map>` and `<hash_set>`, that aren't required by the C++ Standard. For a complete list of headers that this implementation supports, see [Header files reference](../standard-library/cpp-standard-library-header-files.md).
 
-The C++ standard defines the hosted implementation of the standard library which specifies the required library headers. It also defines the freestanding implementation of the standard library, which requires only a subset of those headers:
+The C++ standard defines two kinds of conforming libraries:
+- A *hosted implementation*, which supports all of the required standard library headers described by the C++ ISO standard.
+- A *freestanding implementation*, which requires only a subset of the standard libary  headers:
 
 [`<atomic>`](../standard-library/atomic.md) (declaring at least `atomic_signed_lock_free` and `atomic_unsigned_lock_free`)\
 [`<bit>`](../standard-library/bit.md)\
@@ -37,6 +39,12 @@ The C++ standard defines the hosted implementation of the standard library which
 `<version>`\
 [`<utility>`](../standard-library/utility.md)\
 The following headers are deprecated since C++11: [`<ciso646>`](../standard-library/ciso646.md), [`<cstdalign>`](../standard-library/cstdalign.md), and [`<cstdbool>`](../standard-library/cstdbool.md).
+
+Other differences between freestanding and hosted implementations are:
+
+- Hosted implementations require a global function named `main`. A freestanding implementation can define its own startup and termination functions.
+- Hosted implementations must support more than one thread running at the same time. A
+freestanding implementation may or may not support concurrent threads.
 
 The Microsoft C++ standard library satisfies both freestanding and hosted requirements.
 
@@ -75,7 +83,6 @@ For more information about Visual C++ run-time libraries, see [CRT Library Featu
 > [!NOTE]
 > Microsoft's implementation of the C++ Standard Library is often referred to as the *STL* or *Standard Template Library*. Although *C++ Standard Library* is the official name of the library as defined in ISO 14882, due to the popular use of "STL" and "Standard Template Library" in search engines, we occasionally use those names to make it easier to find our documentation.
 From a historical perspective, "STL" originally referred to the Standard Template Library written by Alexander Stepanov. Parts of that library were standardized in the C++ Standard Library, along with the ISO C runtime library, parts of the Boost library, and other functionality. Sometimes "STL" is also used to refer to the containers and algorithms parts of the C++ Standard Library adapted from Stepanov's STL. In this documentation, Standard Template Library (STL) refers to the C++ Standard Library as a whole.
-
 
 ## See also
 
