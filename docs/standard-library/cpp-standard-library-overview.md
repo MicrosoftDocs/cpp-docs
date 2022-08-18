@@ -12,10 +12,10 @@ The C++ standard defines two kinds of conforming libraries:
 - A *hosted implementation*, which supports all of the required standard library headers described by the C++ ISO standard.
 - A *freestanding implementation*, which requires only a subset of the standard library headers. The required subset is:
 
-| Subset | Subset | Subset|
+| Header subset |  | |
 |--|--|--|
 | [`<atomic>`](../standard-library/atomic.md) (declaring at least `atomic_signed_lock_free` and `atomic_unsigned_lock_free`) | [`<cstdint>`](../standard-library/cstdint.md) | [`<ranges>`](../standard-library/ranges.md) |
-| [`<bit>`](../standard-library/bit.md) | [`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least `abort`, `atexit`, `at_quick_exit`, `exit`, `quick_exit` | [`<ratio>`](../standard-library/ratio.md) |
+| [`<bit>`](../standard-library/bit.md) | [`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least `abort`, `atexit`, `at_quick_exit`, `exit`, `quick_exit`) | [`<ratio>`](../standard-library/ratio.md) |
 | [`<cfloat>`](../standard-library/cfloat.md) | [`<exception>`](../standard-library/exception.md) | [`<tuple>`](../standard-library/tuple.md) |
 | [`<climits>`](../standard-library/climits.md) | [`<functional>`](../standard-library/functional.md) | [`<typeinfo>`](../standard-library/typeinfo.md) |
 | `<compare>` | [`<initializer_list>`](../standard-library/initializer-list.md) | `<source_location>` |
