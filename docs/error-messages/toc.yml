@@ -384,6 +384,8 @@ items:
           href: compiler-errors-1/compiler-error-c2014.md
         - name: Compiler error C2015
           href: compiler-errors-1/compiler-error-c2015.md
+        - name: Compiler error C2016
+          href: compiler-errors-1/compiler-error-c2016.md
         - name: Compiler error C2017
           href: compiler-errors-1/compiler-error-c2017.md
         - name: Compiler error C2018
@@ -396,6 +398,12 @@ items:
           href: compiler-errors-1/compiler-error-c2021.md
         - name: Compiler error C2022
           href: compiler-errors-1/compiler-error-c2022.md
+        - name: Compiler error C2023
+          href: compiler-errors-1/compiler-error-c2023.md
+        - name: Compiler error C2024
+          href: compiler-errors-1/compiler-error-c2024.md
+        - name: Compiler error C2025
+          href: compiler-errors-1/compiler-error-c2025.md
         - name: Compiler error C2026
           href: compiler-errors-1/compiler-error-c2026.md
         - name: Compiler error C2027
@@ -404,14 +412,22 @@ items:
           href: compiler-errors-1/compiler-error-c2028.md
         - name: Compiler error C2030
           href: compiler-errors-1/compiler-error-c2030.md
+        - name: Compiler error C2031
+          href: compiler-errors-1/compiler-error-c2031.md
         - name: Compiler error C2032
           href: compiler-errors-1/compiler-error-c2032.md
         - name: Compiler error C2033
           href: compiler-errors-1/compiler-error-c2033.md
         - name: Compiler error C2034
           href: compiler-errors-1/compiler-error-c2034.md
+        - name: Compiler error C2035
+          href: compiler-errors-1/compiler-error-c2035.md
         - name: Compiler error C2036
           href: compiler-errors-1/compiler-error-c2036.md
+        - name: Compiler error C2037
+          href: compiler-errors-1/compiler-error-c2037.md
+        - name: Compiler error C2038
+          href: compiler-errors-1/compiler-error-c2038.md
         - name: Compiler error C2039
           href: compiler-errors-1/compiler-error-c2039.md
         - name: Compiler error C2040
@@ -432,6 +448,8 @@ items:
           href: compiler-errors-1/compiler-error-c2047.md
         - name: Compiler error C2048
           href: compiler-errors-1/compiler-error-c2048.md
+        - name: Compiler error C2049
+          href: compiler-errors-1/compiler-error-c2049.md
         - name: Compiler error C2050
           href: compiler-errors-1/compiler-error-c2050.md
         - name: Compiler error C2051
@@ -468,6 +486,8 @@ items:
           href: compiler-errors-1/compiler-error-c2066.md
         - name: Compiler error C2067
           href: compiler-errors-1/compiler-error-c2067.md
+        - name: Compiler error C2068
+          href: compiler-errors-1/compiler-error-c2068.md
         - name: Compiler error C2069
           href: compiler-errors-1/compiler-error-c2069.md
         - name: Compiler error C2070
@@ -482,12 +502,16 @@ items:
           href: compiler-errors-1/compiler-error-c2074.md
         - name: Compiler error C2075
           href: compiler-errors-1/compiler-error-c2075.md
+        - name: Compiler error C2076
+          href: compiler-errors-1/compiler-error-c2076.md
         - name: Compiler error C2077
           href: compiler-errors-1/compiler-error-c2077.md
         - name: Compiler error C2078
           href: compiler-errors-1/compiler-error-c2078.md
         - name: Compiler error C2079
           href: compiler-errors-1/compiler-error-c2079.md
+        - name: Compiler error C2080
+          href: compiler-errors-1/compiler-error-c2080.md
         - name: Compiler error C2081
           href: compiler-errors-1/compiler-error-c2081.md
         - name: Compiler error C2082
