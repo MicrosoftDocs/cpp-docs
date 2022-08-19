@@ -250,14 +250,14 @@ For a list of additional Microsoft-specific keywords, see [C keywords](./c-keywo
 &emsp;*`h-char-sequence`* *`h-char`*
 
 *`h-char`*:\
-&emsp;any member of the source character set except the new-line character and **`>`**
+&emsp;any member of the source character set except the newline character and **`>`**
 
 *`q-char-sequence`*:\
 &emsp;*`q-char`*\
 &emsp;*`q-char-sequence`* *`q-char`*
 
 *`q-char`*:\
-&emsp;any member of the source character set except the new-line character and **`"`**
+&emsp;any member of the source character set except the newline character and **`"`**
 
 ## Preprocessing numbers
 
