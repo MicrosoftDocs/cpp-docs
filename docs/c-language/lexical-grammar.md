@@ -187,7 +187,7 @@ For a list of additional Microsoft-specific keywords, see [C keywords](./c-keywo
 &emsp;*`c-char-sequence`* *`c-char`*
 
 *`c-char`*:\
-&emsp;Any member of the source character set except the single quotation mark (**`'`**), backslash (**`\`**), or newline character\
+&emsp;Any member of the source character set except the single quotation mark (**`'`**), backslash (**`\`**), or new-line character\
 &emsp;*`escape-sequence`*
 
 *`escape-sequence`*:\
@@ -225,7 +225,7 @@ For a list of additional Microsoft-specific keywords, see [C keywords](./c-keywo
 &emsp;*`s-char-sequence`* *`s-char`*
 
 *`s-char`*:\
-&emsp;any member of the source character set except the double-quotation mark (**`"`**), backslash (**`\`**), or newline character\
+&emsp;any member of the source character set except the double-quotation mark (**`"`**), backslash (**`\`**), or new-line character\
 &emsp;*`escape-sequence`*
 
 ## <a name="punctuators"></a> Punctuators
@@ -250,14 +250,14 @@ For a list of additional Microsoft-specific keywords, see [C keywords](./c-keywo
 &emsp;*`h-char-sequence`* *`h-char`*
 
 *`h-char`*:\
-&emsp;any member of the source character set except the newline character and **`>`**
+&emsp;any member of the source character set except the new-line character and **`>`**
 
 *`q-char-sequence`*:\
 &emsp;*`q-char`*\
 &emsp;*`q-char-sequence`* *`q-char`*
 
 *`q-char`*:\
-&emsp;any member of the source character set except the newline character and **`"`**
+&emsp;any member of the source character set except the new-line character and **`"`**
 
 ## Preprocessing numbers
 
