@@ -44,7 +44,7 @@ The `index` of one of the two time zone names to retrieve.
 |1|Daylight standard time zone name|`"PDT"`|
 |> 1 or < 0|**`errno`** set to `EINVAL`|not modified|
 
-Unless explicitly updated during runtime (such as by a call to [`tzset()`](tzset.md)), the default values are `"PST"` and `"PDT"` respectively.
+Unless explicitly updated during runtime (such as by a call to [`tzset()`](tzset.md)), the default values are returned which are `"PST"` for the standard time zone and `"PDT"` for the daylight standard time zone.
 
 The time zone string isn't guaranteed to be the same between OS releases. Official time zone names can and do change.
 
@@ -84,7 +84,7 @@ This sample calls `_get_tzname` to get the required buffer size to display the c
 It also calls `_tzset()` to cause the OS to update the time zone information before calling `_get_tzname()`. Otherwise, the default values are used.
 
 ```C
-// crt`_get_tzname`.c
+// crt _get_tzname.c
 // Compile by using: cl /W4 crt_get_tzname.c
 #include <stdio.h>
 #include <time.h>
@@ -145,4 +145,4 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)\
 [`_get_daylight`](get-daylight.md)\
 [`_get_dstbias`](get-dstbias.md)\
-[`_get_timezone`](get-timezone.md)\
+[`_get_timezone`](get-timezone.md)
