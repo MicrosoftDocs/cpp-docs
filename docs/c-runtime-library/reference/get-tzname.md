@@ -142,7 +142,7 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)\
-[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/`errno`-dos`errno`-sys-errlist-and-sys-nerr.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)\
 [`_get_daylight`](get-daylight.md)\
 [`_get_dstbias`](get-dstbias.md)\
 [`_get_timezone`](get-timezone.md)\
