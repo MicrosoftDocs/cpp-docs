@@ -26,19 +26,19 @@ errno_t _get_tzname(
 
 ### Parameters
 
-`pReturnValue`\
-The string length of `timeZoneName` including a `NULL` terminator.
+*`pReturnValue`*\
+The string length of *`timeZoneName`* including a `NULL` terminator.
 
-`timeZoneName`\
-The address of a character string for the representation of the time zone name or the daylight standard time zone name (DST), depending on `index`.
+*`timeZoneName`*\
+The address of a character string for the representation of the time zone name or the daylight standard time zone name (DST), depending on *`index`*.
 
-`sizeInBytes`\
-The size of the `timeZoneName` character string in bytes.
+*`sizeInBytes`*\
+The size of the *`timeZoneName`* character string in bytes.
 
-`index`\
-The `index` of one of the two time zone names to retrieve.
+*`index`*\
+The *`index`* of one of the two time zone names to retrieve.
 
-|`index`|Contents of `timeZoneName`|`timeZoneName` default value|
+|*`index`*|Contents of *`timeZoneName`*|*`timeZoneName`* default value|
 |-|-|-|
 |0|Time zone name|`"PST"`|
 |1|Daylight standard time zone name|`"PDT"`|
@@ -52,11 +52,11 @@ The time zone string isn't guaranteed to be the same between OS releases. Offici
 
 Zero if successful, otherwise an **`errno`** type value.
 
-If either `timeZoneName` is `NULL`, or `sizeInBytes` is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to `EINVAL` and returns `EINVAL`.
+If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to `EINVAL` and returns `EINVAL`.
 
 ### Error Conditions
 
-|`pReturnValue`|`timeZoneName`|`sizeInBytes`|`index`|Return value|Contents of `timeZoneName`|
+|*`pReturnValue`*|*`timeZoneName`*|*`sizeInBytes`*|*`index`*|Return value|Contents of *`timeZoneName`*|
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
 |size of TZ name|`NULL`|0|0 or 1|0|not modified|
 |size of TZ name|any|> 0|0 or 1|0|TZ name|
@@ -66,9 +66,9 @@ If either `timeZoneName` is `NULL`, or `sizeInBytes` is zero or less than zero (
 
 ## Remarks
 
-The `_get_tzname` function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of `timeZoneName` depending on the `index` value, along with the size of the string in `pReturnValue`. If `timeZoneName` is `NULL` and `sizeInBytes` is zero, the size of the string required to hold the specified time zone and a terminating `NULL` in bytes is returned in `pReturnValue`.
+The `_get_tzname` function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of *`timeZoneName`* depending on the *`index`* value, along with the size of the string in *`pReturnValue`*. If *`timeZoneName`* is `NULL` and *`sizeInBytes`* is zero, the size of the string required to hold the specified time zone and a terminating `NULL` in bytes is returned in *`pReturnValue`*.
 
-The `index` values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values have undetermined results.
+The *`index`* values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values have undetermined results.
 
 Unless explicitly updated during runtime, the default values are returned: `"PST"` for standard time zone and `"PDT"` for daylight standard time zone. The time zone name is updated the first time it's needed by a call that requires time zone information, such as by a call to [`strftime`](strftime-wcsftime-strftime-l-wcsftime-l.md), [`ftime`](ftime-ftime32-ftime64.md), [`mktime`](mktime-mktime32-mktime64.md), and [`localtime`](localtime-localtime32-localtime64.md). If one of these functions is not called prior to calling `_get_tzname`, the default values are returned unless explicitly updated by a call to [`tzset()`](tzset.md).
 
