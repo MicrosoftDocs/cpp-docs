@@ -29,28 +29,28 @@ The following functions have intrinsic forms, and the intrinsic forms are used w
       [`_enable`](../intrinsics/enable.md)\
       [`fabs`](../c-runtime-library/reference/fabs-fabsf-fabsl.md)\
       [`_inp`](../c-runtime-library/inp-inpw-inpd.md)\
-      [`_inpw`](../c-runtime-library/inp-inpw-inpd.md)\
+      [`_inpw`](../c-runtime-library/inp-inpw-inpd.md)
    :::column-end:::
    :::column span="":::
       [`labs`](../c-runtime-library/reference/abs-labs-llabs-abs64.md)\
       [`_lrotl`](../c-runtime-library/reference/lrotl-lrotr.md)\
       [`_lrotr`](../c-runtime-library/reference/lrotl-lrotr.md)\
       [`memcmp`](../c-runtime-library/reference/memcmp-wmemcmp.md)\
-      [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md)\
+      [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md)
    :::column-end:::
    :::column span="":::
       [`memset`](../c-runtime-library/reference/memset-wmemset.md)\
       [`_outp`](../c-runtime-library/outp-outpw-outpd.md)\
       [`_outpw`](../c-runtime-library/outp-outpw-outpd.md)\
       [`_rotl`](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)\
-      [`_rotr`](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)\
+      [`_rotr`](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)
    :::column-end:::
    :::column span="":::
       [`strcat`](../c-runtime-library/reference/strcat-wcscat-mbscat.md)\
       [`strcmp`](../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)\
       [`strcpy`](../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)\
       [`strlen`](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)\
-      [`_strset`](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+      [`_strset`](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)
    :::column-end:::
 :::row-end:::
 
@@ -84,18 +84,18 @@ These floating-point functions don't have true intrinsic forms. Instead, they ha
 :::row:::
    :::column span="":::
       [`acos`](../c-runtime-library/reference/acos-acosf-acosl.md)\
-      [`asin`](../c-runtime-library/reference/asin-asinf-asinl.md)\
+      [`asin`](../c-runtime-library/reference/asin-asinf-asinl.md)
    :::column-end:::
    :::column span="":::
       [`cosh`](../c-runtime-library/reference/cosh-coshf-coshl.md)\
-      [`fmod`](../c-runtime-library/reference/fmod-fmodf.md)\
+      [`fmod`](../c-runtime-library/reference/fmod-fmodf.md)
    :::column-end:::
    :::column span="":::
       [`pow`](../c-runtime-library/reference/pow-powf-powl.md)\
-      [`sinh`](../c-runtime-library/reference/sinh-sinhf-sinhl.md)\
+      [`sinh`](../c-runtime-library/reference/sinh-sinhf-sinhl.md)
    :::column-end:::
    :::column span="":::
-      [`tanh`](../c-runtime-library/reference/tanh-tanhf-tanhl.md)\
+      [`tanh`](../c-runtime-library/reference/tanh-tanhf-tanhl.md)
    :::column-end:::
 :::row-end:::
 
@@ -105,19 +105,19 @@ These floating-point functions have true intrinsic forms when you specify [`/Oi`
    :::column span="":::
       [`atan`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)\
       [`atan2`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)\
-      [`cos`](../c-runtime-library/reference/cos-cosf-cosl.md)\
+      [`cos`](../c-runtime-library/reference/cos-cosf-cosl.md)
    :::column-end:::
    :::column span="":::
       [`exp`](../c-runtime-library/reference/exp-expf.md)\
-      [`log`](../c-runtime-library/reference/log-logf-log10-log10f.md)\
+      [`log`](../c-runtime-library/reference/log-logf-log10-log10f.md)
    :::column-end:::
    :::column span="":::
       [`log10`](../c-runtime-library/reference/log-logf-log10-log10f.md)\
-      [`sin`](../c-runtime-library/reference/sin-sinf-sinl.md)\
+      [`sin`](../c-runtime-library/reference/sin-sinf-sinl.md)
    :::column-end:::
    :::column span="":::
       [`sqrt`](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)\
-      [`tan`](../c-runtime-library/reference/tan-tanf-tanl.md)\
+      [`tan`](../c-runtime-library/reference/tan-tanf-tanl.md)
    :::column-end:::
 :::row-end:::
 
