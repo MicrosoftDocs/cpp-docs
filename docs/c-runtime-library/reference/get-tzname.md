@@ -46,7 +46,7 @@ The `index` of one of the two time zone names to retrieve.
 
 Unless explicitly updated during runtime (such as by a call to [`tzset()`](tzset.md)), the default values are `"PST"` and `"PDT"` respectively.
 
-The time zone string is not guaranteed to be the same between OS releases. Official time zone names can and do change.
+The time zone string isn't guaranteed to be the same between OS releases. Official time zone names can and do change.
 
 ## Return Value
 
@@ -66,11 +66,11 @@ If either `timeZoneName` is `NULL`, or `sizeInBytes` is zero or less than zero (
 
 ## Remarks
 
-The **`_get_tzname`** function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of `timeZoneName` depending on the `index` value, along with the size of the string in `pReturnValue`. If `timeZoneName` is `NULL` and `sizeInBytes` is zero, the size of the string required to hold the specified time zone and a terminating null in bytes is returned in `pReturnValue`.
+The `_get_tzname` function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of `timeZoneName` depending on the `index` value, along with the size of the string in `pReturnValue`. If `timeZoneName` is `NULL` and `sizeInBytes` is zero, the size of the string required to hold the specified time zone and a terminating null in bytes is returned in `pReturnValue`.
 
 The `index` values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values have undetermined results.
 
-Unless explicitly updated during runtime (such as by a call to [`tzset()`](tzset.md)), the default values are returned (`"PST"` for standard time zone and `"PDT"` for daylight standard time zone.
+Unless explicitly updated during runtime, the default values are returned: `"PST"` for standard time zone and `"PDT"` for daylight standard time zone. One way to update the default values to their true values is to call [`tzset()`](tzset.md) before calling `_get_tzname`. Some functions that call `tzset()` are: `wcfstime`, `ftime`, `mktime`, and `localtime`. Calling one of those before calling `_get_tzname` will also update the default value to it's true value.
 
 > [!WARNING]
 > The time zone string is not guaranteed to be the same between OS releases. Official time zone names can and do change.
@@ -79,7 +79,7 @@ By default, this function's global state is scoped to the application. To change
 
 ## Example
 
-This sample calls **`_get_tzname`** to get the required buffer size to display the current Daylight standard time zone name, allocates a buffer of that size, calls **`_get_tzname`** again to load the name in the buffer, and prints it to the console.
+This sample calls `_get_tzname` to get the required buffer size to display the current Daylight standard time zone name, allocates a buffer of that size, calls `_get_tzname` again to load the name in the buffer, and prints it to the console.
 
 It also calls `_tzset()` to cause the OS to update the time zone information before calling `_get_tzname()`. Otherwise, the default values are used.
 
