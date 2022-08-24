@@ -70,7 +70,7 @@ The `_get_tzname` function retrieves the character string representation of the 
 
 The *`index`* values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values have undetermined results.
 
-Unless explicitly updated during runtime, the default values are returned: `"PST"` for standard time zone and `"PDT"` for daylight standard time zone. The time zone name is updated the first time it's needed by a call that requires time zone information, such as by a call to [`strftime`](strftime-wcsftime-strftime-l-wcsftime-l.md), [`ftime`](ftime-ftime32-ftime64.md), [`mktime`](mktime-mktime32-mktime64.md), and [`localtime`](localtime-localtime32-localtime64.md). If one of these functions is not called prior to calling `_get_tzname`, the default values are returned unless explicitly updated by a call to [`tzset()`](tzset.md).
+By default, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. The true time zone name is updated the first time it's needed by a function that requires time zone information, such as [`strftime`](strftime-wcsftime-strftime-l-wcsftime-l.md), [`ftime`](ftime-ftime32-ftime64.md), [`ftime_s`](ftime-s-ftime32-s-ftime64-s.md), [`mktime`](mktime-mktime32-mktime64.md), and [`localtime`](localtime-localtime32-localtime64.md). If a function that doesn't require time zone information isn't called prior to calling `_get_tzname`, the default values are returned unless you first explicitly update it. Which you could do with a call to [`tzset()`](tzset.md).
 
 > [!WARNING]
 > The time zone string is not guaranteed to be the same between OS releases. Official time zone names can and do change.
