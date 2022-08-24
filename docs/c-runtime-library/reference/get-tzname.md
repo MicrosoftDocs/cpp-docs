@@ -6,8 +6,8 @@ api_name: ["_get_tzname", "_o__get_tzname"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["`_get_tzname`", "get_tzname"]
-helpviewer_keywords: ["`_get_tzname` function", "time zones", "get_tzname function"]
+f1_keywords: ["_get_tzname", "get_tzname"]
+helpviewer_keywords: ["_get_tzname function", "time zones", "get_tzname function"]
 ---
 # `_get_tzname`
 
@@ -70,7 +70,7 @@ The `_get_tzname` function retrieves the character string representation of the 
 
 The *`index`* values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values have undetermined results.
 
-By default, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. The true time zone name is updated the first time it's needed by a function that requires time zone information, such as [`strftime`](strftime-wcsftime-strftime-l-wcsftime-l.md), [`ftime`](ftime-ftime32-ftime64.md), [`ftime_s`](ftime-s-ftime32-s-ftime64-s.md), [`mktime`](mktime-mktime32-mktime64.md), and [`localtime`](localtime-localtime32-localtime64.md). If a function that doesn't require time zone information isn't called prior to calling `_get_tzname`, the default values are returned unless you first explicitly update it. Which you could do with a call to [`tzset()`](tzset.md).
+By default, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. The true time zone name is updated the first time it's needed by a function that requires time zone information, such as [`strftime`](strftime-wcsftime-strftime-l-wcsftime-l.md), [`ftime`](ftime-ftime32-ftime64.md), [`ftime_s`](ftime-s-ftime32-s-ftime64-s.md), [`mktime`](mktime-mktime32-mktime64.md), [`localtime`](localtime-localtime32-localtime64.md), and others. If a function that doesn't require time zone information isn't called prior to calling `_get_tzname`, the default values are returned unless you first explicitly update them with one of the functions just mentioned, or a call to [`tzset()`](tzset.md). Also, if the `TZ` environment variable is set, it takes precedence over the time zone name reported by the OS. Even in this case, one of the functions mentioned above must be called before `_get_tzname` is called or the default time zone value will be returned. For more information about the `TZ` environment variable and the CRT, see [`_tzset`](tzset.md).
 
 > [!WARNING]
 > The time zone string is not guaranteed to be the same between OS releases. Official time zone names can and do change.
@@ -84,7 +84,7 @@ This sample calls `_get_tzname` to get the required buffer size to display the c
 It also calls `_tzset()` to cause the OS to update the time zone information before calling `_get_tzname()`. Otherwise, the default values are used.
 
 ```C
-// crt _get_tzname.c
+// crt_get_tzname.c
 // Compile by using: cl /W4 crt_get_tzname.c
 #include <stdio.h>
 #include <time.h>
