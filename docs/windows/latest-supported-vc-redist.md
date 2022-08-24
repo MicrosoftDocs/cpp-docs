@@ -71,8 +71,8 @@ These links download the latest supported en-US Microsoft Visual C++ Redistribut
 
 | Architecture | Version | Link |
 |--|:-:|-:|
-| X86 | 10.0.40219.325 | [vcredist_x86.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe) |
-| X64 | 10.0.40219.325 | [vcredist_x64.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe) |
+| X86 | 10.0.40219 | [vcredist_x86.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe) |
+| X64 | 10.0.40219 | [vcredist_x64.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe) |
 
 Download Redistributable files for other languages and architectures from:
 
@@ -85,8 +85,8 @@ Download Redistributable files for other languages and architectures from:
 
 | Architecture | Version | Link |
 |--|:-:|-:|
-| X86 | 9.0.30729.5677 | [vcredist_x86.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe) |
-| X64 | 9.0.30729.5677 | [vcredist_x64.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe) |
+| X86 | 9.0.30729.6161 | [vcredist_x86.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe) |
+| X64 | 9.0.30729.6161 | [vcredist_x64.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe) |
 
 Download Redistributable files for other languages and architectures from:
 
