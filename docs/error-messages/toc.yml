@@ -542,8 +542,12 @@ items:
           href: compiler-errors-1/compiler-error-c2094.md
         - name: Compiler error C2095
           href: compiler-errors-1/compiler-error-c2095.md
+        - name: Compiler error C2096
+          href: compiler-errors-1/compiler-error-c2096.md
         - name: Compiler error C2097
           href: compiler-errors-1/compiler-error-c2097.md
+        - name: Compiler error C2098
+          href: compiler-errors-1/compiler-error-c2098.md
         - name: Compiler error C2099
           href: compiler-errors-1/compiler-error-c2099.md
     - name: Compiler errors C2100 through C2199

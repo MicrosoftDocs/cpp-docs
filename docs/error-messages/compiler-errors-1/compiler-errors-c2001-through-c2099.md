@@ -112,9 +112,9 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C2093](compiler-error-c2093.md) | '*identifier1*': cannot be initialized using address of automatic variable '*identifier2*' |
 | [Compiler error C2094](compiler-error-c2094.md) | label '*identifier*' was undefined |
 | [Compiler error C2095](compiler-error-c2095.md) | '*function*': actual parameter has type 'void': parameter *number* |
-| Compiler error C2096 | '*identifier*': A data member cannot be initialized with a parenthesized initializer |
+| [Compiler error C2096](compiler-error-c2096.md) | '*identifier*': A data member cannot be initialized with a parenthesized initializer |
 | [Compiler error C2097](compiler-error-c2097.md) | illegal initialization |
-| Compiler error C2098 | unexpected token after data member '*identifier*' |
+| [Compiler error C2098](compiler-error-c2098.md) | unexpected token after data member '*identifier*' |
 | [Compiler error C2099](compiler-error-c2099.md) | initializer is not a constant |
 
 ## See also
