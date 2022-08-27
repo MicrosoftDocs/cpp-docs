@@ -24,7 +24,7 @@ You can view Microsoft developer content online. This content is updated regular
 
 You can also download and view the content locally in the offline Help Viewer. The offline documentation is organized by books of related content, which are also updated periodically. You can download the books you're interested in as they become available. For more information, see [Microsoft Help Viewer](/visualstudio/ide/microsoft-help-viewer).
 
-Many sections of the documentation are also available in PDF form. These sections have a **Download PDF** link below the table of contents on docs.microsoft.com.
+Many sections of the documentation are also available in PDF form. These sections have a **Download PDF** link below the table of contents on Microsoft Docs.
 
 ## Related sites
 
