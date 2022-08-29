@@ -1,7 +1,7 @@
 ---
 title: "Inline Functions (C++)"
 description: "The C++ inline keyword can be used to suggest inline functions to the compiler."
-ms.date: 05/17/2022
+ms.date: 08/24/2022
 f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp", "__inline", "_inline", "__forceinline", "_forceinline"]
 helpviewer_keywords: ["inline functions [C++], class members"]
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
@@ -57,7 +57,7 @@ int main()
 
 A given inline member function must be declared the same way in every compilation unit. This constraint causes inline functions to behave as if they were instantiated functions. Additionally, there must be exactly one definition of an inline function.
 
-A class member function defaults to external linkage unless a definition for that function contains the **`inline`** specifier. The preceding example shows that you don't have to declare these functions explicitly with the **`inline`** specifier. Using **`inline`** in the function definition causes it to be an inline function. However, it's not allowed to redeclare a function as **`inline`** after a call to that function.
+A class member function defaults to external linkage unless a definition for that function contains the **`inline`** specifier. The preceding example shows that you don't have to declare these functions explicitly with the **`inline`** specifier. Using **`inline`** in the function definition causes it to be an inline function. However, you can't redeclare a function as **`inline`** after a call to that function.
 
 ## `inline`, `__inline`, and `__forceinline`
 
@@ -67,9 +67,9 @@ The insertion, called *inline expansion* or *inlining*, occurs only if the compi
 
 The **`__forceinline`** keyword overrides the cost-benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using **`__forceinline`**. Indiscriminate use of **`__forceinline`** can result in larger code with only marginal performance gains or, in some cases, even performance losses (because of the increased paging of a larger executable, for example).
 
-The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that functions will be inlined. You can't force the compiler to inline a particular function, even with the **`__forceinline`** keyword. When compiling with **`/clr`**, the compiler won't inline a function if there are security attributes applied to the function.
+The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that functions will be inlined. You can't force the compiler to inline a particular function, even with the **`__forceinline`** keyword. When you compile with **`/clr`**, the compiler won't inline a function if there are security attributes applied to the function.
 
-The **`inline`** keyword is available only in C++. The **`__inline`** and **`__forceinline`** keywords are available in both C and C++. For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`**, and **`__forceinline`** unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`** and **`__forceinline`**, respectively, unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 The **`inline`** keyword tells the compiler that inline expansion is preferred. However, the compiler can create a separate instance of the function (instantiate) and create standard calling linkages instead of inserting the code inline. Two cases where this behavior can happen are:
 
