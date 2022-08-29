@@ -10,7 +10,13 @@ ms.assetid: 57908234-be7a-4ce9-b0a7-8b1ad621865e
 
 > 'identifier' : elements of partially initialized array must have a default constructor
 
+## Remarks
+
 Too few initializers were specified for an array of user-defined types or constants. If an explicit initializer and its corresponding constructor are not specified for an array member, a default constructor must be supplied.
+
+This compiler error is obsolete in Visual Studio 2022.
+
+## Example
 
 The following sample generates C2073. Source file `C2073.cpp`:
 
