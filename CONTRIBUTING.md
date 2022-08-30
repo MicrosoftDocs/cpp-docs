@@ -44,7 +44,7 @@ docs
             wstring-conversion.png
 ```
 
-**Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/master`.
+**Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/main`.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description, so the issue can be automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
@@ -52,9 +52,9 @@ The Visual Studio team will review your PR and let you know if the change looks 
 
 **Step 6:** Make any necessary updates to your branch as discussed with the team.
 
-The maintainers will merge your PR into the master branch once feedback has been applied and your change looks good.
+The maintainers will merge your PR into the main branch once feedback has been applied and your change looks good.
 
-On a certain cadence, we push all commits from master branch into the live branch and then you'll be able to see your contribution on [Microsoft Docs](https://docs.microsoft.com/cpp/).
+On a certain cadence, we push all commits from main branch into the live branch and then you'll be able to see your contribution on [Microsoft Docs](https://docs.microsoft.com/cpp/).
 
 ## DOs and DON'Ts
 
