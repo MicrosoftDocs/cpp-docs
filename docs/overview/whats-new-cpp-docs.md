@@ -268,8 +268,8 @@ This article lists major changes to the Microsoft C++ docs July 2021 through Oct
 
 ## Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See [Microsoft Docs contributor guide overview](/contribute/) if you'd like to learn how to contribute.
-
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide overview](/contribute/) if you'd like to learn how to contribute.
+s
 - [mohammad-ghasemi-dev](https://github.com/mohammad-ghasemi-dev) (5)
 - [Jaiganeshkumaran](https://github.com/Jaiganeshkumaran) - Jaiganesh Kumaran (2)
 - [workingjubilee](https://github.com/workingjubilee) - Jubilee (2)
@@ -546,7 +546,7 @@ Many articles were updated to prevent the machine translation of code elements.
 
 #### Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See [Microsoft Docs contributor guide overview](/contribute/) if you'd like to learn how to contribute.
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide overview](/contribute/) if you'd like to learn how to contribute.
 
 - [0xbadfca11](https://github.com/0xbadfca11) (1)
 - [bclehmann](https://github.com/bclehmann) - Benjamin Lehmann (1)

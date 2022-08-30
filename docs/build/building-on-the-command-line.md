@@ -251,7 +251,7 @@ Use the compiler (cl.exe) to compile and link source code files into apps, libra
 [`Link`](reference/linking.md)<br/>
 Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.
 
-When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in docs.microsoft.com, enter your query in the search box at the top of any article.
+When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in Microsoft Docs, enter your query in the search box at the top of any article.
 
 ## Command-line project management tools
 
