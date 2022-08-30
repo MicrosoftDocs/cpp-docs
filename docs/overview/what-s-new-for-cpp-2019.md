@@ -504,7 +504,7 @@ IncrediBuild is included as an optional component in the **Desktop development w
   - MFC class from ActiveX control
   - MFC class from Type Lib.
 
-  Sample code for these technologies is archived at Microsoft Docs and the VCSamples GitHub repository.
+  Sample code for these technologies is archived in Microsoft Docs and the VCSamples GitHub repository.
 
 - The Windows 8.1 Software Development Kit (SDK) is no longer available in the Visual Studio installer. We recommend you upgrade your C++ projects to the latest Windows SDK. If you have a hard dependency on 8.1, you can download it from the Windows SDK archive.
 
