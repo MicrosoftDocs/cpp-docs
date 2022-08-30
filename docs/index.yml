@@ -127,19 +127,19 @@ tools:
   title: Languages and frameworks
   items:
     - title: C++
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: cpp/index.yml
     - title: C
-      imageSrc: https://docs.microsoft.com/media/logos/logo_C.svg
+      imageSrc: /media/logos/logo_C.svg
       url: c-language/index.yml
     - title: Microsoft Assembler
       imageSrc: media/index/logo-asm.svg
       url: intrinsics/index.yml
     - title: C++/CX for Windows Runtime
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: cppcx/visual-c-language-reference-c-cx.md
     - title: C++/CLI for .NET
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md
     - title: Active Template Library (ATL)
       imageSrc: media/index/logo-atl.svg
@@ -148,7 +148,7 @@ tools:
       imageSrc: media/index/logo-mfc.svg
       url: mfc/mfc-desktop-applications.md
     - title: C++/WinRT for Windows Runtime
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: /windows/uwp/cpp-and-winrt-apis/
 
 # additionalContent section (optional)

@@ -61,7 +61,7 @@ Some of the more important OLE topics are covered in the following articles:
 
 - [OLE Background: MFC Implementation](ole-background-mfc-implementation.md)
 
-For general OLE information not found in the above articles, [search for OLE](/search/?terms=ole) in Microsoft Docs.
+For general OLE information not found in the articles listed, [search for OLE](/search/?terms=ole) .
 
 ## See also
 

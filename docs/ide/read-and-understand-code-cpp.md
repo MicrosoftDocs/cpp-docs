@@ -85,7 +85,7 @@ Hover over a variable or function declaration, right-click, then choose **Peek D
 
 ## F1 Help
 
-Place the cursor on or just after any type, keyword or function and press **F1** to go directly to the relevant reference topic on docs.microsoft.com. **F1** also works on items in the error list, and in many dialog boxes.
+Place the cursor on or just after any type, keyword or function and press **F1** to go directly to the relevant reference topic on Microsoft Docs. **F1** also works on items in the error list and in many dialog boxes.
 
 ## Class View
 
