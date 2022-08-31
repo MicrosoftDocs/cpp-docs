@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 3) C4996"
 description: "Explains why Compiler warning C4996 happens, and describes what to do about it."
-ms.date: 07/09/2020
+ms.date: 08/30/2022
 f1_keywords: ["C4996"]
 helpviewer_keywords: ["C4996"]
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
@@ -16,6 +16,8 @@ Your code uses a function, class member, variable, or typedef that's marked *dep
 ## Remarks
 
 Many functions, member functions, template functions, and global variables in Visual Studio libraries are *deprecated*. Some, such as POSIX and Microsoft-specific functions, are deprecated because they now have a different preferred name. Some C runtime library functions are deprecated because they're insecure and have a more secure variant. Others are deprecated because they're obsolete. The deprecation messages usually include a suggested replacement for the deprecated function or global variable.
+
+The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enable-additional-security-checks.md) compiler option elevates this warning to an error.
 
 ## Turn off the warning
 

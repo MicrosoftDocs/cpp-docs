@@ -1,16 +1,24 @@
 ---
 description: "Learn more about: Compiler Warning (level 1) C4533"
 title: "Compiler Warning (level 1) C4533"
-ms.date: "11/04/2016"
+ms.date: 08/30/2022
 f1_keywords: ["C4533"]
 helpviewer_keywords: ["C4533"]
 ms.assetid: 359fecda-d540-46e5-b214-dbabe9ef50d2
 ---
 # Compiler Warning (level 1) C4533
 
-initialization of 'variable' is skipped by 'instruction'
+> initialization of '*variable*' is skipped by '*instruction*'
 
-An instruction in your program changed the flow of control, such that, an instruction that initialized a variable was not executed. The following sample generates C4533:
+## Remarks
+
+An instruction in your program changed the flow of control, so an instruction that initialized a variable wasn't executed.
+
+The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enable-additional-security-checks.md) compiler option elevates this warning to an error.
+
+## Example
+
+The following sample generates C4533. To resolve the issue, move the initialization before the jump instruction or after the target of the jump.
 
 ```cpp
 // C4533.cpp

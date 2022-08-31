@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /arch (ARM64)"
 title: "/arch (ARM64)"
-ms.date: 06/30/2022
+ms.date: 08/30/2022
 ---
 # `/arch` (ARM64)
 
@@ -9,16 +9,18 @@ Specifies the architecture for code generation on ARM64. For more information on
 
 ## Syntax
 
-> **`/arch:`**\[**`armv8.0`**|**`armv8.8`**]
+> **`/arch:`**\[**`armv8.0`**-**`armv8.8`**]
 
 ## Arguments
 
-**`/arch:armv8.0`** or **`/arch:armv8.8`**\
+**`/arch:armv8.0`** through **`/arch:armv8.8`**\
 Optional. Specifies minimum CPU extension requirements for ARMv8.x-A. The default is **`/arch:armv8.0`**.
 
 ## Remarks
 
-The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. For more information, see [Predefined Macros](../../preprocessor/predefined-macros.md).
+You may specify a CPU extension requirement from Armv8.0-A through Armv8.8-A. However, depending on your version of Visual Studio, the compiler may not yet generate instructions from all feature sets required by the extension level you specify. For example, **`/arch:armv8.1`** allows the `_Interlocked*` intrinsic functions to use the appropriate atomic instruction that was introduced with the ARMv8.1 extension, FEAT_LSE, but compiler support requires Visual Studio 2022 version 17.2 or later.
+
+The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
 
 When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **`/arch`** has no effect on code generation for managed functions. **`/arch`** only affects code generation for native functions.
 
@@ -28,7 +30,7 @@ When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. In the **Additional options** box, add *`/arch:armv8.0`* or *`/arch:armv8.8`*. Choose **OK** to save your changes.
+1. In the **Additional options** box, add *`/arch:armv8.0`* or higher. Choose **OK** to save your changes.
 
 ### To set this compiler option programmatically
 
