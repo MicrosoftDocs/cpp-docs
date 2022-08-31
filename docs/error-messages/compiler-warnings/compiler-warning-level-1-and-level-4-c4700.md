@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler Warning (level 1 and level 4) C4700"
 title: "Compiler Warning (level 1 and level 4) C4700"
-ms.date: "02/21/2018"
+ms.date: 08/30/2022
 f1_keywords: ["C4700"]
 helpviewer_keywords: ["C4700"]
 ms.assetid: 2da0deb4-77dd-4b05-98d3-b78d74ac4ca7
@@ -10,13 +10,17 @@ ms.assetid: 2da0deb4-77dd-4b05-98d3-b78d74ac4ca7
 
 > uninitialized local variable '*name*' used
 
-The local variable *name* has been *used*, that is, read from, before it has been assigned a value. In C and C++, local variables are not initialized by default. Uninitialized variables can contain any value, and their use leads to undefined behavior. Warning C4700 almost always indicates a bug that can cause unpredictable results or crashes in your program.
+## Remarks
 
-To fix this issue, you can initialize local variables when they are declared, or assign a value to them before they are used. A function can be used to initialize a variable that's passed as a reference parameter, or when its address is passed as a pointer parameter.
+The local variable *name* has been *used*, that is, read from, before it has been assigned a value. In C and C++, local variables aren't initialized by default. Uninitialized variables can contain any value, and their use leads to undefined behavior. Warning C4700 almost always indicates a bug that can cause unpredictable results or crashes in your program.
+
+To fix this issue, you can initialize local variables when they're declared, or assign a value to them before they're used. A function can be used to initialize a variable that's passed as a reference parameter, or when its address is passed as a pointer parameter.
+
+The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enable-additional-security-checks.md) compiler option elevates this warning to an error.
 
 ## Example
 
-This sample generates C4700 when variables t, u, and v are used before they are initialized, and shows the kind of garbage value that can result. Variables x, y, and z do not cause the warning, because they are initialized before use:
+This sample generates C4700 when variables `t`, `u`, and `v` are used before they're initialized, and shows the kind of garbage value that can result. Variables `x`, `y`, and `z` don't cause the warning, because they're initialized before use:
 
 ```cpp
 // c4700.cpp
@@ -46,7 +50,7 @@ int main()
 }
 ```
 
-When this code is run, t, u, and v are uninitialized, and the output for s is unpredictable:
+When this code is run, `t`, `u`, and `v` are uninitialized, and the output for `s` is unpredictable:
 
 ```Output
 Value in s: 37816963
