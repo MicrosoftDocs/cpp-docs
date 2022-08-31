@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler Warning (Level 1) C4789"
 title: "Compiler Warning (Level 1) C4789"
-ms.date: "03/25/2019"
+ms.date: 08/30/2022
 f1_keywords: ["C4789"]
 helpviewer_keywords: ["C4789"]
 ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
@@ -18,11 +18,11 @@ ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
 
 The warning occurs if the copy uses the intrinsic form of one of these CRT functions:
 
-- [strcpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)
+- [`strcpy`](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)
 
-- [memset](../../c-runtime-library/reference/memset-wmemset.md)
+- [`memset`](../../c-runtime-library/reference/memset-wmemset.md)
 
-- [memcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md), [wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)
+- [`memcpy`](../../c-runtime-library/reference/memcpy-wmemcpy.md), [`wmemcpy`](../../c-runtime-library/reference/memcpy-wmemcpy.md)
 
 The warning also appears when you cast a parameter to a larger data type, and then make a copy assignment from an lvalue reference.
 
@@ -35,7 +35,9 @@ Visual C++ might generate this warning for a code path that never executes. You 
 #pragma warning( pop )
 ```
 
-This idiom keeps Visual C++ from generating the warning for that specific block of code. The `#pragma warning(push)` preserves the existing state before `#pragma warning(disable: 4789)` changes it. The `#pragma warning(pop)` restores the pushed state, and removes the effects of the `#pragma warning(disable:4789)`. For more information about the C++ preprocessor directive `#pragma`, see [warning](../../preprocessor/warning.md) and [Pragma Directives and the __Pragma Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+This idiom keeps Visual C++ from generating the warning for that specific block of code. The `#pragma warning(push)` preserves the existing state before `#pragma warning(disable: 4789)` changes it. The `#pragma warning(pop)` restores the pushed state, and removes the effects of the `#pragma warning(disable:4789)`. For more information about the C++ preprocessor directive `#pragma`, see [`warning`](../../preprocessor/warning.md) and [Pragma Directives and the `__Pragma` Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+
+The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enable-additional-security-checks.md) compiler option elevates this warning to an error.
 
 ## Examples
 

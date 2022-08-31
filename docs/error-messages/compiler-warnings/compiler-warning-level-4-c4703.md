@@ -1,16 +1,20 @@
 ---
 description: "Learn more about: Compiler Warning (level 4) C4703"
 title: "Compiler Warning (level 4) C4703"
-ms.date: "11/04/2016"
+ms.date: 08/30/2022
 f1_keywords: ["C4703"]
 helpviewer_keywords: ["C4703"]
 ms.assetid: 5dad454e-69e3-4931-9168-050a861c05f8
 ---
 # Compiler Warning (level 4) C4703
 
-Potentially uninitialized local pointer variable 'name' used
+> Potentially uninitialized local pointer variable 'name' used
 
-The local pointer variable *name* might have been used without being assigned a value. This could lead to unpredictable results.
+## Remarks
+
+The local pointer variable *name* might have been used without being assigned a value. This access could lead to unpredictable results.
+
+The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enable-additional-security-checks.md) compiler option elevates this warning to an error.
 
 ## Example
 
@@ -65,5 +69,5 @@ int main()
 
 ## See also
 
-[Compiler Warning (level 4) C4701](../../error-messages/compiler-warnings/compiler-warning-level-4-c4701.md)<br/>
-[Warnings, /sdl, and improving uninitialized variable detection](https://www.microsoft.com/security/blog/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/)
+[Compiler Warning (level 4) C4701](../../error-messages/compiler-warnings/compiler-warning-level-4-c4701.md)\
+[Warnings, `/sdl`, and improving uninitialized variable detection](https://www.microsoft.com/security/blog/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/)
