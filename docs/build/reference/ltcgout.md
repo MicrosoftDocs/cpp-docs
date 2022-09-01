@@ -7,20 +7,20 @@ helpviewer_keywords: ["Name link-time code generation file in C++ linker", "/LTC
 ---
 # `/LTCGOUT` (Name LTCG incremental object file)
 
-The **`/LTCGOUT`** option tells the linker where to put the intermediate *`.iobj`* object file for incremental link-time code generation (**`/LTCG:INCREMENTAL`**).
+The **`/LTCGOUT`** linker option tells the linker where to put the intermediate *`.iobj`* object file for incremental link-time code generation (**`/LTCG:INCREMENTAL`**).
 
 ## Syntax
 
-> **`/LTCGOUT`***`pathname`*
+> **`/LTCGOUT:`***`pathname`*
 
 ### Arguments
 
 *`pathname`*\
-The destination directory and filename for the generated *`.iobj`* file. If this option isn't specified when **`/LTCG:INCREMENTAL`** is used, the filename is created by appending *`.iobj`* to the target base filename.
+The destination directory and filename for the generated *`.iobj`* file. If the **`/LTCGOUT`** option isn't specified when **`/LTCG:INCREMENTAL`** is used, the filename is created by appending *`.iobj`* to the target base filename.
 
 ## Remarks
 
-The **`/LTCGOUT`** option tells the linker the path and filename to use for the intermediate *`.iobj`* object file when you specify [`/LTCG:INCREMENTAL`](./ltcg-link-time-code-generation.md). If you remove the **`/LTCG:INCREMENTAL`** option from your project, you should also remove any **`/LTCGOUT`** option.
+The **`/LTCGOUT`** linker option tells the linker the path and filename to use for the intermediate *`.iobj`* object file when you specify [`/LTCG:INCREMENTAL`](./ltcg-link-time-code-generation.md). If you remove the **`/LTCG:INCREMENTAL`** option from your project, you should also remove any **`/LTCGOUT`** option.
 
 ### To set this compiler option in the Visual Studio development environment
 
