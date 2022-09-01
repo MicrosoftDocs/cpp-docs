@@ -11,12 +11,12 @@ The **`/LTCGOUT`** linker option tells the linker where to put the intermediate 
 
 ## Syntax
 
-> **`/LTCGOUT:`***`pathname`*
+> **`/LTCGOUT:`**\[*`pathname`*]
 
 ### Arguments
 
 *`pathname`*\
-The destination directory and filename for the generated *`.iobj`* file. If the **`/LTCGOUT`** option isn't specified when **`/LTCG:INCREMENTAL`** is used, the filename is created by appending *`.iobj`* to the target base filename.
+The optional destination directory and filename for the generated *`.iobj`* file. If the **`/LTCGOUT`** option isn't specified when **`/LTCG:INCREMENTAL`** is used, the filename is created by appending *`.iobj`* to the target base filename. If the **`/LTCGOUT`** option is specified with an empty *`pathname`* when **`/LTCG:INCREMENTAL`** isn't used, no *`.iobj`* file is generated.
 
 ## Remarks
 
