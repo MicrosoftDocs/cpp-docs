@@ -989,6 +989,8 @@ items:
               href: ../build/reference/linkreprotarget.md
             - name: /LTCG (Link-time code generation)
               href: ../build/reference/ltcg-link-time-code-generation.md
+            - name: /LTCGOUT (Name LTCG .iobj file)
+              href: ../build/reference/ltcgout.md
             - name: /MACHINE (Specify target platform)
               href: ../build/reference/machine-specify-target-platform.md
             - name: /MANIFEST (Create side-by-side assembly manifest)
