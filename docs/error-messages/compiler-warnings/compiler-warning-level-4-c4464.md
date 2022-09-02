@@ -21,13 +21,13 @@ This warning is new in Visual Studio 2015 Update 1, and is off by default. Use [
 
 Source code files that use '..' path segments can trigger this warning when the **/Wall** option is specified:
 
-Given this code layout:
+Given this code:
 ```cpp
 // proj\headers\C4426.h
-// some header stuff
+// ... some header contents ... 
 ```
 ```cpp
-// proj/src\a.cpp
+// proj\src\a.cpp
 #include "..\headers\C4426.h"  // emits warning C4464
 
 // To fix this issue, specify only the header file name, and add either
