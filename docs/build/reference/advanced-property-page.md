@@ -1,7 +1,7 @@
 ---
 description: "Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects."
 title: "Advanced Property Page (Project)"
-ms.date: 11/22/2021
+ms.date: 08/31/2022
 f1_keywords: ["VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PreferredToolArchitecture", "VC.Project.VCConfiguration.UseDebugLibraries", "VC.Project.VCConfiguration.EnableUnitySupport", "VC.Project.VCConfiguration.CopyLocalDeploymentContent", "VC.Project.VCConfiguration.CopyLocalProjectReference", "VC.Project.VCConfiguration.CopyLocalDebugSymbols", "VC.Project.VCConfiguration.CopyCppRuntimeToOutputDir", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCConfiguration.VCToolsVersion", "VC.Project.VCConfiguration.LLVMToolsVersion", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.TargetFrameworkVersion", "VC.Project.VCConfiguration.EnableManagedIncrementalBuild", "VC.Project.VCConfiguration.ManagedAssembly"]
 ---
 # Advanced Property Page
@@ -50,7 +50,7 @@ Specifies whether to use the x86 or x64 build tools.
 
 ### Use Debug Libraries
 
-Specifies whether to create a Debug or Release build.
+Specifies whether to create a Debug or Release build. Despite the name, **Use Debug Libraries** is a build system-specific property that is effectively shorthand for "Make a Debug build" or "Make a Release build". It sets several compiler and linker properties for Debug or Release builds, including the library settings. You can use it to create Debug or Release configurations for a new platform or in a new template. We don't recommend you change this property in an existing configuration. Use the individual compiler and linker properties instead.
 
 ### Enable Unity (JUMBO) build
 
