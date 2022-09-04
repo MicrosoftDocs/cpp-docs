@@ -42,7 +42,7 @@ int main()
     // Member initialization (in order of declaration):
     TempData td{ 45978, time(&time_to_set), 28.9, 37.0, 16.7 };
 
-    // Default initialization = {0,0,0,0,0}
+    // Value initialization = {0,0,0,0,0}
     TempData td_default{};
 
     // Uninitialized = if used, emits warning C4700 uninitialized local variable
