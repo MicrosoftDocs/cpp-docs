@@ -72,7 +72,7 @@ The following table summarizes the modes that are used for various **`ccs`** fla
 
 | ccs flag | No BOM (or new file) | BOM: UTF-8 | BOM: UTF-16 |
 |--|--|--|--|
-| **`UNICODE`** | **`UTF-16LE`** | *`*UTF-8`** | **`UTF-16LE`** |
+| **`UNICODE`** | **`UTF-16LE`** | **`*UTF-8`** | **`UTF-16LE`** |
 | **`UTF-8`** | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
 | **`UTF-16LE`** | **`UTF-16LE`** | **`UTF-8`** | **`UTF-16LE`** |
 
