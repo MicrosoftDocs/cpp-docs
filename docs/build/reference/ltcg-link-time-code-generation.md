@@ -1,7 +1,7 @@
 ---
 title: "/LTCG (Link-time code generation)"
 description: "The MSVC linker option /LTCG enables link-time code generation for whole-program optimization."
-ms.date: 07/08/2020
+ms.date: 08/31/2022
 f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization"]
 helpviewer_keywords: ["link-time code generation in C++ linker", "/LTCG linker option", "-LTCG linker option", "LTCG linker option"]
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
@@ -76,7 +76,7 @@ The rest of this article discusses the link-time code generation done by **`/LTC
 
 The linker invokes link-time code generation if it's passed a module that was compiled by using **`/GL`** or an MSIL module (see [`.netmodule` Files as Linker Input](netmodule-files-as-linker-input.md)). If you don't explicitly specify **`/LTCG`** when you pass **`/GL`** or MSIL modules to the linker, the linker eventually detects this situation and restarts the link by using **`/LTCG`**. Explicitly specify **`/LTCG`** when you pass **`/GL`** and MSIL modules to the linker for the fastest possible build performance.
 
-For even faster performance, use **`/LTCG:INCREMENTAL`**. This option tells the linker to reoptimize only the files affected by a source file change, instead of the entire project. This option can significantly reduce the link time required. This option isn't the same option as [incremental linking](incremental-link-incrementally.md).
+For even faster performance, use **`/LTCG:INCREMENTAL`**. This option tells the linker to reoptimize only the files affected by a source file change, instead of the entire project. This option can significantly reduce the link time required. This option isn't the same option as [incremental linking](incremental-link-incrementally.md). If you remove the **`/LTCG:INCREMENTAL`** option, also remove any [`/LTCGOUT`](./ltcgout.md) option to improve build times and disk utilization.
 
 **`/LTCG`** isn't valid for use with [`/INCREMENTAL`](incremental-link-incrementally.md).
 
@@ -101,7 +101,7 @@ Using **`/LTCG`** and **`/O2`** causes double-alignment optimization.
 
 If **`/LTCG`** and **`/O1`** are specified, double alignment isn't performed. If most of the functions in an application are compiled for speed, with a few functions compiled for size (for example, by using the [`optimize`](../../preprocessor/optimize.md) pragma), the compiler double-aligns the functions that are optimized for size if they call functions that require double alignment.
 
-If the compiler can identify all of the call sites of a function, the compiler ignores explicit calling-convention modifiers on a function and tries to optimize the function's calling convention:
+If the compiler can identify all of the call sites of a function, the compiler ignores explicit calling-convention modifiers, and tries to optimize the function's calling convention:
 
 - pass parameters in registers
 
