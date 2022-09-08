@@ -42,8 +42,9 @@ int main()
     // Member initialization (in order of declaration):
     TempData td{ 45978, time(&time_to_set), 28.9, 37.0, 16.7 };
 
-    // Default initialization = {0,0,0,0,0}
-    TempData td_default{};
+    // When there's no constructor, an empty brace initializer does
+    // value initialization = {0,0,0,0,0}
+    TempData td_emptyInit{};
 
     // Uninitialized = if used, emits warning C4700 uninitialized local variable
     TempData td_noInit;
@@ -55,7 +56,7 @@ int main()
 }
 ```
 
-When a `class` or `struct` has no constructor, you provide the list elements in the order that the members are declared in the `class`. If the `class` has a constructor, provide the elements in the order of the parameters. If a type has a default constructor, either implicitly or explicitly declared, you can use default brace initialization (with empty braces). For example, the following `class` may be initialized by using both default and non-default brace initialization:
+When a `class` or `struct` has no constructor, you provide the list elements in the order that the members are declared in the `class`. If the `class` has a constructor, provide the elements in the order of the parameters. If a type has a default constructor, either implicitly or explicitly declared, you can use brace initialization with empty braces to invoke it. For example, the following `class` may be initialized by using both empty and non-empty brace initialization:
 
 ```cpp
 #include <string>
@@ -106,7 +107,7 @@ int main()
 }
 ```
 
-If the default constructor is explicitly declared but marked as deleted, default brace initialization can't be used:
+If the default constructor is explicitly declared but marked as deleted, empty brace initialization can't be used:
 
 ```cpp
 class class_f {
