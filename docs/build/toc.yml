@@ -965,14 +965,16 @@ items:
               href: ../build/reference/ignore-ignore-specific-warnings.md
             - name: /IGNOREIDL (Don't process attributes into MIDL)
               href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
-            - name: /INFERASANLIBS (Use inferred sanitizer libs)
-              href: ../build/reference/inferasanlibs.md
+            - name: /ILK (Name incremental database file)
+              href: ../build/reference/ilk-name-incremental-database-file.md
             - name: /IMPLIB (Name import library)
               href: ../build/reference/implib-name-import-library.md
             - name: /INCLUDE (Force symbol references)
               href: ../build/reference/include-force-symbol-references.md
             - name: /INCREMENTAL (Link incrementally)
               href: ../build/reference/incremental-link-incrementally.md
+            - name: /INFERASANLIBS (Use inferred sanitizer libs)
+              href: ../build/reference/inferasanlibs.md
             - name: /INTEGRITYCHECK (Require signature check)
               href: ../build/reference/integritycheck-require-signature-check.md
             - name: /KEYCONTAINER (Specify a key container to sign an assembly)
