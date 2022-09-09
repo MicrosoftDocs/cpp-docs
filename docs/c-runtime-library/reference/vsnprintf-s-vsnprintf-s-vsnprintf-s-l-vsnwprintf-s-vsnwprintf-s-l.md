@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
 title: "vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
-ms.date: 09/06/2022
+ms.date: 09/09/2022
 api_name: ["_vsnwprintf_s", "_vsnwprintf_s_l", "_vsnprintf_s", "vsnprintf_s", "_vsnprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -134,6 +134,17 @@ The versions of these functions with the **`_l`** suffix are identical except th
 > To ensure that there is room for the terminating null, be sure that *`count`* is strictly less than the buffer length, or use **`_TRUNCATE`**.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+> [!Tip]
+> If you get an undefined external `_vsnprintf_s` error, ensure that you are linking the appropriate universal CRT library as follows:
+>> | Linker switch | Description | Library to link against |
+>> |--|--|--|
+>> | [/MD](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread library | `ucrt.lib` |
+>> | [/MDd](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread debug library | `ucrtd.lib` |
+>> | [/MT](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread static library | `libucrt.lib` |
+>> | [/MTd](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread debug static library | `libucrtd.lib` |
+
+For more information about handling upgrade issues, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md))
 
 ### Generic-Text Routine Mappings
 
