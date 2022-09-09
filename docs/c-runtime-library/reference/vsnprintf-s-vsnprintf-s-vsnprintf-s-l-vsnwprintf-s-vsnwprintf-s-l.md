@@ -136,15 +136,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 > [!Tip]
-> If you get an undefined external `_vsnprintf_s` error, ensure that you are linking the appropriate universal CRT library as follows:
->> | Linker switch | Description | Library to link against |
->> |--|--|--|
->> | [/MD](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread library | `ucrt.lib` |
->> | [/MDd](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread debug library | `ucrtd.lib` |
->> | [/MT](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread static library | `libucrt.lib` |
->> | [/MTd](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread debug static library | `libucrtd.lib` |
-
-For more information about upgrade issues, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md).
+> If you get an undefined external `_vsnprintf_s` error and are using the Universal C Runtime, add `legacy_stdio_definitions.lib` to the set of libraries to link with. The Universal C Runtime doesn't export this function directly and is instead defined inline in `<stdio.h>`. For more information, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md#libraries).
 
 ### Generic-Text Routine Mappings
 
