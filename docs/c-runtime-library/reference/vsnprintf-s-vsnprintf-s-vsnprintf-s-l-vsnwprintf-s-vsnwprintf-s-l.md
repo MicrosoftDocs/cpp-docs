@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
 title: "vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
-ms.date: "3/9/2021"
+ms.date: 09/09/2022
 api_name: ["_vsnwprintf_s", "_vsnwprintf_s_l", "_vsnprintf_s", "vsnprintf_s", "_vsnprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -71,25 +71,25 @@ int _vsnwprintf_s(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Storage location for output.
 
-*`sizeOfBuffer`*<br/>
+*`sizeOfBuffer`*\
 The size of the *`buffer`* for output, as the character count.
 
-*`count`*<br/>
+*`count`*\
 Maximum number of characters to write (not including the terminating null), or [`_TRUNCATE`](../../c-runtime-library/truncate.md).
 
-*`format`*<br/>
+*`format`*\
 Format specification.
 
-*`argptr`*<br/>
+*`argptr`*\
 Pointer to list of arguments.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
-For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+For more information, see [Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return Value
 
@@ -135,6 +135,9 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
+> [!Tip]
+> If you get an undefined external `_vsnprintf_s` error and are using the Universal C Runtime, add `legacy_stdio_definitions.lib` to the set of libraries to link with. The Universal C Runtime doesn't export this function directly and is instead defined inline in `<stdio.h>`. For more information, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md#libraries).
+
 ### Generic-Text Routine Mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
@@ -152,7 +155,7 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -188,9 +191,9 @@ nSize: -1, buff: Hi there!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`vprintf` Functions](../../c-runtime-library/vprintf-functions.md)<br/>
-[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)<br/>
+[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[`vprintf` Functions](../../c-runtime-library/vprintf-functions.md)\
+[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)\
