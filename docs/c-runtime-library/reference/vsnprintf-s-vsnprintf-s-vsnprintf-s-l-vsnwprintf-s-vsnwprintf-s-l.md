@@ -144,7 +144,7 @@ In C++, using these functions is simplified by template overloads; the overloads
 >> | [/MT](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread static library | `libucrt.lib` |
 >> | [/MTd](/cpp/build/reference/md-mt-ld-use-run-time-library.md) | multithread debug static library | `libucrtd.lib` |
 
-For more information about handling upgrade issues, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md))
+For more information about upgrade issues, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md).
 
 ### Generic-Text Routine Mappings
 
@@ -163,7 +163,7 @@ For more information about handling upgrade issues, see [Overview of potential u
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
