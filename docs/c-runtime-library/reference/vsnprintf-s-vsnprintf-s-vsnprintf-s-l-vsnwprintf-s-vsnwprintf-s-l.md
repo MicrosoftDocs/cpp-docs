@@ -136,7 +136,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 > [!Tip]
-> If you get an undefined external `_vsnprintf_s` error and are using the Universal C Runtime, add `legacy_stdio_definitions.lib` to the set of libraries to link with. The Universal C Runtime doesn't export this function directly and is instead defined inline in `<stdio.h>`. For more information, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md#libraries).
+> If you get an undefined external `_vsnprintf_s` error and are using the Universal C Runtime, add `legacy_stdio_definitions.lib` to the set of libraries to link with. The Universal C Runtime doesn't export this function directly and is instead defined inline in `<stdio.h>`. For more information, see [Overview of potential upgrade issues](/cpp/porting/overview-of-potential-upgrade-issues-visual-cpp.md#libraries) and [Visual Studio 2015 Conformance Changes](/cpp/porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ### Generic-Text Routine Mappings
 
