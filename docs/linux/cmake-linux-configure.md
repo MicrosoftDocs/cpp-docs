@@ -125,11 +125,11 @@ If you're targeting Windows Subsystem for Linux (WSL), you don't need to add a r
 
 To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar:
 
-![CMake Manage Configurations.](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
+![CMake configurations drop-down with Manage Configurations selected](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
 The **CMakeSettings.json** window appears.
 
-![Add configuration.](media/cmake-linux-configurations.png "Add a configuration to CMake settings")
+![CMake settings dialog with the plus button highlighted which adds the selected configuration: Linux-GCC-debug.](media/cmake-linux-configurations.png )
 
 Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-Debug** or **Linux-GCC-Release** if using GCC. Use the Clang variants if you're using the Clang/LLVM toolset.  Press **Select** and then **Ctrl+S** to save the configuration.
 

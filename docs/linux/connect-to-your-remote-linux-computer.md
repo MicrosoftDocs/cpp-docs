@@ -64,11 +64,11 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   ![Screenshot showing the Connection Manager dialog.](media/settings_connectionmanager.png)
+   ![Screenshot showing CrossPlatform > C++ > Connection Manager selected under options, and the Add button highlighted.](media/settings_connectionmanager.png)
 
    In either scenario, the **Connect to Remote System** window is displayed.
 
-   ![Screenshot showing the Connect to Remote System window.](media/connect.png)
+   ![Screenshot showing the Connect to Remote System window which has fields for the host name, port, user name, auth type, and password.](media/connect.png)
 
 1. Enter the following information:
 
@@ -90,7 +90,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
    If the connection fails, the entry boxes that need to be changed are outlined in red.
 
-   ![Screenshot showing a Connection Manager Error.](media/settings_connectionmanagererror.png)
+   ![Screenshot showing a Connection Manager Error. The host name and port fields are outlined in red to indicate an error.](media/settings_connectionmanagererror.png)
 
    If you use key files for authentication, make sure the target machine's SSH server is running and configured properly.
 
@@ -181,7 +181,7 @@ For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
    You can enable logging to help troubleshoot connection problems. On the menu bar, select **Tools > Options**. In the **Options** dialog, select **Cross Platform > Logging**:
 
-   ![Screenshot showing Remote Logging.](media/remote-logging-vs2019.png)
+   ![Screenshot showing the Remote Logging screen with options to enable logging, log file location, and a checkbox indicating whether to log to the "Cross Platform Logging pane in the output window.](media/remote-logging-vs2019.png)
 
    Logs include connections, all commands sent to the remote machine (their text, exit code and execution time), and all output from Visual Studio to the shell. Logging works for any cross-platform CMake project or MSBuild-based Linux project in Visual Studio.
 
@@ -199,13 +199,11 @@ For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
 The `rsync` command is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, you'll see this error when the download of remote headers for IntelliSense begins:
 
-![Screenshot showing a Headers Error.](media/port-forwarding-headers-error.png)
-
-
+![Screenshot showing an error that the SSH channel couldn't be opened, and a path to log file for more details.](media/port-forwarding-headers-error.png)
 
 `rsync` is also used by Visual Studio's CMake support to copy source files to the remote system. If you can't enable TCP port forwarding, you can use `sftp` as your remote copy sources method. `sftp` is often slower than `rsync`, but doesn't have a dependency on TCP port forwarding. You can manage your remote copy sources method with the `remoteCopySourcesMethod` property in the [CMake Settings Editor](../build/cmakesettings-reference.md#settings-for-cmake-linux). If TCP port forwarding is disabled on your remote system, you'll see an error in the CMake output window the first time it invokes `rsync`.
 
-![Screenshot showing an Rsync Error.](media/port-forwarding-copy-error.png)
+![Screenshot of the output window showing an Rsync Error that the SSH channel couldn't be opened.](media/port-forwarding-copy-error.png)
 
 `gdbserver` can be used for debugging on embedded devices. If you can't enable TCP port forwarding, then you must use `gdb` for all remote debugging scenarios. `gdb` is used by default when debugging projects on a remote system.
 
