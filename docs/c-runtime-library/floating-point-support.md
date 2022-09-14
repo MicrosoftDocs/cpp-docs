@@ -7,7 +7,7 @@ helpviewer_keywords: ["floating-point numbers, math routines", "math routines", 
 ---
 # Math and floating-point support
 
-The Universal C Runtime library (UCRT) provides many integral and floating-point math library functions, including all of those required by ISO C99. The floating-point functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 ulp of the correctly rounded result, though there may be cases where there is greater inaccuracy.
+The Universal C Runtime library (UCRT) provides many integral and floating-point math library functions, including all of those required by ISO C99. The floating-point functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 ulp (unit of least precision) of the correctly rounded result, though there may be cases where there is greater inaccuracy.
 
 For ISO C Standard 11 (C11) and later, the `<tgmath.h>` header, in addition to including `<math.h>` and `<complex.h>`, provides macros that invoke a corresponding math function based on the types of the parameters. See [Type-generic math](tgmath.md) for details.
 
