@@ -64,11 +64,11 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   ![Screenshot showing CrossPlatform > C++ > Connection Manager selected under options, and the Add button highlighted.](media/settings_connectionmanager.png)
+   ![Screenshot showing CrossPlatform > C plus plus > Connection Manager selected under options, and the Add button highlighted.](media/settings_connectionmanager.png)
 
    In either scenario, the **Connect to Remote System** window is displayed.
 
-   ![Screenshot showing the Connect to Remote System window which has fields for the host name, port, user name, auth type, and password.](media/connect.png)
+   ![Screenshot showing the Connect to Remote System window which has fields for host name, port, user name, authentication type, and password.](media/connect.png)
 
 1. Enter the following information:
 
@@ -90,7 +90,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
    If the connection fails, the entry boxes that need to be changed are outlined in red.
 
-   ![Screenshot showing a Connection Manager Error. The host name and port fields are outlined in red to indicate an error.](media/settings_connectionmanagererror.png)
+   ![Screenshot of the Connect to Remote System window with the host name and port fields outlined in red to indicate that they are incorrect.](media/settings_connectionmanagererror.png)
 
    If you use key files for authentication, make sure the target machine's SSH server is running and configured properly.
 
@@ -181,7 +181,7 @@ For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
    You can enable logging to help troubleshoot connection problems. On the menu bar, select **Tools > Options**. In the **Options** dialog, select **Cross Platform > Logging**:
 
-   ![Screenshot showing the Remote Logging screen with options to enable logging, log file location, and a checkbox indicating whether to log to the "Cross Platform Logging pane in the output window.](media/remote-logging-vs2019.png)
+   ![Screenshot of the Remote Logging screen with options to enable logging, log file location, and whether to log to the output window.](media/remote-logging-vs2019.png)
 
    Logs include connections, all commands sent to the remote machine (their text, exit code and execution time), and all output from Visual Studio to the shell. Logging works for any cross-platform CMake project or MSBuild-based Linux project in Visual Studio.
 

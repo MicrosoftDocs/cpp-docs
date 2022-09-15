@@ -2,7 +2,6 @@
 title: "Deploy, run, and debug your Linux MSBuild C++ project in Visual Studio"
 description: "Describes how to compile, execute, and debug code on the remote target from inside a MSBuild-based Linux C++ project in Visual Studio."
 ms.date: "08/08/2020"
-ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 ms.custom: intro-deployment
 ---
 # Deploy, run, and debug your Linux MSBuild project
@@ -56,11 +55,11 @@ There are several ways to interact with and debug your Linux project.
 
    When the remote target is available, you'll see it listed by either name or IP address.
 
-   ![Screenshot showing a Remote target.](media/remote_target.png)
+   ![Screenshot showing a Remote target IP address.](media/remote_target.png)
 
    If you haven't connected to the remote target yet, you'll see an instruction to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
 
-   ![Screenshot showing the Remote Architecture.](media/architecture.png)
+   ![Screenshot showing the Remote Architecture, which is x64.](media/architecture.png)
 
 1. Set a breakpoint by clicking in the left gutter of some code that you know will execute.
 
@@ -126,13 +125,13 @@ You can separate your remote build machine from your remote debug machine for bo
 
 By default, the remote debug machine is the same as the remote build machine (**Configuration Properties** > **General** > **Remote Build Machine**). To specify a new remote debug machine, right-click on the project in **Solution Explorer** and go to **Configuration Properties** > **Debugging** > **Remote Debug Machine**.  
 
-![Screenshot showing the Linux remote debug machine property in the Property Pages dialog.](media/linux-remote-debug-machine.png)
+![Screenshot showing the Linux remote debug machine property in the Property Pages dialog which displays the username, authentication type, and port.](media/linux-remote-debug-machine.png)
 
 The drop-down menu for **Remote Debug Machine** is populated with all established remote connections. To add a new remote connection, navigate to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or search for "Connection Manager" in **Quick Launch**. You can also specify a new remote deploy directory in the project's Property Pages (**Configuration Properties** > **General** > **Remote Deploy Directory**).
 
 By default, only the files necessary for the process to debug will be deployed to the remote debug machine. You can use **Solution Explorer** to configure which source files will be deployed to the remote debug machine. When you click on a source file, you'll see a preview of its File Properties directly below the Solution Explorer.
 
-![Screenshot showing the Linux deployable files specified in the Properties window.](media/linux-deployable-content.png)
+![Screenshot showing the properties of main.cpp with content = False highlighted.](media/linux-deployable-content.png)
 
 The **Content** property specifies whether the file will be deployed to the remote debug machine. You can disable deployment entirely by navigating to **Property Pages** > **Configuration Manager** and unchecking **Deploy** for the desired configuration.
 
@@ -159,7 +158,7 @@ In some cases, you may require more control over your project's deployment. For 
 
 For CMake projects that target a remote Linux machine, you can specify a new remote debug machine in launch.vs.json. By default, the value of "remoteMachineName" is synchronized with the "remoteMachineName" property in CMakeSettings.json, which corresponds to your remote build machine. These properties no longer need to match, and the value of "remoteMachineName" in launch.vs.json will dictate which remote machine is used for deploy and debug.
 
-![The CMake remote debug machine specified in the launch.vs.json file.](media/cmake-remote-debug-machine.png)
+![The CMake remote debug machine specified in the launch_schema.json file. remote Machine Name is specified as ${debugInfo . remoteMachineName}](media/cmake-remote-debug-machine.png)
 
 IntelliSense will suggest all a list of all established remote connections. You can add a new remote connection by navigating to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or searching for "Connection Manager" in **Quick Launch**.
 

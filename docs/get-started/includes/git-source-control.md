@@ -20,7 +20,7 @@ To associate your code with Git, you start by creating a new Git repository wher
 
 1. In the **Create a Git repository** dialog box, sign in to GitHub.
 
-    :::image type="content" source="../media/vs-2022/git-create-repo.png" alt-text="Screenshot of the Create a Git Repository dialog window where you can sign in to GitHub.":::
+    :::image type="content" source="../media/vs-2022/git-create-repo.png" alt-text="Screenshot of the Create a Git Repository dialog window where you create a new GitHub repository.":::
 
     The repository name auto-populates based on your folder location. By default, your new repository is private, which means you're the only one who can access it.
 
@@ -29,9 +29,9 @@ To associate your code with Git, you start by creating a new Git repository wher
 
 1. Select **Create and Push**.
 
-    After you create your repository, you see status details in the status bar.
+    After you create your repository, status details appear in the status bar.
 
-    :::image type="content" source="../media/vs-2022/git-new-private-repo-status-details.png" alt-text="Screenshot of the repo status bar that's below the Solution Explorer pane in Visual Studio.":::
+    :::image type="content" source="../media/vs-2022/git-new-private-repo-status-details.png" alt-text="Screenshot of the repo status bar located below the Visual Studio Solution Explorer pane, showing the branch name and number of outstanding changes.":::
 
     The first icon with the arrows shows how many outgoing/incoming commits are in your current branch. You can use this icon to pull any incoming commits or push any outgoing commits. You can also choose to view these commits first. To do so, select the icon, and then select **View Outgoing/Incoming**.
 
