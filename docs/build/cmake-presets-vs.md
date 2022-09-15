@@ -21,9 +21,9 @@ We recommend *`CMakePresets.json`* as an alternative to *`CMakeSettings.json`*. 
 
 ## Supported CMake and  *`CMakePresets.json`* versions
 
-Visual Studio supports version 2 or 3 for the *`CMakePresets.json`* and *`CMakeUserPresets.json`* files. You can update your file version by incrementing the version field in the root object. For an example and more information, see [`CMakePresets.json` format](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#format).
+The supported *`CMakePresets.json`* and *`CMakeUserPresets.json`* schema versions depend on your version of Visual Studio. Visual Studio 2019 version 16.10 and later support schema versions 2 and 3. Visual Studio 2022 version 17.4 preview 2 adds support for schema versions 4 and 5. You can update the version by changing the `"version"` field in the root object. For an example and more information, see [`CMakePresets.json` format](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#format).
 
-CMake version 3.20 or later is required when you're invoking CMake with *`CMakePresets.json`* (version 2), or CMake 3.21 or later (version 3), from the command line. However, Visual Studio reads and evaluates *`CMakePresets.json`* and *`CMakeUserPresets.json`* itself and doesn't invoke CMake directly with the `--preset` option. So, CMake version 3.20 or later isn't strictly required when you're building with *`CMakePresets.json`* inside Visual Studio. We recommend CMake version 3.14 or later at a minimum.
+CMake version 3.20 or later is required when you're invoking CMake with *`CMakePresets.json`* from the command line. However, Visual Studio reads and evaluates *`CMakePresets.json`* and *`CMakeUserPresets.json`* itself and doesn't invoke CMake directly with the `--preset` option. So, CMake version 3.20 or later isn't strictly required when you're building with *`CMakePresets.json`* inside Visual Studio. We recommend CMake version 3.14 or later at a minimum.
 
 ## <a name="enable-cmakepresets-json-integration"></a> Enable *`CMakePresets.json`* integration in Visual Studio
 
