@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getwch", "_getch", "_getwch"]
 helpviewer_keywords: ["characters, getting from console", "getch function", "_getwch function", "console, reading from", "_getch function", "getwch function"]
-ms.assetid: cc116be7-cff2-4274-970f-5e7b18ccc05c
 ---
 # `_getch`, `_getwch`
 
@@ -30,9 +29,9 @@ Returns the character read. There's no error return.
 
 ## Remarks
 
-The **`_getch`** and **`_getwch`** functions read a single character from the console without echoing the character. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.
+The **`_getch`** and **`_getwch`** functions read a single character from the console without echoing the character. None of these functions can be used to read CTRL+C. To read a function key or arrow key, each function must be called twice. The first call returns `0` or `0xE0`. The second call returns the [key scan code](/previous-versions/visualstudio/visual-studio-6.0/aa299374(v=vs.60)).
 
-These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [`_getch_nolock`, `_getwch_nolock`](getch-nolock-getwch-nolock.md).
+These functions lock the calling thread and so are thread-safe. For non-locking versions, see [`_getch_nolock`, `_getwch_nolock`](getch-nolock-getwch-nolock.md).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -89,8 +88,8 @@ Type 'Y' when finished typing keys: Y
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[`_getche`, `_getwche`](getche-getwche.md)<br/>
-[`_cgets`, `_cgetws`](../../c-runtime-library/cgets-cgetws.md)<br/>
-[`getc`, `getwc`](getc-getwc.md)<br/>
-[`_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)\
+[`_getche`, `_getwche`](getche-getwche.md)\
+[`_cgets`, `_cgetws`](../../c-runtime-library/cgets-cgetws.md)\
+[`getc`, `getwc`](getc-getwc.md)\
+[`_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
