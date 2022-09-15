@@ -104,7 +104,7 @@ The [Debugging](prop-pages/debugging-linux.md) property page for Visual Studio p
 <?xml version="1.0" encoding="utf-8"?>
 <SupplementalLaunchOptions>
     <AttachOptions>
-      <AttachOptionsForConnection lSOLibSearchPath="/home/user/solibs">
+      <AttachOptionsForConnection AdditionalSOLibSearchPath="/home/user/solibs">
         <ServerOptions MIDebuggerPath="C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\Common7\IDE\VC\Linux\bin\gdb\7.9\x86_64-linux-gnu-gdb.exe"
 ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\ConsoleApplication17.out"/>
         <SetupCommands>
@@ -125,13 +125,13 @@ You can separate your remote build machine from your remote debug machine for bo
 
 By default, the remote debug machine is the same as the remote build machine (**Configuration Properties** > **General** > **Remote Build Machine**). To specify a new remote debug machine, right-click on the project in **Solution Explorer** and go to **Configuration Properties** > **Debugging** > **Remote Debug Machine**.  
 
-![Screenshot showing the Linux remote debug machine property in the Property Pages dialog which displays the username, authentication type, and port.](media/linux-remote-debug-machine.png)
+![Screenshot showing the Linux remote debug machine property in the Property Pages dialog which shows the username, authentication type, and port.](media/linux-remote-debug-machine.png)
 
 The drop-down menu for **Remote Debug Machine** is populated with all established remote connections. To add a new remote connection, navigate to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or search for "Connection Manager" in **Quick Launch**. You can also specify a new remote deploy directory in the project's Property Pages (**Configuration Properties** > **General** > **Remote Deploy Directory**).
 
 By default, only the files necessary for the process to debug will be deployed to the remote debug machine. You can use **Solution Explorer** to configure which source files will be deployed to the remote debug machine. When you click on a source file, you'll see a preview of its File Properties directly below the Solution Explorer.
 
-![Screenshot showing the properties of main.cpp with content = False highlighted.](media/linux-deployable-content.png)
+![Screenshot showing the properties of the file main.cpp with the property content = False highlighted.](media/linux-deployable-content.png)
 
 The **Content** property specifies whether the file will be deployed to the remote debug machine. You can disable deployment entirely by navigating to **Property Pages** > **Configuration Manager** and unchecking **Deploy** for the desired configuration.
 
@@ -158,7 +158,7 @@ In some cases, you may require more control over your project's deployment. For 
 
 For CMake projects that target a remote Linux machine, you can specify a new remote debug machine in launch.vs.json. By default, the value of "remoteMachineName" is synchronized with the "remoteMachineName" property in CMakeSettings.json, which corresponds to your remote build machine. These properties no longer need to match, and the value of "remoteMachineName" in launch.vs.json will dictate which remote machine is used for deploy and debug.
 
-![The CMake remote debug machine specified in the launch_schema.json file. remote Machine Name is specified as ${debugInfo . remoteMachineName}](media/cmake-remote-debug-machine.png)
+![The CMake remote debug machine specified in the launch_schema.json file. The remote Machine Name is ${debugInfo . remoteMachineName}](media/cmake-remote-debug-machine.png)
 
 IntelliSense will suggest all a list of all established remote connections. You can add a new remote connection by navigating to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or searching for "Connection Manager" in **Quick Launch**.
 

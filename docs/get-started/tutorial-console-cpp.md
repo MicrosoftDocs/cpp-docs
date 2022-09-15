@@ -141,9 +141,9 @@ It's time to add some math logic.
 
    ![Screenshot of the Visual Studio 2019 Solution Explorer window displaying the Calculator Tutorial project.](./media/calc-vs2019-solution-explorer.png "Solution Explorer")
 
-   You should now have three tabs open in the editor: *`CalculatorTutorial.cpp`*, *Calculator.h*, and *`Calculator.cpp`*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
+   You should now have three tabs open in the editor: *`CalculatorTutorial.cpp`*, *`Calculator.h`*, and *`Calculator.cpp`*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
 
-1. In **Calculator.h**, remove the `Calculator();` and `~Calculator();` lines that were generated, since you won't need them here. Next, add the following line of code so the file now looks like this:
+1. In **`Calculator.h`**, remove the `Calculator();` and `~Calculator();` lines that were generated, since you won't need them here. Next, add the following line of code so the file now looks like this:
 
     ```cpp
     #pragma once
@@ -167,7 +167,7 @@ It's time to add some math logic.
 
    A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
 
-   ![Pop-up with definition of Calculate.](./media/calc-vs2019-pop-up-definition.png "Screenshot of a pop-up displaying the definition of Calculate.")
+   !["Screenshot of a pop-up displaying the definition of Calculate."](./media/calc-vs2019-pop-up-definition.png)
 
    Currently, it just returns 0.0. Let's change that. Press **Esc** to close the pop-up.
 
@@ -267,7 +267,7 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line, just after the user was asked for input. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
 
-   ![Screenshot of Visual Studio with a red dot on a line of code, representing a breakpoint.](./media/calc-vs2019-set-breakpoint.png "Set a breakpoint")
+   ![Screenshot of Visual Studio with a red dot to the left of a line of code, representing a breakpoint.](./media/calc-vs2019-set-breakpoint.png "Set a breakpoint")
 
    Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
@@ -289,7 +289,7 @@ Whenever you debug your code, you may notice that some new windows appear. These
 
 You can also just hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
 
-   ![Screenshot of Visual Studio showing a tooltip displaying the value of the variable oper, which is the character /.](./media/calc-vs2019-hover-tooltip.png "Hover to view current variable values")
+   ![Screenshot of a tooltip displaying the value of the variable oper, which is the character `/`.](./media/calc-vs2019-hover-tooltip.png "Hover to view current variable values")
 
 ### To continue debugging
 
@@ -438,7 +438,7 @@ The template for a new windows console application creates a simple C++ "Hello W
 
 1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
 
-   ![Screenshot of the Visual StudioDebug Console showing the output: Hello World!.](./media/calculator-hello-world-console.png "Start the project")
+   ![Screenshot of the Visual Studio Debug Console showing the output: Hello World!.](./media/calculator-hello-world-console.png "Start the project")
 
    A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to continue . . ." to give you a chance to see the output. Congratulations! You've created your first "Hello, world!" console app in Visual Studio!
 
@@ -494,7 +494,7 @@ Now let's turn the code in this template into a calculator app.
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then choose **Yes** to build your application. You should see a console window appear that displays the text specified in the code.
 
    :::image type="complex" source="./media/calculator-first-launch.gif" alt-text="Short video of running the calculator app.":::
-   Short video showing Debug > Start without debugging. A dialog asks whether to build because the project is out of date. The checkbox for Do not show this dialog again is selected. Yes is selected to build the project, the calculator project builds, and then launches in a Windows console window.
+   Short video showing Debug > Start without debugging. A dialog is visible that asks whether to build because the project is out of date. The checkbox for 'Do not show this dialog again' is selected. 'Yes' is selected to build the project, the calculator project builds, and then launches in a Windows console window.
    :::image-end:::
 
 1. Close the console window when you're done.
@@ -513,9 +513,9 @@ It's time to add some math logic.
 
    ![Screenshot of the Solution Explorer window displaying the Calculator Tutorial project.](./media/calculator-solution-explorer.png "Solution Explorer")
 
-   You should now have three tabs open in the editor: *`CalculatorTutorial.cpp`*, *Calculator.h*, and *`Calculator.cpp`*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
+   You should now have three tabs open in the editor: *`CalculatorTutorial.cpp`*, *`Calculator.h`*, and *`Calculator.cpp`*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
 
-1. In **Calculator.h**, remove the `Calculator();` and `~Calculator();` lines that were generated, since you won't need them here. Next, add the following line of code so the file now looks like this:
+1. In **`Calculator.h`**, remove the `Calculator();` and `~Calculator();` lines that were generated, since you won't need them here. Next, add the following line of code so the file now looks like this:
 
     ```cpp
     #pragma once
@@ -637,21 +637,21 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line, just after the user was asked for input. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
 
-   ![Short video of Visual Studio showing the user creating the red dot in the left of a line of code that represents a breakpoint.](./media/calculator-set-breakpoint.gif "Set a breakpoint")
+   ![Short video of Visual Studio showing the user setting a breakpoint which creates a red dot to the left of the line of code.](./media/calculator-set-breakpoint.gif "Set a breakpoint")
 
    Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
 1. Right-click the red dot that represents the breakpoint, and choose **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Choose the **Close** button when you're done. The condition is saved automatically.
 
    :::image type="complex" source="./media/calculator-conditional-breakpoint.gif" alt-text="Set a conditional breakpoint":::
-    Short video showing a right-click on the breakpoint on the line of code that reads result = c dot Calculate ( x, oper, y). Conditions... is selected in the dropdown which opens the breakpoint settings window. In the text box following the Conditional Expression and Is true dropdowns, the user enters y==0 && oper == '/', and then selects close to set the conditional breakpoint.
+    Short video showing a right-click on the breakpoint. The breakpoint is on the line of code that reads result = c dot Calculate ( x, oper, y). 'Conditions...' is selected in the dropdown which opens the breakpoint settings window. In the text box following the Conditional Expression and Is true dropdowns, the user enters y == 0 && oper == '/', and then selects close to set the conditional breakpoint.
     :::image-end:::
 
    Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
 
 1. To debug the program, press **F5**, or choose the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
 
-   ![Short video showing that the program paused at the conditional breakpoint.](./media/calculator-debug-conditional.gif "Pause at the conditional breakpoint")
+   ![Short video showing the program paused at the conditional breakpoint.](./media/calculator-debug-conditional.gif "Pause at the conditional breakpoint")
 
 ### Useful windows in the debugger
 
@@ -661,11 +661,11 @@ Whenever you debug your code, you may notice that some new windows appear. These
 
 To see all of the variables from that function, switch to the **Locals** window. You can actually modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we'll leave them alone.
 
-   ![Screenshot of the Locals window showing the values of the local variables.](./media/calculator-locals.png "The Locals window")
+   ![Screenshot of the Locals window showing the values of the function's local variables.](./media/calculator-locals.png "The Locals window")
 
 You can also just hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
 
-   ![Short video showing the tooltip that appears when you hover over a variable and displays the variables' value.](./media/calculator-hover-tooltip.gif "Hover to view current variable values")
+   ![Short video showing the tooltip that appears when you hover over a variable. The tooltip displays the variable's value.](./media/calculator-hover-tooltip.gif "Hover to view current variable values")
 
 ### To continue debugging
 
