@@ -12,7 +12,7 @@ Encapsulates the `DATE` data type that is used in OLE automation.
 
 ## Syntax
 
-```
+```cpp
 class COleDateTime
 ```
 
@@ -109,7 +109,7 @@ For more information about the `COleDateTime` and `COleDateTimeSpan` classes, se
 
 Comparison operators.
 
-```
+```cpp
 bool operator==(const COleDateTime& date) const throw();
 bool operator!=(const COleDateTime& date) const throw();
 bool operator<(const COleDateTime& date) const throw();
@@ -140,7 +140,7 @@ The operators **>=**, **\<=**, **>**, and **<**, will assert if the `COleDateTim
 
 Constructs a `COleDateTime` object.
 
-```
+```cpp
 COleDateTime() throw();
 COleDateTime(const VARIANT& varSrc) throw();
 COleDateTime(DATE dtSrc) throw();
@@ -242,7 +242,7 @@ For more information about the bounds for `COleDateTime` values, see the article
 
 Creates a formatted representation of the date/time value.
 
-```
+```cpp
 CString Format(DWORD dwFlags = 0,  LCID lcid = LANG_USER_DEFAULT) const;
 CString Format(LPCTSTR lpszFormat) const;
 CString Format(UINT nFormatID) const;
@@ -303,7 +303,7 @@ This form formats the value by using the format string which contains special fo
 
 Call this method to obtain the time in the `COleDateTime` object as a `DBTIMESTAMP` data structure.
 
-```
+```cpp
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
 ```
 
@@ -328,7 +328,7 @@ Stores the resulting time in the referenced *timeStamp* structure. The `DBTIMEST
 
 Call this method to obtain the time in the `COleDateTime` object as a `SYSTEMTIME` data structure.
 
-```
+```cpp
 bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 ```
 
@@ -351,7 +351,7 @@ For more information on the status information held in a `COleDateTime` object, 
 
 Call this method to obtain the time in the `COleDateTime` object as a `UDATE` data structure.
 
-```
+```cpp
 bool GetAsUDATE(UDATE& uDate) const throw();
 ```
 
@@ -372,7 +372,7 @@ A `UDATE` structure represents an "unpacked" date.
 
 Call this static member function to return the current date/time value.
 
-```
+```cpp
 static COleDateTime WINAPI GetCurrentTime() throw();
 ```
 
@@ -384,7 +384,7 @@ static COleDateTime WINAPI GetCurrentTime() throw();
 
 Gets the day of the month represented by this date/time value.
 
-```
+```cpp
 int GetDay() const throw();
 ```
 
@@ -420,7 +420,7 @@ For information on other member functions that query the value of this `COleDate
 
 Gets the day of the week represented by this date/time value.
 
-```
+```cpp
 int GetDayOfWeek() const throw();
 ```
 
@@ -456,7 +456,7 @@ For information on other member functions that query the value of this `COleDate
 
 Gets the day of the year represented by this date/time value.
 
-```
+```cpp
 int GetDayOfYear() const throw();
 ```
 
@@ -492,7 +492,7 @@ For information on other member functions that query the value of this `COleDate
 
 Gets the hour represented by this date/time value.
 
-```
+```cpp
 int GetHour() const throw();
 ```
 
@@ -528,7 +528,7 @@ For information on other member functions that query the value of this `COleDate
 
 Gets the minute represented by this date/time value.
 
-```
+```cpp
 int GetMinute() const throw();
 ```
 
@@ -564,7 +564,7 @@ See the example for [GetHour](#gethour).
 
 Gets the month represented by this date/time value.
 
-```
+```cpp
 int GetMonth() const throw();
 ```
 
@@ -600,7 +600,7 @@ See the example for [GetDay](#getday).
 
 Gets the second represented by this date/time value.
 
-```
+```cpp
 int GetSecond() const throw();
 ```
 
@@ -641,7 +641,7 @@ See the example for [GetHour](#gethour).
 
 Gets the status (validity) of a given `COleDateTime` object.
 
-```
+```cpp
 DateTimeStatus GetStatus() const throw();
 ```
 
@@ -653,7 +653,7 @@ Returns the status of this `COleDateTime` value. If you call `GetStatus` on a `C
 
 The return value is defined by the `DateTimeStatus` enumerated type, which is defined within the `COleDateTime` class.
 
-```
+```cpp
 enum DateTimeStatus
 {
    error = -1,
@@ -707,7 +707,7 @@ For more information about the bounds for `COleDateTime` values, see the article
 
 Gets the year represented by this date/time value.
 
-```
+```cpp
 int GetYear() const throw();
 ```
 
@@ -745,7 +745,7 @@ See the example for [GetDay](#getday).
 
 The underlying `DATE` structure for this `COleDateTime` object.
 
-```
+```cpp
 DATE m_dt;
 ```
 
@@ -760,7 +760,7 @@ For more information about the implementation of the `DATE` object, see the arti
 
 Contains the status of this `COleDateTime` object.
 
-```
+```cpp
 DateTimeStatus m_status;
 ```
 
@@ -775,7 +775,7 @@ The type of this data member is the enumerated type `DateTimeStatus`, which is d
 
 Copies a `COleDateTime` value.
 
-```
+```cpp
 COleDateTime& operator=(const VARIANT& varSrc) throw();
 COleDateTime& operator=(DATE dtSrc) throw();
 COleDateTime& operator=(const time_t& timeSrc) throw();
@@ -815,7 +815,7 @@ For more information about the bounds for `COleDateTime` values, see the article
 
 Add and subtract `ColeDateTime` values.
 
-```
+```cpp
 COleDateTime operator+(COleDateTimeSpan dateSpan) const throw();
 COleDateTime operator-(COleDateTimeSpan dateSpan) const throw();
 COleDateTimeSpan operator-(const COleDateTime& date) const throw();
@@ -845,7 +845,7 @@ For more information about the bounds for `COleDateTime` values, see the article
 
 Add and subtract a `ColeDateTime` value from this `COleDateTime` object.
 
-```
+```cpp
 COleDateTime& operator+=(COleDateTimeSpan dateSpan) throw();
 COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
 ```
@@ -868,7 +868,7 @@ For more information about the bounds for `COleDateTime` values, see the article
 
 Converts a `ColeDateTime` value into a `DATE`.
 
-```
+```cpp
 operator DATE() const throw();
 ```
 
@@ -882,7 +882,7 @@ The `DATE` operator will assert if the `COleDateTime` object is set to null. See
 
 Parses a string to read a date/time value.
 
-```
+```cpp
 bool ParseDateTime(
     LPCTSTR lpszDate,
     DWORD dwFlags = 0,
@@ -943,7 +943,7 @@ For more information about the bounds and implementation for `COleDateTime` valu
 
 Sets the date of this `COleDateTime` object.
 
-```
+```cpp
 int SetDate(
     int nYear,
     int nMonth,
@@ -1020,7 +1020,7 @@ For more information about the bounds for `COleDateTime` values, see the article
 
 Sets the date and time of this `COleDateTime` object.
 
-```
+```cpp
 int SetDateTime(
     int nYear,
     int nMonth,
@@ -1128,7 +1128,7 @@ See the example for [GetStatus](#getstatus).
 
 Sets the time of this `COleDateTime` object.
 
-```
+```cpp
 int SetTime(
     int nHour,
     int nMin,

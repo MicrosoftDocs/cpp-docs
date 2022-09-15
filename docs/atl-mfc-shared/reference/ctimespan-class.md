@@ -11,7 +11,7 @@ An amount of time, which is internally stored as the number of seconds in the ti
 
 ## Syntax
 
-```
+```cpp
 class CTimeSpan
 ```
 
@@ -68,7 +68,7 @@ For more information on using `CTimeSpan`, see the articles [Date and Time](../.
 
 Comparison operators.
 
-```
+```cpp
 bool operator==(CTimeSpan span) const throw();
 bool operator!=(CTimeSpan span) const throw();
 bool operator<(CTimeSpan span) const throw();
@@ -94,7 +94,7 @@ These operators compare two relative time values. They return `TRUE` if the cond
 
 Constructs `CTimeSpan` objects in various ways.
 
-```
+```cpp
 CTimeSpan() throw();
 CTimeSpan(__time64_t time) throw();
 
@@ -145,7 +145,7 @@ Note that the Debug version of the Microsoft Foundation Class Library asserts if
 
 Generates a formatted string that corresponds to this `CTimeSpan`.
 
-```
+```cpp
 CString Format(LPCSTR pFormat) const;
 CString Format(LPCTSTR pszFormat) const;
 CString Format(UINT nID) const;
@@ -185,7 +185,7 @@ The Debug version of the library checks the formatting codes and asserts if the 
 
 Returns a value that represents the number of complete days in this `CTimeSpan`.
 
-```
+```cpp
 LONGLONG GetDays() const throw();
 ```
 
@@ -205,7 +205,7 @@ Note that Daylight Savings Time (DST) can cause `GetDays` to return a potentiall
 
 Returns a value that represents the number of hours in the current day (-23 through 23).
 
-```
+```cpp
 LONG GetHours() const throw();
 ```
 
@@ -221,7 +221,7 @@ Returns the number of hours in the current day. The range is -23 through 23.
 
 Returns a value that represents the number of minutes in the current hour (-59 through 59).
 
-```
+```cpp
 LONG GetMinutes() const throw();
 ```
 
@@ -237,7 +237,7 @@ See the example for [`GetHours`](#gethours).
 
 Returns a value that represents the number of seconds in the current minute (-59 through 59).
 
-```
+```cpp
 LONG GetSeconds() const throw();
 ```
 
@@ -253,7 +253,7 @@ See the example for [`GetHours`](#gethours).
 
 Returns the value of the `CTimeSpan` object.
 
-```
+```cpp
 __ time64_t GetTimeSpan() const throw();
 ```
 
@@ -265,7 +265,7 @@ Returns the current value of the `CTimeSpan` object.
 
 Returns a value that represents the total number of complete hours in this `CTimeSpan`.
 
-```
+```cpp
 LONGLONG GetTotalHours() const throw();
 ```
 
@@ -281,7 +281,7 @@ Returns the total number of complete hours in this `CTimeSpan`.
 
 Returns a value that represents the total number of complete minutes in this `CTimeSpan`.
 
-```
+```cpp
 LONGLONG GetTotalMinutes() const throw();
 ```
 
@@ -297,7 +297,7 @@ See the example for [`GetTotalHours`](#gettotalhours).
 
 Returns a value that represents the total number of complete seconds in this `CTimeSpan`.
 
-```
+```cpp
 LONGLONG GetTotalSeconds() const throw();
 ```
 
@@ -313,7 +313,7 @@ See the example for [`GetTotalHours`](#gettotalhours).
 
 Adds and subtracts `CTimeSpan` objects.
 
-```
+```cpp
 CTimeSpan operator+(CTimeSpan span) const throw();
 CTimeSpan operator-(CTimeSpan span) const throw();
 ```
@@ -339,7 +339,7 @@ These two operators allow you to add and subtract `CTimeSpan` objects to and fro
 
 Adds and subtracts a `CTimeSpan` object to and from this `CTimeSpan`.
 
-```
+```cpp
 CTimeSpan& operator+=(CTimeSpan span) throw();
 CTimeSpan& operator-=(CTimeSpan span) throw();
 ```
@@ -368,7 +368,7 @@ These operators allow you to add and subtract a `CTimeSpan` object to and from t
 
 Serializes the data associated with the member variable to or from an archive.
 
-```
+```cpp
 CArchive& Serialize64(CArchive& ar);
 ```
 

@@ -12,7 +12,7 @@ Similar to the Windows [SIZE](/windows/win32/api/windef/ns-windef-size) structur
 
 ## Syntax
 
-```
+```cpp
 class CSize : public tagSIZE
 ```
 
@@ -58,7 +58,7 @@ The `cx` and `cy` members of `SIZE` (and `CSize`) are public. In addition, `CSiz
 
 Constructs a `CSize` object.
 
-```
+```cpp
 CSize() throw();
 CSize( int initCX, int initCY) throw();
 CSize( SIZE initSize) throw();
@@ -95,7 +95,7 @@ If no arguments are given, `cx` and `cy` are initialized to zero.
 
 Checks for equality between two sizes.
 
-```
+```cpp
 BOOL operator==(SIZE size) const throw();
 ```
 
@@ -111,7 +111,7 @@ Returns nonzero if the sizes are equal, otherwize 0.
 
 Checks for inequality between two sizes.
 
-```
+```cpp
 BOOL operator!=(SIZE size) const throw();
 ```
 
@@ -151,7 +151,7 @@ void operator-=(SIZE size) throw();
 
 These operators add this `CSize` value to the value of parameter.
 
-```
+```cpp
 CSize operator+(SIZE size) const throw();
 CPoint operator+(POINT point) const throw();
 CRect operator+(const RECT* lpRect) const throw();
@@ -181,7 +181,7 @@ See the following descriptions of the individual operators:
 
 The first three of these operators subtract this `CSize` value to the value of parameter.
 
-```
+```cpp
 CSize operator-(SIZE size) const throw();
 CPoint operator-(POINT point) const throw();
 CRect operator-(const RECT* lpRect) const throw();

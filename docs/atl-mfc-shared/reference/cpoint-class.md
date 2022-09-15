@@ -11,7 +11,7 @@ Similar to the Windows `POINT` structure.
 
 ## Syntax
 
-```
+```cpp
 class CPoint : public tagPOINT
 ```
 
@@ -66,7 +66,7 @@ A `CPoint` object can be used wherever a `POINT` structure is used. The operator
 
 Constructs a `CPoint` object.
 
-```
+```cpp
 CPoint() throw();
 CPoint(int initX, int initY) throw();
 CPoint(POINT initPt) throw();
@@ -154,7 +154,7 @@ Specifies the amount ([`SIZE`](/windows/win32/api/windef/ns-windef-size) or [`CS
 
 Checks for equality between two `POINT`s.
 
-```
+```cpp
 BOOL operator==(POINT point) const throw();
 ```
 
@@ -254,7 +254,7 @@ For example, subtracting `CPoint(5, -7)` from a variable that contains `CPoint(3
 
 Use this operator to offset `CPoint` by a `CPoint` or `CSize` object, or to offset a `CRect` by a `CPoint`.
 
-```
+```cpp
 CPoint operator+(SIZE size) const throw();
 CPoint operator+(POINT point) const throw();
 CRect operator+(const RECT* lpRect) const throw();
@@ -289,7 +289,7 @@ Adding a `CRect` to a `POINT` returns the `CRect` after being offset by the `x` 
 
 Use one of the first two overloads to subtract a `CPoint` or `CSize` object from `CPoint`.
 
-```
+```cpp
 CSize operator-(POINT point) const throw();
 CPoint operator-(SIZE size) const throw();
 CRect operator-(const RECT* lpRect) const throw();
