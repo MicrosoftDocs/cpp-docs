@@ -15,7 +15,7 @@ ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
 
 ## Syntax
 
-```
+```cpp
 class CImage
 ```
 
@@ -148,7 +148,7 @@ You can use `CImage` from either MFC or ATL.
 
 Displays bitmaps that have transparent or semitransparent pixels.
 
-```
+```cpp
 BOOL AlphaBlend(
     HDC hDestDC,
     int xDest,
@@ -267,7 +267,7 @@ The bitmap can be either a non-DIB section bitmap or a DIB section bitmap. See [
 
 Copies a bitmap from the source device context to this current device context.
 
-```
+```cpp
 BOOL BitBlt(
     HDC hDestDC,
     int xDest,
@@ -343,7 +343,7 @@ For more information, see [`BitBlt`](/windows/win32/api/wingdi/nf-wingdi-bitblt)
 
 Constructs a `CImage` object.
 
-```
+```cpp
 CImage() throw();
 ```
 
@@ -359,7 +359,7 @@ Using global `CImage` objects in a DLL is not recommended. If you need to use a 
 
 Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.
 
-```
+```cpp
 BOOL Create(
     int nWidth,
     int nHeight,
@@ -394,7 +394,7 @@ Nonzero if successful; otherwise 0.
 
 Creates a `CImage` bitmap and attach it to the previously constructed `CImage` object.
 
-```
+```cpp
 BOOL CreateEx(
     int nWidth,
     int nHeight,
@@ -458,7 +458,7 @@ void Destroy() throw();
 
 Detaches a bitmap from a `CImage` object.
 
-```
+```cpp
 HBITMAP Detach() throw();
 ```
 
@@ -470,7 +470,7 @@ A handle to the bitmap detached, or `NULL` if no bitmap is attached.
 
 Copies a bitmap from the source device context to the current device context.
 
-```
+```cpp
 BOOL Draw(
     HDC hDestDC,
     int xDest,
@@ -579,7 +579,7 @@ Using this pointer, along with the value returned by [`GetPitch`](#getpitch), yo
 
 Retrieves the bits-per-pixel value.
 
-```
+```cpp
 int GetBPP() const throw();
 ```
 
@@ -619,7 +619,7 @@ A pointer to the array of [`RGBQUAD`](/windows/win32/api/wingdi/ns-wingdi-rgbqua
 
 Retrieves the device context that currently has the image selected into it.
 
-```
+```cpp
 HDC GetDC() const throw();
 ```
 
@@ -635,7 +635,7 @@ For each call to `GetDC`, you must have a subsequent call to [`ReleaseDC`](#rele
 
 Finds image formats available for saving images.
 
-```
+```cpp
 static HRESULT GetExporterFilterString(
     CSimpleString& strExporters,
     CSimpleArray<GUID>& aguidFileTypes,
@@ -718,7 +718,7 @@ Use the default separator `|` if you pass this string to an MFC `CFileDialog` ob
 
 Retrieves the height, in pixels, of an image.
 
-```
+```cpp
 int GetHeight() const throw();
 ```
 
@@ -730,7 +730,7 @@ The height, in pixels, of an image.
 
 Finds image formats available for loading images.
 
-```
+```cpp
 static HRESULT GetImporterFilterString(
     CSimpleString& strImporters,
     CSimpleArray<GUID>& aguidFileTypes,
@@ -809,7 +809,7 @@ Use the default separator `|` if you pass this string to an MFC `CFileDialog` ob
 
 Retrieves the maximum number of entries in the color table.
 
-```
+```cpp
 int GetMaxColorTableEntries() const throw();
 ```
 
@@ -825,7 +825,7 @@ This method supports only DIB section bitmaps.
 
 Retrieves the pitch of an image.
 
-```
+```cpp
 int GetPitch() const throw();
 ```
 
@@ -846,7 +846,7 @@ Use `GetPitch` with [`GetBits`](#getbits) to find individual pixels of an image.
 
 Retrieves the color of the pixel at the location specified by *x* and *y*.
 
-```
+```cpp
 COLORREF GetPixel(int x, int y) const throw();
 ```
 
@@ -891,7 +891,7 @@ For formats that have less than 8 bits per pixel, this method returns the addres
 
 Retrieves the indexed location of the transparent color in the color palette.
 
-```
+```cpp
 LONG GetTransparentColor() const throw();
 ```
 
@@ -903,7 +903,7 @@ The index of the transparent color.
 
 Retrieves the width, in pixels, of an image.
 
-```
+```cpp
 int GetWidth() const throw();
 ```
 
@@ -915,7 +915,7 @@ The width of the bitmap, in pixels.
 
 Determines if the attached bitmap is a DIB section.
 
-```
+```cpp
 bool IsDIBSection() const throw();
 ```
 
@@ -945,7 +945,7 @@ If the bitmap is not a DIB section, you cannot use the following `CImage` method
 
 Determines whether a bitmap's pixels are mapped to a color palette.
 
-```
+```cpp
 bool IsIndexed() const throw();
 ```
 
@@ -964,7 +964,7 @@ This method returns `TRUE` only if the bitmap is 8-bit (256 colors) or less.
 
 Determines if a bitmap is currently loaded.
 
-```
+```cpp
 bool IsNull() const throw();
 ```
 
@@ -976,7 +976,7 @@ This method returns `TRUE` if a bitmap is not currently loaded; otherwise `FALSE
 
 Indicates whether the application supports transparent bitmaps.
 
-```
+```cpp
 static BOOL IsTransparencySupported() throw();
 ```
 
@@ -992,7 +992,7 @@ If the return value is nonzero, and transparency is supported, a call to [`Alpha
 
 Loads an image.
 
-```
+```cpp
 HRESULT Load(LPCTSTR pszFileName) throw();
 HRESULT Load(IStream* pStream) throw();
 ```
@@ -1048,7 +1048,7 @@ The resource must be of type `BITMAP`.
 
 Combines the color data for the source and destination bitmaps using the specified mask and raster operation.
 
-```
+```cpp
 BOOL MaskBlt(
     HDC hDestDC,
     int xDest,
@@ -1147,7 +1147,7 @@ Use this operator to get the attached Windows GDI handle of the `CImage` object.
 
 Performs a bit-block transfer from a rectangle in a source device context into a parallelogram in a destination device context.
 
-```
+```cpp
 BOOL PlgBlt(
     HDC hDestDC,
     const POINT* pPoints,
@@ -1245,7 +1245,7 @@ This method must be called to free resources allocated by a global `CImage` obje
 
 Saves an image to the specified stream or file on disk.
 
-```
+```cpp
 HRESULT Save(
     IStream* pStream,
     REFGUID guidFileType) const throw();
@@ -1391,7 +1391,7 @@ The red, green, and blue parameters are each represented by a number between 0 a
 
 Sets a color at a given indexed location as transparent.
 
-```
+```cpp
 LONG SetTransparentColor(LONG iTransparentColor) throw();
 ```
 
@@ -1408,7 +1408,7 @@ The index of the color previously set as transparent.
 
 Copies a bitmap from the source device context to this current device context.
 
-```
+```cpp
 BOOL StretchBlt(
     HDC hDestDC,
     int xDest,
@@ -1491,7 +1491,7 @@ For more information, see [`StretchBlt`](/windows/win32/api/wingdi/nf-wingdi-str
 
 Copies a bitmap from the source device context to this current device context.
 
-```
+```cpp
 BOOL TransparentBlt(
     HDC hDestDC,
     int xDest,

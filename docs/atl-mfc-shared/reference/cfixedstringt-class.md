@@ -12,7 +12,7 @@ This class represents a string object with a fixed character buffer.
 
 ## Syntax
 
-```
+```cpp
 template<class StringType, int t_nChars>
 class CFixedStringT : private CFixedStringMgr, public StringType
 ```
@@ -69,7 +69,7 @@ For more information on the customization of `CFixedStringT` and memory manageme
 
 Constructs a `CFixedStringT` object.
 
-```
+```cpp
 CFixedStringT() throw();
 explicit CFixedStringT(IAtlStringMgr* pStringMgr) throw();
 CFixedStringT(const CFixedStringT<StringType, t_nChars>& strSrc);
@@ -98,7 +98,7 @@ Because the constructors copy the input data into new allocated storage, you sho
 
 Reinitializes an existing `CFixedStringT` object with new data.
 
-```
+```cpp
 CFixedStringT<StringType, t_nChars>& operator=(
     const CFixedStringT<StringType, t_nChars>& strSrc);
 CFixedStringT<StringType, t_nChars>& operator=(const char* pszSrc);

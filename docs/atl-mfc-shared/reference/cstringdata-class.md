@@ -12,7 +12,7 @@ This class represents the data of a string object.
 
 ## Syntax
 
-```
+```cpp
 struct CStringData
 ```
 
@@ -105,7 +105,7 @@ Call this function to return the current character buffer of the associated stri
 
 Determines if the character buffer is locked.
 
-```
+```cpp
 bool IsLocked() const throw();
 ```
 
@@ -121,7 +121,7 @@ Call this function to determine if the character buffer of a string object is cu
 
 Determines if the character buffer is shared.
 
-```
+```cpp
 bool IsShared() const throw();
 ```
 
@@ -152,7 +152,7 @@ Call this function to lock the character buffer of the string data object. Locki
 
 Length of the allocated character buffer.
 
-```
+```cpp
 int nAllocLength;
 ```
 
@@ -164,7 +164,7 @@ Stores the length of the allocated data buffer in `XCHAR`s (not including termin
 
 Current length of the string object.
 
-```
+```cpp
 int nDataLength;
 ```
 
@@ -176,7 +176,7 @@ Stores the length of currently used data in `XCHAR`s (not including terminating 
 
 Reference count of the string data object.
 
-```
+```cpp
 long nRefs;
 ```
 
@@ -188,7 +188,7 @@ Stores the reference count of the string data object. This count indicates the n
 
 The memory manager of the associated string object.
 
-```
+```cpp
 IAtlStringMgr* pStringMgr;
 ```
 
