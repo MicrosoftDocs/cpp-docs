@@ -1,30 +1,44 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4464"
+description: "Learn more about: Compiler Warning (level 4, off) C4464"
 title: "Compiler Warning (level 4) C4464"
-ms.date: "03/13/2018"
+ms.date: 09/14/2022
 f1_keywords: ["C4464"]
 helpviewer_keywords: ["C4464"]
 ---
-# Compiler Warning (level 4) C4464
+# Compiler Warning (level 4, off) C4464
 
-> **relative include path contains '..'**
+> relative include path contains '..'
 
-A `#include` directive has a path that includes a '..' parent directory specifier.
+A `#include` directive has a path that includes a parent directory specifier (a `..` path segment).
 
 ## Remarks
 
-Starting in Visual Studio 2015 Update 1, the compiler can detect an include directive that contains a '..' path segment and issue a warning, if enabled. Code written in this way is usually intended to include headers that exist outside of the project by incorrectly using project-relative paths. This creates a risk that the program could be compiled by including a different source file than the programmer intends, or that these relative paths would not be portable to other build environments. Although there is no specific warning for it, we also recommend that you do not use a parent directory path segment to specify your project include directories.
+In Visual Studio 2015 Update 1 and later versions, if enabled, the compiler can detect and issue a warning for a `#include` directive that contains a parent directory path segment (`..`). Code is sometimes written that uses parent directory relative paths to include headers from external libraries. When these parent directory-relative header paths are specified in source files, it creates a risk: The program could be compiled by including a different header file than the programmer intends. These relative paths may not be portable to other developers' build environments.
 
-This warning is new in Visual Studio 2015 Update 1, and is off by default. Use [/Wall](../../build/reference/compiler-option-warning-level.md) to enable all warnings that are off by default, or __/w__*n*__4464__ to enable C4464 as a level *n* warning. For more information, see [Compiler Warnings That Are Off By Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md). For information on how to disable warnings by compiler version, see [Compiler warnings by compiler version](compiler-warnings-by-compiler-version.md).
+Instead, we recommend you specify the paths to such headers in the build environment, such as in the `INCLUDE` environment variable or in parameters to the [`/I` (Additional include directories)](../../build/reference/i-additional-include-directories.md) compiler option. In the Visual Studio IDE, you can set the paths in your project's **Configuration Properties** > **C/C++** > **General** property page, in the **Additional Include Directories** property. Although there's no specific warning for it, we also don't recommend use of parent directory path segments when you specify your project's include directories.
+
+Warning C4464 is new in Visual Studio 2015 Update 1, and is off by default. Use [`/Wall`](../../build/reference/compiler-option-warning-level.md) to enable all warnings that are off by default. Use **`/wN4464`** to enable C4464 as a level `N` warning (where `N` is 1-4). For more information, see [Compiler warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md). For information on how to disable warnings introduced in or after a specific compiler version, see [Compiler warnings by compiler version](compiler-warnings-by-compiler-version.md).
 
 ## Example
 
-Source code files that use '..' path segments can trigger this warning when the **/Wall** option is specified:
+Source code files that use `..` path segments in `#include` directives can trigger this warning when C4464 is enabled or when the **`/Wall`** option is specified.
+
+In this example, the project source is in *`C:\project\source`* and an external library's header files are in *`C:\other_lib\headers`*:
 
 ```cpp
-#include "..\headers\C4426.h"  // emits warning C4464
+// C:\project\source\C4464.cpp
+// Compile by using: cl /w14464 C4464.cpp
+#include "..\..\other_lib\headers\other.h"          // C4464
+#include "..\..\other_lib\headers\extras\nested.h"  // C4464
+// . . .
+```
 
-// To fix this issue, specify only the header file name, and add
-// the absolute path to 'headers\' to your project's include directories
-#include "C4426.h"
+To fix this issue, add the path *`C:\other_lib\headers`* to your project's include directories. Then, change the source to include the header files as external headers:
+
+```cpp
+// C:\project\source\C4464b.cpp
+// Compile by using: cl /w14464 /I"C:\other_lib\headers" C4464b.cpp
+#include <other.h>  // OK
+#include <extras\nested.h>  // OK
+// . . .
 ```

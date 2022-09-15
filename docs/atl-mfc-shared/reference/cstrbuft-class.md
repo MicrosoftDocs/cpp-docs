@@ -12,7 +12,7 @@ This class provides automatic resource cleanup for `GetBuffer` and `ReleaseBuffe
 
 ## Syntax
 
-```
+```cpp
 template<typename TCharType>
 class CStrBufT
 ```
@@ -26,7 +26,7 @@ The character type of the `CStrBufT` class. Can be one of the following:
 
 - **`wchar_t`** (for Unicode character strings)
 
-- TCHAR (for both ANSI and Unicode character strings)
+- **`TCHAR`** (for both ANSI and Unicode character strings)
 
 ## Members
 
@@ -34,8 +34,8 @@ The character type of the `CStrBufT` class. Can be one of the following:
 
 |Name|Description|
 |----------|-----------------|
-|PCXSTR|A pointer to a constant string.|
-|PXSTR|A pointer to a string.|
+|`PCXSTR`|A pointer to a constant string.|
+|`PXSTR`|A pointer to a string.|
 |`StringType`|The string type whose buffer is to be manipulated by specializations of this class template.|
 
 ### Public Constructors
@@ -78,7 +78,7 @@ Primarily designed as a helper class, `CStrBufT` provides a convenient way for a
 
 Automatically determine the new length of the string at release.
 
-```
+```cpp
 static const DWORD AUTO_LENGTH = 0x01;
 ```
 
@@ -90,7 +90,7 @@ Automatically determine the new length of the string at release. The string must
 
 Constructs a buffer object.
 
-```
+```cpp
 CStrBufT(StringType& str, int nMinLength, DWORD dwFlags = AUTO_LENGTH) throw(...);
 explicit CStrBufT(StringType& str) throw(...);
 ```
@@ -120,7 +120,7 @@ Note that the copy constructor is **`private`**.
 
 Directly accesses characters stored in the associated string object as a C-style string.
 
-```
+```cpp
 operator PCXSTR() const throw();
 ```
 
@@ -136,7 +136,7 @@ Call this function to return a pointer to the character buffer of a string objec
 
 Directly accesses characters stored in the associated string object as a C-style string.
 
-```
+```cpp
 operator PXSTR() throw();
 ```
 
@@ -152,7 +152,7 @@ Call this function to return a pointer to the character buffer of a string objec
 
 A pointer to a constant string.
 
-```
+```cpp
 typedef CSimpleStringT<TCharType>::PCXSTR PCXSTR;
 ```
 
@@ -160,7 +160,7 @@ typedef CSimpleStringT<TCharType>::PCXSTR PCXSTR;
 
 A pointer to a string.
 
-```
+```cpp
 typedef CSimpleStringT<TCharType>::PXSTR PXSTR;
 ```
 
@@ -168,7 +168,7 @@ typedef CSimpleStringT<TCharType>::PXSTR PXSTR;
 
 Set the length of the string object at `GetBuffer` time.
 
-```
+```cpp
 static const DWORD SET_LENGTH = 0x02;
 ```
 
@@ -202,7 +202,7 @@ Call this function to set the length of the string represented by the buffer obj
 
 The string type whose buffer is to be manipulated by specializations of this class template.
 
-```
+```cpp
 typedef CSimpleStringT<TCharType> StringType;
 ```
 

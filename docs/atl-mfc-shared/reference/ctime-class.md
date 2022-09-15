@@ -12,7 +12,7 @@ Represents an absolute time and date.
 
 ## Syntax
 
-```
+```cpp
 class CTime
 ```
 
@@ -82,7 +82,7 @@ For more information about using `CTime`, see the articles [Date and Time](../..
 
 Comparison operators.
 
-```
+```cpp
 bool operator==(CTime time) const throw();
 bool operator!=(CTime time) const throw();
 bool operator<(CTime time) const throw();
@@ -108,7 +108,7 @@ These operators compare two absolute times and return TRUE if the condition is t
 
 Creates a new `CTime` object initialized with the specified time.
 
-```
+```cpp
 CTime() throw();
 CTime(__time64_t time) throw();
 CTime(int nYear, int nMonth, int nDay,
@@ -193,7 +193,7 @@ For more information, see the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minw
 
 Call this member function to create a formatted representation of the date-time value.
 
-```
+```cpp
 CString Format(LPCTSTR pszFormat) const;
 CString Format(UINT nFormatID) const;
 ```
@@ -224,7 +224,7 @@ This method throws an exception if the date-time value to format does not range 
 
 Generates a formatted string that corresponds to this `CTime` object.
 
-```
+```cpp
 CString FormatGmt(LPCTSTR pszFormat) const;
 CString FormatGmt(UINT nFormatID) const;
 ```
@@ -255,7 +255,7 @@ See the example for [CTime::Format](#format).
 
 Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.
 
-```
+```cpp
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 ```
 
@@ -280,7 +280,7 @@ Stores the resulting time in the referenced *dbts* structure. The `DBTIMESTAMP` 
 
 Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure.
 
-```
+```cpp
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 ```
 
@@ -305,7 +305,7 @@ TRUE if successful; otherwise FALSE.
 
 Returns a `CTime` object that represents the current time.
 
-```
+```cpp
 static CTime WINAPI GetCurrentTime() throw();
 ```
 
@@ -321,7 +321,7 @@ Returns the current system date and time in Coordinated Universal Time (UTC).
 
 Returns the day represent by the `CTime` object.
 
-```
+```cpp
 int GetDay() const throw();
 ```
 
@@ -341,7 +341,7 @@ This function calls `GetLocalTm`, which uses an internal, statically allocated b
 
 Returns the day of the week represented by the `CTime` object.
 
-```
+```cpp
 int GetDayOfWeek() const throw();
 ```
 
@@ -361,7 +361,7 @@ This function calls `GetLocalTm`, which uses an internal statically allocated bu
 
 Gets a **struct tm** that contains a decomposition of the time contained in this `CTime` object.
 
-```
+```cpp
 struct tm* GetGmtTm(struct tm* ptm) const;
 ```
 
@@ -388,7 +388,7 @@ A pointer to a filled-in **struct tm** as defined in the include file TIME.H. Se
 
 Returns the hour represented by the `CTime` object.
 
-```
+```cpp
 int GetHour() const throw();
 ```
 
@@ -408,7 +408,7 @@ This function calls `GetLocalTm`, which uses an internal statically allocated bu
 
 Gets a **struct tm** containing a decomposition of the time contained in this `CTime` object.
 
-```
+```cpp
 struct tm* GetLocalTm(struct tm* ptm) const;
 ```
 
@@ -435,7 +435,7 @@ A pointer to a filled-in **struct tm** as defined in the include file TIME.H. Se
 
 Returns the minute represented by the `CTime` object.
 
-```
+```cpp
 int GetMinute() const throw();
 ```
 
@@ -455,7 +455,7 @@ See the example for [GetHour](#gethour).
 
 Returns the month represented by the `CTime` object.
 
-```
+```cpp
 int GetMonth() const throw();
 ```
 
@@ -475,7 +475,7 @@ See the example for [GetDay](#getday).
 
 Returns the second represented by the `CTime` object.
 
-```
+```cpp
 int GetSecond() const throw();
 ```
 
@@ -495,7 +495,7 @@ See the example for [GetHour](#gethour).
 
 Returns a **__time64_t** value for the given `CTime` object.
 
-```
+```cpp
 __time64_t GetTime() const throw();
 ```
 
@@ -511,7 +511,7 @@ __time64_t GetTime() const throw();
 
 Returns the year represented by the `CTime` object.
 
-```
+```cpp
 int GetYear();
 ```
 
@@ -531,7 +531,7 @@ See the example for [GetDay](#getday).
 
 The assignment operator.
 
-```
+```cpp
 CTime& operator=(__time64_t time) throw();
 ```
 
@@ -552,7 +552,7 @@ This overloaded assignment operator copies the source time into this `CTime` obj
 
 These operators add and subtract `CTimeSpan` and `CTime` objects.
 
-```
+```cpp
 CTime operator+(CTimeSpan timeSpan) const throw();
 CTime operator-(CTimeSpan timeSpan) const throw();
 CTimeSpan operator-(CTime time) const throw();
@@ -582,7 +582,7 @@ A `CTime` or `CTimeSpan` object representing the result of the operation.
 
 These operators add and subtract a `CTimeSpan` object to and from this `CTime` object.
 
-```
+```cpp
 CTime& operator+=(CTimeSpan span) throw();
 CTime& operator-=(CTimeSpan span) throw();
 ```
@@ -611,7 +611,7 @@ These operators allow you to add and subtract a `CTimeSpan` object to and from t
 
 Serializes the data associated with the member variable to or from an archive.
 
-```
+```cpp
 CArchive& Serialize64(CArchive& ar);
 ```
 
