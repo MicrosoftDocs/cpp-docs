@@ -30,7 +30,7 @@ Returns the character read. There's no error return.
 
 ## Remarks
 
-The **`_getch`** and **`_getwch`** functions read a single character from the console without echoing the character. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.
+The **`_getch`** and **`_getwch`** functions read a single character from the console without echoing the character. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual [key scan code](/previous-versions/visualstudio/visual-studio-6.0/aa299374(v=vs.60)).
 
 These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [`_getch_nolock`, `_getwch_nolock`](getch-nolock-getwch-nolock.md).
 
