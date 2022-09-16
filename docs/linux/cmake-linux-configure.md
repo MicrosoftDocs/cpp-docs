@@ -108,7 +108,7 @@ When you do a build:
 
 ## Choose a Linux target
 
-When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings based on your Linux compiler. For example, if you're using GCC on Linux and compiling with debug info, choose:  **Linux-GCC-Debug** or **Linux-GCC-Release**.
+When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file, and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings based on your Linux compiler. For example, if you're using GCC on Linux and compiling with debug info, choose:  **Linux-GCC-Debug** or **Linux-GCC-Release**.
 
 If you specify a remote Linux target, your source is copied to the remote system.
 
@@ -125,11 +125,11 @@ If you're targeting Windows Subsystem for Linux (WSL), you don't need to add a r
 
 To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar:
 
-![CMake Manage Configurations.](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
+![CMake configurations drop-down with Manage Configurations selected](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
 The **CMakeSettings.json** window appears.
 
-![Add configuration.](media/cmake-linux-configurations.png "Add a configuration to CMake settings")
+![CMake settings dialog with the plus button highlighted which adds the selected configuration, which is Linux-GCC-debug.](media/cmake-linux-configurations.png )
 
 Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-Debug** or **Linux-GCC-Release** if using GCC. Use the Clang variants if you're using the Clang/LLVM toolset.  Press **Select** and then **Ctrl+S** to save the configuration.
 
