@@ -11,11 +11,11 @@ The C++ code editor and Visual Studio IDE provide many coding aids. Some are uni
 
 Visual Studio colorizes syntax elements to differentiate between types of symbols such as language keywords, type names, variable names, function parameters, string literals, and so on.
 
-![Screenshot showing code colorization in the editor.](../ide/media/code-outline-colorization.png "C++ colorization")
+![Screenshot showing code colorization in the editor. Keywords are shown in different colors such as blue for if, while and green for comments](../ide/media/code-outline-colorization.png "C++ colorization")
 
 Unused code (such as code under an #if 0) is more faded in color.
 
-![Screenshot showing inactive code in the editor.](../ide/media/inactive-code-cpp.png "C++ inactive code")
+![Screenshot showing inactive code in the editor, which appears faded compared to active code.](../ide/media/inactive-code-cpp.png "C++ inactive code")
 
 You can customize the colors by typing "Fonts" in **Quick Launch**, and then choosing **Fonts and Colors**. In the **Fonts and Colors** dialog scroll down to the C/C++ options and then choose a custom font and/or color.
 
@@ -23,7 +23,7 @@ You can customize the colors by typing "Fonts" in **Quick Launch**, and then cho
 
 Right-click anywhere in a source code file and choose **Outlining** to collapse or expand code blocks and/or custom regions to make it easier to browse only the code you are interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
 
-![Screenshot of C plus plus Outlining.](../ide/media/vs2015_cpp_outlining.png)
+![Screenshot of the outlining window shows the body of classes collapsed. Options for collapse to Definitions, Toggle All Outlining, etc. are visible.](../ide/media/vs2015_cpp_outlining.png)
 
 When you place your cursor in front of a curly brace, '{' or '}', the editor highlights its matching counterpart.
 
@@ -37,11 +37,11 @@ You can add line numbers to your project by going to **Tools** > **Options** > *
 
 You can zoom in or out in the editor by pressing the **Ctrl** key and scrolling with your mouse wheel. You can also zoom by using the zoom setting in the bottom left corner.
 
-![Screenshot of the C plus plus Zoom Control.](../ide/media/zoom-control.png)
+![Screenshot of the Zoom Control in the lower left of the screen. It's a dropdown with various zoom options like 133%.](../ide/media/zoom-control.png)
 
 Scrollbar **Map Mode** enables you to quickly scroll and browse through a code file without leaving your current location. You can click anywhere on the code map to go directly to that location.
 
-![Screenshot of the Code Map in C plus plus.](../ide/media/vs2015-cpp-code-map.png)
+![Screenshot of the Code Map.](../ide/media/vs2015-cpp-code-map.png)
 
 To turn on **Map Mode**, type "map" in the **Quick Launch** search box in the main toolbar and choose **Use scroll map mode**. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
