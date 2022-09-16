@@ -99,11 +99,11 @@ You've successfully set up `ssh`, created and deployed encryption keys, and test
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   ![Screenshot showing the Connection Manager dialog.](media/settings_connectionmanager.png)
+   ![Screenshot showing the options pane in the Connection Manager dialog. Cross Platform > C plus plus > Connection Manager is highlighted.](media/settings_connectionmanager.png)
 
    The **Connect to Remote System** window is displayed.
 
-   ![Screenshot showing the Connect to Remote System window.](media/connect.png)
+   ![Screenshot showing the Connect to Remote System window, which has text boxes for the host name, port, user name, auth type, and password.](media/connect.png)
 
 1. In the **Connect to Remote System** dialog, enter the connection details of your remote machine.
 
@@ -124,7 +124,7 @@ You've successfully set up `ssh`, created and deployed encryption keys, and test
 
    If the connection fails, the entry boxes that need to be changed are outlined in red.
 
-   ![Screenshot showing a Connection Manager Error.](media/settings_connectionmanagererror.png)
+   ![Screenshot of the Connect to Remote System window which has host name and port text boxes outlined in red to indicate they need to be changed.](media/settings_connectionmanagererror.png)
 
    For more information on troubleshooting your connection, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 

@@ -25,7 +25,7 @@ The **abstract** keyword declares either:
 
 ### Remarks
 
-The first example syntax declares a class to be abstract. The *class-declaration* component can be either a native C++ declaration (**`class`**** or **`struct`**), or a C++ extension declaration (**ref class** or **ref struct**) if the `/ZW` or `/clr` compiler option is specified.
+The first example syntax declares a class to be abstract. The *class-declaration* component can be either a native C++ declaration (**`class`** or **`struct`**), or a C++ extension declaration (**ref class** or **ref struct**) if the `/ZW` or `/clr` compiler option is specified.
 
 The second example syntax declares a virtual member function to be abstract. Declaring a function abstract is the same as declaring it a pure virtual function. Declaring a member function abstract also causes the enclosing class to be declared abstract.
 

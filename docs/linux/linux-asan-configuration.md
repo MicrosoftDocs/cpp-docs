@@ -20,7 +20,7 @@ ASan is a runtime memory error detector for C/C++ that catches the following err
 
 When ASan detects an error, it stops execution immediately. If you run an ASan-enabled program in the debugger, you see a message that describes the type of error, the memory address, and the location in the source file where the error occurred:
 
-   ![Screenshot showing an ASan error message.](media/asan-error.png)
+   ![Screenshot showing the address sanitizer error message: heap use after free.](media/asan-error.png)
 
 You can also view the full ASan output (including where the corrupted memory was allocated/deallocated) in the Debug pane of the output window.
 
@@ -31,26 +31,26 @@ You can also view the full ASan output (including where the corrupted memory was
 
 To enable ASan for MSBuild-based Linux projects, right-click on the project in **Solution Explorer** and select **Properties**. Next, navigate to **Configuration Properties** > **C/C++** > **Sanitizers**. ASan is enabled via compiler and linker flags, and requires your project to be recompiled to work.
 
-![Enable ASan for an MSBuild project.](media/msbuild-asan-prop-page.png)
+![Screenshot of the project property page with Configuration Properties > C/C plus plus > Sanitizers selected. Enable Address Sanitizer is set to Yes.](media/msbuild-asan-prop-page.png)
 
 You can pass optional ASan runtime flags by navigating to **Configuration Properties** > **Debugging** > **AddressSanitizer Runtime Flags**. Click the down-arrow to add or remove flags.
 
-![Configure ASan runtime flags.](media/msbuild-asan-runtime-flags.png)
+![Screenshot of the project property page with Configuration Properties > Debugging selected. Address Sanitizer Runtime Flags is `detect_leaks = 0`.](media/msbuild-asan-runtime-flags.png)
 
 ## Enable ASan for Visual Studio CMake projects
 
 > [!NOTE]
 > To build with CMake Presets, first enable ASan in your CMakeLists.txt file. For more information, see [Enable AddressSanitizer for Windows and Linux](../build/cmake-presets-vs.md#enable-addresssanitizer-for-windows-and-linux).
 
-To enable ASan for CMake, right-click on the CMakeLists.txt file in **Solution Explorer** and choose **CMake Settings for Project**.
+To enable ASan for CMake, right-click on the `CMakeLists.txt` file in **Solution Explorer** and choose **CMake Settings for Project**.
 
 Make sure you have a Linux configuration (for example, **Linux-Debug**) selected in the left pane of the dialog:
 
-![Screenshot of the left pane with Linux Debug listed as one of the Configuration options.](media/linux-debug-configuration.png)
+![Screenshot of the Configurations pane with x64-Debug and Linux Debug listed as the options.](media/linux-debug-configuration.png)
 
 The ASan options are under **General**. Enter the ASan runtime flags in the format "flag=value", separated by spaces. The UI incorrectly suggests using semi-colons. Use spaces or colons to separate flags.
 
-![Screenshot of the Enable Address Sanitizer option showing some Address Sanitizer run time flags.](media/cmake-settings-asan-options.png)
+![Screenshot of the Enable Address Sanitizer option showing some Address Sanitizer run time flags like detect_leaks=0.](media/cmake-settings-asan-options.png)
 
 ## Install the ASan debug symbols
 
