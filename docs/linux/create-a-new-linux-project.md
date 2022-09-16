@@ -2,7 +2,6 @@
 title: "Create a Linux MSBuild C++ project in Visual Studio"
 ms.date: "10/15/2020"
 description: "Create a new MSBuild-based Linux project in Visual Studio."
-ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
 # Create a Linux MSBuild C++ project in Visual Studio
 
@@ -25,7 +24,7 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
 1. Select the **Visual C++ > Cross Platform > Linux** node, and then select the project type to create. Enter a **Name** and **Location**, and choose **OK**.
 
-   ![Screenshot showing the New Project dialog box with Visual C plus plus > Cross Platform > Linux selected, all of the project types called out, and the Name and Location text boxes also called out.](media/newproject.png)
+![The New Project dialog box with Visual C plus plus > Cross Platform > Linux selected and all project types and Name and Location text boxes called out.](media/newproject.png)
 
    | Project Type | Description |
    | ------------ | --- |
@@ -52,7 +51,7 @@ To create a new Linux project in Visual Studio, follow these steps:
 1. In the **Search for templates** textbox, enter **Linux** to list the available templates for Linux projects.
 1. Select the project type to create, for example **Console Application**, and then choose **Next**. Enter a **Name** and **Location**, and choose **Create**.
 
-   ![Screenshot of the new project dialog box with the language drop-down set to C++ and the platform drop-down set to Linux.](media/newproject-vs2019.png)
+   ![Screenshot of the new project dialog box with the language drop-down set to C plus plus and the platform drop-down set to Linux.](media/newproject-vs2019.png)
 
    | Project Type | Description |
    | ------------ | --- |
