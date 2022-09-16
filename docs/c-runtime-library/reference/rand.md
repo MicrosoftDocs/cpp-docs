@@ -72,7 +72,7 @@ void RangedRandDemo(int range_min, int range_max, int n)
         // generating random numbers across a large range using the method below.
         // The approach below also may result in a non-uniform distribution.
         // More robust random number functionality is available in the C++ <random> header.
-        // See https://docs.microsoft.com/cpp/standard-library/random
+        // See https://learn.microsoft.com/cpp/standard-library/random
         int r = ((double)rand() / RAND_MAX) * (range_max - range_min) + range_min;
         printf("  %6d\n", r);
     }

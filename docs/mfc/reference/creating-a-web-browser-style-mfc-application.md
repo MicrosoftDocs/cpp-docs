@@ -37,7 +37,7 @@ void CWebView::OnInitialUpdate()
 
     // TODO: This code navigates to a popular spot on the web.
     // Change the code to go where you'd like.
-    Navigate2(_T("http://www.docs.microsoft.com/"),
+    Navigate2(_T("https://learn.microsoft.com/"),
         NULL,
         NULL);
 }
