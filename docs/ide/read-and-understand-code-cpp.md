@@ -23,7 +23,7 @@ You can customize the colors by typing "Fonts" in **Quick Launch**, and then cho
 
 Right-click anywhere in a source code file and choose **Outlining** to collapse or expand code blocks and/or custom regions to make it easier to browse only the code you are interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
 
-![Screenshot of the outlining window shows the body of classes collapsed. Options for collapse to Definitions, Toggle All Outlining, etc. are visible.](../ide/media/vs2015_cpp_outlining.png)
+![Screenshot of the outlining window shows the body of classes collapsed. Options for Collapse to Definitions, Toggle All Outlining, etc. are visible.](../ide/media/vs2015_cpp_outlining.png)
 
 When you place your cursor in front of a curly brace, '{' or '}', the editor highlights its matching counterpart.
 
@@ -41,7 +41,7 @@ You can zoom in or out in the editor by pressing the **Ctrl** key and scrolling 
 
 Scrollbar **Map Mode** enables you to quickly scroll and browse through a code file without leaving your current location. You can click anywhere on the code map to go directly to that location.
 
-![Screenshot of the Code Map.](../ide/media/vs2015-cpp-code-map.png)
+![Screenshot of the Code Map which shows an outline of the entire file on the right and a window displaying the code from the selected part of the map.](../ide/media/vs2015-cpp-code-map.png)
 
 To turn on **Map Mode**, type "map" in the **Quick Launch** search box in the main toolbar and choose **Use scroll map mode**. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
@@ -53,13 +53,13 @@ Hover over any variable, function, or other symbol to get information about it, 
 
 ::: moniker range=">=msvc-160"
 
-![Screenshot showing the Quick Info tooltip in Visual Studio 2019.](../ide/media/quick-info-vs2019.png "Quick Info")
+![Screenshot of the Quick Info tooltip displaying the definition of a function that the user is hovering over in the code window.](../ide/media/quick-info-vs2019.png "Quick Info")
 
 The **Quick Info** tooltip has a **Search Online** link. Go to **Tools** > **Options** > **Text Editor** > **C++** > **View** to specify the search provider.
 
 If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the Error List window.
 
-![Screenshot showing Quick Info on error.](../ide/media/quickinfo-on-error.png "Quick Info on error")
+![Screenshot of the Quick Info tooltip showing the error associated with a code squiggle.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
 ::: moniker-end
 
@@ -69,19 +69,19 @@ If there is an error in your code, you can hover over it and **Quick Info** will
 
 If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the **Error List** window.
 
-![Screenshot showing Quick Info on error.](../ide/media/quickinfo-on-error.png "Quick Info on error")
+![Screenshot of the Quick Info tooltip showing the error associated with a code squiggle.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
 ::: moniker-end
 
 When you call a function, **Parameter Info** shows the types of parameters and the order in which they are expected.
 
-![Screenshot of Parameter Info in C plus plus.](../ide/media/parameter-info.png)
+![Screenshot of parameter info showing the parameters for the function resize on vector v. The parameter info is: const size_t _Newsize, const int & _Val.](../ide/media/parameter-info.png)
 
 ## Peek Definition
 
 Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition without navigating away from your current location. For more information, see [Peek Definition (Alt+F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).
 
-![Screenshot of C plus plus Peek Definition.](../ide/media/vs2015_cpp_peek_definition.png)
+![Screenshot of the drop-down that appears when you right-click a function. Peek Definition appears in the menu along with the shortcut Alt + F 12.](../ide/media/vs2015_cpp_peek_definition.png)
 
 ## F1 Help
 
@@ -91,19 +91,19 @@ Place the cursor on or just after any type, keyword or function and press **F1**
 
 **Class View** displays a searchable set of trees of all code symbols and their scope and parent/child hierarchies, organized on a per-project basis. You can configure what **Class View** displays from **Class View Settings** (click the gear box icon at the top of the window).
 
-![Screenshot of Class View in C plus plus.](../ide/media/class-view.png)
+![Screenshot of the Class View window displaying the classes in the project such as CipherFactory, FilterTester, and so on.](../ide/media/class-view.png)
 
 ## Generate graph of include files
 
 Right click on a code file in your project and choose **Generate graph of include files** to see a graph of which files are included by other files.
 
-![Screenshot of C plus plus graph of include files.](../ide/media/vs2015_cpp_include_graph.png)
+![Screenshot of a graph of include files. The graph shows that NAMSPACE DLL .CPP includes Namespace DLL .h, which includes V_10 .H, among other files.](../ide/media/vs2015_cpp_include_graph.png)
 
 ## View Call Hierarchy
 
 Right click on any function call and view a recursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](/visualstudio/ide/reference/call-hierarchy).
 
-![Screenshot of C plus plus Call Hierarchy.](../ide/media/vs2015_cpp_call_hierarchy.png)
+![Screenshot of the Call Hierarchy window which shows calls to and from Floating_to_wstring(). For example, to_wstring() calls Floating_to_wstring().](../ide/media/vs2015_cpp_call_hierarchy.png)
 
 ## See Also
 
