@@ -121,7 +121,7 @@ To link to a header in a Markdown file in the same repo, use relative linking + 
 
 ### Docs Links
 
-To link to a file in a different Docs repo, use the docs.microsoft.com relative URL as the link. Don't include the .md suffix or the language/locale element.
+To link to a file in a different Docs repo, use the `learn.microsoft.com` relative URL as the link. Don't include the .md suffix or the language/locale element.
 
 - Example: [Universal Windows Platform documentation](/windows/uwp)
 
@@ -362,8 +362,8 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ### Shows
 
-[![C++ A General Purpose Language and Library: (01) Getting Started](https://docs.microsoft.com/video/media/e8265f2d-9ea3-4052-99cd-b8cfb246b0f0/clanguagelibrarym01_960.jpg)
-](https://docs.microsoft.com/en-us/shows/cplusplus-language-library/01)\
+[![C++ A General Purpose Language and Library: (01) Getting Started](https://learn.microsoft.com/video/media/e8265f2d-9ea3-4052-99cd-b8cfb246b0f0/clanguagelibrarym01_960.jpg)
+](https://learn.microsoft.com/shows/cplusplus-language-library/01)\
 C++ A General Purpose Language and Library: (01) Getting Started.
 
 ### YouTube
@@ -408,7 +408,7 @@ And they'll render like this:
 > [!div class="button"]
 [button links](../docs/core/index.md)
 
-You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices).
+You can see an example of buttons in action at the [Intune docs](https://learn.microsoft.com/intune/get-started/choose-how-to-enroll-devices).
 
 ### Selectors
 
@@ -417,7 +417,7 @@ You can see an example of buttons in action at the [Intune docs](https://docs.mi
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+You can see an example of selectors in action at the [Intune docs](https://learn.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### Step-By-Steps
 
@@ -425,4 +425,4 @@ You can see an example of selectors in action at the [Intune docs](https://docs.
 [Pre](../docs/csharp/expression-trees-interpreting.md)
 [Next](../docs/csharp/expression-trees-translating.md)
 
-You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
+You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://learn.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
