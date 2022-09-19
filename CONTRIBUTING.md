@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to the Visual C++ documentation!
 
-In this topic, you'll see the basic process for adding or updating content in the [Visual C++ documentation site](https://docs.microsoft.com/cpp/).
+In this topic, you'll see the basic process for adding or updating content in the [Visual C++ documentation site](https://learn.microsoft.com/cpp/).
 
 In this topic, we'll cover:
 
@@ -54,7 +54,7 @@ The Visual Studio team will review your PR and let you know if the change looks 
 
 The maintainers will merge your PR into the main branch once feedback has been applied and your change looks good.
 
-On a certain cadence, we push all commits from main branch into the live branch and then you'll be able to see your contribution on [Microsoft Docs](https://docs.microsoft.com/cpp/).
+On a certain cadence, we push all commits from main branch into the live branch and then you'll be able to see your contribution on [Microsoft Learn](https://learn.microsoft.com/cpp/).
 
 ## DOs and DON'Ts
 
@@ -72,7 +72,7 @@ Below is a short list of guiding rules that you should keep in mind when you are
 
 ## Building the docs
 
-The documentation is written in [GitHub-Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](https://dotnet.github.io/docfx/) and other internal publishing and build tools. It's published on [Microsoft Docs](https://docs.microsoft.com/).
+The documentation is written in [GitHub-Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](https://dotnet.github.io/docfx/) and other internal publishing and build tools. It's published to [Microsoft Learn](https://learn.microsoft.com/).
 
 If you want to build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/); latest versions are the best.
 
