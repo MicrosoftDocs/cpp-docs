@@ -6,7 +6,7 @@ The documentation for Visual Basic and Visual C# are located in a separate repos
 
 ## Contributing to the documentation
 
-We welcome your contributions to help us improve the MSVC docs. For a comprehensive guide to contributing to Microsoft technical documentation, see the [contributor guide overview](https://learn.microsoft.com/contribute). For details on how to make a contribution to the MSVC documentation, see the [Contributing guide](CONTRIBUTING.md).
+We welcome your contributions to help us improve the MSVC docs. For a comprehensive guide to contributing, see the [Microsoft Docs contributor guide](https://learn.microsoft.com/contribute). For details on how to make a contribution to the MSVC documentation, see our [Contributing guidance](CONTRIBUTING.md).
 
 Several feature areas of MSVC have their own folders in this repository, such as `standard-library` for articles on the C++ Standard Library, `ide` for C++-specific articles on the Visual Studio interactive development environment (IDE), and so forth. The `/media` subfolder in each folder contains art files for the articles. The [Contributing guide](CONTRIBUTING.md) has more information.
 
