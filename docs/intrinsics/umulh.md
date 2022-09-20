@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: __umulh"
 title: "__umulh"
-ms.date: "09/02/2019"
+ms.date: 09/19/2022
 f1_keywords: ["__umulh"]
 helpviewer_keywords: ["__umulh intrinsic"]
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
 ---
-# __umulh
+# `__umulh`
 
 **Microsoft Specific**
 
@@ -23,10 +23,10 @@ unsigned __int64 __umulh(
 
 ### Parameters
 
-*a*\
+*`a`*\
 [in] The first number to multiply.
 
-*b*\
+*`b`*\
 [in] The second number to multiply.
 
 ## Return value
@@ -35,9 +35,9 @@ The high 64 bits of the 128-bit result of the multiplication.
 
 ## Requirements
 
-|Intrinsic|Architecture|
-|---------------|------------------|
-|`__umulh`|x64|
+| Intrinsic | Architecture |
+|--|--|
+| `__umulh` | x64, ARM64 |
 
 **Header file** \<intrin.h>
 
