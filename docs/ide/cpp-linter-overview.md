@@ -17,8 +17,8 @@ monikerRange: ">=msvc-160"
 The IntelliSense code linter for C++ helps developers find and fix common C++ problems right inside Visual Studio. It's based on the same engine that provides C++ IntelliSense, so problems are flagged as soon as you type them.
 
 :::image type="complex" source="media/linter-demo-animation.gif" alt-text="Animation showing the C plus plus linter in action.":::
-"As the user types if (i = 3), a popup appears suggesting the correction i == 3, which is selected and updates the code to read if (i == 3)"
-:::image-end
+As the user types if (i = 3), a popup appears suggesting the correction i == 3, which is selected and updates the code to read if (i == 3)
+:::image-end:::
 
 ## Find problems
 
