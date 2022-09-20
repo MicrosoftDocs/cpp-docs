@@ -16,7 +16,7 @@ monikerRange: ">=msvc-160"
 
 The IntelliSense code linter for C++ helps developers find and fix common C++ problems right inside Visual Studio. It's based on the same engine that provides C++ IntelliSense, so problems are flagged as soon as you type them.
 
-:::image type="complex" source="../ide/media/linter-demo-animation.gif" alt-text="Animation showing the C plus plus linter in action.":::
+:::image type="complex" source="media/linter-demo-animation.gif" alt-text="Animation showing the C plus plus linter in action.":::
 As the user types if (i = 3), a popup appears suggesting the correction i == 3, which is selected and updates the code to read if (i == 3)
 :::image-end
 
@@ -40,7 +40,7 @@ When you change the check severity level, it changes how the problem is shown in
 
 ::: moniker range=">=msvc-170"
 
-![Screenshot of the linter configuration window with options such as warning on accidental assignment, uninitialized local variable, and more.](../ide/media/linter-settings.png)
+![Screenshot of the linter configuration window with options such as warning on accidental assignment, uninitialized local variable, and more.](media/linter-settings.png)
 
 (The presentation in Visual Studio 2019 is slightly different, but the options are similar.)
 
