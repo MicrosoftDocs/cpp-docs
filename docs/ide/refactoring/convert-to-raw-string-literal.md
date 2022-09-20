@@ -1,22 +1,21 @@
 ---
 description: "Learn more about: Convert to Raw String Literal"
 title: "Convert to Raw String Literal"
-ms.date: "11/16/2016"
-ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
+ms.date: "09/19/2022"
 ---
 # Convert to Raw String Literal
 
-**What:** Lets you turn any string into a C++ raw string literal.
+**What:** Turn any string into a C++ raw string literal.
 
 **When:** You have a string with escaped characters which shouldn't be processed as escaped characters.
 
-**Why:** You could double-escape characters, but this often leads to confusing and unreadable strings.  Using raw string literals makes strings much easier to read.
+**Why:** You could double-escape characters, but this often leads to confusing and strings. Raw string literals makes strings much easier to read.
 
 **How:**
 
 1. Place text or mouse cursor over the escaped string to convert.
 
-   ![Screenshot showing highlighted code.](images/stringliteral_highlight.png)
+   ![Screenshot of the cursor in the middle of the word quoted on the line of code that reads: auto MyString = "A \"quoted\" string".](images/stringliteral_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
@@ -27,4 +26,4 @@ ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
 
 1. The string will be immediately converted into a raw string literal.
 
-   ![Raw String Literal result.](images/stringliteral_result.png)
+   ![Screenshot showing that the line of code now reads: auto myString = R"(A "quoted" string.)" The interior quotes are no longer escaped.](images/stringliteral_result.png)

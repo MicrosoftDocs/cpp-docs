@@ -40,7 +40,7 @@ When you change the check severity level, it changes how the problem is shown in
 
 ::: moniker range=">=msvc-170"
 
-![Screenshot showing the C plus plus linter configuration with options such as warning on accidental assignment, uninitialized local variable, and more.](../ide/media/linter-settings.png)
+![Screenshot of the linter configuration window with options such as warning on accidental assignment, uninitialized local variable, and more.](../ide/media/linter-settings.png)
 
 (The presentation in Visual Studio 2019 is slightly different, but the options are similar.)
 

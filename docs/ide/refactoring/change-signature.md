@@ -1,8 +1,7 @@
 ---
 description: "Learn more about: Change Signature"
 title: "Change Signature"
-ms.date: "11/16/2016"
-ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
+ms.date: "09/18/2022"
 ---
 # Change Signature
 
@@ -16,7 +15,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
 1. Place the text or mouse cursor inside the name of the method to modify, or one of its usages:
 
-   ![Screenshot showing highlighted code.](images/changesignature_highlight.png)
+   ![Screenshot of code with the mouse cursor on the function ChangeUserInfo.](images/changesignature_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
@@ -28,7 +27,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
 1. In the **Change Signature** dialog that pops up, you can use the buttons on the right side to change the method signature:
 
-   ![Screenshot showing the Change Signature dialog.](images/changesignature_dialog.png)
+   ![Screenshot of the Change Signature dialog for the ChangeName() function. Parameters are listed by name, type, and associated value, if any.](images/changesignature_dialog.png)
 
    | Button | Description
    | ------ | ---
@@ -44,7 +43,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
    When adding or modifying a parameter, you will see the **Add Parameter** or **Edit Parameter** window.
 
-   ![Screenshot showing the Add Modify parameter.](images/changesignature_addmodify.png)
+   ![Screenshot of the Add parameter window where you can edit or set a parameter's type, name, whether it is a default or optional.](images/changesignature_addmodify.png)
 
    Here, you can do the following:
 
@@ -60,8 +59,9 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
 1. When you are finished, press the **OK** button to make the changes.  Ensure that the changes you are requesting are being made appropriately.  Use the checkboxes in the top half of the window to enable or disable the renaming of any item.
 
-   ![Screenshot showing the Change Signature preview.](images/changesignature_preview.png)
+   ![Screenshot of a Change Signature preview. Everywhere the function is called is previewed so you can verify each change.](images/changesignature_preview.png)
 
 1. When everything looks good, click the **Apply** button and the function will be changed in your source code.
 
-   ![Screenshot showing the Change Signature result.](images/changesignature_result.png)
+   ![Screenshot of the resulting change. The parameters to ChangeUserInfo() are now: std::string lastName, std::string firstname, int age = -1).](images/changesignature_result.png)
+ß
