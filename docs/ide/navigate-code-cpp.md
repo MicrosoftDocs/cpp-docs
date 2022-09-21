@@ -47,7 +47,7 @@ You can open **Go To** with **Ctrl+,**. This action creates a search box over th
   - Properties and events.
 - **Go To Symbol** (**Ctrl 1, S**): Search results include:
   - Results from Go To Types and Go To Members.
-  - All remaining C++ language constructs, which includes macros.
+  - All remaining C++ language constructs, which include macros.
 
 When you first invoke **Go To** with **Ctrl +**, **Go To All** is activated (no filters on search results). You then can select the filter you want by using the buttons near the search box. You can invoke a specific filter using its corresponding keyboard shortcut. Doing so opens the **Go To** search box with that filter preselected. All keyboard shortcuts are configurable.
 

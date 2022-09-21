@@ -19,7 +19,7 @@ ms.date: "09/18/2022"
 
 1. Next, do one of the following:
    * **Keyboard**
-     * Press **Ctrl+R**, then **Ctrl+O**. (Your keyboard shortcut may be different based on which profile you've selected.)
+     * Press **Ctrl+R**, then **Ctrl+O**. (Your keyboard shortcut may be different depending on which profile you've selected.)
      * Press **Ctrl+.** to trigger the **Quick Actions and Refactorings** menu and select **Change Signature** from the context menu.
    * **Mouse**
      * Select **Edit > Refactor > Reorder Parameters**.
@@ -41,7 +41,7 @@ ms.date: "09/18/2022"
    > [!TIP]
    > Use the **Skip preview reference changes if all references are confirmed** checkbox to make the changes immediately without the preview window popping up first.
 
-   When adding or modifying a parameter, you will see the **Add Parameter** or **Edit Parameter** window.
+   When adding or modifying a parameter, you'll see the **Add Parameter** or **Edit Parameter** window.
 
    ![Screenshot of the Add parameter window where you can edit or set a parameter's type, name, and whether its default or optional.](images/changesignature_addmodify.png)
 
@@ -51,7 +51,7 @@ ms.date: "09/18/2022"
    | ----- | ---
    | **Type**               | The type of the parameter (int, double, float, etc.)
    | **Name**               | The name of the parameter
-   | **Optional Parameter** | Makes the parameter optionally specified
+   | **Optional Parameter** | Make the parameter optionally specified
    | **Injected Value**     | The value inserted into any calls to the function where the parameter isn't specified (only valid for **Add**)
    | **Default value**      | The value used by the function if the caller doesn't specify one (only valid for **Optional Parameters**)
 

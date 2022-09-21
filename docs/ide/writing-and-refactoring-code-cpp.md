@@ -91,7 +91,7 @@ For some kinds of errors, and common coding patterns, the editor will offer a **
 
 In the following example, a `vector` was declared but no definition was found, so the editor offers to include the necessary header file:
 
-![Screenshot showing an error squiggle and the quick fix that the editor offers. The quick fix proposed for vector<int> v is # include < vector >.](../ide/media/quick-fix-for-header-cpp.png "C++ Quick Fix")
+![Screenshot of an error and the proposed quick fix to # include vector.](../ide/media/quick-fix-for-header-cpp.png "C++ Quick Fix")
 
 The editor also offers Quick Fixes for some refactoring opportunities. For example, if you declare a class in a header file, Visual Studio will offer to create a definition for it in a separate .cpp file.
 
