@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 title: "Clang/LLVM support in Visual Studio projects"
-ms.date: 06/29/2022
+ms.date: 09/20/2022
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -52,9 +52,9 @@ To configure a Visual Studio Linux project to use Clang:
 
 On Linux, Visual Studio by default uses the first Clang location that it finds in the PATH environment property. If you're using a custom Clang installation, then either change the value of the `LLVMInstallDir` property or else enter the path under **Project** > **Properties** > **Configuration Properties** > **VC++ DIrectories** > **Executable Directories**. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 
-## <a name="custom_llvm_location"></a> Set a custom LLVM location
+## <a name="custom_llvm_location"></a> Set a custom LLVM location and toolset
 
-You can set a custom path to LLVM for one or more projects by creating a *Directory.build.props* file. Then, add that file to the root folder of any project. You can add it to the root solution folder to apply it to all projects in the solution. The file should look like this (but use your actual LLVM path and version number):
+To set a custom path to LLVM and set a custom LLVM toolset version for one or more projects, create a *Directory.build.props* file. Then, add that file to the root folder of any project. You can add it to the root solution folder to apply it to all projects in the solution. The file should look like this example (but use your actual LLVM path and version number):
 
 ```xml
 <Project>
@@ -65,17 +65,15 @@ You can set a custom path to LLVM for one or more projects by creating a *Direct
 </Project>
 ```
 
-You can combine this property with a custom LLVM toolset version. For more information, see [Set a custom LLVM toolset version](#custom_llvm_toolset).
+## <a name="custom_llvm_toolset"></a> Set a custom LLVM toolset version in the IDE
 
-## <a name="custom_llvm_toolset"></a> Set a custom LLVM toolset version
+Starting in Visual Studio 2019 version 16.9, you can set a custom toolset version for LLVM in Visual Studio. To set this property in a project:
 
-Starting in Visual Studio 2019 version 16.9, you can set a custom toolset version for LLVM. To set this property in a project in Visual Studio:
-
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](./working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties](./working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **General** property page.
 
-1. Modify the **Platform Toolset** property to *LLVM (clang-cl)*, if it isn't already set.
+1. Modify the **Platform Toolset** property to *LLVM (clang-cl)*, if it isn't already set. Choose **Apply** to save your changes.
 
 1. Select the **Configuration Properties** > **Advanced** property page.
 
@@ -83,18 +81,7 @@ Starting in Visual Studio 2019 version 16.9, you can set a custom toolset versio
 
 The **LLVM Toolset Version** property only appears when the LLVM platform toolset is selected.
 
-You can set the toolset version for one or more projects by creating a *Directory.build.props* file. Then, add that file to the root folder of any project. Add it to the root solution folder to apply it to all projects in the solution. The file should look like this (but use your actual LLVM path and version number):
-
-```xml
-<Project>
-  <PropertyGroup>
-    <LLVMInstallDir>C:\MyLLVMRootDir</LLVMInstallDir>
-    <LLVMToolsVersion>15.0.0</LLVMToolsVersion>
-  </PropertyGroup>
-</Project>
-```
-
-When you add a *Directory.build.props* file, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the *Directory.build.props* file.
+When you add a *Directory.build.props* file to a project or solution, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the *Directory.build.props* file.
 
 ## Set additional properties, edit, build, and debug
 
