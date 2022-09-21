@@ -17,11 +17,11 @@ Unused code (such as code under an #if 0) is more faded in color.
 
 ![Screenshot showing inactive code in the editor, which appears faded compared to active code.](../ide/media/inactive-code-cpp.png "C++ inactive code")
 
-You can customize the colors by typing "Fonts" in **Quick Launch**, and then choosing **Fonts and Colors**. In the **Fonts and Colors** dialog scroll down to the C/C++ options and then choose a custom font and/or color.
+You can customize the colors by typing "Fonts" in **Quick Launch**, and then choosing **Fonts and Colors**. In the **Fonts and Colors** dialog, scroll down to the C/C++ options and then choose a custom font and/or color.
 
 ## Outlining
 
-Right-click anywhere in a source code file and choose **Outlining** to collapse or expand code blocks and/or custom regions to make it easier to browse only the code you are interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
+Right-click anywhere in a source code file and choose **Outlining** to collapse or expand code blocks and/or custom regions to make it easier to browse only the code you're interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
 
 ![Screenshot of the outlining window shows the body of classes collapsed. Options for Collapse to Definitions, Toggle All Outlining, etc. are visible.](../ide/media/vs2015_cpp_outlining.png)
 
@@ -57,7 +57,7 @@ Hover over any variable, function, or other symbol to get information about it, 
 
 The **Quick Info** tooltip has a **Search Online** link. Go to **Tools** > **Options** > **Text Editor** > **C++** > **View** to specify the search provider.
 
-If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the Error List window.
+If there's an error in your code, you can hover over it, and **Quick Info** will display the error message. You can also find the error message in the Error List window.
 
 ![Screenshot of the Quick Info tooltip showing the error associated with a code squiggle.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
@@ -67,13 +67,13 @@ If there is an error in your code, you can hover over it and **Quick Info** will
 
 ![Screenshot showing the Quick Info tooltip in Visual Studio 2017.](../ide/media/quick-info.png "Quick Info")
 
-If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the **Error List** window.
+If there's an error in your code, you can hover over it, and **Quick Info** will display the error message. You can also find the error message in the **Error List** window.
 
 ![Screenshot of the Quick Info tooltip showing the error associated with a code squiggle.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
 ::: moniker-end
 
-When you call a function, **Parameter Info** shows the types of parameters and the order in which they are expected.
+When you call a function, **Parameter Info** shows the types of parameters and the order in which they're expected.
 
 ![Screenshot of parameter info showing the parameters for the function resize on vector v. The parameter info is: const size_t _Newsize, const int & _Val.](../ide/media/parameter-info.png)
 

@@ -19,7 +19,7 @@ ms.date: "09/19/2022"
 
 1. Next, do one of the following:
    * **Keyboard**
-     * Press **Ctrl+R**, then **Ctrl+R**.  (Note that your keyboard shortcut may be different based on which profile you've selected.)
+     * Press **Ctrl+R**, then **Ctrl+R**.  (Your keyboard shortcut may be different depending on which profile you've selected.)
    * **Mouse**
      * Select **Edit > Refactor > Rename**.
      * Right-click the code and select **Rename**.
@@ -31,8 +31,8 @@ ms.date: "09/19/2022"
    > [!TIP]
    > You can skip the preview by checking the **Skip preview changes if references are all confirmed** option.
 
-1. When the **Preview Changes - Rename** window appears, ensure that the changes you are requesting are being made appropriately.  Use the checkboxes in the top half of the window to enable or disable the renaming of any item.
+1. When the **Preview Changes - Rename** window appears, ensure that the changes you're requesting are being made appropriately.  Use the checkboxes in the top half of the window to enable or disable the renaming of any item.
 
    ![Screenshot of the rename preview dialog which shows the proposed changes and allows you to deselect those you don't want.](images/rename_preview.png)
 
-1. When everything looks good, click the **Apply** button and the item will be renamed in your source code.
+1. When everything looks good, click the **Apply** button, and the item will be renamed in your source code.

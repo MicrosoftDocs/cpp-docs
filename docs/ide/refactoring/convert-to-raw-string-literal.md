@@ -7,9 +7,9 @@ ms.date: "09/19/2022"
 
 **What:** Turn any string into a C++ raw string literal.
 
-**When:** You have a string with escaped characters which shouldn't be processed as escaped characters.
+**When:** You have a string with escaped characters, which shouldn't be processed as escaped characters.
 
-**Why:** You could double-escape characters, but this often leads to confusing and strings. Raw string literals makes strings much easier to read.
+**Why:** You could double-escape characters, but this often leads to confusing and strings. Raw string literals make strings much easier to read.
 
 **How:**
 
@@ -22,7 +22,7 @@ ms.date: "09/19/2022"
      * Press **Ctrl+.** to trigger the **Quick Actions and Refactorings** menu and select **Convert to Raw String Literal** from the context menu.
    * **Mouse**
      * Right-click the code, select the **Quick Actions and Refactorings** menu and select **Convert to Raw String Literal** from the context menu.
-     * Click the ![Lightbulb.](images/bulb.png) icon which appears in the left margin and select **Convert to Raw String Literal** from the context menu.
+     * Click the ![Lightbulb.](images/bulb.png) icon that appears in the left margin and select **Convert to Raw String Literal** from the context menu.
 
 1. The string will be immediately converted into a raw string literal.
 

@@ -25,7 +25,7 @@ You can navigate to the definition of a code element with a right-click in the e
 
 ## Go To
 
-**Go To** refers to a set of navigation features that each provide a specific kind of result based on filters you specify.
+**Go To** refers to a set of navigation features that each provide a specific result based on filters you specify.
 
 You can open **Go To** with **Ctrl+,**. This action creates a search box over the document you're editing.
 
@@ -110,7 +110,7 @@ To filter results, hover over a column and select the filtering icon that pops u
 
 - **Disconfirmed results**: This filter is off by default because it shows symbols whose name matches but aren't actual references to the symbol you're searching for. For example, if you have two classes that each define a member function called `Size`, and you run a search for `Size` on a reference from an object of `Class1`, any references to `Size` from `Class2` appear as disconfirmed.
 
-- **Unprocessed results**: **Find All References** operations can take time to complete on larger codebases, so the Results list shows "unprocessed" results here. Unprocessed results match the name of the symbol being searched for but haven't yet been confirmed as actual code references. You can turn on this filter to get faster results. Just be aware that some results might not be actual references.
+- **Unprocessed results**: **Find All References** operations can take time to complete on larger codebases, so the Results list shows "unprocessed" results here. Unprocessed results match the name of the symbol being searched for but haven't yet been confirmed as actual code references. You can turn on this filter to get faster results. Some results might not be actual references.
 
 #### Sort results
 

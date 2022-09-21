@@ -9,7 +9,7 @@ ms.date: "09/19/2022"
 
 **When:** You have a function that needs a declaration, or vice-versa.
 
-**Why:** You could manually create the declaration/definition, but this will create it automatically, creating the header/code file if required.
+**Why:** You could manually create the declaration/definition, but this will create it automatically, creating the header/code file if necessary.
 
 **How:**
 
@@ -23,6 +23,6 @@ ms.date: "09/19/2022"
    * **Mouse**
      * Right-click and select the **Quick Actions and Refactorings** menu and select **Create Declaration / Definition** from the context menu.
 
-1. The function's declaration/definition will be created in the source or header file, which you will see in a popup preview window.  If the source or header file does not exist, it will also be created and placed in the project.
+1. The function's declaration/definition will be created in the source or header file, which you'll see in a popup preview window.  If the source or header file doesn't exist, it will also be created and placed in the project.
 
    ![Screenshot showing a popup window containing the header file Source.h with the created declaration: void MyFunction(int x);.](images/createdefinition_result.png)

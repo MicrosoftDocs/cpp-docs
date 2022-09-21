@@ -9,7 +9,7 @@ ms.date: "09/19/2022"
 
 **When:** You have a function that you want to move to a header file.
 
-**Why:** You could manually move the function, but this feature will move it automatically, and create the header file if required.
+**Why:** You could manually move the function, but this feature will move it automatically, and create the header file if necessary.
 
 **How:**
 
@@ -23,6 +23,6 @@ ms.date: "09/19/2022"
    * **Mouse**
      * Right-click and select the **Quick Actions and Refactorings** menu and select **Move Definition Location** from the context menu.
 
-1. The function will be moved to the corresponding header file, which you will see in a popup preview window.  If the header file does not exist, it will also be created and placed in the project.
+1. The function will be moved to the corresponding header file, which you'll see in a popup preview window.  If the header file doesn't exist, it will also be created and placed in the project.
 
    ![Screenshot of a pop-up window containing a header file that the function was moved to.](images/movedefinition_result.png)

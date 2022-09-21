@@ -11,9 +11,9 @@ In Visual Studio 2019 and Visual Studio Code, you can use **Live Share** to coll
 
 ## Live Share host and guests
 
-In a Live Share session there is a host and one or more guests. Both host and guests can use either Visual Studio or Visual Studio Code. A Visual Studio 2019 host on Windows can share with a Visual Studio Code guest on Linux.
+In a Live Share session, there's a host and one or more guests. Both host and guests can use either Visual Studio or Visual Studio Code. A Visual Studio 2019 host on Windows can share with a Visual Studio Code guest on Linux.
 
-The host provides the guests with everything they need to be productive. Guests are not required to have the source code, compiler, external dependencies, or even the same installed components.
+The host provides the guests with everything they need to be productive. Guests aren't required to have the source code, compiler, external dependencies, or even the same installed components.
 
 The host and guests can use these IntelliSense features:
 

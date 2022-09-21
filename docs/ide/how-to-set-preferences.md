@@ -16,7 +16,7 @@ You can make your C++ coding experience more convenient, productive, and pleasur
 - Specify C++ formatting rules, including several styles of ClangFormat.
 - Create custom keyboard shortcuts.
 
-You can synchronize your preferences across multiple machines, and create and store multiple sets of preferences and share them with teammates. You can install extensions from the Visual Studio Marketplace, giving you additional options for customizing behavior. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+You can synchronize your preferences across multiple machines, and create and store multiple sets of preferences and share them with teammates. You can install extensions from the Visual Studio Marketplace, giving you more options for customizing behavior. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 ## Arrange window layout
 
@@ -54,7 +54,7 @@ In Visual Studio 2019, you can choose from three predefined *color schemes*. The
 
 ![Screenshot of C++ Color Scheme dropdown options. Of the available options, Enhanced is highlighted.](media/color-schemes.png)
 
-In the color scheme called **Visual Studio 2017**, most code elements are simply black. In the **Enhanced** color scheme, functions, local variables, macros, and other elements are colorized. In the **Enhanced (Globals vs. Members)** scheme, global functions and variables are colorized to contrast with class members. The default mode is **Enhanced**, and it looks like this:
+In the color scheme called **Visual Studio 2017**, most code elements are black. In the **Enhanced** color scheme, functions, local variables, macros, and other elements are colorized. In the **Enhanced (Globals vs. Members)** scheme, global functions and variables are colorized to contrast with class members. The default mode is **Enhanced**, and it looks like this:
 
 ![Screenshot of the enhanced color scheme which has a black background and colors for C++ keywords such as blue for int and green for comments.](media/color-scheme-enhanced.png)
 
