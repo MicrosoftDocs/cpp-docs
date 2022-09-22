@@ -1,39 +1,39 @@
 ---
 description: "Learn more about: /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)"
 title: "/CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)"
-ms.date: "11/04/2016"
-f1_keywords: ["/CLRSUPPORTLASTERROR"]
+ms.date: 09/19/2022
+f1_keywords: ["VC.Project.VCLinkerTool.CLRSupportLastError", "/CLRSUPPORTLASTERROR"]
 helpviewer_keywords: ["/CLRSUPPORTLASTERROR linker option", "-CLRSUPPORTLASTERROR linker option"]
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
 ---
-# /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)
+# `/CLRSUPPORTLASTERROR` (Preserve Last Error Code for PInvoke Calls)
 
-**/CLRSUPPORTLASTERROR**, which is on by default, preserves the last error code of functions called through the P/Invoke mechanism, which allows you to call native functions in DLLS, from code compiled with **/clr**.
+**`/CLRSUPPORTLASTERROR`**, which is on by default, preserves the last error code of functions called through the P/Invoke mechanism, which allows you to call native functions in DLLS, from code compiled with **`/clr`**.
 
 ## Syntax
 
-```
-/CLRSUPPORTLASTERROR{:NO | SYSTEMDLL}
-```
+> **`/CLRSUPPORTLASTERROR`**\
+> **`/CLRSUPPORTLASTERROR:NO`**\
+> **`/CLRSUPPORTLASTERROR:SYSTEMDLL`**
 
 ## Remarks
 
-Preserving the last error code implies a decrease in performance.  If you do not want to incur the performance impact of preserving the last error code, link with  **/CLRSUPPORTLASTERROR:NO**.
+Preserving the last error code implies a decrease in performance.  If you don't want to incur the performance cost of preserving the last error code, link by using **`/CLRSUPPORTLASTERROR:NO`**.
 
-You can minimize the performance impact by linking with **/CLRSUPPORTLASTERROR:SYSTEMDLL**, which only preserves the last error code for functions in system DLLs.
+You can minimize the performance penalty by linking with **`/CLRSUPPORTLASTERROR:SYSTEMDLL`**, which only preserves the last error code for functions in system DLLs.
 
 > [!NOTE]
-> Preserving the last error is not supported for unmanaged functions that are consumed by CLR code, in the same module.
+> Preserving the last error isn't supported for unmanaged functions that are consumed by CLR code in the same module.
 
-- For more information, see [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md).
+- For more information, see [`/clr` (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md).
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
-1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
-1. Enter the option into the **Additional Options** box.
+1. Modify the **Preserve Last Error Code for PInvoke Calls** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
@@ -56,7 +56,7 @@ __declspec(dllexport) double MySqrt(__int64 n) {
 }
 ```
 
-The following sample consumes the DLL, demonstrating how to use **/CLRSUPPORTLASTERROR**.
+The following sample consumes the DLL, demonstrating how to use **`/CLRSUPPORTLASTERROR`**.
 
 ```cpp
 // CLRSUPPORTLASTERROR_client.cpp
@@ -109,5 +109,5 @@ GetLastError for system call succeeded (183).
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
-[MSVC Linker Options](linker-options.md)
+[MSVC linker reference](linking.md)\
+[MSVC linker options](linker-options.md)
