@@ -28,7 +28,7 @@ Starting in Visual Studio 2022, the C++ Linter is enabled by default. To use it,
 
 Most of the linter checks have suggestions for fixing the problem. Hover over the error squiggle and choose the light bulb that pops up to see the suggestions. A preview diff of the suggested change is shown, so you can confirm the change makes sense before you apply it.
 
-## <a name="configure-the-linter"> Configure the linter
+## Configure the linter
 
 You can enable or disable the linter, or configure the severity level for each check, in the C++ Code Style options.
 
