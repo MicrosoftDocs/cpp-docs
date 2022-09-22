@@ -22,7 +22,6 @@ f1_keywords:
   - VC.Project.VCManifestTool.ReplacementsFile
   - VC.Project.VCManifestTool.UpdateFileHashes
   - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
-  - vc.project.AdditionalOptionsPage
 ---
 # Manifest Tool Property Pages
 

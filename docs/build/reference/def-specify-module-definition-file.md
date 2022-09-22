@@ -1,37 +1,37 @@
 ---
-description: "Learn more about: /DEF (Specify Module-Definition File)"
-title: "/DEF (Specify Module-Definition File)"
-ms.date: "11/04/2016"
+description: "Learn more about: /DEF (Specify module-definition file)"
+title: "/DEF (Specify module-definition file)"
+ms.date: 09/09/2022
 f1_keywords: ["VC.Project.VCLinkerTool.ModuleDefinitionFile", "/def"]
 helpviewer_keywords: ["module definition files, specifying", "DEF linker option", "-DEF linker option", "module definition files", "/DEF linker option"]
 ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a
 ---
-# /DEF (Specify Module-Definition File)
+# `/DEF` (Specify module-definition file)
 
-```
-/DEF:filename
-```
+Specifies a module-definition file to the linker.
+
+## Syntax
+
+> **`/DEF:`***`filename`*
 
 ## Arguments
 
-*filename*<br/>
-The name of a module-definition file (.def) to be passed to the linker.
+*`filename`*\
+The name of a module-definition file (*`.def`*) to be passed to the linker.
 
 ## Remarks
 
-The /DEF option passes a module-definition file (.def) to the linker. Only one .def file can be specified to LINK. For details about .def files, see [Module-Definition Files](module-definition-dot-def-files.md).
+The **`/DEF`** linker option passes a module-definition file (*`.def`*) to the linker. Only one *`.def`* file can be specified to LINK. For details about *`.def`* files, see [Module-definition files](module-definition-dot-def-files.md).
+
+To specify a *`.def`* file from within the development environment, add it to the project along with your other source files and then specify the file in the project's **Property Pages** dialog.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
+1. Select the **Configuration Properties** > **Linker** > **Input** property page.
 
-1. Click the **Input** property page.
-
-1. Modify the **Module Definition File** property.
-
-To specify a .def file from within the development environment, you should add it to the project along with other files and then specify the file to the /DEF option.
+1. Modify the **Module Definition File** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
@@ -39,5 +39,5 @@ To specify a .def file from within the development environment, you should add i
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
+[MSVC linker reference](linking.md)\
 [MSVC Linker Options](linker-options.md)

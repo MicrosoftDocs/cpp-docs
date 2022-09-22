@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: /DELAY (Delay load import settings)"
 title: "/DELAY (Delay load import settings)"
-ms.date: 01/28/2021
-f1_keywords: ["/delay", "VC.Project.VCLinkerTool.DelayNoBind", "VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL", "VC.Project.VCLinkerTool.DelayUnload"]
+ms.date: 09/19/2022
+f1_keywords: ["/delay", "VC.Project.VCLinkerTool.DelayNoBind", "VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL", "VC.Project.VCLinkerTool.DelayUnload", "VC.Project.VCLinkerTool.SupportNobindOfDelayLoadedDLL"]
 helpviewer_keywords: ["delayed loading of DLLs, /DELAY option", "DELAY linker option", "/DELAY linker option", "-DELAY linker option"]
 ---
 # `/DELAY` (Delay load import settings)
@@ -32,15 +32,15 @@ To specify DLLs to delay load, use the [`/DELAYLOAD`](delayload-delay-load-impor
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
-1. Modify the **Delay Loaded DLL** property. Choose **OK** to save your changes.
+1. Modify the **Unload delay loaded DLL** property or the **Unbind delay loaded DLL** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
-- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>.
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## See also
 
