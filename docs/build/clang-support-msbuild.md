@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 title: "Clang/LLVM support in Visual Studio projects"
-ms.date: 06/29/2022
+ms.date: 09/20/2022
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -9,23 +9,23 @@ helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 
 ::: moniker range="<=msvc-150"
 
-Clang support for both CMake and MSBuild projects is available in Visual Studio 2019.
+Clang/LLVM support for both CMake and MSBuild projects is available in Visual Studio 2019 and Visual Studio 2022.
 
 ::: moniker-end
 
 ::: moniker range=">=msvc-160"
 
-You can use Visual Studio 2019 version 16.2 and later with Clang to edit, build, and debug C++ Visual Studio projects (MSBuild) that target Windows or Linux.
+You can use Visual Studio 2019 version 16.2 and later with Clang/LLVM to edit, build, and debug C++ Visual Studio projects (MSBuild) that target Windows or Linux.
 
 ## Install
 
-For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have the tools, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose **C++ Clang-cl for v142 build tools**.
+For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have the tools, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose **C++ Clang-cl for v142 build tools** or **C++ Clang-cl for v143 build tools**.
 
 The Microsoft C++ Standard Library requires at least Clang 8.0.0.
 
 ![Screenshot of the Visual Studio installer with the Individual components tab selected and the C plus plus Clang components visible.](media/clang-install-vs2019.png)
 
-Later versions of Visual Studio provide newer versions of the Clang toolset. The bundled version of Clang gets updated automatically to stay current with updates in the Microsoft implementation of the Standard Library. For example, Visual Studio 2019 version 16.9 includes Clang v11.
+Later versions of Visual Studio provide newer versions of the Clang toolset. The bundled version of Clang gets updated automatically to stay current with updates in the Microsoft implementation of the Standard Library. For example, Visual Studio 2019 version 16.11 includes Clang v12.
 
 ## Configure a Windows project to use Clang tools
 
@@ -52,29 +52,28 @@ To configure a Visual Studio Linux project to use Clang:
 
 On Linux, Visual Studio by default uses the first Clang location that it finds in the PATH environment property. If you're using a custom Clang installation, then either change the value of the `LLVMInstallDir` property or else enter the path under **Project** > **Properties** > **Configuration Properties** > **VC++ DIrectories** > **Executable Directories**. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 
-## <a name="custom_llvm_location"></a> Set a custom LLVM location
+## <a name="custom_llvm_location"></a> Set a custom LLVM location and toolset
 
-You can set a custom path to LLVM for one or more projects by creating a *Directory.build.props* file. Then, add that file to the root folder of any project. You can add it to the root solution folder to apply it to all projects in the solution. The file should look like this (but use your actual LLVM path):
+To set a custom path to LLVM and set a custom LLVM toolset version for one or more projects, create a *Directory.build.props* file. Then, add that file to the root folder of any project. You can add it to the root solution folder to apply it to all projects in the solution. The file should look like this example (but use your actual LLVM path and version number):
 
 ```xml
 <Project>
   <PropertyGroup>
     <LLVMInstallDir>C:\MyLLVMRootDir</LLVMInstallDir>
+    <LLVMToolsVersion>15.0.0</LLVMToolsVersion>
   </PropertyGroup>
 </Project>
 ```
 
-You can combine this property with a custom LLVM toolset version. For more information, see [Set a custom LLVM toolset version](#custom_llvm_toolset).
+## <a name="custom_llvm_toolset"></a> Set a custom LLVM toolset version in the IDE
 
-## <a name="custom_llvm_toolset"></a> Set a custom LLVM toolset version
+Starting in Visual Studio 2019 version 16.9, you can set a custom toolset version for LLVM in Visual Studio. To set this property in a project:
 
-Starting in Visual Studio 2019 version 16.9, you can set a custom toolset version for LLVM. To set this property in a project in Visual Studio:
-
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](./working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties](./working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **General** property page.
 
-1. Modify the **Platform Toolset** property to *LLVM (clang-cl)*, if it isn't already set.
+1. Modify the **Platform Toolset** property to *LLVM (clang-cl)*, if it isn't already set. Choose **Apply** to save your changes.
 
 1. Select the **Configuration Properties** > **Advanced** property page.
 
@@ -82,28 +81,7 @@ Starting in Visual Studio 2019 version 16.9, you can set a custom toolset versio
 
 The **LLVM Toolset Version** property only appears when the LLVM platform toolset is selected.
 
-You can set the toolset version for one or more projects by creating a *Directory.build.props* file. Then, add that file to the root folder of any project. Add it to the root solution folder to apply it to all projects in the solution. The file should look like this (but use your actual LLVM path):
-
-```xml
-<Project>
-  <PropertyGroup>
-    <LLVMToolsVersion>11.0.0</LLVMToolsVersion>
-  </PropertyGroup>
-</Project>
-```
-
-You can also combine this property with a custom LLVM location. For example, your *Directory.build.props* file could look like:
-
-```xml
-<Project>
-  <PropertyGroup>
-    <LLVMInstallDir>C:\MyLLVMRootDir</LLVMInstallDir>
-    <LLVMToolsVersion>11.0.0</LLVMToolsVersion>
-  </PropertyGroup>
-</Project>
-```
-
-When you add a *Directory.build.props* file, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the *Directory.build.props* file.
+When you add a *Directory.build.props* file to a project or solution, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the *Directory.build.props* file.
 
 ## Set additional properties, edit, build, and debug
 
