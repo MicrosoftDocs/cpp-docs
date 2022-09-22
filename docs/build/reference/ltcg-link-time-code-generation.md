@@ -1,8 +1,8 @@
 ---
 title: "/LTCG (Link-time code generation)"
 description: "The MSVC linker option /LTCG enables link-time code generation for whole-program optimization."
-ms.date: 08/31/2022
-f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization"]
+ms.date: 09/08/2022
+f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization", "VC.Project.VCLinkerTool.LinkStatus"]
 helpviewer_keywords: ["link-time code generation in C++ linker", "/LTCG linker option", "-LTCG linker option", "LTCG linker option"]
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
 ---
@@ -124,13 +124,39 @@ Modules that are compiled by using [`/GL`](gl-whole-program-optimization.md) and
 
 ### To set this compiler option in the Visual Studio development environment
 
+The Whole Program Optimization property sets several compiler and linker options, including **`/LTCG`**. We recommend you use this property to change the settings for an entire build configuration. To set Whole Program Optimization for your project:
+
 1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **General** property page.
 
-1. Modify the **Whole Program Optimization** property.
+1. Modify the **Whole Program Optimization** property. Choose **OK** or **Apply** to save your changes.
 
 You can also apply **`/LTCG`** to specific builds by choosing **Build** > **Profile Guided Optimization** on the menu bar, or by choosing one of the Profile Guided Optimization options on the shortcut menu for the project.
+
+To enable Link Time Code Generation separately or set a specific Link Time Code Generation option:
+
+1. Open the project **Property Pages** dialog box.
+
+1. Select the **Configuration Properties** > **Linker** > **Optimization** property page.
+
+1. Modify the **Link Time Code Generation** property to one of the following options:
+   - **Default**
+   - **Use Fast Link Time Code Generation (LTCG:incremental)**
+   - **Use Link Time Code Generation (LTCG)**
+   - **Profile Guided Optimization - Instrument (LTCG:PGInstrument)**
+   - **Profile Guided Optimization - Optimization (LTCG:PGOptimize)**
+   - **Profile Guided Optimization - Update (LTCG:PGUpdate)**
+
+1. Choose **OK** or **Apply** to save your changes.
+
+To specify whether the linker displays a progress indicator for Link Time Code Generation:
+
+1. Open the project **Property Pages** dialog box.
+
+1. Select the **Configuration Properties** > **Linker** > **General** property page.
+
+1. Modify the **Link Status** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this compiler option programmatically
 

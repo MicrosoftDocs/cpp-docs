@@ -12,7 +12,7 @@ The C++ standard defines two kinds of conforming libraries:
 - A *hosted implementation*, which supports all of the required standard library headers described by the C++ ISO standard.
 - A *freestanding implementation*, which requires only a subset of the standard library headers. The required subset is:
 
-| Freestanding header subset |  |  |
+| Freestanding header subset | &emsp; | &emsp; |
 |--|--|--|
 | [`<atomic>`](../standard-library/atomic.md) (declaring at least `atomic_signed_lock_free` and `atomic_unsigned_lock_free`) | [`<cstdint>`](../standard-library/cstdint.md) | [`<ranges>`](../standard-library/ranges.md) |
 | [`<bit>`](../standard-library/bit.md) | [`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least `abort`, `atexit`, `at_quick_exit`, `exit`, `quick_exit`) | [`<ratio>`](../standard-library/ratio.md) |

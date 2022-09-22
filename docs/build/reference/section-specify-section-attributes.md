@@ -1,19 +1,19 @@
 ---
 description: "Learn more about: /SECTION (Specify Section Attributes)"
 title: "/SECTION (Specify Section Attributes)"
-ms.date: 03/02/2022
-f1_keywords: ["/section"]
+ms.date: 09/09/2022
+f1_keywords: ["VC.Project.VCLinkerTool.SpecifySectionAttributes", "/section"]
 helpviewer_keywords: ["SECTION linker option", "-SECTION linker option", "section attributes", "/SECTION linker option"]
 ---
 # `/SECTION` (Specify Section Attributes)
 
-> **`/SECTION:`***`name`***`,`**[[**`!`**]{**`D`**\|**`E`**\|**`K`**\|**`P`**\|**`R`**\|**`S`**\|**`W`**}][**`,ALIGN=`***`number`*]
+> **`/SECTION:`***`name`***`,`**\[\[**`!`**]{**`D`**\|**`E`**\|**`K`**\|**`P`**\|**`R`**\|**`S`**\|**`W`**}]\[**`,ALIGN=`***`number`*]
 
 ## Remarks
 
 The **`/SECTION`** option changes the attributes of a section, overriding the attributes set when the *`.obj`* file for the section was compiled.
 
-A *section* in a portable executable (PE) file is a named contiguous block of memory that contains either code or data. Some sections contain code or data that your program declared and uses directly. Other data sections are created for you by the linker and library manager (*`lib.exe`*) and contain information vital to the operating system. For more information, see [PE Format](/windows/win32/Debug/pe-format).
+A *section* in a portable executable (PE) file is a named contiguous block of memory that contains either code or data. Some sections contain code or data that your program declared and uses directly. Other data sections are created for you by the linker and library manager (LIB) and contain information vital to the operating system. For more information, see [PE Format](/windows/win32/Debug/pe-format).
 
 Specify a colon (**`:`**) and a section name *`name`*. The *`name`* is case sensitive.
 
@@ -69,11 +69,11 @@ The **`ALIGN=`***`number`* argument lets you specify an alignment value for a pa
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
-1. Choose the **Configuration Properties** > **Linker** > **Command Line** property page.
+1. Choose the **Configuration Properties** > **Linker** > **General** property page.
 
-1. Enter the option in the **Additional Options** box. Choose **OK** or **Apply** to apply the change.
+1. Modify the **Specify Section Attributes** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
