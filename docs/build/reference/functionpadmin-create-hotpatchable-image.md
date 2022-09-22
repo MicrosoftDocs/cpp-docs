@@ -1,37 +1,37 @@
 ---
-description: "Learn more about: /FUNCTIONPADMIN (Create Hotpatchable Image)"
-title: "/FUNCTIONPADMIN (Create Hotpatchable Image)"
-ms.date: "03/09/2018"
-f1_keywords: ["/functionpadmin"]
+description: "Learn more about: /FUNCTIONPADMIN (Create hotpatchable image)"
+title: "/FUNCTIONPADMIN (Create hotpatchable image)"
+ms.date: 09/09/2022
+f1_keywords: ["VC.Project.VCLinkerTool.CreateHotPatchableImage", "/functionpadmin"]
 helpviewer_keywords: ["-FUNCTIONPADMIN linker option", "/FUNCTIONPADMIN linker option"]
 ms.assetid: 25b02c13-1add-4fbd-add9-fcb30eb2cae7
 ---
-# /FUNCTIONPADMIN (Create Hotpatchable Image)
+# `/FUNCTIONPADMIN` (Create hotpatchable image)
 
-Prepares an image for hotpatching.
+Tells the linker to prepare an executable image for hot patching.
 
 ## Syntax
 
-> **/FUNCTIONPADMIN**[**:**_space_]
+> **`/FUNCTIONPADMIN`**[**`:`***`size`*]
 
 ### Arguments
 
-*space*<br/>
-The amount of padding to add to the beginning of each function in bytes. On x86 this defaults to 5 bytes of padding and on x64 this defaults to 6 bytes. On other targets a value must be provided.
+*`size`*\
+The amount of padding to add to the beginning of each function in bytes. On x86 the default is 5 bytes of padding and on x64 the default is 6 bytes. On other targets a value must be provided.
 
 ## Remarks
 
-In order for the linker to produce a hotpatchable image, the .obj files must have been compiled with [/hotpatch (Create Hotpatchable Image)](hotpatch-create-hotpatchable-image.md).
+In order for the linker to produce a hotpatchable image, the *`.obj`* files must be compiled by using the [`/hotpatch` (Create hotpatchable image)](hotpatch-create-hotpatchable-image.md) compiler option.
 
-When you compile and link an image with a single invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.
+When you compile and link an image with a single invocation of cl.exe, **`/hotpatch`** implies **`/FUNCTIONPADMIN`**.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
-1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
+1. Select the **Configuration Properties** > **Linker** > **General** property page.
 
-1. Enter the **/FUNCTIONPADMIN** option in **Additional Options**. Choose **OK** to save your changes.
+1. Modify the **Create Hot Patchable Image** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
@@ -39,5 +39,5 @@ When you compile and link an image with a single invocation of cl.exe, **/hotpat
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
-[MSVC Linker Options](linker-options.md)
+[MSVC linker reference](linking.md)\
+[MSVC linker options](linker-options.md)

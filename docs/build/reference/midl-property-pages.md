@@ -47,7 +47,6 @@ f1_keywords:
   - VC.Project.VCMidlTool.StructMemberAlignment
   - VC.Project.VCMidlTool.RedirectOutputAndErrors
   - VC.Project.VCMidlTool.MinimumTargetSystem
-  - vc.project.AdditionalOptionsPage
 ---
 # MIDL Property Pages
 
