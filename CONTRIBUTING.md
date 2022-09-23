@@ -8,7 +8,7 @@ In this topic, we'll cover:
 
 - [Process for contributing](#process-for-contributing)
 - [DOs and DON'Ts](#dos-and-donts)
-- [Building the docs](#building-the-docs)
+- [Building the documentation](#building-the-documentation)
 - [Contributing to samples](#contributing-to-samples)
 - [Contributor license agreement](#contributor-license-agreement)
 
@@ -70,11 +70,11 @@ Below is a short list of guiding rules that you should keep in mind when you are
 > [!NOTE]
 > You might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/MicrosoftDocs/cpp-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
 
-## Building the docs
+## Building the documentation
 
 The documentation is written in [GitHub-Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](https://dotnet.github.io/docfx/) and other internal publishing and build tools. It's published to [Microsoft Learn](https://learn.microsoft.com/).
 
-If you want to build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/); latest versions are the best.
+If you want to build the documentation locally, you need to install the latest version of [DocFX](https://dotnet.github.io/docfx/).
 
 There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool. If you are comfortable with other ways listed on the link above, feel free to use those.
 
@@ -94,6 +94,6 @@ For now, include required sample code as inline code blocks in your article. The
 
 ## Contributor license agreement
 
-You must sign the [Contribution License Agreement (CLA)](LICENSE) before your PR is merged. This is a one-time requirement for projects on Microsoft Docs. You can read more about [Contribution License Agreements (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+You must sign the [Contribution License Agreement (CLA)](LICENSE) before your PR is merged. This is a one-time requirement for projects on Microsoft Learn. You can read more about [Contribution License Agreements (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
 You don't have to sign the agreement up-front. You can clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you fixed a typo), then the PR is labeled with CLA-not-required. Otherwise, it's classified as CLA-required. Once you signed the CLA, the current and all future pull requests are labeled as CLA-signed.
