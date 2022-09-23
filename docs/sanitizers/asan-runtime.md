@@ -90,7 +90,7 @@ For more information, see the [Differences with Clang 12.0](./asan.md#difference
 String, set to `"error"` by default. Possible values are `"error"`, `"protect"`, and `"ignore"`. Certain modules (commonly drivers) may overwrite the [`import address table`](/windows/win32/debug/pe-format#import-address-table) of different modules to provide custom implementations of certain functions for any reason. This option manages the protection level from the runtime regarding overwrites for specific [`memoryapi.h`](/windows/win32/api/memoryapi/) functions.
   * The functions currently tracked for protection are [`VirtualAlloc`](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc), [`VirtualProtect`](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect), and [`VirtualQuery`](/windows/win32/api/memoryapi/nf-memoryapi-virtualquery).
   * If set to `"error"`, the default value, the runtime will report an error whenever an overwrite is detected.
-  * If set to `"protect"`, the runtime will attempt to protect the binary from overwriting and proceed. This means the `memoryapi` definition of the function will always be used, regardless of the overwritten definition, from entry points into the runtime.
+  * If set to `"protect"`, the runtime will attempt to avoid using the overwritten definition and proceed. This means the `memoryapi` definition of the function will be used from inside the runtime to avoid infinite recursion. Other modules in the process will still use the overwritten definition.
   * If set to `"ignore"`, the runtime will not attempt to correct any overwrite and proceed with execution.
 
 ## <a name="intercepted_functions"></a> AddressSanitizer list of intercepted functions (Windows)
