@@ -9,7 +9,7 @@ ms.custom: intro-whats-new
 
 Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environment. We've fixed many bugs and issues in the compiler and tools. Many of these issues were submitted by customers through the [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) and [Provide a Suggestion](https://aka.ms/feedback/suggest?space=62) options under **Send Feedback**. Thank you for reporting bugs!
 
-For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
+For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For more information, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
 
 ## What's new for C++ in Visual Studio version 16.11
 
@@ -309,7 +309,7 @@ The new IntelliCode features (Custom Models, C++ support, and EditorConfig infer
 
 #### Quick Info improvements
 
-- The Quick Info tooltip now respects the semantic colorization of your editor. It also has a new **Search Online** link that will search for online docs to learn more about the hovered code construct. The link provided by Quick Info for red-squiggled code will search for the error online. That way you don't need to retype the message into your browser. For more information, see [Quick Info Improvements in Visual Studio 2019: Colorization and Search Online](https://devblogs.microsoft.com/cppblog/quick-info-improvements-in-visual-studio-2019-colorization-and-search-online/).
+- The Quick Info tooltip now respects the semantic colorization of your editor. It also has a new **Search Online** link that will search online documentation for information about the hovered code construct. The link provided by Quick Info for red-squiggled code will search for the error online. That way you don't need to retype the message into your browser. For more information, see [Quick Info Improvements in Visual Studio 2019: Colorization and Search Online](https://devblogs.microsoft.com/cppblog/quick-info-improvements-in-visual-studio-2019-colorization-and-search-online/).
 
 #### General improvements
 
@@ -504,7 +504,7 @@ IncrediBuild is included as an optional component in the **Desktop development w
   - MFC class from ActiveX control
   - MFC class from Type Lib.
 
-  Sample code for these technologies is archived in Microsoft Docs and the VCSamples GitHub repository.
+  Sample code for these technologies is archived in Microsoft Learn and the VCSamples GitHub repository.
 
 - The Windows 8.1 Software Development Kit (SDK) is no longer available in the Visual Studio installer. We recommend you upgrade your C++ projects to the latest Windows SDK. If you have a hard dependency on 8.1, you can download it from the Windows SDK archive.
 
