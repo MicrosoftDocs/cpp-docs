@@ -198,8 +198,8 @@ The cross-platform **vcpkg** command-line tool greatly simplifies the discovery 
 
 ## Visual Studio C++ feedback and community
 
-[Microsoft Docs Q&A](/answers/topics/c%2B%2B.html)\
-Microsoft Docs hosts searchable forums for questions and answers. Add a `C++` tag to your post for community assistance on C++-related issues.
+[Microsoft Learn Q&A](/answers/topics/c%2B%2B.html)\
+Microsoft Learn hosts searchable forums for questions and answers. Add a `C++` tag to your post for community assistance on C++-related issues.
 
 [How to report a problem with the Microsoft C/C++ toolset](how-to-report-a-problem-with-the-visual-cpp-toolset.md)\
 Learn how to create effective error reports against the Microsoft C/C++ toolset (compiler, linker, and other tools), and ways to submit your report.
