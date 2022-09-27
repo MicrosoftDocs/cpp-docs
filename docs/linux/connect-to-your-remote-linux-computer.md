@@ -116,8 +116,8 @@ Starting in Visual Studio version 16.9, support for older, insecure SSH algorith
 
 | Algorithm type | Supported algorithms |
 |--|--|
-| Encryption | `aes128-cbc`</br>`aes128-cbc`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
-| HMAC | `hmac-sha2-256`</br>`hmac-sha2-256` |
+| Encryption | `aes128-cbc`</br>`aes128-ctr`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
+| HMAC | `hmac-sha2-256`</br>`hmac-sha2-512` |
 | Key exchange | `diffie-hellman-group14-sha256`</br>`diffie-hellman-group16-sha512`</br>`diffie-hellman-group-exchange-sha256`</br>`ecdh-sha2-nistp256`</br>`ecdh-sha2-nistp384`</br>`ecdh-sha2-nistp521` |
 | Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`ssh-dss`</br>`ssh-rsa` |
 
