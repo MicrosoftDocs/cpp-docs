@@ -928,6 +928,8 @@ items:
           href: ranges.md
         - name: <ranges> functions
           href: range-functions.md
+        - name: <ranges> iterators
+          href: range-iterators.md
     - name: <ratio>
       href: ratio.md
     - name: <regex>
