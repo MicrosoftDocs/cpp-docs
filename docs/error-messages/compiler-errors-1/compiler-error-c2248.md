@@ -1,20 +1,22 @@
 ---
 description: "Learn more about: Compiler Error C2248"
 title: "Compiler Error C2248"
-ms.date: "11/04/2016"
+ms.date: 09/27/2022
 f1_keywords: ["C2248"]
 helpviewer_keywords: ["C2248"]
 ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
 ---
 # Compiler Error C2248
 
-'*member*' : cannot access '*access_level*' member declared in class '*class*'
+> '*member*': can't access '*access_level*' member declared in class '*class*'
 
-Members of a derived class cannot access **`private`** members of a base class. You cannot access **`private`** or **`protected`** members of class instances.
+## Remarks
+
+Members of a derived class can't access **`private`** members of a base class. You can't access **`private`** or **`protected`** members of class instances.
 
 ## Example
 
-The following sample generates C2248 when private or protected members of a class are accessed from outside the class. To fix this issue, do not access these members directly outside the class. Use public member data and member functions to interact with the class.
+The following sample generates C2248 when `private` or `protected` members of a class are accessed from outside the class. To fix this issue, don't access these members directly outside the class. Use `public` member data and member functions to interact with the class.
 
 ```cpp
 // C2248_access.cpp
@@ -44,7 +46,7 @@ int main() {
 }
 ```
 
-Another conformance issue that exposes C2248 is the use of template friends and specialization. To fix this issue, declare friend template functions by using either an empty template parameter list <> or specific template parameters.
+Another conformance issue that exposes C2248 is the use of template friends and specialization. To fix this issue, declare friend function templates by using either an empty template parameter list `<>` or specific template parameters.
 
 ```cpp
 // C2248_template.cpp
@@ -72,7 +74,7 @@ int main() {
 }
 ```
 
-Another conformance issue that exposes C2248 is when you attempt to declare a friend of a class and when the class is not visible to the friend declaration in the scope of the class. To fix this issue, grant friendship to the enclosing class.
+Here's another conformance issue that exposes C2248: You attempt to declare a friend of a class, but the class isn't visible to the friend declaration in the scope of the class. To fix this issue, grant friendship to the enclosing class.
 
 ```cpp
 // C2248_enclose.cpp

@@ -8,11 +8,15 @@ ms.assetid: d001c2bc-f6fd-47aa-8e42-0eb824d6441d
 ---
 # Compiler Error C2299
 
-'function' : behavior change: an explicit specialization can not be a copy constructor or copy assignment operator
+> '*function*': behavior change: an explicit specialization can not be a copy constructor or copy assignment operator
 
-This error can also be generated as a result of compiler conformance work that was done for Visual Studio 2005: previous versions of Visual C++ allowed explicit specializations for a copy constructor or a copy assignment operator.
+## Remarks
 
-To resolve C2299, do not make the copy constructor or assignment operator a template function, but rather a non-template function that takes a class type. Any code that calls the copy constructor or assignment operator by explicitly specifying the template arguments needs to remove the template arguments.
+This error can also be generated as a result of compiler conformance work that was done for Visual Studio 2005. Previous versions of Visual C++ allowed explicit specializations for a copy constructor or a copy assignment operator.
+
+To resolve C2299, don't make the copy constructor or assignment operator a function template. Make them non-template functions that take a class type. Any code that calls the copy constructor or assignment operator by explicitly specifying the template arguments needs to remove the template arguments.
+
+## Example
 
 The following sample generates C2299:
 

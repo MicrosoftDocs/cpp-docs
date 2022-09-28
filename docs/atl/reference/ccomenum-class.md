@@ -76,7 +76,7 @@ The code shown below provides a reusable function for creating and initializing 
 
 [!code-cpp[NVC_ATL_COM#32](../../atl/codesnippet/cpp/ccomenum-class_1.h)]
 
-This template function can be used to implement the `_NewEnum` property of a collection interface as shown below:
+This function template can be used to implement the `_NewEnum` property of a collection interface as shown below:
 
 [!code-cpp[NVC_ATL_COM#33](../../atl/codesnippet/cpp/ccomenum-class_2.h)]
 
