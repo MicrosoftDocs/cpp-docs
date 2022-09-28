@@ -44,7 +44,7 @@ int main() {
 }
 ```
 
-Another conformance issue that exposes C2248 is the use of template friends and specialization. To fix this issue, declare friend template functions by using either an empty template parameter list <> or specific template parameters.
+Another conformance issue that exposes C2248 is the use of template friends and specialization. To fix this issue, declare friend function templates by using either an empty template parameter list `<>` or specific template parameters.
 
 ```cpp
 // C2248_template.cpp

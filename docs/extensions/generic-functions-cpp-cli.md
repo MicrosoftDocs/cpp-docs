@@ -101,7 +101,7 @@ Generic functions are functions declared with one or more generic type parameter
 
 A `class` or `struct` constructor may not be declared with generic type parameters.
 
-When called, the generic type parameter is replaced by an actual type. The actual type may be explicitly specified in angled brackets using syntax similar to a template function call. If called without the type parameters, the compiler will attempt to deduce the actual type from the parameters supplied in the function call. The compiler reports an error if the intended type argument can't be deduced from the parameters used.
+When called, the generic type parameter is replaced by an actual type. The actual type may be explicitly specified in angled brackets using syntax similar to a function template call. If called without the type parameters, the compiler will attempt to deduce the actual type from the parameters supplied in the function call. The compiler reports an error if the intended type argument can't be deduced from the parameters used.
 
 ### Requirements
 

@@ -58,7 +58,7 @@ struct X : Base<T>
 };
 ```
 
-In Visual Studio 2019 under **`/std:c++20`** or later, template function bodies that have **`if constexpr`** statements have extra parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces C7510 only if the **`/permissive-`** option is set. In Visual Studio 2019 the same code raises errors even when the **`/permissive`** option is set:
+In Visual Studio 2019 under **`/std:c++20`** or later, function template bodies that have **`if constexpr`** statements have extra parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces C7510 only if the **`/permissive-`** option is set. In Visual Studio 2019 the same code raises errors even when the **`/permissive`** option is set:
 
 ```cpp
 // C7510.cpp

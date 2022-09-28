@@ -27,6 +27,6 @@ void f<int>(int) {}   // C2768
 template<>
 void f<int>(int) {}
 
-// global nontemplate function overload
+// global non-template function overload
 void f(int) {}
 ```
