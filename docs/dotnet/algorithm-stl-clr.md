@@ -9,7 +9,7 @@ ms.assetid: ee2718dc-a98d-40b8-8341-593fe7d2ac15
 ---
 # algorithm (STL/CLR)
 
-Defines STL/CLR container template functions that perform algorithms.
+Defines STL/CLR container function templates that perform algorithms.
 
 ## Syntax
 

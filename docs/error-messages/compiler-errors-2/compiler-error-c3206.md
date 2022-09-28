@@ -10,7 +10,7 @@ ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
 
 'function' : invalid type argument for 'param', missing type argument list on class type 'typename'
 
-A template function is defined as taking a template type argument. However, a template template argument was passed.
+A function template is defined as taking a template type argument. However, a template template argument was passed.
 
 The following sample generates C3206:
 

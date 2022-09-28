@@ -1,40 +1,40 @@
 ---
-description: "Learn more about: Ellipsis and Variadic Templates"
-title: "Ellipsis and Variadic Templates"
-ms.date: "11/04/2016"
+description: "Learn more about: Ellipsis and variadic templates"
+title: "Ellipsis and variadic templates"
+ms.date: 09/27/2022
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
 ---
-# Ellipsis and Variadic Templates
+# Ellipsis and variadic templates
 
 This article shows how to use the ellipsis (`...`) with C++ variadic templates. The ellipsis has had many uses in C and C++. These include variable argument lists for functions. The `printf()` function from the C Runtime Library is one of the most well-known examples.
 
-A *variadic template* is a class or function template that supports an arbitrary number of arguments. This mechanism is especially useful to C++ library developers because you can apply it to both class templates and function templates, and thereby provide a wide range of type-safe and non-trivial functionality and flexibility.
+A *variadic template* is a class or function template that supports an arbitrary number of arguments. This mechanism is especially useful to C++ library developers: You can apply it to both class templates and function templates, and thereby provide a wide range of type-safe and non-trivial functionality and flexibility.
 
 ## Syntax
 
 An ellipsis is used in two ways by variadic templates. To the left of the parameter name, it signifies a *parameter pack*, and to the right of the parameter name, it expands the parameter packs into separate names.
 
-Here's a basic example of *variadic template class* definition syntax:
+Here's a basic example of *variadic class template* definition syntax:
 
 ```cpp
 template<typename... Arguments> class classname;
 ```
 
-For both parameter packs and expansions, you can add whitespace around the ellipsis, based on your preference, as shown in these examples:
+For both parameter packs and expansions, you can add whitespace around the ellipsis, based on your preference, as shown in this example:
 
 ```cpp
 template<typename ...Arguments> class classname;
 ```
 
-Or this:
+Or this example:
 
 ```cpp
 template<typename ... Arguments> class classname;
 ```
 
-Notice that this article uses the convention that's shown in the first example (the ellipsis is attached to **`typename`**).
+This article uses the convention that's shown in the first example (the ellipsis is attached to **`typename`**).
 
-In the preceding examples, *Arguments* is a parameter pack. The class `classname` can accept a variable number of arguments, as in these examples:
+In the preceding examples, *`Arguments`* is a parameter pack. The class `classname` can accept a variable number of arguments, as in these examples:
 
 ```cpp
 template<typename... Arguments> class vtclass;
@@ -45,21 +45,21 @@ vtclass<float, bool> vtinstance3;
 vtclass<long, std::vector<int>, std::string> vtinstance4;
 ```
 
-By using a variadic template class definition, you can also require at least one parameter:
+By using a variadic class template definition, you can also require at least one parameter:
 
 ```cpp
 template <typename First, typename... Rest> class classname;
 ```
 
-Here's a basic example of *variadic template function* syntax:
+Here's a basic example of *variadic function template* syntax:
 
 ```cpp
 template <typename... Arguments> returntype functionname(Arguments... args);
 ```
 
-The *Arguments* parameter pack is then expanded for use, as shown in the next section, **Understanding variadic templates**.
+The *`Arguments`* parameter pack is then expanded for use, as shown in the next section.
 
-Other forms of variadic template function syntax are possible—including, but not limited to, these examples:
+Other forms of variadic function template syntax are possible—including, but not limited to, these examples:
 
 ```cpp
 template <typename... Arguments> returntype functionname(Arguments&... args);
@@ -95,7 +95,7 @@ void tfunc(const Arguments&... args)
 
 ## More about ellipsis placement
 
-Previously, this article described ellipsis placement that defines parameter packs and expansions as "to the left of the parameter name, it signifies a parameter pack, and to the right of the parameter name, it expands the parameter packs into separate names". This is technically true but can be confusing in translation to code. Consider:
+Previously, this article described ellipsis placement that defines parameter packs and expansions in this form: "to the left of the parameter name, it signifies a parameter pack, and to the right of the parameter name, it expands the parameter packs into separate names". While technically true, it can be confusing in translation to code. Consider:
 
 - In a template-parameter-list (`template <parameter-list>`), `typename...` introduces a template parameter pack.
 
@@ -113,7 +113,7 @@ Previously, this article described ellipsis placement that defines parameter pac
 
 ## Example
 
-A good way to illustrate the variadic template function mechanism is to use it in a re-write of some of the functionality of `printf`:
+A good way to illustrate the variadic function template mechanism is to use it in a rewrite of some of the functionality of `printf`:
 
 ```cpp
 #include <iostream>
@@ -156,4 +156,4 @@ first, 2, third, 3.14159
 ```
 
 > [!NOTE]
-> Most implementations that incorporate variadic template functions use recursion of some form, but it's slightly different from traditional recursion.  Traditional recursion involves a function calling itself by using the same signature. (It may be overloaded or templated, but the same signature is chosen each time.) Variadic recursion involves calling a variadic function template by using differing (almost always decreasing) numbers of arguments, and thereby stamping out a different signature every time. A "base case" is still required, but the nature of the recursion is different.
+> Most implementations that incorporate variadic function templates use recursion of some form, but it's slightly different from traditional recursion.  Traditional recursion involves a function calling itself by using the same signature. (It may be overloaded or templated, but the same signature is chosen each time.) Variadic recursion involves calling a variadic function template by using differing (almost always decreasing) numbers of arguments, and thereby stamping out a different signature every time. A "base case" is still required, but the nature of the recursion is different.

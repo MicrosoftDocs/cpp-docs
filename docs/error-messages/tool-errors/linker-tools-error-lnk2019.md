@@ -34,7 +34,7 @@ Verify you use the correct spelling and capitalization in both the declaration a
 
 ### A function is used but the type or number of the parameters don't match the function definition
 
-The function declaration must match the definition. Make sure the function call matches the declaration, and that the declaration matches the definition. Code that invokes template functions must also have matching template function declarations that include the same template parameters as the definition. For an example of a template declaration mismatch, see sample LNK2019e.cpp in the Examples section.
+The function declaration must match the definition. Make sure the function call matches the declaration, and that the declaration matches the definition. Code that invokes function templates must also have matching function template declarations that include the same template parameters as the definition. For an example of a template declaration mismatch, see sample LNK2019e.cpp in the Examples section.
 
 ### A function or variable is declared but not defined
 
@@ -164,7 +164,7 @@ int main() {
 
 ### Declaration parameters don't match the definition
 
-Code that invokes template functions must have matching template function declarations. Declarations must include the same template parameters as the definition. The following sample generates LNK2019 on a user-defined operator, and shows how to fix it.
+Code that invokes function templates must have matching function template declarations. Declarations must include the same template parameters as the definition. The following sample generates LNK2019 on a user-defined operator, and shows how to fix it.
 
 ```cpp
 // LNK2019e.cpp

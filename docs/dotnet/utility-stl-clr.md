@@ -9,7 +9,7 @@ ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
 ---
 # utility (STL/CLR)
 
-Include the STL/CLR header `<cliext/utility>` to define the template class `pair` and several supporting template functions.
+Include the STL/CLR header `<cliext/utility>` to define the class template `pair` and several supporting function templates.
 
 ## Syntax
 
@@ -461,7 +461,7 @@ Second value to wrap.
 
 ### Remarks
 
-The template function returns `pair<Value1, Value2>(first, second)`. You use it to construct a `pair<Value1, Value2>` object from a pair of values.
+The function template returns `pair<Value1, Value2>(first, second)`. You use it to construct a `pair<Value1, Value2>` object from a pair of values.
 
 ### Example
 
