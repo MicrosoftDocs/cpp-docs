@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Overload Resolution of Function Template Calls"
-title: "Overload Resolution of Function Template Calls"
+description: "Learn more about: Overload resolution of function template calls"
+title: "Overload resolution of function template calls"
 ms.date: 09/27/2022
 helpviewer_keywords: ["function templates overload resolution"]
 ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
 ---
-# Overload Resolution of Function Template Calls
+# Overload resolution of function template calls
 
-A function template can overload non-template functions of the same name. In this scenario, the compiler first attempts to resolve a function call by using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, then the compiler considers non-template function overloads to resolve the call. These other overloads, also known as the *candidate set*, include both non-template functions and other instantiated function templates. If template argument deduction succeeds, then the generated function is compared with the other functions to determine the best match, following the rules for overload resolution. For more information, see [Function overloading](function-overloading.md).
+A function template can overload non-template functions of the same name. In this scenario, the compiler first attempts to resolve a function call by using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, then the compiler considers both instantiated function template overloads and non-template function overloads to resolve the call. These other overloads are known as the *candidate set*. If template argument deduction succeeds, then the generated function is compared with the other functions in the candidate set to determine the best match, following the rules for overload resolution. For more information, see [Function overloading](function-overloading.md).
 
 ## Example: Choose a non-template function
 
@@ -77,4 +77,4 @@ void f(T1, T2)
 ## See also
 
 [Name resolution](templates-and-name-resolution.md)\
-[typename](typename.md)
+[`typename`](typename.md)
