@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: const (C++)"
 title: "const (C++)"
-ms.date: 02/03/2022
+ms.date: 09/27/2022
 f1_keywords: ["const_cpp"]
 helpviewer_keywords: ["const keyword [C++]"]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
@@ -149,13 +149,13 @@ int main()
 
 When you declare a variable as **`const`** in a C source code file, you do so as:
 
-```cpp
+```C
 const int i = 2;
 ```
 
 You can then use this variable in another module as follows:
 
-```cpp
+```C
 extern const int i;
 ```
 
