@@ -9,7 +9,7 @@ ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
 ---
 # adapter (STL/CLR)
 
-The STL/CLR header `<cliext/adapter>` specifies two template classes (`collection_adapter` and `range_adapter`), and the template function `make_collection`.
+The STL/CLR header `<cliext/adapter>` specifies two class templates (`collection_adapter` and `range_adapter`), and the function template `make_collection`.
 
 ## Syntax
 
@@ -886,7 +886,7 @@ Second iterator to wrap.
 
 ### Remarks
 
-The template function returns `gcnew range_adapter<Iter>(first, last)`. You use it to construct a `range_adapter<Iter>` object from a pair of iterators.
+The function template returns `gcnew range_adapter<Iter>(first, last)`. You use it to construct a `range_adapter<Iter>` object from a pair of iterators.
 
 ### Example
 

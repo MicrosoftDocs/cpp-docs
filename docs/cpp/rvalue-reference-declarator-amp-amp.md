@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Rvalue reference declarator: &&"
 title: "Rvalue reference declarator: &&"
-ms.date: "11/04/2016"
+ms.date: 09/27/2022
 f1_keywords: ["&&"]
 helpviewer_keywords: ["&& rvalue reference declarator"]
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
@@ -21,7 +21,7 @@ Rvalue references enable you to distinguish an lvalue from an rvalue. Lvalue ref
 
 The following sections describe how rvalue references support the implementation of *move semantics* and *perfect forwarding*.
 
-## Move Semantics
+## Move semantics
 
 Rvalue references support the implementation of *move semantics*, which can significantly increase the performance of your applications. Move semantics enables you to write code that transfers resources (such as dynamically allocated memory) from one object to another. Move semantics works because it enables transfer of resources from temporary objects: ones that can't be referenced elsewhere in the program.
 
@@ -43,17 +43,17 @@ int main()
 }
 ```
 
-Before Visual Studio 2010, each call to **`operator+`** allocates and returns a new temporary `string` object (an rvalue). **`operator+`** can't append one string to the other because it doesn't know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program and so must not be modified. By using rvalue references, **`operator+`** can be modified to take rvalues, which can't be referenced elsewhere in the program. With this change, **`operator+`** can now append one string to another. The change significantly reduces the number of dynamic memory allocations that the `string` class must make. For more information about the `string` class, see [basic_string Class](../standard-library/basic-string-class.md).
+Before Visual Studio 2010, each call to **`operator+`** allocates and returns a new temporary `string` object (an rvalue). **`operator+`** can't append one string to the other because it doesn't know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program, and so must not be modified. You can modify **`operator+`** to take rvalues by using rvalue references, which can't be referenced elsewhere in the program. With this change, **`operator+`** can now append one string to another. The change significantly reduces the number of dynamic memory allocations that the `string` class must make. For more information about the `string` class, see [`basic_string` Class](../standard-library/basic-string-class.md).
 
 Move semantics also helps when the compiler can't use Return Value Optimization (RVO) or Named Return Value Optimization (NRVO). In these cases, the compiler calls the move constructor if the type defines it.
 
-To better understand move semantics, consider the example of inserting an element into a `vector` object. If the capacity of the `vector` object is exceeded, the `vector` object must reallocate memory for its elements and then copy each element to another memory location to make room for the inserted element. When an insertion operation copies an element, it first creates a new element. Then it calls the copy constructor to copy the data from the previous element to the new element. Finally, it destroys the previous element. Move semantics enables you to move objects directly without having to make expensive memory allocation and copy operations.
+To better understand move semantics, consider the example of inserting an element into a `vector` object. If the capacity of the `vector` object is exceeded, the `vector` object must reallocate enough memory for its elements, and then copy each element to another memory location to make room for the inserted element. When an insertion operation copies an element, it first creates a new element. Then it calls the copy constructor to copy the data from the previous element to the new element. Finally, it destroys the previous element. Move semantics enables you to move objects directly without having to make expensive memory allocation and copy operations.
 
 To take advantage of move semantics in the `vector` example, you can write a move constructor to move data from one object to another.
 
 For more information about the introduction of move semantics into the C++ Standard Library in Visual Studio 2010, see [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).
 
-## Perfect Forwarding
+## Perfect forwarding
 
 Perfect forwarding reduces the need for overloaded functions and helps avoid the forwarding problem. The *forwarding problem* can occur when you write a generic function that takes references as its parameters. If it passes (or *forwards*) these parameters to another function, for example, if it takes a parameter of type `const T&`, then the called function can't modify the value of that parameter. If the generic function takes a parameter of type `T&`, then the function can't be called by using an rvalue (such as a temporary object or integer literal).
 
@@ -100,7 +100,7 @@ int a = 4, b = 5;
 W* pw = factory<W>(a, b);
 ```
 
-However, the following example doesn't contain a valid call to the `factory` function. That's because `factory` takes lvalue references that are modifiable as its parameters, but it's called by using rvalues:
+However, the following example doesn't contain a valid call to the `factory` function. It's because `factory` takes lvalue references that are modifiable as its parameters, but it's called by using rvalues:
 
 ```cpp
 Z* pz = factory<Z>(2, 2);
@@ -116,7 +116,7 @@ T* factory(A1&& a1, A2&& a2)
 }
 ```
 
-This example uses rvalue references as the parameters to the `factory` function. The purpose of the [std::forward](../standard-library/utility-functions.md#forward) function is to forward the parameters of the factory function to the constructor of the template class.
+This example uses rvalue references as the parameters to the `factory` function. The purpose of the [`std::forward`](../standard-library/utility-functions.md#forward) function is to forward the parameters of the factory function to the constructor of the template class.
 
 The following example shows the `main` function that uses the revised `factory` function to create instances of the `W`, `X`, `Y`, and `Z` classes. The revised `factory` function forwards its parameters (either lvalues or rvalues) to the appropriate class constructor.
 
@@ -136,7 +136,7 @@ int main()
 }
 ```
 
-## Properties of Rvalue References
+## Properties of rvalue references
 
 **You can overload a function to take an lvalue reference and an rvalue reference.**
 
@@ -183,7 +183,7 @@ In this example, the first call to `f` passes a local variable (an lvalue) as it
 
 **The compiler treats a named rvalue reference as an lvalue and an unnamed rvalue reference as an rvalue.**
 
-Functions that take an rvalue reference as a parameter treat the parameter as an lvalue in the body of the function. The compiler treats a named rvalue reference as an lvalue. That's because a named object can be referenced by several parts of a program. It's dangerous to allow multiple parts of a program to modify or remove resources from that object. For example, if multiple parts of a program try to transfer resources from the same object, only the first transfer succeeds.
+Functions that take an rvalue reference as a parameter treat the parameter as an lvalue in the body of the function. The compiler treats a named rvalue reference as an lvalue. It's because a named object can be referenced by several parts of a program. It's dangerous to allow multiple parts of a program to modify or remove resources from that object. For example, if multiple parts of a program try to transfer resources from the same object, only the first transfer succeeds.
 
 The following example shows the function `g`, which is overloaded to take an lvalue reference and an rvalue reference. The function `f` takes an rvalue reference as its parameter (a named rvalue reference) and returns an rvalue reference (an unnamed rvalue reference). In the call to `g` from `f`, overload resolution selects the version of `g` that takes an lvalue reference because the body of `f` treats its parameter as an lvalue. In the call to `g` from `main`, overload resolution selects the version of `g` that takes an rvalue reference because `f` returns an rvalue reference.
 
@@ -275,7 +275,7 @@ In g(MemoryBlock&&).
 
 A function template that passes (or *forwards*) its parameters to another function is a common pattern. It's important to understand how template type deduction works for function templates that take rvalue references.
 
-If the function argument is an rvalue, the compiler deduces the argument to be an rvalue reference. For example, assume you pass an rvalue reference to an object of type `X` to a template function that takes type `T&&` as its parameter. Template argument deduction deduces `T` to be `X`, so the parameter has type `X&&`. If the function argument is an lvalue or **`const`** lvalue, the compiler deduces its type to be an lvalue reference or **`const`** lvalue reference of that type.
+If the function argument is an rvalue, the compiler deduces the argument to be an rvalue reference. For example, assume you pass an rvalue reference to an object of type `X` to a function template that takes type `T&&` as its parameter. Template argument deduction deduces `T` to be `X`, so the parameter has type `X&&`. If the function argument is an lvalue or **`const`** lvalue, the compiler deduces its type to be an lvalue reference or **`const`** lvalue reference of that type.
 
 The following example declares one structure template and then specializes it for various reference types. The `print_type_and_value` function takes an rvalue reference as its parameter and forwards it to the appropriate specialized version of the `S::print` method. The `main` function demonstrates the various ways to call the `S::print` method.
 
@@ -390,7 +390,7 @@ The following table summarizes the reference collapsing rules for template argum
 | `T&& &` | `T&` |
 | `T&& &&` | `T&&` |
 
-Template argument deduction is an important element of implementing perfect forwarding. The [Perfect Forwarding](#perfect-forwarding) section describes perfect forwarding in more detail.
+Template argument deduction is an important element of implementing perfect forwarding. The [Perfect forwarding](#perfect-forwarding) section describes perfect forwarding in more detail.
 
 ## Summary
 
