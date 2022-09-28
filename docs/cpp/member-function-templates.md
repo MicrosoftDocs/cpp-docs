@@ -1,19 +1,19 @@
 ---
-description: "Learn more about: Member Function Templates"
-title: "Member Function Templates"
-ms.date: "11/04/2016"
+description: "Learn more about: Member function templates"
+title: "Member function templates"
+ms.date: 09/27/2022
 helpviewer_keywords: ["function templates, member functions"]
 ms.assetid: 83d51835-6a27-40ed-997c-7d90dc9182d8
 ---
-# Member Function Templates
+# Member function templates
 
-The term member template refers to both member function templates and nested class templates. Member function templates are template functions that are members of a class or class template.
+The term member template refers to both member function templates and nested class templates. Member function templates are function templates that are members of a class or class template.
 
-Member functions can be function templates in several contexts. All functions of class templates are generic but are not referred to as member templates or member function templates. If these member functions take their own template arguments, they are considered to be member function templates.
+Member functions can be function templates in several contexts. All functions of class templates are generic but aren't referred to as member templates or member function templates. If these member functions take their own template arguments, they're considered to be member function templates.
 
 ## Example: Declare member function templates
 
-Member function templates of nontemplate or template classes are declared as function templates with their template parameters.
+Member function templates of non-template classes or class templates are declared as function templates with their template parameters.
 
 ```cpp
 // member_function_templates.cpp
@@ -30,9 +30,9 @@ int main()
 }
 ```
 
-## Example: Member function template of template class
+## Example: Member function template of a class template
 
-The following example shows a member function template of a template class.
+The following example shows a member function template of a class template.
 
 ```cpp
 // member_function_templates2.cpp
@@ -75,9 +75,9 @@ int main()
 
 ## Example: Templated user-defined conversion
 
-Local classes are not allowed to have member templates.
+Local classes aren't allowed to have member templates.
 
-Member template functions cannot be virtual functions and cannot override virtual functions from a base class when they are declared with the same name as a base class virtual function.
+Member function templates can't be virtual functions. And, they can't override virtual functions from a base class when they're declared with the same name as a base class virtual function.
 
 The following example shows a templated user-defined conversion:
 
@@ -101,4 +101,4 @@ int main()
 
 ## See also
 
-[Function Templates](../cpp/function-templates.md)
+[Function templates](../cpp/function-templates.md)

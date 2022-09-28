@@ -10,7 +10,7 @@ ms.assetid: 4a28b976-142a-4cff-aa2f-480b892c50ca
 
 'function' : invalid template argument for 'arg', class template expected
 
-A template function is defined as taking a template template argument. However, a template type argument was passed.
+A function template is defined as taking a template template argument. However, a template type argument was passed.
 
 The following sample generates C3207:
 

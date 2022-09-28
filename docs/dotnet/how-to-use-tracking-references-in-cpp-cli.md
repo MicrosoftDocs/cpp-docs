@@ -286,9 +286,9 @@ Boxed new copy V: 1
 Original V: 4, Reference to handle of originally boxed V: 1
 ```
 
-## Template functions that take native, value, or reference parameters
+## Function templates that take native, value, or reference parameters
 
-By using a tracking reference in the signature of a template function, you ensure that the function can be called by a parameter whose type is native, CLR value, or CLR reference.
+By using a tracking reference in the signature of a function template, you ensure that the function can be called by a parameter whose type is native, CLR value, or CLR reference.
 
 ```cpp
 // tracking_reference_template.cpp
@@ -297,7 +297,7 @@ using namespace System;
 
 class Temp {
 public:
-   // template functions
+   // function templates
    template<typename T>
    static int f1(T% tt) {   // works for object in any location
       Console::WriteLine("T %");
