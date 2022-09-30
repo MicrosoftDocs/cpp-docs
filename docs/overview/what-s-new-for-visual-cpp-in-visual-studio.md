@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 05/24/2022
+ms.date: 09/29/2022
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
@@ -9,9 +9,38 @@ ms.custom: intro-whats-new
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
 
+## What's new for C++ in Visual Studio version 17.3
+
+For a summary of new features and bug fixes in Visual Studio in version 17.3, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3).
+
+- The Arm64EC toolchain is no longer marked as experimental and is ready for production use.
+
+- The Visual Studio Terminal can now be used as an SSH client with your stored SSH connections. With the C++ for Linux Tools installed, open the Terminal tool window. The Terminal dropdown is populated with your stored connections. When you select a connection, a new Terminal window opens inside Visual Studio that shows a pseudo-terminal on your remote system. Control characters, colors, and cursor positional awareness are all supported.
+
+- Visual Studio can now add Unreal Engine class templates for your UE projects. To try this feature, ensure **IDE support for Unreal Engine** is selected in the **Game development with C++** workload in the Visual Studio Installer. When you're working on a UE project, right-click in the project or a folder/filter and select **Add** > **UE Class**.
+
+- **Go to Definition** now remembers the prior signature and navigates accordingly when a better match isn't available (for example, after you manually change the signature of one of the pair).
+We've improved responsiveness of **Go To All**. Previously, results appeared after you stopped typing. In the new experience, results show as you type.
+
+- In contexts requiring `enum` type completion (for example, assignments to `enum` variables, case labels, returning `enum` type, and so on), the autocompletion list is now filtered to just the matching enumerators and related constructs.
+
+- Added NuGet PackageReference support for C++/CLI MSBuild projects targeting .NET Core. This change was made to unblock mixed codebases from being able to adopt .NET Core. This support doesn't work for other C++ project types or any C++ project types targeting .NET Framework. There are no plans to extend PackageReference support to other C++ scenarios. The team is working on separate experiences involving vcpkg, which will work for non-MSBuild scenarios and add greater functionality.
+
+- Added a Serial Monitor window for embedded development, available through **Debug** > **Windows** > **Serial Monitor**.
+
+- Improved C++ indexing by ~66% compared to 17.2.
+
+- Updated the version of CMake shipped with Visual Studio to version 3.23. See the [CMake 3.23 release notes](https://cmake.org/cmake/help/v3.23/release/3.23.html) for details of what is available.
+
+- Upgraded the versions of LLVM tools shipped with Visual Studio to v14. For details of what is available, see the [LLVM](https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html) and [Clang](https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html) release notes.
+
+- Updated the side-by-side Dev 16.11 C++ Toolset to version 14.29.30145.00. The latest version of the Dev 16.11 C++ Toolset contains important bug fixes, including fixing all remaining C++20 defect reports. For more information about bug fixes, including C++20 defect reports in Dev 16.11, see [Visual Studio 2019 version 16.11.14 release notes](/visualstudio/releases/2019/release-notes#16.11.14).
+
+- We have made various improvements to the in-editor experience of C++ modules. We're continuously working on improving the quality of the experience but encourage you to try them in 17.3. Report remaining issues through [Developer Community](https://aka.ms/vsfeedback/browsecpp).
+
 ## What's new for C++ in Visual Studio version 17.2
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.2](/visualstudio/releases/2022/release-notes).
+For a summary of new features and bug fixes in Visual Studio in version 17.2, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.2).
 
 - Added compiler support for C++23 feature [deducing `this`](https://wg21.link/p0847), available under the **`/std:c++latest`** option.
 
@@ -23,7 +52,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 - In 17.1, we introduced peripheral register and RTOS views for embedded developers. We continue to improve the capabilities of those views with usability improvements in 17.2:
   - The RTOS tool window is now hidden by default. It prevents showing a tool window with error messages that aren't relevant when you're not using an RTOS.
-  - When you double click on an RTOS object in the tool window, it adds a watch for the object.
+  - When you choose (double-click) an RTOS object in the tool window, it adds a watch for the object.
   - When you select the start and end values for the stack pointer in the RTOS tool window, it's opened in the memory window.
   - We've added thread awareness for device targets to the call stack window.
   - Users can now select a pin icon next to peripherals, registers, or fields to pin them the top of the Peripheral View.
@@ -36,7 +65,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ## What's new for C++ in Visual Studio version 17.1
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.1](/visualstudio/releases/2022/release-notes-v17.1).
+For a summary of new features and bug fixes in Visual Studio in version `7.`, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1).
 
 - A new **Configure Preset** template has been added to configure and build CMake projects on a remote macOS system with *`CMakePresets.json`*. You can also launch CMake targets on a remote macOS system, and then debug remotely in the Visual Studio debugger backed by GDB or LLDB.
 
@@ -52,7 +81,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ## What's new for C++ in Visual Studio version 17.0
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes-v17.0).
+For a summary of new features and bug fixes in Visual Studio, see [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0).
 
 - The Visual Studio IDE, *`devenv.exe`*, is now a native 64-bit application.
 
@@ -122,7 +151,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 ### C++ AMP deprecated
 
-- C++ AMP headers are now deprecated. Including `<amp.h>` in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](/cpp/parallel/amp/cpp-amp-overview).
+- C++ AMP headers are now deprecated. Including `<amp.h>` in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](../parallel/amp/cpp-amp-overview.md).
 
 ### IntelliSense improvements
 
