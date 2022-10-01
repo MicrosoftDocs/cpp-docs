@@ -57,7 +57,7 @@ For a summary of new features and bug fixes in Visual Studio in version 17.2, se
   - We've added thread awareness for device targets to the call stack window.
   - Users can now select a pin icon next to peripherals, registers, or fields to pin them the top of the Peripheral View.
 
-- We've added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20 `** option. For more information about the implemented backports, see the [C++20 Defect Reports project](https://github.com/microsoft/STL/projects/9) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
+- We've added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20`** option. For more information about the implemented backports, see the [C++20 Defect Reports project](https://github.com/microsoft/STL/projects/9) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
 
 - We added various C++23 Library features, available under the **`/std:c++latest`** option. For more information about the new features, see the [STL Repo changelog](https://github.com/microsoft/STL/wiki/Changelog).
 
@@ -65,7 +65,7 @@ For a summary of new features and bug fixes in Visual Studio in version 17.2, se
 
 ## What's new for C++ in Visual Studio version 17.1
 
-For a summary of new features and bug fixes in Visual Studio in version `7.`, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1).
+For a summary of new features and bug fixes in Visual Studio in version 17.1, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1).
 
 - A new **Configure Preset** template has been added to configure and build CMake projects on a remote macOS system with *`CMakePresets.json`*. You can also launch CMake targets on a remote macOS system, and then debug remotely in the Visual Studio debugger backed by GDB or LLDB.
 
@@ -113,7 +113,7 @@ In Visual Studio 2022, when you start your app in the debugger, you can use the 
 
 - The Project menu in CMake projects has been streamlined and exposes options to "Delete Cache and Reconfigure" and "View Cache".
 
-- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689R4](https://wg21.link/P1689r4). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
+- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689R5](https://wg21.link/P1689r5). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
 
 ### Standard Library improvements
 
