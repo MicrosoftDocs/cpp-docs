@@ -270,6 +270,7 @@ Hello, World! (System::String)
 This example demonstrates how to convert from a `_bstr_t` to other string types. The `_bstr_t` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating null character.
 
 For information about running and debugging this example, see [Run the examples](#run-the-examples).
+
 ### Code
 
 ```cpp
