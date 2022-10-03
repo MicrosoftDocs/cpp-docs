@@ -1,18 +1,18 @@
 ---
 title: "<ranges>"
 description: "Overview of the Standard Template Library (STL) ranges library"
-ms.date: 06/08/2022
+ms.date: 09/26/2022
 f1_keywords: ["<ranges>"]
 helpviewer_keywords: ["ranges"]
 ---
 
 # `<ranges>`
 
-At a high level, a range is something you can iterate over. A range abstracts iterators in a way that simplifies and amplifies your ability to use the Standard Template Library (STL).
+At a high level, a range is something you can iterate over. The containers, such as `vector`, `list`, and so on, in the C++ Standard Library are ranges. A range abstracts iterators in a way that simplifies and amplifies your ability to use the Standard Template Library (STL).
 
-STL algorithms usually take iterators that point to the portion of the collection they should operate on. Consider how you sort a `vector` using `std::sort()`. You pass two iterators the mark the beginning and end of the `vector`. That provides flexibility, but passing the iterators to the algorithm is extra work since most of the time you just want to sort the whole thing.
+STL algorithms usually take iterators that point to the portion of the collection they should operate on. For example, consider how you sort a `vector` using `std::sort()`. You pass two iterators the mark the beginning and end of the `vector`. That provides flexibility, but passing the iterators to the algorithm is extra work since most of the time you just want to sort the whole thing.
 
-With ranges, you can call `std::ranges::sort(myVector);` which is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, algorithms take ranges as parameters (although they can also take iterators, if you want). Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
+With ranges, you can call `std::ranges::sort(myVector);` which is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, algorithms take ranges as parameters (although they can also take iterators, if you want). They can operate directly on collections. Some examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
 
 But the benefits of ranges go further than this. Perhaps the most important benefit is that you can compose STL algorithms that operate on ranges much more easily.
 
