@@ -313,6 +313,7 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 |  | 11101010: Custom stack for MSFT_OP_CONTEXT |
 |  | 11101100: Custom stack for MSFT_OP_CLEAR_UNWOUND_TO_CALL |
 |  | 1111xxxx: reserved |
+| `pac_sign_return_address` | 11111100: sign the return address in `lr` with `pacibsp` |
 
 In instructions with large values covering multiple bytes, the most significant bits are stored first. This design makes it possible to find the total size in bytes of the unwind code by looking up only the first byte of the code. Since each unwind code is exactly mapped to an instruction in a prolog or epilog, you can compute the size of the prolog or epilog. Walk from the sequence start to the end, and use a lookup table or similar device to determine the length of the corresponding opcode.
 
@@ -345,7 +346,7 @@ The fields are as follows:
 - **CR** is a 2-bit flag indicating whether the function includes extra instructions to set up a frame chain and return link:
   - 00 = unchained function, \<x29,lr> pair isn't saved in stack.
   - 01 = unchained function, \<lr> is saved in stack
-  - 10 = reserved;
+  - 10 = chained function with signed return address
   - 11 = chained function, a store/load pair instruction is used in prolog/epilog \<x29,lr>
 - **H** is a 1-bit flag indicating whether the function homes the integer parameter registers (x0-x7) by storing them at the very start of the function. (0 = doesn't home registers, 1 = homes registers).
 - **RegI** is a 4-bit field indicating the number of non-volatile INT registers (x19-x28) saved in the canonical stack location.
@@ -355,28 +356,31 @@ Canonical prologs that fall into categories 1, 2 (without outgoing parameter are
 
 Step 0: Pre-compute of the size of each area.
 
-Step 1: Save Int callee-saved registers.
+Step 1: Sign the return address.
 
-Step 2: This step is specific for type 4 in early sections. lr is saved at the end of Int area.
+Step 2: Save Int callee-saved registers.
 
-Step 3: Save FP callee-saved registers.
+Step 3: This step is specific for type 4 in early sections. lr is saved at the end of Int area.
 
-Step 4: Save input arguments in the home parameter area.
+Step 4: Save FP callee-saved registers.
 
-Step 5: Allocate remaining stack, including local area, \<x29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
+Step 5: Save input arguments in the home parameter area.
+
+Step 6: Allocate remaining stack, including local area, \<x29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
 
 | Step # | Flag values | # of instructions | Opcode | Unwind code |
 |--|--|--|--|--|
 | 0 |  |  | `#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz` |
-| 1 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
-| 2 | **CR** == 01\* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
-| 3 | 0 < **RegF** <= 7 | (**RegF** + 1) / 2 +<br/>(**RegF** + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
-| 4 | **H** == 1 | 4 | `stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]` | `nop`<br/>`nop`<br/>`nop`<br/>`nop` |
-| 5a | **CR** == 11 &&<br/> `#locsz` <= 512 | 2 | `stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\* | `save_fplr_x`<br/>`set_fp` |
-| 5b | **CR** == 11 &&<br/>512 < `#locsz` <= 4080 | 3 | `sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`save_fplr`<br/>`set_fp` |
-| 5c | **CR** == 11 &&<br/> `#locsz` > 4080 | 4 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp` |
-| 5d | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
-| 5e | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
+| 1 | **CR** == 11 | 1 | `pacibsp` | `sign_ra` |
+| 2 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
+| 3 | **CR** == 01\* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
+| 4 | 0 < **RegF** <= 7 | (**RegF** + 1) / 2 +<br/>(**RegF** + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
+| 5 | **H** == 1 | 4 | `stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]` | `nop`<br/>`nop`<br/>`nop`<br/>`nop` |
+| 6a | (**CR** == 10 \|\| **CR** == 11) &&<br/> `#locsz` <= 512 | 2 | `stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\* | `save_fplr_x`<br/>`set_fp` |
+| 6b | (**CR** == 10 \|\| **CR** == 11) &&<br/>512 < `#locsz` <= 4080 | 3 | `sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`save_fplr`<br/>`set_fp` |
+| 6c | (**CR** == 10 \|\| **CR** == 11) &&<br/> `#locsz` > 4080 | 4 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp` |
+| 6d | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
+| 6e | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
 
 \* If **CR** == 01 and **RegI** is an odd number, Step 2 and last `save_rep` in step 1 are merged into one `save_regp`.
 
