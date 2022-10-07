@@ -16,7 +16,7 @@ This section lists C++ Core Guidelines Checker warnings. For information about C
 
 ## OWNER_POINTER Group
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)\
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)\
 Return a scoped object instead of a heap-allocated if it has a move constructor. See [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)\
@@ -51,7 +51,7 @@ Do not assign the result of an allocation or a function call with an owner\<T> r
 [C26401 DONT_DELETE_NON_OWNER](c26401.md)\
 Do not delete a raw pointer that is not an owner\<T>. See [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)\
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)\
 Return a scoped object instead of a heap-allocated if it has a move constructor. See [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
 [C26408 NO_MALLOC_FREE](C26408.md)\
