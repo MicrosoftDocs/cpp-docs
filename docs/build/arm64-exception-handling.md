@@ -311,9 +311,20 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 |  | 11101000: Custom stack for MSFT_OP_TRAP_FRAME |
 |  | 11101001: Custom stack for MSFT_OP_MACHINE_FRAME |
 |  | 11101010: Custom stack for MSFT_OP_CONTEXT |
+|  | 11101011: Custom stack for MSFT_OP_EC_CONTEXT |
 |  | 11101100: Custom stack for MSFT_OP_CLEAR_UNWOUND_TO_CALL |
-|  | 1111xxxx: reserved |
-| `pac_sign_return_address` | 11111100: sign the return address in `lr` with `pacibsp` |
+|  | 11101101: reserved |
+|  | 11101110: reserved |
+|  | 11101111: reserved |
+|  | 11110xxx: reserved |
+|  | 11111000'yyyyyyyy : reserved |
+|  | 11111001'yyyyyyyy'yyyyyyyy : reserved |
+|  | 11111010'yyyyyyyy'yyyyyyyy'yyyyyyyy : reserved |
+|  | 11111011'yyyyyyyy'yyyyyyyy'yyyyyyyy'yyyyyyyy : reserved |
+| `pac_sign_lr` | 11111100: sign the return address in `lr` with `pacibsp` |
+|  | 11111101: reserved |
+|  | 11111110: reserved |
+|  | 11111111: reserved |
 
 In instructions with large values covering multiple bytes, the most significant bits are stored first. This design makes it possible to find the total size in bytes of the unwind code by looking up only the first byte of the code. Since each unwind code is exactly mapped to an instruction in a prolog or epilog, you can compute the size of the prolog or epilog. Walk from the sequence start to the end, and use a lookup table or similar device to determine the length of the corresponding opcode.
 
