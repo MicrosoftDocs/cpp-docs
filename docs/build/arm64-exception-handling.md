@@ -1,7 +1,7 @@
 ---
 title: "ARM64 exception handling"
 description: Describes the exception handling conventions and data used by windows on ARM64.
-ms.date: 04/07/2022
+ms.date: 10/10/2022
 ---
 # ARM64 exception handling
 
@@ -344,7 +344,7 @@ The fields are as follows:
 - **Function Length** is an 11-bit field providing the length of the entire function in bytes, divided by 4. If the function is larger than 8k, a full `.xdata` record must be used instead.
 - **Frame Size** is a 9-bit field indicating the number of bytes of stack that is allocated for this function, divided by 16. Functions that allocate greater than (8k-16) bytes of stack must use a full `.xdata` record. It includes the local variable area, outgoing parameter area, callee-saved Int and FP area, and home parameter area. It excludes the dynamic allocation area.
 - **CR** is a 2-bit flag indicating whether the function includes extra instructions to set up a frame chain and return link:
-  - 00 = unchained function, \<x29,lr> pair isn't saved in stack.
+  - 00 = unchained function, \<x29,lr> pair isn't saved in stack
   - 01 = unchained function, \<lr> is saved in stack
   - 10 = chained function with signed return address
   - 11 = chained function, a store/load pair instruction is used in prolog/epilog \<x29,lr>
@@ -366,7 +366,7 @@ Step 4: Save FP callee-saved registers.
 
 Step 5: Save input arguments in the home parameter area.
 
-Step 6: Allocate remaining stack, including local area, \<x29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
+Step 6: Allocate remaining stack, including local area, \<x29,lr> pair, and outgoing parameter area. 6a corresponds to canonical type 1. 6b and 6c are for canonical type 2. 6d and 6e are for both type 3 and type 4.
 
 | Step # | Flag values | # of instructions | Opcode | Unwind code |
 |--|--|--|--|--|
