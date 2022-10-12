@@ -382,7 +382,7 @@ Step 6: Allocate remaining stack, including local area, `<x29,lr>` pair, and out
 | Step # | Flag values | # of instructions | Opcode | Unwind code |
 |--|--|--|--|--|
 | 0 |  |  | `#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz` |
-| 1 | **CR** == 11 | 1 | `pacibsp` | `sign_ra` |
+| 1 | **CR** == 11 | 1 | `pacibsp` | `pac_sign_lr` |
 | 2 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
 | 3 | **CR** == 01\* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
 | 4 | 0 < **RegF** <= 7 | (**RegF** + 1) / 2 +<br/>(**RegF** + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
