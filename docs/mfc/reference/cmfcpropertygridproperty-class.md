@@ -1513,7 +1513,17 @@ Sets the value of a property grid property.
 ```
 virtual void SetValue(const _variant_t& varValue);
 ```
-
+Example:
+```
+void SetPropBarValue( UINT propId, const DWORD& barPropDwordValue )
+{
+  auto property = propertiesGridCtrlList.FindItemByData( propId );
+  if( property )
+  {
+    property->SetValue( static_cast< _variant_t >( barPropDwordValue == 1 ) ); // sets property bar value to true or false depending on dword value
+  }
+}
+```
 ### Parameters
 
 *`varValue`*\
