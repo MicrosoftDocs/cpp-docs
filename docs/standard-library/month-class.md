@@ -26,7 +26,7 @@ See [Month constants](#month-constants), below, for constants that you can use w
 |Name|Description|
 |----------|-----------------|
 | [Constructors](#month) | Construct a `month`. |
-| [`ok`](#ok) | Verify that the month value is in the valid range [1,31]. |
+| [`ok`](#ok) | Verify that the month value is in the valid range [1,12]. |
 | [`operator++`](#op_++) | Increment the `month`. |
 | [`operator+=`](#op_+=) | Add the specified number of months to this `month`. |
 | [`operator--`](#op_--) | Decrement this `month`. |
