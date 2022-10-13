@@ -1518,7 +1518,7 @@ Example:
 void SetPropBarValue( UINT propId, const DWORD& barPropDwordValue )
 {
   auto property = propertiesGridCtrlList.FindItemByData( propId );
-  if( property )
+  if( property != nullptr )
   {
     property->SetValue( static_cast< _variant_t >( barPropDwordValue == 1 ) ); // sets property bar value to true or false depending on dword value
   }
