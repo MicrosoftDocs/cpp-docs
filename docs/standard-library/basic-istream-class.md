@@ -119,7 +119,7 @@ See the example for [`basic_ifstream` Class](../standard-library/basic-ifstream-
 |[`swap`](#swap)|Exchanges this `basic_istream` object for the provided `basic_istream` object parameter.|
 |[`sync`](#sync)|Synchronizes the stream's associated input device with the stream's buffer.|
 |[`tellg`](#tellg)|Reports the current read position in the stream.|
-|[u`nget](#unget)|Puts the most recently read character back into the stream.|
+|[`unget`](#unget)|Puts the most recently read character back into the stream.|
 
 ### Operators
 
