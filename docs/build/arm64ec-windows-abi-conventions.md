@@ -166,12 +166,6 @@ When the helper then returns to the thunk, the thunk:
 1. Pops the ARM64EC `lr` register
 1. Executes an ARM64 `ret lr` instruction.
 
-## x64 Unwinding of an ARM64EC function
-
-### Recovering the return address
-
-At the beginning of an x64 function, the stack pointer points to the return address that was pushed onto the stack by the caller's `call` instruction. In contrast, at the beginning of an ARM64EC function, the return address is in the `lr` register, set by the caller's `bl` instruction. Therefore, when unwinding the deepest frame of a stack, if the frame corresponds to an ARM64EC function, the x64 unwinder must recreate the value of ARM64EC `lr` by reading the value stashed in the x87 registers when the exception occurred. In addition, the new x64 unwind code `UWOP_SAVE_RET` handles the prolog saving ARM64EC `lr` to the stack.
-
 ## ARM64EC function name decoration
 
 An ARM64EC function name has a secondary decoration applied after any language-specific decoration. For functions with C linkage (whether compiled as C or by using `extern "C"`), a `#` is prepended to the name. For C++ decorated functions, a `$$h` tag is inserted into the name.
