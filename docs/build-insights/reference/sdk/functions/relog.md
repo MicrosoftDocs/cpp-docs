@@ -77,6 +77,6 @@ The input trace is passed through the analyzer group *numberOfAnalysisPasses* ti
 
 The relogging of system events like CPU samples from within a relogger class isn't supported. Use the *systemEventsRetentionFlags* parameter to decide which system events to keep in the output trace.
 
-The `relog` function depends on the COM API, so it is necessary for the user to call the `CoInitialize` first and then `CoUninitialize` once `relog` has finished. If you call `relog` without calling `CoInitialize` first then you will get error code 9 (RESULT_CODE_FAILURE_START_RELOGGER).
+The `relog` function depends on the COM API. You must call `CoInitialize` before you call `relog`. Call `CoUninitialize` once `relog` has finished. If you call `relog` without a call to `CoInitialize` first, you'll get error code 9 (`RESULT_CODE_FAILURE_START_RELOGGER`).
 
 ::: moniker-end
