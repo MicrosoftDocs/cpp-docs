@@ -10,9 +10,9 @@ helpviewer_keywords: ["wsl2", "cmake", "linux", "build"]
 
 Visual Studio 2022 introduces a native C++ toolset for Windows Subsystem for Linux version 2 (WSL 2) development. This toolset is available now in [Visual Studio 2022 version 17.0](https://visualstudio.microsoft.com/downloads/) or higher.
 
-WSL 2 is the new, recommended version of the [Windows Subsystem for Linux](/windows/wsl/about) (WSL). It provides better Linux file system performance, GUI support, and full system call compatibility. Visual Studio’s WSL 2 toolset allows you to use Visual Studio to build and debug C++ code on WSL 2 distros without adding a SSH connection. You can already build and debug C++ code on WSL 1 distros using the native [WSL 1 toolset](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/) introduced in Visual Studio 2019 version 16.1.
+WSL 2 is the new, recommended version of the [Windows Subsystem for Linux](/windows/wsl/about) (WSL). It provides better Linux file system performance, GUI support, and full system call compatibility. Visual Studio's WSL 2 toolset allows you to use Visual Studio to build and debug C++ code on WSL 2 distros without adding a SSH connection. You can already build and debug C++ code on WSL 1 distros using the native [WSL 1 toolset](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/) introduced in Visual Studio 2019 version 16.1.
 
-Visual Studio’s WSL 2 toolset supports both CMake and MSBuild-based Linux projects. CMake is our recommendation for all C++ cross-platform development with Visual Studio. We recommend CMake because it build and debug the same project on Windows, WSL, and remote systems.
+Visual Studio's WSL 2 toolset supports both CMake and MSBuild-based Linux projects. CMake is our recommendation for all C++ cross-platform development with Visual Studio. We recommend CMake because it build and debug the same project on Windows, WSL, and remote systems.
 
 For a video presentation of the information in this topic, see [Video: Debug C++ with WSL 2 Distributions and Visual Studio 2022.](https://youtu.be/IKI2w75aAow)
 
@@ -24,7 +24,7 @@ The WSL 2 toolset is supported by CMake Presets integration in Visual Studio. To
 
 ## Install the build tools
 
-Install the tools necessary to build and debug on WSL 2. You'll install a recent version of CMake using Visual Studio’s CMake binary deployment in a later step.
+Install the tools necessary to build and debug on WSL 2. You'll install a recent version of CMake using Visual Studio's CMake binary deployment in a later step.
 
 1. Install WSL and a WSL 2 distro by following the instructions at [Install WSL](/windows/wsl/install-win10).
 1. Assuming your distro uses `apt` (this walkthrough uses Ubuntu), use the following commands to install the required build tools on your WSL 2 distro:
@@ -55,7 +55,7 @@ Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file a
 
 4. In the **Search for templates** textbox, type "cmake".  Choose the **CMake Project** type and select **Next**. Give the project a name and location, and then select **Create**.
 
-5. Enable Visual Studio’s CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#enable-cmakepresets-json-integration).
+5. Enable Visual Studio's CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#enable-cmakepresets-json-integration).
 
     ![Screenshot of CMake general options screen with Prefer using CMake Presets for configure, build, and test highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
 
@@ -82,7 +82,7 @@ Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file a
 
     ![Visual Studio prompt beneath the toolbar that says: supported cmake version is not present. Install latest CMake binaries from Cmake.org? Yes no](media/vs2022-supported-cmake-not-present-prompt.png)
 
-12. Confirm that the configure step has completed and that you can see the **CMake generation finished** message in the **Output** window under the **CMake** pane. Build files are written to a directory in the WSL 2 distro’s file system.
+12. Confirm that the configure step has completed and that you can see the **CMake generation finished** message in the **Output** window under the **CMake** pane. Build files are written to a directory in the WSL 2 distro's file system.
 
     ![Output window showing message that CMake generation is done](media/vs-output-window-cmake-generation.png)
 
@@ -108,7 +108,7 @@ If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 too
 
 If **forceWSL1Tooslet** is set to **true**, then Visual Studio won't maintain a copy of your source files in the WSL file system. Instead, it will access source files in the mounted Windows drive (`/mnt/`…).
 
-In most cases, it’s best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are instead stored in the Windows file system. To learn more about file system performance in WSL 2, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
+In most cases, it's best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are instead stored in the Windows file system. To learn more about file system performance in WSL 2, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
 
 Specify advanced settings such as the path to the directory on WSL 2 where the project will be copied, copy source options, and rsync command arguments, in the Visual Studio Remote Settings vendor map in `CMakePresets.json`. For more information, see [Visual Studio Remote Settings vendor map](cmake-presets-json-reference.md#visual-studio-remote-settings-vendor-map).
 
@@ -124,7 +124,7 @@ CMake is recommended for all C++ cross-platform development with Visual Studio b
 
 If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 toolset, then in **Property Pages** > **General** > **Platform Toolset**, select the **GCC for Windows Subsystem for Linux** or **Clang for Windows Subsystem for Linux** toolset. If either of these toolsets are selected, Visual Studio won't maintain a copy of your source files in the WSL file system and will instead access source files over the mounted Windows drive (`/mnt/`…). System headers are still automatically copied to the Windows file system to provide a native IntelliSense experience. Customize the headers that are included or excluded from this copy in **Property Pages** > **General**.
 
-In most cases, it’s best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are stored in the Windows file system. To to learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
+In most cases, it's best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are stored in the Windows file system. To to learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
 
 ## See also
 

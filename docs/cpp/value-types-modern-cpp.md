@@ -99,7 +99,7 @@ public:
 
 If you enable copy construction/assignment, also enable move construction/assignment if it can be cheaper than a deep copy.
 
-Some *non-value* types are move-only, such as when you can’t clone a resource, only transfer ownership. Example: `unique_ptr`.
+Some *non-value* types are move-only, such as when you can't clone a resource, only transfer ownership. Example: `unique_ptr`.
 
 ## See also
 

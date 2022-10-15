@@ -411,7 +411,7 @@ explicit CFileDialog(
 [in] The parameter that specifies what type of dialog box to create. Set it to TRUE to construct a **File Open** dialog box. Set it to FALSE to construct a **File Save As** dialog box.
 
 *lpszDefExt*<br/>
-[in] The default file name extension. If the user does not include a known extension (one that has an association on the user’s computer) in the Filename box, the extension specified by *lpszDefExt* is automatically appended to the file name. If this parameter is NULL, no extension is appended.
+[in] The default file name extension. If the user does not include a known extension (one that has an association on the user's computer) in the Filename box, the extension specified by *lpszDefExt* is automatically appended to the file name. If this parameter is NULL, no extension is appended.
 
 *lpszFileName*<br/>
 [in] The initial file name that appears in the Filename box. If NULL, no initial file name appears.
@@ -437,7 +437,7 @@ The parameter that specifies the style of the file dialog. Set it to TRUE to use
 
 Either a **File Open** or **File Save As** dialog box is constructed, depending on the value of *bOpenFileDialog*.
 
-Specifying a default extension using *lpszDefExt* may not produce the behavior that you expect, because it is seldom predictable what extensions have file associations on the user’s computer. If you need more control over the appending of a default extension, you can derive your own class from `CFileDialog`, and override the `CFileDialog::OnFileNameOK` method to perform your own extension handling.
+Specifying a default extension using *lpszDefExt* may not produce the behavior that you expect, because it is seldom predictable what extensions have file associations on the user's computer. If you need more control over the appending of a default extension, you can derive your own class from `CFileDialog`, and override the `CFileDialog::OnFileNameOK` method to perform your own extension handling.
 
 To enable the user to select multiple files, set the OFN_ALLOWMULTISELECT flag before you call [DoModal](#domodal). You must supply your own file name buffer to store the returned list of multiple file names. Do this by replacing `m_ofn.lpstrFile` with a pointer to a buffer you have allocated, after you construct the [CFileDialog](../../mfc/reference/cfiledialog-class.md), but before you call `DoModal`. Additionally, you must set `m_ofn.nMaxFile` with the number of characters in the buffer pointed to by `m_ofn.lpstrFile`. If you set the maximum number of files to be selected to *n*, the necessary buffer size is `n`*(_MAX_PATH + 1) + 1. For example:
 

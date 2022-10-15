@@ -10,7 +10,7 @@ ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
 
 unresolved typeref token (token) for 'type'; image may not run
 
-A type doesn’t have a definition in MSIL metadata.
+A type doesn't have a definition in MSIL metadata.
 
 LNK4248 can occur when there is only a forward declaration for a type in an MSIL module (compiled with **/clr**), where the type is referenced in the MSIL module, and where the MSIL module is linked with a native module that has a definition for the type.
 

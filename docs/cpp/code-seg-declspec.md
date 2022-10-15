@@ -28,7 +28,7 @@ If an entity has a **`code_seg`** attribute, all declarations and definitions of
 
 When a **`code_seg`** attribute is applied to a namespace-scope function or a member function, the object code for that function is put in the specified text segment. When this attribute is applied to a class, all member functions of the class and nested classes—including compiler-generated special member functions—are put in the specified segment. Locally defined classes—for example, classes defined in a member function body—don't inherit the **`code_seg`** attribute of the enclosing scope.
 
-When a **`code_seg`** attribute is applied to a class template or function template, all implicit specializations of the template are put in the specified segment. Explicit or partial specializations don't inherit the **`code_seg`** attribute from the primary template. You may specify the same or a different **`code_seg`** attribute on the specialization. A **`code_seg`** attribute can’t be applied to an explicit template instantiation.
+When a **`code_seg`** attribute is applied to a class template or function template, all implicit specializations of the template are put in the specified segment. Explicit or partial specializations don't inherit the **`code_seg`** attribute from the primary template. You may specify the same or a different **`code_seg`** attribute on the specialization. A **`code_seg`** attribute can't be applied to an explicit template instantiation.
 
 By default, compiler-generated code such as a special member function is put in the `.text` segment. The `#pragma code_seg` directive doesn't override this default. Use the **`code_seg`** attribute on the class, class template, or function template to control where compiler-generated code is put.
 

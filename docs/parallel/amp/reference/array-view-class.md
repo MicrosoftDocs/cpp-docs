@@ -60,7 +60,7 @@ The rank of the `array_view` object.
 |[synchronize_async](#synchronize_async)|Asynchronously synchronizes any modifications made to the `array_view` object back to its source data.|
 |[synchronize_to](#synchronize_to)|Synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|
 |[synchronize_to_async](#synchronize_to_async)|Asynchronously synchronizes any modifications made to the `array_view` object to the specified [accelerator_view](accelerator-view-class.md).|
-|[view_as](#view_as)|Produces an `array_view` object of a different rank using this `array_view` object’s data.|
+|[view_as](#view_as)|Produces an `array_view` object of a different rank using this `array_view` object's data.|
 
 ### Public Operators
 

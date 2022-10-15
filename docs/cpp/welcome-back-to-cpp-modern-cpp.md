@@ -71,7 +71,7 @@ When performance optimization is needed, consider using:
 
 - Sorted `vector`. For more information, see [Algorithms](../standard-library/algorithms.md).
 
-Don’t use C-style arrays. For older APIs that need direct access to the data, use accessor methods such as `f(vec.data(), vec.size());` instead. For more information about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+Don't use C-style arrays. For older APIs that need direct access to the data, use accessor methods such as `f(vec.data(), vec.size());` instead. For more information about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 ## Standard Library algorithms
 
