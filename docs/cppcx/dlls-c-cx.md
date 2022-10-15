@@ -22,7 +22,7 @@ For more information, see [Creating Windows Runtime Components in C++](/windows/
 
 ## Standard DLLs
 
-You can create a standard DLL for C++ code that doesn’t consume or produce public Windows Runtime types and consume it from a UWP app. Use the Dynamic-Link Library (DLL) project type when you just want to migrate an existing DLL to compile in this version of Visual Studio but not convert the code to a Windows Runtime Component project. When you use the following steps, the DLL will be deployed alongside your app executable in the .appx package.
+You can create a standard DLL for C++ code that doesn't consume or produce public Windows Runtime types and consume it from a UWP app. Use the Dynamic-Link Library (DLL) project type when you just want to migrate an existing DLL to compile in this version of Visual Studio but not convert the code to a Windows Runtime Component project. When you use the following steps, the DLL will be deployed alongside your app executable in the .appx package.
 
 ### To create a standard DLL in Visual Studio
 

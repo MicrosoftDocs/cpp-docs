@@ -86,7 +86,7 @@ Here's how Windows Runtime types can be used to author a generic interface:
 
 - In the interface, any reference to the current interface—in a method parameter, return value, or property—is assumed to refer to the current instantiation. For example, *IMyIntf* means *IMyIntf\<T>*.
 
-- When the type of a method parameter is a type parameter, the declaration of that parameter or variable uses the type parameter’s name without any pointer, native reference, or handle declarators. In other words, you never write "T^".
+- When the type of a method parameter is a type parameter, the declaration of that parameter or variable uses the type parameter's name without any pointer, native reference, or handle declarators. In other words, you never write "T^".
 
 - Templated ref classes must be private. They can implement generic interfaces, and can pass template parameter *T* to generic argument *T*. Each instantiation of a templated ref class is itself a ref class.
 

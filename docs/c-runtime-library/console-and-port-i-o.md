@@ -6,7 +6,7 @@ helpviewer_keywords: ["routines, console and port I/O", "routines", "ports, I/O 
 ---
 # Console and Port I/O
 
-These routines read and write on your console or on the specified port. The console I/O routines aren't compatible with stream I/O or low-level I/O library routines. The console or port doesn't have to be opened or closed before I/O is performed, so there are no open or close routines in this category. In the Windows operating systems, the output from these functions is always directed to the console and can’t be redirected.
+These routines read and write on your console or on the specified port. The console I/O routines aren't compatible with stream I/O or low-level I/O library routines. The console or port doesn't have to be opened or closed before I/O is performed, so there are no open or close routines in this category. In the Windows operating systems, the output from these functions is always directed to the console and can't be redirected.
 
 ## Console and Port I/O Routines
 

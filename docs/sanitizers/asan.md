@@ -154,7 +154,7 @@ To enable the AddressSanitizer for [a CMake project created to target Windows](.
 
 1. Choose the **Edit JSON** link in the editor. This selection switches the view to raw JSON.
 
-1. Add the property: **“addressSanitizerEnabled”: true**
+1. Add the property: **"addressSanitizerEnabled": true**
 
    This image is of CMakeSettings.json after that change:
 

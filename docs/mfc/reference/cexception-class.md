@@ -32,7 +32,7 @@ class AFX_NOVTABLE CException : public CObject
 
 ## Remarks
 
-Because `CException` is an abstract base class you can’t create `CException` objects directly; you must create objects of derived classes. If you need to create your own `CException`-style class, use one of the derived classes listed above as a model. Make sure that your derived class also uses `IMPLEMENT_DYNAMIC`.
+Because `CException` is an abstract base class you can't create `CException` objects directly; you must create objects of derived classes. If you need to create your own `CException`-style class, use one of the derived classes listed above as a model. Make sure that your derived class also uses `IMPLEMENT_DYNAMIC`.
 
 The derived classes and their descriptions are listed below:
 

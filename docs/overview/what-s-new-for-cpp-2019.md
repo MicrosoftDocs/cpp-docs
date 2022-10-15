@@ -25,7 +25,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.11, see 
 
 For a summary of new features and bug fixes in Visual Studio version 16.10, see [What's New in Visual Studio 2019 version 16.10](/visualstudio/releases/2019/release-notes-v16.10).
 
-- All C++20 features are now available under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md). While MSVC’s implementation of the C++20 standards (as currently published by ISO) is feature complete, some key C++20 library features are expected to be amended by upcoming Defect Reports (ISO C++20 bug fixes) that may change them in an ABI-incompatible way. Please see [Microsoft/STL Issue #1814](https://github.com/microsoft/STL/issues/1814) for more details.
+- All C++20 features are now available under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md). While MSVC's implementation of the C++20 standards (as currently published by ISO) is feature complete, some key C++20 library features are expected to be amended by upcoming Defect Reports (ISO C++20 bug fixes) that may change them in an ABI-incompatible way. Please see [Microsoft/STL Issue #1814](https://github.com/microsoft/STL/issues/1814) for more details.
 
   - C++20 immediate functions & constinit support added in 16.10
   - The final pieces of `<chrono>`: new clocks, leap seconds, time zones, and parsing

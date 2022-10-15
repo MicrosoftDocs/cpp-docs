@@ -36,7 +36,7 @@ The amount of memory that the [new operator](../../cpp/new-operator-cpp.md) trie
 
 ## Exceptions
 
-This function throws [bad_alloc](../../standard-library/bad-alloc-class.md) if the *new handler* can’t be located.
+This function throws [bad_alloc](../../standard-library/bad-alloc-class.md) if the *new handler* can't be located.
 
 ## Remarks
 

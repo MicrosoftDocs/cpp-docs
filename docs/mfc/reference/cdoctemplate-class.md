@@ -65,7 +65,7 @@ The document template contains the ID of the resources used with the document ty
 
 If your application is an OLE container and/or server, the document template also defines the ID of the menu used during in-place activation. If your application is an OLE server, the document template defines the ID of the toolbar and menu used during in-place activation. You specify these additional OLE resources by calling `SetContainerInfo` and `SetServerInfo`.
 
-Because `CDocTemplate` is an abstract class, you can’t use the class directly. A typical application uses one of the two `CDocTemplate`-derived classes provided by the Microsoft Foundation Class Library: `CSingleDocTemplate`, which implements SDI, and `CMultiDocTemplate`, which implements MDI. See those classes for more information on using document templates.
+Because `CDocTemplate` is an abstract class, you can't use the class directly. A typical application uses one of the two `CDocTemplate`-derived classes provided by the Microsoft Foundation Class Library: `CSingleDocTemplate`, which implements SDI, and `CMultiDocTemplate`, which implements MDI. See those classes for more information on using document templates.
 
 If your application requires a user-interface paradigm that is fundamentally different from SDI or MDI, you can derive your own class from `CDocTemplate`.
 
@@ -259,7 +259,7 @@ An index of the substring being retrieved from the string that describes the doc
 
 - `CDocTemplate::filterExt` Extension for documents of this type (for example, ".xls"). If not specified, the document type is inaccessible using the **File Open** command.
 
-- `CDocTemplate::regFileTypeId` Identifier for the document type to be stored in the registration database maintained by Windows. This string is for internal use only (for example, "ExcelWorksheet"). If not specified, the document type can’t be registered with the Windows File Manager.
+- `CDocTemplate::regFileTypeId` Identifier for the document type to be stored in the registration database maintained by Windows. This string is for internal use only (for example, "ExcelWorksheet"). If not specified, the document type can't be registered with the Windows File Manager.
 
 - `CDocTemplate::regFileTypeName` Name of the document type to be stored in the registration database. This string may be displayed in dialog boxes of applications that access the registration database (for example, "Microsoft Excel Worksheet").
 

@@ -14,7 +14,7 @@ The MFC Application Wizard generates an application that, when compiled, impleme
 
 ## Overview
 
-This wizard page describes the current application settings for the MFC application that you’re creating. By default, the wizard creates a project as follows:
+This wizard page describes the current application settings for the MFC application that you're creating. By default, the wizard creates a project as follows:
 
 - [Application Type, MFC Application Wizard](../../mfc/reference/application-type-mfc-application-wizard.md)
 

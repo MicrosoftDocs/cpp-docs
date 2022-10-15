@@ -49,12 +49,12 @@ translates to
 |[`CStringList::FindIndex`](../../mfc/reference/coblist-class.md#findindex)|Gets the position of an element specified by a zero-based index.|
 |[`CStringList::GetAt`](../../mfc/reference/coblist-class.md#getat)|Gets the element at a given position.|
 |[`CStringList::GetCount`](../../mfc/reference/coblist-class.md#getcount)|Returns the number of elements in this list.|
-|[`CStringList::GetHead`](../../mfc/reference/coblist-class.md#gethead)|Returns the head element of the list (can’t be empty).|
+|[`CStringList::GetHead`](../../mfc/reference/coblist-class.md#gethead)|Returns the head element of the list (can't be empty).|
 |[`CStringList::GetHeadPosition`](../../mfc/reference/coblist-class.md#getheadposition)|Returns the position of the head element of the list.|
 |[`CStringList::GetNext`](../../mfc/reference/coblist-class.md#getnext)|Gets the next element for iterating.|
 |[`CStringList::GetPrev`](../../mfc/reference/coblist-class.md#getprev)|Gets the previous element for iterating.|
 |[`CStringList::GetSize`](../../mfc/reference/coblist-class.md#getsize)|Returns the number of elements in this list.|
-|[`CStringList::GetTail`](../../mfc/reference/coblist-class.md#gettail)|Returns the tail element of the list (can’t be empty).|
+|[`CStringList::GetTail`](../../mfc/reference/coblist-class.md#gettail)|Returns the tail element of the list (can't be empty).|
 |[`CStringList::GetTailPosition`](../../mfc/reference/coblist-class.md#gettailposition)|Returns the position of the tail element of the list.|
 |[`CStringList::InsertAfter`](../../mfc/reference/coblist-class.md#insertafter)|Inserts a new element after a given position.|
 |[`CStringList::InsertBefore`](../../mfc/reference/coblist-class.md#insertbefore)|Inserts a new element before a given position.|

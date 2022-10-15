@@ -170,7 +170,7 @@ This data member is a public variable of type **`int`**. The enumerators and the
 | `CFileException::tooManyOpenFiles` | 4: The permitted number of open files was exceeded. |
 | `CFileException::accessDenied` | 5: The file couldn't be accessed. |
 | `CFileException::invalidFile` | 6: There was an attempt to use an invalid file handle. |
-| `CFileException::removeCurrentDir` | 7: The current working directory can’t be removed. |
+| `CFileException::removeCurrentDir` | 7: The current working directory can't be removed. |
 | `CFileException::directoryFull` | 8: There are no more directory entries. |
 | `CFileException::badSeek` | 9: There was an error trying to set the file pointer. |
 | `CFileException::hardIO` | 10: There was a hardware error. |

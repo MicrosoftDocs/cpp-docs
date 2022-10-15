@@ -203,7 +203,7 @@ The first version of `CreatePen` initializes a pen with the specified style, wid
 
 Pens that have a width greater than 1 pixel should always have either the `PS_NULL`, `PS_SOLID`, or `PS_INSIDEFRAME` style.
 
-If a pen has the `PS_INSIDEFRAME` style and a color that doesn't match a color in the logical color table, the pen is drawn with a dithered color. The `PS_SOLID` pen style can’t be used to create a pen with a dithered color. The style `PS_INSIDEFRAME` is identical to `PS_SOLID` if the pen width is less than or equal to 1.
+If a pen has the `PS_INSIDEFRAME` style and a color that doesn't match a color in the logical color table, the pen is drawn with a dithered color. The `PS_SOLID` pen style can't be used to create a pen with a dithered color. The style `PS_INSIDEFRAME` is identical to `PS_SOLID` if the pen width is less than or equal to 1.
 
 The second version of `CreatePen` initializes a logical cosmetic or geometric pen that has the specified style, width, and brush attributes. The width of a cosmetic pen is always 1; the width of a geometric pen is always specified in world units. After an application creates a logical pen, it can select that pen into a device context by calling the [`CDC::SelectObject`](../../mfc/reference/cdc-class.md#selectobject) function. After a pen is selected into a device context, it can be used to draw lines and curves.
 

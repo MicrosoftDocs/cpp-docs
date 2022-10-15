@@ -46,7 +46,7 @@ The following steps start an asynchronous timer and wait for the timer to expire
    [!code-cpp[wrl-consume-async#5](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_4.cpp)]
 
    > [!NOTE]
-   > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don’t wait for async operations to complete.
+   > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don't wait for async operations to complete.
 
 5. Create an `IThreadPoolTimer` object that expires after two seconds. Use the `Callback` function to create the event handler (an `ABI::Windows::System::Threading::ITimerElapsedHandler` object).
 
@@ -94,7 +94,7 @@ The following steps start a worker thread and define the action that's performed
    [!code-cpp[wrl-consume-asyncOp#5](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_11.cpp)]
 
    > [!NOTE]
-   > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don’t wait for async operations to complete.
+   > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don't wait for async operations to complete.
 
 5. Call the `IThreadPoolStatics::RunAsync` method to create a worker thread. Use the `Callback` function to define the action.
 

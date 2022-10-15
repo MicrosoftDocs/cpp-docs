@@ -63,7 +63,7 @@ By default, this function's global state is scoped to the application. To change
 
 |*`mode`*|Access|
 |-|-|
-| **`"r"`** | Opens for reading. If the file doesn't exist or can’t be found, the **`freopen`** call fails. |
+| **`"r"`** | Opens for reading. If the file doesn't exist or can't be found, the **`freopen`** call fails. |
 | **`"w"`** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
 | **`"a"`** | Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it doesn't exist. |
 | **`"r+"`** | Opens for both reading and writing. The file must exist. |
@@ -72,7 +72,7 @@ By default, this function's global state is scoped to the application. To change
 
 Use the **`"w"`** and **`"w+"`** types with care, as they can destroy existing files. Starting in C11, you can append **`"x"`** to **`"w"`** or **`"w+"`** to cause the function fail if the file exists, instead of overwriting it.
 
-When a file is opened with the **`"a"`** or **`"a+"`** access type, all write operations take place at the end of the file. Although the file pointer can be repositioned using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), the file pointer is always moved back to the end of the file before any write operation is carried out. Thus, existing data can’t be overwritten.
+When a file is opened with the **`"a"`** or **`"a+"`** access type, all write operations take place at the end of the file. Although the file pointer can be repositioned using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), the file pointer is always moved back to the end of the file before any write operation is carried out. Thus, existing data can't be overwritten.
 
 The **`"a"`** mode doesn't remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. The **`"a+"`** mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated with the CTRL+Z EOF marker.
 

@@ -81,7 +81,7 @@ int main() {
 }
 ```
 
-You can use the scope resolution operator to identify a member of a **`namespace`**, or to identify a namespace that nominates the member’s namespace in a **`using`** directive. In the example below, you can use `NamespaceC` to qualify `ClassB`, even though `ClassB` was declared in namespace `NamespaceB`, because `NamespaceB` was nominated in `NamespaceC` by a **`using`** directive.
+You can use the scope resolution operator to identify a member of a **`namespace`**, or to identify a namespace that nominates the member's namespace in a **`using`** directive. In the example below, you can use `NamespaceC` to qualify `ClassB`, even though `ClassB` was declared in namespace `NamespaceB`, because `NamespaceB` was nominated in `NamespaceC` by a **`using`** directive.
 
 ```cpp
 namespace NamespaceB {

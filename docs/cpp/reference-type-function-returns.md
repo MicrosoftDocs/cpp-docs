@@ -91,7 +91,7 @@ Declarations of reference types must contain initializers except in the followin
 If you declare an object at local scope, that object will be destroyed when the function returns. If the function returns a reference to that object, that reference will probably cause an access violation at runtime if the caller attempts to use the null reference.
 
 ```cpp
-// C4172 means Don’t do this!!!
+// C4172 means Don't do this!!!
 Foo& GetFoo()
 {
     Foo f;

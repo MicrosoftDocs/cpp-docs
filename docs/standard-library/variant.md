@@ -7,7 +7,7 @@ helpviewer_keywords: ["<variant>"]
 ---
 # `<variant>`
 
-A variant object holds and manages a value. If the variant holds a value, that value’s type has to be one of the template argument types given to variant. These template arguments are called alternatives.
+A variant object holds and manages a value. If the variant holds a value, that value's type has to be one of the template argument types given to variant. These template arguments are called alternatives.
 
 ## Requirements
 
