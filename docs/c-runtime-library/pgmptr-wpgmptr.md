@@ -25,7 +25,7 @@ When a program is run from the command interpreter (Cmd.exe), `_pgmptr` is autom
 C> hello
 ```
 
-When a program is not run from the command line, `_pgmptr` might be initialized to the program name (the file's base name without the file name extension) or to a file name, relative path, or full path.
+When a program isn't run from the command line, `_pgmptr` might be initialized to the program name (the file's base name without the file name extension) or to a file name, relative path, or full path.
 
 `_wpgmptr` is the wide-character counterpart of `_pgmptr` for use with programs that use `wmain`.
 

@@ -41,9 +41,9 @@ A value that indicates the application type. The possible values are:
 
 ## Remarks
 
-Normally, you do not need to call this function. It is part of the C runtime startup code that executes before `main` is called in your app.
+Normally, you don't need to call this function. It's part of the C runtime startup code that executes before `main` is called in your app.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 
