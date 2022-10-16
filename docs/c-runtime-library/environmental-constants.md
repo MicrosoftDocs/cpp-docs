@@ -15,7 +15,7 @@ ms.assetid: 5224f540-231c-47aa-be9a-467efd1db281
 
 ## Remarks
 
-This constant defines the environmental length for strings.
+The `_MAX_ENV` constant defines the environmental length for strings.
 
 |Constant|Meaning|
 |--------------|-------------|

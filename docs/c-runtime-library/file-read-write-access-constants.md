@@ -21,10 +21,10 @@ The access types are described in this table:
 
 |Access type|Description|
 |----------|----------------|
-|**"r"**|Opens for reading. If the file does not exist or cannot be found, the call to open the file fails.|
+|**"r"**|Opens for reading. If the file doesn't exist or can't be found, the call to open the file fails.|
 |**"w"**|Opens an empty file for writing. If the given file exists, its contents are destroyed.|
-|**"a"**|Opens for writing at the end of the file (appending); creates the file first if it does not exist. All write operations occur at the end of the file. Although the file pointer can be repositioned using `fseek` or `rewind`, it is always moved back to the end of the file before any write operation is carried out. |
-|**"r+"**|Opens for both reading and writing. If the file does not exist or cannot be found, the call to open the file fails.|
+|**"a"**|Opens for writing at the end of the file (appending); creates the file first if it doesn't exist. All write operations occur at the end of the file. Although the file pointer can be repositioned using `fseek` or `rewind`, it's always moved back to the end of the file before any write operation is carried out. |
+|**"r+"**|Opens for both reading and writing. If the file doesn't exist or can't be found, the call to open the file fails.|
 |**"w+"**|Opens an empty file for both reading and writing. If the given file exists, its contents are destroyed.|
 |**"a+"**|The same as **"a"** but also allows reading.|
 

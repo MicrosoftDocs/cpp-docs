@@ -15,9 +15,9 @@ ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
 
 ## Remarks
 
-EOF is returned by an I/O routine when the end-of-file (or in some cases, an error) is encountered.
+`EOF` is returned by an I/O routine when the end-of-file (or in some cases, an error) is encountered.
 
-WEOF yields the return value, of type **wint_t**, used to signal the end of a wide stream, or to report an error condition.
+`WEOF` yields the return value, of type **`wint_t`**, used to signal the end of a wide stream, or to report an error condition.
 
 ## See also
 

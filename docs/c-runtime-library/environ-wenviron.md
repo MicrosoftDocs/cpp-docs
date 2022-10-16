@@ -46,7 +46,7 @@ When two copies of the environment (MBCS and Unicode) exist simultaneously in a 
 
 Polling `_environ` in a Unicode context is meaningless when [/MD](../build/reference/md-mt-ld-use-run-time-library.md) or `/MDd` linkage is used. For the CRT DLL, the type (wide or multibyte) of the program is unknown. Only the multibyte type is created because that is the most likely scenario.
 
-The following pseudo-code illustrates how this can happen.
+The following pseudo-code illustrates how this creation can happen.
 
 ```
 int i, j;
@@ -56,7 +56,7 @@ j = _wputenv( "env_var_y=string2" );  // also results in implicit call:
                                       // putenv("env_var_z=string2")
 ```
 
-In the notation used for this example, the character strings are not C string literals; rather, they are placeholders that represent Unicode environment string literals in the `_wputenv` call and multibyte environment strings in the `putenv` call. The character placeholders '`x`' and '`y`' in the two distinct Unicode environment strings do not map uniquely to characters in the current MBCS. Instead, both map to some MBCS character '`z`' that is the default result of the attempt to convert the strings.
+In the notation used for this example, the character strings aren't C string literals; rather, they're placeholders that represent Unicode environment string literals in the `_wputenv` call and multibyte environment strings in the `putenv` call. The character placeholders '`x`' and '`y`' in the two distinct Unicode environment strings don't map uniquely to characters in the current MBCS. Instead, both map to some MBCS character '`z`' that is the default result of the attempt to convert the strings.
 
 Thus, in the multibyte environment, the value of "`env_var_z`" after the first implicit call to `putenv` would be "`string1`", but this value would be overwritten on the second implicit call to `putenv`, when the value of "`env_var_z`" is set to "`string2`". The Unicode environment (in `_wenviron`) and the multibyte environment (in `_environ`) would therefore differ following this series of calls.
 
