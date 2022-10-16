@@ -10,9 +10,9 @@ Country and region strings can be combined with a language string to create a lo
 
 For lists of country and region names that are supported by various Windows operating system versions, see the **Language**, **Location**, and **Language tag** columns of the table in [Appendix A: Product Behavior](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) in \[MS-LCID]: Windows Language Code Identifier (LCID) Reference. For an example of code that enumerates available locale names and related values, see [NLS: Name-based APIs Sample](/windows/win32/intl/nls--name-based-apis-sample).
 
-## Additional supported country and region strings
+## Other supported country and region strings
 
-The Microsoft C run-time library implementation also supports the following additional country/region strings and abbreviations:
+The Microsoft C run-time library implementation also supports the following country/region strings and abbreviations:
 
 |Country/region string|Abbreviation|Equivalent locale name|
 |----------------------------|------------------|----------------------------|

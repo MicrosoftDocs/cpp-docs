@@ -22,7 +22,7 @@ The predefined constants in the following table are defined in `<ctype.h>`.
 | [`isleadbyte`, `_isleadbyte_l`](../c-runtime-library/reference/isleadbyte-isleadbyte-l.md) | Lead byte; test result depends on `LC_CTYPE` category setting of current locale |
 | [`_ismbbalnum`, `_ismbbalnum_l`](../c-runtime-library/reference/ismbbalnum-ismbbalnum-l.md) | `isalnum || _ismbbkalnum` |
 | [`_ismbbalpha`, `_ismbbalpha_l`](../c-runtime-library/reference/ismbbalpha-ismbbalpha-l.md) | `isalpha || _ismbbkalpha` |
-| [`_ismbbgraph`, `_ismbbgraph_l`](../c-runtime-library/reference/ismbbgraph-ismbbgraph-l.md) | Same as `_ismbbprint`, but `_ismbbgraph` does not include the space character (0x20) |
+| [`_ismbbgraph`, `_ismbbgraph_l`](../c-runtime-library/reference/ismbbgraph-ismbbgraph-l.md) | Same as `_ismbbprint`, but `_ismbbgraph` doesn't include the space character (0x20) |
 | [`_ismbbkalnum`, `_ismbbkalnum_l`](../c-runtime-library/reference/ismbbkalnum-ismbbkalnum-l.md) | Non-ASCII text symbol other than punctuation. For example, in code page 932 only, `_ismbbkalnum` tests for katakana alphanumeric |
 | [`_ismbbkana`, `_ismbbkana_l`](../c-runtime-library/reference/ismbbkana-ismbbkana-l.md) | Katakana (0xA1 - 0xDF), code page 932 only |
 | [`_ismbbkprint`, `_ismbbkprint_l`](../c-runtime-library/reference/ismbbkprint-ismbbkprint-l.md) | Non-ASCII text or non-ASCII punctuation symbol. For example, in code page 932 only, `_ismbbkprint` tests for katakana alphanumeric or katakana punctuation (range: 0xA1 - 0xDF). |

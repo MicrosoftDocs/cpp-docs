@@ -87,7 +87,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
-If `_UNICODE` has been defined, GENTEXT.C maps to the following Unicode version of the program. For more information about using `wmain` in Unicode programs as a replacement for `main`, see [Using wmain](../c-language/using-wmain.md) in *C Language Reference*.
+If `_UNICODE` has been defined, GENTEXT.C maps to the following Unicode version of the program. For more information about using `wmain` in Unicode programs as a replacement for `main`, see [Using `wmain`](../c-language/using-wmain.md) in *C Language Reference*.
 
 ```C
 // crt_unicgtxt.c
@@ -125,7 +125,7 @@ int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)
 }
 ```
 
-If neither `_MBCS` nor `_UNICODE` has been defined, GENTEXT.C maps to single-byte ASCII code, as follows:
+If `_MBCS` or `_UNICODE` hasn't been defined, GENTEXT.C maps to single-byte ASCII code, as follows:
 
 ```C
 // crt_sbcsgtxt.c

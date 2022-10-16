@@ -22,11 +22,11 @@ void __cdecl _CIcos();
 
 ## Remarks
 
-This version of the [cos](../c-runtime-library/reference/cos-cosf-cosl.md) function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.
+This version of the [`cos`](../c-runtime-library/reference/cos-cosf-cosl.md) function has a specialized calling convention that the compiler understands. It speeds up the execution because it prevents copies from being generated and helps with register allocation.
 
 The resulting value is pushed onto the top of the floating-point stack.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 
@@ -35,4 +35,4 @@ By default, this function's global state is scoped to the application. To change
 ## See also
 
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)<br/>
+[`cos`, `cosf`, `cosl`](../c-runtime-library/reference/cos-cosf-cosl.md)

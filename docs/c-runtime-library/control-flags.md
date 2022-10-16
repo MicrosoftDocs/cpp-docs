@@ -16,7 +16,7 @@ The debug version of the Microsoft C run-time library uses the following flags t
 |[_DEBUG](../c-runtime-library/debug.md)|Enables the use of the debugging versions of the run-time functions|
 |[_crtDbgFlag](../c-runtime-library/crtdbgflag.md)|Controls how the debug heap manager tracks allocations|
 
-These flags can be defined with a /D command-line option or with a `#define` directive. When the flag is defined with `#define`, the directive must appear before the header file include statement for the routine declarations.
+These flags can be defined with a /D command-line option or with a `#define` directive. When the flag is defined with `#define`, the directive must appear before the header file `#include` directive for the routine declarations.
 
 ## See also
 
