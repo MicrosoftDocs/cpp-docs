@@ -16,7 +16,7 @@ To simplify writing code for international markets, generic-text mappings are de
 
 - [Routine mappings](../c-runtime-library/routine-mappings.md)
 
-For more information, see [Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md). Generic-text mappings are Microsoft extensions that are not ANSI compatible.
+For more information, see [Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md). Generic-text mappings are Microsoft extensions that aren't ANSI compatible.
 
 ## See also
 

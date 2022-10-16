@@ -8,9 +8,11 @@ ms.assetid: db533c3f-6ae8-4520-9d35-c8fabbef3529
 ---
 # Math Constants
 
+Microsoft provides several predefined preprocessor macros for common math constants.
+
 ## Syntax
 
-```
+```cpp
 #define _USE_MATH_DEFINES // for C++
 #include <cmath>
 
@@ -38,9 +40,9 @@ The following symbols are defined for the values of their indicated expressions:
 |`M_SQRT2`|sqrt(2)|1.41421356237309504880|
 |`M_SQRT1_2`|1/sqrt(2)|0.707106781186547524401|
 
-Math Constants are not defined in Standard C/C++. To use them, you must first define `_USE_MATH_DEFINES` and then include cmath or *`math.h`*.
+The math constants aren't defined in Standard C/C++. To use them, you must first define `_USE_MATH_DEFINES`, and then include `<cmath>` or `<math.h>`.
 
-The file *`ATLComTime.h`* includes *`math.h`* when your project is built in Release mode. If you use one or more of the math constants in a project that also includes *`ATLComTime.h`*, you must define `_USE_MATH_DEFINES` before you include *`ATLComTime.h`*.
+The file `<ATLComTime.h>` includes `<math.h>` when your project is built in Release mode. If you use one or more of the math constants in a project that also includes `<ATLComTime.h>`, you must define `_USE_MATH_DEFINES` before you include `<ATLComTime.h>`.
 
 ## See also
 
