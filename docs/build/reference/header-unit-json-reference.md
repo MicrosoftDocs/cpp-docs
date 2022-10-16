@@ -6,6 +6,7 @@ author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["header-units.json"]
 helpviewer_keywords: ["header-units.json", "header unit"]
+monikerRange: '>=msvc-160'
 ---
 
 # C++ header-units.json reference
