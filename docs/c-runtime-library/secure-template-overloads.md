@@ -25,7 +25,7 @@ char szBuf[10];
 strcpy_s(szBuf, 10, "test"); // security-enhanced _s function
 ```
 
-The template overloads provide additional choices. If you define `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` to 1, this enables template overloads of standard CRT functions that call the more secure variants automatically. If `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` is 1, then no changes to your code are necessary. Behind the scenes, the call to `strcpy` is changed to a call to `strcpy_s` with the size argument supplied automatically.
+The template overloads provide more choices. If you define `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` to 1, it enables template overloads of standard CRT functions that call the more secure variants automatically. If `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` is 1, then no changes to your code are necessary. Behind the scenes, the call to `strcpy` is changed to a call to `strcpy_s` with the size argument supplied automatically.
 
 ```cpp
 #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 1
@@ -56,7 +56,7 @@ Only the name of the function needs to be changed (by adding "_s"); the template
 
 By default, `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` and `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT` are defined as 0 (disabled) and `_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES` is defined as 1 (enabled).
 
-These template overloads only work for static arrays. Dynamically allocated buffers require additional source code changes. Revisiting the above examples:
+The template overloads only work for static arrays. Dynamically allocated buffers require other source code changes. Revisiting the above examples:
 
 ```cpp
 #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 1
@@ -68,7 +68,7 @@ strcpy(szBuf, "test"); // still deprecated; change it to
                        // strcpy_s(szBuf, 10, "test");
 ```
 
-And this:
+And this example:
 
 ```cpp
 #define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES 1
