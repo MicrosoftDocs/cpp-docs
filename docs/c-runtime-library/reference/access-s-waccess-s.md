@@ -12,7 +12,7 @@ ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
 ---
 # _access_s, _waccess_s
 
-Determines file read/write permissions. This is a version of [_access, _waccess](access-waccess.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Determines file read/write permissions. These functions are versions of [`_access`, `_waccess`](access-waccess.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -37,11 +37,11 @@ Permission setting.
 
 ## Return Value
 
-Each function returns 0 if the file has the given mode. The function returns an error code if the named file does not exist or is not accessible in the given mode. In this case, the function returns an error code from the set as follows and also sets `errno` to the same value.
+Each function returns 0 if the file has the given mode. The function returns an error code if the named file doesn't exist or isn't accessible in the given mode. In this case, the function returns an error code from the set as follows and also sets `errno` to the same value.
 
 |errno value|Condition|
 |-|-|
-`EACCES`|Access denied. The file's permission setting does not allow specified access.
+`EACCES`|Access denied. The file's permission setting doesn't allow specified access.
 `ENOENT`|File name or path not found.
 `EINVAL`|Invalid parameter.
 
@@ -58,13 +58,13 @@ When used with files, the **_access_s** function determines whether the specifie
 |04|Read permission.|
 |06|Read and write permission.|
 
-Permission to read or write the file is not enough to ensure the ability to open a file. For example, if a file is locked by another process, it might not be accessible even though **_access_s** returns 0.
+Permission to read or write the file isn't enough to ensure the ability to open a file. For example, if a file is locked by another process, it might not be accessible even though **_access_s** returns 0.
 
 **_waccess_s** is a wide-character version of **_access_s**, where the *path* argument to **_waccess_s** is a wide-character string. Otherwise, **_waccess_s** and **_access_s** behave identically.
 
-These functions validate their parameters. If *path* is NULL or *mode* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
+These functions validate their parameters. If *path* is NULL or *mode* doesn't specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
