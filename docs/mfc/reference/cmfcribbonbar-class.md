@@ -271,7 +271,7 @@ CMFCRibbonCategory* AddContextCategory(
 
 ### Return Value
 
-A pointer to the newly created category, or `NULL` if the `CreateObject` method of *`pRTI`* can’t create the specified category.
+A pointer to the newly created category, or `NULL` if the `CreateObject` method of *`pRTI`* can't create the specified category.
 
 ### Remarks
 
@@ -698,7 +698,7 @@ A pointer to the active ribbon category; or `NULL` if no category is active.
 
 A category is active if it has the focus. By default, the active category is the first category on the left side of the ribbon bar.
 
-The main category is displayed when the user presses the application button and it can’t be the active category.
+The main category is displayed when the user presses the application button and it can't be the active category.
 
 ## <a name="getapplicationbutton"></a> `CMFCRibbonBar::GetApplicationButton`
 
@@ -1553,9 +1553,9 @@ BOOL SetActiveCategory(
 
 ### Remarks
 
-The main ribbon category can’t be the active category.
+The main ribbon category can't be the active category.
 
-If the category specified by *`pCategory`* isn't displayed, it can’t be set as the active category.
+If the category specified by *`pCategory`* isn't displayed, it can't be set as the active category.
 
 ## <a name="setactivemdichild"></a> `CMFCRibbonBar::SetActiveMDIChild`
 

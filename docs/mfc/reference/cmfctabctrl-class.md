@@ -775,7 +775,7 @@ virtual DROPEFFECT OnDragEnter(
 
 ### Return Value
 
-Always `DROPEFFECT_NONE`, which means that the drop target can’t accept the data.
+Always `DROPEFFECT_NONE`, which means that the drop target can't accept the data.
 
 ### Remarks
 
@@ -947,7 +947,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 
 ### Return Value
 
-`TRUE` if this method is successful. `FALSE` if the tab control is created by using a flat style or if the first method overload can’t load the bitmap that is specified by the *`uiID`* parameter.
+`TRUE` if this method is successful. `FALSE` if the tab control is created by using a flat style or if the first method overload can't load the bitmap that is specified by the *`uiID`* parameter.
 
 ### Remarks
 
@@ -974,7 +974,7 @@ The *resizeMode* parameter can be one of the following `ResizeMode` enumeration 
 
 |Name|Description|
 |----------|-----------------|
-|`RESIZE_NO`|The tab control can’t be resized.|
+|`RESIZE_NO`|The tab control can't be resized.|
 |`RESIZE_VERT`|The tab control can be resized vertically but not horizontally.|
 |`RESIZE_HORIZ`|The tab control can be resized horizontally but not vertically.|
 

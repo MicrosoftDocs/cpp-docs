@@ -11,7 +11,7 @@ helpviewer_keywords: ["C1049"]
 
 The CL.EXE command-line parser found *value* where it was expecting a numerical argument.
 
-A C1049 error may occur when the compiler can’t find a numerical argument for one of these compiler options:
+A C1049 error may occur when the compiler can't find a numerical argument for one of these compiler options:
 
 [/constexpr:depth](../../build/reference/constexpr-control-constexpr-evaluation.md)\
 [/constexpr:backtrace](../../build/reference/constexpr-control-constexpr-evaluation.md)\

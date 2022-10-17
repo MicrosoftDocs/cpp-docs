@@ -41,7 +41,7 @@ Maximum length of the absolute path name buffer (*`absPath`*). This length is in
 
 ## Return Value
 
-Each of these functions returns a pointer to a buffer containing the absolute path name (*`absPath`*). If there's an error (for example, if the value passed in *`relPath`* includes a drive letter that isn't valid or can’t be found, or if the length of the created absolute path name (*`absPath`*) is greater than *`maxLength`*), the function returns **`NULL`**.
+Each of these functions returns a pointer to a buffer containing the absolute path name (*`absPath`*). If there's an error (for example, if the value passed in *`relPath`* includes a drive letter that isn't valid or can't be found, or if the length of the created absolute path name (*`absPath`*) is greater than *`maxLength`*), the function returns **`NULL`**.
 
 ## Remarks
 

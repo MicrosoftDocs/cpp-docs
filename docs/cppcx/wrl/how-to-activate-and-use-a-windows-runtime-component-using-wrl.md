@@ -47,7 +47,7 @@ The following steps use the `Windows::Foundation::IUriRuntimeClass` interface to
 
    [!code-cpp[wrl-consume-component#6](../codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_4.cpp)]
 
-   In the Windows Runtime, you don’t allocate memory for a string that the Windows Runtime will use. Instead, the Windows Runtime creates a copy of your string in a buffer that it maintains and uses for operations, and then returns a handle to the buffer that it created.
+   In the Windows Runtime, you don't allocate memory for a string that the Windows Runtime will use. Instead, the Windows Runtime creates a copy of your string in a buffer that it maintains and uses for operations, and then returns a handle to the buffer that it created.
 
 5. Use the `IUriRuntimeClassFactory::CreateUri` factory method to create a `ABI::Windows::Foundation::IUriRuntimeClass` object.
 

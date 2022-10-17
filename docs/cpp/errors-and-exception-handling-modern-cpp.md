@@ -68,7 +68,7 @@ Robust error handling is challenging in any programming language. Although excep
 
 - For every function that might throw or propagate an exception, provide one of the three exception guarantees: the strong guarantee, the basic guarantee, or the nothrow (noexcept) guarantee. For more information, see [How to: Design for exception safety](how-to-design-for-exception-safety.md).
 
-- Throw exceptions by value, catch them by reference. Don’t catch what you can't handle.
+- Throw exceptions by value, catch them by reference. Don't catch what you can't handle.
 
 - Don't use exception specifications, which are deprecated in C++11. For more information, see the [Exception specifications and `noexcept`](#exception_specifications_and_noexcept) section.
 

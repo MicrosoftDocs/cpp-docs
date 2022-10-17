@@ -2143,7 +2143,7 @@ The first floating-point argument.
 The second floating-point argument.
 
 *_Quo*<br/>
-[out] The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
+[out] The address of an integer that's used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
 
 ### Return Value
 
@@ -2169,7 +2169,7 @@ The first floating-point argument.
 The second floating-point argument.
 
 *_Quo*<br/>
-[out] The address of an integer that’s used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
+[out] The address of an integer that's used to return the quotient of the fractional bits of `_X` divided by the fractional bits of `_Y`.
 
 ### Return Value
 

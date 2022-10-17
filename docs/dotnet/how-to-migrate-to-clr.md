@@ -125,7 +125,7 @@ Native types are private by default. This can result in a native type not being 
 
 ### COM Initialization
 
-The Common Language Runtime initializes COM automatically when a module is initialized (when COM is initialized automatically it’s done so as MTA). As a result, explicitly initializing COM yields return codes indicating that COM is already initialized. Attempting to explicitly initialize COM with one threading model when the CLR has already initialized COM to another threading model can cause your application to fail.
+The Common Language Runtime initializes COM automatically when a module is initialized (when COM is initialized automatically it's done so as MTA). As a result, explicitly initializing COM yields return codes indicating that COM is already initialized. Attempting to explicitly initialize COM with one threading model when the CLR has already initialized COM to another threading model can cause your application to fail.
 
 The common language runtime starts COM as MTA by default; use [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](../build/reference/clrthreadattribute-set-clr-thread-attribute.md) to modify this.
 

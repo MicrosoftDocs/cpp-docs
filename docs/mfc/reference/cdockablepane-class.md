@@ -207,7 +207,7 @@ virtual CDockablePane* AttachToTabWnd(
 
 ### Return Value
 
-A pointer to the current pane, if it isn't a tabbed pane; otherwise a pointer to the tabbed pane that results from the attach operation. The return value is `NULL` if the current pane can’t be attached, or if an error occurs.
+A pointer to the current pane, if it isn't a tabbed pane; otherwise a pointer to the tabbed pane that results from the attach operation. The return value is `NULL` if the current pane can't be attached, or if an error occurs.
 
 ### Remarks
 
@@ -1090,7 +1090,7 @@ virtual BOOL IsResizable() const;
 
 By default, dockable panes are resizable. To prevent resizing, override this method in a derived class and return `FALSE`. Note that a `FALSE` value leads to a failed **`ASSERT`** in [`CPane::DockPane`](../../mfc/reference/cpane-class.md#dockpane). Use [`CDockingManager::AddPane`](../../mfc/reference/cdockingmanager-class.md#addpane) instead to dock a pane within a parent frame.
 
-Panes that can’t be resized can neither float nor enter auto-hide mode and are always located at the outer edge of the parent frame.
+Panes that can't be resized can neither float nor enter auto-hide mode and are always located at the outer edge of the parent frame.
 
 ## <a name="istablocationbottom"></a> `CDockablePane::IsTabLocationBottom`
 

@@ -34,7 +34,7 @@ Pointer to time structure; see [`asctime`](asctime-wasctime.md).
 
 ## Return Value
 
-**`_mktime32`** returns the specified calendar time encoded as a value of type [`time_t`](../../c-runtime-library/standard-types.md). If *`timeptr`* references a date before midnight, January 1, 1970, or if the calendar time can’t be represented, **`_mktime32`** returns -1 cast to type **`time_t`**. When using **`_mktime32`** and if *`timeptr`* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return -1 cast to type **`time_t`**.
+**`_mktime32`** returns the specified calendar time encoded as a value of type [`time_t`](../../c-runtime-library/standard-types.md). If *`timeptr`* references a date before midnight, January 1, 1970, or if the calendar time can't be represented, **`_mktime32`** returns -1 cast to type **`time_t`**. When using **`_mktime32`** and if *`timeptr`* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return -1 cast to type **`time_t`**.
 
 **`_mktime64`** will return -1 cast to type **`__time64_t`** if *`timeptr`* references a date after 23:59:59, December 31, 3000, UTC.
 

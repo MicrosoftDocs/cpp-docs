@@ -19,7 +19,7 @@ void loop_test(int u) {
 }
 ```
 
-Because `u` could be a small value, the compiler won’t automatically parallelize this loop. However, you might still want it parallelized because you know that `u` will always be large. To enable the auto-parallelization, specify [#pragma loop(hint_parallel(n))](../preprocessor/loop.md), where `n` is the number of threads to parallelize across. In the following example, the compiler will attempt to parallelize the loop across 8 threads.
+Because `u` could be a small value, the compiler won't automatically parallelize this loop. However, you might still want it parallelized because you know that `u` will always be large. To enable the auto-parallelization, specify [#pragma loop(hint_parallel(n))](../preprocessor/loop.md), where `n` is the number of threads to parallelize across. In the following example, the compiler will attempt to parallelize the loop across 8 threads.
 
 ```cpp
 void loop_test(int u) {
@@ -31,7 +31,7 @@ void loop_test(int u) {
 
 As with all [pragma directives](../preprocessor/pragma-directives-and-the-pragma-keyword.md), the alternate pragma syntax `__pragma(loop(hint_parallel(n)))` is also supported.
 
-There are some loops that the compiler can’t parallelize even if you want it to. Here's an example:
+There are some loops that the compiler can't parallelize even if you want it to. Here's an example:
 
 ```cpp
 #pragma loop(hint_parallel(8))
@@ -39,7 +39,7 @@ for (int i=0; i<upper_bound(); ++i)
     A[i] = B[i] * C[i];
 ```
 
-The function `upper_bound()` might change every time it's called. Because the upper bound cannot be known, the compiler can emit a diagnostic message that explains why it can’t parallelize this loop. The following example demonstrates a loop that can be parallelized, a loop that cannot be parallelized, the compiler syntax to use at the command prompt, and the compiler output for each command line option:
+The function `upper_bound()` might change every time it's called. Because the upper bound cannot be known, the compiler can emit a diagnostic message that explains why it can't parallelize this loop. The following example demonstrates a loop that can be parallelized, a loop that cannot be parallelized, the compiler syntax to use at the command prompt, and the compiler output for each command line option:
 
 ```cpp
 int A[1000];

@@ -29,7 +29,7 @@ class CDockingManager : public CObject
 |[CDockingManager::AdjustDockingLayout](#adjustdockinglayout)|Recalculates and adjusts the layout of all panes in a frame window.|
 |[CDockingManager::AdjustPaneFrames](#adjustpaneframes)|Causes the WM_NCCALCSIZE message to be sent to all panes and `CPaneFrameWnd` windows.|
 |[CDockingManager::AdjustRectToClientArea](#adjustrecttoclientarea)|Adjusts the alignment of a rectangle.|
-|[CDockingManager::AlignAutoHidePane](#alignautohidepane)|Resizes a docking pane in autohide mode so that it takes the full width or height of the frame’s client area surrounded by dock sites.|
+|[CDockingManager::AlignAutoHidePane](#alignautohidepane)|Resizes a docking pane in autohide mode so that it takes the full width or height of the frame's client area surrounded by dock sites.|
 |[CDockingManager::AutoHidePane](#autohidepane)|Creates an autohide toolbar.|
 |[CDockingManager::BringBarsToTop](#bringbarstotop)|Brings the docked bars that have the specified alignment to the top.|
 |[CDockingManager::BuildPanesMenu](#buildpanesmenu)|Adds names of docking panes and toolbars to a menu.|
@@ -292,7 +292,7 @@ The *dwAlignment* parameter can have one of the following values:
 
 ## <a name="alignautohidepane"></a> CDockingManager::AlignAutoHidePane
 
-Resizes a docking pane in autohide mode so that it takes the full width or height of the frame’s client area surrounded by dock sites.
+Resizes a docking pane in autohide mode so that it takes the full width or height of the frame's client area surrounded by dock sites.
 
 ```cpp
 void AlignAutoHidePane(

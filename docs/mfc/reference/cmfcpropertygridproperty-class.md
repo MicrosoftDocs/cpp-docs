@@ -1439,7 +1439,7 @@ virtual void SetValue(const _variant_t& varValue);
 void SetPropBarValue(UINT propId, const DWORD& barPropDwordValue)
 {
   auto property = propertiesGridCtrlList.FindItemByData(propId);
-  if (property != NULL)
+  if (property != nullptr)
   {
     property->SetValue(static_cast<_variant_t >(barPropDwordValue == 1)); // set value to true or false depending on dword value
   }

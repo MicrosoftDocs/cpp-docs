@@ -6,6 +6,7 @@ ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
 helpviewer_keywords: ["import", "header unit", "ifc"]
+monikerRange: '>=msvc-160'
 ---
 
 # Walkthrough: Build and import header units in Microsoft Visual C++
