@@ -40,7 +40,7 @@ Pointer to a source string that the function maps or uses for sort key generatio
 *cchSrc*<br/>
 Size, in characters, of the string pointed to by the `lpSrcStr` parameter. This count can include the null terminator, or not include it.
 
-A `cchSrc` value of -1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If this is the case, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.
+A `cchSrc` value of -1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If so, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.
 
 *lpDestStr*<br/>
 Long pointer to a buffer into which the function stores the mapped string or sort key.
