@@ -7,7 +7,7 @@ helpviewer_keywords: ["strings [C++], manipulating", "string manipulation", "man
 ---
 # String Manipulation (CRT)
 
-These routines operate on null-terminated single-byte character, wide-character, and multibyte-character strings. Use the buffer-manipulation routines, described in [Buffer Manipulation](../c-runtime-library/buffer-manipulation.md), to work with character arrays that do not end with a `NULL` character.
+These routines operate on null-terminated single-byte character, wide-character, and multibyte-character strings. Use the buffer-manipulation routines, described in [Buffer Manipulation](../c-runtime-library/buffer-manipulation.md), to work with character arrays that don't end with a `NULL` character.
 
 ## String-Manipulation Routines
 
@@ -25,7 +25,7 @@ These routines operate on null-terminated single-byte character, wide-character,
 |[`_strncnt`, `_wcsncnt`, `_mbsnbcnt`, `_mbsnbcnt_l`, `_mbsnccnt`, `_mbsnccnt_l`](../c-runtime-library/reference/strncnt-wcsncnt-mbsnbcnt-mbsnbcnt-l-mbsnccnt-mbsnccnt-l.md)|Return number of characters within supplied byte count|
 |[`_strnextc`, `_wcsnextc`, `_mbsnextc`, `_mbsnextc_l`](../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)|Find next character in string|
 |[`_strninc`, `_wcsninc`, `_mbsninc`, `_mbsninc_l`](../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)|Advance string pointer by *n* characters|
-|[`_strspnp`, `_wcsspnp`, `_mbsspnp`, `_mbsspnp_l`](../c-runtime-library/reference/strspnp-wcsspnp-mbsspnp-mbsspnp-l.md)|Return pointer to first character in given string that is not in another given string|
+|[`_strspnp`, `_wcsspnp`, `_mbsspnp`, `_mbsspnp_l`](../c-runtime-library/reference/strspnp-wcsspnp-mbsspnp-mbsspnp-l.md)|Return pointer to first character in given string that isn't in another given string|
 |[`_scprintf`, `_scprintf_l`, `_scwprintf`, `_scwprintf_l`](../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md)|Return the number of characters in a formatted string|
 |[`_snscanf`, `_snscanf_l`, `_snwscanf`, `_snwscanf_l`](../c-runtime-library/reference/snscanf-snscanf-l-snwscanf-snwscanf-l.md), [`_snscanf_s`, `_snscanf_s_l`, `_snwscanf_s`, `_snwscanf_s_l`](../c-runtime-library/reference/snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md)|Read formatted data of a specified length from the standard input stream.|
 |[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md), [`sscanf_s`, `_sscanf_s_l`, `swscanf_s`, `_swscanf_s_l`](../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)|Read formatted data of a specified length from the standard input stream.|

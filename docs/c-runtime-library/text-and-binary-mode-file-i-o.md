@@ -7,7 +7,7 @@ ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
 ---
 # Text and Binary Mode File I/O
 
-File I/O operations take place in one of two translation modes, *text* or *binary*, depending on the mode in which the file is opened. Data files are usually processed in text mode. To control the file translation mode, one can:
+File I/O operations take place in one of two translation modes, *text* or *binary*, depending on the mode in which the file is opened. Data files are often processed in text mode. To control the file translation mode, one can:
 
 - Retain the current default setting and specify the alternative mode only when you open selected files.
 
