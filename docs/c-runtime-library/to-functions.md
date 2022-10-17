@@ -9,9 +9,9 @@ f1_keywords: ["To"]
 helpviewer_keywords: ["to functions", "string conversion, to different characters", "string conversion, case", "lowercase, converting strings", "uppercase, converting strings", "case, converting", "characters, converting"]
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
 ---
-# to Functions
+# `to` Functions
 
-Each of the **to** functions and its associated macro, if any, converts a single character to another character.
+Each of the **`to`** functions and its associated macro, if any, converts a single character to another character.
 
 [__toascii](../c-runtime-library/reference/toascii-toascii.md)\
 [tolower, _tolower, towlower](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)\
@@ -19,7 +19,7 @@ Each of the **to** functions and its associated macro, if any, converts a single
 
 ## Remarks
 
-The **to** functions and macro conversions are as follows.
+The **`to`** functions and macro conversions are as follows.
 
 |Routine|Macro|Description|
 |-------------|-----------|-----------------|
@@ -31,7 +31,7 @@ The **to** functions and macro conversions are as follows.
 |`_toupper`|`_toupper`|Converts `c` to uppercase|
 |`towupper`|None|Converts c to corresponding wide-character uppercase letter|
 
-To use the function versions of the **to** routines that are also defined as macros, either remove the macro definitions with `#undef` directives or do not include CTYPE.H. If you use the /Za compiler option, the compiler uses the function version of `toupper` or `tolower`. Declarations of the `toupper` and `tolower` functions are in STDLIB.H.
+To use the function versions of the **to** routines that are also defined as macros, either remove the macro definitions with `#undef` directives or don't include CTYPE.H. If you use the /Za compiler option, the compiler uses the function version of `toupper` or `tolower`. Declarations of the `toupper` and `tolower` functions are in STDLIB.H.
 
 The `__toascii` routine sets all but the low-order 7 bits of `c` to 0, so that the converted value represents a character in the ASCII character set. If `c` already represents an ASCII character, `c` is unchanged.
 
@@ -47,13 +47,13 @@ The `_tolower` and `_toupper` routines:
 
 - Can be used only when **isascii(**`c`**)** and either **isupper(**`c`**)** or **islower(**`c`**)**, respectively, are nonzero.
 
-- Have undefined results if `c` is not an ASCII letter of the appropriate case for converting.
+- Have undefined results if `c` isn't an ASCII letter of the appropriate case for converting.
 
 The `towlower` and `towupper` functions return a converted copy of `c` if and only if both of the following conditions are nonzero. Otherwise, `c` is unchanged.
 
 - `c` is a wide character of the appropriate case (that is, for which `iswupper` or **iswlower,** respectively, is nonzero).
 
-- There is a corresponding wide character of the target case (that is, for which `iswlower` or **iswupper,** respectively, is nonzero).
+- There's a corresponding wide character of the target case (that is, for which `iswlower` or **iswupper,** respectively, is nonzero).
 
 ## Example
 
