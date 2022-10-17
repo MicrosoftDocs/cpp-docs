@@ -247,7 +247,7 @@ std::future_status::future_status wait_until(
 The clock on which this time point is measured.
 
 *_Duration*<br/>
-The time interval since the start of `_Clock`’s epoch, after which the function will time out.
+The time interval since the start of `_Clock`'s epoch, after which the function will time out.
 
 *_Abs_time*<br/>
 The point in time after which the function will time out.

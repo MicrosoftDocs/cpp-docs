@@ -45,7 +45,7 @@ In file systems that don't support the creation and last access times of a file,
 
 `_MAX_PATH` is defined in `Stdlib.h` as 260 bytes.
 
-You can’t specify target attributes (such as `_A_RDONLY`) to limit the find operation. These attributes are returned in the `attrib` field of the `_finddata_t` structure and can have the following values (defined in `IO.h`). Users shouldn't rely on these being the only values possible for the `attrib` field.
+You can't specify target attributes (such as `_A_RDONLY`) to limit the find operation. These attributes are returned in the `attrib` field of the `_finddata_t` structure and can have the following values (defined in `IO.h`). Users shouldn't rely on these being the only values possible for the `attrib` field.
 
 `_A_ARCH`\
 Archive. Set whenever the file is changed and cleared by the **`BACKUP`** command. Value: `0x20`.
@@ -57,7 +57,7 @@ Hidden file. Not generally seen with the `DIR` command, unless you use the **`/A
 Normal. File has no other attributes set and can be read or written to without restriction. Value: `0x00`.
 
 `_A_RDONLY`\
-Read-only. File can’t be opened for writing and a file that has the same name can’t be created. Value: `0x01`.
+Read-only. File can't be opened for writing and a file that has the same name can't be created. Value: `0x01`.
 
 `_A_SUBDIR`\
 Subdirectory. Value: `0x10`.

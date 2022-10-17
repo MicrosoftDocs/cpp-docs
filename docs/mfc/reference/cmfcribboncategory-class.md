@@ -838,7 +838,7 @@ Only ribbon elements that are contained in the ribbon category are tested.
 
 ## <a name="hittestscrollbuttons"></a> CMFCRibbonCategory::HitTestScrollButtons
 
-If a point falls within a ribbon category’s left or right scroll button, returns a pointer to that button.
+If a point falls within a ribbon category's left or right scroll button, returns a pointer to that button.
 
 ```
 CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;

@@ -1025,7 +1025,7 @@ items:
                   href: creating-modeless-dialog-boxes.md
                 - name: Using a dialog template in memory
                   href: using-a-dialog-template-in-memory.md
-                - name: Setting the dialog box’s background color
+                - name: Setting the dialog box's background color
                   href: setting-the-dialog-boxs-background-color.md
                 - name: Initializing the dialog box
                   href: initializing-the-dialog-box.md

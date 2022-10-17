@@ -35,7 +35,7 @@ unsigned char __vmx_on(
 
 ## Remarks
 
-The `__vmx_on` function corresponds to the `VMXON` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, see "Intel 64 and IA-32 Architectures Software Developer’s Manual, Volume 3C: System Programming Guide, Part 3" in the [Intel 64 and IA-32 Architecture Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html).
+The `__vmx_on` function corresponds to the `VMXON` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, see "Intel 64 and IA-32 Architectures Software Developer's Manual, Volume 3C: System Programming Guide, Part 3" in the [Intel 64 and IA-32 Architecture Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html).
 
 ## Requirements
 

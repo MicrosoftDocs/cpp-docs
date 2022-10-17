@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::default_searcher [C++]"]
 ---
 # default_searcher Class
 
-A `default_searcher` is a function object type for operations that search for a sequence specified in the object's constructor. The search is done within another sequence provided to the object’s function call operator. The `default_searcher` invokes [std::search](algorithm-functions.md#search) to perform the search.
+A `default_searcher` is a function object type for operations that search for a sequence specified in the object's constructor. The search is done within another sequence provided to the object's function call operator. The `default_searcher` invokes [std::search](algorithm-functions.md#search) to perform the search.
 
 ## Syntax
 

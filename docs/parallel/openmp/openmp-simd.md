@@ -17,7 +17,7 @@ For more information, see [SIMD Extension to C++ OpenMP in Visual Studio](https:
 
 ## OpenMP SIMD in Visual C++
 
-OpenMP SIMD, introduced in the OpenMP 4.0 standard, targets making vector-friendly loops. By using the `simd` directive before a loop, the compiler can ignore vector dependencies, make the loop as vector-friendly as possible, and respect the users’ intention to have multiple loop iterations executed simultaneously.
+OpenMP SIMD, introduced in the OpenMP 4.0 standard, targets making vector-friendly loops. By using the `simd` directive before a loop, the compiler can ignore vector dependencies, make the loop as vector-friendly as possible, and respect the users' intention to have multiple loop iterations executed simultaneously.
 
 ```c
     #pragma omp simd

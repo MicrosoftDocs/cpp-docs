@@ -62,7 +62,7 @@ explicit CSingleLock(
 ### Parameters
 
 *`pObject`*\
-Points to the synchronization object to be accessed. Can’t be `NULL`.
+Points to the synchronization object to be accessed. Can't be `NULL`.
 
 *`bInitialLock`*\
 Specifies whether to initially attempt to access the supplied object.

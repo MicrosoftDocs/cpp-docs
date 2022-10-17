@@ -27,9 +27,9 @@ class sampler;
 
 |Name|Description|
 |----------|-----------------|
-|[get_address_mode](#get_address_mode)|Returns the `address_mode` that’s associated with the sampler object.|
-|[get_border_color](#get_border_color)|Returns the border color that’s associated with the sampler object.|
-|[get_filter_mode](#get_filter_mode)|Returns the `filter_mode` that’s associated with the sampler object.|
+|[get_address_mode](#get_address_mode)|Returns the `address_mode` that's associated with the sampler object.|
+|[get_border_color](#get_border_color)|Returns the border color that's associated with the sampler object.|
+|[get_filter_mode](#get_filter_mode)|Returns the `filter_mode` that's associated with the sampler object.|
 
 ### Public Operators
 
@@ -133,7 +133,7 @@ __declspec(property(get= get_filter_mode)) Concurrency::graphics::filter_mode fi
 
 ## <a name="get_address_mode"></a> get_address_mode
 
-Returns the filter mode that’s configured for this `sampler`.
+Returns the filter mode that's configured for this `sampler`.
 
 ```cpp
 Concurrency::graphics::address_mode get_address_mode() const __GPU;
@@ -141,11 +141,11 @@ Concurrency::graphics::address_mode get_address_mode() const __GPU;
 
 ### Return Value
 
-The address mode that’s configured for the sampler.
+The address mode that's configured for the sampler.
 
 ## <a name="get_border_color"></a> get_border_color
 
-Returns the border color that’s configured for this `sampler`.
+Returns the border color that's configured for this `sampler`.
 
 ```cpp
 Concurrency::graphics::float_4 get_border_color() const restrict(amp, cpu);
@@ -157,7 +157,7 @@ A float_4 that contains the border color.
 
 ## <a name="get_filter_mode"></a> get_filter_mode
 
-Returns the filter mode that’s configured for this `sampler`.
+Returns the filter mode that's configured for this `sampler`.
 
 ```cpp
 Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
@@ -165,7 +165,7 @@ Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
 
 ### Return Value
 
-The filter mode that’s configured for the sampler.
+The filter mode that's configured for the sampler.
 
 ## <a name="operator_eq"></a> operator=
 

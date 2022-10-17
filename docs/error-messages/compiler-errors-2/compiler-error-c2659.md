@@ -30,7 +30,7 @@ int main()
 
 To resolve this issue, change the declaration of the identifier so that it is not parsed as a function declaration.
 
-Error C2659 can also occur when the function has a type that can’t be used in the expression on the left side of the specified operator. This example generates C2659 when the code assigns a function pointer to a function:
+Error C2659 can also occur when the function has a type that can't be used in the expression on the left side of the specified operator. This example generates C2659 when the code assigns a function pointer to a function:
 
 ```cpp
 // C2659b.cpp

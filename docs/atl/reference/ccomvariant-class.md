@@ -283,7 +283,7 @@ The size in bytes of the current contents of the `CComVariant` object.
 
 If the `VARIANT` contains an interface pointer, `GetSize` queries for `IPersistStream` or `IPersistStreamInit`. If successful, the return value is the low-order 32 bits of the value returned by `GetSizeMax` plus `sizeof(CLSID)` and `sizeof(VARTYPE)`. If the interface pointer is `NULL`, `GetSize` returns `sizeof(CLSID)` plus `sizeof(VARTYPE)`. If the total size is larger than `ULONG_MAX`, `GetSize` returns `sizeof(VARTYPE)`, which indicates an error.
 
-In all other cases, a temporary `VARIANT` of type `VT_BSTR` is coerced from the current `VARIANT`. The length of this `BSTR` is calculated as the size of the length of the string plus the length of the string itself plus the size of the `NULL` character plus `sizeof(VARTYPE)`. If the `VARIANT` can’t be coerced to a `VARIANT` of type `VT_BSTR`, `GetSize` returns `sizeof(VARTYPE)`.
+In all other cases, a temporary `VARIANT` of type `VT_BSTR` is coerced from the current `VARIANT`. The length of this `BSTR` is calculated as the size of the length of the string plus the length of the string itself plus the size of the `NULL` character plus `sizeof(VARTYPE)`. If the `VARIANT` can't be coerced to a `VARIANT` of type `VT_BSTR`, `GetSize` returns `sizeof(VARTYPE)`.
 
 The size returned by this method matches the number of bytes used by [`CComVariant::WriteToStream`](#writetostream) under successful conditions.
 

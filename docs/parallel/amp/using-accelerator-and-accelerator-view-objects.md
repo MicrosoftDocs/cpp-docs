@@ -22,7 +22,7 @@ The C++ AMP runtime picks a default accelerator, unless you write code to pick a
 
 5. Otherwise, a device that's not attached to the display.
 
-Additionally, the runtime specifies an `access_type` of `access_type_auto` for the default accelerator. This means that the default accelerator uses shared memory if it’s supported and if its performance characteristics (bandwidth and latency) are known to be the same as dedicated (non-shared) memory.
+Additionally, the runtime specifies an `access_type` of `access_type_auto` for the default accelerator. This means that the default accelerator uses shared memory if it's supported and if its performance characteristics (bandwidth and latency) are known to be the same as dedicated (non-shared) memory.
 
 You can determine the properties of the default accelerator by constructing the default accelerator and examining its properties. The following code example prints the path, amount of accelerator memory, shared memory support, double-precision support, and limited double-precision support of the default accelerator.
 
@@ -105,7 +105,7 @@ int main()
 {
     accelerator acc = accelerator(accelerator::default_accelerator);
 
-    // Early out if the default accelerator doesn’t support shared memory.
+    // Early out if the default accelerator doesn't support shared memory.
     if (!acc.supports_cpu_shared_memory)
     {
         std::cout << "The default accelerator does not support shared memory" << std::endl;
@@ -117,12 +117,12 @@ int main()
 
     // Create an accelerator_view from the default accelerator. The
     // accelerator_view reflects the default_cpu_access_type of the
-    // accelerator it’s associated with.
+    // accelerator it's associated with.
     accelerator_view acc_v = acc.default_view;
 }
 ```
 
-An `accelerator_view` always reflects the `default_cpu_access_type` of the `accelerator` it’s associated with, and it provides no interface to override or change its `access_type`.
+An `accelerator_view` always reflects the `default_cpu_access_type` of the `accelerator` it's associated with, and it provides no interface to override or change its `access_type`.
 
 ## Changing the Default Accelerator
 

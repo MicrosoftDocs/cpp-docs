@@ -24,7 +24,7 @@ The Windows Runtime C++ Template Library and C++/CX provide different benefits. 
 
 - Windows Runtime C++ Template Library adds little abstraction over the Windows Runtime Application Binary Interface (ABI), giving you the ability to control the underlying code to better create or consume Windows Runtime APIs.
 
-- C++/CX represents COM HRESULT values as exceptions. If you’ve inherited a code base that uses COM, or one that doesn’t use exceptions, you might find that the Windows Runtime C++ Template Library is a more natural way to work with the Windows Runtime because you don't have to use exceptions.
+- C++/CX represents COM HRESULT values as exceptions. If you've inherited a code base that uses COM, or one that doesn't use exceptions, you might find that the Windows Runtime C++ Template Library is a more natural way to work with the Windows Runtime because you don't have to use exceptions.
 
    > [!NOTE]
    > The Windows Runtime C++ Template Library uses HRESULT values and does not throw exceptions. In addition, the Windows Runtime C++ Template Library uses smart pointers and the RAII pattern to help guarantee that objects are destroyed correctly when your application code throws an exception. For more info about smart pointers and RAII, see [Smart Pointers](../../cpp/smart-pointers-modern-cpp.md) and [Objects Own Resources (RAII)](../../cpp/object-lifetime-and-resource-management-modern-cpp.md).

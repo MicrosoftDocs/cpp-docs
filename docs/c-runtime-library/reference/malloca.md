@@ -49,7 +49,7 @@ However, **`_malloca`** can be called directly from within an EH routine or from
 > [!IMPORTANT]
 > In Windows XP, if **`_malloca`** is called inside a `try/catch` block, you must call [`_resetstkoflw`](resetstkoflw.md) in the catch block.
 
-In addition to the above restrictions, when using the [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, **`_malloca`** can’t be used in **`__except`** blocks. For more information, see [`/clr` Restrictions](../../build/reference/clr-restrictions.md).
+In addition to the above restrictions, when using the [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, **`_malloca`** can't be used in **`__except`** blocks. For more information, see [`/clr` Restrictions](../../build/reference/clr-restrictions.md).
 
 ## Requirements
 

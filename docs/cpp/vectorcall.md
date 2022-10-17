@@ -21,7 +21,7 @@ Using the [`/Gv`](../build/reference/gd-gr-gv-gz-calling-convention.md) compiler
 
 You can pass three kinds of arguments by register in **`__vectorcall`** functions: *integer type* values, *vector type* values, and *homogeneous vector aggregate* (HVA) values.
 
-An integer type satisfies two requirements: it fits in the native register size of the processor—for example, 4 bytes on an x86 machine or 8 bytes on an x64 machine—and it’s convertible to an integer of register length and back again without changing its bit representation. For example, any type that can be promoted to **`int`** on x86 (**`long long`** on x64)—for example, a **`char`** or **`short`**—or that can be cast to **`int`** (**`long long`** on x64) and back to its original type without change is an integer type. Integer types include pointer, reference, and **`struct`** or **`union`** types of 4 bytes (8 bytes on x64) or less. On x64 platforms, larger **`struct`** and **`union`** types are passed by reference to memory allocated by the caller; on x86 platforms, they are passed by value on the stack.
+An integer type satisfies two requirements: it fits in the native register size of the processor—for example, 4 bytes on an x86 machine or 8 bytes on an x64 machine—and it's convertible to an integer of register length and back again without changing its bit representation. For example, any type that can be promoted to **`int`** on x86 (**`long long`** on x64)—for example, a **`char`** or **`short`**—or that can be cast to **`int`** (**`long long`** on x64) and back to its original type without change is an integer type. Integer types include pointer, reference, and **`struct`** or **`union`** types of 4 bytes (8 bytes on x64) or less. On x64 platforms, larger **`struct`** and **`union`** types are passed by reference to memory allocated by the caller; on x86 platforms, they are passed by value on the stack.
 
 A vector type is either a floating-point type—for example, a **`float`** or **`double`**—or an SIMD vector type—for example, **`__m128`** or **`__m256`**.
 
@@ -35,7 +35,7 @@ typedef struct {
 } hva3;    // 3 element HVA type on __m256
 ```
 
-Declare your functions explicitly with the **`__vectorcall`** keyword in header files to allow separately compiled code to link without errors. Functions must be prototyped to use **`__vectorcall`**, and can’t use a `vararg` variable length argument list.
+Declare your functions explicitly with the **`__vectorcall`** keyword in header files to allow separately compiled code to link without errors. Functions must be prototyped to use **`__vectorcall`**, and can't use a `vararg` variable length argument list.
 
 A member function may be declared by using the **`__vectorcall`** specifier. The hidden **`this`** pointer is passed by register as the first integer type argument.
 
@@ -73,7 +73,7 @@ For compatibility with previous versions, **`_vectorcall`** is a synonym for **`
 
 The **`__vectorcall`** calling convention on x64 extends the standard x64 calling convention to take advantage of additional registers. Both integer type arguments and vector type arguments are mapped to registers based on position in the argument list. HVA arguments are allocated to unused vector registers.
 
-When any of the first four arguments in order from left to right are integer type arguments, they are passed in the register that corresponds to that position—RCX, RDX, R8, or R9. A hidden **`this`** pointer is treated as the first integer type argument. When an HVA argument in one of the first four arguments can’t be passed in the available registers, a reference to caller-allocated memory is passed in the corresponding integer type register instead. Integer type arguments after the fourth parameter position are passed on the stack.
+When any of the first four arguments in order from left to right are integer type arguments, they are passed in the register that corresponds to that position—RCX, RDX, R8, or R9. A hidden **`this`** pointer is treated as the first integer type argument. When an HVA argument in one of the first four arguments can't be passed in the available registers, a reference to caller-allocated memory is passed in the corresponding integer type register instead. Integer type arguments after the fourth parameter position are passed on the stack.
 
 When any of the first six arguments in order from left to right are vector type arguments, they are passed by value in SSE vector registers 0 to 5 according to argument position. Floating-point and **`__m128`** types are passed in XMM registers, and **`__m256`** types are passed in YMM registers. This differs from the standard x64 calling convention, because the vector types are passed by value instead of by reference, and additional registers are used. The shadow stack space allocated for vector type arguments is fixed at 8 bytes, and the [`/homeparams`](../build/reference/homeparams-copy-register-parameters-to-stack.md) option does not apply. Vector type arguments in the seventh and later parameter positions are passed on the stack by reference to memory allocated by the caller.
 

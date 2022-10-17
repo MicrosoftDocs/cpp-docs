@@ -29,7 +29,7 @@ A compiler-generated assignment operator will follow the usual standard C++ rule
 
 - Any non-static data member whose type is a value type will be shallow copied.
 
-- Any non-static data member whose type is an instance of a reference type will invoke a call to the reference type’s copy constructor.
+- Any non-static data member whose type is an instance of a reference type will invoke a call to the reference type's copy constructor.
 
 The compiler also provides a `%` unary operator to convert an instance of a reference type created using stack semantics to its underlying handle type.
 

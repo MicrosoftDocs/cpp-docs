@@ -3,6 +3,7 @@ title: "What's new for the C++ docs"
 ms.date: "11/5/2021"
 description: "The new docs and doc updates for the Microsoft C/C++ compiler, ATL/MFC, C runtime, and standard library docs."
 ms.custom: intro-whats-new
+monikerRange: '>=msvc-160'
 ---
 
 # Microsoft C++ docs: What's new for October 2021

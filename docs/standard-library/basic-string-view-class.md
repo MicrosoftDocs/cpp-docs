@@ -539,7 +539,7 @@ A pointer-to-const to the first element of the character sequence.
 
 ### Remarks
 
-The pointer can’t modify the characters.
+The pointer can't modify the characters.
 
 A sequence of `basic_string_view` characters isn't necessarily null-terminated. The return type for `data` isn't a valid C string, because no null character gets appended. The null character `\0` has no special meaning in an object of type `basic_string_view` and may be a part of the `basic_string_view` object just like any other character.
 
