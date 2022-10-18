@@ -33,7 +33,7 @@ Returns the previous client-defined reporting function.
 
 ## Remarks
 
-**_CrtSetReportHook** allows an application to use its own reporting function into the C run-time debug library reporting process. As a result, whenever [_CrtDbgReport](crtdbgreport-crtdbgreportw.md) is called to generate a debug report, the application's reporting function is called first. This functionality enables an application to perform operations such as filtering debug reports so it can focus on specific allocation types or send a report to destinations not available by using **_CrtDbgReport**. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to **_CrtSetReportHook** are removed during preprocessing.
+**_CrtSetReportHook** allows an application to use its own reporting function into the C run-time debug library reporting process. As a result, whenever [_CrtDbgReport](crtdbgreport-crtdbgreportw.md) is called to generate a debug report, the application's reporting function is called first. This functionality enables an application to perform operations such as filtering debug reports so it can focus on specific allocation types or send a report to destinations not available by using **_CrtDbgReport**. When [_DEBUG](../../c-runtime-library/debug.md) isn't defined, calls to **_CrtSetReportHook** are removed during preprocessing.
 
 For a more robust version of **_CrtSetReportHook**, see [_CrtSetReportHook2](crtsetreporthook2-crtsetreporthookw2.md).
 

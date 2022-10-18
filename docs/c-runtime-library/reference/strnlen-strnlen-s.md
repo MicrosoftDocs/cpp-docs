@@ -86,7 +86,7 @@ Each of these functions returns the number of characters in *`str`*, not includi
 
 **`_mbstrnlen`** also validates its parameters. If *`str`* is **`NULL`**, or if *`numberOfElements`* is greater than **`INT_MAX`**, **`_mbstrnlen`** generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`_mbstrnlen`** sets **`errno`** to **`EINVAL`** and returns -1.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -109,7 +109,7 @@ The output value is affected by the setting of the **`LC_CTYPE`** category setti
 |**`_mbsnlen`**, **`_mbsnlen_l`**|`<mbstring.h>`|
 |**`_mbstrnlen`**, **`_mbstrnlen_l`**|`<stdlib.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

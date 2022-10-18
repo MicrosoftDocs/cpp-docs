@@ -59,7 +59,7 @@ The behavior of **isxdigit** and **_isxdigit_l** is undefined if *c* is not EOF 
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 |**_isxdigit_l**|\<ctype.h>|
 |**_iswxdigit_l**|\<ctype.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

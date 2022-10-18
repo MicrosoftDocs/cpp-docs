@@ -32,19 +32,19 @@ Pointer to stored time to convert.
 
 ## Return Value
 
-A pointer to the character string result. **NULL** will be returned if:
+A pointer to the character string result. **NULL** is returned when:
 
 - *sourceTime* represents a date before midnight, January 1, 1970, UTC.
 
-- If you use **_ctime32** or **_wctime32** and *sourceTime* represents a date after 23:59:59 January 18, 2038, UTC.
+- You use **_ctime32** or **_wctime32**, and *sourceTime* represents a date after 23:59:59 January 18, 2038, UTC.
 
-- If you use **_ctime64** or **_wctime64** and *sourceTime* represents a date after 23:59:59, December 31, 3000, UTC.
+- You use **_ctime64** or **_wctime64**, and *sourceTime* represents a date after 23:59:59, December 31, 3000, UTC.
 
-**ctime** is an inline function which evaluates to **_ctime64** and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. Doing this will cause **ctime** to evaluate to **_ctime32**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
+**ctime** is an inline function that evaluates to **_ctime64**, and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. This macro causes **ctime** to evaluate to **_ctime32**. We don't recommend you use it, because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
 
 ## Remarks
 
-The **ctime** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) value into a character string. The *sourceTime* value is usually obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **ctime** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) value into a character string. The *sourceTime* value is typically obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
 ```Output
 Wed Jan 02 02:03:55 1980\n\0
@@ -52,7 +52,7 @@ Wed Jan 02 02:03:55 1980\n\0
 
 A 24-hour clock is used. All fields have a constant width. The newline character ('\n') and the null character ('\0') occupy the last two positions of the string.
 
-The converted character string is also adjusted according to the local time zone settings. See the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions for information on configuring the local time and the [_tzset](tzset.md) function for details about defining the time zone environment and global variables.
+The converted character string is also adjusted according to the local time zone settings. For information on configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions. For details about defining the time zone environment and global variables, see the [_tzset](tzset.md) function.
 
 A call to **ctime** modifies the single statically allocated buffer used by the **gmtime** and **localtime** functions. Each call to one of these routines destroys the result of the previous call. **ctime** shares a static buffer with the **asctime** function. Thus, a call to **ctime** destroys the results of any previous call to **asctime**, **localtime**, or **gmtime**.
 
@@ -60,7 +60,7 @@ A call to **ctime** modifies the single statically allocated buffer used by the 
 
 These functions validate their parameters. If *sourceTime* is a null pointer, or if the *sourceTime* value is negative, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **NULL** and set **errno** to **EINVAL**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -81,7 +81,7 @@ By default, this function's global state is scoped to the application. To change
 |**_wctime32**|\<time.h> or \<wchar.h>|
 |**_wctime64**|\<time.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

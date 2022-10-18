@@ -18,11 +18,11 @@ These routines read and write on your console or on the specified port. The cons
 |[`_cscanf`, `_cwscanf`](../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md), [`_cscanf_s`, `_cscanf_s_l`, `_cwscanf_s`, `_cwscanf_s_l`](../c-runtime-library/reference/cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md)|Read formatted data from console|
 |[`_getch`, `_getwch`](../c-runtime-library/reference/getch-getwch.md)|Read character from console|
 |[`_getche`, `_getwche`](../c-runtime-library/reference/getch-getwch.md)|Read character from console and echo it|
-|[`_inp`](../c-runtime-library/inp-inpw-inpd.md)|Read one byte from specified I/O port|
+|[`_inp`](../c-runtime-library/inp-inpw-inpd.md)|Read a byte from the specified I/O port|
 |[`_inpd`](../c-runtime-library/inp-inpw-inpd.md)|Read double word from specified I/O port|
 |[`_inpw`](../c-runtime-library/inp-inpw-inpd.md)|Read 2-byte word from specified I/O port|
 |[`_kbhit`](../c-runtime-library/reference/kbhit.md)|Check for keystroke at console; use before attempting to read from console|
-|[`_outp`](../c-runtime-library/outp-outpw-outpd.md)|Write one byte to specified I/O port|
+|[`_outp`](../c-runtime-library/outp-outpw-outpd.md)|Write a byte to the specified I/O port|
 |[`_outpd`](../c-runtime-library/outp-outpw-outpd.md)|Write double word to specified I/O port|
 |[`_outpw`](../c-runtime-library/outp-outpw-outpd.md)|Write word to specified I/O port|
 |[`_putch`, `_putwch`](../c-runtime-library/reference/putch-putwch.md)|Write character to console|

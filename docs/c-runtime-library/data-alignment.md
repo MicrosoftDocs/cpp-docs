@@ -17,7 +17,7 @@ The following C run-time functions support data alignment.
 |[_aligned_free](../c-runtime-library/reference/aligned-free.md)|Frees a block of memory that was allocated with [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md)or [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md).|
 |[_aligned_free_dbg](../c-runtime-library/reference/aligned-free-dbg.md)|Frees a block of memory that was allocated with [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md) (debug only).|
 |[_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md)|Allocates memory on a specified alignment boundary.|
-|[_aligned_malloc_dbg](../c-runtime-library/reference/aligned-malloc-dbg.md)|Allocates memory on a specified alignment boundary with additional space for a debugging header and overwrite buffers (debug version only).|
+|[_aligned_malloc_dbg](../c-runtime-library/reference/aligned-malloc-dbg.md)|Allocates memory on a specified alignment boundary with extra space for a debugging header and overwrite buffers (debug version only).|
 |[_aligned_msize](../c-runtime-library/reference/aligned-msize.md)|Returns the size of a memory block allocated in the heap.|
 |[_aligned_msize_dbg](../c-runtime-library/reference/aligned-msize-dbg.md)|Returns the size of a memory block allocated in the heap (debug version only).|
 |[_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md)|Allocates memory on a specified alignment boundary.|

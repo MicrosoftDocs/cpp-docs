@@ -15,7 +15,7 @@ helpviewer_keywords: ["EXIT_SUCCESS constant", "EXIT_FAILURE constant"]
 
 ## Remarks
 
-These are arguments for the [`exit`](reference/exit-exit-exit.md) and [`_exit`](reference/exit-exit-exit.md) functions, and the return values for the [`atexit`](reference/atexit.md) and [`_onexit`](reference/onexit-onexit-m.md) functions.
+The `EXIT_SUCCESS` and `EXIT_FAILURE` constants are arguments for the [`exit`](reference/exit-exit-exit.md) and [`_exit`](reference/exit-exit-exit.md) functions, and the return values for the [`atexit`](reference/atexit.md) and [`_onexit`](reference/onexit-onexit-m.md) functions.
 
 |Constant|Defined value|
 |-|-|

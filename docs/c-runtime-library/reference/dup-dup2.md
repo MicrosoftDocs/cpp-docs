@@ -30,9 +30,9 @@ Any file descriptor.
 
 ## Return Value
 
-**`_dup`** returns a new file descriptor. **`_dup2`** returns 0 to indicate success. If an error occurs, each function returns -1 and sets **`errno`** to **`EBADF`** if the file descriptor is invalid or to **`EMFILE`** if no more file descriptors are available. In the case of an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+**`_dup`** returns a new file descriptor. **`_dup2`** returns 0 to indicate success. If an error occurs, each function returns -1 and sets **`errno`** to **`EBADF`** if the file descriptor is invalid, or to **`EMFILE`** if no more file descriptors are available. When passed an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -44,7 +44,7 @@ Both **`_dup`** and **`_dup2`** accept file descriptors as parameters. To pass a
 int cstderr = _dup( _fileno( stderr ));
 ```
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

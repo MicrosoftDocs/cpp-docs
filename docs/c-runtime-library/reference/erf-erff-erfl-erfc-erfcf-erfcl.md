@@ -68,11 +68,11 @@ The **erf** functions calculate the Gauss error function of *x*, which is define
 
 The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There's no error return. The **erfc** functions return a value in the range 0 to 2. If *x* is too large for **erfc**, the **errno** variable is set to **ERANGE**.
 
-Because C++ allows overloading, you can call overloads of **erf** and **erfc** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **erf** and **erfc** always take and return a **`double`**.
+Because C++ allows overloading, you can call **erf** and **erfc** overloads that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **erf** and **erfc** always take and return a **`double`**.
 
 If you use the \<tgmath.h> `erf()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -81,7 +81,7 @@ By default, this function's global state is scoped to the application. To change
 |**erf**, **erff**, **erfl**, **erfc**, **erfcf**, **erfcl**|\<math.h>|
 |**erf** macro | \<tgmath.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

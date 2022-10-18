@@ -18,7 +18,7 @@ Use the C++ exception-handling functions to recover from unexpected events durin
 |[set_terminate](../c-runtime-library/reference/set-terminate-crt.md)|Install your own termination routine to be called by **terminate**|
 |[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|Install your own termination function to be called by **unexpected**|
 |[terminate](../c-runtime-library/reference/terminate-crt.md)|Called automatically under certain circumstances after exception is thrown. The **terminate** function calls **abort** or a function you specify using **set_terminate**|
-|[unexpected](../c-runtime-library/reference/unexpected-crt.md)|Calls **terminate** or a function you specify using **set_unexpected**. The **unexpected** function is not used in current Microsoft C++ exception-handling implementation|
+|[unexpected](../c-runtime-library/reference/unexpected-crt.md)|Calls **terminate** or a function you specify using **set_unexpected**. The **unexpected** function isn't used in current Microsoft C++ exception-handling implementation|
 
 ## See also
 

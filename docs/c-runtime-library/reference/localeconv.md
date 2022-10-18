@@ -91,7 +91,7 @@ The values for **p_sign_posn** and **n_sign_posn** are interpreted according to 
 
 - 4 - Sign string immediately follows currency symbol.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -99,7 +99,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**localeconv**|\<locale.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

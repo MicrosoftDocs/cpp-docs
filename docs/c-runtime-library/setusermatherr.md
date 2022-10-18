@@ -12,7 +12,7 @@ ms.assetid: f306818d-381a-4d68-8739-71b92bacb5ea
 ---
 # __setusermatherr
 
-Specifies a user-supplied rountine to handle math errors, instead of the [_matherr](../c-runtime-library/reference/matherr.md) routine.
+Specifies a user-supplied routine to handle math errors, instead of the [`_matherr`](../c-runtime-library/reference/matherr.md) routine.
 
 ## Syntax
 
@@ -24,10 +24,10 @@ void __setusermatherr(
 
 #### Parameters
 
-*pf*<br/>
+*`pf`*<br/>
 Pointer to an implementation of `_matherr` that is supplied by the user.
 
-The type of the *pf* parameter is declared as `typedef int (__cdecl * _HANDLE_MATH_ERROR)(struct _exception *)`.
+The type of the *`pf`* parameter is declared as `typedef int (__cdecl * _HANDLE_MATH_ERROR)(struct _exception *)`.
 
 ## Remarks
 

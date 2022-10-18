@@ -41,7 +41,7 @@ Because of security reasons, support for the **%n** format specifier is disabled
 |-------------|---------------------|
 |**_set_printf_count_output**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

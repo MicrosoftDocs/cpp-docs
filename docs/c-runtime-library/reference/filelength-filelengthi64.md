@@ -27,16 +27,16 @@ __int64 _filelengthi64(
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*<br/>
 Target the file descriptor.
 
 ## Return Value
 
-Both **_filelength** and **_filelengthi64** return the file length, in bytes, of the target file associated with *fd*. If *fd* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set **errno** to **EBADF**.
+Both **_filelength** and **_filelengthi64** return the file length, in bytes, of the target file associated with *`fd`*. If *`fd`* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set **errno** to **EBADF**.
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -83,7 +83,7 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -102,7 +102,7 @@ By default, this function's global state is scoped to the application. To change
 |**_wcsset_s_l**|\<tchar.h>|
 |**_mbsset_s**, **_mbsset_s_l**|\<mbstring.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

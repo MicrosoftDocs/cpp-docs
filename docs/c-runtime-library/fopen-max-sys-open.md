@@ -16,7 +16,7 @@ ms.assetid: 39cf5196-250a-459d-ae90-ce3d99f79039
 
 ## Remarks
 
-This is the maximum number of files that can be opened simultaneously. `FOPEN_MAX` is the ANSI-compatible name. `_SYS_OPEN` is provided for compatibility with existing code.
+ `FOPEN_MAX` and `_SYS_OPEN` are the maximum number of files that can be opened simultaneously. `FOPEN_MAX` is the ANSI-compatible name. `_SYS_OPEN` is provided for compatibility with existing code.
 
 ## See also
 

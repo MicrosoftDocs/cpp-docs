@@ -67,7 +67,7 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 |-------------|---------------------|
 |**_strdup_dbg**, **_wcsdup_dbg**|\<crtdbg.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

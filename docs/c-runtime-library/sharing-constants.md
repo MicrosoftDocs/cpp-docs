@@ -18,7 +18,7 @@ Constants for file-sharing modes.
 
 ## Remarks
 
-The *shflag* argument determines the sharing mode, which consists of one or more manifest constants. These can be combined with the *oflag* arguments (see [File Constants](../c-runtime-library/file-constants.md)).
+The *`shflag`* argument determines the sharing mode, which consists of one or more manifest constants. These constants can be combined with the *`oflag`* arguments (see [File Constants](../c-runtime-library/file-constants.md)).
 
 The following table lists the constants and their meanings:
 

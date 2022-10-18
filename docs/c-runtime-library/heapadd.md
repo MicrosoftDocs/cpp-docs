@@ -28,10 +28,10 @@ int _heapadd(
 
 #### Parameters
 
-*memblock*<br/>
+*`memblock`*<br/>
 Pointer to the heap memory.
 
-*size*<br/>
+*`size`*<br/>
 Size of memory to add, in bytes.
 
 ## Return Value

@@ -29,7 +29,7 @@ The **`rand`** function returns a pseudorandom integer in the range 0 to **`RAND
 
 The **`rand`** function generates a well-known sequence and isn't appropriate for use as a cryptographic function. For more cryptographically secure random number generation, use [`rand_s`](rand-s.md) or the functions declared in the C++ Standard Library in [`<random>`](../../standard-library/random.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

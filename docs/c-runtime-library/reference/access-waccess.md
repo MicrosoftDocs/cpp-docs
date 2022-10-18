@@ -37,11 +37,11 @@ Read/write attribute.
 
 ## Return Value
 
-Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.
+Each function returns 0 if the file has the given mode. The function returns -1 if the named file doesn't exist or doesn't have the given mode; in this case, `errno` is set as shown in the following table.
 
 | Value | Description |
 |--|--|
-| `EACCES` | Access denied: the file's permission setting does not allow specified access. |
+| `EACCES` | Access denied: the file's permission setting doesn't allow specified access. |
 | `ENOENT` | File name or path not found. |
 | `EINVAL` | Invalid parameter. |
 
@@ -58,13 +58,13 @@ When used with files, the **`_access`** function determines whether the specifie
 |04|Read-only|
 |06|Read and write|
 
-This function only checks whether the file and directory are read-only or not, it does not check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access Tokens](/windows/win32/SecAuthZ/access-tokens). An ATL class exists to provide this functionality; see [`CAccessToken` Class](../../atl/reference/caccesstoken-class.md).
+This function only checks whether the file and directory are read-only or not, it doesn't check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access Tokens](/windows/win32/SecAuthZ/access-tokens). An ATL class exists to provide this functionality; see [`CAccessToken` Class](../../atl/reference/caccesstoken-class.md).
 
 **`_waccess`** is a wide-character version of **`_access`**; the *`path`* argument to **`_waccess`** is a wide-character string. **`_waccess`** and **`_access`** behave identically otherwise.
 
-This function validates its parameters. If *`path`* is `NULL` or *`mode`* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
+This function validates its parameters. If *`path`* is `NULL` or *`mode`* doesn't specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

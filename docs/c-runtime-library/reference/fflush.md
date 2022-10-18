@@ -35,7 +35,7 @@ Pointer to **`FILE`** structure.
 
 ## Remarks
 
-The **`fflush`** function flushes the stream *`stream`*. If the stream was opened in write mode, or it was opened in update mode and the last operation was a write, the contents of the stream buffer are written to the underlying file or device and the buffer is discarded. If the stream was opened in read mode, or if the stream has no buffer, the call to **`fflush`** has no effect, and any buffer is retained. A call to **`fflush`** negates the effect of any prior call to **`ungetc`** for the stream. The stream remains open after the call.
+The **`fflush`** function flushes the stream *`stream`*. If the stream was opened in write mode, or it was opened in update mode and the last operation was a write, **`fflush`** writes the contents of the stream buffer to the underlying file or device, and the buffer is discarded. If the stream was opened in read mode, or if the stream has no buffer, the call to **`fflush`** has no effect, and any buffer is retained. A call to **`fflush`** negates the effect of any prior call to **`ungetc`** for the stream. The stream remains open after the call.
 
 If *`stream`* is **`NULL`**, the behavior is the same as a call to **`fflush`** on each open stream. All streams opened in write mode and all streams opened in update mode where the last operation was a write are flushed. The call has no effect on other streams.
 
@@ -45,7 +45,7 @@ For information about controlling the commit-to-disk feature, see [Stream I/O](.
 
 This function locks the calling thread and is therefore thread-safe. For a non-locking version, see **`_fflush_nolock`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`fflush`**|`<stdio.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

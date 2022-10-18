@@ -47,7 +47,7 @@ The **offsetof** macro returns the offset in bytes of *memberName* from the begi
 |-------------|---------------------|
 |**offsetof**|\<stddef.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

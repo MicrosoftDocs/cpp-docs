@@ -32,7 +32,7 @@ Each routine reads a single character from **`stdin`** and increments the associ
 
 These functions also lock the calling thread and are thread-safe. For a non-locking version, see [`_getchar_nolock`, `_getwchar_nolock`](getchar-nolock-getwchar-nolock.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |**`getchar`**|`<stdio.h>`|
 |**`getwchar`**|`<stdio.h>` or `<wchar.h>`|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

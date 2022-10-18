@@ -49,7 +49,7 @@ A pointer to an object that can be accessed in the comparison function.
 
 ## Return value
 
-**bsearch_s** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns **NULL**. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
+**bsearch_s** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* isn't found, the function returns **NULL**. If the array isn't in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
 If invalid parameters are passed to the function, it invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -72,9 +72,9 @@ The **bsearch_s** function performs a binary search of a sorted array of *number
 |0|Key is equal to array element.|
 |> 0|Key is greater than array element.|
 
-The *context* pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The *compare* function may cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* parameter makes **bsearch_s** more secure since additional context may be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
+The *context* pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The *compare* function may cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* parameter makes **bsearch_s** more secure, since the context may be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -82,7 +82,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**bsearch_s**|\<stdlib.h> and \<search.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

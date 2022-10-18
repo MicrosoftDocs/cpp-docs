@@ -10,7 +10,7 @@ ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
 ---
 # printf_p Positional Parameters
 
-Positional parameters provide the ability to specify by number which of the arguments is to be substituted into a field in a format string. The following positional parameter `printf` functions are available:
+Positional parameters let you specify by number the argument to substitute into a field in a format string. The following positional parameter `printf` functions are available:
 
 | Non-positional printf functions | Positional parameter equivalents |
 |---|---|
@@ -26,7 +26,7 @@ Positional parameters provide the ability to specify by number which of the argu
 
 ### Parameter indexing
 
-By default, if no positional formatting is present, the positional functions behave identically to the non-positional ones. You specify the positional parameter to format by using `%n$` at the beginning of the format specifier, where `n` is the position of the parameter to format in the parameter list. The parameter position starts at 1 for the first argument after the format string. The remainder of the format specifier follows the same rules as the `printf` format specifier. For more information about format specfiers, see [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+By default, if no positional formatting is present, the positional functions behave identically to the non-positional ones. You specify the positional parameter to format by using `%n$` at the beginning of the format specifier, where `n` is the position of the parameter to format in the parameter list. The parameter position starts at 1 for the first argument after the format string. The remainder of the format specifier follows the same rules as the `printf` format specifier. For more information about format specifiers, see [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 Here's an example of positional formatting:
 
@@ -34,19 +34,19 @@ Here's an example of positional formatting:
 _printf_p("%1$s %2$s", "November", "10");
 ```
 
-This prints:
+This example prints:
 
 ```
 November 10
 ```
 
-The order of the numbers used doesn't need to match the order of the arguments. For example, this is a valid format string:
+The order of the numbers used doesn't need to match the order of the arguments. For example, here's a valid format string:
 
 ```C
 _printf_p("%2$s %1$s", "November", "10");
 ```
 
-This prints:
+This example prints:
 
 ```
 10 November
@@ -58,7 +58,7 @@ Unlike traditional format strings, positional parameters may be used more than o
 _printf_p("%1$d times %1$d is %2$d", 10, 100);
 ```
 
-This prints:
+This example prints:
 
 ```
 10 times 10 is 100

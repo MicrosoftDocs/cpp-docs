@@ -48,7 +48,7 @@ The following pairs of calls have the same behavior in all locales, but it is po
 |-------------|---------------------|
 |**wctrans**|\<wctype.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

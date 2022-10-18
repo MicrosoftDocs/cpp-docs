@@ -57,7 +57,7 @@ when the absolute path (actual file system location) of the file might be:
 
 `\\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h`
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 **`_fullpath`** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **`_wfullpath`** is a wide-character version of **`_fullpath`**; the string arguments to **`_wfullpath`** are wide-character strings. **`_wfullpath`** and **`_fullpath`** behave identically except that **`_wfullpath`** doesn't handle multibyte-character strings.
 

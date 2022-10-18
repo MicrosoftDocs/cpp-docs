@@ -94,7 +94,7 @@ Signal settings are not preserved in spawned processes that are created by calls
 |-------------|---------------------|
 |**`signal`**|`<signal.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

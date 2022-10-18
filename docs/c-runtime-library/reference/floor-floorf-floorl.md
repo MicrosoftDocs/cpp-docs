@@ -56,7 +56,7 @@ C++ allows overloading, so you can call overloads of **floor** that take and ret
 
 If you use the \<tgmath.h> `floor()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 |**floor**, **floorf**, **floorl**|\<math.h>|
 |**floor** macro | \<tgmath.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

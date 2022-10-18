@@ -25,9 +25,9 @@ Global macros that hold error codes that are set during program execution, and s
 
 ## Remarks
 
-Both `errno` and `_doserrno` are set to 0 by the runtime during program startup. `errno` is set on an error in a system-level call. Because `errno` holds the value for the last call that set it, this value may be changed by succeeding calls. Run-time library calls that set `errno` on an error do not clear `errno` on success. Always clear `errno` by calling `_set_errno(0)` immediately before a call that may set it, and check it immediately after the call.
+Both `errno` and `_doserrno` are set to 0 by the runtime during program startup. `errno` is set on an error in a system-level call. Because `errno` holds the value for the last call that set it, this value may be changed by succeeding calls. Run-time library calls that set `errno` on an error don't clear `errno` on success. Always clear `errno` by calling `_set_errno(0)` immediately before a call that may set it, and check it immediately after the call.
 
-On an error, `errno` is not necessarily set to the same value as the error code returned by a system call. For I/O operations, `_doserrno` stores the operating-system error-code equivalents of `errno` codes. For most non-I/O operations, the value of `_doserrno` is not set.
+On an error, `errno` isn't necessarily set to the same value as the error code returned by a system call. For I/O operations, `_doserrno` stores the operating-system error-code equivalents of `errno` codes. For most non-I/O operations, the value of `_doserrno` isn't set.
 
 Each `errno` value is associated with an error message in `_sys_errlist` that can be printed by using one of the [`perror`](../c-runtime-library/reference/perror-wperror.md) functions, or stored in a string by using one of the [`strerror`](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) or [`strerror_s`](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) functions. The `perror` and `strerror` functions use the `_sys_errlist` array and `_sys_nerr`—the number of elements in `_sys_errlist`—to process error information. Direct access to `_sys_errlist` and `_sys_nerr` is deprecated for code-security reasons. We recommend that you use the more secure, functional versions instead of the global macros, as shown here:
 

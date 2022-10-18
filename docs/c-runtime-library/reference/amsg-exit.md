@@ -22,7 +22,7 @@ void _amsg_exit ( int rterrnum );
 
 ### Parameters
 
-*rterrnum*<br/>
+*`rterrnum`*<br/>
 The identification number of a system-defined runtime error message.
 
 ## Remarks

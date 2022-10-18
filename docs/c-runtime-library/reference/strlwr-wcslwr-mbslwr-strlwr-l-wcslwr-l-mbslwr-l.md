@@ -92,7 +92,7 @@ If *str* is a **NULL** pointer, the invalid parameter handler is invoked, as des
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -109,7 +109,7 @@ By default, this function's global state is scoped to the application. To change
 |**_wcslwr**, **_wcslwr_l**|\<string.h> or \<wchar.h>|
 |**_mbslwr**, **_mbslwr_l**|\<mbstring.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

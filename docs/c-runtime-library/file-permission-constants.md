@@ -31,7 +31,7 @@ When used as the `pmode` argument for `_umask`, the manifest constant sets the p
 |--------------|-------------|
 |`_S_IREAD`|Writing not permitted (file is read-only)|
 |`_S_IWRITE`|Reading not permitted (file is write-only)|
-|`_S_IREAD | _S_IWRITE`|Neither reading nor writing permitted|
+|`_S_IREAD | _S_IWRITE`|Both reading and writing not permitted|
 
 ## See also
 

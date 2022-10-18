@@ -33,7 +33,7 @@ The information that is required to process the exception.
 
 ## Remarks
 
-This method is included in a compiler-only file that the compiler uses to process exceptions. Do not call the method directly from your code.
+This method is included in a compiler-only file that the compiler uses to process exceptions. Don't call the method directly from your code.
 
 ## Requirements
 

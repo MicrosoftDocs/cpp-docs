@@ -45,7 +45,7 @@ The value of *category* must have been returned by an earlier successful call to
 |-------------|---------------------|
 |**towctrans**|\<wctype.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -19,7 +19,7 @@ FILE *stderr;
 
 ## Remarks
 
-These are standard streams for input, output, and error output.
+The `stdin`, `stdout`, and `stderr` global constant pointers are standard streams for input, output, and error output.
 
 By default, standard input is read from the keyboard, while standard output and standard error are printed to the screen.
 
@@ -33,7 +33,7 @@ The following stream pointers are available to access the standard streams:
 
 These pointers can be used as arguments to functions. Some functions, such as [`getchar`](../c-runtime-library/reference/getchar-getwchar.md) and [`putchar`](../c-runtime-library/reference/putchar-putwchar.md), use `stdin` and `stdout` automatically.
 
-These pointers are constants, and cannot be assigned new values. The [`freopen`](../c-runtime-library/reference/freopen-wfreopen.md) function can be used to redirect the streams to disk files or to other devices. The operating system allows you to redirect a program's standard input and output at the command level.
+These pointers are constants, and can't be assigned new values. The [`freopen`](../c-runtime-library/reference/freopen-wfreopen.md) function can be used to redirect the streams to disk files or to other devices. The operating system allows you to redirect a program's standard input and output at the command level.
 
 ## See also
 

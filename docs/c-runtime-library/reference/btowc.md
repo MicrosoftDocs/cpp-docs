@@ -29,11 +29,11 @@ Integer to test.
 
 ## Return Value
 
-Returns the wide-character representation of the character if the integer represents a valid single-byte character in the initial shift state. Returns WEOF if the integer is EOF or is not a valid single-byte character in the initial shift state. The output of this function is affected by the current **LC_TYPE** locale.
+Returns the wide-character representation of the character if the integer represents a valid single-byte character in the initial shift state. Returns WEOF if the integer is EOF or isn't a valid single-byte character in the initial shift state. The output of this function is affected by the current **LC_TYPE** locale.
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -41,7 +41,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**btowc**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

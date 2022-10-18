@@ -51,7 +51,7 @@ When *`stream`* is opened in Unicode translation mode—for example, if *`stream
 
 Because this function locks the calling thread, it is thread-safe. For a non-locking version, see **`_fwrite_nolock`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -59,7 +59,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`fwrite`**|`<stdio.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -59,7 +59,7 @@ The *`action`* parameter is ignored by the Windows operating system because pare
 
 Unless *`procHandle`* is -1 or -2 (handles to the current process or thread), the handle will be closed. In this situation, don't use the returned handle.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

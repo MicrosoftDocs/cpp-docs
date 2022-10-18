@@ -33,11 +33,11 @@ Floating-point value.
 
 ## Return Value
 
-The **atanh** functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of *x*. If *x* is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.
+The **atanh** functions return the inverse hyperbolic tangent (arc hyperbolic tangent) of *x*. If *x* is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.
 
-|Input|SEH Exception|**Matherr** Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-------------------------|
-|± QNAN,IND|none|none|
+|± QNAN, IND|none|none|
 |*X* ≥ 1; *x* ≤ -1|none|none|
 
 ## Remarks
@@ -46,7 +46,7 @@ Because C++ allows overloading, you can call overloads of **atanh** that take an
 
 If you use the \<tgmath.h> `atanh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath> or \<math.h>|
 |**atanh()** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
