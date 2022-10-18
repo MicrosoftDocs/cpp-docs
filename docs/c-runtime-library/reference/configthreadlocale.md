@@ -45,7 +45,7 @@ If you use **`_configthreadlocale`** to enable a per-thread locale, we recommend
 
 If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

@@ -62,7 +62,7 @@ In order for **toupper** to give the expected results, [__isascii](isascii-isasc
 
 [Data Conversion Routines](../../c-runtime-library/data-conversion.md)
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -82,7 +82,7 @@ By default, this function's global state is scoped to the application. To change
 |**_toupper**|\<ctype.h>|
 |**towupper**|\<ctype.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

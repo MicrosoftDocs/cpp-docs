@@ -44,7 +44,7 @@ The **__toascii** routine is defined as a macro unless the preprocessor macro _C
 |-------------|---------------------|
 |**toascii**, **__toascii**|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
 
-The **toascii** macro is a POSIX extension, and **__toascii** is a Microsoft-specific implementation of the POSIX extension. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **toascii** macro is a POSIX extension, and **__toascii** is a Microsoft-specific implementation of the POSIX extension. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

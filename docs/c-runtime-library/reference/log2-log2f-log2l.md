@@ -65,7 +65,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 If *x* is an integer, this function essentially returns the zero-based index of the most significant 1 bit of *x*.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -74,7 +74,7 @@ By default, this function's global state is scoped to the application. To change
 |**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
 |**log2** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

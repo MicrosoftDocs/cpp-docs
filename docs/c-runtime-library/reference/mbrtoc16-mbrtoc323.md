@@ -68,7 +68,7 @@ If *source* isn't null, the function starts at the beginning of the string and i
 
 To convert non-UTF-8 multibyte characters to UTF-16 LE characters, use the [mbrtowc](mbrtowc.md), [mbtowc, or _mbtowc_l](mbtowc-mbtowc-l.md) functions.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -76,7 +76,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|--------------|------------------|
 |**mbrtoc16**, **mbrtoc32**|\<uchar.h>|\<cuchar>|
 
-For additional compatibility information, see [Compatibility](../compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

@@ -115,7 +115,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 |**`sprintf`**, **`_sprintf_l`**|`<stdio.h>`|
 |**`swprintf`**, **`_swprintf_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example: Use `sprintf` to format data
 

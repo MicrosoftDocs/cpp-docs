@@ -98,7 +98,7 @@ Variations of these functions support 32- or 64-bit time types, and 32- or 64-bi
 
 This function validates its parameters. If either *`path`* or *`buffer`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Time Type and File Length Type Variations of `_stat`
 
@@ -148,7 +148,7 @@ If *`path`* refers to a device, the **`st_size`**, various time fields, **`st_de
 |**`_stat`**, **`_stat32`**, **`_stat64`**, **`_stati64`**, **`_stat32i64`**, **`_stat64i32`**|`<sys/types.h>` followed by `<sys/stat.h>`|`<errno.h>`|
 |**`_wstat`**, **`_wstat32`**, **`_wstat64`**, **`_wstati64`**, **`_wstat32i64`**, **`_wstat64i32`**|`<sys/types.h>` followed by `<sys/stat.h>` or `<wchar.h>`|`<errno.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

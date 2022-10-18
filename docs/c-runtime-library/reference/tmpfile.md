@@ -38,7 +38,7 @@ Failure can occur if you attempt more than TMP_MAX (see STDIO.H) calls with **tm
 |-------------|---------------------|
 |**tmpfile**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

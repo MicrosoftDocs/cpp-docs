@@ -73,7 +73,7 @@ Calling this function is similar to calling the equivalent **logb** function, th
 |**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
 |**ilogb** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

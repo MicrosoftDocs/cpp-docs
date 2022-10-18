@@ -62,7 +62,7 @@ If you use the `<tgmath.h>` `logb()` macro, the type of the argument determines 
 |`± QNAN`,`IND`|None|`_DOMAIN`|
 |± 0|`ZERODIVIDE`|`_SING`|
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

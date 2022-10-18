@@ -78,7 +78,7 @@ Each of these functions performs a case-insensitive comparison of *string1* and 
 
 All of these functions validate their parameters. If either *string1* or *string2* are **NULL** pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -94,7 +94,7 @@ By default, this function's global state is scoped to the application. To change
 |**_wcsicoll**, **_wcsicoll_l**|\<wchar.h>, \<string.h>|
 |**_mbsicoll**, **_mbsicoll_l**|\<mbstring.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

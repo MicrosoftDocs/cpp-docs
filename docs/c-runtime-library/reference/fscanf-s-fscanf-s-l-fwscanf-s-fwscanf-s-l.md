@@ -86,7 +86,7 @@ The versions of these functions that have the **`_l`** suffix are identical exce
 |**`fscanf_s`**, **`_fscanf_s_l`**|`<stdio.h>`|
 |**`fwscanf_s`**, **`_fwscanf_s_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

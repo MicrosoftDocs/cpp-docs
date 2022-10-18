@@ -87,7 +87,7 @@ Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 |**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|
 |**fdim** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

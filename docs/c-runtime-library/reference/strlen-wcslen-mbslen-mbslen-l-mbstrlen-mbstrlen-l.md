@@ -60,7 +60,7 @@ Each of these functions returns the number of characters in *`str`*, excluding t
 
 **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -83,7 +83,7 @@ The output value is affected by the setting of the **`LC_CTYPE`** category setti
 |**`_mbslen`**, **`_mbslen_l`**|`<mbstring.h>`|
 |**`_mbstrlen`**, **`_mbstrlen_l`**|`<stdlib.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

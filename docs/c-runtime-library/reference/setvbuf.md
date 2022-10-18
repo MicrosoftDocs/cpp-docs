@@ -59,7 +59,7 @@ The mode must be **_IOFBF**, **_IOLBF**, or **_IONBF**. If *mode* is **_IOFBF** 
 | **_IOLBF** | For some systems, this provides line buffering. However, for Win32, the behavior is the same as **_IOFBF** - Full Buffering. |
 | **_IONBF** | No buffer is used, regardless of *buffer* or *size*. |
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -67,7 +67,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**setvbuf**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

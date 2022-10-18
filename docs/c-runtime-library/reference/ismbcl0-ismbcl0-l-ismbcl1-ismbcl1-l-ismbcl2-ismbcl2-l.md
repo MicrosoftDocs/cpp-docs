@@ -74,7 +74,7 @@ The functions check that the specified value *c* matches the test conditions des
 
 **End Code Page 932 Specific**
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

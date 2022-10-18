@@ -97,7 +97,7 @@ If the *buffer* or *format* parameters are **NULL** pointers, if count is zero, 
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

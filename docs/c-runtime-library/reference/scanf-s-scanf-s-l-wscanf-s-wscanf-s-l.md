@@ -115,7 +115,7 @@ For more information, see [Format Specification Fields: `scanf` and `wscanf` Fun
 |**`scanf_s`**, **`_scanf_s_l`**|`<stdio.h>`|
 |**`wscanf_s`**, **`_wscanf_s_l`**|`<stdio.h>` or `<wchar.h>`|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles **`stdin`**, **`stdout`**, and **`stderr`** must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles **`stdin`**, **`stdout`**, and **`stderr`** must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

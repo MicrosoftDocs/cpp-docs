@@ -48,7 +48,7 @@ The **raise** function sends *sig* to the executing program. If a previous call 
 
 If the argument is not a valid signal as specified above, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If not handled, the function sets **errno** to **EINVAL** and returns a nonzero value.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -56,7 +56,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**raise**|\<signal.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

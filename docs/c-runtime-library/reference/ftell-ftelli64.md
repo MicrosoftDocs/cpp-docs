@@ -45,7 +45,7 @@ In text mode, CTRL+Z is interpreted as an end-of-file character on input. In fil
 
 This function locks the calling thread during execution and is therefore thread-safe. For a non-locking version, see **`_ftell_nolock`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |**`ftell`**|`<stdio.h>`|`<errno.h>`|
 |**`_ftelli64`**|`<stdio.h>`|`<errno.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

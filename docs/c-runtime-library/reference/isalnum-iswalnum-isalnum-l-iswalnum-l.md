@@ -48,7 +48,7 @@ The behavior of **isalnum** and **_isalnum_l** is undefined if *c* is not EOF or
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -59,7 +59,7 @@ By default, this function's global state is scoped to the application. To change
 |**_isalnum_l**|\<ctype.h>|
 |**_iswalnum_l**|\<ctype.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

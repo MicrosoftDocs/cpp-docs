@@ -92,7 +92,7 @@ The versions of these functions with the **_l** suffix are identical except that
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

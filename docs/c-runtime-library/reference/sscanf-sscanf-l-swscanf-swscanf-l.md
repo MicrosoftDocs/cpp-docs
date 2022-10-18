@@ -90,7 +90,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 |**`sscanf`**, **`_sscanf_l`**|`<stdio.h>`|
 |**`swscanf`**, **`_swscanf_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -74,7 +74,7 @@ To use these functions, you must turn off floating-point optimizations that coul
 |--------------|--------------|------------------|
 |**fegetround**, **fesetround**|\<fenv.h>|\<cfenv>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

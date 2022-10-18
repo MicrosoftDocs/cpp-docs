@@ -40,7 +40,7 @@ When the application is linked with a debug version of the C run-time libraries,
 
 To free memory allocated with [`_malloca`](malloca.md), use [`_freea`](freea.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -48,7 +48,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`free`**|`<stdlib.h>` and `<malloc.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

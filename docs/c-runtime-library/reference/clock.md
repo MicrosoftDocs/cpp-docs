@@ -35,7 +35,7 @@ Given enough time, the value returned by **`clock`** can exceed the maximum posi
 |-------------|---------------------|
 |**`clock`**|`<time.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -67,7 +67,7 @@ For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-long
 |-------------|---------------------|
 |**longjmp**|\<setjmp.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

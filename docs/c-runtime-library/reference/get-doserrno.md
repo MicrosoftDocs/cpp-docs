@@ -39,7 +39,7 @@ We recommend [_get_errno](get-errno.md) instead of **_get_doserrno** for portabl
 
 Possible values of **_doserrno** are defined in \<errno.h>.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
