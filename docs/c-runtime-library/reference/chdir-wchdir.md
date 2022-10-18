@@ -35,17 +35,17 @@ These functions return a value of 0 if successful. A return value of -1 indicate
 
 ## Remarks
 
-The **`_chdir`** function changes the current working directory to the directory specified by *`dirname`*. The *`dirname`* parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in *`dirname`*, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:
+The **`_chdir`** function changes the current working directory to the directory specified by *`dirname`*. The *`dirname`* parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in *`dirname`*, the default drive letter is changed as well. For example, assume `A` is the default drive letter and `\BIN` is the current working directory. The following call changes the current working directory for drive `C` to `\temp` and establishes `C` as the new default drive:
 
 ```C
-_chdir("c:\temp");
+_chdir("c:\\temp");
 ```
 
 When you use the optional backslash character (**`\`**) in paths, you must place two backslashes (**`\\`**) in a C string literal to represent a single backslash (**`\`**).
 
 **`_wchdir`** is a wide-character version of **`_chdir`**; the *`dirname`* argument to **`_wchdir`** is a wide-character string. **`_wchdir`** and **`_chdir`** behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mapping:
 

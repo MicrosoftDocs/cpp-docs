@@ -47,7 +47,7 @@ The possible return values are:
 
 |z parameter|Return value|
 |-----------------|------------------|
-|Positive|The base 10 logarithm of z|
+|Positive|The logarithm (base 10) of z|
 |Zero|- ∞|
 |Negative|NaN|
 |NaN|NaN|

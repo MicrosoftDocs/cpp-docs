@@ -12,7 +12,7 @@ ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
 ---
 # clog10, clog10f, clog10l
 
-Retrieves the base 10 logarithm of a complex number.
+Retrieves the logarithm (base 10) of a complex number.
 
 ## Syntax
 
@@ -38,7 +38,7 @@ The possible return values are:
 
 |z parameter|Return value|
 |-----------------|------------------|
-|Positive|The base 10 logarithm of z|
+|Positive|The logarithm (base 10) of z|
 |Zero|- ∞|
 |Negative|NaN|
 |NaN|NaN|

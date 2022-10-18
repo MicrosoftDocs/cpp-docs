@@ -61,7 +61,7 @@ Compares the first *`count`* characters of *`buffer1`* and *`buffer2`* and retur
 |**`memcmp`**|`<memory.h>` or `<string.h>`|
 |**`wmemcmp`**|`<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

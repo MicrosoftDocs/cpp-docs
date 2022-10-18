@@ -27,7 +27,7 @@ int   _abnormal_termination(
 
 ## Remarks
 
-This is an internal function used to manage unwinding exceptions, and is not intended to be called from user code.
+`_abnormal_termination` is an internal function used to manage unwinding exceptions, and isn't intended to be called from user code.
 
 ## Requirements
 

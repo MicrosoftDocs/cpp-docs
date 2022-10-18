@@ -12,7 +12,7 @@ ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
 ---
 # _chsize_s
 
-Changes the size of a file. This is a version of [_chsize](chsize.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Changes the size of a file. This function is a version of [_chsize](chsize.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -25,10 +25,10 @@ errno_t _chsize_s(
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*<br/>
 File descriptor referring to an open file.
 
-*size*<br/>
+*`size`*<br/>
 New length of the file in bytes.
 
 ## Return Value
@@ -39,13 +39,13 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The **_chsize_s** function extends or truncates the file associated with *fd* to the length specified by *size*. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
+The **_chsize_s** function extends or truncates the file associated with *`fd`* to the length specified by *`size`*. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
 
 **_chsize_s** takes a 64-bit integer as the file size, and therefore can handle file sizes greater than 4 GB. **_chsize** is limited to 32-bit file sizes.
 
-This function validates its parameters. If *fd* is not a valid file descriptor or size is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If *`fd`* isn't a valid file descriptor or size is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

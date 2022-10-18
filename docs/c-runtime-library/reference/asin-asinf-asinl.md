@@ -36,7 +36,7 @@ The **`asin`** function returns the arcsine (the inverse sine function) of *`x`*
 
 By default, if *`x`* is less than -1 or greater than 1, **`asin`** returns an indefinite.
 
-|Input|SEH exception|Matherr exception|
+|Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|
 |`± ∞`|**`INVALID`**|**`_DOMAIN`**|
 |`± QNAN`, `IND`|none|**`_DOMAIN`**|
@@ -48,7 +48,7 @@ Because C++ allows overloading, you can call overloads of **`asin`** with **`flo
 
 If you use the `<tgmath.h>` `asin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

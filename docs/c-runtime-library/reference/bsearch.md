@@ -45,7 +45,7 @@ Callback function that compares two elements. The first is a pointer to the key 
 
 ## Return value
 
-**bsearch** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns **NULL**. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
+**bsearch** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* isn't found, the function returns **NULL**. If the array isn't in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
 ## Remarks
 
@@ -59,7 +59,7 @@ The **bsearch** function performs a binary search of a sorted array of *number* 
 
 This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is zero, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -67,7 +67,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**bsearch**|\<stdlib.h> and \<search.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

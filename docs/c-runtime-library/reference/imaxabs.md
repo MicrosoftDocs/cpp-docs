@@ -40,7 +40,7 @@ The **imaxabs** function returns the absolute value of the argument. There's no 
 |-------------|---------------------|
 |**imaxabs**|\<inttypes.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

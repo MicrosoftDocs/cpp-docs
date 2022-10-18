@@ -80,7 +80,7 @@ If you use the \<tgmath.h> `fmax()` macro, the type of the argument determines w
 |**fmax**, **fmaxf**, **fmaxl**|\<math.h>|\<cmath> or \<math.h>|
 |**fmax** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

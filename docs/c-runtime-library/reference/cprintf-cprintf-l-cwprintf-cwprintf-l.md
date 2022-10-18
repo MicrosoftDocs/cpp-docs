@@ -52,7 +52,7 @@ The number of characters printed.
 
 ## Remarks
 
-These functions format and print a series of characters and values directly to the console, using the **_putch** function (**_putwch** for **_cwprintf**) to output characters. Each argument in *argument_list* (if any) is converted and output according to the corresponding format specification in *format*. The *format* argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Unlike the **fprintf**, **printf**, and **sprintf** functions, neither **_cprintf** nor **_cwprintf** translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.
+These functions format and print a series of characters and values directly to the console, using the **_putch** function (**_putwch** for **_cwprintf**) to output characters. Each argument in *argument_list* (if any) is converted and output according to the corresponding format specification in *format*. The *format* argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Unlike the **fprintf**, **printf**, and **sprintf** functions, **_cprintf** and **_cwprintf** don't translate line-feed characters into carriage return-line feed (CR-LF) combinations when output.
 
 An important distinction is that **_cwprintf** displays Unicode characters when used in Windows. Unlike **_cprintf**, **_cwprintf** uses the current console locale settings.
 

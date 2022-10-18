@@ -46,7 +46,7 @@ typedef void ( *terminate_function )( );
 
 There is a single **set_terminate** handler for all dynamically linked DLLs or EXEs; even if you call **set_terminate** your handler may be replaced by another, or you may be replacing a handler set by another DLL or EXE.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**set_terminate**|\<eh.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -28,7 +28,7 @@ These functions process data in different sizes and formats, from single charact
 |[`_flushall`](../c-runtime-library/reference/flushall.md)|Flush all streams to buffer or storage device|
 |[`fopen`, `_wfopen`](../c-runtime-library/reference/fopen-wfopen.md), [`fopen_s`, `_wfopen_s`](../c-runtime-library/reference/fopen-s-wfopen-s.md)|Open stream|
 |[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md), [`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|Write formatted data to stream|
-|[fputc, fputwc](../c-runtime-library/reference/fputc-fputwc.md)|Write a character to a stream (function versions of **`putc`** and **`putwc`**)|
+|[`fputc`, `fputwc`](../c-runtime-library/reference/fputc-fputwc.md)|Write a character to a stream (function versions of **`putc`** and **`putwc`**)|
 |[`_fputchar`, `_fputwchar`](../c-runtime-library/reference/fputc-fputwc.md)|Write character to **`stdout`** (function versions of **`putchar`** and **`putwchar`**)|
 |[`fputs`, `fputws`](../c-runtime-library/reference/fputs-fputws.md)|Write string to stream|
 |[`fread`](../c-runtime-library/reference/fread.md)|Read unformatted data from stream|
@@ -71,7 +71,7 @@ These functions process data in different sizes and formats, from single charact
 
 When a program begins execution, the startup code automatically opens several streams: standard input (pointed to by **`stdin`**), standard output (pointed to by **`stdout`**), and standard error (pointed to by **`stderr`**). These streams are directed to the console (keyboard and screen) by default. Use **`freopen`** to redirect **`stdin`**, **`stdout`**, or **`stderr`** to a disk file or a device.
 
-Files opened using the stream routines are buffered by default. The **`stdout`** and **`stderr`** functions are flushed whenever they are full or, if you are writing to a character device, after each library call. If a program terminates abnormally, output buffers may not be flushed, resulting in loss of data. Use **`fflush`** or **`_flushall`** to ensure that the buffer associated with a specified file or all open buffers are flushed to the operating system, which can cache data before writing it to disk. The commit-to-disk feature ensures that the flushed buffer contents are not lost in the event of a system failure.
+Files opened using the stream routines are buffered by default. The **`stdout`** and **`stderr`** functions are flushed whenever they're full or, if you're writing to a character device, after each library call. If a program terminates abnormally, output buffers may not be flushed, resulting in loss of data. Use **`fflush`** or **`_flushall`** to ensure that the buffer associated with a specified file is flushed to the operating system, or all open buffers are flushed. The operating system can cache data before writing it to disk. The commit-to-disk feature ensures that the flushed buffer contents aren't lost if there's a system failure.
 
 There are two ways to commit buffer contents to disk:
 
@@ -81,11 +81,11 @@ There are two ways to commit buffer contents to disk:
 
 Any file specifically opened with either the **`c`** or the **`n`** flag behaves according to the flag, regardless of the state of the global commit/no-commit flag.
 
-If your program does not explicitly close a stream, the stream is automatically closed when the program terminates. However, you should close a stream when your program finishes with it, as the number of streams that can be open at one time is limited. See [`_setmaxstdio`](../c-runtime-library/reference/setmaxstdio.md) for information on this limit.
+If your program doesn't explicitly close a stream, the stream is automatically closed when the program terminates. However, you should close a stream when your program finishes with it, as the number of streams that can be open at one time is limited. See [`_setmaxstdio`](../c-runtime-library/reference/setmaxstdio.md) for information on this limit.
 
-Input can follow output directly only with an intervening call to **`fflush`** or to a file-positioning function (**`fseek`**, **`fsetpos`**, or **`rewind`**). Output can follow input without an intervening call to a file-positioning function if the input operation encounters the end of the file.
+Input can follow output directly only with an intervening call to **`fflush`** or to a file-positioning function (**`fseek`**, **`fsetpos`**, or **`rewind`**). Input can be followed by output without an intervening call to a file-positioning function, if the input operation encounters the end of the file.
 
 ## See also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

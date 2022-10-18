@@ -67,7 +67,7 @@ The main difference between the more secure functions (that have the **_s** suff
 |**vfscanf_s**|\<stdio.h>|
 |**vfwscanf_s**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -50,7 +50,7 @@ These functions are not useful for [/clr (Common Language Runtime Compilation)](
 |-------------|---------------------|
 |**_status87**, **_statusfp**, **_statusfp2**|\<float.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

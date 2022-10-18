@@ -34,7 +34,7 @@ A complex number that represents an angle, in radians.
 
 ## Return Value
 
-The arccosine of *z*, in radians. The result is unbounded along the imaginary axis, and  in the  in the interval [0, π] along the real axis. A domain error will occur if *z* is outside the interval [-1, +1].
+The arc cosine of *z*, in radians. The result is unbounded along the imaginary axis, and bounded in the interval [0, π] along the real axis. A domain error will occur if *z* is outside the interval [-1, +1].
 
 ## Remarks
 

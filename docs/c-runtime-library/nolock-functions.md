@@ -7,7 +7,7 @@ ms.assetid: 7d651d87-38d2-4303-9897-fdb5f7a3e899
 ---
 # _nolock Functions
 
-These are functions that do not perform any locking. They are provided for users requiring maximum performance. For more information, see [Multithreaded Libraries Performance](../c-runtime-library/multithreaded-libraries-performance.md).
+The `_nolock` functions are versions of I/O functions that don't perform any locking. They're provided for users requiring maximum performance. For more information, see [Multithreaded Libraries Performance](../c-runtime-library/multithreaded-libraries-performance.md).
 
 Use _nolock functions only if your program is truly single-threaded or if it does its own locking.
 

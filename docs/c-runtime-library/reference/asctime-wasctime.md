@@ -12,7 +12,7 @@ ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
 ---
 # asctime, _wasctime
 
-Convert a **tm** time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
+Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
 
 ## Syntax
 
@@ -27,23 +27,23 @@ wchar_t *_wasctime(
 
 ### Parameters
 
-*timeptr*<br/>
+*`timeptr`*<br/>
 Time/date structure.
 
 ## Return Value
 
-**asctime** returns a pointer to the character string result; **_wasctime** returns a pointer to the wide-character string result. There is no error return value.
+**asctime** returns a pointer to the character string result; **_wasctime** returns a pointer to the wide-character string result. There's no error return value.
 
 ## Remarks
 
 More secure versions of these functions are available; see [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
 
-The **asctime** function converts a time stored as a structure to a character string. The *timeptr* value is usually obtained from a call to **gmtime** or **localtime**, which both return a pointer to a **tm** structure, defined in TIME.H.
+The **asctime** function converts a time stored as a structure to a character string. The *`timeptr`* value is typically obtained from a call to **gmtime** or **localtime**, which both return a pointer to a `tm` structure, defined in TIME.H.
 
-|timeptr member|Value|
+|`timeptr` member|Value|
 |--------------------|-----------|
 |**tm_hour**|Hours since midnight (0-23)|
-|**tm_isdst**|Positive if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative if status of daylight saving time is unknown. The C run-time library assumes the United States' rules for implementing the calculation of Daylight Saving Time (DST).|
+|**tm_isdst**|Positive if daylight saving time is in effect; 0 if daylight saving time isn't in effect; negative if status of daylight saving time is unknown. The C run-time library assumes the United States' rules for implementing the calculation of Daylight Saving Time (DST).|
 |**tm_mday**|Day of month (1-31)|
 |**tm_min**|Minutes after hour (0-59)|
 |**tm_mon**|Month (0-11; January = 0)|
@@ -52,7 +52,7 @@ The **asctime** function converts a time stored as a structure to a character st
 |**tm_yday**|Day of year (0-365; January 1 = 0)|
 |**tm_year**|Year (current year minus 1900)|
 
-The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions and the [_tzset](tzset.md) function for information about defining the time zone environment and global variables.
+The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions. For information about defining the time zone environment and global variables, see the [_tzset](tzset.md) function.
 
 The string result produced by **asctime** contains exactly 26 characters and has the form `Wed Jan  2 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The newline character and the null character occupy the last two positions of the string. **asctime** uses a single, statically allocated buffer to hold the return string. Each call to this function destroys the result of the previous call.
 
@@ -60,7 +60,7 @@ The string result produced by **asctime** contains exactly 26 characters and has
 
 These functions validate their parameters. If *timeptr* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **NULL** and sets **errno** to **EINVAL**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mapping
 
@@ -77,7 +77,7 @@ By default, this function's global state is scoped to the application. To change
 
 ## Example
 
-This program places the system time in the long integer **aclock**, translates it into the structure **newtime** and then converts it to string form for output, using the **asctime** function.
+This program places the system time in the long integer `aclock`, translates it into the structure `newtime` and then converts it to string form for output, using the **asctime** function.
 
 ```C
 // crt_asctime.c

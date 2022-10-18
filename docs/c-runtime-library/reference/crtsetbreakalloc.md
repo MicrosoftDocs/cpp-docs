@@ -33,7 +33,7 @@ Returns the previous object allocation order number that had a breakpoint set.
 
 ## Remarks
 
-**_CrtSetBreakAlloc** allows an application to perform memory leak detection by breaking at a specific point of memory allocation and tracing back to the origin of the request. The function uses the sequential object allocation order number assigned to the memory block when it was allocated in the heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to **_CrtSetBreakAlloc** are removed during preprocessing.
+**_CrtSetBreakAlloc** allows an application to perform memory leak detection by breaking at a specific point of memory allocation and tracing back to the origin of the request. The function uses the sequential object allocation order number assigned to the memory block when it was allocated in the heap. When [_DEBUG](../../c-runtime-library/debug.md) isn't defined, calls to **_CrtSetBreakAlloc** are removed during preprocessing.
 
 The object allocation order number is stored in the *lRequest* field of the **_CrtMemBlockHeader** structure, defined in Crtdbg.h. When information about a memory block is reported by one of the debug dump functions, this number is enclosed in braces, such as {36}.
 

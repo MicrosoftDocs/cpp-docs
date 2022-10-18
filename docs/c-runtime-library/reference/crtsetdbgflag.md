@@ -32,7 +32,13 @@ Returns the previous state of **`_crtDbgFlag`**.
 
 ## Remarks
 
-The **`_CrtSetDbgFlag`** function allows the application to control how the debug heap manager tracks memory allocations by modifying the bit fields of the **`_crtDbgFlag`** flag. By setting the bits (turning on), the application can instruct the debug heap manager to perform special debugging operations, including checking for memory leaks when the application exits and reporting if any are found, simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list, and verifying the integrity of the heap by inspecting each memory block at every allocation request. When [`_DEBUG`](../../c-runtime-library/debug.md) isn't defined, calls to **`_CrtSetDbgFlag`** are removed during preprocessing.
+The **`_CrtSetDbgFlag`** function allows the application to control how the debug heap manager tracks memory allocations by modifying the bit fields of the **`_crtDbgFlag`** flag. By setting the bit fields, the application can instruct the debug heap manager to perform special debugging operations. There are several possible operations:
+
+- Checking for memory leaks when the application exits and reporting if any are found,
+- Simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list,
+- Verifying the integrity of the heap by inspecting each memory block at every allocation request.
+
+When [`_DEBUG`](../../c-runtime-library/debug.md) isn't defined, calls to **`_CrtSetDbgFlag`** are removed during preprocessing.
 
 The following table lists the bit fields for **`_crtDbgFlag`** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits aren't set (turned off) by default. For more information about these bit fields, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details).
 

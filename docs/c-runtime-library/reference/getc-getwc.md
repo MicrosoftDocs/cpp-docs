@@ -32,9 +32,9 @@ Input stream.
 
 ## Return Value
 
-Returns the character read. To indicate a read error or end-of-file condition, **getc** returns **EOF**, and **getwc** returns **WEOF**. For **getc**, use **ferror** or **feof** to check for an error or for end of file. If *stream* is **NULL**, **getc** and **getwc** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** (or **WEOF** for **getwc**) and set **errno** to **EINVAL**.
+Returns the character read. To indicate a read error or end-of-file condition, **getc** returns **EOF**, and **getwc** returns **WEOF**. For **getc**, use **ferror** or **feof** to check for an error or for end of file. If *stream* is **NULL**, **getc** and **getwc** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** (or **WEOF** for **getwc**), and set **errno** to **EINVAL**.
 
-See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
+For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -49,7 +49,7 @@ Routine-specific remarks follow.
 |**getc**|Same as **fgetc**, but implemented as a function and as a macro.|
 |**getwc**|Wide-character version of **getc**. Reads a multibyte character or a wide character according to whether *stream* is opened in text mode or binary mode.|
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -64,7 +64,7 @@ By default, this function's global state is scoped to the application. To change
 |**getc**|\<stdio.h>|
 |**getwc**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

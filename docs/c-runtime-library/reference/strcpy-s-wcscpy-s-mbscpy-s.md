@@ -108,7 +108,7 @@ In C++, use of these functions is simplified by template overloads that can infe
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -124,7 +124,7 @@ By default, this function's global state is scoped to the application. To change
 |**`wcscpy_s`**|`<string.h>` or `<wchar.h>`|
 |**`_mbscpy_s`**|`<mbstring.h>`|
 
-These functions are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+These functions are Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

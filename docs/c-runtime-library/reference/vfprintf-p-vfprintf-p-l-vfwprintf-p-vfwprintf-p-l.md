@@ -90,7 +90,7 @@ If either *stream* or *format* is a null pointer, or if the format string contai
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

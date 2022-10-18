@@ -22,7 +22,7 @@ void _CrtDbgBreak( void );
 
 ## Return Value
 
-There is no return value.
+There's no return value.
 
 ## Remarks
 

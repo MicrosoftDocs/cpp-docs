@@ -112,7 +112,7 @@ There are versions of **sprintf_s** that offer additional control over what happ
 |**sprintf_s**, **_sprintf_s_l**|C: \<stdio.h><br /><br /> C++: \<cstdio> or \<stdio.h>|
 |**swprintf_s**, **_swprintf_s_l**|C: \<stdio.h> or \<wchar.h><br /><br /> C++: \<cstdio>, \<cwchar>, \<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example: Use sprintf_s to format data
 

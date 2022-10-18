@@ -16,7 +16,7 @@ A program communicates with the target environment by reading and writing files.
 
 - A stream of bytes received from or sent to a peripheral device.
 
-The last two items are interactive files. Files are typically the principal means by which to interact with a program. You manipulate all these kinds of files in much the same way — by calling library functions. You include the standard header STDIO.H to declare most of these functions.
+The last two items are interactive files. Files are typically the principal means by which to interact with a program. You manipulate all these kinds of files in much the same way: by calling library functions. You include the standard header STDIO.H to declare most of these functions.
 
 Before you can perform many of the operations on a file, the file must be opened. Opening a file associates it with a stream, a data structure within the Standard C Library that glosses over many differences among files of various kinds. The library maintains the state of each stream in an object of type FILE.
 
@@ -24,13 +24,13 @@ The target environment opens three files before program startup. You can open a 
 
 - Whether you intend to read data from the file or write data to it or both.
 
-- Whether you intend to generate new contents for the file (or create a file if it did not previously exist) or leave the existing contents in place.
+- Whether you intend to generate new contents for the file (or create a file if it didn't previously exist) or leave the existing contents in place.
 
 - Whether writes to a file can alter existing contents or should only append bytes at the end of the file.
 
 - Whether you want to manipulate a text stream or a binary stream.
 
-Once the file is successfully opened, you can then determine whether the stream is byte oriented (a byte stream) or wide oriented (a wide stream). A stream is initially unbound. Calling certain functions to operate on the stream makes it byte oriented, while certain other functions make it wide oriented. Once established, a stream maintains its orientation until it is closed by a call to [fclose](../c-runtime-library/reference/fclose-fcloseall.md) or [freopen](../c-runtime-library/reference/freopen-wfreopen.md).
+Once the file is successfully opened, you can then determine whether the stream is byte oriented (a byte stream) or wide oriented (a wide stream). A stream is initially unbound. Calling certain functions to operate on the stream makes it byte oriented, while certain other functions make it wide oriented. Once established, a stream maintains its orientation until it's closed by a call to [fclose](../c-runtime-library/reference/fclose-fcloseall.md) or [freopen](../c-runtime-library/reference/freopen-wfreopen.md).
 
 © 1989-2001 by P.J. Plauger and Jim Brodie. All rights reserved.
 

@@ -75,7 +75,7 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
 // and x64 processors with SSE2 support. Ignored on other x86 platforms.
 ```
 
-On ARM platforms, the **`_controlfp_s`** function applies to the FPSCR register. On x64 architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the **`EM_AMBIGUOUS`** flag in *`currentControl`*. This is a warning that the returned control word might not represent the state of both floating-point control words accurately.
+On ARM platforms, the **`_controlfp_s`** function applies to the FPSCR register. On x64 architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the **`EM_AMBIGUOUS`** flag in *`currentControl`*. It's a warning that the returned control word might not represent the state of both floating-point control words accurately.
 
 On the ARM and x64 architectures, changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
@@ -83,7 +83,7 @@ If the mask isn't set correctly, this function generates an invalid parameter ex
 
 This function is ignored when you use [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Mask constants and values
 

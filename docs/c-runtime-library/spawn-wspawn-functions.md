@@ -32,9 +32,9 @@ The letters at the end of the function name determine the variation.
 |Letter|Variant|
 |-|-|
 | `e`  | `envp`, array of pointers to environment settings, is passed to new process.  |
-| `l`  | Command-line arguments are passed individually to `_spawn` function. This suffix is typically used when a number of parameters to a new process are known in advance.  |
+| `l`  | Command-line arguments are passed individually to `_spawn` function. This suffix is typically used when some parameters to a new process are known in advance.  |
 | `p`  | `PATH` environment variable is used to find the file to execute.  |
-| `v`  | `argv`, array of pointers to command-line arguments, is passed to `_spawn` function. This suffix is typically used when a number of parameters to a new process are variable.  |
+| `v`  | `argv`, array of pointers to command-line arguments, is passed to `_spawn` function. This suffix is typically used when several parameters to a new process are variable.  |
 
 ## Remarks
 
@@ -91,7 +91,7 @@ The `_spawnv`, `_spawnve`, `_spawnvp`, and `_spawnvpe` calls are useful when the
 
 ## Environment of the Spawned Process
 
-Files that are open when a `_spawn` call is made remain open in the new process. In the `_spawnl`, `_spawnlp`, `_spawnv`, and `_spawnvp` calls, the new process inherits the environment of the calling process. You can use the `_spawnle`, `_spawnlpe`, `_spawnve`, and `_spawnvpe` calls to alter the environment for the new process by passing a list of environment settings through the `envp` argument. The argument `envp` is an array of character pointers, each element (except the final element) of which points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME`=`value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (Note that `value` isn't enclosed in double quotation marks.) The final element of the `envp` array should be **`NULL`**. When `envp` itself is **`NULL`**, the spawned process inherits the environment settings of the parent process.
+Files that are open when a `_spawn` call is made remain open in the new process. In the `_spawnl`, `_spawnlp`, `_spawnv`, and `_spawnvp` calls, the new process inherits the environment of the calling process. You can use the `_spawnle`, `_spawnlpe`, `_spawnve`, and `_spawnvpe` calls to alter the environment for the new process by passing a list of environment settings through the `envp` argument. The argument `envp` is an array of character pointers, each element (except the final element) of which points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME`=`value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (The `value` isn't enclosed in double quotation marks.) The final element of the `envp` array should be **`NULL`**. When `envp` itself is **`NULL`**, the spawned process inherits the environment settings of the parent process.
 
 The `_spawn` functions can pass all information about open files, including the translation mode, to the new process. This information is passed in real mode through the `C_FILE_INFO` entry in the environment. The startup code normally processes this entry and then deletes it from the environment. However, if a `_spawn` function spawns a non-C process, this entry remains in the environment. Printing the environment shows graphics characters in the definition string for this entry because the environment information is passed in binary form in real mode. It shouldn't have any other effect on normal operations. In protected mode, the environment information is passed in text form and therefore contains no graphics characters.
 
@@ -105,7 +105,7 @@ If you're calling `_spawn` from a DLL or a GUI application and want to redirect 
 
 - Use the Win32 API to create a pipe, then call [`AllocConsole`](/windows/console/allocconsole), set the handle values in the startup structure, and call [`CreateProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw).
 
-- Call [`_popen`, `_wpopen`](../c-runtime-library/reference/popen-wpopen.md) which will create a pipe and invoke the app using **`cmd.exe /c`** (or **`command.exe /c`**).
+- Call [`_popen` or `_wpopen`](../c-runtime-library/reference/popen-wpopen.md), which will create a pipe and invoke the app using **`cmd.exe /c`** (or **`command.exe /c`**).
 
 ## Example
 

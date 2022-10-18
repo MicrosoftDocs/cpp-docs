@@ -50,17 +50,17 @@ long double _copysignl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The floating-point value that's returned as the magnitude of the result.
 
-*y*\
+*`y`*\
 The floating-point value that's returned as the sign of the result.
 
 [Floating-Point Support Routines](../../c-runtime-library/floating-point-support.md)
 
 ## Return Value
 
-The **copysign** functions return a floating-point value that combines the magnitude of *x* and the sign of *y*. There's no error return.
+The **copysign** functions return a floating-point value that combines the magnitude of *`x`* and the sign of *`y`*. There's no error return.
 
 ## Remarks
 

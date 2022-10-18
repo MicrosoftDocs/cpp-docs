@@ -34,7 +34,7 @@ String message to print.
 
 The **perror** function prints an error message to **stderr**. **_wperror** is a wide-character version of **_perror**; the *message* argument to **_wperror** is a wide-character string. **_wperror** and **_perror** behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -57,7 +57,7 @@ In the Windows operating system, some **errno** values listed in ERRNO.H are unu
 |**perror**|\<stdio.h> or \<stdlib.h>|
 |**_wperror**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

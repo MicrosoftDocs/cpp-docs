@@ -7,9 +7,9 @@ ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
 ---
 # Routine Mappings
 
-The generic-text routine mappings are defined in TCHAR.H. `_tccpy` and `_tclen` map to functions in the MBCS model; they are mapped to macros or inline functions in the SBCS and Unicode models for completeness. For information on a generic text routine, see the help topic about the corresponding `SBCS`-, `_MBCS`-, or `_UNICODE`-related routine.
+The generic-text routine mappings are defined in TCHAR.H. `_tccpy` and `_tclen` map to functions in the MBCS model; they're mapped to macros or inline functions in the SBCS and Unicode models for completeness. For information on a generic text routine, see the help article about the corresponding `SBCS`-, `_MBCS`-, or `_UNICODE`-related routine.
 
-More specific information about individual routines listed in the left column in the following table is not available in this documentation. However, you can easily look up the information on a corresponding `SBCS`-, `_MBCS`-, or `_UNICODE`-related routine. Use the **Search** command on the **Help** menu to look up any generic-text routine listed below.
+More specific information about individual routines listed in the left column in the following table isn't available in this documentation. However, you can easily look up the information on a corresponding `SBCS`-, `_MBCS`-, or `_UNICODE`-related routine. Use the **Search** command on the **Help** menu to look up any generic-text routine listed below.
 
 For related information, see [Generic-Text Mappings in TCHAR.H](../text/generic-text-mappings-in-tchar-h.md).
 

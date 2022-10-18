@@ -10,7 +10,7 @@ ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
 
 For compatibility between product versions, the library OLDNAMES.LIB maps old names to new names. For instance, `open` maps to `_open`. You must explicitly link with OLDNAMES.LIB only when you compile with the following combinations of command-line options:
 
-- `/Zl` (omit default library name from object file) and `/Ze` (the default — use Microsoft extensions)
+- `/Zl` (omit default library name from object file) and `/Ze` (the default: use Microsoft extensions)
 
 - `/link` (linker-control), `/NOD` (no default-library search), and `/Ze`
 

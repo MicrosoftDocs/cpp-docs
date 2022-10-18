@@ -60,7 +60,7 @@ If you use the `<tgmath.h>` `nextafter()` or `nexttoward()`macro, the type of th
 
 The **_nextafter** and **_nextafterf** functions are Microsoft-specific. The **_nextafterf** function is only available when compiling for x64.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

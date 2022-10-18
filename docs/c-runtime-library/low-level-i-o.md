@@ -6,7 +6,7 @@ helpviewer_keywords: ["I/O [CRT], low-level", "I/O [CRT], functions", "low-level
 ---
 # Low-Level I/O
 
-These functions invoke the operating system directly for lower-level operation than that provided by stream I/O. Low-level input and output calls do not buffer or format data.
+These functions invoke the operating system directly for lower-level operation than that provided by stream I/O. Low-level input and output calls don't buffer or format data.
 
 Low-level routines can access the standard streams opened at program startup using the following predefined file descriptors.
 

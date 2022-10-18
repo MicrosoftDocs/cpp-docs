@@ -11,7 +11,7 @@ ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
 
 **Microsoft Specific**
 
-To simplify code development for various international markets, the Microsoft run-time library provides Microsoft-specific "generic-text" mappings for many data types, routines, and other objects. These mappings are defined in TCHAR.H. You can use these name mappings to write generic code that can be compiled for any of the three kinds of character sets: ASCII (SBCS), MBCS, or Unicode, depending on a manifest constant you define using a `#define` statement. Generic-text mappings are Microsoft extensions that are not ANSI compatible.
+To simplify code development for various international markets, the Microsoft run-time library provides Microsoft-specific "generic-text" mappings for many data types, routines, and other objects. These mappings are defined in TCHAR.H. You can use these name mappings to write generic code that can be compiled for any of the three kinds of character sets: ASCII (SBCS), MBCS, or Unicode, depending on a manifest constant you define using a `#define` statement. Generic-text mappings are Microsoft extensions that aren't ANSI compatible.
 
 ### Preprocessor Directives for Generic-Text Mappings
 
@@ -19,7 +19,7 @@ To simplify code development for various international markets, the Microsoft ru
 |--------------|----------------------|-------------|
 |`_UNICODE`|Unicode (wide-character)|`_tcsrev` maps to `_wcsrev`|
 |`_MBCS`|Multibyte-character|`_tcsrev` maps to `_mbsrev`|
-|None (the default: neither `_UNICODE` nor `_MBCS` defined)|SBCS (ASCII)|`_tcsrev` maps to `strrev`|
+|None (the default: both `_UNICODE` and `_MBCS` not defined)|SBCS (ASCII)|`_tcsrev` maps to `strrev`|
 
 For example, the generic-text function `_tcsrev`, defined in TCHAR.H, maps to `mbsrev` if `MBCS` has been defined in your program, or to `_wcsrev` if `_UNICODE` has been defined. Otherwise `_tcsrev` maps to `strrev`.
 
@@ -59,14 +59,14 @@ wchar_t *RetVal, *szString;
 RetVal = _wcsrev(szString);
 ```
 
-If neither `_MBCS` nor `_UNICODE` has been defined, the preprocessor maps the fragment to single-byte ASCII code, as follows:
+If both `_MBCS` and `_UNICODE` haven't been defined, the preprocessor maps the fragment to single-byte ASCII code, as follows:
 
 ```
 char *RetVal, *szString;
 RetVal = strrev(szString);
 ```
 
-Thus you can write, maintain, and compile a single source code file to run with routines that are specific to any of the three kinds of character sets.
+These macros let you write, maintain, and compile a single source code file using routines specific to all three kinds of character sets.
 
 **END Microsoft Specific**
 

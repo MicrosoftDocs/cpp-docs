@@ -61,7 +61,7 @@ The `pow(int, int)` overload is no longer available. If you use this overload, t
 
 Originally, the `pow(T, int)` overloads would unroll the `pow` call into a sequence of inline multiplication operations. While this was faster, it was also significantly less accurate and was removed in Visual Studio 2015 Update 1. For more information, see [Conformance Improvements in Visual Studio 2015 Update 1](../../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 |**`pow`**, **`powf`**, **`powl`**|`<math.h>`|`<math.h>` or `<cmath>`|
 |**`pow`** macro | `<tgmath.h>` ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

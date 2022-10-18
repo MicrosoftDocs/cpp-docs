@@ -80,7 +80,7 @@ Each *argument* (if any) is converted according to the corresponding format spec
 |**_vscprintf**, **_vscprintf_l**|\<stdio.h>|
 |**_vscwprintf**, **_vscwprintf_l**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -60,7 +60,7 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 
 Each function converts the input string *strSource* to a **`float`**. The **strtof** function converts *strSource* to a single-precision value. **strtof** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character. **wcstof** is a wide-character version of **strtof**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -88,7 +88,7 @@ The UCRT versions of these functions do not support conversion of Fortran-style 
 |**strtof**, **_strtof_l**|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
 |**wcstof**, **_wcstof_l**|C: \<stdlib.h> or \<wchar.h> C++: \<cstdlib>, \<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

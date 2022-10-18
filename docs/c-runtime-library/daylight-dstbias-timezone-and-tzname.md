@@ -17,7 +17,7 @@ ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
 |`_timezone`|[_get_timezone](../c-runtime-library/reference/get-timezone.md)|
 |`_tzname`|[_get_tzname](../c-runtime-library/reference/get-tzname.md)|
 
-They are declared in Time.h as follows.
+They're declared in Time.h as follows.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ extern char *_tzname[2];
 
 ## Remarks
 
-On a call to `_ftime`, `localtime`, or `_tzset`, the values of `_daylight`, `_dstbias`, `_timezone`, and `_tzname` are determined from the value of the `TZ` environment variable. If you do not explicitly set the value of `TZ`, `_tzname[0]` and `_tzname[1]` contain the default settings of "PST" and "PDT" respectively.  The time-manipulation functions ([_tzset](../c-runtime-library/reference/tzset.md), [_ftime](../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime](../c-runtime-library/reference/localtime-localtime32-localtime64.md)) attempt to set the values of `_daylight`, `_dstbias` and `_timezone` by querying the operating system for the default value of each variable. The time-zone global variable values are shown in the following table.
+On a call to `_ftime`, `localtime`, or `_tzset`, the values of `_daylight`, `_dstbias`, `_timezone`, and `_tzname` are determined from the value of the `TZ` environment variable. If you don't explicitly set the value of `TZ`, `_tzname[0]` and `_tzname[1]` contain the default settings of "PST" and "PDT" respectively.  The time-manipulation functions ([_tzset](../c-runtime-library/reference/tzset.md), [_ftime](../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime](../c-runtime-library/reference/localtime-localtime32-localtime64.md)) attempt to set the values of `_daylight`, `_dstbias` and `_timezone` by querying the operating system for the default value of each variable. The time-zone global variable values are shown in the following table.
 
 |Variable|Value|
 |--------------|-----------|

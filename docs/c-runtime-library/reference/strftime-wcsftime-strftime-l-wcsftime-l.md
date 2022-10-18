@@ -76,7 +76,7 @@ The **`strftime`** and **`wcsftime`** functions format the **`tm`** time value i
 
 This function validates its parameters. If *`strDest`*, *`format`*, or *`timeptr`* is a null pointer, or if the **`tm`** data structure addressed by *`timeptr`* is invalid (for example, if it contains out of range values for the time or date), or if the *`format`* string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **`errno`** to **`EINVAL`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -151,7 +151,7 @@ The ISO 8601 week and week-based year produced by **`%V`**, **`%g`**, and **`%G`
 |**`_strftime_l`**|`<time.h>`|
 |**`_wcsftime_l`**|`<time.h>` or `<wchar.h>`|
 
-The **`_strftime_l`** and **`_wcsftime_l`** functions are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **`_strftime_l`** and **`_wcsftime_l`** functions are Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
