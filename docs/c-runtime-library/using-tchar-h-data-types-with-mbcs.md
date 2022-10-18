@@ -10,7 +10,7 @@ ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
 
 **Microsoft Specific**
 
-As the table of generic-text routine mappings indicates (see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)), when the manifest constant **_MBCS** is defined, a given generic-text routine maps to one of the following kinds of routines:
+As the table of generic-text routine mappings indicates (see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)), when the manifest constant **_MBCS** is defined, a given generic-text routine will map to one of the following kinds of routines:
 
 - An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type `char*`. For example, **_tprintf** maps to **printf**; the string arguments to **printf** are of type `char*`. If you use the **_TCHAR** generic-text data type for your string types, the formal and actual parameter types for **printf** match because `_TCHAR*` maps to `char*`.
 
@@ -24,7 +24,7 @@ Following are three solutions for preventing this type conflict (and the C compi
    char *_tcsrev(char *);
    ```
 
-   In the default case, the prototype for **_tcsrev** maps to **_mbsrev** through a thunk in LIBC.LIB. This changes the types of the **_mbsrev** incoming parameters and outgoing return value from `_TCHAR*` (such as `char*`) to `unsigned char*`. This method ensures type matching when you're using **_TCHAR**, but it's relatively slow because of the function call overhead.
+   In the default case, the prototype for **_tcsrev** maps to **_mbsrev** through a thunk in LIBC.LIB. This thunk changes the types of the **_mbsrev** incoming parameters and outgoing return value from `_TCHAR*` (such as `char*`) to `unsigned char*`. This method ensures type matching when you're using **_TCHAR**, but it's relatively slow because of the function call overhead.
 
 - Use function inlining by incorporating the following preprocessor statement in your code.
 
@@ -32,14 +32,14 @@ Following are three solutions for preventing this type conflict (and the C compi
    #define _USE_INLINING
    ```
 
-   This method causes an inline function thunk, provided in TCHAR.H, to map the generic-text routine directly to the appropriate MBCS routine. The following code excerpt from TCHAR.H provides an example of how this is done.
+   This method causes an inline function thunk, provided in TCHAR.H, to map the generic-text routine directly to the appropriate MBCS routine. The following code excerpt from TCHAR.H provides an example of how it's done.
 
    ```C
    __inline char *_tcsrev(char *_s1)
    {return (char *)_mbsrev((unsigned char *)_s1);}
    ```
 
-   If you can use inlining, this is the best solution, because it guarantees type matching and has no additional time cost.
+   If you can use inlining, it's the best solution, because it guarantees type matching and has no extra time cost.
 
 - Use "direct mapping" by incorporating the following preprocessor statement in your code.
 

@@ -11,7 +11,7 @@ ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
 ---
 # vprintf Functions
 
-Each of the `vprintf` functions takes a pointer to an argument list, then formats and writes the given data to a particular destination. The functions differ in the parameter validation performed, whether the functions take wide or single-byte character strings, the output destination, and the support for specifying the order in which parameters are used in the format string.
+Each of the `vprintf` functions takes a pointer to an argument list, then formats and writes the given data to a particular destination. The functions differ in several ways: in the parameter validation, whether the functions take single-byte or wide character strings, the output destination, and the support for specifying the order parameters are used in the format string.
 
 [_vcprintf, _vcwprintf](../c-runtime-library/reference/vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md)\
 [vfprintf, vfwprintf](../c-runtime-library/reference/vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)\
@@ -59,15 +59,15 @@ These functions format data for output to destinations as follows.
 |`_vsnprintf`|[_snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|memory pointed to by *buffer*|Check for null.|no|
 |`_vsnwprintf`|[_snwprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|memory pointed to by *buffer*|Check for null.|no|
 
-The `argptr` argument has type `va_list`, which is defined in VARARGS.H and STDARG.H. The `argptr` variable must be initialized by **va_start,** and may be reinitialized by subsequent `va_arg` calls; `argptr` then points to the beginning of a list of arguments that are converted and transmitted for output according to the corresponding specifications in the *format* argument. *format* has the same form and function as the *format* argument for [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). None of these functions invokes `va_end`. For a more complete description of each `vprintf` function, see the description of its counterpart function as listed in the preceding table.
+The `argptr` argument has type `va_list`, which is defined in VARARGS.H and STDARG.H. The `argptr` variable must be initialized by **va_start,** and may be reinitialized by subsequent `va_arg` calls; `argptr` then points to the beginning of a list of arguments that are converted and transmitted for output according to the corresponding specifications in the *format* argument. *format* has the same form and function as the *format* argument for [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). None of these functions invoke `va_end`. For a more complete description of each `vprintf` function, see the description of its counterpart function as listed in the preceding table.
 
 `_vsnprintf` differs from **vsprintf** in that it writes no more than *count* bytes to *buffer*.
 
 The versions of these functions with the **w** infix in the name are wide-character versions of the corresponding functions without the **w** infix; in each of these wide-character functions, *buffer* and *format* are wide-character strings. Otherwise, each wide-character function behaves identically to its SBCS counterpart function.
 
-The versions of these functions with **_s** and **_p** suffixes are the more secure versions. These versions validate the format strings and will generate an exception if the format string is not well formed (for example, if invalid formatting characters are used).
+The versions of these functions with **_s** and **_p** suffixes are the more secure versions. These versions validate the format strings. They'll generate an exception if the format string isn't well formed (for example, if invalid formatting characters are used).
 
-The versions of these functions with the **_p** suffix provide the ability to specify the order in which the supplied arguments are substituted in the format string. For more information, see [printf_p Positional Parameters](../c-runtime-library/printf-p-positional-parameters.md).
+The versions of these functions with the **_p** suffix let you specify the order in which the supplied arguments are substituted in the format string. For more information, see [printf_p Positional Parameters](../c-runtime-library/printf-p-positional-parameters.md).
 
 For **vsprintf**, `vswprintf`, `_vsnprintf` and `_vsnwprintf`, if copying occurs between strings that overlap, the behavior is undefined.
 
