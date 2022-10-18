@@ -36,7 +36,7 @@ If **%n** is not supported (the default), encountering **%n** in the format stri
 |-------------|---------------------|
 |**_get_printf_count_output**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

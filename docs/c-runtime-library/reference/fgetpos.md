@@ -39,7 +39,7 @@ If successful, **fgetpos** returns 0. On failure, it returns a nonzero value and
 
 The **fgetpos** function gets the current value of the *stream* argument's file-position indicator and stores it in the object pointed to by *pos*. The **fsetpos** function can later use information stored in *pos* to reset the *stream* argument's pointer to its position at the time **fgetpos** was called. The *pos* value is stored in an internal format and is intended for use only by **fgetpos** and **fsetpos**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**fgetpos**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

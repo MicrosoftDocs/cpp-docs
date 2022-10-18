@@ -90,7 +90,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 |**`fprintf`**, **`_fprintf_l`**|`<stdio.h>`|
 |**`fwprintf`**, **`_fwprintf_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

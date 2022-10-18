@@ -96,7 +96,7 @@ When two copies of the environment (MBCS and Unicode) exist simultaneously in a 
 
 In C++, use of these functions is simplified by template overloads; the overloads can infer buffer length automatically and thereby eliminate the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -113,7 +113,7 @@ To check or change the value of the **`TZ`** environment variable, use **`getenv
 |**`getenv_s`**|`<stdlib.h>`|
 |**`_wgetenv_s`**|`<stdlib.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

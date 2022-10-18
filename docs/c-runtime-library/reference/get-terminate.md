@@ -26,7 +26,7 @@ Returns a pointer to the function registered by [set_terminate](set-terminate-cr
 
 ## Remarks
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -34,7 +34,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_get_terminate**|\<eh.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

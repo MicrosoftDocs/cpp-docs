@@ -54,7 +54,7 @@ You must explicitly flush, by using [`fflush`](fflush.md) or [`_flushall`](flush
 
 **`_wsystem`** is a wide-character version of **`system`**; the *`command`* argument to **`_wsystem`** is a wide-character string. These functions behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -69,7 +69,7 @@ By default, this function's global state is scoped to the application. To change
 |**`system`**|`<process.h>` or `<stdlib.h>`|
 |**`_wsystem`**|`<process.h>` or `<stdlib.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

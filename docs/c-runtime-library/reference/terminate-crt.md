@@ -32,7 +32,7 @@ The **terminate** function is used with C++ exception handling and is called in 
 
 **terminate** calls [abort](abort.md) by default. You can change this default by writing your own termination function and calling **set_terminate** with the name of your function as its argument. **terminate** calls the last function given as an argument to **set_terminate**. For more information, see [Unhandled C++ Exceptions](../../cpp/unhandled-cpp-exceptions.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -40,7 +40,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**terminate**|\<eh.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

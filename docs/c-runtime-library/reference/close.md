@@ -39,7 +39,7 @@ The file descriptor and the underlying OS file handle are closed. Thus, it is no
 
 This function validates its parameters. If *fd* is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions returns -1 and **errno** is set to **EBADF**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

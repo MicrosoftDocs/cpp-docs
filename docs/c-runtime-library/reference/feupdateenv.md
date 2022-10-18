@@ -42,7 +42,7 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**feupdateenv**|\<fenv.h>|\<cfenv>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

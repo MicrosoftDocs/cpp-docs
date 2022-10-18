@@ -47,7 +47,7 @@ If the file cannot be opened, **tmpfile_s** writes **NULL** to the *pFilePtr* pa
 
 Failure can occur if you attempt more than **TMP_MAX_S** (see STDIO.H) calls with **tmpfile_s**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**tmpfile_s**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

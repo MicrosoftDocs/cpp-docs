@@ -66,7 +66,7 @@ For more information, see [Format Specification Fields: scanf and wscanf Functio
 |**vfscanf**|\<stdio.h>|
 |**vfwscanf**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

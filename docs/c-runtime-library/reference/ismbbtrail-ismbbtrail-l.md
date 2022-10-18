@@ -42,7 +42,7 @@ The locale to use.
 
 **_ismbbtrail** uses the current locale for locale-dependent behavior. **_ismbbtrail_l** is identical except that it uses the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

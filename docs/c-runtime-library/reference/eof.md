@@ -35,7 +35,7 @@ File descriptor referring to the open file.
 
 The **_eof** function determines whether the end of the file associated with *fd* has been reached.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

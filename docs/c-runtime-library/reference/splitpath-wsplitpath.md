@@ -56,7 +56,7 @@ The **`_splitpath`** function breaks a path into its four components. **`_splitp
 
 **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns). More secure versions of these functions are available; see [`_splitpath_s`, `_wsplitpath_s`](splitpath-s-wsplitpath-s.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -90,7 +90,7 @@ If *`path`* is **`NULL`**, the invalid parameter handler is invoked, as describe
 |**`_splitpath`**|`<stdlib.h>`|
 |**`_wsplitpath`**|`<stdlib.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

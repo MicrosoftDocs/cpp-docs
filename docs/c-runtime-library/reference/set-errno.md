@@ -33,7 +33,7 @@ Returns zero if successful.
 
 Possible values are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Example
 

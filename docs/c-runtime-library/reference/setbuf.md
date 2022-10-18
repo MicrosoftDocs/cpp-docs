@@ -37,7 +37,7 @@ The **setbuf** function controls buffering for *stream*. The *stream* argument m
 
 **setbuf** has been replaced by [setvbuf](setvbuf.md), which is the preferred routine for new code. Unlike **setvbuf**, **setbuf** has no way of reporting errors. **setvbuf** also lets you control both the buffering mode and the buffer size. **setbuf** exists for compatibility with existing code.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -45,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**setbuf**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

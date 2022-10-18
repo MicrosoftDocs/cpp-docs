@@ -60,7 +60,7 @@ Note that **`gmtime`** and **`localtime`** (and **`_gmtime32`**, **`_gmtime64`**
 
 These functions validate their parameter. If *`timeptr`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_mktime32`**|`<time.h>`|
 |**`_mktime64`**|`<time.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

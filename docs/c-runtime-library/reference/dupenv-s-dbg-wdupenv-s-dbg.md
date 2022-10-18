@@ -82,7 +82,7 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 |**_dupenv_s_dbg**|\<crtdbg.h>|
 |**_wdupenv_s_dbg**|\<crtdbg.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

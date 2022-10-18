@@ -73,7 +73,7 @@ If you use the \<tgmath.h> `tgamma()` macro, the type of the argument determines
 
 If x is a natural number, this function returns the factorial of (x-1).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -82,7 +82,7 @@ By default, this function's global state is scoped to the application. To change
 |**tgamma**, **tgammaf**,  **tgammal**|\<math.h>|\<cmath>|
 |**tgamma** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

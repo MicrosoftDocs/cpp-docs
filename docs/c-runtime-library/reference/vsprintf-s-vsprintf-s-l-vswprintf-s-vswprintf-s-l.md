@@ -110,7 +110,7 @@ In C++, using these functions is simplified by template overloads. The overloads
 
 \* Required for UNIX V compatibility.
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -66,7 +66,7 @@ For more information about locale settings, see [setlocale, _wsetlocale](setloca
 
 The previous name of this function, **__create_locale** (with two leading underscores), has been deprecated.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -75,7 +75,7 @@ By default, this function's global state is scoped to the application. To change
 |**_create_locale**|\<locale.h>|
 |**_wcreate_locale**|\<locale.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -65,7 +65,7 @@ void last_fn() {}
 
 Do not use **`DLL_PROCESS_ATTACH`** to call **`exit`** from **`DllMain`**. To exit the **`DLLMain`** function, return **`FALSE`** from **`DLL_PROCESS_ATTACH`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -73,7 +73,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`exit`**, **`_Exit`**, **`_exit`**|`<process.h>` or `<stdlib.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

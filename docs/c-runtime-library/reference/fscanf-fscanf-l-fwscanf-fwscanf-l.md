@@ -84,7 +84,7 @@ For more information, see [Format Specification Fields - `scanf` functions and `
 |**`fscanf`**, **`_fscanf_l`**|`<stdio.h>`|
 |**`fwscanf`**, **`_fwscanf_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

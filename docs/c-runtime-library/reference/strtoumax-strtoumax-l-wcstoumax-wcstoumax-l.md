@@ -93,7 +93,7 @@ A *whitespace* may consist of space and tab characters, which are ignored. *digi
 |**_strtoumax_l**|\<stdlib.h>|
 |**_wcstoumax_l**|\<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

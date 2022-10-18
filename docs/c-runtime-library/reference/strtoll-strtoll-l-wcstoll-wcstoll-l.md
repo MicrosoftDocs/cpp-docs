@@ -69,7 +69,7 @@ For more information about return codes, see [errno, _doserrno, _sys_errlist, an
 
 The **strtoll** function converts *strSource* to a **`long long`**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to *base*. **wcstoll** is a wide-character version of **strtoll**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -95,7 +95,7 @@ A *whitespace* may consist of space and tab characters, which are ignored; *digi
 |**strtoll**, **_strtoll_l**|\<stdlib.h>|
 |**wcstoll**, **_wcstoll_l**|\<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

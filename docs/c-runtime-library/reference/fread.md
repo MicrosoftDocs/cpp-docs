@@ -53,7 +53,7 @@ When used on a text mode stream, if the amount of data requested (that is, *`siz
 
 This function locks out other threads. If you need a non-locking version, use **`_fread_nolock`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`fread`**|`<stdio.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

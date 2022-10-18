@@ -46,7 +46,7 @@ The versions with the **_nolock** suffix are identical except that they are not 
 
 For more information about processing wide characters and multibyte characters in text and binary modes, see [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 |**fgetc**|\<stdio.h>|
 |**fgetwc**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
