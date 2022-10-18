@@ -35,7 +35,7 @@ The debug versions of some security-enhanced CRT functions fill the buffer passe
 
 The default threshold is **SIZE_T_MAX**.
 
-Here is a list of the affected functions.
+Here's a list of the affected functions:
 
 - [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)
 

@@ -38,21 +38,21 @@ On successful completion, **`_CrtSetReportMode`** returns the previous report mo
 
 **`_CrtSetReportMode`** specifies the output destination for **`_CrtDbgReport`**. Because the macros [`_ASSERT`](assert-asserte-assert-expr-macros.md), [`_ASSERTE`](assert-asserte-assert-expr-macros.md), [`_RPT`](rpt-rptf-rptw-rptfw-macros.md), and [`_RPTF`](rpt-rptf-rptw-rptfw-macros.md) call **`_CrtDbgReport`**, **`_CrtSetReportMode`** specifies the output destination of text specified with those macros.
 
-When [`_DEBUG`](../../c-runtime-library/debug.md) is not defined, calls to **`_CrtSetReportMode`** are removed during preprocessing.
+When [`_DEBUG`](../../c-runtime-library/debug.md) isn't defined, calls to **`_CrtSetReportMode`** are removed during preprocessing.
 
-If you do not call **`_CrtSetReportMode`** to define the output destination of messages, then the following defaults are in effect:
+If you don't call **`_CrtSetReportMode`** to define the output destination of messages, then the following defaults are in effect:
 
 - Assertion failures and errors are directed to a debug message window.
 
 - Warnings from Windows applications are sent to the debugger's output window.
 
-- Warnings from console applications are not displayed.
+- Warnings from console applications aren't displayed.
 
 The following table lists the report types defined in `Crtdbg.h`.
 
 |Report type|Description|
 |-----------------|-----------------|
-|**`_CRT_WARN`**|Warnings, messages, and information that does not need immediate attention.|
+|**`_CRT_WARN`**|Warnings, messages, and information that doesn't need immediate attention.|
 |**`_CRT_ERROR`**|Errors, unrecoverable problems, and issues that require immediate attention.|
 |**`_CRT_ASSERT`**|Assertion failures (asserted expressions that evaluate to **`FALSE`**).|
 
@@ -65,14 +65,14 @@ The **`_CrtSetReportMode`** function assigns the new report mode specified in *`
 |**`_CRTDBG_MODE_WNDW`**|Creates a message box to display the message along with the [`abort`](abort.md), **`Retry`**, and **Ignore** buttons.|
 |**`_CRTDBG_REPORT_MODE`**|Returns *`reportMode`* for the specified *`reportType`*:<br /><br /> 1   **`_CRTDBG_MODE_FILE`**<br /><br /> 2   **`_CRTDBG_MODE_DEBUG`**<br /><br /> 4   **`_CRTDBG_MODE_WNDW`**|
 
-Each report type can be reported using one, two, or three modes or no mode at all. Therefore, it is possible to have more than one destination defined for a single report type. For example, the following code fragment causes assertion failures to be sent to both a debug message window and to **`stderr`**:
+Each report type can be reported using one, two, or three modes or no mode at all. Therefore, it's possible to have more than one destination defined for a single report type. For example, the following code fragment causes assertion failures to be sent to both a debug message window and to **`stderr`**:
 
 ```C
 _CrtSetReportMode( _CRT_ASSERT, _CRTDBG_MODE_FILE | _CRTDBG_MODE_WNDW );
 _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDERR );
 ```
 
-In addition, the reporting mode or modes for each report type can be separately controlled. For example, it is possible to specify that a *`reportType`* of **`_CRT_WARN`** be sent to an output debug string, while **`_CRT_ASSERT`** be displayed using a debug message window and sent to **`stderr`**, as previously illustrated.
+In addition, you can control the reporting mode or modes for each report type separately. For example, it's possible to specify that a *`reportType`* of **`_CRT_WARN`** goes to an output debug string, while **`_CRT_ASSERT`** is displayed using a debug message window and is sent to **`stderr`**, as previously illustrated.
 
 ## Requirements
 

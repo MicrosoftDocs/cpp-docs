@@ -12,7 +12,7 @@ ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
 ---
 # ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 
-Convert a time value to a string and adjust for local time zone settings. These are versions of [ctime, _ctime64, _wctime, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Convert a time value to a string and adjust for local time zone settings. These functions are versions of [ctime, _ctime64, _wctime, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -93,7 +93,7 @@ Pointer to stored time.
 
 ## Return Value
 
-Zero if successful. If there is a failure due to an invalid parameter, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in ERRNO.H; for a listing of these errors, see [errno](../../c-runtime-library/errno-constants.md). The actual error codes thrown for each error condition are shown in the following table.
+Zero if successful. If there's a failure due to an invalid parameter, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in ERRNO.H; for a listing of these errors, see [errno](../../c-runtime-library/errno-constants.md). The actual error codes thrown for each error condition are shown in the following table.
 
 ## Error Conditions
 
@@ -107,17 +107,17 @@ Zero if successful. If there is a failure due to an invalid parameter, the inval
 
 ## Remarks
 
-The **ctime_s** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) structure into a character string. The *sourceTime* value is usually obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **ctime_s** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) structure into a character string. The *sourceTime* value is typically obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
 `Wed Jan 02 02:03:55 1980\n\0`
 
 A 24-hour clock is used. All fields have a constant width. The new line character ('\n') and the null character ('\0') occupy the last two positions of the string.
 
-The converted character string is also adjusted according to the local time zone settings. See the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime32_s](localtime-s-localtime32-s-localtime64-s.md) functions for information about configuring the local time and the [_tzset](tzset.md) function for information about defining the time zone environment and global variables.
+The converted character string is also adjusted according to the local time zone settings. For information on configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions. For details about defining the time zone environment and global variables, see the [_tzset](tzset.md) function.
 
 **_wctime32_s** and **_wctime64_s** are the wide-character version of **_ctime32_s** and **_ctime64_s**; returning a pointer to wide-character string. Otherwise, **_ctime64_s**, **_wctime32_s**, and **_wctime64_s** behave identically to **_ctime32_s**.
 
-**ctime_s** is an inline function that evaluates to **_ctime64_s** and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. Doing this will cause **ctime_s** to evaluate to **_ctime32_s**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
+**ctime_s** is an inline function that evaluates to **_ctime64_s** and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. This macro causes **ctime_s** to evaluate to **_ctime32_s**. We don't recommend it, because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

@@ -12,7 +12,7 @@ ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
 ---
 # _ecvt_s
 
-Converts a **`double`** number to a string. This is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a **`double`** number to a string. This function is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -57,9 +57,9 @@ Sign of the converted number.
 
 ## Return Value
 
-Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful. The return value is an error code if there's a failure. Error codes are defined in Errno.h. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-In the case of an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+If there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL**, and returns **EINVAL**.
 
 ### Error Conditions
 
@@ -72,7 +72,7 @@ In the case of an invalid parameter, as listed in the following table, this func
 
 ## Security Issues
 
-**_ecvt_s** might generate an access violation if *buffer* does not point to valid memory and is not **NULL**.
+**_ecvt_s** might generate an access violation if *buffer* doesn't point to valid memory and isn't **NULL**.
 
 ## Remarks
 

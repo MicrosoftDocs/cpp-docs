@@ -39,22 +39,22 @@ intptr_t _wexecl(
 *cmdname*<br/>
 Path of the file to be executed.
 
-*arg0*, ... *argn*<br/>
+*arg0*, ... *argN*<br/>
 List of pointers to the parameters.
 
 ## Return Value
 
-If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
+If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
 
 |errno value|Description|
 |-----------------|-----------------|
 |**E2BIG**|The space required for the arguments and environment settings exceeds 32 KB.|
 |**EACCES**|The specified file has a locking or sharing violation.|
 |**EINVAL**|Invalid parameter (one or more of the parameters was a null pointer or empty string).|
-|**EMFILE**|Too many files open (the specified file must be opened to determine whether it is executable).|
-|**ENOENT**|The file or path is not found.|
-|**ENOEXEC**|The specified file is not executable or has an invalid executable-file format.|
-|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process was not allocated properly.|
+|**EMFILE**|Too many files open (the specified file must be opened to determine whether it's executable).|
+|**ENOENT**|The file or path isn't found.|
+|**ENOEXEC**|The specified file isn't executable or has an invalid executable-file format.|
+|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly.|
 
 ## Remarks
 
