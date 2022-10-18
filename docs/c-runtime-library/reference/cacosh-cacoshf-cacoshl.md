@@ -12,7 +12,7 @@ ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
 ---
 # cacosh, cacoshf, cacoshl
 
-Retrieves the inverse hyperbolic cosine of a complex number with a branch cut at values less than 1 along the real axis. .
+Retrieves the inverse hyperbolic cosine of a complex number with a branch cut at values less than 1 along the real axis.
 
 ## Syntax
 

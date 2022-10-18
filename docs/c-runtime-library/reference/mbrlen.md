@@ -54,7 +54,7 @@ The **mbrlen** function saves and uses the shift state of an incomplete multibyt
 
 The **mbrlen** function differs from [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md) by its restartability. The shift state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**mbrlen**|\<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

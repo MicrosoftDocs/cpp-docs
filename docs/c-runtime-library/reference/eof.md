@@ -24,18 +24,18 @@ int _eof(
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*<br/>
 File descriptor referring to the open file.
 
 ## Return Value
 
-**_eof** returns 1 if the current position is end of file, or 0 if it is not. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EBADF**, which indicates an invalid file descriptor.
+**_eof** returns 1 if the current position is end of file, or 0 if it isn't. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EBADF**, which indicates an invalid file descriptor.
 
 ## Remarks
 
-The **_eof** function determines whether the end of the file associated with *fd* has been reached.
+The **_eof** function determines whether the end of the file associated with *`fd`* has been reached.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

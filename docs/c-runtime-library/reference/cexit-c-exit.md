@@ -29,16 +29,16 @@ The **_cexit** function calls, in last-in, first-out (LIFO) order, the functions
 |--------------|--------------|
 |**exit**|Performs complete C library termination procedures, terminates process, and exits with supplied status code.|
 |**_exit**|Performs quick C library termination procedures, terminates process, and exits with supplied status code.|
-|**_cexit**|Performs complete C library termination procedures and returns to caller, but does not terminate process.|
-|**_c_exit**|Performs quick C library termination procedures and returns to caller, but does not terminate process.|
+|**_cexit**|Performs complete C library termination procedures and returns to caller, but doesn't terminate process.|
+|**_c_exit**|Performs quick C library termination procedures and returns to caller, but doesn't terminate process.|
 
-When you call the **_cexit** or **_c_exit** functions, the destructors for any temporary or automatic objects that exist at the time of the call are not called. An automatic object is an object that is defined in a function where the object is not declared to be static. A temporary object is an object created by the compiler. To destroy an automatic object before calling **_cexit** or **_c_exit**, explicitly call the destructor for the object, as follows:
+When you call the **_cexit** or **_c_exit** functions, the destructors for any temporary or automatic objects that exist at the time of the call aren't called. An automatic object is an object that is defined in a function where the object isn't declared to be static. A temporary object is an object created by the compiler. To destroy an automatic object before calling **_cexit** or **_c_exit**, explicitly call the destructor for the object, as follows:
 
 ```cpp
 myObject.myClass::~myClass( );
 ```
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

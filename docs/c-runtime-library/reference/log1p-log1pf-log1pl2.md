@@ -72,7 +72,7 @@ If you use the \<tgmath.h> `log1p()` macro, the type of the argument determines 
 
 If *x* is a natural number, this function returns the logarithm of the factorial of (*x* - 1).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -81,7 +81,7 @@ By default, this function's global state is scoped to the application. To change
 |**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
 |**log1p** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

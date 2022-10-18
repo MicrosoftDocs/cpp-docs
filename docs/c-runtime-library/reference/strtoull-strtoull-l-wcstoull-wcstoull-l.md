@@ -71,7 +71,7 @@ If *endptr* is not **NULL**, a pointer to the character that stopped the scan is
 
 **wcstoull** is a wide-character version of **strtoull** and its *strSource* argument is a wide-character string. Otherwise, these functions behave identically.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -95,7 +95,7 @@ A *whitespace* may consist of space and tab characters, which are ignored. *digi
 |**_strtoull_l**|\<stdlib.h>|
 |**_wcstoull_l**|\<stdlib.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

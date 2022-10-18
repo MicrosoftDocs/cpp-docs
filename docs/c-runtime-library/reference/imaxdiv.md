@@ -45,7 +45,7 @@ The **imaxdiv** function divides *numer* by *denom* and thereby computes the quo
 |-------------|---------------------|
 |**imaxdiv**|\<inttypes.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

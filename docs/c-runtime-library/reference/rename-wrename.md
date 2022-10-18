@@ -53,7 +53,7 @@ The **`rename`** function renames the file or directory specified by *`oldname`*
 
 **`_wrename`** is a wide-character version of **`_rename`**; the arguments to **`_wrename`** are wide-character strings. **`_wrename`** and **`_rename`** behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |**`rename`**|`<io.h>` or `<stdio.h>`|
 |**`_wrename`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 

@@ -60,7 +60,7 @@ The array is sorted in increasing order, as defined by the comparison function. 
 
 This function validates its parameters. If *`compare`* or *`number`* is **`NULL`**, or if *`base`* is **`NULL`** and *`number`* is nonzero, or if *`width`* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns and **`errno`** is set to **`EINVAL`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`qsort`**|`<stdlib.h>` and `<search.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

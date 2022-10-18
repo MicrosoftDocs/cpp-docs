@@ -25,19 +25,19 @@ int fegetexceptflag(
 
 ### Parameters
 
-*pstatus*<br/>
-A pointer to a **fexcept_t** object to contain the current values of the  exception flags specified by *excepts*.
+*`pstatus`*<br/>
+A pointer to a **fexcept_t** object to contain the current values of the  exception flags specified by *`excepts`*.
 
-*excepts*<br/>
-The floating-point exception flags to store in *pstatus*.
+*`excepts`*<br/>
+The floating-point exception flags to store in *`pstatus`*.
 
 ## Return Value
 
-On success, returns 0. Otherwise, returns a non-zero value.
+On success, returns 0. Otherwise, it returns a non-zero value.
 
 ## Remarks
 
-The **fegetexceptflag** function stores the current state of the floating-point exception status flags specified by *excepts* in the **fexcept_t** object pointed to by *pstatus*.  *pstatus* must point to a valid **fexcept_t** object, or subsequent behavior is undefined. The **fegetexceptflag** function supports these exception macros, defined in \<fenv.h>:
+The **fegetexceptflag** function stores the current state of the floating-point exception status flags specified by *`excepts`* in the **fexcept_t** object pointed to by *`pstatus`*.  *`pstatus`* must point to a valid **fexcept_t** object, or subsequent behavior is undefined. The **fegetexceptflag** function supports these exception macros, defined in \<fenv.h>:
 
 |Exception Macro|Description|
 |---------------------|-----------------|
@@ -48,7 +48,7 @@ The **fegetexceptflag** function stores the current state of the floating-point 
 |FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
 |FE_ALL_EXCEPT|The bitwise OR of all supported floating-point exceptions.|
 
-The *excepts* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
+The *`excepts`* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
 
 To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
 
@@ -58,7 +58,7 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**fegetexceptflag**|\<fenv.h>|\<cfenv>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

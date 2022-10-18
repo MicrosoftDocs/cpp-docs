@@ -50,13 +50,13 @@ Storage location for data.
 
 ## Remarks
 
-These functions read a string of characters from the console and store the string and its length in the location pointed to by `buffer`. The `buffer` parameter must be a pointer to a character array. The first element of the array, `buffer[0]`, must contain the maximum length (in characters) of the string to be read. The array must contain enough elements to hold the string, a terminating null character ('\0'), and 2 additional bytes. The function reads characters until a carriage return-line feed (CR-LF) combination or the specified number of characters is read. The string is stored starting at `buffer[2]`. If the function reads a CR-LF, it stores the null character ('\0'). The function then stores the actual length of the string in the second array element, `buffer[1]`.
+These functions read a string of characters from the console and store the string and its length in the location pointed to by `buffer`. The `buffer` parameter must be a pointer to a character array. The first element of the array, `buffer[0]`, must contain the maximum length (in characters) of the string to be read. The array must contain enough elements to hold the string, a terminating null character ('\0'), and 2 extra bytes. The function reads characters until a carriage return-line feed (CR-LF) combination or the specified number of characters is read. The string is stored starting at `buffer[2]`. If the function reads a CR-LF, it stores the null character ('\0'). The function then stores the actual length of the string in the second array element, `buffer[1]`.
 
 Because all editing keys are active when `_cgets` or `_cgetws` is called while in a console window, pressing the F3 key repeats the last entered entry.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../c-runtime-library/secure-template-overloads.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](global-state.md).
 
 ### Generic-Text Routine Mappings
 
@@ -120,4 +120,4 @@ Text = A line of input.
 ## See also
 
 [Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)<br/>
-[_getch, _getwch](../c-runtime-library/reference/getch-getwch.md)
+[`_getch`, `_getwch`](../c-runtime-library/reference/getch-getwch.md)

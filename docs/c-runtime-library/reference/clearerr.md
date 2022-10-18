@@ -29,13 +29,13 @@ Pointer to **FILE** structure.
 
 ## Remarks
 
-The **clearerr** function resets the error indicator and end-of-file indicator for *stream*. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, or [rewind](rewind.md) is called.
+The **clearerr** function resets the error indicator and end-of-file indicator for *stream*. Error indicators aren't automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, or [rewind](rewind.md) is called.
 
 If *stream* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns. For more information on **errno** and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
 
 A more secure version of this function is available; see [clearerr_s](clearerr-s.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**clearerr**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

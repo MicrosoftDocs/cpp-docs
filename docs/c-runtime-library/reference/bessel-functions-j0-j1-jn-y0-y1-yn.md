@@ -55,19 +55,19 @@ Each of these routines returns a Bessel function of *x*. If *x* is negative in t
 
 The **_j0**, **_j1**, and **_jn** routines return Bessel functions of the first kind: orders 0, 1, and n, respectively.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
 |`± QNAN`, `IND`|**`INVALID`**|**`_DOMAIN`**|
 
 The **_y0**, **_y1**, and **_yn** routines return Bessel functions of the second kind: orders 0, 1, and n, respectively.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
 |`± QNAN`, `IND`|**`INVALID`**|**`_DOMAIN`**|
 |`± 0`|**`ZERODIVIDE`**|**`_SING`**|
 |`|x| < 0.0`|**`INVALID`**|**`_DOMAIN`**|
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -75,7 +75,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

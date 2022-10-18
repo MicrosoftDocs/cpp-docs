@@ -78,7 +78,7 @@ If you use the \<tgmath.h> `fmin()` macro, the type of the argument determines w
 |**fmin**, **fminf**, **fminl**|C: \<math.h><br />C++: \<math.h> or \<cmath>|
 |**fmin** macro | \<tgmath.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

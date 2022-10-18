@@ -24,7 +24,7 @@ int _commit(
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*<br/>
 File descriptor referring to the open file.
 
 ## Return Value
@@ -33,11 +33,11 @@ File descriptor referring to the open file.
 
 ## Remarks
 
-The **_commit** function forces the operating system to write the file associated with *fd* to disk. This call ensures that the specified file is flushed immediately, not at the operating system's discretion.
+The **_commit** function forces the operating system to write the file associated with *`fd`* to disk. This call ensures that the specified file is flushed immediately, not at the operating system's discretion.
 
-If *fd* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and **errno** is set to **EBADF**.
+If *`fd`* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and **errno** is set to **EBADF**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

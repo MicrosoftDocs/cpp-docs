@@ -43,7 +43,7 @@ The **`time`** function returns the number of seconds elapsed since midnight (00
 |-------|------|---------------------|
 |**`time`**, **`_time32`**, **`_time64`**|`<time.h>`|`<ctime>` or `<time.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

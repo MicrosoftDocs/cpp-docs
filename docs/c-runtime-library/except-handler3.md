@@ -45,7 +45,7 @@ If an exception should be dismissed, returns `DISPOSITION_DISMISS`. If the excep
 
 ## Remarks
 
-If this method finds an appropriate exception handler, it passes the exception to the handler. In this situation, this method does not return to the code that called it and the return value is irrelevant.
+If this method finds an appropriate exception handler, it passes the exception to the handler. In this situation, this method doesn't return to the code that called it and the return value is irrelevant.
 
 ## See also
 

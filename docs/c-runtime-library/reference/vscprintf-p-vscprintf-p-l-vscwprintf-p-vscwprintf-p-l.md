@@ -79,7 +79,7 @@ If *`format`* is a null pointer, the invalid parameter handler is invoked, as de
 |**`_vscprintf_p`**, **`_vscprintf_p_l`**|`<stdio.h>`|
 |**`_vscwprintf_p`**, **`_vscwprintf_p_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

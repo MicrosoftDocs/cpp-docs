@@ -86,7 +86,7 @@ If **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, **_tempnam** and **_wtempna
 |**_wtempnam**, **_wtmpnam**|\<stdio.h> or \<wchar.h>|
 |**tmpnam**|\<stdio.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

@@ -14,7 +14,7 @@ A code page can be represented in a table as a mapping of characters to single-b
 
 The Microsoft runtime library uses the following types of code pages:
 
-- System-default ANSI code page. By default, at startup the runtime system automatically sets the multibyte code page to the system-default ANSI code page, which is obtained from the operating system. The call:
+- System-default ANSI code page. By default, at startup, the runtime system automatically sets the multibyte code page to the system-default ANSI code page, which is obtained from the operating system. The call:
 
     ```C
     setlocale ( LC_ALL, "" );
@@ -22,7 +22,7 @@ The Microsoft runtime library uses the following types of code pages:
 
    also sets the locale to the system-default ANSI code page.
 
-- Locale code page. The behavior of a number of run-time routines is dependent on the current locale setting, which includes the locale code page. (For more information, see [Locale-Dependent Routines](../c-runtime-library/locale.md).) By default, all locale-dependent routines in the Microsoft run-time library use the code page that corresponds to the "C" locale. At run time, you can change or query the locale code page in use with a call to [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
+- Locale code page. The behavior of several run-time routines is dependent on the current locale setting, which includes the locale code page. (For more information, see [Locale-Dependent Routines](../c-runtime-library/locale.md).) By default, all locale-dependent routines in the Microsoft run-time library use the code page that corresponds to the "C" locale. At run time, you can change or query the locale code page in use with a call to [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
 
 - Multibyte code page. The behavior of most of the multibyte-character routines in the run-time library depends on the current multibyte code page setting. By default, these routines use the system-default ANSI code page. At run-time you can query and change the multibyte code page with [_getmbcp](../c-runtime-library/reference/getmbcp.md) and [_setmbcp](../c-runtime-library/reference/setmbcp.md), respectively.
 

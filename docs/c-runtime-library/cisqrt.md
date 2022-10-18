@@ -26,7 +26,7 @@ This version of the `sqrt` function has a specialized calling convention that th
 
 The resulting value is pushed onto the top of the stack.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](global-state.md).
 
 ## Requirements
 
@@ -35,4 +35,4 @@ By default, this function's global state is scoped to the application. To change
 ## See also
 
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)
+[`sqrt`, `sqrtf`, `sqrtl`](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)

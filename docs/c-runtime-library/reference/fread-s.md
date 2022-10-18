@@ -53,7 +53,7 @@ The **`fread_s`** function reads up to *`count`* items of *`elementSize`* bytes 
 
 This function locks out other threads. If you require a non-locking version, use **`_fread_nolock`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`fread_s`**|`<stdio.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

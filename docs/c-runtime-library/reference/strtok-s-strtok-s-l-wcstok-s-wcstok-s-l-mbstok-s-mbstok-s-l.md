@@ -102,7 +102,7 @@ The output value is affected by the setting of the **`LC_CTYPE`** category setti
 
 The versions of these functions without the **`_l`** suffix use the current thread locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except they instead use the locale specified by the *`locale`* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -113,7 +113,7 @@ By default, this function's global state is scoped to the application. To change
 |**`wcstok_s`**,<br />**`_wcstok_s_l`**|`<string.h>` or `<wchar.h>`|
 |**`_mbstok_s`**,<br />**`_mbstok_s_l`**|`<mbstring.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ### Generic-Text Routine Mappings
 

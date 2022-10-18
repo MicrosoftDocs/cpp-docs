@@ -86,7 +86,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 |**`wcscat`**|`<string.h>` or `<wchar.h>`|
 |**`_mbscat`**|`<mbstring.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

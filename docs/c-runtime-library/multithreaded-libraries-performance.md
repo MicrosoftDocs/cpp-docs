@@ -8,13 +8,13 @@ ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
 ---
 # Multithreaded Libraries Performance
 
-The single-threaded CRT is no longer available. This topic discusses how to get the maximum performance from the multithreaded libraries.
+The single-threaded CRT is no longer available. This article discusses how to get the maximum performance from the multithreaded libraries.
 
 ## Maximizing performance
 
 The performance of the multithreaded libraries has been improved and is close to the performance of the now-eliminated single-threaded libraries. For those situations when even higher performance is required, there are several new features.
 
-- Independent stream locking allows you to lock a stream and then use [_nolock Functions](../c-runtime-library/nolock-functions.md) that access the stream directly. This allows lock usage to be hoisted outside critical loops.
+- Independent stream locking allows you to lock a stream and then use [`_nolock` Functions](../c-runtime-library/nolock-functions.md) that access the stream directly. This feature allows lock usage to be hoisted outside critical loops.
 
 - Per-thread locale reduces the cost of locale access for multithreaded scenarios (see [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)).
 
@@ -22,7 +22,7 @@ The performance of the multithreaded libraries has been improved and is close to
 
 - Optimizations for common codepages reduce the cost of many short operations.
 
-- Defining [_CRT_DISABLE_PERFCRIT_LOCKS](../c-runtime-library/crt-disable-perfcrit-locks.md) forces all I/O operations to assume a single-threaded I/O model and use the _nolock forms of the functions. This allows highly I/O-based single-threaded applications to get better performance.
+- Defining [`_CRT_DISABLE_PERFCRIT_LOCKS`](../c-runtime-library/crt-disable-perfcrit-locks.md) forces all I/O operations to assume a single-threaded I/O model and use the `_nolock` forms of the functions. This macro allows highly I/O-based single-threaded applications to get better performance.
 
 - Exposure of the CRT heap handle allows you to enable the Windows Low Fragmentation Heap (LFH) for the CRT heap, which can substantially improve performance in highly scaled scenarios.
 

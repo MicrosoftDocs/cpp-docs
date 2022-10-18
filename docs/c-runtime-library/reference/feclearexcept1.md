@@ -12,7 +12,7 @@ ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
 ---
 # feclearexcept
 
-Attempts to clear the floating-point exception flags        specified by the argument.
+**`feclearexcept`** attempts to clear the floating-point exception flags specified by the argument.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ The exception status flags to clear.
 
 ## Return Value
 
-Returns zero if *excepts* is zero, or if all        the specified exceptions were successfully cleared. Otherwise, returns a nonzero value.
+Returns zero if *excepts* is zero, or if all the specified exceptions were successfully cleared. Otherwise, it returns a nonzero value.
 
 ## Remarks
 
@@ -52,7 +52,7 @@ The *excepts* argument may be zero, or the bitwise OR of one or more of the supp
 |--------------|--------------|------------------|
 |**feclearexcept**|\<fenv.h>|\<cfenv>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

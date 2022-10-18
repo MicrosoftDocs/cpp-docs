@@ -92,7 +92,7 @@ The **`_sprintf_p`** function formats and stores a series of characters and valu
 |**`_sprintf_p`**, **`_sprintf_p_l`**|`<stdio.h>`|
 |**`_swprintf_p`**, **`_swprintf_p_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example: Use `_sprintf_p` to format data
 

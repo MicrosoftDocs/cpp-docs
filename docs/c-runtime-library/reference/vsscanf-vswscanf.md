@@ -70,7 +70,7 @@ The **vsscanf** function reads data from *buffer* into the locations that are gi
 |**vsscanf**|\<stdio.h>|
 |**vswscanf**|\<stdio.h> or \<wchar.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

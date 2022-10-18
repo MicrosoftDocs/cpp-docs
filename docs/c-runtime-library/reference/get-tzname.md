@@ -75,7 +75,7 @@ By default, `"PST"` is returned for the standard time zone and `"PDT"` for the d
 > [!WARNING]
 > The time zone string is not guaranteed to be the same between OS releases. Official time zone names can and do change.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Example
 

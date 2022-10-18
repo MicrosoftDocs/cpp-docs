@@ -7,11 +7,11 @@ helpviewer_keywords: ["complex numbers, math routines", "math routines", "comple
 ---
 # C complex math support
 
-The Microsoft C Runtime library (CRT) provides complex math library functions, including all of those required by ISO C99. The compiler doesn't directly support a **`complex`** or **`_Complex`** keyword, therefore the Microsoft implementation uses structure types to represent complex numbers.
+The Microsoft C Runtime library (CRT) provides complex math library functions, including all of the ones required by ISO C99. The compiler doesn't directly support a **`complex`** or **`_Complex`** keyword, therefore the Microsoft implementation uses structure types to represent complex numbers.
 
-These functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 ulp of the correctly rounded result, though there may be cases where there's greater inaccuracy.
+These functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 unit of least precision (ULP) of the correctly rounded result, though there may be cases where there's greater inaccuracy.
 
-The complex math routines rely on the floating point math library functions for their implementation. These functions have different implementations for different CPU architectures. For example, the 32-bit x86 CRT may have a different implementation than the 64-bit x64 CRT. In addition, some of the functions may have multiple implementations for a given CPU architecture. The most efficient implementation is selected dynamically at run-time depending on the instruction sets supported by the CPU. For example, in the 32-bit x86 CRT, some functions have both an x87 implementation and an SSE2 implementation. When running on a CPU that supports SSE2, the faster SSE2 implementation is used. When running on a CPU that doesn't support SSE2, the slower x87 implementation is used. Because different implementations of the math library functions may use different CPU instructions and different algorithms to produce their results, the functions may produce different results across CPUs. In most cases, the results are within +/-1 ulp of the correctly rounded result, but the actual results may vary across CPUs.
+The complex math routines rely on the floating point math library functions for their implementation. These functions have different implementations for different CPU architectures. For example, the 32-bit x86 CRT may have a different implementation than the 64-bit x64 CRT. In addition, some of the functions may have multiple implementations for a given CPU architecture. The most efficient implementation is selected dynamically at run-time depending on the instruction sets supported by the CPU. For example, in the 32-bit x86 CRT, some functions have both an x87 implementation and an SSE2 implementation. When running on a CPU that supports SSE2, the faster SSE2 implementation is used. When running on a CPU that doesn't support SSE2, the slower x87 implementation is used. Because different implementations of the math library functions may use different CPU instructions and different algorithms to produce their results, the functions may produce different results across CPUs. In most cases, the results are within +/-1 ULP of the correctly rounded result, but the actual results may vary across CPUs.
 
 ## Types used in complex math
 
@@ -64,7 +64,7 @@ The `math.h` header defines a separate type, **`struct _complex`**, used for the
 |Function|Description|
 |-|-|
 |[`cabs`, `cabsf`, `cabsl`](../c-runtime-library/reference/cabs-cabsf-cabsl.md)|Compute the complex absolute value (also called the norm, modulus, or magnitude) of a complex number|
-|[`cpow`, `cpowf`, `cpowl`](../c-runtime-library/reference/cpow-cpowf-cpowl.md)|Compute the complex power function x<sup>y</sup>|
+|[`cpow`, `cpowf`, `cpowl`](../c-runtime-library/reference/cpow-cpowf-cpowl.md)|Compute the complex power function|
 |[`csqrt`, `csqrtf`, `csqrtl`](../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)|Compute the complex square root of a complex number|
 
 ## Manipulation functions

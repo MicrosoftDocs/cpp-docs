@@ -75,7 +75,7 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 |-------------|---------------------|
 |**_tempnam_dbg**, **_wtempnam_dbg**|\<crtdbg.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

@@ -11,7 +11,7 @@ ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
 ---
 # `_countof` Macro
 
-Computes the number of elements in a statically-allocated array.
+Computes the number of elements in a statically allocated array.
 
 ## Syntax
 
