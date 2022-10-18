@@ -37,46 +37,46 @@ int _CrtDbgReportW(
 
 ### Parameters
 
-*reportType*<br/>
+*`reportType`*<br/>
 Report type: **_CRT_WARN**, **_CRT_ERROR**, and **_CRT_ASSERT**.
 
-*filename*<br/>
+*`filename`*<br/>
 Pointer to name of source file where assert/report occurred or **NULL**.
 
-*linenumber*<br/>
+*`lineNumber`*<br/>
 Line number in source file where assert/report occurred or **NULL**.
 
-*moduleName*<br/>
+*`moduleName`*<br/>
 Pointer to name of module (.exe or .dll) where assert or report occurred.
 
-*format*<br/>
+*`format`*<br/>
 Pointer to format-control string used to create the user message.
 
-*argument*<br/>
-Optional substitution arguments used by *format*.
+*`argument`*<br/>
+Optional substitution arguments used by *`format`*.
 
 ## Return Value
 
-For all report destinations, **_CrtDbgReport** and **_CrtDbgReportW** return -1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user clicks the **Retry** button, these functions return 1. If the user clicks the **Abort** button in the Debug Message window, these functions immediately abort and do not return a value.
+For all report destinations, **_CrtDbgReport** and **_CrtDbgReportW** return -1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user chooses the **Retry** button, these functions return 1. If the user chooses the **Abort** button in the Debug Message window, these functions immediately abort and don't return a value.
 
-The [_RPT, _RPTF](rpt-rptf-rptw-rptfw-macros.md) debug macros call **_CrtDbgReport** to generate their debug reports. The wide-character versions of these macros as well as [_ASSERT, _ASSERTE](assert-asserte-assert-expr-macros.md), [_RPTW](rpt-rptf-rptw-rptfw-macros.md)
-and [_RPTFW](rpt-rptf-rptw-rptfw-macros.md), use **_CrtDbgReportW** to generate their debug reports. When **_CrtDbgReport** or **_CrtDbgReportW** return 1, these macros start the debugger, provided that just-in-time (JIT) debugging is enabled.
+The [_RPT, _RPTF](rpt-rptf-rptw-rptfw-macros.md) debug macros call **_CrtDbgReport** to generate their debug reports. The wide-character versions of these macros, along with [_ASSERT, _ASSERTE](assert-asserte-assert-expr-macros.md), [_RPTW](rpt-rptf-rptw-rptfw-macros.md)
+and [_RPTFW](rpt-rptf-rptw-rptfw-macros.md), use **_CrtDbgReportW** to generate their debug reports. When **_CrtDbgReport** or **_CrtDbgReportW** return 1, these macros start the debugger, if just-in-time (JIT) debugging is enabled.
 
 ## Remarks
 
-**_CrtDbgReport** and **_CrtDbgReportW** can send the debug report to three different destinations: a debug report file, a debug monitor (the Visual Studio debugger), or a debug message window. Two configuration functions, [_CrtSetReportMode](crtsetreportmode.md) and [_CrtSetReportFile](crtsetreportfile.md), are used to specify the destination or destinations for each report type. These functions allow the reporting destination or destinations for each report type to be separately controlled. For example, it is possible to specify that a *reportType* of **_CRT_WARN** only be sent to the debug monitor, while a *reportType* of **_CRT_ASSERT** be sent to a debug message window and a user-defined report file.
+**_CrtDbgReport** and **_CrtDbgReportW** can send the debug report to three different destinations: a debug report file, a debug monitor (the Visual Studio debugger), or a debug message window. Two configuration functions, [_CrtSetReportMode](crtsetreportmode.md) and [_CrtSetReportFile](crtsetreportfile.md), are used to specify the destination or destinations for each report type. These functions allow the reporting destination or destinations for each report type to be separately controlled. For example, it's possible to specify that a *`reportType`* of **_CRT_WARN** only goes to the debug monitor, while a *`reportType`* of **_CRT_ASSERT** goes to both a debug message window and a user-defined report file.
 
-**_CrtDbgReportW** is the wide-character version of **_CrtDbgReport**. All its output and string parameters are in wide-character strings; otherwise it is identical to the single-byte character version.
+**_CrtDbgReportW** is the wide-character version of **_CrtDbgReport**. All its output and string parameters are in wide-character strings; otherwise it's identical to the single-byte character version.
 
-**_CrtDbgReport** and **_CrtDbgReportW** create the user message for the debug report by substituting the *argument*[**n**] arguments into the *format* string, using the same rules defined by the **printf** or **wprintf** functions. These functions then generate the debug report and determine the destination or destinations, based on the current report modes and file defined for *reportType*. When the report is sent to a debug message window, the *filename*, **lineNumber**, and *moduleName* are included in the information displayed in the window.
+**_CrtDbgReport** and **_CrtDbgReportW** create the user message for the debug report by substituting the *`argument[n]`* arguments into the *`format`* string, using the same rules defined by the **printf** or **wprintf** functions. These functions then generate the debug report and determine the destination or destinations, based on the current report modes and file defined for *`reportType`*. When the report is sent to a debug message window, the *`filename`*, *`lineNumber`*, and *`moduleName`* are included in the information displayed in the window.
 
 The following table lists the available choices for the report mode or modes and file and the resulting behavior of **_CrtDbgReport** and **_CrtDbgReportW**. These options are defined as bit flags in \<crtdbg.h>.
 
 |Report mode|Report file|**_CrtDbgReport**, **_CrtDbgReportW** behavior|
 |-----------------|-----------------|------------------------------------------------|
 |**_CRTDBG_MODE_DEBUG**|Not applicable|Writes message by using Windows [OutputDebugString](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API.|
-|**_CRTDBG_MODE_WNDW**|Not applicable|Calls Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API to create message box to display the message along with **Abort**, **Retry**, and **Ignore** buttons. If a user clicks **Abort**, **_CrtDbgReport** or **_CrtDbgReport** immediately aborts. If a user clicks **Retry**, it returns 1. If a user clicks **Ignore**, execution continues and **_CrtDbgReport** and **_CrtDbgReportW** return 0. Note that clicking **Ignore** when an error condition exists often results in "undefined behavior."|
-|**_CRTDBG_MODE_FILE**|**__HFILE**|Writes message to user-supplied **HANDLE**, using the Windows [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) API and does not verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle.|
+|**_CRTDBG_MODE_WNDW**|Not applicable|Calls Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API to create message box to display the message along with **Abort**, **Retry**, and **Ignore** buttons. If a user chooses **Abort**, **_CrtDbgReport** or **_CrtDbgReport** immediately aborts. If a user chooses **Retry**, it returns 1. If a user chooses **Ignore**, execution continues and **_CrtDbgReport** and **_CrtDbgReportW** return 0. Choosing **Ignore** when an error condition exists often results in undefined behavior.|
+|**_CRTDBG_MODE_FILE**|**__HFILE**|Writes message to user-supplied **HANDLE**, using the Windows [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) API and doesn't verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|Writes message to **stderr**.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|Writes message to **stdout**.|
 

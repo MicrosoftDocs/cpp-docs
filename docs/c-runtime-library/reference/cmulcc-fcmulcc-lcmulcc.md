@@ -35,7 +35,7 @@ A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the c
 
 ## Remarks
 
-Because the built-in arithmetic operators do not work on the Microsoft implementation of the complex types, the **_Cmulcc**, **_FCmulcc**, and **_LCmulcc** functions simplify multiplication of complex types.
+Because the built-in arithmetic operators don't work on the Microsoft implementation of the complex types, the **_Cmulcc**, **_FCmulcc**, and **_LCmulcc** functions simplify multiplication of complex types.
 
 ## Requirements
 

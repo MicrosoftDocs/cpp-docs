@@ -41,7 +41,7 @@ The **`_configthreadlocale`** function is used to control the use of thread-spec
 
 These functions affect the behavior of **`setlocale`**, **`_tsetlocale`**, **`_wsetlocale`**, and **`_setmbcp`**. When per-thread locale is disabled, any subsequent call to **`setlocale`** or **`_wsetlocale`** changes the locale of all threads that use the global locale. When per-thread locale is enabled, **`setlocale`** or **`_wsetlocale`** only affects the current thread's locale.
 
-If you use **`_configthreadlocale`** to enable a per-thread locale, we recommend that you call **`setlocale`** or **`_wsetlocale`** to set the preferred locale in that thread immediately afterward.
+If you use **`_configthreadlocale`** to enable a per-thread locale, set the preferred locale in that thread immediately afterward by a call to **`setlocale`** or **`_wsetlocale`**.
 
 If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
 

@@ -31,11 +31,11 @@ The floating-point operand to multiply.
 
 ## Return Value
 
-A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex number *x* and flaoting-point number *y*.
+A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex number *x* and floating-point number *y*.
 
 ## Remarks
 
-Because the built-in arithmetic operators do not work on the Microsoft implementation of the complex types, the **_Cmulcr**, **_FCmulcr**, and **_LCmulcr** functions simplify multiplication of complex types by floating-point types.
+Because the built-in arithmetic operators don't work on the Microsoft implementation of the complex types, the **_Cmulcr**, **_FCmulcr**, and **_LCmulcr** functions simplify multiplication of complex types by floating-point types.
 
 ## Requirements
 

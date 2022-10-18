@@ -35,7 +35,7 @@ Angle in radians.
 
 The cosine of *x*. If *x* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|none|**_DOMAIN**|
 |± INF|**INVALID**|**_DOMAIN**|
@@ -59,15 +59,14 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-See the example in [sin, sinf, sinl](sin-sinf-sinl.md).
+See the example in [`sin`, `sinf`, `sinl`](sin-sinf-sinl.md).
 
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
-[_CIcos](../../c-runtime-library/cicos.md)<br/>
+[`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)<br/>
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)<br/>
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
+[`_matherr`](matherr.md)<br/>
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)<br/>
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)
