@@ -32,7 +32,7 @@ Length in bytes of each element.
 
 ## Return Value
 
-**`calloc`** returns a pointer to the allocated space. The storage space pointed to by the return value is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
+**`calloc`** returns a pointer to the allocated space. The storage space pointed to by the return value is suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
 
 ## Remarks
 
@@ -54,7 +54,7 @@ When the application is linked with a debug version of the C run-time libraries,
 
 **`calloc`** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned isn't aliased. For more information, see [`noalias`](../../cpp/noalias.md) and [`restrict`](../../cpp/restrict.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
@@ -62,7 +62,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`calloc`**|`<stdlib.h>` and `<malloc.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

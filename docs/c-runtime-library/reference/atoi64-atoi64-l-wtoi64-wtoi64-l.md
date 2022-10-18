@@ -43,9 +43,9 @@ Locale to use.
 
 ## Return Value
 
-Each function returns the **`__int64`** value produced by interpreting the input characters as a number. The return value is 0 for **_atoi64** if the input cannot be converted to a value of that type.
+Each function returns the **`__int64`** value produced by interpreting the input characters as a number. The return value is 0 for **_atoi64** if the input can't be converted to a value of that type.
 
-In the case of overflow with large positive integral values, **_atoi64** returns **I64_MAX** and **I64_MIN** in the case of overflow with large negative integral values.
+If the functions overflow with large positive integral values, they return **I64_MAX**. The functions return **I64_MIN** if they overflow with large negative integral values.
 
 In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter passed in is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 
@@ -53,7 +53,7 @@ In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter pass
 
 These functions convert a character string to a 64-bit integer value.
 
-The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character might be the null character ('\0' or L'\0') terminating the string.
+The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it can't recognize as part of a number. This character might be the null character ('\0' or L'\0') terminating the string.
 
 The *str* argument to **_atoi64** has the following form:
 
@@ -65,7 +65,7 @@ A *whitespace* consists of space or tab characters, which are ignored; *sign* is
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 

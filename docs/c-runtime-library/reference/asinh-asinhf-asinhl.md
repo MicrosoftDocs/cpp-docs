@@ -33,9 +33,9 @@ Floating-point value.
 
 ## Return Value
 
-The **asinh** functions return the inverse hyberbolic sine (arc hyperbolic sine) of *x*. This function is valid over the floating-point domain. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
+The **asinh** functions return the inverse hyperbolic sine (arc hyperbolic sine) of *x*. This function is valid over the floating-point domain. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
-|Input|SEH Exception|**_matherr** Exception|
+|Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, INF|none|none|
 

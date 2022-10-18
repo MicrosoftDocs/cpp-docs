@@ -44,7 +44,7 @@ Any numbers.
 
 **`atan2`** uses the signs of both parameters to determine the quadrant of the return value.
 
-|Input|SEH exception|Matherr exception|
+|Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|
 |± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
 
@@ -58,7 +58,7 @@ If you use the `<tgmath.h>` `atan()` or `atan2()` macro, the type of the argumen
 
 Because C++ allows overloading, you can call overloads of **`atan`** and **`atan2`** that take **`float`** or **`long double`** arguments. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`atan`** and **`atan2`** always take **`double`** arguments and return a **`double`**.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 

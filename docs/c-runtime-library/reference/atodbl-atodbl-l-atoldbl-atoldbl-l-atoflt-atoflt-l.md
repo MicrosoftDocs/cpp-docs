@@ -42,13 +42,13 @@ Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW*
 
 ## Remarks
 
-These functions convert a string to a floating-point value. The difference between these functions and the **atof** family of functions is that these functions do not generate floating-point code and do not cause hardware exceptions. Instead, error conditions are reported as error codes.
+These functions convert a string to a floating-point value. The difference between these functions and the **atof** family of functions is that these functions don't generate floating-point code and don't cause hardware exceptions. Instead, error conditions are reported as error codes.
 
-If a string does not have a valid interpretation as a floating-point value, *value* is set to zero and the return value is zero.
+If a string doesn't have a valid interpretation as a floating-point value, *value* is set to zero, and the return value is zero.
 
 The versions of these functions that have the **_l** suffix are identical the versions that don't have the suffix, except that they use the *locale* parameter that's passed in instead of the current thread locale.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
