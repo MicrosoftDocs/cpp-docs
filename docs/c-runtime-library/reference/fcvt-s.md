@@ -12,7 +12,7 @@ ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
 ---
 # _fcvt_s
 
-Converts a floating-point number to a string. This is a version of [_fcvt](fcvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a floating-point number to a string. This function is a version of [_fcvt](fcvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -57,9 +57,9 @@ Pointer to the stored sign indicator.
 
 ## Return Value
 
-Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h. For a listing of these errors, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful. The return value is an error code if there's a failure. Error codes are defined in `errno.h`. For a listing of these errors, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-In the case of an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+When there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ### Error Conditions
 
@@ -72,7 +72,7 @@ In the case of an invalid parameter, as listed in the following table, this func
 
 ## Security Issues
 
-**_fcvt_s** might generate an access violation if *buffer* does not point to valid memory and is not **NULL**.
+**_fcvt_s** might generate an access violation if *buffer* doesn't point to valid memory and isn't **NULL**.
 
 ## Remarks
 

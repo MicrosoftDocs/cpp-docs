@@ -47,15 +47,15 @@ long double fdiml(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The first value.
 
-*y*\
+*`y`*\
 The second value.
 
 ## Return Value
 
-Returns the positive difference between *x* and *y*:
+Returns the positive difference between *`x`* and *`y`*:
 
 |Return value|Scenario|
 |------------------|--------------|
@@ -68,7 +68,7 @@ Otherwise, may return one of the following errors:
 |-----------|------------|
 |Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
 |Underflow range error|correct value (after rounding)|
-|*x* or *y* is NaN|NaN|
+|*`x`* or *`y`* is NaN|NaN|
 
 Errors are reported as specified in [_matherr](matherr.md).
 

@@ -27,7 +27,7 @@ int fesetround(
 ### Parameters
 
 *round_mode*<br/>
-The rounding mode to set, as one of the floating-point rounding macros. If the value is not equal to one of the floating-point rounding macros, the rounding mode is not changed.
+The rounding mode to set, as one of the floating-point rounding macros. If the value isn't equal to one of the floating-point rounding macros, the rounding mode isn't changed.
 
 ## Return Value
 
@@ -37,7 +37,7 @@ On success, **fesetround** returns 0. Otherwise, a non-zero value is returned.
 
 ## Remarks
 
-Floating-point operations can use one of several rounding modes. These control which direction the results of floating-point operations are rounded toward when the results are stored. These are the names and behaviors of the floating-point rounding macros defined in \<fenv.h>:
+Floating-point operations can use one of several rounding modes. These modes control which direction the results of floating-point operations are rounded toward when the results are stored. Here are the names and behaviors of the floating-point rounding macros defined in \<fenv.h>:
 
 |Macro|Description|
 |-----------|-----------------|
@@ -58,7 +58,7 @@ The current rounding mode affects these operations:
 
 - Return values from standard library mathematical functions.
 
-The current rounding mode does not affect these operations:
+The current rounding mode doesn't affect these operations:
 
 - The **trunc**, **ceil**, **floor**, and **lround** library functions.
 

@@ -40,17 +40,17 @@ Array of pointers to parameters.
 
 ## Return Value
 
-If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
+If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
 
 |**errno** value|Description|
 |-------------------|-----------------|
 |**E2BIG**|The space required for the arguments and environment settings exceeds 32 KB.|
 |**EACCES**|The specified file has a locking or sharing violation.|
 |**EINVAL**|Invalid parameter.|
-|**EMFILE**|Too many files open (the specified file must be opened to determine whether it is executable).|
+|**EMFILE**|Too many files open (the specified file must be opened to determine whether it's executable).|
 |**ENOENT**|The file or path not found.|
-|**ENOEXEC**|The specified file is not executable or has an invalid executable-file format.|
-|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process was not allocated properly.|
+|**ENOEXEC**|The specified file isn't executable or has an invalid executable-file format.|
+|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly.|
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -58,7 +58,13 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 Each of these functions loads and executes a new process, passing an array of pointers to command-line arguments and using the **PATH** environment variable to find the file to execute.
 
-The **_execvp** functions validate their parameters. If the *cmdname* is a null pointer, or *argv* is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
+The **_execvp** functions validate their parameters. These functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), when:
+
+- *cmdname* is a null pointer,
+- *argv* is either a null pointer or pointer to an empty array,
+- the array contains an empty string as the first argument.
+
+If execution is allowed to continue by the handler, these functions set **errno** to **EINVAL**, and return -1. No process is launched.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

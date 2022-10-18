@@ -25,7 +25,7 @@ int _findclose(
 ### Parameters
 
 *handle*<br/>
-Search handle returned by a previous call to **_findfirst**.
+The search handle returned by a previous call to **_findfirst**.
 
 ## Return Value
 

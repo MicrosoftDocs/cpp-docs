@@ -79,5 +79,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[exp, expf, expl](exp-expf.md)<br/>
-[log2, log2f, log2l](log2-log2f-log2l.md)<br/>
+[`exp`, `expf`, `expl`](exp-expf.md)<br/>
+[`log2`, `log2f`, `log2l`](log2-log2f-log2l.md)

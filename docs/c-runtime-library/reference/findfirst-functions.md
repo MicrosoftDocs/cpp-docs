@@ -82,7 +82,7 @@ If successful, **`_findfirst`** returns a unique search handle identifying the f
 | errno value | Condition |
 |-|-|
 | **`EINVAL`** | Invalid parameter: *`filespec`* or *`fileinfo`* was **`NULL`**. Or, the operating system returned an unexpected error. |
-| **`ENOENT`** | File specification that could not be matched. |
+| **`ENOENT`** | File specification that couldn't be matched. |
 | **`ENOMEM`** | Insufficient memory. |
 | **`EINVAL`** | Invalid file name specification or the file name given was larger than **`MAX_PATH`**. |
 
@@ -92,17 +92,17 @@ If an invalid parameter is passed in, these functions invoke the invalid paramet
 
 ## Remarks
 
-You must call [`_findclose`](findclose.md) after you are finished with either the **`_findfirst`** or [`_findnext`](findnext-functions.md) function (or any variants). This frees resources used by these functions in your application.
+You must call [`_findclose`](findclose.md) after you're finished with either the **`_findfirst`** or [`_findnext`](findnext-functions.md) function (or any variants). `_findclose` frees resources used by these functions in your application.
 
-The variations of these functions that have the **`w`** prefix are wide-character versions; otherwise, they are identical to the corresponding single-byte functions.
+The variations of these functions that have the **`w`** prefix are wide-character versions; otherwise, they're identical to the corresponding single-byte functions.
 
-Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file sizes. The first numeric suffix (**`32`** or **`64`**) indicates the size of the time type; the second suffix is either **`i32`** or **`i64`**, and indicates whether the file size is represented as a 32-bit or 64-bit integer. For information about which versions support 32-bit and 64-bit time types and file sizes, see the following table. The **`i32`** or **`i64`** suffix is omitted if it is the same as the size of the time type, so **`_findfirst64`** also supports 64-bit file lengths and **`_findfirst32`** supports only 32-bit file lengths.
+Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file sizes. The first numeric suffix (**`32`** or **`64`**) indicates the size of the time type; the second suffix is either **`i32`** or **`i64`**, and indicates whether the file size is represented as a 32-bit or 64-bit integer. For information about which versions support 32-bit and 64-bit time types and file sizes, see the following table. The **`i32`** or **`i64`** suffix is omitted if it's the same as the size of the time type, so **`_findfirst64`** also supports 64-bit file lengths and **`_findfirst32`** supports only 32-bit file lengths.
 
 These functions use various forms of the **`_finddata_t`** structure for the *`fileinfo`* parameter. For more information about the structure, see [Filename Search Functions](../../c-runtime-library/filename-search-functions.md).
 
-The variations that use a 64-bit time type enable file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC. Those that use 32-bit time types represent dates only through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
+The variations that use a 64-bit time type enable file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC. The ones that use 32-bit time types represent dates only through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
-Unless you have a specific reason to use the versions that specify the time size explicitly, use **`_findfirst`** or **`_wfindfirst`** or, if you need to support file sizes larger than 3 GB, use **`_findfirsti64`** or **`_wfindfirsti64`**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this is a breaking change for an application, you might define **`_USE_32BIT_TIME_T`** to revert to the old behavior. If **`_USE_32BIT_TIME_T`** is defined, **`_findfirst`**, **`_finfirsti64`**, and their corresponding Unicode versions use a 32-bit time.
+Unless you have a specific reason to use the versions that specify the time size explicitly, use **`_findfirst`** or **`_wfindfirst`** or, if you need to support file sizes larger than 3 GB, use **`_findfirsti64`** or **`_wfindfirsti64`**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this change is a breaking change for an application, you might define **`_USE_32BIT_TIME_T`** to revert to the old behavior. If **`_USE_32BIT_TIME_T`** is defined, **`_findfirst`**, **`_finfirsti64`**, and their corresponding Unicode versions use a 32-bit time.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
