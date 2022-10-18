@@ -53,7 +53,7 @@ Pointer to stored time values.
 
 ## Return Value
 
-Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and **errno** is set to one of the following values:
+Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1, and **errno** is set to one of the following values:
 
 |errno value|Condition|
 |-|-|
@@ -62,7 +62,7 @@ Each of these functions returns 0 if the file-modification time was changed. A r
 | **EMFILE** | Too many open files (the file must be opened to change its modification time) |
 | **ENOENT** | Path or filename not found |
 
-See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
+For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 The date can be changed for a file if the change date is after midnight, January 1, 1970, and before the end date of the function used. **_utime** and **_wutime** use a 64-bit time value, so the end date is 23:59:59, December 31, 3000, UTC. If **_USE_32BIT_TIME_T** is defined to force the old behavior, the end date is 23:59:59 January 18, 2038, UTC. **_utime32** or **_wutime32** use a 32-bit time type regardless of whether **_USE_32BIT_TIME_T** is defined, and always have the earlier end date. **_utime64** or **_wutime64** always use the 64-bit time type, so these functions always support the later end date.
 
@@ -74,10 +74,10 @@ The **_utimbuf** structure stores file access and modification times used by **_
 
 | Field | Description |
 |-------|---|
-| **actime** | Time of file access |
-| **modtime** | Time of file modification |
+| **`actime`** | Time of file access |
+| **`modtime`** | Time of file modification |
 
-Specific versions of the **_utimbuf** structure (**_utimebuf32** and **__utimbuf64**) are defined using the 32-bit and 64-bit versions of the time type. These are used in the 32-bit and 64-bit specific versions of this function. **_utimbuf** itself by default uses a 64-bit time type unless **_USE_32BIT_TIME_T** is defined.
+Specific versions of the **_utimbuf** structure (**_utimebuf32** and **__utimbuf64**) are defined using the 32-bit and 64-bit versions of the time type. These structures are used in the 32-bit and 64-bit specific versions of this function. **_utimbuf** itself by default uses a 64-bit time type unless **_USE_32BIT_TIME_T** is defined.
 
 **_utime** is identical to **_futime** except that the *filename* argument of **_utime** is a filename or a path to a file, rather than a file descriptor of an open file.
 

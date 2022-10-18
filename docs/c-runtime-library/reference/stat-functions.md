@@ -77,21 +77,21 @@ Pointer to structure that stores results.
 
 ## Return Value
 
-Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case **`errno`** is set to **`ENOENT`**, indicating that the filename or path could not be found. A return value of **`EINVAL`** indicates an invalid parameter; **`errno`** is also set to **`EINVAL`** in this case.
+Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case **`errno`** is set to **`ENOENT`**, indicating that the filename or path couldn't be found. A return value of **`EINVAL`** indicates an invalid parameter; **`errno`** is also set to **`EINVAL`** in this case.
 
-See [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.
+For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-The date stamp on a file can be represented if it is later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use **`_stat32`** or **`_wstat32`**, or have defined **`_USE_32BIT_TIME_T`**, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.
+The date stamp on a file can be represented if it's later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use **`_stat32`** or **`_wstat32`**, or have defined **`_USE_32BIT_TIME_T`**, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.
 
 ## Remarks
 
 The **`_stat`** function obtains information about the file or directory specified by *`path`* and stores it in the structure pointed to by *`buffer`*. **`_stat`** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use.
 
-**`_wstat`** is a wide-character version of **`_stat`**; the *`path`* argument to **`_wstat`** is a wide-character string. **`_wstat`** and **`_stat`** behave identically except that **`_wstat`** does not handle multibyte-character strings.
+**`_wstat`** is a wide-character version of **`_stat`**; the *`path`* argument to **`_wstat`** is a wide-character string. **`_wstat`** and **`_stat`** behave identically except that **`_wstat`** doesn't handle multibyte-character strings.
 
-Variations of these functions support 32- or 64-bit time types, and 32- or 64-bit file lengths. The first numerical suffix (**32** or **64**) indicates the size of the time type used; the second suffix is either **i32** or **i64**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
+Variations of these functions support 32-bit or 64-bit time types, and 32-bit or 64-bit file lengths. The first numerical suffix (**32** or **64**) indicates the size of the time type used; the second suffix is either **i32** or **i64**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
 
-**`_stat`** is equivalent to **`_stat64i32`**, and **`struct`** **`_stat`** contains a 64-bit time. This is true unless **`_USE_32BIT_TIME_T`** is defined, in which case the old behavior is in effect; **`_stat`** uses a 32-bit time, and **`struct`** **`_stat`** contains a 32-bit time. The same is true for **`_stati64`**.
+**`_stat`** is equivalent to **`_stat64i32`**, and **`struct _stat`** contains a 64-bit time, unless **`_USE_32BIT_TIME_T`** is defined, in which case the old behavior is in effect; **`_stat`** uses a 32-bit time, and **`struct _stat`** contains a 32-bit time. The same is true for **`_stati64`**.
 
 > [!NOTE]
 > **`_wstat`** does not work with Windows Vista symbolic links. In these cases, **`_wstat`** will always report a file size of 0. **`_stat`** does work correctly with symbolic links.

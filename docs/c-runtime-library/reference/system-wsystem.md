@@ -35,16 +35,16 @@ The command to be executed.
 
 ## Return Value
 
-If *`command`* is **`NULL`** and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets **`errno`** to **`ENOENT`**. If *`command`* is not **`NULL`**, **`system`** returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of -1 indicates an error, and **`errno`** is set to one of the following values:
+If *`command`* is **`NULL`** and the command interpreter is found, returns a nonzero value. If the command interpreter isn't found, returns 0 and sets **`errno`** to **`ENOENT`**. If *`command`* isn't **`NULL`**, **`system`** returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of -1 indicates an error, and **`errno`** is set to one of the following values:
 
 | Value | Description |
 |-|-|
-| **`E2BIG`** | The argument list (which is system-dependent) is too big. |
-| **`ENOENT`** | The command interpreter cannot be found. |
-| **`ENOEXEC`** | The command-interpreter file cannot be executed because the format is not valid. |
-| **`ENOMEM`** | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call was not allocated correctly. |
+| **`E2BIG`** | The argument list (which is system-dependent) is too large. |
+| **`ENOENT`** | The command interpreter can't be found. |
+| **`ENOEXEC`** | The command-interpreter file can't be executed because the format isn't valid. |
+| **`ENOMEM`** | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call wasn't allocated correctly. |
 
-See [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about these return codes.
+For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
