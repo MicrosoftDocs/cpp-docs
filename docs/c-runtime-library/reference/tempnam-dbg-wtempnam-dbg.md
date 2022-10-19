@@ -12,7 +12,7 @@ ms.assetid: e3760bb4-bb01-4808-b689-2c45af56a170
 ---
 # _tempnam_dbg, _wtempnam_dbg
 
-Function versions of [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) that use the debug version of **malloc**, **_malloc_dbg**.
+Function versions of [`_tempnam`, `_wtempnam`, `tmpnam`, `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) that use the debug version of **malloc**, **_malloc_dbg**.
 
 ## Syntax
 
@@ -35,35 +35,35 @@ wchar_t *_wtempnam_dbg(
 
 ### Parameters
 
-*dir*<br/>
+*`dir`*\
 The path used in the file name if there is no TMP environment variable, or if TMP is not a valid directory.
 
-*prefix*<br/>
+*`prefix`*\
 The string that will be pre-pended to names returned by **_tempnam**.
 
-*blockType*<br/>
+*`blockType`*\
 Requested type of memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
-*filename*<br/>
+*`filename`*\
 Pointer to name of source file that requested allocation operation or **NULL**.
 
-*linenumber*<br/>
+*`linenumber`*\
 Line number in source file where allocation operation was requested or **NULL**.
 
-## Return Value
+## Return value
 
-Each function returns a pointer to the name generated or **NULL** if there is a failure. Failure can occur if there is an invalid directory name specified in the TMP environment variable and in the *dir* parameter.
+Each function returns a pointer to the name generated or **NULL** if there is a failure. Failure can occur if there is an invalid directory name specified in the TMP environment variable and in the *`dir`* parameter.
 
 > [!NOTE]
 > **free** (or **free_dbg**) does need to be called for pointers allocated by **_tempnam_dbg** and **_wtempnam_dbg**.
 
 ## Remarks
 
-The **_tempnam_dbg** and **_wtempnam_dbg** functions are identical to **_tempnam** and **_wtempnam** except that, when **_DEBUG** is defined, these functions use the debug version of **malloc** and **_malloc_dbg**, to allocate memory if **NULL** is passed as the first parameter. For more information, see [_malloc_dbg](malloc-dbg.md).
+The **_tempnam_dbg** and **_wtempnam_dbg** functions are identical to **_tempnam** and **_wtempnam** except that, when **_DEBUG** is defined, these functions use the debug version of **malloc** and **_malloc_dbg**, to allocate memory if **NULL** is passed as the first parameter. For more information, see [`_malloc_dbg`](malloc-dbg.md).
 
-You do not need to call these functions explicitly in most cases. Instead, you can define the flag **_CRTDBG_MAP_ALLOC**. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_tempnam** and **_wtempnam** are remapped to **_tempnam_dbg** and **_wtempnam_dbg**, respectively, with the *blockType* set to **_NORMAL_BLOCK**. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
+You do not need to call these functions explicitly in most cases. Instead, you can define the flag **_CRTDBG_MAP_ALLOC**. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_tempnam** and **_wtempnam** are remapped to **_tempnam_dbg** and **_wtempnam_dbg**, respectively, with the *`blockType`* set to **_NORMAL_BLOCK**. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -75,10 +75,10 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 |-------------|---------------------|
 |**_tempnam_dbg**, **_wtempnam_dbg**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>
+[`_tempnam`, `_wtempnam`, `tmpnam`, `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+[Stream I/O](../stream-i-o.md)\
+[Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

@@ -22,10 +22,10 @@ error_t _get_daylight( int* hours );
 
 ### Parameters
 
-*hours*<br/>
+*`hours`*\
 The offset in hours of daylight saving time.
 
-## Return Value
+## Return value
 
 Zero if successful or an **errno** value if an error occurs.
 
@@ -33,7 +33,7 @@ Zero if successful or an **errno** value if an error occurs.
 
 The **_get_daylight** function retrieves the number of hours in daylight saving time as an integer. If daylight saving time is in effect, the default offset is one hour (although a few regions do observe a two-hour offset).
 
-If *hours* is **NULL**, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+If *`hours`* is **NULL**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 We recommend you use this function instead of the macro **_daylight** or the deprecated function **__daylight**.
 
@@ -45,12 +45,12 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_get_daylight**|\<time.h>|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
-[_get_dstbias](get-dstbias.md)<br/>
-[_get_timezone](get-timezone.md)<br/>
-[_get_tzname](get-tzname.md)<br/>
+[Time management](../time-management.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)\
+[`_get_dstbias`](get-dstbias.md)\
+[`_get_timezone`](get-timezone.md)\
+[`_get_tzname`](get-tzname.md)

@@ -41,33 +41,33 @@ unsigned char *_mbsdec_l(
 
 ### Parameters
 
-*start*<br/>
-Pointer to any character (or for **_mbsdec** and **_mbsdec_l**, the first byte of any multibyte character) in the source string; *start* must precede *current* in the source string.
+*`start`*\
+Pointer to any character (or for **_mbsdec** and **_mbsdec_l**, the first byte of any multibyte character) in the source string; *`start`* must precede *`current`* in the source string.
 
-*current*<br/>
-Pointer to any character (or for **_mbsdec** and **_mbsdec_l**, the first byte of any multibyte character) in the source string; *current* must follow *start* in the source string.
+*`current`*\
+Pointer to any character (or for **_mbsdec** and **_mbsdec_l**, the first byte of any multibyte character) in the source string; *`current`* must follow *`start`* in the source string.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
-**_mbsdec**, **_mbsdec_l**, **_strdec**, and **_wcsdec** each return a pointer to the character that immediately precedes *current*; **_mbsdec** returns **NULL** if the value of *start* is greater than or equal to that of *current*. **_tcsdec** maps to one of these functions and its return value depends on the mapping.
+**_mbsdec**, **_mbsdec_l**, **_strdec**, and **_wcsdec** each return a pointer to the character that immediately precedes *`current`*; **_mbsdec** returns **NULL** if the value of *`start`* is greater than or equal to that of *`current`*. **_tcsdec** maps to one of these functions and its return value depends on the mapping.
 
 ## Remarks
 
-The **_mbsdec** and **_mbsdec_l** functions return a pointer to the first byte of the multibyte character that immediately precedes *current* in the string that contains *start*.
+The **_mbsdec** and **_mbsdec_l** functions return a pointer to the first byte of the multibyte character that immediately precedes *`current`* in the string that contains *`start`*.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information.  **_mbsdec** recognizes multibyte-character sequences according to the locale that's currently in use, while **_mbsdec_l** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information.  **_mbsdec** recognizes multibyte-character sequences according to the locale that's currently in use, while **_mbsdec_l** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
-If *start* or *current* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
+If *`start`* or *`current`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
 
 > [!IMPORTANT]
-> These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+> These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -75,7 +75,7 @@ By default, this function's global state is scoped to the application. To change
 
 **_strdec** and **_wcsdec** are single-byte-character and wide-character versions of **_mbsdec** and **_mbsdec_l**. **_strdec** and **_wcsdec** are provided only for this mapping and should not be used otherwise.
 
-For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
+For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
 ## Requirements
 
@@ -86,7 +86,7 @@ For more information, see [Using Generic-Text Mappings](../../c-runtime-library/
 |**_strdec**|\<tchar.h>||
 |**_wcsdec**|\<tchar.h>||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -145,7 +145,7 @@ int main()
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
-[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)<br/>
-[_strninc, _wcsninc, _mbsninc, _mbsninc_l](strninc-wcsninc-mbsninc-mbsninc-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[`_strinc`, `_wcsinc`, `_mbsinc`, `_mbsinc_l`](strinc-wcsinc-mbsinc-mbsinc-l.md)\
+[`_strnextc`, `_wcsnextc`, `_mbsnextc`, `_mbsnextc_l`](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)\
+[`_strninc`, `_wcsninc`, `_mbsninc`, `_mbsninc_l`](strninc-wcsninc-mbsninc-mbsninc-l.md)

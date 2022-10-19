@@ -20,13 +20,13 @@ Internal CRT function. Retrieves the current collation code page of the thread.
 UINT ___lc_codepage_func(void);
 ```
 
-## Return Value
+## Return value
 
 The current collation code page of the thread.
 
 ## Remarks
 
-`___lc_collate_cp_func` is an internal CRT function that is used by other CRT functions to get the current collation code page from the thread local storage for CRT data. This information is also available by using the [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) function.
+`___lc_collate_cp_func` is an internal CRT function that is used by other CRT functions to get the current collation code page from the thread local storage for CRT data. This information is also available by using the [`_get_current_locale`](./reference/get-current-locale.md) function.
 
 Internal CRT functions are implementation-specific and subject to change with each release. We don't recommend their use in your code.
 
@@ -40,7 +40,7 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[_get_current_locale](../c-runtime-library/reference/get-current-locale.md)<br/>
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
-[_free_locale](../c-runtime-library/reference/free-locale.md)
+[`_get_current_locale`](./reference/get-current-locale.md)\
+[`setlocale`, `_wsetlocale`](./reference/setlocale-wsetlocale.md)\
+[`_create_locale`, `_wcreate_locale`](./reference/create-locale-wcreate-locale.md)\
+[`_free_locale`](./reference/free-locale.md)

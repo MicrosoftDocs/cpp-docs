@@ -27,28 +27,28 @@ float trunc( float x ); //C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 The value to truncate.
 
-## Return Value
+## Return value
 
-If successful, returns an integer value of *x*, rounded towards zero.
+If successful, returns an integer value of *`x`*, rounded towards zero.
 
 Otherwise, may return one of the following:
 
 |Issue|Return|
 |-----------|------------|
-|*x* = ±INFINITY|x|
-|*x* =  ±0|x|
-|*x* = NaN|NaN|
+|*`x`* = ±INFINITY|x|
+|*`x`* =  ±0|x|
+|*`x`* = NaN|NaN|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **trunc** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **trunc** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `trunc()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `trunc()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 Because the largest floating-point values are exact integers, this function will not overflow on its own. However, you may cause the function to overflow by returning a value into an integer type.
 
@@ -61,11 +61,11 @@ You can also round down by implicitly converting from floating-point to integral
 |**trunc**, **truncf**, **truncl**|\<math.h>|\<cmath>|
 |**trunc** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[round, roundf, roundl](round-roundf-roundl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`floor`, `floorf`, `floorl`](floor-floorf-floorl.md)\
+[`ceil`, `ceilf`, `ceill`](ceil-ceilf-ceill.md)\
+[`round`, `roundf`, `roundl`](round-roundf-roundl.md)

@@ -56,7 +56,7 @@ The maximum number of multibyte characters to convert.
 *`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
 If **`mbstowcs`** successfully converts the source string, it returns the number of converted multibyte characters. If the *`wcstr`* argument is **`NULL`**, the function returns the required size (in wide characters) of the destination string. If **`mbstowcs`** encounters an invalid multibyte character, it returns -1. If the return value is *`count`*, the wide-character string is not null-terminated.
 
@@ -69,11 +69,11 @@ The **`mbstowcs`** function converts up to a maximum number of *`count`* multiby
 
 If the *`wcstr`* argument is **`NULL`**, **`mbstowcs`** returns the number of wide characters that would result from conversion, not including a null terminator. The source string must be null-terminated for the correct value to be returned. If you need the resulting wide character string to be null-terminated, add one to the returned value.
 
-If the *`mbstr`* argument is **`NULL`**, or if *`count`* is > **`INT_MAX`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to **`EINVAL`** and the function returns -1.
+If the *`mbstr`* argument is **`NULL`**, or if *`count`* is > **`INT_MAX`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to **`EINVAL`** and the function returns -1.
 
-**`mbstowcs`** uses the current locale for any locale-dependent behavior; **`_mbstowcs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**`mbstowcs`** uses the current locale for any locale-dependent behavior; **`_mbstowcs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -84,7 +84,7 @@ By default, this function's global state is scoped to the application. To change
 |**`mbstowcs`**|`<stdlib.h>`|
 |**`_mbstowcs_l`**|`<stdlib.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -183,9 +183,9 @@ Convert back to wide-character string:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Locale](../../c-runtime-library/locale.md)\
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
 [`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
 [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
 [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\

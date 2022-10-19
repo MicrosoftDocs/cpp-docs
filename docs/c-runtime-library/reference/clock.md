@@ -19,7 +19,7 @@ Calculates the wall-clock time used by the calling process.
 clock_t clock( void );
 ```
 
-## Return Value
+## Return value
 
 The elapsed time since the CRT initialization at the start of the process, measured in **`CLOCKS_PER_SEC`** units per second. If the elapsed time is unavailable or has exceeded the maximum positive time that can be recorded as a **`clock_t`** type, the function returns the value `(clock_t)(-1)`.
 
@@ -35,7 +35,7 @@ Given enough time, the value returned by **`clock`** can exceed the maximum posi
 |-------------|---------------------|
 |**`clock`**|`<time.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -90,6 +90,6 @@ Time to do 600000000 empty loops is 1.354 seconds
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)\
+[Time management](../time-management.md)\
 [`difftime`, `_difftime32`, `_difftime64`](difftime-difftime32-difftime64.md)\
 [`time`, `_time32`, `_time64`](time-time32-time64.md)

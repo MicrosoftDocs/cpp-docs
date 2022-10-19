@@ -28,19 +28,19 @@ int _ismbbtrail_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 The integer to be tested.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-**_ismbbtrail** returns a nonzero value if the integer *c* is the second byte of a multibyte character. For example, in code page 932 only, valid ranges are 0x40 to 0x7E and 0x80 to 0xFC.
+**_ismbbtrail** returns a nonzero value if the integer *`c`* is the second byte of a multibyte character. For example, in code page 932 only, valid ranges are 0x40 to 0x7E and 0x80 to 0xFC.
 
 ## Remarks
 
-**_ismbbtrail** uses the current locale for locale-dependent behavior. **_ismbbtrail_l** is identical except that it uses the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_ismbbtrail** uses the current locale for locale-dependent behavior. **_ismbbtrail_l** is identical except that it uses the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -53,9 +53,9 @@ By default, this function's global state is scoped to the application. To change
 
 \* For manifest constants for the test conditions.
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Byte classification](../byte-classification.md)\
+[`_ismbb` routines](../ismbb-routines.md)

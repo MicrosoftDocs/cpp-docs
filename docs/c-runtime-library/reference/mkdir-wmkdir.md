@@ -28,10 +28,10 @@ int _wmkdir(
 
 ### Parameters
 
-*`dirname`*<br/>
+*`dirname`*\
 Path for a new directory.
 
-## Return Value
+## Return value
 
 Each of these functions returns the value 0 if the new directory was created. On an error, the function returns -1 and sets **`errno`** as follows.
 
@@ -39,7 +39,7 @@ Each of these functions returns the value 0 if the new directory was created. On
 
 **`ENOENT`** Path was not found.
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -49,7 +49,7 @@ The **`_mkdir`** function creates a new directory with the specified *`dirname`*
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -62,11 +62,11 @@ By default, this function's global state is scoped to the application. To change
 |**`_mkdir`**|`<direct.h>`|
 |**`_wmkdir`**|`<direct.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -93,7 +93,7 @@ int main( void )
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Directory '\testtmp' was successfully created
@@ -111,6 +111,6 @@ Directory '\testtmp' was successfully removed
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[`_chdir`, `_wchdir`](chdir-wchdir.md)<br/>
-[`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)<br/>
+[Directory control](../directory-control.md)\
+[`_chdir`, `_wchdir`](chdir-wchdir.md)\
+[`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)

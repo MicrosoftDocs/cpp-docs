@@ -26,7 +26,7 @@ int fflush(
 *`stream`*\
 Pointer to **`FILE`** structure.
 
-## Return Value
+## Return value
 
 **`fflush`** returns 0 if the buffer was successfully flushed. The value 0 is also returned in cases in which the specified stream has no buffer or is open for reading only. A return value of **`EOF`** indicates an error.
 
@@ -41,7 +41,7 @@ If *`stream`* is **`NULL`**, the behavior is the same as a call to **`fflush`** 
 
 Buffers are normally maintained by the operating system, which determines the optimal time to write the data automatically to disk: when a buffer is full, when a stream is closed, or when a program terminates normally without closing the stream. The commit-to-disk feature of the run-time library lets you ensure that critical data is written directly to disk rather than to the operating-system buffers. Without rewriting an existing program, you can enable this feature by linking the program's object files with `COMMODE.OBJ`. In the resulting executable file, calls to **`_flushall`** write the contents of all buffers to disk. Only **`_flushall`** and **`fflush`** are affected by `COMMODE.OBJ`.
 
-For information about controlling the commit-to-disk feature, see [Stream I/O](../../c-runtime-library/stream-i-o.md), [`fopen`](fopen-wfopen.md), and [`_fdopen`](fdopen-wfdopen.md).
+For information about controlling the commit-to-disk feature, see [Stream I/O](../stream-i-o.md), [`fopen`](fopen-wfopen.md), and [`_fdopen`](fdopen-wfdopen.md).
 
 This function locks the calling thread and is therefore thread-safe. For a non-locking version, see **`_fflush_nolock`**.
 
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`fflush`**|`<stdio.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -107,7 +107,7 @@ User selected 5
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`fclose`, `_fcloseall`](fclose-fcloseall.md)\
 [`_flushall`](flushall.md)\
 [`setvbuf`](setvbuf.md)

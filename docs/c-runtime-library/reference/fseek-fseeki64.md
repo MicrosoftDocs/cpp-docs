@@ -31,18 +31,18 @@ int _fseeki64(
 
 ### Parameters
 
-*`stream`*<br/>
+*`stream`*\
 Pointer to **`FILE`** structure.
 
-*`offset`*<br/>
+*`offset`*\
 Number of bytes from *`origin`*.
 
-*`origin`*<br/>
+*`origin`*\
 Initial position.
 
-## Return Value
+## Return value
 
-If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* is not one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* is not one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
 
 ## Remarks
 
@@ -79,7 +79,7 @@ By default, this function's global state is scoped to the application. To change
 |**`fseek`**|`<stdio.h>`|
 |**`_fseeki64`**|`<stdio.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -123,8 +123,8 @@ This is the file 'fseek.out'.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`fopen`, `_wfopen`](fopen-wfopen.md)<br/>
-[`ftell`, `_ftelli64`](ftell-ftelli64.md)<br/>
-[`_lseek`, `_lseeki64`](lseek-lseeki64.md)<br/>
-[`rewind`](rewind.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`ftell`, `_ftelli64`](ftell-ftelli64.md)\
+[`_lseek`, `_lseeki64`](lseek-lseeki64.md)\
+[`rewind`](rewind.md)

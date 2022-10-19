@@ -46,7 +46,7 @@ The floating-point value to start from.
 *`y`*\
 The floating-point value to go towards.
 
-## Return Value
+## Return value
 
 Returns the next representable floating-point value of the return type after *`x`* in the direction of *`y`*. If *`x`* and *`y`* are equal, the function returns *`y`*, converted to the return type, with no exception triggered. If *`x`* is not equal to *`y`*, and the result is a denormal or zero, the **`FE_UNDERFLOW`** and **`FE_INEXACT`** floating-point exception states are set, and the correct result is returned. If either *`x`* or *`y`* is a NAN, then the return value is one of the input NANs. If *`x`* is finite and the result is infinite or not representable in the type, a correctly signed infinity or NAN is returned, the **`FE_OVERFLOW`** and **`FE_INEXACT`** floating-point exception states are set, and **`errno`** is set to **`ERANGE`**.
 
@@ -56,7 +56,7 @@ The **`nextafter`** and **`nexttoward`** function families are equivalent, excep
 
 Because C++ allows overloading, if you include `<cmath>` you can call overloads of **`nextafter`** and **`nexttoward`** that return **`float`** and **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`nextafter`** and **`nexttoward`** always return **`double`**.
 
-If you use the `<tgmath.h>` `nextafter()` or `nexttoward()`macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `nextafter()` or `nexttoward()`macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 The **_nextafter** and **_nextafterf** functions are Microsoft-specific. The **_nextafterf** function is only available when compiling for x64.
 
@@ -70,9 +70,9 @@ By default, this function's global state is scoped to the application. To change
 |**`_nextafter`**|`<float.h>`|`<float.h>` or `<cfloat>`|
 |**`nextafter`** macro,  **`nexttoward`** macro| `<tgmath.h>` ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)

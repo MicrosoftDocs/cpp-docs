@@ -69,28 +69,28 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 
 ### Parameters
 
-*`value`*<br/>
+*`value`*\
 Number to be converted.
 
-*`buffer`*<br/>
+*`buffer`*\
 Buffer that holds the result of the conversion.
 
-*`radix`*<br/>
+*`radix`*\
 The base to use for the conversion of *`value`*, which must be in the range 2-36.
 
-*`size`*<br/>
+*`size`*\
 Length of the buffer in units of the character type. This parameter is inferred from the *`buffer`* argument in C++.
 
-## Return Value
+## Return value
 
 Each of these functions returns a pointer to *`buffer`*. There's no error return.
 
 ## Remarks
 
-The **`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, and **`_ui64toa`** functions convert the digits of the given *`value`* argument to a null-terminated character string and store the result (up to 33 characters for **`_itoa`**, **`_ltoa`**, and **`_ultoa`**, and 65 for **`_i64toa`** and **`_ui64toa`**) in *`buffer`*. If *`radix`* equals 10 and *value* is negative, the first character of the stored string is the minus sign (**-**). The **`_itow`**, **`_ltow`**, **`_ultow`**, **`_i64tow`**, and **`_ui64tow`** functions are wide-character versions of **`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, and **`_ui64toa`**, respectively.
+The **`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, and **`_ui64toa`** functions convert the digits of the given *`value`* argument to a null-terminated character string and store the result (up to 33 characters for **`_itoa`**, **`_ltoa`**, and **`_ultoa`**, and 65 for **`_i64toa`** and **`_ui64toa`**) in *`buffer`*. If *`radix`* equals 10 and *`value`* is negative, the first character of the stored string is the minus sign (**-**). The **`_itow`**, **`_ltow`**, **`_ultow`**, **`_i64tow`**, and **`_ui64tow`** functions are wide-character versions of **`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, and **`_ui64toa`**, respectively.
 
 > [!IMPORTANT]
-> These functions can write past the end of a buffer that is too small. To prevent buffer overruns, ensure that *buffer* is large enough to hold the converted digits plus the trailing null-character and a sign character. Misuse of these functions can cause serious security issues in your code.
+> These functions can write past the end of a buffer that is too small. To prevent buffer overruns, ensure that *`buffer`* is large enough to hold the converted digits plus the trailing null-character and a sign character. Misuse of these functions can cause serious security issues in your code.
 
 Because of their potential for security issues, by default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **This function or variable may be unsafe. Consider using *`safe_function`* instead. To disable deprecation, use `_CRT_SECURE_NO_WARNINGS`.** We recommend you change your source code to use the *`safe_function`* suggested by the warning message. The more secure functions do not write more characters than the specified buffer size. For more information, see [`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md).
 
@@ -103,7 +103,7 @@ By default, this function's global state is scoped to the application. To change
 #include <stdlib.h>
 ```
 
-In C++, these functions have template overloads that invoke their safer counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke their safer counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 The POSIX names **`itoa`**, **`ltoa`**, and **`ultoa`** exist as aliases for the **`_itoa`**, **`_ltoa`**, and **`_ultoa`** functions. The POSIX names are deprecated because they do not follow the implementation-specific global function name conventions of ISO C. By default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *`new_name`*. We recommend you change your source code to use the safer versions of these functions, **`_itoa_s`**, **`_ltoa_s`**, or **`_ultoa_s`**. For more information, see [`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md).
 
@@ -141,7 +141,7 @@ int main()
 }
 ```
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -159,7 +159,7 @@ int main()
 |**`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, **`_ui64toa`**|`<stdlib.h>`|
 |**`_itow`**, **`_ltow`**, **`_ultow`**, **`_i64tow`**, **`_ui64tow`**|`<stdlib.h>` or `<wchar.h>`|
 
-These functions and macros are Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+These functions and macros are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -240,5 +240,5 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md)<br/>
+[Data conversion](../data-conversion.md)\
+[`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md)

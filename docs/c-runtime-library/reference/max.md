@@ -22,10 +22,10 @@ A preprocessor macro that returns the larger of two values.
 
 ### Parameters
 
-*a*, *b*<br/>
+*`a`*, *`b`*\
 Values of any numeric type to be compared.
 
-## Return Value
+## Return value
 
 **__max** returns the larger of its arguments.
 
@@ -43,9 +43,9 @@ The argument returned is evaluated twice by the macro. This can lead to unexpect
 
 ## Example
 
-For more information, see the example for [__min](min.md).
+For more information, see the example for [`__min`](min.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[__min](min.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`__min`](min.md)

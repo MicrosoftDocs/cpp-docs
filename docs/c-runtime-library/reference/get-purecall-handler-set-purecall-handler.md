@@ -26,10 +26,10 @@ _purecall_handler __cdecl _set_purecall_handler(
 
 ### Parameters
 
-*function*<br/>
+*`function`*\
 The function to be called when a pure virtual function is called. A **_purecall_handler** function must have a void return type.
 
-## Return Value
+## Return value
 
 The previous **_purecall_handler**. Returns **`nullptr`** if there was no previous handler.
 
@@ -49,7 +49,7 @@ To restore the default behavior, call **_set_purecall_handler** by using a **`nu
 |-------------|---------------------|
 |**_get_purecall_handler**, **_set_purecall_handler**|\<cstdlib> or \<stdlib.h>|
 
-For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -102,5 +102,5 @@ In _purecall_handler.
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[_purecall](purecall.md)<br/>
+[Error handling](../error-handling-crt.md)\
+[`_purecall`](purecall.md)

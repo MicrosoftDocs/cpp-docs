@@ -87,7 +87,7 @@ The function **`__control87_2`** enables both the x87 and SSE2 floating-point un
 
 If you use **`__control87_2`** to set different values for the floating-point control words, then **`_control87`** or **`_controlfp`** might be unable to return a single control word to represent the state of both floating-point units. In such a case, these functions set the **`EM_AMBIGUOUS`** flag in the returned integer value to indicate an inconsistency between the two control words. The **`EM_AMBIGUOUS`** flag is a warning that the returned control word might not represent the state of both floating-point control words accurately.
 
-On the ARM, ARM64, and x64 platforms, changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion, and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+On the ARM, ARM64, and x64 platforms, changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion, and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 > [!NOTE]
 > **`__control87_2`** is not supported on the ARM, ARM64, or x64 platforms. If you use **`__control87_2`** and compile your program for the ARM, ARM64, or x64 platforms, the compiler generates an error.
@@ -112,7 +112,7 @@ For the **`_MCW_EM`** mask, clearing the mask sets the exception, which allows t
 |-------------|---------------------|
 |**`_control87`**, **`_controlfp`**, **`_control87_2`**|`<float.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -162,7 +162,7 @@ Default:  0x0009001f
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`_clear87`, `_clearfp`](clear87-clearfp.md)\
 [`_status87`, `_statusfp`, `_statusfp2`](status87-statusfp-statusfp2.md)\
 [`_controlfp_s`](controlfp-s.md)

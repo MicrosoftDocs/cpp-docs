@@ -26,7 +26,7 @@ If the *`width`* field isn't used, `scanf_s` attempts to read the entire token i
 
 ## The size prefix
 
-The optional prefixes **`h`**, **`hh`**, **`l`**, **`ll`**, **`I64`**, and **`L`** indicate the size of the `argument` (long or short, single-byte character or wide character, depending upon the type character that they modify). These format-specification characters are used with type characters in `scanf` or `wscanf` functions to specify interpretation of arguments as shown in the following table. The type prefix **`I64`** is a Microsoft extension and isn't compatible with Standard C. The type characters and their meanings are described in the "Type Characters for scanf functions" table in [`scanf` Type Field Characters](../c-runtime-library/scanf-type-field-characters.md).
+The optional prefixes **`h`**, **`hh`**, **`l`**, **`ll`**, **`I64`**, and **`L`** indicate the size of the `argument` (long or short, single-byte character or wide character, depending upon the type character that they modify). These format-specification characters are used with type characters in `scanf` or `wscanf` functions to specify interpretation of arguments as shown in the following table. The type prefix **`I64`** is a Microsoft extension and isn't compatible with Standard C. The type characters and their meanings are described in the "Type Characters for scanf functions" table in [`scanf` type field characters](./scanf-type-field-characters.md).
 
 > [!NOTE]
 > The **`h`**, **`l`**, and **`L`** prefixes are Microsoft extensions when used with data of type **`char`**.
@@ -89,7 +89,7 @@ For whatever reason, when the `scanf` function stops reading an input field, the
 
 ## See also
 
-[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[Format Specification Fields: `scanf` and `wscanf` Functions](../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md)<br/>
-[`scanf` Type Field Characters](../c-runtime-library/scanf-type-field-characters.md)<br/>
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](./reference/scanf-scanf-l-wscanf-wscanf-l.md)\
+[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](./reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)\
+[Format specification fields: `scanf` and `wscanf` functions](./format-specification-fields-scanf-and-wscanf-functions.md)\
+[`scanf` type field characters](./scanf-type-field-characters.md)

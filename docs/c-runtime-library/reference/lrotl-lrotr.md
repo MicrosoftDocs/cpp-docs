@@ -23,19 +23,19 @@ unsigned long _lrotr( unsigned long value, int shift );
 
 ### Parameters
 
-*value*<br/>
+*`value`*\
 Value to be rotated.
 
-*shift*<br/>
-Number of bits to shift *value*.
+*`shift`*\
+Number of bits to shift *`value`*.
 
-## Return Value
+## Return value
 
 Both functions return the rotated value. There's no error return.
 
 ## Remarks
 
-The **_lrotl** and **_lrotr** functions rotate *value* by *shift* bits. **_lrotl** rotates the value left, toward more significant bits. **_lrotr** rotates the value right, toward less significant bits. Both functions wrap bits rotated off one end of *value* to the other end.
+The **_lrotl** and **_lrotr** functions rotate *`value`* by *`shift`* bits. **_lrotl** rotates the value left, toward more significant bits. **_lrotr** rotates the value right, toward less significant bits. Both functions wrap bits rotated off one end of *`value`* to the other end.
 
 ## Requirements
 
@@ -43,7 +43,7 @@ The **_lrotl** and **_lrotr** functions rotate *value* by *shift* bits. **_lrotl
 |-------------|---------------------|
 |**_lrotl**, **_lrotr**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -71,5 +71,5 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_rotl, _rotl64, _rotr, _rotr64](rotl-rotl64-rotr-rotr64.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`_rotl`, `_rotl64`, `_rotr`, `_rotr64`](rotl-rotl64-rotr-rotr64.md)

@@ -29,9 +29,9 @@ int _wchdir(
 *`dirname`*\
 Path of new working directory.
 
-## Return Value
+## Return value
 
-These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path couldn't be found, **`errno`** is set to **`ENOENT`**. If *`dirname`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns -1.
+These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path couldn't be found, **`errno`** is set to **`ENOENT`**. If *`dirname`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns -1.
 
 ## Remarks
 
@@ -47,7 +47,7 @@ When you use the optional backslash character (**`\`**) in paths, you must place
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mapping:
+### Generic-text routine mapping
 
 |`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -60,7 +60,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_chdir`**|`<direct.h>`|`<errno.h>`|
 |**`_wchdir`**|`<direct.h>` or `<wchar.h>`|`<errno.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -123,7 +123,7 @@ Directory of c:\windows
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)\
+[Directory control](../directory-control.md)\
 [`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\
 [`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)\
 [`system`, `_wsystem`](system-wsystem.md)

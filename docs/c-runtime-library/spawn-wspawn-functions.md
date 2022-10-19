@@ -14,16 +14,16 @@ Each of the `_spawn` functions creates and executes a new process:
 
 :::row:::
    :::column span="":::
-      [`_spawnl`, `_wspawnl`](../c-runtime-library/reference/spawnl-wspawnl.md)\
-      [`_spawnle`, `_wspawnle`](../c-runtime-library/reference/spawnle-wspawnle.md)\
-      [`_spawnlp`, `_wspawnlp`](../c-runtime-library/reference/spawnlp-wspawnlp.md)\
-      [`_spawnlpe`, `_wspawnlpe`](../c-runtime-library/reference/spawnlpe-wspawnlpe.md)
+      [`_spawnl`, `_wspawnl`](./reference/spawnl-wspawnl.md)\
+      [`_spawnle`, `_wspawnle`](./reference/spawnle-wspawnle.md)\
+      [`_spawnlp`, `_wspawnlp`](./reference/spawnlp-wspawnlp.md)\
+      [`_spawnlpe`, `_wspawnlpe`](./reference/spawnlpe-wspawnlpe.md)
    :::column-end:::
    :::column span="":::
-      [`_spawnv`, `_wspawnv`](../c-runtime-library/reference/spawnv-wspawnv.md)\
-      [`_spawnve`, `_wspawnve`](../c-runtime-library/reference/spawnve-wspawnve.md)\
-      [`_spawnvp`, `_wspawnvp`](../c-runtime-library/reference/spawnvp-wspawnvp.md)\
-      [`_spawnvpe`, `_wspawnvpe`](../c-runtime-library/reference/spawnvpe-wspawnvpe.md)
+      [`_spawnv`, `_wspawnv`](./reference/spawnv-wspawnv.md)\
+      [`_spawnve`, `_wspawnve`](./reference/spawnve-wspawnve.md)\
+      [`_spawnvp`, `_wspawnvp`](./reference/spawnvp-wspawnvp.md)\
+      [`_spawnvpe`, `_wspawnvpe`](./reference/spawnvpe-wspawnvpe.md)
    :::column-end:::
 :::row-end:::
 
@@ -40,7 +40,7 @@ The letters at the end of the function name determine the variation.
 
 The `_spawn` functions each create and execute a new process. They automatically handle multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. The `_wspawn` functions are wide-character versions of the `_spawn` functions; they don't handle multibyte-character strings. Otherwise, the `_wspawn` functions behave identically to their `_spawn` counterparts.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -73,7 +73,7 @@ In the past, some of these functions set `errno` to zero on success; the current
 > [!NOTE]
 > To ensure proper overlay initialization and termination, do not use the `setjmp` or `longjmp` function to enter or leave an overlay routine.
 
-## Arguments for the Spawned Process
+## Arguments for the spawned process
 
 To pass arguments to the new process, give one or more pointers to character strings as arguments in the `_spawn` call. These character strings form the argument list for the spawned process. The combined length of the strings forming the argument list for the new process must not exceed 1024 bytes. The terminating null character ('\0') for each string isn't included in the count, but space characters (automatically inserted to separate arguments) are included.
 
@@ -105,7 +105,7 @@ If you're calling `_spawn` from a DLL or a GUI application and want to redirect 
 
 - Use the Win32 API to create a pipe, then call [`AllocConsole`](/windows/console/allocconsole), set the handle values in the startup structure, and call [`CreateProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw).
 
-- Call [`_popen` or `_wpopen`](../c-runtime-library/reference/popen-wpopen.md), which will create a pipe and invoke the app using **`cmd.exe /c`** (or **`command.exe /c`**).
+- Call [`_popen` or `_wpopen`](./reference/popen-wpopen.md), which will create a pipe and invoke the app using **`cmd.exe /c`** (or **`command.exe /c`**).
 
 ## Example
 
@@ -192,13 +192,13 @@ from SPAWN!
 
 ## See also
 
-[Process and Environment Control](../c-runtime-library/process-and-environment-control.md)\
-[`abort`](../c-runtime-library/reference/abort.md)\
-[`atexit`](../c-runtime-library/reference/atexit.md)\
-[`_exec`, `_wexec` Functions](../c-runtime-library/exec-wexec-functions.md)\
-[`exit`, `_Exit`, `_exit`](../c-runtime-library/reference/exit-exit-exit.md)\
-[`_flushall`](../c-runtime-library/reference/flushall.md)\
-[`_getmbcp`](../c-runtime-library/reference/getmbcp.md)\
-[`_onexit`, `_onexit_m`](../c-runtime-library/reference/onexit-onexit-m.md)\
-[`_setmbcp`](../c-runtime-library/reference/setmbcp.md)\
-[`system`, `_wsystem`](../c-runtime-library/reference/system-wsystem.md)
+[Process and environment control](./process-and-environment-control.md)\
+[`abort`](./reference/abort.md)\
+[`atexit`](./reference/atexit.md)\
+[`_exec`, `_wexec` functions](./exec-wexec-functions.md)\
+[`exit`, `_Exit`, `_exit`](./reference/exit-exit-exit.md)\
+[`_flushall`](./reference/flushall.md)\
+[`_getmbcp`](./reference/getmbcp.md)\
+[`_onexit`, `_onexit_m`](./reference/onexit-onexit-m.md)\
+[`_setmbcp`](./reference/setmbcp.md)\
+[`system`, `_wsystem`](./reference/system-wsystem.md)

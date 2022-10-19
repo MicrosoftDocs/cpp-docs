@@ -28,23 +28,23 @@ long double acosh( long double x );  // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value.
 
-## Return Value
+## Return value
 
-The **acosh** functions return the inverse hyperbolic cosine (arc hyperbolic cosine) of *x*. These functions are valid over the domain *x* ≥ 1. If *x* is less than 1, `errno` is set to `EDOM`, and the result is a quiet NaN. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
+The **acosh** functions return the inverse hyperbolic cosine (arc hyperbolic cosine) of *`x`*. These functions are valid over the domain *`x`* ≥ 1. If *`x`* is less than 1, `errno` is set to `EDOM`, and the result is a quiet NaN. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, INF|none|none|
-|*x* < 1|none|none|
+|*`x`* < 1|none|none|
 
 ## Remarks
 
 When you use C++, you can call overloads of **acosh** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **acosh** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `acosh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `acosh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |**acosh**, **acoshf**, **acoshl**|\<math.h>|\<cmath>|
 |**acosh()** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -87,9 +87,9 @@ acosh( 1.324609 ) = 0.785398
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)
+[Math and floating-point support](../floating-point-support.md)\
+[`asinh`, `asinhf`, `asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh`, `atanhf`, `atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh`, `coshf`, `coshl`](cosh-coshf-coshl.md)\
+[`sinh`, `sinhf`, `sinhl`](sinh-sinhf-sinhl.md)\
+[`tanh`, `tanhf`, `tanhl`](tanh-tanhf-tanhl.md)

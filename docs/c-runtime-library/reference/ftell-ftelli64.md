@@ -29,11 +29,11 @@ __int64 _ftelli64(
 *`stream`*\
 Target **`FILE`** structure.
 
-## Return Value
+## Return value
 
-**`ftell`** and **`_ftelli64`** return the current file position. The value returned by **`ftell`** and **`_ftelli64`** may not reflect the physical byte offset for streams opened in text mode, because text mode causes carriage return-line feed translation. Use **`ftell`** with [`fseek`](fseek-fseeki64.md) or **`_ftelli64`** with [`_fseeki64`](fseek-fseeki64.md) to return to file locations correctly. On error, **`ftell`** and **`_ftelli64`** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1L and set **`errno`** to one of two constants, defined in `ERRNO.H`. The **`EBADF`** constant means the *`stream`* argument isn't a valid file pointer value or doesn't refer to an open file. **`EINVAL`** means an invalid *`stream`* argument was passed to the function. On devices incapable of seeking (such as terminals and printers), or when *`stream`* doesn't refer to an open file, the return value is undefined.
+**`ftell`** and **`_ftelli64`** return the current file position. The value returned by **`ftell`** and **`_ftelli64`** may not reflect the physical byte offset for streams opened in text mode, because text mode causes carriage return-line feed translation. Use **`ftell`** with [`fseek`](fseek-fseeki64.md) or **`_ftelli64`** with [`_fseeki64`](fseek-fseeki64.md) to return to file locations correctly. On error, **`ftell`** and **`_ftelli64`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1L and set **`errno`** to one of two constants, defined in `ERRNO.H`. The **`EBADF`** constant means the *`stream`* argument isn't a valid file pointer value or doesn't refer to an open file. **`EINVAL`** means an invalid *`stream`* argument was passed to the function. On devices incapable of seeking (such as terminals and printers), or when *`stream`* doesn't refer to an open file, the return value is undefined.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |**`ftell`**|`<stdio.h>`|`<errno.h>`|
 |**`_ftelli64`**|`<stdio.h>`|`<errno.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -92,7 +92,7 @@ Position after trying to read 100 bytes: 100
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`fopen`, `_wfopen`](fopen-wfopen.md)\
 [`fgetpos`](fgetpos.md)\
 [`fseek`, `_fseeki64`](fseek-fseeki64.md)\

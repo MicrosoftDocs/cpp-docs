@@ -30,9 +30,9 @@ long double acos( long double x );   // C++ only
 *`x`*\
 Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).
 
-## Return Value
+## Return value
 
-The **`acos`** function returns the arccosine of *x* in the range 0 to π radians.
+The **`acos`** function returns the arccosine of *`x`* in the range 0 to π radians.
 
 By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an indefinite.
 
@@ -46,7 +46,7 @@ By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an in
 
 Because C++ allows overloading, you can call overloads of **`acos`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`acos`** always takes and returns a **`double`**.
 
-If you use the `<tgmath.h>` `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -109,7 +109,7 @@ Arccosine of 0.000000 = 1.570796
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
 [`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
 [`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\

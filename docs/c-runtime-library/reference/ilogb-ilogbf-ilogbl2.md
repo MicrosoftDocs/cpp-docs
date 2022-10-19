@@ -42,12 +42,12 @@ int ilogbl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The specified value.
 
-## Return Value
+## Return value
 
-If successful, return the base-2 exponent of *x* as a **`signed int`** value.
+If successful, return the base-2 exponent of *`x`* as a **`signed int`** value.
 
 Otherwise, returns one of the following values, defined in \<math.h>:
 
@@ -56,13 +56,13 @@ Otherwise, returns one of the following values, defined in \<math.h>:
 |±0|FP_ILOGB0|
 |±inf, ±nan, indefinite|FP_ILOGBNAN|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **ilogb** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **ilogb** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `ilogb()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `ilogb()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 Calling this function is similar to calling the equivalent **logb** function, then casting the return value to **`int`**.
 
@@ -73,10 +73,10 @@ Calling this function is similar to calling the equivalent **logb** function, th
 |**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
 |**ilogb** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[frexp](frexp.md)<br/>
-[logb, logbf, logbl, _logb, _logbf](logb-logbf-logbl-logb-logbf.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`frexp`](frexp.md)\
+[`logb`, `logbf`, `logbl`, `_logb`, `_logbf`](logb-logbf-logbl-logb-logbf.md)

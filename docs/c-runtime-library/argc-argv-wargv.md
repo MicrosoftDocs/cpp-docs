@@ -41,10 +41,10 @@ For portable code, we recommend you use the arguments passed to `main` to get th
 |---------------------|---------------------|
 |`__argc`, `__argv`, `__wargv`|\<stdlib.h>, \<cstdlib> (C++)|
 
-`__argc`, `__argv`, and `__wargv` are Microsoft extensions. For compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
+`__argc`, `__argv`, and `__wargv` are Microsoft extensions. For compatibility information, see [Compatibility](./compatibility.md).
 
 ## See also
 
-[Global variables](../c-runtime-library/global-variables.md)\
+[Global variables](./global-variables.md)\
 [`main` function and command-line arguments (C++)](../cpp/main-function-command-line-args.md)\
 [Using `wmain` instead of `main`](../cpp/main-function-command-line-args.md)

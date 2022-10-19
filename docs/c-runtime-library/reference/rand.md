@@ -19,7 +19,7 @@ Generates a pseudorandom number. A more programmatically secure version of this 
 int rand(void);
 ```
 
-## Return Value
+## Return value
 
 **`rand`** returns a pseudorandom number, as described above. There's no error return.
 
@@ -37,7 +37,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`rand`**|`<stdlib.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -120,7 +120,7 @@ Random number in a range demo ====
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`srand`](srand.md)\
 [`rand_s`](rand-s.md)\
 [C++ `<random>` library](../../standard-library/random.md)

@@ -27,10 +27,10 @@ _invalid_parameter_handler _set_thread_local_invalid_parameter_handler(
 
 ### Parameters
 
-*pNew*<br/>
+*`pNew`*\
 The function pointer to the new invalid parameter handler.
 
-## Return Value
+## Return value
 
 A pointer to the invalid parameter handler before the call.
 
@@ -52,7 +52,7 @@ void _invalid_parameter(
 );
 ```
 
-The *expression* argument is a wide string representation of the argument expression that raised the error. The *function* argument is the name of the CRT function that received the invalid argument. The *file* argument is the name of the CRT source file that contains the function. The *line* argument is the line number in that file. The last argument is reserved. The parameters all have the value **NULL** unless a debug version of the CRT library is used.
+The *`expression`* argument is a wide string representation of the argument expression that raised the error. The *`function`* argument is the name of the CRT function that received the invalid argument. The *`file`* argument is the name of the CRT source file that contains the function. The *`line`* argument is the line number in that file. The last argument is reserved. The parameters all have the value **NULL** unless a debug version of the CRT library is used.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -62,11 +62,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_set_invalid_parameter_handler**, **_set_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h>|
 
-The **_set_invalid_parameter_handler** and **_set_thread_local_invalid_parameter_handler** functions are Microsoft-specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_set_invalid_parameter_handler** and **_set_thread_local_invalid_parameter_handler** functions are Microsoft-specific. For compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [_CrtSetReportMode](crtsetreportmode.md).
+In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [`_CrtSetReportMode`](crtsetreportmode.md).
 
 ```C
 // crt_set_invalid_parameter_handler.c
@@ -112,6 +112,6 @@ Expression: format != nullptr
 
 ## See also
 
-[_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)<br/>
-[Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[`_get_invalid_parameter_handler`, `_get_thread_local_invalid_parameter_handler`](get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)\
+[Security-enhanced versions of CRT functions](../security-enhanced-versions-of-crt-functions.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)

@@ -37,7 +37,7 @@ Amount of memory to reserve.
 *`textmode`*\
 File mode.
 
-## Return Value
+## Return value
 
 Returns 0 if successful. Returns -1 to indicate an error. On error, **`errno`** is set to one of these values:
 
@@ -47,7 +47,7 @@ Returns 0 if successful. Returns -1 to indicate an error. On error, **`errno`** 
 
 - **`EINVAL`**, which indicates that either the array *`pfds`* is a null pointer or that an invalid value for *`textmode`* was passed in.
 
-For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -59,7 +59,7 @@ The standard output descriptor of **`PROGRAM1`** is attached to the pipe's write
 
 The **`_pipe`** function returns two file descriptors to the pipe in the *`pfds`* argument. The element *`pfds`*[0] contains the read descriptor, and the element *`pfds`*[1] contains the write descriptor. Pipe file descriptors are used in the same way as other file descriptors. (The low-level input and output functions **`_read`** and **`_write`** can read from and write to a pipe.) To detect the end-of-pipe condition, check for a **`_read`** request that returns 0 as the number of bytes read.
 
-The *`psize`* argument specifies the amount of memory, in bytes, to reserve for the pipe. The *`textmode`* argument specifies the translation mode for the pipe. The manifest constant **`_O_TEXT`** specifies a text translation, and the constant **`_O_BINARY`** specifies binary translation. (See [`fopen`, `_wfopen`](fopen-wfopen.md) for a description of text and binary modes.) If the *`textmode`* argument is 0, **`_pipe`** uses the default translation mode that's specified by the default-mode variable [`_fmode`](../../c-runtime-library/fmode.md).
+The *`psize`* argument specifies the amount of memory, in bytes, to reserve for the pipe. The *`textmode`* argument specifies the translation mode for the pipe. The manifest constant **`_O_TEXT`** specifies a text translation, and the constant **`_O_BINARY`** specifies binary translation. (See [`fopen`, `_wfopen`](fopen-wfopen.md) for a description of text and binary modes.) If the *`textmode`* argument is 0, **`_pipe`** uses the default translation mode that's specified by the default-mode variable [`_fmode`](../fmode.md).
 
 In multithreaded programs, no locking is performed. The file descriptors that are returned are newly opened and shouldn't be referenced by any thread until after the **`_pipe`** call is complete.
 
@@ -79,11 +79,11 @@ By default, this function's global state is scoped to the application. To change
 
 <sup>2</sup> **`errno`** definitions.
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example 1
 
@@ -321,5 +321,5 @@ This is speaker beep number 10...
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`_open`, `_wopen`](open-wopen.md)

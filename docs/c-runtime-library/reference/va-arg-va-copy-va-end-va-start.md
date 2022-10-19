@@ -39,22 +39,22 @@ void va_start(
 
 ### Parameters
 
-*`type`*<br/>
+*`type`*\
 Type of argument to be retrieved.
 
-*`arg_ptr`*<br/>
+*`arg_ptr`*\
 Pointer to the list of arguments.
 
-*`dest`*<br/>
+*`dest`*\
 Pointer to the list of arguments to be initialized from *`src`*
 
-*`src`*<br/>
+*`src`*\
 Pointer to the initialized list of arguments to copy to *`dest`*.
 
-*`prev_param`*<br/>
+*`prev_param`*\
 Parameter that precedes the first optional argument.
 
-## Return Value
+## Return value
 
 **`va_arg`** returns the current argument. **`va_copy`**, **`va_start`** and **`va_end`** do not return values.
 
@@ -125,7 +125,7 @@ Notice that **`testit`** expects its second parameter to be either an **`int`** 
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -194,5 +194,5 @@ Deviation is: 0.000000
 
 ## See also
 
-[Argument Access](../../c-runtime-library/argument-access.md)<br/>
-[`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>
+[Argument access](../argument-access.md)\
+[`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)

@@ -24,12 +24,12 @@ int mbsinit(
 
 ### Parameters
 
-*ps*<br/>
-A pointer to an [mbstate_t](../../c-runtime-library/standard-types.md) variable.
+*`ps`*\
+A pointer to an [`mbstate_t`](../standard-types.md) variable.
 
-## Return Value
+## Return value
 
-Nonzero if *ps* is **NULL** or if not in the middle of a conversion.
+Nonzero if *`ps`* is **NULL** or if not in the middle of a conversion.
 
 ## Remarks
 
@@ -131,7 +131,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Locale set to: "Japanese_Japan.932"
@@ -145,4 +145,4 @@ WC String: AaBbCcxXyYzZ
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+[Byte classification](../byte-classification.md)

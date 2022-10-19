@@ -28,23 +28,23 @@ int _ismbblead_l(
 
 ### Parameters
 
-*c*\
+*`c`*\
 Integer to be tested.
 
-*locale*\
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Returns a nonzero value if the integer *c* is the first byte of a multibyte character.
+Returns a nonzero value if the integer *`c`* is the first byte of a multibyte character.
 
 ## Remarks
 
 Multibyte characters consist of a lead byte followed by a trailing byte. Lead bytes are distinguished by being in a particular range for a given character set. For example, in code page 932 only, lead bytes range from 0x81 - 0x9F and 0xE0 - 0xFC.
 
-**_ismbblead** uses the current locale for locale-dependent behavior. **_ismbblead_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_ismbblead** uses the current locale for locale-dependent behavior. **_ismbblead_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (false), whether *c* is a lead byte or not.
+When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (false), whether *`c`* is a lead byte or not.
 
 **_ismbblead** and **_ismbblead_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mbrlen** instead.
 
@@ -65,10 +65,10 @@ By default, this function's global state is scoped to the application. To change
 
 \* For manifest constants for the test conditions.
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Byte classification](../../c-runtime-library/byte-classification.md)\
-[_ismbb routines](../../c-runtime-library/ismbb-routines.md)\
-[mbrlen](mbrlen.md)
+[Byte classification](../byte-classification.md)\
+[`_ismbb` routines](../ismbb-routines.md)\
+[`mbrlen`](mbrlen.md)

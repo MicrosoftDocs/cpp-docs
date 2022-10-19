@@ -35,12 +35,12 @@ int fpclassify(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to test.
 
-## Return Value
+## Return value
 
-**fpclassify** returns an integer value that indicates the floating-point class of the argument *x*. This table shows the possible values returned by **fpclassify**, defined in \<math.h>.
+**fpclassify** returns an integer value that indicates the floating-point class of the argument *`x`*. This table shows the possible values returned by **fpclassify**, defined in \<math.h>.
 
 |Value|Description|
 |-----------|-----------------|
@@ -60,9 +60,9 @@ In C, **fpclassify** is a macro; in C++, **fpclassify** is a function overloaded
 |---------------------|---------------------------|-------------------------------|
 |**fpclassify**|\<math.h>|\<math.h> or \<cmath>|
 
-The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and C++11 specifications. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and C++11 specifications. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)

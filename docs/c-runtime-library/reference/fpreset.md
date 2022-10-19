@@ -32,7 +32,7 @@ This function is deprecated when compiling with [/clr (Common Language Runtime C
 |--------------|---------------------|
 |**_fpreset**|\<float.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -150,8 +150,8 @@ Error 131: Divide by zero
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[signal](signal.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`signal`](signal.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

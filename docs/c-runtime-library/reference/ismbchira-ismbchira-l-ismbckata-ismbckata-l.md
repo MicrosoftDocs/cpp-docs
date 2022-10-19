@@ -38,28 +38,28 @@ int _ismbckata_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c* <= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *`c`* <= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
 ## Remarks
 
 Each of these functions tests a given multibyte character for a given condition.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
 |Routine|Test condition (code page 932 only)|
 |-------------|-------------------------------------------|
-|**_ismbchira**|Double-byte Hiragana: 0x829F<=*c*<=0x82F1.|
-|**_ismbchira_l**|Double-byte Hiragana: 0x829F<=*c*<=0x82F1.|
-|**_ismbckata**|Double-byte katakana: 0x8340<=*c*<=0x8396.|
-|**_ismbckata_l**|Double-byte katakana: 0x8340<=*c*<=0x8396.|
+|**_ismbchira**|Double-byte Hiragana: 0x829F<=*`c`*<=0x82F1.|
+|**_ismbchira_l**|Double-byte Hiragana: 0x829F<=*`c`*<=0x82F1.|
+|**_ismbckata**|Double-byte katakana: 0x8340<=*`c`*<=0x8396.|
+|**_ismbckata_l**|Double-byte katakana: 0x8340<=*`c`*<=0x8396.|
 
 **End Code Page 932 Specific**
 
@@ -74,12 +74,12 @@ By default, this function's global state is scoped to the application. To change
 |**_ismbckata**|\<mbstring.h>|
 |**_ismbckata_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Character classification](../character-classification.md)\
+[`_ismbc` routines](../ismbc-routines.md)\
+[`is`, `isw` routines](../is-isw-routines.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)

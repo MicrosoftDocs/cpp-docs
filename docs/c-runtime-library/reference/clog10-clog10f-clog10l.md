@@ -29,10 +29,10 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 The base of the logarithm.
 
-## Return Value
+## Return value
 
 The possible return values are:
 
@@ -54,11 +54,11 @@ Because C++ allows overloading, you can call overloads of **clog10** that take a
 |-------------|--------------|------------------|
 |**clog10**,               **clog10f**, **clogl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
-[clog, clogf, clogl](clog-clogf-clogl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`cexp`, `cexpf`, `cexpl`](cexp-cexpf-cexpl.md)\
+[`cpow`, `cpowf`, `cpowl`](cpow-cpowf-cpowl.md)\
+[`clog`, `clogf`, `clogl`](clog-clogf-clogl.md)

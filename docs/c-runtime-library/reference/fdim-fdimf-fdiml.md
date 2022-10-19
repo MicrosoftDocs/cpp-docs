@@ -53,7 +53,7 @@ The first value.
 *`y`*\
 The second value.
 
-## Return Value
+## Return value
 
 Returns the positive difference between *`x`* and *`y`*:
 
@@ -70,13 +70,13 @@ Otherwise, may return one of the following errors:
 |Underflow range error|correct value (after rounding)|
 |*`x`* or *`y`* is NaN|NaN|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **fdim** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **fdim** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `fdim()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `fdim()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 
@@ -87,10 +87,10 @@ Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 |**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|
 |**fdim** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>
-[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`fmax`, `fmaxf`, `fmaxl`](fmax-fmaxf-fmaxl.md)\
+[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)\

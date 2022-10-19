@@ -37,24 +37,24 @@ long double floorl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value.
 
-## Return Value
+## Return value
 
-The **floor** functions return a floating-point value that represents the largest integer that is less than or equal to *x*. There's no error return.
+The **floor** functions return a floating-point value that represents the largest integer that is less than or equal to *`x`*. There's no error return.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
-|± QNAN,IND|none|_DOMAIN|
+|± QNAN, IND|none|_DOMAIN|
 
-**floor** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
+**floor** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [`_set_SSE2_enable`](set-sse2-enable.md).
 
 ## Remarks
 
 C++ allows overloading, so you can call overloads of **floor** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **floor** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `floor()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `floor()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 |**floor**, **floorf**, **floorl**|\<math.h>|
 |**floor** macro | \<tgmath.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -104,7 +104,7 @@ The ceil of -2.8 is -2.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[round, roundf, roundl](round-roundf-roundl.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`ceil`, `ceilf`, `ceill`](ceil-ceilf-ceill.md)\
+[`round`, `roundf`, `roundl`](round-roundf-roundl.md)\
+[`fmod`, `fmodf`](fmod-fmodf.md)

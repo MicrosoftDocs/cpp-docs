@@ -25,5 +25,5 @@ The `_cwait` function can be used by any process to wait for any other process (
 
 ## See also
 
-[_cwait](../c-runtime-library/reference/cwait.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[`_cwait`](./reference/cwait.md)\
+[Global constants](./global-constants.md)

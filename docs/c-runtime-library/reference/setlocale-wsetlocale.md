@@ -39,7 +39,7 @@ Locale specifier.
 
 If a valid *`locale`* and *`category`* are given, returns a pointer to the string associated with the specified *`locale`* and *`category`*.
 
-If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
+If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
 
 The call
 
@@ -63,7 +63,7 @@ Use the `setlocale` function to set, change, or query some or all of the current
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 
 The *`category`* argument specifies the parts of a program's locale information that are affected. The macros used for *`category`* and the parts of the program they affect are as follows:
 
-|*category* flag|Affects|
+|*`category`* flag|Affects|
 |-|-|
 | `LC_ALL` | All categories, as listed below. |
 | `LC_COLLATE` | The `strcoll`, `_stricoll`, `wcscoll`, `_wcsicoll`, `strxfrm`, `_strncoll`, `_strnicoll`, `_wcsncoll`, `_wcsnicoll`, and `wcsxfrm` functions. |
@@ -80,15 +80,15 @@ The *`category`* argument specifies the parts of a program's locale information 
 | `LC_NUMERIC` | Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` sets the thousands separator and the grouping control string returned by [`localeconv`](localeconv.md). |
 | `LC_TIME` | The `strftime` and `wcsftime` functions. |
 
-This function validates the category parameter. If the category parameter isn't one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
+This function validates the category parameter. If the category parameter isn't one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
 
-The *`locale`* argument is a pointer to a string that specifies the locale. For information about the format of the *`locale`* argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). If *`locale`* points to an empty string, the locale is the implementation-defined native environment. A value of `C` specifies the minimal ANSI conforming environment for C translation. The `C` locale assumes that all `char` data types are 1 byte and that their value is always less than 256.
+The *`locale`* argument is a pointer to a string that specifies the locale. For information about the format of the *`locale`* argument, see [Locale names, Languages, and Country/Region strings](../locale-names-languages-and-country-region-strings.md). If *`locale`* points to an empty string, the locale is the implementation-defined native environment. A value of `C` specifies the minimal ANSI conforming environment for C translation. The `C` locale assumes that all `char` data types are 1 byte and that their value is always less than 256.
 
 At program startup, the equivalent of the following statement is executed:
 
 `setlocale( LC_ALL, "C" );`
 
-The *`locale`* argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all those supported by the Windows NLS API. The set of locale names supported by `setlocale` is described in [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `setlocale` are listed in [Language Strings](../../c-runtime-library/language-strings.md) and [Country/Region Strings](../../c-runtime-library/country-region-strings.md). We recommend the locale name form for performance and for maintainability of locale strings embedded in code or serialized to storage. The locale name strings are less likely to be changed by an operating system update than the language and country/region name form.
+The *`locale`* argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all those supported by the Windows NLS API. The set of locale names supported by `setlocale` is described in [Locale names, Languages, and Country/Region strings](../locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `setlocale` are listed in [Language strings](../language-strings.md) and [Country/Region strings](../country-region-strings.md). We recommend the locale name form for performance and for maintainability of locale strings embedded in code or serialized to storage. The locale name strings are less likely to be changed by an operating system update than the language and country/region name form.
 
 A null pointer that's passed as the *`locale`* argument tells `setlocale` to query instead of to set the international environment. If the *`locale`* argument is a null pointer, the program's current locale setting isn't changed. Instead, `setlocale` returns a pointer to the string that's associated with the *`category`* of the thread's current locale. If the *`category`* argument is `LC_ALL`, the function returns a string that indicates the current setting of each category, separated by semicolons. For example, the sequence of calls
 
@@ -170,7 +170,7 @@ For more information, see the [`setlocale`](../../preprocessor/setlocale.md) pra
 
 The function [`_configthreadlocale`](configthreadlocale.md) is used to control whether `setlocale` affects the locale of all threads in a program or only the locale of the calling thread.
 
-## UTF-8 Support
+## UTF-8 support
 
 Starting in Windows 10 version 1803 (10.0.17134.0), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
 
@@ -206,7 +206,7 @@ To use this feature on an OS prior to Windows 10, you must use [app-local deploy
 |`setlocale`|`<locale.h>`|
 |`_wsetlocale`|`<locale.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -314,17 +314,17 @@ The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
 
 ## See also
 
-[Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
+[Locale names, Languages, and Country/Region strings](../locale-names-languages-and-country-region-strings.md)\
 [`_configthreadlocale`](configthreadlocale.md)\
 [`_create_locale`, `_wcreate_locale`](create-locale-wcreate-locale.md)\
-[Locale](../../c-runtime-library/locale.md)\
+[Locale](../locale.md)\
 [`localeconv`](localeconv.md)\
 [`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
 [`strlen`, `wcslen`, `_mbslen`, `_mbslen_l`, `_mbstrlen`, `_mbstrlen_l`](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)\
 [`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
 [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
 [`_setmbcp`](setmbcp.md)\
-[`strcoll` Functions](../../c-runtime-library/strcoll-functions.md)\
+[`strcoll` functions](../strcoll-functions.md)\
 [`strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`](strftime-wcsftime-strftime-l-wcsftime-l.md)\
 [`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)\
 [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\

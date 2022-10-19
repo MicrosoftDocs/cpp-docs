@@ -24,16 +24,16 @@ int wctob(
 
 ### Parameters
 
-*wchar*<br/>
+*`wchar`*\
 Value to translate.
 
-## Return Value
+## Return value
 
 If **wctob** successfully converts a wide character, it returns its multibyte character representation, only if the multibyte character is exactly one byte long. If **wctob** encounters a wide character it cannot convert to a multibyte character or the multibyte character is not exactly one byte long, it returns a -1.
 
 ## Remarks
 
-The **wctob** function converts a wide character contained in *wchar* to the corresponding multibyte character passed by the return **`int`** value, if the multibyte character is exactly one byte long.
+The **wctob** function converts a wide character contained in *`wchar`* to the corresponding multibyte character passed by the return **`int`** value, if the multibyte character is exactly one byte long.
 
 If **wctob** was unsuccessful and no corresponding multibyte character was found, the function sets **errno** to **EILSEQ** and returns -1.
 
@@ -45,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**wctob**|\<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -83,10 +83,10 @@ Determined the corresponding multibyte character to be "A".
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`wctomb`, `_wctomb_l`](wctomb-wctomb-l.md)\
+[WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)

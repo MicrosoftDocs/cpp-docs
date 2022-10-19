@@ -11,7 +11,7 @@ helpviewer_keywords: ["_wfopen_s function", "opening files, for file I/O", "_tfo
 ---
 # `fopen_s`, `_wfopen_s`
 
-Opens a file. These versions of [`fopen`, `_wfopen`](fopen-wfopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Opens a file. These versions of [`fopen`, `_wfopen`](fopen-wfopen.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -41,7 +41,7 @@ Type of access permitted.
 
 ## Return value
 
-Zero if successful; an error code on failure. For more information about these error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful; an error code on failure. For more information about these error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Error conditions
 
@@ -55,13 +55,13 @@ Zero if successful; an error code on failure. For more information about these e
 
 The **`fopen_s`** and **`_wfopen_s`** functions can't open a file for sharing. If you need to share the file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, use **`_SH_DENYNO`** for read/write sharing.
 
-The **`fopen_s`** function opens the file that's specified by *filename*. **`_wfopen_s`** is a wide-character version of **`fopen_s`**; the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically otherwise.
+The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_wfopen_s`** is a wide-character version of **`fopen_s`**; the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically otherwise.
 
 **`fopen_s`** accepts paths that are valid on the file system at the point of execution; UNC paths and paths that involve mapped network drives are accepted by **`fopen_s`** as long as the system that's executing the code has access to the share or mapped network drive at the time of execution. When you construct paths for **`fopen_s`**, don't make assumptions about the availability of drives, paths, or network shares in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.
 
-These functions validate their parameters. If *`pFile`*, *`filename`*, or *`mode`* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions validate their parameters. If *`pFile`*, *`filename`*, or *`mode`* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md).
 
-Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned and the global variable **`errno`** is set. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned and the global variable **`errno`** is set. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
@@ -122,14 +122,14 @@ In text (translated) mode, **CTRL**+**Z** is interpreted as an end-of-file chara
 
 Also, in text mode, carriage return/line feed (CRLF) combinations are translated into single line feed (LF) characters on input, and LF characters are translated to CRLF combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. The Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **`mbtowc`** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **`wctomb`** function).
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
 
-For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
+For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [Unicode stream I/O in text and binary modes](../unicode-stream-i-o-in-text-and-binary-modes.md).
 
 | *`mode`* modifier | Behavior |
 |--|--|
 | **`c`** | Enable the commit flag for the associated *`filename`* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
-| **`n`** | Reset the commit flag for the associated *`filename`* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`COMMODE.OBJ`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`COMMODE.OBJ`* (see [Link Options](../../c-runtime-library/link-options.md)). |
+| **`n`** | Reset the commit flag for the associated *`filename`* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`COMMODE.OBJ`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`COMMODE.OBJ`* (see [Link options](../link-options.md)). |
 | **`N`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
@@ -172,7 +172,7 @@ If you're using **`rb`** mode, memory mapped Win32 files might also be an option
 | **`fopen_s`** | `<stdio.h>` | `<cstdio>` |
 | **`_wfopen_s`** | `<stdio.h>` or `<wchar.h>` | `<cstdio>` |
 
-For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../compatibility.md).
 
 ### Generic-text routine mappings
 
@@ -182,7 +182,7 @@ For more information on standards conformance and naming conventions in the C ru
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -250,7 +250,7 @@ Number of files closed by _fcloseall: 1
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`fclose`, `_fcloseall`](fclose-fcloseall.md)\
 [`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
 [`ferror`](ferror.md)\

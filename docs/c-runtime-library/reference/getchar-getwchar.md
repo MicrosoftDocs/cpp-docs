@@ -20,7 +20,7 @@ int getchar();
 wint_t getwchar();
 ```
 
-## Return Value
+## Return value
 
 Returns the character read. These functions wait for input and don't return until input is available.
 
@@ -34,7 +34,7 @@ These functions also lock the calling thread and are thread-safe. For a non-lock
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |**`getchar`**|`<stdio.h>`|
 |**`getwchar`**|`<stdio.h>` or `<wchar.h>`|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -81,9 +81,9 @@ This textInput was: This text
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`getc`, `getwc`](getc-getwc.md)<br/>
-[`fgetc`, `fgetwc`](fgetc-fgetwc.md)<br/>
-[`_getch`, `_getwch`](getch-getwch.md)<br/>
-[`putc`, `putwc`](putc-putwc.md)<br/>
-[`ungetc`, `ungetwc`](ungetc-ungetwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`getc`, `getwc`](getc-getwc.md)\
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`_getch`, `_getwch`](getch-getwch.md)\
+[`putc`, `putwc`](putc-putwc.md)\
+[`ungetc`, `ungetwc`](ungetc-ungetwc.md)

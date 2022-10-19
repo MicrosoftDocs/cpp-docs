@@ -11,7 +11,7 @@ helpviewer_keywords: ["wputenv_s function", "_putenv_s function", "environment v
 ---
 # `_putenv_s`, `_wputenv_s`
 
-Creates, modifies, or removes environment variables. These are versions of [`_putenv`, `_wputenv`](putenv-wputenv.md) but have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Creates, modifies, or removes environment variables. These are versions of [`_putenv`, `_wputenv`](putenv-wputenv.md) but have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -37,18 +37,18 @@ The environment variable name.
 *`value_string`*\
 The value to set the environment variable to.
 
-## Return Value
+## Return value
 
 Returns 0 if successful, or an error code.
 
-### Error Conditions
+### Error conditions
 
 |*`varname`*|*`value_string`*|Return value|
 |------------|-------------|------------------|
 |**`NULL`**|any|**`EINVAL`**|
 |any|**`NULL`**|**`EINVAL`**|
 
-If one of the error conditions occurs, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`EINVAL`** and set **`errno`** to **`EINVAL`**.
+If one of the error conditions occurs, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`EINVAL`** and set **`errno`** to **`EINVAL`**.
 
 ## Remarks
 
@@ -56,7 +56,7 @@ The **`_putenv_s`** function adds new environment variables or modifies the valu
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 
 Don't change an environment entry directly; instead, use **`_putenv_s`** or **`_wputenv_s`** to change it. In particular, directly freeing elements of the **`_environ[]`** global array might cause invalid memory to be addressed.
 
-**`getenv`** and **`_putenv_s`** use the global variable **`_environ`** to access the environment table; **`_wgetenv`** and **`_wputenv_s`** use **`_wenviron`**. **`_putenv_s`** and **`_wputenv_s`** may change the value of **`_environ`** and **`_wenviron`**, and thereby invalidate the *`envp`* argument to **`main`** and the **`_wenvp`** argument to **`wmain`**. Therefore, it's safer to use **`_environ`** or **`_wenviron`** to access the environment information. For more information about the relationship of **`_putenv_s`** and **`_wputenv_s`** to global variables, see [`_environ`, `_wenviron`](../../c-runtime-library/environ-wenviron.md).
+**`getenv`** and **`_putenv_s`** use the global variable **`_environ`** to access the environment table; **`_wgetenv`** and **`_wputenv_s`** use **`_wenviron`**. **`_putenv_s`** and **`_wputenv_s`** may change the value of **`_environ`** and **`_wenviron`**, and thereby invalidate the *`envp`* argument to **`main`** and the **`_wenvp`** argument to **`wmain`**. Therefore, it's safer to use **`_environ`** or **`_wenviron`** to access the environment information. For more information about the relationship of **`_putenv_s`** and **`_wputenv_s`** to global variables, see [`_environ`, `_wenviron`](../environ-wenviron.md).
 
 > [!NOTE]
 > The **`_putenv_s`** and **`_getenv_s`** families of functions are not thread-safe. **`_getenv_s`** could return a string pointer while **`_putenv_s`** is modifying the string, and thereby cause random failures. Make sure that calls to these functions are synchronized.
@@ -80,7 +80,7 @@ Don't change an environment entry directly; instead, use **`_putenv_s`** or **`_
 |**`_putenv_s`**|`<stdlib.h>`|
 |**`_wputenv_s`**|`<stdlib.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -88,6 +88,6 @@ For a sample that shows how to use **`_putenv_s`**, see [`getenv_s`, `_wgetenv_s
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`getenv`, `_wgetenv`](getenv-wgetenv.md)\
 [`_searchenv`, `_wsearchenv`](searchenv-wsearchenv.md)

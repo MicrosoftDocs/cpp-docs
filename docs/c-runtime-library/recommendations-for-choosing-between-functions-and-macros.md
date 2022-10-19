@@ -7,7 +7,7 @@ f1_keywords: ["c.functions"]
 helpviewer_keywords: ["functions [CRT], vs. macros", "macros, vs. functions"]
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
 ---
-# Recommendations for Choosing Between Functions and Macros
+# Recommendations for choosing between functions and macros
 
 Most Microsoft run-time library routines are compiled or assembled functions, but some routines are implemented as macros. When a header file declares both a function and a macro version of a routine, the macro definition takes precedence, because it always appears after the function declaration. When you invoke a routine that is implemented as both a function and a macro, you can force the compiler to use the function version in two ways:
 
@@ -38,4 +38,4 @@ If you need to choose between a function and a macro implementation of a library
 ## See also
 
 [Type-generic math](tgmath.md)\
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md)

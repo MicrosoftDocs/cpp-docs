@@ -27,21 +27,21 @@ size_t _fwrite_nolock(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Pointer to the data to be written.
 
-*size*<br/>
+*`size`*\
 Item size in bytes.
 
-*count*<br/>
+*`count`*\
 Maximum number of items to be written.
 
-*stream*<br/>
+*`stream`*\
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
-Same as [fwrite](fwrite.md).
+Same as [`fwrite`](fwrite.md).
 
 ## Remarks
 
@@ -55,14 +55,14 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_fwrite_nolock**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [fread](fread.md).
+See the example for [`fread`](fread.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fread](fread.md)<br/>
-[_write](write.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fread`](fread.md)\
+[`_write`](write.md)

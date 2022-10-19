@@ -28,11 +28,11 @@ File descriptors referring to open file.
 *`fd2`*\
 Any file descriptor.
 
-## Return Value
+## Return value
 
-**`_dup`** returns a new file descriptor. **`_dup2`** returns 0 to indicate success. If an error occurs, each function returns -1 and sets **`errno`** to **`EBADF`** if the file descriptor is invalid, or to **`EMFILE`** if no more file descriptors are available. When passed an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+**`_dup`** returns a new file descriptor. **`_dup2`** returns 0 to indicate success. If an error occurs, each function returns -1 and sets **`errno`** to **`EBADF`** if the file descriptor is invalid, or to **`EMFILE`** if no more file descriptors are available. When passed an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_dup`**|`<io.h>`|
 |**`_dup2`**|`<io.h>`|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -118,7 +118,7 @@ This goes to file 'data'
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_close`](close.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`_open`, `_wopen`](open-wopen.md)

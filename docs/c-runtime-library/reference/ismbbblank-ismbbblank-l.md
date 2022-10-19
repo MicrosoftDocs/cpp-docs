@@ -29,15 +29,15 @@ int _ismbbblank_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
-**_ismbbblank** returns a nonzero value if *c* represents a space (0x20) character, a horizontal tab (0x09) character, or a locale-specific character that's used to separate words within a line of text for which **isspace** is true; otherwise, returns 0. **_ismbbblank** uses the current locale for any locale-dependent behavior. **_ismbbblank_l** is identical except that it instead uses the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_ismbbblank** returns a nonzero value if *`c`* represents a space (0x20) character, a horizontal tab (0x09) character, or a locale-specific character that's used to separate words within a line of text for which **isspace** is true; otherwise, returns 0. **_ismbbblank** uses the current locale for any locale-dependent behavior. **_ismbbblank_l** is identical except that it instead uses the locale that's passed in. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
@@ -50,9 +50,9 @@ By default, this function's global state is scoped to the application. To change
 |**_ismbbblank**|\<mbctype.h>|
 |**_ismbbblank_l**|\<mbctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Byte classification](../byte-classification.md)\
+[`_ismbb` routines](../ismbb-routines.md)

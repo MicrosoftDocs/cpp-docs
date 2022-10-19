@@ -57,41 +57,41 @@ int _mbsnicoll_l(
 
 ### Parameters
 
-*string1*, *string2*<br/>
+*`string1`*, *`string2`*\
 Null-terminated strings to compare
 
-*count*<br/>
+*`count`*\
 Number of characters to compare
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-Each of these functions returns a value indicating the relationship of the substrings of *string1* and *string2*, as follows.
+Each of these functions returns a value indicating the relationship of the substrings of *`string1`* and *`string2`*, as follows.
 
 |Return value|Relationship of string1 to string2|
 |------------------|----------------------------------------|
-|< 0|*string1* less than *string2*|
-|0|*string1* identical to *string2*|
-|> 0|*string1* greater than *string2*|
+|< 0|*`string1`* less than *`string2`*|
+|0|*`string1`* identical to *`string2`*|
+|> 0|*`string1`* greater than *`string2`*|
 
-Each of these functions returns **_NLSCMPERROR**. To use **_NLSCMPERROR**, include either STRING.H or MBSTRING.H. **_wcsnicoll** can fail if either *string1* or *string2* contains wide-character codes outside the domain of the collating sequence. When an error occurs, **_wcsnicoll** may set **errno** to **EINVAL**. To check for an error on a call to **_wcsnicoll**, set **errno** to 0 and then check **errno** after calling **_wcsnicoll**.
+Each of these functions returns **_NLSCMPERROR**. To use **_NLSCMPERROR**, include either STRING.H or MBSTRING.H. **_wcsnicoll** can fail if either *`string1`* or *`string2`* contains wide-character codes outside the domain of the collating sequence. When an error occurs, **_wcsnicoll** may set **errno** to **EINVAL**. To check for an error on a call to **_wcsnicoll**, set **errno** to 0 and then check **errno** after calling **_wcsnicoll**.
 
 ## Remarks
 
-Each of these functions performs a case-insensitive comparison of the first *count* characters in *string1* and *string2* according to the code page. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the code page and this difference is of interest for the string comparison. The versions of these functions without the **_l** suffix use the current locale and code page. The versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+Each of these functions performs a case-insensitive comparison of the first *`count`* characters in *`string1`* and *`string2`* according to the code page. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the code page and this difference is of interest for the string comparison. The versions of these functions without the **_l** suffix use the current locale and code page. The versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
-All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, or if count is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
+All of these functions validate their parameters. If either *`string1`* or *`string2`* is a null pointer, or if count is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsncicoll**|**_strnicoll**|**_mbsnbicoll**|**_wcsnicoll**|
-|**_tcsnicoll**|**_strnicoll**|[_mbsnbicoll](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)|**_wcsnicoll**|
+|**_tcsnicoll**|**_strnicoll**|[`_mbsnbicoll`](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)|**_wcsnicoll**|
 |**_tcsnicoll_l**|**_strnicoll_l**|**_mbsnbicoll_l**|**_wcsnicoll_l**|
 
 ## Requirements
@@ -102,18 +102,18 @@ By default, this function's global state is scoped to the application. To change
 |**_wcsnicoll**, **_wcsnicoll_l**|\<wchar.h> or \<string.h>|
 |**_mbsnicoll**, **_mbsnicoll_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[localeconv](localeconv.md)<br/>
-[_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[Locale](../locale.md)\
+[String manipulation](../string-manipulation-crt.md)\
+[`strcoll` functions](../strcoll-functions.md)\
+[`localeconv`](localeconv.md)\
+[`_mbsnbcoll`, `_mbsnbcoll_l`, `_mbsnbicoll`, `_mbsnbicoll_l`](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`_stricmp`, `_wcsicmp`, `_mbsicmp`, `_stricmp_l`, `_wcsicmp_l`, `_mbsicmp_l`](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

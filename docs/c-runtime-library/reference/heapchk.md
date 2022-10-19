@@ -20,7 +20,7 @@ Runs consistency checks on the heap.
 int _heapchk( void );
 ```
 
-## Return Value
+## Return value
 
 **_heapchk** returns one of the following integer manifest constants defined in Malloc.h.
 
@@ -46,7 +46,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**_heapchk**|\<malloc.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -93,8 +93,8 @@ OK - heap is fine
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapmin](heapmin.md)<br/>
-[_heapset](../../c-runtime-library/heapset.md)<br/>
-[_heapwalk](heapwalk.md)<br/>
+[Memory allocation](../memory-allocation.md)\
+[`_heapadd`](../heapadd.md)\
+[`_heapmin`](heapmin.md)\
+[`_heapset`](../heapset.md)\
+[`_heapwalk`](heapwalk.md)

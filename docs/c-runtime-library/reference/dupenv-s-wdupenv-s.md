@@ -34,20 +34,20 @@ errno_t _wdupenv_s(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Buffer to store the variable's value.
 
-*`numberOfElements`*<br/>
+*`numberOfElements`*\
 Size of *`buffer`*.
 
-*`varname`*<br/>
+*`varname`*\
 Environment variable name.
 
-## Return Value
+## Return value
 
 Zero on success, an error code on failure.
 
-These functions validate their parameters; if *`buffer`* or *`varname`* is **`NULL`**, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
+These functions validate their parameters; if *`buffer`* or *`varname`* is **`NULL`**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
 
 If these functions can't allocate enough memory, they set *`buffer`* to **`NULL`** and *`numberOfElements`* to 0, and return **`ENOMEM`**.
 
@@ -70,7 +70,7 @@ The value in *`buffer`* is a copy of the environment variable's value; modifying
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -83,7 +83,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_dupenv_s`**|`<stdlib.h>`|
 |**`_wdupenv_s`**|`<stdlib.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -113,8 +113,8 @@ nonexistentvariable = (null)
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
-[`_dupenv_s_dbg`, `_wdupenv_s_dbg`](dupenv-s-dbg-wdupenv-s-dbg.md)<br/>
-[`getenv_s`, `_wgetenv_s`](getenv-s-wgetenv-s.md)<br/>
-[`_putenv_s`, `_wputenv_s`](putenv-s-wputenv-s.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[Environmental constants](../environmental-constants.md)\
+[`_dupenv_s_dbg`, `_wdupenv_s_dbg`](dupenv-s-dbg-wdupenv-s-dbg.md)\
+[`getenv_s`, `_wgetenv_s`](getenv-s-wgetenv-s.md)\
+[`_putenv_s`, `_wputenv_s`](putenv-s-wputenv-s.md)

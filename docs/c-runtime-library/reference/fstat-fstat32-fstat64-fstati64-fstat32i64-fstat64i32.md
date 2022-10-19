@@ -50,9 +50,9 @@ File descriptor of the open file.
 *`buffer`*\
 Pointer to the structure to store results.
 
-## Return Value
+## Return value
 
-Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or *`buffer`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EBADF`**, in the case of an invalid file descriptor, or to **`EINVAL`**, if *`buffer`* is **`NULL`**.
+Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or *`buffer`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EBADF`**, in the case of an invalid file descriptor, or to **`EINVAL`**, if *`buffer`* is **`NULL`**.
 
 ## Remarks
 
@@ -71,7 +71,7 @@ The **`_fstat`** function obtains information about the open file associated wit
 
 If *`fd`* refers to a device, the **`st_atime`**, **`st_ctime`**, **`st_mtime`**, and **`st_size`** fields aren't meaningful.
 
-Because `Stat.h` uses the [`_dev_t`](../../c-runtime-library/standard-types.md) type, which is defined in `Types.h`, you must include `Types.h` before `Stat.h` in your code.
+Because `Stat.h` uses the [`_dev_t`](../standard-types.md) type, which is defined in `Types.h`, you must include `Types.h` before `Stat.h` in your code.
 
 **`_fstat64`**, which uses the **`__stat64`** structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas the other functions only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
@@ -81,7 +81,7 @@ Variations of these functions support 32-bit or 64-bit time types and 32-bit or 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Time Type and File Length Type Variations of `_stat`
+### Time type and file length type variations of `_stat`
 
 |Functions|`_USE_32BIT_TIME_T` defined?|Time type|File length type|
 |---------------|------------------------------------|---------------|----------------------|
@@ -105,7 +105,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_fstat32i64`**|`<sys/stat.h>` and `<sys/types.h>`|
 |**`_fstat64i32`**|`<sys/stat.h>` and `<sys/types.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -174,8 +174,8 @@ Time modified : Wed May 07 15:25:11 2003
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)\
+[File handling](../file-handling.md)\
 [`_access`, `_waccess`](access-waccess.md)\
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_filelength`, `_filelengthi64`](filelength-filelengthi64.md)\
-[`_stat`, `_wstat` Functions](stat-functions.md)
+[`_stat`, `_wstat` functions](stat-functions.md)

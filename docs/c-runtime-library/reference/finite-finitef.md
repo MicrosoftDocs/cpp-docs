@@ -37,12 +37,12 @@ int _finitef(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to test.
 
 ## Return value
 
-The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zero value if *x* is either a normal or subnormal finite value. They return 0 if the argument is infinite or a NaN. The C++ inline template function `isfinite` behaves the same way, but returns **`true`** or **`false`**.
+The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zero value if *`x`* is either a normal or subnormal finite value. They return 0 if the argument is infinite or a NaN. The C++ inline template function `isfinite` behaves the same way, but returns **`true`** or **`false`**.
 
 ## Remarks
 
@@ -55,13 +55,13 @@ The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zer
 |`_finite`|\<float.h> or \<math.h>|\<float.h>, \<math.h>, \<cfloat>, or \<cmath>|
 |`isfinite`, `_finitef`|\<math.h>|\<math.h> or \<cmath>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fpclassify](fpclassify.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isinf](isinf.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[isnormal](isnormal.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`fpclassify`](fpclassify.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)\
+[`isinf`](isinf.md)\
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)\
+[`isnormal`](isnormal.md)

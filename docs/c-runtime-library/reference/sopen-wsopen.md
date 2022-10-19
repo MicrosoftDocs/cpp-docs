@@ -49,7 +49,7 @@ Permission setting.
 
 Each of these functions returns a file descriptor for the opened file.
 
-If *`filename`* or *`oflag`* is a **`NULL`** pointer, or if *`oflag`* or *`shflag`* isn't within a valid range of values, the invalid parameter handler is invoked, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to one of the following values.
+If *`filename`* or *`oflag`* is a **`NULL`** pointer, or if *`oflag`* or *`shflag`* isn't within a valid range of values, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to one of the following values.
 
 | `errno` value | Condition |
 |--|--|
@@ -59,7 +59,7 @@ If *`filename`* or *`oflag`* is a **`NULL`** pointer, or if *`oflag`* or *`shfla
 | **`EMFILE`** | No more file descriptors are available. |
 | **`ENOENT`** | File or path isn't found. |
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -88,7 +88,7 @@ The integer expression *`oflag`* is formed by combining one or more of the follo
 | **`_O_RDONLY`** | Opens a file for reading only. Can't be specified with **`_O_RDWR`** or **`_O_WRONLY`**. |
 | **`_O_RDWR`** | Opens a file for both reading and writing. Can't be specified with **`_O_RDONLY`** or **`_O_WRONLY`**. |
 | **`_O_SEQUENTIAL`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
-| **`_O_TEXT`** | Opens a file in text (translated) mode. (For more information, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
+| **`_O_TEXT`** | Opens a file in text (translated) mode. (For more information, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
 | **`_O_TRUNC`** | Opens a file and truncates it to zero length; the file must have write permission. Can't be specified with **`_O_RDONLY`**. **`_O_TRUNC`** used with **`_O_CREAT`** opens an existing file or creates a file. **Note:** The **`_O_TRUNC`** flag destroys the contents of the specified file. |
 | **`_O_WRONLY`** | Opens a file for writing only. Can't be specified with **`_O_RDONLY`** or **`_O_RDWR`**. |
 | **`_O_U16TEXT`** | Opens a file in Unicode UTF-16 mode. |
@@ -129,7 +129,7 @@ If write permission isn't given, the file is read-only. In the Windows operating
 | **`_sopen`** | `<io.h>` | `<fcntl.h>`, `<sys\types.h>`, `<sys\stat.h>`, `<share.h>` |
 | **`_wsopen`** | `<io.h>` or `<wchar.h>` | `<fcntl.h>`, `<sys\types.h>`, `<sys\stat.h>`, `<share.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -137,7 +137,7 @@ See the example for [`_locking`](locking.md).
 
 ## See also
 
-[Low-level I/O](../../c-runtime-library/low-level-i-o.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_close`](close.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`fopen`, `_wfopen`](fopen-wfopen.md)\

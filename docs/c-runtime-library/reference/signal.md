@@ -24,17 +24,17 @@ void __cdecl *signal(int sig, int (*func)(int, int));
 
 ### Parameters
 
-*`sig`*<br/>
+*`sig`*\
 Signal value.
 
-*`func`*<br/>
+*`func`*\
 The second parameter is a pointer to the function to be executed. The first parameter is a signal value and the second parameter is a sub-code that can be used when the first parameter is **`SIGFPE`**.
 
-## Return Value
+## Return value
 
 **`signal`** returns the previous value of func that's associated with the given signal. For example, if the previous value of *`func`* was **`SIG_IGN`**, the return value is also **`SIG_IGN`**. A return value of **`SIG_ERR`** indicates an error; in that case, **`errno`** is set to **`EINVAL`**.
 
-See [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about return codes.
+See [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about return codes.
 
 ## Remarks
 
@@ -49,7 +49,7 @@ The **`signal`** function enables a process to choose one of several ways to han
 |**`SIGSEGV`**|Illegal storage access|
 |**`SIGTERM`**|Termination request|
 
-If *`sig`* is not one of the above values, the invalid parameter handler is invoked, as defined in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns **`SIG_ERR`**.
+If *`sig`* is not one of the above values, the invalid parameter handler is invoked, as defined in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns **`SIG_ERR`**.
 
 By default, **`signal`** terminates the calling program with exit code 3, regardless of the value of *`sig`*.
 
@@ -86,7 +86,7 @@ volatile double d = 0.0f;
 
 The **`SIGILL`** and **`SIGTERM`** signals are not generated under Windows. They are included for ANSI compatibility. Therefore, you can set signal handlers for these signals by using **`signal`**, and you can also explicitly generate these signals by calling [`raise`](raise.md).
 
-Signal settings are not preserved in spawned processes that are created by calls to [`_exec`](../../c-runtime-library/exec-wexec-functions.md) or [`_spawn`](../../c-runtime-library/spawn-wspawn-functions.md) functions. The signal settings are reset to the default values in the new process.
+Signal settings are not preserved in spawned processes that are created by calls to [`_exec`](../exec-wexec-functions.md) or [`_spawn`](../spawn-wspawn-functions.md) functions. The signal settings are reset to the default values in the new process.
 
 ## Requirements
 
@@ -94,7 +94,7 @@ Signal settings are not preserved in spawned processes that are created by calls
 |-------------|---------------------|
 |**`signal`**|`<signal.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -141,9 +141,9 @@ R6010
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[`abort`](abort.md)<br/>
-[`_exec`, `_wexec` Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)<br/>
-[`_fpreset`](fpreset.md)<br/>
-[`_spawn`, `_wspawn` Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`abort`](abort.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_fpreset`](fpreset.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)

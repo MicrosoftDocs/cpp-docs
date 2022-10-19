@@ -35,26 +35,26 @@ int _iswlower_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to test.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
-Each of these routines returns nonzero if *c* is a particular representation of a lowercase character. **islower** returns a nonzero value if *c* is a lowercase character (a - z). **iswlower** returns a nonzero value if *c* is a wide character that corresponds to a lowercase letter, or if *c* is one of an implementation-defined set of wide characters for which none of **iswcntrl**, **iswdigit**, **iswpunct**, or **iswspace** is nonzero. Each of these routines returns 0 if *c* does not satisfy the test condition.
+Each of these routines returns nonzero if *`c`* is a particular representation of a lowercase character. **islower** returns a nonzero value if *`c`* is a lowercase character (a - z). **iswlower** returns a nonzero value if *`c`* is a wide character that corresponds to a lowercase letter, or if *`c`* is one of an implementation-defined set of wide characters for which none of **iswcntrl**, **iswdigit**, **iswpunct**, or **iswspace** is nonzero. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
 
-The versions of these functions that have the **_l** suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions that have the **_l** suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
-The behavior of **islower** and **_islower_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
+The behavior of **islower** and **_islower_l** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istlower**|**islower**|[_ismbclower](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswlower**|
-|**_istlower_l**|`_islower _l`|[_ismbclower_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_liswlower_l**|
+|**_istlower**|**islower**|[`_ismbclower`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswlower**|
+|**_istlower_l**|`_islower _l`|[`_ismbclower_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_liswlower_l**|
 
 ## Remarks
 
@@ -69,10 +69,10 @@ By default, this function's global state is scoped to the application. To change
 |**_islower_l**|\<ctype.h>|
 |**_swlower_l**|\<ctype.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[Locale](../locale.md)\
+[`is`, `isw` routines](../is-isw-routines.md)
