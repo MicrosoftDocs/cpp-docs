@@ -36,12 +36,12 @@ _Lcomplex catanhl(
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number that represents an angle, in radians.
 
-## Return Value
+## Return value
 
-The inverse hyperbolic tangent of *z*, in radians. The result is unbounded along the real axis, and  in the interval [-iπ/2; +iπ/2] along the imaginary axis. A domain error will occur if *z* is outside the interval [-1, +1]. A pole error will occur if *z* is -1 or +1.
+The inverse hyperbolic tangent of *`z`*, in radians. The result is unbounded along the real axis, and  in the interval [-iπ/2; +iπ/2] along the imaginary axis. A domain error will occur if *`z`* is outside the interval [-1, +1]. A pole error will occur if *`z`* is -1 or +1.
 
 ## Remarks
 
@@ -53,20 +53,20 @@ Because C++ allows overloading, you can call overloads of **catanh** that take a
 |-------------|--------------|------------------|
 |**catanh**,               **catanhf**, **catanhl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)<br/>
-[catan, catanf, catanl](catan-catanf-catanl.md)<br/>
-[csinh, csinhf, csinhl](csinh-csinhf-csinhl.md)<br/>
-[casinh, casinhf, casinhl](casinh-casinhf-casinhl.md)<br/>
-[ccosh, ccoshf, ccoshl](ccosh-ccoshf-ccoshl.md)<br/>
-[cacosh, cacoshf, cacoshl](cacosh-cacoshf-cacoshl.md)<br/>
-[cacos, cacosf, cacosl](cacos-cacosf-cacosl.md)<br/>
-[ctan, ctanf, ctanl](ctan-ctanf-ctanl.md)<br/>
-[csin, csinf, csinl](csin-csinf-csinl.md)<br/>
-[casin, casinf, casinl](casin-casinf-casinl.md)<br/>
-[ccos, ccosf, ccosl](ccos-ccosf-ccosl.md)<br/>
-[csqrt, csqrtf, csqrtl](csqrt-csqrtf-csqrtl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`ctanh`, `ctanhf`, `ctanhl`](ctanh-ctanhf-ctanhl.md)\
+[`catan`, `catanf`, `catanl`](catan-catanf-catanl.md)\
+[`csinh`, `csinhf`, `csinhl`](csinh-csinhf-csinhl.md)\
+[`casinh`, `casinhf`, `casinhl`](casinh-casinhf-casinhl.md)\
+[`ccosh`, `ccoshf`, `ccoshl`](ccosh-ccoshf-ccoshl.md)\
+[`cacosh`, `cacoshf`, `cacoshl`](cacosh-cacoshf-cacoshl.md)\
+[`cacos`, `cacosf`, `cacosl`](cacos-cacosf-cacosl.md)\
+[`ctan`, `ctanf`, `ctanl`](ctan-ctanf-ctanl.md)\
+[`csin`, `csinf`, `csinl`](csin-csinf-csinl.md)\
+[`casin`, `casinf`, `casinl`](casin-casinf-casinl.md)\
+[`ccos`, `ccosf`, `ccosl`](ccos-ccosf-ccosl.md)\
+[`csqrt`, `csqrtf`, `csqrtl`](csqrt-csqrtf-csqrtl.md)

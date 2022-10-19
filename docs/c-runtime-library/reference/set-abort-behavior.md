@@ -33,7 +33,7 @@ New value of the `abort` flags.
 *`mask`*\
 Mask for the `abort` flags bits to set.
 
-## Return Value
+## Return value
 
 The old value of the flags.
 
@@ -51,7 +51,7 @@ By default, this function's global state is scoped to the application. To change
 |--|--|
 | **`_set_abort_behavior`** | `<stdlib.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 

@@ -48,13 +48,13 @@ Unless explicitly updated during runtime, `"PST"` is returned for the standard t
 
 The time zone string isn't guaranteed to be the same between OS releases. Official time zone names can and do change.
 
-## Return Value
+## Return value
 
 Zero if successful, otherwise an **`errno`** type value.
 
-If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to `EINVAL` and returns `EINVAL`.
+If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to `EINVAL` and returns `EINVAL`.
 
-### Error Conditions
+### Error conditions
 
 |*`pReturnValue`*|*`timeZoneName`*|*`sizeInBytes`*|*`index`*|Return value|Contents of *`timeZoneName`*|
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
@@ -137,12 +137,12 @@ The current Daylight standard time zone name is Pacific Daylight Time.
 |-------------|---------------------|
 |`_get_tzname`|`<time.h>`|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)\
-[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)\
+[Time management](../time-management.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)\
 [`_get_daylight`](get-daylight.md)\
 [`_get_dstbias`](get-dstbias.md)\
 [`_get_timezone`](get-timezone.md)

@@ -38,7 +38,7 @@ The handle to the process to wait on (that is, the process that has to terminate
 *`action`*\
 **`NULL`**: Ignored by Windows operating system applications; for other applications: action code to perform on *`procHandle`*.
 
-## Return Value
+## Return value
 
 When the specified process has successfully completed, returns the handle of the specified process and sets *`termstat`* to the result code that's returned by the specified process. Otherwise, returns -1 and sets **`errno`** as follows.
 
@@ -47,11 +47,11 @@ When the specified process has successfully completed, returns the handle of the
 |**`ECHILD`**|No specified process exists, *`procHandle`* is invalid, or the call to the [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) or [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API failed.|
 |**`EINVAL`**|*`action`* is invalid.|
 
-For more information about these and other return codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`_cwait`** function waits for the termination of the process ID of the specified process that's provided by *`procHandle`*. The value of *`procHandle`* that's passed to **`_cwait`** should be the value that's returned by the call to the [`_spawn`](../../c-runtime-library/spawn-wspawn-functions.md) function that created the specified process. If the process ID terminates before **`_cwait`** is called, **`_cwait`** returns immediately. **`_cwait`** can be used by any process to wait for any other known process for which a valid handle (*`procHandle`*) exists.
+The **`_cwait`** function waits for the termination of the process ID of the specified process that's provided by *`procHandle`*. The value of *`procHandle`* that's passed to **`_cwait`** should be the value that's returned by the call to the [`_spawn`](../spawn-wspawn-functions.md) function that created the specified process. If the process ID terminates before **`_cwait`** is called, **`_cwait`** returns immediately. **`_cwait`** can be used by any process to wait for any other known process for which a valid handle (*`procHandle`*) exists.
 
 *`termstat`* points to a buffer where the return code of the specified process will be stored. The value of *`termstat`* indicates whether the specified process terminated normally by calling the Windows [`ExitProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API. **`ExitProcess`** is called internally if the specified process calls **`exit`** or **`_exit`**, returns from **`main`**, or reaches the end of **`main`**. For more information about the value that's passed back through *`termstat`*, see [GetExitCodeProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess). If **`_cwait`** is called by using a **`NULL`** value for *`termstat`*, the return code of the specified process isn't stored.
 
@@ -67,7 +67,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**`_cwait`**|\<process.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -141,5 +141,5 @@ Hi, Dad. It's Dave.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)
+[Process and environment control](../process-and-environment-control.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)

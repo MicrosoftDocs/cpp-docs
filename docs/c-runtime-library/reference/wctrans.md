@@ -24,12 +24,12 @@ wctrans_t wctrans(
 
 ### Parameters
 
-*property*<br/>
+*`property`*\
 A string that specifies one of the valid transformations.
 
-## Return Value
+## Return value
 
-If the **LC_CTYPE** category of the current locale does not define a mapping whose name matches the property string *property*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](towctrans.md).
+If the **LC_CTYPE** category of the current locale does not define a mapping whose name matches the property string *`property`*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [`towctrans`](towctrans.md).
 
 ## Remarks
 
@@ -48,7 +48,7 @@ The following pairs of calls have the same behavior in all locales, but it is po
 |-------------|---------------------|
 |**wctrans**|\<wctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -88,5 +88,5 @@ int main()
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+[Data conversion](../data-conversion.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)

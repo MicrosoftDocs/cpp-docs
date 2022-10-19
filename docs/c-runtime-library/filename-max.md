@@ -18,5 +18,5 @@ The maximum permissible length for a `filename` string buffer size.
 
 ## See also
 
-[Path Field Limits](../c-runtime-library/path-field-limits.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[Path field limits](./path-field-limits.md)\
+[Global constants](./global-constants.md)

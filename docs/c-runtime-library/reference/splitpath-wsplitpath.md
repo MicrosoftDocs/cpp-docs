@@ -35,30 +35,30 @@ void _wsplitpath(
 
 ### Parameters
 
-*`path`*<br/>
+*`path`*\
 Full path.
 
-*`drive`*<br/>
+*`drive`*\
 Drive letter, followed by a colon (**:**). You can pass **`NULL`** for this parameter if you do not need the drive letter.
 
-*`dir`*<br/>
+*`dir`*\
 Directory path, including trailing slash. Forward slashes ( **/** ), backslashes ( **\\** ), or both may be used. You can pass **`NULL`** for this parameter if you do not need the directory path.
 
-*`fname`*<br/>
+*`fname`*\
 Base filename (no extension). You can pass **`NULL`** for this parameter if you do not need the filename.
 
-*`ext`*<br/>
+*`ext`*\
 Filename extension, including leading period (**.**). You can pass **`NULL`** for this parameter if you do not need the filename extension.
 
 ## Remarks
 
 The **`_splitpath`** function breaks a path into its four components. **`_splitpath`** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **`_wsplitpath`** is a wide-character version of **`_splitpath`**; the arguments to **`_wsplitpath`** are wide-character strings. These functions behave identically otherwise.
 
-**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns). More secure versions of these functions are available; see [`_splitpath_s`, `_wsplitpath_s`](splitpath-s-wsplitpath-s.md).
+**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns). More secure versions of these functions are available; see [`_splitpath_s`, `_wsplitpath_s`](splitpath-s-wsplitpath-s.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -79,9 +79,9 @@ The following table lists the values of the manifest constants.
 
 If the full path does not contain a component (for example, a filename), **`_splitpath`** assigns empty strings to the corresponding buffers.
 
-You can pass **`NULL`** to **`_splitpath`** for any parameter other than *path* that you do not need.
+You can pass **`NULL`** to **`_splitpath`** for any parameter other than *`path`* that you do not need.
 
-If *`path`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns **`EINVAL`**.
+If *`path`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns **`EINVAL`**.
 
 ## Requirements
 
@@ -90,7 +90,7 @@ If *`path`* is **`NULL`**, the invalid parameter handler is invoked, as describe
 |**`_splitpath`**|`<stdlib.h>`|
 |**`_wsplitpath`**|`<stdlib.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -98,9 +98,9 @@ See the example for [`_makepath`](makepath-wmakepath.md).
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[`_fullpath`, `_wfullpath`](fullpath-wfullpath.md)<br/>
-[`_getmbcp`](getmbcp.md)<br/>
-[`_makepath`, `_wmakepath`](makepath-wmakepath.md)<br/>
-[`_setmbcp`](setmbcp.md)<br/>
-[`_splitpath_s`, `_wsplitpath_s`](splitpath-s-wsplitpath-s.md)<br/>
+[File handling](../file-handling.md)\
+[`_fullpath`, `_wfullpath`](fullpath-wfullpath.md)\
+[`_getmbcp`](getmbcp.md)\
+[`_makepath`, `_wmakepath`](makepath-wmakepath.md)\
+[`_setmbcp`](setmbcp.md)\
+[`_splitpath_s`, `_wsplitpath_s`](splitpath-s-wsplitpath-s.md)

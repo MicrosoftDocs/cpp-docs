@@ -12,7 +12,7 @@ ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
 ---
 # `_umask_s`
 
-Sets the default file-permission mask. A version of [`_umask`](umask.md) with security enhancements as described in [Security features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Sets the default file-permission mask. A version of [`_umask`](umask.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -42,7 +42,7 @@ Returns an error code if *`mode`* doesn't specify a valid mode or the *`pOldMode
 | any | **`NULL`** | **`EINVAL`** | not modified |
 | invalid mode | any | **`EINVAL`** | not modified |
 
-If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`_umask_s`** returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
+If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_umask_s`** returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
 
 ## Remarks
 
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |--|--|
 | **`_umask_s`** | `<io.h>` and `<sys/stat.h>` and `<sys/types.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -106,8 +106,8 @@ Oldmask = 0x0000
 
 ## See also
 
-[File handling](../../c-runtime-library/file-handling.md)\
-[Low-level I/O](../../c-runtime-library/low-level-i-o.md)\
+[File handling](../file-handling.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\

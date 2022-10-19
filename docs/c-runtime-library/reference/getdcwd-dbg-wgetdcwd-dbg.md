@@ -12,7 +12,7 @@ ms.assetid: 266bf6f0-0417-497f-963d-2e0f306d9385
 ---
 # _getdcwd_dbg, _wgetdcwd_dbg
 
-Debug versions of the [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md) functions (only available during debug).
+Debug versions of the [`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md) functions (only available during debug).
 
 ## Syntax
 
@@ -37,35 +37,35 @@ wchar_t *_wgetdcwd_dbg(
 
 ### Parameters
 
-*drive*<br/>
+*`drive`*\
 Name of the disk drive.
 
-*buffer*<br/>
+*`buffer`*\
 Storage location for the path.
 
-*maxlen*<br/>
+*`maxlen`*\
 Maximum length of the path in characters: **`char`** for **_getdcwd_dbg** and **`wchar_t`** for **_wgetdcwd_dbg**.
 
-*blockType*<br/>
+*`blockType`*\
 Requested type of the memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
-*filename*<br/>
+*`filename`*\
 Pointer to the name of the source file that requested the allocation operation or **NULL**.
 
-*linenumber*<br/>
+*`linenumber`*\
 Line number in the source file where the allocation operation was requested or **NULL**.
 
-## Return Value
+## Return value
 
-Returns a pointer to *buffer*. A **NULL** return value indicates an error, and **errno** is set either to **ENOMEM**, indicating that there is insufficient memory to allocate *maxlen* bytes (when a **NULL** argument is given as *buffer*), or to **ERANGE**, indicating that the path is longer than *maxlen* characters. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Returns a pointer to *`buffer`*. A **NULL** return value indicates an error, and **errno** is set either to **ENOMEM**, indicating that there is insufficient memory to allocate *`maxlen`* bytes (when a **NULL** argument is given as *`buffer`*), or to **ERANGE**, indicating that the path is longer than *`maxlen`* characters. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_getdcwd_dbg** and **_wgetdcwd_dbg** functions are identical to **_getdcwd** and **_wgetdcwd** except that, when **_DEBUG** is defined, these functions use the debug version of **malloc** and **_malloc_dbg** to allocate memory if **NULL** is passed as the *buffer* parameter. For more information, see [_malloc_dbg](malloc-dbg.md).
+The **_getdcwd_dbg** and **_wgetdcwd_dbg** functions are identical to **_getdcwd** and **_wgetdcwd** except that, when **_DEBUG** is defined, these functions use the debug version of **malloc** and **_malloc_dbg** to allocate memory if **NULL** is passed as the *`buffer`* parameter. For more information, see [`_malloc_dbg`](malloc-dbg.md).
 
-You do not need to call these functions explicitly in most cases. Instead, you can define the **_CRTDBG_MAP_ALLOC** flag. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_getdcwd** and **_wgetdcwd** are remapped to **_getdcwd_dbg** and **_wgetdcwd_dbg**, respectively, with the *blockType* set to **_NORMAL_BLOCK**. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information, see [Types of Blocks on the Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+You do not need to call these functions explicitly in most cases. Instead, you can define the **_CRTDBG_MAP_ALLOC** flag. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_getdcwd** and **_wgetdcwd** are remapped to **_getdcwd_dbg** and **_wgetdcwd_dbg**, respectively, with the *`blockType`* set to **_NORMAL_BLOCK**. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -78,10 +78,10 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 |**_getdcwd_dbg**|\<crtdbg.h>|
 |**_wgetdcwd_dbg**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>
+[`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md)\
+[Directory control](../directory-control.md)\
+[Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

@@ -36,7 +36,7 @@ long double log10(long double x);  // C++ only
 *`x`*\
 Value whose logarithm is to be found.
 
-## Return Value
+## Return value
 
 The **`log`** functions return the natural logarithm (base *`e`*) of *`x`* if successful. The **`log10`** functions return the base-10 logarithm. If *`x`* is negative, these functions return an indefinite (`IND`), by default. If *`x`* is 0, they return infinity (`INF`).
 
@@ -52,7 +52,7 @@ The **`log`** functions return the natural logarithm (base *`e`*) of *`x`* if su
 
 C++ allows overloading, so you can call overloads of **`log`** and **`log10`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`log`** and **`log10`** always take and return a **`double`**.
 
-If you use the `<tgmath.h> log()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h> log()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -63,7 +63,7 @@ By default, this function's global state is scoped to the application. To change
 |**`log`**, **`logf`**, **`logl`**, **`log10`**, **`log10f`**, **`log10l`**|`<math.h>`|
 |**`log`** macro | `<tgmath.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -122,9 +122,9 @@ Log base 2 of 65536.000000 is 16.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md) \
+[Math and floating-point support](../floating-point-support.md) \
 [`exp`, `expf`, `expl`](exp-expf.md) \
 [`_matherr`](matherr.md) \
 [`pow`, `powf`, `powl`](pow-powf-powl.md) \
-[`_CIlog`](../../c-runtime-library/cilog.md) \
-[`_CIlog10`](../../c-runtime-library/cilog10.md)\
+[`_CIlog`](../cilog.md) \
+[`_CIlog10`](../cilog10.md)\

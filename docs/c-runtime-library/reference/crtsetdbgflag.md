@@ -26,7 +26,7 @@ int _CrtSetDbgFlag(
 *`newFlag`*\
 New state for **`_crtDbgFlag`**.
 
-## Return Value
+## Return value
 
 Returns the previous state of **`_crtDbgFlag`**.
 
@@ -38,9 +38,9 @@ The **`_CrtSetDbgFlag`** function allows the application to control how the debu
 - Simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list,
 - Verifying the integrity of the heap by inspecting each memory block at every allocation request.
 
-When [`_DEBUG`](../../c-runtime-library/debug.md) isn't defined, calls to **`_CrtSetDbgFlag`** are removed during preprocessing.
+When [`_DEBUG`](../debug.md) isn't defined, calls to **`_CrtSetDbgFlag`** are removed during preprocessing.
 
-The following table lists the bit fields for **`_crtDbgFlag`** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits aren't set (turned off) by default. For more information about these bit fields, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details).
+The following table lists the bit fields for **`_crtDbgFlag`** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits aren't set (turned off) by default. For more information about these bit fields, see [Heap state reporting functions](/visualstudio/debugger/crt-debug-heap-details).
 
 |Bit field|Default|Description|
 |---------------|-------------|-----------------|
@@ -117,11 +117,11 @@ tmpFlag &= ~_CRTDBG_CHECK_ALWAYS_DF;
 _CrtSetDbgFlag( tmpFlag );
 ```
 
-For an overview of memory management and the debug heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
+For an overview of memory management and the debug heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
 
 To disable a flag with the **`_CrtSetDbgFlag`** function, use a bitwise "and" (`&`) of the variable with the bitwise "not" (`~`) of the bitmask.
 
-If *`newFlag`* isn't a valid value, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns the previous state of **`_crtDbgFlag`**.
+If *`newFlag`* isn't a valid value, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns the previous state of **`_crtDbgFlag`**.
 
 ## Requirements
 
@@ -129,11 +129,11 @@ If *`newFlag`* isn't a valid value, this function invokes the invalid parameter 
 |-------------|---------------------|
 |**`_CrtSetDbgFlag`**|`<crtdbg.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -201,6 +201,6 @@ int main( )
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)\
-[`_crtDbgFlag`](../../c-runtime-library/crtdbgflag.md)\
+[Debug routines](../debug-routines.md)\
+[`_crtDbgFlag`](../crtdbgflag.md)\
 [`_CrtCheckMemory`](crtcheckmemory.md)

@@ -82,7 +82,7 @@ There's a single **`_set_new_handler`** handler for all dynamically linked DLLs 
 |--|--|
 | **`_set_new_handler`** | `<new.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -170,7 +170,7 @@ bad_alloc caught: bad allocation
 
 ## See also
 
-[Memory allocation](../../c-runtime-library/memory-allocation.md)\
+[Memory allocation](../memory-allocation.md)\
 [`calloc`](calloc.md)\
 [`free`](free.md)\
 [`realloc`](realloc.md)

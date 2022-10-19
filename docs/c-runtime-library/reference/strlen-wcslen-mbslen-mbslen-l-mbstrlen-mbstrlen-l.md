@@ -44,13 +44,13 @@ size_t _mbstrlen_l(
 
 ### Parameters
 
-*`str`*<br/>
+*`str`*\
 Null-terminated string.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
 Each of these functions returns the number of characters in *`str`*, excluding the terminal null. No return value is reserved to indicate an error, except for **`_mbstrlen`** and **`_mbstrlen_l`**, which return `((size_t)(-1))` if the string contains an invalid multibyte character.
 
@@ -58,11 +58,11 @@ Each of these functions returns the number of characters in *`str`*, excluding t
 
 **`strlen`** interprets the string as a single-byte character string, so its return value is always equal to the number of bytes, even if the string contains multibyte characters. **`wcslen`** is a wide-character version of **`strlen`**; the argument of **`wcslen`** is a wide-character string and the count of characters is in wide (two-byte) characters. **`wcslen`** and **`strlen`** behave identically otherwise.
 
-**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -72,7 +72,7 @@ By default, this function's global state is scoped to the application. To change
 
 **`_mbslen`** and **`_mbslen_l`** return the number of multibyte characters in a multibyte-character string but they do not test for multibyte-character validity. **`_mbstrlen`** and **`_mbstrlen_l`** test for multibyte-character validity and recognize multibyte-character sequences. If the string passed to **`_mbstrlen`** or **`_mbstrlen_l`** contains an invalid multibyte character for the code page, the function returns -1 and sets **`errno`** to **`EILSEQ`**.
 
-The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 ## Requirements
 
@@ -83,7 +83,7 @@ The output value is affected by the setting of the **`LC_CTYPE`** category setti
 |**`_mbslen`**, **`_mbslen_l`**|`<mbstring.h>`|
 |**`_mbstrlen`**, **`_mbstrlen_l`**|`<stdlib.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -150,14 +150,14 @@ Bytes in 'ABCァD' : 6
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)<br/>
-[`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md)<br/>
-[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)<br/>
-[`strcoll` Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[Locale](../locale.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcoll` functions](../strcoll-functions.md)\
+[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

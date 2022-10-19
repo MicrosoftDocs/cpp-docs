@@ -20,11 +20,11 @@ Releases unused heap memory to the operating system.
 int _heapmin( void );
 ```
 
-## Return Value
+## Return value
 
 If successful, **_heapmin** returns 0; otherwise, the function returns -1 and sets **errno** to **ENOSYS**.
 
-For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -38,14 +38,14 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**_heapmin**|\<malloc.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[free](free.md)<br/>
-[_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapchk](heapchk.md)<br/>
-[_heapset](../../c-runtime-library/heapset.md)<br/>
-[_heapwalk](heapwalk.md)<br/>
-[malloc](malloc.md)<br/>
+[Memory allocation](../memory-allocation.md)\
+[`free`](free.md)\
+[`_heapadd`](../heapadd.md)\
+[`_heapchk`](heapchk.md)\
+[`_heapset`](../heapset.md)\
+[`_heapwalk`](heapwalk.md)\
+[`malloc`](malloc.md)

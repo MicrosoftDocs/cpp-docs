@@ -30,7 +30,7 @@ int __cdecl _initterm_e(
 );
 ```
 
-## Return Value
+## Return value
 
 A non-zero error code if an initialization fails and throws an error; 0 if no error occurs.
 
@@ -42,4 +42,4 @@ When these methods walk a table of function entries, they skip **NULL** entries 
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)

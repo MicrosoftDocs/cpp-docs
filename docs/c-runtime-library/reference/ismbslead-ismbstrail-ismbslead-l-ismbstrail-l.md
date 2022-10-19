@@ -42,24 +42,24 @@ int _ismbstrail_l(
 
 ### Parameters
 
-*str*<br/>
+*`str`*\
 Pointer to the start of the string or the previous known lead byte.
 
-*current*<br/>
+*`current`*\
 Pointer to the position in the string to be tested.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-**_ismbslead** returns -1 if the character is a lead byte and **_ismbstrail** returns -1 if the character is a trail byte. If the input strings are valid but are not a lead byte or trail byte, these functions return zero. If either argument is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set **errno** to **EINVAL**.
+**_ismbslead** returns -1 if the character is a lead byte and **_ismbstrail** returns -1 if the character is a trail byte. If the input strings are valid but are not a lead byte or trail byte, these functions return zero. If either argument is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set **errno** to **EINVAL**.
 
 ## Remarks
 
 **_ismbslead** and **_ismbstrail** are slower than the **_ismbblead** and **_ismbbtrail** versions because they take the string context into account.
 
-The versions of these functions that have the **_l** suffix are identical except that for their locale-dependent behavior they use the locale that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions that have the **_l** suffix are identical except that for their locale-dependent behavior they use the locale that's passed in instead of the current locale. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -74,11 +74,11 @@ By default, this function's global state is scoped to the application. To change
 
 \* For manifest constants for the test conditions.
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[`_ismbc` routines](../ismbc-routines.md)\
+[`is`, `isw` routines](../is-isw-routines.md)\
+[`_ismbb` routines](../ismbb-routines.md)

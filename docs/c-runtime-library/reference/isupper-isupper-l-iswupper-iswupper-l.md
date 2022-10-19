@@ -35,26 +35,26 @@ int _iwsupper_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to test.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
-Each of these routines returns nonzero if *c* is a particular representation of an uppercase letter. **isupper** returns a nonzero value if *c* is an uppercase character (A - Z). **iswupper** returns a nonzero value if *c* is a wide character that corresponds to an uppercase letter, or if *c* is one of an implementation-defined set of wide characters for which none of **iswcntrl**, **iswdigit**, **iswpunct**, or **iswspace** is nonzero. Each of these routines returns 0 if *c* does not satisfy the test condition.
+Each of these routines returns nonzero if *`c`* is a particular representation of an uppercase letter. **isupper** returns a nonzero value if *`c`* is an uppercase character (A - Z). **iswupper** returns a nonzero value if *`c`* is a wide character that corresponds to an uppercase letter, or if *`c`* is one of an implementation-defined set of wide characters for which none of **iswcntrl**, **iswdigit**, **iswpunct**, or **iswspace** is nonzero. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
 
-The versions of these functions that have the **_l** suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions that have the **_l** suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
-The behavior of **isupper** and **_isupper_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
+The behavior of **isupper** and **_isupper_l** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istupper**|**isupper**|[_ismbcupper](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswupper**|
-|**_istupper_l**|**_isupper_l**|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_iswupper_l**|
+|**_istupper**|**isupper**|[`_ismbcupper`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswupper**|
+|**_istupper_l**|**_isupper_l**|[`_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_iswupper_l**|
 
 ## Remarks
 
@@ -69,10 +69,10 @@ By default, this function's global state is scoped to the application. To change
 |**iswupper**|\<ctype.h> or \<wchar.h>|
 |**_iswupper_l**|\<ctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[Locale](../locale.md)\
+[`is`, `isw` routines](../is-isw-routines.md)

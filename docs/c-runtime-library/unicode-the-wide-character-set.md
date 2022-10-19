@@ -20,5 +20,5 @@ Generally, wide characters use more space in memory than multibyte characters. B
 
 ## See also
 
-[Internationalization](../c-runtime-library/internationalization.md)\
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+[Internationalization](./internationalization.md)\
+[Universal C runtime routines by category](./run-time-routines-by-category.md)

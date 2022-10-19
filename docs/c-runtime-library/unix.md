@@ -22,4 +22,4 @@ If you plan to port your programs to UNIX, follow these guidelines:
 
 ## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)
+[Compatibility](./compatibility.md)

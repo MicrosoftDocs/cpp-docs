@@ -30,7 +30,7 @@ Number of elements.
 *`size`*\
 Length in bytes of each element.
 
-## Return Value
+## Return value
 
 **`calloc`** returns a pointer to the allocated space. The storage space pointed to by the return value is suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
 
@@ -38,7 +38,7 @@ Length in bytes of each element.
 
 The **`calloc`** function allocates storage space for an array of *`number`* elements, each of length *`size`* bytes. Each element is initialized to 0.
 
-**`calloc`** sets **`errno`** to **`ENOMEM`** if a memory allocation fails or if the amount of memory requested exceeds **`_HEAP_MAXREQ`**. For information on this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**`calloc`** sets **`errno`** to **`ENOMEM`** if a memory allocation fails or if the amount of memory requested exceeds **`_HEAP_MAXREQ`**. For information on this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 In the Microsoft implementation, if *`number`* or *`size`* is zero, **`calloc`** returns a pointer to an allocated block of non-zero size. An attempt to read or write through the returned pointer leads to undefined behavior.
 
@@ -48,9 +48,9 @@ In the Microsoft implementation, if *`number`* or *`size`* is zero, **`calloc`**
 _set_new_mode(1);
 ```
 
-early in your program, or link with *`NEWMODE.OBJ`* (see [Link Options](../../c-runtime-library/link-options.md)).
+early in your program, or link with *`NEWMODE.OBJ`* (see [Link options](../link-options.md)).
 
-When the application is linked with a debug version of the C run-time libraries, **`calloc`** resolves to [`_calloc_dbg`](calloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **`calloc`** resolves to [`_calloc_dbg`](calloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
 **`calloc`** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned isn't aliased. For more information, see [`noalias`](../../cpp/noalias.md) and [`restrict`](../../cpp/restrict.md).
 
@@ -62,7 +62,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`calloc`**|`<stdlib.h>` and `<malloc.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -93,7 +93,7 @@ Allocated 40 long integers
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)\
+[Memory allocation](../memory-allocation.md)\
 [`free`](free.md)\
 [`malloc`](malloc.md)\
 [`realloc`](realloc.md)\

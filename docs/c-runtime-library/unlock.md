@@ -27,7 +27,7 @@ void __cdecl _unlock(
 
 #### Parameters
 
-*`locknum`*<br/>
+*`locknum`*\
 [in] The identifier of the lock to release.
 
 ## Requirements
@@ -36,5 +36,5 @@ void __cdecl _unlock(
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[`_lock`](../c-runtime-library/lock.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`_lock`](./lock.md)

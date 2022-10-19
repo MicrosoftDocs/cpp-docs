@@ -34,24 +34,24 @@ wchar_t *_wgetdcwd_nolock(
 
 ### Parameters
 
-*drive*<br/>
+*`drive`*\
 Disk drive.
 
-*buffer*<br/>
+*`buffer`*\
 Storage location for the path.
 
-*maxlen*<br/>
+*`maxlen`*\
 Maximum length of path in characters: **`char`** for **_getdcwd** and **`wchar_t`** for **_wgetdcwd**.
 
-## Return Value
+## Return value
 
-See [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
+See [`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md).
 
 ## Remarks
 
 **_getdcwd_nolock** and **_wgetdcwd_nolock** are identical to **_getdcwd** and **_wgetdcwd**, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -64,13 +64,13 @@ See [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
 |**_getdcwd_nolock**|\<direct.h>|
 |**_wgetdcwd_nolock**|\<direct.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
-[_getdrive](getdrive.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
+[Directory control](../directory-control.md)\
+[`_chdir`, `_wchdir`](chdir-wchdir.md)\
+[`_getcwd`, `_wgetcwd`](getcwd-wgetcwd.md)\
+[`_getdrive`](getdrive.md)\
+[`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\
+[`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)

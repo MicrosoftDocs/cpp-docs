@@ -41,9 +41,9 @@ Global state affected by the separation of app and OS state includes:
 - Signal handlers set by [`signal`](reference/signal.md)
 - Termination routines set by [`terminate`](reference/set-terminate-crt.md)
 - [`errno` and `_doserrno`](errno-doserrno-sys-errlist-and-sys-nerr.md)
-- Random number generation state used by [rand](reference/rand.md) and [srand](reference/srand.md)
+- Random number generation state used by [`rand`](reference/rand.md) and [`srand`](reference/srand.md)
 - Functions that return a buffer that the user doesn't need to release:
-    [`strtok`, `wcstok`, _mb`stok](reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md)\
+    [`strtok`, `wcstok`, `_mbstok`](reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md)\
     [`Tmpnam`, `_wtmpnam`](reference/tempnam-wtempnam-tmpnam-wtmpnam.md)\
     [`asctime`, `_wasctime`](reference/asctime-wasctime.md)\
     [`gmtime`, `_gmtime32`, `_gmtime64`](reference/gmtime-gmtime32-gmtime64.md)\

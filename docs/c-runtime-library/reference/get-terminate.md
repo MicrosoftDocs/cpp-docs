@@ -20,9 +20,9 @@ Returns the termination routine to be called by **terminate**.
 terminate_function _get_terminate( void );
 ```
 
-## Return Value
+## Return value
 
-Returns a pointer to the function registered by [set_terminate](set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be **NULL**.
+Returns a pointer to the function registered by [`set_terminate`](set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be **NULL**.
 
 ## Remarks
 
@@ -34,12 +34,12 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_get_terminate**|\<eh.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
-[set_unexpected](set-unexpected-crt.md)<br/>
-[terminate](terminate-crt.md)<br/>
-[unexpected](unexpected-crt.md)<br/>
+[Exception handling routines](../exception-handling-routines.md)\
+[`abort`](abort.md)\
+[`set_unexpected`](set-unexpected-crt.md)\
+[`terminate`](terminate-crt.md)\
+[`unexpected`](unexpected-crt.md)

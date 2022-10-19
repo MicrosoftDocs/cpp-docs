@@ -21,9 +21,9 @@ int   _abnormal_termination(
    );
 ```
 
-## Return Value
+## Return value
 
-**`true`** if the system is *unwinding* the stack; otherwise, **`false`**.
+**`true`** if the system is unwinding the stack; otherwise, **`false`**.
 
 ## Remarks
 

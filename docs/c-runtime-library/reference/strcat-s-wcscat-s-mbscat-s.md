@@ -12,7 +12,7 @@ ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
 ---
 # `strcat_s`, `wcscat_s`, `_mbscat_s`, `_mbscat_s_l`
 
-Appends a string. These versions of [`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Appends a string. These versions of [`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > **`_mbscat_s`** and **`_mbscat_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -66,23 +66,23 @@ errno_t _mbscat_s_l(
 
 ### Parameters
 
-*`strDestination`*<br/>
+*`strDestination`*\
 Null-terminated destination string buffer.
 
-*`numberOfElements`*<br/>
+*`numberOfElements`*\
 Size of the destination string buffer.
 
-*`strSource`*<br/>
+*`strSource`*\
 Null-terminated source string buffer.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
 Zero if successful; an error code on failure.
 
-### Error Conditions
+### Error conditions
 
 |*`strDestination`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDestination`*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
@@ -105,17 +105,17 @@ strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 
 **`wcscat_s`** and **`_mbscat_s`** are wide-character and multibyte-character versions of **`strcat_s`**. The arguments and return value of **`wcscat_s`** are wide-character strings; those of **`_mbscat_s`** are multibyte-character strings. These three functions behave identically otherwise.
 
-If *`strDestination`* is a null pointer, or is not null-terminated, or if *`strSource`* is a **`NULL`** pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`EINVAL`** and set **`errno`** to **`EINVAL`**.
+If *`strDestination`* is a null pointer, or is not null-terminated, or if *`strSource`* is a **`NULL`** pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`EINVAL`** and set **`errno`** to **`EINVAL`**.
 
-The versions of functions that have the **`_l`** suffix have the same behavior, but use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of functions that have the **`_l`** suffix have the same behavior, but use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../locale.md).
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -129,7 +129,7 @@ By default, this function's global state is scoped to the application. To change
 |**`wcscat_s`**|`<string.h>` or `<wchar.h>`|
 |**`_mbscat_s`**|`<mbstring.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -137,10 +137,10 @@ See the code example in [`strcpy_s`, `wcscpy_s`, `_mbscpy_s`](strcpy-s-wcscpy-s-
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
-[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

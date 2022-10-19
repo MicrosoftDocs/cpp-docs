@@ -25,13 +25,13 @@ int fegetexceptflag(
 
 ### Parameters
 
-*`pstatus`*<br/>
+*`pstatus`*\
 A pointer to a **fexcept_t** object to contain the current values of the  exception flags specified by *`excepts`*.
 
-*`excepts`*<br/>
+*`excepts`*\
 The floating-point exception flags to store in *`pstatus`*.
 
-## Return Value
+## Return value
 
 On success, returns 0. Otherwise, it returns a non-zero value.
 
@@ -50,7 +50,7 @@ The **fegetexceptflag** function stores the current state of the floating-point 
 
 The *`excepts`* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
 
-To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
 
 ## Requirements
 
@@ -58,9 +58,9 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**fegetexceptflag**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fesetexceptflag](fesetexceptflag2.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`fesetexceptflag`](fesetexceptflag2.md)

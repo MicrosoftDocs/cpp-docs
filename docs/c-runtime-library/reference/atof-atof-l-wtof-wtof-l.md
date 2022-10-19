@@ -35,17 +35,17 @@ double _wtof_l(
 
 ## Parameters
 
-*`str`*<br/>
+*`str`*\
 String to be converted.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
 Each function returns the **`double`** value produced by interpreting the input characters as a number. The return value is 0.0 if the input can't be converted to a value of that type.
 
-In all out-of-range cases, **`errno`** is set to **`ERANGE`**. If the parameter passed in is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return 0.
+In all out-of-range cases, **`errno`** is set to **`ERANGE`**. If the parameter passed in is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return 0.
 
 ## Remarks
 
@@ -55,7 +55,7 @@ The input string is a sequence of characters that can be interpreted as a numeri
 
 The *`str`* argument to **`atof`** and **`_wtof`** has the following form:
 
-[*`whitespace`*] [*`sign`*] [*dig`its*] [**`.`***`digits`*] [ {**`e`** \| **`E`** }[*`sign`*]*`digits`*]
+[*`whitespace`*] [*`sign`*] [*`digits`*] [**`.`***`digits`*] [ {**`e`** \| **`E`** }[*`sign`*]*`digits`*]
 
 A *`whitespace`* consists of space or tab characters, which are ignored; *`sign`* is either plus (+) or minus (-); and *`digits`* are one or more decimal digits. If no digits appear before the decimal point, at least one must appear after the decimal point. The decimal digits may be followed by an exponent, which consists of an introductory letter (**`e`**, or **`E`**) and an optionally signed decimal integer.
 
@@ -65,7 +65,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -132,11 +132,11 @@ Function: _atof_l("  -2,309e-25", fr)) = -2.309000e-25
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[`_ecvt`](ecvt.md)<br/>
-[`_fcvt`](fcvt.md)<br/>
-[`_gcvt`](gcvt.md)<br/>
-[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)<br/>
-[`_atodbl`, `_atodbl_l`, `_atoldbl`, `_atoldbl_l`, `_atoflt`, `_atoflt_l`](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[Locale](../locale.md)\
+[`_ecvt`](ecvt.md)\
+[`_fcvt`](fcvt.md)\
+[`_gcvt`](gcvt.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`_atodbl`, `_atodbl_l`, `_atoldbl`, `_atoldbl_l`, `_atoflt`, `_atoflt_l`](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)

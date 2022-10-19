@@ -40,11 +40,11 @@ String to be converted.
 *`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
 Each function returns the **`long`** value produced by interpreting the input characters as a number. The return value is `0L` for **`atol`** if the input can't be converted to a value of that type.
 
-If these functions overflow with large positive integral values, they return **`LONG_MAX`**. If the functions overflow with large negative integral values, **`LONG_MIN`** is returned. In all out-of-range cases, **`errno`** is set to **`ERANGE`**. If the parameter passed in is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return 0.
+If these functions overflow with large positive integral values, they return **`LONG_MAX`**. If the functions overflow with large negative integral values, **`LONG_MIN`** is returned. In all out-of-range cases, **`errno`** is set to **`ERANGE`**. If the parameter passed in is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return 0.
 
 ## Remarks
 
@@ -60,11 +60,11 @@ A *`whitespace`* consists of space or tab characters, which are ignored; *`sign`
 
 **`_wtol`** is identical to **`atol`** except that it takes a wide character string.
 
-The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current locale. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -129,9 +129,9 @@ Overflow condition occurred.
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
-[Locale](../../c-runtime-library/locale.md)\
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[Locale](../locale.md)\
 [`_ecvt`](ecvt.md)\
 [`_fcvt`](fcvt.md)\
 [`_gcvt`](gcvt.md)\

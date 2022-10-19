@@ -31,16 +31,16 @@ int wmemcmp(
 
 ### Parameters
 
-*`buffer1`*<br/>
+*`buffer1`*\
 First buffer.
 
-*`buffer2`*<br/>
+*`buffer2`*\
 Second buffer.
 
-*`count`*<br/>
+*`count`*\
 Number of characters to compare. (Compares bytes for **`memcmp`**, wide characters for **`wmemcmp`**).
 
-## Return Value
+## Return value
 
 The return value indicates the relationship between the buffers.
 
@@ -61,11 +61,11 @@ Compares the first *`count`* characters of *`buffer1`* and *`buffer2`* and retur
 |**`memcmp`**|`<memory.h>` or `<string.h>`|
 |**`wmemcmp`**|`<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time library](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time library](../crt-library-features.md).
 
 ## Example
 
@@ -117,10 +117,10 @@ int_arr1 is equal to int_arr2.
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[`_memccpy`](memccpy.md)<br/>
-[`memchr`, `wmemchr`](memchr-wmemchr.md)<br/>
-[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)<br/>
-[`memset`, `wmemset`](memset-wmemset.md)<br/>
-[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)<br/>
-[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+[Buffer manipulation](../buffer-manipulation.md)\
+[`_memccpy`](memccpy.md)\
+[`memchr`, `wmemchr`](memchr-wmemchr.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`memset`, `wmemset`](memset-wmemset.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)

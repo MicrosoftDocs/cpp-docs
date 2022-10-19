@@ -50,11 +50,11 @@ By default, this function's global state is scoped to the application. To change
 |**`_endthread`**|`<process.h>`|
 |**`_endthreadex`**|`<process.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Multithreaded versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Multithreaded versions of the [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -62,5 +62,5 @@ See the example for [`_beginthread`](beginthread-beginthreadex.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`_beginthread`, `_beginthreadex`](beginthread-beginthreadex.md)

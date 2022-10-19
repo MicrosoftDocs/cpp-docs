@@ -24,22 +24,22 @@ void rewind(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Pointer to **FILE** structure.
 
 ## Remarks
 
-The **rewind** function repositions the file pointer associated with *stream* to the beginning of the file. A call to **rewind** is similar to
+The **rewind** function repositions the file pointer associated with *`stream`* to the beginning of the file. A call to **rewind** is similar to
 
-**(void) fseek(** _stream_**, 0L, SEEK_SET );**
+`(void) fseek(stream, 0L, SEEK_SET );`
 
-However, unlike [fseek](fseek-fseeki64.md), **rewind** clears the error indicators for the stream as well as the end-of-file indicator. Also, unlike [fseek](fseek-fseeki64.md), **rewind** does not return a value to indicate whether the pointer was successfully moved.
+However, unlike [`fseek`](fseek-fseeki64.md), **rewind** clears the error indicators for the stream as well as the end-of-file indicator. Also, unlike [`fseek`](fseek-fseeki64.md), **rewind** does not return a value to indicate whether the pointer was successfully moved.
 
 To clear the keyboard buffer, use **rewind** with the stream **stdin**, which is associated with the keyboard by default.
 
-If stream is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns and **errno** is set to **EINVAL**.
+If stream is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns and **errno** is set to **EINVAL**.
 
-For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -49,11 +49,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**rewind**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -97,4 +97,4 @@ The values read are: 1 and -37
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream I/O](../stream-i-o.md)

@@ -29,4 +29,4 @@ The file time and the date are stored individually, using unsigned integers as b
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+[Global constants](./global-constants.md)

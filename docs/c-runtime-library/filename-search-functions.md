@@ -7,15 +7,15 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 helpviewer_keywords: ["file names [C++], searching for", "_find function", "wfind function", "find function", "_wfind function"]
 ---
-# Filename Search Functions
+# Filename search functions
 
 These functions search for and close searches for specified file names:
 
-- [`_findnext`, `_wfindnext`](../c-runtime-library/reference/findnext-functions.md)
+- [`_findnext`, `_wfindnext`](./reference/findnext-functions.md)
 
-- [`_findfirst`, `_wfindfirst`](../c-runtime-library/reference/findfirst-functions.md)
+- [`_findfirst`, `_wfindfirst`](./reference/findfirst-functions.md)
 
-- [`_findclose`](../c-runtime-library/reference/findclose.md)
+- [`_findclose`](./reference/findclose.md)
 
 ## Remarks
 
@@ -27,7 +27,7 @@ The functions return file information in a `_finddata_t` structure, which is def
 File attribute.
 
 `time_t time_create`\
-Time of file creation (`-1L` for FAT file systems). This time is stored in UTC format. To convert to the local time, use [`localtime_s`](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).
+Time of file creation (`-1L` for FAT file systems). This time is stored in UTC format. To convert to the local time, use [`localtime_s`](./reference/localtime-s-localtime32-s-localtime64-s.md).
 
 `time_t time_access`\
 Time of the last file access (`-1L` for FAT file systems). This time is stored in UTC format. To convert to the local time, use `localtime_s`.
@@ -139,4 +139,4 @@ N   N   N   Y   test.c       Wed Feb 06 14:30:44 2002        312
 
 ## See also
 
-[System Calls](../c-runtime-library/system-calls.md)
+[System calls](./system-calls.md)

@@ -8,22 +8,22 @@ helpviewer_keywords: ["is routines", "isw routines"]
 
 :::row:::
    :::column span="":::
-      [`isalnum`, `iswalnum`, `_isalnum_l`, `_iswalnum_l`](../c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md)\
-      [`isalpha`, `iswalpha`, `_isalpha_l`, `_iswalpha_l`](../c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md)\
-      [`isascii`, _`_isascii`, `iswascii`](../c-runtime-library/reference/isascii-isascii-iswascii.md)\
-      [`isblank`, `iswblank`, `_isblank_l`, `_iswblank_l`](../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)\
-      [`iscntrl`, `iswcntrl`, `_iscntrl_l`, `_iswcntrl_l`](../c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)\
-      [`iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`](../c-runtime-library/reference/iscsym-functions.md)\
-      [`_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)\
-      [`isdigit`, `iswdigit`, `_isdigit_l`, `_iswdigit_l`](../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)
-      [`isgraph`, `iswgraph`, `_isgraph_l`, `_iswgraph_l`](../c-runtime-library/reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md)\
-      [`isleadbyte`, `_isleadbyte_l`](../c-runtime-library/reference/isleadbyte-isleadbyte-l.md)\
-      [`islower`, `iswlower`, `_islower_l`, `_iswlower_l`](../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md)\
-      [`isprint`, `iswprint`, `_isprint_l`, `_iswprint_l`](../c-runtime-library/reference/isprint-iswprint-isprint-l-iswprint-l.md)\
-      [`ispunct`, `iswpunct`, `_ispunct_l`, `_iswpunct_l`](../c-runtime-library/reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md)\
-      [`isspace`, `iswspace`, `_isspace_l`, `_iswspace_l`](../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md)\
-      [`isupper`, `_isupper_l`, `iswupper`, `_iswupper_l`](../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md)\
-      [`isxdigit`, `iswxdigit`, `_isxdigit_l`, `_iswxdigit_l`](../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)
+      [`isalnum`, `iswalnum`, `_isalnum_l`, `_iswalnum_l`](./reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md)\
+      [`isalpha`, `iswalpha`, `_isalpha_l`, `_iswalpha_l`](./reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md)\
+      [`isascii`, `__isascii`, `iswascii`](./reference/isascii-isascii-iswascii.md)\
+      [`isblank`, `iswblank`, `_isblank_l`, `_iswblank_l`](./reference/isblank-iswblank-isblank-l-iswblank-l.md)\
+      [`iscntrl`, `iswcntrl`, `_iscntrl_l`, `_iswcntrl_l`](./reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)\
+      [`iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`](./reference/iscsym-functions.md)\
+      [`_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`](./reference/isctype-iswctype-isctype-l-iswctype-l.md)\
+      [`isdigit`, `iswdigit`, `_isdigit_l`, `_iswdigit_l`](./reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)
+      [`isgraph`, `iswgraph`, `_isgraph_l`, `_iswgraph_l`](./reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md)\
+      [`isleadbyte`, `_isleadbyte_l`](./reference/isleadbyte-isleadbyte-l.md)\
+      [`islower`, `iswlower`, `_islower_l`, `_iswlower_l`](./reference/islower-iswlower-islower-l-iswlower-l.md)\
+      [`isprint`, `iswprint`, `_isprint_l`, `_iswprint_l`](./reference/isprint-iswprint-isprint-l-iswprint-l.md)\
+      [`ispunct`, `iswpunct`, `_ispunct_l`, `_iswpunct_l`](./reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md)\
+      [`isspace`, `iswspace`, `_isspace_l`, `_iswspace_l`](./reference/isspace-iswspace-isspace-l-iswspace-l.md)\
+      [`isupper`, `_isupper_l`, `iswupper`, `_iswupper_l`](./reference/isupper-isupper-l-iswupper-iswupper-l.md)\
+      [`isxdigit`, `iswxdigit`, `_isxdigit_l`, `_iswxdigit_l`](./reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)
    :::column-end:::
 :::row-end:::
 
@@ -38,7 +38,7 @@ The `is` routines produce meaningful results for any integer argument from -1 (`
 
 The `isw` routines produce meaningful results for any integer value from -1 (`WEOF`) to 0xFFFF, inclusive. The `wint_t` data type is defined in `<WCHAR.H>` as an **`unsigned short`**. It can hold any wide character or the wide-character end-of-file (`WEOF`) value.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead.
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead.
 
 In the "C" locale, the test conditions for the `is` routines are as follows:
 
@@ -328,8 +328,8 @@ int main( void )
 
 ## See also
 
-[Character classification](../c-runtime-library/character-classification.md)\
-[Locale](../c-runtime-library/locale.md)\
-[`setlocale`, `_wsetlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md)\
-[Interpretation of multibyte-character sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
-[`to` Functions](../c-runtime-library/to-functions.md)
+[Character classification](./character-classification.md)\
+[Locale](./locale.md)\
+[`setlocale`, `_wsetlocale`](./reference/setlocale-wsetlocale.md)\
+[Interpretation of multibyte-character sequences](./interpretation-of-multibyte-character-sequences.md)\
+[`to` functions](./to-functions.md)

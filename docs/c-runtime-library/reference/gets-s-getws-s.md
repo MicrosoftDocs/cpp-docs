@@ -12,7 +12,7 @@ ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
 ---
 # `gets_s`, `_getws_s`
 
-Gets a line from the **`stdin`** stream. These versions of [`gets`, `_getws`](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Gets a line from the **`stdin`** stream. These versions of [`gets`, `_getws`](../gets-getws.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -37,13 +37,13 @@ wchar_t *_getws_s( wchar_t (&buffer)[size] ); // C++ only
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Storage location for input string.
 
-*`sizeInCharacters`*<br/>
+*`sizeInCharacters`*\
 The size of the buffer.
 
-## Return Value
+## Return value
 
 Returns *`buffer`* if successful. A **`NULL`** pointer indicates an error or end-of-file condition. Use [`ferror`](ferror.md) or [`feof`](feof.md) to determine which one has occurred.
 
@@ -55,13 +55,13 @@ If the first character read is the end-of-file character, a null character is st
 
 **`_getws_s`** is a wide-character version of **`gets_s`**; its argument and return value are wide-character strings.
 
-If *`buffer`* is **`NULL`** or *`sizeInCharacters`* is less than or equal to zero, or if the buffer is too small to contain the input line and null terminator, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set errno to **`ERANGE`**.
+If *`buffer`* is **`NULL`** or *`sizeInCharacters`* is less than or equal to zero, or if the buffer is too small to contain the input line and null terminator, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set errno to **`ERANGE`**.
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -74,7 +74,7 @@ By default, this function's global state is scoped to the application. To change
 |**`gets_s`**|`<stdio.h>`|
 |**`_getws_s`**|`<stdio.h>` or `<wchar.h>`|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -103,8 +103,8 @@ The line entered was: Hello there!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`gets`, `_getws`](../../c-runtime-library/gets-getws.md)<br/>
-[`fgets`, `fgetws`](fgets-fgetws.md)<br/>
-[`fputs`, `fputws`](fputs-fputws.md)<br/>
-[`puts`, `_putws`](puts-putws.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`gets`, `_getws`](../gets-getws.md)\
+[`fgets`, `fgetws`](fgets-fgetws.md)\
+[`fputs`, `fputws`](fputs-fputws.md)\
+[`puts`, `_putws`](puts-putws.md)

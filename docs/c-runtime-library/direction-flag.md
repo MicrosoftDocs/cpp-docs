@@ -6,7 +6,7 @@ ms.topic: "conceptual"
 helpviewer_keywords: ["direction flag"]
 ms.assetid: 0836b4af-dbbb-4ab8-a4b2-156f2e2099e2
 ---
-# Direction Flag
+# Direction flag
 
 The direction flag is a CPU flag specific to all Intel x86-compatible CPUs. It applies to all assembly instructions that use the REP (repeat) prefix, such as MOVS, MOVSD, MOVSW, and others. Addresses provided to applicable instructions are increased if the direction flag is cleared.
 
@@ -16,4 +16,4 @@ The C Run-Time library functions, such as the string-manipulation and buffer-man
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md)

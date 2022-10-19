@@ -23,7 +23,7 @@ Returns a bitmask that represents the currently available disk drives.
 unsigned long _getdrives( void );
 ```
 
-## Return Value
+## Return value
 
 If the function succeeds, the return value is a bitmask that represents the currently available disk drives. Bit position 0 (the least-significant bit) is drive A, bit position 1 is drive B, bit position 2 is drive C, and so on. If the function fails, the return value is zero. To get extended error information, call **GetLastError**.
 
@@ -37,7 +37,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_getdrives**|\<direct.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -87,4 +87,4 @@ E:
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
+[Directory control](../directory-control.md)

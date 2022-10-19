@@ -29,36 +29,36 @@ wint_t fputwc(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be written.
 
-*stream*<br/>
+*`stream`*\
 Pointer to **FILE** structure.
 
-## Return Value
+## Return value
 
-Each of these functions returns the character written. For **fputc**, a return value of **EOF** indicates an error. For **fputwc**, a return value of **WEOF** indicates an error. If *stream* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **EOF** and set **errno** to **EINVAL**.
+Each of these functions returns the character written. For **fputc**, a return value of **EOF** indicates an error. For **fputwc**, a return value of **WEOF** indicates an error. If *`stream`* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return **EOF** and set **errno** to **EINVAL**.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Each of these functions writes the single character *c* to a file at the position indicated by the associated file position indicator, if defined. The functions advance the indicator as appropriate. In **fputc** and **fputwc**, the file is associated with *stream*. If the file can't support positioning requests or was opened in append mode, the character is appended to the end of the stream.
+Each of these functions writes the single character *`c`* to a file at the position indicated by the associated file position indicator, if defined. The functions advance the indicator as appropriate. In **fputc** and **fputwc**, the file is associated with *`stream`*. If the file can't support positioning requests or was opened in append mode, the character is appended to the end of the stream.
 
 The two functions behave identically if the stream is opened in ANSI mode. **fputc** doesn't currently support output into a UNICODE stream.
 
-The versions with the **_nolock** suffix are identical except that they aren't protected from interference by other threads. For more information, see[_fputc_nolock, _fputwc_nolock](fputc-nolock-fputwc-nolock.md).
+The versions with the **_nolock** suffix are identical except that they aren't protected from interference by other threads. For more information, see[`_fputc_nolock`, `_fputwc_nolock`](fputc-nolock-fputwc-nolock.md).
 
 Routine-specific remarks follow.
 
 |Routine|Remarks|
 |-------------|-------------|
 |**fputc**|Equivalent to **putc**, but implemented only as a function, rather than as a function and a macro.|
-|**fputwc**|Wide-character version of **fputc**. Writes *c* as a multibyte character or a wide character when *stream* is opened in text mode or binary mode, respectively.|
+|**fputwc**|Wide-character version of **fputc**. Writes *`c`* as a multibyte character or a wide character when *`stream`* is opened in text mode or binary mode, respectively.|
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 |**fputc**|\<stdio.h>|
 |**fputwc**|\<stdio.h> or \<wchar.h>|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—**stdin**, **stdout**, and **stderr**—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—**stdin**, **stdout**, and **stderr**—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -100,6 +100,6 @@ This is a test of fputc!!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`putc`, `putwc`](putc-putwc.md)

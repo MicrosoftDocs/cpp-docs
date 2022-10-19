@@ -6,7 +6,7 @@ f1_keywords: ["A_HIDDEN", "_A_NORMAL", "_A_SUBDIR", "_A_RDONLY", "A_NORMAL", "A_
 helpviewer_keywords: ["constants [C++], file attributes", "file attribute constants [C++]", "_A_SYSTEM constant", "files [C++], file attribute constants", "_A_SUBDIR constant", "_A_ARCH constant", "_A_NORMAL constant", "_A_HIDDEN constant", "_A_RDONLY constant"]
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
 ---
-# File Attribute Constants
+# File attribute constants
 
 ## Syntax
 
@@ -33,5 +33,5 @@ Multiple constants can be combined with the OR operator (`|`).
 
 ## See also
 
-[Filename Search Functions](../c-runtime-library/filename-search-functions.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[Filename search functions](./filename-search-functions.md)\
+[Global constants](./global-constants.md)

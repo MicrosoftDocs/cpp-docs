@@ -12,7 +12,7 @@ ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
 ---
 # _chsize
 
-Changes the size of a file. A more secure version is available; see [_chsize_s](chsize-s.md).
+Changes the size of a file. A more secure version is available; see [`_chsize_s`](chsize-s.md).
 
 ## Syntax
 
@@ -25,23 +25,23 @@ int _chsize(
 
 ### Parameters
 
-*`fd`*<br/>
+*`fd`*\
 File descriptor referring to an open file.
 
-*`size`*<br/>
+*`size`*\
 New length of the file in bytes.
 
-## Return Value
+## Return value
 
 **_chsize** returns the value 0 if the file size is successfully changed. A return value of -1 indicates an error: **errno** is set to **EACCES** if the specified file is read-only or the specified file is locked against access, to **EBADF** if the descriptor is invalid, **ENOSPC** if no space is left on the device, or **EINVAL** if *`size`* is less than zero.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 The **_chsize** function extends or truncates the file associated with *`fd`* to the length specified by *`size`*. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
 
-This function validates its parameters. If *`size`* is less than zero or *`fd`* is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If *`size`* is less than zero or *`fd`* is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -51,7 +51,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**_chsize**|\<io.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -95,7 +95,7 @@ File length after:  329678
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](close.md)<br/>
-[_sopen, _wsopen](sopen-wsopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+[File handling](../file-handling.md)\
+[`_close`](close.md)\
+[`_sopen`, `_wsopen`](sopen-wsopen.md)\
+[`_open`, `_wopen`](open-wopen.md)

@@ -38,7 +38,7 @@ long double atan2( long double y, long double x );  // C++ only
 *`x`*, *`y`*\
 Any numbers.
 
-## Return Value
+## Return value
 
 **`atan`** returns the arctangent of *`x`* in the range -π/2 to π/2 radians. **`atan2`** returns the arctangent of *`y`*/*`x`* in the range -π to π radians. If *`x`* is 0, **`atan`** returns 0. If both parameters of **`atan2`** are 0, the function returns 0. All results are in radians.
 
@@ -52,7 +52,7 @@ Any numbers.
 
 The **`atan`** function calculates the arctangent (the inverse tangent function) of *`x`*. **`atan2`** calculates the arctangent of *`y`*/*`x`* (if *`x`* equals 0, **`atan2`** returns π/2 if *`y`* is positive, -π/2 if *`y`* is negative, or 0 if *`y`* is 0.)
 
-If you use the `<tgmath.h>` `atan()` or `atan2()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `atan()` or `atan2()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 **`atan`** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [`_set_SSE2_enable`](set-sse2-enable.md).
 
@@ -100,12 +100,12 @@ Arctangent of 0.500000 / 5.000000: 0.099669
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)\
 [`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
 [`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
 [`_matherr`](matherr.md)\
 [`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
 [`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)\
-[`_CIatan`](../../c-runtime-library/ciatan.md)\
-[`_CIatan2`](../../c-runtime-library/ciatan2.md)
+[`_CIatan`](../ciatan.md)\
+[`_CIatan2`](../ciatan2.md)
