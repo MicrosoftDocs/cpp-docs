@@ -24,18 +24,18 @@ int feof(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Pointer to **FILE** structure.
 
-## Return Value
+## Return value
 
-The **feof** function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is **NULL**, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the **feof** returns 0.
+The **feof** function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is **NULL**, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the **feof** returns 0.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **feof** routine (implemented both as a function and as a macro) determines whether the end of *stream* has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until [rewind](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md), or **clearerr** is called against it.
+The **feof** routine (implemented both as a function and as a macro) determines whether the end of *`stream`* has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until [`rewind`](rewind.md), **fsetpos**, [`fseek`](fseek-fseeki64.md), or **clearerr** is called against it.
 
 For example, if a file contains 10 bytes and you read 10 bytes from the file, **feof** will return 0 because, even though the file pointer is at the end of the file, you haven't attempted to read beyond the end. Only after you try to read an 11th byte will **feof** return a nonzero value.
 
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**feof**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -104,9 +104,9 @@ Number of bytes read = 19
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](clearerr.md)<br/>
-[_eof](eof.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[Error handling](../error-handling-crt.md)\
+[Stream I/O](../stream-i-o.md)\
+[`clearerr`](clearerr.md)\
+[`_eof`](eof.md)\
+[`ferror`](ferror.md)\
+[`perror`, `_wperror`](perror-wperror.md)

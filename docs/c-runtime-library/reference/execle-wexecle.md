@@ -38,16 +38,16 @@ intptr_t _wexecle(
 
 ### Parameters
 
-*cmdname*<br/>
+*`cmdname`*\
 Path of the file to execute.
 
-*arg0*, ... *argN*<br/>
+*`arg0`*, ... *`argN`*\
 List of pointers to parameters.
 
-*envp*<br/>
+*`envp`*\
 Array of pointers to environment settings.
 
-## Return Value
+## Return value
 
 If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
 
@@ -61,13 +61,13 @@ If successful, these functions don't return to the calling process. A return val
 |**ENOEXEC**|The specified file isn't executable or has an invalid executable-file format.|
 |**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, which indicates that the calling process wasn't allocated correctly.|
 
-For more information about these return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 Each of these functions loads and executes a new process, and passes each command-line argument as a separate parameter and passes an array of pointers to environment settings.
 
-The **_execle** functions validate their parameters. If *cmdname* or *arg0* is a null pointer or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is launched.
+The **_execle** functions validate their parameters. If *`cmdname`* or *`arg0`* is a null pointer or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is launched.
 
 ## Requirements
 
@@ -76,19 +76,19 @@ The **_execle** functions validate their parameters. If *cmdname* or *arg0* is a
 |**_execle**|\<process.h>|\<errno.h>|
 |**_wexecle**|\<process.h> or \<wchar.h>|\<errno.h>|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).
+See the example in [`_exec`, `_wexec` functions](../exec-wexec-functions.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
-[atexit](atexit.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

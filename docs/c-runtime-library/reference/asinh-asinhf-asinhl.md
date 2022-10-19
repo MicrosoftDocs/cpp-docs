@@ -28,12 +28,12 @@ long double asinh( long double x );  // C++ only
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 Floating-point value.
 
-## Return Value
+## Return value
 
-The **asinh** functions return the inverse hyperbolic sine (arc hyperbolic sine) of *x*. This function is valid over the floating-point domain. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
+The **asinh** functions return the inverse hyperbolic sine (arc hyperbolic sine) of *`x`*. This function is valid over the floating-point domain. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|
@@ -43,7 +43,7 @@ The **asinh** functions return the inverse hyperbolic sine (arc hyperbolic sine)
 
 When you use C++, you can call overloads of **asinh** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **asinh** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `asinh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `asinh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath> or \<math.h>|
 |**asinh()** macro | \<tgmath.h> ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -86,9 +86,9 @@ asinh( 0.868671 ) = 0.785398
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`acosh`, `acoshf`, `acoshl`](acosh-acoshf-acoshl.md)\
+[`atanh`, `atanhf`, `atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh`, `coshf`, `coshl`](cosh-coshf-coshl.md)\
+[`sinh`, `sinhf`, `sinhl`](sinh-sinhf-sinhl.md)\
+[`tanh`, `tanhf`, `tanhl`](tanh-tanhf-tanhl.md)

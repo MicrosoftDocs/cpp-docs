@@ -12,7 +12,7 @@ ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
 ---
 # __RTDynamicCast
 
-Runtime implementation of the [dynamic_cast](../cpp/dynamic-cast-operator.md) operator.
+Runtime implementation of the [`dynamic_cast`](../cpp/dynamic-cast-operator.md) operator.
 
 ## Syntax
 
@@ -28,22 +28,22 @@ PVOID __RTDynamicCast (
 
 #### Parameters
 
-*inptr*<br/>
+*`inptr`*\
 Pointer to a polymorphic object.
 
-*VfDelta*<br/>
+*`VfDelta`*\
 Offset of virtual function pointer in object.
 
-*SrcType*<br/>
+*`SrcType`*\
 Static type of object pointed to by the `inptr` parameter.
 
-*TargetType*<br/>
+*`TargetType`*\
 Intended result of cast.
 
-*isReference*<br/>
+*`isReference`*\
 **`true`** if input is a reference; **`false`** if input is a pointer.
 
-## Return Value
+## Return value
 
 Pointer to the appropriate subobject, if successful; otherwise, **NULL**.
 

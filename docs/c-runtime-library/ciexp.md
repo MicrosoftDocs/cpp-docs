@@ -34,5 +34,5 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[`exp`, `expf`, `expl`](../c-runtime-library/reference/exp-expf.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`exp`, `expf`, `expl`](./reference/exp-expf.md)

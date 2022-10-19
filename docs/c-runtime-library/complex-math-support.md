@@ -23,7 +23,7 @@ The Microsoft implementation of the `complex.h` header defines these types as eq
 |**`double complex`** or **`double _Complex`**|**`_Dcomplex`**|
 |**`long double complex`** or **`long double _Complex`**|**`_Lcomplex`**|
 
-The `math.h` header defines a separate type, **`struct _complex`**, used for the [`_cabs`](../c-runtime-library/reference/cabs.md) function. The **`struct _complex`** type isn't used by the equivalent complex math functions [`cabs`, `cabsf`, `cabsl`](../c-runtime-library/reference/cabs-cabsf-cabsl.md).
+The `math.h` header defines a separate type, **`struct _complex`**, used for the [`_cabs`](./reference/cabs.md) function. The **`struct _complex`** type isn't used by the equivalent complex math functions [`cabs`, `cabsf`, `cabsl`](./reference/cabs-cabsf-cabsl.md).
 
 ## Complex constants and macros
 
@@ -33,51 +33,51 @@ The `math.h` header defines a separate type, **`struct _complex`**, used for the
 
 |Function|Description|
 |-|-|
-|[`cacos`, `cacosf`, `cacosl`](../c-runtime-library/reference/cacos-cacosf-cacosl.md)|Compute the complex arc cosine of a complex number|
-|[`casin`, `casinf`, `casinl`](../c-runtime-library/reference/casin-casinf-casinl.md)|Compute the complex arc sine of a complex number|
-|[`catan`, `catanf`, `catanl`](../c-runtime-library/reference/catan-catanf-catanl.md)|Compute the complex arc tangent of a complex number|
-|[`ccos`, `ccosf`, `ccosl`](../c-runtime-library/reference/ccos-ccosf-ccosl.md)|Compute the complex cosine of a complex number|
-|[`csin`, `csinf`, `csinl`](../c-runtime-library/reference/csin-csinf-csinl.md)|Compute the complex sine of a complex number|
-|[`ctan`, `ctanf`, `ctanl`](../c-runtime-library/reference/ctan-ctanf-ctanl.md)|Compute the complex tangent of a complex number|
+|[`cacos`, `cacosf`, `cacosl`](./reference/cacos-cacosf-cacosl.md)|Compute the complex arc cosine of a complex number|
+|[`casin`, `casinf`, `casinl`](./reference/casin-casinf-casinl.md)|Compute the complex arc sine of a complex number|
+|[`catan`, `catanf`, `catanl`](./reference/catan-catanf-catanl.md)|Compute the complex arc tangent of a complex number|
+|[`ccos`, `ccosf`, `ccosl`](./reference/ccos-ccosf-ccosl.md)|Compute the complex cosine of a complex number|
+|[`csin`, `csinf`, `csinl`](./reference/csin-csinf-csinl.md)|Compute the complex sine of a complex number|
+|[`ctan`, `ctanf`, `ctanl`](./reference/ctan-ctanf-ctanl.md)|Compute the complex tangent of a complex number|
 
 ## Hyperbolic functions
 
 |Function|Description|
 |-|-|
-|[`cacosh`, `cacoshf`, `cacoshl`](../c-runtime-library/reference/cacosh-cacoshf-cacoshl.md)|Compute the complex arc hyperbolic cosine of a complex number|
-|[`casinh`, `casinhf`, `casinhl`](../c-runtime-library/reference/casinh-casinhf-casinhl.md)|Compute the complex arc hyperbolic sine of a complex number|
-|[`catanh`, `catanhf`, `catanhl`](../c-runtime-library/reference/catanh-catanhf-catanhl.md)|Compute the complex arc hyperbolic tangent of a complex number|
-|[`ccosh`, `ccoshf`, `ccoshl`](../c-runtime-library/reference/ccosh-ccoshf-ccoshl.md)|Compute the complex hyperbolic cosine of a complex number|
-|[`csinh`, `csinhf`, `csinhl`](../c-runtime-library/reference/csinh-csinhf-csinhl.md)|Compute the complex hyperbolic sine of a complex number|
-|[`ctanh`, `ctanhf`, `ctanhl`](../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)|Compute the complex hyperbolic tangent of a complex number|
+|[`cacosh`, `cacoshf`, `cacoshl`](./reference/cacosh-cacoshf-cacoshl.md)|Compute the complex arc hyperbolic cosine of a complex number|
+|[`casinh`, `casinhf`, `casinhl`](./reference/casinh-casinhf-casinhl.md)|Compute the complex arc hyperbolic sine of a complex number|
+|[`catanh`, `catanhf`, `catanhl`](./reference/catanh-catanhf-catanhl.md)|Compute the complex arc hyperbolic tangent of a complex number|
+|[`ccosh`, `ccoshf`, `ccoshl`](./reference/ccosh-ccoshf-ccoshl.md)|Compute the complex hyperbolic cosine of a complex number|
+|[`csinh`, `csinhf`, `csinhl`](./reference/csinh-csinhf-csinhl.md)|Compute the complex hyperbolic sine of a complex number|
+|[`ctanh`, `ctanhf`, `ctanhl`](./reference/ctanh-ctanhf-ctanhl.md)|Compute the complex hyperbolic tangent of a complex number|
 
 ## Exponential and logarithmic functions
 
 |Function|Description|
 |-|-|
-|[`cexp`, `cexpf`, `cexpl`](../c-runtime-library/reference/cexp-cexpf-cexpl.md)|Compute the complex base-*e* exponential of a complex number|
-|[`clog`, `clogf`, `clogl`](../c-runtime-library/reference/clog-clogf-clogl.md)|Compute the complex natural (base-*e*) logarithm of a complex number|
-|[`clog10`, `clog10f`, `clog10l`](../c-runtime-library/reference/clog10-clog10f-clog10l.md)|Compute the complex base-10 logarithm of a complex number|
+|[`cexp`, `cexpf`, `cexpl`](./reference/cexp-cexpf-cexpl.md)|Compute the complex base-*e* exponential of a complex number|
+|[`clog`, `clogf`, `clogl`](./reference/clog-clogf-clogl.md)|Compute the complex natural (base-*e*) logarithm of a complex number|
+|[`clog10`, `clog10f`, `clog10l`](./reference/clog10-clog10f-clog10l.md)|Compute the complex base-10 logarithm of a complex number|
 
 ## Power and absolute-value functions
 
 |Function|Description|
 |-|-|
-|[`cabs`, `cabsf`, `cabsl`](../c-runtime-library/reference/cabs-cabsf-cabsl.md)|Compute the complex absolute value (also called the norm, modulus, or magnitude) of a complex number|
-|[`cpow`, `cpowf`, `cpowl`](../c-runtime-library/reference/cpow-cpowf-cpowl.md)|Compute the complex power function|
-|[`csqrt`, `csqrtf`, `csqrtl`](../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)|Compute the complex square root of a complex number|
+|[`cabs`, `cabsf`, `cabsl`](./reference/cabs-cabsf-cabsl.md)|Compute the complex absolute value (also called the norm, modulus, or magnitude) of a complex number|
+|[`cpow`, `cpowf`, `cpowl`](./reference/cpow-cpowf-cpowl.md)|Compute the complex power function|
+|[`csqrt`, `csqrtf`, `csqrtl`](./reference/csqrt-csqrtf-csqrtl.md)|Compute the complex square root of a complex number|
 
 ## Manipulation functions
 
 |Function|Description|
 |-|-|
-|[`_Cbuild`, `_FCbuild`, `_LCbuild`](../c-runtime-library/reference/cbuild-fcbuild-lcbuild.md)|Construct a complex number from real and imaginary parts|
-|[`carg`, `cargf`, `cargl`](../c-runtime-library/reference/carg-cargf-cargl.md)|Compute the argument (also called the phase angle) of a complex number|
-|[`cimag`, `cimagf`, `cimagl`](../c-runtime-library/reference/cimag-cimagf-cimagl.md)|Compute the imaginary part of a complex number|
-|[`conj`, `conjf`, `conjl`](../c-runtime-library/reference/conj-conjf-conjl.md)|Compute the complex conjugate of a complex number|
-|[`cproj`, `cprojf`, `cprojl`](../c-runtime-library/reference/cproj-cprojf-cprojl.md)|Compute a projection of a complex number onto the Riemann sphere|
-|[`creal`, `crealf`, `creall`](../c-runtime-library/reference/creal-crealf-creall.md)|Compute the real part of a complex number|
-|[`norm`, `normf`, `norml`](../c-runtime-library/reference/norm-normf-norml1.md)|Compute the squared magnitude of a complex number|
+|[`_Cbuild`, `_FCbuild`, `_LCbuild`](./reference/cbuild-fcbuild-lcbuild.md)|Construct a complex number from real and imaginary parts|
+|[`carg`, `cargf`, `cargl`](./reference/carg-cargf-cargl.md)|Compute the argument (also called the phase angle) of a complex number|
+|[`cimag`, `cimagf`, `cimagl`](./reference/cimag-cimagf-cimagl.md)|Compute the imaginary part of a complex number|
+|[`conj`, `conjf`, `conjl`](./reference/conj-conjf-conjl.md)|Compute the complex conjugate of a complex number|
+|[`cproj`, `cprojf`, `cprojl`](./reference/cproj-cprojf-cprojl.md)|Compute a projection of a complex number onto the Riemann sphere|
+|[`creal`, `crealf`, `creall`](./reference/creal-crealf-creall.md)|Compute the real part of a complex number|
+|[`norm`, `normf`, `norml`](./reference/norm-normf-norml1.md)|Compute the squared magnitude of a complex number|
 
 ## Operation functions
 
@@ -85,10 +85,10 @@ Because complex numbers aren't a native type in the Microsoft compiler, the stan
 
 |Function|Description|
 |-|-|
-|[`_Cmulcc`, `_FCmulcc`, `_LCmulcc`](../c-runtime-library/reference/cmulcc-fcmulcc-lcmulcc.md)|Multiply two complex numbers|
-|[`_Cmulcr`, `_FCmulcr`, `_LCmulcr`](../c-runtime-library/reference/cmulcr-fcmulcr-lcmulcr.md)|Multiply a complex and a floating-point number|
+|[`_Cmulcc`, `_FCmulcc`, `_LCmulcc`](./reference/cmulcc-fcmulcc-lcmulcc.md)|Multiply two complex numbers|
+|[`_Cmulcr`, `_FCmulcr`, `_LCmulcr`](./reference/cmulcr-fcmulcr-lcmulcr.md)|Multiply a complex and a floating-point number|
 
 ## See also
 
 [Type-generic math](tgmath.md)\
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+[Universal C runtime routines by category](./run-time-routines-by-category.md)

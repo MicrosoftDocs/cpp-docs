@@ -26,11 +26,11 @@ void *_alloca(
 *`size`*\
 Bytes to be allocated from the stack.
 
-## Return Value
+## Return value
 
 The **`_alloca`** routine returns a **`void`** pointer to the allocated space, which is suitably aligned for storage of any type of object. If *`size`* is 0, **`_alloca`** allocates a zero-length item and returns a valid pointer to that item.
 
-A stack overflow exception is generated if the space can't be allocated. The stack overflow exception isn't a C++ exception; it's a structured exception. Instead of using C++ exception handling, you must use [Structured Exception Handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
+A stack overflow exception is generated if the space can't be allocated. The stack overflow exception isn't a C++ exception; it's a structured exception. Instead of using C++ exception handling, you must use [Structured exception handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
 
 ## Remarks
 
@@ -117,7 +117,7 @@ Allocated 1000 bytes of stack at 0x0012FB50
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)\
+[Memory allocation](../memory-allocation.md)\
 [`calloc`](calloc.md)\
 [`malloc`](malloc.md)\
 [`realloc`](realloc.md)\

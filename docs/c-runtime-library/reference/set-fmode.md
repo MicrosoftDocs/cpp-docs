@@ -24,16 +24,16 @@ errno_t _set_fmode(
 
 ### Parameters
 
-*mode*<br/>
+*`mode`*\
 The file translation mode desired: **_O_TEXT** or **_O_BINARY**.
 
-## Return Value
+## Return value
 
-Returns zero if successful, an error code on failure. If *mode* is not **_O_TEXT** or **_O_BINARY** or **_O_WTEXT**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+Returns zero if successful, an error code on failure. If *`mode`* is not **_O_TEXT** or **_O_BINARY** or **_O_WTEXT**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Remarks
 
-The function sets the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations **_open** and **_pipe**.
+The function sets the [`_fmode`](../fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations **_open** and **_pipe**.
 
 **_O_TEXT** and **_O_BINARY** are defined in Fcntl.h. **EINVAL** is defined in Errno.h.
 
@@ -45,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**_set_fmode**|\<stdlib.h>|\<fcntl.h>, \<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -112,7 +112,7 @@ A   B   C   D   E   F   G   H   I   J   K   L
 
 ## See also
 
-[_fmode](../../c-runtime-library/fmode.md)<br/>
-[_get_fmode](get-fmode.md)<br/>
-[_setmode](setmode.md)<br/>
-[Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+[`_fmode`](../fmode.md)\
+[`_get_fmode`](get-fmode.md)\
+[`_setmode`](setmode.md)\
+[Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md)

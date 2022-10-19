@@ -34,5 +34,5 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[`fmod`, `fmodf`](../c-runtime-library/reference/fmod-fmodf.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`fmod`, `fmodf`](./reference/fmod-fmodf.md)

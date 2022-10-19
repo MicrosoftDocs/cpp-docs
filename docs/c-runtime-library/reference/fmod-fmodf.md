@@ -45,7 +45,7 @@ long double fmodl(
 *`x`*, *`y`*\
 Floating-point values.
 
-## Return Value
+## Return value
 
 **`fmod`** returns the floating-point remainder of `x / y`. If the value of *`y`* is 0.0, **`fmod`** returns a quiet `NaN`. For information about representation of a quiet `NaN` by the **`printf`** family, see [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
@@ -55,7 +55,7 @@ The **`fmod`** function calculates the floating-point remainder *`f`* of `x / y`
 
 C++ allows overloading, so you can call overloads of **`fmod`** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`fmod`** always takes two **`double`** arguments and returns a **`double`**.
 
-If you use the `<tgmath.h>` `fmod()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `fmod()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -66,7 +66,7 @@ By default, this function's global state is scoped to the application. To change
 |**`fmod`**, **`fmodf`**, **`fmodl`**|`<math.h>`|
 |**`fmod`** macro | `<tgmath.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -92,8 +92,8 @@ The remainder of -10.00 / 3.00 is -1.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`ceil, ceilf, ceill`](ceil-ceilf-ceill.md)\
 [`fabs, fabsf, fabsl`](fabs-fabsf-fabsl.md)\
 [`floor, floorf, floorl`](floor-floorf-floorl.md)\
-[`_CIfmod`](../../c-runtime-library/cifmod.md)
+[`_CIfmod`](../cifmod.md)

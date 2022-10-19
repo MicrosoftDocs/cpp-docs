@@ -6,7 +6,7 @@ f1_keywords: ["c.types"]
 helpviewer_keywords: ["checking type", "variable argument functions", "type checking"]
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
 ---
-# Type Checking (CRT)
+# Type checking (CRT)
 
 The compiler performs limited type checking on functions that can take a variable number of arguments, as follows:
 
@@ -24,4 +24,4 @@ The compiler performs the same limited type checking on the wide-character count
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md)

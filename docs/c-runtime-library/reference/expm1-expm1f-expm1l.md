@@ -37,18 +37,18 @@ long double expm1l(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The floating-point exponential value.
 
-## Return Value
+## Return value
 
-The **expm1** functions return a floating-point value that represents e<sup>x</sup> - 1, if successful. On overflow, **expm1** returns **HUGE_VAL**, **expm1f** returns **HUGE_VALF**, **expm1l** returns **HUGE_VALL**, and **errno** is set to **ERANGE**. For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+The **expm1** functions return a floating-point value that represents e<sup>x</sup> - 1, if successful. On overflow, **expm1** returns **HUGE_VAL**, **expm1f** returns **HUGE_VALF**, **expm1l** returns **HUGE_VALL**, and **errno** is set to **ERANGE**. For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **expm1** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **expm1** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `expm1()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `expm1()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
@@ -57,10 +57,10 @@ If you use the \<tgmath.h> `expm1()` macro, the type of the argument determines 
 |**expm1**, **expm1f**, **expm1l**|\<math.h>|
 |**expm1** macro | \<tgmath.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>
-[pow, powf, powl](pow-powf-powl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`exp2`, `exp2f`, `exp2l`](exp2-exp2f-exp2l.md)\
+[`pow`, `powf`, `powl`](pow-powf-powl.md)

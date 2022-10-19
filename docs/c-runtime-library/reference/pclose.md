@@ -27,18 +27,18 @@ FILE *stream
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Return value from the previous call to **_popen**.
 
-## Return Value
+## Return value
 
 Returns the exit status of the terminating command processor, or -1 if an error occurs. The format of the return value is the same as that for **_cwait**, except the low-order and high-order bytes are swapped. If stream is **NULL**, **_pclose** sets **errno** to **EINVAL** and returns -1.
 
-For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_pclose** function looks up the process ID of the command processor (Cmd.exe) started by the associated **_popen** call, executes a [_cwait](cwait.md) call on the new command processor, and closes the stream on the associated pipe.
+The **_pclose** function looks up the process ID of the command processor (Cmd.exe) started by the associated **_popen** call, executes a [`_cwait`](cwait.md) call on the new command processor, and closes the stream on the associated pipe.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -48,14 +48,14 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_pclose**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_pipe](pipe.md)<br/>
-[_popen, _wpopen](popen-wpopen.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`_pipe`](pipe.md)\
+[`_popen`, `_wpopen`](popen-wpopen.md)

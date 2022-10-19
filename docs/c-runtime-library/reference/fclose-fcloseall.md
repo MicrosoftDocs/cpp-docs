@@ -27,15 +27,15 @@ int _fcloseall( void );
 *`stream`*\
 Pointer to **`FILE`** structure.
 
-## Return Value
+## Return value
 
 **`fclose`** returns 0 if the stream is successfully closed. **`_fcloseall`** returns the total number of streams closed. Both functions return **`EOF`** to indicate an error.
 
 ## Remarks
 
-The **`fclose`** function closes *`stream`*. If *`stream`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`fclose`** sets **`errno`** to **`EINVAL`** and returns **`EOF`**. It's recommended that you always check the *`stream`* pointer before you call this function.
+The **`fclose`** function closes *`stream`*. If *`stream`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`fclose`** sets **`errno`** to **`EINVAL`** and returns **`EOF`**. It's recommended that you always check the *`stream`* pointer before you call this function.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 The **`_fcloseall`** function closes all open streams except **`stdin`**, **`stdout`**, **`stderr`** (and, in MS-DOS, **`_stdaux`** and **`_stdprn`**). It also closes and deletes any temporary files created by **`tmpfile`**. In both functions, all buffers associated with the stream are flushed prior to closing. System-allocated buffers are released when the stream is closed. Buffers assigned by the user with **`setbuf`** and **`setvbuf`** aren't automatically released.
 
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 |**`fclose`**|`<stdio.h>`|
 |**`_fcloseall`**|`<stdio.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -61,7 +61,7 @@ See the example for [`fopen`](fopen-wfopen.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`_close`](close.md)\
 [`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
 [`fflush`](fflush.md)\

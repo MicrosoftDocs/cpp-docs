@@ -11,7 +11,7 @@ helpviewer_keywords: ["floating-point numbers, control word", "controlfp_s funct
 ---
 # `_controlfp_s`
 
-Gets and sets the floating-point control word. This version of [`_control87`, `_controlfp`, `\__control87_2`](control87-controlfp-control87-2.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Gets and sets the floating-point control word. This version of [`_control87`, `_controlfp`, `__control87_2`](control87-controlfp-control87-2.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -34,7 +34,7 @@ New control-word bit values.
 *`mask`*\
 Mask for new control-word bits to set.
 
-## Return Value
+## Return value
 
 Zero if successful, or an **`errno`** value error code.
 
@@ -77,9 +77,9 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
 
 On ARM platforms, the **`_controlfp_s`** function applies to the FPSCR register. On x64 architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the **`EM_AMBIGUOUS`** flag in *`currentControl`*. It's a warning that the returned control word might not represent the state of both floating-point control words accurately.
 
-On the ARM and x64 architectures, changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+On the ARM and x64 architectures, changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-If the mask isn't set correctly, this function generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
+If the mask isn't set correctly, this function generates an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
 
 This function is ignored when you use [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.
 
@@ -103,7 +103,7 @@ For the **`_MCW_EM`** mask, clearing it sets the exception, which allows the har
 |-------------|---------------------|
 |**`_controlfp_s`**|`<float.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -158,7 +158,7 @@ Default:  0x9001f
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`_clear87`, `_clearfp`](clear87-clearfp.md)\
 [`_status87`, `_statusfp`, `_statusfp2`](status87-statusfp-statusfp2.md)\
-[`_control87`, `_controlfp`, `\__control87_2`](control87-controlfp-control87-2.md)
+[`_control87`, `_controlfp`, `__control87_2`](control87-controlfp-control87-2.md)

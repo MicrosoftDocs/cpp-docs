@@ -12,7 +12,7 @@ ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
 ---
 # _lfind_s
 
-Performs a linear search for the specified key. A version of [_lfind](lfind.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a linear search for the specified key. A version of [`_lfind`](lfind.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -29,33 +29,33 @@ void *_lfind_s(
 
 ### Parameters
 
-*key*<br/>
+*`key`*\
 Object to search for.
 
-*base*<br/>
+*`base`*\
 Pointer to the base of search data.
 
-*number*<br/>
+*`number`*\
 Number of array elements.
 
-*size*<br/>
+*`size`*\
 Size of array elements in bytes.
 
-*compare*<br/>
-Pointer to comparison routine. The first parameter is the *context* pointer. The second parameter is a pointer to key for search. The third parameter is a pointer to array element to be compared with key.
+*`compare`*\
+Pointer to comparison routine. The first parameter is the *`context`* pointer. The second parameter is a pointer to key for search. The third parameter is a pointer to array element to be compared with key.
 
-*context*<br/>
+*`context`*\
 A pointer to an object that might be accessed in the comparison function.
 
-## Return Value
+## Return value
 
-If the key is found, **_lfind_s** returns a pointer to the element of the array at *base* that matches *key*. If the key is not found, **_lfind_s** returns **NULL**.
+If the key is found, **_lfind_s** returns a pointer to the element of the array at *`base`* that matches *`key`*. If the key is not found, **_lfind_s** returns **NULL**.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
 
-### Error Conditions
+### Error conditions
 
-|key|base|compare|num|size|errno|
+|*`key`*|*`base`*|*`compare`*|*`number`*|*`size`*|`errno`|
 |---------|----------|-------------|---------|----------|-----------|
 |**NULL**|any|any|any|any|**EINVAL**|
 |any|**NULL**|any|!= 0|any|**EINVAL**|
@@ -64,9 +64,9 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 
 ## Remarks
 
-The **_lfind_s** function performs a linear search for the value *key* in an array of *number* elements, each of *width* bytes. Unlike **bsearch_s**, **_lfind_s** does not require the array to be sorted. The *base* argument is a pointer to the base of the array to be searched. The *compare* argument is a pointer to a user-supplied routine that compares two array elements and then returns a value specifying their relationship. **_lfind_s** calls the *compare* routine one or more times during the search, passing the *context* pointer and pointers to two array elements on each call. The *compare* routine must compare the elements then return nonzero (meaning that the elements are different) or 0 (meaning the elements are identical).
+The **_lfind_s** function performs a linear search for the value *`key`* in an array of *`number`* elements, each of *`size`* bytes. Unlike **bsearch_s**, **_lfind_s** does not require the array to be sorted. The *`base`* argument is a pointer to the base of the array to be searched. The *`compare`* argument is a pointer to a user-supplied routine that compares two array elements and then returns a value specifying their relationship. **_lfind_s** calls the *`compare`* routine one or more times during the search, passing the *`context`* pointer and pointers to two array elements on each call. The *`compare`* routine must compare the elements then return nonzero (meaning that the elements are different) or 0 (meaning the elements are identical).
 
-**_lfind_s** is similar to **_lfind** except for the addition of the *context* pointer to the arguments of the comparison function and the parameter list of the function. The *context* pointer can be useful if the searched data structure is part of an object and the *compare* function needs to access members of the object. The *compare* function can cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* parameter makes **_lfind_s** more secure because additional context can be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
+**_lfind_s** is similar to **_lfind** except for the addition of the *`context`* pointer to the arguments of the comparison function and the parameter list of the function. The *`context`* pointer can be useful if the searched data structure is part of an object and the *`compare`* function needs to access members of the object. The *`compare`* function can cast the void pointer into the appropriate object type and access members of that object. The addition of the *`context`* parameter makes **_lfind_s** more secure because additional context can be used to avoid reentrancy bugs associated with using static variables to make data available to the *`compare`* function.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -76,7 +76,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_lfind_s**|\<search.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -160,8 +160,8 @@ weit found
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](bsearch-s.md)<br/>
-[_lsearch_s](lsearch-s.md)<br/>
-[qsort_s](qsort-s.md)<br/>
-[_lfind](lfind.md)<br/>
+[Searching and sorting](../searching-and-sorting.md)\
+[`bsearch_s`](bsearch-s.md)\
+[`_lsearch_s`](lsearch-s.md)\
+[`qsort_s`](qsort-s.md)\
+[`_lfind`](lfind.md)

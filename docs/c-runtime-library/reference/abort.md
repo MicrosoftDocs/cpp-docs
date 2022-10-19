@@ -22,7 +22,7 @@ Aborts the current process and returns an error code.
 void abort( void );
 ```
 
-## Return Value
+## Return value
 
 **`abort`** doesn't return control to the calling process. By default, it checks for an abort signal handler and raises `SIGABRT` if one is set. Then **`abort`** terminates the current process and returns an exit code to the parent process.
 
@@ -48,7 +48,7 @@ If the Windows error reporting handler isn't invoked, then **`abort`** calls [`_
 
 For Windows compatibility reasons, when `abort` calls `_exit`, it may invoke the Windows [`ExitProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API, which in turn allows DLL termination routines to run. Destructors aren't run in the executable, but the same may not be true of DLLs loaded in the executable's process space. This behavior doesn't strictly conform to the C++ standard. To immediately terminate a process including any DLLs, use the Windows [`TerminateProcess`](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminateprocess) API. You can also register an abort signal handler that invokes `TerminateProcess` for standard-compliant behavior. Compliant behavior may come at some cost in Windows compatibility.
 
-For more information about CRT debugging, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
+For more information about CRT debugging, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
 
 **End Microsoft Specific**
 
@@ -99,12 +99,12 @@ File could not be opened: No such file or directory
 ## See also
 
 [Using `abort`](../../cpp/using-abort.md)\
-[`abort` Function](../../c-language/abort-function-c.md)\
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
-[`_exec`, `_wexec` Functions](../../c-runtime-library/exec-wexec-functions.md)\
+[`abort` function](../../c-language/abort-function-c.md)\
+[Process and environment control](../process-and-environment-control.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
 [`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
 [`raise`](raise.md)\
 [`signal`](signal.md)\
-[`_spawn`, `_wspawn` Functions](../../c-runtime-library/spawn-wspawn-functions.md)\
-[`_DEBUG`](../../c-runtime-library/debug.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`_DEBUG`](../debug.md)\
 [`_set_abort_behavior`](set-abort-behavior.md)

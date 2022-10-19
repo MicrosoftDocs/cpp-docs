@@ -6,7 +6,7 @@ f1_keywords: ["_LK_RLCK", "_LK_NBLCK", "_LK_LOCK", "_LK_NBRLCK", "_LK_UNLCK"]
 helpviewer_keywords: ["LK_UNLCK constant", "LK_NBRLCK constant", "_LK_NBRLCK constant", "_LK_NBLCK constant", "_LK_LOCK constant", "LK_NBLCK constant", "_LK_UNLCK constant", "LK_RLCK constant", "_LK_RLCK constant", "LK_LOCK constant"]
 ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
 ---
-# _locking Constants
+# _locking constants
 
 ## Syntax
 
@@ -16,9 +16,9 @@ ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
 
 ## Remarks
 
-The *mode* argument in the call to the `_locking` function specifies the locking action to be performed.
+The *`mode`* argument in the call to the `_locking` function specifies the locking action to be performed.
 
-The *mode* argument must be one of the following manifest constants.
+The *`mode`* argument must be one of the following manifest constants.
 
 |Value|Description|
 |-|-|
@@ -30,5 +30,5 @@ The *mode* argument must be one of the following manifest constants.
 
 ## See also
 
-[_locking](../c-runtime-library/reference/locking.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[`_locking`](./reference/locking.md)\
+[Global constants](./global-constants.md)

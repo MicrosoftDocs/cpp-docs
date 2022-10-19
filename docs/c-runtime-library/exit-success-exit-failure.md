@@ -24,4 +24,4 @@ The `EXIT_SUCCESS` and `EXIT_FAILURE` constants are arguments for the [`exit`](r
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+[Global constants](./global-constants.md)

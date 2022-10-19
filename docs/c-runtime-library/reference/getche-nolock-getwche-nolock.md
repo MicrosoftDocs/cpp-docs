@@ -24,7 +24,7 @@ int _getche_nolock( void );
 wint_t _getwche_nolock( void );
 ```
 
-## Return Value
+## Return value
 
 Returns the character read. There's no error return.
 
@@ -34,7 +34,7 @@ Returns the character read. There's no error return.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |**_getche_nolock**|\<conio.h>|
 |**_getwche_nolock**|\<conio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -87,7 +87,7 @@ Type 'Y' when finished typing keys: abcdefyY
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>
+[Console and port I/O](../console-and-port-i-o.md)\
+[`_cgets`, `_cgetws`](../cgets-cgetws.md)\
+[`getc`, `getwc`](getc-getwc.md)\
+[`_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)

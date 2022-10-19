@@ -12,7 +12,7 @@ ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
 ---
 # _fcvt_s
 
-Converts a floating-point number to a string. This function is a version of [_fcvt](fcvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a floating-point number to a string. This function is a version of [`_fcvt`](fcvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -37,33 +37,33 @@ errno_t _fcvt_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 The supplied buffer that will hold the result of the conversion.
 
-*sizeInBytes*<br/>
+*`sizeInBytes`*\
 The size of the buffer in bytes.
 
-*value*<br/>
+*`value`*\
 Number to be converted.
 
-*count*<br/>
+*`count`*\
 Number of digits after the decimal point.
 
-*dec*<br/>
+*`dec`*\
 Pointer to the stored decimal-point position.
 
-*sign*<br/>
+*`sign`*\
 Pointer to the stored sign indicator.
 
-## Return Value
+## Return value
 
-Zero if successful. The return value is an error code if there's a failure. Error codes are defined in `errno.h`. For a listing of these errors, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful. The return value is an error code if there's a failure. Error codes are defined in `errno.h`. For a listing of these errors, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-When there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+When there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
-### Error Conditions
+### Error conditions
 
-|*buffer*|*sizeInBytes*|value|count|dec|sign|Return|Value in *buffer*|
+|*`buffer`*|*`sizeInBytes`*|*`value`*|*`count`*|*`dec`*|*`sign`*|Return|Value in *`buffer`*|
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|
 |**NULL**|any|any|any|any|any|**EINVAL**|Not modified.|
 |Not **NULL** (points to valid memory)|<=0|any|any|any|any|**EINVAL**|Not modified.|
@@ -72,21 +72,21 @@ When there's an invalid parameter, as listed in the following table, this functi
 
 ## Security Issues
 
-**_fcvt_s** might generate an access violation if *buffer* doesn't point to valid memory and isn't **NULL**.
+**_fcvt_s** might generate an access violation if *`buffer`* doesn't point to valid memory and isn't **NULL**.
 
 ## Remarks
 
-The **_fcvt_s** function converts a floating-point number to a null-terminated character string. The *value* parameter is the floating-point number to be converted. **_fcvt_s** stores the digits of *value* as a string and appends a null character ('\0'). The *count* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *count* places. If there are fewer than *count* digits of precision, the string is padded with zeros.
+The **_fcvt_s** function converts a floating-point number to a null-terminated character string. The *`value`* parameter is the floating-point number to be converted. **_fcvt_s** stores the digits of *`value`* as a string and appends a null character ('\0'). The *`count`* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *`count`* places. If there are fewer than *`count`* digits of precision, the string is padded with zeros.
 
-Only digits are stored in the string. The position of the decimal point and the sign of *value* can be obtained from *dec* and *sign* after the call. The *dec* parameter points to an integer value; this integer value gives the position of the decimal point with respect to the beginning of the string. A zero or negative integer value indicates that the decimal point lies to the left of the first digit. The parameter *sign* points to an integer indicating the sign of *value*. The integer is set to 0 if *value* is positive and is set to a nonzero number if *value* is negative.
+Only digits are stored in the string. The position of the decimal point and the sign of *`value`* can be obtained from *`dec`* and *`sign`* after the call. The *`dec`* parameter points to an integer value; this integer value gives the position of the decimal point with respect to the beginning of the string. A zero or negative integer value indicates that the decimal point lies to the left of the first digit. The parameter *`sign`* points to an integer indicating the sign of *`value`*. The integer is set to 0 if *`value`* is positive and is set to a nonzero number if *`value`* is negative.
 
 A buffer of length **_CVTBUFSIZE** is sufficient for any floating point value.
 
-The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *count* parameter. **_ecvt_s** interprets *count* as the total number of digits in the output string, and **_fcvt_s** interprets *count* as the number of digits after the decimal point.
+The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *`count`* parameter. **_ecvt_s** interprets *`count`* as the total number of digits in the output string, and **_fcvt_s** interprets *`count`* as the number of digits after the decimal point.
 
-In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug version of this function first fills the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug version of this function first fills the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -96,9 +96,9 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|---------------------|
 |**_fcvt_s**|\<stdlib.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
-**Libraries:** All versions of the [C runtime libraries](../../c-runtime-library/crt-library-features.md).
+**Libraries:** All versions of the [C runtime libraries](../crt-library-features.md).
 
 ## Example
 
@@ -134,9 +134,9 @@ Converted value: 120000
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt_s](ecvt-s.md)<br/>
-[_gcvt_s](gcvt-s.md)<br/>
-[_fcvt](fcvt.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_ecvt_s`](ecvt-s.md)\
+[`_gcvt_s`](gcvt-s.md)\
+[`_fcvt`](fcvt.md)

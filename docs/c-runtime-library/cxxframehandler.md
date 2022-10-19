@@ -27,19 +27,19 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
 
 #### Parameters
 
-*pExcept*<br/>
+*`pExcept`*\
 Exception record that is passed to the possible **`catch`** statements.
 
-*pRN*<br/>
+*`pRN`*\
 Dynamic information about the stack frame that is used to handle the exception. For more information, see ehdata.h.
 
-*pContext*<br/>
+*`pContext`*\
 Context. (Not used on Intel processors.)
 
-*pDC*<br/>
+*`pDC`*\
 Additional information about the function entry and stack frame.
 
-## Return Value
+## Return value
 
 One of the *filter expression* values used by the [try-except Statement](../cpp/try-except-statement.md).
 

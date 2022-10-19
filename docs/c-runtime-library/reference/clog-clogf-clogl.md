@@ -36,12 +36,12 @@ _Lcomplex clogl(
 
 ### Parameters
 
-*z*\
+*`z`*\
 The base of the logarithm.
 
-## Return Value
+## Return value
 
-The natural logarithm of *z*. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.
+The natural logarithm of *`z`*. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.
 
 The possible return values are:
 
@@ -63,11 +63,11 @@ Because C++ allows overloading, you can call overloads of **clog** that take and
 |-------------|--------------|------------------|
 |**clog**,               **clogf**, **clogl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`cexp`, `cexpf`, `cexpl`](cexp-cexpf-cexpl.md)\
+[`cpow`, `cpowf`, `cpowl`](cpow-cpowf-cpowl.md)\
+[`clog10`, `clog10f`, `clog10l`](clog10-clog10f-clog10l.md)

@@ -38,19 +38,19 @@ unsigned __int64 _rotr64(
 
 ### Parameters
 
-*value*<br/>
+*`value`*\
 Value to be rotated.
 
-*shift*<br/>
+*`shift`*\
 Number of bits to shift.
 
-## Return Value
+## Return value
 
 The rotated value. There's no error return.
 
 ## Remarks
 
-The **_rotl** and **_rotr** functions rotate the unsigned *value* by *shift* bits. **_rotl** rotates the value left. **_rotr** rotates the value right. Both functions wrap bits rotated off one end of *value* to the other end.
+The **_rotl** and **_rotr** functions rotate the unsigned *`value`* by *`shift`* bits. **_rotl** rotates the value left. **_rotr** rotates the value right. Both functions wrap bits rotated off one end of *`value`* to the other end.
 
 ## Requirements
 
@@ -59,11 +59,11 @@ The **_rotl** and **_rotr** functions rotate the unsigned *value* by *shift* bit
 |**_rotl**, **_rotl64**|\<stdlib.h>|
 |**_rotr**, **_rotr64**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -103,5 +103,5 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_lrotl, _lrotr](lrotl-lrotr.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`_lrotl`, `_lrotr`](lrotl-lrotr.md)

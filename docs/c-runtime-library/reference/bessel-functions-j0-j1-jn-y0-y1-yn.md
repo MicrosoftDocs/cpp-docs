@@ -10,7 +10,7 @@ f1_keywords: ["c.bessel", "_j0", "_j1", "_jn", "_y0", "_y1", "_yn"]
 helpviewer_keywords: ["Bessel functions", "_j0 function", "_j1 function", "_jn function", "_y0 function", "_y1 function", "_yn function"]
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
 ---
-# Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn
+# Bessel functions: _j0, _j1, _jn, _y0, _y1, _yn
 
 Computes the Bessel function of the first or second kind, of orders 0, 1, or n. The Bessel functions are commonly used in the mathematics of electromagnetic wave theory.
 
@@ -41,15 +41,15 @@ double _yn(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 Floating-point value.
 
-*n*<br/>
+*`n`*\
 Integer order of Bessel function.
 
-## Return Value
+## Return value
 
-Each of these routines returns a Bessel function of *x*. If *x* is negative in the **_y0**, **_y1**, or **_yn** functions, the routine sets **errno** to **EDOM**, prints a **_DOMAIN** error message to **stderr**, and returns **_HUGE_VAL**. You can modify error handling by using **_matherr**.
+Each of these routines returns a Bessel function of *`x`*. If *`x`* is negative in the **_y0**, **_y1**, or **_yn** functions, the routine sets **errno** to **EDOM**, prints a **_DOMAIN** error message to **stderr**, and returns **_HUGE_VAL**. You can modify error handling by using **_matherr**.
 
 ## Remarks
 
@@ -75,7 +75,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -120,5 +120,5 @@ Bessel functions for x = 2.387000:
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_matherr](matherr.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`_matherr`](matherr.md)

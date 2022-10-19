@@ -6,7 +6,7 @@ f1_keywords: ["_O_BINARY", "_O_TEXT", "_O_RAW"]
 helpviewer_keywords: ["O_BINARY constant", "O_TEXT constant", "O_RAW constant", "_O_TEXT constant", "_O_RAW constant", "translation constants", "_O_BINARY constant", "translation, constants", "translation, modes", "translation modes (file I/O)"]
 ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
 ---
-# Translation Mode Constants
+# Translation mode constants
 
 ## Syntax
 
@@ -26,12 +26,12 @@ The allowed values are:
 `_O_BINARY`  | Opens file in binary (untranslated) mode. The above translations are suppressed.
 `_O_RAW`  | Same as `_O_BINARY`. Supported for C 2.0 compatibility.
 
-For more information, see [Text and Binary Mode File I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md) and [File Translation](../c-runtime-library/file-translation-constants.md).
+For more information, see [Text and binary mode file I/O](./text-and-binary-mode-file-i-o.md) and [File translation constants](./file-translation-constants.md).
 
 ## See also
 
-[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
-[_pipe](../c-runtime-library/reference/pipe.md)<br/>
-[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_setmode](../c-runtime-library/reference/setmode.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[`_open`, `_wopen`](./reference/open-wopen.md)\
+[`_pipe`](./reference/pipe.md)\
+[`_sopen`, `_wsopen`](./reference/sopen-wsopen.md)\
+[`_setmode`](./reference/setmode.md)\
+[Global constants](./global-constants.md)

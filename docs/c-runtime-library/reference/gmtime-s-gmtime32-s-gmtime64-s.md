@@ -11,7 +11,7 @@ helpviewer_keywords: ["gmtime_s function", "gmtime32_s function", "time function
 ---
 # `gmtime_s`, `_gmtime32_s`, `_gmtime64_s`
 
-Converts a time value to a **`tm`** structure. These are versions of [`_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a time value to a **`tm`** structure. These are versions of [`_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -33,16 +33,16 @@ errno_t _gmtime64_s(
 ### Parameters
 
 *`tmDest`*\
-Pointer to a [`tm`](../../c-runtime-library/standard-types.md) structure. The fields of the returned structure hold the evaluated value of the *`timer`* argument in UTC rather than in local time.
+Pointer to a [`tm`](../standard-types.md) structure. The fields of the returned structure hold the evaluated value of the *`timer`* argument in UTC rather than in local time.
 
 *`sourceTime`*\
 Pointer to stored time. The time is represented as seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).
 
-## Return Value
+## Return value
 
-Zero if successful. The return value is an error code if there's a failure. Error codes are defined in `Errno.h`; for a listing of these errors, see [`errno`](../../c-runtime-library/errno-constants.md).
+Zero if successful. The return value is an error code if there's a failure. Error codes are defined in `Errno.h`; for a listing of these errors, see [`errno`](../errno-constants.md).
 
-### Error Conditions
+### Error conditions
 
 |*`tmDest`*|*`sourceTime`*|Return|Value in *`tmDest`*|
 |-----------|------------|------------|--------------------|
@@ -50,7 +50,7 @@ Zero if successful. The return value is an error code if there's a failure. Erro
 |Not **`NULL`** (points to valid memory)|**`NULL`**|**`EINVAL`**|All fields set to -1.|
 |Not **`NULL`**|< 0|**`EINVAL`**|All fields set to -1.|
 
-In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
+In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
 
 ## Remarks
 
@@ -85,7 +85,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|-|
 |**`gmtime_s`**, **`_gmtime32_s`**, **`_gmtime64_s`**|`<time.h>`|`<ctime>` or `<time.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -133,7 +133,7 @@ Coordinated universal time is Fri Apr 25 20:12:33 2003
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)\
+[Time management](../time-management.md)\
 [`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
 [`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
 [`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\

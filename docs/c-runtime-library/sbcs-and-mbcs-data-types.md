@@ -26,5 +26,5 @@ Because some SBCS string-handling functions take (signed) **`char`**<strong>\*</
 
 ## See also
 
-[Internationalization](../c-runtime-library/internationalization.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Internationalization](./internationalization.md)\
+[Universal C runtime routines by category](./run-time-routines-by-category.md)

@@ -11,7 +11,7 @@ helpviewer_keywords: ["generating pseudorandom numbers", "random numbers, crypto
 ---
 # `rand_s`
 
-Generates a pseudorandom number. This is a more secure version of the function [`rand`](rand.md), with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Generates a pseudorandom number. This is a more secure version of the function [`rand`](rand.md), with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -24,9 +24,9 @@ errno_t rand_s(unsigned int* randomValue);
 *`randomValue`*\
 A pointer to an integer to hold the generated value.
 
-## Return Value
+## Return value
 
-Zero if successful, otherwise, an error code. If the input pointer `_randomValue_` is a `NULL` pointer, the function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**. If the function fails for any other reason, `*_randomValue_` is set to 0.
+Zero if successful, otherwise, an error code. If the input pointer `_randomValue_` is a `NULL` pointer, the function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**. If the function fails for any other reason, `*_randomValue_` is set to 0.
 
 ## Remarks
 
@@ -49,7 +49,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`rand_s`**|`<stdlib.h>`|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -101,7 +101,7 @@ int main( void )
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 10
@@ -129,6 +129,6 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`rand`](rand.md)\
 [`srand`](srand.md)

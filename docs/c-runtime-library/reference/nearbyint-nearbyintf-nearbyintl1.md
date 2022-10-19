@@ -28,30 +28,30 @@ long double nearbyint( long double x ); //C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 The value to round.
 
-## Return Value
+## Return value
 
-If successful, returns *x*, rounded to the nearest integer, using the current rounding format as reported by [fegetround](fegetround-fesetround2.md). Otherwise, the function may return one of the following values:
+If successful, returns *`x`*, rounded to the nearest integer, using the current rounding format as reported by [`fegetround`](fegetround-fesetround2.md). Otherwise, the function may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
-|*x* = ±INFINITY|±INFINITY, unmodified|
-|*x* = ±0|±0, unmodified|
-|*x* = NaN|NaN|
+|*`x`* = ±INFINITY|±INFINITY, unmodified|
+|*`x`* = ±0|±0, unmodified|
+|*`x`* = NaN|NaN|
 
-Errors are not reported through [_matherr](matherr.md); specifically, this function does not report any **FE_INEXACT** exceptions.
+Errors are not reported through [`_matherr`](matherr.md); specifically, this function does not report any **FE_INEXACT** exceptions.
 
 ## Remarks
 
-The primary difference between this function and [rint](rint-rintf-rintl.md) is that this function does not raise the inexact floating point exception.
+The primary difference between this function and [`rint`](rint-rintf-rintl.md) is that this function does not raise the inexact floating point exception.
 
 Because the maximum floating-point values are exact integers, this function will never overflow by itself; rather, the output may overflow the return value, depending on which version of the function you use.
 
 C++ allows overloading, so you can call overloads of **nearbyint** that take and return **`float`** or **`long double`** parameters. In a C program, unless you're using the \<tgmath.h> macro to call this function, **nearbyint** always takes two double values and returns a double value.
 
-If you use the \<tgmath.h> `nearbyint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `nearbyint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -62,9 +62,9 @@ By default, this function's global state is scoped to the application. To change
 |**nearbyint**, **nearbyintf**, **nearbyintl**|\<math.h>|\<cmath> or \<math.h>|
 |**nearbyint** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[Math and floating-point support](../floating-point-support.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[Math and floating-point support](../floating-point-support.md)

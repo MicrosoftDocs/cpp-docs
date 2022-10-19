@@ -32,13 +32,13 @@ intptr_t _wexecv(
 
 ### Parameters
 
-*cmdname*<br/>
+*`cmdname`*\
 Path of the file to execute.
 
-*argv*<br/>
+*`argv`*\
 Array of pointers to parameters.
 
-## Return Value
+## Return value
 
 If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
 
@@ -52,13 +52,13 @@ If successful, these functions don't return to the calling process. A return val
 |**ENOEXEC**|The specified file isn't executable or has an invalid executable-file format.|
 |**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly.|
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 Each of these functions loads and executes a new process, passing an array of pointers to command-line arguments.
 
-The **_execv** functions validate their parameters. If *cmdname* is a null pointer, or if *argv* is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, the **_execv** functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
+The **_execv** functions validate their parameters. If *`cmdname`* is a null pointer, or if *`argv`* is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, the **_execv** functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -69,19 +69,19 @@ By default, this function's global state is scoped to the application. To change
 |**_execv**|\<process.h>|\<errno.h>|
 |**_wexecv**|\<process.h> or \<wchar.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).
+See the example in [`_exec`, `_wexec` functions](../exec-wexec-functions.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
-[atexit](atexit.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

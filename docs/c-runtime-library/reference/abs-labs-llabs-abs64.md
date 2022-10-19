@@ -35,7 +35,7 @@ float abs( float n );   // C++ only
 *`n`*\
 Numeric value.
 
-## Return Value
+## Return value
 
 The **`abs`**, **`labs`**, **`llabs`**, and **`_abs64`** functions return the absolute value of the parameter *`n`*. There's no error return.
 
@@ -113,8 +113,8 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`_cabs`](cabs.md)\
 [`fabs`, `fabsf`, `fabsl`](fabs-fabsf-fabsl.md)\
 [`imaxabs`](imaxabs.md)

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["MAX_ENV constant", "_MAX_ENV constant"]
 ms.assetid: 5224f540-231c-47aa-be9a-467efd1db281
 ---
-# Environmental Constants
+# Environmental constants
 
 ## Syntax
 
@@ -23,4 +23,4 @@ The `_MAX_ENV` constant defines the environmental length for strings.
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+[Global constants](./global-constants.md)

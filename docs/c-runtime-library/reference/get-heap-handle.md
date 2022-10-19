@@ -20,7 +20,7 @@ Returns the handle of the heap that's used by the C run-time system.
 intptr_t _get_heap_handle( void );
 ```
 
-## Return Value
+## Return value
 
 Returns the handle to the Win32 heap used by the C run-time system.
 
@@ -36,7 +36,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_get_heap_handle**|\<malloc.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Sample
 
@@ -63,4 +63,4 @@ int main(void)
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
+[Memory allocation](../memory-allocation.md)

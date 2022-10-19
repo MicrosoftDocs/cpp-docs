@@ -26,7 +26,7 @@ _se_translator_function _set_se_translator(
 *`seTransFunction`*\
 Pointer to a C structured exception translator function that you write.
 
-## Return Value
+## Return value
 
 Returns a pointer to the previous translator function registered by **`_set_se_translator`**, so that the previous function can be restored later. If no previous function has been set, the return value can be used to restore the default behavior; this value can be **`nullptr`**.
 
@@ -58,7 +58,7 @@ When using **`_set_se_translator`** from managed code (code compiled with `/clr`
 |-------------|---------------------|
 |**`_set_se_translator`**|`<eh.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example: Catch `__try` exception error
 
@@ -135,7 +135,7 @@ Caught a __try exception, error c0000094.
 
 ## Example: Catch `SE_Exception` error
 
-Although the functionality provided by **`_set_se_translator`** isn't available in managed code, it's possible to use this mapping in native code, even if that native code is in a compilation under the **`/clr`** switch, as long as the native code is indicated using `#pragma unmanaged`. If a structured exception is being thrown in managed code that is to be mapped, the code that generates and handles the exception must be marked `#pragma unmanaged`. The following code shows a possible use. For more information, see [Pragma Directives and the `__Pragma` Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+Although the functionality provided by **`_set_se_translator`** isn't available in managed code, it's possible to use this mapping in native code, even if that native code is in a compilation under the **`/clr`** switch, as long as the native code is indicated using `#pragma unmanaged`. If a structured exception is being thrown in managed code that is to be mapped, the code that generates and handles the exception must be marked `#pragma unmanaged`. The following code shows a possible use. For more information, see [Pragma directives and the `__pragma` and `_Pragma` keywords](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
 ```cpp
 // crt_set_se_translator_clr.cpp
@@ -208,7 +208,7 @@ Caught SE_Exception, error c0000094
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)\
+[Exception handling routines](../exception-handling-routines.md)\
 [`set_terminate`](set-terminate-crt.md)\
 [`set_unexpected`](set-unexpected-crt.md)\
 [`terminate`](terminate-crt.md)\

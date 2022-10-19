@@ -17,4 +17,4 @@ The names of Microsoft-specific macros and manifest constants begin with two und
 
 ## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)
+[Compatibility](./compatibility.md)

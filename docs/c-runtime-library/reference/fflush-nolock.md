@@ -24,12 +24,12 @@ int _fflush_nolock(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
-See [fflush](fflush.md).
+See [`fflush`](fflush.md).
 
 ## Remarks
 
@@ -43,11 +43,11 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_fflush_nolock**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[_flushall](flushall.md)<br/>
-[setvbuf](setvbuf.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`_flushall`](flushall.md)\
+[`setvbuf`](setvbuf.md)

@@ -22,10 +22,10 @@ A preprocessor macro that returns the smaller of two values.
 
 ### Parameters
 
-*a*, *b*<br/>
+*`a`*, *`b`*\
 Values of any type that the **<** operator works on.
 
-## Return Value
+## Return value
 
 The smaller of the two arguments.
 
@@ -66,5 +66,5 @@ The smaller of 10 and 21 is 10
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[__max](max.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`__max`](max.md)

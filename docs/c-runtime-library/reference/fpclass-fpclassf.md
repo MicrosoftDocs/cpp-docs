@@ -30,7 +30,7 @@ int _fpclassf(
 *`x`*\
 The floating-point value to test.
 
-## Return Value
+## Return value
 
 The **`_fpclass`** and **`_fpclassf`** functions return an integer value that indicates the floating-point classification of the argument *`x`*. The classification may have one of the following values, defined in `<float.h>`.
 
@@ -59,10 +59,10 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`_fpclass`**, **`_fpclassf`**|`<float.h>`|
 
-For more compatibility and conformance information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility and conformance information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)\
 [`fpclassify`](fpclassify.md)

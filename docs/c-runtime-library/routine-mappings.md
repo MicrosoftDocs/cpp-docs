@@ -5,15 +5,15 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["_tWinMain", "TCHAR.H data types, list of routine mappings", "generic-text mappings"]
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
 ---
-# Routine Mappings
+# Routine mappings
 
 The generic-text routine mappings are defined in TCHAR.H. `_tccpy` and `_tclen` map to functions in the MBCS model; they're mapped to macros or inline functions in the SBCS and Unicode models for completeness. For information on a generic text routine, see the help article about the corresponding `SBCS`-, `_MBCS`-, or `_UNICODE`-related routine.
 
 More specific information about individual routines listed in the left column in the following table isn't available in this documentation. However, you can easily look up the information on a corresponding `SBCS`-, `_MBCS`-, or `_UNICODE`-related routine. Use the **Search** command on the **Help** menu to look up any generic-text routine listed below.
 
-For related information, see [Generic-Text Mappings in TCHAR.H](../text/generic-text-mappings-in-tchar-h.md).
+For related information, see [Generic-text mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Generic-text routine name|SBCS (_UNICODE & MBCS not defined)|_MBCS defined|_UNICODE defined|
 |--------------------------------|-------------------------------------------|--------------------|-----------------------|
@@ -254,8 +254,8 @@ For related information, see [Generic-Text Mappings in TCHAR.H](../text/generic-
 
 ## See also
 
-[Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
-[Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>
-[Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)
+[Generic-text mappings](./generic-text-mappings.md)\
+[Data type mappings](./data-type-mappings.md)\
+[Constant and global variable mappings](./constant-and-global-variable-mappings.md)\
+[A sample generic-text program](./a-sample-generic-text-program.md)\
+[Using generic-text mappings](./using-generic-text-mappings.md)

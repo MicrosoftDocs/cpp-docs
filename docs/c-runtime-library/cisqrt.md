@@ -34,5 +34,5 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[`sqrt`, `sqrtf`, `sqrtl`](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`sqrt`, `sqrtf`, `sqrtl`](./reference/sqrt-sqrtf-sqrtl.md)

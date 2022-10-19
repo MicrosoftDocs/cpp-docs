@@ -34,11 +34,11 @@ Double-precision, floating-point value.
 *`exp`*\
 Long integer exponent.
 
-## Return Value
+## Return value
 
 Returns an exponential value if successful. On overflow (depending on the sign of *`x`*), **`_scalb`** returns +/- **`HUGE_VAL`**; the **`errno`** variable is set to **`ERANGE`**.
 
-For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -52,9 +52,9 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`_scalb`**, **`_scalbf`**|`<float.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`ldexp`](ldexp.md)

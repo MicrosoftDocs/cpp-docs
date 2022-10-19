@@ -26,10 +26,10 @@ int _isleadbyte_l( int c );
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to test.
 
-## Return Value
+## Return value
 
 **isleadbyte** returns a nonzero value if the argument satisfies the test condition or 0 if it does not. In the "C" locale and in single-byte character set (SBCS) locales, **isleadbyte** always returns 0.
 
@@ -43,7 +43,7 @@ The version of this function with the **_l** suffix is identical except that it 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -56,10 +56,10 @@ By default, this function's global state is scoped to the application. To change
 |**isleadbyte**|\<ctype.h>|
 |**_isleadbyte_l**|\<ctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Byte classification](../byte-classification.md)\
+[Locale](../locale.md)\
+[`_ismbb` routines](../ismbb-routines.md)

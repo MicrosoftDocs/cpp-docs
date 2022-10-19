@@ -26,9 +26,9 @@ struct tm *_gmtime64( const __time64_t *sourceTime );
 *`sourceTime`*\
 Pointer to the stored time. The time is represented as seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).
 
-## Return Value
+## Return value
 
-A pointer to a structure of type [`tm`](../../c-runtime-library/standard-types.md). The fields of the returned structure hold the evaluated value of the *`sourceTime`* argument in UTC rather than in local time. Each of the structure fields is of type `int`, as follows:
+A pointer to a structure of type [`tm`](../standard-types.md). The fields of the returned structure hold the evaluated value of the *`sourceTime`* argument in UTC rather than in local time. Each of the structure fields is of type `int`, as follows:
 
 |Field|Description|
 |-|-|
@@ -48,7 +48,7 @@ Both the 32-bit and 64-bit versions of **`gmtime`**, [`mktime`](mktime-mktime32-
 
 **`gmtime`** is an inline function that evaluates to **`_gmtime64`**, and `time_t` is equivalent to `__time64_t` unless `_USE_32BIT_TIME_T` is defined. If you must force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`, but doing so causes **`gmtime`** to be in-lined to **`_gmtime32`** and `time_t` to be defined as `__time32_t`. We don't recommend that you do this, because it isn't allowed on 64-bit platforms. In any case, your application may fail after January 18, 2038.
 
-These functions validate their parameters. If *`sourceTime`* is a `NULL` pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
+These functions validate their parameters. If *`sourceTime`* is a `NULL` pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|-|
 |**`gmtime`**, **`_gmtime32`**, **`_gmtime64`**|`<time.h>`| `<ctime>` or `<time.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -102,7 +102,7 @@ Coordinated universal time is Tue Feb 12 23:11:31 2002
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)\
+[Time management](../time-management.md)\
 [`asctime`, `_wasctime`](asctime-wasctime.md)\
 [`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
 [`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\

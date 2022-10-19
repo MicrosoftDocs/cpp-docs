@@ -29,13 +29,13 @@ wint_t _putwc_nolock(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be written.
 
-*stream*<br/>
+*`stream`*\
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
 See **putc, putwc**.
 
@@ -47,7 +47,7 @@ See **putc, putwc**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -60,11 +60,11 @@ By default, this function's global state is scoped to the application. To change
 |**_putc_nolock**|\<stdio.h>|
 |**_putwc_nolock**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -99,6 +99,6 @@ This is the line of output
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](fputc-fputwc.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fputc`, `fputwc`](fputc-fputwc.md)\
+[`getc`, `getwc`](getc-getwc.md)

@@ -24,10 +24,10 @@ __declspec(noreturn) void quick_exit(
 
 ### Parameters
 
-*status*<br/>
+*`status`*\
 The status code to return to the host environment.
 
-## Return Value
+## Return value
 
 The **quick_exit** function cannot return to its caller.
 
@@ -35,9 +35,9 @@ The **quick_exit** function cannot return to its caller.
 
 The **quick_exit** function causes normal program termination. It calls no functions registered by **atexit**, **_onexit** or signal handlers registered by the **signal** function. Behavior is undefined if **quick_exit** is called more than once, or if the **exit** function is also called.
 
-The **quick_exit** function calls, in last-in, first-out (LIFO) order, the functions registered by **at_quick_exit**, except for those functions already called when the function was registered.  Behavior is undefined if a [longjmp](longjmp.md) call is made during a call to a registered function that would terminate the call to the  function.
+The **quick_exit** function calls, in last-in, first-out (LIFO) order, the functions registered by **at_quick_exit**, except for those functions already called when the function was registered.  Behavior is undefined if a [`longjmp`](longjmp.md) call is made during a call to a registered function that would terminate the call to the  function.
 
-After the registered functions have been called, **quick_exit** invokes **_Exit** by using the *status* value to return control to the host environment.
+After the registered functions have been called, **quick_exit** invokes **_Exit** by using the *`status`* value to return control to the host environment.
 
 ## Requirements
 
@@ -45,15 +45,15 @@ After the registered functions have been called, **quick_exit** invokes **_Exit*
 |-------------|---------------------|
 |**quick_exit**|\<process.h> or \<stdlib.h>|
 
-For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information about compatibility, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
-[atexit](atexit.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

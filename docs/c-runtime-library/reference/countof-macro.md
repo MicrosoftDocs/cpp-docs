@@ -21,10 +21,10 @@ Computes the number of elements in a statically allocated array.
 
 ### Parameters
 
-*`array`*<br/>
+*`array`*\
 The name of an array.
 
-## Return Value
+## Return value
 
 The number of elements in the array, expressed as a **`size_t`**.
 
@@ -69,4 +69,4 @@ _countof(arr) = 20 elements
 
 ## See also
 
-[`sizeof` Operator](../../cpp/sizeof-operator.md)<br/>
+[`sizeof` Operator](../../cpp/sizeof-operator.md)

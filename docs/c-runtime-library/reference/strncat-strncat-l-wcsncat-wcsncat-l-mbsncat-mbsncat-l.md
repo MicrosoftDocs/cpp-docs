@@ -81,7 +81,7 @@ Number of characters to append.
 *`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
 Returns a pointer to the destination string. No return value is reserved to indicate an error.
 
@@ -90,17 +90,17 @@ Returns a pointer to the destination string. No return value is reserved to indi
 The **`strncat`** function appends, at most, the first *`count`* characters of *`strSource`* to *`strDest`*. The initial character of *`strSource`* overwrites the terminating null character of *`strDest`*. If a null character appears in *`strSource`* before *`count`* characters are appended, **`strncat`** appends all characters from *`strSource`*, up to the null character. If *`count`* is greater than the length of *`strSource`*, the length of *`strSource`* is used in place of *`count`*. In all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> **`strncat`** does not check for sufficient space in *`strDest`*; it is therefore a potential cause of buffer overruns. Keep in mind that *`count`* limits the number of characters appended; it is not a limit on the size of *`strDest`*. See the example below. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **`strncat`** does not check for sufficient space in *`strDest`*; it is therefore a potential cause of buffer overruns. Keep in mind that *`count`* limits the number of characters appended; it is not a limit on the size of *`strDest`*. See the example below. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 **`wcsncat`** and **`_mbsncat`** are wide-character and multibyte-character versions of **`strncat`**. The string arguments and return value of **`wcsncat`** are wide-character strings; those of **`_mbsncat`** are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, these functions have template overloads. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 | `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |--|--|--|--|
@@ -119,7 +119,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_mbsncat`**|\<mbstring.h>|
 |**`_mbsncat_l`**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -172,7 +172,7 @@ Note that **BadAppend** caused a buffer overrun.
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)\
+[String manipulation](../string-manipulation-crt.md)\
 [`_mbsnbcat, _mbsnbcat_l`](mbsnbcat-mbsnbcat-l.md)\
 [`strcat, wcscat, _mbscat`](strcat-wcscat-mbscat.md)\
 [`strcmp, wcscmp, _mbscmp`](strcmp-wcscmp-mbscmp.md)\
@@ -183,5 +183,5 @@ Note that **BadAppend** caused a buffer overrun.
 [`strrchr, wcsrchr, _mbsrchr, _mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
 [`_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
 [`strspn, wcsspn, _mbsspn, _mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
-[Locale](../../c-runtime-library/locale.md)\
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\

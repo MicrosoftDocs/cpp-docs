@@ -24,10 +24,10 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 ### Parameters
 
-*function*<br/>
+*`function`*\
 The address of the function that will handle run-time error checks.
 
-## Return Value
+## Return value
 
 The previously defined error function. If there is no previously defined function, returns **NULL**.
 
@@ -41,13 +41,13 @@ Do not use this function; instead, use **_RTC_SetErrorFuncW**. It is retained on
 |-------------|---------------------|
 |**_RTC_SetErrorFunc**|\<rtcapi.h>|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+[`_CrtDbgReport`, `_CrtDbgReportW`](crtdbgreport-crtdbgreportw.md)\
+[Runtime error checking](../run-time-error-checking.md)

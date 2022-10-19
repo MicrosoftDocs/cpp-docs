@@ -38,30 +38,30 @@ int _ismbcsymbol_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *`c`*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
 ## Remarks
 
 Each of these functions tests a given multibyte character for a given condition.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
 |Routine|Test condition|Code page 932 example|
 |-------------|--------------------|---------------------------|
-|**_ismbclegal**|Valid multibyte|Returns nonzero if and only if the first byte of *c* is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|
-|**_ismbcsymbol**|Multibyte symbol|Returns nonzero if and only if 0x8141<=*c*<=0x81AC.|
+|**_ismbclegal**|Valid multibyte|Returns nonzero if and only if the first byte of *`c`* is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|
+|**_ismbcsymbol**|Multibyte symbol|Returns nonzero if and only if 0x8141<=*`c`*<=0x81AC.|
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -75,11 +75,11 @@ By default, this function's global state is scoped to the application. To change
 |**_ismbclegal**, **_ismbclegal_l**|\<mbstring.h>|
 |**_ismbcsymbol**, **_ismbcsymbol_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[`_ismbc` routines](../ismbc-routines.md)\
+[`is`, `isw` routines](../is-isw-routines.md)\
+[`_ismbb` routines](../ismbb-routines.md)

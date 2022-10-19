@@ -18,24 +18,24 @@ Identifies the exception and the related action to be taken.
 
 ```C
 int __cdecl _seh_filter_dll(
-   unsigned long _ExceptionNum,
-   struct _EXCEPTION_POINTERS* _ExceptionPtr
+   unsigned long exceptionNum,
+   struct _EXCEPTION_POINTERS* exceptionPtr
 );
 int __cdecl _seh_filter_exe(
-   unsigned long _ExceptionNum,
-   struct _EXCEPTION_POINTERS* _ExceptionPtr
+   unsigned long exceptionNum,
+   struct _EXCEPTION_POINTERS* exceptionPtr
 );
 ```
 
 ### Parameters
 
-*_ExceptionNum*<br/>
+*`exceptionNum`*\
 The identifier for the exception.
 
-*_ExceptionPtr*<br/>
+*`exceptionPtr`*\
 A pointer to the exception information.
 
-## Return Value
+## Return value
 
 An integer that indicates the action to be taken, based on the result of exception processing.
 
@@ -64,4 +64,4 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)

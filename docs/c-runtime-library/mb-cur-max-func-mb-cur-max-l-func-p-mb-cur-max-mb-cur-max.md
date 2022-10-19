@@ -28,13 +28,13 @@ int * __p___mb_cur_max(void);
 *`locale`*\
 The locale structure to retrieve the result from. If this value is null, the current thread locale is used.
 
-## Return Value
+## Return value
 
 The maximum number of bytes in a multibyte character for the current thread locale or the specified locale.
 
 ## Remarks
 
-`___mb_cur_max_func` is an internal function that the CRT uses to retrieve the current value of the [`MB_CUR_MAX`](../c-runtime-library/mb-cur-max.md) macro from thread local storage. We recommend that you use the `MB_CUR_MAX` macro in your code for portability.
+`___mb_cur_max_func` is an internal function that the CRT uses to retrieve the current value of the [`MB_CUR_MAX`](./mb-cur-max.md) macro from thread local storage. We recommend that you use the `MB_CUR_MAX` macro in your code for portability.
 
 The `__mb_cur_max` macro is a convenient way to call the `___mb_cur_max_func()` function. The `__p___mb_cur_max` function is defined for compatibility with Visual C++ 5.0 and earlier versions.
 
@@ -50,4 +50,4 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[MB_CUR_MAX](../c-runtime-library/mb-cur-max.md)
+[`MB_CUR_MAX`](./mb-cur-max.md)

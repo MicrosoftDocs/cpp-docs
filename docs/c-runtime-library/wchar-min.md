@@ -18,4 +18,4 @@ Minimum value for type **`wchar_t`**.
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+[Global constants](./global-constants.md)

@@ -20,5 +20,5 @@ The time in seconds is the value returned by the `clock` function, divided by `C
 
 ## See also
 
-[clock](../c-runtime-library/reference/clock.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[`clock`](./reference/clock.md)\
+[Global constants](./global-constants.md)

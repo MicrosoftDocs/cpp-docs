@@ -34,16 +34,16 @@ void _wassert(
 
 ### Parameters
 
-*`expression`*<br/>
+*`expression`*\
 A scalar expression (including pointer expressions) that evaluates to nonzero (**`true`**) or 0 (**`false`**).
 
-*`message`*<br/>
+*`message`*\
 The message to display.
 
-*`filename`*<br/>
+*`filename`*\
 The name of the source file the assertion failed in.
 
-*`line`*<br/>
+*`line`*\
 The line number in the source file of the failed assertion.
 
 ## Remarks
@@ -68,11 +68,11 @@ As a consequence of the above behavior, a dialog box is always displayed followi
 |`Retry`|Break into debugger during `abort`|Break into debugger during `assert`|
 |`Ignore`|Finish exiting via `abort`|Continue program as though `assert` didn't fire (may result in undefined behavior since preconditions of the calling code weren't met)|
 
-For more information about CRT debugging, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
+For more information about CRT debugging, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
 
 The `_assert` and `_wassert` functions are internal CRT functions. They help minimize the code required in your object files to support assertions. We don't recommend that you call these functions directly.
 
-The `assert` macro is enabled in both the release and debug versions of the C run-time libraries when **`NDEBUG`** isn't defined. When **`NDEBUG`** is defined, the macro is available, but doesn't evaluate its argument and has no effect. When it's enabled, the `assert` macro calls `_wassert` for its implementation. Other assertion macros, [`_ASSERT`](assert-asserte-assert-expr-macros.md), [`_ASSERTE`](assert-asserte-assert-expr-macros.md) and [`_ASSERT_EXPR`](assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [`_DEBUG`](../../c-runtime-library/debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
+The `assert` macro is enabled in both the release and debug versions of the C run-time libraries when **`NDEBUG`** isn't defined. When **`NDEBUG`** is defined, the macro is available, but doesn't evaluate its argument and has no effect. When it's enabled, the `assert` macro calls `_wassert` for its implementation. Other assertion macros, [`_ASSERT`](assert-asserte-assert-expr-macros.md), [`_ASSERTE`](assert-asserte-assert-expr-macros.md) and [`_ASSERT_EXPR`](assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [`_DEBUG`](../debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
 
 ## Requirements
 
@@ -135,10 +135,10 @@ If a debugger is installed, choose the **Debug** button to start the debugger, o
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[`abort`](abort.md)<br/>
-[`raise`](raise.md)<br/>
-[`signal`](signal.md)<br/>
-[`_ASSERT`, `_ASSERTE`, `_ASSERT_EXPR` Macros](assert-asserte-assert-expr-macros.md)<br/>
-[`_DEBUG`](../../c-runtime-library/debug.md)<br/>
+[Error handling](../error-handling-crt.md)\
+[Process and environment control](../process-and-environment-control.md)\
+[`abort`](abort.md)\
+[`raise`](raise.md)\
+[`signal`](signal.md)\
+[`_ASSERT`, `_ASSERTE`, `_ASSERT_EXPR` Macros](assert-asserte-assert-expr-macros.md)\
+[`_DEBUG`](../debug.md)

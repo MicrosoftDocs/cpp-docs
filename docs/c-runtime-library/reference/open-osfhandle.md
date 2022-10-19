@@ -30,7 +30,7 @@ Operating system file handle.
 *`flags`*\
 Types of operations allowed.
 
-## Return Value
+## Return value
 
 If successful, **`_open_osfhandle`** returns a C run-time file descriptor. Otherwise, it returns -1.
 
@@ -57,9 +57,9 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`_open_osfhandle`**|`<io.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)\
+[File handling](../file-handling.md)\
 [`_get_osfhandle`](get-osfhandle.md)

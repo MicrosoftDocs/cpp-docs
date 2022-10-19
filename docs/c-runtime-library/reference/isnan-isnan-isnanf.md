@@ -37,18 +37,18 @@ bool isnan(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to test.
 
-## Return Value
+## Return value
 
-In C, the **isnan** macro and the **_isnan** and **_isnanf** functions return a non-zero value if the argument *x* is a NAN; otherwise they return 0.
+In C, the **isnan** macro and the **_isnan** and **_isnanf** functions return a non-zero value if the argument *`x`* is a NAN; otherwise they return 0.
 
-In C++, the **isnan** template function returns **`true`** if the argument *x* is a NaN; otherwise it returns **`false`**.
+In C++, the **isnan** template function returns **`true`** if the argument *`x`* is a NaN; otherwise it returns **`false`**.
 
 ## Remarks
 
-Because a NaN value does not compare as equal to any other NaN value, you must use one of these functions or macros to detect one. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [printf](printf-printf-l-wprintf-wprintf-l.md).
+Because a NaN value does not compare as equal to any other NaN value, you must use one of these functions or macros to detect one. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
 When compiled as C++, the **isnan** macro is not defined, and an **isnan** template function is defined instead. It behaves the same way as the macro, but returns a value of type **`bool`** instead of an integer.
 
@@ -61,13 +61,13 @@ The **_isnan** and **_isnanf** functions are Microsoft-specific. The **_isnanf**
 |**isnan**, **_isnanf**|\<math.h>|\<math.h> or \<cmath>|
 |**_isnan**|\<float.h>|\<float.h> or \<cfloat>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fpclassify](fpclassify.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
-[isnormal](isnormal.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`fpclassify`](fpclassify.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)\
+[`isfinite`, `_finite`, `_finitef`](finite-finitef.md)\
+[`isinf`](isinf.md)\
+[`isnormal`](isnormal.md)

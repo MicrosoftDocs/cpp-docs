@@ -53,11 +53,11 @@ By default, this function's global state is scoped to the application. To change
 |--|--|
 | **`_umask`** | `<io.h>`, `<sys/stat.h>`, `<sys/types.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -90,8 +90,8 @@ Oldmask = 0x0000
 
 ## See also
 
-[File handling](../../c-runtime-library/file-handling.md)\
-[Low-level I/O](../../c-runtime-library/low-level-i-o.md)\
+[File handling](../file-handling.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\

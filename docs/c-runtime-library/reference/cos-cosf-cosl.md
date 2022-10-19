@@ -28,12 +28,12 @@ long double cos( long double x );  // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Angle in radians.
 
-## Return Value
+## Return value
 
-The cosine of *x*. If *x* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
+The cosine of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
 |Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
@@ -44,7 +44,7 @@ The cosine of *x*. If *x* is greater than or equal to 263, or less than or equal
 
 Because C++ allows overloading, you can call overloads of **cos** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **cos** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `cos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `cos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |**cos**, **cosh**, **cosf**|\<math.h>|\<cmath> or \<math.h>|
 |**cos()** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -63,10 +63,10 @@ See the example in [`sin`, `sinf`, `sinl`](sin-sinf-sinl.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)<br/>
-[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)<br/>
-[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[`_matherr`](matherr.md)<br/>
-[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`_matherr`](matherr.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
 [`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)
