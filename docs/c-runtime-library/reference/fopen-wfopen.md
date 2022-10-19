@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 
 ## Unicode support
 
-**`fopen`** supports Unicode file streams. To open a Unicode file, pass a `ccs=encoding` flag that specifies the desired encoding to **`fopen`**, as follows.
+**`fopen`** supports Unicode file streams. To open a Unicode file, pass a `,ccs=encoding` flag that specifies the desired encoding to **`fopen`**, as follows.
 
 `FILE *fp = fopen("newfile.txt", "rt+, ccs=UTF-8");`
 
@@ -130,7 +130,7 @@ The following options can be appended to *`mode`* to specify more behaviors.
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`T`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
 | **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
-| **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or **`UNICODE`**) for this file. Leave unspecified if you want ANSI encoding. |
+| **`,ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or **`UNICODE`**) for this file. Leave unspecified if you want ANSI encoding. |
 
 Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
 
@@ -151,9 +151,9 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 | **`R`** | `_O_RANDOM` |
 | **`T`** | `_O_SHORTLIVED` |
 | **`D`** | `_O_TEMPORARY` |
-| **`ccs=UNICODE`** | `_O_WTEXT` |
-| **`ccs=UTF-8*`* | `_O_UTF8` |
-| **`ccs=UTF-16LE`** | `_O_UTF16` |
+| **`,ccs=UNICODE`** | `_O_WTEXT` |
+| **`,ccs=UTF-8*`* | `_O_UTF8` |
+| **`,ccs=UTF-16LE`** | `_O_UTF16` |
 
 If you're using **`rb`** mode, you don't have to port your code, and if you expect to read most of a large file or aren't concerned about network performance, you might also consider whether to use memory mapped Win32 files as an option.
 
