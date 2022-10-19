@@ -43,7 +43,7 @@ long double log1p(
 *x*\
 The floating-point argument.
 
-## Return Value
+## Return value
 
 If successful, returns the natural (base-*e*) log of (*x* + 1).
 
@@ -68,7 +68,7 @@ The **log1p** functions may be more accurate than using `log(x + 1)` when *x* is
 
 Because C++ allows overloading, you can call overloads of **log1p** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **log1p** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `log1p()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `log1p()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 If *x* is a natural number, this function returns the logarithm of the factorial of (*x* - 1).
 
@@ -81,10 +81,10 @@ By default, this function's global state is scoped to the application. To change
 |**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
 |**log1p** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)\
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
 [log2, log2f, log2l](log2-log2f-log2l.md)\
 [log, logf, log10, log10f](log-logf-log10-log10f.md)

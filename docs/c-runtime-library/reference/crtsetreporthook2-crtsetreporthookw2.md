@@ -35,7 +35,7 @@ The action to take: **_CRT_RPTHOOK_INSTALL** or **_CRT_RPTHOOK_REMOVE**.
 *pfnNewHook*<br/>
 Report hook to install or remove in the narrow-character or wide-character version of this function.
 
-## Return Value
+## Return value
 
 -1 if an error was encountered, with **EINVAL** or **ENOMEM** set; otherwise returns the reference count of *pfnNewHook* after the call.
 
@@ -59,7 +59,7 @@ Use the following prototype for the narrow-character report hooks:
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-These functions validate their parameters. If *mode* or *pfnNewHook* is invalid, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
+These functions validate their parameters. If *mode* or *pfnNewHook* is invalid, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 > [!NOTE]
 > If your application is compiled with **/clr** and the reporting function is called after the application has exited main, the CLR will throw an exception if the reporting function calls any CRT functions.
@@ -71,11 +71,11 @@ These functions validate their parameters. If *mode* or *pfnNewHook* is invalid,
 |**_CrtSetReportHook2**|\<crtdbg.h>|\<errno.h>|
 |**_CrtSetReportHookW2**|\<crtdbg.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -227,4 +227,4 @@ _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook1) returned 0
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+[Debug routines](../debug-routines.md)

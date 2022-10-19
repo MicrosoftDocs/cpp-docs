@@ -27,7 +27,7 @@ int _callnewh(
 *size*<br/>
 The amount of memory that the [new operator](../../cpp/new-operator-cpp.md) tried to allocate.
 
-## Return Value
+## Return value
 
 |Value|Description|
 |-----------|-----------------|
@@ -52,5 +52,5 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[_set_new_handler](set-new-handler.md)<br/>
-[_set_new_mode](set-new-mode.md)<br/>
+[_set_new_handler](set-new-handler.md)\
+[_set_new_mode](set-new-mode.md)

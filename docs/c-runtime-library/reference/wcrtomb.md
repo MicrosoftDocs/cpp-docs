@@ -41,7 +41,7 @@ A wide character to convert.
 *mbstate*<br/>
 A pointer to an **mbstate_t** object.
 
-## Return Value
+## Return value
 
 Returns the number of bytes required to represent the converted multibyte character, otherwise a -1 if an error occurs.
 
@@ -53,7 +53,7 @@ If *mbstate* is null, the internal **mbstate_t** object containing the conversio
 
 The **wcrtomb** function differs from [wctomb, _wctomb_l](wctomb-wctomb-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use **wcsrlen** rather than **wcsnlen**, if a subsequent call to **wcsrtombs** were used instead of **wcstombs**.
 
-In C++, this function has a template overload that invokes the newer, secure counterparts of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, this function has a template overload that invokes the newer, secure counterparts of this function. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -112,7 +112,7 @@ The corresponding wide character "Q" was converted to the "Q" multibyte characte
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbsinit](mbsinit.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[mbsinit](mbsinit.md)

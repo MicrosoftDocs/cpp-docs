@@ -27,9 +27,9 @@ errno_t _get_doserrno(
 *pValue*<br/>
 A pointer to an integer to be filled with the current value of the **_doserrno** global macro.
 
-## Return Value
+## Return value
 
-If **_get_doserrno** succeeds, it returns zero; if it fails, it returns an error code. If *pValue* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+If **_get_doserrno** succeeds, it returns zero; if it fails, it returns an error code. If *pValue* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Remarks
 
@@ -47,9 +47,9 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**_get_doserrno**|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
 
-**_get_doserrno** is a Microsoft extension. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+**_get_doserrno** is a Microsoft extension. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_set_doserrno](set-doserrno.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[_set_doserrno](set-doserrno.md)\
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md)

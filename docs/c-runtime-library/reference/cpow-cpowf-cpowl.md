@@ -42,7 +42,7 @@ The base.
 *y*<br/>
 The exponent.
 
-## Return Value
+## Return value
 
 The value of *x* raised to the power of *y* with a branch cut for *x* along the negative real axis.
 
@@ -56,11 +56,11 @@ Because C++ allows overloading, you can call overloads of **cpow** that take and
 |-------------|--------------|------------------|
 |**cpow**,               **cpowf**, **cpowl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](clog-clogf-clogl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)\
+[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)\
+[clog, clogf, clogl](clog-clogf-clogl.md)

@@ -12,7 +12,7 @@ ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
 ---
 # _lfind_s
 
-Performs a linear search for the specified key. A version of [_lfind](lfind.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a linear search for the specified key. A version of [_lfind](lfind.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -47,13 +47,13 @@ Pointer to comparison routine. The first parameter is the *context* pointer. The
 *context*<br/>
 A pointer to an object that might be accessed in the comparison function.
 
-## Return Value
+## Return value
 
 If the key is found, **_lfind_s** returns a pointer to the element of the array at *base* that matches *key*. If the key is not found, **_lfind_s** returns **NULL**.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
 
-### Error Conditions
+### Error conditions
 
 |key|base|compare|num|size|errno|
 |---------|----------|-------------|---------|----------|-----------|
@@ -76,7 +76,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_lfind_s**|\<search.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -160,8 +160,8 @@ weit found
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](bsearch-s.md)<br/>
-[_lsearch_s](lsearch-s.md)<br/>
-[qsort_s](qsort-s.md)<br/>
-[_lfind](lfind.md)<br/>
+[Searching and sorting](../searching-and-sorting.md)\
+[bsearch_s](bsearch-s.md)\
+[_lsearch_s](lsearch-s.md)\
+[qsort_s](qsort-s.md)\
+[_lfind](lfind.md)

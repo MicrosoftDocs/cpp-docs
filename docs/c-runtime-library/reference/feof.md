@@ -27,9 +27,9 @@ int feof(
 *stream*<br/>
 Pointer to **FILE** structure.
 
-## Return Value
+## Return value
 
-The **feof** function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is **NULL**, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the **feof** returns 0.
+The **feof** function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is **NULL**, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the **feof** returns 0.
 
 For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**feof**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -104,9 +104,9 @@ Number of bytes read = 19
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](clearerr.md)<br/>
-[_eof](eof.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[Error handling](../error-handling-crt.md)\
+[Stream I/O](../stream-i-o.md)\
+[clearerr](clearerr.md)\
+[_eof](eof.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)

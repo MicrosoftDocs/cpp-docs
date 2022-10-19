@@ -31,7 +31,7 @@ The character you want to transform.
 *category*<br/>
 An identifier that contains the return value of [wctrans](wctrans.md).
 
-## Return Value
+## Return value
 
 The character *c*, after **towctrans** used the transform rule in *category*.
 
@@ -45,7 +45,7 @@ The value of *category* must have been returned by an earlier successful call to
 |-------------|---------------------|
 |**towctrans**|\<wctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -53,4 +53,4 @@ See **wctrans** for a sample that uses **towctrans**.
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+[Data conversion](../data-conversion.md)

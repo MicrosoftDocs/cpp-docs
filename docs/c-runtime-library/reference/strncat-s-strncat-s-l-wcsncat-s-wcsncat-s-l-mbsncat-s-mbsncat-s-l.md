@@ -12,7 +12,7 @@ ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
 ---
 # strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 
-Appends characters to a string. These versions of [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Appends characters to a string. These versions of [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > **_mbsncat_s** and **_mbsncat_s_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -112,16 +112,16 @@ Size of the destination buffer.
 Null-terminated source string.
 
 *count*<br/>
-Number of characters to append, or [_TRUNCATE](../../c-runtime-library/truncate.md).
+Number of characters to append, or [_TRUNCATE](../truncate.md).
 
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 Returns 0 if successful, an error code on failure.
 
-### Error Conditions
+### Error conditions
 
 |*strDestination*|*numberOfElements*|*strSource*|Return value|Contents of *strDestination*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
@@ -131,9 +131,9 @@ Returns 0 if successful, an error code on failure.
 
 ## Remarks
 
-These functions try to append the first *D* characters of *strSource* to the end of *strDest*, where *D* is the lesser of *count* and the length of *strSource*. If appending those *D* characters will fit within *strDest* (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of *strDest*, and a new terminating null is appended; otherwise, *strDest*[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions try to append the first *D* characters of *strSource* to the end of *strDest*, where *D* is the lesser of *count* and the length of *strSource*. If appending those *D* characters will fit within *strDest* (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of *strDest*, and a new terminating null is appended; otherwise, *strDest*[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-There is an exception to the above paragraph. If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then as much of *strSource* as will fit is appended to *strDest* while still leaving room to append a terminating null.
+There is an exception to the above paragraph. If *count* is [_TRUNCATE](../truncate.md), then as much of *strSource* as will fit is appended to *strDest* while still leaving room to append a terminating null.
 
 For example,
 
@@ -159,19 +159,19 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 In all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
-If *strSource* or *strDest* is **NULL**, or *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL** without modifying its parameters.
+If *strSource* or *strDest* is **NULL**, or *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL** without modifying its parameters.
 
 **wcsncat_s** and **_mbsncat_s** are wide-character and multibyte-character versions of **strncat_s**. The string arguments and return value of **wcsncat_s** are wide-character strings; those of **_mbsncat_s** are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -188,7 +188,7 @@ By default, this function's global state is scoped to the application. To change
 |**wcsncat_s**|\<string.h> or \<wchar.h>|
 |**_mbsncat_s**, **_mbsncat_s_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -329,16 +329,16 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
-[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)\
+[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)\
+[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)\
+[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)\
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)

@@ -31,7 +31,7 @@ Size of the requested memory allocation.
 *`alignment`*<br/>
 The alignment value, which must be an integer power of 2.
 
-## Return Value
+## Return value
 
 A pointer to the memory block that was allocated or `NULL` if the operation failed. The pointer is a multiple of *`alignment`*.
 
@@ -41,7 +41,7 @@ A pointer to the memory block that was allocated or `NULL` if the operation fail
 
 **`_aligned_malloc`** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned isn't aliased. For more information, see [`noalias`](../../cpp/noalias.md) and [`restrict`](../../cpp/restrict.md).
 
-This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **`_aligned_malloc`** validates its parameters. If *`alignment`* isn't a power of 2 or *`size`* is zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns NULL and sets `errno` to `EINVAL`.
+This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **`_aligned_malloc`** validates its parameters. If *`alignment`* isn't a power of 2 or *`size`* is zero, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns NULL and sets `errno` to `EINVAL`.
 
 Use [`_aligned_free`](aligned-free.md) to deallocate memory obtained by both **`_aligned_malloc`** and `_aligned_offset_malloc`. Don't use `free`, which doesn't reclaim the aligned memory correctly and can lead to hard-to-diagnose bugs.
 
@@ -137,4 +137,4 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data alignment](../data-alignment.md)

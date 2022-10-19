@@ -31,11 +31,11 @@ The following stream pointers are available to access the standard streams:
 |`stdout`|Standard output|
 |`stderr`|Standard error|
 
-These pointers can be used as arguments to functions. Some functions, such as [`getchar`](../c-runtime-library/reference/getchar-getwchar.md) and [`putchar`](../c-runtime-library/reference/putchar-putwchar.md), use `stdin` and `stdout` automatically.
+These pointers can be used as arguments to functions. Some functions, such as [`getchar`](./reference/getchar-getwchar.md) and [`putchar`](./reference/putchar-putwchar.md), use `stdin` and `stdout` automatically.
 
-These pointers are constants, and can't be assigned new values. The [`freopen`](../c-runtime-library/reference/freopen-wfreopen.md) function can be used to redirect the streams to disk files or to other devices. The operating system allows you to redirect a program's standard input and output at the command level.
+These pointers are constants, and can't be assigned new values. The [`freopen`](./reference/freopen-wfreopen.md) function can be used to redirect the streams to disk files or to other devices. The operating system allows you to redirect a program's standard input and output at the command level.
 
 ## See also
 
-[Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[Stream I/O](./stream-i-o.md)\
+[Global constants](./global-constants.md)

@@ -42,7 +42,7 @@ The type of byte to test for.
 *locale*<br/>
 The locale to use.
 
-## Return Value
+## Return value
 
 **_mbbtype** returns the type of byte in a string. This decision is context-sensitive, as specified by the value of *type*, which provides the control test condition. *type* is the type of the previous byte in the string. The manifest constants in the following table are defined in Mbctype.h.
 
@@ -58,7 +58,7 @@ The locale to use.
 
 The **_mbbtype** function determines the type of a byte in a multibyte character. If the value of *type* is any value except 1, **_mbbtype** tests for a valid single-byte or lead byte of a multibyte character. If the value of *type* is 1, **_mbbtype** tests for a valid trail byte of a multibyte character.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The **_mbbtype** version of this function uses the current locale for this locale-dependent behavior; the **_mbbtype_l** version is identical except that it use the locale parameter that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The **_mbbtype** version of this function uses the current locale for this locale-dependent behavior; the **_mbbtype_l** version is identical except that it use the locale parameter that's passed in instead. For more information, see [Locale](../locale.md).
 
 In earlier versions, **_mbbtype** was named **chkctype**. For new code, use **_mbbtype** instead.
 
@@ -73,8 +73,8 @@ By default, this function's global state is scoped to the application. To change
 
 \* For definitions of manifest constants that are used as return values.
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+[Byte classification](../byte-classification.md)

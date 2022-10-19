@@ -31,7 +31,7 @@ A pointer to a **fexcept_t** object to contain the current values of the  except
 *`excepts`*<br/>
 The floating-point exception flags to store in *`pstatus`*.
 
-## Return Value
+## Return value
 
 On success, returns 0. Otherwise, it returns a non-zero value.
 
@@ -58,9 +58,9 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**fegetexceptflag**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fesetexceptflag](fesetexceptflag2.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[fesetexceptflag](fesetexceptflag2.md)

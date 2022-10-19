@@ -47,4 +47,4 @@ For more information, see [_aligned_malloc](aligned-malloc.md).
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data alignment](../data-alignment.md)

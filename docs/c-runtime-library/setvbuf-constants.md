@@ -6,7 +6,7 @@ f1_keywords: ["_IOFBF", "_IONBF", "_IOLBF"]
 helpviewer_keywords: ["_IOFBF constant", "IOFBF constant", "IONBF constant", "_IOLBF constant", "IOLBF constant", "_IONBF constant"]
 ms.assetid: a6ec4dd5-1f24-498c-871a-e874cd28d33c
 ---
-# setvbuf Constants
+# setvbuf constants
 
 ## Syntax
 
@@ -28,5 +28,5 @@ The possible values are given by the following manifest constants:
 
 ## See also
 
-[setbuf](../c-runtime-library/reference/setbuf.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[setbuf](./reference/setbuf.md)\
+[Global constants](./global-constants.md)

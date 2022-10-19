@@ -39,7 +39,7 @@ int _execute_onexit_table(
 *function*<br/>
 [in] Pointer to a function to add to the `onexit` function table.
 
-## Return Value
+## Return value
 
 If successful, the function returns 0. Otherwise, it returns a negative value.
 
@@ -61,10 +61,10 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<process.h>|
 
-The `_initialize_onexit_table`, `_register_onexit_function`, and `_execute_onexit_table` functions are Microsoft-specific. For compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
+The `_initialize_onexit_table`, `_register_onexit_function`, and `_execute_onexit_table` functions are Microsoft-specific. For compatibility information, see [Compatibility](./compatibility.md).
 
 ## See also
 
-[atexit](../c-runtime-library/reference/atexit.md)<br/>
-[exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)
+[atexit](./reference/atexit.md)\
+[exit, _Exit, _exit](./reference/exit-exit-exit.md)\
+[_onexit, _onexit_m](./reference/onexit-onexit-m.md)

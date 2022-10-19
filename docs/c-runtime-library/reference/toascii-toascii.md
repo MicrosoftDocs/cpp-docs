@@ -28,7 +28,7 @@ int __toascii(
 *c*<br/>
 Character to convert.
 
-## Return Value
+## Return value
 
 **__toascii** converts the value of *c* to the 7-bit ASCII range and returns the result. There is no return value reserved to indicate an error.
 
@@ -44,10 +44,10 @@ The **__toascii** routine is defined as a macro unless the preprocessor macro _C
 |-------------|---------------------|
 |**toascii**, **__toascii**|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
 
-The **toascii** macro is a POSIX extension, and **__toascii** is a Microsoft-specific implementation of the POSIX extension. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **toascii** macro is a POSIX extension, and **__toascii** is a Microsoft-specific implementation of the POSIX extension. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[to Functions](../../c-runtime-library/to-functions.md)<br/>
+[Data conversion](../data-conversion.md)\
+[is, isw Routines](../is-isw-routines.md)\
+[to Functions](../to-functions.md)

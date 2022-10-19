@@ -30,7 +30,7 @@ _Lcomplex cexp( _Lcomplex z );  // C++ only
 *z*\
 A complex number that represents the exponent.
 
-## Return Value
+## Return value
 
 The value of **e** raised to the power of *z*.
 
@@ -44,11 +44,11 @@ Because C++ allows overloading, you can call overloads of **cexp** that take and
 |-------------|--------------|------------------|
 |**cexp**, **cexpf**, **cexpl**|\<complex.h>|\<complex.h>|
 
-For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)\
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
 [cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)\
 [clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)\
 [clog, clogf, clogl](clog-clogf-clogl.md)

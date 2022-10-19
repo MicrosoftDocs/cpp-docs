@@ -12,7 +12,7 @@ ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
 ---
 # _mktemp_s, _wmktemp_s
 
-Creates a unique file name. These are versions of [_mktemp, _wmktemp](mktemp-wmktemp.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Creates a unique file name. These are versions of [_mktemp, _wmktemp](mktemp-wmktemp.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -43,11 +43,11 @@ File name pattern.
 *sizeInChars*<br/>
 Size of the buffer in single-byte characters in **_mktemp_s**; wide characters in **_wmktemp_s**, including the null terminator.
 
-## Return Value
+## Return value
 
 Both of these functions return zero on success; an error code on failure.
 
-### Error Conditions
+### Error conditions
 
 |*nameTemplate*|*sizeInChars*|Return value|New value in *nameTemplate*|
 |----------------|-------------------|----------------------|-------------------------------|
@@ -55,7 +55,7 @@ Both of these functions return zero on success; an error code on failure.
 |Incorrect format (see Remarks section for correct format)|any|**EINVAL**|empty string|
 |any|<= number of X's|**EINVAL**|empty string|
 
-If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the functions returns **EINVAL**.
+If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the functions returns **EINVAL**.
 
 ## Remarks
 
@@ -65,7 +65,7 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -91,7 +91,7 @@ If FNA12345 does not exist, the next name returned is again:
 
 **_mktemp_s** can create a maximum of 26 unique file names for any given combination of *base* and *nameTemplate* values. Therefore, FNZ12345 is the last unique file name **_mktemp_s** can create for the *base* and *nameTemplate* values used in this example.
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 ## Requirements
 
@@ -100,7 +100,7 @@ In C++, using these functions is simplified by template overloads; the overloads
 |**_mktemp_s**|\<io.h>|
 |**_wmktemp_s**|\<io.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -146,7 +146,7 @@ int main()
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Unique filename is fna03188
@@ -158,11 +158,11 @@ Unique filename is fne03188
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[_getpid](getpid.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[tmpfile_s](tmpfile-s.md)<br/>
+[File handling](../file-handling.md)\
+[fopen, _wfopen](fopen-wfopen.md)\
+[_getmbcp](getmbcp.md)\
+[_getpid](getpid.md)\
+[_open, _wopen](open-wopen.md)\
+[_setmbcp](setmbcp.md)\
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+[tmpfile_s](tmpfile-s.md)

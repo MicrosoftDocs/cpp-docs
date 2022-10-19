@@ -46,7 +46,7 @@ The maximum number of characters (not bytes) to convert and store in *wcstr*.
 *mbstate*<br/>
 A pointer to an **mbstate_t** conversion state object. If this value is a null pointer, a static internal conversion state object is used. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *mbstate* parameter.
 
-## Return Value
+## Return value
 
 Returns the number of characters successfully converted, not including the terminating null character, if any. Returns (size_t)(-1) if an error occurred, and sets **errno** to EILSEQ.
 
@@ -62,9 +62,9 @@ If *wcstr* is not a null pointer, the pointer object pointed to by *mbstr* is as
 
 If the *wcstr* argument is a null pointer, the *count* argument is ignored and **mbsrtowcs** returns the required size in wide characters for the destination string. If *mbstate* is a null pointer, the function uses a non-thread-safe static internal **mbstate_t** conversion state object. If the character sequence *mbstr* does not have a corresponding multibyte character representation, a -1 is returned and the **errno** is set to **EILSEQ**.
 
-If *mbstr* isa null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns -1.
+If *mbstr* isa null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns -1.
 
-In C++, this function has a template overload that invokes the newer, secure counterpart of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, this function has a template overload that invokes the newer, secure counterpart of this function. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -80,10 +80,10 @@ The **mbsrtowcs** function is multithread safe as long as no function in the cur
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbrtowc](mbrtowc.md)<br/>
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
-[mbsinit](mbsinit.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[mbrtowc](mbrtowc.md)\
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
+[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)\
+[mbsinit](mbsinit.md)

@@ -12,7 +12,7 @@ ms.assetid: 72356653-7362-461a-af73-597b9c0a8094
 ---
 # _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 
-Reads formatted data of a specified length from a string. These are versions of [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](snscanf-snscanf-l-snwscanf-snwscanf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data of a specified length from a string. These are versions of [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](snscanf-snscanf-l-snwscanf-snwscanf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -58,26 +58,26 @@ The locale to use.
 *argument_list*<br/>
 Optional arguments to be assigned according to the format string.
 
-## Return Value
+## Return value
 
 Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-If *input* or *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
+If *input* or *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
 
-For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 This function is like **sscanf_s** except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-The buffer size parameter is required with the type field characters **c**, **C**, **s**, **S**, and **[**. For more information, see [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
+The buffer size parameter is required with the type field characters **c**, **C**, **s**, **S**, and **[**. For more information, see [scanf Type Field Characters](../scanf-type-field-characters.md).
 
 > [!NOTE]
 > The size parameter is of type **`unsigned`**, not **size_t**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -91,7 +91,7 @@ The versions of these functions with the **_l** suffix are identical except that
 |**_snscanf_s**, **_snscanf_s_l**|\<stdio.h>|
 |**_snwscanf_s**, **_snwscanf_s_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -130,4 +130,4 @@ _snwscanf_s converted 2 fields: 15 and 12.000000
 
 ## See also
 
-[scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)<br/>
+[scanf Width Specification](../scanf-width-specification.md)

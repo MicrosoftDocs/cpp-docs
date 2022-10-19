@@ -67,7 +67,7 @@ For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-long
 |-------------|---------------------|
 |**longjmp**|\<setjmp.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -75,5 +75,5 @@ See the example for [_fpreset](fpreset.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[Process and environment control](../process-and-environment-control.md)
 [setjmp](setjmp.md)

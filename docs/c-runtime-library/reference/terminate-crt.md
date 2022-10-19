@@ -40,7 +40,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**terminate**|\<eh.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -90,9 +90,9 @@ term_func() was called by terminate().
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
-[_set_se_translator](set-se-translator.md)<br/>
-[set_terminate](set-terminate-crt.md)<br/>
-[set_unexpected](set-unexpected-crt.md)<br/>
-[unexpected](unexpected-crt.md)<br/>
+[Exception handling routines](../exception-handling-routines.md)\
+[abort](abort.md)\
+[_set_se_translator](set-se-translator.md)\
+[set_terminate](set-terminate-crt.md)\
+[set_unexpected](set-unexpected-crt.md)\
+[unexpected](unexpected-crt.md)

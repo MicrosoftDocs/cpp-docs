@@ -39,7 +39,7 @@ long double expl(
 *`x`*\
 The floating-point value to exponentiate the natural logarithm base *e* by.
 
-## Return Value
+## Return value
 
 The **`exp`** functions return the exponential value of the floating-point parameter, *`x`*, if successful. That is, the result is *e*<sup>*`x`*</sup>, where *e* is the base of the natural logarithm. On overflow, the function returns `INF` (infinity) and on underflow, **`exp`** returns 0.
 
@@ -56,7 +56,7 @@ The **`exp`** function has an implementation that uses Streaming SIMD Extensions
 
 C++ allows overloading, so you can call overloads of **`exp`** that take a **`float`** or **`long double`** argument. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`exp`** always takes and returns a **`double`**.
 
-If you use the `<tgmath.h>` `exp()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `exp()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -67,7 +67,7 @@ By default, this function's global state is scoped to the application. To change
 |**`exp`**, **`expf`**, **`expl`**|`<math.h>`|`<cmath>` or `<math.h>`|
 |**`exp`** macro| `<tgmath.h>` ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -92,6 +92,6 @@ exp( 2.302585 ) = 10.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`log, logf, log10, log10f`](log-logf-log10-log10f.md)\
-[`_CIexp`](../../c-runtime-library/ciexp.md)
+[`_CIexp`](../ciexp.md)

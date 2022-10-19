@@ -31,9 +31,9 @@ Target stream.
 *pos*<br/>
 Position-indicator storage.
 
-## Return Value
+## Return value
 
-If successful, **fgetpos** returns 0. On failure, it returns a nonzero value and sets **errno** to one of the following manifest constants (defined in STDIO.H): **EBADF**, which means the specified stream isn't a valid file pointer or isn't accessible, or **EINVAL**, which means the *stream* value or the value of *pos* is invalid, such as if either is a null pointer. If *stream* or *pos* is a **NULL** pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If successful, **fgetpos** returns 0. On failure, it returns a nonzero value and sets **errno** to one of the following manifest constants (defined in STDIO.H): **EBADF**, which means the specified stream isn't a valid file pointer or isn't accessible, or **EINVAL**, which means the *stream* value or the value of *pos* is invalid, such as if either is a null pointer. If *stream* or *pos* is a **NULL** pointer, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
 ## Remarks
 
@@ -47,7 +47,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**fgetpos**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -106,5 +106,5 @@ after fsetpos: gets a stream
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fsetpos](fsetpos.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fsetpos](fsetpos.md)

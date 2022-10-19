@@ -12,7 +12,7 @@ ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
 ---
 # `localtime_s`, `_localtime32_s`, `_localtime64_s`
 
-Converts a **`time_t`** time value to a **`tm`** structure, and corrects for the local time zone. These are versions of [`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a **`time_t`** time value to a **`tm`** structure, and corrects for the local time zone. These are versions of [`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -39,11 +39,11 @@ Pointer to the time structure to be filled in.
 *`sourceTime`*<br/>
 Pointer to the stored time.
 
-## Return Value
+## Return value
 
-Zero if successful. The return value is an error code if there is a failure. Error codes are defined in *`Errno.h`*. For a listing of these errors, see [`errno`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful. The return value is an error code if there is a failure. Error codes are defined in *`Errno.h`*. For a listing of these errors, see [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-### Error Conditions
+### Error conditions
 
 |*`tmDest`*|*`sourceTime`*|Return value|Value in *`tmDest`*|Invokes invalid parameter handler|
 |-----------|------------|------------------|--------------------|---------------------------------------|
@@ -51,11 +51,11 @@ Zero if successful. The return value is an error code if there is a failure. Err
 |Not **`NULL`** (points to valid memory)|**`NULL`**|**`EINVAL`**|All fields set to -1|Yes|
 |Not **`NULL`** (points to valid memory)|less than 0 or greater than **`_MAX__TIME64_T`**|**`EINVAL`**|All fields set to -1|No|
 
-In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
+In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
 
 ## Remarks
 
-The **`localtime_s`** function converts a time stored as a [`time_t`](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type [`tm`](../../c-runtime-library/standard-types.md). The **`time_t`** value *`sourceTime`* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [`time`](time-time32-time64.md) function.
+The **`localtime_s`** function converts a time stored as a [`time_t`](../standard-types.md) value and stores the result in a structure of type [`tm`](../standard-types.md). The **`time_t`** value *`sourceTime`* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [`time`](time-time32-time64.md) function.
 
 **`localtime_s`** corrects for the local time zone if the user first sets the global environment variable **`TZ`**. When **`TZ`** is set, three other environment variables (**`_timezone`**, **`_daylight`**, and **`_tzname`**) are automatically set as well. If the **`TZ`** variable is not set, **`localtime_s`** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information cannot be obtained, PST8PDT, which signifies the Pacific time zone, is used by default. See [`_tzset`](tzset.md) for a description of these variables. **`TZ`** is a Microsoft extension and not part of the ANSI standard definition of **`localtime`**.
 
@@ -66,7 +66,7 @@ The **`localtime_s`** function converts a time stored as a [`time_t`](../../c-ru
 
 **`localtime_s`** is an inline function which evaluates to **`_localtime64_s`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. Doing this will cause **`localtime_s`** to evaluate to **`_localtime32_s`**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
 
-The fields of the structure type [`tm`](../../c-runtime-library/standard-types.md) store the following values, each of which is an **`int`**.
+The fields of the structure type [`tm`](../standard-types.md) store the following values, each of which is an **`int`**.
 
 |Field|Description|
 |-|-|
@@ -90,7 +90,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|-|
 |**`localtime_s`**, **`_localtime32_s`**, **`_localtime64_s`**|`<time.h>`|`<ctime>` or `<time.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -147,11 +147,11 @@ Fri Apr 25 01:19:27 PM
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)<br/>
-[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)<br/>
-[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)<br/>
-[`time`, `_time32`, `_time64`](time-time32-time64.md)<br/>
-[`_tzset`](tzset.md)<br/>
+[Time management](../time-management.md)\
+[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_tzset`](tzset.md)

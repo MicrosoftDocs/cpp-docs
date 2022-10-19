@@ -35,7 +35,7 @@ Pointer to old name.
 *`newname`*<br/>
 Pointer to new name.
 
-## Return Value
+## Return value
 
 Each of these functions returns 0 if it is successful. On an error, the function returns a nonzero value and sets **`errno`** to one of the following values:
 
@@ -45,7 +45,7 @@ Each of these functions returns 0 if it is successful. On an error, the function
 | **`ENOENT`** | File or path specified by *`oldname`* not found. |
 | **`EINVAL`** | Name contains invalid characters. |
 
-For other possible return values, see [`_doserrno`, `_errno`, `syserrlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For other possible return values, see [`_doserrno`, `_errno`, `syserrlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -55,7 +55,7 @@ The **`rename`** function renames the file or directory specified by *`oldname`*
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -68,11 +68,11 @@ By default, this function's global state is scoped to the application. To change
 |**`rename`**|`<io.h>` or `<stdio.h>`|
 |**`_wrename`**|`<stdio.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -108,4 +108,4 @@ File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
+[File handling](../file-handling.md)

@@ -31,11 +31,11 @@ Binary integer to be output.
 *stream*<br/>
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
-Returns the value written. A return value of **EOF** might indicate an error. Because **EOF** is also a legitimate integer value, use **ferror** to verify an error. If *stream* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EOF**.
+Returns the value written. A return value of **EOF** might indicate an error. Because **EOF** is also a legitimate integer value, use **ferror** to verify an error. If *stream* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EOF**.
 
-For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -49,11 +49,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_putw**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -95,5 +95,5 @@ Wrote ten words
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getw](getw.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[_getw](getw.md)

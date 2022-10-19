@@ -34,5 +34,5 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](./reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)

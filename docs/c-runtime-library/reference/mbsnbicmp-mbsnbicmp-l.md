@@ -35,7 +35,7 @@ Null-terminated strings to compare.
 *count*<br/>
 Number of bytes to compare.
 
-## Return Value
+## Return value
 
 The return value indicates the relationship between the substrings.
 
@@ -55,13 +55,13 @@ The **_mbsnbicmp** function performs an ordinal comparison of at most the first 
 
 Two strings containing characters located between 'Z' and 'a' in the ASCII table ('[', '\\', ']', '^', '_', and '\`') compare differently, depending on their case. For example, the two strings "ABCDE" and "ABCD^" compare one way if the comparison is lowercase ("abcde" > "abcd^") and the other way ("ABCDE" < "ABCD^") if it is uppercase.
 
-**_mbsnbicmp** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. It is not affected by the current locale setting.
+**_mbsnbicmp** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use. It is not affected by the current locale setting.
 
-If either *string1* or *string2* is a null pointer, **_mbsnbicmp** invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **_NLSCMPERROR** and sets **errno** to **EINVAL**.
+If either *string1* or *string2* is a null pointer, **_mbsnbicmp** invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **_NLSCMPERROR** and sets **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -74,7 +74,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_mbsnbicmp**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -82,7 +82,7 @@ See the example for [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md).
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
-[_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)<br/>
-[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)\
+[_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)\
+[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)

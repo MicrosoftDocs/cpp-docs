@@ -35,7 +35,7 @@ The maximum number of bytes to inspect.
 *mbstate*<br/>
 Pointer to the current shift state of the initial byte of *str*.
 
-## Return Value
+## Return value
 
 One of the following values:
 
@@ -56,7 +56,7 @@ The **mbrlen** function differs from [_mbclen, mblen, _mblen_l](mbclen-mblen-mbl
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**mbrlen**|\<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -134,5 +134,5 @@ Character count: 25
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[Locale](../locale.md)

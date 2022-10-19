@@ -30,7 +30,7 @@ int _heapset(
 *fill*<br/>
 Fill character.
 
-## Return Value
+## Return value
 
 `_heapset` returns one of the following integer manifest constants defined in Malloc.h.
 
@@ -55,7 +55,7 @@ The `_heapset` function shows free memory locations or nodes that have been unin
 |-------------|---------------------|---------------------|
 |`_heapset`|\<malloc.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](./compatibility.md) in the Introduction.
 
 ## Example
 
@@ -101,8 +101,8 @@ OK - heap is fine
 
 ## See also
 
-[Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
-[_heapadd](../c-runtime-library/heapadd.md)<br/>
-[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
-[_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
-[_heapwalk](../c-runtime-library/reference/heapwalk.md)
+[Memory allocation](./memory-allocation.md)\
+[_heapadd](./heapadd.md)\
+[_heapchk](./reference/heapchk.md)\
+[_heapmin](./reference/heapmin.md)\
+[_heapwalk](./reference/heapwalk.md)

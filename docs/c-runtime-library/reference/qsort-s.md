@@ -12,7 +12,7 @@ ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
 ---
 # qsort_s
 
-Performs a quick sort. A version of [qsort](qsort.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a quick sort. A version of [qsort](qsort.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -61,11 +61,11 @@ The routine must compare the elements and then return one of the following value
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, then the function returns and **errno** is set to **EINVAL**. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, then the function returns and **errno** is set to **EINVAL**. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Error Conditions
+### Error conditions
 
 |key|base|compare|num|width|errno|
 |---------|----------|-------------|---------|-----------|-----------|
@@ -82,9 +82,9 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**qsort_s**|\<stdlib.h> and \<search.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
-**Libraries:** All versions of the [C runtime libraries](../../c-runtime-library/crt-library-features.md).
+**Libraries:** All versions of the [C runtime libraries](../crt-library-features.md).
 
 ## Example
 
@@ -227,7 +227,7 @@ int main( )
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Unsorted input:
@@ -242,7 +242,7 @@ table tablet tableux
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](bsearch-s.md)<br/>
-[_lsearch_s](lsearch-s.md)<br/>
-[qsort](qsort.md)<br/>
+[Searching and sorting](../searching-and-sorting.md)\
+[bsearch_s](bsearch-s.md)\
+[_lsearch_s](lsearch-s.md)\
+[qsort](qsort.md)

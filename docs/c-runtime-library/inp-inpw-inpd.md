@@ -37,7 +37,7 @@ unsigned long _inpd(
 *`port`*\
 I/O port number.
 
-## Return Value
+## Return value
 
 The functions return the byte, word, or double word read from *`port`*. There's no error return.
 
@@ -57,13 +57,13 @@ The `inp` and `inpw` names are older, deprecated names for the `_inp` and `_inpw
 |`_inpw`|\<conio.h>|
 |`_inpd`|\<conio.h>|
 
-For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](./compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](./crt-library-features.md).
 
 ## See also
 
-[Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)\
-[`outp`, `outpw`, `_outp`, `_outpw`, `_outpd`](../c-runtime-library/outp-outpw-outpd.md)
+[Console and port I/O](./console-and-port-i-o.md)\
+[`outp`, `outpw`, `_outp`, `_outpw`, `_outpd`](./outp-outpw-outpd.md)

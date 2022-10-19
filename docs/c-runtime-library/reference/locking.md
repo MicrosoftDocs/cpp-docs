@@ -35,9 +35,9 @@ Locking action to perform.
 *nbytes*<br/>
 Number of bytes to lock.
 
-## Return Value
+## Return value
 
-**_locking** returns 0 if successful. A return value of -1 indicates failure, in which case [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.
+**_locking** returns 0 if successful. A return value of -1 indicates failure, in which case [errno](../errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.
 
 |errno value|Condition|
 |-|-|
@@ -46,7 +46,7 @@ Number of bytes to lock.
 | **EDEADLOCK** | Locking violation. Returned when the **_LK_LOCK** or **_LK_RLCK** flag is specified and the file cannot be locked after 10 attempts. |
 | **EINVAL** | An invalid argument was given to **_locking**. |
 
-If the failure is due to a bad parameter, such as an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If the failure is due to a bad parameter, such as an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 ## Remarks
 
@@ -72,11 +72,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**_locking**|\<io.h> and \<sys/locking.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -135,7 +135,7 @@ int main( void )
 The first thirty bytes of this file will be locked.
 ```
 
-## Sample Output
+## Sample output
 
 ```Output
 No one can change these bytes while I'm reading them
@@ -145,6 +145,6 @@ Now I'm done. Do what you will with them
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+[File handling](../file-handling.md)\
+[_creat, _wcreat](creat-wcreat.md)\
+[_open, _wopen](open-wopen.md)

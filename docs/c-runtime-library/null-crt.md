@@ -12,4 +12,4 @@ ms.assetid: f9aac2a0-4f79-423f-8738-a76dccc0b1c3
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+[Global constants](./global-constants.md)

@@ -11,7 +11,7 @@ helpviewer_keywords: ["wcstombs_s function", "string conversion, wide characters
 ---
 # `wcstombs_s`, `_wcstombs_s_l`
 
-Converts a sequence of wide characters to a corresponding sequence of multibyte characters. A version of [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a sequence of wide characters to a corresponding sequence of multibyte characters. A version of [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -66,12 +66,12 @@ The size in bytes of the *`mbstr`* buffer.
 Points to the wide character string to be converted.
 
 *`count`*<br/>
-The maximum number of bytes to store in the *`mbstr`* buffer, not including the terminating null character, or [`_TRUNCATE`](../../c-runtime-library/truncate.md).
+The maximum number of bytes to store in the *`mbstr`* buffer, not including the terminating null character, or [`_TRUNCATE`](../truncate.md).
 
 *`locale`*<br/>
 The locale to use.
 
-## Return Value
+## Return value
 
 Zero if successful, an error code on failure.
 
@@ -81,7 +81,7 @@ Zero if successful, an error code on failure.
 |*`wcstr`* is **`NULL`**|**`EINVAL`**|
 |The destination buffer is too small to contain the converted string (unless *`count`* is **`_TRUNCATE`**; see Remarks below)|**`ERANGE`**|
 
-If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns an error code and sets **`errno`** as indicated in the table.
+If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns an error code and sets **`errno`** as indicated in the table.
 
 ## Remarks
 
@@ -95,7 +95,7 @@ The **`wcstombs_s`** function converts a string of wide characters pointed to by
 
 The destination string is always null-terminated (even in the case of an error).
 
-If *`count`* is the special value [`_TRUNCATE`](../../c-runtime-library/truncate.md), then **`wcstombs_s`** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator. If the string is truncated, the return value is **`STRUNCATE`**, and the conversion is considered successful.
+If *`count`* is the special value [`_TRUNCATE`](../truncate.md), then **`wcstombs_s`** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator. If the string is truncated, the return value is **`STRUNCATE`**, and the conversion is considered successful.
 
 If **`wcstombs_s`** successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into *`*pReturnValue`* (provided *`pReturnValue`* is not **`NULL`**). This occurs even if the *`mbstr`* argument is **`NULL`** and provides a way to determine the required buffer size. Note that if *`mbstr`* is **`NULL`**, *`count`* is ignored.
 
@@ -106,9 +106,9 @@ If the sequences pointed to by *`wcstr`* and *`mbstr`* overlap, the behavior of 
 > [!IMPORTANT]
 > Ensure that *`wcstr`* and *`mbstr`* do not overlap, and that *`count`* correctly reflects the number of wide characters to convert.
 
-**`wcstombs_s`** uses the current locale for any locale-dependent behavior; **`_wcstombs_s_l`** is identical to **`wcstombs`** except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**`wcstombs_s`** uses the current locale for any locale-dependent behavior; **`_wcstombs_s_l`** is identical to **`wcstombs`** except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -118,7 +118,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`wcstombs_s`**|`<stdlib.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -168,10 +168,10 @@ Convert wide-character string:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)<br/>
-[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)<br/>
-[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)<br/>
-[`wctomb_s`, `_wctomb_s_l`](wctomb-s-wctomb-s-l.md)<br/>
-[`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`wctomb_s`, `_wctomb_s_l`](wctomb-s-wctomb-s-l.md)\
+[`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)

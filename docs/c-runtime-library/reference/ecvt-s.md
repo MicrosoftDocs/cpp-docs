@@ -12,7 +12,7 @@ ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
 ---
 # _ecvt_s
 
-Converts a **`double`** number to a string. This function is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a **`double`** number to a string. This function is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -55,13 +55,13 @@ Stored decimal-point position.
 *_Sign*<br/>
 Sign of the converted number.
 
-## Return Value
+## Return value
 
-Zero if successful. The return value is an error code if there's a failure. Error codes are defined in Errno.h. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful. The return value is an error code if there's a failure. Error codes are defined in Errno.h. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-If there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL**, and returns **EINVAL**.
+If there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL**, and returns **EINVAL**.
 
-### Error Conditions
+### Error conditions
 
 |*_Buffer*|*_SizeInBytes*|_Value|_Count|_Dec|_Sign|Return value|Value in *buffer*|
 |---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|
@@ -70,7 +70,7 @@ If there's an invalid parameter, as listed in the following table, this function
 |any|any|any|any|**NULL**|any|**EINVAL**|Not modified.|
 |any|any|any|any|any|**NULL**|**EINVAL**|Not modified.|
 
-## Security Issues
+## Security issues
 
 **_ecvt_s** might generate an access violation if *buffer* doesn't point to valid memory and isn't **NULL**.
 
@@ -84,7 +84,7 @@ A buffer of length **_CVTBUFSIZE** is sufficient for any floating-point value.
 
 The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *_Count* parameter. **_ecvt_s** interprets *_Count* as the total number of digits in the output string, whereas **_fcvt_s** interprets *_Count* as the number of digits after the decimal point.
 
-In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 The debug version of this function first fills the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
@@ -96,7 +96,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|---------------------|
 |**_ecvt_s**|\<stdlib.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -132,9 +132,9 @@ Converted value: 12000
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_fcvt_s](fcvt-s.md)<br/>
-[_gcvt_s](gcvt-s.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
+[_ecvt](ecvt.md)\
+[_fcvt_s](fcvt-s.md)\
+[_gcvt_s](gcvt-s.md)

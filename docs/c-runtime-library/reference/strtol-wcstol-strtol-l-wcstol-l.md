@@ -55,17 +55,17 @@ Number base to use.
 *`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
 **`strtol`**, **`wcstol`**, **`_strtol_l`**, and **`_wcstol_l`** return the value represented in *`string`*. They return 0 if no conversion is possible. When the representation would cause an overflow, they return **`LONG_MAX`** or **`LONG_MIN`**.
 
-**`errno`** is set to **`ERANGE`** if overflow or underflow occurs. It's set to **`EINVAL`** if *`string`* is **`NULL`**. Or, if *`base`* is nonzero and less than 2, or greater than 36. For more information on **`ERANGE`**, **`EINVAL`**, and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**`errno`** is set to **`ERANGE`** if overflow or underflow occurs. It's set to **`EINVAL`** if *`string`* is **`NULL`**. Or, if *`base`* is nonzero and less than 2, or greater than 36. For more information on **`ERANGE`**, **`EINVAL`**, and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 The **`strtol`**, **`wcstol`**, **`_strtol_l`**, and **`_wcstol_l`** functions convert *`string`* to a **`long`**. They stop reading *`string`* at the first character not recognized as part of a number. It may be the terminating-null character, or the first alphanumeric character greater than or equal to *`base`*.
 
-**`wcstol`** and **`_wcstol_l`** are wide-character versions of **`strtol`** and **`_strtol_l`**. Their *`string`* argument is a wide-character string. These functions behave identically to **`strtol`** and **`_strtol_l`** otherwise. The locale's **`LC_NUMERIC`** category setting determines recognition of the radix character (the fractional marker or decimal point) in *`string`*. The functions **`strtol`** and **`wcstol`** use the current locale. **`_strtol_l`** and **`_wcstol_l`** use the locale passed in instead. For more information, see [`setlocale`] and [Locale](../../c-runtime-library/locale.md).
+**`wcstol`** and **`_wcstol_l`** are wide-character versions of **`strtol`** and **`_strtol_l`**. Their *`string`* argument is a wide-character string. These functions behave identically to **`strtol`** and **`_strtol_l`** otherwise. The locale's **`LC_NUMERIC`** category setting determines recognition of the radix character (the fractional marker or decimal point) in *`string`*. The functions **`strtol`** and **`wcstol`** use the current locale. **`_strtol_l`** and **`_wcstol_l`** use the locale passed in instead. For more information, see [`setlocale`] and [Locale](../locale.md).
 
 When *`end_ptr`* is **`NULL`**, it's ignored. Otherwise, a pointer to the character that stopped the scan is stored at the location pointed to by *`end_ptr`*. No conversion is possible if no valid digits are found, or an invalid base is specified. The value of *`string`* is then stored at the location pointed to by *`end_ptr`*.
 
@@ -77,7 +77,7 @@ Square brackets (`[ ]`) surround optional elements. Curly braces and a vertical 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|

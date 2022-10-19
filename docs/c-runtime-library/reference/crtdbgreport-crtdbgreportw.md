@@ -55,7 +55,7 @@ Pointer to format-control string used to create the user message.
 *`argument`*<br/>
 Optional substitution arguments used by *`format`*.
 
-## Return Value
+## Return value
 
 For all report destinations, **_CrtDbgReport** and **_CrtDbgReportW** return -1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user chooses the **Retry** button, these functions return 1. If the user chooses the **Abort** button in the Debug Message window, these functions immediately abort and don't return a value.
 
@@ -80,7 +80,7 @@ The following table lists the available choices for the report mode or modes and
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|Writes message to **stderr**.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|Writes message to **stdout**.|
 
-The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [_CrtSetReportMode](crtsetreportmode.md) and [_CrtSetReportFile](crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting).
+The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [_CrtSetReportMode](crtsetreportmode.md) and [_CrtSetReportFile](crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting).
 
 If your application needs more flexibility than that provided by **_CrtDbgReport** and **_CrtDbgReportW**, you can write your own reporting function and hook it into the C run-time library reporting mechanism by using the [_CrtSetReportHook](crtsetreporthook.md) function.
 
@@ -91,11 +91,11 @@ If your application needs more flexibility than that provided by **_CrtDbgReport
 |**_CrtDbgReport**|\<crtdbg.h>|
 |**_CrtDbgReportW**|\<crtdbg.h>|
 
-**_CrtDbgReport** and **_CrtDbgReportW** are Microsoft extensions. For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+**_CrtDbgReport** and **_CrtDbgReportW** are Microsoft extensions. For more information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -114,8 +114,8 @@ See [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtSetReportMode](crtsetreportmode.md)<br/>
-[_CrtSetReportFile](crtsetreportfile.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)<br/>
+[Debug routines](../debug-routines.md)\
+[_CrtSetReportMode](crtsetreportmode.md)\
+[_CrtSetReportFile](crtsetreportfile.md)\
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
+[_DEBUG](../debug.md)

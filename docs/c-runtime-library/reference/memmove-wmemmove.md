@@ -39,7 +39,7 @@ Source object.
 *`count`*\
 Number of bytes (**`memmove`**) or characters (**`wmemmove`**) to copy.
 
-## Return Value
+## Return value
 
 The value of *`dest`*.
 
@@ -47,7 +47,7 @@ The value of *`dest`*.
 
 Copies *`count`* bytes (**`memmove`**) or characters (**`wmemmove`**) from *`src`* to *`dest`*. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
 
-**Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 The **`memmove`** and **`wmemmove`** functions will only be deprecated if the constant **`_CRT_SECURE_DEPRECATE_MEMORY`** is defined before the inclusion statement in order for the functions to be deprecated, such as in the example below:
 
@@ -70,7 +70,7 @@ or
 |**`memmove`**|`<string.h>`|
 |**`wmemmove`**|`<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -110,7 +110,7 @@ New string: aaaabb
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)\
+[Buffer manipulation](../buffer-manipulation.md)\
 [`_memccpy`](memccpy.md)\
 [`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
 [`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\

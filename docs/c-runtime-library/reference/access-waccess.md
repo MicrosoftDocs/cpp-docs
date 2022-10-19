@@ -35,7 +35,7 @@ File or directory path.
 *`mode`*<br/>
 Read/write attribute.
 
-## Return Value
+## Return value
 
 Each function returns 0 if the file has the given mode. The function returns -1 if the named file doesn't exist or doesn't have the given mode; in this case, `errno` is set as shown in the following table.
 
@@ -45,7 +45,7 @@ Each function returns 0 if the file has the given mode. The function returns -1 
 | `ENOENT` | File name or path not found. |
 | `EINVAL` | Invalid parameter. |
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -58,15 +58,15 @@ When used with files, the **`_access`** function determines whether the specifie
 |04|Read-only|
 |06|Read and write|
 
-This function only checks whether the file and directory are read-only or not, it doesn't check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access Tokens](/windows/win32/SecAuthZ/access-tokens). An ATL class exists to provide this functionality; see [`CAccessToken` Class](../../atl/reference/caccesstoken-class.md).
+This function only checks whether the file and directory are read-only or not, it doesn't check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access tokens](/windows/win32/SecAuthZ/access-tokens). An ATL class exists to provide this functionality; see [`CAccessToken` Class](../../atl/reference/caccesstoken-class.md).
 
 **`_waccess`** is a wide-character version of **`_access`**; the *`path`* argument to **`_waccess`** is a wide-character string. **`_waccess`** and **`_access`** behave identically otherwise.
 
-This function validates its parameters. If *`path`* is `NULL` or *`mode`* doesn't specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
+This function validates its parameters. If *`path`* is `NULL` or *`mode`* doesn't specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -115,8 +115,8 @@ File crt_ACCESS.C does not have write permission.
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[`_chmod`, `_wchmod`](chmod-wchmod.md)<br/>
-[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[`_open`, `_wopen`](open-wopen.md)<br/>
+[File handling](../file-handling.md)\
+[`_chmod`, `_wchmod`](chmod-wchmod.md)\
+[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
+[`_open`, `_wopen`](open-wopen.md)\
 [`_stat`, `_wstat` Functions](stat-functions.md)

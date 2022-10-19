@@ -31,13 +31,13 @@ File descriptor.
 *`mode`*<br/>
 New translation mode.
 
-## Return Value
+## Return value
 
 If successful, returns the previous translation mode.
 
-If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to either **`EBADF`**, which indicates an invalid file descriptor, or **`EINVAL`**, which indicates an invalid *`mode`* argument.
+If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to either **`EBADF`**, which indicates an invalid file descriptor, or **`EINVAL`**, which indicates an invalid *`mode`* argument.
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|----------------------|
 |**`_setmode`**|`<io.h>`|`<fcntl.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example: Use `_setmode` to change stdin
 
@@ -113,8 +113,8 @@ int main(void) {
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[`_creat`, `_wcreat`](creat-wcreat.md)<br/>
-[`fopen`, `_wfopen`](fopen-wfopen.md)<br/>
-[`_open`, `_wopen`](open-wopen.md)<br/>
-[`_set_fmode`](set-fmode.md)<br/>
+[File handling](../file-handling.md)\
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_set_fmode`](set-fmode.md)

@@ -10,7 +10,7 @@ f1_keywords: ["fread_s", "stdio/fread_s"]
 ---
 # `fread_s`
 
-Reads data from a stream. This version of [`fread`](fread.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads data from a stream. This version of [`fread`](fread.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -41,11 +41,11 @@ Maximum number of items to be read.
 *`stream`*\
 Pointer to **`FILE`** structure.
 
-## Return Value
+## Return value
 
-**`fread_s`** returns the number of (whole) items that were read into the buffer, which may be less than *`count`* if a read error or the end of the file is encountered before *`count`* is reached. Use the **`feof`** or **`ferror`** function to distinguish an error from an end-of-file condition. If *`size`* or *`count`* is 0, **`fread_s`** returns 0 and the buffer contents are unchanged. If *`stream`* or *`buffer`* is a null pointer, **`fread_s`** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns 0.
+**`fread_s`** returns the number of (whole) items that were read into the buffer, which may be less than *`count`* if a read error or the end of the file is encountered before *`count`* is reached. Use the **`feof`** or **`ferror`** function to distinguish an error from an end-of-file condition. If *`size`* or *`count`* is 0, **`fread_s`** returns 0 and the buffer contents are unchanged. If *`stream`* or *`buffer`* is a null pointer, **`fread_s`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns 0.
 
-For more information about error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`fread_s`**|`<stdio.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -132,6 +132,6 @@ Contents of buffer after write/read:
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`fwrite`](fwrite.md)\
 [`_read`](read.md)

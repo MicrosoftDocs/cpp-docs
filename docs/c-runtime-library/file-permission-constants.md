@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["S_IWRITE constant", "constants [C++], file attributes", "S_IREAD constant", "file permissions [C++]", "_S_IWRITE constant", "_S_IREAD constant"]
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
 ---
-# File Permission Constants
+# File permission constants
 
 ## Syntax
 
@@ -35,8 +35,8 @@ When used as the `pmode` argument for `_umask`, the manifest constant sets the p
 
 ## See also
 
-[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
-[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_umask](../c-runtime-library/reference/umask.md)<br/>
-[Standard Types](../c-runtime-library/standard-types.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[_open, _wopen](./reference/open-wopen.md)\
+[_sopen, _wsopen](./reference/sopen-wsopen.md)\
+[_umask](./reference/umask.md)\
+[Standard types](./standard-types.md)\
+[Global constants](./global-constants.md)

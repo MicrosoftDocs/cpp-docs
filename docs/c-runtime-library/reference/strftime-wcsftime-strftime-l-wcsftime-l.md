@@ -62,7 +62,7 @@ Format-control string.
 *`locale`*<br/>
 The locale to use.
 
-## Return Value
+## Return value
 
 **`strftime`** returns the number of characters placed in *`strDest`* and **`wcsftime`** returns the corresponding number of wide characters.
 
@@ -74,17 +74,17 @@ The number of characters in *`strDest`* is equal to the number of literal charac
 
 The **`strftime`** and **`wcsftime`** functions format the **`tm`** time value in *`timeptr`* according to the supplied *`format`* argument and store the result in the buffer *`strDest`*. At most, *`maxsize`* characters are placed in the string. For a description of the fields in the *`timeptr`* structure, see [`asctime`](asctime-wasctime.md). **`wcsftime`** is the wide-character equivalent of **`strftime`**; its string-pointer argument points to a wide-character string. These functions behave identically otherwise.
 
-This function validates its parameters. If *`strDest`*, *`format`*, or *`timeptr`* is a null pointer, or if the **`tm`** data structure addressed by *`timeptr`* is invalid (for example, if it contains out of range values for the time or date), or if the *`format`* string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **`errno`** to **`EINVAL`**.
+This function validates its parameters. If *`strDest`*, *`format`*, or *`timeptr`* is a null pointer, or if the **`tm`** data structure addressed by *`timeptr`* is invalid (for example, if it contains out of range values for the time or date), or if the *`format`* string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **`errno`** to **`EINVAL`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tcsftime`**|**`strftime`**|**`strftime`**|**`wcsftime`**|
 
-The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that do not begin with **`%`** are copied unchanged to *`strDest`*. The **`LC_TIME`** category of the current locale affects the output formatting of **`strftime`**. (For more information on **`LC_TIME`**, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that do not begin with **`%`** are copied unchanged to *`strDest`*. The **`LC_TIME`** category of the current locale affects the output formatting of **`strftime`**. (For more information on **`LC_TIME`**, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
 The **`strftime`** functions support these formatting codes:
 
@@ -140,7 +140,7 @@ As in the **`printf`** function, the **`#`** flag may prefix any formatting code
 The ISO 8601 week and week-based year produced by **`%V`**, **`%g`**, and **`%G`**, uses a week that begins on Monday, where week 1 is the week that contains January 4th, which is the first week that includes at least four days of the year. If the first Monday of the year is the 2nd, 3rd, or 4th, the preceding days are part of the last week of the preceding year. For those days, **`%V`** is replaced by 53, and both **`%g`** and **`%G`** are replaced by the digits of the preceding year.
 
 > [!NOTE]
-> When using one of the `strftime` functions with a `tm` pointer returned from `gmtime`, the values printed via the `%Z` and `%z` specifiers will not be accurate. This is because the `tm` struct as specified by the C Standard does not contain the information for time zone name nor offset. Instead, the timezone information is populated via the global variables [`_timezone` and `_dstbias`](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+> When using one of the `strftime` functions with a `tm` pointer returned from `gmtime`, the values printed via the `%Z` and `%z` specifiers will not be accurate. This is because the `tm` struct as specified by the C Standard does not contain the information for time zone name nor offset. Instead, the timezone information is populated via the global variables [`_timezone` and `_dstbias`](../daylight-dstbias-timezone-and-tzname.md).
 
 ## Requirements
 
@@ -151,7 +151,7 @@ The ISO 8601 week and week-based year produced by **`%V`**, **`%g`**, and **`%G`
 |**`_strftime_l`**|`<time.h>`|
 |**`_wcsftime_l`**|`<time.h>` or `<wchar.h>`|
 
-The **`_strftime_l`** and **`_wcsftime_l`** functions are Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **`_strftime_l`** and **`_wcsftime_l`** functions are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -159,10 +159,10 @@ See the example for [`time`](time-time32-time64.md).
 
 ## See also
 
-[Locale](../../c-runtime-library/locale.md) <br/>
-[Time Management](../../c-runtime-library/time-management.md) <br/>
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md) <br/>
-[`localeconv`](localeconv.md) <br/>
-[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) <br/>
-[`strcoll` Functions](../../c-runtime-library/strcoll-functions.md) <br/>
-[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[Locale](../locale.md)\
+[Time management](../time-management.md)\
+[String manipulation](../string-manipulation-crt.md)\
+[`localeconv`](localeconv.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`strcoll` Functions](../strcoll-functions.md)\
+[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

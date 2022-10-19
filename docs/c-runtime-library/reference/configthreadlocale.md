@@ -25,7 +25,7 @@ int _configthreadlocale( int per_thread_locale_type );
 *`per_thread_locale_type`*\
 The option to set. One of the options listed in the following table.
 
-## Return Value
+## Return value
 
 The previous per-thread locale status (**`_DISABLE_PER_THREAD_LOCALE`** or **`_ENABLE_PER_THREAD_LOCALE`**), or -1 on failure.
 
@@ -43,7 +43,7 @@ These functions affect the behavior of **`setlocale`**, **`_tsetlocale`**, **`_w
 
 If you use **`_configthreadlocale`** to enable a per-thread locale, set the preferred locale in that thread immediately afterward by a call to **`setlocale`** or **`_wsetlocale`**.
 
-If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
+If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -166,5 +166,5 @@ The time in German locale is: 'Mittwoch, 12. Mai 2004'
 
 [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
 [`_beginthread`, `_beginthreadex`](beginthread-beginthreadex.md)\
-[Locale](../../c-runtime-library/locale.md)\
+[Locale](../locale.md)\
 [Multithreading and locales](../../parallel/multithreading-and-locales.md)

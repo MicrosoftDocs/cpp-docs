@@ -37,9 +37,9 @@ Type of file access.
 
 ## Return value
 
-Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set either to `EBADF`, which indicates a bad file descriptor, or `EINVAL`, which indicates that *`mode`* was a null pointer.
+Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set either to `EBADF`, which indicates a bad file descriptor, or `EINVAL`, which indicates that *`mode`* was a null pointer.
 
-For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -73,7 +73,7 @@ In addition to the above values, the following characters can also be included i
 
 The **`t`**, **`c`**, and **`n`** *`mode`* options are Microsoft extensions for **`fopen`** and **`_fdopen`**. Don't use them if you want to preserve ANSI portability.
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
 Valid characters for the *`mode`* string used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as shown in this table:
 
@@ -97,7 +97,7 @@ Valid characters for the *`mode`* string used in **`fopen`** and **`_fdopen`** c
 | **`_fdopen`** | `<stdio.h>` | `<cstdio>` |
 | **`_wfdopen`** | `<stdio.h>` or `<wchar.h>` | `<cstdio>` |
 
-For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../compatibility.md).
 
 ### Generic-text routine mappings
 
@@ -157,7 +157,7 @@ Lines in file: 2
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`_dup`, `_dup2`](dup-dup2.md)\
 [`fclose`, `_fcloseall`](fclose-fcloseall.md)\
 [`fopen`, `_wfopen`](fopen-wfopen.md)\

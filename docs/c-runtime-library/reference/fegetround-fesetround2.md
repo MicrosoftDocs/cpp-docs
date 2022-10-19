@@ -29,7 +29,7 @@ int fesetround(
 *round_mode*<br/>
 The rounding mode to set, as one of the floating-point rounding macros. If the value isn't equal to one of the floating-point rounding macros, the rounding mode isn't changed.
 
-## Return Value
+## Return value
 
 On success, **fegetround** returns the rounding mode as one of the floating point rounding macro values. It returns a negative value if the current rounding mode can't be determined.
 
@@ -74,11 +74,11 @@ To use these functions, you must turn off floating-point optimizations that coul
 |--------------|--------------|------------------|
 |**fegetround**, **fesetround**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
-[rint, rintf, rintl](rint-rintf-rintl.md)<br/>
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)\
+[rint, rintf, rintl](rint-rintf-rintl.md)\
+[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)

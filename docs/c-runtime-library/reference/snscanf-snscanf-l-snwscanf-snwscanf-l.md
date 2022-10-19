@@ -62,13 +62,13 @@ Optional variables that will be used to store the values extracted from the inpu
 *locale*<br/>
 The locale to use.
 
-## Return Value
+## Return value
 
 Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
-If *input* or *format* is a **NULL** pointer, or if *length* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
+If *input* or *format* is a **NULL** pointer, or if *length* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
 
-For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -76,7 +76,7 @@ This function is like **sscanf** except that it provides the ability to specify 
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -90,7 +90,7 @@ The versions of these functions with the **_l** suffix are identical except that
 |**_snscanf**, **_snscanf_l**|\<stdio.h>|
 |**_snwscanf**, **_snwscanf_l**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -127,4 +127,4 @@ _snwscanf converted 2 fields: 15 and 12.000000
 
 ## See also
 
-[scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)<br/>
+[scanf Width Specification](../scanf-width-specification.md)

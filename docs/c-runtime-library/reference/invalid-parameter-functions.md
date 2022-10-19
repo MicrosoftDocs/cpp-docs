@@ -55,7 +55,7 @@ The line number in the source code where the handler was called.
 *`reserved`*\
 Unused.
 
-## Return Value
+## Return value
 
 These functions don't return a value. The **`_invalid_parameter_noinfo_noreturn`** and **`_invoke_watson`** functions don't return to the caller, and in some cases, **`_invalid_parameter`** and **`_invalid_parameter_noinfo`** may not return to the caller.
 
@@ -77,11 +77,11 @@ By default, this function's global state is scoped to the application. To change
 |--------------|------------------|
 |**`_invalid_parameter`**, **`_invalid_parameter_noinfo`**, **`_invalid_parameter_noinfo_noreturn`**, **`_invoke_watson`**|`<corecrt.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)\
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
 [`_get_invalid_parameter_handler`, `_get_thread_local_invalid_parameter_handler`](get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)\
 [`_set_invalid_parameter_handler`, `_set_thread_local_invalid_parameter_handler`](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)\
-[Parameter Validation](../../c-runtime-library/parameter-validation.md)
+[Parameter validation](../parameter-validation.md)

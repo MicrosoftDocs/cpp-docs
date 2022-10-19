@@ -27,13 +27,13 @@ _CRT_REPORT_HOOK _CrtSetReportHook(
 *reportHook*<br/>
 New client-defined reporting function to hook into the C run-time debug reporting process.
 
-## Return Value
+## Return value
 
 Returns the previous client-defined reporting function.
 
 ## Remarks
 
-**_CrtSetReportHook** allows an application to use its own reporting function into the C run-time debug library reporting process. As a result, whenever [_CrtDbgReport](crtdbgreport-crtdbgreportw.md) is called to generate a debug report, the application's reporting function is called first. This functionality enables an application to perform operations such as filtering debug reports so it can focus on specific allocation types or send a report to destinations not available by using **_CrtDbgReport**. When [_DEBUG](../../c-runtime-library/debug.md) isn't defined, calls to **_CrtSetReportHook** are removed during preprocessing.
+**_CrtSetReportHook** allows an application to use its own reporting function into the C run-time debug library reporting process. As a result, whenever [_CrtDbgReport](crtdbgreport-crtdbgreportw.md) is called to generate a debug report, the application's reporting function is called first. This functionality enables an application to perform operations such as filtering debug reports so it can focus on specific allocation types or send a report to destinations not available by using **_CrtDbgReport**. When [_DEBUG](../debug.md) isn't defined, calls to **_CrtSetReportHook** are removed during preprocessing.
 
 For a more robust version of **_CrtSetReportHook**, see [_CrtSetReportHook2](crtsetreporthook2-crtsetreporthookw2.md).
 
@@ -47,7 +47,7 @@ where *reportType* is the debug report type (**_CRT_WARN**, **_CRT_ERROR**, or *
 
 If the client-defined reporting function completely handles the debug message such that no further reporting is required, then the function should return **TRUE**. When the function returns **FALSE**, **_CrtDbgReport** is called to generate the debug report using the current settings for the report type, mode, and file. In addition, by specifying the **_CrtDbgReport** return value in **returnValue**, the application can also control whether a debug break occurs. For a complete description of how the debug report is configured and generated, see **_CrtSetReportMode**, [_CrtSetReportFile](crtsetreportfile.md), and **_CrtDbgReport**.
 
-For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).
+For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug hook function writing](/visualstudio/debugger/debug-hook-function-writing).
 
 > [!NOTE]
 > If your application is compiled with **/clr** and the reporting function is called after the application has exited main, the CLR will throw an exception if the reporting function calls any CRT functions.
@@ -58,13 +58,13 @@ For more information about using other hook-capable run-time functions and writi
 |-------------|---------------------|
 |**_CrtSetReportHook**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtGetReportHook](crtgetreporthook.md)<br/>
+[Debug routines](../debug-routines.md)\
+[_CrtGetReportHook](crtgetreporthook.md)

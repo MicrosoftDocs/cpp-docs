@@ -36,7 +36,7 @@ For a complete list of CRT functions that aren't available in a UWP app and sugg
 
 ## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)<br/>
-[Windows Runtime Unsupported CRT Functions](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Compatibility](./compatibility.md)\
+[Windows Runtime unsupported CRT functions](./windows-runtime-unsupported-crt-functions.md)\
+[Universal C runtime routines by category](./run-time-routines-by-category.md)\
 [Create a Universal Windows Platform console app](/windows/uwp/launch-resume/console-uwp)

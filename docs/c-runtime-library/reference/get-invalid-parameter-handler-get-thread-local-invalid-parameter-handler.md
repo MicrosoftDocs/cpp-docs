@@ -21,7 +21,7 @@ _invalid_parameter_handler _get_invalid_parameter_handler(void);
 _invalid_parameter_handler _get_thread_local_invalid_parameter_handler(void);
 ```
 
-## Return Value
+## Return value
 
 A pointer to the currently set invalid parameter handler function, or a null pointer if none has been set.
 
@@ -51,9 +51,9 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_get_invalid_parameter_handler**, **_get_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h>|
 
-The **_get_invalid_parameter_handler** and **_get_thread_local_invalid_parameter_handler** functions are Microsoft-specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_get_invalid_parameter_handler** and **_get_thread_local_invalid_parameter_handler** functions are Microsoft-specific. For compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)<br/>
-[Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>
+[_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)\
+[Security-enhanced versions of CRT functions](../security-enhanced-versions-of-crt-functions.md)

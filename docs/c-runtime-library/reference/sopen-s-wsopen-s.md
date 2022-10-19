@@ -12,7 +12,7 @@ ms.assetid: 059a0084-d08c-4973-9174-55e391b72aa2
 ---
 # `_sopen_s`, `_wsopen_s`
 
-Opens a file for sharing. These versions of [`_sopen` and `_wsopen`](sopen-wsopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Opens a file for sharing. These versions of [`_sopen` and `_wsopen`](sopen-wsopen.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -62,9 +62,9 @@ A nonzero return value indicates an error; in that case **`errno`** is set to on
 | **`EMFILE`** | No more file descriptors available. |
 | **`ENOENT`** | File or path not found. |
 
-If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and **`EINVAL`** is returned.
+If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and **`EINVAL`** is returned.
 
-For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 If there's an error, -1 is returned through *`pfh`* (unless *`pfh`* is a null pointer).
 
@@ -95,7 +95,7 @@ The integer expression *`oflag`* is formed by combining one or more manifest con
 | **`_O_RDONLY`** | Opens a file for reading only. Can't be specified with **`_O_RDWR`** or **`_O_WRONLY`**. |
 | **`_O_RDWR`** | Opens a file for both reading and writing. Can't be specified with **`_O_RDONLY`** or **`_O_WRONLY`**. |
 | **`_O_SEQUENTIAL`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
-| **`_O_TEXT`** | Opens a file in text (translated) mode. (For more information, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
+| **`_O_TEXT`** | Opens a file in text (translated) mode. (For more information, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
 | **`_O_TRUNC`** | Opens a file and truncates it to zero length; the file must have write permission. Can't be specified with **`_O_RDONLY`**. **`_O_TRUNC`** used with **`_O_CREAT`** opens an existing file or creates a file. **Note:** The **`_O_TRUNC`** flag destroys the contents of the specified file. |
 | **`_O_WRONLY`** | Opens a file for writing only. Can't be specified with **`_O_RDONLY`** or **`_O_RDWR`**. |
 | **`_O_U16TEXT`** | Opens a file in Unicode UTF-16 mode. |
@@ -136,7 +136,7 @@ If write permission isn't given, the file is read-only. In the Windows operating
 | **`_sopen_s`** | `<io.h>` | `<fcntl.h>`, `<sys\types.h>`, `<sys\stat.h>`, `<share.h>` |
 | **`_wsopen_s`** | `<io.h>` or `<wchar.h>` | `<fcntl.h>`, `<sys/types.h>`, `<sys/stat.h>`, `<share.h>` |
 
-**`_sopen_s`** and **`_wsopen_s`** are Microsoft extensions. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+**`_sopen_s`** and **`_wsopen_s`** are Microsoft extensions. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -144,7 +144,7 @@ See the example for [`_locking`](locking.md).
 
 ## See also
 
-[Low-level I/O](../../c-runtime-library/low-level-i-o.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_close`](close.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`fopen`, `_wfopen`](fopen-wfopen.md)\

@@ -53,13 +53,13 @@ if (( _access( "datafile", 2 )) == -1 )
 
 If *strErrMsg* is passed as **NULL**, **_strerror** returns a pointer to a string. It contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). When *strErrMsg* isn't **NULL**, the string contains, in order: your *strErrMsg* string, a colon, a space, the system error message, and a newline character. Your string message can be, at most, 94 characters long, in either narrow (**_strerror**) or wide (**__wcserror**) characters.
 
-The actual error number for **_strerror** is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call **_strerror** immediately after a library routine returns an error. Otherwise, later calls to library routines may overwrite the **errno** value.
+The actual error number for **_strerror** is stored in the variable [errno](../errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call **_strerror** immediately after a library routine returns an error. Otherwise, later calls to library routines may overwrite the **errno** value.
 
 **_wcserror** and **__wcserror** are wide-character versions of **strerror** and **_strerror**, respectively.
 
 **_strerror**, **_wcserror**, and **__wcserror** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **strerror** instead.
 
-To get error strings, we recommend **strerror** or **_wcserror** instead of the deprecated macros [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) and the deprecated internal functions **__sys_errlist** and **__sys_nerr**.
+To get error strings, we recommend **strerror** or **_wcserror** instead of the deprecated macros [_sys_errlist](../errno-doserrno-sys-errlist-and-sys-nerr.md) and [_sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md) and the deprecated internal functions **__sys_errlist** and **__sys_nerr**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -77,7 +77,7 @@ By default, this function's global state is scoped to the application. To change
 |**_strerror**|\<string.h>|
 |**_wcserror**, **__wcserror**|\<string.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -85,7 +85,7 @@ See the example for [perror](perror-wperror.md).
 
 ## See also
 
-[String manipulation](../../c-runtime-library/string-manipulation-crt.md)\
+[String manipulation](../string-manipulation-crt.md)\
 [clearerr](clearerr.md)\
 [ferror](ferror.md)\
 [perror, _wperror](perror-wperror.md)

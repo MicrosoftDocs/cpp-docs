@@ -75,7 +75,7 @@ Pointer to a string containing the path of existing file or directory.
 *`buffer`*<br/>
 Pointer to structure that stores results.
 
-## Return Value
+## Return value
 
 Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case **`errno`** is set to **`ENOENT`**, indicating that the filename or path couldn't be found. A return value of **`EINVAL`** indicates an invalid parameter; **`errno`** is also set to **`EINVAL`** in this case.
 
@@ -96,11 +96,11 @@ Variations of these functions support 32-bit or 64-bit time types, and 32-bit or
 > [!NOTE]
 > **`_wstat`** does not work with Windows Vista symbolic links. In these cases, **`_wstat`** will always report a file size of 0. **`_stat`** does work correctly with symbolic links.
 
-This function validates its parameters. If either *`path`* or *`buffer`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If either *`path`* or *`buffer`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Time Type and File Length Type Variations of `_stat`
+### Time type and file length type variations of `_stat`
 
 |Functions|_USE_32BIT_TIME_T defined?|Time type|File length type|
 |---------------|------------------------------------|---------------|----------------------|
@@ -113,7 +113,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_stat32i64`**, **`_wstat32i64`**|Not affected by the macro definition|32-bit|64-bit|
 |**`_stat64i32`**, **`_wstat64i32`**|Not affected by the macro definition|64-bit|32-bit|
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -139,7 +139,7 @@ The **`_stat`** structure, defined in **`SYS\STAT.H`**, includes the following f
 | **`st_size`** | Size of the file in bytes; a 64-bit integer for variations with the **`i64`** suffix. |
 | **`st_uid`** | Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file. |
 
-If *`path`* refers to a device, the **`st_size`**, various time fields, **`st_dev`**, and **`st_rdev`** fields in the **`_stat`** structure are meaningless. Because **`STAT.H`** uses the [`_dev_t`](../../c-runtime-library/standard-types.md) type that is defined in **`TYPES.H`**, you must include **`TYPES.H`** before **`STAT.H`** in your code.
+If *`path`* refers to a device, the **`st_size`**, various time fields, **`st_dev`**, and **`st_rdev`** fields in the **`_stat`** structure are meaningless. Because **`STAT.H`** uses the [`_dev_t`](../standard-types.md) type that is defined in **`TYPES.H`**, you must include **`TYPES.H`** before **`STAT.H`** in your code.
 
 ## Requirements
 
@@ -148,7 +148,7 @@ If *`path`* refers to a device, the **`st_size`**, various time fields, **`st_de
 |**`_stat`**, **`_stat32`**, **`_stat64`**, **`_stati64`**, **`_stat32i64`**, **`_stat64i32`**|`<sys/types.h>` followed by `<sys/stat.h>`|`<errno.h>`|
 |**`_wstat`**, **`_wstat32`**, **`_wstat64`**, **`_wstati64`**, **`_wstat32i64`**, **`_wstat64i32`**|`<sys/types.h>` followed by `<sys/stat.h>` or `<wchar.h>`|`<errno.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -215,8 +215,8 @@ Time modified : Thu Feb 07 14:39:36 2002
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[`_access`, `_waccess`](access-waccess.md)<br/>
-[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[`_getmbcp`](getmbcp.md)<br/>
-[`_setmbcp`](setmbcp.md)<br/>
+[File handling](../file-handling.md)\
+[`_access`, `_waccess`](access-waccess.md)\
+[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
+[`_getmbcp`](getmbcp.md)\
+[`_setmbcp`](setmbcp.md)

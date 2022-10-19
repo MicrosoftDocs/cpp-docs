@@ -40,11 +40,11 @@ Type of access permitted.
 *`shflag`*<br/>
 Type of sharing allowed.
 
-## Return Value
+## Return value
 
-Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
+Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
 
-For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -74,7 +74,7 @@ When a file is opened with the **"`a`"** or **"`a+`"** access type, all write op
 |**`T`**|Specifies a file as temporary. If possible, it is not flushed to disk.|
 |**`D`**|Specifies a file as temporary. It is deleted when the last file pointer is closed.|
 
-If **`t`** or **`b`** is not given in *`mode`*, the translation mode is defined by the default-mode variable **`_fmode`**. If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+If **`t`** or **`b`** is not given in *`mode`*, the translation mode is defined by the default-mode variable **`_fmode`**. If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**. For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
 The argument *`shflag`* is a constant expression consisting of one of the following manifest constants, defined in `Share.h`.
 
@@ -88,7 +88,7 @@ The argument *`shflag`* is a constant expression consisting of one of the follow
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -135,13 +135,13 @@ No one else in the network can write to this file until we are done.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`fclose`, `_fcloseall`](fclose-fcloseall.md)<br/>
-[`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)<br/>
-[`ferror`](ferror.md)<br/>
-[`_fileno`](fileno.md)<br/>
-[`fopen`, `_wfopen`](fopen-wfopen.md)<br/>
-[`freopen`, `_wfreopen`](freopen-wfreopen.md)<br/>
-[`_open`, `_wopen`](open-wopen.md)<br/>
-[`_setmode`](setmode.md)<br/>
-[`_sopen`, `_wsopen`](sopen-wsopen.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
+[`ferror`](ferror.md)\
+[`_fileno`](fileno.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`freopen`, `_wfreopen`](freopen-wfreopen.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_setmode`](setmode.md)\
+[`_sopen`, `_wsopen`](sopen-wsopen.md)

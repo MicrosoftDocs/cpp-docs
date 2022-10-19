@@ -34,7 +34,7 @@ Floating-point value.
 *`intptr`*\
 Pointer to stored integer portion.
 
-## Return Value
+## Return value
 
 This function returns the signed fractional portion of *`x`*. There's no error return.
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`modf`**, **`modff`**, **`modfl`**|C: `<math.h>`<br /><br /> C++: , `<cmath>` or `<math.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -82,6 +82,6 @@ For -14.876543, the fraction is -0.876543 and the integer is -14
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`frexp`](frexp.md)\
 [`ldexp`](ldexp.md)

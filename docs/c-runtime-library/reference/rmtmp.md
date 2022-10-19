@@ -21,7 +21,7 @@ Removes temporary files.
 int _rmtmp( void );
 ```
 
-## Return Value
+## Return value
 
 **_rmtmp** returns the number of temporary files closed and deleted.
 
@@ -37,11 +37,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_rmtmp**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -49,7 +49,7 @@ See the example for [tmpfile](tmpfile.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_flushall](flushall.md)<br/>
-[tmpfile](tmpfile.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[_flushall](flushall.md)\
+[tmpfile](tmpfile.md)\
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)

@@ -39,4 +39,4 @@ When this method executes termination handlers, it starts at the current lexical
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)

@@ -26,7 +26,7 @@ int feraiseexcept(
 *excepts*<br/>
 The floating-point exceptions to raise.
 
-## Return Value
+## Return value
 
 If all specified exceptions are raised successfully, returns 0.
 
@@ -55,12 +55,12 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |*feraiseexcept*|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fesetexceptflag](fesetexceptflag2.md)<br/>
-[feholdexcept](feholdexcept2.md)<br/>
-[fetestexcept](fetestexcept1.md)<br/>
-[feupdateenv](feupdateenv.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[fesetexceptflag](fesetexceptflag2.md)\
+[feholdexcept](feholdexcept2.md)\
+[fetestexcept](fetestexcept1.md)\
+[feupdateenv](feupdateenv.md)

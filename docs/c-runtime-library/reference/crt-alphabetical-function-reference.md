@@ -7,7 +7,7 @@ ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
 ---
 # UCRT alphabetical function reference
 
-The Universal C Runtime (UCRT, often just CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Universal C runtime routines by category](../../c-runtime-library/run-time-routines-by-category.md).
+The Universal C Runtime (UCRT, often just CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Universal C runtime routines by category](../run-time-routines-by-category.md).
 
 ## A
 
@@ -3501,4 +3501,4 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 ## See also
 
-[C Run-Time Library Reference](../../c-runtime-library/c-run-time-library-reference.md)<br/>
+[C runtime library reference](../c-run-time-library-reference.md)

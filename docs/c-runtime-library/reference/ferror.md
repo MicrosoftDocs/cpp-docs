@@ -27,9 +27,9 @@ int ferror(
 *stream*<br/>
 Pointer to **FILE** structure.
 
-## Return Value
+## Return value
 
-If no error has occurred on *stream*, **ferror** returns 0. Otherwise, it returns a nonzero value. If stream is **NULL**, **ferror** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns 0.
+If no error has occurred on *stream*, **ferror** returns 0. Otherwise, it returns a nonzero value. If stream is **NULL**, **ferror** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns 0.
 
 For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -45,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**ferror**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -53,10 +53,10 @@ See the example for [feof](feof.md).
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](clearerr.md)<br/>
-[_eof](eof.md)<br/>
-[feof](feof.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[Error handling](../error-handling-crt.md)\
+[Stream I/O](../stream-i-o.md)\
+[clearerr](clearerr.md)\
+[_eof](eof.md)\
+[feof](feof.md)\
+[fopen, _wfopen](fopen-wfopen.md)\
+[perror, _wperror](perror-wperror.md)

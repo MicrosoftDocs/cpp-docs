@@ -58,7 +58,7 @@ Number of characters to compare.
 *`locale`*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 The return value indicates the relation of the substrings of *`string1`* and *`string2`* as follows.
 
@@ -76,13 +76,13 @@ The **`strncmp`** function performs an ordinal comparison of at most the first *
 
 **`wcsncmp`** and **`_mbsncmp`** are wide-character and multibyte-character versions of **`strncmp`**. The arguments of **`wcsncmp`** are wide-character strings; those of **`_mbsncmp`** are multibyte-character strings. **`_mbsncmp`** recognizes multibyte-character sequences according to a multibyte code page and returns **`_NLSCMPERROR`** on an error.
 
-Also, **`_mbsncmp`** and **`_mbsncmp_l`** validate parameters. If *`string1`* or *`string2`* is a null pointer and *`count`* is not equal to 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`_mbsncmp`** and **`_mbsncmp_l`** return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**. **`strncmp`** and **`wcsncmp`** do not validate their parameters. These functions behave identically otherwise.
+Also, **`_mbsncmp`** and **`_mbsncmp_l`** validate parameters. If *`string1`* or *`string2`* is a null pointer and *`count`* is not equal to 0, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbsncmp`** and **`_mbsncmp_l`** return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**. **`strncmp`** and **`wcsncmp`** do not validate their parameters. These functions behave identically otherwise.
 
-The comparison behavior of **`_mbsncmp`** and **`_mbsncmp_l`** is affected by the setting of the **`LC_CTYPE`** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [`setlocale`](setlocale-wsetlocale.md). The **`_mbsncmp`** function uses the current locale for this locale-dependent behavior. The **`_mbsncmp_l`** function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to **`strncmp`**.
+The comparison behavior of **`_mbsncmp`** and **`_mbsncmp_l`** is affected by the setting of the **`LC_CTYPE`** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [`setlocale`](setlocale-wsetlocale.md). The **`_mbsncmp`** function uses the current locale for this locale-dependent behavior. The **`_mbsncmp_l`** function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to **`strncmp`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -99,7 +99,7 @@ By default, this function's global state is scoped to the application. To change
 |**`wcsncmp`**|`<string.h>` or `<wchar.h>`|
 |**`_mbsncmp`**, **`_mbsncmp_l`**|`<mbstring.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -152,14 +152,14 @@ Result:      String 1 is equal to string 2
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[`_mbsnbcmp`, `_mbsnbcmp_l`](mbsnbcmp-mbsnbcmp-l.md)<br/>
-[`_mbsnbicmp`, `_mbsnbicmp_l`](mbsnbicmp-mbsnbicmp-l.md)<br/>
-[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)<br/>
-[`strcoll` Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[`_mbsnbcmp`, `_mbsnbcmp_l`](mbsnbcmp-mbsnbcmp-l.md)\
+[`_mbsnbicmp`, `_mbsnbicmp_l`](mbsnbicmp-mbsnbicmp-l.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcoll` Functions](../strcoll-functions.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

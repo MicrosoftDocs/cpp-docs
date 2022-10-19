@@ -30,7 +30,7 @@ _onexit_t_m _onexit_m(
 *function*<br/>
 Pointer to a function to be called at exit.
 
-## Return Value
+## Return value
 
 **_onexit** returns a pointer to the function if successful or **NULL** if there is no space to store the function pointer.
 
@@ -48,7 +48,7 @@ In the case when **_onexit** is called from within a DLL, routines registered wi
 |-------------|---------------------|
 |**_onexit**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -104,7 +104,7 @@ This is executed next.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[atexit](atexit.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[__dllonexit](../../c-runtime-library/dllonexit.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[atexit](atexit.md)\
+[exit, _Exit, _exit](exit-exit-exit.md)\
+[__dllonexit](../dllonexit.md)

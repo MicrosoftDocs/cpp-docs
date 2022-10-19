@@ -6,7 +6,7 @@ f1_keywords: ["_HEAPBADPTR", "_HEAPEMPTY", "_HEAPBADBEGIN", "_HEAPOK", "_HEAPBAD
 helpviewer_keywords: ["_HEAPOK constants", "_HEAPEND constants", "HEAPBADBEGIN constants", "_HEAPBADNODE constants", "HEAPBADNODE constants", "HEAPBADPTR constants", "_HEAPEMPTY constants", "HEAPEND constants", "HEAPOK constants", "HEAPEMPTY constants", "_HEAPBADBEGIN constants", "_HEAPBADPTR constants", "heap constants"]
 ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
 ---
-# Heap Constants
+# Heap constants
 
 ## Syntax
 
@@ -29,7 +29,7 @@ These constants give the return value indicating status of the heap.
 
 ## See also
 
-[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
-[_heapset](../c-runtime-library/heapset.md)<br/>
-[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[_heapchk](./reference/heapchk.md)\
+[_heapset](./heapset.md)\
+[_heapwalk](./reference/heapwalk.md)\
+[Global constants](./global-constants.md)

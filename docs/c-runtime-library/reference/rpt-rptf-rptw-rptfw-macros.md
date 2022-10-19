@@ -55,7 +55,7 @@ Substitution arguments used by *format*.
 
 All these macros take the *reportType* and *format* parameters. In addition, they might also take up to four additional arguments, signified by the number appended to the macro name. For example, **_RPT0** and **_RPTF0** take no additional arguments, **_RPT1** and **_RPTF1** take *arg1*, **_RPT2** and **_RPTF2** take *arg1* and **arg2**, and so on.
 
-The **_RPT** and **_RPTF** macros are similar to the [printf](printf-printf-l-wprintf-wprintf-l.md) function, because they can be used to track an application's progress during the debugging process. However, these macros are more flexible than **printf** because they do not need to be enclosed in **#ifdef** statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [_DEBUG](../../c-runtime-library/debug.md) macro; the **_RPT** and **_RPTF** macros are only available when the **_DEBUG** flag is defined. When **_DEBUG** is not defined, calls to these macros are removed during preprocessing.
+The **_RPT** and **_RPTF** macros are similar to the [printf](printf-printf-l-wprintf-wprintf-l.md) function, because they can be used to track an application's progress during the debugging process. However, these macros are more flexible than **printf** because they do not need to be enclosed in **#ifdef** statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [_DEBUG](../debug.md) macro; the **_RPT** and **_RPTF** macros are only available when the **_DEBUG** flag is defined. When **_DEBUG** is not defined, calls to these macros are removed during preprocessing.
 
 The **_RPTW** and **_RPTFW** macros are wide-character versions of these macros. They are like **wprintf** and take wide-character strings as arguments.
 
@@ -71,7 +71,7 @@ If an **_RPT** macro is called and neither **_CrtSetReportMode** nor **_CrtSetRe
 |**_CRT_ERROR**|A pop-up window. Same as if `_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_WNDW);` had been specified.|
 |**_CRT_ASSERT**|Same as **_CRT_ERROR**.|
 
-When the destination is a debug message window and the user chooses the **Retry** button, **_CrtDbgReport** or **_CrtDbgReportW** returns 1, causing these macros to start the debugger, provided that just-in-time (JIT) debugging is enabled. For more information about using these macros as a debugging error handling mechanism, see [Using Macros for Verification and Reporting](/visualstudio/debugger/macros-for-reporting).
+When the destination is a debug message window and the user chooses the **Retry** button, **_CrtDbgReport** or **_CrtDbgReportW** returns 1, causing these macros to start the debugger, provided that just-in-time (JIT) debugging is enabled. For more information about using these macros as a debugging error handling mechanism, see [Using macros for verification and reporting](/visualstudio/debugger/macros-for-reporting).
 
 Two other macros exist that generate a debug report. The [_ASSERT](assert-asserte-assert-expr-macros.md) macro generates a report, but only when its expression argument evaluates to FALSE. [_ASSERTE](assert-asserte-assert-expr-macros.md) is exactly like **_ASSERT**, but includes the failed expression in the generated report.
 
@@ -84,11 +84,11 @@ Two other macros exist that generate a debug report. The [_ASSERT](assert-assert
 |**_RPTW** macros|\<crtdbg.h>|
 |**_RPTFW** macros|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 Although these are macros and are obtained by including Crtdbg.h, the application must link with one of the debug libraries because these macros call other run-time functions.
 
@@ -98,4 +98,4 @@ See the example in the [_ASSERT](assert-asserte-assert-expr-macros.md) topic.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+[Debug routines](../debug-routines.md)

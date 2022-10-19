@@ -12,7 +12,7 @@ ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
 ---
 # asctime_s, _wasctime_s
 
-Convert a `tm` time structure to a character string. These functions are versions of [asctime, _wasctime](asctime-wasctime.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Convert a `tm` time structure to a character string. These functions are versions of [asctime, _wasctime](asctime-wasctime.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -50,11 +50,11 @@ The size of the buffer used to store the result.
 *`tmSource`*<br/>
 Time/date structure. This function assumes a pointer to a valid `struct tm` object.
 
-## Return Value
+## Return value
 
-Zero if successful. If there's a failure, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the return value is an error code. Error codes are defined in ERRNO.H. For more information, see [errno Constants](../../c-runtime-library/errno-constants.md). The actual error codes returned for each error condition are shown in the following table.
+Zero if successful. If there's a failure, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the return value is an error code. Error codes are defined in ERRNO.H. For more information, see [`errno` constants](../errno-constants.md). The actual error codes returned for each error condition are shown in the following table.
 
-### Error Conditions
+### Error conditions
 
 |*buffer*|*numberOfElements*|*tmSource*|Return|Value in *buffer*|
 |--------------|------------------------|----------|------------|-----------------------|
@@ -93,13 +93,13 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mapping
+### Generic-text routine mapping
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tasctime_s**|**asctime_s**|**asctime_s**|**_wasctime_s**|
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 ## Requirements
 
@@ -152,10 +152,10 @@ Current date and time: Wed May 14 15:30:17 2003
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
-[_tzset](tzset.md)<br/>
+[Time management](../time-management.md)\
+[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)\
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
+[time, _time32, _time64](time-time32-time64.md)\
+[_tzset](tzset.md)

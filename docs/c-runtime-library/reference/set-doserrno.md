@@ -12,7 +12,7 @@ ms.assetid: 8686c159-3797-4705-a53e-7457869ca6f3
 ---
 # _set_doserrno
 
-Sets the value of the [_doserrno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.
+Sets the value of the [_doserrno](../errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ errno_t _set_doserrno( int error_value );
 *error_value*<br/>
 The new value of **_doserrno**.
 
-## Return Value
+## Return value
 
 Returns zero if successful.
 
@@ -41,9 +41,9 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|---------------------|
 |**_set_doserrno**|\<stdlib.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_get_doserrno](get-doserrno.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[_get_doserrno](get-doserrno.md)\
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md)

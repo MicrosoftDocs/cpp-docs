@@ -39,9 +39,9 @@ Maximum number of items to be written.
 *`stream`*<br/>
 Pointer to **`FILE`** structure.
 
-## Return Value
+## Return value
 
-**`fwrite`** returns the number of full items actually written, which may be less than *`count`* if an error occurs. Also, if an error occurs, the file-position indicator cannot be determined. If either *`stream`* or *`buffer`* is a null pointer, or if an odd number of bytes to be written is specified in Unicode mode, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns 0.
+**`fwrite`** returns the number of full items actually written, which may be less than *`count`* if an error occurs. Also, if an error occurs, the file-position indicator cannot be determined. If either *`stream`* or *`buffer`* is a null pointer, or if an odd number of bytes to be written is specified in Unicode mode, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns 0.
 
 ## Remarks
 
@@ -59,7 +59,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`fwrite`**|`<stdio.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -67,8 +67,8 @@ See the example for [`fread`](fread.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`_setmode`](setmode.md)<br/>
-[`fread`](fread.md)<br/>
-[`_fwrite_nolock`](fwrite-nolock.md)<br/>
-[`_write`](write.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`_setmode`](setmode.md)\
+[`fread`](fread.md)\
+[`_fwrite_nolock`](fwrite-nolock.md)\
+[`_write`](write.md)

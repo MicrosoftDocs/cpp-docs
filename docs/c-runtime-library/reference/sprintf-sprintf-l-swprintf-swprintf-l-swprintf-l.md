@@ -78,11 +78,11 @@ Optional arguments
 *`locale`*<br/>
 The locale to use.
 
-For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
-## Return Value
+## Return value
 
-The number of characters written, or -1 if an error occurred. If *`buffer`* or *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
+The number of characters written, or -1 if an error occurred. If *`buffer`* or *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
 
 **`sprintf`** returns the number of bytes stored in *`buffer`*, not counting the terminating null character. **`swprintf`** returns the number of wide characters stored in *`buffer`*, not counting the terminating null wide character.
 
@@ -99,9 +99,9 @@ The **`sprintf`** function formats and stores a series of characters and values 
 
 **`swprintf`** conforms to the ISO C Standard, which requires the second parameter, *`count`*, of type **`size_t`**. To force the old nonstandard behavior, define **`_CRT_NON_CONFORMING_SWPRINTFS`**. In a future version, the old behavior may be removed, so code should be changed to use the new conformant behavior.
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -115,7 +115,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 |**`sprintf`**, **`_sprintf_l`**|`<stdio.h>`|
 |**`swprintf`**, **`_swprintf_l`**|`<stdio.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example: Use `sprintf` to format data
 
@@ -180,9 +180,9 @@ wrote -1 characters
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[`vprintf` Functions](../../c-runtime-library/vprintf-functions.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
+[`vprintf` Functions](../vprintf-functions.md)

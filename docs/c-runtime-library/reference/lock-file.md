@@ -37,7 +37,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_lock_file**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -116,7 +116,7 @@ eFciornsdt
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_unlock_file](unlock-file.md)<br/>
+[File handling](../file-handling.md)\
+[_creat, _wcreat](creat-wcreat.md)\
+[_open, _wopen](open-wopen.md)\
+[_unlock_file](unlock-file.md)

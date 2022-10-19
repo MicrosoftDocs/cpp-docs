@@ -25,7 +25,7 @@ int _isatty( int fd );
 *fd*<br/>
 File descriptor that refers to the device to be tested.
 
-## Return Value
+## Return value
 
 **_isatty** returns a nonzero value if the descriptor is associated with a character device. Otherwise, **_isatty** returns 0.
 
@@ -33,7 +33,7 @@ File descriptor that refers to the device to be tested.
 
 The **_isatty** function determines whether *fd* is associated with a character device (a terminal, console, printer, or serial port).
 
-This function validates the *fd* parameter. If *fd* is a bad file pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **errno** to **EBADF**.
+This function validates the *fd* parameter. If *fd* is a bad file pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **errno** to **EBADF**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -43,11 +43,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_isatty**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -69,7 +69,7 @@ int main( void )
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 stdout has not been redirected to a file
@@ -77,4 +77,4 @@ stdout has not been redirected to a file
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
+[File handling](../file-handling.md)

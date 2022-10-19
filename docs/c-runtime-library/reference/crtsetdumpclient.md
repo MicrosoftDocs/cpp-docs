@@ -25,13 +25,13 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 *dumpClient*<br/>
 New client-defined memory dump function to hook.
 
-## Return Value
+## Return value
 
 Returns the previously defined client block dump function.
 
 ## Remarks
 
-The **_CrtSetDumpClient** function allows the application to hook its own function to dump objects stored in **_CLIENT_BLOCK** memory blocks. As a result, every time a debug dump function such as [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) or [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) dumps a **_CLIENT_BLOCK** memory block, the application's dump function is called as well. **_CrtSetDumpClient** provides an application with an easy method for detecting memory leaks and validating or reporting the contents of data stored in **_CLIENT_BLOCK** blocks. When [_DEBUG](../../c-runtime-library/debug.md) isn't defined, calls to **_CrtSetDumpClient** are removed during preprocessing.
+The **_CrtSetDumpClient** function allows the application to hook its own function to dump objects stored in **_CLIENT_BLOCK** memory blocks. As a result, every time a debug dump function such as [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) or [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) dumps a **_CLIENT_BLOCK** memory block, the application's dump function is called as well. **_CrtSetDumpClient** provides an application with an easy method for detecting memory leaks and validating or reporting the contents of data stored in **_CLIENT_BLOCK** blocks. When [_DEBUG](../debug.md) isn't defined, calls to **_CrtSetDumpClient** are removed during preprocessing.
 
 The **_CrtSetDumpClient** function installs the new application-defined dump function specified in *dumpClient* and returns the previously defined dump function. An example of a client block dump function is as follows:
 
@@ -45,7 +45,7 @@ The *userPortion* argument is a pointer to the beginning of the user data portio
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
 ```
 
-For more information about functions that operate on **_CLIENT_BLOCK** type memory blocks, see [Client Block Hook Functions](/visualstudio/debugger/client-block-hook-functions). The [_CrtReportBlockType](crtreportblocktype.md) function can be used to return information about block types and subtypes.
+For more information about functions that operate on **_CLIENT_BLOCK** type memory blocks, see [Client block hook functions](/visualstudio/debugger/client-block-hook-functions). The [_CrtReportBlockType](crtreportblocktype.md) function can be used to return information about block types and subtypes.
 
 ## Requirements
 
@@ -53,14 +53,14 @@ For more information about functions that operate on **_CLIENT_BLOCK** type memo
 |-------------|---------------------|
 |**_CrtSetDumpClient**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtReportBlockType](crtreportblocktype.md)<br/>
-[_CrtGetDumpClient](crtgetdumpclient.md)<br/>
+[Debug routines](../debug-routines.md)\
+[_CrtReportBlockType](crtreportblocktype.md)\
+[_CrtGetDumpClient](crtgetdumpclient.md)

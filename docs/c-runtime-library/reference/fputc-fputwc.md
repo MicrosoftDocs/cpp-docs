@@ -35,9 +35,9 @@ Character to be written.
 *stream*<br/>
 Pointer to **FILE** structure.
 
-## Return Value
+## Return value
 
-Each of these functions returns the character written. For **fputc**, a return value of **EOF** indicates an error. For **fputwc**, a return value of **WEOF** indicates an error. If *stream* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **EOF** and set **errno** to **EINVAL**.
+Each of these functions returns the character written. For **fputc**, a return value of **EOF** indicates an error. For **fputwc**, a return value of **WEOF** indicates an error. If *stream* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return **EOF** and set **errno** to **EINVAL**.
 
 For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -58,7 +58,7 @@ Routine-specific remarks follow.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 |**fputc**|\<stdio.h>|
 |**fputwc**|\<stdio.h> or \<wchar.h>|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—**stdin**, **stdout**, and **stderr**—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—**stdin**, **stdout**, and **stderr**—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -100,6 +100,6 @@ This is a test of fputc!!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fgetc, fgetwc](fgetc-fgetwc.md)\
+[putc, putwc](putc-putwc.md)

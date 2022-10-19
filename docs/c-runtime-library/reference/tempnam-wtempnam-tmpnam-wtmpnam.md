@@ -44,7 +44,7 @@ The path used in the file name if there is no TMP environment variable, or if TM
 *str*<br/>
 Pointer that will hold the generated name and will be identical to the name returned by the function. This is a convenient way to save the generated name.
 
-## Return Value
+## Return value
 
 Each of these functions returns a pointer to the name generated or **NULL** if there is a failure. Failure can occur if you attempt more than **TMP_MAX** (see STDIO.H) calls with **tmpnam** or if you use **_tempnam** and there is an invalid directory name specified in the TMP environment variable and in the *dir* parameter.
 
@@ -71,7 +71,7 @@ The name returned by **_tempnam** will be a concatenation of *prefix* and a sequ
 
 If **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, **_tempnam** and **_wtempnam** are replaced by calls to [_tempnam_dbg and _wtempnam_dbg](tempnam-dbg-wtempnam-dbg.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -86,7 +86,7 @@ If **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, **_tempnam** and **_wtempna
 |**_wtempnam**, **_wtmpnam**|\<stdio.h> or \<wchar.h>|
 |**tmpnam**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -161,9 +161,9 @@ c:\tmp\stq3 is safe to use as a temporary file.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[malloc](malloc.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[tmpfile](tmpfile.md)<br/>
-[tmpfile_s](tmpfile-s.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[_getmbcp](getmbcp.md)\
+[malloc](malloc.md)\
+[_setmbcp](setmbcp.md)\
+[tmpfile](tmpfile.md)\
+[tmpfile_s](tmpfile-s.md)

@@ -35,7 +35,7 @@ int _setjmp3(
 *`optional parameters`*\
 [in] Extra data pushed down by the `setjmp` intrinsic. The first `DWORD` is a function pointer that is used to unwind extra data and return to a nonvolatile register state. The second `DWORD` is the try level to be restored. Any further data is saved in the generic data array in the `jmp_buf`.
 
-## Return Value
+## Return value
 
 Always returns 0.
 
@@ -47,5 +47,5 @@ Don't use this function in a C++ program. It's an intrinsic function that doesn'
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)\
-[`setjmp`](../c-runtime-library/reference/setjmp.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`setjmp`](./reference/setjmp.md)

@@ -20,7 +20,7 @@ Returns the number of simultaneously open files permitted at the stream I/O leve
 int _getmaxstdio( void );
 ```
 
-## Return Value
+## Return value
 
 Returns a number that represents the number of simultaneously open files currently permitted at the **stdio** level.
 
@@ -34,7 +34,7 @@ Use [_setmaxstdio](setmaxstdio.md) to configure the number of simultaneously ope
 |-------------|---------------------|
 |**_getmaxstdio**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -63,4 +63,4 @@ int main()
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream I/O](../stream-i-o.md)

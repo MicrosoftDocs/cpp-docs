@@ -30,7 +30,7 @@ int _set_error_mode(
 *mode_val*<br/>
 Destination of error messages.
 
-## Return Value
+## Return value
 
 Returns the old setting or -1 if an error occurs.
 
@@ -47,7 +47,7 @@ The *mode_val* parameter can be set to one of the following values.
 |**_OUT_TO_MSGBOX**|Error sink is a message box.|
 |**_REPORT_ERRMODE**|Report the current **__error_mode** value.|
 
-If a value other than those listed is passed in, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_set_error_mode** sets **errno** to **EINVAL** and returns -1.
+If a value other than those listed is passed in, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **_set_error_mode** sets **errno** to **EINVAL** and returns -1.
 
 When it's used with an [assert](assert-macro-assert-wassert.md), **_set_error_mode** displays the failed statement in the dialog box and gives you the option of choosing the **Ignore** button so that you can continue to run the program.
 
@@ -81,4 +81,4 @@ Please contact the application's support team for more information.
 
 ## See also
 
-[assert Macro, _assert, _wassert](assert-macro-assert-wassert.md)<br/>
+[assert Macro, _assert, _wassert](assert-macro-assert-wassert.md)

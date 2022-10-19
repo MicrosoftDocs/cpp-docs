@@ -24,7 +24,7 @@ Checks the console for keyboard input.
 int _kbhit( void );
 ```
 
-## Return Value
+## Return value
 
 **`_kbhit`** returns a nonzero value if a key has been pressed. Otherwise, it returns 0.
 
@@ -40,11 +40,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`_kbhit`**|`<conio.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -71,7 +71,7 @@ int main( void )
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!!
@@ -80,4 +80,4 @@ Key struck was 'q'
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Console and port I/O](../console-and-port-i-o.md)

@@ -39,7 +39,7 @@ int _except_handler3(
 *dispatcher*<br/>
 [in] Reserved.
 
-## Return Value
+## Return value
 
 If an exception should be dismissed, returns `DISPOSITION_DISMISS`. If the exception should be passed up a level to the encapsulating exception handlers, returns `DISPOSITION_CONTINUE_SEARCH`.
 
@@ -49,4 +49,4 @@ If this method finds an appropriate exception handler, it passes the exception t
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)

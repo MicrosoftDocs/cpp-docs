@@ -14,7 +14,7 @@ By default, the linker includes the CRT library, which provides its own startup 
 
 It's possible, though not recommended, to take advantage of Microsoft-specific linker behavior to insert your own global initializers in a specific order. This code isn't portable, and comes with some important caveats.
 
-## Initializing a Global Object
+## Initializing a global object
 
 Consider the following code:
 
@@ -112,4 +112,4 @@ The names `.CRT$XCT` and `.CRT$XCV` aren't used by either the compiler or the CR
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md)

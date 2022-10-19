@@ -30,7 +30,7 @@ This address is filled with the status word for the x87 floating-point unit.
 *pSSE2*<br/>
 This address is filled with the status word for the SSE2 floating-point unit.
 
-## Return Value
+## Return value
 
 For **_status87** and **_statusfp**, the bits in the value that's returned indicate the floating-point status. See the FLOAT.H include file for a definition of the bits that are returned by **_statusfp**. Many math library functions modify the floating-point status word, with unpredictable results. Optimization can reorder, combine, and eliminate floating-point operations around calls to **_status87**, **_statusfp**, and related functions. Use the [/Od (Disable (Debug))](../../build/reference/od-disable-debug.md) compiler option or the [fenv_access](../../preprocessor/fenv-access.md) pragma directive to prevent optimizations that reorder floating-point operations. Return values from **_clearfp** and **_statusfp**, and also the return parameters of **_statusfp2**, are more reliable if fewer floating-point operations are performed between known states of the floating-point status word.
 
@@ -50,7 +50,7 @@ These functions are not useful for [/clr (Common Language Runtime Compilation)](
 |-------------|---------------------|
 |**_status87**, **_statusfp**, **_statusfp2**|\<float.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -100,6 +100,6 @@ Status = 0x00080003 - inexact, underflow, denormal
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_clear87, _clearfp](clear87-clearfp.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[_clear87, _clearfp](clear87-clearfp.md)\
+[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)

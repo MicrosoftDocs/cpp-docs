@@ -6,7 +6,7 @@ f1_keywords: ["_PLOSS", "_UNDERFLOW", "_TLOSS", "_SING", "_DOMAIN", "_OVERFLOW"]
 helpviewer_keywords: ["_TLOSS constant", "_SING constant", "PLOSS constant", "UNDERFLOW constant", "_UNDERFLOW constant", "_OVERFLOW constant", "DOMAIN constant", "OVERFLOW constant", "TLOSS constant", "SING constant", "_DOMAIN constant", "_PLOSS constant", "math error constants"]
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
 ---
-# Math Error Constants
+# Math error constants
 
 ## Syntax
 
@@ -31,5 +31,5 @@ These errors, described as follows, correspond to the exception types defined in
 
 ## See also
 
-[_matherr](../c-runtime-library/reference/matherr.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[_matherr](./reference/matherr.md)\
+[Global constants](./global-constants.md)

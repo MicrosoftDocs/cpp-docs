@@ -6,7 +6,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["stream I/O routines", "I/O [CRT], unicode stream", "Unicode, stream I/O routines", "Unicode stream I/O"]
 ms.assetid: 68be0c3e-a9e6-4fd5-b34a-1b5207f0e7d6
 ---
-# Unicode Stream I/O in Text and Binary Modes
+# Unicode stream I/O in text and binary modes
 
 When a Unicode stream I/O routine (such as **fwprintf**, **fwscanf**, **fgetwc**, **fputwc**, **fgetws**, or **fputws**) operates on a file that is open in text mode (the default), two kinds of character conversions take place:
 
@@ -18,5 +18,5 @@ However, when a Unicode stream-I/O function operates in binary mode, the file is
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Input and Output](../c-runtime-library/input-and-output.md)<br/>
+[Universal C runtime routines by category](./run-time-routines-by-category.md)\
+[Input and output](./input-and-output.md)

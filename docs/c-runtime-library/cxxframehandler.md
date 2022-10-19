@@ -39,7 +39,7 @@ Context. (Not used on Intel processors.)
 *pDC*<br/>
 Additional information about the function entry and stack frame.
 
-## Return Value
+## Return value
 
 One of the *filter expression* values used by the [try-except Statement](../cpp/try-except-statement.md).
 

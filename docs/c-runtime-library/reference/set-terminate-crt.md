@@ -25,7 +25,7 @@ terminate_function set_terminate( terminate_function termFunction );
 *termFunction*<br/>
 Pointer to a terminate function that you write.
 
-## Return Value
+## Return value
 
 Returns a pointer to the previous function registered by **set_terminate** so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be **NULL**.
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**set_terminate**|\<eh.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -62,9 +62,9 @@ See the example for [terminate](terminate-crt.md).
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
-[_get_terminate](get-terminate.md)<br/>
-[set_unexpected](set-unexpected-crt.md)<br/>
-[terminate](terminate-crt.md)<br/>
-[unexpected](unexpected-crt.md)<br/>
+[Exception handling routines](../exception-handling-routines.md)\
+[abort](abort.md)\
+[_get_terminate](get-terminate.md)\
+[set_unexpected](set-unexpected-crt.md)\
+[terminate](terminate-crt.md)\
+[unexpected](unexpected-crt.md)

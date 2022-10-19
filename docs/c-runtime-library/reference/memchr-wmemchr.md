@@ -60,7 +60,7 @@ Character to look for.
 *count*<br/>
 Number of characters to check.
 
-## Return Value
+## Return value
 
 If successful, returns a pointer to the first location of *c* in *buffer*. Otherwise it returns NULL.
 
@@ -77,11 +77,11 @@ In C, these functions take a **`const`** pointer for the first argument. In C++,
 |`memchr`|\<memory.h> or \<string.h>|
 |`wmemchr`|\<wchar.h>|
 
-For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information about compatibility, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -128,9 +128,9 @@ Result:      r found at position 12
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
-[strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
+[Buffer manipulation](../buffer-manipulation.md)\
+[_memccpy](memccpy.md)\
+[memcmp, wmemcmp](memcmp-wmemcmp.md)\
+[memcpy, wmemcpy](memcpy-wmemcpy.md)\
+[memset, wmemset](memset-wmemset.md)\
+[strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)

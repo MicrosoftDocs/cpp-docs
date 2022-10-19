@@ -38,7 +38,7 @@ wchar_t *_wmktemp(
 *nameTemplate*<br/>
 File name pattern.
 
-## Return Value
+## Return value
 
 Each of these functions returns a pointer to the modified nameTemplate. The function returns **NULL** if *nameTemplate* is badly formed or no more unique names can be created from the given nameTemplate.
 
@@ -48,7 +48,7 @@ The **_mktemp** function creates a unique file name by modifying the *nameTempla
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -76,7 +76,7 @@ If FNA12345 does not exist, the next name returned is again:
 
 On failure, **errno** is set. If *nameTemplate* has an invalid format (for example, fewer than 6 X's), **errno** is set to **EINVAL**. If **_mktemp** is unable to create a unique name because all 26 possible file names already exist, **_mktemp** sets nameTemplate to an empty string and returns **EEXIST**.
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 ## Requirements
 
@@ -85,7 +85,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 |**_mktemp**|\<io.h>|
 |**_wmktemp**|\<io.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -175,11 +175,11 @@ Out of unique filenames.
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[_getpid](getpid.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[tmpfile](tmpfile.md)<br/>
+[File handling](../file-handling.md)\
+[fopen, _wfopen](fopen-wfopen.md)\
+[_getmbcp](getmbcp.md)\
+[_getpid](getpid.md)\
+[_open, _wopen](open-wopen.md)\
+[_setmbcp](setmbcp.md)\
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+[tmpfile](tmpfile.md)

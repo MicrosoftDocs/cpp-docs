@@ -26,4 +26,4 @@ FILE _iob[_IOB_ENTRIES];
 
 ## See also
 
-[Global Variables](../c-runtime-library/global-variables.md)
+[Global variables](./global-variables.md)

@@ -39,7 +39,7 @@ Maximum number of items to be written.
 *stream*<br/>
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
 Same as [fwrite](fwrite.md).
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_fwrite_nolock**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -63,6 +63,6 @@ See the example for [fread](fread.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fread](fread.md)<br/>
-[_write](write.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fread](fread.md)\
+[_write](write.md)

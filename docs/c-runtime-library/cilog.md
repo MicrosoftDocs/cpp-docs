@@ -34,5 +34,5 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[`log`, `logf`, `log10`, `log10f`](../c-runtime-library/reference/log-logf-log10-log10f.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`log`, `logf`, `log10`, `log10f`](./reference/log-logf-log10-log10f.md)

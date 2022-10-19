@@ -20,6 +20,6 @@ The maximum size of a user request for memory that can be granted.
 
 ## See also
 
-[malloc](../c-runtime-library/reference/malloc.md)<br/>
-[calloc](../c-runtime-library/reference/calloc.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[malloc](./reference/malloc.md)\
+[calloc](./reference/calloc.md)\
+[Global constants](./global-constants.md)

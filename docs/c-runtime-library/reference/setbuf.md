@@ -45,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**setbuf**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -88,8 +88,8 @@ stream2 buffering disabled
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[fflush](fflush.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[setvbuf](setvbuf.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fclose, _fcloseall](fclose-fcloseall.md)\
+[fflush](fflush.md)\
+[fopen, _wfopen](fopen-wfopen.md)\
+[setvbuf](setvbuf.md)

@@ -52,7 +52,7 @@ Number of bytes to check.
 *locale*\
 Locale to use.
 
-## Return Value
+## Return value
 
 **_mbclen** and **_mbclen_l** return 1 or 2, according to the length of the multibyte character *c*. The functions always return 1 for UTF-8, whether *c* is multibyte or not. There's no error return for **_mbclen**.
 
@@ -64,13 +64,13 @@ The **_mbclen** function returns the length, in bytes, of the multibyte characte
 
 **mblen** returns the length in bytes of *mbstr* if it's a valid multibyte character. It also determines multibyte-character validity associated with the code page. **mblen** examines *count* or fewer bytes contained in *mbstr*, but not more than **MB_CUR_MAX** bytes.
 
-The output value is affected by the **LC_CTYPE** category setting of the locale. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [setlocale](setlocale-wsetlocale.md) and [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the **LC_CTYPE** category setting of the locale. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [setlocale](setlocale-wsetlocale.md) and [Locale](../locale.md).
 
 **_mbclen**, **_mblen_l**, and **_mbclen_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mblen** or **mbrlen** instead.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -84,7 +84,7 @@ By default, this function's global state is scoped to the application. To change
 |**mblen**|\<stdlib.h>|
 |**_mblen_l**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -127,9 +127,9 @@ Length in bytes of NULL multibyte character 0: 0
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)\
-[Locale](../../c-runtime-library/locale.md)\
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
+[Character classification](../character-classification.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
 [_mbccpy, _mbccpy_l](mbccpy-mbccpy-l.md)\
 [mbrlen](mbrlen.md)\
 [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)

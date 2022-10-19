@@ -47,7 +47,7 @@ Null-terminated strings to compare.
 *`locale`*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 The return value for each of these functions indicates the ordinal relation of *`string1`* to *`string2`*.
 
@@ -61,11 +61,11 @@ On a parameter validation error, **`_mbscmp`** and **`_mbscmp_l`** return **`_NL
 
 ## Remarks
 
-The **`strcmp`** function performs an ordinal comparison of *`string1`* and *`string2`* and returns a value that indicates their relationship. **`wcscmp`** and **`_mbscmp`** are, respectively, wide-character and multibyte-character versions of **`strcmp`**. **`_mbscmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. **`_mbscmp_l`** has the same behavior, but uses the locale parameter that's passed in instead of the current locale. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *`string1`* or *`string2`* is a null pointer, **`_mbscmp`** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`_mbscmp`** and **`_mbscmp_l`** return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**. **`strcmp`** and **`wcscmp`** do not validate their parameters. These functions behave identically otherwise.
+The **`strcmp`** function performs an ordinal comparison of *`string1`* and *`string2`* and returns a value that indicates their relationship. **`wcscmp`** and **`_mbscmp`** are, respectively, wide-character and multibyte-character versions of **`strcmp`**. **`_mbscmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. **`_mbscmp_l`** has the same behavior, but uses the locale parameter that's passed in instead of the current locale. For more information, see [Code pages](../code-pages.md). Also, if *`string1`* or *`string2`* is a null pointer, **`_mbscmp`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbscmp`** and **`_mbscmp_l`** return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**. **`strcmp`** and **`wcscmp`** do not validate their parameters. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -87,11 +87,11 @@ The **`strcmp`** functions are case-sensitive. **`_stricmp`**, **`_wcsicmp`**, a
 |**`wcscmp`**|`<string.h>` or `<wchar.h>`|
 |**`_mbscmp`**|`<mbstring.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -144,13 +144,13 @@ Compare strings:
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)<br/>
-[`_memicmp`, `_memicmp_`l](memicmp-memicmp-l.md)<br/>
-[`strcoll` Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[`_stricmp`, `_wcsicmp`, `_mbsicmp`, `_stricmp_l`, `_wcsicmp_l`, `_mbsicmp_l`](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
-[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
+[`_memicmp`, `_memicmp_`l](memicmp-memicmp-l.md)\
+[`strcoll` Functions](../strcoll-functions.md)\
+[`_stricmp`, `_wcsicmp`, `_mbsicmp`, `_stricmp_l`, `_wcsicmp_l`, `_mbsicmp_l`](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
+[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

@@ -39,7 +39,7 @@ Number of bytes to check.
 *mbstate*<br/>
 Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *mbstate* argument.
 
-## Return Value
+## Return value
 
 One of the following values:
 
@@ -179,7 +179,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Locale set to: "French_Canada.1252"
@@ -196,6 +196,6 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)

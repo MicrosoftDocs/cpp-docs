@@ -50,7 +50,7 @@ Pointer to name of source file that requested allocation operation or **NULL**.
 *linenumber*<br/>
 Line number in source file where allocation operation was requested or **NULL**.
 
-## Return Value
+## Return value
 
 Each function returns a pointer to the name generated or **NULL** if there is a failure. Failure can occur if there is an invalid directory name specified in the TMP environment variable and in the *dir* parameter.
 
@@ -63,7 +63,7 @@ The **_tempnam_dbg** and **_wtempnam_dbg** functions are identical to **_tempnam
 
 You do not need to call these functions explicitly in most cases. Instead, you can define the flag **_CRTDBG_MAP_ALLOC**. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_tempnam** and **_wtempnam** are remapped to **_tempnam_dbg** and **_wtempnam_dbg**, respectively, with the *blockType* set to **_NORMAL_BLOCK**. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -75,10 +75,10 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 |-------------|---------------------|
 |**_tempnam_dbg**, **_wtempnam_dbg**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+[Stream I/O](../stream-i-o.md)\
+[Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

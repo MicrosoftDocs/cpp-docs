@@ -12,7 +12,7 @@ ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
 ---
 # tmpnam_s, _wtmpnam_s
 
-Generate names you can use to create temporary files. These are versions of [tmpnam and _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Generate names you can use to create temporary files. These are versions of [tmpnam and _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -43,18 +43,18 @@ Pointer that will hold the generated name.
 *sizeInChars*<br/>
 The size of the buffer in characters.
 
-## Return Value
+## Return value
 
 Both of these functions return 0 if successful or an error number on failure.
 
-### Error Conditions
+### Error conditions
 
 | *str* | *sizeInChars* | **Return Value** | **Contents of** *str* |
 |--|--|--|--|
 | **NULL** | any | **EINVAL** | not modified |
 | not **NULL** (points to valid memory) | too short | **ERANGE** | not modified |
 
-If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
+If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 
 ## Remarks
 
@@ -64,11 +64,11 @@ For **tmpnam_s**, you can store this generated file name in *str*. The maximum l
 
 **tmpnam_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the OEM code page obtained from the operating system. **_wtmpnam_s** is a wide-character version of **tmpnam_s**; the argument and return value of **_wtmpnam_s** are wide-character strings. **_wtmpnam_s** and **tmpnam_s** behave identically except that **_wtmpnam_s** does not handle multibyte-character strings.
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -81,7 +81,7 @@ By default, this function's global state is scoped to the application. To change
 |**tmpnam_s**|\<stdio.h>|
 |**_wtmpnam_s**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -136,8 +136,8 @@ C:\Users\LocalUser\AppData\Local\Temp\u19q8.e is safe to use as a temporary file
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[malloc](malloc.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[tmpfile_s](tmpfile-s.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[_getmbcp](getmbcp.md)\
+[malloc](malloc.md)\
+[_setmbcp](setmbcp.md)\
+[tmpfile_s](tmpfile-s.md)

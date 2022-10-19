@@ -61,7 +61,7 @@ The second value to multiply.
 *z*\
 The value to add.
 
-## Return Value
+## Return value
 
 Returns `(x * y) + z`. The return value is then rounded using the current rounding format.
 
@@ -82,7 +82,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 Because C++ allows overloading, you can call overloads of **fma** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **fma** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `fma()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `fma()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 This function computes the value as though it were taken to infinite precision, and then rounds the final result.
 
@@ -95,10 +95,10 @@ By default, this function's global state is scoped to the application. To change
 |**fma**, **fmaf**, **fmal**|\<math.h>|\<cmath>|
 |**fma** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[remainder, remainderf, remainderl](remainder-remainderf-remainderl.md)<br/>
-[remquo, remquof, remquol](remquo-remquof-remquol.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[remainder, remainderf, remainderl](remainder-remainderf-remainderl.md)\
+[remquo, remquof, remquol](remquo-remquof-remquol.md)

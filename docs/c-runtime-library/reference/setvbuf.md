@@ -39,13 +39,13 @@ Mode of buffering.
 *size*<br/>
 Buffer size in bytes. Allowable range: 2 <= *size* <= INT_MAX (2147483647). Internally, the value supplied for *size* is rounded down to the nearest multiple of 2.
 
-## Return Value
+## Return value
 
 Returns 0 if successful.
 
-If *stream* is **NULL**, or if *mode* or *size* is not within a valid change, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **errno** to **EINVAL**.
+If *stream* is **NULL**, or if *mode* or *size* is not within a valid change, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **errno** to **EINVAL**.
 
-For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -67,11 +67,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**setvbuf**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -112,8 +112,8 @@ int main( void )
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[fflush](fflush.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[setbuf](setbuf.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fclose, _fcloseall](fclose-fcloseall.md)\
+[fflush](fflush.md)\
+[fopen, _wfopen](fopen-wfopen.md)\
+[setbuf](setbuf.md)
