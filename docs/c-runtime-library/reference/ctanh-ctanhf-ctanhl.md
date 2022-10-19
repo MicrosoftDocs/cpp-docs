@@ -36,12 +36,12 @@ _Lcomplex ctanhl(
 
 ### Parameters
 
-*z*\
+*`z`*\
 A complex number that represents an angle, in radians.
 
 ## Return value
 
-The complex hyperbolic tangent of *z*.
+The complex hyperbolic tangent of *`z`*.
 
 |Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|

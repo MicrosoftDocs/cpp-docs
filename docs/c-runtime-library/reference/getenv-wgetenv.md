@@ -31,7 +31,7 @@ wchar_t *_wgetenv(
 
 ### Parameters
 
-*`varname`*<br/>
+*`varname`*\
 Environment variable name.
 
 ## Return value

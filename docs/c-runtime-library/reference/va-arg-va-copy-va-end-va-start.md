@@ -39,19 +39,19 @@ void va_start(
 
 ### Parameters
 
-*`type`*<br/>
+*`type`*\
 Type of argument to be retrieved.
 
-*`arg_ptr`*<br/>
+*`arg_ptr`*\
 Pointer to the list of arguments.
 
-*`dest`*<br/>
+*`dest`*\
 Pointer to the list of arguments to be initialized from *`src`*
 
-*`src`*<br/>
+*`src`*\
 Pointer to the initialized list of arguments to copy to *`dest`*.
 
-*`prev_param`*<br/>
+*`prev_param`*\
 Parameter that precedes the first optional argument.
 
 ## Return value

@@ -27,7 +27,7 @@ int _heapset(
 
 #### Parameters
 
-*fill*<br/>
+*`fill`*\
 Fill character.
 
 ## Return value

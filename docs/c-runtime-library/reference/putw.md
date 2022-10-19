@@ -25,15 +25,15 @@ int _putw(
 
 ### Parameters
 
-*binint*<br/>
+*`binint`*\
 Binary integer to be output.
 
-*stream*<br/>
+*`stream`*\
 Pointer to the **FILE** structure.
 
 ## Return value
 
-Returns the value written. A return value of **EOF** might indicate an error. Because **EOF** is also a legitimate integer value, use **ferror** to verify an error. If *stream* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EOF**.
+Returns the value written. A return value of **EOF** might indicate an error. Because **EOF** is also a legitimate integer value, use **ferror** to verify an error. If *`stream`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EOF**.
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

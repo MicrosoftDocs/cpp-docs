@@ -27,7 +27,7 @@ int _set_error_mode(
 
 ### Parameters
 
-*mode_val*<br/>
+*`mode_val`*\
 Destination of error messages.
 
 ## Return value
@@ -38,7 +38,7 @@ Returns the old setting or -1 if an error occurs.
 
 Controls the error output sink by setting the value of **__error_mode**. For example, you can direct output to a standard error or use the **MessageBox** API.
 
-The *mode_val* parameter can be set to one of the following values.
+The *`mode_val`* parameter can be set to one of the following values.
 
 |Value|Description|
 |---------------|-----------------|

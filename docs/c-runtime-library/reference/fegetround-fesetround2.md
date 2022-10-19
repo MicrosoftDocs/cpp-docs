@@ -26,7 +26,7 @@ int fesetround(
 
 ### Parameters
 
-*round_mode*<br/>
+*`round_mode`*\
 The rounding mode to set, as one of the floating-point rounding macros. If the value isn't equal to one of the floating-point rounding macros, the rounding mode isn't changed.
 
 ## Return value

@@ -38,13 +38,13 @@ intptr_t _wexeclpe(
 
 ### Parameters
 
-*cmdname*<br/>
+*`cmdname`*\
 Path of the file to execute.
 
-*arg0*, ... *argN*<br/>
+*`arg0`*, ... *`argN`*\
 List of pointers to parameters.
 
-*envp*<br/>
+*`envp`*\
 Array of pointers to environment settings.
 
 ## Return value
@@ -67,7 +67,7 @@ For more information about these and other return codes, see [`errno`, `_doserrn
 
 Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter and also passing an array of pointers to environment settings. These functions use the **PATH** environment variable to find the file to execute.
 
-The **_execlpe** functions validate their parameters. If either *cmdname* or *arg0* is a null pointers or empty string, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is launched.
+The **_execlpe** functions validate their parameters. If either *`cmdname`* or *`arg0`* is a null pointers or empty string, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is launched.
 
 ## Requirements
 

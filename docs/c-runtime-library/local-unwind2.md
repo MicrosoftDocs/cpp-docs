@@ -25,10 +25,10 @@ void _local_unwind2(
 
 #### Parameters
 
-*`xr`*<br/>
+*`xr`*\
 [in] A registration record that is associated with one scope table.
 
-*`stop`*<br/>
+*`stop`*\
 [in] The lexical level that indicates where `_local_unwind2` should stop.
 
 ## Remarks

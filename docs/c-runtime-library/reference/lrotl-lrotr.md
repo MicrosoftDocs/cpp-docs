@@ -23,11 +23,11 @@ unsigned long _lrotr( unsigned long value, int shift );
 
 ### Parameters
 
-*value*<br/>
+*`value`*\
 Value to be rotated.
 
-*shift*<br/>
-Number of bits to shift *value*.
+*`shift`*\
+Number of bits to shift *`value`*.
 
 ## Return value
 
@@ -35,7 +35,7 @@ Both functions return the rotated value. There's no error return.
 
 ## Remarks
 
-The **_lrotl** and **_lrotr** functions rotate *value* by *shift* bits. **_lrotl** rotates the value left, toward more significant bits. **_lrotr** rotates the value right, toward less significant bits. Both functions wrap bits rotated off one end of *value* to the other end.
+The **_lrotl** and **_lrotr** functions rotate *`value`* by *`shift`* bits. **_lrotl** rotates the value left, toward more significant bits. **_lrotr** rotates the value right, toward less significant bits. Both functions wrap bits rotated off one end of *`value`* to the other end.
 
 ## Requirements
 

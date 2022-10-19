@@ -47,23 +47,23 @@ long double fmaxl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The first value to compare.
 
-*y*\
+*`y`*\
 The second value to compare.
 
 ## Return value
 
-If successful, returns the larger of *x* or *y*. The value returned is exact, and does not depend on any form of rounding.
+If successful, returns the larger of *`x`* or *`y`*. The value returned is exact, and does not depend on any form of rounding.
 
 Otherwise, may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
-|*x* = NaN|*y*|
-|*y* = NaN|*x*|
-|*x* and *y* = NaN|NaN|
+|*`x`* = NaN|*`y`*|
+|*`y`* = NaN|*`x`*|
+|*`x`* and *`y`* = NaN|NaN|
 
 This function does not use the errors specified in  [`_matherr`](matherr.md).
 

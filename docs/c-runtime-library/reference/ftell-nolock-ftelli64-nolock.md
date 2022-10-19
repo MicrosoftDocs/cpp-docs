@@ -27,7 +27,7 @@ __int64 _ftelli64_nolock(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Target the **FILE** structure.
 
 ## Return value

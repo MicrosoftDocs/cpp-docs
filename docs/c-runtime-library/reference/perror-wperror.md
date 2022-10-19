@@ -27,12 +27,12 @@ void _wperror(
 
 ### Parameters
 
-*message*<br/>
+*`message`*\
 String message to print.
 
 ## Remarks
 
-The **perror** function prints an error message to **stderr**. **_wperror** is a wide-character version of **_perror**; the *message* argument to **_wperror** is a wide-character string. **_wperror** and **_perror** behave identically otherwise.
+The **perror** function prints an error message to **stderr**. **_wperror** is a wide-character version of **_perror**; the *`message`* argument to **_wperror** is a wide-character string. **_wperror** and **_perror** behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -42,7 +42,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tperror**|**perror**|**perror**|**_wperror**|
 
-*message* is printed first, followed by a colon, then by the system error message for the last library call that produced the error, and finally by a newline character. If *message* is a null pointer or a pointer to a null string, **perror** prints only the system error message.
+*`message`* is printed first, followed by a colon, then by the system error message for the last library call that produced the error, and finally by a newline character. If *`message`* is a null pointer or a pointer to a null string, **perror** prints only the system error message.
 
 The error number is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md) (defined in ERRNO.H). The system error messages are accessed through the variable [`_sys_errlist`](../errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **perror** prints the appropriate error message using the **errno** value as an index to **_sys_errlist**. The value of the variable [`_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the **_sys_errlist** array.
 

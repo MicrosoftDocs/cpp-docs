@@ -28,19 +28,19 @@ void * _aligned_offset_malloc_dbg(
 
 ### Parameters
 
-*`size`*<br/>
+*`size`*\
 The size of the requested memory allocation.
 
-*`alignment`*<br/>
+*`alignment`*\
 The alignment value, which must be an integer power of 2.
 
-*`offset`*<br/>
+*`offset`*\
 The offset into the memory allocation to force the alignment.
 
-*`filename`*<br/>
+*`filename`*\
 Pointer to the name of the source file that requested the allocation operation or **NULL**.
 
-*`linenumber`*<br/>
+*`linenumber`*\
 Line number in the source file where the allocation operation was requested or **NULL**.
 
 ## Return value

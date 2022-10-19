@@ -55,7 +55,7 @@ Zero if successful; an error code on failure. For more information about these e
 
 The **`fopen_s`** and **`_wfopen_s`** functions can't open a file for sharing. If you need to share the file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, use **`_SH_DENYNO`** for read/write sharing.
 
-The **`fopen_s`** function opens the file that's specified by *filename*. **`_wfopen_s`** is a wide-character version of **`fopen_s`**; the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically otherwise.
+The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_wfopen_s`** is a wide-character version of **`fopen_s`**; the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically otherwise.
 
 **`fopen_s`** accepts paths that are valid on the file system at the point of execution; UNC paths and paths that involve mapped network drives are accepted by **`fopen_s`** as long as the system that's executing the code has access to the share or mapped network drive at the time of execution. When you construct paths for **`fopen_s`**, don't make assumptions about the availability of drives, paths, or network shares in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.
 

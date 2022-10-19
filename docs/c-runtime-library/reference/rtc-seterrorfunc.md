@@ -24,7 +24,7 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 ### Parameters
 
-*function*<br/>
+*`function`*\
 The address of the function that will handle run-time error checks.
 
 ## Return value

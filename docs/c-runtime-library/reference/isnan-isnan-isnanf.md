@@ -37,14 +37,14 @@ bool isnan(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to test.
 
 ## Return value
 
-In C, the **isnan** macro and the **_isnan** and **_isnanf** functions return a non-zero value if the argument *x* is a NAN; otherwise they return 0.
+In C, the **isnan** macro and the **_isnan** and **_isnanf** functions return a non-zero value if the argument *`x`* is a NAN; otherwise they return 0.
 
-In C++, the **isnan** template function returns **`true`** if the argument *x* is a NaN; otherwise it returns **`false`**.
+In C++, the **isnan** template function returns **`true`** if the argument *`x`* is a NaN; otherwise it returns **`false`**.
 
 ## Remarks
 

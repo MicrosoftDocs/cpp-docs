@@ -22,7 +22,7 @@ errno_t _set_doserrno( int error_value );
 
 ### Parameters
 
-*error_value*<br/>
+*`error_value`*\
 The new value of **_doserrno**.
 
 ## Return value

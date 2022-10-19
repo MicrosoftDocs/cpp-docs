@@ -41,24 +41,24 @@ unsigned char *_mbsspnp_l(
 
 ### Parameters
 
-*str*<br/>
+*`str`*\
 Null-terminated string to search.
 
-*charset*<br/>
+*`charset`*\
 Null-terminated character set.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-**_strspnp**, **_wcsspnp**, and **_mbsspnp** return a pointer to the first character in *str* that does not belong to the set of characters in *charset*. Each of these functions returns **NULL** if *str* consists entirely of characters from *charset*. For each of these routines, no return value is reserved to indicate an error.
+**_strspnp**, **_wcsspnp**, and **_mbsspnp** return a pointer to the first character in *`str`* that does not belong to the set of characters in *`charset`*. Each of these functions returns **NULL** if *`str`* consists entirely of characters from *`charset`*. For each of these routines, no return value is reserved to indicate an error.
 
 ## Remarks
 
-The **_mbsspnp** function returns a pointer to the multibyte character that is the first character in *str* that does not belong to the set of characters in *charset*. **_mbsspnp** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use. The search does not include terminating null characters.
+The **_mbsspnp** function returns a pointer to the multibyte character that is the first character in *`str`* that does not belong to the set of characters in *`charset`*. **_mbsspnp** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use. The search does not include terminating null characters.
 
-If either *str* or *charset* is a null pointer, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **NULL** and sets **errno** to **EINVAL**.
+If either *`str`* or *`charset`* is a null pointer, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **NULL** and sets **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

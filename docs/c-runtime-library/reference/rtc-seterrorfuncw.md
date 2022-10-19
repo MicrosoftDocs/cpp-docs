@@ -24,7 +24,7 @@ _RTC_error_fnW _RTC_SetErrorFuncW(
 
 ### Parameters
 
-*function*<br/>
+*`function`*\
 The address of the function that will handle run-time error checks.
 
 ## Return value
@@ -57,19 +57,19 @@ typedef int (__cdecl * _RTC_error_fnW)(
 
 where:
 
-*errorType*<br/>
+*`errorType`*\
 The type of error that's specified by [`_RTC_SetErrorType`](rtc-seterrortype.md).
 
-*filename*<br/>
+*`filename`*\
 The source file where the failure occurred, or null if no debug information is available.
 
-*linenumber*<br/>
-The line in *filename* where the failure occurred, or 0 if no debug information is available.
+*`linenumber`*\
+The line in *`filename`* where the failure occurred, or 0 if no debug information is available.
 
-*moduleName*<br/>
+*`moduleName`*\
 The DLL or executable name where the failure occurred.
 
-*format*<br/>
+*`format`*\
 printf style string to display an error message, using the remaining parameters. The first argument of the VA_ARGLIST is the RTC Error number that occurred.
 
 For an example that shows how to use **_RTC_error_fnW**, see [Native runtime checks customization](/visualstudio/debugger/native-run-time-checks-customization).

@@ -36,15 +36,15 @@ _Lcomplex cpowl(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The base.
 
-*y*<br/>
+*`y`*\
 The exponent.
 
 ## Return value
 
-The value of *x* raised to the power of *y* with a branch cut for *x* along the negative real axis.
+The value of *`x`* raised to the power of *`y`* with a branch cut for *`x`* along the negative real axis.
 
 ## Remarks
 

@@ -46,7 +46,7 @@ long double _hypotl(
 
 ### Parameters
 
-*x*, *y*\
+*`x`*, *`y`*\
 Floating-point values.
 
 ## Return value
@@ -57,7 +57,7 @@ For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlis
 
 ## Remarks
 
-The **hypot** functions calculate the length of the hypotenuse of a right triangle, given the length of the two sides *x* and *y* (in other words, the square root of *x*<sup>2</sup> + *y*<sup>2</sup>).
+The **hypot** functions calculate the length of the hypotenuse of a right triangle, given the length of the two sides *`x`* and *`y`* (in other words, the square root of *`x`*<sup>2</sup> + *`y`*<sup>2</sup>).
 
 The versions of the functions that have leading underscores are provided for compatibility with earlier standards. Their behavior is identical to the versions that don't have leading underscores. We recommend using the versions without leading underscores for new code.
 

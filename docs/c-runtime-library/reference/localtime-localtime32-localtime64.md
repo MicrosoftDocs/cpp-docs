@@ -24,7 +24,7 @@ struct tm *_localtime64( const __time64_t *sourceTime );
 
 ### Parameters
 
-*`sourceTime`*<br/>
+*`sourceTime`*\
 Pointer to stored time.
 
 ## Return value

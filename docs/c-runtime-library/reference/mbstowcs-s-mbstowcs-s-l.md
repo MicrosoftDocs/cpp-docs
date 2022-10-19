@@ -51,22 +51,22 @@ errno_t _mbstowcs_s_l(
 
 ### Parameters
 
-*`pReturnValue`*<br/>
+*`pReturnValue`*\
 The number of characters converted.
 
-*`wcstr`*<br/>
+*`wcstr`*\
 Address of buffer for the resulting converted wide character string.
 
-*`sizeInWords`*<br/>
+*`sizeInWords`*\
 The size of the *`wcstr`* buffer in words.
 
-*`mbstr`*<br/>
+*`mbstr`*\
 The address of a sequence of null terminated multibyte characters.
 
-*`count`*<br/>
+*`count`*\
 The maximum number of wide characters to store in the *`wcstr`* buffer, not including the terminating null, or [`_TRUNCATE`](../truncate.md).
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value
@@ -96,7 +96,7 @@ The destination string is always null-terminated (even in the case of an error).
 
 If *`count`* is the special value [`_TRUNCATE`](../truncate.md), then **`mbstowcs_s`** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
 
-If **`mbstowcs_s`** successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*pReturnValue` (provided *`pReturnValue`* is not **`NULL`**). This occurs even if the *`wcstr`* argument is **`NULL`** and provides a way to determine the required buffer size. Note that if *`wcstr`* is **`NULL`**, *count* is ignored, and *`sizeInWords`* must be 0.
+If **`mbstowcs_s`** successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*pReturnValue` (provided *`pReturnValue`* is not **`NULL`**). This occurs even if the *`wcstr`* argument is **`NULL`** and provides a way to determine the required buffer size. Note that if *`wcstr`* is **`NULL`**, *`count`* is ignored, and *`sizeInWords`* must be 0.
 
 If **`mbstowcs_s`** encounters an invalid multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets **`errno`** to **`EILSEQ`**, and returns **`EILSEQ`**.
 

@@ -24,7 +24,7 @@ int feholdexcept(
 
 ### Parameters
 
-*`penv`*<br/>
+*`penv`*\
 Pointer to an **fenv_t** object to contain a copy of the floating-point environment.
 
 ## Return value

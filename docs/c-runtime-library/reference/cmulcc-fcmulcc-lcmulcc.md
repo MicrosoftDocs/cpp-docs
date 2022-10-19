@@ -23,15 +23,15 @@ _Lcomplex _LCmulcc( _Lcomplex x, _Lcomplex y );
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 One of the complex operands to multiply.
 
-*y*<br/>
+*`y`*\
 The other complex operand to multiply.
 
 ## Return value
 
-A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex numbers *x* and *y*.
+A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex numbers *`x`* and *`y`*.
 
 ## Remarks
 

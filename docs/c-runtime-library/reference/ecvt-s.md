@@ -18,41 +18,41 @@ Converts a **`double`** number to a string. This function is a version of [`_ecv
 
 ```C
 errno_t _ecvt_s(
-   char * _Buffer,
-   size_t _SizeInBytes,
-   double _Value,
-   int _Count,
-   int *_Dec,
-   int *_Sign
+   char * buffer,
+   size_t sizeInBytes,
+   double value,
+   int count,
+   int *dec,
+   int *sign
 );
 template <size_t size>
 errno_t _ecvt_s(
-   char (&_Buffer)[size],
-   double _Value,
-   int _Count,
-   int *_Dec,
-   int *_Sign
+   char (&buffer)[size],
+   double value,
+   int count,
+   int *dec,
+   int *sign
 ); // C++ only
 ```
 
 ### Parameters
 
-*_Buffer*<br/>
+*`buffer`*\
 Filled with the pointer to the string of digits, the result of the conversion.
 
-*_SizeInBytes*<br/>
+*`sizeInBytes`*\
 Size of the buffer in bytes.
 
-*_Value*<br/>
+*`value`*\
 Number to be converted.
 
-*_Count*<br/>
+*`count`*\
 Number of digits stored.
 
-*_Dec*<br/>
+*`dec`*\
 Stored decimal-point position.
 
-*_Sign*<br/>
+*`sign`*\
 Sign of the converted number.
 
 ## Return value
@@ -63,7 +63,7 @@ If there's an invalid parameter, as listed in the following table, this function
 
 ### Error conditions
 
-|*_Buffer*|*_SizeInBytes*|_Value|_Count|_Dec|_Sign|Return value|Value in *buffer*|
+|*`buffer`*|*`sizeInBytes`*|*`value`*|*`count`*|*`dec`*|*`sign`*|Return value|Value in *`buffer`*|
 |---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|
 |**NULL**|any|any|any|any|any|**EINVAL**|Not modified.|
 |Not **NULL** (points to valid memory)|<=0|any|any|any|any|**EINVAL**|Not modified.|
@@ -72,17 +72,17 @@ If there's an invalid parameter, as listed in the following table, this function
 
 ## Security issues
 
-**_ecvt_s** might generate an access violation if *buffer* doesn't point to valid memory and isn't **NULL**.
+**_ecvt_s** might generate an access violation if *`buffer`* doesn't point to valid memory and isn't **NULL**.
 
 ## Remarks
 
-The **_ecvt_s** function converts a floating-point number to a character string. The *_Value* parameter is the floating-point number to be converted. This function stores up to *count* digits of *_Value* as a string and appends a null character ('\0'). If the number of digits in *_Value* exceeds *_Count*, the low-order digit is rounded. If there are fewer than *count* digits, the string is padded with zeros.
+The **_ecvt_s** function converts a floating-point number to a character string. The *`value`* parameter is the floating-point number to be converted. This function stores up to *`count`* digits of *`value`* as a string and appends a null character ('\0'). If the number of digits in *`value`* exceeds *`count`*, the low-order digit is rounded. If there are fewer than *`count`* digits, the string is padded with zeros.
 
-Only digits are stored in the string. The position of the decimal point and the sign of *_Value* can be obtained from *_Dec* and *_Sign* after the call. The *_Dec* parameter points to an integer value giving the position of the decimal point with respect to the beginning of the string. A 0 or negative integer value indicates that the decimal point lies to the left of the first digit. The *_Sign* parameter points to an integer that indicates the sign of the converted number. If the integer value is 0, the number is positive. Otherwise, the number is negative.
+Only digits are stored in the string. The position of the decimal point and the sign of *`value`* can be obtained from *`dec`* and *`sign`* after the call. The *`dec`* parameter points to an integer value giving the position of the decimal point with respect to the beginning of the string. A 0 or negative integer value indicates that the decimal point lies to the left of the first digit. The *`sign`* parameter points to an integer that indicates the sign of the converted number. If the integer value is 0, the number is positive. Otherwise, the number is negative.
 
 A buffer of length **_CVTBUFSIZE** is sufficient for any floating-point value.
 
-The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *_Count* parameter. **_ecvt_s** interprets *_Count* as the total number of digits in the output string, whereas **_fcvt_s** interprets *_Count* as the number of digits after the decimal point.
+The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *`count`* parameter. **_ecvt_s** interprets *`count`* as the total number of digits in the output string, whereas **_fcvt_s** interprets *`count`* as the number of digits after the decimal point.
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

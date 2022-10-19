@@ -31,13 +31,13 @@ int wmemcmp(
 
 ### Parameters
 
-*`buffer1`*<br/>
+*`buffer1`*\
 First buffer.
 
-*`buffer2`*<br/>
+*`buffer2`*\
 Second buffer.
 
-*`count`*<br/>
+*`count`*\
 Number of characters to compare. (Compares bytes for **`memcmp`**, wide characters for **`wmemcmp`**).
 
 ## Return value

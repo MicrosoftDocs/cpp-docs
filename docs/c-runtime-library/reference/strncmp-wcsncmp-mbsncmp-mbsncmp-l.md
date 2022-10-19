@@ -49,13 +49,13 @@ int _mbsncmp_l(
 
 ### Parameters
 
-*`string1`*, *`string2`*<br/>
+*`string1`*, *`string2`*\
 Strings to compare.
 
-*`count`*<br/>
+*`count`*\
 Number of characters to compare.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -78,7 +78,7 @@ The **`strncmp`** function performs an ordinal comparison of at most the first *
 
 Also, **`_mbsncmp`** and **`_mbsncmp_l`** validate parameters. If *`string1`* or *`string2`* is a null pointer and *`count`* is not equal to 0, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbsncmp`** and **`_mbsncmp_l`** return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**. **`strncmp`** and **`wcsncmp`** do not validate their parameters. These functions behave identically otherwise.
 
-The comparison behavior of **`_mbsncmp`** and **`_mbsncmp_l`** is affected by the setting of the **`LC_CTYPE`** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [`setlocale`](setlocale-wsetlocale.md). The **`_mbsncmp`** function uses the current locale for this locale-dependent behavior. The **`_mbsncmp_l`** function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to **`strncmp`**.
+The comparison behavior of **`_mbsncmp`** and **`_mbsncmp_l`** is affected by the setting of the **`LC_CTYPE`** category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [`setlocale`](setlocale-wsetlocale.md). The **`_mbsncmp`** function uses the current locale for this locale-dependent behavior. The **`_mbsncmp_l`** function is identical except that it uses the *`locale`* parameter instead. For more information, see [Locale](../locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to **`strncmp`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

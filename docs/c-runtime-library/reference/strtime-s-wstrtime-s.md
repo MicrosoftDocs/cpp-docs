@@ -37,10 +37,10 @@ errno_t _wstrtime_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 A buffer, at least 10 bytes long, where the time will be written.
 
-*numberOfElements*<br/>
+*`numberOfElements`*\
 The size of the buffer.
 
 ## Return value
@@ -51,7 +51,7 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 ### Error conditions
 
-|*buffer*|*numberOfElements*|Return|Contents of *buffer*|
+|*`buffer`*|*`numberOfElements`*|Return|Contents of *`buffer`*|
 |--------------|------------------------|------------|--------------------------|
 |**NULL**|(any)|**EINVAL**|Not modified|
 |Not **NULL** (pointing to valid buffer)|0|**EINVAL**|Not modified|
@@ -60,13 +60,13 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 ## Security issues
 
-Passing in an invalid non-**NULL** value for the buffer will result in an access violation if the *numberOfElements* parameter is greater than 9.
+Passing in an invalid non-**NULL** value for the buffer will result in an access violation if the *`numberOfElements`* parameter is greater than 9.
 
-Passing a value for *numberOfElements* that is greater than the actual size of the buffer will result in buffer overrun.
+Passing a value for *`numberOfElements`* that is greater than the actual size of the buffer will result in buffer overrun.
 
 ## Remarks
 
-These functions provide more secure versions of [`_strtime`](strtime-wstrtime.md) and [`_wstrtime`](strtime-wstrtime.md). The **_strtime_s** function copies the current local time into the buffer pointed to by *timestr*. The time is formatted as **hh:mm:ss** where **hh** is two digits representing the hour in 24-hour notation, **mm** is two digits representing the minutes past the hour, and **ss** is two digits representing seconds. For example, the string **18:23:44** represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
+These functions provide more secure versions of [`_strtime`](strtime-wstrtime.md) and [`_wstrtime`](strtime-wstrtime.md). The **_strtime_s** function copies the current local time into the buffer pointed to by *`buffer`*. The time is formatted as **hh:mm:ss** where **hh** is two digits representing the hour in 24-hour notation, **mm** is two digits representing the minutes past the hour, and **ss** is two digits representing seconds. For example, the string **18:23:44** represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
 
 **_wstrtime** is a wide-character version of **_strtime**; the argument and return value of **_wstrtime** are wide-character strings. These functions behave identically otherwise.
 

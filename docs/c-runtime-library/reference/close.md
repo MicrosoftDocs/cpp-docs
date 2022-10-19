@@ -24,7 +24,7 @@ int _close(
 
 ### Parameters
 
-*`fd`*<br/>
+*`fd`*\
 File descriptor referring to the open file.
 
 ## Return value

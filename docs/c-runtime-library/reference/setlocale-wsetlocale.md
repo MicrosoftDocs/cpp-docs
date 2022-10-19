@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 
 The *`category`* argument specifies the parts of a program's locale information that are affected. The macros used for *`category`* and the parts of the program they affect are as follows:
 
-|*category* flag|Affects|
+|*`category`* flag|Affects|
 |-|-|
 | `LC_ALL` | All categories, as listed below. |
 | `LC_COLLATE` | The `strcoll`, `_stricoll`, `wcscoll`, `_wcsicoll`, `strxfrm`, `_strncoll`, `_strnicoll`, `_wcsncoll`, `_wcsnicoll`, and `wcsxfrm` functions. |

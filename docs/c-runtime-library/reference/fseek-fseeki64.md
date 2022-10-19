@@ -31,13 +31,13 @@ int _fseeki64(
 
 ### Parameters
 
-*`stream`*<br/>
+*`stream`*\
 Pointer to **`FILE`** structure.
 
-*`offset`*<br/>
+*`offset`*\
 Number of bytes from *`origin`*.
 
-*`origin`*<br/>
+*`origin`*\
 Initial position.
 
 ## Return value

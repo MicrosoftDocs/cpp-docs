@@ -24,10 +24,10 @@ size_t offsetof(
 
 ### Parameters
 
-*structName*<br/>
+*`structName`*\
 Name of the parent data structure.
 
-*memberName*<br/>
+*`memberName`*\
 Name of the member in the parent data structure for which to determine the offset.
 
 ## Return value
@@ -36,7 +36,7 @@ Name of the member in the parent data structure for which to determine the offse
 
 ## Remarks
 
-The **offsetof** macro returns the offset in bytes of *memberName* from the beginning of the structure specified by *structName* as a value of type **size_t**. You can specify types with the **`struct`** keyword.
+The **offsetof** macro returns the offset in bytes of *`memberName`* from the beginning of the structure specified by *`structName`* as a value of type **size_t**. You can specify types with the **`struct`** keyword.
 
 > [!NOTE]
 > **offsetof** is not a function and cannot be described using a C prototype.

@@ -74,21 +74,21 @@ errno_t _wctime64_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Must be large enough to hold 26 characters. A pointer to the character string result, or **NULL** if:
 
-- *sourceTime* represents a date before midnight, January 1, 1970, UTC.
+- *`sourceTime`* represents a date before midnight, January 1, 1970, UTC.
 
-- If you use **_ctime32_s** or **_wctime32_s** and *sourceTime* represents a date after 23:59:59 January 18, 2038, UTC.
+- If you use **_ctime32_s** or **_wctime32_s** and *`sourceTime`* represents a date after 23:59:59 January 18, 2038, UTC.
 
-- If you use **_ctime64_s** or **_wctime64_s** and *sourceTime* represents a date after 23:59:59, December 31, 3000, UTC.
+- If you use **_ctime64_s** or **_wctime64_s** and *`sourceTime`* represents a date after 23:59:59, December 31, 3000, UTC.
 
 - If you use **_ctime_s** or **_wctime_s**, these functions are wrappers to the previous functions. See the Remarks section.
 
-*numberOfElements*<br/>
+*`numberOfElements`*\
 The size of the buffer.
 
-*sourceTime*<br/>
+*`sourceTime`*\
 Pointer to stored time.
 
 ## Return value
@@ -97,7 +97,7 @@ Zero if successful. If there's a failure due to an invalid parameter, the invali
 
 ## Error conditions
 
-|*buffer*|*numberOfElements*|*sourceTime*|Return|Value in *buffer*|
+|*`buffer`*|*`numberOfElements`*|*`sourceTime`*|Return|Value in *`buffer`*|
 |--------------|------------------------|------------|------------|-----------------------|
 |**NULL**|any|any|**EINVAL**|Not modified|
 |Not **NULL** (points to valid memory)|0|any|**EINVAL**|Not modified|
@@ -107,7 +107,7 @@ Zero if successful. If there's a failure due to an invalid parameter, the invali
 
 ## Remarks
 
-The **ctime_s** function converts a time value stored as a [`time_t`](../standard-types.md) structure into a character string. The *sourceTime* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **ctime_s** function converts a time value stored as a [`time_t`](../standard-types.md) structure into a character string. The *`sourceTime`* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
 `Wed Jan 02 02:03:55 1980\n\0`
 

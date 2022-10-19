@@ -22,7 +22,7 @@ A preprocessor macro that returns the larger of two values.
 
 ### Parameters
 
-*a*, *b*<br/>
+*`a`*, *`b`*\
 Values of any numeric type to be compared.
 
 ## Return value

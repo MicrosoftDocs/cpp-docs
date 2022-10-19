@@ -16,7 +16,7 @@ ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
 
 ## Remarks
 
-The *origin* argument specifies the initial position and can be one of the following manifest constants:
+The *`origin`* argument specifies the initial position and can be one of the following manifest constants:
 
 |Constant|Meaning|
 |--------------|-------------|

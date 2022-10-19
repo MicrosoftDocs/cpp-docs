@@ -23,15 +23,15 @@ _Lcomplex _LCmulcr( _Lcomplex x, long double y );
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 One of the complex operands to multiply.
 
-*y*<br/>
+*`y`*\
 The floating-point operand to multiply.
 
 ## Return value
 
-A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex number *x* and floating-point number *y*.
+A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex number *`x`* and floating-point number *`y`*.
 
 ## Remarks
 

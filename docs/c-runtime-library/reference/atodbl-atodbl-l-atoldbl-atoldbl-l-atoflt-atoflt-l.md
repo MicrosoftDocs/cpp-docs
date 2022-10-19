@@ -27,13 +27,13 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, _locale_t locale );
 
 ### Parameters
 
-*value*<br/>
+*`value`*\
 The double, long double, or float value that's produced by converting the string to a floating-point value. These values are wrapped in a structure.
 
-*str*<br/>
+*`str`*\
 The string to be parsed to convert into a floating-point value.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value
@@ -44,9 +44,9 @@ Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW*
 
 These functions convert a string to a floating-point value. The difference between these functions and the **atof** family of functions is that these functions don't generate floating-point code and don't cause hardware exceptions. Instead, error conditions are reported as error codes.
 
-If a string doesn't have a valid interpretation as a floating-point value, *value* is set to zero, and the return value is zero.
+If a string doesn't have a valid interpretation as a floating-point value, *`value`* is set to zero, and the return value is zero.
 
-The versions of these functions that have the **_l** suffix are identical the versions that don't have the suffix, except that they use the *locale* parameter that's passed in instead of the current thread locale.
+The versions of these functions that have the **_l** suffix are identical the versions that don't have the suffix, except that they use the *`locale`* parameter that's passed in instead of the current thread locale.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

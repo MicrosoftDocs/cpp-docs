@@ -29,10 +29,10 @@ int _waccess(
 
 ### Parameters
 
-*`path`*<br/>
+*`path`*\
 File or directory path.
 
-*`mode`*<br/>
+*`mode`*\
 Read/write attribute.
 
 ## Return value

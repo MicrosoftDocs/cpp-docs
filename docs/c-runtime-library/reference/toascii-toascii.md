@@ -25,12 +25,12 @@ int __toascii(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to convert.
 
 ## Return value
 
-**__toascii** converts the value of *c* to the 7-bit ASCII range and returns the result. There is no return value reserved to indicate an error.
+**__toascii** converts the value of *`c`* to the 7-bit ASCII range and returns the result. There is no return value reserved to indicate an error.
 
 ## Remarks
 

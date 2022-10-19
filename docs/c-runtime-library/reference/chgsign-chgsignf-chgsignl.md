@@ -30,12 +30,12 @@ long double _chgsignl(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to be changed.
 
 ## Return value
 
-The **_chgsign** functions return a value that's equal to the floating-point argument *x*, but with its sign reversed. There's no error return.
+The **_chgsign** functions return a value that's equal to the floating-point argument *`x`*, but with its sign reversed. There's no error return.
 
 ## Requirements
 

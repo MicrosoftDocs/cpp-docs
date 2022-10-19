@@ -43,9 +43,9 @@ Returns the value of *`x`*<sup>*`y`*</sup>. No error message is printed on overf
 
 |Values of x and y|Return value of pow|
 |-----------------------|-------------------------|
-|*x* != 0.0 and *y* == 0.0|1|
-|*x* == 0.0 and *y* == 0.0|1|
-|*x* == 0.0 and *y* < 0|INF|
+|*`x`* != 0.0 and *`y`* == 0.0|1|
+|*`x`* == 0.0 and *`y`* == 0.0|1|
+|*`x`* == 0.0 and *`y`* < 0|INF|
 
 ## Remarks
 

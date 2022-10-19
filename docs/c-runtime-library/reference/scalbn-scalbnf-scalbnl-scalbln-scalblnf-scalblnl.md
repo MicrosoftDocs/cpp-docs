@@ -68,15 +68,15 @@ long double scalbln(
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value.
 
-*exp*\
+*`exp`*\
 Integer exponent.
 
 ## Return value
 
-The **scalbn** functions return the value of *x* \* **FLT_RADIX**<sup>exp</sup> when successful. On overflow (depending on the sign of *x*), **scalbn** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
+The **scalbn** functions return the value of *`x`* \* **FLT_RADIX**<sup>exp</sup> when successful. On overflow (depending on the sign of *`x`*), **scalbn** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
 
 For more information about **errno** and possible error return values, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

@@ -41,13 +41,13 @@ errno_t _wasctime_s(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 A pointer to a buffer to store the character string result. This function assumes a pointer to a valid memory location with a size specified by *`numberOfElements`*.
 
-*`numberOfElements`*<br/>
+*`numberOfElements`*\
 The size of the buffer used to store the result.
 
-*`tmSource`*<br/>
+*`tmSource`*\
 Time/date structure. This function assumes a pointer to a valid `struct tm` object.
 
 ## Return value
@@ -56,11 +56,11 @@ Zero if successful. If there's a failure, the invalid parameter handler is invok
 
 ### Error conditions
 
-|*buffer*|*numberOfElements*|*tmSource*|Return|Value in *buffer*|
+|*`buffer`*|*`numberOfElements`*|*`tmSource`*|Return|Value in *`buffer`*|
 |--------------|------------------------|----------|------------|-----------------------|
 |**NULL**|Any|Any|**EINVAL**|Not modified|
 |Not **NULL** (points to valid memory)|0|Any|**EINVAL**|Not modified|
-|Not **NULL**|0< size < 26|Any|**EINVAL**|Empty string|
+|Not **NULL**|0< *`numberOfElements`* < 26|Any|**EINVAL**|Empty string|
 |Not **NULL**|>= 26|**NULL**|**EINVAL**|Empty string|
 |Not **NULL**|>= 26|Invalid time structure or out of range values for components of the time|**EINVAL**|Empty string|
 
@@ -69,7 +69,7 @@ Zero if successful. If there's a failure, the invalid parameter handler is invok
 
 ## Remarks
 
-The **asctime** function converts a time stored as a structure to a character string. The *tmSource* value is typically obtained from a call to **gmtime** or **localtime**. Both functions can be used to fill in a `tm` structure, as defined in TIME.H.
+The **asctime** function converts a time stored as a structure to a character string. The *`tmSource`* value is typically obtained from a call to **gmtime** or **localtime**. Both functions can be used to fill in a `tm` structure, as defined in TIME.H.
 
 |timeptr member|Value|
 |--------------------|-----------|

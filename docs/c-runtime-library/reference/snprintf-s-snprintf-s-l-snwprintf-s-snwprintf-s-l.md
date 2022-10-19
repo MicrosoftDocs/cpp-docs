@@ -64,22 +64,22 @@ int _snwprintf_s(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Storage location for the output.
 
-*`sizeOfBuffer`*<br/>
+*`sizeOfBuffer`*\
 The size of the storage location for output. Size in **`bytes`** for **`_snprintf_s`** or size in **`words`** for **`_snwprintf_s`**.
 
-*`count`*<br/>
+*`count`*\
 Maximum number of characters to store, or [`_TRUNCATE`](../truncate.md).
 
-*`format`*<br/>
+*`format`*\
 Format-control string.
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value

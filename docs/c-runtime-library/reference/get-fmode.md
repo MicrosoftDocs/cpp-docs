@@ -24,12 +24,12 @@ errno_t _get_fmode(
 
 ### Parameters
 
-*pmode*<br/>
+*`pmode`*\
 A pointer to an integer to be filled with the current default mode: **_O_TEXT** or **_O_BINARY**.
 
 ## Return value
 
-Returns zero if successful; an error code on failure. If *pmode* is **NULL**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EINVAL**.
+Returns zero if successful; an error code on failure. If *`pmode`* is **NULL**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EINVAL**.
 
 ## Remarks
 

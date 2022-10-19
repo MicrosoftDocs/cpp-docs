@@ -29,22 +29,22 @@ void * _aligned_offset_realloc_dbg(
 
 ### Parameters
 
-*`memblock`*<br/>
+*`memblock`*\
 The current memory block pointer.
 
-*`size`*<br/>
+*`size`*\
 The size of the memory allocation.
 
-*`alignment`*<br/>
+*`alignment`*\
 The alignment value, which must be an integer power of 2.
 
-*`offset`*<br/>
+*`offset`*\
 The offset into the memory allocation to force the alignment.
 
-*`filename`*<br/>
+*`filename`*\
 Pointer to the name of the source file that requested the **aligned_offset_realloc** operation or **NULL**.
 
-*`linenumber`*<br/>
+*`linenumber`*\
 Line number in the source file where the **aligned_offset_realloc** operation was requested or **NULL**.
 
 ## Return value
@@ -57,7 +57,7 @@ Line number in the source file where the **aligned_offset_realloc** operation wa
 
 Like [`_aligned_offset_malloc`](aligned-offset-malloc.md), **_aligned_offset_realloc_dbg** allows a structure to be aligned at an offset within the structure.
 
-**_realloc_dbg** reallocates the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The extra space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might both move the original memory block to a different location in the heap, and also change the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
+**_realloc_dbg** reallocates the specified memory block with slightly more space than the requested *`newSize`*. *`newSize`* might be greater or less than the size of the originally allocated memory block. The extra space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might both move the original memory block to a different location in the heap, and also change the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
 
 This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_offset_realloc_dbg** validates its parameters. If *`alignment`* isn't a power of 2 or if *`offset`* is non-zero and greater than or equal to *`size`*, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
 

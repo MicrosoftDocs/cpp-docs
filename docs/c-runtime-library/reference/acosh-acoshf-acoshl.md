@@ -28,17 +28,17 @@ long double acosh( long double x );  // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value.
 
 ## Return value
 
-The **acosh** functions return the inverse hyperbolic cosine (arc hyperbolic cosine) of *x*. These functions are valid over the domain *x* ≥ 1. If *x* is less than 1, `errno` is set to `EDOM`, and the result is a quiet NaN. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
+The **acosh** functions return the inverse hyperbolic cosine (arc hyperbolic cosine) of *`x`*. These functions are valid over the domain *`x`* ≥ 1. If *`x`* is less than 1, `errno` is set to `EDOM`, and the result is a quiet NaN. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, INF|none|none|
-|*x* < 1|none|none|
+|*`x`* < 1|none|none|
 
 ## Remarks
 

@@ -28,15 +28,15 @@ int _ismbblead_l(
 
 ### Parameters
 
-*c*\
+*`c`*\
 Integer to be tested.
 
-*locale*\
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Returns a nonzero value if the integer *c* is the first byte of a multibyte character.
+Returns a nonzero value if the integer *`c`* is the first byte of a multibyte character.
 
 ## Remarks
 
@@ -44,7 +44,7 @@ Multibyte characters consist of a lead byte followed by a trailing byte. Lead by
 
 **_ismbblead** uses the current locale for locale-dependent behavior. **_ismbblead_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (false), whether *c* is a lead byte or not.
+When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (false), whether *`c`* is a lead byte or not.
 
 **_ismbblead** and **_ismbblead_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mbrlen** instead.
 

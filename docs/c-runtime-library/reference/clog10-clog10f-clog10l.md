@@ -29,7 +29,7 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 The base of the logarithm.
 
 ## Return value

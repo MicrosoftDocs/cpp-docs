@@ -26,7 +26,7 @@ int raise(
 
 ### Parameters
 
-*sig*<br/>
+*`sig`*\
 Signal to be raised.
 
 ## Return value
@@ -35,7 +35,7 @@ If successful, **raise** returns 0. Otherwise, it returns a nonzero value.
 
 ## Remarks
 
-The **raise** function sends *sig* to the executing program. If a previous call to **signal** has installed a signal-handling function for *sig*, **raise** executes that function. If no handler function has been installed, the default action associated with the signal value *sig* is taken, as follows.
+The **raise** function sends *`sig`* to the executing program. If a previous call to **signal** has installed a signal-handling function for *`sig`*, **raise** executes that function. If no handler function has been installed, the default action associated with the signal value *`sig`* is taken, as follows.
 
 |Signal|Meaning|Default|
 |------------|-------------|-------------|

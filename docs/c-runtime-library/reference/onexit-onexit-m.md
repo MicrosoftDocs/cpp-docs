@@ -27,7 +27,7 @@ _onexit_t_m _onexit_m(
 
 ### Parameters
 
-*function*<br/>
+*`function`*\
 Pointer to a function to be called at exit.
 
 ## Return value
@@ -36,7 +36,7 @@ Pointer to a function to be called at exit.
 
 ## Remarks
 
-The **_onexit** function is passed the address of a function (*function*) to be called when the program terminates normally. Successive calls to **_onexit** create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to **_onexit** cannot take parameters.
+The **_onexit** function is passed the address of a function (*`function`*) to be called when the program terminates normally. Successive calls to **_onexit** create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to **_onexit** cannot take parameters.
 
 In the case when **_onexit** is called from within a DLL, routines registered with **_onexit** run on a DLL's unloading after **DllMain** is called with DLL_PROCESS_DETACH.
 

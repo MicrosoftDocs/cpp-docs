@@ -26,18 +26,18 @@ int _fpieee_flt(
 
 ### Parameters
 
-*excCode*<br/>
+*`excCode`*\
 Exception code.
 
-*excInfo*<br/>
+*`excInfo`*\
 Pointer to the Windows NT exception information structure.
 
-*handler*<br/>
+*`handler`*\
 Pointer to the user's IEEE trap-handler routine.
 
 ## Return value
 
-The return value of **_fpieee_flt** is the value returned by *handler*. As such, the IEEE filter routine might be used in the except clause of a structured exception-handling (SEH) mechanism.
+The return value of **_fpieee_flt** is the value returned by *`handler`*. As such, the IEEE filter routine might be used in the except clause of a structured exception-handling (SEH) mechanism.
 
 ## Remarks
 

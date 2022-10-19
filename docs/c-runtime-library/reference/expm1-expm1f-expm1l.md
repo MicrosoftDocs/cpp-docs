@@ -37,7 +37,7 @@ long double expm1l(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The floating-point exponential value.
 
 ## Return value

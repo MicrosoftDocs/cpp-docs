@@ -32,16 +32,16 @@ int _memicmp_l(
 
 ### Parameters
 
-*buffer1*<br/>
+*`buffer1`*\
 First buffer.
 
-*buffer2*<br/>
+*`buffer2`*\
 Second buffer.
 
-*count*<br/>
+*`count`*\
 Number of characters.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -50,16 +50,16 @@ The return value indicates the relationship between the buffers.
 
 |Return value|Relationship of first count bytes of buf1 and buf2|
 |------------------|--------------------------------------------------------|
-|< 0|*buffer1* less than *buffer2*.|
-|0|*buffer1* identical to *buffer2*.|
-|> 0|*buffer1* greater than *buffer2*.|
+|< 0|*`buffer1`* less than *`buffer2`*.|
+|0|*`buffer1`* identical to *`buffer2`*.|
+|> 0|*`buffer1`* greater than *`buffer2`*.|
 |**_NLSCMPERROR**|An error occurred.|
 
 ## Remarks
 
-The **_memicmp** function compares the first *count* characters of the two buffers *buffer1* and *buffer2* byte by byte. The comparison is not case-sensitive.
+The **_memicmp** function compares the first *`count`* characters of the two buffers *`buffer1`* and *`buffer2`* byte by byte. The comparison is not case-sensitive.
 
-If either *buffer1* or *buffer2* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **_NLSCMPERROR** and sets **errno** to **EINVAL**.
+If either *`buffer1`* or *`buffer2`* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **_NLSCMPERROR** and sets **errno** to **EINVAL**.
 
 **_memicmp** uses the current locale for locale-dependent behavior; **_memicmp_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 

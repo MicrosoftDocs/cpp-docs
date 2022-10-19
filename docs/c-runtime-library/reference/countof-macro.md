@@ -21,7 +21,7 @@ Computes the number of elements in a statically allocated array.
 
 ### Parameters
 
-*`array`*<br/>
+*`array`*\
 The name of an array.
 
 ## Return value

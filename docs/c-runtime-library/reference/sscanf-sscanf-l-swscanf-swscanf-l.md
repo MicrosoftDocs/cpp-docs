@@ -43,16 +43,16 @@ int _swscanf_l(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Stored data
 
-*`format`*<br/>
+*`format`*\
 Format-control string. For more information, see [Format specification syntax](../format-specification-fields-scanf-and-wscanf-functions.md).
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use
 
 ## Return value

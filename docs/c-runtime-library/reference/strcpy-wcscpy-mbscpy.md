@@ -51,10 +51,10 @@ unsigned char *_mbscpy(
 
 ### Parameters
 
-*`strDestination`*<br/>
+*`strDestination`*\
 Destination string.
 
-*`strSource`*<br/>
+*`strSource`*\
 Null-terminated source string.
 
 ## Return value
@@ -63,10 +63,10 @@ Each of these functions returns the destination string. No return value is reser
 
 ## Remarks
 
-The **`strcpy`** function copies *strSource*, including the terminating null character, to the location that's specified by *`strDestination`*. The behavior of **`strcpy`** is undefined if the source and destination strings overlap.
+The **`strcpy`** function copies *`strSource`*, including the terminating null character, to the location that's specified by *`strDestination`*. The behavior of **`strcpy`** is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
-> Because **`strcpy`** does not check for sufficient space in *strDestination* before it copies *`strSource`*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [`strcpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md) instead.
+> Because **`strcpy`** does not check for sufficient space in *`strDestination`* before it copies *`strSource`*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [`strcpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md) instead.
 
 **`wcscpy`** and **`_mbscpy`** are, respectively, wide-character and multibyte-character versions of **`strcpy`**. The arguments and return value of **`wcscpy`** are wide-character strings; those of **`_mbscpy`** are multibyte-character strings. These three functions behave identically otherwise.
 

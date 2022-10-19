@@ -27,22 +27,22 @@ void _tzset( void );
 
 The **_tzset** function uses the current setting of the environment variable **TZ** to assign values to three global variables: **_daylight**, **_timezone**, and **_tzname**. These variables are used by the [`_ftime`](ftime-ftime32-ftime64.md) and [`localtime`](localtime-localtime32-localtime64.md) functions to make corrections from coordinated universal time (UTC) to local time, and by the [`time`](time-time32-time64.md) function to compute UTC from system time. Use the following syntax to set the **TZ** environment variable:
 
-> **set TZ=**_tzn_ \[**+**&#124;**-**]*hh*\[**:**_mm_\[**:**_ss_] ][*dzn*]
+> **`set TZ=`***`tzn`* \[**`+`**&#124;**`-`**]*`hh`*\[**`:`***`mm`*\[**:***`ss`*] ][*`dzn`*]
 
- *tzn* \
+ *`tzn`* \
  Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC.
 
- *hh* \
+ *`hh`* \
  Difference in hours between UTC and local time. Sign (+) optional for positive values.
 
- *mm* \
- Minutes. Separated from *hh* by a colon (**:**).
+ *`mm`* \
+ Minutes. Separated from *`hh`* by a colon (**`:`**).
 
- *ss* \
- Seconds. Separated from *mm* by a colon (**:**).
+ *`ss`* \
+ Seconds. Separated from *`mm`* by a colon (**`:`**).
 
- *dzn* \
- Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *dzn*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
+ *`dzn`* \
+ Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *`dzn`*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
 
 > [!NOTE]
 > Take care in computing the sign of the time difference. Because the time difference is the offset from local time to UTC (rather than the reverse), its sign may be the opposite of what you might intuitively expect. For time zones ahead of UTC, the time difference is negative; for those behind UTC, the difference is positive.

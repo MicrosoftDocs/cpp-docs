@@ -75,13 +75,13 @@ const unsigned char *_mbsstr_l(
 
 ### Parameters
 
-*`str`*<br/>
+*`str`*\
 Null-terminated string to search.
 
-*`strSearch`*<br/>
+*`strSearch`*\
 Null-terminated string to search for.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value

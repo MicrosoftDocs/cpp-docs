@@ -43,7 +43,7 @@ For more information about these and other error codes, see [`errno`, `_doserrno
 
 ## Remarks
 
-The **`_fdopen`** function associates an I/O stream with the file that is identified by *`fd`*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **`_wfdopen`** is a wide-character version of **`_fdopen`**; the *mode* argument to **`_wfdopen`** is a wide-character string. **`_wfdopen`** and **`_fdopen`** otherwise behave identically.
+The **`_fdopen`** function associates an I/O stream with the file that is identified by *`fd`*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **`_wfdopen`** is a wide-character version of **`_fdopen`**; the *`mode`* argument to **`_wfdopen`** is a wide-character string. **`_wfdopen`** and **`_fdopen`** otherwise behave identically.
 
 File descriptors passed into **`_fdopen`** are owned by the returned `FILE *` stream. If **`_fdopen`** is successful, don't call [`_close`](close.md) on the file descriptor. Calling [`fclose`](fclose-fcloseall.md) on the returned `FILE *` also closes the file descriptor.
 
@@ -62,14 +62,14 @@ The *`mode`* character string specifies the type of file access requested for th
 
 When a file is opened with the **`"a"`** or **`"a+"`** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), but it's always moved back to the end of the file before any write operation is carried out. Thus, existing data can't be overwritten. When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [`fflush`](fflush.md), [`fsetpos`](fsetpos.md), [`fseek`](fseek-fseeki64.md), or [`rewind`](rewind.md) operation. You can specify the current position for the [`fsetpos`](fsetpos.md) or [`fseek`](fseek-fseeki64.md) operation, if you want to.
 
-In addition to the above values, the following characters can also be included in *mode* to specify the translation mode for newline characters:
+In addition to the above values, the following characters can also be included in *`mode`* to specify the translation mode for newline characters:
 
 | *`mode`* modifier | Behavior |
 |-----------------|----------|
 | **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input. |
 | **`b`** | Open in binary (untranslated) mode. Any translations from **`t`** mode are suppressed. |
-| **`c`** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
-| **`n`** | Reset the commit flag for the associated *filename* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`Commode.obj`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`Commode.obj`*. |
+| **`c`** | Enable the commit flag for the associated *`filename`* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
+| **`n`** | Reset the commit flag for the associated *`filename`* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`Commode.obj`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`Commode.obj`*. |
 
 The **`t`**, **`c`**, and **`n`** *`mode`* options are Microsoft extensions for **`fopen`** and **`_fdopen`**. Don't use them if you want to preserve ANSI portability.
 

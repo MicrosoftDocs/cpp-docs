@@ -36,12 +36,12 @@ _Lcomplex csinl(
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number that represents an angle, in radians.
 
 ## Return value
 
-The sine of *z*, in radians.
+The sine of *`z`*, in radians.
 
 ## Remarks
 

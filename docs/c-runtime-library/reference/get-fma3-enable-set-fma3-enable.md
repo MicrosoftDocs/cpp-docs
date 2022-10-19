@@ -23,7 +23,7 @@ int _get_FMA3_enable();
 
 ### Parameters
 
-*flag*<br/>
+*`flag`*\
 Set to 1 to enable the FMA3 implementations of the transcendental math floating-point library functions on X64 platforms, or to 0 to use the implementations that do not use FMA3 instructions.
 
 ## Return value

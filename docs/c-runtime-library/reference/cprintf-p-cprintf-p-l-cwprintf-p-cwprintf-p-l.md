@@ -41,13 +41,13 @@ int _cwprintf_p_l(
 
 ### Parameters
 
-*`format`*<br/>
+*`format`*\
 Format-control string.
 
-*`argument`*<br/>
+*`argument`*\
 Optional parameters.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value

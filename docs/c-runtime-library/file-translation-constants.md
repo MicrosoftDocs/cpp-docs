@@ -30,7 +30,7 @@ The translation modes are as follows:
 
    Opens in binary (untranslated) mode. The above translations are suppressed.
 
-If **t** or **b** isn't given in *mode*, the translation mode is defined by the default-mode variable [`_fmode`](./fmode.md). For more information about using text and binary modes, see [Text and binary mode file I/O](./text-and-binary-mode-file-i-o.md).
+If **t** or **b** isn't given in *`mode`*, the translation mode is defined by the default-mode variable [`_fmode`](./fmode.md). For more information about using text and binary modes, see [Text and binary mode file I/O](./text-and-binary-mode-file-i-o.md).
 
 ## See also
 

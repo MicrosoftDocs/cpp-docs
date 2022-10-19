@@ -45,15 +45,15 @@ int _ismbcl2_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c* <= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *`c`* <= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
 ## Remarks
 
@@ -63,14 +63,14 @@ The output value is affected by the setting of the **LC_CTYPE** category setting
 
 |Routine|Test condition (code page 932 only)|
 |-------------|-------------------------------------------|
-|**_ismbcl0**|JIS non-Kanji: 0x8140<=*c*<=0x889E.|
-|**_ismbcl0_l**|JIS non-Kanji: 0x8140<=*c*<=0x889E.|
-|**_ismbcl1**|JIS level-1: 0x889F<=*c*<=0x9872.|
-|**_ismbcl1_l**|JIS level-1: 0x889F<=*c*<=0x9872.|
-|**_ismbcl2**|JIS level-2: 0x989F<=*c*<=0xEAA4.|
-|**_ismbcl2_l**|JIS level-2: 0x989F<=*c*<=0xEAA4.|
+|**_ismbcl0**|JIS non-Kanji: 0x8140<=*`c`*<=0x889E.|
+|**_ismbcl0_l**|JIS non-Kanji: 0x8140<=*`c`*<=0x889E.|
+|**_ismbcl1**|JIS level-1: 0x889F<=*`c`*<=0x9872.|
+|**_ismbcl1_l**|JIS level-1: 0x889F<=*`c`*<=0x9872.|
+|**_ismbcl2**|JIS level-2: 0x989F<=*`c`*<=0xEAA4.|
+|**_ismbcl2_l**|JIS level-2: 0x989F<=*`c`*<=0xEAA4.|
 
-The functions check that the specified value *c* matches the test conditions described above, but do not check that *c* is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [`_ismbbtrail`](ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.
+The functions check that the specified value *`c`* matches the test conditions described above, but do not check that *`c`* is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [`_ismbbtrail`](ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.
 
 **End Code Page 932 Specific**
 

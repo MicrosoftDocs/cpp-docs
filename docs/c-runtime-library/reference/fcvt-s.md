@@ -37,22 +37,22 @@ errno_t _fcvt_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 The supplied buffer that will hold the result of the conversion.
 
-*sizeInBytes*<br/>
+*`sizeInBytes`*\
 The size of the buffer in bytes.
 
-*value*<br/>
+*`value`*\
 Number to be converted.
 
-*count*<br/>
+*`count`*\
 Number of digits after the decimal point.
 
-*dec*<br/>
+*`dec`*\
 Pointer to the stored decimal-point position.
 
-*sign*<br/>
+*`sign`*\
 Pointer to the stored sign indicator.
 
 ## Return value
@@ -63,7 +63,7 @@ When there's an invalid parameter, as listed in the following table, this functi
 
 ### Error conditions
 
-|*buffer*|*sizeInBytes*|value|count|dec|sign|Return|Value in *buffer*|
+|*`buffer`*|*`sizeInBytes`*|*`value`*|*`count`*|*`dec`*|*`sign`*|Return|Value in *`buffer`*|
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|
 |**NULL**|any|any|any|any|any|**EINVAL**|Not modified.|
 |Not **NULL** (points to valid memory)|<=0|any|any|any|any|**EINVAL**|Not modified.|
@@ -72,17 +72,17 @@ When there's an invalid parameter, as listed in the following table, this functi
 
 ## Security Issues
 
-**_fcvt_s** might generate an access violation if *buffer* doesn't point to valid memory and isn't **NULL**.
+**_fcvt_s** might generate an access violation if *`buffer`* doesn't point to valid memory and isn't **NULL**.
 
 ## Remarks
 
-The **_fcvt_s** function converts a floating-point number to a null-terminated character string. The *value* parameter is the floating-point number to be converted. **_fcvt_s** stores the digits of *value* as a string and appends a null character ('\0'). The *count* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *count* places. If there are fewer than *count* digits of precision, the string is padded with zeros.
+The **_fcvt_s** function converts a floating-point number to a null-terminated character string. The *`value`* parameter is the floating-point number to be converted. **_fcvt_s** stores the digits of *`value`* as a string and appends a null character ('\0'). The *`count`* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *`count`* places. If there are fewer than *`count`* digits of precision, the string is padded with zeros.
 
-Only digits are stored in the string. The position of the decimal point and the sign of *value* can be obtained from *dec* and *sign* after the call. The *dec* parameter points to an integer value; this integer value gives the position of the decimal point with respect to the beginning of the string. A zero or negative integer value indicates that the decimal point lies to the left of the first digit. The parameter *sign* points to an integer indicating the sign of *value*. The integer is set to 0 if *value* is positive and is set to a nonzero number if *value* is negative.
+Only digits are stored in the string. The position of the decimal point and the sign of *`value`* can be obtained from *`dec`* and *`sign`* after the call. The *`dec`* parameter points to an integer value; this integer value gives the position of the decimal point with respect to the beginning of the string. A zero or negative integer value indicates that the decimal point lies to the left of the first digit. The parameter *`sign`* points to an integer indicating the sign of *`value`*. The integer is set to 0 if *`value`* is positive and is set to a nonzero number if *`value`* is negative.
 
 A buffer of length **_CVTBUFSIZE** is sufficient for any floating point value.
 
-The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *count* parameter. **_ecvt_s** interprets *count* as the total number of digits in the output string, and **_fcvt_s** interprets *count* as the number of digits after the decimal point.
+The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *`count`* parameter. **_ecvt_s** interprets *`count`* as the total number of digits in the output string, and **_fcvt_s** interprets *`count`* as the number of digits after the decimal point.
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

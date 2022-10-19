@@ -25,10 +25,10 @@ extern "C" void __stdcall _CxxThrowException(
 
 ### Parameters
 
-*pExceptionObject*<br/>
+*`pExceptionObject`*\
 The object that generated the exception.
 
-*pThrowInfo*<br/>
+*`pThrowInfo`*\
 The information that is required to process the exception.
 
 ## Remarks

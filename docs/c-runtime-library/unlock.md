@@ -27,7 +27,7 @@ void __cdecl _unlock(
 
 #### Parameters
 
-*`locknum`*<br/>
+*`locknum`*\
 [in] The identifier of the lock to release.
 
 ## Requirements

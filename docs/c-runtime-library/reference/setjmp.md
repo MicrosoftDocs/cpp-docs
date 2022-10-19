@@ -29,7 +29,7 @@ Variable in which environment is stored.
 
 ## Return value
 
-Returns 0 after saving the stack environment. If **`setjmp`** returns because of a `longjmp` call, it returns the *value* argument of `longjmp`, or if the *value* argument of `longjmp` is 0, **`setjmp`** returns 1. There's no error return.
+Returns 0 after saving the stack environment. If **`setjmp`** returns because of a `longjmp` call, it returns the *`value`* argument of `longjmp`, or if the *`value`* argument of `longjmp` is 0, **`setjmp`** returns 1. There's no error return.
 
 ## Remarks
 

@@ -38,15 +38,15 @@ int _towlower_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to convert.
 
-*locale*<br/>
+*`locale`*\
 Locale to use for locale-specific translation.
 
 ## Return value
 
-Each of these routines converts a copy of *c* to lower case if the conversion is possible, and returns the result. There is no return value reserved to indicate an error.
+Each of these routines converts a copy of *`c`* to lower case if the conversion is possible, and returns the result. There is no return value reserved to indicate an error.
 
 ## Remarks
 

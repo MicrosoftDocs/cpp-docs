@@ -28,17 +28,17 @@ long double atanh( long double x );  // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value.
 
 ## Return value
 
-The **atanh** functions return the inverse hyperbolic tangent (arc hyperbolic tangent) of *x*. If *x* is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.
+The **atanh** functions return the inverse hyperbolic tangent (arc hyperbolic tangent) of *`x`*. If *`x`* is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If *`x`* is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.
 
 |Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-------------------------|
 |± QNAN, IND|none|none|
-|*X* ≥ 1; *x* ≤ -1|none|none|
+|*`X`* ≥ 1; *`x`* ≤ -1|none|none|
 
 ## Remarks
 

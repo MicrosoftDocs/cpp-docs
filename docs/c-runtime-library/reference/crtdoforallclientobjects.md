@@ -25,10 +25,10 @@ void _CrtDoForAllClientObjects(
 
 ### Parameters
 
-*`pfn`*<br/>
+*`pfn`*\
 Pointer to the application-supplied function callback function. The first parameter to this function points to the data. The second parameter is the context pointer that is passed to the call to **_CrtDoForAllClientObjects**.
 
-*`context`*<br/>
+*`context`*\
 Pointer to the application-supplied context to pass to the application-supplied function.
 
 ## Remarks

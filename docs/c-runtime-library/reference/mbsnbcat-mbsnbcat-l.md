@@ -48,16 +48,16 @@ unsigned char *_mbsnbcat_l(
 
 ### Parameters
 
-*dest*<br/>
+*`dest`*\
 Null-terminated multibyte-character destination string.
 
-*src*<br/>
+*`src`*\
 Null-terminated multibyte-character source string.
 
-*count*<br/>
-Number of bytes from *src* to append to *dest*.
+*`count`*\
+Number of bytes from *`src`* to append to *`dest`*.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -66,13 +66,13 @@ Locale to use.
 
 ## Remarks
 
-The **_mbsnbcat** function appends, at most, the first *count* bytes of *src* to *dest*. If the byte immediately preceding the null character in *dest* is a lead byte, the initial byte of *src* overwrites this lead byte. Otherwise, the initial byte of *src* overwrites the terminating null character of *dest*. If a null byte appears in *src* before *count* bytes are appended, **_mbsnbcat** appends all bytes from *src*, up to the null character. If *count* is greater than the length of *src*, the length of *src* is used in place of *count*. The resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
+The **_mbsnbcat** function appends, at most, the first *`count`* bytes of *`src`* to *`dest`*. If the byte immediately preceding the null character in *`dest`* is a lead byte, the initial byte of *`src`* overwrites this lead byte. Otherwise, the initial byte of *`src`* overwrites the terminating null character of *`dest`*. If a null byte appears in *`src`* before *`count`* bytes are appended, **_mbsnbcat** appends all bytes from *`src`*, up to the null character. If *`count`* is greater than the length of *`src`*, the length of *`src`* is used in place of *`count`*. The resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The **_mbsnbcat** version of the function uses the current locale for this locale-dependent behavior; the **_mbsnbcat_l** version is identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 **Security Note** Use a null-terminated string. The null-terminated string must not exceed the size of the destination buffer. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-If *dest* or *src* is **NULL**, the function will generate an invalid parameter error, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function returns **EINVAL** and sets **errno** to **EINVAL**.
+If *`dest`* or *`src`* is **NULL**, the function will generate an invalid parameter error, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function returns **EINVAL** and sets **errno** to **EINVAL**.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

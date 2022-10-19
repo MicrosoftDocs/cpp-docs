@@ -36,12 +36,12 @@ _Lcomplex cacoshl(
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number that represents an angle, in radians.
 
 ## Return value
 
-The inverse hyperbolic cosine of *z*, in radians. The result is unbounded and non-negative along the real axis, and  in the interval [-iπ, +iπ] along the imaginary axis.
+The inverse hyperbolic cosine of *`z`*, in radians. The result is unbounded and non-negative along the real axis, and  in the interval [-iπ, +iπ] along the imaginary axis.
 
 ## Remarks
 

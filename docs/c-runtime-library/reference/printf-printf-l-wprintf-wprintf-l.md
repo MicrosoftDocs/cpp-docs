@@ -38,13 +38,13 @@ int _wprintf_l(
 
 ### Parameters
 
-*`format`*<br/>
+*`format`*\
 Format control.
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value

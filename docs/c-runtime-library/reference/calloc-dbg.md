@@ -28,21 +28,21 @@ void *_calloc_dbg(
 
 ### Parameters
 
-*`number`*<br/>
+*`number`*\
 Requested number of memory blocks.
 
-*`size`*<br/>
+*`size`*\
 Requested size of each memory block (bytes).
 
-*`blockType`*<br/>
+*`blockType`*\
 Requested type of memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 For information about the allocation block types and how they're used, see[Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
-*`filename`*<br/>
+*`filename`*\
 Pointer to name of the source file that requested allocation operation or **NULL**.
 
-*`linenumber`*<br/>
+*`linenumber`*\
 Line number in the source file where allocation operation was requested or **NULL**.
 
 The *`filename`* and *`linenumber`* parameters are only available when **_calloc_dbg** has been called explicitly or the [`_CRTDBG_MAP_ALLOC`](../crtdbg-map-alloc.md) preprocessor constant has been defined.
@@ -53,7 +53,7 @@ On successful completion, this function returns a pointer to the user portion of
 
 ## Remarks
 
-**_calloc_dbg** is a debug version of the [`calloc`](calloc.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **_calloc_dbg** is reduced to a call to **calloc**. Both **calloc** and **_calloc_dbg** allocate *number* memory blocks in the base heap, but **_calloc_dbg** offers several debugging features:
+**_calloc_dbg** is a debug version of the [`calloc`](calloc.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **_calloc_dbg** is reduced to a call to **calloc**. Both **calloc** and **_calloc_dbg** allocate *`number`* memory blocks in the base heap, but **_calloc_dbg** offers several debugging features:
 
 - Buffers on either side of the user portion of the block to test for leaks.
 

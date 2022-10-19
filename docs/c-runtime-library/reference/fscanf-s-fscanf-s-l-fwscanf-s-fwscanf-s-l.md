@@ -43,16 +43,16 @@ int _fwscanf_s_l(
 
 ### Parameters
 
-*`stream`*<br/>
+*`stream`*\
 Pointer to **`FILE`** structure.
 
-*`format`*<br/>
+*`format`*\
 Format-control string.
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value
@@ -63,7 +63,7 @@ These functions validate their parameters. If *`stream`* is an invalid file poin
 
 ## Remarks
 
-The **`fscanf_s`** function reads data from the current position of *`stream`* into the locations that are given by *`argument`* (if any). Each *`argument`* must be a pointer to a variable of a type that corresponds to a type specifier in *`format`*. *`format`* controls the interpretation of the input fields and has the same form and function as the *format* argument for **`scanf_s`**; see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md) for a description of *format*.  **`fwscanf_s`** is a wide-character version of **`fscanf_s`**; the format argument to **`fwscanf_s`** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **`fscanf_s`** doesn't currently support input from a UNICODE stream.
+The **`fscanf_s`** function reads data from the current position of *`stream`* into the locations that are given by *`argument`* (if any). Each *`argument`* must be a pointer to a variable of a type that corresponds to a type specifier in *`format`*. *`format`* controls the interpretation of the input fields and has the same form and function as the *`format`* argument for **`scanf_s`**; see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md) for a description of *`format`*.  **`fwscanf_s`** is a wide-character version of **`fscanf_s`**; the format argument to **`fwscanf_s`** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **`fscanf_s`** doesn't currently support input from a UNICODE stream.
 
 The main difference between the more secure functions (that have the **`_s`** suffix) and the other versions is that the more secure functions require the size in characters of each **`c`**, **`C`**, **`s`**, **`S`**, and **`[`** type field to be passed as an argument immediately following the variable. For more information, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [`scanf` Width Specification](../scanf-width-specification.md).
 

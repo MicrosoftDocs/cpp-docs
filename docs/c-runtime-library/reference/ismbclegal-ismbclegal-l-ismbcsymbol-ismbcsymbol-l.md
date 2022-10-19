@@ -38,15 +38,15 @@ int _ismbcsymbol_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *`c`*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
 ## Remarks
 
@@ -56,8 +56,8 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |Routine|Test condition|Code page 932 example|
 |-------------|--------------------|---------------------------|
-|**_ismbclegal**|Valid multibyte|Returns nonzero if and only if the first byte of *c* is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|
-|**_ismbcsymbol**|Multibyte symbol|Returns nonzero if and only if 0x8141<=*c*<=0x81AC.|
+|**_ismbclegal**|Valid multibyte|Returns nonzero if and only if the first byte of *`c`* is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|
+|**_ismbcsymbol**|Multibyte symbol|Returns nonzero if and only if 0x8141<=*`c`*<=0x81AC.|
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

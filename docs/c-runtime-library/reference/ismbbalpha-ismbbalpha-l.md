@@ -27,10 +27,10 @@ int _ismbbalpha_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -39,7 +39,7 @@ Locale to use.
 
 `isalpha(c) || _ismbbkalnum(c)`
 
-is nonzero for *c*, or 0 if it is not. **_ismbbalpha** uses the current locale for any locale-dependent character settings. **_ismbbalpha_l** is identical except that it uses the locale passed in.
+is nonzero for *`c`*, or 0 if it is not. **_ismbbalpha** uses the current locale for any locale-dependent character settings. **_ismbbalpha_l** is identical except that it uses the locale passed in.
 
 ## Remarks
 

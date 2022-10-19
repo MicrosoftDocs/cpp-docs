@@ -31,15 +31,15 @@ unsigned int _mbctombb_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Multibyte character to convert.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-If successful, **_mbctombb** and **_mbctombb_l** returns the single-byte character that corresponds to *c*; otherwise it returns *c*.
+If successful, **_mbctombb** and **_mbctombb_l** returns the single-byte character that corresponds to *`c`*; otherwise it returns *`c`*.
 
 ## Remarks
 

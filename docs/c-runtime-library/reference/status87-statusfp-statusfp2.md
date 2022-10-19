@@ -24,10 +24,10 @@ void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
 
 ### Parameters
 
-*px86*<br/>
+*`px86`*\
 This address is filled with the status word for the x87 floating-point unit.
 
-*pSSE2*<br/>
+*`pSSE2`*\
 This address is filled with the status word for the SSE2 floating-point unit.
 
 ## Return value

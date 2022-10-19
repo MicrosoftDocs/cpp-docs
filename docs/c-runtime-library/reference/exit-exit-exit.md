@@ -32,7 +32,7 @@ void _exit(
 
 ### Parameters
 
-*`status`*<br/>
+*`status`*\
 Exit status code.
 
 ## Remarks

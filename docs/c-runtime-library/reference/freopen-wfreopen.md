@@ -41,7 +41,7 @@ Pointer to **`FILE`** structure.
 
 ## Return value
 
-Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a **`NULL`** pointer value. If *`path`*, *`mode`*, or *`stream`* is a null pointer, or if *filename* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`NULL`**.
+Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a **`NULL`** pointer value. If *`path`*, *`mode`*, or *`stream`* is a null pointer, or if *`filename`* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`NULL`**.
 
 For more information on these, and other, error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

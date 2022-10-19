@@ -42,12 +42,12 @@ int ilogbl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The specified value.
 
 ## Return value
 
-If successful, return the base-2 exponent of *x* as a **`signed int`** value.
+If successful, return the base-2 exponent of *`x`* as a **`signed int`** value.
 
 Otherwise, returns one of the following values, defined in \<math.h>:
 

@@ -12,7 +12,7 @@ ms.assetid: 477aaf0c-ac58-4252-89dd-9f3e35d47536
 ---
 # _CIpow
 
-Calculates *x* raised to the *y* power based on the top values in the stack.
+Calculates *`x`* raised to the *`y`* power based on the top values in the stack.
 
 ## Syntax
 

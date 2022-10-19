@@ -34,16 +34,16 @@ void _wassert(
 
 ### Parameters
 
-*`expression`*<br/>
+*`expression`*\
 A scalar expression (including pointer expressions) that evaluates to nonzero (**`true`**) or 0 (**`false`**).
 
-*`message`*<br/>
+*`message`*\
 The message to display.
 
-*`filename`*<br/>
+*`filename`*\
 The name of the source file the assertion failed in.
 
-*`line`*<br/>
+*`line`*\
 The line number in the source file of the failed assertion.
 
 ## Remarks

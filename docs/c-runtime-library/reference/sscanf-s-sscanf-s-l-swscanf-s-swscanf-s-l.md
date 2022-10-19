@@ -43,16 +43,16 @@ int _swscanf_s_l(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Stored data
 
-*`format`*<br/>
+*`format`*\
 Format-control string. For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use
 
 ## Return value
@@ -65,7 +65,7 @@ For information about these and other error codes, see [`errno`, `_doserrno`, `_
 
 ## Remarks
 
-The **`sscanf_s`** function reads data from *`buffer`* into the location that's given by each *`argument`*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md), a buffer size parameter is required when you use the type field characters **`c`**, **`C`**, **`s`**, **`S`**, or string control sets that are enclosed in **`[]`**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it. For example, if you are reading into a string, the buffer size for that string is passed as follows:
+The **`sscanf_s`** function reads data from *`buffer`* into the location that's given by each *`argument`*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *`format`*. Unlike the less secure version [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md), a buffer size parameter is required when you use the type field characters **`c`**, **`C`**, **`s`**, **`S`**, or string control sets that are enclosed in **`[]`**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it. For example, if you are reading into a string, the buffer size for that string is passed as follows:
 
 ```C
 wchar_t ws[10];

@@ -25,10 +25,10 @@ int _setmode (
 
 ### Parameters
 
-*`fd`*<br/>
+*`fd`*\
 File descriptor.
 
-*`mode`*<br/>
+*`mode`*\
 New translation mode.
 
 ## Return value

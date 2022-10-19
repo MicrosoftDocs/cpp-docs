@@ -24,19 +24,19 @@ double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 
 ### Parameters
 
-*timeEnd*<br/>
+*`timeEnd`*\
 Ending time.
 
-*timeStart*<br/>
+*`timeStart`*\
 Beginning time.
 
 ## Return value
 
-**difftime** returns the elapsed time in seconds, from *timeStart* to *timeEnd*. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.
+**difftime** returns the elapsed time in seconds, from *`timeStart`* to *`timeEnd`*. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.
 
 ## Remarks
 
-The **difftime** function computes the difference between the two supplied time values *timeStart* and *timeEnd*.
+The **difftime** function computes the difference between the two supplied time values *`timeStart`* and *`timeEnd`*.
 
 The time value supplied must fit within the range of **time_t**. **time_t** is a 64-bit value. Thus, the end of the range was extended from 23:59:59 January 18, 2038, UTC to 23:59:59, December 31, 3000. The lower range of **time_t** is still midnight, January 1, 1970.
 

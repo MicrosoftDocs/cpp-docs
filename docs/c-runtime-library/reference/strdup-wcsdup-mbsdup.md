@@ -33,7 +33,7 @@ unsigned char *_mbsdup(
 
 ### Parameters
 
-*`strSource`*<br/>
+*`strSource`*\
 Null-terminated source string.
 
 ## Return value
@@ -42,7 +42,7 @@ Each of these functions returns a pointer to the storage location for the copied
 
 ## Remarks
 
-The **`_strdup`** function calls [`malloc`](malloc.md) to allocate storage space for a copy of *strSource* and then copies *strSource* to the allocated space.
+The **`_strdup`** function calls [`malloc`](malloc.md) to allocate storage space for a copy of *`strSource`* and then copies *`strSource`* to the allocated space.
 
 **`_wcsdup`** and **`_mbsdup`** are wide-character and multibyte-character versions of **`_strdup`**. The arguments and return value of **`_wcsdup`** are wide-character strings; those of **`_mbsdup`** are multibyte-character strings. These three functions behave identically otherwise.
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tcsdup`**|**`_strdup`**|**`_mbsdup`**|**`_wcsdup`**|
 
-Because **`_strdup`** calls **`malloc`** to allocate storage space for the copy of *strSource*, it is good practice always to release this memory by calling the [`free`](free.md) routine on the pointer that's returned by the call to **`_strdup`**.
+Because **`_strdup`** calls **`malloc`** to allocate storage space for the copy of *`strSource`*, it is good practice always to release this memory by calling the [`free`](free.md) routine on the pointer that's returned by the call to **`_strdup`**.
 
 If **`_DEBUG`** and **`_CRTDBG_MAP_ALLOC`** are defined, **`_strdup`** and **`_wcsdup`** are replaced by calls to **`_strdup_dbg`** and **`_wcsdup_dbg`** to allow for debugging memory allocations. For more information, see [`_strdup_dbg`, `_wcsdup_dbg`](strdup-dbg-wcsdup-dbg.md).
 

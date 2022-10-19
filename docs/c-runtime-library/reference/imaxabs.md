@@ -24,7 +24,7 @@ intmax_t imaxabs(
 
 ### Parameters
 
-*n*<br/>
+*`n`*\
 Integer value.
 
 ## Return value

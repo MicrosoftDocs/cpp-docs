@@ -28,36 +28,36 @@ void *bsearch(
 
 ### Parameters
 
-*key*\
+*`key`*\
 Pointer to the key to search for.
 
-*base*\
+*`base`*\
 Pointer to the base of the search data.
 
-*number*\
+*`number`*\
 Number of elements.
 
-*width*\
+*`width`*\
 Width of elements.
 
-*compare*\
+*`compare`*\
 Callback function that compares two elements. The first is a pointer to the key for the search, and the second is a pointer to the array element to be compared with the key.
 
 ## Return value
 
-**bsearch** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* isn't found, the function returns **NULL**. If the array isn't in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
+**bsearch** returns a pointer to an occurrence of *`key`* in the array pointed to by *`base`*. If *`key`* isn't found, the function returns **NULL**. If the array isn't in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
 ## Remarks
 
-The **bsearch** function performs a binary search of a sorted array of *number* elements, each of *width* bytes in size. The *base* value is a pointer to the base of the array to be searched, and *key* is the value being sought. The *compare* parameter is a pointer to a user-supplied routine that compares the requested key to an array element. It returns one of the following values that specify their relationship:
+The **bsearch** function performs a binary search of a sorted array of *`number`* elements, each of *`width`* bytes in size. The *`base`* value is a pointer to the base of the array to be searched, and *`key`* is the value being sought. The *`compare`* parameter is a pointer to a user-supplied routine that compares the requested key to an array element. It returns one of the following values that specify their relationship:
 
-|Value returned by *compare* routine|Description|
+|Value returned by *`compare`* routine|Description|
 |-----------------------------------------|-----------------|
 |`< 0`|Key is less than array element.|
 |`0`|Key is equal to array element.|
 |`> 0`|Key is greater than array element.|
 
-This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is zero, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
+This function validates its parameters. If *`compare`*, *`key`* or *`number`* is **NULL**, or if *`base`* is **NULL** and *`number`* is nonzero, or if *`width`* is zero, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

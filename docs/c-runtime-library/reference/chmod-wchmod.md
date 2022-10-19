@@ -23,10 +23,10 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 ### Parameters
 
-*filename*<br/>
+*`filename`*\
 Name of the existing file.
 
-*pmode*<br/>
+*`pmode`*\
 Permission setting for the file.
 
 ## Return value
@@ -35,7 +35,7 @@ These functions return 0 if the permission setting is successfully changed. A re
 
 ## Remarks
 
-The **_chmod** function changes the permission setting of the file specified by *filename*. The permission setting controls the read and write access to the file. The integer expression *pmode* contains one or both of the following manifest constants, defined in SYS\Stat.h.
+The **_chmod** function changes the permission setting of the file specified by *`filename`*. The permission setting controls the read and write access to the file. The integer expression *`pmode`* contains one or both of the following manifest constants, defined in SYS\Stat.h.
 
 | *`pmode`* | Meaning |
 |-|-|
@@ -45,9 +45,9 @@ The **_chmod** function changes the permission setting of the file specified by 
 
 When both constants are given, they're joined with the bitwise or operator (**`|`**). If write permission isn't given, the file is read-only. Note that all files are always readable; it isn't possible to give write-only permission. Thus, the modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are equivalent.
 
-**_wchmod** is a wide-character version of **_chmod**; the *filename* argument to **_wchmod** is a wide-character string. **_wchmod** and **_chmod** behave identically otherwise.
+**_wchmod** is a wide-character version of **_chmod**; the *`filename`* argument to **_wchmod** is a wide-character string. **_wchmod** and **_chmod** behave identically otherwise.
 
-This function validates its parameters. If *pmode* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores them. If *filename* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns -1.
+This function validates its parameters. If *`pmode`* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores them. If *`filename`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns -1.
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 

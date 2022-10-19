@@ -41,19 +41,19 @@ long double exp2l(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The value of the exponent.
 
 ## Return value
 
-If successful, returns the base-2 exponent of *x*, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:
+If successful, returns the base-2 exponent of *`x`*, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:
 
 |Issue|Return|
 |-----------|------------|
-|*x* = ±0|1|
-|*x* = -INFINITY|+0|
-|*x* = +INFINITY|+INFINITY|
-|*x* = NaN|NaN|
+|*`x`* = ±0|1|
+|*`x`* = -INFINITY|+0|
+|*`x`* = +INFINITY|+INFINITY|
+|*`x`* = NaN|NaN|
 |Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
 |Underflow range error|Correct result, after rounding|
 

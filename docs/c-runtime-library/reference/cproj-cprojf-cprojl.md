@@ -37,12 +37,12 @@ _Lcomplex cprojl(
 
 ### Parameters
 
-*z*\
+*`z`*\
 A complex number.
 
 ## Return value
 
-The projection of *z* on the Reimann sphere.
+The projection of *`z`* on the Reimann sphere.
 
 ## Remarks
 

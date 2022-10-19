@@ -28,15 +28,15 @@ int _ismbbkprint_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-**_ismbbkprint** returns a nonzero value if the integer *c* is a non-ASCII text or non-ASCII punctuation symbol or 0 if it is not. For example, in code page 932 only, **_ismbbkprint** tests for katakana alphanumeric or katakana punctuation (range: 0xA1 - 0xDF). **_ismbbkprint** uses the current locale for locale-dependent character settings. **_ismbbkprint_l** is identical except that it uses the locale passed in. For more information, see [Locale](../locale.md).
+**_ismbbkprint** returns a nonzero value if the integer *`c`* is a non-ASCII text or non-ASCII punctuation symbol or 0 if it is not. For example, in code page 932 only, **_ismbbkprint** tests for katakana alphanumeric or katakana punctuation (range: 0xA1 - 0xDF). **_ismbbkprint** uses the current locale for locale-dependent character settings. **_ismbbkprint_l** is identical except that it uses the locale passed in. For more information, see [Locale](../locale.md).
 
 ## Remarks
 

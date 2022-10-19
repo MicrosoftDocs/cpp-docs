@@ -28,15 +28,15 @@ long double remainder( long double x, long double y ); /* C++ only */
 
 ### Parameters
 
-*x*\
+*`x`*\
 The numerator.
 
-*y*\
+*`y`*\
 The denominator.
 
 ## Return value
 
-The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remainder** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
+The floating-point remainder of *`x`* / *`y`*. If the value of *`y`* is 0.0, **remainder** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
 

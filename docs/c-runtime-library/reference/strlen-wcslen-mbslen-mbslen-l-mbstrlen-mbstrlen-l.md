@@ -44,10 +44,10 @@ size_t _mbstrlen_l(
 
 ### Parameters
 
-*`str`*<br/>
+*`str`*\
 Null-terminated string.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value

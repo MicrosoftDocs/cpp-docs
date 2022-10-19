@@ -59,7 +59,7 @@ The **`_popen`** function creates a pipe. It then asynchronously executes a spaw
 > [!NOTE]
 > If used in a Windows program, the **`_popen`** function returns an invalid file pointer that causes the program to stop responding indefinitely. **`_popen`** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a child process with redirected input and output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
 
-**`_wpopen`** is a wide-character version of **`_popen`**; the *path* argument to **`_wpopen`** is a wide-character string. **`_wpopen`** and **`_popen`** behave identically otherwise.
+**`_wpopen`** is a wide-character version of **`_popen`**; the *`path`* argument to **`_wpopen`** is a wide-character string. **`_wpopen`** and **`_popen`** behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

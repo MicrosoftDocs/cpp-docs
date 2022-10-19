@@ -28,12 +28,12 @@ long double cos( long double x );  // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Angle in radians.
 
 ## Return value
 
-The cosine of *x*. If *x* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
+The cosine of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
 |Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|

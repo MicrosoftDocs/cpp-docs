@@ -25,10 +25,10 @@ int fegetexceptflag(
 
 ### Parameters
 
-*`pstatus`*<br/>
+*`pstatus`*\
 A pointer to a **fexcept_t** object to contain the current values of the  exception flags specified by *`excepts`*.
 
-*`excepts`*<br/>
+*`excepts`*\
 The floating-point exception flags to store in *`pstatus`*.
 
 ## Return value

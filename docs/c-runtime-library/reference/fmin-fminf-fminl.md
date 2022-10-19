@@ -47,21 +47,21 @@ long double fminl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The first value to compare.
 
-*y*\
+*`y`*\
 The second value to compare.
 
 ## Return value
 
-If successful, returns the smaller of *x* or *y*.
+If successful, returns the smaller of *`x`* or *`y`*.
 
 |Input|Result|
 |-----------|------------|
-|*x* is NaN|*y*|
-|*y* is NaN|*x*|
-|*x* and *y* are NaN|NaN|
+|*`x`* is NaN|*`y`*|
+|*`y`* is NaN|*`x`*|
+|*`x`* and *`y`* are NaN|NaN|
 
 The function does not cause [`_matherr`](matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
 

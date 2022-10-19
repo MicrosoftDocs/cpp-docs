@@ -51,10 +51,10 @@ unsigned char *_mbscat(
 
 ### Parameters
 
-*`strDestination`*<br/>
+*`strDestination`*\
 Null-terminated destination string.
 
-*`strSource`*<br/>
+*`strSource`*\
 Null-terminated source string.
 
 ## Return value
@@ -66,7 +66,7 @@ Each of these functions returns the destination string (*`strDestination`*). No 
 The **`strcat`** function appends *`strSource`* to *`strDestination`* and terminates the resulting string with a null character. The initial character of *`strSource`* overwrites the terminating null character of *`strDestination`*. The behavior of **`strcat`** is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
-> Because **`strcat`** does not check for sufficient space in *strDestination* before appending *strSource*, it is a potential cause of buffer overruns. Consider using [`strncat`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) instead.
+> Because **`strcat`** does not check for sufficient space in *`strDestination`* before appending *`strSource`*, it is a potential cause of buffer overruns. Consider using [`strncat`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) instead.
 
 **`wcscat`** and **`_mbscat`** are wide-character and multibyte-character versions of **`strcat`**. The arguments and return value of **`wcscat`** are wide-character strings; those of **`_mbscat`** are multibyte-character strings. These three functions behave identically otherwise.
 

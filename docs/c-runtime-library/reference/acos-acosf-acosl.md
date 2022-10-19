@@ -32,7 +32,7 @@ Value between -1 and 1, for which to calculate the arccosine (the inverse cosine
 
 ## Return value
 
-The **`acos`** function returns the arccosine of *x* in the range 0 to π radians.
+The **`acos`** function returns the arccosine of *`x`* in the range 0 to π radians.
 
 By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an indefinite.
 

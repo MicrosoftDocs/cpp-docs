@@ -33,20 +33,20 @@ void _mbccpy_l(
 
 ### Parameters
 
-*dest*<br/>
+*`dest`*\
 Copy destination.
 
-*src*<br/>
+*`src`*\
 Multibyte character to copy.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Remarks
 
-The **_mbccpy** function copies one multibyte character from *src* to *dest*.
+The **_mbccpy** function copies one multibyte character from *`src`* to *`dest`*.
 
-This function validates its parameters. If **_mbccpy** is passed a null pointer for *dest* or *src*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL**.
+This function validates its parameters. If **_mbccpy** is passed a null pointer for *`dest`* or *`src`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL**.
 
 **_mbccpy** uses the current locale for any locale-dependent behavior. **_mbccpy_l** is identical to **_mbccpy** except that **_mbccpy_l** uses the locale passed in for any locale-dependent behavior. For more information, see [Locale](../locale.md).
 

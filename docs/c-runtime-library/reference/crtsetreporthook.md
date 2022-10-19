@@ -24,7 +24,7 @@ _CRT_REPORT_HOOK _CrtSetReportHook(
 
 ### Parameters
 
-*reportHook*<br/>
+*`reportHook`*\
 New client-defined reporting function to hook into the C run-time debug reporting process.
 
 ## Return value
@@ -37,13 +37,13 @@ Returns the previous client-defined reporting function.
 
 For a more robust version of **_CrtSetReportHook**, see [`_CrtSetReportHook2`](crtsetreporthook2-crtsetreporthookw2.md).
 
-The **_CrtSetReportHook** function installs the new client-defined reporting function specified in *reportHook* and returns the previous client-defined hook. The following example demonstrates how a client-defined report hook should be prototyped:
+The **_CrtSetReportHook** function installs the new client-defined reporting function specified in *`reportHook`* and returns the previous client-defined hook. The following example demonstrates how a client-defined report hook should be prototyped:
 
 ```C
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-where *reportType* is the debug report type (**_CRT_WARN**, **_CRT_ERROR**, or **_CRT_ASSERT**), *message* is the fully assembled debug user message to be contained in the report, and **returnValue** is the value specified by the client-defined reporting function that should be returned by **_CrtDbgReport**. For a complete description of the available report types, see the [`_CrtSetReportMode`](crtsetreportmode.md) function.
+where *`reportType`* is the debug report type (**_CRT_WARN**, **_CRT_ERROR**, or **_CRT_ASSERT**), *`message`* is the fully assembled debug user message to be contained in the report, and **returnValue** is the value specified by the client-defined reporting function that should be returned by **_CrtDbgReport**. For a complete description of the available report types, see the [`_CrtSetReportMode`](crtsetreportmode.md) function.
 
 If the client-defined reporting function completely handles the debug message such that no further reporting is required, then the function should return **TRUE**. When the function returns **FALSE**, **_CrtDbgReport** is called to generate the debug report using the current settings for the report type, mode, and file. In addition, by specifying the **_CrtDbgReport** return value in **returnValue**, the application can also control whether a debug break occurs. For a complete description of how the debug report is configured and generated, see **_CrtSetReportMode**, [`_CrtSetReportFile`](crtsetreportfile.md), and **_CrtDbgReport**.
 

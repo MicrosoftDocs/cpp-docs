@@ -41,15 +41,15 @@ double _yn(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 Floating-point value.
 
-*n*<br/>
+*`n`*\
 Integer order of Bessel function.
 
 ## Return value
 
-Each of these routines returns a Bessel function of *x*. If *x* is negative in the **_y0**, **_y1**, or **_yn** functions, the routine sets **errno** to **EDOM**, prints a **_DOMAIN** error message to **stderr**, and returns **_HUGE_VAL**. You can modify error handling by using **_matherr**.
+Each of these routines returns a Bessel function of *`x`*. If *`x`* is negative in the **_y0**, **_y1**, or **_yn** functions, the routine sets **errno** to **EDOM**, prints a **_DOMAIN** error message to **stderr**, and returns **_HUGE_VAL**. You can modify error handling by using **_matherr**.
 
 ## Remarks
 

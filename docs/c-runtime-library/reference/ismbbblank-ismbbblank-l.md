@@ -29,15 +29,15 @@ int _ismbbblank_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-**_ismbbblank** returns a nonzero value if *c* represents a space (0x20) character, a horizontal tab (0x09) character, or a locale-specific character that's used to separate words within a line of text for which **isspace** is true; otherwise, returns 0. **_ismbbblank** uses the current locale for any locale-dependent behavior. **_ismbbblank_l** is identical except that it instead uses the locale that's passed in. For more information, see [Locale](../locale.md).
+**_ismbbblank** returns a nonzero value if *`c`* represents a space (0x20) character, a horizontal tab (0x09) character, or a locale-specific character that's used to separate words within a line of text for which **isspace** is true; otherwise, returns 0. **_ismbbblank** uses the current locale for any locale-dependent behavior. **_ismbbblank_l** is identical except that it instead uses the locale that's passed in. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
