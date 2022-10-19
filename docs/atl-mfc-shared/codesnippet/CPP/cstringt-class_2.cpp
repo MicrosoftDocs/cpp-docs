@@ -1,5 +1,5 @@
    // OEM character 252 on most IBM-compatible computers in
-   // Western countries/regions is superscript n, as in 2^n.
+   // many countries/regions is superscript n, as in 2^n.
    // Converting it to the ANSI English charset results in a
    // normal character 'n', which is the closest possible
    // representation.
