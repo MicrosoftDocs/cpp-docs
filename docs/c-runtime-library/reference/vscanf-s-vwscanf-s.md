@@ -11,7 +11,7 @@ ms.assetid: 23a1c383-5b01-4887-93ce-534a1e38ed93
 ---
 # vscanf_s, vwscanf_s
 
-Reads formatted data from the standard input stream. These versions of [vscanf, vwscanf](vscanf-vwscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data from the standard input stream. These versions of [vscanf, vwscanf](vscanf-vwscanf.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -34,11 +34,11 @@ Format control string.
 *arglist*<br/>
 Variable argument list.
 
-## Return Value
+## Return value
 
-Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **vscanf_s** and **vwscanf_s** return **EOF** and set **errno** to **EINVAL**.
+Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **vscanf_s** and **vwscanf_s** return **EOF** and set **errno** to **EINVAL**.
 
-For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -53,15 +53,15 @@ The buffer size includes the terminating null. You can use a width-specification
 > [!NOTE]
 > The *size* parameter is of type **`unsigned`**, not **size_t**.
 
-For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
+For more information, see [scanf Width Specification](../scanf-width-specification.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vtscanf_s**|**vscanf_s**|**vscanf_s**|**vwscanf_s**|
 
-For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## Requirements
 
@@ -70,7 +70,7 @@ For more information, see [Format Specification Fields: scanf and wscanf Functio
 |**vscanf_s**|\<stdio.h>|
 |**wscanf_s**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -137,10 +137,10 @@ The contents are: 36 92.300003 y n Wide characters
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[vscanf, vwscanf](vscanf-vwscanf.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[Stream I/O](../stream-i-o.md)\
+[Locale](../locale.md)\
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)\
+[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)\
+[vscanf, vwscanf](vscanf-vwscanf.md)

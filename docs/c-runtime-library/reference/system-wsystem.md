@@ -33,7 +33,7 @@ int _wsystem(
 *`command`*<br/>
 The command to be executed.
 
-## Return Value
+## Return value
 
 If *`command`* is **`NULL`** and the command interpreter is found, returns a nonzero value. If the command interpreter isn't found, returns 0 and sets **`errno`** to **`ENOENT`**. If *`command`* isn't **`NULL`**, **`system`** returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of -1 indicates an error, and **`errno`** is set to one of the following values:
 
@@ -56,7 +56,7 @@ You must explicitly flush, by using [`fflush`](fflush.md) or [`_flushall`](flush
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -69,7 +69,7 @@ By default, this function's global state is scoped to the application. To change
 |**`system`**|`<process.h>` or `<stdlib.h>`|
 |**`_wsystem`**|`<process.h>` or `<stdlib.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -102,8 +102,8 @@ Line two.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[`_exec`, `_wexec` Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)<br/>
-[`_flushall`](flushall.md)<br/>
-[`_spawn`, `_wspawn` Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`_exec`, `_wexec` Functions](../exec-wexec-functions.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_flushall`](flushall.md)\
+[`_spawn`, `_wspawn` Functions](../spawn-wspawn-functions.md)

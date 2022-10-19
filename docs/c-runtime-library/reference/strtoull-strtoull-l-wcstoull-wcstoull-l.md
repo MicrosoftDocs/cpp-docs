@@ -55,17 +55,17 @@ Number base to use.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 **strtoull** returns the converted value, if any, or **ULLONG_MAX** on overflow. **strtoull** returns 0 if no conversion can be performed. **wcstoull** returns values analogously to **strtoull**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs.
 
-For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 Each of these functions converts the input string *strSource* to an **`unsigned long long`** integer value.
 
-**strtoull** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to *base*. The setting of the **LC_NUMERIC** category of the locale determines recognition of the radix character in *strSource*; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). **strtoull** and **wcstoull** use the current locale; **_strtoull_l** and **_wcstoull_l** instead use the locale that's passed in but are identical otherwise. For more information, see [Locale](../../c-runtime-library/locale.md).
+**strtoull** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to *base*. The setting of the **LC_NUMERIC** category of the locale determines recognition of the radix character in *strSource*; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). **strtoull** and **wcstoull** use the current locale; **_strtoull_l** and **_wcstoull_l** instead use the locale that's passed in but are identical otherwise. For more information, see [Locale](../locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location that's pointed to by *endptr*.
 
@@ -73,7 +73,7 @@ If *endptr* is not **NULL**, a pointer to the character that stopped the scan is
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -95,7 +95,7 @@ A *whitespace* may consist of space and tab characters, which are ignored. *digi
 |**_strtoull_l**|\<stdlib.h>|
 |**_wcstoull_l**|\<stdlib.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -103,13 +103,13 @@ See the example for [strtod](strtod-strtod-l-wcstod-wcstod-l.md).
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[localeconv](localeconv.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
-[strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
-[strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>
-[strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
-[strtoll, _strtoll_l, wcstoll, _wcstoll_l](strtoll-strtoll-l-wcstoll-wcstoll-l.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[localeconv](localeconv.md)\
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
+[String to numeric value functions](../string-to-numeric-value-functions.md)\
+[strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)\
+[strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)\
+[strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\
+[strtoll, _strtoll_l, wcstoll, _wcstoll_l](strtoll-strtoll-l-wcstoll-wcstoll-l.md)\
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)

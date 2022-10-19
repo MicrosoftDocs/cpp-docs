@@ -39,9 +39,9 @@ File descriptor to the open file.
 *filetime*<br/>
 Pointer to the structure containing the new modification date.
 
-## Return Value
+## Return value
 
-Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and **errno** is set to **EBADF**, indicating an invalid file descriptor, or **EINVAL**, indicating an invalid parameter.
+Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and **errno** is set to **EBADF**, indicating an invalid file descriptor, or **EINVAL**, indicating an invalid parameter.
 
 ## Remarks
 
@@ -59,7 +59,7 @@ By default, this function's global state is scoped to the application. To change
 |**_futime32**|\<sys/utime.h>|\<errno.h>|
 |**_futime64**|\<sys/utime.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -103,7 +103,7 @@ int main( void )
 Arbitrary file contents.
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Volume in drive Z has no label.
@@ -127,4 +127,4 @@ File time modified
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
+[Time management](../time-management.md)

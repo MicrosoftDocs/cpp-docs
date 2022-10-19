@@ -21,7 +21,7 @@ bool __uncaught_exception(
    );
 ```
 
-## Return Value
+## Return value
 
 **`true`** from the time an exception is thrown in a **`try`** block until the matching **`catch`** block is initialized; otherwise, **`false`**.
 
@@ -35,4 +35,4 @@ bool __uncaught_exception(
 
 ## See also
 
-[try, throw, and catch Statements (C++)](../../cpp/try-throw-and-catch-statements-cpp.md)<br/>
+[try, throw, and catch Statements (C++)](../../cpp/try-throw-and-catch-statements-cpp.md)

@@ -43,7 +43,7 @@ long double log2l(
 *x*\
 The value to determine the base-2 logarithm of.
 
-## Return Value
+## Return value
 
 On success, returns return log2 *x*.
 
@@ -74,10 +74,10 @@ By default, this function's global state is scoped to the application. To change
 |**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
 |**log2** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)\
+[log, logf, log10, log10f](log-logf-log10-log10f.md)

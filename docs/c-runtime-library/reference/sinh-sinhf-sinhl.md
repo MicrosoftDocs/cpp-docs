@@ -30,7 +30,7 @@ long double sinh(long double x);  // C++ only
 *`x`*\
 Angle in radians.
 
-## Return Value
+## Return value
 
 The **`sinh`** functions return the hyperbolic sine of *`x`*. By default, if the result is too large, **`sinh`** sets **`errno`** to **`ERANGE`** and returns ±**`HUGE_VAL`**.
 
@@ -39,13 +39,13 @@ The **`sinh`** functions return the hyperbolic sine of *`x`*. By default, if the
 |± `QNAN`,`IND`|None|`_DOMAIN`|
 |`|x| ≥ 7.104760e+002`|`OVERFLOW+INEXACT`|`OVERFLOW`|
 
-For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **`sinh`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`sinh`** always takes and returns **`double`**.
 
-If you use the `<tgmath.h>` `sinh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `sinh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -56,7 +56,7 @@ By default, this function's global state is scoped to the application. To change
 |**`sinh`**, **`sinhf`**, **`sinhl`**|`<math.h>`|`<cmath>` or `<math.h>`|
 |**`sinh()`** macro | `<tgmath.h>` ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -89,7 +89,7 @@ cosh( 1.570796 ) = 2.509178
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`acosh`, `acoshf`, `acoshl`](acosh-acoshf-acoshl.md)\
 [`asinh`, `asinhf`, `asinhl`](asinh-asinhf-asinhl.md)\
 [`atanh`, `atanhf`, `atanhl`](atanh-atanhf-atanhl.md)\

@@ -21,7 +21,7 @@ unsigned int _clear87( void );
 unsigned int _clearfp( void );
 ```
 
-## Return Value
+## Return value
 
 The bits in the value returned indicate the floating-point status before the call to **_clear87** or **_clearfp**. For a complete definition of the bits returned by **_clear87**, see Float.h. Many of the math library functions modify the 8087/80287 status word, with unpredictable results. Return values from **_clear87** and **_status87** become more reliable as fewer floating-point operations are performed between known states of the floating-point status word.
 
@@ -40,7 +40,7 @@ These functions are deprecated when compiling with [/clr (Common Language Runtim
 |**_clear87**|\<float.h>|
 |**_clearfp**|\<float.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -83,6 +83,6 @@ Status: 80000 - denormal
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
-[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)\
+[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)

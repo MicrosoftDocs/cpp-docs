@@ -21,7 +21,7 @@ int ___setlc_active_func(void);
 int * ___unguarded_readlc_active_add_func(void);
 ```
 
-## Return Value
+## Return value
 
 The value returned isn't significant.
 
@@ -37,4 +37,4 @@ Although the internal CRT functions `___setlc_active_func` and `___unguarded_rea
 
 ## See also
 
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)
+[setlocale, _wsetlocale](./reference/setlocale-wsetlocale.md)

@@ -30,9 +30,9 @@ __int64 _filelengthi64(
 *`fd`*<br/>
 Target the file descriptor.
 
-## Return Value
+## Return value
 
-Both **_filelength** and **_filelengthi64** return the file length, in bytes, of the target file associated with *`fd`*. If *`fd`* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set **errno** to **EBADF**.
+Both **_filelength** and **_filelengthi64** return the file length, in bytes, of the target file associated with *`fd`*. If *`fd`* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set **errno** to **EBADF**.
 
 ## Remarks
 
@@ -45,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 |**_filelength**|\<io.h>|
 |**_filelengthi64**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -53,8 +53,8 @@ See the example for [_chsize](chsize.md).
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_chsize](chsize.md)<br/>
-[_fileno](fileno.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)<br/>
+[File handling](../file-handling.md)\
+[_chsize](chsize.md)\
+[_fileno](fileno.md)\
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
+[_stat, _wstat Functions](stat-functions.md)

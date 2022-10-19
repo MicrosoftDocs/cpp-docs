@@ -34,5 +34,5 @@ The **_purecall** function does not have a header declaration. The **_purecall_h
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[_get_purecall_handler, _set_purecall_handler](get-purecall-handler-set-purecall-handler.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[_get_purecall_handler, _set_purecall_handler](get-purecall-handler-set-purecall-handler.md)

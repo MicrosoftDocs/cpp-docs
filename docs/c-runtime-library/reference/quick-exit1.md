@@ -27,7 +27,7 @@ __declspec(noreturn) void quick_exit(
 *status*<br/>
 The status code to return to the host environment.
 
-## Return Value
+## Return value
 
 The **quick_exit** function cannot return to its caller.
 
@@ -45,15 +45,15 @@ After the registered functions have been called, **quick_exit** invokes **_Exit*
 |-------------|---------------------|
 |**quick_exit**|\<process.h> or \<stdlib.h>|
 
-For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information about compatibility, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
-[atexit](atexit.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[abort](abort.md)\
+[atexit](atexit.md)\
+[_exec, _wexec Functions](../exec-wexec-functions.md)\
+[exit, _Exit, _exit](exit-exit-exit.md)\
+[_onexit, _onexit_m](onexit-onexit-m.md)\
+[_spawn, _wspawn Functions](../spawn-wspawn-functions.md)\
+[system, _wsystem](system-wsystem.md)

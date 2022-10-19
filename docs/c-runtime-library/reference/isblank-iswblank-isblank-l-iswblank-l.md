@@ -40,15 +40,15 @@ Integer to test.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
-Each of these routines returns nonzero if *c* is a particular representation of a space or horizontal tab character, or is one of a locale-specific set of characters that are used to separate words within a line of text. **isblank** returns a nonzero value if *c* is a space character (0x20) or horizontal tab character (0x09). The result of the test condition for the **isblank** functions depends on the **LC_CTYPE** category setting of the locale; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for any locale-dependent behavior; the versions that do have the **_l** suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+Each of these routines returns nonzero if *c* is a particular representation of a space or horizontal tab character, or is one of a locale-specific set of characters that are used to separate words within a line of text. **isblank** returns a nonzero value if *c* is a space character (0x20) or horizontal tab character (0x09). The result of the test condition for the **isblank** functions depends on the **LC_CTYPE** category setting of the locale; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for any locale-dependent behavior; the versions that do have the **_l** suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
 **iswblank** returns a nonzero value if *c* is a wide character that corresponds to a standard space or horizontal tab character.
 
 The behavior of **isblank** and **_isblank_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -68,10 +68,10 @@ By default, this function's global state is scoped to the application. To change
 |**_isblank_l**|\<ctype.h>|
 |**_iswblank_l**|\<ctype.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[Locale](../locale.md)\
+[is, isw Routines](../is-isw-routines.md)

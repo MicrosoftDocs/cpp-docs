@@ -30,15 +30,15 @@ Report type: **`_CRT_WARN`**, **`_CRT_ERROR`**, and **`_CRT_ASSERT`**.
 *`reportMode`*\
 New report mode or modes for *`reportType`*.
 
-## Return Value
+## Return value
 
-On successful completion, **`_CrtSetReportMode`** returns the previous report mode or modes for the report type specified in *`reportType`*. If an invalid value is passed in as *`reportType`* or an invalid mode is specified for *`reportMode`*, **`_CrtSetReportMode`** invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1. For more information, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+On successful completion, **`_CrtSetReportMode`** returns the previous report mode or modes for the report type specified in *`reportType`*. If an invalid value is passed in as *`reportType`* or an invalid mode is specified for *`reportMode`*, **`_CrtSetReportMode`** invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1. For more information, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 **`_CrtSetReportMode`** specifies the output destination for **`_CrtDbgReport`**. Because the macros [`_ASSERT`](assert-asserte-assert-expr-macros.md), [`_ASSERTE`](assert-asserte-assert-expr-macros.md), [`_RPT`](rpt-rptf-rptw-rptfw-macros.md), and [`_RPTF`](rpt-rptf-rptw-rptfw-macros.md) call **`_CrtDbgReport`**, **`_CrtSetReportMode`** specifies the output destination of text specified with those macros.
 
-When [`_DEBUG`](../../c-runtime-library/debug.md) isn't defined, calls to **`_CrtSetReportMode`** are removed during preprocessing.
+When [`_DEBUG`](../debug.md) isn't defined, calls to **`_CrtSetReportMode`** are removed during preprocessing.
 
 If you don't call **`_CrtSetReportMode`** to define the output destination of messages, then the following defaults are in effect:
 
@@ -80,10 +80,10 @@ In addition, you can control the reporting mode or modes for each report type se
 |-------------|---------------------|---------------------|
 |**`_CrtSetReportMode`**|`<crtdbg.h>`|`<errno.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
-**Libraries:** Debug versions of the [C runtime libraries](../../c-runtime-library/crt-library-features.md) only.
+**Libraries:** Debug versions of the [C runtime libraries](../crt-library-features.md) only.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug routines](../debug-routines.md)

@@ -32,7 +32,7 @@ __time64_t _mkgmtime64(
 *`timeptr`*\
 A pointer to the UTC time as a **`struct tm`** to convert.
 
-## Return Value
+## Return value
 
 A quantity of type **`__time32_t`** or **`__time64_t`** representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input can't be interpreted as a valid time, the return value is -1.
 
@@ -141,7 +141,7 @@ t.tm_yday = 42
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)\
+[Time management](../time-management.md)\
 [`asctime`, `_wasctime`](asctime-wasctime.md)\
 [`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
 [`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\

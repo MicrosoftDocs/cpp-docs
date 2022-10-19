@@ -35,7 +35,7 @@ Pointer to the Windows NT exception information structure.
 *handler*<br/>
 Pointer to the user's IEEE trap-handler routine.
 
-## Return Value
+## Return value
 
 The return value of **_fpieee_flt** is the value returned by *handler*. As such, the IEEE filter routine might be used in the except clause of a structured exception-handling (SEH) mechanism.
 
@@ -60,7 +60,7 @@ Pending exceptions that are disabled are raised when you enable them. This can r
 |--------------|---------------------|
 |**_fpieee_flt**|\<fpieee.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -131,6 +131,6 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
-[_controlfp_s](controlfp-s.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)\
+[_controlfp_s](controlfp-s.md)

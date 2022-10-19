@@ -57,7 +57,7 @@ Null-terminated strings to compare.
 *`locale`*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 The return value indicates the relation of *`string1`* to *`string2`* as follows.
 
@@ -71,7 +71,7 @@ On an error, **`_mbsicmp`** returns **`_NLSCMPERROR`**, which is defined in `<st
 
 ## Remarks
 
-The **`_stricmp`** function ordinally compares *`string1`* and *`string2`* after converting each character to lowercase, and returns a value indicating their relationship. **`_stricmp`** differs from **`_stricoll`** in that the **`_stricmp`** comparison is only affected by **`LC_CTYPE`**, which determines which characters are upper and lowercase. The **`_stricoll`** function compares strings according to both the **`LC_CTYPE`** and **`LC_COLLATE`** categories of the locale, which includes both the case and the collation order. For more information about the **`LC_COLLATE`** category, see [`setlocale`](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **`_l`** suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).
+The **`_stricmp`** function ordinally compares *`string1`* and *`string2`* after converting each character to lowercase, and returns a value indicating their relationship. **`_stricmp`** differs from **`_stricoll`** in that the **`_stricmp`** comparison is only affected by **`LC_CTYPE`**, which determines which characters are upper and lowercase. The **`_stricoll`** function compares strings according to both the **`LC_CTYPE`** and **`LC_COLLATE`** categories of the locale, which includes both the case and the collation order. For more information about the **`LC_COLLATE`** category, see [`setlocale`](setlocale-wsetlocale.md) and [Locale categories](../locale-categories.md). The versions of these functions without the **`_l`** suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../locale.md).
 
 > [!NOTE]
 > **`_stricmp`** is equivalent to **`_strcmpi`**. They can be used interchangeably but **`_stricmp`** is the preferred standard.
@@ -84,7 +84,7 @@ To illustrate when case conversion by **`_stricmp`** affects the outcome of a co
 
 If the [`strcmp`](strcmp-wcscmp-mbscmp.md) function is used instead of **`_stricmp`**, `JOHN_HENRY` will be greater than `JOHNSTON`.
 
-**`_wcsicmp`** and **`_mbsicmp`** are wide-character and multibyte-character versions of **`_stricmp`**. The arguments and return value of **`_wcsicmp`** are wide-character strings; those of **`_mbsicmp`** are multibyte-character strings. **`_mbsicmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise.
+**`_wcsicmp`** and **`_mbsicmp`** are wide-character and multibyte-character versions of **`_stricmp`**. The arguments and return value of **`_wcsicmp`** are wide-character strings; those of **`_mbsicmp`** are multibyte-character strings. **`_mbsicmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. For more information, see [Code pages](../code-pages.md). These three functions behave identically otherwise.
 
 **`_wcsicmp`** and **`wcscmp`** behave identically except that **`wcscmp`** does not convert its arguments to lowercase before comparing them. **`_mbsicmp`** and **`_mbscmp`** behave identically except that **`_mbscmp`** does not convert its arguments to lowercase before comparing them.
 
@@ -108,9 +108,9 @@ int main() {
 
 An alternative is to call [`_create_locale`, `_wcreate_locale`](create-locale-wcreate-locale.md) and pass the returned locale object as a parameter to **`_wcsicmp_l`**.
 
-All of these functions validate their parameters. If either *`string1`* or *`string2`* are null pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**.
+All of these functions validate their parameters. If either *`string1`* or *`string2`* are null pointers, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -124,7 +124,7 @@ All of these functions validate their parameters. If either *`string1`* or *`str
 |**`_wcsicmp`**, **`_wcsicmp_l`**|`<string.h>` or `<wchar.h>`|
 |**`_mbsicmp`**, **`_mbsicmp_l`**|`<mbstring.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -177,13 +177,13 @@ Compare strings:
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)<br/>
-[`_memicmp`, `_memicmp_l`](memicmp-memicmp-l.md)<br/>
-[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)<br/>
-[`strcoll` Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
+[`_memicmp`, `_memicmp_l`](memicmp-memicmp-l.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcoll` Functions](../strcoll-functions.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

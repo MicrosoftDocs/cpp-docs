@@ -43,13 +43,13 @@ Pointer to the name of the source file that requested the block or **NULL**.
 *lineNumber*<br/>
 Pointer to the line number in the source file or **NULL**.
 
-## Return Value
+## Return value
 
 **_CrtIsMemoryBlock** returns **TRUE** if the specified memory block is located within the local heap and has a valid debug heap block type identifier; otherwise, the function returns **FALSE**.
 
 ## Remarks
 
-The **_CrtIsMemoryBlock** function verifies that a specified memory block is located within the application's local heap and that it has a valid block type identifier. This function can also be used to obtain the object allocation order number and the source file name/line number where the memory block allocation was originally requested. A non-**NULL** value passed in a *requestNumber*, *filename*, or *lineNumber* parameter causes **_CrtIsMemoryBlock** to set the parameter to the value in the memory block's debug header, if it finds the block in the local heap. When [_DEBUG](../../c-runtime-library/debug.md) isn't defined, calls to **_CrtIsMemoryBlock** are removed during preprocessing.
+The **_CrtIsMemoryBlock** function verifies that a specified memory block is located within the application's local heap and that it has a valid block type identifier. This function can also be used to obtain the object allocation order number and the source file name/line number where the memory block allocation was originally requested. A non-**NULL** value passed in a *requestNumber*, *filename*, or *lineNumber* parameter causes **_CrtIsMemoryBlock** to set the parameter to the value in the memory block's debug header, if it finds the block in the local heap. When [_DEBUG](../debug.md) isn't defined, calls to **_CrtIsMemoryBlock** are removed during preprocessing.
 
 If **_CrtIsMemoryBlock** fails, it returns **FALSE**, and the output parameters are initialized to default values: *requestNumber* and **lineNumber** are set to 0 and *filename* is set to **NULL**.
 
@@ -60,7 +60,7 @@ _ASSERTE( _CrtIsMemoryBlock( userData, size, &requestNumber,
           &filename, &linenumber ) );
 ```
 
-For more information about how **_CrtIsMemoryBlock** can be used with other debug functions and macros, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about how **_CrtIsMemoryBlock** can be used with other debug functions and macros, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
 
 ## Requirements
 
@@ -68,11 +68,11 @@ For more information about how **_CrtIsMemoryBlock** can be used with other debu
 |-------------|---------------------|
 |**_CrtIsMemoryBlock**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -80,4 +80,4 @@ See the example for the [_CrtIsValidHeapPointer](crtisvalidheappointer.md) artic
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+[Debug routines](../debug-routines.md)

@@ -11,7 +11,7 @@ ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
 ---
 # _fread_nolock_s
 
-Reads data from a stream, without locking other threads. This version of [fread_nolock](fread-nolock.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads data from a stream, without locking other threads. This version of [fread_nolock](fread-nolock.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -42,7 +42,7 @@ Maximum number of items to be read.
 *stream*<br/>
 Pointer to **FILE** structure.
 
-## Return Value
+## Return value
 
 See [fread_s](fread-s.md).
 
@@ -58,10 +58,10 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_fread_nolock_s**|C: \<stdio.h>; C++: \<cstdio> or \<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](fwrite.md)<br/>
-[_read](read.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fwrite](fwrite.md)\
+[_read](read.md)

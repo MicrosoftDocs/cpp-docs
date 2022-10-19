@@ -27,7 +27,7 @@ long double nanl( const char* input );
 *input*<br/>
 A string value.
 
-## Return Value
+## Return value
 
 The **nan** functions return a quiet NaN value.
 
@@ -45,10 +45,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fpclassify](fpclassify.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[isnormal](isnormal.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[fpclassify](fpclassify.md)\
+[_fpclass, _fpclassf](fpclass-fpclassf.md)\
+[isfinite, _finite, _finitef](finite-finitef.md)\
+[isinf](isinf.md)\
+[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)\
+[isnormal](isnormal.md)

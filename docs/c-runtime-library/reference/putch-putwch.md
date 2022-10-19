@@ -34,7 +34,7 @@ wint_t _putwch(
 *c*<br/>
 Character to be output.
 
-## Return Value
+## Return value
 
 Returns *c* if successful. If **_putch** fails, it returns **EOF**; if **_putwch** fails, it returns **WEOF**.
 
@@ -46,7 +46,7 @@ The versions with the **_nolock** suffix are identical except that they are not 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -59,11 +59,11 @@ By default, this function's global state is scoped to the application. To change
 |**_putch**|\<conio.h>|
 |**_putwch**|\<conio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -71,6 +71,6 @@ See the example for [_getch](getch-getwch.md).
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[_getch, _getwch](getch-getwch.md)<br/>
+[Console and port I/O](../console-and-port-i-o.md)\
+[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
+[_getch, _getwch](getch-getwch.md)

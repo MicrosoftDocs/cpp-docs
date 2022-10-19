@@ -14,18 +14,18 @@ Each function in this family loads and executes a new process:
 
 :::row:::
    :::column span="":::
-      [`_execl`, `_wexecl`](../c-runtime-library/reference/execl-wexecl.md)\
-      [`_execv`, `_wexecv`](../c-runtime-library/reference/execv-wexecv.md)\
-      [`_execle`, `_wexecle`](../c-runtime-library/reference/execle-wexecle.md)
+      [`_execl`, `_wexecl`](./reference/execl-wexecl.md)\
+      [`_execv`, `_wexecv`](./reference/execv-wexecv.md)\
+      [`_execle`, `_wexecle`](./reference/execle-wexecle.md)
    :::column-end:::
    :::column span="":::
-      [`_execve`, `_wexecve`](../c-runtime-library/reference/execve-wexecve.md)\
-      [`_execlp`, `_wexeclp`](../c-runtime-library/reference/execlp-wexeclp.md)\
-      [`_execvp`, `_wexecvp`](../c-runtime-library/reference/execvp-wexecvp.md)
+      [`_execve`, `_wexecve`](./reference/execve-wexecve.md)\
+      [`_execlp`, `_wexeclp`](./reference/execlp-wexeclp.md)\
+      [`_execvp`, `_wexecvp`](./reference/execvp-wexecvp.md)
    :::column-end:::
    :::column span="":::
-      [`_execlpe`, `_wexeclpe`](../c-runtime-library/reference/execlpe-wexeclpe.md)\
-      [`_execvpe`, `_wexecvpe`](../c-runtime-library/reference/execvpe-wexecvpe.md)
+      [`_execlpe`, `_wexeclpe`](./reference/execlpe-wexeclpe.md)\
+      [`_execvpe`, `_wexecvpe`](./reference/execvpe-wexecvpe.md)
    :::column-end:::
 :::row-end:::
 
@@ -42,7 +42,7 @@ The letter at the end of the function name determines the variation.
 
 Each `_exec` function loads and executes a new process. All `_exec` functions use the same operating-system function ([`CreateProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw)). The `_exec` functions automatically handle multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. The `_wexec` functions are wide-character versions of the `_exec` functions. The `_wexec` functions behave identically to their `_exec` family counterparts except that they don't handle multibyte-character strings.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -65,7 +65,7 @@ Parameters are passed to the new process by giving one or more pointers to chara
 > [!IMPORTANT]
 > Do not pass user input to `_exec` without explicitly checking its content. `_exec` will result in a call to [`CreateProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) so keep in mind that unqualified path names could lead to potential security vulnerabilities.
 
-The `_exec` functions validate their parameters. If expected parameters are null pointers, empty strings, or omitted, the `_exec` functions invoke the invalid parameter handler as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.
+The `_exec` functions validate their parameters. If expected parameters are null pointers, empty strings, or omitted, the `_exec` functions invoke the invalid parameter handler as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.
 
 The argument pointers can be passed as separate parameters (in `_execl`, `_execle`, `_execlp`, and `_execlpe`) or as an array of pointers (in `_execv`, `_execve`, `_execvp`, and `_execvpe`). At least one parameter, `arg0`, must be passed to the new process; this parameter is `argv[0]` of the new process. Usually, this parameter is a copy of `cmdname`. (A different value doesn't produce an error.)
 
@@ -77,7 +77,7 @@ Files that are open when an `_exec` call is made remain open in the new process.
 
 A program executed with one of the `_exec` functions is always loaded into memory as if the maximum allocation field in the program's .exe file header were set to the default value of `0xFFFFH`.
 
-The `_exec` calls don't preserve the translation modes of open files. If the new process must use files inherited from the calling process, use the [`_setmode`](../c-runtime-library/reference/setmode.md) routine to set the translation mode of these files to the desired mode. You must explicitly flush (using `fflush` or `_flushall`) or close any stream before the `_exec` function call. Signal settings aren't preserved in new processes that are created by calls to `_exec` routines. The signal settings are reset to the default in the new process.
+The `_exec` calls don't preserve the translation modes of open files. If the new process must use files inherited from the calling process, use the [`_setmode`](./reference/setmode.md) routine to set the translation mode of these files to the desired mode. You must explicitly flush (using `fflush` or `_flushall`) or close any stream before the `_exec` function call. Signal settings aren't preserved in new processes that are created by calls to `_exec` routines. The signal settings are reset to the default in the new process.
 
 ## Example
 
@@ -193,10 +193,10 @@ int main( int ac, char* av[] )
 
 ## See also
 
-[Process and Environment Control](../c-runtime-library/process-and-environment-control.md)\
-[`abort`](../c-runtime-library/reference/abort.md)\
-[`atexit`](../c-runtime-library/reference/atexit.md)\
-[`exit`, `_Exit`, `_exit`](../c-runtime-library/reference/exit-exit-exit.md)\
-[`_onexit`, `_onexit_m`](../c-runtime-library/reference/onexit-onexit-m.md)\
-[`_spawn`, `_wspawn` Functions](../c-runtime-library/spawn-wspawn-functions.md)\
-[`system`, `_wsystem`](../c-runtime-library/reference/system-wsystem.md)
+[Process and environment control](./process-and-environment-control.md)\
+[`abort`](./reference/abort.md)\
+[`atexit`](./reference/atexit.md)\
+[`exit`, `_Exit`, `_exit`](./reference/exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](./reference/onexit-onexit-m.md)\
+[`_spawn`, `_wspawn` Functions](./spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](./reference/system-wsystem.md)

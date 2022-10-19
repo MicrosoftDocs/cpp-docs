@@ -33,7 +33,7 @@ Integer to be tested.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 **_ismbbalnum** returns a nonzero value if the expression:
 
@@ -54,13 +54,13 @@ By default, this function's global state is scoped to the application. To change
 |**_ismbbalnum**|\<mbctype.h>|
 |**_ismbbalnum_l**|\<mbctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Byte classification](../byte-classification.md)\
+[_ismbb Routines](../ismbb-routines.md)

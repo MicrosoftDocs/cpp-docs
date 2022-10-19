@@ -21,7 +21,7 @@ Returns the total number of errors that can be detected by run-time error checks
 int _RTC_NumErrors( void );
 ```
 
-## Return Value
+## Return value
 
 An integer whose value represents the total number of errors that can be detected by the Visual C++ run-time error checks.
 
@@ -31,13 +31,13 @@ An integer whose value represents the total number of errors that can be detecte
 |-------------|---------------------|
 |**_RTC_NumErrors**|\<rtcapi.h>|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+[_RTC_GetErrDesc](rtc-geterrdesc.md)\
+[Runtime error checking](../run-time-error-checking.md)

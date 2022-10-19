@@ -33,7 +33,7 @@ long double _chgsignl(
 *x*<br/>
 The floating-point value to be changed.
 
-## Return Value
+## Return value
 
 The **_chgsign** functions return a value that's equal to the floating-point argument *x*, but with its sign reversed. There's no error return.
 
@@ -44,10 +44,10 @@ The **_chgsign** functions return a value that's equal to the floating-point arg
 |**_chgsign**|\<float.h>|
 |**_chgsignf**, **_chgsignl**|\<math.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
-[copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)\
+[copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)

@@ -31,7 +31,7 @@ New control-word bit values.
 *mask*<br/>
 Mask for new control-word bits to set.
 
-## Return Value
+## Return value
 
 None.
 
@@ -47,10 +47,10 @@ This function is deprecated when compiling with [/clr (Common Language Runtime C
 |-------------|---------------------|-------------------|
 |**_set_controlfp**|\<float.h>|x86 processor only|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_clear87, _clearfp](clear87-clearfp.md)<br/>
-[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[_clear87, _clearfp](clear87-clearfp.md)\
+[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)

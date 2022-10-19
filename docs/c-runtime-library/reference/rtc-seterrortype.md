@@ -33,7 +33,7 @@ A value to assign to this *errnum*. For example, you might use **_CRT_ERROR**. I
 
 An *ErrType* of _RTC_ERRTYPE_IGNORE has special meaning to **_CrtSetReportMode**; the error is ignored.
 
-## Return Value
+## Return value
 
 The previous value for the error type *type*.
 
@@ -41,7 +41,7 @@ The previous value for the error type *type*.
 
 By default, all errors are set to *ErrType* = 1, which corresponds to **_CRT_ERROR**. For more information about the default error types such as **_CRT_ERROR**, see [_CrtDbgReport](crtdbgreport-crtdbgreportw.md).
 
-Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
+Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using runtime checks without the C runtime library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
 
 ## Requirements
 
@@ -49,13 +49,13 @@ Before you can call this function, you must first call one of the run-time error
 |-------------|---------------------|
 |**_RTC_SetErrorType**|\<rtcapi.h>|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+[_RTC_GetErrDesc](rtc-geterrdesc.md)\
+[Runtime error checking](../run-time-error-checking.md)

@@ -44,7 +44,7 @@ Character to be tested.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
@@ -52,7 +52,7 @@ Each of these routines returns a nonzero value if the character satisfies the te
 
 Each of these functions tests a given multibyte character for a given condition.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
 |Routine|Test condition|Code page 932 example|
 |-------------|--------------------|---------------------------|
@@ -61,7 +61,7 @@ The versions of these functions with the **_l** suffix are identical except that
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -75,11 +75,11 @@ By default, this function's global state is scoped to the application. To change
 |**_ismbclegal**, **_ismbclegal_l**|\<mbstring.h>|
 |**_ismbcsymbol**, **_ismbcsymbol_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[_ismbc Routines](../ismbc-routines.md)\
+[is, isw Routines](../is-isw-routines.md)\
+[_ismbb Routines](../ismbb-routines.md)

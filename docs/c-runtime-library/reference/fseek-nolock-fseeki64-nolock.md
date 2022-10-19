@@ -40,7 +40,7 @@ Number of bytes from *origin*.
 *origin*<br/>
 Initial position.
 
-## Return Value
+## Return value
 
 Same as [fseek](fseek-fseeki64.md) and [_fseeki64](fseek-fseeki64.md), respectively.
 
@@ -56,11 +56,11 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_fseek_nolock**, **_fseeki64_nolock**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[ftell, _ftelli64](ftell-ftelli64.md)<br/>
-[_lseek, _lseeki64](lseek-lseeki64.md)<br/>
-[rewind](rewind.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[ftell, _ftelli64](ftell-ftelli64.md)\
+[_lseek, _lseeki64](lseek-lseeki64.md)\
+[rewind](rewind.md)

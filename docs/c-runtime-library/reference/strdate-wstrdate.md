@@ -38,7 +38,7 @@ wchar_t *_wstrdate(
 *datestr*<br/>
 A pointer to a buffer containing the formatted date string.
 
-## Return Value
+## Return value
 
 Each of these functions returns a pointer to the resulting character string *datestr*.
 
@@ -48,15 +48,15 @@ More secure versions of these functions are available; see [_strdate_s, _wstrdat
 
 The **_strdate** function copies the current system date to the buffer pointed to by *datestr*, formatted **mm**/**dd**/**yy**, where **mm** is two digits representing the month, **dd** is two digits representing the day, and **yy** is the last two digits of the year. For example, the string **12/05/99** represents December 5, 1999. The buffer must be at least 9 bytes long.
 
-If *datestr* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *datestr* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 **_wstrdate** is a wide-character version of **_strdate**; the argument and return value of **_wstrdate** are wide-character strings. These functions behave identically otherwise.
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -69,7 +69,7 @@ By default, this function's global state is scoped to the application. To change
 |**_strdate**|\<time.h>|
 |**_wstrdate**|\<time.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -99,11 +99,11 @@ OS date: 04/25/03
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
-[_tzset](tzset.md)<br/>
+[Time management](../time-management.md)\
+[asctime, _wasctime](asctime-wasctime.md)\
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)\
+[time, _time32, _time64](time-time32-time64.md)\
+[_tzset](tzset.md)

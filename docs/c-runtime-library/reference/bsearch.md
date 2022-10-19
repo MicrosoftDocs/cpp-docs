@@ -57,7 +57,7 @@ The **bsearch** function performs a binary search of a sorted array of *number* 
 |`0`|Key is equal to array element.|
 |`> 0`|Key is greater than array element.|
 
-This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is zero, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
+This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is zero, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -67,7 +67,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**bsearch**|\<stdlib.h> and \<search.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -116,7 +116,7 @@ cat found at 002F0F04
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)\
+[Searching and sorting](../searching-and-sorting.md)\
 [_lfind](lfind.md)\
 [_lsearch](lsearch.md)\
 [qsort](qsort.md)

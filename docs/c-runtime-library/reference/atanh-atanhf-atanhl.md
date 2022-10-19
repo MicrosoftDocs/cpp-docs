@@ -31,7 +31,7 @@ long double atanh( long double x );  // C++ only
 *x*\
 Floating-point value.
 
-## Return Value
+## Return value
 
 The **atanh** functions return the inverse hyperbolic tangent (arc hyperbolic tangent) of *x*. If *x* is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.
 
@@ -44,7 +44,7 @@ The **atanh** functions return the inverse hyperbolic tangent (arc hyperbolic ta
 
 Because C++ allows overloading, you can call overloads of **atanh** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **atanh** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `atanh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `atanh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath> or \<math.h>|
 |**atanh()** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -87,9 +87,9 @@ atanh( 0.655794 ) = 0.785398
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)\
+[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)\
+[cosh, coshf, coshl](cosh-coshf-coshl.md)\
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)\
+[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)

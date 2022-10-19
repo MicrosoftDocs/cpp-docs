@@ -34,5 +34,5 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[`pow`, `powf`, `powl`](../c-runtime-library/reference/pow-powf-powl.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`pow`, `powf`, `powl`](./reference/pow-powf-powl.md)

@@ -35,11 +35,11 @@ Storage location for the path.
 *`maxlen`*\
 Maximum length of the path in characters: **`char`** for **`_getcwd`** and **`wchar_t`** for **`_wgetcwd`**.
 
-## Return Value
+## Return value
 
-Returns a pointer to *`buffer`*. A **`NULL`** return value indicates an error, and **`errno`** is set either to **`ENOMEM`**, indicating that there is insufficient memory to allocate *`maxlen`* bytes (when a **`NULL`** argument is given as *`buffer`*), or to **`ERANGE`**, indicating that the path is longer than *`maxlen`* characters. If *`maxlen`* is less than or equal to zero, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+Returns a pointer to *`buffer`*. A **`NULL`** return value indicates an error, and **`errno`** is set either to **`ENOMEM`**, indicating that there is insufficient memory to allocate *`maxlen`* bytes (when a **`NULL`** argument is given as *`buffer`*), or to **`ERANGE`**, indicating that the path is longer than *`maxlen`* characters. If *`maxlen`* is less than or equal to zero, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -53,7 +53,7 @@ When **`_DEBUG`** and **`_CRTDBG_MAP_ALLOC`** are defined, calls to **`_getcwd`*
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -66,7 +66,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_getcwd`**|`<direct.h>`|
 |**`_wgetcwd`**|`<direct.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -105,7 +105,7 @@ C:\Code
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)\
+[Directory control](../directory-control.md)\
 [`_chdir`, `_wchdir`](chdir-wchdir.md)\
 [`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\
 [`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)

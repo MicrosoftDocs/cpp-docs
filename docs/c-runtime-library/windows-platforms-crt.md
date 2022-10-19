@@ -5,7 +5,7 @@ ms.date: "02/02/2018"
 helpviewer_keywords: ["CRT, compatibility", "backward compatibility [C++], C run-time libraries", "compatibility [C++], C run-time libraries", "MBCS [C++], Win32 platforms", "operating systems [C++]", "Unicode [C++], Win32 platforms"]
 ms.assetid: 0aacaf45-6dc4-4908-bd52-57abac7b39f6
 ---
-# Windows Platforms (CRT)
+# Windows platforms (CRT)
 
 :::moniker range="msvc-140"
 
@@ -28,4 +28,4 @@ The C run-time libraries for Visual Studio support all versions of Windows and W
 
 ## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)
+[Compatibility](./compatibility.md)

@@ -45,7 +45,7 @@ long double tgamma(
 *x*\
 The value to find the gamma of.
 
-## Return Value
+## Return value
 
 If successful, returns the gamma of *x*.
 
@@ -69,7 +69,7 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 Because C++ allows overloading, you can call overloads of **tgamma** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **tgamma** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `tgamma()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `tgamma()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 If x is a natural number, this function returns the factorial of (x-1).
 
@@ -82,9 +82,9 @@ By default, this function's global state is scoped to the application. To change
 |**tgamma**, **tgammaf**,  **tgammal**|\<math.h>|\<cmath>|
 |**tgamma** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[lgamma, lgammaf, lgammal](lgamma-lgammaf-lgammal.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[lgamma, lgammaf, lgammal](lgamma-lgammaf-lgammal.md)

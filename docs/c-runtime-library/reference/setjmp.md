@@ -27,7 +27,7 @@ int setjmp(
 *`env`*\
 Variable in which environment is stored.
 
-## Return Value
+## Return value
 
 Returns 0 after saving the stack environment. If **`setjmp`** returns because of a `longjmp` call, it returns the *value* argument of `longjmp`, or if the *value* argument of `longjmp` is 0, **`setjmp`** returns 1. There's no error return.
 
@@ -57,7 +57,7 @@ For more information, see [Using `setjmp` and `longjmp`](../../cpp/using-setjmp-
 |-------------|---------------------|
 |**`setjmp`**|\<setjmp.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -65,5 +65,5 @@ See the example for [`_fpreset`](fpreset.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`longjmp`](longjmp.md)

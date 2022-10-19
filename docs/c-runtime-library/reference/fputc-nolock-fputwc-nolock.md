@@ -35,7 +35,7 @@ Character to be written.
 *stream*<br/>
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
 Each of these functions returns the character written. For error information, see [fputc, fputwc](fputc-fputwc.md).
 
@@ -47,7 +47,7 @@ The two functions behave identically if the stream is opened in ANSI mode. **_fp
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -60,7 +60,7 @@ By default, this function's global state is scoped to the application. To change
 |**_fputc_nolock**|\<stdio.h>|
 |**_fputwc_nolock**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—**stdin**, **stdout**, and **stderr**—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—**stdin**, **stdout**, and **stderr**—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -89,6 +89,6 @@ This is a test of _fputc_nolock!!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fgetc, fgetwc](fgetc-fgetwc.md)\
+[putc, putwc](putc-putwc.md)

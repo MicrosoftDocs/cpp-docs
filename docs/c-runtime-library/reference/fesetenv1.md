@@ -27,7 +27,7 @@ int fesetenv(
 *`penv`*<br/>
 Pointer to a **fenv_t** object that contains a floating-point environment as set by a call to [fegetenv](fegetenv1.md) or [feholdexcept](feholdexcept2.md). You can also specify the default startup floating-point environment by using the **FE_DFL_ENV** macro.
 
-## Return Value
+## Return value
 
 Returns 0 if the environment was successfully set. Otherwise, it returns a nonzero value.
 
@@ -45,12 +45,12 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**fesetenv**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fegetenv](fegetenv1.md)<br/>
-[feclearexcept](feclearexcept1.md)<br/>
-[feholdexcept](feholdexcept2.md)<br/>
-[fesetexceptflag](fesetexceptflag2.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[fegetenv](fegetenv1.md)\
+[feclearexcept](feclearexcept1.md)\
+[feholdexcept](feholdexcept2.md)\
+[fesetexceptflag](fesetexceptflag2.md)

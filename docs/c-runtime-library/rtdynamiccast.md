@@ -43,7 +43,7 @@ Intended result of cast.
 *isReference*<br/>
 **`true`** if input is a reference; **`false`** if input is a pointer.
 
-## Return Value
+## Return value
 
 Pointer to the appropriate subobject, if successful; otherwise, **NULL**.
 

@@ -75,7 +75,7 @@ Target file specification (can include wildcard characters).
 *`fileinfo`*<br/>
 File information buffer.
 
-## Return Value
+## Return value
 
 If successful, **`_findfirst`** returns a unique search handle identifying the file or group of files that match the *`filespec`* specification, which can be used in a subsequent call to [`_findnext`](findnext-functions.md) or to [`_findclose`](findclose.md). Otherwise, **`_findfirst`** returns -1 and sets **`errno`** to one of the following values.
 
@@ -86,9 +86,9 @@ If successful, **`_findfirst`** returns a unique search handle identifying the f
 | **`ENOMEM`** | Insufficient memory. |
 | **`EINVAL`** | Invalid file name specification or the file name given was larger than **`MAX_PATH`**. |
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
 ## Remarks
 
@@ -98,7 +98,7 @@ The variations of these functions that have the **`w`** prefix are wide-characte
 
 Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file sizes. The first numeric suffix (**`32`** or **`64`**) indicates the size of the time type; the second suffix is either **`i32`** or **`i64`**, and indicates whether the file size is represented as a 32-bit or 64-bit integer. For information about which versions support 32-bit and 64-bit time types and file sizes, see the following table. The **`i32`** or **`i64`** suffix is omitted if it's the same as the size of the time type, so **`_findfirst64`** also supports 64-bit file lengths and **`_findfirst32`** supports only 32-bit file lengths.
 
-These functions use various forms of the **`_finddata_t`** structure for the *`fileinfo`* parameter. For more information about the structure, see [Filename Search Functions](../../c-runtime-library/filename-search-functions.md).
+These functions use various forms of the **`_finddata_t`** structure for the *`fileinfo`* parameter. For more information about the structure, see [Filename search functions](../filename-search-functions.md).
 
 The variations that use a 64-bit time type enable file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC. The ones that use 32-bit time types represent dates only through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
@@ -119,7 +119,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_findfirst32i64`**, **`_wfindfirst32i64`**|Not affected by the macro definition|32-bit|64-bit|
 |**`_findfirst64i32`**, **`_wfindfirst64i32`**|Not affected by the macro definition|64-bit|32-bit|
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -147,9 +147,9 @@ By default, this function's global state is scoped to the application. To change
 |**`_wfindfirst32i64`**|`<io.h>` or `<wchar.h>`|
 |**`_wfindfirst64i32`**|`<io.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>
+[System calls](../system-calls.md)\
+[Filename search functions](../filename-search-functions.md)

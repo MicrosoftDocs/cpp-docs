@@ -27,7 +27,7 @@ int feholdexcept(
 *`penv`*<br/>
 Pointer to an **fenv_t** object to contain a copy of the floating-point environment.
 
-## Return Value
+## Return value
 
 Returns zero if and only if the function is able to successfully turn on non-stop floating-point exception handling.
 
@@ -45,11 +45,11 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**feholdexcept**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[feclearexcept](feclearexcept1.md)<br/>
-[fesetenv](fesetenv1.md)<br/>
-[feupdateenv](feupdateenv.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[feclearexcept](feclearexcept1.md)\
+[fesetenv](fesetenv1.md)\
+[feupdateenv](feupdateenv.md)

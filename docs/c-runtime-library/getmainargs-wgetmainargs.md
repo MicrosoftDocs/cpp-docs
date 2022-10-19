@@ -49,7 +49,7 @@ An integer that if set to 1 expands the wildcards in the command line arguments,
 `_StartInfo`<br/>
 Other information to be passed to the CRT DLL.
 
-## Return Value
+## Return value
 
 0 if successful; a negative value if unsuccessful.
 

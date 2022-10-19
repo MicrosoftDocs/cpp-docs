@@ -30,7 +30,7 @@ int _wrmdir(
 *dirname*<br/>
 Path of the directory to be removed.
 
-## Return Value
+## Return value
 
 Each of these functions returns 0 if the directory is successfully deleted. A return value of -1 indicates an error and **errno** is set to one of the following values:
 
@@ -40,7 +40,7 @@ Each of these functions returns 0 if the directory is successfully deleted. A re
 | **ENOENT** | Path is invalid. |
 | **EACCES** | A program has an open handle to the directory. |
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -50,7 +50,7 @@ The **_rmdir** function deletes the directory specified by *dirname*. The direct
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -63,11 +63,11 @@ By default, this function's global state is scoped to the application. To change
 |**_rmdir**|\<direct.h>|
 |**_wrmdir**|\<direct.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -75,6 +75,6 @@ See the example for [_mkdir](mkdir-wmkdir.md).
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[Directory control](../directory-control.md)\
+[_chdir, _wchdir](chdir-wchdir.md)\
+[_mkdir, _wmkdir](mkdir-wmkdir.md)

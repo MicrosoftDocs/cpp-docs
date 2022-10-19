@@ -27,9 +27,9 @@ int _getw(
 *stream*<br/>
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
-**_getw** returns the integer value read. A return value of **EOF** indicates either an error or end of file. However, because the **EOF** value is also a legitimate integer value, use **feof** or **ferror** to verify an end-of-file or error condition. If *stream* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EOF**.
+**_getw** returns the integer value read. A return value of **EOF** indicates either an error or end of file. However, because the **EOF** value is also a legitimate integer value, use **feof** or **ferror** to verify an end-of-file or error condition. If *stream* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EOF**.
 
 ## Remarks
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_getw**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -95,5 +95,5 @@ First data word in file: 0x656e694c
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_putw](putw.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[_putw](putw.md)

@@ -30,7 +30,7 @@ Ending time.
 *timeStart*<br/>
 Beginning time.
 
-## Return Value
+## Return value
 
 **difftime** returns the elapsed time in seconds, from *timeStart* to *timeEnd*. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.
 
@@ -42,7 +42,7 @@ The time value supplied must fit within the range of **time_t**. **time_t** is a
 
 **difftime** is an inline function that evaluates to either **_difftime32** or **_difftime64** depending on whether **_USE_32BIT_TIME_T** is defined. _difftime32 and _difftime64 can be used directly to force the use of a particular size of the time type.
 
-These functions validate their parameters. If either of the parameters is zero or negative, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return 0 and set **errno** to **EINVAL**.
+These functions validate their parameters. If either of the parameters is zero or negative, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return 0 and set **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 |**_difftime32**|\<time.h>|
 |**_difftime64**|\<time.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -114,6 +114,6 @@ Program takes      3 seconds.
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[Time management](../time-management.md)\
+[time, _time32, _time64](time-time32-time64.md)

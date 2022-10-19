@@ -39,7 +39,7 @@ Relative path name.
 *`maxLength`*\
 Maximum length of the absolute path name buffer (*`absPath`*). This length is in bytes for **`_fullpath`** but in wide characters (**`wchar_t`**) for **`_wfullpath`**.
 
-## Return Value
+## Return value
 
 Each of these functions returns a pointer to a buffer containing the absolute path name (*`absPath`*). If there's an error (for example, if the value passed in *`relPath`* includes a drive letter that isn't valid or can't be found, or if the length of the created absolute path name (*`absPath`*) is greater than *`maxLength`*), the function returns **`NULL`**.
 
@@ -63,9 +63,9 @@ By default, this function's global state is scoped to the application. To change
 
 If **`_DEBUG`** and **`_CRTDBG_MAP_ALLOC`** are both defined, calls to **`_fullpath`** and **`_wfullpath`** are replaced by calls to **`_fullpath_dbg`** and **`_wfullpath_dbg`** to allow for debugging memory allocations. For more information, see [`_fullpath_dbg`, `_wfullpath_dbg`](fullpath-dbg-wfullpath-dbg.md).
 
-This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *`maxlen`* is less than or equal to 0. If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns **`NULL`**.
+This function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md), if *`maxlen`* is less than or equal to 0. If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns **`NULL`**.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -80,7 +80,7 @@ If the *`absPath`* buffer is **`NULL`**, **`_fullpath`** calls [`malloc`](malloc
 |**`_fullpath`**|`<stdlib.h>`|
 |**`_wfullpath`**|`<stdlib.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -119,7 +119,7 @@ Full path is: C:\Documents and Settings\user\test
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)\
+[File handling](../file-handling.md)\
 [`_getcwd`, `_wgetcwd`](getcwd-wgetcwd.md)\
 [`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md)\
 [`_makepath`, `_wmakepath`](makepath-wmakepath.md)\

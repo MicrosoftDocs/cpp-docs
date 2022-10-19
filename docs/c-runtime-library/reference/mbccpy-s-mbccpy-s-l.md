@@ -12,7 +12,7 @@ ms.assetid: b6e965fa-53c1-4ec3-85ef-a1c4b4f2b2da
 ---
 # _mbccpy_s, _mbccpy_s_l
 
-Copies one multibyte character from a string to another string. These versions of [_mbccpy, _mbccpy_l](mbccpy-mbccpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Copies one multibyte character from a string to another string. These versions of [_mbccpy, _mbccpy_l](mbccpy-mbccpy-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -65,9 +65,9 @@ Multibyte character to copy.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
-Zero if successful; an error code on failure. If *src* or *dest* is **NULL**, or if more than **buffSizeinBytes** bytes would be copied to *dest*, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **EINVAL** and **errno** is set to **EINVAL**.
+Zero if successful; an error code on failure. If *src* or *dest* is **NULL**, or if more than **buffSizeinBytes** bytes would be copied to *dest*, then the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return **EINVAL** and **errno** is set to **EINVAL**.
 
 ## Remarks
 
@@ -88,11 +88,11 @@ Note that the second row is just a special case of the first. Also note that the
 
 **_mbccpy_s** uses the current locale for any locale-dependent behavior. **_mbccpy_s_l** is identical to **_mbccpy_s** except that **_mbccpy_s_l** uses the locale passed in for any locale-dependent behavior.
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -105,10 +105,10 @@ By default, this function's global state is scoped to the application. To change
 |**_mbccpy_s**|\<mbstring.h>|
 |**_mbccpy_s_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)

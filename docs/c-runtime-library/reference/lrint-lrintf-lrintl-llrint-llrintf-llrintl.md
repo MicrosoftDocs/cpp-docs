@@ -65,7 +65,7 @@ long long int llrintl(
 *x*\
 The value to round.
 
-## Return Value
+## Return value
 
 If successful, returns the rounded integral value of *x*.
 
@@ -77,7 +77,7 @@ If successful, returns the rounded integral value of *x*.
 
 Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **lrint** and **llrint** always take a **`double`**.
 
-If you use the \<tgmath.h> `llrint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `llrint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
 
@@ -92,8 +92,8 @@ By default, this function's global state is scoped to the application. To change
 |**lrint**, **lrintf**, **lrintl**, **llrint**, **llrintf**, **llrintl**|\<math.h>|\<cmath>|
 |**lrint** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+[Alphabetical function reference](crt-alphabetical-function-reference.md)

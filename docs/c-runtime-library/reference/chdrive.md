@@ -30,13 +30,13 @@ int _chdrive(
 *drive*<br/>
 An integer from 1 through 26 that specifies the current working drive (1=A, 2=B, and so forth).
 
-## Return Value
+## Return value
 
 Zero (0) if the current working drive was changed successfully; otherwise, -1.
 
 ## Remarks
 
-If *drive* isn't in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, **errno** is set to **EACCES**, and **_doserrno** is set to **ERROR_INVALID_DRIVE**.
+If *drive* isn't in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, **errno** is set to **EACCES**, and **_doserrno** is set to **ERROR_INVALID_DRIVE**.
 
 The **_chdrive** function isn't thread-safe because it depends on the **SetCurrentDirectory** function, which is itself not thread-safe. To use **_chdrive** safely in a multi-threaded application, you must provide your own thread synchronization. For more information, see [SetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory).
 
@@ -50,7 +50,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_chdrive**|\<direct.h>|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -58,11 +58,11 @@ See the example for [_getdrive](getdrive.md).
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
-[_getdrive](getdrive.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Directory control](../directory-control.md)\
+[_chdir, _wchdir](chdir-wchdir.md)\
+[_fullpath, _wfullpath](fullpath-wfullpath.md)\
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)\
+[_getdrive](getdrive.md)\
+[_mkdir, _wmkdir](mkdir-wmkdir.md)\
+[_rmdir, _wrmdir](rmdir-wrmdir.md)\
+[system, _wsystem](system-wsystem.md)

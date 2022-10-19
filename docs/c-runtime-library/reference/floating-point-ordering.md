@@ -86,7 +86,7 @@ inline bool isunordered(
 *x*, *y*<br/>
 The floating-point values to compare.
 
-## Return Value
+## Return value
 
 In all comparisons, infinities of the same sign compare as equal. Negative infinity is less than any finite value or positive infinity. Positive infinity is greater than any finite value or negative infinity. Zeroes are equal regardless of sign. NaNs aren't less than, equal to, or greater than any value, including another NaN.
 
@@ -106,12 +106,12 @@ These comparison operations are implemented as macros when compiled as C, and as
 |--------------|---------------------------|-------------------------------|
 | **isgreater**, **isgreaterequal**, **isless**,<br/>**islessequal**, **islessgreater**, **isunordered** | \<math.h> | \<math.h> or \<cmath> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[isfinite, _finite, _finitef](finite-finitef.md)\
+[isinf](isinf.md)\
+[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)\
+[_fpclass, _fpclassf](fpclass-fpclassf.md)

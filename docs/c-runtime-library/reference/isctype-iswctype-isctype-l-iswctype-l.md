@@ -48,13 +48,13 @@ Property to test for. This is normally retrieved using ctype or [wctype](wctype.
 *locale*<br/>
 The locale to use for any locale-dependent tests.
 
-## Return Value
+## Return value
 
-**_isctype** and **iswctype** return a nonzero value if *c* has the property specified by *desc* in the current locale or 0 if it does not. The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_isctype** and **iswctype** return a nonzero value if *c* has the property specified by *desc* in the current locale or 0 if it does not. The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
 The behavior of **_isctype** and **_isctype_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -74,14 +74,14 @@ By default, this function's global state is scoped to the application. To change
 |**_isctype_l**|\<ctype.h>|
 |**_iswctype_l**|\<ctype.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[Locale](../locale.md)\
+[is, isw Routines](../is-isw-routines.md)

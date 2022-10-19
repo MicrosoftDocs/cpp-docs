@@ -7,7 +7,7 @@ ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 ---
 # Format specification syntax: `printf` and `wprintf` functions
 
-The various `printf` and `wprintf` functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string contains zero or more *directives*, which are either literal characters for output or encoded *conversion specifications* that describe how to format an argument in the output. This article describes the syntax used to encode conversion specifications in the format string. For a listing of these functions, see [Stream I/O](../c-runtime-library/stream-i-o.md).
+The various `printf` and `wprintf` functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string contains zero or more *directives*, which are either literal characters for output or encoded *conversion specifications* that describe how to format an argument in the output. This article describes the syntax used to encode conversion specifications in the format string. For a listing of these functions, see [Stream I/O](./stream-i-o.md).
 
 A conversion specification consists of optional and required fields in this form:
 
@@ -15,7 +15,7 @@ A conversion specification consists of optional and required fields in this form
 
 Each field of the conversion specification is a character or a number that signifies a particular format option or conversion specifier. The required *type* field specifies the kind of conversion to be applied to an argument. The optional *flags*, *width*, and *precision* fields control other format aspects such as leading spaces or zeroes, justification, and displayed precision. The *size* field specifies the size of the argument consumed and converted.
 
-A basic conversion specification contains only the percent sign and a *type* character. For example, `%s` specifies a string conversion. To print a percent-sign character, use `%%`. If a percent sign is followed by a character that has no meaning as a format field, the invalid parameter handler is invoked. For more information, see [Parameter Validation](../c-runtime-library/parameter-validation.md).
+A basic conversion specification contains only the percent sign and a *type* character. For example, `%s` specifies a string conversion. To print a percent-sign character, use `%%`. If a percent sign is followed by a character that has no meaning as a format field, the invalid parameter handler is invoked. For more information, see [Parameter validation](./parameter-validation.md).
 
 > [!IMPORTANT]
 > For security and stability, ensure that format conversion specification strings aren't end-user defined. For example, consider a program that prompts the user to enter a name and stores the input in a string variable that's named `user_name`. To print `user_name`, never do this:
@@ -53,7 +53,7 @@ Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` 
 |**`u`**|Integer|Unsigned decimal integer.|
 |**`x`**|Integer|Unsigned hexadecimal integer; uses "`abcdef`".|
 |**`X`**|Integer|Unsigned hexadecimal integer; uses "`ABCDEF`".|
-|**`e`**|Floating-point|Signed value that has the form [`-`]*d.dddd*`e`\[`+`\|`-`]*dd*\[*d*], where *d* is one decimal digit, *dddd* is one or more decimal digits depending on the specified precision, or six by default, and *dd*\[*d*] is two or three decimal digits depending on the [output format](../c-runtime-library/set-output-format.md) and size of the exponent.|
+|**`e`**|Floating-point|Signed value that has the form [`-`]*d.dddd*`e`\[`+`\|`-`]*dd*\[*d*], where *d* is one decimal digit, *dddd* is one or more decimal digits depending on the specified precision, or six by default, and *dd*\[*d*] is two or three decimal digits depending on the [output format](./set-output-format.md) and size of the exponent.|
 |**`E`**|Floating-point|Identical to the **`e`** format except that **`E`** rather than **`e`** introduces the exponent.|
 |**`f`**|Floating-point|Signed value that has the form [`-`]*dddd*`.`*dddd*, where *dddd* is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision, or six by default.|
 |**`F`**|Floating-point|Identical to the **`f`** format except that infinity and nan output is capitalized.|
@@ -93,10 +93,10 @@ Any of these strings may have been prefixed by a sign, and may have been formatt
 > If the argument that corresponds to `%s` or `%S`, or the `Buffer` field of the argument that corresponds to `%Z`, is a null pointer, "(null)" is displayed.
 
 > [!NOTE]
-> In all exponential formats, the minimum number of digits of exponent to display is two, using three only if necessary. By using the [`_set_output_format`](../c-runtime-library/set-output-format.md) function, you can set the number of digits displayed to three for backward compatibility with code written for Visual Studio 2013 and before.
+> In all exponential formats, the minimum number of digits of exponent to display is two, using three only if necessary. By using the [`_set_output_format`](./set-output-format.md) function, you can set the number of digits displayed to three for backward compatibility with code written for Visual Studio 2013 and before.
 
 > [!IMPORTANT]
-> Because the `%n` format is inherently insecure, it's disabled by default. If `%n` is encountered in a format string, the invalid parameter handler is invoked, as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). To enable `%n` support, see [`_set_printf_count_output`](../c-runtime-library/reference/set-printf-count-output.md).
+> Because the `%n` format is inherently insecure, it's disabled by default. If `%n` is encountered in a format string, the invalid parameter handler is invoked, as described in [Parameter validation](./parameter-validation.md). To enable `%n` support, see [`_set_printf_count_output`](./reference/set-printf-count-output.md).
 
 ## <a name="flags"></a> Flag directives
 
@@ -189,6 +189,6 @@ An **`hc`** or **`hC`** type specifier is synonymous with **`c`** in `printf` fu
 
 ## See also
 
-[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)\
-[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
-[`printf_p` Positional Parameters](../c-runtime-library/printf-p-positional-parameters.md)
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](./reference/printf-printf-l-wprintf-wprintf-l.md)\
+[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
+[`printf_p` Positional Parameters](./printf-p-positional-parameters.md)

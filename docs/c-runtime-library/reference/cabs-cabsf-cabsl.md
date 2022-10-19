@@ -39,7 +39,7 @@ long double cabsl(
 *z*<br/>
 A complex number.
 
-## Return Value
+## Return value
 
 The absolute value of *z*.
 
@@ -53,14 +53,14 @@ Because C++ allows overloading, you can call overloads of **cabs** that take **_
 |-------------|--------------|------------------|
 |**cabs**,               **cabsf**, **cabsl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[norm, normf, norml](norm-normf-norml1.md)\
+[creal, crealf, creall](creal-crealf-creall.md)\
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)\
+[conj, conjf, conjl](conj-conjf-conjl.md)\
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)\
+[carg, cargf, cargl](carg-cargf-cargl.md)

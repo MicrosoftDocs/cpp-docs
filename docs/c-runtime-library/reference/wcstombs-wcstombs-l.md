@@ -56,7 +56,7 @@ The maximum number of bytes that can be stored in the multibyte output string.
 *`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
 If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can't convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets **`errno`** to **`EILSEQ`**.
 
@@ -68,11 +68,11 @@ If **`wcstombs`** encounters the wide-character `NULL` character (L'\0') either 
 
 If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string.
 
-**`wcstombs`** validates its parameters. If *`wcstr`* is **`NULL`**, or if *`count`* is greater than **`INT_MAX`**, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **`errno`** to **`EINVAL`** and returns -1.
+**`wcstombs`** validates its parameters. If *`wcstr`* is **`NULL`**, or if *`count`* is greater than **`INT_MAX`**, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets **`errno`** to **`EINVAL`** and returns -1.
 
-**`wcstombs`** uses the current locale for any locale-dependent behavior; **`_wcstombs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**`wcstombs`** uses the current locale for any locale-dependent behavior; **`_wcstombs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -83,7 +83,7 @@ By default, this function's global state is scoped to the application. To change
 |**`wcstombs`**|`<stdlib.h>`|
 |**`_wcstombs_l`**|`<stdlib.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -129,8 +129,8 @@ Convert wide-character string:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Locale](../../c-runtime-library/locale.md)\
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
 [`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
 [`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
 [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\

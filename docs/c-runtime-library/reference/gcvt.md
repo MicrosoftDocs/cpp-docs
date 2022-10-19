@@ -35,7 +35,7 @@ Number of significant digits stored.
 *buffer*<br/>
 Storage location for the result.
 
-## Return Value
+## Return value
 
 **_gcvt** returns a pointer to the string of digits.
 
@@ -45,7 +45,7 @@ The **_gcvt** function converts a floating-point *value* to a character string (
 
 A *buffer* of length **_CVTBUFSIZE** is sufficient for any floating point value.
 
-This function validates its parameters. If *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
+This function validates its parameters. If *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_gcvt**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -115,8 +115,8 @@ buffer: '-1.23456789012e-002' (19 chars)
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_fcvt](fcvt.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
+[_ecvt](ecvt.md)\
+[_fcvt](fcvt.md)

@@ -55,11 +55,11 @@ Pointer to the name of the source file or **NULL**.
 *lineNumber*<br/>
 Line number in source file or **NULL**.
 
-## Return Value
+## Return value
 
 Zero on success, an error code on failure.
 
-These functions validate their parameters; if *buffer* or *varname* is **NULL**, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL**, and return **EINVAL**.
+These functions validate their parameters; if *buffer* or *varname* is **NULL**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL**, and return **EINVAL**.
 
 If these functions can't allocate enough memory, they set *buffer* to **NULL** and *numberOfElements* to 0, and return **ENOMEM**.
 
@@ -69,7 +69,7 @@ The **_dupenv_s_dbg** and **_wdupenv_s_dbg** functions are identical to **_dupen
 
 You don't need to call these functions explicitly in most cases. Instead, you can define the flag **_CRTDBG_MAP_ALLOC**. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_dupenv_s** and **_wdupenv_s** are remapped to **_dupenv_s_dbg** and **_wdupenv_s_dbg**, respectively, with the *blockType* set to **_NORMAL_BLOCK**. Thus, you don't need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -82,7 +82,7 @@ You don't need to call these functions explicitly in most cases. Instead, you ca
 |**_dupenv_s_dbg**|\<crtdbg.h>|
 |**_wdupenv_s_dbg**|\<crtdbg.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -115,7 +115,7 @@ nonexistentvariable = (null)
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
-[getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)<br/>
-[_putenv_s, _wputenv_s](putenv-s-wputenv-s.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[Environmental constants](../environmental-constants.md)\
+[getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)\
+[_putenv_s, _wputenv_s](putenv-s-wputenv-s.md)

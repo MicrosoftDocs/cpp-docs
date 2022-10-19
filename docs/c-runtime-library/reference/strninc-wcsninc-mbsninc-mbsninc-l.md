@@ -50,25 +50,25 @@ Number of characters to increment a string pointer.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 Each of these routines returns a pointer to *str* after *str* has been incremented by *count* characters or **NULL** if the supplied pointer is **NULL**. If *count* is greater than or equal to the number of characters in *str*, the result is undefined.
 
 ## Remarks
 
-The **_mbsninc** function increments *str* by *count* multibyte characters. **_mbsninc** recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
+The **_mbsninc** function increments *str* by *count* multibyte characters. **_mbsninc** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsninc**|**_strninc**|**_mbsninc**|**_wcsninc**|
 
-**_strninc** and **_wcsninc** are single-byte-character string and wide-character string versions of **_mbsninc**. **_wcsninc** and **_strninc** are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
+**_strninc** and **_wcsninc** are single-byte-character string and wide-character string versions of **_mbsninc**. **_wcsninc** and **_strninc** are provided only for this mapping and should not be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
-**_mbsninc_l** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_mbsninc_l** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 ## Requirements
 
@@ -79,13 +79,13 @@ By default, this function's global state is scoped to the application. To change
 |**_strninc**|\<tchar.h>|
 |**_wcsninc**|\<tchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_strdec, _wcsdec, _mbsdec, _mbsdec_l](strdec-wcsdec-mbsdec-mbsdec-l.md)<br/>
-[_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
-[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[_strdec, _wcsdec, _mbsdec, _mbsdec_l](strdec-wcsdec-mbsdec-mbsdec-l.md)\
+[_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)\
+[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)

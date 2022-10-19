@@ -35,7 +35,7 @@ Number of elements.
 *size*<br/>
 Length in bytes of each element.
 
-## Return Value
+## Return value
 
 **_recalloc** returns a **`void`** pointer to the reallocated (and possibly moved) memory block.
 
@@ -51,7 +51,7 @@ The **_recalloc** function changes the size of an allocated memory block. The *m
 
 Because the new block can be in a new memory location, the pointer returned by **_recalloc** is not guaranteed to be the pointer passed through the *memblock* argument.
 
-**_recalloc** sets **errno** to **ENOMEM** if the memory allocation fails or if the amount of memory requested exceeds **_HEAP_MAXREQ**. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**_recalloc** sets **errno** to **ENOMEM** if the memory allocation fails or if the amount of memory requested exceeds **_HEAP_MAXREQ**. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 **recalloc** calls **realloc** in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, **realloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **realloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **_recalloc** fails to allocate memory, **realloc** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call
 
@@ -61,7 +61,7 @@ _set_new_mode(1);
 
 early in the program, or link with NEWMODE.OBJ.
 
-When the application is linked with a debug version of the C run-time libraries, **_recalloc** resolves to [_recalloc_dbg](recalloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **_recalloc** resolves to [_recalloc_dbg](recalloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
 **_recalloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
@@ -73,13 +73,13 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_recalloc**|\<stdlib.h> and \<malloc.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[_recalloc_dbg](recalloc-dbg.md)<br/>
-[_aligned_recalloc](aligned-recalloc.md)<br/>
-[_aligned_offset_recalloc](aligned-offset-recalloc.md)<br/>
-[free](free.md)<br/>
-[Link Options](../../c-runtime-library/link-options.md)<br/>
+[Memory allocation](../memory-allocation.md)\
+[_recalloc_dbg](recalloc-dbg.md)\
+[_aligned_recalloc](aligned-recalloc.md)\
+[_aligned_offset_recalloc](aligned-offset-recalloc.md)\
+[free](free.md)\
+[Link options](../link-options.md)

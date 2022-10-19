@@ -27,7 +27,7 @@ int _set_SSE2_enable(
 *flag*<br/>
 1 to enable the SSE2 implementation; 0 to disable the SSE2 implementation. By default, SSE2 implementation is enabled on processors that support it.
 
-## Return Value
+## Return value
 
 Nonzero if SSE2 implementation is enabled; zero if SSE2 implementation is disabled.
 
@@ -64,7 +64,7 @@ The SSE2 implementation is only used if all exceptions are masked. Use [_control
 |-------------|---------------------|
 |**_set_SSE2_enable**|\<math.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -91,4 +91,4 @@ SSE2 enabled.
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../crt-library-features.md)

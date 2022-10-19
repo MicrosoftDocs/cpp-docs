@@ -35,7 +35,7 @@ The alignment value, which must be an integer power of 2.
 *`offset`*<br/>
 The offset into the memory allocation to force the alignment.
 
-## Return Value
+## Return value
 
 A pointer to the memory block that was allocated or **NULL** if the operation failed.
 
@@ -47,7 +47,7 @@ A pointer to the memory block that was allocated or **NULL** if the operation fa
 
 **_aligned_offset_malloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned isn't aliased. For more information, see [`noalias`](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
-This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_offset_malloc** validates its parameters. If *`alignment`* isn't a power of 2, or if *`offset`* is non-zero and greater than or equal to *`size`*, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
+This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_offset_malloc** validates its parameters. If *`alignment`* isn't a power of 2, or if *`offset`* is non-zero and greater than or equal to *`size`*, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -63,4 +63,4 @@ For more information, see [_aligned_malloc](aligned-malloc.md).
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>
+[Data alignment](../data-alignment.md)

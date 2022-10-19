@@ -6,7 +6,7 @@ f1_keywords: ["SIGTERM", "SIGFPE", "SIGABRT", "SIGILL", "SIGINT", "SIGSEGV"]
 helpviewer_keywords: ["SIGTERM constant", "SIGABRT constant", "SIGSEGV constant", "SIGFPE constant", "SIGINT constant", "signal constants", "SIGILL constant"]
 ms.assetid: a3b39281-dae7-4e44-8d68-e6a610c669dd
 ---
-# signal Constants
+# signal constants
 
 ## Syntax
 
@@ -31,6 +31,6 @@ The `sig` argument must be one of the manifest constants listed below (defined i
 
 ## See also
 
-[signal](../c-runtime-library/reference/signal.md)<br/>
-[raise](../c-runtime-library/reference/raise.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[signal](./reference/signal.md)\
+[raise](./reference/raise.md)\
+[Global constants](./global-constants.md)

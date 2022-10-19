@@ -34,9 +34,9 @@ Integer to be tested.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
-**_ismbbkalnum** returns a nonzero value if the integer *c* is a non-ASCII text symbol other than punctuation, or 0 if it is not. **_ismbbkalnum** uses the current locale for locale-dependent character information. **_ismbbkalnum_l** is identical to **_ismbbkalnum** except that it takes the locale as a parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_ismbbkalnum** returns a nonzero value if the integer *c* is a non-ASCII text symbol other than punctuation, or 0 if it is not. **_ismbbkalnum** uses the current locale for locale-dependent character information. **_ismbbkalnum_l** is identical to **_ismbbkalnum** except that it takes the locale as a parameter. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
@@ -49,9 +49,9 @@ By default, this function's global state is scoped to the application. To change
 |**_ismbbkalnum**|\<mbctype.h>|
 |**_ismbbkalnum_l**|\<mbctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Byte classification](../byte-classification.md)\
+[_ismbb Routines](../ismbb-routines.md)

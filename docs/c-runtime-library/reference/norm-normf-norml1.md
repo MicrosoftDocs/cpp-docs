@@ -32,7 +32,7 @@ long double norm( _Lcomplex z );  // C++ only
 *z*<br/>
 A complex number.
 
-## Return Value
+## Return value
 
 The squared magnitude of *z*.
 
@@ -46,14 +46,14 @@ Because C++ allows overloading, you can call overloads of **norm** that take **_
 |-------------|--------------|------------------|
 |**norm**, **normf**, **norml**|\<complex.h>|\<complex.h>|
 
-The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[creal, crealf, creall](creal-crealf-creall.md)\
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)\
+[conj, conjf, conjl](conj-conjf-conjl.md)\
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)\
+[carg, cargf, cargl](carg-cargf-cargl.md)\
+[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)

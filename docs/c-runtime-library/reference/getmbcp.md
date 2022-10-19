@@ -20,7 +20,7 @@ Retrieves the current code page.
 int _getmbcp( void );
 ```
 
-## Return Value
+## Return value
 
 Returns the current multibyte code page. A return value of 0 indicates that a single byte code page is in use.
 
@@ -34,8 +34,8 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_getmbcp**|\<mbctype.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_setmbcp](setmbcp.md)<br/>
+[_setmbcp](setmbcp.md)

@@ -14,7 +14,7 @@ helpviewer_keywords: ["exit function", "_exit function", "processes, terminating
 Terminates the calling process. The **`exit`** function terminates it after cleanup; **`_exit`** and **`_Exit`** terminate it immediately.
 
 > [!NOTE]
-> Do not use this method to shut down a Universal Windows Platform (UWP) app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP App lifecycle](/windows/uwp/launch-resume/app-lifecycle). For more information about UWP apps, see [Universal Windows Platform documentation](https://developer.microsoft.com/windows/apps).
+> Do not use this method to shut down a Universal Windows Platform (UWP) app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle). For more information about UWP apps, see [Universal Windows Platform documentation](https://developer.microsoft.com/windows/apps).
 
 ## Syntax
 
@@ -73,7 +73,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**`exit`**, **`_Exit`**, **`_exit`**|`<process.h>` or `<stdlib.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -92,12 +92,12 @@ int main( void )
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[`abort`](abort.md)<br/>
-[`atexit`](atexit.md)<br/>
-[`_cexit`, `_c_exit`](cexit-c-exit.md)<br/>
-[`_exec`, `_wexec` Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[`_onexit`, `_onexit_m`](onexit-onexit-m.md)<br/>
-[`quick_exit`](quick-exit1.md)<br/>
-[`_spawn`, `_wspawn` Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[`system`, `_wsystem`](system-wsystem.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`_cexit`, `_c_exit`](cexit-c-exit.md)\
+[`_exec`, `_wexec` Functions](../exec-wexec-functions.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`quick_exit`](quick-exit1.md)\
+[`_spawn`, `_wspawn` Functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

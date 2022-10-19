@@ -6,7 +6,7 @@ f1_keywords: ["_O_EXCL", "_O_RDWR", "_O_APPEND", "_O_RDONLY", "_O_TRUNC", "_O_CR
 helpviewer_keywords: ["_O_RDWR constant", "O_EXCL constant", "O_RDWR constant", "O_WRONLY constant", "O_APPEND constant", "O_CREAT constant", "_O_CREAT constant", "_O_APPEND constant", "_O_EXCL constant", "O_TRUNC constant", "_O_RDONLY constant", "_O_TRUNC constant", "O_RDONLY constant", "_O_WRONLY constant"]
 ms.assetid: c8fa5548-9ac2-4217-801d-eb45e86f2fa4
 ---
-# File Constants
+# File constants
 
 ## Syntax
 
@@ -32,6 +32,6 @@ The file constants are as follows:
 
 ## See also
 
-[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
-[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[_open, _wopen](./reference/open-wopen.md)\
+[_sopen, _wsopen](./reference/sopen-wsopen.md)\
+[Global constants](./global-constants.md)

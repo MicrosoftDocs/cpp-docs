@@ -46,7 +46,7 @@ The number of character to be converted.
 *mbstate*<br/>
 A pointer to an **mbstate_t** conversion state object.
 
-## Return Value
+## Return value
 
 Returns the number of bytes successfully converted, not including the null terminating null byte (if any), otherwise a -1 if an error occurred.
 
@@ -60,7 +60,7 @@ The **wcsrtombs** function differs from [wcstombs, _wcstombs_l](wcstombs-wcstomb
 
 If the *mbstr* argument is **NULL**, **wcsrtombs** returns the required size in bytes of the destination string. If *mbstate* is null, the internal **mbstate_t** conversion state is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the **errno** is set to **EILSEQ**.
 
-In C++, this function has a template overload that invokes the newer, secure counterpart of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, this function has a template overload that invokes the newer, secure counterpart of this function. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -122,11 +122,11 @@ The string was successfuly converted.
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[wcrtomb](wcrtomb.md)<br/>
-[wcrtomb_s](wcrtomb-s.md)<br/>
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[mbsinit](mbsinit.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[wcrtomb](wcrtomb.md)\
+[wcrtomb_s](wcrtomb-s.md)\
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)\
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
+[mbsinit](mbsinit.md)

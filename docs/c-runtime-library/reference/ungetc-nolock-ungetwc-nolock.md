@@ -35,11 +35,11 @@ Character to be pushed.
 *stream*<br/>
 Pointer to **FILE** structure.
 
-## Return Value
+## Return value
 
 If successful, each of these functions returns the character argument *c*. If *c* cannot be pushed back or if no character has been read, the input stream is unchanged and **_ungetc_nolock** returns **EOF**; **_ungetwc_nolock** returns **WEOF**. If *stream* is **NULL**, **EOF** or **WEOF** is returned and **errno** is set to **EINVAL**.
 
-For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -47,7 +47,7 @@ These functions are non-locking versions of **ungetc** and **ungetwc**. The vers
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -60,10 +60,10 @@ By default, this function's global state is scoped to the application. To change
 |**_ungetc_nolock**|\<stdio.h>|
 |**_ungetwc_nolock**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[getc, getwc](getc-getwc.md)\
+[putc, putwc](putc-putwc.md)

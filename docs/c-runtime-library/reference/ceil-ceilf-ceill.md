@@ -40,7 +40,7 @@ long double ceill(
 *x*\
 Floating-point value.
 
-## Return Value
+## Return value
 
 The **ceil** functions return a floating-point value that represents the smallest integer that is greater than or equal to *x*. There's no error return.
 
@@ -54,7 +54,7 @@ The **ceil** functions return a floating-point value that represents the smalles
 
 Because C++ allows overloading, you can call overloads of **ceil** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **ceil** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `ceil()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `ceil()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this state, see [Global state in the CRT](../global-state.md).
 
@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 | **ceil**, **ceilf**, **ceill**| \<math.h> |
 | **ceil** macro | \<tgmath.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -73,7 +73,7 @@ See the example for [floor](floor-floorf-floorl.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
-[round, roundf, roundl](round-roundf-roundl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[floor, floorf, floorl](floor-floorf-floorl.md)\
+[fmod, fmodf](fmod-fmodf.md)\
+[round, roundf, roundl](round-roundf-roundl.md)

@@ -22,7 +22,7 @@ _PNH _query_new_handler(
 );
 ```
 
-## Return Value
+## Return value
 
 Returns the address of the current new handler routine as set by **_set_new_handler**.
 
@@ -36,13 +36,13 @@ The C++ **_query_new_handler** function returns the address of the current excep
 |-------------|---------------------|
 |**_query_new_handler**|\<new.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[free](free.md)<br/>
+[Memory allocation](../memory-allocation.md)\
+[free](free.md)

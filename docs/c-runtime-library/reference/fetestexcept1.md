@@ -27,7 +27,7 @@ int fetestexcept(
 *excepts*<br/>
 A bitwise OR of the floating-point     status flags to test.
 
-## Return Value
+## Return value
 
 On success, returns a bitmask containing a bitwise OR of the floating-point exception macros that correspond to the exception status flags currently set. Returns 0 if none of the exceptions are set.
 
@@ -54,10 +54,10 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**fetestexcept**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[feclearexcept](feclearexcept1.md)<br/>
-[feraiseexcept](feraiseexcept.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[feclearexcept](feclearexcept1.md)\
+[feraiseexcept](feraiseexcept.md)

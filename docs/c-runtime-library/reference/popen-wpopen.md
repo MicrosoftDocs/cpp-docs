@@ -43,7 +43,7 @@ Mode of the returned stream.
 
 Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **`NULL`** on an error. If the error is caused by an invalid parameter, **`errno`** is set to **`EINVAL`**. See the Remarks section for valid modes.
 
-For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -57,13 +57,13 @@ The **`_popen`** function creates a pipe. It then asynchronously executes a spaw
 |**"t"**|Open in text mode.|
 
 > [!NOTE]
-> If used in a Windows program, the **`_popen`** function returns an invalid file pointer that causes the program to stop responding indefinitely. **`_popen`** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
+> If used in a Windows program, the **`_popen`** function returns an invalid file pointer that causes the program to stop responding indefinitely. **`_popen`** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a child process with redirected input and output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
 
 **`_wpopen`** is a wide-character version of **`_popen`**; the *path* argument to **`_wpopen`** is a wide-character string. **`_wpopen`** and **`_popen`** behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -76,11 +76,11 @@ By default, this function's global state is scoped to the application. To change
 |**`_popen`**|`<stdio.h>`|
 |**`_wpopen`**|`<stdio.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -143,6 +143,6 @@ Process returned 0
 
 ## See also
 
-[Process and environment control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`_pclose`](pclose.md)\
 [`_pipe`](pipe.md)

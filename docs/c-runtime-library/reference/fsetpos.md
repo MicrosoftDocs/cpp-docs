@@ -31,9 +31,9 @@ Pointer to **FILE** structure.
 *pos*<br/>
 Position-indicator storage.
 
-## Return Value
+## Return value
 
-If successful, **fsetpos** returns 0. On failure, the function returns a nonzero value and sets **errno** to one of the following manifest constants (defined in ERRNO.H): **EBADF**, which means the file isn't accessible or the object that *stream* points to isn't a valid file structure; or **EINVAL**, which means an invalid value for *stream* or *pos* was passed. If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If successful, **fsetpos** returns 0. On failure, the function returns a nonzero value and sets **errno** to one of the following manifest constants (defined in ERRNO.H): **EBADF**, which means the file isn't accessible or the object that *stream* points to isn't a valid file structure; or **EINVAL**, which means an invalid value for *stream* or *pos* was passed. If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
 For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -49,7 +49,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**fsetpos**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -57,5 +57,5 @@ See the example for [fgetpos](fgetpos.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetpos](fgetpos.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fgetpos](fgetpos.md)

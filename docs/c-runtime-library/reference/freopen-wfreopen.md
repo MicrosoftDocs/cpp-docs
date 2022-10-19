@@ -39,11 +39,11 @@ Type of access permitted.
 *`stream`*\
 Pointer to **`FILE`** structure.
 
-## Return Value
+## Return value
 
-Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a **`NULL`** pointer value. If *`path`*, *`mode`*, or *`stream`* is a null pointer, or if *filename* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`NULL`**.
+Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a **`NULL`** pointer value. If *`path`*, *`mode`*, or *`stream`* is a null pointer, or if *filename* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`NULL`**.
 
-For more information on these, and other, error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information on these, and other, error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -53,7 +53,7 @@ The **`freopen`** function closes the file currently associated with *`stream`* 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 | `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |--|--|--|--|
@@ -85,9 +85,9 @@ When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both re
 
 In text (translated) mode, carriage return-line feed (CR-LF) combinations are translated into single line feed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **`"a+"`**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file may cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file. Don't use the **`t`** option if you want ANSI portability because it's a Microsoft extension.
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
 
-For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
 ## Requirements
 
@@ -96,7 +96,7 @@ For a discussion of text and binary modes, see [Text and Binary Mode File I/O](.
 |**`freopen`**|`<stdio.h>`|
 |**`_wfreopen`**|`<stdio.h>` or `<wchar.h>`|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -135,7 +135,7 @@ This will go to the file 'freopen.out'
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`fclose, _fcloseall`](fclose-fcloseall.md)\
 [`_fdopen, _wfdopen`](fdopen-wfdopen.md)\
 [`_fileno`](fileno.md)\

@@ -11,7 +11,7 @@ helpviewer_keywords: ["memory allocation, stack", "malloca function", "_malloca 
 ---
 # `_malloca`
 
-Allocates memory on the stack. This is a version of [`_alloca`](alloca.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Allocates memory on the stack. This is a version of [`_alloca`](alloca.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -26,11 +26,11 @@ void *_malloca(
 *`size`*\
 Bytes to be allocated from the stack.
 
-## Return Value
+## Return value
 
 The **`_malloca`** routine returns a **`void`** pointer to the allocated space, which is guaranteed to be suitably aligned for storage of any type of object. If *`size`* is 0, **`_malloca`** allocates a zero-length item and returns a valid pointer to that item.
 
-If *`size`* is greater than **`_ALLOCA_S_THRESHOLD`**, then **`_malloca`** attempts to allocate on the heap, and returns a null pointer if the space can't be allocated. If *`size`* is less than or equal to **`_ALLOCA_S_THRESHOLD`**, then **`_malloca`** attempts to allocate on the stack, and a stack overflow exception is generated if the space can't be allocated. The stack overflow exception isn't a C++ exception; it's a structured exception. Instead of using C++ exception handling, you must use [Structured Exception Handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH) to catch this exception.
+If *`size`* is greater than **`_ALLOCA_S_THRESHOLD`**, then **`_malloca`** attempts to allocate on the heap, and returns a null pointer if the space can't be allocated. If *`size`* is less than or equal to **`_ALLOCA_S_THRESHOLD`**, then **`_malloca`** attempts to allocate on the stack, and a stack overflow exception is generated if the space can't be allocated. The stack overflow exception isn't a C++ exception; it's a structured exception. Instead of using C++ exception handling, you must use [Structured exception handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH) to catch this exception.
 
 ## Remarks
 
@@ -143,7 +143,7 @@ int main()
 1000
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Enter the number of bytes to allocate using _malloca: 1000
@@ -151,7 +151,7 @@ Enter the number of bytes to allocate using _malloca: 1000
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)\
+[Memory allocation](../memory-allocation.md)\
 [`calloc`](calloc.md)\
 [`malloc`](malloc.md)\
 [`realloc`](realloc.md)\

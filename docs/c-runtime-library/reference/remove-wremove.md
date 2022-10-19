@@ -29,7 +29,7 @@ int _wremove(
 *`path`*\
 Path of file to be removed.
 
-## Return Value
+## Return value
 
 Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets **`errno`** either to **`EACCES`** to indicate that the path specifies a read-only file, specifies a directory, or the file is open, or to **`ENOENT`** to indicate that the filename or path wasn't found.
 
@@ -41,7 +41,7 @@ The **`remove`** function deletes the file specified by *`path`.* **`_wremove`**
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -54,11 +54,11 @@ By default, this function's global state is scoped to the application. To change
 |**`remove`**|`<stdio.h>` or `<io.h>`|
 |**`_wremove`**|`<stdio.h>` or `<wchar.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -83,7 +83,7 @@ int main( void )
 This file will be deleted.
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Deleted 'CRT_REMOVE.TXT'
@@ -91,5 +91,5 @@ Deleted 'CRT_REMOVE.TXT'
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)\
+[File handling](../file-handling.md)\
 [`_unlink`, `_wunlink`](unlink-wunlink.md)

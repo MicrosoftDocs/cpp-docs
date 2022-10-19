@@ -20,7 +20,7 @@ Flushes all streams; clears all buffers.
 int _flushall( void );
 ```
 
-## Return Value
+## Return value
 
 **_flushall** returns the number of open streams (input and output). There's no error return.
 
@@ -32,7 +32,7 @@ If a read follows a call to **_flushall**, new data is read from the input files
 
 The commit-to-disk feature of the run-time library lets you ensure that critical data is written directly to disk rather than to the operating system buffers. Without rewriting an existing program, you can enable this feature by linking the program's object files with Commode.obj. In the resulting executable file, calls to **_flushall** write the contents of all buffers to disk. Only **_flushall** and [fflush](fflush.md) are affected by Commode.obj.
 
-For information about controlling the commit-to-disk feature, see [Stream I/O](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md), and [_fdopen](fdopen-wfdopen.md).
+For information about controlling the commit-to-disk feature, see [Stream I/O](../stream-i-o.md), [fopen](fopen-wfopen.md), and [_fdopen](fdopen-wfdopen.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -42,7 +42,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_flushall**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -68,8 +68,8 @@ There were 3 streams flushed
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_commit](commit.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[fflush](fflush.md)<br/>
-[setvbuf](setvbuf.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[_commit](commit.md)\
+[fclose, _fcloseall](fclose-fcloseall.md)\
+[fflush](fflush.md)\
+[setvbuf](setvbuf.md)

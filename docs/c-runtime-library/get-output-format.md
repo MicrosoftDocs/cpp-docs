@@ -23,7 +23,7 @@ Gets the current value of the output format flag.
 unsigned int _get_output_format();
 ```
 
-## Return Value
+## Return value
 
 The current value of the output format flag.
 
@@ -37,11 +37,11 @@ The output format flag controls features of formatted I/O. The flag has two poss
 |-------------|---------------------|
 |`_get_output_format`|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](./compatibility.md) in the Introduction.
 
 ## See also
 
-[Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
-[_set_output_format](../c-runtime-library/set-output-format.md)
+[Format specification syntax: `printf` and `wprintf` functions](./format-specification-syntax-printf-and-wprintf-functions.md)\
+[printf, _printf_l, wprintf, _wprintf_l](./reference/printf-printf-l-wprintf-wprintf-l.md)\
+[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
+[_set_output_format](./set-output-format.md)

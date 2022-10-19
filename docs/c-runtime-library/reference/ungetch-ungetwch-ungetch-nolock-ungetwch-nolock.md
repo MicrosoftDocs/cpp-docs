@@ -39,7 +39,7 @@ wint_t _ungetwch_nolock(
 *c*<br/>
 Character to be pushed.
 
-## Return Value
+## Return value
 
 Both functions return the character *c* if successful. If there is an error, **_ungetch** returns a value of **EOF** and **_ungetwch** returns **WEOF**.
 
@@ -51,7 +51,7 @@ The versions with the **_nolock** suffix are identical except that they are not 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 |**_ungetch**, **_ungetch_nolock**|\<conio.h>|
 |**_ungetwch**, **_ungetwch_nolock**|\<conio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -111,6 +111,6 @@ Whitetoken = White
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
-[_getch, _getwch](getch-getwch.md)<br/>
+[Console and port I/O](../console-and-port-i-o.md)\
+[_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)\
+[_getch, _getwch](getch-getwch.md)

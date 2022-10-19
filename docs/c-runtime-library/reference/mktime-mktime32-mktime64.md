@@ -32,9 +32,9 @@ __time64_t _mktime64(
 *`timeptr`*\
 Pointer to time structure; see [`asctime`](asctime-wasctime.md).
 
-## Return Value
+## Return value
 
-**`_mktime32`** returns the specified calendar time encoded as a value of type [`time_t`](../../c-runtime-library/standard-types.md). If *`timeptr`* references a date before midnight, January 1, 1970, or if the calendar time can't be represented, **`_mktime32`** returns -1 cast to type **`time_t`**. When using **`_mktime32`** and if *`timeptr`* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return -1 cast to type **`time_t`**.
+**`_mktime32`** returns the specified calendar time encoded as a value of type [`time_t`](../standard-types.md). If *`timeptr`* references a date before midnight, January 1, 1970, or if the calendar time can't be represented, **`_mktime32`** returns -1 cast to type **`time_t`**. When using **`_mktime32`** and if *`timeptr`* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return -1 cast to type **`time_t`**.
 
 **`_mktime64`** will return -1 cast to type **`__time64_t`** if *`timeptr`* references a date after 23:59:59, December 31, 3000, UTC.
 
@@ -58,7 +58,7 @@ The C run-time library will determine the daylight savings time behavior from th
 
 Note that **`gmtime`** and **`localtime`** (and **`_gmtime32`**, **`_gmtime64`**, **`_localtime32`**, and **`_localtime64`**) use a single buffer per thread for the conversion. If you supply this buffer to **`mktime`**, **`_mktime32`** or **`_mktime64`**, the previous contents are destroyed.
 
-These functions validate their parameter. If *`timeptr`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**.
+These functions validate their parameter. If *`timeptr`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -70,11 +70,11 @@ By default, this function's global state is scoped to the application. To change
 |**`_mktime32`**|`<time.h>`|
 |**`_mktime64`**|`<time.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -109,7 +109,7 @@ int main( void )
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Current time is Fri Apr 25 13:34:07 2003
@@ -119,7 +119,7 @@ In 20 days the time will be Thu May 15 13:34:07 2003
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)\
+[Time management](../time-management.md)\
 [`asctime`, `_wasctime`](asctime-wasctime.md)\
 [`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
 [`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\

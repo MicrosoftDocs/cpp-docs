@@ -20,7 +20,7 @@ Creates a temporary file. This function is deprecated because a more secure vers
 FILE *tmpfile( void );
 ```
 
-## Return Value
+## Return value
 
 If successful, **tmpfile** returns a stream pointer. Otherwise, it returns a **NULL** pointer.
 
@@ -38,7 +38,7 @@ Failure can occur if you attempt more than TMP_MAX (see STDIO.H) calls with **tm
 |-------------|---------------------|
 |**tmpfile**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -81,6 +81,6 @@ Temporary file 3 was created
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_rmtmp](rmtmp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[_rmtmp](rmtmp.md)\
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)

@@ -27,9 +27,9 @@ int _eof(
 *`fd`*<br/>
 File descriptor referring to the open file.
 
-## Return Value
+## Return value
 
-**_eof** returns 1 if the current position is end of file, or 0 if it isn't. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EBADF**, which indicates an invalid file descriptor.
+**_eof** returns 1 if the current position is end of file, or 0 if it isn't. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EBADF**, which indicates an invalid file descriptor.
 
 ## Remarks
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|---------------------|
 |**_eof**|\<io.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -99,9 +99,9 @@ Number of bytes read = 29
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[clearerr](clearerr.md)<br/>
-[feof](feof.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[Error handling](../error-handling-crt.md)\
+[Low-level I/O](../low-level-i-o.md)\
+[clearerr](clearerr.md)\
+[feof](feof.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)

@@ -8,7 +8,7 @@ ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
 ---
 # _pgmptr, _wpgmptr
 
-The path of the executable file. Deprecated; use [_get_pgmptr](../c-runtime-library/reference/get-pgmptr.md) and [_get_wpgmptr](../c-runtime-library/reference/get-wpgmptr.md).
+The path of the executable file. Deprecated; use [_get_pgmptr](./reference/get-pgmptr.md) and [_get_wpgmptr](./reference/get-wpgmptr.md).
 
 ## Syntax
 
@@ -29,7 +29,7 @@ When a program isn't run from the command line, `_pgmptr` might be initialized t
 
 `_wpgmptr` is the wide-character counterpart of `_pgmptr` for use with programs that use `wmain`.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -64,4 +64,4 @@ You could use `_wpgmptr` by changing `%Fs` to `%S` and `main` to `wmain`.
 
 ## See also
 
-[Global Variables](../c-runtime-library/global-variables.md)
+[Global variables](./global-variables.md)

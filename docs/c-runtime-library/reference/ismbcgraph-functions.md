@@ -65,11 +65,11 @@ Character to be determined.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 Each of these routines returns a nonzero value if the character satisfies the test condition, or 0 if it does not. If *c* <= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
-The versions of these functions are identical, except that the ones that have the **_l** suffix use the locale that's passed in for their locale-dependent behavior, instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions are identical, except that the ones that have the **_l** suffix use the locale that's passed in for their locale-dependent behavior, instead of the current locale. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
@@ -100,17 +100,17 @@ By default, this function's global state is scoped to the application. To change
 |**_ismbcspace**|\<mbstring.h>|
 |**_ismbcspace_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[_ismbc Routines](../ismbc-routines.md)\
+[is, isw Routines](../is-isw-routines.md)\
+[_ismbb Routines](../ismbb-routines.md)

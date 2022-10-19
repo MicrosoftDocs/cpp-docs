@@ -36,7 +36,7 @@ The string to be parsed to convert into a floating-point value.
 *locale*<br/>
 The locale to use.
 
-## Return Value
+## Return value
 
 Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW**, which are defined in the header file \<math.h>.
 
@@ -114,7 +114,7 @@ Return value: 3
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[Locale](../locale.md)\
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)

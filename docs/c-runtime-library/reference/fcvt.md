@@ -39,7 +39,7 @@ Pointer to the stored decimal-point position.
 *sign*<br/>
 Pointer to the stored sign indicator.
 
-## Return Value
+## Return value
 
 **_fcvt** returns a pointer to the string of digits, **NULL** on error.
 
@@ -55,7 +55,7 @@ The difference between **_ecvt** and **_fcvt** is in the interpretation of the *
 
 **_ecvt** and **_fcvt** use a single statically allocated buffer for the conversion. Each call to one of these routines destroys the results of the previous call.
 
-This function validates its parameters. If *dec* or *sign* is **NULL**, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL**, and **NULL** is returned.
+This function validates its parameters. If *dec* or *sign* is **NULL**, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL**, and **NULL** is returned.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_fcvt**|\<stdlib.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -98,8 +98,8 @@ source: 3.1415926535   buffer: '31415927'   decimal: 1   sign: 0
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_gcvt](gcvt.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
+[_ecvt](ecvt.md)\
+[_gcvt](gcvt.md)

@@ -27,7 +27,7 @@ int fegetenv(
 *`penv`*<br/>
 Pointer to an **fenv_t** object to contain the current floating-point environment values.
 
-## Return Value
+## Return value
 
 Returns 0 if the floating-point environment was successfully stored in *`penv`*. Otherwise, it returns a non-zero value.
 
@@ -43,9 +43,9 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**fegetenv**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fesetenv](fesetenv1.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[fesetenv](fesetenv1.md)

@@ -49,11 +49,11 @@ long double _hypotl(
 *x*, *y*\
 Floating-point values.
 
-## Return Value
+## Return value
 
 If successful, **hypot** returns the length of the hypotenuse; on overflow, **hypot** returns INF (infinity) and the **errno** variable is set to **ERANGE**. You can use **_matherr** to modify error handling.
 
-For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -61,7 +61,7 @@ The **hypot** functions calculate the length of the hypotenuse of a right triang
 
 The versions of the functions that have leading underscores are provided for compatibility with earlier standards. Their behavior is identical to the versions that don't have leading underscores. We recommend using the versions without leading underscores for new code.
 
-If you use the \<tgmath.h> `hypot()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `hypot()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -72,7 +72,7 @@ By default, this function's global state is scoped to the application. To change
 |**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<math.h>|
 |**hypot** macro | \<tgmath.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -98,6 +98,6 @@ If a right triangle has sides 3.0 and 4.0, its hypotenuse is 5.0
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_cabs](cabs.md)<br/>
-[_matherr](matherr.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[_cabs](cabs.md)\
+[_matherr](matherr.md)

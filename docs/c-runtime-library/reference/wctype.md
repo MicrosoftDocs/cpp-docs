@@ -26,7 +26,7 @@ wctype_t wctype(
 *`property`*\
 Property string.
 
-## Return Value
+## Return value
 
 If the **`LC_CTYPE`** category of the current locale doesn't define a classification rule whose name matches the property string *`property`*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [`towctrans`](towctrans.md).
 
@@ -54,9 +54,9 @@ The function determines a classification rule for wide-character codes. The foll
 |-------------|---------------------|
 |`wctype`|`<wctype.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
+[Data conversion](../data-conversion.md)\
 [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)

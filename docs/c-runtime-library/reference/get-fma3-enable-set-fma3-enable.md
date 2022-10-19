@@ -26,7 +26,7 @@ int _get_FMA3_enable();
 *flag*<br/>
 Set to 1 to enable the FMA3 implementations of the transcendental math floating-point library functions on X64 platforms, or to 0 to use the implementations that do not use FMA3 instructions.
 
-## Return Value
+## Return value
 
 A non-zero value if the FMA3 implementations of the transcendental math floating-point library functions are enabled. Otherwise, zero.
 
@@ -44,9 +44,9 @@ The **_set_FMA3_enable** and **_get_FMA3_enable** functions are only available i
 |-------------|---------------------|
 |**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<math.h><br />C++: \<cmath> or \<math.h>|
 
-The **_set_FMA3_enable** and **_get_FMA3_enable** functions are Microsoft-specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_set_FMA3_enable** and **_get_FMA3_enable** functions are Microsoft-specific. For compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-point support](../../c-runtime-library/floating-point-support.md)<br/>
-[Floating-point migration issues](../../porting/floating-point-migration-issues.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[Floating-point migration issues](../../porting/floating-point-migration-issues.md)

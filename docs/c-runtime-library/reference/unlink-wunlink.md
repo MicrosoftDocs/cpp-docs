@@ -30,7 +30,7 @@ int _wunlink(
 *filename*<br/>
 Name of file to remove.
 
-## Return Value
+## Return value
 
 Each of these functions returns 0 if successful. Otherwise, the function returns -1 and sets **errno** to **EACCES**, which means the path specifies a read-only file or a directory, or to **ENOENT**, which means the file or path isn't found.
 
@@ -42,7 +42,7 @@ The **_unlink** function deletes the file specified by *filename*. **_wunlink** 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -55,9 +55,9 @@ By default, this function's global state is scoped to the application. To change
 |**_unlink**|\<io.h> and \<stdio.h>|
 |**_wunlink**|\<io.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
-## Code Example
+## Code example
 
 This program uses _unlink to delete CRT_UNLINK.TXT.
 
@@ -81,7 +81,7 @@ int main( void )
 This file will be deleted.
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Deleted 'CRT_UNLINK.TXT'
@@ -89,6 +89,6 @@ Deleted 'CRT_UNLINK.TXT'
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](close.md)<br/>
-[remove, _wremove](remove-wremove.md)<br/>
+[File handling](../file-handling.md)\
+[_close](close.md)\
+[remove, _wremove](remove-wremove.md)

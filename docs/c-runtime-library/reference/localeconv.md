@@ -20,9 +20,9 @@ Gets detailed information on locale settings.
 struct lconv *localeconv( void );
 ```
 
-## Return Value
+## Return value
 
-**localeconv** returns a pointer to a filled-in object of type [struct lconv](../../c-runtime-library/standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **localeconv**. Changes made to the values in this object do not modify the locale settings. Calls to [setlocale](setlocale-wsetlocale.md) with *category* values of **LC_ALL**, **LC_MONETARY**, or **LC_NUMERIC** overwrite the contents of the structure.
+**localeconv** returns a pointer to a filled-in object of type [struct lconv](../standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **localeconv**. Changes made to the values in this object do not modify the locale settings. Calls to [setlocale](setlocale-wsetlocale.md) with *category* values of **LC_ALL**, **LC_MONETARY**, or **LC_NUMERIC** overwrite the contents of the structure.
 
 ## Remarks
 
@@ -99,16 +99,16 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**localeconv**|\<locale.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[setlocale](../../preprocessor/setlocale.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[Locale](../locale.md)\
+[setlocale](../../preprocessor/setlocale.md)\
+[strcoll Functions](../strcoll-functions.md)\
+[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)\
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

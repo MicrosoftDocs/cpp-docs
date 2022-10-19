@@ -91,11 +91,11 @@ Here's a list of the affected functions:
 |-------------|---------------------|
 |**_CrtSetDebugFillThreshold**|\<crtdbg.h>|
 
-This function is Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+This function is Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of the [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -163,4 +163,4 @@ With buffer-filling off:
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+[Debug routines](../debug-routines.md)

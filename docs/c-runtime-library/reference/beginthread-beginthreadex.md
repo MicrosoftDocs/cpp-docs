@@ -65,19 +65,19 @@ Flags that control the initial state of a new thread. Set *`initflag`* to 0 to r
 *`thrdaddr`*<br/>
 Points to a 32-bit variable that receives the thread identifier. If it's **`NULL`**, it's not used.
 
-## Return Value
+## Return value
 
 If successful, each of these functions returns a handle to the newly created thread; however, if the newly created thread exits too quickly, **`_beginthread`** might not return a valid handle. (See the discussion in the Remarks section.) On an error, **`_beginthread`** returns -1L, and **`errno`** is set to **`EAGAIN`** if there are too many threads, to **`EINVAL`** if the argument is invalid or the stack size is incorrect, or to **`EACCES`** if there are insufficient resources (such as memory). On an error, **`_beginthreadex`** returns 0, and **`errno`** and **`_doserrno`** are set.
 
-If *`start_address`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+If *`start_address`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
 
-For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-For more information about **`uintptr_t`**, see [Standard Types](../../c-runtime-library/standard-types.md).
+For more information about **`uintptr_t`**, see [Standard types](../standard-types.md).
 
 ## Remarks
 
-The **`_beginthread`** function creates a thread that begins execution of a routine at *`start_address`*. The routine at *`start_address`* must use the **`__cdecl`** (for native code) or **`__clrcall`** (for managed code) calling convention and should have no return value. When the thread returns from that routine, it's terminated automatically. For more information about threads, see [Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
+The **`_beginthread`** function creates a thread that begins execution of a routine at *`start_address`*. The routine at *`start_address`* must use the **`__cdecl`** (for native code) or **`__clrcall`** (for managed code) calling convention and should have no return value. When the thread returns from that routine, it's terminated automatically. For more information about threads, see [Multithreading support for older code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
 **`_beginthreadex`** resembles the Win32 [`CreateThread`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) API more closely than **`_beginthread`** does. **`_beginthreadex`** differs from **`_beginthread`** in the following ways:
 
@@ -104,7 +104,7 @@ The operating system handles the allocation of the stack when either **`_beginth
 
 *`arglist`* is a parameter to be passed to the newly created thread. Typically, it's the address of a data item, such as a character string. *`arglist`* can be **`NULL`** if it isn't needed, but **`_beginthread`** and **`_beginthreadex`** must be given some value to pass to the new thread. All threads are terminated if any thread calls [`abort`](abort.md), **`exit`**, **`_exit`**, or **`ExitProcess`**.
 
-The locale of the new thread is initialized by using the per-process global current locale info. If per-thread locale is enabled by a call to [`_configthreadlocale`](configthreadlocale.md) (either globally or for new threads only), the thread can change its locale independently from other threads by calling **`setlocale`** or **`_wsetlocale`**. Threads that don't have the per-thread locale flag set can affect the locale info in all other threads that also don't have the per-thread locale flag set, and also all newly created threads. For more information, see [Locale](../../c-runtime-library/locale.md).
+The locale of the new thread is initialized by using the per-process global current locale info. If per-thread locale is enabled by a call to [`_configthreadlocale`](configthreadlocale.md) (either globally or for new threads only), the thread can change its locale independently from other threads by calling **`setlocale`** or **`_wsetlocale`**. Threads that don't have the per-thread locale flag set can affect the locale info in all other threads that also don't have the per-thread locale flag set, and also all newly created threads. For more information, see [Locale](../locale.md).
 
 For **`/clr`** code, **`_beginthread`** and **`_beginthreadex`** each have two overloads. One takes a native calling-convention function pointer, and the other takes a **`__clrcall`** function pointer. The first overload isn't application domain-safe and never will be. If you're writing **`/clr`** code, you must ensure that the new thread enters the correct application domain before it accesses managed resources. You can do so, for example, by using [`call_in_appdomain` Function](../../dotnet/call-in-appdomain-function.md). The second overload is application domain-safe; the newly created thread will always end up in the application domain of the caller of **`_beginthread`** or **`_beginthreadex`**.
 
@@ -117,11 +117,11 @@ By default, this function's global state is scoped to the application. To change
 |**`_beginthread`**|`<process.h>`|
 |**`_beginthreadex`**|`<process.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Multithreaded versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Multithreaded versions of the [C run-time libraries](../crt-library-features.md) only.
 
 To use **`_beginthread`** or **`_beginthreadex`**, the application must link with one of the multithreaded C run-time libraries.
 
@@ -295,7 +295,7 @@ Counter should be 1000000; it is-> 1000000
 
 ## See also
 
-- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [Process and environment control](../process-and-environment-control.md)
 - [`_endthread`, `_endthreadex`](endthread-endthreadex.md)
 - [`abort`](abort.md)
 - [`exit`, `_Exit`, `_exit`](exit-exit-exit.md)

@@ -30,7 +30,7 @@ wint_t _putwchar_nolock(
 *c*<br/>
 Character to be written.
 
-## Return Value
+## Return value
 
 See **putchar, putwchar**.
 
@@ -38,7 +38,7 @@ See **putchar, putwchar**.
 
 **putchar_nolock** and **_putwchar_nolock** are identical to the versions without the **_nolock** suffix except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -51,11 +51,11 @@ See **putchar, putwchar**.
 |**_putchar_nolock**|\<stdio.h>|
 |**_putwchar_nolock**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -89,6 +89,6 @@ This is the line of output
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](fputc-fputwc.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fputc, fputwc](fputc-fputwc.md)\
+[fgetc, fgetwc](fgetc-fgetwc.md)

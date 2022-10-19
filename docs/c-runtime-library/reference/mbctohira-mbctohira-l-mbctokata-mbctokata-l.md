@@ -44,7 +44,7 @@ Multibyte character to convert.
 *locale*<br/>
 Locale to use.
 
-## Return Value
+## Return value
 
 Each of these functions returns the converted character *c*, if possible. Otherwise it returns the character *c* unchanged.
 
@@ -57,7 +57,7 @@ The **_mbctohira** and **_mbctokata** functions test a character *c* and, if pos
 |**_mbctohira**, **_mbctohira_l**|Multibyte katakana to multibyte hiragana.|
 |**_mbctokata**, **_mbctokata_l**|Multibyte hiragana to multibyte katakana.|
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale for this locale-dependent behavior and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale for this locale-dependent behavior and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 In earlier versions, **_mbctohira** was named **jtohira** and **_mbctokata** was named **jtokata**. For new code, use the new names.
 
@@ -72,11 +72,11 @@ By default, this function's global state is scoped to the application. To change
 |**_mbctokata**|\<mbstring.h>|
 |**_mbctokata_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)<br/>
-[_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)<br/>
-[_mbctombb, _mbctombb_l](mbctombb-mbctombb-l.md)<br/>
+[Data conversion](../data-conversion.md)\
+[_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)\
+[_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)\
+[_mbctombb, _mbctombb_l](mbctombb-mbctombb-l.md)

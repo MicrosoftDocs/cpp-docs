@@ -30,7 +30,7 @@ Name of the parent data structure.
 *memberName*<br/>
 Name of the member in the parent data structure for which to determine the offset.
 
-## Return Value
+## Return value
 
 **offsetof** returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.
 
@@ -47,12 +47,12 @@ The **offsetof** macro returns the offset in bytes of *memberName* from the begi
 |-------------|---------------------|
 |**offsetof**|\<stddef.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
+[Memory allocation](../memory-allocation.md)

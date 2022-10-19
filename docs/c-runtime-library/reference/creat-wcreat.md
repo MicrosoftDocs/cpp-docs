@@ -35,7 +35,7 @@ Name of new file.
 *`pmode`*<br/>
 Permission setting.
 
-## Return Value
+## Return value
 
 These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return -1 and set **errno** as shown in the following table.
 
@@ -45,9 +45,9 @@ These functions, if successful, return a file descriptor to the created file. Ot
 |**EMFILE**|No more file descriptors are available.|
 |**ENOENT**|Specified file couldn't be found.|
 
-If *`filename`* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
+If *`filename`* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -55,7 +55,7 @@ The **_creat** function creates a new file or opens and truncates an existing on
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -80,7 +80,7 @@ If write permission isn't given, the file is read-only. All files are always rea
 |**_creat**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
 |**_wcreat**|\<io.h> or \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -119,11 +119,11 @@ Created data file.
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_chsize](chsize.md)<br/>
-[_close](close.md)<br/>
-[_dup, _dup2](dup-dup2.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_sopen, _wsopen](sopen-wsopen.md)<br/>
-[_umask](umask.md)<br/>
+[Low-level I/O](../low-level-i-o.md)\
+[_chmod, _wchmod](chmod-wchmod.md)\
+[_chsize](chsize.md)\
+[_close](close.md)\
+[_dup, _dup2](dup-dup2.md)\
+[_open, _wopen](open-wopen.md)\
+[_sopen, _wsopen](sopen-wsopen.md)\
+[_umask](umask.md)

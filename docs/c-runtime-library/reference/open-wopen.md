@@ -52,7 +52,7 @@ Each of these functions returns a file descriptor for the opened file. A return 
 | **`EMFILE`** | No more file descriptors are available (too many files are open). |
 | **`ENOENT`** | File or path not found. |
 
-For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -79,7 +79,7 @@ The **`_open`** function opens the file specified by *`filename`* and prepares i
 | **`_O_RDONLY`** | Opens a file for reading only. Can't be specified with **`_O_RDWR`** or **`_O_WRONLY`**. |
 | **`_O_RDWR`** | Opens a file for both reading and writing. Can't be specified with **`_O_RDONLY`** or **`_O_WRONLY`**. |
 | **`_O_SEQUENTIAL`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
-| **`_O_TEXT`** | Opens a file in text (translated) mode. (For more information, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
+| **`_O_TEXT`** | Opens a file in text (translated) mode. (For more information, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
 | **`_O_TRUNC`** | Opens a file and truncates it to zero length; the file must have write permission. Can't be specified with **`_O_RDONLY`**. **`_O_TRUNC`** used with **`_O_CREAT`** opens an existing file or creates a file. **Note:** The **`_O_TRUNC`** flag destroys the contents of the specified file. |
 | **`_O_WRONLY`** | Opens a file for writing only. Can't be specified with **`_O_RDONLY`** or **`_O_RDWR`**. |
 | **`_O_U16TEXT`** | Opens a file in Unicode UTF-16 mode. |
@@ -94,7 +94,7 @@ When a file is opened in Unicode mode by using **`_O_WTEXT`**, **`_O_U8TEXT`**, 
 
 If **`_open`** is called with **`_O_WRONLY | _O_APPEND`** (append mode) and **`_O_WTEXT`**, **`_O_U16TEXT`**, or **`_O_U8TEXT`**, it first tries to open the file for reading and writing, read the BOM, then reopen it for writing only. If opening the file for reading and writing fails, it opens the file for writing only and uses the default value for the Unicode mode setting.
 
-When two or more manifest constants are used to form the *`oflag`* argument, the constants are combined with the bitwise-OR operator ( **`|`** ). For a discussion of binary and text modes, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+When two or more manifest constants are used to form the *`oflag`* argument, the constants are combined with the bitwise-OR operator ( **`|`** ). For a discussion of binary and text modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
 The *`pmode`* argument is required only when **`_O_CREAT`** is specified. If the file already exists, *`pmode`* is ignored. Otherwise, *`pmode`* specifies the file permission settings, which are set when the new file is closed the first time. **`_open`** applies the current file-permission mask to *`pmode`* before the permissions are set. (For more information, see [`_umask`](umask.md).) *`pmode`* is an integer expression that contains one or both of the following manifest constants, which are defined in `<sys\stat.h>`.
 
@@ -106,7 +106,7 @@ The *`pmode`* argument is required only when **`_O_CREAT`** is specified. If the
 
 When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). In Windows, all files are readable; write-only permission isn't available. Therefore, the modes **`_S_IWRITE`** and **`_S_IREAD`** | **`_S_IWRITE`** are equivalent.
 
-If a value other than some combination of **`_S_IREAD`** and **`_S_IWRITE`** is specified for *`pmode`*—even if it would specify a valid *`pmode`* in another operating system—or if any value other than the allowed *`oflag`* values is specified, the function generates an assertion in Debug mode and invokes the invalid parameter handler, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EINVAL`**.
+If a value other than some combination of **`_S_IREAD`** and **`_S_IWRITE`** is specified for *`pmode`*—even if it would specify a valid *`pmode`* in another operating system—or if any value other than the allowed *`oflag`* values is specified, the function generates an assertion in Debug mode and invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EINVAL`**.
 
 ## Requirements
 
@@ -115,11 +115,11 @@ If a value other than some combination of **`_S_IREAD`** and **`_S_IWRITE`** is 
 | **`_open`** | `<io.h>` | `<fcntl.h>`, `<sys\types.h>`, `<sys\stat.h>` |
 | **`_wopen`** | `<io.h>` or `<wchar.h>` | `<fcntl.h>`, `<sys\types.h>`, `<sys\stat.h>` |
 
-**`_open`** and **`_wopen`** are Microsoft extensions. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+**`_open`** and **`_wopen`** are Microsoft extensions. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -172,7 +172,7 @@ Open succeeded on output file
 
 ## See also
 
-[Low-level I/O](../../c-runtime-library/low-level-i-o.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_close`](close.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\

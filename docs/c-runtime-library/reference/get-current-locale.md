@@ -20,7 +20,7 @@ Gets a locale object representing the current locale.
 _locale_t _get_current_locale(void);
 ```
 
-## Return Value
+## Return value
 
 A locale object representing the current locale.
 
@@ -36,10 +36,10 @@ The previous name of this function, **__get_current_locale** (with two leading u
 |-------------|---------------------|
 |**_get_current_locale**|\<locale.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>
-[_free_locale](free-locale.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)\
+[_free_locale](free-locale.md)

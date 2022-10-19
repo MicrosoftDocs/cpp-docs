@@ -27,7 +27,7 @@ int feclearexcept(
 *excepts*<br/>
 The exception status flags to clear.
 
-## Return Value
+## Return value
 
 Returns zero if *excepts* is zero, or if all the specified exceptions were successfully cleared. Otherwise, it returns a nonzero value.
 
@@ -52,9 +52,9 @@ The *excepts* argument may be zero, or the bitwise OR of one or more of the supp
 |--------------|--------------|------------------|
 |**feclearexcept**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fetestexcept](fetestexcept1.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[fetestexcept](fetestexcept1.md)

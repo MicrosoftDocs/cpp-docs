@@ -32,7 +32,7 @@ _Lcomplex cacos( _Lcomplex z );  // C++ only
 *z*<br/>
 A complex number that represents an angle, in radians.
 
-## Return Value
+## Return value
 
 The arc cosine of *z*, in radians. The result is unbounded along the imaginary axis, and bounded in the interval [0, π] along the real axis. A domain error will occur if *z* is outside the interval [-1, +1].
 
@@ -46,20 +46,20 @@ Because C++ allows overloading, you can call overloads of **cacos** that take an
 |-------------|--------------|------------------|
 |**cacos**,               **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>
-[ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)<br/>
-[catan, catanf, catanl](catan-catanf-catanl.md)<br/>
-[csinh, csinhf, csinhl](csinh-csinhf-csinhl.md)<br/>
-[casinh, casinhf, casinhl](casinh-casinhf-casinhl.md)<br/>
-[ccosh, ccoshf, ccoshl](ccosh-ccoshf-ccoshl.md)<br/>
-[cacosh, cacoshf, cacoshl](cacosh-cacoshf-cacoshl.md)<br/>
-[ctan, ctanf, ctanl](ctan-ctanf-ctanl.md)<br/>
-[csin, csinf, csinl](csin-csinf-csinl.md)<br/>
-[casin, casinf, casinl](casin-casinf-casinl.md)<br/>
-[ccos, ccosf, ccosl](ccos-ccosf-ccosl.md)<br/>
-[csqrt, csqrtf, csqrtl](csqrt-csqrtf-csqrtl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)\
+[ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)\
+[catan, catanf, catanl](catan-catanf-catanl.md)\
+[csinh, csinhf, csinhl](csinh-csinhf-csinhl.md)\
+[casinh, casinhf, casinhl](casinh-casinhf-casinhl.md)\
+[ccosh, ccoshf, ccoshl](ccosh-ccoshf-ccoshl.md)\
+[cacosh, cacoshf, cacoshl](cacosh-cacoshf-cacoshl.md)\
+[ctan, ctanf, ctanl](ctan-ctanf-ctanl.md)\
+[csin, csinf, csinl](csin-csinf-csinl.md)\
+[casin, casinf, casinl](casin-casinf-casinl.md)\
+[ccos, ccosf, ccosl](ccos-ccosf-ccosl.md)\
+[csqrt, csqrtf, csqrtl](csqrt-csqrtf-csqrtl.md)

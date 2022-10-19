@@ -53,7 +53,7 @@ The first value to compare.
 *y*\
 The second value to compare.
 
-## Return Value
+## Return value
 
 If successful, returns the smaller of *x* or *y*.
 
@@ -69,7 +69,7 @@ The function does not cause [_matherr](matherr.md) to be invoked, cause any floa
 
 Because C++ allows overloading, you can call overloads of **fmin** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **fmin** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `fmin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `fmin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
@@ -78,9 +78,9 @@ If you use the \<tgmath.h> `fmin()` macro, the type of the argument determines w
 |**fmin**, **fminf**, **fminl**|C: \<math.h><br />C++: \<math.h> or \<cmath>|
 |**fmin** macro | \<tgmath.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)

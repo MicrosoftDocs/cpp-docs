@@ -81,7 +81,7 @@ The base to use for the conversion of *`value`*, which must be in the range 2-36
 *`size`*<br/>
 Length of the buffer in units of the character type. This parameter is inferred from the *`buffer`* argument in C++.
 
-## Return Value
+## Return value
 
 Each of these functions returns a pointer to *`buffer`*. There's no error return.
 
@@ -103,7 +103,7 @@ By default, this function's global state is scoped to the application. To change
 #include <stdlib.h>
 ```
 
-In C++, these functions have template overloads that invoke their safer counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke their safer counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 The POSIX names **`itoa`**, **`ltoa`**, and **`ultoa`** exist as aliases for the **`_itoa`**, **`_ltoa`**, and **`_ultoa`** functions. The POSIX names are deprecated because they do not follow the implementation-specific global function name conventions of ISO C. By default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *`new_name`*. We recommend you change your source code to use the safer versions of these functions, **`_itoa_s`**, **`_ltoa_s`**, or **`_ultoa_s`**. For more information, see [`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md).
 
@@ -141,7 +141,7 @@ int main()
 }
 ```
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -159,7 +159,7 @@ int main()
 |**`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, **`_ui64toa`**|`<stdlib.h>`|
 |**`_itow`**, **`_ltow`**, **`_ultow`**, **`_i64tow`**, **`_ui64tow`**|`<stdlib.h>` or `<wchar.h>`|
 
-These functions and macros are Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+These functions and macros are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -240,5 +240,5 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md)<br/>
+[Data conversion](../data-conversion.md)\
+[`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md)

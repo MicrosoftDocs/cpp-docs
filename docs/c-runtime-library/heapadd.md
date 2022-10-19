@@ -34,11 +34,11 @@ Pointer to the heap memory.
 *`size`*<br/>
 Size of memory to add, in bytes.
 
-## Return Value
+## Return value
 
 If successful, `_heapadd` returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.
 
-For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](./errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -50,15 +50,15 @@ Beginning with Visual C++ version 4.0, the underlying heap structure was moved t
 |-------------|---------------------|---------------------|
 |`_heapadd`|\<malloc.h>|\<errno.h>|
 
-For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](./compatibility.md) in the Introduction.
 
 ## See also
 
-[Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
-[free](../c-runtime-library/reference/free.md)<br/>
-[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
-[_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
-[_heapset](../c-runtime-library/heapset.md)<br/>
-[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
-[malloc](../c-runtime-library/reference/malloc.md)<br/>
-[realloc](../c-runtime-library/reference/realloc.md)
+[Memory allocation](./memory-allocation.md)\
+[free](./reference/free.md)\
+[_heapchk](./reference/heapchk.md)\
+[_heapmin](./reference/heapmin.md)\
+[_heapset](./heapset.md)\
+[_heapwalk](./reference/heapwalk.md)\
+[malloc](./reference/malloc.md)\
+[realloc](./reference/realloc.md)

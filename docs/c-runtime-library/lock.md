@@ -40,5 +40,5 @@ If the lock has already been acquired, this method acquires the lock anyway and 
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_unlock](../c-runtime-library/unlock.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[_unlock](./unlock.md)

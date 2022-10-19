@@ -67,15 +67,15 @@ The *pathname* buffer should be at least **_MAX_PATH** characters long to accomm
 
 If *filename* is an empty string, these functions return **ENOENT**.
 
-If *filename* or *pathname* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *filename* or *pathname* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
-For more information about **errno** and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
+For more information about **errno** and error codes, see [`errno` constants](../errno-constants.md).
 
-In C++, these functions have template overloads that invoke the newer, more secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, more secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -88,7 +88,7 @@ By default, this function's global state is scoped to the application. To change
 |**_searchenv**|\<stdlib.h>|
 |**_wsearchenv**|\<stdlib.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -124,7 +124,7 @@ C:\Program Files\Microsoft Visual Studio 8\VC\BIN\CL.EXE
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[getenv, _wgetenv](getenv-wgetenv.md)<br/>
-[_putenv, _wputenv](putenv-wputenv.md)<br/>
-[_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md)<br/>
+[Directory control](../directory-control.md)\
+[getenv, _wgetenv](getenv-wgetenv.md)\
+[_putenv, _wputenv](putenv-wputenv.md)\
+[_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md)

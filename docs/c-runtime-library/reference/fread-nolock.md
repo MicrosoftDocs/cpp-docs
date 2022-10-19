@@ -39,7 +39,7 @@ Maximum number of items to be read.
 *stream*<br/>
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
 See [fread](fread.md).
 
@@ -55,10 +55,10 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_fread_nolock**|\<stdio.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](fwrite.md)<br/>
-[_read](read.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fwrite](fwrite.md)\
+[_read](read.md)

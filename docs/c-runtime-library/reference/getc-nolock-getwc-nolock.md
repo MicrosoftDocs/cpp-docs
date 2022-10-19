@@ -30,7 +30,7 @@ wint_t _getwc_nolock(
 *stream*<br/>
 Input stream.
 
-## Return Value
+## Return value
 
 See [getc, getwc](getc-getwc.md).
 
@@ -40,7 +40,7 @@ These functions are identical to **getc** and **getwc** except that they do not 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 |**getc_nolock**|\<stdio.h>|
 |**getwc_nolock**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -106,8 +106,8 @@ Input was: Line the first.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[_getch, _getwch](getch-getwch.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
-[ungetc, ungetwc](ungetc-ungetwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fgetc, fgetwc](fgetc-fgetwc.md)\
+[_getch, _getwch](getch-getwch.md)\
+[putc, putwc](putc-putwc.md)\
+[ungetc, ungetwc](ungetc-ungetwc.md)

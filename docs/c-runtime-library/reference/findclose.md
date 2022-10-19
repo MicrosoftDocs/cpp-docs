@@ -27,7 +27,7 @@ int _findclose(
 *handle*<br/>
 The search handle returned by a previous call to **_findfirst**.
 
-## Return Value
+## Return value
 
 If successful, **_findclose** returns 0. Otherwise, it returns -1 and sets **errno** to **ENOENT**, indicating that no more matching files could be found.
 
@@ -41,9 +41,9 @@ By default, this function's global state is scoped to the application. To change
 |--------------|---------------------|
 |**_findclose**|\<io.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>
+[System calls](../system-calls.md)\
+[Filename search functions](../filename-search-functions.md)

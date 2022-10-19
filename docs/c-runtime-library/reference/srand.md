@@ -38,7 +38,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`srand`**|`<stdlib.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -46,5 +46,5 @@ See the example for [`rand`](rand.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`rand`](rand.md)

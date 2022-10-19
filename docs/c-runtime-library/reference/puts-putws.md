@@ -30,11 +30,11 @@ int _putws(
 *str*<br/>
 Output string.
 
-## Return Value
+## Return value
 
-Returns a nonnegative value if successful. If **puts** fails, it returns **EOF**; if **_putws** fails, it returns **WEOF**. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EOF** or **WEOF**.
+Returns a nonnegative value if successful. If **puts** fails, it returns **EOF**; if **_putws** fails, it returns **WEOF**. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EOF** or **WEOF**.
 
-For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -46,7 +46,7 @@ The **puts** function writes *str* to the standard output stream **stdout**, rep
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -59,11 +59,11 @@ By default, this function's global state is scoped to the application. To change
 |**puts**|\<stdio.h>|
 |**_putws**|\<stdio.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -87,6 +87,6 @@ Hello world from puts!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputs, fputws](fputs-fputws.md)<br/>
-[fgets, fgetws](fgets-fgetws.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fputs, fputws](fputs-fputws.md)\
+[fgets, fgetws](fgets-fgetws.md)

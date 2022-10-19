@@ -37,9 +37,9 @@ Kind of access that's enabled.
 
 ## Return value
 
-Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
+Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
 
-For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -47,7 +47,7 @@ The **`fopen`** function opens the file that is specified by *filename*. By defa
 
 **`fopen`** accepts paths that are valid on the file system at the point of execution; **`fopen`** accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for **`fopen`**, make sure that drives, paths, or network shares will be available in the execution environment. You can use either forward slashes (`/`) or backslashes (`\`) as the directory separators in a path.
 
-Always check the return value to see whether the pointer is NULL before you perform any other operations on the file. If an error occurs, the global variable **`errno`** is set and may be used to obtain specific error information. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Always check the return value to see whether the pointer is NULL before you perform any other operations on the file. If an error occurs, the global variable **`errno`** is set and may be used to obtain specific error information. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
@@ -59,7 +59,7 @@ By default, this function's global state is scoped to the application. To change
 
 Allowed values for **`ccs`** encoding are **`UNICODE`**, **`UTF-8`**, and **`UTF-16LE`**.
 
-When a file is opened in Unicode mode, input functions translate the data that's read from the file into UTF-16 data stored as type **`wchar_t`**. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type **`wchar_t`**. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it's written. The file's UTF-8-encoded content is translated into UTF-16 when it's read. An attempt to read or write an odd number of bytes in Unicode mode causes a [parameter validation](../../c-runtime-library/parameter-validation.md) error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You're responsible for any required encoding translation.
+When a file is opened in Unicode mode, input functions translate the data that's read from the file into UTF-16 data stored as type **`wchar_t`**. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type **`wchar_t`**. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it's written. The file's UTF-8-encoded content is translated into UTF-16 when it's read. An attempt to read or write an odd number of bytes in Unicode mode causes a [parameter validation](../parameter-validation.md) error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You're responsible for any required encoding translation.
 
 If the file already exists and is opened for reading or appending, then any byte order mark (BOM) in the file determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the **`ccs`** flag. The **`ccs`** encoding is only used when no BOM is present or the file is a new file.
 
@@ -114,9 +114,9 @@ In text mode, **CTRL**+**Z** is interpreted as an EOF character on input. In fil
 
 In text mode, carriage return-line feed (CRLF) combinations are translated into single line feed (LF) characters on input, and LF characters are translated to CRLF combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **`mbtowc`** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **`wctomb`** function).
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
 
-For more information about how to use text and binary modes in Unicode and multibyte stream-I/O, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode stream I/O in text and binary modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
+For more information about how to use text and binary modes in Unicode and multibyte stream-I/O, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [Unicode stream I/O in text and binary modes](../unicode-stream-i-o-in-text-and-binary-modes.md).
 
 The following options can be appended to *`mode`* to specify more behaviors.
 
@@ -124,7 +124,7 @@ The following options can be appended to *`mode`* to specify more behaviors.
 |--|--|
 | **`x`** | Forces the function to fail if *filename* already exists. Can only be used with the "w" or "w+" specifiers. |
 | **`c`** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
-| **`n`** | Reset the commit flag for the associated *filename* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)). |
+| **`n`** | Reset the commit flag for the associated *filename* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link options](../link-options.md)). |
 | **`N`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
@@ -164,7 +164,7 @@ If you're using **`rb`** mode, you don't have to port your code, and if you expe
 | **`fopen`** | `<stdio.h>` |
 | **`_wfopen`** | `<stdio.h>` or `<wchar.h>` |
 
-**`_wfopen`** is a Microsoft extension. For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
+**`_wfopen`** is a Microsoft extension. For more information about compatibility, see [Compatibility](../compatibility.md).
 
 The **`c`**, **`n`**, **`t`**, **`S`**, **`R`**, **`T`**, and **`D`** *`mode`* options are Microsoft extensions for **`fopen`** and **`_fdopen`** and shouldn't be used where ANSI portability is desired.
 
@@ -281,8 +281,8 @@ int main(int argc, char** argv)
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
+[Stream I/O](../stream-i-o.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
 [`fclose`, `_fcloseall`](fclose-fcloseall.md)\
 [`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
 [`ferror`](ferror.md)\

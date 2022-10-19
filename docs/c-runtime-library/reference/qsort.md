@@ -58,7 +58,7 @@ The routine compares the elements and returns one of the following values.
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
-This function validates its parameters. If *`compare`* or *`number`* is **`NULL`**, or if *`base`* is **`NULL`** and *`number`* is nonzero, or if *`width`* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns and **`errno`** is set to **`EINVAL`**.
+This function validates its parameters. If *`compare`* or *`number`* is **`NULL`**, or if *`base`* is **`NULL`** and *`number`* is nonzero, or if *`width`* is less than zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns and **`errno`** is set to **`EINVAL`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`qsort`**|`<stdlib.h>` and `<search.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -116,6 +116,6 @@ boy deserves every favor good
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)\
+[Searching and sorting](../searching-and-sorting.md)\
 [`bsearch`](bsearch.md)\
 [`_lsearch`](lsearch.md)

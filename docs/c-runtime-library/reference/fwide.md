@@ -31,7 +31,7 @@ Pointer to **FILE** structure (ignored).
 *mode*<br/>
 The new width of the stream: positive for wide character, negative for byte, zero to leave unchanged. (This value is ignored.)
 
-## Return Value
+## Return value
 
 This function currently just returns *mode*.
 
@@ -45,4 +45,4 @@ The current version of this function doesn't conform to the C Standard.
 |--------------|---------------------|
 |**fwide**|\<wchar.h>|
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).

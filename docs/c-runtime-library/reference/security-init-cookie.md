@@ -37,7 +37,7 @@ See the examples in [C Runtime Error R6035](../../error-messages/tool-errors/c-r
 |-------------|---------------------|
 |**`__security_init_cookie`**|`<process.h>`|
 
-**`__security_init_cookie`** is a Microsoft extension to the standard C Runtime Library. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+**`__security_init_cookie`** is a Microsoft extension to the standard C Runtime Library. For compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

@@ -23,7 +23,7 @@ Gets the current disk drive.
 int _getdrive( void );
 ```
 
-## Return Value
+## Return value
 
 Returns the current (default) drive (1=A, 2=B, and so on). A return value of zero means that the current path doesn't start with a letter drive name, such as a UNC path. Or, it means that an internal buffer allocation failed. If an internal allocation fails, `errno` is set to ENOMEM.
 
@@ -37,7 +37,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_getdrive**|\<direct.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -91,7 +91,7 @@ G: (Current directory is G:\)
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdrive](chdrive.md)<br/>
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
-[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
+[Directory control](../directory-control.md)\
+[_chdrive](chdrive.md)\
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)\
+[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)

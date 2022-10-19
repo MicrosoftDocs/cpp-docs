@@ -30,7 +30,7 @@ wchar_t *_wctime64( const __time64_t *sourceTime );
 *sourceTime*<br/>
 Pointer to stored time to convert.
 
-## Return Value
+## Return value
 
 A pointer to the character string result. **NULL** is returned when:
 
@@ -44,7 +44,7 @@ A pointer to the character string result. **NULL** is returned when:
 
 ## Remarks
 
-The **ctime** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) value into a character string. The *sourceTime* value is typically obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **ctime** function converts a time value stored as a [time_t](../standard-types.md) value into a character string. The *sourceTime* value is typically obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
 ```Output
 Wed Jan 02 02:03:55 1980\n\0
@@ -58,11 +58,11 @@ A call to **ctime** modifies the single statically allocated buffer used by the 
 
 **_wctime** and **_wctime64** are the wide-character version of **ctime** and **_ctime64**; returning a pointer to wide-character string. Otherwise, **_ctime64**, **_wctime**, and **_wctime64** behave identically to **ctime**.
 
-These functions validate their parameters. If *sourceTime* is a null pointer, or if the *sourceTime* value is negative, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **NULL** and set **errno** to **EINVAL**.
+These functions validate their parameters. If *sourceTime* is a null pointer, or if the *sourceTime* value is negative, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return **NULL** and set **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -81,7 +81,7 @@ By default, this function's global state is scoped to the application. To change
 |**_wctime32**|\<time.h> or \<wchar.h>|
 |**_wctime64**|\<time.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -112,10 +112,10 @@ The time is Wed Feb 13 16:04:43 2002
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](asctime-wasctime.md)<br/>
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+[Time management](../time-management.md)\
+[asctime, _wasctime](asctime-wasctime.md)\
+[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)\
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
+[time, _time32, _time64](time-time32-time64.md)

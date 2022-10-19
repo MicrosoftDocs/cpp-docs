@@ -74,11 +74,11 @@ Floating-point value.
 *exp*\
 Integer exponent.
 
-## Return Value
+## Return value
 
 The **scalbn** functions return the value of *x* \* **FLT_RADIX**<sup>exp</sup> when successful. On overflow (depending on the sign of *x*), **scalbn** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
 
-For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -86,7 +86,7 @@ For more information about **errno** and possible error return values, see [errn
 
 Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **scalbn** always takes a **`double`** and an **`int`** and returns a **`double`**, and **scalbln** always takes a **`double`** and a **`long`** and returns a **`double`**.
 
-If you use the \<tgmath.h> `scalbn()` or `scalbln` macros, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `scalbn()` or `scalbln` macros, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -97,7 +97,7 @@ By default, this function's global state is scoped to the application. To change
 |**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
 |**scalbn() or scalbln** macro | \<tgmath.h> ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -125,7 +125,7 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[frexp](frexp.md)<br/>
-[ldexp](ldexp.md)<br/>
-[modf, modff, modfl](modf-modff-modfl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[frexp](frexp.md)\
+[ldexp](ldexp.md)\
+[modf, modff, modfl](modf-modff-modfl.md)

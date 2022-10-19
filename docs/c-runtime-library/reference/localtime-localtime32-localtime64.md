@@ -27,7 +27,7 @@ struct tm *_localtime64( const __time64_t *sourceTime );
 *`sourceTime`*<br/>
 Pointer to stored time.
 
-## Return Value
+## Return value
 
 Return a pointer to the structure result, or **`NULL`** if the date passed to the function is:
 
@@ -41,7 +41,7 @@ Return a pointer to the structure result, or **`NULL`** if the date passed to th
 
 **`localtime`** is an inline function which evaluates to **`_localtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. Doing this will cause **`localtime`** to evaluate to **`_localtime32`**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
 
-The fields of the structure type [`tm`](../../c-runtime-library/standard-types.md) store the following values, each of which is an **`int`**:
+The fields of the structure type [`tm`](../standard-types.md) store the following values, each of which is an **`int`**:
 
 |Field|Description|
 |-|-|
@@ -59,7 +59,7 @@ If the **`TZ`** environment variable is set, the C run-time library assumes rule
 
 ## Remarks
 
-The **`localtime`** function converts a time stored as a [`time_t`](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type [`tm`](../../c-runtime-library/standard-types.md). The **`long`** value *`sourceTime`* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [`time`](time-time32-time64.md) function.
+The **`localtime`** function converts a time stored as a [`time_t`](../standard-types.md) value and stores the result in a structure of type [`tm`](../standard-types.md). The **`long`** value *`sourceTime`* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [`time`](time-time32-time64.md) function.
 
 Both the 32-bit and 64-bit versions of [`gmtime`](gmtime-gmtime32-gmtime64.md), [`mktime`](mktime-mktime32-mktime64.md), [`mkgmtime`](mkgmtime-mkgmtime32-mkgmtime64.md), and **`localtime`** all use a single **`tm`** structure per thread for the conversion. Each call to one of these routines destroys the result of the previous call.
 
@@ -68,7 +68,7 @@ Both the 32-bit and 64-bit versions of [`gmtime`](gmtime-gmtime32-gmtime64.md), 
 > [!NOTE]
 > The target environment should try to determine whether daylight saving time is in effect.
 
-These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
+These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -78,7 +78,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|-|
 |**`localtime`**, **`_localtime32`**, **`_localtime64`**|`<time.h>`|`<ctime>` or `<time.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -125,11 +125,11 @@ Tue Feb 12 10:05:58 AM
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[`asctime`, `_wasctime`](asctime-wasctime.md)<br/>
-[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)<br/>
-[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)<br/>
-[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)<br/>
-[`time`, `_time32`, `_time64`](time-time32-time64.md)<br/>
-[`_tzset`](tzset.md)<br/>
+[Time management](../time-management.md)\
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_tzset`](tzset.md)

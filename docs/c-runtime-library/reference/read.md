@@ -34,15 +34,15 @@ Storage location for data.
 *`buffer_size`*\
 Maximum number of bytes to read.
 
-## Return Value
+## Return value
 
 **`_read`** returns the number of bytes read, which might be less than *`buffer_size`* if there are fewer than *`buffer_size`* bytes left in the file, or if the file was opened in text mode. In text mode, each carriage return-line feed pair `\r\n` is replaced with a single line feed character `\n`. Only the single line feed character is counted in the return value. The replacement does not affect the file pointer.
 
-If the function tries to read at end of file, it returns 0. If *`fd`* is not valid, the file isn't open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EBADF`**.
+If the function tries to read at end of file, it returns 0. If *`fd`* is not valid, the file isn't open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EBADF`**.
 
 If *`buffer`* is `NULL`, or if *`buffer_size`* > **`INT_MAX`**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and **`errno`** is set to **`EINVAL`**.
 
-For more information about this and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about this and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -58,11 +58,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`_read`**|`<io.h>`|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -119,7 +119,7 @@ Read 19 bytes from file
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`fread`](fread.md)\
 [`_open`, `_wopen`](open-wopen.md)\

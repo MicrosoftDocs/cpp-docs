@@ -57,7 +57,7 @@ Null-terminated strings to compare.
 *locale*<br/>
 The locale to use.
 
-## Return Value
+## Return value
 
 Each of these functions returns a value indicating the relationship of *string1* to *string2*, as follows.
 
@@ -74,13 +74,13 @@ Each of these functions returns **_NLSCMPERROR**. To use **_NLSCMPERROR**, inclu
 
 Each of these functions performs a case-insensitive comparison of *string1* and *string2* according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
 
-**_stricmp** differs from **_stricoll** in that the **_stricmp** comparison is affected by **LC_CTYPE**, whereas the **_stricoll** comparison is according to the **LC_CTYPE** and **LC_COLLATE** categories of the locale. For more information on the **LC_COLLATE** category, see [setlocale](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**_stricmp** differs from **_stricoll** in that the **_stricmp** comparison is affected by **LC_CTYPE**, whereas the **_stricoll** comparison is according to the **LC_CTYPE** and **LC_COLLATE** categories of the locale. For more information on the **LC_COLLATE** category, see [setlocale](setlocale-wsetlocale.md) and [Locale categories](../locale-categories.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
-All of these functions validate their parameters. If either *string1* or *string2* are **NULL** pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
+All of these functions validate their parameters. If either *string1* or *string2* are **NULL** pointers, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -94,18 +94,18 @@ By default, this function's global state is scoped to the application. To change
 |**_wcsicoll**, **_wcsicoll_l**|\<wchar.h>, \<string.h>|
 |**_mbsicoll**, **_mbsicoll_l**|\<mbstring.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[localeconv](localeconv.md)<br/>
-[_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[Locale](../locale.md)\
+[String manipulation](../string-manipulation-crt.md)\
+[strcoll Functions](../strcoll-functions.md)\
+[localeconv](localeconv.md)\
+[_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)\
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
+[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)\
+[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)\
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

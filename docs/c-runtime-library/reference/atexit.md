@@ -26,7 +26,7 @@ int atexit(
 *`func`*\
 Function to be called.
 
-## Return Value
+## Return value
 
 **`atexit`** returns 0 if successful, or a nonzero value if an error occurs.
 
@@ -92,7 +92,7 @@ This is executed next.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`abort`](abort.md)\
 [`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
 [`_onexit`, `_onexit_m`](onexit-onexit-m.md)

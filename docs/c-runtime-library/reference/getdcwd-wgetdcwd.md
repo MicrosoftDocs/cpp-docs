@@ -34,7 +34,7 @@ wchar_t *_wgetdcwd(
 *drive*<br/>
 A non-negative integer that specifies the drive (0 = default drive, 1 = A, 2 = B, and so on).
 
-If the specified drive isn't available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) can't be determined, the invalid-parameter handler is invoked. For more information, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If the specified drive isn't available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) can't be determined, the invalid-parameter handler is invoked. For more information, see [Parameter validation](../parameter-validation.md).
 
 *buffer*<br/>
 Storage location for the path, or **NULL**.
@@ -44,13 +44,13 @@ If **NULL** is specified, this function allocates a buffer of at least *maxlen* 
 *maxlen*<br/>
 A nonzero positive integer that specifies the maximum length of the path, in characters: **`char`** for **_getdcwd** and **`wchar_t`** for **_wgetdcwd**.
 
-If *maxlen* is less than or equal to zero, the invalid-parameter handler is invoked. For more information, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If *maxlen* is less than or equal to zero, the invalid-parameter handler is invoked. For more information, see [Parameter validation](../parameter-validation.md).
 
-## Return Value
+## Return value
 
 Pointer to a string that represents the full path of the current working directory on the specified drive, or **NULL**, which indicates an error.
 
-If *buffer* is specified as **NULL** and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to **ENOMEM**. If the length of the path including the terminating null character exceeds *maxlen*, an error occurs, and **errno** is set to **ERANGE**. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If *buffer* is specified as **NULL** and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to **ENOMEM**. If the length of the path including the terminating null character exceeds *maxlen*, an error occurs, and **errno** is set to **ERANGE**. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -66,7 +66,7 @@ When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getdcwd** and
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -79,7 +79,7 @@ By default, this function's global state is scoped to the application. To change
 |**_getdcwd**|\<direct.h>|
 |**_wgetdcwd**|\<direct.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -87,9 +87,9 @@ See the example in [_getdrive](getdrive.md).
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
-[_getdrive](getdrive.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
+[Directory control](../directory-control.md)\
+[_chdir, _wchdir](chdir-wchdir.md)\
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)\
+[_getdrive](getdrive.md)\
+[_mkdir, _wmkdir](mkdir-wmkdir.md)\
+[_rmdir, _wrmdir](rmdir-wrmdir.md)

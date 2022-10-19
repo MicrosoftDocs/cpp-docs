@@ -18,5 +18,5 @@ The maximum permissible string length of an environmental variable.
 
 ## See also
 
-[Environmental Constants](../c-runtime-library/environmental-constants.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[Environmental constants](./environmental-constants.md)\
+[Global constants](./global-constants.md)

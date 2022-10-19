@@ -41,9 +41,9 @@ By default, this function's global state is scoped to the application. To change
 |---------------|---------------------|
 |**_free_locale**|\<locale.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_get_current_locale](get-current-locale.md)<br/>
-[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>
+[_get_current_locale](get-current-locale.md)\
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)

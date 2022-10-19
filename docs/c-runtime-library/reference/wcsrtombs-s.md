@@ -12,7 +12,7 @@ ms.assetid: 9dccb766-113c-44bb-9b04-07a634dddec8
 ---
 # wcsrtombs_s
 
-Convert a wide character string to its multibyte character string representation. A version of [wcsrtombs](wcsrtombs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Convert a wide character string to its multibyte character string representation. A version of [wcsrtombs](wcsrtombs.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -50,12 +50,12 @@ The size in bytes of the *mbstr* buffer.
 Points to the wide character string to be converted.
 
 *count*<br/>
-The maximum number of bytes to be stored in the *mbstr* buffer, or [_TRUNCATE](../../c-runtime-library/truncate.md).
+The maximum number of bytes to be stored in the *mbstr* buffer, or [_TRUNCATE](../truncate.md).
 
 *mbstate*<br/>
 A pointer to an **mbstate_t** conversion state object.
 
-## Return Value
+## Return value
 
 Zero if successful, an error code on failure.
 
@@ -65,7 +65,7 @@ Zero if successful, an error code on failure.
 |*wcstr* is **NULL**|**EINVAL**|
 |The destination buffer is too small to contain the converted string (unless *count* is **_TRUNCATE**; see Remarks below)|**ERANGE**|
 
-If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets **errno** as indicated in the table.
+If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets **errno** as indicated in the table.
 
 ## Remarks
 
@@ -79,7 +79,7 @@ The **wcsrtombs_s** function converts a string of wide characters pointed to by 
 
 The destination string is always null-terminated (even in the case of an error).
 
-If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then **wcsrtombs_s** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
+If *count* is the special value [_TRUNCATE](../truncate.md), then **wcsrtombs_s** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
 
 If **wcsrtombs_s** successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided *pReturnValue* is not **NULL**). This occurs even if the *mbstr* argument is **NULL** and provides a way to determine the required buffer size. Note that if *mbstr* is **NULL**, *count* is ignored.
 
@@ -92,7 +92,7 @@ If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of **wc
 
 The **wcsrtombs_s** function differs from [wcstombs_s, _wcstombs_s_l](wcstombs-s-wcstombs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use **wcsrlen** rather than **wcslen**, if a subsequent call to **wcsrtombs_s** were used instead of **wcstombs_s**.
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -155,11 +155,11 @@ The string was successfully converted.
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[wcrtomb](wcrtomb.md)<br/>
-[wcrtomb_s](wcrtomb-s.md)<br/>
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[mbsinit](mbsinit.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[wcrtomb](wcrtomb.md)\
+[wcrtomb_s](wcrtomb-s.md)\
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)\
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
+[mbsinit](mbsinit.md)

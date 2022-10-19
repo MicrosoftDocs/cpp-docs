@@ -48,7 +48,7 @@ Long pointer to a buffer into which the function stores the mapped string or sor
 *cchDest*<br/>
 Size, in characters, of the buffer pointed to by `lpDestStr`.
 
-## Return Value
+## Return value
 
 If the value of `cchDest` is nonzero, the number of characters, or bytes if `LCMAP_SORTKEY` is specified, written to the buffer indicates success. This count includes room for a null terminator.
 

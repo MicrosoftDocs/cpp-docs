@@ -12,7 +12,7 @@ ms.assetid: 47f9fc29-250e-4c09-b52e-9e9f0ef395ca
 ---
 # _searchenv_s, _wsearchenv_s
 
-Searches for a file by using environment paths. These versions of [_searchenv, _wsearchenv](searchenv-wsearchenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Searches for a file by using environment paths. These versions of [_searchenv, _wsearchenv](searchenv-wsearchenv.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -60,13 +60,13 @@ Buffer to store the complete path.
 *numberOfElements*<br/>
 Size of the *pathname* buffer.
 
-## Return Value
+## Return value
 
 Zero if successful; an error code on failure.
 
 If *filename* is an empty string, the return value is **ENOENT**.
 
-### Error Conditions
+### Error conditions
 
 |*filename*|*varname*|*pathname*|*numberOfElements*|Return value|Contents of *pathname*|
 |----------------|---------------|----------------|------------------------|------------------|----------------------------|
@@ -74,7 +74,7 @@ If *filename* is an empty string, the return value is **ENOENT**.
 |**NULL**|any|any|any|**EINVAL**|not changed|
 |any|any|any|<= 0|**EINVAL**|not changed|
 
-If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
+If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 
 ## Remarks
 
@@ -86,11 +86,11 @@ The *pathname* buffer should be at least **_MAX_PATH** characters long to accomm
 
 **_wsearchenv_s** is a wide-character version of **_searchenv_s**; the arguments to **_wsearchenv_s** are wide-character strings. **_wsearchenv_s** and **_searchenv_s** behave identically otherwise.
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -103,7 +103,7 @@ By default, this function's global state is scoped to the application. To change
 |**_searchenv_s**|\<stdlib.h>|
 |**_wsearchenv_s**|\<stdlib.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -143,7 +143,7 @@ C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_searchenv, _wsearchenv](searchenv-wsearchenv.md)<br/>
-[getenv, _wgetenv](getenv-wgetenv.md)<br/>
-[_putenv, _wputenv](putenv-wputenv.md)<br/>
+[Directory control](../directory-control.md)\
+[_searchenv, _wsearchenv](searchenv-wsearchenv.md)\
+[getenv, _wgetenv](getenv-wgetenv.md)\
+[_putenv, _wputenv](putenv-wputenv.md)

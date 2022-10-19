@@ -37,7 +37,7 @@ Base.
 *`y`*\
 Exponent.
 
-## Return Value
+## Return value
 
 Returns the value of *`x`*<sup>*`y`*</sup>. No error message is printed on overflow or underflow.
 
@@ -55,11 +55,11 @@ Returns the value of *`x`*<sup>*`y`*</sup>. No error message is printed on overf
 
 Because C++ allows overloading, you can call any of the various overloads of **`pow`**. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`pow`** always takes two **`double`** values and returns a **`double`** value.
 
-If you use the `<tgmath.h>` `pow()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `pow()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). To avoid this problem, cast the first parameter to **`double`**, **`float`**, or **`long double`**.
 
-Originally, the `pow(T, int)` overloads would unroll the `pow` call into a sequence of inline multiplication operations. While this was faster, it was also significantly less accurate and was removed in Visual Studio 2015 Update 1. For more information, see [Conformance Improvements in Visual Studio 2015 Update 1](../../porting/visual-cpp-what-s-new-2003-through-2015.md).
+Originally, the `pow(T, int)` overloads would unroll the `pow` call into a sequence of inline multiplication operations. While this was faster, it was also significantly less accurate and was removed in Visual Studio 2015 Update 1. For more information, see [Conformance improvements in Visual Studio 2015 Update 1](../../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 |**`pow`**, **`powf`**, **`powl`**|`<math.h>`|`<math.h>` or `<cmath>`|
 |**`pow`** macro | `<tgmath.h>` ||
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -95,8 +95,8 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md) <br/>
-[`exp`, `expf`, `expl`](exp-expf.md) <br/>
-[`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md) <br/>
-[`sqrt`, `sqrtf`, `sqrtl`](sqrt-sqrtf-sqrtl.md) <br/>
-[`_CIpow`](../../c-runtime-library/cipow.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`exp`, `expf`, `expl`](exp-expf.md)\
+[`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)\
+[`sqrt`, `sqrtf`, `sqrtl`](sqrt-sqrtf-sqrtl.md)\
+[`_CIpow`](../cipow.md)

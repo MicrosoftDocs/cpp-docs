@@ -22,7 +22,7 @@ The `format` argument is a string that specifies the interpretation of the input
 
   > **`%`**\[**`*`**]\[***`width`***]\[{**`h`**\|**`l`**\|**`ll`**\|**`I64`**\|**`L`**}]***`type`***
 
-  Here, ***`width`***, **`h`**, **`l`**, **`ll`**, **`I64`**, and **`L`** represent a `scanf` [width specification](../c-runtime-library/scanf-width-specification.md), and ***`type`*** represents a `scanf` [type field character](../c-runtime-library/scanf-type-field-characters.md).
+  Here, ***`width`***, **`h`**, **`l`**, **`ll`**, **`I64`**, and **`L`** represent a `scanf` [width specification](./scanf-width-specification.md), and ***`type`*** represents a `scanf` [type field character](./scanf-type-field-characters.md).
 
 The `format` argument string is read from left to right. Characters outside format specifications are expected to match the sequence of characters in the input stream. The matching characters in the input stream are scanned but not stored. If a character in the input stream conflicts with the format specification, `scanf` terminates, and the character is left in the input stream as if it hadn't been read.
 
@@ -36,11 +36,11 @@ The simplest format specification contains only the percent sign and a `type` ch
 
 An asterisk (`*`) following the percent sign suppresses assignment of the next input field, which is interpreted as a field of the specified type. The field is scanned but not stored in an argument.
 
-The secure versions (the ones with the `_s` suffix) of the `scanf` family of functions require each parameter of type `c`, `C`, `s`, `S` or `[` to have a buffer size parameter passed immediately following. For more information on the secure versions of the `scanf` family of functions, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
+The secure versions (the ones with the `_s` suffix) of the `scanf` family of functions require each parameter of type `c`, `C`, `s`, `S` or `[` to have a buffer size parameter passed immediately following. For more information on the secure versions of the `scanf` family of functions, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](./reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
 
 ## See also
 
-[`scanf` Width specification](../c-runtime-library/scanf-width-specification.md)\
-[`scanf` Type field characters](../c-runtime-library/scanf-type-field-characters.md)\
-[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)\
-[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)
+[`scanf` Width specification](./scanf-width-specification.md)\
+[`scanf` Type field characters](./scanf-type-field-characters.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](./reference/scanf-scanf-l-wscanf-wscanf-l.md)\
+[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](./reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)

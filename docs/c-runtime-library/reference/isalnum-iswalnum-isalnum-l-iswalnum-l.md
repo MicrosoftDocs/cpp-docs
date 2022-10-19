@@ -31,15 +31,15 @@ Integer to test.
 *locale*<br/>
 The locale to use.
 
-## Return Value
+## Return value
 
 Each of these routines returns nonzero if *c* is a particular representation of an alphanumeric character. **isalnum** returns a nonzero value if either **isalpha** or **isdigit** is nonzero for *c*, that is, if *c* is within the ranges A - Z, a - z, or 0 - 9. **iswalnum** returns a nonzero value if either **iswalpha** or **iswdigit** is nonzero for *c*. Each of these routines returns 0 if *c* does not satisfy the test condition.
 
-The versions of these functions that have the **_l** suffix use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions that have the **_l** suffix use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../locale.md).
 
 The behavior of **isalnum** and **_isalnum_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -59,10 +59,10 @@ By default, this function's global state is scoped to the application. To change
 |**_isalnum_l**|\<ctype.h>|
 |**_iswalnum_l**|\<ctype.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+[Character classification](../character-classification.md)\
+[Locale](../locale.md)\
+[is, isw Routines](../is-isw-routines.md)

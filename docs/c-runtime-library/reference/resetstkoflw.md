@@ -23,7 +23,7 @@ Recovers from stack overflow.
 int _resetstkoflw( void );
 ```
 
-## Return Value
+## Return value
 
 Nonzero if the function succeeds, zero if it fails.
 
@@ -31,7 +31,7 @@ Nonzero if the function succeeds, zero if it fails.
 
 The **`_resetstkoflw`** function recovers from a stack overflow condition, allowing a program to continue instead of failing with a fatal exception error. If the **`_resetstkoflw`** function isn't called, there are no guard pages after the previous exception. The next time that there's a stack overflow, there are no exceptions at all and the process terminates without warning.
 
-If a thread in an application causes an **`EXCEPTION_STACK_OVERFLOW`** exception, the thread has left its stack in a damaged state. This is in contrast to other exceptions such as **`EXCEPTION_ACCESS_VIOLATION`** or **`EXCEPTION_INT_DIVIDE_BY_ZERO`**, where the stack isn't damaged. The stack is set to an arbitrarily small value when the program is first loaded. The stack then grows on demand to meet the needs of the thread. This is implemented by placing a page with PAGE_GUARD access at the end of the current stack. For more information, see [Creating Guard Pages](/windows/win32/Memory/creating-guard-pages).
+If a thread in an application causes an **`EXCEPTION_STACK_OVERFLOW`** exception, the thread has left its stack in a damaged state. This is in contrast to other exceptions such as **`EXCEPTION_ACCESS_VIOLATION`** or **`EXCEPTION_INT_DIVIDE_BY_ZERO`**, where the stack isn't damaged. The stack is set to an arbitrarily small value when the program is first loaded. The stack then grows on demand to meet the needs of the thread. This is implemented by placing a page with PAGE_GUARD access at the end of the current stack. For more information, see [Creating guard pages](/windows/win32/Memory/creating-guard-pages).
 
 When the code causes the stack pointer to point to an address on this page, an exception occurs and the system does the following three things:
 
@@ -83,9 +83,9 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**`_resetstkoflw`**|\<malloc.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
-**Libraries:** All versions of the [CRT Library Features](../../c-runtime-library/crt-library-features.md).
+**Libraries:** All versions of the [CRT library features](../crt-library-features.md).
 
 ## Example
 
@@ -285,4 +285,4 @@ Recovered from stack overflow and allocated 100,000 bytes using _alloca.
 
 ## See also
 
-[`_alloca`](alloca.md)<br/>
+[`_alloca`](alloca.md)

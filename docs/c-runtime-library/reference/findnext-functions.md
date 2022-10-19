@@ -75,7 +75,7 @@ The search handle returned by a previous call to **_findfirst**.
 *`fileinfo`*<br/>
 File information buffer.
 
-## Return Value
+## Return value
 
 If successful, returns 0. Otherwise, returns -1 and sets **errno** to a value indicating the nature of the failure. Possible error codes are shown in the following table.
 
@@ -85,7 +85,7 @@ If successful, returns 0. Otherwise, returns -1 and sets **errno** to a value in
 | **ENOENT** | No more matching files could be found. |
 | **ENOMEM** | Not enough memory or the file name's length exceeded **MAX_PATH**. |
 
-If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
 ## Remarks
 
@@ -112,7 +112,7 @@ By default, this function's global state is scoped to the application. To change
 |**_findnext32i64**, **_wfindnext32i64**|Not affected by the macro definition|32-bit|64-bit|
 |**_findnext64i32**, **_wfindnext64i32**|Not affected by the macro definition|64-bit|32-bit|
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -140,13 +140,13 @@ By default, this function's global state is scoped to the application. To change
 |**_wfindnext32i64**|\<io.h> or \<wchar.h>|
 |**_wfindnext64i32**|\<io.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>
+[System calls](../system-calls.md)\
+[Filename search functions](../filename-search-functions.md)

@@ -54,11 +54,11 @@ Contains the actual file name extension, with or without a leading period (.). *
 
 The **_makepath** function creates a composite path string from individual components, storing the result in *path*. The *path* might include a drive letter, directory path, filename, and filename extension. **_wmakepath** is a wide-character version of **_makepath**; the arguments to **_wmakepath** are wide-character strings. **_wmakepath** and **_makepath** behave identically otherwise.
 
-**Security Note** Use a null-terminated string. To avoid buffer overrun, the null-terminated string must not exceed the size of the *path* buffer. **_makepath** does not ensure that the length of the composite path string does not exceed **_MAX_PATH**. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Security Note** Use a null-terminated string. To avoid buffer overrun, the null-terminated string must not exceed the size of the *path* buffer. **_makepath** does not ensure that the length of the composite path string does not exceed **_MAX_PATH**. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -66,7 +66,7 @@ By default, this function's global state is scoped to the application. To change
 
 The *path* argument must point to an empty buffer large enough to hold the complete path. The composite *path* must be no larger than the **_MAX_PATH** constant, defined in Stdlib.h.
 
-If path is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). In addition, **errno** is set to **EINVAL**. **NULL** values are allowed for all other parameters.
+If path is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). In addition, **errno** is set to **EINVAL**. **NULL** values are allowed for all other parameters.
 
 ## Requirements
 
@@ -75,7 +75,7 @@ If path is **NULL**, the invalid parameter handler is invoked, as described in [
 |**_makepath**|\<stdlib.h>|
 |**_wmakepath**|\<stdlib.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -117,7 +117,7 @@ Path extracted with _splitpath:
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
-[_splitpath, _wsplitpath](splitpath-wsplitpath.md)<br/>
-[_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md)<br/>
+[File handling](../file-handling.md)\
+[_fullpath, _wfullpath](fullpath-wfullpath.md)\
+[_splitpath, _wsplitpath](splitpath-wsplitpath.md)\
+[_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md)

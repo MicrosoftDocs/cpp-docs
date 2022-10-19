@@ -30,7 +30,7 @@ wint_t _fgetwc_nolock(
 *stream*<br/>
 Pointer to the **FILE** structure.
 
-## Return Value
+## Return value
 
 See[fgetc, fgetwc](fgetc-fgetwc.md).
 
@@ -40,7 +40,7 @@ See[fgetc, fgetwc](fgetc-fgetwc.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 |**_fgetc_nolock**|\<stdio.h>|
 |**_fgetwc_nolock**|\<stdio.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -107,6 +107,6 @@ Line two.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](fputc-fputwc.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[fputc, fputwc](fputc-fputwc.md)\
+[getc, getwc](getc-getwc.md)

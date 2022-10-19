@@ -31,7 +31,7 @@ Pointer to an **fexcept_t** object containing the values to set the exception st
 *`excepts`*<br/>
 The floating-point exception status flags to set.
 
-## Return Value
+## Return value
 
 If all the specified exception status flags are set successfully, returns 0. Otherwise, it returns a nonzero value.
 
@@ -58,9 +58,9 @@ To use this function, you must turn off floating-point optimizations that could 
 |--------------|--------------|------------------|
 |**fesetexceptflag**|\<fenv.h>|\<cfenv>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fegetexceptflag](fegetexceptflag2.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[fegetexceptflag](fegetexceptflag2.md)

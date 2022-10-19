@@ -48,13 +48,13 @@ The floating-point value to test.
 |--------------|---------------------------|-------------------------------|
 |**signbit**|\<math.h>|\<math.h> or \<cmath>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[isnormal](isnormal.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[isfinite, _finite, _finitef](finite-finitef.md)\
+[isinf](isinf.md)\
+[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)\
+[isnormal](isnormal.md)\
+[_fpclass, _fpclassf](fpclass-fpclassf.md)
