@@ -35,16 +35,16 @@ wchar_t *_wmktemp(
 
 ### Parameters
 
-*nameTemplate*\
+*`nameTemplate`*\
 File name pattern.
 
 ## Return value
 
-Each of these functions returns a pointer to the modified nameTemplate. The function returns **NULL** if *nameTemplate* is badly formed or no more unique names can be created from the given nameTemplate.
+Each of these functions returns a pointer to the modified nameTemplate. The function returns **NULL** if *`nameTemplate`* is badly formed or no more unique names can be created from the given nameTemplate.
 
 ## Remarks
 
-The **_mktemp** function creates a unique file name by modifying the *nameTemplate* argument. **_mktemp** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. **_wmktemp** is a wide-character version of **_mktemp**; the argument and return value of **_wmktemp** are wide-character strings. **_wmktemp** and **_mktemp** behave identically otherwise, except that **_wmktemp** does not handle multibyte-character strings.
+The **_mktemp** function creates a unique file name by modifying the *`nameTemplate`* argument. **_mktemp** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. **_wmktemp** is a wide-character version of **_mktemp**; the argument and return value of **_wmktemp** are wide-character strings. **_wmktemp** and **_mktemp** behave identically otherwise, except that **_wmktemp** does not handle multibyte-character strings.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -54,9 +54,9 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmktemp**|**_mktemp**|**_mktemp**|**_wmktemp**|
 
-The *nameTemplate* argument has the form *base*XXXXXX, where *base* is the part of the new file name that you supply and each X is a placeholder for a character supplied by **_mktemp**. Each placeholder character in *nameTemplate* must be an uppercase X. **_mktemp** preserves *base* and replaces the first trailing X with an alphabetic character. **_mktemp** replaces the following trailing X's with a five-digit value; this value is a unique number identifying the calling process, or in multithreaded programs, the calling thread.
+The *`nameTemplate`* argument has the form *`base`*XXXXXX, where *`base`* is the part of the new file name that you supply and each X is a placeholder for a character supplied by **_mktemp**. Each placeholder character in *`nameTemplate`* must be an uppercase X. **_mktemp** preserves *`base`* and replaces the first trailing X with an alphabetic character. **_mktemp** replaces the following trailing X's with a five-digit value; this value is a unique number identifying the calling process, or in multithreaded programs, the calling thread.
 
-Each successful call to **_mktemp** modifies *nameTemplate*. In each subsequent call from the same process or thread with the same *nameTemplate* argument, **_mktemp** checks for file names that match names returned by **_mktemp** in previous calls. If no file exists for a given name, **_mktemp** returns that name. If files exist for all previously returned names, **_mktemp** creates a new name by replacing the alphabetic character it used in the previously returned name with the next available lowercase letter, in order, from 'a' through 'z'. For example, if *base* is:
+Each successful call to **_mktemp** modifies *`nameTemplate`*. In each subsequent call from the same process or thread with the same *`nameTemplate`* argument, **_mktemp** checks for file names that match names returned by **_mktemp** in previous calls. If no file exists for a given name, **_mktemp** returns that name. If files exist for all previously returned names, **_mktemp** creates a new name by replacing the alphabetic character it used in the previously returned name with the next available lowercase letter, in order, from 'a' through 'z'. For example, if *`base`* is:
 
 > **fn**
 
@@ -64,7 +64,7 @@ and the five-digit value supplied by **_mktemp** is 12345, the first name return
 
 > **fna12345**
 
-If this name is used to create file FNA12345 and this file still exists, the next name returned on a call from the same process or thread with the same *base* for *nameTemplate* is:
+If this name is used to create file FNA12345 and this file still exists, the next name returned on a call from the same process or thread with the same *`base`* for *`nameTemplate`* is:
 
 > **fnb12345**
 
@@ -72,9 +72,9 @@ If FNA12345 does not exist, the next name returned is again:
 
 > **fna12345**
 
-**_mktemp** can create a maximum of 26 unique file names for any given combination of *base* and *nameTemplate* values. Therefore, FNZ12345 is the last unique file name **_mktemp** can create for the *base* and *nameTemplate* values used in this example.
+**_mktemp** can create a maximum of 26 unique file names for any given combination of *`base`* and *`nameTemplate`* values. Therefore, FNZ12345 is the last unique file name **_mktemp** can create for the *`base`* and *`nameTemplate`* values used in this example.
 
-On failure, **errno** is set. If *nameTemplate* has an invalid format (for example, fewer than 6 X's), **errno** is set to **EINVAL**. If **_mktemp** is unable to create a unique name because all 26 possible file names already exist, **_mktemp** sets nameTemplate to an empty string and returns **EEXIST**.
+On failure, **errno** is set. If *`nameTemplate`* has an invalid format (for example, fewer than 6 X's), **errno** is set to **EINVAL**. If **_mktemp** is unable to create a unique name because all 26 possible file names already exist, **_mktemp** sets nameTemplate to an empty string and returns **EEXIST**.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

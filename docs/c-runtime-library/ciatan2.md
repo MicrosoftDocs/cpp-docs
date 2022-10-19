@@ -12,7 +12,7 @@ ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
 ---
 # _CIatan2
 
-Calculates the arctangent of *x* / *y* where *x* and *y* are values on the top of the stack.
+Calculates the arctangent of *`x`* / *`y`* where *`x`* and *`y`* are values on the top of the stack.
 
 ## Syntax
 

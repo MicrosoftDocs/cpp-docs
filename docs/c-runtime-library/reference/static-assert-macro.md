@@ -23,12 +23,12 @@ _STATIC_ASSERT(
 
 ### Parameters
 
-*booleanExpression*\
+*`booleanExpression`*\
 Expression (including pointers) that evaluates to nonzero (**TRUE**) or 0 (**FALSE**).
 
 ## Remarks
 
-This macro resembles the [_ASSERT and _ASSERTE macros](assert-asserte-assert-expr-macros.md), except that *booleanExpression* is evaluated at compile time instead of at runtime. If *booleanExpression* evaluates to **FALSE** (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.
+This macro resembles the [`_ASSERT` and `_ASSERTE` macros](assert-asserte-assert-expr-macros.md), except that *`booleanExpression`* is evaluated at compile time instead of at runtime. If *`booleanExpression`* evaluates to **FALSE** (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.
 
 ## Example
 

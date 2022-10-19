@@ -37,12 +37,12 @@ long double floorl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value.
 
 ## Return value
 
-The **floor** functions return a floating-point value that represents the largest integer that is less than or equal to *x*. There's no error return.
+The **floor** functions return a floating-point value that represents the largest integer that is less than or equal to *`x`*. There's no error return.
 
 |Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|

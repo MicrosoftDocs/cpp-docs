@@ -53,7 +53,7 @@ On successful completion, this function returns a pointer to the user portion of
 
 ## Remarks
 
-**_calloc_dbg** is a debug version of the [`calloc`](calloc.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **_calloc_dbg** is reduced to a call to **calloc**. Both **calloc** and **_calloc_dbg** allocate *number* memory blocks in the base heap, but **_calloc_dbg** offers several debugging features:
+**_calloc_dbg** is a debug version of the [`calloc`](calloc.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **_calloc_dbg** is reduced to a call to **calloc**. Both **calloc** and **_calloc_dbg** allocate *`number`* memory blocks in the base heap, but **_calloc_dbg** offers several debugging features:
 
 - Buffers on either side of the user portion of the block to test for leaks.
 

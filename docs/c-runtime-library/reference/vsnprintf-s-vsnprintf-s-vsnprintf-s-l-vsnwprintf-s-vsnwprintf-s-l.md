@@ -103,7 +103,7 @@ For more information, see [Format specifications](../format-specification-syntax
 
 * If *`count`* is equal to or exceeds *`sizeOfBuffer`* but the number of characters of data is less than *`sizeOfBuffer`*, then all of the data is written (with terminating null) and the number of characters is returned.
 
-* If *`count`* and the number of characters of data both equal or exceed *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **`errno`** to **`ERANGE`**, and return -1.
+* If *`count`* and the number of characters of data both equal or exceed *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set **`errno`** to **`ERANGE`**, and return -1.
 
 * If *`buffer`* or *`format`* is a **`NULL`** pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
 

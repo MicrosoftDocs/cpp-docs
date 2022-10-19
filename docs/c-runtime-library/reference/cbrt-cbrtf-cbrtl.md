@@ -37,12 +37,12 @@ long double cbrtl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value
 
 ## Return value
 
-The **cbrt** functions return the cube-root of *x*.
+The **cbrt** functions return the cube-root of *`x`*.
 
 |Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|

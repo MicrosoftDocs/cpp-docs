@@ -45,7 +45,7 @@ if ((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))
 |[`ispunct`, `iswpunct`, `_ispunct_l`, `_iswpunct_l`](./reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md), [`_ismbcgraph`, `_ismbcgraph_l`, `_ismbcprint`, `_ismbcprint_l`, `_ismbcpunct`, `_ismbcpunct_l`, `_ismbcblank`, `_ismbcblank_l`, `_ismbcspace`, `_ismbcspace_l`](./reference/ismbcgraph-functions.md)|Punctuation|
 |[`isspace`, `iswspace`, `_isspace_l`, `_iswspace_l`](./reference/isspace-iswspace-isspace-l-iswspace-l.md), [`_ismbcgraph`, `_ismbcgraph_l`, `_ismbcprint`, `_ismbcprint_l`, `_ismbcpunct`, `_ismbcpunct_l`, `_ismbcblank`, `_ismbcblank_l`, `_ismbcspace`, `_ismbcspace_l`](./reference/ismbcgraph-functions.md)|White-space|
 |[`isupper`, `iswupper`](./reference/isupper-isupper-l-iswupper-iswupper-l.md), [`_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`](./reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Uppercase|
-|[`_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`](./reference/isctype-iswctype-isctype-l-iswctype-l.md)|Property specified by *desc* argument|
+|[`_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`](./reference/isctype-iswctype-isctype-l-iswctype-l.md)|Property specified by *`desc`* argument|
 |[`isxdigit`, `iswxdigit`, `_isxdigit_l`, `_iswxdigit_l`](./reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|Hexadecimal digit|
 |[`_mbclen`, `mblen`, `_mblen_l`](./reference/mbclen-mblen-mblen-l.md)|Return length of valid multibyte character; result depends on **LC_CTYPE** category setting of current locale|
 

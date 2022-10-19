@@ -28,18 +28,18 @@ long double nearbyint( long double x ); //C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 The value to round.
 
 ## Return value
 
-If successful, returns *x*, rounded to the nearest integer, using the current rounding format as reported by [`fegetround`](fegetround-fesetround2.md). Otherwise, the function may return one of the following values:
+If successful, returns *`x`*, rounded to the nearest integer, using the current rounding format as reported by [`fegetround`](fegetround-fesetround2.md). Otherwise, the function may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
-|*x* = ±INFINITY|±INFINITY, unmodified|
-|*x* = ±0|±0, unmodified|
-|*x* = NaN|NaN|
+|*`x`* = ±INFINITY|±INFINITY, unmodified|
+|*`x`* = ±0|±0, unmodified|
+|*`x`* = NaN|NaN|
 
 Errors are not reported through [`_matherr`](matherr.md); specifically, this function does not report any **FE_INEXACT** exceptions.
 

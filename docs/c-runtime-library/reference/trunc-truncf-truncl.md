@@ -27,20 +27,20 @@ float trunc( float x ); //C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 The value to truncate.
 
 ## Return value
 
-If successful, returns an integer value of *x*, rounded towards zero.
+If successful, returns an integer value of *`x`*, rounded towards zero.
 
 Otherwise, may return one of the following:
 
 |Issue|Return|
 |-----------|------------|
-|*x* = ±INFINITY|x|
-|*x* =  ±0|x|
-|*x* = NaN|NaN|
+|*`x`* = ±INFINITY|x|
+|*`x`* =  ±0|x|
+|*`x`* = NaN|NaN|
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 

@@ -12,7 +12,7 @@ ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
 ---
 # _isctype, iswctype, _isctype_l, _iswctype_l
 
-Tests *c* for the ctype property specified by the *desc* argument. For each valid value of *desc*, there is an equivalent wide-character classification routine.
+Tests *`c`* for the ctype property specified by the *`desc`* argument. For each valid value of *`desc`*, there is an equivalent wide-character classification routine.
 
 ## Syntax
 

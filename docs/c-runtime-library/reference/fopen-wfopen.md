@@ -43,7 +43,7 @@ For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`
 
 ## Remarks
 
-The **`fopen`** function opens the file that is specified by *filename*. By default, a narrow *filename* string is interpreted using the ANSI codepage (`CP_ACP`). In Windows Desktop applications, it can be changed to the OEM codepage (`CP_OEMCP`) by using the [`SetFileApisToOEM`](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) function. You can use the [`AreFileApisANSI`](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) function to determine whether *filename* is interpreted using the ANSI or the system default OEM codepage. **`_wfopen`** is a wide-character version of **`fopen`**; the **`_wfopen`** arguments are wide-character strings. Otherwise, **`_wfopen`** and **`fopen`** behave identically. Just using **`_wfopen`** doesn't affect the coded character set that's used in the file stream.
+The **`fopen`** function opens the file that is specified by *`filename`*. By default, a narrow *`filename`* string is interpreted using the ANSI codepage (`CP_ACP`). In Windows Desktop applications, it can be changed to the OEM codepage (`CP_OEMCP`) by using the [`SetFileApisToOEM`](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) function. You can use the [`AreFileApisANSI`](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) function to determine whether *`filename`* is interpreted using the ANSI or the system default OEM codepage. **`_wfopen`** is a wide-character version of **`fopen`**; the **`_wfopen`** arguments are wide-character strings. Otherwise, **`_wfopen`** and **`fopen`** behave identically. Just using **`_wfopen`** doesn't affect the coded character set that's used in the file stream.
 
 **`fopen`** accepts paths that are valid on the file system at the point of execution; **`fopen`** accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for **`fopen`**, make sure that drives, paths, or network shares will be available in the execution environment. You can use either forward slashes (`/`) or backslashes (`\`) as the directory separators in a path.
 
@@ -103,7 +103,7 @@ The **`"a"`** mode doesn't remove the EOF marker before it appends to the file. 
 
 When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are enabled (the file is said to be open for "update"). However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there's no EOF, you must use an intervening call to a file positioning function. The file positioning functions are **`fsetpos`**, [`fseek`](fseek-fseeki64.md), and [`rewind`](rewind.md). When you switch from writing to reading, you must use an intervening call to either **`fflush`** or to a file positioning function.
 
-In addition to the earlier values, the following characters can be appended to *mode* to specify the translation mode for newline characters.
+In addition to the earlier values, the following characters can be appended to *`mode`* to specify the translation mode for newline characters.
 
 | *`mode`* modifier | Translation mode |
 |--|--|
@@ -120,11 +120,11 @@ For more information about how to use text and binary modes in Unicode and multi
 
 The following options can be appended to *`mode`* to specify more behaviors.
 
-| *mode* modifier | Behavior |
+| *`mode`* modifier | Behavior |
 |--|--|
-| **`x`** | Forces the function to fail if *filename* already exists. Can only be used with the "w" or "w+" specifiers. |
-| **`c`** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
-| **`n`** | Reset the commit flag for the associated *filename* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link options](../link-options.md)). |
+| **`x`** | Forces the function to fail if *`filename`* already exists. Can only be used with the "w" or "w+" specifiers. |
+| **`c`** | Enable the commit flag for the associated *`filename`* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
+| **`n`** | Reset the commit flag for the associated *`filename`* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link options](../link-options.md)). |
 | **`N`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
@@ -132,7 +132,7 @@ The following options can be appended to *`mode`* to specify more behaviors.
 | **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
 | **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or **`UNICODE`**) for this file. Leave unspecified if you want ANSI encoding. |
 
-Valid characters for the *mode* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
+Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
 
 | Characters in *`mode`* string | Equivalent *`oflag`* value for `_open`/`_sopen` |
 |--|--|

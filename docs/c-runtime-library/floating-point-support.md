@@ -103,7 +103,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [`nearbyint`, `nearbyintf`, `nearbyintl`](./reference/nearbyint-nearbyintf-nearbyintl1.md)|Returns the rounded value
 [`nextafter`, `nextafterf`, `nextafterl`, `_nextafter`, `_nextafterf`](./reference/nextafter-functions.md)|Returns the next representable floating-point value
 [`nexttoward`, `nexttowardf`, `nexttowardl`](./reference/nextafter-functions.md)|Returns the next representable floating-point value
-[`pow`, `powf`, `powl`](./reference/pow-powf-powl.md)|Returns the value of *x*<sup>*y*</sup>
+[`pow`, `powf`, `powl`](./reference/pow-powf-powl.md)|Returns the value of *`x`*<sup>*`y`*</sup>
 [`remainder`, `remainderf`, `remainderl`](./reference/remainder-remainderf-remainderl.md)|Computes the remainder of the quotient of two floating-point values
 [`remquo`, `remquof`, `remquol`](./reference/remquo-remquof-remquol.md)|Computes the remainder of two integer values
 [`rint`, `rintf`, `rintl`](./reference/rint-rintf-rintl.md)|Rounds a floating-point value

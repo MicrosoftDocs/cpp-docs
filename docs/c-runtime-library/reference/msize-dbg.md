@@ -25,10 +25,10 @@ size_t _msize_dbg(
 
 ### Parameters
 
-*userData*\
+*`userData`*\
 Pointer to the memory block for which to determine the size.
 
-*blockType*\
+*`blockType`*\
 Type of the specified memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
 ## Return value
@@ -41,7 +41,7 @@ On successful completion, **_msize_dbg** returns the size (in bytes) of the spec
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between calling a standard heap function and its debug version in a debug build of an application, see [Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
-This function validates its parameter. If *memblock* is a null pointer, **_msize** invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function sets **errno** to **EINVAL** and returns -1.
+This function validates its parameter. If *`memblock`* is a null pointer, **_msize** invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function sets **errno** to **EINVAL** and returns -1.
 
 ## Requirements
 

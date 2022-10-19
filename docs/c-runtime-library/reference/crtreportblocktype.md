@@ -24,7 +24,7 @@ int _CrtReportBlockType(
 
 ### Parameters
 
-*pBlock*\
+*`pBlock`*\
 Pointer to a valid debug heap block.
 
 ## Return value

@@ -16,9 +16,9 @@ ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
 
 ## Remarks
 
-The *mode* argument in the call to the `_locking` function specifies the locking action to be performed.
+The *`mode`* argument in the call to the `_locking` function specifies the locking action to be performed.
 
-The *mode* argument must be one of the following manifest constants.
+The *`mode`* argument must be one of the following manifest constants.
 
 |Value|Description|
 |-|-|

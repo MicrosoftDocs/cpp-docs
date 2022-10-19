@@ -37,12 +37,12 @@ _Lcomplex conjl(
 
 ### Parameters
 
-*z*\
+*`z`*\
 A complex number.
 
 ## Return value
 
-The complex conjugate  of *z*.  The result has the same real and imaginary part as *z*, but with the opposite sign.
+The complex conjugate  of *`z`*.  The result has the same real and imaginary part as *`z`*, but with the opposite sign.
 
 ## Remarks
 

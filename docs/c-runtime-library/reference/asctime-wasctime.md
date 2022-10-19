@@ -58,7 +58,7 @@ The string result produced by **asctime** contains exactly 26 characters and has
 
 **_wasctime** is a wide-character version of **asctime**. **_wasctime** and **asctime** behave identically otherwise.
 
-These functions validate their parameters. If *timeptr* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **NULL** and sets **errno** to **EINVAL**.
+These functions validate their parameters. If *`timeptr`* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **NULL** and sets **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

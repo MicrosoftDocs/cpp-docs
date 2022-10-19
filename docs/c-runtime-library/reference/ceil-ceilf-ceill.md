@@ -37,12 +37,12 @@ long double ceill(
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value.
 
 ## Return value
 
-The **ceil** functions return a floating-point value that represents the smallest integer that is greater than or equal to *x*. There's no error return.
+The **ceil** functions return a floating-point value that represents the smallest integer that is greater than or equal to *`x`*. There's no error return.
 
 |Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|

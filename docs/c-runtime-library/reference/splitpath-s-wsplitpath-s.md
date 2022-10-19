@@ -72,7 +72,7 @@ The size of the *`drive`* buffer in single-byte or wide characters. If *`drive`*
 Directory path, including trailing slash. Forward slashes ( **`/`** ), backslashes ( **`\\`** ), or both may be used. You can pass **`NULL`** for this parameter if you do not need the directory path.
 
 *`dirNumberOfElements`*\
-The size of the *dir* buffer in single-byte or wide characters. If *`dir`* is **`NULL`**, this value must be 0.
+The size of the *`dir`* buffer in single-byte or wide characters. If *`dir`* is **`NULL`**, this value must be 0.
 
 *`fname`*\
 Base filename (without extension). You can pass **`NULL`** for this parameter if you do not need the filename.

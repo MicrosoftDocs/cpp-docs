@@ -50,7 +50,7 @@ struct _diskfree_t {
 };
 ```
 
-This function validates its parameters. If the *`driveinfo`* pointer is **`NULL`** or *`drive`* specifies an invalid drive, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**. Valid drives range from 0 to 26. A *drive* value of 0 specifies the current drive; thereafter, numbers map to letters of the English alphabet such that 1 indicates drive A, 3 indicates drive C, and so on.
+This function validates its parameters. If the *`driveinfo`* pointer is **`NULL`** or *`drive`* specifies an invalid drive, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**. Valid drives range from 0 to 26. A *`drive`* value of 0 specifies the current drive; thereafter, numbers map to letters of the English alphabet such that 1 indicates drive A, 3 indicates drive C, and so on.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

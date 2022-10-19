@@ -40,29 +40,29 @@ int _mblen_l(
 
 ### Parameters
 
-*c*\
+*`c`*\
 Multibyte character.
 
-*mbstr*\
+*`mbstr`*\
 Address of a multibyte-character byte sequence.
 
-*count*\
+*`count`*\
 Number of bytes to check.
 
-*locale*\
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-**_mbclen** and **_mbclen_l** return 1 or 2, according to the length of the multibyte character *c*. The functions always return 1 for UTF-8, whether *c* is multibyte or not. There's no error return for **_mbclen**.
+**_mbclen** and **_mbclen_l** return 1 or 2, according to the length of the multibyte character *`c`*. The functions always return 1 for UTF-8, whether *`c`* is multibyte or not. There's no error return for **_mbclen**.
 
-If *mbstr* isn't **NULL**, **mblen** and **_mblen_l** return the length, in bytes, of the multibyte character. The **mblen** and **_mblen_l** functions work correctly on UTF-8, and may return a value between 1 and 3. When *mbstr* is **NULL** (or it points to the wide-character null character), **mblen** and **_mblen_l** return 0. The object that *mbstr* points to must form a valid multibyte character within the first *count* characters, or **mblen** and **_mblen_l** return -1.
+If *`mbstr`* isn't **NULL**, **mblen** and **_mblen_l** return the length, in bytes, of the multibyte character. The **mblen** and **_mblen_l** functions work correctly on UTF-8, and may return a value between 1 and 3. When *`mbstr`* is **NULL** (or it points to the wide-character null character), **mblen** and **_mblen_l** return 0. The object that *`mbstr`* points to must form a valid multibyte character within the first *`count`* characters, or **mblen** and **_mblen_l** return -1.
 
 ## Remarks
 
-The **_mbclen** function returns the length, in bytes, of the multibyte character *c*. If *c* doesn't point to the lead byte of a multibyte character (as determined by an implicit call to [`_ismbblead`](ismbblead-ismbblead-l.md), the result of **_mbclen** is unpredictable.
+The **_mbclen** function returns the length, in bytes, of the multibyte character *`c`*. If *`c`* doesn't point to the lead byte of a multibyte character (as determined by an implicit call to [`_ismbblead`](ismbblead-ismbblead-l.md), the result of **_mbclen** is unpredictable.
 
-**mblen** returns the length in bytes of *mbstr* if it's a valid multibyte character. It also determines multibyte-character validity associated with the code page. **mblen** examines *count* or fewer bytes contained in *mbstr*, but not more than **MB_CUR_MAX** bytes.
+**mblen** returns the length in bytes of *`mbstr`* if it's a valid multibyte character. It also determines multibyte-character validity associated with the code page. **mblen** examines *`count`* or fewer bytes contained in *`mbstr`*, but not more than **MB_CUR_MAX** bytes.
 
 The output value is affected by the **LC_CTYPE** category setting of the locale. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [`setlocale`](setlocale-wsetlocale.md) and [Locale](../locale.md).
 

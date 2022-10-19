@@ -28,22 +28,22 @@ long double remquo( long double numer, long double denom, int* quo ); /* C++ onl
 
 ### Parameters
 
-*numer*\
+*`numer`*\
 The numerator.
 
-*denom*\
+*`denom`*\
 The denominator.
 
-*quo*\
+*`quo`*\
 A pointer to an integer to store a value that has the sign and approximate magnitude of the quotient.
 
 ## Return value
 
-**remquo** returns the floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remquo** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
+**remquo** returns the floating-point remainder of *`x`* / *`y`*. If the value of *`y`* is 0.0, **remquo** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
 
-The **remquo** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* \* *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
+The **remquo** function calculates the floating-point remainder `f` of *`x`* / *`y`* such that *`x`* = `n` \* *`y`* + `f`*, where `n` is an integer, `f` has the same sign as *`x`*, and the absolute value of `f` is less than the absolute value of *`y`*.
 
 C++ allows overloading, so you can call overloads of **remquo** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **remquo** always takes two **`double`** arguments and returns a **`double`**.
 

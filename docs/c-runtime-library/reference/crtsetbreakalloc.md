@@ -24,7 +24,7 @@ long _CrtSetBreakAlloc(
 
 ### Parameters
 
-*lBreakAlloc*\
+*`lBreakAlloc`*\
 Allocation order number, for which to set the breakpoint.
 
 ## Return value
@@ -35,7 +35,7 @@ Returns the previous object allocation order number that had a breakpoint set.
 
 **_CrtSetBreakAlloc** allows an application to perform memory leak detection by breaking at a specific point of memory allocation and tracing back to the origin of the request. The function uses the sequential object allocation order number assigned to the memory block when it was allocated in the heap. When [`_DEBUG`](../debug.md) isn't defined, calls to **_CrtSetBreakAlloc** are removed during preprocessing.
 
-The object allocation order number is stored in the *lRequest* field of the **_CrtMemBlockHeader** structure, defined in Crtdbg.h. When information about a memory block is reported by one of the debug dump functions, this number is enclosed in braces, such as {36}.
+The object allocation order number is stored in the *`lRequest`* field of the **_CrtMemBlockHeader** structure, defined in Crtdbg.h. When information about a memory block is reported by one of the debug dump functions, this number is enclosed in braces, such as {36}.
 
 For more information about how **_CrtSetBreakAlloc** can be used with other memory management functions, see [Tracking heap allocation requests](/visualstudio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
 

@@ -50,7 +50,7 @@ For more information about these and other error codes, see [`errno`, `_doserrno
 
 The **`_fsopen`** function opens the file specified by *`filename`* as a stream and prepares the file for subsequent shared reading or writing, as defined by the mode and *`shflag`* arguments. **`_wfsopen`** is a wide-character version of **`_fsopen`**; the *`filename`* and *`mode`* arguments to **`_wfsopen`** are wide-character strings. **`_wfsopen`** and **`_fsopen`** behave identically otherwise.
 
-The character string *mode* specifies the type of access requested for the file, as shown in the following table.
+The character string *`mode`* specifies the type of access requested for the file, as shown in the following table.
 
 |Term|Definition|
 |----------|----------------|

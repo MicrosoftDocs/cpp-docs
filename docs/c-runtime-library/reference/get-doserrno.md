@@ -24,12 +24,12 @@ errno_t _get_doserrno(
 
 ### Parameters
 
-*pValue*\
+*`pValue`*\
 A pointer to an integer to be filled with the current value of the **_doserrno** global macro.
 
 ## Return value
 
-If **_get_doserrno** succeeds, it returns zero; if it fails, it returns an error code. If *pValue* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+If **_get_doserrno** succeeds, it returns zero; if it fails, it returns an error code. If *`pValue`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Remarks
 

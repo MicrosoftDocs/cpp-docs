@@ -52,12 +52,12 @@ long long llroundl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The floating-point value to round.
 
 ## Return value
 
-The **lround** and **llround** functions return the nearest **`long`** or **`long long`** integer to *x*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
+The **lround** and **llround** functions return the nearest **`long`** or **`long long`** integer to *`x`*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|

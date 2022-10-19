@@ -22,7 +22,7 @@ struct lconv *localeconv( void );
 
 ## Return value
 
-**localeconv** returns a pointer to a filled-in object of type [struct lconv](../standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **localeconv**. Changes made to the values in this object do not modify the locale settings. Calls to [`setlocale`](setlocale-wsetlocale.md) with *category* values of **LC_ALL**, **LC_MONETARY**, or **LC_NUMERIC** overwrite the contents of the structure.
+**localeconv** returns a pointer to a filled-in object of type [struct lconv](../standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **localeconv**. Changes made to the values in this object do not modify the locale settings. Calls to [`setlocale`](setlocale-wsetlocale.md) with *`category`* values of **LC_ALL**, **LC_MONETARY**, or **LC_NUMERIC** overwrite the contents of the structure.
 
 ## Remarks
 
@@ -59,7 +59,7 @@ The values of **grouping** and **mon_grouping** are interpreted according to the
 
 - 0 - Use previous element for each of remaining digits.
 
-- *n* - Number of digits that make up current group. Next element is examined to determine size of next group of digits before current group.
+- *`n`* - Number of digits that make up current group. Next element is examined to determine size of next group of digits before current group.
 
 The values for **int_curr_symbol** are interpreted according to the following rules:
 

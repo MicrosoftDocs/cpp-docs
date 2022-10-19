@@ -32,10 +32,10 @@ wchar_t * __wcserror(
 
 ### Parameters
 
-*errnum*\
+*`errnum`*\
 Error number.
 
-*strErrMsg*\
+*`strErrMsg`*\
 User-supplied message.
 
 ## Return value
@@ -44,14 +44,14 @@ All of these functions return a pointer to an error-message string, in a thread-
 
 ## Remarks
 
-The **strerror** function maps *errnum* to an error-message string and returns a pointer to the string. The **strerror** and **_strerror** functions don't actually print the message. To print, call an output function such as [`fprintf`](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The **strerror** function maps *`errnum`* to an error-message string and returns a pointer to the string. The **strerror** and **_strerror** functions don't actually print the message. To print, call an output function such as [`fprintf`](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```C
 if (( _access( "datafile", 2 )) == -1 )
    fprintf( stderr, _strerror(NULL) );
 ```
 
-If *strErrMsg* is passed as **NULL**, **_strerror** returns a pointer to a string. It contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). When *strErrMsg* isn't **NULL**, the string contains, in order: your *strErrMsg* string, a colon, a space, the system error message, and a newline character. Your string message can be, at most, 94 characters long, in either narrow (**_strerror**) or wide (**__wcserror**) characters.
+If *`strErrMsg`* is passed as **NULL**, **_strerror** returns a pointer to a string. It contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). When *`strErrMsg`* isn't **NULL**, the string contains, in order: your *`strErrMsg`* string, a colon, a space, the system error message, and a newline character. Your string message can be, at most, 94 characters long, in either narrow (**_strerror**) or wide (**__wcserror**) characters.
 
 The actual error number for **_strerror** is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call **_strerror** immediately after a library routine returns an error. Otherwise, later calls to library routines may overwrite the **errno** value.
 

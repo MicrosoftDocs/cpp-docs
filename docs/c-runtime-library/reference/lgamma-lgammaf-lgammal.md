@@ -28,18 +28,18 @@ long double lgamma( long double x ); //C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 The value to compute.
 
 ## Return value
 
-If successful, return the natural logarithm of the absolute value of the gamma function of *x*.
+If successful, return the natural logarithm of the absolute value of the gamma function of *`x`*.
 
 |Issue|Return|
 |-----------|------------|
-|*x* = NaN|NaN|
-|*x* = ±0|+INFINITY|
-|*x*= negative integer|+INFINITY|
+|*`x`* = NaN|NaN|
+|*`x`* = ±0|+INFINITY|
+|*`x`*= negative integer|+INFINITY|
 |±INFINITY|+INFINITY|
 |pole error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
 |overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|

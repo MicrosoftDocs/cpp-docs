@@ -37,10 +37,10 @@ errno_t _wstrdate_s(
 
 ### Parameters
 
-*buffer*\
+*`buffer`*\
 A pointer to a buffer to put the formatted date string.
 
-*size*\
+*`size`*\
 Size of the buffer in character units.
 
 ## Return value
@@ -49,28 +49,28 @@ Zero if successful. The return value is an error code if there's a failure. Erro
 
 ## Error conditions
 
-|*buffer*|*size*|Return|Contents of *buffer*|
+|*`buffer`*|*`size`*|Return|Contents of *`buffer`*|
 |--------------|------------------------|------------|--------------------------|
 |**NULL**|(any)|**EINVAL**|Not modified|
 |Not **NULL** (pointing to valid buffer)|0|**EINVAL**|Not modified|
-|Not **NULL** (pointing to valid buffer)|0 < *size* < 9|**EINVAL**|Empty string|
-|Not **NULL** (pointing to valid buffer)|*size* >= 9|0|Current date formatted as specified in the remarks|
+|Not **NULL** (pointing to valid buffer)|0 < *`size`* < 9|**EINVAL**|Empty string|
+|Not **NULL** (pointing to valid buffer)|*`size`* >= 9|0|Current date formatted as specified in the remarks|
 
 ## Security issues
 
-Passing in an invalid, non-NULL value for *buffer* results in an access violation if the *size* parameter is greater than nine.
+Passing in an invalid, non-NULL value for *`buffer`* results in an access violation if the *`size`* parameter is greater than nine.
 
-Passing a value for *size* greater than the actual size of *buffer* results in a buffer overrun.
+Passing a value for *`size`* greater than the actual size of *`buffer`* results in a buffer overrun.
 
 ## Remarks
 
-These functions provide more secure versions of **_strdate** and **_wstrdate**. The **_strdate_s** function copies the current system date to the buffer pointed to by *buffer*. It's formatted `mm/dd/yy`, where `mm` is the two-digit month, `dd` is the two-digit day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least nine characters long.
+These functions provide more secure versions of **_strdate** and **_wstrdate**. The **_strdate_s** function copies the current system date to the buffer pointed to by *`buffer`*. It's formatted `mm/dd/yy`, where `mm` is the two-digit month, `dd` is the two-digit day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least nine characters long.
 
 **_wstrdate_s** is a wide-character version of **_strdate_s**; the argument and return value of **_wstrdate_s** are wide-character strings. These functions behave identically otherwise.
 
-When *buffer* is a **NULL** pointer, or *size* is fewer than nine characters, the invalid parameter handler is invoked. It's described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1. They set **errno** to **EINVAL** if the buffer is **NULL** or if *size* is less than or equal to 0. Or, they set **errno** to **ERANGE** if *size* is less than 9.
+When *`buffer`* is a **NULL** pointer, or *`size`* is fewer than nine characters, the invalid parameter handler is invoked. It's described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1. They set **errno** to **EINVAL** if the buffer is **NULL** or if *`size`* is less than or equal to 0. Or, they set **errno** to **ERANGE** if *`size`* is less than 9.
 
-In C++, use of these functions is simplified by template overloads. The overloads can infer buffer length automatically, which eliminates the need to specify a *size* argument. And, they can automatically replace non-secure functions with their newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
+In C++, use of these functions is simplified by template overloads. The overloads can infer buffer length automatically, which eliminates the need to specify a *`size`* argument. And, they can automatically replace non-secure functions with their newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 

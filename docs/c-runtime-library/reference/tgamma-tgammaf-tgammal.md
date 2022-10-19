@@ -42,14 +42,14 @@ long double tgamma(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The value to find the gamma of.
 
 ## Return value
 
-If successful, returns the gamma of *x*.
+If successful, returns the gamma of *`x`*.
 
-A range error may occur if the magnitude of *x* is too large or too small for the data type. A domain error or range error may occur if *x* <= 0.
+A range error may occur if the magnitude of *`x`* is too large or too small for the data type. A domain error or range error may occur if *`x`* <= 0.
 
 |Issue|Return|
 |-----------|------------|
