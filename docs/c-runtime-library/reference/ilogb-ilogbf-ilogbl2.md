@@ -56,7 +56,7 @@ Otherwise, returns one of the following values, defined in \<math.h>:
 |±0|FP_ILOGB0|
 |±inf, ±nan, indefinite|FP_ILOGBNAN|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -78,5 +78,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[frexp](frexp.md)\
-[logb, logbf, logbl, _logb, _logbf](logb-logbf-logbl-logb-logbf.md)
+[`frexp`](frexp.md)\
+[`logb`, `logbf`, `logbl`, `_logb`, `_logbf`](logb-logbf-logbl-logb-logbf.md)

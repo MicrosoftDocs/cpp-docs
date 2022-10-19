@@ -12,7 +12,7 @@ ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
 ---
 # _creat, _wcreat
 
-Creates a new file. **_creat** and **_wcreat** have been deprecated; use [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md) instead.
+Creates a new file. **_creat** and **_wcreat** have been deprecated; use [`_sopen_s`, `_wsopen_s`](sopen-s-wsopen-s.md) instead.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ These functions, if successful, return a file descriptor to the created file. Ot
 
 If *`filename`* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -69,9 +69,9 @@ If the file specified by *`filename`* doesn't exist, a new file is created with 
 |`_S_IREAD`|Reading permitted.|
 |`_S_IREAD | _S_IWRITE`|Reading and writing permitted.|
 
-If write permission isn't given, the file is read-only. All files are always readable; it's impossible to give write-only permission. The modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are then equivalent. Files opened using **_creat** are always opened in compatibility mode (see [_sopen](sopen-wsopen.md)) with **_SH_DENYNO**.
+If write permission isn't given, the file is read-only. All files are always readable; it's impossible to give write-only permission. The modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are then equivalent. Files opened using **_creat** are always opened in compatibility mode (see [`_sopen`](sopen-wsopen.md)) with **_SH_DENYNO**.
 
-**_creat** applies the current file-permission mask to *`pmode`* before setting the permissions (see [_umask](umask.md)). **_creat** is provided primarily for compatibility with previous libraries. A call to **_open** with **_O_CREAT** and **_O_TRUNC** in the *oflag* parameter is equivalent to **_creat** and is preferable for new code.
+**_creat** applies the current file-permission mask to *`pmode`* before setting the permissions (see [`_umask`](umask.md)). **_creat** is provided primarily for compatibility with previous libraries. A call to **_open** with **_O_CREAT** and **_O_TRUNC** in the *oflag* parameter is equivalent to **_creat** and is preferable for new code.
 
 ## Requirements
 
@@ -120,10 +120,10 @@ Created data file.
 ## See also
 
 [Low-level I/O](../low-level-i-o.md)\
-[_chmod, _wchmod](chmod-wchmod.md)\
-[_chsize](chsize.md)\
-[_close](close.md)\
-[_dup, _dup2](dup-dup2.md)\
-[_open, _wopen](open-wopen.md)\
-[_sopen, _wsopen](sopen-wsopen.md)\
-[_umask](umask.md)
+[`_chmod`, `_wchmod`](chmod-wchmod.md)\
+[`_chsize`](chsize.md)\
+[`_close`](close.md)\
+[`_dup`, `_dup2`](dup-dup2.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_sopen`, `_wsopen`](sopen-wsopen.md)\
+[`_umask`](umask.md)

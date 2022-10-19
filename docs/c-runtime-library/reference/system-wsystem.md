@@ -44,7 +44,7 @@ If *`command`* is **`NULL`** and the command interpreter is found, returns a non
 | **`ENOEXEC`** | The command-interpreter file can't be executed because the format isn't valid. |
 | **`ENOMEM`** | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call wasn't allocated correctly. |
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -103,7 +103,7 @@ Line two.
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)\
-[`_exec`, `_wexec` Functions](../exec-wexec-functions.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
 [`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
 [`_flushall`](flushall.md)\
-[`_spawn`, `_wspawn` Functions](../spawn-wspawn-functions.md)
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)

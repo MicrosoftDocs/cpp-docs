@@ -12,7 +12,7 @@ ms.assetid: c42ded42-2ed9-4f06-a0a9-247ba305473a
 ---
 # _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 
-Sets characters of a string to a character. More secure versions of these functions are available; see [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md).
+Sets characters of a string to a character. More secure versions of these functions are available; see [`_strset_s`, `_strset_s_l`, `_wcsset_s`, `_wcsset_s_l`, `_mbsset_s`, `_mbsset_s_l`](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md).
 
 > [!IMPORTANT]
 > **_mbsset** and **_mbsset_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -70,7 +70,7 @@ The **_strset** function sets all characters (except the terminating null charac
 
 **_mbsset** validates its parameters. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **_mbsset** returns **NULL** and sets **errno** to **EINVAL**. **_strset** and **_wcsset** do not validate their parameters.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 > [!IMPORTANT]
 > These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -125,9 +125,9 @@ After:  *******************************
 [String manipulation](../string-manipulation-crt.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md)\
-[memset, wmemset](memset-wmemset.md)\
-[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)\
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)\
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)\
-[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)
+[`_mbsnbset`, `_mbsnbset_l`](mbsnbset-mbsnbset-l.md)\
+[`memset`, `wmemset`](memset-wmemset.md)\
+[`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`_strnset`, `_strnset_l`, `_wcsnset`, `_wcsnset_l`, `_mbsnset`, `_mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)

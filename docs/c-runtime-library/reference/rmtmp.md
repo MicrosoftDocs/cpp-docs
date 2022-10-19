@@ -45,11 +45,11 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
-See the example for [tmpfile](tmpfile.md).
+See the example for [`tmpfile`](tmpfile.md).
 
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[_flushall](flushall.md)\
-[tmpfile](tmpfile.md)\
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)
+[`_flushall`](flushall.md)\
+[`tmpfile`](tmpfile.md)\
+[`_tempnam`, `_wtempnam`, `tmpnam`, `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md)

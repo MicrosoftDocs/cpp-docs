@@ -45,4 +45,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)

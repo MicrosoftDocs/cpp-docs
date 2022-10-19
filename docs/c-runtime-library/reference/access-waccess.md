@@ -45,7 +45,7 @@ Each function returns 0 if the file has the given mode. The function returns -1 
 | `ENOENT` | File name or path not found. |
 | `EINVAL` | Invalid parameter. |
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -119,4 +119,4 @@ File crt_ACCESS.C does not have write permission.
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
 [`_open`, `_wopen`](open-wopen.md)\
-[`_stat`, `_wstat` Functions](stat-functions.md)
+[`_stat`, `_wstat` functions](stat-functions.md)

@@ -50,7 +50,7 @@ For more information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Time management](../time-management.md)\
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md)\
-[_get_daylight](get-daylight.md)\
-[_get_dstbias](get-dstbias.md)\
-[_get_tzname](get-tzname.md)
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)\
+[`_get_daylight`](get-daylight.md)\
+[`_get_dstbias`](get-dstbias.md)\
+[`_get_tzname`](get-tzname.md)

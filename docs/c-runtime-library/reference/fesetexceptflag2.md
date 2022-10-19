@@ -26,7 +26,7 @@ int fesetexceptflag(
 ### Parameters
 
 *`pstatus`*<br/>
-Pointer to an **fexcept_t** object containing the values to set the exception status flags to. The object may be set by a previous call to [fegetexceptflag](fegetexceptflag2.md).
+Pointer to an **fexcept_t** object containing the values to set the exception status flags to. The object may be set by a previous call to [`fegetexceptflag`](fegetexceptflag2.md).
 
 *`excepts`*<br/>
 The floating-point exception status flags to set.
@@ -50,7 +50,7 @@ The **fesetexceptflag** function sets the state of the floating-point exception 
 
 The *`excepts`* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
 
-To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
 
 ## Requirements
 
@@ -63,4 +63,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[fegetexceptflag](fegetexceptflag2.md)
+[`fegetexceptflag`](fegetexceptflag2.md)

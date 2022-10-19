@@ -38,7 +38,7 @@ Pointer to **`FILE`** structure.
 
 Each of these functions returns a nonnegative value if it is successful. On an error, **`fputs`** and **`fputws`** return **`EOF`**. If *`str`* or *`stream`* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and then return **`EOF`**.
 
-For more information on error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information on error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

@@ -78,11 +78,11 @@ Integer exponent.
 
 The **scalbn** functions return the value of *x* \* **FLT_RADIX**<sup>exp</sup> when successful. On overflow (depending on the sign of *x*), **scalbn** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
 
-For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about **errno** and possible error return values, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-**FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [ldexp](ldexp.md).
+**FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [`ldexp`](ldexp.md).
 
 Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **scalbn** always takes a **`double`** and an **`int`** and returns a **`double`**, and **scalbln** always takes a **`double`** and a **`long`** and returns a **`double`**.
 
@@ -126,6 +126,6 @@ int main( void )
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[frexp](frexp.md)\
-[ldexp](ldexp.md)\
-[modf, modff, modfl](modf-modff-modfl.md)
+[`frexp`](frexp.md)\
+[`ldexp`](ldexp.md)\
+[`modf`, `modff`, `modfl`](modf-modff-modfl.md)

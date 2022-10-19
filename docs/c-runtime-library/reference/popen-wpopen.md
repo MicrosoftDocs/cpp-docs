@@ -43,7 +43,7 @@ Mode of the returned stream.
 
 Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **`NULL`** on an error. If the error is caused by an invalid parameter, **`errno`** is set to **`EINVAL`**. See the Remarks section for valid modes.
 
-For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

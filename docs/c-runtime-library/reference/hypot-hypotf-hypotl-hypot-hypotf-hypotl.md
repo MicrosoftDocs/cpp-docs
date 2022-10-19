@@ -53,7 +53,7 @@ Floating-point values.
 
 If successful, **hypot** returns the length of the hypotenuse; on overflow, **hypot** returns INF (infinity) and the **errno** variable is set to **ERANGE**. You can use **_matherr** to modify error handling.
 
-For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -99,5 +99,5 @@ If a right triangle has sides 3.0 and 4.0, its hypotenuse is 5.0
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[_cabs](cabs.md)\
-[_matherr](matherr.md)
+[`_cabs`](cabs.md)\
+[`_matherr`](matherr.md)

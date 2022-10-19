@@ -39,7 +39,7 @@ Each of these functions returns the value 0 if the new directory was created. On
 
 **`ENOENT`** Path was not found.
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

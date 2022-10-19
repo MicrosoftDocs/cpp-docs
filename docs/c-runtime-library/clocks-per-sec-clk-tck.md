@@ -20,5 +20,5 @@ The time in seconds is the value returned by the `clock` function, divided by `C
 
 ## See also
 
-[clock](./reference/clock.md)\
+[`clock`](./reference/clock.md)\
 [Global constants](./global-constants.md)

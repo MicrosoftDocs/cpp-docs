@@ -124,6 +124,6 @@ parameter 2 = 222; parameter 1 = one
 ## See also
 
 [Console and port I/O](../console-and-port-i-o.md)\
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
-[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)\
+[`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
+[`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)\
 [printf_p Positional Parameters](../printf-p-positional-parameters.md)

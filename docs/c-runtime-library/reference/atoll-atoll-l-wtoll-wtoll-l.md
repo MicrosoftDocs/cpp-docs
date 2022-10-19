@@ -137,8 +137,8 @@ Overflow condition occurred.
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
 [Locale](../locale.md)\
-[_ecvt](ecvt.md)\
-[_fcvt](fcvt.md)\
-[_gcvt](gcvt.md)\
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
-[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)
+[`_ecvt`](ecvt.md)\
+[`_fcvt`](fcvt.md)\
+[`_gcvt`](gcvt.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`_atodbl`, `_atodbl_l`, `_atoldbl`, `_atoldbl_l`, `_atoflt`, `_atoflt_l`](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)

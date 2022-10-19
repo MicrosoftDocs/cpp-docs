@@ -33,7 +33,7 @@ Returns zero if successful; an error code on failure. If *pmode* is **NULL**, th
 
 ## Remarks
 
-The function gets the value of the [_fmode](../fmode.md) global variable. This variable specifies the default file translation mode for both low-level and stream file I/O operations, such as **_open**, **_pipe**, **fopen**, and [freopen](freopen-wfreopen.md).
+The function gets the value of the [`_fmode`](../fmode.md) global variable. This variable specifies the default file translation mode for both low-level and stream file I/O operations, such as **_open**, **_pipe**, **fopen**, and [`freopen`](freopen-wfreopen.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -47,11 +47,11 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [_set_fmode](set-fmode.md).
+See the example in [`_set_fmode`](set-fmode.md).
 
 ## See also
 
-[_fmode](../fmode.md)\
-[_set_fmode](set-fmode.md)\
-[_setmode](setmode.md)\
+[`_fmode`](../fmode.md)\
+[`_set_fmode`](set-fmode.md)\
+[`_setmode`](setmode.md)\
 [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md)

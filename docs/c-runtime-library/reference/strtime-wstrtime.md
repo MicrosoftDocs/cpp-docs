@@ -12,7 +12,7 @@ ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
 ---
 # _strtime, _wstrtime
 
-Copy the time to a buffer. More secure versions of these functions are available; see [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md).
+Copy the time to a buffer. More secure versions of these functions are available; see [`_strtime_s`, `_wstrtime_s`](strtime-s-wstrtime-s.md).
 
 ## Syntax
 
@@ -92,10 +92,10 @@ The current time is 14:21:44
 ## See also
 
 [Time management](../time-management.md)\
-[asctime, _wasctime](asctime-wasctime.md)\
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)\
-[time, _time32, _time64](time-time32-time64.md)\
-[_tzset](tzset.md)
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`mktime`, `_mktime32`, `_mktime64`](mktime-mktime32-mktime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_tzset`](tzset.md)

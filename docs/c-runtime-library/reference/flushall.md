@@ -30,9 +30,9 @@ By default, the **_flushall** function writes to appropriate files the contents 
 
 If a read follows a call to **_flushall**, new data is read from the input files into the buffers. All streams remain open after the call to **_flushall**.
 
-The commit-to-disk feature of the run-time library lets you ensure that critical data is written directly to disk rather than to the operating system buffers. Without rewriting an existing program, you can enable this feature by linking the program's object files with Commode.obj. In the resulting executable file, calls to **_flushall** write the contents of all buffers to disk. Only **_flushall** and [fflush](fflush.md) are affected by Commode.obj.
+The commit-to-disk feature of the run-time library lets you ensure that critical data is written directly to disk rather than to the operating system buffers. Without rewriting an existing program, you can enable this feature by linking the program's object files with Commode.obj. In the resulting executable file, calls to **_flushall** write the contents of all buffers to disk. Only **_flushall** and [`fflush`](fflush.md) are affected by Commode.obj.
 
-For information about controlling the commit-to-disk feature, see [Stream I/O](../stream-i-o.md), [fopen](fopen-wfopen.md), and [_fdopen](fdopen-wfdopen.md).
+For information about controlling the commit-to-disk feature, see [Stream I/O](../stream-i-o.md), [`fopen`](fopen-wfopen.md), and [`_fdopen`](fdopen-wfdopen.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -69,7 +69,7 @@ There were 3 streams flushed
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[_commit](commit.md)\
-[fclose, _fcloseall](fclose-fcloseall.md)\
-[fflush](fflush.md)\
-[setvbuf](setvbuf.md)
+[`_commit`](commit.md)\
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`fflush`](fflush.md)\
+[`setvbuf`](setvbuf.md)

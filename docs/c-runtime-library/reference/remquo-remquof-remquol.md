@@ -39,7 +39,7 @@ A pointer to an integer to store a value that has the sign and approximate magni
 
 ## Return value
 
-**remquo** returns the floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remquo** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+**remquo** returns the floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remquo** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
 
@@ -88,7 +88,7 @@ Approximate signed quotient is -3
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[ldiv, lldiv](./div.md)\
-[imaxdiv](imaxdiv.md)\
-[fmod, fmodf](fmod-fmodf.md)\
-[remainder, remainderf, remainderl](remainder-remainderf-remainderl.md)
+[`ldiv`, `lldiv`](./div.md)\
+[`imaxdiv`](imaxdiv.md)\
+[`fmod`, `fmodf`](fmod-fmodf.md)\
+[`remainder`, `remainderf`, `remainderl`](remainder-remainderf-remainderl.md)

@@ -12,7 +12,7 @@ ms.assetid: 55c3c27e-561c-4d6b-9bf9-1e34cc556e4b
 ---
 # _aligned_recalloc_dbg
 
-Changes the size of a memory block that was allocated with [_aligned_malloc](aligned-malloc.md) or [_aligned_offset_malloc](aligned-offset-malloc.md) and initializes the memory to 0 (debug version only).
+Changes the size of a memory block that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md) and initializes the memory to 0 (debug version only).
 
 ## Syntax
 
@@ -55,11 +55,11 @@ It's an error to reallocate memory and change the alignment of a block.
 
 ## Remarks
 
-**_aligned_recalloc_dbg** is a debug version of the [_aligned_recalloc](aligned-recalloc.md) function. When [_DEBUG](../debug.md) isn't defined, each call to **_aligned_recalloc_dbg** is reduced to a call to **_aligned_recalloc**. Both **_aligned_recalloc** and **_aligned_recalloc_dbg** reallocate a memory block in the base heap, but **_aligned_recalloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, and *`filename`*/*`linenumber`* information to determine the origin of allocation requests. Tracking specific allocation types with a block type parameter isn't a supported debug feature for aligned allocations. Aligned allocations will appear as a _NORMAL_BLOCK block type.
+**_aligned_recalloc_dbg** is a debug version of the [`_aligned_recalloc`](aligned-recalloc.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **_aligned_recalloc_dbg** is reduced to a call to **_aligned_recalloc**. Both **_aligned_recalloc** and **_aligned_recalloc_dbg** reallocate a memory block in the base heap, but **_aligned_recalloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, and *`filename`*/*`linenumber`* information to determine the origin of allocation requests. Tracking specific allocation types with a block type parameter isn't a supported debug feature for aligned allocations. Aligned allocations will appear as a _NORMAL_BLOCK block type.
 
 **_aligned_recalloc_dbg** reallocates the specified memory block with slightly more space than the requested size (*`number`* * *`size`*) which might be greater or less than the size of the originally allocated memory block. The extra space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might both move the original memory block to a different location in the heap, and change the size of the memory block. The user portion of the block is filled with the value 0xCD, and the overwrite buffers are filled with 0xFD.
 
-**_aligned_recalloc_dbg** sets **errno** to **ENOMEM** if a memory allocation fails; **EINVAL** is returned if the amount of memory needed (including the overhead mentioned previously) exceeds **_HEAP_MAXREQ**. For information about this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+**_aligned_recalloc_dbg** sets **errno** to **ENOMEM** if a memory allocation fails; **EINVAL** is returned if the amount of memory needed (including the overhead mentioned previously) exceeds **_HEAP_MAXREQ**. For information about this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 Also, **_aligned_recalloc_dbg** validates its parameters. If *alignment* isn't a power of 2, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
 

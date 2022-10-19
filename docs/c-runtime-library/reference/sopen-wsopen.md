@@ -59,7 +59,7 @@ If *`filename`* or *`oflag`* is a **`NULL`** pointer, or if *`oflag`* or *`shfla
 | **`EMFILE`** | No more file descriptors are available. |
 | **`ENOENT`** | File or path isn't found. |
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

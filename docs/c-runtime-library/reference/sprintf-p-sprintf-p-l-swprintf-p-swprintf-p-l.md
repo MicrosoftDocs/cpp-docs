@@ -180,5 +180,5 @@ Wrote -1 characters
 [`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
 [`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
 [`sscanf_s`, `_sscanf_s_l`, `swscanf_s`, `_swscanf_s_l`](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)\
-[`vprintf` Functions](../vprintf-functions.md)\
+[`vprintf` functions](../vprintf-functions.md)\
 [`printf_p` Positional Parameters](../printf-p-positional-parameters.md)

@@ -66,12 +66,12 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Time management](../time-management.md)\
-[asctime, _wasctime](asctime-wasctime.md)\
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)\
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
-[time, _time32, _time64](time-time32-time64.md)\
-[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](utime-utime32-utime64-wutime-wutime32-wutime64.md)
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`](utime-utime32-utime64-wutime-wutime32-wutime64.md)

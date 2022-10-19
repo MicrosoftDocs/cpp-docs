@@ -12,7 +12,7 @@ ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
 ---
 # _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
-Find the next name, if any, that matches the *`filespec`* argument in a previous call to [_findfirst](findfirst-functions.md), and then alter the *`fileinfo`* structure contents accordingly.
+Find the next name, if any, that matches the *`filespec`* argument in a previous call to [`_findfirst`](findfirst-functions.md), and then alter the *`fileinfo`* structure contents accordingly.
 
 ## Syntax
 
@@ -89,7 +89,7 @@ If an invalid parameter is passed in, these functions invoke the invalid paramet
 
 ## Remarks
 
-You must call [_findclose](findclose.md) after you're finished using either the **_findfirst** or **_findnext** function (or any variants). `_findclose` frees up resources used by these functions in your application.
+You must call [`_findclose`](findclose.md) after you're finished using either the **_findfirst** or **_findnext** function (or any variants). `_findclose` frees up resources used by these functions in your application.
 
 The variations of these functions with the **w** prefix are wide-character versions; otherwise, they're identical to the corresponding single-byte functions.
 

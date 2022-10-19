@@ -83,6 +83,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 [String manipulation](../string-manipulation-crt.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[_strdec, _wcsdec, _mbsdec, _mbsdec_l](strdec-wcsdec-mbsdec-mbsdec-l.md)\
-[_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)\
-[_strninc, _wcsninc, _mbsninc, _mbsninc_l](strninc-wcsninc-mbsninc-mbsninc-l.md)
+[`_strdec`, `_wcsdec`, `_mbsdec`, `_mbsdec_l`](strdec-wcsdec-mbsdec-mbsdec-l.md)\
+[`_strinc`, `_wcsinc`, `_mbsinc`, `_mbsinc_l`](strinc-wcsinc-mbsinc-mbsinc-l.md)\
+[`_strninc`, `_wcsninc`, `_mbsninc`, `_mbsninc_l`](strninc-wcsninc-mbsninc-mbsninc-l.md)

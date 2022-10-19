@@ -12,7 +12,7 @@ ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
 ---
 # clearerr_s
 
-Resets the error indicator for a stream. This function is a version of [clearerr](clearerr.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Resets the error indicator for a stream. This function is a version of [`clearerr`](clearerr.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -33,7 +33,7 @@ Zero if successful; **EINVAL** if *stream* is **NULL**.
 
 ## Remarks
 
-The **clearerr_s** function resets the error indicator and end-of-file indicator for *stream*. Error indicators aren't automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until **clearerr_s**, **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, or [rewind](rewind.md) is called.
+The **clearerr_s** function resets the error indicator and end-of-file indicator for *stream*. Error indicators aren't automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until **clearerr_s**, **clearerr**, [`fseek`](fseek-fseeki64.md), **fsetpos**, or [`rewind`](rewind.md) is called.
 
 If *stream* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
@@ -106,8 +106,8 @@ Will input cause an error? n
 
 [Error handling](../error-handling-crt.md)\
 [Stream I/O](../stream-i-o.md)\
-[clearerr](clearerr.md)\
-[_eof](eof.md)\
-[feof](feof.md)\
-[ferror](ferror.md)\
-[perror, _wperror](perror-wperror.md)
+[`clearerr`](clearerr.md)\
+[`_eof`](eof.md)\
+[`feof`](feof.md)\
+[`ferror`](ferror.md)\
+[`perror`, `_wperror`](perror-wperror.md)

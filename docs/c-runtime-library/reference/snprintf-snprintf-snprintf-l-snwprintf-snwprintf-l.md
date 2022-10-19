@@ -269,4 +269,4 @@ character count = 69
 [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
 [`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
 [`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
-[`vprintf` Functions](../vprintf-functions.md)
+[`vprintf` functions](../vprintf-functions.md)

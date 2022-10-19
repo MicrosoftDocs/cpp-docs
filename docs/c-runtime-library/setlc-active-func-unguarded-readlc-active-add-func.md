@@ -37,4 +37,4 @@ Although the internal CRT functions `___setlc_active_func` and `___unguarded_rea
 
 ## See also
 
-[setlocale, _wsetlocale](./reference/setlocale-wsetlocale.md)
+[`setlocale`, `_wsetlocale`](./reference/setlocale-wsetlocale.md)

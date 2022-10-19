@@ -8,7 +8,7 @@ ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
 ---
 # _pgmptr, _wpgmptr
 
-The path of the executable file. Deprecated; use [_get_pgmptr](./reference/get-pgmptr.md) and [_get_wpgmptr](./reference/get-wpgmptr.md).
+The path of the executable file. Deprecated; use [`_get_pgmptr`](./reference/get-pgmptr.md) and [`_get_wpgmptr`](./reference/get-wpgmptr.md).
 
 ## Syntax
 

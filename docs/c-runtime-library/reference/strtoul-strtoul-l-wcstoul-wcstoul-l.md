@@ -58,7 +58,7 @@ Locale to use.
 
 **`strtoul`** returns the converted value, if any, or **`ULONG_MAX`** on overflow. **`strtoul`** returns 0 if no conversion can be performed. **`wcstoul`** returns values analogously to **`strtoul`**. For both functions, **`errno`** is set to **`ERANGE`** if overflow or underflow occurs.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

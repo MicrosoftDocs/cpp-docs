@@ -12,7 +12,7 @@ ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
 ---
 # _chsize_s
 
-Changes the size of a file. This function is a version of [_chsize](chsize.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Changes the size of a file. This function is a version of [`_chsize`](chsize.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -35,7 +35,7 @@ New length of the file in bytes.
 
 **_chsize_s** returns the value 0 if the file size is successfully changed. A nonzero return value indicates an error: the return value is **EACCES** if the specified file is locked against access, **EBADF** if the specified file is read-only or the descriptor is invalid, **ENOSPC** if no space is left on the device, or **EINVAL** if size is less than zero. **errno** is set to the same value.
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -58,7 +58,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [File handling](../file-handling.md)\
-[_chsize](chsize.md)\
-[_close](close.md)\
-[_creat, _wcreat](creat-wcreat.md)\
-[_open, _wopen](open-wopen.md)
+[`_chsize`](chsize.md)\
+[`_close`](close.md)\
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`_open`, `_wopen`](open-wopen.md)

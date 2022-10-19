@@ -50,7 +50,7 @@ If *maxlen* is less than or equal to zero, the invalid-parameter handler is invo
 
 Pointer to a string that represents the full path of the current working directory on the specified drive, or **NULL**, which indicates an error.
 
-If *buffer* is specified as **NULL** and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to **ENOMEM**. If the length of the path including the terminating null character exceeds *maxlen*, an error occurs, and **errno** is set to **ERANGE**. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+If *buffer* is specified as **NULL** and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to **ENOMEM**. If the length of the path including the terminating null character exceeds *maxlen*, an error occurs, and **errno** is set to **ERANGE**. For more information about these error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -60,9 +60,9 @@ The **_getdcwd** function gets the full path of the current working directory on
 
 This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
 
-The version of this function that has the **_nolock** suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md).
+The version of this function that has the **_nolock** suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [`_getdcwd_nolock`, `_wgetdcwd_nolock`](getdcwd-nolock-wgetdcwd-nolock.md).
 
-When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getdcwd** and **_wgetdcwd** are replaced by calls to **_getdcwd_dbg** and **_wgetdcwd_dbg** so that you can debug memory allocations. For more information, see[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md).
+When **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, calls to **_getdcwd** and **_wgetdcwd** are replaced by calls to **_getdcwd_dbg** and **_wgetdcwd_dbg** so that you can debug memory allocations. For more information, see[`_getdcwd_dbg`, `_wgetdcwd_dbg`](getdcwd-dbg-wgetdcwd-dbg.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -83,13 +83,13 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [_getdrive](getdrive.md).
+See the example in [`_getdrive`](getdrive.md).
 
 ## See also
 
 [Directory control](../directory-control.md)\
-[_chdir, _wchdir](chdir-wchdir.md)\
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)\
-[_getdrive](getdrive.md)\
-[_mkdir, _wmkdir](mkdir-wmkdir.md)\
-[_rmdir, _wrmdir](rmdir-wrmdir.md)
+[`_chdir`, `_wchdir`](chdir-wchdir.md)\
+[`_getcwd`, `_wgetcwd`](getcwd-wgetcwd.md)\
+[`_getdrive`](getdrive.md)\
+[`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\
+[`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)

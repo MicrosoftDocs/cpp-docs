@@ -33,7 +33,7 @@ Returns zero if successful, an error code on failure. If *mode* is not **_O_TEXT
 
 ## Remarks
 
-The function sets the [_fmode](../fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations **_open** and **_pipe**.
+The function sets the [`_fmode`](../fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations **_open** and **_pipe**.
 
 **_O_TEXT** and **_O_BINARY** are defined in Fcntl.h. **EINVAL** is defined in Errno.h.
 
@@ -112,7 +112,7 @@ A   B   C   D   E   F   G   H   I   J   K   L
 
 ## See also
 
-[_fmode](../fmode.md)\
-[_get_fmode](get-fmode.md)\
-[_setmode](setmode.md)\
+[`_fmode`](../fmode.md)\
+[`_get_fmode`](get-fmode.md)\
+[`_setmode`](setmode.md)\
 [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md)

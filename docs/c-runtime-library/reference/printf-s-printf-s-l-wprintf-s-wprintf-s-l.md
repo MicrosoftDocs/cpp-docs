@@ -57,7 +57,7 @@ The **`printf_s`** function formats and prints a series of characters and values
 
 The main difference between **`printf_s`** and **`printf`** is that **`printf_s`** checks the format string for valid formatting characters, whereas **`printf`** only checks if the format string is a null pointer. If either check fails, an invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EINVAL`**.
 
-For information on **`errno`** and error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on **`errno`** and error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 **`printf_s`** and **`fprintf_s`** behave identically except that **`printf_s`** writes output to **`stdout`** rather than to a destination of type **`FILE`**. For more information, see [`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 
@@ -190,4 +190,4 @@ Address as:   0012FF78
 [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
 [`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
 [`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
-[`vprintf` Functions](../vprintf-functions.md)
+[`vprintf` functions](../vprintf-functions.md)

@@ -30,5 +30,5 @@ The *mode* argument must be one of the following manifest constants.
 
 ## See also
 
-[_locking](./reference/locking.md)\
+[`_locking`](./reference/locking.md)\
 [Global constants](./global-constants.md)

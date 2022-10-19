@@ -164,5 +164,5 @@ See the example for [`time`](time-time32-time64.md).
 [String manipulation](../string-manipulation-crt.md)\
 [`localeconv`](localeconv.md)\
 [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
-[`strcoll` Functions](../strcoll-functions.md)\
+[`strcoll` functions](../strcoll-functions.md)\
 [`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

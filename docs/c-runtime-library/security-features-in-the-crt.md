@@ -19,7 +19,7 @@ For example, the `strcpy` function can't tell if the string it copies is too lar
 
 ## Eliminating deprecation warnings
 
-There are several ways to eliminate deprecation warnings for the older, less secure functions. The simplest is simply to define `_CRT_SECURE_NO_WARNINGS` or use the [warning](../preprocessor/warning.md) pragma. Either will disable deprecation warnings, but the security issues that caused the warnings still exist. It's better to leave deprecation warnings enabled and take advantage of the new CRT security features.
+There are several ways to eliminate deprecation warnings for the older, less secure functions. The simplest is simply to define `_CRT_SECURE_NO_WARNINGS` or use the [`warning`](../preprocessor/warning.md) pragma. Either will disable deprecation warnings, but the security issues that caused the warnings still exist. It's better to leave deprecation warnings enabled and take advantage of the new CRT security features.
 
 In C++, the easiest way to eliminate the deprecation warnings is to use [Secure template overloads](./secure-template-overloads.md). The overloads eliminate deprecation warnings in many cases. They replace calls to deprecated functions with calls to secure versions of the functions. For example, consider this deprecated call to `strcpy`:
 
@@ -32,7 +32,7 @@ Defining `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` as 1 eliminates the warning b
 
 For those deprecated functions without secure template overloads, you should definitely consider manually updating your code to use the secure versions.
 
-Another source of deprecation warnings, unrelated to security, is the POSIX functions. Replace POSIX function names with their standard equivalents (for example, change [access](./reference/access-crt.md) to [_access](./reference/access-waccess.md)), or disable POSIX-related deprecation warnings by defining `_CRT_NONSTDC_NO_WARNINGS`. For more information, see [Compatibility](compatibility.md).
+Another source of deprecation warnings, unrelated to security, is the POSIX functions. Replace POSIX function names with their standard equivalents (for example, change [`access`](./reference/access-crt.md) to [`_access`](./reference/access-waccess.md)), or disable POSIX-related deprecation warnings by defining `_CRT_NONSTDC_NO_WARNINGS`. For more information, see [Compatibility](compatibility.md).
 
 ## More security features
 

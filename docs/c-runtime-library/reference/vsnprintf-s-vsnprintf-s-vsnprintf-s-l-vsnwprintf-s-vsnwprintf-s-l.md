@@ -192,7 +192,7 @@ nSize: -1, buff: Hi there!
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[`vprintf` Functions](../vprintf-functions.md)\
+[`vprintf` functions](../vprintf-functions.md)\
 [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
 [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
 [`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\

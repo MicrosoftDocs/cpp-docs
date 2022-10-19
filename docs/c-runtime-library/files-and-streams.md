@@ -20,7 +20,7 @@ The last two items are interactive files. Files are typically the principal mean
 
 Before you can perform many of the operations on a file, the file must be opened. Opening a file associates it with a stream, a data structure within the Standard C Library that glosses over many differences among files of various kinds. The library maintains the state of each stream in an object of type FILE.
 
-The target environment opens three files before program startup. You can open a file by calling the library function [fopen, _wfopen](./reference/fopen-wfopen.md) with two arguments. (The `fopen` function has been deprecated, use [fopen_s, _wfopen_s](./reference/fopen-s-wfopen-s.md) instead.) The first argument is a filename. The second argument is a C string that specifies:
+The target environment opens three files before program startup. You can open a file by calling the library function [`fopen`, `_wfopen`](./reference/fopen-wfopen.md) with two arguments. (The `fopen` function has been deprecated, use [`fopen_s`, `_wfopen_s`](./reference/fopen-s-wfopen-s.md) instead.) The first argument is a filename. The second argument is a C string that specifies:
 
 - Whether you intend to read data from the file or write data to it or both.
 
@@ -30,7 +30,7 @@ The target environment opens three files before program startup. You can open a 
 
 - Whether you want to manipulate a text stream or a binary stream.
 
-Once the file is successfully opened, you can then determine whether the stream is byte oriented (a byte stream) or wide oriented (a wide stream). A stream is initially unbound. Calling certain functions to operate on the stream makes it byte oriented, while certain other functions make it wide oriented. Once established, a stream maintains its orientation until it's closed by a call to [fclose](./reference/fclose-fcloseall.md) or [freopen](./reference/freopen-wfreopen.md).
+Once the file is successfully opened, you can then determine whether the stream is byte oriented (a byte stream) or wide oriented (a wide stream). A stream is initially unbound. Calling certain functions to operate on the stream makes it byte oriented, while certain other functions make it wide oriented. Once established, a stream maintains its orientation until it's closed by a call to [`fclose`](./reference/fclose-fcloseall.md) or [`freopen`](./reference/freopen-wfreopen.md).
 
 © 1989-2001 by P.J. Plauger and Jim Brodie. All rights reserved.
 

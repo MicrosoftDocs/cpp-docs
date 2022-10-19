@@ -32,7 +32,7 @@ Floating-point function argument.
 
 ### Remarks
 
-These floating-point primitives implement the C versions of the CRT macro [fpclassify](fpclassify.md) for floating-point types. The classification of the argument *x* is returned as one of these constants, defined in math.h:
+These floating-point primitives implement the C versions of the CRT macro [`fpclassify`](fpclassify.md) for floating-point types. The classification of the argument *x* is returned as one of these constants, defined in math.h:
 
 |Value|Description|
 |-----------|-----------------|
@@ -42,7 +42,7 @@ These floating-point primitives implement the C versions of the CRT macro [fpcla
 | **FP_SUBNORMAL** | A positive or negative subnormal (denormalized) value |
 | **FP_ZERO** | A positive or negative zero value |
 
-For additional detail, you can use the Microsoft-specific [_fpclass, _fpclassf](fpclass-fpclassf.md) functions. Use the [fpclassify](fpclassify.md) macro or function for portability.
+For additional detail, you can use the Microsoft-specific [`_fpclass`, `_fpclassf`](fpclass-fpclassf.md) functions. Use the [`fpclassify`](fpclassify.md) macro or function for portability.
 
 ## _dsign, _ldsign, _fdsign
 
@@ -61,7 +61,7 @@ Floating-point function argument.
 
 ### Remarks
 
-These floating-point primitives implement the [signbit](signbit.md) macro or function in the CRT. They return a non-zero value if the sign bit is set in the significand (mantissa) of the argument *x*, and 0 if the sign bit is not set.
+These floating-point primitives implement the [`signbit`](signbit.md) macro or function in the CRT. They return a non-zero value if the sign bit is set in the significand (mantissa) of the argument *x*, and 0 if the sign bit is not set.
 
 ## _dpcomp, _ldpcomp, _fdpcomp
 
@@ -88,7 +88,7 @@ These floating-point primitives take two arguments, *x* and *y*, and return a va
 | **_FP_EQ** | *x* can be considered equal to *y* |
 | **_FP_GT** | *x* can be considered greater than *y* |
 
-These primitives implement the [isgreater, isgreaterequal, isless, islessequal, islessgreater, and isunordered](floating-point-ordering.md) macros and functions in the CRT.
+These primitives implement the [`isgreater`, `isgreaterequal`, `isless`, `islessequal`, `islessgreater`, and `isunordered`](floating-point-ordering.md) macros and functions in the CRT.
 
 ## _dtest, _ldtest, _fdtest
 
@@ -107,7 +107,7 @@ Pointer to a floating-point argument.
 
 ### Remarks
 
-These floating-point primitives implement the C++ versions of the CRT function [fpclassify](fpclassify.md) for floating-point types. The argument *x* is evaluated and the classification is returned as one of these constants, defined in math.h:
+These floating-point primitives implement the C++ versions of the CRT function [`fpclassify`](fpclassify.md) for floating-point types. The argument *x* is evaluated and the classification is returned as one of these constants, defined in math.h:
 
 |Value|Description|
 |-----------|-----------------|
@@ -117,7 +117,7 @@ These floating-point primitives implement the C++ versions of the CRT function [
 | **FP_SUBNORMAL** | A positive or negative subnormal (denormalized) value |
 | **FP_ZERO** | A positive or negative zero value |
 
-For additional detail, you can use the Microsoft-specific [_fpclass, _fpclassf](fpclass-fpclassf.md) functions. Use the [fpclassify](fpclassify.md) function for portability.
+For additional detail, you can use the Microsoft-specific [`_fpclass`, `_fpclassf`](fpclass-fpclassf.md) functions. Use the [`fpclassify`](fpclassify.md) function for portability.
 
 ## _d_int, _ld_int, _fd_int
 
@@ -161,7 +161,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives take a pointer to a floating-point value *px* and an exponent value *exp*, and scale the value in *px* by 2<sup>*exp*</sup>, if possible. The value returned is the result of **fpclassify** on the input value in *px* if it's a NaN or infinity, and on the output value in *px* otherwise. For portability, prefer the [ldexp, ldexpf, and ldexpl](ldexp.md) functions.
+These floating-point primitives take a pointer to a floating-point value *px* and an exponent value *exp*, and scale the value in *px* by 2<sup>*exp*</sup>, if possible. The value returned is the result of **fpclassify** on the input value in *px* if it's a NaN or infinity, and on the output value in *px* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
 
 ## _dunscale, _ldunscale, _fdunscale
 
@@ -183,7 +183,7 @@ Pointer to a floating-point argument.
 
 ### Remarks
 
-These floating-point primitives break down the floating-point value pointed at by *px* into a significand (mantissa) and an exponent, if possible. The significand is scaled such that the absolute value is greater than or equal to 0.5 and less than 1.0. The exponent is the value *n*, where the original floating-point value is equal to the scaled significand times 2<sup>*n*</sup>. This integer exponent *n* is stored at the location pointed to by *pexp*. The value returned is the result of **fpclassify** on the input value in *px* if it's a NaN or infinity, and on the output value otherwise. For portability, prefer the [frexp, frexpf, frexpl](frexp.md) functions.
+These floating-point primitives break down the floating-point value pointed at by *px* into a significand (mantissa) and an exponent, if possible. The significand is scaled such that the absolute value is greater than or equal to 0.5 and less than 1.0. The exponent is the value *n*, where the original floating-point value is equal to the scaled significand times 2<sup>*n*</sup>. This integer exponent *n* is stored at the location pointed to by *pexp*. The value returned is the result of **fpclassify** on the input value in *px* if it's a NaN or infinity, and on the output value otherwise. For portability, prefer the [`frexp`, `frexpf`, `frexpl`](frexp.md) functions.
 
 ## _dexp, _ldexp, _fdexp
 
@@ -208,7 +208,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives construct a floating-point value in the location pointed at by *px* equal to *y* * 2<sup>*exp*</sup>. The value returned is the result of **fpclassify** on the input value in *y* if it's a NaN or infinity, and on the output value in *px* otherwise. For portability, prefer the [ldexp, ldexpf, and ldexpl](ldexp.md) functions.
+These floating-point primitives construct a floating-point value in the location pointed at by *px* equal to *y* * 2<sup>*exp*</sup>. The value returned is the result of **fpclassify** on the input value in *y* if it's a NaN or infinity, and on the output value in *px* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
 
 ## _dnorm, _fdnorm
 
@@ -273,7 +273,7 @@ Flag that controls the base to use, 0 for base *e* and non-zero for base 10.
 
 ### Remarks
 
-These floating-point primitives return the natural log of *x*, ln(*x*) or log<sub>*e*</sub>(*x*), when *base_flag* is 0. They return the log base 10 of *x*, or log<sub>10</sub>(*x*), when *base_flag* is non-zero. These functions aren't used internally. For portability, prefer the functions [log, logf, logl, log10, log10f, and log10l](log-logf-log10-log10f.md).
+These floating-point primitives return the natural log of *x*, ln(*x*) or log<sub>*e*</sub>(*x*), when *base_flag* is 0. They return the log base 10 of *x*, or log<sub>10</sub>(*x*), when *base_flag* is non-zero. These functions aren't used internally. For portability, prefer the functions [`log`, `logf`, `logl`, `log10`, `log10f`, and `log10l`](log-logf-log10-log10f.md).
 
 ## _dsin, _ldsin, _fdsin
 
@@ -295,7 +295,7 @@ Quadrant offset of 0, 1, 2, or 3 to use to produce `sin`, `cos`, `-sin`, and `-c
 
 ### Remarks
 
-These floating-point primitives return the sine of *x* offset by the *quadrant* modulo 4. Effectively, they return the sine, cosine, -sine, and -cosine of *x* when *quadrant* modulo 4 is 0, 1, 2, or 3, respectively. These functions aren't used internally. For portability, prefer the [sin, sinf, sinl](sin-sinf-sinl.md), [cos, cosf, and cosl](cos-cosf-cosl.md) functions.
+These floating-point primitives return the sine of *x* offset by the *quadrant* modulo 4. Effectively, they return the sine, cosine, -sine, and -cosine of *x* when *quadrant* modulo 4 is 0, 1, 2, or 3, respectively. These functions aren't used internally. For portability, prefer the [`sin`, `sinf`, `sinl`](sin-sinf-sinl.md), [`cos`, `cosf`, `cosl`](cos-cosf-cosl.md) functions.
 
 ## Requirements
 
@@ -306,14 +306,14 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[fpclassify](fpclassify.md)\
-[_fpclass, _fpclassf](fpclass-fpclassf.md)\
-[isfinite, _finite, _finitef](finite-finitef.md)\
-[isinf](isinf.md)\
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)\
-[isnormal](isnormal.md)\
-[cos, cosf, cosl](cos-cosf-cosl.md)\
-[frexp, frexpf, frexpl](frexp.md)\
-[ldexp, ldexpf, and ldexpl](ldexp.md)\
-[log, logf, logl, log10, log10f, log10l](log-logf-log10-log10f.md)\
-[sin, sinf, sinl](sin-sinf-sinl.md)
+[`fpclassify`](fpclassify.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)\
+[`isfinite`, `_finite`, `_finitef`](finite-finitef.md)\
+[`isinf`](isinf.md)\
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)\
+[`isnormal`](isnormal.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`frexp`, `frexpf`, `frexpl`](frexp.md)\
+[`ldexp`, `ldexpf`, `ldexpl`](ldexp.md)\
+[`log`, `logf`, `logl`, `log10`, `log10f`, `log10l`](log-logf-log10-log10f.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)

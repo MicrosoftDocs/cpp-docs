@@ -16,7 +16,7 @@ ms.assetid: 94ac04a3-d154-476b-bd89-eefbc7b949ae
 
 ## Remarks
 
-`BUFSIZ` is the required user-allocated buffer for the [setvbuf](./reference/setvbuf.md) routine.
+`BUFSIZ` is the required user-allocated buffer for the [`setvbuf`](./reference/setvbuf.md) routine.
 
 ## See also
 

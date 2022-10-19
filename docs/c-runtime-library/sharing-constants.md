@@ -32,6 +32,6 @@ The following table lists the constants and their meanings:
 
 ## See also
 
-[_sopen, _wsopen](./reference/sopen-wsopen.md)\
-[_fsopen, _wfsopen](./reference/fsopen-wfsopen.md)\
+[`_sopen`, `_wsopen`](./reference/sopen-wsopen.md)\
+[`_fsopen`, `_wfsopen`](./reference/fsopen-wfsopen.md)\
 [Global constants](./global-constants.md)

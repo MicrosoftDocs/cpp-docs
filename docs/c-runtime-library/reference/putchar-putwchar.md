@@ -32,9 +32,9 @@ Character to be written.
 
 ## Return value
 
-Returns the character written. To indicate an error or end-of-file condition, **putc** and **putchar** return **EOF**; **putwc** and **putwchar** return **WEOF**. For all four routines, use [ferror](ferror.md) or [feof](feof.md) to check for an error or end of file. If passed a null pointer for *stream*, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return **EOF** or **WEOF** and set **errno** to **EINVAL**.
+Returns the character written. To indicate an error or end-of-file condition, **putc** and **putchar** return **EOF**; **putwc** and **putwchar** return **WEOF**. For all four routines, use [`ferror`](ferror.md) or [`feof`](feof.md) to check for an error or end of file. If passed a null pointer for *stream*, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return **EOF** or **WEOF** and set **errno** to **EINVAL**.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -96,5 +96,5 @@ This is the line of output
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fputc, fputwc](fputc-fputwc.md)\
-[getc, getwc](getc-getwc.md)
+[`fputc`, `fputwc`](fputc-fputwc.md)\
+[`getc`, `getwc`](getc-getwc.md)

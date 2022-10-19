@@ -45,7 +45,7 @@ Returns 0 if successful.
 
 If *stream* is **NULL**, or if *mode* or *size* is not within a valid change, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **errno** to **EINVAL**.
 
-For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -113,7 +113,7 @@ int main( void )
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fclose, _fcloseall](fclose-fcloseall.md)\
-[fflush](fflush.md)\
-[fopen, _wfopen](fopen-wfopen.md)\
-[setbuf](setbuf.md)
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`fflush`](fflush.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`setbuf`](setbuf.md)

@@ -30,5 +30,5 @@ The `func` argument must be either a function address or one of the manifest con
 
 ## See also
 
-[signal](./reference/signal.md)\
+[`signal`](./reference/signal.md)\
 [Global constants](./global-constants.md)

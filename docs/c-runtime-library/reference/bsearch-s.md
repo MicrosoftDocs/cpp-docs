@@ -12,7 +12,7 @@ ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
 ---
 # bsearch_s
 
-Performs a binary search of a sorted array. This function is a version of [bsearch](bsearch.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Performs a binary search of a sorted array. This function is a version of [`bsearch`](bsearch.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -51,7 +51,7 @@ A pointer to an object that can be accessed in the comparison function.
 
 **bsearch_s** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* isn't found, the function returns **NULL**. If the array isn't in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
-If invalid parameters are passed to the function, it invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+If invalid parameters are passed to the function, it invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Error conditions
 
@@ -86,7 +86,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-This program sorts a string array with [qsort_s](qsort-s.md), and then uses bsearch_s to find the word "cat".
+This program sorts a string array with [`qsort_s`](qsort-s.md), and then uses bsearch_s to find the word "cat".
 
 ```cpp
 // crt_bsearch_s.cpp
@@ -173,6 +173,6 @@ cat found at 002F0F04
 ## See also
 
 [Searching and sorting](../searching-and-sorting.md)\
-[_lfind](lfind.md)\
-[_lsearch](lsearch.md)\
-[qsort](qsort.md)
+[`_lfind`](lfind.md)\
+[`_lsearch`](lsearch.md)\
+[`qsort`](qsort.md)

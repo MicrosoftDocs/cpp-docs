@@ -95,7 +95,7 @@ The locale to use.
 
 **`vsprintf`** and **`vswprintf`** return the number of characters written, not including the terminating `NULL` character, or a negative value if an output error occurs. If *`buffer`* or *`format`* is a `NULL` pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
 
-For information on these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -181,9 +181,9 @@ This is a string
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[`vprintf` Functions](../vprintf-functions.md)\
+[`vprintf` functions](../vprintf-functions.md)\
 [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md)\
 [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
 [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
-[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `\__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
 [`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)

@@ -13,7 +13,7 @@ no-loc: [getenv, _wgetenv, getenv_s, _wgetenv_s, _putenv_s, main, wmain, errno, 
 ---
 # `getenv`, `_wgetenv`
 
-Gets a value from the current environment. More secure versions of these functions are available; see [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
+Gets a value from the current environment. More secure versions of these functions are available; see [`getenv_s`, `_wgetenv_s`](getenv-s-wgetenv-s.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

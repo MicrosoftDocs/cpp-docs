@@ -98,7 +98,7 @@ Length: 25 characters
 ## See also
 
 [Buffer manipulation](../buffer-manipulation.md)\
-[memchr, wmemchr](memchr-wmemchr.md)\
-[memcmp, wmemcmp](memcmp-wmemcmp.md)\
-[memcpy, wmemcpy](memcpy-wmemcpy.md)\
-[memset, wmemset](memset-wmemset.md)
+[`memchr`, `wmemchr`](memchr-wmemchr.md)\
+[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`memset`, `wmemset`](memset-wmemset.md)

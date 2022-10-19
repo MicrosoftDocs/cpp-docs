@@ -86,7 +86,7 @@ If successful, **`_findfirst`** returns a unique search handle identifying the f
 | **`ENOMEM`** | Insufficient memory. |
 | **`EINVAL`** | Invalid file name specification or the file name given was larger than **`MAX_PATH`**. |
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 

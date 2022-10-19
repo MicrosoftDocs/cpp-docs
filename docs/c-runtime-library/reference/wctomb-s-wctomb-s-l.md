@@ -12,7 +12,7 @@ ms.assetid: 7e94a888-deed-4dbd-b5e9-d4a0455538b8
 ---
 # wctomb_s, _wctomb_s_l
 
-Converts a wide character to the corresponding multibyte character. A version of [wctomb, _wctomb_l](wctomb-wctomb-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Converts a wide character to the corresponding multibyte character. A version of [`wctomb`, `_wctomb_l`](wctomb-wctomb-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -114,8 +114,8 @@ Convert a wide character:
 
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)\
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)\
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\
 [WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)

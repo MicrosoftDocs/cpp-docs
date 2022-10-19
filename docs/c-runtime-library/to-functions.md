@@ -13,9 +13,9 @@ ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
 
 Each of the **`to`** functions and its associated macro, if any, converts a single character to another character.
 
-[__toascii](./reference/toascii-toascii.md)\
-[tolower, _tolower, towlower](./reference/tolower-tolower-towlower-tolower-l-towlower-l.md)\
-[toupper, _toupper, towupper](./reference/toupper-toupper-towupper-toupper-l-towupper-l.md)
+[`__toascii`](./reference/toascii-toascii.md)\
+[`tolower`, `_tolower`, `towlower`](./reference/tolower-tolower-towlower-tolower-l-towlower-l.md)\
+[`toupper`, `_toupper`, `towupper`](./reference/toupper-toupper-towupper-toupper-l-towupper-l.md)
 
 ## Remarks
 
@@ -97,4 +97,4 @@ sOME OF these LETTERS ARE cAPITALS.
 
 [Data conversion](./data-conversion.md)\
 [Locale](./locale.md)\
-[is, isw Routines](./is-isw-routines.md)
+[`is`, `isw` routines](./is-isw-routines.md)

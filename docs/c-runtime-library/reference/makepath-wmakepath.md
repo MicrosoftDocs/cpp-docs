@@ -12,7 +12,7 @@ ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026
 ---
 # _makepath, _wmakepath
 
-Create a path name from components. More secure versions of these functions are available; see [_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md).
+Create a path name from components. More secure versions of these functions are available; see [`_makepath_s`, `_wmakepath_s`](makepath-s-wmakepath-s.md).
 
 ## Syntax
 
@@ -118,6 +118,6 @@ Path extracted with _splitpath:
 ## See also
 
 [File handling](../file-handling.md)\
-[_fullpath, _wfullpath](fullpath-wfullpath.md)\
-[_splitpath, _wsplitpath](splitpath-wsplitpath.md)\
-[_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md)
+[`_fullpath`, `_wfullpath`](fullpath-wfullpath.md)\
+[`_splitpath`, `_wsplitpath`](splitpath-wsplitpath.md)\
+[`_makepath_s`, `_wmakepath_s`](makepath-s-wmakepath-s.md)

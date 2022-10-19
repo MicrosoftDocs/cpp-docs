@@ -26,7 +26,7 @@ Returns a number that represents the number of simultaneously open files current
 
 ## Remarks
 
-Use [_setmaxstdio](setmaxstdio.md) to configure the number of simultaneously open files permitted at the **stdio** level.
+Use [`_setmaxstdio`](setmaxstdio.md) to configure the number of simultaneously open files permitted at the **stdio** level.
 
 ## Requirements
 

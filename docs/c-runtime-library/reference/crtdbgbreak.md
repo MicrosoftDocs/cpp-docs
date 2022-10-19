@@ -43,4 +43,4 @@ Debug versions of [C run-time libraries](../crt-library-features.md) only.
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[__debugbreak](../../intrinsics/debugbreak.md)
+[`__debugbreak`](../../intrinsics/debugbreak.md)

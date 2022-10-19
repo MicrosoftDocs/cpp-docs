@@ -67,4 +67,4 @@ The smaller of 10 and 21 is 10
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[__max](max.md)
+[`__max`](max.md)

@@ -76,6 +76,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [String manipulation](../string-manipulation-crt.md)\
-[_strdec, _wcsdec, _mbsdec, _mbsdec_l](strdec-wcsdec-mbsdec-mbsdec-l.md)\
-[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)\
-[_strninc, _wcsninc, _mbsninc, _mbsninc_l](strninc-wcsninc-mbsninc-mbsninc-l.md)
+[`_strdec`, `_wcsdec`, `_mbsdec`, `_mbsdec_l`](strdec-wcsdec-mbsdec-mbsdec-l.md)\
+[`_strnextc`, `_wcsnextc`, `_mbsnextc`, `_mbsnextc_l`](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)\
+[`_strninc`, `_wcsninc`, `_mbsninc`, `_mbsninc_l`](strninc-wcsninc-mbsninc-mbsninc-l.md)

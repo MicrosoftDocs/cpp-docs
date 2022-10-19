@@ -32,7 +32,7 @@ Input stream.
 
 ## Return value
 
-See [getc, getwc](getc-getwc.md).
+See [`getc`, `getwc`](getc-getwc.md).
 
 ## Remarks
 
@@ -107,7 +107,7 @@ Input was: Line the first.
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fgetc, fgetwc](fgetc-fgetwc.md)\
-[_getch, _getwch](getch-getwch.md)\
-[putc, putwc](putc-putwc.md)\
-[ungetc, ungetwc](ungetc-ungetwc.md)
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`_getch`, `_getwch`](getch-getwch.md)\
+[`putc`, `putwc`](putc-putwc.md)\
+[`ungetc`, `ungetwc`](ungetc-ungetwc.md)

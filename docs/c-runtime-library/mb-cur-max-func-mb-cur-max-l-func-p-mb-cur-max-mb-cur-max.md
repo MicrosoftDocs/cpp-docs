@@ -50,4 +50,4 @@ By default, this function's global state is scoped to the application. To change
 
 ## See also
 
-[MB_CUR_MAX](./mb-cur-max.md)
+[`MB_CUR_MAX`](./mb-cur-max.md)

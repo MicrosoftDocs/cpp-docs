@@ -32,7 +32,7 @@ Pointer to the **FILE** structure.
 
 ## Return value
 
-See[fgetc, fgetwc](fgetc-fgetwc.md).
+See[`fgetc`, `fgetwc`](fgetc-fgetwc.md).
 
 ## Remarks
 
@@ -108,5 +108,5 @@ Line two.
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fputc, fputwc](fputc-fputwc.md)\
-[getc, getwc](getc-getwc.md)
+[`fputc`, `fputwc`](fputc-fputwc.md)\
+[`getc`, `getwc`](getc-getwc.md)

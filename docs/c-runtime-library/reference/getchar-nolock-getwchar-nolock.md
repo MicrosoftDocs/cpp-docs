@@ -23,7 +23,7 @@ wint_t _getwchar_nolock( void );
 
 ## Return value
 
-See [getchar, getwchar](getchar-getwchar.md).
+See [`getchar`, `getwchar`](getchar-getwchar.md).
 
 ## Remarks
 
@@ -78,8 +78,8 @@ This textInput was: This text
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[getc, getwc](getc-getwc.md)\
-[fgetc, fgetwc](fgetc-fgetwc.md)\
-[_getch, _getwch](getch-getwch.md)\
-[putc, putwc](putc-putwc.md)\
-[ungetc, ungetwc](ungetc-ungetwc.md)
+[`getc`, `getwc`](getc-getwc.md)\
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`_getch`, `_getwch`](getch-getwch.md)\
+[`putc`, `putwc`](putc-putwc.md)\
+[`ungetc`, `ungetwc`](ungetc-ungetwc.md)

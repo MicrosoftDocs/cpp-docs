@@ -54,7 +54,7 @@ The locale to use.
 
 **wcstof** returns values analogously to **strtof**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -69,7 +69,7 @@ By default, this function's global state is scoped to the application. To change
 |**_tcstof**|**strtof**|**strtof**|**wcstof**|
 |**_tcstof_l**|**_strtof_l**|**_strtof_l**|**_wcstof_l**|
 
-The **LC_NUMERIC** category setting of the current locale determines recognition of the radix character in *strSource*; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
+The **LC_NUMERIC** category setting of the current locale determines recognition of the radix character in *strSource*; for more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location that's pointed to by *endptr*.
 
@@ -127,10 +127,10 @@ string = 3.14159This stopped it
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
 [Locale](../locale.md)\
 [String to numeric value functions](../string-to-numeric-value-functions.md)\
-[strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)\
-[strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)\
-[strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
-[localeconv](localeconv.md)\
-[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)\
-[_free_locale](free-locale.md)
+[`strtod`, `_strtod_l`, `wcstod`, `_wcstod_l`](strtod-strtod-l-wcstod-wcstod-l.md)\
+[`strtol`, `wcstol`, `_strtol_l`, `_wcstol_l`](strtol-wcstol-strtol-l-wcstol-l.md)\
+[`strtoul`, `_strtoul_l`, `wcstoul`, `_wcstoul_l`](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`localeconv`](localeconv.md)\
+[`_create_locale`, `_wcreate_locale`](create-locale-wcreate-locale.md)\
+[`_free_locale`](free-locale.md)

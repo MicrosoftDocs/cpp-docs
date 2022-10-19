@@ -35,8 +35,8 @@ When used as the `pmode` argument for `_umask`, the manifest constant sets the p
 
 ## See also
 
-[_open, _wopen](./reference/open-wopen.md)\
-[_sopen, _wsopen](./reference/sopen-wsopen.md)\
-[_umask](./reference/umask.md)\
+[`_open`, `_wopen`](./reference/open-wopen.md)\
+[`_sopen`, `_wsopen`](./reference/sopen-wsopen.md)\
+[`_umask`](./reference/umask.md)\
 [Standard types](./standard-types.md)\
 [Global constants](./global-constants.md)

@@ -121,4 +121,4 @@ Bessel functions for x = 2.387000:
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[_matherr](matherr.md)
+[`_matherr`](matherr.md)

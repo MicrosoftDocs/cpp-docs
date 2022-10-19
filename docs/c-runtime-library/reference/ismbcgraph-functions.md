@@ -111,6 +111,6 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[_ismbc Routines](../ismbc-routines.md)\
-[is, isw Routines](../is-isw-routines.md)\
-[_ismbb Routines](../ismbb-routines.md)
+[`_ismbc` routines](../ismbc-routines.md)\
+[`is`, `isw` routines](../is-isw-routines.md)\
+[`_ismbb` routines](../ismbb-routines.md)

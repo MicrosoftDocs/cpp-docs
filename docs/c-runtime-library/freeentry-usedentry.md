@@ -20,5 +20,5 @@ These constants represent values assigned by the `_heapwalk` routines to the **_
 
 ## See also
 
-[_heapwalk](./reference/heapwalk.md)\
+[`_heapwalk`](./reference/heapwalk.md)\
 [Global constants](./global-constants.md)

@@ -57,4 +57,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[fetestexcept](fetestexcept1.md)
+[`fetestexcept`](fetestexcept1.md)

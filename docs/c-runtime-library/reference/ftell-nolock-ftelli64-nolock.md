@@ -32,7 +32,7 @@ Target the **FILE** structure.
 
 ## Return value
 
-Same as **ftell** and **_ftelli64**. For more information, see [ftell, _ftelli64](ftell-ftelli64.md).
+Same as **ftell** and **_ftelli64**. For more information, see [`ftell`, `_ftelli64`](ftell-ftelli64.md).
 
 ## Remarks
 
@@ -52,7 +52,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fgetpos](fgetpos.md)\
-[fseek, _fseeki64](fseek-fseeki64.md)\
-[_lseek, _lseeki64](lseek-lseeki64.md)\
-[ftell, _ftelli64](ftell-ftelli64.md)
+[`fgetpos`](fgetpos.md)\
+[`fseek`, `_fseeki64`](fseek-fseeki64.md)\
+[`_lseek`, `_lseeki64`](lseek-lseeki64.md)\
+[`ftell`, `_ftelli64`](ftell-ftelli64.md)

@@ -30,8 +30,8 @@ For more information, see [Text and binary mode file I/O](./text-and-binary-mode
 
 ## See also
 
-[_open, _wopen](./reference/open-wopen.md)\
-[_pipe](./reference/pipe.md)\
-[_sopen, _wsopen](./reference/sopen-wsopen.md)\
-[_setmode](./reference/setmode.md)\
+[`_open`, `_wopen`](./reference/open-wopen.md)\
+[`_pipe`](./reference/pipe.md)\
+[`_sopen`, `_wsopen`](./reference/sopen-wsopen.md)\
+[`_setmode`](./reference/setmode.md)\
 [Global constants](./global-constants.md)

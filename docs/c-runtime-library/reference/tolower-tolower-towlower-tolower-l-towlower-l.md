@@ -52,7 +52,7 @@ Each of these routines converts a copy of *c* to lower case if the conversion is
 
 Each of these routines converts a given uppercase letter to a lowercase letter if it is possible and relevant. The case conversion of **towlower** is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the **_l** suffix use the currently set locale. The versions of these functions that have the **_l** suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
-In order for **_tolower** to give the expected results, [__isascii](isascii-isascii-iswascii.md) and [isupper](isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
+In order for **_tolower** to give the expected results, [`__isascii`](isascii-isascii-iswascii.md) and [`isupper`](isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -78,12 +78,12 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [to Functions](../to-functions.md).
+See the example in [`to` functions](../to-functions.md).
 
 ## See also
 
 [Data conversion](../data-conversion.md)\
-[is, isw Routines](../is-isw-routines.md)\
-[to Functions](../to-functions.md)\
+[`is`, `isw` routines](../is-isw-routines.md)\
+[`to` functions](../to-functions.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)

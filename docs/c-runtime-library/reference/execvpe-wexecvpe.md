@@ -56,7 +56,7 @@ If successful, these functions don't return to the calling process. A return val
 |**ENOEXEC**|The specified file isn't executable or has an invalid executable-file format.|
 |**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, which indicates that the calling process wasn't allocated correctly.|
 
-For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -83,15 +83,15 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [_exec, _wexec Functions](../exec-wexec-functions.md).
+See the example in [`_exec`, `_wexec` functions](../exec-wexec-functions.md).
 
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)\
-[_exec, _wexec Functions](../exec-wexec-functions.md)\
-[abort](abort.md)\
-[atexit](atexit.md)\
-[exit, _Exit, _exit](exit-exit-exit.md)\
-[_onexit, _onexit_m](onexit-onexit-m.md)\
-[_spawn, _wspawn Functions](../spawn-wspawn-functions.md)\
-[system, _wsystem](system-wsystem.md)
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

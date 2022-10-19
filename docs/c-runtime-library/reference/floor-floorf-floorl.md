@@ -48,7 +48,7 @@ The **floor** functions return a floating-point value that represents the larges
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|none|_DOMAIN|
 
-**floor** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
+**floor** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [`_set_SSE2_enable`](set-sse2-enable.md).
 
 ## Remarks
 
@@ -105,6 +105,6 @@ The ceil of -2.8 is -2.000000
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)\
-[round, roundf, roundl](round-roundf-roundl.md)\
-[fmod, fmodf](fmod-fmodf.md)
+[`ceil`, `ceilf`, `ceill`](ceil-ceilf-ceill.md)\
+[`round`, `roundf`, `roundl`](round-roundf-roundl.md)\
+[`fmod`, `fmodf`](fmod-fmodf.md)

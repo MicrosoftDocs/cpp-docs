@@ -29,13 +29,13 @@ Locale categories are manifest constants used by the localization routines to sp
 |`LC_NUMERIC`|Decimal-point character for formatted output routines (for example, `printf`), data conversion routines, and nonmonetary formatting information returned by `localeconv` function|
 |`LC_TIME`|Behavior of `strftime` function|
 
-See [setlocale, _wsetlocale](./reference/setlocale-wsetlocale.md) for an example.
+See [`setlocale`, `_wsetlocale`](./reference/setlocale-wsetlocale.md) for an example.
 
 ## See also
 
-[localeconv](./reference/localeconv.md)\
-[setlocale, _wsetlocale](./reference/setlocale-wsetlocale.md)\
-[strcoll Functions](./strcoll-functions.md)\
-[strftime, wcsftime, _strftime_l, _wcsftime_l](./reference/strftime-wcsftime-strftime-l-wcsftime-l.md)\
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](./reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)\
+[`localeconv`](./reference/localeconv.md)\
+[`setlocale`, `_wsetlocale`](./reference/setlocale-wsetlocale.md)\
+[`strcoll` functions](./strcoll-functions.md)\
+[`strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`](./reference/strftime-wcsftime-strftime-l-wcsftime-l.md)\
+[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](./reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)\
 [Global constants](./global-constants.md)

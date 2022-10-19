@@ -22,9 +22,9 @@ The Microsoft runtime library uses the following types of code pages:
 
    also sets the locale to the system-default ANSI code page.
 
-- Locale code page. The behavior of several run-time routines is dependent on the current locale setting, which includes the locale code page. (For more information, see [Locale](./locale.md).) By default, all locale-dependent routines in the Microsoft run-time library use the code page that corresponds to the "C" locale. At run time, you can change or query the locale code page in use with a call to [setlocale](./reference/setlocale-wsetlocale.md).
+- Locale code page. The behavior of several run-time routines is dependent on the current locale setting, which includes the locale code page. (For more information, see [Locale](./locale.md).) By default, all locale-dependent routines in the Microsoft run-time library use the code page that corresponds to the "C" locale. At run time, you can change or query the locale code page in use with a call to [`setlocale`](./reference/setlocale-wsetlocale.md).
 
-- Multibyte code page. The behavior of most of the multibyte-character routines in the run-time library depends on the current multibyte code page setting. By default, these routines use the system-default ANSI code page. At run-time you can query and change the multibyte code page with [_getmbcp](./reference/getmbcp.md) and [_setmbcp](./reference/setmbcp.md), respectively.
+- Multibyte code page. The behavior of most of the multibyte-character routines in the run-time library depends on the current multibyte code page setting. By default, these routines use the system-default ANSI code page. At run-time you can query and change the multibyte code page with [`_getmbcp`](./reference/getmbcp.md) and [`_setmbcp`](./reference/setmbcp.md), respectively.
 
 - The "C" locale is defined by ANSI to correspond to the locale in which C programs have traditionally executed. The code page for the "C" locale ("C" code page) corresponds to the ASCII character set. For example, in the "C" locale, **islower** returns true for the values 0x61 - 0x7A only. In another locale, **islower** may return `true` for these and other values, as defined by that locale.
 

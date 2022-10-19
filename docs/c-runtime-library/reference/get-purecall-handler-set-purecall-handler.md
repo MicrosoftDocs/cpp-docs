@@ -103,4 +103,4 @@ In _purecall_handler.
 ## See also
 
 [Error handling](../error-handling-crt.md)\
-[_purecall](purecall.md)
+[`_purecall`](purecall.md)

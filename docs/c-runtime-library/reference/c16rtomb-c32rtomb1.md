@@ -54,7 +54,7 @@ If *mbchar* is a null pointer, the behavior is equivalent to a call to the funct
 
 The *state* conversion state object allows you to make subsequent calls to this function and other restartable functions that maintain the shift state of the multibyte output characters. Results are undefined when you mix the use of restartable and non-restartable functions.
 
-To convert UTF-16 characters into non-UTF-8 multibyte characters, use the [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md), [wcstombs_s, or _wcstombs_s_l](wcstombs-s-wcstombs-s-l.md) functions.
+To convert UTF-16 characters into non-UTF-8 multibyte characters, use the [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md), [wcstombs_s, or _wcstombs_s_l](wcstombs-s-wcstombs-s-l.md) functions.
 
 ## Requirements
 
@@ -69,6 +69,6 @@ For compatibility information, see [Compatibility](../compatibility.md).
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[mbrtoc16, mbrtoc32](mbrtoc16-mbrtoc323.md)\
-[wcrtomb](wcrtomb.md)\
-[wcrtomb_s](wcrtomb-s.md)
+[`mbrtoc16`, `mbrtoc32`](mbrtoc16-mbrtoc323.md)\
+[`wcrtomb`](wcrtomb.md)\
+[`wcrtomb_s`](wcrtomb-s.md)

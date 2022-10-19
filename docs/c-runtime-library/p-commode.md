@@ -29,7 +29,7 @@ Pointer to the `_commode` global variable.
 
 The `__p__commode` function is for internal use only, and shouldn't be called from user code.
 
-File commit mode specifies when critical data is written to disk. For more information, see [fflush](./reference/fflush.md).
+File commit mode specifies when critical data is written to disk. For more information, see [`fflush`](./reference/fflush.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](global-state.md).
 

@@ -12,7 +12,7 @@ ms.assetid: d279181d-2e7d-401f-ab44-6e7c2786a046
 ---
 # _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 
-Converts a string to lowercase. More secure versions of these functions are available; see [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).
+Converts a string to lowercase. More secure versions of these functions are available; see [`_strlwr_s`, `_strlwr_s_l`, `_mbslwr_s`, `_mbslwr_s_l`, `_wcslwr_s`, `_wcslwr_s_l`](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).
 
 > [!IMPORTANT]
 > **_mbslwr** and **_mbslwr_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -84,7 +84,7 @@ Each of these functions returns a pointer to the converted string. Because the m
 
 ## Remarks
 
-The **_strlwr** function converts any uppercase letters in *str* to lowercase as determined by the **LC_CTYPE** category setting of the locale. Other characters are not affected. For more information on **LC_CTYPE**, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for their locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
+The **_strlwr** function converts any uppercase letters in *str* to lowercase as determined by the **LC_CTYPE** category setting of the locale. Other characters are not affected. For more information on **LC_CTYPE**, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for their locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
 The **_wcslwr** and **_mbslwr** functions are wide-character and multibyte-character versions of **_strlwr**. The argument and return value of **_wcslwr** are wide-character strings; those of **_mbslwr** are multibyte-character strings. These three functions behave identically otherwise.
 
@@ -151,4 +151,4 @@ Upper: THE STRING TO END ALL STRINGS!
 
 [String manipulation](../string-manipulation-crt.md)\
 [Locale](../locale.md)\
-[_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md)
+[`_strupr`, `_strupr_l`, `_mbsupr`, `_mbsupr_l`, `_wcsupr_l`, `_wcsupr`](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md)

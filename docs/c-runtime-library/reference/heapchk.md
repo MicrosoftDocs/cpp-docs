@@ -94,7 +94,7 @@ OK - heap is fine
 ## See also
 
 [Memory allocation](../memory-allocation.md)\
-[_heapadd](../heapadd.md)\
-[_heapmin](heapmin.md)\
-[_heapset](../heapset.md)\
-[_heapwalk](heapwalk.md)
+[`_heapadd`](../heapadd.md)\
+[`_heapmin`](heapmin.md)\
+[`_heapset`](../heapset.md)\
+[`_heapwalk`](heapwalk.md)

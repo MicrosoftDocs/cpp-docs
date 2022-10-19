@@ -50,8 +50,8 @@ The behavior of **isgraph** and **_isgraph_l** is undefined if *c* is not EOF or
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istgraph**|**isgraph**|[_ismbcgraph](ismbcgraph-functions.md)|**iswgraph**|
-|**_istgraph_l**|**_isgraph_l**|[_ismbcgraph_l](ismbcgraph-functions.md)|**_iswgraph_l**|
+|**_istgraph**|**isgraph**|[`_ismbcgraph`](ismbcgraph-functions.md)|**iswgraph**|
+|**_istgraph_l**|**_isgraph_l**|[`_ismbcgraph_l`](ismbcgraph-functions.md)|**_iswgraph_l**|
 
 ## Remarks
 
@@ -72,4 +72,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
-[is, isw Routines](../is-isw-routines.md)
+[`is`, `isw` routines](../is-isw-routines.md)

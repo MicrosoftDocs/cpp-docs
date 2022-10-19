@@ -12,7 +12,7 @@ ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
 ---
 # _lfind_s
 
-Performs a linear search for the specified key. A version of [_lfind](lfind.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Performs a linear search for the specified key. A version of [`_lfind`](lfind.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -161,7 +161,7 @@ weit found
 ## See also
 
 [Searching and sorting](../searching-and-sorting.md)\
-[bsearch_s](bsearch-s.md)\
-[_lsearch_s](lsearch-s.md)\
-[qsort_s](qsort-s.md)\
-[_lfind](lfind.md)
+[`bsearch_s`](bsearch-s.md)\
+[`_lsearch_s`](lsearch-s.md)\
+[`qsort_s`](qsort-s.md)\
+[`_lfind`](lfind.md)

@@ -35,8 +35,8 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Exception handling routines](../exception-handling-routines.md)\
-[abort](abort.md)\
-[_set_se_translator](set-se-translator.md)\
-[set_terminate](set-terminate-crt.md)\
-[set_unexpected](set-unexpected-crt.md)\
-[terminate](terminate-crt.md)
+[`abort`](abort.md)\
+[`_set_se_translator`](set-se-translator.md)\
+[`set_terminate`](set-terminate-crt.md)\
+[`set_unexpected`](set-unexpected-crt.md)\
+[`terminate`](terminate-crt.md)

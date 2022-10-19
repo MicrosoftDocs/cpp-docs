@@ -70,7 +70,7 @@ Otherwise, may return one of the following errors:
 |Underflow range error|correct value (after rounding)|
 |*`x`* or *`y`* is NaN|NaN|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -92,5 +92,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)\
-[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)\
+[`fmax`, `fmaxf`, `fmaxl`](fmax-fmaxf-fmaxl.md)\
+[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)\

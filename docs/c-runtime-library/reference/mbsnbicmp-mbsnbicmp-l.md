@@ -49,9 +49,9 @@ On an error, **_mbsnbicmp** returns **_NLSCMPERROR**, which is defined in String
 
 ## Remarks
 
-The **_mbsnbicmp** function performs an ordinal comparison of at most the first *count* bytes of *string1* and *string2*. The comparison is performed by converting each character to lowercase; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) is a case-sensitive version of **_mbsnbicmp**. The comparison ends if a terminating null character is reached in either string before *count* characters are compared. If the strings are equal when a terminating null character is reached in either string before *count* characters are compared, the shorter string is lesser.
+The **_mbsnbicmp** function performs an ordinal comparison of at most the first *count* bytes of *string1* and *string2*. The comparison is performed by converting each character to lowercase; [`_mbsnbcmp`](mbsnbcmp-mbsnbcmp-l.md) is a case-sensitive version of **_mbsnbicmp**. The comparison ends if a terminating null character is reached in either string before *count* characters are compared. If the strings are equal when a terminating null character is reached in either string before *count* characters are compared, the shorter string is lesser.
 
-**_mbsnbicmp**  is similar to [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md), except that it compares strings up to *count* bytes instead of by characters.
+**_mbsnbicmp**  is similar to [`_mbsnbcmp`](mbsnbcmp-mbsnbcmp-l.md), except that it compares strings up to *count* bytes instead of by characters.
 
 Two strings containing characters located between 'Z' and 'a' in the ASCII table ('[', '\\', ']', '^', '_', and '\`') compare differently, depending on their case. For example, the two strings "ABCDE" and "ABCD^" compare one way if the comparison is lowercase ("abcde" > "abcd^") and the other way ("ABCDE" < "ABCD^") if it is uppercase.
 
@@ -78,11 +78,11 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md).
+See the example for [`_mbsnbcmp`, `_mbsnbcmp_l`](mbsnbcmp-mbsnbcmp-l.md).
 
 ## See also
 
 [String manipulation](../string-manipulation-crt.md)\
-[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)\
-[_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)\
-[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)
+[`_mbsnbcat`, `_mbsnbcat_l`](mbsnbcat-mbsnbcat-l.md)\
+[`_mbsnbcmp`, `_mbsnbcmp_l`](mbsnbcmp-mbsnbcmp-l.md)\
+[`_stricmp`, `_wcsicmp`, `_mbsicmp`, `_stricmp_l`, `_wcsicmp_l`, `_mbsicmp_l`](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)

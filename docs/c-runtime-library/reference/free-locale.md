@@ -45,5 +45,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_get_current_locale](get-current-locale.md)\
-[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)
+[`_get_current_locale`](get-current-locale.md)\
+[`_create_locale`, `_wcreate_locale`](create-locale-wcreate-locale.md)

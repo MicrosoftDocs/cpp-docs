@@ -37,7 +37,7 @@ Pointer to the **FILE** structure.
 
 ## Return value
 
-Each of these functions returns the character written. For error information, see [fputc, fputwc](fputc-fputwc.md).
+Each of these functions returns the character written. For error information, see [`fputc`, `fputwc`](fputc-fputwc.md).
 
 ## Remarks
 
@@ -90,5 +90,5 @@ This is a test of _fputc_nolock!!
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fgetc, fgetwc](fgetc-fgetwc.md)\
-[putc, putwc](putc-putwc.md)
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`putc`, `putwc`](putc-putwc.md)

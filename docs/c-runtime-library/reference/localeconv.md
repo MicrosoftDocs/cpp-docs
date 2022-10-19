@@ -22,7 +22,7 @@ struct lconv *localeconv( void );
 
 ## Return value
 
-**localeconv** returns a pointer to a filled-in object of type [struct lconv](../standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **localeconv**. Changes made to the values in this object do not modify the locale settings. Calls to [setlocale](setlocale-wsetlocale.md) with *category* values of **LC_ALL**, **LC_MONETARY**, or **LC_NUMERIC** overwrite the contents of the structure.
+**localeconv** returns a pointer to a filled-in object of type [struct lconv](../standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **localeconv**. Changes made to the values in this object do not modify the locale settings. Calls to [`setlocale`](setlocale-wsetlocale.md) with *category* values of **LC_ALL**, **LC_MONETARY**, or **LC_NUMERIC** overwrite the contents of the structure.
 
 ## Remarks
 
@@ -108,7 +108,7 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 ## See also
 
 [Locale](../locale.md)\
-[setlocale](../../preprocessor/setlocale.md)\
-[strcoll Functions](../strcoll-functions.md)\
-[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)\
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)
+[`setlocale`](../../preprocessor/setlocale.md)\
+[`strcoll` functions](../strcoll-functions.md)\
+[`strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`](strftime-wcsftime-strftime-l-wcsftime-l.md)\
+[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

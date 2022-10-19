@@ -43,7 +43,7 @@ int _iswctype_l(
 Integer to test.
 
 *desc*<br/>
-Property to test for. This is normally retrieved using ctype or [wctype](wctype.md).
+Property to test for. This is normally retrieved using ctype or [`wctype`](wctype.md).
 
 *locale*<br/>
 The locale to use for any locale-dependent tests.
@@ -84,4 +84,4 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
-[is, isw Routines](../is-isw-routines.md)
+[`is`, `isw` routines](../is-isw-routines.md)

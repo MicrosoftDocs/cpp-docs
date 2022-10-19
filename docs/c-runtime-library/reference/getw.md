@@ -96,4 +96,4 @@ First data word in file: 0x656e694c
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[_putw](putw.md)
+[`_putw`](putw.md)

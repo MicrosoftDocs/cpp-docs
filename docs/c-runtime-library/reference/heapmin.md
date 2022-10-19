@@ -24,7 +24,7 @@ int _heapmin( void );
 
 If successful, **_heapmin** returns 0; otherwise, the function returns -1 and sets **errno** to **ENOSYS**.
 
-For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -43,9 +43,9 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Memory allocation](../memory-allocation.md)\
-[free](free.md)\
-[_heapadd](../heapadd.md)\
-[_heapchk](heapchk.md)\
-[_heapset](../heapset.md)\
-[_heapwalk](heapwalk.md)\
-[malloc](malloc.md)
+[`free`](free.md)\
+[`_heapadd`](../heapadd.md)\
+[`_heapchk`](heapchk.md)\
+[`_heapset`](../heapset.md)\
+[`_heapwalk`](heapwalk.md)\
+[`malloc`](malloc.md)

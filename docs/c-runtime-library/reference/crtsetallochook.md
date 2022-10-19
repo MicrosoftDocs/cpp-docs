@@ -33,7 +33,7 @@ Returns the previously defined allocation hook function, or **NULL** if *allocHo
 
 ## Remarks
 
-**_CrtSetAllocHook** allows an application to hook its own allocation function into the C run-time debug library memory allocation process. As a result, every call to a debug allocation function to allocate, reallocate, or free a memory block triggers a call to the application's hook function. **_CrtSetAllocHook** provides an application with an easy method for testing how the application handles insufficient memory situations, the ability to examine allocation patterns, and the opportunity to log allocation information for later analysis. When [_DEBUG](../debug.md) isn't defined, calls to **_CrtSetAllocHook** are removed during preprocessing.
+**_CrtSetAllocHook** allows an application to hook its own allocation function into the C run-time debug library memory allocation process. As a result, every call to a debug allocation function to allocate, reallocate, or free a memory block triggers a call to the application's hook function. **_CrtSetAllocHook** provides an application with an easy method for testing how the application handles insufficient memory situations, the ability to examine allocation patterns, and the opportunity to log allocation information for later analysis. When [`_DEBUG`](../debug.md) isn't defined, calls to **_CrtSetAllocHook** are removed during preprocessing.
 
 The **_CrtSetAllocHook** function installs the new client-defined allocation function specified in *allocHook* and returns the previously defined hook function. The following example demonstrates how a client-defined allocation hook should be prototyped:
 
@@ -72,9 +72,9 @@ Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
-For a sample of how to use **_CrtSetAllocHook**, see [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
+For a sample of how to use **_CrtSetAllocHook**, see [`crt_dbg2`](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
 
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_CrtGetAllocHook](crtgetallochook.md)
+[`_CrtGetAllocHook`](crtgetallochook.md)

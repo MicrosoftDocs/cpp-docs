@@ -12,7 +12,7 @@ ms.assetid: 9c944a27-d326-409b-aee6-410e8762d9d3
 ---
 # _searchenv, _wsearchenv
 
-Uses environment paths to search for a file. More secure versions of these functions are available; see [_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md).
+Uses environment paths to search for a file. More secure versions of these functions are available; see [`_searchenv_s`, `_wsearchenv_s`](searchenv-s-wsearchenv-s.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -125,6 +125,6 @@ C:\Program Files\Microsoft Visual Studio 8\VC\BIN\CL.EXE
 ## See also
 
 [Directory control](../directory-control.md)\
-[getenv, _wgetenv](getenv-wgetenv.md)\
-[_putenv, _wputenv](putenv-wputenv.md)\
-[_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md)
+[`getenv`, `_wgetenv`](getenv-wgetenv.md)\
+[`_putenv`, `_wputenv`](putenv-wputenv.md)\
+[`_searchenv_s`, `_wsearchenv_s`](searchenv-s-wsearchenv-s.md)

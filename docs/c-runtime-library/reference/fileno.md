@@ -30,7 +30,7 @@ Pointer to the **`FILE`** structure.
 
 **`_fileno`** returns the file descriptor. There's no error return. The result is undefined if *`stream`* doesn't specify an open file. If stream is **`NULL`**, **`_fileno`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to **`EINVAL`**.
 
-For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 > [!NOTE]
 > If **`stdout`** or **`stderr`** is not associated with an output stream (for example, in a Windows application without a console window), the file descriptor returned is -2. In previous versions, the file descriptor returned was -1. This change allows applications to distinguish this condition from an error.

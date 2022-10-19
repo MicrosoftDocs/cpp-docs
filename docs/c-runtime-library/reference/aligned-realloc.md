@@ -12,7 +12,7 @@ ms.assetid: 80ce96e8-6087-416f-88aa-4dbb8cb1d218
 ---
 # _aligned_realloc
 
-Changes the size of a memory block that was allocated with [_aligned_malloc](aligned-malloc.md) or [_aligned_offset_malloc](aligned-offset-malloc.md).
+Changes the size of a memory block that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md).
 
 ## Syntax
 
@@ -43,9 +43,9 @@ It's an error to reallocate memory and change the alignment of a block.
 
 ## Remarks
 
-**_aligned_realloc** is based on **malloc**. For more information about using **_aligned_offset_malloc**, see [malloc](malloc.md).
+**_aligned_realloc** is based on **malloc**. For more information about using **_aligned_offset_malloc**, see [`malloc`](malloc.md).
 
-This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_realloc** validates its parameters. If *`alignment`* isn't a power of 2, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
+This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_realloc** validates its parameters. If *`alignment`* isn't a power of 2, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -57,7 +57,7 @@ By default, this function's global state is scoped to the application. To change
 
 ## Example
 
-For more information, see [_aligned_malloc](aligned-malloc.md).
+For more information, see [`_aligned_malloc`](aligned-malloc.md).
 
 ## See also
 

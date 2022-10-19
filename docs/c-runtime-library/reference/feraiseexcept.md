@@ -45,7 +45,7 @@ The **feraiseexcept** function attempts to raise the floating-point exceptions s
 
 The *excepts* argument may be zero, one of the exception macro values, or the bitwise OR of two or more of the supported exception macros. If one of the specified exception macros is FE_OVERFLOW or FE_UNDERFLOW, the FE_INEXACT exception may be raised as a side-effect.
 
-To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
 
 **Microsoft-specific:** The exceptions specified in *excepts* are raised in the order FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. However, FE_INEXACT can be raised when FE_OVERFLOW or FE_UNDERFLOW is raised, even if not specified in *excepts*.
 
@@ -60,7 +60,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[fesetexceptflag](fesetexceptflag2.md)\
-[feholdexcept](feholdexcept2.md)\
-[fetestexcept](fetestexcept1.md)\
-[feupdateenv](feupdateenv.md)
+[`fesetexceptflag`](fesetexceptflag2.md)\
+[`feholdexcept`](feholdexcept2.md)\
+[`fetestexcept`](fetestexcept1.md)\
+[`feupdateenv`](feupdateenv.md)

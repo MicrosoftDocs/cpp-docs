@@ -124,4 +124,4 @@ Hello world (courtesy of _cputws)!
 ## See also
 
 [Console and port I/O](../console-and-port-i-o.md)\
-[_putch, _putwch](putch-putwch.md)
+[`_putch`, `_putwch`](putch-putwch.md)

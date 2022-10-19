@@ -42,6 +42,6 @@ For more compatibility information, see [Compatibility](./compatibility.md) in t
 ## See also
 
 [Format specification syntax: `printf` and `wprintf` functions](./format-specification-syntax-printf-and-wprintf-functions.md)\
-[printf, _printf_l, wprintf, _wprintf_l](./reference/printf-printf-l-wprintf-wprintf-l.md)\
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
-[_set_output_format](./set-output-format.md)
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](./reference/printf-printf-l-wprintf-wprintf-l.md)\
+[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
+[`_set_output_format`](./set-output-format.md)

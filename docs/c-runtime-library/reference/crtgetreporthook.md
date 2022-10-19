@@ -44,9 +44,9 @@ Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
-For a sample of how to use **_CrtSetReportHook**, see [report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
+For a sample of how to use **_CrtSetReportHook**, see [`report`](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
 
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_CrtSetReportHook](crtsetreporthook.md)
+[`_CrtSetReportHook`](crtsetreporthook.md)

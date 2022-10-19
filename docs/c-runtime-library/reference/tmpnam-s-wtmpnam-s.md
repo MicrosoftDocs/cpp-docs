@@ -12,7 +12,7 @@ ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
 ---
 # tmpnam_s, _wtmpnam_s
 
-Generate names you can use to create temporary files. These are versions of [tmpnam and _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Generate names you can use to create temporary files. These are versions of [`tmpnam` and `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -137,7 +137,7 @@ C:\Users\LocalUser\AppData\Local\Temp\u19q8.e is safe to use as a temporary file
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[_getmbcp](getmbcp.md)\
-[malloc](malloc.md)\
-[_setmbcp](setmbcp.md)\
-[tmpfile_s](tmpfile-s.md)
+[`_getmbcp`](getmbcp.md)\
+[`malloc`](malloc.md)\
+[`_setmbcp`](setmbcp.md)\
+[`tmpfile_s`](tmpfile-s.md)

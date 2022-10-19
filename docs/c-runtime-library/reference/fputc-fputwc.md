@@ -39,7 +39,7 @@ Pointer to **FILE** structure.
 
 Each of these functions returns the character written. For **fputc**, a return value of **EOF** indicates an error. For **fputwc**, a return value of **WEOF** indicates an error. If *stream* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return **EOF** and set **errno** to **EINVAL**.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -47,7 +47,7 @@ Each of these functions writes the single character *c* to a file at the positio
 
 The two functions behave identically if the stream is opened in ANSI mode. **fputc** doesn't currently support output into a UNICODE stream.
 
-The versions with the **_nolock** suffix are identical except that they aren't protected from interference by other threads. For more information, see[_fputc_nolock, _fputwc_nolock](fputc-nolock-fputwc-nolock.md).
+The versions with the **_nolock** suffix are identical except that they aren't protected from interference by other threads. For more information, see[`_fputc_nolock`, `_fputwc_nolock`](fputc-nolock-fputwc-nolock.md).
 
 Routine-specific remarks follow.
 
@@ -101,5 +101,5 @@ This is a test of fputc!!
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fgetc, fgetwc](fgetc-fgetwc.md)\
-[putc, putwc](putc-putwc.md)
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`putc`, `putwc`](putc-putwc.md)

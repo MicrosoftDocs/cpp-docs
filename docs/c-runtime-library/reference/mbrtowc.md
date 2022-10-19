@@ -65,7 +65,7 @@ In this case, the value of the arguments *wchar* and *count* are ignored.
 
 If *mbchar* is not a null pointer, the function examines *count* bytes from *mbchar* to determine the required number of bytes that are required to complete the next multibyte character. If the next character is valid, the corresponding multibyte character is stored in *wchar* if it is not a null pointer. If the character is the corresponding wide null character, the resulting state of *mbstate* is the initial conversion state.
 
-The **mbrtowc** function differs from [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
+The **mbrtowc** function differs from [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

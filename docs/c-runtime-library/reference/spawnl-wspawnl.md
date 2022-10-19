@@ -61,7 +61,7 @@ The return value from a synchronous **_spawnl** or **_wspawnl** (**_P_WAIT** spe
 | **ENOEXEC** | Specified file is not executable or has invalid executable-file format. |
 | **ENOMEM** | Not enough memory is available to execute the new process. |
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 These functions validate their parameters. If either *cmdname* or *arg0* is an empty string or a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL**, and return -1. No new process is spawned.
 
@@ -80,18 +80,18 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [_spawn, _wspawn Functions](../spawn-wspawn-functions.md).
+See the example in [`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md).
 
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)\
-[_spawn, _wspawn Functions](../spawn-wspawn-functions.md)\
-[abort](abort.md)\
-[atexit](atexit.md)\
-[_exec, _wexec Functions](../exec-wexec-functions.md)\
-[exit, _Exit, _exit](exit-exit-exit.md)\
-[_flushall](flushall.md)\
-[_getmbcp](getmbcp.md)\
-[_onexit, _onexit_m](onexit-onexit-m.md)\
-[_setmbcp](setmbcp.md)\
-[system, _wsystem](system-wsystem.md)
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_flushall`](flushall.md)\
+[`_getmbcp`](getmbcp.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`_setmbcp`](setmbcp.md)\
+[`system`, `_wsystem`](system-wsystem.md)

@@ -61,7 +61,7 @@ Returns the length of the transformed string, not counting the terminating null 
 
 ## Remarks
 
-The **strxfrm** function transforms the string pointed to by *strSource* into a new collated form that is stored in *strDest*. No more than *count* characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's **LC_COLLATE** category setting. For more information on **LC_COLLATE**, see [setlocale](setlocale-wsetlocale.md). **strxfrm** uses the current locale for its locale-dependent behavior; **_strxfrm_l** is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../locale.md).
+The **strxfrm** function transforms the string pointed to by *strSource* into a new collated form that is stored in *strDest*. No more than *count* characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's **LC_COLLATE** category setting. For more information on **LC_COLLATE**, see [`setlocale`](setlocale-wsetlocale.md). **strxfrm** uses the current locale for its locale-dependent behavior; **_strxfrm_l** is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../locale.md).
 
 After the transformation, a call to **strcmp** with the two transformed strings yields results identical to those of a call to **strcoll** applied to the original two strings. As with **strcoll** and **stricoll**, **strxfrm** automatically handles multibyte-character strings as appropriate.
 
@@ -109,10 +109,10 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Data conversion](../data-conversion.md)\
-[localeconv](localeconv.md)\
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
+[`localeconv`](localeconv.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
 [Locale](../locale.md)\
 [String manipulation](../string-manipulation-crt.md)\
-[strcoll Functions](../strcoll-functions.md)\
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)\
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)
+[`strcoll` functions](../strcoll-functions.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)

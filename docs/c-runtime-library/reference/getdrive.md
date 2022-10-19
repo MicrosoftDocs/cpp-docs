@@ -92,6 +92,6 @@ G: (Current directory is G:\)
 ## See also
 
 [Directory control](../directory-control.md)\
-[_chdrive](chdrive.md)\
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)\
-[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)
+[`_chdrive`](chdrive.md)\
+[`_getcwd`, `_wgetcwd`](getcwd-wgetcwd.md)\
+[`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md)

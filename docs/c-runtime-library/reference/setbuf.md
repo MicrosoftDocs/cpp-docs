@@ -12,7 +12,7 @@ ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
 ---
 # setbuf
 
-Controls stream buffering. This function is deprecated; use [setvbuf](setvbuf.md) instead.
+Controls stream buffering. This function is deprecated; use [`setvbuf`](setvbuf.md) instead.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ User-allocated buffer.
 
 The **setbuf** function controls buffering for *stream*. The *stream* argument must refer to an open file that hasn't been read or written. If the *buffer* argument is **NULL**, the stream is unbuffered. If not, the buffer must point to a character array of length **BUFSIZ**, where **BUFSIZ** is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The **stderr** stream is unbuffered by default, but you can use **setbuf** to assign buffers to **stderr**.
 
-**setbuf** has been replaced by [setvbuf](setvbuf.md), which is the preferred routine for new code. Unlike **setvbuf**, **setbuf** has no way of reporting errors. **setvbuf** also lets you control both the buffering mode and the buffer size. **setbuf** exists for compatibility with existing code.
+**setbuf** has been replaced by [`setvbuf`](setvbuf.md), which is the preferred routine for new code. Unlike **setvbuf**, **setbuf** has no way of reporting errors. **setvbuf** also lets you control both the buffering mode and the buffer size. **setbuf** exists for compatibility with existing code.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -89,7 +89,7 @@ stream2 buffering disabled
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fclose, _fcloseall](fclose-fcloseall.md)\
-[fflush](fflush.md)\
-[fopen, _wfopen](fopen-wfopen.md)\
-[setvbuf](setvbuf.md)
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`fflush`](fflush.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`setvbuf`](setvbuf.md)

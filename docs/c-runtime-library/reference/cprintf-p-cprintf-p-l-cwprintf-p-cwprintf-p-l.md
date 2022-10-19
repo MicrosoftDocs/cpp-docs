@@ -56,7 +56,7 @@ The number of characters printed or a negative value if an error occurs.
 
 ## Remarks
 
-These functions format and print a series of characters and values directly to the console, using the **_putch** and **_putwch** functions to output characters. Each *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. The format has the same form and function as the *`format`* parameter for the [printf_p](../format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between **_cprintf_p** and **cprintf_s** is that **_cprintf_p** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
+These functions format and print a series of characters and values directly to the console, using the **_putch** and **_putwch** functions to output characters. Each *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. The format has the same form and function as the *`format`* parameter for the [`printf_p`](../format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between **_cprintf_p** and **cprintf_s** is that **_cprintf_p** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
 
 Unlike the **fprintf_p**, **printf_p**, and **sprintf_p** functions, **_cprintf_p** and **_cwprintf_p** don't translate line-feed characters into carriage return-line feed (CR-LF) combinations when output. An important distinction is that **_cwprintf_p** displays Unicode characters when used in Windows NT. Unlike **_cprintf_p**, **_cwprintf_p** uses the current console locale settings.
 
@@ -117,14 +117,14 @@ int main( void )
 ## See also
 
 [Console and port I/O](../console-and-port-i-o.md)\
-[_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)\
-[_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md)\
-[_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)\
-[fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)\
-[_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)\
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
-[_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l](sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)\
-[_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l](vfprintf-p-vfprintf-p-l-vfwprintf-p-vfwprintf-p-l.md)\
-[_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)\
+[`_cscanf`, `_cscanf_l`, `_cwscanf`, `_cwscanf_l`](cscanf-cscanf-l-cwscanf-cwscanf-l.md)\
+[`_cscanf_s`, `_cscanf_s_l`, `_cwscanf_s`, `_cwscanf_s_l`](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md)\
+[`_fprintf_p`, `_fprintf_p_l`, `_fwprintf_p`, `_fwprintf_p_l`](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)\
+[`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)\
+[`_printf_p`, `_printf_p_l`, `_wprintf_p`, `_wprintf_p_l`](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)\
+[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
+[`_sprintf_p`, `_sprintf_p_l`, `_swprintf_p`, `_swprintf_p_l`](sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)\
+[`_vfprintf_p`, `_vfprintf_p_l`, `_vfwprintf_p`, `_vfwprintf_p_l`](vfprintf-p-vfprintf-p-l-vfwprintf-p-vfwprintf-p-l.md)\
+[`_cprintf_s`, `_cprintf_s_l`, `_cwprintf_s`, `_cwprintf_s_l`](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)\
 [printf_p Positional Parameters](../printf-p-positional-parameters.md)\
 [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md)

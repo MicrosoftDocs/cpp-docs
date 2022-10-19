@@ -234,7 +234,7 @@ nSize: 10, buff: Hi there!
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[`vprintf` Functions](../vprintf-functions.md)\
+[`vprintf` functions](../vprintf-functions.md)\
 [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md)\
 [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
 [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\

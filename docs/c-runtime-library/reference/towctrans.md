@@ -29,7 +29,7 @@ wint_t towctrans(
 The character you want to transform.
 
 *category*<br/>
-An identifier that contains the return value of [wctrans](wctrans.md).
+An identifier that contains the return value of [`wctrans`](wctrans.md).
 
 ## Return value
 
@@ -37,7 +37,7 @@ The character *c*, after **towctrans** used the transform rule in *category*.
 
 ## Remarks
 
-The value of *category* must have been returned by an earlier successful call to [wctrans](wctrans.md).
+The value of *category* must have been returned by an earlier successful call to [`wctrans`](wctrans.md).
 
 ## Requirements
 

@@ -74,6 +74,6 @@ The absolute value of -9223372036854775806 is 9223372036854775806
 
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
-[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)\
-[_cabs](cabs.md)\
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)
+[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)\
+[`_cabs`](cabs.md)\
+[`fabs`, `fabsf`, `fabsl`](fabs-fabsf-fabsl.md)

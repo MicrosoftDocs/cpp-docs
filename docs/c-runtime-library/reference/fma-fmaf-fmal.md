@@ -76,7 +76,7 @@ Otherwise, may return one of the following values:
 |Overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 |Underflow range error|correct value, after rounding.|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -100,5 +100,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[remainder, remainderf, remainderl](remainder-remainderf-remainderl.md)\
-[remquo, remquof, remquol](remquo-remquof-remquol.md)
+[`remainder`, `remainderf`, `remainderl`](remainder-remainderf-remainderl.md)\
+[`remquo`, `remquof`, `remquol`](remquo-remquof-remquol.md)

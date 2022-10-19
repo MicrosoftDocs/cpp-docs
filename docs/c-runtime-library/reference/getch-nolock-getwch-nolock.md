@@ -88,7 +88,7 @@ Type 'Y' when finished typing keys: Y
 ## See also
 
 [Console and port I/O](../console-and-port-i-o.md)\
-[_getche, _getwche](getche-getwche.md)\
-[_cgets, _cgetws](../cgets-cgetws.md)\
-[getc, getwc](getc-getwc.md)\
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
+[`_getche`, `_getwche`](getche-getwche.md)\
+[`_cgets`, `_cgetws`](../cgets-cgetws.md)\
+[`getc`, `getwc`](getc-getwc.md)\
+[`_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)

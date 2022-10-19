@@ -181,7 +181,7 @@ Compare strings:
 [`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
 [`_memicmp`, `_memicmp_l`](memicmp-memicmp-l.md)\
 [`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
-[`strcoll` Functions](../strcoll-functions.md)\
+[`strcoll` functions](../strcoll-functions.md)\
 [`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
 [`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
 [`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\

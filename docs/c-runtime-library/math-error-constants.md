@@ -31,5 +31,5 @@ These errors, described as follows, correspond to the exception types defined in
 
 ## See also
 
-[_matherr](./reference/matherr.md)\
+[`_matherr`](./reference/matherr.md)\
 [Global constants](./global-constants.md)

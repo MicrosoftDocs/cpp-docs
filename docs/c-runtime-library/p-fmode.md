@@ -29,7 +29,7 @@ Pointer to the `_fmode` global variable.
 
 The `__p__fmode` function is for internal use only, and shouldn't be called from user code.
 
-File translation mode specifies either `binary` or `text` translation for [_open](./reference/open-wopen.md) and [_pipe](./reference/pipe.md) I/O operations. For more information, see [_fmode](./fmode.md).
+File translation mode specifies either `binary` or `text` translation for [`_open`](./reference/open-wopen.md) and [`_pipe`](./reference/pipe.md) I/O operations. For more information, see [`_fmode`](./fmode.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](global-state.md).
 

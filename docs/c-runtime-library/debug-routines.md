@@ -20,7 +20,7 @@ The debug version of the C runtime library supplies many diagnostic services tha
 
 ## Debug versions of the C runtime library routines
 
-To use these routines, the [_DEBUG](./debug.md) flag must be defined. All of these routines do nothing in a retail build of an application. For more information on how to use the new debug routines, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
+To use these routines, the [`_DEBUG`](./debug.md) flag must be defined. All of these routines do nothing in a retail build of an application. For more information on how to use the new debug routines, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
 
 | Routine | Use |
 |--|--|

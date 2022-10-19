@@ -58,4 +58,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Byte classification](../byte-classification.md)\
-[_ismbb Routines](../ismbb-routines.md)
+[`_ismbb` routines](../ismbb-routines.md)

@@ -12,7 +12,7 @@ ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
 ---
 # ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 
-Convert a time value to a string and adjust for local time zone settings. These functions are versions of [ctime, _ctime64, _wctime, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Convert a time value to a string and adjust for local time zone settings. These functions are versions of [`ctime`, `_ctime64`, `_wctime`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -93,7 +93,7 @@ Pointer to stored time.
 
 ## Return value
 
-Zero if successful. If there's a failure due to an invalid parameter, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in ERRNO.H; for a listing of these errors, see [errno](../errno-constants.md). The actual error codes thrown for each error condition are shown in the following table.
+Zero if successful. If there's a failure due to an invalid parameter, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in ERRNO.H; for a listing of these errors, see [`errno`](../errno-constants.md). The actual error codes thrown for each error condition are shown in the following table.
 
 ## Error conditions
 
@@ -107,13 +107,13 @@ Zero if successful. If there's a failure due to an invalid parameter, the invali
 
 ## Remarks
 
-The **ctime_s** function converts a time value stored as a [time_t](../standard-types.md) structure into a character string. The *sourceTime* value is typically obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **ctime_s** function converts a time value stored as a [`time_t`](../standard-types.md) structure into a character string. The *sourceTime* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
 `Wed Jan 02 02:03:55 1980\n\0`
 
 A 24-hour clock is used. All fields have a constant width. The new line character ('\n') and the null character ('\0') occupy the last two positions of the string.
 
-The converted character string is also adjusted according to the local time zone settings. For information on configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions. For details about defining the time zone environment and global variables, see the [_tzset](tzset.md) function.
+The converted character string is also adjusted according to the local time zone settings. For information on configuring the local time, see the [`time`](time-time32-time64.md), [`_ftime`](ftime-ftime32-ftime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions. For details about defining the time zone environment and global variables, see the [`_tzset`](tzset.md) function.
 
 **_wctime32_s** and **_wctime64_s** are the wide-character version of **_ctime32_s** and **_ctime64_s**; returning a pointer to wide-character string. Otherwise, **_ctime64_s**, **_wctime32_s**, and **_wctime64_s** behave identically to **_ctime32_s**.
 
@@ -121,7 +121,7 @@ The converted character string is also adjusted according to the local time zone
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -183,9 +183,9 @@ The time is Fri Apr 25 13:03:39 2003
 ## See also
 
 [Time management](../time-management.md)\
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)\
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
-[time, _time32, _time64](time-time32-time64.md)
+[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)

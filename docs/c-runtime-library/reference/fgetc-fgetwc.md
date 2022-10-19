@@ -32,7 +32,7 @@ Pointer to **FILE** structure.
 
 ## Return value
 
-**fgetc** returns the character read as an **`int`** or returns **EOF** to indicate an error or end of file. **fgetwc** returns, as a [wint_t](../standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *`stream`* is **NULL**, **fgetc** and **fgetwc** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EOF**.
+**fgetc** returns the character read as an **`int`** or returns **EOF** to indicate an error or end of file. **fgetwc** returns, as a [`wint_t`](../standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *`stream`* is **NULL**, **fgetc** and **fgetwc** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EOF**.
 
 ## Remarks
 
@@ -117,5 +117,5 @@ Line two.
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fputc, fputwc](fputc-fputwc.md)\
-[getc, getwc](getc-getwc.md)
+[`fputc`, `fputwc`](fputc-fputwc.md)\
+[`getc`, `getwc`](getc-getwc.md)

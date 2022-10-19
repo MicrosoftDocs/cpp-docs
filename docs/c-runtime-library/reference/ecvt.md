@@ -12,7 +12,7 @@ ms.assetid: a916eb05-92d1-4b5c-8563-093acdb49dc8
 ---
 # _ecvt
 
-Converts a **`double`** number to a string. A more secure version of this function is available; see [_ecvt_s](ecvt-s.md).
+Converts a **`double`** number to a string. A more secure version of this function is available; see [`_ecvt_s`](ecvt-s.md).
 
 ## Syntax
 
@@ -100,6 +100,6 @@ source: 3.1415926535   buffer: '3141592654'  decimal: 1  sign: 0
 
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
-[_fcvt](fcvt.md)\
-[_gcvt](gcvt.md)
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_fcvt`](fcvt.md)\
+[`_gcvt`](gcvt.md)

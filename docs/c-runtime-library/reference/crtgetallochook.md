@@ -45,4 +45,4 @@ Debug versions of [C run-time libraries](../crt-library-features.md) only.
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_CrtSetAllocHook](crtsetallochook.md)
+[`_CrtSetAllocHook`](crtsetallochook.md)

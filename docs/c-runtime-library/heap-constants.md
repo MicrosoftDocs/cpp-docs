@@ -29,7 +29,7 @@ These constants give the return value indicating status of the heap.
 
 ## See also
 
-[_heapchk](./reference/heapchk.md)\
-[_heapset](./heapset.md)\
-[_heapwalk](./reference/heapwalk.md)\
+[`_heapchk`](./reference/heapchk.md)\
+[`_heapset`](./heapset.md)\
+[`_heapwalk`](./reference/heapwalk.md)\
 [Global constants](./global-constants.md)

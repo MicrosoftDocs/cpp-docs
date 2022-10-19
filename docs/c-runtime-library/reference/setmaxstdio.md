@@ -32,7 +32,7 @@ Returns *`new_max`* if successful; -1 otherwise.
 
 If *`new_max`* is less than **`_IOB_ENTRIES`**, or greater than the maximum number of handles available in the operating system, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to **`EINVAL`**.
 
-For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

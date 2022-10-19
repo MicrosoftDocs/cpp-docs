@@ -42,7 +42,7 @@ The floating-point exponential value.
 
 ## Return value
 
-The **expm1** functions return a floating-point value that represents e<sup>x</sup> - 1, if successful. On overflow, **expm1** returns **HUGE_VAL**, **expm1f** returns **HUGE_VALF**, **expm1l** returns **HUGE_VALL**, and **errno** is set to **ERANGE**. For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+The **expm1** functions return a floating-point value that represents e<sup>x</sup> - 1, if successful. On overflow, **expm1** returns **HUGE_VAL**, **expm1f** returns **HUGE_VALF**, **expm1l** returns **HUGE_VALL**, and **errno** is set to **ERANGE**. For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -62,5 +62,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)\
-[pow, powf, powl](pow-powf-powl.md)
+[`exp2`, `exp2f`, `exp2l`](exp2-exp2f-exp2l.md)\
+[`pow`, `powf`, `powl`](pow-powf-powl.md)

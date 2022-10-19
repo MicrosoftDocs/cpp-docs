@@ -26,6 +26,6 @@ The *origin* argument specifies the initial position and can be one of the follo
 
 ## See also
 
-[fseek, _fseeki64](./reference/fseek-fseeki64.md)\
-[_lseek, _lseeki64](./reference/lseek-lseeki64.md)\
+[`fseek`, `_fseeki64`](./reference/fseek-fseeki64.md)\
+[`_lseek`, `_lseeki64`](./reference/lseek-lseeki64.md)\
 [Global constants](./global-constants.md)

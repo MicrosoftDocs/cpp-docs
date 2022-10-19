@@ -36,7 +36,7 @@ The previous output format.
 
 ## Remarks
 
-`_set_output_format` is used to configure the output of formatted I/O functions such as [printf_s](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). The only formatting convention that can be changed by this function is the number of digits displayed in exponents in the output of floating point numbers.
+`_set_output_format` is used to configure the output of formatted I/O functions such as [`printf_s`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). The only formatting convention that can be changed by this function is the number of digits displayed in exponents in the output of floating point numbers.
 
 By default, the output of floating point numbers by functions such as `printf_s`, `wprintf_s`, and related functions in the Visual C++ Standard C library prints three digits for the exponent, even if three digits aren't required to represent the value of the exponent. Zeroes are used to pad the value to three digits. `_set_output_format` allows you to change this behavior so that only two digits are printed in the exponent unless a third digit is required by the size of the exponent.
 
@@ -102,5 +102,5 @@ int main()
 
 ## See also
 
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
-[_get_output_format](./get-output-format.md)
+[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
+[`_get_output_format`](./get-output-format.md)

@@ -42,7 +42,7 @@ Otherwise, may return one of the following:
 |*x* =  ±0|x|
 |*x* = NaN|NaN|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -66,6 +66,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[floor, floorf, floorl](floor-floorf-floorl.md)\
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)\
-[round, roundf, roundl](round-roundf-roundl.md)
+[`floor`, `floorf`, `floorl`](floor-floorf-floorl.md)\
+[`ceil`, `ceilf`, `ceill`](ceil-ceilf-ceill.md)\
+[`round`, `roundf`, `roundl`](round-roundf-roundl.md)

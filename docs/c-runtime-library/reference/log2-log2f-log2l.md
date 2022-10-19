@@ -59,7 +59,7 @@ Otherwise, may return one of the following values:
 |domain error|NaN|
 |pole error|-HUGE_VAL, -HUGE_VALF, or -HUGE_VALL|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -79,5 +79,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)\
-[log, logf, log10, log10f](log-logf-log10-log10f.md)
+[`exp2`, `exp2f`, `exp2l`](exp2-exp2f-exp2l.md)\
+[`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)

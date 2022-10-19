@@ -46,8 +46,8 @@ UTF-8 support can be enabled by using the UTF-8 code page in your locale string.
 ## See also
 
 [C runtime library reference](./c-run-time-library-reference.md)\
-[_get_current_locale](./reference/get-current-locale.md)\
-[setlocale, _wsetlocale](./reference/setlocale-wsetlocale.md)\
-[_create_locale, _wcreate_locale](./reference/create-locale-wcreate-locale.md)\
+[`_get_current_locale`](./reference/get-current-locale.md)\
+[`setlocale`, `_wsetlocale`](./reference/setlocale-wsetlocale.md)\
+[`_create_locale`, `_wcreate_locale`](./reference/create-locale-wcreate-locale.md)\
 [Language strings](./language-strings.md)\
 [Country/Region strings](./country-region-strings.md)

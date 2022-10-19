@@ -198,5 +198,5 @@ int main( int ac, char* av[] )
 [`atexit`](./reference/atexit.md)\
 [`exit`, `_Exit`, `_exit`](./reference/exit-exit-exit.md)\
 [`_onexit`, `_onexit_m`](./reference/onexit-onexit-m.md)\
-[`_spawn`, `_wspawn` Functions](./spawn-wspawn-functions.md)\
+[`_spawn`, `_wspawn` functions](./spawn-wspawn-functions.md)\
 [`system`, `_wsystem`](./reference/system-wsystem.md)

@@ -28,5 +28,5 @@ The possible values are given by the following manifest constants:
 
 ## See also
 
-[setbuf](./reference/setbuf.md)\
+[`setbuf`](./reference/setbuf.md)\
 [Global constants](./global-constants.md)

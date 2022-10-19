@@ -87,6 +87,6 @@ See the example for [`vsprintf`](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswpr
 
 ## See also
 
-[`vprintf` Functions](../vprintf-functions.md)\
+[`vprintf` functions](../vprintf-functions.md)\
 [`_scprintf_p`, `_scprintf_p_l`, `_scwprintf_p`, `_scwprintf_p_l`](scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)\
 [`_vscprintf`, `_vscprintf_l`, `_vscwprintf`, `_vscwprintf_l`](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)\

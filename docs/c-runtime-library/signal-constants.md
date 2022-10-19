@@ -31,6 +31,6 @@ The `sig` argument must be one of the manifest constants listed below (defined i
 
 ## See also
 
-[signal](./reference/signal.md)\
-[raise](./reference/raise.md)\
+[`signal`](./reference/signal.md)\
+[`raise`](./reference/raise.md)\
 [Global constants](./global-constants.md)

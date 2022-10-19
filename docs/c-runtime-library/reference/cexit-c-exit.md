@@ -52,10 +52,10 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)\
-[abort](abort.md)\
-[atexit](atexit.md)\
-[_exec, _wexec Functions](../exec-wexec-functions.md)\
-[exit, _Exit, _exit](exit-exit-exit.md)\
-[_onexit, _onexit_m](onexit-onexit-m.md)\
-[_spawn, _wspawn Functions](../spawn-wspawn-functions.md)\
-[system, _wsystem](system-wsystem.md)
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

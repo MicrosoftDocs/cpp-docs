@@ -14,11 +14,11 @@ The single-threaded CRT is no longer available. This article discusses how to ge
 
 The performance of the multithreaded libraries has been improved and is close to the performance of the now-eliminated single-threaded libraries. For those situations when even higher performance is required, there are several new features.
 
-- Independent stream locking allows you to lock a stream and then use [`_nolock` Functions](./nolock-functions.md) that access the stream directly. This feature allows lock usage to be hoisted outside critical loops.
+- Independent stream locking allows you to lock a stream and then use [`_nolock` functions](./nolock-functions.md) that access the stream directly. This feature allows lock usage to be hoisted outside critical loops.
 
-- Per-thread locale reduces the cost of locale access for multithreaded scenarios (see [_configthreadlocale](./reference/configthreadlocale.md)).
+- Per-thread locale reduces the cost of locale access for multithreaded scenarios (see [`_configthreadlocale`](./reference/configthreadlocale.md)).
 
-- Locale-dependent functions (with names ending in _l) take the locale as a parameter, removing substantial cost (for example, [printf, _printf_l, wprintf, _wprintf_l](./reference/printf-printf-l-wprintf-wprintf-l.md)).
+- Locale-dependent functions (with names ending in _l) take the locale as a parameter, removing substantial cost (for example, [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](./reference/printf-printf-l-wprintf-wprintf-l.md)).
 
 - Optimizations for common codepages reduce the cost of many short operations.
 

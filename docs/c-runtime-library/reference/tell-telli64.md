@@ -36,7 +36,7 @@ The current position of the file pointer. On devices incapable of seeking, the r
 
 A return value of -1L indicates an error. If *handle* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EBADF** and return -1L.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -101,5 +101,5 @@ Current file position is: 20
 ## See also
 
 [Low-level I/O](../low-level-i-o.md)\
-[ftell, _ftelli64](ftell-ftelli64.md)\
-[_lseek, _lseeki64](lseek-lseeki64.md)
+[`ftell`, `_ftelli64`](ftell-ftelli64.md)\
+[`_lseek`, `_lseeki64`](lseek-lseeki64.md)

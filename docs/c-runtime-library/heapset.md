@@ -102,7 +102,7 @@ OK - heap is fine
 ## See also
 
 [Memory allocation](./memory-allocation.md)\
-[_heapadd](./heapadd.md)\
-[_heapchk](./reference/heapchk.md)\
-[_heapmin](./reference/heapmin.md)\
-[_heapwalk](./reference/heapwalk.md)
+[`_heapadd`](./heapadd.md)\
+[`_heapchk`](./reference/heapchk.md)\
+[`_heapmin`](./reference/heapmin.md)\
+[`_heapwalk`](./reference/heapwalk.md)

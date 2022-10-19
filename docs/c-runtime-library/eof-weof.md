@@ -21,12 +21,12 @@ ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
 
 ## See also
 
-[putc, putwc](./reference/putc-putwc.md)\
-[ungetc, ungetwc](./reference/ungetc-ungetwc.md)\
-[scanf, _scanf_l, wscanf, _wscanf_l](./reference/scanf-scanf-l-wscanf-wscanf-l.md)\
-[fflush](./reference/fflush.md)\
-[fclose, _fcloseall](./reference/fclose-fcloseall.md)\
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](./reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)\
-[_putch, _putwch](./reference/putch-putwch.md)\
-[isascii, __isascii, iswascii](./reference/isascii-isascii-iswascii.md)\
+[`putc`, `putwc`](./reference/putc-putwc.md)\
+[`ungetc`, `ungetwc`](./reference/ungetc-ungetwc.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](./reference/scanf-scanf-l-wscanf-wscanf-l.md)\
+[`fflush`](./reference/fflush.md)\
+[`fclose`, `_fcloseall`](./reference/fclose-fcloseall.md)\
+[`_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`](./reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)\
+[`_putch`, `_putwch`](./reference/putch-putwch.md)\
+[`isascii`, `__isascii`, `iswascii`](./reference/isascii-isascii-iswascii.md)\
 [Global constants](./global-constants.md)

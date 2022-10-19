@@ -41,7 +41,7 @@ If a valid *locale* and *category* are given, the functions return the specified
 
 ## Remarks
 
-The **_create_locale** function allows you to create an object that represents certain region-specific settings, for use in locale-specific versions of many CRT functions (functions with the **_l** suffix). The behavior is similar to **setlocale**, except that instead of applying the specified locale settings to the current environment, the settings are saved in a **_locale_t** structure that is returned. The **_locale_t** structure should be freed using [_free_locale](free-locale.md) when it's no longer needed.
+The **_create_locale** function allows you to create an object that represents certain region-specific settings, for use in locale-specific versions of many CRT functions (functions with the **_l** suffix). The behavior is similar to **setlocale**, except that instead of applying the specified locale settings to the current environment, the settings are saved in a **_locale_t** structure that is returned. The **_locale_t** structure should be freed using [`_free_locale`](free-locale.md) when it's no longer needed.
 
 **_wcreate_locale** is a wide-character version of **_create_locale**; the *locale* argument to **_wcreate_locale** is a wide-character string. **_wcreate_locale** and **_create_locale** behave identically otherwise.
 
@@ -53,7 +53,7 @@ The *category* argument specifies the parts of the locale-specific behavior that
 | **LC_COLLATE** |The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions. |
 | **LC_CTYPE** | The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected). |
 | **LC_MONETARY** | Monetary-formatting information returned by the **localeconv** function. |
-| **LC_NUMERIC** | Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md). |
+| **LC_NUMERIC** | Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [`localeconv`](localeconv.md). |
 | **LC_TIME** | The **strftime** and **wcsftime** functions. |
 
 This function validates the *category* and *locale* parameters. If the category parameter isn't one of the values given in the previous table or if *locale* is **NULL**, the function returns **NULL**.
@@ -62,7 +62,7 @@ The *locale* argument is a pointer to a string that specifies the locale. For in
 
 The *locale* argument can take several kinds of values: a locale name, a language string, a language string and country/region code, a code page, or a combination of language string, country/region code, and code page. The set (of available locale names, languages, country/region codes, and code pages) includes all that are supported by the Windows NLS API. The set of locale names **_create_locale** supports is described in [Locale names, Languages, and Country/Region strings](../locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by **_create_locale** are listed in [Language strings](../language-strings.md) and [Country/Region strings](../country-region-strings.md).
 
-For more information about locale settings, see [setlocale, _wsetlocale](setlocale-wsetlocale.md).
+For more information about locale settings, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md).
 
 The previous name of this function, **__create_locale** (with two leading underscores), has been deprecated.
 
@@ -144,19 +144,19 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 [Locale names, Languages, and Country/Region strings](../locale-names-languages-and-country-region-strings.md)\
 [Language strings](../language-strings.md)\
 [Country/Region strings](../country-region-strings.md)\
-[_free_locale](free-locale.md)\
-[_configthreadlocale](configthreadlocale.md)\
-[setlocale](../../preprocessor/setlocale.md)\
+[`_free_locale`](free-locale.md)\
+[`_configthreadlocale`](configthreadlocale.md)\
+[`setlocale`](../../preprocessor/setlocale.md)\
 [Locale](../locale.md)\
-[localeconv](localeconv.md)\
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)\
-[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)\
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)\
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
-[_setmbcp](setmbcp.md)\
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
-[strcoll Functions](../strcoll-functions.md)\
-[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)\
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)\
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)
+[`localeconv`](localeconv.md)\
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`strlen`, `wcslen`, `_mbslen`, `_mbslen_l`, `_mbstrlen`, `_mbstrlen_l`](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`_setmbcp`](setmbcp.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`strcoll` functions](../strcoll-functions.md)\
+[`strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`](strftime-wcsftime-strftime-l-wcsftime-l.md)\
+[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)\
+[`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\
+[`wctomb`, `_wctomb_l`](wctomb-wctomb-l.md)

@@ -39,13 +39,13 @@ The *codepage* argument can be set to any of the following values:
 
 - **_MB_CP_ANSI** Use ANSI code page obtained from operating system at program startup.
 
-- **_MB_CP_LOCALE** Use the current locale's code page obtained from a previous call to [setlocale](setlocale-wsetlocale.md).
+- **_MB_CP_LOCALE** Use the current locale's code page obtained from a previous call to [`setlocale`](setlocale-wsetlocale.md).
 
 - **_MB_CP_OEM** Use OEM code page obtained from operating system at program startup.
 
-- **_MB_CP_SBCS** Use single-byte code page. When the code page is set to **_MB_CP_SBCS**, a routine such as [_ismbblead](ismbblead-ismbblead-l.md) always returns false.
+- **_MB_CP_SBCS** Use single-byte code page. When the code page is set to **_MB_CP_SBCS**, a routine such as [`_ismbblead`](ismbblead-ismbblead-l.md) always returns false.
 
-- **_MB_CP_UTF8** Use UTF-8.  When the code page is set to **_MB_CP_UTF8**, a routine such as [_ismbblead](ismbblead-ismbblead-l.md) always returns false.
+- **_MB_CP_UTF8** Use UTF-8.  When the code page is set to **_MB_CP_UTF8**, a routine such as [`_ismbblead`](ismbblead-ismbblead-l.md) always returns false.
 
 - Any other valid code page value, regardless of whether the value is an ANSI, OEM, or other operating-system-supported code page (except UTF-7, which is not supported).
 
@@ -61,5 +61,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_getmbcp](getmbcp.md)\
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)
+[`_getmbcp`](getmbcp.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)

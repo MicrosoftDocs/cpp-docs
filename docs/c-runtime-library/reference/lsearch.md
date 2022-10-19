@@ -12,7 +12,7 @@ ms.assetid: 8200f608-159a-46f0-923b-1a37ee1af7e0
 ---
 # _lsearch
 
-Performs a linear search for a value; adds to end of list if not found. A more secure version of this function is available; see [_lsearch_s](lsearch-s.md).
+Performs a linear search for a value; adds to end of list if not found. A more secure version of this function is available; see [`_lsearch_s`](lsearch-s.md).
 
 ## Syntax
 
@@ -110,6 +110,6 @@ wordlist after _lsearch: hello thanks bye extra
 ## See also
 
 [Searching and sorting](../searching-and-sorting.md)\
-[bsearch](bsearch.md)\
-[_lfind](lfind.md)\
-[_lsearch_s](lsearch-s.md)
+[`bsearch`](bsearch.md)\
+[`_lfind`](lfind.md)\
+[`_lsearch_s`](lsearch-s.md)

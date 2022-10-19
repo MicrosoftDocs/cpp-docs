@@ -195,7 +195,7 @@ from SPAWN!
 [Process and environment control](./process-and-environment-control.md)\
 [`abort`](./reference/abort.md)\
 [`atexit`](./reference/atexit.md)\
-[`_exec`, `_wexec` Functions](./exec-wexec-functions.md)\
+[`_exec`, `_wexec` functions](./exec-wexec-functions.md)\
 [`exit`, `_Exit`, `_exit`](./reference/exit-exit-exit.md)\
 [`_flushall`](./reference/flushall.md)\
 [`_getmbcp`](./reference/getmbcp.md)\

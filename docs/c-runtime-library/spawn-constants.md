@@ -27,5 +27,5 @@ The `mode` argument determines the action taken by the calling process before an
 
 ## See also
 
-[_spawn, _wspawn Functions](./spawn-wspawn-functions.md)\
+[`_spawn`, `_wspawn` functions](./spawn-wspawn-functions.md)\
 [Global constants](./global-constants.md)

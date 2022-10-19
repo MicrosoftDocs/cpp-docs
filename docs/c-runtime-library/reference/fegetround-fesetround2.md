@@ -66,7 +66,7 @@ The current rounding mode doesn't affect these operations:
 
 - The results of floating-point arithmetic operators in constant expressions, which always round to the nearest value.
 
-To use these functions, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use these functions, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
 
 ## Requirements
 
@@ -79,6 +79,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)\
-[rint, rintf, rintl](rint-rintf-rintl.md)\
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)
+[`nearbyint`, `nearbyintf`, `nearbyintl`](nearbyint-nearbyintf-nearbyintl1.md)\
+[`rint`, `rintf`, `rintl`](rint-rintf-rintl.md)\
+[`lrint`, `lrintf`, `lrintl`, `llrint`, `llrintf`, `llrintl`](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)
