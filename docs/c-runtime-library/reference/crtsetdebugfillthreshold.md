@@ -22,7 +22,7 @@ size_t _CrtSetDebugFillThreshold( size_t newThreshold );
 
 ### Parameters
 
-*newThreshold*<br/>
+*newThreshold*\
 New threshold size in bytes.
 
 ## Return value

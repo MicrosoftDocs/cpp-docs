@@ -24,7 +24,7 @@ double _cabs(
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 Complex number.
 
 ## Return value
@@ -33,7 +33,7 @@ Complex number.
 
 ## Remarks
 
-The **_cabs** function calculates the absolute value of a complex number, which must be a structure of type [`_complex`](../standard-types.md). The structure *z* is composed of a real component *x* and an imaginary component *y*. A call to **_cabs** produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.
+The **_cabs** function calculates the absolute value of a complex number, which must be a structure of type [`_complex`](../standard-types.md). The structure *`z`* is composed of a real component *`x`* and an imaginary component *`y`*. A call to **_cabs** produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

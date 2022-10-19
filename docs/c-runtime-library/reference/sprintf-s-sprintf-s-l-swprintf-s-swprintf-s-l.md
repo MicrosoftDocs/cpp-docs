@@ -58,36 +58,36 @@ int swprintf_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Storage location for output
 
-*sizeOfBuffer*<br/>
+*`sizeOfBuffer`*\
 Maximum number of characters to store.
 
-*format*<br/>
+*`format`*\
 Format-control string
 
-*...*<br/>
+*`...`*\
 Optional arguments to be formatted
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return value
 
-The number of characters written, or -1 if an error occurred. If *buffer* or *format* is a null pointer, **sprintf_s** and **swprintf_s** return -1 and set **errno** to **EINVAL**.
+The number of characters written, or -1 if an error occurred. If *`buffer`* or *`format`* is a null pointer, **sprintf_s** and **swprintf_s** return -1 and set **errno** to **EINVAL**.
 
-**sprintf_s** returns the number of bytes stored in *buffer*, not counting the terminating null character. **swprintf_s** returns the number of wide characters stored in *buffer*, not counting the terminating null wide character.
+**sprintf_s** returns the number of bytes stored in *`buffer`*, not counting the terminating null character. **swprintf_s** returns the number of wide characters stored in *`buffer`*, not counting the terminating null wide character.
 
 ## Remarks
 
-The **sprintf_s** function formats and stores a series of characters and values in *buffer*. Each *argument* (if any) is converted and output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.
+The **sprintf_s** function formats and stores a series of characters and values in *`buffer`*. Each *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.
 
 One main difference between **sprintf_s** and [`sprintf`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) is that **sprintf_s** checks the format string for valid formatting characters, whereas [`sprintf`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) only checks if the format string or buffer are **NULL** pointers. If either check fails, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**.
 
-The other main difference between **sprintf_s** and [`sprintf`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) is that **sprintf_s** takes a length parameter specifying the size of the output buffer in characters. If the buffer is too small for the formatted text, including the terminating null, then the buffer is set to an empty string by placing a null character at *buffer*[0], and the invalid parameter handler is invoked. Unlike **_snprintf**, **sprintf_s** guarantees that the buffer will be null-terminated unless the buffer size is zero.
+The other main difference between **sprintf_s** and [`sprintf`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) is that **sprintf_s** takes a length parameter specifying the size of the output buffer in characters. If the buffer is too small for the formatted text, including the terminating null, then the buffer is set to an empty string by placing a null character at *`buffer[0]`*, and the invalid parameter handler is invoked. Unlike **_snprintf**, **sprintf_s** guarantees that the buffer will be null-terminated unless the buffer size is zero.
 
 **swprintf_s** is a wide-character version of **sprintf_s**; the pointer arguments to **swprintf_s** are wide-character strings. Detection of encoding errors in **swprintf_s** may differ from that in **sprintf_s**. The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

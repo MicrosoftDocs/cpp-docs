@@ -83,7 +83,7 @@ inline bool isunordered(
 
 ### Parameters
 
-*x*, *y*<br/>
+*`x`*, *`y`*\
 The floating-point values to compare.
 
 ## Return value

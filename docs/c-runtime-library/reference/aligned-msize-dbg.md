@@ -26,13 +26,13 @@ size_t _aligned_msize_dbg(
 
 ### Parameters
 
-*`memblock`*<br/>
+*`memblock`*\
 Pointer to the memory block.
 
-*`alignment`*<br/>
+*`alignment`*\
 The alignment value, which must be an integer power of 2.
 
-*`offset`*<br/>
+*`offset`*\
 The offset into the memory allocation to force the alignment.
 
 ## Return value

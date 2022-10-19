@@ -30,7 +30,7 @@ int _wsystem(
 
 ### Parameters
 
-*`command`*<br/>
+*`command`*\
 The command to be executed.
 
 ## Return value

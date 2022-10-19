@@ -38,10 +38,10 @@ unsigned __int64 _rotr64(
 
 ### Parameters
 
-*value*<br/>
+*`value`*\
 Value to be rotated.
 
-*shift*<br/>
+*`shift`*\
 Number of bits to shift.
 
 ## Return value
@@ -50,7 +50,7 @@ The rotated value. There's no error return.
 
 ## Remarks
 
-The **_rotl** and **_rotr** functions rotate the unsigned *value* by *shift* bits. **_rotl** rotates the value left. **_rotr** rotates the value right. Both functions wrap bits rotated off one end of *value* to the other end.
+The **_rotl** and **_rotr** functions rotate the unsigned *`value`* by *`shift`* bits. **_rotl** rotates the value left. **_rotr** rotates the value right. Both functions wrap bits rotated off one end of *`value`* to the other end.
 
 ## Requirements
 

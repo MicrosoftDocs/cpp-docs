@@ -28,12 +28,12 @@ long double creal( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number.
 
 ## Return value
 
-The real part of *z*.
+The real part of *`z`*.
 
 ## Remarks
 

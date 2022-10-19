@@ -63,30 +63,30 @@ errno_t _mbsnset_s_l(
 
 ### Parameters
 
-*str*<br/>
+*`str`*\
 String to be altered.
 
-*numberOfElements*<br/>
-The size of the *str* buffer.
+*`numberOfElements`*\
+The size of the *`str`* buffer.
 
-*c*<br/>
+*`c`*\
 Character setting.
 
-*count*<br/>
+*`count`*\
 Number of characters to be set.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
 Zero if successful, otherwise an error code.
 
-These functions validate their arguments. If *str* is not a valid null-terminated string or the size argument is less than or equal to 0, then the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return an error code and set **errno** to that error code. The default error code is **EINVAL** if a more specific value does not apply.
+These functions validate their arguments. If *`str`* is not a valid null-terminated string or the size argument is less than or equal to 0, then the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return an error code and set **errno** to that error code. The default error code is **EINVAL** if a more specific value does not apply.
 
 ## Remarks
 
-These functions set, at most, the first *count* characters of *str* to *c*. If *count* is greater than the size of *str*, the size of *str* is used instead of *count*. An error occurs if *count* is greater than *numberOfElements* and both those parameters are greater than the size of *str*.
+These functions set, at most, the first *`count`* characters of *`str`* to *`c`*. If *`count`* is greater than the size of *`str`*, the size of *`str`* is used instead of *`count`*. An error occurs if *`count`* is greater than *`numberOfElements`* and both those parameters are greater than the size of *`str`*.
 
 **_wcsnset_s** and **_mbsnset_s** are wide-character and multibyte-character versions of **_strnset_s**. The string argument of **_wcsnset_s** is a wide-character string; that of **_mbsnset_s** is amultibyte-character string. These three functions behave identically otherwise.
 

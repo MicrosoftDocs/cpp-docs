@@ -96,16 +96,16 @@ unsigned char *_mbsncpy_l(
 
 ### Parameters
 
-*`strDest`*<br/>
+*`strDest`*\
 Destination string.
 
-*`strSource`*<br/>
+*`strSource`*\
 Source string.
 
-*`count`*<br/>
+*`count`*\
 Number of characters to be copied.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value

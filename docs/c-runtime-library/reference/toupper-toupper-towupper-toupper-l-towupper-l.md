@@ -38,17 +38,17 @@ int _towupper_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to convert.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Each of these routines converts a copy of *c*, if possible, and returns the result.
+Each of these routines converts a copy of *`c`*, if possible, and returns the result.
 
-If *c* is a wide character for which **iswlower** is nonzero and there is a corresponding wide character for which [`iswupper`](isupper-isupper-l-iswupper-iswupper-l.md) is nonzero, **towupper** returns the corresponding wide character; otherwise, **towupper** returns *c* unchanged.
+If *`c`* is a wide character for which **iswlower** is nonzero and there is a corresponding wide character for which [`iswupper`](isupper-isupper-l-iswupper-iswupper-l.md) is nonzero, **towupper** returns the corresponding wide character; otherwise, **towupper** returns *`c`* unchanged.
 
 There is no return value reserved to indicate an error.
 

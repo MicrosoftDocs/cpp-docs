@@ -47,22 +47,22 @@ uintptr_t _beginthreadex( // MANAGED CODE
 
 ### Parameters
 
-*`start_address`*<br/>
+*`start_address`*\
 Start address of a routine that begins execution of a new thread. For **`_beginthread`**, the calling convention is either [`__cdecl`](../../cpp/cdecl.md) (for native code) or [`__clrcall`](../../cpp/clrcall.md) (for managed code). For **`_beginthreadex`**, the calling convention is either [`__stdcall`](../../cpp/stdcall.md) (for native code) or [`__clrcall`](../../cpp/clrcall.md) (for managed code).
 
-*`stack_size`*<br/>
+*`stack_size`*\
 Stack size for a new thread, or 0.
 
-*`arglist`*<br/>
+*`arglist`*\
 Argument list to be passed to a new thread, or **`NULL`**.
 
-*`Security`*<br/>
+*`Security`*\
 Pointer to a [`SECURITY_ATTRIBUTES`](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that determines whether the returned handle can be inherited by child processes. If *`Security`* is **`NULL`**, the handle can't be inherited.
 
-*`initflag`*<br/>
+*`initflag`*\
 Flags that control the initial state of a new thread. Set *`initflag`* to 0 to run immediately, or to **`CREATE_SUSPENDED`** to create the thread in a suspended state; use [`ResumeThread`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *`initflag`* to **`STACK_SIZE_PARAM_IS_A_RESERVATION`** flag to use *`stack_size`* as the initial reserve size of the stack in bytes; if this flag isn't specified, *`stack_size`* specifies the commit size.
 
-*`thrdaddr`*<br/>
+*`thrdaddr`*\
 Points to a 32-bit variable that receives the thread identifier. If it's **`NULL`**, it's not used.
 
 ## Return value

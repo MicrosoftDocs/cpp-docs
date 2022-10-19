@@ -41,7 +41,7 @@ wchar_t *_cgetws(
 
 #### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Storage location for data.
 
 ## Return value

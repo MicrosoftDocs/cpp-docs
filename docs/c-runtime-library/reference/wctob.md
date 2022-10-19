@@ -24,7 +24,7 @@ int wctob(
 
 ### Parameters
 
-*wchar*<br/>
+*`wchar`*\
 Value to translate.
 
 ## Return value
@@ -33,7 +33,7 @@ If **wctob** successfully converts a wide character, it returns its multibyte ch
 
 ## Remarks
 
-The **wctob** function converts a wide character contained in *wchar* to the corresponding multibyte character passed by the return **`int`** value, if the multibyte character is exactly one byte long.
+The **wctob** function converts a wide character contained in *`wchar`* to the corresponding multibyte character passed by the return **`int`** value, if the multibyte character is exactly one byte long.
 
 If **wctob** was unsuccessful and no corresponding multibyte character was found, the function sets **errno** to **EILSEQ** and returns -1.
 

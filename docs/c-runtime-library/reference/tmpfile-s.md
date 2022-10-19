@@ -24,7 +24,7 @@ errno_t tmpfile_s(
 
 ### Parameters
 
-*pFilePtr*<br/>
+*pFilePtr*\
 The address of a pointer to store the address of the generated pointer to a stream.
 
 ## Return value

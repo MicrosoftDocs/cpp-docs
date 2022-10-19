@@ -29,7 +29,7 @@ int iswascii(
 
 ### Parameters
 
-*`c`*<br/>
+*`c`*\
 Integer to test.
 
 ## Return value

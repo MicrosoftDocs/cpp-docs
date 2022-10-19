@@ -35,10 +35,10 @@ double _wtof_l(
 
 ## Parameters
 
-*`str`*<br/>
+*`str`*\
 String to be converted.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value

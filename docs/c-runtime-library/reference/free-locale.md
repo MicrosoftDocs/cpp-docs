@@ -24,7 +24,7 @@ void _free_locale(
 
 ### Parameters
 
-*locale*<br/>
+*`locale`*\
 Locale object to free.
 
 ## Remarks

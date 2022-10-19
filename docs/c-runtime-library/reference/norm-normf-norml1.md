@@ -29,12 +29,12 @@ long double norm( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number.
 
 ## Return value
 
-The squared magnitude of *z*.
+The squared magnitude of *`z`*.
 
 ## Remarks
 

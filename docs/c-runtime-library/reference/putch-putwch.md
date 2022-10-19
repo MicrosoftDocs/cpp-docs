@@ -31,16 +31,16 @@ wint_t _putwch(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be output.
 
 ## Return value
 
-Returns *c* if successful. If **_putch** fails, it returns **EOF**; if **_putwch** fails, it returns **WEOF**.
+Returns *`c`* if successful. If **_putch** fails, it returns **EOF**; if **_putwch** fails, it returns **WEOF**.
 
 ## Remarks
 
-These functions write the character *c* directly, without buffering, to the console. In Windows NT, **_putwch** writes Unicode characters using the current console locale setting.
+These functions write the character *`c`* directly, without buffering, to the console. In Windows NT, **_putwch** writes Unicode characters using the current console locale setting.
 
 The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. For more information, see **_putch_nolock**, **_putwch_nolock**.
 

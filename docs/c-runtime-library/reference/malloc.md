@@ -24,7 +24,7 @@ void *malloc(
 
 ### Parameters
 
-*`size`*<br/>
+*`size`*\
 Bytes to allocate.
 
 ## Return value

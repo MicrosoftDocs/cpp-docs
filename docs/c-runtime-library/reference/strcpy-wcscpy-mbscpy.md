@@ -51,10 +51,10 @@ unsigned char *_mbscpy(
 
 ### Parameters
 
-*`strDestination`*<br/>
+*`strDestination`*\
 Destination string.
 
-*`strSource`*<br/>
+*`strSource`*\
 Null-terminated source string.
 
 ## Return value

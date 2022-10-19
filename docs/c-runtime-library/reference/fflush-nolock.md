@@ -24,7 +24,7 @@ int _fflush_nolock(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Pointer to the **FILE** structure.
 
 ## Return value

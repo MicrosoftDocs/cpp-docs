@@ -37,10 +37,10 @@ errno_t _wmktemp_s(
 
 ### Parameters
 
-*nameTemplate*<br/>
+*nameTemplate*\
 File name pattern.
 
-*sizeInChars*<br/>
+*sizeInChars*\
 Size of the buffer in single-byte characters in **_mktemp_s**; wide characters in **_wmktemp_s**, including the null terminator.
 
 ## Return value

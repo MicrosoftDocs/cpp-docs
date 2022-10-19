@@ -30,24 +30,24 @@ int vfwscanf(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Pointer to **FILE** structure.
 
-*format*<br/>
+*`format`*\
 Format-control string.
 
-*arglist*<br/>
+*`arglist`*\
 Variable argument list.
 
 ## Return value
 
 Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that are read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is **EOF** for **vfscanf** and **vfwscanf**.
 
-These functions validate their parameters. If *stream* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
+These functions validate their parameters. If *`stream`* or *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
 
 ## Remarks
 
-The **vfscanf** function reads data from the current position of *stream* into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for **scanf**; see [`scanf`](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
+The **vfscanf** function reads data from the current position of *`stream`* into the locations that are given by the *`arglist`* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *`format`*. *`format`* controls the interpretation of the input fields and has the same form and function as the *`format`* argument for **scanf**; see [`scanf`](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *`format`*.
 
 **vfwscanf** is a wide-character version of **vfscanf**; the format argument to **vfwscanf** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **vfscanf** doesn't support input from a UNICODE stream.
 

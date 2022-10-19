@@ -27,16 +27,16 @@ size_t fwrite(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Pointer to data to be written.
 
-*`size`*<br/>
+*`size`*\
 Item size, in bytes.
 
-*`count`*<br/>
+*`count`*\
 Maximum number of items to be written.
 
-*`stream`*<br/>
+*`stream`*\
 Pointer to **`FILE`** structure.
 
 ## Return value

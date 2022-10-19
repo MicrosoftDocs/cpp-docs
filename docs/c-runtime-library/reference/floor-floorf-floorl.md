@@ -44,9 +44,9 @@ Floating-point value.
 
 The **floor** functions return a floating-point value that represents the largest integer that is less than or equal to *x*. There's no error return.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
-|± QNAN,IND|none|_DOMAIN|
+|± QNAN, IND|none|_DOMAIN|
 
 **floor** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [`_set_SSE2_enable`](set-sse2-enable.md).
 

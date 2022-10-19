@@ -22,7 +22,7 @@ terminate_function set_terminate( terminate_function termFunction );
 
 ### Parameters
 
-*termFunction*<br/>
+*termFunction*\
 Pointer to a terminate function that you write.
 
 ## Return value

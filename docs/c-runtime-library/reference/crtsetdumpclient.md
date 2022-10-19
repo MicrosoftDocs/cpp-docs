@@ -22,7 +22,7 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 
 ### Parameters
 
-*dumpClient*<br/>
+*dumpClient*\
 New client-defined memory dump function to hook.
 
 ## Return value

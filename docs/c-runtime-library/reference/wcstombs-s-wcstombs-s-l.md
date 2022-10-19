@@ -53,22 +53,22 @@ errno_t _wcstombs_s_l(
 
 ### Parameters
 
-*`pReturnValue`*<br/>
+*`pReturnValue`*\
 The size in bytes of the converted string, including the null terminator.
 
-*`mbstr`*<br/>
+*`mbstr`*\
 The address of a buffer for the resulting converted multibyte character string.
 
-*`sizeInBytes`*<br/>
+*`sizeInBytes`*\
 The size in bytes of the *`mbstr`* buffer.
 
-*`wcstr`*<br/>
+*`wcstr`*\
 Points to the wide character string to be converted.
 
-*`count`*<br/>
+*`count`*\
 The maximum number of bytes to store in the *`mbstr`* buffer, not including the terminating null character, or [`_TRUNCATE`](../truncate.md).
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value

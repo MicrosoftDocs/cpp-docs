@@ -38,15 +38,15 @@ int _ismbcupper_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be tested.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *c*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If *`c`*<= 255 and there is a corresponding **_ismbb** routine (for example, **_ismbcalnum** corresponds to **_ismbbalnum**), the result is the return value of the corresponding **_ismbb** routine.
 
 ## Remarks
 
@@ -56,10 +56,10 @@ The versions of these functions with the **_l** suffix are identical except that
 
 |Routine|Test condition|Code page 932 example|
 |-------------|--------------------|---------------------------|
-|**_ismbclower**|Lowercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*c*<=0x7A.|
-|**_ismbclower_l**|Lowercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*c*<=0x7A.|
-|**_ismbcupper**|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
-|**_ismbcupper_l**|Uppercase alphabetic|Returns nonzero if and only if *c* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*c*<=0x5A.|
+|**_ismbclower**|Lowercase alphabetic|Returns nonzero if and only if *`c`* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*`c`*<=0x7A.|
+|**_ismbclower_l**|Lowercase alphabetic|Returns nonzero if and only if *`c`* is a single-byte representation of an ASCII lowercase English letter: 0x61<=*`c`*<=0x7A.|
+|**_ismbcupper**|Uppercase alphabetic|Returns nonzero if and only if *`c`* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*`c`*<=0x5A.|
+|**_ismbcupper_l**|Uppercase alphabetic|Returns nonzero if and only if *`c`* is a single-byte representation of an ASCII uppercase English letter: 0x41<=*`c`*<=0x5A.|
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

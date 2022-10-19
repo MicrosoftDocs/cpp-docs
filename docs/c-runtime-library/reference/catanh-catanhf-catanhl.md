@@ -36,12 +36,12 @@ _Lcomplex catanhl(
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number that represents an angle, in radians.
 
 ## Return value
 
-The inverse hyperbolic tangent of *z*, in radians. The result is unbounded along the real axis, and  in the interval [-iπ/2; +iπ/2] along the imaginary axis. A domain error will occur if *z* is outside the interval [-1, +1]. A pole error will occur if *z* is -1 or +1.
+The inverse hyperbolic tangent of *`z`*, in radians. The result is unbounded along the real axis, and  in the interval [-iπ/2; +iπ/2] along the imaginary axis. A domain error will occur if *`z`* is outside the interval [-1, +1]. A pole error will occur if *`z`* is -1 or +1.
 
 ## Remarks
 

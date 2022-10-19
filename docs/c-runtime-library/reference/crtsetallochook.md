@@ -24,7 +24,7 @@ _CRT_ALLOC_HOOK _CrtSetAllocHook(
 
 ### Parameters
 
-*allocHook*<br/>
+*allocHook*\
 New client-defined allocation function to hook into the C run-time debug memory allocation process.
 
 ## Return value

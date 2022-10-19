@@ -27,7 +27,7 @@ void __cdecl _lock
 
 #### Parameters
 
-*`locknum`*<br/>
+*`locknum`*\
 [in] The identifier of the lock to acquire.
 
 ## Remarks

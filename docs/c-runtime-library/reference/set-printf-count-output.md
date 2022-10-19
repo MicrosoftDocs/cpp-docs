@@ -24,7 +24,7 @@ int _set_printf_count_output(
 
 ### Parameters
 
-*enable*<br/>
+*`enable`*\
 A non-zero value to enable **%n** support, 0 to disable **%n** support.
 
 ## Property value or return value

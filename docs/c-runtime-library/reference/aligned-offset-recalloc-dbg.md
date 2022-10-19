@@ -30,25 +30,25 @@ void * _aligned_offset_recalloc_dbg(
 
 ### Parameters
 
-*`memblock`*<br/>
+*`memblock`*\
 The current memory block pointer.
 
-*`number`*<br/>
+*`number`*\
 Number of elements.
 
-*`size`*<br/>
+*`size`*\
 Length in bytes of each element.
 
-*`alignment`*<br/>
+*`alignment`*\
 The alignment value, which must be an integer power of 2.
 
-*`offset`*<br/>
+*`offset`*\
 The offset into the memory allocation to force the alignment.
 
-*`filename`*<br/>
+*`filename`*\
 Pointer to the name of the source file that requested the realloc operation or **NULL**.
 
-*`linenumber`*<br/>
+*`linenumber`*\
 Line number in the source file where the realloc operation was requested or **NULL**.
 
 ## Return value

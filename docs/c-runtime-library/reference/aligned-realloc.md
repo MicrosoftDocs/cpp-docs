@@ -26,13 +26,13 @@ void * _aligned_realloc(
 
 ### Parameters
 
-*`memblock`*<br/>
+*`memblock`*\
 The current memory block pointer.
 
-*`size`*<br/>
+*`size`*\
 The size of the requested memory allocation.
 
-*`alignment`*<br/>
+*`alignment`*\
 The alignment value, which must be an integer power of 2.
 
 ## Return value

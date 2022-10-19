@@ -24,16 +24,16 @@ errno_t _ftime64_s( struct __timeb64 *timeptr );
 
 ### Parameters
 
-*timeptr*<br/>
+*`timeptr`*\
 Pointer to a **_timeb**, **__timeb32**, or **__timeb64** structure.
 
 ## Return value
 
-Zero if successful, an error code on failure. If *timeptr* is **NULL**, the return value is **EINVAL**.
+Zero if successful, an error code on failure. If *`timeptr`* is **NULL**, the return value is **EINVAL**.
 
 ## Remarks
 
-The **_ftime_s** function gets the current local time and stores it in the structure pointed to by *timeptr*. The **_timeb**, **__timeb32**, and **__timeb64** structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.
+The **_ftime_s** function gets the current local time and stores it in the structure pointed to by *`timeptr`*. The **_timeb**, **__timeb32**, and **__timeb64** structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.
 
 |Field|Description|
 |-|-|
@@ -46,7 +46,7 @@ The **_ftime64_s** function, which uses the **__timeb64** structure, allows file
 
 The **_ftime_s** function is equivalent to **_ftime64_s**, and **_timeb** contains a 64-bit time, unless **_USE_32BIT_TIME_T** is defined, in which case the old behavior is in effect; **_ftime_s** uses a 32-bit time and **_timeb** contains a 32-bit time.
 
-**_ftime_s** validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
+**_ftime_s** validates its parameters. If passed a null pointer as *`timeptr`*, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

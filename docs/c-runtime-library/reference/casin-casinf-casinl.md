@@ -36,12 +36,12 @@ _Lcomplex casinl(
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number that represents an angle, in radians.
 
 ## Return value
 
-The arcsine of *z*, in radians. The result is unbounded along the imaginary axis, and in the interval [-π/2, +π/2] along the real axis.
+The arcsine of *`z`*, in radians. The result is unbounded along the imaginary axis, and in the interval [-π/2, +π/2] along the real axis.
 
 ## Remarks
 

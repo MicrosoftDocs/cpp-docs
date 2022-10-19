@@ -33,10 +33,10 @@ int _execute_onexit_table(
 
 #### Parameters
 
-*table*<br/>
+*`table`*\
 [in, out] Pointer to the `onexit` function table.
 
-*function*<br/>
+*`function`*\
 [in] Pointer to a function to add to the `onexit` function table.
 
 ## Return value

@@ -27,7 +27,7 @@ wchar_t *_wctime64( const __time64_t *sourceTime );
 
 ### Parameters
 
-*sourceTime*<br/>
+*sourceTime*\
 Pointer to stored time to convert.
 
 ## Return value

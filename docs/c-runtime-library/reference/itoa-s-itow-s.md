@@ -59,16 +59,16 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 
 ### Parameters
 
-*`value`*<br/>
+*`value`*\
 Number to be converted.
 
-*`buffer`*<br/>
+*`buffer`*\
 Output buffer that holds the result of the conversion.
 
-*`size`*<br/>
+*`size`*\
 Size of *`buffer`* in characters or wide characters.
 
-*`radix`*<br/>
+*`radix`*\
 The radix or numeric base to use to convert *`value`*, which must be in the range 2-36.
 
 ## Return value

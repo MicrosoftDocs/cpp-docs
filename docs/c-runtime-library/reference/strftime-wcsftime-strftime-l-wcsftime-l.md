@@ -47,19 +47,19 @@ size_t _wcsftime_l(
 
 ### Parameters
 
-*`strDest`*<br/>
+*`strDest`*\
 Output string.
 
-*`maxsize`*<br/>
+*`maxsize`*\
 Size of the *`strDest`* buffer, measured in characters (**`char`** or **`wchar_t`**).
 
-*`format`*<br/>
+*`format`*\
 Format-control string.
 
-*`timeptr`*<br/>
+*`timeptr`*\
 **`tm`** data structure.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value

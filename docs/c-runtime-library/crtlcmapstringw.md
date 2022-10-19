@@ -28,24 +28,24 @@ int __crtLCMapStringW(
 
 #### Parameters
 
-*Locale*<br/>
+*Locale*\
 Locale identifier. The locale provides a context for the string mapping or sort key generation. An application can use the `MAKELCID` macro to create a locale identifier.
 
-*dwMapFlags*<br/>
+*dwMapFlags*\
 The type of transformation to be used during string mapping or sort key generation.
 
-*lpSrcStr*<br/>
+*lpSrcStr*\
 Pointer to a source string that the function maps or uses for sort key generation. This parameter is assumed to be a Unicode string.
 
-*cchSrc*<br/>
+*cchSrc*\
 Size, in characters, of the string pointed to by the `lpSrcStr` parameter. This count can include the null terminator, or not include it.
 
 A `cchSrc` value of -1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If so, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.
 
-*lpDestStr*<br/>
+*lpDestStr*\
 Long pointer to a buffer into which the function stores the mapped string or sort key.
 
-*cchDest*<br/>
+*cchDest*\
 Size, in characters, of the buffer pointed to by `lpDestStr`.
 
 ## Return value

@@ -23,15 +23,15 @@ _Lcomplex _LCbuild( long double real, long double imaginary );
 
 ### Parameters
 
-*real*<br/>
+*`real`*\
 The real part of the complex number to construct.
 
-*imaginary*<br/>
+*`imaginary`*\
 The imaginary part of the complex number to construct.
 
 ## Return value
 
-A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex number (*real*, *imaginary* \* i) for values of the specified floating-point type.
+A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex number (*`real`*, *`imaginary`* \* i) for values of the specified floating-point type.
 
 ## Remarks
 

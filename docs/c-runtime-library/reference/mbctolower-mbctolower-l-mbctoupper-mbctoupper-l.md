@@ -38,19 +38,19 @@ unsigned int _mbctoupper_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Multibyte character to convert.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Each of these functions returns the converted character *c*, if possible. Otherwise it returns the character *c* unchanged.
+Each of these functions returns the converted character *`c`*, if possible. Otherwise it returns the character *`c`* unchanged.
 
 ## Remarks
 
-The functions test a character *c* and, if possible, apply one of the following conversions.
+The functions test a character *`c`* and, if possible, apply one of the following conversions.
 
 |Routines|Converts|
 |--------------|--------------|

@@ -27,7 +27,7 @@ wint_t _putwchar_nolock(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be written.
 
 ## Return value

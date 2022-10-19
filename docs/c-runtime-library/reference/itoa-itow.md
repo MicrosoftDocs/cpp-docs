@@ -69,16 +69,16 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 
 ### Parameters
 
-*`value`*<br/>
+*`value`*\
 Number to be converted.
 
-*`buffer`*<br/>
+*`buffer`*\
 Buffer that holds the result of the conversion.
 
-*`radix`*<br/>
+*`radix`*\
 The base to use for the conversion of *`value`*, which must be in the range 2-36.
 
-*`size`*<br/>
+*`size`*\
 Length of the buffer in units of the character type. This parameter is inferred from the *`buffer`* argument in C++.
 
 ## Return value

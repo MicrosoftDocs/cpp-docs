@@ -102,19 +102,19 @@ errno_t _mbsncat_s_l(
 
 ### Parameters
 
-*strDest*<br/>
+*`strDest`*\
 Null-terminated destination string.
 
-*numberOfElements*<br/>
+*`numberOfElements`*\
 Size of the destination buffer.
 
-*strSource*<br/>
+*`strSource`*\
 Null-terminated source string.
 
-*count*<br/>
+*`count`*\
 Number of characters to append, or [`_TRUNCATE`](../truncate.md).
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -123,7 +123,7 @@ Returns 0 if successful, an error code on failure.
 
 ### Error conditions
 
-|*strDestination*|*numberOfElements*|*strSource*|Return value|Contents of *strDestination*|
+|*`strDestination`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDestination`*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |**NULL** or unterminated|any|any|**EINVAL**|not modified|
 |any|any|**NULL**|**EINVAL**|not modified|
@@ -131,9 +131,9 @@ Returns 0 if successful, an error code on failure.
 
 ## Remarks
 
-These functions try to append the first *D* characters of *strSource* to the end of *strDest*, where *D* is the lesser of *count* and the length of *strSource*. If appending those *D* characters will fit within *strDest* (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of *strDest*, and a new terminating null is appended; otherwise, *strDest*[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
+These functions try to append the first `D` characters of *`strSource`* to the end of *`strDest`*, where `D` is the lesser of *`count`* and the length of *`strSource`*. If appending those `D` characters will fit within *`strDest`* (whose size is given as *`numberOfElements`*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of *`strDest`*, and a new terminating null is appended; otherwise, *`strDest[0]`* is set to the null character and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-There is an exception to the above paragraph. If *count* is [`_TRUNCATE`](../truncate.md), then as much of *strSource* as will fit is appended to *strDest* while still leaving room to append a terminating null.
+There is an exception to the above paragraph. If *`count`* is [`_TRUNCATE`](../truncate.md), then as much of *`strSource`* as will fit is appended to *`strDest`* while still leaving room to append a terminating null.
 
 For example,
 
@@ -145,7 +145,7 @@ strncat_s(dst, _countof(dst), "34567", 3);
 
 means that we're asking **strncat_s** to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence **strncat_s** zeroes out the string and calls the invalid parameter handler.
 
-If truncation behavior is needed, use **_TRUNCATE** or adjust the *count* parameter accordingly:
+If truncation behavior is needed, use **_TRUNCATE** or adjust the *`count`* parameter accordingly:
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
@@ -159,7 +159,7 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 In all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
-If *strSource* or *strDest* is **NULL**, or *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL** without modifying its parameters.
+If *`strSource`* or *`strDest`* is **NULL**, or *`numberOfElements`* is zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL** without modifying its parameters.
 
 **wcsncat_s** and **_mbsncat_s** are wide-character and multibyte-character versions of **strncat_s**. The string arguments and return value of **wcsncat_s** are wide-character strings; those of **_mbsncat_s** are multibyte-character strings. These three functions behave identically otherwise.
 

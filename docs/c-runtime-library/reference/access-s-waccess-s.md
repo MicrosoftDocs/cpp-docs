@@ -29,10 +29,10 @@ errno_t _waccess_s(
 
 ### Parameters
 
-*path*<br/>
+*`path`*\
 File or directory path.
 
-*mode*<br/>
+*`mode`*\
 Permission setting.
 
 ## Return value
@@ -49,7 +49,7 @@ For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`
 
 ## Remarks
 
-When used with files, the **_access_s** function determines whether the specified file exists and can be accessed as specified by the value of *mode*. When used with directories, **_access_s** determines only whether the specified directory exists. In Windows 2000 and later operating systems, all directories have read and write access.
+When used with files, the **_access_s** function determines whether the specified file exists and can be accessed as specified by the value of *`mode`*. When used with directories, **_access_s** determines only whether the specified directory exists. In Windows 2000 and later operating systems, all directories have read and write access.
 
 |mode value|Checks file for|
 |----------------|---------------------|
@@ -60,9 +60,9 @@ When used with files, the **_access_s** function determines whether the specifie
 
 Permission to read or write the file isn't enough to ensure the ability to open a file. For example, if a file is locked by another process, it might not be accessible even though **_access_s** returns 0.
 
-**_waccess_s** is a wide-character version of **_access_s**, where the *path* argument to **_waccess_s** is a wide-character string. Otherwise, **_waccess_s** and **_access_s** behave identically.
+**_waccess_s** is a wide-character version of **_access_s**, where the *`path`* argument to **_waccess_s** is a wide-character string. Otherwise, **_waccess_s** and **_access_s** behave identically.
 
-These functions validate their parameters. If *path* is NULL or *mode* doesn't specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
+These functions validate their parameters. If *`path`* is NULL or *`mode`* doesn't specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

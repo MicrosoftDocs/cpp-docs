@@ -27,7 +27,7 @@ int _wunlink(
 
 ### Parameters
 
-*filename*<br/>
+*`filename`*\
 Name of file to remove.
 
 ## Return value
@@ -38,7 +38,7 @@ For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlis
 
 ## Remarks
 
-The **_unlink** function deletes the file specified by *filename*. **_wunlink** is a wide-character version of **_unlink**; the *filename* argument to **_wunlink** is a wide-character string. These functions behave identically otherwise.
+The **_unlink** function deletes the file specified by *`filename`*. **_wunlink** is a wide-character version of **_unlink**; the *`filename`* argument to **_wunlink** is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

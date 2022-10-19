@@ -24,12 +24,12 @@ errno_t _set_fmode(
 
 ### Parameters
 
-*mode*<br/>
+*`mode`*\
 The file translation mode desired: **_O_TEXT** or **_O_BINARY**.
 
 ## Return value
 
-Returns zero if successful, an error code on failure. If *mode* is not **_O_TEXT** or **_O_BINARY** or **_O_WTEXT**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+Returns zero if successful, an error code on failure. If *`mode`* is not **_O_TEXT** or **_O_BINARY** or **_O_WTEXT**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Remarks
 

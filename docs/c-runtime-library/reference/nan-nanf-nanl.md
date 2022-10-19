@@ -24,7 +24,7 @@ long double nanl( const char* input );
 
 ### Parameters
 
-*input*<br/>
+*`input`*\
 A string value.
 
 ## Return value
@@ -33,7 +33,7 @@ The **nan** functions return a quiet NaN value.
 
 ## Remarks
 
-The **nan** functions return a floating-point value that corresponds to a quiet (non-signalling) NaN. The *input* value is ignored. For information about how a NaN is represented for output, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
+The **nan** functions return a floating-point value that corresponds to a quiet (non-signalling) NaN. The *`input`* value is ignored. For information about how a NaN is represented for output, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

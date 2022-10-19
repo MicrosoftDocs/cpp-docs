@@ -32,10 +32,10 @@ intptr_t _wexecvp(
 
 ### Parameters
 
-*cmdname*<br/>
+*`cmdname`*\
 Path of the file to execute.
 
-*argv*<br/>
+*`argv`*\
 Array of pointers to parameters.
 
 ## Return value
@@ -60,8 +60,8 @@ Each of these functions loads and executes a new process, passing an array of po
 
 The **_execvp** functions validate their parameters. These functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md), when:
 
-- *cmdname* is a null pointer,
-- *argv* is either a null pointer or pointer to an empty array,
+- *`cmdname`* is a null pointer,
+- *`argv`* is either a null pointer or pointer to an empty array,
 - the array contains an empty string as the first argument.
 
 If execution is allowed to continue by the handler, these functions set **errno** to **EINVAL**, and return -1. No process is launched.

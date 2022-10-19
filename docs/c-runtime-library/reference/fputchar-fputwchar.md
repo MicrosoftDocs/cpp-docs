@@ -27,7 +27,7 @@ wint_t _fputwchar(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be written.
 
 ## Return value
@@ -38,7 +38,7 @@ For more information about these and other error codes, see [`errno`, `_doserrno
 
 ## Remarks
 
-Both of these functions writes the single character *c* to **stdout** and advances the indicator as appropriate. **_fputchar** is equivalent to `fputc( stdout )`. It is also equivalent to **putchar**, but implemented only as a function, rather than as a function and a macro. Unlike **fputc** and **putchar**, these functions are not compatible with the ANSI standard.
+Both of these functions writes the single character *`c`* to **stdout** and advances the indicator as appropriate. **_fputchar** is equivalent to `fputc( stdout )`. It is also equivalent to **putchar**, but implemented only as a function, rather than as a function and a macro. Unlike **fputc** and **putchar**, these functions are not compatible with the ANSI standard.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

@@ -24,7 +24,7 @@ int fegetenv(
 
 ### Parameters
 
-*`penv`*<br/>
+*`penv`*\
 Pointer to an **fenv_t** object to contain the current floating-point environment values.
 
 ## Return value

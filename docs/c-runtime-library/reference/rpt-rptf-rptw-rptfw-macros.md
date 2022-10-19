@@ -11,7 +11,7 @@ ms.assetid: a5bf8b30-57f7-4971-8030-e773b7a1ae13
 ---
 # _RPT, _RPTF, _RPTW, _RPTFW Macros
 
-Tracks an application's progress by generating a debug report (debug version only). Note that *n* specifies the number of arguments in *args* and can be 0, 1, 2, 3, 4, or 5.
+Tracks an application's progress by generating a debug report (debug version only). Note that *`n`* specifies the number of arguments in *`args`* and can be 0, 1, 2, 3, 4, or 5.
 
 ## Syntax
 
@@ -42,26 +42,26 @@ _RPTFWn(
 
 ### Parameters
 
-*reportType*<br/>
+*`reportType`*\
 Report type: **_CRT_WARN**, **_CRT_ERROR**, or **_CRT_ASSERT**.
 
-*format*<br/>
+*`format`*\
 Format-control string used to create the user message.
 
-*args*<br/>
-Substitution arguments used by *format*.
+*`args`*\
+Substitution arguments used by *`format`*.
 
 ## Remarks
 
-All these macros take the *reportType* and *format* parameters. In addition, they might also take up to four additional arguments, signified by the number appended to the macro name. For example, **_RPT0** and **_RPTF0** take no additional arguments, **_RPT1** and **_RPTF1** take *arg1*, **_RPT2** and **_RPTF2** take *arg1* and **arg2**, and so on.
+All these macros take the *`reportType`* and *`format`* parameters. In addition, they might also take up to four additional arguments, signified by the number appended to the macro name. For example, **_RPT0** and **_RPTF0** take no additional arguments, **_RPT1** and **_RPTF1** take *`arg1`*, **_RPT2** and **_RPTF2** take *`arg1`* and *`arg2`*, and so on.
 
 The **_RPT** and **_RPTF** macros are similar to the [`printf`](printf-printf-l-wprintf-wprintf-l.md) function, because they can be used to track an application's progress during the debugging process. However, these macros are more flexible than **printf** because they do not need to be enclosed in **#ifdef** statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [`_DEBUG`](../debug.md) macro; the **_RPT** and **_RPTF** macros are only available when the **_DEBUG** flag is defined. When **_DEBUG** is not defined, calls to these macros are removed during preprocessing.
 
 The **_RPTW** and **_RPTFW** macros are wide-character versions of these macros. They are like **wprintf** and take wide-character strings as arguments.
 
-The **_RPT** macros call the [`_CrtDbgReport`](crtdbgreport-crtdbgreportw.md) function to generate a debug report with a user message. The **_RPTW** macros call the **_CrtDbgReportW** function to generate the same report with wide characters. The **_RPTF** and **_RPTFW** macros create a debug report with the source file and line number where the report macro was called, in addition to the user message. The user message is created by substituting the **arg**[*n*] arguments into the *format* string, using the same rules defined by the [`printf`](printf-printf-l-wprintf-wprintf-l.md) function.
+The **_RPT** macros call the [`_CrtDbgReport`](crtdbgreport-crtdbgreportw.md) function to generate a debug report with a user message. The **_RPTW** macros call the **_CrtDbgReportW** function to generate the same report with wide characters. The **_RPTF** and **_RPTFW** macros create a debug report with the source file and line number where the report macro was called, in addition to the user message. The user message is created by substituting the *`arg[n]`* arguments into the *`format`* string, using the same rules defined by the [`printf`](printf-printf-l-wprintf-wprintf-l.md) function.
 
-**_CrtDbgReport** or **_CrtDbgReportW** generates the debug report and determines its destinations based on the current report modes and file defined for *reportType*. The [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions are used to define the destinations for each report type.
+**_CrtDbgReport** or **_CrtDbgReportW** generates the debug report and determines its destinations based on the current report modes and file defined for *`reportType`*. The [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions are used to define the destinations for each report type.
 
 If an **_RPT** macro is called and neither **_CrtSetReportMode** nor **_CrtSetReportFile** has been called, messages are displayed as follows.
 

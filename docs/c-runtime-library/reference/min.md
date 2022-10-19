@@ -22,7 +22,7 @@ A preprocessor macro that returns the smaller of two values.
 
 ### Parameters
 
-*a*, *b*<br/>
+*`a`*, *`b`*\
 Values of any type that the **<** operator works on.
 
 ## Return value

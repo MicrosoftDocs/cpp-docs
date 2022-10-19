@@ -24,10 +24,10 @@ double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 
 ### Parameters
 
-*timeEnd*<br/>
+*timeEnd*\
 Ending time.
 
-*timeStart*<br/>
+*timeStart*\
 Beginning time.
 
 ## Return value

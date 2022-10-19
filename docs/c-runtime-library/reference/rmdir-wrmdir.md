@@ -27,7 +27,7 @@ int _wrmdir(
 
 ### Parameters
 
-*dirname*<br/>
+*`dirname`*\
 Path of the directory to be removed.
 
 ## Return value
@@ -44,9 +44,9 @@ For more information about these and other return codes, see [`errno`, `_doserrn
 
 ## Remarks
 
-The **_rmdir** function deletes the directory specified by *dirname*. The directory must be empty, and it must not be the current working directory or the root directory.
+The **_rmdir** function deletes the directory specified by *`dirname`*. The directory must be empty, and it must not be the current working directory or the root directory.
 
-**_wrmdir** is a wide-character version of **_rmdir**; the *dirname* argument to **_wrmdir** is a wide-character string. **_wrmdir** and **_rmdir** behave identically otherwise.
+**_wrmdir** is a wide-character version of **_rmdir**; the *`dirname`* argument to **_wrmdir** is a wide-character string. **_wrmdir** and **_rmdir** behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

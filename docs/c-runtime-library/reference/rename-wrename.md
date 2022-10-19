@@ -29,10 +29,10 @@ int _wrename(
 
 ### Parameters
 
-*`oldname`*<br/>
+*`oldname`*\
 Pointer to old name.
 
-*`newname`*<br/>
+*`newname`*\
 Pointer to new name.
 
 ## Return value

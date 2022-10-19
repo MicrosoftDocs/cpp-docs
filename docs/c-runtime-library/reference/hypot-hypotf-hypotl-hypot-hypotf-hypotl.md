@@ -46,7 +46,7 @@ long double _hypotl(
 
 ### Parameters
 
-*x*, *y*\
+*`x`*, *`y`*\
 Floating-point values.
 
 ## Return value

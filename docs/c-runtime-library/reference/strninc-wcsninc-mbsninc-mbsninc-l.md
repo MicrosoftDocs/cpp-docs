@@ -41,22 +41,22 @@ unsigned char *_mbsninc(
 
 ### Parameters
 
-*str*<br/>
+*`str`*\
 Source string.
 
-*count*<br/>
+*`count`*\
 Number of characters to increment a string pointer.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Each of these routines returns a pointer to *str* after *str* has been incremented by *count* characters or **NULL** if the supplied pointer is **NULL**. If *count* is greater than or equal to the number of characters in *str*, the result is undefined.
+Each of these routines returns a pointer to *`str`* after *`str`* has been incremented by *`count`* characters or **NULL** if the supplied pointer is **NULL**. If *`count`* is greater than or equal to the number of characters in *`str`*, the result is undefined.
 
 ## Remarks
 
-The **_mbsninc** function increments *str* by *count* multibyte characters. **_mbsninc** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use.
+The **_mbsninc** function increments *`str`* by *`count`* multibyte characters. **_mbsninc** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

@@ -27,16 +27,16 @@ size_t _fwrite_nolock(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Pointer to the data to be written.
 
-*size*<br/>
+*`size`*\
 Item size in bytes.
 
-*count*<br/>
+*`count`*\
 Maximum number of items to be written.
 
-*stream*<br/>
+*`stream`*\
 Pointer to the **FILE** structure.
 
 ## Return value

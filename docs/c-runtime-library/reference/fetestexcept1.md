@@ -24,7 +24,7 @@ int fetestexcept(
 
 ### Parameters
 
-*excepts*<br/>
+*`excepts`*\
 A bitwise OR of the floating-point     status flags to test.
 
 ## Return value
@@ -33,7 +33,7 @@ On success, returns a bitmask containing a bitwise OR of the floating-point exce
 
 ## Remarks
 
-Use the fetestexcept function to determine which exceptions were raised by a floating point operation. Use the *excepts* parameter to specify which exception status flags to test. The **fetestexcept** function uses these exception macros defined in \<fenv.h> in *excepts* and the return value:
+Use the fetestexcept function to determine which exceptions were raised by a floating point operation. Use the *`excepts`* parameter to specify which exception status flags to test. The **fetestexcept** function uses these exception macros defined in \<fenv.h> in *`excepts`* and the return value:
 
 |Exception Macro|Description|
 |---------------------|-----------------|
@@ -44,7 +44,7 @@ Use the fetestexcept function to determine which exceptions were raised by a flo
 |FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
 |FE_ALL_EXCEPT|The bitwise OR of all supported floating-point exceptions.|
 
-The specified *excepts* argument may be 0, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other *excepts* argument value is undefined.
+The specified *`excepts`* argument may be 0, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other *`excepts`* argument value is undefined.
 
 To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
 

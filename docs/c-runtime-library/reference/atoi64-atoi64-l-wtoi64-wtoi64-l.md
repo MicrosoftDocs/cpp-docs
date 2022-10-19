@@ -35,10 +35,10 @@ __int64 _wtoi64_l(
 
 ### Parameters
 
-*str*<br/>
+*`str`*\
 String to be converted.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -55,11 +55,11 @@ These functions convert a character string to a 64-bit integer value.
 
 The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it can't recognize as part of a number. This character might be the null character ('\0' or L'\0') terminating the string.
 
-The *str* argument to **_atoi64** has the following form:
+The *`str`* argument to **_atoi64** has the following form:
 
-> [*whitespace*] [*sign*] [*digits*]
+> [*`whitespace`*] [*`sign`*] [*`digits`*]
 
-A *whitespace* consists of space or tab characters, which are ignored; *sign* is either plus (+) or minus (-); and *digits* are one or more digits.
+A *`whitespace`* consists of space or tab characters, which are ignored; *`sign`* is either plus (+) or minus (-); and *`digits`* are one or more digits.
 
 **_wtoi64** is identical to **_atoi64** except that it takes a wide character string as a parameter.
 

@@ -27,7 +27,7 @@ _invalid_parameter_handler _set_thread_local_invalid_parameter_handler(
 
 ### Parameters
 
-*pNew*<br/>
+*pNew*\
 The function pointer to the new invalid parameter handler.
 
 ## Return value

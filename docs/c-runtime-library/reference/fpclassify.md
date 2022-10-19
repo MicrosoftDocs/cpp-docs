@@ -35,12 +35,12 @@ int fpclassify(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to test.
 
 ## Return value
 
-**fpclassify** returns an integer value that indicates the floating-point class of the argument *x*. This table shows the possible values returned by **fpclassify**, defined in \<math.h>.
+**fpclassify** returns an integer value that indicates the floating-point class of the argument *`x`*. This table shows the possible values returned by **fpclassify**, defined in \<math.h>.
 
 |Value|Description|
 |-----------|-----------------|

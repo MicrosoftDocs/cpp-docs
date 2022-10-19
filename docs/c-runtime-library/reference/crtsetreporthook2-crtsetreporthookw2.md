@@ -29,15 +29,15 @@ int _CrtSetReportHookW2(
 
 ### Parameters
 
-*mode*<br/>
+*`mode`*\
 The action to take: **_CRT_RPTHOOK_INSTALL** or **_CRT_RPTHOOK_REMOVE**.
 
-*pfnNewHook*<br/>
+*`pfnNewHook`*\
 Report hook to install or remove in the narrow-character or wide-character version of this function.
 
 ## Return value
 
--1 if an error was encountered, with **EINVAL** or **ENOMEM** set; otherwise returns the reference count of *pfnNewHook* after the call.
+-1 if an error was encountered, with **EINVAL** or **ENOMEM** set; otherwise returns the reference count of *`pfnNewHook`* after the call.
 
 ## Remarks
 
@@ -59,7 +59,7 @@ Use the following prototype for the narrow-character report hooks:
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-These functions validate their parameters. If *mode* or *pfnNewHook* is invalid, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
+These functions validate their parameters. If *`mode`* or *`pfnNewHook`* is invalid, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 > [!NOTE]
 > If your application is compiled with **/clr** and the reporting function is called after the application has exited main, the CLR will throw an exception if the reporting function calls any CRT functions.

@@ -27,16 +27,16 @@ void * _aligned_malloc_dbg(
 
 ### Parameters
 
-*`size`*<br/>
+*`size`*\
 Size of the requested memory allocation.
 
-*`alignment`*<br/>
+*`alignment`*\
 The alignment value, which must be an integer power of 2.
 
-*`filename`*<br/>
+*`filename`*\
 Pointer to the name of the source file that requested the allocation operation or NULL.
 
-*`linenumber`*<br/>
+*`linenumber`*\
 Line number in the source file where the allocation operation was requested or NULL.
 
 ## Return value

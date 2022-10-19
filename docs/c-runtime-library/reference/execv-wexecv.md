@@ -32,10 +32,10 @@ intptr_t _wexecv(
 
 ### Parameters
 
-*cmdname*<br/>
+*`cmdname`*\
 Path of the file to execute.
 
-*argv*<br/>
+*`argv`*\
 Array of pointers to parameters.
 
 ## Return value
@@ -58,7 +58,7 @@ For more information about these and other return codes, see [`errno`, `_doserrn
 
 Each of these functions loads and executes a new process, passing an array of pointers to command-line arguments.
 
-The **_execv** functions validate their parameters. If *cmdname* is a null pointer, or if *argv* is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, the **_execv** functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
+The **_execv** functions validate their parameters. If *`cmdname`* is a null pointer, or if *`argv`* is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, the **_execv** functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No process is launched.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

@@ -38,10 +38,10 @@ unsigned int _mbcjmstojis_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to convert.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -54,7 +54,7 @@ The **_mbcjistojms** function converts a Japan Industry Standard (JIS) character
 
 The **_mbcjmstojis** function converts a Shift JIS character to a JIS character. The character is converted only if the lead byte is in the range 0x81 - 0x9F or 0xE0 - 0xFC and the trail byte is in the range 0x40 - 0x7E or 0x80 - 0xFC. Note that some code points in that range do not have a character assigned and so cannot be converted.
 
-The value *c* should be a 16-bit value whose upper 8 bits represent the lead byte of the character to convert and whose lower 8 bits represent the trail byte.
+The value *`c`* should be a 16-bit value whose upper 8 bits represent the lead byte of the character to convert and whose lower 8 bits represent the trail byte.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 

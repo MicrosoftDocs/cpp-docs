@@ -51,15 +51,15 @@ int _iswcsymf_l(
 
 ### Parameters
 
-*c*<br/>
-Integer to test. *c* should be in the range of 0-255 for the narrow character version of the function.
+*`c`*\
+Integer to test. *`c`* should be in the range of 0-255 for the narrow character version of the function.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value
 
-Both **__iscsym** and **__iswcsym** return a nonzero value if *c* is a letter, underscore, or digit. Both **__iscsymf** and **__iswcsymf** return a nonzero value if *c* is a letter or an underscore. Each of these routines returns 0 if *c* does not satisfy the test condition. The versions of these functions with the **_l** suffix are identical except that they use the *locale* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
+Both **__iscsym** and **__iswcsym** return a nonzero value if *`c`* is a letter, underscore, or digit. Both **__iscsymf** and **__iswcsymf** return a nonzero value if *`c`* is a letter or an underscore. Each of these routines returns 0 if *`c`* does not satisfy the test condition. The versions of these functions with the **_l** suffix are identical except that they use the *locale* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
 ## Remarks
 

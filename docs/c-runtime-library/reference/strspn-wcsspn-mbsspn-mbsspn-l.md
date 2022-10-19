@@ -41,24 +41,24 @@ size_t _mbsspn_l(
 
 ### Parameters
 
-*str*<br/>
+*`str`*\
 Null-terminated string to search.
 
-*strCharSet*<br/>
+*`strCharSet`*\
 Null-terminated character set.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
 
-Returns an integer value specifying the length of the substring in *str* that consists entirely of characters in *strCharSet*. If *str* begins with a character not in *strCharSet*, the function returns 0.
+Returns an integer value specifying the length of the substring in *`str`* that consists entirely of characters in *`strCharSet`*. If *`str`* begins with a character not in *`strCharSet`*, the function returns 0.
 
 ## Remarks
 
-The **strspn** function returns the index of the first character in *str* that does not belong to the set of characters in *strCharSet*. The search does not include terminating null characters.
+The **strspn** function returns the index of the first character in *`str`* that does not belong to the set of characters in *`strCharSet`*. The search does not include terminating null characters.
 
-**wcsspn** and **_mbsspn** are wide-character and multibyte-character versions of **strspn**. The arguments of **wcsspn** are wide-character strings; those of **_mbsspn** are multibyte-character strings. **_mbsspn** validates its parameters. If *str* or *strCharSet* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, **_mbspn** sets **errno** to **EINVAL** and returns 0. **strspn** and **wcsspn** do not validate their parameters. These three functions behave identically otherwise.
+**wcsspn** and **_mbsspn** are wide-character and multibyte-character versions of **strspn**. The arguments of **wcsspn** are wide-character strings; those of **_mbsspn** are multibyte-character strings. **_mbsspn** validates its parameters. If *`str`* or *`strCharSet`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, **_mbspn** sets **errno** to **EINVAL** and returns 0. **strspn** and **wcsspn** do not validate their parameters. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 

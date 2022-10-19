@@ -27,19 +27,19 @@ void *_malloc_dbg(
 
 ### Parameters
 
-*size*<br/>
+*`size`*\
 Requested size of the memory block (in bytes).
 
-*blockType*<br/>
+*`blockType`*\
 Requested type of the memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
-*filename*<br/>
+*`filename`*\
 Pointer to the name of the source file that requested the allocation operation or **NULL**.
 
-*linenumber*<br/>
+*`linenumber`*\
 Line number in the source file where the allocation operation was requested or **NULL**.
 
-The *filename* and *linenumber* parameters are only available when **_malloc_dbg** has been called explicitly or the [`_CRTDBG_MAP_ALLOC`](../crtdbg-map-alloc.md) preprocessor constant has been defined.
+The *`filename`* and *`linenumber`* parameters are only available when **_malloc_dbg** has been called explicitly or the [`_CRTDBG_MAP_ALLOC`](../crtdbg-map-alloc.md) preprocessor constant has been defined.
 
 ## Return value
 
@@ -47,9 +47,9 @@ On successful completion, this function returns a pointer to the user portion of
 
 ## Remarks
 
-**_malloc_dbg** is a debug version of the [`malloc`](malloc.md) function. When [`_DEBUG`](../debug.md) is not defined, each call to **_malloc_dbg** is reduced to a call to **malloc**. Both **malloc** and **_malloc_dbg** allocate a block of memory in the base heap, but **_malloc_dbg** offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+**_malloc_dbg** is a debug version of the [`malloc`](malloc.md) function. When [`_DEBUG`](../debug.md) is not defined, each call to **_malloc_dbg** is reduced to a call to **malloc**. Both **malloc** and **_malloc_dbg** allocate a block of memory in the base heap, but **_malloc_dbg** offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *`filename`*/*`linenumber`* information to determine the origin of allocation requests.
 
-**_malloc_dbg** allocates the memory block with slightly more space than the requested *size*. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.
+**_malloc_dbg** allocates the memory block with slightly more space than the requested *`size`*. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.
 
 **_malloc_dbg** sets **errno** to **ENOMEM** if a memory allocation fails or if the amount of memory needed (including the overhead mentioned previously) exceeds **_HEAP_MAXREQ**. For information about this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

@@ -56,16 +56,16 @@ unsigned char *_mbstok_l(
 
 ### Parameters
 
-*`strToken`*<br/>
+*`strToken`*\
 String containing token or tokens.
 
-*`strDelimit`*<br/>
+*`strDelimit`*\
 Set of delimiter characters.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
-*`context`*<br/>
+*`context`*\
 Points to memory used to store the internal state of the parser so that the parser can continue from where it left off the next time you call **`wcstok`**.
 
 ## Return value

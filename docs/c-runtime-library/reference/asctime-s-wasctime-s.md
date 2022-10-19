@@ -41,13 +41,13 @@ errno_t _wasctime_s(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 A pointer to a buffer to store the character string result. This function assumes a pointer to a valid memory location with a size specified by *`numberOfElements`*.
 
-*`numberOfElements`*<br/>
+*`numberOfElements`*\
 The size of the buffer used to store the result.
 
-*`tmSource`*<br/>
+*`tmSource`*\
 Time/date structure. This function assumes a pointer to a valid `struct tm` object.
 
 ## Return value

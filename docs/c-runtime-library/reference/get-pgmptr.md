@@ -24,7 +24,7 @@ errno_t _get_pgmptr(
 
 ### Parameters
 
-*pValue*<br/>
+*pValue*\
 A pointer to a string to be filled with the current value of the **_pgmptr** variable.
 
 ## Return value

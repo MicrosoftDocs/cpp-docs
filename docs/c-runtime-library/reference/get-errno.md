@@ -24,7 +24,7 @@ errno_t _get_errno(
 
 ### Parameters
 
-*pValue*<br/>
+*pValue*\
 A pointer to an integer to be filled with the current value of the **errno** variable.
 
 ## Return value

@@ -51,10 +51,10 @@ int _mbsicmp_l(
 
 ### Parameters
 
-*`string1`*, *`string2`*<br/>
+*`string1`*, *`string2`*\
 Null-terminated strings to compare.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value

@@ -25,10 +25,10 @@ void *_expand(
 
 ### Parameters
 
-*`memblock`*<br/>
+*`memblock`*\
 Pointer to previously allocated memory block.
 
-*`size`*<br/>
+*`size`*\
 New size in bytes.
 
 ## Return value

@@ -25,10 +25,10 @@ void _free_dbg(
 
 ### Parameters
 
-*userData*<br/>
+*userData*\
 Pointer to the allocated memory block to be freed.
 
-*blockType*<br/>
+*blockType*\
 Type of allocated memory block to be freed: **_CLIENT_BLOCK**, **_NORMAL_BLOCK**, or **_IGNORE_BLOCK**.
 
 ## Remarks

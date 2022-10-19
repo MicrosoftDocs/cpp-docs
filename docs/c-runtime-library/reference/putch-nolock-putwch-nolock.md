@@ -30,12 +30,12 @@ wchar_t c
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Character to be output.
 
 ## Return value
 
-Returns *c* if successful. If **_putch_nolock** fails, it returns **EOF**; if **_putwch_nolock** fails, it returns **WEOF**.
+Returns *`c`* if successful. If **_putch_nolock** fails, it returns **EOF**; if **_putwch_nolock** fails, it returns **WEOF**.
 
 ## Remarks
 

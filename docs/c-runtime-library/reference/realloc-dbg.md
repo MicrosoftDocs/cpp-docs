@@ -28,22 +28,22 @@ void *_realloc_dbg(
 
 ### Parameters
 
-*userData*<br/>
+*`userData`*\
 Pointer to the previously allocated memory block.
 
-*newSize*<br/>
+*`newSize`*\
 Requested size for the reallocated block (bytes).
 
-*blockType*<br/>
+*`blockType`*\
 Requested type for the reallocated block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
 
-*filename*<br/>
+*`filename`*\
 Pointer to the name of the source file that requested the **realloc** operation or **NULL**.
 
-*linenumber*<br/>
+*`linenumber`*\
 Line number in the source file where the **realloc** operation was requested or **NULL**.
 
-The *filename* and *linenumber* parameters are only available when **_realloc_dbg** has been called explicitly or the [`_CRTDBG_MAP_ALLOC`](../crtdbg-map-alloc.md) preprocessor constant has been defined.
+The *`filename`* and *`linenumber`* parameters are only available when **_realloc_dbg** has been called explicitly or the [`_CRTDBG_MAP_ALLOC`](../crtdbg-map-alloc.md) preprocessor constant has been defined.
 
 ## Return value
 
@@ -51,9 +51,9 @@ On successful completion, this function either returns a pointer to the user por
 
 ## Remarks
 
-**_realloc_dbg** is a debug version of the [`realloc`](realloc.md) function. When [`_DEBUG`](../debug.md) is not defined, each call to **_realloc_dbg** is reduced to a call to **realloc**. Both **realloc** and **_realloc_dbg** reallocate a memory block in the base heap, but **_realloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+**_realloc_dbg** is a debug version of the [`realloc`](realloc.md) function. When [`_DEBUG`](../debug.md) is not defined, each call to **_realloc_dbg** is reduced to a call to **realloc**. Both **realloc** and **_realloc_dbg** reallocate a memory block in the base heap, but **_realloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *`filename`*/*`linenumber`* information to determine the origin of allocation requests.
 
-**_realloc_dbg** reallocates the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
+**_realloc_dbg** reallocates the specified memory block with slightly more space than the requested *`newSize`*. *`newSize`* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
 
 **_realloc_dbg** sets **errno** to **ENOMEM** if a memory allocation fails or if the amount of memory needed (including the overhead mentioned previously) exceeds **_HEAP_MAXREQ**. For information about this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

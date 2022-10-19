@@ -49,13 +49,13 @@ int _mbsncmp_l(
 
 ### Parameters
 
-*`string1`*, *`string2`*<br/>
+*`string1`*, *`string2`*\
 Strings to compare.
 
-*`count`*<br/>
+*`count`*\
 Number of characters to compare.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value

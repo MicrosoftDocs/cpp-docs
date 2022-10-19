@@ -25,7 +25,7 @@ int _heapwalk( _HEAPINFO *entryinfo );
 
 ### Parameters
 
-*entryinfo*<br/>
+*`entryinfo`*\
 Buffer to contain heap information.
 
 ## Return value
@@ -36,10 +36,10 @@ Buffer to contain heap information.
 |-|-|
 |**_HEAPBADBEGIN**| Initial header information invalid or not found.|
 |**_HEAPBADNODE**| Heap damaged or bad node found.|
-|**_HEAPBADPTR**| The **_pentry** field of the **_HEAPINFO** structure does not contain a valid pointer into the heap or *entryinfo* is a null pointer.|
+|**_HEAPBADPTR**| The **_pentry** field of the **_HEAPINFO** structure does not contain a valid pointer into the heap or *`entryinfo`* is a null pointer.|
 |**_HEAPEND**| End of the heap reached successfully.|
 |**_HEAPEMPTY**| Heap not initialized.|
-|**_HEAPOK**| No errors so far; *entryinfo* is updated with information about the next heap entry.|
+|**_HEAPOK**| No errors so far; *`entryinfo`* is updated with information about the next heap entry.|
 
 In addition, if an error occurs, **_heapwalk** sets **errno** to **ENOSYS**.
 
@@ -55,7 +55,7 @@ The **_heapwalk** function helps debug heap-related problems in programs. The fu
 
 A call to **_heapwalk** that returns **_HEAPOK** stores the size of the entry in the **_size** field and sets the **_useflag** field to either **_FREEENTRY** or **_USEDENTRY** (both are constants defined in Malloc.h). To obtain this information about the first entry in the heap, pass **_heapwalk** a pointer to a **_HEAPINFO** structure whose **_pentry** member is **NULL**. If the operating system does not support **_heapwalk**(for example, Windows 98), the function returns **_HEAPEND** and sets **errno** to **ENOSYS**.
 
-This function validates its parameter. If *entryinfo* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **_HEAPBADPTR**.
+This function validates its parameter. If *`entryinfo`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **_HEAPBADPTR**.
 
 ## Requirements
 

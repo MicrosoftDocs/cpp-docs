@@ -39,13 +39,13 @@ int _wscanf_s_l(
 
 ### Parameters
 
-*`format`*<br/>
+*`format`*\
 Format control string.
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value

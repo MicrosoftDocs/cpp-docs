@@ -27,7 +27,7 @@ wchar_t *_wasctime(
 
 ### Parameters
 
-*`timeptr`*<br/>
+*`timeptr`*\
 Time/date structure.
 
 ## Return value

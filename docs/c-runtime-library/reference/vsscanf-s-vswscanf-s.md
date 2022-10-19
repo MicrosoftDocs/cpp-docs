@@ -30,26 +30,26 @@ int vswscanf_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Stored data
 
-*format*<br/>
+*`format`*\
 Format-control string. For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
-*arglist*<br/>
+*`arglist`*\
 Variable argument list.
 
 ## Return value
 
 Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion.
 
-If *buffer* or *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *`buffer`* or *`format`* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **vsscanf_s** function reads data from *buffer* into the locations that are given by each argument in the *arglist* argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version **vsscanf**, a buffer size parameter is required when you use the type field characters **c**, **C**, **s**, **S**, or string-control sets that are enclosed in **[]**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it.
+The **vsscanf_s** function reads data from *`buffer`* into the locations that are given by each argument in the *`arglist`* argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in *`format`*. Unlike the less secure version **vsscanf**, a buffer size parameter is required when you use the type field characters **c**, **C**, **s**, **S**, or string-control sets that are enclosed in **[]**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it.
 
 The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
 
@@ -58,7 +58,7 @@ For more information, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](s
 > [!NOTE]
 > The size parameter is of type **`unsigned`**, not **size_t**.
 
-The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the **scanf_s** function. If copying occurs between strings that overlap, the behavior is undefined.
+The *`format`* argument controls the interpretation of the input fields and has the same form and function as the *`format`* argument for the **scanf_s** function. If copying occurs between strings that overlap, the behavior is undefined.
 
 **vswscanf_s** is a wide-character version of **vsscanf_s**; the arguments to **vswscanf_s** are wide-character strings. **vsscanf_s** does not handle multibyte hexadecimal characters. **vswscanf_s** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **vswscanf_s** and **vsscanf_s** behave identically.
 

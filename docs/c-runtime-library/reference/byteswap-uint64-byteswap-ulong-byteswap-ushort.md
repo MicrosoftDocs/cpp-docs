@@ -24,7 +24,7 @@ unsigned __int64 _byteswap_uint64 ( unsigned __int64 val );
 
 ### Parameters
 
-*`val`*<br/>
+*`val`*\
 The integer to reverse byte order.
 
 ## Requirements

@@ -28,15 +28,15 @@ int _ismbbtrail_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 The integer to be tested.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
 ## Return value
 
-**_ismbbtrail** returns a nonzero value if the integer *c* is the second byte of a multibyte character. For example, in code page 932 only, valid ranges are 0x40 to 0x7E and 0x80 to 0xFC.
+**_ismbbtrail** returns a nonzero value if the integer *`c`* is the second byte of a multibyte character. For example, in code page 932 only, valid ranges are 0x40 to 0x7E and 0x80 to 0xFC.
 
 ## Remarks
 

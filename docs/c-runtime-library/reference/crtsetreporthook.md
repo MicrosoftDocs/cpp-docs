@@ -24,7 +24,7 @@ _CRT_REPORT_HOOK _CrtSetReportHook(
 
 ### Parameters
 
-*reportHook*<br/>
+*reportHook*\
 New client-defined reporting function to hook into the C run-time debug reporting process.
 
 ## Return value

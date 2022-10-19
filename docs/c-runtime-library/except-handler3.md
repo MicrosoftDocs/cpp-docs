@@ -27,16 +27,16 @@ int _except_handler3(
 
 #### Parameters
 
-*exception_record*<br/>
+*`exception_record`*\
 [in] Information about the specific exception.
 
-*registration*<br/>
+*`registration`*\
 [in] The record that indicates which scope table should be used to find the exception handler.
 
-*context*<br/>
+*`context`*\
 [in] Reserved.
 
-*dispatcher*<br/>
+*`dispatcher`*\
 [in] Reserved.
 
 ## Return value

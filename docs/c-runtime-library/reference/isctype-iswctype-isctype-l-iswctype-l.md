@@ -39,20 +39,20 @@ int _iswctype_l(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 Integer to test.
 
-*desc*<br/>
+*`desc`*\
 Property to test for. This is normally retrieved using ctype or [`wctype`](wctype.md).
 
-*locale*<br/>
+*`locale`*\
 The locale to use for any locale-dependent tests.
 
 ## Return value
 
-**_isctype** and **iswctype** return a nonzero value if *c* has the property specified by *desc* in the current locale or 0 if it does not. The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
+**_isctype** and **iswctype** return a nonzero value if *`c`* has the property specified by *`desc`* in the current locale or 0 if it does not. The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
-The behavior of **_isctype** and **_isctype_l** is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
+The behavior of **_isctype** and **_isctype_l** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
 
 ### Generic-text routine mappings
 

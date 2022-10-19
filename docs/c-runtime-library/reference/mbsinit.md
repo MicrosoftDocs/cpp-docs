@@ -24,12 +24,12 @@ int mbsinit(
 
 ### Parameters
 
-*ps*<br/>
+*`ps`*\
 A pointer to an [`mbstate_t`](../standard-types.md) variable.
 
 ## Return value
 
-Nonzero if *ps* is **NULL** or if not in the middle of a conversion.
+Nonzero if *`ps`* is **NULL** or if not in the middle of a conversion.
 
 ## Remarks
 

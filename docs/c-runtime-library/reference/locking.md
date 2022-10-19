@@ -26,13 +26,13 @@ int _locking(
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*\
 File descriptor.
 
-*mode*<br/>
+*`mode`*\
 Locking action to perform.
 
-*nbytes*<br/>
+*`nbytes`*\
 Number of bytes to lock.
 
 ## Return value
@@ -50,11 +50,11 @@ If the failure is due to a bad parameter, such as an invalid file descriptor, th
 
 ## Remarks
 
-The **_locking** function locks or unlocks *nbytes* bytes of the file specified by *fd*. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *nbytes* bytes. It is possible to lock bytes past end of file.
+The **_locking** function locks or unlocks *`nbytes`* bytes of the file specified by *`fd`*. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *`nbytes`* bytes. It is possible to lock bytes past end of file.
 
-*mode* must be one of the following manifest constants, which are defined in Locking.h.
+*`mode`* must be one of the following manifest constants, which are defined in Locking.h.
 
-|*mode* value|Effect|
+|*`mode`* value|Effect|
 |-|-|
 | **_LK_LOCK** | Locks the specified bytes. If the bytes cannot be locked, the program immediately tries again after 1 second. If, after 10 attempts, the bytes cannot be locked, the constant returns an error. |
 | **_LK_NBLCK** | Locks the specified bytes. If the bytes cannot be locked, the constant returns an error. |

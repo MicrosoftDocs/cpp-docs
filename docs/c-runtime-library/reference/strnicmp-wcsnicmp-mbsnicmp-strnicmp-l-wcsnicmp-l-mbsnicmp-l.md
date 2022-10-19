@@ -57,13 +57,13 @@ int _mbsnicmp_l(
 
 ### Parameters
 
-*string1*, *string2*<br/>
+*`string1`*, *`string2`*\
 Null-terminated strings to compare.
 
-*count*<br/>
+*`count`*\
 Number of characters to compare.
 
-*locale*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value
@@ -72,21 +72,21 @@ Indicates the relationship between the substrings, as follows.
 
 |Return value|Description|
 |------------------|-----------------|
-|< 0|*string1* substring is less than *string2* substring.|
-|0|*string1* substring is identical to *string2* substring.|
-|> 0|*string1* substring is greater than *string2* substring.|
+|< 0|*`string1`* substring is less than *`string2`* substring.|
+|0|*`string1`* substring is identical to *`string2`* substring.|
+|> 0|*`string1`* substring is greater than *`string2`* substring.|
 
 On a parameter validation error, these functions return **_NLSCMPERROR**, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The **_strnicmp** function ordinally compares, at most, the first *count* characters of *string1* and *string2*. The comparison is performed without regard to case by converting each character to lowercase. **_strnicmp** is a case-insensitive version of **strncmp**. The comparison ends if a terminating null character is reached in either string before *count* characters are compared. If the strings are equal when a terminating null character is reached in either string before *count* characters are compared, the shorter string is lesser.
+The **_strnicmp** function ordinally compares, at most, the first *`count`* characters of *`string1`* and *`string2`*. The comparison is performed without regard to case by converting each character to lowercase. **_strnicmp** is a case-insensitive version of **strncmp**. The comparison ends if a terminating null character is reached in either string before *`count`* characters are compared. If the strings are equal when a terminating null character is reached in either string before *`count`* characters are compared, the shorter string is lesser.
 
 The characters from 91 to 96 in the ASCII table ('[', '\\', ']', '^', '_', and '\`') evaluate as less than any alphabetic character. This ordering is identical to that of **stricmp**.
 
-**_wcsnicmp** and **_mbsnicmp** are wide-character and multibyte-character versions of **_strnicmp**. The arguments of **_wcsnicmp** are wide-character strings; those of **_mbsnicmp** are multibyte-character strings. **_mbsnicmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. For more information, see [Code pages](../code-pages.md). These three functions behave identically otherwise. These functions are affected by the locale setting—the versions that don't have the **_l** suffix use the current locale for their locale-dependent behavior; the versions that do have the **_l** suffix instead use the *locale* that's passed in. For more information, see [Locale](../locale.md).
+**_wcsnicmp** and **_mbsnicmp** are wide-character and multibyte-character versions of **_strnicmp**. The arguments of **_wcsnicmp** are wide-character strings; those of **_mbsnicmp** are multibyte-character strings. **_mbsnicmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. For more information, see [Code pages](../code-pages.md). These three functions behave identically otherwise. These functions are affected by the locale setting—the versions that don't have the **_l** suffix use the current locale for their locale-dependent behavior; the versions that do have the **_l** suffix instead use the *`locale`* that's passed in. For more information, see [Locale](../locale.md).
 
-All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
+All of these functions validate their parameters. If either *`string1`* or *`string2`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

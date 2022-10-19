@@ -22,12 +22,12 @@ int _set_new_mode( int newhandlermode );
 
 ### Parameters
 
-*newhandlermode*<br/>
+*`newhandlermode`*\
 New handler mode for **malloc**; valid value is 0 or 1.
 
 ## Return value
 
-Returns the previous handler mode set for **malloc**. A return value of 1 indicates that, on failure to allocate memory, **malloc** previously called the new handler routine; a return value of 0 indicates that it did not. If the *newhandlermode* argument does not equal 0 or 1, returns -1.
+Returns the previous handler mode set for **malloc**. A return value of 1 indicates that, on failure to allocate memory, **malloc** previously called the new handler routine; a return value of 0 indicates that it did not. If the *`newhandlermode`* argument does not equal 0 or 1, returns -1.
 
 ## Remarks
 
@@ -39,7 +39,7 @@ _set_new_mode(1);
 
 early in your program or link with Newmode.obj (see [Link options](../link-options.md)).
 
-This function validates its parameter. If *newhandlermode* is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, <strong>_set_new_mode</strong> returns -1 and sets **errno** to `EINVAL`.
+This function validates its parameter. If *`newhandlermode`* is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, <strong>_set_new_mode</strong> returns -1 and sets **errno** to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

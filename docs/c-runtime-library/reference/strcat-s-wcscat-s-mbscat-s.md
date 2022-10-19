@@ -66,16 +66,16 @@ errno_t _mbscat_s_l(
 
 ### Parameters
 
-*`strDestination`*<br/>
+*`strDestination`*\
 Null-terminated destination string buffer.
 
-*`numberOfElements`*<br/>
+*`numberOfElements`*\
 Size of the destination string buffer.
 
-*`strSource`*<br/>
+*`strSource`*\
 Null-terminated source string buffer.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
 ## Return value

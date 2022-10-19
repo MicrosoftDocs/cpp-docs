@@ -52,13 +52,13 @@ long double fmal(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The first value to multiply.
 
-*y*\
+*`y`*\
 The second value to multiply.
 
-*z*\
+*`z`*\
 The value to add.
 
 ## Return value
@@ -69,10 +69,10 @@ Otherwise, may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
-|*x* = INFINITY, *y* = 0 or<br /><br /> *x* = 0, *y* = INFINITY|NaN|
-|*x* or *y* = exact ± INFINITY, *z* = INFINITY with the opposite sign|NaN|
-|*x* or *y* = NaN|NaN|
-|not (*x* = 0, *y*= indefinite) and *z* = NaN<br /><br /> not (*x*=indefinite, *y*=0) and *z* = NaN|NaN|
+|*`x`* = INFINITY, *`y`* = 0 or<br /><br /> *`x`* = 0, *`y`* = INFINITY|NaN|
+|*`x`* or *`y`* = exact ± INFINITY, *`z`* = INFINITY with the opposite sign|NaN|
+|*`x`* or *`y`* = NaN|NaN|
+|not (*`x`* = 0, *`y`*= indefinite) and *`z`* = NaN<br /><br /> not (*`x`*=indefinite, *`y`*=0) and *`z`* = NaN|NaN|
 |Overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 |Underflow range error|correct value, after rounding.|
 

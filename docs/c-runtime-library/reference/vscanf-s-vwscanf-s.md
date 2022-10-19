@@ -28,30 +28,30 @@ int vwscanf_s(
 
 ### Parameters
 
-*format*<br/>
+*`format`*\
 Format control string.
 
-*arglist*<br/>
+*`arglist`*\
 Variable argument list.
 
 ## Return value
 
-Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **vscanf_s** and **vwscanf_s** return **EOF** and set **errno** to **EINVAL**.
+Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If *`format`* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **vscanf_s** and **vwscanf_s** return **EOF** and set **errno** to **EINVAL**.
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **vscanf_s** function reads data from the standard input stream **stdin** and writes the data into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
+The **vscanf_s** function reads data from the standard input stream **stdin** and writes the data into the locations that are given by the *`arglist`* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *`format`*. If copying occurs between strings that overlap, the behavior is undefined.
 
-**vwscanf_s** is a wide-character version of **vscanf_s**; the *format* argument to **vwscanf_s** is a wide-character string. **vwscanf_s** and **vscanf_s** behave identically if the stream is opened in ANSI mode. **vscanf_s** doesn't support input from a UNICODE stream.
+**vwscanf_s** is a wide-character version of **vscanf_s**; the *`format`* argument to **vwscanf_s** is a wide-character string. **vwscanf_s** and **vscanf_s** behave identically if the stream is opened in ANSI mode. **vscanf_s** doesn't support input from a UNICODE stream.
 
 Unlike **vscanf** and **vwscanf**, **vscanf_s** and **vwscanf_s** require the buffer size to be specified for all input parameters of type **c**, **C**, **s**, **S**, or string control sets that are enclosed in **[]**. The buffer size in characters is passed as an additional parameter immediately following the pointer to the buffer or variable. The buffer size in characters for a **`wchar_t`** string is not the same as the size in bytes.
 
 The buffer size includes the terminating null. You can use a width-specification field to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
 
 > [!NOTE]
-> The *size* parameter is of type **`unsigned`**, not **size_t**.
+> The *`size`* parameter is of type **`unsigned`**, not **size_t**.
 
 For more information, see [scanf Width Specification](../scanf-width-specification.md).
 

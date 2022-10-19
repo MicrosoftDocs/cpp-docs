@@ -25,10 +25,10 @@ _HFILE _CrtSetReportFile(
 
 ### Parameters
 
-*reportType*<br/>
+*reportType*\
 Report type: **_CRT_WARN**, **_CRT_ERROR**, and **_CRT_ASSERT**.
 
-*reportFile*<br/>
+*reportFile*\
 New report file for *reportType*.
 
 ## Return value

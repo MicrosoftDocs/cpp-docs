@@ -33,16 +33,16 @@ errno_t _gcvt_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Buffer to store the result of the conversion.
 
-*sizeInBytes*<br/>
+*`sizeInBytes`*\
 Size of the buffer.
 
-*value*<br/>
+*`value`*\
 Value to be converted.
 
-*digits*<br/>
+*`digits`*\
 Number of significant digits stored.
 
 ## Return value
@@ -51,19 +51,19 @@ Zero if successful. If a failure occurs due to an invalid parameter (see the fol
 
 ### Error conditions
 
-|*buffer*|*sizeInBytes*|*value*|*digits*|Return|Value in *buffer*|
+|*`buffer`*|*`sizeInBytes`*|*`value`*|*`digits`*|Return|Value in *`buffer`*|
 |--------------|-------------------|-------------|--------------|------------|-----------------------|
 |**NULL**|any|any|any|**EINVAL**|Not modified.|
 |Not **NULL** (points to valid memory)|zero|any|any|**EINVAL**|Not modified.|
-|Not **NULL** (points to valid memory)|any|any|>= *sizeInBytes*|**EINVAL**|Not modified.|
+|Not **NULL** (points to valid memory)|any|any|>= *`sizeInBytes`*|**EINVAL**|Not modified.|
 
 **Security Issues**
 
-**_gcvt_s** can generate an access violation if *buffer* does not point to valid memory and is not **NULL**.
+**_gcvt_s** can generate an access violation if *`buffer`* does not point to valid memory and is not **NULL**.
 
 ## Remarks
 
-The **_gcvt_s** function converts a floating-point *value* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *buffer*. *buffer* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. A buffer of length **_CVTBUFSIZE** is sufficient for any floating point value. If a buffer size of *digits* + 1 is used, the function will not overwrite the end of the buffer, so be sure to supply a sufficient buffer for this operation. **_gcvt_s** attempts to produce *digits* digits in decimal format. If it cannot, it produces *digits* digits in exponential format. Trailing zeros can be suppressed in the conversion.
+The **_gcvt_s** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. A buffer of length **_CVTBUFSIZE** is sufficient for any floating point value. If a buffer size of *`digits`* + 1 is used, the function will not overwrite the end of the buffer, so be sure to supply a sufficient buffer for this operation. **_gcvt_s** attempts to produce *`digits`* digits in decimal format. If it cannot, it produces *`digits`* digits in exponential format. Trailing zeros can be suppressed in the conversion.
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
