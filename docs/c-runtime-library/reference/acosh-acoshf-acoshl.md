@@ -88,8 +88,8 @@ acosh( 1.324609 ) = 0.785398
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)\
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)\
-[cosh, coshf, coshl](cosh-coshf-coshl.md)\
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)\
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)
+[`asinh`, `asinhf`, `asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh`, `atanhf`, `atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh`, `coshf`, `coshl`](cosh-coshf-coshl.md)\
+[`sinh`, `sinhf`, `sinhl`](sinh-sinhf-sinhl.md)\
+[`tanh`, `tanhf`, `tanhl`](tanh-tanhf-tanhl.md)

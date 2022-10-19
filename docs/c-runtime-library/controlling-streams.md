@@ -9,9 +9,9 @@ ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9
 ---
 # Controlling streams
 
-[fopen](./reference/fopen-wfopen.md) returns the address of an object of type `FILE`. You use this address as the `stream` argument to several library functions to perform various operations on an open file. For a byte stream, all input takes place as if each character is read by calling [fgetc](./reference/fgetc-fgetwc.md). All output takes place as if each character is written by calling [fputc](./reference/fputc-fputwc.md). For a wide stream, all input takes place as if each character is read by calling [fgetwc](./reference/fgetc-fgetwc.md). All output takes place as if each character is written by calling [fputwc](./reference/fputc-fputwc.md).
+[`fopen`](./reference/fopen-wfopen.md) returns the address of an object of type `FILE`. You use this address as the `stream` argument to several library functions to perform various operations on an open file. For a byte stream, all input takes place as if each character is read by calling [`fgetc`](./reference/fgetc-fgetwc.md). All output takes place as if each character is written by calling [`fputc`](./reference/fputc-fputwc.md). For a wide stream, all input takes place as if each character is read by calling [`fgetwc`](./reference/fgetc-fgetwc.md). All output takes place as if each character is written by calling [`fputwc`](./reference/fputc-fputwc.md).
 
-You can close a file by calling [fclose](./reference/fclose-fcloseall.md), after which the address of the `FILE` object is invalid.
+You can close a file by calling [`fclose`](./reference/fclose-fcloseall.md), after which the address of the `FILE` object is invalid.
 
 A `FILE` object stores the state of a stream, including:
 

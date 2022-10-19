@@ -178,4 +178,4 @@ Time modified : Wed May 07 15:25:11 2003
 [`_access`, `_waccess`](access-waccess.md)\
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_filelength`, `_filelengthi64`](filelength-filelengthi64.md)\
-[`_stat`, `_wstat` Functions](stat-functions.md)
+[`_stat`, `_wstat` functions](stat-functions.md)

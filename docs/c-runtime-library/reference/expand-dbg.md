@@ -43,17 +43,17 @@ Pointer to the name of the source file that requested expand operation or **NULL
 *lineNumber*<br/>
 Line number in the source file where the expand operation was requested or **NULL**.
 
-The *filename* and *lineNumber* parameters are only available when **_expand_dbg** has been called explicitly or the [_CRTDBG_MAP_ALLOC](../crtdbg-map-alloc.md) preprocessor constant has been defined.
+The *filename* and *lineNumber* parameters are only available when **_expand_dbg** has been called explicitly or the [`_CRTDBG_MAP_ALLOC`](../crtdbg-map-alloc.md) preprocessor constant has been defined.
 
 ## Return value
 
-On successful completion, **_expand_dbg** returns a pointer to the resized memory block. Because the memory isn't moved, the address is the same as the userData. If an error occurred or the block couldn't be expanded to the requested size, it returns **NULL**. If a failure occurs, **errno** is with information from the operating system about the nature of the failure. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+On successful completion, **_expand_dbg** returns a pointer to the resized memory block. Because the memory isn't moved, the address is the same as the userData. If an error occurred or the block couldn't be expanded to the requested size, it returns **NULL**. If a failure occurs, **errno** is with information from the operating system about the nature of the failure. For more information about **errno**, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_expand_dbg** function is a debug version of the _[expand](expand.md) function. When [_DEBUG](../debug.md) isn't defined, each call to **_expand_dbg** is reduced to a call to **_expand**. Both **_expand** and **_expand_dbg** resize a memory block in the base heap, but **_expand_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*lineNumber* information to determine the origin of allocation requests.
+The **_expand_dbg** function is a debug version of the _[`expand`](expand.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **_expand_dbg** is reduced to a call to **_expand**. Both **_expand** and **_expand_dbg** resize a memory block in the base heap, but **_expand_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*lineNumber* information to determine the origin of allocation requests.
 
-**_expand_dbg** resizes the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The extra space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The resize is accomplished by either expanding or contracting the original memory block. **_expand_dbg** doesn't move the memory block, as does the [_realloc_dbg](realloc-dbg.md) function.
+**_expand_dbg** resizes the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The extra space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The resize is accomplished by either expanding or contracting the original memory block. **_expand_dbg** doesn't move the memory block, as does the [`_realloc_dbg`](realloc-dbg.md) function.
 
 When *newSize* is greater than the original block size, the memory block is expanded. During an expansion, if the memory block can't be expanded to accommodate the requested size, **NULL** is returned. When *newSize* is less than the original block size, the memory block is contracted until the new size is obtained.
 
@@ -133,4 +133,4 @@ The output of this program depends on your computer's ability to expand all the 
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_malloc_dbg](malloc-dbg.md)
+[`_malloc_dbg`](malloc-dbg.md)

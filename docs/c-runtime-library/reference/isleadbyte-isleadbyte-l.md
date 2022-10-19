@@ -62,4 +62,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Byte classification](../byte-classification.md)\
 [Locale](../locale.md)\
-[_ismbb Routines](../ismbb-routines.md)
+[`_ismbb` routines](../ismbb-routines.md)

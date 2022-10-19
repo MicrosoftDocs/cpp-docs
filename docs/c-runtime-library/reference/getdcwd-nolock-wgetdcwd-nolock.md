@@ -45,7 +45,7 @@ Maximum length of path in characters: **`char`** for **_getdcwd** and **`wchar_t
 
 ## Return value
 
-See [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
+See [`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md).
 
 ## Remarks
 
@@ -69,8 +69,8 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Directory control](../directory-control.md)\
-[_chdir, _wchdir](chdir-wchdir.md)\
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)\
-[_getdrive](getdrive.md)\
-[_mkdir, _wmkdir](mkdir-wmkdir.md)\
-[_rmdir, _wrmdir](rmdir-wrmdir.md)
+[`_chdir`, `_wchdir`](chdir-wchdir.md)\
+[`_getcwd`, `_wgetcwd`](getcwd-wgetcwd.md)\
+[`_getdrive`](getdrive.md)\
+[`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\
+[`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)

@@ -12,7 +12,7 @@ ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
 ---
 # wcsrtombs
 
-Convert a wide character string to its multibyte character string representation. A more secure version of this function is available; see [wcsrtombs_s](wcsrtombs-s.md).
+Convert a wide character string to its multibyte character string representation. A more secure version of this function is available; see [`wcsrtombs_s`](wcsrtombs-s.md).
 
 ## Syntax
 
@@ -56,7 +56,7 @@ The **wcsrtombs** function converts a string of wide characters, beginning in th
 
 Thus, the multibyte character string at *mbstr* is null-terminated only if **wcsrtombs** encounters a wide character null character during conversion. If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of **wcsrtombs** is undefined. **wcsrtombs** is affected by the LC_TYPE category of the current locale.
 
-The **wcsrtombs** function differs from [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application would use **wcsrlen** rather than **wcsnlen**, if a subsequent call to **wcsrtombs** were used instead of **wcstombs**.
+The **wcsrtombs** function differs from [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application would use **wcsrlen** rather than **wcsnlen**, if a subsequent call to **wcsrtombs** were used instead of **wcstombs**.
 
 If the *mbstr* argument is **NULL**, **wcsrtombs** returns the required size in bytes of the destination string. If *mbstate* is null, the internal **mbstate_t** conversion state is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the **errno** is set to **EILSEQ**.
 
@@ -125,8 +125,8 @@ The string was successfuly converted.
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[wcrtomb](wcrtomb.md)\
-[wcrtomb_s](wcrtomb-s.md)\
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)\
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
-[mbsinit](mbsinit.md)
+[`wcrtomb`](wcrtomb.md)\
+[`wcrtomb_s`](wcrtomb-s.md)\
+[`wctomb`, `_wctomb_l`](wctomb-wctomb-l.md)\
+[`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\
+[`mbsinit`](mbsinit.md)

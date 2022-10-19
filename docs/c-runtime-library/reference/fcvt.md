@@ -12,7 +12,7 @@ ms.assetid: 74584c88-f0dd-4907-8fca-52da5df583f5
 ---
 # _fcvt
 
-Converts a floating-point number to a string. A more secure version of this function is available; see [_fcvt_s](fcvt-s.md).
+Converts a floating-point number to a string. A more secure version of this function is available; see [`_fcvt_s`](fcvt-s.md).
 
 ## Syntax
 
@@ -100,6 +100,6 @@ source: 3.1415926535   buffer: '31415927'   decimal: 1   sign: 0
 
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
-[_ecvt](ecvt.md)\
-[_gcvt](gcvt.md)
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_ecvt`](ecvt.md)\
+[`_gcvt`](gcvt.md)

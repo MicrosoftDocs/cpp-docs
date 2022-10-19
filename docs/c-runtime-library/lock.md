@@ -41,4 +41,4 @@ If the lock has already been acquired, this method acquires the lock anyway and 
 ## See also
 
 [Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
-[_unlock](./unlock.md)
+[`_unlock`](./unlock.md)

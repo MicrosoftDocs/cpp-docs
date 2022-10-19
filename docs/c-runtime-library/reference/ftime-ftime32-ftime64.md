@@ -12,7 +12,7 @@ ms.assetid: 96bc464c-3bcd-41d5-a212-8bbd836b814a
 ---
 # _ftime, _ftime32, _ftime64
 
-Get the current time. More secure versions of these functions are available; see [_ftime_s, _ftime32_s, _ftime64_s](ftime-s-ftime32-s-ftime64-s.md).
+Get the current time. More secure versions of these functions are available; see [`_ftime_s`, `_ftime32_s`, `_ftime64_s`](ftime-s-ftime32-s-ftime64-s.md).
 
 ## Syntax
 
@@ -33,7 +33,7 @@ The **_ftime** function gets the current local time and stores it in the structu
 
 |Field|Description|
 |-|-|
-|**dstflag**|Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](tzset.md) for an explanation of how daylight savings time is determined.)|
+|**dstflag**|Nonzero if daylight savings time is currently in effect for the local time zone. (See [`_tzset`](tzset.md) for an explanation of how daylight savings time is determined.)|
 |**millitm**|Fraction of a second in milliseconds.|
 |**time**|Time in seconds since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).|
 |**timezone**|Difference in minutes, moving westward, between UTC and local time. The value of **timezone** is set from the value of the global variable **_timezone** (see **_tzset**).|
@@ -114,8 +114,8 @@ The time is Mon Apr 28 11:08:54.230 2003
 ## See also
 
 [Time management](../time-management.md)\
-[asctime, _wasctime](asctime-wasctime.md)\
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
-[time, _time32, _time64](time-time32-time64.md)
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)

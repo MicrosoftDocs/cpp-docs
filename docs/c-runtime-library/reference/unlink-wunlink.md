@@ -34,7 +34,7 @@ Name of file to remove.
 
 Each of these functions returns 0 if successful. Otherwise, the function returns -1 and sets **errno** to **EACCES**, which means the path specifies a read-only file or a directory, or to **ENOENT**, which means the file or path isn't found.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -90,5 +90,5 @@ Deleted 'CRT_UNLINK.TXT'
 ## See also
 
 [File handling](../file-handling.md)\
-[_close](close.md)\
-[remove, _wremove](remove-wremove.md)
+[`_close`](close.md)\
+[`remove`, `_wremove`](remove-wremove.md)

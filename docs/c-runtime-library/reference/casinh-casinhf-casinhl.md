@@ -58,15 +58,15 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)\
-[ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)\
-[catan, catanf, catanl](catan-catanf-catanl.md)\
-[csinh, csinhf, csinhl](csinh-csinhf-csinhl.md)\
-[ccosh, ccoshf, ccoshl](ccosh-ccoshf-ccoshl.md)\
-[cacosh, cacoshf, cacoshl](cacosh-cacoshf-cacoshl.md)\
-[cacos, cacosf, cacosl](cacos-cacosf-cacosl.md)\
-[ctan, ctanf, ctanl](ctan-ctanf-ctanl.md)\
-[csin, csinf, csinl](csin-csinf-csinl.md)\
-[casin, casinf, casinl](casin-casinf-casinl.md)\
-[ccos, ccosf, ccosl](ccos-ccosf-ccosl.md)\
-[csqrt, csqrtf, csqrtl](csqrt-csqrtf-csqrtl.md)
+[`catanh`, `catanhf`, `catanhl`](catanh-catanhf-catanhl.md)\
+[`ctanh`, `ctanhf`, `ctanhl`](ctanh-ctanhf-ctanhl.md)\
+[`catan`, `catanf`, `catanl`](catan-catanf-catanl.md)\
+[`csinh`, `csinhf`, `csinhl`](csinh-csinhf-csinhl.md)\
+[`ccosh`, `ccoshf`, `ccoshl`](ccosh-ccoshf-ccoshl.md)\
+[`cacosh`, `cacoshf`, `cacoshl`](cacosh-cacoshf-cacoshl.md)\
+[`cacos`, `cacosf`, `cacosl`](cacos-cacosf-cacosl.md)\
+[`ctan`, `ctanf`, `ctanl`](ctan-ctanf-ctanl.md)\
+[`csin`, `csinf`, `csinl`](csin-csinf-csinl.md)\
+[`casin`, `casinf`, `casinl`](casin-casinf-casinl.md)\
+[`ccos`, `ccosf`, `ccosl`](ccos-ccosf-ccosl.md)\
+[`csqrt`, `csqrtf`, `csqrtl`](csqrt-csqrtf-csqrtl.md)

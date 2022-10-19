@@ -12,7 +12,7 @@ ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60
 ---
 # mbsrtowcs_s
 
-Convert a multibyte character string in the current locale to its wide character string representation. A version of [mbsrtowcs](mbsrtowcs.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Convert a multibyte character string in the current locale to its wide character string representation. A version of [`mbsrtowcs`](mbsrtowcs.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -50,7 +50,7 @@ The size of *wcstr* in words (wide characters).
 Indirect pointer to the location of the multibyte character string to be converted.
 
 *count*<br/>
-The maximum number of wide characters to store in the *wcstr* buffer, not including the terminating null, or [_TRUNCATE](../truncate.md).
+The maximum number of wide characters to store in the *wcstr* buffer, not including the terminating null, or [`_TRUNCATE`](../truncate.md).
 
 *mbstate*<br/>
 A pointer to an **mbstate_t** conversion state object. If this value is a null pointer, a static internal conversion state object is used. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *mbstate* parameter.
@@ -80,7 +80,7 @@ The **mbsrtowcs_s** function converts a string of multibyte characters indirectl
 
 The destination string *wcstr* is always null-terminated, even in the case of an error, unless *wcstr* is a null pointer.
 
-If *count* is the special value [_TRUNCATE](../truncate.md), **mbsrtowcs_s** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
+If *count* is the special value [`_TRUNCATE`](../truncate.md), **mbsrtowcs_s** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
 
 If **mbsrtowcs_s** successfully converts the source string, it puts the size in wide characters of the converted string and the null terminator into `*pReturnValue`, provided *pReturnValue* is not a null pointer. This occurs even if the *wcstr* argument is a null pointer and lets you determine the required buffer size. Note that if *wcstr* is a null pointer, *count* is ignored.
 
@@ -95,7 +95,7 @@ If the sequences pointed to by *mbstr* and *wcstr* overlap, the behavior of **mb
 > [!IMPORTANT]
 > Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of multibyte characters to convert.
 
-The **mbsrtowcs_s** function differs from [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application should use **mbsrlen** instead of **mbslen**, if a subsequent call to **mbsrtowcs_s** is used instead of **mbstowcs_s**.
+The **mbsrtowcs_s** function differs from [`mbstowcs_s`, `_mbstowcs_s_l`](mbstowcs-s-mbstowcs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application should use **mbsrlen** instead of **mbslen**, if a subsequent call to **mbsrtowcs_s** is used instead of **mbstowcs_s**.
 
 In C++, using this function is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the requirement to specify a size argument) and they can automatically replace older, non-secure functions by using their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -116,7 +116,7 @@ The **mbsrtowcs_s** function is multithread safe if no function in the current t
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[mbrtowc](mbrtowc.md)\
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
-[mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md)\
-[mbsinit](mbsinit.md)
+[`mbrtowc`](mbrtowc.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`mbstowcs_s`, `_mbstowcs_s_l`](mbstowcs-s-mbstowcs-s-l.md)\
+[`mbsinit`](mbsinit.md)

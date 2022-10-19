@@ -25,7 +25,7 @@ int fesetenv(
 ### Parameters
 
 *`penv`*<br/>
-Pointer to a **fenv_t** object that contains a floating-point environment as set by a call to [fegetenv](fegetenv1.md) or [feholdexcept](feholdexcept2.md). You can also specify the default startup floating-point environment by using the **FE_DFL_ENV** macro.
+Pointer to a **fenv_t** object that contains a floating-point environment as set by a call to [`fegetenv`](fegetenv1.md) or [`feholdexcept`](feholdexcept2.md). You can also specify the default startup floating-point environment by using the **FE_DFL_ENV** macro.
 
 ## Return value
 
@@ -37,7 +37,7 @@ The **fesetenv** function sets the current floating-point environment from the v
 
 A call to this function sets the exception status flags that are in the *`penv`* object, but it doesn't raise those exceptions.
 
-To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
 
 ## Requirements
 
@@ -50,7 +50,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[fegetenv](fegetenv1.md)\
-[feclearexcept](feclearexcept1.md)\
-[feholdexcept](feholdexcept2.md)\
-[fesetexceptflag](fesetexceptflag2.md)
+[`fegetenv`](fegetenv1.md)\
+[`feclearexcept`](feclearexcept1.md)\
+[`feholdexcept`](feholdexcept2.md)\
+[`fesetexceptflag`](fesetexceptflag2.md)

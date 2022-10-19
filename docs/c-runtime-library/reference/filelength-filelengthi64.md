@@ -49,12 +49,12 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [_chsize](chsize.md).
+See the example for [`_chsize`](chsize.md).
 
 ## See also
 
 [File handling](../file-handling.md)\
-[_chsize](chsize.md)\
-[_fileno](fileno.md)\
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
-[_stat, _wstat Functions](stat-functions.md)
+[`_chsize`](chsize.md)\
+[`_fileno`](fileno.md)\
+[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
+[`_stat`, `_wstat` functions](stat-functions.md)

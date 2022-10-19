@@ -54,15 +54,15 @@ For more information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [_getdrive](getdrive.md).
+See the example for [`_getdrive`](getdrive.md).
 
 ## See also
 
 [Directory control](../directory-control.md)\
-[_chdir, _wchdir](chdir-wchdir.md)\
-[_fullpath, _wfullpath](fullpath-wfullpath.md)\
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)\
-[_getdrive](getdrive.md)\
-[_mkdir, _wmkdir](mkdir-wmkdir.md)\
-[_rmdir, _wrmdir](rmdir-wrmdir.md)\
-[system, _wsystem](system-wsystem.md)
+[`_chdir`, `_wchdir`](chdir-wchdir.md)\
+[`_fullpath`, `_wfullpath`](fullpath-wfullpath.md)\
+[`_getcwd`, `_wgetcwd`](getcwd-wgetcwd.md)\
+[`_getdrive`](getdrive.md)\
+[`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\
+[`_rmdir`, `_wrmdir`](rmdir-wrmdir.md)\
+[`system`, `_wsystem`](system-wsystem.md)

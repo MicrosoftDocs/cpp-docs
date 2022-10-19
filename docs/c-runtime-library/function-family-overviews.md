@@ -10,7 +10,7 @@ This section lists C runtime library routines by function family.
 
 ## CRT library routine families
 
-[_exec, _wexec](exec-wexec-functions.md)\
+[`_exec`, `_wexec`](exec-wexec-functions.md)\
 Functions to load and execute a new process.
 
 [Filename search functions](filename-search-functions.md)\

@@ -119,10 +119,10 @@ lroundl(-3.500000) is -4
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)\
-[floor, floorf, floorl](floor-floorf-floorl.md)\
-[fmod, fmodf](fmod-fmodf.md)\
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)\
-[round, roundf, roundl](round-roundf-roundl.md)\
-[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)\
-[rint, rintf, rintl](rint-rintf-rintl.md)
+[`ceil`, `ceilf`, `ceill`](ceil-ceilf-ceill.md)\
+[`floor`, `floorf`, `floorl`](floor-floorf-floorl.md)\
+[`fmod`, `fmodf`](fmod-fmodf.md)\
+[`lrint`, `lrintf`, `lrintl`, `llrint`, `llrintf`, `llrintl`](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)\
+[`round`, `roundf`, `roundl`](round-roundf-roundl.md)\
+[`nearbyint`, `nearbyintf`, `nearbyintl`](nearbyint-nearbyintf-nearbyintl1.md)\
+[`rint`, `rintf`, `rintl`](rint-rintf-rintl.md)

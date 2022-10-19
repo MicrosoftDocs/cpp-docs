@@ -40,6 +40,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
-[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)\
-[_free_locale](free-locale.md)
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`_create_locale`, `_wcreate_locale`](create-locale-wcreate-locale.md)\
+[`_free_locale`](free-locale.md)

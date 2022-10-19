@@ -32,9 +32,9 @@ When the "r+", "w+", or "a+" type is specified, both reading and writing are all
 
 ## See also
 
-[_fdopen, _wfdopen](./reference/fdopen-wfdopen.md)\
-[fopen, _wfopen](./reference/fopen-wfopen.md)\
-[freopen, _wfreopen](./reference/freopen-wfreopen.md)\
-[_fsopen, _wfsopen](./reference/fsopen-wfsopen.md)\
-[_popen, _wpopen](./reference/popen-wpopen.md)\
+[`_fdopen`, `_wfdopen`](./reference/fdopen-wfdopen.md)\
+[`fopen`, `_wfopen`](./reference/fopen-wfopen.md)\
+[`freopen`, `_wfreopen`](./reference/freopen-wfreopen.md)\
+[`_fsopen`, `_wfsopen`](./reference/fsopen-wfsopen.md)\
+[`_popen`, `_wpopen`](./reference/popen-wpopen.md)\
 [Global constants](./global-constants.md)

@@ -12,7 +12,7 @@ ms.assetid: 055eb539-a8c2-4a7d-be54-f5b6d1eb5c85
 ---
 # _mktemp, _wmktemp
 
-Creates a unique file name. More secure versions of these functions are available; see [_mktemp_s, _wmktemp_s](mktemp-s-wmktemp-s.md).
+Creates a unique file name. More secure versions of these functions are available; see [`_mktemp_s`, `_wmktemp_s`](mktemp-s-wmktemp-s.md).
 
 ## Syntax
 
@@ -176,10 +176,10 @@ Out of unique filenames.
 ## See also
 
 [File handling](../file-handling.md)\
-[fopen, _wfopen](fopen-wfopen.md)\
-[_getmbcp](getmbcp.md)\
-[_getpid](getpid.md)\
-[_open, _wopen](open-wopen.md)\
-[_setmbcp](setmbcp.md)\
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)\
-[tmpfile](tmpfile.md)
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`_getmbcp`](getmbcp.md)\
+[`_getpid`](getpid.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_setmbcp`](setmbcp.md)\
+[`_tempnam`, `_wtempnam`, `tmpnam`, `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+[`tmpfile`](tmpfile.md)

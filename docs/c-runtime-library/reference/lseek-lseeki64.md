@@ -44,7 +44,7 @@ Initial position.
 
 **_lseek** returns the offset, in bytes, of the new position from the beginning of the file. **_lseeki64** returns the offset in a 64-bit integer. The function returns -1L to indicate an error. If passed an invalid parameter, such as a bad file descriptor, or the value for *origin* is invalid or the position specified by *offset* is before the beginning of the file, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EBADF** and return -1L. On devices incapable of seeking (such as terminals and printers), the return value is undefined.
 
-For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -146,5 +146,5 @@ Position for end of file seek = 57
 ## See also
 
 [Low-level I/O](../low-level-i-o.md)\
-[fseek, _fseeki64](fseek-fseeki64.md)\
-[_tell, _telli64](tell-telli64.md)
+[`fseek`, `_fseeki64`](fseek-fseeki64.md)\
+[`_tell`, `_telli64`](tell-telli64.md)

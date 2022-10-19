@@ -11,7 +11,7 @@ helpviewer_keywords: ["floating-point numbers, control word", "controlfp_s funct
 ---
 # `_controlfp_s`
 
-Gets and sets the floating-point control word. This version of [`_control87`, `_controlfp`, `\__control87_2`](control87-controlfp-control87-2.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Gets and sets the floating-point control word. This version of [`_control87`, `_controlfp`, `__control87_2`](control87-controlfp-control87-2.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -161,4 +161,4 @@ Default:  0x9001f
 [Math and floating-point support](../floating-point-support.md)\
 [`_clear87`, `_clearfp`](clear87-clearfp.md)\
 [`_status87`, `_statusfp`, `_statusfp2`](status87-statusfp-statusfp2.md)\
-[`_control87`, `_controlfp`, `\__control87_2`](control87-controlfp-control87-2.md)
+[`_control87`, `_controlfp`, `__control87_2`](control87-controlfp-control87-2.md)

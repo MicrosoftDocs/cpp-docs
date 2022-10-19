@@ -42,7 +42,7 @@ If the function tries to read at end of file, it returns 0. If *`fd`* is not val
 
 If *`buffer`* is `NULL`, or if *`buffer_size`* > **`INT_MAX`**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and **`errno`** is set to **`EINVAL`**.
 
-For more information about this and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

@@ -41,7 +41,7 @@ Pointer to the **FILE** structure.
 
 ## Return value
 
-See [fread](fread.md).
+See [`fread`](fread.md).
 
 ## Remarks
 
@@ -60,5 +60,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fwrite](fwrite.md)\
-[_read](read.md)
+[`fwrite`](fwrite.md)\
+[`_read`](read.md)

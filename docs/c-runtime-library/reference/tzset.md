@@ -25,7 +25,7 @@ void _tzset( void );
 
 ## Remarks
 
-The **_tzset** function uses the current setting of the environment variable **TZ** to assign values to three global variables: **_daylight**, **_timezone**, and **_tzname**. These variables are used by the [_ftime](ftime-ftime32-ftime64.md) and [localtime](localtime-localtime32-localtime64.md) functions to make corrections from coordinated universal time (UTC) to local time, and by the [time](time-time32-time64.md) function to compute UTC from system time. Use the following syntax to set the **TZ** environment variable:
+The **_tzset** function uses the current setting of the environment variable **TZ** to assign values to three global variables: **_daylight**, **_timezone**, and **_tzname**. These variables are used by the [`_ftime`](ftime-ftime32-ftime64.md) and [`localtime`](localtime-localtime32-localtime64.md) functions to make corrections from coordinated universal time (UTC) to local time, and by the [`time`](time-time32-time64.md) function to compute UTC from system time. Use the following syntax to set the **TZ** environment variable:
 
 > **set TZ=**_tzn_ \[**+**&#124;**-**]*hh*\[**:**_mm_\[**:**_ss_] ][*dzn*]
 
@@ -64,7 +64,7 @@ Based on the **TZ** environment variable value, the following values are assigne
 |**_tzname**[0]|String value of time-zone name from **TZ** environmental variable; empty if **TZ** has not been set.|PST|
 |**_tzname**[1]|String value of daylight-saving-time zone; empty if daylight-saving-time zone is omitted from **TZ** environmental variable.|PDT|
 
-The default values shown in the preceding table for **_daylight** and the **_tzname** array correspond to "PST8PDT." If the DST zone is omitted from the **TZ** environmental variable, the value of **_daylight** is 0 and the [_ftime](ftime-ftime32-ftime64.md), [gmtime](gmtime-gmtime32-gmtime64.md), and [localtime](localtime-localtime32-localtime64.md) functions return 0 for their DST flags.
+The default values shown in the preceding table for **_daylight** and the **_tzname** array correspond to "PST8PDT." If the DST zone is omitted from the **TZ** environmental variable, the value of **_daylight** is 0 and the [`_ftime`](ftime-ftime32-ftime64.md), [`gmtime`](gmtime-gmtime32-gmtime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions return 0 for their DST flags.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -114,9 +114,9 @@ _tzname[0] = Pacific Standard Time
 ## See also
 
 [Time management](../time-management.md)\
-[asctime, _wasctime](asctime-wasctime.md)\
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
-[time, _time32, _time64](time-time32-time64.md)\
-[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](utime-utime32-utime64-wutime-wutime32-wutime64.md)
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`](utime-utime32-utime64-wutime-wutime32-wutime64.md)

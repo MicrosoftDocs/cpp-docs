@@ -70,5 +70,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Byte classification](../byte-classification.md)\
-[_ismbb routines](../ismbb-routines.md)\
-[mbrlen](mbrlen.md)
+[`_ismbb` routines](../ismbb-routines.md)\
+[`mbrlen`](mbrlen.md)

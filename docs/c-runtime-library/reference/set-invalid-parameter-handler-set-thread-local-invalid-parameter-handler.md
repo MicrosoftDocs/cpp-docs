@@ -66,7 +66,7 @@ The **_set_invalid_parameter_handler** and **_set_thread_local_invalid_parameter
 
 ## Example
 
-In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [_CrtSetReportMode](crtsetreportmode.md).
+In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [`_CrtSetReportMode`](crtsetreportmode.md).
 
 ```C
 // crt_set_invalid_parameter_handler.c
@@ -112,6 +112,6 @@ Expression: format != nullptr
 
 ## See also
 
-[_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)\
+[`_get_invalid_parameter_handler`, `_get_thread_local_invalid_parameter_handler`](get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)\
 [Security-enhanced versions of CRT functions](../security-enhanced-versions-of-crt-functions.md)\
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md)
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)

@@ -43,9 +43,9 @@ The argument returned is evaluated twice by the macro. This can lead to unexpect
 
 ## Example
 
-For more information, see the example for [__min](min.md).
+For more information, see the example for [`__min`](min.md).
 
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[__min](min.md)
+[`__min`](min.md)

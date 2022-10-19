@@ -60,8 +60,8 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[fpclassify](fpclassify.md)\
-[_fpclass, _fpclassf](fpclass-fpclassf.md)\
-[isinf](isinf.md)\
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)\
-[isnormal](isnormal.md)
+[`fpclassify`](fpclassify.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)\
+[`isinf`](isinf.md)\
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)\
+[`isnormal`](isnormal.md)

@@ -72,4 +72,4 @@ int main( void )
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[_rotl, _rotl64, _rotr, _rotr64](rotl-rotl64-rotr-rotr64.md)
+[`_rotl`, `_rotl64`, `_rotr`, `_rotr64`](rotl-rotl64-rotr-rotr64.md)

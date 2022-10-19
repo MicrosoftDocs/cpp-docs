@@ -61,5 +61,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)\
-[abort](abort.md)\
-[signal](signal.md)
+[`abort`](abort.md)\
+[`signal`](signal.md)

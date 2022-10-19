@@ -59,12 +59,12 @@ Optional substitution arguments used by *`format`*.
 
 For all report destinations, **_CrtDbgReport** and **_CrtDbgReportW** return -1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user chooses the **Retry** button, these functions return 1. If the user chooses the **Abort** button in the Debug Message window, these functions immediately abort and don't return a value.
 
-The [_RPT, _RPTF](rpt-rptf-rptw-rptfw-macros.md) debug macros call **_CrtDbgReport** to generate their debug reports. The wide-character versions of these macros, along with [_ASSERT, _ASSERTE](assert-asserte-assert-expr-macros.md), [_RPTW](rpt-rptf-rptw-rptfw-macros.md)
-and [_RPTFW](rpt-rptf-rptw-rptfw-macros.md), use **_CrtDbgReportW** to generate their debug reports. When **_CrtDbgReport** or **_CrtDbgReportW** return 1, these macros start the debugger, if just-in-time (JIT) debugging is enabled.
+The [`_RPT`, `_RPTF`](rpt-rptf-rptw-rptfw-macros.md) debug macros call **_CrtDbgReport** to generate their debug reports. The wide-character versions of these macros, along with [`_ASSERT`, `_ASSERTE`](assert-asserte-assert-expr-macros.md), [`_RPTW`](rpt-rptf-rptw-rptfw-macros.md)
+and [`_RPTFW`](rpt-rptf-rptw-rptfw-macros.md), use **_CrtDbgReportW** to generate their debug reports. When **_CrtDbgReport** or **_CrtDbgReportW** return 1, these macros start the debugger, if just-in-time (JIT) debugging is enabled.
 
 ## Remarks
 
-**_CrtDbgReport** and **_CrtDbgReportW** can send the debug report to three different destinations: a debug report file, a debug monitor (the Visual Studio debugger), or a debug message window. Two configuration functions, [_CrtSetReportMode](crtsetreportmode.md) and [_CrtSetReportFile](crtsetreportfile.md), are used to specify the destination or destinations for each report type. These functions allow the reporting destination or destinations for each report type to be separately controlled. For example, it's possible to specify that a *`reportType`* of **_CRT_WARN** only goes to the debug monitor, while a *`reportType`* of **_CRT_ASSERT** goes to both a debug message window and a user-defined report file.
+**_CrtDbgReport** and **_CrtDbgReportW** can send the debug report to three different destinations: a debug report file, a debug monitor (the Visual Studio debugger), or a debug message window. Two configuration functions, [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md), are used to specify the destination or destinations for each report type. These functions allow the reporting destination or destinations for each report type to be separately controlled. For example, it's possible to specify that a *`reportType`* of **_CRT_WARN** only goes to the debug monitor, while a *`reportType`* of **_CRT_ASSERT** goes to both a debug message window and a user-defined report file.
 
 **_CrtDbgReportW** is the wide-character version of **_CrtDbgReport**. All its output and string parameters are in wide-character strings; otherwise it's identical to the single-byte character version.
 
@@ -80,9 +80,9 @@ The following table lists the available choices for the report mode or modes and
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|Writes message to **stderr**.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|Writes message to **stdout**.|
 
-The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [_CrtSetReportMode](crtsetreportmode.md) and [_CrtSetReportFile](crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting).
+The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting).
 
-If your application needs more flexibility than that provided by **_CrtDbgReport** and **_CrtDbgReportW**, you can write your own reporting function and hook it into the C run-time library reporting mechanism by using the [_CrtSetReportHook](crtsetreporthook.md) function.
+If your application needs more flexibility than that provided by **_CrtDbgReport** and **_CrtDbgReportW**, you can write your own reporting function and hook it into the C run-time library reporting mechanism by using the [`_CrtSetReportHook`](crtsetreporthook.md) function.
 
 ## Requirements
 
@@ -110,12 +110,12 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-See [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2) for an example of how to change the report function.
+See [`crt_dbg2`](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2) for an example of how to change the report function.
 
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_CrtSetReportMode](crtsetreportmode.md)\
-[_CrtSetReportFile](crtsetreportfile.md)\
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
-[_DEBUG](../debug.md)
+[`_CrtSetReportMode`](crtsetreportmode.md)\
+[`_CrtSetReportFile`](crtsetreportfile.md)\
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
+[`_DEBUG`](../debug.md)

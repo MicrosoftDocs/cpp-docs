@@ -13,39 +13,39 @@ Use _nolock functions only if your program is truly single-threaded or if it doe
 
 ## No lock routines
 
-[_fclose_nolock](./reference/fclose-nolock.md)
+[`_fclose_nolock`](./reference/fclose-nolock.md)
 
-[_fflush_nolock](./reference/fflush-nolock.md)
+[`_fflush_nolock`](./reference/fflush-nolock.md)
 
-[_fgetc_nolock, _fgetwc_nolock](./reference/fgetc-nolock-fgetwc-nolock.md)
+[`_fgetc_nolock`, `_fgetwc_nolock`](./reference/fgetc-nolock-fgetwc-nolock.md)
 
-[_fread_nolock](./reference/fread-nolock.md)
+[`_fread_nolock`](./reference/fread-nolock.md)
 
-[_fseek_nolock, _fseeki64_nolock](./reference/fseek-nolock-fseeki64-nolock.md)
+[`_fseek_nolock`, `_fseeki64_nolock`](./reference/fseek-nolock-fseeki64-nolock.md)
 
-[_ftell_nolock, _ftelli64_nolock](./reference/ftell-nolock-ftelli64-nolock.md)
+[`_ftell_nolock`, `_ftelli64_nolock`](./reference/ftell-nolock-ftelli64-nolock.md)
 
-[_fwrite_nolock](./reference/fwrite-nolock.md)
+[`_fwrite_nolock`](./reference/fwrite-nolock.md)
 
-[_getc_nolock, _getwc_nolock](./reference/getc-nolock-getwc-nolock.md)
+[`_getc_nolock`, `_getwc_nolock`](./reference/getc-nolock-getwc-nolock.md)
 
-[_getch_nolock, _getwch_nolock](./reference/getch-nolock-getwch-nolock.md)
+[`_getch_nolock`, `_getwch_nolock`](./reference/getch-nolock-getwch-nolock.md)
 
-[_getchar_nolock, _getwchar_nolock](./reference/getchar-nolock-getwchar-nolock.md)
+[`_getchar_nolock`, `_getwchar_nolock`](./reference/getchar-nolock-getwchar-nolock.md)
 
-[_getche_nolock, _getwche_nolock](./reference/getche-nolock-getwche-nolock.md)
+[`_getche_nolock`, `_getwche_nolock`](./reference/getche-nolock-getwche-nolock.md)
 
-[_getdcwd_nolock, _wgetdcwd_nolock](./reference/getdcwd-nolock-wgetdcwd-nolock.md)
+[`_getdcwd_nolock`, `_wgetdcwd_nolock`](./reference/getdcwd-nolock-wgetdcwd-nolock.md)
 
-[_putc_nolock, _putwc_nolock](./reference/putc-nolock-putwc-nolock.md)
+[`_putc_nolock`, `_putwc_nolock`](./reference/putc-nolock-putwc-nolock.md)
 
-[_putch_nolock, _putwch_nolock](./reference/putch-nolock-putwch-nolock.md)
+[`_putch_nolock`, `_putwch_nolock`](./reference/putch-nolock-putwch-nolock.md)
 
-[_putchar_nolock, _putwchar_nolock](./reference/putchar-nolock-putwchar-nolock.md)
+[`_putchar_nolock`, `_putwchar_nolock`](./reference/putchar-nolock-putwchar-nolock.md)
 
-[_ungetc_nolock, _ungetwc_nolock](./reference/ungetc-nolock-ungetwc-nolock.md)
+[`_ungetc_nolock`, `_ungetwc_nolock`](./reference/ungetc-nolock-ungetwc-nolock.md)
 
-[_ungetch_nolock, _ungetwch_nolock](./reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
+[`_ungetch_nolock`, `_ungetwch_nolock`](./reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
 
 ## See also
 

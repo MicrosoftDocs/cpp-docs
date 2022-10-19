@@ -12,7 +12,7 @@ ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
 ---
 # _strtime_s, _wstrtime_s
 
-Copy the current time to a buffer. These are versions of [_strtime, _wstrtime](strtime-wstrtime.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Copy the current time to a buffer. These are versions of [`_strtime`, `_wstrtime`](strtime-wstrtime.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -66,13 +66,13 @@ Passing a value for *numberOfElements* that is greater than the actual size of t
 
 ## Remarks
 
-These functions provide more secure versions of [_strtime](strtime-wstrtime.md) and [_wstrtime](strtime-wstrtime.md). The **_strtime_s** function copies the current local time into the buffer pointed to by *timestr*. The time is formatted as **hh:mm:ss** where **hh** is two digits representing the hour in 24-hour notation, **mm** is two digits representing the minutes past the hour, and **ss** is two digits representing seconds. For example, the string **18:23:44** represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
+These functions provide more secure versions of [`_strtime`](strtime-wstrtime.md) and [`_wstrtime`](strtime-wstrtime.md). The **_strtime_s** function copies the current local time into the buffer pointed to by *timestr*. The time is formatted as **hh:mm:ss** where **hh** is two digits representing the hour in 24-hour notation, **mm** is two digits representing the minutes past the hour, and **ss** is two digits representing seconds. For example, the string **18:23:44** represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
 
 **_wstrtime** is a wide-character version of **_strtime**; the argument and return value of **_wstrtime** are wide-character strings. These functions behave identically otherwise.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -137,10 +137,10 @@ OS date:            04/25/03
 ## See also
 
 [Time management](../time-management.md)\
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)\
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)\
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)\
-[time, _time32, _time64](time-time32-time64.md)\
-[_tzset](tzset.md)
+[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
+[`ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)\
+[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)\
+[`mktime`, `_mktime32`, `_mktime64`](mktime-mktime32-mktime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_tzset`](tzset.md)

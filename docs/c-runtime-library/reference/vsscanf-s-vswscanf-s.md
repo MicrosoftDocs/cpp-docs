@@ -11,7 +11,7 @@ ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
 ---
 # vsscanf_s, vswscanf_s
 
-Reads formatted data from a string. These versions of [vsscanf, vswscanf](vsscanf-vswscanf.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Reads formatted data from a string. These versions of [`vsscanf`, `vswscanf`](vsscanf-vswscanf.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -45,7 +45,7 @@ Each of these functions returns the number of fields that are successfully conve
 
 If *buffer* or *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
-For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -53,7 +53,7 @@ The **vsscanf_s** function reads data from *buffer* into the locations that are 
 
 The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
 
-For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../scanf-type-field-characters.md).
+For more information, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../scanf-type-field-characters.md).
 
 > [!NOTE]
 > The size parameter is of type **`unsigned`**, not **size_t**.
@@ -132,8 +132,8 @@ Real:     = 15.000000
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)\
-[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)\
-[sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)\
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
-[vsscanf, vswscanf](vsscanf-vswscanf.md)
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
+[`sscanf_s`, `_sscanf_s_l`, `swscanf_s`, `_swscanf_s_l`](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[`vsscanf`, `vswscanf`](vsscanf-vswscanf.md)

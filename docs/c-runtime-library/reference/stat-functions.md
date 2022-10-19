@@ -79,7 +79,7 @@ Pointer to structure that stores results.
 
 Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case **`errno`** is set to **`ENOENT`**, indicating that the filename or path couldn't be found. A return value of **`EINVAL`** indicates an invalid parameter; **`errno`** is also set to **`EINVAL`** in this case.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 The date stamp on a file can be represented if it's later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use **`_stat32`** or **`_wstat32`**, or have defined **`_USE_32BIT_TIME_T`**, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.
 

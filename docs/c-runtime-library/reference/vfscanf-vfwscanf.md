@@ -11,7 +11,7 @@ ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
 ---
 # vfscanf, vfwscanf
 
-Reads formatted data from a stream. More secure versions of these functions are available; see [vfscanf_s, vfwscanf_s](vfscanf-s-vfwscanf-s.md).
+Reads formatted data from a stream. More secure versions of these functions are available; see [`vfscanf_s`, `vfwscanf_s`](vfscanf-s-vfwscanf-s.md).
 
 ## Syntax
 
@@ -47,7 +47,7 @@ These functions validate their parameters. If *stream* or *format* is a null poi
 
 ## Remarks
 
-The **vfscanf** function reads data from the current position of *stream* into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for **scanf**; see [scanf](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
+The **vfscanf** function reads data from the current position of *stream* into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for **scanf**; see [`scanf`](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
 
 **vfwscanf** is a wide-character version of **vfscanf**; the format argument to **vfwscanf** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **vfscanf** doesn't support input from a UNICODE stream.
 
@@ -138,9 +138,9 @@ x
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)\
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)\
-[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)\
-[fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)\
-[vfscanf_s, vfwscanf_s](vfscanf-s-vfwscanf-s.md)
+[`_cscanf`, `_cscanf_l`, `_cwscanf`, `_cwscanf_l`](cscanf-cscanf-l-cwscanf-cwscanf-l.md)\
+[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
+[`fscanf_s`, `_fscanf_s_l`, `fwscanf_s`, `_fwscanf_s_l`](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)\
+[`vfscanf_s`, `vfwscanf_s`](vfscanf-s-vfwscanf-s.md)

@@ -39,7 +39,7 @@ Number of bytes to be copied and swapped.
 
 The **swab** function doesn't return a value. The function sets **errno** to **EINVAL** if either the *src* or *dest* pointer is null or *n* is less than zero, and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

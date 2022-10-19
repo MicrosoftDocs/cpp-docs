@@ -46,7 +46,7 @@ Use the fetestexcept function to determine which exceptions were raised by a flo
 
 The specified *excepts* argument may be 0, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other *excepts* argument value is undefined.
 
-To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
 
 ## Requirements
 
@@ -59,5 +59,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[feclearexcept](feclearexcept1.md)\
-[feraiseexcept](feraiseexcept.md)
+[`feclearexcept`](feclearexcept1.md)\
+[`feraiseexcept`](feraiseexcept.md)

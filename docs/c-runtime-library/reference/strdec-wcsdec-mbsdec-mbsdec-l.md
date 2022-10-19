@@ -58,7 +58,7 @@ Locale to use.
 
 The **_mbsdec** and **_mbsdec_l** functions return a pointer to the first byte of the multibyte character that immediately precedes *current* in the string that contains *start*.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information.  **_mbsdec** recognizes multibyte-character sequences according to the locale that's currently in use, while **_mbsdec_l** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information.  **_mbsdec** recognizes multibyte-character sequences according to the locale that's currently in use, while **_mbsdec_l** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 If *start* or *current* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
 
@@ -146,6 +146,6 @@ int main()
 ## See also
 
 [String manipulation](../string-manipulation-crt.md)\
-[_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)\
-[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)\
-[_strninc, _wcsninc, _mbsninc, _mbsninc_l](strninc-wcsninc-mbsninc-mbsninc-l.md)
+[`_strinc`, `_wcsinc`, `_mbsinc`, `_mbsinc_l`](strinc-wcsinc-mbsinc-mbsinc-l.md)\
+[`_strnextc`, `_wcsnextc`, `_mbsnextc`, `_mbsnextc_l`](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)\
+[`_strninc`, `_wcsninc`, `_mbsninc`, `_mbsninc_l`](strninc-wcsninc-mbsninc-mbsninc-l.md)

@@ -27,11 +27,11 @@ If successful, **_CrtCheckMemory** returns TRUE; otherwise, the function returns
 
 ## Remarks
 
-The **_CrtCheckMemory** function validates memory allocated by the debug heap manager by verifying the underlying base heap and inspecting every memory block. If an error or memory inconsistency is encountered in the underlying base heap, the debug header information, or the overwrite buffers, **_CrtCheckMemory** generates a debug report with information describing the error condition. When [_DEBUG](../debug.md) isn't defined, calls to **_CrtCheckMemory** are removed during preprocessing.
+The **_CrtCheckMemory** function validates memory allocated by the debug heap manager by verifying the underlying base heap and inspecting every memory block. If an error or memory inconsistency is encountered in the underlying base heap, the debug header information, or the overwrite buffers, **_CrtCheckMemory** generates a debug report with information describing the error condition. When [`_DEBUG`](../debug.md) isn't defined, calls to **_CrtCheckMemory** are removed during preprocessing.
 
-The behavior of **_CrtCheckMemory** can be controlled by setting the bit fields of the [_crtDbgFlag](../crtdbgflag.md) flag using the [_CrtSetDbgFlag](crtsetdbgflag.md) function. Turning the **_CRTDBG_CHECK_ALWAYS_DF** bit field ON results in **_CrtCheckMemory** being called every time a memory allocation operation is requested. Although this method slows down execution, it's useful for catching errors quickly. Turning the **_CRTDBG_ALLOC_MEM_DF** bit field OFF causes **_CrtCheckMemory** to not verify the heap and immediately return **TRUE**.
+The behavior of **_CrtCheckMemory** can be controlled by setting the bit fields of the [`_crtDbgFlag`](../crtdbgflag.md) flag using the [`_CrtSetDbgFlag`](crtsetdbgflag.md) function. Turning the **_CRTDBG_CHECK_ALWAYS_DF** bit field ON results in **_CrtCheckMemory** being called every time a memory allocation operation is requested. Although this method slows down execution, it's useful for catching errors quickly. Turning the **_CRTDBG_ALLOC_MEM_DF** bit field OFF causes **_CrtCheckMemory** to not verify the heap and immediately return **TRUE**.
 
-Because this function returns **TRUE** or **FALSE**, it can be passed to one of the [_ASSERT](assert-asserte-assert-expr-macros.md) macros to create a basic debugging error handling mechanism. The following example causes an assertion failure if corruption is detected in the heap:
+Because this function returns **TRUE** or **FALSE**, it can be passed to one of the [`_ASSERT`](assert-asserte-assert-expr-macros.md) macros to create a basic debugging error handling mechanism. The following example causes an assertion failure if corruption is detected in the heap:
 
 ```C
 _ASSERTE( _CrtCheckMemory( ) );
@@ -53,10 +53,10 @@ Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
-For a sample of how to use **_CrtCheckMemory**, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
+For a sample of how to use **_CrtCheckMemory**, see [`crt_dbg1`](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_crtDbgFlag](../crtdbgflag.md)\
-[_CrtSetDbgFlag](crtsetdbgflag.md)
+[`_crtDbgFlag`](../crtdbgflag.md)\
+[`_CrtSetDbgFlag`](crtsetdbgflag.md)

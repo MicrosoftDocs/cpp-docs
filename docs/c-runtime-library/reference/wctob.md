@@ -85,8 +85,8 @@ Determined the corresponding multibyte character to be "A".
 
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)\
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)\
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)\
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`wctomb`, `_wctomb_l`](wctomb-wctomb-l.md)\
 [WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)

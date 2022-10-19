@@ -107,4 +107,4 @@ after fsetpos: gets a stream
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fsetpos](fsetpos.md)
+[`fsetpos`](fsetpos.md)

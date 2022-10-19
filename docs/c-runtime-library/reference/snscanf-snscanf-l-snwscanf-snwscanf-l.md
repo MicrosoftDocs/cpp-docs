@@ -12,7 +12,7 @@ ms.assetid: da1ac890-f905-4cd7-954b-3c90957b5551
 ---
 # _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 
-Reads formatted data of a specified length from a string. More secure versions of these functions are available; see [_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l](snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md).
+Reads formatted data of a specified length from a string. More secure versions of these functions are available; see [`_snscanf_s`, `_snscanf_s_l`, `_snwscanf_s`, `_snwscanf_s_l`](snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md).
 
 ## Syntax
 
@@ -64,15 +64,15 @@ The locale to use.
 
 ## Return value
 
-Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
+Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion. For more information, see [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
 If *input* or *format* is a **NULL** pointer, or if *length* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
 
-For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-This function is like **sscanf** except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
+This function is like **sscanf** except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

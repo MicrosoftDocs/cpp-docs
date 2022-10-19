@@ -10,7 +10,7 @@ helpviewer_keywords: ["is routines", "isw routines"]
    :::column span="":::
       [`isalnum`, `iswalnum`, `_isalnum_l`, `_iswalnum_l`](./reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md)\
       [`isalpha`, `iswalpha`, `_isalpha_l`, `_iswalpha_l`](./reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md)\
-      [`isascii`, _`_isascii`, `iswascii`](./reference/isascii-isascii-iswascii.md)\
+      [`isascii`, `__isascii`, `iswascii`](./reference/isascii-isascii-iswascii.md)\
       [`isblank`, `iswblank`, `_isblank_l`, `_iswblank_l`](./reference/isblank-iswblank-isblank-l-iswblank-l.md)\
       [`iscntrl`, `iswcntrl`, `_iscntrl_l`, `_iswcntrl_l`](./reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)\
       [`iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`](./reference/iscsym-functions.md)\
@@ -332,4 +332,4 @@ int main( void )
 [Locale](./locale.md)\
 [`setlocale`, `_wsetlocale`](./reference/setlocale-wsetlocale.md)\
 [Interpretation of multibyte-character sequences](./interpretation-of-multibyte-character-sequences.md)\
-[`to` Functions](./to-functions.md)
+[`to` functions](./to-functions.md)

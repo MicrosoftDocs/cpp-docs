@@ -324,7 +324,7 @@ The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
 [`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
 [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
 [`_setmbcp`](setmbcp.md)\
-[`strcoll` Functions](../strcoll-functions.md)\
+[`strcoll` functions](../strcoll-functions.md)\
 [`strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`](strftime-wcsftime-strftime-l-wcsftime-l.md)\
 [`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)\
 [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\

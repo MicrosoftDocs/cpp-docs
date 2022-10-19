@@ -37,7 +37,7 @@ If successful, returns the previous translation mode.
 
 If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to either **`EBADF`**, which indicates an invalid file descriptor, or **`EINVAL`**, which indicates an invalid *`mode`* argument.
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

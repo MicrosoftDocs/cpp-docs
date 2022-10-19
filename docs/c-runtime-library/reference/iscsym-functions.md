@@ -79,4 +79,4 @@ The **iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__isw
 
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
-[is, isw Routines](../is-isw-routines.md)
+[`is`, `isw` routines](../is-isw-routines.md)

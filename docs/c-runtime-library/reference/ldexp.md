@@ -53,7 +53,7 @@ Integer exponent.
 
 The **ldexp** functions return the value of *x* \* 2<sup>*exp*</sup> if successful. On overflow, and depending on the sign of *x*, **ldexp** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
 
-For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about **errno** and possible error return values, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -99,5 +99,5 @@ int main( void )
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[frexp](frexp.md)\
-[modf, modff, modfl](modf-modff-modfl.md)
+[`frexp`](frexp.md)\
+[`modf`, `modff`, `modfl`](modf-modff-modfl.md)

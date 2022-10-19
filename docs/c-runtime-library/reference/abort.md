@@ -99,12 +99,12 @@ File could not be opened: No such file or directory
 ## See also
 
 [Using `abort`](../../cpp/using-abort.md)\
-[`abort` Function](../../c-language/abort-function-c.md)\
+[`abort` function](../../c-language/abort-function-c.md)\
 [Process and environment control](../process-and-environment-control.md)\
-[`_exec`, `_wexec` Functions](../exec-wexec-functions.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
 [`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
 [`raise`](raise.md)\
 [`signal`](signal.md)\
-[`_spawn`, `_wspawn` Functions](../spawn-wspawn-functions.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
 [`_DEBUG`](../debug.md)\
 [`_set_abort_behavior`](set-abort-behavior.md)

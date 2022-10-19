@@ -12,7 +12,7 @@ ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
 ---
 # memmove_s, wmemmove_s
 
-Moves one buffer to another. These are versions of [memmove, wmemmove](memmove-wmemmove.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Moves one buffer to another. These are versions of [`memmove`, `wmemmove`](memmove-wmemmove.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -113,9 +113,9 @@ After: 0012345789
 ## See also
 
 [Buffer manipulation](../buffer-manipulation.md)\
-[_memccpy](memccpy.md)\
-[memcpy, wmemcpy](memcpy-wmemcpy.md)\
-[strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)\
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)\
-[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)\
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)
+[`_memccpy`](memccpy.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`strcpy_s`, `wcscpy_s`, `_mbscpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md)\
+[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)

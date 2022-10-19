@@ -87,8 +87,8 @@ asinh( 0.868671 ) = 0.785398
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)\
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)\
-[cosh, coshf, coshl](cosh-coshf-coshl.md)\
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)\
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)
+[`acosh`, `acoshf`, `acoshl`](acosh-acoshf-acoshl.md)\
+[`atanh`, `atanhf`, `atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh`, `coshf`, `coshl`](cosh-coshf-coshl.md)\
+[`sinh`, `sinhf`, `sinhl`](sinh-sinhf-sinhl.md)\
+[`tanh`, `tanhf`, `tanhl`](tanh-tanhf-tanhl.md)

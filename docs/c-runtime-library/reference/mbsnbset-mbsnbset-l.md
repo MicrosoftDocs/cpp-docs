@@ -12,7 +12,7 @@ ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
 ---
 # _mbsnbset, _mbsnbset_l
 
-Sets the first **n** bytes of a multibyte-character string to a specified character. More secure versions of these functions are available; see [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md).
+Sets the first **n** bytes of a multibyte-character string to a specified character. More secure versions of these functions are available; see [`_mbsnbset_s`, `_mbsnbset_s_l`](mbsnbset-s-mbsnbset-s-l.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -59,7 +59,7 @@ The **_mbsnbset** and **_mbsnbset_l** functions set, at most, the first *count* 
 
 If *str* is **NULL** or *count* is zero, this function generates an invalid parameter exception as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. Also, if *c* is not a valid multibyte character, **errno** is set to **EINVAL** and a space is used instead.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The **_mbsnbset** version of this function uses the current locale for this locale-dependent behavior; the **_mbsnbset_l** version is identical except that it use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The **_mbsnbset** version of this function uses the current locale for this locale-dependent behavior; the **_mbsnbset_l** version is identical except that it use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 **Security Note** This API incurs a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
@@ -110,6 +110,6 @@ After:  **** is a test
 ## See also
 
 [String manipulation](../string-manipulation-crt.md)\
-[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)\
-[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)\
-[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)
+[`_mbsnbcat`, `_mbsnbcat_l`](mbsnbcat-mbsnbcat-l.md)\
+[`_strnset`, `_strnset_l`, `_wcsnset`, `_wcsnset_l`, `_mbsnset`, `_mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)\
+[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)

@@ -41,7 +41,7 @@ Report hook to install or remove in the narrow-character or wide-character versi
 
 ## Remarks
 
-**_CrtSetReportHook2** and **_CrtSetReportHookW2** let you hook or unhook a function, whereas [_CrtSetReportHook](crtsetreporthook.md) only lets you hook a function.
+**_CrtSetReportHook2** and **_CrtSetReportHookW2** let you hook or unhook a function, whereas [`_CrtSetReportHook`](crtsetreporthook.md) only lets you hook a function.
 
 **_CrtSetReportHook2** or **_CrtSetReportHookW2** should be used instead of **_CrtSetReportHook** when the hook call is made in a DLL and when multiple DLLs might be loaded and setting their own hook functions. In such a situation, DLLs can be unloaded in a different order than they were loaded and the hook function can be left pointing at an unloaded DLL. Any debug output crashes the process if the hook functions were added with **_CrtSetReportHook**.
 

@@ -25,7 +25,7 @@ int mbsinit(
 ### Parameters
 
 *ps*<br/>
-A pointer to an [mbstate_t](../standard-types.md) variable.
+A pointer to an [`mbstate_t`](../standard-types.md) variable.
 
 ## Return value
 

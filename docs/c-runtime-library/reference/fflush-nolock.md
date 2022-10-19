@@ -29,7 +29,7 @@ Pointer to the **FILE** structure.
 
 ## Return value
 
-See [fflush](fflush.md).
+See [`fflush`](fflush.md).
 
 ## Remarks
 
@@ -48,6 +48,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fclose, _fcloseall](fclose-fcloseall.md)\
-[_flushall](flushall.md)\
-[setvbuf](setvbuf.md)
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`_flushall`](flushall.md)\
+[`setvbuf`](setvbuf.md)

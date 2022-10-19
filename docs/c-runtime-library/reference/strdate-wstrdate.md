@@ -12,7 +12,7 @@ ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
 ---
 # _strdate, _wstrdate
 
-Copy current system date to a buffer. More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md).
+Copy current system date to a buffer. More secure versions of these functions are available; see [`_strdate_s`, `_wstrdate_s`](strdate-s-wstrdate-s.md).
 
 ## Syntax
 
@@ -44,7 +44,7 @@ Each of these functions returns a pointer to the resulting character string *dat
 
 ## Remarks
 
-More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md). It is recommended that the more secure functions be used wherever possible.
+More secure versions of these functions are available; see [`_strdate_s`, `_wstrdate_s`](strdate-s-wstrdate-s.md). It is recommended that the more secure functions be used wherever possible.
 
 The **_strdate** function copies the current system date to the buffer pointed to by *datestr*, formatted **mm**/**dd**/**yy**, where **mm** is two digits representing the month, **dd** is two digits representing the day, and **yy** is the last two digits of the year. For example, the string **12/05/99** represents December 5, 1999. The buffer must be at least 9 bytes long.
 
@@ -100,10 +100,10 @@ OS date: 04/25/03
 ## See also
 
 [Time management](../time-management.md)\
-[asctime, _wasctime](asctime-wasctime.md)\
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)\
-[time, _time32, _time64](time-time32-time64.md)\
-[_tzset](tzset.md)
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`mktime`, `_mktime32`, `_mktime64`](mktime-mktime32-mktime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_tzset`](tzset.md)

@@ -40,7 +40,7 @@ The **_onexit** function is passed the address of a function (*function*) to be 
 
 In the case when **_onexit** is called from within a DLL, routines registered with **_onexit** run on a DLL's unloading after **DllMain** is called with DLL_PROCESS_DETACH.
 
-**_onexit** is a Microsoft extension. For ANSI portability, use [atexit](atexit.md). The **_onexit_m** version of the function is for mixed mode use.
+**_onexit** is a Microsoft extension. For ANSI portability, use [`atexit`](atexit.md). The **_onexit_m** version of the function is for mixed mode use.
 
 ## Requirements
 
@@ -105,6 +105,6 @@ This is executed next.
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)\
-[atexit](atexit.md)\
-[exit, _Exit, _exit](exit-exit-exit.md)\
-[__dllonexit](../dllonexit.md)
+[`atexit`](atexit.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`__dllonexit`](../dllonexit.md)

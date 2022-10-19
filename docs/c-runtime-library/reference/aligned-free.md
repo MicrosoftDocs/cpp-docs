@@ -12,7 +12,7 @@ ms.assetid: ed1ce952-cdfc-4682-85cc-f75d4101603d
 ---
 # _aligned_free
 
-Frees a block of memory that was allocated with [_aligned_malloc](aligned-malloc.md) or [_aligned_offset_malloc](aligned-offset-malloc.md).
+Frees a block of memory that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md).
 
 ## Syntax
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 
 ## Example
 
-For more information, see [_aligned_malloc](aligned-malloc.md).
+For more information, see [`_aligned_malloc`](aligned-malloc.md).
 
 ## See also
 

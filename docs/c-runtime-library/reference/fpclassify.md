@@ -65,4 +65,4 @@ The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)

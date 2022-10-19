@@ -96,8 +96,8 @@ int main( void )
 [`abort`](abort.md)\
 [`atexit`](atexit.md)\
 [`_cexit`, `_c_exit`](cexit-c-exit.md)\
-[`_exec`, `_wexec` Functions](../exec-wexec-functions.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
 [`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
 [`quick_exit`](quick-exit1.md)\
-[`_spawn`, `_wspawn` Functions](../spawn-wspawn-functions.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
 [`system`, `_wsystem`](system-wsystem.md)

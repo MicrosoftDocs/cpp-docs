@@ -51,9 +51,9 @@ The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[creal, crealf, creall](creal-crealf-creall.md)\
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)\
-[conj, conjf, conjl](conj-conjf-conjl.md)\
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)\
-[carg, cargf, cargl](carg-cargf-cargl.md)\
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)
+[`creal`, `crealf`, `creall`](creal-crealf-creall.md)\
+[`cproj`, `cprojf`, `cprojl`](cproj-cprojf-cprojl.md)\
+[`conj`, `conjf`, `conjl`](conj-conjf-conjl.md)\
+[`cimag`, `cimagf`, `cimagl`](cimag-cimagf-cimagl.md)\
+[`carg`, `cargf`, `cargl`](carg-cargf-cargl.md)\
+[`cabs`, `cabsf`, `cabsl`](cabs-cabsf-cabsl.md)

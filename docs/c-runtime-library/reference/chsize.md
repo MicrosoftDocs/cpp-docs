@@ -12,7 +12,7 @@ ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
 ---
 # _chsize
 
-Changes the size of a file. A more secure version is available; see [_chsize_s](chsize-s.md).
+Changes the size of a file. A more secure version is available; see [`_chsize_s`](chsize-s.md).
 
 ## Syntax
 
@@ -35,7 +35,7 @@ New length of the file in bytes.
 
 **_chsize** returns the value 0 if the file size is successfully changed. A return value of -1 indicates an error: **errno** is set to **EACCES** if the specified file is read-only or the specified file is locked against access, to **EBADF** if the descriptor is invalid, **ENOSPC** if no space is left on the device, or **EINVAL** if *`size`* is less than zero.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -96,6 +96,6 @@ File length after:  329678
 ## See also
 
 [File handling](../file-handling.md)\
-[_close](close.md)\
-[_sopen, _wsopen](sopen-wsopen.md)\
-[_open, _wopen](open-wopen.md)
+[`_close`](close.md)\
+[`_sopen`, `_wsopen`](sopen-wsopen.md)\
+[`_open`, `_wopen`](open-wopen.md)

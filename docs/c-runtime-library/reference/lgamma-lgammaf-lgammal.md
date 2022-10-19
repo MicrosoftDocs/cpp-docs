@@ -44,7 +44,7 @@ If successful, return the natural logarithm of the absolute value of the gamma f
 |pole error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
 |overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -68,4 +68,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[tgamma, tgammaf, tgammal](tgamma-tgammaf-tgammal.md)
+[`tgamma`, `tgammaf`, `tgammal`](tgamma-tgammaf-tgammal.md)

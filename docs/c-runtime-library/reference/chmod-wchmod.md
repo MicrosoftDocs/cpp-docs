@@ -145,8 +145,8 @@ Mode set to read/write
 ## See also
 
 [File handling](../file-handling.md)\
-[_access, _waccess](access-waccess.md)\
-[_creat, _wcreat](creat-wcreat.md)\
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
-[_open, _wopen](open-wopen.md)\
-[_stat, _wstat Functions](stat-functions.md)
+[`_access`, `_waccess`](access-waccess.md)\
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_stat`, `_wstat` functions](stat-functions.md)

@@ -45,5 +45,5 @@ Debug versions of [C run-time libraries](../crt-library-features.md) only.
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_CrtReportBlockType](crtreportblocktype.md)\
-[_CrtSetDumpClient](crtsetdumpclient.md)
+[`_CrtReportBlockType`](crtreportblocktype.md)\
+[`_CrtSetDumpClient`](crtsetdumpclient.md)

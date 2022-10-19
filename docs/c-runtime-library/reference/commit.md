@@ -50,7 +50,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Low-level I/O](../low-level-i-o.md)\
-[_creat, _wcreat](creat-wcreat.md)\
-[_open, _wopen](open-wopen.md)\
-[_read](read.md)\
-[_write](write.md)
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_read`](read.md)\
+[`_write`](write.md)

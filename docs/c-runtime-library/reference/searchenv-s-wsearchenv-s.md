@@ -12,7 +12,7 @@ ms.assetid: 47f9fc29-250e-4c09-b52e-9e9f0ef395ca
 ---
 # _searchenv_s, _wsearchenv_s
 
-Searches for a file by using environment paths. These versions of [_searchenv, _wsearchenv](searchenv-wsearchenv.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Searches for a file by using environment paths. These versions of [`_searchenv`, `_wsearchenv`](searchenv-wsearchenv.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -144,6 +144,6 @@ C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 ## See also
 
 [Directory control](../directory-control.md)\
-[_searchenv, _wsearchenv](searchenv-wsearchenv.md)\
-[getenv, _wgetenv](getenv-wgetenv.md)\
-[_putenv, _wputenv](putenv-wputenv.md)
+[`_searchenv`, `_wsearchenv`](searchenv-wsearchenv.md)\
+[`getenv`, `_wgetenv`](getenv-wgetenv.md)\
+[`_putenv`, `_wputenv`](putenv-wputenv.md)

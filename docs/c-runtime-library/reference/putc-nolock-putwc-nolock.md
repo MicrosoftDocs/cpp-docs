@@ -100,5 +100,5 @@ This is the line of output
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fputc, fputwc](fputc-fputwc.md)\
-[getc, getwc](getc-getwc.md)
+[`fputc`, `fputwc`](fputc-fputwc.md)\
+[`getc`, `getwc`](getc-getwc.md)

@@ -40,7 +40,7 @@ Each of these functions returns 0 if the directory is successfully deleted. A re
 | **ENOENT** | Path is invalid. |
 | **EACCES** | A program has an open handle to the directory. |
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -71,10 +71,10 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
-See the example for [_mkdir](mkdir-wmkdir.md).
+See the example for [`_mkdir`](mkdir-wmkdir.md).
 
 ## See also
 
 [Directory control](../directory-control.md)\
-[_chdir, _wchdir](chdir-wchdir.md)\
-[_mkdir, _wmkdir](mkdir-wmkdir.md)
+[`_chdir`, `_wchdir`](chdir-wchdir.md)\
+[`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)

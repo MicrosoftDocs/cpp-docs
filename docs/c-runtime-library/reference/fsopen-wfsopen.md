@@ -44,7 +44,7 @@ Type of sharing allowed.
 
 Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
 
-For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

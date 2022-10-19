@@ -12,7 +12,7 @@ ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
 ---
 # wctomb, _wctomb_l
 
-Convert a wide character to the corresponding multibyte character. More secure versions of these functions are available; see [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md).
+Convert a wide character to the corresponding multibyte character. More secure versions of these functions are available; see [`wctomb_s`, `_wctomb_s_l`](wctomb-s-wctomb-s-l.md).
 
 ## Syntax
 
@@ -90,8 +90,8 @@ Convert a wide character:
 
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)\
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)\
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\
 [WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)

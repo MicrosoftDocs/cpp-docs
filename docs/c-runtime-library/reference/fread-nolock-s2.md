@@ -11,7 +11,7 @@ ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
 ---
 # _fread_nolock_s
 
-Reads data from a stream, without locking other threads. This version of [fread_nolock](fread-nolock.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Reads data from a stream, without locking other threads. This version of [`fread_nolock`](fread-nolock.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -44,7 +44,7 @@ Pointer to **FILE** structure.
 
 ## Return value
 
-See [fread_s](fread-s.md).
+See [`fread_s`](fread-s.md).
 
 ## Remarks
 
@@ -63,5 +63,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fwrite](fwrite.md)\
-[_read](read.md)
+[`fwrite`](fwrite.md)\
+[`_read`](read.md)

@@ -129,8 +129,8 @@ Result:      r found at position 12
 ## See also
 
 [Buffer manipulation](../buffer-manipulation.md)\
-[_memccpy](memccpy.md)\
-[memcmp, wmemcmp](memcmp-wmemcmp.md)\
-[memcpy, wmemcpy](memcpy-wmemcpy.md)\
-[memset, wmemset](memset-wmemset.md)\
-[strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)
+[`_memccpy`](memccpy.md)\
+[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`memset`, `wmemset`](memset-wmemset.md)\
+[`strchr`, `wcschr`, `_mbschr`, `_mbschr_l`](strchr-wcschr-mbschr-mbschr-l.md)

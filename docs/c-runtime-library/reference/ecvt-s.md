@@ -12,7 +12,7 @@ ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
 ---
 # _ecvt_s
 
-Converts a **`double`** number to a string. This function is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Converts a **`double`** number to a string. This function is a version of [`_ecvt`](ecvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -57,7 +57,7 @@ Sign of the converted number.
 
 ## Return value
 
-Zero if successful. The return value is an error code if there's a failure. Error codes are defined in Errno.h. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful. The return value is an error code if there's a failure. Error codes are defined in Errno.h. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 If there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL**, and returns **EINVAL**.
 
@@ -86,7 +86,7 @@ The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of t
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug version of this function first fills the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug version of this function first fills the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -134,7 +134,7 @@ Converted value: 12000
 
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
-[_ecvt](ecvt.md)\
-[_fcvt_s](fcvt-s.md)\
-[_gcvt_s](gcvt-s.md)
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_ecvt`](ecvt.md)\
+[`_fcvt_s`](fcvt-s.md)\
+[`_gcvt_s`](gcvt-s.md)

@@ -25,5 +25,5 @@ The `_cwait` function can be used by any process to wait for any other process (
 
 ## See also
 
-[_cwait](./reference/cwait.md)\
+[`_cwait`](./reference/cwait.md)\
 [Global constants](./global-constants.md)

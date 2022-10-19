@@ -12,7 +12,7 @@ ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
 ---
 # _tempnam, _wtempnam, tmpnam, _wtmpnam
 
-Generate names you can use to create temporary files. More secure versions of some of these functions are available; see [tmpnam_s, _wtmpnam_s](tmpnam-s-wtmpnam-s.md).
+Generate names you can use to create temporary files. More secure versions of some of these functions are available; see [`tmpnam_s`, `_wtmpnam_s`](tmpnam-s-wtmpnam-s.md).
 
 ## Syntax
 
@@ -49,7 +49,7 @@ Pointer that will hold the generated name and will be identical to the name retu
 Each of these functions returns a pointer to the name generated or **NULL** if there is a failure. Failure can occur if you attempt more than **TMP_MAX** (see STDIO.H) calls with **tmpnam** or if you use **_tempnam** and there is an invalid directory name specified in the TMP environment variable and in the *dir* parameter.
 
 > [!NOTE]
-> The pointers returned by **tmpnam** and **_wtmpnam** point to internal static buffers. [free](free.md) should not be called to deallocate those pointers. **free** needs to be called for pointers allocated by **_tempnam** and **_wtempnam**.
+> The pointers returned by **tmpnam** and **_wtmpnam** point to internal static buffers. [`free`](free.md) should not be called to deallocate those pointers. **free** needs to be called for pointers allocated by **_tempnam** and **_wtempnam**.
 
 ## Remarks
 
@@ -65,11 +65,11 @@ For **tmpnam**, you can store this generated file name in *str*. If *str* is **N
 
 - If the TMP environment variable is not defined or if it is set to the name of a directory that does not exist, and if *dir* is either **NULL** or set to the name of a directory that does not exist, **_tempnam** will use the current working directory to generate unique names. Currently, if both TMP and *dir* specify names of directories that do not exist, the **_tempnam** function call will fail.
 
-The name returned by **_tempnam** will be a concatenation of *prefix* and a sequential number, which will combine to create a unique file name for the specified directory. **_tempnam** generates file names that have no extension. **_tempnam** uses [malloc](malloc.md) to allocate space for the filename; the program is responsible for freeing this space when it is no longer needed.
+The name returned by **_tempnam** will be a concatenation of *prefix* and a sequential number, which will combine to create a unique file name for the specified directory. **_tempnam** generates file names that have no extension. **_tempnam** uses [`malloc`](malloc.md) to allocate space for the filename; the program is responsible for freeing this space when it is no longer needed.
 
 **_tempnam** and **tmpnam** automatically handle multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the OEM code page obtained from the operating system. **_wtempnam** is a wide-character version of **_tempnam**; the arguments and return value of **_wtempnam** are wide-character strings. **_wtempnam** and **_tempnam** behave identically except that **_wtempnam** does not handle multibyte-character strings. **_wtmpnam** is a wide-character version of **tmpnam**; the argument and return value of **_wtmpnam** are wide-character strings. **_wtmpnam** and **tmpnam** behave identically except that **_wtmpnam** does not handle multibyte-character strings.
 
-If **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, **_tempnam** and **_wtempnam** are replaced by calls to [_tempnam_dbg and _wtempnam_dbg](tempnam-dbg-wtempnam-dbg.md).
+If **_DEBUG** and **_CRTDBG_MAP_ALLOC** are defined, **_tempnam** and **_wtempnam** are replaced by calls to [`_tempnam_dbg` and `_wtempnam_dbg`](tempnam-dbg-wtempnam-dbg.md).
 
 ### Generic-text routine mappings
 
@@ -162,8 +162,8 @@ c:\tmp\stq3 is safe to use as a temporary file.
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[_getmbcp](getmbcp.md)\
-[malloc](malloc.md)\
-[_setmbcp](setmbcp.md)\
-[tmpfile](tmpfile.md)\
-[tmpfile_s](tmpfile-s.md)
+[`_getmbcp`](getmbcp.md)\
+[`malloc`](malloc.md)\
+[`_setmbcp`](setmbcp.md)\
+[`tmpfile`](tmpfile.md)\
+[`tmpfile_s`](tmpfile-s.md)

@@ -63,7 +63,7 @@ Locale to use.
 
 If *`strSource`* is **`NULL`** or the *`base`* is nonzero and either less than 2 or greater than 36, **`errno`** is set to **`EINVAL`**.
 
-For more information on return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information on return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

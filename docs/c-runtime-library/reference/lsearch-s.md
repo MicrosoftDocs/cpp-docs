@@ -12,7 +12,7 @@ ms.assetid: d2db0635-be7a-4799-8660-255f14450882
 ---
 # _lsearch_s
 
-Performs a linear search for a value. A version of [_lsearch](lsearch.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Performs a linear search for a value. A version of [`_lsearch`](lsearch.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -51,7 +51,7 @@ A pointer to an object that might be accessed in the comparison function.
 
 If *key* is found, **_lsearch_s** returns a pointer to the element of the array at *base* that matches *key*. If *key* is not found, **_lsearch_s** returns a pointer to the newly added item at the end of the array.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, then **errno** is set to **EINVAL** and the function returns **NULL**. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, then **errno** is set to **EINVAL** and the function returns **NULL**. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Error conditions
 
@@ -83,6 +83,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Searching and sorting](../searching-and-sorting.md)\
-[bsearch_s](bsearch-s.md)\
-[_lfind_s](lfind-s.md)\
-[_lsearch](lsearch.md)
+[`bsearch_s`](bsearch-s.md)\
+[`_lfind_s`](lfind-s.md)\
+[`_lsearch`](lsearch.md)

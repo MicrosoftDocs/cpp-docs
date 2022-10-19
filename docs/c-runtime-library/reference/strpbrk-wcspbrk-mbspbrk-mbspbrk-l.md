@@ -96,11 +96,11 @@ The `strpbrk` function returns a pointer to the first occurrence of a character 
 
 `_mbspbrk` validates its parameters. If *str* or *strCharSet* is NULL, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `_mbspbrk` returns NULL and sets `errno` to EINVAL. `strpbrk` and `wcspbrk` do not validate their parameters. These three functions behave identically otherwise.
 
-`_mbspbrk` is similar to `_mbscspn` except that `_mbspbrk` returns a pointer rather than a value of type [size_t](../standard-types.md).
+`_mbspbrk` is similar to `_mbscspn` except that `_mbspbrk` returns a pointer rather than a value of type [`size_t`](../standard-types.md).
 
 In C, these functions take a **`const`** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **`const`** returns a pointer to **`const`**; the version that takes a pointer to non-**`const`** returns a pointer to non-**`const`**. The macro _CRT_CONST_CORRECT_OVERLOADS is defined if both the **`const`** and non-**`const`** versions of these functions are available. If you require the non-**`const`** behavior for both C++ overloads, define the symbol _CONST_RETURN.
 
-The output value is affected by the setting of the LC_CTYPE category setting of the locale; for more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the LC_CTYPE category setting of the locale; for more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -160,6 +160,6 @@ int main( void )
 [String manipulation](../string-manipulation-crt.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)\
-[strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)\
-[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)
+[`strcspn`, `wcscspn`, `_mbscspn`, `_mbscspn_l`](strcspn-wcscspn-mbscspn-mbscspn-l.md)\
+[`strchr`, `wcschr`, `_mbschr`, `_mbschr_l`](strchr-wcschr-mbschr-mbschr-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)

@@ -49,5 +49,5 @@ The **toascii** macro is a POSIX extension, and **__toascii** is a Microsoft-spe
 ## See also
 
 [Data conversion](../data-conversion.md)\
-[is, isw Routines](../is-isw-routines.md)\
-[to Functions](../to-functions.md)
+[`is`, `isw` routines](../is-isw-routines.md)\
+[`to` functions](../to-functions.md)

@@ -12,7 +12,7 @@ ms.assetid: 8686c159-3797-4705-a53e-7457869ca6f3
 ---
 # _set_doserrno
 
-Sets the value of the [_doserrno](../errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.
+Sets the value of the [`_doserrno`](../errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.
 
 ## Syntax
 
@@ -45,5 +45,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_get_doserrno](get-doserrno.md)\
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md)
+[`_get_doserrno`](get-doserrno.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)

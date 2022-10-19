@@ -66,7 +66,7 @@ If *source* is null, these functions return the equivalent of a call made using 
 
 If *source* isn't null, the function starts at the beginning of the string and inspects up to *max_bytes* bytes to determine the number of bytes required to complete the next UTF-8 multibyte character, including any shift sequences. If the examined bytes contain a valid and complete UTF-8 multibyte character, the function converts the character into the equivalent 16-bit or 32-bit wide character or characters. If *destination* isn't null, the function stores the first (and possibly only) result character in destination. If additional output characters are required, a value is set in *state*, so that subsequent calls to the function output the additional characters and return the value -3. If no more output characters are required, then *state* is set to the initial shift state.
 
-To convert non-UTF-8 multibyte characters to UTF-16 LE characters, use the [mbrtowc](mbrtowc.md), [mbtowc, or _mbtowc_l](mbtowc-mbtowc-l.md) functions.
+To convert non-UTF-8 multibyte characters to UTF-16 LE characters, use the [`mbrtowc`](mbrtowc.md), [mbtowc, or _mbtowc_l](mbtowc-mbtowc-l.md) functions.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -83,7 +83,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[c16rtomb, c32rtomb](c16rtomb-c32rtomb1.md)\
-[mbrtowc](mbrtowc.md)\
-[mbsrtowcs](mbsrtowcs.md)\
-[mbsrtowcs_s](mbsrtowcs-s.md)
+[`c16rtomb`, `c32rtomb`](c16rtomb-c32rtomb1.md)\
+[`mbrtowc`](mbrtowc.md)\
+[`mbsrtowcs`](mbsrtowcs.md)\
+[`mbsrtowcs_s`](mbsrtowcs-s.md)

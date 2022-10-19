@@ -143,7 +143,7 @@ R6010
 
 [Process and environment control](../process-and-environment-control.md)\
 [`abort`](abort.md)\
-[`_exec`, `_wexec` Functions](../exec-wexec-functions.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
 [`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
 [`_fpreset`](fpreset.md)\
-[`_spawn`, `_wspawn` Functions](../spawn-wspawn-functions.md)
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)

@@ -34,7 +34,7 @@ Character to be written.
 
 Each of these functions returns the character written. For **_fputchar**, a return value of **EOF** indicates an error. For **_fputwchar**, a return value of **WEOF** indicates an error. If c is **NULL**, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return **EOF** (or **WEOF**) and set **errno** to **EINVAL**.
 
-For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -85,5 +85,5 @@ This is a test of _fputchar!!
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fgetc, fgetwc](fgetc-fgetwc.md)\
-[putc, putwc](putc-putwc.md)
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`putc`, `putwc`](putc-putwc.md)

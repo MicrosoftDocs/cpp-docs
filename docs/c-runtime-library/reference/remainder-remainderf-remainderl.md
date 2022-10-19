@@ -36,7 +36,7 @@ The denominator.
 
 ## Return value
 
-The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remainder** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remainder** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
 
@@ -82,7 +82,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[ldiv, lldiv](./div.md)\
-[imaxdiv](imaxdiv.md)\
-[fmod, fmodf](fmod-fmodf.md)\
-[remquo, remquof, remquol](remquo-remquof-remquol.md)
+[`ldiv`, `lldiv`](./div.md)\
+[`imaxdiv`](imaxdiv.md)\
+[`fmod`, `fmodf`](fmod-fmodf.md)\
+[`remquo`, `remquof`, `remquol`](remquo-remquof-remquol.md)

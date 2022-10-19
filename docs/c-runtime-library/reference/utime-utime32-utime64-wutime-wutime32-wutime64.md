@@ -62,7 +62,7 @@ Each of these functions returns 0 if the file-modification time was changed. A r
 | **EMFILE** | Too many open files (the file must be opened to change its modification time) |
 | **ENOENT** | Path or filename not found |
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 The date can be changed for a file if the change date is after midnight, January 1, 1970, and before the end date of the function used. **_utime** and **_wutime** use a 64-bit time value, so the end date is 23:59:59, December 31, 3000, UTC. If **_USE_32BIT_TIME_T** is defined to force the old behavior, the end date is 23:59:59 January 18, 2038, UTC. **_utime32** or **_wutime32** use a 32-bit time type regardless of whether **_USE_32BIT_TIME_T** is defined, and always have the earlier end date. **_utime64** or **_wutime64** always use the 64-bit time type, so these functions always support the later end date.
 
@@ -177,12 +177,12 @@ Directory of C:\test
 ## See also
 
 [Time management](../time-management.md)\
-[asctime, _wasctime](asctime-wasctime.md)\
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
-[_futime, _futime32, _futime64](futime-futime32-futime64.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
-[_stat, _wstat Functions](stat-functions.md)\
-[time, _time32, _time64](time-time32-time64.md)
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`_futime`, `_futime32`, `_futime64`](futime-futime32-futime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`_stat`, `_wstat` functions](stat-functions.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)

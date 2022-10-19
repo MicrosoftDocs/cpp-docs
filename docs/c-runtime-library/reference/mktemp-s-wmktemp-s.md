@@ -12,7 +12,7 @@ ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
 ---
 # _mktemp_s, _wmktemp_s
 
-Creates a unique file name. These are versions of [_mktemp, _wmktemp](mktemp-wmktemp.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Creates a unique file name. These are versions of [`_mktemp`, `_wmktemp`](mktemp-wmktemp.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -61,7 +61,7 @@ If any of the above error conditions occurs, the invalid parameter handler is in
 
 The **_mktemp_s** function creates a unique file name by modifying the *nameTemplate* argument, so that after the call, the *nameTemplate* pointer points to a string containing the new file name. **_mktemp_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. **_wmktemp_s** is a wide-character version of **_mktemp_s**; the argument of **_wmktemp_s** is a wide-character string. **_wmktemp_s** and **_mktemp_s** behave identically otherwise, except that **_wmktemp_s** does not handle multibyte-character strings.
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -159,10 +159,10 @@ Unique filename is fne03188
 ## See also
 
 [File handling](../file-handling.md)\
-[fopen, _wfopen](fopen-wfopen.md)\
-[_getmbcp](getmbcp.md)\
-[_getpid](getpid.md)\
-[_open, _wopen](open-wopen.md)\
-[_setmbcp](setmbcp.md)\
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)\
-[tmpfile_s](tmpfile-s.md)
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`_getmbcp`](getmbcp.md)\
+[`_getpid`](getpid.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_setmbcp`](setmbcp.md)\
+[`_tempnam`, `_wtempnam`, `tmpnam`, `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+[`tmpfile_s`](tmpfile-s.md)

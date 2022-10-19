@@ -48,7 +48,7 @@ The **ceil** functions return a floating-point value that represents the smalles
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|none|**_DOMAIN**|
 
-**ceil** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
+**ceil** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [`_set_SSE2_enable`](set-sse2-enable.md).
 
 ## Remarks
 
@@ -69,11 +69,11 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [floor](floor-floorf-floorl.md).
+See the example for [`floor`](floor-floorf-floorl.md).
 
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[floor, floorf, floorl](floor-floorf-floorl.md)\
-[fmod, fmodf](fmod-fmodf.md)\
-[round, roundf, roundl](round-roundf-roundl.md)
+[`floor`, `floorf`, `floorl`](floor-floorf-floorl.md)\
+[`fmod`, `fmodf`](fmod-fmodf.md)\
+[`round`, `roundf`, `roundl`](round-roundf-roundl.md)

@@ -65,6 +65,6 @@ The `_initialize_onexit_table`, `_register_onexit_function`, and `_execute_onexi
 
 ## See also
 
-[atexit](./reference/atexit.md)\
-[exit, _Exit, _exit](./reference/exit-exit-exit.md)\
-[_onexit, _onexit_m](./reference/onexit-onexit-m.md)
+[`atexit`](./reference/atexit.md)\
+[`exit`, `_Exit`, `_exit`](./reference/exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](./reference/onexit-onexit-m.md)

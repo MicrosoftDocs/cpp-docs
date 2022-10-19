@@ -33,7 +33,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [`ceil`, `ceilf`, `ceill`](./reference/ceil-ceilf-ceill.md)|Computes the ceiling
 [`_chgsign`, `_chgsignf`, `_chgsignl`](./reference/chgsign-chgsignf-chgsignl.md)|Computes the additive inverse
 [`_clear87`, `_clearfp`](./reference/clear87-clearfp.md)|Gets and clears the floating-point status register
-[`_control87`, `\__control87_2`, `_controlfp`](./reference/control87-controlfp-control87-2.md)|Gets and sets the floating-point control word
+[`_control87`, `_controlfp`, `__control87_2`](./reference/control87-controlfp-control87-2.md)|Gets and sets the floating-point control word
 [`_controlfp_s`](./reference/controlfp-s.md)|Secure version of **`_controlfp`**
 [`copysign`, `copysignf`, `copysignl`, `_copysign`, `_copysignf`, `_copysignl`](./reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)|Returns a value that has the magnitude of one argument and the sign of another
 [`cos`, `cosf`, `cosl`](./reference/cos-cosf-cosl.md)|Computes the sine
@@ -48,7 +48,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [`expm1`, `expm1f`, `expm1l`](./reference/expm1-expm1f-expm1l.md)|Computes *e*<sup>x</sup>-1
 [`fabs`, `fabsf`, `fabsl`](./reference/fabs-fabsf-fabsl.md)|Computes the absolute value of a floating-point type
 [`_fcvt`](./reference/fcvt.md), [`fcvt`](./reference/posix-fcvt.md)|Converts a floating-point number to a string
-[_fcvt_s](./reference/fcvt-s.md)|Secure version of **`_fcvt`**
+[`_fcvt_s`](./reference/fcvt-s.md)|Secure version of **`_fcvt`**
 [`fdim`, `fdimf`, `fdiml`](./reference/fdim-fdimf-fdiml.md)|Determines the positive difference between two values
 [`feclearexcept`](./reference/feclearexcept1.md)|Clears specified floating-point exceptions
 [`fegetenv`](./reference/fegetenv1.md)|Stores the current floating-point environment

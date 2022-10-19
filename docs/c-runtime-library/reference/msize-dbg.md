@@ -37,7 +37,7 @@ On successful completion, **_msize_dbg** returns the size (in bytes) of the spec
 
 ## Remarks
 
-**_msize_dbg** is a debug version of the _[msize](msize.md) function. When [_DEBUG](../debug.md) is not defined, each call to **_msize_dbg** is reduced to a call to **_msize**. Both **_msize** and **_msize_dbg** calculate the size of a memory block in the base heap, but **_msize_dbg** adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
+**_msize_dbg** is a debug version of the _[`msize`](msize.md) function. When [`_DEBUG`](../debug.md) is not defined, each call to **_msize_dbg** is reduced to a call to **_msize**. Both **_msize** and **_msize_dbg** calculate the size of a memory block in the base heap, but **_msize_dbg** adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between calling a standard heap function and its debug version in a debug build of an application, see [Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
@@ -117,4 +117,4 @@ Size of block after _realloc_dbg of 40 more longs: 320
 ## See also
 
 [Debug routines](../debug-routines.md)\
-[_malloc_dbg](malloc-dbg.md)
+[`_malloc_dbg`](malloc-dbg.md)

@@ -47,7 +47,7 @@ Observe the following restrictions when using **longjmp**:
 
 - Do not assume that the values of the register variables will remain the same. The values of register variables in the routine calling `setjmp` may not be restored to the proper values after **longjmp** is executed.
 
-- Do not use **longjmp** to transfer control out of an interrupt-handling routine unless the interrupt is caused by a floating-point exception. In this case, a program may return from an interrupt handler via **longjmp** if it first reinitializes the floating-point math package by calling [_fpreset](fpreset.md).
+- Do not use **longjmp** to transfer control out of an interrupt-handling routine unless the interrupt is caused by a floating-point exception. In this case, a program may return from an interrupt handler via **longjmp** if it first reinitializes the floating-point math package by calling [`_fpreset`](fpreset.md).
 
 - Do not use **longjmp** to transfer control from a callback routine invoked directly or indirectly by Windows code.
 
@@ -71,9 +71,9 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [_fpreset](fpreset.md).
+See the example for [`_fpreset`](fpreset.md).
 
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)
-[setjmp](setjmp.md)
+[`setjmp`](setjmp.md)

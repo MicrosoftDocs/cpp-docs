@@ -53,9 +53,9 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[norm, normf, norml](norm-normf-norml1.md)\
-[creal, crealf, creall](creal-crealf-creall.md)\
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)\
-[conj, conjf, conjl](conj-conjf-conjl.md)\
-[carg, cargf, cargl](carg-cargf-cargl.md)\
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)
+[`norm`, `normf`, `norml`](norm-normf-norml1.md)\
+[`creal`, `crealf`, `creall`](creal-crealf-creall.md)\
+[`cproj`, `cprojf`, `cprojl`](cproj-cprojf-cprojl.md)\
+[`conj`, `conjf`, `conjl`](conj-conjf-conjl.md)\
+[`carg`, `cargf`, `cargl`](carg-cargf-cargl.md)\
+[`cabs`, `cabsf`, `cabsl`](cabs-cabsf-cabsl.md)

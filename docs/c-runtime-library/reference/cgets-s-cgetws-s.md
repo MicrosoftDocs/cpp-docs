@@ -12,7 +12,7 @@ ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
 ---
 # _cgets_s, _cgetws_s
 
-Gets a character string from the console. These versions of [_cgets and _cgetws](../cgets-cgetws.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Gets a character string from the console. These versions of [`_cgets` and `_cgetws`](../cgets-cgetws.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -73,7 +73,7 @@ If an error occurs during the operation or in the validating of the parameters, 
 
 In C++, the use of these functions is simplified by template overloads. The overloads can infer buffer length automatically, which eliminates the need to specify a size argument. They can also automatically replace older, less-secure functions with their newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -95,4 +95,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Console and port I/O](../console-and-port-i-o.md)\
-[_getch, _getwch](getch-getwch.md)
+[`_getch`, `_getwch`](getch-getwch.md)

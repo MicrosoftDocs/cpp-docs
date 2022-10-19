@@ -49,6 +49,6 @@ For compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)\
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)\
-[clog, clogf, clogl](clog-clogf-clogl.md)
+[`cpow`, `cpowf`, `cpowl`](cpow-cpowf-cpowl.md)\
+[`clog10`, `clog10f`, `clog10l`](clog10-clog10f-clog10l.md)\
+[`clog`, `clogf`, `clogl`](clog-clogf-clogl.md)

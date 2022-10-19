@@ -31,7 +31,7 @@ Pointer to **FILE** structure.
 
 If no error has occurred on *stream*, **ferror** returns 0. Otherwise, it returns a nonzero value. If stream is **NULL**, **ferror** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns 0.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -49,14 +49,14 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [feof](feof.md).
+See the example for [`feof`](feof.md).
 
 ## See also
 
 [Error handling](../error-handling-crt.md)\
 [Stream I/O](../stream-i-o.md)\
-[clearerr](clearerr.md)\
-[_eof](eof.md)\
-[feof](feof.md)\
-[fopen, _wfopen](fopen-wfopen.md)\
-[perror, _wperror](perror-wperror.md)
+[`clearerr`](clearerr.md)\
+[`_eof`](eof.md)\
+[`feof`](feof.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`perror`, `_wperror`](perror-wperror.md)

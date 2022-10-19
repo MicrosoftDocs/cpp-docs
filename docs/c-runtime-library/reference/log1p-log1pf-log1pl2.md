@@ -86,5 +86,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[log2, log2f, log2l](log2-log2f-log2l.md)\
-[log, logf, log10, log10f](log-logf-log10-log10f.md)
+[`log2`, `log2f`, `log2l`](log2-log2f-log2l.md)\
+[`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)

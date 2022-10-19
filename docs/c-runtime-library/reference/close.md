@@ -51,13 +51,13 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [_open](open-wopen.md).
+See the example for [`_open`](open-wopen.md).
 
 ## See also
 
 [Low-level I/O](../low-level-i-o.md)\
-[_chsize](chsize.md)\
-[_creat, _wcreat](creat-wcreat.md)\
-[_dup, _dup2](dup-dup2.md)\
-[_open, _wopen](open-wopen.md)\
-[_unlink, _wunlink](unlink-wunlink.md)
+[`_chsize`](chsize.md)\
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`_dup`, `_dup2`](dup-dup2.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_unlink`, `_wunlink`](unlink-wunlink.md)

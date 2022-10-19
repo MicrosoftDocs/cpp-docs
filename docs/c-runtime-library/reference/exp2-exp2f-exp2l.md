@@ -57,7 +57,7 @@ If successful, returns the base-2 exponent of *x*, that is, 2<sup>x</sup>. Other
 |Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
 |Underflow range error|Correct result, after rounding|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 

@@ -53,8 +53,8 @@ The behavior of **islower** and **_islower_l** is undefined if *c* is not EOF or
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istlower**|**islower**|[_ismbclower](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswlower**|
-|**_istlower_l**|`_islower _l`|[_ismbclower_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_liswlower_l**|
+|**_istlower**|**islower**|[`_ismbclower`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswlower**|
+|**_istlower_l**|`_islower _l`|[`_ismbclower_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_liswlower_l**|
 
 ## Remarks
 
@@ -75,4 +75,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
-[is, isw Routines](../is-isw-routines.md)
+[`is`, `isw` routines](../is-isw-routines.md)

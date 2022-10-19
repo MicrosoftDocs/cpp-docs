@@ -24,7 +24,7 @@ More secure versions of the functions in the following table are available, indi
 |[`_atoi64`, `_atoi64_l`, `_wtoi64`, `_wtoi64_l`](./reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|Convert character to 64-bit integer value|**`LC_NUMERIC`**|
 |[`atol`, `_atol_l`, `_wtol`, `_wtol_l`](./reference/atol-atol-l-wtol-wtol-l.md)|Convert character to long value|**`LC_NUMERIC`**|
 |[`_atodbl`, `_atodbl_l`, `_atoldbl`, `_atoldbl_l`, `_atoflt`, `_atoflt_l`](./reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Convert character to double-long value|**`LC_NUMERIC`**|
-|[`is` Routines](./is-isw-routines.md)|Test given integer for particular condition.|**`LC_CTYPE`**|
+|[`is`, `isw` routines](./is-isw-routines.md)|Test given integer for particular condition.|**`LC_CTYPE`**|
 |[`isleadbyte`, `_isleadbyte_l`](./reference/isleadbyte-isleadbyte-l.md)|Test for lead byte|**`LC_CTYPE`**|
 |[`localeconv`](./reference/localeconv.md)|Read appropriate values for formatting numeric quantities|`LC_MONETARY, LC_NUMERIC`|
 |[`MB_CUR_MAX`](./mb-cur-max.md)|Maximum length in bytes of any multibyte character in current locale (macro defined in `STDLIB.H`)|**`LC_CTYPE`**|

@@ -117,4 +117,4 @@ Return value: 3
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
 [Locale](../locale.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)

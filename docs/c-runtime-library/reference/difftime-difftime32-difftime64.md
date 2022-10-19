@@ -116,4 +116,4 @@ Program takes      3 seconds.
 
 [Math and floating-point support](../floating-point-support.md)\
 [Time management](../time-management.md)\
-[time, _time32, _time64](time-time32-time64.md)
+[`time`, `_time32`, `_time64`](time-time32-time64.md)

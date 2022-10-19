@@ -60,11 +60,11 @@ If *mbstr* isn't **NULL**, **mblen** and **_mblen_l** return the length, in byte
 
 ## Remarks
 
-The **_mbclen** function returns the length, in bytes, of the multibyte character *c*. If *c* doesn't point to the lead byte of a multibyte character (as determined by an implicit call to [_ismbblead](ismbblead-ismbblead-l.md), the result of **_mbclen** is unpredictable.
+The **_mbclen** function returns the length, in bytes, of the multibyte character *c*. If *c* doesn't point to the lead byte of a multibyte character (as determined by an implicit call to [`_ismbblead`](ismbblead-ismbblead-l.md), the result of **_mbclen** is unpredictable.
 
 **mblen** returns the length in bytes of *mbstr* if it's a valid multibyte character. It also determines multibyte-character validity associated with the code page. **mblen** examines *count* or fewer bytes contained in *mbstr*, but not more than **MB_CUR_MAX** bytes.
 
-The output value is affected by the **LC_CTYPE** category setting of the locale. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [setlocale](setlocale-wsetlocale.md) and [Locale](../locale.md).
+The output value is affected by the **LC_CTYPE** category setting of the locale. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [`setlocale`](setlocale-wsetlocale.md) and [Locale](../locale.md).
 
 **_mbclen**, **_mblen_l**, and **_mbclen_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mblen** or **mbrlen** instead.
 
@@ -130,6 +130,6 @@ Length in bytes of NULL multibyte character 0: 0
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[_mbccpy, _mbccpy_l](mbccpy-mbccpy-l.md)\
-[mbrlen](mbrlen.md)\
-[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)
+[`_mbccpy`, `_mbccpy_l`](mbccpy-mbccpy-l.md)\
+[`mbrlen`](mbrlen.md)\
+[`strlen`, `wcslen`, `_mbslen`, `_mbslen_l`, `_mbstrlen`, `_mbstrlen_l`](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)

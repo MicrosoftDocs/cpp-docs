@@ -53,8 +53,8 @@ The behavior of **isdigit** and **_isdigit_l** is undefined if *c* is not EOF or
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istdigit**|**isdigit**|[_ismbcdigit](ismbcalnum-functions.md)|**iswdigit**|
-|**_istdigit_l**|**_isdigit_l**|[_ismbcdigit_l](ismbcalnum-functions.md)|**_iswdigit_l**|
+|**_istdigit**|**isdigit**|[`_ismbcdigit`](ismbcalnum-functions.md)|**iswdigit**|
+|**_istdigit_l**|**_isdigit_l**|[`_ismbcdigit_l`](ismbcalnum-functions.md)|**_iswdigit_l**|
 
 ## Remarks
 
@@ -75,4 +75,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
-[is, isw Routines](../is-isw-routines.md)
+[`is`, `isw` routines](../is-isw-routines.md)

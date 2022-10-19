@@ -12,7 +12,7 @@ ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
 ---
 # __RTDynamicCast
 
-Runtime implementation of the [dynamic_cast](../cpp/dynamic-cast-operator.md) operator.
+Runtime implementation of the [`dynamic_cast`](../cpp/dynamic-cast-operator.md) operator.
 
 ## Syntax
 

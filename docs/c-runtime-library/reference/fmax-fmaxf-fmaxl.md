@@ -65,7 +65,7 @@ Otherwise, may return one of the following values:
 |*y* = NaN|*x*|
 |*x* and *y* = NaN|NaN|
 
-This function does not use the errors specified in  [_matherr](matherr.md).
+This function does not use the errors specified in  [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -85,4 +85,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[fmin, fminf, fminl](fmin-fminf-fminl.md)
+[`fmin`, `fminf`, `fminl`](fmin-fminf-fminl.md)

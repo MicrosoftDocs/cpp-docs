@@ -77,8 +77,8 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Character classification](../character-classification.md)\
-[_ismbc Routines](../ismbc-routines.md)\
+[`_ismbc` routines](../ismbc-routines.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[is, isw Routines](../is-isw-routines.md)\
-[_ismbb Routines](../ismbb-routines.md)
+[`is`, `isw` routines](../is-isw-routines.md)\
+[`_ismbb` routines](../ismbb-routines.md)

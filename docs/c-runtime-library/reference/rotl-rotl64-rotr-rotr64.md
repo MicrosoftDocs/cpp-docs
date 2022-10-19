@@ -104,4 +104,4 @@ int main( void )
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[_lrotl, _lrotr](lrotl-lrotr.md)
+[`_lrotl`, `_lrotr`](lrotl-lrotr.md)

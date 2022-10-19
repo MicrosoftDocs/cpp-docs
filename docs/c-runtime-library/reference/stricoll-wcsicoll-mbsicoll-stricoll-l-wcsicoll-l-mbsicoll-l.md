@@ -74,7 +74,7 @@ Each of these functions returns **_NLSCMPERROR**. To use **_NLSCMPERROR**, inclu
 
 Each of these functions performs a case-insensitive comparison of *string1* and *string2* according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
 
-**_stricmp** differs from **_stricoll** in that the **_stricmp** comparison is affected by **LC_CTYPE**, whereas the **_stricoll** comparison is according to the **LC_CTYPE** and **LC_COLLATE** categories of the locale. For more information on the **LC_COLLATE** category, see [setlocale](setlocale-wsetlocale.md) and [Locale categories](../locale-categories.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
+**_stricmp** differs from **_stricoll** in that the **_stricmp** comparison is affected by **LC_CTYPE**, whereas the **_stricoll** comparison is according to the **LC_CTYPE** and **LC_COLLATE** categories of the locale. For more information on the **LC_COLLATE** category, see [`setlocale`](setlocale-wsetlocale.md) and [Locale categories](../locale-categories.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
 All of these functions validate their parameters. If either *string1* or *string2* are **NULL** pointers, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
 
@@ -100,12 +100,12 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Locale](../locale.md)\
 [String manipulation](../string-manipulation-crt.md)\
-[strcoll Functions](../strcoll-functions.md)\
-[localeconv](localeconv.md)\
-[_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)\
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)\
-[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)\
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)
+[`strcoll` functions](../strcoll-functions.md)\
+[`localeconv`](localeconv.md)\
+[`_mbsnbcoll`, `_mbsnbcoll_l`, `_mbsnbicoll`, `_mbsnbicoll_l`](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`_stricmp`, `_wcsicmp`, `_mbsicmp`, `_stricmp_l`, `_wcsicmp_l`, `_mbsicmp_l`](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

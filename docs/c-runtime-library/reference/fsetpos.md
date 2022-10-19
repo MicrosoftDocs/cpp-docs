@@ -35,11 +35,11 @@ Position-indicator storage.
 
 If successful, **fsetpos** returns 0. On failure, the function returns a nonzero value and sets **errno** to one of the following manifest constants (defined in ERRNO.H): **EBADF**, which means the file isn't accessible or the object that *stream* points to isn't a valid file structure; or **EINVAL**, which means an invalid value for *stream* or *pos* was passed. If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **fsetpos** function sets the file-position indicator for *stream* to the value of *pos*, which is obtained in a prior call to **fgetpos** against *stream*. The function clears the end-of-file indicator and undoes any effects of [ungetc](ungetc-ungetwc.md) on *stream*. After a call to **fsetpos**, the next operation on *stream* may be either input or output.
+The **fsetpos** function sets the file-position indicator for *stream* to the value of *pos*, which is obtained in a prior call to **fgetpos** against *stream*. The function clears the end-of-file indicator and undoes any effects of [`ungetc`](ungetc-ungetwc.md) on *stream*. After a call to **fsetpos**, the next operation on *stream* may be either input or output.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -53,9 +53,9 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [fgetpos](fgetpos.md).
+See the example for [`fgetpos`](fgetpos.md).
 
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fgetpos](fgetpos.md)
+[`fgetpos`](fgetpos.md)

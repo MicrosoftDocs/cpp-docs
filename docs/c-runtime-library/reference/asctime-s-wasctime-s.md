@@ -12,7 +12,7 @@ ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
 ---
 # asctime_s, _wasctime_s
 
-Convert a `tm` time structure to a character string. These functions are versions of [asctime, _wasctime](asctime-wasctime.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Convert a `tm` time structure to a character string. These functions are versions of [`asctime`, `_wasctime`](asctime-wasctime.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -83,13 +83,13 @@ The **asctime** function converts a time stored as a structure to a character st
 |**tm_yday**|Day of year (0-365; January 1 = 0)|
 |**tm_year**|Year (current year minus 1900)|
 
-The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time, _time32, _time64](time-time32-time64.md), [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md), and [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md) functions. For information about defining the time zone environment and global variables, see [_tzset](tzset.md).
+The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [`time`, `_time32`, `_time64`](time-time32-time64.md), [`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md), and [`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md) functions. For information about defining the time zone environment and global variables, see [`_tzset`](tzset.md).
 
 The string result produced by **asctime_s** contains exactly 26 characters and has the form `Wed Jan  2 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The new line character and the null character occupy the last two positions of the string. The value passed in as *`numberOfElements`* should be at least this size. If it's less, an error code, **EINVAL**, will be returned.
 
 **_wasctime_s** is a wide-character version of **asctime_s**. **_wasctime_s** and **asctime_s** behave identically otherwise.
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -153,9 +153,9 @@ Current date and time: Wed May 14 15:30:17 2003
 ## See also
 
 [Time management](../time-management.md)\
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)\
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
-[time, _time32, _time64](time-time32-time64.md)\
-[_tzset](tzset.md)
+[`ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_tzset`](tzset.md)

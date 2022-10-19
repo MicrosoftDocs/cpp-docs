@@ -63,13 +63,13 @@ The locale to use.
 
 If *strSource* is **NULL** or the *base* is nonzero and either less than 2 or greater than 36, **errno** is set to **EINVAL**.
 
-For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 The **strtoimax** function converts *strSource* to an **intmax_t**. The wide-character version of **strtoimax** is **wcstoimax**; its *strSource* argument is a wide-character string. Otherwise, these functions behave identically. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to *base*.
 
-The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [setlocale, _wsetlocale](setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; **_strtoimax_l** and **_wcstoimax_l** are identical to the corresponding functions that don't have the **_l** suffix except that they instead use the locale that's passed in. For more information, see [Locale](../locale.md).
+The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; **_strtoimax_l** and **_wcstoimax_l** are identical to the corresponding functions that don't have the **_l** suffix except that they instead use the locale that's passed in. For more information, see [Locale](../locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location that's pointed to by *endptr*.
 
@@ -98,11 +98,11 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
-[localeconv](localeconv.md)\
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)\
+[`localeconv`](localeconv.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
 [String to numeric value functions](../string-to-numeric-value-functions.md)\
-[strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)\
-[strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)\
-[strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\
-[strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)
+[`strtod`, `_strtod_l`, `wcstod`, `_wcstod_l`](strtod-strtod-l-wcstod-wcstod-l.md)\
+[`strtol`, `wcstol`, `_strtol_l`, `_wcstol_l`](strtol-wcstol-strtol-l-wcstol-l.md)\
+[`strtoul`, `_strtoul_l`, `wcstoul`, `_wcstoul_l`](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\
+[`strtoumax`, `_strtoumax_l`, `wcstoumax`, `_wcstoumax_l`](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)\
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)

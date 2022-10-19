@@ -41,7 +41,7 @@ Pointer to the **FILE** structure.
 
 ## Return value
 
-Same as [fwrite](fwrite.md).
+Same as [`fwrite`](fwrite.md).
 
 ## Remarks
 
@@ -59,10 +59,10 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example for [fread](fread.md).
+See the example for [`fread`](fread.md).
 
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fread](fread.md)\
-[_write](write.md)
+[`fread`](fread.md)\
+[`_write`](write.md)

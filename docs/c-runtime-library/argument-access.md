@@ -14,9 +14,9 @@ The **va_arg**, **va_end**, and **va_start** macros provide access to function a
 
 |Macro|Use|
 |-----------|-------------------------------|
-|[va_arg](./reference/va-arg-va-copy-va-end-va-start.md)|Retrieve argument from list|
-|[va_end](./reference/va-arg-va-copy-va-end-va-start.md)|Reset pointer|
-|[va_start](./reference/va-arg-va-copy-va-end-va-start.md)|Set pointer to beginning of argument list|
+|[`va_arg`](./reference/va-arg-va-copy-va-end-va-start.md)|Retrieve argument from list|
+|[`va_end`](./reference/va-arg-va-copy-va-end-va-start.md)|Reset pointer|
+|[`va_start`](./reference/va-arg-va-copy-va-end-va-start.md)|Set pointer to beginning of argument list|
 
 ## See also
 

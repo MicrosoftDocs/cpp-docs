@@ -12,7 +12,7 @@ ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
 ---
 # _gcvt_s
 
-Converts a floating-point value to a string. This is a version of [_gcvt](gcvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Converts a floating-point value to a string. This is a version of [`_gcvt`](gcvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -47,7 +47,7 @@ Number of significant digits stored.
 
 ## Return value
 
-Zero if successful. If a failure occurs due to an invalid parameter (see the following table for invalid values), the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in Errno.h. For a listing of these errors, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+Zero if successful. If a failure occurs due to an invalid parameter (see the following table for invalid values), the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in Errno.h. For a listing of these errors, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Error conditions
 
@@ -67,7 +67,7 @@ The **_gcvt_s** function converts a floating-point *value* to a character string
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug version of this function first fills the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug version of this function first fills the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -114,7 +114,7 @@ Converted value: 1.2
 
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
-[_ecvt_s](ecvt-s.md)\
-[_fcvt_s](fcvt-s.md)\
-[_gcvt](gcvt.md)
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_ecvt_s`](ecvt-s.md)\
+[`_fcvt_s`](fcvt-s.md)\
+[`_gcvt`](gcvt.md)

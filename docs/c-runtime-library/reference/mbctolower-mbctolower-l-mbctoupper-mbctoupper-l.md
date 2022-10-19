@@ -57,7 +57,7 @@ The functions test a character *c* and, if possible, apply one of the following 
 |**_mbctolower**, **_mbctolower_l**|Uppercase character to lowercase character.|
 |**_mbctoupper**, **_mbctoupper_l**|Lowercase character to uppercase character.|
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The version of this function without the **_l** suffix uses the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The version of this function without the **_l** suffix uses the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 In previous versions, **_mbctolower** was called **jtolower**, and **_mbctoupper** was called **jtoupper**. For new code, use the new names instead.
 
@@ -84,7 +84,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Data conversion](../data-conversion.md)\
-[_mbbtombc, _mbbtombc_l](mbbtombc-mbbtombc-l.md)\
-[_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)\
-[_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l](mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)\
-[_mbctombb, _mbctombb_l](mbctombb-mbctombb-l.md)
+[`_mbbtombc`, `_mbbtombc_l`](mbbtombc-mbbtombc-l.md)\
+[`_mbcjistojms`, `_mbcjistojms_l`, `_mbcjmstojis`, `_mbcjmstojis_l`](mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)\
+[`_mbctohira`, `_mbctohira_l`, `_mbctokata`, `_mbctokata_l`](mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)\
+[`_mbctombb`, `_mbctombb_l`](mbctombb-mbctombb-l.md)

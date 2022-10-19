@@ -12,7 +12,7 @@ ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
 ---
 # asctime, _wasctime
 
-Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
+Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md).
 
 ## Syntax
 
@@ -36,7 +36,7 @@ Time/date structure.
 
 ## Remarks
 
-More secure versions of these functions are available; see [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
+More secure versions of these functions are available; see [`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md).
 
 The **asctime** function converts a time stored as a structure to a character string. The *`timeptr`* value is typically obtained from a call to **gmtime** or **localtime**, which both return a pointer to a `tm` structure, defined in TIME.H.
 
@@ -52,7 +52,7 @@ The **asctime** function converts a time stored as a structure to a character st
 |**tm_yday**|Day of year (0-365; January 1 = 0)|
 |**tm_year**|Year (current year minus 1900)|
 
-The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions. For information about defining the time zone environment and global variables, see the [_tzset](tzset.md) function.
+The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [`time`](time-time32-time64.md), [`_ftime`](ftime-ftime32-ftime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions. For information about defining the time zone environment and global variables, see the [`_tzset`](tzset.md) function.
 
 The string result produced by **asctime** contains exactly 26 characters and has the form `Wed Jan  2 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The newline character and the null character occupy the last two positions of the string. **asctime** uses a single, statically allocated buffer to hold the return string. Each call to this function destroys the result of the previous call.
 
@@ -110,10 +110,10 @@ Current date and time: Sun Feb  3 11:38:58 2002
 ## See also
 
 [Time management](../time-management.md)\
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)\
-[time, _time32, _time64](time-time32-time64.md)\
-[_tzset](tzset.md)\
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)
+[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`_tzset`](tzset.md)\
+[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)

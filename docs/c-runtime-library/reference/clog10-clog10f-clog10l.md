@@ -59,6 +59,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)\
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)\
-[clog, clogf, clogl](clog-clogf-clogl.md)
+[`cexp`, `cexpf`, `cexpl`](cexp-cexpf-cexpl.md)\
+[`cpow`, `cpowf`, `cpowl`](cpow-cpowf-cpowl.md)\
+[`clog`, `clogf`, `clogl`](clog-clogf-clogl.md)

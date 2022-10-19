@@ -67,10 +67,10 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
-See the example for [_getch](getch-getwch.md).
+See the example for [`_getch`](getch-getwch.md).
 
 ## See also
 
 [Console and port I/O](../console-and-port-i-o.md)\
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
-[_getch, _getwch](getch-getwch.md)
+[`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
+[`_getch`, `_getwch`](getch-getwch.md)

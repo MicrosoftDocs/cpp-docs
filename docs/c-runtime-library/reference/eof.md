@@ -101,7 +101,7 @@ Number of bytes read = 29
 
 [Error handling](../error-handling-crt.md)\
 [Low-level I/O](../low-level-i-o.md)\
-[clearerr](clearerr.md)\
-[feof](feof.md)\
-[ferror](ferror.md)\
-[perror, _wperror](perror-wperror.md)
+[`clearerr`](clearerr.md)\
+[`feof`](feof.md)\
+[`ferror`](ferror.md)\
+[`perror`, `_wperror`](perror-wperror.md)

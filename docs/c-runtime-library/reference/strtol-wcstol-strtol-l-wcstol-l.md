@@ -59,7 +59,7 @@ Locale to use.
 
 **`strtol`**, **`wcstol`**, **`_strtol_l`**, and **`_wcstol_l`** return the value represented in *`string`*. They return 0 if no conversion is possible. When the representation would cause an overflow, they return **`LONG_MAX`** or **`LONG_MIN`**.
 
-**`errno`** is set to **`ERANGE`** if overflow or underflow occurs. It's set to **`EINVAL`** if *`string`* is **`NULL`**. Or, if *`base`* is nonzero and less than 2, or greater than 36. For more information on **`ERANGE`**, **`EINVAL`**, and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+**`errno`** is set to **`ERANGE`** if overflow or underflow occurs. It's set to **`EINVAL`** if *`string`* is **`NULL`**. Or, if *`base`* is nonzero and less than 2, or greater than 36. For more information on **`ERANGE`**, **`EINVAL`**, and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

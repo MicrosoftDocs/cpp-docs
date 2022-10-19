@@ -32,6 +32,6 @@ The file constants are as follows:
 
 ## See also
 
-[_open, _wopen](./reference/open-wopen.md)\
-[_sopen, _wsopen](./reference/sopen-wsopen.md)\
+[`_open`, `_wopen`](./reference/open-wopen.md)\
+[`_sopen`, `_wsopen`](./reference/sopen-wsopen.md)\
 [Global constants](./global-constants.md)

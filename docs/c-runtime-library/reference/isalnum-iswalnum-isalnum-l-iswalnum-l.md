@@ -43,7 +43,7 @@ The behavior of **isalnum** and **_isalnum_l** is undefined if *c* is not EOF or
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istalnum**|**isalnum**|[_ismbcalnum](ismbcalnum-functions.md)|**iswalnum**|
+|**_istalnum**|**isalnum**|[`_ismbcalnum`](ismbcalnum-functions.md)|**iswalnum**|
 |**_istalnum_l**|**_isalnum_l**|**_ismbcalnum_l**|**_iswalnum_l**|
 
 ## Remarks
@@ -65,4 +65,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Character classification](../character-classification.md)\
 [Locale](../locale.md)\
-[is, isw Routines](../is-isw-routines.md)
+[`is`, `isw` routines](../is-isw-routines.md)

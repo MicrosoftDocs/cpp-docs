@@ -63,7 +63,7 @@ A range error may occur if the magnitude of *x* is too large or too small for th
 |overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 |underflow range error|the correct value, after rounding.|
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
@@ -87,4 +87,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[lgamma, lgammaf, lgammal](lgamma-lgammaf-lgammal.md)
+[`lgamma`, `lgammaf`, `lgammal`](lgamma-lgammaf-lgammal.md)

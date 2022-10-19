@@ -33,7 +33,7 @@ Path of file to be removed.
 
 Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets **`errno`** either to **`EACCES`** to indicate that the path specifies a read-only file, specifies a directory, or the file is open, or to **`ENOENT`** to indicate that the filename or path wasn't found.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

@@ -37,7 +37,7 @@ Number of bytes to lock.
 
 ## Return value
 
-**_locking** returns 0 if successful. A return value of -1 indicates failure, in which case [errno](../errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.
+**_locking** returns 0 if successful. A return value of -1 indicates failure, in which case [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.
 
 |errno value|Condition|
 |-|-|
@@ -146,5 +146,5 @@ Now I'm done. Do what you will with them
 ## See also
 
 [File handling](../file-handling.md)\
-[_creat, _wcreat](creat-wcreat.md)\
-[_open, _wopen](open-wopen.md)
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`_open`, `_wopen`](open-wopen.md)

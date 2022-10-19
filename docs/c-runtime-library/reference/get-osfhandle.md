@@ -33,7 +33,7 @@ Returns an operating-system file handle if *`fd`* is valid. Otherwise, the inval
 > [!NOTE]
 > When **`stdin`**, **`stdout`**, and **`stderr`** aren't associated with a stream (for example, in a Windows application without a console window), the file descriptor values for these streams are returned from [`_fileno`](fileno.md) as the special value -2. Similarly, if you use a 0, 1, or 2 as the file descriptor parameter instead of the result of a call to **`_fileno`**, **`_get_osfhandle`** also returns the special value -2 when the file descriptor is not associated with a stream, and does not set **`errno`**. However, this is not a valid file handle value, and subsequent calls that attempt to use it are likely to fail.
 
-For more information about **`EBADF`** and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about **`EBADF`** and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -56,4 +56,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`_dup`, `_dup2`](dup-dup2.md)\
 [`_open`, `_wopen`](open-wopen.md)\
-[`\_open_osfhandle`](open-osfhandle.md)
+[`_open_osfhandle`](open-osfhandle.md)

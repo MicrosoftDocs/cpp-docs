@@ -63,5 +63,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_get_errno](get-errno.md)\
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md)
+[`_get_errno`](get-errno.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)

@@ -12,7 +12,7 @@ ms.assetid: e96180f2-df46-423d-b4eb-0a49ab819bde
 ---
 # vsscanf, vswscanf
 
-Reads formatted data from a string. More secure versions of these functions are available; see [vsscanf_s, vswscanf_s](vsscanf-s-vswscanf-s.md).
+Reads formatted data from a string. More secure versions of these functions are available; see [`vsscanf_s`, `vswscanf_s`](vsscanf-s-vswscanf-s.md).
 
 ## Syntax
 
@@ -46,7 +46,7 @@ Each of these functions returns the number of fields that are successfully conve
 
 If *buffer* or *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
-For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -126,7 +126,7 @@ Real:     = 15.000000
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)\
-[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)\
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
-[vsscanf_s, vswscanf_s](vsscanf-s-vswscanf-s.md)
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[`vsscanf_s`, `vswscanf_s`](vsscanf-s-vswscanf-s.md)

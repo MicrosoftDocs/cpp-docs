@@ -53,8 +53,8 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[isfinite, _finite, _finitef](finite-finitef.md)\
-[isinf](isinf.md)\
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)\
-[isnormal](isnormal.md)\
-[_fpclass, _fpclassf](fpclass-fpclassf.md)
+[`isfinite`, `_finite`, `_finitef`](finite-finitef.md)\
+[`isinf`](isinf.md)\
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)\
+[`isnormal`](isnormal.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)

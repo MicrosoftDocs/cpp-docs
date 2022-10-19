@@ -12,7 +12,7 @@ ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
 ---
 # _gcvt
 
-Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [_gcvt_s](gcvt-s.md).
+Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [`_gcvt_s`](gcvt-s.md).
 
 ## Syntax
 
@@ -117,6 +117,6 @@ buffer: '-1.23456789012e-002' (19 chars)
 
 [Data conversion](../data-conversion.md)\
 [Math and floating-point support](../floating-point-support.md)\
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)\
-[_ecvt](ecvt.md)\
-[_fcvt](fcvt.md)
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_ecvt`](ecvt.md)\
+[`_fcvt`](fcvt.md)

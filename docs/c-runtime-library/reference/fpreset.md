@@ -151,7 +151,7 @@ Error 131: Divide by zero
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[_exec, _wexec Functions](../exec-wexec-functions.md)\
-[signal](signal.md)\
-[_spawn, _wspawn Functions](../spawn-wspawn-functions.md)\
-[system, _wsystem](system-wsystem.md)
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`signal`](signal.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

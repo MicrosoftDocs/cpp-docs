@@ -73,5 +73,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[_set_errno](set-errno.md)\
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md)
+[`_set_errno`](set-errno.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)

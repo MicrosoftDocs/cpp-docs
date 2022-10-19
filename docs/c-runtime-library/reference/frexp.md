@@ -102,5 +102,5 @@ frexp( 16.400000, &n ) = 0.512500, n = 5
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[ldexp](ldexp.md)\
-[modf, modff, modfl](modf-modff-modfl.md)
+[`ldexp`](ldexp.md)\
+[`modf`, `modff`, `modfl`](modf-modff-modfl.md)

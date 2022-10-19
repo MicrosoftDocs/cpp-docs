@@ -34,13 +34,13 @@ Input stream.
 
 Returns the character read. To indicate a read error or end-of-file condition, **getc** returns **EOF**, and **getwc** returns **WEOF**. For **getc**, use **ferror** or **feof** to check for an error or for end of file. If *stream* is **NULL**, **getc** and **getwc** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EOF** (or **WEOF** for **getwc**), and set **errno** to **EINVAL**.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 Each routine reads a single character from a file at the current position and increments the associated file pointer (if defined) to point to the next character. The file is associated with *stream*.
 
-These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getc_nolock, _getwc_nolock](getc-nolock-getwc-nolock.md).
+These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [`_getc_nolock`, `_getwc_nolock`](getc-nolock-getwc-nolock.md).
 
 Routine-specific remarks follow.
 
@@ -119,7 +119,7 @@ Input was: Line one.
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[fgetc, fgetwc](fgetc-fgetwc.md)\
-[_getch, _getwch](getch-getwch.md)\
-[putc, putwc](putc-putwc.md)\
-[ungetc, ungetwc](ungetc-ungetwc.md)
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`_getch`, `_getwch`](getch-getwch.md)\
+[`putc`, `putwc`](putc-putwc.md)\
+[`ungetc`, `ungetwc`](ungetc-ungetwc.md)

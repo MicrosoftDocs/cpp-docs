@@ -23,31 +23,31 @@ if ((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))
 
 |Routine|Character test condition|
 |-------------|------------------------------|
-|[isalnum, iswalnum, _isalnum_l, _iswalnum_l](./reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md), [_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l](./reference/ismbcalnum-functions.md)|Alphanumeric|
-|[_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l](./reference/ismbcalnum-functions.md)|Multibyte alphanumeric|
-|[isalpha, iswalpha, _isalpha_l, _iswalpha_l](./reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md), [_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l](./reference/ismbcalnum-functions.md)|Alphabetic|
-|[isascii, __isascii, iswascii](./reference/isascii-isascii-iswascii.md)|ASCII|
-|[isblank, iswblank, _isblank_l, _iswblank_l](./reference/isblank-iswblank-isblank-l-iswblank-l.md), [_ismbcsblank, _ismbcsblank_l](./reference/ismbcgraph-functions.md)|Blank (space or horizontal tab)|
-|[iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l](./reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)|Control|
-|[iscsym, iscsymf, __iscsym, \__iswcsym, \__iscsymf, \__iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l](./reference/iscsym-functions.md)|Letter, underscore, or digit|
-|[iscsym, iscsymf, __iscsym, \__iswcsym, \__iscsymf, \__iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l](./reference/iscsym-functions.md)|Letter or underscore|
-|[isdigit, iswdigit, _isdigit_l, _iswdigit_l](./reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md), [_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l](./reference/ismbcalnum-functions.md)|Decimal digit|
-|[isgraph, iswgraph, _isgraph_l, _iswgraph_l](./reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md), [_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l](./reference/ismbcgraph-functions.md)|Printable other than space|
-|[islower, iswlower, _islower_l, _iswlower_l](./reference/islower-iswlower-islower-l-iswlower-l.md), [_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](./reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Lowercase|
-|[_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l](./reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Hiragana|
-|[_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l](./reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Katakana|
-|[_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l](./reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Legal multibyte character|
-|[_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l](./reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Japan-level 0 multibyte character|
-|[_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l](./reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Japan-level 1 multibyte character|
-|[_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l](./reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Japan-level 2 multibyte character|
-|[_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l](./reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Non-alphanumeric multibyte character|
-|[isprint, iswprint, _isprint_l, _iswprint_l](./reference/isprint-iswprint-isprint-l-iswprint-l.md), [_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l](./reference/ismbcgraph-functions.md)|Printable|
-|[ispunct, iswpunct, _ispunct_l, _iswpunct_l](./reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md), [_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l](./reference/ismbcgraph-functions.md)|Punctuation|
-|[isspace, iswspace, _isspace_l, _iswspace_l](./reference/isspace-iswspace-isspace-l-iswspace-l.md), [_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l](./reference/ismbcgraph-functions.md)|White-space|
-|[isupper, iswupper](./reference/isupper-isupper-l-iswupper-iswupper-l.md), [_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](./reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Uppercase|
-|[_isctype, iswctype, _isctype_l, _iswctype_l](./reference/isctype-iswctype-isctype-l-iswctype-l.md)|Property specified by *desc* argument|
-|[isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l](./reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|Hexadecimal digit|
-|[_mbclen, mblen, _mblen_l](./reference/mbclen-mblen-mblen-l.md)|Return length of valid multibyte character; result depends on **LC_CTYPE** category setting of current locale|
+|[`isalnum`, `iswalnum`, `_isalnum_l`, `_iswalnum_l`](./reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md), [`_ismbcalnum`, `_ismbcalnum_l`, `_ismbcalpha`, `_ismbcalpha_l`, `_ismbcdigit`, `_ismbcdigit_l`](./reference/ismbcalnum-functions.md)|Alphanumeric|
+|[`_ismbcalnum`, `_ismbcalnum_l`, `_ismbcalpha`, `_ismbcalpha_l`, `_ismbcdigit`, `_ismbcdigit_l`](./reference/ismbcalnum-functions.md)|Multibyte alphanumeric|
+|[`isalpha`, `iswalpha`, `_isalpha_l`, `_iswalpha_l`](./reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md), [`_ismbcalnum`, `_ismbcalnum_l`, `_ismbcalpha`, `_ismbcalpha_l`, `_ismbcdigit`, `_ismbcdigit_l`](./reference/ismbcalnum-functions.md)|Alphabetic|
+|[`isascii`, `__isascii`, `iswascii`](./reference/isascii-isascii-iswascii.md)|ASCII|
+|[`isblank`, `iswblank`, `_isblank_l`, `_iswblank_l`](./reference/isblank-iswblank-isblank-l-iswblank-l.md), [`_ismbcsblank`, `_ismbcsblank_l`](./reference/ismbcgraph-functions.md)|Blank (space or horizontal tab)|
+|[`iscntrl`, `iswcntrl`, `_iscntrl_l`, `_iswcntrl_l`](./reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)|Control|
+|[`iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`](./reference/iscsym-functions.md)|Letter, underscore, or digit|
+|[`iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`](./reference/iscsym-functions.md)|Letter or underscore|
+|[`isdigit`, `iswdigit`, `_isdigit_l`, `_iswdigit_l`](./reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md), [`_ismbcalnum`, `_ismbcalnum_l`, `_ismbcalpha`, `_ismbcalpha_l`, `_ismbcdigit`, `_ismbcdigit_l`](./reference/ismbcalnum-functions.md)|Decimal digit|
+|[`isgraph`, `iswgraph`, `_isgraph_l`, `_iswgraph_l`](./reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md), [`_ismbcgraph`, `_ismbcgraph_l`, `_ismbcprint`, `_ismbcprint_l`, `_ismbcpunct`, `_ismbcpunct_l`, `_ismbcblank`, `_ismbcblank_l`, `_ismbcspace`, `_ismbcspace_l`](./reference/ismbcgraph-functions.md)|Printable other than space|
+|[`islower`, `iswlower`, `_islower_l`, `_iswlower_l`](./reference/islower-iswlower-islower-l-iswlower-l.md), [`_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`](./reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Lowercase|
+|[`_ismbchira`, `_ismbchira_l`, `_ismbckata`, `_ismbckata_l`](./reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Hiragana|
+|[`_ismbchira`, `_ismbchira_l`, `_ismbckata`, `_ismbckata_l`](./reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Katakana|
+|[`_ismbclegal`, `_ismbclegal_l`, `_ismbcsymbol`, `_ismbcsymbol_l`](./reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Legal multibyte character|
+|[`_ismbcl0`, `_ismbcl0_l`, `_ismbcl1`, `_ismbcl1_l`, `_ismbcl2`, `_ismbcl2_l`](./reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Japan-level 0 multibyte character|
+|[`_ismbcl0`, `_ismbcl0_l`, `_ismbcl1`, `_ismbcl1_l`, `_ismbcl2`, `_ismbcl2_l`](./reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Japan-level 1 multibyte character|
+|[`_ismbcl0`, `_ismbcl0_l`, `_ismbcl1`, `_ismbcl1_l`, `_ismbcl2`, `_ismbcl2_l`](./reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Japan-level 2 multibyte character|
+|[`_ismbclegal`, `_ismbclegal_l`, `_ismbcsymbol`, `_ismbcsymbol_l`](./reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Non-alphanumeric multibyte character|
+|[`isprint`, `iswprint`, `_isprint_l`, `_iswprint_l`](./reference/isprint-iswprint-isprint-l-iswprint-l.md), [`_ismbcgraph`, `_ismbcgraph_l`, `_ismbcprint`, `_ismbcprint_l`, `_ismbcpunct`, `_ismbcpunct_l`, `_ismbcblank`, `_ismbcblank_l`, `_ismbcspace`, `_ismbcspace_l`](./reference/ismbcgraph-functions.md)|Printable|
+|[`ispunct`, `iswpunct`, `_ispunct_l`, `_iswpunct_l`](./reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md), [`_ismbcgraph`, `_ismbcgraph_l`, `_ismbcprint`, `_ismbcprint_l`, `_ismbcpunct`, `_ismbcpunct_l`, `_ismbcblank`, `_ismbcblank_l`, `_ismbcspace`, `_ismbcspace_l`](./reference/ismbcgraph-functions.md)|Punctuation|
+|[`isspace`, `iswspace`, `_isspace_l`, `_iswspace_l`](./reference/isspace-iswspace-isspace-l-iswspace-l.md), [`_ismbcgraph`, `_ismbcgraph_l`, `_ismbcprint`, `_ismbcprint_l`, `_ismbcpunct`, `_ismbcpunct_l`, `_ismbcblank`, `_ismbcblank_l`, `_ismbcspace`, `_ismbcspace_l`](./reference/ismbcgraph-functions.md)|White-space|
+|[`isupper`, `iswupper`](./reference/isupper-isupper-l-iswupper-iswupper-l.md), [`_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`](./reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Uppercase|
+|[`_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`](./reference/isctype-iswctype-isctype-l-iswctype-l.md)|Property specified by *desc* argument|
+|[`isxdigit`, `iswxdigit`, `_isxdigit_l`, `_iswxdigit_l`](./reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|Hexadecimal digit|
+|[`_mbclen`, `mblen`, `_mblen_l`](./reference/mbclen-mblen-mblen-l.md)|Return length of valid multibyte character; result depends on **LC_CTYPE** category setting of current locale|
 
 ## See also
 

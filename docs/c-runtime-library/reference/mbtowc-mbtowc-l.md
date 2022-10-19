@@ -129,6 +129,6 @@ Attempt to convert a NULL pointer to a wide character:
 [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)\
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)\
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)
+[`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
+[`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\
+[`wctomb`, `_wctomb_l`](wctomb-wctomb-l.md)

@@ -12,7 +12,7 @@ ms.assetid: f3a29de8-e36e-425b-a7fa-a258e6d7909d
 ---
 # mbsrtowcs
 
-Converts a multibyte character string in the current locale to a corresponding wide character string, with the capability of restarting in the middle of a multibyte character. A more secure version of this function is available; see [mbsrtowcs_s](mbsrtowcs-s.md).
+Converts a multibyte character string in the current locale to a corresponding wide character string, with the capability of restarting in the middle of a multibyte character. A more secure version of this function is available; see [`mbsrtowcs_s`](mbsrtowcs-s.md).
 
 ## Syntax
 
@@ -56,7 +56,7 @@ The **mbsrtowcs** function converts a string of multibyte characters indirectly 
 
 Thus, the wide character string at *wcstr* is null-terminated only if **mbsrtowcs** encounters a multibyte null character during conversion. If the sequences pointed to by *mbstr* and *wcstr* overlap, the behavior of **mbsrtowcs** is undefined. **mbsrtowcs** is affected by the LC_TYPE category of the current locale.
 
-The **mbsrtowcs** function differs from [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **mbsrlen** instead of **mbslen**, if a subsequent call to **mbsrtowcs** is used instead of **mbstowcs**.
+The **mbsrtowcs** function differs from [`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **mbsrlen** instead of **mbslen**, if a subsequent call to **mbsrtowcs** is used instead of **mbstowcs**.
 
 If *wcstr* is not a null pointer, the pointer object pointed to by *mbstr* is assigned a null pointer if conversion stopped because a terminating null character was reached. Otherwise, it is assigned the address just past the last multibyte character converted, if any. This allows a subsequent function call to restart conversion where this call stopped.
 
@@ -83,7 +83,7 @@ The **mbsrtowcs** function is multithread safe as long as no function in the cur
 [Data conversion](../data-conversion.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
-[mbrtowc](mbrtowc.md)\
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)\
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)\
-[mbsinit](mbsinit.md)
+[`mbrtowc`](mbrtowc.md)\
+[`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
+[`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
+[`mbsinit`](mbsinit.md)

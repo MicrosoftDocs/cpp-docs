@@ -39,7 +39,7 @@ The **_RTC_SetErrorFuncW** callback applies only to the component that it was li
 
 Make sure that the address that you pass to **_RTC_SetErrorFuncW** is that of a valid error handling function.
 
-If an error has been assigned a type of -1 by using [_RTC_SetErrorType](rtc-seterrortype.md), the error handling function is not called.
+If an error has been assigned a type of -1 by using [`_RTC_SetErrorType`](rtc-seterrortype.md), the error handling function is not called.
 
 Before you can call this function, you must first call one of the run-time error-check initialization functions. For more information, see [Using runtime checks without the C runtime library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).
 
@@ -58,7 +58,7 @@ typedef int (__cdecl * _RTC_error_fnW)(
 where:
 
 *errorType*<br/>
-The type of error that's specified by [_RTC_SetErrorType](rtc-seterrortype.md).
+The type of error that's specified by [`_RTC_SetErrorType`](rtc-seterrortype.md).
 
 *filename*<br/>
 The source file where the failure occurred, or null if no debug information is available.
@@ -88,5 +88,5 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)\
+[`_CrtDbgReport`, `_CrtDbgReportW`](crtdbgreport-crtdbgreportw.md)\
 [Runtime error checking](../run-time-error-checking.md)

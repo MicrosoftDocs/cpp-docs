@@ -48,8 +48,8 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[_close](close.md)\
-[_fdopen, _wfdopen](fdopen-wfdopen.md)\
-[fflush](fflush.md)\
-[fopen, _wfopen](fopen-wfopen.md)\
-[freopen, _wfreopen](freopen-wfreopen.md)
+[`_close`](close.md)\
+[`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
+[`fflush`](fflush.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`freopen`, `_wfreopen`](freopen-wfreopen.md)

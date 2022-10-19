@@ -142,4 +142,4 @@ Hi, Dad. It's Dave.
 ## See also
 
 [Process and environment control](../process-and-environment-control.md)\
-[_spawn, _wspawn Functions](../spawn-wspawn-functions.md)
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)

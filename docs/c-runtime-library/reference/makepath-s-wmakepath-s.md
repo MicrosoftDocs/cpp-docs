@@ -12,7 +12,7 @@ ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
 ---
 # _makepath_s, _wmakepath_s
 
-Creates a path name from components. These are versions of [_makepath, _wmakepath](makepath-wmakepath.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Creates a path name from components. These are versions of [`_makepath`, `_wmakepath`](makepath-wmakepath.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -105,7 +105,7 @@ If path is **NULL**, the invalid parameter handler is invoked, as described in [
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 ## Requirements
 
@@ -169,6 +169,6 @@ Path extracted with _splitpath_s:
 ## See also
 
 [File handling](../file-handling.md)\
-[_fullpath, _wfullpath](fullpath-wfullpath.md)\
-[_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md)\
-[_makepath, _wmakepath](makepath-wmakepath.md)
+[`_fullpath`, `_wfullpath`](fullpath-wfullpath.md)\
+[`_splitpath_s`, `_wsplitpath_s`](splitpath-s-wsplitpath-s.md)\
+[`_makepath`, `_wmakepath`](makepath-wmakepath.md)

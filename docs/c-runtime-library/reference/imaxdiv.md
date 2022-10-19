@@ -33,7 +33,7 @@ The denominator.
 
 ## Return value
 
-**imaxdiv** called with arguments of type [intmax_t](../standard-types.md) returns a structure of type [imaxdiv_t](../standard-types.md) that comprises the quotient and the remainder.
+**imaxdiv** called with arguments of type [`intmax_t`](../standard-types.md) returns a structure of type [`imaxdiv_t`](../standard-types.md) that comprises the quotient and the remainder.
 
 ## Remarks
 
@@ -85,5 +85,5 @@ results in a quotient of 1079252848505, and a remainder of 5170
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[div](div.md)\
-[ldiv, lldiv](./div.md)
+[`div`](div.md)\
+[`ldiv`, `lldiv`](./div.md)

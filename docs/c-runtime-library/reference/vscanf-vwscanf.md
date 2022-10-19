@@ -11,7 +11,7 @@ ms.assetid: d1df595b-11bc-4682-9441-a92616301e3b
 ---
 # vscanf, vwscanf
 
-Reads formatted data from the standard input stream. More secure versions of these function are available; see [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md).
+Reads formatted data from the standard input stream. More secure versions of these function are available; see [`vscanf_s`, `vwscanf_s`](vscanf-s-vwscanf-s.md).
 
 ## Syntax
 
@@ -40,14 +40,14 @@ Returns the number of fields that are successfully converted and assigned; the r
 
 If *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
 
-For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 The **vscanf** function reads data from the standard input stream **stdin** and writes the data into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> When you use **vscanf** to read a string, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, incorrectly formatted input can cause a buffer overrun. As an alternative, you can use [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md) or [fgets](fgets-fgetws.md).
+> When you use **vscanf** to read a string, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, incorrectly formatted input can cause a buffer overrun. As an alternative, you can use [`vscanf_s`, `vwscanf_s`](vscanf-s-vwscanf-s.md) or [`fgets`](fgets-fgetws.md).
 
 **vwscanf** is a wide-character version of **vscanf**; the *format* argument to **vwscanf** is a wide-character string. **vwscanf** and **vscanf** behave identically if the stream is opened in ANSI mode. **vscanf** doesn't support input from a UNICODE stream.
 
@@ -128,8 +128,8 @@ The contents are: 36 92.300003 y n Wide characters
 [Math and floating-point support](../floating-point-support.md)\
 [Stream I/O](../stream-i-o.md)\
 [Locale](../locale.md)\
-[fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)\
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
-[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)\
-[vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md)
+[`fscanf`, `_fscanf_l`, `fwscanf`, `_fwscanf_l`](fscanf-fscanf-l-fwscanf-fwscanf-l.md)\
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
+[`vscanf_s`, `vwscanf_s`](vscanf-s-vwscanf-s.md)

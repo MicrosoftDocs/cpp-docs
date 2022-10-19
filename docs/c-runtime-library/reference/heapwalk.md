@@ -151,7 +151,7 @@ OK - end of heap
 ## See also
 
 [Memory allocation](../memory-allocation.md)\
-[_heapadd](../heapadd.md)\
-[_heapchk](heapchk.md)\
-[_heapmin](heapmin.md)\
-[_heapset](../heapset.md)
+[`_heapadd`](../heapadd.md)\
+[`_heapchk`](heapchk.md)\
+[`_heapmin`](heapmin.md)\
+[`_heapset`](../heapset.md)

@@ -48,7 +48,7 @@ In C++, the **isnan** template function returns **`true`** if the argument *x* i
 
 ## Remarks
 
-Because a NaN value does not compare as equal to any other NaN value, you must use one of these functions or macros to detect one. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [printf](printf-printf-l-wprintf-wprintf-l.md).
+Because a NaN value does not compare as equal to any other NaN value, you must use one of these functions or macros to detect one. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
 When compiled as C++, the **isnan** macro is not defined, and an **isnan** template function is defined instead. It behaves the same way as the macro, but returns a value of type **`bool`** instead of an integer.
 
@@ -66,8 +66,8 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[fpclassify](fpclassify.md)\
-[_fpclass, _fpclassf](fpclass-fpclassf.md)\
-[isfinite, _finite, _finitef](finite-finitef.md)\
-[isinf](isinf.md)\
-[isnormal](isnormal.md)
+[`fpclassify`](fpclassify.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)\
+[`isfinite`, `_finite`, `_finitef`](finite-finitef.md)\
+[`isinf`](isinf.md)\
+[`isnormal`](isnormal.md)

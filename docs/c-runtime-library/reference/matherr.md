@@ -31,7 +31,7 @@ Pointer to the structure containing error information.
 - If **`_matherr`** returns 0, an error message can be displayed and **`errno`** is set to an appropriate error value.
 - If **`_matherr`** returns a nonzero value, no error message is displayed and **`errno`** remains unchanged.
 
-For more information about return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

@@ -88,6 +88,6 @@ Type 'Y' when finished typing keys: abcdefyY
 ## See also
 
 [Console and port I/O](../console-and-port-i-o.md)\
-[_cgets, _cgetws](../cgets-cgetws.md)\
-[getc, getwc](getc-getwc.md)\
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
+[`_cgets`, `_cgetws`](../cgets-cgetws.md)\
+[`getc`, `getwc`](getc-getwc.md)\
+[`_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)

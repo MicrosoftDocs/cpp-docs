@@ -63,4 +63,4 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 ## See also
 
 [Byte classification](../byte-classification.md)\
-[_ismbb Routines](../ismbb-routines.md)
+[`_ismbb` routines](../ismbb-routines.md)
