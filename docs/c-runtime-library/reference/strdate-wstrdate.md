@@ -10,7 +10,7 @@ f1_keywords: ["_tstrdate", "wstrdate", "_wstrdate", "_strdate", "strdate"]
 helpviewer_keywords: ["strdate function", "dates, copying", "tstrdate function", "_wstrdate function", "wstrdate function", "_strdate function", "_tstrdate function", "copying dates"]
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
 ---
-# _strdate, _wstrdate
+# `_strdate`, `_wstrdate`
 
 Copy current system date to a buffer. More secure versions of these functions are available; see [`_strdate_s`, `_wstrdate_s`](strdate-s-wstrdate-s.md).
 

@@ -10,7 +10,7 @@ f1_keywords: ["c.bessel", "_j0", "_j1", "_jn", "_y0", "_y1", "_yn"]
 helpviewer_keywords: ["Bessel functions", "_j0 function", "_j1 function", "_jn function", "_y0 function", "_y1 function", "_yn function"]
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
 ---
-# Bessel functions: _j0, _j1, _jn, _y0, _y1, _yn
+# Bessel functions: `_j0`, `_j1`, `_jn`, `_y0`, `_y1`, `_yn`
 
 Computes the Bessel function of the first or second kind, of orders 0, 1, or n. The Bessel functions are commonly used in the mathematics of electromagnetic wave theory.
 

@@ -10,7 +10,7 @@ f1_keywords: ["fmin", "fminf", "fminl", "math/fmin", "math/fminf", "math/fminl"]
 helpviewer_keywords: ["fmin function", "fminf function", "fminl function"]
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
 ---
-# fmin, fminf, fminl
+# `fmin`, `fminf`, `fminl`
 
 Determines the smaller of the two specified values.
 

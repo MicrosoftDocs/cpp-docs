@@ -10,7 +10,7 @@ f1_keywords: ["max", "__max"]
 helpviewer_keywords: ["max macro", "maximum macro", "__max macro"]
 ms.assetid: 05c936f6-0e22-45d6-a58d-4bc102e9dae2
 ---
-# __max
+# `__max`
 
 A preprocessor macro that returns the larger of two values.
 

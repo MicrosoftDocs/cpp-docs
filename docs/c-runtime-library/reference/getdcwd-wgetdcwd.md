@@ -10,7 +10,7 @@ f1_keywords: ["wgetdcwd", "getdcwd", "_getdcwd", "tgetdcwd", "_wgetdcwd", "_tget
 helpviewer_keywords: ["wgetdcwd function", "working directory", "getdcwd function", "_getdcwd function", "_wgetdcwd function", "current working directory", "directories [C++], current working"]
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
 ---
-# _getdcwd, _wgetdcwd
+# `_getdcwd`, `_wgetdcwd`
 
 Gets the full path of the current working directory on the specified drive.
 

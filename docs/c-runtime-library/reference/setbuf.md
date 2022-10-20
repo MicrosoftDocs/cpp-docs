@@ -10,7 +10,7 @@ f1_keywords: ["setbuf"]
 helpviewer_keywords: ["setbuf function", "stream buffering"]
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
 ---
-# setbuf
+# `setbuf`
 
 Controls stream buffering. This function is deprecated; use [`setvbuf`](setvbuf.md) instead.
 

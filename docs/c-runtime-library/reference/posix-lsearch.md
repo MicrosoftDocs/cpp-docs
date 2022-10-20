@@ -10,7 +10,7 @@ f1_keywords: ["lsearch"]
 helpviewer_keywords: ["lsearch function"]
 ms.assetid: 130da3fc-904a-4375-b0ab-79bfea8a455f
 ---
-# lsearch
+# `lsearch`
 
 The Microsoft-implemented POSIX function name `lsearch` is a deprecated alias for the [`_lsearch`](lsearch.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

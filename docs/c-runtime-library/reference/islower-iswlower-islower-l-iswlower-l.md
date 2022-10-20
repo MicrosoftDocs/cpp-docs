@@ -10,7 +10,7 @@ f1_keywords: ["_istlower", "islower", "_ismbclower_l", "_liswlower_l", "_istlowe
 helpviewer_keywords: ["_islower _l function", "_ismbclower_l function", "islower function", "_iswlower_l function", "_liswlower_l function", "_istlower_l function", "istlower function", "_istlower function", "iswlower function", "_islower_l function"]
 ms.assetid: fcc3b70a-2b47-45fd-944d-e5c1942e6457
 ---
-# islower, iswlower, _islower_l, _iswlower_l
+# `islower`, `iswlower`, `_islower_l`, `_iswlower_l`
 
 Determines whether an integer represents a lowercase character.
 

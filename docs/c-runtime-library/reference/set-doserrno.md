@@ -10,7 +10,7 @@ f1_keywords: ["_set_doserrno", "set_doserrno"]
 helpviewer_keywords: ["_set_doserrno function", "doserrno global variable", "set_doserrno function", "_doserrno global variable"]
 ms.assetid: 8686c159-3797-4705-a53e-7457869ca6f3
 ---
-# _set_doserrno
+# `_set_doserrno`
 
 Sets the value of the [`_doserrno`](../errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.
 

@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_Cmulcr", "_FCmulcr", "_LCmulcr", "complex/_Cmulcr", "complex/_FCmulcr", "complex/_LCmulcr"]
 helpviewer_keywords: ["_Cmulcr function", "_FCmulcr function", "_LCmulcr function"]
 ---
-# _Cmulcr, _FCmulcr, _LCmulcr
+# `_Cmulcr`, `_FCmulcr`, `_LCmulcr`
 
 Multiplies a complex number by a floating-point number.
 

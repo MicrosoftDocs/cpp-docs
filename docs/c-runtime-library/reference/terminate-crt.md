@@ -10,7 +10,7 @@ f1_keywords: ["terminate"]
 helpviewer_keywords: ["terminate function", "exception handling, termination"]
 ms.assetid: 90e67402-08e9-4b2a-962c-66a8afd3ccb4
 ---
-# terminate (CRT)
+# `terminate` (CRT)
 
 Calls [`abort`](abort.md) or a function you specify using **set_terminate**.
 

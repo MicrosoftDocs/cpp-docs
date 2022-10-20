@@ -10,7 +10,7 @@ f1_keywords: ["frexp", "_frexpl"]
 helpviewer_keywords: ["_frexpl function", "mantissas, floating-point variables", "frexpl function", "exponent, floating-point numbers", "frexp function", "floating-point functions, mantissa and exponent"]
 ms.assetid: 9b020f2e-3967-45ec-a6a8-d467a071aa55
 ---
-# frexp, frexpf, frexpl
+# `frexp`, `frexpf`, `frexpl`
 
 Gets the mantissa and exponent of a floating-point number.
 

@@ -10,7 +10,7 @@ f1_keywords: ["iswpunct", "_istpunct", "ispunct"]
 helpviewer_keywords: ["_istpunct function", "_ispunct_l function", "iswpunct function", "ispunct function", "istpunct function", "ispunct_l function", "_iswpunct_l function", "iswpunct_l function"]
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
 ---
-# ispunct, iswpunct, _ispunct_l, _iswpunct_l
+# `ispunct`, `iswpunct`, `_ispunct_l`, `_iswpunct_l`
 
 Determines whether an integer represents a punctuation character.
 

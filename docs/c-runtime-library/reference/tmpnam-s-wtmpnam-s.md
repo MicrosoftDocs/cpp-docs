@@ -10,7 +10,7 @@ f1_keywords: ["tmpnam_s", "_wtmpnam_s", "L_tmpnam_s"]
 helpviewer_keywords: ["tmpnam_s function", "file names [C++], creating temporary", "_wtmpnam_s function", "L_tmpnam_s constant", "temporary files, creating", "file names [C++], temporary", "wtmpnam_s function"]
 ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
 ---
-# tmpnam_s, _wtmpnam_s
+# `tmpnam_s`, `_wtmpnam_s`
 
 Generate names you can use to create temporary files. These are versions of [`tmpnam` and `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

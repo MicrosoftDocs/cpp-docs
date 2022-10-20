@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vfscanf_s", "vfwscanf_s", "_vftscanf_s"]
 ms.assetid: 9b0133f0-9a18-4581-b24b-3b72683ad432
 ---
-# vfscanf_s, vfwscanf_s
+# `vfscanf_s`, `vfwscanf_s`
 
 Reads formatted data from a stream. These versions of vfscanf, vfwscanf have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

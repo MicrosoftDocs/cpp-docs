@@ -10,7 +10,7 @@ f1_keywords: ["fmax", "fmaxf", "fmaxl", "math/fmax", "math/fmaxf", "math/fmaxl"]
 helpviewer_keywords: ["fmax function", "fmaxf function", "fmaxl function"]
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
 ---
-# fmax, fmaxf, fmaxl
+# `fmax`, `fmaxf`, `fmaxl`
 
 Determine the larger of two specified numeric values.
 

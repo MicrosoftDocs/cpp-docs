@@ -10,7 +10,7 @@ f1_keywords: ["_mbbtombc_l", "_mbbtombc", "mbbtombc_l", "mbbtombc"]
 helpviewer_keywords: ["mbbtombc_l function", "mbbtombc function", "_mbbtombc_l function", "_mbbtombc function"]
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
 ---
-# _mbbtombc, _mbbtombc_l
+# `_mbbtombc`, `_mbbtombc_l`
 
 Converts a single-byte multibyte character to a corresponding double-byte multibyte character.
 

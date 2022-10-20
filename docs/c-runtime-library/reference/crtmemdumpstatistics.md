@@ -10,7 +10,7 @@ f1_keywords: ["CrtMemDumpStatistics", "_CrtMemDumpStatistics"]
 helpviewer_keywords: ["_CrtMemDumpStatistics function", "CrtMemDumpStatistics function"]
 ms.assetid: 27b9d731-3184-4a2d-b9a7-6566ab28a9fe
 ---
-# _CrtMemDumpStatistics
+# `_CrtMemDumpStatistics`
 
 Dumps the debug header information for a specified heap state in a user-readable form (debug version only).
 

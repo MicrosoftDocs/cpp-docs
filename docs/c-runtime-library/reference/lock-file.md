@@ -10,7 +10,7 @@ f1_keywords: ["_lock_file", "lock_file"]
 helpviewer_keywords: ["file locking [C++]", "_lock_file function", "lock_file function"]
 ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
 ---
-# _lock_file
+# `_lock_file`
 
 Locks a **FILE** object to ensure consistency for threads accessing the **FILE** object concurrently.
 

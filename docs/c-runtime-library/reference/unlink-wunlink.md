@@ -10,7 +10,7 @@ f1_keywords: ["_tunlink", "_unlink", "wunlink", "_wunlink"]
 helpviewer_keywords: ["files [C++], deleting", "_wunlink function", "wunlink function", "unlink function", "_unlink function", "tunlink function", "files [C++], removing", "_tunlink function"]
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
 ---
-# _unlink, _wunlink
+# `_unlink`, `_wunlink`
 
 Delete a file.
 

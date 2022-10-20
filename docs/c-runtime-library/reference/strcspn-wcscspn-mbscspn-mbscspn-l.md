@@ -10,7 +10,7 @@ f1_keywords: ["strcspn", "_mbscspn", "wcscspn", "_ftcscspn", "_tcscspn"]
 helpviewer_keywords: ["strings [C++], searching", "ftcscspn function", "strcspn function", "_mbscspn function", "mbscspn_l function", "wcscspn function", "tcscspn function", "_ftcscspn function", "_mbscspn_l function", "mbscspn function", "_tcscspn function"]
 ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6
 ---
-# strcspn, wcscspn, _mbscspn, _mbscspn_l
+# `strcspn`, `wcscspn`, `_mbscspn`, `_mbscspn_l`
 
 Returns the index of the first occurrence in a string, of a character that belongs to a set of characters.
 

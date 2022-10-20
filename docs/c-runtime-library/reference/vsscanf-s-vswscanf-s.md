@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vsscanf_s", "vswscanf_s", "_vstscanf_s"]
 ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
 ---
-# vsscanf_s, vswscanf_s
+# `vsscanf_s`, `vswscanf_s`
 
 Reads formatted data from a string. These versions of [`vsscanf`, `vswscanf`](vsscanf-vswscanf.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

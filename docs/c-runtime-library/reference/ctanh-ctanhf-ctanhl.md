@@ -10,7 +10,7 @@ f1_keywords: ["ctanh", "ctanhf", "ctanhl", "complex/ctanh", "complex/ctanhf", "c
 helpviewer_keywords: ["ctanh function", "ctanhl function", "ctanhf function"]
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
 ---
-# ctanh, ctanhf, ctanhl
+# `ctanh`, `ctanhf`, `ctanhl`
 
 Computes the complex hyperbolic tangent of a complex number.
 

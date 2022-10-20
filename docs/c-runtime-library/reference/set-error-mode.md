@@ -10,7 +10,7 @@ f1_keywords: ["set_error_mode", "_set_error_mode"]
 helpviewer_keywords: ["_set_error_mode function", "set_error_mode function"]
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
 ---
-# _set_error_mode
+# `_set_error_mode`
 
 Modifies **__error_mode** to determine a non-default location where the C runtime writes an error message for an error that might end the program.
 

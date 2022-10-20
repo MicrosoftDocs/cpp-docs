@@ -10,7 +10,7 @@ f1_keywords: ["bsearch_s"]
 helpviewer_keywords: ["arrays [CRT], binary search", "bsearch_s function"]
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
 ---
-# bsearch_s
+# `bsearch_s`
 
 Performs a binary search of a sorted array. This function is a version of [`bsearch`](bsearch.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

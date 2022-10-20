@@ -10,7 +10,7 @@ f1_keywords: ["remquof", "remquol", "remquo"]
 helpviewer_keywords: ["remquol function", "remquof function", "remquo function"]
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
 ---
-# remquo, remquof, remquol
+# `remquo`, `remquof`, `remquol`
 
 Computes the remainder of two integer values, and stores an integer value with the sign and approximate magnitude of the quotient in a location that's specified in a parameter.
 

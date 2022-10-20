@@ -10,7 +10,7 @@ f1_keywords: ["mbsnbcat", "mbsnbcat_l", "_mbsnbcat", "_mbsnbcat_l"]
 helpviewer_keywords: ["tcsncat_l function", "_tcsncat function", "mbsnbcat_l function", "mbsnbcat function", "_mbsnbcat_l function", "_tcsncat_l function", "_mbsnbcat function", "tcsncat function"]
 ms.assetid: aa0f1d30-0ddd-48d1-88eb-c6884b20fd91
 ---
-# _mbsnbcat, _mbsnbcat_l
+# `_mbsnbcat`, `_mbsnbcat_l`
 
 Appends, at most, the first **n** bytes of one multibyte-character string to another. More secure versions of these functions are available; see [`_mbsnbcat_s`, `_mbsnbcat_s_l`](mbsnbcat-s-mbsnbcat-s-l.md).
 

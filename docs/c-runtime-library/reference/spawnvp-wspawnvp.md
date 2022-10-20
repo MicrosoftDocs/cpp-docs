@@ -10,7 +10,7 @@ f1_keywords: ["_wspawnvp", "_spawnvp", "wspawnvp"]
 helpviewer_keywords: ["wspawnvp function", "processes, creating", "_wspawnvp function", "processes, executing new", "spawnvp function", "process creation", "_spawnvp function"]
 ms.assetid: 8d8774ec-6ad4-4680-a5aa-440cde1e0249
 ---
-# _spawnvp, _wspawnvp
+# `_spawnvp`, `_wspawnvp`
 
 Creates a process and executes it.
 

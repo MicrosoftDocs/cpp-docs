@@ -10,7 +10,7 @@ f1_keywords: ["_mbctokata", "mbctohira", "_mbctohira", "_mbctohira_l", "mbctokat
 helpviewer_keywords: ["_mbctokata function", "_mbctokata_l function", "_mbctohira_l function", "mbctohira_l function", "mbctohira function", "mbctokata_l function", "_mbctohira function", "mbctokata function"]
 ms.assetid: f949afd7-44d4-4f08-ac8f-1fef2c915a1c
 ---
-# _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
+# `_mbctohira`, `_mbctohira_l`, `_mbctokata`, `_mbctokata_l`
 
 Converts between hiragana and katakana characters.
 

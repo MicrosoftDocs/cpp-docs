@@ -10,7 +10,7 @@ f1_keywords: ["CrtDbgReport", "CrtDbgReportW", "_CrtDbgReportW", "_CrtDbgReport"
 helpviewer_keywords: ["debug reporting", "_CrtDbgReport function", "CrtDbgReport function", "CrtDbgReportW function", "_CrtDbgReportW function"]
 ms.assetid: 6e581fb6-f7fb-4716-9432-f0145d639ecc
 ---
-# _CrtDbgReport, _CrtDbgReportW
+# `_CrtDbgReport`, `_CrtDbgReportW`
 
 Generates a report with a debugging message and sends the report to three possible destinations (debug version only).
 

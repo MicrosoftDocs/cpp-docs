@@ -10,7 +10,7 @@ f1_keywords: ["_CrtDoForAllClientObjects", "CrtDoForAllClientObjects", "crtdbg/_
 helpviewer_keywords: ["_CrtDoForAllClientObjects function", "CrtDoForAllClientObjects function"]
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
 ---
-# _CrtDoForAllClientObjects
+# `_CrtDoForAllClientObjects`
 
 Calls an application-supplied function for all **_CLIENT_BLOCK** types in the heap (debug version only).
 

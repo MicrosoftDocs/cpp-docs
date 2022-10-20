@@ -10,7 +10,7 @@ f1_keywords: ["_initterm_e", "initterm", "_initterm", "initterm_e"]
 helpviewer_keywords: ["initterm function", "initterm_e function", "_initterm function", "_initterm_e function"]
 ms.assetid: 85131efe-c747-429a-8897-bcdedb000172
 ---
-# _initterm, _initterm_e
+# `_initterm`, `_initterm_e`
 
 Internal methods that walk a table of function pointers and initialize them.
 

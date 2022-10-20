@@ -10,7 +10,7 @@ f1_keywords: ["strupr_s", "mbsupr_s", "wcsupr_s", "_mbsupr_s_l", "mbsupr_s_l", "
 helpviewer_keywords: ["mbsupr_s_l function", "strupr_s_l function", "_wcsupr_s_l function", "_tcsupr_s_l function", "mbsupr_s function", "_wcsupr_s function", "uppercase, converting strings to", "tcsupr_s function", "string conversion [C++], case", "strupr_s function", "wcsupr_s_l function", "_mbsupr_s function", "_mbsupr_s_l function", "_strupr_s_l function", "tcsupr_s_l function", "strings [C++], case", "converting case, CRT functions", "_tcsupr_s function", "strings [C++], converting case", "_strupr_s function", "wcsupr_s function"]
 ms.assetid: 82d3a273-9f6f-4a26-9560-919d891e4581
 ---
-# _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
+# `_strupr_s`, `_strupr_s_l`, `_mbsupr_s`, `_mbsupr_s_l`, `_wcsupr_s`, `_wcsupr_s_l`
 
 Converts a string to uppercase, by using the current locale or a specified locale that's passed in. These versions of [`_strupr`, `_strupr_l`, `_mbsupr`, `_mbsupr_l`, `_wcsupr_l`, `_wcsupr`](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

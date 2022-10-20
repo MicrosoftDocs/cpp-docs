@@ -10,7 +10,7 @@ f1_keywords: ["_memicmp", "memicmp_l", "_memicmp_l"]
 helpviewer_keywords: ["memicmp function", "_memicmp function", "memicmp_l function", "_memicmp_l function"]
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
 ---
-# _memicmp, _memicmp_l
+# `_memicmp`, `_memicmp_l`
 
 Compares characters in two buffers (case-insensitive).
 

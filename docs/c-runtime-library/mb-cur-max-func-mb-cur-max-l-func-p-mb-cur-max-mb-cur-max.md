@@ -10,7 +10,7 @@ f1_keywords: ["___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max", 
 helpviewer_keywords: ["__mb_cur_max", "___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max"]
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
 ---
-# ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
+# `___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`, `__mb_cur_max`
 
 Internal CRT function. Retrieves the maximum number of bytes in a multibyte character for the current or specified locale.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_ismbcspace", "_ismbcgraph", "_ismbcpunct", "ismbcspace_l", "ismb
 helpviewer_keywords: ["ismbcspace_l function", "_ismbcprint_l function", "ismbcspace function", "ismbcpunct function", "_ismbcspace_l function", "_ismbcprint function", "ismbcprint function", "_ismbcgraph function", "ismbcgraph_l function", "_ismbcpunct_l function", "ismbcpunct_l function", "ismbcprint_l function", "_ismbcpunct function", "ismbcgraph function", "_ismbcgraph_l function", "_ismbcspace function"]
 ms.assetid: 8e0a5f47-ba64-4411-92a3-3c525d16e3be
 ---
-# _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
+# `_ismbcgraph`, `_ismbcgraph_l`, `_ismbcprint`, `_ismbcprint_l`, `_ismbcpunct`, `_ismbcpunct_l`, `_ismbcblank`, `_ismbcblank_l`, `_ismbcspace`, `_ismbcspace_l`
 
 Determines whether character is a graphical character, a display character, a punctuation character, or a space character.
 

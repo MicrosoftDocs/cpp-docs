@@ -10,7 +10,7 @@ f1_keywords: ["_copysignl", "copysign", "copysignf", "_copysign", "copysignl", "
 helpviewer_keywords: ["copysignl function", "_copysignl function", "copysign function", "_copysignf function", "_copysign function", "copysignf function"]
 ms.assetid: 009216d6-72a2-402d-aa6c-91d924b2c9e4
 ---
-# copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
+# `copysign`, `copysignf`, `copysignl`, `_copysign`, `_copysignf`, `_copysignl`
 
 Returns a value that has the magnitude of one argument and the sign of another.
 

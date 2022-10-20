@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_fprintf_p", "_ftprintf_p", "fwprintf_p", "_fwprintf_p", "fprintf_p", "ftprintf_p"]
 helpviewer_keywords: ["fprintf_p_l function", "fprintf_p function", "_fprintf_p_l function", "_fprintf_p function", "_ftprintf_p_l function", "streams, printing formatted data to", "_fwprintf_p function", "fwprintf_p function", "_ftprintf_p function", "_fwprintf_p_l function", "ftprintf_p function", "printing [C++], formatted data to streams", "ftprintf_p_l function", "fwprintf_p_l function"]
 ---
-# _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
+# `_fprintf_p`, `_fprintf_p_l`, `_fwprintf_p`, `_fwprintf_p_l`
 
 Prints formatted data to a stream.
 

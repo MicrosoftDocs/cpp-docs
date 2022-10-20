@@ -10,7 +10,7 @@ f1_keywords: ["_aligned_msize_dbg"]
 helpviewer_keywords: ["_aligned_msize_dbg"]
 ms.assetid: f1c44af0-3f66-4033-81d1-d71d3afecba0
 ---
-# _aligned_msize_dbg
+# `_aligned_msize_dbg`
 
 Returns the size of a memory block allocated in the heap (debug version only).
 

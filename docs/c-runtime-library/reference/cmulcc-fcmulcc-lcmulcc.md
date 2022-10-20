@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_Cmulcc", "_FCmulcc", "_LCmulcc", "complex/_Cmulcc", "complex/_FCmulcc", "complex/_LCmulcc"]
 helpviewer_keywords: ["_Cmulcc function", "_FCmulcc function", "_LCmulcc function"]
 ---
-# _Cmulcc, _FCmulcc, _LCmulcc
+# `_Cmulcc`, `_FCmulcc`, `_LCmulcc`
 
 Multiplies two complex numbers.
 

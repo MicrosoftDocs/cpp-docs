@@ -10,7 +10,7 @@ f1_keywords: ["wcstoumax", "_tcstoumax", "_strtoumax_l", "_wcstoumax_l", "_tcsto
 helpviewer_keywords: ["_strtoumax_l function", "conversion functions", "wcstoumax function", "_wcstoumax_l function", "strtoumax function"]
 ms.assetid: 566769f9-495b-4508-b9c6-02217a578897
 ---
-# strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
+# `strtoumax`, `_strtoumax_l`, `wcstoumax`, `_wcstoumax_l`
 
 Converts strings to an integer value of the largest supported unsigned integer type.
 

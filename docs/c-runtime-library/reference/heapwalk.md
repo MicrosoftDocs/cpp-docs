@@ -10,7 +10,7 @@ f1_keywords: ["heapwalk", "_heapwalk"]
 helpviewer_keywords: ["debugging [CRT], heap-related problems", "heapwalk function", "_heapwalk function"]
 ms.assetid: 2df67649-fb00-4570-a8b1-a4eca5738744
 ---
-# _heapwalk
+# `_heapwalk`
 
 Traverses the heap and returns information about the next entry.
 

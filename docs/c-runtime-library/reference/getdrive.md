@@ -10,7 +10,7 @@ f1_keywords: ["_getdrive", "getdrive"]
 helpviewer_keywords: ["current disk drive", "getdrive function", "disk drives", "_getdrive function"]
 ms.assetid: e40631a0-8f1a-4897-90ac-e1037ff30bca
 ---
-# _getdrive
+# `_getdrive`
 
 Gets the current disk drive.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_isnan", "isnan", "math/isnan", "math/_isnan", "math/_isnanf", "_
 helpviewer_keywords: ["NAN (not a number)", "_isnan function", "IEEE floating-point representation", "Not a Number (NANs)", "isnan function"]
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
 ---
-# isnan, _isnan, _isnanf
+# `isnan`, `_isnan`, `_isnanf`
 
 Tests if a floating-point value is not a number (NAN).
 

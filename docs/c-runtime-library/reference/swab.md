@@ -10,7 +10,7 @@ f1_keywords: ["_swab", "stdlib/_swab"]
 helpviewer_keywords: ["_swab function", "swapping bytes", "swab function", "bytes, swapping"]
 ms.assetid: 017142f2-050c-4f6a-8b49-6b094f58ec94
 ---
-# _swab
+# `_swab`
 
 Swaps bytes.
 

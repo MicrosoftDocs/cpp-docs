@@ -10,7 +10,7 @@ f1_keywords: ["_mbccpy", "tccpy", "ftccpy", "mbccpy", "_tccpy", "_ftccpy"]
 helpviewer_keywords: ["_tccpy function", "_tccpy_l function", "tccpy_l function", "tccpy function", "mbccpy function", "_mbccpy_l function", "_mbccpy function", "mbccpy_l function"]
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
 ---
-# _mbccpy, _mbccpy_l
+# `_mbccpy`, `_mbccpy_l`
 
 Copies a multibyte character from one string to another string. More secure versions of these functions are available; see [`_mbccpy_s`, `_mbccpy_s_l`](mbccpy-s-mbccpy-s-l.md).
 

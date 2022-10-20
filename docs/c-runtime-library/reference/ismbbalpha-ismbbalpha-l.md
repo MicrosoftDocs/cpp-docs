@@ -10,7 +10,7 @@ f1_keywords: ["ismbbalpha", "ismbbalpha_l", "_ismbbalpha", "_ismbbalpha_l"]
 helpviewer_keywords: ["ismbbalpha function", "ismbbalpha_l function", "_ismbbalpha function", "_ismbbalpha_l function"]
 ms.assetid: 8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0
 ---
-# _ismbbalpha, _ismbbalpha_l
+# `_ismbbalpha`, `_ismbbalpha_l`
 
 Determines whether a specified multibyte character is alpha.
 

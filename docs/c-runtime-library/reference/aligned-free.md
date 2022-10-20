@@ -10,7 +10,7 @@ f1_keywords: ["aligned_free", "_aligned_free"]
 helpviewer_keywords: ["_aligned_free function", "aligned_free function"]
 ms.assetid: ed1ce952-cdfc-4682-85cc-f75d4101603d
 ---
-# _aligned_free
+# `_aligned_free`
 
 Frees a block of memory that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md).
 

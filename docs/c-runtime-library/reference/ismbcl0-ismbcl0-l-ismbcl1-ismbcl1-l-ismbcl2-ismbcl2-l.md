@@ -10,7 +10,7 @@ f1_keywords: ["ismbcl0", "_ismbcl1_l", "_ismbcl0", "ismbcl1", "ismbcl0_l", "_ism
 helpviewer_keywords: ["_ismbcl0_l function", "_ismbcl2 function", "_ismbcl1_l function", "ismbcl2 function", "_ismbcl1 function", "ismbcl0_l function", "ismbcl2_l function", "ismbcl1_l function", "ismbcl0 function", "ismbcl1 function", "_ismbcl2_l function", "_ismbcl0 function"]
 ms.assetid: ee15ebd1-462c-4a43-95f3-6735836d626a
 ---
-# _ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
+# `_ismbcl0`, `_ismbcl0_l`, `_ismbcl1`, `_ismbcl1_l`, `_ismbcl2`, `_ismbcl2_l`
 
 **Code Page 932 Specific functions**, using the current locale or a specified LC_CTYPE conversion state category.
 

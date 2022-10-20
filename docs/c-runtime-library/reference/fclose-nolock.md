@@ -10,7 +10,7 @@ f1_keywords: ["fclose_nolock", "_fclose_nolock"]
 helpviewer_keywords: ["streams, closing", "fclose_nolock function", "_fclose_nolock function"]
 ms.assetid: b4af4392-5fc8-49bb-9fe2-ca7293d3ce04
 ---
-# _fclose_nolock
+# `_fclose_nolock`
 
 Closes a stream without thread-locking.
 

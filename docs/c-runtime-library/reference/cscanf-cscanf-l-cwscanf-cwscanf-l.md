@@ -10,7 +10,7 @@ f1_keywords: ["_cwscanf", "cwscanf_l", "tcscanf_l", "_tcscanf_l", "_cscanf", "_c
 helpviewer_keywords: ["_cwscanf function", "data [C++], reading from the console", "cscanf_l function", "tcscanf function", "_cscanf_l function", "cwscanf function", "_tcscanf_l function", "_cscanf function", "_tcscanf function", "cwscanf_l function", "tcscanf_l function", "reading data [C++], from the console", "_cwscanf_l function"]
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
 ---
-# _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
+# `_cscanf`, `_cscanf_l`, `_cwscanf`, `_cwscanf_l`
 
 Reads formatted data from the console. More secure versions of these functions are available; see [`_cscanf_s`, `_cscanf_s_l`, `_cwscanf_s`, `_cwscanf_s_l`](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
 

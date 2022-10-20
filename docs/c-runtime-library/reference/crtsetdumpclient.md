@@ -10,7 +10,7 @@ f1_keywords: ["_CrtSetDumpClient", "CrtSetDumpClient"]
 helpviewer_keywords: ["_CrtSetDumpClient function", "CrtSetDumpClient function"]
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
 ---
-# _CrtSetDumpClient
+# `_CrtSetDumpClient`
 
 Installs an application-defined function to dump **_CLIENT_BLOCK** type memory blocks (debug version only).
 

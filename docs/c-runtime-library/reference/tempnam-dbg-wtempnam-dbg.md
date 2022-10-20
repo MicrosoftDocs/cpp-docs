@@ -10,7 +10,7 @@ f1_keywords: ["wtempnam_dbg", "tempnam_dbg", "_tempnam_dbg", "_wtempnam_dbg"]
 helpviewer_keywords: ["file names [C++], creating temporary", "tempnam_dbg function", "temporary files, creating", "file names [C++], temporary", "wtempnam_dbg function", "_tempnam_dbg function", "_wtempnam_dbg function"]
 ms.assetid: e3760bb4-bb01-4808-b689-2c45af56a170
 ---
-# _tempnam_dbg, _wtempnam_dbg
+# `_tempnam_dbg`, `_wtempnam_dbg`
 
 Function versions of [`_tempnam`, `_wtempnam`, `tmpnam`, `_wtmpnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) that use the debug version of **malloc**, **_malloc_dbg**.
 

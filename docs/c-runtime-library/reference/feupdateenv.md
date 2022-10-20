@@ -9,7 +9,7 @@ f1_keywords: ["feupdateenv", "fenv/feupdateenv"]
 helpviewer_keywords: ["feupdateenv function"]
 ms.assetid: 3d170042-dfd5-4e4f-a55f-038cf2296cc9
 ---
-# feupdateenv
+# `feupdateenv`
 
 Saves the currently raised floating-point exceptions, restores the specified floating-point environment state, and then raises the saved floating-point exceptions.
 

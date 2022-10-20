@@ -10,7 +10,7 @@ f1_keywords: ["expand_dbg", "_expand_dbg"]
 helpviewer_keywords: ["memory blocks, changing size", "expand_dbg function", "_expand_dbg function"]
 ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd
 ---
-# _expand_dbg
+# `_expand_dbg`
 
 Resizes a specified block of memory in the heap by expanding or contracting the block (debug version only).
 

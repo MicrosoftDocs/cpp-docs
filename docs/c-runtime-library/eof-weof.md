@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["EOF function", "WEOF function", "end of file"]
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
 ---
-# EOF, WEOF
+# `EOF`, `WEOF`
 
 ## Syntax
 

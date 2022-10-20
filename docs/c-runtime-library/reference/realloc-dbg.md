@@ -10,7 +10,7 @@ f1_keywords: ["_realloc_dbg", "realloc_dbg"]
 helpviewer_keywords: ["reallocating memory blocks", "realloc_dbg function", "memory blocks, reallocating", "memory, reallocating", "_realloc_dbg function"]
 ms.assetid: 7c3cb780-51ed-4d9c-9929-cdde606d846a
 ---
-# _realloc_dbg
+# `_realloc_dbg`
 
 Reallocates a specified block of memory in the heap by moving and/or resizing the block (debug version only).
 

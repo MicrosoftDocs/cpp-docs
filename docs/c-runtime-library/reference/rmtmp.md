@@ -10,7 +10,7 @@ f1_keywords: ["_rmtmp"]
 helpviewer_keywords: ["removing temporary files", "_rmtmp function", "files [C++], temporary", "rmtmp function", "files [C++], removing", "temporary files [C++], removing"]
 ms.assetid: 7419501e-2587-4f2a-b469-0dca07f84736
 ---
-# _rmtmp
+# `_rmtmp`
 
 Removes temporary files.
 

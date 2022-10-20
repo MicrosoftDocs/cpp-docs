@@ -10,7 +10,7 @@ f1_keywords: ["_strlwr_s_l", "_strlwr_s", "mbslwr_s_l", "strlwr_s_l", "_wcslwr_s
 helpviewer_keywords: ["_tcslwr_s function", "wcslwr_s function", "_mbslwr_s function", "_wcslwr_s function", "strlwr_s_l function", "mbslwr_s_l function", "_strlwr_s function", "string conversion [C++], case", "strlwr_s function", "wcslwr_s_l function", "_tcslwr_s_l function", "mbslwr_s function", "strings [C++], case", "_wcslwr_s_l function", "converting case, CRT functions", "_strlwr_s_l function", "_mbslwr_s_l function", "case, converting", "tcslwr_s function", "tcslwr_s_l function", "strings [C++], converting case"]
 ms.assetid: 4883d31b-bdac-4049-83a1-91dfdeceee79
 ---
-# _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
+# `_strlwr_s`, `_strlwr_s_l`, `_mbslwr_s`, `_mbslwr_s_l`, `_wcslwr_s`, `_wcslwr_s_l`
 
 Converts a string to lowercase, by using the current locale or a locale object that's passed in. These versions of [`_strlwr`, `_wcslwr`, `_mbslwr`, `_strlwr_l`, `_wcslwr_l`, `_mbslwr_l`](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

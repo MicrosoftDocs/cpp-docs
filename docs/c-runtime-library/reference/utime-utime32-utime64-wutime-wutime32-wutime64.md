@@ -10,7 +10,7 @@ f1_keywords: ["_tutime", "_utime64", "wutime", "utime32", "wutime64", "_utime", 
 helpviewer_keywords: ["tutime function", "utime32 function", "utime64 function", "_utime function", "_tutime32 function", "time [C++], file modification", "wutime function", "_wutime function", "_wutime32 function", "_tutime64 function", "_tutime function", "files [C++], modification time", "_wutime64 function", "_utime32 function", "utime function", "_utime64 function", "wutime64 function", "wutime32 function", "tutime64 function", "tutime32 function"]
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
 ---
-# _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
+# `_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`
 
 Set the file modification time.
 

@@ -10,7 +10,7 @@ f1_keywords: ["CrtlsValidPointer", "_CrtIsValidPointer"]
 helpviewer_keywords: ["CrtIsValidPointer function", "_CrtIsValidPointer function"]
 ms.assetid: 91c35590-ea5e-450f-a15d-ad8d62ade1fa
 ---
-# _CrtIsValidPointer
+# `_CrtIsValidPointer`
 
 Verifies that a pointer isn't null. In versions of the C run-time library before Visual Studio 2010, verifies that a specified memory range is valid for reading and writing (debug version only).
 

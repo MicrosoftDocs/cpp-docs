@@ -10,7 +10,7 @@ f1_keywords: ["get_output_format", "_get_output_format"]
 helpviewer_keywords: ["output formatting", "get_output_format function", "_get_output_format function"]
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
 ---
-# _get_output_format
+# `_get_output_format`
 
 Gets the current value of the output format flag.
 

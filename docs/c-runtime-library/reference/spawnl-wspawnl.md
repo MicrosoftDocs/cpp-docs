@@ -10,7 +10,7 @@ f1_keywords: ["wspawnl", "_wspawnl", "_spawnl"]
 helpviewer_keywords: ["spawnl function", "processes, creating", "_spawnl function", "processes, executing new", "_wspawnl function", "wspawnl function", "process creation"]
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
 ---
-# _spawnl, _wspawnl
+# `_spawnl`, `_wspawnl`
 
 Creates and executes a new process.
 

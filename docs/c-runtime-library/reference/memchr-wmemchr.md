@@ -10,7 +10,7 @@ f1_keywords: ["memchr", "wmemchr"]
 helpviewer_keywords: ["memchr function", "wmemchr function"]
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
 ---
-# memchr, wmemchr
+# `memchr`, `wmemchr`
 
 Find characters in a buffer.
 

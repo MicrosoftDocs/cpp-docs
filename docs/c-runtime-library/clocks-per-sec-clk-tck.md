@@ -6,7 +6,7 @@ f1_keywords: ["CLOCKS_PER_SEC", "CLK_TCK"]
 helpviewer_keywords: ["CLOCKS_PER_SEC", "CLK_TCK constant"]
 ms.assetid: bc285106-383d-44cb-91bf-276ad7de57bf
 ---
-# CLOCKS_PER_SEC, CLK_TCK
+# `CLOCKS_PER_SEC`, `CLK_TCK`
 
 ## Syntax
 

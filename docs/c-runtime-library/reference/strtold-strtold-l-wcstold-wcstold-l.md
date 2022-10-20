@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_tcstold_l", "_wcstold_l", "_tcstold", "strtold", "_strtold_l", "wcstold"]
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
 ---
-# strtold, _strtold_l, wcstold, _wcstold_l
+# `strtold`, `_strtold_l`, `wcstold`, `_wcstold_l`
 
 Converts strings to a long double-precision floating-point value.
 

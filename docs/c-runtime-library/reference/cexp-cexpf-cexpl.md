@@ -10,7 +10,7 @@ f1_keywords: ["cexp", "cexpf", "cexpl", "complex/cepx", "complex/cexpf", "comple
 helpviewer_keywords: ["cexp function", "cexpl function", "cexpf function"]
 ms.assetid: f27fd5a9-70c7-4957-a7ee-5256d19bd1da
 ---
-# cexp, cexpf, cexpl
+# `cexp`, `cexpf`, `cexpl`
 
 Compute the base-e exponential of a complex number.
 

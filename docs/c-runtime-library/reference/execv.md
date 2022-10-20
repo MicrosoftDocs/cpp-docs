@@ -10,7 +10,7 @@ f1_keywords: ["execv"]
 helpviewer_keywords: ["execv function"]
 ms.assetid: b097d606-9384-427a-9a1d-707dc4ce03ae
 ---
-# execv
+# `execv`
 
 The Microsoft-implemented POSIX function name `execv` is a deprecated alias for the [`_execv`](execv-wexecv.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

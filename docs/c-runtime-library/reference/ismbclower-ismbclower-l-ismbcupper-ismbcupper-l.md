@@ -10,7 +10,7 @@ f1_keywords: ["_ismbcupper", "_ismbclower"]
 helpviewer_keywords: ["_ismbcupper function", "ismbclower function", "_ismbclower_l function", "ismbcupper_l function", "_ismbclower function", "ismbcupper function", "ismbclower_l function", "_ismbcupper_l function"]
 ms.assetid: 17d89587-65bc-477c-ba8f-a84e63cf59e7
 ---
-# _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
+# `_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`
 
 Checks whether a multibyte character is lowercase or uppercase.
 

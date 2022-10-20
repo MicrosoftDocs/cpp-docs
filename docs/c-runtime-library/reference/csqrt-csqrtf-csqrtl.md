@@ -10,7 +10,7 @@ f1_keywords: ["csqrt", "csqrtf", "csqrtl", "complex/csqrt", "complex/csqrtf", "c
 helpviewer_keywords: ["csqrt function", "csqrtf function", "csqrtl function"]
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
 ---
-# csqrt, csqrtf, csqrtl
+# `csqrt`, `csqrtf`, `csqrtl`
 
 Retrieves the square root of a complex number, with a branch cut along the negative real axis.
 

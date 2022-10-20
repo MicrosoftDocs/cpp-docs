@@ -10,7 +10,7 @@ f1_keywords: ["wcserror_s", "__wcserror_s", "_tcserror_s", "_wcserror_s", "tcser
 helpviewer_keywords: ["__wcserror_s function", "error messages, printing", "tcserror_s function", "printing error messages", "strerror_s function", "_wcserror_s function", "_tcserror_s function", "_strerror_s function", "wcserror_s function", "error messages, getting"]
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
 ---
-# strerror_s, _strerror_s, _wcserror_s, __wcserror_s
+# `strerror_s`, `_strerror_s`, `_wcserror_s`, `__wcserror_s`
 
 Get a system error message (**strerror_s**, **_wcserror_s**) or print a user-supplied error message (**_strerror_s**, **__wcserror_s**). These are versions of [`strerror`, `_strerror`, `_wcserror`, `__wcserror`](strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

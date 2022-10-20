@@ -10,7 +10,7 @@ f1_keywords: ["_wctime64", "_ctime32", "_tctime", "_wctime", "_wctime32", "_tcti
 helpviewer_keywords: ["tctime64 function", "_ctime32 function", "ctime32 function", "_wctime function", "wctime64 function", "_tctime64 function", "_tctime32 function", "_ctime64 function", "_wctime64 function", "ctime function", "wctime32 function", "ctime64 function", "_wctime32 function", "_tctime function", "tctime32 function", "tctime function", "wctime function", "time, converting"]
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
 ---
-# ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
+# `ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`
 
 Convert a time value to a string and adjust for local time zone settings. More secure versions of these functions are available; see [`ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md).
 

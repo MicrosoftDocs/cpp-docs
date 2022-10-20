@@ -10,7 +10,7 @@ f1_keywords: ["get_current_locale", "__get_current_locale", "_get_current_locale
 helpviewer_keywords: ["get_current_locale function", "_get_current_locale function", "locales, getting information on", "__get_current_locale function"]
 ms.assetid: 572217f2-a37a-4105-a293-a250b4fabd99
 ---
-# _get_current_locale
+# `_get_current_locale`
 
 Gets a locale object representing the current locale.
 

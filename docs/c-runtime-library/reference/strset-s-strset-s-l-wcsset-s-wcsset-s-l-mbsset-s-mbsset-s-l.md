@@ -10,7 +10,7 @@ f1_keywords: ["_wcsset_s_l", "strset_s", "_mbsset_s", "mbsset_s", "_strset_s", "
 helpviewer_keywords: ["mbsset_s_l function", "wcsset_s function", "_mbsset_s function", "tcsset_s function", "strset_s_l function", "characters [C++], setting", "_wcsset_s_l function", "_strset_s function", "strset_s function", "wcsset_s_l function", "strings [C++], setting characters", "_strset_s_l function", "_mbsset_s_l function", "_wcsset_s function", "tcsset_s_l function", "_tcsset_s_l function", "_tcsset_s function", "mbsset_s function"]
 ms.assetid: dceb2909-6b41-4792-acb7-888e45bb8b35
 ---
-# _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
+# `_strset_s`, `_strset_s_l`, `_wcsset_s`, `_wcsset_s_l`, `_mbsset_s`, `_mbsset_s_l`
 
 Sets characters of a string to a character. These versions of [`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

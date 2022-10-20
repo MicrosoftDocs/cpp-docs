@@ -10,7 +10,7 @@ f1_keywords: ["_ftime_s", "_ftime64_s", "ftime_s", "_ftime32_s", "ftime32_s", "f
 helpviewer_keywords: ["ftime32_s function", "ftime_s function", "_ftime64_s function", "current time", "ftime64_s function", "time, getting current", "_ftime_s function", "_ftime32_s function"]
 ms.assetid: d03080d9-a520-45be-aa65-504bdb197e8b
 ---
-# _ftime_s, _ftime32_s, _ftime64_s
+# `_ftime_s`, `_ftime32_s`, `_ftime64_s`
 
 Gets the current time. These are versions of [`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

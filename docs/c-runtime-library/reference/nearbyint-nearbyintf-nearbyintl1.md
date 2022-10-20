@@ -10,7 +10,7 @@ f1_keywords: ["nearbyint", "nearbyintf", "nearbyintl", "math/nearbyint", "math/n
 helpviewer_keywords: ["nearbyint function", "nearbyintf function", "nearbyintl function"]
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
 ---
-# nearbyint, nearbyintf, nearbyintl
+# `nearbyint`, `nearbyintf`, `nearbyintl`
 
 Rounds the specified floating-point value to an integer, and returns that value in a floating-point format.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_ungettc_nolock", "ungetwc_nolock", "ungetc_nolock", "_ungetc_nol
 helpviewer_keywords: ["_ungettc_nolock function", "_ungetwc_nolock function", "characters, pushing back onto stream", "_ungetc_nolock function", "ungetwc_nolock function", "ungettc_nolock function", "ungetc_nolock function"]
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
 ---
-# _ungetc_nolock, _ungetwc_nolock
+# `_ungetc_nolock`, `_ungetwc_nolock`
 
 Pushes a character back onto the stream.
 

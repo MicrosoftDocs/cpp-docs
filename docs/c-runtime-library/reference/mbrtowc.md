@@ -10,7 +10,7 @@ f1_keywords: ["mbrtowc"]
 helpviewer_keywords: ["mbrtowc function"]
 ms.assetid: a1e87fcc-6de0-4ca1-bf26-508d28490286
 ---
-# mbrtowc
+# `mbrtowc`
 
 Convert a multibyte character in the current locale into the equivalent wide character, with the capability of restarting in the middle of a multibyte character.
 

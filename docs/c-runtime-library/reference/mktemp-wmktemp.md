@@ -10,7 +10,7 @@ f1_keywords: ["_tmktemp", "wmktemp", "tmktemp", "_wmktemp", "_mktemp"]
 helpviewer_keywords: ["_wmktemp function", "_mktemp function", "files [C++], temporary", "tmktemp function", "_tmktemp function", "wmktemp function", "mktemp function", "temporary files [C++]"]
 ms.assetid: 055eb539-a8c2-4a7d-be54-f5b6d1eb5c85
 ---
-# _mktemp, _wmktemp
+# `_mktemp`, `_wmktemp`
 
 Creates a unique file name. More secure versions of these functions are available; see [`_mktemp_s`, `_wmktemp_s`](mktemp-s-wmktemp-s.md).
 

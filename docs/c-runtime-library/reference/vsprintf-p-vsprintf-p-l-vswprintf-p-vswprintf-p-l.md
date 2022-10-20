@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vsprintf_p", "_vswprintf_p", "_vstprintf_p", "vswprintf_p", "_vsprintf_p", "vstprintf_p"]
 helpviewer_keywords: ["vstprintf_p_l function", "_vsprintf_p_l function", "_vstprintf_p function", "vsprintf_p_l function", "_vswprintf_p function", "vswprintf_p function", "vsprintf_p function", "vswprintf_p_l function", "_vswprintf_p_l function", "vstprintf_p function", "formatted text [C++]", "_vsprintf_p function", "_vstprintf_p_l function"]
 ---
-# _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
+# `_vsprintf_p`, `_vsprintf_p_l`, `_vswprintf_p`, `_vswprintf_p_l`
 
 Write formatted output using a pointer to a list of arguments, with the ability to specify the order in which the arguments are used.
 

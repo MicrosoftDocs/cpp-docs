@@ -10,7 +10,7 @@ f1_keywords: ["_getch_nolock", "getwch_nolock", "getch_nolock", "_getwch_nolock"
 helpviewer_keywords: ["characters, getting from console", "_getwch_nolock function", "_getch_nolock function", "getwch_nolock function", "_gettch_nolock function", "console, reading from", "getch_nolock function", "gettch_nolock function"]
 ms.assetid: 9d248546-26ca-482c-b0c6-55812a987e83
 ---
-# _getch_nolock, _getwch_nolock
+# `_getch_nolock`, `_getwch_nolock`
 
 Gets a character from the console without echo and without locking the thread.
 

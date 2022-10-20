@@ -10,7 +10,7 @@ f1_keywords: ["wspawnve", "_spawnve", "_wspawnve"]
 helpviewer_keywords: ["_spawnve function", "spawnve function", "wspawnve function", "processes, creating", "_wspawnve function", "processes, executing new", "process creation"]
 ms.assetid: 26d1713d-b551-4f21-a07b-e9891a2ae6cf
 ---
-# _spawnve, _wspawnve
+# `_spawnve`, `_wspawnve`
 
 Creates and executes a new process.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_execvp", "wexecvp", "_wexecvp"]
 helpviewer_keywords: ["_execvp function", "_wexecvp function", "wexecvp function", "execvp function"]
 ms.assetid: a4db15df-b204-4987-be7c-de84c3414380
 ---
-# _execvp, _wexecvp
+# `_execvp`, `_wexecvp`
 
 Loads and executes new child processes.
 

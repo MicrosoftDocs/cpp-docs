@@ -10,7 +10,7 @@ f1_keywords: ["__pctype_func"]
 helpviewer_keywords: ["__pctype_func"]
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
 ---
-# __pctype_func
+# `__pctype_func`
 
 Retrieves a pointer to an array of character classification information.
 

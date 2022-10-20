@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["_nolock functions", "nolock functions"]
 ms.assetid: 7d651d87-38d2-4303-9897-fdb5f7a3e899
 ---
-# _nolock Functions
+# `_nolock` functions
 
 The `_nolock` functions are versions of I/O functions that don't perform any locking. They're provided for users requiring maximum performance. For more information, see [Multithreaded libraries performance](./multithreaded-libraries-performance.md).
 

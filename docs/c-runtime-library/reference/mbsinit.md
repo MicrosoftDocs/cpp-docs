@@ -10,7 +10,7 @@ f1_keywords: ["mbsinit"]
 helpviewer_keywords: ["mbsinit function"]
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034
 ---
-# mbsinit
+# `mbsinit`
 
 Tracks the state of a multibyte character conversion.
 

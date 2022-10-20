@@ -10,7 +10,7 @@ f1_keywords: ["fgetwchar", "_fgettchar", "_fgetchar", "_fgetwchar", "fgettchar"]
 helpviewer_keywords: ["fgetwchar function", "_fgetchar function", "fgettchar function", "_fgetwchar function", "_fgettchar function", "standard input, reading from", "fgetchar function"]
 ms.assetid: 8bce874c-701a-41a3-b1b2-feff266fb5b9
 ---
-# _fgetchar, _fgetwchar
+# `_fgetchar`, `_fgetwchar`
 
 Reads a character from **stdin**.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_wcsdup_dbg", "strdup_dbg", "_strdup_dbg", "wcsdup_dbg"]
 helpviewer_keywords: ["_wcsdup_dbg function", "stdup_dbg function", "copying strings", "duplicating strings", "strings [C++], copying", "strings [C++], duplicating", "_strdup_dbg function", "wcsdup_dbg function"]
 ms.assetid: 681db70c-d124-43ab-b83e-5eeea9035097
 ---
-# _strdup_dbg, _wcsdup_dbg
+# `_strdup_dbg`, `_wcsdup_dbg`
 
 Versions of [`_strdup` and `_wcsdup`](strdup-wcsdup-mbsdup.md) that use the debug version of **malloc**.
 

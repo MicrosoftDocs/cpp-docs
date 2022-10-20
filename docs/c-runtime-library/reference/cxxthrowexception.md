@@ -10,7 +10,7 @@ f1_keywords: ["CxxThrowException", "_CxxThrowException"]
 helpviewer_keywords: ["_CxxThrowException function", "CxxThrowException function"]
 ms.assetid: 0b90bef5-b7d2-46e0-88e2-59e531e01a4d
 ---
-# _CxxThrowException
+# `_CxxThrowException`
 
 Builds the exception record and calls the runtime environment to start processing the exception.
 

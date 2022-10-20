@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type"]
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
 ---
-# _set_app_type
+# `_set_app_type`
 
 An internal function used at startup to tell the CRT whether the app is a console app or a GUI app.
 

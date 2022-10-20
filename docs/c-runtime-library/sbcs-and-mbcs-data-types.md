@@ -7,7 +7,7 @@ f1_keywords: ["MBCS", "SBCS"]
 helpviewer_keywords: ["SBCS and MBCS data types", "data types [C], MBCS and SBCS"]
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
 ---
-# SBCS and MBCS Data Types
+# SBCS and MBCS data types
 
 Any Microsoft MBCS run-time library routine that handles only a single multibyte character, or a single byte of a multibyte character, expects an **`unsigned int`** argument (where 0x0000 <= character value <= 0xFFFF and 0x00 <= byte value <= 0xFF). An MBCS routine that handles multibyte bytes or characters in a string context expects a multibyte-character string to be represented as an **`unsigned char`** pointer.
 

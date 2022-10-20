@@ -10,7 +10,7 @@ f1_keywords: ["_amsg_exit"]
 helpviewer_keywords: ["_amsg_exit"]
 ms.assetid: 146d4faf-d763-43a4-b264-12711196456b
 ---
-# _amsg_exit
+# `_amsg_exit`
 
 Emits a specified runtime error message and then exits your application with error code 255.
 

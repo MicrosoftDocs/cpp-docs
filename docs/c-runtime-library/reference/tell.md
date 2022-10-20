@@ -10,7 +10,7 @@ f1_keywords: ["tell"]
 helpviewer_keywords: ["tell function"]
 ms.assetid: 3a92a40d-f472-4545-a493-f57c340ee798
 ---
-# tell
+# `tell`
 
 The Microsoft-specific function name `tell` is a deprecated alias for the [`_tell`](tell-telli64.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

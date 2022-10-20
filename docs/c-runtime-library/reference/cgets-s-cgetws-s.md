@@ -10,7 +10,7 @@ f1_keywords: ["_cgets_s", "cgets_s", "cgetws_s", "_cgetws_s"]
 helpviewer_keywords: ["strings [C++], getting from console", "console, getting strings from", "_cgets_s function", "cget_s function", "_cgetws_s function", "cgetws_s function"]
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
 ---
-# _cgets_s, _cgetws_s
+# `_cgets_s`, `_cgetws_s`
 
 Gets a character string from the console. These versions of [`_cgets` and `_cgetws`](../cgets-cgetws.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vcprintf_s", "vcwprintf_s_l", "_vcwprintf_s", "_vcwprintf_s_l", "_vcprintf_s_l", "_vtcprintf_s", "vcwprintf_s", "vcprintf_s_l", "_vcprintf_s"]
 helpviewer_keywords: ["_vtcprintf_s_l function", "_vcwprintf_s_l function", "_vtcprintf_s function", "vtcprintf_s_l function", "vcprintf_s_l function", "_vcprintf_s function", "_vcwprintf_s function", "vcwprintf_s_l function", "vcwprintf_s function", "vcprintf_s function", "_vcprintf_s_l function", "vtcprintf_s function", "formatted text [C++]"]
 ---
-# _vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
+# `_vcprintf_s`, `_vcprintf_s_l`, `_vcwprintf_s`, `_vcwprintf_s_l`
 
 Writes formatted output to the console by using a pointer to a list of arguments. These versions of [`_vcprintf`, `_vcprintf_l`, `_vcwprintf`, `_vcwprintf_l`](vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

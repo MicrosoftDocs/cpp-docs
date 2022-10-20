@@ -10,7 +10,7 @@ f1_keywords: ["CrtGetReportHook", "_CrtGetReportHook"]
 helpviewer_keywords: ["CrtGetReportHook function", "_CrtGetReportHook function"]
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
 ---
-# _CrtGetReportHook
+# `_CrtGetReportHook`
 
 Retrieves the client-defined reporting function for hooking it into the C run time for the debug reporting process (debug version only).
 

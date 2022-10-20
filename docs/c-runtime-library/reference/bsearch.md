@@ -10,7 +10,7 @@ f1_keywords: ["bsearch"]
 helpviewer_keywords: ["arrays [CRT], binary search", "bsearch function"]
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
 ---
-# bsearch
+# `bsearch`
 
 Performs a binary search of a sorted array. A more secure version of this function is available; see [`bsearch_s`](bsearch-s.md).
 

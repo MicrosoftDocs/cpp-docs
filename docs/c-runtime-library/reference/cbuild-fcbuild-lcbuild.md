@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_Cbuild", "_FCbuild", "_LCbuild", "complex/_Cbuild", "complex/_FCbuild", "complex/_LCbuild"]
 helpviewer_keywords: ["_Cbuild function", "_FCbuild function", "_LCbuild function"]
 ---
-# _Cbuild, _FCbuild, _LCbuild
+# `_Cbuild`, `_FCbuild`, `_LCbuild`
 
 Constructs a complex number from real and imaginary parts.
 

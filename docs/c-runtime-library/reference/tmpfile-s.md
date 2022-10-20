@@ -10,7 +10,7 @@ f1_keywords: ["tmpfile_s"]
 helpviewer_keywords: ["temporary files", "tmpfile_s function", "temporary files, creating"]
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
 ---
-# tmpfile_s
+# `tmpfile_s`
 
 Creates a temporary file. It is a version of [`tmpfile`](tmpfile.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

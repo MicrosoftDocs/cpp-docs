@@ -10,7 +10,7 @@ f1_keywords: ["isfinite", "finite", "_finite", "_finitef", "math/isfinite", "mat
 helpviewer_keywords: ["finite function", "_finite function", "_finitef function"]
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
 ---
-# isfinite, _finite, _finitef
+# `isfinite`, `_finite`, `_finitef`
 
 Determines whether a floating-point value is finite.
 

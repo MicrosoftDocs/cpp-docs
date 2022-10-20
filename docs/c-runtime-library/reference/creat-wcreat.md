@@ -10,7 +10,7 @@ f1_keywords: ["wcreat", "_wcreat", "_creat", "tcreat", "_tcreat"]
 helpviewer_keywords: ["wcreat function", "_wcreat function", "files [C++], creating", "_creat function", "tcreat function", "creat function", "_tcreat function"]
 ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
 ---
-# _creat, _wcreat
+# `_creat`, `_wcreat`
 
 Creates a new file. **_creat** and **_wcreat** have been deprecated; use [`_sopen_s`, `_wsopen_s`](sopen-s-wsopen-s.md) instead.
 

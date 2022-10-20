@@ -8,7 +8,7 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
 ---
-# log2, log2f, log2l
+# `log2`, `log2f`, `log2l`
 
 Determines the binary (base-2) logarithm of the specified value.
 

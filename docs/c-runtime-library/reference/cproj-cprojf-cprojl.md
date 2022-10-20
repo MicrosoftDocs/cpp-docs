@@ -10,7 +10,7 @@ f1_keywords: ["cproj", "cprojf", "cprojl", "complex/cproj", "complex/cprojf", "c
 helpviewer_keywords: ["cproj function", "cprojf function", "cprojl function"]
 ms.assetid: 32b49623-13bf-4cae-802e-7912d75030fe
 ---
-# cproj, cprojf, cprojl
+# `cproj`, `cprojf`, `cprojl`
 
 Retrieves the projection of a complex number on the Reimann sphere.
 

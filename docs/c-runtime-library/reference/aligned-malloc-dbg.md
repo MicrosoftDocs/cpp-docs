@@ -10,7 +10,7 @@ f1_keywords: ["_aligned_malloc_dbg", "aligned_malloc_dbg"]
 helpviewer_keywords: ["aligned_malloc_dbg function", "_aligned_malloc_dbg function"]
 ms.assetid: fb0429c3-685d-4826-9075-2515c5bdc5c6
 ---
-# _aligned_malloc_dbg
+# `_aligned_malloc_dbg`
 
 Allocates memory on a specified alignment boundary with extra space for a debugging header and overwrite buffers (debug version only).
 

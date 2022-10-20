@@ -10,7 +10,7 @@ f1_keywords: ["spawnlp"]
 helpviewer_keywords: ["spawnlp function"]
 ms.assetid: 560da96f-4902-4620-8a92-0d128ecaa001
 ---
-# spawnlp
+# `spawnlp`
 
 The Microsoft-specific function name `spawnlp` is a deprecated alias for the [`_spawnlp`](spawnlp-wspawnlp.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

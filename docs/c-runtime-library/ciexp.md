@@ -10,7 +10,7 @@ f1_keywords: ["CIexp", "_CIexp"]
 helpviewer_keywords: ["CIexp intrinsic", "_CIexp intrinsic"]
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
 ---
-# _CIexp
+# `_CIexp`
 
 Calculates the exponential of the top value on the stack.
 

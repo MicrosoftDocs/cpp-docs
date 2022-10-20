@@ -10,7 +10,7 @@ f1_keywords: ["cscanf_s", "cscanf_s_l", "cwscanf_s", "_cwscanf_s", "_tcscanf_s",
 helpviewer_keywords: ["cscanf_s function", "_cwscanf_s_l function", "tcscanf_s function", "console [C++], reading from", "_cscanf_s function", "data [C++], reading from the console", "cwscanf_s function", "_tcscanf_s_l function", "_cscanf_s_l function", "cscanf_s_l function", "cwscanf_s_l function", "reading data [C++], from the console", "_cwscanf_s function", "_tcscanf_s function", "tcscanf_s_l function"]
 ms.assetid: 9ccab74d-916f-42a6-93d8-920525efdf4b
 ---
-# _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
+# `_cscanf_s`, `_cscanf_s_l`, `_cwscanf_s`, `_cwscanf_s_l`
 
 Reads formatted data from the console. These more secure versions of [`_cscanf`, `_cscanf_l`, `_cwscanf`, `_cwscanf_l`](cscanf-cscanf-l-cwscanf-cwscanf-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

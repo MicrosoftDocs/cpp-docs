@@ -10,7 +10,7 @@ f1_keywords: ["_CrtReportBlockType", "CrtReportBlockType"]
 helpviewer_keywords: ["CrtReportBlockType function", "BLOCK_SUBTYPE macro", "_CrtReportBlockType function", "_BLOCK_TYPE macro", "_BLOCK_SUBTYPE macro", "BLOCK_TYPE macro"]
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
 ---
-# _CrtReportBlockType
+# `_CrtReportBlockType`
 
 Returns the block type/subtype associated with a given debug heap block pointer.
 

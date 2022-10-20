@@ -10,7 +10,7 @@ f1_keywords: ["_tstoll_l", "_wtoll", "_atoll_l", "_ttoll", "_tstoll", "_wtoll_l"
 helpviewer_keywords: ["atoll function", "_wtoll_l function", "_wtoll function", "_atoll_l function"]
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
 ---
-# atoll, _atoll_l, _wtoll, _wtoll_l
+# `atoll`, `_atoll_l`, `_wtoll`, `_wtoll_l`
 
 Converts a string to a **`long long`** integer.
 

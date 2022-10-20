@@ -10,7 +10,7 @@ f1_keywords: ["getc_nolock", "_gettc_nolock", "_getc_nolock", "getwc_nolock", "g
 helpviewer_keywords: ["characters, reading", "_getc_nolock function", "_getwc_nolock function", "getwc_nolock function", "streams, reading characters from", "reading characters from streams", "getc_nolock function", "gettc_nolock function", "_gettc_nolock function"]
 ms.assetid: eb37b272-e177-41c9-b077-12ce7ffd3b88
 ---
-# _getc_nolock, _getwc_nolock
+# `_getc_nolock`, `_getwc_nolock`
 
 Reads a character from a stream.
 

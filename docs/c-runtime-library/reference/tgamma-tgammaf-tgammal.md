@@ -10,7 +10,7 @@ f1_keywords: ["tgamma", "tgammaf", "tgammal", "math/tgamma", "math/tgammaf", "ma
 helpviewer_keywords: ["tgamma function", "tgammaf function", "tgammal function"]
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
 ---
-# tgamma, tgammaf, tgammal
+# `tgamma`, `tgammaf`, `tgammal`
 
 Determines the gamma function of the specified value.
 

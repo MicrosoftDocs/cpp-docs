@@ -6,7 +6,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["Unicode [C++], wide character set", "wide characters [C++], Unicode"]
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
 ---
-# Unicode: The Wide-Character Set
+# Unicode: The wide-character set
 
 A wide character is a 2-byte multilingual character code. Any character in use in modern computing worldwide, including technical symbols and special publishing characters, can be represented according to the Unicode specification as a wide character. Developed and maintained by a large consortium that includes Microsoft, the Unicode standard is now widely accepted.
 

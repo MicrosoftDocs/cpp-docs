@@ -10,7 +10,7 @@ f1_keywords: ["close"]
 helpviewer_keywords: ["close function"]
 ms.assetid: c79689f4-9c86-4a4a-a256-d22e3498f55d
 ---
-# close
+# `close`
 
 The Microsoft-implemented POSIX function name `close` is a deprecated alias for the [`_close`](close.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

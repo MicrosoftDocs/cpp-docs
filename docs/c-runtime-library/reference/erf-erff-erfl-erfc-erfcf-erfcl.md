@@ -10,7 +10,7 @@ f1_keywords: ["erfl", "erf", "erff", "erfc", "erfcf", "erfcl"]
 helpviewer_keywords: ["erfl function", "erff function", "erf function", "erfcl function", "erfcf function", "erfc function"]
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
 ---
-# erf, erff, erfl, erfc, erfcf, erfcl
+# `erf`, `erff`, `erfl`, `erfc`, `erfcf`, `erfcl`
 
 Computes the error function or the complementary error function of a value.
 

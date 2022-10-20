@@ -10,7 +10,7 @@ f1_keywords: ["_except_handler3", "except_handler3"]
 helpviewer_keywords: ["_except_handler3 function", "except_handler3 function"]
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
 ---
-# _except_handler3
+# `_except_handler3`
 
 Internal CRT function. Used by a framework to find the appropriate exception handler to process the current exception.
 

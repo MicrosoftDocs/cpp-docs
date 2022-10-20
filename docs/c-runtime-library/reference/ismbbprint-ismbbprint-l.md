@@ -10,7 +10,7 @@ f1_keywords: ["_ismbbprint_l", "_ismbbprint", "ismbbprint", "ismbbprint_l"]
 helpviewer_keywords: ["ismbbprint_l function", "ismbbprint function", "_ismbbprint function", "_ismbbprint_l function"]
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d
 ---
-# _ismbbprint, _ismbbprint_l
+# `_ismbbprint`, `_ismbbprint_l`
 
 Determines whether a specified multibyte character is a print character.
 

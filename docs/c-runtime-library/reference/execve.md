@@ -10,7 +10,7 @@ f1_keywords: ["execve"]
 helpviewer_keywords: ["execve function"]
 ms.assetid: f28aabe4-fd76-422e-a0e4-80864736d245
 ---
-# execve
+# `execve`
 
 The Microsoft-implemented POSIX function name `execve` is a deprecated alias for the [`_execve`](execve-wexecve.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

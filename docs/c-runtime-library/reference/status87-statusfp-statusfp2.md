@@ -10,7 +10,7 @@ f1_keywords: ["_statusfp2", "_statusfp", "statusfp2", "_status87", "status87", "
 helpviewer_keywords: ["floating-point functions, getting status word", "floating-point numbers, status word", "status87 function", "status word, getting floating point", "statusfp function", "_statusfp function", "_statusfp2 function", "statusfp2 function", "_status87 function", "floating-point functions", "status word"]
 ms.assetid: 7ef963fa-b1fb-429d-94d6-fbf282ab7432
 ---
-# _status87, _statusfp, _statusfp2
+# `_status87`, `_statusfp`, `_statusfp2`
 
 Gets the floating-point status word.
 
