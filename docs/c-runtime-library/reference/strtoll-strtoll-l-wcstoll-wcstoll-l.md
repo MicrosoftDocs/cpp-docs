@@ -10,7 +10,7 @@ f1_keywords: ["_strtoll_l", "_tcstoll_l", "_tcstoll", "_wcstoll_l", "strtoll", "
 helpviewer_keywords: ["_tcstoll_l function", "_wcstoll_l function", "strtoll function", "wcstoll function", "_tcstoll function", "_strtoll_l function"]
 ms.assetid: e2d05dcf-d3b2-4291-9e60-dee77e540fd7
 ---
-# strtoll, _strtoll_l, wcstoll, _wcstoll_l
+# `strtoll`, `_strtoll_l`, `wcstoll`, `_wcstoll_l`
 
 Converts a string to a **`long long`** value.
 

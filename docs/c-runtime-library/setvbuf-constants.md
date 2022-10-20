@@ -6,7 +6,7 @@ f1_keywords: ["_IOFBF", "_IONBF", "_IOLBF"]
 helpviewer_keywords: ["_IOFBF constant", "IOFBF constant", "IONBF constant", "_IOLBF constant", "IOLBF constant", "_IONBF constant"]
 ms.assetid: a6ec4dd5-1f24-498c-871a-e874cd28d33c
 ---
-# setvbuf constants
+# `setvbuf` constants
 
 ## Syntax
 

@@ -10,7 +10,7 @@ f1_keywords: ["cputws", "_cputs", "_cputws"]
 helpviewer_keywords: ["strings [C++], writing", "_cputs function", "_cputws function", "putting strings to the console", "cputs function", "console, sending strings to", "cputws function"]
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
 ---
-# _cputs, _cputws
+# `_cputs`, `_cputws`
 
 Puts a string to the console.
 

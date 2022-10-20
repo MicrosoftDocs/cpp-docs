@@ -10,7 +10,7 @@ f1_keywords: ["execvp"]
 helpviewer_keywords: ["execvp function"]
 ms.assetid: a0d0e898-9f06-4aa9-94ce-3ad317318c3a
 ---
-# execvp
+# `execvp`
 
 The Microsoft-implemented POSIX function name `execvp` is a deprecated alias for the [`_execvp`](execvp-wexecvp.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

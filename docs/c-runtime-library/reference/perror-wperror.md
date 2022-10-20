@@ -10,7 +10,7 @@ f1_keywords: ["_wperror", "_tperror", "perror"]
 helpviewer_keywords: ["_tperror function", "tperror function", "wperror function", "error messages, printing", "printing error messages", "_wperror function", "perror function"]
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5
 ---
-# perror, _wperror
+# `perror`, `_wperror`
 
 Print an error message.
 

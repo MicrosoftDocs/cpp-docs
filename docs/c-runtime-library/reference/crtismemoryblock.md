@@ -10,7 +10,7 @@ f1_keywords: ["CrtlsMemoryBlock", "_CrtIsMemoryBlock"]
 helpviewer_keywords: ["_CrtIsMemoryBlock function", "CrtIsMemoryBlock function"]
 ms.assetid: f7cbbc60-3690-4da0-a07b-68fd7f250273
 ---
-# _CrtIsMemoryBlock
+# `_CrtIsMemoryBlock`
 
 Verifies that a specified memory block is in the local heap and that it has a valid debug heap block type identifier (debug version only).
 

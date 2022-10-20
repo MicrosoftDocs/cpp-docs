@@ -10,7 +10,7 @@ f1_keywords: ["_istalnum_l", "_iswalnum_l", "iswalnum", "_isalnum_l", "isalnum",
 helpviewer_keywords: ["_istalnum function", "_ismbcalnum_l function", "iswalnum function", "isalnum function", "istalnum function", "_isalnum_l function", "_istalnum_l function", "_iswalnum_l function"]
 ms.assetid: 0dc51306-ade8-4944-af27-e4176fc89093
 ---
-# isalnum, iswalnum, _isalnum_l, _iswalnum_l
+# `isalnum`, `iswalnum`, `_isalnum_l`, `_iswalnum_l`
 
 Determines whether an integer represents an alphanumeric character.
 

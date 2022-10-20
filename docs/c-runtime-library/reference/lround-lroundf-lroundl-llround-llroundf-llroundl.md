@@ -10,7 +10,7 @@ f1_keywords: ["lround", "lroundl", "llroundl", "llround", "lroundf", "llroundf"]
 helpviewer_keywords: ["lround function", "llroundl function", "llround function", "lroundf function", "llroundf function", "lroundl function"]
 ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8
 ---
-# lround, lroundf, lroundl, llround, llroundf, llroundl
+# `lround`, `lroundf`, `lroundl`, `llround`, `llroundf`, `llroundl`
 
 Rounds a floating-point value to the nearest integer.
 

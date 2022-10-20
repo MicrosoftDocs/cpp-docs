@@ -10,7 +10,7 @@ f1_keywords: ["waccess_s", "access_s", "_waccess_s", "_access_s"]
 helpviewer_keywords: ["access_s function", "taccess_s function", "_taccess_s function", "waccess_s function", "_access_s function", "_waccess_s function"]
 ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
 ---
-# _access_s, _waccess_s
+# `_access_s`, `_waccess_s`
 
 Determines file read/write permissions. These functions are versions of [`_access`, `_waccess`](access-waccess.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

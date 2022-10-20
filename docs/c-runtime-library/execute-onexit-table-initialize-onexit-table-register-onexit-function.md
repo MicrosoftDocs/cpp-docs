@@ -10,7 +10,7 @@ f1_keywords: ["_execute_onexit_table", "process/_execute_onexit_table", "_initia
 helpviewer_keywords: ["_execute_onexit_table function", "_initialize_onexit_table function", "_register_onexit_function function"]
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
 ---
-# _execute_onexit_table, _initialize_onexit_table, _register_onexit_function
+# `_execute_onexit_table`, `_initialize_onexit_table`, `_register_onexit_function`
 
 Manages the routines to be called at exit time.
 

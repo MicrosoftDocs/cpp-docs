@@ -10,7 +10,7 @@ f1_keywords: ["_chsize"]
 helpviewer_keywords: ["size", "_chsize function", "size, changing file", "files [C++], changing size", "chsize function"]
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
 ---
-# _chsize
+# `_chsize`
 
 Changes the size of a file. A more secure version is available; see [`_chsize_s`](chsize-s.md).
 

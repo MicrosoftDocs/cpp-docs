@@ -10,7 +10,7 @@ f1_keywords: ["fpieee_flt", "_fpieee_flt"]
 helpviewer_keywords: ["_fpieee_flt function", "exception handling, floating-point", "floating-point exception handling", "fpieee_flt function"]
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740
 ---
-# _fpieee_flt
+# `_fpieee_flt`
 
 Invokes a user-defined trap handler for IEEE floating-point exceptions.
 

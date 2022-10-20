@@ -10,7 +10,7 @@ f1_keywords: ["atanhl", "atanhf", "atanh"]
 helpviewer_keywords: ["atanhf function", "atanhl function", "atanh funciton"]
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
 ---
-# atanh, atanhf, atanhl
+# `atanh`, `atanhf`, `atanhl`
 
 Calculates the inverse hyperbolic tangent.
 

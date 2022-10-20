@@ -10,7 +10,7 @@ f1_keywords: ["_wmakepath", "_tmakepath", "makepath", "tmakepath", "wmakepath", 
 helpviewer_keywords: ["_makepath function", "wmakepath function", "makepath function", "_tmakepath function", "paths", "_wmakepath function", "tmakepath function"]
 ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026
 ---
-# _makepath, _wmakepath
+# `_makepath`, `_wmakepath`
 
 Create a path name from components. More secure versions of these functions are available; see [`_makepath_s`, `_wmakepath_s`](makepath-s-wmakepath-s.md).
 

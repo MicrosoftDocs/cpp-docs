@@ -10,7 +10,7 @@ f1_keywords: ["cimagf", "cimagl", "complex/cimag", "complex/cimagf", "complex/ci
 helpviewer_keywords: ["cimag function", "cimagf function", "cimagl function"]
 ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
 ---
-# cimag, cimagf, cimagl
+# `cimag`, `cimagf`, `cimagl`
 
 Retrieves the imaginary part of a complex number.
 

@@ -10,7 +10,7 @@ f1_keywords: ["localeconv"]
 helpviewer_keywords: ["lconv type", "localeconv function", "locales, getting information on"]
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660
 ---
-# localeconv
+# `localeconv`
 
 Gets detailed information on locale settings.
 

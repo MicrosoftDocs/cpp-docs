@@ -10,7 +10,7 @@ f1_keywords: ["_strlwr", "wcslwr_l", "_ftcslwr", "mbslwr_l", "_mbslwr", "_wcslwr
 helpviewer_keywords: ["tcslwr function", "_strlwr function", "converting case", "string conversion [C++], case", "mbslwr function", "_strlwr_l function", "strlwr_l function", "_wcslwr function", "ftcslwr function", "strings [C++], case", "_tcslwr_l function", "_wcslwr_l function", "wcslwr_l function", "mbslwr_l function", "tcslwr_l function", "_tcslwr function", "converting case, CRT functions", "_ftcslwr function", "_mbslwr function", "case, converting", "strings [C++], converting case", "_mbslwr_l function"]
 ms.assetid: d279181d-2e7d-401f-ab44-6e7c2786a046
 ---
-# _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
+# `_strlwr`, `_wcslwr`, `_mbslwr`, `_strlwr_l`, `_wcslwr_l`, `_mbslwr_l`
 
 Converts a string to lowercase. More secure versions of these functions are available; see [`_strlwr_s`, `_strlwr_s_l`, `_mbslwr_s`, `_mbslwr_s_l`, `_wcslwr_s`, `_wcslwr_s_l`](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).
 

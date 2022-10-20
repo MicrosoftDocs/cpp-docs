@@ -10,7 +10,7 @@ f1_keywords: ["_searchenv_s", "_wsearchenv_s", "wsearchenv_s", "searchenv_s"]
 helpviewer_keywords: ["tsearchenv_s function", "files [C++], finding", "buffers [C++], buffer overruns", "environment paths, searching for files", "wsearchenv_s function", "searchenv_s function", "_tsearchenv_s function", "buffer overruns", "buffers [C++], avoiding overruns", "_wsearchenv_s function", "_searchenv_s function", "environment paths"]
 ms.assetid: 47f9fc29-250e-4c09-b52e-9e9f0ef395ca
 ---
-# _searchenv_s, _wsearchenv_s
+# `_searchenv_s`, `_wsearchenv_s`
 
 Searches for a file by using environment paths. These versions of [`_searchenv`, `_wsearchenv`](searchenv-wsearchenv.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

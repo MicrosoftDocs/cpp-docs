@@ -10,7 +10,7 @@ f1_keywords: ["wctomb"]
 helpviewer_keywords: ["string conversion, wide characters", "wide characters, converting", "_wctomb_l function", "wctomb function", "wctomb_l function", "characters, converting", "string conversion, multibyte character strings"]
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
 ---
-# wctomb, _wctomb_l
+# `wctomb`, `_wctomb_l`
 
 Convert a wide character to the corresponding multibyte character. More secure versions of these functions are available; see [`wctomb_s`, `_wctomb_s_l`](wctomb-s-wctomb-s-l.md).
 

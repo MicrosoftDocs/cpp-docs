@@ -10,7 +10,7 @@ f1_keywords: ["_ismbslead", "ismbs", "ismbslead_l", "_ismbs", "ismbstrail_l", "i
 helpviewer_keywords: ["ismbstrail function", "_ismbslead function", "ismbslead function", "ismbslead_l function", "_ismbstrail function", "_ismbslead_l function", "ismbstrail_l function", "_ismbstrail_l function"]
 ms.assetid: 86d2cd7a-3cff-443a-b713-14cc17a231e9
 ---
-# _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
+# `_ismbslead`, `_ismbstrail`, `_ismbslead_l`, `_ismbstrail_l`
 
 Performs context-sensitive tests for multibyte-character-string lead bytes and trail bytes and determines whether a given substring pointer points to a lead byte or a trail byte.
 

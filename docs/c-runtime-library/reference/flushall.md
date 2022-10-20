@@ -10,7 +10,7 @@ f1_keywords: ["_flushall"]
 helpviewer_keywords: ["flushall function", "flushing streams", "streams, flushing", "_flushall function"]
 ms.assetid: 2cd73562-6d00-4ca2-b13c-80d0ae7870b5
 ---
-# _flushall
+# `_flushall`
 
 Flushes all streams; clears all buffers.
 

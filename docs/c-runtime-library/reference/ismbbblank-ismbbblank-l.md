@@ -8,7 +8,7 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 ms.assetid: d21b2e41-7206-41f5-85bb-9c9ab4f3e21b
 ---
-# _ismbbblank, _ismbbblank_l
+# `_ismbbblank`, `_ismbbblank_l`
 
 Determines whether a specified multibyte character is a blank character.
 

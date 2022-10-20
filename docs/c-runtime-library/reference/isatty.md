@@ -10,7 +10,7 @@ f1_keywords: ["_isatty"]
 helpviewer_keywords: ["isatty function", "character device checking", "_isatty function", "checking character devices"]
 ms.assetid: 9f1b2e87-0cd7-4079-b187-f2b7ca15fcbe
 ---
-# _isatty
+# `_isatty`
 
 Determines whether a file descriptor is associated with a character device.
 

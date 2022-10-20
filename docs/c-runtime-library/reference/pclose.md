@@ -10,7 +10,7 @@ f1_keywords: ["_pclose", "pclose"]
 helpviewer_keywords: ["_pclose function", "pclose function", "pipes, closing"]
 ms.assetid: e2e31a9e-ba3a-4124-bcbb-c4040110b3d3
 ---
-# _pclose
+# `_pclose`
 
 Waits for a new command processor and closes the stream on the associated pipe.
 

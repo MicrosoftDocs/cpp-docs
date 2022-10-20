@@ -9,7 +9,7 @@ f1_keywords: ["feraiseexcept", "fenv/feraiseexcept"]
 helpviewer_keywords: ["feraiseexcept function"]
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
 ---
-# feraiseexcept
+# `feraiseexcept`
 
 Raises the specified floating-point exceptions.
 

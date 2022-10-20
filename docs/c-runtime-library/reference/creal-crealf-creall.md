@@ -10,7 +10,7 @@ f1_keywords: ["creal", "crealf", "creall", "complex/creal", "complex/crealf", "c
 helpviewer_keywords: ["creal function", "crealf function", "creall function"]
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
 ---
-# creal, crealf, creall
+# `creal`, `crealf`, `creall`
 
 Retrieves the real part of a complex number.
 

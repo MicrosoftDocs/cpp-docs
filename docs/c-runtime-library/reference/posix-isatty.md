@@ -10,7 +10,7 @@ f1_keywords: ["isatty"]
 helpviewer_keywords: ["isatty function"]
 ms.assetid: 610d0b09-a1db-41ef-9f45-a2c6076b4683
 ---
-# isatty
+# `isatty`
 
 The Microsoft-implemented POSIX function name `isatty` is a deprecated alias for the [`_isatty`](isatty.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

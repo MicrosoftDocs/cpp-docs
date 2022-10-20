@@ -10,7 +10,7 @@ f1_keywords: ["ismbbpunct", "ismbbpunct_l", "_ismbbpunct_l", "_ismbbpunct"]
 helpviewer_keywords: ["ismbbpunct function", "_ismbbpunct function", "ismbbpunct_l function", "_ismbbpunct_l function"]
 ms.assetid: 1976c9d3-7d1a-415f-ac52-2715c7bb56eb
 ---
-# _ismbbpunct, _ismbbpunct_l
+# `_ismbbpunct`, `_ismbbpunct_l`
 
 Determines whether a particular character is a punctuation character.
 

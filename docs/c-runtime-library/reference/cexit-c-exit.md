@@ -10,7 +10,7 @@ f1_keywords: ["_cexit", "c_exit", "_c_exit", "cexit"]
 helpviewer_keywords: ["cleanup operations during processes", "cexit function", "_c_exit function", "_cexit function", "c_exit function"]
 ms.assetid: f3072045-9924-4b1a-9fef-b0dcd6d12663
 ---
-# _cexit, _c_exit
+# `_cexit`, `_c_exit`
 
 Performs cleanup operations and returns without terminating the process.
 

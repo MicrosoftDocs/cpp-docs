@@ -10,7 +10,7 @@ f1_keywords: ["get_daylight", "_get_daylight"]
 helpviewer_keywords: ["get_daylight function", "daylight saving time offset", "_get_daylight function"]
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c
 ---
-# _get_daylight
+# `_get_daylight`
 
 Retrieves the daylight saving time offset in hours.
 

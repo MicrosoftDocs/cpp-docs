@@ -10,7 +10,7 @@ f1_keywords: ["kbhit"]
 helpviewer_keywords: ["kbhit function"]
 ms.assetid: 73f1eed7-b3ef-4887-8ec6-755367de1d7d
 ---
-# kbhit
+# `kbhit`
 
 The Microsoft-specific function name `kbhit` is a deprecated alias for the [`_kbhit`](kbhit.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

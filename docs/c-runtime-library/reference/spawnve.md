@@ -10,7 +10,7 @@ f1_keywords: ["spawnve"]
 helpviewer_keywords: ["spawnve function"]
 ms.assetid: 39507df8-f15f-45fb-b2b6-01359272b147
 ---
-# spawnve
+# `spawnve`
 
 The Microsoft-specific function name `spawnve` is a deprecated alias for the [`_spawnve`](spawnve-wspawnve.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

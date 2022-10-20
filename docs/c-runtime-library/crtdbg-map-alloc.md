@@ -6,7 +6,7 @@ f1_keywords: ["CRTDBG_MAP_ALLOC", "_CRTDBG_MAP_ALLOC"]
 helpviewer_keywords: ["_CRTDBG_MAP_ALLOC macro", "memory allocation, in debug builds", "CRTDBG_MAP_ALLOC macro"]
 ms.assetid: 435242b8-caea-4063-b765-4a608200312b
 ---
-# _CRTDBG_MAP_ALLOC
+# `_CRTDBG_MAP_ALLOC`
 
 When the **_CRTDBG_MAP_ALLOC** flag is defined in the debug version of an application, the base versions of the heap functions are directly mapped to their debug versions. The flag is used in Crtdbg.h to do the mapping. This flag is only available when the [`_DEBUG`](./debug.md) flag has been defined in the application.
 

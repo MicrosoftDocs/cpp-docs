@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_vcwprintf_l", "_vtcprintf", "vcwprintf", "_vcwprintf", "vcprintf_l", "_vcprintf_l", "_vcprintf", "vcprintf", "vcwprintf_l"]
 helpviewer_keywords: ["vcwprintf function", "_vcwprintf_l function", "_vcprintf function", "_vcprintf_l function", "vtcprintf_l function", "vcprintf function", "vcprintf_l function", "_vtcprintf function", "_vcwprintf function", "_vtcprintf_l function", "vcwprintf_l function", "vtcprintf function", "formatted text [C++]"]
 ---
-# _vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l
+# `_vcprintf`, `_vcprintf_l`, `_vcwprintf`, `_vcwprintf_l`
 
 Writes formatted output to the console by using a pointer to a list of arguments. More secure versions of these functions are available, see [`_vcprintf_s`, `_vcprintf_s_l`, `_vcwprintf_s`, `_vcwprintf_s_l`](vcprintf-s-vcprintf-s-l-vcwprintf-s-vcwprintf-s-l.md).
 

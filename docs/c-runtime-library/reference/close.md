@@ -10,7 +10,7 @@ f1_keywords: ["_close"]
 helpviewer_keywords: ["_close function", "close function", "files [C++], closing"]
 ms.assetid: 4708a329-8acf-4cd9-b7b0-a952e1897247
 ---
-# _close
+# `_close`
 
 Closes a file.
 

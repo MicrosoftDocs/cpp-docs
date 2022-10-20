@@ -10,7 +10,7 @@ f1_keywords: ["ecvt_s", "_ecvt_s"]
 helpviewer_keywords: ["_ecvt_s function", "ecvt_s function", "numbers, converting", "converting double numbers"]
 ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
 ---
-# _ecvt_s
+# `_ecvt_s`
 
 Converts a **`double`** number to a string. This function is a version of [`_ecvt`](ecvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

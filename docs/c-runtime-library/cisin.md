@@ -10,7 +10,7 @@ f1_keywords: ["CIsin", "_CIsin"]
 helpviewer_keywords: ["_CIsin intrinsic", "CIsin intrinsic"]
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
 ---
-# _CIsin
+# `_CIsin`
 
 Calculates the sine of the top value in the floating-point stack.
 

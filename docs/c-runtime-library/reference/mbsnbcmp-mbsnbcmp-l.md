@@ -10,7 +10,7 @@ f1_keywords: ["mbsnbcmp", "tcsnbmp", "_mbsnbcmp_l", "mbsnbcmp_l", "_mbsnbcmp"]
 helpviewer_keywords: ["mbsnbcmp_l function", "mbsnbcmp function", "tcsncmp function", "_mbsnbcmp_l function", "_tcsncmp function", "_mbsnbcmp function"]
 ms.assetid: dbc99e50-cf85-4e57-a13f-067591f18ac8
 ---
-# _mbsnbcmp, _mbsnbcmp_l
+# `_mbsnbcmp`, `_mbsnbcmp_l`
 
 Compares the first **n** bytes of two multibyte-character strings.
 

@@ -10,7 +10,7 @@ f1_keywords: ["ceil", "ceilf", "ceill"]
 helpviewer_keywords: ["calculating value ceilings", "ceill function", "ceil function", "ceilf function"]
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
 ---
-# ceil, ceilf, ceill
+# `ceil`, `ceilf`, `ceill`
 
 Calculates the ceiling of a value.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_iswcsym_l", "_iswcsymf_l", "iscsymf", "iswcsymf", "__iswcsym", "
 helpviewer_keywords: ["iscsymf_l function", "iswsym_l function", "_iswcsym_l function", "iscsym_l function", "_iscsymf_l function", "_iswcsymf_l function", "_iscsym_l function", "__iscsym function", "__iswcsymf function", "iswsymf_l function", "__iscsymf function", "__iswcsym function", "iscsym function", "iscsymf function"]
 ms.assetid: 944dfb99-f2b8-498c-9f55-dbcf370d0a2c
 ---
-# iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
+# `iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`
 
 Determine if an integer represents a character that may be used in an identifier.
 

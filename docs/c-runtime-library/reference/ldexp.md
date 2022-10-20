@@ -10,7 +10,7 @@ f1_keywords: ["ldexp", "ldexpf", "ldexpl", "_ldexpl"]
 helpviewer_keywords: ["calculating real numbers", "computing real numbers", "mantissas, floating-point variables", "ldexp function", "ldexpf function", "ldexpl function", "exponent, floating-point numbers", "floating-point functions, mantissa and exponent"]
 ms.assetid: aa7f5310-3879-4f63-ae74-86a39fbdedfa
 ---
-# ldexp, ldexpf, ldexpl
+# `ldexp`, `ldexpf`, `ldexpl`
 
 Multiplies a floating-point number by an integral power of two.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_setmbcp", "setmbcp"]
 helpviewer_keywords: ["setmbcp function", "_setmbcp function", "multibyte code pages"]
 ms.assetid: cfde53b5-0b73-4684-81b1-a8d3aafc85de
 ---
-# _setmbcp
+# `_setmbcp`
 
 Sets a new multibyte code page.
 

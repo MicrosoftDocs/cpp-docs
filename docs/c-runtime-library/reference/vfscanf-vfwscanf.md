@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vfwscanf", "_vftscanf", "vfscanf"]
 ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
 ---
-# vfscanf, vfwscanf
+# `vfscanf`, `vfwscanf`
 
 Reads formatted data from a stream. More secure versions of these functions are available; see [`vfscanf_s`, `vfwscanf_s`](vfscanf-s-vfwscanf-s.md).
 

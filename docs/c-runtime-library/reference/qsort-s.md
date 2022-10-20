@@ -10,7 +10,7 @@ f1_keywords: ["qsort_s"]
 helpviewer_keywords: ["arrays [C++], sorting", "quick-sort algorithm", "qsort_s function", "sorting arrays"]
 ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
 ---
-# qsort_s
+# `qsort_s`
 
 Performs a quick sort. A version of [`qsort`](qsort.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

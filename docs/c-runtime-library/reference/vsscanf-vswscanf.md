@@ -10,7 +10,7 @@ f1_keywords: ["_vstscanf", "vsscanf", "vswscanf"]
 helpviewer_keywords: ["vswscanf function", "vsscanf function"]
 ms.assetid: e96180f2-df46-423d-b4eb-0a49ab819bde
 ---
-# vsscanf, vswscanf
+# `vsscanf`, `vswscanf`
 
 Reads formatted data from a string. More secure versions of these functions are available; see [`vsscanf_s`, `vswscanf_s`](vsscanf-s-vswscanf-s.md).
 

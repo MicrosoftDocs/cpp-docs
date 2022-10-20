@@ -10,7 +10,7 @@ f1_keywords: ["_CIatan", "CIatan"]
 helpviewer_keywords: ["CIatan intrinsic", "_CIatan intrinsic"]
 ms.assetid: 3baa0429-fe46-4bab-8b00-868e2186dc8c
 ---
-# _CIatan
+# `_CIatan`
 
 Calculates the arctangent of the top value on the stack.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_chmod", "_wchmod", "wchmod"]
 helpviewer_keywords: ["_chmod function", "wchmod function", "file permissions [C++]", "chmod function", "files [C++], changing permissions", "_wchmod function"]
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
 ---
-# _chmod, _wchmod
+# `_chmod`, `_wchmod`
 
 Changes the file-permission settings.
 

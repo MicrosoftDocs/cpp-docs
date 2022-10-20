@@ -10,7 +10,7 @@ f1_keywords: ["nan", "nanl", "nanf"]
 helpviewer_keywords: ["nan function", "nanf function", "nanl function"]
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
 ---
-# nan, nanf, nanl
+# `nan`, `nanf`, `nanl`
 
 Returns a quiet NaN value.
 

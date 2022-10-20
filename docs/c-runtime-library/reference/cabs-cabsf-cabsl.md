@@ -10,7 +10,7 @@ f1_keywords: ["cabs", "cabsf", "cabsl", "complex/cabs", "complex/cabsf", "comple
 helpviewer_keywords: ["cabs function", "cabsf function", "cabsl function"]
 ms.assetid: 6b8eb453-cc8f-4972-bebf-351cbdfdfc15
 ---
-# cabs, cabsf, cabsl
+# `cabs`, `cabsf`, `cabsl`
 
 Retrieves the absolute value of a complex number.
 

@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_fread_nolock_s", "stdio/_fread_nolock_s"]
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
 ---
-# _fread_nolock_s
+# `_fread_nolock_s`
 
 Reads data from a stream, without locking other threads. This version of [`fread_nolock`](fread-nolock.md) has security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

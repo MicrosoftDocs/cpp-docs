@@ -10,7 +10,7 @@ f1_keywords: ["_CrtSetAllocHook", "CrtSetAllocHook"]
 helpviewer_keywords: ["_CrtSetAllocHook function", "CrtSetAllocHook function"]
 ms.assetid: 405df37b-2fd1-42c8-83bc-90887f17f29d
 ---
-# _CrtSetAllocHook
+# `_CrtSetAllocHook`
 
 Installs a client-defined allocation function by hooking it into the C run-time debug memory allocation process (debug version only).
 

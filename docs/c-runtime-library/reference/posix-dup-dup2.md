@@ -10,7 +10,7 @@ f1_keywords: ["dup", "dup2"]
 helpviewer_keywords: ["dup function", "dup2 function"]
 ms.assetid: c7572170-47ff-4e0d-b9c3-10f0ab0ba40a
 ---
-# dup, dup2
+# `dup`, `dup2`
 
 The Microsoft-implemented POSIX function names `dup` and `dup2` are deprecated aliases for the [`_dup`](dup-dup2.md) and [`_dup2`](dup-dup2.md) functions. By default, they generate [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The names are deprecated because they don't follow the Standard C rules for implementation-specific names. However, the functions are still supported.
 

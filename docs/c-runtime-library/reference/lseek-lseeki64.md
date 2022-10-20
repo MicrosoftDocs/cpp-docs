@@ -10,7 +10,7 @@ f1_keywords: ["_lseeki64", "_lseek", "lseeki64"]
 helpviewer_keywords: ["lseek function", "_lseek function", "_lseeki64 function", "lseeki64 function", "file pointers [C++], moving", "seek file pointers"]
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
 ---
-# _lseek, _lseeki64
+# `_lseek`, `_lseeki64`
 
 Moves a file pointer to the specified location.
 

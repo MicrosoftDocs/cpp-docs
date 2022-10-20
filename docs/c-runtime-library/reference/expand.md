@@ -10,7 +10,7 @@ f1_keywords: ["_bexpand", "fexpand", "expand", "nexpand", "_fexpand", "_nexpand"
 helpviewer_keywords: ["memory blocks, changing size", "_expand function", "expand function"]
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3
 ---
-# _expand
+# `_expand`
 
 Changes the size of a memory block.
 

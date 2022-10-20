@@ -10,7 +10,7 @@ f1_keywords: ["mbsnbcpy", "_mbsnbcpy", "mbsnbcpy_l", "_mbsnbcpy_l"]
 helpviewer_keywords: ["mbsnbcpy function", "_mbsnbcpy_l function", "_mbsnbcpy function", "_tcsncpy function", "tcsncpy_l function", "_tcsncpy_l function", "mbsnbcpy_l function", "tcsncpy function"]
 ms.assetid: 83d17b50-3cbf-4df9-bce8-3b6d52f85d04
 ---
-# _mbsnbcpy, _mbsnbcpy_l
+# `_mbsnbcpy`, `_mbsnbcpy_l`
 
 Copies **n** bytes of a string to a destination string. More secure versions of these functions are available—see [`_mbsnbcpy_s`, `_mbsnbcpy_s_l`](mbsnbcpy-s-mbsnbcpy-s-l.md).
 

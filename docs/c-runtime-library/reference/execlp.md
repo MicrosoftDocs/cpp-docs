@@ -10,7 +10,7 @@ f1_keywords: ["execlp"]
 helpviewer_keywords: ["execlp function"]
 ms.assetid: 68b19143-e7b1-49c6-89b5-084d0d66de9c
 ---
-# execlp
+# `execlp`
 
 The Microsoft-implemented POSIX function name `execlp` is a deprecated alias for the [`_execlp`](execlp-wexeclp.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

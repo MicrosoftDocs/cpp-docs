@@ -10,7 +10,7 @@ f1_keywords: ["setvbuf"]
 helpviewer_keywords: ["controlling stream buffering", "stream buffering", "setvbuf function"]
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
 ---
-# setvbuf
+# `setvbuf`
 
 Controls stream buffering and buffer size.
 

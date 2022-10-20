@@ -10,7 +10,7 @@ f1_keywords: ["_strdec", "mbsdec_l", "strdec", "_mbsdec", "_mbsdec_l", "mbsdec",
 helpviewer_keywords: ["mbsdec_l function", "mbsdec function", "tcsdec function", "_tcsdec function", "_strdec function", "_wcsdec function", "_mbsdec_l function", "strdec function", "wcsdec function", "_mbsdec function"]
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
 ---
-# _strdec, _wcsdec, _mbsdec, _mbsdec_l
+# `_strdec`, `_wcsdec`, `_mbsdec`, `_mbsdec_l`
 
 Moves a string pointer back one character.
 

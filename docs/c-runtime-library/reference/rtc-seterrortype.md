@@ -10,7 +10,7 @@ f1_keywords: ["RTC_SetErrorType", "_RTC_SetErrorType"]
 helpviewer_keywords: ["run-time errors", "RTC_SetErrorType function", "_RTC_SetErrorType function"]
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
 ---
-# _RTC_SetErrorType
+# `_RTC_SetErrorType`
 
 Associates an error that is detected by run-time error checks (RTCs) with a type. Your error handler processes how to output errors of the specified type.
 

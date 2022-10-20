@@ -5,7 +5,7 @@ ms.date: "01/31/2019"
 f1_keywords: ["isnormal", "math/isnormal"]
 helpviewer_keywords: ["isnormal function"]
 ---
-# isnormal
+# `isnormal`
 
 Determines whether a floating-point value is a normal value.
 

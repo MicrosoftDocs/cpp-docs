@@ -10,7 +10,7 @@ f1_keywords: ["lfind_s", "_lfind_s"]
 helpviewer_keywords: ["linear searching", "keys, finding in arrays", "lfind_s function", "arrays [CRT], searching", "searching, linear", "_lfind_s function"]
 ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
 ---
-# _lfind_s
+# `_lfind_s`
 
 Performs a linear search for the specified key. A version of [`_lfind`](lfind.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

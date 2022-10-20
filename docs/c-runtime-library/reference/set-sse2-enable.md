@@ -10,7 +10,7 @@ f1_keywords: ["_set_SSE2_enable", "set_SSE2_enable"]
 helpviewer_keywords: ["_set_SSE2_enable function", "Streaming SIMD Extensions 2 instructions", "set_SSE2_enable function"]
 ms.assetid: 55db895d-fc1e-475a-9110-b781a9bb51c5
 ---
-# _set_SSE2_enable
+# `_set_SSE2_enable`
 
 Enables or disables the use of Streaming SIMD Extensions 2 (SSE2) instructions in CRT math routines. (This function is not available on x64 architectures because SSE2 is enabled by default.)
 

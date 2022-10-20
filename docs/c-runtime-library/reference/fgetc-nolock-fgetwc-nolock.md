@@ -10,7 +10,7 @@ f1_keywords: ["_fgetwc_nolock", "fgettc_nolock", "fgetwc_nolock", "_fgetc_nolock
 helpviewer_keywords: ["fgetc_nolock function", "fgetwc_nolock function", "_fgetwc_nolock function", "characters, reading", "_fgetc_nolock function", "streams, reading characters from", "fgettc_nolock function", "reading characters from streams", "_fgettc_nolock function"]
 ms.assetid: fb8e7c5b-4503-493a-879e-6a1db75aa114
 ---
-# _fgetc_nolock, _fgetwc_nolock
+# `_fgetc_nolock`, `_fgetwc_nolock`
 
 Reads a character from a stream without locking the thread.
 

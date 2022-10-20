@@ -10,7 +10,7 @@ f1_keywords: ["CrtMemCheckpoint", "_CrtMemCheckpoint", "crtdbg/_CrtMemCheckpoint
 helpviewer_keywords: ["CrtMemCheckpoint function", "_CrtMemCheckpoint function"]
 ms.assetid: f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc
 ---
-# _CrtMemCheckpoint
+# `_CrtMemCheckpoint`
 
 Obtains the current state of the debug heap and stores in an application-supplied **_CrtMemState** structure (debug version only).
 

@@ -6,7 +6,7 @@ f1_keywords: ["_MAX_ENV", "MAX_ENV"]
 helpviewer_keywords: ["MAX_ENV constant", "_MAX_ENV constant"]
 ms.assetid: 66f0683e-6132-4297-b99b-6940534898b5
 ---
-# _MAX_ENV
+# `_MAX_ENV`
 
 The maximum permissible string length of an environmental variable.
 

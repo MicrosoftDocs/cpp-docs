@@ -10,7 +10,7 @@ f1_keywords: ["_heapset", "heapset"]
 helpviewer_keywords: ["checking heap", "heapset function", "heaps, checking", "debugging [CRT], heap-related problems", "_heapset function"]
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
 ---
-# _heapset
+# `_heapset`
 
 Checks heaps for minimal consistency and sets the free entries to a specified value.
 

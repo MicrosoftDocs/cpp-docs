@@ -6,7 +6,7 @@ f1_keywords: ["fmode", "_fmode"]
 helpviewer_keywords: ["file translation [C++], default mode", "fmode function", "_fmode function"]
 ms.assetid: ac6df9eb-e5cc-4c54-aff3-373c21983118
 ---
-# _fmode
+# `_fmode`
 
 The `_fmode` variable sets the default file-translation mode for text or binary translation. This global variable has been deprecated for the more secure functional versions [`_get_fmode`](./reference/get-fmode.md) and [`_set_fmode`](./reference/set-fmode.md), which should be used in place of the global variable. It's declared in Stdlib.h as follows.
 

@@ -10,7 +10,7 @@ f1_keywords: ["__p__commode"]
 helpviewer_keywords: ["__p__commode"]
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
 ---
-# __p__commode
+# `__p__commode`
 
 Points to the `_commode` global variable, which specifies the default *file commit mode* for file I/O operations.
 

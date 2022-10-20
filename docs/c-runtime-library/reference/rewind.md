@@ -10,7 +10,7 @@ f1_keywords: ["rewind"]
 helpviewer_keywords: ["rewind function", "repositioning file pointers", "file pointers [C++], repositioning", "file pointers [C++]"]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
 ---
-# rewind
+# `rewind`
 
 Repositions the file pointer to the beginning of a file.
 

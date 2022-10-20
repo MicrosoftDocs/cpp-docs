@@ -10,7 +10,7 @@ f1_keywords: ["putch"]
 helpviewer_keywords: ["putch function"]
 ms.assetid: 81e733e5-770e-4c7a-b7e4-8e66da109f92
 ---
-# putch
+# `putch`
 
 The Microsoft-specific function name `putch` is a deprecated alias for the [`_putch`](putch-putwch.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

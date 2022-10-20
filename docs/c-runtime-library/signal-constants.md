@@ -6,7 +6,7 @@ f1_keywords: ["SIGTERM", "SIGFPE", "SIGABRT", "SIGILL", "SIGINT", "SIGSEGV"]
 helpviewer_keywords: ["SIGTERM constant", "SIGABRT constant", "SIGSEGV constant", "SIGFPE constant", "SIGINT constant", "signal constants", "SIGILL constant"]
 ms.assetid: a3b39281-dae7-4e44-8d68-e6a610c669dd
 ---
-# signal constants
+# `signal` constants
 
 ## Syntax
 

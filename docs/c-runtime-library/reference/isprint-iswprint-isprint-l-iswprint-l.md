@@ -10,7 +10,7 @@ f1_keywords: ["iswprint", "_istprint", "isprint"]
 helpviewer_keywords: ["_istprint function", "iswprint function", "_iswprint_l function", "isprint_l function", "istprint function", "isprint function", "iswprint_l function", "_isprint_l function"]
 ms.assetid: a8bbcdb0-e8d0-4d8c-ae4e-56d3bdee6ca3
 ---
-# isprint, iswprint, _isprint_l, _iswprint_l
+# `isprint`, `iswprint`, `_isprint_l`, `_iswprint_l`
 
 Determines whether an integer represents a printable character.
 

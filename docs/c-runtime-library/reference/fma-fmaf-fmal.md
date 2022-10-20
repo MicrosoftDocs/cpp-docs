@@ -10,7 +10,7 @@ f1_keywords: ["fma", "fmaf", "fmal", "math/fma", "math/fmaf", "math/fmal"]
 helpviewer_keywords: ["fma function", "fmaf function", "fmal function"]
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
 ---
-# fma, fmaf, fmal
+# `fma`, `fmaf`, `fmal`
 
 Multiplies two values together, adds a third value, and then rounds the result, without losing any precision due to intermediary rounding.
 

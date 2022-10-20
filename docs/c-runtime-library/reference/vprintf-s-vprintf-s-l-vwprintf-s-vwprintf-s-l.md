@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vprintf_s", "vwprintf_s", "_vtprintf_s"]
 helpviewer_keywords: ["vwprintf_s_l function", "_vwprintf_s_l function", "vwprintf_s function", "_vtprintf_s_l function", "vprintf_s_l function", "vtprintf_s_l function", "_vtprintf_s function", "vtprintf_s function", "_vprintf_s_l function", "formatted text [C++]", "vprintf_s function"]
 ---
-# vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
+# `vprintf_s`, `_vprintf_s_l`, `vwprintf_s`, `_vwprintf_s_l`
 
 Writes formatted output by using a pointer to a list of arguments. These versions of [`vprintf`, `_vprintf_l`, `vwprintf`, `_vwprintf_l`](vprintf-vprintf-l-vwprintf-vwprintf-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

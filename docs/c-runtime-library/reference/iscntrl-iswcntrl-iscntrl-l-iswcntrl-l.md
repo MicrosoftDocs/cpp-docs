@@ -10,7 +10,7 @@ f1_keywords: ["_istcntrl_l", "_iswcntrl_l", "iswcntrl", "_iscntrl_l", "iscntrl",
 helpviewer_keywords: ["iscntrl function", "_iscntrl_l function", "_iswcntrl_l function", "_istcntrl function", "istcntrl function", "iswcntrl function", "_istcntrl_l function"]
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5
 ---
-# iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
+# `iscntrl`, `iswcntrl`, `_iscntrl_l`, `_iswcntrl_l`
 
 Determines whether an integer represents a control character.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_tcsncset_l", "mbsnset_l", "_tcsnset_l", "_fstrnset", "_wcsnset_l
 helpviewer_keywords: ["_wcsnset function", "strnset_l function", "tcsnset function", "tcsncset function", "characters [C++], initializing to formats", "mbsnset function", "_tcsnset_l function", "_mbsnset function", "_strnset function", "_tcsncset_l function", "mbsnset_l function", "_tcsnset function", "initializing characters", "_tcsncset function", "ftcsnset function", "wcsnset_l function", "_ftcsnset function", "_wcsnset_l function", "_fstrnset function", "_mbsnset_l function", "_strnset_l function", "fstrnset function", "strings [C++], initializing", "tcsnset_l function"]
 ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
 ---
-# _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
+# `_strnset`, `_strnset_l`, `_wcsnset`, `_wcsnset_l`, `_mbsnset`, `_mbsnset_l`
 
 Initializes characters of a string to a given character. More secure versions of these functions exist; see [`_strnset_s`, `_strnset_s_l`, `_wcsnset_s`, `_wcsnset_s_l`, `_mbsnset_s`, `_mbsnset_s_l`](strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md).
 

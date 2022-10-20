@@ -10,7 +10,7 @@ f1_keywords: ["_wstrtime", "_strtime", "wstrtime", "strtime", "_tstrtime"]
 helpviewer_keywords: ["strtime function", "_strtime function", "_wstrtime function", "copying time to buffers", "wstrtime function", "tstrtime function", "_tstrtime function", "time, copying"]
 ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
 ---
-# _strtime, _wstrtime
+# `_strtime`, `_wstrtime`
 
 Copy the time to a buffer. More secure versions of these functions are available; see [`_strtime_s`, `_wstrtime_s`](strtime-s-wstrtime-s.md).
 

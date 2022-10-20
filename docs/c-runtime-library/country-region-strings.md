@@ -4,7 +4,7 @@ description: "Learn more about: Country/Region Strings"
 ms.date: "1/29/2020"
 helpviewer_keywords: ["country/region strings"]
 ---
-# Country/Region Strings
+# Country/region strings
 
 Country and region strings can be combined with a language string to create a locale specification for the `setlocale`, `_wsetlocale`, `_create_locale`, and `_wcreate_locale` functions.
 

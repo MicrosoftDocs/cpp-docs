@@ -10,7 +10,7 @@ f1_keywords: ["CrtSetReportHookW2", "CrtSetReportHook2", "_CrtSetReportHookW2", 
 helpviewer_keywords: ["CrtSetReportHook2 function", "_CrtSetReportHook2 function", "_CrtSetReportHookW2 function", "CrtSetReportHookW2 function"]
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
 ---
-# _CrtSetReportHook2, _CrtSetReportHookW2
+# `_CrtSetReportHook2`, `_CrtSetReportHookW2`
 
 Installs or uninstalls a client-defined reporting function by hooking it into the C run-time debug reporting process (debug version only).
 

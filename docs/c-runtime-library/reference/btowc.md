@@ -10,7 +10,7 @@ f1_keywords: ["btowc"]
 helpviewer_keywords: ["btowc function"]
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
 ---
-# btowc
+# `btowc`
 
 Determine whether an integer represents a valid single-byte character in the initial shift state.
 

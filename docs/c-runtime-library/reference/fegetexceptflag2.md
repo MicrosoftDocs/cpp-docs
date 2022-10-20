@@ -10,7 +10,7 @@ f1_keywords: ["fegetexceptflag", "fenv/fegetexceptflag"]
 helpviewer_keywords: ["fegetexceptflag function"]
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
 ---
-# fegetexceptflag
+# `fegetexceptflag`
 
 Stores the current state of the specified floating-point exception flags.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_fgettc", "fgetwc", "fgetc"]
 helpviewer_keywords: ["fgettc function", "characters, reading", "_fgettc function", "fgetc function", "streams, reading characters from", "reading characters from streams", "fgetwc function"]
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
 ---
-# fgetc, fgetwc
+# `fgetc`, `fgetwc`
 
 Read a character from a stream.
 

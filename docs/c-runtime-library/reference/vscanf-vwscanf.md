@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vscanf", "vwscanf", "_vtscanf"]
 ms.assetid: d1df595b-11bc-4682-9441-a92616301e3b
 ---
-# vscanf, vwscanf
+# `vscanf`, `vwscanf`
 
 Reads formatted data from the standard input stream. More secure versions of these function are available; see [`vscanf_s`, `vwscanf_s`](vscanf-s-vwscanf-s.md).
 

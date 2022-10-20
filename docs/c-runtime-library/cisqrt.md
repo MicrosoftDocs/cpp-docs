@@ -10,7 +10,7 @@ f1_keywords: ["_CIsqrt", "CIsqrt"]
 helpviewer_keywords: ["CIsqrt intrinsic", "_CIsqrt intrinsic"]
 ms.assetid: 663548ea-398c-48ee-8397-a787c6ebb937
 ---
-# _CIsqrt
+# `_CIsqrt`
 
 Calculates the square root of the top value in the stack.
 

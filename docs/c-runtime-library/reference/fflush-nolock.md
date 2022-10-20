@@ -10,7 +10,7 @@ f1_keywords: ["fflush_nolock", "_fflush_nolock"]
 helpviewer_keywords: ["fflush_nolock function", "_fflush_nolock function", "streams, flushing", "flushing"]
 ms.assetid: 5e33c4a1-b10c-4001-ad01-210757919291
 ---
-# _fflush_nolock
+# `_fflush_nolock`
 
 Flushes a stream without locking the thread.
 

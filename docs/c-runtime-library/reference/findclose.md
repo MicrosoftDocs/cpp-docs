@@ -10,7 +10,7 @@ f1_keywords: ["_findclose", "findclose"]
 helpviewer_keywords: ["_findclose function", "findclose function"]
 ms.assetid: 9216c573-0878-444c-b5d7-cdaf16fb9163
 ---
-# _findclose
+# `_findclose`
 
 Closes the specified search handle and releases associated resources.
 

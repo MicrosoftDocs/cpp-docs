@@ -10,7 +10,7 @@ f1_keywords: ["strxfrm", "_tcsxfrm", "wcsxfrm"]
 helpviewer_keywords: ["strxfrm_l function", "_tcsxfrm function", "_strxfrm_l function", "strxfrm function", "wcsxfrm_l function", "wcsxfrm function", "string comparison [C++], transforming strings", "tcsxfrm function", "strings [C++], comparing locale", "_wcsxfrm_l function"]
 ms.assetid: 6ba8e1f6-4484-49aa-83b8-bc2373187d9e
 ---
-# strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
+# `strxfrm`, `wcsxfrm`, `_strxfrm_l`, `_wcsxfrm_l`
 
 Transform a string based on locale-specific information.
 

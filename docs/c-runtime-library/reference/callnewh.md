@@ -10,7 +10,7 @@ f1_keywords: ["_callnewh"]
 helpviewer_keywords: ["_callnewh"]
 ms.assetid: 4dcb73e9-6384-4d12-a973-a8807d4de7a8
 ---
-# _callnewh
+# `_callnewh`
 
 Calls the currently installed *new handler*.
 

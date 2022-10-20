@@ -10,7 +10,7 @@ f1_keywords: ["ismbblead_l", "istlead", "_ismbblead", "_ismbblead_l", "ismbblead
 helpviewer_keywords: ["_ismbblead_l function", "ismbblead function", "_ismbblead function", "istlead function", "ismbblead_l function", "_istlead function"]
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
 ---
-# _ismbblead, _ismbblead_l
+# `_ismbblead`, `_ismbblead_l`
 
 Tests a character to determine whether it's a lead byte of a multibyte character.
 

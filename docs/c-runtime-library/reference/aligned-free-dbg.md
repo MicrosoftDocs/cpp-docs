@@ -10,7 +10,7 @@ f1_keywords: ["_aligned_free_dbg", "aligned_free_dbg"]
 helpviewer_keywords: ["_aligned_free_dbg function", "aligned_free_dbg function"]
 ms.assetid: eb0cb3c8-0992-4db8-bac3-65f1b8311ca6
 ---
-# _aligned_free_dbg
+# `_aligned_free_dbg`
 
 Frees a block of memory that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md) (debug only).
 

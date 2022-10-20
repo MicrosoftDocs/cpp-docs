@@ -9,7 +9,7 @@ f1_keywords: ["To"]
 helpviewer_keywords: ["to functions", "string conversion, to different characters", "string conversion, case", "lowercase, converting strings", "uppercase, converting strings", "case, converting", "characters, converting"]
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
 ---
-# `to` Functions
+# `to` functions
 
 Each of the **`to`** functions and its associated macro, if any, converts a single character to another character.
 

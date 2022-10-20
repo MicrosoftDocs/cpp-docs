@@ -10,7 +10,7 @@ f1_keywords: ["aligned_realloc_dbg", "_aligned_realloc_dbg"]
 helpviewer_keywords: ["_aligned_realloc_dbg function", "aligned_realloc_dbg function"]
 ms.assetid: 8aede920-991e-44cd-867f-83dc2165db47
 ---
-# _aligned_realloc_dbg
+# `_aligned_realloc_dbg`
 
 Changes the size of a memory block that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md) (debug version only).
 

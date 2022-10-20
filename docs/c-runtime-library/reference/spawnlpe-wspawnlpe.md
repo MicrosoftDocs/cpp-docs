@@ -10,7 +10,7 @@ f1_keywords: ["_wspawnlpe", "_spawnlpe", "wspawnlpe"]
 helpviewer_keywords: ["_wspawnlpe function", "wspawnlpe function", "processes, creating", "spawnlpe function", "_spawnlpe function", "processes, executing new", "process creation"]
 ms.assetid: e171ebfa-70e7-4c44-8331-2a291fc17bd6
 ---
-# _spawnlpe, _wspawnlpe
+# `_spawnlpe`, `_wspawnlpe`
 
 Creates and executes a new process.
 

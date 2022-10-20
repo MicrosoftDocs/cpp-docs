@@ -6,7 +6,7 @@ f1_keywords: ["SIG_IGN", "SIG_DFL"]
 helpviewer_keywords: ["signal action constants", "SIG_IGN constant", "SIG_DFL constant"]
 ms.assetid: c3cb4f15-d39e-4d9d-84f9-0d33e3eb5993
 ---
-# signal action constants
+# `signal` action constants
 
 The action taken when the interrupt signal is received depends on the value of `func`.
 

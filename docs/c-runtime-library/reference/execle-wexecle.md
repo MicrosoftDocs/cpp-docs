@@ -10,7 +10,7 @@ f1_keywords: ["wexecle", "_execle", "_wexecle"]
 helpviewer_keywords: ["wexecle function", "execle function", "_wexecle function", "_execle function"]
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
 ---
-# _execle, _wexecle
+# `_execle`, `_wexecle`
 
 Loads and executes new child processes.
 

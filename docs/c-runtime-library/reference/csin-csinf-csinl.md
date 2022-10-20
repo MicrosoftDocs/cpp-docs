@@ -10,7 +10,7 @@ f1_keywords: ["csin", "csinf", "csinl", "complex/csin", "complex/csinf", "comple
 helpviewer_keywords: ["csin function", "csinf function", "csinl function"]
 ms.assetid: 3ed475e8-9aae-42ba-a25c-7ae656a0fd4d
 ---
-# csin, csinf, csinl
+# `csin`, `csinf`, `csinl`
 
 Retrieves the sine of a complex number.
 

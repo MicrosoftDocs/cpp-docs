@@ -10,7 +10,7 @@ f1_keywords: ["_putch_nolock", "_puttch_nolock", "putch_nolock", "putwch_nolock"
 helpviewer_keywords: ["putwch_nolock function", "puttch_nolock function", "characters, writing", "putch_nolock function", "_putch_nolock function", "_puttch_nolock function", "console, writing characters to", "_putwch_nolock function"]
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
 ---
-# _putch_nolock, _putwch_nolock
+# `_putch_nolock`, `_putwch_nolock`
 
 Writes a character to the console without locking the thread.
 

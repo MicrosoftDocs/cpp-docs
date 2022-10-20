@@ -10,7 +10,7 @@ f1_keywords: ["_wstrtime_s", "strtime_s", "wstrtime_s", "_strtime_s"]
 helpviewer_keywords: ["wstrtime_s function", "copying time to buffers", "strtime_s function", "_wstrtime_s function", "time, copying", "_strtime_s function"]
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
 ---
-# _strtime_s, _wstrtime_s
+# `_strtime_s`, `_wstrtime_s`
 
 Copy the current time to a buffer. These are versions of [`_strtime`, `_wstrtime`](strtime-wstrtime.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

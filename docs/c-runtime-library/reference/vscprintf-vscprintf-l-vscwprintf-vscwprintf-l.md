@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vscprintf_l", "vscwpeintf", "_vscwprintf", "_vsctprintf", "_vscprintf", "vscwprintf_l", "vscprintf", "_vscwprintf_l"]
 helpviewer_keywords: ["vsctprintf function", "_vscprintf_l function", "_vsctprintf_l function", "_vsctprintf function", "_vscwprintf_l function", "vscwprintf_l function", "_vscprintf function", "_vscwprintf function", "vscwprintf function", "vsctprintf_l function", "formatted text [C++]", "vscprintf function", "vscprintf_l function"]
 ---
-# _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
+# `_vscprintf`, `_vscprintf_l`, `_vscwprintf`, `_vscwprintf_l`
 
 Returns the number of characters in the formatted string using a pointer to a list of arguments.
 

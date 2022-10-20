@@ -10,7 +10,7 @@ f1_keywords: ["_wcstoull_l", "_tcstoull", "_tcstoull_l", "wcstoull", "_strtoull_
 helpviewer_keywords: ["strtoull function", "_tcstoull_l function", "_tcstoull function", "_wcstoull_l function", "_strtoull_l function", "wcstoull function"]
 ms.assetid: 36dac1cc-e901-40a0-8802-63562d6d01df
 ---
-# strtoull, _strtoull_l, wcstoull, _wcstoull_l
+# `strtoull`, `_strtoull_l`, `wcstoull`, `_wcstoull_l`
 
 Converts strings to an **`unsigned long long`** integer value.
 

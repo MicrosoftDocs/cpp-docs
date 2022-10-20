@@ -10,7 +10,7 @@ f1_keywords: ["_ungettc", "ungetwc", "ungetc"]
 helpviewer_keywords: ["ungetwc function", "ungettc function", "characters, pushing back onto stream", "_ungettc function", "ungetc function"]
 ms.assetid: e0754f3a-b4c6-408f-90c7-e6387b830d84
 ---
-# ungetc, ungetwc
+# `ungetc`, `ungetwc`
 
 Pushes a character back onto the stream.
 

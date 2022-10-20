@@ -10,7 +10,7 @@ f1_keywords: ["CrtGetAllocHook", "_CrtGetAllocHook"]
 helpviewer_keywords: ["_CrtGetAllocHook function", "CrtGetAllocHook function"]
 ms.assetid: 036acf7c-547a-4b3f-a636-80451070d7ed
 ---
-# _CrtGetAllocHook
+# `_CrtGetAllocHook`
 
 Retrieves the current client-defined allocation function for hooking into the C run-time debug memory allocation process (debug version only).
 

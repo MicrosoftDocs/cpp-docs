@@ -10,7 +10,7 @@ f1_keywords: ["mbsnbcpy_s_l", "_mbsnbcpy_s", "mbsnbcpy_s", "_mbsnbcpy_s_l"]
 helpviewer_keywords: ["_mbsnbcpy_s function", "tcsncpy_s function", "mbsnbcpy_s_l function", "_tcsncpy_s_l function", "mbsnbcpy_s function", "tcsncpy_s_l function", "_mbsnbcpy_s_l function", "_tcsncpy_s function"]
 ms.assetid: dfff64ab-fe6f-49c4-99ba-75014e2b0cd6
 ---
-# _mbsnbcpy_s, _mbsnbcpy_s_l
+# `_mbsnbcpy_s`, `_mbsnbcpy_s_l`
 
 Copies **n** bytes of a string to a destination string. These versions of [`_mbsnbcpy`, `_mbsnbcpy_l`](mbsnbcpy-mbsnbcpy-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

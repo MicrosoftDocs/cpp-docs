@@ -10,7 +10,7 @@ f1_keywords: ["_tzset"]
 helpviewer_keywords: ["_tzset function", "time environment variables", "environment variables, setting time"]
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
 ---
-# _tzset
+# `_tzset`
 
 Sets time environment variables.
 

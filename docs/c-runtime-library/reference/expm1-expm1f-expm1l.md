@@ -10,7 +10,7 @@ f1_keywords: ["expm1l", "expm1", "expm1f"]
 helpviewer_keywords: ["expm1f function", "expm1l function", "expm1 function"]
 ms.assetid: 2a4dd2d9-370c-42b0-9067-0625efa272e0
 ---
-# expm1, expm1f, expm1l
+# `expm1`, `expm1f`, `expm1l`
 
 Computes the base-e exponential of a value, minus one.
 

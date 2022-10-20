@@ -10,7 +10,7 @@ f1_keywords: ["wcslwr", "strlwr"]
 helpviewer_keywords: ["strlwr function", "wcslwr function"]
 ms.assetid: b9274824-4365-4674-b656-823c89653656
 ---
-# strlwr, wcslwr
+# `strlwr`, `wcslwr`
 
 The Microsoft-specific function names `strlwr` and `wcslwr` are deprecated aliases for the [`_strlwr` and `_wcslwr`](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md) functions. By default, they generate [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The names are deprecated because they don't follow the Standard C rules for implementation-specific names. However, the functions are still supported.
 

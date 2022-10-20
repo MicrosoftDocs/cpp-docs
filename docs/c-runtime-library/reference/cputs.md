@@ -10,7 +10,7 @@ f1_keywords: ["cputs"]
 helpviewer_keywords: ["cputs function"]
 ms.assetid: 0c2a7d4e-623a-4cb2-a0f9-1900c05bac08
 ---
-# cputs
+# `cputs`
 
 The Microsoft-specific function name `cputs` is a deprecated alias for the [`_cputs`](cputs-cputws.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

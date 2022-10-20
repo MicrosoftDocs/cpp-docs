@@ -10,7 +10,7 @@ f1_keywords: ["fcvt_s", "_fcvt_s"]
 helpviewer_keywords: ["fcvt_s function", "converting floating point, to strings", "floating-point functions, converting number to string", "_fcvt_s function"]
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
 ---
-# _fcvt_s
+# `_fcvt_s`
 
 Converts a floating-point number to a string. This function is a version of [`_fcvt`](fcvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

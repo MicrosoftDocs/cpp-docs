@@ -6,7 +6,7 @@ f1_keywords: ["HEAP_MAXREQ", "_HEAP_MAXREQ"]
 helpviewer_keywords: ["HEAP_MAXREQ constants", "_HEAP_MAXREQ constants", "heap constants"]
 ms.assetid: c2dbc2ea-35ad-45d8-b459-d76ba0089ff7
 ---
-# _HEAP_MAXREQ
+# `_HEAP_MAXREQ`
 
 ## Syntax
 

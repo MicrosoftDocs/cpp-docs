@@ -10,7 +10,7 @@ f1_keywords: ["pwctype", "pctype", "mbctype", "mbcasemap", "_mbcasemap", "_mbcty
 helpviewer_keywords: ["_wctype function", "_pwctype function", "_pctype function", "_mbctype function", "wctype function", "pwctype function", "pctype function", "mbcasemap function", "mbctype function", "_mbcasemap function"]
 ms.assetid: 7f5e1107-c43b-4b9b-b387-781e6d2373cb
 ---
-# _pctype, _pwctype, _wctype, _mbctype, _mbcasemap
+# `_pctype`, `_pwctype`, `_wctype`, `_mbctype`, `_mbcasemap`
 
 These global variables contain information used by the character classification functions. They are for internal use only.
 

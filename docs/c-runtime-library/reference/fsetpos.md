@@ -10,7 +10,7 @@ f1_keywords: ["fsetpos"]
 helpviewer_keywords: ["streams, setting position indicators", "fsetpos function"]
 ms.assetid: 6d19ff48-1a2b-47b3-9f23-ed0a47b5a46e
 ---
-# fsetpos
+# `fsetpos`
 
 Sets the stream-position indicator.
 

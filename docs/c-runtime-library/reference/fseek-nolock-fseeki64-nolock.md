@@ -10,7 +10,7 @@ f1_keywords: ["_fseek_nolock", "_fseeki64_nolock", "fseek_nolock", "fseeki64_nol
 helpviewer_keywords: ["_fseek_nolock function", "fseeki64_nolock function", "file pointers [C++], moving", "fseek_nolock function", "_fseeki64_nolock function", "seek file pointers"]
 ms.assetid: 2dd4022e-b715-462b-b935-837561605a02
 ---
-# _fseek_nolock, _fseeki64_nolock
+# `_fseek_nolock`, `_fseeki64_nolock`
 
 Moves the file pointer to a specified location.
 

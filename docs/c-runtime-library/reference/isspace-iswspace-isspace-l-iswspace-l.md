@@ -10,7 +10,7 @@ f1_keywords: ["iswspace", "_istspace", "isspace"]
 helpviewer_keywords: ["iswspace function", "isspace function", "_iswspace_l function", "_isspace_l function", "iswspace_l function", "isspace_l function", "_istspace function", "istspace function"]
 ms.assetid: b851e0c0-36bb-4dac-a1a3-533540939035
 ---
-# isspace, iswspace, _isspace_l, _iswspace_l
+# `isspace`, `iswspace`, `_isspace_l`, `_iswspace_l`
 
 Determines whether an integer represents a space character.
 

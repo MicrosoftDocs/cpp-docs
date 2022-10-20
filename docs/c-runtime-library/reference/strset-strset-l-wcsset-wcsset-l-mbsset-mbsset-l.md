@@ -10,7 +10,7 @@ f1_keywords: ["mbsset", "_strset_l", "_mbsset", "_strset", "mbsset_l", "strset_l
 helpviewer_keywords: ["_wcsset_l function", "_tcsset function", "wcsset_l function", "_ftcsset function", "characters [C++], setting", "_strset function", "ftcsset function", "strings [C++], setting characters", "mbsset function", "tcsset_l function", "_fstrset function", "mbsset_l function", "strset_l function", "_wcsset function", "_mbsset function", "_mbsset_l function", "tcsset function", "_strset_l function", "fstrset function", "_tcsset_l function"]
 ms.assetid: c42ded42-2ed9-4f06-a0a9-247ba305473a
 ---
-# _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
+# `_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`
 
 Sets characters of a string to a character. More secure versions of these functions are available; see [`_strset_s`, `_strset_s_l`, `_wcsset_s`, `_wcsset_s_l`, `_mbsset_s`, `_mbsset_s_l`](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md).
 

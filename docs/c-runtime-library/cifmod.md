@@ -10,7 +10,7 @@ f1_keywords: ["_CIfmod", "CIfmod"]
 helpviewer_keywords: ["CIfmod intrinsic", "_CIfmod intrinsic"]
 ms.assetid: 7c050653-7ec6-4810-b3a7-7a0057ea65ed
 ---
-# _CIfmod
+# `_CIfmod`
 
 Calculates the floating-point remainder of the top two values on the stack.
 

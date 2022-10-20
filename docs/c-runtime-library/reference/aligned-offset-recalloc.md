@@ -10,7 +10,7 @@ f1_keywords: ["aligned_offset_recalloc", "_aligned_offset_recalloc"]
 helpviewer_keywords: ["aligned_offset_recalloc function", "_aligned_offset_recalloc function"]
 ms.assetid: a258f54e-eeb4-4853-96fc-007d710f98e9
 ---
-# _aligned_offset_recalloc
+# `_aligned_offset_recalloc`
 
 Changes the size of a memory block that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md) and initializes the memory to 0.
 

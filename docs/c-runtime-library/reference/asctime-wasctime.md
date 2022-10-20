@@ -10,7 +10,7 @@ f1_keywords: ["_tasctime", "asctime", "_wasctime"]
 helpviewer_keywords: ["asctime function", "tasctime function", "wasctime function", "_tasctime function", "_wasctime function", "time structure conversion", "time, converting"]
 ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
 ---
-# asctime, _wasctime
+# `asctime`, `_wasctime`
 
 Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md).
 

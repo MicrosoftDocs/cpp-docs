@@ -10,7 +10,7 @@ f1_keywords: ["RTC_SetErrorFunc", "_RTC_SetErrorFunc"]
 helpviewer_keywords: ["RTC_SetErrorFunc function", "_RTC_SetErrorFunc function"]
 ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
 ---
-# _RTC_SetErrorFunc
+# `_RTC_SetErrorFunc`
 
 Designates a function as the handler for reporting run-time error checks (RTCs). This function is deprecated; use **_RTC_SetErrorFuncW** instead.
 

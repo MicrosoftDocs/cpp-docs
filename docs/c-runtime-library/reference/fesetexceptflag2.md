@@ -10,7 +10,7 @@ f1_keywords: ["fesetexceptflag", "fenv/fesetexceptflag"]
 helpviewer_keywords: ["fesetexceptflag function"]
 ms.assetid: 2f7dad77-9e54-4097-a3e3-35176ace4de5
 ---
-# fesetexceptflag
+# `fesetexceptflag`
 
 Sets the specified floating-point status flags in the current floating-point environment.
 

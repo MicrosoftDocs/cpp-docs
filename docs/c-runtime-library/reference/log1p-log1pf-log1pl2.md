@@ -10,7 +10,7 @@ f1_keywords: ["log1p", "log1pf", "log1pl", "math/log1p", "math/log1pf", "math/lo
 helpviewer_keywords: ["log1p function", "log1pf function", "log1pl function"]
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
 ---
-# log1p, log1pf, log1pl
+# `log1p`, `log1pf`, `log1pl`
 
 Computes the natural logarithm of 1 plus the specified value.
 

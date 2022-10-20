@@ -9,7 +9,7 @@ f1_keywords: ["vprintf"]
 helpviewer_keywords: ["vprintf function", "formatted text [C++]"]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
 ---
-# vprintf Functions
+# `vprintf` functions
 
 Each of the `vprintf` functions takes a pointer to an argument list, then formats and writes the given data to a particular destination. The functions differ in several ways: in the parameter validation, whether the functions take single-byte or wide character strings, the output destination, and the support for specifying the order parameters are used in the format string.
 

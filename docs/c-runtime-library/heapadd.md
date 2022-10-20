@@ -10,7 +10,7 @@ f1_keywords: ["heapadd", "_heapadd"]
 helpviewer_keywords: ["_heapadd function", "memory, adding to heaps", "heaps, adding memory", "heapadd function"]
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
 ---
-# _heapadd
+# `_heapadd`
 
 Adds memory to the heap.
 

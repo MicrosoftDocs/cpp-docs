@@ -10,7 +10,7 @@ f1_keywords: ["__setusermatherr"]
 helpviewer_keywords: ["__setusermatherr"]
 ms.assetid: f306818d-381a-4d68-8739-71b92bacb5ea
 ---
-# __setusermatherr
+# `__setusermatherr`
 
 Specifies a user-supplied routine to handle math errors, instead of the [`_matherr`](./reference/matherr.md) routine.
 

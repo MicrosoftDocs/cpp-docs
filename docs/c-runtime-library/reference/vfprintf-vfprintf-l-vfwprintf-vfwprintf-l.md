@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vfwprintf", "_vftprintf", "vfprintf"]
 helpviewer_keywords: ["_vfwprintf_l function", "_vftprintf function", "vfprintf function", "_vftprintf_l function", "vfprintf_l function", "vftprintf_l function", "vfwprintf_l function", "vftprintf function", "vfwprintf function", "_vfprintf_l function", "formatted text [C++]"]
 ---
-# vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l
+# `vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`
 
 Write formatted output using a pointer to a list of arguments. More secure versions of these functions exist; see [`vfprintf_s`, `_vfprintf_s_l`, `vfwprintf_s`, `_vfwprintf_s_l`](vfprintf-s-vfprintf-s-l-vfwprintf-s-vfwprintf-s-l.md).
 

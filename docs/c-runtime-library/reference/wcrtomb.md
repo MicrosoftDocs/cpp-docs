@@ -10,7 +10,7 @@ f1_keywords: ["wcrtomb"]
 helpviewer_keywords: ["wide characters, converting", "wcrtomb function", "multibyte characters", "characters, converting"]
 ms.assetid: 717f1b21-2705-4b7f-b6d0-82adc5224340
 ---
-# wcrtomb
+# `wcrtomb`
 
 Convert a wide character into its multibyte character representation. A more secure version of this function is available; see [`wcrtomb_s`](wcrtomb-s.md).
 

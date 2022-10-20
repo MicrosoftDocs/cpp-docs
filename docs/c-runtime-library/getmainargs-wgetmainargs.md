@@ -10,7 +10,7 @@ f1_keywords: ["__wgetmainargs", "__getmainargs"]
 helpviewer_keywords: ["__wgetmainargs", "__getmainargs"]
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
 ---
-# __getmainargs, __wgetmainargs
+# `__getmainargs`, `__wgetmainargs`
 
 Invokes command-line parsing and copies the arguments to `main()` back through the passed pointers.
 

@@ -10,7 +10,7 @@ f1_keywords: ["strncat_s_l", "_mbsncat_s_l", "_tcsncat_s", "wcsncat_s", "wcsncat
 helpviewer_keywords: ["concatenating strings", "_mbsncat_s function", "mbsncat_s_l function", "_tcsncat_s function", "_mbsncat_s_l function", "strncat_s function", "strings [C++], appending", "strncat_s_l function", "string concatenation [C++]", "_tcsncat_s_l function", "wcsncat_s function", "appending strings", "wcsncat_s_l function", "mbsncat_s function"]
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
 ---
-# strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
+# `strncat_s`, `_strncat_s_l`, `wcsncat_s`, `_wcsncat_s_l`, `_mbsncat_s`, `_mbsncat_s_l`
 
 Appends characters to a string. These versions of [`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

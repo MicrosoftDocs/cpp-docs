@@ -10,7 +10,7 @@ f1_keywords: ["_local_unwind2", "local_unwind2"]
 helpviewer_keywords: ["_local_unwind2 function", "local_unwind2 function"]
 ms.assetid: 44f1fa82-e01e-490f-a6e6-18fc6811c28c
 ---
-# _local_unwind2
+# `_local_unwind2`
 
 Internal CRT Function. Runs all termination handlers that are listed in the indicated scope table.
 

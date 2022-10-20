@@ -10,7 +10,7 @@ f1_keywords: ["c16rtomb", "c32rtomb", "uchar/c16rtomb", "uchar/c32rtomb"]
 helpviewer_keywords: ["c16rtomb function", "c32rtomb function"]
 ms.assetid: 7f5743ca-a90e-4e3f-a310-c73e16f4e14d
 ---
-# c16rtomb, c32rtomb
+# `c16rtomb`, `c32rtomb`
 
 Convert a UTF-16 or UTF-32 wide character into a UTF-8 multibyte character.
 

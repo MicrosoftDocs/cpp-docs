@@ -10,7 +10,7 @@ f1_keywords: ["mbtowc"]
 helpviewer_keywords: ["mbtowc function", "_mbtowc_l function", "mbtowc_l function"]
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
 ---
-# mbtowc, _mbtowc_l
+# `mbtowc`, `_mbtowc_l`
 
 Convert a multibyte character to a corresponding wide character.
 

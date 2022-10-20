@@ -10,7 +10,7 @@ f1_keywords: ["wfullpath_dbg", "_wfullpath_dbg", "_fullpath_dbg", "fullpath_dbg"
 helpviewer_keywords: ["_fullpath_dbg function", "relative file paths", "absolute paths", "fullpath_dbg function", "_wfullpath_dbg function", "wfullpath_dbg function"]
 ms.assetid: 81f72f85-07da-4f5c-866a-598e0fb03f6b
 ---
-# _fullpath_dbg, _wfullpath_dbg
+# `_fullpath_dbg`, `_wfullpath_dbg`
 
 Versions of [`_fullpath`, `_wfullpath`](fullpath-wfullpath.md) that use the debug version of **malloc** to allocate memory.
 

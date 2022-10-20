@@ -10,7 +10,7 @@ f1_keywords: ["__toascii", "toascii", "ctype/toascii", "ctype/__toascii"]
 helpviewer_keywords: ["toascii function", "string conversion, to ASCII characters", "__toascii function", "ASCII characters, converting to"]
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c
 ---
-# toascii, __toascii
+# `toascii`, `__toascii`
 
 Converts characters to 7-bit ASCII by truncation.
 
