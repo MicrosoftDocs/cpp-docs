@@ -10,7 +10,7 @@ f1_keywords: ["_fread_nolock", "fread_nolock"]
 helpviewer_keywords: ["reading data [C++], from input streams", "data [C++], reading from input stream", "fread_nolock function", "_fread_nolock function", "streams [C++], reading data from"]
 ms.assetid: 60e4958b-1097-46f5-a77b-94af5e7dba40
 ---
-# _fread_nolock
+# `_fread_nolock`
 
 Reads data from a stream, without locking other threads.
 

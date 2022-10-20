@@ -10,7 +10,7 @@ f1_keywords: ["CrtCheckMemory", "_CrtCheckMemory"]
 helpviewer_keywords: ["_CrtCheckMemory function", "CrtCheckMemory function"]
 ms.assetid: 457cc72e-60fd-4177-ab5c-6ae26a420765
 ---
-# _CrtCheckMemory
+# `_CrtCheckMemory`
 
 Confirms the integrity of the memory blocks allocated in the debug heap (debug version only).
 

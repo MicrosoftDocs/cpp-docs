@@ -10,7 +10,7 @@ f1_keywords: ["mbsbtype", "mbsbtype_l", "_mbsbtype_l", "_mbsbtype"]
 helpviewer_keywords: ["_mbsbtype function", "mbsbtype function", "_mbsbtype_l function", "mbsbtype_l function"]
 ms.assetid: 0d5dd91a-d32d-4f98-ac57-98dfc9e98eac
 ---
-# _mbsbtype, _mbsbtype_l
+# `_mbsbtype`, `_mbsbtype_l`
 
 Returns the type of byte within a string.
 

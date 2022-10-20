@@ -10,7 +10,7 @@ f1_keywords: ["_ftelli64_nolock", "ftelli64_nolock", "ftell_nolock", "_ftell_nol
 helpviewer_keywords: ["ftelli64_nolock function", "_ftelli64_nolock function", "_ftell_nolock function", "ftell_nolock function", "file pointers [C++], getting current position"]
 ms.assetid: 84e68b0a-32f8-4c4a-90ad-3f2387685ede
 ---
-# _ftell_nolock, _ftelli64_nolock
+# `_ftell_nolock`, `_ftelli64_nolock`
 
 Gets the current position of a file pointer, without locking the thread.
 

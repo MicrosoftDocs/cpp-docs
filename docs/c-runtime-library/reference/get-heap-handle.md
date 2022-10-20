@@ -10,7 +10,7 @@ f1_keywords: ["_get_heap_handle", "get_heap_handle"]
 helpviewer_keywords: ["heap functions", "memory allocation, heap memory", "_get_heap_handle function", "get_heap_handle function"]
 ms.assetid: a4d05049-8528-494a-8281-a470d1e1115c
 ---
-# _get_heap_handle
+# `_get_heap_handle`
 
 Returns the handle of the heap that's used by the C run-time system.
 

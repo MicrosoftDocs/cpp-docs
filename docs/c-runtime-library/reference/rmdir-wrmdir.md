@@ -10,7 +10,7 @@ f1_keywords: ["trmdir", "_trmdir", "wrmdir", "_rmdir", "_wrmdir"]
 helpviewer_keywords: ["_rmdir function", "directories [C++], deleting", "rmdir function", "directories [C++], removing", "trmdir function", "_trmdir function", "_wrmdir function", "wrmdir function"]
 ms.assetid: 652c2a5a-b0ac-4493-864e-1edf484333c5
 ---
-# _rmdir, _wrmdir
+# `_rmdir`, `_wrmdir`
 
 Deletes a directory.
 

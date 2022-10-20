@@ -10,7 +10,7 @@ f1_keywords: ["_putts", "_putws", "puts"]
 helpviewer_keywords: ["strings [C++], writing", "_putts function", "standard output, writing to", "putws function", "puts function", "putts function", "_putws function"]
 ms.assetid: 32dada12-ed45-40ac-be06-3feeced9ecd6
 ---
-# puts, _putws
+# `puts`, `_putws`
 
 Writes a string to **stdout**.
 

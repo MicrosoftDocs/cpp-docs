@@ -10,7 +10,7 @@ f1_keywords: ["_locking"]
 helpviewer_keywords: ["locking function", "bytes [C++], locking file", "files [C++], locking bytes", "files [C++], locking", "_locking function"]
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
 ---
-# _locking
+# `_locking`
 
 Locks or unlocks bytes of a file.
 

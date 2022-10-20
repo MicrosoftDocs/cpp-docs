@@ -10,7 +10,7 @@ f1_keywords: ["set_controlfp", "_set_controlfp"]
 helpviewer_keywords: ["set_controlfp function", "floating-point functions, setting control word", "_set_controlfp function"]
 ms.assetid: e0689d50-f68a-4028-a9c1-fb23eedee4ad
 ---
-# _set_controlfp
+# `_set_controlfp`
 
 Sets the floating-point control word.
 

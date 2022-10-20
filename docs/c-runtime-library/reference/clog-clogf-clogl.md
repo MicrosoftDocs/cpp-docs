@@ -10,7 +10,7 @@ f1_keywords: ["clog", "clogf", "clogl", "complex/clog", "complex/clogf", "comple
 helpviewer_keywords: ["clog function", "clogf function", "clogl function"]
 ms.assetid: 870b9b0b-6618-46f3-bfcf-da595cbd5e18
 ---
-# clog, clogf, clogl
+# `clog`, `clogf`, `clogl`
 
 Retrieves the natural logarithm of a complex number, with a branch cut along the negative real axis.
 

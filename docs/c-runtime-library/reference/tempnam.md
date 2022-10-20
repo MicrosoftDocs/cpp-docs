@@ -10,7 +10,7 @@ f1_keywords: ["tempnam"]
 helpviewer_keywords: ["tempnam function"]
 ms.assetid: 42446733-f131-470f-b4d0-96918becab11
 ---
-# tempnam
+# `tempnam`
 
 The Microsoft-implemented POSIX function name `tempnam` is a deprecated alias for the [`_tempnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_fwrite_nolock", "fwrite_nolock"]
 helpviewer_keywords: ["fwrite_nolock function", "streams, writing data to", "_fwrite_nolock function"]
 ms.assetid: 2b4ec6ce-742e-4615-8407-44a0a18ec1d7
 ---
-# _fwrite_nolock
+# `_fwrite_nolock`
 
 Writes data to a stream, without locking the thread.
 

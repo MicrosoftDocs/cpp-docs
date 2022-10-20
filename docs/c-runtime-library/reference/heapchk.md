@@ -10,7 +10,7 @@ f1_keywords: ["_heapchk", "heapchk"]
 helpviewer_keywords: ["debugging [CRT], heap-related problems", "consistency checking of heaps", "heapchk function", "heaps, checking consistency", "_heapchk function"]
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
 ---
-# _heapchk
+# `_heapchk`
 
 Runs consistency checks on the heap.
 

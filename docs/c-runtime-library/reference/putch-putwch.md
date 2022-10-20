@@ -10,7 +10,7 @@ f1_keywords: ["_putch", "putwch", "_putwch"]
 helpviewer_keywords: ["_putch function", "characters, writing", "putwch function", "_putwch function", "putch function", "console, writing characters to"]
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
 ---
-# _putch, _putwch
+# `_putch`, `_putwch`
 
 Writes a character to the console.
 

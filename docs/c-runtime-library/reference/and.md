@@ -9,7 +9,7 @@ f1_keywords: ["And", "std.and", "std::and"]
 helpviewer_keywords: ["and macro"]
 ms.assetid: 2644ab57-8e1b-48f0-9021-cafe3e26bdc4
 ---
-# and
+# `and`
 
 An alternative to the && operator.
 

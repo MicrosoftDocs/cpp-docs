@@ -10,7 +10,7 @@ f1_keywords: ["mbrlen"]
 helpviewer_keywords: ["mbrlen function"]
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1
 ---
-# mbrlen
+# `mbrlen`
 
 Determine the number of bytes that are required to complete a multibyte character in the current locale, with the capability of restarting in the middle of a multibyte character.
 

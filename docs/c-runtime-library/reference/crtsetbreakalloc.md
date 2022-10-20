@@ -10,7 +10,7 @@ f1_keywords: ["CrtSetBreakAlloc", "_CrtSetBreakAlloc"]
 helpviewer_keywords: ["CrtSetBreakAlloc function", "_CrtSetBreakAlloc function"]
 ms.assetid: 33bfc6af-a9ea-405b-a29f-1c2d4d9880a1
 ---
-# _CrtSetBreakAlloc
+# `_CrtSetBreakAlloc`
 
 Sets a breakpoint on a specified object allocation order number (debug version only).
 

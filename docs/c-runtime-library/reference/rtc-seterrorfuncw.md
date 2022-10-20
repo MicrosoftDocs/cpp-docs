@@ -10,7 +10,7 @@ f1_keywords: ["_RTC_SetErrorFuncW", "RTC_SetErrorFuncW"]
 helpviewer_keywords: ["run-time errors", "RTC_SetErrorFuncW function", "_RTC_error_fnW typedef", "_RTC_SetErrorFuncW function", "RTC_error_fnW typedef"]
 ms.assetid: b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a
 ---
-# _RTC_SetErrorFuncW
+# `_RTC_SetErrorFuncW`
 
 Designates a function as the handler for the reporting of run-time error checks (RTCs).
 

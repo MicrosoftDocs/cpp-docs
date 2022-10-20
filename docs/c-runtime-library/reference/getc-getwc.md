@@ -10,7 +10,7 @@ f1_keywords: ["_gettc", "getwc", "_gettchar", "getc"]
 helpviewer_keywords: ["characters, reading", "_gettc function", "getwchar function", "streams, reading characters from", "reading characters from streams", "getc function", "getwc function", "gettc function"]
 ms.assetid: 354ef514-d0c7-404b-92f5-995f6a834bb3
 ---
-# getc, getwc
+# `getc`, `getwc`
 
 Read a character from a stream.
 

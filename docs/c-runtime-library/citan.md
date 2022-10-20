@@ -10,7 +10,7 @@ f1_keywords: ["_CItan", "CItan"]
 helpviewer_keywords: ["CItan intrinsic", "_CItan intrinsic"]
 ms.assetid: d1ea3113-50a2-45a6-b6bc-680fcdcc0928
 ---
-# _CItan
+# `_CItan`
 
 Calculates the tangent of the top value on the floating-point stack.
 

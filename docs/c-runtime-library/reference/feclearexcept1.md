@@ -10,7 +10,7 @@ f1_keywords: ["feclearexcept", "fenv/feclearexcept"]
 helpviewer_keywords: ["feclearexcept function"]
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
 ---
-# feclearexcept
+# `feclearexcept`
 
 **`feclearexcept`** attempts to clear the floating-point exception flags specified by the argument.
 

@@ -10,7 +10,7 @@ f1_keywords: ["catan", "catanf", "catanl", "complex/catan", "complex/catanf", "c
 helpviewer_keywords: ["catan function", "catanf function", "catanl function"]
 ms.assetid: 8415ed9c-7909-4d08-b532-4630bafdc7e8
 ---
-# catan, catanf, catanl
+# `catan`, `catanf`, `catanl`
 
 Retrieves the arctangent of a complex number with branch cuts outside the interval [-1; +1] along the imaginary axis.
 

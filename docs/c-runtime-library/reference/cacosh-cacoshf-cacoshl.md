@@ -10,7 +10,7 @@ f1_keywords: ["cacosh", "cacoshf", "cacoshl", "complex/cacosh", "complex/cacoshf
 helpviewer_keywords: ["cacosh function", "cacoshf function", "cacoshl function"]
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
 ---
-# cacosh, cacoshf, cacoshl
+# `cacosh`, `cacoshf`, `cacoshl`
 
 Retrieves the inverse hyperbolic cosine of a complex number with a branch cut at values less than 1 along the real axis.
 

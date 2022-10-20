@@ -10,7 +10,7 @@ f1_keywords: ["_filelength", "_filelengthi64", "filelengthi64"]
 helpviewer_keywords: ["filelengthi64 function", "lengths, file", "filelength function", "_filelength function", "files [C++], length", "_filelengthi64 function"]
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
 ---
-# _filelength, _filelengthi64
+# `_filelength`, `_filelengthi64`
 
 Gets the length of a file.
 

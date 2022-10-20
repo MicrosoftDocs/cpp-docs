@@ -10,7 +10,7 @@ f1_keywords: ["_commit", "commit"]
 helpviewer_keywords: ["files [C++], flushing", "flushing files to disk", "commit function", "_commit function", "committing files to disk"]
 ms.assetid: d0c74d3a-4f2d-4fb0-b140-2d687db3d233
 ---
-# _commit
+# `_commit`
 
 Flushes a file directly to disk.
 

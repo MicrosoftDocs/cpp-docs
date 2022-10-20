@@ -10,7 +10,7 @@ f1_keywords: ["create_locale", "_create_locale", "__create_locale"]
 helpviewer_keywords: ["locales, creating", "_create_locale function", "create_locale function", "__create_locale function"]
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
 ---
-# _create_locale, _wcreate_locale
+# `_create_locale`, `_wcreate_locale`
 
 Creates a locale object.
 

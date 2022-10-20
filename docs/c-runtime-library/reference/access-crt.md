@@ -10,7 +10,7 @@ f1_keywords: ["access"]
 helpviewer_keywords: ["access function"]
 ms.assetid: 65197793-bd0a-41c3-9c29-18de2d95d9a6
 ---
-# access (CRT)
+# `access` (CRT)
 
 The Microsoft-implemented POSIX function name `access` is a deprecated alias for the [`_access`](access-waccess.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

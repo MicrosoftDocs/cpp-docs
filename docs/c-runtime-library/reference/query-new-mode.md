@@ -10,7 +10,7 @@ f1_keywords: ["query_new_mode", "_query_new_mode"]
 helpviewer_keywords: ["query_new_mode function", "handler modes", "_query_new_mode function"]
 ms.assetid: e185c5f9-b73b-4257-8eff-b47648374768
 ---
-# _query_new_mode
+# `_query_new_mode`
 
 Returns an integer indicating the new handler mode set by **_set_new_mode** for **malloc**.
 

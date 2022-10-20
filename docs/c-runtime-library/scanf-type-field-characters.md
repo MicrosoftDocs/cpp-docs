@@ -4,7 +4,7 @@ title: "scanf Type Field Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scanf function, type field characters"]
 ---
-# `scanf` Type Field Characters
+# `scanf` type field characters
 
 The following information applies to any of the `scanf` family of functions, including the secure versions, such as `scanf_s`.
 

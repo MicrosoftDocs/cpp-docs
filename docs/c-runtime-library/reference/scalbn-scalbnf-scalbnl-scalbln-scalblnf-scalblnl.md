@@ -10,7 +10,7 @@ f1_keywords: ["scalblnf", "scalbnl", "scalblnl", "scalbln", "scalbn", "scalbnf"]
 helpviewer_keywords: ["scalbn function", "scalbln function", "scalblnl function", "scalbnl function", "scalbnf function", "scalblnf function"]
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
 ---
-# scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
+# `scalbn`, `scalbnf`, `scalbnl`, `scalbln`, `scalblnf`, `scalblnl`
 
 Multiplies a floating-point number by an integral power of FLT_RADIX.
 

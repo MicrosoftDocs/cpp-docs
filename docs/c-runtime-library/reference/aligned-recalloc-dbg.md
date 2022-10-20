@@ -10,7 +10,7 @@ f1_keywords: ["_aligned_recalloc_dbg", "aligned_recalloc_dbg"]
 helpviewer_keywords: ["aligned_recalloc_dbg function", "_aligned_recalloc_dbg function"]
 ms.assetid: 55c3c27e-561c-4d6b-9bf9-1e34cc556e4b
 ---
-# _aligned_recalloc_dbg
+# `_aligned_recalloc_dbg`
 
 Changes the size of a memory block that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md) and initializes the memory to 0 (debug version only).
 

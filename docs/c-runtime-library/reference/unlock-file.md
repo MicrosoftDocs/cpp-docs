@@ -10,7 +10,7 @@ f1_keywords: ["_unlock_file", "unlock_file"]
 helpviewer_keywords: ["files [C++], unlocking", "unlock_file function", "_unlock_file function", "unlocking files"]
 ms.assetid: cf380a51-6d3a-4f38-bd64-2d4fb57b4369
 ---
-# _unlock_file
+# `_unlock_file`
 
 Unlocks a file, allowing other processes to access the file.
 

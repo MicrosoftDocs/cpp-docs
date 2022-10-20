@@ -10,7 +10,7 @@ f1_keywords: ["towctrans"]
 helpviewer_keywords: ["towctrans function"]
 ms.assetid: 1ed1e70d-7b31-490f-a7d9-42564b5924ca
 ---
-# towctrans
+# `towctrans`
 
 Transforms a character.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_istleadbyte", "_isleadbyte_l", "isleadbyte"]
 helpviewer_keywords: ["lead bytes", "_isleadbyte_l function", "_istleadbyte function", "istleadbyte function", "isleadbyte function"]
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
 ---
-# isleadbyte, _isleadbyte_l
+# `isleadbyte`, `_isleadbyte_l`
 
 Determines whether a character is the lead byte of a multibyte character.
 

@@ -10,7 +10,7 @@ f1_keywords: ["wcsnicmp_l", "_strnicmp", "_ftcsnicmp", "mbsnicmp_l", "_ftcsncicm
 helpviewer_keywords: ["tcsnicmp function", "_tcsncicmp function", "_mbsnicmp_l function", "mbsnicmp_l function", "wcsnicmp_l function", "wcsnicmp function", "string comparison [C++], lowercase", "ftcsnicmp function", "strnicmp_l function", "strncmp function", "_strnicmp function", "strings [C++], comparing characters of", "_wcsnicmp_l function", "tcsncicmp function", "string comparison [C++], strncmp function", "_mbsnicmp function", "ftcsncicmp function", "_tcsnicmp function", "_ftcsncicmp function", "_strnicmp_l function", "_ftcsnicmp function", "characters [C++], comparing", "mbsnicmp function", "_wcsnicmp function"]
 ms.assetid: df6e5037-4039-4c85-a0a6-21d4ef513966
 ---
-# _strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
+# `_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`
 
 Compares the specified number of characters of two strings without regard to case.
 

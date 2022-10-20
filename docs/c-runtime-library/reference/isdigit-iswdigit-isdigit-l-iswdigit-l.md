@@ -10,7 +10,7 @@ f1_keywords: ["_iswdigit_l", "_isdigit_l", "iswdigit", "isdigit", "_istdigit", "
 helpviewer_keywords: ["iswdigit function", "iswdigit_l function", "_iswdigit_l function", "_istdigit_l function", "_istdigit function", "istdigit function", "isdigit function", "isdigit_l function", "_ismbcdigit_l function", "_isdigit_l function"]
 ms.assetid: 350b0093-843a-47b0-954e-c1776e8a3853
 ---
-# isdigit, iswdigit, _isdigit_l, _iswdigit_l
+# `isdigit`, `iswdigit`, `_isdigit_l`, `_iswdigit_l`
 
 Determines whether an integer represents a decimal-digit character.
 

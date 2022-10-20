@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["vcwprintf_p", "vcprintf_p_l", "_vcprintf_p", "_vcprintf_p_l", "vcwprintf_p_l", "vcprintf_p", "_vcwprintf_p", "_vcwprintf_p_l"]
 helpviewer_keywords: ["_vtcprintf_p_l function", "vcprintf_p_l function", "_vcprintf_p_l function", "vtcprintf_p_l function", "vcprintf_p function", "_vcwprintf_p function", "_vcprintf_p function", "vcwprintf_p function", "vcwprintf_p_l function", "vtcprintf_p function", "_vcwprintf_p_l function", "_vtcprintf_p function"]
 ---
-# _vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
+# `_vcprintf_p`, `_vcprintf_p_l`, `_vcwprintf_p`, `_vcwprintf_p_l`
 
 Writes formatted output to the console by using a pointer to a list of arguments, and supports positional parameters in the format string.
 

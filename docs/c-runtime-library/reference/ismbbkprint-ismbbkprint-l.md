@@ -10,7 +10,7 @@ f1_keywords: ["_ismbbkprint_l", "ismbbkprint", "_ismbbkprint", "ismbbkprint_l"]
 helpviewer_keywords: ["_ismbbkprint function", "ismbbkprint_l function", "ismbbkprint function", "_ismbbkprint_l function"]
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
 ---
-# _ismbbkprint, _ismbbkprint_l
+# `_ismbbkprint`, `_ismbbkprint_l`
 
 Determines whether a particular multibyte character is a punctuation symbol.
 

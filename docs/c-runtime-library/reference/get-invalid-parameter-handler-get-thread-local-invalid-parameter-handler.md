@@ -10,7 +10,7 @@ f1_keywords: ["_get_invalid_parameter_handler", "stdlib/_get_invalid_parameter_h
 helpviewer_keywords: ["_get_thread_local_invalid_parameter_handler function", "_get_invalid_parameter_handler function"]
 ms.assetid: a176da0e-38ca-4d99-92bb-b0e2b8072f53
 ---
-# _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
+# `_get_invalid_parameter_handler`, `_get_thread_local_invalid_parameter_handler`
 
 Gets the function that is called when the CRT detects an invalid argument.
 

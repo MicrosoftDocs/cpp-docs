@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["swprintf_s", "sprintf_s", "stdio/sprintf_s", "stdio/swprintf_s", "stdio/_sprintf_s_l", "stdio/_swprintf_s_l", "_sprintf_s_l", "_swprintf_s_l"]
 helpviewer_keywords: ["stprintf_s function", "stprintf_s_l function", "swprintf_s_l function", "sprintf_s function", "swprintf_s function", "_swprintf_s_l function", "sprintf_s_l function", "_stprintf_s_l function", "_stprintf_s function", "_sprintf_s_l function", "formatted text [C++]"]
 ---
-# sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
+# `sprintf_s`, `_sprintf_s_l`, `swprintf_s`, `_swprintf_s_l`
 
 Write formatted data to a string. These are versions of [`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

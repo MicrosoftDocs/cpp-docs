@@ -10,7 +10,7 @@ f1_keywords: ["_CrtSetReportHook", "CrtSetReportHook"]
 helpviewer_keywords: ["CrtSetReportHook function", "_CrtSetReportHook function"]
 ms.assetid: 1ae7c64f-8c84-4797-9574-b59f00f7a509
 ---
-# _CrtSetReportHook
+# `_CrtSetReportHook`
 
 Installs a client-defined reporting function by hooking it into the C run-time debug reporting process (debug version only).
 

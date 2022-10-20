@@ -10,7 +10,7 @@ f1_keywords: ["_get_doserrno", "get_doserrno"]
 helpviewer_keywords: ["get_doserrno function", "_get_doserrno function"]
 ms.assetid: 7fec7be3-6e39-4181-846b-8ef24489361c
 ---
-# _get_doserrno
+# `_get_doserrno`
 
 Gets the error value returned by the operating system before it is translated into an **errno** value.
 

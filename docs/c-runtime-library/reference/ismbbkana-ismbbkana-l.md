@@ -10,7 +10,7 @@ f1_keywords: ["_ismbbkana_l", "ismbbkana_l", "ismbbkana", "_ismbbkana"]
 helpviewer_keywords: ["_ismbbkana_l function", "_ismbbkana function", "ismbbkana function", "ismbbkana_l function"]
 ms.assetid: 64d4eb4a-205a-40ef-be35-ff9d77fabbaf
 ---
-# _ismbbkana, _ismbbkana_l
+# `_ismbbkana`, `_ismbbkana_l`
 
 Tests for a katakana symbol and is specific to code page 932.
 

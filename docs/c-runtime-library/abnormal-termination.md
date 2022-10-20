@@ -10,7 +10,7 @@ f1_keywords: ["_abnormal_termination"]
 helpviewer_keywords: ["_abnormal_termination"]
 ms.assetid: 952970a4-9586-4c3d-807a-db729448c91c
 ---
-# _abnormal_termination
+# `_abnormal_termination`
 
 Indicates whether the **`__finally`** block of a [try-finally statement](../cpp/try-finally-statement.md) is entered while the system is executing an internal list of termination handlers.
 

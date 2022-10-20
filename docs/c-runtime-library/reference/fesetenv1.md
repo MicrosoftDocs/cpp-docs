@@ -10,7 +10,7 @@ f1_keywords: ["fesetenv", "fenv/fesetenv"]
 helpviewer_keywords: ["fesetenv function"]
 ms.assetid: ffc64fff-8ea7-4d59-9e04-ff96ef8cd012
 ---
-# fesetenv
+# `fesetenv`
 
 Sets the current floating-point environment.
 

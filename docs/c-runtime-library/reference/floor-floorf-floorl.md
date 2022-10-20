@@ -10,7 +10,7 @@ f1_keywords: ["floor", "floorl", "_floorl", "floorf"]
 helpviewer_keywords: ["floor function", "floorf function", "calculating floors of values", "floorl function"]
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
 ---
-# floor, floorf, floorl
+# `floor`, `floorf`, `floorl`
 
 Calculates the floor of a value.
 

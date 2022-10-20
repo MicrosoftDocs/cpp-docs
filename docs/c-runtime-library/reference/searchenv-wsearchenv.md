@@ -10,7 +10,7 @@ f1_keywords: ["_wsearchenv", "_tsearchenv", "wsearchenv", "_searchenv", "searche
 helpviewer_keywords: ["_wsearchenv function", "files [C++], finding", "_searchenv function", "tsearchenv function", "environment paths, searching for files", "_tsearchenv function", "wsearchenv function", "searchenv function", "environment paths"]
 ms.assetid: 9c944a27-d326-409b-aee6-410e8762d9d3
 ---
-# _searchenv, _wsearchenv
+# `_searchenv`, `_wsearchenv`
 
 Uses environment paths to search for a file. More secure versions of these functions are available; see [`_searchenv_s`, `_wsearchenv_s`](searchenv-s-wsearchenv-s.md).
 

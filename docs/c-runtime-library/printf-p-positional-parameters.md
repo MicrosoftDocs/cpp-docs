@@ -8,7 +8,7 @@ topic_type: ["apiref"]
 helpviewer_keywords: ["_printf_p function, positional parameters", "printf_p function, positional parameters"]
 ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
 ---
-# printf_p Positional Parameters
+# `printf_p` positional parameters
 
 Positional parameters let you specify by number the argument to substitute into a field in a format string. The following positional parameter `printf` functions are available:
 

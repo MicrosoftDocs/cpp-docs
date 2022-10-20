@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["scprintf", "_scprintf_l", "_scwprintf_l", "_scprintf", "scwprintf", "_scwprintf", "scprintf_l", "_sctprintf_l", "scwprintf_l", "_sctprintf"]
 helpviewer_keywords: ["scprintf function", "sctprintf_l function", "scwprintf_l function", "_scwprintf_l function", "_sctprintf_l function", "sctprintf function", "_scwprintf function", "_scprintf_l function", "_sctprintf function", "scprintf_l function", "formatted text [C++]", "_scprintf function", "scwprintf function"]
 ---
-# _scprintf, _scprintf_l, _scwprintf, _scwprintf_l
+# `_scprintf`, `_scprintf_l`, `_scwprintf`, `_scwprintf_l`
 
 Returns the number of characters in the formatted string.
 

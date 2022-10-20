@@ -10,7 +10,7 @@ f1_keywords: ["lc_codepage_func", "___lc_codepage_func"]
 helpviewer_keywords: ["___lc_codepage_func"]
 ms.assetid: 6a663bd0-5a63-4a2f-9507-872ec1582aae
 ---
-# ___lc_codepage_func
+# `___lc_codepage_func`
 
 Internal CRT function. Retrieves the current code page of the thread.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_getw"]
 helpviewer_keywords: ["_getw function", "integers, getting from streams", "getw function"]
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
 ---
-# _getw
+# `_getw`
 
 Gets an integer from a stream.
 

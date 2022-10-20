@@ -10,7 +10,7 @@ f1_keywords: ["wcsnset", "strnset"]
 helpviewer_keywords: ["strnset function", "wcsnset function"]
 ms.assetid: e7868ac9-dc34-4606-bd3c-0fb2e7c51631
 ---
-# strnset, wcsnset
+# `strnset`, `wcsnset`
 
 The Microsoft-specific function names `strnset` and `wcsnset` are deprecated aliases for the [`_strnset` and `_wcsnset`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) functions. By default, they generate [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The names are deprecated because they don't follow the Standard C rules for implementation-specific names. However, the functions are still supported.
 

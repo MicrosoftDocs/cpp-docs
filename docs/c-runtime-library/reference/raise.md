@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["Raise"]
 helpviewer_keywords: ["signals, sending to executing programs", "raise function", "signals", "programs [C++], sending signals to executing programs"]
 ---
-# raise
+# `raise`
 
 Sends a signal to the executing program.
 

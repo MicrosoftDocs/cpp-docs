@@ -9,7 +9,7 @@ f1_keywords: ["_STATIC_ASSERT"]
 helpviewer_keywords: ["_STATIC_ASSERT macro"]
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
 ---
-# _STATIC_ASSERT Macro
+# `_STATIC_ASSERT` macro
 
 Evaluate an expression at compile time and generate an error when the result is **FALSE**.
 

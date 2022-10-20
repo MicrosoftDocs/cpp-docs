@@ -10,7 +10,7 @@ f1_keywords: ["norm", "normf", "norml", "complex/norm", "complex/normf", "comple
 helpviewer_keywords: ["norm function", "normf function", "norml function"]
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
 ---
-# norm, normf, norml
+# `norm`, `normf`, `norml`
 
 Retrieves the squared magnitude of a complex number.
 

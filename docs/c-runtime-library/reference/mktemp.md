@@ -10,7 +10,7 @@ f1_keywords: ["mktemp"]
 helpviewer_keywords: ["mktemp function"]
 ms.assetid: b58cba60-034f-4e63-b312-ccbcd489d0a7
 ---
-# mktemp
+# `mktemp`
 
 The Microsoft-specific function name `mktemp` is a deprecated alias for the [`_mktemp`](mktemp-wmktemp.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

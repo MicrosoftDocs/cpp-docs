@@ -10,7 +10,7 @@ f1_keywords: ["set_errno", "_set_errno"]
 helpviewer_keywords: ["errno global variable", "set_errno function", "_set_errno function"]
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
 ---
-# _set_errno
+# `_set_errno`
 
 Set the value of the **errno** global variable.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_mbsnbicmp", "mbsnbicmp", "mbsnbicmp_l", "_mbsnbicmp_l"]
 helpviewer_keywords: ["_tcsnicmp_l function", "_strnicmp function", "mbsnbicmp_l function", "_wcsnicmp_l function", "_mbsnbicmp function", "_mbsnbicmp_l function", "_tcsnicmp function", "_strnicmp_l function", "mbsnbicmp function", "_wcsnicmp function"]
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
 ---
-# _mbsnbicmp, _mbsnbicmp_l
+# `_mbsnbicmp`, `_mbsnbicmp_l`
 
 Compares **n** bytes of two multibyte-character strings, and ignores case.
 

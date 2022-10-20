@@ -10,7 +10,7 @@ f1_keywords: ["CrtGetDumpClient", "_CrtGetDumpClient"]
 helpviewer_keywords: ["_CrtGetDumpClient function", "CrtGetDumpClient function"]
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
 ---
-# _CrtGetDumpClient
+# `_CrtGetDumpClient`
 
 Retrieves the current application-defined function for dumping the **_CLIENT_BLOCK** type memory blocks (debug version only).
 

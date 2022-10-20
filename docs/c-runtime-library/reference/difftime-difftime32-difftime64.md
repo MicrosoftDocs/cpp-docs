@@ -10,7 +10,7 @@ f1_keywords: ["_difftime64", "difftime", "difftime64", "_difftime32", "difftime3
 helpviewer_keywords: ["_difftime32 function", "difftime function", "time, finding the difference", "difftime64 function", "_difftime64 function", "difftime32 function"]
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
 ---
-# difftime, _difftime32, _difftime64
+# `difftime`, `_difftime32`, `_difftime64`
 
 Finds the difference between two times.
 

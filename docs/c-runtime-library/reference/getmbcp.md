@@ -10,7 +10,7 @@ f1_keywords: ["_getmbcp", "getmbcp"]
 helpviewer_keywords: ["code pages, determining current", "_getmbcp function", "getmbcp function"]
 ms.assetid: 2db202d4-5c3d-4871-a0b8-ceb0b79ee7bb
 ---
-# _getmbcp
+# `_getmbcp`
 
 Retrieves the current code page.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_memccpy"]
 helpviewer_keywords: ["_memccpy function", "memccpy function"]
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
 ---
-# _memccpy
+# `_memccpy`
 
 Copies characters from a buffer.
 

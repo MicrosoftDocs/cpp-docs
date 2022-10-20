@@ -10,7 +10,7 @@ f1_keywords: ["lrint", "lrintf", "lrintl", "llrint", "llrintf", "llrintl", "math
 helpviewer_keywords: ["lrint function", "lrintf function", "lrintl function", "llrint function", "llrintf function", "llrintl function"]
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
 ---
-# lrint, lrintf, lrintl, llrint, llrintf, llrintl
+# `lrint`, `lrintf`, `lrintl`, `llrint`, `llrintf`, `llrintl`
 
 Rounds the specified floating-point value to the nearest integral value, by using the current rounding mode and direction.
 

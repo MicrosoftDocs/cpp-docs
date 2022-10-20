@@ -10,7 +10,7 @@ f1_keywords: ["getdrives", "_getdrives"]
 helpviewer_keywords: ["_getdrives function", "getdrives function", "disk drives"]
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
 ---
-# _getdrives
+# `_getdrives`
 
 Returns a bitmask that represents the currently available disk drives.
 

@@ -10,7 +10,7 @@ f1_keywords: ["get_fmode", "_get_fmode"]
 helpviewer_keywords: ["_get_fmode function", "file translation [C++], default mode", "get_fmode function"]
 ms.assetid: 22ea70e2-b9b5-422d-b514-64f4beaea45c
 ---
-# _get_fmode
+# `_get_fmode`
 
 Gets the default file translation mode for file I/O operations.
 

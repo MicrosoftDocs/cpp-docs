@@ -10,7 +10,7 @@ f1_keywords: ["rintf", "rintl", "rint"]
 helpviewer_keywords: ["rintf function", "rint function", "rintl function"]
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
 ---
-# rint, rintf, rintl
+# `rint`, `rintf`, `rintl`
 
 Rounds a floating-point value to the nearest integer in floating-point format.
 

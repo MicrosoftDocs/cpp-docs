@@ -10,7 +10,7 @@ f1_keywords: ["fputtchar", "_fputwchar", "fputwchar", "_fputtchar", "_fputchar"]
 helpviewer_keywords: ["fputchar function", "standard output, writing to", "_fputtchar function", "fputwchar function", "_fputwchar function", "fputtchar function", "_fputchar function"]
 ms.assetid: b92ff600-a924-4f2b-b0e7-3097ee31bdff
 ---
-# _fputchar, _fputwchar
+# `_fputchar`, `_fputwchar`
 
 Writes a character to **stdout**.
 

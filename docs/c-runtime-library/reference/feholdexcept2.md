@@ -10,7 +10,7 @@ f1_keywords: ["feholdexcept", "fenv/feholdexcept"]
 helpviewer_keywords: ["feholdexcept function"]
 ms.assetid: 88e512ae-b5d8-452c-afe9-c824cd3ef1d8
 ---
-# feholdexcept
+# `feholdexcept`
 
 Saves the current floating-point environment in the specified object, clears the floating-point status flags, and, if possible, puts the floating-point environment into non-stop  mode.
 

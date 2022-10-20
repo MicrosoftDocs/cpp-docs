@@ -10,7 +10,7 @@ f1_keywords: ["ccosh", "ccoshf", "ccoshl", "complex/ccosh", "complex/ccoshf", "c
 helpviewer_keywords: ["ccosh function", "ccoshf function", "ccoshl function"]
 ms.assetid: 79667449-4edf-4948-bf6b-720adf2b3f3b
 ---
-# ccosh, ccoshf, ccoshl
+# `ccosh`, `ccoshf`, `ccoshl`
 
 Retrieves the hyperbolic cosine of a complex number.
 

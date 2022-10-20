@@ -10,7 +10,7 @@ f1_keywords: ["___lc_locale_name_func"]
 helpviewer_keywords: ["___lc_locale_name_func"]
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
 ---
-# ___lc_locale_name_func
+# `___lc_locale_name_func`
 
 Internal CRT function. Retrieves the current locale name of the thread.
 

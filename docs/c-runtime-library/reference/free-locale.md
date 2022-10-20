@@ -10,7 +10,7 @@ f1_keywords: ["__free_locale", "free_locale", "_free_locale"]
 helpviewer_keywords: ["__free_locale function", "free_locale function", "locales, freeing", "_free_locale function"]
 ms.assetid: 1f08d348-ab32-4028-a145-6cbd51b49af9
 ---
-# _free_locale
+# `_free_locale`
 
 Frees a locale object.
 

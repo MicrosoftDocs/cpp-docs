@@ -10,7 +10,7 @@ f1_keywords: ["wcstoimax", "_tcstoimax", "strtoimax", "_wcstoimax_l", "_strtoima
 helpviewer_keywords: ["strtoimax funciton", "conversion functions", "_strtoimax_l function", "_wcstoimax_l function", "wcstoimax function"]
 ms.assetid: 4530d3dc-aaac-4a76-b7cf-29ae3c98d0ae
 ---
-# strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
+# `strtoimax`, `_strtoimax_l`, `wcstoimax`, `_wcstoimax_l`
 
 Converts a string to an integer value of the largest supported signed integer type.
 

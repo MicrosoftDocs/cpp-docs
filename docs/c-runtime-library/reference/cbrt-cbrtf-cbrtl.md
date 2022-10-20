@@ -10,7 +10,7 @@ f1_keywords: ["cbrtl", "cbrt", "cbrtf"]
 helpviewer_keywords: ["cbrtl function", "cbrtf function", "cbrt function"]
 ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f
 ---
-# cbrt, cbrtf, cbrtl
+# `cbrt`, `cbrtf`, `cbrtl`
 
 Calculates the cube root.
 

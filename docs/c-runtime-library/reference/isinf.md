@@ -5,7 +5,7 @@ ms.date: "01/31/2019"
 f1_keywords: ["isinf", "math/isinf"]
 helpviewer_keywords: ["isinf function"]
 ---
-# isinf
+# `isinf`
 
 Determines whether a floating-point value is an infinity.
 

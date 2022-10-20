@@ -10,7 +10,7 @@ f1_keywords: ["_isgraph_l", "_iswgraph_l", "Isgraph", "_istgraph_l", "_istgraph"
 helpviewer_keywords: ["isgraph function", "_istgraph_l function", "istgraph function", "_isgraph_l function", "iswgraph function", "_iswgraph_l function", "_istgraph function", "_ismbcgraph_l function"]
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
 ---
-# isgraph, iswgraph, _isgraph_l, _iswgraph_l
+# `isgraph`, `iswgraph`, `_isgraph_l`, `_iswgraph_l`
 
 Determines whether an integer represents a graphical character.
 

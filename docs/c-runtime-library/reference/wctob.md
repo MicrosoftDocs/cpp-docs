@@ -10,7 +10,7 @@ f1_keywords: ["wctob"]
 helpviewer_keywords: ["wide characters, converting", "wctob function", "characters, converting"]
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
 ---
-# wctob
+# `wctob`
 
 Determines if a wide character corresponds to a multibyte character and returns its multibyte character representation.
 

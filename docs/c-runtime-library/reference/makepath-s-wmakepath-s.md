@@ -10,7 +10,7 @@ f1_keywords: ["_wmakepath_s", "makepath_s", "_makepath_s", "wmakepath_s"]
 helpviewer_keywords: ["_makepath_s function", "wmakepath_s function", "paths", "_wmakepath_s function", "makepath_s function"]
 ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
 ---
-# _makepath_s, _wmakepath_s
+# `_makepath_s`, `_wmakepath_s`
 
 Creates a path name from components. These are versions of [`_makepath`, `_wmakepath`](makepath-wmakepath.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

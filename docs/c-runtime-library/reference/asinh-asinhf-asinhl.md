@@ -10,7 +10,7 @@ f1_keywords: ["asinhf", "asinhl", "asinh"]
 helpviewer_keywords: ["asinh function", "asinhl function", "asinhf function"]
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
 ---
-# asinh, asinhf, asinhl
+# `asinh`, `asinhf`, `asinhl`
 
 Calculates the inverse hyperbolic sine.
 

@@ -9,7 +9,7 @@ f1_keywords: ["bitor", "std.bitor", "std::bitor"]
 helpviewer_keywords: ["bitor function"]
 ms.assetid: 3c0a3711-9c74-41f2-b400-2f7797da30d1
 ---
-# bitor
+# `bitor`
 
 An alternative to the `|` operator.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_mbsnbcoll", "_mbsnbcoll_l", "_mbsnbicoll", "mbsnbcoll_l"]
 helpviewer_keywords: ["_mbsnbcoll_l function", "mbsnbcoll_l function", "_mbsnbcoll function", "_tcsnicoll function", "mbsnbcoll function", "mbsnbicoll_l function", "mbsnbicoll function", "_tcsncoll function", "_mbsnbicoll function", "_mbsnbicoll_l function", "_tcsncoll_l function", "_tcsnicoll_l function"]
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
 ---
-# _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
+# `_mbsnbcoll`, `_mbsnbcoll_l`, `_mbsnbicoll`, `_mbsnbicoll_l`
 
 Compares *`n`* bytes of two multibyte-character strings by using multibyte code-page information.
 

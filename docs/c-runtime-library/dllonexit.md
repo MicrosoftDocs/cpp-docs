@@ -10,7 +10,7 @@ f1_keywords: ["__dllonexit"]
 helpviewer_keywords: ["__dllonexit"]
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
 ---
-# __dllonexit
+# `__dllonexit`
 
 Registers a routine to be called at exit time.
 

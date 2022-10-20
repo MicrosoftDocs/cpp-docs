@@ -10,7 +10,7 @@ f1_keywords: ["timespec_get", "_timespec32_get", "_timespec64_get", "time/timesp
 helpviewer_keywords: ["timespec_get function", "_timespec32_get function", "_timespec64_get function"]
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
 ---
-# timespec_get, _timespec32_get, _timespec64_get
+# `timespec_get`, `_timespec32_get`, `_timespec64_get`
 
 Sets the interval pointed to by the first argument to the current calendar time, based on the specified time base.
 

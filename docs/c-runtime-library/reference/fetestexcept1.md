@@ -10,7 +10,7 @@ f1_keywords: ["fetestexcept", "fenv/fetestexcept"]
 helpviewer_keywords: ["fetestexept function"]
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
 ---
-# fetestexcept
+# `fetestexcept`
 
 Determines which of the specified floating-point exception status flags are currently set.
 

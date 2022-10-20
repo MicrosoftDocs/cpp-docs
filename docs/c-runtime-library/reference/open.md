@@ -10,7 +10,7 @@ f1_keywords: ["open"]
 helpviewer_keywords: ["open function"]
 ms.assetid: e3139118-4da2-434b-a551-fcf3fccf49b5
 ---
-# open
+# `open`
 
 The Microsoft-implemented POSIX function name `open` is a deprecated alias for the [`_open`](open-wopen.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

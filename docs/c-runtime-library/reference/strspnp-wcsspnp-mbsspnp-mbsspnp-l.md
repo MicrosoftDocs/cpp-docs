@@ -10,7 +10,7 @@ f1_keywords: ["_tcsspnp", "_mbsspnp", "strspnp", "_ftcsspnp", "_mbsspnp_l", "wcs
 helpviewer_keywords: ["_strspnp function", "_wcsspnp function", "_mbsspnp_l function", "strspnp function", "mbsspnp function", "wcsspnp function", "_mbsspnp function", "mbsspnp_l function", "_tcsspnp function", "tcsspnp function"]
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
 ---
-# _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
+# `_strspnp`, `_wcsspnp`, `_mbsspnp`, `_mbsspnp_l`
 
 Returns a pointer to the first character in a given string that is not in another given string.
 

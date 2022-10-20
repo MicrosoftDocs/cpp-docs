@@ -10,7 +10,7 @@ f1_keywords: ["clog10", "clog10f", "clog10l", "complex/clog10", "complex/clog10f
 helpviewer_keywords: ["clog10 function", "clog10f function", "clog10l function"]
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
 ---
-# clog10, clog10f, clog10l
+# `clog10`, `clog10f`, `clog10l`
 
 Retrieves the logarithm (base 10) of a complex number.
 

@@ -10,7 +10,7 @@ f1_keywords: ["chsize_s", "_chsize_s"]
 helpviewer_keywords: ["files [C++], changing size", "chsize_s function", "_chsize_s function"]
 ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
 ---
-# _chsize_s
+# `_chsize_s`
 
 Changes the size of a file. This function is a version of [`_chsize`](chsize.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

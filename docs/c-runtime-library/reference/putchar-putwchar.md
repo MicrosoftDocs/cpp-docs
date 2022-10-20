@@ -10,7 +10,7 @@ f1_keywords: ["putchar", "putwchar", "_puttchar"]
 helpviewer_keywords: ["putchar function", "_puttchar function", "characters, writing", "standard output, writing to", "putwchar function"]
 ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748
 ---
-# putchar, putwchar
+# `putchar`, `putwchar`
 
 Writes a character to **stdout**.
 

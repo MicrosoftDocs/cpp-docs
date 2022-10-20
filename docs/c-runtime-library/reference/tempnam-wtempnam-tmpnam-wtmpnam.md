@@ -10,7 +10,7 @@ f1_keywords: ["wtempnam", "_wtmpnam", "wtmpnam", "tmpnam", "_wtempnam", "_tempna
 helpviewer_keywords: ["wtempnam function", "file names [C++], creating temporary", "_tempnam function", "ttmpnam function", "tmpnam function", "tempnam function", "wtmpnam function", "temporary files, creating", "file names [C++], temporary", "_ttmpnam function", "_wtmpnam function", "_wtempnam function"]
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
 ---
-# _tempnam, _wtempnam, tmpnam, _wtmpnam
+# `_tempnam`, `_wtempnam`, `tmpnam`, `_wtmpnam`
 
 Generate names you can use to create temporary files. More secure versions of some of these functions are available; see [`tmpnam_s`, `_wtmpnam_s`](tmpnam-s-wtmpnam-s.md).
 

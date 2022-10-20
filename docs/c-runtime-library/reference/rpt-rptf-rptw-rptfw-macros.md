@@ -9,7 +9,7 @@ f1_keywords: ["RPT3", "RPTF4", "_RPT4", "RPT1", "_RPTF0", "RPTF3", "_RPTF4", "RP
 helpviewer_keywords: ["debugging [CRT], using macros", "_RPTW3 macro", "_RPT0 macro", "RPTW4 macro", "_RPTF3 macro", "_RPTW4 macro", "RPTF4 macro", "RPTFW2 macro", "RPTW macros", "RPT1 macro", "_RPTF macros", "RPTFW3 macro", "_RPTW0 macro", "_RPTF0 macro", "macros, debugging with", "_RPTW2 macro", "RPTF3 macro", "RPT3 macro", "RPT0 macro", "_RPT macros", "RPTW3 macro", "_RPTFW macros", "debug reporting macros", "RPTF macros", "RPT macros", "_RPTW macros", "RPTF2 macro", "_RPTF1 macro", "_RPT1 macro", "_RPT4 macro", "_RPTFW2 macro", "_RPTFW1 macro", "RPTF0 macro", "_RPT2 macro", "RPTFW macros", "_RPTW1 macro", "_RPTFW0 macro", "RPT4 macro", "_RPT3 macro", "_RPTFW3 macro", "_RPTF4 macro", "_RPTFW4 macro", "_RPTF2 macro", "RPTW0 macro", "RPTFW4 macro", "RPTFW0 macro", "RPTW2 macro", "RPTF1 macro", "RPT2 macro", "RPTFW1 macro", "RPTW1 macro"]
 ms.assetid: a5bf8b30-57f7-4971-8030-e773b7a1ae13
 ---
-# _RPT, _RPTF, _RPTW, _RPTFW Macros
+# `_RPT`, `_RPTF`, `_RPTW`, `_RPTFW` Macros
 
 Tracks an application's progress by generating a debug report (debug version only). Note that *`n`* specifies the number of arguments in *`args`* and can be 0, 1, 2, 3, 4, or 5.
 

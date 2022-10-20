@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_iswblank_l", "isblank", "_istblank_l", "_istblank", "_isblank_l", "iswblank"]
 ms.assetid: 33ce96c0-f387-411a-8283-c3d2a69e56bd
 ---
-# isblank, iswblank, _isblank_l, _iswblank_l
+# `isblank`, `iswblank`, `_isblank_l`, `_iswblank_l`
 
 Determines whether an integer represents a blank character.
 

@@ -10,7 +10,7 @@ f1_keywords: ["conj", "conjf", "conjl", "complex/conj", "complex/conjf", "comple
 helpviewer_keywords: ["conj function", "conjf function", "conjl function"]
 ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6
 ---
-# conj, conjf, conjl
+# `conj`, `conjf`, `conjl`
 
 Retrieves the complex conjugate of a complex number.
 

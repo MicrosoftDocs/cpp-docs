@@ -10,7 +10,7 @@ f1_keywords: ["lrotr", "lrotl", "_lrotr", "_lrotl"]
 helpviewer_keywords: ["lrotl function", "bits", "_lrotr function", "lrotr function", "rotating bits", "_lrotl function", "bits, rotating"]
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
 ---
-# _lrotl, _lrotr
+# `_lrotl`, `_lrotr`
 
 Rotates bits to the left (**_lrotl**) or right (**_lrotr**).
 

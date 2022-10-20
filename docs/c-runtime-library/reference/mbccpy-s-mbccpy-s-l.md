@@ -10,7 +10,7 @@ f1_keywords: ["_mbccpy_s_l", "mbccpy_s_l", "mbccpy_s", "_mbccpy_s"]
 helpviewer_keywords: ["tccpy_s_l function", "_tccpy_s function", "_mbccpy_s function", "mbccpy_s function", "tccpy_s function", "mbccpy_s_l function", "_tccpy_s_l function", "_mbccpy_s_l function"]
 ms.assetid: b6e965fa-53c1-4ec3-85ef-a1c4b4f2b2da
 ---
-# _mbccpy_s, _mbccpy_s_l
+# `_mbccpy_s`, `_mbccpy_s_l`
 
 Copies one multibyte character from a string to another string. These versions of [`_mbccpy`, `_mbccpy_l`](mbccpy-mbccpy-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

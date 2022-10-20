@@ -10,7 +10,7 @@ f1_keywords: ["mbsnbset_s", "_mbsnbset_s_l", "_mbsnbset_s", "mbsnbset_s_l"]
 helpviewer_keywords: ["tcsnset_s function", "mbsnbset_s function", "mbsnbset_s_l function", "_mbsnbset_s_l function", "_tcsnset_s_l function", "_mbsnbset_s function", "_tcsnset_s function", "tcsnset_s_l function"]
 ms.assetid: 811f92c9-cc31-4bbd-8017-2d1bfc6fb96f
 ---
-# _mbsnbset_s, _mbsnbset_s_l
+# `_mbsnbset_s`, `_mbsnbset_s_l`
 
 Sets the first **n** bytes of a multibyte-character string to a specified character. These versions of [`_mbsnbset`, `_mbsnbset_l`](mbsnbset-mbsnbset-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

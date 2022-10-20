@@ -10,7 +10,7 @@ f1_keywords: ["malloc_dbg", "_malloc_dbg"]
 helpviewer_keywords: ["malloc_dbg function", "memory allocation", "_malloc_dbg function"]
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
 ---
-# _malloc_dbg
+# `_malloc_dbg`
 
 Allocates a block of memory in the heap with additional space for a debugging header and overwrite buffers (debug version only).
 

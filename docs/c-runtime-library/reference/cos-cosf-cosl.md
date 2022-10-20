@@ -10,7 +10,7 @@ f1_keywords: ["cos", "cosf", "cosl"]
 helpviewer_keywords: ["cosines", "cosl function", "calculating cosine", "cosf function", "cos function", "trigonometric functions", "cosines, calculating"]
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
 ---
-# cos, cosf, cosl
+# `cos`, `cosf`, `cosl`
 
 Calculates the cosine.
 

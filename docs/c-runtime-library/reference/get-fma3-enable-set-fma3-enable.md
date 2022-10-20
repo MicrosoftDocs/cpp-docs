@@ -10,7 +10,7 @@ f1_keywords: ["_get_FMA3_enable", "_set_FMA3_enable", "math/_get_FMA3_enable", "
 helpviewer_keywords: ["_get_FMA3_enable", "_set_FMA3_enable"]
 ms.assetid: 4c1dc4bc-e86b-451b-9211-5a2ba6c98ee4
 ---
-# _get_FMA3_enable, _set_FMA3_enable
+# `_get_FMA3_enable`, `_set_FMA3_enable`
 
 Gets or sets a flag that specifies whether the transcendental math floating-point library functions use FMA3 instructions in code compiled for X64 platforms.
 

@@ -10,7 +10,7 @@ f1_keywords: ["acosh", "acoshf", "acoshl", "math/acosh", "math/acoshf", "math/ac
 helpviewer_keywords: ["acoshf function", "acosh function", "acoshl function"]
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
 ---
-# acosh, acoshf, acoshl
+# `acosh`, `acoshf`, `acoshl`
 
 Calculates the inverse hyperbolic cosine.
 

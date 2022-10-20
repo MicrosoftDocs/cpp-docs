@@ -10,7 +10,7 @@ f1_keywords: ["fputc", "fputwc", "_fputtc"]
 helpviewer_keywords: ["streams, writing characters to", "fputtc function", "_fputtc function", "fputwc function", "fputc function"]
 ms.assetid: 5a0a593d-43f4-4fa2-a401-ec4e23de4d2f
 ---
-# fputc, fputwc
+# `fputc`, `fputwc`
 
 Writes a character to a stream.
 

@@ -10,7 +10,7 @@ f1_keywords: ["set_new_mode", "_set_new_mode"]
 helpviewer_keywords: ["handler modes", "_set_new_mode function", "set_new_mode function"]
 ms.assetid: 4d14039a-e54e-4689-8c70-74a4b9834768
 ---
-# _set_new_mode
+# `_set_new_mode`
 
 Sets a new handler mode for **malloc**.
 

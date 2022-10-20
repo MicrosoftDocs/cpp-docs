@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_tcsncat_l", "_wcsncat_l", "_tcsnccat_l", "_mbsncat", "_strncat_l", "strncat", "_tcsnccat", "_mbsncat_l", "_ftcsncat", "wcsncat", "_tcsncat"]
 helpviewer_keywords: ["concatenating strings", "ftcsncat function", "tcsncat_l function", "_tcsnccat_l function", "_tcsncat function", "strncat function", "_ftcsncat function", "mbsncat function", "mbsncat_l function", "strings [C++], appending", "wcsncat function", "tcsnccat function", "tcsnccat_l function", "_tcsnccat function", "string concatenation [C++]", "appending strings", "characters [C++], appending to strings", "_mbsncat function", "_tcsncat_l function", "_mbsncat_l function", "tcsncat function"]
 ---
-# strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
+# `strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`
 
 Appends characters of a string. More secure versions of these functions are available, see `[strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) .
 

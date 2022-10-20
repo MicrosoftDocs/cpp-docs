@@ -10,7 +10,7 @@ f1_keywords: ["mbsncoll_l", "strncoll", "_wcsncoll", "_tcsnccoll", "_ftcsnccoll"
 helpviewer_keywords: ["_strncoll_l function", "code pages, using for string comparisons", "_strncoll function", "_mbsncoll function", "ftcsncoll function", "strncoll function", "_ftcsncoll function", "strncoll_l function", "wcsncoll function", "mbsncoll function", "_tcsncoll function", "_tcsnccoll function", "wcsncoll_l function", "tcsnccoll function", "mbsncoll_l function", "_mbsncoll_l function", "tcsncoll function", "_wcsncoll function", "strings [C++], comparing by code page", "_ftcsnccoll function", "ftcsnccoll function", "_wcsncoll_l function"]
 ms.assetid: e659a5a4-8afe-4033-8e72-17ffd4bdd8e9
 ---
-# _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
+# `_strncoll`, `_wcsncoll`, `_mbsncoll`, `_strncoll_l`, `_wcsncoll_l`, `_mbsncoll_l`
 
 Compares strings by using locale-specific information.
 

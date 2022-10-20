@@ -10,7 +10,7 @@ f1_keywords: ["futime", "_futime", "futime64", "_futime64"]
 helpviewer_keywords: ["_futime function", "futime32 function", "futime64 function", "file modification time [C++]", "_futime64 function", "futime function", "_futime32 function"]
 ms.assetid: b942ce8f-5cc7-4fa8-ab47-de5965eded53
 ---
-# _futime, _futime32, _futime64
+# `_futime`, `_futime32`, `_futime64`
 
 Sets the modification time on an open file.
 

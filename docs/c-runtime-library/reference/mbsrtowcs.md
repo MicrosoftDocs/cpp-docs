@@ -10,7 +10,7 @@ f1_keywords: ["mbsrtowcs"]
 helpviewer_keywords: ["mbsrtowcs function"]
 ms.assetid: f3a29de8-e36e-425b-a7fa-a258e6d7909d
 ---
-# mbsrtowcs
+# `mbsrtowcs`
 
 Converts a multibyte character string in the current locale to a corresponding wide character string, with the capability of restarting in the middle of a multibyte character. A more secure version of this function is available; see [`mbsrtowcs_s`](mbsrtowcs-s.md).
 

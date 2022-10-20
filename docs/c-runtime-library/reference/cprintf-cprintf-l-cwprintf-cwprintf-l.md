@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_cwprintf", "cwprintf", "tcprintf", "_tcprintf", "_cprintf", "cwprintf_l", "tcprintf_l", "_tcprintf_l", "cprintf_l", "_cprintf_l", "_cwprintf_l"]
 helpviewer_keywords: ["_cprintf_l function", "_cwprintf_l function", "cwprintf function", "cprintf_l function", "characters, printing to console", "printing characters to console", "_tcprintf_l function", "tcprintf function", "_tcprintf function", "tcprintf_l function", "_cwprintf function", "cwprintf_l function", "_cprintf function"]
 ---
-# _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
+# `_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`
 
 Formats and prints to the console. More-secure versions are available; see [`_cprintf_s`, `_cprintf_s_l`, `_cwprintf_s`, `_cwprintf_s_l`](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md).
 

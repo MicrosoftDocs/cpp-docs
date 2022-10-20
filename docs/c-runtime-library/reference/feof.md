@@ -10,7 +10,7 @@ f1_keywords: ["feof"]
 helpviewer_keywords: ["end of file, testing for", "feof function"]
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
 ---
-# feof
+# `feof`
 
 Tests for end-of-file on a stream.
 

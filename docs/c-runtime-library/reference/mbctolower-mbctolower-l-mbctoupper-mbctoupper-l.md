@@ -10,7 +10,7 @@ f1_keywords: ["mbctoupper_l", "mbctolower_l", "_mbctolower", "_mbctolower_l", "_
 helpviewer_keywords: ["_mbctolower function", "mbctolower_l function", "totupper function", "_mbctoupper function", "totlower function", "_mbctoupper_l function", "mbctolower function", "_totupper function", "_mbctolower_l function", "mbctoupper_l function", "_totlower function", "mbctoupper function"]
 ms.assetid: 787fab71-3224-4ed7-bc93-4dcd8023fc54
 ---
-# _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
+# `_mbctolower`, `_mbctolower_l`, `_mbctoupper`, `_mbctoupper_l`
 
 Tests and converts the case of a multibyte character.
 

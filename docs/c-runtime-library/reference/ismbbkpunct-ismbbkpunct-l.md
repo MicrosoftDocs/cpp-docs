@@ -10,7 +10,7 @@ f1_keywords: ["ismbbkpunct_l", "_ismbbkpunct_l", "ismbbkpunct", "_ismbbkpunct"]
 helpviewer_keywords: ["_ismbbkpunct_l function", "ismbbkpunct_l function", "ismbbkpunct function", "_ismbbkpunct function"]
 ms.assetid: a04c59cd-5ca7-4296-bec0-2b0d7f04edd0
 ---
-# _ismbbkpunct, _ismbbkpunct_l
+# `_ismbbkpunct`, `_ismbbkpunct_l`
 
 Checks whether a multibyte character is a punctuation character.
 

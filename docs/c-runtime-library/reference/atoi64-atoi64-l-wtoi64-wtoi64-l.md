@@ -10,7 +10,7 @@ f1_keywords: ["_atoi64", "_tstoi64", "_ttoi64", "wtoi64", "_tstoi64_l", "atoi64"
 helpviewer_keywords: ["tstoi64 function", "wtoi64 function", "atoi64_l function", "_ttoi64 function", "string conversion, to integers", "wtoi64_l function", "atoi64 function", "_tstoi64 function", "_atoi64_l function", "_wtoi64_l function", "ttoi64 function", "_wtoi64 function", "_atoi64 function"]
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
 ---
-# _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
+# `_atoi64`, `_atoi64_l`, `_wtoi64`, `_wtoi64_l`
 
 Converts a string to a 64-bit integer.
 

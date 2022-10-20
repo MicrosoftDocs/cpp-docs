@@ -10,7 +10,7 @@ f1_keywords: ["_ungetch_nolock", "ungetwch", "ungetch_nolock", "_ungetwch", "ung
 helpviewer_keywords: ["_ungetch function", "ungetwch function", "characters, pushing back to console", "_ungettch_nolock function", "ungettch function", "_ungettch function", "ungetch_nolock function", "ungettch_nolock function", "_ungetwch_nolock function", "_ungetch_nolock function", "ungetwch_nolock function", "_ungetwch function"]
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
 ---
-# _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
+# `_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`
 
 Pushes back the last character that's read from the console.
 

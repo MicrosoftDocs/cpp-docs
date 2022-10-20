@@ -6,7 +6,7 @@ ms.date: 08/02/2021
 helpviewer_keywords: ["CRT initialization [C++]"]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
 ---
-# CRT Initialization
+# CRT initialization
 
 This article describes how the CRT initializes global state in native code.
 

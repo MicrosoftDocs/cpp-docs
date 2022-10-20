@@ -10,7 +10,7 @@ f1_keywords: ["fegetenv", "fenv/fegetenv"]
 helpviewer_keywords: ["fetegenv function"]
 ms.assetid: 68962421-6978-4b27-8e4c-ad1577830cf6
 ---
-# fegetenv
+# `fegetenv`
 
 Stores the current floating-point environment in the specified object.
 

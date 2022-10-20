@@ -10,7 +10,7 @@ f1_keywords: ["_iob", "iob"]
 helpviewer_keywords: ["_iob global variable", "iob global variable"]
 ms.assetid: 008ed376-8078-4bbd-bc6c-0677c63d0ff1
 ---
-# _iob
+# `_iob`
 
 The array of `stdio` control structures.
 

@@ -10,7 +10,7 @@ f1_keywords: ["wcsrtombs"]
 helpviewer_keywords: ["wcsrtombs function", "string conversion, wide characters", "wide characters, strings"]
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
 ---
-# wcsrtombs
+# `wcsrtombs`
 
 Convert a wide character string to its multibyte character string representation. A more secure version of this function is available; see [`wcsrtombs_s`](wcsrtombs-s.md).
 

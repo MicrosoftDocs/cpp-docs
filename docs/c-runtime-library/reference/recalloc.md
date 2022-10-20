@@ -10,7 +10,7 @@ f1_keywords: ["_recalloc", "recalloc"]
 helpviewer_keywords: ["_recalloc function", "recalloc function"]
 ms.assetid: 1db8305a-3f03-418c-8844-bf9149f63046
 ---
-# _recalloc
+# `_recalloc`
 
 A combination of **realloc** and **calloc**. Reallocates an array in memory and initializes its elements to 0.
 

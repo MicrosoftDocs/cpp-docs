@@ -9,7 +9,7 @@ f1_keywords: ["and_eq", "std.and_eq", "std::and_eq"]
 helpviewer_keywords: ["and_eq macro"]
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
 ---
-# and_eq
+# `and_eq`
 
 An alternative to the &= operator.
 

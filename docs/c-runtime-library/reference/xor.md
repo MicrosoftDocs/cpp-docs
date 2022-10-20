@@ -9,7 +9,7 @@ f1_keywords: ["std::xor", "std.xor"]
 helpviewer_keywords: ["xor function"]
 ms.assetid: 0fe9554b-d87b-4487-92ed-366c6dc21df2
 ---
-# xor
+# `xor`
 
 An alternative to the ^ operator.
 

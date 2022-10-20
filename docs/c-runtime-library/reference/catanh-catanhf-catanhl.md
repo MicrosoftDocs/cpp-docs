@@ -10,7 +10,7 @@ f1_keywords: ["catanh", "catanhf", "catanhl", "complex/catanh", "complex/catanhf
 helpviewer_keywords: ["catanh function", "catanhf function", "catanhl function"]
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
 ---
-# catanh, catanhf, catanhl
+# `catanh`, `catanhf`, `catanhl`
 
 Retrieves the inverse hyperbolic tangent of a complex number, with branch cuts outside the interval [-1; +1] along the real axis.
 

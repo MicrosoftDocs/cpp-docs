@@ -10,7 +10,7 @@ f1_keywords: ["_eof"]
 helpviewer_keywords: ["eof function", "end of file, testing for", "_eof function", "files [C++], end of", "testing, for end-of-file", "end of file"]
 ms.assetid: 265703f4-d07e-4005-abf3-b1d0cdd9e0b0
 ---
-# _eof
+# `_eof`
 
 Tests for end of file (EOF).
 

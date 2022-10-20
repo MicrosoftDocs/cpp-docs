@@ -10,7 +10,7 @@ f1_keywords: ["ismbcsymbol_l", "_ismbcsymbol_l", "_ismbcsymbol", "_ismbclegal_l"
 helpviewer_keywords: ["ismbcsymbol function", "ismbclegal_l function", "_istlegal_l function", "istlegal function", "_istlegal function", "_ismbcsymbol function", "_ismbclegal_l function", "ismbclegal function", "ismbcsymbol_l function", "_ismbclegal function", "_ismbcsymbol_l function", "istlegal_l function"]
 ms.assetid: 31bf1ea5-b56f-4e28-b21e-b49a2cf93ffc
 ---
-# _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
+# `_ismbclegal`, `_ismbclegal_l`, `_ismbcsymbol`, `_ismbcsymbol_l`
 
 Checks whether a multibyte character is a legal or symbol character.
 

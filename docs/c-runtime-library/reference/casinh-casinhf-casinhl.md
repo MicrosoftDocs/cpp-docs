@@ -10,7 +10,7 @@ f1_keywords: ["casinh", "casinhf", "casinhl", "complex/casinh", "complex/casinhf
 helpviewer_keywords: ["casinh function", "casinhf function", "casinhl function"]
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b
 ---
-# casinh, casinhf, casinhl
+# `casinh`, `casinhf`, `casinhl`
 
 Retrieves the inverse hyperbolic sine of a complex number, with branch cuts outside the interval [-i, +i] along the imaginary axis.
 

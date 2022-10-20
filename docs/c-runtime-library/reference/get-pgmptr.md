@@ -10,7 +10,7 @@ f1_keywords: ["get_pgmptr", "_get_pgmptr"]
 helpviewer_keywords: ["get_pgmptr function", "_get_pgmptr function", "pgmptr global variable", "_pgmptr global variable"]
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
 ---
-# _get_pgmptr
+# `_get_pgmptr`
 
 Gets the current value of the **_pgmptr** global variable.
 

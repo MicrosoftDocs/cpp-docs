@@ -10,7 +10,7 @@ f1_keywords: ["imaxdiv"]
 helpviewer_keywords: ["imaxdiv function"]
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
 ---
-# imaxdiv
+# `imaxdiv`
 
 Computes the quotient and the remainder of two integer values of any size as a single operation.
 

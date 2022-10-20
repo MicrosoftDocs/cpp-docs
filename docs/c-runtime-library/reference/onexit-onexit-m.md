@@ -10,7 +10,7 @@ f1_keywords: ["_onexit", "onexit_m", "onexit", "_onexit_m"]
 helpviewer_keywords: ["onexit function", "registry, registering exit routines", "_onexit_m function", "onexit_m function", "_onexit function", "registering exit routines", "registering to be called on exit"]
 ms.assetid: 45743298-0e2f-46cf-966d-1ca44babb443
 ---
-# _onexit, _onexit_m
+# `_onexit`, `_onexit_m`
 
 Registers a routine to be called at exit time.
 

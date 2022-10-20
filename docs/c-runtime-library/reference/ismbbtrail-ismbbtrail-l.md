@@ -10,7 +10,7 @@ f1_keywords: ["_ismbbtrail", "ismbbtrail", "_ismbbtrail_l", "ismbbtrail_l"]
 helpviewer_keywords: ["ismbbtrail_l function", "_ismbbtrail function", "_ismbbtrail_l function", "ismbbtrail function"]
 ms.assetid: dfdd0292-960b-4c1d-bf11-146e0fc80247
 ---
-# _ismbbtrail, _ismbbtrail_l
+# `_ismbbtrail`, `_ismbbtrail_l`
 
 Determines whether a byte is a trailing byte of a multibyte character.
 

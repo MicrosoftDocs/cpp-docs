@@ -10,7 +10,7 @@ f1_keywords: ["strupr", "wcsupr"]
 helpviewer_keywords: ["strupr function", "wcsupr function"]
 ms.assetid: 17dfe1cd-3b09-4702-9f89-2207f44953e6
 ---
-# strupr, wcsupr
+# `strupr`, `wcsupr`
 
 The Microsoft-specific function names `strupr` and `wcsupr` are deprecated aliases for the [`_strupr` and `_wcsupr`](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md) functions. By default, they generate [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The names are deprecated because they don't follow the Standard C rules for implementation-specific names. However, the functions are still supported.
 

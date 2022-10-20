@@ -10,7 +10,7 @@ f1_keywords: ["getwchar_nolock", "_getwchar_nolock", "_getchar_nolock", "getchar
 helpviewer_keywords: ["_getwchar_nolock function", "getwchar_nolock function", "characters, reading", "_getchar_nolock function", "getchar_nolock function", "standard input, reading from"]
 ms.assetid: dc49ba60-0647-4ae9-aa9a-a0618b1666de
 ---
-# _getchar_nolock, _getwchar_nolock
+# `_getchar_nolock`, `_getwchar_nolock`
 
 Reads a character from standard input.
 

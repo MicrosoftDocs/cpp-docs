@@ -10,7 +10,7 @@ f1_keywords: ["_lsearch"]
 helpviewer_keywords: ["_lsearch function", "values, searching for", "keys, finding in arrays", "arrays [CRT], searching", "linear searches", "searching, linear", "lsearch function"]
 ms.assetid: 8200f608-159a-46f0-923b-1a37ee1af7e0
 ---
-# _lsearch
+# `_lsearch`
 
 Performs a linear search for a value; adds to end of list if not found. A more secure version of this function is available; see [`_lsearch_s`](lsearch-s.md).
 

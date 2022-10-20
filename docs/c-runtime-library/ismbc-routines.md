@@ -9,7 +9,7 @@ f1_keywords: ["_ismbc"]
 helpviewer_keywords: ["ismbc routines", "_ismbc routines"]
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
 ---
-# _ismbc Routines
+# `_ismbc` routines
 
 Each **_ismbc** routine tests a given multibyte character `c` for a particular condition.
 

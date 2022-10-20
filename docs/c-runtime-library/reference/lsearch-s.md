@@ -10,7 +10,7 @@ f1_keywords: ["_lsearch_s", "lsearch_s"]
 helpviewer_keywords: ["linear searching", "values, searching for", "keys, finding in arrays", "arrays [CRT], searching", "searching, linear", "_lsearch_s function", "lsearch_s function"]
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882
 ---
-# _lsearch_s
+# `_lsearch_s`
 
 Performs a linear search for a value. A version of [`_lsearch`](lsearch.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

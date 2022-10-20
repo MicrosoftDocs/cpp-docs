@@ -10,7 +10,7 @@ f1_keywords: ["_CrtDbgBreak", "CrtDbgBreak"]
 helpviewer_keywords: ["CrtDbgBreak function", "_CrtDbgBreak function"]
 ms.assetid: 01f8b4a2-a2c7-4e1f-9f39-e573b4a7871f
 ---
-# _CrtDbgBreak
+# `_CrtDbgBreak`
 
 Sets a break point on a particular line of code. (Used in debug mode only.)
 

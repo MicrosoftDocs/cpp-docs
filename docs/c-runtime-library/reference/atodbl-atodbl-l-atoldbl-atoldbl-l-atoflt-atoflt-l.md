@@ -10,7 +10,7 @@ f1_keywords: ["_atoflt", "_atoflt_l", "atodbl_l", "atoflt_l", "_atoldbl", "_atol
 helpviewer_keywords: ["_atodbl function", "_atoldbl_l function", "atoflt function", "atoflt_l function", "atoldbl function", "_atoldbl function", "atodbl_l function", "_atoflt_l function", "atoldbl_l function", "atodbl function", "string conversion, to floating point values", "_atoflt function", "_atodbl_l function"]
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
 ---
-# _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
+# `_atodbl`, `_atodbl_l`, `_atoldbl`, `_atoldbl_l`, `_atoflt`, `_atoflt_l`
 
 Converts a string to a double (**_atodbl**), long double (**_atoldbl**), or float (**_atoflt**).
 

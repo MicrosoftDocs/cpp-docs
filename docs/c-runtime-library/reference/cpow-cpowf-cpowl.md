@@ -10,7 +10,7 @@ f1_keywords: ["cpow", "cpowf", "cpowl", "complex/cpow", "complex/cpowf", "comple
 helpviewer_keywords: ["cpow function", "cpowf function", "complex/cpowl function"]
 ms.assetid: 83fe2187-22b7-4295-ab16-4d77abdbb80b
 ---
-# cpow, cpowf, cpowl
+# `cpow`, `cpowf`, `cpowl`
 
 Retrieves the value of a number raised to the specified power, where the base and exponent are complex numbers. This function has a branch cut for the exponent along the negative real axis.
 

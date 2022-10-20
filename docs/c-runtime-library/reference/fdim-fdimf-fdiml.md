@@ -10,7 +10,7 @@ f1_keywords: ["fdim", "fdimf", "fdiml", "math/fdim", "math/fdimf", "math/fdiml"]
 helpviewer_keywords: ["fdim function", "fdimf function", "fdiml function"]
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
 ---
-# fdim, fdimf, fdiml
+# `fdim`, `fdimf`, `fdiml`
 
 Determines the positive difference between the first and second values.
 

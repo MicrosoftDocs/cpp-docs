@@ -10,7 +10,7 @@ f1_keywords: ["ecvt"]
 helpviewer_keywords: ["ecvt function"]
 ms.assetid: a24fccea-033a-4cc7-b120-4fd0f525a7e3
 ---
-# ecvt
+# `ecvt`
 
 The Microsoft-specific function name `ecvt` is a deprecated alias for the [`_ecvt`](ecvt.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 
