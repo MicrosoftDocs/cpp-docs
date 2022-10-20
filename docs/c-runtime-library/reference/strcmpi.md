@@ -10,7 +10,7 @@ f1_keywords: ["strcmpi"]
 helpviewer_keywords: ["strcmpi function"]
 ms.assetid: 74206b2f-9bca-4d32-9cdc-93cb94c2aaa1
 ---
-# strcmpi
+# `strcmpi`
 
 The Microsoft-specific function name `strcmpi` is a deprecated alias for the [`_stricmp`](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

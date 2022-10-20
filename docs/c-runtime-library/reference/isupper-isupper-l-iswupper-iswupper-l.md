@@ -10,7 +10,7 @@ f1_keywords: ["isupper", "_istupper", "iswupper"]
 helpviewer_keywords: ["istupper function", "iswupper function", "isupper_l function", "_isupper_l function", "iswupper_l function", "_istupper function", "_iswupper_l function", "isupper function"]
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
 ---
-# isupper, _isupper_l, iswupper, _iswupper_l
+# `isupper`, `_isupper_l`, `iswupper`, `_iswupper_l`
 
 Determines whether an integer represents an uppercase character.
 

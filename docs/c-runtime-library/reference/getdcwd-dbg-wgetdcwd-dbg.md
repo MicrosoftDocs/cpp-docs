@@ -10,7 +10,7 @@ f1_keywords: ["_getdcwd_dbg", "getdcwd_dbg", "_wgetdcwd_dbg", "wgetdcwd_dbg"]
 helpviewer_keywords: ["working directory", "_getdcwd_dbg function", "wgetdcwd_dbg function", "current working directory", "getdcwd_dbg function", "_wgetdcwd_dbg function", "directories [C++], current working"]
 ms.assetid: 266bf6f0-0417-497f-963d-2e0f306d9385
 ---
-# _getdcwd_dbg, _wgetdcwd_dbg
+# `_getdcwd_dbg`, `_wgetdcwd_dbg`
 
 Debug versions of the [`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md) functions (only available during debug).
 

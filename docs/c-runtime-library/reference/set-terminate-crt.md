@@ -10,7 +10,7 @@ f1_keywords: ["set_terminate"]
 helpviewer_keywords: ["set_terminate function", "terminate function", "exception handling, termination"]
 ms.assetid: 3ff1456a-7898-44bc-9266-a328a80b6006
 ---
-# set_terminate (CRT)
+# `set_terminate` (CRT)
 
 Installs your own termination routine to be called by **terminate**.
 

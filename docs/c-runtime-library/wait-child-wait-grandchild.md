@@ -6,7 +6,7 @@ f1_keywords: ["_WAIT_GRANDCHILD", "WAIT_CHILD", "WAIT_GRANDCHILD", "_WAIT_CHILD"
 helpviewer_keywords: ["WAIT_CHILD constant", "WAIT_GRANDCHILD constant", "_WAIT_CHILD constant", "_WAIT_GRANDCHILD constant"]
 ms.assetid: 7acd96fa-d118-4339-bb00-e5afaf286945
 ---
-# _WAIT_CHILD, _WAIT_GRANDCHILD
+# `_WAIT_CHILD`, `_WAIT_GRANDCHILD`
 
 ## Syntax
 

@@ -10,7 +10,7 @@ f1_keywords: ["_get_timezone", "get_timezone"]
 helpviewer_keywords: ["time zones", "get_timezone function", "_get_timezone function"]
 ms.assetid: 30ab0838-0ae9-4a2f-bfe6-a49ee443b21e
 ---
-# _get_timezone
+# `_get_timezone`
 
 Retrieves the difference in seconds between coordinated universal time (UTC) and local time.
 

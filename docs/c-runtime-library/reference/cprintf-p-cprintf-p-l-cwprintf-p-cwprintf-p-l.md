@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["cprintf_p", "cwprintf_p", "tcprintf_p", "_cwprintf_p_l", "_cprintf_p", "csprintf_p_l", "_cprintf_p_l", "_cwprintf_p", "_tcprintf_p", "cprintf_p_l"]
 helpviewer_keywords: ["_cwprintf_p_l function", "cwprintf_p function", "tcprintf_p_l function", "cprintf_p_l function", "_tcprintf_p function", "_tcprintf_p_l function", "_cprintf_p function", "_cprintf_p_l function", "cwprintf_p_l function", "_cwprintf_p function", "tcprintf_p function", "cprintf_p function"]
 ---
-# _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
+# `_cprintf_p`, `_cprintf_p_l`, `_cwprintf_p`, `_cwprintf_p_l`
 
 Formats and prints to the console, and supports positional parameters in the format string.
 

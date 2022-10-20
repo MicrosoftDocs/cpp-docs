@@ -10,7 +10,7 @@ f1_keywords: ["wcsicoll"]
 helpviewer_keywords: ["wcsicoll function"]
 ms.assetid: d049022d-cf60-467f-842b-9a508d9aeaff
 ---
-# wcsicoll
+# `wcsicoll`
 
 The Microsoft-specific function name `wcsicoll` is a deprecated alias for the [`_wcsicoll`](stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

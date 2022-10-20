@@ -10,7 +10,7 @@ f1_keywords: ["CIcos", "_CIcos"]
 helpviewer_keywords: ["_CIcos intrinsic", "CIcos intrinsic"]
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
 ---
-# _CIcos
+# `_CIcos`
 
 Calculates the cosine of the top value in the floating-point stack.
 

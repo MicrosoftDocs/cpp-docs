@@ -10,7 +10,7 @@ f1_keywords: ["___unguarded_readlc_active_add_func", "___setlc_active_func"]
 helpviewer_keywords: ["___setlc_active_func", "___unguarded_readlc_active_add_func"]
 ms.assetid: 605ec4e3-81e5-4ece-935a-f434768cc702
 ---
-# ___setlc_active_func, ___unguarded_readlc_active_add_func
+# `___setlc_active_func`, `___unguarded_readlc_active_add_func`
 
 OBSOLETE. The CRT exports these internal functions only to preserve binary compatibility.
 

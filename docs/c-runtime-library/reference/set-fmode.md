@@ -10,7 +10,7 @@ f1_keywords: ["_set_fmode", "set_fmode"]
 helpviewer_keywords: ["file translation [C++], default mode", "_set_fmode function", "file translation [C++], setting mode", "set_fmode function"]
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
 ---
-# _set_fmode
+# `_set_fmode`
 
 Sets the default file translation mode for file I/O operations.
 

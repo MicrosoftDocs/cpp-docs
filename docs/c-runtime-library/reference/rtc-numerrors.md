@@ -10,7 +10,7 @@ f1_keywords: ["_RTC_NumErrors", "RTC_NumErrors"]
 helpviewer_keywords: ["run-time errors", "_RTC_NumErrors function", "RTC_NumErrors function"]
 ms.assetid: 7e82adae-38e2-4f8b-bc0b-37bda8109fd1
 ---
-# _RTC_NumErrors
+# `_RTC_NumErrors`
 
 Returns the total number of errors that can be detected by run-time error checks (RTC). You can use this number as the control in a **`for`** loop, where each value in the loop is passed to [`_RTC_GetErrDesc`](rtc-geterrdesc.md).
 

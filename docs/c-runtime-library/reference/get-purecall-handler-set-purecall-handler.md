@@ -10,7 +10,7 @@ f1_keywords: ["_set_purecall_handler", "_set_purecall_handler_m", "set_purecall_
 helpviewer_keywords: ["_set_purecall_handler function", "set_purecall_handler function", "purecall_handler", "set_purecall_handler_m function", "_purecall_handler", "_set_purecall_handler_m function", "_get_purecall_handler function"]
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
 ---
-# _get_purecall_handler, _set_purecall_handler
+# `_get_purecall_handler`, `_set_purecall_handler`
 
 Gets or sets the error handler for a pure virtual function call.
 

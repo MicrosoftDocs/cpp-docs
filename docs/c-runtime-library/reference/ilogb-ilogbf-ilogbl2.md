@@ -10,7 +10,7 @@ f1_keywords: ["ilogb", "ilogbf", "ilogbl", "math/ilogb", "math/ilogbf", "math/il
 helpviewer_keywords: ["ilogb function", "ilogbf function", "ilogbl function"]
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
 ---
-# ilogb, ilogbf, ilogbl
+# `ilogb`, `ilogbf`, `ilogbl`
 
 Retrieves an integer that represents the unbiased base-2 exponent of the specified value.
 

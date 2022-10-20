@@ -10,7 +10,7 @@ f1_keywords: ["iswctype", "_isctype", "_isctype_l", "_iswctype", "isctype", "isw
 helpviewer_keywords: ["isctype_l function", "iswctype_l function", "iswctype function", "_isctype function", "_isctype_l function", "_iswctype_l function", "isctype function", "_iswctype function"]
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
 ---
-# _isctype, iswctype, _isctype_l, _iswctype_l
+# `_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`
 
 Tests *`c`* for the ctype property specified by the *`desc`* argument. For each valid value of *`desc`*, there is an equivalent wide-character classification routine.
 

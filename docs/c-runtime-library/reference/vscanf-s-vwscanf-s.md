@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_vtscanf_s", "vscanf_s", "vwscanf_s"]
 ms.assetid: 23a1c383-5b01-4887-93ce-534a1e38ed93
 ---
-# vscanf_s, vwscanf_s
+# `vscanf_s`, `vwscanf_s`
 
 Reads formatted data from the standard input stream. These versions of [`vscanf`, `vwscanf`](vscanf-vwscanf.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

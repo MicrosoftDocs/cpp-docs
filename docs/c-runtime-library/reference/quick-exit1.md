@@ -10,7 +10,7 @@ f1_keywords: ["quick_exit", "process/quick_exit", "stdlib/quick_exit"]
 helpviewer_keywords: ["quick_exit function"]
 ms.assetid: ecfbdae6-01c4-45fa-aaeb-b368e1de2a9c
 ---
-# quick_exit
+# `quick_exit`
 
 Causes normal program termination to occur.
 

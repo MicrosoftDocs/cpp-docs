@@ -10,7 +10,7 @@ f1_keywords: ["_istalpha", "_ismbcalpha_l", "isalpha", "_isalpha_l", "iswalpha",
 helpviewer_keywords: ["_iswalpha_l function", "_isalpha_l function", "_ismbcalpha_l function", "_istalpha_l function", "_ismbcalpha function", "isalpha function", "iswalpha function", "istalpha function", "_istalpha function"]
 ms.assetid: ed6cc2be-c4b0-4475-87ac-bc06d8c23064
 ---
-# isalpha, iswalpha, _isalpha_l, _iswalpha_l
+# `isalpha`, `iswalpha`, `_isalpha_l`, `_iswalpha_l`
 
 Determines whether an integer represents an alphabetic character.
 

@@ -10,7 +10,7 @@ f1_keywords: ["trunc", "truncf", "truncl", "math/trunc", "math/truncf", "math/tr
 helpviewer_keywords: ["trunc function", "truncf function", "truncl function"]
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
 ---
-# trunc, truncf, truncl
+# `trunc`, `truncf`, `truncl`
 
 Determines the nearest integer that is less than or equal to the specified floating-point value.
 

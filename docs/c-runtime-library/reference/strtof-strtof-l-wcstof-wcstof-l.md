@@ -10,7 +10,7 @@ f1_keywords: ["_tcstof", "_tcstof_l", "stdlib/strtof", "strtof", "stdlib/_strtof
 helpviewer_keywords: ["_strtof_l function", "_tcstof function", "_wcstof_l function", "wcstof function", "_tcstof_l function", "strtof function"]
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
 ---
-# strtof, _strtof_l, wcstof, _wcstof_l
+# `strtof`, `_strtof_l`, `wcstof`, `_wcstof_l`
 
 Converts strings to a single-precision floating-point value.
 

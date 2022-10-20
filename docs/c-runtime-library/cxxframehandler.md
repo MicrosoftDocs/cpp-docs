@@ -10,7 +10,7 @@ f1_keywords: ["__CxxFrameHandler"]
 helpviewer_keywords: ["__CxxFrameHandler"]
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
 ---
-# __CxxFrameHandler
+# `__CxxFrameHandler`
 
 Internal CRT function. Used by the CRT to handle structured exception frames.
 

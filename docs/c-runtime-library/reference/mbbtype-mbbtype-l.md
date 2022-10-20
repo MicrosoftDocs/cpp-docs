@@ -10,7 +10,7 @@ f1_keywords: ["_mbbtype_l", "mbbtype", "mbbtype_l", "_mbbtype"]
 helpviewer_keywords: ["_mbbtype function", "_mbbtype_l function", "mbbtype function", "mbbtype_l function"]
 ms.assetid: b8e34b40-842a-4298-aa39-0bd2d8e51c2a
 ---
-# _mbbtype, _mbbtype_l
+# `_mbbtype`, `_mbbtype_l`
 
 Returns the byte type, based on the previous byte.
 

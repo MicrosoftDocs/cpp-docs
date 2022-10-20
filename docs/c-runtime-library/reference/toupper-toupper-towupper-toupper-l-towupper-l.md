@@ -10,7 +10,7 @@ f1_keywords: ["towupper", "_toupper", "_totupper", "toupper"]
 helpviewer_keywords: ["_toupper function", "towupper function", "uppercase, converting strings to", "totupper function", "string conversion, to different characters", "towupper_l function", "toupper_l function", "string conversion, case", "_toupper_l function", "_towupper_l function", "_totupper function", "case, converting", "characters, converting", "toupper function"]
 ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
 ---
-# toupper, _toupper, towupper, _toupper_l, _towupper_l
+# `toupper`, `_toupper`, `towupper`, `_toupper_l`, `_towupper_l`
 
 Convert character to uppercase.
 

@@ -6,7 +6,7 @@ f1_keywords: ["environ", "wenviron", "_wenviron", "_environ"]
 helpviewer_keywords: ["environ function", "_environ function", "_wenviron function", "process environment", "wenviron function"]
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
 ---
-# _environ, _wenviron
+# `_environ`, `_wenviron`
 
 The `_environ` variable is a pointer to an array of pointers to the multibyte-character strings that constitute the process environment. This global variable has been deprecated for the more secure functional versions [`getenv_s`, `_wgetenv_s`](./reference/getenv-s-wgetenv-s.md) and [`_putenv_s`, `_wputenv_s`](./reference/putenv-s-wputenv-s.md), which should be used in place of the global variable. `_environ` is declared in Stdlib.h.
 

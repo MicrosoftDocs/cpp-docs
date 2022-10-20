@@ -10,7 +10,7 @@ f1_keywords: ["_mbsnbcnt", "wcsncnt", "_tcsnbcnt", "_mbsnccnt", "_ftcsnbcnt", "m
 helpviewer_keywords: ["_strncnt function", "_mbsnbcnt function", "_mbsnbcnt_l function", "_mbsnccnt_l function", "mbsnbcnt_l function", "mbsnbcnt function", "tcsnbcnt function", "mbsnccnt_l function", "strncnt function", "_tcsnbcnt function", "mbsnccnt function", "wcsncnt function", "_mbsnccnt function", "_wcsncnt function"]
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
 ---
-# _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
+# `_strncnt`, `_wcsncnt`, `_mbsnbcnt`, `_mbsnbcnt_l`, `_mbsnccnt`, `_mbsnccnt_l`
 
 Returns the number of characters or bytes within a specified count.
 

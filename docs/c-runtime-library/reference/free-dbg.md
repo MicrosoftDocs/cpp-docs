@@ -10,7 +10,7 @@ f1_keywords: ["_free_dbg", "free_dbg"]
 helpviewer_keywords: ["memory blocks, deallocating", "freeing memory", "_free_dbg function", "free_dbg function"]
 ms.assetid: fc5e8299-616d-48a0-b979-e037117278c6
 ---
-# _free_dbg
+# `_free_dbg`
 
 Frees a block of memory in the heap (debug version only).
 

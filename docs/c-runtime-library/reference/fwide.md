@@ -10,7 +10,7 @@ f1_keywords: ["fwide"]
 helpviewer_keywords: ["fwide function"]
 ms.assetid: a4641f5b-d74f-4946-95d5-53a64610d28d
 ---
-# fwide
+# `fwide`
 
 Unimplemented.
 

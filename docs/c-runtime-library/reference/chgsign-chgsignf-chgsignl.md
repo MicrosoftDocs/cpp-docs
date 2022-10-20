@@ -10,7 +10,7 @@ f1_keywords: ["_chgsignf", "chgsign", "_chgsignl", "_chgsign"]
 helpviewer_keywords: ["_chgsignl function", "_chgsignf function", "chgsign function", "_chgsign function"]
 ms.assetid: a6646f8e-213d-4564-8617-f43bc66f989f
 ---
-# _chgsign, _chgsignf, _chgsignl
+# `_chgsign`, `_chgsignf`, `_chgsignl`
 
 Reverses the sign of a floating-point argument.
 

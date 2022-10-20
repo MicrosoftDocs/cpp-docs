@@ -10,7 +10,7 @@ f1_keywords: ["clearerr"]
 helpviewer_keywords: ["error indicator for streams", "resetting stream error indicator", "clearerr function"]
 ms.assetid: a9711cd4-3335-43d4-a018-87bbac5b3bac
 ---
-# clearerr
+# `clearerr`
 
 Resets the error indicator for a stream. A more secure version of this function is available; see [`clearerr_s`](clearerr-s.md).
 

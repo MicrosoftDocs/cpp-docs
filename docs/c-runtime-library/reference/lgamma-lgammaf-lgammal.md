@@ -10,7 +10,7 @@ f1_keywords: ["lgamma", "lgammaf", "lgammal", "math/lgamma", "math/lgammaf", "ma
 helpviewer_keywords: ["lgamma function", "lgammal function", "lgammaf function"]
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
 ---
-# lgamma, lgammaf, lgammal
+# `lgamma`, `lgammaf`, `lgammal`
 
 Determines the natural logarithm of the absolute value of the gamma function of the specified value.
 

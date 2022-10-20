@@ -10,7 +10,7 @@ f1_keywords: ["getche"]
 helpviewer_keywords: ["getche function"]
 ms.assetid: 95e62bb8-eec0-4145-b2e8-f6406849af52
 ---
-# getche
+# `getche`
 
 The Microsoft-specific function name `getche` is a deprecated alias for the [`_getche`](getche-getwche.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

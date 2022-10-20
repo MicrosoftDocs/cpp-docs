@@ -10,7 +10,7 @@ f1_keywords: ["wctrans"]
 helpviewer_keywords: ["character codes, wctrans", "characters, codes", "characters, converting", "wctrans function"]
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
 ---
-# wctrans
+# `wctrans`
 
 Determines a mapping from one set of character codes to another.
 

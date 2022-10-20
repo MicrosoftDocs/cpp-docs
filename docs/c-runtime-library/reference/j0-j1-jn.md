@@ -10,7 +10,7 @@ f1_keywords: ["jn", "j1", "j0"]
 helpviewer_keywords: ["jn function", "j1 function", "j0 function"]
 ms.assetid: ec8a9512-aacb-423c-a845-fc8927e6e21d
 ---
-# j0, j1, jn
+# `j0`, `j1`, `jn`
 
 The Microsoft-implemented POSIX function names `j0`, `j1`, and `jn` are deprecated aliases for the [`_j0`, `_j1`, and `_jn`](bessel-functions-j0-j1-jn-y0-y1-yn.md) functions. By default, they generate [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The names are deprecated because they don't follow the Standard C rules for implementation-specific names. However, the functions are still supported.
 

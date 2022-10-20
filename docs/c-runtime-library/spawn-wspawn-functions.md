@@ -8,7 +8,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_spawn", "_tspawnlp", "_tspawnlpe", "_tspawnve", "_tspawnvp", "_tspawnvpe", "_tspawnl", "spawn", "_tspawnv", "_tspawnle", "wspawn"]
 helpviewer_keywords: ["_tspawnve function", "_spawn functions", "_tspawnlpe function", "tspawnvpe function", "processes, creating", "tspawnve function", "_tspawnvp function", "spawn functions", "tspawnl function", "tspawnlp function", "_tspawnvpe function", "_tspawnl function", "tspawnvp function", "tspawnv function", "processes, executing new", "_tspawnv function", "tspawnle function", "process creation", "_tspawnlp function", "tspawnlpe function", "_tspawnle function"]
 ---
-# `_spawn`, `_wspawn` Functions
+# `_spawn`, `_wspawn` functions
 
 Each of the `_spawn` functions creates and executes a new process:
 

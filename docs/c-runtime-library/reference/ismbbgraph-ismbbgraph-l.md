@@ -10,7 +10,7 @@ f1_keywords: ["_ismbbgraph", "_ismbbgraph_l", "ismbbgraph", "ismbbgraph_l"]
 helpviewer_keywords: ["_ismbbgraph_l function", "ismbbgraph_l function", "_ismbbgraph function", "ismbbgraph function"]
 ms.assetid: b60db718-134f-4796-acc1-592d0b9efbb7
 ---
-# _ismbbgraph, _ismbbgraph_l
+# `_ismbbgraph`, `_ismbbgraph_l`
 
 Determines whether a particular multibyte character is a graphical character.
 

@@ -10,7 +10,7 @@ f1_keywords: ["csinh", "csinhf", "csinhl", "complex/csinh", "complex/csinhf", "c
 helpviewer_keywords: ["csinh function", "csinhf function", "csinhl function"]
 ms.assetid: cc616e55-d14d-4cd3-91f0-fbee03ce5edf
 ---
-# csinh, csinhf, csinhl
+# `csinh`, `csinhf`, `csinhl`
 
 Retrieves the hyperbolic sine of a complex number.
 

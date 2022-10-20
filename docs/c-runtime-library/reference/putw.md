@@ -10,7 +10,7 @@ f1_keywords: ["_putw"]
 helpviewer_keywords: ["integers, writing to streams", "putw function", "streams, writing integers to", "_putw function"]
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
 ---
-# _putw
+# `_putw`
 
 Writes an integer to a stream.
 

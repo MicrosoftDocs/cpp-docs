@@ -10,7 +10,7 @@ f1_keywords: ["fgetpos"]
 helpviewer_keywords: ["fgetpos function", "streams, file position indicator"]
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
 ---
-# fgetpos
+# `fgetpos`
 
 Gets a stream's file-position indicator.
 

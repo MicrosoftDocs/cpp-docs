@@ -10,7 +10,7 @@ f1_keywords: ["ferror"]
 helpviewer_keywords: ["ferror function", "streams, testing for errors", "errors [C++], testing for stream"]
 ms.assetid: 528a34bc-f2aa-4c3f-b89a-5b148e6864f7
 ---
-# ferror
+# `ferror`
 
 Tests for an error on a stream.
 

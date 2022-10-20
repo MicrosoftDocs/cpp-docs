@@ -11,7 +11,7 @@ helpviewer_keywords: ["__argv", "__wargv", "__argc"]
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
 no-loc: [__argc, __argv, __wargv, main, wmain]
 ---
-# __argc, __argv, __wargv
+# `__argc`, `__argv`, `__wargv`
 
 The `__argc` global variable is a count of the number of command-line arguments passed to the program. `__argv` is a pointer to an array of single-byte-character or multi-byte-character strings that contain the program arguments, and `__wargv` is a pointer to an array of wide-character strings that contain the program arguments. These global variables provide the arguments to `main` or `wmain`.
 

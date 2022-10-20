@@ -10,7 +10,7 @@ f1_keywords: ["_aligned_offset_malloc", "aligned_offset_malloc"]
 helpviewer_keywords: ["_aligned_offset_malloc function", "aligned_offset_malloc function"]
 ms.assetid: 447681a3-7c95-4655-86ba-fa3a4ca4c521
 ---
-# _aligned_offset_malloc
+# `_aligned_offset_malloc`
 
 Allocates memory on a specified alignment boundary.
 

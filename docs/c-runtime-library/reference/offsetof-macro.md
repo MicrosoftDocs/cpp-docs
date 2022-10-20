@@ -9,7 +9,7 @@ f1_keywords: ["offsetof"]
 helpviewer_keywords: ["structure members, offset", "offsetof macro"]
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
 ---
-# offsetof Macro
+# `offsetof` Macro
 
 Retrieves the offset of a member from the beginning of its parent structure.
 

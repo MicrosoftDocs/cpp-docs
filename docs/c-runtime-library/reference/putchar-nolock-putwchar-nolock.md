@@ -10,7 +10,7 @@ f1_keywords: ["putwchar_nolock", "_puttchar_nolock", "_putchar_nolock", "_putwch
 helpviewer_keywords: ["_puttchar_nolock function", "putchar_nolock function", "characters, writing", "standard output, writing to", "putwchar_nolock function", "_putchar_nolock function", "_putwchar_nolock function", "puttchar_nolock function"]
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
 ---
-# _putchar_nolock, _putwchar_nolock
+# `_putchar_nolock`, `_putwchar_nolock`
 
 Writes a character to **stdout** without locking the thread.
 

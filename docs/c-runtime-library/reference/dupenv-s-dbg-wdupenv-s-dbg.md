@@ -10,7 +10,7 @@ f1_keywords: ["_tdupenv_s_dbg", "_dupenv_s_dbg", "_wdupenv_s_dbg"]
 helpviewer_keywords: ["_tdupenv_s_dbg function", "dupenv_s_dbg function", "_wdupenv_s_dbg function", "environment variables", "tdupenv_s_dbg function", "wdupenv_s_dbg function", "_dupenv_s_dbg function"]
 ms.assetid: e3d81148-e24e-46d0-a21d-fd87b5e6256c
 ---
-# _dupenv_s_dbg, _wdupenv_s_dbg
+# `_dupenv_s_dbg`, `_wdupenv_s_dbg`
 
 Get a value from the current environment.  Versions of [`_dupenv_s`, `_wdupenv_s`](dupenv-s-wdupenv-s.md) that allocate memory with [`_malloc_dbg`](malloc-dbg.md) to provide more debugging information.
 

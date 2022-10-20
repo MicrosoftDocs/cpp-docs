@@ -10,7 +10,7 @@ f1_keywords: ["longjmp"]
 helpviewer_keywords: ["restoring stack environment and execution locale", "longjmp function"]
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
 ---
-# longjmp
+# `longjmp`
 
 Restores the stack environment and execution locale set by a `setjmp` call.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_ismbbalnum", "ismbbalnum", "_ismbbalnum_l", "ismbbalnum_l"]
 helpviewer_keywords: ["_ismbbalnum_l function", "ismbbalnum function", "ismbbalnum_l function", "_ismbbalnum function"]
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
 ---
-# _ismbbalnum, _ismbbalnum_l
+# `_ismbbalnum`, `_ismbbalnum_l`
 
 Determines whether a specified multibyte character is alpha or numeric.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_fstrpbrk", "_mbspbrk", "strpbrk", "_tcspbrk", "_ftcspbrk", "wcsp
 helpviewer_keywords: ["fstrpbrk function", "_ftcspbrk function", "_mbspbrk_l function", "strpbrk function", "_fstrpbrk function", "mbspbrk function", "characters [C++], scanning strings", "_tcspbrk function", "wcspbrk function", "ftcspbrk function", "character sets [C++], scanning strings for characters", "strings [C++], scanning", "tcspbrk function", "_mbspbrk function", "mbspbrk_l function"]
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
 ---
-# strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
+# `strpbrk`, `wcspbrk`, `_mbspbrk`, `_mbspbrk_l`
 
 Scans strings for characters in specified character sets.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_cabs"]
 helpviewer_keywords: ["cabs function", "absolute values", "_cabs function", "calculating absolute values"]
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
 ---
-# _cabs
+# `_cabs`
 
 Calculates the absolute value of a complex number.
 

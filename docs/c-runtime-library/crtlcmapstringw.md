@@ -10,7 +10,7 @@ f1_keywords: ["__crtLCMapStringW"]
 helpviewer_keywords: ["__crtLCMapStringW"]
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
 ---
-# __crtLCMapStringW
+# `__crtLCMapStringW`
 
 Maps one character string to another, performing a specified locale-dependent transformation. This function can also be used to generate a sort key for the input string.
 

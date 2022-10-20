@@ -10,7 +10,7 @@ f1_keywords: ["carg", "cargf", "cargl", "complex/carg", "complex/cargf", "comple
 helpviewer_keywords: ["carg function", "cargf function", "cargl function"]
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
 ---
-# carg, cargf, cargl
+# `carg`, `cargf`, `cargl`
 
 Retrieves the argument of a complex number, with a branch cut along the negative real axis.
 

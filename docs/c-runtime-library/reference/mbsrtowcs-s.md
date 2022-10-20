@@ -10,7 +10,7 @@ f1_keywords: ["mbsrtowcs_s"]
 helpviewer_keywords: ["mbsrtowcs_s function"]
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60
 ---
-# mbsrtowcs_s
+# `mbsrtowcs_s`
 
 Convert a multibyte character string in the current locale to its wide character string representation. A version of [`mbsrtowcs`](mbsrtowcs.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

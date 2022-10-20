@@ -10,7 +10,7 @@ f1_keywords: ["_CIlog", "CIlog"]
 helpviewer_keywords: ["_CIlog intrinsic", "CIlog intrinsic"]
 ms.assetid: 23503854-ddaa-4fe0-a4a3-7fbb3a43bdec
 ---
-# _CIlog
+# `_CIlog`
 
 Calculates the natural logarithm of the top value in the stack.
 

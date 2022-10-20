@@ -10,7 +10,7 @@ f1_keywords: ["_heapmin", "heapmin"]
 helpviewer_keywords: ["heap memory", "minimizing heaps", "memory, releasing", "heaps, releasing unused memory", "_heapmin function", "heapmin function"]
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
 ---
-# _heapmin
+# `_heapmin`
 
 Releases unused heap memory to the operating system.
 

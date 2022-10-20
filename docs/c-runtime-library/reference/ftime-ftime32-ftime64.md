@@ -10,7 +10,7 @@ f1_keywords: ["_ftime32", "_ftime", "_ftime64", "ftime64", "ftime", "ftime32"]
 helpviewer_keywords: ["ftime64 function", "_ftime64 function", "current time", "_ftime function", "ftime function", "_ftime32 function", "ftime32 function", "time, getting current"]
 ms.assetid: 96bc464c-3bcd-41d5-a212-8bbd836b814a
 ---
-# _ftime, _ftime32, _ftime64
+# `_ftime`, `_ftime32`, `_ftime64`
 
 Get the current time. More secure versions of these functions are available; see [`_ftime_s`, `_ftime32_s`, `_ftime64_s`](ftime-s-ftime32-s-ftime64-s.md).
 

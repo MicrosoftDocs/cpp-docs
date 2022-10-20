@@ -10,7 +10,7 @@ f1_keywords: ["_mbsupr", "_ftcsupr", "mbsupr", "_tcsupr", "strupr_l", "_fstrupr"
 helpviewer_keywords: ["tcsupr_l function", "mbsupr function", "strupr function", "uppercase, converting strings to", "wcsupr function", "_wcsupr function", "string conversion [C++], case", "ftcsupr function", "_ftcsupr function", "_wcsupr_l function", "wcsupr_l function", "strings [C++], case", "tcsupr function", "_tcsupr_l function", "_fstrupr function", "_strupr_l function", "_mbsupr_l function", "converting case, CRT functions", "fstrupr function", "mbsupr_l function", "strupr_l function", "_strupr function", "_mbsupr function", "_tcsupr function", "strings [C++], converting case"]
 ms.assetid: caac8f16-c233-41b6-91ce-575ec7061b77
 ---
-# _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
+# `_strupr`, `_strupr_l`, `_mbsupr`, `_mbsupr_l`, `_wcsupr_l`, `_wcsupr`
 
 Converts a string to uppercase. More secure versions of these functions are available; see [`_strupr_s`, `_strupr_s_l`, `_mbsupr_s`, `_mbsupr_s_l`, `_wcsupr_s`, `_wcsupr_s_l`](strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md).
 

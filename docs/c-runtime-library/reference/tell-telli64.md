@@ -10,7 +10,7 @@ f1_keywords: ["telli64", "_telli64", "_tell"]
 helpviewer_keywords: ["tell function", "file pointers [C++], getting", "_tell function", "file pointers [C++]", "telli64 function", "_telli64 function"]
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
 ---
-# _tell, _telli64
+# `_tell`, `_telli64`
 
 Get the position of the file pointer.
 

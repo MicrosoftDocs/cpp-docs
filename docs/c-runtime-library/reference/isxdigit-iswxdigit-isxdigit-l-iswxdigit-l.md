@@ -10,7 +10,7 @@ f1_keywords: ["iswxdigit", "isxdigit", "_istxdigit"]
 helpviewer_keywords: ["isxdigit function", "istxdigit function", "_iswxdigit_l function", "_istxdigit function", "_isxdigit_l function", "iswxdigit_l function", "isxdigit_l function", "hexadecimal characters", "iswxdigit function"]
 ms.assetid: c8bc5146-0b58-4e3f-bee3-f2318dd0f829
 ---
-# isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
+# `isxdigit`, `iswxdigit`, `_isxdigit_l`, `_iswxdigit_l`
 
 Determines whether an integer represents a character that is a hexadecimal digit.
 

@@ -10,7 +10,7 @@ f1_keywords: ["ctan", "ctanf", "ctanl", "complex/ctan", "complex/ctanf", "comple
 helpviewer_keywords: ["ctan function", "ctanf function", "ctanl function"]
 ms.assetid: d3cbd25c-1e93-4a6d-8154-da42921f7223
 ---
-# ctan, ctanf, ctanl
+# `ctan`, `ctanf`, `ctanl`
 
 Retrieves the tangent of a complex number.
 

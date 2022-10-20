@@ -10,7 +10,7 @@ f1_keywords: ["_ismbbkalnum", "ismbbkalnum", "ismbbkalnum_l", "_ismbbkalnum_l"]
 helpviewer_keywords: ["_ismbbkalnum_l function", "ismbbkalnum_l function", "_ismbbkalnum function", "ismbbkalnum function"]
 ms.assetid: e1d70e7b-29d0-469c-9d93-442b99de22ac
 ---
-# _ismbbkalnum, _ismbbkalnum_l
+# `_ismbbkalnum`, `_ismbbkalnum_l`
 
 Determines whether a particular multibyte character is a non-ASCII text symbol.
 

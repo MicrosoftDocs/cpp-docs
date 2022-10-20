@@ -10,7 +10,7 @@ f1_keywords: ["set_printf_count_output", "_set_printf_count_output"]
 helpviewer_keywords: ["%n format", "set_printf_count_output function", "_set_printf_count_output function"]
 ms.assetid: d8259ec5-764e-42d0-9169-72172e95163b
 ---
-# _set_printf_count_output
+# `_set_printf_count_output`
 
 Enable or disable support of the **%n** format in [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)-family functions.
 

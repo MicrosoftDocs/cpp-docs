@@ -10,7 +10,7 @@ f1_keywords: ["_query_new_handler", "query_new_handler"]
 helpviewer_keywords: ["query_new_handler function", "handler routines", "error handling", "_query_new_handler function"]
 ms.assetid: 9a84b5c3-fe33-4c01-83a0-be87dc3ec518
 ---
-# _query_new_handler
+# `_query_new_handler`
 
 Returns the address of the current new handler routine.
 

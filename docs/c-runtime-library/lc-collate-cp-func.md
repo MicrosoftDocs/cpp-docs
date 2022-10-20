@@ -10,7 +10,7 @@ f1_keywords: ["___lc_collate_cp_func"]
 helpviewer_keywords: ["___lc_collate_cp_func"]
 ms.assetid: 46ccc084-7ac9-4e5d-9138-e12cb5845615
 ---
-# ___lc_collate_cp_func
+# `___lc_collate_cp_func`
 
 Internal CRT function. Retrieves the current collation code page of the thread.
 

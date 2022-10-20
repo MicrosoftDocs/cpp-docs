@@ -9,7 +9,7 @@ f1_keywords: ["std::not", "std.not", "Not"]
 helpviewer_keywords: ["not function"]
 ms.assetid: d2ddbd5c-33c0-4aff-8961-feac155b4ba1
 ---
-# not
+# `not`
 
 An alternative to the ! operator.
 

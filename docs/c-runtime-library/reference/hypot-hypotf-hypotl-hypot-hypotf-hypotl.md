@@ -10,7 +10,7 @@ f1_keywords: ["hypotf", "hypotl", "_hypotl", "hypot", "_hypot", "_hypotf"]
 helpviewer_keywords: ["hypotenuse calculation", "hypot function", "hypotf function", "triangles, calculating hypotenuse", "hypotl function", "calculating hypotenuses", "_hypot function"]
 ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
 ---
-# hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
+# `hypot`, `hypotf`, `hypotl`, `_hypot`, `_hypotf`, `_hypotl`
 
 Calculates the hypotenuse.
 

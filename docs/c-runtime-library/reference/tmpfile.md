@@ -10,7 +10,7 @@ f1_keywords: ["tmpfile"]
 helpviewer_keywords: ["temporary files", "tmpfile function", "temporary files, creating"]
 ms.assetid: c4a4dc24-70da-438d-ae4e-98352d88e375
 ---
-# tmpfile
+# `tmpfile`
 
 Creates a temporary file. This function is deprecated because a more secure version is available; see [`tmpfile_s`](tmpfile-s.md).
 

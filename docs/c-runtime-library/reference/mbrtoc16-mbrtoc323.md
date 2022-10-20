@@ -10,7 +10,7 @@ f1_keywords: ["mbrtoc16", "mbrtoc32", "uchar/mbrtoc16", "uchar/mbrtoc32"]
 helpviewer_keywords: ["mbrtoc16 function", "mbrtoc32 function"]
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
 ---
-# mbrtoc16, mbrtoc32
+# `mbrtoc16`, `mbrtoc32`
 
 Translates the first UTF-8 multibyte character in a string into the equivalent UTF-16 or UTF-32 character.
 

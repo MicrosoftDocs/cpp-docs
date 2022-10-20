@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["get_printf_count_output", "_get_printf_count_output"]
 helpviewer_keywords: ["%n format", "get_printf_count_output function", "_get_printf_count_output function"]
 ---
-# _get_printf_count_output
+# `_get_printf_count_output`
 
 Indicates whether [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)-family functions support the **%n** format.
 

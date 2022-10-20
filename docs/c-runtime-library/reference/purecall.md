@@ -10,7 +10,7 @@ f1_keywords: ["purecall", "_purecall"]
 helpviewer_keywords: ["_purecall function", "purecall function"]
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
 ---
-# _purecall
+# `_purecall`
 
 The default pure virtual function call error handler. The compiler generates code to call this function when a pure virtual member function is called.
 

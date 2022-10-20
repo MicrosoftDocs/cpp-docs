@@ -10,7 +10,7 @@ f1_keywords: ["ctime64_s", "_ctime32_s", "_tctime32_s", "_ctime64_s", "_wctime_s
 helpviewer_keywords: ["_wctime32_s function", "ctime64_s function", "_tctime64_s function", "_wctime_s function", "tctime_s function", "_wctime64_s function", "ctime_s function", "ctime32_s function", "_ctime64_s function", "tctime64_s function", "wctime64_s function", "wctime_s function", "_tctime_s function", "tctime32_s function", "wctime32_s function", "time, converting", "_ctime32_s function", "_tctime32_s function"]
 ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
 ---
-# ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
+# `ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`
 
 Convert a time value to a string and adjust for local time zone settings. These functions are versions of [`ctime`, `_ctime64`, `_wctime`, `_wctime64`](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

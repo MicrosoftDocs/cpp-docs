@@ -10,7 +10,7 @@ f1_keywords: ["strnextc", "tcsnextc", "_mbsnextc_l", "_mbsnextc", "mbsnextc_l", 
 helpviewer_keywords: ["_mbsnextc function", "_tcsnextc function", "_wcsnextc function", "tcsnextc function", "strnextc function", "mbsnextc function", "_strnextc function", "_mbsnextc_l function", "mbsnextc_l function", "wcsnextc function"]
 ms.assetid: e3086173-9eb5-4540-a23a-5d866bd05340
 ---
-# _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
+# `_strnextc`, `_wcsnextc`, `_mbsnextc`, `_mbsnextc_l`
 
 Finds the next character in a string.
 

@@ -9,7 +9,7 @@ f1_keywords: ["std::or_eq", "or_eq", "std.or_eq"]
 helpviewer_keywords: ["or_eq function"]
 ms.assetid: 1eb92464-ed58-40d8-a30e-f0a6aa2f4318
 ---
-# or_eq
+# `or_eq`
 
 An alternative to the `|=` operator.
 

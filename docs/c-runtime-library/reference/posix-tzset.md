@@ -10,7 +10,7 @@ f1_keywords: ["tzset"]
 helpviewer_keywords: ["tzset function"]
 ms.assetid: c3afa5d0-cb15-4163-9181-fafb962c95aa
 ---
-# tzset
+# `tzset`
 
 The Microsoft-implemented POSIX function name `tzset` is a deprecated alias for the [`_tzset`](tzset.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

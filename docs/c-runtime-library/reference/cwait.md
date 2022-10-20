@@ -10,7 +10,7 @@ f1_keywords: ["_cwait"]
 helpviewer_keywords: ["cwait function", "_cwait function"]
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
 ---
-# _cwait
+# `_cwait`
 
 Waits until another process terminates.
 

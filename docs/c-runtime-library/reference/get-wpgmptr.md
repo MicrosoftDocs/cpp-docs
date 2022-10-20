@@ -10,7 +10,7 @@ f1_keywords: ["get_wpgmptr", "_get_wpgmptr"]
 helpviewer_keywords: ["_wpgmptr global variable", "get_wpgmptr function", "wpgmptr global variable", "_get_wpgmptr function"]
 ms.assetid: a77cdd13-2303-4b7c-9a60-8debdbef2011
 ---
-# _get_wpgmptr
+# `_get_wpgmptr`
 
 Gets the current value of the **_wpgmptr** global variable.
 

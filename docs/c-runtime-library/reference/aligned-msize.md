@@ -10,7 +10,7 @@ f1_keywords: ["_aligned_msize", "aligned_msize"]
 helpviewer_keywords: ["aligned_msize function", "_aligned_msize function"]
 ms.assetid: 10995edc-2110-4212-9ca9-5e0220a464f4
 ---
-# _aligned_msize
+# `_aligned_msize`
 
 Returns the size of a memory block allocated in the heap.
 

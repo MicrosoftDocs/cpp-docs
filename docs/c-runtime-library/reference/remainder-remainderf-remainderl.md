@@ -10,7 +10,7 @@ f1_keywords: ["remainderf", "remainder", "remainderl"]
 helpviewer_keywords: ["remainderf", "remainderl", "remainder"]
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
 ---
-# remainder, remainderf, remainderl
+# `remainder`, `remainderf`, `remainderl`
 
 Computes the remainder of the quotient of two floating-point values, rounded to the nearest integral value.
 

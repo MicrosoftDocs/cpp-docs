@@ -10,7 +10,7 @@ f1_keywords: ["_msize_dbg", "msize_dbg"]
 helpviewer_keywords: ["memory blocks", "_msize_dbg function", "msize_dbg function"]
 ms.assetid: a333f4b6-f8a2-4e61-bb69-cb34063b8cef
 ---
-# _msize_dbg
+# `_msize_dbg`
 
 Calculates the size of a block of memory in the heap (debug version only).
 

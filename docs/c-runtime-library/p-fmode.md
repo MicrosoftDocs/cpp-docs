@@ -10,7 +10,7 @@ f1_keywords: ["__p__fmode"]
 helpviewer_keywords: ["__p__fmode"]
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
 ---
-# __p__fmode
+# `__p__fmode`
 
 Points to the `_fmode` global variable, which specifies the default *file translation mode* for file I/O operations.
 

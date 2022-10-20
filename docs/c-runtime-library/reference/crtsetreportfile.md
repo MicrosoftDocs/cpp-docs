@@ -10,7 +10,7 @@ f1_keywords: ["CrtSetReportFile", "_CrtSetReportFile"]
 helpviewer_keywords: ["CrtSetReportFile function", "_CrtSetReportFile function"]
 ms.assetid: 3126537e-511b-44af-9c1c-0605265eabc4
 ---
-# _CrtSetReportFile
+# `_CrtSetReportFile`
 
 After you use [`_CrtSetReportMode`](crtsetreportmode.md) to specify **_CRTDBG_MODE_FILE**, you can specify the file handle to receive the message text. **_CrtSetReportFile** is also used by [`_CrtDbgReport`, `_CrtDbgReportW`](crtdbgreport-crtdbgreportw.md) to specify the destination of text (debug version only).
 

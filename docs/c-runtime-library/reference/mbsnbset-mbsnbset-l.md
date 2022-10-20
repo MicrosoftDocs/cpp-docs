@@ -10,7 +10,7 @@ f1_keywords: ["mbsnbset", "mbsnbset_l", "_mbsnbset", "_mbsnbset_l"]
 helpviewer_keywords: ["tcsnset function", "_tcsnset_l function", "_mbsnbset function", "_tcsnset function", "_mbsnbset_l function", "mbsnbset_l function", "tcsnset_l function", "mbsnbset function"]
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
 ---
-# _mbsnbset, _mbsnbset_l
+# `_mbsnbset`, `_mbsnbset_l`
 
 Sets the first **n** bytes of a multibyte-character string to a specified character. More secure versions of these functions are available; see [`_mbsnbset_s`, `_mbsnbset_s_l`](mbsnbset-s-mbsnbset-s-l.md).
 

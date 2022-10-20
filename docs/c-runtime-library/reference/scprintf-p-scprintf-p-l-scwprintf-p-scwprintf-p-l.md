@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_scwprintf_p_l", "_sctprintf_p", "scprintf_p_l", "scprintf_p", "_sctprintf_p_l", "scwprintf_p", "_scprintf_p_l", "scwprintf_p_l", "_scprintf_p", "_scwprintf_p"]
 helpviewer_keywords: ["sctprintf_p_l function", "_scwprintf_p_l function", "scprintf_p_l function", "_scprintf_p function", "_scprintf_p_l function", "scprintf_p function", "sctprintf_p function", "_scwprintf_p function", "_sctprintf_p function", "scwprintf_p function", "scwprintf_p_l function", "_sctprintf_p_l function"]
 ---
-# _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
+# `_scprintf_p`, `_scprintf_p_l`, `_scwprintf_p`, `_scwprintf_p_l`
 
 Returns the number of characters in the formatted string, with the ability to specify the order in which parameters are used in the format string.
 

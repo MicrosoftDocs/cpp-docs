@@ -10,7 +10,7 @@ f1_keywords: ["_snscanf", "_snscanf_l", "_snwscanf", "snscanf_l", "snscanf", "_s
 helpviewer_keywords: ["snscanf_l function", "snwscanf function", "_sntscanf_l function", "sntscanf function", "_snwscanf_l function", "_sntscanf function", "_snscanf_l function", "sntscanf_l function", "strings [C++], reading data from", "snscanf function", "snwscanf_l function", "_snwscanf function", "reading data, strings", "strings [C++], reading", "_snscanf function"]
 ms.assetid: da1ac890-f905-4cd7-954b-3c90957b5551
 ---
-# _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
+# `_snscanf`, `_snscanf_l`, `_snwscanf`, `_snwscanf_l`
 
 Reads formatted data of a specified length from a string. More secure versions of these functions are available; see [`_snscanf_s`, `_snscanf_s_l`, `_snwscanf_s`, `_snwscanf_s_l`](snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md).
 

@@ -10,7 +10,7 @@ f1_keywords: ["assert", "_assert", "_wassert", "assert/_wassert"]
 helpviewer_keywords: ["aborting programs", "assert function", "assert macro"]
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
 ---
-# `assert` Macro, `_assert`, `_wassert`
+# `assert` macro, `_assert`, `_wassert`
 
 Evaluates an expression and, when the result is **`false`**, prints a diagnostic message and aborts the program.
 

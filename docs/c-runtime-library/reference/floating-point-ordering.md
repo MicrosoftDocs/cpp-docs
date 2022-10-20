@@ -5,7 +5,7 @@ ms.date: "01/31/2019"
 f1_keywords: ["isgreater", "math/isgreater", "isgreaterequal", "math/isgreaterequal", "isless", "math/isless", "islessequal", "math/islessequal", "islessgreater", "math/islessgreater", "isunordered", "math/isunordered"]
 helpviewer_keywords: ["isgreater function", "isgreaterequal function", "isless function", "islessequal function", "islessgreater function", "isunordered function"]
 ---
-# isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered
+# `isgreater`, `isgreaterequal`, `isless`, `islessequal`, `islessgreater`, `isunordered`
 
 Determines the ordering relationship between two floating-point values.
 

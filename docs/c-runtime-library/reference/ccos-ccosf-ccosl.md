@@ -10,7 +10,7 @@ f1_keywords: ["ccos", "ccosf", "ccosl", "complex/ccos", "complex/ccosf", "comple
 helpviewer_keywords: ["ccos function", "ccosf function", "ccosl function"]
 ms.assetid: 4ab936ac-ff85-49ac-9418-2b69cf5d4696
 ---
-# ccos, ccosf, ccosl
+# `ccos`, `ccosf`, `ccosl`
 
 Retrieves the cosine of a complex number.
 

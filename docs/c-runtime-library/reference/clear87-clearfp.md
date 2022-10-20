@@ -10,7 +10,7 @@ f1_keywords: ["clearfp", "_clearfp", "_clear87", "clear87"]
 helpviewer_keywords: ["clearing floating point status word", "clearfp function", "_clear87 function", "_clearfp function", "clear87 function"]
 ms.assetid: 72d24a70-7688-4793-ae09-c96d33fcca52
 ---
-# _clear87, _clearfp
+# `_clear87`, `_clearfp`
 
 Gets and clears the floating-point status word.
 

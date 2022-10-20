@@ -10,7 +10,7 @@ f1_keywords: ["aligned_offset_realloc", "_aligned_offset_realloc"]
 helpviewer_keywords: ["aligned_offset_realloc function", "_aligned_offset_realloc function"]
 ms.assetid: e0263533-991e-41b0-acc9-1b8a51ab9ecd
 ---
-# _aligned_offset_realloc
+# `_aligned_offset_realloc`
 
 Changes the size of a memory block that was allocated with [`_aligned_malloc`](aligned-malloc.md) or [`_aligned_offset_malloc`](aligned-offset-malloc.md).
 

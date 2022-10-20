@@ -10,7 +10,7 @@ f1_keywords: ["_get_errno"]
 helpviewer_keywords: ["get_errno function", "errno global variable", "_get_errno function"]
 ms.assetid: b3fd5ebc-f41b-4314-a2f4-2f2d79d6e740
 ---
-# _get_errno
+# `_get_errno`
 
 Gets the current value of the errno global variable.
 

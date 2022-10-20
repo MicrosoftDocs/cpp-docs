@@ -10,7 +10,7 @@ f1_keywords: ["wcsnicmp", "strnicmp"]
 helpviewer_keywords: ["strnicmp function", "wcsnicmp function"]
 ms.assetid: 01324ee4-0bd9-43e9-b2a3-53d180270a64
 ---
-# strnicmp, wcsnicmp
+# `strnicmp`, `wcsnicmp`
 
 The Microsoft-specific function names `strnicmp` and `wcsnicmp` are deprecated aliases for the [`_strnicmp` and `_wcsnicmp`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) functions. By default, they generate [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The names are deprecated because they don't follow the Standard C rules for implementation-specific names. However, the functions are still supported.
 

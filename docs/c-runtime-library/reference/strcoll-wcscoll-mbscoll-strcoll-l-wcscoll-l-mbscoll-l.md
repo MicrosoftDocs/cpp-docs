@@ -10,7 +10,7 @@ f1_keywords: ["wcscoll", "_mbscoll", "_tcscoll", "_ftcscoll"]
 helpviewer_keywords: ["code pages, using for string comparisons", "mbscoll function", "wcscoll_l function", "ftcscoll function", "wcscoll function", "_strcoll_l function", "tcscoll function", "_ftcscoll function", "_tcscoll function", "_wcscoll_l function", "_mbscoll function", "strcoll_l function", "strcoll functions", "strings [C++], comparing by code page"]
 ms.assetid: 900a7540-c7ec-4c2f-b292-7a85f63e3fe8
 ---
-# strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
+# `strcoll`, `wcscoll`, `_mbscoll`, `_strcoll_l`, `_wcscoll_l`, `_mbscoll_l`
 
 Compares strings by using the current locale or a specified LC_COLLATE conversion-state category.
 

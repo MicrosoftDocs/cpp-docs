@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_cwprintf_s_l", "_cprintf_s", "cwprintf_s", "_cprintf_s_l", "cwprintf_s_l", "cprintf_s_l", "_tcprintf_s", "cprintf_s", "_cwprintf_s", "tcprintf_s"]
 helpviewer_keywords: ["tcprintf_s_l function", "_cprintf_s_l function", "_cwprintf_s_l function", "tcprintf_s function", "_tcprintf_s_l function", "_cwprintf_s function", "cwprintf_s function", "_cprintf_s function", "cprintf_s function", "_tcprintf_s function", "cprintf_s_l function", "cwprintf_s_l function"]
 ---
-# _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
+# `_cprintf_s`, `_cprintf_s_l`, `_cwprintf_s`, `_cwprintf_s_l`
 
 Formats and prints to the console. These versions of [`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`](cprintf-cprintf-l-cwprintf-cwprintf-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

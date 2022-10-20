@@ -10,7 +10,7 @@ f1_keywords: ["CIlog10", "_CIlog10"]
 helpviewer_keywords: ["_CIlog10 intrinsic", "CIlog10 intrinsic"]
 ms.assetid: 05d7fcaa-3cff-4cc5-8d44-015e7cacba24
 ---
-# _CIlog10
+# `_CIlog10`
 
 Performs a `log10` operation on the top value in the stack.
 

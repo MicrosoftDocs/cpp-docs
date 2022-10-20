@@ -10,7 +10,7 @@ f1_keywords: ["findnext", "_wfindnext32i64", "_tfindnext64i32", "findnext32", "f
 helpviewer_keywords: ["_wfindnexti64 function", "_tfindnext32 function", "wfindnexti64 function", "_wfindnext32i64 function", "findnext32i64 function", "tfindnext64i32 function", "_tfindnext64i32 function", "_findnext function", "findnext64i32 function", "_tfindnext function", "findnext32 function", "tfindnext32 function", "_findnext32 function", "_tfindnext32i64 function", "_wfindnext function", "tfindnext function", "_findnext64 function", "findnext64 function", "_findnext64i32 function", "wfindnext32i64 function", "findnext function", "wfindnext32 function", "_wfindnext64i32 function", "findnexti64 function", "_wfindnext64 function", "_findnext32i64 function", "_findnexti64 function", "_tfindnext64 function", "wfindnext64i32 function", "tfindnexti64 function", "wfindnext64 function", "wfindnext function", "tfindnext64 function", "_wfindnext32 function", "tfindnext32i64 function", "_tfindnexti64 function"]
 ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
 ---
-# _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
+# `_findnext`, `_findnext32`, `_findnext32i64`, `_findnext64`, `_findnext64i32`, `_findnexti64`, `_wfindnext`, `_wfindnext32`, `_wfindnext32i64`, `_wfindnext64`, `_wfindnext64i32`, `_wfindnexti64`
 
 Find the next name, if any, that matches the *`filespec`* argument in a previous call to [`_findfirst`](findfirst-functions.md), and then alter the *`fileinfo`* structure contents accordingly.
 

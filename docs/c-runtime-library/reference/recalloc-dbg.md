@@ -10,7 +10,7 @@ f1_keywords: ["recalloc_dbg", "_recalloc_dbg"]
 helpviewer_keywords: ["_recalloc_dbg function", "recalloc_dbg function"]
 ms.assetid: 43c3e9b2-be6d-4508-9b0f-3220c8a47ca3
 ---
-# _recalloc_dbg
+# `_recalloc_dbg`
 
 Reallocates an array and initializes its elements to 0 (debug version only).
 

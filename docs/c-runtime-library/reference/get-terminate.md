@@ -10,7 +10,7 @@ f1_keywords: ["get_terminate", "_get_terminate", "__get_terminate"]
 helpviewer_keywords: ["__get_terminate function", "get_terminate function", "_get_terminate function"]
 ms.assetid: c8f168c4-0ad5-4832-a522-dd1ef383c208
 ---
-# _get_terminate
+# `_get_terminate`
 
 Returns the termination routine to be called by **terminate**.
 

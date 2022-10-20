@@ -9,7 +9,7 @@ f1_keywords: ["fpclassify", "math/fpclassify"]
 helpviewer_keywords: ["fpclassify macro", "fpclassify function"]
 ms.assetid: bf549499-7ff9-4a58-8692-f2d1cb6bab81
 ---
-# fpclassify
+# `fpclassify`
 
 Returns the floating-point classification of the argument.
 

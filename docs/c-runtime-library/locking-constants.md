@@ -6,7 +6,7 @@ f1_keywords: ["_LK_RLCK", "_LK_NBLCK", "_LK_LOCK", "_LK_NBRLCK", "_LK_UNLCK"]
 helpviewer_keywords: ["LK_UNLCK constant", "LK_NBRLCK constant", "_LK_NBRLCK constant", "_LK_NBLCK constant", "_LK_LOCK constant", "LK_NBLCK constant", "_LK_UNLCK constant", "LK_RLCK constant", "_LK_RLCK constant", "LK_LOCK constant"]
 ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
 ---
-# _locking constants
+# `_locking` constants
 
 ## Syntax
 

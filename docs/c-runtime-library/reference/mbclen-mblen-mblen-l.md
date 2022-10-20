@@ -10,7 +10,7 @@ f1_keywords: ["mblen", "ftclen", "_mbclen", "_mbclen_l", "tclen", "_ftclen", "_t
 helpviewer_keywords: ["tclen function", "_mblen_l function", "_tclen function", "mblen_l function", "_mbclen function", "_mbclen_l function", "mbclen function", "mblen function"]
 ms.assetid: d5eb92a0-b7a3-464a-aaf7-9890a8e3ed70
 ---
-# _mbclen, mblen, _mblen_l, _mbclen_l
+# `_mbclen`, `mblen`, `_mblen_l`, `_mbclen_l`
 
 Gets the length and determines the validity of a multibyte character.
 

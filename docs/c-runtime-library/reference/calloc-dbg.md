@@ -10,7 +10,7 @@ f1_keywords: ["_calloc_dbg", "calloc_dbg"]
 helpviewer_keywords: ["_calloc_dbg function", "calloc_dbg function"]
 ms.assetid: 7f62c42b-eb9f-4de5-87d0-df57036c87de
 ---
-# _calloc_dbg
+# `_calloc_dbg`
 
 Allocates memory blocks in the heap with extra space for a debugging header and overwrite buffers (debug version only).
 

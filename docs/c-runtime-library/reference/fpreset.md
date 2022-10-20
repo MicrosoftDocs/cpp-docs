@@ -10,7 +10,7 @@ f1_keywords: ["_fpreset", "fpreset"]
 helpviewer_keywords: ["fpreset function", "floating-point numbers, resetting math package", "_fpreset function"]
 ms.assetid: f31c6a04-b464-4f07-a7c4-42133360e328
 ---
-# _fpreset
+# `_fpreset`
 
 Resets the floating-point package.
 

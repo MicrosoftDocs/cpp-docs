@@ -10,7 +10,7 @@ f1_keywords: ["clearerr_s"]
 helpviewer_keywords: ["error indicator for streams", "resetting stream error indicator", "clearerr_s function"]
 ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
 ---
-# clearerr_s
+# `clearerr_s`
 
 Resets the error indicator for a stream. This function is a version of [`clearerr`](clearerr.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

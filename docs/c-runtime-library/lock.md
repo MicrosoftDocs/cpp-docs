@@ -10,7 +10,7 @@ f1_keywords: ["lock", "_lock"]
 helpviewer_keywords: ["lock function", "_lock function"]
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
 ---
-# _lock
+# `_lock`
 
 Acquires a multi-thread lock.
 

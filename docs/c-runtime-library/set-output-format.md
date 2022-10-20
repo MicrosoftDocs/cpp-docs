@@ -10,7 +10,7 @@ f1_keywords: ["set_output_format", "_set_output_format"]
 helpviewer_keywords: ["_TWO_DIGIT_EXPONENT constant", "output formatting", "TWO_DIGIT_EXPONENT constant", "_set_output_format function", "set_output_format function"]
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
 ---
-# _set_output_format
+# `_set_output_format`
 
 Customizes output formats used by formatted I/O functions.
 

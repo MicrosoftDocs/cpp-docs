@@ -10,7 +10,7 @@ f1_keywords: ["_ftcsspn", "wcsspn", "_mbsspn", "_tcsspn", "strspn"]
 helpviewer_keywords: ["wcsspn function", "strings [C++], searching", "mbsspn function", "tcsspn function", "strspn function", "substrings, finding", "_mbsspn_l function", "ftcsspn function", "_mbsspn function", "_ftcsspn function", "mbsspn_l function", "_tcsspn function"]
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
 ---
-# strspn, wcsspn, _mbsspn, _mbsspn_l
+# `strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`
 
 Returns the index of the first character, in a string, that does not belong to a set of characters.
 

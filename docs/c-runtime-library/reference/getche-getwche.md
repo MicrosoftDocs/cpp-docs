@@ -10,7 +10,7 @@ f1_keywords: ["getwche", "_getche", "_getwche"]
 helpviewer_keywords: ["characters, getting from console", "_getwche function", "getche function", "console, reading from", "getwche function", "_getche function"]
 ms.assetid: eac978a8-c43a-4130-938f-54f12e2a0fda
 ---
-# _getche, _getwche
+# `_getche`, `_getwche`
 
 Gets a character from the console with echo.
 

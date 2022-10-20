@@ -10,7 +10,7 @@ f1_keywords: ["__RTDynamicCast"]
 helpviewer_keywords: ["__RTDynamicCast"]
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
 ---
-# __RTDynamicCast
+# `__RTDynamicCast`
 
 Runtime implementation of the [`dynamic_cast`](../cpp/dynamic-cast-operator.md) operator.
 

@@ -10,7 +10,7 @@ f1_keywords: ["mbcjistojms", "_mbcjistojms", "_mbcjistojms_l", "_mbcjmstojis_l",
 helpviewer_keywords: ["_mbcjmstojis_l function", "_mbcjistojms function", "mbcjmstojis function", "_mbcjistojms_l function", "_mbcjmstojis function", "mbcjistojms function", "mbcjmstojis_l function", "mbcjistojms_l function"]
 ms.assetid: dece5127-b337-40a4-aa10-53320a2c9432
 ---
-# _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
+# `_mbcjistojms`, `_mbcjistojms_l`, `_mbcjmstojis`, `_mbcjmstojis_l`
 
 Converts between Japan Industry Standard (JIS) and Japan Microsoft (JMS) characters.
 

@@ -10,7 +10,7 @@ f1_keywords: ["_spawnle", "wspawnle", "_wspawnle"]
 helpviewer_keywords: ["spawnle function", "processes, creating", "_wspawnle function", "processes, executing new", "process creation", "wspawnle function", "_spawnle function"]
 ms.assetid: 80308892-2815-49b1-8cca-53894c366f5a
 ---
-# _spawnle, _wspawnle
+# `_spawnle`, `_wspawnle`
 
 Creates and executes a new process.
 

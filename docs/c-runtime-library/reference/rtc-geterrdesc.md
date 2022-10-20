@@ -10,7 +10,7 @@ f1_keywords: ["RTC_GetErrDesc", "_RTC_GetErrDesc"]
 helpviewer_keywords: ["run-time errors", "_RTC_GetErrDesc function", "RTC_GetErrDesc function"]
 ms.assetid: 7994ec2b-5488-4fd4-806d-a166c9a9f927
 ---
-# _RTC_GetErrDesc
+# `_RTC_GetErrDesc`
 
 Returns a brief description of a run-time error check (RTC) type.
 

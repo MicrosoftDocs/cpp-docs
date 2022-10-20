@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["getdiskfree", "_getdiskfree"]
 helpviewer_keywords: ["diskfree_t type", "_getdiskfree function", "_diskfree_t type", "disk size", "getdiskfree function"]
 ---
-# _getdiskfree
+# `_getdiskfree`
 
 Get information about a disk drive such as total clusters, available clusters, sectors per cluster, and bytes per sector.
 

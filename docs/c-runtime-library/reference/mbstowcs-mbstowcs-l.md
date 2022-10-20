@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["mbstowcs"]
 helpviewer_keywords: ["_mbstowcs_l function", "mbstowcs_l function", "mbstowcs function"]
 ---
-# mbstowcs, _mbstowcs_l
+# `mbstowcs`, `_mbstowcs_l`
 
 Converts a sequence of multibyte characters to a corresponding sequence of wide characters. More secure versions of these functions are available; see [`mbstowcs_s`, `_mbstowcs_s_l`](mbstowcs-s-mbstowcs-s-l.md).
 

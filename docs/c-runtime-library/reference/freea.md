@@ -10,7 +10,7 @@ f1_keywords: ["freea", "_freea"]
 helpviewer_keywords: ["_freea function", "freea function", "memory deallocation"]
 ms.assetid: dcd30584-dd9d-443b-8c4c-13237a1cecac
 ---
-# _freea
+# `_freea`
 
 Deallocates or frees a memory block.
 

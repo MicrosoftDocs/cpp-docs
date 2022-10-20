@@ -10,7 +10,7 @@ f1_keywords: ["wmemmove_s", "memmove_s"]
 helpviewer_keywords: ["wmemmove_s function", "memmove_s function"]
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
 ---
-# memmove_s, wmemmove_s
+# `memmove_s`, `wmemmove_s`
 
 Moves one buffer to another. These are versions of [`memmove`, `wmemmove`](memmove-wmemmove.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

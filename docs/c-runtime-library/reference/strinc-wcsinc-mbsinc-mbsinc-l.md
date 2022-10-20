@@ -10,7 +10,7 @@ f1_keywords: ["mbsinc_l", "_strinc", "strinc", "_mbsinc", "_wcsinc", "wcsinc", "
 helpviewer_keywords: ["_mbsinc function", "wcsinc function", "mbsinc_l function", "_strinc function", "strinc function", "_mbsinc_l function", "mbsinc function", "_wcsinc function", "_tcsinc function", "tcsinc function"]
 ms.assetid: 54685943-8e2c-45e9-a559-2d94930dc6b4
 ---
-# _strinc, _wcsinc, _mbsinc, _mbsinc_l
+# `_strinc`, `_wcsinc`, `_mbsinc`, `_mbsinc_l`
 
 Advances a string pointer by one character.
 

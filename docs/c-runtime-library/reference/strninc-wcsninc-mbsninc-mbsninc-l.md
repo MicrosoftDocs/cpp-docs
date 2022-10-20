@@ -10,7 +10,7 @@ f1_keywords: ["strninc", "wcsninc", "mbsninc_l", "_strninc", "_tcsninc", "mbsnin
 helpviewer_keywords: ["_mbsninc_l function", "mbsninc function", "_strninc function", "tcsninc function", "wcsninc function", "_mbsninc function", "strninc function", "_wcsninc function", "mbsninc_l function", "_tcsninc function"]
 ms.assetid: 6caace64-f9e4-48c0-afa8-ea51824ad723
 ---
-# _strninc, _wcsninc, _mbsninc, _mbsninc_l
+# `_strninc`, `_wcsninc`, `_mbsninc`, `_mbsninc_l`
 
 Advances a string pointer by **n** characters.
 

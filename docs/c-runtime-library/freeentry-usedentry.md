@@ -6,7 +6,7 @@ f1_keywords: ["USEDENTRY", "_USEDENTRY", "_FREEENTRY", "FREEENTRY"]
 helpviewer_keywords: ["_USEDENTRY constant", "_FREEENTRY constant", "FREEENTRY constant", "USEDENTRY constant"]
 ms.assetid: 26f658e6-6846-4a4e-9984-262cfe392770
 ---
-# _FREEENTRY, _USEDENTRY
+# `_FREEENTRY`, `_USEDENTRY`
 
 ## Syntax
 

@@ -10,7 +10,7 @@ f1_keywords: ["ismbckata_l", "_ismbckata_l", "ismbckata", "ismbchira", "_ismbcka
 helpviewer_keywords: ["_ismbckata function", "_ismbchira function", "_ismbckata_l function", "Katakana", "ismbchira function", "_ismbchira_l function", "ismbchira_l function", "ismbdkata_l function", "Hiragana", "ismbckata function"]
 ms.assetid: 2db388a2-be31-489b-81c8-f6bf3f0582d3
 ---
-# _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
+# `_ismbchira`, `_ismbchira_l`, `_ismbckata`, `_ismbckata_l`
 
 **Code Page 932 Specific functions**
 

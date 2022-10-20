@@ -10,7 +10,7 @@ f1_keywords: ["XcptFilter", "_XcptFilter", "_seh_filter_dll", "_seh_filter_exe",
 helpviewer_keywords: ["XcptFilter function", "_XcptFilter function", "_seh_filter_dll function", "_seh_filter_exe function"]
 ms.assetid: 747e5963-3a12-4bf5-b5c4-d4c1b6068e15
 ---
-# _seh_filter_dll, _seh_filter_exe
+# `_seh_filter_dll`, `_seh_filter_exe`
 
 Identifies the exception and the related action to be taken.
 

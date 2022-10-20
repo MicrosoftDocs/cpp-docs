@@ -10,7 +10,7 @@ f1_keywords: ["_gcvt"]
 helpviewer_keywords: ["_gcvt function", "_CVTBUFSIZE", "gcvt function", "floating-point functions, converting number to string", "numbers, converting to strings", "conversions, floating point to strings", "strings [C++], converting from floating point", "CVTBUFSIZE"]
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
 ---
-# _gcvt
+# `_gcvt`
 
 Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [`_gcvt_s`](gcvt-s.md).
 
