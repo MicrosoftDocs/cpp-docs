@@ -1,7 +1,7 @@
 ---
 description: "Learn to use Windows Subsystem for Linux version 2 (WSL2) to build and debug C++ in Visual Studio 2022"
 title: "Walkthrough: Build and Debug C++ with Microsoft Windows Subsystem for Linux 2 (WSL 2) and Visual Studio 2022"
-ms.date: 10/29/2021
+ms.date: 10/21/2022
 author: "tylermsft"
 ms.author: "twhitney"
 helpviewer_keywords: ["wsl2", "cmake", "linux", "build"]
@@ -57,7 +57,7 @@ Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file a
 
 5. Enable Visual Studio's CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#enable-cmakepresets-json-integration).
 
-    ![Screenshot of CMake general options screen with Prefer using CMake Presets for configure, build, and test highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
+    ![Screenshot of CMake general options screen with Use CMake Presets if available, otherwise use CMakeSettings.json highlighted and selected](media/cmake-general-prefer-cmake-presets.png)
 
 6. To activate the integration: from the main menu, select **File** > **Close Folder**. The **Get started** page appears. Under **Open recent**, select the folder you just closed to reopen the folder.
 
@@ -118,11 +118,15 @@ You can change the IntelliSense mode, or specify other IntelliSense options, in 
 
 ## WSL 2 and MSBuild-based Linux projects
 
-CMake is recommended for all C++ cross-platform development with Visual Studio because it allows you to build and debug the same project on Windows, WSL, and remote systems. If you're already using a MSBuild-based Linux project, then you can upgrade to the WSL 2 toolset in Visual Studio via **Property pages** > **General** > **Platform Toolset**:
+CMake is recommended for all C++ cross-platform development with Visual Studio because it allows you to build and debug the same project on Windows, WSL, and remote systems.
+
+But you may have a MSBuild-based Linux project.
+
+If you have a MSBuild-based Linux project, then you can upgrade to the WSL 2 toolset in Visual Studio. Right-click the project in the solution explorer, then choose **Properties**  > **General** > **Platform Toolset**:
 
 ![A screenshot of a dropdown with Platform Toolset selected, and to the right, another dropdown with WSL2 Toolset selected](media/wsl-platform-toolset-selection.png)
 
-If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 toolset, then in **Property Pages** > **General** > **Platform Toolset**, select the **GCC for Windows Subsystem for Linux** or **Clang for Windows Subsystem for Linux** toolset. If either of these toolsets are selected, Visual Studio won't maintain a copy of your source files in the WSL file system and will instead access source files over the mounted Windows drive (`/mnt/`…). System headers are still automatically copied to the Windows file system to provide a native IntelliSense experience. Customize the headers that are included or excluded from this copy in **Property Pages** > **General**.
+If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 toolset, then in the **Platform Toolset** dropdown, select the **GCC for Windows Subsystem for Linux** or **Clang for Windows Subsystem for Linux** toolset. If either of these toolsets are selected, Visual Studio won't maintain a copy of your source files in the WSL file system and will instead access source files over the mounted Windows drive (`/mnt/`…). System headers are still automatically copied to the Windows file system to provide a native IntelliSense experience. Customize the headers that are included or excluded from this copy in **Property Pages** > **General**.
 
 In most cases, it's best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are stored in the Windows file system. To to learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
 
