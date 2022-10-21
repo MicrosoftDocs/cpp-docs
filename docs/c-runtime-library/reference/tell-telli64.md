@@ -34,13 +34,13 @@ File descriptor referring to open file.
 
 The current position of the file pointer. On devices incapable of seeking, the return value is undefined.
 
-A return value of -1L indicates an error. If *`handle`* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EBADF** and return -1L.
+A return value of -1L indicates an error. If *`handle`* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_tell** function gets the current position of the file pointer (if any) associated with the *`handle`* argument. The position is expressed as the number of bytes from the beginning of the file. For the **_telli64** function, this value is expressed as a 64-bit integer.
+The **`_tell`** function gets the current position of the file pointer (if any) associated with the *`handle`* argument. The position is expressed as the number of bytes from the beginning of the file. For the **`_telli64`** function, this value is expressed as a 64-bit integer.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -48,7 +48,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_tell**, **_telli64**|\<io.h>|
+|**`_tell`**, **`_telli64`**|\<io.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

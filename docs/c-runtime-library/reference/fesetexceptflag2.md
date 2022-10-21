@@ -26,7 +26,7 @@ int fesetexceptflag(
 ### Parameters
 
 *`pstatus`*\
-Pointer to an **fexcept_t** object containing the values to set the exception status flags to. The object may be set by a previous call to [`fegetexceptflag`](fegetexceptflag2.md).
+Pointer to an `fexcept_t` object containing the values to set the exception status flags to. The object may be set by a previous call to [`fegetexceptflag`](fegetexceptflag2.md).
 
 *`excepts`*\
 The floating-point exception status flags to set.
@@ -37,16 +37,16 @@ If all the specified exception status flags are set successfully, returns 0. Oth
 
 ## Remarks
 
-The **fesetexceptflag** function sets the state of the floating-point exception status flags specified by *`excepts`* to the corresponding values set in the **fexcept_t** object pointed to by *`pstatus`*.  It doesn't raise the exceptions. The *`pstatus`* pointer must point to a valid **fexcept_t** object, or subsequent behavior is undefined. The **fesetexceptflag** function supports these exception macro values in *`excepts`*, defined in \<fenv.h>:
+The **`fesetexceptflag`** function sets the state of the floating-point exception status flags specified by *`excepts`* to the corresponding values set in the `fexcept_t` object pointed to by *`pstatus`*.  It doesn't raise the exceptions. The *`pstatus`* pointer must point to a valid `fexcept_t` object, or subsequent behavior is undefined. The **`fesetexceptflag`** function supports these exception macro values in *`excepts`*, defined in \<fenv.h>:
 
 |Exception Macro|Description|
 |---------------------|-----------------|
-|FE_DIVBYZERO|A singularity or pole error occurred in an earlier floating-point operation; an infinity value was created.|
-|FE_INEXACT|The function was forced to round the stored result of an earlier floating-point operation.|
-|FE_INVALID|A domain error occurred in an earlier floating-point operation.|
-|FE_OVERFLOW|A range error occurred; an earlier floating-point operation result was too large to be represented.|
-|FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
-|FE_ALL_EXCEPT|The bitwise OR of all supported floating-point exceptions.|
+|`FE_DIVBYZERO`|A singularity or pole error occurred in an earlier floating-point operation; an infinity value was created.|
+|`FE_INEXACT`|The function was forced to round the stored result of an earlier floating-point operation.|
+|`FE_INVALID`|A domain error occurred in an earlier floating-point operation.|
+|`FE_OVERFLOW`|A range error occurred; an earlier floating-point operation result was too large to be represented.|
+|`FE_UNDERFLOW`|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
+|`FE_ALL_EXCEPT`|The bitwise OR of all supported floating-point exceptions.|
 
 The *`excepts`* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
 
@@ -56,7 +56,7 @@ To use this function, you must turn off floating-point optimizations that could 
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**fesetexceptflag**|\<fenv.h>|\<cfenv>|
+|**`fesetexceptflag`**|\<fenv.h>|\<cfenv>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

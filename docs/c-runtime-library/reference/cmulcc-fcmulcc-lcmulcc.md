@@ -31,19 +31,19 @@ The other complex operand to multiply.
 
 ## Return value
 
-A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex numbers *`x`* and *`y`*.
+A `_Dcomplex`, `_Fcomplex`, or `_Lcomplex` structure that represents the complex product of the complex numbers *`x`* and *`y`*.
 
 ## Remarks
 
-Because the built-in arithmetic operators don't work on the Microsoft implementation of the complex types, the **_Cmulcc**, **_FCmulcc**, and **_LCmulcc** functions simplify multiplication of complex types.
+Because the built-in arithmetic operators don't work on the Microsoft implementation of the complex types, the **`_Cmulcc`**, **`_FCmulcc`**, and **`_LCmulcc`** functions simplify multiplication of complex types.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**_Cmulcc**, **_FCmulcc**, **_LCmulcc**|\<complex.h>|\<complex.h>|
+|**`_Cmulcc`**, **`_FCmulcc`**, **`_LCmulcc`**|\<complex.h>|\<complex.h>|
 
-These functions are Microsoft-specific. The types **_Dcomplex**, **_Fcomplex**, and **_Lcomplex** are Microsoft-specific equivalents to the unimplemented C99 native types **double _Complex**, **float _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
+These functions are Microsoft-specific. The types `_Dcomplex`, `_Fcomplex`, and `_Lcomplex` are Microsoft-specific equivalents to the unimplemented C99 native types **double _Complex**, **float _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

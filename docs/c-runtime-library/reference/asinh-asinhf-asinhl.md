@@ -33,7 +33,7 @@ Floating-point value.
 
 ## Return value
 
-The **asinh** functions return the inverse hyperbolic sine (arc hyperbolic sine) of *`x`*. This function is valid over the floating-point domain. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
+The **`asinh`** functions return the inverse hyperbolic sine (arc hyperbolic sine) of *`x`*. This function is valid over the floating-point domain. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|
@@ -41,7 +41,7 @@ The **asinh** functions return the inverse hyperbolic sine (arc hyperbolic sine)
 
 ## Remarks
 
-When you use C++, you can call overloads of **asinh** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **asinh** always takes and returns **`double`**.
+When you use C++, you can call overloads of **`asinh`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`asinh`** always takes and returns **`double`**.
 
 If you use the \<tgmath.h> `asinh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -51,7 +51,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required C header|Required C++ header|
 |--------------|--------------|------------------|
-|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath> or \<math.h>|
+|**`asinh`**, **`asinhf`**, **`asinhl`**|\<math.h>|\<cmath> or \<math.h>|
 |**asinh()** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../compatibility.md).

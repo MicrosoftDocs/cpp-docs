@@ -35,28 +35,28 @@ Output string.
 
 ## Return value
 
-If successful, **_cputs** returns 0. If the function fails, it returns a nonzero value.
+If successful, **`_cputs`** returns 0. If the function fails, it returns a nonzero value.
 
 ## Remarks
 
-The **_cputs** function writes the null-terminated string that's pointed to by *`str`* directly to the console. A carriage return-line feed (CR-LF) combination isn't automatically appended to the string.
+The **`_cputs`** function writes the null-terminated string that's pointed to by *`str`* directly to the console. A carriage return-line feed (CR-LF) combination isn't automatically appended to the string.
 
-This function validates its parameter. If *`str`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL**, and -1 is returned.
+This function validates its parameter. If *`str`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and -1 is returned.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_cputts**|**_cputs**|**_cputs**|**_cputws**|
+|`_cputts`|**`_cputs`**|**`_cputs`**|**`_cputws`**|
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**_cputs**|\<conio.h>|\<errno.h>|
-|**_cputws**|\<conio.h>|\<errno.h>|
+|**`_cputs`**|\<conio.h>|\<errno.h>|
+|**`_cputws`**|\<conio.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

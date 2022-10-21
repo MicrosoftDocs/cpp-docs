@@ -42,33 +42,33 @@ Variable argument list.
 
 ## Return value
 
-Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion.
+Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.
 
-If *`buffer`* or *`format`* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *`buffer`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **vsscanf** function reads data from *`buffer`* into the locations that are given by each argument in the *`arglist`* argument list. Every argument in the list must be a pointer to a variable that has a type that corresponds to a type specifier in *`format`*. The *`format`* argument controls the interpretation of the input fields and has the same form and function as the *`format`* argument for the **scanf** function. If copying takes place between strings that overlap, the behavior is undefined.
+The **`vsscanf`** function reads data from *`buffer`* into the locations that are given by each argument in the *`arglist`* argument list. Every argument in the list must be a pointer to a variable that has a type that corresponds to a type specifier in *`format`*. The *`format`* argument controls the interpretation of the input fields and has the same form and function as the *`format`* argument for the `scanf` function. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> When you use **vsscanf** to read a string, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, incorrectly formatted input can cause a buffer overrun.
+> When you use **`vsscanf`** to read a string, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, incorrectly formatted input can cause a buffer overrun.
 
-**vswscanf** is a wide-character version of **vsscanf**; the arguments to **vswscanf** are wide-character strings. **vsscanf** does not handle multibyte hexadecimal characters. **vswscanf** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **vswscanf** and **vsscanf** behave identically.
+**`vswscanf`** is a wide-character version of **`vsscanf`**; the arguments to **`vswscanf`** are wide-character strings. **`vsscanf`** does not handle multibyte hexadecimal characters. **`vswscanf`** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`vswscanf`** and **`vsscanf`** behave identically.
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_vstscanf**|**vsscanf**|**vsscanf**|**vswscanf**|
+|`_vstscanf`|**`vsscanf`**|**`vsscanf`**|**`vswscanf`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**vsscanf**|\<stdio.h>|
-|**vswscanf**|\<stdio.h> or \<wchar.h>|
+|**`vsscanf`**|\<stdio.h>|
+|**`vswscanf`**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -110,7 +110,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [`_rotl`, `_rotl64`, `_rotr`, `_rotr64`](./reference/rotl-rotl64-rotr-rotr64.md)|Rotates bits in integer types
 [`round`, `roundf`, `roundl`](./reference/round-roundf-roundl.md)|Rounds a floating-point value
 [`_scalb`, `_scalbf`](./reference/scalb.md)|Scales argument by a power of 2
-[`scalbn`, `scalbnf`, `scalbnl`, `scalbln`, `scalblnf`, `scalblnl`](./reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Multiplies a floating-point number by an integral power of **`FLT_RADIX`**
+[`scalbn`, `scalbnf`, `scalbnl`, `scalbln`, `scalblnf`, `scalblnl`](./reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Multiplies a floating-point number by an integral power of `FLT_RADIX`
 [`_set_controlfp`](./reference/set-controlfp.md)|Sets the floating-point control word
 [`_set_SSE2_enable`](./reference/set-sse2-enable.md)|Enables or disables SSE2 instructions
 [`signbit`](./reference/signbit.md)|Tests the sign bit of a floating-point value

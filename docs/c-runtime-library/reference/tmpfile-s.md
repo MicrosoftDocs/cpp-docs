@@ -35,17 +35,17 @@ Returns 0 if successful, an error code on failure.
 
 |*`pFilePtr`*|Return value|Contents of *`pFilePtr`*|
 |----------------|----------------------|---------------------------------|
-|**NULL**|**EINVAL**|not changed|
+|`NULL`|`EINVAL`|not changed|
 
-If the above parameter validation error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the return value is **EINVAL**.
+If the above parameter validation error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the return value is `EINVAL`.
 
 ## Remarks
 
-The **tmpfile_s** function creates a temporary file and puts a pointer to that stream in the *`pFilePtr`* argument. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [`tmpnam_s`](tmpnam-s-wtmpnam-s.md) or [`tempnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [`fopen`](fopen-wfopen.md).
+The **`tmpfile_s`** function creates a temporary file and puts a pointer to that stream in the *`pFilePtr`* argument. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [`tmpnam_s`](tmpnam-s-wtmpnam-s.md) or [`tempnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [`fopen`](fopen-wfopen.md).
 
-If the file cannot be opened, **tmpfile_s** writes **NULL** to the *`pFilePtr`* parameter. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when **_rmtmp** is called, assuming that the current working directory does not change. The temporary file is opened in **w+b** (binary read/write) mode.
+If the file cannot be opened, **`tmpfile_s`** writes `NULL` to the *`pFilePtr`* parameter. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in **w+b** (binary read/write) mode.
 
-Failure can occur if you attempt more than **TMP_MAX_S** (see STDIO.H) calls with **tmpfile_s**.
+Failure can occur if you attempt more than `TMP_MAX_S` (see STDIO.H) calls with **`tmpfile_s`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**tmpfile_s**|\<stdio.h>|
+|**`tmpfile_s`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

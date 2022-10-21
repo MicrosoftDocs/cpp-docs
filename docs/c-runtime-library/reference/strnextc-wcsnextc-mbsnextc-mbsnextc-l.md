@@ -15,7 +15,7 @@ ms.assetid: e3086173-9eb5-4540-a23a-5d866bd05340
 Finds the next character in a string.
 
 > [!IMPORTANT]
-> **_mbsnextc** and **_mbsnextc_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsnextc`** and **`_mbsnextc_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -49,9 +49,9 @@ Each of these functions returns the integer value of the next character in *`str
 
 ## Remarks
 
-The **_mbsnextc** function returns the integer value of the next multibyte character in *`str`*, without advancing the string pointer. **_mbsnextc** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use.
+The **`_mbsnextc`** function returns the integer value of the next multibyte character in *`str`*, without advancing the string pointer. **`_mbsnextc`** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use.
 
-If *`str`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns 0.
+If *`str`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns 0.
 
 **Security Note** This API incurs a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
@@ -59,22 +59,22 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tcsnextc**|**_strnextc**|**_mbsnextc**|**_wcsnextc**|
+|`_tcsnextc`|**`_strnextc`**|**`_mbsnextc`**|**`_wcsnextc`**|
 
-**_strnextc** and **_wcsnextc** are single-byte-character string and wide-character string versions of **_mbsnextc**. **_wcsnextc** returns the integer value of the next wide character in *`str`*; **_strnextc** returns the integer value of the next single-byte character in *`str`*. **_strnextc** and **_wcsnextc** are provided only for this mapping and should not be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
+**`_strnextc`** and **`_wcsnextc`** are single-byte-character string and wide-character string versions of **`_mbsnextc`**. **`_wcsnextc`** returns the integer value of the next wide character in *`str`*; **`_strnextc`** returns the integer value of the next single-byte character in *`str`*. **`_strnextc`** and **`_wcsnextc`** are provided only for this mapping and should not be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
-**_mbsnextc_l** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+**`_mbsnextc_l`** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_mbsnextc**|\<mbstring.h>|
-|**_mbsnextc_l**|\<mbstring.h>|
-|**_strnextc**|\<tchar.h>|
-|**_wcsnextc**|\<tchar.h>|
+|**`_mbsnextc`**|\<mbstring.h>|
+|**`_mbsnextc_l`**|\<mbstring.h>|
+|**`_strnextc`**|\<tchar.h>|
+|**`_wcsnextc`**|\<tchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

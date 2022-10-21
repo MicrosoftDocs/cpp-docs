@@ -28,8 +28,8 @@ Pointer to the structure containing error information.
 
 **`_matherr`** returns 0 to indicate an error, or a nonzero value to indicate success:
 
-- If **`_matherr`** returns 0, an error message can be displayed and **`errno`** is set to an appropriate error value.
-- If **`_matherr`** returns a nonzero value, no error message is displayed and **`errno`** remains unchanged.
+- If **`_matherr`** returns 0, an error message can be displayed and `errno` is set to an appropriate error value.
+- If **`_matherr`** returns a nonzero value, no error message is displayed and `errno` remains unchanged.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -56,12 +56,12 @@ The **`type`** member specifies the type of math error. It's one of the followin
 
 |Macro|Meaning|
 |-|-|
-| **`_DOMAIN`** | Argument domain error |
-| **`_SING`** | Argument singularity |
-| **`_OVERFLOW`** | Overflow range error |
-| **`_PLOSS`** | Partial loss of significance |
-| **`_TLOSS`** | Total loss of significance |
-| **`_UNDERFLOW`** | The result is too small to be represented. (This condition isn't currently supported.) |
+| `_DOMAIN` | Argument domain error |
+| `_SING` | Argument singularity |
+| `_OVERFLOW` | Overflow range error |
+| `_PLOSS` | Partial loss of significance |
+| `_TLOSS` | Total loss of significance |
+| `_UNDERFLOW` | The result is too small to be represented. (This condition isn't currently supported.) |
 
 The structure member **`name`** is a pointer to a null-terminated string containing the name of the function that caused the error. The structure members **`arg1`** and **`arg2`** specify the values that caused the error. If only one argument is given, it's stored in **`arg1`**.
 

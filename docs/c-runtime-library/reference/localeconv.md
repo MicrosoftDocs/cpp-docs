@@ -22,11 +22,11 @@ struct lconv *localeconv( void );
 
 ## Return value
 
-**localeconv** returns a pointer to a filled-in object of type [struct lconv](../standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **localeconv**. Changes made to the values in this object do not modify the locale settings. Calls to [`setlocale`](setlocale-wsetlocale.md) with *`category`* values of **LC_ALL**, **LC_MONETARY**, or **LC_NUMERIC** overwrite the contents of the structure.
+**`localeconv`** returns a pointer to a filled-in object of type [struct lconv](../standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to **`localeconv`**. Changes made to the values in this object do not modify the locale settings. Calls to [`setlocale`](setlocale-wsetlocale.md) with *`category`* values of `LC_ALL`, `LC_MONETARY`, or `LC_NUMERIC` overwrite the contents of the structure.
 
 ## Remarks
 
-The **localeconv** function gets detailed information about numeric formatting for the current locale. This information is stored in a structure of type **lconv**. The **lconv** structure, defined in LOCALE.H, contains the following members:
+The **`localeconv`** function gets detailed information about numeric formatting for the current locale. This information is stored in a structure of type `lconv`. The `lconv` structure, defined in LOCALE.H, contains the following members:
 
 |Field|Meaning|
 |-|-|
@@ -49,37 +49,37 @@ n_sep_by_space|Set to 1 if currency symbol is separated by space from value for 
 p_sign_posn|Position of positive sign in nonnegative formatted monetary quantities.
 n_sign_posn|Position of positive sign in negative formatted monetary quantities.
 
-Except as specified, members of the **lconv** structure that have `char *` and `wchar_t *` versions are pointers to strings. Any of these that equals **""** (or **L""** for **`wchar_t`** <strong>\*</strong>) is either of zero length or not supported in the current locale. Note that **decimal_point** and **_W_decimal_point** are always supported and of nonzero length.
+Except as specified, members of the `lconv` structure that have `char *` and `wchar_t *` versions are pointers to strings. Any of these that equals **""** (or **L""** for **`wchar_t`** <strong>\*</strong>) is either of zero length or not supported in the current locale. Note that `decimal_point` and `_W_decimal_point` are always supported and of nonzero length.
 
-The **`char`** members of the structure are small nonnegative numbers, not characters. Any of these that equals **CHAR_MAX** is not supported in the current locale.
+The **`char`** members of the structure are small nonnegative numbers, not characters. Any of these that equals `CHAR_MAX` is not supported in the current locale.
 
-The values of **grouping** and **mon_grouping** are interpreted according to the following rules:
+The values of `grouping` and `mon_grouping` are interpreted according to the following rules:
 
-- **CHAR_MAX** - Do not perform any further grouping.
+- `CHAR_MAX` - Do not perform any further grouping.
 
 - 0 - Use previous element for each of remaining digits.
 
 - *`n`* - Number of digits that make up current group. Next element is examined to determine size of next group of digits before current group.
 
-The values for **int_curr_symbol** are interpreted according to the following rules:
+The values for `int_curr_symbol` are interpreted according to the following rules:
 
 - The first three characters specify the alphabetic international currency symbol as defined in the *ISO 4217 Codes for the Representation of Currency and Funds* standard.
 
 - The fourth character (immediately preceding the null character) separates the international currency symbol from the monetary quantity.
 
-The values for **p_cs_precedes** and **n_cs_precedes** are interpreted according to the following rules (the **n_cs_precedes** rule is in parentheses):
+The values for `p_cs_precedes` and `n_cs_precedes` are interpreted according to the following rules (the `n_cs_precedes` rule is in parentheses):
 
 - 0 - Currency symbol follows value for nonnegative (negative) formatted monetary value.
 
 - 1 - Currency symbol precedes value for nonnegative (negative) formatted monetary value.
 
-The values for **p_sep_by_space** and **n_sep_by_space** are interpreted according to the following rules (the **n_sep_by_space** rule is in parentheses):
+The values for `p_sep_by_space` and `n_sep_by_space` are interpreted according to the following rules (the `n_sep_by_space` rule is in parentheses):
 
 - 0 - Currency symbol is separated from value by space for nonnegative (negative) formatted monetary value.
 
 - 1 - There is no space separation between currency symbol and value for nonnegative (negative) formatted monetary value.
 
-The values for **p_sign_posn** and **n_sign_posn** are interpreted according to the following rules:
+The values for `p_sign_posn` and `n_sign_posn` are interpreted according to the following rules:
 
 - 0 - Parentheses surround quantity and currency symbol.
 
@@ -97,7 +97,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**localeconv**|\<locale.h>|
+|**`localeconv`**|\<locale.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

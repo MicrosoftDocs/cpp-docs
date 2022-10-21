@@ -75,15 +75,15 @@ errno_t _wctime64_s(
 ### Parameters
 
 *`buffer`*\
-Must be large enough to hold 26 characters. A pointer to the character string result, or **NULL** if:
+Must be large enough to hold 26 characters. A pointer to the character string result, or `NULL` if:
 
 - *`sourceTime`* represents a date before midnight, January 1, 1970, UTC.
 
-- If you use **_ctime32_s** or **_wctime32_s** and *`sourceTime`* represents a date after 23:59:59 January 18, 2038, UTC.
+- If you use **`_ctime32_s`** or **`_wctime32_s`** and *`sourceTime`* represents a date after 23:59:59 January 18, 2038, UTC.
 
-- If you use **_ctime64_s** or **_wctime64_s** and *`sourceTime`* represents a date after 23:59:59, December 31, 3000, UTC.
+- If you use **`_ctime64_s`** or **`_wctime64_s`** and *`sourceTime`* represents a date after 23:59:59, December 31, 3000, UTC.
 
-- If you use **_ctime_s** or **_wctime_s**, these functions are wrappers to the previous functions. See the Remarks section.
+- If you use **`_ctime_s`** or **`_wctime_s`**, these functions are wrappers to the previous functions. See the Remarks section.
 
 *`numberOfElements`*\
 The size of the buffer.
@@ -99,15 +99,15 @@ Zero if successful. If there's a failure due to an invalid parameter, the invali
 
 |*`buffer`*|*`numberOfElements`*|*`sourceTime`*|Return|Value in *`buffer`*|
 |--------------|------------------------|------------|------------|-----------------------|
-|**NULL**|any|any|**EINVAL**|Not modified|
-|Not **NULL** (points to valid memory)|0|any|**EINVAL**|Not modified|
-|Not **NULL**|0< size < 26|any|**EINVAL**|Empty string|
-|Not **NULL**|>= 26|NULL|**EINVAL**|Empty string|
-|Not **NULL**|>= 26|< 0|**EINVAL**|Empty string|
+|`NULL`|any|any|`EINVAL`|Not modified|
+|Not `NULL` (points to valid memory)|0|any|`EINVAL`|Not modified|
+|Not `NULL`|0< size < 26|any|`EINVAL`|Empty string|
+|Not `NULL`|>= 26|NULL|`EINVAL`|Empty string|
+|Not `NULL`|>= 26|< 0|`EINVAL`|Empty string|
 
 ## Remarks
 
-The **ctime_s** function converts a time value stored as a [`time_t`](../standard-types.md) structure into a character string. The *`sourceTime`* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **`ctime_s`** function converts a time value stored as a [`time_t`](../standard-types.md) structure into a character string. The *`sourceTime`* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
 `Wed Jan 02 02:03:55 1980\n\0`
 
@@ -115,9 +115,9 @@ A 24-hour clock is used. All fields have a constant width. The new line characte
 
 The converted character string is also adjusted according to the local time zone settings. For information on configuring the local time, see the [`time`](time-time32-time64.md), [`_ftime`](ftime-ftime32-ftime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions. For details about defining the time zone environment and global variables, see the [`_tzset`](tzset.md) function.
 
-**_wctime32_s** and **_wctime64_s** are the wide-character version of **_ctime32_s** and **_ctime64_s**; returning a pointer to wide-character string. Otherwise, **_ctime64_s**, **_wctime32_s**, and **_wctime64_s** behave identically to **_ctime32_s**.
+**`_wctime32_s`** and **`_wctime64_s`** are the wide-character version of **`_ctime32_s`** and **`_ctime64_s`**; returning a pointer to wide-character string. Otherwise, **`_ctime64_s`**, **`_wctime32_s`**, and **`_wctime64_s`** behave identically to **`_ctime32_s`**.
 
-**ctime_s** is an inline function that evaluates to **_ctime64_s** and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. This macro causes **ctime_s** to evaluate to **_ctime32_s**. We don't recommend it, because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
+**`ctime_s`** is an inline function that evaluates to **`_ctime64_s`** and `time_t` is equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. This macro causes **`ctime_s`** to evaluate to **`_ctime32_s`**. We don't recommend it, because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -127,18 +127,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tctime_s**|**ctime_s**|**ctime_s**|**_wctime_s**|
-|**_tctime32_s**|**_ctime32_s**|**_ctime32_s**|**_wctime32_s**|
-|**_tctime64_s**|**_ctime64_s**|**_ctime64_s**|**_wctime64_s**|
+|`_tctime_s`|**`ctime_s`**|**`ctime_s`**|**`_wctime_s`**|
+|`_tctime32_s`|**`_ctime32_s`**|**`_ctime32_s`**|**`_wctime32_s`**|
+|`_tctime64_s`|**`_ctime64_s`**|**`_ctime64_s`**|**`_wctime64_s`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**ctime_s**, **_ctime32_s**, **_ctime64_s**|\<time.h>|
-|**_wctime_s**, **_wctime32_s**, **_wctime64_s**|\<time.h> or \<wchar.h>|
+|**`ctime_s`**, **`_ctime32_s`**, **`_ctime64_s`**|\<time.h>|
+|**`_wctime_s`**, **`_wctime32_s`**, **`_wctime64_s`**|\<time.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

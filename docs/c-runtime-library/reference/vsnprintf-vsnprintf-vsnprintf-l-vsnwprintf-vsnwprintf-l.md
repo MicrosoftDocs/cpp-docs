@@ -114,9 +114,9 @@ Both **`_vsnprintf`** and **`_vsnwprintf`** functions return the number of chara
 
 The value returned by all these functions doesn't include the terminating null, whether one is written or not.
 
-- If *`count`* is zero and *`buffer`* is **`NULL`**, the value returned is the number of characters the functions would write. The value does not take into account a terminating **`NULL`**. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
-- If *`count`* is zero but *`buffer`* isn't **`NULL`**, nothing is written and the function returns `-1`.
-- If *`format`* is **`NULL`**, or if *`buffer`* is **`NULL`** and *`count`* isn't equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
+- If *`count`* is zero and *`buffer`* is `NULL`, the value returned is the number of characters the functions would write. The value does not take into account a terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
+- If *`count`* is zero but *`buffer`* isn't `NULL`, nothing is written and the function returns `-1`.
+- If *`format`* is `NULL`, or if *`buffer`* is `NULL` and *`count`* isn't equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 ## Remarks
 

@@ -94,7 +94,7 @@ The **`strncat`** function appends, at most, the first *`count`* characters of *
 
 **`wcsncat`** and **`_mbsncat`** are wide-character and multibyte-character versions of **`strncat`**. The string arguments and return value of **`wcsncat`** are wide-character strings; those of **`_mbsncat`** are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 In C++, these functions have template overloads. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -168,7 +168,7 @@ After BadAppend :  This is the initial string!Extra text to add to (47 chars)
 After GoodAppend:  This is the initial string!Extra text t (39 chars)
 ```
 
-Note that **BadAppend** caused a buffer overrun.
+Note that `BadAppend` caused a buffer overrun.
 
 ## See also
 

@@ -50,30 +50,30 @@ The locale to use.
 
 ## Return value
 
-**strtof** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VALF**. The sign of **HUGE_VALF** matches the sign of the value that cannot be represented. **strtof** returns 0 if no conversion can be performed or an underflow occurs.
+**`strtof`** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VALF`. The sign of `HUGE_VALF` matches the sign of the value that cannot be represented. **`strtof`** returns 0 if no conversion can be performed or an underflow occurs.
 
-**wcstof** returns values analogously to **strtof**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
+**`wcstof`** returns values analogously to **`strtof`**. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Each function converts the input string *`strSource`* to a **`float`**. The **strtof** function converts *`strSource`* to a single-precision value. **strtof** stops reading the string *`strSource`* at the first character it cannot recognize as part of a number. This may be the terminating null character. **wcstof** is a wide-character version of **strtof**; its *`strSource`* argument is a wide-character string. Otherwise, these functions behave identically.
+Each function converts the input string *`strSource`* to a **`float`**. The **`strtof`** function converts *`strSource`* to a single-precision value. **`strtof`** stops reading the string *`strSource`* at the first character it cannot recognize as part of a number. This may be the terminating null character. **`wcstof`** is a wide-character version of **`strtof`**; its *`strSource`* argument is a wide-character string. Otherwise, these functions behave identically.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcstof**|**strtof**|**strtof**|**wcstof**|
-|**_tcstof_l**|**_strtof_l**|**_strtof_l**|**_wcstof_l**|
+|`_tcstof`|**`strtof`**|**`strtof`**|**`wcstof`**|
+|`_tcstof_l`|**`_strtof_l`**|**`_strtof_l`**|**`_wcstof_l`**|
 
-The **LC_NUMERIC** category setting of the current locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
+The `LC_NUMERIC` category setting of the current locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The functions that don't have the `_l` suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
-If *`endptr`* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location that's pointed to by *`endptr`*.
+If *`endptr`* is not `NULL`, a pointer to the character that stopped the scan is stored at the location that's pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location that's pointed to by *`endptr`*.
 
-**strtof** expects *`strSource`* to point to a string of the following form:
+**`strtof`** expects *`strSource`* to point to a string of the following form:
 
 [*`whitespace`*] [*`sign`*] [*`digits`*] [.*`digits`*] [{**`e`** &#124; **`E`**} [*`sign`*] *`digits`*]
 
@@ -85,8 +85,8 @@ The UCRT versions of these functions do not support conversion of Fortran-style 
 
 |Routine|Required header|
 |-------------|---------------------|
-|**strtof**, **_strtof_l**|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
-|**wcstof**, **_wcstof_l**|C: \<stdlib.h> or \<wchar.h> C++: \<cstdlib>, \<stdlib.h> or \<wchar.h>|
+|**`strtof`**, **`_strtof_l`**|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
+|**`wcstof`**, **`_wcstof_l`**|C: \<stdlib.h> or \<wchar.h> C++: \<cstdlib>, \<stdlib.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

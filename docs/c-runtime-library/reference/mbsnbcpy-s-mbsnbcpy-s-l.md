@@ -67,16 +67,16 @@ Locale to use.
 
 ## Return value
 
-Zero if successful; **EINVAL** if a bad parameter was passed in.
+Zero if successful; `EINVAL` if a bad parameter was passed in.
 
 ## Remarks
 
-The **_mbsnbcpy_s** function copies *`count`* bytes from *`strSource`* to *`strDest`*. If *`count`* exceeds the size of *`strDest`*, either of the input strings is a null pointer, or *`sizeInBytes`* or *`count`* is 0, the function invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL**. If the source and destination strings overlap, the behavior of **_mbsnbcpy_s** is undefined.
+The **`_mbsnbcpy_s`** function copies *`count`* bytes from *`strSource`* to *`strDest`*. If *`count`* exceeds the size of *`strDest`*, either of the input strings is a null pointer, or *`sizeInBytes`* or *`count`* is 0, the function invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL`. If the source and destination strings overlap, the behavior of **`_mbsnbcpy_s`** is undefined.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 > [!NOTE]
-> Unlike the non-secure version of this function, **_mbsnbcpy_s** does not do any null padding and always null terminates the string.
+> Unlike the non-secure version of this function, **`_mbsnbcpy_s`** does not do any null padding and always null terminates the string.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -86,17 +86,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tcsncpy_s**|**_strncpy_s**|**_mbsnbcpy_s**|**_wcsncpy_s**|
-|**_tcsncpy_s_l**|**_strncpy_s_l**|**_mbsnbcpy_s_l**|**_wcsncpy_s_l**|
+|`_tcsncpy_s`|`_strncpy_s`|**`_mbsnbcpy_s`**|`_wcsncpy_s`|
+|`_tcsncpy_s_l`|`_strncpy_s_l`|**`_mbsnbcpy_s_l`**|`_wcsncpy_s_l`|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_mbsnbcpy_s**|\<mbstring.h>|
-|**_mbsnbcpy_s_l**|\<mbstring.h>|
+|**`_mbsnbcpy_s`**|\<mbstring.h>|
+|**`_mbsnbcpy_s_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

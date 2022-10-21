@@ -16,7 +16,7 @@ ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
 
 ## Remarks
 
-These constants are used to indicate file type in the **st_mode** field of the [`_stat` structure](./standard-types.md).
+These constants are used to indicate file type in the `st_mode` field of the [`_stat` structure](./standard-types.md).
 
 The bit mask constants are described below:
 

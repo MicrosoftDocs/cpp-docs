@@ -43,7 +43,7 @@ Size of the destination buffer.
 Source object.
 
 *`count`*\
-Number of bytes (**memmove_s**) or characters (**wmemmove_s**) to copy.
+Number of bytes (**`memmove_s`**) or characters (**`wmemmove_s`**) to copy.
 
 ## Return value
 
@@ -53,15 +53,15 @@ Zero if successful; an error code on failure
 
 |*`dest`*|*`numberOfElements`*|*`src`*|Return value|Contents of *`dest`*|
 |------------|------------------------|-----------|------------------|------------------------|
-|**NULL**|any|any|**EINVAL**|not modified|
-|any|any|**NULL**|**EINVAL**|not modified|
-|any|< *`count`*|any|**ERANGE**|not modified|
+|`NULL`|any|any|`EINVAL`|not modified|
+|any|any|`NULL`|`EINVAL`|not modified|
+|any|< *`count`*|any|`ERANGE`|not modified|
 
 ## Remarks
 
-Copies *`count`* bytes of characters from *`src`* to *`dest`*. If some regions of the source area and the destination overlap, **memmove_s** ensures that the original source bytes in the overlapping region are copied before being overwritten.
+Copies *`count`* bytes of characters from *`src`* to *`dest`*. If some regions of the source area and the destination overlap, **`memmove_s`** ensures that the original source bytes in the overlapping region are copied before being overwritten.
 
-If *`dest`* or if *`src`* is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL**.
+If *`dest`* or if *`src`* is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -69,8 +69,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**memmove_s**|\<string.h>|
-|**wmemmove_s**|\<wchar.h>|
+|**`memmove_s`**|\<string.h>|
+|**`wmemmove_s`**|\<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

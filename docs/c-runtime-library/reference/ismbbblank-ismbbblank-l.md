@@ -37,7 +37,7 @@ Locale to use.
 
 ## Return value
 
-**_ismbbblank** returns a nonzero value if *`c`* represents a space (0x20) character, a horizontal tab (0x09) character, or a locale-specific character that's used to separate words within a line of text for which **isspace** is true; otherwise, returns 0. **_ismbbblank** uses the current locale for any locale-dependent behavior. **_ismbbblank_l** is identical except that it instead uses the locale that's passed in. For more information, see [Locale](../locale.md).
+**`_ismbbblank`** returns a nonzero value if *`c`* represents a space (0x20) character, a horizontal tab (0x09) character, or a locale-specific character that's used to separate words within a line of text for which `isspace` is true; otherwise, returns 0. **`_ismbbblank`** uses the current locale for any locale-dependent behavior. **`_ismbbblank_l`** is identical except that it instead uses the locale that's passed in. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
@@ -47,8 +47,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_ismbbblank**|\<mbctype.h>|
-|**_ismbbblank_l**|\<mbctype.h>|
+|**`_ismbbblank`**|\<mbctype.h>|
+|**`_ismbbblank_l`**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

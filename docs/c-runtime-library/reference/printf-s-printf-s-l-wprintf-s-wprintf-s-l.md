@@ -55,11 +55,11 @@ Returns the number of characters printed, or a negative value if an error occurs
 
 The **`printf_s`** function formats and prints a series of characters and values to the standard output stream, **`stdout`**. If arguments follow the *`format`* string, the *`format`* string must contain specifications that determine the output format for the arguments.
 
-The main difference between **`printf_s`** and **`printf`** is that **`printf_s`** checks the format string for valid formatting characters, whereas **`printf`** only checks if the format string is a null pointer. If either check fails, an invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EINVAL`**.
+The main difference between **`printf_s`** and **`printf`** is that **`printf_s`** checks the format string for valid formatting characters, whereas **`printf`** only checks if the format string is a null pointer. If either check fails, an invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
 
-For information on **`errno`** and error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on `errno` and error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**`printf_s`** and **`fprintf_s`** behave identically except that **`printf_s`** writes output to **`stdout`** rather than to a destination of type **`FILE`**. For more information, see [`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
+**`printf_s`** and **`fprintf_s`** behave identically except that **`printf_s`** writes output to **`stdout`** rather than to a destination of type `FILE`. For more information, see [`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 
 **`wprintf_s`** is a wide-character version of **`printf_s`**; *`format`* is a wide-character string. **`wprintf_s`** and **`printf_s`** behave identically if the stream is opened in ANSI mode. **`printf_s`** doesn't currently support output into a UNICODE stream.
 

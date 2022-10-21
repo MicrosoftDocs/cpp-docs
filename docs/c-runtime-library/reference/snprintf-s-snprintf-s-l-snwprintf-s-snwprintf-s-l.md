@@ -86,9 +86,9 @@ The locale to use.
 
 **`_snprintf_s`** returns the number of characters stored in *`buffer`*, not counting the terminating null character. **`_snwprintf_s`** returns the number of wide characters stored in *`buffer`*, not counting the terminating null wide character.
 
-If the storage required to store the data and a terminating null exceeds *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set **`errno`** to **`ERANGE`**, and return -1.
+If the storage required to store the data and a terminating null exceeds *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set `errno` to `ERANGE`, and return -1.
 
-If *`buffer`* or *`format`* is a **`NULL`** pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+If *`buffer`* or *`format`* is a `NULL` pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -104,7 +104,7 @@ If *`count`* is [`_TRUNCATE`](../truncate.md), then **`_snprintf_s`** writes as 
 >
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
-**`_snwprintf_s`** is a wide-character version of **`_snprintf_s`**; the pointer arguments to **`_snwprintf_s`** are wide-character strings. Detection of encoding errors in **`_snwprintf_s`** might differ from that in **`_snprintf_s`**. **`_snwprintf_s`**, like **`swprintf_s`**, writes output to a string rather than to a destination of type **`FILE`**.
+**`_snwprintf_s`** is a wide-character version of **`_snprintf_s`**; the pointer arguments to **`_snwprintf_s`** are wide-character strings. Detection of encoding errors in **`_snwprintf_s`** might differ from that in **`_snprintf_s`**. **`_snwprintf_s`**, like **`swprintf_s`**, writes output to a string rather than to a destination of type `FILE`.
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

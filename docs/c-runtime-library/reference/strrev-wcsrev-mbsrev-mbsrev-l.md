@@ -15,7 +15,7 @@ ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
 Reverses the characters of a string.
 
 > [!IMPORTANT]
-> **_mbsrev** and **_mbsrev_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsrev`** and **`_mbsrev_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -49,11 +49,11 @@ Returns a pointer to the altered string. No return value is reserved to indicate
 
 ## Remarks
 
-The **_strrev** function reverses the order of the characters in *`str`*. The terminating null character remains in place. **_wcsrev** and **_mbsrev** are wide-character and multibyte-character versions of **_strrev**. The arguments and return value of **_wcsrev** are wide-character strings; those of **_mbsrev** are multibyte-character strings. For **_mbsrev**, the order of bytes in each multibyte character in *`str`* is not changed. These three functions behave identically otherwise.
+The **`_strrev`** function reverses the order of the characters in *`str`*. The terminating null character remains in place. **`_wcsrev`** and **`_mbsrev`** are wide-character and multibyte-character versions of **`_strrev`**. The arguments and return value of **`_wcsrev`** are wide-character strings; those of **`_mbsrev`** are multibyte-character strings. For **`_mbsrev`**, the order of bytes in each multibyte character in *`str`* is not changed. These three functions behave identically otherwise.
 
-**_mbsrev** validates its parameters. If either *`string1`* or *`string2`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **_mbsrev** returns **NULL** and sets **errno** to **EINVAL**. **_strrev** and **_wcsrev** do not validate their parameters.
+**`_mbsrev`** validates its parameters. If either *`string1`* or *`string2`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbsrev`** returns `NULL` and sets `errno` to `EINVAL`. **`_strrev`** and **`_wcsrev`** do not validate their parameters.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the `_l` suffix use the current locale and the ones that do have the `_l` suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 > [!IMPORTANT]
 > These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -62,18 +62,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsrev**|**_strrev**|**_mbsrev**|**_wcsrev**|
-|**n/a**|**n/a**|**_mbsrev_l**|**n/a**|
+|`_tcsrev`|**`_strrev`**|**`_mbsrev`**|**`_wcsrev`**|
+|**n/a**|**n/a**|**`_mbsrev_l`**|**n/a**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_strrev**|\<string.h>|
-|**_wcsrev**|\<string.h> or \<wchar.h>|
-|**_mbsrev**, **_mbsrev_l**|\<mbstring.h>|
+|**`_strrev`**|\<string.h>|
+|**`_wcsrev`**|\<string.h> or \<wchar.h>|
+|**`_mbsrev`**, **`_mbsrev_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

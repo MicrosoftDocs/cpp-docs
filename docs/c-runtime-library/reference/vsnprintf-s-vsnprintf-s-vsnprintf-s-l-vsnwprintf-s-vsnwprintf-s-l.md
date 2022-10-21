@@ -103,18 +103,18 @@ For more information, see [Format specifications](../format-specification-syntax
 
 * If *`count`* is equal to or exceeds *`sizeOfBuffer`* but the number of characters of data is less than *`sizeOfBuffer`*, then all of the data is written (with terminating null) and the number of characters is returned.
 
-* If *`count`* and the number of characters of data both equal or exceed *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set **`errno`** to **`ERANGE`**, and return -1.
+* If *`count`* and the number of characters of data both equal or exceed *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set `errno` to `ERANGE`, and return -1.
 
-* If *`buffer`* or *`format`* is a **`NULL`** pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+* If *`buffer`* or *`format`* is a `NULL` pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 ### Error conditions
 
-|**Condition**|Return|**`errno`**|
+|`Condition`|Return|`errno`|
 |-----------------|------------|-------------|
-|*`buffer`* is **`NULL`**|-1|**`EINVAL`**|
-|*`format`* is **`NULL`**|-1|**`EINVAL`**|
-|*`count`* <= 0|-1|**`EINVAL`**|
-|*`sizeOfBuffer`* too small (and *`count`* != **`_TRUNCATE`**)|-1 (and *`buffer`* set to an empty string)|**`ERANGE`**|
+|*`buffer`* is `NULL`|-1|`EINVAL`|
+|*`format`* is `NULL`|-1|`EINVAL`|
+|*`count`* <= 0|-1|`EINVAL`|
+|*`sizeOfBuffer`* too small (and *`count`* != `_TRUNCATE`)|-1 (and *`buffer`* set to an empty string)|`ERANGE`|
 
 ## Remarks
 
@@ -131,7 +131,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
 > [!NOTE]
-> To ensure that there is room for the terminating null, be sure that *`count`* is strictly less than the buffer length, or use **`_TRUNCATE`**.
+> To ensure that there is room for the terminating null, be sure that *`count`* is strictly less than the buffer length, or use `_TRUNCATE`.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

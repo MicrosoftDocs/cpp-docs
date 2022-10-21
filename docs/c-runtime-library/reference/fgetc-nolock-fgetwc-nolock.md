@@ -28,7 +28,7 @@ wint_t _fgetwc_nolock(
 ### Parameters
 
 *`stream`*\
-Pointer to the **FILE** structure.
+Pointer to the `FILE` structure.
 
 ## Return value
 
@@ -36,22 +36,22 @@ See[`fgetc`, `fgetwc`](fgetc-fgetwc.md).
 
 ## Remarks
 
-**_fgetc_nolock** and **_fgetwc_nolock** are identical to **fgetc** and **fgetwc**, respectively, except that they aren't protected from interference by other threads. They might be faster because they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**`_fgetc_nolock`** and **`_fgetwc_nolock`** are identical to `fgetc` and `fgetwc`, respectively, except that they aren't protected from interference by other threads. They might be faster because they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_fgettc_nolock**|**_fgetc_nolock**|**_fgetc_nolock**|**_fgetwc_nolock**|
+|**`_fgettc_nolock`**|**`_fgetc_nolock`**|**`_fgetc_nolock`**|**`_fgetwc_nolock`**|
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|**_fgetc_nolock**|\<stdio.h>|
-|**_fgetwc_nolock**|\<stdio.h> or \<wchar.h>|
+|**`_fgetc_nolock`**|\<stdio.h>|
+|**`_fgetwc_nolock`**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

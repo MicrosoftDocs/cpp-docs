@@ -43,19 +43,19 @@ Locale to use.
 
 ## Return value
 
-Each of these routines returns nonzero if *`c`* is a particular representation of a hexadecimal digit. **isxdigit** returns a nonzero value if *`c`* is a hexadecimal digit (A - F, a - f, or 0 - 9). **iswxdigit** returns a nonzero value if *`c`* is a wide character that corresponds to a hexadecimal digit character. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
+Each of these routines returns nonzero if *`c`* is a particular representation of a hexadecimal digit. **`isxdigit`** returns a nonzero value if *`c`* is a hexadecimal digit (A - F, a - f, or 0 - 9). **`iswxdigit`** returns a nonzero value if *`c`* is a wide character that corresponds to a hexadecimal digit character. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
 
-For the "C" locale, the **iswxdigit** function does not support Unicode full-width hexadecimal characters.
+For the "C" locale, the **`iswxdigit`** function does not support Unicode full-width hexadecimal characters.
 
-The versions of these functions that have the **_l** suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
+The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
-The behavior of **isxdigit** and **_isxdigit_l** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
+The behavior of **`isxdigit`** and **`_isxdigit_l`** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istxdigit**|**isxdigit**|**isxdigit**|**iswxdigit**|
+|`_istxdigit`|**`isxdigit`**|**`isxdigit`**|**`iswxdigit`**|
 
 ## Remarks
 
@@ -65,10 +65,10 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**isxdigit**|\<ctype.h>|
-|**iswxdigit**|\<ctype.h> or \<wchar.h>|
-|**_isxdigit_l**|\<ctype.h>|
-|**_iswxdigit_l**|\<ctype.h> or \<wchar.h>|
+|**`isxdigit`**|\<ctype.h>|
+|**`iswxdigit`**|\<ctype.h> or \<wchar.h>|
+|**`_isxdigit_l`**|\<ctype.h>|
+|**`_iswxdigit_l`**|\<ctype.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

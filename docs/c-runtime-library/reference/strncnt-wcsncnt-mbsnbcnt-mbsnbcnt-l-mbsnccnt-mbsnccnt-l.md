@@ -15,7 +15,7 @@ ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
 Returns the number of characters or bytes within a specified count.
 
 > [!IMPORTANT]
-> **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt**, and **_mbsnccnt_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsnbcnt`**, **`_mbsnbcnt_l`**, **`_mbsnccnt`**, and **`_mbsnccnt_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -61,42 +61,42 @@ Locale to use.
 
 ## Return value
 
-**_mbsnbcnt** and **_mbsnbcnt_l** return the number of bytes found in the first *`count`* of multibyte characters of *`str`*. **_mbsnccnt** and **_mbsnccnt_l** return the number of characters found in the first *`count`* of bytes of *`str`*. If a null character is encountered before the examination of *`str`* has completed, they return the number of bytes or characters found before the null character. If *`str`* consists of fewer than *`count`* characters or bytes, they return the number of characters or bytes in the string. If *`count`* is less than zero, they return 0. In previous versions, these functions had a return value of type **`int`** rather than **size_t**.
+**`_mbsnbcnt`** and **`_mbsnbcnt_l`** return the number of bytes found in the first *`count`* of multibyte characters of *`str`*. **`_mbsnccnt`** and **`_mbsnccnt_l`** return the number of characters found in the first *`count`* of bytes of *`str`*. If a null character is encountered before the examination of *`str`* has completed, they return the number of bytes or characters found before the null character. If *`str`* consists of fewer than *`count`* characters or bytes, they return the number of characters or bytes in the string. If *`count`* is less than zero, they return 0. In previous versions, these functions had a return value of type **`int`** rather than `size_t`.
 
-**_strncnt** returns the number of characters in the first *`count`* bytes of the single-byte string *`str`*. **_wcsncnt** returns the number of characters in the first *`count`* wide characters of the wide-character string *`str`*.
+**`_strncnt`** returns the number of characters in the first *`count`* bytes of the single-byte string *`str`*. **`_wcsncnt`** returns the number of characters in the first *`count`* wide characters of the wide-character string *`str`*.
 
 ## Remarks
 
-**_mbsnbcnt** and **_mbsnbcnt_l** count the number of bytes found in the first *`count`* of multibyte characters of *`str`*. **_mbsnbcnt** and **_mbsnbcnt_l** replace **mtob** and should be used in place of **mtob**.
+**`_mbsnbcnt`** and **`_mbsnbcnt_l`** count the number of bytes found in the first *`count`* of multibyte characters of *`str`*. **`_mbsnbcnt`** and **`_mbsnbcnt_l`** replace `mtob` and should be used in place of `mtob`.
 
-**_mbsnccnt** and **_mbsnccnt_l** count the number of characters found in the first *`count`* of bytes of *`str`*. If **_mbsnccnt** and **_mbsnccnt_l** encounter a null character in the second byte of a double-byte character, the first byte is also considered to be null and is not included in the returned count value. **_mbsnccnt** and **_mbsnccnt_l** replace **btom** and should be used in place of **btom**.
+**`_mbsnccnt`** and **`_mbsnccnt_l`** count the number of characters found in the first *`count`* of bytes of *`str`*. If **`_mbsnccnt`** and **`_mbsnccnt_l`** encounter a null character in the second byte of a double-byte character, the first byte is also considered to be null and is not included in the returned count value. **`_mbsnccnt`** and **`_mbsnccnt_l`** replace `btom` and should be used in place of `btom`.
 
-If *`str`* is a **NULL** pointer or is *`count`* is 0, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md), **errno** is set to **EINVAL**, and the function returns 0.
+If *`str`* is a `NULL` pointer or is *`count`* is 0, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md), `errno` is set to `EINVAL`, and the function returns 0.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |-------------|--------------------------------------|--------------------|-----------------------|
-|**_tcsnbcnt**|**_strncnt**|**_mbsnbcnt**|**_wcsncnt**|
-|**_tcsnccnt**|**_strncnt**|**_mbsnbcnt**|n/a|
-|**_wcsncnt**|n/a|n/a|**_mbsnbcnt**|
-|**_wcsncnt**|n/a|n/a|**_mbsnccnt**|
-|n/a|n/a|**_mbsnbcnt_l**|**_mbsnccnt_l**|
+|`_tcsnbcnt`|**`_strncnt`**|**`_mbsnbcnt`**|**`_wcsncnt`**|
+|`_tcsnccnt`|**`_strncnt`**|**`_mbsnbcnt`**|n/a|
+|**`_wcsncnt`**|n/a|n/a|**`_mbsnbcnt`**|
+|**`_wcsncnt`**|n/a|n/a|**`_mbsnccnt`**|
+|n/a|n/a|**`_mbsnbcnt_l`**|**`_mbsnccnt_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_mbsnbcnt**|\<mbstring.h>|
-|**_mbsnbcnt_l**|\<mbstring.h>|
-|**_mbsnccnt**|\<mbstring.h>|
-|**_mbsnccnt_l**|\<mbstring.h>|
-|**_strncnt**|\<tchar.h>|
-|**_wcsncnt**|\<tchar.h>|
+|**`_mbsnbcnt`**|\<mbstring.h>|
+|**`_mbsnbcnt_l`**|\<mbstring.h>|
+|**`_mbsnccnt`**|\<mbstring.h>|
+|**`_mbsnccnt_l`**|\<mbstring.h>|
+|**`_strncnt`**|\<tchar.h>|
+|**`_wcsncnt`**|\<tchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

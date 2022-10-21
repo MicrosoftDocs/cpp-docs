@@ -71,8 +71,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
-|**log2** macro | \<tgmath.h> ||
+|**`log2`**, **`log2f`**, **`log2l`**|\<math.h>|\<cmath>|
+|**`log2`** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

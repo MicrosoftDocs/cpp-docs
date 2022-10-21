@@ -44,30 +44,30 @@ List of pointers to the parameters.
 
 ## Return value
 
-If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
+If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.
 
 |errno value|Description|
 |-----------------|-----------------|
-|**E2BIG**|The space required for the arguments and environment settings exceeds 32 KB.|
-|**EACCES**|The specified file has a locking or sharing violation.|
-|**EINVAL**|Invalid parameter (one or more of the parameters was a null pointer or empty string).|
-|**EMFILE**|Too many files open (the specified file must be opened to determine whether it's executable).|
-|**ENOENT**|The file or path isn't found.|
-|**ENOEXEC**|The specified file isn't executable or has an invalid executable-file format.|
-|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly.|
+|`E2BIG`|The space required for the arguments and environment settings exceeds 32 KB.|
+|`EACCES`|The specified file has a locking or sharing violation.|
+|`EINVAL`|Invalid parameter (one or more of the parameters was a null pointer or empty string).|
+|`EMFILE`|Too many files open (the specified file must be opened to determine whether it's executable).|
+|`ENOENT`|The file or path isn't found.|
+|`ENOEXEC`|The specified file isn't executable or has an invalid executable-file format.|
+|`ENOMEM`|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly.|
 
 ## Remarks
 
 Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter. The first argument is the command or executable file name, and the second argument should be the same as the first. It becomes `argv[0]` in the executed process. The third argument is the first argument, `argv[1]`, of the process being executed.
 
-The **_execl** functions validate their parameters. If either *`cmdname`* or *`arg0`* is a null pointer or empty string, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md) If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is executed.
+The **`_execl`** functions validate their parameters. If either *`cmdname`* or *`arg0`* is a null pointer or empty string, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md) If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.
 
 ## Requirements
 
 |Function|Required header|Optional header|
 |--------------|---------------------|---------------------|
-|**_execl**|\<process.h>|\<errno.h>|
-|**_wexecl**|\<process.h> or \<wchar.h>|\<errno.h>|
+|**`_execl`**|\<process.h>|\<errno.h>|
+|**`_wexecl`**|\<process.h> or \<wchar.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

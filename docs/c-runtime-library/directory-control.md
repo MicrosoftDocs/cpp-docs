@@ -17,7 +17,7 @@ These routines access, modify, and obtain information about the directory struct
 |[`_chdrive`](./reference/chdrive.md)|Change current drive|
 |[`_getcwd`, `_wgetcwd`](./reference/getcwd-wgetcwd.md)|Get current working directory for default drive|
 |[`_getdcwd`, `_wgetdcwd`](./reference/getdcwd-wgetdcwd.md)|Get current working directory for specified drive|
-|[`_getdiskfree`](./reference/getdiskfree.md)|Populates a **_diskfree_t** structure with information about a disk drive.|
+|[`_getdiskfree`](./reference/getdiskfree.md)|Populates a `_diskfree_t` structure with information about a disk drive.|
 |[`_getdrive`](./reference/getdrive.md)|Get current (default) drive|
 |[`_getdrives`](./reference/getdrives.md)|Returns a bitmask representing the currently available disk drives.|
 |[`_mkdir`, `_wmkdir`](./reference/mkdir-wmkdir.md)|Make new directory|

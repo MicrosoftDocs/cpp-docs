@@ -36,11 +36,11 @@ Locale to use.
 
 ## Return value
 
-**_ismbbprint** returns a nonzero value if the expression:
+**`_ismbbprint`** returns a nonzero value if the expression:
 
 `isprint(c) || _ismbbkprint(c)`
 
-is nonzero for *`c`*, or 0 if it is not. **_ismbbprint** uses the current locale for any locale-dependent behavior. **_ismbbprint_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
+is nonzero for *`c`*, or 0 if it is not. **`_ismbbprint`** uses the current locale for any locale-dependent behavior. **`_ismbbprint_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
@@ -50,8 +50,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_ismbbprint**|\<mbctype.h>|
-|**_ismbbprint_l**|\<mbctype.h>|
+|**`_ismbbprint`**|\<mbctype.h>|
+|**`_ismbbprint_l`**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

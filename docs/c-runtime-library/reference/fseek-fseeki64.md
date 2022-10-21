@@ -32,7 +32,7 @@ int _fseeki64(
 ### Parameters
 
 *`stream`*\
-Pointer to **`FILE`** structure.
+Pointer to `FILE` structure.
 
 *`offset`*\
 Number of bytes from *`origin`*.
@@ -42,7 +42,7 @@ Initial position.
 
 ## Return value
 
-If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* is not one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* is not one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 ## Remarks
 
@@ -50,9 +50,9 @@ The **`fseek`** and **`_fseeki64`** functions moves the file pointer (if any) as
 
 |origin value|Meaning|
 |-|-|
-| **`SEEK_CUR`** | Current position of file pointer. |
-| **`SEEK_END`** | End of file. |
-| **`SEEK_SET`** | Beginning of file. |
+| `SEEK_CUR` | Current position of file pointer. |
+| `SEEK_END` | End of file. |
+| `SEEK_SET` | Beginning of file. |
 
 You can use **`fseek`** and **`_fseeki64`** to reposition the pointer anywhere in a file. The pointer can also be positioned beyond the end of the file. **`fseek`** and **`_fseeki64`** clears the end-of-file indicator and negates the effect of any prior [`ungetc`](ungetc-ungetwc.md) calls against *`stream`*.
 

@@ -12,7 +12,7 @@ UWP apps don't support the following CRT features:
 
 - Most CRT functions that are related to unsupported functionality.
 
-   For example, a UWP app can't create a process by using the **exec** and **spawn** families of routines.
+   For example, a UWP app can't create a process by using the `exec` and `spawn` families of routines.
 
    When a CRT function isn't supported in a UWP app, that fact is noted in its reference article.
 

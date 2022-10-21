@@ -34,12 +34,12 @@ Angle in radians.
 
 The hyperbolic cosine of *`x`*.
 
-By default, if the result is too large in a **`cosh`**, **`coshf`**, or **`coshl`** call, the function returns **`HUGE_VAL`** and sets **`errno`** to **`ERANGE`**.
+By default, if the result is too large in a **`cosh`**, **`coshf`**, or **`coshl`** call, the function returns `HUGE_VAL` and sets `errno` to `ERANGE`.
 
 |Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|
-|± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
-|*`x`* ≥ 7.104760e+002|**`INEXACT`**+**`OVERFLOW`**|**`OVERFLOW`**|
+|± QNAN, IND|none|`_DOMAIN`|
+|*`x`* ≥ 7.104760e+002|`INEXACT`+`OVERFLOW`|`OVERFLOW`|
 
 ## Remarks
 

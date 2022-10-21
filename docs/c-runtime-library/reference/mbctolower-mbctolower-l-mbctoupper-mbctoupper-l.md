@@ -54,30 +54,30 @@ The functions test a character *`c`* and, if possible, apply one of the followin
 
 |Routines|Converts|
 |--------------|--------------|
-|**_mbctolower**, **_mbctolower_l**|Uppercase character to lowercase character.|
-|**_mbctoupper**, **_mbctoupper_l**|Lowercase character to uppercase character.|
+|**`_mbctolower`**, **`_mbctolower_l`**|Uppercase character to lowercase character.|
+|**`_mbctoupper`**, **`_mbctoupper_l`**|Lowercase character to uppercase character.|
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The version of this function without the **_l** suffix uses the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The version of this function without the `_l` suffix uses the current locale for this locale-dependent behavior; the version with the `_l` suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
-In previous versions, **_mbctolower** was called **jtolower**, and **_mbctoupper** was called **jtoupper**. For new code, use the new names instead.
+In previous versions, **`_mbctolower`** was called `jtolower`, and **`_mbctoupper`** was called `jtoupper`. For new code, use the new names instead.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_totlower**|**tolower**|**_mbctolower**|**towlower**|
-|**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towlower_t**|
-|**_totupper**|**toupper**|**_mbctoupper**|**towupper**|
-|**_totupper_l**|**toupper_l**|**_mbctoupper_l**|**_towupper_l**|
+|`_totlower`|`tolower`|**`_mbctolower`**|`towlower`|
+|`_totlower_l`|`_tolower_l`|**`_mbctolower_l`**|`_towlower_t`|
+|`_totupper`|`toupper`|**`_mbctoupper`**|`towupper`|
+|`_totupper_l`|`toupper_l`|**`_mbctoupper_l`**|`_towupper_l`|
 
 ## Requirements
 
 |Routines|Required header|
 |--------------|---------------------|
-|**_mbctolower**, **_mbctolower_l**|\<mbstring.h>|
-|**_mbctoupper**, **_mbctoupper_l**|\<mbstring.h>|
+|**`_mbctolower`**, **`_mbctolower_l`**|\<mbstring.h>|
+|**`_mbctoupper`**, **`_mbctoupper_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

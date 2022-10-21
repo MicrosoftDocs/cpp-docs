@@ -15,7 +15,7 @@ ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
 Initializes characters of a string to a given character. More secure versions of these functions exist; see [`_strnset_s`, `_strnset_s_l`, `_wcsnset_s`, `_wcsnset_s_l`, `_mbsnset_s`, `_mbsnset_s_l`](strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md).
 
 > [!IMPORTANT]
-> **_mbsnset** and **_mbsnset_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsnset`** and **`_mbsnset_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -75,32 +75,32 @@ Returns a pointer to the altered string.
 
 ## Remarks
 
-The **_strnset** function sets, at most, the first *`count`* characters of *`str`* to *`c`* (converted to **`char`**). If *`count`* is greater than the length of *`str`*, the length of *`str`* is used instead of *`count`*.
+The **`_strnset`** function sets, at most, the first *`count`* characters of *`str`* to *`c`* (converted to **`char`**). If *`count`* is greater than the length of *`str`*, the length of *`str`* is used instead of *`count`*.
 
-**_wcsnset** and **_mbsnset** are wide-character and multibyte-character versions of **_strnset**. The string arguments and return value of **_wcsnset** are wide-character strings; those of **_mbsnset** are multibyte-character strings. These three functions behave identically otherwise.
+**`_wcsnset`** and **`_mbsnset`** are wide-character and multibyte-character versions of **`_strnset`**. The string arguments and return value of **`_wcsnset`** are wide-character strings; those of **`_mbsnset`** are multibyte-character strings. These three functions behave identically otherwise.
 
-**_mbsnset** validates its parameters; if *`str`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, **_mbsnset** returns **NULL** and sets **errno** to **EINVAL**. **_strnset** and **_wcsnset** do not validate their parameters.
+**`_mbsnset`** validates its parameters; if *`str`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, **`_mbsnset`** returns `NULL` and sets `errno` to `EINVAL`. **`_strnset`** and **`_wcsnset`** do not validate their parameters.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsnset**|**_strnset**|**_mbsnbset**|**_wcsnset**|
-|**_tcsnset_l**|**_strnset_l**|**_mbsnbset_l**|**_wcsnset_l**|
+|`_tcsnset`|**`_strnset`**|**`_mbsnbset`**|**`_wcsnset`**|
+|`_tcsnset_l`|**`_strnset_l`**|**`_mbsnbset_l`**|**`_wcsnset_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_strnset**|\<string.h>|
-|**_strnset_l**|\<tchar.h>|
-|**_wcsnset**|\<string.h> or \<wchar.h>|
-|**_wcsnset_l**|\<tchar.h>|
-|**_mbsnset**, **_mbsnset_l**|\<mbstring.h>|
+|**`_strnset`**|\<string.h>|
+|**`_strnset_l`**|\<tchar.h>|
+|**`_wcsnset`**|\<string.h> or \<wchar.h>|
+|**`_wcsnset_l`**|\<tchar.h>|
+|**`_mbsnset`**, **`_mbsnset_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

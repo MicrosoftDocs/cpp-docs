@@ -46,11 +46,11 @@ Zero if successful. The return value is an error code if there's a failure. Erro
 
 |*`tmDest`*|*`sourceTime`*|Return|Value in *`tmDest`*|
 |-----------|------------|------------|--------------------|
-|**`NULL`**|any|**`EINVAL`**|Not modified.|
-|Not **`NULL`** (points to valid memory)|**`NULL`**|**`EINVAL`**|All fields set to -1.|
-|Not **`NULL`**|< 0|**`EINVAL`**|All fields set to -1.|
+|`NULL`|any|`EINVAL`|Not modified.|
+|Not `NULL` (points to valid memory)|`NULL`|`EINVAL`|All fields set to -1.|
+|Not `NULL`|< 0|`EINVAL`|All fields set to -1.|
 
-In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
+In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
 ## Remarks
 
@@ -75,7 +75,7 @@ Each of the structure fields is of type **`int`**, as shown in the following tab
 
 **`_gmtime64_s`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas **`gmtime32_s`** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both these functions.
 
-**`gmtime_s`** is an inline function that evaluates to **`_gmtime64_s`** and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. Doing this will cause **`gmtime_s`** to be in-lined to **`_gmtime32_s`**. This isn't recommended because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
+**`gmtime_s`** is an inline function that evaluates to **`_gmtime64_s`** and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. Doing this will cause **`gmtime_s`** to be in-lined to **`_gmtime32_s`**. This isn't recommended because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

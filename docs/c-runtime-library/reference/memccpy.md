@@ -41,11 +41,11 @@ Number of characters.
 
 ## Return value
 
-If the character *`c`* is copied, **_memccpy** returns a pointer to the char in *`dest`* that immediately follows the character. If *`c`* is not copied, it returns **NULL**.
+If the character *`c`* is copied, **`_memccpy`** returns a pointer to the char in *`dest`* that immediately follows the character. If *`c`* is not copied, it returns `NULL`.
 
 ## Remarks
 
-The **_memccpy** function copies 0 or more characters of *`src`* to *`dest`*, halting when the character *`c`* has been copied or when *`count`* characters have been copied, whichever comes first.
+The **`_memccpy`** function copies 0 or more characters of *`src`* to *`dest`*, halting when the character *`c`* has been copied or when *`count`* characters have been copied, whichever comes first.
 
 **Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
@@ -53,7 +53,7 @@ The **_memccpy** function copies 0 or more characters of *`src`* to *`dest`*, ha
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_memccpy**|\<memory.h> or \<string.h>|
+|**`_memccpy`**|\<memory.h> or \<string.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

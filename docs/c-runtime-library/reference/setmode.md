@@ -35,15 +35,15 @@ New translation mode.
 
 If successful, returns the previous translation mode.
 
-If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to either **`EBADF`**, which indicates an invalid file descriptor, or **`EINVAL`**, which indicates an invalid *`mode`* argument.
+If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to either `EBADF`, which indicates an invalid file descriptor, or `EINVAL`, which indicates an invalid *`mode`* argument.
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`_setmode`** function sets to *`mode`* the translation mode of the file given by *`fd`*. Passing **`_O_TEXT`** as *`mode`* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing **`_O_BINARY`** sets binary (untranslated) mode, in which these translations are suppressed.
+The **`_setmode`** function sets to *`mode`* the translation mode of the file given by *`fd`*. Passing `_O_TEXT` as *`mode`* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing `_O_BINARY` sets binary (untranslated) mode, in which these translations are suppressed.
 
-You can also pass **`_O_U16TEXT`**, **`_O_U8TEXT`**, or **`_O_WTEXT`** to enable Unicode mode, as demonstrated in the second example later in this document.
+You can also pass `_O_U16TEXT`, `_O_U8TEXT`, or `_O_WTEXT` to enable Unicode mode, as demonstrated in the second example later in this document.
 
 > [!CAUTION]
 > Unicode mode is for wide print functions (for example, `wprintf`) and is not supported for narrow print functions. Use of a narrow print function on a Unicode mode stream triggers an assert.

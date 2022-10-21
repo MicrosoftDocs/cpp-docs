@@ -31,7 +31,7 @@ Returns a pointer to the previous exception handling function registered by **`_
 
 ## Remarks
 
-The C++ **`_set_new_handler`** function specifies an exception-handling function that gains control if the **`new`** operator fails to allocate memory. If **`new`** fails, the run-time system automatically calls the exception-handling function that was passed as an argument to **`_set_new_handler`**. **`_PNH`**, defined in `<new.h>`, is a pointer to a function that returns type **`int`** and takes an argument of type **`size_t`**. Use **`size_t`** to specify the amount of space to be allocated.
+The C++ **`_set_new_handler`** function specifies an exception-handling function that gains control if the **`new`** operator fails to allocate memory. If **`new`** fails, the run-time system automatically calls the exception-handling function that was passed as an argument to **`_set_new_handler`**. `_PNH`, defined in `<new.h>`, is a pointer to a function that returns type **`int`** and takes an argument of type **`size_t`**. Use **`size_t`** to specify the amount of space to be allocated.
 
 There's no default handler.
 
