@@ -77,11 +77,11 @@ Pointer to structure that stores results.
 
 ## Return value
 
-Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case **`errno`** is set to **`ENOENT`**, indicating that the filename or path couldn't be found. A return value of **`EINVAL`** indicates an invalid parameter; **`errno`** is also set to **`EINVAL`** in this case.
+Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case `errno` is set to `ENOENT`, indicating that the filename or path couldn't be found. A return value of `EINVAL` indicates an invalid parameter; `errno` is also set to `EINVAL` in this case.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-The date stamp on a file can be represented if it's later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use **`_stat32`** or **`_wstat32`**, or have defined **`_USE_32BIT_TIME_T`**, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.
+The date stamp on a file can be represented if it's later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use **`_stat32`** or **`_wstat32`**, or have defined `_USE_32BIT_TIME_T`, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.
 
 ## Remarks
 
@@ -89,20 +89,20 @@ The **`_stat`** function obtains information about the file or directory specifi
 
 **`_wstat`** is a wide-character version of **`_stat`**; the *`path`* argument to **`_wstat`** is a wide-character string. **`_wstat`** and **`_stat`** behave identically except that **`_wstat`** doesn't handle multibyte-character strings.
 
-Variations of these functions support 32-bit or 64-bit time types, and 32-bit or 64-bit file lengths. The first numerical suffix (**32** or **64**) indicates the size of the time type used; the second suffix is either **i32** or **i64**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
+Variations of these functions support 32-bit or 64-bit time types, and 32-bit or 64-bit file lengths. The first numerical suffix (**`32`** or **`64`**) indicates the size of the time type used; the second suffix is either **`i32`** or **`i64`**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
 
-**`_stat`** is equivalent to **`_stat64i32`**, and **`struct _stat`** contains a 64-bit time, unless **`_USE_32BIT_TIME_T`** is defined, in which case the old behavior is in effect; **`_stat`** uses a 32-bit time, and **`struct _stat`** contains a 32-bit time. The same is true for **`_stati64`**.
+**`_stat`** is equivalent to **`_stat64i32`**, and **`struct _stat`** contains a 64-bit time, unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; **`_stat`** uses a 32-bit time, and **`struct _stat`** contains a 32-bit time. The same is true for **`_stati64`**.
 
 > [!NOTE]
 > **`_wstat`** does not work with Windows Vista symbolic links. In these cases, **`_wstat`** will always report a file size of 0. **`_stat`** does work correctly with symbolic links.
 
-This function validates its parameters. If either *`path`* or *`buffer`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
+This function validates its parameters. If either *`path`* or *`buffer`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Time type and file length type variations of `_stat`
 
-|Functions|_USE_32BIT_TIME_T defined?|Time type|File length type|
+|Functions|`_USE_32BIT_TIME_T` defined?|Time type|File length type|
 |---------------|------------------------------------|---------------|----------------------|
 |**`_stat`**, **`_wstat`**|Not defined|64-bit|32-bit|
 |**`_stat`**, **`_wstat`**|Defined|32-bit|32-bit|
@@ -132,7 +132,7 @@ The **`_stat`** structure, defined in **`SYS\STAT.H`**, includes the following f
 | **`st_ctime`** | Time of creation of file. Valid on NTFS but not on FAT formatted disk drives. |
 | **`st_dev`** | Drive number of the disk containing the file (same as **`st_rdev`**). |
 | **`st_ino`** | Number of the information node (the **`inode`**) for the file (UNIX-specific). On UNIX file systems, the **`inode`** describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same **`inode`**. The **`inode`**, and therefore **`st_ino`**, has no meaning in the FAT, HPFS, or NTFS file systems. |
-| **`st_mode`** | Bit mask for file-mode information. The **`_S_IFDIR`** bit is set if *`path`* specifies a directory; the **`_S_IFREG`** bit is set if *`path`* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension. |
+| **`st_mode`** | Bit mask for file-mode information. The `_S_IFDIR` bit is set if *`path`* specifies a directory; the `_S_IFREG` bit is set if *`path`* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension. |
 | **`st_mtime`** | Time of last modification of file. |
 | **`st_nlink`** | Always 1 on non-NTFS file systems. |
 | **`st_rdev`** | Drive number of the disk containing the file (same as **`st_dev`**). |

@@ -25,19 +25,19 @@ int feof(
 ### Parameters
 
 *`stream`*\
-Pointer to **FILE** structure.
+Pointer to `FILE` structure.
 
 ## Return value
 
-The **feof** function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is **NULL**, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the **feof** returns 0.
+The **`feof`** function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is `NULL`, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the **`feof`** returns 0.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **feof** routine (implemented both as a function and as a macro) determines whether the end of *`stream`* has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until [`rewind`](rewind.md), **fsetpos**, [`fseek`](fseek-fseeki64.md), or **clearerr** is called against it.
+The **`feof`** routine (implemented both as a function and as a macro) determines whether the end of *`stream`* has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until [`rewind`](rewind.md), `fsetpos`, [`fseek`](fseek-fseeki64.md), or `clearerr` is called against it.
 
-For example, if a file contains 10 bytes and you read 10 bytes from the file, **feof** will return 0 because, even though the file pointer is at the end of the file, you haven't attempted to read beyond the end. Only after you try to read an 11th byte will **feof** return a nonzero value.
+For example, if a file contains 10 bytes and you read 10 bytes from the file, **`feof`** will return 0 because, even though the file pointer is at the end of the file, you haven't attempted to read beyond the end. Only after you try to read an 11th byte will **`feof`** return a nonzero value.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -45,7 +45,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**feof**|\<stdio.h>|
+|**`feof`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

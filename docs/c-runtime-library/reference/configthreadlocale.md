@@ -27,7 +27,7 @@ The option to set. One of the options listed in the following table.
 
 ## Return value
 
-The previous per-thread locale status (**`_DISABLE_PER_THREAD_LOCALE`** or **`_ENABLE_PER_THREAD_LOCALE`**), or -1 on failure.
+The previous per-thread locale status (`_DISABLE_PER_THREAD_LOCALE` or `_ENABLE_PER_THREAD_LOCALE`), or -1 on failure.
 
 ## Remarks
 
@@ -35,15 +35,15 @@ The **`_configthreadlocale`** function is used to control the use of thread-spec
 
 | Option | Description |
 |-|-|
-| **`_ENABLE_PER_THREAD_LOCALE`** | Make the current thread use a thread-specific locale. Subsequent calls to **`setlocale`** in this thread affect only the thread's own locale. |
-| **`_DISABLE_PER_THREAD_LOCALE`** | Make the current thread use the global locale. Subsequent calls to **`setlocale`** in this thread affect other threads using the global locale. |
+| `_ENABLE_PER_THREAD_LOCALE` | Make the current thread use a thread-specific locale. Subsequent calls to **`setlocale`** in this thread affect only the thread's own locale. |
+| `_DISABLE_PER_THREAD_LOCALE` | Make the current thread use the global locale. Subsequent calls to **`setlocale`** in this thread affect other threads using the global locale. |
 | **0** | Retrieves the current setting for this particular thread. |
 
 These functions affect the behavior of **`setlocale`**, **`_tsetlocale`**, **`_wsetlocale`**, and **`_setmbcp`**. When per-thread locale is disabled, any subsequent call to **`setlocale`** or **`_wsetlocale`** changes the locale of all threads that use the global locale. When per-thread locale is enabled, **`setlocale`** or **`_wsetlocale`** only affects the current thread's locale.
 
 If you use **`_configthreadlocale`** to enable a per-thread locale, set the preferred locale in that thread immediately afterward by a call to **`setlocale`** or **`_wsetlocale`**.
 
-If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
+If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns -1.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

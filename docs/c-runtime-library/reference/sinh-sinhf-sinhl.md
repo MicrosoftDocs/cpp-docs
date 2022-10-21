@@ -32,7 +32,7 @@ Angle in radians.
 
 ## Return value
 
-The **`sinh`** functions return the hyperbolic sine of *`x`*. By default, if the result is too large, **`sinh`** sets **`errno`** to **`ERANGE`** and returns ±**`HUGE_VAL`**.
+The **`sinh`** functions return the hyperbolic sine of *`x`*. By default, if the result is too large, **`sinh`** sets `errno` to `ERANGE` and returns ±`HUGE_VAL`.
 
 |Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|

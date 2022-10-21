@@ -37,7 +37,7 @@ None.
 
 ## Remarks
 
-The **_set_controlfp** function is similar to **_control87**, but it only sets the floating-point control word to *`newControl`*. The bits in the values indicate the floating-point control state. The floating-point control state allows the program to change the precision, rounding, and infinity modes in the floating-point math package. You can also mask or unmask floating-point exceptions using **_set_controlfp**. For more information, see [`_control87`, `_controlfp`, `__control87_2`](control87-controlfp-control87-2.md).
+The **`_set_controlfp`** function is similar to `_control87`, but it only sets the floating-point control word to *`newControl`*. The bits in the values indicate the floating-point control state. The floating-point control state allows the program to change the precision, rounding, and infinity modes in the floating-point math package. You can also mask or unmask floating-point exceptions using **`_set_controlfp`**. For more information, see [`_control87`, `_controlfp`, `__control87_2`](control87-controlfp-control87-2.md).
 
 This function is deprecated when compiling with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) because the common language runtime only supports the default floating-point precision.
 
@@ -45,7 +45,7 @@ This function is deprecated when compiling with [/clr (Common Language Runtime C
 
 |Routine|Required header|Compatibility|
 |-------------|---------------------|-------------------|
-|**_set_controlfp**|\<float.h>|x86 processor only|
+|**`_set_controlfp`**|\<float.h>|x86 processor only|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

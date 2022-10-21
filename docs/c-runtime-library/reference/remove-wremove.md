@@ -31,7 +31,7 @@ Path of file to be removed.
 
 ## Return value
 
-Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets **`errno`** either to **`EACCES`** to indicate that the path specifies a read-only file, specifies a directory, or the file is open, or to **`ENOENT`** to indicate that the filename or path wasn't found.
+Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets `errno` either to `EACCES` to indicate that the path specifies a read-only file, specifies a directory, or the file is open, or to `ENOENT` to indicate that the filename or path wasn't found.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tremove`**|**`remove`**|**`remove`**|**`_wremove`**|
 

@@ -38,7 +38,7 @@ Length in bytes of each element.
 
 The **`calloc`** function allocates storage space for an array of *`number`* elements, each of length *`size`* bytes. Each element is initialized to 0.
 
-**`calloc`** sets **`errno`** to **`ENOMEM`** if a memory allocation fails or if the amount of memory requested exceeds **`_HEAP_MAXREQ`**. For information on this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+**`calloc`** sets `errno` to `ENOMEM` if a memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 In the Microsoft implementation, if *`number`* or *`size`* is zero, **`calloc`** returns a pointer to an allocated block of non-zero size. An attempt to read or write through the returned pointer leads to undefined behavior.
 

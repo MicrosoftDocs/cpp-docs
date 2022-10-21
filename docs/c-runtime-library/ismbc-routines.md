@@ -11,7 +11,7 @@ ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
 ---
 # `_ismbc` routines
 
-Each **_ismbc** routine tests a given multibyte character `c` for a particular condition.
+Each `_ismbc` routine tests a given multibyte character `c` for a particular condition.
 
 :::row:::
    :::column span="":::
@@ -26,9 +26,9 @@ Each **_ismbc** routine tests a given multibyte character `c` for a particular c
 
 ## Remarks
 
-The test result of each **_ismbc** routine depends on the multibyte code page in effect. Multibyte code pages have single-byte alphabetic characters. By default, the multibyte code page is set to the system-default ANSI code page obtained from the operating system at program startup. You can query or change the multibyte code page in use with [`_getmbcp`](./reference/getmbcp.md) or [`_setmbcp`](./reference/setmbcp.md), respectively.
+The test result of each `_ismbc` routine depends on the multibyte code page in effect. Multibyte code pages have single-byte alphabetic characters. By default, the multibyte code page is set to the system-default ANSI code page obtained from the operating system at program startup. You can query or change the multibyte code page in use with [`_getmbcp`](./reference/getmbcp.md) or [`_setmbcp`](./reference/setmbcp.md), respectively.
 
-The output value is affected by the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.
+The output value is affected by the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead.
 
 |Routine|Test condition|Code page 932 example|
 |-------------|--------------------|---------------------------|

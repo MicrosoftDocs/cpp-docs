@@ -59,30 +59,30 @@ Sign of the converted number.
 
 Zero if successful. The return value is an error code if there's a failure. Error codes are defined in Errno.h. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-If there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL**, and returns **EINVAL**.
+If there's an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL`, and returns `EINVAL`.
 
 ### Error conditions
 
 |*`buffer`*|*`sizeInBytes`*|*`value`*|*`count`*|*`dec`*|*`sign`*|Return value|Value in *`buffer`*|
 |---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|
-|**NULL**|any|any|any|any|any|**EINVAL**|Not modified.|
-|Not **NULL** (points to valid memory)|<=0|any|any|any|any|**EINVAL**|Not modified.|
-|any|any|any|any|**NULL**|any|**EINVAL**|Not modified.|
-|any|any|any|any|any|**NULL**|**EINVAL**|Not modified.|
+|`NULL`|any|any|any|any|any|`EINVAL`|Not modified.|
+|Not `NULL` (points to valid memory)|<=0|any|any|any|any|`EINVAL`|Not modified.|
+|any|any|any|any|`NULL`|any|`EINVAL`|Not modified.|
+|any|any|any|any|any|`NULL`|`EINVAL`|Not modified.|
 
 ## Security issues
 
-**_ecvt_s** might generate an access violation if *`buffer`* doesn't point to valid memory and isn't **NULL**.
+**`_ecvt_s`** might generate an access violation if *`buffer`* doesn't point to valid memory and isn't `NULL`.
 
 ## Remarks
 
-The **_ecvt_s** function converts a floating-point number to a character string. The *`value`* parameter is the floating-point number to be converted. This function stores up to *`count`* digits of *`value`* as a string and appends a null character ('\0'). If the number of digits in *`value`* exceeds *`count`*, the low-order digit is rounded. If there are fewer than *`count`* digits, the string is padded with zeros.
+The **`_ecvt_s`** function converts a floating-point number to a character string. The *`value`* parameter is the floating-point number to be converted. This function stores up to *`count`* digits of *`value`* as a string and appends a null character ('\0'). If the number of digits in *`value`* exceeds *`count`*, the low-order digit is rounded. If there are fewer than *`count`* digits, the string is padded with zeros.
 
 Only digits are stored in the string. The position of the decimal point and the sign of *`value`* can be obtained from *`dec`* and *`sign`* after the call. The *`dec`* parameter points to an integer value giving the position of the decimal point with respect to the beginning of the string. A 0 or negative integer value indicates that the decimal point lies to the left of the first digit. The *`sign`* parameter points to an integer that indicates the sign of the converted number. If the integer value is 0, the number is positive. Otherwise, the number is negative.
 
-A buffer of length **_CVTBUFSIZE** is sufficient for any floating-point value.
+A buffer of length `_CVTBUFSIZE` is sufficient for any floating-point value.
 
-The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the *`count`* parameter. **_ecvt_s** interprets *`count`* as the total number of digits in the output string, whereas **_fcvt_s** interprets *`count`* as the number of digits after the decimal point.
+The difference between **`_ecvt_s`** and `_fcvt_s` is in the interpretation of the *`count`* parameter. **`_ecvt_s`** interprets *`count`* as the total number of digits in the output string, whereas `_fcvt_s` interprets *`count`* as the number of digits after the decimal point.
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -94,7 +94,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|Optional header|
 |--------------|---------------------|---------------------|
-|**_ecvt_s**|\<stdlib.h>|\<errno.h>|
+|**`_ecvt_s`**|\<stdlib.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

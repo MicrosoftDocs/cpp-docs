@@ -49,12 +49,12 @@ The locale to use.
 
 ## Return value
 
-**`strtod`** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**`HUGE_VAL`**. The sign of **`HUGE_VAL`** matches the sign of the value that can't be represented. **`strtod`** returns `0` if no conversion can be performed or an underflow occurs.
+**`strtod`** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VAL`. The sign of `HUGE_VAL` matches the sign of the value that can't be represented. **`strtod`** returns `0` if no conversion can be performed or an underflow occurs.
 
 **`wcstod`** returns values analogously to **`strtod`**:
 
-- For both functions, **`errno`** is set to **`ERANGE`** if overflow or underflow occurs.
-- If there are invalid parameters, **`errno`** is set to **`EINVAL`** and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
+- For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.
+- If there are invalid parameters, `errno` is set to `EINVAL` and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 For more information on this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -66,14 +66,14 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tcstod`**|**`strtod`**|**`strtod`**|**`wcstod`**|
 |**`_tcstod_l`**|**`_strtod_l`**|**`_strtod_l`**|**`_wcstod_l`**|
 
-The **`LC_NUMERIC`** category setting of the current locale determines recognition of the radix point character in *`strSource`*. For more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtod_l`** is identical to **`_strtod`** except the former uses the *`locale`* passed in instead. For more information, see [Locale](../locale.md).
+The `LC_NUMERIC` category setting of the current locale determines recognition of the radix point character in *`strSource`*. For more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtod_l`** is identical to **`_strtod`** except the former uses the *`locale`* passed in instead. For more information, see [Locale](../locale.md).
 
-If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
+If *`endptr`* isn't `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
 
 **`strtod`** expects *`strSource`* to point to a string of one of the following forms:
 

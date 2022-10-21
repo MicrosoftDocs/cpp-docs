@@ -39,16 +39,16 @@ void _wsplitpath(
 Full path.
 
 *`drive`*\
-Drive letter, followed by a colon (**:**). You can pass **`NULL`** for this parameter if you do not need the drive letter.
+Drive letter, followed by a colon (**:**). You can pass `NULL` for this parameter if you do not need the drive letter.
 
 *`dir`*\
-Directory path, including trailing slash. Forward slashes ( **/** ), backslashes ( **\\** ), or both may be used. You can pass **`NULL`** for this parameter if you do not need the directory path.
+Directory path, including trailing slash. Forward slashes ( **/** ), backslashes ( **\\** ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
 
 *`fname`*\
-Base filename (no extension). You can pass **`NULL`** for this parameter if you do not need the filename.
+Base filename (no extension). You can pass `NULL` for this parameter if you do not need the filename.
 
 *`ext`*\
-Filename extension, including leading period (**.**). You can pass **`NULL`** for this parameter if you do not need the filename extension.
+Filename extension, including leading period (**.**). You can pass `NULL` for this parameter if you do not need the filename extension.
 
 ## Remarks
 
@@ -64,7 +64,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tsplitpath`**|**`_splitpath`**|**`_splitpath`**|**`_wsplitpath`**|
 
-Each component of the full path is stored in a separate buffer; the manifest constants **`_MAX_DRIVE`**, **`_MAX_DIR`**, **`_MAX_FNAME`**, and **`_MAX_EXT`** (defined in `STDLIB.H`) specify the maximum size for each file component. File components that are larger than the corresponding manifest constants cause heap corruption.
+Each component of the full path is stored in a separate buffer; the manifest constants `_MAX_DRIVE`, `_MAX_DIR`, `_MAX_FNAME`, and `_MAX_EXT` (defined in `STDLIB.H`) specify the maximum size for each file component. File components that are larger than the corresponding manifest constants cause heap corruption.
 
 Each buffer must be as large as its corresponding manifest constant to avoid potential buffer overrun.
 
@@ -72,16 +72,16 @@ The following table lists the values of the manifest constants.
 
 |Name|Value|
 |----------|-----------|
-|**`_MAX_DRIVE`**|3|
-|**`_MAX_DIR`**|256|
-|**`_MAX_FNAME`**|256|
-|**`_MAX_EXT`**|256|
+|`_MAX_DRIVE`|3|
+|`_MAX_DIR`|256|
+|`_MAX_FNAME`|256|
+|`_MAX_EXT`|256|
 
 If the full path does not contain a component (for example, a filename), **`_splitpath`** assigns empty strings to the corresponding buffers.
 
-You can pass **`NULL`** to **`_splitpath`** for any parameter other than *`path`* that you do not need.
+You can pass `NULL` to **`_splitpath`** for any parameter other than *`path`* that you do not need.
 
-If *`path`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns **`EINVAL`**.
+If *`path`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EINVAL`.
 
 ## Requirements
 

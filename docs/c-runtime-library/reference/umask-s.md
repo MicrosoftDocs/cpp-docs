@@ -33,16 +33,16 @@ The previous value of the permission setting.
 
 ## Return value
 
-Returns an error code if *`mode`* doesn't specify a valid mode or the *`pOldMode`* pointer is **`NULL`**.
+Returns an error code if *`mode`* doesn't specify a valid mode or the *`pOldMode`* pointer is `NULL`.
 
 ### Error conditions
 
 | *`mode`* | *`pOldMode`* | Return value | Contents of *`pOldMode`* |
 |--|--|--|--|
-| any | **`NULL`** | **`EINVAL`** | not modified |
-| invalid mode | any | **`EINVAL`** | not modified |
+| any | `NULL` | `EINVAL` | not modified |
+| invalid mode | any | `EINVAL` | not modified |
 
-If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_umask_s`** returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
+If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_umask_s`** returns `EINVAL` and sets `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -52,11 +52,11 @@ The integer expression *`mode`* contains one or both of the following manifest c
 
 | *`mode`* | Description |
 |--|--|
-| **`_S_IWRITE`** | Writing permitted. |
-| **`_S_IREAD`** | Reading permitted. |
+| `_S_IWRITE` | Writing permitted. |
+| `_S_IREAD` | Reading permitted. |
 | **`_S_IREAD | _S_IWRITE`** | Reading and writing permitted. |
 
-When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`mode`* argument is **`_S_IREAD`**, reading isn't allowed (the file is write-only). If the *`mode`* argument is **`_S_IWRITE`**, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask_s`** has no effect on the file's modes.
+When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`mode`* argument is `_S_IREAD`, reading isn't allowed (the file is write-only). If the *`mode`* argument is `_S_IWRITE`, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask_s`** has no effect on the file's modes.
 
 If *`mode`* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function ignores them.
 

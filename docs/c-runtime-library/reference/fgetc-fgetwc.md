@@ -28,21 +28,21 @@ wint_t fgetwc(
 ### Parameters
 
 *`stream`*\
-Pointer to **FILE** structure.
+Pointer to `FILE` structure.
 
 ## Return value
 
-**fgetc** returns the character read as an **`int`** or returns **EOF** to indicate an error or end of file. **fgetwc** returns, as a [`wint_t`](../standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *`stream`* is **NULL**, **fgetc** and **fgetwc** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EOF**.
+**`fgetc`** returns the character read as an **`int`** or returns `EOF` to indicate an error or end of file. **`fgetwc`** returns, as a [`wint_t`](../standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use `feof` or `ferror` to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *`stream`* is `NULL`, **`fgetc`** and **`fgetwc`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EOF`.
 
 ## Remarks
 
 Each of these functions reads a single character from the current position of the file associated with *`stream`*. The function then increments the associated file pointer (if defined) to point to the next character. If the stream is at end of file, the end-of-file indicator for the stream is set.
 
-**fgetc** is equivalent to **getc**, but is implemented only as a function, rather than as a function and a macro.
+**`fgetc`** is equivalent to `getc`, but is implemented only as a function, rather than as a function and a macro.
 
-**fgetwc** is the wide-character version of **fgetc**; it reads **c** as a multibyte character or a wide character when *`stream`* is opened in text mode or binary mode, respectively.
+**`fgetwc`** is the wide-character version of **`fgetc`**; it reads **c** as a multibyte character or a wide character when *`stream`* is opened in text mode or binary mode, respectively.
 
-The versions with the **_nolock** suffix are identical except that they aren't protected from interference by other threads.
+The versions with the `_nolock` suffix are identical except that they aren't protected from interference by other threads.
 
 For more information about processing wide characters and multibyte characters in text and binary modes, see [Unicode stream I/O in text and binary modes](../unicode-stream-i-o-in-text-and-binary-modes.md).
 
@@ -50,16 +50,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_fgettc**|**fgetc**|**fgetc**|**fgetwc**|
+|`_fgettc`|**`fgetc`**|**`fgetc`**|**`fgetwc`**|
 
 ## Requirements
 
 |Function|Required header|
 |--------------|---------------------|
-|**fgetc**|\<stdio.h>|
-|**fgetwc**|\<stdio.h> or \<wchar.h>|
+|**`fgetc`**|\<stdio.h>|
+|**`fgetwc`**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

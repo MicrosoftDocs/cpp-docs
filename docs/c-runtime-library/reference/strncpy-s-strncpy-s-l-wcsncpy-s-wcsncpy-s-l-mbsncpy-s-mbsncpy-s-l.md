@@ -119,22 +119,22 @@ The locale to use.
 
 ## Return value
 
-Zero if successful, **`STRUNCATE`** if truncation occurred, otherwise an error code.
+Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.
 
 ### Error conditions
 
 |*`strDest`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDest`*|
 |---------------|------------------------|-----------------|------------------|---------------------------|
-|**`NULL`**|any|any|**`EINVAL`**|not modified|
-|any|any|**`NULL`**|**`EINVAL`**|*`strDest[0]`* set to 0|
-|any|0|any|**`EINVAL`**|not modified|
-|not **`NULL`**|too small|any|**`ERANGE`**|*`strDest[0]`* set to 0|
+|`NULL`|any|any|`EINVAL`|not modified|
+|any|any|`NULL`|`EINVAL`|*`strDest[0]`* set to 0|
+|any|0|any|`EINVAL`|not modified|
+|not `NULL`|too small|any|`ERANGE`|*`strDest[0]`* set to 0|
 
 ## Remarks
 
 These functions try to copy the first *`D`* characters of *`strSource`* to *`strDest`*, where *`D`* is the lesser of *`count`* and the length of *`strSource`*. If those *`D`* characters will fit within *`strDest`* (whose size is given as *`numberOfElements`*) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, *`strDest[0]`* is set to the null character and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-There is an exception to the above paragraph. If *`count`* is **`_TRUNCATE`**, then as much of *`strSource`* as will fit into *`strDest`* is copied while still leaving room for the terminating null which is always appended.
+There is an exception to the above paragraph. If *`count`* is `_TRUNCATE`, then as much of *`strSource`* as will fit into *`strDest`* is copied while still leaving room for the terminating null which is always appended.
 
 For example,
 
@@ -145,7 +145,7 @@ strncpy_s(dst, 5, "a long string", 5);
 
 means that we are asking **`strncpy_s`** to copy five characters into a buffer five bytes long; this would leave no space for the null terminator, hence **`strncpy_s`** zeroes out the string and calls the invalid parameter handler.
 
-If truncation behavior is needed, use **`_TRUNCATE`** or (*`size`* - 1):
+If truncation behavior is needed, use `_TRUNCATE` or (*`size`* - 1):
 
 ```C
 strncpy_s(dst, 5, "a long string", _TRUNCATE);
@@ -156,11 +156,11 @@ Note that unlike **`strncpy`**, if *`count`* is greater than the length of *`str
 
 The behavior of **`strncpy_s`** is undefined if the source and destination strings overlap.
 
-If *`strDest`* or *`strSource`* is **`NULL`**, or *`numberOfElements`* is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
+If *`strDest`* or *`strSource`* is `NULL`, or *`numberOfElements`* is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`.
 
 **`wcsncpy_s`** and **`_mbsncpy_s`** are wide-character and multibyte-character versions of **`strncpy_s`**. The arguments and return value of **`wcsncpy_s`** and **`mbsncpy_s`** do vary accordingly. These six functions behave identically otherwise.
 
-The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

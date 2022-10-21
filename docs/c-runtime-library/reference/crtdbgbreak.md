@@ -26,7 +26,7 @@ There's no return value.
 
 ## Remarks
 
-The **_CrtDbgBreak** function sets a debug breakpoint on the particular line of code where the function resides. This function is used in debug mode only and is dependent on **_DEBUG** being previously defined.
+The **`_CrtDbgBreak`** function sets a debug breakpoint on the particular line of code where the function resides. This function is used in debug mode only and is dependent on `_DEBUG` being previously defined.
 
 For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Writing your own debug hook functions](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -34,7 +34,7 @@ For more information about using other hook-capable run-time functions and writi
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_CrtDbgBreak**|\<CRTDBG.h>|
+|**`_CrtDbgBreak`**|\<CRTDBG.h>|
 
 ## Libraries
 

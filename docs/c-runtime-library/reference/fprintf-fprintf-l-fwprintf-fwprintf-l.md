@@ -43,7 +43,7 @@ int _fwprintf_l(
 ### Parameters
 
 *`stream`*\
-Pointer to **FILE** structure.
+Pointer to `FILE` structure.
 
 *`format`*\
 Format-control string.
@@ -56,7 +56,7 @@ The locale to use.
 
 ## Return value
 
-**`fprintf`** returns the number of bytes written. **`fwprintf`** returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *`stream`* or *`format`* is **`NULL`**, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**. The format string isn't checked for valid formatting characters as it is when using **`fprintf_s`** or **`fwprintf_s`**.
+**`fprintf`** returns the number of bytes written. **`fwprintf`** returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *`stream`* or *`format`* is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`. The format string isn't checked for valid formatting characters as it is when using **`fprintf_s`** or **`fwprintf_s`**.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

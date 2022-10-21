@@ -15,7 +15,7 @@ For related information, see [Generic-text mappings in tchar.h](../text/generic-
 
 ### Generic-text routine mappings
 
-|Generic-text routine name|SBCS (_UNICODE & MBCS not defined)|_MBCS defined|_UNICODE defined|
+|Generic-text routine name|SBCS (`_UNICODE` & `MBCS` not defined)|`_MBCS` defined|`_UNICODE` defined|
 |--------------------------------|-------------------------------------------|--------------------|-----------------------|
 |`_cgetts`|`_cgets`|`_cgets`|`_cgetws`|
 |`_cgetts_s`|`_cgets_s`|`_cgets_s`|`_cgetws_s`|

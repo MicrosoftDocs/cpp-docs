@@ -52,7 +52,7 @@ Pointer to the structure to store results.
 
 ## Return value
 
-Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or *`buffer`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EBADF`**, in the case of an invalid file descriptor, or to **`EINVAL`**, if *`buffer`* is **`NULL`**.
+Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or *`buffer`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, in the case of an invalid file descriptor, or to `EINVAL`, if *`buffer`* is `NULL`.
 
 ## Remarks
 
@@ -63,7 +63,7 @@ The **`_fstat`** function obtains information about the open file associated wit
 | **`st_atime`** | Time of the last file access. |
 | **`st_ctime`** | Time of the creation of the file. |
 | **`st_dev`** | If a device, *`fd`*; otherwise 0. |
-| **`st_mode`** | Bit mask for file-mode information. The **`_S_IFCHR`** bit is set if *`fd`* refers to a device. The **`_S_IFREG`** bit is set if *`fd`* refers to an ordinary file. The read/write bits are set according to the file's permission mode. **`_S_IFCHR`** and other constants are defined in `SYS\Stat.h`. |
+| **`st_mode`** | Bit mask for file-mode information. The `_S_IFCHR` bit is set if *`fd`* refers to a device. The `_S_IFREG` bit is set if *`fd`* refers to an ordinary file. The read/write bits are set according to the file's permission mode. `_S_IFCHR` and other constants are defined in `SYS\Stat.h`. |
 | **`st_mtime`** | Time of the last modification of the file. |
 | **`st_nlink`** | Always 1 on non-NTFS file systems. |
 | **`st_rdev`** | If a device, *`fd`*; otherwise 0. |
@@ -75,9 +75,9 @@ Because `Stat.h` uses the [`_dev_t`](../standard-types.md) type, which is define
 
 **`_fstat64`**, which uses the **`__stat64`** structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas the other functions only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
-Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file lengths. The first numerical suffix (**32** or **64**) indicates the size of the time type used; the second suffix is either **`i32`** or **`i64`**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
+Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file lengths. The first numerical suffix (**`32`** or **`64`**) indicates the size of the time type used; the second suffix is either **`i32`** or **`i64`**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
 
-**`_fstat`** is equivalent to **`_fstat64i32`**, and **`struct`** **`_stat`** contains a 64-bit time. This is true unless **`_USE_32BIT_TIME_T`** is defined, in which case the old behavior is in effect; **`_fstat`** uses a 32-bit time, and **`struct`** **`_stat`** contains a 32-bit time. The same is true for **`_fstati64`**.
+**`_fstat`** is equivalent to **`_fstat64i32`**, and **`struct`** **`_stat`** contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; **`_fstat`** uses a 32-bit time, and **`struct`** **`_stat`** contains a 32-bit time. The same is true for **`_fstati64`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

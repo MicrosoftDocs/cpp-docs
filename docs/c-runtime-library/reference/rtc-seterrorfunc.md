@@ -12,7 +12,7 @@ ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
 ---
 # `_RTC_SetErrorFunc`
 
-Designates a function as the handler for reporting run-time error checks (RTCs). This function is deprecated; use **_RTC_SetErrorFuncW** instead.
+Designates a function as the handler for reporting run-time error checks (RTCs). This function is deprecated; use `_RTC_SetErrorFuncW` instead.
 
 ## Syntax
 
@@ -29,17 +29,17 @@ The address of the function that will handle run-time error checks.
 
 ## Return value
 
-The previously defined error function. If there is no previously defined function, returns **NULL**.
+The previously defined error function. If there is no previously defined function, returns `NULL`.
 
 ## Remarks
 
-Do not use this function; instead, use **_RTC_SetErrorFuncW**. It is retained only for backward compatibility.
+Do not use this function; instead, use `_RTC_SetErrorFuncW`. It is retained only for backward compatibility.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_RTC_SetErrorFunc**|\<rtcapi.h>|
+|**`_RTC_SetErrorFunc`**|\<rtcapi.h>|
 
 For more information, see [Compatibility](../compatibility.md).
 

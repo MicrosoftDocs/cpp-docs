@@ -28,7 +28,7 @@ int setvbuf(
 ### Parameters
 
 *`stream`*\
-Pointer to **FILE** structure.
+Pointer to `FILE` structure.
 
 *`buffer`*\
 User-allocated buffer.
@@ -43,21 +43,21 @@ Buffer size in bytes. Allowable range: 2 <= *`size`* <= INT_MAX (2147483647). In
 
 Returns 0 if successful.
 
-If *`stream`* is **NULL**, or if *`mode`* or *`size`* is not within a valid change, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **errno** to **EINVAL**.
+If *`stream`* is `NULL`, or if *`mode`* or *`size`* is not within a valid change, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.
 
 For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **setvbuf** function allows the program to control both buffering and buffer size for *`stream`*. *`stream`* must refer to an open file that has not undergone an I/O operation since it was opened. The array pointed to by *`buffer`* is used as the buffer, unless it is **NULL**, in which case **setvbuf** uses an automatically allocated buffer of length *`size`*/2 \* 2 bytes.
+The **`setvbuf`** function allows the program to control both buffering and buffer size for *`stream`*. *`stream`* must refer to an open file that has not undergone an I/O operation since it was opened. The array pointed to by *`buffer`* is used as the buffer, unless it is `NULL`, in which case **`setvbuf`** uses an automatically allocated buffer of length *`size`*/2 \* 2 bytes.
 
-The mode must be **_IOFBF**, **_IOLBF**, or **_IONBF**. If *`mode`* is **_IOFBF** or **_IOLBF**, then *`size`* is used as the size of the buffer. If *`mode`* is **_IONBF**, the stream is unbuffered and *`size`* and *`buffer`* are ignored. Values for *`mode`* and their meanings are:
+The mode must be `_IOFBF`, `_IOLBF`, or `_IONBF`. If *`mode`* is `_IOFBF` or `_IOLBF`, then *`size`* is used as the size of the buffer. If *`mode`* is `_IONBF`, the stream is unbuffered and *`size`* and *`buffer`* are ignored. Values for *`mode`* and their meanings are:
 
 |*`mode`* value|Meaning|
 |-|-|
-| **_IOFBF** | Full buffering; that is, *`buffer`* is used as the buffer and *`size`* is used as the size of the buffer. If *`buffer`* is **NULL**, an automatically allocated buffer *`size`* bytes long is used. |
-| **_IOLBF** | For some systems, this provides line buffering. However, for Win32, the behavior is the same as **_IOFBF** - Full Buffering. |
-| **_IONBF** | No buffer is used, regardless of *`buffer`* or *`size`*. |
+| `_IOFBF` | Full buffering; that is, *`buffer`* is used as the buffer and *`size`* is used as the size of the buffer. If *`buffer`* is `NULL`, an automatically allocated buffer *`size`* bytes long is used. |
+| `_IOLBF` | For some systems, this provides line buffering. However, for Win32, the behavior is the same as `_IOFBF` - Full Buffering. |
+| `_IONBF` | No buffer is used, regardless of *`buffer`* or *`size`*. |
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**setvbuf**|\<stdio.h>|
+|**`setvbuf`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

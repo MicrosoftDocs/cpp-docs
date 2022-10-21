@@ -12,7 +12,7 @@ ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
 ---
 # `_set_errno`
 
-Set the value of the **errno** global variable.
+Set the value of the `errno` global variable.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ errno_t _set_errno( int error_value );
 ### Parameters
 
 *`error_value`*\
-The new value of **errno**.
+The new value of `errno`.
 
 ## Return value
 
@@ -57,7 +57,7 @@ Oops: Illegal byte sequence
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**_set_errno**|\<stdlib.h>|\<errno.h>|
+|**`_set_errno`**|\<stdlib.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

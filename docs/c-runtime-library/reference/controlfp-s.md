@@ -36,7 +36,7 @@ Mask for new control-word bits to set.
 
 ## Return value
 
-Zero if successful, or an **`errno`** value error code.
+Zero if successful, or an `errno` value error code.
 
 ## Remarks
 
@@ -61,7 +61,7 @@ _controlfp_s( &current_word, _EM_INVALID, _MCW_EM );
 // DENORMAL exception mask remains unchanged.
 ```
 
-The possible values for the mask constant (*`mask`*) and new control values (*`newControl`*) are shown in the following Hexadecimal Values table. Use the portable constants listed below (**`_MCW_EM`**, **`_EM_INVALID`**, and so on) as arguments to these functions, rather than supplying the hexadecimal values explicitly.
+The possible values for the mask constant (*`mask`*) and new control values (*`newControl`*) are shown in the following Hexadecimal Values table. Use the portable constants listed below (`_MCW_EM`, `_EM_INVALID`, and so on) as arguments to these functions, rather than supplying the hexadecimal values explicitly.
 
 Intel (x86)-derived platforms support the `DENORMAL` input and output values in hardware. The x86 behavior is to preserve `DENORMAL` values. The ARM platform and the x64 platforms that have SSE2 support enable `DENORMAL` operands and results to be flushed, or forced to zero. The **`_controlfp_s`**, **`_controlfp`**, and **`_control87`** functions provide a mask to change this behavior. The following example demonstrates the use of this mask:
 
@@ -75,11 +75,11 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
 // and x64 processors with SSE2 support. Ignored on other x86 platforms.
 ```
 
-On ARM platforms, the **`_controlfp_s`** function applies to the FPSCR register. On x64 architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the **`EM_AMBIGUOUS`** flag in *`currentControl`*. It's a warning that the returned control word might not represent the state of both floating-point control words accurately.
+On ARM platforms, the **`_controlfp_s`** function applies to the FPSCR register. On x64 architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the `EM_AMBIGUOUS` flag in *`currentControl`*. It's a warning that the returned control word might not represent the state of both floating-point control words accurately.
 
 On the ARM and x64 architectures, changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-If the mask isn't set correctly, this function generates an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
+If the mask isn't set correctly, this function generates an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.
 
 This function is ignored when you use [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.
 
@@ -87,15 +87,15 @@ By default, this function's global state is scoped to the application. To change
 
 ### Mask constants and values
 
-For the **`_MCW_EM`** mask, clearing it sets the exception, which allows the hardware exception; setting it hides the exception. If a **`_EM_UNDERFLOW`** or **`_EM_OVERFLOW`** occurs, no hardware exception is thrown until the next floating-point instruction is executed. To generate a hardware exception immediately after **`_EM_UNDERFLOW`** or **`_EM_OVERFLOW`**, call the `FWAIT MASM` instruction.
+For the `_MCW_EM` mask, clearing it sets the exception, which allows the hardware exception; setting it hides the exception. If a `_EM_UNDERFLOW` or `_EM_OVERFLOW` occurs, no hardware exception is thrown until the next floating-point instruction is executed. To generate a hardware exception immediately after `_EM_UNDERFLOW` or `_EM_OVERFLOW`, call the `FWAIT MASM` instruction.
 
 |Mask|Hex value|Constant|Hex value|
 |----------|---------------|--------------|---------------|
-|**`_MCW_DN`** (Denormal control)|0x03000000|**`_DN_SAVE`**<br /><br /> **`_DN_FLUSH`**|0x00000000<br /><br /> 0x01000000|
-|**`_MCW_EM`** (Interrupt exception mask)|0x0008001F|**`_EM_INVALID`**<br /><br /> **`_EM_DENORMAL`**<br /><br /> **`_EM_ZERODIVIDE`**<br /><br /> **`_EM_OVERFLOW`**<br /><br /> **`_EM_UNDERFLOW`**<br /><br /> **`_EM_INEXACT`**|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|
-|**`_MCW_IC`** (Infinity control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00040000|**`_IC_AFFINE`**<br /><br /> **`_IC_PROJECTIVE`**|0x00040000<br /><br /> 0x00000000|
-|**`_MCW_RC`** (Rounding control)|0x00000300|**`_RC_CHOP`**<br /><br /> **`_RC_UP`**<br /><br /> **`_RC_DOWN`**<br /><br /> **`_RC_NEAR`**|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|
-|**`_MCW_PC`** (Precision control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00030000|**`_PC_24`** (24 bits)<br /><br /> **`_PC_53`** (53 bits)<br /><br /> **`_PC_64`** (64 bits)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
+|`_MCW_DN` (Denormal control)|0x03000000|`_DN_SAVE`<br /><br /> `_DN_FLUSH`|0x00000000<br /><br /> 0x01000000|
+|`_MCW_EM` (Interrupt exception mask)|0x0008001F|`_EM_INVALID`<br /><br /> `_EM_DENORMAL`<br /><br /> `_EM_ZERODIVIDE`<br /><br /> `_EM_OVERFLOW`<br /><br /> `_EM_UNDERFLOW`<br /><br /> `_EM_INEXACT`|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|
+|`_MCW_IC` (Infinity control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00040000|`_IC_AFFINE`<br /><br /> `_IC_PROJECTIVE`|0x00040000<br /><br /> 0x00000000|
+|`_MCW_RC` (Rounding control)|0x00000300|`_RC_CHOP`<br /><br /> `_RC_UP`<br /><br /> `_RC_DOWN`<br /><br /> `_RC_NEAR`|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|
+|`_MCW_PC` (Precision control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00030000|`_PC_24` (24 bits)<br /><br /> `_PC_53` (53 bits)<br /><br /> `_PC_64` (64 bits)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
 
 ## Requirements
 

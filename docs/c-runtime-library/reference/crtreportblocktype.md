@@ -29,11 +29,11 @@ Pointer to a valid debug heap block.
 
 ## Return value
 
-When passed a valid debug heap pointer, the **_CrtReportBlockType** function returns the block type and subtype in the form of an **`int`**. When passed an invalid pointer, the function returns -1.
+When passed a valid debug heap pointer, the **`_CrtReportBlockType`** function returns the block type and subtype in the form of an **`int`**. When passed an invalid pointer, the function returns -1.
 
 ## Remarks
 
-To extract the type and subtype returned by **_CrtReportBlockType**, use the macros **_BLOCK_TYPE** and **_BLOCK_SUBTYPE** (both defined in Crtdbg.h) on the return value.
+To extract the type and subtype returned by **`_CrtReportBlockType`**, use the macros `_BLOCK_TYPE` and `_BLOCK_SUBTYPE` (both defined in Crtdbg.h) on the return value.
 
 For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
@@ -41,7 +41,7 @@ For information about the allocation block types and how they're used, see [Type
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_CrtReportBlockType**|\<crtdbg.h>|
+|**`_CrtReportBlockType`**|\<crtdbg.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

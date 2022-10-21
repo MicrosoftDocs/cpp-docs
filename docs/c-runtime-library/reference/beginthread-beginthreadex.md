@@ -54,22 +54,22 @@ Start address of a routine that begins execution of a new thread. For **`_begint
 Stack size for a new thread, or 0.
 
 *`arglist`*\
-Argument list to be passed to a new thread, or **`NULL`**.
+Argument list to be passed to a new thread, or `NULL`.
 
 *`Security`*\
-Pointer to a [`SECURITY_ATTRIBUTES`](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that determines whether the returned handle can be inherited by child processes. If *`Security`* is **`NULL`**, the handle can't be inherited.
+Pointer to a [`SECURITY_ATTRIBUTES`](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that determines whether the returned handle can be inherited by child processes. If *`Security`* is `NULL`, the handle can't be inherited.
 
 *`initflag`*\
-Flags that control the initial state of a new thread. Set *`initflag`* to 0 to run immediately, or to **`CREATE_SUSPENDED`** to create the thread in a suspended state; use [`ResumeThread`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *`initflag`* to **`STACK_SIZE_PARAM_IS_A_RESERVATION`** flag to use *`stack_size`* as the initial reserve size of the stack in bytes; if this flag isn't specified, *`stack_size`* specifies the commit size.
+Flags that control the initial state of a new thread. Set *`initflag`* to 0 to run immediately, or to `CREATE_SUSPENDED` to create the thread in a suspended state; use [`ResumeThread`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *`initflag`* to `STACK_SIZE_PARAM_IS_A_RESERVATION` flag to use *`stack_size`* as the initial reserve size of the stack in bytes; if this flag isn't specified, *`stack_size`* specifies the commit size.
 
 *`thrdaddr`*\
-Points to a 32-bit variable that receives the thread identifier. If it's **`NULL`**, it's not used.
+Points to a 32-bit variable that receives the thread identifier. If it's `NULL`, it's not used.
 
 ## Return value
 
-If successful, each of these functions returns a handle to the newly created thread; however, if the newly created thread exits too quickly, **`_beginthread`** might not return a valid handle. (See the discussion in the Remarks section.) On an error, **`_beginthread`** returns -1L, and **`errno`** is set to **`EAGAIN`** if there are too many threads, to **`EINVAL`** if the argument is invalid or the stack size is incorrect, or to **`EACCES`** if there are insufficient resources (such as memory). On an error, **`_beginthreadex`** returns 0, and **`errno`** and **`_doserrno`** are set.
+If successful, each of these functions returns a handle to the newly created thread; however, if the newly created thread exits too quickly, **`_beginthread`** might not return a valid handle. (See the discussion in the Remarks section.) On an error, **`_beginthread`** returns -1L, and `errno` is set to `EAGAIN` if there are too many threads, to `EINVAL` if the argument is invalid or the stack size is incorrect, or to `EACCES` if there are insufficient resources (such as memory). On an error, **`_beginthreadex`** returns 0, and `errno` and **`_doserrno`** are set.
 
-If *`start_address`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+If *`start_address`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -98,11 +98,11 @@ You can call [`_endthread`](endthread-endthreadex.md) or **`_endthreadex`** expl
 **`_endthread`** automatically closes the thread handle, whereas **`_endthreadex`** doesn't. Therefore, when you use **`_beginthread`** and **`_endthread`**, don't explicitly close the thread handle by calling the Win32 [`CloseHandle`](/windows/win32/api/handleapi/nf-handleapi-closehandle) API. This behavior differs from the Win32 [`ExitThread`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
 
 > [!NOTE]
-> For an executable file linked with Libcmt.lib, do not call the Win32 **`ExitThread`** API so that you don't prevent the run-time system from reclaiming allocated resources. **`_endthread`** and **`_endthreadex`** reclaim allocated thread resources and then call **`ExitThread`**.
+> For an executable file linked with Libcmt.lib, do not call the Win32 `ExitThread` API so that you don't prevent the run-time system from reclaiming allocated resources. **`_endthread`** and **`_endthreadex`** reclaim allocated thread resources and then call `ExitThread`.
 
 The operating system handles the allocation of the stack when either **`_beginthread`** or **`_beginthreadex`** is called; you don't have to pass the address of the thread stack to either of these functions. In addition, the *`stack_size`* argument can be 0, in which case the operating system uses the same value as the stack that's specified for the main thread.
 
-*`arglist`* is a parameter to be passed to the newly created thread. Typically, it's the address of a data item, such as a character string. *`arglist`* can be **`NULL`** if it isn't needed, but **`_beginthread`** and **`_beginthreadex`** must be given some value to pass to the new thread. All threads are terminated if any thread calls [`abort`](abort.md), **`exit`**, **`_exit`**, or **`ExitProcess`**.
+*`arglist`* is a parameter to be passed to the newly created thread. Typically, it's the address of a data item, such as a character string. *`arglist`* can be `NULL` if it isn't needed, but **`_beginthread`** and **`_beginthreadex`** must be given some value to pass to the new thread. All threads are terminated if any thread calls [`abort`](abort.md), **`exit`**, **`_exit`**, or `ExitProcess`.
 
 The locale of the new thread is initialized by using the per-process global current locale info. If per-thread locale is enabled by a call to [`_configthreadlocale`](configthreadlocale.md) (either globally or for new threads only), the thread can change its locale independently from other threads by calling **`setlocale`** or **`_wsetlocale`**. Threads that don't have the per-thread locale flag set can affect the locale info in all other threads that also don't have the per-thread locale flag set, and also all newly created threads. For more information, see [Locale](../locale.md).
 
@@ -245,7 +245,7 @@ void Bounce( void * parg )
 
 Press any key to end the sample application.
 
-The following sample code demonstrates how you can use the thread handle that's returned by **`_beginthreadex`** with the synchronization API [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject). The main thread waits for the second thread to terminate before it continues. When the second thread calls **`_endthreadex`**, it causes its thread object to go to the signaled state, which allows the primary thread to continue running. It can't be done with **`_beginthread`** and **`_endthread`**, because **`_endthread`** calls **`CloseHandle`**, which destroys the thread object before it can be set to the signaled state.
+The following sample code demonstrates how you can use the thread handle that's returned by **`_beginthreadex`** with the synchronization API [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject). The main thread waits for the second thread to terminate before it continues. When the second thread calls **`_endthreadex`**, it causes its thread object to go to the signaled state, which allows the primary thread to continue running. It can't be done with **`_beginthread`** and **`_endthread`**, because **`_endthread`** calls `CloseHandle`, which destroys the thread object before it can be set to the signaled state.
 
 ```cpp
 // crt_begthrdex.cpp

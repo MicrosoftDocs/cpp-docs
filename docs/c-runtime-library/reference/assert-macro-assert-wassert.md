@@ -48,7 +48,7 @@ The line number in the source file of the failed assertion.
 
 ## Remarks
 
-The `assert` macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the *`expression`* argument to evaluate to **`false`** only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro **`NDEBUG`**. You can turn off the `assert` macro without modifying your source files by using a **`/DNDEBUG`** command-line option. You can turn off the `assert` macro in your source code by using a `#define NDEBUG` directive before `<assert.h>` is included.
+The `assert` macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the *`expression`* argument to evaluate to **`false`** only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro `NDEBUG`. You can turn off the `assert` macro without modifying your source files by using a **`/DNDEBUG`** command-line option. You can turn off the `assert` macro in your source code by using a `#define NDEBUG` directive before `<assert.h>` is included.
 
 The `assert` macro prints a diagnostic message when *`expression`* evaluates to **`false`** (0) and calls [`abort`](abort.md) to stop program execution. No action is taken if *`expression`* is **`true`** (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.
 
@@ -72,7 +72,7 @@ For more information about CRT debugging, see [CRT debugging techniques](/visual
 
 The `_assert` and `_wassert` functions are internal CRT functions. They help minimize the code required in your object files to support assertions. We don't recommend that you call these functions directly.
 
-The `assert` macro is enabled in both the release and debug versions of the C run-time libraries when **`NDEBUG`** isn't defined. When **`NDEBUG`** is defined, the macro is available, but doesn't evaluate its argument and has no effect. When it's enabled, the `assert` macro calls `_wassert` for its implementation. Other assertion macros, [`_ASSERT`](assert-asserte-assert-expr-macros.md), [`_ASSERTE`](assert-asserte-assert-expr-macros.md) and [`_ASSERT_EXPR`](assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [`_DEBUG`](../debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
+The `assert` macro is enabled in both the release and debug versions of the C run-time libraries when `NDEBUG` isn't defined. When `NDEBUG` is defined, the macro is available, but doesn't evaluate its argument and has no effect. When it's enabled, the `assert` macro calls `_wassert` for its implementation. Other assertion macros, [`_ASSERT`](assert-asserte-assert-expr-macros.md), [`_ASSERTE`](assert-asserte-assert-expr-macros.md) and [`_ASSERT_EXPR`](assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [`_DEBUG`](../debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
 
 ## Requirements
 
@@ -80,7 +80,7 @@ The `assert` macro is enabled in both the release and debug versions of the C ru
 |-------------|---------------------|
 |`assert`, `_wassert`|`<assert.h>`|
 
-The signature of the `_assert` function isn't available in a header file. The signature of the `_wassert` function is only available when the **`NDEBUG`** macro isn't defined.
+The signature of the `_assert` function isn't available in a header file. The signature of the `_wassert` function is only available when the `NDEBUG` macro isn't defined.
 
 ## Example
 

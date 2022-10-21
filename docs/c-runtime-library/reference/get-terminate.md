@@ -12,7 +12,7 @@ ms.assetid: c8f168c4-0ad5-4832-a522-dd1ef383c208
 ---
 # `_get_terminate`
 
-Returns the termination routine to be called by **terminate**.
+Returns the termination routine to be called by `terminate`.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ terminate_function _get_terminate( void );
 
 ## Return value
 
-Returns a pointer to the function registered by [`set_terminate`](set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be **NULL**.
+Returns a pointer to the function registered by [`set_terminate`](set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be `NULL`.
 
 ## Remarks
 
@@ -32,7 +32,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_get_terminate**|\<eh.h>|
+|**`_get_terminate`**|\<eh.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -29,17 +29,17 @@ The floating-point value to test.
 
 ## Return value
 
-**isinf** returns a nonzero value  (**`true`** in C++ code) if the argument *`x`* is a positive or negative infinity. **isinf** returns 0 (**`false`** in C++ code) if the argument is finite or a NAN. Both normal and subnormal floating-point values are considered finite.
+**`isinf`** returns a nonzero value  (**`true`** in C++ code) if the argument *`x`* is a positive or negative infinity. **`isinf`** returns 0 (**`false`** in C++ code) if the argument is finite or a NAN. Both normal and subnormal floating-point values are considered finite.
 
 ## Remarks
 
-**isinf** is a macro when compiled as C, and an inline template function when compiled as C++.
+**`isinf`** is a macro when compiled as C, and an inline template function when compiled as C++.
 
 ## Requirements
 
 |Function|Required header (C)|Required header (C++)|
 |--------------|---------------------------|-------------------------------|
-|**isinf**|\<math.h>|\<math.h> or \<cmath>|
+|**`isinf`**|\<math.h>|\<math.h> or \<cmath>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
