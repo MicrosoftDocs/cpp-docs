@@ -37,7 +37,7 @@ The real part of *`z`*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **creal** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **creal** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **`creal`** that take `_Fcomplex` or `_Lcomplex` values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`creal`** always takes a `_Dcomplex` value and returns a **`double`** value.
 
 If you use the \<tgmath.h> `creal()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -45,10 +45,10 @@ If you use the \<tgmath.h> `creal()` macro, the type of the argument determines 
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**creal**, **crealf**, **creall**|\<complex.h>|\<ccomplex>|
-|**creal** macro | \<tgmath.h> ||
+|**`creal`**, **`crealf`**, **`creall`**|\<complex.h>|\<ccomplex>|
+|**`creal`** macro | \<tgmath.h> ||
 
-The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
+The `_Fcomplex`, `_Dcomplex`, and `_Lcomplex` types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

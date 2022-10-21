@@ -26,16 +26,16 @@ void setbuf(
 ### Parameters
 
 *`stream`*\
-Pointer to **FILE** structure.
+Pointer to `FILE` structure.
 
 *`buffer`*\
 User-allocated buffer.
 
 ## Remarks
 
-The **setbuf** function controls buffering for *`stream`*. The *`stream`* argument must refer to an open file that hasn't been read or written. If the *`buffer`* argument is **NULL**, the stream is unbuffered. If not, the buffer must point to a character array of length **BUFSIZ**, where **BUFSIZ** is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The **stderr** stream is unbuffered by default, but you can use **setbuf** to assign buffers to **stderr**.
+The **`setbuf`** function controls buffering for *`stream`*. The *`stream`* argument must refer to an open file that hasn't been read or written. If the *`buffer`* argument is `NULL`, the stream is unbuffered. If not, the buffer must point to a character array of length `BUFSIZ`, where `BUFSIZ` is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The `stderr` stream is unbuffered by default, but you can use **`setbuf`** to assign buffers to `stderr`.
 
-**setbuf** has been replaced by [`setvbuf`](setvbuf.md), which is the preferred routine for new code. Unlike **setvbuf**, **setbuf** has no way of reporting errors. **setvbuf** also lets you control both the buffering mode and the buffer size. **setbuf** exists for compatibility with existing code.
+**`setbuf`** has been replaced by [`setvbuf`](setvbuf.md), which is the preferred routine for new code. Unlike `setvbuf`, **`setbuf`** has no way of reporting errors. `setvbuf` also lets you control both the buffering mode and the buffer size. **`setbuf`** exists for compatibility with existing code.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**setbuf**|\<stdio.h>|
+|**`setbuf`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

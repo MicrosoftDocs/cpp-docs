@@ -51,9 +51,9 @@ For more information, see [Format specification syntax](../format-specification-
 
 ## Return value
 
-Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **_scwprintf** performs the same function for wide characters.
+Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **`_scwprintf`** performs the same function for wide characters.
 
-If *`format`* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -61,7 +61,7 @@ For information about these and other error codes, see [`errno`, `_doserrno`, `_
 
 Each *`argument`* (if any) is converted according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string.
@@ -70,17 +70,17 @@ The versions of these functions with the **_l** suffix are identical except that
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_sctprintf**|**_scprintf**|**_scprintf**|**_scwprintf**|
-|**_sctprintf_l**|**_scprintf_l**|**_scprintf_l**|**_scwprintf_l**|
+|`_sctprintf`|**`_scprintf`**|**`_scprintf`**|**`_scwprintf`**|
+|`_sctprintf_l`|**`_scprintf_l`**|**`_scprintf_l`**|**`_scwprintf_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_scprintf**, **_scprintf_l**|\<stdio.h>|
-|**_scwprintf**, **_scwprintf_l**|\<stdio.h> or \<wchar.h>|
+|**`_scprintf`**, **`_scprintf_l`**|\<stdio.h>|
+|**`_scwprintf`**, **`_scwprintf_l`**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -36,17 +36,17 @@ The floating-point value to test.
 
 ## Return value
 
-**signbit** returns a non-zero value (**`true`** in C++) if the argument *`x`* is negative or negative infinity. It returns 0 (**`false`** in C++) if the argument is non-negative, positive infinity, or a NAN.
+**`signbit`** returns a non-zero value (**`true`** in C++) if the argument *`x`* is negative or negative infinity. It returns 0 (**`false`** in C++) if the argument is non-negative, positive infinity, or a NAN.
 
 ## Remarks
 
-**signbit** is a macro when compiled as C, and an overloaded inline function when compiled as C++.
+**`signbit`** is a macro when compiled as C, and an overloaded inline function when compiled as C++.
 
 ## Requirements
 
 |Function|Required header (C)|Required header (C++)|
 |--------------|---------------------------|-------------------------------|
-|**signbit**|\<math.h>|\<math.h> or \<cmath>|
+|**`signbit`**|\<math.h>|\<math.h> or \<cmath>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

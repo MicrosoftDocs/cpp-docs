@@ -27,7 +27,7 @@ The identification number of a system-defined runtime error message.
 
 ## Remarks
 
-This function emits the runtime error message to **stderr** for console applications, or displays the message in a message box for Windows applications. In debug mode, you can choose to invoke the debugger before exiting.
+This function emits the runtime error message to `stderr` for console applications, or displays the message in a message box for Windows applications. In debug mode, you can choose to invoke the debugger before exiting.
 
 ## Requirements
 

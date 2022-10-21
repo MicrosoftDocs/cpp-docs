@@ -30,7 +30,7 @@ Returns the character read. There's no error return.
 
 ## Remarks
 
-The **_getche** and **_getwche** functions read a single character from the console with echo, meaning that the character is displayed at the console. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.
+The **`_getche`** and **`_getwche`** functions read a single character from the console with echo, meaning that the character is displayed at the console. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.
 
 These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [`_getche_nolock`, `_getwche_nolock`](getche-nolock-getwche-nolock.md).
 
@@ -38,16 +38,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_getche**|**_getche**|**_getch**|**_getwche**|
+|`_gettche`|**`_getche`**|**`_getche`**|**`_getwche`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_getche**|\<conio.h>|
-|**_getwche**|\<conio.h> or \<wchar.h>|
+|**`_getche`**|\<conio.h>|
+|**`_getwche`**|\<conio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

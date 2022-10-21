@@ -57,19 +57,19 @@ Buffer to store the complete path.
 
 ## Remarks
 
-The **_searchenv** routine searches for the target file in the specified domain. The *`varname`* variable can be any environment or user-defined variable—for example, **PATH**, **LIB**, or **INCLUDE**—that specifies a list of directory paths. Because **_searchenv** is case-sensitive, *`varname`* should match the case of the environment variable.
+The **`_searchenv`** routine searches for the target file in the specified domain. The *`varname`* variable can be any environment or user-defined variable—for example, `PATH`, `LIB`, or `INCLUDE`—that specifies a list of directory paths. Because **`_searchenv`** is case-sensitive, *`varname`* should match the case of the environment variable.
 
 The routine first searches for the file in the current working directory. If it does not find the file, it looks through the directories that are specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *`pathname`*. If the *`filename`* file is not found, *`pathname`* contains an empty null-terminated string.
 
-The *`pathname`* buffer should be at least **_MAX_PATH** characters long to accommodate the full length of the constructed path name. Otherwise, **_searchenv** might overrun the *`pathname`* buffer and cause unexpected behavior.
+The *`pathname`* buffer should be at least `_MAX_PATH` characters long to accommodate the full length of the constructed path name. Otherwise, **`_searchenv`** might overrun the *`pathname`* buffer and cause unexpected behavior.
 
-**_wsearchenv** is a wide-character version of **_searchenv**, and the arguments to **_wsearchenv** are wide-character strings. **_wsearchenv** and **_searchenv** behave identically otherwise.
+**`_wsearchenv`** is a wide-character version of **`_searchenv`**, and the arguments to **`_wsearchenv`** are wide-character strings. **`_wsearchenv`** and **`_searchenv`** behave identically otherwise.
 
-If *`filename`* is an empty string, these functions return **ENOENT**.
+If *`filename`* is an empty string, these functions return `ENOENT`.
 
-If *`filename`* or *`pathname`* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *`filename`* or *`pathname`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
-For more information about **errno** and error codes, see [`errno` constants](../errno-constants.md).
+For more information about `errno` and error codes, see [`errno` constants](../errno-constants.md).
 
 In C++, these functions have template overloads that invoke the newer, more secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -77,16 +77,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tsearchenv**|**_searchenv**|**_searchenv**|**_wsearchenv**|
+|`_tsearchenv`|**`_searchenv`**|**`_searchenv`**|**`_wsearchenv`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_searchenv**|\<stdlib.h>|
-|**_wsearchenv**|\<stdlib.h> or \<wchar.h>|
+|**`_searchenv`**|\<stdlib.h>|
+|**`_wsearchenv`**|\<stdlib.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

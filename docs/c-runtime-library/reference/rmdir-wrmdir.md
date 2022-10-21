@@ -32,36 +32,36 @@ Path of the directory to be removed.
 
 ## Return value
 
-Each of these functions returns 0 if the directory is successfully deleted. A return value of -1 indicates an error and **errno** is set to one of the following values:
+Each of these functions returns 0 if the directory is successfully deleted. A return value of -1 indicates an error and `errno` is set to one of the following values:
 
 |errno value|Condition|
 |-|-|
-| **ENOTEMPTY** | Given path is not a directory, the directory is not empty, or the directory is either the current working directory or the root directory. |
-| **ENOENT** | Path is invalid. |
-| **EACCES** | A program has an open handle to the directory. |
+| `ENOTEMPTY` | Given path is not a directory, the directory is not empty, or the directory is either the current working directory or the root directory. |
+| `ENOENT` | Path is invalid. |
+| `EACCES` | A program has an open handle to the directory. |
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_rmdir** function deletes the directory specified by *`dirname`*. The directory must be empty, and it must not be the current working directory or the root directory.
+The **`_rmdir`** function deletes the directory specified by *`dirname`*. The directory must be empty, and it must not be the current working directory or the root directory.
 
-**_wrmdir** is a wide-character version of **_rmdir**; the *`dirname`* argument to **_wrmdir** is a wide-character string. **_wrmdir** and **_rmdir** behave identically otherwise.
+**`_wrmdir`** is a wide-character version of **`_rmdir`**; the *`dirname`* argument to **`_wrmdir`** is a wide-character string. **`_wrmdir`** and **`_rmdir`** behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_trmdir**|**_rmdir**|**_rmdir**|**_wrmdir**|
+|`_trmdir`|**`_rmdir`**|**`_rmdir`**|**`_wrmdir`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_rmdir**|\<direct.h>|
-|**_wrmdir**|\<direct.h> or \<wchar.h>|
+|**`_rmdir`**|\<direct.h>|
+|**`_wrmdir`**|\<direct.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

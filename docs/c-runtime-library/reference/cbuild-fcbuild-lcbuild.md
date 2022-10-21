@@ -31,19 +31,19 @@ The imaginary part of the complex number to construct.
 
 ## Return value
 
-A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex number (*`real`*, *`imaginary`* \* i) for values of the specified floating-point type.
+A `_Dcomplex`, `_Fcomplex`, or `_Lcomplex` structure that represents the complex number (*`real`*, *`imaginary`* \* i) for values of the specified floating-point type.
 
 ## Remarks
 
-The **_Cbuild**, **_FCbuild**, and **_LCbuild** functions simplify creation of complex types. Use the [`creal`, `crealf`, `creall`](creal-crealf-creall.md) and [`cimag`, `cimagf`, `cimagl`](cimag-cimagf-cimagl.md) functions to retrieve the real and imaginary portions of the represented complex numbers.
+The **`_Cbuild`**, **`_FCbuild`**, and **`_LCbuild`** functions simplify creation of complex types. Use the [`creal`, `crealf`, `creall`](creal-crealf-creall.md) and [`cimag`, `cimagf`, `cimagl`](cimag-cimagf-cimagl.md) functions to retrieve the real and imaginary portions of the represented complex numbers.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**_Cbuild**, **_FCbuild**, **_LCbuild**|\<complex.h>|\<ccomplex>|
+|**`_Cbuild`**, **`_FCbuild`**, **`_LCbuild`**|\<complex.h>|\<ccomplex>|
 
-These functions are Microsoft-specific. The types **_Dcomplex**, **_Fcomplex**, and **_Lcomplex** are Microsoft-specific equivalents to the unimplemented C99 native types **`double _Complex`**, **`float _Complex`**, and **`long double _Complex`**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
+These functions are Microsoft-specific. The types `_Dcomplex`, `_Fcomplex`, and `_Lcomplex` are Microsoft-specific equivalents to the unimplemented C99 native types **`double _Complex`**, **`float _Complex`**, and **`long double _Complex`**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

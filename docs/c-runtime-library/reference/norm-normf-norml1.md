@@ -38,15 +38,15 @@ The squared magnitude of *`z`*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **norm** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, **norm** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **`norm`** that take `_Fcomplex` or `_Lcomplex` values, and return **`float`** or **`long double`** values. In a C program, **`norm`** always takes a `_Dcomplex` value and returns a **`double`** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**norm**, **normf**, **norml**|\<complex.h>|\<complex.h>|
+|**`norm`**, **`normf`**, **`norml`**|\<complex.h>|\<complex.h>|
 
-The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../compatibility.md).
+The `_Fcomplex`, `_Dcomplex`, and `_Lcomplex` types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

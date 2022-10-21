@@ -48,13 +48,13 @@ The value of *`x`* raised to the power of *`y`* with a branch cut for *`x`* alon
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cpow** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cpow** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`cpow`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`cpow`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**cpow**,               **cpowf**, **cpowl**|\<complex.h>|\<ccomplex>|
+|**`cpow`**,               **`cpowf`**, **`cpowl`**|\<complex.h>|\<ccomplex>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

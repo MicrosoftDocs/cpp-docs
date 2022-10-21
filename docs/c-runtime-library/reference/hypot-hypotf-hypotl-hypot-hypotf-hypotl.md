@@ -51,13 +51,13 @@ Floating-point values.
 
 ## Return value
 
-If successful, **hypot** returns the length of the hypotenuse; on overflow, **hypot** returns INF (infinity) and the **errno** variable is set to **ERANGE**. You can use **_matherr** to modify error handling.
+If successful, **`hypot`** returns the length of the hypotenuse; on overflow, **`hypot`** returns INF (infinity) and the `errno` variable is set to `ERANGE`. You can use `_matherr` to modify error handling.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **hypot** functions calculate the length of the hypotenuse of a right triangle, given the length of the two sides *`x`* and *`y`* (in other words, the square root of *`x`*<sup>2</sup> + *`y`*<sup>2</sup>).
+The **`hypot`** functions calculate the length of the hypotenuse of a right triangle, given the length of the two sides *`x`* and *`y`* (in other words, the square root of *`x`*<sup>2</sup> + *`y`*<sup>2</sup>).
 
 The versions of the functions that have leading underscores are provided for compatibility with earlier standards. Their behavior is identical to the versions that don't have leading underscores. We recommend using the versions without leading underscores for new code.
 
@@ -69,8 +69,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<math.h>|
-|**hypot** macro | \<tgmath.h> |
+|**`hypot`**, **`hypotf`**, **`hypotl`**, **`_hypot`**, **`_hypotf`**, **`_hypotl`**|\<math.h>|
+|**`hypot`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

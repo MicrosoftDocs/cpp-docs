@@ -61,18 +61,18 @@ These functions format data for output to destinations as follows.
 
 The `argptr` argument has type `va_list`, which is defined in VARARGS.H and STDARG.H. The `argptr` variable must be initialized by **va_start,** and may be reinitialized by subsequent `va_arg` calls; `argptr` then points to the beginning of a list of arguments that are converted and transmitted for output according to the corresponding specifications in the *`format`* argument. *`format`* has the same form and function as the *`format`* argument for [`printf`](./reference/printf-printf-l-wprintf-wprintf-l.md). None of these functions invoke `va_end`. For a more complete description of each `vprintf` function, see the description of its counterpart function as listed in the preceding table.
 
-`_vsnprintf` differs from **vsprintf** in that it writes no more than *`count`* bytes to *`buffer`*.
+`_vsnprintf` differs from `vsprintf` in that it writes no more than *`count`* bytes to *`buffer`*.
 
 The versions of these functions with the **w** infix in the name are wide-character versions of the corresponding functions without the **w** infix; in each of these wide-character functions, *`buffer`* and *`format`* are wide-character strings. Otherwise, each wide-character function behaves identically to its SBCS counterpart function.
 
-The versions of these functions with **_s** and **_p** suffixes are the more secure versions. These versions validate the format strings. They'll generate an exception if the format string isn't well formed (for example, if invalid formatting characters are used).
+The versions of these functions with **`_s`** and **`_p`** suffixes are the more secure versions. These versions validate the format strings. They'll generate an exception if the format string isn't well formed (for example, if invalid formatting characters are used).
 
-The versions of these functions with the **_p** suffix let you specify the order in which the supplied arguments are substituted in the format string. For more information, see [printf_p Positional Parameters](./printf-p-positional-parameters.md).
+The versions of these functions with the **`_p`** suffix let you specify the order in which the supplied arguments are substituted in the format string. For more information, see [printf_p Positional Parameters](./printf-p-positional-parameters.md).
 
-For **vsprintf**, `vswprintf`, `_vsnprintf` and `_vsnwprintf`, if copying occurs between strings that overlap, the behavior is undefined.
+For `vsprintf`, `vswprintf`, `_vsnprintf` and `_vsnwprintf`, if copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> Ensure that *`format`* is not a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns). If using the secure versions of these functions (either the **_s** or **_p** suffixes), a user-supplied format string could trigger an invalid parameter exception if the user-supplied string contains invalid formatting characters.
+> Ensure that *`format`* is not a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns). If using the secure versions of these functions (either the **`_s`** or **`_p`** suffixes), a user-supplied format string could trigger an invalid parameter exception if the user-supplied string contains invalid formatting characters.
 
 ## See also
 

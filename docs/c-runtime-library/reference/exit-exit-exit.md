@@ -39,7 +39,7 @@ Exit status code.
 
 The **`exit`**, **`_Exit`** and **`_exit`** functions terminate the calling process. The **`exit`** function calls destructors for thread-local objects, then calls—in last-in-first-out (LIFO) order—the functions that are registered by **`atexit`** and **`_onexit`**, and then flushes all file buffers before it terminates the process. The **`_Exit`** and **`_exit`** functions terminate the process without destroying thread-local objects or processing **`atexit`** or **`_onexit`** functions, and without flushing stream buffers.
 
-Although the **`exit`**, **`_Exit`** and **`_exit`** calls don't return a value, the value in *`status`* is made available to the host environment or waiting calling process, if one exists, after the process exits. Typically, the caller sets the *`status`* value to 0 to indicate a normal exit, or to some other value to indicate an error. The *`status`* value is available to the operating-system batch command **`ERRORLEVEL`** and is represented by one of two constants: **`EXIT_SUCCESS`**, which represents a value of 0, or **`EXIT_FAILURE`**, which represents a value of 1.
+Although the **`exit`**, **`_Exit`** and **`_exit`** calls don't return a value, the value in *`status`* is made available to the host environment or waiting calling process, if one exists, after the process exits. Typically, the caller sets the *`status`* value to 0 to indicate a normal exit, or to some other value to indicate an error. The *`status`* value is available to the operating-system batch command `ERRORLEVEL` and is represented by one of two constants: `EXIT_SUCCESS`, which represents a value of 0, or `EXIT_FAILURE`, which represents a value of 1.
 
 The **`exit`**, **`_Exit`**, **`_exit`**, **`quick_exit`**, **`_cexit`**, and **`_c_exit`** functions behave as follows.
 
@@ -63,7 +63,7 @@ void last_fn() {}
 }
 ```
 
-Don't use **`DLL_PROCESS_ATTACH`** to call **`exit`** from **`DllMain`**. To exit the **`DLLMain`** function, return **`FALSE`** from **`DLL_PROCESS_ATTACH`**.
+Don't use `DLL_PROCESS_ATTACH` to call **`exit`** from `DllMain`. To exit the `DLLMain` function, return `FALSE` from `DLL_PROCESS_ATTACH`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

@@ -74,7 +74,7 @@ errno_t _mbscpy_s_l(
 Location of the destination string buffer.
 
 *`dest_size`*\
-Size of the destination string buffer in **`char`** units for narrow and multi-byte functions, and **`wchar_t`** units for wide functions. This value must be greater than zero and not greater than **`RSIZE_MAX`**. Ensure that this size accounts for the terminating `NULL` following the string.
+Size of the destination string buffer in **`char`** units for narrow and multi-byte functions, and **`wchar_t`** units for wide functions. This value must be greater than zero and not greater than `RSIZE_MAX`. Ensure that this size accounts for the terminating `NULL` following the string.
 
 *`src`*\
 Null-terminated source string buffer.
@@ -90,9 +90,9 @@ Zero if successful; otherwise, an error.
 
 |*`dest`*|*`dest_size`*|*`src`*|Return value|Contents of *`dest`*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**`NULL`**|any|any|**`EINVAL`**|not modified|
-|any|any|**`NULL`**|**`EINVAL`**|*`dest[0]`* set to 0|
-|any|0, or too small|any|**`ERANGE`**|*`dest[0]`* set to 0|
+|`NULL`|any|any|`EINVAL`|not modified|
+|any|any|`NULL`|`EINVAL`|*`dest[0]`* set to 0|
+|any|0, or too small|any|`ERANGE`|*`dest[0]`* set to 0|
 
 ## Remarks
 
@@ -100,7 +100,7 @@ The **`strcpy_s`** function copies the contents in the address of *`src`*, inclu
 
 **`wcscpy_s`** is the wide-character version of **`strcpy_s`**, and **`_mbscpy_s`** is the multibyte-character version. The arguments of **`wcscpy_s`** are wide-character strings; those of **`_mbscpy_s`** and **`_mbscpy_s_l`** are multibyte-character strings. These functions behave identically otherwise. **`_mbscpy_s_l`** is identical to **`_mbscpy_s`** except that it uses the locale parameter passed in instead of the current locale. For more information, see [`locale`](../locale.md).
 
-If *`dest`* or *`src`* is a null pointer, or if the destination string size *`dest_size`* is too small, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`EINVAL`** and set **`errno`** to **`EINVAL`** when *`dest`* or *`src`* is a null pointer, and they return **`ERANGE`** and set **`errno`** to **`ERANGE`** when the destination string is too small.
+If *`dest`* or *`src`* is a null pointer, or if the destination string size *`dest_size`* is too small, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL` when *`dest`* or *`src`* is a null pointer, and they return `ERANGE` and set `errno` to `ERANGE` when the destination string is too small.
 
 Upon successful execution, the destination string is always null-terminated.
 

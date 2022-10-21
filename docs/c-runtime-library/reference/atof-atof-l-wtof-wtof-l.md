@@ -45,7 +45,7 @@ Locale to use.
 
 Each function returns the **`double`** value produced by interpreting the input characters as a number. The return value is 0.0 if the input can't be converted to a value of that type.
 
-In all out-of-range cases, **`errno`** is set to **`ERANGE`**. If the parameter passed in is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return 0.
+In all out-of-range cases, `errno` is set to `ERANGE`. If the parameter passed in is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return 0.
 
 ## Remarks
 

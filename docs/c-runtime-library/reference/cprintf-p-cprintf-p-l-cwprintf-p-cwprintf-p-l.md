@@ -56,13 +56,13 @@ The number of characters printed or a negative value if an error occurs.
 
 ## Remarks
 
-These functions format and print a series of characters and values directly to the console, using the **_putch** and **_putwch** functions to output characters. Each *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. The format has the same form and function as the *`format`* parameter for the [`printf_p`](../format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between **_cprintf_p** and **cprintf_s** is that **_cprintf_p** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
+These functions format and print a series of characters and values directly to the console, using the `_putch` and `_putwch` functions to output characters. Each *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. The format has the same form and function as the *`format`* parameter for the [`printf_p`](../format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between **`_cprintf_p`** and `cprintf_s` is that **`_cprintf_p`** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
 
-Unlike the **fprintf_p**, **printf_p**, and **sprintf_p** functions, **_cprintf_p** and **_cwprintf_p** don't translate line-feed characters into carriage return-line feed (CR-LF) combinations when output. An important distinction is that **_cwprintf_p** displays Unicode characters when used in Windows NT. Unlike **_cprintf_p**, **_cwprintf_p** uses the current console locale settings.
+Unlike the `fprintf_p`, `printf_p`, and `sprintf_p` functions, **`_cprintf_p`** and **`_cwprintf_p`** don't translate line-feed characters into carriage return-line feed (CR-LF) combinations when output. An important distinction is that **`_cwprintf_p`** displays Unicode characters when used in Windows NT. Unlike **`_cprintf_p`**, **`_cwprintf_p`** uses the current console locale settings.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
+The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
-Also, like **_cprintf_s** and **_cwprintf_s**, they validate the input pointer and the format string. If *`format`* or *`argument`* are **NULL**, or of the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+Also, like `_cprintf_s` and `_cwprintf_s`, they validate the input pointer and the format string. If *`format`* or *`argument`* are `NULL`, or of the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string.
@@ -72,17 +72,17 @@ Also, like **_cprintf_s** and **_cwprintf_s**, they validate the input pointer a
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tcprintf_p**|**_cprintf_p**|**_cprintf_p**|**_cwprintf_p**|
-|**_tcprintf_p_l**|**_cprintf_p_l**|**_cprintf_p_l**|**_cwprintf_p_l**|
+|`_tcprintf_p`|**`_cprintf_p`**|**`_cprintf_p`**|**`_cwprintf_p`**|
+|`_tcprintf_p_l`|**`_cprintf_p_l`**|**`_cprintf_p_l`**|**`_cwprintf_p_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_cprintf_p**, **_cprintf_p_l**|\<conio.h>|
-|**_cwprintf_p**, **_cwprintf_p_l**|\<conio.h>|
+|**`_cprintf_p`**, **`_cprintf_p_l`**|\<conio.h>|
+|**`_cwprintf_p`**, **`_cwprintf_p_l`**|\<conio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

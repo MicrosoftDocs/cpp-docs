@@ -42,7 +42,7 @@ Type of sharing allowed.
 
 ## Return value
 
-Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
+Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *`filename`* or *`mode`* is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
 
 For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -74,17 +74,17 @@ When a file is opened with the **"`a`"** or **"`a+`"** access type, all write op
 |**`T`**|Specifies a file as temporary. If possible, it is not flushed to disk.|
 |**`D`**|Specifies a file as temporary. It is deleted when the last file pointer is closed.|
 
-If **`t`** or **`b`** is not given in *`mode`*, the translation mode is defined by the default-mode variable **`_fmode`**. If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**. For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
+If **`t`** or **`b`** is not given in *`mode`*, the translation mode is defined by the default-mode variable **`_fmode`**. If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
 The argument *`shflag`* is a constant expression consisting of one of the following manifest constants, defined in `Share.h`.
 
 |Term|Definition|
 |----------|----------------|
-|**`_SH_COMPAT`**|Sets Compatibility mode for 16-bit applications.|
-|**`_SH_DENYNO`**|Permits read and write access.|
-|**`_SH_DENYRD`**|Denies read access to the file.|
-|**`_SH_DENYRW`**|Denies read and write access to the file.|
-|**`_SH_DENYWR`**|Denies write access to the file.|
+|`_SH_COMPAT`|Sets Compatibility mode for 16-bit applications.|
+|`_SH_DENYNO`|Permits read and write access.|
+|`_SH_DENYRD`|Denies read access to the file.|
+|`_SH_DENYRW`|Denies read and write access to the file.|
+|`_SH_DENYWR`|Denies write access to the file.|
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

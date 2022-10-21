@@ -39,11 +39,11 @@ Size of the item to read in bytes.
 Maximum number of items to be read.
 
 *`stream`*\
-Pointer to **`FILE`** structure.
+Pointer to `FILE` structure.
 
 ## Return value
 
-**`fread_s`** returns the number of (whole) items that were read into the buffer, which may be less than *`count`* if a read error or the end of the file is encountered before *`count`* is reached. Use the **`feof`** or **`ferror`** function to distinguish an error from an end-of-file condition. If *`size`* or *`count`* is 0, **`fread_s`** returns 0 and the buffer contents are unchanged. If *`stream`* or *`buffer`* is a null pointer, **`fread_s`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns 0.
+**`fread_s`** returns the number of (whole) items that were read into the buffer, which may be less than *`count`* if a read error or the end of the file is encountered before *`count`* is reached. Use the **`feof`** or **`ferror`** function to distinguish an error from an end-of-file condition. If *`size`* or *`count`* is 0, **`fread_s`** returns 0 and the buffer contents are unchanged. If *`stream`* or *`buffer`* is a null pointer, **`fread_s`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns 0.
 
 For more information about error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

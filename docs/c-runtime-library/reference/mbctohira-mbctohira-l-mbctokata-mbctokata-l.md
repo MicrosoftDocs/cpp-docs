@@ -50,16 +50,16 @@ Each of these functions returns the converted character *`c`*, if possible. Othe
 
 ## Remarks
 
-The **_mbctohira** and **_mbctokata** functions test a character *`c`* and, if possible, apply one of the following conversions.
+The **`_mbctohira`** and **`_mbctokata`** functions test a character *`c`* and, if possible, apply one of the following conversions.
 
 |Routines|Converts|
 |--------------|--------------|
-|**_mbctohira**, **_mbctohira_l**|Multibyte katakana to multibyte hiragana.|
-|**_mbctokata**, **_mbctokata_l**|Multibyte hiragana to multibyte katakana.|
+|**`_mbctohira`**, **`_mbctohira_l`**|Multibyte katakana to multibyte hiragana.|
+|**`_mbctokata`**, **`_mbctokata_l`**|Multibyte hiragana to multibyte katakana.|
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale for this locale-dependent behavior and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the `_l` suffix use the current locale for this locale-dependent behavior and the ones that do have the `_l` suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
-In earlier versions, **_mbctohira** was named **jtohira** and **_mbctokata** was named **jtokata**. For new code, use the new names.
+In earlier versions, **`_mbctohira`** was named `jtohira` and **`_mbctokata`** was named `jtokata`. For new code, use the new names.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -67,10 +67,10 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_mbctohira**|\<mbstring.h>|
-|**_mbctohira_l**|\<mbstring.h>|
-|**_mbctokata**|\<mbstring.h>|
-|**_mbctokata_l**|\<mbstring.h>|
+|**`_mbctohira`**|\<mbstring.h>|
+|**`_mbctohira_l`**|\<mbstring.h>|
+|**`_mbctokata`**|\<mbstring.h>|
+|**`_mbctokata_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

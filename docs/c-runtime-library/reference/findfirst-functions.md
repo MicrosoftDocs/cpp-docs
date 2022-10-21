@@ -77,14 +77,14 @@ File information buffer.
 
 ## Return value
 
-If successful, **`_findfirst`** returns a unique search handle identifying the file or group of files that match the *`filespec`* specification, which can be used in a subsequent call to [`_findnext`](findnext-functions.md) or to [`_findclose`](findclose.md). Otherwise, **`_findfirst`** returns -1 and sets **`errno`** to one of the following values.
+If successful, **`_findfirst`** returns a unique search handle identifying the file or group of files that match the *`filespec`* specification, which can be used in a subsequent call to [`_findnext`](findnext-functions.md) or to [`_findclose`](findclose.md). Otherwise, **`_findfirst`** returns -1 and sets `errno` to one of the following values.
 
 | errno value | Condition |
 |-|-|
-| **`EINVAL`** | Invalid parameter: *`filespec`* or *`fileinfo`* was **`NULL`**. Or, the operating system returned an unexpected error. |
-| **`ENOENT`** | File specification that couldn't be matched. |
-| **`ENOMEM`** | Insufficient memory. |
-| **`EINVAL`** | Invalid file name specification or the file name given was larger than **`MAX_PATH`**. |
+| `EINVAL` | Invalid parameter: *`filespec`* or *`fileinfo`* was `NULL`. Or, the operating system returned an unexpected error. |
+| `ENOENT` | File specification that couldn't be matched. |
+| `ENOMEM` | Insufficient memory. |
+| `EINVAL` | Invalid file name specification or the file name given was larger than `MAX_PATH`. |
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -102,13 +102,13 @@ These functions use various forms of the **`_finddata_t`** structure for the *`f
 
 The variations that use a 64-bit time type enable file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC. The ones that use 32-bit time types represent dates only through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
-Unless you have a specific reason to use the versions that specify the time size explicitly, use **`_findfirst`** or **`_wfindfirst`** or, if you need to support file sizes larger than 3 GB, use **`_findfirsti64`** or **`_wfindfirsti64`**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this change is a breaking change for an application, you might define **`_USE_32BIT_TIME_T`** to revert to the old behavior. If **`_USE_32BIT_TIME_T`** is defined, **`_findfirst`**, **`_finfirsti64`**, and their corresponding Unicode versions use a 32-bit time.
+Unless you have a specific reason to use the versions that specify the time size explicitly, use **`_findfirst`** or **`_wfindfirst`** or, if you need to support file sizes larger than 3 GB, use **`_findfirsti64`** or **`_wfindfirsti64`**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this change is a breaking change for an application, you might define `_USE_32BIT_TIME_T` to revert to the old behavior. If `_USE_32BIT_TIME_T` is defined, **`_findfirst`**, **`_finfirsti64`**, and their corresponding Unicode versions use a 32-bit time.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Time Type and File Length Type Variations of _findfirst
 
-|Functions|**`_USE_32BIT_TIME_T`** defined?|Time type|File length type|
+|Functions|`_USE_32BIT_TIME_T` defined?|Time type|File length type|
 |---------------|----------------------------------|---------------|----------------------|
 |**`_findfirst`**, **`_wfindfirst`**|Not defined|64-bit|32-bit|
 |**`_findfirst`**, **`_wfindfirst`**|Defined|32-bit|32-bit|

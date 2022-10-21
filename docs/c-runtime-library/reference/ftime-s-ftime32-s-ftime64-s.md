@@ -25,28 +25,28 @@ errno_t _ftime64_s( struct __timeb64 *timeptr );
 ### Parameters
 
 *`timeptr`*\
-Pointer to a **_timeb**, **__timeb32**, or **__timeb64** structure.
+Pointer to a `_timeb`, `__timeb32`, or `__timeb64` structure.
 
 ## Return value
 
-Zero if successful, an error code on failure. If *`timeptr`* is **NULL**, the return value is **EINVAL**.
+Zero if successful, an error code on failure. If *`timeptr`* is `NULL`, the return value is `EINVAL`.
 
 ## Remarks
 
-The **_ftime_s** function gets the current local time and stores it in the structure pointed to by *`timeptr`*. The **_timeb**, **__timeb32**, and **__timeb64** structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.
+The **`_ftime_s`** function gets the current local time and stores it in the structure pointed to by *`timeptr`*. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.
 
 |Field|Description|
 |-|-|
-|**dstflag**|Nonzero if daylight savings time is currently in effect for the local time zone. (See [`_tzset`](tzset.md) for an explanation of how daylight savings time is determined.)|
-|**millitm**|Fraction of a second in milliseconds.|
-|**time**|Time in seconds since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).|
-|**timezone**|Difference in minutes, moving westward, between UTC and local time. The value of **timezone** is set from the value of the global variable **_timezone** (see **_tzset**).|
+|`dstflag`|Nonzero if daylight savings time is currently in effect for the local time zone. (See [`_tzset`](tzset.md) for an explanation of how daylight savings time is determined.)|
+|`millitm`|Fraction of a second in milliseconds.|
+|`time`|Time in seconds since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).|
+|`timezone`|Difference in minutes, moving westward, between UTC and local time. The value of `timezone` is set from the value of the global variable `_timezone` (see `_tzset`).|
 
-The **_ftime64_s** function, which uses the **__timeb64** structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas **_ftime32_s** only represents dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
+The **`_ftime64_s`** function, which uses the `__timeb64` structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas **`_ftime32_s`** only represents dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
-The **_ftime_s** function is equivalent to **_ftime64_s**, and **_timeb** contains a 64-bit time, unless **_USE_32BIT_TIME_T** is defined, in which case the old behavior is in effect; **_ftime_s** uses a 32-bit time and **_timeb** contains a 32-bit time.
+The **`_ftime_s`** function is equivalent to **`_ftime64_s`**, and `_timeb` contains a 64-bit time, unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; **`_ftime_s`** uses a 32-bit time and `_timeb` contains a 32-bit time.
 
-**_ftime_s** validates its parameters. If passed a null pointer as *`timeptr`*, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
+**`_ftime_s`** validates its parameters. If passed a null pointer as *`timeptr`*, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -54,9 +54,9 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**_ftime_s**|\<sys/types.h> and \<sys/timeb.h>|
-|**_ftime32_s**|\<sys/types.h> and \<sys/timeb.h>|
-|**_ftime64_s**|\<sys/types.h> and \<sys/timeb.h>|
+|**`_ftime_s`**|\<sys/types.h> and \<sys/timeb.h>|
+|**`_ftime32_s`**|\<sys/types.h> and \<sys/timeb.h>|
+|**`_ftime64_s`**|\<sys/types.h> and \<sys/timeb.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

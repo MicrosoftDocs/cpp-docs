@@ -22,7 +22,7 @@ Use these routines to work with areas of memory on a byte-by-byte basis.
 |[`memset`, `wmemset`](./reference/memset-wmemset.md)|Use given character to initialize specified number of bytes in the buffer|
 |[`_swab`](./reference/swab.md)|Swap bytes of data and store them at specified location|
 
-When the source and target areas overlap, only **memmove** is guaranteed to copy the full source properly.
+When the source and target areas overlap, only `memmove` is guaranteed to copy the full source properly.
 
 ## See also
 

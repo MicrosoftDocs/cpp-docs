@@ -42,7 +42,7 @@ Some of the security features include:
 
   Secure functions, and many of their unsecure counterparts, validate parameters. Validation may  include:
 
-  - Checking for **NULL** values.
+  - Checking for `NULL` values.
   - Checking enumerated values for validity.
   - Checking that integral values are in valid ranges.
 

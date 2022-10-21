@@ -42,26 +42,26 @@ Returns a nonzero value if the integer *`c`* is the first byte of a multibyte ch
 
 Multibyte characters consist of a lead byte followed by a trailing byte. Lead bytes are distinguished by being in a particular range for a given character set. For example, in code page 932 only, lead bytes range from 0x81 - 0x9F and 0xE0 - 0xFC.
 
-**_ismbblead** uses the current locale for locale-dependent behavior. **_ismbblead_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
+**`_ismbblead`** uses the current locale for locale-dependent behavior. **`_ismbblead_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (false), whether *`c`* is a lead byte or not.
+When the locale is UTF-8, **`_ismbblead`** and **`_ismbblead_l`** always return 0 (false), whether *`c`* is a lead byte or not.
 
-**_ismbblead** and **_ismbblead_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mbrlen** instead.
+**`_ismbblead`** and **`_ismbblead_l`** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use `mbrlen` instead.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istlead**|Always returns false|**_ismbblead**|Always returns false|
+|`_istlead`|Always returns false|**`_ismbblead`**|Always returns false|
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**_ismbblead**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
-|**_ismbblead_l**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+|**`_ismbblead`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+|**`_ismbblead_l`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
 
 \* For manifest constants for the test conditions.
 

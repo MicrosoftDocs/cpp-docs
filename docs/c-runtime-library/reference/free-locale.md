@@ -29,17 +29,17 @@ Locale object to free.
 
 ## Remarks
 
-The **_free_locale** function is used to free the locale object obtained from a call to **_get_current_locale** or **_create_locale**.
+The **`_free_locale`** function is used to free the locale object obtained from a call to `_get_current_locale` or `_create_locale`.
 
-The previous name of this function, **__free_locale** (with two leading underscores) has been deprecated.
+The previous name of this function, **`__free_locale`** (with two leading underscores) has been deprecated.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|**Routine**|Required header|
+|`Routine`|Required header|
 |---------------|---------------------|
-|**_free_locale**|\<locale.h>|
+|**`_free_locale`**|\<locale.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

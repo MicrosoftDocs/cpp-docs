@@ -12,7 +12,7 @@ ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748
 ---
 # `putchar`, `putwchar`
 
-Writes a character to **stdout**.
+Writes a character to `stdout`.
 
 ## Syntax
 
@@ -32,32 +32,32 @@ Character to be written.
 
 ## Return value
 
-Returns the character written. To indicate an error or end-of-file condition, **putc** and **putchar** return **EOF**; **putwc** and **putwchar** return **WEOF**. For all four routines, use [`ferror`](ferror.md) or [`feof`](feof.md) to check for an error or end of file. If passed a null pointer for *`stream`*, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return **EOF** or **WEOF** and set **errno** to **EINVAL**.
+Returns the character written. To indicate an error or end-of-file condition, `putc` and **`putchar`** return `EOF`; `putwc` and **`putwchar`** return `WEOF`. For all four routines, use [`ferror`](ferror.md) or [`feof`](feof.md) to check for an error or end of file. If passed a null pointer for *`stream`*, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return `EOF` or `WEOF` and set `errno` to `EINVAL`.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **putc** routine writes the single character *`c`* to the output *`stream`* at the current position. Any integer can be passed to **putc**, but only the lower 8 bits are written. The **putchar** routine is identical to `putc( c, stdout )`. For each routine, if a read error occurs, the error indicator for the stream is set. **putc** and **putchar** are similar to **fputc** and **_fputchar**, respectively, but are implemented both as functions and as macros (see [Recommendations for choosing between functions and macros](../recommendations-for-choosing-between-functions-and-macros.md)). **putwc** and **putwchar** are wide-character versions of **putc** and **putchar**, respectively.
+The `putc` routine writes the single character *`c`* to the output *`stream`* at the current position. Any integer can be passed to `putc`, but only the lower 8 bits are written. The **`putchar`** routine is identical to `putc( c, stdout )`. For each routine, if a read error occurs, the error indicator for the stream is set. `putc` and **`putchar`** are similar to `fputc` and `_fputchar`, respectively, but are implemented both as functions and as macros (see [Recommendations for choosing between functions and macros](../recommendations-for-choosing-between-functions-and-macros.md)). `putwc` and **`putwchar`** are wide-character versions of `putc` and **`putchar`**, respectively.
 
-The versions with the **_nolock** suffix are identical except that they aren't protected from interference by other threads. They may be faster since they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+The versions with the `_nolock` suffix are identical except that they aren't protected from interference by other threads. They may be faster since they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_puttchar**|**putchar**|**putchar**|**putwchar**|
+|`_puttchar`|**`putchar`**|**`putchar`**|**`putwchar`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**putchar**|\<stdio.h>|
-|**putwchar**|\<stdio.h> or \<wchar.h>|
+|**`putchar`**|\<stdio.h>|
+|**`putwchar`**|\<stdio.h> or \<wchar.h>|
 
-The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 

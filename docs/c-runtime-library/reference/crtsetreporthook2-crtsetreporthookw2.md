@@ -30,22 +30,22 @@ int _CrtSetReportHookW2(
 ### Parameters
 
 *`mode`*\
-The action to take: **_CRT_RPTHOOK_INSTALL** or **_CRT_RPTHOOK_REMOVE**.
+The action to take: `_CRT_RPTHOOK_INSTALL` or `_CRT_RPTHOOK_REMOVE`.
 
 *`pfnNewHook`*\
 Report hook to install or remove in the narrow-character or wide-character version of this function.
 
 ## Return value
 
--1 if an error was encountered, with **EINVAL** or **ENOMEM** set; otherwise returns the reference count of *`pfnNewHook`* after the call.
+-1 if an error was encountered, with `EINVAL` or `ENOMEM` set; otherwise returns the reference count of *`pfnNewHook`* after the call.
 
 ## Remarks
 
-**_CrtSetReportHook2** and **_CrtSetReportHookW2** let you hook or unhook a function, whereas [`_CrtSetReportHook`](crtsetreporthook.md) only lets you hook a function.
+**`_CrtSetReportHook2`** and **`_CrtSetReportHookW2`** let you hook or unhook a function, whereas [`_CrtSetReportHook`](crtsetreporthook.md) only lets you hook a function.
 
-**_CrtSetReportHook2** or **_CrtSetReportHookW2** should be used instead of **_CrtSetReportHook** when the hook call is made in a DLL and when multiple DLLs might be loaded and setting their own hook functions. In such a situation, DLLs can be unloaded in a different order than they were loaded and the hook function can be left pointing at an unloaded DLL. Any debug output crashes the process if the hook functions were added with **_CrtSetReportHook**.
+**`_CrtSetReportHook2`** or **`_CrtSetReportHookW2`** should be used instead of `_CrtSetReportHook` when the hook call is made in a DLL and when multiple DLLs might be loaded and setting their own hook functions. In such a situation, DLLs can be unloaded in a different order than they were loaded and the hook function can be left pointing at an unloaded DLL. Any debug output crashes the process if the hook functions were added with `_CrtSetReportHook`.
 
-Any hook functions added with **_CrtSetReportHook** are called if there are no hook functions added with **_CrtSetReportHook2** or **_CrtSetReportHookW2** or if all hook functions added with **_CrtSetReportHook2** and **_CrtSetReportHookW2** return **FALSE**.
+Any hook functions added with `_CrtSetReportHook` are called if there are no hook functions added with **`_CrtSetReportHook2`** or **`_CrtSetReportHookW2`** or if all hook functions added with **`_CrtSetReportHook2`** and **`_CrtSetReportHookW2`** return `FALSE`.
 
 The wide-character version of this function is available. The report hook functions take a string whose type (wide or narrow characters) must match the version of this function used. Use the following function prototype for the report hooks used with the wide-character version of this function:
 
@@ -59,7 +59,7 @@ Use the following prototype for the narrow-character report hooks:
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-These functions validate their parameters. If *`mode`* or *`pfnNewHook`* is invalid, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
+These functions validate their parameters. If *`mode`* or *`pfnNewHook`* is invalid, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 > [!NOTE]
 > If your application is compiled with **/clr** and the reporting function is called after the application has exited main, the CLR will throw an exception if the reporting function calls any CRT functions.
@@ -68,8 +68,8 @@ These functions validate their parameters. If *`mode`* or *`pfnNewHook`* is inva
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**_CrtSetReportHook2**|\<crtdbg.h>|\<errno.h>|
-|**_CrtSetReportHookW2**|\<crtdbg.h>|\<errno.h>|
+|**`_CrtSetReportHook2`**|\<crtdbg.h>|\<errno.h>|
+|**`_CrtSetReportHookW2`**|\<crtdbg.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

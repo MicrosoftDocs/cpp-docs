@@ -119,7 +119,7 @@ The **`strncpy`** function copies the initial *`count`* characters of *`strSourc
 > [!IMPORTANT]
 > **`strncpy`** does not check for sufficient space in *`strDest`*; this makes it a potential cause of buffer overruns. The *`count`* argument limits the number of characters copied; it is not a limit on the size of *`strDest`*. See the following example. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-If *`strDest`* or *`strSource`* is a **`NULL`** pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
+If *`strDest`* or *`strSource`* is a `NULL` pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 **`wcsncpy`** and **`_mbsncpy`** are wide-character and multibyte-character versions of **`strncpy`**. The arguments and return value of **`wcsncpy`** and **`_mbsncpy`** vary accordingly. These six functions behave identically otherwise.
 

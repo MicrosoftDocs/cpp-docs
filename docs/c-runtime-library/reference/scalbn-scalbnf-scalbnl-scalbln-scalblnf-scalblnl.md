@@ -12,7 +12,7 @@ ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
 ---
 # `scalbn`, `scalbnf`, `scalbnl`, `scalbln`, `scalblnf`, `scalblnl`
 
-Multiplies a floating-point number by an integral power of FLT_RADIX.
+Multiplies a floating-point number by an integral power of `FLT_RADIX`.
 
 ## Syntax
 
@@ -76,15 +76,15 @@ Integer exponent.
 
 ## Return value
 
-The **scalbn** functions return the value of *`x`* \* **FLT_RADIX**<sup>exp</sup> when successful. On overflow (depending on the sign of *`x`*), **scalbn** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
+The **`scalbn`** functions return the value of *`x`* \* `FLT_RADIX`<sup>exp</sup> when successful. On overflow (depending on the sign of *`x`*), **`scalbn`** returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.
 
-For more information about **errno** and possible error return values, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about `errno` and possible error return values, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-**FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [`ldexp`](ldexp.md).
+`FLT_RADIX` is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **`scalbn`** is equivalent to [`ldexp`](ldexp.md).
 
-Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **scalbn** always takes a **`double`** and an **`int`** and returns a **`double`**, and **scalbln** always takes a **`double`** and a **`long`** and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`scalbn`** and **`scalbln`** that take and return **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`scalbn`** always takes a **`double`** and an **`int`** and returns a **`double`**, and **`scalbln`** always takes a **`double`** and a **`long`** and returns a **`double`**.
 
 If you use the \<tgmath.h> `scalbn()` or `scalbln` macros, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -94,7 +94,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
+|**`scalbn`**, **`scalbnf`**, **`scalbnl`**, **`scalbln`**, **`scalblnf`**, **`scalblnl`**|\<math.h>|\<cmath>|
 |**scalbn() or scalbln** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../compatibility.md).

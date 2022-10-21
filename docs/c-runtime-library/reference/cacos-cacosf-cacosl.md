@@ -38,13 +38,13 @@ The arc cosine of *`z`*, in radians. The result is unbounded along the imaginary
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cacos** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cacos** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`cacos`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`cacos`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**cacos**,               **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
+|**`cacos`**,               **`cacosf`**, **`cacosl`**|\<complex.h>|\<ccomplex>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

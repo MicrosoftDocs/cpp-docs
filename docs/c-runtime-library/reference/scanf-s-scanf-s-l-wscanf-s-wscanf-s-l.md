@@ -50,7 +50,7 @@ The locale to use.
 
 ## Return value
 
-Returns the number of fields successfully converted and assigned. The return value doesn't include fields that were read but not assigned. A return value of 0 indicates no fields were assigned. The return value is **EOF** for an error, or if the end-of-file character or the end-of-string character is found in the first attempt to read a character. If *`format`* is a **`NULL`** pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`scanf_s`** and **`wscanf_s`** return **EOF** and set **`errno`** to **`EINVAL`**.
+Returns the number of fields successfully converted and assigned. The return value doesn't include fields that were read but not assigned. A return value of 0 indicates no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is found in the first attempt to read a character. If *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`scanf_s`** and **`wscanf_s`** return `EOF` and set `errno` to `EINVAL`.
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -60,7 +60,7 @@ The **`scanf_s`** function reads data from the standard input stream, **`stdin`*
 
 **`wscanf_s`** is a wide-character version of **`scanf_s`**; the *`format`* argument to **`wscanf_s`** is a wide-character string. **`wscanf_s`** and **`scanf_s`** behave identically if the stream is opened in ANSI mode. **`scanf_s`** doesn't currently support input from a UNICODE stream.
 
-The versions of these functions that have the **_l** suffix are identical, except they use the *`locale`* parameter instead of the current thread locale.
+The versions of these functions that have the `_l` suffix are identical, except they use the *`locale`* parameter instead of the current thread locale.
 
 Unlike **`scanf`** and **`wscanf`**, **`scanf_s`** and **`wscanf_s`** require you to specify buffer sizes for some parameters. Specify the sizes for all **`c`**, **`C`**, **`s`**, **`S`**, or string control set **`[]`** parameters. The buffer size in characters is passed as an additional parameter. It immediately follows the pointer to the buffer or variable. For example, if you're reading a string, the buffer size for that string is passed as follows:
 

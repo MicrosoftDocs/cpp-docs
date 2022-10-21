@@ -24,8 +24,8 @@ To use these routines, the [`_DEBUG`](./debug.md) flag must be defined. All of t
 
 | Routine | Use |
 |--|--|
-| [`_ASSERT`](./reference/assert-asserte-assert-expr-macros.md) | Evaluate an expression and generates a debug report when the result is FALSE |
-| [`_ASSERTE`](./reference/assert-asserte-assert-expr-macros.md) | Similar to **`_ASSERT`**, but includes the failed expression in the generated report |
+| [`_ASSERT`](./reference/assert-asserte-assert-expr-macros.md) | Evaluate an expression and generates a debug report when the result is `FALSE` |
+| [`_ASSERTE`](./reference/assert-asserte-assert-expr-macros.md) | Similar to `_ASSERT`, but includes the failed expression in the generated report |
 | [`_CrtCheckMemory`](./reference/crtcheckmemory.md) | Confirm the integrity of the memory blocks allocated on the debug heap |
 | [`_CrtDbgBreak`](./reference/crtdbgbreak.md) | Sets a break point. |
 | [`_CrtDbgReport`, `_CrtDbgReportW`](./reference/crtdbgreport-crtdbgreportw.md) | Generate a debug report with a user message and send the report to three possible destinations |
@@ -122,7 +122,7 @@ The debugger can be used to step through the source code for most of the C runti
    :::column-end:::
 :::row-end:::
 
-Although source code is available for most of the **printf** and **scanf** routines, they make an internal call to another routine for which source code isn't provided.
+Although source code is available for most of the `printf` and `scanf` routines, they make an internal call to another routine for which source code isn't provided.
 
 ## Routines that behave differently in a debug build of an application
 

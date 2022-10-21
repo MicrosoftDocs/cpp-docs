@@ -64,27 +64,27 @@ Size of the *`pathname`* buffer.
 
 Zero if successful; an error code on failure.
 
-If *`filename`* is an empty string, the return value is **ENOENT**.
+If *`filename`* is an empty string, the return value is `ENOENT`.
 
 ### Error conditions
 
 |*`filename`*|*`varname`*|*`pathname`*|*`numberOfElements`*|Return value|Contents of *`pathname`*|
 |----------------|---------------|----------------|------------------------|------------------|----------------------------|
-|any|any|**NULL**|any|**EINVAL**|n/a|
-|**NULL**|any|any|any|**EINVAL**|not changed|
-|any|any|any|<= 0|**EINVAL**|not changed|
+|any|any|`NULL`|any|`EINVAL`|n/a|
+|`NULL`|any|any|any|`EINVAL`|not changed|
+|any|any|any|<= 0|`EINVAL`|not changed|
 
-If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
+If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
 ## Remarks
 
-The **_searchenv_s** routine searches for the target file in the specified domain. The *`varname`* variable can be any environment or user-defined variable that specifies a list of directory paths, such as **PATH**, **LIB**, and **INCLUDE**. Because **_searchenv_s** is case-sensitive, *`varname`* should match the case of the environment variable. If *`varname`* does not match the name of an environment variable defined in the process's environment, the function returns zero and the *`pathname`* variable is unchanged.
+The **`_searchenv_s`** routine searches for the target file in the specified domain. The *`varname`* variable can be any environment or user-defined variable that specifies a list of directory paths, such as `PATH`, `LIB`, and `INCLUDE`. Because **`_searchenv_s`** is case-sensitive, *`varname`* should match the case of the environment variable. If *`varname`* does not match the name of an environment variable defined in the process's environment, the function returns zero and the *`pathname`* variable is unchanged.
 
 The routine searches first for the file in the current working directory. If it does not find the file, it looks next through the directories specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *`pathname`*. If the *`filename`* file is not found, *`pathname`* contains an empty null-terminated string.
 
-The *`pathname`* buffer should be at least **_MAX_PATH** characters long to accommodate the full length of the constructed path name. Otherwise, **_searchenv_s** might overrun the *`pathname`* buffer resulting in unexpected behavior.
+The *`pathname`* buffer should be at least `_MAX_PATH` characters long to accommodate the full length of the constructed path name. Otherwise, **`_searchenv_s`** might overrun the *`pathname`* buffer resulting in unexpected behavior.
 
-**_wsearchenv_s** is a wide-character version of **_searchenv_s**; the arguments to **_wsearchenv_s** are wide-character strings. **_wsearchenv_s** and **_searchenv_s** behave identically otherwise.
+**`_wsearchenv_s`** is a wide-character version of **`_searchenv_s`**; the arguments to **`_wsearchenv_s`** are wide-character strings. **`_wsearchenv_s`** and **`_searchenv_s`** behave identically otherwise.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -92,16 +92,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tsearchenv_s**|**_searchenv_s**|**_searchenv_s**|**_wsearchenv_s**|
+|`_tsearchenv_s`|**`_searchenv_s`**|**`_searchenv_s`**|**`_wsearchenv_s`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_searchenv_s**|\<stdlib.h>|
-|**_wsearchenv_s**|\<stdlib.h> or \<wchar.h>|
+|**`_searchenv_s`**|\<stdlib.h>|
+|**`_wsearchenv_s`**|\<stdlib.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

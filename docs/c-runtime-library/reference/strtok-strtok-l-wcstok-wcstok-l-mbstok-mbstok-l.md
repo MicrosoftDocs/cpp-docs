@@ -70,7 +70,7 @@ Points to memory used to store the internal state of the parser so that the pars
 
 ## Return value
 
-Returns a pointer to the next token found in *`strToken`*. The functions return **`NULL`** when no more tokens are found. Each call modifies *`strToken`* by substituting a null character for the first delimiter that occurs after the returned token.
+Returns a pointer to the next token found in *`strToken`*. The functions return `NULL` when no more tokens are found. Each call modifies *`strToken`* by substituting a null character for the first delimiter that occurs after the returned token.
 
 ## Remarks
 
@@ -81,9 +81,9 @@ The two argument version of **`wcstok`** is not standard. If you need to use tha
 > [!IMPORTANT]
 > These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-On the first call to **`strtok`**, the function skips leading delimiters and returns a pointer to the first token in *`strToken`*, terminating the token with a null character. More tokens can be broken out of the remainder of *`strToken`* by a series of calls to **`strtok`**. Each call to **`strtok`** modifies *`strToken`* by inserting a null character after the **`token`** returned by that call. To read the next token from *`strToken`*, call **`strtok`** with a **`NULL`** value for the *`strToken`* argument. The **`NULL`** *`strToken`* argument causes **`strtok`** to search for the next token in the modified *`strToken`*. The *`strDelimit`* argument can take any value from one call to the next so that the set of delimiters may vary.
+On the first call to **`strtok`**, the function skips leading delimiters and returns a pointer to the first token in *`strToken`*, terminating the token with a null character. More tokens can be broken out of the remainder of *`strToken`* by a series of calls to **`strtok`**. Each call to **`strtok`** modifies *`strToken`* by inserting a null character after the **`token`** returned by that call. To read the next token from *`strToken`*, call **`strtok`** with a `NULL` value for the *`strToken`* argument. The `NULL` *`strToken`* argument causes **`strtok`** to search for the next token in the modified *`strToken`*. The *`strDelimit`* argument can take any value from one call to the next so that the set of delimiters may vary.
 
-The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md).
 
 The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 

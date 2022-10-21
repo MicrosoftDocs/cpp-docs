@@ -46,7 +46,7 @@ Storage location for data.
 
 ## Return value
 
-`_cgets` and `_cgetws` return a pointer to the start of the string, at `buffer[2]`. If `buffer` is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, they return **NULL** and set `errno` to `EINVAL`.
+`_cgets` and `_cgetws` return a pointer to the start of the string, at `buffer[2]`. If `buffer` is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, they return `NULL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -60,7 +60,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_cgetts`|`_cgets`|`_cgets`|`_cgetws`|
 

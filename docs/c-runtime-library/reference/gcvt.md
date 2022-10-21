@@ -37,15 +37,15 @@ Storage location for the result.
 
 ## Return value
 
-**_gcvt** returns a pointer to the string of digits.
+**`_gcvt`** returns a pointer to the string of digits.
 
 ## Remarks
 
-The **_gcvt** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. The *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *`digits`* + 1 is used, the function overwrites the end of the buffer. This is because the converted string includes a decimal point and can contain sign and exponent information. There is no provision for overflow. **_gcvt** attempts to produce *`digits`* digits in decimal format. If it cannot, it produces *`digits`* digits in exponential format. Trailing zeros might be suppressed in the conversion.
+The **`_gcvt`** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. The *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *`digits`* + 1 is used, the function overwrites the end of the buffer. This is because the converted string includes a decimal point and can contain sign and exponent information. There is no provision for overflow. **`_gcvt`** attempts to produce *`digits`* digits in decimal format. If it cannot, it produces *`digits`* digits in exponential format. Trailing zeros might be suppressed in the conversion.
 
-A *`buffer`* of length **_CVTBUFSIZE** is sufficient for any floating point value.
+A *`buffer`* of length `_CVTBUFSIZE` is sufficient for any floating point value.
 
-This function validates its parameters. If *`buffer`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
+This function validates its parameters. If *`buffer`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -53,7 +53,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_gcvt**|\<stdlib.h>|
+|**`_gcvt`**|\<stdlib.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

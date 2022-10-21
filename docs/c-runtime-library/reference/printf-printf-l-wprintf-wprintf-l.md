@@ -49,13 +49,13 @@ The locale to use.
 
 ## Return value
 
-Returns the number of characters printed, or a negative value if an error occurs. If *`format`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EINVAL`**. If **`EOF`** (0xFFFF) is encountered in *`argument`*, the function returns -1.
+Returns the number of characters printed, or a negative value if an error occurs. If *`format`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`. If `EOF` (0xFFFF) is encountered in *`argument`*, the function returns -1.
 
-For information on **`errno`** and error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on `errno` and error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`printf`** function formats and prints a series of characters and values to the standard output stream, **`stdout`**. If arguments follow the *`format`* string, the *`format`* string must contain specifications that determine the output format for the arguments. **`printf`** and [`fprintf`](fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that **`printf`** writes output to **`stdout`** rather than to a destination of type **`FILE`**.
+The **`printf`** function formats and prints a series of characters and values to the standard output stream, **`stdout`**. If arguments follow the *`format`* string, the *`format`* string must contain specifications that determine the output format for the arguments. **`printf`** and [`fprintf`](fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that **`printf`** writes output to **`stdout`** rather than to a destination of type `FILE`.
 
 **`wprintf`** is a wide-character version of **`printf`**; *`format`* is a wide-character string. **`wprintf`** and **`printf`** behave identically if the stream is opened in ANSI mode. **`printf`** does not currently support output into a UNICODE stream.
 

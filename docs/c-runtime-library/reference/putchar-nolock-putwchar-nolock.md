@@ -12,7 +12,7 @@ ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
 ---
 # `_putchar_nolock`, `_putwchar_nolock`
 
-Writes a character to **stdout** without locking the thread.
+Writes a character to `stdout` without locking the thread.
 
 ## Syntax
 
@@ -36,22 +36,22 @@ See **putchar, putwchar**.
 
 ## Remarks
 
-**putchar_nolock** and **_putwchar_nolock** are identical to the versions without the **_nolock** suffix except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**`putchar_nolock`** and **`_putwchar_nolock`** are identical to the versions without the `_nolock` suffix except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_puttchar_nolock**|**_putchar_nolock**|**_putchar_nolock**|**_putwchar_nolock**|
+|`_puttchar_nolock`|**`_putchar_nolock`**|**`_putchar_nolock`**|**`_putwchar_nolock`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_putchar_nolock**|\<stdio.h>|
-|**_putwchar_nolock**|\<stdio.h> or \<wchar.h>|
+|**`_putchar_nolock`**|\<stdio.h>|
+|**`_putwchar_nolock`**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
