@@ -52,7 +52,7 @@ The **`fabs`** functions return the absolute value of the argument *`x`*. There'
 
 C++ allows overloading, so you can call overloads of **`fabs`** if you include the `<cmath>` header. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`fabs`** always takes and returns a **`double`**.
 
-If you use the `<tgmath.h>` `fabs()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
+If you use the `fabs` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

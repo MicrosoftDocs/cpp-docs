@@ -21,4 +21,4 @@ Use the following C run-time library functions to improve the robustness of your
 ## See also
 
 [Universal C runtime routines by category](./run-time-routines-by-category.md)\
-[SetUnhandledExceptionFilter](/windows/win32/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter)
+[`SetUnhandledExceptionFilter`](/windows/win32/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter)

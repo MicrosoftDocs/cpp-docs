@@ -52,7 +52,7 @@ Any numbers.
 
 The **`atan`** function calculates the arctangent (the inverse tangent function) of *`x`*. **`atan2`** calculates the arctangent of *`y`*/*`x`* (if *`x`* equals 0, **`atan2`** returns π/2 if *`y`* is positive, -π/2 if *`y`* is negative, or 0 if *`y`* is 0.)
 
-If you use the `<tgmath.h>` `atan()` or `atan2()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
+If you use the `atan` or `atan2` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 **`atan`** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [`_set_SSE2_enable`](set-sse2-enable.md).
 

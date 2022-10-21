@@ -67,7 +67,7 @@ If any of the above error conditions occurs, the invalid parameter handler is in
 
 The **wctomb_s** function converts its *`wchar`* argument to the corresponding multibyte character and stores the result at *`mbchar`*. You can call the function from any point in any program.
 
-If **wctomb_s** converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than **MB_CUR_MAX**) in the wide character into the integer pointed to by *`pRetValue`*. If *`wchar`* is the wide-character null character (L'\0'), **wctomb_s** fills *`pRetValue`* with 1. If the target pointer *`mbchar`* is **NULL**, **wctomb_s** puts 0 in *`pRetValue`*. If the conversion is not possible in the current locale, **wctomb_s** puts -1 in *`pRetValue`*.
+If **wctomb_s** converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than **MB_CUR_MAX**) in the wide character into the integer pointed to by *`pRetValue`*. If *`wchar`* is the wide-character null character (L'\0'), **wctomb_s** fills *`pRetValue`* with 1. If the target pointer *`mbchar`* is **NULL**, **wctomb_s** puts 0 in *`pRetValue`*. If the conversion isn't possible in the current locale, **wctomb_s** puts -1 in *`pRetValue`*.
 
 **wctomb_s** uses the current locale for locale-dependent information; **_wctomb_s_l** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
@@ -118,4 +118,4 @@ Convert a wide character:
 [`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
 [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
 [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\
-[WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)
+[`WideCharToMultiByte`](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)

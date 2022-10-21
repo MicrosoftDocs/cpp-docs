@@ -44,7 +44,7 @@ The floating-point value to round.
 
 The **`round`** functions return a floating-point value that represents the nearest integer to *`x`*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
 |± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
 
@@ -52,7 +52,7 @@ The **`round`** functions return a floating-point value that represents the near
 
 Because C++ allows overloading, you can call overloads of **`round`** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`round`** always takes and returns a **`double`**.
 
-If you use the `<tgmath.h>` `round()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
+If you use the `round` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
