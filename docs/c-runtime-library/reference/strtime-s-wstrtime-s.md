@@ -53,22 +53,22 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 |*`buffer`*|*`numberOfElements`*|Return|Contents of *`buffer`*|
 |--------------|------------------------|------------|--------------------------|
-|**NULL**|(any)|**EINVAL**|Not modified|
-|Not **NULL** (pointing to valid buffer)|0|**EINVAL**|Not modified|
-|Not **NULL** (pointing to valid buffer)|0 < size < 9|**EINVAL**|Empty string|
-|Not **NULL** (pointing to valid buffer)|Size > 9|0|Current time formatted as specified in the remarks|
+|`NULL`|(any)|`EINVAL`|Not modified|
+|Not `NULL` (pointing to valid buffer)|0|`EINVAL`|Not modified|
+|Not `NULL` (pointing to valid buffer)|0 < size < 9|`EINVAL`|Empty string|
+|Not `NULL` (pointing to valid buffer)|Size > 9|0|Current time formatted as specified in the remarks|
 
 ## Security issues
 
-Passing in an invalid non-**NULL** value for the buffer will result in an access violation if the *`numberOfElements`* parameter is greater than 9.
+Passing in an invalid non-`NULL` value for the buffer will result in an access violation if the *`numberOfElements`* parameter is greater than 9.
 
 Passing a value for *`numberOfElements`* that is greater than the actual size of the buffer will result in buffer overrun.
 
 ## Remarks
 
-These functions provide more secure versions of [`_strtime`](strtime-wstrtime.md) and [`_wstrtime`](strtime-wstrtime.md). The **_strtime_s** function copies the current local time into the buffer pointed to by *`buffer`*. The time is formatted as **hh:mm:ss** where **hh** is two digits representing the hour in 24-hour notation, **mm** is two digits representing the minutes past the hour, and **ss** is two digits representing seconds. For example, the string **18:23:44** represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
+These functions provide more secure versions of [`_strtime`](strtime-wstrtime.md) and [`_wstrtime`](strtime-wstrtime.md). The **`_strtime_s`** function copies the current local time into the buffer pointed to by *`buffer`*. The time is formatted as **hh:mm:ss** where **`hh`** is two digits representing the hour in 24-hour notation, **`mm`** is two digits representing the minutes past the hour, and **`ss`** is two digits representing seconds. For example, the string **18:23:44** represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
 
-**_wstrtime** is a wide-character version of **_strtime**; the argument and return value of **_wstrtime** are wide-character strings. These functions behave identically otherwise.
+**`_wstrtime_s`** is a wide-character version of **`_strtime_s`**; the argument and return value of **`_wstrtime_s`** are wide-character strings. These functions behave identically otherwise.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -78,16 +78,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mapping
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tstrtime_s**|**_strtime_s**|**_strtime_s**|**_wstrtime_s**|
+|`_tstrtime_s`|**`_strtime_s`**|**`_strtime_s`**|**`_wstrtime_s`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_strtime_s**|\<time.h>|
-|**_wstrtime_s**|\<time.h> or \<wchar.h>|
+|**`_strtime_s`**|\<time.h>|
+|**`_wstrtime_s`**|\<time.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

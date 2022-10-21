@@ -25,17 +25,17 @@ errno_t clearerr_s(
 ### Parameters
 
 *`stream`*\
-Pointer to **FILE** structure
+Pointer to `FILE` structure
 
 ## Return value
 
-Zero if successful; **EINVAL** if *`stream`* is **NULL**.
+Zero if successful; `EINVAL` if *`stream`* is `NULL`.
 
 ## Remarks
 
-The **clearerr_s** function resets the error indicator and end-of-file indicator for *`stream`*. Error indicators aren't automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until **clearerr_s**, **clearerr**, [`fseek`](fseek-fseeki64.md), **fsetpos**, or [`rewind`](rewind.md) is called.
+The **`clearerr_s`** function resets the error indicator and end-of-file indicator for *`stream`*. Error indicators aren't automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until **`clearerr_s`**, `clearerr`, [`fseek`](fseek-fseeki64.md), `fsetpos`, or [`rewind`](rewind.md) is called.
 
-If *`stream`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+If *`stream`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**clearerr_s**|\<stdio.h>|
+|**`clearerr_s`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

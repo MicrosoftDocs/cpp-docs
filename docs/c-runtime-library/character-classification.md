@@ -10,7 +10,7 @@ ms.assetid: 3b6c8f0b-9701-407a-b384-9086698773f5
 
 Each of these routines tests a specified single-byte character, wide character, or multibyte character for satisfaction of a condition. (By definition, the ASCII character set between 0 and 127 are a subset of all multibyte-character sets. For example, Japanese katakana includes both ASCII and non-ASCII characters.)
 
-The test conditions are affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.
+The test conditions are affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead.
 
 Generally these routines execute faster than tests you might write and should be favored over. For example, the following code executes slower than a call to `isalpha(c)`:
 
@@ -47,7 +47,7 @@ if ((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))
 |[`isupper`, `iswupper`](./reference/isupper-isupper-l-iswupper-iswupper-l.md), [`_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`](./reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Uppercase|
 |[`_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`](./reference/isctype-iswctype-isctype-l-iswctype-l.md)|Property specified by *`desc`* argument|
 |[`isxdigit`, `iswxdigit`, `_isxdigit_l`, `_iswxdigit_l`](./reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|Hexadecimal digit|
-|[`_mbclen`, `mblen`, `_mblen_l`](./reference/mbclen-mblen-mblen-l.md)|Return length of valid multibyte character; result depends on **LC_CTYPE** category setting of current locale|
+|[`_mbclen`, `mblen`, `_mblen_l`](./reference/mbclen-mblen-mblen-l.md)|Return length of valid multibyte character; result depends on `LC_CTYPE` category setting of current locale|
 
 ## See also
 

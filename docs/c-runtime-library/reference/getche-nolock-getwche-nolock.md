@@ -30,22 +30,22 @@ Returns the character read. There's no error return.
 
 ## Remarks
 
-**_getche_nolock** and **_getwche_nolock** are identical to **_getche** and **_getwche** except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**`_getche_nolock`** and **`_getwche_nolock`** are identical to `_getche` and `_getwche` except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_gettche_nolock**|**_getche_nolock**|**_getch_nolock**|**_getwche_nolock**|
+|`_gettche_nolock`|**`_getche_nolock`**|**`_getch_nolock`**|**`_getwche_nolock`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_getche_nolock**|\<conio.h>|
-|**_getwche_nolock**|\<conio.h> or \<wchar.h>|
+|**`_getche_nolock`**|\<conio.h>|
+|**`_getwche_nolock`**|\<conio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

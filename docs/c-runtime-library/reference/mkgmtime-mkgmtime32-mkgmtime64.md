@@ -40,11 +40,11 @@ A quantity of type **`__time32_t`** or **`__time64_t`** representing the number 
 
 The **`_mkgmtime32`** and **`_mkgmtime64`** functions convert a UTC time to a **`__time32_t`** or **`__time64_t`** type representing the time in UTC. To convert a local time to UTC time, use **`mktime`**, **`_mktime32`**, and **`_mktime64`** instead.
 
-**`_mkgmtime`** is an inline function that evaluates to **`_mkgmtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. We don't recommend it, because your application might fail after January 18, 2038, the maximum range of a 32-bit **`time_t`**. It's not allowed at all on 64-bit platforms.
+**`_mkgmtime`** is an inline function that evaluates to **`_mkgmtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. We don't recommend it, because your application might fail after January 18, 2038, the maximum range of a 32-bit **`time_t`**. It's not allowed at all on 64-bit platforms.
 
 The time structure passed in is changed as follows, in the same way as it's changed by the **`_mktime`** functions: the **`tm_wday`** and **`tm_yday`** fields are set to new values based on the values of **`tm_mday`** and **`tm_year`**. Because the time is assumed to be UTC, the **`tm_isdst`** field is ignored.
 
-The range of the **`_mkgmtime32`** function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of **`_mkgmtime64`** is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of **`_mkgmtime`** depends on whether **`_USE_32BIT_TIME_T`** is defined. When it's not defined, which is the default, the range is the same as **`_mkgmtime64`**. Otherwise, the range is limited to the 32-bit range of **`_mkgmtime32`**.
+The range of the **`_mkgmtime32`** function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of **`_mkgmtime64`** is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of **`_mkgmtime`** depends on whether `_USE_32BIT_TIME_T` is defined. When it's not defined, which is the default, the range is the same as **`_mkgmtime64`**. Otherwise, the range is limited to the 32-bit range of **`_mkgmtime32`**.
 
 Both **`gmtime`** and **`localtime`** use a common static buffer for the conversion. If you supply this buffer to **`_mkgmtime`**, the previous contents are destroyed.
 

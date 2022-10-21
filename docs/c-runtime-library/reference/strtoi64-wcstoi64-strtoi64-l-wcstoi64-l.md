@@ -57,11 +57,11 @@ The locale to use.
 
 ## Return value
 
-**`_strtoi64`** returns the value represented in the string *`strSource`*, except when the representation would cause an overflow, in which case it returns **`_I64_MAX`** or **`_I64_MIN`**. The function will return 0 if no conversion can be performed. **`_wcstoi64`** returns values analogously to **`_strtoi64`**.
+**`_strtoi64`** returns the value represented in the string *`strSource`*, except when the representation would cause an overflow, in which case it returns `_I64_MAX` or `_I64_MIN`. The function will return 0 if no conversion can be performed. **`_wcstoi64`** returns values analogously to **`_strtoi64`**.
 
-**`_I64_MAX`** and **`_I64_MIN`** are defined in LIMITS.H.
+`_I64_MAX` and `_I64_MIN` are defined in LIMITS.H.
 
-If *`strSource`* is **`NULL`** or the *`base`* is nonzero and either less than 2 or greater than 36, **`errno`** is set to **`EINVAL`**.
+If *`strSource`* is `NULL` or the *`base`* is nonzero and either less than 2 or greater than 36, `errno` is set to `EINVAL`.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -78,9 +78,9 @@ By default, this function's global state is scoped to the application. To change
 |**`_tcstoi64`**|**`_strtoi64`**|**`_strtoi64`**|**`_wcstoi64`**|
 |**`_tcstoi64_l`**|**`_strtoi64_l`**|**`_strtoi64_l`**|**`_wcstoi64_l`**|
 
-The locale's **`LC_NUMERIC`** category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoi64_l`** and **`_wcstoi64_l`** are identical to the corresponding function without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
+The locale's `LC_NUMERIC` category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoi64_l`** and **`_wcstoi64_l`** are identical to the corresponding function without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
-If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
+If *`endptr`* isn't `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
 
 **`_strtoi64`** expects *`strSource`* to point to a string of the following form:
 

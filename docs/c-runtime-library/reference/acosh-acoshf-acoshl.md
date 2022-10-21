@@ -33,7 +33,7 @@ Floating-point value.
 
 ## Return value
 
-The **acosh** functions return the inverse hyperbolic cosine (arc hyperbolic cosine) of *`x`*. These functions are valid over the domain *`x`* ≥ 1. If *`x`* is less than 1, `errno` is set to `EDOM`, and the result is a quiet NaN. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
+The **`acosh`** functions return the inverse hyperbolic cosine (arc hyperbolic cosine) of *`x`*. These functions are valid over the domain *`x`* ≥ 1. If *`x`* is less than 1, `errno` is set to `EDOM`, and the result is a quiet NaN. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|
@@ -42,7 +42,7 @@ The **acosh** functions return the inverse hyperbolic cosine (arc hyperbolic cos
 
 ## Remarks
 
-When you use C++, you can call overloads of **acosh** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **acosh** always takes and returns **`double`**.
+When you use C++, you can call overloads of **`acosh`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`acosh`** always takes and returns **`double`**.
 
 If you use the \<tgmath.h> `acosh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -52,7 +52,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**acosh**, **acoshf**, **acoshl**|\<math.h>|\<cmath>|
+|**`acosh`**, **`acoshf`**, **`acoshl`**|\<math.h>|\<cmath>|
 |**acosh()** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../compatibility.md).

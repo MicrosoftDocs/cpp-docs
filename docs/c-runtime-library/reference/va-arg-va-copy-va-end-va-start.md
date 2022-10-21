@@ -72,7 +72,7 @@ The C standard macros, defined in `STDARG.H`, are used as follows:
 
 - **`va_copy`** makes a copy of a list of arguments in its current state. The *`src`* parameter must already be initialized with **`va_start`**; it may have been updated with **`va_arg`** calls, but must not have been reset with **`va_end`**. The next argument that's retrieved by **`va_arg`** from *`dest`* is the same as the next argument that's retrieved from *`src`*.
 
-- After all arguments have been retrieved, **`va_end`** resets the pointer to **`NULL`**. **`va_end`** must be called on each argument list that's initialized with **`va_start`** or **`va_copy`** before the function returns.
+- After all arguments have been retrieved, **`va_end`** resets the pointer to `NULL`. **`va_end`** must be called on each argument list that's initialized with **`va_start`** or **`va_copy`** before the function returns.
 
 > [!NOTE]
 > The macros in VARARGS.H are deprecated and are retained only for backwards compatibility with code that was written before the ANSI C89 standard. In all other cases, use the macros in STDARGS.H.
@@ -109,7 +109,7 @@ int main()
 }
 ```
 
-Notice that **`testit`** expects its second parameter to be either an **`int`** or a **`char*`**. The arguments being passed are 0xffffffff (an **`unsigned int`**, not an **`int`**) and **`NULL`** (actually an **`int`**, not a **`char*`**). When the program is compiled for native code, it produces this output:
+Notice that **`testit`** expects its second parameter to be either an **`int`** or a **`char*`**. The arguments being passed are 0xffffffff (an **`unsigned int`**, not an **`int`**) and `NULL` (actually an **`int`**, not a **`char*`**). When the program is compiled for native code, it produces this output:
 
 ```Output
 -1

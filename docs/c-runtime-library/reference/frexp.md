@@ -53,13 +53,13 @@ Pointer to stored integer exponent.
 
 ## Return value
 
-**frexp** returns the mantissa. If *`x`* is 0, the function returns 0 for both the mantissa and the exponent. If *`expptr`* is **NULL**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns 0.
+**`frexp`** returns the mantissa. If *`x`* is 0, the function returns 0 for both the mantissa and the exponent. If *`expptr`* is `NULL`, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns 0.
 
 ## Remarks
 
-The **frexp** function breaks down the floating-point value (*`x`*) into a mantissa (`m`) and an exponent (`n`), such that the absolute value of `m` is greater than or equal to 0.5 and less than 1.0, and *`x`* = `m` * 2<sup>`n`</sup>. The integer exponent `n` is stored at the location pointed to by *`expptr`*.
+The **`frexp`** function breaks down the floating-point value (*`x`*) into a mantissa (`m`) and an exponent (`n`), such that the absolute value of `m` is greater than or equal to 0.5 and less than 1.0, and *`x`* = `m` * 2<sup>`n`</sup>. The integer exponent `n` is stored at the location pointed to by *`expptr`*.
 
-C++ allows overloading, so you can call overloads of **frexp**. In a C program, unless you're using the \<tgmath.h> macro to call this function, **frexp** always takes a **`double`** and an **`int`** pointer and returns a **`double`**.
+C++ allows overloading, so you can call overloads of **`frexp`**. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`frexp`** always takes a **`double`** and an **`int`** pointer and returns a **`double`**.
 
 If you use the \<tgmath.h> `frexp()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -69,8 +69,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**frexp**, **frexpf**, **frexpl**|\<math.h>|
-|**frexp** macro | \<tgmath.h> |
+|**`frexp`**, **`frexpf`**, **`frexpl`**|\<math.h>|
+|**`frexp`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

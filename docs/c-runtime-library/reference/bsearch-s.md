@@ -49,22 +49,22 @@ A pointer to an object that can be accessed in the comparison function.
 
 ## Return value
 
-**bsearch_s** returns a pointer to an occurrence of *`key`* in the array pointed to by *`base`*. If *`key`* isn't found, the function returns **NULL**. If the array isn't in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
+**`bsearch_s`** returns a pointer to an occurrence of *`key`* in the array pointed to by *`base`*. If *`key`* isn't found, the function returns `NULL`. If the array isn't in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
-If invalid parameters are passed to the function, it invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+If invalid parameters are passed to the function, it invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Error conditions
 
-|*`key`*|*`base`*|*`compare`*|*`number`*|*`width`*|**`errno`** value|
+|*`key`*|*`base`*|*`compare`*|*`number`*|*`width`*|`errno` value|
 |-|-|-|-|-|-|
-|**NULL**|any|any|any|any|**EINVAL**|
-|any|**NULL**|any|!= 0|any|**EINVAL**|
-|any|any|any|any|= 0|**EINVAL**|
-|any|any|**NULL**|an|any|**EINVAL**|
+|`NULL`|any|any|any|any|`EINVAL`|
+|any|`NULL`|any|!= 0|any|`EINVAL`|
+|any|any|any|any|= 0|`EINVAL`|
+|any|any|`NULL`|an|any|`EINVAL`|
 
 ## Remarks
 
-The **bsearch_s** function performs a binary search of a sorted array of *`number`* elements, each of *`width`* bytes in size. The *`base`* value is a pointer to the base of the array to be searched, and *`key`* is the value being sought. The *`compare`* parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:
+The **`bsearch_s`** function performs a binary search of a sorted array of *`number`* elements, each of *`width`* bytes in size. The *`base`* value is a pointer to the base of the array to be searched, and *`key`* is the value being sought. The *`compare`* parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:
 
 |Value returned by *`compare`* routine|Description|
 |-----------------------------------------|-----------------|
@@ -72,7 +72,7 @@ The **bsearch_s** function performs a binary search of a sorted array of *`numbe
 |0|Key is equal to array element.|
 |> 0|Key is greater than array element.|
 
-The *`context`* pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The *`compare`* function may cast the void pointer into the appropriate object type and access members of that object. The addition of the *`context`* parameter makes **bsearch_s** more secure, since the context may be used to avoid reentrancy bugs associated with using static variables to make data available to the *`compare`* function.
+The *`context`* pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The *`compare`* function may cast the void pointer into the appropriate object type and access members of that object. The addition of the *`context`* parameter makes **`bsearch_s`** more secure, since the context may be used to avoid reentrancy bugs associated with using static variables to make data available to the *`compare`* function.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -80,7 +80,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**bsearch_s**|\<stdlib.h> and \<search.h>|
+|**`bsearch_s`**|\<stdlib.h> and \<search.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

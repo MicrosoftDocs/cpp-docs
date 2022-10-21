@@ -42,21 +42,21 @@ Initial position.
 
 ## Return value
 
-**_lseek** returns the offset, in bytes, of the new position from the beginning of the file. **_lseeki64** returns the offset in a 64-bit integer. The function returns -1L to indicate an error. If passed an invalid parameter, such as a bad file descriptor, or the value for *`origin`* is invalid or the position specified by *`offset`* is before the beginning of the file, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EBADF** and return -1L. On devices incapable of seeking (such as terminals and printers), the return value is undefined.
+**`_lseek`** returns the offset, in bytes, of the new position from the beginning of the file. **`_lseeki64`** returns the offset in a 64-bit integer. The function returns -1L to indicate an error. If passed an invalid parameter, such as a bad file descriptor, or the value for *`origin`* is invalid or the position specified by *`offset`* is before the beginning of the file, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L. On devices incapable of seeking (such as terminals and printers), the return value is undefined.
 
 For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_lseek** function moves the file pointer associated with *`fd`* to a new location that is *`offset`* bytes from *`origin`*. The next operation on the file occurs at the new location. The *`origin`* argument must be one of the following constants, which are defined in Stdio.h.
+The **`_lseek`** function moves the file pointer associated with *`fd`* to a new location that is *`offset`* bytes from *`origin`*. The next operation on the file occurs at the new location. The *`origin`* argument must be one of the following constants, which are defined in Stdio.h.
 
 |*`origin`* value| Description |
 |-|-|
-| **SEEK_SET** | Beginning of the file. |
-| **SEEK_CUR** | Current position of the file pointer. |
-| **SEEK_END** | End of file. |
+| `SEEK_SET` | Beginning of the file. |
+| `SEEK_CUR` | Current position of the file pointer. |
+| `SEEK_END` | End of file. |
 
-You can use **_lseek** to reposition the pointer anywhere in a file or beyond the end of the file.
+You can use **`_lseek`** to reposition the pointer anywhere in a file or beyond the end of the file.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -64,8 +64,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_lseek**|\<io.h>|
-|**_lseeki64**|\<io.h>|
+|**`_lseek`**|\<io.h>|
+|**`_lseeki64`**|\<io.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

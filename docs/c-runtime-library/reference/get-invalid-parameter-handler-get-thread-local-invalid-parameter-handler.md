@@ -27,7 +27,7 @@ A pointer to the currently set invalid parameter handler function, or a null poi
 
 ## Remarks
 
-The **_get_invalid_parameter_handler** function gets the currently set global invalid parameter handler. It returns a null pointer if no global invalid parameter handler was set. Similarly, the **_get_thread_local_invalid_parameter_handler** gets the current thread-local invalid parameter handler of the thread it is called on, or a null pointer if no handler was set. For information about how to set global and thread-local invalid parameter handlers, see [`_set_invalid_parameter_handler`, `_set_thread_local_invalid_parameter_handler`](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md).
+The **`_get_invalid_parameter_handler`** function gets the currently set global invalid parameter handler. It returns a null pointer if no global invalid parameter handler was set. Similarly, the **`_get_thread_local_invalid_parameter_handler`** gets the current thread-local invalid parameter handler of the thread it is called on, or a null pointer if no handler was set. For information about how to set global and thread-local invalid parameter handlers, see [`_set_invalid_parameter_handler`, `_set_thread_local_invalid_parameter_handler`](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md).
 
 The returned invalid parameter handler function pointer has the following type:
 
@@ -49,9 +49,9 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_get_invalid_parameter_handler**, **_get_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h>|
+|**`_get_invalid_parameter_handler`**, **`_get_thread_local_invalid_parameter_handler`**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h>|
 
-The **_get_invalid_parameter_handler** and **_get_thread_local_invalid_parameter_handler** functions are Microsoft-specific. For compatibility information, see [Compatibility](../compatibility.md).
+The **`_get_invalid_parameter_handler`** and **`_get_thread_local_invalid_parameter_handler`** functions are Microsoft-specific. For compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

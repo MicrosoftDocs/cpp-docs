@@ -47,40 +47,40 @@ Size of *`buffer`*.
 Environment variable name.
 
 *`blockType`*\
-Requested type of the memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
+Requested type of the memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
 *`filename`*\
-Pointer to the name of the source file or **NULL**.
+Pointer to the name of the source file or `NULL`.
 
 *`lineNumber`*\
-Line number in source file or **NULL**.
+Line number in source file or `NULL`.
 
 ## Return value
 
 Zero on success, an error code on failure.
 
-These functions validate their parameters; if *`buffer`* or *`varname`* is **NULL**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL**, and return **EINVAL**.
+These functions validate their parameters; if *`buffer`* or *`varname`* is `NULL`, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions set `errno` to `EINVAL`, and return `EINVAL`.
 
-If these functions can't allocate enough memory, they set *`buffer`* to **NULL** and *`numberOfElements`* to 0, and return **ENOMEM**.
+If these functions can't allocate enough memory, they set *`buffer`* to `NULL` and *`numberOfElements`* to 0, and return `ENOMEM`.
 
 ## Remarks
 
-The **_dupenv_s_dbg** and **_wdupenv_s_dbg** functions are identical to **_dupenv_s** and **_wdupenv_s** except that, when **_DEBUG** is defined, these functions use the debug version of [`malloc`](malloc.md), [`_malloc_dbg`](malloc-dbg.md), to allocate memory for the value of the environment variable. For information on the debugging features of **_malloc_dbg**, see [`_malloc_dbg`](malloc-dbg.md).
+The **`_dupenv_s_dbg`** and **`_wdupenv_s_dbg`** functions are identical to `_dupenv_s` and `_wdupenv_s` except that, when `_DEBUG` is defined, these functions use the debug version of [`malloc`](malloc.md), [`_malloc_dbg`](malloc-dbg.md), to allocate memory for the value of the environment variable. For information on the debugging features of `_malloc_dbg`, see [`_malloc_dbg`](malloc-dbg.md).
 
-You don't need to call these functions explicitly in most cases. Instead, you can define the flag **_CRTDBG_MAP_ALLOC**. When **_CRTDBG_MAP_ALLOC** is defined, calls to **_dupenv_s** and **_wdupenv_s** are remapped to **_dupenv_s_dbg** and **_wdupenv_s_dbg**, respectively, with the *`blockType`* set to **_NORMAL_BLOCK**. Thus, you don't need to call these functions explicitly unless you want to mark the heap blocks as **_CLIENT_BLOCK**. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
+You don't need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_dupenv_s` and `_wdupenv_s` are remapped to **`_dupenv_s_dbg`** and **`_wdupenv_s_dbg`**, respectively, with the *`blockType`* set to `_NORMAL_BLOCK`. Thus, you don't need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tdupenv_s_dbg**|**_dupenv_s_dbg**|**_dupenv_s_dbg**|**_wdupenv_s_dbg**|
+|`_tdupenv_s_dbg`|**`_dupenv_s_dbg`**|**`_dupenv_s_dbg`**|**`_wdupenv_s_dbg`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_dupenv_s_dbg**|\<crtdbg.h>|
-|**_wdupenv_s_dbg**|\<crtdbg.h>|
+|**`_dupenv_s_dbg`**|\<crtdbg.h>|
+|**`_wdupenv_s_dbg`**|\<crtdbg.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -43,17 +43,17 @@ The locale to use.
 
 ## Return value
 
-Each of these routines returns nonzero if *`c`* is a particular representation of a punctuation character. **ispunct** returns a nonzero value for any printable character that is not a space character or a character for which **isalnum** is nonzero. **iswpunct** returns a nonzero value for any printable wide character that is neither the space wide character nor a wide character for which **iswalnum** is nonzero. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
+Each of these routines returns nonzero if *`c`* is a particular representation of a punctuation character. **`ispunct`** returns a nonzero value for any printable character that is not a space character or a character for which `isalnum` is nonzero. **`iswpunct`** returns a nonzero value for any printable wide character that is neither the space wide character nor a wide character for which `iswalnum` is nonzero. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
 
-The result of the test condition for the **ispunct** function depends on the **LC_CTYPE** category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the **_l** suffix use the current locale for any locale-dependent behavior; the versions that do have the **_l** suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
+The result of the test condition for the **`ispunct`** function depends on the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
-The behavior of **ispunct** and **_ispunct_l** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
+The behavior of **`ispunct`** and **`_ispunct_l`** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_** **istpunct**|**ispunct**|[`_ismbcpunct`](ismbcgraph-functions.md)|**iswpunct**|
+|`_istpunct`|**`ispunct`**|[`_ismbcpunct`](ismbcgraph-functions.md)|**`iswpunct`**|
 
 ## Remarks
 
@@ -63,10 +63,10 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**ispunct**|\<ctype.h>|
-|**iswpunct**|\<ctype.h> or \<wchar.h>|
-|**_ispunct_l**|\<ctype.h>|
-|**_iswpunct_l**|\<ctype.h> or \<wchar.h>|
+|**`ispunct`**|\<ctype.h>|
+|**`iswpunct`**|\<ctype.h> or \<wchar.h>|
+|**`_ispunct_l`**|\<ctype.h>|
+|**`_iswpunct_l`**|\<ctype.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

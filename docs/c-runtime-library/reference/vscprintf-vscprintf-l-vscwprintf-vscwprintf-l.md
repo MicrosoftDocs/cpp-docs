@@ -51,11 +51,11 @@ For more information, see [Format specification syntax](../format-specification-
 
 ## Return value
 
-**_vscprintf** returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **_vscwprintf** performs the same function for wide characters.
+**`_vscprintf`** returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **`_vscwprintf`** performs the same function for wide characters.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
+If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -68,17 +68,17 @@ Each *`argument`* (if any) is converted according to the corresponding format sp
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_vsctprintf**|**_vscprintf**|**_vscprintf**|**_vscwprintf**|
-|**_vsctprintf_l**|**_vscprintf_l**|**_vscprintf_l**|**_vscwprintf_l**|
+|`_vsctprintf`|**`_vscprintf`**|**`_vscprintf`**|**`_vscwprintf`**|
+|`_vsctprintf_l`|**`_vscprintf_l`**|**`_vscprintf_l`**|**`_vscwprintf_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_vscprintf**, **_vscprintf_l**|\<stdio.h>|
-|**_vscwprintf**, **_vscwprintf_l**|\<stdio.h> or \<wchar.h>|
+|**`_vscprintf`**, **`_vscprintf_l`**|\<stdio.h>|
+|**`_vscwprintf`**, **`_vscwprintf_l`**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

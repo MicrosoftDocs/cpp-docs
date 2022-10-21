@@ -31,7 +31,7 @@ Path of new working directory.
 
 ## Return value
 
-These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path couldn't be found, **`errno`** is set to **`ENOENT`**. If *`dirname`* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns -1.
+These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path couldn't be found, `errno` is set to `ENOENT`. If *`dirname`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.
 
 ## Remarks
 
@@ -49,7 +49,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mapping
 
-|`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**`_tchdir`**|**`_chdir`**|**`_chdir`**|**`_wchdir`**|
 

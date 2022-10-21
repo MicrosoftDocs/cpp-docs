@@ -60,18 +60,18 @@ Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ilogb** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **ilogb** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`ilogb`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`ilogb`** always takes and returns a **`double`**.
 
 If you use the \<tgmath.h> `ilogb()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
-Calling this function is similar to calling the equivalent **logb** function, then casting the return value to **`int`**.
+Calling this function is similar to calling the equivalent `logb` function, then casting the return value to **`int`**.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
-|**ilogb** macro | \<tgmath.h> ||
+|**`ilogb`**, **`ilogbf`**, **`ilogbl`**|\<math.h>|\<cmath>|
+|**`ilogb`** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

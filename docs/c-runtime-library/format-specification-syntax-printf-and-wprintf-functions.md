@@ -11,7 +11,7 @@ The various `printf` and `wprintf` functions take a format string and optional a
 
 A conversion specification consists of optional and required fields in this form:
 
-> **%**\[[*flags*](#flags)]\[[*width*](#width)]\[.[*precision*](#precision)]\[[*size*](#size)][*type*](#type)
+> **%**\[[*flags*](#flags)\]\[[*width*](#width)\]\[.[*precision*](#precision)\]\[[*size*](#size)\][*type*](#type)
 
 Each field of the conversion specification is a character or a number that signifies a particular format option or conversion specifier. The required *type* field specifies the kind of conversion to be applied to an argument. The optional *flags*, *width*, and *precision* fields control other format aspects such as leading spaces or zeroes, justification, and displayed precision. The *size* field specifies the size of the argument consumed and converted.
 

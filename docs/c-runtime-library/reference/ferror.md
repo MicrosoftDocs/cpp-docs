@@ -25,17 +25,17 @@ int ferror(
 ### Parameters
 
 *`stream`*\
-Pointer to **FILE** structure.
+Pointer to `FILE` structure.
 
 ## Return value
 
-If no error has occurred on *`stream`*, **ferror** returns 0. Otherwise, it returns a nonzero value. If stream is **NULL**, **ferror** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns 0.
+If no error has occurred on *`stream`*, **`ferror`** returns 0. Otherwise, it returns a nonzero value. If stream is `NULL`, **`ferror`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns 0.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **ferror** routine (implemented both as a function and as a macro) tests for a reading or writing error on the file associated with *`stream`*. If an error has occurred, the error indicator for the stream remains set until the stream is closed or rewound, or until **clearerr** is called against it.
+The **`ferror`** routine (implemented both as a function and as a macro) tests for a reading or writing error on the file associated with *`stream`*. If an error has occurred, the error indicator for the stream remains set until the stream is closed or rewound, or until `clearerr` is called against it.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**ferror**|\<stdio.h>|
+|**`ferror`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

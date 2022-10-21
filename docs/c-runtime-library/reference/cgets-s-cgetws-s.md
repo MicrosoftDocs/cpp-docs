@@ -61,15 +61,15 @@ The return value is zero if successful; otherwise, an error code if a failure oc
 
 |*`buffer`*|*`numberOfElements`*|*`pSizeRead`*|Return|Contents of *`buffer`*|
 |--------------|------------------------|-----------------|------------|--------------------------|
-|**NULL**|any|any|**EINVAL**|n/a|
-|not **NULL**|zero|any|**EINVAL**|not modified|
-|not **NULL**|any|**NULL**|**EINVAL**|zero-length string|
+|`NULL`|any|any|`EINVAL`|n/a|
+|not `NULL`|zero|any|`EINVAL`|not modified|
+|not `NULL`|any|`NULL`|`EINVAL`|zero-length string|
 
 ## Remarks
 
-**_cgets_s** and **_cgetws_s** read a string from the console and copy the string (with a null terminator) into *`buffer`*. **_cgetws_s** is the wide character version of the function; other than the character size, the behavior of these two functions is identical. The maximum size of the string to be read is passed in as the *`numberOfElements`* parameter. This size should include an extra character for the terminating null. The actual number of characters read is placed in *`pSizeRead`*.
+**`_cgets_s`** and **`_cgetws_s`** read a string from the console and copy the string (with a null terminator) into *`buffer`*. **`_cgetws_s`** is the wide character version of the function; other than the character size, the behavior of these two functions is identical. The maximum size of the string to be read is passed in as the *`numberOfElements`* parameter. This size should include an extra character for the terminating null. The actual number of characters read is placed in *`pSizeRead`*.
 
-If an error occurs during the operation or in the validating of the parameters, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL**, and **EINVAL** is returned.
+If an error occurs during the operation or in the validating of the parameters, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and `EINVAL` is returned.
 
 In C++, the use of these functions is simplified by template overloads. The overloads can infer buffer length automatically, which eliminates the need to specify a size argument. They can also automatically replace older, less-secure functions with their newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -79,16 +79,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_cgetts_s**|**_cgets_s**|**_cgets_s**|**_cgetws_s**|
+|`_cgetts_s`|**`_cgets_s`**|**`_cgets_s`**|**`_cgetws_s`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_cgets_s**|\<conio.h>|
-|**_cgetws_s**|\<conio.h> or \<wchar.h>|
+|**`_cgets_s`**|\<conio.h>|
+|**`_cgetws_s`**|\<conio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

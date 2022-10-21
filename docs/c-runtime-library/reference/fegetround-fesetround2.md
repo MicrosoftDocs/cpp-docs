@@ -31,9 +31,9 @@ The rounding mode to set, as one of the floating-point rounding macros. If the v
 
 ## Return value
 
-On success, **fegetround** returns the rounding mode as one of the floating point rounding macro values. It returns a negative value if the current rounding mode can't be determined.
+On success, **`fegetround`** returns the rounding mode as one of the floating point rounding macro values. It returns a negative value if the current rounding mode can't be determined.
 
-On success, **fesetround** returns 0. Otherwise, a non-zero value is returned.
+On success, **`fesetround`** returns 0. Otherwise, a non-zero value is returned.
 
 ## Remarks
 
@@ -41,12 +41,12 @@ Floating-point operations can use one of several rounding modes. These modes con
 
 |Macro|Description|
 |-----------|-----------------|
-|FE_DOWNWARD|Round towards negative infinity.|
-|FE_TONEAREST|Round towards the nearest.|
-|FE_TOWARDZERO|Round towards zero.|
-|FE_UPWARD|Round towards positive infinity.|
+|`FE_DOWNWARD`|Round towards negative infinity.|
+|`FE_TONEAREST`|Round towards the nearest.|
+|`FE_TOWARDZERO`|Round towards zero.|
+|`FE_UPWARD`|Round towards positive infinity.|
 
-The default behavior of FE_TONEAREST is to round results midway between representable values toward the nearest value with an even (0) least significant bit.
+The default behavior of `FE_TONEAREST` is to round results midway between representable values toward the nearest value with an even (0) least significant bit.
 
 The current rounding mode affects these operations:
 
@@ -54,13 +54,13 @@ The current rounding mode affects these operations:
 
 - The results of floating-point arithmetic operators outside of constant expressions.
 
-- The library rounding functions, such as **rint** and **nearbyint**.
+- The library rounding functions, such as `rint` and `nearbyint`.
 
 - Return values from standard library mathematical functions.
 
 The current rounding mode doesn't affect these operations:
 
-- The **trunc**, **ceil**, **floor**, and **lround** library functions.
+- The `trunc`, `ceil`, `floor`, and `lround` library functions.
 
 - Floating-point to integer implicit casts and conversions, which always round towards zero.
 
@@ -72,7 +72,7 @@ To use these functions, you must turn off floating-point optimizations that coul
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**fegetround**, **fesetround**|\<fenv.h>|\<cfenv>|
+|**`fegetround`**, **`fesetround`**|\<fenv.h>|\<cfenv>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

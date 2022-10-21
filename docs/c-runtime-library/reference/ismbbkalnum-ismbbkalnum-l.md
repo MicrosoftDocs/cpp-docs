@@ -36,7 +36,7 @@ Locale to use.
 
 ## Return value
 
-**_ismbbkalnum** returns a nonzero value if the integer *`c`* is a non-ASCII text symbol other than punctuation, or 0 if it is not. **_ismbbkalnum** uses the current locale for locale-dependent character information. **_ismbbkalnum_l** is identical to **_ismbbkalnum** except that it takes the locale as a parameter. For more information, see [Locale](../locale.md).
+**`_ismbbkalnum`** returns a nonzero value if the integer *`c`* is a non-ASCII text symbol other than punctuation, or 0 if it is not. **`_ismbbkalnum`** uses the current locale for locale-dependent character information. **`_ismbbkalnum_l`** is identical to **`_ismbbkalnum`** except that it takes the locale as a parameter. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
@@ -46,8 +46,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_ismbbkalnum**|\<mbctype.h>|
-|**_ismbbkalnum_l**|\<mbctype.h>|
+|**`_ismbbkalnum`**|\<mbctype.h>|
+|**`_ismbbkalnum_l`**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

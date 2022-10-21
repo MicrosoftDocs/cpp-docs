@@ -29,7 +29,7 @@ A string that specifies one of the valid transformations.
 
 ## Return value
 
-If the **LC_CTYPE** category of the current locale does not define a mapping whose name matches the property string *`property`*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [`towctrans`](towctrans.md).
+If the `LC_CTYPE` category of the current locale does not define a mapping whose name matches the property string *`property`*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [`towctrans`](towctrans.md).
 
 ## Remarks
 
@@ -46,7 +46,7 @@ The following pairs of calls have the same behavior in all locales, but it is po
 
 |Routine|Required Header|
 |-------------|---------------------|
-|**wctrans**|\<wctype.h>|
+|**`wctrans`**|\<wctype.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -12,7 +12,7 @@ ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
 ---
 # `_lock_file`
 
-Locks a **FILE** object to ensure consistency for threads accessing the **FILE** object concurrently.
+Locks a `FILE` object to ensure consistency for threads accessing the `FILE` object concurrently.
 
 ## Syntax
 
@@ -27,7 +27,7 @@ File handle.
 
 ## Remarks
 
-The **_lock_file** function locks the **FILE** object specified by *`file`*. The underlying file is not locked by **_lock_file**. Use [`_unlock_file`](unlock-file.md) to release the lock on the file. Calls to **_lock_file** and **_unlock_file** must be matched in a thread.
+The **`_lock_file`** function locks the `FILE` object specified by *`file`*. The underlying file is not locked by **`_lock_file`**. Use [`_unlock_file`](unlock-file.md) to release the lock on the file. Calls to **`_lock_file`** and **`_unlock_file`** must be matched in a thread.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -35,7 +35,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_lock_file**|\<stdio.h>|
+|**`_lock_file`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

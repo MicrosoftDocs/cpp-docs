@@ -31,7 +31,7 @@ The **`to`** functions and macro conversions are as follows.
 |`_toupper`|`_toupper`|Converts `c` to uppercase|
 |`towupper`|None|Converts c to corresponding wide-character uppercase letter|
 
-To use the function versions of the **to** routines that are also defined as macros, either remove the macro definitions with `#undef` directives or don't include CTYPE.H. If you use the /Za compiler option, the compiler uses the function version of `toupper` or `tolower`. Declarations of the `toupper` and `tolower` functions are in STDLIB.H.
+To use the function versions of the **`to`** routines that are also defined as macros, either remove the macro definitions with `#undef` directives or don't include CTYPE.H. If you use the /Za compiler option, the compiler uses the function version of `toupper` or `tolower`. Declarations of the `toupper` and `tolower` functions are in STDLIB.H.
 
 The `__toascii` routine sets all but the low-order 7 bits of `c` to 0, so that the converted value represents a character in the ASCII character set. If `c` already represents an ASCII character, `c` is unchanged.
 

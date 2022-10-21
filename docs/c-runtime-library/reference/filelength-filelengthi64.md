@@ -32,7 +32,7 @@ Target the file descriptor.
 
 ## Return value
 
-Both **_filelength** and **_filelengthi64** return the file length, in bytes, of the target file associated with *`fd`*. If *`fd`* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set **errno** to **EBADF**.
+Both **`_filelength`** and **`_filelengthi64`** return the file length, in bytes, of the target file associated with *`fd`*. If *`fd`* is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set `errno` to `EBADF`.
 
 ## Remarks
 
@@ -42,8 +42,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**_filelength**|\<io.h>|
-|**_filelengthi64**|\<io.h>|
+|**`_filelength`**|\<io.h>|
+|**`_filelengthi64`**|\<io.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

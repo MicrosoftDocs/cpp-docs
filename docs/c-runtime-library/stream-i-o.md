@@ -32,7 +32,7 @@ These functions process data in different sizes and formats, from single charact
 |[`_fputchar`, `_fputwchar`](./reference/fputc-fputwc.md)|Write character to **`stdout`** (function versions of **`putchar`** and **`putwchar`**)|
 |[`fputs`, `fputws`](./reference/fputs-fputws.md)|Write string to stream|
 |[`fread`](./reference/fread.md)|Read unformatted data from stream|
-|[`freopen`, `_wfreopen`](./reference/freopen-wfreopen.md), [`freopen_s`, `_wfreopen_s`](./reference/freopen-s-wfreopen-s.md)|Reassign **`FILE`** stream pointer to new file or device|
+|[`freopen`, `_wfreopen`](./reference/freopen-wfreopen.md), [`freopen_s`, `_wfreopen_s`](./reference/freopen-s-wfreopen-s.md)|Reassign `FILE` stream pointer to new file or device|
 |[`fscanf`, `fwscanf`](./reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md), [`fscanf_s`, `_fscanf_s_l`, `fwscanf_s`, `_fwscanf_s_l`](./reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)|Read formatted data from stream|
 |[`fseek`, `_fseeki64`](./reference/fseek-fseeki64.md)|Move file position to given location|
 |[`fsetpos`](./reference/fsetpos.md)|Set position indicator of stream|

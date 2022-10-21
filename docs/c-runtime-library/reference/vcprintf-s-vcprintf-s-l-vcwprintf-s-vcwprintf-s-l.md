@@ -56,30 +56,30 @@ For more information, see [Format specification syntax: `printf` and `wprintf` f
 
 The number of characters written, or a negative value if an output error occurs.
 
-Like the less secure versions of these functions, if *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). Additionally, unlike the less secure versions of these functions, if *`format`* does not specify a valid format, an invalid parameter exception is generated. If execution is allowed to continue, these functions return an error code and set **errno** to that error code. The default error code is **EINVAL** if a more specific value does not apply.
+Like the less secure versions of these functions, if *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). Additionally, unlike the less secure versions of these functions, if *`format`* does not specify a valid format, an invalid parameter exception is generated. If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value does not apply.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the console. **_vcwprintf_s** is the wide-character version of **_vcprintf_s**. It takes a wide-character string as an argument.
+Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the console. **`_vcwprintf_s`** is the wide-character version of **`_vcprintf_s`**. It takes a wide-character string as an argument.
 
-The versions of these functions that have the **_l** suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
+The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_vtcprintf_s**|**_vcprintf_s**|**_vcprintf_s**|**_vcwprintf_s**|
-|**_vtcprintf_s_l**|**_vcprintf_s_l**|**_vcprintf_s_l**|**_vcwprintf_s_l**|
+|`_vtcprintf_s`|**`_vcprintf_s`**|**`_vcprintf_s`**|**`_vcwprintf_s`**|
+|`_vtcprintf_s_l`|**`_vcprintf_s_l`**|**`_vcprintf_s_l`**|**`_vcwprintf_s_l`**|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|**_vcprintf_s**, **_vcprintf_s_l**|\<conio.h> and \<stdarg.h>|\<varargs.h>*|
-|**_vcwprintf_s**, **_vcwprintf_s_l**|\<conio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+|**`_vcprintf_s`**, **`_vcprintf_s_l`**|\<conio.h> and \<stdarg.h>|\<varargs.h>*|
+|**`_vcwprintf_s`**, **`_vcwprintf_s_l`**|\<conio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
 
 \* Required for UNIX V compatibility.
 

@@ -15,7 +15,7 @@ ms.assetid: e659a5a4-8afe-4033-8e72-17ffd4bdd8e9
 Compares strings by using locale-specific information.
 
 > [!IMPORTANT]
-> **_mbsncoll** and **_mbsncoll_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsncoll`** and **`_mbsncoll_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -76,30 +76,30 @@ Each of these functions returns a value that indicates the relationship of the s
 |0|*`string1`* is identical to *`string2`*.|
 |> 0|*`string1`* is greater than *`string2`*.|
 
-Each of these functions returns **_NLSCMPERROR**. To use **_NLSCMPERROR**, include either STRING.h or MBSTRING.h. **_wcsncoll** can fail if either *`string1`* or *`string2`* contains wide-character codes that are outside the domain of the collating sequence. When an error occurs, **_wcsncoll** may set **errno** to **EINVAL**. To check for an error on a call to **_wcsncoll**, set **errno** to 0 and then check **errno** after you call **_wcsncoll**.
+Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either STRING.h or MBSTRING.h. **`_wcsncoll`** can fail if either *`string1`* or *`string2`* contains wide-character codes that are outside the domain of the collating sequence. When an error occurs, **`_wcsncoll`** may set `errno` to `EINVAL`. To check for an error on a call to **`_wcsncoll`**, set `errno` to 0 and then check `errno` after you call **`_wcsncoll`**.
 
 ## Remarks
 
-Each of these functions performs a case-sensitive comparison of the first *`count`* characters in *`string1`* and *`string2`*, according to the code page that's currently in use. Use these functions only when there is a difference between the character set order and the lexicographic character order in the code page, and when this difference is of interest for the string comparison. The character set order is locale-dependent. The versions of these functions that don't have the **_l** suffix use the current locale, but the versions that have the **_l** suffix use the locale that's passed in. For more information, see [Locale](../locale.md).
+Each of these functions performs a case-sensitive comparison of the first *`count`* characters in *`string1`* and *`string2`*, according to the code page that's currently in use. Use these functions only when there is a difference between the character set order and the lexicographic character order in the code page, and when this difference is of interest for the string comparison. The character set order is locale-dependent. The versions of these functions that don't have the `_l` suffix use the current locale, but the versions that have the `_l` suffix use the locale that's passed in. For more information, see [Locale](../locale.md).
 
-All of these functions validate their parameters. If either *`string1`* or *`string2`* is a null pointer, or *`count`* is greater than **INT_MAX**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **_NLSCMPERROR** and set **errno** to **EINVAL**.
+All of these functions validate their parameters. If either *`string1`* or *`string2`* is a null pointer, or *`count`* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsnccoll**|**_strncoll**|**_mbsncoll**|**_wcsncoll**|
-|**_tcsncoll**|**_strncoll**|[`_mbsnbcoll`](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)|**_wcsncoll**|
+|`_tcsnccoll`|**`_strncoll`**|**`_mbsncoll`**|**`_wcsncoll`**|
+|`_tcsncoll`|**`_strncoll`**|[`_mbsnbcoll`](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)|**`_wcsncoll`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_strncoll**, **_strncoll_l**|\<string.h>|
-|**_wcsncoll**, **_wcsncoll_l**|\<wchar.h> or \<string.h>|
-|**_mbsncoll**, **_mbsncoll_l**|\<mbstring.h>|
+|**`_strncoll`**, **`_strncoll_l`**|\<string.h>|
+|**`_wcsncoll`**, **`_wcsncoll_l`**|\<wchar.h> or \<string.h>|
+|**`_mbsncoll`**, **`_mbsncoll_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -43,7 +43,7 @@ int _fwscanf_l(
 ### Parameters
 
 *`stream`*\
-Pointer to **`FILE`** structure.
+Pointer to `FILE` structure.
 
 *`format`*\
 Format-control string.
@@ -56,9 +56,9 @@ The locale to use.
 
 ## Return value
 
-Each of these functions returns the number of fields successfully converted and assigned; the return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is **`EOF`** for **`fscanf`** and **`fwscanf`**.
+Each of these functions returns the number of fields successfully converted and assigned; the return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is `EOF` for **`fscanf`** and **`fwscanf`**.
 
-These functions validate their parameters. If *`stream`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`EOF`** and set **`errno`** to **`EINVAL`**.
+These functions validate their parameters. If *`stream`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -70,7 +70,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_ftscanf`**|**`fscanf`**|**`fscanf`**|**`fwscanf`**|
 |**`_ftscanf_l`**|**`_fscanf_l`**|**`_fscanf_l`**|**`_fwscanf_l`**|

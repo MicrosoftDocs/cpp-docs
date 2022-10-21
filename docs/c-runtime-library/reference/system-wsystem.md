@@ -35,20 +35,20 @@ The command to be executed.
 
 ## Return value
 
-If *`command`* is **`NULL`** and the command interpreter is found, returns a nonzero value. If the command interpreter isn't found, returns 0 and sets **`errno`** to **`ENOENT`**. If *`command`* isn't **`NULL`**, **`system`** returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of -1 indicates an error, and **`errno`** is set to one of the following values:
+If *`command`* is `NULL` and the command interpreter is found, returns a nonzero value. If the command interpreter isn't found, returns 0 and sets `errno` to `ENOENT`. If *`command`* isn't `NULL`, **`system`** returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of -1 indicates an error, and `errno` is set to one of the following values:
 
 | Value | Description |
 |-|-|
-| **`E2BIG`** | The argument list (which is system-dependent) is too large. |
-| **`ENOENT`** | The command interpreter can't be found. |
-| **`ENOEXEC`** | The command-interpreter file can't be executed because the format isn't valid. |
-| **`ENOMEM`** | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call wasn't allocated correctly. |
+| `E2BIG` | The argument list (which is system-dependent) is too large. |
+| `ENOENT` | The command interpreter can't be found. |
+| `ENOEXEC` | The command-interpreter file can't be executed because the format isn't valid. |
+| `ENOMEM` | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call wasn't allocated correctly. |
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`system`** function passes *`command`* to the command interpreter, which executes the string as an operating-system command. **`system`** uses the **`COMSPEC`** and **`PATH`** environment variables to locate the command-interpreter file CMD.exe. If *`command`* is **`NULL`**, the function just checks whether the command interpreter exists.
+The **`system`** function passes *`command`* to the command interpreter, which executes the string as an operating-system command. **`system`** uses the `COMSPEC` and `PATH` environment variables to locate the command-interpreter file CMD.exe. If *`command`* is `NULL`, the function just checks whether the command interpreter exists.
 
 You must explicitly flush, by using [`fflush`](fflush.md) or [`_flushall`](flushall.md), or close any stream before you call **`system`**.
 

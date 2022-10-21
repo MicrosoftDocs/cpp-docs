@@ -31,7 +31,7 @@ The smaller of the two arguments.
 
 ## Remarks
 
-The **__min** macro compares two values and returns the value of the smaller one. The arguments can be of any numeric data type, signed or unsigned. Both arguments and the return value must be of the same data type.
+The **`__min`** macro compares two values and returns the value of the smaller one. The arguments can be of any numeric data type, signed or unsigned. Both arguments and the return value must be of the same data type.
 
 The argument returned is evaluated twice by the macro. This can lead to unexpected results if the argument is an expression that alters its value when it is evaluated, such as `*p++`.
 
@@ -39,7 +39,7 @@ The argument returned is evaluated twice by the macro. This can lead to unexpect
 
 |Routine|Required header|
 |-------------|---------------------|
-|**__min**|\<stdlib.h>|
+|**`__min`**|\<stdlib.h>|
 
 ## Example
 

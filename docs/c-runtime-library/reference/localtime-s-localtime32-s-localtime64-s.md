@@ -47,11 +47,11 @@ Zero if successful. The return value is an error code if there is a failure. Err
 
 |*`tmDest`*|*`sourceTime`*|Return value|Value in *`tmDest`*|Invokes invalid parameter handler|
 |-----------|------------|------------------|--------------------|---------------------------------------|
-|**`NULL`**|any|**`EINVAL`**|Not modified|Yes|
-|Not **`NULL`** (points to valid memory)|**`NULL`**|**`EINVAL`**|All fields set to -1|Yes|
-|Not **`NULL`** (points to valid memory)|less than 0 or greater than **`_MAX__TIME64_T`**|**`EINVAL`**|All fields set to -1|No|
+|`NULL`|any|`EINVAL`|Not modified|Yes|
+|Not `NULL` (points to valid memory)|`NULL`|`EINVAL`|All fields set to -1|Yes|
+|Not `NULL` (points to valid memory)|less than 0 or greater than `_MAX__TIME64_T`|`EINVAL`|All fields set to -1|No|
 
-In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
+In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
 ## Remarks
 
@@ -64,7 +64,7 @@ The **`localtime_s`** function converts a time stored as a [`time_t`](../standar
 
 **`_localtime64_s`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, January 18, 3001, coordinated universal time (UTC), whereas **`_localtime32_s`** represents dates through 23:59:59 January 18, 2038, UTC.
 
-**`localtime_s`** is an inline function which evaluates to **`_localtime64_s`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. Doing this will cause **`localtime_s`** to evaluate to **`_localtime32_s`**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
+**`localtime_s`** is an inline function which evaluates to **`_localtime64_s`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. Doing this will cause **`localtime_s`** to evaluate to **`_localtime32_s`**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
 
 The fields of the structure type [`tm`](../standard-types.md) store the following values, each of which is an **`int`**.
 
