@@ -53,7 +53,7 @@ Locale to use.
 
 ## Return value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it doesn't. If *`c`* <= 255 and there's a corresponding `_ismbb` routine (for example, **`_ismbcalnum`** corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition. Otherwise, they return 0. If *`c`* <= 255 and there's a corresponding `_ismbb` routine (for example, **`_ismbcalnum`** corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.
 
 ## Remarks
 

@@ -75,7 +75,7 @@ Each of the structure fields is of type **`int`**, as shown in the following tab
 
 **`_gmtime64_s`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas **`gmtime32_s`** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both these functions.
 
-**`gmtime_s`** is an inline function that evaluates to **`_gmtime64_s`** and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. `_USE_32BIT_TIME_T` causes **`gmtime_s`** to be in-lined to **`_gmtime32_s`**. We don't recommend you use it, because your application may fail after January 18, 2038, and because it isn't allowed on 64-bit platforms.
+**`gmtime_s`** is an inline function that evaluates to **`_gmtime64_s`** and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. `_USE_32BIT_TIME_T` causes **`gmtime_s`** to be inlined as **`_gmtime32_s`**. We don't recommend `_USE_32BIT_TIME_T`, because your application may fail after January 18, 2038, and because it isn't allowed on 64-bit platforms.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
