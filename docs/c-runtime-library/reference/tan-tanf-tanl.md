@@ -37,10 +37,10 @@ Angle in radians.
 
 The **`tan`** functions return the tangent of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
-|Input|SEH exception|**`Matherr`** exception|
+|Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-------------------------|
 |`± QNAN`,`IND`|none|`_DOMAIN`|
-|`± INF`|**INVALID**|`_DOMAIN`|
+|`± INF`|`INVALID`|`_DOMAIN`|
 
 ## Remarks
 

@@ -44,7 +44,7 @@ Locale to use.
 
 Each function returns the **`long`** value produced by interpreting the input characters as a number. The return value is `0L` for **`atol`** if the input can't be converted to a value of that type.
 
-If these functions overflow with large positive integral values, they return **`LONG_MAX`**. If the functions overflow with large negative integral values, **`LONG_MIN`** is returned. In all out-of-range cases, **`errno`** is set to **`ERANGE`**. If the parameter passed in is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return 0.
+If these functions overflow with large positive integral values, they return `LONG_MAX`. If the functions overflow with large negative integral values, `LONG_MIN` is returned. In all out-of-range cases, `errno` is set to `ERANGE`. If the parameter passed in is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return 0.
 
 ## Remarks
 
@@ -66,7 +66,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tstol`**|**`atol`**|**`atol`**|**`_wtol`**|
 |**`_ttol`**|**`atol`**|**`atol`**|**`_wtol`**|

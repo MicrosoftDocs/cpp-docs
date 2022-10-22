@@ -36,11 +36,11 @@ Zero (0) if the current working drive was changed successfully; otherwise, -1.
 
 ## Remarks
 
-If *`drive`* isn't in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, **errno** is set to **EACCES**, and **_doserrno** is set to **ERROR_INVALID_DRIVE**.
+If *`drive`* isn't in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the **`_chdrive`** function returns -1, `errno` is set to `EACCES`, and `_doserrno` is set to `ERROR_INVALID_DRIVE`.
 
-The **_chdrive** function isn't thread-safe because it depends on the **SetCurrentDirectory** function, which is itself not thread-safe. To use **_chdrive** safely in a multi-threaded application, you must provide your own thread synchronization. For more information, see [`SetCurrentDirectory`](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory).
+The **`_chdrive`** function isn't thread-safe because it depends on the `SetCurrentDirectory` function, which is itself not thread-safe. To use **`_chdrive`** safely in a multi-threaded application, you must provide your own thread synchronization. For more information, see [`SetCurrentDirectory`](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory).
 
-The **_chdrive** function changes only the current working drive;  **_chdir** changes the current working directory.
+The **`_chdrive`** function changes only the current working drive;  `_chdir` changes the current working directory.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -48,7 +48,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_chdrive**|\<direct.h>|
+|**`_chdrive`**|\<direct.h>|
 
 For more information, see [Compatibility](../compatibility.md).
 

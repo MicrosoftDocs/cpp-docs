@@ -35,7 +35,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_getdrive**|\<direct.h>|
+|**`_getdrive`**|\<direct.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

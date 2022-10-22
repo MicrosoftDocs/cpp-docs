@@ -32,7 +32,7 @@ int _fseeki64_nolock(
 ### Parameters
 
 *`stream`*\
-Pointer to the **FILE** structure.
+Pointer to the `FILE` structure.
 
 *`offset`*\
 Number of bytes from *`origin`*.
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**_fseek_nolock**, **_fseeki64_nolock**|\<stdio.h>|
+|**`_fseek_nolock`**, **`_fseeki64_nolock`**|\<stdio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

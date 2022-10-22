@@ -45,13 +45,13 @@ The inverse hyperbolic sine of *`z`*, in radians. The result is unbound along th
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **casinh** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **casinh** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`casinh`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`casinh`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**casinh**,               **casinhf**, **casinhl**|\<complex.h>|\<ccomplex>|
+|**`casinh`**,               **`casinhf`**, **`casinhl`**|\<complex.h>|\<ccomplex>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

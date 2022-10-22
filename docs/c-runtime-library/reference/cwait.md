@@ -30,22 +30,22 @@ intptr_t _cwait(
 ### Parameters
 
 *`termstat`*\
-Pointer to a buffer where the result code of the specified process will be stored, or **`NULL`**.
+Pointer to a buffer where the result code of the specified process will be stored, or `NULL`.
 
 *`procHandle`*\
-The handle to the process to wait on (that is, the process that has to terminate before **_cwait** can return).
+The handle to the process to wait on (that is, the process that has to terminate before **`_cwait`** can return).
 
 *`action`*\
-**`NULL`**: Ignored by Windows operating system applications; for other applications: action code to perform on *`procHandle`*.
+`NULL`: Ignored by Windows operating system applications; for other applications: action code to perform on *`procHandle`*.
 
 ## Return value
 
-When the specified process has successfully completed, returns the handle of the specified process and sets *`termstat`* to the result code that's returned by the specified process. Otherwise, returns -1 and sets **`errno`** as follows.
+When the specified process has successfully completed, returns the handle of the specified process and sets *`termstat`* to the result code that's returned by the specified process. Otherwise, returns -1 and sets `errno` as follows.
 
 |Value|Description|
 |-----------|-----------------|
-|**`ECHILD`**|No specified process exists, *`procHandle`* is invalid, or the call to the [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) or [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API failed.|
-|**`EINVAL`**|*`action`* is invalid.|
+|`ECHILD`|No specified process exists, *`procHandle`* is invalid, or the call to the [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) or [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API failed.|
+|`EINVAL`|*`action`* is invalid.|
 
 For more information about these and other return codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -53,7 +53,7 @@ For more information about these and other return codes, see [`errno, _doserrno,
 
 The **`_cwait`** function waits for the termination of the process ID of the specified process that's provided by *`procHandle`*. The value of *`procHandle`* that's passed to **`_cwait`** should be the value that's returned by the call to the [`_spawn`](../spawn-wspawn-functions.md) function that created the specified process. If the process ID terminates before **`_cwait`** is called, **`_cwait`** returns immediately. **`_cwait`** can be used by any process to wait for any other known process for which a valid handle (*`procHandle`*) exists.
 
-*`termstat`* points to a buffer where the return code of the specified process will be stored. The value of *`termstat`* indicates whether the specified process terminated normally by calling the Windows [`ExitProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API. **`ExitProcess`** is called internally if the specified process calls **`exit`** or **`_exit`**, returns from **`main`**, or reaches the end of **`main`**. For more information about the value that's passed back through *`termstat`*, see [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess). If **`_cwait`** is called by using a **`NULL`** value for *`termstat`*, the return code of the specified process isn't stored.
+*`termstat`* points to a buffer where the return code of the specified process will be stored. The value of *`termstat`* indicates whether the specified process terminated normally by calling the Windows [`ExitProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API. `ExitProcess` is called internally if the specified process calls **`exit`** or **`_exit`**, returns from **`main`**, or reaches the end of **`main`**. For more information about the value that's passed back through *`termstat`*, see [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess). If **`_cwait`** is called by using a `NULL` value for *`termstat`*, the return code of the specified process isn't stored.
 
 The *`action`* parameter is ignored by the Windows operating system because parent-child relationships aren't implemented in these environments.
 

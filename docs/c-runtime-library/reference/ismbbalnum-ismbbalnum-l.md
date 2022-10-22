@@ -35,13 +35,13 @@ Locale to use.
 
 ## Return value
 
-**_ismbbalnum** returns a nonzero value if the expression:
+**`_ismbbalnum`** returns a nonzero value if the expression:
 
 `isalnum(c) || _ismbbkalnum(c)`
 
 is nonzero for *`c`*, or 0 if it is not.
 
-The version of this function with the **_l** suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
+The version of this function with the `_l` suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
 
 ## Remarks
 
@@ -51,8 +51,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_ismbbalnum**|\<mbctype.h>|
-|**_ismbbalnum_l**|\<mbctype.h>|
+|**`_ismbbalnum`**|\<mbctype.h>|
+|**`_ismbbalnum_l`**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -12,7 +12,7 @@ ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
 ---
 # `_rotl`, `_rotl64`, `_rotr`, `_rotr64`
 
-Rotates bits to the left (**_rotl**) or right (**_rotr**).
+Rotates bits to the left (**`_rotl`**) or right (**`_rotr`**).
 
 ## Syntax
 
@@ -50,14 +50,14 @@ The rotated value. There's no error return.
 
 ## Remarks
 
-The **_rotl** and **_rotr** functions rotate the unsigned *`value`* by *`shift`* bits. **_rotl** rotates the value left. **_rotr** rotates the value right. Both functions wrap bits rotated off one end of *`value`* to the other end.
+The **`_rotl`** and **`_rotr`** functions rotate the unsigned *`value`* by *`shift`* bits. **`_rotl`** rotates the value left. **`_rotr`** rotates the value right. Both functions wrap bits rotated off one end of *`value`* to the other end.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_rotl**, **_rotl64**|\<stdlib.h>|
-|**_rotr**, **_rotr64**|\<stdlib.h>|
+|**`_rotl`**, **`_rotl64`**|\<stdlib.h>|
+|**`_rotr`**, **`_rotr64`**|\<stdlib.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

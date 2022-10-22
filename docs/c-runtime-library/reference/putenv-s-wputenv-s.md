@@ -45,10 +45,10 @@ Returns 0 if successful, or an error code.
 
 |*`varname`*|*`value_string`*|Return value|
 |------------|-------------|------------------|
-|**`NULL`**|any|**`EINVAL`**|
-|any|**`NULL`**|**`EINVAL`**|
+|`NULL`|any|`EINVAL`|
+|any|`NULL`|`EINVAL`|
 
-If one of the error conditions occurs, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`EINVAL`** and set **`errno`** to **`EINVAL`**.
+If one of the error conditions occurs, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -58,7 +58,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tputenv_s`**|**`_putenv_s`**|**`_putenv_s`**|**`_wputenv_s`**|
 

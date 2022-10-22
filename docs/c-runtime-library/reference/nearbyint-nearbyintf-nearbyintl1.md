@@ -41,7 +41,7 @@ If successful, returns *`x`*, rounded to the nearest integer, using the current 
 |*`x`* = ±0|±0, unmodified|
 |*`x`* = NaN|NaN|
 
-Errors are not reported through [`_matherr`](matherr.md); specifically, this function does not report any **FE_INEXACT** exceptions.
+Errors are not reported through [`_matherr`](matherr.md); specifically, this function does not report any `FE_INEXACT` exceptions.
 
 ## Remarks
 
@@ -49,7 +49,7 @@ The primary difference between this function and [`rint`](rint-rintf-rintl.md) i
 
 Because the maximum floating-point values are exact integers, this function will never overflow by itself; rather, the output may overflow the return value, depending on which version of the function you use.
 
-C++ allows overloading, so you can call overloads of **nearbyint** that take and return **`float`** or **`long double`** parameters. In a C program, unless you're using the \<tgmath.h> macro to call this function, **nearbyint** always takes two double values and returns a double value.
+C++ allows overloading, so you can call overloads of **`nearbyint`** that take and return **`float`** or **`long double`** parameters. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`nearbyint`** always takes two double values and returns a double value.
 
 If you use the \<tgmath.h> `nearbyint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -59,8 +59,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**nearbyint**, **nearbyintf**, **nearbyintl**|\<math.h>|\<cmath> or \<math.h>|
-|**nearbyint** macro | \<tgmath.h> ||
+|**`nearbyint`**, **`nearbyintf`**, **`nearbyintl`**|\<math.h>|\<cmath> or \<math.h>|
+|**`nearbyint`** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

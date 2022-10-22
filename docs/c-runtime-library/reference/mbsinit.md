@@ -29,11 +29,11 @@ A pointer to an [`mbstate_t`](../standard-types.md) variable.
 
 ## Return value
 
-Nonzero if *`ps`* is **NULL** or if not in the middle of a conversion.
+Nonzero if *`ps`* is `NULL` or if not in the middle of a conversion.
 
 ## Remarks
 
-When using one of the ANSI functions that takes an **mbstate_t** pointer, passing the address of your **mbstate_t** will return information about whether the last byte in the buffer was converted.
+When using one of the ANSI functions that takes an `mbstate_t` pointer, passing the address of your `mbstate_t` will return information about whether the last byte in the buffer was converted.
 
 The appropriate code page needs to be installed to support your multibyte characters.
 

@@ -15,7 +15,7 @@ ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6
 Returns the index of the first occurrence in a string, of a character that belongs to a set of characters.
 
 > [!IMPORTANT]
-> **_mbschr** and **_mbschr_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbschr` and `_mbschr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -58,28 +58,28 @@ No return value is reserved to indicate an error.
 
 ## Remarks
 
-**wcscspn** and **_mbscspn** are wide-character and multibyte-character versions of **strcspn**. The arguments of **wcscspn** are wide-character strings; those of **_mbscspn** are multibyte-character strings.
+**`wcscspn`** and **`_mbscspn`** are wide-character and multibyte-character versions of **`strcspn`**. The arguments of **`wcscspn`** are wide-character strings; those of **`_mbscspn`** are multibyte-character strings.
 
-**_mbscspn** validates its parameters. If either *`str`* or *`strCharSet`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **errno** to **EINVAL**. **strcspn** and **wcscspn** do not validate their parameters. These three functions behave identically otherwise.
+**`_mbscspn`** validates its parameters. If either *`str`* or *`strCharSet`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EINVAL`. **`strcspn`** and **`wcscspn`** do not validate their parameters. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcscspn**|**strcspn**|**_mbscspn**|**wcscspn**|
-|n/a|n/a|**_mbscspn_l**|n/a|
+|`_tcscspn`|**`strcspn`**|**`_mbscspn`**|**`wcscspn`**|
+|n/a|n/a|**`_mbscspn_l`**|n/a|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**strcspn**|\<string.h>|
-|**wcscspn**|\<string.h> or \<wchar.h>|
-|**_mbscspn**, **_mbscspn_l**|\<mbstring.h>|
+|**`strcspn`**|\<string.h>|
+|**`wcscspn`**|\<string.h> or \<wchar.h>|
+|**`_mbscspn`**, **`_mbscspn_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

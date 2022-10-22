@@ -37,11 +37,11 @@ The integer expression *`pmode`* contains one or both of the following manifest 
 
 | *`pmode`* | Description |
 |--|--|
-| **`_S_IWRITE`** | Writing permitted. |
-| **`_S_IREAD`** | Reading permitted. |
+| `_S_IWRITE` | Writing permitted. |
+| `_S_IREAD` | Reading permitted. |
 | **`_S_IREAD | _S_IWRITE`** | Reading and writing permitted. |
 
-When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`pmode`* argument is **`_S_IREAD`**, reading isn't allowed (the file is write-only). If the *`pmode`* argument is **`_S_IWRITE`**, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask`** has no effect on the file's modes.
+When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`pmode`* argument is `_S_IREAD`, reading isn't allowed (the file is write-only). If the *`pmode`* argument is `_S_IWRITE`, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask`** has no effect on the file's modes.
 
 If *`pmode`* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function ignores them.
 

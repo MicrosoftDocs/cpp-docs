@@ -45,7 +45,7 @@ Intended result of cast.
 
 ## Return value
 
-Pointer to the appropriate subobject, if successful; otherwise, **NULL**.
+Pointer to the appropriate subobject, if successful; otherwise, `NULL`.
 
 ## Exceptions
 

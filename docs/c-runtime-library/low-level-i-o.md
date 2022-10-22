@@ -16,7 +16,7 @@ Low-level routines can access the standard streams opened at program startup usi
 |**`stdout`**|1|
 |**`stderr`**|2|
 
-Low-level I/O routines set the [`errno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) global variable when an error occurs. You must include `STDIO.H` when you use low-level functions only if your program requires a constant that is defined in `STDIO.H`, such as the end-of-file indicator (**`EOF`**).
+Low-level I/O routines set the [`errno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) global variable when an error occurs. You must include `STDIO.H` when you use low-level functions only if your program requires a constant that is defined in `STDIO.H`, such as the end-of-file indicator (`EOF`).
 
 ## Low-level I/O functions
 

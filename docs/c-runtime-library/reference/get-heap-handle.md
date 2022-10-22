@@ -34,7 +34,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_get_heap_handle**|\<malloc.h>|
+|**`_get_heap_handle`**|\<malloc.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

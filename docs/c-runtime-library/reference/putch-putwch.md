@@ -36,28 +36,28 @@ Character to be output.
 
 ## Return value
 
-Returns *`c`* if successful. If **_putch** fails, it returns **EOF**; if **_putwch** fails, it returns **WEOF**.
+Returns *`c`* if successful. If **`_putch`** fails, it returns `EOF`; if **`_putwch`** fails, it returns `WEOF`.
 
 ## Remarks
 
-These functions write the character *`c`* directly, without buffering, to the console. In Windows NT, **_putwch** writes Unicode characters using the current console locale setting.
+These functions write the character *`c`* directly, without buffering, to the console. In Windows NT, **`_putwch`** writes Unicode characters using the current console locale setting.
 
-The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. For more information, see **_putch_nolock**, **_putwch_nolock**.
+The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. For more information, see [`_putch_nolock`, `_putwch_nolock`](./putch-nolock-putwch-nolock.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_puttch**|**_putch**|**_putch**|**_putwch**|
+|`_puttch`|**`_putch`**|**`_putch`**|**`_putwch`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_putch**|\<conio.h>|
-|**_putwch**|\<conio.h>|
+|**`_putch`**|\<conio.h>|
+|**`_putwch`**|\<conio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

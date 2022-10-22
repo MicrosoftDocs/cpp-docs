@@ -12,7 +12,7 @@ ms.assetid: 90e67402-08e9-4b2a-962c-66a8afd3ccb4
 ---
 # `terminate` (CRT)
 
-Calls [`abort`](abort.md) or a function you specify using **set_terminate**.
+Calls [`abort`](abort.md) or a function you specify using `set_terminate`.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ void terminate( void );
 
 ## Remarks
 
-The **terminate** function is used with C++ exception handling and is called in the following cases:
+The **`terminate`** function is used with C++ exception handling and is called in the following cases:
 
 - A matching catch handler cannot be found for a thrown C++ exception.
 
@@ -30,7 +30,7 @@ The **terminate** function is used with C++ exception handling and is called in 
 
 - The stack is corrupted after throwing an exception.
 
-**terminate** calls [`abort`](abort.md) by default. You can change this default by writing your own termination function and calling **set_terminate** with the name of your function as its argument. **terminate** calls the last function given as an argument to **set_terminate**. For more information, see [Unhandled C++ Exceptions](../../cpp/unhandled-cpp-exceptions.md).
+**`terminate`** calls [`abort`](abort.md) by default. You can change this default by writing your own termination function and calling `set_terminate` with the name of your function as its argument. **`terminate`** calls the last function given as an argument to `set_terminate`. For more information, see [Unhandled C++ Exceptions](../../cpp/unhandled-cpp-exceptions.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -38,7 +38,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**terminate**|\<eh.h>|
+|**`terminate`**|\<eh.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

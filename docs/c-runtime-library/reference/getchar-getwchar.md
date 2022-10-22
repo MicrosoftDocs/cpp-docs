@@ -24,7 +24,7 @@ wint_t getwchar();
 
 Returns the character read. These functions wait for input and don't return until input is available.
 
-To indicate a read error or end-of-file condition, **`getchar`** returns **`EOF`**, and **`getwchar`** returns **`WEOF`**. For **`getchar`**, use **`ferror`** or **`feof`** to check for an error or for end of file.
+To indicate a read error or end-of-file condition, **`getchar`** returns `EOF`, and **`getwchar`** returns `WEOF`. For **`getchar`**, use **`ferror`** or **`feof`** to check for an error or for end of file.
 
 ## Remarks
 
@@ -36,9 +36,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**`_gettchar`**|**`getchar`**|**`getchar`**|**`getwchar`**|
+|`_gettchar`|**`getchar`**|**`getchar`**|**`getwchar`**|
 
 ## Requirements
 

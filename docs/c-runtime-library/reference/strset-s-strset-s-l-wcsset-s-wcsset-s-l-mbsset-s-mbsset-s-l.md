@@ -15,7 +15,7 @@ ms.assetid: dceb2909-6b41-4792-acb7-888e45bb8b35
 Sets characters of a string to a character. These versions of [`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbsset_s** and **_mbsset_s_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsset_s`** and **`_mbsset_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -73,13 +73,13 @@ Locale to use.
 
 Zero if successful, otherwise an error code.
 
-These functions validate their arguments. If *`str`* is a null pointer, or the *`numberOfElements`* argument is less than or equal to 0, or the block passed in is not null-terminated, then the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL**.
+These functions validate their arguments. If *`str`* is a null pointer, or the *`numberOfElements`* argument is less than or equal to 0, or the block passed in is not null-terminated, then the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
-The **_strset_s** function sets all the characters of *`str`* to *`c`* (converted to **`char`**), except the terminating null character. **_wcsset_s** and **_mbsset_s** are wide-character and multibyte-character versions of **_strset_s**. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The **`_strset_s`** function sets all the characters of *`str`* to *`c`* (converted to **`char`**), except the terminating null character. **`_wcsset_s`** and **`_mbsset_s`** are wide-character and multibyte-character versions of **`_strset_s`**. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
@@ -87,20 +87,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsset_s**|**_strset_s**|**_mbsset_s**|**_wcsset_s**|
-|**_tcsset_s_l**|**_strset_s_l**|**_mbsset_s_l**|**_wcsset_s_l**|
+|`_tcsset_s`|**`_strset_s`**|**`_mbsset_s`**|**`_wcsset_s`**|
+|`_tcsset_s_l`|**`_strset_s_l`**|**`_mbsset_s_l`**|**`_wcsset_s_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_strset_s**|\<string.h>|
-|**_strset_s_l**|\<tchar.h>|
-|**_wcsset_s**|\<string.h> or \<wchar.h>|
-|**_wcsset_s_l**|\<tchar.h>|
-|**_mbsset_s**, **_mbsset_s_l**|\<mbstring.h>|
+|**`_strset_s`**|\<string.h>|
+|**`_strset_s_l`**|\<tchar.h>|
+|**`_wcsset_s`**|\<string.h> or \<wchar.h>|
+|**`_wcsset_s_l`**|\<tchar.h>|
+|**`_mbsset_s`**, **`_mbsset_s_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

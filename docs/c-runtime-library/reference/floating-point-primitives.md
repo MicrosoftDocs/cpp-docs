@@ -36,11 +36,11 @@ These floating-point primitives implement the C versions of the CRT macro [`fpcl
 
 |Value|Description|
 |-----------|-----------------|
-| **FP_NAN** | A quiet, signaling, or indeterminate NaN |
-| **FP_INFINITE** | A positive or negative infinity |
-| **FP_NORMAL** | A positive or negative normalized non-zero value |
-| **FP_SUBNORMAL** | A positive or negative subnormal (denormalized) value |
-| **FP_ZERO** | A positive or negative zero value |
+| `FP_NAN` | A quiet, signaling, or indeterminate NaN |
+| `FP_INFINITE` | A positive or negative infinity |
+| `FP_NORMAL` | A positive or negative normalized non-zero value |
+| `FP_SUBNORMAL` | A positive or negative subnormal (denormalized) value |
+| `FP_ZERO` | A positive or negative zero value |
 
 For more detail, you can use the Microsoft-specific [`_fpclass`, `_fpclassf`](fpclass-fpclassf.md) functions. Use the [`fpclassify`](fpclassify.md) macro or function for portability.
 
@@ -84,9 +84,9 @@ These floating-point primitives take two arguments, *`x`* and *`y`*, and return 
 
 | Value | Description |
 |------------|-----------------|
-| **_FP_LT** | *`x`* can be considered less than *`y`* |
-| **_FP_EQ** | *`x`* can be considered equal to *`y`* |
-| **_FP_GT** | *`x`* can be considered greater than *`y`* |
+| `_FP_LT` | *`x`* can be considered less than *`y`* |
+| `_FP_EQ` | *`x`* can be considered equal to *`y`* |
+| `_FP_GT` | *`x`* can be considered greater than *`y`* |
 
 These primitives implement the [`isgreater`, `isgreaterequal`, `isless`, `islessequal`, `islessgreater`, and `isunordered`](floating-point-ordering.md) macros and functions in the CRT.
 
@@ -111,11 +111,11 @@ These floating-point primitives implement the C++ versions of the CRT function [
 
 |Value|Description|
 |-----------|-----------------|
-| **FP_NAN** | A quiet, signaling, or indeterminate NaN |
-| **FP_INFINITE** | A positive or negative infinity |
-| **FP_NORMAL** | A positive or negative normalized non-zero value |
-| **FP_SUBNORMAL** | A positive or negative subnormal (denormalized) value |
-| **FP_ZERO** | A positive or negative zero value |
+| `FP_NAN` | A quiet, signaling, or indeterminate NaN |
+| `FP_INFINITE` | A positive or negative infinity |
+| `FP_NORMAL` | A positive or negative normalized non-zero value |
+| `FP_SUBNORMAL` | A positive or negative subnormal (denormalized) value |
+| `FP_ZERO` | A positive or negative zero value |
 
 For more detail, you can use the Microsoft-specific [`_fpclass`, `_fpclassf`](fpclass-fpclassf.md) functions. Use the [`fpclassify`](fpclassify.md) function for portability.
 
@@ -139,7 +139,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives take a pointer to a floating-point value *`px`* and an exponent value *`exp`*, and remove the fractional part of the floating-point value below the given exponent, if possible. The value returned is the result of **fpclassify** on the input value in *`px`* if it's a NaN or infinity, and on the output value in *`px`* otherwise.
+These floating-point primitives take a pointer to a floating-point value *`px`* and an exponent value *`exp`*, and remove the fractional part of the floating-point value below the given exponent, if possible. The value returned is the result of `fpclassify` on the input value in *`px`* if it's a NaN or infinity, and on the output value in *`px`* otherwise.
 
 ## _dscale, _ldscale, _fdscale
 
@@ -161,7 +161,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives take a pointer to a floating-point value *`px`* and an exponent value *`exp`*, and scale the value in *`px`* by 2<sup>*`exp`*</sup>, if possible. The value returned is the result of **fpclassify** on the input value in *`px`* if it's a NaN or infinity, and on the output value in *`px`* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
+These floating-point primitives take a pointer to a floating-point value *`px`* and an exponent value *`exp`*, and scale the value in *`px`* by 2<sup>*`exp`*</sup>, if possible. The value returned is the result of `fpclassify` on the input value in *`px`* if it's a NaN or infinity, and on the output value in *`px`* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
 
 ## _dunscale, _ldunscale, _fdunscale
 
@@ -183,7 +183,7 @@ Pointer to a floating-point argument.
 
 ### Remarks
 
-These floating-point primitives break down the floating-point value pointed at by *`px`* into a significand (mantissa) and an exponent, if possible. The significand is scaled such that the absolute value is greater than or equal to 0.5 and less than 1.0. The exponent is the value *`n`*, where the original floating-point value is equal to the scaled significand times 2<sup>n</sup>. This integer exponent *`n`* is stored at the location pointed to by *`pexp`*. The value returned is the result of **fpclassify** on the input value in *`px`* if it's a NaN or infinity, and on the output value otherwise. For portability, prefer the [`frexp`, `frexpf`, `frexpl`](frexp.md) functions.
+These floating-point primitives break down the floating-point value pointed at by *`px`* into a significand (mantissa) and an exponent, if possible. The significand is scaled such that the absolute value is greater than or equal to 0.5 and less than 1.0. The exponent is the value *`n`*, where the original floating-point value is equal to the scaled significand times 2<sup>n</sup>. This integer exponent *`n`* is stored at the location pointed to by *`pexp`*. The value returned is the result of `fpclassify` on the input value in *`px`* if it's a NaN or infinity, and on the output value otherwise. For portability, prefer the [`frexp`, `frexpf`, `frexpl`](frexp.md) functions.
 
 ## _dexp, _ldexp, _fdexp
 
@@ -208,7 +208,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives construct a floating-point value in the location pointed at by *`px`* equal to *`y`* * 2<sup>exp</sup>. The value returned is the result of **fpclassify** on the input value in *`y`* if it's a NaN or infinity, and on the output value in *`px`* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
+These floating-point primitives construct a floating-point value in the location pointed at by *`px`* equal to *`y`* * 2<sup>exp</sup>. The value returned is the result of `fpclassify` on the input value in *`y`* if it's a NaN or infinity, and on the output value in *`px`* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
 
 ## _dnorm, _fdnorm
 
@@ -226,7 +226,7 @@ Pointer to the bitwise representation of a floating-point value expressed as an 
 
 ### Remarks
 
-These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **`unsigned short`** through the `_double_val`, `_ldouble_val`, or `_float_val` type-punning union declared in math.h. The return value is the result of **fpclassify** on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
+These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **`unsigned short`** through the `_double_val`, `_ldouble_val`, or `_float_val` type-punning union declared in math.h. The return value is the result of `fpclassify` on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
 
 ## _dpoly, _ldpoly, _fdpoly
 

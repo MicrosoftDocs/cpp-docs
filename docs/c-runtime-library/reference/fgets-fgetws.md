@@ -38,11 +38,11 @@ Storage location for data.
 Maximum number of characters to read.
 
 *`stream`*\
-Pointer to **`FILE`** structure.
+Pointer to `FILE` structure.
 
 ## Return value
 
-Each of these functions returns *`str`*. **`NULL`** is returned to indicate an error or an end-of-file condition. Use **`feof`** or **`ferror`** to determine whether an error occurred. If *`str`* or *`stream`* is a null pointer, or *`numChars`* is less than or equal to zero, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`errno`** is set to **`EINVAL`** and the function returns **`NULL`**.
+Each of these functions returns *`str`*. `NULL` is returned to indicate an error or an end-of-file condition. Use **`feof`** or **`ferror`** to determine whether an error occurred. If *`str`* or *`stream`* is a null pointer, or *`numChars`* is less than or equal to zero, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

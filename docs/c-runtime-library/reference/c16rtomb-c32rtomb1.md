@@ -38,17 +38,17 @@ Pointer to an array to store the converted UTF-8 multibyte character.
 A wide character to convert.
 
 *`state`*\
-A pointer to an **mbstate_t** object.
+A pointer to an `mbstate_t` object.
 
 ## Return value
 
-The number of bytes stored in array object *`mbchar`*, including any shift sequences. If *`wchar`* isn't a valid wide character, the value (**size_t**)(-1) is returned, **errno** is set to **EILSEQ**, and the value of *`state`* is unspecified.
+The number of bytes stored in array object *`mbchar`*, including any shift sequences. If *`wchar`* isn't a valid wide character, the value (`size_t`)(-1) is returned, `errno` is set to `EILSEQ`, and the value of *`state`* is unspecified.
 
 ## Remarks
 
-The **c16rtomb** function converts the UTF-16 LE character *`wchar`* to the equivalent UTF-8 multibyte narrow character sequence. If *`mbchar`* isn't a null pointer, the function stores the converted sequence in the array object pointed to by *`mbchar`*. Up to **MB_CUR_MAX** bytes are stored in *`mbchar`*, and *`state`* is set to the resulting multibyte shift state.
+The **`c16rtomb`** function converts the UTF-16 LE character *`wchar`* to the equivalent UTF-8 multibyte narrow character sequence. If *`mbchar`* isn't a null pointer, the function stores the converted sequence in the array object pointed to by *`mbchar`*. Up to `MB_CUR_MAX` bytes are stored in *`mbchar`*, and *`state`* is set to the resulting multibyte shift state.
 
-If *`wchar`* is a null wide character, a sequence required to restore the initial shift state is stored, if needed, followed by the null character. *`state`* is set to the initial conversion state. The **c32rtomb** function is identical, but converts a UTF-32 character.
+If *`wchar`* is a null wide character, a sequence required to restore the initial shift state is stored, if needed, followed by the null character. *`state`* is set to the initial conversion state. The **`c32rtomb`** function is identical, but converts a UTF-32 character.
 
 If *`mbchar`* is a null pointer, the behavior is equivalent to a call to the function that substitutes an internal buffer for *`mbchar`* and a wide null character for *`wchar`*.
 
@@ -60,7 +60,7 @@ To convert UTF-16 characters into non-UTF-8 multibyte characters, use the [`wcst
 
 |Routine|Required header|
 |-------------|---------------------|
-|**c16rtomb**, **c32rtomb**|C, C++: \<uchar.h>|
+|**`c16rtomb`**, **`c32rtomb`**|C, C++: \<uchar.h>|
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

@@ -31,9 +31,9 @@ The previous threshold value.
 
 ## Remarks
 
-The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This fill character helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **_CrtSetDebugFillThreshold** to disable buffer-filling for buffers larger than the *`newThreshold`* threshold. A *`newThreshold`* value of 0 disables it for all buffers.
+The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This fill character helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **`_CrtSetDebugFillThreshold`** to disable buffer-filling for buffers larger than the *`newThreshold`* threshold. A *`newThreshold`* value of 0 disables it for all buffers.
 
-The default threshold is **SIZE_T_MAX**.
+The default threshold is `SIZE_T_MAX`.
 
 Here's a list of the affected functions:
 
@@ -89,7 +89,7 @@ Here's a list of the affected functions:
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_CrtSetDebugFillThreshold**|\<crtdbg.h>|
+|**`_CrtSetDebugFillThreshold`**|\<crtdbg.h>|
 
 This function is Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

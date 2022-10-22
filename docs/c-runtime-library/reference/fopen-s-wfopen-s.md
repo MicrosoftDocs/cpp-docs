@@ -47,13 +47,13 @@ Zero if successful; an error code on failure. For more information about these e
 
 | *`pFile`* | *`filename`* | *`mode`* | Return Value | Contents of *`pFile`* |
 |--|--|--|--|--|
-| **`NULL`** | any | any | **`EINVAL`** | unchanged |
-| any | **`NULL`** | any | **`EINVAL`** | unchanged |
-| any | any | **`NULL`** | **`EINVAL`** | unchanged |
+| `NULL` | any | any | `EINVAL` | unchanged |
+| any | `NULL` | any | `EINVAL` | unchanged |
+| any | any | `NULL` | `EINVAL` | unchanged |
 
 ## Remarks
 
-The **`fopen_s`** and **`_wfopen_s`** functions can't open a file for sharing. If you need to share the file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, use **`_SH_DENYNO`** for read/write sharing.
+The **`fopen_s`** and **`_wfopen_s`** functions can't open a file for sharing. If you need to share the file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, use `_SH_DENYNO` for read/write sharing.
 
 The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_wfopen_s`** is a wide-character version of **`fopen_s`**; the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically otherwise.
 
@@ -61,7 +61,7 @@ The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_
 
 These functions validate their parameters. If *`pFile`*, *`filename`*, or *`mode`* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md).
 
-Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned and the global variable **`errno`** is set. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned and the global variable `errno` is set. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 
 **`fopen_s(&fp, "newfile.txt", "w+, ccs=UNICODE");`**
 
-Allowed values of the **`ccs`** flag are **`UNICODE`**, **`UTF-8`**, and **`UTF-16LE`**. If no value is specified for **`ccs`**, **`fopen_s`** uses ANSI encoding.
+Allowed values of the **`ccs`** flag are `UNICODE`, **`UTF-8`**, and **`UTF-16LE`**. If no value is specified for **`ccs`**, **`fopen_s`** uses ANSI encoding.
 
 If the file already exists and is opened for reading or appending, the byte order mark (BOM), if present in the file, determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the **`ccs`** flag. The **`ccs`** encoding is only used when no BOM is present or if the file is a new file.
 
@@ -84,7 +84,7 @@ The following table summarizes the modes for various **`ccs`** flag values that 
 
 | `ccs` flag | No BOM (or new file) | BOM: UTF-8 | BOM: UTF-16 |
 |--|--|--|--|
-| **`UNICODE`** | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
+| `UNICODE` | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
 | **`UTF-8`** | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
 | **`UTF-16LE`** | **`UTF-16LE`** | **`UTF-8`** | **`UTF-16LE`** |
 
@@ -105,7 +105,7 @@ The character string *`mode`* specifies the kind of access that's requested for 
 
 When a file is opened by using the **`"a"`** or **`"a+"`** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), but it's always moved back to the end of the file before any write operation is carried out so that existing data can't be overwritten.
 
-The **`"a"`** mode doesn't remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS `TYPE` command only shows data up to the original EOF marker and not any data that's appended to the file. The **`"a+"`** mode does remove the EOF marker before appending to the file. After appending, the MS-DOS `TYPE` command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated with the **CTRL**+**Z** EOF marker.
+The **`"a"`** mode doesn't remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS `TYPE` command only shows data up to the original EOF marker and not any data that's appended to the file. The **`"a+"`** mode does remove the EOF marker before appending to the file. After appending, the MS-DOS `TYPE` command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated with the `CTRL`+**Z** EOF marker.
 
 When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must come across an EOF marker. If there's no EOF marker, you must use an intervening call to a file-positioning function. The file-positioning functions are **`fsetpos`**, [`fseek`](fseek-fseeki64.md), and [`rewind`](rewind.md). When you switch from writing to reading, you must use an intervening call to either **`fflush`** or to a file-positioning function.
 
@@ -118,11 +118,11 @@ In addition to the values above, the following characters can be included in *`m
 | **`t`** | Open in text (translated) mode. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
-In text (translated) mode, **CTRL**+**Z** is interpreted as an end-of-file character on input. In files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a **CTRL**+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a **CTRL**+**Z**, may cause **`fseek`** to behave improperly near the end of the file.
+In text (translated) mode, `CTRL`+**Z** is interpreted as an end-of-file character on input. In files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a `CTRL`+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a `CTRL`+**Z**, may cause **`fseek`** to behave improperly near the end of the file.
 
 Also, in text mode, carriage return/line feed (CRLF) combinations are translated into single line feed (LF) characters on input, and LF characters are translated to CRLF combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. The Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **`mbtowc`** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **`wctomb`** function).
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`.
 
 For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [Unicode stream I/O in text and binary modes](../unicode-stream-i-o-in-text-and-binary-modes.md).
 

@@ -37,27 +37,27 @@ Read/write accessibility to determine for the memory range.
 
 ## Return value
 
-**_CrtIsValidPointer** returns TRUE if the specified pointer isn't null. In CRT library versions before Visual Studio 2010, returns TRUE if the memory range is valid for the specified operation or operations. Otherwise, the function returns FALSE.
+**`_CrtIsValidPointer`** returns `TRUE` if the specified pointer isn't null. In CRT library versions before Visual Studio 2010, returns `TRUE` if the memory range is valid for the specified operation or operations. Otherwise, the function returns `FALSE`.
 
 ## Remarks
 
-In the CRT library in Visual Studio 2010 and later versions, the *`size`* and *`access`* parameters are ignored, and **_CrtIsValidPointer** only verifies that the specified *`address`* isn't null. Because this test is easy to perform yourself, we don't recommend you use this function. In versions before Visual Studio 2010, the function verifies that the memory range beginning at *`address`* and extending for *`size`* bytes is valid for the specified accessibility operation or operations. When *`access`* is set to TRUE, the memory range is verified for both reading and writing. When *`access`* is FALSE, the memory range is only validated for reading. When [`_DEBUG`](../debug.md) isn't defined, calls to **_CrtIsValidPointer** are removed during preprocessing.
+In the CRT library in Visual Studio 2010 and later versions, the *`size`* and *`access`* parameters are ignored, and **`_CrtIsValidPointer`** only verifies that the specified *`address`* isn't null. Because this test is easy to perform yourself, we don't recommend you use this function. In versions before Visual Studio 2010, the function verifies that the memory range beginning at *`address`* and extending for *`size`* bytes is valid for the specified accessibility operation or operations. When *`access`* is set to `TRUE`, the memory range is verified for both reading and writing. When *`access`* is `FALSE`, the memory range is only validated for reading. When [`_DEBUG`](../debug.md) isn't defined, calls to **`_CrtIsValidPointer`** are removed during preprocessing.
 
-Because this function returns TRUE or FALSE, it can be passed to one of the [`_ASSERT`](assert-asserte-assert-expr-macros.md) macros to create a basic debugging error handling mechanism. The following example causes an assertion failure if the memory range isn't valid for both reading and writing operations:
+Because this function returns `TRUE` or `FALSE`, it can be passed to one of the [`_ASSERT`](assert-asserte-assert-expr-macros.md) macros to create a basic debugging error handling mechanism. The following example causes an assertion failure if the memory range isn't valid for both reading and writing operations:
 
 ```C
 _ASSERTE( _CrtIsValidPointer( address, size, TRUE ) );
 ```
 
-For more information about how **_CrtIsValidPointer** can be used with other debug functions and macros, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about how **`_CrtIsValidPointer`** can be used with other debug functions and macros, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_CrtIsValidPointer**|\<crtdbg.h>|
+|**`_CrtIsValidPointer`**|\<crtdbg.h>|
 
-**_CrtIsValidPointer** is a Microsoft extension. For compatibility information, see [Compatibility](../compatibility.md).
+**`_CrtIsValidPointer`** is a Microsoft extension. For compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 

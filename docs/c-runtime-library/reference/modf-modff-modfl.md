@@ -40,9 +40,9 @@ This function returns the signed fractional portion of *`x`*. There's no error r
 
 ## Remarks
 
-The **modf** functions break down the floating-point value *`x`* into fractional and integer parts, each of which has the same sign as *`x`*. The signed fractional portion of *`x`* is returned. The integer portion is stored as a floating-point value at *`intptr`*.
+The **`modf`** functions break down the floating-point value *`x`* into fractional and integer parts, each of which has the same sign as *`x`*. The signed fractional portion of *`x`* is returned. The integer portion is stored as a floating-point value at *`intptr`*.
 
-**modf** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
+**`modf`** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
 C++ allows overloading, so you can call overloads of **`modf`** that take and return **`float`** or **`long double`** parameters. In a C program, **`modf`** always takes two double values and returns a double value.
 

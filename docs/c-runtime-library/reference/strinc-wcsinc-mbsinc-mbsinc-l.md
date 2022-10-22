@@ -15,7 +15,7 @@ ms.assetid: 54685943-8e2c-45e9-a559-2d94930dc6b4
 Advances a string pointer by one character.
 
 > [!IMPORTANT]
-> **_mbsinc** and **_mbsinc_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsinc`** and **`_mbsinc_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -51,11 +51,11 @@ Each of these routines returns a pointer to the character that immediately follo
 
 ## Remarks
 
-The **_mbsinc** function returns a pointer to the first byte of the multibyte character that immediately follows *`current`*. **_mbsinc** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) that's currently in use; **_mbsinc_l** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The **`_mbsinc`** function returns a pointer to the first byte of the multibyte character that immediately follows *`current`*. **`_mbsinc`** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) that's currently in use; **`_mbsinc_l`** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
-The generic-text function **_tcsinc**, defined in Tchar.h, maps to **_mbsinc** if **_MBCS** has been defined, or to **_wcsinc** if **_UNICODE** has been defined. Otherwise, **_tcsinc** maps to **_strinc**. **_strinc** and **_wcsinc** are single-byte-character and wide-character versions of **_mbsinc**. **_strinc** and **_wcsinc** are provided only for this mapping and should not be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
+The generic-text function `_tcsinc`, defined in Tchar.h, maps to **`_mbsinc`** if `_MBCS` has been defined, or to **`_wcsinc`** if `_UNICODE` has been defined. Otherwise, `_tcsinc` maps to **`_strinc`**. **`_strinc`** and **`_wcsinc`** are single-byte-character and wide-character versions of **`_mbsinc`**. **`_strinc`** and **`_wcsinc`** are provided only for this mapping and should not be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
-If *`current`* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
+If *`current`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.
 
 > [!IMPORTANT]
 > These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -66,10 +66,10 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_mbsinc**|\<mbstring.h>|
-|**_mbsinc_l**|\<mbstring.h>|
-|**_strinc**|\<tchar.h>|
-|**_wcsinc**|\<tchar.h>|
+|**`_mbsinc`**|\<mbstring.h>|
+|**`_mbsinc_l`**|\<mbstring.h>|
+|**`_strinc`**|\<tchar.h>|
+|**`_wcsinc`**|\<tchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -37,11 +37,11 @@ Path of new file.
 Type of access permitted.
 
 *`stream`*\
-Pointer to **`FILE`** structure.
+Pointer to `FILE` structure.
 
 ## Return value
 
-Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a **`NULL`** pointer value. If *`path`*, *`mode`*, or *`stream`* is a null pointer, or if *`filename`* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`NULL`**.
+Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a `NULL` pointer value. If *`path`*, *`mode`*, or *`stream`* is a null pointer, or if *`filename`* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `NULL`.
 
 For more information on these, and other, error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -85,7 +85,7 @@ When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both re
 
 In text (translated) mode, carriage return-line feed (CR-LF) combinations are translated into single line feed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **`"a+"`**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file may cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file. Don't use the **`t`** option if you want ANSI portability because it's a Microsoft extension.
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`.
 
 For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 

@@ -45,7 +45,7 @@ Storage location for input string.
 
 ## Return value
 
-Returns its argument if successful. A **`NULL`** pointer indicates an error or end-of-file condition. Use [`ferror`](./reference/ferror.md) or [`feof`](./reference/feof.md) to determine which one has occurred. If `buffer` is **`NULL`**, these functions invoke an invalid parameter handler, as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set `errno` to `EINVAL`.
+Returns its argument if successful. A `NULL` pointer indicates an error or end-of-file condition. Use [`ferror`](./reference/ferror.md) or [`feof`](./reference/feof.md) to determine which one has occurred. If `buffer` is `NULL`, these functions invoke an invalid parameter handler, as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -60,7 +60,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_getts`|`gets`|`gets`|`_getws`|
 

@@ -36,7 +36,7 @@ Pointer to variable that points to the end of a list of functions to execute on 
 
 ## Return value
 
-If successful, a pointer to the user's function. Otherwise, a **NULL** pointer.
+If successful, a pointer to the user's function. Otherwise, a `NULL` pointer.
 
 ## Remarks
 

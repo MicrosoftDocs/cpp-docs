@@ -37,7 +37,7 @@ Kind of access that's enabled.
 
 ## Return value
 
-Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If *`filename`* or *`mode`* is **`NULL`** or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
+Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If *`filename`* or *`mode`* is `NULL` or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
 
 For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -47,7 +47,7 @@ The **`fopen`** function opens the file that is specified by *`filename`*. By de
 
 **`fopen`** accepts paths that are valid on the file system at the point of execution; **`fopen`** accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for **`fopen`**, make sure that drives, paths, or network shares will be available in the execution environment. You can use either forward slashes (`/`) or backslashes (`\`) as the directory separators in a path.
 
-Always check the return value to see whether the pointer is NULL before you perform any other operations on the file. If an error occurs, the global variable **`errno`** is set and may be used to obtain specific error information. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+Always check the return value to see whether the pointer is NULL before you perform any other operations on the file. If an error occurs, the global variable `errno` is set and may be used to obtain specific error information. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
@@ -57,7 +57,7 @@ By default, this function's global state is scoped to the application. To change
 
 `FILE *fp = fopen("newfile.txt", "rt+, ccs=UTF-8");`
 
-Allowed values for **`ccs`** encoding are **`UNICODE`**, **`UTF-8`**, and **`UTF-16LE`**.
+Allowed values for **`ccs`** encoding are `UNICODE`, **`UTF-8`**, and **`UTF-16LE`**.
 
 When a file is opened in Unicode mode, input functions translate the data that's read from the file into UTF-16 data stored as type **`wchar_t`**. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type **`wchar_t`**. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it's written. The file's UTF-8-encoded content is translated into UTF-16 when it's read. An attempt to read or write an odd number of bytes in Unicode mode causes a [parameter validation](../parameter-validation.md) error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You're responsible for any required encoding translation.
 
@@ -72,7 +72,7 @@ The following table summarizes the modes that are used for various **`ccs`** fla
 
 | ccs flag | No BOM (or new file) | BOM: UTF-8 | BOM: UTF-16 |
 |--|--|--|--|
-| **`UNICODE`** | **`UTF-16LE`** | **`UTF-8`** | **`UTF-16LE`** |
+| `UNICODE` | **`UTF-16LE`** | **`UTF-8`** | **`UTF-16LE`** |
 | **`UTF-8`** | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
 | **`UTF-16LE`** | **`UTF-16LE`** | **`UTF-8`** | **`UTF-16LE`** |
 
@@ -99,7 +99,7 @@ The character string *`mode`* specifies the kind of access that is requested for
 
 When a file is opened by using the **`"a"`** access type or the **`"a+"`** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), but is always moved back to the end of the file before any write operation is performed. Therefore, existing data can't be overwritten.
 
-The **`"a"`** mode doesn't remove the EOF marker before it appends to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. Before it appends to the file, the **`"a+"`** mode does remove the EOF marker. After appending, the MS-DOS TYPE command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated with the **CTRL**+**Z** EOF marker.
+The **`"a"`** mode doesn't remove the EOF marker before it appends to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. Before it appends to the file, the **`"a+"`** mode does remove the EOF marker. After appending, the MS-DOS TYPE command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated with the `CTRL`+**Z** EOF marker.
 
 When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are enabled (the file is said to be open for "update"). However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there's no EOF, you must use an intervening call to a file positioning function. The file positioning functions are **`fsetpos`**, [`fseek`](fseek-fseeki64.md), and [`rewind`](rewind.md). When you switch from writing to reading, you must use an intervening call to either **`fflush`** or to a file positioning function.
 
@@ -110,11 +110,11 @@ In addition to the earlier values, the following characters can be appended to *
 | **`t`** | Open in text (translated) mode. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
-In text mode, **CTRL**+**Z** is interpreted as an EOF character on input. In files that are opened for reading/writing by using **`"a+"`**, **`fopen`** checks for a **CTRL**+**Z** at the end of the file and removes it, if it's possible. It's removed because using [`fseek`](fseek-fseeki64.md) and **`ftell`** to move within a file that ends with **CTRL**+**Z** may cause [`fseek`](fseek-fseeki64.md) to behave incorrectly near the end of the file.
+In text mode, `CTRL`+**Z** is interpreted as an EOF character on input. In files that are opened for reading/writing by using **`"a+"`**, **`fopen`** checks for a `CTRL`+**Z** at the end of the file and removes it, if it's possible. It's removed because using [`fseek`](fseek-fseeki64.md) and **`ftell`** to move within a file that ends with `CTRL`+**Z** may cause [`fseek`](fseek-fseeki64.md) to behave incorrectly near the end of the file.
 
 In text mode, carriage return-line feed (CRLF) combinations are translated into single line feed (LF) characters on input, and LF characters are translated to CRLF combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **`mbtowc`** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **`wctomb`** function).
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`.
 
 For more information about how to use text and binary modes in Unicode and multibyte stream-I/O, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [Unicode stream I/O in text and binary modes](../unicode-stream-i-o-in-text-and-binary-modes.md).
 
@@ -130,7 +130,7 @@ The following options can be appended to *`mode`* to specify more behaviors.
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`T`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
 | **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
-| **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or **`UNICODE`**) for this file. Leave unspecified if you want ANSI encoding. |
+| **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or `UNICODE`) for this file. Leave unspecified if you want ANSI encoding. |
 
 Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
 

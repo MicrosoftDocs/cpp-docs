@@ -60,25 +60,25 @@ The number of fields that were successfully converted and assigned. The return v
 
 ## Remarks
 
-The **_cscanf** function reads data directly from the console into the locations given by *`argument`*. The [`_getche`](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *`format`*. The format controls the interpretation of the input fields and has the same form and function as the *`format`* parameter for the [`scanf`](scanf-scanf-l-wscanf-wscanf-l.md) function. While **_cscanf** normally echoes the input character, it doesn't do so if the last call was to **_ungetch**.
+The **`_cscanf`** function reads data directly from the console into the locations given by *`argument`*. The [`_getche`](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *`format`*. The format controls the interpretation of the input fields and has the same form and function as the *`format`* parameter for the [`scanf`](scanf-scanf-l-wscanf-wscanf-l.md) function. While **`_cscanf`** normally echoes the input character, it doesn't do so if the last call was to `_ungetch`.
 
-This function validates its parameters. If format is **NULL**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EOF**.
+This function validates its parameters. If format is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EOF`.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tcscanf**|**_cscanf**|**_cscanf**|**_cwscanf**|
-|**_tcscanf_l**|**_cscanf_l**|**_cscanf_l**|**_cwscanf_l**|
+|`_tcscanf`|**`_cscanf`**|**`_cscanf`**|**`_cwscanf`**|
+|`_tcscanf_l`|**`_cscanf_l`**|**`_cscanf_l`**|**`_cwscanf_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_cscanf**, **_cscanf_l**|\<conio.h>|
-|**_cwscanf**, **_cwscanf_l**|\<conio.h> or \<wchar.h>|
+|**`_cscanf`**, **`_cscanf_l`**|\<conio.h>|
+|**`_cwscanf`**, **`_cwscanf_l`**|\<conio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

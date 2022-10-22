@@ -45,13 +45,13 @@ The sine of *`z`*, in radians.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **csin** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **csin** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`csin`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`csin`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**csin**,               **csinf**, **csinl**|\<complex.h>|\<ccomplex>|
+|**`csin`**,               **`csinf`**, **`csinl`**|\<complex.h>|\<ccomplex>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
