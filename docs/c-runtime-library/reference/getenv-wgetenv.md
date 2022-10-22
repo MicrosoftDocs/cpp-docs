@@ -36,11 +36,11 @@ Environment variable name.
 
 ## Return value
 
-Returns a pointer to the environment table entry containing *`varname`*. It is not safe to modify the value of the environment variable using the returned pointer. Use the [`_putenv`](putenv-wputenv.md) function to modify the value of an environment variable. The return value is `NULL` if *`varname`* is not found in the environment table.
+Returns a pointer to the environment table entry containing *`varname`*. It isn't safe to modify the value of the environment variable using the returned pointer. Use the [`_putenv`](putenv-wputenv.md) function to modify the value of an environment variable. The return value is `NULL` if *`varname`* isn't found in the environment table.
 
 ## Remarks
 
-The **`getenv`** function searches the list of environment variables for *`varname`*. **`getenv`** is not case sensitive in the Windows operating system. **`getenv`** and **`_putenv`** use the copy of the environment pointed to by the global variable **`_environ`** to access the environment. **`getenv`** operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the *`envp`* argument to [`main`](../../cpp/main-function-command-line-args.md) or [`wmain`](../../cpp/main-function-command-line-args.md) may retrieve invalid information.
+The **`getenv`** function searches the list of environment variables for *`varname`*. **`getenv`** isn't case sensitive in the Windows operating system. **`getenv`** and **`_putenv`** use the copy of the environment pointed to by the global variable **`_environ`** to access the environment. **`getenv`** operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the *`envp`* argument to [`main`](../../cpp/main-function-command-line-args.md) or [`wmain`](../../cpp/main-function-command-line-args.md) may retrieve invalid information.
 
 If *`varname`* is `NULL`, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 

@@ -35,11 +35,11 @@ Locale to use.
 
 ## Return value
 
-**`_ismbbalpha`** returns a nonzero value if the expression:
+**`_ismbbalpha`** returns a nonzero value when the expression:
 
 `isalpha(c) || _ismbbkalnum(c)`
 
-is nonzero for *`c`*, or 0 if it is not. **`_ismbbalpha`** uses the current locale for any locale-dependent character settings. **`_ismbbalpha_l`** is identical except that it uses the locale passed in.
+is nonzero for *`c`*, or 0 when the expression is zero. **`_ismbbalpha`** uses the current locale for any locale-dependent character settings. **`_ismbbalpha_l`** is identical except that it uses the locale passed in.
 
 ## Remarks
 

@@ -42,7 +42,7 @@ Initial position.
 
 ## Return value
 
-If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* is not one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* isn't one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 ## Remarks
 
@@ -64,9 +64,9 @@ For streams opened in text mode, **`fseek`** and **`_fseeki64`** have limited us
 
 - Seeking from the beginning of the file with an offset value returned from a call to [`ftell`](ftell-ftelli64.md) when using **`fseek`** or [`_ftelli64`](ftell-ftelli64.md) when using **`_fseeki64`**.
 
-Also in text mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, [`fopen`](fopen-wfopen.md) and all related routines check for a CTRL+Z at the end of the file and remove it if possible. This is done because using the combination of **`fseek`** and [`ftell`](ftell-ftelli64.md) or **`_fseeki64`** and [`_ftelli64`](ftell-ftelli64.md), to move within a file that ends with a CTRL+Z may cause **`fseek`** or **`_fseeki64`** to behave improperly near the end of the file.
+Also in text mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, [`fopen`](fopen-wfopen.md) and all related routines check for a CTRL+Z at the end of the file and remove it if possible. It's removed because using the combination of **`fseek`** and [`ftell`](ftell-ftelli64.md) or **`_fseeki64`** and [`_ftelli64`](ftell-ftelli64.md), to move within a file that ends with a CTRL+Z may cause **`fseek`** or **`_fseeki64`** to behave improperly near the end of the file.
 
-When the CRT opens a file that begins with a Byte Order Mark (BOM), the file pointer is positioned after the BOM (that is, at the start of the file's actual content). If you have to **`fseek`** to the beginning of the file, use [`ftell`](ftell-ftelli64.md) to get the initial position and **`fseek`** to it rather than to position 0.
+When the CRT opens a file that begins with a Byte Order Mark (BOM), the file pointer is positioned after the BOM. (That is, it's positioned at the start of the file's actual content). If you have to **`fseek`** to the beginning of the file, use [`ftell`](ftell-ftelli64.md) to get the initial position, and then **`fseek`** to that position rather than to position 0.
 
 This function locks out other threads during execution and is therefore thread-safe. For a non-locking version, see [`_fseek_nolock`, `_fseeki64_nolock`](fseek-nolock-fseeki64-nolock.md).
 

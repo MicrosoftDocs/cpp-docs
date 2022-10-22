@@ -12,7 +12,7 @@ ms.assetid: 7fec7be3-6e39-4181-846b-8ef24489361c
 ---
 # `_get_doserrno`
 
-Gets the error value returned by the operating system before it is translated into an `errno` value.
+Gets the error value returned by the operating system before it's translated into an `errno` value.
 
 ## Syntax
 
@@ -33,7 +33,7 @@ If **`_get_doserrno`** succeeds, it returns zero; if it fails, it returns an err
 
 ## Remarks
 
-The `_doserrno` global macro is set to zero during CRT initialization, before process execution begins. It is set to the operating-system error value returned by any system-level function call that returns an operating-system error, and it is never reset to zero during execution. When you write code to check the error value returned by a function, always clear `_doserrno` by using [`_set_doserrno`](set-doserrno.md) before the function call. Because another function call may overwrite `_doserrno`, check the value by using **`_get_doserrno`** immediately after the function call.
+The `_doserrno` global macro is set to zero during CRT initialization, before process execution begins. It's set to the operating-system error value returned by any system-level function call that returns an operating-system error, and it's never reset to zero during execution. When you write code to check the error value returned by a function, always clear `_doserrno` by using [`_set_doserrno`](set-doserrno.md) before the function call. Because another function call may overwrite `_doserrno`, check the value by using **`_get_doserrno`** immediately after the function call.
 
 We recommend [`_get_errno`](get-errno.md) instead of **`_get_doserrno`** for portable error codes.
 

@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 
 **`_fullpath`** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. **`_wfullpath`** is a wide-character version of **`_fullpath`**; the string arguments to **`_wfullpath`** are wide-character strings. **`_wfullpath`** and **`_fullpath`** behave identically except that **`_wfullpath`** doesn't handle multibyte-character strings.
 
-If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to **`_fullpath`** and **`_wfullpath`** are replaced by calls to **`_fullpath_dbg`** and **`_wfullpath_dbg`** to allow for debugging memory allocations. For more information, see [`_fullpath_dbg`, `_wfullpath_dbg`](fullpath-dbg-wfullpath-dbg.md).
+If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to **`_fullpath`** and **`_wfullpath`** are replaced by calls to **`_fullpath_dbg`** and **`_wfullpath_dbg`**, to allow you to debug memory allocations. For more information, see [`_fullpath_dbg`, `_wfullpath_dbg`](fullpath-dbg-wfullpath-dbg.md).
 
 This function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md), if *`maxlen`* is less than or equal to 0. If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 

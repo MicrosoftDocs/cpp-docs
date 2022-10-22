@@ -1,6 +1,6 @@
 ---
 title: "gmtime, _gmtime32, _gmtime64"
-description: "API reference for `gmtime`, `_gmtime32`, and `_gmtime64`, which convert a `time_t` value to a `tm` structure."
+description: "API reference for gmtime, _gmtime32, and _gmtime64, which convert a time_t value."
 ms.date: "10/27/2020"
 api_name: ["_gmtime32", "gmtime", "_gmtime64", "_o__gmtime32", "_o__gmtime64"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -46,7 +46,7 @@ Both the 32-bit and 64-bit versions of **`gmtime`**, [`mktime`](mktime-mktime32-
 
 **`_gmtime64`**, which uses the `__time64_t` structure, enables dates to be expressed up through 23:59:59, December 31, 3000, UTC. **`_gmtime32`** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both functions.
 
-**`gmtime`** is an inline function that evaluates to **`_gmtime64`**, and `time_t` is equivalent to `__time64_t` unless `_USE_32BIT_TIME_T` is defined. If you must force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`, but doing so causes **`gmtime`** to be in-lined to **`_gmtime32`** and `time_t` to be defined as `__time32_t`. We don't recommend that you do this, because it isn't allowed on 64-bit platforms. In any case, your application may fail after January 18, 2038.
+**`gmtime`** is an inline function that evaluates to **`_gmtime64`**, and `time_t` is equivalent to `__time64_t` unless `_USE_32BIT_TIME_T` is defined. If you must force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`, but doing so causes **`gmtime`** to be in-lined to **`_gmtime32`** and `time_t` to be defined as `__time32_t`. We don't recommend use of `_USE_32BIT_TIME_T`, because it isn't allowed on 64-bit platforms. In any case, your application may fail after January 18, 2038.
 
 These functions validate their parameters. If *`sourceTime`* is a `NULL` pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
 

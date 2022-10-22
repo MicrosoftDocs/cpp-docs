@@ -25,7 +25,7 @@ unsigned long _getdrives( void );
 
 ## Return value
 
-If the function succeeds, the return value is a bitmask that represents the currently available disk drives. Bit position 0 (the least-significant bit) is drive A, bit position 1 is drive B, bit position 2 is drive C, and so on. If the function fails, the return value is zero. To get extended error information, call `GetLastError`.
+If the function succeeds, the return value is a bitmask that represents the currently available disk drives. Bit position 0 (the least-significant bit) represents drive A. Similarly, bit position 1 represents drive B, bit position 2 represents drive C, and so on. If the function fails, the return value is zero. To get extended error information, call `GetLastError`.
 
 ## Remarks
 

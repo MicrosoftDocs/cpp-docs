@@ -36,7 +36,7 @@ A non-zero error code if an initialization fails and throws an error; 0 if no er
 
 ## Remarks
 
-These methods are only called internally during the initialization of a C++ program. Do not call these methods in a program.
+These methods are only called internally during the initialization of a C++ program. Don't call these methods in a program.
 
 When these methods walk a table of function entries, they skip `NULL` entries and continue.
 

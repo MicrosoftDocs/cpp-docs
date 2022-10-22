@@ -63,7 +63,7 @@ If successful, returns the smaller of *`x`* or *`y`*.
 |*`y`* is NaN|*`x`*|
 |*`x`* and *`y`* are NaN|NaN|
 
-The function does not cause [`_matherr`](matherr.md) to be invoked, cause any floating-point exceptions, or change the value of `errno`.
+The function doesn't cause [`_matherr`](matherr.md) to be invoked, cause any floating-point exceptions, or change the value of `errno`.
 
 ## Remarks
 

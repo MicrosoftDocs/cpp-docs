@@ -12,7 +12,7 @@ ms.assetid: d03080d9-a520-45be-aa65-504bdb197e8b
 ---
 # `_ftime_s`, `_ftime32_s`, `_ftime64_s`
 
-Gets the current time. These are versions of [`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Gets the current time. These functions are versions of [`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 

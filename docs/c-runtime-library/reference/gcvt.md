@@ -41,7 +41,7 @@ Storage location for the result.
 
 ## Remarks
 
-The **`_gcvt`** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. The *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *`digits`* + 1 is used, the function overwrites the end of the buffer. This is because the converted string includes a decimal point and can contain sign and exponent information. There is no provision for overflow. **`_gcvt`** attempts to produce *`digits`* digits in decimal format. If it cannot, it produces *`digits`* digits in exponential format. Trailing zeros might be suppressed in the conversion.
+The **`_gcvt`** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. The *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *`digits`* + 1 is used, the function overwrites the end of the buffer. The overwrite happens because the converted string includes a decimal point and can also contain sign and exponent information. The function doesn't account for the overflow. **`_gcvt`** attempts to produce *`digits`* digits in decimal format. If it can't, it produces *`digits`* digits in exponential format. Trailing zeros might be suppressed in the conversion.
 
 A *`buffer`* of length `_CVTBUFSIZE` is sufficient for any floating point value.
 
