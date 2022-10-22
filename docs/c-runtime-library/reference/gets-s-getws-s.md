@@ -51,7 +51,7 @@ Returns *`buffer`* if successful. A `NULL` pointer indicates an error or end-of-
 
 The **`gets_s`** function reads a line from the standard input stream **`stdin`** and stores it in *`buffer`*. The line consists of all characters up to and including the first newline character ('`\n`'). **`gets_s`** then replaces the newline character with a null character ('`\0`') before returning the line. In contrast, the **`fgets_s`** function retains the newline character.
 
-If the first character read is the end-of-file character, a null character is stored at the beginning of *`buffer`* and `NULL` is returned.
+If the first character read is the end-of-file character, a null character is stored at the beginning of *`buffer`*, and `NULL` is returned.
 
 **`_getws_s`** is a wide-character version of **`gets_s`**; its argument and return value are wide-character strings.
 
@@ -74,7 +74,7 @@ By default, this function's global state is scoped to the application. To change
 |**`gets_s`**|`<stdio.h>`|
 |**`_getws_s`**|`<stdio.h>` or `<wchar.h>`|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 

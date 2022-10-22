@@ -86,7 +86,7 @@ In an MBCS program (for example, in an SBCS ASCII program), **`_wenviron`** is i
 
 Similarly in a Unicode (**`_wmain`**) program, **`_environ`** is initially `NULL` because the environment is composed of wide-character strings. Then, on the first call to [`_putenv`](putenv-wputenv.md), or on the first call to **`getenv_s`** if a (Unicode) environment already exists, a corresponding MBCS environment is created and is then pointed to by **`_environ`**.
 
-When two copies of the environment (MBCS and Unicode) exist simultaneously in a program, the run-time system must maintain both copies, and this causes slower execution time. For example, when you call **`_putenv`**, a call to **`_wputenv`** is also executed automatically so that the two environment strings correspond.
+When two copies of the environment (MBCS and Unicode) exist simultaneously in a program, execution can take longer, because the run-time system must maintain both copies. For example, when you call **`_putenv`**, a call to **`_wputenv`** is also executed automatically so that the two environment strings correspond.
 
 > [!CAUTION]
 > In rare instances, when the run-time system is maintaining both a Unicode version and a multibyte version of the environment, the two environment versions may not correspond exactly. This happens because, although any unique multibyte-character string maps to a unique Unicode string, the mapping from a unique Unicode string to a multibyte-character string is not necessarily unique. For more information, see [`_environ`, `_wenviron`](../environ-wenviron.md).

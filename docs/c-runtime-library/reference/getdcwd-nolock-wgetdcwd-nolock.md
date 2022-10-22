@@ -49,7 +49,7 @@ See [`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md).
 
 ## Remarks
 
-**`_getdcwd_nolock`** and **`_wgetdcwd_nolock`** are identical to `_getdcwd` and `_wgetdcwd`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**`_getdcwd_nolock`** and **`_wgetdcwd_nolock`** are identical to `_getdcwd` and `_wgetdcwd`, respectively, except that they aren't protected from interference by other threads. They might be faster because they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ### Generic-text routine mappings
 

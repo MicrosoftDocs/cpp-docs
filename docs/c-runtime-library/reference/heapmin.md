@@ -28,7 +28,7 @@ For more information about this and other return codes, see [`errno`, `_doserrno
 
 ## Remarks
 
-The **`_heapmin`** function minimizes the heap by releasing unused heap memory to the operating system. If the operating system does not support **`_heapmin`**(for example, Windows 98), the function returns -1 and sets `errno` to `ENOSYS`.
+The **`_heapmin`** function minimizes the heap by releasing unused heap memory to the operating system. If the operating system doesn't support **`_heapmin`**(for example, Windows 98), the function returns -1 and sets `errno` to `ENOSYS`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

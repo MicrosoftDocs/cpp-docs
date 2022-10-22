@@ -37,7 +37,7 @@ Maximum length of the path in characters: **`char`** for **`_getcwd`** and **`wc
 
 ## Return value
 
-Returns a pointer to *`buffer`*. A `NULL` return value indicates an error, and `errno` is set either to `ENOMEM`, indicating that there is insufficient memory to allocate *`maxlen`* bytes (when a `NULL` argument is given as *`buffer`*), or to `ERANGE`, indicating that the path is longer than *`maxlen`* characters. If *`maxlen`* is less than or equal to zero, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
+Returns a pointer to *`buffer`*. A `NULL` return value indicates an error, and `errno` is set either to `ENOMEM`, indicating that there's insufficient memory to allocate *`maxlen`* bytes (when a `NULL` argument is given as *`buffer`*), or to `ERANGE`, indicating that the path is longer than *`maxlen`* characters. If *`maxlen`* is less than or equal to zero, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -49,7 +49,7 @@ The **`_getcwd`** function gets the full path of the current working directory f
 
 **`_wgetcwd`** is a wide-character version of **`_getcwd`**; the *`buffer`* argument and return value of **`_wgetcwd`** are wide-character strings. **`_wgetcwd`** and **`_getcwd`** behave identically otherwise.
 
-When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to **`_getcwd`** and **`_wgetcwd`** are replaced by calls to **`_getcwd_dbg`** and **`_wgetcwd_dbg`** to allow for debugging memory allocations. For more information, see [`_getcwd_dbg`, `_wgetcwd_dbg`](getcwd-dbg-wgetcwd-dbg.md).
+When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to **`_getcwd`** and **`_wgetcwd`** are replaced by calls to **`_getcwd_dbg`** and **`_wgetcwd_dbg`**, to allow you to debug memory allocations. For more information, see [`_getcwd_dbg`, `_wgetcwd_dbg`](getcwd-dbg-wgetcwd-dbg.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

@@ -12,7 +12,7 @@ ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
 ---
 # `isnan`, `_isnan`, `_isnanf`
 
-Tests if a floating-point value is not a number (NAN).
+Tests if a floating-point value isn't a number (NAN).
 
 ## Syntax
 
@@ -48,9 +48,9 @@ In C++, the **`isnan`** template function returns **`true`** if the argument *`x
 
 ## Remarks
 
-Because a NaN value does not compare as equal to any other NaN value, you must use one of these functions or macros to detect one. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [`printf`](printf-printf-l-wprintf-wprintf-l.md).
+Because a NaN value doesn't compare as equal to any other NaN value, to detect one, you must use one of these functions or macros. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
-When compiled as C++, the **`isnan`** macro is not defined, and an **`isnan`** template function is defined instead. It behaves the same way as the macro, but returns a value of type **`bool`** instead of an integer.
+When compiled as C++, the **`isnan`** macro isn't defined, and an **`isnan`** template function is defined instead. It behaves the same way as the macro, but returns a value of type **`bool`** instead of an integer.
 
 The **`_isnan`** and **`_isnanf`** functions are Microsoft-specific. The **`_isnanf`** function is only available when compiled for x64.
 

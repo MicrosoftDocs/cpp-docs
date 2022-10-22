@@ -40,11 +40,11 @@ Integer to test.
 
 ## Return value
 
-Each of these routines returns nonzero if *`c`* is a particular representation of a printable character other than a space. **`isgraph`** returns a nonzero value if *`c`* is a printable character other than a space. **`iswgraph`** returns a nonzero value if *`c`* is a printable wide character other than a wide character space. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
+Each of these routines returns nonzero if *`c`* is a particular representation of a printable character other than a space. **`isgraph`** returns a nonzero value if *`c`* is a printable character other than a space. **`iswgraph`** returns a nonzero value if *`c`* is a printable wide character other than a wide character space. Each of these routines returns 0 if *`c`* doesn't satisfy the test condition.
 
 The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
-The behavior of **`isgraph`** and **`_isgraph_l`** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
+The behavior of **`isgraph`** and **`_isgraph_l`** is undefined if *`c`* isn't EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* isn't one of these values, the functions raise an assertion.
 
 ### Generic-text routine mappings
 

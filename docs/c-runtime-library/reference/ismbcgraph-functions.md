@@ -67,7 +67,7 @@ Locale to use.
 
 ## Return value
 
-Each of these routines returns a nonzero value if the character satisfies the test condition, or 0 if it does not. If *`c`* <= 255 and there is a corresponding `_ismbb` routine (for example, **`_ismbcalnum`** corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.
+Each of these routines returns a nonzero value if the character satisfies the test condition, or 0 if it doesn't. If *`c`* <= 255 and there's a corresponding `_ismbb` routine (for example, **`_ismbcalnum`** corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.
 
 The versions of these functions are identical, except that the ones that have the `_l` suffix use the locale that's passed in for their locale-dependent behavior, instead of the current locale. For more information, see [Locale](../locale.md).
 

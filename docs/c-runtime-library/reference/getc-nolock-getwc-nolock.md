@@ -36,7 +36,7 @@ See [`getc`, `getwc`](getc-getwc.md).
 
 ## Remarks
 
-These functions are identical to `getc` and `getwc` except that they do not lock the calling thread. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+These functions are identical to `getc` and `getwc` except that they don't lock the calling thread. They might be faster because they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

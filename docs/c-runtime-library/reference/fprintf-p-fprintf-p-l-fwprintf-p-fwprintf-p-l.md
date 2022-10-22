@@ -60,7 +60,7 @@ The locale to use.
 
 ## Remarks
 
-**`_fprintf_p`** formats and prints a series of characters and values to the output *`stream`*. Each function *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. For **`_fprintf_p`**, the *`format`* argument has the same syntax and use that it has in `_printf_p`. These functions support positional parameters, meaning that the order of the parameters used by the format string can be changed. For more information about positional parameters, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
+**`_fprintf_p`** formats and prints a series of characters and values to the output *`stream`*. Each function *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. For **`_fprintf_p`**, the *`format`* argument has the same syntax that it has in `_printf_p`. These functions support positional parameters, meaning that the order of the parameters used by the format string can be changed. For more information about positional parameters, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
 
 **`_fwprintf_p`** is a wide-character version of **`_fprintf_p`**; in **`_fwprintf_p`**, *`format`* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **`_fprintf_p`** doesn't currently support output into a UNICODE stream.
 

@@ -31,7 +31,7 @@ Integer to test.
 
 ## Return value
 
-**`isleadbyte`** returns a nonzero value if the argument satisfies the test condition or 0 if it does not. In the "C" locale and in single-byte character set (SBCS) locales, **`isleadbyte`** always returns 0.
+**`isleadbyte`** returns a nonzero value if the argument satisfies the test condition or 0 if it doesn't. In the "C" locale and in single-byte character set (SBCS) locales, **`isleadbyte`** always returns 0.
 
 ## Remarks
 

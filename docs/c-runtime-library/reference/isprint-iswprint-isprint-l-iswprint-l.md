@@ -43,11 +43,11 @@ The locale to use.
 
 ## Return value
 
-Each of these routines returns nonzero if *`c`* is a particular representation of a printable character. **`isprint`** returns a nonzero value if *`c`* is a printable character—this includes the space character (0x20 - 0x7E). **`iswprint`** returns a nonzero value if *`c`* is a printable wide character—this includes the space wide character. Each of these routines returns 0 if *`c`* does not satisfy the test condition.
+Each of these routines returns nonzero if *`c`* is a particular representation of a printable character. **`isprint`** returns a nonzero value if *`c`* is a printable character (0x20 - 0x7E), including the space character. **`iswprint`** returns a nonzero value if *`c`* is a printable wide character, including the space wide character. Each of these routines returns 0 if *`c`* doesn't satisfy the test condition.
 
-The result of the test condition for these functions depends on the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
+The result of the test condition for these functions depends on the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The versions of these functions that don't have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
-The behavior of **`isprint`** and **`_isprint_l`** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
+The behavior of **`isprint`** and **`_isprint_l`** is undefined if *`c`* isn't EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* isn't one of these values, the functions raise an assertion.
 
 ### Generic-text routine mappings
 

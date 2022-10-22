@@ -12,7 +12,7 @@ ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
 ---
 # `_itoa_s`, `_ltoa_s`, `_ultoa_s`, `_i64toa_s`, `_ui64toa_s`, `_itow_s`,  `_ltow_s`,  `_ultow_s`, `_i64tow_s`, `_ui64tow_s`
 
-Converts an integer to a string. These are versions of the [`_itoa`, `_itow` functions](itoa-itow.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Converts an integer to a string. These functions are versions of the [`_itoa`, `_itow` functions](itoa-itow.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -86,7 +86,7 @@ Zero if successful; an error code on failure. If any of the following conditions
 
 ### Security issues
 
-These functions can generate an access violation if *`buffer`* does not point to valid memory and is not `NULL`, or if the length of the buffer is not long enough to hold the result string.
+These functions can generate an access violation if *`buffer`* doesn't point to valid memory and isn't `NULL`, or if the length of the buffer isn't long enough to hold the result string.
 
 ## Remarks
 
@@ -121,7 +121,7 @@ These functions are Microsoft-specific. For more compatibility information, see 
 
 ## Example
 
-This sample demonstrates the use of a few of the integer conversion functions. Note that the [`_countof`](countof-macro.md) macro only works to determine buffer size when the array declaration is visible to the compiler, and not for parameters that have decayed to pointers.
+This sample demonstrates the use of a few of the integer conversion functions. The [`_countof`](countof-macro.md) macro only works to determine buffer size when the array declaration is visible to the compiler, and not for parameters that have decayed to pointers.
 
 ```C
 // crt_itoa_s.c

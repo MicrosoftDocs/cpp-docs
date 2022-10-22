@@ -36,13 +36,13 @@ Pointer to `FILE` structure.
 
 ## Return value
 
-Each of these functions returns a nonnegative value if it is successful. On an error, **`fputs`** and **`fputws`** return `EOF`. If *`str`* or *`stream`* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and then return `EOF`.
+Each of these functions returns a nonnegative value if it's successful. On an error, **`fputs`** and **`fputws`** return `EOF`. If *`str`* or *`stream`* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and then return `EOF`.
 
 For more information on error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Each of these functions copies *`str`* to the output *`stream`* at the current position. **`fputws`** copies the wide-character argument *`str`* to *`stream`* as a multibyte-character string or a wide-character string according to whether *`stream`* is opened in text mode or binary mode, respectively. Neither function copies the terminating null character.
+Each of these functions copies *`str`* to the output *`stream`* at the current position. **`fputws`** copies the wide-character argument *`str`* to *`stream`* as a multibyte-character string or a wide-character string when *`stream`* is opened in text mode or binary mode, respectively. Neither function copies the terminating null character.
 
 The two functions behave identically if the stream is opened in ANSI mode. **`fputs`** doesn't currently support output into a UNICODE stream.
 

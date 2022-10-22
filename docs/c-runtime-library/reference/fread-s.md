@@ -49,7 +49,7 @@ For more information about error codes, see [`errno`, `_doserrno`, `_sys_errlist
 
 ## Remarks
 
-The **`fread_s`** function reads up to *`count`* items of *`elementSize`* bytes from the input *`stream`* and stores them in *`buffer`*.  The file pointer that is associated with *`stream`* (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-line feed pairs are replaced with single line feed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.
+The **`fread_s`** function reads up to *`count`* items of *`elementSize`* bytes from the input *`stream`* and stores them in *`buffer`*.  The file pointer that's associated with *`stream`* (if there's one) is advanced by the number of bytes **`fread_s`** read. If the given stream is opened in text mode, carriage return-line feed pairs are replaced with single line feed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item can't be determined.
 
 This function locks out other threads. If you require a non-locking version, use **`_fread_nolock`**.
 

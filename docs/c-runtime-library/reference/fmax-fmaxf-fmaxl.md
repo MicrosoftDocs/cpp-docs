@@ -55,7 +55,7 @@ The second value to compare.
 
 ## Return value
 
-If successful, returns the larger of *`x`* or *`y`*. The value returned is exact, and does not depend on any form of rounding.
+If successful, returns the larger of *`x`* or *`y`*. The value returned is exact, and doesn't depend on any form of rounding.
 
 Otherwise, may return one of the following values:
 
@@ -65,7 +65,7 @@ Otherwise, may return one of the following values:
 |*`y`* = NaN|*`x`*|
 |*`x`* and *`y`* = NaN|NaN|
 
-This function does not use the errors specified in  [`_matherr`](matherr.md).
+This function doesn't use the errors specified in  [`_matherr`](matherr.md).
 
 ## Remarks
 
