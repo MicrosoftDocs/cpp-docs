@@ -34,7 +34,7 @@ wchar_t *_wgetdcwd(
 *`drive`*\
 A non-negative integer that specifies the drive (0 = default drive, 1 = A, 2 = B, and so on).
 
-If the specified drive isn't available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) can't be determined, the invalid-parameter handler is invoked. For more information, see [Parameter validation](../parameter-validation.md).
+If the specified drive isn't available, or the kind of drive can't be determined, the invalid parameter handler is invoked. For more information, see [Parameter validation](../parameter-validation.md).
 
 *`buffer`*\
 Storage location for the path, or `NULL`.
@@ -58,7 +58,7 @@ The **`_getdcwd`** function gets the full path of the current working directory 
 
 **`_wgetdcwd`** is a wide-character version of **`_getdcwd`**, and its *`buffer`* parameter and return value are wide-character strings. Otherwise, **`_wgetdcwd`** and **`_getdcwd`** behave identically.
 
-This function is thread-safe even though it depends on `GetFullPathName`, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
+This function is thread-safe even though it depends on `GetFullPathName`, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and [`GetFullPathName`](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
 
 The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [`_getdcwd_nolock`, `_wgetdcwd_nolock`](getdcwd-nolock-wgetdcwd-nolock.md).
 

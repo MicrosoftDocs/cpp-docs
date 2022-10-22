@@ -44,7 +44,7 @@ The **`tanh`** functions return the hyperbolic tangent of *`x`*. There's no erro
 
 Because C++ allows overloading, you can call overloads of **`tanh`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`tanh`** always takes and returns **`double`**.
 
-If you use the `<tgmath.h>` `tanh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
+If you use the `tanh` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
