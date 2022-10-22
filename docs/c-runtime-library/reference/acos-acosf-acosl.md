@@ -46,7 +46,7 @@ By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an in
 
 Because C++ allows overloading, you can call overloads of **`acos`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`acos`** always takes and returns a **`double`**.
 
-If you use the `<tgmath.h>` `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
+If you use the `acos` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

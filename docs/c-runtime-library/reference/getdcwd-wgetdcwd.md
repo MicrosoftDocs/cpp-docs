@@ -58,7 +58,7 @@ The **`_getdcwd`** function gets the full path of the current working directory 
 
 **`_wgetdcwd`** is a wide-character version of **`_getdcwd`**, and its *`buffer`* parameter and return value are wide-character strings. Otherwise, **`_wgetdcwd`** and **`_getdcwd`** behave identically.
 
-This function is thread-safe even though it depends on `GetFullPathName`, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
+This function is thread-safe even though it depends on `GetFullPathName`, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and [`GetFullPathName`](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
 
 The version of this function that has the `_nolock` suffix behaves identically to this function except that it isn't thread-safe and isn't protected from interference by other threads. For more information, see [`_getdcwd_nolock`, `_wgetdcwd_nolock`](getdcwd-nolock-wgetdcwd-nolock.md).
 
