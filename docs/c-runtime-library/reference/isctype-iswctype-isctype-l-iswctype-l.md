@@ -50,16 +50,16 @@ The locale to use for any locale-dependent tests.
 
 ## Return value
 
-**_isctype** and **iswctype** return a nonzero value if *`c`* has the property specified by *`desc`* in the current locale or 0 if it does not. The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
+**`_isctype`** and **`iswctype`** return a nonzero value if *`c`* has the property specified by *`desc`* in the current locale or 0 if it does not. The versions of these functions with the `_l` suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
-The behavior of **_isctype** and **_isctype_l** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
+The behavior of **`_isctype`** and **`_isctype_l`** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|n/a|**_isctype**|n/a|**_iswctype**|
-|n/a|**_isctype_l**|n/a|**_iswctype_l**|
+|n/a|**`_isctype`**|n/a|**`_iswctype`**|
+|n/a|**`_isctype_l`**|n/a|**`_iswctype_l`**|
 
 ## Remarks
 
@@ -69,10 +69,10 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_isctype**|\<ctype.h>|
-|**iswctype**|\<ctype.h> or \<wchar.h>|
-|**_isctype_l**|\<ctype.h>|
-|**_iswctype_l**|\<ctype.h> or \<wchar.h>|
+|**`_isctype`**|\<ctype.h>|
+|**`iswctype`**|\<ctype.h> or \<wchar.h>|
+|**`_isctype_l`**|\<ctype.h>|
+|**`_iswctype_l`**|\<ctype.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

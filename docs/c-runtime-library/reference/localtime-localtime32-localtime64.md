@@ -29,7 +29,7 @@ Pointer to stored time.
 
 ## Return value
 
-Return a pointer to the structure result, or **`NULL`** if the date passed to the function is:
+Return a pointer to the structure result, or `NULL` if the date passed to the function is:
 
 - Before midnight, January 1, 1970.
 
@@ -39,7 +39,7 @@ Return a pointer to the structure result, or **`NULL`** if the date passed to th
 
 **`_localtime64`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, December 31, 3000, coordinated universal time (UTC), whereas **`_localtime32`** represents dates through 23:59:59 January 18, 2038, UTC.
 
-**`localtime`** is an inline function which evaluates to **`_localtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. Doing this will cause **`localtime`** to evaluate to **`_localtime32`**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
+**`localtime`** is an inline function which evaluates to **`_localtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. Doing this will cause **`localtime`** to evaluate to **`_localtime32`**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
 
 The fields of the structure type [`tm`](../standard-types.md) store the following values, each of which is an **`int`**:
 
@@ -68,7 +68,7 @@ Both the 32-bit and 64-bit versions of [`gmtime`](gmtime-gmtime32-gmtime64.md), 
 > [!NOTE]
 > The target environment should try to determine whether daylight saving time is in effect.
 
-These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return **`NULL`** and set **`errno`** to **`EINVAL`**.
+These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

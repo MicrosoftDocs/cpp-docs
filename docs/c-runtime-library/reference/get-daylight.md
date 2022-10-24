@@ -27,15 +27,15 @@ The offset in hours of daylight saving time.
 
 ## Return value
 
-Zero if successful or an **errno** value if an error occurs.
+Zero if successful or an `errno` value if an error occurs.
 
 ## Remarks
 
-The **_get_daylight** function retrieves the number of hours in daylight saving time as an integer. If daylight saving time is in effect, the default offset is one hour (although a few regions do observe a two-hour offset).
+The **`_get_daylight`** function retrieves the number of hours in daylight saving time as an integer. If daylight saving time is in effect, the default offset is one hour (although a few regions do observe a two-hour offset).
 
-If *`hours`* is **NULL**, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+If *`hours`* is `NULL`, the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
-We recommend you use this function instead of the macro **_daylight** or the deprecated function **__daylight**.
+We recommend you use this function instead of the macro `_daylight` or the deprecated function `__daylight`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_get_daylight**|\<time.h>|
+|**`_get_daylight`**|\<time.h>|
 
 For more information, see [Compatibility](../compatibility.md).
 

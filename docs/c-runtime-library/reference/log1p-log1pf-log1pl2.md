@@ -60,13 +60,13 @@ Otherwise, may return one of the following values:
 |±SNaN|Same as input|INVALID||
 |±QNaN, indefinite|Same as input|||
 
-The **errno** value is set to ERANGE if *`x`* = -1. The **errno** value is set to **EDOM** if *`x`* < -1.
+The `errno` value is set to ERANGE if *`x`* = -1. The `errno` value is set to `EDOM` if *`x`* < -1.
 
 ## Remarks
 
-The **log1p** functions may be more accurate than using `log(x + 1)` when *`x`* is near 0.
+The **`log1p`** functions may be more accurate than using `log(x + 1)` when *`x`* is near 0.
 
-Because C++ allows overloading, you can call overloads of **log1p** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **log1p** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`log1p`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`log1p`** always takes and returns a **`double`**.
 
 If you use the \<tgmath.h> `log1p()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -78,8 +78,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
-|**log1p** macro | \<tgmath.h> ||
+|**`log1p`**, **`log1pf`**, **`log1pl`**|\<math.h>|\<cmath>|
+|**`log1p`** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

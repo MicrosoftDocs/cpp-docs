@@ -12,7 +12,7 @@ ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
 ---
 # `_lrotl`, `_lrotr`
 
-Rotates bits to the left (**_lrotl**) or right (**_lrotr**).
+Rotates bits to the left (**`_lrotl`**) or right (**`_lrotr`**).
 
 ## Syntax
 
@@ -35,13 +35,13 @@ Both functions return the rotated value. There's no error return.
 
 ## Remarks
 
-The **_lrotl** and **_lrotr** functions rotate *`value`* by *`shift`* bits. **_lrotl** rotates the value left, toward more significant bits. **_lrotr** rotates the value right, toward less significant bits. Both functions wrap bits rotated off one end of *`value`* to the other end.
+The **`_lrotl`** and **`_lrotr`** functions rotate *`value`* by *`shift`* bits. **`_lrotl`** rotates the value left, toward more significant bits. **`_lrotr`** rotates the value right, toward less significant bits. Both functions wrap bits rotated off one end of *`value`* to the other end.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_lrotl**, **_lrotr**|\<stdlib.h>|
+|**`_lrotl`**, **`_lrotr`**|\<stdlib.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

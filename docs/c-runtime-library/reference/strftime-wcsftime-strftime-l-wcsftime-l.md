@@ -74,7 +74,7 @@ The number of characters in *`strDest`* is equal to the number of literal charac
 
 The **`strftime`** and **`wcsftime`** functions format the **`tm`** time value in *`timeptr`* according to the supplied *`format`* argument and store the result in the buffer *`strDest`*. At most, *`maxsize`* characters are placed in the string. For a description of the fields in the *`timeptr`* structure, see [`asctime`](asctime-wasctime.md). **`wcsftime`** is the wide-character equivalent of **`strftime`**; its string-pointer argument points to a wide-character string. These functions behave identically otherwise.
 
-This function validates its parameters. If *`strDest`*, *`format`*, or *`timeptr`* is a null pointer, or if the **`tm`** data structure addressed by *`timeptr`* is invalid (for example, if it contains out of range values for the time or date), or if the *`format`* string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets **`errno`** to **`EINVAL`**.
+This function validates its parameters. If *`strDest`*, *`format`*, or *`timeptr`* is a null pointer, or if the **`tm`** data structure addressed by *`timeptr`* is invalid (for example, if it contains out of range values for the time or date), or if the *`format`* string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -84,7 +84,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tcsftime`**|**`strftime`**|**`strftime`**|**`wcsftime`**|
 
-The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that do not begin with **`%`** are copied unchanged to *`strDest`*. The **`LC_TIME`** category of the current locale affects the output formatting of **`strftime`**. (For more information on **`LC_TIME`**, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
+The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that do not begin with **`%`** are copied unchanged to *`strDest`*. The `LC_TIME` category of the current locale affects the output formatting of **`strftime`**. (For more information on `LC_TIME`, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
 The **`strftime`** functions support these formatting codes:
 

@@ -25,7 +25,7 @@ void _tzset( void );
 
 ## Remarks
 
-The **_tzset** function uses the current setting of the environment variable **TZ** to assign values to three global variables: **_daylight**, **_timezone**, and **_tzname**. These variables are used by the [`_ftime`](ftime-ftime32-ftime64.md) and [`localtime`](localtime-localtime32-localtime64.md) functions to make corrections from coordinated universal time (UTC) to local time, and by the [`time`](time-time32-time64.md) function to compute UTC from system time. Use the following syntax to set the **TZ** environment variable:
+The **`_tzset`** function uses the current setting of the environment variable **`TZ`** to assign values to three global variables: `_daylight`, `_timezone`, and `_tzname`. These variables are used by the [`_ftime`](ftime-ftime32-ftime64.md) and [`localtime`](localtime-localtime32-localtime64.md) functions to make corrections from coordinated universal time (UTC) to local time, and by the [`time`](time-time32-time64.md) function to compute UTC from system time. Use the following syntax to set the **`TZ`** environment variable:
 
 > **`set TZ=`***`tzn`* \[**`+`**&#124;**`-`**]*`hh`*\[**`:`***`mm`*\[**:***`ss`*] ][*`dzn`*]
 
@@ -42,29 +42,29 @@ The **_tzset** function uses the current setting of the environment variable **T
  Seconds. Separated from *`mm`* by a colon (**`:`**).
 
  *`dzn`* \
- Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *`dzn`*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
+ Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **`TZ`** without a value for *`dzn`*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
 
 > [!NOTE]
 > Take care in computing the sign of the time difference. Because the time difference is the offset from local time to UTC (rather than the reverse), its sign may be the opposite of what you might intuitively expect. For time zones ahead of UTC, the time difference is negative; for those behind UTC, the difference is positive.
 
-For example, to set the **TZ** environment variable to correspond to the current time zone in Germany, enter the following on the command line:
+For example, to set the **`TZ`** environment variable to correspond to the current time zone in Germany, enter the following on the command line:
 
 > **set TZ=GST-1GDT**
 
 This command uses GST to indicate German standard time, assumes that UTC is one hour behind Germany (or in other words, that Germany is one hour ahead of UTC), and assumes that Germany observes daylight-saving time.
 
-If the **TZ** value is not set, **_tzset** attempts to use the time zone information specified by the operating system. In the Windows operating system, this information is specified in the Date/Time application in Control Panel. If **_tzset** cannot obtain this information, it uses PST8PDT by default, which signifies the Pacific Time zone.
+If the **`TZ`** value is not set, **`_tzset`** attempts to use the time zone information specified by the operating system. In the Windows operating system, this information is specified in the Date/Time application in Control Panel. If **`_tzset`** cannot obtain this information, it uses PST8PDT by default, which signifies the Pacific Time zone.
 
-Based on the **TZ** environment variable value, the following values are assigned to the global variables **_daylight**, **_timezone**, and **_tzname** when **_tzset** is called:
+Based on the **`TZ`** environment variable value, the following values are assigned to the global variables `_daylight`, `_timezone`, and `_tzname` when **`_tzset`** is called:
 
 |Global variable|Description|Default value|
 |---------------------|-----------------|-------------------|
-|**_daylight**|Nonzero value if a daylight-saving-time zone is specified in **TZ** setting; otherwise, 0.|1|
-|**_timezone**|Difference in seconds between local time and UTC.|28800 (28800 seconds equals 8 hours)|
-|**_tzname**[0]|String value of time-zone name from **TZ** environmental variable; empty if **TZ** has not been set.|PST|
-|**_tzname**[1]|String value of daylight-saving-time zone; empty if daylight-saving-time zone is omitted from **TZ** environmental variable.|PDT|
+|`_daylight`|Nonzero value if a daylight-saving-time zone is specified in **`TZ`** setting; otherwise, 0.|1|
+|`_timezone`|Difference in seconds between local time and UTC.|28800 (28800 seconds equals 8 hours)|
+|`_tzname[0]`|String value of time-zone name from **`TZ`** environmental variable; empty if **`TZ`** has not been set.|PST|
+|`_tzname[1]`|String value of daylight-saving-time zone; empty if daylight-saving-time zone is omitted from **`TZ`** environmental variable.|PDT|
 
-The default values shown in the preceding table for **_daylight** and the **_tzname** array correspond to "PST8PDT." If the DST zone is omitted from the **TZ** environmental variable, the value of **_daylight** is 0 and the [`_ftime`](ftime-ftime32-ftime64.md), [`gmtime`](gmtime-gmtime32-gmtime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions return 0 for their DST flags.
+The default values shown in the preceding table for `_daylight` and the `_tzname` array correspond to "PST8PDT." If the DST zone is omitted from the **`TZ`** environmental variable, the value of `_daylight` is 0 and the [`_ftime`](ftime-ftime32-ftime64.md), [`gmtime`](gmtime-gmtime32-gmtime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions return 0 for their DST flags.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -72,9 +72,9 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_tzset**|\<time.h>|
+|**`_tzset`**|\<time.h>|
 
-The **_tzset** function is Microsoft-specific. For more information, see [Compatibility](../compatibility.md).
+The **`_tzset`** function is Microsoft-specific. For more information, see [Compatibility](../compatibility.md).
 
 ## Example
 

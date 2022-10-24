@@ -42,7 +42,7 @@ Pointer to time structure; see [`asctime`](asctime-wasctime.md).
 
 The **`mktime`**, **`_mktime32`** and **`_mktime64`** functions convert the supplied time structure (possibly incomplete) pointed to by *`timeptr`* into a fully defined structure with normalized values and then converts it to a **`time_t`** calendar time value. The converted time has the same encoding as the values returned by the [`time`](time-time32-time64.md) function. The original values of the **`tm_wday`** and **`tm_yday`** components of the *`timeptr`* structure are ignored, and the original values of the other components aren't restricted to their normal ranges.
 
-**`mktime`** is an inline function that is equivalent to **`_mktime64`**, unless **`_USE_32BIT_TIME_T`** is defined, in which case it's equivalent to **`_mktime32`**.
+**`mktime`** is an inline function that is equivalent to **`_mktime64`**, unless `_USE_32BIT_TIME_T` is defined, in which case it's equivalent to **`_mktime32`**.
 
 After an adjustment to UTC, **`_mktime32`** handles dates from midnight, January 1, 1970, to 23:59:59 January 18, 2038, UTC. **`_mktime64`** handles dates from midnight, January 1, 1970 to 23:59:59, December 31, 3000. This adjustment may cause these functions to return -1 (cast to **`time_t`**, **`__time32_t`** or **`__time64_t`**) even though the date you specify is within range. For example, if you are in Cairo, Egypt, which is two hours ahead of UTC, two hours will first be subtracted from the date you specify in *`timeptr`*; this may now put your date out of range.
 
@@ -58,7 +58,7 @@ The C run-time library will determine the daylight savings time behavior from th
 
 Note that **`gmtime`** and **`localtime`** (and **`_gmtime32`**, **`_gmtime64`**, **`_localtime32`**, and **`_localtime64`**) use a single buffer per thread for the conversion. If you supply this buffer to **`mktime`**, **`_mktime32`** or **`_mktime64`**, the previous contents are destroyed.
 
-These functions validate their parameter. If *`timeptr`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**.
+These functions validate their parameter. If *`timeptr`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

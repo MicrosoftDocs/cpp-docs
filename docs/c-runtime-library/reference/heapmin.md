@@ -22,13 +22,13 @@ int _heapmin( void );
 
 ## Return value
 
-If successful, **_heapmin** returns 0; otherwise, the function returns -1 and sets **errno** to **ENOSYS**.
+If successful, **`_heapmin`** returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.
 
 For more information about this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_heapmin** function minimizes the heap by releasing unused heap memory to the operating system. If the operating system does not support **_heapmin**(for example, Windows 98), the function returns -1 and sets **errno** to **ENOSYS**.
+The **`_heapmin`** function minimizes the heap by releasing unused heap memory to the operating system. If the operating system does not support **`_heapmin`**(for example, Windows 98), the function returns -1 and sets `errno` to `ENOSYS`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -36,7 +36,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**_heapmin**|\<malloc.h>|\<errno.h>|
+|**`_heapmin`**|\<malloc.h>|\<errno.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

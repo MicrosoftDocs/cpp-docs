@@ -36,7 +36,7 @@ Long integer exponent.
 
 ## Return value
 
-Returns an exponential value if successful. On overflow (depending on the sign of *`x`*), **`_scalb`** returns +/- **`HUGE_VAL`**; the **`errno`** variable is set to **`ERANGE`**.
+Returns an exponential value if successful. On overflow (depending on the sign of *`x`*), **`_scalb`** returns +/- `HUGE_VAL`; the `errno` variable is set to `ERANGE`.
 
 For more information about this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

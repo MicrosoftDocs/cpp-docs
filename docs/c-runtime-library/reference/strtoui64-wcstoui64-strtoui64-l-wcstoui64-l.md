@@ -57,11 +57,11 @@ Locale to use.
 
 ## Return value
 
-**`_strtoui64`** returns the value represented in the string *`strSource`*, except when the representation would cause an overflow, in which case it returns **`_UI64_MAX`**. **`_strtoui64`** returns 0 if no conversion can be performed.
+**`_strtoui64`** returns the value represented in the string *`strSource`*, except when the representation would cause an overflow, in which case it returns `_UI64_MAX`. **`_strtoui64`** returns 0 if no conversion can be performed.
 
-**`_UI64_MAX`** is defined in `LIMITS.H`.
+`_UI64_MAX` is defined in `LIMITS.H`.
 
-If *`strSource`* is **`NULL`** or the *`base`* is nonzero and either less than 2 or greater than 36, **`errno`** is set to **`EINVAL`**.
+If *`strSource`* is `NULL` or the *`base`* is nonzero and either less than 2 or greater than 36, `errno` is set to `EINVAL`.
 
 For more information on return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -80,9 +80,9 @@ By default, this function's global state is scoped to the application. To change
 |**`_tcstoui64`**|**`_strtoui64`**|**`_strtoui64`**|**`_wcstoui64`**|
 |**`_tcstoui64_l`**|**`_strtoui64_l`**|**`_strtoui64_l`**|**`_wcstoui64_l`**|
 
-The current locale's **`LC_NUMERIC`** category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoui64_l`** and **`_wcstoui64_l`** are identical to the corresponding functions without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
+The current locale's `LC_NUMERIC` category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoui64_l`** and **`_wcstoui64_l`** are identical to the corresponding functions without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
-If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
+If *`endptr`* isn't `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
 
 **`_strtoui64`** expects *`strSource`* to point to a string of the following form:
 

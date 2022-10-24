@@ -59,7 +59,7 @@ These functions differ from **`_vscprintf`** and **`_vscwprintf`** only in that 
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**.
+If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 > [!IMPORTANT]
 > Ensure that if *`format`* is a user-defined string, it is null terminated and has the correct number and type of parameters. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -67,7 +67,7 @@ If *`format`* is a null pointer, the invalid parameter handler is invoked, as de
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_vsctprintf_p`**|**`_vscprintf_p`**|**`_vscprintf_p`**|**`_vscwprintf_p`**|
 |**`_vsctprintf_p_l`**|**`_vscprintf_p_l`**|**`_vscprintf_p_l`**|**`_vscwprintf_p_l`**|

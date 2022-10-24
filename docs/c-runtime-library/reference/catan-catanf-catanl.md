@@ -38,13 +38,13 @@ The arctangent of *`z`*, in radians. The result is unbounded along the imaginary
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **catan** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **catan** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`catan`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`catan`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**catan**,               **catanf**, **catanl**|\<complex.h>|\<ccomplex>|
+|**`catan`**,               **`catanf`**, **`catanl`**|\<complex.h>|\<ccomplex>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -32,19 +32,19 @@ Pointer to stored time to convert.
 
 ## Return value
 
-A pointer to the character string result. **NULL** is returned when:
+A pointer to the character string result. `NULL` is returned when:
 
 - *`sourceTime`* represents a date before midnight, January 1, 1970, UTC.
 
-- You use **_ctime32** or **_wctime32**, and *`sourceTime`* represents a date after 23:59:59 January 18, 2038, UTC.
+- You use **`_ctime32`** or **`_wctime32`**, and *`sourceTime`* represents a date after 23:59:59 January 18, 2038, UTC.
 
-- You use **_ctime64** or **_wctime64**, and *`sourceTime`* represents a date after 23:59:59, December 31, 3000, UTC.
+- You use **`_ctime64`** or **`_wctime64`**, and *`sourceTime`* represents a date after 23:59:59, December 31, 3000, UTC.
 
-**ctime** is an inline function that evaluates to **_ctime64**, and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. This macro causes **ctime** to evaluate to **_ctime32**. We don't recommend you use it, because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
+**`ctime`** is an inline function that evaluates to **`_ctime64`**, and `time_t` is equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. This macro causes **`ctime`** to evaluate to **`_ctime32`**. We don't recommend you use it, because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
 
 ## Remarks
 
-The **ctime** function converts a time value stored as a [`time_t`](../standard-types.md) value into a character string. The *`sourceTime`* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **`ctime`** function converts a time value stored as a [`time_t`](../standard-types.md) value into a character string. The *`sourceTime`* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
 ```Output
 Wed Jan 02 02:03:55 1980\n\0
@@ -54,32 +54,32 @@ A 24-hour clock is used. All fields have a constant width. The newline character
 
 The converted character string is also adjusted according to the local time zone settings. For information on configuring the local time, see the [`time`](time-time32-time64.md), [`_ftime`](ftime-ftime32-ftime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions. For details about defining the time zone environment and global variables, see the [`_tzset`](tzset.md) function.
 
-A call to **ctime** modifies the single statically allocated buffer used by the **gmtime** and **localtime** functions. Each call to one of these routines destroys the result of the previous call. **ctime** shares a static buffer with the **asctime** function. Thus, a call to **ctime** destroys the results of any previous call to **asctime**, **localtime**, or **gmtime**.
+A call to **`ctime`** modifies the single statically allocated buffer used by the `gmtime` and `localtime` functions. Each call to one of these routines destroys the result of the previous call. **`ctime`** shares a static buffer with the `asctime` function. Thus, a call to **`ctime`** destroys the results of any previous call to `asctime`, `localtime`, or `gmtime`.
 
-**_wctime** and **_wctime64** are the wide-character version of **ctime** and **_ctime64**; returning a pointer to wide-character string. Otherwise, **_ctime64**, **_wctime**, and **_wctime64** behave identically to **ctime**.
+**`_wctime`** and **`_wctime64`** are the wide-character version of **`ctime`** and **`_ctime64`**; returning a pointer to wide-character string. Otherwise, **`_ctime64`**, **`_wctime`**, and **`_wctime64`** behave identically to **`ctime`**.
 
-These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return **NULL** and set **errno** to **EINVAL**.
+These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tctime**|**ctime**|**ctime**|**_wctime**|
-|**_tctime32**|**_ctime32**|**_ctime32**|**_wctime32**|
-|**_tctime64**|**_ctime64**|**_ctime64**|**_wctime64**|
+|`_tctime`|**`ctime`**|**`ctime`**|**`_wctime`**|
+|`_tctime32`|**`_ctime32`**|**`_ctime32`**|**`_wctime32`**|
+|`_tctime64`|**`_ctime64`**|**`_ctime64`**|**`_wctime64`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**ctime**|\<time.h>|
-|**_ctime32**|\<time.h>|
-|**_ctime64**|\<time.h>|
-|**_wctime**|\<time.h> or \<wchar.h>|
-|**_wctime32**|\<time.h> or \<wchar.h>|
-|**_wctime64**|\<time.h> or \<wchar.h>|
+|**`ctime`**|\<time.h>|
+|**`_ctime32`**|\<time.h>|
+|**`_ctime64`**|\<time.h>|
+|**`_wctime`**|\<time.h> or \<wchar.h>|
+|**`_wctime32`**|\<time.h> or \<wchar.h>|
+|**`_wctime64`**|\<time.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -8,7 +8,7 @@ ms.assetid: da9150de-70ea-4d2f-90e6-ddb9202dd80b
 ---
 # Interpretation of multibyte-character sequences
 
-Most multibyte-character routines in the Microsoft run-time library recognize multibyte-character sequences relating to a multibyte code page. The output value is affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The versions with the **_l** suffix are identical, except they use the locale parameter instead of the current locale.
+Most multibyte-character routines in the Microsoft run-time library recognize multibyte-character sequences relating to a multibyte code page. The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior. The versions with the `_l` suffix are identical, except they use the locale parameter instead of the current locale.
 
 ## Locale-dependent multibyte routines
 

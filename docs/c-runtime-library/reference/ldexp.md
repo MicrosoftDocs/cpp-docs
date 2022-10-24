@@ -51,13 +51,13 @@ Integer exponent.
 
 ## Return value
 
-The **ldexp** functions return the value of *`x`* \* 2<sup>*`exp`*</sup> if successful. On overflow, and depending on the sign of *`x`*, **ldexp** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
+The **`ldexp`** functions return the value of *`x`* \* 2<sup>*`exp`*</sup> if successful. On overflow, and depending on the sign of *`x`*, **`ldexp`** returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.
 
-For more information about **errno** and possible error return values, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about `errno` and possible error return values, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ldexp** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **ldexp** always takes a **`double`** and an **`int`** and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`ldexp`** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`ldexp`** always takes a **`double`** and an **`int`** and returns a **`double`**.
 
 If you use the \<tgmath.h> `ldexp()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -67,8 +67,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**ldexp**, **ldexpf**, **ldexpl**|\<math.h>|\<cmath>|
-|**ldexp** macro | \<tgmath.h> ||
+|**`ldexp`**, **`ldexpf`**, **`ldexpl`**|\<math.h>|\<cmath>|
+|**`ldexp`** macro | \<tgmath.h> ||
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

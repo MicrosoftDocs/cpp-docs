@@ -46,7 +46,7 @@ Any numbers.
 
 |Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|
-|± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
+|± QNAN, IND|none|`_DOMAIN`|
 
 ## Remarks
 

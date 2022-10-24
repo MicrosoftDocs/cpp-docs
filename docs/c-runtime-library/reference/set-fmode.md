@@ -25,17 +25,17 @@ errno_t _set_fmode(
 ### Parameters
 
 *`mode`*\
-The file translation mode desired: **_O_TEXT** or **_O_BINARY**.
+The file translation mode desired: `_O_TEXT` or `_O_BINARY`.
 
 ## Return value
 
-Returns zero if successful, an error code on failure. If *`mode`* is not **_O_TEXT** or **_O_BINARY** or **_O_WTEXT**, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+Returns zero if successful, an error code on failure. If *`mode`* is not `_O_TEXT` or `_O_BINARY` or `_O_WTEXT`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ## Remarks
 
-The function sets the [`_fmode`](../fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations **_open** and **_pipe**.
+The function sets the [`_fmode`](../fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations `_open` and `_pipe`.
 
-**_O_TEXT** and **_O_BINARY** are defined in Fcntl.h. **EINVAL** is defined in Errno.h.
+`_O_TEXT` and `_O_BINARY` are defined in Fcntl.h. `EINVAL` is defined in Errno.h.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -43,7 +43,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|**_set_fmode**|\<stdlib.h>|\<fcntl.h>, \<errno.h>|
+|**`_set_fmode`**|\<stdlib.h>|\<fcntl.h>, \<errno.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

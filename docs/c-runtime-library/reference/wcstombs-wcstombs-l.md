@@ -58,7 +58,7 @@ The locale to use.
 
 ## Return value
 
-If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can't convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets **`errno`** to **`EILSEQ`**.
+If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *`mbstr`* argument is `NULL`, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can't convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets `errno` to `EILSEQ`.
 
 ## Remarks
 
@@ -66,9 +66,9 @@ The **`wcstombs`** function converts the wide-character string pointed to by *`w
 
 If **`wcstombs`** encounters the wide-character `NULL` character (L'\0') either before or when *`count`* occurs, it converts it to an 8-bit 0 and stops. Thus, the multibyte character string at *`mbstr`* is null-terminated only if **`wcstombs`** encounters a wide-character `NULL` character during conversion. If the sequences pointed to by *`wcstr`* and *`mbstr`* overlap, the behavior of **`wcstombs`** is undefined.
 
-If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string.
+If the *`mbstr`* argument is `NULL`, **`wcstombs`** returns the required size in bytes of the destination string.
 
-**`wcstombs`** validates its parameters. If *`wcstr`* is **`NULL`**, or if *`count`* is greater than **`INT_MAX`**, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets **`errno`** to **`EINVAL`** and returns -1.
+**`wcstombs`** validates its parameters. If *`wcstr`* is `NULL`, or if *`count`* is greater than `INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
 
 **`wcstombs`** uses the current locale for any locale-dependent behavior; **`_wcstombs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 

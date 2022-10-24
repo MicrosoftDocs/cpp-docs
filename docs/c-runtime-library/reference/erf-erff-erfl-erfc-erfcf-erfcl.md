@@ -58,17 +58,17 @@ A floating-point value.
 
 ## Return value
 
-The **erf** functions return the Gauss error function of *`x`*. The **erfc** functions return the complementary Gauss error function of *`x`*.
+The **`erf`** functions return the Gauss error function of *`x`*. The **`erfc`** functions return the complementary Gauss error function of *`x`*.
 
 ## Remarks
 
-The **erf** functions calculate the Gauss error function of *`x`*, which is defined as:
+The **`erf`** functions calculate the Gauss error function of *`x`*, which is defined as:
 
 ![The error function of x equals two over the square root of pi times the integral from zero to x of e to the minus t squared d t. ](media/crt_erf_formula.PNG "The error function of x")
 
-The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There's no error return. The **erfc** functions return a value in the range 0 to 2. If *`x`* is too large for **erfc**, the **errno** variable is set to **ERANGE**.
+The complementary Gauss error function is defined as 1 - erf(x). The **`erf`** functions return a value in the range -1.0 to 1.0. There's no error return. The **`erfc`** functions return a value in the range 0 to 2. If *`x`* is too large for **`erfc`**, the `errno` variable is set to `ERANGE`.
 
-Because C++ allows overloading, you can call **erf** and **erfc** overloads that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **erf** and **erfc** always take and return a **`double`**.
+Because C++ allows overloading, you can call **`erf`** and **`erfc`** overloads that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`erf`** and **`erfc`** always take and return a **`double`**.
 
 If you use the \<tgmath.h> `erf()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
@@ -78,8 +78,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Function|Required header|
 |--------------|---------------------|
-|**erf**, **erff**, **erfl**, **erfc**, **erfcf**, **erfcl**|\<math.h>|
-|**erf** macro | \<tgmath.h> |
+|**`erf`**, **`erff`**, **`erfl`**, **`erfc`**, **`erfcf`**, **`erfcl`**|\<math.h>|
+|**`erf`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

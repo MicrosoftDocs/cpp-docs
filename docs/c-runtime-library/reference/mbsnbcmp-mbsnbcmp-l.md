@@ -54,17 +54,17 @@ The return value indicates the ordinal relationship between the substrings of *`
 |0|*`string1`* substring is identical to *`string2`* substring.|
 |> 0|*`string1`* substring is greater than *`string2`* substring.|
 
-On a parameter validation error, **_mbsnbcmp** and **_mbsnbcmp_l** return **_NLSCMPERROR**, which is defined in \<string.h> and \<mbstring.h>.
+On a parameter validation error, **`_mbsnbcmp`** and **`_mbsnbcmp_l`** return `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The **_mbsnbcmp** functions compare at most the first *`count`* bytes in *`string1`* and *`string2`* and return a value that indicates the relationship between the substrings. **_mbsnbcmp** is a case-sensitive version of **_mbsnbicmp**. Unlike **_mbsnbcoll**, **_mbsnbcmp** is not affected by the collation order of the locale. **_mbsnbcmp** recognizes multibyte-character sequences according to the current multibyte [code page](../code-pages.md).
+The **`_mbsnbcmp`** functions compare at most the first *`count`* bytes in *`string1`* and *`string2`* and return a value that indicates the relationship between the substrings. **`_mbsnbcmp`** is a case-sensitive version of **`_mbsnbicmp`**. Unlike `_mbsnbcoll`, **`_mbsnbcmp`** is not affected by the collation order of the locale. **`_mbsnbcmp`** recognizes multibyte-character sequences according to the current multibyte [code page](../code-pages.md).
 
-**_mbsnbcmp** resembles **_mbsncmp**, except that **_mbsncmp** compares strings by characters rather than by bytes.
+**`_mbsnbcmp`** resembles **`_mbsncmp`**, except that **`_mbsncmp`** compares strings by characters rather than by bytes.
 
-The output value is affected by the **LC_CTYPE** category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [`setlocale`](setlocale-wsetlocale.md). The **_mbsnbcmp** function uses the current locale for this locale-dependent behavior. The **_mbsnbcmp_l** function is identical except that it uses the *`locale`* parameter instead. For more information, see [Locale](../locale.md).
+The output value is affected by the `LC_CTYPE` category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [`setlocale`](setlocale-wsetlocale.md). The **`_mbsnbcmp`** function uses the current locale for this locale-dependent behavior. The **`_mbsnbcmp_l`** function is identical except that it uses the *`locale`* parameter instead. For more information, see [Locale](../locale.md).
 
-If either *`string1`* or *`string2`* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return **_NLSCMPERROR** and **errno** is set to **EINVAL**.
+If either *`string1`* or *`string2`* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return `_NLSCMPERROR` and `errno` is set to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -72,15 +72,15 @@ By default, this function's global state is scoped to the application. To change
 
 |Tchar.h routine|_UNICODE and  _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|---------------------------------------|--------------------|-----------------------|
-|**_tcsncmp**|[`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**_mbsnbcmp**|[`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
-|**_tcsncmp_l**|[`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**_mbsnbcml**|[`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
+|`_tcsncmp`|[`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**`_mbsnbcmp`**|[`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
+|`_tcsncmp_l`|[`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**`_mbsnbcml`**|[`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_mbsnbcmp**|\<mbstring.h>|
-|**_mbsnbcmp_l**|\<mbstring.h>|
+|**`_mbsnbcmp`**|\<mbstring.h>|
+|**`_mbsnbcmp_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

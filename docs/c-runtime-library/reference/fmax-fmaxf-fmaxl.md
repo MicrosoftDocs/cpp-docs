@@ -77,8 +77,8 @@ If you use the \<tgmath.h> `fmax()` macro, the type of the argument determines w
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**fmax**, **fmaxf**, **fmaxl**|\<math.h>|\<cmath> or \<math.h>|
-|**fmax** macro | \<tgmath.h> ||
+|**`fmax`**, **`fmaxf`**, **`fmaxl`**|\<math.h>|\<cmath> or \<math.h>|
+|**`fmax`** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

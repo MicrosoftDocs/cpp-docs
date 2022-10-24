@@ -42,7 +42,7 @@ The *`index`* of one of the two time zone names to retrieve.
 |-|-|-|
 |0|Time zone name|`"PST"`|
 |1|Daylight standard time zone name|`"PDT"`|
-|> 1 or < 0|**`errno`** set to `EINVAL`|not modified|
+|> 1 or < 0|`errno` set to `EINVAL`|not modified|
 
 Unless explicitly updated during runtime, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. For more information, see the [Remarks](#remarks).
 
@@ -50,9 +50,9 @@ The time zone string isn't guaranteed to be the same between OS releases. Offici
 
 ## Return value
 
-Zero if successful, otherwise an **`errno`** type value.
+Zero if successful, otherwise an `errno` type value.
 
-If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to `EINVAL` and returns `EINVAL`.
+If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ### Error conditions
 

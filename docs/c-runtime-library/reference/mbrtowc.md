@@ -37,7 +37,7 @@ Address of a sequence of bytes (a multibyte character).
 Number of bytes to check.
 
 *`mbstate`*\
-Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *`mbstate`* argument.
+Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always pass your own *`mbstate`* argument.
 
 ## Return value
 
@@ -50,7 +50,7 @@ The next *`count`* or fewer bytes complete the multibyte character that represen
 The next *`count`* or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character. The wide character equivalent is stored in *`wchar`*, if *`wchar`* is not a null pointer.
 
 (size_t)(-1)
-An encoding error occurred. The next *`count`* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, **errno** is set to EILSEQ and the conversion shift state in *`mbstate`* is unspecified.
+An encoding error occurred. The next *`count`* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, `errno` is set to EILSEQ and the conversion shift state in *`mbstate`* is unspecified.
 
 (size_t)(-2)
 The next *`count`* bytes contribute to an incomplete but potentially valid multibyte character, and all *`count`* bytes have been processed. No value is stored in *`wchar`*, but *`mbstate`* is updated to restart the function.
@@ -65,7 +65,7 @@ In this case, the value of the arguments *`wchar`* and *`count`* are ignored.
 
 If *`mbchar`* is not a null pointer, the function examines *`count`* bytes from *`mbchar`* to determine the required number of bytes that are required to complete the next multibyte character. If the next character is valid, the corresponding multibyte character is stored in *`wchar`* if it is not a null pointer. If the character is the corresponding wide null character, the resulting state of *`mbstate`* is the initial conversion state.
 
-The **mbrtowc** function differs from [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *`mbstate`* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
+The **`mbrtowc`** function differs from [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *`mbstate`* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `wcsrlen` instead of `wcslen` if a subsequent call to `wcsrtombs` is used instead of `wcstombs`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -192,7 +192,7 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 
 |Routine|Required header|
 |-------------|---------------------|
-|**mbrtowc**|\<wchar.h>|
+|**`mbrtowc`**|\<wchar.h>|
 
 ## See also
 

@@ -42,7 +42,7 @@ Your translator function should do no more than throw a C++ typed exception. If 
 
 In a multithreaded environment, translator functions are maintained separately for each thread. Each new thread needs to install its own translator function. Thus, each thread is in charge of its own translation handling. **`_set_se_translator`** is specific to one thread--another DLL can install a different translation function.
 
-The *`seTransFunction`* function that you write must be a native-compiled function (not compiled with `/clr`). It must take an unsigned integer and a pointer to a Win32 **`_EXCEPTION_POINTERS`** structure as arguments. The arguments are the return values of calls to the Win32 API **`GetExceptionCode`** and **`GetExceptionInformation`** functions, respectively.
+The *`seTransFunction`* function that you write must be a native-compiled function (not compiled with `/clr`). It must take an unsigned integer and a pointer to a Win32 `_EXCEPTION_POINTERS` structure as arguments. The arguments are the return values of calls to the Win32 API `GetExceptionCode` and `GetExceptionInformation` functions, respectively.
 
 ```cpp
 typedef void (__cdecl *_se_translator_function)(unsigned int, struct _EXCEPTION_POINTERS* );
@@ -50,7 +50,7 @@ typedef void (__cdecl *_se_translator_function)(unsigned int, struct _EXCEPTION_
 
 For **`_set_se_translator`**, there are implications when dynamically linking to the CRT; another DLL in the process might call **`_set_se_translator`** and replace your handler with its own.
 
-When using **`_set_se_translator`** from managed code (code compiled with `/clr`) or mixed native and managed code, be aware that the translator affects exceptions generated in native code only. Any managed exceptions generated in managed code (such as when raising `System::Exception`) aren't routed through the translator function. Exceptions raised in managed code using the Win32 function **`RaiseException`** or caused by a system exception like a divide by zero exception are routed through the translator.
+When using **`_set_se_translator`** from managed code (code compiled with `/clr`) or mixed native and managed code, be aware that the translator affects exceptions generated in native code only. Any managed exceptions generated in managed code (such as when raising `System::Exception`) aren't routed through the translator function. Exceptions raised in managed code using the Win32 function `RaiseException` or caused by a system exception like a divide by zero exception are routed through the translator.
 
 ## Requirements
 

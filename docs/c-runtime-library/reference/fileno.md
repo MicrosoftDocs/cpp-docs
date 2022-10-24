@@ -24,11 +24,11 @@ int _fileno(
 ### Parameters
 
 *`stream`*\
-Pointer to the **`FILE`** structure.
+Pointer to the `FILE` structure.
 
 ## Return value
 
-**`_fileno`** returns the file descriptor. There's no error return. The result is undefined if *`stream`* doesn't specify an open file. If stream is **`NULL`**, **`_fileno`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to **`EINVAL`**.
+**`_fileno`** returns the file descriptor. There's no error return. The result is undefined if *`stream`* doesn't specify an open file. If stream is `NULL`, **`_fileno`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.
 
 For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

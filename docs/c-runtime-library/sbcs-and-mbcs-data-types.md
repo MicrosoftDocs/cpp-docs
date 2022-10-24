@@ -16,13 +16,13 @@ Any Microsoft MBCS run-time library routine that handles only a single multibyte
 
 It's best to represent a byte of a multibyte character as an 8-bit **`unsigned char`**. Or, to avoid a negative result, convert a single-byte character of type **`char`** to an **`unsigned char`** before converting it to an **`int`** or a **`long`**.
 
-Because some SBCS string-handling functions take (signed) **`char`**<strong>\*</strong> parameters, a type mismatch compiler warning will result when **_MBCS** is defined. There are three ways to avoid this warning, listed in order of efficiency:
+Because some SBCS string-handling functions take (signed) **`char`**<strong>\*</strong> parameters, a type mismatch compiler warning will result when `_MBCS` is defined. There are three ways to avoid this warning, listed in order of efficiency:
 
 1. Use the type-safe inline functions in TCHAR.H. This behavior is the default.
 
-1. Use the direct macros in TCHAR.H by defining **_MB_MAP_DIRECT** on the command line. If you do, you must manually match types. This method is the fastest but isn't type-safe.
+1. Use the direct macros in TCHAR.H by defining `_MB_MAP_DIRECT` on the command line. If you do, you must manually match types. This method is the fastest but isn't type-safe.
 
-1. Use the type-safe statically linked library functions in TCHAR.H. To do so, define the constant **_NO_INLINING** on the command line. This method is the slowest, but the most type-safe.
+1. Use the type-safe statically linked library functions in TCHAR.H. To do so, define the constant `_NO_INLINING` on the command line. This method is the slowest, but the most type-safe.
 
 ## See also
 

@@ -29,17 +29,17 @@ The floating-point value to test.
 
 ## Return value
 
-**isnormal** returns a nonzero value (**`true`** in C++ code) if the argument *`x`* is neither zero, subnormal, infinite, nor a NaN. Otherwise, **isnormal** returns 0 (**`false`** in C++ code).
+**`isnormal`** returns a nonzero value (**`true`** in C++ code) if the argument *`x`* is neither zero, subnormal, infinite, nor a NaN. Otherwise, **`isnormal`** returns 0 (**`false`** in C++ code).
 
 ## Remarks
 
-**isnormal** is a macro when compiled as C, and an inline function template when compiled as C++.
+**`isnormal`** is a macro when compiled as C, and an inline function template when compiled as C++.
 
 ## Requirements
 
 |Function|Required header (C)|Required header (C++)|
 |--------------|---------------------------|-------------------------------|
-|**isnormal**|\<math.h>|\<math.h> or \<cmath>|
+|**`isnormal`**|\<math.h>|\<math.h> or \<cmath>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

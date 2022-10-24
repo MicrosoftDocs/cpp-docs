@@ -15,7 +15,7 @@ ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
 Appends characters to a string. These versions of [`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbsncat_s** and **_mbsncat_s_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsncat_s`** and **`_mbsncat_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -125,9 +125,9 @@ Returns 0 if successful, an error code on failure.
 
 |*`strDestination`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDestination`*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**NULL** or unterminated|any|any|**EINVAL**|not modified|
-|any|any|**NULL**|**EINVAL**|not modified|
-|any|0, or too small|any|**ERANGE**|not modified|
+|`NULL` or unterminated|any|any|`EINVAL`|not modified|
+|any|any|`NULL`|`EINVAL`|not modified|
+|any|0, or too small|any|`ERANGE`|not modified|
 
 ## Remarks
 
@@ -143,9 +143,9 @@ strncpy_s(dst, _countof(dst), "12", 2);
 strncat_s(dst, _countof(dst), "34567", 3);
 ```
 
-means that we're asking **strncat_s** to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence **strncat_s** zeroes out the string and calls the invalid parameter handler.
+means that we're asking **`strncat_s`** to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence **`strncat_s`** zeroes out the string and calls the invalid parameter handler.
 
-If truncation behavior is needed, use **_TRUNCATE** or adjust the *`count`* parameter accordingly:
+If truncation behavior is needed, use `_TRUNCATE` or adjust the *`count`* parameter accordingly:
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
@@ -159,11 +159,11 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 In all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
-If *`strSource`* or *`strDest`* is **NULL**, or *`numberOfElements`* is zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL** without modifying its parameters.
+If *`strSource`* or *`strDest`* is `NULL`, or *`numberOfElements`* is zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL` without modifying its parameters.
 
-**wcsncat_s** and **_mbsncat_s** are wide-character and multibyte-character versions of **strncat_s**. The string arguments and return value of **wcsncat_s** are wide-character strings; those of **_mbsncat_s** are multibyte-character strings. These three functions behave identically otherwise.
+**`wcsncat_s`** and **`_mbsncat_s`** are wide-character and multibyte-character versions of **`strncat_s`**. The string arguments and return value of **`wcsncat_s`** are wide-character strings; those of **`_mbsncat_s`** are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -173,20 +173,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsncat_s**|**strncat_s**|**_mbsnbcat_s**|**wcsncat_s**|
-|**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
+|`_tcsncat_s`|**`strncat_s`**|**`_mbsnbcat_s`**|**`wcsncat_s`**|
+|`_tcsncat_s_l`|**`_strncat_s_l`**|**`_mbsnbcat_s_l`**|**`_wcsncat_s_l`**|
 
-**_strncat_s_l** and **_wcsncat_s_l** have no locale dependence; they're  are only provided for **_tcsncat_s_l**.
+**`_strncat_s_l`** and **`_wcsncat_s_l`** have no locale dependence; they're  are only provided for **`_tcsncat_s_l`**.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**strncat_s**|\<string.h>|
-|**wcsncat_s**|\<string.h> or \<wchar.h>|
-|**_mbsncat_s**, **_mbsncat_s_l**|\<mbstring.h>|
+|**`strncat_s`**|\<string.h>|
+|**`wcsncat_s`**|\<string.h> or \<wchar.h>|
+|**`_mbsncat_s`**, **`_mbsncat_s_l`**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

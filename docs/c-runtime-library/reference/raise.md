@@ -31,22 +31,22 @@ Signal to be raised.
 
 ## Return value
 
-If successful, **raise** returns 0. Otherwise, it returns a nonzero value.
+If successful, **`raise`** returns 0. Otherwise, it returns a nonzero value.
 
 ## Remarks
 
-The **raise** function sends *`sig`* to the executing program. If a previous call to **signal** has installed a signal-handling function for *`sig`*, **raise** executes that function. If no handler function has been installed, the default action associated with the signal value *`sig`* is taken, as follows.
+The **`raise`** function sends *`sig`* to the executing program. If a previous call to `signal` has installed a signal-handling function for *`sig`*, **`raise`** executes that function. If no handler function has been installed, the default action associated with the signal value *`sig`* is taken, as follows.
 
 |Signal|Meaning|Default|
 |------------|-------------|-------------|
-|**SIGABRT**|Abnormal termination|Terminates the calling program with exit code 3|
-|**SIGFPE**|Floating-point error|Terminates the calling program|
-|**SIGILL**|Illegal instruction|Terminates the calling program|
-|**SIGINT**|CTRL+C interrupt|Terminates the calling program|
-|**SIGSEGV**|Illegal storage access|Terminates the calling program|
-|**SIGTERM**|Termination request sent to the program|Ignores the signal|
+|`SIGABRT`|Abnormal termination|Terminates the calling program with exit code 3|
+|`SIGFPE`|Floating-point error|Terminates the calling program|
+|`SIGILL`|Illegal instruction|Terminates the calling program|
+|`SIGINT`|CTRL+C interrupt|Terminates the calling program|
+|`SIGSEGV`|Illegal storage access|Terminates the calling program|
+|`SIGTERM`|Termination request sent to the program|Ignores the signal|
 
-If the argument is not a valid signal as specified above, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If not handled, the function sets **errno** to **EINVAL** and returns a nonzero value.
+If the argument is not a valid signal as specified above, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If not handled, the function sets `errno` to `EINVAL` and returns a nonzero value.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -54,7 +54,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**raise**|\<signal.h>|
+|**`raise`**|\<signal.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

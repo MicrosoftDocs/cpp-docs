@@ -30,7 +30,7 @@ Any file descriptor.
 
 ## Return value
 
-**`_dup`** returns a new file descriptor. **`_dup2`** returns 0 to indicate success. If an error occurs, each function returns -1 and sets **`errno`** to **`EBADF`** if the file descriptor is invalid, or to **`EMFILE`** if no more file descriptors are available. When passed an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
+**`_dup`** returns a new file descriptor. **`_dup2`** returns 0 to indicate success. If an error occurs, each function returns -1 and sets `errno` to `EBADF` if the file descriptor is invalid, or to `EMFILE` if no more file descriptors are available. When passed an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

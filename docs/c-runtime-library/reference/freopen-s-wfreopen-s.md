@@ -49,7 +49,7 @@ The stream to reopen. It's flushed and any files associated with it are closed.
 
 ## Return value
 
-Zero on success; otherwise an error code. If an error occurs, the original file is closed and **`NULL`** is written to *`stream`* unless *`stream`* is also **`NULL`**
+Zero on success; otherwise an error code. If an error occurs, the original file is closed and `NULL` is written to *`stream`* unless *`stream`* is also `NULL`
 
 For more information about error codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -59,13 +59,13 @@ The **`freopen_s`** function is typically used to attach the pre-opened streams 
 
 The **`freopen_s`** function closes the file currently associated with *`stream`* and reassigns *`stream`* to the file specified by *`path`*. **`_wfreopen_s`** is a wide-character version of **`freopen_s`**; the *`path`* and *`mode`* arguments to **`_wfreopen_s`** are wide-character strings. **`_wfreopen_s`** and **`freopen_s`** behave identically otherwise.
 
-If any of *`pFile`*, *`path`*, *`mode`*, or *`stream`* are **`NULL`**, or if *`path`* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`EINVAL`**.
+If any of *`pFile`*, *`path`*, *`mode`*, or *`stream`* are `NULL`, or if *`path`* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tfreopen_s`**|**`freopen_s`**|**`freopen_s`**|**`_wfreopen_s`**|
 
@@ -95,7 +95,7 @@ When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both re
 
 In text (translated) mode, carriage return-line feed (CR-LF) combinations are translated into single line feed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **`"a+"`**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file may cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file. Don't use the **`t`** option when you want ANSI portability because it's a Microsoft extension.
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`.
 
 For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 

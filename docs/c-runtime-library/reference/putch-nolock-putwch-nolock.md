@@ -35,26 +35,26 @@ Character to be output.
 
 ## Return value
 
-Returns *`c`* if successful. If **_putch_nolock** fails, it returns **EOF**; if **_putwch_nolock** fails, it returns **WEOF**.
+Returns *`c`* if successful. If **`_putch_nolock`** fails, it returns `EOF`; if **`_putwch_nolock`** fails, it returns `WEOF`.
 
 ## Remarks
 
-**_putch_nolock** and **_putwch_nolock** are identical to **_putch** and **_putwch**, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**`_putch_nolock`** and **`_putwch_nolock`** are identical to `_putch` and `_putwch`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_puttch_nolock**|**_putch_nolock**|**_putch_nolock**|**_putwch_nolock**|
+|`_puttch_nolock`|**`_putch_nolock`**|**`_putch_nolock`**|**`_putwch_nolock`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_putch_nolock**|\<conio.h>|
-|**_putwch_nolock**|\<conio.h>|
+|**`_putch_nolock`**|\<conio.h>|
+|**`_putwch_nolock`**|\<conio.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

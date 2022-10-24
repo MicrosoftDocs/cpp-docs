@@ -22,7 +22,7 @@ The possible values are given by the following manifest constants:
 
 |Constant|Meaning|
 |--------------|-------------|
-|`_IOFBF`|Full buffering: Buffer specified in call to `setvbuf` is used and its size is as specified in `setvbuf` call. If buffer pointer is **NULL**, automatically allocated buffer of specified size is used.|
+|`_IOFBF`|Full buffering: Buffer specified in call to `setvbuf` is used and its size is as specified in `setvbuf` call. If buffer pointer is `NULL`, automatically allocated buffer of specified size is used.|
 |`_IOLBF`|Same as `_IOFBF`.|
 |`_IONBF`|No buffer is used, regardless of arguments in call to `setvbuf`.|
 

@@ -56,7 +56,7 @@ Locale to use.
 
 ## Return value
 
-**`strtoul`** returns the converted value, if any, or **`ULONG_MAX`** on overflow. **`strtoul`** returns 0 if no conversion can be performed. **`wcstoul`** returns values analogously to **`strtoul`**. For both functions, **`errno`** is set to **`ERANGE`** if overflow or underflow occurs.
+**`strtoul`** returns the converted value, if any, or `ULONG_MAX` on overflow. **`strtoul`** returns 0 if no conversion can be performed. **`wcstoul`** returns values analogously to **`strtoul`**. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -64,9 +64,9 @@ For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlis
 
 Each of these functions converts the input string *`strSource`* to an **`unsigned long`**.
 
-**`strtoul`** stops reading the string *`strSource`* at the first character it can't recognize as part of a number. This character may be the terminating `NULL`, or it may be the first numeric character greater than or equal to *`base`*. The **`LC_NUMERIC`** category setting of the locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). **`strtoul`** and **`wcstoul`** use the current locale; **`_strtoul_l`** and **`_wcstoul_l`** are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
+**`strtoul`** stops reading the string *`strSource`* at the first character it can't recognize as part of a number. This character may be the terminating `NULL`, or it may be the first numeric character greater than or equal to *`base`*. The `LC_NUMERIC` category setting of the locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). **`strtoul`** and **`wcstoul`** use the current locale; **`_strtoul_l`** and **`_wcstoul_l`** are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
-If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
+If *`endptr`* isn't `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
 
 **`wcstoul`** is a wide-character version of **`strtoul`**; its *`strSource`* argument is a wide-character string. Otherwise these functions behave identically.
 
@@ -74,7 +74,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tcstoul`**|**`strtoul`**|**`strtoul`**|**`wcstoul`**|
 |**`_tcstoul_l`**|**`strtoul_l`**|**`_strtoul_l`**|**`_wcstoul_l`**|

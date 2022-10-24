@@ -36,22 +36,22 @@ See [`getc`, `getwc`](getc-getwc.md).
 
 ## Remarks
 
-These functions are identical to **getc** and **getwc** except that they do not lock the calling thread. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+These functions are identical to `getc` and `getwc` except that they do not lock the calling thread. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_gettc_nolock**|**getc_nolock**|**getc_nolock**|**getwc_nolock**|
+|`_gettc_nolock`|**`getc_nolock`**|**`getc_nolock`**|**`getwc_nolock`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**getc_nolock**|\<stdio.h>|
-|**getwc_nolock**|\<stdio.h> or \<wchar.h>|
+|**`getc_nolock`**|\<stdio.h>|
+|**`getwc_nolock`**|\<stdio.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

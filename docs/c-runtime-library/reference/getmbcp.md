@@ -32,7 +32,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_getmbcp**|\<mbctype.h>|
+|**`_getmbcp`**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

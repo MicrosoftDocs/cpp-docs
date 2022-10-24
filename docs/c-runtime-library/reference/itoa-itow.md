@@ -94,7 +94,7 @@ The **`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, and **`_ui64toa`** fu
 
 Because of their potential for security issues, by default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **This function or variable may be unsafe. Consider using *`safe_function`* instead. To disable deprecation, use `_CRT_SECURE_NO_WARNINGS`.** We recommend you change your source code to use the *`safe_function`* suggested by the warning message. The more secure functions do not write more characters than the specified buffer size. For more information, see [`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md).
 
-To use these functions without the deprecation warning, define the **`_CRT_SECURE_NO_WARNINGS`** preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **`/D_CRT_SECURE_NO_WARNINGS`** compiler option to the **`cl`** command. Otherwise, define the macro in your source files. If you use precompiled headers, define the macro at the top of the precompiled header include file, *`pch.h`* (*`stdafx.h`* in Visual Studio 2017 and earlier). To define the macro in your source code, use a **`#define`** directive before you include any CRT header, as in this example:
+To use these functions without the deprecation warning, define the `_CRT_SECURE_NO_WARNINGS` preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **`/D_CRT_SECURE_NO_WARNINGS`** compiler option to the **`cl`** command. Otherwise, define the macro in your source files. If you use precompiled headers, define the macro at the top of the precompiled header include file, *`pch.h`* (*`stdafx.h`* in Visual Studio 2017 and earlier). To define the macro in your source code, use a **`#define`** directive before you include any CRT header, as in this example:
 
 ```C
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
@@ -107,7 +107,7 @@ In C++, these functions have template overloads that invoke their safer counterp
 
 The POSIX names **`itoa`**, **`ltoa`**, and **`ultoa`** exist as aliases for the **`_itoa`**, **`_ltoa`**, and **`_ultoa`** functions. The POSIX names are deprecated because they do not follow the implementation-specific global function name conventions of ISO C. By default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *`new_name`*. We recommend you change your source code to use the safer versions of these functions, **`_itoa_s`**, **`_ltoa_s`**, or **`_ultoa_s`**. For more information, see [`_itoa_s`, `_itow_s` functions](itoa-s-itow-s.md).
 
-For source code portability, you may prefer to retain the POSIX names in your code. To use these functions without the deprecation warning, define both the **`_CRT_NONSTDC_NO_WARNINGS`** and **`_CRT_SECURE_NO_WARNINGS`** preprocessor macros before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **`/D_CRT_SECURE_NO_WARNINGS`** and **`/D_CRT_NONSTDC_NO_WARNINGS`** compiler options to the **`cl`** command. Otherwise, define the macros in your source files. If you use precompiled headers, define the macros at the top of the precompiled header include file. To define the macros in your source code, use **`#define`** directives before you include any CRT header, as in this example:
+For source code portability, you may prefer to retain the POSIX names in your code. To use these functions without the deprecation warning, define both the `_CRT_NONSTDC_NO_WARNINGS` and `_CRT_SECURE_NO_WARNINGS` preprocessor macros before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **`/D_CRT_SECURE_NO_WARNINGS`** and **`/D_CRT_NONSTDC_NO_WARNINGS`** compiler options to the **`cl`** command. Otherwise, define the macros in your source files. If you use precompiled headers, define the macros at the top of the precompiled header include file. To define the macros in your source code, use **`#define`** directives before you include any CRT header, as in this example:
 
 ```C
 #define _CRT_NONSTDC_NO_WARNINGS 1
@@ -123,11 +123,11 @@ To use one of these macros in a string conversion function, declare your convers
 
 |Functions|radix|Macros|
 |-|-|-|
-|**`_itoa`**, **`_itow`**|16<br/>10<br/>8<br/>2|**`_MAX_ITOSTR_BASE16_COUNT`**<br/>**`_MAX_ITOSTR_BASE10_COUNT`**<br/>**`_MAX_ITOSTR_BASE8_COUNT`**<br/>**`_MAX_ITOSTR_BASE2_COUNT`**|
-|**`_ltoa`**, **`_ltow`**|16<br/>10<br/>8<br/>2|**`_MAX_LTOSTR_BASE16_COUNT`**<br/>**`_MAX_LTOSTR_BASE10_COUNT`**<br/>**`_MAX_LTOSTR_BASE8_COUNT`**<br/>**`_MAX_LTOSTR_BASE2_COUNT`**|
-|**`_ultoa`**, **`_ultow`**|16<br/>10<br/>8<br/>2|**`_MAX_ULTOSTR_BASE16_COUNT`**<br/>**`_MAX_ULTOSTR_BASE10_COUNT`**<br/>**`_MAX_ULTOSTR_BASE8_COUNT`**<br/>**`_MAX_ULTOSTR_BASE2_COUNT`**|
-|**`_i64toa`**, **`_i64tow`**|16<br/>10<br/>8<br/>2|**`_MAX_I64TOSTR_BASE16_COUNT`**<br/>**`_MAX_I64TOSTR_BASE10_COUNT`**<br/>**`_MAX_I64TOSTR_BASE8_COUNT`**<br/>**`_MAX_I64TOSTR_BASE2_COUNT`**|
-|**`_ui64toa`**, **`_ui64tow`**|16<br/>10<br/>8<br/>2|**`_MAX_U64TOSTR_BASE16_COUNT`**<br/>**`_MAX_U64TOSTR_BASE10_COUNT`**<br/>**`_MAX_U64TOSTR_BASE8_COUNT`**<br/>**`_MAX_U64TOSTR_BASE2_COUNT`**|
+|**`_itoa`**, **`_itow`**|16<br/>10<br/>8<br/>2|`_MAX_ITOSTR_BASE16_COUNT`<br/>`_MAX_ITOSTR_BASE10_COUNT`<br/>`_MAX_ITOSTR_BASE8_COUNT`<br/>`_MAX_ITOSTR_BASE2_COUNT`|
+|**`_ltoa`**, **`_ltow`**|16<br/>10<br/>8<br/>2|`_MAX_LTOSTR_BASE16_COUNT`<br/>`_MAX_LTOSTR_BASE10_COUNT`<br/>`_MAX_LTOSTR_BASE8_COUNT`<br/>`_MAX_LTOSTR_BASE2_COUNT`|
+|**`_ultoa`**, **`_ultow`**|16<br/>10<br/>8<br/>2|`_MAX_ULTOSTR_BASE16_COUNT`<br/>`_MAX_ULTOSTR_BASE10_COUNT`<br/>`_MAX_ULTOSTR_BASE8_COUNT`<br/>`_MAX_ULTOSTR_BASE2_COUNT`|
+|**`_i64toa`**, **`_i64tow`**|16<br/>10<br/>8<br/>2|`_MAX_I64TOSTR_BASE16_COUNT`<br/>`_MAX_I64TOSTR_BASE10_COUNT`<br/>`_MAX_I64TOSTR_BASE8_COUNT`<br/>`_MAX_I64TOSTR_BASE2_COUNT`|
+|**`_ui64toa`**, **`_ui64tow`**|16<br/>10<br/>8<br/>2|`_MAX_U64TOSTR_BASE16_COUNT`<br/>`_MAX_U64TOSTR_BASE10_COUNT`<br/>`_MAX_U64TOSTR_BASE8_COUNT`<br/>`_MAX_U64TOSTR_BASE2_COUNT`|
 
 This example uses a conversion count macro to define a buffer large enough to contain an **`unsigned long long`** in base 2:
 
@@ -163,7 +163,7 @@ These functions and macros are Microsoft-specific. For more compatibility inform
 
 ## Example
 
-This sample demonstrates the use of some of the integer conversion functions. Note the use of the **`_CRT_SECURE_NO_WARNINGS`** macro to silence warning C4996.
+This sample demonstrates the use of some of the integer conversion functions. Note the use of the `_CRT_SECURE_NO_WARNINGS` macro to silence warning C4996.
 
 ```C
 // crt_itoa.c

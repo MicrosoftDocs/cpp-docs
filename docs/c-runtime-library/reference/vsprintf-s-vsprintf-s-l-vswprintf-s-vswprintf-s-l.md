@@ -75,7 +75,7 @@ The locale to use.
 
 ## Return value
 
-**`vsprintf_s`** and **`vswprintf_s`** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *`buffer`* or *`format`* is a null pointer, if *`numberOfElements`* is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**.
+**`vsprintf_s`** and **`vswprintf_s`** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *`buffer`* or *`format`* is a null pointer, if *`numberOfElements`* is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -96,7 +96,7 @@ In C++, using these functions is simplified by template overloads. The overloads
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
+|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_vstprintf_s`**|**`vsprintf_s`**|**`vsprintf_s`**|**`vswprintf_s`**|
 |**`_vstprintf_s_l`**|**`_vsprintf_s_l`**|**`_vsprintf_s_l`**|**`_vswprintf_s_l`**|

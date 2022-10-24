@@ -32,11 +32,11 @@ int fputws(
 Output string.
 
 *`stream`*\
-Pointer to **`FILE`** structure.
+Pointer to `FILE` structure.
 
 ## Return value
 
-Each of these functions returns a nonnegative value if it is successful. On an error, **`fputs`** and **`fputws`** return **`EOF`**. If *`str`* or *`stream`* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and then return **`EOF`**.
+Each of these functions returns a nonnegative value if it is successful. On an error, **`fputs`** and **`fputws`** return `EOF`. If *`str`* or *`stream`* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and then return `EOF`.
 
 For more information on error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -50,7 +50,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_fputts`**|**`fputs`**|**`fputs`**|**`fputws`**|
 
