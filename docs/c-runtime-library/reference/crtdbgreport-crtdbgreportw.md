@@ -74,9 +74,9 @@ The following table lists the available choices for the report mode or modes and
 
 |Report mode|Report file|**`_CrtDbgReport`**, **`_CrtDbgReportW`** behavior|
 |-----------------|-----------------|------------------------------------------------|
-|`_CRTDBG_MODE_DEBUG`|Not applicable|Writes message by using Windows [OutputDebugString](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API.|
-|`_CRTDBG_MODE_WNDW`|Not applicable|Calls Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API to create message box to display the message along with **Abort**, **Retry**, and **Ignore** buttons. If a user chooses **Abort**, **`_CrtDbgReport`** or **`_CrtDbgReport`** immediately aborts. If a user chooses **Retry**, it returns 1. If a user chooses **Ignore**, execution continues and **`_CrtDbgReport`** and **`_CrtDbgReportW`** return 0. Choosing **Ignore** when an error condition exists often results in undefined behavior.|
-|`_CRTDBG_MODE_FILE`|`__HFILE`|Writes message to user-supplied `HANDLE`, using the Windows [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) API and doesn't verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle.|
+|`_CRTDBG_MODE_DEBUG`|Not applicable|Writes message by using Windows [`OutputDebugString`](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API.|
+|`_CRTDBG_MODE_WNDW`|Not applicable|Calls Windows [`MessageBox`](/windows/win32/api/winuser/nf-winuser-messagebox) API to create message box to display the message along with **Abort**, **Retry**, and **Ignore** buttons. If a user chooses **Abort**, **`_CrtDbgReport`** or **`_CrtDbgReport`** immediately aborts. If a user chooses **Retry**, it returns 1. If a user chooses **Ignore**, execution continues and **`_CrtDbgReport`** and **`_CrtDbgReportW`** return 0. Choosing **Ignore** when an error condition exists often results in undefined behavior.|
+|`_CRTDBG_MODE_FILE`|`__HFILE`|Writes message to user-supplied `HANDLE`, using the Windows [`WriteFile`](/windows/win32/api/fileapi/nf-fileapi-writefile) API and doesn't verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle.|
 |`_CRTDBG_MODE_FILE`|`_CRTDBG_FILE_STDERR`|Writes message to `stderr`.|
 |`_CRTDBG_MODE_FILE`|`_CRTDBG_FILE_STDOUT`|Writes message to `stdout`.|
 

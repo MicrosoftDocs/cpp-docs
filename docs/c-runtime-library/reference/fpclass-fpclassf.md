@@ -49,7 +49,7 @@ The **`_fpclass`** and **`_fpclassf`** functions return an integer value that in
 
 ## Remarks
 
-The **`_fpclass`** and **`_fpclassf`** functions are Microsoft-specific. They are similar to [`fpclassify`](fpclassify.md), but return more detailed information about the argument. The **`_fpclassf`** function is only available when compiled for the x64 platform.
+The **`_fpclass`** and **`_fpclassf`** functions are Microsoft-specific. They're similar to [`fpclassify`](fpclassify.md), but return more detailed information about the argument. The **`_fpclassf`** function is only available when compiled for the x64 platform.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

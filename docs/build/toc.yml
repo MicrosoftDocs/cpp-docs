@@ -372,7 +372,7 @@ items:
               href: ../build/reference/help-files-html-help.md
             - name: Winhelp help files
               href: ../build/reference/help-files-winhelp.md
-            - name: Hint files for Intellisense
+            - name: Hint files for IntelliSense
               href: ../build/reference/hint-files.md
             - name: Property page XML files
               href: ../build/reference/property-page-xml-files.md

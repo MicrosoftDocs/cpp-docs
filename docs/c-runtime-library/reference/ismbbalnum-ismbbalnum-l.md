@@ -35,11 +35,11 @@ Locale to use.
 
 ## Return value
 
-**`_ismbbalnum`** returns a nonzero value if the expression:
+**`_ismbbalnum`** returns a nonzero value when the expression:
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-is nonzero for *`c`*, or 0 if it is not.
+is nonzero for *`c`*, or 0 when the expression is zero.
 
 The version of this function with the `_l` suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
 

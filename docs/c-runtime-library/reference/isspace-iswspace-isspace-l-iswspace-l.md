@@ -43,11 +43,11 @@ Locale to use.
 
 ## Return value
 
-Each of these routines returns nonzero if *`c`* is a particular representation of a space character. **`isspace`** returns a nonzero value if *`c`* is a white-space character (0x09 - 0x0D or 0x20). The result of the test condition for the **`isspace`** function depends on the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
+Each of these routines returns nonzero if *`c`* is a particular representation of a space character. **`isspace`** returns a nonzero value if *`c`* is a white-space character (0x09 - 0x0D or 0x20). The result of the test condition for the **`isspace`** function depends on the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The versions of these functions that don't have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
 **`iswspace`** returns a nonzero value if *`c`* is a wide character that corresponds to a standard white-space character.
 
-The behavior of **`isspace`** and **`_isspace_l`** is undefined if *`c`* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* is not one of these values, the functions raise an assertion.
+The behavior of **`isspace`** and **`_isspace_l`** is undefined if *`c`* isn't EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *`c`* isn't one of these values, the functions raise an assertion.
 
 ### Generic-text routine mappings
 

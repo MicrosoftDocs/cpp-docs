@@ -59,13 +59,13 @@ The locale to use.
 
 ## Return value
 
-Both **`__iscsym`** and **`__iswcsym`** return a nonzero value if *`c`* is a letter, underscore, or digit. Both **`__iscsymf`** and **`__iswcsymf`** return a nonzero value if *`c`* is a letter or an underscore. Each of these routines returns 0 if *`c`* does not satisfy the test condition. The versions of these functions with the `_l` suffix are identical except that they use the *`locale`* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
+Both **`__iscsym`** and **`__iswcsym`** return a nonzero value if *`c`* is a letter, underscore, or digit. Both **`__iscsymf`** and **`__iswcsymf`** return a nonzero value if *`c`* is a letter or an underscore. Each of these routines returns 0 if *`c`* doesn't satisfy the test condition. The versions of these functions with the `_l` suffix are identical except that they use the *`locale`* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
 ## Remarks
 
 These routines are defined as macros unless the preprocessor macro _CTYPE_DISABLE_MACROS is defined. When you use the macro versions of these routines, the arguments can be evaluated more than once. Be careful when you use expressions that have side effects within the argument list.
 
-For backward compatibility, **`iscsym`** and **`iscsymf`** are defined as macros only when [`__STDC__`](../../preprocessor/predefined-macros.md) is not defined or is defined as 0; otherwise they are undefined.
+For backward compatibility, **`iscsym`** and **`iscsymf`** are defined as macros only when [`__STDC__`](../../preprocessor/predefined-macros.md) isn't defined or is defined as 0; otherwise they're undefined.
 
 ## Requirements
 

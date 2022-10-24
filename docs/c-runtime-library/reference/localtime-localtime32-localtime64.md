@@ -39,7 +39,7 @@ Return a pointer to the structure result, or `NULL` if the date passed to the fu
 
 **`_localtime64`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, December 31, 3000, coordinated universal time (UTC), whereas **`_localtime32`** represents dates through 23:59:59 January 18, 2038, UTC.
 
-**`localtime`** is an inline function which evaluates to **`_localtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. Doing this will cause **`localtime`** to evaluate to **`_localtime32`**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
+**`localtime`** is an inline function that evaluates to **`_localtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. `_USE_32BIT_TIME_T` causes **`localtime`** to evaluate to **`_localtime32`**. We don't recommend `_USE_32BIT_TIME_T`, because your application may fail after January 18, 2038, and it isn't allowed on 64-bit platforms.
 
 The fields of the structure type [`tm`](../standard-types.md) store the following values, each of which is an **`int`**:
 
@@ -53,17 +53,17 @@ The fields of the structure type [`tm`](../standard-types.md) store the followin
 |**`tm_year`**|Year (current year minus 1900).|
 |**`tm_wday`**|Day of week (0 - 6; Sunday = 0).|
 |**`tm_yday`**|Day of year (0 - 365; January 1 = 0).|
-|**`tm_isdst`**|Positive value if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative value if status of daylight saving time is unknown.|
+|**`tm_isdst`**|Positive value if daylight saving time is in effect; 0 if daylight saving time isn't in effect; negative value if status of daylight saving time is unknown.|
 
 If the **`TZ`** environment variable is set, the C run-time library assumes rules appropriate to the United States for implementing the calculation of daylight-saving time (DST).
 
 ## Remarks
 
-The **`localtime`** function converts a time stored as a [`time_t`](../standard-types.md) value and stores the result in a structure of type [`tm`](../standard-types.md). The **`long`** value *`sourceTime`* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [`time`](time-time32-time64.md) function.
+The **`localtime`** function converts a time stored as a [`time_t`](../standard-types.md) value and stores the result in a structure of type [`tm`](../standard-types.md). The **`long`** value *`sourceTime`* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is often obtained from the [`time`](time-time32-time64.md) function.
 
 Both the 32-bit and 64-bit versions of [`gmtime`](gmtime-gmtime32-gmtime64.md), [`mktime`](mktime-mktime32-mktime64.md), [`mkgmtime`](mkgmtime-mkgmtime32-mkgmtime64.md), and **`localtime`** all use a single **`tm`** structure per thread for the conversion. Each call to one of these routines destroys the result of the previous call.
 
-**`localtime`** corrects for the local time zone if the user first sets the global environment variable **`TZ`**. When **`TZ`** is set, three other environment variables (**`_timezone`**, **`_daylight`**, and **`_tzname`**) are automatically set as well. If the **`TZ`** variable is not set, **`localtime`** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information cannot be obtained, PST8PDT, which signifies the Pacific Time Zone, is used by default. See [`_tzset`](tzset.md) for a description of these variables. **`TZ`** is a Microsoft extension and not part of the ANSI standard definition of **`localtime`**.
+**`localtime`** corrects for the local time zone if the user first sets the global environment variable **`TZ`**. When **`TZ`** is set, three other environment variables (**`_timezone`**, **`_daylight`**, and **`_tzname`**) are automatically set as well. If the **`TZ`** variable isn't set, **`localtime`** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information can't be obtained, PST8PDT, which signifies the Pacific Time Zone, is used by default. See [`_tzset`](tzset.md) for a description of these variables. **`TZ`** is a Microsoft extension and not part of the ANSI standard definition of **`localtime`**.
 
 > [!NOTE]
 > The target environment should try to determine whether daylight saving time is in effect.

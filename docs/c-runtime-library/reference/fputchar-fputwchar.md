@@ -32,13 +32,13 @@ Character to be written.
 
 ## Return value
 
-Each of these functions returns the character written. For **`_fputchar`**, a return value of `EOF` indicates an error. For **`_fputwchar`**, a return value of `WEOF` indicates an error. If c is `NULL`, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, they return `EOF` (or `WEOF`) and set `errno` to `EINVAL`.
+Each of these functions returns the character written. For **`_fputchar`**, a return value of `EOF` indicates an error. For **`_fputwchar`**, a return value of `WEOF` indicates an error. If c is `NULL`, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_fputchar`** returns `EOF` (**`_fputwchar`** returns `WEOF`), and they set `errno` to `EINVAL`.
 
 For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Both of these functions writes the single character *`c`* to `stdout` and advances the indicator as appropriate. **`_fputchar`** is equivalent to `fputc( stdout )`. It is also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions are not compatible with the ANSI standard.
+Both of these functions write the single character argument *`c`* to `stdout` and advance the indicator as appropriate. **`_fputchar`** is equivalent to `fputc( stdout )`. It's also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions aren't compatible with the ANSI standard.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -55,7 +55,7 @@ By default, this function's global state is scoped to the application. To change
 |**`_fputchar`**|\<stdio.h>|
 |**`_fputwchar`**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 

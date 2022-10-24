@@ -61,7 +61,7 @@ The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_
 
 These functions validate their parameters. If *`pFile`*, *`filename`*, or *`mode`* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md).
 
-Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned and the global variable `errno` is set. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned, and the global variable `errno` is set. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
