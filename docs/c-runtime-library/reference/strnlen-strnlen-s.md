@@ -12,10 +12,10 @@ ms.assetid: cc05ce1c-72ea-4ae4-a7e7-4464e56e5f80
 ---
 # `strnlen`, `strnlen_s`, `wcsnlen`, `wcsnlen_s`, `_mbsnlen`, `_mbsnlen_l`, `_mbstrnlen`, `_mbstrnlen_l`
 
-Gets the length of a string by using the current locale or one that has been passed in. These are more secure versions of [`strlen`, `wcslen`, `_mbslen`, `_mbslen_l`, `_mbstrlen`, `_mbstrlen_l`](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).
+Gets the length of a string by using the current locale or one that has been passed in. These functions are more secure versions of [`strlen`, `wcslen`, `_mbslen`, `_mbslen_l`, `_mbstrlen`, `_mbstrlen_l`](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).
 
 > [!IMPORTANT]
-> **`_mbsnlen`**, **`_mbsnlen_l`**, **`_mbstrnlen`**, and **`_mbstrnlen_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsnlen`**, **`_mbsnlen_l`**, **`_mbstrnlen`**, and **`_mbstrnlen_l`** can't be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -69,7 +69,7 @@ Locale to use.
 
 ## Return value
 
-These functions return the number of characters in the string, not including the terminating null character. If there is no null terminator within the first *`numberOfElements`* bytes of the string (or wide characters for **`wcsnlen`**), then *`numberOfElements`* is returned to indicate the error condition; null-terminated strings have lengths that are strictly less than *`numberOfElements`*.
+These functions return the number of characters in the string, not including the terminating null character. If there's no null terminator within the first *`numberOfElements`* bytes of the string (or wide characters for **`wcsnlen`**), then *`numberOfElements`* is returned to indicate the error condition; null-terminated strings have lengths that are strictly less than *`numberOfElements`*.
 
 **`_mbstrnlen`** and **`_mbstrnlen_l`** return -1 if the string contains an invalid multibyte character.
 
@@ -80,7 +80,7 @@ These functions return the number of characters in the string, not including the
 
 Each of these functions returns the number of characters in *`str`*, not including the terminating null character. However, **`strnlen`** and **`strnlen_s`** interpret the string as a single-byte character string and therefore, the return value is always equal to the number of bytes, even if the string contains multibyte characters. **`wcsnlen`** and **`wcsnlen_s`** are wide-character versions of **`strnlen`** and **`strnlen_s`** respectively; the arguments for **`wcsnlen`** and **`wcsnlen_s`** are wide-character strings and the count of characters are in wide-character units. Otherwise, **`wcsnlen`** and **`strnlen`** behave identically, as do **`strnlen_s`** and **`wcsnlen_s`**.
 
-**`strnlen`**, **`wcsnlen`**, and **`_mbsnlen`** do not validate their parameters. If *`str`* is `NULL`, an access violation occurs.
+**`strnlen`**, **`wcsnlen`**, and **`_mbsnlen`** don't validate their parameters. If *`str`* is `NULL`, an access violation occurs.
 
 **`strnlen_s`** and **`wcsnlen_s`** validate their parameters. If *`str`* is `NULL`, the functions return 0.
 
@@ -96,9 +96,9 @@ By default, this function's global state is scoped to the application. To change
 |**`_tcscnlen`**|**`strnlen`**|**`_mbsnlen`**|**`wcsnlen`**|
 |**`_tcscnlen_l`**|**`strnlen`**|**`_mbsnlen_l`**|**`wcsnlen`**|
 
-**`_mbsnlen`** and **`_mbstrnlen`** return the number of multibyte characters in a multibyte-character string. **`_mbsnlen`** recognizes multibyte-character sequences according to the multibyte code page that's currently in use or according to the locale that's passed in; it does not test for multibyte-character validity. **`_mbstrnlen`** tests for multibyte-character validity and recognizes multibyte-character sequences. If the string that's passed to **`_mbstrnlen`** contains an invalid multibyte character, `errno` is set to `EILSEQ`.
+**`_mbsnlen`** and **`_mbstrnlen`** return the number of multibyte characters in a multibyte-character string. **`_mbsnlen`** recognizes multibyte-character sequences according to the multibyte code page that's currently in use or according to the locale that's passed in; it doesn't test for multibyte-character validity. **`_mbstrnlen`** tests for multibyte-character validity and recognizes multibyte-character sequences. If the string that's passed to **`_mbstrnlen`** contains an invalid multibyte character, `errno` is set to `EILSEQ`.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **`_l`** suffix use the current locale for this locale-dependent behavior and the versions that have the **`_l`** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions are identical, except that the ones that don't have the **`_l`** suffix use the current locale for this locale-dependent behavior and the versions that have the **`_l`** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 ## Requirements
 

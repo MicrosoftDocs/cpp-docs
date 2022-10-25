@@ -82,15 +82,15 @@ Locale to use.
 
 Zero if successful, otherwise an error code.
 
-These functions validate their arguments. If *`str`* is not a valid null-terminated string or the size argument is less than or equal to 0, then the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value does not apply.
+These functions validate their arguments. If *`str`* isn't a valid null-terminated string or the size argument is less than or equal to 0, then the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value doesn't apply.
 
 ## Remarks
 
 These functions set, at most, the first *`count`* characters of *`str`* to *`c`*. If *`count`* is greater than the size of *`str`*, the size of *`str`* is used instead of *`count`*. An error occurs if *`count`* is greater than *`numberOfElements`* and both those parameters are greater than the size of *`str`*.
 
-**`_wcsnset_s`** and **`_mbsnset_s`** are wide-character and multibyte-character versions of **`_strnset_s`**. The string argument of **`_wcsnset_s`** is a wide-character string; that of **`_mbsnset_s`** is amultibyte-character string. These three functions behave identically otherwise.
+**`_wcsnset_s`** and **`_mbsnset_s`** are wide-character and multibyte-character versions of **`_strnset_s`**. The string argument of **`_wcsnset_s`** is a wide-character string; that of **`_mbsnset_s`** is a multibyte-character string. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 

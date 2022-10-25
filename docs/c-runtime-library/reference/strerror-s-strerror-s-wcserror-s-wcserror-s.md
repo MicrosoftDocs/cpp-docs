@@ -12,7 +12,7 @@ ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
 ---
 # `strerror_s`, `_strerror_s`, `_wcserror_s`, `__wcserror_s`
 
-Get a system error message (**`strerror_s`**, **`_wcserror_s`**) or print a user-supplied error message (**`_strerror_s`**, **`__wcserror_s`**). These are versions of [`strerror`, `_strerror`, `_wcserror`, `__wcserror`](strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Get a system error message (**`strerror_s`**, **`_wcserror_s`**) or print a user-supplied error message (**`_strerror_s`**, **`__wcserror_s`**). These functions are versions of [`strerror`, `_strerror`, `_wcserror`, `__wcserror`](strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -94,7 +94,7 @@ Zero if successful, an error code on failure.
 
 The **`strerror_s`** function is thread-safe.
 
-The **`strerror_s`** function maps *`errnum`* to an error-message string, returning the string in *`buffer`*. **`_strerror_s`** doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. Neither **`strerror_s`** nor **`_strerror_s`** actually prints the message: For that, you need to call an output function such as [`fprintf`](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The **`strerror_s`** function maps *`errnum`* to an error-message string, returning the string in *`buffer`*. **`_strerror_s`** doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. The message isn't printed or displayed by **`strerror_s`** or **`_strerror_s`**. To output the message, you need to call an output function such as [`fprintf`](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```C
 if (( _access( "datafile",2 )) == -1 )
@@ -108,7 +108,7 @@ If *`strErrMsg`* is `NULL`, **`_strerror_s`** returns a string in *`buffer`* tha
 
 These functions truncate the error message if its length exceeds the size of the buffer - 1. The resulting string in *`buffer`* will always be null-terminated.
 
-The actual error number for **`_strerror_s`** is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [`_sys_errlist`](../errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **`_strerror_s`** accesses the appropriate error message by using the `errno` value as an index to the variable `_sys_errlist`. The value of the variable [`_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the `_sys_errlist` array. To produce accurate results, call **`_strerror_s`** immediately after a library routine returns with an error. Otherwise, subsequent calls to **`strerror_s`** or **`_strerror_s`** can overwrite the `errno` value.
+The actual error number for **`_strerror_s`** is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [`_sys_errlist`](../errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **`_strerror_s`** accesses the appropriate error message by using the `errno` value as an index to the variable `_sys_errlist`. The value of the variable [`_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the `_sys_errlist` array. To produce accurate results, call **`_strerror_s`** immediately after a library routine return with an error. Otherwise, subsequent calls to **`strerror_s`** or **`_strerror_s`** can overwrite the `errno` value.
 
 **`_wcserror_s`** and **`__wcserror_s`** are wide-character versions of **`strerror_s`** and **`_strerror_s`**, respectively.
 

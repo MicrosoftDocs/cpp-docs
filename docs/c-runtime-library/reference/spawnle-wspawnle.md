@@ -56,14 +56,14 @@ Array of pointers to environment settings.
 
 ## Return value
 
-The return value from a synchronous **`_spawnle`** or **`_wspawnle`** (`_P_WAIT` specified for *`mode`*) is the exit status of the new process. The return value from an asynchronous **`_spawnle`** or **`_wspawnle`** (`_P_NOWAIT` or `_P_NOWAITO` specified for *`mode`*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values.
+The return value from a synchronous **`_spawnle`** or **`_wspawnle`** (`_P_WAIT` specified for *`mode`*) is the exit status of the new process. The return value from an asynchronous **`_spawnle`** or **`_wspawnle`** (`_P_NOWAIT` or `_P_NOWAITO` specified for *`mode`*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process didn't explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process isn't started). In this case, `errno` is set to one of the following values.
 
 | Value | Description |
 |--|--|
 | `E2BIG` | Argument list exceeds 1024 bytes. |
 | `EINVAL` | *`mode`* argument is invalid. |
-| `ENOENT` | File or path is not found. |
-| `ENOEXEC` | Specified file is not executable or has invalid executable-file format. |
+| `ENOENT` | File or path isn't found. |
+| `ENOEXEC` | Specified file isn't executable or has invalid executable-file format. |
 | `ENOMEM` | Not enough memory is available to execute the new process. |
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).

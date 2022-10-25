@@ -49,7 +49,7 @@ The locale to use.
 
 ## Return value
 
-Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **`_scwprintf_p`** performs the same function for wide characters.
+Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned doesn't include the terminating null character. **`_scwprintf_p`** performs the same function for wide characters.
 
 The difference between **`_scprintf_p`** and `_scprintf` is that **`_scprintf_p`** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
 

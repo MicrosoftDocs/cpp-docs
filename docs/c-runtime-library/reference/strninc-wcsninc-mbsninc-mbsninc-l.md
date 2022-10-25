@@ -66,7 +66,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tcsninc`|**`_strninc`**|**`_mbsninc`**|**`_wcsninc`**|
 
-**`_strninc`** and **`_wcsninc`** are single-byte-character string and wide-character string versions of **`_mbsninc`**. **`_wcsninc`** and **`_strninc`** are provided only for this mapping and should not be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
+**`_strninc`** and **`_wcsninc`** are single-byte-character string and wide-character string versions of **`_mbsninc`**. **`_wcsninc`** and **`_strninc`** are provided only for this mapping and shouldn't be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
 **`_mbsninc_l`** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 

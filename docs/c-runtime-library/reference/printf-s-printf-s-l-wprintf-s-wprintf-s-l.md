@@ -85,7 +85,7 @@ Line one
         Line two
 ```
 
-[Format specifications](../format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (**`%`**) and are read left to right. When **`printf_s`** encounters the first format specification (if any), it converts the value of the first argument after *`format`* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
+[Format specifications](../format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (**`%`**) and are read left to right. When **`printf_s`** encounters the first format specification (if any), it converts the value of the first argument after *`format`* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there aren't enough arguments for all the format specifications.
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string.
@@ -99,9 +99,9 @@ Line one
 |**`printf_s`**, **`_printf_s_l`**|`<stdio.h>`|
 |**`wprintf_s`**, **`_wprintf_s_l`**|`<stdio.h>` or `<wchar.h>`|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 

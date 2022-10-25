@@ -62,7 +62,7 @@ A nonzero return value indicates an error; in that case `errno` is set to one of
 | `EMFILE` | No more file descriptors available. |
 | `ENOENT` | File or path not found. |
 
-If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and `EINVAL` is returned.
+If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and `EINVAL` is returned.
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

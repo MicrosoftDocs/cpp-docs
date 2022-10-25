@@ -80,7 +80,7 @@ Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include e
 
 ## Remarks
 
-Each of these functions performs a case-insensitive comparison of the first *`count`* characters in *`string1`* and *`string2`* according to the code page. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the code page and this difference is of interest for the string comparison. The versions of these functions without the `_l` suffix use the current locale and code page. The versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
+Each of these functions performs a case-insensitive comparison of the first *`count`* characters in *`string1`* and *`string2`* according to the code page. These functions should be used only when there's a difference between the character set order and the lexicographic character order in the code page and this difference is of interest for the string comparison. The versions of these functions without the `_l` suffix use the current locale and code page. The versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
 All of these functions validate their parameters. If either *`string1`* or *`string2`* is a null pointer, or if count is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
 

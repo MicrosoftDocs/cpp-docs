@@ -48,7 +48,7 @@ The floating-point value to go towards.
 
 ## Return value
 
-Returns the next representable floating-point value of the return type after *`x`* in the direction of *`y`*. If *`x`* and *`y`* are equal, the function returns *`y`*, converted to the return type, with no exception triggered. If *`x`* is not equal to *`y`*, and the result is a denormal or zero, the `FE_UNDERFLOW` and `FE_INEXACT` floating-point exception states are set, and the correct result is returned. If either *`x`* or *`y`* is a NAN, then the return value is one of the input NANs. If *`x`* is finite and the result is infinite or not representable in the type, a correctly signed infinity or NAN is returned, the `FE_OVERFLOW` and `FE_INEXACT` floating-point exception states are set, and `errno` is set to `ERANGE`.
+Returns the next representable floating-point value of the return type after *`x`* in the direction of *`y`*. If *`x`* and *`y`* are equal, the function returns *`y`*, converted to the return type, with no exception triggered. If *`x`* isn't equal to *`y`*, and the result is a denormal or zero, the `FE_UNDERFLOW` and `FE_INEXACT` floating-point exception states are set, and the correct result is returned. If either *`x`* or *`y`* is a NAN, then the return value is one of the input NANs. If *`x`* is finite and the result is infinite or not representable in the type, a correctly signed infinity or NAN is returned, the `FE_OVERFLOW` and `FE_INEXACT` floating-point exception states are set, and `errno` is set to `ERANGE`.
 
 ## Remarks
 

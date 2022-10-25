@@ -12,7 +12,7 @@ ms.assetid: 30fff3e2-cd00-4eb6-b5a2-65db79cb688b
 ---
 # `_splitpath_s`, `_wsplitpath_s`
 
-Breaks a path name into components. These are versions of [`_splitpath`, `_wsplitpath`](splitpath-wsplitpath.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Breaks a path name into components. These functions are versions of [`_splitpath`, `_wsplitpath`](splitpath-wsplitpath.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -63,25 +63,25 @@ errno_t _wsplitpath_s(
 Full path.
 
 *`drive`*\
-Drive letter, followed by a colon (**`:`**). You can pass `NULL` for this parameter if you do not need the drive letter.
+Drive letter, followed by a colon (**`:`**). You can pass `NULL` for this parameter if you don't need the drive letter.
 
 *`driveNumberOfElements`*\
 The size of the *`drive`* buffer in single-byte or wide characters. If *`drive`* is `NULL`, this value must be 0.
 
 *`dir`*\
-Directory path, including trailing slash. Forward slashes ( **`/`** ), backslashes ( **`\\`** ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
+Directory path, including trailing slash. Forward slashes ( **`/`** ), backslashes ( **`\\`** ), or both may be used. You can pass `NULL` for this parameter if you don't need the directory path.
 
 *`dirNumberOfElements`*\
 The size of the *`dir`* buffer in single-byte or wide characters. If *`dir`* is `NULL`, this value must be 0.
 
 *`fname`*\
-Base filename (without extension). You can pass `NULL` for this parameter if you do not need the filename.
+Base filename (without extension). You can pass `NULL` for this parameter if you don't need the filename.
 
 *`nameNumberOfElements`*\
 The size of the *`fname`* buffer in single-byte or wide characters. If *`fname`* is `NULL`, this value must be 0.
 
 *`ext`*\
-Filename extension, including leading period (**`.`**). You can pass `NULL` for this parameter if you do not need the filename extension.
+Filename extension, including leading period (**`.`**). You can pass `NULL` for this parameter if you don't need the filename extension.
 
 *`extNumberOfElements`*\
 The size of *`ext`* buffer in single-byte or wide characters. If *`ext`* is `NULL`, this value must be 0.
@@ -131,7 +131,7 @@ The following table lists the values of the manifest constants.
 |`_MAX_FNAME`|256|
 |`_MAX_EXT`|256|
 
-If the full path does not contain a component (for example, a filename), **`_splitpath_s`** assigns an empty string to the corresponding buffer.
+If the full path doesn't contain a component (for example, a filename), **`_splitpath_s`** assigns an empty string to the corresponding buffer.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

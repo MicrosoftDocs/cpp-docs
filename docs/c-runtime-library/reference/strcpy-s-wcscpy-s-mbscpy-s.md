@@ -98,13 +98,13 @@ Zero if successful; otherwise, an error.
 
 The **`strcpy_s`** function copies the contents in the address of *`src`*, including the terminating null character, to the location that's specified by *`dest`*. The destination string must be large enough to hold the source string and its terminating null character. The behavior of **`strcpy_s`** is undefined if the source and destination strings overlap.
 
-**`wcscpy_s`** is the wide-character version of **`strcpy_s`**, and **`_mbscpy_s`** is the multibyte-character version. The arguments of **`wcscpy_s`** are wide-character strings; those of **`_mbscpy_s`** and **`_mbscpy_s_l`** are multibyte-character strings. These functions behave identically otherwise. **`_mbscpy_s_l`** is identical to **`_mbscpy_s`** except that it uses the locale parameter passed in instead of the current locale. For more information, see [`locale`](../locale.md).
+**`wcscpy_s`** is the wide-character version of **`strcpy_s`**, and **`_mbscpy_s`** is the multibyte-character version. The arguments of **`wcscpy_s`** are wide-character strings. The arguments of **`_mbscpy_s`** and **`_mbscpy_s_l`** are multibyte-character strings. These functions behave identically otherwise. **`_mbscpy_s_l`** is identical to **`_mbscpy_s`** except that it uses the locale parameter passed in instead of the current locale. For more information, see [`locale`](../locale.md).
 
 If *`dest`* or *`src`* is a null pointer, or if the destination string size *`dest_size`* is too small, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL` when *`dest`* or *`src`* is a null pointer, and they return `ERANGE` and set `errno` to `ERANGE` when the destination string is too small.
 
 Upon successful execution, the destination string is always null-terminated.
 
-In C++, use of these functions is simplified by template overloads that can infer buffer length automatically so that you don't have to specify a size argument, and they can automatically replace older, less-secure functions with their newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
+In C++, use of these functions is simplified by template overloads that can infer buffer length automatically, so that you don't have to specify a size argument. And, they can automatically replace older, less-secure functions with newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
@@ -158,7 +158,7 @@ int main(void)
 stringBuffer = Hello world from strcpy_s and strcat_s!
 ```
 
-When building C++ code, the template versions may be easier to use.
+When you're building C++ code, the template versions may be easier to use.
 
 ```cpp
 // crt_wcscpy_s.cpp

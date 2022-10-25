@@ -35,15 +35,15 @@ Path for a new directory.
 
 Each of these functions returns the value 0 if the new directory was created. On an error, the function returns -1 and sets `errno` as follows.
 
-`EEXIST` Directory was not created because *`dirname`* is the name of an existing file, directory, or device.
+`EEXIST` Directory wasn't created because *`dirname`* is the name of an existing file, directory, or device.
 
-`ENOENT` Path was not found.
+`ENOENT` Path wasn't found.
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`_mkdir`** function creates a new directory with the specified *`dirname`*. **`_mkdir`** can create only one new directory per call, so only the last component of *`dirname`* can name a new directory. **`_mkdir`** does not translate path delimiters. In Windows NT, both the backslash ( \\) and the forward slash (/ ) are valid path delimiters in character strings in run-time routines.
+The **`_mkdir`** function creates a new directory with the specified *`dirname`*. **`_mkdir`** can create only one new directory per call, so only the last component of *`dirname`* can name a new directory. **`_mkdir`** doesn't translate path delimiters. In Windows NT, both the backslash (**`\`**) and the forward slash (**`/`**) are valid path delimiters in character strings in run-time routines.
 
 **`_wmkdir`** is a wide-character version of **`_mkdir`**; the *`dirname`* argument to **`_wmkdir`** is a wide-character string. **`_wmkdir`** and **`_mkdir`** behave identically otherwise.
 

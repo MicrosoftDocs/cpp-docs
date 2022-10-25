@@ -57,7 +57,7 @@ The return value indicates the relationship between the buffers.
 
 ## Remarks
 
-The **`_memicmp`** function compares the first *`count`* characters of the two buffers *`buffer1`* and *`buffer2`* byte by byte. The comparison is not case-sensitive.
+The **`_memicmp`** function compares the first *`count`* characters of the two buffers *`buffer1`* and *`buffer2`* byte by byte. The comparison isn't case-sensitive.
 
 If either *`buffer1`* or *`buffer2`* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets `errno` to `EINVAL`.
 

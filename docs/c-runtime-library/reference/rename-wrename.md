@@ -37,11 +37,11 @@ Pointer to new name.
 
 ## Return value
 
-Each of these functions returns 0 if it is successful. On an error, the function returns a nonzero value and sets `errno` to one of the following values:
+Each of these functions returns 0 if it's successful. On an error, the function returns a nonzero value and sets `errno` to one of the following values:
 
 |errno value|Condition|
 |-|-|
-| `EACCES` | File or directory specified by *`newname`* already exists or could not be created (invalid path); or *`oldname`* is a directory and *`newname`* specifies a different path. |
+| `EACCES` | File or directory specified by *`newname`* already exists or couldn't be created (invalid path); or *`oldname`* is a directory and *`newname`* specifies a different path. |
 | `ENOENT` | File or path specified by *`oldname`* not found. |
 | `EINVAL` | Name contains invalid characters. |
 
@@ -49,7 +49,7 @@ For other possible return values, see [`_doserrno`, `_errno`, `syserrlist`, and 
 
 ## Remarks
 
-The **`rename`** function renames the file or directory specified by *`oldname`* to the name given by *`newname`*. The old name must be the path of an existing file or directory. The new name must not be the name of an existing file or directory. You can use **`rename`** to move a file from one directory or device to another by giving a different path in the *`newname`* argument. However, you cannot use **`rename`** to move a directory. Directories can be renamed, but not moved.
+The **`rename`** function renames the file or directory specified by *`oldname`* to the name given by *`newname`*. The old name must be the path of an existing file or directory. The new name must not be the name of an existing file or directory. You can use **`rename`** to move a file from one directory or device to another by giving a different path in the *`newname`* argument. However, you can't use **`rename`** to move a directory. Directories can be renamed, but not moved.
 
 **`_wrename`** is a wide-character version of **`_rename`**; the arguments to **`_wrename`** are wide-character strings. **`_wrename`** and **`_rename`** behave identically otherwise.
 

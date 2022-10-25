@@ -45,7 +45,7 @@ The value of *`dest`*.
 
 ## Remarks
 
-Copies *`count`* bytes (**`memmove`**) or characters (**`wmemmove`**) from *`src`* to *`dest`*. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
+Copies *`count`* bytes (**`memmove`**) or characters (**`wmemmove`**) from *`src`* to *`dest`*. If some portions of the source and the destination regions overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
 
 **Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 

@@ -12,7 +12,7 @@ ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
 ---
 # `memcpy_s`, `wmemcpy_s`
 
-Copies bytes between buffers. These are versions of [`memcpy`, `wmemcpy`](memcpy-wmemcpy.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Copies bytes between buffers. These functions are versions of [`memcpy`, `wmemcpy`](memcpy-wmemcpy.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -60,9 +60,9 @@ Zero if successful; an error code on failure.
 
 ## Remarks
 
-**`memcpy_s`** copies *`count`* bytes from *`src`* to *`dest`*; **`wmemcpy_s`** copies *`count`* wide characters (two bytes). If the source and destination overlap, the behavior of **`memcpy_s`** is undefined. Use **`memmove_s`** to handle overlapping regions.
+**`memcpy_s`** copies *`count`* bytes from *`src`* to *`dest`*; **`wmemcpy_s`** copies *`count`* wide characters. If the source and destination regions overlap, the behavior of **`memcpy_s`** is undefined. Use **`memmove_s`** to handle overlapping regions.
 
-These functions validate their parameters. If *`count`* is non-zero and *`dest`* or *`src`* is a null pointer, or *`destSize`* is smaller than *`count`*, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` or `ERANGE` and set `errno` to the return value.
+These functions validate their parameters. If *`count`* is non-zero and *`dest`* or *`src`* is a null pointer, or *`destSize`* is smaller than *`count`*, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` or `ERANGE`, and set `errno` to the return value.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

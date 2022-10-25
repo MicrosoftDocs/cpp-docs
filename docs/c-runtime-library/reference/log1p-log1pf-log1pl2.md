@@ -51,12 +51,12 @@ Otherwise, may return one of the following values:
 
 |Input|Result|SEH exception|errno|
 |-----------|------------|-------------------|-----------|
-|+inf|+inf|||
+|+INF|+INF|||
 |Denormals|Same as input|UNDERFLOW||
 |±0|Same as input|||
-|-1|-inf|DIVBYZERO|ERANGE|
-|< -1|nan|INVALID|EDOM|
-|-inf|nan|INVALID|EDOM|
+|-1|-INF|DIVBYZERO|ERANGE|
+|< -1|NaN|INVALID|EDOM|
+|-INF|NaN|INVALID|EDOM|
 |±SNaN|Same as input|INVALID||
 |±QNaN, indefinite|Same as input|||
 

@@ -1,6 +1,6 @@
 ---
 title: "remquo, remquof, remquol"
-description: "API reference for remquo, remquof, and remquol; which compute the remainder of two integer values, and stores an integer value with the sign and approximate magnitude of the quotient in a location that's specified in a parameter."
+description: "API reference for remquo, remquof, and remquol, which compute the remainder of two integer values, and store the sign and approximate magnitude of the quotient."
 ms.date: "9/1/2020"
 api_name: ["remquof", "remquo", "remquol", "_o_remquo", "_o_remquof", "_o_remquol"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -12,7 +12,7 @@ ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
 ---
 # `remquo`, `remquof`, `remquol`
 
-Computes the remainder of two integer values, and stores an integer value with the sign and approximate magnitude of the quotient in a location that's specified in a parameter.
+Computes the remainder of two integer values, and stores an integer value with the sign and approximate magnitude of the quotient in a parameter.
 
 ## Syntax
 

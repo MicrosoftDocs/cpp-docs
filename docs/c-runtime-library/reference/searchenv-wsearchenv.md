@@ -59,7 +59,7 @@ Buffer to store the complete path.
 
 The **`_searchenv`** routine searches for the target file in the specified domain. The *`varname`* variable can be any environment or user-defined variable—for example, `PATH`, `LIB`, or `INCLUDE`—that specifies a list of directory paths. Because **`_searchenv`** is case-sensitive, *`varname`* should match the case of the environment variable.
 
-The routine first searches for the file in the current working directory. If it does not find the file, it looks through the directories that are specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *`pathname`*. If the *`filename`* file is not found, *`pathname`* contains an empty null-terminated string.
+The routine first searches for the file in the current working directory. If it doesn't find the file, it looks through the directories that are specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *`pathname`*. If the *`filename`* file isn't found, *`pathname`* contains an empty null-terminated string.
 
 The *`pathname`* buffer should be at least `_MAX_PATH` characters long to accommodate the full length of the constructed path name. Otherwise, **`_searchenv`** might overrun the *`pathname`* buffer and cause unexpected behavior.
 

@@ -32,7 +32,7 @@ This macro resembles the [`_ASSERT` and `_ASSERTE` macros](assert-asserte-assert
 
 ## Example
 
-In this example, we check whether the [`sizeof`](../../c-language/sizeof-operator-c.md) an **`int`** is larger than or equal to 2 bytes and whether the [`sizeof`](../../c-language/sizeof-operator-c.md) a **`long`** is 1 byte. The program will not compile and it will generate [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) because a **`long`** is larger than 1 byte.
+In this example, we check whether the [`sizeof`](../../c-language/sizeof-operator-c.md) an **`int`** is larger than or equal to 2 bytes and whether the [`sizeof`](../../c-language/sizeof-operator-c.md) a **`long`** is 1 byte. The program won't compile and it will generate [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) because a **`long`** is larger than 1 byte.
 
 ```C
 // crt__static_assert.c

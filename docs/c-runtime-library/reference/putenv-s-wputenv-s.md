@@ -11,7 +11,7 @@ helpviewer_keywords: ["wputenv_s function", "_putenv_s function", "environment v
 ---
 # `_putenv_s`, `_wputenv_s`
 
-Creates, modifies, or removes environment variables. These are versions of [`_putenv`, `_wputenv`](putenv-wputenv.md) but have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Creates, modifies, or removes environment variables. These functions are versions of [`_putenv`, `_wputenv`](putenv-wputenv.md) that have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

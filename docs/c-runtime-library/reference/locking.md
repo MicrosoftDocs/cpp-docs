@@ -43,26 +43,26 @@ Number of bytes to lock.
 |-|-|
 | `EACCES` | Locking violation (file already locked or unlocked). |
 | `EBADF` | Invalid file descriptor. |
-| `EDEADLOCK` | Locking violation. Returned when the `_LK_LOCK` or `_LK_RLCK` flag is specified and the file cannot be locked after 10 attempts. |
+| `EDEADLOCK` | Locking violation. Returned when the `_LK_LOCK` or `_LK_RLCK` flag is specified and the file can't be locked after 10 attempts. |
 | `EINVAL` | An invalid argument was given to **`_locking`**. |
 
 If the failure is due to a bad parameter, such as an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 ## Remarks
 
-The **`_locking`** function locks or unlocks *`nbytes`* bytes of the file specified by *`fd`*. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *`nbytes`* bytes. It is possible to lock bytes past end of file.
+The **`_locking`** function locks or unlocks *`nbytes`* bytes of the file specified by *`fd`*. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *`nbytes`* bytes. It's possible to lock bytes past end of file.
 
 *`mode`* must be one of the following manifest constants, which are defined in Locking.h.
 
 |*`mode`* value|Effect|
 |-|-|
-| `_LK_LOCK` | Locks the specified bytes. If the bytes cannot be locked, the program immediately tries again after 1 second. If, after 10 attempts, the bytes cannot be locked, the constant returns an error. |
-| `_LK_NBLCK` | Locks the specified bytes. If the bytes cannot be locked, the constant returns an error. |
+| `_LK_LOCK` | Locks the specified bytes. If the bytes can't be locked, the program immediately tries again after 1 second. If the bytes can't be locked after 10 attempts, the constant returns an error. |
+| `_LK_NBLCK` | Locks the specified bytes. If the bytes can't be locked, the constant returns an error. |
 | `_LK_NBRLCK` | Same as `_LK_NBLCK`. |
 | `_LK_RLCK` | Same as `_LK_LOCK`. |
 | `_LK_UNLCK` | Unlocks the specified bytes, which must have been previously locked. |
 
-Multiple regions of a file that do not overlap can be locked. A region being unlocked must have been previously locked. **`_locking`** does not merge adjacent regions; if two locked regions are adjacent, each region must be unlocked separately. Regions should be locked only briefly and should be unlocked before closing a file or exiting the program.
+Multiple regions of a file that don't overlap can be locked. A region being unlocked must have been previously locked. **`_locking`** doesn't merge adjacent regions; if two locked regions are adjacent, each region must be unlocked separately. Regions should be locked only briefly and should be unlocked before closing a file or exiting the program.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
