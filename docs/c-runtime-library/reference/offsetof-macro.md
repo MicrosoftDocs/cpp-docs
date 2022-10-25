@@ -32,7 +32,7 @@ Name of the member in the parent data structure for which to determine the offse
 
 ## Return value
 
-**`offsetof`** returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.
+**`offsetof`** returns the offset in bytes of the specified member from the beginning of its parent data structure. It's undefined for bit fields.
 
 ## Remarks
 

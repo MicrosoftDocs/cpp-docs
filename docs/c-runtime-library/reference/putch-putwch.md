@@ -42,7 +42,7 @@ Returns *`c`* if successful. If **`_putch`** fails, it returns `EOF`; if **`_put
 
 These functions write the character *`c`* directly, without buffering, to the console. In Windows NT, **`_putwch`** writes Unicode characters using the current console locale setting.
 
-The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. For more information, see [`_putch_nolock`, `_putwch_nolock`](./putch-nolock-putwch-nolock.md).
+The versions with the `_nolock` suffix are identical except that they aren't protected from interference by other threads. For more information, see [`_putch_nolock`, `_putwch_nolock`](./putch-nolock-putwch-nolock.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
