@@ -62,7 +62,7 @@ The **`scanf_s`** function reads data from the standard input stream, **`stdin`*
 
 The versions of these functions that have the `_l` suffix are identical, except they use the *`locale`* parameter instead of the current thread locale.
 
-Unlike **`scanf`** and **`wscanf`**, **`scanf_s`** and **`wscanf_s`** require you to specify buffer sizes for some parameters. Specify the sizes for all **`c`**, **`C`**, **`s`**, **`S`**, or string control set **`[]`** parameters. The buffer size in characters is passed as an additional parameter. It immediately follows the pointer to the buffer or variable. For example, if you're reading a string, the buffer size for that string is passed as follows:
+Unlike **`scanf`** and **`wscanf`**, **`scanf_s`** and **`wscanf_s`** require you to specify buffer sizes for some parameters. Specify the sizes for all **`c`**, **`C`**, **`s`**, **`S`**, or string control set **`[]`** parameters. The buffer size in characters is passed as another parameter. It immediately follows the pointer to the buffer or variable. For example, if you're reading a string, the buffer size for that string is passed as follows:
 
 ```C
 char s[10];

@@ -51,7 +51,7 @@ For more information, see [Format specification syntax](../format-specification-
 
 ## Return value
 
-Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **`_scwprintf`** performs the same function for wide characters.
+Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned doesn't include the terminating null character. **`_scwprintf`** performs the same function for wide characters.
 
 If *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
