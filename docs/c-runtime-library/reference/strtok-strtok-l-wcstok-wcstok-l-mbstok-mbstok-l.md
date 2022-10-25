@@ -74,9 +74,9 @@ Returns a pointer to the next token found in *`strToken`*. The functions return 
 
 ## Remarks
 
-The **`strtok`** function finds the next token in *`strToken`*. The set of characters in *`strDelimit`* specifies possible delimiters of the token to be found in *`strToken`* on the current call. **`wcstok`** and **`_mbstok`** are wide-character and multibyte-character versions of **`strtok`**. The arguments and return value of **`wcstok`** are wide-character strings; those of **`_mbstok`** are multibyte-character strings. These three functions behave identically otherwise.
+The **`strtok`** function finds the next token in *`strToken`*. The set of characters in *`strDelimit`* specifies possible delimiters of the token to be found in *`strToken`* on the current call. **`wcstok`** and **`_mbstok`** are wide-character and multibyte-character versions of **`strtok`**. The arguments and return value of **`wcstok`** are wide-character strings. The argumets and return value of **`_mbstok`** are multibyte-character strings. These three functions behave identically otherwise.
 
-The two argument version of **`wcstok`** is not standard. If you need to use that version, you'll need to define `_CRT_NON_CONFORMING_WCSTOK` before you `#include <wchar.h>` (or `#include <string.h>`).
+The two argument version of **`wcstok`** isn't standard. If you need to use that version, you'll need to define `_CRT_NON_CONFORMING_WCSTOK` before you `#include <wchar.h>` (or `#include <string.h>`).
 
 > [!IMPORTANT]
 > These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
