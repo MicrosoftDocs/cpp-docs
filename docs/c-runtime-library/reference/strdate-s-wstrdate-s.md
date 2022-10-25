@@ -58,7 +58,7 @@ Zero if successful. The return value is an error code if there's a failure. Erro
 
 ## Security issues
 
-Passing in an invalid, non-NULL value for *`buffer`* results in an access violation if the *`size`* parameter is greater than nine.
+If you pass in an invalid, non-NULL value for *`buffer`*, it results in an access violation if the *`size`* parameter is greater than nine.
 
 Passing a value for *`size`* greater than the actual size of *`buffer`* results in a buffer overrun.
 

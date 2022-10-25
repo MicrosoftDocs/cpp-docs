@@ -68,7 +68,7 @@ The **`strcpy`** function copies *`strSource`*, including the terminating null c
 > [!IMPORTANT]
 > Because **`strcpy`** does not check for sufficient space in *`strDestination`* before it copies *`strSource`*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [`strcpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md) instead.
 
-**`wcscpy`** and **`_mbscpy`** are, respectively, wide-character and multibyte-character versions of **`strcpy`**. The arguments and return value of **`wcscpy`** are wide-character strings; those of **`_mbscpy`** are multibyte-character strings. These three functions behave identically otherwise.
+**`wcscpy`** and **`_mbscpy`** are, respectively, wide-character and multibyte-character versions of **`strcpy`**. The arguments and return value of **`wcscpy`** are wide-character strings. The arguments and return value of **`_mbscpy`** are multibyte-character strings. These three functions behave identically otherwise.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

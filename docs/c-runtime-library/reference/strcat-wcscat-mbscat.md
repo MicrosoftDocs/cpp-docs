@@ -68,7 +68,7 @@ The **`strcat`** function appends *`strSource`* to *`strDestination`* and termin
 > [!IMPORTANT]
 > Because **`strcat`** does not check for sufficient space in *`strDestination`* before appending *`strSource`*, it is a potential cause of buffer overruns. Consider using [`strncat`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) instead.
 
-**`wcscat`** and **`_mbscat`** are wide-character and multibyte-character versions of **`strcat`**. The arguments and return value of **`wcscat`** are wide-character strings; those of **`_mbscat`** are multibyte-character strings. These three functions behave identically otherwise.
+**`wcscat`** and **`_mbscat`** are wide-character and multibyte-character versions of **`strcat`**. The arguments and return value of **`wcscat`** are wide-character strings. The arguments and return value of **`_mbscat`** are multibyte-character strings. These three functions behave identically otherwise.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

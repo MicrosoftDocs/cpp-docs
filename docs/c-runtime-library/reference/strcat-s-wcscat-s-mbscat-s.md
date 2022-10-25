@@ -94,7 +94,7 @@ Zero if successful; an error code on failure.
 
 The **`strcat_s`** function appends *`strSource`* to *`strDestination`* and terminates the resulting string with a null character. The initial character of *`strSource`* overwrites the terminating null character of *`strDestination`*. The behavior of **`strcat_s`** is undefined if the source and destination strings overlap.
 
-Note that the second parameter is the total size of the buffer, not the remaining size:
+The second parameter is the total size of the buffer, not the remaining size:
 
 ```C
 char buf[16];
@@ -103,9 +103,9 @@ strcat_s(buf, 16, " End");               // Correct
 strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 ```
 
-**`wcscat_s`** and **`_mbscat_s`** are wide-character and multibyte-character versions of **`strcat_s`**. The arguments and return value of **`wcscat_s`** are wide-character strings; those of **`_mbscat_s`** are multibyte-character strings. These three functions behave identically otherwise.
+**`wcscat_s`** and **`_mbscat_s`** are wide-character and multibyte-character versions of **`strcat_s`**. The arguments and return value of **`wcscat_s`** are wide-character strings. The arguments and return value of **`_mbscat_s`** are multibyte-character strings. These three functions behave identically otherwise.
 
-If *`strDestination`* is a null pointer, or is not null-terminated, or if *`strSource`* is a `NULL` pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
+If *`strDestination`* is a null pointer, or isn't null-terminated, or if *`strSource`* is a `NULL` pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
 
 The versions of functions that have the **`_l`** suffix have the same behavior, but use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../locale.md).
 
