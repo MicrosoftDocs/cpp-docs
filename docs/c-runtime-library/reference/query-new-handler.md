@@ -12,7 +12,7 @@ ms.assetid: 9a84b5c3-fe33-4c01-83a0-be87dc3ec518
 ---
 # `_query_new_handler`
 
-Returns the address of the current new handler routine.
+Returns the address of the current **`new`** handler routine.
 
 ## Syntax
 
@@ -24,11 +24,11 @@ _PNH _query_new_handler(
 
 ## Return value
 
-Returns the address of the current new handler routine as set by `_set_new_handler`.
+Returns the address of the current **`new`** handler routine as set by `_set_new_handler`.
 
 ## Remarks
 
-The C++ **`_query_new_handler`** function returns the address of the current exception-handling function set by the C++ [`_set_new_handler`](set-new-handler.md) function. `_set_new_handler` is used to specify an exception-handling function that is to gain control if the **`new`** operator fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.
+The C++ **`_query_new_handler`** function returns the address of the current exception-handling function set by the C++ [`_set_new_handler`](set-new-handler.md) function. `_set_new_handler` is used to specify an exception-handling function that is to gain control if the **`new`** operator fails to allocate memory. For more information, see the discussion of the [`new` and `delete` operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.
 
 ## Requirements
 

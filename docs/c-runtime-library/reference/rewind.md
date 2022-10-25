@@ -33,11 +33,11 @@ The **`rewind`** function repositions the file pointer associated with *`stream`
 
 `(void) fseek(stream, 0L, SEEK_SET );`
 
-However, unlike [`fseek`](fseek-fseeki64.md), **`rewind`** clears the error indicators for the stream as well as the end-of-file indicator. Also, unlike [`fseek`](fseek-fseeki64.md), **`rewind`** does not return a value to indicate whether the pointer was successfully moved.
+However, unlike [`fseek`](fseek-fseeki64.md), **`rewind`** clears both the error indicators for the stream and the end-of-file indicator. Also, unlike [`fseek`](fseek-fseeki64.md), **`rewind`** doesn't return a value to indicate whether the pointer was successfully moved.
 
 To clear the keyboard buffer, use **`rewind`** with the stream `stdin`, which is associated with the keyboard by default.
 
-If stream is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns and `errno` is set to `EINVAL`.
+If stream is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns, and `errno` is set to `EINVAL`.
 
 For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
