@@ -79,7 +79,7 @@ Because C++ allows overloading, you can call overloads of **`lrint`** and **`llr
 
 If you use the \<tgmath.h> `llrint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
-If *`x`* does not represent the floating-point equivalent of an integral value, these functions raise `FE_INEXACT`.
+If *`x`* doesn't represent the floating-point equivalent of an integral value, these functions raise `FE_INEXACT`.
 
 **Microsoft-specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
 

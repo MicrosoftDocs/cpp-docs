@@ -12,7 +12,7 @@ ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
 ---
 # `_makepath_s`, `_wmakepath_s`
 
-Creates a path name from components. These are versions of [`_makepath`, `_wmakepath`](makepath-wmakepath.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Creates a path name from components. These functions are versions of [`_makepath`, `_wmakepath`](makepath-wmakepath.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -63,16 +63,16 @@ Size of the buffer in words.
 Size of the buffer in bytes.
 
 *`drive`*\
-Contains a letter (A, B, and so on) corresponding to the desired drive and an optional trailing colon. **`_makepath_s`** inserts the colon automatically in the composite path if it is missing. If *`drive`* is `NULL` or points to an empty string, no drive letter appears in the composite *`path`* string.
+Contains a letter (A, B, and so on) corresponding to the desired drive and an optional trailing colon. **`_makepath_s`** inserts the colon automatically in the composite path if it's missing. If *`drive`* is `NULL` or points to an empty string, no drive letter appears in the composite *`path`* string.
 
 *`dir`*\
-Contains the path of directories, not including the drive designator or the actual file name. The trailing slash is optional, and either a forward slash (/) or a backslash (\\) or both might be used in a single *`dir`* argument. If no trailing slash (/ or \\) is specified, it is inserted automatically. If *`dir`* is `NULL` or points to an empty string, no directory path is inserted in the composite *`path`* string.
+Contains the path of directories, not including the drive designator or the actual file name. The trailing slash is optional, and either a forward slash (/) or a backslash (\\) or both might be used in a single *`dir`* argument. If no trailing slash (/ or \\) is specified, it's inserted automatically. If *`dir`* is `NULL` or points to an empty string, no directory path is inserted in the composite *`path`* string.
 
 *`fname`*\
 Contains the base file name without any file name extensions. If *`fname`* is `NULL` or points to an empty string, no filename is inserted in the composite *`path`* string.
 
 *`ext`*\
-Contains the actual file name extension, with or without a leading period (.). **`_makepath_s`** inserts the period automatically if it does not appear in *`ext`*. If *`ext`* is `NULL` or points to an empty string, no extension is inserted in the composite *`path`* string.
+Contains the actual file name extension, with or without a leading period (.). **`_makepath_s`** inserts the period automatically if it doesn't appear in *`ext`*. If *`ext`* is `NULL` or points to an empty string, no extension is inserted in the composite *`path`* string.
 
 ## Return value
 

@@ -45,9 +45,9 @@ The value to determine the base-2 logarithm of.
 
 ## Return value
 
-On success, returns return log2 *`x`*.
+On success, the functions return the base-2 log of *`x`*.
 
-Otherwise, may return one of the following values:
+Otherwise, the functions may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
