@@ -47,14 +47,14 @@ The specified value.
 
 ## Return value
 
-If successful, return the base-2 exponent of *`x`* as a **`signed int`** value.
+If successful, these functions return the base-2 exponent of *`x`* as a **`signed int`** value.
 
-Otherwise, returns one of the following values, defined in \<math.h>:
+Otherwise, the functions return one of the following values, defined in \<math.h>:
 
 |Input|Result|
 |-----------|------------|
-|±0|FP_ILOGB0|
-|±inf, ±nan, indefinite|FP_ILOGBNAN|
+|±0|`FP_ILOGB0`|
+|± INF, ± NAN, IND|`FP_ILOGBNAN`|
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 

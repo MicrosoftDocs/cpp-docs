@@ -36,7 +36,7 @@ Locale to use.
 
 ## Return value
 
-**`_ismbbkpunct`** returns a nonzero value if the integer *`c`* is a non-ASCII punctuation symbol, or 0 if it is not. For example, in code page 932 only, **`_ismbbkpunct`** tests for katakana punctuation. **`_ismbbkpunct`** uses the current locale for any locale-dependent character settings. **`_ismbbkpunct_l`** is identical except that it uses the locale that's passed in. For more information, see [Locale](../locale.md).
+**`_ismbbkpunct`** returns a nonzero value if the integer *`c`* is a non-ASCII punctuation symbol. Otherwise, it returns 0. For example, in code page 932 only, **`_ismbbkpunct`** tests for katakana punctuation. **`_ismbbkpunct`** uses the current locale for any locale-dependent character settings. **`_ismbbkpunct_l`** is identical except that it uses the locale that's passed in. For more information, see [Locale](../locale.md).
 
 ## Remarks
 

@@ -36,11 +36,11 @@ Locale to use.
 
 ## Return value
 
-Returns a nonzero value if the expression:
+Returns a nonzero value when the expression:
 
 `isctype(c, ( _PUNCT | _UPPER | _LOWER | _DIGIT )) || _ismbbkprint(c)`
 
-is nonzero for *`c`*, or 0 if it is not. **`_ismbbgraph`** uses the current locale for any locale-dependent behavior. **`_ismbbgraph_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
+is nonzero for *`c`*, or 0 when it's zero. **`_ismbbgraph`** uses the current locale for any locale-dependent behavior. **`_ismbbgraph_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
 ## Remarks
 

@@ -34,7 +34,7 @@ wchar_t *_wgetdcwd(
 *`drive`*\
 A non-negative integer that specifies the drive (0 = default drive, 1 = A, 2 = B, and so on).
 
-If the specified drive isn't available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) can't be determined, the invalid-parameter handler is invoked. For more information, see [Parameter validation](../parameter-validation.md).
+If the specified drive isn't available, the invalid parameter handler is invoked. It's also invoked when the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) can't be determined. For more information, see [Parameter validation](../parameter-validation.md).
 
 *`buffer`*\
 Storage location for the path, or `NULL`.
@@ -50,7 +50,7 @@ If *`maxlen`* is less than or equal to zero, the invalid-parameter handler is in
 
 Pointer to a string that represents the full path of the current working directory on the specified drive, or `NULL`, which indicates an error.
 
-If *`buffer`* is specified as `NULL` and there is insufficient memory to allocate *`maxlen`* characters, an error occurs and `errno` is set to `ENOMEM`. If the length of the path including the terminating null character exceeds *`maxlen`*, an error occurs, and `errno` is set to `ERANGE`. For more information about these error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+If *`buffer`* is specified as `NULL` and there's insufficient memory to allocate *`maxlen`* characters, an error occurs and `errno` is set to `ENOMEM`. If the length of the path including the terminating null character exceeds *`maxlen`*, an error occurs, and `errno` is set to `ERANGE`. For more information about these error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -58,11 +58,11 @@ The **`_getdcwd`** function gets the full path of the current working directory 
 
 **`_wgetdcwd`** is a wide-character version of **`_getdcwd`**, and its *`buffer`* parameter and return value are wide-character strings. Otherwise, **`_wgetdcwd`** and **`_getdcwd`** behave identically.
 
-This function is thread-safe even though it depends on `GetFullPathName`, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
+This function is thread-safe even though it depends on `GetFullPathName`, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and [`GetFullPathName`](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
 
-The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [`_getdcwd_nolock`, `_wgetdcwd_nolock`](getdcwd-nolock-wgetdcwd-nolock.md).
+The version of this function that has the `_nolock` suffix behaves identically to this function except that it isn't thread-safe and isn't protected from interference by other threads. For more information, see [`_getdcwd_nolock`, `_wgetdcwd_nolock`](getdcwd-nolock-wgetdcwd-nolock.md).
 
-When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to **`_getdcwd`** and **`_wgetdcwd`** are replaced by calls to `_getdcwd_dbg` and `_wgetdcwd_dbg` so that you can debug memory allocations. For more information, see[`_getdcwd_dbg`, `_wgetdcwd_dbg`](getdcwd-dbg-wgetdcwd-dbg.md).
+When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to **`_getdcwd`** and **`_wgetdcwd`** are replaced by calls to `_getdcwd_dbg` and `_wgetdcwd_dbg`, so that you can debug memory allocations. For more information, see[`_getdcwd_dbg`, `_wgetdcwd_dbg`](getdcwd-dbg-wgetdcwd-dbg.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

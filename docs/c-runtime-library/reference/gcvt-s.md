@@ -12,7 +12,7 @@ ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
 ---
 # `_gcvt_s`
 
-Converts a floating-point value to a string. This is a version of [`_gcvt`](gcvt.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Converts a floating-point value to a string. This function is a version of [`_gcvt`](gcvt.md) with security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -59,11 +59,11 @@ Zero if successful. If a failure occurs due to an invalid parameter (see the fol
 
 **Security Issues**
 
-**`_gcvt_s`** can generate an access violation if *`buffer`* does not point to valid memory and is not `NULL`.
+**`_gcvt_s`** can generate an access violation if *`buffer`* doesn't point to valid memory and isn't `NULL`.
 
 ## Remarks
 
-The **`_gcvt_s`** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. A buffer of length `_CVTBUFSIZE` is sufficient for any floating point value. If a buffer size of *`digits`* + 1 is used, the function will not overwrite the end of the buffer, so be sure to supply a sufficient buffer for this operation. **`_gcvt_s`** attempts to produce *`digits`* digits in decimal format. If it cannot, it produces *`digits`* digits in exponential format. Trailing zeros can be suppressed in the conversion.
+The **`_gcvt_s`** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. A buffer of length `_CVTBUFSIZE` is sufficient for any floating point value. If a buffer size of *`digits`* + 1 is used, the function won't overwrite the end of the buffer, so be sure to supply a sufficient buffer for this operation. **`_gcvt_s`** attempts to produce *`digits`* digits in decimal format. If it can't, it produces *`digits`* digits in exponential format. Trailing zeros can be suppressed in the conversion.
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

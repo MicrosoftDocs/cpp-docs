@@ -26,17 +26,17 @@ int _heapchk( void );
 
 |Return value|Condition|
 |-|-|
-| `_HEAPBADBEGIN` | Initial header information is bad or cannot be found. |
+| `_HEAPBADBEGIN` | Initial header information is bad or can't be found. |
 | `_HEAPBADNODE` | Bad node has been found or heap is damaged. |
-| `_HEAPBADPTR` | Pointer into heap is not valid. |
-| `_HEAPEMPTY` | Heap has not been initialized. |
+| `_HEAPBADPTR` | Pointer into heap isn't valid. |
+| `_HEAPEMPTY` | Heap hasn't been initialized. |
 | `_HEAPOK` | Heap appears to be consistent. |
 
 In addition, if an error occurs, **`_heapchk`** sets `errno` to `ENOSYS`.
 
 ## Remarks
 
-The **`_heapchk`** function helps debug heap-related problems by checking for minimal consistency of the heap. If the operating system does not support **`_heapchk`**(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.
+The **`_heapchk`** function helps debug heap-related problems by checking for minimal consistency of the heap. If the operating system doesn't support **`_heapchk`**(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

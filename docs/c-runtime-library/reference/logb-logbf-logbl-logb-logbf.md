@@ -55,7 +55,7 @@ The **`logb`** functions extract the exponential value of the floating-point arg
 
 Because C++ allows overloading, you can call overloads of **`logb`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`logb`** always takes and returns a **`double`**.
 
-If you use the `<tgmath.h>` `logb()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
+If you use the `logb` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 |Input|SEH exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|
