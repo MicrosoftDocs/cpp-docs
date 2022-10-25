@@ -12,7 +12,7 @@ ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
 ---
 # `memmove_s`, `wmemmove_s`
 
-Moves one buffer to another. These are versions of [`memmove`, `wmemmove`](memmove-wmemmove.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Moves one buffer to another. These functions are versions of [`memmove`, `wmemmove`](memmove-wmemmove.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -59,7 +59,7 @@ Zero if successful; an error code on failure
 
 ## Remarks
 
-Copies *`count`* bytes of characters from *`src`* to *`dest`*. If some regions of the source area and the destination overlap, **`memmove_s`** ensures that the original source bytes in the overlapping region are copied before being overwritten.
+Copies *`count`* bytes of characters from *`src`* to *`dest`*. If some portions of the source and the destination regions overlap, **`memmove_s`** ensures that the original source bytes in the overlapping region are copied before being overwritten.
 
 If *`dest`* or if *`src`* is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
 

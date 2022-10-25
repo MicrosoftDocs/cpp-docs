@@ -46,7 +46,7 @@ The value of *`dest`*.
 
 ## Remarks
 
-**`memcpy`** copies *`count`* bytes from *`src`* to *`dest`*; **`wmemcpy`** copies *`count`* wide characters (two bytes). If the source and destination overlap, the behavior of **`memcpy`** is undefined. Use **`memmove`** to handle overlapping regions.
+**`memcpy`** copies *`count`* bytes from *`src`* to *`dest`*; **`wmemcpy`** copies *`count`* wide characters. If the source and destination regions overlap, the behavior of **`memcpy`** is undefined. Use **`memmove`** to handle overlapping regions.
 
 > [!IMPORTANT]
 > Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).

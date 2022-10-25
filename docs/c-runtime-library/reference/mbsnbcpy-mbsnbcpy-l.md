@@ -70,7 +70,7 @@ The **`_mbsnbcpy`** function copies *`count`* bytes from *`strSource`* to *`strD
 
 If *`strSource`* or *`strDest`* is a null pointer, this function invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that those that don't have the `_l` suffix use the current locale and the versions that do have the `_l` suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions are identical, except that the ones that don't have the `_l` suffix use the current locale and the versions that do have the `_l` suffix instead use the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 > [!IMPORTANT]
 > These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used to execute arbitrary attacker code, which can cause an unwarranted elevation of privilege and compromise the system. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).

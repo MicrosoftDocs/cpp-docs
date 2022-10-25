@@ -33,7 +33,7 @@ The smaller of the two arguments.
 
 The **`__min`** macro compares two values and returns the value of the smaller one. The arguments can be of any numeric data type, signed or unsigned. Both arguments and the return value must be of the same data type.
 
-The argument returned is evaluated twice by the macro. This can lead to unexpected results if the argument is an expression that alters its value when it is evaluated, such as `*p++`.
+The argument returned is evaluated twice by the macro. Double evaluation can lead to unexpected results if the argument is an expression that alters its value when it's evaluated, such as `*p++`.
 
 ## Requirements
 
