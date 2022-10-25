@@ -68,7 +68,7 @@ The locale to use.
 
 If the total number of characters, including the terminating null, is more than *`maxsize`*, both **`strftime`** and **`wcsftime`** return 0 and the contents of *`strDest`* are indeterminate.
 
-The number of characters in *`strDest`* is equal to the number of literal characters in *`format`* as well as any characters that may be added to *`format`* via formatting codes. The terminating null of a string is not counted in the return value.
+The number of characters in *`strDest`* is equal to the number of literal characters in *`format`*, plus any characters that may be added to *`format`* via formatting codes. The terminating null of a string isn't counted in the return value.
 
 ## Remarks
 
@@ -84,7 +84,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tcsftime`**|**`strftime`**|**`strftime`**|**`wcsftime`**|
 
-The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that do not begin with **`%`** are copied unchanged to *`strDest`*. The `LC_TIME` category of the current locale affects the output formatting of **`strftime`**. (For more information on `LC_TIME`, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
+The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that don't begin with **`%`** are copied unchanged to *`strDest`*. The `LC_TIME` category of the current locale affects the output formatting of **`strftime`**. (For more information on `LC_TIME`, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
 The **`strftime`** functions support these formatting codes:
 
@@ -137,7 +137,7 @@ As in the **`printf`** function, the **`#`** flag may prefix any formatting code
 |**`%#x`**|Long date representation, appropriate to the locale. For example: "Tuesday, March 14, 1995".|
 |**`%#d`**, **`%#D`**, **`%#e`**, **`%#F`**, **`%#H`**, **`%#I`**, **`%#j`**, **`%#m`**, **`%#M`**, **`%#r`**, **`%#R`**, **`%#S`**, **`%#T`**, **`%#U`**, **`%#V`**, **`%#W`**, **`%#y`**, **`%#Y`**|Remove leading zeros or spaces (if any).|
 
-The ISO 8601 week and week-based year produced by **`%V`**, **`%g`**, and **`%G`**, uses a week that begins on Monday, where week 1 is the week that contains January 4th, which is the first week that includes at least four days of the year. If the first Monday of the year is the 2nd, 3rd, or 4th, the preceding days are part of the last week of the preceding year. For those days, **`%V`** is replaced by 53, and both **`%g`** and **`%G`** are replaced by the digits of the preceding year.
+The ISO 8601 week and week-based year produced by **`%V`**, **`%g`**, and **`%G`**, uses a week that begins on Monday. Week 1 is the week that contains the fourth day of January, which is the first week that includes at least four days of the year. If the first Monday of the year is the 2nd, 3rd, or 4th, the preceding days are part of the last week of the preceding year. For those days, **`%V`** is replaced by 53, and both **`%g`** and **`%G`** are replaced by the digits of the preceding year.
 
 > [!NOTE]
 > When using one of the `strftime` functions with a `tm` pointer returned from `gmtime`, the values printed via the `%Z` and `%z` specifiers will not be accurate. This is because the `tm` struct as specified by the C Standard does not contain the information for time zone name nor offset. Instead, the timezone information is populated via the global variables [`_timezone` and `_dstbias`](../daylight-dstbias-timezone-and-tzname.md).

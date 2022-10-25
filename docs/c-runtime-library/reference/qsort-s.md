@@ -61,7 +61,7 @@ The routine must compare the elements and then return one of the following value
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, then the function returns and `errno` is set to `EINVAL`. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, then the function returns, and `errno` is set to `EINVAL`. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -74,7 +74,7 @@ By default, this function's global state is scoped to the application. To change
 |any|any|any|any|<= 0|`EINVAL`|
 |any|any|`NULL`|any|any|`EINVAL`|
 
-**`qsort_s`** has the same behavior as `qsort` but has the *`context`* parameter and sets `errno`. By passing a *`context`* parameter, comparison functions can use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the *`context`* parameter makes **`qsort_s`** more secure because *`context`* can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the *`compare`* function.
+**`qsort_s`** has the same behavior as `qsort` but has the *`context`* parameter and sets `errno`. The *`context`* parameter allows comparison functions to use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the *`context`* parameter makes **`qsort_s`** more secure because *`context`* can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the *`compare`* function.
 
 ## Requirements
 

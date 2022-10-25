@@ -99,7 +99,7 @@ In either form, if there isn't an exponent part or a radix point character, a ra
 
 Case is ignored in both the **`INF`** and **`NAN`** forms. The first character that doesn't fit one of these forms stops the scan.
 
-The UCRT versions of these functions don't support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code. The UCRT versions support hexadecimal strings and round-tripping of `INF` and `NAN` values, which weren't supported in earlier versions. This can also cause breaking changes in your code. For example, the string "`0x1a`" would be interpreted by **`strtod`** as 0.0 in previous versions, but as 26.0 in the UCRT version.
+The UCRT versions of these functions don't support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code. The UCRT versions support hexadecimal strings and round-tripping of `INF` and `NAN` values, which weren't supported in earlier versions. This support can also cause breaking changes in your code. For example, the string "`0x1a`" would be interpreted by **`strtod`** as 0.0 in previous versions, but as 26.0 in the UCRT version.
 
 ## Requirements
 

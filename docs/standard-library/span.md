@@ -9,9 +9,9 @@ dev_langs: ["C++"]
 
 # `<span>`
 
-A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike `vector` or `array`, it doesn't "own" the elements it provides access to.
+A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike `vector` or `array`, it doesn't "own" the elements.
 
-See [`span` class](span-class.md) for detailed information. Here's an example of how a span can be used:
+See [`span` class](span-class.md) for detailed information. Here's an example of how to use a `span`:
 
 ```cpp
 #include <span>
@@ -46,7 +46,6 @@ int main()
 **Namespace:** `std`
 
 **Compiler option:** [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
-
 
 ## Members
 

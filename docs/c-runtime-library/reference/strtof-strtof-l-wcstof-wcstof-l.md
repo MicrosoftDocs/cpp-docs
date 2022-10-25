@@ -50,7 +50,7 @@ The locale to use.
 
 ## Return value
 
-**`strtof`** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VALF`. The sign of `HUGE_VALF` matches the sign of the value that cannot be represented. **`strtof`** returns 0 if no conversion can be performed or an underflow occurs.
+**`strtof`** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VALF`. The sign of `HUGE_VALF` matches the sign of the value that can't be represented. **`strtof`** returns 0 if no conversion can be performed or an underflow occurs.
 
 **`wcstof`** returns values analogously to **`strtof`**. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
@@ -58,7 +58,7 @@ For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlis
 
 ## Remarks
 
-Each function converts the input string *`strSource`* to a **`float`**. The **`strtof`** function converts *`strSource`* to a single-precision value. **`strtof`** stops reading the string *`strSource`* at the first character it cannot recognize as part of a number. This may be the terminating null character. **`wcstof`** is a wide-character version of **`strtof`**; its *`strSource`* argument is a wide-character string. Otherwise, these functions behave identically.
+Each function converts the input string *`strSource`* to a **`float`**. The **`strtof`** function converts *`strSource`* to a single-precision value. **`strtof`** stops reading the string *`strSource`* at the first character it can't recognize as part of a number. This character may be the terminating null character. **`wcstof`** is a wide-character version of **`strtof`**; its *`strSource`* argument is a wide-character string. Otherwise, these functions behave identically.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
@@ -71,15 +71,15 @@ By default, this function's global state is scoped to the application. To change
 
 The `LC_NUMERIC` category setting of the current locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The functions that don't have the `_l` suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
-If *`endptr`* is not `NULL`, a pointer to the character that stopped the scan is stored at the location that's pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location that's pointed to by *`endptr`*.
+If *`endptr`* isn't `NULL`, a pointer to the character that stopped the scan is stored at the location that's pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location that's pointed to by *`endptr`*.
 
 **`strtof`** expects *`strSource`* to point to a string of the following form:
 
 [*`whitespace`*] [*`sign`*] [*`digits`*] [.*`digits`*] [{**`e`** &#124; **`E`**} [*`sign`*] *`digits`*]
 
-A *`whitespace`* may consist of space and tab characters, which are ignored; *`sign`* is either plus (**`+`**) or minus (**`-`**); and *`digits`* are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**`e`** or **`E`**) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.
+A *`whitespace`* may consist of space and tab characters, which are ignored; *`sign`* is either plus (**`+`**) or minus (**`-`**); and *`digits`* are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**`e`** or **`E`**) and an optionally signed integer. If no exponent part or radix character appears, a radix character is assumed to follow the last digit in the string. The first character that doesn't fit this form stops the scan.
 
-The UCRT versions of these functions do not support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code.
+The UCRT versions of these functions don't support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code.
 
 ## Requirements
 

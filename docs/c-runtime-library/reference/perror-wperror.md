@@ -46,7 +46,7 @@ By default, this function's global state is scoped to the application. To change
 
 The error number is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md) (defined in ERRNO.H). The system error messages are accessed through the variable [`_sys_errlist`](../errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **`perror`** prints the appropriate error message using the `errno` value as an index to **`_sys_errlist`**. The value of the variable [`_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the **`_sys_errlist`** array.
 
-For accurate results, call **`perror`** immediately after a library routine returns with an error. Otherwise, subsequent calls can overwrite the `errno` value.
+For accurate results, call **`perror`** immediately after a library routine returns an error. Otherwise, subsequent calls can overwrite the `errno` value.
 
 In the Windows operating system, some `errno` values listed in ERRNO.H are unused. These values are reserved for use by the UNIX operating system. See [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) for a listing of `errno` values used by the Windows operating system. **`perror`** prints an empty string for any `errno` value not used by these platforms.
 

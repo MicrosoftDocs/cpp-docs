@@ -63,7 +63,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tcsnextc`|**`_strnextc`**|**`_mbsnextc`**|**`_wcsnextc`**|
 
-**`_strnextc`** and **`_wcsnextc`** are single-byte-character string and wide-character string versions of **`_mbsnextc`**. **`_wcsnextc`** returns the integer value of the next wide character in *`str`*; **`_strnextc`** returns the integer value of the next single-byte character in *`str`*. **`_strnextc`** and **`_wcsnextc`** are provided only for this mapping and should not be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
+**`_strnextc`** and **`_wcsnextc`** are single-byte-character string and wide-character string versions of **`_mbsnextc`**. **`_wcsnextc`** returns the integer value of the next wide character in *`str`*; **`_strnextc`** returns the integer value of the next single-byte character in *`str`*. **`_strnextc`** and **`_wcsnextc`** are provided only for this mapping and shouldn't be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
 **`_mbsnextc_l`** is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 

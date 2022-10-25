@@ -71,7 +71,7 @@ Each of these functions returns `_NLSCMPERROR` on an error. To use `_NLSCMPERROR
 
 ## Remarks
 
-Each of these functions performs a case-sensitive comparison of *`string1`* and *`string2`* according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
+Each of these functions performs a case-sensitive comparison of *`string1`* and *`string2`* according to the code page currently in use. These functions should be used only when there's a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
 
 All of these functions validate their parameters. If either *`string1`* or *`string2`* is a null pointer, or if *`count`* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
 

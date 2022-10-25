@@ -73,7 +73,7 @@ Zero if successful; `EINVAL` if a bad parameter was passed in.
 
 The **`_mbsnbcpy_s`** function copies *`count`* bytes from *`strSource`* to *`strDest`*. If *`count`* exceeds the size of *`strDest`*, either of the input strings is a null pointer, or *`sizeInBytes`* or *`count`* is 0, the function invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL`. If the source and destination strings overlap, the behavior of **`_mbsnbcpy_s`** is undefined.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 > [!NOTE]
 > Unlike the non-secure version of this function, **`_mbsnbcpy_s`** does not do any null padding and always null terminates the string.

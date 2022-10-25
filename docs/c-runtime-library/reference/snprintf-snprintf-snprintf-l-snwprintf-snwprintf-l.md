@@ -126,11 +126,11 @@ The **`snprintf`** function and the **`_snprintf`** family of functions format a
 
 Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** function behavior is now C99 standard conformant.
 
-**`_snwprintf`** is a wide-character version of **`_snprintf`**; the pointer arguments to **`_snwprintf`** are wide-character strings. Detection of encoding errors in **`_snwprintf`** might differ from that in **`_snprintf`**. **`_snwprintf`**, just like **`swprintf`**, writes output to a string instead of a destination of type `FILE`.
+**`_snwprintf`** is a wide-character version of **`_snprintf`**; the pointer arguments to **`_snwprintf`** are wide-character strings. Detection of encoding errors in **`_snwprintf`** might differ from the detection in **`_snprintf`**. **`_snwprintf`**, just like **`swprintf`**, writes output to a string instead of a destination of type `FILE`.
 
 The versions of these functions that have the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-In C++, these functions have template overloads that invoke their newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, more secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 ### Generic-text routine mappings
 

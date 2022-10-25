@@ -78,9 +78,9 @@ If any of these error conditions occurs, the invalid parameter handler is invoke
 
 ## Remarks
 
-The **`_searchenv_s`** routine searches for the target file in the specified domain. The *`varname`* variable can be any environment or user-defined variable that specifies a list of directory paths, such as `PATH`, `LIB`, and `INCLUDE`. Because **`_searchenv_s`** is case-sensitive, *`varname`* should match the case of the environment variable. If *`varname`* does not match the name of an environment variable defined in the process's environment, the function returns zero and the *`pathname`* variable is unchanged.
+The **`_searchenv_s`** routine searches for the target file in the specified domain. The *`varname`* variable can be any environment or user-defined variable that specifies a list of directory paths, such as `PATH`, `LIB`, and `INCLUDE`. Because **`_searchenv_s`** is case-sensitive, *`varname`* should match the case of the environment variable. If *`varname`* doesn't match the name of an environment variable defined in the process's environment, the function returns zero, and the *`pathname`* variable is unchanged.
 
-The routine searches first for the file in the current working directory. If it does not find the file, it looks next through the directories specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *`pathname`*. If the *`filename`* file is not found, *`pathname`* contains an empty null-terminated string.
+The routine searches first for the file in the current working directory. If it doesn't find the file, it looks next through the directories specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *`pathname`*. If the *`filename`* file isn't found, *`pathname`* contains an empty null-terminated string.
 
 The *`pathname`* buffer should be at least `_MAX_PATH` characters long to accommodate the full length of the constructed path name. Otherwise, **`_searchenv_s`** might overrun the *`pathname`* buffer resulting in unexpected behavior.
 

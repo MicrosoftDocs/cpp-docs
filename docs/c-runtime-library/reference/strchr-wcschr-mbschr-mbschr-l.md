@@ -86,13 +86,13 @@ Locale to use.
 
 ## Return value
 
-Each of these functions returns a pointer to the first occurrence of *`c`* in *`str`*, or `NULL` if *`c`* is not found.
+Each of these functions returns a pointer to the first occurrence of *`c`* in *`str`*, or `NULL` if *`c`* isn't found.
 
 ## Remarks
 
-The `strchr` function finds the first occurrence of *`c`* in *`str`*, or it returns `NULL` if *`c`* is not found. The null terminating character is included in the search.
+The `strchr` function finds the first occurrence of *`c`* in *`str`*, or it returns `NULL` if *`c`* isn't found. The null terminating character is included in the search.
 
-`wcschr`, `_mbschr` and `_mbschr_l` are wide-character and multibyte-character versions of `strchr`. The arguments and return value of `wcschr` are wide-character strings; those of `_mbschr` are multibyte-character strings. `_mbschr` recognizes multibyte-character sequences. Also, if the string is a null pointer, `_mbschr` invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `_mbschr` returns `NULL` and sets `errno` to `EINVAL`. `strchr` and `wcschr` do not validate their parameters. These three functions behave identically otherwise.
+`wcschr`, `_mbschr` and `_mbschr_l` are wide-character and multibyte-character versions of `strchr`. The arguments and return value of `wcschr` are wide-character strings. The arguments and return value of `_mbschr` are multibyte-character strings. `_mbschr` recognizes multibyte-character sequences. Also, if the string is a null pointer, `_mbschr` invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `_mbschr` returns `NULL` and sets `errno` to `EINVAL`. `strchr` and `wcschr` don't validate their parameters. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; for more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 

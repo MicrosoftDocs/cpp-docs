@@ -40,9 +40,9 @@ Value whose logarithm is to be found.
 
 The **`log`** functions return the natural logarithm (base *`e`*) of *`x`* if successful. The **`log10`** functions return the base-10 logarithm. If *`x`* is negative, these functions return an indefinite (`IND`), by default. If *`x`* is 0, they return infinity (`INF`).
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
-|± `QNAN`, `IND`|none|`_DOMAIN`|
+|± QNAN, IND|none|`_DOMAIN`|
 |± 0|`ZERODIVIDE`|`_SING`|
 |*`x < 0`*|`INVALID`|`_DOMAIN`|
 

@@ -53,9 +53,9 @@ The **`_mbsnbicmp`** function performs an ordinal comparison of at most the firs
 
 **`_mbsnbicmp`**  is similar to [`_mbsnbcmp`](mbsnbcmp-mbsnbcmp-l.md), except that it compares strings up to *`count`* bytes instead of by characters.
 
-Two strings containing characters located between 'Z' and 'a' in the ASCII table ('[', '\\', ']', '^', '_', and '\`') compare differently, depending on their case. For example, the two strings "ABCDE" and "ABCD^" compare one way if the comparison is lowercase ("abcde" > "abcd^") and the other way ("ABCDE" < "ABCD^") if it is uppercase.
+Two strings containing characters located between 'Z' and 'a' in the ASCII table ('[', '\\', ']', '^', '_', and '\`') compare differently, depending on their case. For example, the two strings "ABCDE" and "ABCD^" compare one way if the comparison is lowercase ("abcde" > "abcd^") and the other way ("ABCDE" < "ABCD^") if it's uppercase.
 
-**`_mbsnbicmp`** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use. It is not affected by the current locale setting.
+**`_mbsnbicmp`** recognizes multibyte-character sequences according to the [multibyte code page](../code-pages.md) currently in use. It isn't affected by the current locale setting.
 
 If either *`string1`* or *`string2`* is a null pointer, **`_mbsnbicmp`** invokes the invalid parameter handler as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets `errno` to `EINVAL`.
 

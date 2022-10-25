@@ -36,7 +36,7 @@ See **putchar, putwchar**.
 
 ## Remarks
 
-**`putchar_nolock`** and **`_putwchar_nolock`** are identical to the versions without the `_nolock` suffix except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**`putchar_nolock`** and **`_putwchar_nolock`** are identical to the versions without the `_nolock` suffix except that they aren't protected from interference by other threads. They might be faster because they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 ### Generic-text routine mappings
 
@@ -51,7 +51,7 @@ See **putchar, putwchar**.
 |**`_putchar_nolock`**|\<stdio.h>|
 |**`_putwchar_nolock`**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 

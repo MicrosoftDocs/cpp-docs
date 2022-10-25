@@ -57,7 +57,7 @@ The locale to use
 
 ## Return value
 
-Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.
+Each of these functions returns the number of fields that are successfully converted and assigned. The return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.
 
 If *`buffer`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`
 
@@ -65,16 +65,16 @@ For information about these and other error codes, see [`errno`, `_doserrno`, `_
 
 ## Remarks
 
-The **`sscanf_s`** function reads data from *`buffer`* into the location that's given by each *`argument`*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *`format`*. Unlike the less secure version [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md), a buffer size parameter is required when you use the type field characters **`c`**, **`C`**, **`s`**, **`S`**, or string control sets that are enclosed in **`[]`**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it. For example, if you are reading into a string, the buffer size for that string is passed as follows:
+The **`sscanf_s`** function reads data from *`buffer`* into the location that's given by each *`argument`*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *`format`*. Unlike the less secure version [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md), a buffer size parameter is required when you use the type field characters **`c`**, **`C`**, **`s`**, **`S`**, or string control sets that are enclosed in **`[]`**. The buffer size in characters must be supplied as an extra parameter immediately after each buffer parameter that requires it. For example, if you're reading into a string, the buffer size for that string is passed as follows:
 
 ```C
 wchar_t ws[10];
 swscanf_s(in_str, L"%9s", ws, (unsigned)_countof(ws)); // buffer size is 10, width specification is 9
 ```
 
-The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
+The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too large to fit in the buffer, nothing is written to that buffer.
 
-In the case of characters, a single character may be read as follows:
+A single character may be read as follows:
 
 ```C
 wchar_t wc;
@@ -95,7 +95,7 @@ For more information, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](s
 
 The *`format`* argument controls the interpretation of the input fields and has the same form and function as the *`format`* argument for the **`scanf_s`** function. If copying occurs between strings that overlap, the behavior is undefined.
 
-**`swscanf_s`** is a wide-character version of **`sscanf_s`**; the arguments to **`swscanf_s`** are wide-character strings. **`sscanf_s`** does not handle multibyte hexadecimal characters. **`swscanf_s`** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`swscanf_s`** and **`sscanf_s`** behave identically.
+**`swscanf_s`** is a wide-character version of **`sscanf_s`**; the arguments to **`swscanf_s`** are wide-character strings. **`sscanf_s`** doesn't handle multibyte hexadecimal characters. **`swscanf_s`** doesn't handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`swscanf_s`** and **`sscanf_s`** behave identically.
 
 The versions of these functions that have the **`_l`** suffix are identical except that they use the locale parameter that's passed in instead of the current thread locale.
 

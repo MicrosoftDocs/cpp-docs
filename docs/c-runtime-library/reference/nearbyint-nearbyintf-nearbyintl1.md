@@ -41,11 +41,11 @@ If successful, returns *`x`*, rounded to the nearest integer, using the current 
 |*`x`* = ±0|±0, unmodified|
 |*`x`* = NaN|NaN|
 
-Errors are not reported through [`_matherr`](matherr.md); specifically, this function does not report any `FE_INEXACT` exceptions.
+Errors aren't reported through [`_matherr`](matherr.md); specifically, this function doesn't report any `FE_INEXACT` exceptions.
 
 ## Remarks
 
-The primary difference between this function and [`rint`](rint-rintf-rintl.md) is that this function does not raise the inexact floating point exception.
+The primary difference between this function and [`rint`](rint-rintf-rintl.md) is that this function doesn't raise the inexact floating point exception.
 
 Because the maximum floating-point values are exact integers, this function will never overflow by itself; rather, the output may overflow the return value, depending on which version of the function you use.
 

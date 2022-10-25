@@ -71,13 +71,13 @@ Zero if successful; otherwise, an error code.
 
 ## Remarks
 
-The **`_mbsnbset_s`** and **`_mbsnbset_s_l`** functions set, at most, the first *`count`* bytes of *`str`* to *`c`*. If *`count`* is greater than the length of *`str`*, the length of *`str`* is used instead of *`count`*. If *`c`* is a multibyte character and cannot be set entirely into the last byte that's specified by *`count`*, the last byte is padded with a blank character. **`_mbsnbset_s`** and **`_mbsnbset_s_l`** do not place a terminating null at the end of *`str`*.
+The **`_mbsnbset_s`** and **`_mbsnbset_s_l`** functions set, at most, the first *`count`* bytes of *`str`* to *`c`*. If *`count`* is greater than the length of *`str`*, the length of *`str`* is used instead of *`count`*. If *`c`* is a multibyte character and can't be set entirely into the last byte that's specified by *`count`*, the last byte is padded with a blank character. **`_mbsnbset_s`** and **`_mbsnbset_s_l`** don't place a terminating null at the end of *`str`*.
 
 **`_mbsnbset_s`** and **`_mbsnbset_s_l`** resemble `_mbsnset`, except that they set *`count`* bytes rather than *`count`* characters of *`c`*.
 
-If *`str`* is `NULL` or *`count`* is zero, this function generates an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if *`c`* is not a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.
+If *`str`* is `NULL` or *`count`* is zero, this function generates an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if *`c`* isn't a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information. The **`_mbsnbset_s`** version of this function uses the current locale for this locale-dependent behavior; the **`_mbsnbset_s_l`** version is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The **`_mbsnbset_s`** version of this function uses the current locale for this locale-dependent behavior; the **`_mbsnbset_s_l`** version is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 In C++, use of these functions is simplified by template overloads; the overloads can infer buffer length automatically and thereby eliminate the need to specify a size argument. For more information, see [Secure template overloads](../secure-template-overloads.md).
 

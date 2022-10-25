@@ -45,11 +45,11 @@ Pointer to the comparison routine. The first parameter is a pointer to the key f
 
 ## Return value
 
-If the key is found, **`_lsearch`** returns a pointer to the element of the array at *`base`* that matches *`key`*. If the key is not found, **`_lsearch`** returns a pointer to the newly added item at the end of the array.
+If the key is found, **`_lsearch`** returns a pointer to the element of the array at *`base`* that matches *`key`*. If the key isn't found, **`_lsearch`** returns a pointer to the newly added item at the end of the array.
 
 ## Remarks
 
-The **`_lsearch`** function performs a linear search for the value *`key`* in an array of *`number`* elements, each of *`width`* bytes. Unlike **`bsearch`**, **`_lsearch`** does not require the array to be sorted. If *`key`* is not found, **`_lsearch`** adds it to the end of the array and increments *`number`*.
+The **`_lsearch`** function performs a linear search for the value *`key`* in an array of *`number`* elements, each of *`width`* bytes. Unlike **`bsearch`**, **`_lsearch`** doesn't require the array to be sorted. If *`key`* isn't found, **`_lsearch`** adds it to the end of the array and increments *`number`*.
 
 The *`compare`* argument is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. **`_lsearch`** calls the *`compare`* routine one or more times during the search, passing pointers to two array elements on each call. *`compare`* must compare the elements and return either nonzero (meaning the elements are different) or 0 (meaning the elements are identical).
 

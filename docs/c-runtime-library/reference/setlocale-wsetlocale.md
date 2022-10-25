@@ -37,9 +37,9 @@ Locale specifier.
 
 ## Return value
 
-If a valid *`locale`* and *`category`* are given, returns a pointer to the string associated with the specified *`locale`* and *`category`*.
+If a valid *`locale`* and *`category`* are given, the functions return a pointer to the string associated with the specified *`locale`* and *`category`*.
 
-If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
+If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, each function sets `errno` to `EINVAL`, and returns `NULL`.
 
 The call
 
@@ -88,7 +88,7 @@ At program startup, the equivalent of the following statement is executed:
 
 `setlocale( LC_ALL, "C" );`
 
-The *`locale`* argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all those supported by the Windows NLS API. The set of locale names supported by `setlocale` is described in [Locale names, Languages, and Country/Region strings](../locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `setlocale` are listed in [Language strings](../language-strings.md) and [Country/Region strings](../country-region-strings.md). We recommend the locale name form for performance and for maintainability of locale strings embedded in code or serialized to storage. The locale name strings are less likely to be changed by an operating system update than the language and country/region name form.
+The *`locale`* argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The available locale names, languages, country/region codes, and code pages include all the ones supported by the Windows NLS API. The set of locale names supported by `setlocale` is described in [Locale names, Languages, and Country/Region strings](../locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `setlocale` are listed in [Language strings](../language-strings.md) and [Country/Region strings](../country-region-strings.md). We recommend the locale name form for performance and for maintainability of locale strings embedded in code or serialized to storage. The locale name strings are less likely to be changed by an operating system update than the language and country/region name form.
 
 A null pointer that's passed as the *`locale`* argument tells `setlocale` to query instead of to set the international environment. If the *`locale`* argument is a null pointer, the program's current locale setting isn't changed. Instead, `setlocale` returns a pointer to the string that's associated with the *`category`* of the thread's current locale. If the *`category`* argument is `LC_ALL`, the function returns a string that indicates the current setting of each category, separated by semicolons. For example, the sequence of calls
 
@@ -172,7 +172,7 @@ The function [`_configthreadlocale`](configthreadlocale.md) is used to control w
 
 ## UTF-8 support
 
-Starting in Windows 10 version 1803 (10.0.17134.0), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
+Starting in Windows 10 version 1803 (10.0.17134.0), the Universal C Runtime supports using a UTF-8 code page. The change means that `char` strings passed to C runtime functions can expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
 
 The string to specify UTF-8 mode is:
 
@@ -189,7 +189,7 @@ The following examples show how to specify the UTF-8 string:
 `"en_us.utf8"`\
 `"ja_JP.Utf-8"`
 
-After calling `setlocale(LC_ALL, ".UTF8")`, you may pass "😊" to `mbtowcs` and it will be properly translated to a `wchar_t` string, whereas previously there wasn't a locale setting available to do this.
+After calling `setlocale(LC_ALL, ".UTF8")`, you may pass "😊" to `mbtowcs` and it will be properly translated to a `wchar_t` string. Previously, there wasn't a locale setting available to do this translation.
 
 UTF-8 mode is also enabled for functions that have historically translated `char` strings using the default Windows ANSI code page (ACP). For example, calling [`_mkdir("😊")`](../reference/mkdir-wmkdir.md) while using a UTF-8 code page will correctly produce a directory with that emoji as the folder name, instead of requiring the ACP to be changed to UTF-8 before running your program. Likewise, calling [`_getcwd()`](../reference/getcwd-wgetcwd.md) in that folder will return a UTF-8 encoded string. For compatibility, the ACP is still used if the C locale code page isn't set to UTF-8.
 

@@ -114,7 +114,7 @@ Returns *`strDest`*. No return value is reserved to indicate an error.
 
 ## Remarks
 
-The **`strncpy`** function copies the initial *`count`* characters of *`strSource`* to *`strDest`* and returns *`strDest`*. If *`count`* is less than or equal to the length of *`strSource`*, a null character is not appended automatically to the copied string. If *`count`* is greater than the length of *`strSource`*, the destination string is padded with null characters up to length *`count`*. The behavior of **`strncpy`** is undefined if the source and destination strings overlap.
+The **`strncpy`** function copies the initial *`count`* characters of *`strSource`* to *`strDest`* and returns *`strDest`*. If *`count`* is less than or equal to the length of *`strSource`*, a null character isn't appended automatically to the copied string. If *`count`* is greater than the length of *`strSource`*, the destination string is padded with null characters up to length *`count`*. The behavior of **`strncpy`** is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
 > **`strncpy`** does not check for sufficient space in *`strDest`*; this makes it a potential cause of buffer overruns. The *`count`* argument limits the number of characters copied; it is not a limit on the size of *`strDest`*. See the following example. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -147,7 +147,7 @@ By default, this function's global state is scoped to the application. To change
 |**`wcsncpy`**|`<string.h>` or `<wchar.h>`|
 |**`_mbsncpy`**, **`_mbsncpy_l`**|`<mbstring.h>`|
 
-For additional platform compatibility information, see [Compatibility](../compatibility.md).
+For more platform compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 

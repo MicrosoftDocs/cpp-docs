@@ -78,7 +78,7 @@ Zero if successful, an error code on failure.
 |*`wcstr`* is `NULL` and *`sizeInWords`* > 0|`EINVAL`|
 |*`mbstr`* is `NULL`|`EINVAL`|
 |The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; see Remarks below)|`ERANGE`|
-|*`wcstr`* is not `NULL` and *`sizeInWords`* == 0|`EINVAL`|
+|*`wcstr`* isn't `NULL` and *`sizeInWords`* == 0|`EINVAL`|
 
 If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
 
@@ -92,11 +92,11 @@ The **`mbstowcs_s`** function converts a string of multibyte characters pointed 
 
 - The number of wide characters stored in the *`wcstr`* buffer equals *`count`*.
 
-The destination string is always null-terminated (even in the case of an error).
+The destination string is always null-terminated (even if there's an error).
 
 If *`count`* is the special value [`_TRUNCATE`](../truncate.md), then **`mbstowcs_s`** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
 
-If **`mbstowcs_s`** successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*pReturnValue` (provided *`pReturnValue`* is not `NULL`). This occurs even if the *`wcstr`* argument is `NULL` and provides a way to determine the required buffer size. Note that if *`wcstr`* is `NULL`, *`count`* is ignored, and *`sizeInWords`* must be 0.
+If **`mbstowcs_s`** successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*pReturnValue` (provided *`pReturnValue`* isn't `NULL`). The size is calculated even if the *`wcstr`* argument is `NULL`, and provides a way to determine the required buffer size. If *`wcstr`* is `NULL`, *`count`* is ignored, and *`sizeInWords`* must be 0.
 
 If **`mbstowcs_s`** encounters an invalid multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.
 

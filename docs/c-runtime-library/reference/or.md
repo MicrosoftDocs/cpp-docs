@@ -11,18 +11,17 @@ ms.assetid: 6523b3ac-0a18-44ec-9e9a-b9bab8525ead
 ---
 # `or`
 
-An alternative to the `||` operator.
+An alternative to the **`||`** operator.
 
 ## Syntax
 
 ```C
-
 #define or ||
 ```
 
 ## Remarks
 
-The macro yields the operator `||`.
+The macro yields the operator **`||`**.
 
 ## Example
 
