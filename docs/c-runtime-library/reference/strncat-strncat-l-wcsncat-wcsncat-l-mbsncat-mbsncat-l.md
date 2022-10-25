@@ -11,10 +11,10 @@ helpviewer_keywords: ["concatenating strings", "ftcsncat function", "tcsncat_l f
 ---
 # `strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`
 
-Appends characters of a string. More secure versions of these functions are available, see `[strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) .
+Appends characters of a string. More secure versions of these functions are available; see [`strncat_s`, `_strncat_s_l`, `wcsncat_s`, `_wcsncat_s_l`, `_mbsncat_s`, `_mbsncat_s_l`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md).
 
 > [!IMPORTANT]
-> **`_mbsncat`** and **`_mbsncat_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsncat`** and **`_mbsncat_l`** can't be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -92,9 +92,9 @@ The **`strncat`** function appends, at most, the first *`count`* characters of *
 > [!IMPORTANT]
 > **`strncat`** does not check for sufficient space in *`strDest`*; it is therefore a potential cause of buffer overruns. Keep in mind that *`count`* limits the number of characters appended; it is not a limit on the size of *`strDest`*. See the example below. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**`wcsncat`** and **`_mbsncat`** are wide-character and multibyte-character versions of **`strncat`**. The string arguments and return value of **`wcsncat`** are wide-character strings; those of **`_mbsncat`** are multibyte-character strings. These three functions behave identically otherwise.
+**`wcsncat`** and **`_mbsncat`** are wide-character and multibyte-character versions of **`strncat`**. The string arguments and return value of **`wcsncat`** are wide-character strings. The string arguments and return value of **`_mbsncat`** are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior. The versions with the **`_l`** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 In C++, these functions have template overloads. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -168,7 +168,7 @@ After BadAppend :  This is the initial string!Extra text to add to (47 chars)
 After GoodAppend:  This is the initial string!Extra text t (39 chars)
 ```
 
-Note that `BadAppend` caused a buffer overrun.
+You can see that `BadAppend` caused a buffer overrun.
 
 ## See also
 

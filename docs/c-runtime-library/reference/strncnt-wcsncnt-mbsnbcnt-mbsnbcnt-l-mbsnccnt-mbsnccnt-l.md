@@ -69,11 +69,11 @@ Locale to use.
 
 **`_mbsnbcnt`** and **`_mbsnbcnt_l`** count the number of bytes found in the first *`count`* of multibyte characters of *`str`*. **`_mbsnbcnt`** and **`_mbsnbcnt_l`** replace `mtob` and should be used in place of `mtob`.
 
-**`_mbsnccnt`** and **`_mbsnccnt_l`** count the number of characters found in the first *`count`* of bytes of *`str`*. If **`_mbsnccnt`** and **`_mbsnccnt_l`** encounter a null character in the second byte of a double-byte character, the first byte is also considered to be null and is not included in the returned count value. **`_mbsnccnt`** and **`_mbsnccnt_l`** replace `btom` and should be used in place of `btom`.
+**`_mbsnccnt`** and **`_mbsnccnt_l`** count the number of characters found in the first *`count`* of bytes of *`str`*. If **`_mbsnccnt`** and **`_mbsnccnt_l`** encounter a null character in the second byte of a double-byte character, the first byte is also considered to be null and isn't included in the returned count value. **`_mbsnccnt`** and **`_mbsnccnt_l`** replace `btom` and should be used in place of `btom`.
 
 If *`str`* is a `NULL` pointer or is *`count`* is 0, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md), `errno` is set to `EINVAL`, and the function returns 0.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

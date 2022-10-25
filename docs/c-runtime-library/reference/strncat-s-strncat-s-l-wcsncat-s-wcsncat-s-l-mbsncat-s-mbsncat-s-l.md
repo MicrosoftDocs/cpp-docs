@@ -133,7 +133,7 @@ Returns 0 if successful, an error code on failure.
 
 These functions try to append the first `D` characters of *`strSource`* to the end of *`strDest`*, where `D` is the lesser of *`count`* and the length of *`strSource`*. If appending those `D` characters will fit within *`strDest`* (whose size is given as *`numberOfElements`*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of *`strDest`*, and a new terminating null is appended; otherwise, *`strDest[0]`* is set to the null character and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-There is an exception to the above paragraph. If *`count`* is [`_TRUNCATE`](../truncate.md), then as much of *`strSource`* as will fit is appended to *`strDest`* while still leaving room to append a terminating null.
+There's an exception to the above paragraph. If *`count`* is [`_TRUNCATE`](../truncate.md), then as much of *`strSource`* as will fit is appended to *`strDest`* while still leaving room to append a terminating null.
 
 For example,
 
@@ -143,7 +143,7 @@ strncpy_s(dst, _countof(dst), "12", 2);
 strncat_s(dst, _countof(dst), "34567", 3);
 ```
 
-means that we're asking **`strncat_s`** to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence **`strncat_s`** zeroes out the string and calls the invalid parameter handler.
+means that we're asking **`strncat_s`** to append three characters to two characters in a buffer five characters long; it would leave no space for the null terminator, so **`strncat_s`** zeroes out the string, and calls the invalid parameter handler.
 
 If truncation behavior is needed, use `_TRUNCATE` or adjust the *`count`* parameter accordingly:
 
@@ -161,7 +161,7 @@ In all cases, the resulting string is terminated with a null character. If copyi
 
 If *`strSource`* or *`strDest`* is `NULL`, or *`numberOfElements`* is zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL` without modifying its parameters.
 
-**`wcsncat_s`** and **`_mbsncat_s`** are wide-character and multibyte-character versions of **`strncat_s`**. The string arguments and return value of **`wcsncat_s`** are wide-character strings; those of **`_mbsncat_s`** are multibyte-character strings. These three functions behave identically otherwise.
+**`wcsncat_s`** and **`_mbsncat_s`** are wide-character and multibyte-character versions of **`strncat_s`**. The string arguments and return value of **`wcsncat_s`** are wide-character strings. The arguments and return value of **`_mbsncat_s`** are multibyte-character strings. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
@@ -178,7 +178,7 @@ By default, this function's global state is scoped to the application. To change
 |`_tcsncat_s`|**`strncat_s`**|**`_mbsnbcat_s`**|**`wcsncat_s`**|
 |`_tcsncat_s_l`|**`_strncat_s_l`**|**`_mbsnbcat_s_l`**|**`_wcsncat_s_l`**|
 
-**`_strncat_s_l`** and **`_wcsncat_s_l`** have no locale dependence; they're  are only provided for **`_tcsncat_s_l`**.
+**`_strncat_s_l`** and **`_wcsncat_s_l`** have no locale dependence; they're only provided for **`_tcsncat_s_l`**.
 
 ## Requirements
 

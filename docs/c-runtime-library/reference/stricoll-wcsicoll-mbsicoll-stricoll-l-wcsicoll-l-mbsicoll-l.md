@@ -72,7 +72,7 @@ Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include e
 
 ## Remarks
 
-Each of these functions performs a case-insensitive comparison of *`string1`* and *`string2`* according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
+Each of these functions performs a case-insensitive comparison of *`string1`* and *`string2`* according to the code page currently in use. These functions should be used only when there's a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
 
 `_stricmp` differs from **`_stricoll`** in that the `_stricmp` comparison is affected by `LC_CTYPE`, whereas the **`_stricoll`** comparison is according to the `LC_CTYPE` and `LC_COLLATE` categories of the locale. For more information on the `LC_COLLATE` category, see [`setlocale`](setlocale-wsetlocale.md) and [Locale categories](../locale-categories.md). The versions of these functions without the `_l` suffix use the current locale; the versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 

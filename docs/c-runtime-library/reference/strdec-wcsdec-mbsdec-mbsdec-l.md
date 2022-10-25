@@ -58,7 +58,7 @@ Locale to use.
 
 The **`_mbsdec`** and **`_mbsdec_l`** functions return a pointer to the first byte of the multibyte character that immediately precedes *`current`* in the string that contains *`start`*.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md) for more information.  **`_mbsdec`** recognizes multibyte-character sequences according to the locale that's currently in use, while **`_mbsdec_l`** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md).  **`_mbsdec`** recognizes multibyte-character sequences according to the locale that's currently in use, while **`_mbsdec_l`** is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../locale.md).
 
 If *`start`* or *`current`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.
 
@@ -73,7 +73,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tcsdec`|**`_strdec`**|**`_mbsdec`**|**`_wcsdec`**|
 
-**`_strdec`** and **`_wcsdec`** are single-byte-character and wide-character versions of **`_mbsdec`** and **`_mbsdec_l`**. **`_strdec`** and **`_wcsdec`** are provided only for this mapping and should not be used otherwise.
+**`_strdec`** and **`_wcsdec`** are single-byte-character and wide-character versions of **`_mbsdec`** and **`_mbsdec_l`**. **`_strdec`** and **`_wcsdec`** are provided only for this mapping and shouldn't be used otherwise.
 
 For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
