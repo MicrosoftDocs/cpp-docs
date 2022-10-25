@@ -51,11 +51,11 @@ For more information about these and other return codes, see [`errno`, `_doserrn
 
 ## Remarks
 
-The **`_pipe`** function creates a *pipe*, which is an artificial I/O channel that a program uses to pass information to other programs. A pipe resembles a file because it has a file pointer, a file descriptor, or both, and it can be read from or written to by using the Standard Library input and output functions. However, a pipe doesn't represent a specific file or device. Instead, it represents temporary storage in memory that is independent of the program's own memory and is controlled entirely by the operating system.
+The **`_pipe`** function creates a *pipe*, which is an artificial I/O channel that a program uses to pass information to other programs. A pipe resembles a file, because it has a file pointer, a file descriptor, or both. And, it can be read from or written to by using the Standard Library input and output functions. However, a pipe doesn't represent a specific file or device. Instead, it represents temporary storage in memory that is independent of the program's own memory and is controlled entirely by the operating system.
 
 **`_pipe`** resembles **`_open`** but opens the pipe for reading and writing and returns two file descriptors instead of one. The program can use both sides of the pipe or close the one that it doesn't need. For example, the command processor in Windows creates a pipe when it executes a command such as **`PROGRAM1 | PROGRAM2`**.
 
-The standard output descriptor of `PROGRAM1` is attached to the pipe's write descriptor. The standard input descriptor of `PROGRAM2` is attached to the pipe's read descriptor. This eliminates the need to create temporary files to pass information to other programs.
+The standard output descriptor of `PROGRAM1` is attached to the pipe's write descriptor. The standard input descriptor of `PROGRAM2` is attached to the pipe's read descriptor. This attachment eliminates the need to create temporary files to pass information to other programs.
 
 The **`_pipe`** function returns two file descriptors to the pipe in the *`pfds`* argument. The element *`pfds`*[0] contains the read descriptor, and the element *`pfds`*[1] contains the write descriptor. Pipe file descriptors are used in the same way as other file descriptors. (The low-level input and output functions **`_read`** and **`_write`** can read from and write to a pipe.) To detect the end-of-pipe condition, check for a **`_read`** request that returns 0 as the number of bytes read.
 
@@ -63,7 +63,7 @@ The *`psize`* argument specifies the amount of memory, in bytes, to reserve for 
 
 In multithreaded programs, no locking is performed. The file descriptors that are returned are newly opened and shouldn't be referenced by any thread until after the **`_pipe`** call is complete.
 
-To use the **`_pipe`** function to communicate between a parent process and a child process, each process must have only one descriptor open on the pipe. The descriptors must be opposites: if the parent has a read descriptor open, then the child must have a write descriptor open. The easiest way to do this is to bitwise "or" (`|`) the `_O_NOINHERIT` flag with *`textmode`*. Then, use **`_dup`** or **`_dup2`** to create an inheritable copy of the pipe descriptor that you want to pass to the child. Close the original descriptor, and then spawn the child process. On returning from the spawn call, close the duplicate descriptor in the parent process. For more information, see example 2 later in this article.
+To use the **`_pipe`** function to communicate between a parent process and a child process, each process must have only one descriptor open on the pipe. The descriptors must be opposites: if the parent has a read descriptor open, then the child must have a write descriptor open. It's easiest to use a bitwise "or" (**`|`**) on the `_O_NOINHERIT` flag with *`textmode`*. Then, use **`_dup`** or **`_dup2`** to create an inheritable copy of the pipe descriptor that you want to pass to the child. Close the original descriptor, and then spawn the child process. On returning from the spawn call, close the duplicate descriptor in the parent process. For more information, see example 2 later in this article.
 
 In the Windows operating system, a pipe is destroyed when all of its descriptors have been closed. (If all read descriptors on the pipe have been closed, then writing to the pipe causes an error.) All read and write operations on the pipe wait until there's enough data or enough buffer space to complete the I/O request.
 
@@ -192,7 +192,7 @@ Dad, the square root of 8000 is 89.44.
 
 ## Example 2
 
-This is a basic filter application. It spawns the application `crt_pipe_beeper` after it creates a pipe that directs the spawned application's `stdout` to the filter. The filter removes ASCII 7 (beep) characters.
+The sample code is a basic filter application. It spawns the application `crt_pipe_beeper` after it creates a pipe that directs the spawned application's `stdout` to the filter. The filter removes ASCII 7 (beep) characters.
 
 ```C
 // crt_pipe_beeper.c

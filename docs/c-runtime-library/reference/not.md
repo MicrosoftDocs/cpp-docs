@@ -11,7 +11,7 @@ ms.assetid: d2ddbd5c-33c0-4aff-8961-feac155b4ba1
 ---
 # `not`
 
-An alternative to the ! operator.
+An alternative to the **`!`** operator.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ An alternative to the ! operator.
 
 ## Remarks
 
-The macro yields the operator !.
+The macro yields the operator **`!`**.
 
 ## Example
 

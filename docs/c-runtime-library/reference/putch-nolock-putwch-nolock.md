@@ -39,7 +39,7 @@ Returns *`c`* if successful. If **`_putch_nolock`** fails, it returns `EOF`; if 
 
 ## Remarks
 
-**`_putch_nolock`** and **`_putwch_nolock`** are identical to `_putch` and `_putwch`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+**`_putch_nolock`** and **`_putwch_nolock`** are identical to `_putch` and `_putwch`, respectively, except that they aren't protected from interference by other threads. They might be faster because they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

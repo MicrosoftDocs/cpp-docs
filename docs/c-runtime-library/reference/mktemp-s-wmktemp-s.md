@@ -12,7 +12,7 @@ ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
 ---
 # `_mktemp_s`, `_wmktemp_s`
 
-Creates a unique file name. These are versions of [`_mktemp`, `_wmktemp`](mktemp-wmktemp.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Creates a unique file name. These functions are versions of [`_mktemp`, `_wmktemp`](mktemp-wmktemp.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -53,13 +53,13 @@ Both of these functions return zero on success; an error code on failure.
 |----------------|-------------------|----------------------|-------------------------------|
 |`NULL`|any|`EINVAL`|`NULL`|
 |Incorrect format (see Remarks section for correct format)|any|`EINVAL`|empty string|
-|any|<= number of X's|`EINVAL`|empty string|
+|any|<= number of X characters|`EINVAL`|empty string|
 
 If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`.
 
 ## Remarks
 
-The **`_mktemp_s`** function creates a unique file name by modifying the *`nameTemplate`* argument, so that after the call, the *`nameTemplate`* pointer points to a string containing the new file name. **`_mktemp_s`** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. **`_wmktemp_s`** is a wide-character version of **`_mktemp_s`**; the argument of **`_wmktemp_s`** is a wide-character string. **`_wmktemp_s`** and **`_mktemp_s`** behave identically otherwise, except that **`_wmktemp_s`** does not handle multibyte-character strings.
+The **`_mktemp_s`** function creates a unique file name by modifying the *`nameTemplate`* argument, so that after the call, the *`nameTemplate`* pointer points to a string containing the new file name. **`_mktemp_s`** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. **`_wmktemp_s`** is a wide-character version of **`_mktemp_s`**; the argument of **`_wmktemp_s`** is a wide-character string. **`_wmktemp_s`** and **`_mktemp_s`** behave identically otherwise, except that **`_wmktemp_s`** doesn't handle multibyte-character strings.
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tmktemp_s`|**`_mktemp_s`**|**`_mktemp_s`**|**`_wmktemp_s`**|
 
-The *`nameTemplate`* argument has the form *`baseXXXXXX`*, where *`base`* is the part of the new file name that you supply and each X is a placeholder for a character supplied by **`_mktemp_s`**. Each placeholder character in *`nameTemplate`* must be an uppercase X. **`_mktemp_s`** preserves *`base`* and replaces the first trailing X with an alphabetic character. **`_mktemp_s`** replaces the following trailing X's with a five-digit value; this value is a unique number identifying the calling process, or in multithreaded programs, the calling thread.
+The *`nameTemplate`* argument has the form *`baseXXXXXX`*, where *`base`* is the part of the new file name that you supply and each X is a placeholder for a character supplied by **`_mktemp_s`**. Each placeholder character in *`nameTemplate`* must be an uppercase X. **`_mktemp_s`** preserves *`base`* and replaces the first trailing X with an alphabetic character. **`_mktemp_s`** replaces the X characters that follow with a five-digit value. This value is a unique number that identifies the calling process, or in multithreaded programs, the calling thread.
 
 Each successful call to **`_mktemp_s`** modifies *`nameTemplate`*. In each subsequent call from the same process or thread with the same *`nameTemplate`* argument, **`_mktemp_s`** checks for file names that match names returned by **`_mktemp_s`** in previous calls. If no file exists for a given name, **`_mktemp_s`** returns that name. If files exist for all previously returned names, **`_mktemp_s`** creates a new name by replacing the alphabetic character it used in the previously returned name with the next available lowercase letter, in order, from 'a' through 'z'. For example, if *`base`* is:
 
@@ -85,7 +85,7 @@ If this name is used to create file FNA12345 and this file still exists, the nex
 
 > **`fnb12345`**
 
-If FNA12345 does not exist, the next name returned is again:
+If FNA12345 doesn't exist, the next name returned is again:
 
 > **`fna12345`**
 
