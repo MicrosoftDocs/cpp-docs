@@ -36,7 +36,7 @@ Each of these functions returns 0 if the directory is successfully deleted. A re
 
 |errno value|Condition|
 |-|-|
-| `ENOTEMPTY` | Given path is not a directory, the directory is not empty, or the directory is either the current working directory or the root directory. |
+| `ENOTEMPTY` | Given path isn't a directory, the directory isn't empty, or the directory is either the current working directory or the root directory. |
 | `ENOENT` | Path is invalid. |
 | `EACCES` | A program has an open handle to the directory. |
 

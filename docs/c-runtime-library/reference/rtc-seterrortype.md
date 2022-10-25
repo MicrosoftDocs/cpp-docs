@@ -29,7 +29,7 @@ int _RTC_SetErrorType(
 A number between zero and one less than the value returned by [`_RTC_NumErrors`](rtc-numerrors.md).
 
 *`ErrType`*\
-A value to assign to this *`errnum`*. For example, you might use `_CRT_ERROR`. If you are using `_CrtDbgReport` as your error handler, *`ErrType`* can only be one of the symbols defined in [`_CrtSetReportMode`](crtsetreportmode.md). If you have your own error handler ([`_RTC_SetErrorFunc`](rtc-seterrorfunc.md)), you can have as many *`ErrType`* values as there are *`errnum`* values.
+A value to assign to this *`errnum`*. For example, you might use `_CRT_ERROR`. If you're using `_CrtDbgReport` as your error handler, *`ErrType`* can only be one of the symbols defined in [`_CrtSetReportMode`](crtsetreportmode.md). If you have your own error handler ([`_RTC_SetErrorFunc`](rtc-seterrorfunc.md)), you can have as many *`ErrType`* values as there are *`errnum`* values.
 
 An *`ErrType`* of `_RTC_ERRTYPE_IGNORE` has special meaning to `_CrtSetReportMode`; the error is ignored.
 

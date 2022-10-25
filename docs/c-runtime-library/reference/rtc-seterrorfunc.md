@@ -29,11 +29,11 @@ The address of the function that will handle run-time error checks.
 
 ## Return value
 
-The previously defined error function. If there is no previously defined function, returns `NULL`.
+The previously defined error function. If there's no previously defined function, returns `NULL`.
 
 ## Remarks
 
-Do not use this function; instead, use `_RTC_SetErrorFuncW`. It is retained only for backward compatibility.
+Don't use this function; instead, use `_RTC_SetErrorFuncW`. It's retained only for backward compatibility.
 
 ## Requirements
 

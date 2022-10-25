@@ -29,7 +29,7 @@ The status code to return to the host environment.
 
 ## Return value
 
-The **`quick_exit`** function cannot return to its caller.
+The **`quick_exit`** function can't return to its caller.
 
 ## Remarks
 

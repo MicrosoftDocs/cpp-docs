@@ -29,7 +29,7 @@ The address of the function that will handle run-time error checks.
 
 ## Return value
 
-The previously defined error function; or `NULL` if there is no previously defined function.
+The previously defined error function; or `NULL` if there's no previously defined function.
 
 ## Remarks
 
@@ -39,7 +39,7 @@ The **`_RTC_SetErrorFuncW`** callback applies only to the component that it was 
 
 Make sure that the address that you pass to **`_RTC_SetErrorFuncW`** is that of a valid error handling function.
 
-If an error has been assigned a type of -1 by using [`_RTC_SetErrorType`](rtc-seterrortype.md), the error handling function is not called.
+If an error has been assigned a type of -1 by using [`_RTC_SetErrorType`](rtc-seterrortype.md), the error handling function isn't called.
 
 Before you can call this function, you must first call one of the run-time error-check initialization functions. For more information, see [Using runtime checks without the C runtime library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).
 
