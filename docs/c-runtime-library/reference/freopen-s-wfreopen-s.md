@@ -13,7 +13,7 @@ helpviewer_keywords: ["_tfreopen_s function", "_wfreopen_s function", "file poin
 
 Closes the file currently associated with `oldStream` and reassigns `stream` to the file specified by `fileName`.
 
-These versions of [`freopen, _wfreopen`](freopen-wfreopen.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
+These versions of [`freopen`, `_wfreopen`](freopen-wfreopen.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -51,7 +51,7 @@ The stream to reopen. It's flushed and any files associated with it are closed.
 
 Zero on success; otherwise an error code. If an error occurs, the original file is closed, and `NULL` is written to *`stream`* unless *`stream`* is also `NULL`
 
-For more information about error codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -149,10 +149,10 @@ This will go to the file 'freopen.out'
 ## See also
 
 [`Stream I/O`](../stream-i-o.md)\
-[`freopen, _wfreopen`](freopen-wfreopen.md)\
-[`fclose, _fcloseall`](fclose-fcloseall.md)\
-[`_fdopen, _wfdopen`](fdopen-wfdopen.md)\
+[`freopen`, `_wfreopen`](freopen-wfreopen.md)\
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
 [`_fileno`](fileno.md)\
-[`fopen, _wfopen`](fopen-wfopen.md)\
-[`_open, _wopen`](open-wopen.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`_open`, `_wopen`](open-wopen.md)\
 [`_setmode`](setmode.md)

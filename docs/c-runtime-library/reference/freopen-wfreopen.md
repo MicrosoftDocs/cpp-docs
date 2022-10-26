@@ -11,7 +11,7 @@ helpviewer_keywords: ["_wfreopen function", "file pointers [C++], reassigning", 
 ---
 # `freopen`, `_wfreopen`
 
-Reassigns a file pointer. More secure versions of the functions are available; see [`freopen_s, _wfreopen_s`](freopen-s-wfreopen-s.md).
+Reassigns a file pointer. More secure versions of the functions are available; see [`freopen_s`, `_wfreopen_s`](freopen-s-wfreopen-s.md).
 
 ## Syntax
 
@@ -47,7 +47,7 @@ For more information on error codes, see [`errno`, `_doserrno`, `_sys_errlist`, 
 
 ## Remarks
 
-More secure versions of these functions exist, see [`freopen_s, _wfreopen_s`](freopen-s-wfreopen-s.md).
+More secure versions of these functions exist, see [`freopen_s`, `_wfreopen_s`](freopen-s-wfreopen-s.md).
 
 The **`freopen`** function closes the file currently associated with *`stream`* and reassigns *`stream`* to the file specified by *`path`*. **`_wfreopen`** is a wide-character version of **`_freopen`**; the *`path`* and *`mode`* arguments to **`_wfreopen`** are wide-character strings. **`_wfreopen`** and **`_freopen`** behave identically otherwise.
 
@@ -136,9 +136,9 @@ This will go to the file 'freopen.out'
 ## See also
 
 [Stream I/O](../stream-i-o.md)\
-[`fclose, _fcloseall`](fclose-fcloseall.md)\
-[`_fdopen, _wfdopen`](fdopen-wfdopen.md)\
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`_fdopen`, `_wfdopen`](fdopen-wfdopen.md)\
 [`_fileno`](fileno.md)\
-[`fopen, _wfopen`](fopen-wfopen.md)\
-[`_open, _wopen`](open-wopen.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`_open`, `_wopen`](open-wopen.md)\
 [`_setmode`](setmode.md)\
