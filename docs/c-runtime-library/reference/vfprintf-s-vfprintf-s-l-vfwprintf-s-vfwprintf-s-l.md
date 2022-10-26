@@ -11,7 +11,7 @@ helpviewer_keywords: ["vfprintf_s_l function", "vfwprintf_s_l function", "vfwpri
 ---
 # `vfprintf_s`, `_vfprintf_s_l`, `vfwprintf_s`, `_vfwprintf_s_l`
 
-Write formatted output using a pointer to a list of arguments. These are versions of [`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Write formatted output using a pointer to a list of arguments. These functions are versions of [`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 

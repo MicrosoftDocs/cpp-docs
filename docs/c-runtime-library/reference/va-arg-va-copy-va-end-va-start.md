@@ -56,7 +56,7 @@ Parameter that precedes the first optional argument.
 
 ## Return value
 
-**`va_arg`** returns the current argument. **`va_copy`**, **`va_start`** and **`va_end`** do not return values.
+**`va_arg`** returns the current argument. **`va_copy`**, **`va_start`** and **`va_end`** don't return values.
 
 ## Remarks
 
@@ -77,7 +77,7 @@ The C standard macros, defined in `STDARG.H`, are used as follows:
 > [!NOTE]
 > The macros in VARARGS.H are deprecated and are retained only for backwards compatibility with code that was written before the ANSI C89 standard. In all other cases, use the macros in STDARGS.H.
 
-When they are compiled by using [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), programs that use these macros may generate unexpected results because of differences between native and common language runtime (CLR) type systems. Consider this program:
+When they're compiled by using [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), programs that use these macros may generate unexpected results because of differences between native and common language runtime (CLR) type systems. Consider this program:
 
 ```C
 #include <stdio.h>
