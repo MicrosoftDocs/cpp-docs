@@ -37,7 +37,7 @@ Pointer to `FILE` structure.
 
 ## Return value
 
-If successful, each of these functions returns the character argument *`c`*. If *`c`* cannot be pushed back or if no character has been read, the input stream is unchanged and **`ungetc`** returns `EOF`; **`ungetwc`** returns `WEOF`. If *`stream`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `EOF` or `WEOF` is returned and `errno` is set to `EINVAL`.
+If successful, each of these functions returns the character argument *`c`*. If *`c`* can't be pushed back or if no character has been read, the input stream is unchanged and **`ungetc`** returns `EOF`; **`ungetwc`** returns `WEOF`. If *`stream`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `EOF` or `WEOF` is returned, and `errno` is set to `EINVAL`.
 
 For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -47,7 +47,7 @@ The **`ungetc`** function pushes the character *`c`* back onto *`stream`* and cl
 
 Characters placed on the stream by **`ungetc`** may be erased if `fflush`, [`fseek`](fseek-fseeki64.md), `fsetpos`, or [`rewind`](rewind.md) is called before the character is read from the stream. The file-position indicator will have the value it had before the characters were pushed back. The external storage corresponding to the stream is unchanged. On a successful **`ungetc`** call against a text stream, the file-position indicator is unspecified until all the pushed-back characters are read or discarded. On each successful **`ungetc`** call against a binary stream, the file-position indicator is decremented; if its value was 0 before a call, the value is undefined after the call.
 
-Results are unpredictable if **`ungetc`** is called twice without a read or file-positioning operation between the two calls. After a call to `fscanf`, a call to **`ungetc`** may fail unless another read operation (such as `getc`) has been performed. This is because `fscanf` itself calls **`ungetc`**.
+Results are unpredictable if **`ungetc`** is called twice without a read or file-positioning operation between the two calls. After a call to `fscanf`, a call to **`ungetc`** may fail unless another read operation (such as `getc`) has been performed, because `fscanf` itself calls **`ungetc`**.
 
 **`ungetwc`** is a wide-character version of **`ungetc`**. However, on each successful **`ungetwc`** call against a text or binary stream, the value of the file-position indicator is unspecified until all pushed-back characters are read or discarded.
 
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |**`ungetc`**|\<stdio.h>|
 |**`ungetwc`**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 

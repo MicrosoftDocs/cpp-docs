@@ -12,7 +12,7 @@ ms.assetid: 4d9b75c6-c9c7-4876-b761-ea9ab1925e96
 ---
 # `__uncaught_exception`
 
-Indicates whether one or more exceptions have been thrown, but have not yet been handled by the corresponding **`catch`** block of a [try-catch](../../cpp/try-throw-and-catch-statements-cpp.md) statement.
+Indicates whether one or more exceptions have been thrown, but haven't yet been handled by the corresponding **`catch`** block of a [try-catch](../../cpp/try-throw-and-catch-statements-cpp.md) statement.
 
 ## Syntax
 
