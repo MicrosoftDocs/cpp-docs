@@ -6,7 +6,7 @@ api_name: ["abs", "_abs64", "labs", "llabs"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["stdlib/_abs64", "math/abs", "_abs64", "abs", "labs", "math/labs", "llabs", "math/llabs", "cmath/abs"]
+f1_keywords: ["_abs64", "STDLIB/_abs64", "abs", "CORECRT_MATH/abs", "STDLIB/abs", "CSTDLIB/abs", "labs", "CORECRT_MATH/labs", "llabs", "CORECRT_MATH/llabs"]
 helpviewer_keywords: ["absolute values", "abs function", "abs64 function", "_abs64 function", "calculating absolute values"]
 ---
 # `abs`, `labs`, `llabs`, `_abs64`

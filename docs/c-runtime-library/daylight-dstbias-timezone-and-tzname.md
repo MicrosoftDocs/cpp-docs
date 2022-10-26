@@ -2,8 +2,8 @@
 description: "Learn more about: _daylight, _dstbias, _timezone, and _tzname"
 title: "_daylight, _dstbias, _timezone, and _tzname"
 ms.date: "11/04/2016"
-f1_keywords: ["tzname", "_timezone", "timezone", "_daylight", "_tzname", "daylight"]
-helpviewer_keywords: ["time zones", "time adjustments", "timezone variables", "_tzname function", "_daylight function", "_timezone function", "daylight function", "local time adjustments", "timezone function", "tzname function", "time-zone variables"]
+f1_keywords: ["_daylight", "TIME/_daylight", "_dstbias", "TIME/_dstbias", "_timezone", "TIME/_timezone", "_tzname", "TIME/_tzname"]
+helpviewer_keywords: ["time zones", "time adjustments", "timezone variables", "_daylight global variable", "_dstbias global variable", "_timezone global variable", "_tzname global variable", "local time adjustments", "time-zone variables"]
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
 ---
 # `_daylight`, `_dstbias`, `_timezone`, and `_tzname`

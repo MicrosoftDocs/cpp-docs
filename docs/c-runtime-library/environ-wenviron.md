@@ -2,8 +2,8 @@
 description: "Learn more about: _environ, _wenviron"
 title: "_environ, _wenviron"
 ms.date: "11/04/2016"
-f1_keywords: ["environ", "wenviron", "_wenviron", "_environ"]
-helpviewer_keywords: ["environ function", "_environ function", "_wenviron function", "process environment", "wenviron function"]
+f1_keywords: ["_environ", "STDLIB/_environ", "_wenviron", "STDLIB/_wenviron"]
+helpviewer_keywords: ["_environ global variable", "_wenviron global variable", "process environment"]
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
 ---
 # `_environ`, `_wenviron`

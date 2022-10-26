@@ -2,7 +2,7 @@
 description: "Learn more about: File Attribute Constants"
 title: "File Attribute Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["A_HIDDEN", "_A_NORMAL", "_A_SUBDIR", "_A_RDONLY", "A_NORMAL", "A_SUBDIR", "_A_SYSTEM", "c.constants.file", "_A_HIDDEN", "A_RDONLY", "_A_ARCH", "A_ARCH"]
+f1_keywords: ["_A_ARCH", "_A_HIDDEN", "_A_NORMAL", "_A_RDONLY", "_A_SUBDIR", "_A_SYSTEM", "CORECRT_IO/_A_ARCH", "CORECRT_IO/_A_HIDDEN", "CORECRT_IO/_A_NORMAL", "CORECRT_IO/_A_RDONLY", "CORECRT_IO/_A_SUBDIR", "CORECRT_IO/_A_SYSTEM", "c.constants.file"]
 helpviewer_keywords: ["constants [C++], file attributes", "file attribute constants [C++]", "_A_SYSTEM constant", "files [C++], file attribute constants", "_A_SUBDIR constant", "_A_ARCH constant", "_A_NORMAL constant", "_A_HIDDEN constant", "_A_RDONLY constant"]
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
 ---

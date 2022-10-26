@@ -6,7 +6,7 @@ api_name: ["_iob"]
 api_location: ["msvcrt.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_iob", "iob"]
+f1_keywords: ["_iob", "_IOB_ENTRIES", "STDIO/_IOB_ENTRIES"]
 helpviewer_keywords: ["_iob global variable", "iob global variable"]
 ms.assetid: 008ed376-8078-4bbd-bc6c-0677c63d0ff1
 ---

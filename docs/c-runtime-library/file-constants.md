@@ -2,7 +2,7 @@
 description: "Learn more about: File Constants"
 title: "File Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["_O_EXCL", "_O_RDWR", "_O_APPEND", "_O_RDONLY", "_O_TRUNC", "_O_CREAT", "_O_WRONLY"]
+f1_keywords: ["_O_APPEND", "_O_CREAT", "_O_EXCL", "_O_RDONLY", "_O_RDWR", "_O_TRUNC", "_O_WRONLY", "FCNTL/_O_APPEND", "FCNTL/_O_CREAT", "FCNTL/_O_EXCL", "FCNTL/_O_RDONLY", "FCNTL/_O_RDWR", "FCNTL/_O_TRUNC", "FCNTL/_O_WRONLY"]
 helpviewer_keywords: ["_O_RDWR constant", "O_EXCL constant", "O_RDWR constant", "O_WRONLY constant", "O_APPEND constant", "O_CREAT constant", "_O_CREAT constant", "_O_APPEND constant", "_O_EXCL constant", "O_TRUNC constant", "_O_RDONLY constant", "_O_TRUNC constant", "O_RDONLY constant", "_O_WRONLY constant"]
 ms.assetid: c8fa5548-9ac2-4217-801d-eb45e86f2fa4
 ---

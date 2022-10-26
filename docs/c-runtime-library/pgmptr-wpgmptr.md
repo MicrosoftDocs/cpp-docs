@@ -2,8 +2,8 @@
 description: "Learn more about: _pgmptr, _wpgmptr"
 title: "_pgmptr, _wpgmptr"
 ms.date: "11/04/2016"
-f1_keywords: ["pgmptr", "_pgmptr", "wpgmptr", "_wpgmptr"]
-helpviewer_keywords: ["wpgmptr function", "_wpgmptr function", "_pgmptr function", "pgmptr function"]
+f1_keywords: ["_pgmptr", "STDLIB/_pgmptr", "_wpgmptr", "STDLIB/_wpgmptr"]
+helpviewer_keywords: ["_pgmptr global variable", "_wpgmptr global variable"]
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
 ---
 # `_pgmptr`, `_wpgmptr`

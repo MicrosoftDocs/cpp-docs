@@ -6,7 +6,7 @@ api_name: ["__wargv", "__argv", "__argc"]
 api_location: ["msvcrt120.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["__argv", "__argc", "__wargv"]
+f1_keywords: ["__argc", "STDLIB/__argc", "__argv", "STDLIB/__argv", "__wargv", "STDLIB/__wargv"]
 helpviewer_keywords: ["__argv", "__wargv", "__argc"]
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
 no-loc: [__argc, __argv, __wargv, main, wmain]

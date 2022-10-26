@@ -2,7 +2,8 @@
 description: "Learn more about: EOF, WEOF"
 title: "EOF, WEOF"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["EOF function", "WEOF function", "end of file"]
+f1_keywords: ["EOF", "STDIO/EOF", "WEOF", "CORECRT_WSTDIO/WEOF"]
+helpviewer_keywords: ["EOF constant", "WEOF constant", "end of file"]
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
 ---
 # `EOF`, `WEOF`

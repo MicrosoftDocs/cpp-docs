@@ -2,7 +2,7 @@
 description: "Learn more about: EXIT_SUCCESS, EXIT_FAILURE"
 title: "EXIT_SUCCESS, EXIT_FAILURE"
 ms.date: "06/25/2018"
-f1_keywords: ["EXIT_FAILURE", "EXIT_SUCCESS"]
+f1_keywords: ["EXIT_FAILURE", "EXIT_SUCCESS", "STDLIB/EXIT_FAILURE", "STDLIB/EXIT_SUCCESS"]
 helpviewer_keywords: ["EXIT_SUCCESS constant", "EXIT_FAILURE constant"]
 ---
 # `EXIT_SUCCESS`, `EXIT_FAILURE`

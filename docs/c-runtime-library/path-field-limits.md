@@ -2,7 +2,7 @@
 description: "Learn more about: Path Field Limits"
 title: "Path Field Limits"
 ms.date: "11/04/2016"
-f1_keywords: ["_MAX_EXT", "_MAX_DIR", "_MAX_PATH", "_MAX_FNAME", "_MAX_DRIVE"]
+f1_keywords: ["_MAX_EXT", "_MAX_DIR", "_MAX_PATH", "_MAX_FNAME", "_MAX_DRIVE", "STDLIB/_MAX_EXT", "STDLIB/_MAX_DIR", "STDLIB/_MAX_PATH", "STDLIB/_MAX_FNAME", "STDLIB/_MAX_DRIVE"]
 helpviewer_keywords: ["path field constants", "MAX_FNAME constant", "_MAX_DIR constant", "_MAX_DRIVE constant", "paths, maximum limit", "_MAX_PATH constant", "MAX_DRIVE constant", "_MAX_FNAME constant", "_MAX_EXT constant", "MAX_DIR constant", "MAX_EXT constant"]
 ms.assetid: 2b5d0e43-1347-45b4-8397-24a8a45c444e
 ---

@@ -2,7 +2,7 @@
 description: "Learn more about: BUFSIZ"
 title: "BUFSIZ"
 ms.date: "11/04/2016"
-f1_keywords: ["BUFSIZ"]
+f1_keywords: ["BUFSIZ", "STDIO/BUFSIZ"]
 helpviewer_keywords: ["BUFSIZ constant"]
 ms.assetid: 94ac04a3-d154-476b-bd89-eefbc7b949ae
 ---
