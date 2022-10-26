@@ -32,7 +32,7 @@ If the `LC_CTYPE` category of the current locale doesn't define a classification
 
 ## Remarks
 
-The function determines a classification rule for wide-character codes. The following pairs of calls have the same behavior in all locales (but an implementation can define additional classification rules even in the "C" locale):
+The function determines a classification rule for wide-character codes. The following pairs of calls have the same behavior in all locales (but an implementation can define more classification rules even in the "C" locale):
 
 |Function|Same as|
 |--------------|-------------|
