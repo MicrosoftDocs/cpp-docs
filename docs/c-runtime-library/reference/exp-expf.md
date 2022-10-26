@@ -93,5 +93,5 @@ exp( 2.302585 ) = 10.000000
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[`log, logf, log10, log10f`](log-logf-log10-log10f.md)\
+[`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)\
 [`_CIexp`](../ciexp.md)
