@@ -67,18 +67,18 @@ This function invokes the invalid parameter handler, as described in [Parameter 
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tfullpath`**|**`_fullpath`**|**`_fullpath`**|**`_wfullpath`**|
+| `Tchar.h` routine | `_UNICODE and _MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tfullpath`** | **`_fullpath`** | **`_fullpath`** | **`_wfullpath`** |
 
 If the *`absPath`* buffer is `NULL`, **`_fullpath`** calls [`malloc`](malloc.md) to allocate a buffer and ignores the *`maxLength`* argument. It's the caller's responsibility to deallocate this buffer (using [`free`](free.md)) as appropriate. If the *`relPath`* argument specifies a disk drive, the current directory of this drive is combined with the path.
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fullpath`**|`<stdlib.h>`|
-|**`_wfullpath`**|`<stdlib.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`_fullpath`** | `<stdlib.h>` |
+| **`_wfullpath`** | `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -53,9 +53,9 @@ In addition to the above restrictions, when using the [`/clr` (Common Language R
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_malloca`**|`<malloc.h>`|
+| Routine | Required header |
+|---|---|
+| **`_malloca`** | `<malloc.h>` |
 
 ## Example: `_malloca`
 

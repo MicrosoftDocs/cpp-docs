@@ -76,17 +76,17 @@ If either *`stream`* or *`format`* is a null pointer, or if the format string co
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftprintf_p`|**`_vfprintf_p`**|**`_vfprintf_p`**|**`_vfwprintf_p`**|
-|`_vftprintf_p_l`|**`_vfprintf_p_l`**|**`_vfprintf_p_l`**|**`_vfwprintf_p_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vftprintf_p` | **`_vfprintf_p`** | **`_vfprintf_p`** | **`_vfwprintf_p`** |
+| `_vftprintf_p_l` | **`_vfprintf_p_l`** | **`_vfprintf_p_l`** | **`_vfwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`_vfprintf_p`**, **`_vfprintf_p_l`**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|**`_vfwprintf_p`**, **`_vfwprintf_p_l`**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`_vfprintf_p`**, **`_vfprintf_p_l`** | \<stdio.h> and \<stdarg.h> | \<varargs.h>* |
+| **`_vfwprintf_p`**, **`_vfwprintf_p_l`** | \<stdio.h> or \<wchar.h>, and \<stdarg.h> | \<varargs.h>* |
 
 \* Required for UNIX V compatibility.
 

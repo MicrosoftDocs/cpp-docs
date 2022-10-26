@@ -56,17 +56,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tccpy`|Maps to macro or inline function|**`_mbccpy`**|Maps to macro or inline function|
-|`_tccpy_l`|n/a|**`_mbccpy_l`**|n/a|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tccpy` | Maps to macro or inline function | **`_mbccpy`** | Maps to macro or inline function |
+| `_tccpy_l` | n/a | **`_mbccpy_l`** | n/a |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbccpy`**|\<mbctype.h>|
-|**`_mbccpy_l`**|\<mbctype.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbccpy`** | \<mbctype.h> |
+| **`_mbccpy_l`** | \<mbctype.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -36,13 +36,13 @@ The base of the logarithm.
 
 The possible return values are:
 
-|z parameter|Return value|
-|-----------------|------------------|
-|Positive|The logarithm (base 10) of z|
-|Zero|- ∞|
-|Negative|NaN|
-|NaN|NaN|
-|+ ∞|+ ∞|
+| *`z`* parameter | Return value |
+|---|---|
+| Positive | The logarithm (base 10) of *`z`* |
+| Zero | - INF |
+| Negative | NaN |
+| NaN | NaN |
+| + INF | + INF |
 
 ## Remarks
 
@@ -50,9 +50,9 @@ Because C++ allows overloading, you can call overloads of **`clog10`** that take
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`clog10`**, **`clog10f`**, **`clog10l`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`clog10`**, **`clog10f`**, **`clog10l`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

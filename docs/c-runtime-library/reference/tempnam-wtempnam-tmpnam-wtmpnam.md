@@ -73,18 +73,18 @@ If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, **`_tempnam`** and **`_wtempnam
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_ttmpnam`|**`tmpnam`**|**`tmpnam`**|**`_wtmpnam`**|
-|`_ttempnam`|**`_tempnam`**|**`_tempnam`**|**`_wtempnam`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_ttmpnam` | **`tmpnam`** | **`tmpnam`** | **`_wtmpnam`** |
+| `_ttempnam` | **`_tempnam`** | **`_tempnam`** | **`_wtempnam`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_tempnam`**|\<stdio.h>|
-|**`_wtempnam`**, **`_wtmpnam`**|\<stdio.h> or \<wchar.h>|
-|**`tmpnam`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`_tempnam`** | \<stdio.h> |
+| **`_wtempnam`**, **`_wtmpnam`** | \<stdio.h> or \<wchar.h> |
+| **`tmpnam`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

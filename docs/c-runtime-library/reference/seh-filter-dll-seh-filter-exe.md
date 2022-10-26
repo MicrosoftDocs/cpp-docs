@@ -43,18 +43,18 @@ An integer that indicates the action to be taken, based on the result of excepti
 
 These methods are called by the exception-filter expression of the [try-except Statement](../../cpp/try-except-statement.md). The method consults a constant internal table to identify the exception and determine the appropriate action, as shown here. The exception numbers are defined in winnt.h and the signal numbers are defined in signal.h.
 
-|Exception Number (unsigned long)|Signal Number|
-|----------------------------------------|-------------------|
-|STATUS_ACCESS_VIOLATION|SIGSEGV|
-|STATUS_ILLEGAL_INSTRUCTION|SIGILL|
-|STATUS_PRIVILEGED_INSTRUCTION|SIGILL|
-|STATUS_FLOAT_DENORMAL_OPERAND|SIGFPE|
-|STATUS_FLOAT_DIVIDE_BY_ZERO|SIGFPE|
-|STATUS_FLOAT_INEXACT_RESULT|SIGFPE|
-|STATUS_FLOAT_INVALID_OPERATION|SIGFPE|
-|STATUS_FLOAT_OVERFLOW|SIGFPE|
-|STATUS_FLOAT_STACK_CHECK|SIGFPE|
-|STATUS_FLOAT_UNDERFLOW|SIGFPE|
+| Exception number (unsigned long) | Signal number |
+|---|---|
+| `STATUS_ACCESS_VIOLATION` | `SIGSEGV` |
+| `STATUS_ILLEGAL_INSTRUCTION` | `SIGILL` |
+| `STATUS_PRIVILEGED_INSTRUCTION` | `SIGILL` |
+| `STATUS_FLOAT_DENORMAL_OPERAND` | `SIGFPE` |
+| `STATUS_FLOAT_DIVIDE_BY_ZERO` | `SIGFPE` |
+| `STATUS_FLOAT_INEXACT_RESULT` | `SIGFPE` |
+| `STATUS_FLOAT_INVALID_OPERATION` | `SIGFPE` |
+| `STATUS_FLOAT_OVERFLOW` | `SIGFPE` |
+| `STATUS_FLOAT_STACK_CHECK` | `SIGFPE` |
+| `STATUS_FLOAT_UNDERFLOW` | `SIGFPE` |
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

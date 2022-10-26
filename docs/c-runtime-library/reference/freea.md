@@ -47,9 +47,9 @@ A call to **`_freea`** must accompany all calls to `_malloca`. It's also an erro
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_freea`**|\<stdlib.h> and \<malloc.h>|
+| Function | Required header |
+|---|---|
+| **`_freea`** | \<stdlib.h> and \<malloc.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

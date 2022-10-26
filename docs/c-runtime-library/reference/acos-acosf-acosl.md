@@ -6,7 +6,7 @@ api_name: ["acosf", "acos", "acosl", "_o_acos", "_o_acosf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["acos", "acosl", "acosf", "math/acosf", "math/acosl"]
+f1_keywords: ["acos", "CMATH/acos", "CORECRT_MATH/acos", "acosl", "CORECRT_MATH/acosl", "acosf", "CORECRT_MATH/acosf"]
 helpviewer_keywords: ["acos function", "acosl function", "acosf function", "trigonometric functions", "arccosine function"]
 ---
 # `acos`, `acosf`, `acosl`
@@ -36,11 +36,11 @@ The **`acos`** function returns the arccosine of *`x`* in the range 0 to π radi
 
 By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an indefinite.
 
-|Input|`SEH` exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|`± ∞`|`INVALID`|`_DOMAIN`|
-|`± QNAN, IND`|none|`_DOMAIN`|
-|`|x| > 1`|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± INF | `INVALID` | `_DOMAIN` |
+| ± QNaN, IND | none | `_DOMAIN` |
+| `|x| > 1` | `INVALID` | `_DOMAIN` |
 
 ## Remarks
 
@@ -52,10 +52,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`acos`**, **`acosf`**, **`acosl`**|`<math.h>`|`<errno.h>`|
-|**`acos()`** macro | `<tgmath.h>` ||
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`acos`**, **`acosf`**, **`acosl`** | `<math.h>` | `<errno.h>` |
+| **`acos`** macro | `<tgmath.h>` |  |
 
 ## Example
 

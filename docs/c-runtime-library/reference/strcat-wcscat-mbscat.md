@@ -74,17 +74,17 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcscat`**|**`strcat`**|**`_mbscat`**|**`wcscat`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscat` | **`strcat`** | **`_mbscat`** | **`wcscat`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strcat`**|`<string.h>`|
-|**`wcscat`**|`<string.h>` or `<wchar.h>`|
-|**`_mbscat`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strcat`** | `<string.h>` |
+| **`wcscat`** | `<string.h>` or `<wchar.h>` |
+| **`_mbscat`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

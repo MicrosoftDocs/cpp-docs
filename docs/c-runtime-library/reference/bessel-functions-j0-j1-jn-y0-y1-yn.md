@@ -55,25 +55,25 @@ Each of these routines returns a Bessel function of *`x`*. If *`x`* is negative 
 
 The **`_j0`**, **`_j1`**, and **`_jn`** routines return Bessel functions of the first kind: orders 0, 1, and n, respectively.
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|`± QNAN`, `IND`|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | `INVALID` | `_DOMAIN` |
 
 The **`_y0`**, **`_y1`**, and **`_yn`** routines return Bessel functions of the second kind: orders 0, 1, and n, respectively.
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|`± QNAN`, `IND`|`INVALID`|`_DOMAIN`|
-|`± 0`|`ZERODIVIDE`|`_SING`|
-|`|x| < 0.0`|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | `INVALID` | `_DOMAIN` |
+| ± 0 | `ZERODIVIDE` | `_SING` |
+| `|x| < 0.0` | `INVALID` | `_DOMAIN` |
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_j0`**, **`_j1`**, **`_jn`**, **`_y0`**, **`_y1`**, **`_yn`**|\<cmath> (C++), \<math.h> (C, C++)|
+| Routine | Required header |
+|---|---|
+| **`_j0`**, **`_j1`**, **`_jn`**, **`_y0`**, **`_y1`**, **`_yn`** | \<cmath> (C++), \<math.h> (C, C++) |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

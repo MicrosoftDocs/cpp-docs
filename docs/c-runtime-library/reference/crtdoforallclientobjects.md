@@ -43,9 +43,9 @@ If *`pfn`* is `NULL`, the invalid parameter handler is invoked, as described in 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtDoForAllClientObjects`**|\<crtdbg.h>, \<errno.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtDoForAllClientObjects`** | \<crtdbg.h>, \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -40,11 +40,11 @@ Value whose logarithm is to be found.
 
 The **`log`** functions return the natural logarithm (base *`e`*) of *`x`* if successful. The **`log10`** functions return the base-10 logarithm. If *`x`* is negative, these functions return an indefinite (`IND`), by default. If *`x`* is 0, they return infinity (`INF`).
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|± QNAN, IND|none|`_DOMAIN`|
-|± 0|`ZERODIVIDE`|`_SING`|
-|*`x < 0`*|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
+| ± 0 | `ZERODIVIDE` | `_SING` |
+| *`x < 0`* | `INVALID` | `_DOMAIN` |
 
 **`log`** and **`log10`** have an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
@@ -58,10 +58,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`log`**, **`logf`**, **`logl`**, **`log10`**, **`log10f`**, **`log10l`**|`<math.h>`|
-|**`log`** macro | `<tgmath.h>` |
+| Routine | Required header |
+|---|---|
+| **`log`**, **`logf`**, **`logl`**, **`log10`**, **`log10f`**, **`log10l`** | `<math.h>` |
+| **`log`** macro | `<tgmath.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

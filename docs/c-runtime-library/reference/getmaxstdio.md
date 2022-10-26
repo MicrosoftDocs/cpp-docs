@@ -30,9 +30,9 @@ Use [`_setmaxstdio`](setmaxstdio.md) to configure the number of simultaneously o
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getmaxstdio`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`_getmaxstdio`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

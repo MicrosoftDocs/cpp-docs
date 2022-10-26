@@ -39,10 +39,10 @@ The **`_chgsign`** functions return a value that's equal to the floating-point a
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_chgsign`**|\<float.h>|
-|**`_chgsignf`**, **`_chgsignl`**|\<math.h>|
+| Routine | Required header |
+|---|---|
+| **`_chgsign`** | \<float.h> |
+| **`_chgsignf`**, **`_chgsignl`** | \<math.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

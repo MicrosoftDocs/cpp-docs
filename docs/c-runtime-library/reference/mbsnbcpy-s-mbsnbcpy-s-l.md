@@ -86,17 +86,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsncpy_s`|`_strncpy_s`|**`_mbsnbcpy_s`**|`_wcsncpy_s`|
-|`_tcsncpy_s_l`|`_strncpy_s_l`|**`_mbsnbcpy_s_l`**|`_wcsncpy_s_l`|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncpy_s` | `_strncpy_s` | **`_mbsnbcpy_s`** | `_wcsncpy_s` |
+| `_tcsncpy_s_l` | `_strncpy_s_l` | **`_mbsnbcpy_s_l`** | `_wcsncpy_s_l` |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnbcpy_s`**|\<mbstring.h>|
-|**`_mbsnbcpy_s_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnbcpy_s`** | \<mbstring.h> |
+| **`_mbsnbcpy_s_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

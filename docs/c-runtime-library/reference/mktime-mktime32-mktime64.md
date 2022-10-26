@@ -64,11 +64,11 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`mktime`**|`<time.h>`|
-|**`_mktime32`**|`<time.h>`|
-|**`_mktime64`**|`<time.h>`|
+| Routine | Required header |
+|---|---|
+| **`mktime`** | `<time.h>` |
+| **`_mktime32`** | `<time.h>` |
+| **`_mktime64`** | `<time.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

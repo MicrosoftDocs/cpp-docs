@@ -57,20 +57,20 @@ Because C++ allows overloading, you can call overloads of **`logb`** that take a
 
 If you use the `logb` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|`± QNAN`,`IND`|None|`_DOMAIN`|
-|± 0|`ZERODIVIDE`|`_SING`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | None | `_DOMAIN` |
+| ± 0 | `ZERODIVIDE` | `_SING` |
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_logb`**|`<float.h>`|
-|**`logb`**, **`logbf`**, **`logbl`**, **`_logbf`**|`<math.h>`|
-|**`logb`** macro | `<tgmath.h>` |
+| Routine | Required header |
+|---|---|
+| **`_logb`** | `<float.h>` |
+| **`logb`**, **`logbf`**, **`logbl`**, **`_logbf`** | `<math.h>` |
+| **`logb`** macro | `<tgmath.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -48,9 +48,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_scalb`**, **`_scalbf`**|`<float.h>`|
+| Routine | Required header |
+|---|---|
+| **`_scalb`**, **`_scalbf`** | `<float.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

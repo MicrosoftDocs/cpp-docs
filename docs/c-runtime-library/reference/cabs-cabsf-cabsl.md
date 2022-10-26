@@ -49,9 +49,9 @@ Because C++ allows overloading, you can call overloads of **`cabs`** that take `
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`cabs`**,               **`cabsf`**, **`cabsl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cabs`**, **`cabsf`**, **`cabsl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

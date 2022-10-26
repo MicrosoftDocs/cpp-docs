@@ -1,7 +1,7 @@
 ---
 title: "<ranges>"
 description: "Overview of the Standard Template Library (STL) ranges library"
-ms.date: 09/26/2022
+ms.date: 10/25/2022
 f1_keywords: ["<ranges>"]
 helpviewer_keywords: ["ranges"]
 ---
@@ -41,14 +41,14 @@ Besides being easier to read, it avoids the memory allocation required for the `
 
 In the code above, each element that is divisible by three is combined with an operation to square that element. The '`|`' symbol chains the operations together, and is read left to right.
 
-The result, `output`, is itself a type of range called a *view*.
+The result, `output`, is itself a kind of range called a *view*.
 
 > [!NOTE]
 > The ranges examples require the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Because post-release updates to `<ranges>` in the C++20 Standard are a work in progress, the features that require `std::views` aren't enabled yet under **`/std:c++20`**.
 
 ## Views
 
-A *view* is a lightweight range. View operations such as default construction, move construction/assignment, copy construction/assignment (if present), destruction, begin and end, all happen in constant time regardless of the number of elements in the view.  Changing an element in a view doesn't change the corresponding element in the range used to create the view.
+A *view* is a lightweight range. View operations such as default construction, move construction/assignment, copy construction/assignment (if present), destruction, begin and end, all happen in constant time regardless of the number of elements in the view.
 
 Views are created by range adaptors, which are discussed in the following section. For more information about the classes that implement various views, see [View classes](view-classes.md).
 

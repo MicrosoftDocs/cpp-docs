@@ -56,10 +56,10 @@ The **`_isnan`** and **`_isnanf`** functions are Microsoft-specific. The **`_isn
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------------|-------------------------------|
-|**`isnan`**, **`_isnanf`**|\<math.h>|\<math.h> or \<cmath>|
-|**`_isnan`**|\<float.h>|\<float.h> or \<cfloat>|
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`isnan`**, **`_isnanf`** | \<math.h> | \<math.h> or \<cmath> |
+| **`_isnan`** | \<float.h> | \<float.h> or \<cfloat> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

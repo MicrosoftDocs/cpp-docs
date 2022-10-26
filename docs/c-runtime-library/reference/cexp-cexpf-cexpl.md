@@ -40,9 +40,9 @@ Because C++ allows overloading, you can call overloads of **`cexp`** that take a
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`cexp`**, **`cexpf`**, **`cexpl`**|\<complex.h>|\<complex.h>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cexp`**, **`cexpf`**, **`cexpl`** | \<complex.h> | \<complex.h> |
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

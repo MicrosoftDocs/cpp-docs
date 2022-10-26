@@ -49,9 +49,9 @@ Because C++ allows overloading, you can call overloads of **`ccosh`** that take 
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`ccosh`**,               **`ccoshf`**, **`ccoshl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`ccosh`**, **`ccoshf`**, **`ccoshl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

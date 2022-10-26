@@ -108,44 +108,44 @@ By default, this function's global state is scoped to the application. To change
 
 ### Time Type and File Length Type Variations of _findfirst
 
-|Functions|`_USE_32BIT_TIME_T` defined?|Time type|File length type|
-|---------------|----------------------------------|---------------|----------------------|
-|**`_findfirst`**, **`_wfindfirst`**|Not defined|64-bit|32-bit|
-|**`_findfirst`**, **`_wfindfirst`**|Defined|32-bit|32-bit|
-|**`_findfirst32`**, **`_wfindfirst32`**|Not affected by the macro definition|32-bit|32-bit|
-|**`_findfirst64`**, **`_wfindfirst64`**|Not affected by the macro definition|64-bit|64-bit|
-|**`_findfirsti64`**, **`_wfindfirsti64`**|Not defined|64-bit|64-bit|
-|**`_findfirsti64`**, **`_wfindfirsti64`**|Defined|32-bit|64-bit|
-|**`_findfirst32i64`**, **`_wfindfirst32i64`**|Not affected by the macro definition|32-bit|64-bit|
-|**`_findfirst64i32`**, **`_wfindfirst64i32`**|Not affected by the macro definition|64-bit|32-bit|
+| Functions | `_USE_32BIT_TIME_T` defined? | Time type | File length type |
+|---|---|---|---|
+| **`_findfirst`**, **`_wfindfirst`** | Not defined | 64-bit | 32-bit |
+| **`_findfirst`**, **`_wfindfirst`** | Defined | 32-bit | 32-bit |
+| **`_findfirst32`**, **`_wfindfirst32`** | Not affected by the macro definition | 32-bit | 32-bit |
+| **`_findfirst64`**, **`_wfindfirst64`** | Not affected by the macro definition | 64-bit | 64-bit |
+| **`_findfirsti64`**, **`_wfindfirsti64`** | Not defined | 64-bit | 64-bit |
+| **`_findfirsti64`**, **`_wfindfirsti64`** | Defined | 32-bit | 64-bit |
+| **`_findfirst32i64`**, **`_wfindfirst32i64`** | Not affected by the macro definition | 32-bit | 64-bit |
+| **`_findfirst64i32`**, **`_wfindfirst64i32`** | Not affected by the macro definition | 64-bit | 32-bit |
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tfindfirst`**|**`_findfirst`**|**`_findfirst`**|**`_wfindfirst`**|
-|**`_tfindfirst32`**|**`_findfirst32`**|**`_findfirst32`**|**`_wfindfirst32`**|
-|**`_tfindfirst64`**|**`_findfirst64`**|**`_findfirst64`**|**`_wfindfirst64`**|
-|**`_tfindfirsti64`**|**`_findfirsti64`**|**`_findfirsti64`**|**`_wfindfirsti64`**|
-|**`_tfindfirst32i64`**|**`_findfirst32i64`**|**`_findfirst32i64`**|**`_wfindfirst32i64`**|
-|**`_tfindfirst64i32`**|**`_findfirst64i32`**|**`_findfirst64i32`**|**`_wfindfirst64i32`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tfindfirst`** | **`_findfirst`** | **`_findfirst`** | **`_wfindfirst`** |
+| **`_tfindfirst32`** | **`_findfirst32`** | **`_findfirst32`** | **`_wfindfirst32`** |
+| **`_tfindfirst64`** | **`_findfirst64`** | **`_findfirst64`** | **`_wfindfirst64`** |
+| **`_tfindfirsti64`** | **`_findfirsti64`** | **`_findfirsti64`** | **`_wfindfirsti64`** |
+| **`_tfindfirst32i64`** | **`_findfirst32i64`** | **`_findfirst32i64`** | **`_wfindfirst32i64`** |
+| **`_tfindfirst64i32`** | **`_findfirst64i32`** | **`_findfirst64i32`** | **`_wfindfirst64i32`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_findfirst`**|`<io.h>`|
-|**`_findfirst32`**|`<io.h>`|
-|**`_findfirst64`**|`<io.h>`|
-|**`_findfirsti64`**|`<io.h>`|
-|**`_findfirst32i64`**|`<io.h>`|
-|**`_findfirst64i32`**|`<io.h>`|
-|**`_wfindfirst`**|`<io.h>` or `<wchar.h>`|
-|**`_wfindfirst32`**|`<io.h>` or `<wchar.h>`|
-|**`_wfindfirst64`**|`<io.h>` or `<wchar.h>`|
-|**`_wfindfirsti64`**|`<io.h>` or `<wchar.h>`|
-|**`_wfindfirst32i64`**|`<io.h>` or `<wchar.h>`|
-|**`_wfindfirst64i32`**|`<io.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`_findfirst`** | `<io.h>` |
+| **`_findfirst32`** | `<io.h>` |
+| **`_findfirst64`** | `<io.h>` |
+| **`_findfirsti64`** | `<io.h>` |
+| **`_findfirst32i64`** | `<io.h>` |
+| **`_findfirst64i32`** | `<io.h>` |
+| **`_wfindfirst`** | `<io.h>` or `<wchar.h>` |
+| **`_wfindfirst32`** | `<io.h>` or `<wchar.h>` |
+| **`_wfindfirst64`** | `<io.h>` or `<wchar.h>` |
+| **`_wfindfirsti64`** | `<io.h>` or `<wchar.h>` |
+| **`_wfindfirst32i64`** | `<io.h>` or `<wchar.h>` |
+| **`_wfindfirst64i32`** | `<io.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -46,15 +46,15 @@ List of pointers to the parameters.
 
 If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.
 
-|errno value|Description|
-|-----------------|-----------------|
-|`E2BIG`|The space required for the arguments and environment settings exceeds 32 KB.|
-|`EACCES`|The specified file has a locking or sharing violation.|
-|`EINVAL`|Invalid parameter (one or more of the parameters was a null pointer or empty string).|
-|`EMFILE`|Too many files open (the specified file must be opened to determine whether it's executable).|
-|`ENOENT`|The file or path isn't found.|
-|`ENOEXEC`|The specified file isn't executable or has an invalid executable-file format.|
-|`ENOMEM`|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly.|
+| `errno` value | Description |
+|---|---|
+| `E2BIG` | The space required for the arguments and environment settings exceeds 32 KB. |
+| `EACCES` | The specified file has a locking or sharing violation. |
+| `EINVAL` | Invalid parameter (one or more of the parameters was a null pointer or empty string). |
+| `EMFILE` | Too many files open (the specified file must be opened to determine whether it's executable). |
+| `ENOENT` | The file or path isn't found. |
+| `ENOEXEC` | The specified file isn't executable or has an invalid executable-file format. |
+| `ENOMEM` | Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly. |
 
 ## Remarks
 
@@ -64,10 +64,10 @@ The **`_execl`** functions validate their parameters. If either *`cmdname`* or *
 
 ## Requirements
 
-|Function|Required header|Optional header|
-|--------------|---------------------|---------------------|
-|**`_execl`**|\<process.h>|\<errno.h>|
-|**`_wexecl`**|\<process.h> or \<wchar.h>|\<errno.h>|
+| Function | Required header | Optional header |
+|---|---|---|
+| **`_execl`** | \<process.h> | \<errno.h> |
+| **`_wexecl`** | \<process.h> or \<wchar.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

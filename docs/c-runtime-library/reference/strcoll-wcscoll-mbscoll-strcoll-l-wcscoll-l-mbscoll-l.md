@@ -61,11 +61,11 @@ Locale to use.
 
 Each of these functions returns a value indicating the relationship of *`string1`* to *`string2`*, as follows.
 
-|Return value|Relationship of string1 to string2|
-|------------------|----------------------------------------|
-|< 0|*`string1`* less than *`string2`*|
-|0|*`string1`* identical to *`string2`*|
-|> 0|*`string1`* greater than *`string2`*|
+| Return value | Relationship of *`string1`* to *`string2`* |
+|---|---|
+| < 0 | *`string1`* less than *`string2`* |
+| 0 | *`string1`* identical to *`string2`* |
+| > 0 | *`string1`* greater than *`string2`* |
 
 Each of these functions returns `_NLSCMPERROR` on an error. To use `_NLSCMPERROR`, include either STRING.H or MBSTRING.H. **`wcscoll`** can fail if either *`string1`* or *`string2`* is `NULL` or contains wide-character codes outside the domain of the collating sequence. When an error occurs, **`wcscoll`** may set `errno` to `EINVAL`. To check for an error on a call to **`wcscoll`**, set `errno` to 0 and then check `errno` after calling **`wcscoll`**.
 
@@ -81,19 +81,19 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscoll`|**`strcoll`**|**`_mbscoll`**|**`wcscoll`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscoll` | **`strcoll`** | **`_mbscoll`** | **`wcscoll`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strcoll`**|\<string.h>|
-|**`wcscoll`**|\<wchar.h>, \<string.h>|
-|**`_mbscoll`**, **`_mbscoll_l`**|\<mbstring.h>|
-|**`_strcoll_l`**|\<string.h>|
-|**`_wcscoll_l`**|\<wchar.h>, \<string.h>|
+| Routine | Required header |
+|---|---|
+| **`strcoll`** | \<string.h> |
+| **`wcscoll`** | \<wchar.h>, \<string.h> |
+| **`_mbscoll`**, **`_mbscoll_l`** | \<mbstring.h> |
+| **`_strcoll_l`** | \<string.h> |
+| **`_wcscoll_l`** | \<wchar.h>, \<string.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

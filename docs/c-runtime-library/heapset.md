@@ -19,7 +19,7 @@ Checks heaps for minimal consistency and sets the free entries to a specified va
 
 ## Syntax
 
-```
+```C
 int _heapset(
    unsigned int fill
 );
@@ -32,28 +32,28 @@ Fill character.
 
 ## Return value
 
-`_heapset` returns one of the following integer manifest constants defined in Malloc.h.
+**`_heapset`** returns one of the following integer manifest constants defined in Malloc.h.
 
-|Value|Description|
-|-|-|
-| `_HEAPBADBEGIN`  | Initial header information invalid or not found.  |
-| `_HEAPBADNODE`  | Heap damaged or bad node found.  |
-| `_HEAPEMPTY`  | Heap not initialized.  |
-| `_HEAPOK`  | Heap appears to be consistent.  |
+| Value | Description |
+|---|---|
+| `_HEAPBADBEGIN` | Initial header information invalid or not found. |
+| `_HEAPBADNODE` | Heap damaged or bad node found. |
+| `_HEAPEMPTY` | Heap not initialized. |
+| `_HEAPOK` | Heap appears to be consistent. |
 
-In addition, if an error occurs, `_heapset` sets `errno` to `ENOSYS`.
+In addition, if an error occurs, **`_heapset`** sets `errno` to `ENOSYS`.
 
 ## Remarks
 
-The `_heapset` function shows free memory locations or nodes that have been unintentionally overwritten.
+The **`_heapset`** function shows free memory locations or nodes that have been unintentionally overwritten.
 
-`_heapset` checks for minimal consistency on the heap and then sets each byte of the heap's free entries to the `fill` value. This known value shows which memory locations of the heap contain free nodes and which contain data that were unintentionally written to freed memory. If the operating system doesn't support `_heapset`(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.
+**`_heapset`** checks for minimal consistency on the heap and then sets each byte of the heap's free entries to the `fill` value. This known value shows which memory locations of the heap contain free nodes and which contain data that were unintentionally written to freed memory. If the operating system doesn't support **`_heapset`**(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|`_heapset`|\<malloc.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_heapset`** | \<malloc.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](./compatibility.md) in the Introduction.
 

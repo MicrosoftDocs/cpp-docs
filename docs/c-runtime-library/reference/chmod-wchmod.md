@@ -53,16 +53,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tchmod`|**`_chmod`**|**`_chmod`**|**`_wchmod`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tchmod` | **`_chmod`** | **`_chmod`** | **`_wchmod`** |
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_chmod`**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
-|**`_wchmod`**|\<io.h> or \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_chmod`** | \<io.h> | \<sys/types.h>, \<sys/stat.h>, \<errno.h> |
+| **`_wchmod`** | \<io.h> or \<wchar.h> | \<sys/types.h>, \<sys/stat.h>, \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

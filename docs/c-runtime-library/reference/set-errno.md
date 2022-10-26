@@ -55,9 +55,9 @@ Oops: Illegal byte sequence
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_set_errno`**|\<stdlib.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_set_errno`** | \<stdlib.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

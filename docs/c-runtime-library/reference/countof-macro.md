@@ -36,9 +36,9 @@ Ensure that *`array`* is actually an array, not a pointer. In C, **`_countof`** 
 
 ## Requirements
 
-|Macro|Required header|
-|-----------|---------------------|
-|**`_countof`**|`<stdlib.h>`|
+| Macro | Required header |
+|---|---|
+| **`_countof`** | `<stdlib.h>` |
 
 ## Example
 

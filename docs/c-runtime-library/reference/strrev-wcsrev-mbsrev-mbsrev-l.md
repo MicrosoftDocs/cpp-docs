@@ -62,18 +62,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsrev`|**`_strrev`**|**`_mbsrev`**|**`_wcsrev`**|
-|**n/a**|**n/a**|**`_mbsrev_l`**|**n/a**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsrev` | **`_strrev`** | **`_mbsrev`** | **`_wcsrev`** |
+| **n/a** | **n/a** | **`_mbsrev_l`** | **n/a** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strrev`**|\<string.h>|
-|**`_wcsrev`**|\<string.h> or \<wchar.h>|
-|**`_mbsrev`**, **`_mbsrev_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_strrev`** | \<string.h> |
+| **`_wcsrev`** | \<string.h> or \<wchar.h> |
+| **`_mbsrev`**, **`_mbsrev_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

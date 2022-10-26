@@ -52,10 +52,10 @@ If you use the \<tgmath.h> `conj()` macro, the type of the argument determines w
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`conj`**, **`conjf`**, **`conjl`**|\<complex.h>|\<ccomplex>|
-|**`conj`** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`conj`**, **`conjf`**, **`conjl`** | \<complex.h> | \<ccomplex> |
+| **`conj`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

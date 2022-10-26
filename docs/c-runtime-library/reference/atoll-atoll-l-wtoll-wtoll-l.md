@@ -69,18 +69,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tstoll`|**`atoll`**|**`atoll`**|**`_wtoll`**|
-|`_tstoll_l`|**`_atoll_l`**|**`_atoll_l`**|**`_wtoll_l`**|
-|`_ttoll`|**`_atoll`**|**`_atoll`**|**`_wtoll`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tstoll` | **`atoll`** | **`atoll`** | **`_wtoll`** |
+| `_tstoll_l` | **`_atoll_l`** | **`_atoll_l`** | **`_wtoll_l`** |
+| `_ttoll` | **`_atoll`** | **`_atoll`** | **`_wtoll`** |
 
 ## Requirements
 
-|Routines|Required header|
-|--------------|---------------------|
-|**`atoll`**, **`_atoll_l`**|\<stdlib.h>|
-|**`_wtoll`**, **`_wtoll_l`**|\<stdlib.h> or \<wchar.h>|
+| Routines | Required header |
+|---|---|
+| **`atoll`**, **`_atoll_l`** | \<stdlib.h> |
+| **`_wtoll`**, **`_wtoll_l`** | \<stdlib.h> or \<wchar.h> |
 
 ## Example
 

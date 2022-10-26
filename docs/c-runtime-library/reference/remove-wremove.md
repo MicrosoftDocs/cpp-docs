@@ -43,16 +43,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tremove`**|**`remove`**|**`remove`**|**`_wremove`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tremove` | **`remove`** | **`remove`** | **`_wremove`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`remove`**|`<stdio.h>` or `<io.h>`|
-|**`_wremove`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`remove`** | `<stdio.h>` or `<io.h>` |
+| **`_wremove`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

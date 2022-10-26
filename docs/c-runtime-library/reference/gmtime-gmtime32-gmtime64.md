@@ -30,17 +30,17 @@ Pointer to the stored time. The time is represented as seconds elapsed since mid
 
 A pointer to a structure of type [`tm`](../standard-types.md). The fields of the returned structure hold the evaluated value of the *`sourceTime`* argument in UTC rather than in local time. Each of the structure fields is of type `int`, as follows:
 
-|Field|Description|
-|-|-|
-|`tm_sec`|Seconds after minute (0 - 59).|
-|`tm_min`|Minutes after hour (0 - 59).|
-|`tm_hour`|Hours since midnight (0 - 23).|
-|`tm_mday`|Day of month (1 - 31).|
-|`tm_mon`|Month (0 - 11; January = 0).|
-|`tm_year`|Year (current year minus 1900).|
-|`tm_wday`|Day of week (0 - 6; Sunday = 0).|
-|`tm_yday`|Day of year (0 - 365; January 1 = 0).|
-|`tm_isdst`|Always 0 for **`gmtime`**.|
+| Field | Description |
+|---|---|
+| `tm_sec` | Seconds after minute (0 - 59). |
+| `tm_min` | Minutes after hour (0 - 59). |
+| `tm_hour` | Hours since midnight (0 - 23). |
+| `tm_mday` | Day of month (1 - 31). |
+| `tm_mon` | Month (0 - 11; January = 0). |
+| `tm_year` | Year (current year minus 1900). |
+| `tm_wday` | Day of week (0 - 6; Sunday = 0). |
+| `tm_yday` | Day of year (0 - 365; January 1 = 0). |
+| `tm_isdst` | Always 0 for **`gmtime`**. |
 
 Both the 32-bit and 64-bit versions of **`gmtime`**, [`mktime`](mktime-mktime32-mktime64.md), [`mkgmtime`](mkgmtime-mkgmtime32-mkgmtime64.md), and [`localtime`](localtime-localtime32-localtime64.md) all use one common `tm` structure per thread for the conversion. Each call to one of these functions destroys the result of any previous call. If *`sourceTime`* represents a date before midnight, January 1, 1970, **`gmtime`** returns `NULL`. There's no error return.
 
@@ -61,9 +61,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------------|---------------------|-|
-|**`gmtime`**, **`_gmtime32`**, **`_gmtime64`**|`<time.h>`| `<ctime>` or `<time.h>`|
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`gmtime`**, **`_gmtime32`**, **`_gmtime64`** | `<time.h>` | `<ctime>` or `<time.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

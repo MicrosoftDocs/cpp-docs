@@ -52,10 +52,10 @@ If you use the \<tgmath.h> `carg()` macro, the type of the argument determines w
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`carg`**, **`cargf`**, **`cargl`**|\<complex.h>|\<ccomplex>|
-|**`carg`** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`carg`**, **`cargf`**, **`cargl`** | \<complex.h> | \<ccomplex> |
+| **`carg`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

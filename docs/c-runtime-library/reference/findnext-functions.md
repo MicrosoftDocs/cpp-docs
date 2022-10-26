@@ -79,8 +79,8 @@ File information buffer.
 
 If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.
 
-|errno value|Condition|
-|-|-|
+| `errno` value | Condition |
+|---|---|
 | `EINVAL` | Invalid parameter: *`fileinfo`* was `NULL`. Or, the operating system returned an unexpected error. |
 | `ENOENT` | No more matching files could be found. |
 | `ENOMEM` | Not enough memory or the file name's length exceeded `MAX_PATH`. |
@@ -101,44 +101,44 @@ By default, this function's global state is scoped to the application. To change
 
 ### Time Type and File Length Type Variations of _findnext
 
-|Functions|`_USE_32BIT_TIME_T` defined?|Time type|File length type|
-|---------------|----------------------------------|---------------|----------------------|
-|**`_findnext`**, **`_wfindnext`**|Not defined|64-bit|32-bit|
-|**`_findnext`**, **`_wfindnext`**|Defined|32-bit|32-bit|
-|**`_findnext32`**, **`_wfindnext32`**|Not affected by the macro definition|32-bit|32-bit|
-|**`_findnext64`**, **`_wfindnext64`**|Not affected by the macro definition|64-bit|64-bit|
-|**`_findnexti64`**, **`_wfindnexti64`**|Not defined|64-bit|64-bit|
-|**`_findnexti64`**, **`_wfindnexti64`**|Defined|32-bit|64-bit|
-|**`_findnext32i64`**, **`_wfindnext32i64`**|Not affected by the macro definition|32-bit|64-bit|
-|**`_findnext64i32`**, **`_wfindnext64i32`**|Not affected by the macro definition|64-bit|32-bit|
+| Functions | `_USE_32BIT_TIME_T` defined? | Time type | File length type |
+|---|---|---|---|
+| **`_findnext`**, **`_wfindnext`** | Not defined | 64-bit | 32-bit |
+| **`_findnext`**, **`_wfindnext`** | Defined | 32-bit | 32-bit |
+| **`_findnext32`**, **`_wfindnext32`** | Not affected by the macro definition | 32-bit | 32-bit |
+| **`_findnext64`**, **`_wfindnext64`** | Not affected by the macro definition | 64-bit | 64-bit |
+| **`_findnexti64`**, **`_wfindnexti64`** | Not defined | 64-bit | 64-bit |
+| **`_findnexti64`**, **`_wfindnexti64`** | Defined | 32-bit | 64-bit |
+| **`_findnext32i64`**, **`_wfindnext32i64`** | Not affected by the macro definition | 32-bit | 64-bit |
+| **`_findnext64i32`**, **`_wfindnext64i32`** | Not affected by the macro definition | 64-bit | 32-bit |
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tfindnext`|**`_findnext`**|**`_findnext`**|**`_wfindnext`**|
-|`_tfindnext32`|**`_findnext32`**|**`_findnext32`**|**`_wfindnext32`**|
-|`_tfindnext64`|**`_findnext64`**|**`_findnext64`**|**`_wfindnext64`**|
-|`_tfindnexti64`|**`_findnexti64`**|**`_findnexti64`**|**`_wfindnexti64`**|
-|**`_tfindnext32i64`**|**`_findnext32i64`**|**`_findnext32i64`**|**`_wfindnext32i64`**|
-|**`_tfindnext64i32`**|**`_findnext64i32`**|**`_findnext64i32`**|**`_wfindnext64i32`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tfindnext` | **`_findnext`** | **`_findnext`** | **`_wfindnext`** |
+| `_tfindnext32` | **`_findnext32`** | **`_findnext32`** | **`_wfindnext32`** |
+| `_tfindnext64` | **`_findnext64`** | **`_findnext64`** | **`_wfindnext64`** |
+| `_tfindnexti64` | **`_findnexti64`** | **`_findnexti64`** | **`_wfindnexti64`** |
+| **`_tfindnext32i64`** | **`_findnext32i64`** | **`_findnext32i64`** | **`_wfindnext32i64`** |
+| **`_tfindnext64i32`** | **`_findnext64i32`** | **`_findnext64i32`** | **`_wfindnext64i32`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_findnext`**|\<io.h>|
-|**`_findnext32`**|\<io.h>|
-|**`_findnext64`**|\<io.h>|
-|**`_findnexti64`**|\<io.h>|
-|**`_findnext32i64`**|\<io.h>|
-|**`_findnext64i32`**|\<io.h>|
-|**`_wfindnext`**|\<io.h> or \<wchar.h>|
-|**`_wfindnext32`**|\<io.h> or \<wchar.h>|
-|**`_wfindnext64`**|\<io.h> or \<wchar.h>|
-|**`_wfindnexti64`**|\<io.h> or \<wchar.h>|
-|**`_wfindnext32i64`**|\<io.h> or \<wchar.h>|
-|**`_wfindnext64i32`**|\<io.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`_findnext`** | \<io.h> |
+| **`_findnext32`** | \<io.h> |
+| **`_findnext64`** | \<io.h> |
+| **`_findnexti64`** | \<io.h> |
+| **`_findnext32i64`** | \<io.h> |
+| **`_findnext64i32`** | \<io.h> |
+| **`_wfindnext`** | \<io.h> or \<wchar.h> |
+| **`_wfindnext32`** | \<io.h> or \<wchar.h> |
+| **`_wfindnext64`** | \<io.h> or \<wchar.h> |
+| **`_wfindnexti64`** | \<io.h> or \<wchar.h> |
+| **`_wfindnext32i64`** | \<io.h> or \<wchar.h> |
+| **`_wfindnext64i32`** | \<io.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -64,9 +64,9 @@ For more information about how **`_CrtIsMemoryBlock`** can be used with other de
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtIsMemoryBlock`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtIsMemoryBlock`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

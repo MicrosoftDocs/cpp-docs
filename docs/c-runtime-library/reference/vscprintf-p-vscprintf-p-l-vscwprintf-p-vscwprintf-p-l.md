@@ -51,7 +51,7 @@ For more information, see [Format specification syntax](../format-specification-
 
 ## Return value
 
-**`_vscprintf_p`** returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **`_vscwprintf_p`** performs the same function for wide characters.
+**`_vscprintf_p`** returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned doesn't include the terminating null character. **`_vscwprintf_p`** performs the same function for wide characters.
 
 ## Remarks
 
@@ -67,17 +67,17 @@ If *`format`* is a null pointer, the invalid parameter handler is invoked, as de
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_vsctprintf_p`**|**`_vscprintf_p`**|**`_vscprintf_p`**|**`_vscwprintf_p`**|
-|**`_vsctprintf_p_l`**|**`_vscprintf_p_l`**|**`_vscprintf_p_l`**|**`_vscwprintf_p_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_vsctprintf_p`** | **`_vscprintf_p`** | **`_vscprintf_p`** | **`_vscwprintf_p`** |
+| **`_vsctprintf_p_l`** | **`_vscprintf_p_l`** | **`_vscprintf_p_l`** | **`_vscwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_vscprintf_p`**, **`_vscprintf_p_l`**|`<stdio.h>`|
-|**`_vscwprintf_p`**, **`_vscwprintf_p_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_vscprintf_p`**, **`_vscprintf_p_l`** | `<stdio.h>` |
+| **`_vscwprintf_p`**, **`_vscwprintf_p_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

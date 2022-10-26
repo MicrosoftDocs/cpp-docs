@@ -131,21 +131,21 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsncpy`**|**`strncpy`**|**`_mbsnbcpy`**|**`wcsncpy`**|
-|**`_tcsncpy_l`**|**`_strncpy_l`**|**`_mbsnbcpy_l`**|**`_wcsncpy_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncpy` | **`strncpy`** | **`_mbsnbcpy`** | **`wcsncpy`** |
+| `_tcsncpy_l` | **`_strncpy_l`** | **`_mbsnbcpy_l`** | **`_wcsncpy_l`** |
 
 > [!NOTE]
 > **`_strncpy_l`** and **`_wcsncpy_l`** have no locale dependence; they are provided just for **`_tcsncpy_l`** and are not intended to be called directly.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strncpy`**|`<string.h>`|
-|**`wcsncpy`**|`<string.h>` or `<wchar.h>`|
-|**`_mbsncpy`**, **`_mbsncpy_l`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strncpy`** | `<string.h>` |
+| **`wcsncpy`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsncpy`**, **`_mbsncpy_l`** | `<mbstring.h>` |
 
 For more platform compatibility information, see [Compatibility](../compatibility.md).
 

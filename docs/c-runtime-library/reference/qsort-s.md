@@ -53,11 +53,11 @@ compare( context, (void *) & elem1, (void *) & elem2 );
 
 The routine must compare the elements and then return one of the following values:
 
-|Return value|Description|
-|------------------|-----------------|
-|< 0|*element 1* less than *element 2*|
-|0|*element 1* equivalent to *element 2*|
-|> 0|*element 1* greater than *element 2*|
+| Return value | Description |
+|---|---|
+| < 0 | *element 1* less than *element 2* |
+| 0 | *element 1* equivalent to *element 2* |
+| > 0 | *element 1* greater than *element 2* |
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
@@ -67,20 +67,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Error conditions
 
-|key|base|compare|num|width|errno|
-|---------|----------|-------------|---------|-----------|-----------|
-|`NULL`|any|any|any|any|`EINVAL`|
-|any|`NULL`|any|!= 0|any|`EINVAL`|
-|any|any|any|any|<= 0|`EINVAL`|
-|any|any|`NULL`|any|any|`EINVAL`|
+| key | base | compare | num | width | errno |
+|---|---|---|---|---|---|
+| `NULL` | any | any | any | any | `EINVAL` |
+| any | `NULL` | any | != 0 | any | `EINVAL` |
+| any | any | any | any | <= 0 | `EINVAL` |
+| any | any | `NULL` | any | any | `EINVAL` |
 
 **`qsort_s`** has the same behavior as `qsort` but has the *`context`* parameter and sets `errno`. The *`context`* parameter allows comparison functions to use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the *`context`* parameter makes **`qsort_s`** more secure because *`context`* can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the *`compare`* function.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`qsort_s`**|\<stdlib.h> and \<search.h>|
+| Routine | Required header |
+|---|---|
+| **`qsort_s`** | \<stdlib.h> and \<search.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -41,7 +41,7 @@ Variable argument list.
 
 ## Return value
 
-Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that are read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is `EOF` for **`vfscanf`** and **`vfwscanf`**.
+Each of these functions returns the number of fields that are successfully converted and assigned. The return value doesn't include fields that are read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is `EOF` for **`vfscanf`** and **`vfwscanf`**.
 
 These functions validate their parameters. If *`stream`* or *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
 
@@ -53,18 +53,18 @@ The **`vfscanf`** function reads data from the current position of *`stream`* in
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftscanf`|**`vfscanf`**|**`vfscanf`**|**`vfwscanf`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vftscanf` | **`vfscanf`** | **`vfscanf`** | **`vfwscanf`** |
 
 For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`vfscanf`**|\<stdio.h>|
-|**`vfwscanf`**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`vfscanf`** | \<stdio.h> |
+| **`vfwscanf`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

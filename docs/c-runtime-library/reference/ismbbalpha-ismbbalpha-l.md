@@ -47,10 +47,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_ismbbalpha`**|\<mbctype.h>|
-|**`_ismbbalpha_l`**|\<mbctype.h>|
+| Routine | Required header |
+|---|---|
+| **`_ismbbalpha`** | \<mbctype.h> |
+| **`_ismbbalpha_l`** | \<mbctype.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

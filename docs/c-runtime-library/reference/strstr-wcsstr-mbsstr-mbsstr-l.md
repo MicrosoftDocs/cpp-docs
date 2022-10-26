@@ -15,7 +15,7 @@ ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
 Returns a pointer to the first occurrence of a search string in a string.
 
 > [!IMPORTANT]
-> `_mbsstr` and `_mbsstr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsstr`** and **`_mbsstr_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -90,7 +90,7 @@ Returns a pointer to the first occurrence of *`strSearch`* in *`str`*, or `NULL`
 
 ## Remarks
 
-The `strstr` function returns a pointer to the first occurrence of *`strSearch`* in *`str`*. The search doesn't include terminating null characters. `wcsstr` is the wide-character version of `strstr` and `_mbsstr` is the multibyte-character version. The arguments and return value of `wcsstr` are wide-character strings. The arguments and return value of `_mbsstr` are multibyte-character strings. `_mbsstr` validates its parameters. If *`str`* or *`strSearch`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, `_mbsstr` sets `errno` to `EINVAL` and returns 0. `strstr` and `wcsstr` don't validate their parameters. These three functions behave identically otherwise.
+The **`strstr`** function returns a pointer to the first occurrence of *`strSearch`* in *`str`*. The search doesn't include terminating null characters. **`wcsstr`** is the wide-character version of **`strstr`** and **`_mbsstr`** is the multibyte-character version. The arguments and return value of **`wcsstr`** are wide-character strings. The arguments and return value of **`_mbsstr`** are multibyte-character strings. **`_mbsstr`** validates its parameters. If *`str`* or *`strSearch`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, **`_mbsstr`** sets `errno` to `EINVAL` and returns 0. **`strstr`** and **`wcsstr`** don't validate their parameters. These three functions behave identically otherwise.
 
 > [!IMPORTANT]
 > These functions might incur a threat from a buffer overrun problem. Buffer overrun problems can be used to attack a system because they can allow the execution of arbitrary code, which can cause an unwarranted elevation of privilege. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -103,18 +103,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsstr`|`strstr`|`_mbsstr`|`wcsstr`|
-|**n/a**|**n/a**|`_mbsstr_l`|**n/a**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsstr` | **`strstr`** | **`_mbsstr`** | **`wcsstr`** |
+| **n/a** | **n/a** | **`_mbsstr_l`** | **n/a** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`strstr`|`<string.h>`|
-|`wcsstr`|`<string.h>` or `<wchar.h>`|
-|`_mbsstr`, `_mbsstr_l`|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strstr`** | `<string.h>` |
+| **`wcsstr`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsstr`**, **`_mbsstr_l`** | `<mbstring.h>` |
 
 For more information about compatibility, see [Compatibility](../compatibility.md).
 

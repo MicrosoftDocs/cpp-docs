@@ -67,17 +67,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tstof`**|**`atof`**|**`atof`**|**`_wtof`**|
-|**`_ttof`**|**`atof`**|**`atof`**|**`_wtof`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tstof`** | **`atof`** | **`atof`** | **`_wtof`** |
+| **`_ttof`** | **`atof`** | **`atof`** | **`_wtof`** |
 
 ## Requirements
 
-|Routine(s)|Required header|
-|------------------|---------------------|
-|**`atof`**, **`_atof_l`**|C: `<math.h>` or `<stdlib.h>` C++: `<cstdlib>`, `<stdlib.h>`, `<cmath>` or `<math.h>`|
-|**`_wtof`**, **`_wtof_l`**|C: `<stdlib.h>` or `<wchar.h>` C++: `<cstdlib>`, `<stdlib.h>` or `<wchar.h>`|
+| Routine(s) | Required header |
+|---|---|
+| **`atof`**, **`_atof_l`** | C: `<math.h>` or `<stdlib.h>` C++: `<cstdlib>`, `<stdlib.h>`, `<cmath>` or `<math.h>` |
+| **`_wtof`**, **`_wtof_l`** | C: `<stdlib.h>` or `<wchar.h>` C++: `<cstdlib>`, `<stdlib.h>` or `<wchar.h>` |
 
 ## Example
 

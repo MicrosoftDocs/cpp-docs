@@ -75,10 +75,10 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcstoui64`**|**`_strtoui64`**|**`_strtoui64`**|**`_wcstoui64`**|
-|**`_tcstoui64_l`**|**`_strtoui64_l`**|**`_strtoui64_l`**|**`_wcstoui64_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstoui64` | **`_strtoui64`** | **`_strtoui64`** | **`_wcstoui64`** |
+| `_tcstoui64_l` | **`_strtoui64_l`** | **`_strtoui64_l`** | **`_wcstoui64_l`** |
 
 The current locale's `LC_NUMERIC` category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoui64_l`** and **`_wcstoui64_l`** are identical to the corresponding functions without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 

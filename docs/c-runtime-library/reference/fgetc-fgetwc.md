@@ -50,16 +50,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_fgettc`|**`fgetc`**|**`fgetc`**|**`fgetwc`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_fgettc` | **`fgetc`** | **`fgetc`** | **`fgetwc`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fgetc`**|\<stdio.h>|
-|**`fgetwc`**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`fgetc`** | \<stdio.h> |
+| **`fgetwc`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

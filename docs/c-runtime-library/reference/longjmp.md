@@ -63,9 +63,9 @@ For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-long
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`longjmp`**|\<setjmp.h>|
+| Routine | Required header |
+|---|---|
+| **`longjmp`** | \<setjmp.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

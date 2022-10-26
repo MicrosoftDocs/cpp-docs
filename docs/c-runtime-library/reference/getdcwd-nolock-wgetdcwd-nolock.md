@@ -53,16 +53,16 @@ See [`_getdcwd`, `_wgetdcwd`](getdcwd-wgetdcwd.md).
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tgetdcwd_nolock`**|**`_getdcwd_nolock`**|**`_getdcwd_nolock`**|**`_wgetdcwd_nolock`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tgetdcwd_nolock`** | **`_getdcwd_nolock`** | **`_getdcwd_nolock`** | **`_wgetdcwd_nolock`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getdcwd_nolock`**|\<direct.h>|
-|**`_wgetdcwd_nolock`**|\<direct.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_getdcwd_nolock`** | \<direct.h> |
+| **`_wgetdcwd_nolock`** | \<direct.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

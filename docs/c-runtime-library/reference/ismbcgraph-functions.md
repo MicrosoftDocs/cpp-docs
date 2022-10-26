@@ -75,30 +75,30 @@ The versions of these functions are identical, except that the ones that have th
 
 Each of these functions tests a given multibyte character for a given condition.
 
-|Routine|Test condition|Code page 932 example|
-|-------------|--------------------|---------------------------|
-|**`_ismbcgraph`**|Graphic|Returns nonzero if and only if *`c`* is a single-byte representation of any ASCII or katakana printable character except a white space ( ).|
-|**`_ismbcprint`**|Printable|Returns nonzero if and only if *`c`* is a single-byte representation of any ASCII or katakana printable character including a white space ( ).|
-|**`_ismbcpunct`**|Punctuation|Returns nonzero if and only if *`c`* is a single-byte representation of any ASCII or katakana punctuation character.|
-|**`_ismbcblank`**|Space or horizontal tab|Returns nonzero if and only if *`c`* is a space or horizontal tab character: *`c`*=0x20 or *`c`*=0x09.|
-|**`_ismbcspace`**|White space|Returns nonzero if and only if *`c`* is a white-space character: *`c`*=0x20 or 0x09<=*`c`*<=0x0D.|
+| Routine | Test condition | Code page 932 example |
+|---|---|---|
+| **`_ismbcgraph`** | Graphic | Returns nonzero if and only if *`c`* is a single-byte representation of any ASCII or katakana printable character except a white space. |
+| **`_ismbcprint`** | Printable | Returns nonzero if and only if *`c`* is a single-byte representation of any ASCII or katakana printable character including a white space. |
+| **`_ismbcpunct`** | Punctuation | Returns nonzero if and only if *`c`* is a single-byte representation of any ASCII or katakana punctuation character. |
+| **`_ismbcblank`** | Space or horizontal tab | Returns nonzero if and only if *`c`* is a space or horizontal tab character: *`c`*=0x20 or *`c`*=0x09. |
+| **`_ismbcspace`** | White space | Returns nonzero if and only if *`c`* is a white-space character: *`c`*=0x20 or 0x09<=*`c`*<=0x0D. |
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_ismbcgraph`**|\<mbstring.h>|
-|**`_ismbcgraph_l`**|\<mbstring.h>|
-|**`_ismbcprint`**|\<mbstring.h>|
-|**`_ismbcprint_l`**|\<mbstring.h>|
-|**`_ismbcpunct`**|\<mbstring.h>|
-|**`_ismbcpunct_l`**|\<mbstring.h>|
-|**`_ismbcblank`**|\<mbstring.h>|
-|**`_ismbcblank_l`**|\<mbstring.h>|
-|**`_ismbcspace`**|\<mbstring.h>|
-|**`_ismbcspace_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_ismbcgraph`** | \<mbstring.h> |
+| **`_ismbcgraph_l`** | \<mbstring.h> |
+| **`_ismbcprint`** | \<mbstring.h> |
+| **`_ismbcprint_l`** | \<mbstring.h> |
+| **`_ismbcpunct`** | \<mbstring.h> |
+| **`_ismbcpunct_l`** | \<mbstring.h> |
+| **`_ismbcblank`** | \<mbstring.h> |
+| **`_ismbcblank_l`** | \<mbstring.h> |
+| **`_ismbcspace`** | \<mbstring.h> |
+| **`_ismbcspace_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

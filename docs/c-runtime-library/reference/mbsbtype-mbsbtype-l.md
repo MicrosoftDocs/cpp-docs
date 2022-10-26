@@ -46,12 +46,12 @@ Locale to use.
 
 **`_mbsbtype`** and **`_mbsbtype_l`** returns an integer value indicating the result of the test on the specified byte. The manifest constants in the following table are defined in Mbctype.h.
 
-|Return value|Byte type|
-|------------------|---------------|
-|`_MBC_SINGLE` (0)|Single-byte character. For example, in code page 932, **`_mbsbtype`** returns 0 if the specified byte is within the range 0x20 - 0x7E or 0xA1 - 0xDF.|
-|`_MBC_LEAD` (1)|Lead byte of multibyte character. For example, in code page 932, **`_mbsbtype`** returns 1 if the specified byte is within the range 0x81 - 0x9F or 0xE0 - 0xFC.|
-|`_MBC_TRAIL` (2)|Trailing byte of multibyte character. For example, in code page 932, **`_mbsbtype`** returns 2 if the specified byte is within the range 0x40 - 0x7E or 0x80 - 0xFC.|
-|`_MBC_ILLEGAL` (-1)|`NULL` string, invalid character, or null byte found before the byte at offset *`count`* in *`mbstr`*.|
+| Return value | Byte type |
+|---|---|
+| `_MBC_SINGLE` (0) | Single-byte character. For example, in code page 932, **`_mbsbtype`** returns 0 if the specified byte is within the range 0x20 - 0x7E or 0xA1 - 0xDF. |
+| `_MBC_LEAD` (1) | Lead byte of multibyte character. For example, in code page 932, **`_mbsbtype`** returns 1 if the specified byte is within the range 0x81 - 0x9F or 0xE0 - 0xFC. |
+| `_MBC_TRAIL` (2) | Trailing byte of multibyte character. For example, in code page 932, **`_mbsbtype`** returns 2 if the specified byte is within the range 0x40 - 0x7E or 0x80 - 0xFC. |
+| `_MBC_ILLEGAL` (-1) | `NULL` string, invalid character, or null byte found before the byte at offset *`count`* in *`mbstr`*. |
 
 ## Remarks
 
@@ -65,10 +65,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_mbsbtype`**|\<mbstring.h>|\<mbctype.h>*|
-|**`_mbsbtype_l`**|\<mbstring.h>|\<mbctype.h>*|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_mbsbtype`** | \<mbstring.h> | \<mbctype.h>* |
+| **`_mbsbtype_l`** | \<mbstring.h> | \<mbctype.h>* |
 
 \* For manifest constants used as return values.
 

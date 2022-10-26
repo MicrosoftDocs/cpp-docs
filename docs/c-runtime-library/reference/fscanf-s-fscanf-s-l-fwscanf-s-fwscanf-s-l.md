@@ -74,17 +74,17 @@ The versions of these functions that have the **`_l`** suffix are identical exce
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_ftscanf_s`**|**`fscanf_s`**|**`fscanf_s`**|**`fwscanf_s`**|
-|**`_ftscanf_s_l`**|**`_fscanf_s_l`**|**`_fscanf_s_l`**|**`_fwscanf_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_ftscanf_s`** | **`fscanf_s`** | **`fscanf_s`** | **`fwscanf_s`** |
+| **`_ftscanf_s_l`** | **`_fscanf_s_l`** | **`_fscanf_s_l`** | **`_fwscanf_s_l`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fscanf_s`**, **`_fscanf_s_l`**|`<stdio.h>`|
-|**`fwscanf_s`**, **`_fwscanf_s_l`**|`<stdio.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`fscanf_s`**, **`_fscanf_s_l`** | `<stdio.h>` |
+| **`fwscanf_s`**, **`_fwscanf_s_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

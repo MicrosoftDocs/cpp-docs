@@ -49,12 +49,12 @@ For information about these and other error codes, see [`errno`, `_doserrno`, `_
 
 The **`_popen`** function creates a pipe. It then asynchronously executes a spawned copy of the command processor, and uses *`command`* as the command line. The character string *`mode`* specifies the type of access requested, as follows.
 
-|Access mode|Description|
-|-|-|
-|**"r"**|The calling process can read the spawned command's standard output using the returned stream.|
-|**"w"**|The calling process can write to the spawned command's standard input using the returned stream.|
-|**"b"**|Open in binary mode.|
-|**"t"**|Open in text mode.|
+| Access mode | Description |
+|---|---|
+| **"`r`"** | The calling process can read the spawned command's standard output using the returned stream. |
+| **"`w`"** | The calling process can write to the spawned command's standard input using the returned stream. |
+| **"`b`"** | Open in binary mode. |
+| **"`t`"** | Open in text mode. |
 
 > [!NOTE]
 > If used in a Windows program, the **`_popen`** function returns an invalid file pointer that causes the program to stop responding indefinitely. **`_popen`** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a child process with redirected input and output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
@@ -65,16 +65,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tpopen`**|**`_popen`**|**`_popen`**|**`_wpopen`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tpopen` | **`_popen`** | **`_popen`** | **`_wpopen`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_popen`**|`<stdio.h>`|
-|**`_wpopen`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_popen`** | `<stdio.h>` |
+| **`_wpopen`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

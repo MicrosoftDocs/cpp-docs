@@ -69,21 +69,21 @@ If *`format`* is a null pointer, or if the format string contains invalid format
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtprintf_p`|**`_vprintf_p`**|**`_vprintf_p`**|**`_vwprintf_p`**|
-|`_vtprintf_p_l`|**`_vprintf_p_l`**|**`_vprintf_p_l`**|**`_vwprintf_p_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vtprintf_p` | **`_vprintf_p`** | **`_vprintf_p`** | **`_vwprintf_p`** |
+| `_vtprintf_p_l` | **`_vprintf_p_l`** | **`_vprintf_p_l`** | **`_vwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`_vprintf_p`**, **`_vprintf_p_l`**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|**`_vwprintf_p`**, **`_vwprintf_p_l`**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`_vprintf_p`**, **`_vprintf_p_l`** | \<stdio.h> and \<stdarg.h> | \<varargs.h>* |
+| **`_vwprintf_p`**, **`_vwprintf_p_l`** | \<stdio.h> or \<wchar.h>, and \<stdarg.h> | \<varargs.h>* |
 
 \* Required for UNIX V compatibility.
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

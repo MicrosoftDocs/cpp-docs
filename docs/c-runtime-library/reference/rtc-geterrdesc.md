@@ -33,9 +33,9 @@ A character string that contains a short description of one of the error types d
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_RTC_GetErrDesc`**|\<rtcapi.h>|
+| Routine | Required header |
+|---|---|
+| **`_RTC_GetErrDesc`** | \<rtcapi.h> |
 
 For more information, see [Compatibility](../compatibility.md).
 

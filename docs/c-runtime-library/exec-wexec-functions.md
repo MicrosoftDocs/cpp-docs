@@ -31,12 +31,12 @@ Each function in this family loads and executes a new process:
 
 The letter at the end of the function name determines the variation.
 
-|_exec function suffix|Description|
-|----------------------------|-----------------|
-|`e`|`envp`, array of pointers to environment settings, is passed to the new process.|
-|`l`|Command-line arguments are passed individually to `_exec` function. Typically used when the number of parameters to the new process is known in advance.|
-|`p`|`PATH` environment variable is used to find the file to execute.|
-|`v`|`argv`, array of pointers to command-line arguments, is passed to `_exec`. Typically used when the number of parameters to the new process is variable.|
+| `_exec` function suffix | Description |
+|---|---|
+| `e` | `envp`, array of pointers to environment settings, is passed to the new process. |
+| `l` | Command-line arguments are passed individually to `_exec` function. Typically used when the number of parameters to the new process is known in advance. |
+| `p` | `PATH` environment variable is used to find the file to execute. |
+| `v` | `argv`, array of pointers to command-line arguments, is passed to `_exec`. Typically used when the number of parameters to the new process is variable. |
 
 ## Remarks
 
@@ -44,18 +44,18 @@ Each `_exec` function loads and executes a new process. All `_exec` functions us
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_texecl`|`_execl`|`_execl`|`_wexecl`|
-|`_texecle`|`_execle`|`_execle`|`_wexecle`|
-|`_texeclp`|`_execlp`|`_execlp`|`_wexeclp`|
-|`_texeclpe`|`_execlpe`|`_execlpe`|`_wexeclpe`|
-|`_texecv`|`_execv`|`_execv`|`_wexecv`|
-|`_texecve`|`_execve`|`_execve`|`_wexecve`|
-|`_texecvp`|`_execvp`|`_execvp`|`_wexecvp`|
-|`_texecvpe`|`_execvpe`|`_execvpe`|`_wexecvpe`|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_texecl` | **`_execl`** | **`_execl`** | **`_wexecl`** |
+| `_texecle` | **`_execle`** | **`_execle`** | **`_wexecle`** |
+| `_texeclp` | **`_execlp`** | **`_execlp`** | **`_wexeclp`** |
+| `_texeclpe` | **`_execlpe`** | **`_execlpe`** | **`_wexeclpe`** |
+| `_texecv` | **`_execv`** | **`_execv`** | **`_wexecv`** |
+| `_texecve` | **`_execve`** | **`_execve`** | **`_wexecve`** |
+| `_texecvp` | **`_execvp`** | **`_execvp`** | **`_wexecvp`** |
+| `_texecvpe` | **`_execvpe`** | **`_execvpe`** | **`_wexecvpe`** |
 
-The `cmdname` parameter specifies the file to be executed as the new process. It can specify a full path (from the root), a partial path (from the current working directory), or a file name. If `cmdname` doesn't have a file name extension or doesn't end with a period (.), the `_exec` function searches for the named file. If the search is unsuccessful, it tries the same base name with the .com file name extension and then with the .exe, .bat, and .cmd file name extensions. If `cmdname` has a file name extension, only that extension is used in the search. If `cmdname` ends with a period, the `_exec` function searches for `cmdname` with no file name extension. `_execlp`, `_execlpe`, `_execvp`, and `_execvpe` search for `cmdname` (using the same procedures) in the directories specified by the `PATH` environment variable. If `cmdname` contains a drive specifier or any slashes (that is, if it's a relative path), the `_exec` call searches only for the specified file; the path isn't searched.
+The `cmdname` parameter specifies the file to be executed as the new process. It can specify a full path (from the root), a partial path (from the current working directory), or a file name. If `cmdname` doesn't have a file name extension or doesn't end with a period (.), the `_exec` function searches for the named file. If the search is unsuccessful, it tries the same base name with the .com file name extension and then with the .exe, .bat, and .cmd file name extensions. If `cmdname` has a file name extension, only that extension is used in the search. If `cmdname` ends with a period, the `_exec` function searches for `cmdname` with no file name extension. **`_execlp`**, **`_execlpe`**, **`_execvp`**, and **`_execvpe`** search for `cmdname` (using the same procedures) in the directories specified by the `PATH` environment variable. If `cmdname` contains a drive specifier or any slashes (that is, if it's a relative path), the `_exec` call searches only for the specified file; the path isn't searched.
 
 Parameters are passed to the new process by giving one or more pointers to character strings as parameters in the `_exec` call. These character strings form the parameter list for the new process. The combined length of the inherited environment settings and the strings forming the parameter list for the new process must not exceed 32 kilobytes. The terminating `NULL` character (`\0`) for each string isn't included in the count, but space characters (inserted automatically to separate the parameters) are counted.
 
@@ -67,13 +67,13 @@ Parameters are passed to the new process by giving one or more pointers to chara
 
 The `_exec` functions validate their parameters. If expected parameters are null pointers, empty strings, or omitted, the `_exec` functions invoke the invalid parameter handler as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.
 
-The argument pointers can be passed as separate parameters (in `_execl`, `_execle`, `_execlp`, and `_execlpe`) or as an array of pointers (in `_execv`, `_execve`, `_execvp`, and `_execvpe`). At least one parameter, `arg0`, must be passed to the new process; this parameter is `argv[0]` of the new process. Usually, this parameter is a copy of `cmdname`. (A different value doesn't produce an error.)
+The argument pointers can be passed as separate parameters (in **`_execl`**, **`_execle`**, **`_execlp`**, and **`_execlpe`**) or as an array of pointers (in **`_execv`**, **`_execve`**, **`_execvp`**, and **`_execvpe`**). At least one parameter, `arg0`, must be passed to the new process; this parameter is `argv[0]` of the new process. Usually, this parameter is a copy of `cmdname`. (A different value doesn't produce an error.)
 
-The `_execl`, `_execle`, `_execlp`, and `_execlpe` calls are typically used when the number of parameters is known in advance. The parameter `arg0` is usually a pointer to `cmdname`. The parameters `arg1` through `argn` point to the character strings forming the new parameter list. A null pointer must follow `argn` to mark the end of the parameter list.
+The **`_execl`**, **`_execle`**, **`_execlp`**, and **`_execlpe`** calls are typically used when the number of parameters is known in advance. The parameter `arg0` is usually a pointer to `cmdname`. The parameters `arg1` through `argn` point to the character strings forming the new parameter list. A null pointer must follow `argn` to mark the end of the parameter list.
 
-The `_execv`, `_execve`, `_execvp`, and `_execvpe` calls are useful when the number of parameters to the new process is variable. Pointers to the parameters are passed as an array, `argv`. The parameter `argv[0]` is usually a pointer to `cmdname`. The parameters `argv[1]` through `argv[n]` point to the character strings forming the new parameter list. The parameter `argv[n+1]` must be a `NULL` pointer to mark the end of the parameter list.
+The **`_execv`**, **`_execve`**, **`_execvp`**, and **`_execvpe`** calls are useful when the number of parameters to the new process is variable. Pointers to the parameters are passed as an array, `argv`. The parameter `argv[0]` is usually a pointer to `cmdname`. The parameters `argv[1]` through `argv[n]` point to the character strings forming the new parameter list. The parameter `argv[n+1]` must be a `NULL` pointer to mark the end of the parameter list.
 
-Files that are open when an `_exec` call is made remain open in the new process. In `_execl`, `_execlp`, `_execv`, and `_execvp` calls, the new process inherits the environment of the calling process. `_execle`, `_execlpe`, `_execve`, and `_execvpe` calls alter the environment for the new process by passing a list of environment settings through the `envp` parameter. `envp` is an array of character pointers, each element of which (except for the final element) points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME=value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (The `value` isn't enclosed in double quotation marks.) The final element of the `envp` array should be `NULL`. When `envp` itself is `NULL`, the new process inherits the environment settings of the calling process.
+Files that are open when an `_exec` call is made remain open in the new process. In **`_execl`**, **`_execlp`**, **`_execv`**, and **`_execvp`** calls, the new process inherits the environment of the calling process. **`_execle`**, **`_execlpe`**, **`_execve`**, and **`_execvpe`** calls alter the environment for the new process by passing a list of environment settings through the `envp` parameter. `envp` is an array of character pointers, each element of which (except for the final element) points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME=value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (The `value` isn't enclosed in double quotation marks.) The final element of the `envp` array should be `NULL`. When `envp` itself is `NULL`, the new process inherits the environment settings of the calling process.
 
 A program executed with one of the `_exec` functions is always loaded into memory as if the maximum allocation field in the program's .exe file header were set to the default value of `0xFFFFH`.
 

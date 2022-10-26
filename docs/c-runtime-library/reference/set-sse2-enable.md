@@ -60,9 +60,9 @@ The SSE2 implementation is only used if all exceptions are masked. Use [`_contro
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_set_SSE2_enable`**|\<math.h>|
+| Routine | Required header |
+|---|---|
+| **`_set_SSE2_enable`** | \<math.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

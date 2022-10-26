@@ -71,11 +71,11 @@ Zero if successful; otherwise, an error code.
 
 ### Error conditions
 
-|**`dest`**|*`sizeInBytes`*|*`src`*|Return value|
-|------------|-------------------|-----------|------------------|
-|`NULL`|any|any|`EINVAL`|
-|Any|<= 0|any|`EINVAL`|
-|Any|any|`NULL`|`EINVAL`|
+| **`dest`** | *`sizeInBytes`* | *`src`* | Return value |
+|---|---|---|---|
+| `NULL` | any | any | `EINVAL` |
+| Any | <= 0 | any | `EINVAL` |
+| Any | any | `NULL` | `EINVAL` |
 
 If any of the error conditions occurs, the function generates an invalid parameter error, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function returns `EINVAL` and sets `errno` to `EINVAL`.
 
@@ -93,17 +93,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tcsncat_s`**|[`strncat_s`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)|**`_mbsnbcat_s`**|[`wcsncat_s`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)|
-|**`_tcsncat_s_l`**|**`_strncat_s_l`**|**`_mbsnbcat_s_l`**|**`_wcsncat_s_l`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncat_s` | [`strncat_s`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) | **`_mbsnbcat_s`** | [`wcsncat_s`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) |
+| `_tcsncat_s_l` | **`_strncat_s_l`** | **`_mbsnbcat_s_l`** | **`_wcsncat_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnbcat_s`**|\<mbstring.h>|
-|**`_mbsnbcat_s_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnbcat_s`** | \<mbstring.h> |
+| **`_mbsnbcat_s_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

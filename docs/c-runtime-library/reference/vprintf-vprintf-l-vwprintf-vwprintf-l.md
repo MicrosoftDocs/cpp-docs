@@ -69,21 +69,21 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtprintf`|**`vprintf`**|**`vprintf`**|**`vwprintf`**|
-|`_vtprintf_l`|**`_vprintf_l`**|**`_vprintf_l`**|**`_vwprintf_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vtprintf` | **`vprintf`** | **`vprintf`** | **`vwprintf`** |
+| `_vtprintf_l` | **`_vprintf_l`** | **`_vprintf_l`** | **`_vwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`vprintf`**, **`_vprintf_l`**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|**`vwprintf`**, **`_vwprintf_l`**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`vprintf`**, **`_vprintf_l`** | \<stdio.h> and \<stdarg.h> | \<varargs.h>* |
+| **`vwprintf`**, **`_vwprintf_l`** | \<stdio.h> or \<wchar.h>, and \<stdarg.h> | \<varargs.h>* |
 
 \* Required for UNIX V compatibility.
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 

@@ -29,12 +29,12 @@ Each of the `_spawn` functions creates and executes a new process:
 
 The letters at the end of the function name determine the variation.
 
-|Letter|Variant|
-|-|-|
-| `e`  | `envp`, array of pointers to environment settings, is passed to new process.  |
-| `l`  | Command-line arguments are passed individually to `_spawn` function. This suffix is typically used when some parameters to a new process are known in advance.  |
-| `p`  | `PATH` environment variable is used to find the file to execute.  |
-| `v`  | `argv`, array of pointers to command-line arguments, is passed to `_spawn` function. This suffix is typically used when several parameters to a new process are variable.  |
+| Letter | Variant |
+|---|---|
+| `e` | `envp`, array of pointers to environment settings, is passed to new process. |
+| `l` | Command-line arguments are passed individually to `_spawn` function. This suffix is typically used when some parameters to a new process are known in advance. |
+| `p` | `PATH` environment variable is used to find the file to execute. |
+| `v` | `argv`, array of pointers to command-line arguments, is passed to `_spawn` function. This suffix is typically used when several parameters to a new process are variable. |
 
 ## Remarks
 
@@ -42,25 +42,25 @@ The `_spawn` functions each create and execute a new process. They automatically
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tspawnl`|`_spawnl`|`_spawnl`|`_wspawnl`|
-|`_tspawnle`|`_spawnle`|`_spawnle`|`_wspawnle`|
-|`_tspawnlp`|`_spawnlp`|`_spawnlp`|`_wspawnlp`|
-|`_tspawnlpe`|`_spawnlpe`|`_spawnlpe`|`_wspawnlpe`|
-|`_tspawnv`|`_spawnv`|`_spawnv`|`_wspawnv`|
-|`_tspawnve`|`_spawnve`|`_spawnve`|`_wspawnve`|
-|`_tspawnvp`|`_spawnvp`|`_spawnvp`|`_wspawnvp`|
-|`_tspawnvpe`|`_spawnvpe`|`_spawnvpe`|`_wspawnvpe`|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tspawnl` | `_spawnl` | `_spawnl` | `_wspawnl` |
+| `_tspawnle` | `_spawnle` | `_spawnle` | `_wspawnle` |
+| `_tspawnlp` | `_spawnlp` | `_spawnlp` | `_wspawnlp` |
+| `_tspawnlpe` | `_spawnlpe` | `_spawnlpe` | `_wspawnlpe` |
+| `_tspawnv` | `_spawnv` | `_spawnv` | `_wspawnv` |
+| `_tspawnve` | `_spawnve` | `_spawnve` | `_wspawnve` |
+| `_tspawnvp` | `_spawnvp` | `_spawnvp` | `_wspawnvp` |
+| `_tspawnvpe` | `_spawnvpe` | `_spawnvpe` | `_wspawnvpe` |
 
 Enough memory must be available for loading and executing the new process. The `mode` argument determines the action taken by the calling process before and during `_spawn`. The following values for `mode` are defined in `Process.h`:
 
-|Value|Description|
-|-|-|
-| `_P_OVERLAY`  | Overlays a calling process with a new process, destroying the calling process (same effect as `_exec` calls).  |
-| `_P_WAIT`  | Suspends a calling thread until execution of the new process is complete (synchronous `_spawn`).  |
-| `_P_NOWAIT` or `_P_NOWAITO`  | Continues to execute a calling process concurrently with the new process (asynchronous `_spawn`).  |
-| `_P_DETACH`  | Continues to execute the calling process; the new process is run in the background with no access to the console or keyboard. Calls to `_cwait` against the new process fail (asynchronous `_spawn`).  |
+| Value | Description |
+|---|---|
+| `_P_OVERLAY` | Overlays a calling process with a new process, destroying the calling process (same effect as `_exec` calls). |
+| `_P_WAIT` | Suspends a calling thread until execution of the new process is complete (synchronous `_spawn`). |
+| `_P_NOWAIT` or `_P_NOWAITO` | Continues to execute a calling process concurrently with the new process (asynchronous `_spawn`). |
+| `_P_DETACH` | Continues to execute the calling process; the new process is run in the background with no access to the console or keyboard. Calls to `_cwait` against the new process fail (asynchronous `_spawn`). |
 
 The `cmdname` argument specifies the file that is executed as the new process and can specify a full path (from the root), a partial path (from the current working directory), or just a file name. If `cmdname` doesn't have a file name extension or doesn't end with a period (.), the `_spawn` function first tries the .com file name extension and then the .exe file name extension, the .bat file name extension, and finally the .cmd file name extension.
 

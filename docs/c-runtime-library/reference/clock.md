@@ -31,9 +31,9 @@ Given enough time, the value returned by **`clock`** can exceed the maximum posi
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`clock`**|`<time.h>`|
+| Routine | Required header |
+|---|---|
+| **`clock`** | `<time.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

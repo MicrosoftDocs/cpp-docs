@@ -51,9 +51,9 @@ The behavior of **`isprint`** and **`_isprint_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_unicode defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istprint`|**`isprint`**|[`_ismbcprint`](ismbcgraph-functions.md)|**`iswprint`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istprint` | **`isprint`** | [`_ismbcprint`](ismbcgraph-functions.md) | **`iswprint`** |
 
 ## Remarks
 
@@ -61,12 +61,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isprint`**|\<ctype.h>|
-|**`iswprint`**|\<ctype.h> or \<wchar.h>|
-|**`_isprint_l`**|\<ctype.h>|
-|**`_iswprint_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isprint`** | \<ctype.h> |
+| **`iswprint`** | \<ctype.h> or \<wchar.h> |
+| **`_isprint_l`** | \<ctype.h> |
+| **`_iswprint_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

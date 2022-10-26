@@ -79,20 +79,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsset`|**`_strset`**|**`_mbsset`**|**`_wcsset`**|
-|`_tcsset_l`|**`_strset_l`**|**`_mbsset_l`**|**`_wcsset_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsset` | **`_strset`** | **`_mbsset`** | **`_wcsset`** |
+| `_tcsset_l` | **`_strset_l`** | **`_mbsset_l`** | **`_wcsset_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strset`**|\<string.h>|
-|**`_strset_l`**|\<tchar.h>|
-|**`_wcsset`**|\<string.h> or \<wchar.h>|
-|**`_wcsset_l`**|\<tchar.h>|
-|**`_mbsset`**, **`_mbsset_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_strset`** | \<string.h> |
+| **`_strset_l`** | \<tchar.h> |
+| **`_wcsset`** | \<string.h> or \<wchar.h> |
+| **`_wcsset_l`** | \<tchar.h> |
+| **`_mbsset`**, **`_mbsset_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

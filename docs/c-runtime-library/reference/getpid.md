@@ -32,9 +32,9 @@ The **`_getpid`** function obtains the process ID from the system. The process I
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getpid`**|`<process.h>`|
+| Routine | Required header |
+|---|---|
+| **`_getpid`** | `<process.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

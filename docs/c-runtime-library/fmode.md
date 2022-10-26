@@ -2,8 +2,8 @@
 description: "Learn more about: _fmode"
 title: "_fmode"
 ms.date: "11/04/2016"
-f1_keywords: ["fmode", "_fmode"]
-helpviewer_keywords: ["file translation [C++], default mode", "fmode function", "_fmode function"]
+f1_keywords: ["_fmode", "STDLIB/_fmode"]
+helpviewer_keywords: ["file translation [C++], default mode", "_fmode global variable"]
 ms.assetid: ac6df9eb-e5cc-4c54-aff3-373c21983118
 ---
 # `_fmode`
@@ -12,7 +12,7 @@ The `_fmode` variable sets the default file-translation mode for text or binary 
 
 ## Syntax
 
-```
+```C
 extern int _fmode;
 ```
 

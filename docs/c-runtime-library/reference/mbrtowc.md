@@ -190,9 +190,9 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`mbrtowc`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`mbrtowc`** | \<wchar.h> |
 
 ## See also
 

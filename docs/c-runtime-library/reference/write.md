@@ -36,7 +36,7 @@ Number of bytes.
 
 ## Return value
 
-If successful, **`_write`** returns the number of bytes written. If the actual space remaining on the disk is less than the size of the buffer the function is trying to write to the disk, **`_write`** fails and doesn't flush any of the buffer's contents to the disk. A return value of -1 indicates an error. If invalid parameters are passed, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to one of three values: `EBADF`, which means the file descriptor is invalid or the file isn't opened for writing; `ENOSPC`, which means there isn't enough space left on the device for the operation; or `EINVAL`, which means that *`buffer`* was a null pointer or that an odd *`count`* of bytes was passed to be written to a file in Unicode mode.
+If successful, **`_write`** returns the number of bytes written. If the actual space remaining on the disk is less than the size of the buffer the function is trying to write to the disk, **`_write`** fails and doesn't flush any of the buffer's contents to the disk. A return value of -1 indicates an error. If invalid parameters are passed, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to one of three values: `EBADF`, which means the file descriptor is invalid or the file isn't opened for writing; `ENOSPC`, which means there isn't enough space left on the device for the operation; or `EINVAL`, which means that *`buffer`* was a null pointer, or that an odd *`count`* of bytes was passed in Unicode mode.
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -48,15 +48,15 @@ When the file is opened in Unicode translation mode—for example, if *`fd`* is 
 
 The **`_write`** function writes *`count`* bytes from *`buffer`* into the file associated with *`fd`*. The write operation begins at the current position of the file pointer (if any) associated with the given file. If the file is open for appending, the operation begins at the current end of the file. After the write operation, the file pointer is increased by the number of bytes written.
 
-When writing to files opened in text mode, **`_write`** treats a CTRL+Z character as the logical end of file. When writing to a device, **`_write`** treats a CTRL+Z character in the buffer as an output terminator.
+When it writes to files opened in text mode, **`_write`** treats a CTRL+Z character as the logical end of file. When it writes to a device, **`_write`** treats a CTRL+Z character in the buffer as an output terminator.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_write`**|`<io.h>`|
+| Routine | Required header |
+|---|---|
+| **`_write`** | `<io.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

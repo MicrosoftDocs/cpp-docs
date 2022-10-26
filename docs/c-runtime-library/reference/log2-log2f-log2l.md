@@ -49,15 +49,15 @@ On success, the functions return the base-2 log of *`x`*.
 
 Otherwise, the functions may return one of the following values:
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* < 0|NaN|
-|*`x`* = ±0|-INFINITY|
-|*`x`* = 1|+0|
-|+INFINITY|+INFINITY|
-|NaN|NaN|
-|domain error|NaN|
-|pole error|-HUGE_VAL, -HUGE_VALF, or -HUGE_VALL|
+| Issue | Return |
+|---|---|
+| *`x`* < 0 | NaN |
+| *`x`* = ±0 | -INFINITY |
+| *`x`* = 1 | +0 |
+| +INFINITY | +INFINITY |
+| NaN | NaN |
+| domain error | NaN |
+| pole error | -`HUGE_VAL`, -`HUGE_VALF`, or -`HUGE_VALL` |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -69,10 +69,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`log2`**, **`log2f`**, **`log2l`**|\<math.h>|\<cmath>|
-|**`log2`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`log2`**, **`log2f`**, **`log2l`** | \<math.h> | \<cmath> |
+| **`log2`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

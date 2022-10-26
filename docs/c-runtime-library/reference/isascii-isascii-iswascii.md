@@ -46,16 +46,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_istascii`**|**`__isascii`**|**`__isascii`**|**`iswascii`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_istascii`** | **`__isascii`** | **`__isascii`** | **`iswascii`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isascii`**, **`__isascii`**|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
-|**`iswascii`**|C: \<wctype.h>, \<ctype.h>, or \<wchar.h><br /><br /> C++: \<cwctype>, \<cctype>, \<wctype.h>, \<ctype.h>, or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isascii`**, **`__isascii`** | C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h> |
+| **`iswascii`** | C: \<wctype.h>, \<ctype.h>, or \<wchar.h><br /><br /> C++: \<cwctype>, \<cctype>, \<wctype.h>, \<ctype.h>, or \<wchar.h> |
 
 The **`isascii`**, **`__isascii`**, and **`iswascii`** functions are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

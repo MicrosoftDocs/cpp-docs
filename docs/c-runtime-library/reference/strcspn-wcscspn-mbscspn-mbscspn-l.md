@@ -68,18 +68,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscspn`|**`strcspn`**|**`_mbscspn`**|**`wcscspn`**|
-|n/a|n/a|**`_mbscspn_l`**|n/a|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscspn` | **`strcspn`** | **`_mbscspn`** | **`wcscspn`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strcspn`**|\<string.h>|
-|**`wcscspn`**|\<string.h> or \<wchar.h>|
-|**`_mbscspn`**, **`_mbscspn_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`strcspn`** | \<string.h> |
+| **`wcscspn`** | \<string.h> or \<wchar.h> |
+| **`_mbscspn`**, **`_mbscspn_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

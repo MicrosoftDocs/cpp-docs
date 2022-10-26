@@ -48,10 +48,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_dup`**|`<io.h>`|
-|**`_dup2`**|`<io.h>`|
+| Routine | Required header |
+|---|---|
+| **`_dup`** | `<io.h>` |
+| **`_dup2`** | `<io.h>` |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -49,9 +49,9 @@ There's a single **`set_unexpected`** handler for all dynamically linked DLLs or
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`set_unexpected`**|`<eh.h>`|
+| Routine | Required header |
+|---|---|
+| **`set_unexpected`** | `<eh.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

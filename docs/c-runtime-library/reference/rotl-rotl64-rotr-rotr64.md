@@ -54,10 +54,10 @@ The **`_rotl`** and **`_rotr`** functions rotate the unsigned *`value`* by *`shi
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_rotl`**, **`_rotl64`**|\<stdlib.h>|
-|**`_rotr`**, **`_rotr64`**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_rotl`**, **`_rotl64`** | \<stdlib.h> |
+| **`_rotr`**, **`_rotr64`** | \<stdlib.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

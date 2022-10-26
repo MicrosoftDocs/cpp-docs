@@ -49,12 +49,12 @@ Zero if successful. The return value is an error code if there's a failure. Erro
 
 ## Error conditions
 
-|*`buffer`*|*`size`*|Return|Contents of *`buffer`*|
-|--------------|------------------------|------------|--------------------------|
-|`NULL`|(any)|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0 < *`size`* < 9|`EINVAL`|Empty string|
-|Not `NULL` (pointing to valid buffer)|*`size`* >= 9|0|Current date formatted as specified in the remarks|
+| *`buffer`* | *`size`* | Return | Contents of *`buffer`* |
+|---|---|---|---|
+| `NULL` | (any) | `EINVAL` | Not modified |
+| Not `NULL` (pointing to valid buffer) | 0 | `EINVAL` | Not modified |
+| Not `NULL` (pointing to valid buffer) | 0 < *`size`* < 9 | `EINVAL` | Empty string |
+| Not `NULL` (pointing to valid buffer) | *`size`* >= 9 | 0 | Current date formatted as specified in the remarks |
 
 ## Security issues
 
@@ -78,17 +78,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mapping:
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tstrdate_s`|**`_strdate_s`**|**`_strdate_s`**|**`_wstrdate_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tstrdate_s` | **`_strdate_s`** | **`_strdate_s`** | **`_wstrdate_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strdate`**|\<time.h>|
-|**`_wstrdate`**|\<time.h> or \<wchar.h>|
-|**`_strdate_s`**|\<time.h>|
+| Routine | Required header |
+|---|---|
+| **`_strdate`** | \<time.h> |
+| **`_wstrdate`** | \<time.h> or \<wchar.h> |
+| **`_strdate_s`** | \<time.h> |
 
 ## Example
 

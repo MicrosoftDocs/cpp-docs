@@ -64,9 +64,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsspnp`|**`_strspnp`**|**`_mbsspnp`**|**`_wcsspnp`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsspnp` | **`_strspnp`** | **`_mbsspnp`** | **`_wcsspnp`** |
 
 **`_strspnp`** and **`_wcsspnp`** are single-byte character and wide-character versions of **`_mbsspnp`**. **`_strspnp`** and **`_wcsspnp`** behave identically to **`_mbsspnp`** otherwise; they're provided only for this mapping and shouldn't be used for any other reason. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
@@ -74,11 +74,11 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsspnp`**|\<mbstring.h>|
-|**`_strspnp`**|\<tchar.h>|
-|**`_wcsspnp`**|\<tchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsspnp`** | \<mbstring.h> |
+| **`_strspnp`** | \<tchar.h> |
+| **`_wcsspnp`** | \<tchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -43,10 +43,10 @@ A complex number.
 
 The square root of *`z`*. The result is in the right half-plane.
 
-|Input|SEH Exception|`_matherr` Exception|
-|-----------|-------------------|--------------------------|
-|± QNAN, IND|none|_DOMAIN|
-|- ∞|none|_DOMAIN|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | _DOMAIN |
+| - INF | none | _DOMAIN |
 
 ## Remarks
 
@@ -54,9 +54,9 @@ Because C++ allows overloading, you can call overloads of **`csqrt`** that take 
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`csqrt`**,               **`csqrtf`**, **`csqrtl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`csqrt`**, **`csqrtf`**, **`csqrtl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

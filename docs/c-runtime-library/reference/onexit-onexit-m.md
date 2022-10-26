@@ -44,9 +44,9 @@ In the case when **`_onexit`** is called from within a DLL, routines registered 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_onexit`**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_onexit`** | \<stdlib.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

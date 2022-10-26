@@ -29,11 +29,11 @@ The integer to reverse byte order.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_byteswap_ushort`**|`<stdlib.h>`|
-|**`_byteswap_ulong`**|`<stdlib.h>`|
-|**`_byteswap_uint64`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`_byteswap_ushort`** | `<stdlib.h>` |
+| **`_byteswap_ulong`** | `<stdlib.h>` |
+| **`_byteswap_uint64`** | `<stdlib.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -42,10 +42,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|Optional header|
-|--------------|---------------------|---------------------|
-|**`ftell_nolock`**|\<stdio.h>|\<errno.h>|
-|**`_ftelli64_nolock`**|\<stdio.h>|\<errno.h>|
+| Function | Required header | Optional header |
+|---|---|---|
+| **`ftell_nolock`** | \<stdio.h> | \<errno.h> |
+| **`_ftelli64_nolock`** | \<stdio.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

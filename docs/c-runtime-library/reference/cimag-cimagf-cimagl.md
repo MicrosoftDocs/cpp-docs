@@ -43,10 +43,10 @@ If you use the \<tgmath.h> `cimag()` macro, the type of the argument determines 
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`cimag`**, **`cimagf`**, **`cimagl`**|\<complex.h>|\<ccomplex>|
-|**`cimag`** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cimag`**, **`cimagf`**, **`cimagl`** | \<complex.h> | \<ccomplex> |
+| **`cimag`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

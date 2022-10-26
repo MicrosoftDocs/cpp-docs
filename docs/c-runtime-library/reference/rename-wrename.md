@@ -39,8 +39,8 @@ Pointer to new name.
 
 Each of these functions returns 0 if it's successful. On an error, the function returns a nonzero value and sets `errno` to one of the following values:
 
-|errno value|Condition|
-|-|-|
+| `errno` value | Condition |
+|---|---|
 | `EACCES` | File or directory specified by *`newname`* already exists or couldn't be created (invalid path); or *`oldname`* is a directory and *`newname`* specifies a different path. |
 | `ENOENT` | File or path specified by *`oldname`* not found. |
 | `EINVAL` | Name contains invalid characters. |
@@ -57,16 +57,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_trename`**|**`rename`**|**`rename`**|**`_wrename`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_trename` | **`rename`** | **`rename`** | **`_wrename`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`rename`**|`<io.h>` or `<stdio.h>`|
-|**`_wrename`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`rename`** | `<io.h>` or `<stdio.h>` |
+| **`_wrename`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

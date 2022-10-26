@@ -10,7 +10,7 @@ ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
 
 ## Syntax
 
-```
+```C
 #include <stdio.h>
 ```
 
@@ -18,11 +18,11 @@ ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
 
 The *`origin`* argument specifies the initial position and can be one of the following manifest constants:
 
-|Constant|Meaning|
-|--------------|-------------|
-|`SEEK_END`|End of file|
-|`SEEK_CUR`|Current position of file pointer|
-|`SEEK_SET`|Beginning of file|
+| Constant | Meaning |
+|---|---|
+| `SEEK_END` | End of file |
+| `SEEK_CUR` | Current position of file pointer |
+| `SEEK_SET` | Beginning of file |
 
 ## See also
 

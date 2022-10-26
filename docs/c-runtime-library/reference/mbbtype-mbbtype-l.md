@@ -46,13 +46,13 @@ The locale to use.
 
 **`_mbbtype`** returns the type of byte in a string. This decision is context-sensitive, as specified by the value of *`type`*, which provides the control test condition. *`type`* is the type of the previous byte in the string. The manifest constants in the following table are defined in Mbctype.h.
 
-|Value of *`type`*|**`_mbbtype`** tests for|Return value|*`c`*|
-|---------------------|--------------------------|------------------|---------|
-|Any value except 1|Valid single byte or lead byte|`_MBC_SINGLE` (0)|Single byte (0x20 - 0x7E, 0xA1 - 0xDF)|
-|Any value except 1|Valid single byte or lead byte|`_MBC_LEAD` (1)|Lead byte of multibyte character (0x81 - 0x9F, 0xE0 - 0xFC)|
-|Any value except 1|Valid single-byte or lead byte|`_MBC_ILLEGAL`<br /><br /> (-1)|Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC|
-|1|Valid trail byte|`_MBC_TRAIL` (2)|Trailing byte of multibyte character (0x40 - 0x7E, 0x80 - 0xFC)|
-|1|Valid trail byte|`_MBC_ILLEGAL`<br /><br /> (-1)|Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC|
+| Value of *`type`* | **`_mbbtype`** tests for | Return value | *`c`* |
+|---|---|---|---|
+| Any value except 1 | Valid single byte or lead byte | `_MBC_SINGLE` (0) | Single byte (0x20 - 0x7E, 0xA1 - 0xDF) |
+| Any value except 1 | Valid single byte or lead byte | `_MBC_LEAD` (1) | Lead byte of multibyte character (0x81 - 0x9F, 0xE0 - 0xFC) |
+| Any value except 1 | Valid single-byte or lead byte | `_MBC_ILLEGAL`<br /><br /> (-1) | Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC |
+| 1 | Valid trail byte | `_MBC_TRAIL` (2) | Trailing byte of multibyte character (0x40 - 0x7E, 0x80 - 0xFC) |
+| 1 | Valid trail byte | `_MBC_ILLEGAL`<br /><br /> (-1) | Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC |
 
 ## Remarks
 
@@ -66,10 +66,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_mbbtype`**|\<mbstring.h>|\<mbctype.h>*|
-|**`_mbbtype_l`**|\<mbstring.h>|\<mbctype.h>*|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_mbbtype`** | \<mbstring.h> | \<mbctype.h>* |
+| **`_mbbtype_l`** | \<mbstring.h> | \<mbctype.h>* |
 
 \* For definitions of manifest constants that are used as return values.
 

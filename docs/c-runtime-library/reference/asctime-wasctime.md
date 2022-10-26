@@ -40,17 +40,17 @@ More secure versions of these functions are available; see [`asctime_s`, `_wasct
 
 The **`asctime`** function converts a time stored as a structure to a character string. The *`timeptr`* value is typically obtained from a call to `gmtime` or `localtime`, which both return a pointer to a `tm` structure, defined in TIME.H.
 
-|`timeptr` member|Value|
-|--------------------|-----------|
-|`tm_hour`|Hours since midnight (0-23)|
-|`tm_isdst`|Positive if daylight saving time is in effect; 0 if daylight saving time isn't in effect; negative if status of daylight saving time is unknown. The C run-time library assumes the United States' rules for implementing the calculation of Daylight Saving Time (DST).|
-|`tm_mday`|Day of month (1-31)|
-|`tm_min`|Minutes after hour (0-59)|
-|`tm_mon`|Month (0-11; January = 0)|
-|`tm_sec`|Seconds after minute (0-59)|
-|`tm_wday`|Day of week (0-6; Sunday = 0)|
-|`tm_yday`|Day of year (0-365; January 1 = 0)|
-|`tm_year`|Year (current year minus 1900)|
+| `timeptr` member | Value |
+|---|---|
+| `tm_hour` | Hours since midnight (0-23) |
+| `tm_isdst` | Positive if daylight saving time is in effect; 0 if daylight saving time isn't in effect; negative if status of daylight saving time is unknown. The C run-time library assumes the United States' rules for implementing the calculation of Daylight Saving Time (DST). |
+| `tm_mday` | Day of month (1-31) |
+| `tm_min` | Minutes after hour (0-59) |
+| `tm_mon` | Month (0-11; January = 0) |
+| `tm_sec` | Seconds after minute (0-59) |
+| `tm_wday` | Day of week (0-6; Sunday = 0) |
+| `tm_yday` | Day of year (0-365; January 1 = 0) |
+| `tm_year` | Year (current year minus 1900) |
 
 The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [`time`](time-time32-time64.md), [`_ftime`](ftime-ftime32-ftime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions. For information about defining the time zone environment and global variables, see the [`_tzset`](tzset.md) function.
 
@@ -64,16 +64,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mapping
 
-|TCHAR.H routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tasctime`|**`asctime`**|**`asctime`**|**`_wasctime`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tasctime` | **`asctime`** | **`asctime`** | **`_wasctime`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`asctime`**|\<time.h>|
-|**`_wasctime`**|\<time.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`asctime`** | \<time.h> |
+| **`_wasctime`** | \<time.h> or \<wchar.h> |
 
 ## Example
 

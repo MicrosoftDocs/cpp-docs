@@ -51,10 +51,10 @@ The behavior of **`iscntrl`** and **`_iscntrl_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istcntrl`|**`iscntrl`**|**`iscntrl`**|**`iswcntrl`**|
-|`_istcntrl_l`|**`_iscntrl_l`**|**`_iscntrl_l`**|**`_iswcntrl_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istcntrl` | **`iscntrl`** | **`iscntrl`** | **`iswcntrl`** |
+| `_istcntrl_l` | **`_iscntrl_l`** | **`_iscntrl_l`** | **`_iswcntrl_l`** |
 
 ## Remarks
 
@@ -62,12 +62,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`iscntrl`**|\<ctype.h>|
-|**`iswcntrl`**|\<ctype.h> or \<wchar.h>|
-|**`_iscntrl_l`**|\<ctype.h>|
-|**`_iswcntrl_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`iscntrl`** | \<ctype.h> |
+| **`iswcntrl`** | \<ctype.h> or \<wchar.h> |
+| **`_iscntrl_l`** | \<ctype.h> |
+| **`_iswcntrl_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

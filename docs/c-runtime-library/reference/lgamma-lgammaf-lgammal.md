@@ -35,14 +35,14 @@ The value to compute.
 
 If successful, return the natural logarithm of the absolute value of the gamma function of *`x`*.
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* = NaN|NaN|
-|*`x`* = ±0|+INFINITY|
-|*`x`*= negative integer|+INFINITY|
-|±INFINITY|+INFINITY|
-|pole error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
-|overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
+| Issue | Return |
+|---|---|
+| *`x`* = NaN | NaN |
+| *`x`* = ±0 | +INFINITY |
+| *`x`*= negative integer | +INFINITY |
+| ±INFINITY | +INFINITY |
+| pole error | +`HUGE_VAL`, +`HUGE_VALF`, or +`HUGE_VALL` |
+| overflow range error | ±`HUGE_VAL`, ±`HUGE_VALF`, or ±`HUGE_VALL` |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -58,10 +58,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`lgamma`**, **`lgammaf`**, **`lgammal`**|\<math.h>|\<cmath>|
-|**`lgamma`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`lgamma`**, **`lgammaf`**, **`lgammal`** | \<math.h> | \<cmath> |
+| **`lgamma`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

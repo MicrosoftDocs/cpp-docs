@@ -12,21 +12,21 @@ Most multibyte-character routines in the Microsoft run-time library recognize mu
 
 ## Locale-dependent multibyte routines
 
-|Routine|Use|
-|-------------|---------|
-|[`_mbclen`, `mblen`, `_mblen_l`](./reference/mbclen-mblen-mblen-l.md)|Validate and return number of bytes in multibyte character|
-|[`strlen`, `wcslen`, `_mbslen`, `_mbslen_l`, `_mbstrlen`, `_mbstrlen_l`](./reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)|For multibyte character strings: validate each character in string; return string length. For wide character strings: return string length.|
-|[`mbstowcs`, `_mbstowcs_l`](./reference/mbstowcs-mbstowcs-l.md), [`mbstowcs_s`, `_mbstowcs_s_l`](./reference/mbstowcs-s-mbstowcs-s-l.md)|Convert sequence of multibyte characters to corresponding sequence of wide characters|
-|[`mbtowc`, `_mbtowc_l`](./reference/mbtowc-mbtowc-l.md)|Convert multibyte character to corresponding wide character|
-|[`wcstombs`, `_wcstombs_l`](./reference/wcstombs-wcstombs-l.md), [`wcstombs_s`, `_wcstombs_s_l`](./reference/wcstombs-s-wcstombs-s-l.md)|Convert sequence of wide characters to corresponding sequence of multibyte characters|
-|[`wctomb`, `_wctomb_l`](./reference/wctomb-wctomb-l.md), [`wctomb_s`, `_wctomb_s_l`](./reference/wctomb-s-wctomb-s-l.md)|Convert wide character to corresponding multibyte character|
+| Routine | Use |
+|---|---|
+| [`_mbclen`, `mblen`, `_mblen_l`](./reference/mbclen-mblen-mblen-l.md) | Validate and return number of bytes in multibyte character |
+| [`strlen`, `wcslen`, `_mbslen`, `_mbslen_l`, `_mbstrlen`, `_mbstrlen_l`](./reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md) | For multibyte character strings: validate each character in string; return string length. For wide character strings: return string length. |
+| [`mbstowcs`, `_mbstowcs_l`](./reference/mbstowcs-mbstowcs-l.md), [`mbstowcs_s`, `_mbstowcs_s_l`](./reference/mbstowcs-s-mbstowcs-s-l.md) | Convert sequence of multibyte characters to corresponding sequence of wide characters |
+| [`mbtowc`, `_mbtowc_l`](./reference/mbtowc-mbtowc-l.md) | Convert multibyte character to corresponding wide character |
+| [`wcstombs`, `_wcstombs_l`](./reference/wcstombs-wcstombs-l.md), [`wcstombs_s`, `_wcstombs_s_l`](./reference/wcstombs-s-wcstombs-s-l.md) | Convert sequence of wide characters to corresponding sequence of multibyte characters |
+| [`wctomb`, `_wctomb_l`](./reference/wctomb-wctomb-l.md), [`wctomb_s`, `_wctomb_s_l`](./reference/wctomb-s-wctomb-s-l.md) | Convert wide character to corresponding multibyte character |
 
 ## Locale-independent multibyte routines
 
-|Routine|Use|
-|-------------|---------|
-|[`mbrtoc16`, `mbrtoc32`](./reference/mbrtoc16-mbrtoc323.md)|Convert multibyte UTF-8 character to equivalent UTF-16 or UTF-32 character|
-|[`c16rtomb`, `c32rtomb`](./reference/c16rtomb-c32rtomb1.md)|Convert UTF-16 or UTF-32 character to equivalent UTF-8 multibyte character|
+| Routine | Use |
+|---|---|
+| [`mbrtoc16`, `mbrtoc32`](./reference/mbrtoc16-mbrtoc323.md) | Convert multibyte UTF-8 character to equivalent UTF-16 or UTF-32 character |
+| [`c16rtomb`, `c32rtomb`](./reference/c16rtomb-c32rtomb1.md) | Convert UTF-16 or UTF-32 character to equivalent UTF-8 multibyte character |
 
 ## See also
 

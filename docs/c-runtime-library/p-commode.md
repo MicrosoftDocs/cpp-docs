@@ -27,7 +27,7 @@ Pointer to the `_commode` global variable.
 
 ## Remarks
 
-The `__p__commode` function is for internal use only, and shouldn't be called from user code.
+The **`__p__commode`** function is for internal use only, and shouldn't be called from user code.
 
 File commit mode specifies when critical data is written to disk. For more information, see [`fflush`](./reference/fflush.md).
 
@@ -35,6 +35,6 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__p\__commode|internal.h|
+| Routine | Required header |
+|---|---|
+| **`__p__commode`** | `internal.h` |

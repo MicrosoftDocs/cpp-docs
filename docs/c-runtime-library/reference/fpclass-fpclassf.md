@@ -34,18 +34,18 @@ The floating-point value to test.
 
 The **`_fpclass`** and **`_fpclassf`** functions return an integer value that indicates the floating-point classification of the argument *`x`*. The classification may have one of the following values, defined in `<float.h>`.
 
-|Value|Description|
-|-----------|-----------------|
-|`_FPCLASS_SNAN`|Signaling NaN|
-|`_FPCLASS_QNAN`|Quiet NaN|
-|`_FPCLASS_NINF`|Negative infinity (`-INF`)|
-|`_FPCLASS_NN`|Negative normalized non-zero|
-|`_FPCLASS_ND`|Negative denormalized|
-|`_FPCLASS_NZ`|Negative zero (-0)|
-|`_FPCLASS_PZ`|Positive 0 (+0)|
-|`_FPCLASS_PD`|Positive denormalized|
-|`_FPCLASS_PN`|Positive normalized non-zero|
-|`_FPCLASS_PINF`|Positive infinity (`+INF`)|
+| Value | Description |
+|---|---|
+| `_FPCLASS_SNAN` | Signaling NaN |
+| `_FPCLASS_QNAN` | Quiet NaN |
+| `_FPCLASS_NINF` | Negative infinity (`-INF`) |
+| `_FPCLASS_NN` | Negative normalized non-zero |
+| `_FPCLASS_ND` | Negative denormalized |
+| `_FPCLASS_NZ` | Negative zero (-0) |
+| `_FPCLASS_PZ` | Positive 0 (+0) |
+| `_FPCLASS_PD` | Positive denormalized |
+| `_FPCLASS_PN` | Positive normalized non-zero |
+| `_FPCLASS_PINF` | Positive infinity (`+INF`) |
 
 ## Remarks
 
@@ -55,9 +55,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fpclass`**, **`_fpclassf`**|`<float.h>`|
+| Function | Required header |
+|---|---|
+| **`_fpclass`**, **`_fpclassf`** | `<float.h>` |
 
 For more compatibility and conformance information, see [Compatibility](../compatibility.md).
 

@@ -71,9 +71,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_pipe`**|`<io.h>`|`<fcntl.h>`,<sup>1</sup> `<errno.h>`<sup>2</sup>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_pipe`** | `<io.h>` | `<fcntl.h>`,<sup>1</sup> `<errno.h>`<sup>2</sup> |
 
 <sup>1</sup> For `_O_BINARY` and `_O_TEXT` definitions.
 

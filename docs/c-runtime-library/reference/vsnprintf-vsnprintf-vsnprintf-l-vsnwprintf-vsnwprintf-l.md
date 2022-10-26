@@ -114,13 +114,13 @@ Both **`_vsnprintf`** and **`_vsnwprintf`** functions return the number of chara
 
 The value returned by all these functions doesn't include the terminating null, whether one is written or not.
 
-- If *`count`* is zero and *`buffer`* is `NULL`, the value returned is the number of characters the functions would write. The value does not take into account a terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
+- If *`count`* is zero and *`buffer`* is `NULL`, the value returned is the number of characters the functions would write. The value doesn't take into account a terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating null, and then call the function again to fill the buffer.
 - If *`count`* is zero but *`buffer`* isn't `NULL`, nothing is written and the function returns `-1`.
 - If *`format`* is `NULL`, or if *`buffer`* is `NULL` and *`count`* isn't equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *`count`* characters  to the memory pointed to by *`buffer`*. The **`vsnprintf`** function always writes a null terminator, even if it truncates the output. When using **`_vsnprintf`** and **`_vsnwprintf`**, the buffer will be null-terminated only if there's room at the end (that is, if the number of characters to write is less than *`count`*).
+Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *`count`* characters  to the memory pointed to by *`buffer`*. The **`vsnprintf`** function always writes a null terminator, even if it truncates the output. When you use **`_vsnprintf`** and **`_vsnwprintf`**, the buffer is null-terminated only if there's room at the end (that is, if the number of characters to write is less than *`count`*).
 
 > [!IMPORTANT]
 > To prevent certain kinds of security risks, ensure that *`format`* isn't a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -139,17 +139,17 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_vsntprintf`**|**`_vsnprintf`**|**`_vsnprintf`**|**`_vsnwprintf`**|
-|**`_vsntprintf_l`**|**`_vsnprintf_l`**|**`_vsnprintf_l`**|**`_vsnwprintf_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vsntprintf` | **`_vsnprintf`** | **`_vsnprintf`** | **`_vsnwprintf`** |
+| `_vsntprintf_l` | **`_vsnprintf_l`** | **`_vsnprintf_l`** | **`_vsnwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------------|-------------------------------|
-|**`vsnprintf`**, **`_vsnprintf`**, **`_vsnprintf_l`**|`<stdio.h>`|`<stdio.h>` or  `<cstdio>`|
-|**`_vsnwprintf`**, **`_vsnwprintf_l`**|`<stdio.h>` or `<wchar.h>`|`<stdio.h>`, `<wchar.h>`, `<cstdio>`, or `<cwchar>`|
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`vsnprintf`**, **`_vsnprintf`**, **`_vsnprintf_l`** | `<stdio.h>` | `<stdio.h>` or  `<cstdio>` |
+| **`_vsnwprintf`**, **`_vsnwprintf_l`** | `<stdio.h>` or `<wchar.h>` | `<stdio.h>`, `<wchar.h>`, `<cstdio>`, or `<cwchar>` |
 
 The **`_vsnprintf`**, **`_vsnprintf_l`**, **`_vsnwprintf`** and **`_vsnwprintf_l`** functions are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

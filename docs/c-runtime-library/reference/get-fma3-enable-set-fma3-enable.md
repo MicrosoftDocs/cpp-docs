@@ -40,9 +40,9 @@ The FMA3 implementations use different algorithms. Slight differences in the res
 
 The **`_set_FMA3_enable`** and **`_get_FMA3_enable`** functions are only available in the X64 versions of the CRT.
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_set_FMA3_enable`**, **`_get_FMA3_enable`**| C: \<math.h><br />C++: \<cmath> or \<math.h>|
+| Routine | Required header |
+|---|---|
+| **`_set_FMA3_enable`**, **`_get_FMA3_enable`** | C: \<math.h><br />C++: \<cmath> or \<math.h> |
 
 The **`_set_FMA3_enable`** and **`_get_FMA3_enable`** functions are Microsoft-specific. For compatibility information, see [Compatibility](../compatibility.md).
 

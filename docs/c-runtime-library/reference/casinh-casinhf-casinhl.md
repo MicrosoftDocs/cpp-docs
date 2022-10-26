@@ -49,9 +49,9 @@ Because C++ allows overloading, you can call overloads of **`casinh`** that take
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`casinh`**,               **`casinhf`**, **`casinhl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`casinh`**, **`casinhf`**, **`casinhl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

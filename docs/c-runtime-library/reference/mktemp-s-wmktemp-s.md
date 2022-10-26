@@ -49,11 +49,11 @@ Both of these functions return zero on success; an error code on failure.
 
 ### Error conditions
 
-|*`nameTemplate`*|*`sizeInChars`*|Return value|New value in *`nameTemplate`*|
-|----------------|-------------------|----------------------|-------------------------------|
-|`NULL`|any|`EINVAL`|`NULL`|
-|Incorrect format (see Remarks section for correct format)|any|`EINVAL`|empty string|
-|any|<= number of X characters|`EINVAL`|empty string|
+| *`nameTemplate`* | *`sizeInChars`* | Return value | New value in *`nameTemplate`* |
+|---|---|---|---|
+| `NULL` | any | `EINVAL` | `NULL` |
+| Incorrect format (see Remarks section for correct format) | any | `EINVAL` | empty string |
+| any | <= number of X characters | `EINVAL` | empty string |
 
 If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`.
 
@@ -67,9 +67,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tmktemp_s`|**`_mktemp_s`**|**`_mktemp_s`**|**`_wmktemp_s`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tmktemp_s` | **`_mktemp_s`** | **`_mktemp_s`** | **`_wmktemp_s`** |
 
 The *`nameTemplate`* argument has the form *`baseXXXXXX`*, where *`base`* is the part of the new file name that you supply and each X is a placeholder for a character supplied by **`_mktemp_s`**. Each placeholder character in *`nameTemplate`* must be an uppercase X. **`_mktemp_s`** preserves *`base`* and replaces the first trailing X with an alphabetic character. **`_mktemp_s`** replaces the X characters that follow with a five-digit value. This value is a unique number that identifies the calling process, or in multithreaded programs, the calling thread.
 
@@ -95,10 +95,10 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mktemp_s`**|\<io.h>|
-|**`_wmktemp_s`**|\<io.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_mktemp_s`** | \<io.h> |
+| **`_wmktemp_s`** | \<io.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

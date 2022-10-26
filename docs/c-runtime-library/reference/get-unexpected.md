@@ -26,9 +26,9 @@ Returns a pointer to the function registered by [`set_unexpected`](set-unexpecte
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_get_unexpected`**|\<eh.h>|
+| Routine | Required header |
+|---|---|
+| **`_get_unexpected`** | \<eh.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

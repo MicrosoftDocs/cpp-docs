@@ -22,7 +22,7 @@ Gets a character string from the console. More secure versions of these function
 
 ## Syntax
 
-```
+```C
 char *_cgets(
    char *buffer
 );
@@ -46,13 +46,13 @@ Storage location for data.
 
 ## Return value
 
-`_cgets` and `_cgetws` return a pointer to the start of the string, at `buffer[2]`. If `buffer` is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, they return `NULL` and set `errno` to `EINVAL`.
+**`_cgets`** and **`_cgetws`** return a pointer to the start of the string, at `buffer[2]`. If *`buffer`* is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter validation](./parameter-validation.md). If execution is allowed to continue, they return `NULL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
-These functions read a string of characters from the console and store the string and its length in the location pointed to by `buffer`. The `buffer` parameter must be a pointer to a character array. The first element of the array, `buffer[0]`, must contain the maximum length (in characters) of the string to be read. The array must contain enough elements to hold the string, a terminating null character ('\0'), and 2 extra bytes. The function reads characters until a carriage return-line feed (CR-LF) combination or the specified number of characters is read. The string is stored starting at `buffer[2]`. If the function reads a CR-LF, it stores the null character ('\0'). The function then stores the actual length of the string in the second array element, `buffer[1]`.
+These functions read a string of characters from the console and store the string and its length in the location pointed to by *`buffer`*. The *`buffer`* parameter must be a pointer to a character array. The first element of the array, `buffer[0]`, must contain the maximum length (in characters) of the string to be read. The array must contain enough elements to hold the string, a terminating null character ('\0'), and 2 extra bytes. The function reads characters until a carriage return-line feed (CR-LF) combination or the specified number of characters is read. The string is stored starting at `buffer[2]`. If the function reads a CR-LF, it stores the null character ('\0'). The function then stores the actual length of the string in the second array element, `buffer[1]`.
 
-Because all editing keys are active when `_cgets` or `_cgetws` is called while in a console window, pressing the F3 key repeats the last entered entry.
+Because all editing keys are active when **`_cgets`** or **`_cgetws`** is called while in a console window, pressing the F3 key repeats the last entered entry.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](./secure-template-overloads.md).
 
@@ -60,16 +60,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_cgetts`|`_cgets`|`_cgets`|`_cgetws`|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_cgetts` | **`_cgets`** | **`_cgets`** | **`_cgetws`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`_cgets`|\<conio.h>|
-|`_cgetws`|\<conio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_cgets`** | \<conio.h> |
+| **`_cgetws`** | \<conio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](./compatibility.md).
 

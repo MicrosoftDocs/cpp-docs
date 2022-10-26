@@ -73,10 +73,10 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcstoi64`**|**`_strtoi64`**|**`_strtoi64`**|**`_wcstoi64`**|
-|**`_tcstoi64_l`**|**`_strtoi64_l`**|**`_strtoi64_l`**|**`_wcstoi64_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| ****`_tcstoi64`**** | **`_strtoi64`** | **`_strtoi64`** | **`_wcstoi64`** |
+| ****`_tcstoi64_l`**** | **`_strtoi64_l`** | **`_strtoi64_l`** | **`_wcstoi64_l`** |
 
 The locale's `LC_NUMERIC` category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtoi64_l`** and **`_wcstoi64_l`** are identical to the corresponding function without the **`_l`** suffix except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
@@ -91,7 +91,7 @@ A *`whitespace`* may consist of space and tab characters, which are ignored. *`d
 ## Requirements
 
 | Function | Required header |
-|--|--|
+|---|---|
 | **`_strtoi64`**, **`_strtoi64_l`** | `<stdlib.h>` |
 | **`_wcstoi64`**, **`_wcstoi64_l`** | `<stdlib.h>` or `<wchar.h>` |
 

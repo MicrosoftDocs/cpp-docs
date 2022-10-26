@@ -72,16 +72,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tdupenv_s`**|**`_dupenv_s`**|**`_dupenv_s`**|**`_wdupenv_s`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tdupenv_s`** | **`_dupenv_s`** | **`_dupenv_s`** | **`_wdupenv_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_dupenv_s`**|`<stdlib.h>`|
-|**`_wdupenv_s`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_dupenv_s`** | `<stdlib.h>` |
+| **`_wdupenv_s`** | `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

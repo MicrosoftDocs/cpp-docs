@@ -36,9 +36,9 @@ Angle in radians.
 
 The **`tanh`** functions return the hyperbolic tangent of *`x`*. There's no error return.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-------------------------|
-|± `QNAN`,`IND`|none|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
 
 ## Remarks
 
@@ -50,10 +50,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C)|
-|-------------|---------------------|-|
-|**`tanh`**, **`tanhf`**, **`tanhl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`tanh()`** macro | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C) |
+|---|---|---|
+| **`tanh`**, **`tanhf`**, **`tanhl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`tanh`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

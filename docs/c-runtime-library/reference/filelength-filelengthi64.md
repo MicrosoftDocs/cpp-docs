@@ -40,10 +40,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_filelength`**|\<io.h>|
-|**`_filelengthi64`**|\<io.h>|
+| Function | Required header |
+|---|---|
+| **`_filelength`** | \<io.h> |
+| **`_filelengthi64`** | \<io.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

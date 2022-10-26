@@ -34,9 +34,9 @@ The maximum number of bytes in a multibyte character for the current thread loca
 
 ## Remarks
 
-`___mb_cur_max_func` is an internal function that the CRT uses to retrieve the current value of the [`MB_CUR_MAX`](./mb-cur-max.md) macro from thread local storage. We recommend that you use the `MB_CUR_MAX` macro in your code for portability.
+**`___mb_cur_max_func`** is an internal function that the CRT uses to retrieve the current value of the [`MB_CUR_MAX`](./mb-cur-max.md) macro from thread local storage. We recommend that you use the `MB_CUR_MAX` macro in your code for portability.
 
-The `__mb_cur_max` macro is a convenient way to call the `___mb_cur_max_func()` function. The `__p___mb_cur_max` function is defined for compatibility with Visual C++ 5.0 and earlier versions.
+The **`__mb_cur_max`** macro is a convenient way to call the **`___mb_cur_max_func`** function. The **`__p___mb_cur_max`** function is defined for compatibility with Visual C++ 5.0 and earlier versions.
 
 Internal CRT functions are implementation-specific and subject to change with each release. We don't recommend their use in your code.
 
@@ -44,9 +44,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`|\<ctype.h>, \<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`___mb_cur_max_func`**, **`___mb_cur_max_l_func`**, **`__p___mb_cur_max`** | \<ctype.h>, \<stdlib.h> |
 
 ## See also
 

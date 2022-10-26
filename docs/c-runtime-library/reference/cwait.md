@@ -42,12 +42,12 @@ The handle to the process to wait on (that is, the process that has to terminate
 
 When the specified process has successfully completed, returns the handle of the specified process and sets *`termstat`* to the result code that's returned by the specified process. Otherwise, returns -1 and sets `errno` as follows.
 
-|Value|Description|
-|-----------|-----------------|
-|`ECHILD`|No specified process exists, *`procHandle`* is invalid, or the call to the [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) or [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API failed.|
-|`EINVAL`|*`action`* is invalid.|
+| `errno` value | Description |
+|---|---|
+| `ECHILD` | No specified process exists, *`procHandle`* is invalid, or the call to the [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) or [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API failed. |
+| `EINVAL` | *`action`* is invalid. |
 
-For more information about these and other return codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -63,9 +63,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_cwait`**|\<process.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_cwait`** | \<process.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

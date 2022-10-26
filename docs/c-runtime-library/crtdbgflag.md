@@ -2,7 +2,7 @@
 description: "Learn more about: _crtDbgFlag"
 title: "_crtDbgFlag"
 ms.date: "11/04/2016"
-f1_keywords: ["_crtDbgFlag", "crtDbgFlag"]
+f1_keywords: ["_crtDbgFlag", "CRTDBG/_crtDbgFlag"]
 helpviewer_keywords: ["memory allocation, tracking flag", "crtDbgFlag constant", "_crtDbgFlag constant", "debug heap, tracking memory on", "debug heap, control flags", "enable memory allocation tracking flag", "memory, tracking on the debug heap"]
 ms.assetid: 9e7adb47-8ab9-4e19-81d5-e2f237979973
 ---

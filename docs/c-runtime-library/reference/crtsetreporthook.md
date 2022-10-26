@@ -54,9 +54,9 @@ For more information about using other hook-capable run-time functions and writi
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtSetReportHook`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtSetReportHook`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

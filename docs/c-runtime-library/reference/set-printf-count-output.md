@@ -37,9 +37,9 @@ Because of security reasons, support for the **%n** format specifier is disabled
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_set_printf_count_output`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`_set_printf_count_output`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
