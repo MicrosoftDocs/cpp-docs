@@ -41,8 +41,8 @@ The current version of this function doesn't conform to the C Standard.
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fwide`**|\<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`fwide`** | \<wchar.h> |
 
 For more information, see [Compatibility](../compatibility.md).

@@ -41,9 +41,9 @@ The value of *`category`* must have been returned by an earlier successful call 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`towctrans`**|\<wctype.h>|
+| Routine | Required header |
+|---|---|
+| **`towctrans`** | \<wctype.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

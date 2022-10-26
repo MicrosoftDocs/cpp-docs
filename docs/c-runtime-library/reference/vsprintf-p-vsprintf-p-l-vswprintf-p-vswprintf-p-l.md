@@ -83,17 +83,17 @@ If the *`buffer`* or *`format`* parameters are `NULL` pointers, if count is zero
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vstprintf_p`|**`_vsprintf_p`**|**`_vsprintf_p`**|**`_vswprintf_p`**|
-|`_vstprintf_p_l`|**`_vsprintf_p_l`**|**`_vsprintf_p_l`**|**`_vswprintf_p_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vstprintf_p` | **`_vsprintf_p`** | **`_vsprintf_p`** | **`_vswprintf_p`** |
+| `_vstprintf_p_l` | **`_vsprintf_p_l`** | **`_vsprintf_p_l`** | **`_vswprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`_vsprintf_p`**, **`_vsprintf_p_l`**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|**`_vswprintf_p`**, **`_vswprintf_p_l`**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`_vsprintf_p`**, **`_vsprintf_p_l`** | \<stdio.h> and \<stdarg.h> | \<varargs.h>* |
+| **`_vswprintf_p`**, **`_vswprintf_p_l`** | \<stdio.h> or \<wchar.h>, and \<stdarg.h> | \<varargs.h>* |
 
 \* Required for UNIX V compatibility.
 

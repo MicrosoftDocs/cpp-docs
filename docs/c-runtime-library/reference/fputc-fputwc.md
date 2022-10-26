@@ -51,25 +51,25 @@ The versions with the `_nolock` suffix are identical except that they aren't pro
 
 Routine-specific remarks follow.
 
-|Routine|Remarks|
-|-------------|-------------|
-|**`fputc`**|Equivalent to `putc`, but implemented only as a function, rather than as a function and a macro.|
-|**`fputwc`**|Wide-character version of `fputc`. Writes *`c`* as a multibyte character or a wide character when *`stream`* is opened in text mode or binary mode, respectively.|
+| Routine | Remarks |
+|---|---|
+| **`fputc`** | Equivalent to `putc`, but implemented only as a function, rather than as a function and a macro. |
+| **`fputwc`** | Wide-character version of `fputc`. Writes *`c`* as a multibyte character or a wide character when *`stream`* is opened in text mode or binary mode, respectively. |
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_fputtc`|**`fputc`**|**`fputc`**|**`fputwc`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_fputtc` | **`fputc`** | **`fputc`** | **`fputwc`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fputc`**|\<stdio.h>|
-|**`fputwc`**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`fputc`** | \<stdio.h> |
+| **`fputwc`** | \<stdio.h> or \<wchar.h> |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

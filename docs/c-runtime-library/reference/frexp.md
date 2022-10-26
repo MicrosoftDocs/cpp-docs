@@ -67,10 +67,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`frexp`**, **`frexpf`**, **`frexpl`**|\<math.h>|
-|**`frexp`** macro | \<tgmath.h> |
+| Function | Required header |
+|---|---|
+| **`frexp`**, **`frexpf`**, **`frexpl`** | \<math.h> |
+| **`frexp`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

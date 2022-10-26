@@ -40,14 +40,14 @@ For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlis
 
 The **`signal`** function enables a process to choose one of several ways to handle an interrupt signal from the operating system. The *`sig`* argument is the interrupt to which **`signal`** responds; it must be one of the following manifest constants, which are defined in **`SIGNAL.H`**.
 
-|*`sig`* value|Description|
-|-----------------|-----------------|
-|`SIGABRT`|Abnormal termination|
-|`SIGFPE`|Floating-point error|
-|`SIGILL`|Illegal instruction|
-|`SIGINT`|CTRL+C signal|
-|`SIGSEGV`|Illegal storage access|
-|`SIGTERM`|Termination request|
+| *`sig`* value | Description |
+|---|---|
+| `SIGABRT` | Abnormal termination |
+| `SIGFPE` | Floating-point error |
+| `SIGILL` | Illegal instruction |
+| `SIGINT` | CTRL+C signal |
+| `SIGSEGV` | Illegal storage access |
+| `SIGTERM` | Termination request |
 
 If *`sig`* isn't one of the above values, the invalid parameter handler is invoked, as defined in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `SIG_ERR`.
 
@@ -90,9 +90,9 @@ Signal settings aren't preserved in spawned processes that are created by calls 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`signal`**|`<signal.h>`|
+| Routine | Required header |
+|---|---|
+| **`signal`** | `<signal.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

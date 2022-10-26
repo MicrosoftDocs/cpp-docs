@@ -10,7 +10,7 @@ ms.assetid: bc285106-383d-44cb-91bf-276ad7de57bf
 
 ## Syntax
 
-```
+```C
 #include <time.h>
 ```
 

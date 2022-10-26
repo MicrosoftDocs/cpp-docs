@@ -103,7 +103,7 @@ By default, this function's global state is scoped to the application. To change
 ### Generic-text routine mappings
 
 | `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
-|--|--|--|--|
+|---|---|---|---|
 | **`_tcsncat`** | **`strncat`** | **`_mbsnbcat`** | **`wcsncat`** |
 | **`_tcsncat_l`** | **`_strncat_l`** | **`_mbsnbcat_l`** | **`_wcsncat_l`** |
 
@@ -112,12 +112,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strncat`**|\<string.h>|
-|**`wcsncat`**|\<string.h> or \<wchar.h>|
-|**`_mbsncat`**|\<mbstring.h>|
-|**`_mbsncat_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`strncat`** | \<string.h> |
+| **`wcsncat`** | \<string.h> or \<wchar.h> |
+| **`_mbsncat`** | \<mbstring.h> |
+| **`_mbsncat_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

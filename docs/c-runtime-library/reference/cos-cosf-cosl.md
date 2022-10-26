@@ -35,10 +35,10 @@ Angle in radians.
 
 The cosine of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|± QNAN, IND|none|`_DOMAIN`|
-|± INF|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
+| ± INF | `INVALID` | `_DOMAIN` |
 
 ## Remarks
 
@@ -50,10 +50,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------------|---------------------|-|
-|**`cos`**, **`cosh`**, **`cosf`**|\<math.h>|\<cmath> or \<math.h>|
-|**cos()** macro | \<tgmath.h> ||
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`cos`**, **`cosh`**, **`cosf`** | \<math.h> | \<cmath> or \<math.h> |
+| **cos()** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

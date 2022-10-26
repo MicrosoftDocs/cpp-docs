@@ -66,17 +66,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tstol`**|**`atol`**|**`atol`**|**`_wtol`**|
-|**`_ttol`**|**`atol`**|**`atol`**|**`_wtol`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tstol`** | **`atol`** | **`atol`** | **`_wtol`** |
+| **`_ttol`** | **`atol`** | **`atol`** | **`_wtol`** |
 
 ## Requirements
 
-|Routines|Required header|
-|--------------|---------------------|
-|**`atol`**|`<stdlib.h>`|
-|**`_atol_l`**, **`_wtol`**, **`_wtol_l`**|`<stdlib.h>` and `<wchar.h>`|
+| Routines | Required header |
+|---|---|
+| **`atol`** | `<stdlib.h>` |
+| **`_atol_l`**, **`_wtol`**, **`_wtol_l`** | `<stdlib.h>` and `<wchar.h>` |
 
 ## Example
 

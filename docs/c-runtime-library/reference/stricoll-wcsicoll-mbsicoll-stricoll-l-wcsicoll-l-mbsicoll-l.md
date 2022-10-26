@@ -61,12 +61,12 @@ The locale to use.
 
 Each of these functions returns a value indicating the relationship of *`string1`* to *`string2`*, as follows.
 
-|Return value|Relationship of string1 to string2|
-|------------------|----------------------------------------|
-|< 0|*`string1`* less than *`string2`*|
-|0|*`string1`* identical to *`string2`*|
-|> 0|*`string1`* greater than *`string2`*|
-|`_NLSCMPERROR`|An error occurred.|
+| Return value | Relationship of *`string1`* to *`string2`* |
+|---|---|
+| < 0 | *`string1`* less than *`string2`* |
+| 0 | *`string1`* identical to *`string2`* |
+| > 0 | *`string1`* greater than *`string2`* |
+| `_NLSCMPERROR` | An error occurred. |
 
 Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either \<string.h> or \<mbstring.h>. **`_wcsicoll`** can fail if either *`string1`* or *`string2`* contains wide-character codes outside the domain of the collating sequence. When an error occurs, **`_wcsicoll`** may set `errno` to `EINVAL`. To check for an error on a call to **`_wcsicoll`**, set `errno` to 0 and then check `errno` after calling **`_wcsicoll`**.
 
@@ -82,17 +82,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsicoll`|**`_stricoll`**|**`_mbsicoll`**|**`_wcsicoll`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsicoll` | **`_stricoll`** | **`_mbsicoll`** | **`_wcsicoll`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_stricoll`**, **`_stricoll_l`**|\<string.h>|
-|**`_wcsicoll`**, **`_wcsicoll_l`**|\<wchar.h>, \<string.h>|
-|**`_mbsicoll`**, **`_mbsicoll_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_stricoll`**, **`_stricoll_l`** | \<string.h> |
+| **`_wcsicoll`**, **`_wcsicoll_l`** | \<wchar.h>, \<string.h> |
+| **`_mbsicoll`**, **`_mbsicoll_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

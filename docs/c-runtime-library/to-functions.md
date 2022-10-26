@@ -21,15 +21,15 @@ Each of the **`to`** functions and its associated macro, if any, converts a sing
 
 The **`to`** functions and macro conversions are as follows.
 
-|Routine|Macro|Description|
-|-------------|-----------|-----------------|
-|`__toascii`|`__toascii`|Converts `c` to ASCII character|
-|`tolower`|`tolower`|Converts `c` to lowercase if appropriate|
-|`_tolower`|`_tolower`|Converts `c` to lowercase|
-|`towlower`|None|Converts `c` to corresponding wide-character lowercase letter|
-|`toupper`|`toupper`|Converts `c` to uppercase if appropriate|
-|`_toupper`|`_toupper`|Converts `c` to uppercase|
-|`towupper`|None|Converts c to corresponding wide-character uppercase letter|
+| Routine | Macro | Description |
+|---|---|---|
+| `__toascii` | `__toascii` | Converts `c` to ASCII character |
+| `tolower` | `tolower` | Converts `c` to lowercase if appropriate |
+| `_tolower` | `_tolower` | Converts `c` to lowercase |
+| `towlower` | None | Converts `c` to corresponding wide-character lowercase letter |
+| `toupper` | `toupper` | Converts `c` to uppercase if appropriate |
+| `_toupper` | `_toupper` | Converts `c` to uppercase |
+| `towupper` | None | Converts c to corresponding wide-character uppercase letter |
 
 To use the function versions of the **`to`** routines that are also defined as macros, either remove the macro definitions with `#undef` directives or don't include CTYPE.H. If you use the /Za compiler option, the compiler uses the function version of `toupper` or `tolower`. Declarations of the `toupper` and `tolower` functions are in STDLIB.H.
 

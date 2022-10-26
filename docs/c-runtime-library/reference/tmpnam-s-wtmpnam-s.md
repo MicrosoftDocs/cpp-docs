@@ -70,16 +70,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_ttmpnam_s`|**`tmpnam_s`**|**`tmpnam_s`**|**`_wtmpnam_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_ttmpnam_s` | **`tmpnam_s`** | **`tmpnam_s`** | **`_wtmpnam_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`tmpnam_s`**|\<stdio.h>|
-|**`_wtmpnam_s`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`tmpnam_s`** | \<stdio.h> |
+| **`_wtmpnam_s`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

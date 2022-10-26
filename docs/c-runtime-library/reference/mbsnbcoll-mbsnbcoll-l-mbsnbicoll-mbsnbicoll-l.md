@@ -59,11 +59,11 @@ Locale to use.
 
 The return value indicates the relation of the substrings of *`string1`* and *`string2`*.
 
-|Return value|Description|
-|------------------|-----------------|
-|< 0|*`string1`* substring less than *`string2`* substring.|
-|0|*`string1`* substring identical to *`string2`* substring.|
-|> 0|*`string1`* substring greater than *`string2`* substring.|
+| Return value | Description |
+|---|---|
+| < 0 | *`string1`* substring less than *`string2`* substring. |
+| 0 | *`string1`* substring identical to *`string2`* substring. |
+| > 0 | *`string1`* substring greater than *`string2`* substring. |
 
 If *`string1`* or *`string2`* is `NULL` or *`count`* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`. To use `_NLSCMPERROR`, include either String.h or Mbstring.h.
 
@@ -81,21 +81,21 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsncoll`|[`_strncoll`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|**`_mbsnbcoll`**|[`_wcsncoll`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|
-|`_tcsncoll_l`|[`_strncoll`, `_wcsncoll`, `_mbsncoll`, `_strncoll_l`, `_wcsncoll_l`, `_mbsncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|**`_mbsnbcoll_l`**|[`_wcsncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|
-|`_tcsnicoll`|[`_strnicoll`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|**`_mbsnbicoll`**|[`_wcsnicoll`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|
-|`_tcsnicoll_l`|[`_strnicoll_l`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|**`_mbsnbicoll_l`**|[`_wcsnicoll_l`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncoll` | [`_strncoll`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | **`_mbsnbcoll`** | [`_wcsncoll`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) |
+| `_tcsncoll_l` | [`_strncoll`, `_wcsncoll`, `_mbsncoll`, `_strncoll_l`, `_wcsncoll_l`, `_mbsncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | **`_mbsnbcoll_l`** | [`_wcsncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) |
+| `_tcsnicoll` | [`_strnicoll`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) | **`_mbsnbicoll`** | [`_wcsnicoll`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) |
+| `_tcsnicoll_l` | [`_strnicoll_l`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) | **`_mbsnbicoll_l`** | [`_wcsnicoll_l`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnbcoll`**|\<mbstring.h>|
-|**`_mbsnbcoll_l`**|\<mbstring.h>|
-|**`_mbsnbicoll`**|\<mbstring.h>|
-|**`_mbsnbicoll_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnbcoll`** | \<mbstring.h> |
+| **`_mbsnbcoll_l`** | \<mbstring.h> |
+| **`_mbsnbicoll`** | \<mbstring.h> |
+| **`_mbsnbicoll_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

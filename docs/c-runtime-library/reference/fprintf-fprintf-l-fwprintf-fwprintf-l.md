@@ -75,19 +75,19 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_ftprintf`**|**`fprintf`**|**`fprintf`**|**`fwprintf`**|
-|**`_ftprintf_l`**|**`_fprintf_l`**|**`_fprintf_l`**|**`_fwprintf_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_ftprintf`** | **`fprintf`** | **`fprintf`** | **`fwprintf`** |
+| **`_ftprintf_l`** | **`_fprintf_l`** | **`_fprintf_l`** | **`_fwprintf_l`** |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fprintf`**, **`_fprintf_l`**|`<stdio.h>`|
-|**`fwprintf`**, **`_fwprintf_l`**|`<stdio.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`fprintf`**, **`_fprintf_l`** | `<stdio.h>` |
+| **`fwprintf`**, **`_fwprintf_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -38,9 +38,9 @@ For more information about heap state functions and the **`_CrtMemState`** struc
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtDumpMemoryLeaks`**|`<crtdbg.h>`|
+| Routine | Required header |
+|---|---|
+| **`_CrtDumpMemoryLeaks`** | `<crtdbg.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

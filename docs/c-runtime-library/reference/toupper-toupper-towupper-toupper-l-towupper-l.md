@@ -64,21 +64,21 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_totupper`|**`toupper`**|**`_mbctoupper`**|**`towupper`**|
-|`_totupper_l`|**`_toupper_l`**|**`_mbctoupper_l`**|**`_towupper_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_totupper` | **`toupper`** | **`_mbctoupper`** | **`towupper`** |
+| `_totupper_l` | **`_toupper_l`** | **`_mbctoupper_l`** | **`_towupper_l`** |
 
 > [!NOTE]
 > **`_toupper_l`** and **`_towupper_l`** have no locale dependence and are not meant to be called directly. They are provided for internal use by **`_totupper_l`**.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`toupper`**|\<ctype.h>|
-|**`_toupper`**|\<ctype.h>|
-|**`towupper`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`toupper`** | \<ctype.h> |
+| **`_toupper`** | \<ctype.h> |
+| **`towupper`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

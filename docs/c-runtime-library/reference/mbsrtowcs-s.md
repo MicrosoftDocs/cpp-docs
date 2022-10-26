@@ -59,12 +59,12 @@ A pointer to an `mbstate_t` conversion state object. If this value is a null poi
 
 Zero if conversion is successful, or an error code on failure.
 
-|Error condition|Return value and `errno`|
-|---------------------|------------------------------|
-|*`wcstr`* is a null pointer and *`sizeInWords`* > 0|`EINVAL`|
-|*`mbstr`* is a null pointer|`EINVAL`|
-|The string indirectly pointed to by *`mbstr`* contains a multibyte sequence that isn't valid for the current locale.|`EILSEQ`|
-|The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; for more information, see Remarks)|`ERANGE`|
+| Error condition | Return value and `errno` |
+|---|---|
+| *`wcstr`* is a null pointer and *`sizeInWords`* > 0 | `EINVAL` |
+| *`mbstr`* is a null pointer | `EINVAL` |
+| The string indirectly pointed to by *`mbstr`* contains a multibyte sequence that isn't valid for the current locale. | `EILSEQ` |
+| The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; for more information, see Remarks) | `ERANGE` |
 
 If any one of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
 
@@ -107,9 +107,9 @@ The **`mbsrtowcs_s`** function is multithread safe if no function in the current
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`mbsrtowcs_s`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`mbsrtowcs_s`** | \<wchar.h> |
 
 ## See also
 

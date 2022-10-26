@@ -44,11 +44,11 @@ Zero if successful. The return value is an error code if there's a failure. Erro
 
 ### Error conditions
 
-|*`tmDest`*|*`sourceTime`*|Return|Value in *`tmDest`*|
-|-----------|------------|------------|--------------------|
-|`NULL`|any|`EINVAL`|Not modified.|
-|Not `NULL` (points to valid memory)|`NULL`|`EINVAL`|All fields set to -1.|
-|Not `NULL`|< 0|`EINVAL`|All fields set to -1.|
+| *`tmDest`* | *`sourceTime`* | Return | Value in *`tmDest`* |
+|---|---|---|---|
+| `NULL` | any | `EINVAL` | Not modified. |
+| Not `NULL` (points to valid memory) | `NULL` | `EINVAL` | All fields set to -1. |
+| Not `NULL` | < 0 | `EINVAL` | All fields set to -1. |
 
 The first two error conditions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
@@ -61,17 +61,17 @@ The **`_gmtime32_s`** function breaks down the *`sourceTime`* value and stores i
 
 Each of the structure fields is of type **`int`**, as shown in the following table.
 
-|Field|Description|
-|-|-|
-|**`tm_sec`**|Seconds after minute (0 - 59).|
-|**`tm_min`**|Minutes after hour (0 - 59).|
-|**`tm_hour`**|Hours since midnight (0 - 23).|
-|**`tm_mday`**|Day of month (1 - 31).|
-|**`tm_mon`**|Month (0 - 11; January = 0).|
-|**`tm_year`**|Year (current year minus 1900).|
-|**`tm_wday`**|Day of week (0 - 6; Sunday = 0).|
-|**`tm_yday`**|Day of year (0 - 365; January 1 = 0).|
-|**`tm_isdst`**|Always 0 for **`gmtime_s`**.|
+| Field | Description |
+|---|---|
+| **`tm_sec`** | Seconds after minute (0 - 59). |
+| **`tm_min`** | Minutes after hour (0 - 59). |
+| **`tm_hour`** | Hours since midnight (0 - 23). |
+| **`tm_mday`** | Day of month (1 - 31). |
+| **`tm_mon`** | Month (0 - 11; January = 0). |
+| **`tm_year`** | Year (current year minus 1900). |
+| **`tm_wday`** | Day of week (0 - 6; Sunday = 0). |
+| **`tm_yday`** | Day of year (0 - 365; January 1 = 0). |
+| **`tm_isdst`** | Always 0 for **`gmtime_s`**. |
 
 **`_gmtime64_s`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas **`gmtime32_s`** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both these functions.
 
@@ -81,9 +81,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------------|---------------------|-|
-|**`gmtime_s`**, **`_gmtime32_s`**, **`_gmtime64_s`**|`<time.h>`|`<ctime>` or `<time.h>`|
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`gmtime_s`**, **`_gmtime32_s`**, **`_gmtime64_s`** | `<time.h>` | `<ctime>` or `<time.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

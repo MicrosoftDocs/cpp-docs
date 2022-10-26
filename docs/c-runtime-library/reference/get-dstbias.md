@@ -40,9 +40,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_get_dstbias`**|`<time.h>`|
+| Routine | Required header |
+|---|---|
+| **`_get_dstbias`** | `<time.h>` |
 
 For more information, see [Compatibility](../compatibility.md).
 

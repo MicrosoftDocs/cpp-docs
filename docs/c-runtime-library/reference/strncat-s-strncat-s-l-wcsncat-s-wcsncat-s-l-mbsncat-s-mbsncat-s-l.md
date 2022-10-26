@@ -123,11 +123,11 @@ Returns 0 if successful, an error code on failure.
 
 ### Error conditions
 
-|*`strDestination`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDestination`*|
-|----------------------|------------------------|-----------------|------------------|----------------------------------|
-|`NULL` or unterminated|any|any|`EINVAL`|not modified|
-|any|any|`NULL`|`EINVAL`|not modified|
-|any|0, or too small|any|`ERANGE`|not modified|
+| *`strDestination`* | *`numberOfElements`* | *`strSource`* | Return value | Contents of *`strDestination`* |
+|---|---|---|---|---|
+| `NULL` or unterminated | any | any | `EINVAL` | not modified |
+| any | any | `NULL` | `EINVAL` | not modified |
+| any | 0, or too small | any | `ERANGE` | not modified |
 
 ## Remarks
 
@@ -173,20 +173,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsncat_s`|**`strncat_s`**|**`_mbsnbcat_s`**|**`wcsncat_s`**|
-|`_tcsncat_s_l`|**`_strncat_s_l`**|**`_mbsnbcat_s_l`**|**`_wcsncat_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncat_s` | **`strncat_s`** | **`_mbsnbcat_s`** | **`wcsncat_s`** |
+| `_tcsncat_s_l` | **`_strncat_s_l`** | **`_mbsnbcat_s_l`** | **`_wcsncat_s_l`** |
 
 **`_strncat_s_l`** and **`_wcsncat_s_l`** have no locale dependence; they're only provided for **`_tcsncat_s_l`**.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strncat_s`**|\<string.h>|
-|**`wcsncat_s`**|\<string.h> or \<wchar.h>|
-|**`_mbsncat_s`**, **`_mbsncat_s_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`strncat_s`** | \<string.h> |
+| **`wcsncat_s`** | \<string.h> or \<wchar.h> |
+| **`_mbsncat_s`**, **`_mbsncat_s_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

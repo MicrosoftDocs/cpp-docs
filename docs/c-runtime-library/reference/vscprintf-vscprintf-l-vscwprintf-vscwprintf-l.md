@@ -68,17 +68,17 @@ Each *`argument`* (if any) is converted according to the corresponding format sp
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vsctprintf`|**`_vscprintf`**|**`_vscprintf`**|**`_vscwprintf`**|
-|`_vsctprintf_l`|**`_vscprintf_l`**|**`_vscprintf_l`**|**`_vscwprintf_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vsctprintf` | **`_vscprintf`** | **`_vscprintf`** | **`_vscwprintf`** |
+| `_vsctprintf_l` | **`_vscprintf_l`** | **`_vscprintf_l`** | **`_vscwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_vscprintf`**, **`_vscprintf_l`**|\<stdio.h>|
-|**`_vscwprintf`**, **`_vscwprintf_l`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_vscprintf`**, **`_vscprintf_l`** | \<stdio.h> |
+| **`_vscwprintf`**, **`_vscwprintf_l`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

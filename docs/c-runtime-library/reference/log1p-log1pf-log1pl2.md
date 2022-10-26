@@ -49,16 +49,16 @@ If successful, returns the natural (base-*e*) log of (*`x`* + 1).
 
 Otherwise, may return one of the following values:
 
-|Input|Result|SEH exception|errno|
-|-----------|------------|-------------------|-----------|
-|+INF|+INF|||
-|Denormals|Same as input|UNDERFLOW||
-|±0|Same as input|||
-|-1|-INF|DIVBYZERO|ERANGE|
-|< -1|NaN|INVALID|EDOM|
-|-INF|NaN|INVALID|EDOM|
-|±SNaN|Same as input|INVALID||
-|±QNaN, indefinite|Same as input|||
+| Input | Result | SEH exception | errno |
+|---|---|---|---|
+| +INF | +INF |  |  |
+| Denormals | Same as input | `UNDERFLOW` |  |
+| ±0 | Same as input |  |  |
+| -1 | -INF | `DIVBYZERO` | `ERANGE` |
+| < -1 | NaN | `INVALID` | `EDOM` |
+| -INF | NaN | `INVALID` | `EDOM` |
+| ±SNaN | Same as input | `INVALID` |  |
+| ±QNaN, indefinite | Same as input |  |  |
 
 The `errno` value is set to ERANGE if *`x`* = -1. The `errno` value is set to `EDOM` if *`x`* < -1.
 
@@ -76,10 +76,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`log1p`**, **`log1pf`**, **`log1pl`**|\<math.h>|\<cmath>|
-|**`log1p`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`log1p`**, **`log1pf`**, **`log1pl`** | \<math.h> | \<cmath> |
+| **`log1p`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

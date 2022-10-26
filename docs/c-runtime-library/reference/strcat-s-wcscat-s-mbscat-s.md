@@ -84,11 +84,11 @@ Zero if successful; an error code on failure.
 
 ### Error conditions
 
-|*`strDestination`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDestination`*|
-|----------------------|------------------------|-----------------|------------------|----------------------------------|
-|`NULL` or unterminated|any|any|`EINVAL`|not modified|
-|any|any|`NULL`|`EINVAL`|*`strDestination[0]`* set to 0|
-|any|0, or too small|any|`ERANGE`|*`strDestination[0]`* set to 0|
+| *`strDestination`* | *`numberOfElements`* | *`strSource`* | Return value | Contents of *`strDestination`* |
+|---|---|---|---|---|
+| `NULL` or unterminated | any | any | `EINVAL` | not modified |
+| any | any | `NULL` | `EINVAL` | *`strDestination[0]`* set to 0 |
+| any | 0, or too small | any | `ERANGE` | *`strDestination[0]`* set to 0 |
 
 ## Remarks
 
@@ -117,17 +117,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcscat_s`**|**`strcat_s`**|**`_mbscat_s`**|**`wcscat_s`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscat_s` | **`strcat_s`** | **`_mbscat_s`** | **`wcscat_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strcat_s`**|`<string.h>`|
-|**`wcscat_s`**|`<string.h>` or `<wchar.h>`|
-|**`_mbscat_s`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strcat_s`** | `<string.h>` |
+| **`wcscat_s`** | `<string.h>` or `<wchar.h>` |
+| **`_mbscat_s`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

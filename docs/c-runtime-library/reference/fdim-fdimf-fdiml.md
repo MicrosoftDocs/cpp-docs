@@ -57,18 +57,18 @@ The second value.
 
 Returns the positive difference between *`x`* and *`y`*:
 
-|Return value|Scenario|
-|------------------|--------------|
-|x-y|if x > y|
-|0|if x <= y|
+| Return value | Scenario |
+|---|---|
+| `x-y` | if *`x`* > *`y`* |
+| 0 | if *`x`* <= *`y`* |
 
 Otherwise, may return one of the following errors:
 
-|Issue|Return|
-|-----------|------------|
-|Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
-|Underflow range error|correct value (after rounding)|
-|*`x`* or *`y`* is NaN|NaN|
+| Issue | Return |
+|---|---|
+| Overflow range error | +HUGE_VAL, +HUGE_VALF, or +HUGE_VALL |
+| Underflow range error | correct value (after rounding) |
+| *`x`* or *`y`* is NaN | NaN |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -82,10 +82,10 @@ Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`fdim`**, **`fdimf`**, **`fdiml`**|\<math.h>|\<cmath>|
-|**`fdim`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`fdim`**, **`fdimf`**, **`fdiml`** | \<math.h> | \<cmath> |
+| **`fdim`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

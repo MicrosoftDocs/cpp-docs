@@ -41,9 +41,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`clearerr_s`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`clearerr_s`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

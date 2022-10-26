@@ -35,10 +35,10 @@ Floating-point value.
 
 The **`acosh`** functions return the inverse hyperbolic cosine (arc hyperbolic cosine) of *`x`*. These functions are valid over the domain *`x`* ≥ 1. If *`x`* is less than 1, `errno` is set to `EDOM`, and the result is a quiet NaN. If *`x`* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
-|Input|SEH Exception|`_matherr` Exception|
-|-----------|-------------------|--------------------------|
-|± QNAN, IND, INF|none|none|
-|*`x`* < 1|none|none|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND, INF | none | none |
+| *`x`* < 1 | none | none |
 
 ## Remarks
 
@@ -50,10 +50,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`acosh`**, **`acoshf`**, **`acoshl`**|\<math.h>|\<cmath>|
-|**acosh()** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`acosh`**, **`acoshf`**, **`acoshl`** | \<math.h> | \<cmath> |
+| **`acosh`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

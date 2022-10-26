@@ -12,7 +12,7 @@ Disables performance-critical locking in I/O operations.
 
 ## Syntax
 
-```
+```C
 #define _CRT_DISABLE_PERFCRIT_LOCKS
 ```
 

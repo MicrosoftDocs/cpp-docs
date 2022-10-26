@@ -64,10 +64,10 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstof`|**`strtof`**|**`strtof`**|**`wcstof`**|
-|`_tcstof_l`|**`_strtof_l`**|**`_strtof_l`**|**`_wcstof_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstof` | **`strtof`** | **`strtof`** | **`wcstof`** |
+| `_tcstof_l` | **`_strtof_l`** | **`_strtof_l`** | **`_wcstof_l`** |
 
 The `LC_NUMERIC` category setting of the current locale determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The functions that don't have the `_l` suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../locale.md).
 
@@ -83,10 +83,10 @@ The UCRT versions of these functions don't support conversion of Fortran-style (
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtof`**, **`_strtof_l`**|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
-|**`wcstof`**, **`_wcstof_l`**|C: \<stdlib.h> or \<wchar.h> C++: \<cstdlib>, \<stdlib.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`strtof`**, **`_strtof_l`** | C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h> |
+| **`wcstof`**, **`_wcstof_l`** | C: \<stdlib.h> or \<wchar.h> C++: \<cstdlib>, \<stdlib.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

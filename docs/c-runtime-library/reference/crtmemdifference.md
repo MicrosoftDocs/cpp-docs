@@ -52,9 +52,9 @@ For more information about heap state functions and the **`_CrtMemState`** struc
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_CrtMemDifference`**|`<crtdbg.h>`|`<errno.h>`|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_CrtMemDifference`** | `<crtdbg.h>` | `<errno.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

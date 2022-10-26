@@ -39,11 +39,11 @@ Number of bytes to compare.
 
 The return value indicates the relationship between the substrings.
 
-|Return value|Description|
-|------------------|-----------------|
-|< 0|*`string1`* substring less than *`string2`* substring.|
-|0|*`string1`* substring identical to *`string2`* substring.|
-|> 0|*`string1`* substring greater than *`string2`* substring.|
+| Return value | Description |
+|---|---|
+| < 0 | *`string1`* substring less than *`string2`* substring. |
+| 0 | *`string1`* substring identical to *`string2`* substring. |
+| > 0 | *`string1`* substring greater than *`string2`* substring. |
 
 On an error, **`_mbsnbicmp`** returns `_NLSCMPERROR`, which is defined in String.h and Mbstring.h.
 
@@ -63,16 +63,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsnicmp`|`_strnicmp`|**`_mbsnbicmp`**|`_wcsnicmp`|
-|`_tcsnicmp_l`|`_strnicmp_l`|**`_mbsnbicmp_l`**|`_wcsnicmp_l`|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsnicmp` | `_strnicmp` | **`_mbsnbicmp`** | `_wcsnicmp` |
+| `_tcsnicmp_l` | `_strnicmp_l` | **`_mbsnbicmp_l`** | `_wcsnicmp_l` |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnbicmp`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnbicmp`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

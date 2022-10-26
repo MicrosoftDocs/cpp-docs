@@ -76,10 +76,10 @@ These functions validate their parameters. If either *`cmdname`* or *`arg0`* is 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_spawnlpe`**|\<process.h>|
-|**`_wspawnlpe`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_spawnlpe`** | \<process.h> |
+| **`_wspawnlpe`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

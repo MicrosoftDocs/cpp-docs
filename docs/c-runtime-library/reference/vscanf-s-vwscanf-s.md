@@ -57,18 +57,18 @@ For more information, see [scanf Width Specification](../scanf-width-specificati
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtscanf_s`|**`vscanf_s`**|**`vscanf_s`**|**`vwscanf_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vtscanf_s` | **`vscanf_s`** | **`vscanf_s`** | **`vwscanf_s`** |
 
 For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`vscanf_s`**|\<stdio.h>|
-|**`wscanf_s`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`vscanf_s`** | \<stdio.h> |
+| **`wscanf_s`** | \<stdio.h> or \<wchar.h> |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -53,10 +53,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header (C)|Required header (C++)|
-|--------------|---------------------|-|
-|**`remquo`**, **`remquof`**, **`remquol`**|\<math.h>|\<cmath> or \<math.h>|
-|**`remquo`** macro | \<tgmath.h> ||
+| Function | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`remquo`**, **`remquof`**, **`remquol`** | \<math.h> | \<cmath> or \<math.h> |
+| **`remquo`** macro | \<tgmath.h> |  |
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

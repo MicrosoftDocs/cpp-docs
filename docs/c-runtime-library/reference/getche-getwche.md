@@ -38,16 +38,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_gettche`|**`_getche`**|**`_getche`**|**`_getwche`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_gettche` | **`_getche`** | **`_getche`** | **`_getwche`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getche`**|\<conio.h>|
-|**`_getwche`**|\<conio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_getche`** | \<conio.h> |
+| **`_getwche`** | \<conio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

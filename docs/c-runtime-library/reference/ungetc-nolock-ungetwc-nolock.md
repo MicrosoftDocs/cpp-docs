@@ -49,16 +49,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_ungettc_nolock`|**`_ungetc_nolock`**|**`_ungetc_nolock`**|**`_ungetwc_nolock`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_ungettc_nolock` | **`_ungetc_nolock`** | **`_ungetc_nolock`** | **`_ungetwc_nolock`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_ungetc_nolock`**|\<stdio.h>|
-|**`_ungetwc_nolock`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_ungetc_nolock`** | \<stdio.h> |
+| **`_ungetwc_nolock`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

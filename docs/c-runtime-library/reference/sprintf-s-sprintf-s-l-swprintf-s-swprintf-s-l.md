@@ -100,17 +100,17 @@ There are versions of **`sprintf_s`** that offer more control over what happens 
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_stprintf_s`|**`sprintf_s`**|**`sprintf_s`**|**`swprintf_s`**|
-|`_stprintf_s_l`|**`_sprintf_s_l`**|**`_sprintf_s_l`**|**`_swprintf_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_stprintf_s` | **`sprintf_s`** | **`sprintf_s`** | **`swprintf_s`** |
+| `_stprintf_s_l` | **`_sprintf_s_l`** | **`_sprintf_s_l`** | **`_swprintf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`sprintf_s`**, **`_sprintf_s_l`**|C: \<stdio.h><br /><br /> C++: \<cstdio> or \<stdio.h>|
-|**`swprintf_s`**, **`_swprintf_s_l`**|C: \<stdio.h> or \<wchar.h><br /><br /> C++: \<cstdio>, \<cwchar>, \<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`sprintf_s`**, **`_sprintf_s_l`** | C: \<stdio.h><br /><br /> C++: \<cstdio> or \<stdio.h> |
+| **`swprintf_s`**, **`_swprintf_s_l`** | C: \<stdio.h> or \<wchar.h><br /><br /> C++: \<cstdio>, \<cwchar>, \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

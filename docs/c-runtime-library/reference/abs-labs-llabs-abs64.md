@@ -47,10 +47,10 @@ Because C++ allows overloading, you can call overloads of **`abs`** that take an
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------------|-----------------------|---------------------------|
-|**`abs`**, **`labs`**, **`llabs`**|`<math.h>` or `<stdlib.h>`|`<cmath>`, `<cstdlib>`, `<stdlib.h>` or `<math.h>`|
-|**`_abs64`**|`<stdlib.h>`|`<cstdlib>` or `<stdlib.h>`|
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`abs`**, **`labs`**, **`llabs`** | `<math.h>` or `<stdlib.h>` | `<cmath>`, `<cstdlib>`, `<stdlib.h>` or `<math.h>` |
+| **`_abs64`** | `<stdlib.h>` | `<cstdlib>` or `<stdlib.h>` |
 
 To use the overloaded versions of **`abs`** in C++, you must include the `<cmath>` header.
 

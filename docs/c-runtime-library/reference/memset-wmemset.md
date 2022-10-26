@@ -53,10 +53,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memset`**|`<memory.h>` or `<string.h>`|
-|**`wmemset`**|`<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`memset`** | `<memory.h>` or `<string.h>` |
+| **`wmemset`** | `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -33,9 +33,9 @@ Returns 0 if successful, an error code on failure.
 
 ### Error conditions
 
-|*`pFilePtr`*|Return value|Contents of *`pFilePtr`*|
-|----------------|----------------------|---------------------------------|
-|`NULL`|`EINVAL`|not changed|
+| *`pFilePtr`* | Return value | Contents of *`pFilePtr`* |
+|---|---|---|
+| `NULL` | `EINVAL` | not changed |
 
 If the above parameter validation error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and the return value is `EINVAL`.
 
@@ -51,9 +51,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`tmpfile_s`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`tmpfile_s`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

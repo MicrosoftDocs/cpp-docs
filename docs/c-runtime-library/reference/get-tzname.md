@@ -38,11 +38,11 @@ The size of the *`timeZoneName`* character string in bytes.
 *`index`*\
 The *`index`* of one of the two time zone names to retrieve.
 
-|*`index`*|Contents of *`timeZoneName`*|*`timeZoneName`* default value|
-|-|-|-|
-|0|Time zone name|`"PST"`|
-|1|Daylight standard time zone name|`"PDT"`|
-|> 1 or < 0|`errno` set to `EINVAL`|not modified|
+| *`index`* | Contents of *`timeZoneName`* | *`timeZoneName`* default value |
+|---|---|---|
+| 0 | Time zone name | `"PST"` |
+| 1 | Daylight standard time zone name | `"PDT"` |
+| > 1 or < 0 | `errno` set to `EINVAL` | not modified |
 
 Unless explicitly updated during runtime, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. For more information, see the [Remarks](#remarks).
 
@@ -56,13 +56,13 @@ If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than ze
 
 ### Error conditions
 
-|*`pReturnValue`*|*`timeZoneName`*|*`sizeInBytes`*|*`index`*|Return value|Contents of *`timeZoneName`*|
-|--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
-|size of TZ name|`NULL`|0|0 or 1|0|not modified|
-|size of TZ name|any|> 0|0 or 1|0|TZ name|
-|not modified|`NULL`|> 0|any|`EINVAL`|not modified|
-|not modified|any|zero|any|`EINVAL`|not modified|
-|not modified|any|> 0|> 1|`EINVAL`|not modified|
+| *`pReturnValue`* | *`timeZoneName`* | *`sizeInBytes`* | *`index`* | Return value | Contents of *`timeZoneName`* |
+|---|---|---|---|---|---|
+| size of TZ name | `NULL` | 0 | 0 or 1 | 0 | not modified |
+| size of TZ name | any | > 0 | 0 or 1 | 0 | TZ name |
+| not modified | `NULL` | > 0 | any | `EINVAL` | not modified |
+| not modified | any | zero | any | `EINVAL` | not modified |
+| not modified | any | > 0 | > 1 | `EINVAL` | not modified |
 
 ## Remarks
 
@@ -133,9 +133,9 @@ The current Daylight standard time zone name is Pacific Daylight Time.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`_get_tzname`|`<time.h>`|
+| Routine | Required header |
+|---|---|
+| `_get_tzname` | `<time.h>` |
 
 For more information, see [Compatibility](../compatibility.md).
 

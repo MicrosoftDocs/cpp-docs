@@ -37,9 +37,9 @@ The argument returned is evaluated twice by the macro. Double evaluation can lea
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`__min`**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`__min`** | \<stdlib.h> |
 
 ## Example
 

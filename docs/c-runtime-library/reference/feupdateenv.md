@@ -38,9 +38,9 @@ To use this function, you must turn off floating-point optimizations that could 
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`feupdateenv`**|\<fenv.h>|\<cfenv>|
+| Function | C header | C++ header |
+|---|---|---|
+| **`feupdateenv`** | \<fenv.h> | \<cfenv> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

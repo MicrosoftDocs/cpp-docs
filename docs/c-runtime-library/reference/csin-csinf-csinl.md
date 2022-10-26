@@ -49,9 +49,9 @@ Because C++ allows overloading, you can call overloads of **`csin`** that take a
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`csin`**,               **`csinf`**, **`csinl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`csin`**, **`csinf`**, **`csinl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

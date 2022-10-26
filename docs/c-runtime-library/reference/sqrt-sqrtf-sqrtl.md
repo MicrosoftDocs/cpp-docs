@@ -51,18 +51,18 @@ By default, this function's global state is scoped to the application. To change
 
 The **`sqrt`** functions return the square-root of *`x`*. By default, if *`x`* is negative, **`sqrt`** returns an indefinite `NaN`.
 
-|Input|SEH Exception|**`_matherr`** Exception|
-|-----------|-------------------|--------------------------|
-|± `QNAN`,`IND`|none|`_DOMAIN`|
-|- ∞|none|`_DOMAIN`|
-|`x<0`|none|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
+| - INF | none | `_DOMAIN` |
+| `x < 0` | none | `_DOMAIN` |
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`sqrt`**, **`sqrtf`**, **`sqrtl`**|`<math.h>`|`<cmath>`|
-|**`sqrt()`** macro | `<tgmath.h>` ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`sqrt`**, **`sqrtf`**, **`sqrtl`** | `<math.h>` | `<cmath>` |
+| **`sqrt`** macro | `<tgmath.h>` |  |
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

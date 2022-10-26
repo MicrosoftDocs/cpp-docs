@@ -67,17 +67,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcprintf`|**`_cprintf`**|**`_cprintf`**|**`_cwprintf`**|
-|`_tcprintf_l`|**`_cprintf_l`**|**`_cprintf_l`**|**`_cwprintf_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcprintf` | **`_cprintf`** | **`_cprintf`** | **`_cwprintf`** |
+| `_tcprintf_l` | **`_cprintf_l`** | **`_cprintf_l`** | **`_cwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_cprintf`**, **`_cprintf_l`**|\<conio.h>|
-|**`_cwprintf`**, **`_cwprintf_l`**|\<conio.h>|
+| Routine | Required header |
+|---|---|
+| **`_cprintf`**, **`_cprintf_l`** | \<conio.h> |
+| **`_cwprintf`**, **`_cwprintf_l`** | \<conio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

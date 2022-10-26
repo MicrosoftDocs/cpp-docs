@@ -50,9 +50,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsdup`**|**`_strdup`**|**`_mbsdup`**|**`_wcsdup`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsdup` | **`_strdup`** | **`_mbsdup`** | **`_wcsdup`** |
 
 Because **`_strdup`** calls **`malloc`** to allocate storage space for the copy of *`strSource`*, it's good practice always to release this memory by calling the [`free`](free.md) routine on the pointer that's returned by the call to **`_strdup`**.
 
@@ -60,11 +60,11 @@ If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, **`_strdup`** and **`_wcsdup`**
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strdup`**|`<string.h>`|
-|**`_wcsdup`**|`<string.h>` or `<wchar.h>`|
-|**`_mbsdup`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`_strdup`** | `<string.h>` |
+| **`_wcsdup`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsdup`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

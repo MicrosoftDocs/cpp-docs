@@ -15,7 +15,7 @@ ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
 Finds a character in a string, by using the current locale or a specified `LC_CTYPE` conversion-state category.
 
 > [!IMPORTANT]
-> `_mbschr` and `_mbschr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbschr`** and **`_mbschr_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -90,9 +90,9 @@ Each of these functions returns a pointer to the first occurrence of *`c`* in *`
 
 ## Remarks
 
-The `strchr` function finds the first occurrence of *`c`* in *`str`*, or it returns `NULL` if *`c`* isn't found. The null terminating character is included in the search.
+The **`strchr`** function finds the first occurrence of *`c`* in *`str`*, or it returns `NULL` if *`c`* isn't found. The null terminating character is included in the search.
 
-`wcschr`, `_mbschr` and `_mbschr_l` are wide-character and multibyte-character versions of `strchr`. The arguments and return value of `wcschr` are wide-character strings. The arguments and return value of `_mbschr` are multibyte-character strings. `_mbschr` recognizes multibyte-character sequences. Also, if the string is a null pointer, `_mbschr` invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `_mbschr` returns `NULL` and sets `errno` to `EINVAL`. `strchr` and `wcschr` don't validate their parameters. These three functions behave identically otherwise.
+**`wcschr`**, **`_mbschr`** and **`_mbschr_l`** are wide-character and multibyte-character versions of **`strchr`**. The arguments and return value of **`wcschr`** are wide-character strings. The arguments and return value of **`_mbschr`** are multibyte-character strings. **`_mbschr`** recognizes multibyte-character sequences. Also, if the string is a null pointer, **`_mbschr`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbschr`** returns `NULL` and sets `errno` to `EINVAL`. **`strchr`** and **`wcschr`** don't validate their parameters. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; for more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
@@ -102,18 +102,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcschr`|`strchr`|`_mbschr`|`wcschr`|
-|**_n/a**|**n/a**|`_mbschr_l`|**n/a**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcschr` | **`strchr`** | **`_mbschr`** | **`wcschr`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`strchr`|`<string.h>`|
-|`wcschr`|`<string.h>` or `<wchar.h>`|
-|`_mbschr`, `_mbschr_l`|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strchr`** | `<string.h>` |
+| **`wcschr`** | `<string.h>` or `<wchar.h>` |
+| **`_mbschr`**, **`_mbschr_l`** | `<mbstring.h>` |
 
 For more information about compatibility, see [Compatibility](../compatibility.md).
 

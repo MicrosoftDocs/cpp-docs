@@ -57,6 +57,6 @@ Converts `inptr` to an object of type `TargetType`. The type of `inptr` must be 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__RTDynamicCast|rtti.h|
+| Routine | Required header |
+|---|---|
+| **`__RTDynamicCast`** | `<rtti.h>` |

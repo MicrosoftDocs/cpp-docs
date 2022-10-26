@@ -53,9 +53,9 @@ For more information about how **`_CrtIsValidPointer`** can be used with other d
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtIsValidPointer`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtIsValidPointer`** | \<crtdbg.h> |
 
 **`_CrtIsValidPointer`** is a Microsoft extension. For compatibility information, see [Compatibility](../compatibility.md).
 

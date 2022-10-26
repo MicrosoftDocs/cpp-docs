@@ -73,10 +73,10 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsxfrm`|**`strxfrm`**|**`strxfrm`**|**`wcsxfrm`**|
-|`_tcsxfrm_l`|**`_strxfrm_l`**|**`_strxfrm_l`**|**`_wcsxfrm_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsxfrm` | **`strxfrm`** | **`strxfrm`** | **`wcsxfrm`** |
+| `_tcsxfrm_l` | **`_strxfrm_l`** | **`_strxfrm_l`** | **`_wcsxfrm_l`** |
 
 In the "C" locale, the order of the characters in the character set (ASCII character set) is the same as the lexicographic order of the characters. However, in other locales, the order of characters in the character set may differ from the lexicographic character order. For example, in certain European locales, the character 'a' (value 0x61) precedes the character '&\#x00E4;' (value 0xE4) in the character set, but the character 'ä' precedes the character 'a' lexicographically.
 
@@ -97,12 +97,12 @@ return( strlen( _string1 ) );
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strxfrm`**|\<string.h>|
-|**`wcsxfrm`**|\<string.h> or \<wchar.h>|
-|**`_strxfrm_l`**|\<string.h>|
-|**`_wcsxfrm_l`**|\<string.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`strxfrm`** | \<string.h> |
+| **`wcsxfrm`** | \<string.h> or \<wchar.h> |
+| **`_strxfrm_l`** | \<string.h> |
+| **`_wcsxfrm_l`** | \<string.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

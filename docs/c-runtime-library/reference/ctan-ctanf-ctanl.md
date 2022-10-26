@@ -43,10 +43,10 @@ A complex number that represents the angle, in radians.
 
 The tangent of *`z`*.
 
-|Input|SEH Exception|`_matherr` Exception|
-|-----------|-------------------|--------------------------|
-|± ∞, QNAN, IND|none|_DOMAIN|
-|± ∞ (`tan`, `tanf`)|INVALID|_DOMAIN|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± INF, QNaN, IND | none | _DOMAIN |
+| ± INF (`tan`, `tanf`) | INVALID | _DOMAIN |
 
 ## Remarks
 
@@ -54,9 +54,9 @@ Because C++ allows overloading, you can call overloads of **`ctan`** that take a
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`ctan`**,  **`ctanf`**, **`ctanl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`ctan`**,  **`ctanf`**, **`ctanl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

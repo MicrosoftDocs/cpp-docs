@@ -58,16 +58,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tstrdate`|**`_strdate`**|**`_strdate`**|**`_wstrdate`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tstrdate` | **`_strdate`** | **`_strdate`** | **`_wstrdate`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strdate`**|\<time.h>|
-|**`_wstrdate`**|\<time.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_strdate`** | \<time.h> |
+| **`_wstrdate`** | \<time.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

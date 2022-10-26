@@ -39,9 +39,9 @@ For more information about heap state functions and the `_CrtMemState` structure
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_CrtMemDumpAll-ObjectsSince**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **_CrtMemDumpAll-ObjectsSince** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

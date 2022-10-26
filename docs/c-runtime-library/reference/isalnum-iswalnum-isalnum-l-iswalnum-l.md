@@ -41,10 +41,10 @@ The behavior of **`isalnum`** and **`_isalnum_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istalnum`|**`isalnum`**|[`_ismbcalnum`](ismbcalnum-functions.md)|**`iswalnum`**|
-|**`_istalnum_l`**|**`_isalnum_l`**|**`_ismbcalnum_l`**|**`_iswalnum_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istalnum` | **`isalnum`** | [`_ismbcalnum`](ismbcalnum-functions.md) | **`iswalnum`** |
+| **`_istalnum_l`** | **`_isalnum_l`** | **`_ismbcalnum_l`** | **`_iswalnum_l`** |
 
 ## Remarks
 
@@ -52,12 +52,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isalnum`**|\<ctype.h>|
-|**`iswalnum`**|\<ctype.h> or \<wchar.h>|
-|**`_isalnum_l`**|\<ctype.h>|
-|**`_iswalnum_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isalnum`** | \<ctype.h> |
+| **`iswalnum`** | \<ctype.h> or \<wchar.h> |
+| **`_isalnum_l`** | \<ctype.h> |
+| **`_iswalnum_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

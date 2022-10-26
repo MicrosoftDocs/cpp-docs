@@ -101,19 +101,19 @@ For more information, see [`scanf` Width Specification](../scanf-width-specifica
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tscanf_s`**|**`scanf_s`**|**`scanf_s`**|**`wscanf_s`**|
-|**`_tscanf_s_l`**|**`_scanf_s_l`**|**`_scanf_s_l`**|**`_wscanf_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tscanf_s` | **`scanf_s`** | **`scanf_s`** | **`wscanf_s`** |
+| `_tscanf_s_l` | **`_scanf_s_l`** | **`_scanf_s_l`** | **`_wscanf_s_l`** |
 
 For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`scanf_s`**, **`_scanf_s_l`**|`<stdio.h>`|
-|**`wscanf_s`**, **`_wscanf_s_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`scanf_s`**, **`_scanf_s_l`** | `<stdio.h>` |
+| **`wscanf_s`**, **`_wscanf_s_l`** | `<stdio.h>` or `<wchar.h>` |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles **`stdin`**, **`stdout`**, and **`stderr`** must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

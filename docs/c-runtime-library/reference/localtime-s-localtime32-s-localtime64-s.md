@@ -45,11 +45,11 @@ Zero if successful. The return value is an error code if there's a failure. Erro
 
 ### Error conditions
 
-|*`tmDest`*|*`sourceTime`*|Return value|Value in *`tmDest`*|Invokes invalid parameter handler|
-|-----------|------------|------------------|--------------------|---------------------------------------|
-|`NULL`|any|`EINVAL`|Not modified|Yes|
-|Not `NULL` (points to valid memory)|`NULL`|`EINVAL`|All fields set to -1|Yes|
-|Not `NULL` (points to valid memory)|less than 0 or greater than `_MAX__TIME64_T`|`EINVAL`|All fields set to -1|No|
+| *`tmDest`* | *`sourceTime`* | Return value | Value in *`tmDest`* | Invokes invalid parameter handler |
+|---|---|---|---|---|
+| `NULL` | any | `EINVAL` | Not modified | Yes |
+| Not `NULL` (points to valid memory) | `NULL` | `EINVAL` | All fields set to -1 | Yes |
+| Not `NULL` (points to valid memory) | less than 0 or greater than `_MAX__TIME64_T` | `EINVAL` | All fields set to -1 | No |
 
 The first two error conditions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
@@ -68,17 +68,17 @@ The **`localtime_s`** function converts a time stored as a [`time_t`](../standar
 
 The fields of the structure type [`tm`](../standard-types.md) store the following values, each of which is an **`int`**.
 
-|Field|Description|
-|-|-|
-|**`tm_sec`**|Seconds after minute (0 - 59).|
-|**`tm_min`**|Minutes after hour (0 - 59).|
-|**`tm_hour`**|Hours since midnight (0 - 23).|
-|**`tm_mday`**|Day of month (1 - 31).|
-|**`tm_mon`**|Month (0 - 11; January = 0).|
-|**`tm_year`**|Year (current year minus 1900).|
-|**`tm_wday`**|Day of week (0 - 6; Sunday = 0).|
-|**`tm_yday`**|Day of year (0 - 365; January 1 = 0).|
-|**`tm_isdst`**|Positive value if daylight saving time is in effect; 0 if daylight saving time isn't in effect; negative value if status of daylight saving time is unknown.|
+| Field | Description |
+|---|---|
+| **`tm_sec`** | Seconds after minute (0 - 59). |
+| **`tm_min`** | Minutes after hour (0 - 59). |
+| **`tm_hour`** | Hours since midnight (0 - 23). |
+| **`tm_mday`** | Day of month (1 - 31). |
+| **`tm_mon`** | Month (0 - 11; January = 0). |
+| **`tm_year`** | Year (current year minus 1900). |
+| **`tm_wday`** | Day of week (0 - 6; Sunday = 0). |
+| **`tm_yday`** | Day of year (0 - 365; January 1 = 0). |
+| **`tm_isdst`** | Positive value if daylight saving time is in effect; 0 if daylight saving time isn't in effect; negative value if status of daylight saving time is unknown. |
 
 If the **`TZ`** environment variable is set, the C run-time library assumes rules appropriate to the United States for implementing the calculation of daylight saving time (DST).
 
@@ -86,9 +86,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------------|---------------------|-|
-|**`localtime_s`**, **`_localtime32_s`**, **`_localtime64_s`**|`<time.h>`|`<ctime>` or `<time.h>`|
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`localtime_s`**, **`_localtime32_s`**, **`_localtime64_s`** | `<time.h>` | `<ctime>` or `<time.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

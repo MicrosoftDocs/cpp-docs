@@ -66,11 +66,11 @@ Zero if successful; otherwise, an error code on failure.
 
 ### Error conditions
 
-|*`pReturnValue`*|*`buffer`*|*`numberOfElements`*|*`varname`*|Return Value|
-|--------------------|--------------|------------------------|---------------|------------------|
-|`NULL`|any|any|any|`EINVAL`|
-|any|`NULL`|>0|any|`EINVAL`|
-|any|any|any|`NULL`|`EINVAL`|
+| *`pReturnValue`* | *`buffer`* | *`numberOfElements`* | *`varname`* | Return Value |
+|---|---|---|---|---|
+| `NULL` | any | any | any | `EINVAL` |
+| any | `NULL` | >0 | any | `EINVAL` |
+| any | any | any | `NULL` | `EINVAL` |
 
 Any of these error conditions invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions set `errno` to `EINVAL` and return `EINVAL`.
 
@@ -100,18 +100,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tgetenv_s`**|**`getenv_s`**|**`getenv_s`**|**`_wgetenv_s`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tgetenv_s` | **`getenv_s`** | **`getenv_s`** | **`_wgetenv_s`** |
 
 To check or change the value of the **`TZ`** environment variable, use **`getenv_s`**, **`_putenv`**, and **`_tzset`**, as required. For more information about **`TZ`**, see [`_tzset`](tzset.md) and [`_daylight`, `_dstbias`, `_timezone`, and `_tzname`](../daylight-dstbias-timezone-and-tzname.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`getenv_s`**|`<stdlib.h>`|
-|**`_wgetenv_s`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`getenv_s`** | `<stdlib.h>` |
+| **`_wgetenv_s`** | `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -45,9 +45,9 @@ This function validates its parameter. If *`memblock`* is a null pointer, **`_ms
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_msize_dbg`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_msize_dbg`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

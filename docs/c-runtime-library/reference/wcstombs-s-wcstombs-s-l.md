@@ -75,11 +75,11 @@ The locale to use.
 
 Zero if successful, an error code on failure.
 
-|Error condition|Return value and `errno`|
-|---------------------|------------------------------|
-|*`mbstr`* is `NULL` and *`sizeInBytes`* > 0|`EINVAL`|
-|*`wcstr`* is `NULL`|`EINVAL`|
-|The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; see Remarks below)|`ERANGE`|
+| Error condition | Return value and `errno` |
+|---|---|
+| *`mbstr`* is `NULL` and *`sizeInBytes`* > 0 | `EINVAL` |
+| *`wcstr`* is `NULL` | `EINVAL` |
+| The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; see Remarks below) | `ERANGE` |
 
 If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
 
@@ -114,9 +114,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wcstombs_s`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`wcstombs_s`** | `<stdlib.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

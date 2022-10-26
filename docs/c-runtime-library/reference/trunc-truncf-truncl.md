@@ -36,11 +36,11 @@ If successful, the functions return an integer value of *`x`*, rounded towards z
 
 Otherwise, the functions may return one of the following values:
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* = ±INFINITY|x|
-|*`x`* =  ±0|x|
-|*`x`* = NaN|NaN|
+| Issue | Return |
+|---|---|
+| *`x`* = ±INFINITY | x |
+| *`x`* =  ±0 | x |
+| *`x`* = NaN | NaN |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -56,10 +56,10 @@ You can also round down by implicitly converting from floating-point to integral
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`trunc`**, **`truncf`**, **`truncl`**|\<math.h>|\<cmath>|
-|**`trunc`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`trunc`**, **`truncf`**, **`truncl`** | \<math.h> | \<cmath> |
+| **`trunc`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

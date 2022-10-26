@@ -39,8 +39,8 @@ Number of bytes to lock.
 
 **`_locking`** returns 0 if successful. A return value of -1 indicates failure, in which case [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.
 
-|errno value|Condition|
-|-|-|
+| `errno` value | Condition |
+|---|---|
 | `EACCES` | Locking violation (file already locked or unlocked). |
 | `EBADF` | Invalid file descriptor. |
 | `EDEADLOCK` | Locking violation. Returned when the `_LK_LOCK` or `_LK_RLCK` flag is specified and the file can't be locked after 10 attempts. |
@@ -54,8 +54,8 @@ The **`_locking`** function locks or unlocks *`nbytes`* bytes of the file specif
 
 *`mode`* must be one of the following manifest constants, which are defined in Locking.h.
 
-|*`mode`* value|Effect|
-|-|-|
+| *`mode`* value | Effect |
+|---|---|
 | `_LK_LOCK` | Locks the specified bytes. If the bytes can't be locked, the program immediately tries again after 1 second. If the bytes can't be locked after 10 attempts, the constant returns an error. |
 | `_LK_NBLCK` | Locks the specified bytes. If the bytes can't be locked, the constant returns an error. |
 | `_LK_NBRLCK` | Same as `_LK_NBLCK`. |
@@ -68,9 +68,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_locking`**|\<io.h> and \<sys/locking.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_locking`** | \<io.h> and \<sys/locking.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

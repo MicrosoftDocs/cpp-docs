@@ -53,18 +53,18 @@ The **`vfscanf`** function reads data from the current position of *`stream`* in
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftscanf`|**`vfscanf`**|**`vfscanf`**|**`vfwscanf`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vftscanf` | **`vfscanf`** | **`vfscanf`** | **`vfwscanf`** |
 
 For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`vfscanf`**|\<stdio.h>|
-|**`vfwscanf`**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`vfscanf`** | \<stdio.h> |
+| **`vfwscanf`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

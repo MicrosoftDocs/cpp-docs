@@ -16,7 +16,7 @@ Internal CRT global variable. The command line.
 
 ## Syntax
 
-```
+```C
 char * _acmdln;
 wchar_t * _wcmdln;
 

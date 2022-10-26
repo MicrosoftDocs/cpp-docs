@@ -51,9 +51,9 @@ The behavior of **`isspace`** and **`_isspace_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**_** **`istspace`**|**`isspace`**|[`_ismbcspace`](ismbcgraph-functions.md)|**`iswspace`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istspace` | **`isspace`** | [`_ismbcspace`](ismbcgraph-functions.md) | **`iswspace`** |
 
 ## Remarks
 
@@ -61,12 +61,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isspace`**|\<ctype.h>|
-|**`iswspace`**|\<ctype.h> or \<wchar.h>|
-|**`_isspace_l`**|\<ctype.h>|
-|**`_iswspace_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isspace`** | \<ctype.h> |
+| **`iswspace`** | \<ctype.h> or \<wchar.h> |
+| **`_isspace_l`** | \<ctype.h> |
+| **`_iswspace_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

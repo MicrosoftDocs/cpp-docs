@@ -67,9 +67,9 @@ For information about how memory blocks are allocated, initialized, and managed 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_aligned_offset_recalloc_dbg`**|\<malloc.h>|
+| Routine | Required header |
+|---|---|
+| **`_aligned_offset_recalloc_dbg`** | \<malloc.h> |
 
 ## See also
 

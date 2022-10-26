@@ -94,19 +94,19 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcstok`**|**`strtok`**|**`_mbstok`**|**`wcstok`**|
-|**`_tcstok`**|**`_strtok_l`**|**`_mbstok_l`**|**`_wcstok_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstok` | **`strtok`** | **`_mbstok`** | **`wcstok`** |
+| `_tcstok` | **`_strtok_l`** | **`_mbstok_l`** | **`_wcstok_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtok`**|`<string.h>`|
-|**`wcstok`**|`<string.h>` or `<wchar.h>`|
-|**`_wcstok_l`**|`<tchar.h>`|
-|**`_mbstok`**, **`_mbstok_l`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strtok`** | `<string.h>` |
+| **`wcstok`** | `<string.h>` or `<wchar.h>` |
+| **`_wcstok_l`** | `<tchar.h>` |
+| **`_mbstok`**, **`_mbstok_l`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

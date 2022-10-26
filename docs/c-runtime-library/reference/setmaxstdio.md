@@ -47,9 +47,9 @@ Because stream I/O-level functions, such as **`fopen`**, are built on top of the
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_setmaxstdio`**|`<stdio.h>`|
+| Routine | Required header |
+|---|---|
+| **`_setmaxstdio`** | `<stdio.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

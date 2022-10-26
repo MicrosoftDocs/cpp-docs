@@ -50,10 +50,10 @@ The behavior of **`isblank`** and **`_isblank_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istblank`|**`isblank`**|[`_ismbcblank`](ismbcgraph-functions.md)|**`iswblank`**|
-|**`_istblank_l`**|**`_isblank_l`**|[`_ismbcblank_l`](ismbcgraph-functions.md)|**`_iswblank_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istblank` | **`isblank`** | [`_ismbcblank`](ismbcgraph-functions.md) | **`iswblank`** |
+| **`_istblank_l`** | **`_isblank_l`** | [`_ismbcblank_l`](ismbcgraph-functions.md) | **`_iswblank_l`** |
 
 ## Remarks
 
@@ -61,12 +61,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isblank`**|\<ctype.h>|
-|**`iswblank`**|\<ctype.h> or \<wchar.h>|
-|**`_isblank_l`**|\<ctype.h>|
-|**`_iswblank_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isblank`** | \<ctype.h> |
+| **`iswblank`** | \<ctype.h> or \<wchar.h> |
+| **`_isblank_l`** | \<ctype.h> |
+| **`_iswblank_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

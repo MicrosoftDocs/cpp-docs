@@ -15,7 +15,7 @@ ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
 Scans strings for characters in specified character sets.
 
 > [!IMPORTANT]
-> `_mbspbrk` and `_mbspbrk_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbspbrk`** and **`_mbspbrk_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -90,13 +90,13 @@ Returns a pointer to the first occurrence of any character from *`strCharSet`* i
 
 ## Remarks
 
-The `strpbrk` function returns a pointer to the first occurrence of a character in *`str`* that belongs to the set of characters in *`strCharSet`*. The search doesn't include the terminating null character.
+The **`strpbrk`** function returns a pointer to the first occurrence of a character in *`str`* that belongs to the set of characters in *`strCharSet`*. The search doesn't include the terminating null character.
 
-`wcspbrk` and `_mbspbrk` are wide-character and multibyte-character versions of `strpbrk`. The arguments and return value of `wcspbrk` are wide-character strings. The arguments and return value of `_mbspbrk` are multibyte-character strings.
+**`wcspbrk`** and **`_mbspbrk`** are wide-character and multibyte-character versions of **`strpbrk`**. The arguments and return value of **`wcspbrk`** are wide-character strings. The arguments and return value of **`_mbspbrk`** are multibyte-character strings.
 
-`_mbspbrk` validates its parameters. If *`str`* or *`strCharSet`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `_mbspbrk` returns `NULL` and sets `errno` to `EINVAL`. `strpbrk` and `wcspbrk` don't validate their parameters. These three functions behave identically otherwise.
+**`_mbspbrk`** validates its parameters. If *`str`* or *`strCharSet`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbspbrk`** returns `NULL` and sets `errno` to `EINVAL`. **`strpbrk`** and **`wcspbrk`** don't validate their parameters. These three functions behave identically otherwise.
 
-`_mbspbrk` is similar to `_mbscspn` except that `_mbspbrk` returns a pointer rather than a value of type [`size_t`](../standard-types.md).
+**`_mbspbrk`** is similar to `_mbscspn` except that **`_mbspbrk`** returns a pointer rather than a value of type [`size_t`](../standard-types.md).
 
 In C, these functions take a **`const`** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **`const`** returns a pointer to **`const`**; the version that takes a pointer to non-**`const`** returns a pointer to non-**`const`**. The macro `_CRT_CONST_CORRECT_OVERLOADS` is defined if both the **`const`** and non-**`const`** versions of these functions are available. If you require the non-**`const`** behavior for both C++ overloads, define the symbol `_CONST_RETURN`.
 
@@ -106,18 +106,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcspbrk`|`strpbrk`|`_mbspbrk`|`wcspbrk`|
-|**n/a**|**n/a**|`_mbspbrk_l`|**n/a**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcspbrk` | **`strpbrk`** | **`_mbspbrk`** | **`wcspbrk`** |
+| **n/a** | **n/a** | **`_mbspbrk_l`** | **n/a** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`strpbrk`|\<string.h>|
-|`wcspbrk`|\<string.h> or \<wchar.h>|
-|`_mbspbrk`, `_mbspbrk_l`|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`strpbrk`** | \<string.h> |
+| **`wcspbrk`** | \<string.h> or \<wchar.h> |
+| **`_mbspbrk`**, **`_mbspbrk_l`** | \<mbstring.h> |
 
 For more information about compatibility, see [Compatibility](../compatibility.md).
 

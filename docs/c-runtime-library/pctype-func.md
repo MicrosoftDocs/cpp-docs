@@ -33,9 +33,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__pctype_func|ctype.h|
+| Routine | Required header |
+|---|---|
+| **`__pctype_func`** | `<ctype.h>` |
 
 ## See also
 

@@ -64,11 +64,11 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcslen`**|**`strlen`**|**`strlen`**|**`wcslen`**|
-|**`_tcsclen`**|**`strlen`**|**`_mbslen`**|**`wcslen`**|
-|**`_tcsclen_l`**|**`strlen`**|**`_mbslen_l`**|**`wcslen`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcslen` | **`strlen`** | **`strlen`** | **`wcslen`** |
+| `_tcsclen` | **`strlen`** | **`_mbslen`** | **`wcslen`** |
+| `_tcsclen_l` | **`strlen`** | **`_mbslen_l`** | **`wcslen`** |
 
 **`_mbslen`** and **`_mbslen_l`** return the number of multibyte characters in a multibyte-character string but they don't test for multibyte-character validity. **`_mbstrlen`** and **`_mbstrlen_l`** test for multibyte-character validity and recognize multibyte-character sequences. If the string passed to **`_mbstrlen`** or **`_mbstrlen_l`** contains an invalid multibyte character for the code page, the function returns -1 and sets `errno` to `EILSEQ`.
 
@@ -76,12 +76,12 @@ The output value is affected by the setting of the `LC_CTYPE` category setting o
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strlen`**|`<string.h>`|
-|**`wcslen`**|`<string.h>` or `<wchar.h>`|
-|**`_mbslen`**, **`_mbslen_l`**|`<mbstring.h>`|
-|**`_mbstrlen`**, **`_mbstrlen_l`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`strlen`** | `<string.h>` |
+| **`wcslen`** | `<string.h>` or `<wchar.h>` |
+| **`_mbslen`**, **`_mbslen_l`** | `<mbstring.h>` |
+| **`_mbstrlen`**, **`_mbstrlen_l`** | `<stdlib.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

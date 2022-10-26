@@ -37,16 +37,16 @@ This function determines a mapping from one set of character codes to another.
 
 The following pairs of calls have the same behavior in all locales, but it's possible to define more mappings even in the "C" locale:
 
-|Function|Same As|
-|--------------|-------------|
-|`tolower(c)`|`towctrans(c, wctrans("towlower"))`|
-|`towupper(c)`|`towctrans(c, wctrans("toupper"))`|
+| Function | Same As |
+|---|---|
+| `tolower(c)` | `towctrans(c, wctrans("towlower"))` |
+| `towupper(c)` | `towctrans(c, wctrans("toupper"))` |
 
 ## Requirements
 
-|Routine|Required Header|
-|-------------|---------------------|
-|**`wctrans`**|\<wctype.h>|
+| Routine | Required Header |
+|---|---|
+| **`wctrans`** | \<wctype.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

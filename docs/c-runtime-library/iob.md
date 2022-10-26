@@ -16,13 +16,13 @@ The array of `stdio` control structures.
 
 ## Syntax
 
-```
+```C
 FILE _iob[_IOB_ENTRIES];
 ```
 
 ## Remarks
 
-`IOB_ENTRIES` is defined as 20 in `stdio.h`.
+`_IOB_ENTRIES` is defined as 3 in `stdio.h`.
 
 ## See also
 

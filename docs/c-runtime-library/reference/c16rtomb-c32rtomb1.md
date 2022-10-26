@@ -58,9 +58,9 @@ To convert UTF-16 characters into non-UTF-8 multibyte characters, use the [`wcst
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`c16rtomb`**, **`c32rtomb`**|C, C++: \<uchar.h>|
+| Routine | Required header |
+|---|---|
+| **`c16rtomb`**, **`c32rtomb`** | C, C++: \<uchar.h> |
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

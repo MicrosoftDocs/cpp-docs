@@ -51,11 +51,11 @@ Callback function that compares two elements. The first is a pointer to the key 
 
 The **`bsearch`** function performs a binary search of a sorted array of *`number`* elements, each of *`width`* bytes in size. The *`base`* value is a pointer to the base of the array to be searched, and *`key`* is the value being sought. The *`compare`* parameter is a pointer to a user-supplied routine that compares the requested key to an array element. It returns one of the following values that specify their relationship:
 
-|Value returned by *`compare`* routine|Description|
-|-----------------------------------------|-----------------|
-|`< 0`|Key is less than array element.|
-|`0`|Key is equal to array element.|
-|`> 0`|Key is greater than array element.|
+| Value returned by *`compare`* routine | Description |
+|---|---|
+| `< 0` | Key is less than array element. |
+| `0` | Key is equal to array element. |
+| `> 0` | Key is greater than array element. |
 
 This function validates its parameters. If *`compare`*, *`key`* or *`number`* is `NULL`, or if *`base`* is `NULL` and *`number`* is nonzero, or if *`width`* is zero, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
 
@@ -63,9 +63,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`bsearch`**|\<stdlib.h> and \<search.h>|
+| Routine | Required header |
+|---|---|
+| **`bsearch`** | \<stdlib.h> and \<search.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

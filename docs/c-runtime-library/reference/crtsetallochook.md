@@ -60,9 +60,9 @@ For more information about how **`_CrtSetAllocHook`** can be used with other mem
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtSetAllocHook`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtSetAllocHook`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -43,9 +43,9 @@ This function is deprecated when compiling with [/clr (Common Language Runtime C
 
 ## Requirements
 
-|Routine|Required header|Compatibility|
-|-------------|---------------------|-------------------|
-|**`_set_controlfp`**|\<float.h>|x86 processor only|
+| Routine | Required header | Compatibility |
+|---|---|---|
+| **`_set_controlfp`** | \<float.h> | x86 processor only |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

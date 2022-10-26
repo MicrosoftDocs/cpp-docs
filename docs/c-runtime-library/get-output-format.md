@@ -19,7 +19,7 @@ Gets the current value of the output format flag.
 
 ## Syntax
 
-```
+```C
 unsigned int _get_output_format();
 ```
 
@@ -33,9 +33,9 @@ The output format flag controls features of formatted I/O. The flag has two poss
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`_get_output_format`|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`_get_output_format`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](./compatibility.md) in the Introduction.
 

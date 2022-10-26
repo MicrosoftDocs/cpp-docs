@@ -64,16 +64,16 @@ You don't need to call these functions explicitly in most cases. Instead, you ca
 
 ## Generic-text routine mapping
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tgetcwd_dbg`|**`_getcwd_dbg`**|**`_getcwd_dbg`**|**`_wgetcwd_dbg`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tgetcwd_dbg` | **`_getcwd_dbg`** | **`_getcwd_dbg`** | **`_wgetcwd_dbg`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getcwd_dbg`**|\<crtdbg.h>|
-|**`_wgetcwd_dbg`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_getcwd_dbg`** | \<crtdbg.h> |
+| **`_wgetcwd_dbg`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

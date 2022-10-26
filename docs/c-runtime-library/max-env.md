@@ -12,7 +12,7 @@ The maximum permissible string length of an environmental variable.
 
 ## Syntax
 
-```
+```C
 #include <stdio.h>
 ```
 

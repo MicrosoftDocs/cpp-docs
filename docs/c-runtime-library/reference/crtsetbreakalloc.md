@@ -41,9 +41,9 @@ For more information about how **`_CrtSetBreakAlloc`** can be used with other me
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtSetBreakAlloc`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtSetBreakAlloc`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

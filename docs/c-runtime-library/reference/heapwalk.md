@@ -32,14 +32,14 @@ Buffer to contain heap information.
 
 **`_heapwalk`** returns one of the following integer manifest constants defined in Malloc.h.
 
-|Return value|Meaning|
-|-|-|
-|`_HEAPBADBEGIN`| Initial header information invalid or not found.|
-|`_HEAPBADNODE`| Heap damaged or bad node found.|
-|`_HEAPBADPTR`| The `_pentry` field of the `_HEAPINFO` structure doesn't contain a valid pointer into the heap or *`entryinfo`* is a null pointer.|
-|`_HEAPEND`| End of the heap reached successfully.|
-|`_HEAPEMPTY`| Heap not initialized.|
-|`_HEAPOK`| No errors so far; *`entryinfo`* is updated with information about the next heap entry.|
+| Return value | Meaning |
+|---|---|
+| `_HEAPBADBEGIN` | Initial header information invalid or not found. |
+| `_HEAPBADNODE` | Heap damaged or bad node found. |
+| `_HEAPBADPTR` | The `_pentry` field of the `_HEAPINFO` structure doesn't contain a valid pointer into the heap or *`entryinfo`* is a null pointer. |
+| `_HEAPEND` | End of the heap reached successfully. |
+| `_HEAPEMPTY` | Heap not initialized. |
+| `_HEAPOK` | No errors so far; *`entryinfo`* is updated with information about the next heap entry. |
 
 In addition, if an error occurs, **`_heapwalk`** sets `errno` to `ENOSYS`.
 
@@ -47,11 +47,11 @@ In addition, if an error occurs, **`_heapwalk`** sets `errno` to `ENOSYS`.
 
 The **`_heapwalk`** function helps debug heap-related problems in programs. The function walks through the heap, traversing one entry per call, and returns a pointer to a structure of type `_HEAPINFO` that contains information about the next heap entry. The `_HEAPINFO` type, defined in Malloc.h, contains the following elements.
 
-|Field|Meaning|
-|-|-|
-|`int *_pentry`|Heap entry pointer.|
-|`size_t _size`|Size of the heap entry.|
-|`int _useflag`|Flag that indicates whether the heap entry is in use.|
+| Field | Meaning |
+|---|---|
+| `int *_pentry` | Heap entry pointer. |
+| `size_t _size` | Size of the heap entry. |
+| `int _useflag` | Flag that indicates whether the heap entry is in use. |
 
 A call to **`_heapwalk`** that returns `_HEAPOK` stores the size of the entry in the `_size` field and sets the `_useflag` field to either `_FREEENTRY` or `_USEDENTRY` (both are constants defined in Malloc.h). To obtain this information about the first entry in the heap, pass **`_heapwalk`** a pointer to a `_HEAPINFO` structure whose `_pentry` member is `NULL`. If the operating system doesn't support **`_heapwalk`**, the function returns `_HEAPEND` and sets `errno` to `ENOSYS`.
 
@@ -59,9 +59,9 @@ This function validates its parameter. If *`entryinfo`* is a null pointer, the i
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_heapwalk`**|\<malloc.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_heapwalk`** | \<malloc.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

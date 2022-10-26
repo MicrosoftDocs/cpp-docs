@@ -82,7 +82,7 @@ If *`mode`* is **`a, ccs=encoding`** for some `encoding` value, **`fopen`** firs
 
 ### Generic-text routine mappings
 
-| TCHAR.H routine | `_UNICODE` & `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |--|--|--|--|
 | **`_tfopen`** | **`fopen`** | **`fopen`** | **`_wfopen`** |
 

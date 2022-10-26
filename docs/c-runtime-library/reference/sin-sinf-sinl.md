@@ -36,10 +36,10 @@ Angle in radians.
 
 The **`sin`** functions return the sine of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|± `QNAN`,`IND`|None|`_DOMAIN`|
-|± ∞ (`sin`, `sinf`, `sinl`)|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | None | `_DOMAIN` |
+| ± INF (`sin`, `sinf`, `sinl`) | `INVALID` | `_DOMAIN` |
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -53,10 +53,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-|-|-|
-|**`sin`**, **`sinf`**, **`sinl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`sin()`** macro | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`sin`**, **`sinf`**, **`sinl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`sin`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -77,12 +77,12 @@ The **`_mbccpy_s`** function copies one multibyte character from *`src`* to *`de
 
 The value in *`pCopied`* is filled with the number of bytes copied. Possible values are 1 and 2 if the operation is successful. If `NULL` is passed in, this parameter is ignored.
 
-|*`src`*|copied to *`dest`*|*`pCopied`*|Return value|
-|-----------|----------------------|---------------|------------------|
-|non-lead-byte|non-lead-byte|1|0|
-|0|0|1|0|
-|lead-byte followed by non-0|lead-byte followed by non-0|2|0|
-|lead-byte followed by 0|0|1|`EILSEQ`|
+| *`src`* | copied to *`dest`* | *`pCopied`* | Return value |
+|---|---|---|---|
+| non-lead-byte | non-lead-byte | 1 | 0 |
+| 0 | 0 | 1 | 0 |
+| lead-byte followed by non-0 | lead-byte followed by non-0 | 2 | 0 |
+| lead-byte followed by 0 | 0 | 1 | `EILSEQ` |
 
 The second row is just a special case of the first row. The table assumes *`buffSizeInBytes`* >= *`pCopied`*.
 
@@ -94,16 +94,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tccpy_s`|Maps to macro or inline function.|**`_mbccpy_s`**|Maps to macro or inline function.|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tccpy_s` | Maps to macro or inline function. | **`_mbccpy_s`** | Maps to macro or inline function. |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbccpy_s`**|\<mbstring.h>|
-|**`_mbccpy_s_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbccpy_s`** | \<mbstring.h> |
+| **`_mbccpy_s_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

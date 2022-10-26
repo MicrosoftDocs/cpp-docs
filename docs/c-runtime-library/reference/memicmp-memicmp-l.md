@@ -48,12 +48,12 @@ Locale to use.
 
 The return value indicates the relationship between the buffers.
 
-|Return value|Relationship of first count bytes of buf1 and buf2|
-|------------------|--------------------------------------------------------|
-|< 0|*`buffer1`* less than *`buffer2`*.|
-|0|*`buffer1`* identical to *`buffer2`*.|
-|> 0|*`buffer1`* greater than *`buffer2`*.|
-|`_NLSCMPERROR`|An error occurred.|
+| Return value | Relationship of first count bytes of buf1 and buf2 |
+|---|---|
+| < 0 | *`buffer1`* less than *`buffer2`*. |
+| 0 | *`buffer1`* identical to *`buffer2`*. |
+| > 0 | *`buffer1`* greater than *`buffer2`*. |
+| `_NLSCMPERROR` | An error occurred. |
 
 ## Remarks
 
@@ -67,10 +67,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_memicmp`**|\<memory.h> or \<string.h>|
-|**`_memicmp_l`**|\<memory.h> or \<string.h>|
+| Routine | Required header |
+|---|---|
+| **`_memicmp`** | \<memory.h> or \<string.h> |
+| **`_memicmp_l`** | \<memory.h> or \<string.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

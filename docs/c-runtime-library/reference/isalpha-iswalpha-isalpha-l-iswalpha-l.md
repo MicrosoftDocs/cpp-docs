@@ -51,10 +51,10 @@ The behavior of **`isalpha`** and **`_isalpha_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istalpha`|**`isalpha`**|**`_ismbcalpha`**|**`iswalpha`**|
-|`_istalpha_l`|**`_isalpha_l`**|**`_ismbcalpha_l`**|**`_iswalpha_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istalpha` | **`isalpha`** | **`_ismbcalpha`** | **`iswalpha`** |
+| `_istalpha_l` | **`_isalpha_l`** | **`_ismbcalpha_l`** | **`_iswalpha_l`** |
 
 ## Remarks
 
@@ -62,12 +62,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isalpha`**|\<ctype.h>|
-|**`iswalpha`**|\<ctype.h> or \<wchar.h>|
-|**`_isalpha_l`**|\<ctype.h>|
-|**`_iswalpha_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isalpha`** | \<ctype.h> |
+| **`iswalpha`** | \<ctype.h> or \<wchar.h> |
+| **`_isalpha_l`** | \<ctype.h> |
+| **`_iswalpha_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -51,17 +51,17 @@ If successful, returns the gamma of *`x`*.
 
 A range error may occur if the magnitude of *`x`* is too large or too small for the data type. A domain error or range error may occur if *`x`* <= 0.
 
-|Issue|Return|
-|-----------|------------|
-|x = ±0|±INFINITY|
-|x = negative integer|NaN|
-|x = -INFINITY|NaN|
-|x = +INFINITY|+INFINITY|
-|x = NaN|NaN|
-|domain error|NaN|
-|pole error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
-|overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
-|underflow range error|the correct value, after rounding.|
+| Issue | Return |
+|---|---|
+| *`x`* = ±0 | ±INFINITY |
+| *`x`* = negative integer | NaN |
+| *`x`* = -INFINITY | NaN |
+| *`x`* = +INFINITY | +INFINITY |
+| *`x`* = NaN | NaN |
+| domain error | NaN |
+| pole error | ±`HUGE_VAL`, ±`HUGE_VALF`, or ±`HUGE_VALL` |
+| overflow range error | ±`HUGE_VAL`, ±`HUGE_VALF`, or ±`HUGE_VALL` |
+| underflow range error | the correct value, after rounding. |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -77,10 +77,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`tgamma`**, **`tgammaf`**,  **`tgammal`**|\<math.h>|\<cmath>|
-|**`tgamma`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`tgamma`**, **`tgammaf`**,  **`tgammal`** | \<math.h> | \<cmath> |
+| **`tgamma`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

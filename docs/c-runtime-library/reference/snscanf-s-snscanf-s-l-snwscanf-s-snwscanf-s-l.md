@@ -79,17 +79,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sntscanf_s`|**`_snscanf_s`**|**`_snscanf_s`**|**`_snwscanf_s`**|
-|`_sntscanf_s_l`|**`_snscanf_s_l`**|**`_snscanf_s_l`**|**`_snwscanf_s_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_sntscanf_s` | **`_snscanf_s`** | **`_snscanf_s`** | **`_snwscanf_s`** |
+| `_sntscanf_s_l` | **`_snscanf_s_l`** | **`_snscanf_s_l`** | **`_snwscanf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_snscanf_s`**, **`_snscanf_s_l`**|\<stdio.h>|
-|**`_snwscanf_s`**, **`_snwscanf_s_l`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_snscanf_s`**, **`_snscanf_s_l`** | \<stdio.h> |
+| **`_snwscanf_s`**, **`_snwscanf_s_l`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

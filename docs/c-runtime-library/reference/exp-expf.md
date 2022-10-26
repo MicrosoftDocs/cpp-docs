@@ -43,12 +43,12 @@ The floating-point value to exponentiate the natural logarithm base *e* by.
 
 The **`exp`** functions return the exponential value of the floating-point parameter, *`x`*, if successful. That is, the result is *e*<sup>*`x`*</sup>, where *e* is the base of the natural logarithm. On overflow, the function returns `INF` (infinity) and on underflow, **`exp`** returns 0.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|± Quiet NaN, indeterminate|None|`_DOMAIN`|
-|± Infinity|`INVALID`|`_DOMAIN`|
-|x ≥ 7.097827e+002|`INEXACT+OVERFLOW`|`OVERFLOW`|
-|X ≤ -7.083964e+002|`INEXACT+UNDERFLOW`|`UNDERFLOW`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± Quiet NaN, indeterminate | None | `_DOMAIN` |
+| ± Infinity | `INVALID` | `_DOMAIN` |
+| *`x`* ≥ 7.097827e+002 | `INEXACT`+`OVERFLOW` | `OVERFLOW` |
+| *`x`* ≤ -7.083964e+002 | `INEXACT`+`UNDERFLOW` | `UNDERFLOW` |
 
 The **`exp`** function has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
@@ -62,10 +62,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required C header|Required C++ header|
-|--------------|---------------------|---|
-|**`exp`**, **`expf`**, **`expl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`exp`** macro| `<tgmath.h>` ||
+| Function | Required C header | Required C++ header |
+|---|---|---|
+| **`exp`**, **`expf`**, **`expl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`exp`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

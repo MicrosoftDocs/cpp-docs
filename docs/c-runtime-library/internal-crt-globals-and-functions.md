@@ -17,332 +17,332 @@ The C runtime (CRT) library contains functions and global variables that are use
 
 These global variables and macro definitions are used to implement the CRT.
 
-|Name|
-|----------|
-|`__badioinfo`|
-|[`_acmdln`](./acmdln-tcmdln-wcmdln.md)|
-|`_commode`|
-|`_crtAssertBusy`|
-|`_crtBreakAlloc`|
-|`__initenv`|
-|`__lconv`|
-|[`__mb_cur_max`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
-|`__pioinfo`|
-|`__unguarded_readlc_active`|
-|[`_wcmdln`](./acmdln-tcmdln-wcmdln.md)|
-|`__winitenv`|
+| Name |
+|---|
+| `__badioinfo` |
+| [`_acmdln`](./acmdln-tcmdln-wcmdln.md) |
+| `_commode` |
+| `_crtAssertBusy` |
+| `_crtBreakAlloc` |
+| `__initenv` |
+| `__lconv` |
+| [`__mb_cur_max`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md) |
+| `__pioinfo` |
+| `__unguarded_readlc_active` |
+| [`_wcmdln`](./acmdln-tcmdln-wcmdln.md) |
+| `__winitenv` |
 
 ## Internal CRT functions and function macros
 
 These functions and function macros are used to implement the CRT and the C++ Standard Library.
 
-|Name|
-|----------|
-|`__acrt_iob_func`|
-|`__AdjustPointer`|
-|`_assert`|
-|`__BuildCatchObject`|
-|`__BuildCatchObjectHelper`|
-|`__C_specific_handler`|
-|`_calloc_base`|
-|`_chkesp`|
-|`__chkstk`|
-|`_chkstk`|
-|`_chvalidator`|
-|`_chvalidator_l`|
-|`_CIacos`|
-|`_CIasin`|
-|[`_CIatan`](./ciatan.md)|
-|[`_CIatan2`](./ciatan2.md)|
-|[`_CIcos`](./cicos.md)|
-|`_CIcosh`|
-|[`_CIexp`](./ciexp.md)|
-|[`_CIfmod`](./cifmod.md)|
-|[`_CIlog`](./cilog.md)|
-|[`_CIlog10`](./cilog10.md)|
-|[`_CIpow`](./cipow.md)|
-|[`_CIsin`](./cisin.md)|
-|`_CIsinh`|
-|[`_CIsqrt`](./cisqrt.md)|
-|[`_CItan`](./citan.md)|
-|`_CItanh`|
-|`__clean_type_info_names_internal`|
-|`_configure_narrow_argv`|
-|`_configure_wide_argv`|
-|`__conio_common_vcprintf`|
-|`__conio_common_vcprintf_p`|
-|`__conio_common_vcprintf_s`|
-|`__conio_common_vcscanf`|
-|`__conio_common_vcwprintf`|
-|`__conio_common_vcwprintf_p`|
-|`__conio_common_vcwprintf_s`|
-|`__conio_common_vcwscanf`|
-|`__CppXcptFilter`|
-|`__create_locale`|
-|`_crt_atexit`|
-|`_crt_at_quick_exit`|
-|`__crtCompareStringA`|
-|`__crtCompareStringEx`|
-|`__crtCompareStringW`|
-|`__crtCreateEventExW`|
-|`__crtCreateSemaphoreExW`|
-|`__crtCreateSymbolicLinkW`|
-|`_crt_debugger_hook`|
-|`__crtEnumSystemLocalesEx`|
-|`__crtFlsAlloc`|
-|`__crtFlsFree`|
-|`__crtFlsGetValue`|
-|`__crtFlsSetValue`|
-|`_CrtGetCheckCount`|
-|`__crtGetDateFormatEx`|
-|`__crtGetFileInformationByHandleEx`|
-|`__crtGetLocaleInfoEx`|
-|`__crtGetShowWindowMode`|
-|`__crtGetTickCount64`|
-|`__crtGetTimeFormatEx`|
-|`__crtGetUserDefaultLocaleName`|
-|`__crtInitializeCriticalSectionEx`|
-|`__crtIsPackagedApp`|
-|`__crtIsValidLocaleName`|
-|`__crtLCMapStringA`|
-|`__crtLCMapStringEx`|
-|[`__crtLCMapStringW`](./crtlcmapstringw.md)|
-|`_CrtSetCheckCount`|
-|`_CrtSetDbgBlockType`|
-|`__crtSetFileInformationByHandle`|
-|`__crtSetThreadStackGuarantee`|
-|`__crtSetUnhandledExceptionFilter`|
-|`__crtSleep`|
-|`__crtTerminateProcess`|
-|`__crtUnhandledException`|
-|`__CxxDetectRethrow`|
-|`__CxxExceptionFilter`|
-|[`__CxxFrameHandler`](./cxxframehandler.md)|
-|`__CxxFrameHandler2`|
-|`__CxxFrameHandler3`|
-|`__CxxLongjmpUnwind`|
-|`__CxxQueryExceptionSize`|
-|`__CxxRegisterExceptionObject`|
-|`_CxxThrowException`|
-|`__CxxUnregisterExceptionObject`|
-|`__daylight`|
-|`_dclass`|
-|`__DestructExceptionObject`|
-|[`__dllonexit`](./dllonexit.md)|
-|`__doserrno`|
-|`_dosmaperr`|
-|`_dpcomp`|
-|`_dsign`|
-|`__dstbias`|
-|`_dtest`|
-|`_EH_prolog`|
-|`_errno`|
-|`_except_handler2`|
-|[`_except_handler3`](./except-handler3.md)|
-|`_except_handler4_common`|
-|`_except1`|
-|[`_execute_onexit_table`](./execute-onexit-table-initialize-onexit-table-register-onexit-function.md)|
-|`_fdclass`|
-|`_fdpcomp`|
-|`_fdsign`|
-|`_fdtest`|
-|`_filbuf`|
-|`_FindAndUnlinkFrame`|
-|`_flsbuf`|
-|`__fpe_flt_rounds`|
-|`_FPE_Raise`|
-|`__fpecode`|
-|`__FrameUnwindFilter`|
-|`_fread_nolock_s`|
-|`_free_base`|
-|`__free_locale`|
-|`_freea_s`|
-|`_freefls`|
-|`_ftol`|
-|`__get_current_locale`|
-|`__get_flsindex`|
-|`_get_initial_narrow_environment`|
-|`_get_initial_wide_environment`|
-|`_get_narrow_winmain_command_line`|
-|`_get_stream_buffer_pointers`|
-|`__get_tlsindex`|
-|`_get_wide_winmain_command_line`|
-|`_Getdays`|
-|[`__getmainargs`](./getmainargs-wgetmainargs.md)|
-|`_Getmonths`|
-|`__GetPlatformExceptionInfo`|
-|`_getptd`|
-|`_Gettnames`|
-|`_global_unwind2`|
-|`_inconsistency`|
-|`_initialize_lconv_for_unsigned_char`|
-|`_initialize_narrow_environment`|
-|[`_initialize_onexit_table`](./execute-onexit-table-initialize-onexit-table-register-onexit-function.md)|
-|`_initialize_wide_environment`|
-|`_initptd`|
-|`_invalid_parameter`|
-|`_invoke_watson`|
-|`__iob_func`|
-|`_IsExceptionObjectToBeDestroyed`|
-|[`___lc_codepage_func`](./lc-codepage-func.md)|
-|[`___lc_collate_cp_func`](./lc-collate-cp-func.md)|
-|[`___lc_locale_name_func`](./lc-locale-name-func.md)|
-|`__lconv_init`|
-|`_ldclass`|
-|`_ldpcomp`|
-|`_ldsign`|
-|`_ldtest`|
-|`__libm_sse2_acos`|
-|`_libm_sse2_acos_precise`|
-|`__libm_sse2_acosf`|
-|`__libm_sse2_asin`|
-|`_libm_sse2_asin_precise`|
-|`__libm_sse2_asinf`|
-|`__libm_sse2_atan`|
-|`_libm_sse2_atan_precise`|
-|`__libm_sse2_atan2`|
-|`__libm_sse2_atanf`|
-|`__libm_sse2_cos`|
-|`_libm_sse2_cos_precise`|
-|`__libm_sse2_cosf`|
-|`__libm_sse2_exp`|
-|`_libm_sse2_exp_precise`|
-|`__libm_sse2_expf`|
-|`__libm_sse2_log`|
-|`_libm_sse2_log_precise`|
-|`__libm_sse2_log10`|
-|`_libm_sse2_log10_precise`|
-|`__libm_sse2_log10f`|
-|`__libm_sse2_logf`|
-|`__libm_sse2_pow`|
-|`_libm_sse2_pow_precise`|
-|`__libm_sse2_powf`|
-|`__libm_sse2_sin`|
-|`_libm_sse2_sin_precise`|
-|`__libm_sse2_sinf`|
-|`_libm_sse2_sqrt_precise`|
-|`__libm_sse2_tan`|
-|`_libm_sse2_tan_precise`|
-|`__libm_sse2_tanf`|
-|[`_local_unwind2`](./local-unwind2.md)|
-|`_local_unwind4`|
-|`_lock_locales`|
-|`_longjmpex`|
-|`_malloc_base`|
-|[`___mb_cur_max_func`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
-|[`___mb_cur_max_l_func`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
-|`_mbctype`|
-|`_NLG_Dispatch2`|
-|`_NLG_Return`|
-|`_NLG_Return2`|
-|`__p___argc`|
-|`__p___argv`|
-|`__p___initenv`|
-|[`__p___mb_cur_max`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
-|`__p___wargv`|
-|`__p___winitenv`|
-|`__p__acmdln`|
-|[`__p__commode`](./p-commode.md)|
-|`__p__crtAssertBusy`|
-|`__p__crtBreakAlloc`|
-|`__p__crtDbgFlag`|
-|`__p__daylight`|
-|`__p__dstbias`|
-|`__p__environ`|
-|[`__p__fmode`](./p-fmode.md)|
-|`__p__iob`|
-|`__p__mbcasemap`|
-|`__p__mbctype`|
-|`__p__pctype`|
-|`__p__pgmptr`|
-|`__p__pwctype`|
-|`__p__timezone`|
-|`__p__tzname`|
-|`__p__wcmdln`|
-|`__p__wenviron`|
-|`__p__wpgmptr`|
-|`_pctype`|
-|[`__pctype_func`](./pctype-func.md)|
-|`_pwctype`|
-|`__pwctype_func`|
-|`__pxcptinfoptrs`|
-|`_query_app_type`|
-|`_realloc_base`|
-|[`_register_onexit_function`](./execute-onexit-table-initialize-onexit-table-register-onexit-function.md)|
-|`_register_thread_local_exe_atexit_callback`|
-|`__report_gsfailure`|
-|`__RTCastToVoid`|
-|[`__RTDynamicCast`](./rtdynamiccast.md)|
-|`__RTtypeid`|
-|`_seh_filter_dll`|
-|`_seh_filter_exe`|
-|`_seh_longjmp_unwind`|
-|`_seh_longjmp_unwind4`|
-|[`__set_app_type`](./internal-set-app-type.md)|
-|`_set_malloc_crt_max_wait`|
-|[`_setjmp3`](./setjmp3.md)|
-|`__setlc_active`|
-|[`___setlc_active_func`](./setlc-active-func-unguarded-readlc-active-add-func.md)|
-|[`__setusermatherr`](./setusermatherr.md)|
-|`_SetWinRTOutOfMemoryExceptionCallback`|
-|`_sopen_dispatch`|
-|`__std_exception_copy`|
-|`__std_exception_destroy`|
-|`__std_type_info_destroy_list`|
-|`__std_type_info_name`|
-|`__stdio_common_vfprintf`|
-|`__stdio_common_vfprintf_p`|
-|`__stdio_common_vfprintf_s`|
-|`__stdio_common_vfscanf`|
-|`__stdio_common_vfwprintf`|
-|`__stdio_common_vfwprintf_p`|
-|`__stdio_common_vfwprintf_s`|
-|`__stdio_common_vfwscanf`|
-|`__stdio_common_vsnprintf_s`|
-|`__stdio_common_vsnwprintf_s`|
-|`__stdio_common_vsprintf`|
-|`__stdio_common_vsprintf_p`|
-|`__stdio_common_vsprintf_s`|
-|`__stdio_common_vsscanf`|
-|`__stdio_common_vswprintf`|
-|`__stdio_common_vswprintf_p`|
-|`__stdio_common_vswprintf_s`|
-|`__stdio_common_vswscanf`|
-|`_Strftime`|
-|`__STRINGTOLD`|
-|`__STRINGTOLD_L`|
-|`__strncnt`|
-|`__sys_errlist`|
-|`__sys_nerr`|
-|`__threadhandle`|
-|`__threadid`|
-|`__timezone`|
-|`__TypeMatch`|
-|`__tzname`|
-|`__unDName`|
-|`__unDNameEx`|
-|`__unDNameHelper`|
-|`__unguarded_readlc_active`|
-|[`___unguarded_readlc_active_add_func`](./setlc-active-func-unguarded-readlc-active-add-func.md)|
-|`_unloaddll`|
-|`_unlock_locales`|
-|`_vacopy`|
-|`_ValidateExecute`|
-|`_ValidateRead`|
-|`_ValidateWrite`|
-|`_VCrtDbgReportA`|
-|`_VCrtDbgReportW`|
-|`_W_Getdays`|
-|`_W_Getmonths`|
-|`_W_Getnames`|
-|`_W_Gettnames`|
-|`_wassert`|
-|`_Wcsftime`|
-|`__wcsncnt`|
-|[`__wgetmainargs`](./getmainargs-wgetmainargs.md)|
-|`_wsopen_dispatch`|
-|`_Xbad_alloc`|
-|`_Xlength_error`|
+| Name |
+|---|
+| `__acrt_iob_func` |
+| `__AdjustPointer` |
+| `_assert` |
+| `__BuildCatchObject` |
+| `__BuildCatchObjectHelper` |
+| `__C_specific_handler` |
+| `_calloc_base` |
+| `_chkesp` |
+| `__chkstk` |
+| `_chkstk` |
+| `_chvalidator` |
+| `_chvalidator_l` |
+| `_CIacos` |
+| `_CIasin` |
+| [`_CIatan`](./ciatan.md) |
+| [`_CIatan2`](./ciatan2.md) |
+| [`_CIcos`](./cicos.md) |
+| `_CIcosh` |
+| [`_CIexp`](./ciexp.md) |
+| [`_CIfmod`](./cifmod.md) |
+| [`_CIlog`](./cilog.md) |
+| [`_CIlog10`](./cilog10.md) |
+| [`_CIpow`](./cipow.md) |
+| [`_CIsin`](./cisin.md) |
+| `_CIsinh` |
+| [`_CIsqrt`](./cisqrt.md) |
+| [`_CItan`](./citan.md) |
+| `_CItanh` |
+| `__clean_type_info_names_internal` |
+| `_configure_narrow_argv` |
+| `_configure_wide_argv` |
+| `__conio_common_vcprintf` |
+| `__conio_common_vcprintf_p` |
+| `__conio_common_vcprintf_s` |
+| `__conio_common_vcscanf` |
+| `__conio_common_vcwprintf` |
+| `__conio_common_vcwprintf_p` |
+| `__conio_common_vcwprintf_s` |
+| `__conio_common_vcwscanf` |
+| `__CppXcptFilter` |
+| `__create_locale` |
+| `_crt_atexit` |
+| `_crt_at_quick_exit` |
+| `__crtCompareStringA` |
+| `__crtCompareStringEx` |
+| `__crtCompareStringW` |
+| `__crtCreateEventExW` |
+| `__crtCreateSemaphoreExW` |
+| `__crtCreateSymbolicLinkW` |
+| `_crt_debugger_hook` |
+| `__crtEnumSystemLocalesEx` |
+| `__crtFlsAlloc` |
+| `__crtFlsFree` |
+| `__crtFlsGetValue` |
+| `__crtFlsSetValue` |
+| `_CrtGetCheckCount` |
+| `__crtGetDateFormatEx` |
+| `__crtGetFileInformationByHandleEx` |
+| `__crtGetLocaleInfoEx` |
+| `__crtGetShowWindowMode` |
+| `__crtGetTickCount64` |
+| `__crtGetTimeFormatEx` |
+| `__crtGetUserDefaultLocaleName` |
+| `__crtInitializeCriticalSectionEx` |
+| `__crtIsPackagedApp` |
+| `__crtIsValidLocaleName` |
+| `__crtLCMapStringA` |
+| `__crtLCMapStringEx` |
+| [`__crtLCMapStringW`](./crtlcmapstringw.md) |
+| `_CrtSetCheckCount` |
+| `_CrtSetDbgBlockType` |
+| `__crtSetFileInformationByHandle` |
+| `__crtSetThreadStackGuarantee` |
+| `__crtSetUnhandledExceptionFilter` |
+| `__crtSleep` |
+| `__crtTerminateProcess` |
+| `__crtUnhandledException` |
+| `__CxxDetectRethrow` |
+| `__CxxExceptionFilter` |
+| [`__CxxFrameHandler`](./cxxframehandler.md) |
+| `__CxxFrameHandler2` |
+| `__CxxFrameHandler3` |
+| `__CxxLongjmpUnwind` |
+| `__CxxQueryExceptionSize` |
+| `__CxxRegisterExceptionObject` |
+| `_CxxThrowException` |
+| `__CxxUnregisterExceptionObject` |
+| `__daylight` |
+| `_dclass` |
+| `__DestructExceptionObject` |
+| [`__dllonexit`](./dllonexit.md) |
+| `__doserrno` |
+| `_dosmaperr` |
+| `_dpcomp` |
+| `_dsign` |
+| `__dstbias` |
+| `_dtest` |
+| `_EH_prolog` |
+| `_errno` |
+| `_except_handler2` |
+| [`_except_handler3`](./except-handler3.md) |
+| `_except_handler4_common` |
+| `_except1` |
+| [`_execute_onexit_table`](./execute-onexit-table-initialize-onexit-table-register-onexit-function.md) |
+| `_fdclass` |
+| `_fdpcomp` |
+| `_fdsign` |
+| `_fdtest` |
+| `_filbuf` |
+| `_FindAndUnlinkFrame` |
+| `_flsbuf` |
+| `__fpe_flt_rounds` |
+| `_FPE_Raise` |
+| `__fpecode` |
+| `__FrameUnwindFilter` |
+| `_fread_nolock_s` |
+| `_free_base` |
+| `__free_locale` |
+| `_freea_s` |
+| `_freefls` |
+| `_ftol` |
+| `__get_current_locale` |
+| `__get_flsindex` |
+| `_get_initial_narrow_environment` |
+| `_get_initial_wide_environment` |
+| `_get_narrow_winmain_command_line` |
+| `_get_stream_buffer_pointers` |
+| `__get_tlsindex` |
+| `_get_wide_winmain_command_line` |
+| `_Getdays` |
+| [`__getmainargs`](./getmainargs-wgetmainargs.md) |
+| `_Getmonths` |
+| `__GetPlatformExceptionInfo` |
+| `_getptd` |
+| `_Gettnames` |
+| `_global_unwind2` |
+| `_inconsistency` |
+| `_initialize_lconv_for_unsigned_char` |
+| `_initialize_narrow_environment` |
+| [`_initialize_onexit_table`](./execute-onexit-table-initialize-onexit-table-register-onexit-function.md) |
+| `_initialize_wide_environment` |
+| `_initptd` |
+| `_invalid_parameter` |
+| `_invoke_watson` |
+| `__iob_func` |
+| `_IsExceptionObjectToBeDestroyed` |
+| [`___lc_codepage_func`](./lc-codepage-func.md) |
+| [`___lc_collate_cp_func`](./lc-collate-cp-func.md) |
+| [`___lc_locale_name_func`](./lc-locale-name-func.md) |
+| `__lconv_init` |
+| `_ldclass` |
+| `_ldpcomp` |
+| `_ldsign` |
+| `_ldtest` |
+| `__libm_sse2_acos` |
+| `_libm_sse2_acos_precise` |
+| `__libm_sse2_acosf` |
+| `__libm_sse2_asin` |
+| `_libm_sse2_asin_precise` |
+| `__libm_sse2_asinf` |
+| `__libm_sse2_atan` |
+| `_libm_sse2_atan_precise` |
+| `__libm_sse2_atan2` |
+| `__libm_sse2_atanf` |
+| `__libm_sse2_cos` |
+| `_libm_sse2_cos_precise` |
+| `__libm_sse2_cosf` |
+| `__libm_sse2_exp` |
+| `_libm_sse2_exp_precise` |
+| `__libm_sse2_expf` |
+| `__libm_sse2_log` |
+| `_libm_sse2_log_precise` |
+| `__libm_sse2_log10` |
+| `_libm_sse2_log10_precise` |
+| `__libm_sse2_log10f` |
+| `__libm_sse2_logf` |
+| `__libm_sse2_pow` |
+| `_libm_sse2_pow_precise` |
+| `__libm_sse2_powf` |
+| `__libm_sse2_sin` |
+| `_libm_sse2_sin_precise` |
+| `__libm_sse2_sinf` |
+| `_libm_sse2_sqrt_precise` |
+| `__libm_sse2_tan` |
+| `_libm_sse2_tan_precise` |
+| `__libm_sse2_tanf` |
+| [`_local_unwind2`](./local-unwind2.md) |
+| `_local_unwind4` |
+| `_lock_locales` |
+| `_longjmpex` |
+| `_malloc_base` |
+| [`___mb_cur_max_func`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md) |
+| [`___mb_cur_max_l_func`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md) |
+| `_mbctype` |
+| `_NLG_Dispatch2` |
+| `_NLG_Return` |
+| `_NLG_Return2` |
+| `__p___argc` |
+| `__p___argv` |
+| `__p___initenv` |
+| [`__p___mb_cur_max`](./mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md) |
+| `__p___wargv` |
+| `__p___winitenv` |
+| `__p__acmdln` |
+| [`__p__commode`](./p-commode.md) |
+| `__p__crtAssertBusy` |
+| `__p__crtBreakAlloc` |
+| `__p__crtDbgFlag` |
+| `__p__daylight` |
+| `__p__dstbias` |
+| `__p__environ` |
+| [`__p__fmode`](./p-fmode.md) |
+| `__p__iob` |
+| `__p__mbcasemap` |
+| `__p__mbctype` |
+| `__p__pctype` |
+| `__p__pgmptr` |
+| `__p__pwctype` |
+| `__p__timezone` |
+| `__p__tzname` |
+| `__p__wcmdln` |
+| `__p__wenviron` |
+| `__p__wpgmptr` |
+| `_pctype` |
+| [`__pctype_func`](./pctype-func.md) |
+| `_pwctype` |
+| `__pwctype_func` |
+| `__pxcptinfoptrs` |
+| `_query_app_type` |
+| `_realloc_base` |
+| [`_register_onexit_function`](./execute-onexit-table-initialize-onexit-table-register-onexit-function.md) |
+| `_register_thread_local_exe_atexit_callback` |
+| `__report_gsfailure` |
+| `__RTCastToVoid` |
+| [`__RTDynamicCast`](./rtdynamiccast.md) |
+| `__RTtypeid` |
+| `_seh_filter_dll` |
+| `_seh_filter_exe` |
+| `_seh_longjmp_unwind` |
+| `_seh_longjmp_unwind4` |
+| [`__set_app_type`](./internal-set-app-type.md) |
+| `_set_malloc_crt_max_wait` |
+| [`_setjmp3`](./setjmp3.md) |
+| `__setlc_active` |
+| [`___setlc_active_func`](./setlc-active-func-unguarded-readlc-active-add-func.md) |
+| [`__setusermatherr`](./setusermatherr.md) |
+| `_SetWinRTOutOfMemoryExceptionCallback` |
+| `_sopen_dispatch` |
+| `__std_exception_copy` |
+| `__std_exception_destroy` |
+| `__std_type_info_destroy_list` |
+| `__std_type_info_name` |
+| `__stdio_common_vfprintf` |
+| `__stdio_common_vfprintf_p` |
+| `__stdio_common_vfprintf_s` |
+| `__stdio_common_vfscanf` |
+| `__stdio_common_vfwprintf` |
+| `__stdio_common_vfwprintf_p` |
+| `__stdio_common_vfwprintf_s` |
+| `__stdio_common_vfwscanf` |
+| `__stdio_common_vsnprintf_s` |
+| `__stdio_common_vsnwprintf_s` |
+| `__stdio_common_vsprintf` |
+| `__stdio_common_vsprintf_p` |
+| `__stdio_common_vsprintf_s` |
+| `__stdio_common_vsscanf` |
+| `__stdio_common_vswprintf` |
+| `__stdio_common_vswprintf_p` |
+| `__stdio_common_vswprintf_s` |
+| `__stdio_common_vswscanf` |
+| `_Strftime` |
+| `__STRINGTOLD` |
+| `__STRINGTOLD_L` |
+| `__strncnt` |
+| `__sys_errlist` |
+| `__sys_nerr` |
+| `__threadhandle` |
+| `__threadid` |
+| `__timezone` |
+| `__TypeMatch` |
+| `__tzname` |
+| `__unDName` |
+| `__unDNameEx` |
+| `__unDNameHelper` |
+| `__unguarded_readlc_active` |
+| [`___unguarded_readlc_active_add_func`](./setlc-active-func-unguarded-readlc-active-add-func.md) |
+| `_unloaddll` |
+| `_unlock_locales` |
+| `_vacopy` |
+| `_ValidateExecute` |
+| `_ValidateRead` |
+| `_ValidateWrite` |
+| `_VCrtDbgReportA` |
+| `_VCrtDbgReportW` |
+| `_W_Getdays` |
+| `_W_Getmonths` |
+| `_W_Getnames` |
+| `_W_Gettnames` |
+| `_wassert` |
+| `_Wcsftime` |
+| `__wcsncnt` |
+| [`__wgetmainargs`](./getmainargs-wgetmainargs.md) |
+| `_wsopen_dispatch` |
+| `_Xbad_alloc` |
+| `_Xlength_error` |
 
 ## See also
 

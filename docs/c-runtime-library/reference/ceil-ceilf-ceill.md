@@ -44,9 +44,9 @@ Floating-point value.
 
 The **`ceil`** functions return a floating-point value that represents the smallest integer that is greater than or equal to *`x`*. There's no error return.
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|± `QNAN`, `IND`|none|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
 
 **`ceil`** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [`_set_SSE2_enable`](set-sse2-enable.md).
 
@@ -60,9 +60,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-| **`ceil`**, **`ceilf`**, **`ceill`**| \<math.h> |
+| Routine | Required header |
+|---|---|
+| **`ceil`**, **`ceilf`**, **`ceill`** | \<math.h> |
 | **`ceil`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).

@@ -56,9 +56,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`abort`**|`<process.h>` or `<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`abort`** | `<process.h>` or `<stdlib.h>` |
 
 ## Example
 

@@ -10,7 +10,7 @@ ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
 
 ## Syntax
 
-```
+```C
 #include <fcntl.h>
 ```
 
@@ -20,11 +20,11 @@ The `_O_BINARY` and `_O_TEXT` manifest constants determine the translation mode 
 
 The allowed values are:
 
-|Value|Description|
-|-|-|
-`_O_TEXT`  | Opens file in text (translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed (LF) on input. Line feed characters are translated into CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading, and for reading and writing, `fopen` checks for CTRL+Z at the end of the file and removes it, if possible. It's removed because using the `fseek` and `ftell` functions to move within a file ending with CTRL+Z may cause `fseek` to behave improperly near the end of the file.
-`_O_BINARY`  | Opens file in binary (untranslated) mode. The above translations are suppressed.
-`_O_RAW`  | Same as `_O_BINARY`. Supported for C 2.0 compatibility.
+| Value | Description |
+|---|---|
+| `_O_TEXT` | Opens file in text (translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed (LF) on input. Line feed characters are translated into CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading, and for reading and writing, `fopen` checks for CTRL+Z at the end of the file and removes it, if possible. It's removed because using the `fseek` and `ftell` functions to move within a file ending with CTRL+Z may cause `fseek` to behave improperly near the end of the file. |
+| `_O_BINARY` | Opens file in binary (untranslated) mode. The above translations are suppressed. |
+| `_O_RAW` | Same as `_O_BINARY`. Supported for C 2.0 compatibility. |
 
 For more information, see [Text and binary mode file I/O](./text-and-binary-mode-file-i-o.md) and [File translation constants](./file-translation-constants.md).
 

@@ -35,11 +35,11 @@ The value to round.
 
 If successful, returns *`x`*, rounded to the nearest integer, using the current rounding format as reported by [`fegetround`](fegetround-fesetround2.md). Otherwise, the function may return one of the following values:
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* = ±INFINITY|±INFINITY, unmodified|
-|*`x`* = ±0|±0, unmodified|
-|*`x`* = NaN|NaN|
+| Issue | Return |
+|---|---|
+| *`x`* = ±INFINITY | ±INFINITY, unmodified |
+| *`x`* = ±0 | ±0, unmodified |
+| *`x`* = NaN | NaN |
 
 Errors aren't reported through [`_matherr`](matherr.md); specifically, this function doesn't report any `FE_INEXACT` exceptions.
 
@@ -57,10 +57,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`nearbyint`**, **`nearbyintf`**, **`nearbyintl`**|\<math.h>|\<cmath> or \<math.h>|
-|**`nearbyint`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`nearbyint`**, **`nearbyintf`**, **`nearbyintl`** | \<math.h> | \<cmath> or \<math.h> |
+| **`nearbyint`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

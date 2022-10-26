@@ -109,12 +109,12 @@ For more information, see [Format specifications](../format-specification-syntax
 
 ### Error conditions
 
-|`Condition`|Return|`errno`|
-|-----------------|------------|-------------|
-|*`buffer`* is `NULL`|-1|`EINVAL`|
-|*`format`* is `NULL`|-1|`EINVAL`|
-|*`count`* <= 0|-1|`EINVAL`|
-|*`sizeOfBuffer`* too small (and *`count`* != `_TRUNCATE`)|-1 (and *`buffer`* set to an empty string)|`ERANGE`|
+| Condition | Return value | `errno` |
+|---|---|---|
+| *`buffer`* is `NULL` | -1 | `EINVAL` |
+| *`format`* is `NULL` | -1 | `EINVAL` |
+| *`count`* <= 0 | -1 | `EINVAL` |
+| *`sizeOfBuffer`* too small (and *`count`* != `_TRUNCATE`) | -1 (and *`buffer`* set to an empty string) | `ERANGE` |
 
 ## Remarks
 
@@ -140,18 +140,18 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_vsntprintf_s`**|**`_vsnprintf_s`**|**`_vsnprintf_s`**|**`_vsnwprintf_s`**|
-|**`_vsntprintf_s_l`**|**`_vsnprintf_s_l`**|**`_vsnprintf_s_l`**|**`_vsnwprintf_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vsntprintf_s` | **`_vsnprintf_s`** | **`_vsnprintf_s`** | **`_vsnwprintf_s`** |
+| `_vsntprintf_s_l` | **`_vsnprintf_s_l`** | **`_vsnprintf_s_l`** | **`_vsnwprintf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`vsnprintf_s`**|`<stdio.h>` and `<stdarg.h>`|`<varargs.h>`*|
-|**`_vsnprintf_s`**, **`_vsnprintf_s_l`**|`<stdio.h>` and `<stdarg.h>`|`<varargs.h>`*|
-|**`_vsnwprintf_s`**, **`_vsnwprintf_s_l`**|`<stdio.h>` or `<wchar.h>`, and `<stdarg.h>`|`<varargs.h>`*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`vsnprintf_s`** | `<stdio.h>` and `<stdarg.h>` | `<varargs.h>`* |
+| **`_vsnprintf_s`**, **`_vsnprintf_s_l`** | `<stdio.h>` and `<stdarg.h>` | `<varargs.h>`* |
+| **`_vsnwprintf_s`**, **`_vsnwprintf_s_l`** | `<stdio.h>` or `<wchar.h>`, and `<stdarg.h>` | `<varargs.h>`* |
 
 \* Required for UNIX V compatibility.
 

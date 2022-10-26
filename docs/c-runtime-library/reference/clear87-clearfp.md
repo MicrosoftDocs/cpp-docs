@@ -35,10 +35,10 @@ These functions are deprecated when compiling with [/clr (Common Language Runtim
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_clear87`**|\<float.h>|
-|**`_clearfp`**|\<float.h>|
+| Routine | Required header |
+|---|---|
+| **`_clear87`** | \<float.h> |
+| **`_clearfp`** | \<float.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

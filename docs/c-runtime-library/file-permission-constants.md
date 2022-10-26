@@ -9,7 +9,7 @@ ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
 
 ## Syntax
 
-```
+```C
 #include <sys/stat.h>
 ```
 
@@ -19,19 +19,19 @@ One of these constants is required when `_O_CREAT` (`_open`, `_sopen`) is specif
 
 The `pmode` argument specifies the file's permission settings as follows.
 
-|Constant|Meaning|
-|--------------|-------------|
-|`_S_IREAD`|Reading permitted|
-|`_S_IWRITE`|Writing permitted|
-|`_S_IREAD | _S_IWRITE`|Reading and writing permitted|
+| Constant | Meaning |
+|---|---|
+| `_S_IREAD` | Reading permitted |
+| `_S_IWRITE` | Writing permitted |
+| `_S_IREAD | _S_IWRITE` | Reading and writing permitted |
 
 When used as the `pmode` argument for `_umask`, the manifest constant sets the permission setting, as follows.
 
-|Constant|Meaning|
-|--------------|-------------|
-|`_S_IREAD`|Writing not permitted (file is read-only)|
-|`_S_IWRITE`|Reading not permitted (file is write-only)|
-|`_S_IREAD | _S_IWRITE`|Both reading and writing not permitted|
+| Constant | Meaning |
+|---|---|
+| `_S_IREAD` | Writing not permitted (file is read-only) |
+| `_S_IWRITE` | Reading not permitted (file is write-only) |
+| `_S_IREAD | _S_IWRITE` | Both reading and writing not permitted |
 
 ## See also
 

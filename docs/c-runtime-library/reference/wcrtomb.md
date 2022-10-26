@@ -106,9 +106,9 @@ The corresponding wide character "Q" was converted to the "Q" multibyte characte
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wcrtomb`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`wcrtomb`** | \<wchar.h> |
 
 ## See also
 

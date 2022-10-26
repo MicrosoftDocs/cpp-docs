@@ -17,8 +17,7 @@ Indicates whether one or more exceptions have been thrown, but haven't yet been 
 ## Syntax
 
 ```cpp
-bool __uncaught_exception(
-   );
+bool __uncaught_exception();
 ```
 
 ## Return value
@@ -29,9 +28,9 @@ bool __uncaught_exception(
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__uncaught_exception|eh.h|
+| Routine | Required header |
+|---|---|
+| **`__uncaught_exception`** | `<eh.h>` |
 
 ## See also
 

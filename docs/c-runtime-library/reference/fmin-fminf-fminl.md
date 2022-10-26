@@ -57,11 +57,11 @@ The second value to compare.
 
 If successful, returns the smaller of *`x`* or *`y`*.
 
-|Input|Result|
-|-----------|------------|
-|*`x`* is NaN|*`y`*|
-|*`y`* is NaN|*`x`*|
-|*`x`* and *`y`* are NaN|NaN|
+| Input | Result |
+|---|---|
+| *`x`* is NaN | *`y`* |
+| *`y`* is NaN | *`x`* |
+| *`x`* and *`y`* are NaN | NaN |
 
 The function doesn't cause [`_matherr`](matherr.md) to be invoked, cause any floating-point exceptions, or change the value of `errno`.
 
@@ -73,10 +73,10 @@ If you use the \<tgmath.h> `fmin()` macro, the type of the argument determines w
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`fmin`**, **`fminf`**, **`fminl`**|C: \<math.h><br />C++: \<math.h> or \<cmath>|
-|**`fmin`** macro | \<tgmath.h> |
+| Routine | Required header |
+|---|---|
+| **`fmin`**, **`fminf`**, **`fminl`** | C: \<math.h><br />C++: \<math.h> or \<cmath> |
+| **`fmin`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -57,9 +57,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`timespec_get`**, **`_timespec32_get`**, **`_timespec64_get`**|C: \<time.h>, C++: \<ctime> or \<time.h>|
+| Routine | Required header |
+|---|---|
+| **`timespec_get`**, **`_timespec32_get`**, **`_timespec64_get`** | C: \<time.h>, C++: \<ctime> or \<time.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

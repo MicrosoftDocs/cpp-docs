@@ -12,24 +12,24 @@ The **`_ftime`** and **`localtime`** routines use the **`TZ`** environment varia
 
 ### Time routines
 
-|Function|Use|
-|--------------|---------|
-|[`asctime`, `_wasctime`](./reference/asctime-wasctime.md), [`asctime_s`, `_wasctime_s`](./reference/asctime-s-wasctime-s.md)|Convert time from type **`struct tm`** to character string. The versions of these functions with the **`_s`** suffix are more secure.|
-|[`clock`](./reference/clock.md)|Return elapsed wall-clock time for process.|
-|[`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](./reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [`_ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`](./reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)|Convert time from type **`time_t`**, **`__time32_t`** or **`__time64_t`** to character string. The versions of these functions with the **`_s`** suffix are more secure.|
-|[`difftime`, `_difftime32`, `_difftime64`](./reference/difftime-difftime32-difftime64.md)|Compute difference between two times.|
-|[`_ftime`, `_ftime32`, `_ftime64`](./reference/ftime-ftime32-ftime64.md),[`_ftime_s`, `_ftime32_s`, _ftime64_s](./reference/ftime-s-ftime32-s-ftime64-s.md)|Store current system time in variable of type **`struct _timeb`** or type **`struct __timeb64`** The versions of these functions with the **`_s`** suffix are more secure.|
-|[`_futime`, `_futime32`, `_futime64`](./reference/futime-futime32-futime64.md)|Set modification time on open file|
-|[`gmtime`, `_gmtime32`, `_gmtime64`](./reference/gmtime-gmtime32-gmtime64.md), [`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](./reference/gmtime-s-gmtime32-s-gmtime64-s.md)|Convert time from type **`time_t`** to **`struct tm`** or from type **`__time64_t`** to **`struct tm`**. The versions of these functions with the **`_s`** suffix are more secure.|
-|[`localtime`, `_localtime32`, `_localtime64`](./reference/localtime-localtime32-localtime64.md), [`localtime_s`, `_localtime32_s`, `_localtime64_s`](./reference/localtime-s-localtime32-s-localtime64-s.md)|Convert time from type **`time_t`** to **`struct tm`** or from type **`__time64_t`** to **`struct tm`** with local correction. The versions of these functions with the **`_s`** suffix are more secure.|
-|[`_mkgmtime`, `_mkgmtime32`, `_mkgmtime64`](./reference/mkgmtime-mkgmtime32-mkgmtime64.md)|Convert time to calendar value in Greenwich Mean Time.|
-|[`mktime`, `_mktime32`, `_mktime64`](./reference/mktime-mktime32-mktime64.md)|Convert time to calendar value.|
-|[`_strdate`, `_wstrdate`](./reference/strdate-wstrdate.md), [`_strdate_s`, `_wstrdate_s`](./reference/strdate-s-wstrdate-s.md)|Return current system date as string. The versions of these functions with the **`_s`** suffix are more secure.|
-|[`strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`](./reference/strftime-wcsftime-strftime-l-wcsftime-l.md)|Format date-and-time string for international use.|
-|[`_strtime`, `_wstrtime`](./reference/strtime-wstrtime.md), [`_strtime_s`, `_wstrtime_s`](./reference/strtime-s-wstrtime-s.md)|Return current system time as string. The versions of these functions with the **`_s`** suffix are more secure.|
-|[`time`, `_time32`, `_time64`](./reference/time-time32-time64.md)|Get current system time as type **`time_t`**, **`__time32_t`** or as type **`__time64_t`**.|
-|[`_tzset`](./reference/tzset.md)|Set external time variables from environment time variable **`TZ`**.|
-|[`_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`](./reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)|Set modification time for specified file using either current time or time value stored in structure.|
+| Function | Use |
+|---|---|
+| [`asctime`, `_wasctime`](./reference/asctime-wasctime.md), [`asctime_s`, `_wasctime_s`](./reference/asctime-s-wasctime-s.md) | Convert time from type **`struct tm`** to character string. The versions of these functions with the **`_s`** suffix are more secure. |
+| [`clock`](./reference/clock.md) | Return elapsed wall-clock time for process. |
+| [`ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`](./reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [`_ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`](./reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md) | Convert time from type **`time_t`**, **`__time32_t`** or **`__time64_t`** to character string. The versions of these functions with the **`_s`** suffix are more secure. |
+| [`difftime`, `_difftime32`, `_difftime64`](./reference/difftime-difftime32-difftime64.md) | Compute difference between two times. |
+| [`_ftime`, `_ftime32`, `_ftime64`](./reference/ftime-ftime32-ftime64.md),[`_ftime_s`, `_ftime32_s`, _ftime64_s](./reference/ftime-s-ftime32-s-ftime64-s.md) | Store current system time in variable of type **`struct _timeb`** or type **`struct __timeb64`** The versions of these functions with the **`_s`** suffix are more secure. |
+| [`_futime`, `_futime32`, `_futime64`](./reference/futime-futime32-futime64.md) | Set modification time on open file |
+| [`gmtime`, `_gmtime32`, `_gmtime64`](./reference/gmtime-gmtime32-gmtime64.md), [`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](./reference/gmtime-s-gmtime32-s-gmtime64-s.md) | Convert time from type **`time_t`** to **`struct tm`** or from type **`__time64_t`** to **`struct tm`**. The versions of these functions with the **`_s`** suffix are more secure. |
+| [`localtime`, `_localtime32`, `_localtime64`](./reference/localtime-localtime32-localtime64.md), [`localtime_s`, `_localtime32_s`, `_localtime64_s`](./reference/localtime-s-localtime32-s-localtime64-s.md) | Convert time from type **`time_t`** to **`struct tm`** or from type **`__time64_t`** to **`struct tm`** with local correction. The versions of these functions with the **`_s`** suffix are more secure. |
+| [`_mkgmtime`, `_mkgmtime32`, `_mkgmtime64`](./reference/mkgmtime-mkgmtime32-mkgmtime64.md) | Convert time to calendar value in Greenwich Mean Time. |
+| [`mktime`, `_mktime32`, `_mktime64`](./reference/mktime-mktime32-mktime64.md) | Convert time to calendar value. |
+| [`_strdate`, `_wstrdate`](./reference/strdate-wstrdate.md), [`_strdate_s`, `_wstrdate_s`](./reference/strdate-s-wstrdate-s.md) | Return current system date as string. The versions of these functions with the **`_s`** suffix are more secure. |
+| [`strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`](./reference/strftime-wcsftime-strftime-l-wcsftime-l.md) | Format date-and-time string for international use. |
+| [`_strtime`, `_wstrtime`](./reference/strtime-wstrtime.md), [`_strtime_s`, `_wstrtime_s`](./reference/strtime-s-wstrtime-s.md) | Return current system time as string. The versions of these functions with the **`_s`** suffix are more secure. |
+| [`time`, `_time32`, `_time64`](./reference/time-time32-time64.md) | Get current system time as type **`time_t`**, **`__time32_t`** or as type **`__time64_t`**. |
+| [`_tzset`](./reference/tzset.md) | Set external time variables from environment time variable **`TZ`**. |
+| [`_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`](./reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) | Set modification time for specified file using either current time or time value stored in structure. |
 
 > [!NOTE]
 > In all versions of Microsoft C/C++ except Microsoft C/C++ version 7.0, and in all versions of Visual C++, the time function returns the current time as the number of seconds elapsed since midnight on January 1, 1970. In Microsoft C/C++ version 7.0, **`time`** returned the current time as the number of seconds elapsed since midnight on December 31, 1899.

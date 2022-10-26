@@ -65,9 +65,9 @@ fyi, ENOENT = 2
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_get_errno`**|\<stdlib.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_get_errno`** | \<stdlib.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

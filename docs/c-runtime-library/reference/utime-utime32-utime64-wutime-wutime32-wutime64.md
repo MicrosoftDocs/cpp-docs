@@ -55,8 +55,8 @@ Pointer to stored time values.
 
 Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1, and `errno` is set to one of the following values:
 
-|errno value|Condition|
-|-|-|
+| `errno` value | Condition |
+|---|---|
 | `EACCES` | Path specifies directory or read-only file |
 | `EINVAL` | Invalid *`times`* argument |
 | `EMFILE` | Too many open files (the file must be opened to change its modification time) |
@@ -73,7 +73,7 @@ The **`_utime`** function sets the modification time for the file specified by *
 The **`_utimbuf`** structure stores file access and modification times used by **`_utime`** to change file-modification dates. The structure has the following fields, which are both of type `time_t`:
 
 | Field | Description |
-|-------|---|
+|---|---|
 | **`actime`** | Time of file access |
 | **`modtime`** | Time of file modification |
 
@@ -87,19 +87,19 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tutime`|**`_utime`**|**`_utime`**|**`_wutime`**|
-|`_tutime32`|**`_utime32`**|**`_utime32`**|**`_wutime32`**|
-|`_tutime64`|**`_utime64`**|**`_utime64`**|**`_wutime64`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tutime` | **`_utime`** | **`_utime`** | **`_wutime`** |
+| `_tutime32` | **`_utime32`** | **`_utime32`** | **`_wutime32`** |
+| `_tutime64` | **`_utime64`** | **`_utime64`** | **`_wutime64`** |
 
 ## Requirements
 
-|Routine|Required headers|Optional headers|
-|-------------|----------------------|----------------------|
-|**`_utime`**, **`_utime32`**, **`_utime64`**|\<sys/utime.h>|\<errno.h>|
-|**`_utime64`**|\<sys/utime.h>|\<errno.h>|
-|**`_wutime`**|\<utime.h> or \<wchar.h>|\<errno.h>|
+| Routine | Required headers | Optional headers |
+|---|---|---|
+| **`_utime`**, **`_utime32`**, **`_utime64`** | \<sys/utime.h> | \<errno.h> |
+| **`_utime64`** | \<sys/utime.h> | \<errno.h> |
+| **`_wutime`** | \<utime.h> or \<wchar.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -64,22 +64,22 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tctime`|**`ctime`**|**`ctime`**|**`_wctime`**|
-|`_tctime32`|**`_ctime32`**|**`_ctime32`**|**`_wctime32`**|
-|`_tctime64`|**`_ctime64`**|**`_ctime64`**|**`_wctime64`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tctime` | **`ctime`** | **`ctime`** | **`_wctime`** |
+| `_tctime32` | **`_ctime32`** | **`_ctime32`** | **`_wctime32`** |
+| `_tctime64` | **`_ctime64`** | **`_ctime64`** | **`_wctime64`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`ctime`**|\<time.h>|
-|**`_ctime32`**|\<time.h>|
-|**`_ctime64`**|\<time.h>|
-|**`_wctime`**|\<time.h> or \<wchar.h>|
-|**`_wctime32`**|\<time.h> or \<wchar.h>|
-|**`_wctime64`**|\<time.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`ctime`** | \<time.h> |
+| **`_ctime32`** | \<time.h> |
+| **`_ctime64`** | \<time.h> |
+| **`_wctime`** | \<time.h> or \<wchar.h> |
+| **`_wctime32`** | \<time.h> or \<wchar.h> |
+| **`_wctime64`** | \<time.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

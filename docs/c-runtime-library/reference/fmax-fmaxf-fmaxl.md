@@ -59,11 +59,11 @@ If successful, returns the larger of *`x`* or *`y`*. The value returned is exact
 
 Otherwise, may return one of the following values:
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* = NaN|*`y`*|
-|*`y`* = NaN|*`x`*|
-|*`x`* and *`y`* = NaN|NaN|
+| Issue | Return |
+|---|---|
+| *`x`* = NaN | *`y`* |
+| *`y`* = NaN | *`x`* |
+| *`x`* and *`y`* = NaN | NaN |
 
 This function doesn't use the errors specified in  [`_matherr`](matherr.md).
 
@@ -75,10 +75,10 @@ If you use the \<tgmath.h> `fmax()` macro, the type of the argument determines w
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`fmax`**, **`fmaxf`**, **`fmaxl`**|\<math.h>|\<cmath> or \<math.h>|
-|**`fmax`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`fmax`**, **`fmaxf`**, **`fmaxl`** | \<math.h> | \<cmath> or \<math.h> |
+| **`fmax`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

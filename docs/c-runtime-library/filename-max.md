@@ -12,7 +12,7 @@ The maximum permissible length for a `filename` string buffer size.
 
 ## Syntax
 
-```
+```C
 #include <stdio.h>
 ```
 

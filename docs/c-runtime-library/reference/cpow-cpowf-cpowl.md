@@ -52,9 +52,9 @@ Because C++ allows overloading, you can call overloads of **`cpow`** that take a
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`cpow`**,               **`cpowf`**, **`cpowl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cpow`**, **`cpowf`**, **`cpowl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

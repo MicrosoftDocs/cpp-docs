@@ -70,11 +70,11 @@ The locale to use.
 
 Each of these functions returns a value that indicates the relationship of the substrings of *`string1`* and *`string2`*, as follows.
 
-|Return value|Relationship of string1 to string2|
-|------------------|----------------------------------------|
-|< 0|*`string1`* is less than *`string2`*.|
-|0|*`string1`* is identical to *`string2`*.|
-|> 0|*`string1`* is greater than *`string2`*.|
+| Return value | Relationship of *`string1`* to *`string2`* |
+|---|---|
+| < 0 | *`string1`* is less than *`string2`*. |
+| 0 | *`string1`* is identical to *`string2`*. |
+| > 0 | *`string1`* is greater than *`string2`*. |
 
 Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either STRING.h or MBSTRING.h. **`_wcsncoll`** can fail if either *`string1`* or *`string2`* contains wide-character codes that are outside the domain of the collating sequence. When an error occurs, **`_wcsncoll`** may set `errno` to `EINVAL`. To check for an error on a call to **`_wcsncoll`**, set `errno` to 0, and then check `errno` after the **`_wcsncoll`** call.
 
@@ -88,18 +88,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsnccoll`|**`_strncoll`**|**`_mbsncoll`**|**`_wcsncoll`**|
-|`_tcsncoll`|**`_strncoll`**|[`_mbsnbcoll`](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)|**`_wcsncoll`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsnccoll` | **`_strncoll`** | **`_mbsncoll`** | **`_wcsncoll`** |
+| `_tcsncoll` | **`_strncoll`** | [`_mbsnbcoll`](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md) | **`_wcsncoll`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strncoll`**, **`_strncoll_l`**|\<string.h>|
-|**`_wcsncoll`**, **`_wcsncoll_l`**|\<wchar.h> or \<string.h>|
-|**`_mbsncoll`**, **`_mbsncoll_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_strncoll`**, **`_strncoll_l`** | \<string.h> |
+| **`_wcsncoll`**, **`_wcsncoll_l`** | \<wchar.h> or \<string.h> |
+| **`_mbsncoll`**, **`_mbsncoll_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

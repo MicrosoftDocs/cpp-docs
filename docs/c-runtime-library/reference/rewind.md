@@ -45,9 +45,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`rewind`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`rewind`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

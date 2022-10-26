@@ -32,9 +32,9 @@ For more information about using other hook-capable run-time functions and writi
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtGetReportHook`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtGetReportHook`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

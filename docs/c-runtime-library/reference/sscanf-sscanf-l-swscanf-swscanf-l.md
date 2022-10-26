@@ -78,17 +78,17 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_stscanf`**|**`sscanf`**|**`sscanf`**|**`swscanf`**|
-|**`_stscanf_l`**|**`_sscanf_l`**|**`_sscanf_l`**|**`_swscanf_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_stscanf` | **`sscanf`** | **`sscanf`** | **`swscanf`** |
+| `_stscanf_l` | **`_sscanf_l`** | **`_sscanf_l`** | **`_swscanf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`sscanf`**, **`_sscanf_l`**|`<stdio.h>`|
-|**`swscanf`**, **`_swscanf_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`sscanf`**, **`_sscanf_l`** | `<stdio.h>` |
+| **`swscanf`**, **`_swscanf_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

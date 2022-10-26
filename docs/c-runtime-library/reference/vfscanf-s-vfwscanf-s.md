@@ -56,16 +56,16 @@ The main difference between the more secure functions (that have the **`_s`** su
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftscanf_s`|**`vfscanf_s`**|**`vfscanf_s`**|**`vfwscanf_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vftscanf_s` | **`vfscanf_s`** | **`vfscanf_s`** | **`vfwscanf_s`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`vfscanf_s`**|\<stdio.h>|
-|**`vfwscanf_s`**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`vfscanf_s`** | \<stdio.h> |
+| **`vfwscanf_s`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

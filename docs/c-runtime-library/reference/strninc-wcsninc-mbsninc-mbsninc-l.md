@@ -62,9 +62,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsninc`|**`_strninc`**|**`_mbsninc`**|**`_wcsninc`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsninc` | **`_strninc`** | **`_mbsninc`** | **`_wcsninc`** |
 
 **`_strninc`** and **`_wcsninc`** are single-byte-character string and wide-character string versions of **`_mbsninc`**. **`_wcsninc`** and **`_strninc`** are provided only for this mapping and shouldn't be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
@@ -72,12 +72,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsninc`**|\<mbstring.h>|
-|**`_mbsninc_l`**|\<mbstring.h>|
-|**`_strninc`**|\<tchar.h>|
-|**`_wcsninc`**|\<tchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsninc`** | \<mbstring.h> |
+| **`_mbsninc_l`** | \<mbstring.h> |
+| **`_strninc`** | \<tchar.h> |
+| **`_wcsninc`** | \<tchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -18,7 +18,7 @@ It's possible, though not recommended, to take advantage of Microsoft-specific l
 
 Consider the following code:
 
-```
+```C
 int func(void)
 {
     return 3;

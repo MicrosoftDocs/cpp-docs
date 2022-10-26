@@ -46,15 +46,15 @@ List of pointers to parameters.
 
 If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.
 
-|`errno` value|Description|
-|-------------------|-----------------|
-|`E2BIG`|The space required for the arguments and environment settings exceeds 32 KB.|
-|`EACCES`|The specified file has a locking or sharing violation.|
-|`EINVAL`|Invalid parameter.|
-|`EMFILE`|Too many files open (the specified file must be opened to determine whether it's executable).|
-|`ENOENT`|The file or path not found.|
-|`ENOEXEC`|The specified file isn't executable or has an invalid executable-file format.|
-|`ENOMEM`|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly.|
+| `errno` value | Description |
+|---|---|
+| `E2BIG` | The space required for the arguments and environment settings exceeds 32 KB. |
+| `EACCES` | The specified file has a locking or sharing violation. |
+| `EINVAL` | Invalid parameter. |
+| `EMFILE` | Too many files open (the specified file must be opened to determine whether it's executable). |
+| `ENOENT` | The file or path not found. |
+| `ENOEXEC` | The specified file isn't executable or has an invalid executable-file format. |
+| `ENOMEM` | Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly. |
 
 For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -66,10 +66,10 @@ The **`_execlp`** functions validate their parameters. If *`cmdname`* or *`arg0`
 
 ## Requirements
 
-|Function|Required header|Optional header|
-|--------------|---------------------|---------------------|
-|**`_execlp`**|\<process.h>|\<errno.h>|
-|**`_wexeclp`**|\<process.h> or \<wchar.h>|\<errno.h>|
+| Function | Required header | Optional header |
+|---|---|---|
+| **`_execlp`** | \<process.h> | \<errno.h> |
+| **`_wexeclp`** | \<process.h> or \<wchar.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

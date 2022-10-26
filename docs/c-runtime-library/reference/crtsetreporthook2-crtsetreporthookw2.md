@@ -66,10 +66,10 @@ These functions validate their parameters. If *`mode`* or *`pfnNewHook`* is inva
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_CrtSetReportHook2`**|\<crtdbg.h>|\<errno.h>|
-|**`_CrtSetReportHookW2`**|\<crtdbg.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_CrtSetReportHook2`** | \<crtdbg.h> | \<errno.h> |
+| **`_CrtSetReportHookW2`** | \<crtdbg.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
