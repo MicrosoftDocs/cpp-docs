@@ -42,7 +42,7 @@ Variable argument list.
 
 ## Return value
 
-Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.
+Each of these functions returns the number of fields that are successfully converted and assigned. The return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.
 
 If *`buffer`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
@@ -55,7 +55,7 @@ The **`vsscanf`** function reads data from *`buffer`* into the locations that ar
 > [!IMPORTANT]
 > When you use **`vsscanf`** to read a string, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, incorrectly formatted input can cause a buffer overrun.
 
-**`vswscanf`** is a wide-character version of **`vsscanf`**; the arguments to **`vswscanf`** are wide-character strings. **`vsscanf`** does not handle multibyte hexadecimal characters. **`vswscanf`** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`vswscanf`** and **`vsscanf`** behave identically.
+**`vswscanf`** is a wide-character version of **`vsscanf`**; the arguments to **`vswscanf`** are wide-character strings. **`vsscanf`** doesn't handle multibyte hexadecimal characters. **`vswscanf`** doesn't handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`vswscanf`** and **`vsscanf`** behave identically.
 
 ### Generic-text routine mappings
 
