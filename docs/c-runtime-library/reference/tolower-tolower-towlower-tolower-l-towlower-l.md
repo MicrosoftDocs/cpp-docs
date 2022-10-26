@@ -46,11 +46,11 @@ Locale to use for locale-specific translation.
 
 ## Return value
 
-Each of these routines converts a copy of *`c`* to lower case if the conversion is possible, and returns the result. There is no return value reserved to indicate an error.
+Each of these routines converts a copy of *`c`* to lower case if the conversion is possible, and returns the result. There's no return value reserved to indicate an error.
 
 ## Remarks
 
-Each of these routines converts a given uppercase letter to a lowercase letter if it is possible and relevant. The case conversion of **`towlower`** is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the `_l` suffix use the currently set locale. The versions of these functions that have the `_l` suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
+Each of these routines converts a given uppercase letter to a lowercase letter if it's possible and relevant. The case conversion of **`towlower`** is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the `_l` suffix use the currently set locale. The versions of these functions that have the `_l` suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
 In order for **`_tolower`** to give the expected results, [`__isascii`](isascii-isascii-iswascii.md) and [`isupper`](isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
 

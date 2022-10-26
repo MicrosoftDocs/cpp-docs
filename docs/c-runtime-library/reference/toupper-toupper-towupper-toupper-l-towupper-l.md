@@ -48,9 +48,9 @@ Locale to use.
 
 Each of these routines converts a copy of *`c`*, if possible, and returns the result.
 
-If *`c`* is a wide character for which `iswlower` is nonzero and there is a corresponding wide character for which [`iswupper`](isupper-isupper-l-iswupper-iswupper-l.md) is nonzero, **`towupper`** returns the corresponding wide character; otherwise, **`towupper`** returns *`c`* unchanged.
+If *`c`* is a wide character for which `iswlower` is nonzero and there's a corresponding wide character for which [`iswupper`](isupper-isupper-l-iswupper-iswupper-l.md) is nonzero, **`towupper`** returns the corresponding wide character; otherwise, **`towupper`** returns *`c`* unchanged.
 
-There is no return value reserved to indicate an error.
+There's no return value reserved to indicate an error.
 
 In order for **`toupper`** to give the expected results, [`__isascii`](isascii-isascii-iswascii.md) and [`islower`](islower-iswlower-islower-l-iswlower-l.md) must both return nonzero.
 
