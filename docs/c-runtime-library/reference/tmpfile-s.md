@@ -12,7 +12,7 @@ ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
 ---
 # `tmpfile_s`
 
-Creates a temporary file. It is a version of [`tmpfile`](tmpfile.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Creates a temporary file. It's a version of [`tmpfile`](tmpfile.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -37,13 +37,13 @@ Returns 0 if successful, an error code on failure.
 |----------------|----------------------|---------------------------------|
 |`NULL`|`EINVAL`|not changed|
 
-If the above parameter validation error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the return value is `EINVAL`.
+If the above parameter validation error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and the return value is `EINVAL`.
 
 ## Remarks
 
-The **`tmpfile_s`** function creates a temporary file and puts a pointer to that stream in the *`pFilePtr`* argument. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [`tmpnam_s`](tmpnam-s-wtmpnam-s.md) or [`tempnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [`fopen`](fopen-wfopen.md).
+The **`tmpfile_s`** function creates a temporary file and puts a pointer to that stream in the *`pFilePtr`* argument. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [`tmpnam_s`](tmpnam-s-wtmpnam-s.md) or [`tempnam`](tempnam-wtempnam-tmpnam-wtmpnam.md) with [`fopen`](fopen-wfopen.md).
 
-If the file cannot be opened, **`tmpfile_s`** writes `NULL` to the *`pFilePtr`* parameter. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in **w+b** (binary read/write) mode.
+If the file can't be opened, **`tmpfile_s`** writes `NULL` to the *`pFilePtr`* parameter. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory doesn't change. The temporary file is opened in **w+b** (binary read/write) mode.
 
 Failure can occur if you attempt more than `TMP_MAX_S` (see STDIO.H) calls with **`tmpfile_s`**.
 

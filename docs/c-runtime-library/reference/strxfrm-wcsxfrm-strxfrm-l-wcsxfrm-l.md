@@ -63,9 +63,9 @@ Returns the length of the transformed string, not counting the terminating null 
 
 The **`strxfrm`** function transforms the string pointed to by *`strSource`* into a new collated form that is stored in *`strDest`*. No more than *`count`* characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's `LC_COLLATE` category setting. For more information on `LC_COLLATE`, see [`setlocale`](setlocale-wsetlocale.md). **`strxfrm`** uses the current locale for its locale-dependent behavior; **`_strxfrm_l`** is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../locale.md).
 
-After the transformation, a call to `strcmp` with the two transformed strings yields results identical to those of a call to `strcoll` applied to the original two strings. As with `strcoll` and `stricoll`, **`strxfrm`** automatically handles multibyte-character strings as appropriate.
+After the transformation, a call to `strcmp` with the two transformed strings yields results identical to the results of a call to `strcoll` applied to the original two strings. As with `strcoll` and `stricoll`, **`strxfrm`** automatically handles multibyte-character strings as appropriate.
 
-**`wcsxfrm`** is a wide-character version of **`strxfrm`**; the string arguments of **`wcsxfrm`** are wide-character pointers. For **`wcsxfrm`**, after the string transformation, a call to `wcscmp` with the two transformed strings yields results identical to those of a call to `wcscoll` applied to the original two strings. **`wcsxfrm`** and **`strxfrm`** behave identically otherwise. **`wcsxfrm`** uses the current locale for its locale-dependent behavior; **`_wcsxfrm_l`** uses the locale passed in instead of the current locale.
+**`wcsxfrm`** is a wide-character version of **`strxfrm`**; the string arguments of **`wcsxfrm`** are wide-character pointers. For **`wcsxfrm`**, after the string transformation, a call to `wcscmp` with the two transformed strings yields results identical to the results of a call to `wcscoll` applied to the original two strings. **`wcsxfrm`** and **`strxfrm`** behave identically otherwise. **`wcsxfrm`** uses the current locale for its locale-dependent behavior; **`_wcsxfrm_l`** uses the locale passed in instead of the current locale.
 
 These functions validate their parameters. If *`strSource`* is a null pointer, or *`strDest`* is a `NULL` pointer (unless count is zero), or if *`count`* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `INT_MAX`.
 
@@ -88,7 +88,7 @@ The value of the following expression is the size of the array needed to hold th
 
 `1 + strxfrm( NULL, string, 0 )`
 
-In the "C" locale only, **`strxfrm`** is equivalent to the following:
+In the "C" locale only, **`strxfrm`** is equivalent to the following function calls:
 
 ```C
 strncpy( _string1, _string2, _count );
