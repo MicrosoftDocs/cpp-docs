@@ -54,7 +54,7 @@ For more information, see [Format specification syntax: `printf` and `wprintf` f
 
 ## Return value
 
-The number of characters that are written, or a negative value if an output error occurs. If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.
+The number of characters that are written, or a negative value if an output error occurs. If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and -1 is returned.
 
 ## Remarks
 
@@ -64,7 +64,7 @@ The versions of these functions that have the `_l` suffix are identical except t
 
 Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format specification supports positional parameters so that you can specify the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
 
-These functions do not translate line-feed characters into carriage return-line feed (CR-LF) combinations when they are output.
+These functions don't translate line-feed characters on output into carriage return-line feed (CR-LF) combinations.
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).

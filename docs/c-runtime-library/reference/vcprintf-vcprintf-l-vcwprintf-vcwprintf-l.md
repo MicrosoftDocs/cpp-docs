@@ -54,7 +54,7 @@ For more information, see [Format specification syntax](../format-specification-
 
 ## Return value
 
-The number of characters written, or a negative value if an output error occurs. If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.
+The number of characters written, or a negative value if an output error occurs. If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and -1 is returned.
 
 ## Remarks
 
