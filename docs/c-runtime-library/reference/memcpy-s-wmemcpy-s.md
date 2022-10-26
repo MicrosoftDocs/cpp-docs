@@ -51,12 +51,12 @@ Zero if successful; an error code on failure.
 
 ### Error conditions
 
-|*`dest`*|*`destSize`*|*`src`*|*`count`*|Return value|Contents of *`dest`*|
-|------------|----------------|-----------|---|------------------|------------------------|
-|any|any|any|0|0|Not modified|
-|`NULL`|any|any|non-zero|`EINVAL`|Not modified|
-|any|any|`NULL`|non-zero|`EINVAL`|*`dest`* is zeroed out|
-|any|< *`count`*|any|non-zero|`ERANGE`|*`dest`* is zeroed out|
+| *`dest`* | *`destSize`* | *`src`* | *`count`* | Return value | Contents of *`dest`* |
+|---|---|---|---|---|---|
+| any | any | any | 0 | 0 | Not modified |
+| `NULL` | any | any | non-zero | `EINVAL` | Not modified |
+| any | any | `NULL` | non-zero | `EINVAL` | *`dest`* is zeroed out |
+| any | < *`count`* | any | non-zero | `ERANGE` | *`dest`* is zeroed out |
 
 ## Remarks
 
@@ -68,10 +68,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memcpy_s`**|`<memory.h>` or `<string.h>`|
-|**`wmemcpy_s`**|`<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`memcpy_s`** | `<memory.h>` or `<string.h>` |
+| **`wmemcpy_s`** | `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

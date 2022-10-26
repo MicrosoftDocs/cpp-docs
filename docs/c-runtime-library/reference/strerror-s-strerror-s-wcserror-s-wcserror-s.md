@@ -85,10 +85,10 @@ Zero if successful, an error code on failure.
 
 ### Error conditions
 
-|*`buffer`*|*`sizeInBytes`*/*`sizeInWords`*|*`strErrMsg`*|Contents of *`buffer`*|
-|--------------|------------------------|-----------------|--------------------------|
-|`NULL`|any|any|n/a|
-|any|0|any|not modified|
+| *`buffer`* | *`sizeInBytes`*/*`sizeInWords`* | *`strErrMsg`* | Contents of *`buffer`* |
+|---|---|---|---|
+| `NULL` | any | any | n/a |
+| any | 0 | any | not modified |
 
 ## Remarks
 
@@ -124,16 +124,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcserror_s`|**`strerror_s`**|**`strerror_s`**|**`_wcserror_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcserror_s` | **`strerror_s`** | **`strerror_s`** | **`_wcserror_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strerror_s`**, **`_strerror_s`**|\<string.h>|
-|**`_wcserror_s`**, **`__wcserror_s`**|\<string.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`strerror_s`**, **`_strerror_s`** | \<string.h> |
+| **`_wcserror_s`**, **`__wcserror_s`** | \<string.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

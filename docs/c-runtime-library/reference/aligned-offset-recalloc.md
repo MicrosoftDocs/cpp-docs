@@ -61,9 +61,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_aligned_offset_recalloc`**|\<malloc.h>|
+| Routine | Required header |
+|---|---|
+| **`_aligned_offset_recalloc`** | \<malloc.h> |
 
 ## See also
 

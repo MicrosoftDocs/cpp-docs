@@ -57,9 +57,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional Headers|
-|-------------|---------------------|----------------------|
-|**`_setmode`**|`<io.h>`|`<fcntl.h>`|
+| Routine | Required header | Optional Headers |
+|---|---|---|
+| **`_setmode`** | `<io.h>` | `<fcntl.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

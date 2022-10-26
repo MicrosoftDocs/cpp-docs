@@ -77,12 +77,12 @@ Zero if successful; an error code on failure. If any of the following conditions
 
 ### Error conditions
 
-|value|buffer|size|radix|Return|
-|-----------|------------|----------------------|-----------|------------|
-|any|`NULL`|any|any|`EINVAL`|
-|any|any|<=0|any|`EINVAL`|
-|any|any|<= length of the result string required|any|`EINVAL`|
-|any|any|any|*`radix`* < 2 or *`radix`* > 36|`EINVAL`|
+| value | buffer | size | radix | Return |
+|---|---|---|---|---|
+| any | `NULL` | any | any | `EINVAL` |
+| any | any | <=0 | any | `EINVAL` |
+| any | any | <= length of the result string required | any | `EINVAL` |
+| any | any | any | *`radix`* < 2 or *`radix`* > 36 | `EINVAL` |
 
 ### Security issues
 
@@ -102,20 +102,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_itot_s`**|**`_itoa_s`**|**`_itoa_s`**|**`_itow_s`**|
-|**`_ltot_s`**|**`_ltoa_s`**|**`_ltoa_s`**|**`_ltow_s`**|
-|**`_ultot_s`**|**`_ultoa_s`**|**`_ultoa_s`**|**`_ultow_s`**|
-|**`_i64tot_s`**|**`_i64toa_s`**|**`_i64toa_s`**|**`_i64tow_s`**|
-|**`_ui64tot_s`**|**`_ui64toa_s`**|**`_ui64toa_s`**|**`_ui64tow_s`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_itot_s` | **`_itoa_s`** | **`_itoa_s`** | **`_itow_s`** |
+| `_ltot_s` | **`_ltoa_s`** | **`_ltoa_s`** | **`_ltow_s`** |
+| `_ultot_s` | **`_ultoa_s`** | **`_ultoa_s`** | **`_ultow_s`** |
+| `_i64tot_s` | **`_i64toa_s`** | **`_i64toa_s`** | **`_i64tow_s`** |
+| `_ui64tot_s` | **`_ui64toa_s`** | **`_ui64toa_s`** | **`_ui64tow_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_itoa_s`**, **`_ltoa_s`**, **`_ultoa_s`**, **`_i64toa_s`**, **`_ui64toa_s`**|`<stdlib.h>`|
-|**`_itow_s`**, **`_ltow_s`**, **`_ultow_s`**, **`_i64tow_s`**, **`_ui64tow_s`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_itoa_s`**, **`_ltoa_s`**, **`_ultoa_s`**, **`_i64toa_s`**, **`_ui64toa_s`** | `<stdlib.h>` |
+| **`_itow_s`**, **`_ltow_s`**, **`_ultow_s`**, **`_i64tow_s`**, **`_ui64tow_s`** | `<stdlib.h>` or `<wchar.h>` |
 
 These functions are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -71,10 +71,10 @@ Each of these functions creates and executes a new process, passing each command
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_spawnl`**|\<process.h>|
-|**`_wspawnl`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_spawnl`** | \<process.h> |
+| **`_wspawnl`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

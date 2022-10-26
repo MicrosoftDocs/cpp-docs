@@ -41,29 +41,29 @@ Character to be pushed.
 
 ## Return value
 
-Both functions return the character *`c`* if successful. If there is an error, **`_ungetch`** returns a value of `EOF` and **`_ungetwch`** returns `WEOF`.
+Both functions return the character *`c`* if successful. If there's an error, **`_ungetch`** returns a value of `EOF` and **`_ungetwch`** returns `WEOF`.
 
 ## Remarks
 
-These functions push the character *`c`* back to the console, causing *`c`* to be the next character read by `_getch` or `_getche` (or `_getwch` or `_getwche`). **`_ungetch`** and **`_ungetwch`** fail if they are called more than once before the next read. The *`c`* argument may not be `EOF` (or `WEOF`).
+These functions push the character *`c`* back to the console, causing *`c`* to be the next character read by `_getch` or `_getche` (or `_getwch` or `_getwche`). **`_ungetch`** and **`_ungetwch`** fail if they're called more than once before the next read. The *`c`* argument may not be `EOF` (or `WEOF`).
 
-The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+The versions with the `_nolock` suffix are identical except that they aren't protected from interference by other threads. They may be faster since they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_ungettch`|**`_ungetch`**|**`_ungetch`**|**`_ungetwch`**|
-|`_ungettch_nolock`|**`_ungetch_nolock`**|**`_ungetch_nolock`**|**`_ungetwch_nolock`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_ungettch` | **`_ungetch`** | **`_ungetch`** | **`_ungetwch`** |
+| `_ungettch_nolock` | **`_ungetch_nolock`** | **`_ungetch_nolock`** | **`_ungetwch_nolock`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_ungetch`**, **`_ungetch_nolock`**|\<conio.h>|
-|**`_ungetwch`**, **`_ungetwch_nolock`**|\<conio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_ungetch`**, **`_ungetch_nolock`** | \<conio.h> |
+| **`_ungetwch`**, **`_ungetwch_nolock`** | \<conio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

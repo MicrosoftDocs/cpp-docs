@@ -52,10 +52,10 @@ If you use the \<tgmath.h> `cproj()` macro, the type of the argument determines 
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`cproj`**, **`cprojf`**, **`cprojl`**|\<complex.h>|\<ccomplex>|
-|**`cproj`** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cproj`**, **`cprojf`**, **`cprojl`** | \<complex.h> | \<ccomplex> |
+| **`cproj`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -71,17 +71,17 @@ Like the non-secure versions (see [`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwpr
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcprintf_s`|**`_cprintf_s`**|**`_cprintf_s`**|**`_cwprintf_s`**|
-|`_tcprintf_s_l`|**`_cprintf_s_l`**|**`_cprintf_s_l`**|**`_cwprintf_s_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcprintf_s` | **`_cprintf_s`** | **`_cprintf_s`** | **`_cwprintf_s`** |
+| `_tcprintf_s_l` | **`_cprintf_s_l`** | **`_cprintf_s_l`** | **`_cwprintf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_cprintf_s`**, **`_cprintf_s_l`**|\<conio.h>|
-|**`_cwprintf_s`**, **`_cwprintf_s_l`**|\<conio.h>|
+| Routine | Required header |
+|---|---|
+| **`_cprintf_s`**, **`_cprintf_s_l`** | \<conio.h> |
+| **`_cwprintf_s`**, **`_cwprintf_s_l`** | \<conio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

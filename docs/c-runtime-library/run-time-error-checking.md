@@ -12,12 +12,12 @@ Use the following functions to customize the way your program does runtime error
 
 ## Runtime error checking functions
 
-|Function|Use|
-|--------------|---------|
-|[`_RTC_GetErrDesc`](./reference/rtc-geterrdesc.md)|Returns a brief description of a runtime error check type.|
-|[`_RTC_NumErrors`](./reference/rtc-numerrors.md)|Returns the total number of errors that can be detected by runtime error checks.|
-|[`_RTC_SetErrorFunc`](./reference/rtc-seterrorfunc.md)|Designates a function as the handler for reporting runtime error checks.|
-|[`_RTC_SetErrorType`](./reference/rtc-seterrortype.md)|Associates an error that is detected by runtime error checks with a type.|
+| Function | Use |
+|---|---|
+| [`_RTC_GetErrDesc`](./reference/rtc-geterrdesc.md) | Returns a brief description of a runtime error check type. |
+| [`_RTC_NumErrors`](./reference/rtc-numerrors.md) | Returns the total number of errors that can be detected by runtime error checks. |
+| [`_RTC_SetErrorFunc`](./reference/rtc-seterrorfunc.md) | Designates a function as the handler for reporting runtime error checks. |
+| [`_RTC_SetErrorType`](./reference/rtc-seterrortype.md) | Associates an error that is detected by runtime error checks with a type. |
 
 ## See also
 

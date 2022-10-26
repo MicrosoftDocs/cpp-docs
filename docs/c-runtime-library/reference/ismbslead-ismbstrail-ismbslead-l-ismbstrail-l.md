@@ -65,12 +65,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_ismbslead`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
-|**`_ismbstrail`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
-|**`_ismbslead_l`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
-|**`_ismbstrail_l`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_ismbslead`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
+| **`_ismbstrail`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
+| **`_ismbslead_l`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
+| **`_ismbstrail_l`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
 
 \* For manifest constants for the test conditions.
 

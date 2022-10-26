@@ -48,11 +48,11 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`difftime`**|\<time.h>|
-|**`_difftime32`**|\<time.h>|
-|**`_difftime64`**|\<time.h>|
+| Routine | Required header |
+|---|---|
+| **`difftime`** | \<time.h> |
+| **`_difftime32`** | \<time.h> |
+| **`_difftime64`** | \<time.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -42,9 +42,9 @@ Because C++ allows overloading, you can call overloads of **`catan`** that take 
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`catan`**,               **`catanf`**, **`catanl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`catan`**, **`catanf`**, **`catanl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

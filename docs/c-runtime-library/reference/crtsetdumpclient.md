@@ -49,9 +49,9 @@ For more information about functions that operate on `_CLIENT_BLOCK` type memory
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtSetDumpClient`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtSetDumpClient`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -11,7 +11,7 @@ helpviewer_keywords: ["vfprintf_s_l function", "vfwprintf_s_l function", "vfwpri
 ---
 # `vfprintf_s`, `_vfprintf_s_l`, `vfwprintf_s`, `_vfwprintf_s_l`
 
-Write formatted output using a pointer to a list of arguments. These are versions of [`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Write formatted output using a pointer to a list of arguments. These functions are versions of [`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -78,17 +78,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vftprintf_s`|**`vfprintf_s`**|**`vfprintf_s`**|**`vfwprintf_s`**|
-|`_vftprintf_s_l`|**`_vfprintf_s_l`**|**`_vfprintf_s_l`**|**`_vfwprintf_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vftprintf_s` | **`vfprintf_s`** | **`vfprintf_s`** | **`vfwprintf_s`** |
+| `_vftprintf_s_l` | **`_vfprintf_s_l`** | **`_vfprintf_s_l`** | **`_vfwprintf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`vfprintf_s`**, **`_vfprintf_s_l`**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|**`vfwprintf_s`**, **`_vfwprintf_s_l`**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`vfprintf_s`**, **`_vfprintf_s_l`** | \<stdio.h> and \<stdarg.h> | \<varargs.h>* |
+| **`vfwprintf_s`**, **`_vfwprintf_s_l`** | \<stdio.h> or \<wchar.h>, and \<stdarg.h> | \<varargs.h>* |
 
 \* Required for UNIX V compatibility.
 

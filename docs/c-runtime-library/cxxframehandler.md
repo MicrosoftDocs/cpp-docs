@@ -22,7 +22,7 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
       EHRegistrationNode *pRN,
       void               *pContext,
       DispatcherContext  *pDC
-   )
+   );
 ```
 
 #### Parameters
@@ -47,6 +47,6 @@ One of the *filter expression* values used by the [try-except Statement](../cpp/
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__CxxFrameHandler|excpt.h, ehdata.h|
+| Routine | Required header |
+|---|---|
+| **`__CxxFrameHandler`** | `<excpt.h>`, `<ehdata.h>` |

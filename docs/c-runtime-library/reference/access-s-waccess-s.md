@@ -39,11 +39,11 @@ Permission setting.
 
 Each function returns 0 if the file has the given mode. The function returns an error code if the named file doesn't exist or isn't accessible in the given mode. In this case, the function returns an error code from the set as follows and also sets `errno` to the same value.
 
-|errno value|Condition|
-|-|-|
-`EACCES`|Access denied. The file's permission setting doesn't allow specified access.
-`ENOENT`|File name or path not found.
-`EINVAL`|Invalid parameter.
+| `errno` value | Condition |
+|---|---|
+| `EACCES` | Access denied. The file's permission setting doesn't allow specified access. |
+| `ENOENT` | File name or path not found. |
+| `EINVAL` | Invalid parameter. |
 
 For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -51,12 +51,12 @@ For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`
 
 When used with files, the **`_access_s`** function determines whether the specified file exists and can be accessed as specified by the value of *`mode`*. When used with directories, **`_access_s`** determines only whether the specified directory exists. In Windows 2000 and later operating systems, all directories have read and write access.
 
-|mode value|Checks file for|
-|----------------|---------------------|
-|00|Existence only.|
-|02|Write permission.|
-|04|Read permission.|
-|06|Read and write permission.|
+| *`mode`* value | Checks file for |
+|---|---|
+| 00 | Existence only. |
+| 02 | Write permission. |
+| 04 | Read permission. |
+| 06 | Read and write permission. |
 
 Permission to read or write the file isn't enough to ensure the ability to open a file. For example, if a file is locked by another process, it might not be accessible even though **`_access_s`** returns 0.
 
@@ -68,16 +68,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_taccess_s`|**`_access_s`**|**`_access_s`**|**`_waccess_s`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_taccess_s` | **`_access_s`** | **`_access_s`** | **`_waccess_s`** |
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_access_s`**|\<io.h>|\<errno.h>|
-|**`_waccess_s`**|\<wchar.h> or \<io.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_access_s`** | \<io.h> | \<errno.h> |
+| **`_waccess_s`** | \<wchar.h> or \<io.h> | \<errno.h> |
 
 ## Example
 

@@ -56,7 +56,7 @@ For more information, see [Format specification syntax: `printf` and `wprintf` f
 
 The number of characters written, or a negative value if an output error occurs.
 
-Like the less secure versions of these functions, if *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). Additionally, unlike the less secure versions of these functions, if *`format`* does not specify a valid format, an invalid parameter exception is generated. If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value does not apply.
+Like the less secure versions of these functions, if *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). Additionally, unlike the less secure versions of these functions, if *`format`* doesn't specify a valid format, an invalid parameter exception is generated. If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value doesn't apply.
 
 ## Remarks
 
@@ -69,17 +69,17 @@ The versions of these functions that have the `_l` suffix are identical except t
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtcprintf_s`|**`_vcprintf_s`**|**`_vcprintf_s`**|**`_vcwprintf_s`**|
-|`_vtcprintf_s_l`|**`_vcprintf_s_l`**|**`_vcprintf_s_l`**|**`_vcwprintf_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vtcprintf_s` | **`_vcprintf_s`** | **`_vcprintf_s`** | **`_vcwprintf_s`** |
+| `_vtcprintf_s_l` | **`_vcprintf_s_l`** | **`_vcprintf_s_l`** | **`_vcwprintf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`_vcprintf_s`**, **`_vcprintf_s_l`**|\<conio.h> and \<stdarg.h>|\<varargs.h>*|
-|**`_vcwprintf_s`**, **`_vcwprintf_s_l`**|\<conio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`_vcprintf_s`**, **`_vcprintf_s_l`** | \<conio.h> and \<stdarg.h> | \<varargs.h>* |
+| **`_vcwprintf_s`**, **`_vcwprintf_s_l`** | \<conio.h> or \<wchar.h>, and \<stdarg.h> | \<varargs.h>* |
 
 \* Required for UNIX V compatibility.
 

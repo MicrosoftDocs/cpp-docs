@@ -58,8 +58,8 @@ Returns 0 if the file-status information is obtained. A return value of -1 indic
 
 The **`_fstat`** function obtains information about the open file associated with *`fd`* and stores it in the structure pointed to by *`buffer`*. The **`_stat`** structure, defined in `SYS\Stat.h`, contains the following fields.
 
-|Field|Meaning|
-|-|-|
+| Field | Meaning |
+|---|---|
 | **`st_atime`** | Time of the last file access. |
 | **`st_ctime`** | Time of the creation of the file. |
 | **`st_dev`** | If a device, *`fd`*; otherwise 0. |
@@ -83,27 +83,27 @@ By default, this function's global state is scoped to the application. To change
 
 ### Time type and file length type variations of `_stat`
 
-|Functions|`_USE_32BIT_TIME_T` defined?|Time type|File length type|
-|---------------|------------------------------------|---------------|----------------------|
-|**`_fstat`**|Not defined|64-bit|32-bit|
-|**`_fstat`**|Defined|32-bit|32-bit|
-|**`_fstat32`**|Not affected by the macro definition|32-bit|32-bit|
-|**`_fstat64`**|Not affected by the macro definition|64-bit|64-bit|
-|**`_fstati64`**|Not defined|64-bit|64-bit|
-|**`_fstati64`**|Defined|32-bit|64-bit|
-|**`_fstat32i64`**|Not affected by the macro definition|32-bit|64-bit|
-|**`_fstat64i32`**|Not affected by the macro definition|64-bit|32-bit|
+| Functions | `_USE_32BIT_TIME_T` defined? | Time type | File length type |
+|---|---|---|---|
+| **`_fstat`** | Not defined | 64-bit | 32-bit |
+| **`_fstat`** | Defined | 32-bit | 32-bit |
+| **`_fstat32`** | Not affected by the macro definition | 32-bit | 32-bit |
+| **`_fstat64`** | Not affected by the macro definition | 64-bit | 64-bit |
+| **`_fstati64`** | Not defined | 64-bit | 64-bit |
+| **`_fstati64`** | Defined | 32-bit | 64-bit |
+| **`_fstat32i64`** | Not affected by the macro definition | 32-bit | 64-bit |
+| **`_fstat64i32`** | Not affected by the macro definition | 64-bit | 32-bit |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fstat`**|`<sys/stat.h>` and `<sys/types.h>`|
-|**`_fstat32`**|`<sys/stat.h>` and `<sys/types.h>`|
-|**`_fstat64`**|`<sys/stat.h>` and `<sys/types.h>`|
-|**`_fstati64`**|`<sys/stat.h>` and `<sys/types.h>`|
-|**`_fstat32i64`**|`<sys/stat.h>` and `<sys/types.h>`|
-|**`_fstat64i32`**|`<sys/stat.h>` and `<sys/types.h>`|
+| Function | Required header |
+|---|---|
+| **`_fstat`** | `<sys/stat.h>` and `<sys/types.h>` |
+| **`_fstat32`** | `<sys/stat.h>` and `<sys/types.h>` |
+| **`_fstat64`** | `<sys/stat.h>` and `<sys/types.h>` |
+| **`_fstati64`** | `<sys/stat.h>` and `<sys/types.h>` |
+| **`_fstat32i64`** | `<sys/stat.h>` and `<sys/types.h>` |
+| **`_fstat64i32`** | `<sys/stat.h>` and `<sys/types.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

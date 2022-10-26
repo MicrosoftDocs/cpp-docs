@@ -75,11 +75,11 @@ The locale to use.
 
 Zero if successful, an error code on failure.
 
-|Error condition|Return value and `errno`|
-|---------------------|------------------------------|
-|*`mbstr`* is `NULL` and *`sizeInBytes`* > 0|`EINVAL`|
-|*`wcstr`* is `NULL`|`EINVAL`|
-|The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; see Remarks below)|`ERANGE`|
+| Error condition | Return value and `errno` |
+|---|---|
+| *`mbstr`* is `NULL` and *`sizeInBytes`* > 0 | `EINVAL` |
+| *`wcstr`* is `NULL` | `EINVAL` |
+| The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; see Remarks below) | `ERANGE` |
 
 If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
 
@@ -89,17 +89,17 @@ The **`wcstombs_s`** function converts a string of wide characters pointed to by
 
 - A null wide character is encountered
 
-- A wide character that cannot be converted is encountered
+- A wide character that can't be converted is encountered
 
 - The number of bytes stored in the *`mbstr`* buffer equals *`count`*.
 
-The destination string is always null-terminated (even in the case of an error).
+The destination string is always null-terminated (even if there's an error).
 
 If *`count`* is the special value [`_TRUNCATE`](../truncate.md), then **`wcstombs_s`** converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator. If the string is truncated, the return value is `STRUNCATE`, and the conversion is considered successful.
 
-If **`wcstombs_s`** successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into *`*pReturnValue`* (provided *`pReturnValue`* is not `NULL`). This occurs even if the *`mbstr`* argument is `NULL` and provides a way to determine the required buffer size. Note that if *`mbstr`* is `NULL`, *`count`* is ignored.
+If **`wcstombs_s`** successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into *`*pReturnValue`* (provided *`pReturnValue`* isn't `NULL`). The size is calculated even if the *`mbstr`* argument is `NULL`; it provides a way to determine the required buffer size. If *`mbstr`* is `NULL`, *`count`* is ignored.
 
-If **`wcstombs_s`** encounters a wide character it cannot convert to a multibyte character, it puts 0 in *`*ReturnValue`*, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.
+If **`wcstombs_s`** encounters a wide character it can't convert to a multibyte character, it puts 0 in *`*ReturnValue`*, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.
 
 If the sequences pointed to by *`wcstr`* and *`mbstr`* overlap, the behavior of **`wcstombs_s`** is undefined.
 
@@ -114,9 +114,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wcstombs_s`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`wcstombs_s`** | `<stdlib.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

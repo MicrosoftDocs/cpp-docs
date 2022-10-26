@@ -39,9 +39,9 @@ Because the built-in arithmetic operators don't work on the Microsoft implementa
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`_Cmulcc`**, **`_FCmulcc`**, **`_LCmulcc`**|\<complex.h>|\<complex.h>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`_Cmulcc`**, **`_FCmulcc`**, **`_LCmulcc`** | \<complex.h> | \<complex.h> |
 
 These functions are Microsoft-specific. The types `_Dcomplex`, `_Fcomplex`, and `_Lcomplex` are Microsoft-specific equivalents to the unimplemented C99 native types **double _Complex**, **float _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
 

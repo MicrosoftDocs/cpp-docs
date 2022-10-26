@@ -12,11 +12,11 @@ The `va_arg`, `va_end`, and `va_start` macros provide access to function argumen
 
 ## Argument-access macros
 
-|Macro|Use|
-|-----------|-------------------------------|
-|[`va_arg`](./reference/va-arg-va-copy-va-end-va-start.md)|Retrieve argument from list|
-|[`va_end`](./reference/va-arg-va-copy-va-end-va-start.md)|Reset pointer|
-|[`va_start`](./reference/va-arg-va-copy-va-end-va-start.md)|Set pointer to beginning of argument list|
+| Macro | Use |
+|---|---|
+| [`va_arg`](./reference/va-arg-va-copy-va-end-va-start.md) | Retrieve argument from list |
+| [`va_end`](./reference/va-arg-va-copy-va-end-va-start.md) | Reset pointer |
+| [`va_start`](./reference/va-arg-va-copy-va-end-va-start.md) | Set pointer to beginning of argument list |
 
 ## See also
 

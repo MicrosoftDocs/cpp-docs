@@ -2,7 +2,7 @@
 description: "Learn more about: MB_CUR_MAX"
 title: "MB_CUR_MAX"
 ms.date: "10/18/2017"
-f1_keywords: ["MB_CUR_MAX"]
+f1_keywords: ["MB_CUR_MAX", "CTYPE/MB_CUR_MAX"]
 helpviewer_keywords: ["MB_CUR_MAX constant"]
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604
 ---

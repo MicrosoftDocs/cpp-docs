@@ -51,10 +51,10 @@ The behavior of **`isupper`** and **`_isupper_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istupper`|**`isupper`**|[`_ismbcupper`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**`iswupper`**|
-|`_istupper_l`|**`_isupper_l`**|[`_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**`_iswupper_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istupper` | **`isupper`** | [`_ismbcupper`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md) | **`iswupper`** |
+| `_istupper_l` | **`_isupper_l`** | [`_ismbclower`, `_ismbclower_l`, `_ismbcupper`, `_ismbcupper_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md) | **`_iswupper_l`** |
 
 ## Remarks
 
@@ -62,12 +62,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isupper`**|\<ctype.h>|
-|**`_isupper_l`**|\<ctype.h>|
-|**`iswupper`**|\<ctype.h> or \<wchar.h>|
-|**`_iswupper_l`**|\<ctype.h>|
+| Routine | Required header |
+|---|---|
+| **`isupper`** | \<ctype.h> |
+| **`_isupper_l`** | \<ctype.h> |
+| **`iswupper`** | \<ctype.h> or \<wchar.h> |
+| **`_iswupper_l`** | \<ctype.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

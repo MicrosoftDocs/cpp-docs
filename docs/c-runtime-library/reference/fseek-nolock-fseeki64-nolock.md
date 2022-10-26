@@ -52,9 +52,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fseek_nolock`**, **`_fseeki64_nolock`**|\<stdio.h>|
+| Function | Required header |
+|---|---|
+| **`_fseek_nolock`**, **`_fseeki64_nolock`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

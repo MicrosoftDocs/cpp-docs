@@ -44,9 +44,9 @@ The floating-point value to round.
 
 The **`round`** functions return a floating-point value that represents the nearest integer to *`x`*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|± QNAN, IND|none|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
 
 ## Remarks
 
@@ -58,10 +58,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`round`**, **`roundf`**, **`roundl`**|`<math.h>`|
-|**`round`** macro | `<tgmath.h>` |
+| Routine | Required header |
+|---|---|
+| **`round`**, **`roundf`**, **`roundl`** | `<math.h>` |
+| **`round`** macro | `<tgmath.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

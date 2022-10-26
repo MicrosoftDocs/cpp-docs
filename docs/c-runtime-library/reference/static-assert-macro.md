@@ -54,11 +54,11 @@ int main()
 
 ## Requirements
 
-|Macro|Required header|
-|-----------|---------------------|
-|`_STATIC_ASSERT`|\<crtdbg.h>|
+| Macro | Required header |
+|---|---|
+| **`_STATIC_ASSERT`** | \<crtdbg.h> |
 
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](assert-asserte-assert-expr-macros.md)
+[`_ASSERT`, `_ASSERTE`, `_ASSERT_EXPR` macros](assert-asserte-assert-expr-macros.md)

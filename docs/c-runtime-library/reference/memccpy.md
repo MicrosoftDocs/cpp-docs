@@ -51,9 +51,9 @@ The **`_memccpy`** function copies zero or more characters of *`src`* to *`dest`
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_memccpy`**|\<memory.h> or \<string.h>|
+| Routine | Required header |
+|---|---|
+| **`_memccpy`** | \<memory.h> or \<string.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

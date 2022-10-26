@@ -81,17 +81,17 @@ Line one
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tprintf`**|**`printf`**|**`printf`**|**`wprintf`**|
-|**`_tprintf_l`**|**`_printf_l`**|**`_printf_l`**|**`_wprintf_l`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tprintf`** | **`printf`** | **`printf`** | **`wprintf`** |
+| **`_tprintf_l`** | **`_printf_l`** | **`_printf_l`** | **`_wprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`printf`**, **`_printf_l`**|`<stdio.h>`|
-|**`wprintf`**, **`_wprintf_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`printf`**, **`_printf_l`** | `<stdio.h>` |
+| **`wprintf`**, **`_wprintf_l`** | `<stdio.h>` or `<wchar.h>` |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -12,7 +12,7 @@ ms.assetid: e2286cb8-751d-4557-9650-5c4b98a8f7be
 
 ## Syntax
 
-```
+```C
 #include <limits.h>
 ```
 

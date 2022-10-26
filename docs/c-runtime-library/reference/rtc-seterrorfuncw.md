@@ -76,9 +76,9 @@ For an example that shows how to use `_RTC_error_fnW`, see [Native runtime check
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_RTC_SetErrorFuncW`**|\<rtcapi.h>|
+| Routine | Required header |
+|---|---|
+| **`_RTC_SetErrorFuncW`** | \<rtcapi.h> |
 
 For more information, see [Compatibility](../compatibility.md).
 

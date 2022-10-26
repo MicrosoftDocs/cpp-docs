@@ -32,27 +32,27 @@ If the `LC_CTYPE` category of the current locale doesn't define a classification
 
 ## Remarks
 
-The function determines a classification rule for wide-character codes. The following pairs of calls have the same behavior in all locales (but an implementation can define additional classification rules even in the "C" locale):
+The function determines a classification rule for wide-character codes. The following pairs of calls have the same behavior in all locales (but an implementation can define more classification rules even in the "C" locale):
 
-|Function|Same as|
-|--------------|-------------|
-|`iswalnum(c)`|`iswctype(c, wctype( "alnum" ))`|
-|`iswalpha(c)`|`iswctype(c, wctype( "alpha" ))`|
-|`iswcntrl(c)`|`iswctype(c, wctype( "cntrl" ))`|
-|`iswdigit(c)`|`iswctype(c, wctype( "digit" ))`|
-|`iswgraph(c)`|`iswctype(c, wctype( "graph" ))`|
-|`iswlower(c)`|`iswctype(c, wctype( "lower" ))`|
-|`iswprint(c)`|`iswctype(c, wctype( "print" ))`|
-|`iswpunct(c)`|`iswctype(c, wctype( "punct" ))`|
-|`iswspace(c)`|`iswctype(c, wctype( "space" ))`|
-|`iswupper(c)`|`iswctype(c, wctype( "upper" ))`|
-|`iswxdigit(c)`|`iswctype(c, wctype( "xdigit" ))`|
+| Function | Same as |
+|---|---|
+| `iswalnum(c)` | `iswctype(c, wctype( "alnum" ))` |
+| `iswalpha(c)` | `iswctype(c, wctype( "alpha" ))` |
+| `iswcntrl(c)` | `iswctype(c, wctype( "cntrl" ))` |
+| `iswdigit(c)` | `iswctype(c, wctype( "digit" ))` |
+| `iswgraph(c)` | `iswctype(c, wctype( "graph" ))` |
+| `iswlower(c)` | `iswctype(c, wctype( "lower" ))` |
+| `iswprint(c)` | `iswctype(c, wctype( "print" ))` |
+| `iswpunct(c)` | `iswctype(c, wctype( "punct" ))` |
+| `iswspace(c)` | `iswctype(c, wctype( "space" ))` |
+| `iswupper(c)` | `iswctype(c, wctype( "upper" ))` |
+| `iswxdigit(c)` | `iswctype(c, wctype( "xdigit" ))` |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`wctype`|`<wctype.h>`|
+| Routine | Required header |
+|---|---|
+| **`wctype`** | `<wctype.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

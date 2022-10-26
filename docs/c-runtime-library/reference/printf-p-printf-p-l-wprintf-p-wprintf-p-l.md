@@ -68,17 +68,17 @@ If *`format`* or *`argument`* are `NULL`, or of the format string contains inval
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tprintf_p`|**`_printf_p`**|**`_printf_p`**|**`_wprintf_p`**|
-|`_tprintf_p_l`|**`_printf_p_l`**|**`_printf_p_l`**|**`_wprintf_p_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tprintf_p` | **`_printf_p`** | **`_printf_p`** | **`_wprintf_p`** |
+| `_tprintf_p_l` | **`_printf_p_l`** | **`_printf_p_l`** | **`_wprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_printf_p`**, **`_printf_p_l`**|\<stdio.h>|
-|**`_wprintf_p`**, **`_wprintf_p_l`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_printf_p`**, **`_printf_p_l`** | \<stdio.h> |
+| **`_wprintf_p`**, **`_wprintf_p_l`** | \<stdio.h> or \<wchar.h> |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

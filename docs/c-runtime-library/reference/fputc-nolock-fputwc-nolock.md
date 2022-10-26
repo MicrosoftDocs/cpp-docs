@@ -49,16 +49,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_fputtc_nolock`|**`_fputc_nolock`**|**`_fputc_nolock`**|**`_fputwc_nolock`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_fputtc_nolock` | **`_fputc_nolock`** | **`_fputc_nolock`** | **`_fputwc_nolock`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fputc_nolock`**|\<stdio.h>|
-|**`_fputwc_nolock`**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`_fputc_nolock`** | \<stdio.h> |
+| **`_fputwc_nolock`** | \<stdio.h> or \<wchar.h> |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

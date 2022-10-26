@@ -12,7 +12,7 @@ Minimum value for type **`wchar_t`**.
 
 ## Syntax
 
-```
+```C
 #include <wchar.h>
 ```
 

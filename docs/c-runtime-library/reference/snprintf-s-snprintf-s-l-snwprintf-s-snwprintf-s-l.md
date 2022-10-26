@@ -112,17 +112,17 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_sntprintf_s`**|**`_snprintf_s`**|**`_snprintf_s`**|**`_snwprintf_s`**|
-|**`_sntprintf_s_l`**|**`_snprintf_s_l`**|**`_snprintf_s_l`**|**`_snwprintf_s_l`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_sntprintf_s` | **`_snprintf_s`** | **`_snprintf_s`** | **`_snwprintf_s`** |
+| `_sntprintf_s_l` | **`_snprintf_s_l`** | **`_snprintf_s_l`** | **`_snwprintf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_snprintf_s`**, **`_snprintf_s_l`**|`<stdio.h>`|
-|**`_snwprintf_s`**, **`_snwprintf_s_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_snprintf_s`**, **`_snprintf_s_l`** | `<stdio.h>` |
+| **`_snwprintf_s`**, **`_snwprintf_s_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

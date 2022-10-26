@@ -45,9 +45,9 @@ To restore the default behavior, call **`_set_purecall_handler`** by using a **`
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_get_purecall_handler`**, **`_set_purecall_handler`**|\<cstdlib> or \<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_get_purecall_handler`**, **`_set_purecall_handler`** | \<cstdlib> or \<stdlib.h> |
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

@@ -39,9 +39,9 @@ For information about the allocation block types and how they're used, see [Type
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtReportBlockType`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtReportBlockType`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

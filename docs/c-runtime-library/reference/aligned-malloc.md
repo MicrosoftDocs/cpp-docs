@@ -49,9 +49,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_aligned_malloc`**|`<malloc.h>`|
+| Routine | Required C header | C++ header |
+|---|---|---|
+| **`_aligned_malloc`** | `<malloc.h>` | `<cstdlib>` |
 
 ## Example
 

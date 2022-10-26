@@ -62,11 +62,11 @@ After `assert` displays its message, it calls [`abort`](abort.md), which display
 
 As a consequence of the above behavior, a dialog box is always displayed following an `assert` call in debug mode. The behavior of each button is captured in the below table.
 
-|Error mode|Output to `stderr` (Console/`_OUT_TO_STDERR`)|Display Dialog Box (Windows/`_OUT_TO_MSGBOX`)|
-|----------|----------------|------------------|
-|`Abort`|Exit immediately with exit code 3|Exit immediately with exit code 3|
-|`Retry`|Break into debugger during `abort`|Break into debugger during `assert`|
-|`Ignore`|Finish exiting via `abort`|Continue program as though `assert` didn't fire (may result in undefined behavior since preconditions of the calling code weren't met)|
+| Error mode | Output to `stderr` (Console/`_OUT_TO_STDERR`) | Display Dialog Box (Windows/`_OUT_TO_MSGBOX`) |
+|---|---|---|
+| `Abort` | Exit immediately with exit code 3 | Exit immediately with exit code 3 |
+| `Retry` | Break into debugger during `abort` | Break into debugger during `assert` |
+| `Ignore` | Finish exiting via `abort` | Continue program as though `assert` didn't fire (may result in undefined behavior since preconditions of the calling code weren't met) |
 
 For more information about CRT debugging, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
 
@@ -76,9 +76,9 @@ The `assert` macro is enabled in both the release and debug versions of the C ru
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`assert`, `_wassert`|`<assert.h>`|
+| Routine | Required header |
+|---|---|
+| `assert`, `_wassert` | `<assert.h>` |
 
 The signature of the `_assert` function isn't available in a header file. The signature of the `_wassert` function is only available when the `NDEBUG` macro isn't defined.
 

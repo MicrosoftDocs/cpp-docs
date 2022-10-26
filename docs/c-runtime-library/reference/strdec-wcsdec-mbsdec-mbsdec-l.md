@@ -69,9 +69,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsdec`|**`_strdec`**|**`_mbsdec`**|**`_wcsdec`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsdec` | **`_strdec`** | **`_mbsdec`** | **`_wcsdec`** |
 
 **`_strdec`** and **`_wcsdec`** are single-byte-character and wide-character versions of **`_mbsdec`** and **`_mbsdec_l`**. **`_strdec`** and **`_wcsdec`** are provided only for this mapping and shouldn't be used otherwise.
 
@@ -79,12 +79,12 @@ For more information, see [Using generic-text mappings](../using-generic-text-ma
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_mbsdec`**|\<mbstring.h>|\<mbctype.h>|
-|**`_mbsdec_l`**|\<mbstring.h>|\<mbctype.h>|
-|**`_strdec`**|\<tchar.h>||
-|**`_wcsdec`**|\<tchar.h>||
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_mbsdec`** | \<mbstring.h> | \<mbctype.h> |
+| **`_mbsdec_l`** | \<mbstring.h> | \<mbctype.h> |
+| **`_strdec`** | \<tchar.h> |  |
+| **`_wcsdec`** | \<tchar.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

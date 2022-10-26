@@ -40,7 +40,7 @@ Read/write attribute.
 Each function returns 0 if the file has the given mode. The function returns -1 if the named file doesn't exist or doesn't have the given mode; in this case, `errno` is set as shown in the following table.
 
 | Value | Description |
-|--|--|
+|---|---|
 | `EACCES` | Access denied: the file's permission setting doesn't allow specified access. |
 | `ENOENT` | File name or path not found. |
 | `EINVAL` | Invalid parameter. |
@@ -51,12 +51,12 @@ For more information about these and other return codes, see [`errno`, `_doserrn
 
 When used with files, the **`_access`** function determines whether the specified file or directory exists and has the attributes specified by the value of *`mode`*. When used with directories, **`_access`** determines only whether the specified directory exists; in Windows 2000 and later operating systems, all directories have read and write access.
 
-|*`mode`* value|Checks file for|
-|------------------|---------------------|
-|00|Existence only|
-|02|Write-only|
-|04|Read-only|
-|06|Read and write|
+| *`mode`* value | Checks file for |
+|---|---|
+| 00 | Existence only |
+| 02 | Write-only |
+| 04 | Read-only |
+| 06 | Read and write |
 
 This function only checks whether the file and directory are read-only or not, it doesn't check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access tokens](/windows/win32/SecAuthZ/access-tokens). An ATL class exists to provide this functionality; see [`CAccessToken` Class](../../atl/reference/caccesstoken-class.md).
 
@@ -68,16 +68,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_taccess`|**`_access`**|**`_access`**|**`_waccess`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_taccess` | **`_access`** | **`_access`** | **`_waccess`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`_access`**|`<io.h>`|`<errno.h>`|
-|**`_waccess`**|`<wchar.h>` or `<io.h>`|`<errno.h>`|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`_access`** | `<io.h>` | `<errno.h>` |
+| **`_waccess`** | `<wchar.h>` or `<io.h>` | `<errno.h>` |
 
 ## Example
 

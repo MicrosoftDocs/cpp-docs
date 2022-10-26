@@ -33,26 +33,26 @@ The optional prefixes **`h`**, **`hh`**, **`l`**, **`ll`**, **`I64`**, and **`L`
 
 ### Size prefixes for `scanf` and `wscanf` format-type specifiers
 
-|To specify|Use prefix|With type specifier|
-|----------------|----------------|-------------------------|
-|**`double`**|**`l`**|**`e`**, **`E`**, **`f`**, **`g`**, or **`G`**|
-|**`long double`** (same as **`double`**)|**`L`**|**`e`**, **`E`**, **`f`**, **`g`**, or **`G`**|
-|**`long int`**|**`l`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`long unsigned int`**|**`l`**|**`u`**|
-|**`long long`**|**`ll`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`short int`**|**`h`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`short unsigned int`**|**`h`**|**`u`**|
-|**`char`**|**`hh`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`unsigned char`**|**`hh`**|**`u`**|
-|**`int64`**|**`I64`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|Single-byte character with `scanf`|**`h`**|**`c`** or **`C`**|
-|Single-byte character with `wscanf`|**`h`**|**`c`** or **`C`**|
-|Wide character with `scanf`|**`l`**|**`c`** or **`C`**|
-|Wide character with `wscanf`|**`l`**|**`c`**, or **`C`**|
-|Single-byte character string with `scanf`|**`h`**|**`s`** or **`S`**|
-|Single-byte character string with `wscanf`|**`h`**|**`s`** or **`S`**|
-|Wide character string with `scanf`|**`l`**|**`s`** or **`S`**|
-|Wide character string with `wscanf`|**`l`**|**`s`** or **`S`**|
+| To specify | Use prefix | With type specifier |
+|---|---|---|
+| **`double`** | **`l`** | **`e`**, **`E`**, **`f`**, **`g`**, or **`G`** |
+| **`long double`** (same as **`double`**) | **`L`** | **`e`**, **`E`**, **`f`**, **`g`**, or **`G`** |
+| **`long int`** | **`l`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`long unsigned int`** | **`l`** | **`u`** |
+| **`long long`** | **`ll`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`short int`** | **`h`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`short unsigned int`** | **`h`** | **`u`** |
+| **`char`** | **`hh`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`unsigned char`** | **`hh`** | **`u`** |
+| **`int64`** | **`I64`** | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| Single-byte character with `scanf` | **`h`** | **`c`** or **`C`** |
+| Single-byte character with `wscanf` | **`h`** | **`c`** or **`C`** |
+| Wide character with `scanf` | **`l`** | **`c`** or **`C`** |
+| Wide character with `wscanf` | **`l`** | **`c`**, or **`C`** |
+| Single-byte character string with `scanf` | **`h`** | **`s`** or **`S`** |
+| Single-byte character string with `wscanf` | **`h`** | **`s`** or **`S`** |
+| Wide character string with `scanf` | **`l`** | **`s`** or **`S`** |
+| Wide character string with `wscanf` | **`l`** | **`s`** or **`S`** |
 
 The following examples use **`h`** and **`l`** with `scanf_s` functions and `wscanf_s` functions:
 

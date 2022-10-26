@@ -53,10 +53,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbbtombc`**|\<mbstring.h>|
-|**`_mbbtombc_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbbtombc`** | \<mbstring.h> |
+| **`_mbbtombc_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

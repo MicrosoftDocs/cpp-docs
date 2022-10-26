@@ -49,9 +49,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_configthreadlocale`**|\`<locale.h>`|
+| Routine | Required header |
+|---|---|
+| **`_configthreadlocale`** | \`<locale.h>` |
 
 ## Example
 

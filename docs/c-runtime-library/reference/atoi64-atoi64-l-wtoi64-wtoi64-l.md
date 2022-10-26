@@ -69,17 +69,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tstoi64`|**`_atoi64`**|**`_atoi64`**|**`_wtoi64`**|
-|`_ttoi64`|**`_atoi64`**|**`_atoi64`**|**`_wtoi64`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tstoi64` | **`_atoi64`** | **`_atoi64`** | **`_wtoi64`** |
+| `_ttoi64` | **`_atoi64`** | **`_atoi64`** | **`_wtoi64`** |
 
 ## Requirements
 
-|Routines|Required header|
-|--------------|---------------------|
-|**`_atoi64`**, **`_atoi64_l`**|\<stdlib.h>|
-|**`_wtoi64`**, **`_wtoi64_l`**|\<stdlib.h> or \<wchar.h>|
+| Routines | Required header |
+|---|---|
+| **`_atoi64`**, **`_atoi64_l`** | \<stdlib.h> |
+| **`_wtoi64`**, **`_wtoi64_l`** | \<stdlib.h> or \<wchar.h> |
 
 ## Example
 

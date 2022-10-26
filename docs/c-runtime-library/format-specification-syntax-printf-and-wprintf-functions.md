@@ -43,49 +43,49 @@ Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` 
 
 ### Type field characters
 
-|Type character|Argument|Output format|
-|--------------------|--------------|-------------------|
-|**`c`**|Character|When used with `printf` functions, specifies a single-byte character; when used with `wprintf` functions, specifies a wide character.|
-|**`C`**|Character|When used with `printf` functions, specifies a wide character; when used with `wprintf` functions, specifies a single-byte character.|
-|**`d`**|Integer|Signed decimal integer.|
-|**`i`**|Integer|Signed decimal integer.|
-|**`o`**|Integer|Unsigned octal integer.|
-|**`u`**|Integer|Unsigned decimal integer.|
-|**`x`**|Integer|Unsigned hexadecimal integer; uses "`abcdef`".|
-|**`X`**|Integer|Unsigned hexadecimal integer; uses "`ABCDEF`".|
-|**`e`**|Floating-point|Signed value that has the form [`-`]*d.dddd*`e`\[`+`\|`-`]*dd*\[*d*], where *d* is one decimal digit, *dddd* is one or more decimal digits depending on the specified precision, or six by default, and *dd*\[*d*] is two or three decimal digits depending on the [output format](./set-output-format.md) and size of the exponent.|
-|**`E`**|Floating-point|Identical to the **`e`** format except that **`E`** rather than **`e`** introduces the exponent.|
-|**`f`**|Floating-point|Signed value that has the form [`-`]*dddd*`.`*dddd*, where *dddd* is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision, or six by default.|
-|**`F`**|Floating-point|Identical to the **`f`** format except that infinity and NaN output is capitalized.|
-|**`g`**|Floating-point|Signed values are displayed in **`f`** or **`e`** format, whichever is more compact for the given value and precision. The **`e`** format is used only when the exponent of the value is less than -4 or greater than or equal to the *precision* argument. Trailing zeros are truncated, and the decimal point appears only if one or more digits follow it.|
-|**`G`**|Floating-point|Identical to the **`g`** format, except that **`E`**, rather than **`e`**, introduces the exponent (where appropriate).|
-|**`a`**|Floating-point|Signed hexadecimal double-precision floating-point value that has the form [`-`]`0x`*h.hhhh*`p`\[`+`\|`-`]*dd*, where *h.hhhh* are the hex digits (using lower case letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point.|
-|**`A`**|Floating-point|Signed hexadecimal double-precision floating-point value that has the form \[`-`]`0X`*h.hhhh*`P`\[`+`\|`-`]*dd*, where *h.hhhh* are the hex digits (using capital letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point.|
-|**`n`**|Pointer to integer|Number of characters that are successfully written so far to the stream or buffer. This value is stored in the integer whose address is given as the argument. The size of the integer pointed at can be controlled by an argument size specification prefix. The **`n`** specifier is disabled by default; for information see the important security note.|
-|**`p`**|Pointer type|Display the argument as an address in hexadecimal digits.|
-|**`s`**|String|When used with `printf` functions, specifies a single-byte or multi-byte character string; when used with `wprintf` functions, specifies a wide-character string. Characters are displayed up to the first null character or until the *precision* value is reached.|
-|**`S`**|String|When used with `printf` functions, specifies a wide-character string; when used with `wprintf` functions, specifies a single-byte or multi-byte character string. Characters are displayed up to the first null character or until the *precision* value is reached.|
-|**`Z`**|`ANSI_STRING` or `UNICODE_STRING` structure|When the address of an [`ANSI_STRING`](/windows/win32/api/ntdef/ns-ntdef-string) or [`UNICODE_STRING`](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure is passed as the argument, display the string contained in the buffer pointed to by the `Buffer` field of the structure. Use a *size* modifier prefix of **`w`** to specify a `UNICODE_STRING` argument—for example, `%wZ`. The `Length` field of the structure must be set to the length, in bytes, of the string. The `MaximumLength` field of the structure must be set to the length, in bytes, of the buffer.<br /><br />Typically, the **`Z`** type character is used only in driver debugging functions that use a conversion specification, such as `dbgPrint` and `kdPrint`.|
+| Type character | Argument | Output format |
+|---|---|---|
+| **`c`** | Character | When used with `printf` functions, specifies a single-byte character; when used with `wprintf` functions, specifies a wide character. |
+| **`C`** | Character | When used with `printf` functions, specifies a wide character; when used with `wprintf` functions, specifies a single-byte character. |
+| **`d`** | Integer | Signed decimal integer. |
+| **`i`** | Integer | Signed decimal integer. |
+| **`o`** | Integer | Unsigned octal integer. |
+| **`u`** | Integer | Unsigned decimal integer. |
+| **`x`** | Integer | Unsigned hexadecimal integer; uses "`abcdef`". |
+| **`X`** | Integer | Unsigned hexadecimal integer; uses "`ABCDEF`". |
+| **`e`** | Floating-point | Signed value that has the form [`-`]*d.dddd*`e`\[`+`\|`-`]*dd*\[*d*], where *d* is one decimal digit, *dddd* is one or more decimal digits depending on the specified precision, or six by default, and *dd*\[*d*] is two or three decimal digits depending on the [output format](./set-output-format.md) and size of the exponent. |
+| **`E`** | Floating-point | Identical to the **`e`** format except that **`E`** rather than **`e`** introduces the exponent. |
+| **`f`** | Floating-point | Signed value that has the form [`-`]*dddd*`.`*dddd*, where *dddd* is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision, or six by default. |
+| **`F`** | Floating-point | Identical to the **`f`** format except that infinity and NaN output is capitalized. |
+| **`g`** | Floating-point | Signed values are displayed in **`f`** or **`e`** format, whichever is more compact for the given value and precision. The **`e`** format is used only when the exponent of the value is less than -4 or greater than or equal to the *precision* argument. Trailing zeros are truncated, and the decimal point appears only if one or more digits follow it. |
+| **`G`** | Floating-point | Identical to the **`g`** format, except that **`E`**, rather than **`e`**, introduces the exponent (where appropriate). |
+| **`a`** | Floating-point | Signed hexadecimal double-precision floating-point value that has the form [`-`]`0x`*h.hhhh*`p`\[`+`\|`-`]*dd*, where *h.hhhh* are the hex digits (using lower case letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point. |
+| **`A`** | Floating-point | Signed hexadecimal double-precision floating-point value that has the form \[`-`]`0X`*h.hhhh*`P`\[`+`\|`-`]*dd*, where *h.hhhh* are the hex digits (using capital letters) of the mantissa, and *dd* are one or more digits for the exponent. The precision specifies the number of digits after the point. |
+| **`n`** | Pointer to integer | Number of characters that are successfully written so far to the stream or buffer. This value is stored in the integer whose address is given as the argument. The size of the integer pointed at can be controlled by an argument size specification prefix. The **`n`** specifier is disabled by default; for information see the important security note. |
+| **`p`** | Pointer type | Display the argument as an address in hexadecimal digits. |
+| **`s`** | String | When used with `printf` functions, specifies a single-byte or multi-byte character string; when used with `wprintf` functions, specifies a wide-character string. Characters are displayed up to the first null character or until the *precision* value is reached. |
+| **`S`** | String | When used with `printf` functions, specifies a wide-character string; when used with `wprintf` functions, specifies a single-byte or multi-byte character string. Characters are displayed up to the first null character or until the *precision* value is reached. |
+| **`Z`** | `ANSI_STRING` or `UNICODE_STRING` structure | When the address of an [`ANSI_STRING`](/windows/win32/api/ntdef/ns-ntdef-string) or [`UNICODE_STRING`](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure is passed as the argument, display the string contained in the buffer pointed to by the `Buffer` field of the structure. Use a *size* modifier prefix of **`w`** to specify a `UNICODE_STRING` argument—for example, `%wZ`. The `Length` field of the structure must be set to the length, in bytes, of the string. The `MaximumLength` field of the structure must be set to the length, in bytes, of the buffer.<br /><br />Typically, the **`Z`** type character is used only in driver debugging functions that use a conversion specification, such as `dbgPrint` and `kdPrint`. |
 
 In Visual Studio 2015 and later versions, if the argument that corresponds to a floating-point conversion specifier (**`a`**, **`A`**, **`e`**, **`E`**, **`f`**, **`F`**, **`g`**, **`G`**) is infinite, indefinite, or NaN, the formatted output conforms to the C99 standard. This table lists the formatted output:
 
-|Value|Output|
-|-----------|------------|
-|infinity|`inf`|
-|Quiet NaN|`nan`|
-|Signaling NaN|`nan(snan)`|
-|Indefinite NaN|`nan(ind)`|
+| Value | Output |
+|---|---|
+| Infinity | `inf` |
+| Quiet NaN | `nan` |
+| Signaling NaN | `nan(snan)` |
+| Indefinite NaN | `nan(ind)` |
 
 Any of these strings may be prefixed by a sign. If a floating-point *type* conversion specifier character is a capital letter, then the output is also formatted in capital letters. For example, if the format specifier is `%F` instead of `%f`, an infinity is formatted as `INF` instead of `inf`. The `scanf` functions can also parse these strings, so these values can make a round trip through `printf` and `scanf` functions.
 
 Before Visual Studio 2015, the CRT used a different, non-standard format for output of infinite, indefinite, and NaN values:
 
-|Value|Output|
-|-----------|------------|
-|+ infinity|`1.#INF` *random-digits*|
-|- infinity|`-1.#INF` *random-digits*|
-|Indefinite (same as quiet NaN)|*digit* `.#IND` *random-digits*|
-|NaN|*digit* `.#NAN` *random-digits*|
+| Value | Output |
+|---|---|
+| + Infinity | `1.#INF` *random-digits* |
+| - Infinity | `-1.#INF` *random-digits* |
+| Indefinite (same as quiet NaN) | *digit* `.#IND` *random-digits* |
+| NaN | *digit* `.#NAN` *random-digits* |
 
 Any of these strings may have been prefixed by a sign, and may have been formatted differently depending on field width and precision, sometimes with unusual effects. For example, `printf("%.2f\n", INFINITY)` prints `1.#J` because the *#INF* would be "rounded" to two digits of precision.
 
@@ -104,15 +104,15 @@ The first optional field in a conversion specification contains *flag directives
 
 ### Flag characters
 
-|Flag|Meaning|Default|
-|----------|-------------|-------------|
-|**`-`**|Left align the result within the given field width.|Right align.|
-|**`+`**|Use a sign (+ or -) to prefix the output value if it's of a signed type.|Sign appears only for negative signed values (-).|
-|**`0`**|If *width* is prefixed by **`0`**, leading zeros are added until the minimum width is reached. If both **`0`** and **`-`** appear, the **`0`** is ignored. If **`0`** is specified for an integer format (**`i`**, **`u`**, **`x`**, **`X`**, **`o`**, **`d`**) and a precision specification is also present—for example, `%04.d`—the **`0`** is ignored. If **`0`** is specified for the **`a`** or **`A`** floating-point format, leading zeros are prepended to the mantissa, after the `0x` or `0X` prefix.|No padding.|
-|**blank (' ')**|Use a blank to prefix the output value if it's signed and positive. The blank is ignored if both the blank and + flags appear.|No blank appears.|
-|**`#`**|When it's used with the **`o`**, **`x`**, or **`X`** format, the **`#`** flag uses `0`, `0x`, or `0X`, respectively, to prefix any nonzero output value.|No prefix appears.|
-||When it's used with the **`e`**, **`E`**, **`f`**, **`F`**, **`a`**, or **`A`** format, the **`#`** flag forces the output value to contain a decimal point.|Decimal point appears only if digits follow it.|
-||When it's used with the **`g`** or **`G`** format, the **`#`** flag forces the output value to contain a decimal point and prevents the truncation of trailing zeros.<br /><br /> Ignored when used with **`c`**, **`d`**, **`i`**, **`u`**, or **`s`**.|Decimal point appears only if digits follow it. Trailing zeros are truncated.|
+| Flag | Meaning | Default |
+|---|---|---|
+| **`-`** | Left align the result within the given field width. | Right align. |
+| **`+`** | Use a sign (+ or -) to prefix the output value if it's of a signed type. | Sign appears only for negative signed values (-). |
+| **`0`** | If *width* is prefixed by **`0`**, leading zeros are added until the minimum width is reached. If both **`0`** and **`-`** appear, the **`0`** is ignored. If **`0`** is specified for an integer format (**`i`**, **`u`**, **`x`**, **`X`**, **`o`**, **`d`**) and a precision specification is also present—for example, `%04.d`—the **`0`** is ignored. If **`0`** is specified for the **`a`** or **`A`** floating-point format, leading zeros are prepended to the mantissa, after the `0x` or `0X` prefix. | No padding. |
+| **blank (' ')** | Use a blank to prefix the output value if it's signed and positive. The blank is ignored if both the blank and + flags appear. | No blank appears. |
+| **`#`** | When it's used with the **`o`**, **`x`**, or **`X`** format, the **`#`** flag uses `0`, `0x`, or `0X`, respectively, to prefix any nonzero output value. | No prefix appears. |
+|  | When it's used with the **`e`**, **`E`**, **`f`**, **`F`**, **`a`**, or **`A`** format, the **`#`** flag forces the output value to contain a decimal point. | Decimal point appears only if digits follow it. |
+|  | When it's used with the **`g`** or **`G`** format, the **`#`** flag forces the output value to contain a decimal point and prevents the truncation of trailing zeros.<br /><br /> Ignored when used with **`c`**, **`d`**, **`i`**, **`u`**, or **`s`**. | Decimal point appears only if digits follow it. Trailing zeros are truncated. |
 
 ## <a name="width"></a> Width specification
 
@@ -142,15 +142,15 @@ The *`type`* character determines either the interpretation of *`precision`* or 
 
 ### How precision values affect type
 
-|Type|Meaning|Default|
-|----------|-------------|-------------|
-|**`a`**, **`A`**|The precision specifies the number of digits after the point.|Default precision is 13. If precision is 0, no decimal point is printed unless the **`#`** flag is used.|
-|**`c`**, **`C`**|The precision has no effect.|Character is printed.|
-|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, **`X`**|The precision specifies the minimum number of digits to be printed. If the number of digits in the argument is less than *precision*, the output value is padded on the left with zeros. The value isn't truncated when the number of digits exceeds *precision*.|Default precision is 1.|
-|**`e`**, **`E`**|The precision specifies the number of digits to be printed after the decimal point. The last printed digit is rounded.|Default precision is 6. If *precision* is 0 or the period (`.`) appears without a number following it, no decimal point is printed.|
-|**`f`**, **`F`**|The precision value specifies the number of digits after the decimal point. If a decimal point appears, at least one digit appears before it. The value is rounded to the appropriate number of digits.|Default precision is 6. If *precision* is 0, or if the period (`.`) appears without a number following it, no decimal point is printed.|
-|**`g`**, **`G`**|The precision specifies the maximum number of significant digits printed.|Six significant digits are printed, and any trailing zeros are truncated.|
-|**`s`**, **`S`**|The precision specifies the maximum number of characters to be printed. Characters in excess of *precision* aren't printed.|Characters are printed until a null character is found.|
+| Type | Meaning | Default |
+|---|---|---|
+| **`a`**, **`A`** | The precision specifies the number of digits after the point. | Default precision is 13. If precision is 0, no decimal point is printed unless the **`#`** flag is used. |
+| **`c`**, **`C`** | The precision has no effect. | Character is printed. |
+| **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, **`X`** | The precision specifies the minimum number of digits to be printed. If the number of digits in the argument is less than *precision*, the output value is padded on the left with zeros. The value isn't truncated when the number of digits exceeds *precision*. | Default precision is 1. |
+| **`e`**, **`E`** | The precision specifies the number of digits to be printed after the decimal point. The last printed digit is rounded. | Default precision is 6. If *precision* is 0 or the period (`.`) appears without a number following it, no decimal point is printed. |
+| **`f`**, **`F`** | The precision value specifies the number of digits after the decimal point. If a decimal point appears, at least one digit appears before it. The value is rounded to the appropriate number of digits. | Default precision is 6. If *precision* is 0, or if the period (`.`) appears without a number following it, no decimal point is printed. |
+| **`g`**, **`G`** | The precision specifies the maximum number of significant digits printed. | Six significant digits are printed, and any trailing zeros are truncated. |
+| **`s`**, **`S`** | The precision specifies the maximum number of characters to be printed. Characters in excess of *precision* aren't printed. | Characters are printed until a null character is found. |
 
 ## <a name="size"></a> Argument size specification
 
@@ -160,22 +160,22 @@ Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` 
 
 ### Size prefixes for printf and wprintf format-type specifiers
 
-|To specify|Use prefix|With type specifier|
-|----------------|----------------|-------------------------|
-|`char`<br />`unsigned char`|**`hh`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|`short int`<br />`short unsigned int`|**`h`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|`__int32`<br />`unsigned __int32`|**`I32`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|`__int64`<br />`unsigned __int64`|**`I64`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|`intmax_t`<br />`uintmax_t`|**`j`** or **`I64`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|`long double`|**`l`** (lowercase L) or **`L`**|**`a`**, **`A`**, **`e`**, **`E`**, **`f`**, **`F`**, **`g`**, or **`G`**|
-|`long int`<br />`long unsigned int`|**`l`** (lowercase L) |**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
-|`long long int`<br />`unsigned long long int`|**`ll`**  (lowercase LL)|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|`ptrdiff_t`|**`t`** or **`I`** (uppercase i)|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|`size_t`|**`z`** or **`I`** (uppercase i)|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|Single-byte character|**`h`**|**`c`** or **`C`**|
-|Wide character|**`l`** (lowercase L) or **`w`**|**`c`** or **`C`**|
-|Single-byte character string|**`h`**|**`s`**, **`S`**, or **`Z`**|
-|Wide-character string|**`l`** (lowercase L) or **`w`**|**`s`**, **`S`**, or **`Z`**|
+| To specify | Use prefix | With type specifier |
+|---|---|---|
+| `char`<br />`unsigned char` | **`hh`** | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `short int`<br />`short unsigned int` | **`h`** | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `__int32`<br />`unsigned __int32` | **`I32`** | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `__int64`<br />`unsigned __int64` | **`I64`** | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `intmax_t`<br />`uintmax_t` | **`j`** or **`I64`** | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `long double` | **`l`** (lowercase L) or **`L`** | **`a`**, **`A`**, **`e`**, **`E`**, **`f`**, **`F`**, **`g`**, or **`G`** |
+| `long int`<br />`long unsigned int` | **`l`** (lowercase L) | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `long long int`<br />`unsigned long long int` | **`ll`**  (lowercase LL) | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `ptrdiff_t` | **`t`** or **`I`** (uppercase i) | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| `size_t` | **`z`** or **`I`** (uppercase i) | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| Single-byte character | **`h`** | **`c`** or **`C`** |
+| Wide character | **`l`** (lowercase L) or **`w`** | **`c`** or **`C`** |
+| Single-byte character string | **`h`** | **`s`**, **`S`**, or **`Z`** |
+| Wide-character string | **`l`** (lowercase L) or **`w`** | **`s`**, **`S`**, or **`Z`** |
 
 The `ptrdiff_t` and `size_t` types are `__int32` or `unsigned __int32` on 32-bit platforms, and `__int64` or `unsigned __int64` on 64-bit platforms. The **`I`** (uppercase i), **`j`**, **`t`**, and **`z`** size prefixes take the correct argument width for the platform.
 

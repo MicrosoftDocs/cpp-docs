@@ -48,9 +48,9 @@ Locale to use.
 
 Each of these routines converts a copy of *`c`*, if possible, and returns the result.
 
-If *`c`* is a wide character for which `iswlower` is nonzero and there is a corresponding wide character for which [`iswupper`](isupper-isupper-l-iswupper-iswupper-l.md) is nonzero, **`towupper`** returns the corresponding wide character; otherwise, **`towupper`** returns *`c`* unchanged.
+If *`c`* is a wide character for which `iswlower` is nonzero and there's a corresponding wide character for which [`iswupper`](isupper-isupper-l-iswupper-iswupper-l.md) is nonzero, **`towupper`** returns the corresponding wide character; otherwise, **`towupper`** returns *`c`* unchanged.
 
-There is no return value reserved to indicate an error.
+There's no return value reserved to indicate an error.
 
 In order for **`toupper`** to give the expected results, [`__isascii`](isascii-isascii-iswascii.md) and [`islower`](islower-iswlower-islower-l-iswlower-l.md) must both return nonzero.
 
@@ -64,21 +64,21 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_totupper`|**`toupper`**|**`_mbctoupper`**|**`towupper`**|
-|`_totupper_l`|**`_toupper_l`**|**`_mbctoupper_l`**|**`_towupper_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_totupper` | **`toupper`** | **`_mbctoupper`** | **`towupper`** |
+| `_totupper_l` | **`_toupper_l`** | **`_mbctoupper_l`** | **`_towupper_l`** |
 
 > [!NOTE]
 > **`_toupper_l`** and **`_towupper_l`** have no locale dependence and are not meant to be called directly. They are provided for internal use by **`_totupper_l`**.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`toupper`**|\<ctype.h>|
-|**`_toupper`**|\<ctype.h>|
-|**`towupper`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`toupper`** | \<ctype.h> |
+| **`_toupper`** | \<ctype.h> |
+| **`towupper`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

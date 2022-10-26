@@ -32,15 +32,15 @@ The value to truncate.
 
 ## Return value
 
-If successful, returns an integer value of *`x`*, rounded towards zero.
+If successful, the functions return an integer value of *`x`*, rounded towards zero.
 
-Otherwise, may return one of the following:
+Otherwise, the functions may return one of the following values:
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* = ±INFINITY|x|
-|*`x`* =  ±0|x|
-|*`x`* = NaN|NaN|
+| Issue | Return |
+|---|---|
+| *`x`* = ±INFINITY | x |
+| *`x`* =  ±0 | x |
+| *`x`* = NaN | NaN |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -50,16 +50,16 @@ Because C++ allows overloading, you can call overloads of **`trunc`** that take 
 
 If you use the \<tgmath.h> `trunc()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
-Because the largest floating-point values are exact integers, this function will not overflow on its own. However, you may cause the function to overflow by returning a value into an integer type.
+Because the largest floating-point values are exact integers, this function won't overflow on its own. However, you may cause the function to overflow by returning a value into an integer type.
 
 You can also round down by implicitly converting from floating-point to integral; however, doing so is limited to the values that can be stored in the target type.
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`trunc`**, **`truncf`**, **`truncl`**|\<math.h>|\<cmath>|
-|**`trunc`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`trunc`**, **`truncf`**, **`truncl`** | \<math.h> | \<cmath> |
+| **`trunc`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

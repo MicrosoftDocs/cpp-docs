@@ -72,7 +72,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 ### Generic-text routine mappings
 
-| `TCHAR.H` routine | `_UNICODE` & `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | **`_tscanf`** | **`scanf`** | **`scanf`** | **`wscanf`** |
 | **`_tscanf_l`** | **`_scanf_l`** | **`_scanf_l`** | **`_wscanf_l`** |

@@ -73,10 +73,10 @@ The wide-character version of **`strtoumax`** is **`wcstoumax`**; its *`strSourc
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstoumax`|**`strtoumax`**|**`strtoumax`**|**`wcstoumax`**|
-|`_tcstoumax_l`|**`strtoumax_l`**|**`_strtoumax_l`**|**`_wcstoumax_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstoumax` | **`strtoumax`** | **`strtoumax`** | **`wcstoumax`** |
+| `_tcstoumax_l` | **`strtoumax_l`** | **`_strtoumax_l`** | **`_wcstoumax_l`** |
 
 **`strtoumax`** expects *`strSource`* to point to a string of the following form:
 
@@ -86,12 +86,12 @@ A *`whitespace`* may consist of space and tab characters, which are ignored. *`d
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtoumax`**|\<stdlib.h>|
-|**`wcstoumax`**|\<stdlib.h> or \<wchar.h>|
-|**`_strtoumax_l`**|\<stdlib.h>|
-|**`_wcstoumax_l`**|\<stdlib.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`strtoumax`** | \<stdlib.h> |
+| **`wcstoumax`** | \<stdlib.h> or \<wchar.h> |
+| **`_strtoumax_l`** | \<stdlib.h> |
+| **`_wcstoumax_l`** | \<stdlib.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

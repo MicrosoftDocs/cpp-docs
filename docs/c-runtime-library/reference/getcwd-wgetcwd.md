@@ -55,16 +55,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tgetcwd`**|**`_getcwd`**|**`_getcwd`**|**`_wgetcwd`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tgetcwd`** | **`_getcwd`** | **`_getcwd`** | **`_wgetcwd`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getcwd`**|`<direct.h>`|
-|**`_wgetcwd`**|`<direct.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_getcwd`** | `<direct.h>` |
+| **`_wgetcwd`** | `<direct.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

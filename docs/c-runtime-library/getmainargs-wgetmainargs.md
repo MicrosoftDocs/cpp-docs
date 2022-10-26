@@ -55,11 +55,11 @@ Other information to be passed to the CRT DLL.
 
 ## Remarks
 
-Use `__getmainargs` on non-wide character platforms, and `__wgetmainargs` on wide-character (Unicode) platforms.
+Use **`__getmainargs`** on non-wide character platforms, and **`__wgetmainargs`** on wide-character (Unicode) platforms.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__getmainargs|internal.h|
-|__wgetmainargs|internal.h|
+| Routine | Required header |
+|---|---|
+| **`__getmainargs`** | `internal.h` |
+| **`__wgetmainargs`** | `internal.h` |

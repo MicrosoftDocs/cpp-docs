@@ -65,17 +65,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcserror`|**`strerror`**|**`strerror`**|**`_wcserror`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcserror` | **`strerror`** | **`strerror`** | **`_wcserror`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strerror`**|\<string.h>|
-|**`_strerror`**|\<string.h>|
-|**`_wcserror`**, **`__wcserror`**|\<string.h>|
+| Routine | Required header |
+|---|---|
+| **`strerror`** | \<string.h> |
+| **`_strerror`** | \<string.h> |
+| **`_wcserror`**, **`__wcserror`** | \<string.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

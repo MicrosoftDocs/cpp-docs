@@ -40,9 +40,9 @@ To generate an ANSI-conformant application, use the ANSI-standard **`atexit`** f
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`atexit`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`atexit`** | `<stdlib.h>` |
 
 ## Example
 

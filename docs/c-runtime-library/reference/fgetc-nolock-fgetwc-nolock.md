@@ -42,16 +42,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_fgettc_nolock`**|**`_fgetc_nolock`**|**`_fgetc_nolock`**|**`_fgetwc_nolock`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_fgettc_nolock`** | **`_fgetc_nolock`** | **`_fgetc_nolock`** | **`_fgetwc_nolock`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fgetc_nolock`**|\<stdio.h>|
-|**`_fgetwc_nolock`**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`_fgetc_nolock`** | \<stdio.h> |
+| **`_fgetwc_nolock`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

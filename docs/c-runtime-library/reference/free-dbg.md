@@ -43,9 +43,9 @@ For information about how memory blocks are allocated, initialized, and managed 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_free_dbg`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_free_dbg`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

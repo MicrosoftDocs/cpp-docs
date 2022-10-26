@@ -72,10 +72,10 @@ or
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memcpy`**|`<memory.h>` or `<string.h>`|
-|**`wmemcpy`**|`<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`memcpy`** | `<memory.h>` or `<string.h>` |
+| **`wmemcpy`** | `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

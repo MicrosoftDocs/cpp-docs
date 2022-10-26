@@ -37,9 +37,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`btowc`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`btowc`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

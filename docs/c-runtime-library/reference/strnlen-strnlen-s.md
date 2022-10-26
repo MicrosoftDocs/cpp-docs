@@ -90,11 +90,11 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsnlen`**|**`strnlen`**|**`strnlen`**|**`wcsnlen`**|
-|**`_tcscnlen`**|**`strnlen`**|**`_mbsnlen`**|**`wcsnlen`**|
-|**`_tcscnlen_l`**|**`strnlen`**|**`_mbsnlen_l`**|**`wcsnlen`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsnlen` | **`strnlen`** | **`strnlen`** | **`wcsnlen`** |
+| `_tcscnlen` | **`strnlen`** | **`_mbsnlen`** | **`wcsnlen`** |
+| `_tcscnlen_l` | **`strnlen`** | **`_mbsnlen_l`** | **`wcsnlen`** |
 
 **`_mbsnlen`** and **`_mbstrnlen`** return the number of multibyte characters in a multibyte-character string. **`_mbsnlen`** recognizes multibyte-character sequences according to the multibyte code page that's currently in use or according to the locale that's passed in; it doesn't test for multibyte-character validity. **`_mbstrnlen`** tests for multibyte-character validity and recognizes multibyte-character sequences. If the string that's passed to **`_mbstrnlen`** contains an invalid multibyte character, `errno` is set to `EILSEQ`.
 
@@ -102,12 +102,12 @@ The output value is affected by the setting of the `LC_CTYPE` category setting o
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strnlen`**, **`strnlen_s`**|`<string.h>`|
-|**`wcsnlen`**, **`wcsnlen_s`**|`<string.h>` or `<wchar.h>`|
-|**`_mbsnlen`**, **`_mbsnlen_l`**|`<mbstring.h>`|
-|**`_mbstrnlen`**, **`_mbstrnlen_l`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`strnlen`**, **`strnlen_s`** | `<string.h>` |
+| **`wcsnlen`**, **`wcsnlen_s`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsnlen`**, **`_mbsnlen_l`** | `<mbstring.h>` |
+| **`_mbstrnlen`**, **`_mbstrnlen_l`** | `<stdlib.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

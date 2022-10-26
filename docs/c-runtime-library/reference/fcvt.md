@@ -61,9 +61,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fcvt`**|\<stdlib.h>|
+| Function | Required header |
+|---|---|
+| **`_fcvt`** | \<stdlib.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

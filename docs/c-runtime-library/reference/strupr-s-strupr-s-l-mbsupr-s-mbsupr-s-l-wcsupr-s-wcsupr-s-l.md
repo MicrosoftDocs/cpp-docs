@@ -97,7 +97,7 @@ These functions validate their parameters. If *`str`* is a `NULL` pointer, the i
 
 The **`_strupr_s`** function converts, in place, each lowercase letter in *`str`* to uppercase. **`_wcsupr_s`** is the wide-character version of **`_strupr_s`**. **`_mbsupr_s`** is the multi-byte character version of **`_strupr_s`**.
 
-The conversion is determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale; the visions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
+The conversion is determined by the `LC_CTYPE` category setting of the locale. Other characters aren't affected. For more information on `LC_CTYPE`, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale; the visions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -107,17 +107,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsupr_s`|**`_strupr_s`**|**`_mbsupr_s`**|**`_wcsupr_s`**|
-|`_tcsupr_s_l`|**`_strupr_s_l`**|**`_mbsupr_s_l`**|**`_wcsupr_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsupr_s` | **`_strupr_s`** | **`_mbsupr_s`** | **`_wcsupr_s`** |
+| `_tcsupr_s_l` | **`_strupr_s_l`** | **`_mbsupr_s_l`** | **`_wcsupr_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strupr_s`**, **`_strupr_s_l`**|\<string.h>|
-|**`_wcsupr_s`**, **`_wcsupr_s_l`**, **`_mbsupr_s`**, **`_mbsupr_s_l`**|\<string.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_strupr_s`**, **`_strupr_s_l`** | \<string.h> |
+| **`_wcsupr_s`**, **`_wcsupr_s_l`**, **`_mbsupr_s`**, **`_mbsupr_s_l`** | \<string.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

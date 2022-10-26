@@ -64,11 +64,11 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------------|-------------------------------|
-|**`nextafter`**, **`nextafterf`**, **`nextafterl`**, **`_nextafterf`**, **`nexttoward`**, **`nexttowardf`**, **`nexttowardl`**|`<math.h>`|`<math.h>` or `<cmath>`|
-|**`_nextafter`**|`<float.h>`|`<float.h>` or `<cfloat>`|
-|**`nextafter`** macro,  **`nexttoward`** macro| `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`nextafter`**, **`nextafterf`**, **`nextafterl`**, **`_nextafterf`**, **`nexttoward`**, **`nexttowardf`**, **`nexttowardl`** | `<math.h>` | `<math.h>` or `<cmath>` |
+| **`_nextafter`** | `<float.h>` | `<float.h>` or `<cfloat>` |
+| **`nextafter`** macro,  **`nexttoward`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

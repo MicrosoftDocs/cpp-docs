@@ -50,8 +50,8 @@ For more information about these and other error codes, see [`errno`, `_doserrno
 
 The **`_lseek`** function moves the file pointer associated with *`fd`* to a new location that is *`offset`* bytes from *`origin`*. The next operation on the file occurs at the new location. The *`origin`* argument must be one of the following constants, which are defined in Stdio.h.
 
-|*`origin`* value| Description |
-|-|-|
+| *`origin`* value | Description |
+|---|---|
 | `SEEK_SET` | Beginning of the file. |
 | `SEEK_CUR` | Current position of the file pointer. |
 | `SEEK_END` | End of file. |
@@ -62,10 +62,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_lseek`**|\<io.h>|
-|**`_lseeki64`**|\<io.h>|
+| Routine | Required header |
+|---|---|
+| **`_lseek`** | \<io.h> |
+| **`_lseeki64`** | \<io.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

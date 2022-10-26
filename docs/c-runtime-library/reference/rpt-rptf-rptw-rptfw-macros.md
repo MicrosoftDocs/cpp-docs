@@ -63,11 +63,11 @@ The `_RPT` macros call the [`_CrtDbgReport`](crtdbgreport-crtdbgreportw.md) func
 
 If an `_RPT` macro is called, and `_CrtSetReportMode` and `_CrtSetReportFile` haven't been called, messages are displayed as follows:
 
-|Report type|Output destination|
-|-----------------|------------------------|
-|`_CRT_WARN`|Warning text isn't displayed.|
-|`_CRT_ERROR`|A pop-up window. Same as if `_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_WNDW);` had been specified.|
-|`_CRT_ASSERT`|Same as `_CRT_ERROR`.|
+| Report type | Output destination |
+|---|---|
+| `_CRT_WARN` | Warning text isn't displayed. |
+| `_CRT_ERROR` | A pop-up window. Same as if `_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_WNDW);` had been specified. |
+| `_CRT_ASSERT` | Same as `_CRT_ERROR`. |
 
 When the destination is a debug message window and the user chooses the **Retry** button, `_CrtDbgReport` or `_CrtDbgReportW` returns 1. This return value causes these macros to start the debugger, if just-in-time (JIT) debugging is enabled. For more information about using these macros as a debugging error handling mechanism, see [Using macros for verification and reporting](/visualstudio/debugger/macros-for-reporting).
 
@@ -75,12 +75,12 @@ Two other macros exist that generate a debug report. The [`_ASSERT`](assert-asse
 
 ## Requirements
 
-|Macro|Required header|
-|-----------|---------------------|
-|`_RPT` macros|\<crtdbg.h>|
-|`_RPTF` macros|\<crtdbg.h>|
-|`_RPTW` macros|\<crtdbg.h>|
-|`_RPTFW` macros|\<crtdbg.h>|
+| Macro | Required header |
+|---|---|
+| `_RPT` macros | \<crtdbg.h> |
+| `_RPTF` macros | \<crtdbg.h> |
+| `_RPTW` macros | \<crtdbg.h> |
+| `_RPTFW` macros | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

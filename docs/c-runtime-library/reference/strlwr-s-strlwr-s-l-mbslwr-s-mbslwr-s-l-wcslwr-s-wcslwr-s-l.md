@@ -107,18 +107,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcslwr_s`|**`_strlwr_s`**|**`_mbslwr_s`**|**`_wcslwr_s`**|
-|`_tcslwr_s_l`|**`_strlwr_s_l`**|**`_mbslwr_s_l`**|**`_wcslwr_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcslwr_s` | **`_strlwr_s`** | **`_mbslwr_s`** | **`_wcslwr_s`** |
+| `_tcslwr_s_l` | **`_strlwr_s_l`** | **`_mbslwr_s_l`** | **`_wcslwr_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strlwr_s`**, **`_strlwr_s_l`**|\<string.h>|
-|**`_mbslwr_s`**, **`_mbslwr_s_l`**|\<mbstring.h>|
-|**`_wcslwr_s`**, **`_wcslwr_s_l`**|\<string.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_strlwr_s`**, **`_strlwr_s_l`** | \<string.h> |
+| **`_mbslwr_s`**, **`_mbslwr_s_l`** | \<mbstring.h> |
+| **`_wcslwr_s`**, **`_wcslwr_s_l`** | \<string.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

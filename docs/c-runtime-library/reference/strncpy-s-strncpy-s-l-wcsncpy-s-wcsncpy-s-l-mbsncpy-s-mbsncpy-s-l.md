@@ -123,12 +123,12 @@ Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.
 
 ### Error conditions
 
-|*`strDest`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDest`*|
-|---------------|------------------------|-----------------|------------------|---------------------------|
-|`NULL`|any|any|`EINVAL`|not modified|
-|any|any|`NULL`|`EINVAL`|*`strDest[0]`* set to 0|
-|any|0|any|`EINVAL`|not modified|
-|not `NULL`|too small|any|`ERANGE`|*`strDest[0]`* set to 0|
+| *`strDest`* | *`numberOfElements`* | *`strSource`* | Return value | Contents of *`strDest`* |
+|---|---|---|---|---|
+| `NULL` | any | any | `EINVAL` | not modified |
+| any | any | `NULL` | `EINVAL` | *`strDest[0]`* set to 0 |
+| any | 0 | any | `EINVAL` | not modified |
+| not `NULL` | too small | any | `ERANGE` | *`strDest[0]`* set to 0 |
 
 ## Remarks
 
@@ -170,21 +170,21 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsncpy_s`**|**`strncpy_s`**|**`_mbsnbcpy_s`**|**`wcsncpy_s`**|
-|**`_tcsncpy_s_l`**|**`_strncpy_s_l`**|**`_mbsnbcpy_s_l`**|**`_wcsncpy_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncpy_s` | **`strncpy_s`** | **`_mbsnbcpy_s`** | **`wcsncpy_s`** |
+| `_tcsncpy_s_l` | **`_strncpy_s_l`** | **`_mbsnbcpy_s_l`** | **`_wcsncpy_s_l`** |
 
 > [!NOTE]
-> **`_strncpy_s_l`**, **`_wcsncpy_s_l`** and **`_mbsncpy_s_l`** have no locale dependence and are provided just for **`_tcsncpy_s_l`** and are not intended to be called directly.
+> **`_strncpy_s_l`**, **`_wcsncpy_s_l`** and **`_mbsncpy_s_l`** have no locale dependence. They're provided just for `_tcsncpy_s_l` and aren't intended to be called directly.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strncpy_s`**, **`_strncpy_s_l`**|`<string.h>`|
-|**`wcsncpy_s`**, **`_wcsncpy_s_l`**|`<string.h>` or `<wchar.h>`|
-|**`_mbsncpy_s`**, **`_mbsncpy_s_l`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strncpy_s`**, **`_strncpy_s_l`** | `<string.h>` |
+| **`wcsncpy_s`**, **`_wcsncpy_s_l`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsncpy_s`**, **`_mbsncpy_s_l`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

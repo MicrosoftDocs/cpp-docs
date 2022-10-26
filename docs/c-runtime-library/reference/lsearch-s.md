@@ -55,12 +55,12 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 
 ### Error conditions
 
-|*`key`*|*`base`*|*`compare`*|*`number`*|*`size`*|`errno`|
-|-----------|------------|---------------|-----------|------------|-------------|
-|`NULL`|any|any|any|any|`EINVAL`|
-|any|`NULL`|any|!= 0|any|`EINVAL`|
-|any|any|any|any|zero|`EINVAL`|
-|any|any|`NULL`|an|any|`EINVAL`|
+| *`key`* | *`base`* | *`compare`* | *`number`* | *`size`* | `errno` |
+|---|---|---|---|---|---|
+| `NULL` | any | any | any | any | `EINVAL` |
+| any | `NULL` | any | != 0 | any | `EINVAL` |
+| any | any | any | any | zero | `EINVAL` |
+| any | any | `NULL` | an | any | `EINVAL` |
 
 ## Remarks
 
@@ -74,9 +74,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_lsearch_s`**|\<search.h>|
+| Routine | Required header |
+|---|---|
+| **`_lsearch_s`** | \<search.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

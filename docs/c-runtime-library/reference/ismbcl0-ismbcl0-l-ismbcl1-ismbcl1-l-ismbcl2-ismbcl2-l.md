@@ -61,14 +61,14 @@ Each of these functions tests a given multibyte character for a given condition.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
-|Routine|Test condition (code page 932 only)|
-|-------------|-------------------------------------------|
-|**`_ismbcl0`**|JIS non-Kanji: 0x8140<=*`c`*<=0x889E.|
-|**`_ismbcl0_l`**|JIS non-Kanji: 0x8140<=*`c`*<=0x889E.|
-|**`_ismbcl1`**|JIS level-1: 0x889F<=*`c`*<=0x9872.|
-|**`_ismbcl1_l`**|JIS level-1: 0x889F<=*`c`*<=0x9872.|
-|**`_ismbcl2`**|JIS level-2: 0x989F<=*`c`*<=0xEAA4.|
-|**`_ismbcl2_l`**|JIS level-2: 0x989F<=*`c`*<=0xEAA4.|
+| Routine | Test condition (code page 932 only) |
+|---|---|
+| **`_ismbcl0`** | JIS non-Kanji: 0x8140<=*`c`*<=0x889E. |
+| **`_ismbcl0_l`** | JIS non-Kanji: 0x8140<=*`c`*<=0x889E. |
+| **`_ismbcl1`** | JIS level-1: 0x889F<=*`c`*<=0x9872. |
+| **`_ismbcl1_l`** | JIS level-1: 0x889F<=*`c`*<=0x9872. |
+| **`_ismbcl2`** | JIS level-2: 0x989F<=*`c`*<=0xEAA4. |
+| **`_ismbcl2_l`** | JIS level-2: 0x989F<=*`c`*<=0xEAA4. |
 
 The functions check that the specified value *`c`* matches the test conditions described above, but don't check that *`c`* is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [`_ismbbtrail`](ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.
 
@@ -78,14 +78,14 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_ismbcl0`**|\<mbstring.h>|
-|**`_ismbcl0_l`**|\<mbstring.h>|
-|**`_ismbcl1`**|\<mbstring.h>|
-|**`_ismbcl1_l`**|\<mbstring.h>|
-|**`_ismbcl2`**|\<mbstring.h>|
-|**`_ismbcl2_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_ismbcl0`** | \<mbstring.h> |
+| **`_ismbcl0_l`** | \<mbstring.h> |
+| **`_ismbcl1`** | \<mbstring.h> |
+| **`_ismbcl1_l`** | \<mbstring.h> |
+| **`_ismbcl2`** | \<mbstring.h> |
+| **`_ismbcl2_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

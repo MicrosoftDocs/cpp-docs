@@ -53,9 +53,9 @@ In addition to the above restrictions, when using the[`/clr` (Common Language Ru
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_alloca`**|`<malloc.h>`|
+| Routine | Required header |
+|---|---|
+| **`_alloca`** | `<malloc.h>` |
 
 ## Example
 

@@ -67,10 +67,10 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tprintf_s`**|**`printf_s`**|**`printf_s`**|**`wprintf_s`**|
-|**`_tprintf_s_l`**|**`_printf_s_l`**|**`_printf_s_l`**|**`_wprintf_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tprintf_s` | **`printf_s`** | **`printf_s`** | **`wprintf_s`** |
+| `_tprintf_s_l` | **`_printf_s_l`** | **`_printf_s_l`** | **`_wprintf_s_l`** |
 
 The *`format`* argument consists of ordinary characters, escape sequences, and (if arguments follow *`format`*) format specifications. The ordinary characters and escape sequences are copied to **`stdout`** in order of their appearance. For example, the line
 
@@ -94,10 +94,10 @@ Line one
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`printf_s`**, **`_printf_s_l`**|`<stdio.h>`|
-|**`wprintf_s`**, **`_wprintf_s_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`printf_s`**, **`_printf_s_l`** | `<stdio.h>` |
+| **`wprintf_s`**, **`_wprintf_s_l`** | `<stdio.h>` or `<wchar.h>` |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

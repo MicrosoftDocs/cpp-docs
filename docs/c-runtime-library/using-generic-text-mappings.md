@@ -15,11 +15,11 @@ To simplify code development for various international markets, the Microsoft ru
 
 ### Preprocessor directives for generic-text mappings
 
-|#define|Compiled version|Example|
-|--------------|----------------------|-------------|
-|`_UNICODE`|Unicode (wide-character)|`_tcsrev` maps to `_wcsrev`|
-|`_MBCS`|Multibyte-character|`_tcsrev` maps to `_mbsrev`|
-|None (the default: both `_UNICODE` and `_MBCS` not defined)|SBCS (ASCII)|`_tcsrev` maps to `strrev`|
+| `#define` | Compiled version | Example |
+|---|---|---|
+| `_UNICODE` | Unicode (wide-character) | `_tcsrev` maps to `_wcsrev` |
+| `_MBCS` | Multibyte-character | `_tcsrev` maps to `_mbsrev` |
+| None (the default: both `_UNICODE` and `_MBCS` not defined) | SBCS (ASCII) | `_tcsrev` maps to `strrev` |
 
 For example, the generic-text function `_tcsrev`, defined in TCHAR.H, maps to `mbsrev` if `MBCS` has been defined in your program, or to `_wcsrev` if `_UNICODE` has been defined. Otherwise `_tcsrev` maps to `strrev`.
 
@@ -27,41 +27,41 @@ The generic-text data type `_TCHAR`, also defined in TCHAR.H, maps to type **`ch
 
 ### Generic-Text Data Type Mappings
 
-|Generic-text data type name|SBCS (_UNICODE, _MBCS not defined)|_MBCS defined|_UNICODE defined|
-|----------------------------------|--------------------------------------------|--------------------|-----------------------|
-|`_TCHAR`|**`char`**|**`char`**|**`wchar_t`**|
-|`_TINT`|**`int`**|**`int`**|`wint_t`|
-|`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
-|`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
-|`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
-|`_T` or `_TEXT`|No effect (removed by preprocessor)|No effect (removed by preprocessor)|`L` (converts following character or string to its Unicode counterpart)|
+| Generic-text data type name | SBCS (_UNICODE, _MBCS not defined) | _MBCS defined | _UNICODE defined |
+|---|---|---|---|
+| `_TCHAR` | **`char`** | **`char`** | **`wchar_t`** |
+| `_TINT` | **`int`** | **`int`** | `wint_t` |
+| `_TSCHAR` | **`signed char`** | **`signed char`** | **`wchar_t`** |
+| `_TUCHAR` | **`unsigned char`** | **`unsigned char`** | **`wchar_t`** |
+| `_TXCHAR` | **`char`** | **`unsigned char`** | **`wchar_t`** |
+| `_T` or `_TEXT` | No effect (removed by preprocessor) | No effect (removed by preprocessor) | `L` (converts following character or string to its Unicode counterpart) |
 
 For a complete list of generic-text mappings of routines, variables, and other objects, see [Generic-text mappings](./generic-text-mappings.md).
 
 The following code fragments illustrate the use of `_TCHAR` and `_tcsrev` for mapping to the MBCS, Unicode, and SBCS models.
 
-```
+```C
 _TCHAR *RetVal, *szString;
 RetVal = _tcsrev(szString);
 ```
 
 If `MBCS` has been defined, the preprocessor maps the preceding fragment to the following code:
 
-```
+```C
 char *RetVal, *szString;
 RetVal = _mbsrev(szString);
 ```
 
 If `_UNICODE` has been defined, the preprocessor maps the same fragment to the following code:
 
-```
+```C
 wchar_t *RetVal, *szString;
 RetVal = _wcsrev(szString);
 ```
 
 If both `_MBCS` and `_UNICODE` haven't been defined, the preprocessor maps the fragment to single-byte ASCII code, as follows:
 
-```
+```C
 char *RetVal, *szString;
 RetVal = strrev(szString);
 ```

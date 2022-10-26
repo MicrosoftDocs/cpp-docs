@@ -46,9 +46,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_tell`**, **`_telli64`**|\<io.h>|
+| Routine | Required header |
+|---|---|
+| **`_tell`**, **`_telli64`** | \<io.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

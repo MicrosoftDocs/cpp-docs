@@ -57,15 +57,15 @@ You don't need to call these functions explicitly in most cases. Instead, you ca
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsdup_dbg`|**`_strdup_dbg`**|`_mbsdup`|**`_wcsdup_dbg`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsdup_dbg` | **`_strdup_dbg`** | `_mbsdup` | **`_wcsdup_dbg`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strdup_dbg`**, **`_wcsdup_dbg`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_strdup_dbg`**, **`_wcsdup_dbg`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

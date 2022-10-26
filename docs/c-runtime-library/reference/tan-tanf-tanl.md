@@ -37,10 +37,10 @@ Angle in radians.
 
 The **`tan`** functions return the tangent of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-------------------------|
-|`± QNAN`,`IND`|none|`_DOMAIN`|
-|`± INF`|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
+| ± INF | `INVALID` | `_DOMAIN` |
 
 ## Remarks
 
@@ -52,10 +52,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------|-|
-|**`tan`**, **`tanf`**, **`tanl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`tan()`** macro | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`tan`**, **`tanf`**, **`tanl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`tan`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

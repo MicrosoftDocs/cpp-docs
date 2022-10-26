@@ -38,9 +38,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tperror`|**`perror`**|**`perror`**|**`_wperror`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tperror` | **`perror`** | **`perror`** | **`_wperror`** |
 
 *`message`* is printed first, followed by a colon, then by the system error message for the last library call that produced the error, and finally by a newline character. If *`message`* is a null pointer or a pointer to a null string, **`perror`** prints only the system error message.
 
@@ -52,10 +52,10 @@ In the Windows operating system, some `errno` values listed in ERRNO.H are unuse
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`perror`**|\<stdio.h> or \<stdlib.h>|
-|**`_wperror`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`perror`** | \<stdio.h> or \<stdlib.h> |
+| **`_wperror`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

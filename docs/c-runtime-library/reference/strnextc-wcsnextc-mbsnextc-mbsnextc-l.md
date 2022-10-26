@@ -59,9 +59,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsnextc`|**`_strnextc`**|**`_mbsnextc`**|**`_wcsnextc`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsnextc` | **`_strnextc`** | **`_mbsnextc`** | **`_wcsnextc`** |
 
 **`_strnextc`** and **`_wcsnextc`** are single-byte-character string and wide-character string versions of **`_mbsnextc`**. **`_wcsnextc`** returns the integer value of the next wide character in *`str`*; **`_strnextc`** returns the integer value of the next single-byte character in *`str`*. **`_strnextc`** and **`_wcsnextc`** are provided only for this mapping and shouldn't be used otherwise. For more information, see [Using generic-text mappings](../using-generic-text-mappings.md) and [Generic-text mappings](../generic-text-mappings.md).
 
@@ -69,12 +69,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnextc`**|\<mbstring.h>|
-|**`_mbsnextc_l`**|\<mbstring.h>|
-|**`_strnextc`**|\<tchar.h>|
-|**`_wcsnextc`**|\<tchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnextc`** | \<mbstring.h> |
+| **`_mbsnextc_l`** | \<mbstring.h> |
+| **`_strnextc`** | \<tchar.h> |
+| **`_wcsnextc`** | \<tchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

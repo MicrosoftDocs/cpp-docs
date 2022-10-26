@@ -51,11 +51,11 @@ Zero if successful. If a failure occurs due to an invalid parameter (see the fol
 
 ### Error conditions
 
-|*`buffer`*|*`sizeInBytes`*|*`value`*|*`digits`*|Return|Value in *`buffer`*|
-|--------------|-------------------|-------------|--------------|------------|-----------------------|
-|`NULL`|any|any|any|`EINVAL`|Not modified.|
-|Not `NULL` (points to valid memory)|zero|any|any|`EINVAL`|Not modified.|
-|Not `NULL` (points to valid memory)|any|any|>= *`sizeInBytes`*|`EINVAL`|Not modified.|
+| *`buffer`* | *`sizeInBytes`* | *`value`* | *`digits`* | Return | Value in *`buffer`* |
+|---|---|---|---|---|---|
+| `NULL` | any | any | any | `EINVAL` | Not modified. |
+| Not `NULL` (points to valid memory) | zero | any | any | `EINVAL` | Not modified. |
+| Not `NULL` (points to valid memory) | any | any | >= *`sizeInBytes`* | `EINVAL` | Not modified. |
 
 **Security Issues**
 
@@ -73,9 +73,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_gcvt_s`**|\<stdlib.h>|\<error.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_gcvt_s`** | \<stdlib.h> | \<error.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

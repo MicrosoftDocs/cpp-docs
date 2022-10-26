@@ -57,9 +57,9 @@ Although `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` are macros and are available b
 
 ## Requirements
 
-|Macro|Required header|
-|-----------|---------------------|
-|`_ASSERT_EXPR`, `_ASSERT`, `_ASSERTE`|`<crtdbg.h>`|
+| Macro | Required header |
+|---|---|
+| `_ASSERT_EXPR`, `_ASSERT`, `_ASSERTE` | `<crtdbg.h>` |
 
 ## Example
 

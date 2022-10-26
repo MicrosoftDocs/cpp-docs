@@ -32,9 +32,9 @@ The C++ **`_query_new_mode`** function returns an integer that indicates the **`
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_query_new_mode`**|\<new.h>|
+| Routine | Required header |
+|---|---|
+| **`_query_new_mode`** | \<new.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

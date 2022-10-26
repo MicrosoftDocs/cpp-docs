@@ -51,16 +51,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tmkdir`**|**`_mkdir`**|**`_mkdir`**|**`_wmkdir`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tmkdir` | **`_mkdir`** | **`_mkdir`** | **`_wmkdir`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mkdir`**|`<direct.h>`|
-|**`_wmkdir`**|`<direct.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_mkdir`** | `<direct.h>` |
+| **`_wmkdir`** | `<direct.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -102,31 +102,31 @@ By default, this function's global state is scoped to the application. To change
 
 ### Time type and file length type variations of `_stat`
 
-|Functions|`_USE_32BIT_TIME_T` defined?|Time type|File length type|
-|---------------|------------------------------------|---------------|----------------------|
-|**`_stat`**, **`_wstat`**|Not defined|64-bit|32-bit|
-|**`_stat`**, **`_wstat`**|Defined|32-bit|32-bit|
-|**`_stat32`**, **`_wstat32`**|Not affected by the macro definition|32-bit|32-bit|
-|**`_stat64`**, **`_wstat64`**|Not affected by the macro definition|64-bit|64-bit|
-|**`_stati64`**, **`_wstati64`**|Not defined|64-bit|64-bit|
-|**`_stati64`**, **`_wstati64`**|Defined|32-bit|64-bit|
-|**`_stat32i64`**, **`_wstat32i64`**|Not affected by the macro definition|32-bit|64-bit|
-|**`_stat64i32`**, **`_wstat64i32`**|Not affected by the macro definition|64-bit|32-bit|
+| Functions | `_USE_32BIT_TIME_T` defined | Time type | File length type |
+|---|---|---|---|
+| **`_stat`**, **`_wstat`** | Not defined | 64-bit | 32-bit |
+| **`_stat`**, **`_wstat`** | Defined | 32-bit | 32-bit |
+| **`_stat32`**, **`_wstat32`** | Not affected by the macro definition | 32-bit | 32-bit |
+| **`_stat64`**, **`_wstat64`** | Not affected by the macro definition | 64-bit | 64-bit |
+| **`_stati64`**, **`_wstati64`** | Not defined | 64-bit | 64-bit |
+| **`_stati64`**, **`_wstati64`** | Defined | 32-bit | 64-bit |
+| **`_stat32i64`**, **`_wstat32i64`** | Not affected by the macro definition | 32-bit | 64-bit |
+| **`_stat64i32`**, **`_wstat64i32`** | Not affected by the macro definition | 64-bit | 32-bit |
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tstat`**|**`_stat`**|**`_stat`**|**`_wstat`**|
-|**`_tstat64`**|**`_stat64`**|**`_stat64`**|**`_wstat64`**|
-|**`_tstati64`**|**`_stati64`**|**`_stati64`**|**`_wstati64`**|
-|**`_tstat32i64`**|**`_stat32i64`**|**`_stat32i64`**|**`_wstat32i64`**|
-|**`_tstat64i32`**|**`_stat64i32`**|**`_stat64i32`**|**`_wstat64i32`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tstat` | **`_stat`** | **`_stat`** | **`_wstat`** |
+| `_tstat64` | **`_stat64`** | **`_stat64`** | **`_wstat64`** |
+| `_tstati64` | **`_stati64`** | **`_stati64`** | **`_wstati64`** |
+| `_tstat32i64` | **`_stat32i64`** | **`_stat32i64`** | **`_wstat32i64`** |
+| `_tstat64i32` | **`_stat64i32`** | **`_stat64i32`** | **`_wstat64i32`** |
 
 The **`_stat`** structure, defined in **`SYS\STAT.H`**, includes the following fields.
 
-|Field|Description|
-|-|-|
+| Field | Description |
+|---|---|
 | **`st_gid`** | Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file. |
 | **`st_atime`** | Time of last access of file. Valid on NTFS but not on FAT formatted disk drives. |
 | **`st_ctime`** | Time of creation of file. Valid on NTFS but not on FAT formatted disk drives. |
@@ -143,10 +143,10 @@ If *`path`* refers to a device, the **`st_size`**, various time fields, **`st_de
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`_stat`**, **`_stat32`**, **`_stat64`**, **`_stati64`**, **`_stat32i64`**, **`_stat64i32`**|`<sys/types.h>` followed by `<sys/stat.h>`|`<errno.h>`|
-|**`_wstat`**, **`_wstat32`**, **`_wstat64`**, **`_wstati64`**, **`_wstat32i64`**, **`_wstat64i32`**|`<sys/types.h>` followed by `<sys/stat.h>` or `<wchar.h>`|`<errno.h>`|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`_stat`**, **`_stat32`**, **`_stat64`**, **`_stati64`**, **`_stat32i64`**, **`_stat64i32`** | `<sys/types.h>` followed by `<sys/stat.h>` | `<errno.h>` |
+| **`_wstat`**, **`_wstat32`**, **`_wstat64`**, **`_wstati64`**, **`_wstat32i64`**, **`_wstat64i32`** | `<sys/types.h>` followed by `<sys/stat.h>` or `<wchar.h>` | `<errno.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

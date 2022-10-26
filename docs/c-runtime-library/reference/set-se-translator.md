@@ -54,9 +54,9 @@ When you use **`_set_se_translator`** from managed code (code compiled with `/cl
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_set_se_translator`**|`<eh.h>`|
+| Routine | Required header |
+|---|---|
+| **`_set_se_translator`** | `<eh.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

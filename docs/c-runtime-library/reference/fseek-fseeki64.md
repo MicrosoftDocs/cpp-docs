@@ -48,8 +48,8 @@ If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns 
 
 The **`fseek`** and **`_fseeki64`** functions moves the file pointer (if any) associated with *`stream`* to a new location that is *`offset`* bytes from *`origin`*. The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument *`origin`* must be one of the following constants, defined in `STDIO.H`:
 
-|origin value|Meaning|
-|-|-|
+| origin value | Meaning |
+|---|---|
 | `SEEK_CUR` | Current position of file pointer. |
 | `SEEK_END` | End of file. |
 | `SEEK_SET` | Beginning of file. |
@@ -74,10 +74,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fseek`**|`<stdio.h>`|
-|**`_fseeki64`**|`<stdio.h>`|
+| Function | Required header |
+|---|---|
+| **`fseek`** | `<stdio.h>` |
+| **`_fseeki64`** | `<stdio.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

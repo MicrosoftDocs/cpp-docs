@@ -44,11 +44,11 @@ Number of characters to compare. (Compares bytes for **`memcmp`**, wide characte
 
 The return value indicates the relationship between the buffers.
 
-|Return value|Relationship of first *`count`* characters of `buf1` and `buf2`|
-|------------------|---------------------------------------------------------------|
-|< 0|*`buffer1`* less than *`buffer2`*|
-|0|*`buffer1`* identical to *`buffer2`*|
-|> 0|*`buffer1`* greater than *`buffer2`*|
+| Return value | Relationship of first *`count`* characters of `buf1` and `buf2` |
+|---|---|
+| < 0 | *`buffer1`* less than *`buffer2`* |
+| 0 | *`buffer1`* identical to *`buffer2`* |
+| > 0 | *`buffer1`* greater than *`buffer2`* |
 
 ## Remarks
 
@@ -56,10 +56,10 @@ Compares the first *`count`* characters of *`buffer1`* and *`buffer2`* and retur
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memcmp`**|`<memory.h>` or `<string.h>`|
-|**`wmemcmp`**|`<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`memcmp`** | `<memory.h>` or `<string.h>` |
+| **`wmemcmp`** | `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

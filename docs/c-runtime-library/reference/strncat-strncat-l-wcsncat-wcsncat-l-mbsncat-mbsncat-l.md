@@ -103,7 +103,7 @@ By default, this function's global state is scoped to the application. To change
 ### Generic-text routine mappings
 
 | `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
-|--|--|--|--|
+|---|---|---|---|
 | **`_tcsncat`** | **`strncat`** | **`_mbsnbcat`** | **`wcsncat`** |
 | **`_tcsncat_l`** | **`_strncat_l`** | **`_mbsnbcat_l`** | **`_wcsncat_l`** |
 
@@ -112,12 +112,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strncat`**|\<string.h>|
-|**`wcsncat`**|\<string.h> or \<wchar.h>|
-|**`_mbsncat`**|\<mbstring.h>|
-|**`_mbsncat_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`strncat`** | \<string.h> |
+| **`wcsncat`** | \<string.h> or \<wchar.h> |
+| **`_mbsncat`** | \<mbstring.h> |
+| **`_mbsncat_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
@@ -173,15 +173,15 @@ You can see that `BadAppend` caused a buffer overrun.
 ## See also
 
 [String manipulation](../string-manipulation-crt.md)\
-[`_mbsnbcat, _mbsnbcat_l`](mbsnbcat-mbsnbcat-l.md)\
-[`strcat, wcscat, _mbscat`](strcat-wcscat-mbscat.md)\
-[`strcmp, wcscmp, _mbscmp`](strcmp-wcscmp-mbscmp.md)\
-[`strcpy, wcscpy, _mbscpy`](strcpy-wcscpy-mbscpy.md)\
-[`strncmp, wcsncmp, _mbsncmp, _mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
-[`strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
-[`_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
-[`strrchr, wcsrchr, _mbsrchr, _mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
-[`_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
-[`strspn, wcsspn, _mbsspn, _mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
+[`_mbsnbcat`, `_mbsnbcat_l`](mbsnbcat-mbsnbcat-l.md)\
+[`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
 [Locale](../locale.md)\
 [Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\

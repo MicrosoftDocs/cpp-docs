@@ -30,9 +30,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getmbcp`**|\<mbctype.h>|
+| Routine | Required header |
+|---|---|
+| **`_getmbcp`** | \<mbctype.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

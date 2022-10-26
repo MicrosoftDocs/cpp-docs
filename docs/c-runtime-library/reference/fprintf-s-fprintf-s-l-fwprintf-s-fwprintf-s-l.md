@@ -76,19 +76,19 @@ Like the non-secure versions (see [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprin
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_ftprintf_s`**|**`fprintf_s`**|**`fprintf_s`**|**`fwprintf_s`**|
-|**`_ftprintf_s_l`**|**`_fprintf_s_l`**|**`_fprintf_s_l`**|**`_fwprintf_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_ftprintf_s`** | **`fprintf_s`** | **`fprintf_s`** | **`fwprintf_s`** |
+| **`_ftprintf_s_l`** | **`_fprintf_s_l`** | **`_fprintf_s_l`** | **`_fwprintf_s_l`** |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fprintf_s`**, **`_fprintf_s_l`**|`<stdio.h>`|
-|**`fwprintf_s`**, **`_fwprintf_s_l`**|`<stdio.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`fprintf_s`**, **`_fprintf_s_l`** | `<stdio.h>` |
+| **`fwprintf_s`**, **`_fwprintf_s_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

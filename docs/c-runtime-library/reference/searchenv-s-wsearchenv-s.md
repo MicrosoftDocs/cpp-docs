@@ -68,11 +68,11 @@ If *`filename`* is an empty string, the return value is `ENOENT`.
 
 ### Error conditions
 
-|*`filename`*|*`varname`*|*`pathname`*|*`numberOfElements`*|Return value|Contents of *`pathname`*|
-|----------------|---------------|----------------|------------------------|------------------|----------------------------|
-|any|any|`NULL`|any|`EINVAL`|n/a|
-|`NULL`|any|any|any|`EINVAL`|not changed|
-|any|any|any|<= 0|`EINVAL`|not changed|
+| *`filename`* | *`varname`* | *`pathname`* | *`numberOfElements`* | Return value | Contents of *`pathname`* |
+|---|---|---|---|---|---|
+| any | any | `NULL` | any | `EINVAL` | n/a |
+| `NULL` | any | any | any | `EINVAL` | not changed |
+| any | any | any | <= 0 | `EINVAL` | not changed |
 
 If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
@@ -92,16 +92,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tsearchenv_s`|**`_searchenv_s`**|**`_searchenv_s`**|**`_wsearchenv_s`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tsearchenv_s` | **`_searchenv_s`** | **`_searchenv_s`** | **`_wsearchenv_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_searchenv_s`**|\<stdlib.h>|
-|**`_wsearchenv_s`**|\<stdlib.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_searchenv_s`** | \<stdlib.h> |
+| **`_wsearchenv_s`** | \<stdlib.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

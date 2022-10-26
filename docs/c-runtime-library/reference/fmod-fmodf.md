@@ -61,10 +61,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fmod`**, **`fmodf`**, **`fmodl`**|`<math.h>`|
-|**`fmod`** macro | `<tgmath.h>` |
+| Function | Required header |
+|---|---|
+| **`fmod`**, **`fmodf`**, **`fmodl`** | `<math.h>` |
+| **`fmod`** macro | `<tgmath.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
@@ -93,7 +93,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[`ceil, ceilf, ceill`](ceil-ceilf-ceill.md)\
-[`fabs, fabsf, fabsl`](fabs-fabsf-fabsl.md)\
-[`floor, floorf, floorl`](floor-floorf-floorl.md)\
+[`ceil`, `ceilf`, `ceill`](ceil-ceilf-ceill.md)\
+[`fabs`, `fabsf`, `fabsl`](fabs-fabsf-fabsl.md)\
+[`floor`, `floorf`, `floorl`](floor-floorf-floorl.md)\
 [`_CIfmod`](../cifmod.md)

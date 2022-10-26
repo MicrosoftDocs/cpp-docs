@@ -58,9 +58,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`calloc`**|`<stdlib.h>` and `<malloc.h>`|
+| Routine | Required header |
+|---|---|
+| **`calloc`** | `<stdlib.h>` and `<malloc.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

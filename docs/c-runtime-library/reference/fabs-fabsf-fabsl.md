@@ -44,9 +44,9 @@ Floating-point value.
 
 The **`fabs`** functions return the absolute value of the argument *`x`*. There's no error return.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|± `QNAN`,`IND`|none|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
 
 ## Remarks
 
@@ -58,10 +58,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required C header|Required C++ header|
-|--------------|-----------------------|---------------------------|
-|**`fabs`**, **`fabsf`**, **`fabsl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`fabs`** macro | `<tgmath.h>` ||
+| Function | Required C header | Required C++ header |
+|---|---|---|
+| **`fabs`**, **`fabsf`**, **`fabsl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`fabs`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
@@ -72,5 +72,5 @@ See the example for [`abs`](abs-labs-llabs-abs64.md).
 ## See also
 
 [Math and floating-point support](../floating-point-support.md)\
-[`abs, labs, llabs, _abs64`](abs-labs-llabs-abs64.md)\
+[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)\
 [`_cabs`](cabs.md)

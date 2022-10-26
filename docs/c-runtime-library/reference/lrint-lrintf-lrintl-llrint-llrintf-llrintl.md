@@ -69,9 +69,9 @@ The value to round.
 
 If successful, returns the rounded integral value of *`x`*.
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* is outside the range of the return type<br /><br /> *`x`* = ±∞<br /><br /> *`x`* = NaN|Raises `FE_INVALID` and returns zero (0).|
+| Issue | Return |
+|---|---|
+| *`x`* is outside the range of the return type<br /><br /> *`x`* = ±INF<br /><br /> *`x`* = NaN | Raises `FE_INVALID` and returns zero (0). |
 
 ## Remarks
 
@@ -87,10 +87,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`lrint`**, **`lrintf`**, **`lrintl`**, **`llrint`**, **`llrintf`**, **`llrintl`**|\<math.h>|\<cmath>|
-|**`lrint`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`lrint`**, **`lrintf`**, **`lrintl`**, **`llrint`**, **`llrintf`**, **`llrintl`** | \<math.h> | \<cmath> |
+| **`lrint`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

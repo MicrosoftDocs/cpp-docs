@@ -102,8 +102,8 @@ These comparison operations are implemented as macros when compiled as C, and as
 
 ## Requirements
 
-|Function|Required header (C)|Required header (C++)|
-|--------------|---------------------------|-------------------------------|
+| Function | Required header (C) | Required header (C++) |
+|---|---|---|
 | **`isgreater`**, **`isgreaterequal`**, **`isless`**,<br/>**`islessequal`**, **`islessgreater`**, **`isunordered`** | \<math.h> | \<math.h> or \<cmath> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).

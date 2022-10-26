@@ -41,9 +41,9 @@ After the registered functions have been called, **`quick_exit`** invokes `_Exit
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`quick_exit`**|\<process.h> or \<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`quick_exit`** | \<process.h> or \<stdlib.h> |
 
 For more information about compatibility, see [Compatibility](../compatibility.md).
 

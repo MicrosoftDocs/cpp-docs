@@ -28,9 +28,9 @@ This function is deprecated when compiling with [/clr (Common Language Runtime C
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fpreset`**|\<float.h>|
+| Function | Required header |
+|---|---|
+| **`_fpreset`** | \<float.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

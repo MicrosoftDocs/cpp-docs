@@ -42,9 +42,9 @@ Because C++ allows overloading, you can call overloads of **`norm`** that take `
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`norm`**, **`normf`**, **`norml`**|\<complex.h>|\<complex.h>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`norm`**, **`normf`**, **`norml`** | \<complex.h> | \<complex.h> |
 
 The `_Fcomplex`, `_Dcomplex`, and `_Lcomplex` types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../compatibility.md).
 

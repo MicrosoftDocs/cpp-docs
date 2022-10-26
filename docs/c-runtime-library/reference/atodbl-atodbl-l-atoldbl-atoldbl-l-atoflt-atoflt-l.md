@@ -52,9 +52,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routines|Required header|
-|--------------|---------------------|
-|**`_atodbl`**, **`_atoldbl`**, **`_atoflt`**<br /><br /> **`_atodbl_l`**, **`_atoldbl_l`**, **`_atoflt_l`**|\<stdlib.h>|
+| Routines | Required header |
+|---|---|
+| **`_atodbl`**, **`_atoldbl`**, **`_atoflt`**<br /><br /> **`_atodbl_l`**, **`_atoldbl_l`**, **`_atoflt_l`** | \<stdlib.h> |
 
 ## Example
 

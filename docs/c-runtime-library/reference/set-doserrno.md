@@ -37,9 +37,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_set_doserrno`**|\<stdlib.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_set_doserrno`** | \<stdlib.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

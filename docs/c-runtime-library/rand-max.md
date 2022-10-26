@@ -9,7 +9,7 @@ helpviewer_keywords: ["RAND_MAX constant"]
 
 ## Syntax
 
-```
+```C
 #include <stdlib.h>
 ```
 

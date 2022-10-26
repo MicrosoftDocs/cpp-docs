@@ -58,7 +58,7 @@ Returns zero or an `errno` value if an error occurs.
 
 The **`wcrtomb_s`** function converts a wide character, beginning in the specified conversion state contained in *`mbstate`*, from the value contained in *`wchar`*, into the address represented by *`mbchar`*. The *`pReturnValue`* value will be the number of bytes converted, but no more than `MB_CUR_MAX` bytes, or an -1 if an error occurred.
 
-If *`mbstate`* is null, the internal `mbstate_t` conversion state is used. If the character contained in *`wchar`* does not have a corresponding multibyte character, the value of *`pReturnValue`* will be -1 and the function will return the `errno` value of `EILSEQ`.
+If *`mbstate`* is null, the internal `mbstate_t` conversion state is used. If the character contained in *`wchar`* doesn't have a corresponding multibyte character, the value of *`pReturnValue`* is -1, and the function returns the `errno` value of `EILSEQ`.
 
 The **`wcrtomb_s`** function differs from [`wctomb_s`, `_wctomb_s_l`](wctomb-s-wctomb-s-l.md) by its restartability. The conversion state is stored in *`mbstate`* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of `wcstombs_s`.
 
@@ -116,9 +116,9 @@ The corresponding wide character "Q" was converted to a the "Q" multibyte charac
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wcrtomb_s`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`wcrtomb_s`** | \<wchar.h> |
 
 ## See also
 

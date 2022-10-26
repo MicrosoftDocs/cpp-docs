@@ -45,9 +45,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`rand_s`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`rand_s`** | `<stdlib.h>` |
 
 For more information, see [Compatibility](../compatibility.md).
 

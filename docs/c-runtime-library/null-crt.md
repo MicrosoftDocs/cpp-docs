@@ -2,7 +2,7 @@
 description: "Learn more about: NULL (CRT)"
 title: "NULL (CRT)"
 ms.date: "11/04/2016"
-f1_keywords: ["null"]
+f1_keywords: ["NULL", "VCRUNTIME/NULL"]
 helpviewer_keywords: ["NULL", "null pointers", "NULL, null pointer value"]
 ms.assetid: f9aac2a0-4f79-423f-8738-a76dccc0b1c3
 ---

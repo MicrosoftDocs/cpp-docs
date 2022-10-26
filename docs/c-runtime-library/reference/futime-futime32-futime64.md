@@ -53,11 +53,11 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|Optional header|
-|--------------|---------------------|---------------------|
-|**`_futime`**|\<sys/utime.h>|\<errno.h>|
-|**`_futime32`**|\<sys/utime.h>|\<errno.h>|
-|**`_futime64`**|\<sys/utime.h>|\<errno.h>|
+| Function | Required header | Optional header |
+|---|---|---|
+| **`_futime`** | \<sys/utime.h> | \<errno.h> |
+| **`_futime32`** | \<sys/utime.h> | \<errno.h> |
+| **`_futime64`** | \<sys/utime.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

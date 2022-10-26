@@ -65,10 +65,10 @@ or
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memmove`**|`<string.h>`|
-|**`wmemmove`**|`<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`memmove`** | `<string.h>` |
+| **`wmemmove`** | `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

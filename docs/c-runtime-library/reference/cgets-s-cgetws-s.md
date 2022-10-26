@@ -59,11 +59,11 @@ The return value is zero if successful; otherwise, an error code if a failure oc
 
 ### Error conditions
 
-|*`buffer`*|*`numberOfElements`*|*`pSizeRead`*|Return|Contents of *`buffer`*|
-|--------------|------------------------|-----------------|------------|--------------------------|
-|`NULL`|any|any|`EINVAL`|n/a|
-|not `NULL`|zero|any|`EINVAL`|not modified|
-|not `NULL`|any|`NULL`|`EINVAL`|zero-length string|
+| *`buffer`* | *`numberOfElements`* | *`pSizeRead`* | Return | Contents of *`buffer`* |
+|---|---|---|---|---|
+| `NULL` | any | any | `EINVAL` | n/a |
+| not `NULL` | zero | any | `EINVAL` | not modified |
+| not `NULL` | any | `NULL` | `EINVAL` | zero-length string |
 
 ## Remarks
 
@@ -79,16 +79,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_cgetts_s`|**`_cgets_s`**|**`_cgets_s`**|**`_cgetws_s`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_cgetts_s` | **`_cgets_s`** | **`_cgets_s`** | **`_cgetws_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_cgets_s`**|\<conio.h>|
-|**`_cgetws_s`**|\<conio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_cgets_s`** | \<conio.h> |
+| **`_cgetws_s`** | \<conio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

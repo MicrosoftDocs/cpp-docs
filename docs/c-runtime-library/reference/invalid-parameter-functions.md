@@ -73,9 +73,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|------------------|
-|**`_invalid_parameter`**, **`_invalid_parameter_noinfo`**, **`_invalid_parameter_noinfo_noreturn`**, **`_invoke_watson`**|`<corecrt.h>`|
+| Function | Required header |
+|---|---|
+| **`_invalid_parameter`**, **`_invalid_parameter_noinfo`**, **`_invalid_parameter_noinfo_noreturn`**, **`_invoke_watson`** | `<corecrt.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

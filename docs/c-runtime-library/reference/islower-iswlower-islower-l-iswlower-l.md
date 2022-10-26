@@ -51,10 +51,10 @@ The behavior of **`islower`** and **`_islower_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istlower`|**`islower`**|[`_ismbclower`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**`iswlower`**|
-|**`_istlower_l`**|`_islower _l`|[`_ismbclower_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**`_liswlower_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istlower` | **`islower`** | [`_ismbclower`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md) | **`iswlower`** |
+| **`_istlower_l`** | `_islower _l` | [`_ismbclower_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md) | **`_liswlower_l`** |
 
 ## Remarks
 
@@ -62,12 +62,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`islower`**|\<ctype.h>|
-|**`iswlower`**|\<ctype.h> or \<wchar.h>|
-|**`_islower_l`**|\<ctype.h>|
-|**`_swlower_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`islower`** | \<ctype.h> |
+| **`iswlower`** | \<ctype.h> or \<wchar.h> |
+| **`_islower_l`** | \<ctype.h> |
+| **`_swlower_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

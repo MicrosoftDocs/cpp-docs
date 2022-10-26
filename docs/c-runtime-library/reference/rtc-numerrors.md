@@ -27,9 +27,9 @@ An integer whose value represents the total number of errors that can be detecte
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_RTC_NumErrors`**|\<rtcapi.h>|
+| Routine | Required header |
+|---|---|
+| **`_RTC_NumErrors`** | \<rtcapi.h> |
 
 For more information, see [Compatibility](../compatibility.md).
 

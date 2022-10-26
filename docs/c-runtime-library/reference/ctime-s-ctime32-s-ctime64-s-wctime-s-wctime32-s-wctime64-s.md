@@ -97,13 +97,13 @@ Zero if successful. If there's a failure due to an invalid parameter, the invali
 
 ## Error conditions
 
-|*`buffer`*|*`numberOfElements`*|*`sourceTime`*|Return|Value in *`buffer`*|
-|--------------|------------------------|------------|------------|-----------------------|
-|`NULL`|any|any|`EINVAL`|Not modified|
-|Not `NULL` (points to valid memory)|0|any|`EINVAL`|Not modified|
-|Not `NULL`|0< size < 26|any|`EINVAL`|Empty string|
-|Not `NULL`|>= 26|NULL|`EINVAL`|Empty string|
-|Not `NULL`|>= 26|< 0|`EINVAL`|Empty string|
+| *`buffer`* | *`numberOfElements`* | *`sourceTime`* | Return | Value in *`buffer`* |
+|---|---|---|---|---|
+| `NULL` | any | any | `EINVAL` | Not modified |
+| Not `NULL` (points to valid memory) | 0 | any | `EINVAL` | Not modified |
+| Not `NULL` | 0< size < 26 | any | `EINVAL` | Empty string |
+| Not `NULL` | >= 26 | NULL | `EINVAL` | Empty string |
+| Not `NULL` | >= 26 | < 0 | `EINVAL` | Empty string |
 
 ## Remarks
 
@@ -127,18 +127,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tctime_s`|**`ctime_s`**|**`ctime_s`**|**`_wctime_s`**|
-|`_tctime32_s`|**`_ctime32_s`**|**`_ctime32_s`**|**`_wctime32_s`**|
-|`_tctime64_s`|**`_ctime64_s`**|**`_ctime64_s`**|**`_wctime64_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tctime_s` | **`ctime_s`** | **`ctime_s`** | **`_wctime_s`** |
+| `_tctime32_s` | **`_ctime32_s`** | **`_ctime32_s`** | **`_wctime32_s`** |
+| `_tctime64_s` | **`_ctime64_s`** | **`_ctime64_s`** | **`_wctime64_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`ctime_s`**, **`_ctime32_s`**, **`_ctime64_s`**|\<time.h>|
-|**`_wctime_s`**, **`_wctime32_s`**, **`_wctime64_s`**|\<time.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`ctime_s`**, **`_ctime32_s`**, **`_ctime64_s`** | \<time.h> |
+| **`_wctime_s`**, **`_wctime32_s`**, **`_wctime64_s`** | \<time.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

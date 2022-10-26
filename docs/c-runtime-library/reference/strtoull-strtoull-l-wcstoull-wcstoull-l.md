@@ -75,10 +75,10 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstoull`|**`strtoull`**|**`strtoull`**|**`wcstoull`**|
-|`_tcstoull_l`|**`strtoull_l`**|**`_strtoull_l`**|**`_wcstoull_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstoull` | **`strtoull`** | **`strtoull`** | **`wcstoull`** |
+| `_tcstoull_l` | **`strtoull_l`** | **`_strtoull_l`** | **`_wcstoull_l`** |
 
 **`strtoull`** expects *`strSource`* to point to a string of the following form:
 
@@ -88,12 +88,12 @@ A *`whitespace`* may consist of space and tab characters, which are ignored. *`d
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtoull`**|\<stdlib.h>|
-|**`wcstoull`**|\<stdlib.h> or \<wchar.h>|
-|**`_strtoull_l`**|\<stdlib.h>|
-|**`_wcstoull_l`**|\<stdlib.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`strtoull`** | \<stdlib.h> |
+| **`wcstoull`** | \<stdlib.h> or \<wchar.h> |
+| **`_strtoull_l`** | \<stdlib.h> |
+| **`_wcstoull_l`** | \<stdlib.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

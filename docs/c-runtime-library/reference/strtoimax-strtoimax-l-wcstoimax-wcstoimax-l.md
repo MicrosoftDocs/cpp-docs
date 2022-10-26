@@ -75,10 +75,10 @@ If *`endptr`* isn't `NULL`, a pointer to the character that stopped the scan is 
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstoimax`|**`strtoimax`**|**`strtoimax`**|**`wcstoimax`**|
-|`_tcstoimax_l`|**`strtoimax_l`**|**`_strtoimax_l`**|**`_wcstoimax_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstoimax` | **`strtoimax`** | **`strtoimax`** | **`wcstoimax`** |
+| `_tcstoimax_l` | **`strtoimax_l`** | **`_strtoimax_l`** | **`_wcstoimax_l`** |
 
 **`strtoimax`** expects *`strSource`* to point to a string of the following form:
 
@@ -88,9 +88,9 @@ A *`whitespace`* may consist of space and tab characters, which are ignored; *`d
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtoimax`**, **`_strtoimax_l`**, **`wcstoimax`**, **`_wcstoimax_l`**|\<inttypes.h>|
+| Routine | Required header |
+|---|---|
+| **`strtoimax`**, **`_strtoimax_l`**, **`wcstoimax`**, **`_wcstoimax_l`** | \<inttypes.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

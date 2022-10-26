@@ -81,9 +81,9 @@ You can control the report file used by each report type separately. For example
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_CrtSetReportFile`**|\<crtdbg.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_CrtSetReportFile`** | \<crtdbg.h> | \<errno.h> |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

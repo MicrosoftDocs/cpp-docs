@@ -50,10 +50,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header (C)|Required header (C++)|
-|--------------|---------------------|-|
-|**`remainder`**, **`remainderf`**, **`remainderl`**|\<math.h>|\<cmath> or \<math.h>|
-|**`remainder`** macro | \<tgmath.h> ||
+| Function | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`remainder`**, **`remainderf`**, **`remainderl`** | \<math.h> | \<cmath> or \<math.h> |
+| **`remainder`** macro | \<tgmath.h> |  |
 
 For compatibility information, see [Compatibility](../compatibility.md).
 

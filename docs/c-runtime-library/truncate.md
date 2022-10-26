@@ -11,7 +11,7 @@ Specifies string truncation behavior.
 
 ## Syntax
 
-```
+```C
 #include <stdlib.h>
 ```
 

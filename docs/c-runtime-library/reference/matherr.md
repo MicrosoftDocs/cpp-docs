@@ -54,8 +54,8 @@ struct _exception
 
 The **`type`** member specifies the type of math error. It's one of the following values, defined in `<math.h>`:
 
-|Macro|Meaning|
-|-|-|
+| Macro | Description |
+|---|---|
 | `_DOMAIN` | Argument domain error |
 | `_SING` | Argument singularity |
 | `_OVERFLOW` | Overflow range error |
@@ -69,9 +69,9 @@ The default return value for the given error is **`retval`**. If you change the 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_matherr`**|`<math.h>`|
+| Routine | Required header |
+|---|---|
+| **`_matherr`** | `<math.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

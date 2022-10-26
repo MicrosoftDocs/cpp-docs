@@ -41,9 +41,9 @@ The **`imaxdiv`** function divides *`numer`* by *`denom`* and thereby computes t
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`imaxdiv`**|\<inttypes.h>|
+| Routine | Required header |
+|---|---|
+| **`imaxdiv`** | \<inttypes.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

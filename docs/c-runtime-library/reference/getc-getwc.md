@@ -44,25 +44,25 @@ These functions lock the calling thread and are therefore thread-safe. For a non
 
 Routine-specific remarks follow.
 
-|Routine|Remarks|
-|-------------|-------------|
-|**`getc`**|Same as `fgetc`, but implemented as a function and as a macro.|
-|**`getwc`**|Wide-character version of **`getc`**. Reads a multibyte character or a wide character according to whether *`stream`* is opened in text mode or binary mode.|
+| Routine | Remarks |
+|---|---|
+| **`getc`** | Same as `fgetc`, but implemented as a function and as a macro. |
+| **`getwc`** | Wide-character version of **`getc`**. Reads a multibyte character or a wide character according to whether *`stream`* is opened in text mode or binary mode. |
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_gettc`|**`getc`**|**`getc`**|**`getwc`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_gettc` | **`getc`** | **`getc`** | **`getwc`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`getc`**|\<stdio.h>|
-|**`getwc`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`getc`** | \<stdio.h> |
+| **`getwc`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

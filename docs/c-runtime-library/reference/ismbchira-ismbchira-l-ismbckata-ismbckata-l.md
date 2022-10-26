@@ -54,12 +54,12 @@ Each of these functions tests a given multibyte character for a given condition.
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../locale.md).
 
-|Routine|Test condition (code page 932 only)|
-|-------------|-------------------------------------------|
-|**`_ismbchira`**|Double-byte Hiragana: 0x829F<=*`c`*<=0x82F1.|
-|**`_ismbchira_l`**|Double-byte Hiragana: 0x829F<=*`c`*<=0x82F1.|
-|**`_ismbckata`**|Double-byte katakana: 0x8340<=*`c`*<=0x8396.|
-|**`_ismbckata_l`**|Double-byte katakana: 0x8340<=*`c`*<=0x8396.|
+| Routine | Test condition (code page 932 only) |
+|---|---|
+| **`_ismbchira`** | Double-byte Hiragana: 0x829F<=*`c`*<=0x82F1. |
+| **`_ismbchira_l`** | Double-byte Hiragana: 0x829F<=*`c`*<=0x82F1. |
+| **`_ismbckata`** | Double-byte katakana: 0x8340<=*`c`*<=0x8396. |
+| **`_ismbckata_l`** | Double-byte katakana: 0x8340<=*`c`*<=0x8396. |
 
 **End Code Page 932 Specific**
 
@@ -67,12 +67,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_ismbchira`**|\<mbstring.h>|
-|**`_ismbchira_l`**|\<mbstring.h>|
-|**`_ismbckata`**|\<mbstring.h>|
-|**`_ismbckata_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_ismbchira`** | \<mbstring.h> |
+| **`_ismbchira_l`** | \<mbstring.h> |
+| **`_ismbckata`** | \<mbstring.h> |
+| **`_ismbckata_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

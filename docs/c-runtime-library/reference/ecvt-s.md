@@ -63,12 +63,12 @@ If there's an invalid parameter, as listed in the following table, this function
 
 ### Error conditions
 
-|*`buffer`*|*`sizeInBytes`*|*`value`*|*`count`*|*`dec`*|*`sign`*|Return value|Value in *`buffer`*|
-|---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|
-|`NULL`|any|any|any|any|any|`EINVAL`|Not modified.|
-|Not `NULL` (points to valid memory)|<=0|any|any|any|any|`EINVAL`|Not modified.|
-|any|any|any|any|`NULL`|any|`EINVAL`|Not modified.|
-|any|any|any|any|any|`NULL`|`EINVAL`|Not modified.|
+| *`buffer`* | *`sizeInBytes`* | *`value`* | *`count`* | *`dec`* | *`sign`* | Return value | Value in *`buffer`* |
+|---|---|---|---|---|---|---|---|
+| `NULL` | any | any | any | any | any | `EINVAL` | Not modified. |
+| Not `NULL` (points to valid memory) | <=0 | any | any | any | any | `EINVAL` | Not modified. |
+| any | any | any | any | `NULL` | any | `EINVAL` | Not modified. |
+| any | any | any | any | any | `NULL` | `EINVAL` | Not modified. |
 
 ## Security issues
 
@@ -92,9 +92,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|Optional header|
-|--------------|---------------------|---------------------|
-|**`_ecvt_s`**|\<stdlib.h>|\<errno.h>|
+| Function | Required header | Optional header |
+|---|---|---|
+| **`_ecvt_s`** | \<stdlib.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

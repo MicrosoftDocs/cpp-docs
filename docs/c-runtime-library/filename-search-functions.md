@@ -77,13 +77,13 @@ Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindne
 
 `_finddata_t` is actually a macro that evaluates to `_finddata64i32_t` (or `_finddata32_t` if `_USE_32BIT_TIME_T` is defined). The following table summarizes the variations on `_finddata_t`:
 
-|Structure|Time type|File size type|
-|---------------|---------------|--------------------|
-|`_finddata_t`, `_wfinddata_t`|`__time64_t`|`_fsize_t`|
-|`_finddata32_t`, `_wfinddata32_t`|`__time32_t`|`_fsize_t`|
-|`__finddata64_t`, `__wfinddata64_t`|`__time64_t`|**`__int64`**|
-|`_finddata32i64_t`, `_wfinddata32i64_t`|`__time32_t`|**`__int64`**|
-|`_finddata64i32_t`, `_wfinddata64i32_t`|`__time64_t`|`_fsize_t`|
+| Structure | Time type | File size type |
+|---|---|---|
+| `_finddata_t`, `_wfinddata_t` | `__time64_t` | `_fsize_t` |
+| `_finddata32_t`, `_wfinddata32_t` | `__time32_t` | `_fsize_t` |
+| `__finddata64_t`, `__wfinddata64_t` | `__time64_t` | **`__int64`** |
+| `_finddata32i64_t`, `_wfinddata32i64_t` | `__time32_t` | **`__int64`** |
+| `_finddata64i32_t`, `_wfinddata64i32_t` | `__time64_t` | `_fsize_t` |
 
 `_fsize_t` is a **`typedef`** for **`unsigned long`** (32 bits).
 
