@@ -42,7 +42,7 @@ If *`command`* is `NULL` and the command interpreter is found, returns a nonzero
 | `E2BIG` | The argument list (which is system-dependent) is too large. |
 | `ENOENT` | The command interpreter can't be found. |
 | `ENOEXEC` | The command-interpreter file can't be executed because the format isn't valid. |
-| `ENOMEM` | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call wasn't allocated correctly. |
+| `ENOMEM` | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the calling process has been allocated incorrectly. |
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 

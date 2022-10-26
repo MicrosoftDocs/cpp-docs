@@ -24,7 +24,7 @@ void terminate( void );
 
 The **`terminate`** function is used with C++ exception handling and is called in the following cases:
 
-- A matching catch handler cannot be found for a thrown C++ exception.
+- A matching catch handler can't be found for a thrown C++ exception.
 
 - An exception is thrown by a destructor function during stack unwind.
 
