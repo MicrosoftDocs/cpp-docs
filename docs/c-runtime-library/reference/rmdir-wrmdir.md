@@ -34,8 +34,8 @@ Path of the directory to be removed.
 
 Each of these functions returns 0 if the directory is successfully deleted. A return value of -1 indicates an error and `errno` is set to one of the following values:
 
-|errno value|Condition|
-|-|-|
+| `errno` value | Condition |
+|---|---|
 | `ENOTEMPTY` | Given path isn't a directory, the directory isn't empty, or the directory is either the current working directory or the root directory. |
 | `ENOENT` | Path is invalid. |
 | `EACCES` | A program has an open handle to the directory. |
@@ -52,16 +52,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_trmdir`|**`_rmdir`**|**`_rmdir`**|**`_wrmdir`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_trmdir` | **`_rmdir`** | **`_rmdir`** | **`_wrmdir`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_rmdir`**|\<direct.h>|
-|**`_wrmdir`**|\<direct.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_rmdir`** | \<direct.h> |
+| **`_wrmdir`** | \<direct.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

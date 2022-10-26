@@ -61,10 +61,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fmod`**, **`fmodf`**, **`fmodl`**|`<math.h>`|
-|**`fmod`** macro | `<tgmath.h>` |
+| Function | Required header |
+|---|---|
+| **`fmod`**, **`fmodf`**, **`fmodl`** | `<math.h>` |
+| **`fmod`** macro | `<tgmath.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

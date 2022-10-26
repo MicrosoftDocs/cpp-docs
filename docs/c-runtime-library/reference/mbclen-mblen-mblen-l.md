@@ -72,17 +72,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tclen`|Maps to macro or inline function|**`_mbclen`**|Maps to macro or inline function|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tclen` | Maps to macro or inline function | **`_mbclen`** | Maps to macro or inline function |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbclen`**|\<mbstring.h>|
-|**`mblen`**|\<stdlib.h>|
-|**`_mblen_l`**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbclen`** | \<mbstring.h> |
+| **`mblen`** | \<stdlib.h> |
+| **`_mblen_l`** | \<stdlib.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -51,10 +51,10 @@ The behavior of **`isdigit`** and **`_isdigit_l`** is undefined if *`c`* isn't E
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istdigit`|**`isdigit`**|[`_ismbcdigit`](ismbcalnum-functions.md)|**`iswdigit`**|
-|`_istdigit_l`|**`_isdigit_l`**|[`_ismbcdigit_l`](ismbcalnum-functions.md)|**`_iswdigit_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istdigit` | **`isdigit`** | [`_ismbcdigit`](ismbcalnum-functions.md) | **`iswdigit`** |
+| `_istdigit_l` | **`_isdigit_l`** | [`_ismbcdigit_l`](ismbcalnum-functions.md) | **`_iswdigit_l`** |
 
 ## Remarks
 
@@ -62,12 +62,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isdigit`**|\<ctype.h>|
-|**`iswdigit`**|\<ctype.h> or \<wchar.h>|
-|**`_isdigit_l`**|\<ctype.h>|
-|**`_iswdigit_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isdigit`** | \<ctype.h> |
+| **`iswdigit`** | \<ctype.h> or \<wchar.h> |
+| **`_isdigit_l`** | \<ctype.h> |
+| **`_iswdigit_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -134,17 +134,17 @@ In C++, these functions have template overloads that invoke the newer, more secu
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_sntprintf`**|**`_snprintf`**|**`_snprintf`**|**`_snwprintf`**|
-|**`_sntprintf_l`**|**`_snprintf_l`**|**`_snprintf_l`**|**`_snwprintf_l`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_sntprintf` | **`_snprintf`** | **`_snprintf`** | **`_snwprintf`** |
+| `_sntprintf_l` | **`_snprintf_l`** | **`_snprintf_l`** | **`_snwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`snprintf`**, **`_snprintf`**,  **`_snprintf_l`**|`<stdio.h>`|
-|**`_snwprintf`**, **`_snwprintf_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`snprintf`**, **`_snprintf`**,  **`_snprintf_l`** | `<stdio.h>` |
+| **`_snwprintf`**, **`_snwprintf_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

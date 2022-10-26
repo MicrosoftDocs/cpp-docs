@@ -43,9 +43,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fileno`**|`<stdio.h>`|
+| Function | Required header |
+|---|---|
+| **`_fileno`** | `<stdio.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

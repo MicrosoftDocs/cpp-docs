@@ -32,9 +32,9 @@ If **`%n`** isn't supported (the default), any **`%n`** found in the format stri
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_get_printf_count_output`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`_get_printf_count_output`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

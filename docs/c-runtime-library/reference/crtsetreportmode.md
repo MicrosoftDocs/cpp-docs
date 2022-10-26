@@ -50,20 +50,20 @@ If you don't call **`_CrtSetReportMode`** to define the output destination of me
 
 The following table lists the report types defined in `Crtdbg.h`.
 
-|Report type|Description|
-|-----------------|-----------------|
-|`_CRT_WARN`|Warnings, messages, and information that doesn't need immediate attention.|
-|`_CRT_ERROR`|Errors, unrecoverable problems, and issues that require immediate attention.|
-|`_CRT_ASSERT`|Assertion failures (asserted expressions that evaluate to `FALSE`).|
+| Report type | Description |
+|---|---|
+| `_CRT_WARN` | Warnings, messages, and information that doesn't need immediate attention. |
+| `_CRT_ERROR` | Errors, unrecoverable problems, and issues that require immediate attention. |
+| `_CRT_ASSERT` | Assertion failures (asserted expressions that evaluate to `FALSE`). |
 
 The **`_CrtSetReportMode`** function assigns the new report mode specified in *`reportMode`* to the report type specified in *`reportType`* and returns the previously defined report mode for *`reportType`*. The following table lists the available choices for *`reportMode`* and the resulting behavior of **`_CrtDbgReport`**. These options are defined as bit flags in Crtdbg.h.
 
-|Report mode|_CrtDbgReport behavior|
-|-----------------|-----------------------------|
-|`_CRTDBG_MODE_DEBUG`|Writes the message to the debugger's output window.|
-|`_CRTDBG_MODE_FILE`|Writes the message to a user-supplied file handle. [`_CrtSetReportFile`](crtsetreportfile.md) should be called to define the specific file or stream to use as the destination.|
-|`_CRTDBG_MODE_WNDW`|Creates a message box to display the message along with the **Abort**, **Retry**, and **Ignore** buttons.|
-|`_CRTDBG_REPORT_MODE`|Returns *`reportMode`* for the specified *`reportType`*:<br /><br /> 1   `_CRTDBG_MODE_FILE`<br /><br /> 2   `_CRTDBG_MODE_DEBUG`<br /><br /> 4   `_CRTDBG_MODE_WNDW`|
+| Report mode | _CrtDbgReport behavior |
+|---|---|
+| `_CRTDBG_MODE_DEBUG` | Writes the message to the debugger's output window. |
+| `_CRTDBG_MODE_FILE` | Writes the message to a user-supplied file handle. [`_CrtSetReportFile`](crtsetreportfile.md) should be called to define the specific file or stream to use as the destination. |
+| `_CRTDBG_MODE_WNDW` | Creates a message box to display the message along with the **Abort**, **Retry**, and **Ignore** buttons. |
+| `_CRTDBG_REPORT_MODE` | Returns *`reportMode`* for the specified *`reportType`*:<br /><br /> 1   `_CRTDBG_MODE_FILE`<br /><br /> 2   `_CRTDBG_MODE_DEBUG`<br /><br /> 4   `_CRTDBG_MODE_WNDW` |
 
 Each report type can be reported using one, two, or three modes or no mode at all. Therefore, it's possible to have more than one destination defined for a single report type. For example, the following code fragment causes assertion failures to be sent to both a debug message window and to **`stderr`**:
 
@@ -76,9 +76,9 @@ In addition, you can control the reporting mode or modes for each report type se
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_CrtSetReportMode`**|`<crtdbg.h>`|`<errno.h>`|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_CrtSetReportMode`** | `<crtdbg.h>` | `<errno.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

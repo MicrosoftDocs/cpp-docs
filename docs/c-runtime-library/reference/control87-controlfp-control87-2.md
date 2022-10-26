@@ -98,19 +98,19 @@ These functions are ignored when you use [`/clr` (Common Language Runtime Compil
 
 For the `_MCW_EM` mask, clearing the mask sets the exception, which allows the hardware exception; setting the mask hides the exception. If a `_EM_UNDERFLOW` or `_EM_OVERFLOW` occurs, no hardware exception is thrown until the next floating-point instruction is executed. To generate a hardware exception immediately after `_EM_UNDERFLOW` or `_EM_OVERFLOW`, call the `FWAIT` MASM instruction.
 
-|Mask|Hex value|Constant|Hex value|
-|----------|---------------|--------------|---------------|
-|`_MCW_DN` (Denormal control)|0x03000000|`_DN_SAVE`<br /><br /> `_DN_FLUSH`|0x00000000<br /><br /> 0x01000000|
-|`_MCW_EM` (Interrupt exception mask)|0x0008001F|`_EM_INVALID`<br /><br /> `_EM_DENORMAL`<br /><br /> `_EM_ZERODIVIDE`<br /><br /> `_EM_OVERFLOW`<br /><br /> `_EM_UNDERFLOW`<br /><br /> `_EM_INEXACT`|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|
-|`_MCW_IC` (Infinity control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00040000|`_IC_AFFINE`<br /><br /> `_IC_PROJECTIVE`|0x00040000<br /><br /> 0x00000000|
-|`_MCW_RC` (Rounding control)|0x00000300|`_RC_CHOP`<br /><br /> `_RC_UP`<br /><br /> `_RC_DOWN`<br /><br /> `_RC_NEAR`|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|
-|`_MCW_PC` (Precision control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00030000|`_PC_24` (24 bits)<br /><br /> `_PC_53` (53 bits)<br /><br /> `_PC_64` (64 bits)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
+| Mask | Hex value | Constant | Hex value |
+|---|---|---|---|
+| `_MCW_DN` (Denormal control) | 0x03000000 | `_DN_SAVE`<br /><br /> `_DN_FLUSH` | 0x00000000<br /><br /> 0x01000000 |
+| `_MCW_EM` (Interrupt exception mask) | 0x0008001F | `_EM_INVALID`<br /><br /> `_EM_DENORMAL`<br /><br /> `_EM_ZERODIVIDE`<br /><br /> `_EM_OVERFLOW`<br /><br /> `_EM_UNDERFLOW`<br /><br /> `_EM_INEXACT` | 0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001 |
+| `_MCW_IC` (Infinity control)<br /><br /> (Not supported on ARM or x64 platforms.) | 0x00040000 | `_IC_AFFINE`<br /><br /> `_IC_PROJECTIVE` | 0x00040000<br /><br /> 0x00000000 |
+| `_MCW_RC` (Rounding control) | 0x00000300 | `_RC_CHOP`<br /><br /> `_RC_UP`<br /><br /> `_RC_DOWN`<br /><br /> `_RC_NEAR` | 0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000 |
+| `_MCW_PC` (Precision control)<br /><br /> (Not supported on ARM or x64 platforms.) | 0x00030000 | `_PC_24` (24 bits)<br /><br /> `_PC_53` (53 bits)<br /><br /> `_PC_64` (64 bits) | 0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000 |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_control87`**, **`_controlfp`**, **`_control87_2`**|`<float.h>`|
+| Routine | Required header |
+|---|---|
+| **`_control87`**, **`_controlfp`**, **`_control87_2`** | `<float.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

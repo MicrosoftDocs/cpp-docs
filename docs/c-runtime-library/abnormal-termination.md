@@ -27,13 +27,13 @@ int   _abnormal_termination(
 
 ## Remarks
 
-`_abnormal_termination` is an internal function used to manage unwinding exceptions, and isn't intended to be called from user code.
+**`_abnormal_termination`** is an internal function used to manage unwinding exceptions, and isn't intended to be called from user code.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|_abnormal_termination|excpt.h|
+| Routine | Required header |
+|---|---|
+| **`_abnormal_termination`** | `<excpt.h>` |
 
 ## See also
 

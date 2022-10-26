@@ -16,7 +16,7 @@ Internal CRT function. Used by a framework to find the appropriate exception han
 
 ## Syntax
 
-```
+```C
 int _except_handler3(
    PEXCEPTION_RECORD exception_record,
    PEXCEPTION_REGISTRATION registration,

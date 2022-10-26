@@ -80,11 +80,11 @@ Returns a pointer to the next token found in *`str`*. Returns `NULL` when no mor
 
 ### Error conditions
 
-|*`str`*|*`delimiters`*|*`context`*|Return value|`errno`|
-|----------------|------------------|---------------|------------------|-------------|
-|`NULL`|any|pointer to a null pointer|`NULL`|`EINVAL`|
-|any|`NULL`|any|`NULL`|`EINVAL`|
-|any|any|`NULL`|`NULL`|`EINVAL`|
+| *`str`* | *`delimiters`* | *`context`* | Return value | `errno` |
+|---|---|---|---|---|
+| `NULL` | any | pointer to a null pointer | `NULL` | `EINVAL` |
+| any | `NULL` | any | `NULL` | `EINVAL` |
+| any | any | `NULL` | `NULL` | `EINVAL` |
 
 If *`str`* is `NULL` but *`context`* is a pointer to a valid context pointer, there's no error.
 
@@ -104,23 +104,23 @@ The versions of these functions without the **`_l`** suffix use the current thre
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-## Requirements
-
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtok_s`**|`<string.h>`|
-|**`_strtok_s_l`**|`<string.h>`|
-|**`wcstok_s`**,<br />**`_wcstok_s_l`**|`<string.h>` or `<wchar.h>`|
-|**`_mbstok_s`**,<br />**`_mbstok_s_l`**|`<mbstring.h>`|
-
-For more compatibility information, see [Compatibility](../compatibility.md).
-
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcstok_s`**|**`strtok_s`**|**`_mbstok_s`**|**`wcstok_s`**|
-|**`_tcstok_s_l`**|**`_strtok_s_l`**|**`_mbstok_s_l`**|**`_wcstok_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstok_s` | **`strtok_s`** | **`_mbstok_s`** | **`wcstok_s`** |
+| `_tcstok_s_l` | **`_strtok_s_l`** | **`_mbstok_s_l`** | **`_wcstok_s_l`** |
+
+## Requirements
+
+| Routine | Required header |
+|---|---|
+| **`strtok_s`** | `<string.h>` |
+| **`_strtok_s_l`** | `<string.h>` |
+| **`wcstok_s`**,<br />**`_wcstok_s_l`** | `<string.h>` or `<wchar.h>` |
+| **`_mbstok_s`**,<br />**`_mbstok_s_l`** | `<mbstring.h>` |
+
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 

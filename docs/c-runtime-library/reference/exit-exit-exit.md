@@ -43,14 +43,14 @@ Although the **`exit`**, **`_Exit`** and **`_exit`** calls don't return a value,
 
 The **`exit`**, **`_Exit`**, **`_exit`**, **`quick_exit`**, **`_cexit`**, and **`_c_exit`** functions behave as follows.
 
-|Function|Description|
-|--------------|-----------------|
-|**`exit`**|Performs complete C library termination procedures, terminates the process, and provides the supplied status code to the host environment.|
-|**`_Exit`**|Performs minimal C library termination procedures, terminates the process, and provides the supplied status code to the host environment.|
-|**`_exit`**|Performs minimal C library termination procedures, terminates the process, and provides the supplied status code to the host environment.|
-|**`quick_exit`**|Performs quick C library termination procedures, terminates the process, and provides the supplied status code to the host environment.|
-|**`_cexit`**|Performs complete C library termination procedures and returns to the caller. Doesn't terminate the process.|
-|**`_c_exit`**|Performs minimal C library termination procedures and returns to the caller. Doesn't terminate the process.|
+| Function | Description |
+|---|---|
+| **`exit`** | Performs complete C library termination procedures, terminates the process, and provides the supplied status code to the host environment. |
+| **`_Exit`** | Performs minimal C library termination procedures, terminates the process, and provides the supplied status code to the host environment. |
+| **`_exit`** | Performs minimal C library termination procedures, terminates the process, and provides the supplied status code to the host environment. |
+| **`quick_exit`** | Performs quick C library termination procedures, terminates the process, and provides the supplied status code to the host environment. |
+| **`_cexit`** | Performs complete C library termination procedures and returns to the caller. Doesn't terminate the process. |
+| **`_c_exit`** | Performs minimal C library termination procedures and returns to the caller. Doesn't terminate the process. |
 
 When you call the **`exit`**,  **`_Exit`** or **`_exit`** function, the destructors for any temporary or automatic objects that exist at the time of the call aren't called. An automatic object is a non-static local object defined in a function. A temporary object is an object that's created by the compiler, such as a value returned by a function call. To destroy an automatic object before you call **`exit`**, **`_Exit`**, or **`_exit`**, explicitly call the destructor for the object, as shown here:
 
@@ -69,9 +69,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`exit`**, **`_Exit`**, **`_exit`**|`<process.h>` or `<stdlib.h>`|
+| Function | Required header |
+|---|---|
+| **`exit`**, **`_Exit`**, **`_exit`** | `<process.h>` or `<stdlib.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

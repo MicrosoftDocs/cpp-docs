@@ -31,6 +31,6 @@ This function emits the runtime error message to `stderr` for console applicatio
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|_amsg_exit|internal.h|
+| Routine | Required header |
+|---|---|
+| _amsg_exit | internal.h |

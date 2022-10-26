@@ -39,11 +39,11 @@ Permission setting.
 
 These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return -1 and set `errno` as shown in the following table.
 
-|`errno` setting|Description|
-|---------------------|-----------------|
-|`EACCES`|*`filename`* specifies an existing read-only file or specifies a directory instead of a file.|
-|`EMFILE`|No more file descriptors are available.|
-|`ENOENT`|Specified file couldn't be found.|
+| `errno` value | Description |
+|---|---|
+| `EACCES` | *`filename`* specifies an existing read-only file or specifies a directory instead of a file. |
+| `EMFILE` | No more file descriptors are available. |
+| `ENOENT` | Specified file couldn't be found. |
 
 If *`filename`* is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
@@ -57,17 +57,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcreat`|**`_creat`**|**`_creat`**|**`_wcreat`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcreat` | **`_creat`** | **`_creat`** | **`_wcreat`** |
 
 If the file specified by *`filename`* doesn't exist, a new file is created with the given permission setting and is opened for writing. If the file already exists and its permission setting allows writing, **`_creat`** truncates the file to length 0, destroying the previous contents, and opens it for writing. The permission setting, *`pmode`*, applies to newly created files only. The new file receives the specified permission setting after it's closed for the first time. The integer expression *`pmode`* contains one or both of the manifest constants `_S_IWRITE` and `_S_IREAD`, defined in SYS\Stat.h. When both constants are given, they're joined with the bitwise or operator ( **`|`** ). The *`pmode`* parameter is set to one of the following values.
 
-|Value|Definition|
-|-----------|----------------|
-|`_S_IWRITE`|Writing permitted.|
-|`_S_IREAD`|Reading permitted.|
-|`_S_IREAD | _S_IWRITE`|Reading and writing permitted.|
+| Value | Definition |
+|---|---|
+| `_S_IWRITE` | Writing permitted. |
+| `_S_IREAD` | Reading permitted. |
+| `_S_IREAD | _S_IWRITE` | Reading and writing permitted. |
 
 If write permission isn't given, the file is read-only. All files are always readable; it's impossible to give write-only permission. The modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are then equivalent. Files opened using **`_creat`** are always opened in compatibility mode (see [`_sopen`](sopen-wsopen.md)) with `_SH_DENYNO`.
 
@@ -75,10 +75,10 @@ If write permission isn't given, the file is read-only. All files are always rea
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_creat`**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
-|**`_wcreat`**|\<io.h> or \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_creat`** | \<io.h> | \<sys/types.h>, \<sys/stat.h>, \<errno.h> |
+| **`_wcreat`** | \<io.h> or \<wchar.h> | \<sys/types.h>, \<sys/stat.h>, \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

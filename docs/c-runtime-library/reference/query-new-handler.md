@@ -32,9 +32,9 @@ The C++ **`_query_new_handler`** function returns the address of the current exc
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_query_new_handler`**|\<new.h>|
+| Routine | Required header |
+|---|---|
+| **`_query_new_handler`** | \<new.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

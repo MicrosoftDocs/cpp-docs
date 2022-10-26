@@ -47,9 +47,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_get_invalid_parameter_handler`**, **`_get_thread_local_invalid_parameter_handler`**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_get_invalid_parameter_handler`**, **`_get_thread_local_invalid_parameter_handler`** | C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h> |
 
 The **`_get_invalid_parameter_handler`** and **`_get_thread_local_invalid_parameter_handler`** functions are Microsoft-specific. For compatibility information, see [Compatibility](../compatibility.md).
 

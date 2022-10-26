@@ -39,9 +39,9 @@ The **`_lrotl`** and **`_lrotr`** functions rotate *`value`* by *`shift`* bits. 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_lrotl`**, **`_lrotr`**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_lrotl`**, **`_lrotr`** | \<stdlib.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -54,9 +54,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fread_nolock_s`**|C: \<stdio.h>; C++: \<cstdio> or \<stdio.h>|
+| Function | Required header |
+|---|---|
+| **`_fread_nolock_s`** | C: \<stdio.h>; C++: \<cstdio> or \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

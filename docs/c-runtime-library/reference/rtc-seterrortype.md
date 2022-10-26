@@ -45,9 +45,9 @@ Before you can call this function, you must first call one of the run-time error
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_RTC_SetErrorType`**|\<rtcapi.h>|
+| Routine | Required header |
+|---|---|
+| **`_RTC_SetErrorType`** | \<rtcapi.h> |
 
 For more information, see [Compatibility](../compatibility.md).
 

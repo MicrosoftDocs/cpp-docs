@@ -34,9 +34,9 @@ Failure can occur if you attempt more than TMP_MAX (see STDIO.H) calls with **`t
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`tmpfile`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`tmpfile`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

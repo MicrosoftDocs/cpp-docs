@@ -56,9 +56,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_expand`**|\<malloc.h>|
+| Function | Required header |
+|---|---|
+| **`_expand`** | \<malloc.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

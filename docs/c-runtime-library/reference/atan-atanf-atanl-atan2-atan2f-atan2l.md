@@ -44,9 +44,9 @@ Any numbers.
 
 **`atan2`** uses the signs of both parameters to determine the quadrant of the return value.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|± QNAN, IND|none|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
 
 ## Remarks
 
@@ -62,10 +62,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------|-|
-|**`atan`**, **`atan2`**, **`atanf`**, **`atan2f`**, **`atanl`**, **`atan2l`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`atan()`**, **`atan2`** macros | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`atan`**, **`atan2`**, **`atanf`**, **`atan2f`**, **`atanl`**, **`atan2l`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`atan`**, **`atan2`** macros | `<tgmath.h>` |  |
 
 ## Example
 

@@ -10,7 +10,7 @@ ms.assetid: 7acd96fa-d118-4339-bb00-e5afaf286945
 
 ## Syntax
 
-```
+```C
 #include <process.h>
 ```
 
@@ -18,10 +18,10 @@ ms.assetid: 7acd96fa-d118-4339-bb00-e5afaf286945
 
 The `_cwait` function can be used by any process to wait for any other process (if the process ID is known). The action argument can be one of the following values:
 
-|Constant|Meaning|
-|--------------|-------------|
-|`_WAIT_CHILD`|Calling process waits until specified new process terminates.|
-|`_WAIT_GRANDCHILD`|Calling process waits until specified new process, and all processes created by that new process, terminate.|
+| Constant | Meaning |
+|---|---|
+| `_WAIT_CHILD` | Calling process waits until specified new process terminates. |
+| `_WAIT_GRANDCHILD` | Calling process waits until specified new process, and all processes created by that new process, terminate. |
 
 ## See also
 

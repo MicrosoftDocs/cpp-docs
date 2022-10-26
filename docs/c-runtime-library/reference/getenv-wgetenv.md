@@ -62,18 +62,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tgetenv`**|**`getenv`**|**`getenv`**|**`_wgetenv`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tgetenv`** | **`getenv`** | **`getenv`** | **`_wgetenv`** |
 
 To check or change the value of the **`TZ`** environment variable, use **`getenv`**, **`_putenv`** and **`_tzset`** as necessary. For more information about **`TZ`**, see [`_tzset`](tzset.md) and [`_daylight`, `timezone`, and `_tzname`](../daylight-dstbias-timezone-and-tzname.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`getenv`**|`<stdlib.h>`|
-|**`_wgetenv`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`getenv`** | `<stdlib.h>` |
+| **`_wgetenv`** | `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

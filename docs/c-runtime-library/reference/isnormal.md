@@ -37,9 +37,9 @@ The floating-point value to test.
 
 ## Requirements
 
-|Function|Required header (C)|Required header (C++)|
-|--------------|---------------------------|-------------------------------|
-|**`isnormal`**|\<math.h>|\<math.h> or \<cmath>|
+| Function | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`isnormal`** | \<math.h> | \<math.h> or \<cmath> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

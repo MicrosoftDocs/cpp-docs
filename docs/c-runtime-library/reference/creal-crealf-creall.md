@@ -43,10 +43,10 @@ If you use the \<tgmath.h> `creal()` macro, the type of the argument determines 
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`creal`**, **`crealf`**, **`creall`**|\<complex.h>|\<ccomplex>|
-|**`creal`** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`creal`**, **`crealf`**, **`creall`** | \<complex.h> | \<ccomplex> |
+| **`creal`** macro | \<tgmath.h> |  |
 
 The `_Fcomplex`, `_Dcomplex`, and `_Lcomplex` types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
 

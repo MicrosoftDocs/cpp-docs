@@ -40,9 +40,9 @@ The **`__toascii`** routine is defined as a macro unless the preprocessor macro 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`toascii`**, **`__toascii`**|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
+| Routine | Required header |
+|---|---|
+| **`toascii`**, **`__toascii`** | C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h> |
 
 The **`toascii`** macro is a POSIX extension, and **`__toascii`** is a Microsoft-specific implementation of the POSIX extension. For more compatibility information, see [Compatibility](../compatibility.md).
 

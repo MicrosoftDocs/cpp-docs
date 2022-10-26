@@ -60,9 +60,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tmakepath`|**`_makepath`**|**`_makepath`**|**`_wmakepath`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tmakepath` | **`_makepath`** | **`_makepath`** | **`_wmakepath`** |
 
 The *`path`* argument must point to an empty buffer large enough to hold the complete path. The composite *`path`* must be no larger than the `_MAX_PATH` constant, defined in Stdlib.h.
 
@@ -70,10 +70,10 @@ If path is `NULL`, the invalid parameter handler is invoked, as described in [Pa
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_makepath`**|\<stdlib.h>|
-|**`_wmakepath`**|\<stdlib.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_makepath`** | \<stdlib.h> |
+| **`_wmakepath`** | \<stdlib.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

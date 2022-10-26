@@ -51,11 +51,11 @@ Locale to use.
 
 The return value for each of these functions indicates the ordinal relation of *`string1`* to *`string2`*.
 
-|Value|Relationship of `string1` to `string2`|
-|-----------|----------------------------------------|
-|< 0|*`string1`* is less than *`string2`*|
-|0|*`string1`* is identical to *`string2`*|
-|> 0|*`string1`* is greater than *`string2`*|
+| Value | Relationship of `string1` to `string2` |
+|---|---|
+| < 0 | *`string1`* is less than *`string2`* |
+| 0 | *`string1`* is identical to *`string2`* |
+| > 0 | *`string1`* is greater than *`string2`* |
 
 On a parameter validation error, **`_mbscmp`** and **`_mbscmp_l`** return `_NLSCMPERROR`, which is defined in `<string.h>` and `<mbstring.h>`.
 
@@ -67,9 +67,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcscmp`**|**`strcmp`**|**`_mbscmp`**|**`wcscmp`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscmp` | **`strcmp`** | **`_mbscmp`** | **`wcscmp`** |
 
 The **`strcmp`** functions differ from the **`strcoll`** functions in that **`strcmp`** comparisons are ordinal, and aren't affected by locale. **`strcoll`** compares strings lexicographically by using the `LC_COLLATE` category of the current locale. For more information about the `LC_COLLATE` category, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md).
 
@@ -81,11 +81,11 @@ The **`strcmp`** functions are case-sensitive. **`_stricmp`**, **`_wcsicmp`**, a
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strcmp`**|`<string.h>`|
-|**`wcscmp`**|`<string.h>` or `<wchar.h>`|
-|**`_mbscmp`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strcmp`** | `<string.h>` |
+| **`wcscmp`** | `<string.h>` or `<wchar.h>` |
+| **`_mbscmp`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

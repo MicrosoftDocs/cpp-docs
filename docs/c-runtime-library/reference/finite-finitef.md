@@ -50,10 +50,10 @@ The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zer
 
 ## Requirements
 
-|Function|Required header (C)|Required header (C++)|
-|--------------|---------------------------|-------------------------------|
-|`_finite`|\<float.h> or \<math.h>|\<float.h>, \<math.h>, \<cfloat>, or \<cmath>|
-|`isfinite`, `_finitef`|\<math.h>|\<math.h> or \<cmath>|
+| Function | Required header (C) | Required header (C++) |
+|---|---|---|
+| `_finite` | \<float.h> or \<math.h> | \<float.h>, \<math.h>, \<cfloat>, or \<cmath> |
+| `isfinite`, `_finitef` | \<math.h> | \<math.h> or \<cmath> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

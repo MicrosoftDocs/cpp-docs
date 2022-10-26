@@ -39,9 +39,9 @@ If *`state`* is `NULL`, the invalid parameter handler is invoked, as described i
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtMemCheckpoint`**|\<crtdbg.h>, \<errno.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtMemCheckpoint`** | \<crtdbg.h>, \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

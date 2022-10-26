@@ -88,11 +88,11 @@ Zero if successful; otherwise, an error.
 
 ### Error conditions
 
-|*`dest`*|*`dest_size`*|*`src`*|Return value|Contents of *`dest`*|
-|----------------------|------------------------|-----------------|------------------|----------------------------------|
-|`NULL`|any|any|`EINVAL`|not modified|
-|any|any|`NULL`|`EINVAL`|*`dest[0]`* set to 0|
-|any|0, or too small|any|`ERANGE`|*`dest[0]`* set to 0|
+| *`dest`* | *`dest_size`* | *`src`* | Return value | Contents of *`dest`* |
+|---|---|---|---|---|
+| `NULL` | any | any | `EINVAL` | not modified |
+| any | any | `NULL` | `EINVAL` | *`dest[0]`* set to 0 |
+| any | 0, or too small | any | `ERANGE` | *`dest[0]`* set to 0 |
 
 ## Remarks
 
@@ -112,17 +112,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcscpy_s`**|**`strcpy_s`**|**`_mbscpy_s`**|**`wcscpy_s`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tcscpy_s`** | **`strcpy_s`** | **`_mbscpy_s`** | **`wcscpy_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strcpy_s`**|`<string.h>`|
-|**`wcscpy_s`**|`<string.h>` or `<wchar.h>`|
-|**`_mbscpy_s`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strcpy_s`** | `<string.h>` |
+| **`wcscpy_s`** | `<string.h>` or `<wchar.h>` |
+| **`_mbscpy_s`** | `<mbstring.h>` |
 
 These functions are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

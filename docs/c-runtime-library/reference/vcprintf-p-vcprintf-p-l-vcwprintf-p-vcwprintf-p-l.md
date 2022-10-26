@@ -73,17 +73,17 @@ These functions validate the input pointer and the format string. If *`format`* 
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_vtcprintf_p`|**`_vcprintf_p`**|**`_vcprintf_p`**|**`_vcwprintf_p`**|
-|`_vtcprintf_p_l`|**`_vcprintf_p_l`**|**`_vcprintf_p_l`**|**`_vcwprintf_p_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vtcprintf_p` | **`_vcprintf_p`** | **`_vcprintf_p`** | **`_vcwprintf_p`** |
+| `_vtcprintf_p_l` | **`_vcprintf_p_l`** | **`_vcprintf_p_l`** | **`_vcwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_vcprintf_p`**, **`_vcprintf_p_l`**|\<conio.h> and \<stdarg.h>|
-|**`_vcwprintf_p`**, **`_vcwprintf_p_l`**|\<conio.h> and \<stdarg.h>|
+| Routine | Required header |
+|---|---|
+| **`_vcprintf_p`**, **`_vcprintf_p_l`** | \<conio.h> and \<stdarg.h> |
+| **`_vcwprintf_p`**, **`_vcwprintf_p_l`** | \<conio.h> and \<stdarg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -48,14 +48,14 @@ The value of the exponent.
 
 If successful, returns the base-2 exponent of *`x`*, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:
 
-|Issue|Return|
-|-----------|------------|
-|*`x`* = ±0|1|
-|*`x`* = -INFINITY|+0|
-|*`x`* = +INFINITY|+INFINITY|
-|*`x`* = NaN|NaN|
-|Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
-|Underflow range error|Correct result, after rounding|
+| Issue | Return |
+|---|---|
+| *`x`* = ±0 | 1 |
+| *`x`* = -INFINITY | +0 |
+| *`x`* = +INFINITY | +INFINITY |
+| *`x`* = NaN | NaN |
+| Overflow range error | +HUGE_VAL, +HUGE_VALF, or +HUGE_VALL |
+| Underflow range error | Correct result, after rounding |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -69,10 +69,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`exp2`**, **`expf2`**, **`expl2`**|\<math.h>|\<cmath>|
-|**`exp2`** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`exp2`**, **`expf2`**, **`expl2`** | \<math.h> | \<cmath> |
+| **`exp2`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

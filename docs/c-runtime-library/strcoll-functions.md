@@ -15,12 +15,12 @@ Each of the `strcoll` and `wcscoll` functions compares two strings according to 
 
 ### strcoll Functions
 
-|SBCS|Unicode|MBCS|Description|
-|----------|-------------|----------|-----------------|
-|[`strcoll`](./reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[`wcscoll`](./reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[`_mbscoll`](./reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|Collate two strings|
-|[`_stricoll`](./reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[`_wcsicoll`](./reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[`_mbsicoll`](./reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|Collate two strings (case insensitive)|
-|[`_strncoll`](./reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[`_wcsncoll`](./reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[`_mbsncoll`](./reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|Collate first `count` characters of two strings|
-|[`_strnicoll`](./reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[`_wcsnicoll`](./reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[`_mbsnicoll`](./reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|Collate first `count` characters of two strings (case-insensitive)|
+| SBCS | Unicode | MBCS | Description |
+|---|---|---|---|
+| [`strcoll`](./reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md) | [`wcscoll`](./reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md) | [`_mbscoll`](./reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md) | Collate two strings |
+| [`_stricoll`](./reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md) | [`_wcsicoll`](./reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md) | [`_mbsicoll`](./reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md) | Collate two strings (case insensitive) |
+| [`_strncoll`](./reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | [`_wcsncoll`](./reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | [`_mbsncoll`](./reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | Collate first `count` characters of two strings |
+| [`_strnicoll`](./reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) | [`_wcsnicoll`](./reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) | [`_mbsnicoll`](./reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) | Collate first `count` characters of two strings (case-insensitive) |
 
 ## Remarks
 

@@ -65,14 +65,14 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tfreopen_s`**|**`freopen_s`**|**`freopen_s`**|**`_wfreopen_s`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tfreopen_s`** | **`freopen_s`** | **`freopen_s`** | **`_wfreopen_s`** |
 
 **`freopen_s`** is typically used to redirect the pre-opened files **`stdin`**, **`stdout`**, and **`stderr`** to files specified by the user. The new file associated with *`stream`* is opened with *`mode`*, which is a character string specifying the type of access requested for the file, as follows:
 
-|*`mode`*|Access|
-|-|-|
+| *`mode`* | Access |
+|---|---|
 | **`"r"`** | Opens for reading. If the file doesn't exist or can't be found, the **`freopen_s`** call fails. |
 | **`"w"`** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
 | **`"a"`** | Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it doesn't exist. |
@@ -88,8 +88,8 @@ The **`"a"`** mode doesn't remove the EOF marker before appending to the file. A
 
 When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [`fsetpos`](fsetpos.md), [`fseek`](fseek-fseeki64.md), or [`rewind`](rewind.md) operation. The current position can be specified for the [`fsetpos`](fsetpos.md) or [`fseek`](fseek-fseeki64.md) operation, if you want. In addition to the above values, one of the following characters may be included in the *`mode`* string to specify the translation mode for new lines.
 
-|*`mode`* modifier|Translation mode|
-|-|-|
+| *`mode`* modifier | Translation mode |
+|---|---|
 | **`t`** | Open in text (translated) mode. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
@@ -101,10 +101,10 @@ For a discussion of text and binary modes, see [Text and binary mode file I/O](.
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`freopen_s`**|`<stdio.h>`|
-|**`_wfreopen_s`**|`<stdio.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`freopen_s`** | `<stdio.h>` |
+| **`_wfreopen_s`** | `<stdio.h>` or `<wchar.h>` |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps.
 

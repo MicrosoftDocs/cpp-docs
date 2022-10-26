@@ -62,11 +62,11 @@ Locale to use.
 
 The return value indicates the relation of the substrings of *`string1`* and *`string2`* as follows.
 
-|Return value|Description|
-|------------------|-----------------|
-|< 0|*`string1`* substring less than *`string2`* substring|
-|0|*`string1`* substring identical to *`string2`* substring|
-|> 0|*`string1`* substring greater than *`string2`* substring|
+| Return value | Description |
+|---|---|
+| < 0 | *`string1`* substring less than *`string2`* substring |
+| 0 | *`string1`* substring identical to *`string2`* substring |
+| > 0 | *`string1`* substring greater than *`string2`* substring |
 
 On a parameter validation error, **`_mbsncmp`** and **`_mbsncmp_l`** return **`_NLSCMPERROR`**, which is defined in `<string.h>` and `<mbstring.h>`.
 
@@ -84,20 +84,19 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsnccmp`**|**`strncmp`**|**`_mbsncmp`**|**`wcsncmp`**|
-|**`_tcsncmp`**|**`strncmp`**|**`_mbsnbcmp`**|**`wcsncmp`**|
-|**`_tccmp`**|Maps to macro or inline function|**`_mbsncmp`**|Maps to macro or inline function|
-|**not applicable**|**not applicable**|**`_mbsncmp_l`**|**not applicable**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsnccmp` | **`strncmp`** | **`_mbsncmp`** | **`wcsncmp`** |
+| `_tcsncmp` | **`strncmp`** | **`_mbsnbcmp`** | **`wcsncmp`** |
+| `_tccmp` | Maps to macro or inline function | **`_mbsncmp`** | Maps to macro or inline function |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strncmp`**|`<string.h>`|
-|**`wcsncmp`**|`<string.h>` or `<wchar.h>`|
-|**`_mbsncmp`**, **`_mbsncmp_l`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strncmp`** | `<string.h>` |
+| **`wcsncmp`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsncmp`**, **`_mbsncmp_l`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

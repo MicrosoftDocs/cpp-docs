@@ -42,9 +42,9 @@ Because C++ allows overloading, you can call overloads of **`cacos`** that take 
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`cacos`**,               **`cacosf`**, **`cacosl`**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cacos`**, **`cacosf`**, **`cacosl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

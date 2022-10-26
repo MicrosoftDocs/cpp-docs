@@ -51,10 +51,10 @@ If successful, these functions return the base-2 exponent of *`x`* as a **`signe
 
 Otherwise, the functions return one of the following values, defined in \<math.h>:
 
-|Input|Result|
-|-----------|------------|
-|±0|`FP_ILOGB0`|
-|± INF, ± NAN, IND|`FP_ILOGBNAN`|
+| Input | Result |
+|---|---|
+| ±0 | `FP_ILOGB0` |
+| ± INF, ± NAN, IND | `FP_ILOGBNAN` |
 
 Errors are reported as specified in [`_matherr`](matherr.md).
 
@@ -68,10 +68,10 @@ Calling this function is similar to calling the equivalent `logb` function, then
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**`ilogb`**, **`ilogbf`**, **`ilogbl`**|\<math.h>|\<cmath>|
-|**`ilogb`** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`ilogb`**, **`ilogbf`**, **`ilogbl`** | \<math.h> | \<cmath> |
+| **`ilogb`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

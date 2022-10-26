@@ -26,9 +26,9 @@ The **`unexpected`** routine isn't used with the current implementation of C++ e
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`unexpected`**|`<eh.h>`|
+| Routine | Required header |
+|---|---|
+| **`unexpected`** | `<eh.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

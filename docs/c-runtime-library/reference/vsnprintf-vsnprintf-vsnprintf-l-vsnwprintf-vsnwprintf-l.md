@@ -139,17 +139,17 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_vsntprintf`**|**`_vsnprintf`**|**`_vsnprintf`**|**`_vsnwprintf`**|
-|**`_vsntprintf_l`**|**`_vsnprintf_l`**|**`_vsnprintf_l`**|**`_vsnwprintf_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vsntprintf` | **`_vsnprintf`** | **`_vsnprintf`** | **`_vsnwprintf`** |
+| `_vsntprintf_l` | **`_vsnprintf_l`** | **`_vsnprintf_l`** | **`_vsnwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------------|-------------------------------|
-|**`vsnprintf`**, **`_vsnprintf`**, **`_vsnprintf_l`**|`<stdio.h>`|`<stdio.h>` or  `<cstdio>`|
-|**`_vsnwprintf`**, **`_vsnwprintf_l`**|`<stdio.h>` or `<wchar.h>`|`<stdio.h>`, `<wchar.h>`, `<cstdio>`, or `<cwchar>`|
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`vsnprintf`**, **`_vsnprintf`**, **`_vsnprintf_l`** | `<stdio.h>` | `<stdio.h>` or  `<cstdio>` |
+| **`_vsnwprintf`**, **`_vsnwprintf_l`** | `<stdio.h>` or `<wchar.h>` | `<stdio.h>`, `<wchar.h>`, `<cstdio>`, or `<cwchar>` |
 
 The **`_vsnprintf`**, **`_vsnprintf_l`**, **`_vsnwprintf`** and **`_vsnwprintf_l`** functions are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

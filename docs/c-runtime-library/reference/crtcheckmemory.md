@@ -41,9 +41,9 @@ For more information about how **`_CrtCheckMemory`** can be used with other debu
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtCheckMemory`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtCheckMemory`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

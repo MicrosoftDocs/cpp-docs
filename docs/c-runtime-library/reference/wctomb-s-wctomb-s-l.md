@@ -55,11 +55,11 @@ Zero if successful, an error code on failure.
 
 Error Conditions
 
-|*`mbchar`*|*`sizeInBytes`*|Return value|*`pRetValue`*|
-|--------------|-------------------|------------------|-----------------|
-|`NULL`|>0|`EINVAL`|not modified|
-|any|>`INT_MAX`|`EINVAL`|not modified|
-|any|too small|`EINVAL`|not modified|
+| *`mbchar`* | *`sizeInBytes`* | Return value | *`pRetValue`* |
+|---|---|---|---|
+| `NULL` | >0 | `EINVAL` | not modified |
+| any | >`INT_MAX` | `EINVAL` | not modified |
+| any | too small | `EINVAL` | not modified |
 
 If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `wctomb` returns `EINVAL` and sets `errno` to `EINVAL`.
 
@@ -75,10 +75,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wctomb_s`**|\<stdlib.h>|
-|**`_wctomb_s_l`**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`wctomb_s`** | \<stdlib.h> |
+| **`_wctomb_s_l`** | \<stdlib.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

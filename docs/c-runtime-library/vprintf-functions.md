@@ -32,32 +32,32 @@ The `vprintf` functions are similar to their counterpart functions as listed in 
 
 These functions format data for output to destinations as follows.
 
-|Function|Counterpart function|Output destination|Parameter Validation|Positional Parameter Support|
-|--------------|--------------------------|------------------------|--------------------------|----------------------------------|
-|`_vcprintf`|[`_cprintf`](./reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|console|Check for null.|no|
-|`_vcwprintf`|[`_cwprintf`](./reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|console|Check for null.|no|
-|`vfprintf`|[`fprintf`](./reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*`stream`*|Check for null.|no|
-|`vfprintf_p`|[`fprintf_p`](./reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*`stream`*|Check for null and valid format.|yes|
-|`vfprintf_s`|[`fprintf_s`](./reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*`stream`*|Check for null and valid format.|no|
-|`vfwprintf`|[`fwprintf`](./reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*`stream`*|Check for null.|no|
-|`vfwprintf_p`|[`fwprintf_p`](./reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*`stream`*|Check for null and valid format.|yes|
-|`vfwprintf_s`|[`fwprintf_s`](./reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*`stream`*|Check for null and valid format.|no|
-|`vprintf`|[`printf`](./reference/printf-printf-l-wprintf-wprintf-l.md)|`stdout`|Check for null.|no|
-|`vprintf_p`|[`printf_p`](./reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`stdout`|Check for null and valid format.|yes|
-|`vprintf_s`|[`printf_s`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`stdout`|Check for null and valid format.|no|
-|`vwprintf`|[`wprintf`](./reference/printf-printf-l-wprintf-wprintf-l.md)|`stdout`|Check for null.|no|
-|`vwprintf_p`|[`wprintf_p`](./reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`stdout`|Check for null and valid format.|yes|
-|`vwprintf_s`|[`wprintf_s`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`stdout`|Check for null and valid format.|no|
-|`vsprintf`|[`sprintf`](./reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|memory pointed to by *`buffer`*|Check for null.|no|
-|`vsprintf_p`|[`sprintf_p`](./reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|memory pointed to by *`buffer`*|Check for null and valid format.|yes|
-|`vsprintf_s`|[`sprintf_s`](./reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|memory pointed to by *`buffer`*|Check for null and valid format.|no|
-|`vswprintf`|[`swprintf`](./reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|memory pointed to by *`buffer`*|Check for null.|no|
-|`vswprintf_p`|[`swprintf_p`](./reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|memory pointed to by *`buffer`*|Check for null and valid format.|yes|
-|`vswprintf_s`|[`swprintf_s`](./reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|memory pointed to by *`buffer`*|Check for null and valid format.|no|
-|`_vscprintf`|[`_vscprintf`](./reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|memory pointed to by *`buffer`*|Check for null.|no|
-|`_vscwprintf`|[`_vscwprintf`](./reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|memory pointed to by *`buffer`*|Check for null.|no|
-|`_vsnprintf`|[`_snprintf`](./reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|memory pointed to by *`buffer`*|Check for null.|no|
-|`_vsnwprintf`|[`_snwprintf`](./reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|memory pointed to by *`buffer`*|Check for null.|no|
+| Function | Counterpart function | Output destination | Parameter Validation | Positional Parameter Support |
+|---|---|---|---|---|
+| `_vcprintf` | [`_cprintf`](./reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md) | console | Check for null. | no |
+| `_vcwprintf` | [`_cwprintf`](./reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md) | console | Check for null. | no |
+| `vfprintf` | [`fprintf`](./reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) | *`stream`* | Check for null. | no |
+| `vfprintf_p` | [`fprintf_p`](./reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md) | *`stream`* | Check for null and valid format. | yes |
+| `vfprintf_s` | [`fprintf_s`](./reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md) | *`stream`* | Check for null and valid format. | no |
+| `vfwprintf` | [`fwprintf`](./reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) | *`stream`* | Check for null. | no |
+| `vfwprintf_p` | [`fwprintf_p`](./reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md) | *`stream`* | Check for null and valid format. | yes |
+| `vfwprintf_s` | [`fwprintf_s`](./reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md) | *`stream`* | Check for null and valid format. | no |
+| `vprintf` | [`printf`](./reference/printf-printf-l-wprintf-wprintf-l.md) | `stdout` | Check for null. | no |
+| `vprintf_p` | [`printf_p`](./reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md) | `stdout` | Check for null and valid format. | yes |
+| `vprintf_s` | [`printf_s`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) | `stdout` | Check for null and valid format. | no |
+| `vwprintf` | [`wprintf`](./reference/printf-printf-l-wprintf-wprintf-l.md) | `stdout` | Check for null. | no |
+| `vwprintf_p` | [`wprintf_p`](./reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md) | `stdout` | Check for null and valid format. | yes |
+| `vwprintf_s` | [`wprintf_s`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) | `stdout` | Check for null and valid format. | no |
+| `vsprintf` | [`sprintf`](./reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) | memory pointed to by *`buffer`* | Check for null. | no |
+| `vsprintf_p` | [`sprintf_p`](./reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md) | memory pointed to by *`buffer`* | Check for null and valid format. | yes |
+| `vsprintf_s` | [`sprintf_s`](./reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) | memory pointed to by *`buffer`* | Check for null and valid format. | no |
+| `vswprintf` | [`swprintf`](./reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) | memory pointed to by *`buffer`* | Check for null. | no |
+| `vswprintf_p` | [`swprintf_p`](./reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md) | memory pointed to by *`buffer`* | Check for null and valid format. | yes |
+| `vswprintf_s` | [`swprintf_s`](./reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) | memory pointed to by *`buffer`* | Check for null and valid format. | no |
+| `_vscprintf` | [`_vscprintf`](./reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) | memory pointed to by *`buffer`* | Check for null. | no |
+| `_vscwprintf` | [`_vscwprintf`](./reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) | memory pointed to by *`buffer`* | Check for null. | no |
+| `_vsnprintf` | [`_snprintf`](./reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) | memory pointed to by *`buffer`* | Check for null. | no |
+| `_vsnwprintf` | [`_snwprintf`](./reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) | memory pointed to by *`buffer`* | Check for null. | no |
 
 The `argptr` argument has type `va_list`, which is defined in VARARGS.H and STDARG.H. The `argptr` variable must be initialized by **va_start,** and may be reinitialized by subsequent `va_arg` calls; `argptr` then points to the beginning of a list of arguments that are converted and transmitted for output according to the corresponding specifications in the *`format`* argument. *`format`* has the same form and function as the *`format`* argument for [`printf`](./reference/printf-printf-l-wprintf-wprintf-l.md). None of these functions invoke `va_end`. For a more complete description of each `vprintf` function, see the description of its counterpart function as listed in the preceding table.
 

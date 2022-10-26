@@ -51,11 +51,11 @@ Zero if successful; an error code on failure
 
 ### Error conditions
 
-|*`dest`*|*`numberOfElements`*|*`src`*|Return value|Contents of *`dest`*|
-|------------|------------------------|-----------|------------------|------------------------|
-|`NULL`|any|any|`EINVAL`|not modified|
-|any|any|`NULL`|`EINVAL`|not modified|
-|any|< *`count`*|any|`ERANGE`|not modified|
+| *`dest`* | *`numberOfElements`* | *`src`* | Return value | Contents of *`dest`* |
+|---|---|---|---|---|
+| `NULL` | any | any | `EINVAL` | not modified |
+| any | any | `NULL` | `EINVAL` | not modified |
+| any | < *`count`* | any | `ERANGE` | not modified |
 
 ## Remarks
 
@@ -67,10 +67,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memmove_s`**|\<string.h>|
-|**`wmemmove_s`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`memmove_s`** | \<string.h> |
+| **`wmemmove_s`** | \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

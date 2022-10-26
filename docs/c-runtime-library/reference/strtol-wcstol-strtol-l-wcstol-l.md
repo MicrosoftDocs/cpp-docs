@@ -79,19 +79,19 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcstol`**|**`strtol`**|**`strtol`**|**`wcstol`**|
-|**`_tcstol_l`**|**`_strtol_l`**|**`_strtol_l`**|**`_wcstol_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstol` | **`strtol`** | **`strtol`** | **`wcstol`** |
+| `_tcstol_l` | **`_strtol_l`** | **`_strtol_l`** | **`_wcstol_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtol`**|`<stdlib.h>`|
-|**`wcstol`**|`<stdlib.h>` or `<wchar.h>`|
-|**`_strtol_l`**|`<stdlib.h>`|
-|**`_wcstol_l`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`strtol`** | `<stdlib.h>` |
+| **`wcstol`** | `<stdlib.h>` or `<wchar.h>` |
+| **`_strtol_l`** | `<stdlib.h>` |
+| **`_wcstol_l`** | `<stdlib.h>` or `<wchar.h>` |
 
 The **`_strtol_l`** and **`_wcstol_l`** functions are Microsoft-specific, not part of the Standard C library. For more compatibility information, see [Compatibility](../compatibility.md).
 

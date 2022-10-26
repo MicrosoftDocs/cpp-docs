@@ -44,9 +44,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE and _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_tputenv`**|**`_putenv`**|**`_putenv`**|**`_wputenv`**|
+| `Tchar.h` routine | `_UNICODE and _MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tputenv` | **`_putenv`** | **`_putenv`** | **`_wputenv`** |
 
 The *`envstring`* argument must be a pointer to a string of the form *`varname=value_string`*, where *`varname`* is the name of the environment variable to be added or modified and *`value_string`* is the variable's value. If *`varname`* is already part of the environment, its value is replaced by *`value_string`*; otherwise, the new *`varname`* variable and its *`value_string`* value are added to the environment. You can remove a variable from the environment by specifying an empty *`value_string`*, or in other words, by specifying only *`varname`*=.
 
@@ -61,10 +61,10 @@ Don't change an environment entry directly: instead, use **`_putenv`** or **`_wp
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_putenv`**|`<stdlib.h>`|
-|**`_wputenv`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_putenv`** | `<stdlib.h>` |
+| **`_wputenv`** | `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

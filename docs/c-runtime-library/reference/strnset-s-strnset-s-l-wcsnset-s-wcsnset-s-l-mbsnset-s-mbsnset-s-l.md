@@ -98,20 +98,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsnset_s`|**`_strnset_s`**|**`_mbsnbset_s`**|**`_wcsnset_s`**|
-|`_tcsnset_s_l`|**`_strnset_s_l`**|**`_mbsnbset_s_l`**|**`_wcsnset_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsnset_s` | **`_strnset_s`** | **`_mbsnbset_s`** | **`_wcsnset_s`** |
+| `_tcsnset_s_l` | **`_strnset_s_l`** | **`_mbsnbset_s_l`** | **`_wcsnset_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strnset_s`**|\<string.h>|
-|**`_strnset_s_l`**|\<tchar.h>|
-|**`_wcsnset_s`**|\<string.h> or \<wchar.h>|
-|**`_wcsnset_s_l`**|\<tchar.h>|
-|**`_mbsnset_s`**, **`_mbsnset_s_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_strnset_s`** | \<string.h> |
+| **`_strnset_s_l`** | \<tchar.h> |
+| **`_wcsnset_s`** | \<string.h> or \<wchar.h> |
+| **`_wcsnset_s_l`** | \<tchar.h> |
+| **`_mbsnset_s`**, **`_mbsnset_s_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

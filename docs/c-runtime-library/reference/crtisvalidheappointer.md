@@ -44,9 +44,9 @@ For more information about how **`_CrtIsValidHeapPointer`** can be used with oth
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtIsValidHeapPointer`**|`<crtdbg.h>`|
+| Routine | Required header |
+|---|---|
+| **`_CrtIsValidHeapPointer`** | `<crtdbg.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

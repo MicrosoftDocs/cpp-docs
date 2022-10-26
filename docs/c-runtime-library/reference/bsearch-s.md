@@ -55,22 +55,22 @@ If invalid parameters are passed to the function, it invokes the invalid paramet
 
 ### Error conditions
 
-|*`key`*|*`base`*|*`compare`*|*`number`*|*`width`*|`errno` value|
-|-|-|-|-|-|-|
-|`NULL`|any|any|any|any|`EINVAL`|
-|any|`NULL`|any|!= 0|any|`EINVAL`|
-|any|any|any|any|= 0|`EINVAL`|
-|any|any|`NULL`|an|any|`EINVAL`|
+| *`key`* | *`base`* | *`compare`* | *`number`* | *`width`* | `errno` value |
+|---|---|---|---|---|---|
+| `NULL` | any | any | any | any | `EINVAL` |
+| any | `NULL` | any | != 0 | any | `EINVAL` |
+| any | any | any | any | = 0 | `EINVAL` |
+| any | any | `NULL` | an | any | `EINVAL` |
 
 ## Remarks
 
 The **`bsearch_s`** function performs a binary search of a sorted array of *`number`* elements, each of *`width`* bytes in size. The *`base`* value is a pointer to the base of the array to be searched, and *`key`* is the value being sought. The *`compare`* parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:
 
-|Value returned by *`compare`* routine|Description|
-|-----------------------------------------|-----------------|
-|\< 0|Key is less than array element.|
-|0|Key is equal to array element.|
-|> 0|Key is greater than array element.|
+| Value returned by *`compare`* routine | Description |
+|---|---|
+| \< 0 | Key is less than array element. |
+| 0 | Key is equal to array element. |
+| > 0 | Key is greater than array element. |
 
 The *`context`* pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The *`compare`* function may cast the void pointer into the appropriate object type and access members of that object. The addition of the *`context`* parameter makes **`bsearch_s`** more secure, since the context may be used to avoid reentrancy bugs associated with using static variables to make data available to the *`compare`* function.
 
@@ -78,9 +78,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`bsearch_s`**|\<stdlib.h> and \<search.h>|
+| Routine | Required header |
+|---|---|
+| **`bsearch_s`** | \<stdlib.h> and \<search.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

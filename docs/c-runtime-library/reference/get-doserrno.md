@@ -43,9 +43,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_get_doserrno`**|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_get_doserrno`** | \<stdlib.h>, \<cstdlib> (C++) | \<errno.h>, \<cerrno> (C++) |
 
 **`_get_doserrno`** is a Microsoft extension. For more compatibility information, see [Compatibility](../compatibility.md).
 

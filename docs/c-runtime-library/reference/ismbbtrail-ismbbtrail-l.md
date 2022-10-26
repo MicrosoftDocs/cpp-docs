@@ -46,10 +46,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_ismbbtrail`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
-|**`_ismbbtrail_l`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_ismbbtrail`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
+| **`_ismbbtrail_l`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
 
 \* For manifest constants for the test conditions.
 

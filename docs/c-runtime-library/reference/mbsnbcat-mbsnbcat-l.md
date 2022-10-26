@@ -80,17 +80,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsncat`|[`strncat`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)|**`_mbsnbcat`**|[`wcsncat`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)|
-|`_tcsncat_l`|`_strncat_l`|**`_mbsnbcat_l`**|`_wcsncat_l`|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncat` | [`strncat`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) | **`_mbsnbcat`** | [`wcsncat`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) |
+| `_tcsncat_l` | `_strncat_l` | **`_mbsnbcat_l`** | `_wcsncat_l` |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnbcat`**|\<mbstring.h>|
-|**`_mbsnbcat_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnbcat`** | \<mbstring.h> |
+| **`_mbsnbcat_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

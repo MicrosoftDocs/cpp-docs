@@ -46,9 +46,9 @@ These functions aren't useful for [/clr (Common Language Runtime Compilation)](.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_status87`**, **`_statusfp`**, **`_statusfp2`**|\<float.h>|
+| Routine | Required header |
+|---|---|
+| **`_status87`**, **`_statusfp`**, **`_statusfp2`** | \<float.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -39,9 +39,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_get_fmode`**|\<stdlib.h>|\<fcntl.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_get_fmode`** | \<stdlib.h> | \<fcntl.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

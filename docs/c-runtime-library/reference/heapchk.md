@@ -24,8 +24,8 @@ int _heapchk( void );
 
 **`_heapchk`** returns one of the following integer manifest constants defined in Malloc.h.
 
-|Return value|Condition|
-|-|-|
+| Return value | Condition |
+|---|---|
 | `_HEAPBADBEGIN` | Initial header information is bad or can't be found. |
 | `_HEAPBADNODE` | Bad node has been found or heap is damaged. |
 | `_HEAPBADPTR` | Pointer into heap isn't valid. |
@@ -42,9 +42,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_heapchk`**|\<malloc.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_heapchk`** | \<malloc.h> | \<errno.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

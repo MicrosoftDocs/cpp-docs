@@ -72,13 +72,13 @@ and [`_RPTFW`](rpt-rptf-rptw-rptfw-macros.md), use **`_CrtDbgReportW`** to gener
 
 The following table lists the available choices for the report mode or modes and file and the resulting behavior of **`_CrtDbgReport`** and **`_CrtDbgReportW`**. These options are defined as bit flags in \<crtdbg.h>.
 
-|Report mode|Report file|**`_CrtDbgReport`**, **`_CrtDbgReportW`** behavior|
-|-----------------|-----------------|------------------------------------------------|
-|`_CRTDBG_MODE_DEBUG`|Not applicable|Writes message by using Windows [`OutputDebugString`](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API.|
-|`_CRTDBG_MODE_WNDW`|Not applicable|Calls Windows [`MessageBox`](/windows/win32/api/winuser/nf-winuser-messagebox) API to create message box to display the message along with **Abort**, **Retry**, and **Ignore** buttons. If a user chooses **Abort**, **`_CrtDbgReport`** or **`_CrtDbgReport`** immediately aborts. If a user chooses **Retry**, it returns 1. If a user chooses **Ignore**, execution continues and **`_CrtDbgReport`** and **`_CrtDbgReportW`** return 0. Choosing **Ignore** when an error condition exists often results in undefined behavior.|
-|`_CRTDBG_MODE_FILE`|`__HFILE`|Writes message to user-supplied `HANDLE`, using the Windows [`WriteFile`](/windows/win32/api/fileapi/nf-fileapi-writefile) API and doesn't verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle.|
-|`_CRTDBG_MODE_FILE`|`_CRTDBG_FILE_STDERR`|Writes message to `stderr`.|
-|`_CRTDBG_MODE_FILE`|`_CRTDBG_FILE_STDOUT`|Writes message to `stdout`.|
+| Report mode | Report file | **`_CrtDbgReport`**, **`_CrtDbgReportW`** behavior |
+|---|---|---|
+| `_CRTDBG_MODE_DEBUG` | Not applicable | Writes message by using Windows [`OutputDebugString`](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API. |
+| `_CRTDBG_MODE_WNDW` | Not applicable | Calls Windows [`MessageBox`](/windows/win32/api/winuser/nf-winuser-messagebox) API to create message box to display the message along with **Abort**, **Retry**, and **Ignore** buttons. If a user chooses **Abort**, **`_CrtDbgReport`** or **`_CrtDbgReport`** immediately aborts. If a user chooses **Retry**, it returns 1. If a user chooses **Ignore**, execution continues and **`_CrtDbgReport`** and **`_CrtDbgReportW`** return 0. Choosing **Ignore** when an error condition exists often results in undefined behavior. |
+| `_CRTDBG_MODE_FILE` | `__HFILE` | Writes message to user-supplied `HANDLE`, using the Windows [`WriteFile`](/windows/win32/api/fileapi/nf-fileapi-writefile) API and doesn't verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle. |
+| `_CRTDBG_MODE_FILE` | `_CRTDBG_FILE_STDERR` | Writes message to `stderr`. |
+| `_CRTDBG_MODE_FILE` | `_CRTDBG_FILE_STDOUT` | Writes message to `stdout`. |
 
 The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting).
 
@@ -86,10 +86,10 @@ If your application needs more flexibility than that provided by **`_CrtDbgRepor
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtDbgReport`**|\<crtdbg.h>|
-|**`_CrtDbgReportW`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtDbgReport`** | \<crtdbg.h> |
+| **`_CrtDbgReportW`** | \<crtdbg.h> |
 
 **`_CrtDbgReport`** and **`_CrtDbgReportW`** are Microsoft extensions. For more information, see [Compatibility](../compatibility.md).
 

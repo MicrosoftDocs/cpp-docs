@@ -64,16 +64,16 @@ The *`format`* argument controls the interpretation of the input fields and has 
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vstscanf_s`|**`vsscanf_s`**|**`vsscanf_s`**|**`vswscanf_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vstscanf_s` | **`vsscanf_s`** | **`vsscanf_s`** | **`vswscanf_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`vsscanf_s`**|\<stdio.h>|
-|**`vswscanf_s`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`vsscanf_s`** | \<stdio.h> |
+| **`vswscanf_s`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

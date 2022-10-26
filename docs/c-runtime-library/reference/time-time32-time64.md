@@ -39,9 +39,9 @@ The **`time`** function returns the number of seconds elapsed since midnight (00
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------|------|---------------------|
-|**`time`**, **`_time32`**, **`_time64`**|`<time.h>`|`<ctime>` or `<time.h>`|
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`time`**, **`_time32`**, **`_time64`** | `<time.h>` | `<ctime>` or `<time.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

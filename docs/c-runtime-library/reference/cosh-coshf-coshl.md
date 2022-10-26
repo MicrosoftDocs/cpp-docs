@@ -36,10 +36,10 @@ The hyperbolic cosine of *`x`*.
 
 By default, if the result is too large in a **`cosh`**, **`coshf`**, or **`coshl`** call, the function returns `HUGE_VAL` and sets `errno` to `ERANGE`.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|± QNAN, IND|none|`_DOMAIN`|
-|*`x`* ≥ 7.104760e+002|`INEXACT`+`OVERFLOW`|`OVERFLOW`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
+| *`x`* ≥ 7.104760e+002 | `INEXACT`+`OVERFLOW` | `OVERFLOW` |
 
 ## Remarks
 
@@ -51,10 +51,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------|-|
-|**`coshf`**, **`cosl`**, **`coshl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`coshf()`** macro | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`coshf`**, **`cosl`**, **`coshl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`coshf`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

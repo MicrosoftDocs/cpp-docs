@@ -10,7 +10,7 @@ ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
 
 ## Syntax
 
-```
+```C
 #include <sys/stat.h>
 ```
 
@@ -20,15 +20,15 @@ These constants are used to indicate file type in the `st_mode` field of the [`_
 
 The bit mask constants are described below:
 
-|Constant|Meaning|
-|--------------|-------------|
-|`_S_IFMT`|File type mask|
-|`_S_IFDIR`|Directory|
-|`_S_IFCHR`|Character special (indicates a device if set)|
-|`_S_IFREG`|Regular|
-|`_S_IREAD`|Read permission, owner|
-|`_S_IWRITE`|Write permission, owner|
-|`_S_IEXEC`|Execute/search permission, owner|
+| Constant | Meaning |
+|---|---|
+| `_S_IFMT` | File type mask |
+| `_S_IFDIR` | Directory |
+| `_S_IFCHR` | Character special (indicates a device if set) |
+| `_S_IFREG` | Regular |
+| `_S_IREAD` | Read permission, owner |
+| `_S_IWRITE` | Write permission, owner |
+| `_S_IEXEC` | Execute/search permission, owner |
 
 ## See also
 

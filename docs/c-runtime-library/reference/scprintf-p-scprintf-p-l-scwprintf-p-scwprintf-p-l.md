@@ -70,17 +70,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sctprintf_p`|**`_scprintf_p`**|**`_scprintf_p`**|**`_scwprintf_p`**|
-|`_sctprintf_p_l`|**`_scprintf_p_l`**|**`_scprintf_p_l`**|**`_scwprintf_p_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_sctprintf_p` | **`_scprintf_p`** | **`_scprintf_p`** | **`_scwprintf_p`** |
+| `_sctprintf_p_l` | **`_scprintf_p_l`** | **`_scprintf_p_l`** | **`_scwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_scprintf_p`**, **`_scprintf_p_l`**|\<stdio.h>|
-|**`_scwprintf_p`**, **`_scwprintf_p_l`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_scprintf_p`**, **`_scprintf_p_l`** | \<stdio.h> |
+| **`_scwprintf_p`**, **`_scwprintf_p_l`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

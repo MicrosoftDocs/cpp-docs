@@ -58,21 +58,21 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_totlower`|**`tolower`**|`_mbctolower`|**`towlower`**|
-|`_totlower_l`|**`_tolower_l`**|`_mbctolower_l`|**`_towlower_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_totlower` | **`tolower`** | `_mbctolower` | **`towlower`** |
+| `_totlower_l` | **`_tolower_l`** | `_mbctolower_l` | **`_towlower_l`** |
 
 > [!NOTE]
 > **`_tolower_l`** and **`_towlower_l`** have no locale dependence and are not meant to be called directly. They are provided for internal use by **`_totlower_l`**.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`tolower`**|\<ctype.h>|
-|**`_tolower`**|\<ctype.h>|
-|**`towlower`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`tolower`** | \<ctype.h> |
+| **`_tolower`** | \<ctype.h> |
+| **`towlower`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -40,12 +40,12 @@ Controls the error output sink by setting the value of `__error_mode`. For examp
 
 The *`mode_val`* parameter can be set to one of the following values.
 
-|Value|Description|
-|---------------|-----------------|
-|`_OUT_TO_DEFAULT`|Error sink is determined by `__app_type`.|
-|`_OUT_TO_STDERR`|Error sink is a standard error.|
-|`_OUT_TO_MSGBOX`|Error sink is a message box.|
-|`_REPORT_ERRMODE`|Report the current `__error_mode` value.|
+| Value | Description |
+|---|---|
+| `_OUT_TO_DEFAULT` | Error sink is determined by `__app_type`. |
+| `_OUT_TO_STDERR` | Error sink is a standard error. |
+| `_OUT_TO_MSGBOX` | Error sink is a message box. |
+| `_REPORT_ERRMODE` | Report the current `__error_mode` value. |
 
 If a value is passed in other than the listed ones, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_set_error_mode`** sets `errno` to `EINVAL` and returns -1.
 
@@ -53,9 +53,9 @@ When it's used with an [`assert`](assert-macro-assert-wassert.md), **`_set_error
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_set_error_mode`**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_set_error_mode`** | \<stdlib.h> |
 
 ## Example
 

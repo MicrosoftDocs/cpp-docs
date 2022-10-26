@@ -67,10 +67,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`hypot`**, **`hypotf`**, **`hypotl`**, **`_hypot`**, **`_hypotf`**, **`_hypotl`**|\<math.h>|
-|**`hypot`** macro | \<tgmath.h> |
+| Routine | Required header |
+|---|---|
+| **`hypot`**, **`hypotf`**, **`hypotl`**, **`_hypot`**, **`_hypotf`**, **`_hypotl`** | \<math.h> |
+| **`hypot`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

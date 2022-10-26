@@ -116,9 +116,9 @@ The string was successfuly converted.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wcsrtombs`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`wcsrtombs`** | \<wchar.h> |
 
 ## See also
 

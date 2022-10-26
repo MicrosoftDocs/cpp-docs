@@ -68,17 +68,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcscanf`|**`_cscanf`**|**`_cscanf`**|**`_cwscanf`**|
-|`_tcscanf_l`|**`_cscanf_l`**|**`_cscanf_l`**|**`_cwscanf_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscanf` | **`_cscanf`** | **`_cscanf`** | **`_cwscanf`** |
+| `_tcscanf_l` | **`_cscanf_l`** | **`_cscanf_l`** | **`_cwscanf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_cscanf`**, **`_cscanf_l`**|\<conio.h>|
-|**`_cwscanf`**, **`_cwscanf_l`**|\<conio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_cscanf`**, **`_cscanf_l`** | \<conio.h> |
+| **`_cwscanf`**, **`_cwscanf_l`** | \<conio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -63,9 +63,9 @@ This function validates its parameters. If *`userData`* is a null pointer, or if
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_expand_dbg`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_expand_dbg`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

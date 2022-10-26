@@ -80,10 +80,10 @@ Zero if successful; an error code on failure.
 
 ### Error conditions
 
-|*`path`*|*`sizeInWords`* / *`sizeInBytes`*|Return|Contents of *`path`*|
-|------------|------------------------------------|------------|------------------------|
-|`NULL`|any|`EINVAL`|not modified|
-|any|<= 0|`EINVAL`|not modified|
+| *`path`* | *`sizeInWords`* / *`sizeInBytes`* | Return | Contents of *`path`* |
+|---|---|---|---|
+| `NULL` | any | `EINVAL` | not modified |
+| any | <= 0 | `EINVAL` | not modified |
 
 If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`. `NULL` is allowed for the parameters *`drive`*, *`fname`*, and *`ext`*. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.
 
@@ -95,9 +95,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tmakepath_s`|**`_makepath_s`**|**`_makepath_s`**|**`_wmakepath_s`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tmakepath_s` | **`_makepath_s`** | **`_makepath_s`** | **`_wmakepath_s`** |
 
 The *`path`* argument must point to an empty buffer large enough to hold the complete path. The composite *`path`* must be no larger than the `_MAX_PATH` constant, defined in Stdlib.h.
 
@@ -109,10 +109,10 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_makepath_s`**|\<stdlib.h>|
-|**`_wmakepath_s`**|\<stdlib.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_makepath_s`** | \<stdlib.h> |
+| **`_wmakepath_s`** | \<stdlib.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

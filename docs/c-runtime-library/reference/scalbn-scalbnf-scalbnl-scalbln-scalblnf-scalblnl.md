@@ -92,10 +92,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`scalbn`**, **`scalbnf`**, **`scalbnl`**, **`scalbln`**, **`scalblnf`**, **`scalblnl`**|\<math.h>|\<cmath>|
-|**scalbn() or scalbln** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`scalbn`**, **`scalbnf`**, **`scalbnl`**, **`scalbln`**, **`scalblnf`**, **`scalblnl`** | \<math.h> | \<cmath> |
+| **`scalbn`** or **`scalbln`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

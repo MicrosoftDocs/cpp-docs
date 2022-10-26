@@ -32,9 +32,9 @@ The previous name of this function, **`__get_current_locale`** (with two leading
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_get_current_locale`**|\<locale.h>|
+| Routine | Required header |
+|---|---|
+| **`_get_current_locale`** | \<locale.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

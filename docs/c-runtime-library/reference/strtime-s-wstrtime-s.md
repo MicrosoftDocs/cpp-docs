@@ -51,12 +51,12 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 ### Error conditions
 
-|*`buffer`*|*`numberOfElements`*|Return|Contents of *`buffer`*|
-|--------------|------------------------|------------|--------------------------|
-|`NULL`|(any)|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0 < size < 9|`EINVAL`|Empty string|
-|Not `NULL` (pointing to valid buffer)|Size > 9|0|Current time formatted as specified in the remarks|
+| *`buffer`* | *`numberOfElements`* | Return | Contents of *`buffer`* |
+|---|---|---|---|
+| `NULL` | (any) | `EINVAL` | Not modified |
+| Not `NULL` (pointing to valid buffer) | 0 | `EINVAL` | Not modified |
+| Not `NULL` (pointing to valid buffer) | 0 < size < 9 | `EINVAL` | Empty string |
+| Not `NULL` (pointing to valid buffer) | Size > 9 | 0 | Current time formatted as specified in the remarks |
 
 ## Security issues
 
@@ -78,16 +78,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mapping
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tstrtime_s`|**`_strtime_s`**|**`_strtime_s`**|**`_wstrtime_s`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tstrtime_s` | **`_strtime_s`** | **`_strtime_s`** | **`_wstrtime_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strtime_s`**|\<time.h>|
-|**`_wstrtime_s`**|\<time.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_strtime_s`** | \<time.h> |
+| **`_wstrtime_s`** | \<time.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

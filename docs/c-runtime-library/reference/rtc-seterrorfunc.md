@@ -37,9 +37,9 @@ Don't use this function; instead, use `_RTC_SetErrorFuncW`. It's retained only f
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_RTC_SetErrorFunc`**|\<rtcapi.h>|
+| Routine | Required header |
+|---|---|
+| **`_RTC_SetErrorFunc`** | \<rtcapi.h> |
 
 For more information, see [Compatibility](../compatibility.md).
 

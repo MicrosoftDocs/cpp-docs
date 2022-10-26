@@ -121,13 +121,13 @@ To help you create secure buffers for conversions, the CRT includes some conveni
 
 To use one of these macros in a string conversion function, declare your conversion buffer of the appropriate character type and use the macro value for the integer type and base as the buffer dimension. This table lists the macros that are appropriate for each function for the listed bases:
 
-|Functions|radix|Macros|
-|-|-|-|
-|**`_itoa`**, **`_itow`**|16<br/>10<br/>8<br/>2|`_MAX_ITOSTR_BASE16_COUNT`<br/>`_MAX_ITOSTR_BASE10_COUNT`<br/>`_MAX_ITOSTR_BASE8_COUNT`<br/>`_MAX_ITOSTR_BASE2_COUNT`|
-|**`_ltoa`**, **`_ltow`**|16<br/>10<br/>8<br/>2|`_MAX_LTOSTR_BASE16_COUNT`<br/>`_MAX_LTOSTR_BASE10_COUNT`<br/>`_MAX_LTOSTR_BASE8_COUNT`<br/>`_MAX_LTOSTR_BASE2_COUNT`|
-|**`_ultoa`**, **`_ultow`**|16<br/>10<br/>8<br/>2|`_MAX_ULTOSTR_BASE16_COUNT`<br/>`_MAX_ULTOSTR_BASE10_COUNT`<br/>`_MAX_ULTOSTR_BASE8_COUNT`<br/>`_MAX_ULTOSTR_BASE2_COUNT`|
-|**`_i64toa`**, **`_i64tow`**|16<br/>10<br/>8<br/>2|`_MAX_I64TOSTR_BASE16_COUNT`<br/>`_MAX_I64TOSTR_BASE10_COUNT`<br/>`_MAX_I64TOSTR_BASE8_COUNT`<br/>`_MAX_I64TOSTR_BASE2_COUNT`|
-|**`_ui64toa`**, **`_ui64tow`**|16<br/>10<br/>8<br/>2|`_MAX_U64TOSTR_BASE16_COUNT`<br/>`_MAX_U64TOSTR_BASE10_COUNT`<br/>`_MAX_U64TOSTR_BASE8_COUNT`<br/>`_MAX_U64TOSTR_BASE2_COUNT`|
+| Functions | radix | Macros |
+|---|---|---|
+| **`_itoa`**, **`_itow`** | 16<br/>10<br/>8<br/>2 | `_MAX_ITOSTR_BASE16_COUNT`<br/>`_MAX_ITOSTR_BASE10_COUNT`<br/>`_MAX_ITOSTR_BASE8_COUNT`<br/>`_MAX_ITOSTR_BASE2_COUNT` |
+| **`_ltoa`**, **`_ltow`** | 16<br/>10<br/>8<br/>2 | `_MAX_LTOSTR_BASE16_COUNT`<br/>`_MAX_LTOSTR_BASE10_COUNT`<br/>`_MAX_LTOSTR_BASE8_COUNT`<br/>`_MAX_LTOSTR_BASE2_COUNT` |
+| **`_ultoa`**, **`_ultow`** | 16<br/>10<br/>8<br/>2 | `_MAX_ULTOSTR_BASE16_COUNT`<br/>`_MAX_ULTOSTR_BASE10_COUNT`<br/>`_MAX_ULTOSTR_BASE8_COUNT`<br/>`_MAX_ULTOSTR_BASE2_COUNT` |
+| **`_i64toa`**, **`_i64tow`** | 16<br/>10<br/>8<br/>2 | `_MAX_I64TOSTR_BASE16_COUNT`<br/>`_MAX_I64TOSTR_BASE10_COUNT`<br/>`_MAX_I64TOSTR_BASE8_COUNT`<br/>`_MAX_I64TOSTR_BASE2_COUNT` |
+| **`_ui64toa`**, **`_ui64tow`** | 16<br/>10<br/>8<br/>2 | `_MAX_U64TOSTR_BASE16_COUNT`<br/>`_MAX_U64TOSTR_BASE10_COUNT`<br/>`_MAX_U64TOSTR_BASE8_COUNT`<br/>`_MAX_U64TOSTR_BASE2_COUNT` |
 
 This example uses a conversion count macro to define a buffer large enough to contain an **`unsigned long long`** in base 2:
 
@@ -143,21 +143,21 @@ int main()
 
 ### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_itot`**|**`_itoa`**|**`_itoa`**|**`_itow`**|
-|**`_ltot`**|**`_ltoa`**|**`_ltoa`**|**`_ltow`**|
-|**`_ultot`**|**`_ultoa`**|**`_ultoa`**|**`_ultow`**|
-|**`_i64tot`**|**`_i64toa`**|**`_i64toa`**|**`_i64tow`**|
-|**`_ui64tot`**|**`_ui64toa`**|**`_ui64toa`**|**`_ui64tow`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_itot` | **`_itoa`** | **`_itoa`** | **`_itow`** |
+| `_ltot` | **`_ltoa`** | **`_ltoa`** | **`_ltow`** |
+| `_ultot` | **`_ultoa`** | **`_ultoa`** | **`_ultow`** |
+| `_i64tot` | **`_i64toa`** | **`_i64toa`** | **`_i64tow`** |
+| `_ui64tot` | **`_ui64toa`** | **`_ui64toa`** | **`_ui64tow`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`itoa`**, **`ltoa`**, **`ultoa`**|`<stdlib.h>`|
-|**`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, **`_ui64toa`**|`<stdlib.h>`|
-|**`_itow`**, **`_ltow`**, **`_ultow`**, **`_i64tow`**, **`_ui64tow`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`itoa`**, **`ltoa`**, **`ultoa`** | `<stdlib.h>` |
+| **`_itoa`**, **`_ltoa`**, **`_ultoa`**, **`_i64toa`**, **`_ui64toa`** | `<stdlib.h>` |
+| **`_itow`**, **`_ltow`**, **`_ultow`**, **`_i64tow`**, **`_ui64tow`** | `<stdlib.h>` or `<wchar.h>` |
 
 These functions and macros are Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

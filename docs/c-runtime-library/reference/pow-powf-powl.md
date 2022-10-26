@@ -41,11 +41,11 @@ Exponent.
 
 Returns the value of *`x`*<sup>*`y`*</sup>. No error message is printed on overflow or underflow.
 
-|Values of x and y|Return value of pow|
-|-----------------------|-------------------------|
-|*`x`* != 0.0 and *`y`* == 0.0|1|
-|*`x`* == 0.0 and *`y`* == 0.0|1|
-|*`x`* == 0.0 and *`y`* < 0|INF|
+| Values of *`x`* and *`y`* | Return value of **`pow`** |
+|---|---|
+| *`x`* != 0.0 and *`y`* == 0.0 | 1 |
+| *`x`* == 0.0 and *`y`* == 0.0 | 1 |
+| *`x`* == 0.0 and *`y`* < 0 | INF |
 
 ## Remarks
 
@@ -65,10 +65,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-|-|-|
-|**`pow`**, **`powf`**, **`powl`**|`<math.h>`|`<math.h>` or `<cmath>`|
-|**`pow`** macro | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`pow`**, **`powf`**, **`powl`** | `<math.h>` | `<math.h>` or `<cmath>` |
+| **`pow`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

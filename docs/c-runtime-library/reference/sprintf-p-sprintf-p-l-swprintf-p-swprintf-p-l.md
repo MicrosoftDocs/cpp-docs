@@ -80,17 +80,17 @@ The **`_sprintf_p`** function formats and stores a series of characters and valu
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_stprintf_p`**|**`_sprintf_p`**|**`_sprintf_p`**|**`_swprintf_p`**|
-|**`_stprintf_p_l`**|**`_sprintf_p_l`**|**`_sprintf_p_l`**|**`_swprintf_p_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_stprintf_p` | **`_sprintf_p`** | **`_sprintf_p`** | **`_swprintf_p`** |
+| `_stprintf_p_l` | **`_sprintf_p_l`** | **`_sprintf_p_l`** | **`_swprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_sprintf_p`**, **`_sprintf_p_l`**|`<stdio.h>`|
-|**`_swprintf_p`**, **`_swprintf_p_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_sprintf_p`**, **`_sprintf_p_l`** | `<stdio.h>` |
+| **`_swprintf_p`**, **`_swprintf_p_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

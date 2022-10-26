@@ -70,17 +70,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_sctprintf`|**`_scprintf`**|**`_scprintf`**|**`_scwprintf`**|
-|`_sctprintf_l`|**`_scprintf_l`**|**`_scprintf_l`**|**`_scwprintf_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_sctprintf` | **`_scprintf`** | **`_scprintf`** | **`_scwprintf`** |
+| `_sctprintf_l` | **`_scprintf_l`** | **`_scprintf_l`** | **`_scwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_scprintf`**, **`_scprintf_l`**|\<stdio.h>|
-|**`_scwprintf`**, **`_scwprintf_l`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_scprintf`**, **`_scprintf_l`** | \<stdio.h> |
+| **`_scwprintf`**, **`_scwprintf_l`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

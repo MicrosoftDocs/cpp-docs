@@ -73,10 +73,10 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcstoll`|**`strtoll`**|**`strtoll`**|**`wcstoll`**|
-|`_tcstoll_l`|**`_strtoll_l`**|**`_strtoll_l`**|**`_wcstoll_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcstoll` | **`strtoll`** | **`strtoll`** | **`wcstoll`** |
+| `_tcstoll_l` | **`_strtoll_l`** | **`_strtoll_l`** | **`_wcstoll_l`** |
 
 The locale's `LC_NUMERIC` category setting determines recognition of the radix character in *`strSource`*; for more information, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md). The functions that don't have the `_l` suffix use the current locale; **`_strtoll_l`** and **`_wcstoll_l`** are identical to the corresponding functions that don't have the suffix, except that they instead use the locale that's passed in. For more information, see [Locale](../locale.md).
 
@@ -90,10 +90,10 @@ A *`whitespace`* may consist of space and tab characters, which are ignored; *`d
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtoll`**, **`_strtoll_l`**|\<stdlib.h>|
-|**`wcstoll`**, **`_wcstoll_l`**|\<stdlib.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`strtoll`**, **`_strtoll_l`** | \<stdlib.h> |
+| **`wcstoll`**, **`_wcstoll_l`** | \<stdlib.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

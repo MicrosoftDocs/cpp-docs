@@ -43,9 +43,9 @@ The **`offsetof`** macro returns the offset in bytes of *`memberName`* from the 
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`offsetof`**|\<stddef.h>|
+| Routine | Required header |
+|---|---|
+| **`offsetof`** | \<stddef.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

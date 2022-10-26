@@ -34,8 +34,8 @@ Floating-point function argument.
 
 These floating-point primitives implement the C versions of the CRT macro [`fpclassify`](fpclassify.md) for floating-point types. The classification of the argument *`x`* is returned as one of these constants, defined in math.h:
 
-|Value|Description|
-|-----------|-----------------|
+| Value | Description |
+|---|---|
 | `FP_NAN` | A quiet, signaling, or indeterminate NaN |
 | `FP_INFINITE` | A positive or negative infinity |
 | `FP_NORMAL` | A positive or negative normalized non-zero value |
@@ -109,8 +109,8 @@ Pointer to a floating-point argument.
 
 These floating-point primitives implement the C++ versions of the CRT function [`fpclassify`](fpclassify.md) for floating-point types. The argument *`x`* is evaluated and the classification is returned as one of these constants, defined in math.h:
 
-|Value|Description|
-|-----------|-----------------|
+| Value | Description |
+|---|---|
 | `FP_NAN` | A quiet, signaling, or indeterminate NaN |
 | `FP_INFINITE` | A positive or negative infinity |
 | `FP_NORMAL` | A positive or negative normalized non-zero value |

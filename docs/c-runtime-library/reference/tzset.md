@@ -57,12 +57,12 @@ If the **`TZ`** value isn't set, **`_tzset`** attempts to use the time zone info
 
 Based on the **`TZ`** environment variable value, the following values are assigned to the global variables `_daylight`, `_timezone`, and `_tzname` when **`_tzset`** is called:
 
-|Global variable|Description|Default value|
-|---------------------|-----------------|-------------------|
-|`_daylight`|Nonzero value if a daylight-saving-time zone is specified in **`TZ`** setting; otherwise, 0.|1|
-|`_timezone`|Difference in seconds between local time and UTC.|28800 (28,800 seconds equals 8 hours)|
-|`_tzname[0]`|String value of time-zone name from **`TZ`** environmental variable; empty if **`TZ`** hasn't been set.|PST|
-|`_tzname[1]`|String value of daylight-saving-time zone; empty if daylight-saving-time zone is omitted from **`TZ`** environmental variable.|PDT|
+| Global variable | Description | Default value |
+|---|---|---|
+| `_daylight` | Nonzero value if a daylight-saving-time zone is specified in **`TZ`** setting; otherwise, 0. | 1 |
+| `_timezone` | Difference in seconds between local time and UTC. | 28800 (28,800 seconds equals 8 hours) |
+| `_tzname[0]` | String value of time-zone name from **`TZ`** environmental variable; empty if **`TZ`** hasn't been set. | PST |
+| `_tzname[1]` | String value of daylight-saving-time zone; empty if daylight-saving-time zone is omitted from **`TZ`** environmental variable. | PDT |
 
 The default values shown in the preceding table for `_daylight` and the `_tzname` array correspond to "PST8PDT." If the DST zone is omitted from the **`TZ`** environmental variable, the value of `_daylight` is 0 and the [`_ftime`](ftime-ftime32-ftime64.md), [`gmtime`](gmtime-gmtime32-gmtime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions return 0 for their DST flags.
 
@@ -70,9 +70,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_tzset`**|\<time.h>|
+| Routine | Required header |
+|---|---|
+| **`_tzset`** | \<time.h> |
 
 The **`_tzset`** function is Microsoft-specific. For more information, see [Compatibility](../compatibility.md).
 

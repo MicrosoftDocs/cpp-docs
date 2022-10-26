@@ -14,31 +14,31 @@ For lists of country and region names that are supported by various Windows oper
 
 The Microsoft C run-time library implementation also supports the following country/region strings and abbreviations:
 
-|Country/region string|Abbreviation|Equivalent locale name|
-|----------------------------|------------------|----------------------------|
-|`america`|`USA`|`en-US`|
-|`britain`|`GBR`|`en-GB`|
-|`china`|`CHN`|`zh-CN`|
-|`czech`|`CZE`|`cs-CZ`|
-|`england`|`GBR`|`en-GB`|
-|`great britain`|`GBR`|`en-GB`|
-|`holland`|`NLD`|`nl-NL`|
-|`hong-kong`|`HKG`|`zh-HK`|
-|`new-zealand`|`NZL`|`en-NZ`|
-|`nz`|`NZL`|`en-NZ`|
-|`pr china`|`CHN`|`zh-CN`|
-|`pr-china`|`CHN`|`zh-CN`|
-|`puerto-rico`|`PRI`|`es-PR`|
-|`slovak`|`SVK`|`sk-SK`|
-|`south africa`|`ZAF`|`af-ZA`|
-|`south korea`|`KOR`|`ko-KR`|
-|`south-africa`|`ZAF`|`af-ZA`|
-|`south-korea`|`KOR`|`ko-KR`|
-|`trinidad & tobago`|`TTO`|`en-TT`|
-|`uk`|`GBR`|`en-GB`|
-|`united-kingdom`|`GBR`|`en-GB`|
-|`united-states`|`USA`|`en-US`|
-|`us`|`USA`|`en-US`|
+| Country/region string | Abbreviation | Equivalent locale name |
+|---|---|---|
+| `america` | `USA` | `en-US` |
+| `britain` | `GBR` | `en-GB` |
+| `china` | `CHN` | `zh-CN` |
+| `czech` | `CZE` | `cs-CZ` |
+| `england` | `GBR` | `en-GB` |
+| `great britain` | `GBR` | `en-GB` |
+| `holland` | `NLD` | `nl-NL` |
+| `hong-kong` | `HKG` | `zh-HK` |
+| `new-zealand` | `NZL` | `en-NZ` |
+| `nz` | `NZL` | `en-NZ` |
+| `pr china` | `CHN` | `zh-CN` |
+| `pr-china` | `CHN` | `zh-CN` |
+| `puerto-rico` | `PRI` | `es-PR` |
+| `slovak` | `SVK` | `sk-SK` |
+| `south africa` | `ZAF` | `af-ZA` |
+| `south korea` | `KOR` | `ko-KR` |
+| `south-africa` | `ZAF` | `af-ZA` |
+| `south-korea` | `KOR` | `ko-KR` |
+| `trinidad & tobago` | `TTO` | `en-TT` |
+| `uk` | `GBR` | `en-GB` |
+| `united-kingdom` | `GBR` | `en-GB` |
+| `united-states` | `USA` | `en-US` |
+| `us` | `USA` | `en-US` |
 
 ## See also
 

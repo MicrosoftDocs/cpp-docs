@@ -49,10 +49,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|Required header|Optional headers|
-|--------------|---------------------|----------------------|
-|**`ftell`**|`<stdio.h>`|`<errno.h>`|
-|**`_ftelli64`**|`<stdio.h>`|`<errno.h>`|
+| Function | Required header | Optional headers |
+|---|---|---|
+| **`ftell`** | `<stdio.h>` | `<errno.h>` |
+| **`_ftelli64`** | `<stdio.h>` | `<errno.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

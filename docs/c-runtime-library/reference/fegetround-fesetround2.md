@@ -39,12 +39,12 @@ On success, **`fesetround`** returns 0. Otherwise, a non-zero value is returned.
 
 Floating-point operations can use one of several rounding modes. These modes control which direction the results of floating-point operations are rounded toward when the results are stored. Here are the names and behaviors of the floating-point rounding macros defined in \<fenv.h>:
 
-|Macro|Description|
-|-----------|-----------------|
-|`FE_DOWNWARD`|Round towards negative infinity.|
-|`FE_TONEAREST`|Round towards the nearest.|
-|`FE_TOWARDZERO`|Round towards zero.|
-|`FE_UPWARD`|Round towards positive infinity.|
+| Macro | Description |
+|---|---|
+| `FE_DOWNWARD` | Round towards negative infinity. |
+| `FE_TONEAREST` | Round towards the nearest. |
+| `FE_TOWARDZERO` | Round towards zero. |
+| `FE_UPWARD` | Round towards positive infinity. |
 
 The default behavior of `FE_TONEAREST` is to round results midway between representable values toward the nearest value with an even (0) least significant bit.
 
@@ -70,9 +70,9 @@ To use these functions, you must turn off floating-point optimizations that coul
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`fegetround`**, **`fesetround`**|\<fenv.h>|\<cfenv>|
+| Function | C header | C++ header |
+|---|---|---|
+| **`fegetround`**, **`fesetround`** | \<fenv.h> | \<cfenv> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

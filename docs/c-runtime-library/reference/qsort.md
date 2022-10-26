@@ -50,11 +50,11 @@ compare( (void *) & elem1, (void *) & elem2 );
 
 The routine compares the elements and returns one of the following values.
 
-|Compare function return value|Description|
-|-----------------------------------|-----------------|
-|< 0|**`elem1`** less than **`elem2`**|
-|0|**`elem1`** equivalent to **`elem2`**|
-|> 0|**`elem1`** greater than **`elem2`**|
+| Compare function return value | Description |
+|---|---|
+| < 0 | **`elem1`** less than **`elem2`** |
+| 0 | **`elem1`** equivalent to **`elem2`** |
+| > 0 | **`elem1`** greater than **`elem2`** |
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
@@ -64,9 +64,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`qsort`**|`<stdlib.h>` and `<search.h>`|
+| Routine | Required header |
+|---|---|
+| **`qsort`** | `<stdlib.h>` and `<search.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

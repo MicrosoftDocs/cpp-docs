@@ -67,16 +67,16 @@ You don't need to call these functions explicitly in most cases. Instead, you ca
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tfullpath_dbg`|**`_fullpath_dbg`**|**`_fullpath_dbg`**|**`_wfullpath_dbg`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tfullpath_dbg` | **`_fullpath_dbg`** | **`_fullpath_dbg`** | **`_wfullpath_dbg`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`_fullpath_dbg`**|\<crtdbg.h>|
-|**`_wfullpath_dbg`**|\<crtdbg.h>|
+| Function | Required header |
+|---|---|
+| **`_fullpath_dbg`** | \<crtdbg.h> |
+| **`_wfullpath_dbg`** | \<crtdbg.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

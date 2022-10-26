@@ -39,9 +39,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`nan`**, **`nanf`**, **`nanl`**|\<math.h>|\<cmath> or \<math.h>|
+| Function | C header | C++ header |
+|---|---|---|
+| **`nan`**, **`nanf`**, **`nanl`** | \<math.h> | \<cmath> or \<math.h> |
 
 ## See also
 

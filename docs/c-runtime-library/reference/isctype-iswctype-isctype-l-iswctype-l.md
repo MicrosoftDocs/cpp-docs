@@ -56,10 +56,10 @@ The behavior of **`_isctype`** and **`_isctype_l`** is undefined if *`c`* isn't 
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|n/a|**`_isctype`**|n/a|**`_iswctype`**|
-|n/a|**`_isctype_l`**|n/a|**`_iswctype_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| n/a | **`_isctype`** | n/a | **`_iswctype`** |
+| n/a | **`_isctype_l`** | n/a | **`_iswctype_l`** |
 
 ## Remarks
 
@@ -67,12 +67,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_isctype`**|\<ctype.h>|
-|**`iswctype`**|\<ctype.h> or \<wchar.h>|
-|**`_isctype_l`**|\<ctype.h>|
-|**`_iswctype_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_isctype`** | \<ctype.h> |
+| **`iswctype`** | \<ctype.h> or \<wchar.h> |
+| **`_isctype_l`** | \<ctype.h> |
+| **`_iswctype_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

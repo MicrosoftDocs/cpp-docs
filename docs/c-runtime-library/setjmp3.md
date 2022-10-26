@@ -16,7 +16,7 @@ Internal CRT function. A new implementation of the `setjmp` function.
 
 ## Syntax
 
-```
+```C
 int _setjmp3(
    OUT jmp_buf env,
    int count,

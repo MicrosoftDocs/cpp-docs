@@ -79,24 +79,24 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|-------------|--------------------------------------|--------------------|-----------------------|
-|`_tcsnbcnt`|**`_strncnt`**|**`_mbsnbcnt`**|**`_wcsncnt`**|
-|`_tcsnccnt`|**`_strncnt`**|**`_mbsnbcnt`**|n/a|
-|**`_wcsncnt`**|n/a|n/a|**`_mbsnbcnt`**|
-|**`_wcsncnt`**|n/a|n/a|**`_mbsnccnt`**|
-|n/a|n/a|**`_mbsnbcnt_l`**|**`_mbsnccnt_l`**|
+| Routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsnbcnt` | **`_strncnt`** | **`_mbsnbcnt`** | **`_wcsncnt`** |
+| `_tcsnccnt` | **`_strncnt`** | **`_mbsnbcnt`** | n/a |
+| **`_wcsncnt`** | n/a | n/a | **`_mbsnbcnt`** |
+| **`_wcsncnt`** | n/a | n/a | **`_mbsnccnt`** |
+| n/a | n/a | **`_mbsnbcnt_l`** | **`_mbsnccnt_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnbcnt`**|\<mbstring.h>|
-|**`_mbsnbcnt_l`**|\<mbstring.h>|
-|**`_mbsnccnt`**|\<mbstring.h>|
-|**`_mbsnccnt_l`**|\<mbstring.h>|
-|**`_strncnt`**|\<tchar.h>|
-|**`_wcsncnt`**|\<tchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnbcnt`** | \<mbstring.h> |
+| **`_mbsnbcnt_l`** | \<mbstring.h> |
+| **`_mbsnccnt`** | \<mbstring.h> |
+| **`_mbsnccnt_l`** | \<mbstring.h> |
+| **`_strncnt`** | \<tchar.h> |
+| **`_wcsncnt`** | \<tchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

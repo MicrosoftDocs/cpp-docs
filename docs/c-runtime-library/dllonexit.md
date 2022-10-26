@@ -16,11 +16,12 @@ Registers a routine to be called at exit time.
 
 ## Syntax
 
-```
-_onexit_t __dllonexit(   _onexit_t func,
+```C
+_onexit_t __dllonexit(
+   _onexit_t func,
    _PVFV **  pbegin,
    _PVFV **  pend
-   )
+   );
 ```
 
 #### Parameters
@@ -48,9 +49,9 @@ The `_PVFV` type is defined as `typedef void (__cdecl *_PVFV)(void)`.
 
 ## Requirements
 
-|Routine|Required file|
-|-------------|-------------------|
-|__dllonexit|onexit.c|
+| Routine | Required file |
+|---|---|
+| **`__dllonexit`** | `onexit.c` |
 
 ## See also
 

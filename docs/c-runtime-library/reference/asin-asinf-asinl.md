@@ -36,11 +36,11 @@ The **`asin`** function returns the arcsine (the inverse sine function) of *`x`*
 
 By default, if *`x`* is less than -1 or greater than 1, **`asin`** returns an indefinite.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|`± ∞`|`INVALID`|`_DOMAIN`|
-|`± QNAN`, `IND`|none|`_DOMAIN`|
-|`|x| > 1`|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± INF | `INVALID` | `_DOMAIN` |
+| ± QNaN, IND | none | `_DOMAIN` |
+| `|x| > 1` | `INVALID` | `_DOMAIN` |
 
 ## Remarks
 
@@ -52,10 +52,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------|-|
-|**`asin`**, **`asinf`**, **`asinl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`asin()`** macro | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`asin`**, **`asinf`**, **`asinl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`asin`** macro | `<tgmath.h>` |  |
 
 ## Example
 

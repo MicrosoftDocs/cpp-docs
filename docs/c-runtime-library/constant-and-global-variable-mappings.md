@@ -12,11 +12,11 @@ These generic-text constant, global variable, and standard-type mappings are def
 
 ### Generic-text constant and global variable mappings
 
-|Generic-text - object name|SBCS (_UNICODE, _MBCS not defined)|_MBCS defined|_UNICODE defined|
-|----------------------------------|--------------------------------------------|--------------------|-----------------------|
-|`_TEOF`|`EOF`|`EOF`|`WEOF`|
-|`_tenviron`|`_environ`|`_environ`|`_wenviron`|
-|`_tpgmptr`|`_pgmptr`|`_pgmptr`|`_wpgmptr`|
+| Generic-text - object name | SBCS (`_UNICODE`, `_MBCS` not defined) | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_TEOF` | `EOF` | `EOF` | `WEOF` |
+| `_tenviron` | `_environ` | `_environ` | `_wenviron` |
+| `_tpgmptr` | `_pgmptr` | `_pgmptr` | `_wpgmptr` |
 
 ## See also
 

@@ -96,17 +96,17 @@ In C++, using these functions is simplified by template overloads. The overloads
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_vstprintf_s`**|**`vsprintf_s`**|**`vsprintf_s`**|**`vswprintf_s`**|
-|**`_vstprintf_s_l`**|**`_vsprintf_s_l`**|**`_vsprintf_s_l`**|**`_vswprintf_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vstprintf_s` | **`vsprintf_s`** | **`vsprintf_s`** | **`vswprintf_s`** |
+| `_vstprintf_s_l` | **`_vsprintf_s_l`** | **`_vsprintf_s_l`** | **`_vswprintf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`vsprintf_s`**, **`_vsprintf_s_l`**|`<stdio.h>` and `<stdarg.h>`|`<varargs.h>*`|
-|**`vswprintf_s`**, **`_vswprintf_s_l`**|`<stdio.h>` or `<wchar.h>`, and `<stdarg.h>`|`<varargs.h>*`|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`vsprintf_s`**, **`_vsprintf_s_l`** | `<stdio.h>` and `<stdarg.h>` | `<varargs.h>*` |
+| **`vswprintf_s`**, **`_vswprintf_s_l`** | `<stdio.h>` or `<wchar.h>`, and `<stdarg.h>` | `<varargs.h>*` |
 
 \* Required for UNIX V compatibility.
 

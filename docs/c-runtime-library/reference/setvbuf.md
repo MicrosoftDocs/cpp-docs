@@ -53,8 +53,8 @@ The **`setvbuf`** function allows the program to control both buffering and buff
 
 The mode must be `_IOFBF`, `_IOLBF`, or `_IONBF`. If *`mode`* is `_IOFBF` or `_IOLBF`, then *`size`* is used as the size of the buffer. If *`mode`* is `_IONBF`, the stream is unbuffered, and both *`size`* and *`buffer`* are ignored. Values for *`mode`* and their meanings are:
 
-|*`mode`* value|Meaning|
-|-|-|
+| *`mode`* value | Meaning |
+|---|---|
 | `_IOFBF` | Full buffering; that is, *`buffer`* is used as the buffer and *`size`* is used as the size of the buffer. If *`buffer`* is `NULL`, this mode uses an automatically allocated buffer that's *`size`* bytes long. |
 | `_IOLBF` | For some systems, this mode provides line buffering. However, for Win32, the behavior is the same as `_IOFBF` - Full Buffering. |
 | `_IONBF` | No buffer is used, regardless of *`buffer`* or *`size`*. |
@@ -63,9 +63,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`setvbuf`**|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`setvbuf`** | \<stdio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

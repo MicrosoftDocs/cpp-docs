@@ -36,11 +36,11 @@ The **`acos`** function returns the arccosine of *`x`* in the range 0 to π radi
 
 By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an indefinite.
 
-|Input|`SEH` exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|`± ∞`|`INVALID`|`_DOMAIN`|
-|`± QNAN, IND`|none|`_DOMAIN`|
-|`|x| > 1`|`INVALID`|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± INF | `INVALID` | `_DOMAIN` |
+| ± QNaN, IND | none | `_DOMAIN` |
+| `|x| > 1` | `INVALID` | `_DOMAIN` |
 
 ## Remarks
 
@@ -52,10 +52,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`acos`**, **`acosf`**, **`acosl`**|`<math.h>`|`<errno.h>`|
-|**`acos()`** macro | `<tgmath.h>` ||
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`acos`**, **`acosf`**, **`acosl`** | `<math.h>` | `<errno.h>` |
+| **`acos`** macro | `<tgmath.h>` |  |
 
 ## Example
 

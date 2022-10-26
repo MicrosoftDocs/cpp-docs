@@ -16,7 +16,7 @@ These global variables contain information used by the character classification 
 
 ## Syntax
 
-```
+```C
 extern const unsigned short *_pctype;
 extern const wctype_t *_pwctype;
 extern const unsigned short _wctype[];

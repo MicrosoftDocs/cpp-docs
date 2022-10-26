@@ -58,16 +58,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_fgetts`**|**`fgets`**|**`fgets`**|**`fgetws`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_fgetts`** | **`fgets`** | **`fgets`** | **`fgetws`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fgets`**|`<stdio.h>`|
-|**`fgetws`**|`<stdio.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`fgets`** | `<stdio.h>` |
+| **`fgetws`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

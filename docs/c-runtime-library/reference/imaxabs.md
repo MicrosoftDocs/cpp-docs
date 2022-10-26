@@ -36,9 +36,9 @@ The **`imaxabs`** function returns the absolute value of the argument. There's n
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`imaxabs`**|\<inttypes.h>|
+| Routine | Required header |
+|---|---|
+| **`imaxabs`** | \<inttypes.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

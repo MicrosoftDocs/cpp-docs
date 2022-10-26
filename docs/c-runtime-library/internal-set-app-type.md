@@ -22,21 +22,21 @@ void __set_app_type (
    )
 ```
 
-#### Parameters
+### Parameters
 
 *`at`*\
 A value that indicates the application type. The possible values are:
 
-|Value|Description|
-|-----------|-----------------|
-|_UNKNOWN_APP|Unknown application type.|
-|_CONSOLE_APP|Console (command-line) application.|
-|_GUI_APP|GUI (Windows) application.|
+| Value | Description |
+|---|---|
+| `_UNKNOWN_APP` | Unknown application type. |
+| `_CONSOLE_APP` | Console (command-line) application. |
+| `_GUI_APP` | GUI (Windows) application. |
 
 ## Remarks
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__set_app_type|internal.h|
+| Routine | Required header |
+|---|---|
+| **`__set_app_type`** | `internal.h` |

@@ -44,9 +44,9 @@ Floating-point value
 
 The **`cbrt`** functions return the cube-root of *`x`*.
 
-|Input|SEH Exception|`_matherr` Exception|
-|-----------|-------------------|--------------------------|
-|± ∞, QNAN, IND|none|none|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± INF, QNaN, IND | none | none |
 
 ## Remarks
 
@@ -58,10 +58,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**`cbrt`**, **`cbrtf`**, **`cbrtl`**|\<math.h>|\<cmath>|
-|**`cbrt`** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`cbrt`**, **`cbrtf`**, **`cbrtl`** | \<math.h> | \<cmath> |
+| **`cbrt`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

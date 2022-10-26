@@ -103,17 +103,17 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_stprintf`**|**`sprintf`**|**`sprintf`**|**`_swprintf`**|
-|**`_stprintf_l`**|**`_sprintf_l`**|**`_sprintf_l`**|**`__swprintf_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_stprintf`** | **`sprintf`** | **`sprintf`** | **`_swprintf`** |
+| **`_stprintf_l`** | **`_sprintf_l`** | **`_sprintf_l`** | **`__swprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`sprintf`**, **`_sprintf_l`**|`<stdio.h>`|
-|**`swprintf`**, **`_swprintf_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`sprintf`**, **`_sprintf_l`** | `<stdio.h>` |
+| **`swprintf`**, **`_swprintf_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

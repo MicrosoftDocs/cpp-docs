@@ -60,9 +60,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tsplitpath`**|**`_splitpath`**|**`_splitpath`**|**`_wsplitpath`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tsplitpath` | **`_splitpath`** | **`_splitpath`** | **`_wsplitpath`** |
 
 Each component of the full path is stored in a separate buffer; the manifest constants `_MAX_DRIVE`, `_MAX_DIR`, `_MAX_FNAME`, and `_MAX_EXT` (defined in `STDLIB.H`) specify the maximum size for each file component. File components that are larger than the corresponding manifest constants cause heap corruption.
 
@@ -70,12 +70,12 @@ Each buffer must be as large as its corresponding manifest constant to avoid pot
 
 The following table lists the values of the manifest constants.
 
-|Name|Value|
-|----------|-----------|
-|`_MAX_DRIVE`|3|
-|`_MAX_DIR`|256|
-|`_MAX_FNAME`|256|
-|`_MAX_EXT`|256|
+| Name | Value |
+|---|---|
+| `_MAX_DRIVE` | 3 |
+| `_MAX_DIR` | 256 |
+| `_MAX_FNAME` | 256 |
+| `_MAX_EXT` | 256 |
 
 If the full path doesn't contain a component (for example, a filename), **`_splitpath`** assigns empty strings to the corresponding buffers.
 
@@ -85,10 +85,10 @@ If *`path`* is `NULL`, the invalid parameter handler is invoked, as described in
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_splitpath`**|`<stdlib.h>`|
-|**`_wsplitpath`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_splitpath`** | `<stdlib.h>` |
+| **`_wsplitpath`** | `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

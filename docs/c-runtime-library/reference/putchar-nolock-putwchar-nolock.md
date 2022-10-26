@@ -40,16 +40,16 @@ See **putchar, putwchar**.
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_puttchar_nolock`|**`_putchar_nolock`**|**`_putchar_nolock`**|**`_putwchar_nolock`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_puttchar_nolock` | **`_putchar_nolock`** | **`_putchar_nolock`** | **`_putwchar_nolock`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_putchar_nolock`**|\<stdio.h>|
-|**`_putwchar_nolock`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_putchar_nolock`** | \<stdio.h> |
+| **`_putwchar_nolock`** | \<stdio.h> or \<wchar.h> |
 
 The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 

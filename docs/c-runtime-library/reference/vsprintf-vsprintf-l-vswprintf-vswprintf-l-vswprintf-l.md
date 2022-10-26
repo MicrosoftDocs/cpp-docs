@@ -113,17 +113,17 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_vstprintf`**|**`vsprintf`**|**`vsprintf`**|**`vswprintf`**|
-|**`_vstprintf_l`**|**`_vsprintf_l`**|**`_vsprintf_l`**|**`_vswprintf_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vstprintf` | **`vsprintf`** | **`vsprintf`** | **`vswprintf`** |
+| `_vstprintf_l` | **`_vsprintf_l`** | **`_vsprintf_l`** | **`_vswprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`vsprintf`**, **`_vsprintf_l`**|`<stdio.h>` and `<stdarg.h>`|`<varargs.h>`*|
-|**`vswprintf`**, **`_vswprintf_l`**|`<stdio.h>` or `<wchar.h>`, and `<stdarg.h>`|`<varargs.h>`*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`vsprintf`**, **`_vsprintf_l`** | `<stdio.h>` and `<stdarg.h>` | `<varargs.h>`* |
+| **`vswprintf`**, **`_vswprintf_l`** | `<stdio.h>` or `<wchar.h>`, and `<stdarg.h>` | `<varargs.h>`* |
 
 \* Required for UNIX V compatibility.
 

@@ -58,15 +58,15 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|not applicable|not applicable|**`mbrlen`**|not applicable|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| not applicable | not applicable | **`mbrlen`** | not applicable |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`mbrlen`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`mbrlen`** | \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

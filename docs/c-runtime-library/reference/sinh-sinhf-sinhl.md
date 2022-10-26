@@ -34,10 +34,10 @@ Angle in radians.
 
 The **`sinh`** functions return the hyperbolic sine of *`x`*. By default, if the result is too large, **`sinh`** sets `errno` to `ERANGE` and returns ±`HUGE_VAL`.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|± `QNAN`,`IND`|None|`_DOMAIN`|
-|`|x| ≥ 7.104760e+002`|`OVERFLOW+INEXACT`|`OVERFLOW`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | None | `_DOMAIN` |
+| `|x| ≥ 7.104760e+002` | `OVERFLOW`+`INEXACT` | `OVERFLOW` |
 
 For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -51,10 +51,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-|-|-|
-|**`sinh`**, **`sinhf`**, **`sinhl`**|`<math.h>`|`<cmath>` or `<math.h>`|
-|**`sinh()`** macro | `<tgmath.h>` ||
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`sinh`**, **`sinhf`**, **`sinhl`** | `<math.h>` | `<cmath>` or `<math.h>` |
+| **`sinh`** macro | `<tgmath.h>` |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

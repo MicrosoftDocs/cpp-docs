@@ -58,16 +58,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tsystem`**|**`system`**|**`system`**|**`_wsystem`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tsystem`** | **`system`** | **`system`** | **`_wsystem`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`system`**|`<process.h>` or `<stdlib.h>`|
-|**`_wsystem`**|`<process.h>` or `<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`system`** | `<process.h>` or `<stdlib.h>` |
+| **`_wsystem`** | `<process.h>` or `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

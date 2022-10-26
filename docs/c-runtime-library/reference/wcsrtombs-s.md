@@ -59,11 +59,11 @@ A pointer to an `mbstate_t` conversion state object.
 
 Zero if successful, an error code on failure.
 
-|Error condition|Return value and `errno`|
-|---------------------|------------------------------|
-|*`mbstr`* is `NULL` and *`sizeInBytes`* > 0|`EINVAL`|
-|*`wcstr`* is `NULL`|`EINVAL`|
-|The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; see Remarks below)|`ERANGE`|
+| Error condition | Return value and `errno` |
+|---|---|
+| *`mbstr`* is `NULL` and *`sizeInBytes`* > 0 | `EINVAL` |
+| *`wcstr`* is `NULL` | `EINVAL` |
+| The destination buffer is too small to contain the converted string (unless *`count`* is `_TRUNCATE`; see Remarks below) | `ERANGE` |
 
 If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
 
@@ -149,9 +149,9 @@ The string was successfully converted.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wcsrtombs_s`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`wcsrtombs_s`** | \<wchar.h> |
 
 ## See also
 

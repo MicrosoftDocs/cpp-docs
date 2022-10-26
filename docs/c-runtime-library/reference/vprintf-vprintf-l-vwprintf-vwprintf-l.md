@@ -69,17 +69,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vtprintf`|**`vprintf`**|**`vprintf`**|**`vwprintf`**|
-|`_vtprintf_l`|**`_vprintf_l`**|**`_vprintf_l`**|**`_vwprintf_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vtprintf` | **`vprintf`** | **`vprintf`** | **`vwprintf`** |
+| `_vtprintf_l` | **`_vprintf_l`** | **`_vprintf_l`** | **`_vwprintf_l`** |
 
 ## Requirements
 
-|Routine|Required header|Optional headers|
-|-------------|---------------------|----------------------|
-|**`vprintf`**, **`_vprintf_l`**|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|
-|**`vwprintf`**, **`_vwprintf_l`**|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|
+| Routine | Required header | Optional headers |
+|---|---|---|
+| **`vprintf`**, **`_vprintf_l`** | \<stdio.h> and \<stdarg.h> | \<varargs.h>* |
+| **`vwprintf`**, **`_vwprintf_l`** | \<stdio.h> or \<wchar.h>, and \<stdarg.h> | \<varargs.h>* |
 
 \* Required for UNIX V compatibility.
 

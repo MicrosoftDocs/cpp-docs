@@ -53,9 +53,9 @@ The behavior of **`isxdigit`** and **`_isxdigit_l`** is undefined if *`c`* isn't
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_istxdigit`|**`isxdigit`**|**`isxdigit`**|**`iswxdigit`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istxdigit` | **`isxdigit`** | **`isxdigit`** | **`iswxdigit`** |
 
 ## Remarks
 
@@ -63,12 +63,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`isxdigit`**|\<ctype.h>|
-|**`iswxdigit`**|\<ctype.h> or \<wchar.h>|
-|**`_isxdigit_l`**|\<ctype.h>|
-|**`_iswxdigit_l`**|\<ctype.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`isxdigit`** | \<ctype.h> |
+| **`iswxdigit`** | \<ctype.h> or \<wchar.h> |
+| **`_isxdigit_l`** | \<ctype.h> |
+| **`_iswxdigit_l`** | \<ctype.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

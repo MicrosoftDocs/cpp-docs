@@ -59,9 +59,9 @@ The floating-point value to round.
 
 The **`lround`** and **`llround`** functions return the nearest **`long`** or **`long long`** integer to *`x`*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
 
-|Input|SEH Exception|`Matherr` Exception|
-|-----------|-------------------|-----------------------|
-|± `QNAN`, `IND`|none|`_DOMAIN`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | none | `_DOMAIN` |
 
 ## Remarks
 
@@ -73,10 +73,10 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`lround`**, **`lroundf`**, **`lroundl`**, **`llround`**, **`llroundf`**, **`llroundl`**|\<math.h>|
-|**`lround`** macro | \<tgmath.h> |
+| Routine | Required header |
+|---|---|
+| **`lround`**, **`lroundf`**, **`lroundl`**, **`llround`**, **`llroundf`**, **`llroundl`** | \<math.h> |
+| **`lround`** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

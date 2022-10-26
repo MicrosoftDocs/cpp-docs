@@ -74,9 +74,9 @@ The **`mbsrtowcs`** function is multithread safe as long as no function in the c
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`mbsrtowcs`**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`mbsrtowcs`** | \<wchar.h> |
 
 ## See also
 

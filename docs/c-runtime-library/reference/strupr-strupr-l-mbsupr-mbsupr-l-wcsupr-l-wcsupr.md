@@ -96,18 +96,18 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsupr`|**`_strupr`**|**`_mbsupr`**|**`_wcsupr`**|
-|`_tcsupr_l`|**`_strupr_l`**|**`_mbsupr_l`**|**`_wcsupr_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsupr` | **`_strupr`** | **`_mbsupr`** | **`_wcsupr`** |
+| `_tcsupr_l` | **`_strupr_l`** | **`_mbsupr_l`** | **`_wcsupr_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_strupr`**, **`_strupr_l`**|\<string.h>|
-|**`_wcsupr`**, **`_wcsupr_l`**|\<string.h> or \<wchar.h>|
-|**`_mbsupr`**, **`_mbsupr_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_strupr`**, **`_strupr_l`** | \<string.h> |
+| **`_wcsupr`**, **`_wcsupr_l`** | \<string.h> or \<wchar.h> |
+| **`_mbsupr`**, **`_mbsupr_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

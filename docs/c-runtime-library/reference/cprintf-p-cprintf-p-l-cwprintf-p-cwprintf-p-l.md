@@ -72,17 +72,17 @@ Also, like `_cprintf_s` and `_cwprintf_s`, they validate the input pointer and t
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcprintf_p`|**`_cprintf_p`**|**`_cprintf_p`**|**`_cwprintf_p`**|
-|`_tcprintf_p_l`|**`_cprintf_p_l`**|**`_cprintf_p_l`**|**`_cwprintf_p_l`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcprintf_p` | **`_cprintf_p`** | **`_cprintf_p`** | **`_cwprintf_p`** |
+| `_tcprintf_p_l` | **`_cprintf_p_l`** | **`_cprintf_p_l`** | **`_cwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_cprintf_p`**, **`_cprintf_p_l`**|\<conio.h>|
-|**`_cwprintf_p`**, **`_cwprintf_p_l`**|\<conio.h>|
+| Routine | Required header |
+|---|---|
+| **`_cprintf_p`**, **`_cprintf_p_l`** | \<conio.h> |
+| **`_cwprintf_p`**, **`_cwprintf_p_l`** | \<conio.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -64,12 +64,12 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbcjistojms`**|\<mbstring.h>|
-|**`_mbcjistojms_l`**|\<mbstring.h>|
-|**`_mbcjmstojis`**|\<mbstring.h>|
-|**`_mbcjmstojis_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbcjistojms`** | \<mbstring.h> |
+| **`_mbcjistojms_l`** | \<mbstring.h> |
+| **`_mbcjmstojis`** | \<mbstring.h> |
+| **`_mbcjmstojis_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

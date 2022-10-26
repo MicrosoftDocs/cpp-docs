@@ -50,9 +50,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tmktemp`|**`_mktemp`**|**`_mktemp`**|**`_wmktemp`**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tmktemp` | **`_mktemp`** | **`_mktemp`** | **`_wmktemp`** |
 
 The *`nameTemplate`* argument has the form *`baseXXXXXX`*, where *`base`* is the part of the new file name that you supply and each X is a placeholder for a character supplied by **`_mktemp`**. Each placeholder character in *`nameTemplate`* must be an uppercase X. **`_mktemp`** preserves *`base`* and replaces the first trailing X with an alphabetic character. **`_mktemp`** replaces the trailing X characters with a five-digit value. This value is a unique number that identifies the calling process, or in multithreaded programs, the calling thread.
 
@@ -80,10 +80,10 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mktemp`**|\<io.h>|
-|**`_wmktemp`**|\<io.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_mktemp`** | \<io.h> |
+| **`_wmktemp`** | \<io.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

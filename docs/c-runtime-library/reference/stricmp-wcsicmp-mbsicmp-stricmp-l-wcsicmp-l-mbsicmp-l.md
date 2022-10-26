@@ -61,11 +61,11 @@ Locale to use.
 
 The return value indicates the relation of *`string1`* to *`string2`* as follows.
 
-|Return value|Description|
-|------------------|-----------------|
-|< 0|*`string1`* less than *`string2`*|
-|0|*`string1`* identical to *`string2`*|
-|> 0|*`string1`* greater than *`string2`*|
+| Return value | Description |
+|---|---|
+| < 0 | *`string1`* less than *`string2`* |
+| 0 | *`string1`* identical to *`string2`* |
+| > 0 | *`string1`* greater than *`string2`* |
 
 On an error, **`_mbsicmp`** returns `_NLSCMPERROR`, which is defined in `<string.h>` and `<mbstring.h>`.
 
@@ -112,17 +112,17 @@ All of these functions validate their parameters. If either *`string1`* or *`str
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsicmp`**|**`_stricmp`**|**`_mbsicmp`**|**`_wcsicmp`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsicmp` | **`_stricmp`** | **`_mbsicmp`** | **`_wcsicmp`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_stricmp`**, **`_stricmp_l`**|`<string.h>`|
-|**`_wcsicmp`**, **`_wcsicmp_l`**|`<string.h>` or `<wchar.h>`|
-|**`_mbsicmp`**, **`_mbsicmp_l`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`_stricmp`**, **`_stricmp_l`** | `<string.h>` |
+| **`_wcsicmp`**, **`_wcsicmp_l`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsicmp`**, **`_mbsicmp_l`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

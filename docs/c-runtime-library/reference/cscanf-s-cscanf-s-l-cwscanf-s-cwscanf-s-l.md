@@ -70,17 +70,17 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tcscanf_s`|**`_cscanf_s`**|**`_cscanf_s`**|**`_cwscanf_s`**|
-|`_tcscanf_s_l`|**`_cscanf_s_l`**|**`_cscanf_s_l`**|**`_cwscanf_s_l`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscanf_s` | **`_cscanf_s`** | **`_cscanf_s`** | **`_cwscanf_s`** |
+| `_tcscanf_s_l` | **`_cscanf_s_l`** | **`_cscanf_s_l`** | **`_cwscanf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_cscanf_s`**, **`_cscanf_s_l`**|\<conio.h>|
-|**`_cwscanf_s`**, **`_cwscanf_s_l`**|\<conio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_cscanf_s`**, **`_cscanf_s_l`** | \<conio.h> |
+| **`_cwscanf_s`**, **`_cwscanf_s_l`** | \<conio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

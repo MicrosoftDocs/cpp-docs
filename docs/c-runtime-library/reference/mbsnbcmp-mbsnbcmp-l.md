@@ -48,11 +48,11 @@ The locale to use.
 
 The return value indicates the ordinal relationship between the substrings of *`string1`* and *`string2`*.
 
-|Return value|Description|
-|------------------|-----------------|
-|< 0|*`string1`* substring is less than *`string2`* substring.|
-|0|*`string1`* substring is identical to *`string2`* substring.|
-|> 0|*`string1`* substring is greater than *`string2`* substring.|
+| Return value | Description |
+|---|---|
+| < 0 | *`string1`* substring is less than *`string2`* substring. |
+| 0 | *`string1`* substring is identical to *`string2`* substring. |
+| > 0 | *`string1`* substring is greater than *`string2`* substring. |
 
 On a parameter validation error, **`_mbsnbcmp`** and **`_mbsnbcmp_l`** return `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
 
@@ -70,17 +70,17 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and  _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|---------------------------------------|--------------------|-----------------------|
-|`_tcsncmp`|[`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**`_mbsnbcmp`**|[`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
-|`_tcsncmp_l`|[`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**`_mbsnbcml`**|[`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
+| Tchar.h routine | `_UNICODE` and  `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncmp` | [`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) | **`_mbsnbcmp`** | [`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) |
+| `_tcsncmp_l` | [`strncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) | **`_mbsnbcml`** | [`wcsncmp`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_mbsnbcmp`**|\<mbstring.h>|
-|**`_mbsnbcmp_l`**|\<mbstring.h>|
+| Routine | Required header |
+|---|---|
+| **`_mbsnbcmp`** | \<mbstring.h> |
+| **`_mbsnbcmp_l`** | \<mbstring.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

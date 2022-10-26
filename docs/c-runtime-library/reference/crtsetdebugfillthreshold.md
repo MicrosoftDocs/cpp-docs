@@ -87,9 +87,9 @@ Here's a list of the affected functions:
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtSetDebugFillThreshold`**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtSetDebugFillThreshold`** | \<crtdbg.h> |
 
 This function is Microsoft-specific. For more compatibility information, see [Compatibility](../compatibility.md).
 

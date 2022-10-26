@@ -15,7 +15,7 @@ The `_environ` variable is a pointer to an array of pointers to the multibyte-ch
 
 ## Syntax
 
-```
+```C
 extern char **_environ;
 ```
 
@@ -29,7 +29,7 @@ In a program that uses the `main` function, `_environ` is initialized at program
 
 The `_wenviron` variable, declared in Stdlib.h as:
 
-```
+```C
 extern wchar_t **_wenviron;
 ```
 
@@ -48,7 +48,7 @@ Polling `_environ` in a Unicode context is meaningless when [/MD](../build/refer
 
 The following pseudo-code illustrates how this creation can happen.
 
-```
+```C
 int i, j;
 i = _wputenv( "env_var_x=string1" );  // results in the implicit call:
                                       // putenv ("env_var_z=string1")

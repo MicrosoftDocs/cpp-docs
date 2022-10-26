@@ -12,7 +12,7 @@ The `_fmode` variable sets the default file-translation mode for text or binary 
 
 ## Syntax
 
-```
+```C
 extern int _fmode;
 ```
 

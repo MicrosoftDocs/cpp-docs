@@ -52,16 +52,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|Tchar.h routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|`_istlead`|Always returns false|**`_ismbblead`**|Always returns false|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_istlead` | Always returns false | **`_ismbblead`** | Always returns false |
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**`_ismbblead`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
-|**`_ismbblead_l`**|\<mbctype.h> or \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_ismbblead`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
+| **`_ismbblead_l`** | \<mbctype.h> or \<mbstring.h> | \<ctype.h>,* \<limits.h>, \<stdlib.h> |
 
 \* For manifest constants for the test conditions.
 

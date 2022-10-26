@@ -59,16 +59,16 @@ The **`vsscanf`** function reads data from *`buffer`* into the locations that ar
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_vstscanf`|**`vsscanf`**|**`vsscanf`**|**`vswscanf`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vstscanf` | **`vsscanf`** | **`vsscanf`** | **`vswscanf`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`vsscanf`**|\<stdio.h>|
-|**`vswscanf`**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`vsscanf`** | \<stdio.h> |
+| **`vswscanf`** | \<stdio.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -92,17 +92,17 @@ Zero if successful; an error code on failure.
 
 ### Error conditions
 
-|Condition|Return Value|
-|---------------|------------------|
-|*`path`* is `NULL`|`EINVAL`|
-|*`drive`* is `NULL`, *`driveNumberOfElements`* is non-zero|`EINVAL`|
-|*`drive`* is non-`NULL`, *`driveNumberOfElements`* is zero|`EINVAL`|
-|*`dir`* is `NULL`, *`dirNumberOfElements`* is non-zero|`EINVAL`|
-|*`dir`* is non-`NULL`, *`dirNumberOfElements`* is zero|`EINVAL`|
-|*`fname`* is `NULL`, *`nameNumberOfElements`* is non-zero|`EINVAL`|
-|*`fname`* is non-`NULL`, *`nameNumberOfElements`* is zero|`EINVAL`|
-|*`ext`* is `NULL`, *`extNumberOfElements`* is non-zero|`EINVAL`|
-|*`ext`* is non-`NULL`, *`extNumberOfElements`* is zero|`EINVAL`|
+| Condition | Return value |
+|---|---|
+| *`path`* is `NULL` | `EINVAL` |
+| *`drive`* is `NULL`, *`driveNumberOfElements`* is non-zero | `EINVAL` |
+| *`drive`* is non-`NULL`, *`driveNumberOfElements`* is zero | `EINVAL` |
+| *`dir`* is `NULL`, *`dirNumberOfElements`* is non-zero | `EINVAL` |
+| *`dir`* is non-`NULL`, *`dirNumberOfElements`* is zero | `EINVAL` |
+| *`fname`* is `NULL`, *`nameNumberOfElements`* is non-zero | `EINVAL` |
+| *`fname`* is non-`NULL`, *`nameNumberOfElements`* is zero | `EINVAL` |
+| *`ext`* is `NULL`, *`extNumberOfElements`* is non-zero | `EINVAL` |
+| *`ext`* is non-`NULL`, *`extNumberOfElements`* is zero | `EINVAL` |
 
 If any of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md) . If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
@@ -116,20 +116,20 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tsplitpath_s`**|**`_splitpath_s`**|**`_splitpath_s`**|**`_wsplitpath_s`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tsplitpath_s` | **`_splitpath_s`** | **`_splitpath_s`** | **`_wsplitpath_s`** |
 
 Each component of the full path is stored in a separate buffer; the manifest constants `_MAX_DRIVE`, `_MAX_DIR`, `_MAX_FNAME`, and `_MAX_EXT` (defined in `STDLIB.H`) specify the maximum allowable size for each file component. File components larger than the corresponding manifest constants cause heap corruption.
 
 The following table lists the values of the manifest constants.
 
-|Name|Value|
-|----------|-----------|
-|`_MAX_DRIVE`|3|
-|`_MAX_DIR`|256|
-|`_MAX_FNAME`|256|
-|`_MAX_EXT`|256|
+| Name | Value |
+|---|---|
+| `_MAX_DRIVE` | 3 |
+| `_MAX_DIR` | 256 |
+| `_MAX_FNAME` | 256 |
+| `_MAX_EXT` | 256 |
 
 If the full path doesn't contain a component (for example, a filename), **`_splitpath_s`** assigns an empty string to the corresponding buffer.
 
@@ -139,10 +139,10 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_splitpath_s`**|`<stdlib.h>`|
-|**`_wsplitpath_s`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_splitpath_s`** | `<stdlib.h>` |
+| **`_wsplitpath_s`** | `<stdlib.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

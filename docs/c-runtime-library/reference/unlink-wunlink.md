@@ -44,16 +44,16 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-|TCHAR.H routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tunlink`|**`_unlink`**|**`_unlink`**|**`_wunlink`**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tunlink` | **`_unlink`** | **`_unlink`** | **`_wunlink`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_unlink`**|\<io.h> and \<stdio.h>|
-|**`_wunlink`**|\<io.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_unlink`** | \<io.h> and \<stdio.h> |
+| **`_wunlink`** | \<io.h> or \<wchar.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

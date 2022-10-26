@@ -72,10 +72,10 @@ In C, these functions take a **`const`** pointer for the first argument. In C++,
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`memchr`|\<memory.h> or \<string.h>|
-|`wmemchr`|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| `memchr` | \<memory.h> or \<string.h> |
+| `wmemchr` | \<wchar.h> |
 
 For more information about compatibility, see [Compatibility](../compatibility.md).
 

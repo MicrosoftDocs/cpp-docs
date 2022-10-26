@@ -33,6 +33,6 @@ The type of the *`pf`* parameter is declared as `typedef int (__cdecl * _HANDLE_
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__setusermatherr|matherr.c|
+| Routine | Required header |
+|---|---|
+| **`__setusermatherr`** | `matherr.c` |
