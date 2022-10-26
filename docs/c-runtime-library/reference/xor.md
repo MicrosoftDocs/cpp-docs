@@ -11,18 +11,17 @@ ms.assetid: 0fe9554b-d87b-4487-92ed-366c6dc21df2
 ---
 # `xor`
 
-An alternative to the ^ operator.
+An alternative to the **`^`** operator.
 
 ## Syntax
 
 ```C
-
 #define xor ^
 ```
 
 ## Remarks
 
-The macro yields the operator ^.
+The macro yields the operator **`^`**.
 
 ## Example
 
