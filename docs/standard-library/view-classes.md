@@ -96,9 +96,9 @@ v | rev3(v): 2 1 0
 
 The following view classes are defined in the `std::ranges` namespace.
 
-| **Range adaptor** | **Description** |
+| **View ** | **Description** |
 |--|--|
-| [`basic_istream_view`](basic-istream-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. |
+| [`basic_istream_view`](basic-istream-view-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. |
 | [`common_view`](common-view-class.md)<sup>C++20</sup> | Adapts a view that has different iterator/sentinel types into a view with the same iterator/sentinel types. |
 | [`drop_view`](drop-view-class.md)<sup>C++20</sup> | Created from another view, skipping the first `count` elements. |
 | [`drop_while_view`](drop-while-view-class.md)<sup>C++20</sup> | Created from another view, skipping leading elements as long as a predicate holds. |
