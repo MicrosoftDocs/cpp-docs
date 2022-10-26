@@ -11,7 +11,7 @@ helpviewer_keywords: ["vsnwprintf_s function", "_vsntprintf_s function", "_vsntp
 ---
 # `vsnprintf_s`, `_vsnprintf_s`, `_vsnprintf_s_l`, `_vsnwprintf_s`, `_vsnwprintf_s_l`
 
-Write formatted output using a pointer to a list of arguments. These are versions of [`vsnprintf`, `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf`, `_vsnwprintf_l`](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Write formatted output using a pointer to a list of arguments. These functions are versions of [`vsnprintf`, `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf`, `_vsnwprintf_l`](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 

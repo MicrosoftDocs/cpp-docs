@@ -51,7 +51,7 @@ For more information, see [Format specification syntax](../format-specification-
 
 ## Return value
 
-**`_vscprintf`** returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **`_vscwprintf`** performs the same function for wide characters.
+**`_vscprintf`** returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned doesn't include the terminating null character. **`_vscwprintf`** performs the same function for wide characters.
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

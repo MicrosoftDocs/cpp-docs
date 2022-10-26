@@ -11,7 +11,7 @@ ms.assetid: d1df595b-11bc-4682-9441-a92616301e3b
 ---
 # `vscanf`, `vwscanf`
 
-Reads formatted data from the standard input stream. More secure versions of these function are available; see [`vscanf_s`, `vwscanf_s`](vscanf-s-vwscanf-s.md).
+Reads formatted data from the standard input stream. More secure versions of these functions are available; see [`vscanf_s`, `vwscanf_s`](vscanf-s-vwscanf-s.md).
 
 ## Syntax
 
@@ -36,7 +36,7 @@ Variable argument list.
 
 ## Return value
 
-Returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned.
+Returns the number of fields that are successfully converted and assigned; the return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned.
 
 If *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
 
@@ -66,7 +66,7 @@ For more information, see [Format specification fields: `scanf` and `wscanf` fun
 |**`vscanf`**|\<stdio.h>|
 |**`vwscanf`**|\<stdio.h> or \<wchar.h>|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
+The console isn't supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
