@@ -7,9 +7,9 @@ helpviewer_keywords: ["RANGES/VIEWS/std", "VIEWS/std"]
 ---
 # View classes
 
-A *view* is a lightweight range that refers to elements that it doesn't own, except for [`owning_view`](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it whether by transforming or filtering it. For example, [`std::views::filter`](filter-view-class.md) is a view that uses the criteria you specify to select elements from another range.
+A *view* is a lightweight range that refers to elements that it doesn't own, (except for [`owning_view`](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it, whether by transforming or filtering it. For example, [`std::views::filter`](filter-view-class.md) is a view that uses the criteria you specify to select elements from another range.
 
-When you access the elements in a view, it's done 'lazily' so that work is only done when you get an element. This also makes it possible to combine, or 'compose' views without a performance penalty. For example, you could create a view that provides only the even elements from a range, and then transform them by squaring them. The work to do the filtering and transformation is done only for the elements you access, and only when you access them.
+When you access the elements in a view, it's done 'lazily' so that work is only done when you get an element. This also makes it possible to combine, or 'compose' views without a performance penalty. For example, you could create a view that provides only the even elements from a range and then transform them by squaring them. The work to do the filtering and transformation is done only for the elements you access, and only when you access them.
 
 A view can be copied, assigned, and destroyed in constant time no matter how many elements it contains. This is because a view doesn't own the elements it refers to, so it doesn't need to make a copy. This is also why you can compose views without a performance penalty.
 
@@ -96,9 +96,9 @@ v | rev3(v): 2 1 0
 
 The following view classes are defined in the `std::ranges` namespace.
 
-| **Range adaptor** | **Description** |
+| **View ** | **Description** |
 |--|--|
-| [`basic_istream_view`](basic-istream-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. |
+| [`basic_istream_view`](basic-istream-view-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. |
 | [`common_view`](common-view-class.md)<sup>C++20</sup> | Adapts a view that has different iterator/sentinel types into a view with the same iterator/sentinel types. |
 | [`drop_view`](drop-view-class.md)<sup>C++20</sup> | Created from another view, skipping the first `count` elements. |
 | [`drop_while_view`](drop-while-view-class.md)<sup>C++20</sup> | Created from another view, skipping leading elements as long as a predicate holds. |
