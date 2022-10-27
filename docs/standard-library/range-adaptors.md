@@ -9,7 +9,7 @@ helpviewer_keywords: ["std::ranges [C++], all", "std::ranges [C++], all_t", "std
 
 Range adapters create a *view* (one of the [view classes](view-classes.md) in the `std::views` namespace) from a range. We recommend that you use an adapter in `std::ranges::views` instead of creating the view types directly. The adapters are the intended way to access views. They're easier to use, and in some cases more efficient, than creating instances of the view types directly.
 
-A *view* is a lightweight object that refers to elements from a range. A view can:
+A view is a lightweight object that refers to elements from a range. A view can:
 
 - Consist of only certain elements from a range.
 - Represent a transformation of elements from a range.
@@ -83,9 +83,9 @@ Range adapters come in many forms. For example, there are range adapters that al
 - Transforming the elements in a range (`view::transform`).
 - Splitting a range (`view::split`).
 
-Range adapters can be chained together (composed). That's where the power and flexibility of ranges is most apparent. Composing range adapters allows you to overcome a core problem with the previous Standard Template Library (STL) algorithms, which is that they aren't easy to chain together.
+Range adapters can be chained together (composed). That's where the power and flexibility of ranges are most apparent. Composing range adapters allows you to overcome a core problem with the previous Standard Template Library (STL) algorithms: that they aren't easy to chain together.
 
-The following range adapters are available in the `std::views` namespace. The `std::views`namespace is a convenience alias for `std::ranges::views`.
+The following range adapters are available in the `std::views` namespace. The `std::views` namespace is a convenience alias for `std::ranges::views`.
 
 | **Range adapter** | **Description** |
 |--|--|
@@ -115,7 +115,7 @@ In the previous table, a range adapter is typically described as taking a range 
 
 Range adapter functions are typically [function objects](https://eel.is/c++draft/function.objects), which look like function calls and enforce constraints on the types that can be passed.
 
-You can pass range adapters and the result of pipe operations (`|`) to code that expects function objects. In the following example, the view created by the `split` range adapter is passed to the `transform` range adapter as if by a function call, because the `transform` range adapter is a function object.
+You can pass range adapters and the result of pipe operations (`|`) to code that expects function objects. In the following example, the view that the `split` range adapter creates is passed to the `transform` range adapter as if by a function call, because the `transform` range adapter is a function object.
 
 ```cpp
 std::map<int, string> x = {{0, "Hello, world"}, {42, "Goodbye, world"}};
@@ -144,18 +144,18 @@ The range to create the view from.
 ### Return value
 
 - If `rg` is already a view, a copy of `rg`.
-- If `rg` is a non-view lvalue, a [`ref_view`](ref-view-class.md) that refers to `rg`. (The lifetime of the view is tied to the lifetime of `rg`.)
+- If `rg` is a non-view `lvalue`, a [`ref_view`](ref-view-class.md) that refers to `rg`. (The lifetime of the view is tied to the lifetime of `rg`.)
 - If `rg` is a non-view `rvalue` such as a temporary object, or is the result of passing the range to `std::move`, an [`owning_view`](owning-view-class.md).
 
 Use `std::views::all_t<decltype((rg))>` to get the type of the returned view.
 
 ### Remarks
 
-This range adapter is the best way to convert a range into a view. One reason to create a view from a range is to pass it by value at low cost if passing the range by value could be expensive.
+This range adapter is the best way to convert a range into a view. One reason to create a view from a range is to pass it by value at low cost, if passing the range by value could be expensive.
 
 Getting a view for a range is a useful alternative to passing a heavyweight range by value because views are inexpensive to create, copy, and destroy. A possible exception is `owning_view`, which is a view that owns the underlying range. 
 
-In general, the worst case scenario for destroying a view has `O(N)` complexity for the number of elements in the range. Even if you destroy `K` copies of view with `N` elements, the total complexity is still `O(N)` because the underlying range is destroyed only once.
+In general, the worst-case scenario for destroying a view has `O(N)` complexity for the number of elements in the range. Even if you destroy `K` copies of view with `N` elements, the total complexity is still `O(N)` because the underlying range is destroyed only once.
 
 ### Example: `all`
 
@@ -344,12 +344,12 @@ If you specify more elements to drop than exist in the underlying range, an [`em
 
 The returned view is typically, but not always, a specialization of [`drop_view`](drop-view-class.md). That is:
 
-- If `V` is a specialization of [`empty_view`](empty-view-class.md) or a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
+- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
 - Otherwise, the result is a [`drop_view`](drop-view-class.md).
 
 ### Remarks
 
-After it's created, the number of elements in the view stays the same even if the view it was created from changes. However, if the underlying view changes, accessing elements in the returned view might result in undefined behavior.
+After it's created, the number of elements in the view stays the same even if the view that it was created from changes. However, if the underlying view changes, accessing elements in the returned view might result in undefined behavior.
 
 `drop` is the opposite of [`take`](#take).
 
@@ -1198,7 +1198,7 @@ The number of elements to take from the front of `rg`.
 
 The returned view is typically, but not always, a specialization of [`take_view`](take-view-class.md). Specifically:
 
-- If `V` is a specialization of [`empty_view`](empty-view-class.md) or a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
+- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
 - Otherwise, the result is a [`take_view`](take-view-class.md).
 
 ### Remarks
@@ -1347,7 +1347,7 @@ A [`transform_view`](transform-view-class.md) that contains the transformed elem
 
 For efficiency's sake, when you compose `filter` and `transform`, do the `filter` first so that you `transform` only the elements that you intend to keep.
 
-The code shown earlier as "2\)" can be used with pipe syntax: `collection | transform(fun)`. Or you can use it with function call syntax: `transform(collection, fun)` or `transform(fun)(collection)`.
+The code shown earlier as "2\)" can be used with pipe syntax: `collection | transform(fun)`. Or it can be used with function call syntax: `transform(collection, fun)` or `transform(fun)(collection)`.
 
 ### Example: `transform`
 
