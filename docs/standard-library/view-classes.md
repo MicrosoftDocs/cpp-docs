@@ -124,7 +124,7 @@ The following view classes are defined in the `std::ranges` namespace.
 
 Many of these classes have corresponding [range adapters](range-adaptors.md) in the `std:views` namespace that creates them. Prefer the adapters in `std::views` to creating view classes directly. The range adapters are the intended access points, are easier to use, and in some cases are more efficient.
 
-## View class characteristics
+## View classes characteristics
 
 Each view class topic has a **Characteristics** section after the syntax section. The **Characteristics** section has the following entries:
 
@@ -145,7 +145,7 @@ Each view class topic has a **Characteristics** section after the syntax section
 
 ### Iterator hierarchy
 
-The iterator category that **Range adapter** and **View iterator category** mention in the in the **Characteristics** section refers to the hierarchy of iterators that ranges and views support.
+The iterator category that **Range adapter** and **View iterator category** mention in the **Characteristics** section refers to the hierarchy of iterators that ranges and views support.
 
 That hierarchy, in increasing order of capability, is:
 
