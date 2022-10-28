@@ -83,35 +83,35 @@ Range adapters come in many forms. For example, there are range adapters that al
 - Transforming the elements in a range (`view::transform`).
 - Splitting a range (`view::split`).
 
-Range adapters can be chained together (composed). That's where the power and flexibility of ranges are most apparent. Composing range adapters allows you to overcome a core problem with the previous Standard Template Library (STL) algorithms: that they aren't easy to chain together.
+Range adapters can be chained together (composed). That's where the power and flexibility of ranges are most apparent. Composing range adapters allows you to overcome a core problem with the previous Standard Template Library (STL) algorithms, which is that they aren't easy to chain together.
 
 The following range adapters are available in the `std::views` namespace. The `std::views` namespace is a convenience alias for `std::ranges::views`.
 
-| **Range adapter** | **Description** |
+| Range adapter | Description |
 |--|--|
-| [`all`](#all)<sup>C++20</sup> | Create a view that refers to a range and its elements. |
-| [`common`](#common)<sup>C++20</sup> | Create a view that has the same iterator and sentinel types from a range that doesn't. |
-| [`counted`](#counted)<sup>C++20</sup> | Create a view of the first *n* elements of a range, starting from the specified location. |
-| [`drop`](#drop)<sup>C++20</sup> | Create a view from another view, skipping the specified number of elements from the front. |
-| [`drop_while`](#drop_while)<sup>C++20</sup> | Create a view that contains the elements of a range that remain after the leading elements that match the specified condition are dropped. |
-| [`elements`](#elements)<sup>C++20</sup> | Create a view of the selected index into each tuple-like value in a range. |
-| [`filter`](#filter)<sup>C++20</sup> | Create a view that contains the elements of a range that match the specified condition. |
-| [`iota`](#iota)<sup>C++20</sup> | Create a view that contains a sequence of increasing values. |
-| [`keys`](#keys)<sup>C++20</sup> | Create a view of the first index into each tuple-like value in a collection. |
-| [`lazy_split`](#lazy_split)<sup>C++20</sup> | Split a view into subranges based on a delimiter. |
-| [`reverse`](#reverse)<sup>C++20</sup> | Create a view of the elements of a range in reverse order. |
-| [`single`](#single)<sup>C++20</sup> | Create a view that contains one element. |
-| [`split`](#split)<sup>C++20</sup> | Split a view into subranges based on a delimiter. |
-| [`take`](#take)<sup>C++20</sup> | Create a view of the first *n* elements from another view. |
-| [`take_while`](#take_while)<sup>C++20</sup> | Create a view that contains the leading elements of a range that match the specified condition. |
-| [`transform`](#transform)<sup>C++20</sup> | Create a view of transformed elements from another view. |
-| [`values`](#values)<sup>C++20</sup> | Create a view of the second index into each tuple-like value in a collection. |
+| [all](#all)<sup>C++20</sup> | Create a view that refers to a range and its elements. |
+| [common](#common)<sup>C++20</sup> | Create a view that has the same iterator and sentinel types from a range that doesn't. |
+| [counted](#counted)<sup>C++20</sup> | Create a view of the first *n* elements of a range, starting from the specified location. |
+| [drop](#drop)<sup>C++20</sup> | Create a view from another view, skipping the specified number of elements from the front. |
+| [drop_while](#drop_while)<sup>C++20</sup> | Create a view that contains the elements of a range that remain after the leading elements that match the specified condition are dropped. |
+| [elements](#elements)<sup>C++20</sup> | Create a view of the selected index into each tuple-like value in a range. |
+| [filter](#filter)<sup>C++20</sup> | Create a view that contains the elements of a range that match the specified condition. |
+| [iota](#iota)<sup>C++20</sup> | Create a view that contains a sequence of increasing values. |
+| [keys](#keys)<sup>C++20</sup> | Create a view of the first index into each tuple-like value in a collection. |
+| [lazy_split](#lazy_split)<sup>C++20</sup> | Split a view into subranges based on a delimiter. |
+| [reverse](#reverse)<sup>C++20</sup> | Create a view of the elements of a range in reverse order. |
+| [single](#single)<sup>C++20</sup> | Create a view that contains one element. |
+| [split](#split)<sup>C++20</sup> | Split a view into subranges based on a delimiter. |
+| [take](#take)<sup>C++20</sup> | Create a view of the first *n* elements from another view. |
+| [take_while](#take_while)<sup>C++20</sup> | Create a view that contains the leading elements of a range that match the specified condition. |
+| [transform](#transform)<sup>C++20</sup> | Create a view of transformed elements from another view. |
+| [values](#values)<sup>C++20</sup> | Create a view of the second index into each tuple-like value in a collection. |
 
 In the previous table, a range adapter is typically described as taking a range and producing a view. To be precise, range adapters have a range argument that accepts one of the following:
 
-- The `cv-unqualified` type models `view`, and the argument is an `rvalue` or is copyable.
-- When you pass the argument as an `lvalue`, it must model `range` and live as long as the view.
-- When you pass the argument as an `rvalue`, such as when calling [`owning_view`](owning-view-class.md), it must model `range` and `movable`.
+- The `cv-unqualified` type models `view`, and the argument is an rvalue or is copyable.
+- When you pass the argument as an lvalue, it must model `range` and live as long as the view.
+- When you pass the argument as an rvalue, such as when calling [owning_view](owning-view-class.md), it must model `range` and `movable`.
 
 Range adapter functions are typically [function objects](https://eel.is/c++draft/function.objects), which look like function calls and enforce constraints on the types that can be passed.
 
@@ -144,8 +144,8 @@ The range to create the view from.
 ### Return value
 
 - If `rg` is already a view, a copy of `rg`.
-- If `rg` is a non-view `lvalue`, a [`ref_view`](ref-view-class.md) that refers to `rg`. (The lifetime of the view is tied to the lifetime of `rg`.)
-- If `rg` is a non-view `rvalue` such as a temporary object, or is the result of passing the range to `std::move`, an [`owning_view`](owning-view-class.md).
+- If `rg` is a non-view lvalue, a [ref_view](ref-view-class.md) that refers to `rg`. (The lifetime of the view is tied to the lifetime of `rg`.)
+- If `rg` is a non-view rvalue such as a temporary object, or is the result of passing the range to `std::move`, an [owning_view](owning-view-class.md).
 
 Use `std::views::all_t<decltype((rg))>` to get the type of the returned view.
 
@@ -205,7 +205,7 @@ The range to create the view from.
 ### Return value
 
 - `views::all(rg)` if `rg` is a range with the same iterator and sentinel type.
-- [`common_view(views::all(rg))`](common-view-class.md) if `rg` has different iterator and sentinel types.
+- [common_view(views::all(rg))](common-view-class.md) if `rg` has different iterator and sentinel types.
 
 ### Remarks
 
@@ -257,7 +257,7 @@ The type of the iterator.
 `count`\
 The number of elements to include in the view. Must be non-negative.
 
-- If `count == 0`, an empty [`span`](span-class.md) is returned.
+- If `count == 0`, an empty [span](span-class.md) is returned.
 - If `count` is greater than the number of elements in the range, the behavior is undefined.
 
 `it`\
@@ -265,7 +265,7 @@ An iterator to the element in the range to start with. The element that the iter
 
 ### Return value
 
-A [`span`](span-class.md) is returned if `it` is a `contiguous_iterator` for arrays, vectors, and other containers that store their elements contiguously. Otherwise, a [`subrange`](subrange-class.md) is returned.
+A [span](span-class.md) is returned if `it` is a `contiguous_iterator` for arrays, vectors, and other containers that store their elements contiguously. Otherwise, a [subrange](subrange-class.md) is returned.
 
 ### Remarks
 
@@ -334,24 +334,24 @@ The number of elements to drop from the front of `rg`. Must be non-negative.
 The type of the range.
 
 `rg`\
-The range used to create the view.
+The range that's used to create the view.
 
 ### Return value
 
 A view of the underlying range, with the specified number of elements dropped from the front.
 
-If you specify more elements to drop than exist in the underlying range, an [`empty_view`](empty-view-class.md) is returned.
+If you specify more elements to drop than exist in the underlying range, an [empty_view](empty-view-class.md) is returned.
 
-The returned view is typically, but not always, a specialization of [`drop_view`](drop-view-class.md). That is:
+The returned view is typically, but not always, a specialization of [drop_view](drop-view-class.md). That is:
 
-- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
-- Otherwise, the result is a [`drop_view`](drop-view-class.md).
+- If `V` is a specialization of [empty_view](empty-view-class.md), or is a specialization of [span](span-class.md), [basic_string_view](basic-string-view-class.md), [iota_view](iota-view-class.md), or [subrange](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
+- Otherwise, the result is a [drop_view](drop-view-class.md).
 
 ### Remarks
 
 After it's created, the number of elements in the view stays the same even if the view that it was created from changes. However, if the underlying view changes, accessing elements in the returned view might result in undefined behavior.
 
-`drop` is the opposite of [`take`](#take).
+`drop` is the opposite of [take](#take).
 
 The code shown earlier as "2\)" can be used with pipe syntax: `collection | drop(5)`. Or it can be used with function call syntax: `drop(collection, 5)` or `drop(5)(collection)`.
 
@@ -412,13 +412,13 @@ The underlying range to create the view from.
 
 ### Return value
 
-A [`drop_while_view`](drop-while-view-class.md) that consists of the elements that remain when the leading elements that match the predicate are dropped.
+A [drop_while_view](drop-while-view-class.md) that consists of the elements that remain when the leading elements that match the predicate are dropped.
 
 ### Remarks
 
 Stops dropping elements from `rg` as soon as the predicate returns `false`.
 
-`drop_while` is the opposite of [`take_while`](#take_while).
+`drop_while` is the opposite of [take_while](#take_while).
 
 The code shown earlier as "2\)" can be used with pipe syntax: `collection | drop_while(predicate)`. Or it can be used with function call syntax: `drop_while(collection, predicate)` or `drop_while(predicate)(collection)`.
 
@@ -460,7 +460,7 @@ int main()
 
 ## `elements`
 
-Create an [`elements_view`](elements-view-class.md), which is a view of the selected index into each tuple-like value in a range. For example, given a range of `std::tuple<string, int>` values, create an `elements_view` of all the `string` elements from each tuple.
+Create an [elements_view](elements-view-class.md), which is a view of the selected index into each tuple-like value in a range. For example, given a range of `std::tuple<string, int>` values, create an `elements_view` of all the `string` elements from each tuple.
 
 ```cpp
 template<ranges::viewable_range R, size_t N>
@@ -480,7 +480,7 @@ The range of tuple-like values to create the view from.
 
 ### Return value
 
-An [`elements_view`](elements-view-class.md) that consists of the selected index into each tuple-like value in a collection.
+An [elements_view](elements-view-class.md) that consists of the selected index into each tuple-like value in a collection.
 
 ### Example: `elements`
 
@@ -539,7 +539,7 @@ The type of the elements in the view. The view needs an element type, even thoug
 
 ### Return value
 
-An [`empty_view`](empty-view-class.md).
+An [empty_view](empty-view-class.md).
 
 ### Remarks
 
@@ -593,7 +593,7 @@ The range to create the view from.
 
 ### Return value
 
-A [`filter_view`](filter-view-class.md) that contains the elements of a range that match the predicate.
+A [filter_view](filter-view-class.md) that contains the elements of a range that match the predicate.
 
 ### Remarks
 
@@ -662,7 +662,7 @@ This value is one past the last value that will be in the sequence. For example,
 
 ### Return value
 
-An [`iota_view`](iota-view-class.md) of a sequence of increasing values.
+An [iota_view](iota-view-class.md) of a sequence of increasing values.
 
 ### Remarks
 
@@ -719,7 +719,7 @@ The type of the elements to extract from the stream.
 
 ### Return value
 
-A [`basic_istream_view`](basic-istream-view-class.md).
+A [basic_istream_view](basic-istream-view-class.md).
 
 
 This range adapter is equivalent to `ranges::basic_istream_view<Val, typename U::char_type, typename U::traits_type>(str)`, where `U` is the type of `str`.
@@ -768,7 +768,7 @@ The range to create the view from.
 
 ### Return value
 
-A [`join_view`](join-view-class.md) that contains the elements of all the ranges in the underlying range.
+A [join_view](join-view-class.md) that contains the elements of all the ranges in the underlying range.
 
 ### Example: `join`
 
@@ -800,7 +800,7 @@ The code shown earlier as "2\)" can be used with pipe syntax: `collection | join
 
 ## `keys`
 
-Create a [`keys_view`](keys-view-class.md) of the first index into each tuple-like value in a collection. This is useful for extracting keys from associative containers. For example, given a range of `std::tuple<string, int>`, create a view that consists of all the `string` elements from each tuple.
+Create a [keys_view](keys-view-class.md) of the first index into each tuple-like value in a collection. This is useful for extracting keys from associative containers. For example, given a range of `std::tuple<string, int>`, create a view that consists of all the `string` elements from each tuple.
 
 ```cpp
 template <ranges::viewable_range R>
@@ -814,7 +814,7 @@ The type of the underlying range.
 
 ### Return value
 
-A [`keys_view`](keys-view-class.md) that consists of the first index into each tuple-like value in the range.
+A [keys_view](keys-view-class.md) that consists of the first index into each tuple-like value in the range.
 
 ### Example: `keys`
 
@@ -905,16 +905,16 @@ The range to split.
 
 ### Return value
 
-A [`lazy_split_view`](lazy-split-view-class.md) that contains one or more subranges and is the result of splitting the original range on `delimiter`.
+A [lazy_split_view](lazy-split-view-class.md) that contains one or more subranges and is the result of splitting the original range on `delimiter`.
 
 ### Remarks
 
 The delimiter isn't part of the result. For example, if you split the range `1,2,3` on the value `2`, you get two subranges: `1` and `3`.
 
-A related adapter is [`split`](#split). The primary differences between `split_view` and `lazy_split_view` are:
+A related adapter is [split](#split). The primary differences between `split_view` and `lazy_split_view` are:
 
 | View | Can split a `const` range | Range iterator |
-|--|--|
+|--|--|--|
 | `split_view` | no | Supports `forward_range` or higher |
 | `lazy_split_view` | yes | `input_range` or higher |
 
@@ -989,11 +989,11 @@ The range to reverse.
 
 ### Return value
 
-A view that presents the elements of the underlying range in reverse order. The returned view is typically, but not always, a specialization of [`reverse_view`](reverse-view-class.md). That is:
+A view that presents the elements of the underlying range in reverse order. The returned view is typically, but not always, a specialization of [reverse_view](reverse-view-class.md). That is:
 
 - If `V` is a specialization of `reverse_view`, the result is the argument's underlying view. A double-reverse is a no-op (no operation).
-- If `V` has the form `subrange<reverse_iterator<I>, reverse_iterator<I>>`, the result is a [`subrange`](subrange-class.md) of the unwrapped iterators. A double-reverse is a no-op.
-- Otherwise, the result is a [`reverse_view`](reverse-view-class.md).
+- If `V` has the form `subrange<reverse_iterator<I>, reverse_iterator<I>>`, the result is a [subrange](subrange-class.md) of the unwrapped iterators. A double-reverse is a no-op.
+- Otherwise, the result is a [reverse_view](reverse-view-class.md).
 
 ### Remarks
 
@@ -1051,7 +1051,7 @@ The value of the element to store in the view.
 
 ### Return value
 
-An [`single_view`](single-view-class.md) that contains `t`.
+An [single_view](single-view-class.md) that contains `t`.
 
 ### Remarks
 
@@ -1109,17 +1109,17 @@ The range to split.
 
 ### Return value
 
-A [`split_view`](split-view-class.md) that contains one or more subranges.
+A [split_view](split-view-class.md) that contains one or more subranges.
 
 ### Remarks
 
 The delimiter isn't part of the result. For example, if you split the range `1,2,3` on the value `2`, you get two subranges: `1` and `3`.
 
-A related adapter is [`lazy_split`](#lazy_split). The primary differences between `split_view` and `lazy_split_view` are:
+A related adapter is [lazy_split](#lazy_split). The primary differences between `split_view` and `lazy_split_view` are:
 
 | View | Can split a `const` range | Range type |
-|---|---|
-|  `split_view` | no | Supports `forward_range` or higher |
+|---|---|---|
+| `split_view` | no | Supports `forward_range` or higher |
 | `lazy_split_view` | yes | Supports `input_range` or higher |
 
 Prefer `split_view` because it's more efficient, unless you must split a range that is `const`.
@@ -1196,16 +1196,16 @@ The number of elements to take from the front of `rg`.
 
 ### Return value
 
-The returned view is typically, but not always, a specialization of [`take_view`](take-view-class.md). Specifically:
+The returned view is typically, but not always, a specialization of [take_view](take-view-class.md). Specifically:
 
-- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
-- Otherwise, the result is a [`take_view`](take-view-class.md).
+- If `V` is a specialization of [empty_view](empty-view-class.md), or is a specialization of [span](span-class.md), [basic_string_view](basic-string-view-class.md), [iota_view](iota-view-class.md), or [subrange](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
+- Otherwise, the result is a [take_view](take-view-class.md).
 
 ### Remarks
 
 If you specify more elements to take than exist in `rg`, all of the elements are taken.
 
-`take` is the opposite of [`drop`](#drop).
+`take` is the opposite of [drop](#drop).
 
 The code shown earlier as "2\)" can be used with pipe syntax: `collection | take(5)`. Or it can be used with function call syntax: `take(5, collection)` or `take(5)(collection)`.
 
@@ -1269,13 +1269,13 @@ The range to create the view from.
 
 ### Return value
 
-A [`take_while_view`](take-while-view-class.md) that consists of the first `count` elements that meet the specified criteria in the range.
+A [take_while_view](take-while-view-class.md) that consists of the first `count` elements that meet the specified criteria in the range.
 
 ### Remarks
 
 Stops taking elements from `rg` after the predicate returns `false` or the range runs out of elements.
 
-`take_while` is the opposite of [`drop_while`](#drop_while).
+`take_while` is the opposite of [drop_while](#drop_while).
 
 The code shown earlier as "2\)" can be used with pipe syntax: `collection | take_while(pred)`. Or it can be used with function call syntax: `take_while(collection, pred)` or `take_while(pred)(collection)`.
 
@@ -1341,7 +1341,7 @@ The range to create the view from.
 
 ### Return value
 
-A [`transform_view`](transform-view-class.md) that contains the transformed elements of `rg`.
+A [transform_view](transform-view-class.md) that contains the transformed elements of `rg`.
 
 ### Remarks
 
@@ -1384,7 +1384,7 @@ int main()
 
 ## `values`
 
-Create a [`values_view`](values-view-class.md) that consists of the second index into each tuple-like value in a collection. This is useful for making a view of the values in an associative container. For example, given a range of `std::tuple<string, int>` values, create a view that consists of all the `int` elements from each tuple.
+Create a [values_view](values-view-class.md) that consists of the second index into each tuple-like value in a collection. This is useful for making a view of the values in an associative container. For example, given a range of `std::tuple<string, int>` values, create a view that consists of all the `int` elements from each tuple.
 
 ```cpp
 template <range::viewable_range R>
@@ -1401,7 +1401,7 @@ The underlying range of tuple-like values.
 
 ### Return value
 
-A [`values_view`](values-view-class.md) built from the second index into each tuple-like value in the range.
+A [values_view](values-view-class.md) built from the second index into each tuple-like value in the range.
 
 ### Example: `values`
 
@@ -1469,7 +1469,7 @@ int main()
 
 ### `all_t`
 
-Provides the type of the view that [`all`](#all) returns.
+Provides the type of the view that [all](#all) returns.
 
 ```cpp
 template <ranges::viewable_range R>
@@ -1502,5 +1502,5 @@ int main()
 
 ## See also
 
-[`<ranges>`](ranges.md)\
+[<ranges>](ranges.md)\
 [view classes](view-classes.md)

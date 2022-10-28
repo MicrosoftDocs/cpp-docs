@@ -18,7 +18,7 @@ But perhaps the most important benefit of ranges is that you can compose STL alg
 
 ## An example of ranges
 
-Before ranges, if you wanted to transform the elements of a collection that met a certain criteria, you needed to introduce an intermediate step to hold the results between operations. For example, if you wanted to build a vector of squares from the elements in another vector that are divisible by 3, you could write something like:
+Before ranges, if you wanted to transform the elements of a collection that met a certain criterion, you needed to introduce an intermediate step to hold the results between operations. For example, if you wanted to build a vector of squares from the elements in another vector that are divisible by three, you could write something like:
 
 ```cpp
 std::vector<int> input = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -39,12 +39,12 @@ auto output = input | std::views::filter([](const int n) {return n % 3 == 0; }) 
 
 Besides being easier to read, this code avoids the memory allocation that's required for the `intermediate` vector and its contents. It also allows you to compose two operations.
 
-In the preceding code, each element that's divisible by 3 is combined with an operation to square that element. The pipe (`|`) symbol chains the operations together and is read left to right.
+In the preceding code, each element that's divisible by three is combined with an operation to square that element. The pipe (`|`) symbol chains the operations together and is read left to right.
 
 The result, `output`, is itself a kind of range called a *view*.
 
 > [!NOTE]
-> This example of ranges requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Because post-release updates to `<ranges>` in the C++20 standard are a work in progress, the features that require `std::views` aren't enabled yet under `/std:c++20`.
+> This example of ranges requires the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option. Because post-release updates to `<ranges>` in the C++20 standard are a work in progress, the features that require `std::views` aren't enabled yet under `/std:c++20`.
 
 ## Views
 
@@ -52,11 +52,11 @@ A view is a lightweight range. View operations--such as default construction, mo
 
 Views are created by range adapters, which are discussed in the following section. For more information about the classes that implement various views, see [View classes](view-classes.md).
 
-How the elements in the view appear depends on the range adapter that you use to create the view. In the previous example, a range adapter takes a range and returns a view of the elements divisible by 3. The underlying range is unchanged.
+How the elements in the view appear depends on the range adapter that you use to create the view. In the previous example, a range adapter takes a range and returns a view of the elements divisible by three. The underlying range is unchanged.
 
-Views are composable, which is powerful. In the previous example, the view of vector elements that are divisible by 3 is combined with the view that squares those elements.
+Views are composable, which is powerful. In the previous example, the view of vector elements that are divisible by three is combined with the view that squares those elements.
 
-The elements of a view are evaluated lazily. That is, the transformations that you apply to each element in a view aren't evaluated until you ask for the element. For example, if you run the following code in a debugger and put a breakpoint on the lines `auto divisible_by_three = ...` and `auto square =  ...`, you'll see that you hit the `divisible_by_three` lambda breakpoint as each element in `input` is tested for divisibility by 3. The `square` lambda breakpoint will be hit as the elements that are divisible by 3 are squared.
+The elements of a view are evaluated lazily. That is, the transformations that you apply to each element in a view aren't evaluated until you ask for the element. For example, if you run the following code in a debugger and put a breakpoint on the lines `auto divisible_by_three = ...` and `auto square =  ...`, you'll see that you hit the `divisible_by_three` lambda breakpoint as each element in `input` is tested for divisibility by three. The `square` lambda breakpoint will be hit as the elements that are divisible by three are squared.
 
 ```cpp
 // requires /std:c++latest
@@ -85,7 +85,7 @@ int main()
 
 Range adapters take a range and produce a view. Range adapters produce lazily evaluated views. That is, you don't incur the cost of transforming every element in the range to produce the view. You only pay the cost to process an element in the view when you access that element.
 
-In the previous example, the `filter` range adapter creates a view named `input` that contains the elements that are divisible by 3. The `transform` range adapter takes the view of elements divisible by 3 and creates a view of those elements squared.
+In the previous example, the `filter` range adapter creates a view named `input` that contains the elements that are divisible by three. The `transform` range adapter takes the view of elements divisible by three and creates a view of those elements squared.
 
 Range adapters can be chained together (composed), which is the heart of the power and flexibility of ranges. Composing range adapters allows you to overcome the problem that the previous STL algorithms aren't easily composable.
 
@@ -101,19 +101,19 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 
 | Function | Description |
 |--|--|
-| [`begin`](range-functions.md#begin)<sup>C++20</sup> | Get an iterator to the first element in the range. |
-| [`cbegin`](range-functions.md#cbegin)<sup>C++20</sup> | Get a `const` iterator to the first element in the range. |
-| [`cend`](range-functions.md#cend)<sup>C++20</sup> | Get the sentinel at the end of the `const`-qualified range. |
-| [`cdata`](range-functions.md#cdata)<sup>C++20</sup> | Get a `const` pointer to the first element in the contiguous range. |
-| [`crbegin`](range-functions.md#crbegin)<sup>C++20</sup> | Get a reverse `const` iterator to the beginning of the range. |
-| [`crend`](range-functions.md#crend)<sup>C++20</sup> | Get the sentinel at the end of what `crbegin()` returns. |
-| [`data`](range-functions.md#data)<sup>C++20</sup> | Get a pointer to the first element in the contiguous range. |
-| [`empty`](range-functions.md#empty)<sup>C++20</sup> | Determine if the range is empty. |
-| [`end`](range-functions.md#end)<sup>C++20</sup> | Get the sentinel at the end of the range. |
-| [`rbegin`](range-functions.md#rbegin)<sup>C++20</sup> | Get a reverse iterator to the beginning of the range. |
-| [`rend`](range-functions.md#rend)<sup>C++20</sup> | Get a reverse iterator to the sentinel at the end of the range. |
-| [`size`](range-functions.md#size)<sup>C++20</sup> | Get the size of the range as an unsigned value. |
-| [`ssize`](range-functions.md#ssize)<sup>C++20</sup> | Get the size of the range as a signed value. |
+| [begin](range-functions.md#begin)<sup>C++20</sup> | Get an iterator to the first element in the range. |
+| [cbegin](range-functions.md#cbegin)<sup>C++20</sup> | Get a `const` iterator to the first element in the range. |
+| [cend](range-functions.md#cend)<sup>C++20</sup> | Get the sentinel at the end of the `const`-qualified range. |
+| [cdata](range-functions.md#cdata)<sup>C++20</sup> | Get a `const` pointer to the first element in the contiguous range. |
+| [crbegin](range-functions.md#crbegin)<sup>C++20</sup> | Get a reverse `const` iterator to the beginning of the range. |
+| [crend](range-functions.md#crend)<sup>C++20</sup> | Get the sentinel at the end of what `crbegin()` returns. |
+| [data](range-functions.md#data)<sup>C++20</sup> | Get a pointer to the first element in the contiguous range. |
+| [empty](range-functions.md#empty)<sup>C++20</sup> | Determine if the range is empty. |
+| [end](range-functions.md#end)<sup>C++20</sup> | Get the sentinel at the end of the range. |
+| [rbegin](range-functions.md#rbegin)<sup>C++20</sup> | Get a reverse iterator to the beginning of the range. |
+| [rend](range-functions.md#rend)<sup>C++20</sup> | Get a reverse iterator to the sentinel at the end of the range. |
+| [size](range-functions.md#size)<sup>C++20</sup> | Get the size of the range as an unsigned value. |
+| [ssize](range-functions.md#ssize)<sup>C++20</sup> | Get the size of the range as a signed value. |
 
 ### Types of ranges
 
@@ -121,7 +121,7 @@ How you view the elements of a range depends on its underlying iterator type. Th
 
 In C++20, to say that concept *X* refines concept *Y* means that everything that satisfies concept *Y* also satisfies concept *X*. For example: *car*, *bus*, and *truck* all refine *vehicle*.
 
-The range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the type of container that they can be applied to:
+The range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to:
 
 | Range concept | Description | Supported containers |
 |--|--|--|
