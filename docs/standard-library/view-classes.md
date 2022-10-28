@@ -7,7 +7,7 @@ helpviewer_keywords: ["RANGES/VIEWS/std", "VIEWS/std"]
 ---
 # View classes
 
-A *view* is a lightweight range that refers to elements that it doesn't own (except for [owning_view](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it, whether by transforming or filtering it. For example, [std::views::filter](filter-view-class.md) is a view that uses the criteria that you specify to select elements from another range.
+A *view* is a lightweight range that refers to elements that it doesn't own (except for [`owning_view`](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it, whether by transforming or filtering it. For example, [`std::views::filter`](filter-view-class.md) is a view that uses the criteria that you specify to select elements from another range.
 
 When you access the elements in a view, it's done "lazily" so that work is done only when you get an element. This also makes it possible to combine, or *compose*, views without a performance penalty. 
 
@@ -45,7 +45,7 @@ int main()
 0 9 36 81
 ```
 
-Using a view after the range that it's based on is modified can lead to undefined behavior. For example, a [reverse_view](reverse-view-class.md) based on a vector shouldn't be reused if you add or remove elements from the underlying vector. Modifying the underlying vector invalidates the container's `end` iterator--including the copy of the iterator that the view might have made.
+Using a view after the range that it's based on is modified can lead to undefined behavior. For example, a [`reverse_view`](reverse-view-class.md) based on a vector shouldn't be reused if you add or remove elements from the underlying vector. Modifying the underlying vector invalidates the container's `end` iterator--including the copy of the iterator that the view might have made.
 
 Because views are cheap to create, you should generally re-create a view if you modify the underlying range. The following example demonstrates this. It also shows how to store a view pipeline in a variable so that you can reuse it.
 
@@ -100,27 +100,27 @@ The following view classes are defined in the `std::ranges` namespace.
 
 | View | Description |
 |--|--|
-| [basic_istream_view](basic-istream-view-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. |
-| [common_view](common-view-class.md)<sup>C++20</sup> | Adapts a view that has different iterator/sentinel types into a view with the same iterator/sentinel types. |
-| [drop_view](drop-view-class.md)<sup>C++20</sup> | Created from another view, skipping the first `count` elements. |
-| [drop_while_view](drop-while-view-class.md)<sup>C++20</sup> | Created from another view, skipping leading elements as long as a predicate holds. |
-| [elements_view](elements-view-class.md)<sup>C++20</sup> | A view over the selected index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of all the `string` elements from each tuple. |
-| [empty_view](empty-view-class.md)<sup>C++20</sup> | A view with no elements. |
-| [filter_view](filter-view-class.md)<sup>C++20</sup> | Filters out elements of a range that don't match a predicate. |
-| [iota_view](iota-view-class.md)<sup>C++20</sup> | A generated view that contains a sequence of incrementing values. |
-| [join_view](join-view-class.md)<sup>C++20</sup> | Combines all the elements of multiple ranges into a single view. |
-| [keys_view](keys-view-class.md)<sup>C++20</sup> | A view over the first index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of the `string` elements from each tuple. |
-| [lazy_split_view](lazy-split-view-class.md)<sup>C++20</sup> | Splits a view into subranges based on a delimiter. |
-| [owning_view](owning-view-class.md)<sup>C++20</sup> | Takes ownership of the elements from another range. |
-| [ref_view](ref-view-class.md)<sup>C++20</sup> | A view that references the elements that belong to another range. |
-| [reverse_view](reverse-view-class.md)<sup>C++20</sup> | Presents the elements of a range in reverse order. |
-| [single_view](single-view-class.md)<sup>C++20</sup> | A view that contains only one element. |
-| [split_view](split-view-class.md)<sup>C++20</sup> | Splits a view into subranges based on a delimiter. |
-| [subrange](subrange-class.md)<sup>C++20</sup> | A view of part of the elements of a range, as defined by a begin iterator and a sentinel. |
-| [take_view](take-view-class.md)<sup>C++20</sup> | Contains the specified number of elements taken from the front of a range. |
-| [take_while_view](take-while-view-class.md)<sup>C++20</sup> | Contains the leading elements of a range that match the given predicate. |
-| [transform_view](transform-view-class.md)<sup>C++20</sup> | A view of an underlying sequence after a transformation function is applied to each element. |
-| [values_view](values-view-class.md)<sup>C++20</sup> | A view over the second index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of the `int` elements from each tuple. |
+| [`basic_istream_view`](basic-istream-view-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. |
+| [`common_view`](common-view-class.md)<sup>C++20</sup> | Adapts a view that has different iterator/sentinel types into a view with the same iterator/sentinel types. |
+| [`drop_view`](drop-view-class.md)<sup>C++20</sup> | Created from another view, skipping the first `count` elements. |
+| [`drop_while_view`](drop-while-view-class.md)<sup>C++20</sup> | Created from another view, skipping leading elements as long as a predicate holds. |
+| [`elements_view`](elements-view-class.md)<sup>C++20</sup> | A view over the selected index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of all the `string` elements from each tuple. |
+| [`empty_view`](empty-view-class.md)<sup>C++20</sup> | A view with no elements. |
+| [`filter_view`](filter-view-class.md)<sup>C++20</sup> | Filters out elements of a range that don't match a predicate. |
+| [`iota_view`](iota-view-class.md)<sup>C++20</sup> | A generated view that contains a sequence of incrementing values. |
+| [`join_view`](join-view-class.md)<sup>C++20</sup> | Combines all the elements of multiple ranges into a single view. |
+| [`keys_view`](keys-view-class.md)<sup>C++20</sup> | A view over the first index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of the `string` elements from each tuple. |
+| [`lazy_split_view`](lazy-split-view-class.md)<sup>C++20</sup> | Splits a view into subranges based on a delimiter. |
+| [`owning_view`](owning-view-class.md)<sup>C++20</sup> | Takes ownership of the elements from another range. |
+| [`ref_view`](ref-view-class.md)<sup>C++20</sup> | A view that references the elements that belong to another range. |
+| [`reverse_view`](reverse-view-class.md)<sup>C++20</sup> | Presents the elements of a range in reverse order. |
+| [`single_view`](single-view-class.md)<sup>C++20</sup> | A view that contains only one element. |
+| [`split_view`](split-view-class.md)<sup>C++20</sup> | Splits a view into subranges based on a delimiter. |
+| [`subrange`](subrange-class.md)<sup>C++20</sup> | A view of part of the elements of a range, as defined by a begin iterator and a sentinel. |
+| [`take_view`](take-view-class.md)<sup>C++20</sup> | Contains the specified number of elements taken from the front of a range. |
+| [`take_while_view`](take-while-view-class.md)<sup>C++20</sup> | Contains the leading elements of a range that match the given predicate. |
+| [`transform_view`](transform-view-class.md)<sup>C++20</sup> | A view of an underlying sequence after a transformation function is applied to each element. |
+| [`values_view`](values-view-class.md)<sup>C++20</sup> | A view over the second index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of the `int` elements from each tuple. |
 
 Many of these classes have corresponding [range adapters](range-adaptors.md) in the `std:views` namespace that creates them. Prefer the adapters in `std::views` to creating view classes directly. The range adapters are the intended access points, are easier to use, and in some cases are more efficient.
 
@@ -164,5 +164,5 @@ The statement "requires `input_range` or better" means that the view can be used
 
 ## See also
 
-[<ranges>](ranges.md)\
-[range-adaptors](range-adaptors.md)
+[`<ranges>`](ranges.md)\
+[Range adapters](range-adaptors.md)

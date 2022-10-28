@@ -44,7 +44,7 @@ In the preceding code, each element that's divisible by three is combined with a
 The result, `output`, is itself a kind of range called a *view*.
 
 > [!NOTE]
-> This example of ranges requires the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option. Because post-release updates to `<ranges>` in the C++20 standard are a work in progress, the features that require `std::views` aren't enabled yet under `/std:c++20`.
+> This example of ranges requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Because post-release updates to `<ranges>` in the C++20 standard are a work in progress, the features that require `std::views` aren't enabled yet under `/std:c++20`.
 
 ## Views
 
@@ -101,19 +101,19 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 
 | Function | Description |
 |--|--|
-| [begin](range-functions.md#begin)<sup>C++20</sup> | Get an iterator to the first element in the range. |
-| [cbegin](range-functions.md#cbegin)<sup>C++20</sup> | Get a `const` iterator to the first element in the range. |
-| [cend](range-functions.md#cend)<sup>C++20</sup> | Get the sentinel at the end of the `const`-qualified range. |
-| [cdata](range-functions.md#cdata)<sup>C++20</sup> | Get a `const` pointer to the first element in the contiguous range. |
-| [crbegin](range-functions.md#crbegin)<sup>C++20</sup> | Get a reverse `const` iterator to the beginning of the range. |
-| [crend](range-functions.md#crend)<sup>C++20</sup> | Get the sentinel at the end of what `crbegin()` returns. |
-| [data](range-functions.md#data)<sup>C++20</sup> | Get a pointer to the first element in the contiguous range. |
-| [empty](range-functions.md#empty)<sup>C++20</sup> | Determine if the range is empty. |
-| [end](range-functions.md#end)<sup>C++20</sup> | Get the sentinel at the end of the range. |
-| [rbegin](range-functions.md#rbegin)<sup>C++20</sup> | Get a reverse iterator to the beginning of the range. |
-| [rend](range-functions.md#rend)<sup>C++20</sup> | Get a reverse iterator to the sentinel at the end of the range. |
-| [size](range-functions.md#size)<sup>C++20</sup> | Get the size of the range as an unsigned value. |
-| [ssize](range-functions.md#ssize)<sup>C++20</sup> | Get the size of the range as a signed value. |
+| [`begin`](range-functions.md#begin)<sup>C++20</sup> | Get an iterator to the first element in the range. |
+| [`cbegin`](range-functions.md#cbegin)<sup>C++20</sup> | Get a `const` iterator to the first element in the range. |
+| [`cend`](range-functions.md#cend)<sup>C++20</sup> | Get the sentinel at the end of the `const`-qualified range. |
+| [`cdata`](range-functions.md#cdata)<sup>C++20</sup> | Get a `const` pointer to the first element in the contiguous range. |
+| [`crbegin`](range-functions.md#crbegin)<sup>C++20</sup> | Get a reverse `const` iterator to the beginning of the range. |
+| [`crend`](range-functions.md#crend)<sup>C++20</sup> | Get the sentinel at the end of what `crbegin()` returns. |
+| [`data`](range-functions.md#data)<sup>C++20</sup> | Get a pointer to the first element in the contiguous range. |
+| [`empty`](range-functions.md#empty)<sup>C++20</sup> | Determine if the range is empty. |
+| [`end`](range-functions.md#end)<sup>C++20</sup> | Get the sentinel at the end of the range. |
+| [`rbegin`](range-functions.md#rbegin)<sup>C++20</sup> | Get a reverse iterator to the beginning of the range. |
+| [`rend`](range-functions.md#rend)<sup>C++20</sup> | Get a reverse iterator to the sentinel at the end of the range. |
+| [`size`](range-functions.md#size)<sup>C++20</sup> | Get the size of the range as an unsigned value. |
+| [`ssize`](range-functions.md#ssize)<sup>C++20</sup> | Get the size of the range as a signed value. |
 
 ### Types of ranges
 
