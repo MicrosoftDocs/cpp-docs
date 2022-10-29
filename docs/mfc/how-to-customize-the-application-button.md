@@ -47,7 +47,27 @@ The Application menu does not appear on the design surface. To view it, you must
 #### To preview the ribbon control
 
 - On the **Ribbon Editor Toolbar**, click **Test Ribbon**.
+## Example
+```
+int MainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
+{
+	if (CFrameWndEx::OnCreate(lpCreateStruct) == -1)
+		return -1;
 
+	m_wndRibbonBar.Create(this);
+	m_wndRibbonBar.LoadFromResource(IDR_RIBBON);
+
+	// Customize the main button collection of elements by adding fx an Inventory button. Using the Resource Editor open the Ribbon Editor and insert a new button giving it fx ID_INVENTORY as its id. The Ribbon Editor enters it into the Resoure.h file. Unlike the other items in this page (Open, Save, Print and Exit), the new Inventory item has to be manually provisioned with key, tooltip and description. 
+	CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*> inventoryButton;
+	m_wndRibbonBar.GetElementsByID( ID_INVENTORY, inventoryButton ); // retrieve the inventory ribbon element that the ribbon editor created
+	auto inventoryButtonData = inventoryButton.GetData(); // gets the new ribbon element's data
+	if( *inventoryButtonData != nullptr ) // could be null
+	{ 
+		( *inventoryButtonData )->SetKeys( L"i" );
+		( *inventoryButtonData )->SetToolTipText( L"Items for sale" );
+		( *inventoryButtonData )->SetDescription( L"Lists inventory of sales items." );
+	}
+```
 ## See also
 
 [Ribbon Designer (MFC)](ribbon-designer-mfc.md)
