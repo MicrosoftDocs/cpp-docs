@@ -50,9 +50,9 @@ The result, `output`, is itself a kind of range called a *view*.
 
 A view is a lightweight range. View operations--such as default construction, move construction/assignment, copy construction/assignment (if present), destruction, begin, and end--all happen in constant time regardless of the number of elements in the view.
 
-Views are created by range adapters, which are discussed in the following section. For more information about the classes that implement various views, see [View classes](view-classes.md).
+Views are created by range adaptors, which are discussed in the following section. For more information about the classes that implement various views, see [View classes](view-classes.md).
 
-How the elements in the view appear depends on the range adapter that you use to create the view. In the previous example, a range adapter takes a range and returns a view of the elements divisible by three. The underlying range is unchanged.
+How the elements in the view appear depends on the range adaptor that you use to create the view. In the previous example, a range adaptor takes a range and returns a view of the elements divisible by three. The underlying range is unchanged.
 
 Views are composable, which is powerful. In the previous example, the view of vector elements that are divisible by three is combined with the view that squares those elements.
 
@@ -81,15 +81,15 @@ int main()
 }
 ```
 
-## Range adapters
+## Range adaptors
 
-Range adapters take a range and produce a view. Range adapters produce lazily evaluated views. That is, you don't incur the cost of transforming every element in the range to produce the view. You only pay the cost to process an element in the view when you access that element.
+Range adaptors take a range and produce a view. Range adaptors produce lazily evaluated views. That is, you don't incur the cost of transforming every element in the range to produce the view. You only pay the cost to process an element in the view when you access that element.
 
-In the previous example, the `filter` range adapter creates a view named `input` that contains the elements that are divisible by three. The `transform` range adapter takes the view of elements divisible by three and creates a view of those elements squared.
+In the previous example, the `filter` range adaptor creates a view named `input` that contains the elements that are divisible by three. The `transform` range adaptor takes the view of elements divisible by three and creates a view of those elements squared.
 
-Range adapters can be chained together (composed), which is the heart of the power and flexibility of ranges. Composing range adapters allows you to overcome the problem that the previous STL algorithms aren't easily composable.
+Range adaptors can be chained together (composed), which is the heart of the power and flexibility of ranges. Composing range adaptors allows you to overcome the problem that the previous STL algorithms aren't easily composable.
 
-For more information about creating views, see [Range adapters](range-adaptors.md).
+For more information about creating views, see [Range adaptors](range-adaptors.md).
 
 ## Range algorithms
 
@@ -134,5 +134,5 @@ The range concepts mirror the hierarchy of iterator categories. The following ta
 ## See also
 
 [Range functions](range-functions.md)\
-[Range adapters](range-adaptors.md)\
+[Range adaptors](range-adaptors.md)\
 [Header files reference](../standard-library/cpp-standard-library-header-files.md)

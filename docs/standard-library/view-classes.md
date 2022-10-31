@@ -15,7 +15,7 @@ For example, you could create a view that provides only the even elements from a
 
 A view can be copied, assigned, and destroyed in constant time no matter how many elements it contains. This is because a view doesn't own the elements that it refers to, so it doesn't need to make a copy. This is also why you can compose views without a performance penalty.
 
-You typically create a view by using a [range adapter](range-adaptors.md). Range adapters are the intended way to create a view, are easier to use than instantiating the view classes directly, and are sometimes more efficient than instantiating the view classes directly. The view classes are exposed directly in case you need to create your own custom view type based on an existing view type.
+You typically create a view by using a [range adaptor](range-adaptors.md). Range adaptors are the intended way to create a view, are easier to use than instantiating the view classes directly, and are sometimes more efficient than instantiating the view classes directly. The view classes are exposed directly in case you need to create your own custom view type based on an existing view type.
 
 Here's a brief example of creating a view of the squares of the elements that are divisible by three in a vector:
 
@@ -122,13 +122,13 @@ The following view classes are defined in the `std::ranges` namespace.
 | [`transform_view`](transform-view-class.md)<sup>C++20</sup> | A view of an underlying sequence after a transformation function is applied to each element. |
 | [`values_view`](values-view-class.md)<sup>C++20</sup> | A view over the second index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of the `int` elements from each tuple. |
 
-Many of these classes have corresponding [range adapters](range-adaptors.md) in the `std:views` namespace that creates them. Prefer the adapters in `std::views` to creating view classes directly. The range adapters are the intended access points, are easier to use, and in some cases are more efficient.
+Many of these classes have corresponding [range adaptors](range-adaptors.md) in the `std:views` namespace that creates them. Prefer the adaptors in `std::views` to creating view classes directly. The range adaptors are the intended access points, are easier to use, and in some cases are more efficient.
 
 ## View classes characteristics
 
 Each view class topic has a **Characteristics** section after the syntax section. The **Characteristics** section has the following entries:
 
-* **Range adapter**: A link to the range adapter that creates the view. You typically use a range adapter to create a view rather than create a view class directly, so it's listed here for convenience.
+* **Range adaptor**: A link to the range adaptor that creates the view. You typically use a range adaptor to create a view rather than create a view class directly, so it's listed here for convenience.
 * **Underlying range**: Views have different iterator requirements for the kind of underlying range that they can use. See the following table for the hierarchy of iterators.
 * **View iterator category**: The iterator category of the view. When a view adapts a range, the iterator type for the view is typically the same as the iterator type of the underlying range. However, it might be different for some views. For example, `reverse_view` has a `bidirectional_iterator` category, even if the underlying range has a `random_access_iterator` category.
 * **Element type**: The type of the elements that the view's iterator returns.
@@ -145,7 +145,7 @@ Each view class topic has a **Characteristics** section after the syntax section
 
 ### Iterator hierarchy
 
-The iterator category that **Range adapter** and **View iterator category** mention in the **Characteristics** section refers to the hierarchy of iterators that ranges and views support.
+The iterator category that **Range adaptor** and **View iterator category** mention in the **Characteristics** section refers to the hierarchy of iterators that ranges and views support.
 
 That hierarchy, in increasing order of capability, is:
 
@@ -165,4 +165,4 @@ The statement "requires `input_range` or better" means that the view can be used
 ## See also
 
 [`<ranges>`](ranges.md)\
-[Range adapters](range-adaptors.md)
+[Range adaptors](range-adaptors.md)

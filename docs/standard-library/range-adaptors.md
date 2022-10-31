@@ -1,13 +1,13 @@
 ---
-description: "Learn more about range adapters, which create views on ranges."
-title: "Range adapters"
+description: "Learn more about range adaptors, which create views on ranges."
+title: "Range adaptors"
 ms.date: 10/19/2022
 f1_keywords: ["ranges/std::all", "ranges/std::all_t", "ranges/std::common", "ranges/std::counted", "ranges/std::drop", "ranges/std::drop_while", "ranges/std::elements", "ranges/std::filter", "ranges/std::iota", "ranges/std::join", "ranges/std::keys", "ranges/std::lazy_split", "ranges/std::reverse", "ranges/std::split", "ranges/std::subrange", "ranges/std::take", "ranges/std::take_while", "ranges/std::transform"]
 helpviewer_keywords: ["std::ranges [C++], all", "std::ranges [C++], all_t", "std::ranges [C++], common", "std::ranges [C++], counted", "std::ranges [C++], drop", "std::ranges [C++], drop_while", "std::ranges [C++], elements", "std::ranges [C++], filter", "std::ranges [C++], iota", "std::ranges [C++], join", "std::ranges [C++], keys", "std::ranges [C++], lazy_split", "std::ranges [C++], reverse", "std::ranges [C++], split", "std::ranges [C++], subrange", "std::ranges [C++], take", "std::ranges [C++], take_while", "std::ranges [C++], transform"]
 ---
-# Range adapters
+# Range adaptors
 
-Range adapters create a *view* (one of the [view classes](view-classes.md) in the `std::views` namespace) from a range. We recommend that you use an adapter in `std::ranges::views` instead of creating the view types directly. The adapters are the intended way to access views. They're easier to use, and in some cases more efficient, than creating instances of the view types directly.
+Range adaptors create a *view* (one of the [view classes](view-classes.md) in the `std::views` namespace) from a range. We recommend that you use an adaptor in `std::ranges::views` instead of creating the view types directly. The adaptors are the intended way to access views. They're easier to use, and in some cases more efficient, than creating instances of the view types directly.
 
 A view is a lightweight object that refers to elements from a range. A view can:
 
@@ -44,9 +44,9 @@ int main()
 0 9 36 81
 ```
 
-The first range adapter, `std::views::filter`, provides a view that contains the elements from `input` that are divisible by three. The other range adapter, `std::views::transform`, takes the view that contains the elements divisible by three and provides a view of the square of those elements.
+The first range adaptor, `std::views::filter`, provides a view that contains the elements from `input` that are divisible by three. The other range adaptor, `std::views::transform`, takes the view that contains the elements divisible by three and provides a view of the square of those elements.
 
-When a range adapter produces a view, it doesn't incur the cost of transforming every element in the range to produce that view. The cost to process an element in the view is paid only when you access that element. 
+When a range adaptor produces a view, it doesn't incur the cost of transforming every element in the range to produce that view. The cost to process an element in the view is paid only when you access that element. 
 
 Creating a view only prepares to do work in the future. In the previous example, creating the view doesn't result in finding all the elements divisible by three. It also doesn't square the elements that it finds. That work happens only when you access an element in the view.
 
@@ -77,17 +77,17 @@ int main()
 }
 ```
 
-Range adapters come in many forms. For example, there are range adapters that allow you to produce a view by:
+Range adaptors come in many forms. For example, there are range adaptors that allow you to produce a view by:
 
 - Filtering another range based on a predicate (`view::filter`).
 - Transforming the elements in a range (`view::transform`).
 - Splitting a range (`view::split`).
 
-Range adapters can be chained together (composed). That's where the power and flexibility of ranges are most apparent. Composing range adapters allows you to overcome a core problem with the previous Standard Template Library (STL) algorithms, which is that they aren't easy to chain together.
+Range adaptors can be chained together (composed). That's where the power and flexibility of ranges are most apparent. Composing range adaptors allows you to overcome a core problem with the previous Standard Template Library (STL) algorithms, which is that they aren't easy to chain together.
 
-The following range adapters are available in the `std::views` namespace. The `std::views` namespace is a convenience alias for `std::ranges::views`.
+The following range adaptors are available in the `std::views` namespace. The `std::views` namespace is a convenience alias for `std::ranges::views`.
 
-| Range adapter | Description |
+| Range adaptor | Description |
 |--|--|
 | [`all`](#all)<sup>C++20</sup> | Create a view that refers to a range and its elements. |
 | [`common`](#common)<sup>C++20</sup> | Create a view that has the same iterator and sentinel types from a range that doesn't. |
@@ -107,15 +107,15 @@ The following range adapters are available in the `std::views` namespace. The `s
 | [`transform`](#transform)<sup>C++20</sup> | Create a view of transformed elements from another view. |
 | [`values`](#values)<sup>C++20</sup> | Create a view of the second index into each tuple-like value in a collection. |
 
-In the previous table, a range adapter is typically described as taking a range and producing a view. To be precise, range adapters have a range argument that accepts one of the following:
+In the previous table, a range adaptor is typically described as taking a range and producing a view. To be precise, range adaptors have a range argument that accepts one of the following:
 
 - The `cv-unqualified` type models `view`, and the argument is an rvalue or is copyable.
 - When you pass the argument as an lvalue, it must model `range` and live as long as the view.
 - When you pass the argument as an rvalue, such as when calling [`owning_view`](owning-view-class.md), it must model `range` and `movable`.
 
-Range adapter functions are typically [function objects](https://eel.is/c++draft/function.objects), which look like function calls and enforce constraints on the types that can be passed.
+Range adaptor functions are typically [function objects](https://eel.is/c++draft/function.objects), which look like function calls and enforce constraints on the types that can be passed.
 
-You can pass range adapters and the result of pipe operations (`|`) to code that expects function objects. In the following example, the view that the `split` range adapter creates is passed to the `transform` range adapter as if by a function call, because the `transform` range adapter is a function object.
+You can pass range adaptors and the result of pipe operations (`|`) to code that expects function objects. In the following example, the view that the `split` range adaptor creates is passed to the `transform` range adaptor as if by a function call, because the `transform` range adaptor is a function object.
 
 ```cpp
 std::map<int, string> x = {{0, "Hello, world"}, {42, "Goodbye, world"}};
@@ -151,7 +151,7 @@ Use `std::views::all_t<decltype((rg))>` to get the type of the returned view.
 
 ### Remarks
 
-This range adapter is the best way to convert a range into a view. One reason to create a view from a range is to pass it by value at low cost, if passing the range by value could be expensive.
+This range adaptor is the best way to convert a range into a view. One reason to create a view from a range is to pass it by value at low cost, if passing the range by value could be expensive.
 
 Getting a view for a range is a useful alternative to passing a heavyweight range by value because views are inexpensive to create, copy, and destroy. A possible exception is `owning_view`, which is a view that owns the underlying range. 
 
@@ -209,7 +209,7 @@ The range to create the view from.
 
 ### Remarks
 
-When an API requires the begin iterator and end sentinel to have the same type, and the view that you're using doesn't meet that requirement (or you don't know if it does), use this range adapter to create a `common_view`. It guarantees that the type of the begin iterator and the type of the end sentinel are the same.
+When an API requires the begin iterator and end sentinel to have the same type, and the view that you're using doesn't meet that requirement (or you don't know if it does), use this range adaptor to create a `common_view`. It guarantees that the type of the begin iterator and the type of the end sentinel are the same.
 
 ### Example: `common`
 
@@ -396,7 +396,7 @@ Create a view that contains the elements of a range that remain after the leadin
 constexpr ranges::view auto drop_while(R&& rg, P&& predicate);
 
 2) template<class P>
-constexpr /*range adapter closure*/ drop_while(P&& predicate);
+constexpr /*range adaptor closure*/ drop_while(P&& predicate);
 ```
 
 ### Parameters
@@ -574,7 +574,7 @@ Create a view that contains the elements of a range that match the specified con
 constexpr ranges::view auto filter(R&& rg, P&& predicate);
 
 2) template<class P>
-constexpr /*range adapter closure*/ filter(P&& predicate);
+constexpr /*range adaptor closure*/ filter(P&& predicate);
 ```
 
 ### Parameters
@@ -686,7 +686,7 @@ void print(auto&& v)
 
 int main()
 {
-    // create an iota view with its range adapter (preferred)
+    // create an iota view with its range adaptor (preferred)
     print(std::views::iota(0, 5)); // outputs 0 1 2 3 4
     
     // create an iota_view class directly
@@ -722,7 +722,7 @@ The type of the elements to extract from the stream.
 A [`basic_istream_view`](basic-istream-view-class.md).
 
 
-This range adapter is equivalent to `ranges::basic_istream_view<Val, typename U::char_type, typename U::traits_type>(str)`, where `U` is the type of `str`.
+This range adaptor is equivalent to `ranges::basic_istream_view<Val, typename U::char_type, typename U::traits_type>(str)`, where `U` is the type of `str`.
 
 ### Example: `istream`
 
@@ -755,7 +755,7 @@ Create a view that combines all the elements of multiple ranges into a single vi
 1) template <ranges::viewable_range R>
 [[nodiscard]] constexpr ranges::view auto join(R&& rg) const noexcept;
 
-2) inline constexpr /*range adapter closure*/ join();
+2) inline constexpr /*range adaptor closure*/ join();
 ```
 
 ### Parameters
@@ -864,7 +864,7 @@ int main()
         {"Windows 2000", 2000}
     };
     
-    // Another way to call the range adapter is by using '|'
+    // Another way to call the range adaptor is by using '|'
     for (std::string version : windows | std::views::keys)
     {
         std::cout << version << ' '; // Windows 1.0 Windows 2.0 Windows 3.0 ...
@@ -886,7 +886,7 @@ Split a range into subranges based on a delimiter. The delimiter can be a single
 constexpr view auto lazy_split(R&& rg, Pattern&& delimiter);
 
 2) template<class Pattern>
-constexpr /*range adapter closure*/ lazy_split(Pattern&& delimiter);
+constexpr /*range adaptor closure*/ lazy_split(Pattern&& delimiter);
 ```
 
 ### Parameters
@@ -911,7 +911,7 @@ A [`lazy_split_view`](lazy-split-view-class.md) that contains one or more subran
 
 The delimiter isn't part of the result. For example, if you split the range `1,2,3` on the value `2`, you get two subranges: `1` and `3`.
 
-A related adapter is [`split`](#split). The primary differences between `split_view` and `lazy_split_view` are:
+A related adaptor is [`split`](#split). The primary differences between `split_view` and `lazy_split_view` are:
 
 | View | Can split a `const` range | Range iterator |
 |--|--|--|
@@ -976,7 +976,7 @@ Create a view of the elements of a range in reverse order.
 1) template<viewable_range R>
 constexpr ranges::view auto reverse(R&& rg);
 
-2) inline constexpr /*range adapter closure*/ reverse();
+2) inline constexpr /*range adaptor closure*/ reverse();
 ```
 
 ### Parameters
@@ -1018,7 +1018,7 @@ int main()
     }
     std::cout << '\n';
 
-    // using the range adapter without using the pipe syntax
+    // using the range adaptor without using the pipe syntax
     auto rv2 = std::views::reverse(v);
     for (auto &&e : rv2) // outputs 6 5 -4 3 2 1 0
     {
@@ -1090,7 +1090,7 @@ Split a view into subranges based on a delimiter. The delimiter can be a single 
 constexpr view auto split(R&& rg, Pattern&& delimiter);
 
 2) template<class Pattern>
-constexpr /*range adapter closure*/ split(Pattern&& delimiter);
+constexpr /*range adaptor closure*/ split(Pattern&& delimiter);
 ```
 
 ### Parameters
@@ -1115,7 +1115,7 @@ A [`split_view`](split-view-class.md) that contains one or more subranges.
 
 The delimiter isn't part of the result. For example, if you split the range `1,2,3` on the value `2`, you get two subranges: `1` and `3`.
 
-A related adapter is [`lazy_split`](#lazy_split). The primary differences between `split_view` and `lazy_split_view` are:
+A related adaptor is [`lazy_split`](#lazy_split). The primary differences between `split_view` and `lazy_split_view` are:
 
 | View | Can split a `const` range | Range type |
 |---|---|---|
@@ -1180,7 +1180,7 @@ Create a view that contains the specified number of elements taken from the fron
 constexpr ranges::view auto take(R&& rg, ranges::range_difference_type<R> count);
 
 2) template<class DifferenceType>
-constexpr /*range adapter closure*/ take(DifferenceType&& count); 
+constexpr /*range adaptor closure*/ take(DifferenceType&& count); 
 ```
 
 ### Parameters
@@ -1250,7 +1250,7 @@ Create a view that contains the leading elements of a range that match the speci
 constexpr ranges::view auto take_while(R&& rg, P&& predicate);
 
 2) template<class P>
-constexpr /*range adapter closure*/ take_while(P&& predicate);
+constexpr /*range adaptor closure*/ take_while(P&& predicate);
 ```
 
 ### Parameters
@@ -1322,7 +1322,7 @@ Create a view of elements, each of which is a transformation of an element in th
 constexpr ranges::view auto transform(R&& rg, F&& fun);
 
 2) template<class F>
-constexpr /*range adapter closure*/ transform(F&& fun);
+constexpr /*range adaptor closure*/ transform(F&& fun);
 ```
 
 ### Parameters
@@ -1451,7 +1451,7 @@ int main()
         {"Windows 2000", 2000}
     };
 
-    // Another way to call the range adapter by using '|'
+    // Another way to call the range adaptor by using '|'
     // Create a values_view that contains the year from each pair
     for (int years : windows | std::views::values)
     {
@@ -1465,7 +1465,7 @@ int main()
 1985 1987 1990 1992 1993 1995 1996 1995 1998 1985 2000
 ```
 
-## Range adapter type aliases
+## Range adaptor type aliases
 
 ### `all_t`
 
