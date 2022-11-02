@@ -49,7 +49,7 @@ For a description of the following entries, see [View class characteristics](vie
 | **Range adaptor** | [`istream`](range-adaptors.md#istream) |
 | **Underlying range** | None  |
 | **Element type** |The same as `Val` |
-| **View iterator category** | `input_range` |
+| **View iterator category** | [`input_range`](range-concepts.md#input_range) |
 | **Sized** | No |
 | **Is `const`-iterable** | No |
 | **Common range** | No |

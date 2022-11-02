@@ -11,14 +11,14 @@ dev_langs: ["C++"]
 
 Splits a range into subranges based on a delimiter. The delimiter can be a single element or a view of elements. The delimiter isn't part of the resulting subranges.
 
-The primary differences between a `split_view` and a `lazy_split_view` are:
+The primary differences between a [`split_view`](split-view-class.md) and a `lazy_split_view` are:
 
 | **View** | **Can split a `const` range** | **range type** |
 |--|--|
-| `split_view` | no | Supports `forward_range` or better. |
-| `lazy_split_view` | yes | Supports `input_range` or better. |
+| `split_view` | no | Supports [`forward_range`](range-concepts.md#forward_range) or higher. |
+| `lazy_split_view` | yes | Supports [`input_range`](range-concepts.md#input_range) or higher. |
 
-What makes a `lazy_split_view` "lazy" is that it doesn't lookahead for the next delimiter. That means it can support `input_range` whereas `split_view` requires at least `forward_range`. This is because `input_range` is single-pass whereas `forward_range` allows  multi-pass iteration.
+What makes a `lazy_split_view` "lazy" is that it doesn't lookahead for the next delimiter. That means it can support [`input_range`](range-concepts.md#input_range) whereas `split_view` requires at least `forward_range`. This is because `input_range` is single-pass whereas `forward_range` allows  multi-pass iteration.
 
 Prefer `split_view` because it's more efficient--unless you must split a range that is `const`. Regarding performance, `split_view` is more efficient.
 
@@ -38,7 +38,7 @@ class lazy_split_view : public view_interface<lazy_split_view<V, Pattern>>
 
 *`Pattern`*\
 The type of the view that specifies a delimiter sequence.\
-The `(forward_range<V> || tiny-range <Pattern>)` requirement means that when the underlying range isn't `forward_range`, the delimiter must be a `tiny_range`. A `tiny_range` is a range with static extent whose size is 0 or 1. `tiny_range<T>` requires `sized_range<T>`, and `T::size()` must be a constant-expression that's less than or equal to 1.
+The `(forward_range<V> || tiny-range <Pattern>)` requirement means that when the underlying range isn't [`forward_range`](range-concepts.md#forward_range), the delimiter must be a `tiny_range`. A `tiny_range` is a range with static extent whose size is 0 or 1. `tiny_range<T>` requires `sized_range<T>`, and `T::size()` must be a constant-expression that's less than or equal to 1.
 
 *`V`*\
  The type of the underlying view.
@@ -48,11 +48,11 @@ The `(forward_range<V> || tiny-range <Pattern>)` requirement means that when the
 For a description of the following entries, see [View class characteristics](view-classes.md#view-classes-characteristics)
 
 **Range adaptor:** [`lazy_split`](range-adaptors.md#lazy_split)
-**Underlying range:** must satisfy `input_range` or higher
+**Underlying range:** must satisfy [`input_range`](range-concepts.md#input_range) or higher
 **View iterator category:** same as the underlying range
 **Element type:** collection of `range_reference_t<V>`
 **Sized:** no
-**Common range:** Yes when the underlying range is both `forward_range` and `common`.
+**Common range:** Yes when the underlying range is both [`forward_range`](range-concepts.md#forward_range) and `common`.
 **Borrowed range:** no
 **Is `const`-iterable:** only if the underlying range satisfies `forward_range` and is `const`-iterable
 

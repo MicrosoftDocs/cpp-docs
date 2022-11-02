@@ -930,6 +930,8 @@ items:
           href: range-functions.md
         - name: <range> adaptors
           href: range-adaptors.md
+        - name: <range> concepts
+          href: range-concepts.md
         - name: <range> view classes
           href: view-classes.md
           expanded: false

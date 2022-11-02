@@ -6,7 +6,7 @@ api_name: ["_strtoui64", "_strtoui64_l", "_wcstoui64", "_wcstoui64_l", "_o__strt
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["CRT_OPEN/_strtoui64", "CRT_OPEN/_strtoui64_l", "CORECRT_WSTDLIB/_wcstoui64", "CORECRT_WSTDLIB/_wcstoui64_l", "TCHAR/_tcstoui64", "TCHAR_tcstoui64_l", "_strtoui64", "_strtoui64_l", "_wcstoui64", "_wcstoui64_l", "_tcstoui64", "_tcstoui64_l", "strtoui64", "strtoui64_l", "wcstoui64", "wcstoui64_l"]
+f1_keywords: ["CRT_OPEN/_strtoui64", "CRT_OPEN/_strtoui64_l", "STDLIB/_strtoui64", "STDLIB/_strtoui64_l", "CORECRT_WSTDLIB/_wcstoui64", "CORECRT_WSTDLIB/_wcstoui64_l", "TCHAR/_tcstoui64", "TCHAR/_tcstoui64_l", "_strtoui64", "_strtoui64_l", "_wcstoui64", "_wcstoui64_l", "_tcstoui64", "_tcstoui64_l", "strtoui64", "strtoui64_l", "wcstoui64", "wcstoui64_l"]
 helpviewer_keywords: ["_strtoui64_l function", "_wcstoui64_l function", "string conversion, to integers", "wcstoui64_l function", "_strtoui64 function", "_wcstoui64 function", "wcstoui64 function", "strtoui64_l function", "strtoui64 function"]
 ms.assetid: 7fcb537e-4554-4ceb-a5b6-bc09244e72ef
 ---
@@ -33,7 +33,7 @@ unsigned __int64 _strtoui64_l(
    int base,
    _locale_t locale
 );
-unsigned __int64 _wcstoui64(
+unsigned __int64 _wcstoui64_l(
    const wchar_t *strSource,
    wchar_t **endptr,
    int base,

@@ -35,7 +35,7 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::take_while`](range-adaptors.md#take_while) |
-| **Underlying range** | Must satisfy `input_range` or higher |
+| **Underlying range** | Must satisfy [`input_range`](range-concepts.md#input_range) or higher |
 | **Element type** | Same as the underlying range |
 | **View iterator category** | Same as the underlying range |
 | **Sized** | No |
@@ -178,7 +178,7 @@ The behavior is undefined if the view doesn't have a predicate.
 
 ### Remarks
 
-For 1, the `Simple_view` requirement means that a view *`V`* and `const V` have the same iterator and sentinel types.
+For 1, the [`Simple_view`](range-concepts.md#simple_view) requirement means that a view *`V`* and `const V` have the same iterator and sentinel types.
 
 ## `end`
 
@@ -203,7 +203,7 @@ The sentinel that follows the last element in the view.
 
 ### Remarks
 
-For 1, the `Simple_view` requirement means that a view *`V`* and `const V` have the same iterator and sentinel types.
+For 1, the [`Simple_view`](range-concepts.md#simple_view) requirement means that a view *`V`* and `const V` have the same iterator and sentinel types.
 
 ## `pred`
 

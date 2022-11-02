@@ -15,8 +15,8 @@ A related view is the [`lazy_split_view`](lazy-split-view-class.md) class. The p
 
 | **View** | **Can split a `const` range**| **range type** |
 |--|--|
-| `split_view` | no | Supports `forward_range` or better. |
-| `lazy_split_view` | yes | Supports `input_range` or better. |
+| `split_view` | no | Supports [`forward_range`](range-concepts.md#forward_range) or higher. |
+| `lazy_split_view` | yes | Supports [`input_range`](range-concepts.md#input_range) or higher. |
 
 Prefer `split_view` because it's more efficient unless you must split a range that is `const`.
 
@@ -46,10 +46,10 @@ For a description of the following entries, see [View class characteristics](vie
 | **Range adaptor** | [`views::split`](range-adaptors.md#split) |
 | **Underlying range** | Same as underlying range |
 | **Element type** | `range_reference_t<V>` |
-| **View iterator category** | Satisfies `forward_range` |
+| **View iterator category** | Satisfies [`forward_range`](range-concepts.md#forward_range) |
 | **Sized** | No |
 | **Is `const`-iterable** | No |
-| **Common range** | Only if the underlying range satisfies `common_range` |
+| **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |
 | **Borrowed range** | No |
 
 ## Members

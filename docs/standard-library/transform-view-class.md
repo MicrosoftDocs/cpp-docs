@@ -35,12 +35,12 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::transform`](range-adaptors.md#transform) |
-| **Underlying range** | Must satisfy `input_range` or higher |
+| **Underlying range** | Must satisfy [`input_range`](range-concepts.md#input_range) or higher |
 | **Element type** | Same as the transformation function's return type. |
-| **View iterator category** | Supports `input_range` up to `random_access`, depending on the underlying range |
-| **Sized** | Only if the underlying range satisfies `sized_range` |
+| **View iterator category** | Supports [`input_range`](range-concepts.md#input_range) up to `random_access`, depending on the underlying range |
+| **Sized** | Only if the underlying range satisfies [`sized_range`](range-concepts.md#sized_range) |
 | **Is `const`-iterable** | Only if the underlying range is `const` iterable and the transformation works on `const` references. |
-| **Common range** | Only if the underlying range satisfies `common_range` |
+| **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |
 | **Borrowed range** | No |
 
 ## Members
@@ -51,7 +51,7 @@ For a description of the following entries, see [View class characteristics](vie
 | [`base`](#base)<sup>C++20</sup> | Get the underlying range. |
 | [`begin`](#begin)<sup>C++20</sup> | Get an iterator to the first element. |
 | [`end`](#end)<sup>C++20</sup> | Get the sentinel at the end of the view. |
-| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy `sized_range`. |
+| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy [`sized_range`](range-concepts.md#sized_range). |
 | **Inherited from [`view_interface`](view-interface.md)** | **Description** |
 | [`back`](view-interface.md#back)<sup>C++20</sup> | Get the last element. |
 | [`empty`](view-interface.md#empty)<sup>C++20</sup> | Test whether the view is empty. |

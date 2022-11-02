@@ -33,13 +33,13 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::filter`](range-adaptors.md#filter) |
-| **Underlying range** | Must satisfy `input_range` or higher |
+| **Underlying range** | Must satisfy [`input_range`](range-concepts.md#input_range) or higher |
 | **Element type** | Same as the underlying range |
-| **View iterator category** | Supports `input_range`, `forward_range`, or `bidirectional_range` depending on the underlying range |
+| **View iterator category** | Supports `input_range`, [`forward_range`](range-concepts.md#forward_range), or [`bidirectional_range`](range-concepts.md#bidirectional_range) depending on the underlying range |
 | **Sized** | No |
 | **Is `const`-iterable** | No |
-| **Common range** | Only if the underlying range satisfies `common_range` |
-| **Borrowed range** | Only if the underlying range satisfies `borrowed_range` |
+| **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |
+| **Borrowed range** | Only if the underlying range satisfies [`borrowed_range`](range-concepts.md#borrowed_range) |
 
 ## Members
 

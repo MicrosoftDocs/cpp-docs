@@ -33,7 +33,7 @@ class ref_view : public ranges::view_interface<ref_view<R>>;
 | [`data`](view-interface.md#data)<sup>C++20</sup> | Get a pointer to the first element in the referenced range. |
 | [`empty`](#empty)<sup>C++20</sup> | Test whether this `ref_view` is empty. |
 | [`end`](#end)<sup>C++20</sup> | Get the sentinel at the end of this `ref_view`. |
-| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy `sized_range`. |
+| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy [`sized_range`](range-concepts.md#sized_range). |
 | **Inherited from [`view_interface`](view-interface.md)** | **Description** |
 | [`back`](view-interface.md#back)<sup>C++20</sup> | Get the last element. |
 | [`front`](view-interface.md#front)<sup>C++20</sup> | Get the first element. |
@@ -47,12 +47,12 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::all`](range-adaptors.md#all) or [`views::common`](range-adaptors.md#common) |
-| **Underlying range** | Must satisfy `input_range` |
+| **Underlying range** | Must satisfy [`input_range`](range-concepts.md#input_range) |
 | **Element type** | Same as the underlying range |
 | **View iterator category** | Same as the underlying range |
-| **Sized** | Only if the underlying range satisfies `sized_range` |
+| **Sized** | Only if the underlying range satisfies [`sized_range`](range-concepts.md#sized_range) |
 | **Is `const`-iterable** | Yes |
-| **Common range** | Only if the underlying range satisfies `common_range` |
+| **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |
 | **Borrowed range** | Yes |
 
 ## Requirements
