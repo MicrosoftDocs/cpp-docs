@@ -42,68 +42,68 @@ The type of the key component of an element in the controlled sequence.
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[`hash_set::const_iterator`](#const_iterator)|The type of a constant iterator for the controlled sequence.|
-|[`hash_set::const_reference`](#const_reference)|The type of a constant reference to an element.|
-|[`hash_set::const_reverse_iterator`](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|
-|[`hash_set::difference_type`](#difference_type)|The type of a (possibly signed) distance between two elements.|
-|[`hash_set::generic_container`](#generic_container)|The type of the generic interface for the container.|
-|[`hash_set::generic_iterator`](#generic_iterator)|The type of an iterator for the generic interface for the container.|
-|[`hash_set::generic_reverse_iterator`](#generic_reverse_iterator)|The type of a reverse iterator for the generic interface for the container.|
-|[`hash_set::generic_value`](#generic_value)|The type of an element for the generic interface for the container.|
-|[`hash_set::hasher`](#hasher)|The hashing delegate for a key.|
-|[`hash_set::iterator`](#iterator)|The type of an iterator for the controlled sequence.|
-|[`hash_set::key_compare`](#key_compare)|The ordering delegate for two keys.|
-|[`hash_set::key_type`](#key_type)|The type of an ordering key.|
-|[`hash_set::reference`](#reference)|The type of a reference to an element.|
-|[`hash_set::reverse_iterator`](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|
-|[`hash_set::size_type`](#size_type)|The type of a (non-negative) distance between two elements.|
-|[`hash_set::value_compare`](#value_compare)|The ordering delegate for two element values.|
-|[`hash_set::value_type`](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`hash_set::const_iterator`](#const_iterator) | The type of a constant iterator for the controlled sequence. |
+| [`hash_set::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`hash_set::const_reverse_iterator`](#const_reverse_iterator) | The type of a constant reverse iterator for the controlled sequence. |
+| [`hash_set::difference_type`](#difference_type) | The type of a (possibly signed) distance between two elements. |
+| [`hash_set::generic_container`](#generic_container) | The type of the generic interface for the container. |
+| [`hash_set::generic_iterator`](#generic_iterator) | The type of an iterator for the generic interface for the container. |
+| [`hash_set::generic_reverse_iterator`](#generic_reverse_iterator) | The type of a reverse iterator for the generic interface for the container. |
+| [`hash_set::generic_value`](#generic_value) | The type of an element for the generic interface for the container. |
+| [`hash_set::hasher`](#hasher) | The hashing delegate for a key. |
+| [`hash_set::iterator`](#iterator) | The type of an iterator for the controlled sequence. |
+| [`hash_set::key_compare`](#key_compare) | The ordering delegate for two keys. |
+| [`hash_set::key_type`](#key_type) | The type of an ordering key. |
+| [`hash_set::reference`](#reference) | The type of a reference to an element. |
+| [`hash_set::reverse_iterator`](#reverse_iterator) | The type of a reverse iterator for the controlled sequence. |
+| [`hash_set::size_type`](#size_type) | The type of a (non-negative) distance between two elements. |
+| [`hash_set::value_compare`](#value_compare) | The ordering delegate for two element values. |
+| [`hash_set::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[`hash_set::begin`](#begin)|Designates the beginning of the controlled sequence.|
-|[`hash_set::bucket_count`](#bucket_count)|Counts the number of buckets.|
-|[`hash_set::clear`](#clear)|Removes all elements.|
-|[`hash_set::count`](#count)|Counts elements matching a specified key.|
-|[`hash_set::empty`](#empty)|Tests whether no elements are present.|
-|[`hash_set::end`](#end)|Designates the end of the controlled sequence.|
-|[`hash_set::equal_range`](#equal_range)|Finds range that matches a specified key.|
-|[`hash_set::erase`](#erase)|Removes elements at specified positions.|
-|[`hash_set::find`](#find)|Finds an element that matches a specified key.|
-|[`hash_set::hash_delegate`](#hash_delegate)|Copies the hashing delegate for a key.|
-|[`hash_set::hash_set`](#hash_set)|Constructs a container object.|
-|[`hash_set::insert`](#insert)|Adds elements.|
-|[`hash_set::key_comp`](#key_comp)|Copies the ordering delegate for two keys.|
-|[`hash_set::load_factor`](#load_factor)|Counts the average elements per bucket.|
-|[`hash_set::lower_bound`](#lower_bound)|Finds beginning of range that matches a specified key.|
-|[`hash_set::make_value`](#make_value)|Constructs a value object.|
-|[`hash_set::max_load_factor`](#max_load_factor)|Gets or sets the maximum elements per bucket.|
-|[`hash_set::rbegin`](#rbegin)|Designates the beginning of the reversed controlled sequence.|
-|[`hash_set::rehash`](#rehash)|Rebuilds the hash table.|
-|[`hash_set::rend`](#rend)|Designates the end of the reversed controlled sequence.|
-|[`hash_set::size`](#size)|Counts the number of elements.|
-|[`hash_set::swap`](#swap)|Swaps the contents of two containers.|
-|[`hash_set::to_array`](#to_array)|Copies the controlled sequence to a new array.|
-|[`hash_set::upper_bound`](#upper_bound)|Finds end of range that matches a specified key.|
-|[`hash_set::value_comp`](#value_comp)|Copies the ordering delegate for two element values.|
+| Member function | Description |
+|---|---|
+| [`hash_set::begin`](#begin) | Designates the beginning of the controlled sequence. |
+| [`hash_set::bucket_count`](#bucket_count) | Counts the number of buckets. |
+| [`hash_set::clear`](#clear) | Removes all elements. |
+| [`hash_set::count`](#count) | Counts elements matching a specified key. |
+| [`hash_set::empty`](#empty) | Tests whether no elements are present. |
+| [`hash_set::end`](#end) | Designates the end of the controlled sequence. |
+| [`hash_set::equal_range`](#equal_range) | Finds range that matches a specified key. |
+| [`hash_set::erase`](#erase) | Removes elements at specified positions. |
+| [`hash_set::find`](#find) | Finds an element that matches a specified key. |
+| [`hash_set::hash_delegate`](#hash_delegate) | Copies the hashing delegate for a key. |
+| [`hash_set::hash_set`](#hash_set) | Constructs a container object. |
+| [`hash_set::insert`](#insert) | Adds elements. |
+| [`hash_set::key_comp`](#key_comp) | Copies the ordering delegate for two keys. |
+| [`hash_set::load_factor`](#load_factor) | Counts the average elements per bucket. |
+| [`hash_set::lower_bound`](#lower_bound) | Finds beginning of range that matches a specified key. |
+| [`hash_set::make_value`](#make_value) | Constructs a value object. |
+| [`hash_set::max_load_factor`](#max_load_factor) | Gets or sets the maximum elements per bucket. |
+| [`hash_set::rbegin`](#rbegin) | Designates the beginning of the reversed controlled sequence. |
+| [`hash_set::rehash`](#rehash) | Rebuilds the hash table. |
+| [`hash_set::rend`](#rend) | Designates the end of the reversed controlled sequence. |
+| [`hash_set::size`](#size) | Counts the number of elements. |
+| [`hash_set::swap`](#swap) | Swaps the contents of two containers. |
+| [`hash_set::to_array`](#to_array) | Copies the controlled sequence to a new array. |
+| [`hash_set::upper_bound`](#upper_bound) | Finds end of range that matches a specified key. |
+| [`hash_set::value_comp`](#value_comp) | Copies the ordering delegate for two element values. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[`hash_set::operator=`](#op)|Replaces the controlled sequence.|
+| Operator | Description |
+|---|---|
+| [`hash_set::operator=`](#op) | Replaces the controlled sequence. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|<xref:System.Collections.IEnumerable>|Sequence through elements.|
-|<xref:System.Collections.ICollection>|Maintain group of elements.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Sequence through typed elements.|
-|<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|
-|IHash\<Key, Value>|Maintain generic container.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| <xref:System.Collections.IEnumerable> | Sequence through elements. |
+| <xref:System.Collections.ICollection> | Maintain group of elements. |
+| <xref:System.Collections.Generic.IEnumerable%601> | Sequence through typed elements. |
+| <xref:System.Collections.Generic.ICollection%601> | Maintain group of typed elements. |
+| `IHash<Key, Value>` | Maintain generic container. |
 
 ## Remarks
 

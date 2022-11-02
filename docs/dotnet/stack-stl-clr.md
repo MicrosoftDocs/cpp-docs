@@ -41,49 +41,49 @@ The type of the underlying container.
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[`stack::const_reference`](#const_reference)|The type of a constant reference to an element.|
-|[`stack::container_type`](#container_type)|The type of the underlying container.|
-|[`stack::difference_type`](#difference_type)|The type of a signed distance between two elements.|
-|[`stack::generic_container`](#generic_container)|The type of the generic interface for the container adapter.|
-|[`stack::generic_value`](#generic_value)|The type of an element for the generic interface for the container adapter.|
-|[`stack::reference`](#reference)|The type of a reference to an element.|
-|[`stack::size_type`](#size_type)|The type of a signed distance between two elements.|
-|[`stack::value_type`](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`stack::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`stack::container_type`](#container_type) | The type of the underlying container. |
+| [`stack::difference_type`](#difference_type) | The type of a signed distance between two elements. |
+| [`stack::generic_container`](#generic_container) | The type of the generic interface for the container adapter. |
+| [`stack::generic_value`](#generic_value) | The type of an element for the generic interface for the container adapter. |
+| [`stack::reference`](#reference) | The type of a reference to an element. |
+| [`stack::size_type`](#size_type) | The type of a signed distance between two elements. |
+| [`stack::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[`stack::assign`](#assign)|Replaces all elements.|
-|[`stack::empty`](#empty)|Tests whether no elements are present.|
-|[`stack::get_container`](#get_container)|Accesses the underlying container.|
-|[`stack::pop`](#pop)|Removes the last element.|
-|[`stack::push`](#push)|Adds a new last element.|
-|[`stack::size`](#size)|Counts the number of elements.|
-|[`stack::stack`](#stack)|Constructs a container object.|
-|[`stack::top`](#top)|Accesses the last element.|
-|[`stack::to_array`](#to_array)|Copies the controlled sequence to a new array.|
+| Member function | Description |
+|---|---|
+| [`stack::assign`](#assign) | Replaces all elements. |
+| [`stack::empty`](#empty) | Tests whether no elements are present. |
+| [`stack::get_container`](#get_container) | Accesses the underlying container. |
+| [`stack::pop`](#pop) | Removes the last element. |
+| [`stack::push`](#push) | Adds a new last element. |
+| [`stack::size`](#size) | Counts the number of elements. |
+| [`stack::stack`](#stack) | Constructs a container object. |
+| [`stack::top`](#top) | Accesses the last element. |
+| [`stack::to_array`](#to_array) | Copies the controlled sequence to a new array. |
 
-|Property|Description|
-|--------------|-----------------|
-|[`stack::top_item`](#top_item)|Accesses the last element.|
+| Property | Description |
+|---|---|
+| [`stack::top_item`](#top_item) | Accesses the last element. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[`stack::operator=`](#op_as)|Replaces the controlled sequence.|
-|[`operator!=` (stack)](#op_neq)|Determines if a `stack` object isn't equal to another `stack` object.|
-|[`operator<` (stack)](#op_lt)|Determines if a `stack` object is less than another `stack` object.|
-|[`operator<=` (stack)](#op_lteq)|Determines if a `stack` object is less than or equal to another `stack` object.|
-|[`operator==` (stack)](#op_eq)|Determines if a `stack` object is equal to another `stack` object.|
-|[`operator>` (stack)](#op_gt)|Determines if a `stack` object is greater than another `stack` object.|
-|[`operator>=` (stack)](#op_gteq)|Determines if a `stack` object is greater than or equal to another `stack` object.|
+| Operator | Description |
+|---|---|
+| [`stack::operator=`](#op_as) | Replaces the controlled sequence. |
+| [`operator!=` (stack)](#op_neq) | Determines if a `stack` object isn't equal to another `stack` object. |
+| [`operator<` (stack)](#op_lt) | Determines if a `stack` object is less than another `stack` object. |
+| [`operator<=` (stack)](#op_lteq) | Determines if a `stack` object is less than or equal to another `stack` object. |
+| [`operator==` (stack)](#op_eq) | Determines if a `stack` object is equal to another `stack` object. |
+| [`operator>` (stack)](#op_gt) | Determines if a `stack` object is greater than another `stack` object. |
+| [`operator>=` (stack)](#op_gteq) | Determines if a `stack` object is greater than or equal to another `stack` object. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|`IStack<Value, Container>`|Maintain generic container adapter.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| `IStack<Value, Container>` | Maintain generic container adapter. |
 
 ## Remarks
 

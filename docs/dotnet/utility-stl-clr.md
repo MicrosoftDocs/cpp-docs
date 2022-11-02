@@ -25,22 +25,22 @@ Include the STL/CLR header `<cliext/utility>` to define the class template `pair
 
 ## Declarations
 
-|Class|Description|
-|-----------|-----------------|
-|[`pair`](#pair)|Wrap a pair of elements.|
+| Class | Description |
+|---|---|
+| [`pair`](#pair) | Wrap a pair of elements. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[`operator==` (pair)](#op_eq)|`pair` equal comparison.|
-|[`operator!=` (pair)](#op_neq)|`pair` not equal comparison.|
-|[`operator<` (pair)](#op_lt)|`pair` less than comparison.|
-|[`operator<=` (pair)](#op_lteq)|`pair` less than or equal comparison.|
-|[`operator>` (pair)](#op_gt)|`pair` greater than comparison.|
-|[`operator>=` (pair)](#op_gteq)|`pair` greater than or equal comparison.|
+| Operator | Description |
+|---|---|
+| [`operator==` (pair)](#op_eq) | `pair` equal comparison. |
+| [`operator!=` (pair)](#op_neq) | `pair` not equal comparison. |
+| [`operator<` (pair)](#op_lt) | `pair` less than comparison. |
+| [`operator<=` (pair)](#op_lteq) | `pair` less than or equal comparison. |
+| [`operator>` (pair)](#op_gt) | `pair` greater than comparison. |
+| [`operator>=` (pair)](#op_gteq) | `pair` greater than or equal comparison. |
 
-|Function|Description|
-|--------------|-----------------|
-|[`make_pair`](#make_pair)|Make a `pair` from a pair of values.|
+| Function | Description |
+|---|---|
+| [`make_pair`](#make_pair) | Make a `pair` from a pair of values. |
 
 ## <a name="pair"></a> `pair`
 
@@ -64,24 +64,24 @@ The type of second wrapped value.
 
 ## Members
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[`pair::first_type`](#first_type)|The type of the first wrapped value.|
-|[`pair::second_type`](#second_type)|The type of the second wrapped value.|
+| Type definition | Description |
+|---|---|
+| [`pair::first_type`](#first_type) | The type of the first wrapped value. |
+| [`pair::second_type`](#second_type) | The type of the second wrapped value. |
 
-|Member Object|Description|
-|-------------------|-----------------|
-|[`pair::first`](#first)|The first stored value.|
-|[`pair::second`](#second)|The second stored value.|
+| Member object | Description |
+|---|---|
+| [`pair::first`](#first) | The first stored value. |
+| [`pair::second`](#second) | The second stored value. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[`pair::pair`](#pair_pair)|Constructs a `pair` object.|
-|[`pair::swap`](#swap)|Swaps the contents of two `pair` objects.|
+| Member function | Description |
+|---|---|
+| [`pair::pair`](#pair_pair) | Constructs a `pair` object. |
+| [`pair::swap`](#swap) | Swaps the contents of two `pair` objects. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[`pair::operator=`](#op_as)|Replaces the stored pair of values.|
+| Operator | Description |
+|---|---|
+| [`pair::operator=`](#op_as) | Replaces the stored pair of values. |
 
 ## Remarks
 

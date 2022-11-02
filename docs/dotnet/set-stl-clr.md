@@ -42,68 +42,68 @@ The type of the key component of an element in the controlled sequence.
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[`set::const_iterator`](#const_iterator)|The type of a constant iterator for the controlled sequence.|
-|[`set::const_reference`](#const_reference)|The type of a constant reference to an element.|
-|[`set::const_reverse_iterator`](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|
-|[`set::difference_type`](#difference_type)|The type of a (possibly signed) distance between two elements.|
-|[`set::generic_container`](#generic_container)|The type of the generic interface for the container.|
-|[`set::generic_iterator`](#generic_iterator)|The type of an iterator for the generic interface for the container.|
-|[`set::generic_reverse_iterator`](#generic_reverse_iterator)|The type of a reverse iterator for the generic interface for the container.|
-|[`set::generic_value`](#generic_value)|The type of an element for the generic interface for the container.|
-|[`set::iterator`](#iterator)|The type of an iterator for the controlled sequence.|
-|[`set::key_compare`](#key_compare)|The ordering delegate for two keys.|
-|[`set::key_type`](#key_type)|The type of an ordering key.|
-|[`set::reference`](#reference)|The type of a reference to an element.|
-|[`set::reverse_iterator`](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|
-|[`set::size_type`](#size_type)|The type of a (non-negative) distance between two elements.|
-|[`set::value_compare`](#value_compare)|The ordering delegate for two element values.|
-|[`set::value_type`](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`set::const_iterator`](#const_iterator) | The type of a constant iterator for the controlled sequence. |
+| [`set::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`set::const_reverse_iterator`](#const_reverse_iterator) | The type of a constant reverse iterator for the controlled sequence. |
+| [`set::difference_type`](#difference_type) | The type of a (possibly signed) distance between two elements. |
+| [`set::generic_container`](#generic_container) | The type of the generic interface for the container. |
+| [`set::generic_iterator`](#generic_iterator) | The type of an iterator for the generic interface for the container. |
+| [`set::generic_reverse_iterator`](#generic_reverse_iterator) | The type of a reverse iterator for the generic interface for the container. |
+| [`set::generic_value`](#generic_value) | The type of an element for the generic interface for the container. |
+| [`set::iterator`](#iterator) | The type of an iterator for the controlled sequence. |
+| [`set::key_compare`](#key_compare) | The ordering delegate for two keys. |
+| [`set::key_type`](#key_type) | The type of an ordering key. |
+| [`set::reference`](#reference) | The type of a reference to an element. |
+| [`set::reverse_iterator`](#reverse_iterator) | The type of a reverse iterator for the controlled sequence. |
+| [`set::size_type`](#size_type) | The type of a (non-negative) distance between two elements. |
+| [`set::value_compare`](#value_compare) | The ordering delegate for two element values. |
+| [`set::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[`set::begin`](#begin)|Designates the beginning of the controlled sequence.|
-|[`set::clear`](#clear)|Removes all elements.|
-|[`set::count`](#count)|Counts elements matching a specified key.|
-|[`set::empty`](#empty)|Tests whether no elements are present.|
-|[`set::end`](#end)|Designates the end of the controlled sequence.|
-|[`set::equal_range`](#equal_range)|Finds range that matches a specified key.|
-|[`set::erase`](#erase)|Removes elements at specified positions.|
-|[`set::find`](#find)|Finds an element that matches a specified key.|
-|[`set::insert`](#insert)|Adds elements.|
-|[`set::key_comp`](#key_comp)|Copies the ordering delegate for two keys.|
-|[`set::lower_bound`](#lower_bound)|Finds beginning of range that matches a specified key.|
-|[`set::make_value`](#make_value)|Constructs a value object.|
-|[`set::rbegin`](#rbegin)|Designates the beginning of the reversed controlled sequence.|
-|[`set::rend`](#rend)|Designates the end of the reversed controlled sequence.|
-|[`set::set`](#set)|Constructs a container object.|
-|[`set::size`](#size)|Counts the number of elements.|
-|[`set::swap`](#swap)|Swaps the contents of two containers.|
-|[`set::to_array`](#to_array)|Copies the controlled sequence to a new array.|
-|[`set::upper_bound`](#upper_bound)|Finds end of range that matches a specified key.|
-|[`set::value_comp`](#value_comp)|Copies the ordering delegate for two element values.|
+| Member function | Description |
+|---|---|
+| [`set::begin`](#begin) | Designates the beginning of the controlled sequence. |
+| [`set::clear`](#clear) | Removes all elements. |
+| [`set::count`](#count) | Counts elements matching a specified key. |
+| [`set::empty`](#empty) | Tests whether no elements are present. |
+| [`set::end`](#end) | Designates the end of the controlled sequence. |
+| [`set::equal_range`](#equal_range) | Finds range that matches a specified key. |
+| [`set::erase`](#erase) | Removes elements at specified positions. |
+| [`set::find`](#find) | Finds an element that matches a specified key. |
+| [`set::insert`](#insert) | Adds elements. |
+| [`set::key_comp`](#key_comp) | Copies the ordering delegate for two keys. |
+| [`set::lower_bound`](#lower_bound) | Finds beginning of range that matches a specified key. |
+| [`set::make_value`](#make_value) | Constructs a value object. |
+| [`set::rbegin`](#rbegin) | Designates the beginning of the reversed controlled sequence. |
+| [`set::rend`](#rend) | Designates the end of the reversed controlled sequence. |
+| [`set::set`](#set) | Constructs a container object. |
+| [`set::size`](#size) | Counts the number of elements. |
+| [`set::swap`](#swap) | Swaps the contents of two containers. |
+| [`set::to_array`](#to_array) | Copies the controlled sequence to a new array. |
+| [`set::upper_bound`](#upper_bound) | Finds end of range that matches a specified key. |
+| [`set::value_comp`](#value_comp) | Copies the ordering delegate for two element values. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[`set::operator=`](#op_as)|Replaces the controlled sequence.|
-|[`operator!=` (set)](#op_neq)|Determines if a `set` object isn't equal to another `set` object.|
-|[`operator<` (set)](#op_lt)|Determines if a `set` object is less than another `set` object.|
-|[`operator<=` (set)](#op_lteq)|Determines if a `set` object is less than or equal to another `set` object.|
-|[`operator==` (set)](#op_eq)|Determines if a `set` object is equal to another `set` object.|
-|[`operator>` (set)](#op_gt)|Determines if a `set` object is greater than another `set` object.|
-|[`operator>=` (set)](#op_gteq)|Determines if a `set` object is greater than or equal to another `set` object.|
+| Operator | Description |
+|---|---|
+| [`set::operator=`](#op_as) | Replaces the controlled sequence. |
+| [`operator!=` (set)](#op_neq) | Determines if a `set` object isn't equal to another `set` object. |
+| [`operator<` (set)](#op_lt) | Determines if a `set` object is less than another `set` object. |
+| [`operator<=` (set)](#op_lteq) | Determines if a `set` object is less than or equal to another `set` object. |
+| [`operator==` (set)](#op_eq) | Determines if a `set` object is equal to another `set` object. |
+| [`operator>` (set)](#op_gt) | Determines if a `set` object is greater than another `set` object. |
+| [`operator>=` (set)](#op_gteq) | Determines if a `set` object is greater than or equal to another `set` object. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|<xref:System.Collections.IEnumerable>|Sequence through elements.|
-|<xref:System.Collections.ICollection>|Maintain group of elements.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Sequence through typed elements.|
-|<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|
-|`ITree<Key, Value>`|Maintain generic container.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| <xref:System.Collections.IEnumerable> | Sequence through elements. |
+| <xref:System.Collections.ICollection> | Maintain group of elements. |
+| <xref:System.Collections.Generic.IEnumerable%601> | Sequence through typed elements. |
+| <xref:System.Collections.Generic.ICollection%601> | Maintain group of typed elements. |
+| `ITree<Key, Value>` | Maintain generic container. |
 
 ## Remarks
 

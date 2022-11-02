@@ -55,71 +55,71 @@ The type of the other component of an element in the controlled sequence.
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[`hash_map::const_iterator`](#const_iterator)|The type of a constant iterator for the controlled sequence.|
-|[`hash_map::const_reference`](#const_reference)|The type of a constant reference to an element.|
-|[`hash_map::const_reverse_iterator`](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|
-|[`hash_map::difference_type`](#difference_type)|The type of a (possibly signed) distance between two elements.|
-|[`hash_map::generic_container`](#generic_container)|The type of the generic interface for the container.|
-|[`hash_map::generic_iterator`](#generic_iterator)|The type of an iterator for the generic interface for the container.|
-|[`hash_map::generic_reverse_iterator`](#generic_reverse_iterator)|The type of a reverse iterator for the generic interface for the container.|
-|[`hash_map::generic_value`](#generic_value)|The type of an element for the generic interface for the container.|
-|[`hash_map::hasher`](#hasher)|The hashing delegate for a key.|
-|[`hash_map::iterator`](#iterator)|The type of an iterator for the controlled sequence.|
-|[`hash_map::key_compare`](#key_compare)|The ordering delegate for two keys.|
-|[`hash_map::key_type`](#key_type)|The type of an ordering key.|
-|[`hash_map::mapped_type`](#mapped_type)|The type of the mapped value associated with each key.|
-|[`hash_map::reference`](#reference)|The type of a reference to an element.|
-|[`hash_map::reverse_iterator`](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|
-|[`hash_map::size_type`](#size_type)|The type of a (non-negative) distance between two elements.|
-|[`hash_map::value_compare`](#value_compare)|The ordering delegate for two element values.|
-|[`hash_map::value_type`](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`hash_map::const_iterator`](#const_iterator) | The type of a constant iterator for the controlled sequence. |
+| [`hash_map::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`hash_map::const_reverse_iterator`](#const_reverse_iterator) | The type of a constant reverse iterator for the controlled sequence. |
+| [`hash_map::difference_type`](#difference_type) | The type of a (possibly signed) distance between two elements. |
+| [`hash_map::generic_container`](#generic_container) | The type of the generic interface for the container. |
+| [`hash_map::generic_iterator`](#generic_iterator) | The type of an iterator for the generic interface for the container. |
+| [`hash_map::generic_reverse_iterator`](#generic_reverse_iterator) | The type of a reverse iterator for the generic interface for the container. |
+| [`hash_map::generic_value`](#generic_value) | The type of an element for the generic interface for the container. |
+| [`hash_map::hasher`](#hasher) | The hashing delegate for a key. |
+| [`hash_map::iterator`](#iterator) | The type of an iterator for the controlled sequence. |
+| [`hash_map::key_compare`](#key_compare) | The ordering delegate for two keys. |
+| [`hash_map::key_type`](#key_type) | The type of an ordering key. |
+| [`hash_map::mapped_type`](#mapped_type) | The type of the mapped value associated with each key. |
+| [`hash_map::reference`](#reference) | The type of a reference to an element. |
+| [`hash_map::reverse_iterator`](#reverse_iterator) | The type of a reverse iterator for the controlled sequence. |
+| [`hash_map::size_type`](#size_type) | The type of a (non-negative) distance between two elements. |
+| [`hash_map::value_compare`](#value_compare) | The ordering delegate for two element values. |
+| [`hash_map::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[`hash_map::begin`](#begin)|Designates the beginning of the controlled sequence.|
-|[`hash_map::bucket_count`](#bucket_count)|Counts the number of buckets.|
-|[`hash_map::clear`](#clear)|Removes all elements.|
-|[`hash_map::count`](#count)|Counts elements matching a specified key.|
-|[`hash_map::empty`](#empty)|Tests whether no elements are present.|
-|[`hash_map::end`](#end)|Designates the end of the controlled sequence.|
-|[`hash_map::equal_range`](#equal_range)|Finds range that matches a specified key.|
-|[`hash_map::erase`](#erase)|Removes elements at specified positions.|
-|[`hash_map::find`](#find)|Finds an element that matches a specified key.|
-|[`hash_map::hash_delegate`](#hash_delegate)|Copies the hashing delegate for a key.|
-|[`hash_map::hash_map`](#hash_map)|Constructs a container object.|
-|[`hash_map::insert`](#insert)|Adds elements.|
-|[`hash_map::key_comp`](#key_comp)|Copies the ordering delegate for two keys.|
-|[`hash_map::load_factor`](#load_factor)|Counts the average elements per bucket.|
-|[`hash_map::lower_bound`](#lower_bound)|Finds beginning of range that matches a specified key.|
-|[`hash_map::make_value`](#make_value)|Constructs a value object.|
-|[`hash_map::max_load_factor`](#max_load_factor)|Gets or sets the maximum elements per bucket.|
-|[`hash_map::rbegin`](#rbegin)|Designates the beginning of the reversed controlled sequence.|
-|[`hash_map::rehash`](#rehash)|Rebuilds the hash table.|
-|[`hash_map::rend`](#rend)|Designates the end of the reversed controlled sequence.|
-|[`hash_map::size`](#size)|Counts the number of elements.|
-|[`hash_map::swap`](#swap)|Swaps the contents of two containers.|
-|[`hash_map::to_array`](#to_array)|Copies the controlled sequence to a new array.|
-|[`hash_map::upper_bound`](#upper_bound)|Finds end of range that matches a specified key.|
-|[`hash_map::value_comp`](#value_comp)|Copies the ordering delegate for two element values.|
+| Member function | Description |
+|---|---|
+| [`hash_map::begin`](#begin) | Designates the beginning of the controlled sequence. |
+| [`hash_map::bucket_count`](#bucket_count) | Counts the number of buckets. |
+| [`hash_map::clear`](#clear) | Removes all elements. |
+| [`hash_map::count`](#count) | Counts elements matching a specified key. |
+| [`hash_map::empty`](#empty) | Tests whether no elements are present. |
+| [`hash_map::end`](#end) | Designates the end of the controlled sequence. |
+| [`hash_map::equal_range`](#equal_range) | Finds range that matches a specified key. |
+| [`hash_map::erase`](#erase) | Removes elements at specified positions. |
+| [`hash_map::find`](#find) | Finds an element that matches a specified key. |
+| [`hash_map::hash_delegate`](#hash_delegate) | Copies the hashing delegate for a key. |
+| [`hash_map::hash_map`](#hash_map) | Constructs a container object. |
+| [`hash_map::insert`](#insert) | Adds elements. |
+| [`hash_map::key_comp`](#key_comp) | Copies the ordering delegate for two keys. |
+| [`hash_map::load_factor`](#load_factor) | Counts the average elements per bucket. |
+| [`hash_map::lower_bound`](#lower_bound) | Finds beginning of range that matches a specified key. |
+| [`hash_map::make_value`](#make_value) | Constructs a value object. |
+| [`hash_map::max_load_factor`](#max_load_factor) | Gets or sets the maximum elements per bucket. |
+| [`hash_map::rbegin`](#rbegin) | Designates the beginning of the reversed controlled sequence. |
+| [`hash_map::rehash`](#rehash) | Rebuilds the hash table. |
+| [`hash_map::rend`](#rend) | Designates the end of the reversed controlled sequence. |
+| [`hash_map::size`](#size) | Counts the number of elements. |
+| [`hash_map::swap`](#swap) | Swaps the contents of two containers. |
+| [`hash_map::to_array`](#to_array) | Copies the controlled sequence to a new array. |
+| [`hash_map::upper_bound`](#upper_bound) | Finds end of range that matches a specified key. |
+| [`hash_map::value_comp`](#value_comp) | Copies the ordering delegate for two element values. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[`hash_map::operator=`](#op_as)|Replaces the controlled sequence.|
-|[`hash_map::operator[]`](#op)|Maps a key to its associated mapped value.|
+| Operator | Description |
+|---|---|
+| [`hash_map::operator=`](#op_as) | Replaces the controlled sequence. |
+| [`hash_map::operator[]`](#op) | Maps a key to its associated mapped value. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|<xref:System.Collections.IEnumerable>|Sequence through elements.|
-|<xref:System.Collections.ICollection>|Maintain group of elements.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Sequence through typed elements.|
-|<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|
-|<xref:System.Collections.Generic.IDictionary%602>|Maintain group of {key, value} pairs.|
-|IHash<Key, Value>|Maintain generic container.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| <xref:System.Collections.IEnumerable> | Sequence through elements. |
+| <xref:System.Collections.ICollection> | Maintain group of elements. |
+| <xref:System.Collections.Generic.IEnumerable%601> | Sequence through typed elements. |
+| <xref:System.Collections.Generic.ICollection%601> | Maintain group of typed elements. |
+| <xref:System.Collections.Generic.IDictionary%602> | Maintain group of {key, value} pairs. |
+| `IHash<Key, Value>` | Maintain generic container. |
 
 ## Remarks
 
