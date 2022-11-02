@@ -391,7 +391,7 @@ The actual result is a hexadecimal 5F, which is the ASCII code for an underscore
 "\x05" "five"  // Use string splicing.
 ```
 
-`std::string` literals (and the related `std::u8string`, `std::u16string`, and `ste::u32string`) can be concatenated with the **`+`** operator that's defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
+`std::string` literals (and the related `std::u8string`, `std::u16string`, and `std::u32string`) can be concatenated with the **`+`** operator that's defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
 
 ```cpp
 auto x1 = "hello" " " " world"; // OK
