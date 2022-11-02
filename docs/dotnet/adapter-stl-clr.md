@@ -21,7 +21,7 @@ The STL/CLR header `<cliext/adapter>` specifies two class templates (`collection
 
 **Header:** \<cliext/adapter>
 
-**Namespace:** cliext
+**Namespace:** `cliext`
 
 ## Declarations
 
@@ -75,21 +75,21 @@ template<typename Key,
 
 #### Parameters
 
-*Coll*<br/>
+*`Coll`*\
 The type of the wrapped collection.
 
 ### Specializations
 
 |Specialization|Description|
 |--------------------|-----------------|
-|IEnumerable|Sequences through elements.|
-|ICollection|Maintains a group of elements.|
-|IList|Maintains an ordered group of elements.|
-|IDictionary|Maintain a set of {key, value} pairs.|
-|IEnumerable\<Value>|Sequences through typed elements.|
-|ICollection\<Value>|Maintains a group of typed elements.|
-|IList\<Value>|Maintains an ordered group of typed elements.|
-|IDictionary\<Value>|Maintains a set of typed {key, value} pairs.|
+|`IEnumerable`|Sequences through elements.|
+|`ICollection`|Maintains a group of elements.|
+|`IList`|Maintains an ordered group of elements.|
+|`IDictionary`|Maintain a set of {key, value} pairs.|
+|`IEnumerable<Value>`|Sequences through typed elements.|
+|`ICollection<Value>`|Maintains a group of typed elements.|
+|`IList<Value>`|Maintains an ordered group of typed elements.|
+|`IDictionary<Value>`|Maintains a set of typed {key, value} pairs.|
 
 ### Members
 
@@ -230,10 +230,10 @@ collection_adapter(Coll^ collection);
 
 #### Parameters
 
-*collection*<br/>
+*`collection`*\
 BCL handle to wrap.
 
-*right*<br/>
+*`right`*\
 Object to copy.
 
 ### Remarks
@@ -248,13 +248,13 @@ The constructor:
 
 `collection_adapter(collection_adapter<Coll>% right);`
 
-initializes the stored handle with `right.`[collection_adapter::base (STL/CLR)](#base)`()`.
+initializes the stored handle with `right.base()`.
 
 The constructor:
 
 `collection_adapter(collection_adapter<Coll>^ right);`
 
-initializes the stored handle with `right->`[collection_adapter::base (STL/CLR)](#base)`()`.
+initializes the stored handle with `right->base()`.
 
 The constructor:
 
@@ -463,7 +463,7 @@ typedef Key key_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter `Key`, in a specialization for `IDictionary` or `IDictionary<Value>`; otherwise it is not defined.
+The type is a synonym for the template parameter `Key`, in a specialization for `IDictionary` or `IDictionary<Value>`; otherwise it isn't defined.
 
 ### Example
 
@@ -513,7 +513,7 @@ typedef Value mapped_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter `Value`, in a specialization for `IDictionary` or `IDictionary<Value>`; otherwise it is not defined.
+The type is a synonym for the template parameter `Value`, in a specialization for `IDictionary` or `IDictionary<Value>`; otherwise it isn't defined.
 
 ### Example
 
@@ -563,12 +563,12 @@ collection_adapter<Coll>% operator=(collection_adapter<Coll>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the stored BCL handle with a copy of the stored BCL handle in *right*.
+The member operator copies *`right`* to the object, then returns **`*this`**. You use it to replace the stored BCL handle with a copy of the stored BCL handle in *`right`*.
 
 ### Example
 
@@ -668,7 +668,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. It is not defined in a specialization for `IEnumerable` or `IEnumerable<Value>`.
+The member function returns the length of the controlled sequence. It isn't defined in a specialization for `IEnumerable` or `IEnumerable<Value>`.
 
 ### Example
 
@@ -701,7 +701,7 @@ size() = 6
 
 ## <a name="size_type"></a> collection_adapter::size_type (STL/CLR)
 
-The type of a signed distance between two element.
+The type of a signed distance between two elements.
 
 ### Syntax
 
@@ -756,12 +756,12 @@ void swap(collection_adapter<Coll>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container to swap contents with.
 
 ### Remarks
 
-The member function swaps the stored BCL handles between **`*this`** and *right*.
+The member function swaps the stored BCL handles between **`*this`** and *`right`*.
 
 ### Example
 
@@ -825,7 +825,7 @@ typedef Value value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Value*, if present in the specialization; otherwise it is a synonym for `System::Object^`.
+The type is a synonym for the template parameter *`Value`*, if present in the specialization; otherwise it's a synonym for `System::Object^`.
 
 ### Example
 
@@ -875,13 +875,13 @@ template<typename Iter>
 
 #### Parameters
 
-*Iter*<br/>
+*`Iter`*\
 The type of the wrapped iterators.
 
-*first*<br/>
+*`first`*\
 First iterator to wrap.
 
-*last*<br/>
+*`last`*\
 Second iterator to wrap.
 
 ### Remarks
@@ -942,7 +942,7 @@ SyncRoot not nullptr = True
 
 ## <a name="range_adapter"></a> range_adapter (STL/CLR)
 
-A template class that wraps a pair of iterators that are used to implement several Base Class Library (BCL) interfaces. You use the range_adapter to manipulate an STL/CLR range as if it were a BCL collection.
+A template class that wraps a pair of iterators that are used to implement several Base Class Library (BCL) interfaces. You use the range_adapter to manipulate an STL/CLR range as if it was a BCL collection.
 
 ### Syntax
 
@@ -959,7 +959,7 @@ template<typename Iter>
 
 #### Parameters
 
-*Iter*<br/>
+*`Iter`*\
 The type associated with the wrapped iterators.
 
 ### Members
@@ -978,7 +978,7 @@ The type associated with the wrapped iterators.
 |---------------|-----------------|
 |<xref:System.Collections.IEnumerable>|Iterates through elements in the collection.|
 |<xref:System.Collections.ICollection>|Maintains a group of elements.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Iterates through typed elements in the collection..|
+|<xref:System.Collections.Generic.IEnumerable%601>|Iterates through typed elements in the collection.|
 |<xref:System.Collections.Generic.ICollection%601>|Maintains a group of typed elements.|
 
 ### Remarks
@@ -997,12 +997,12 @@ range_adapter<Iter>% operator=(range_adapter<Iter>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the stored iterator pair with a copy of the stored iterator pair in *right*.
+The member operator copies *`right`* to the object, then returns **`*this`**. You use it to replace the stored iterator pair with a copy of the stored iterator pair in *`right`*.
 
 ### Example
 
@@ -1057,13 +1057,13 @@ range_adapter(Iter first, Iter last);
 
 #### Parameters
 
-*first*<br/>
+*`first`*\
 First iterator to wrap.
 
-*last*<br/>
+*`last`*\
 Second iterator to wrap.
 
-*right*<br/>
+*`right`*\
 Object to copy.
 
 ### Remarks
@@ -1078,7 +1078,7 @@ The constructor:
 
 `range_adapter(range_adapter<Iter>% right);`
 
-initializes the stored iterator pair by copying the pair stored in *right*.
+initializes the stored iterator pair by copying the pair stored in *`right`*.
 
 The constructor:
 
@@ -1090,7 +1090,7 @@ The constructor:
 
 `range_adapter(Iter^ first, last);`
 
-initializes the stored iterator pair with *first* and *last*.
+initializes the stored iterator pair with *`first`* and *`last`*.
 
 ### Example
 
