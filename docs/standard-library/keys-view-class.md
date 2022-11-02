@@ -31,13 +31,13 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::keys`](range-adaptors.md#keys) |
-| **Underlying range** | Must satisfy `input_range` or higher |
+| **Underlying range** | Must satisfy [`input_range`](range-concepts.md#input_range) or higher |
 | **Element type** | Same as the type of the first tuple element of the underlying range |
-| **View iterator category** | `random_access_range` if the underlying range is contiguous, otherwise the same as the underlying range |
-| **Sized** | Only if the underlying range satisfies `sized_range` |
+| **View iterator category** | [`random_access_range`](range-concepts.md#random_access_range) if the underlying range is contiguous, otherwise the same as the underlying range |
+| **Sized** | Only if the underlying range satisfies [`sized_range`](range-concepts.md#sized_range) |
 | **Is `const`-iterable** | Only if the underlying range satisfies `const-iterable` |
-| **Common range** | Only if the underlying range satisfies `common_range` |
-| **Borrowed range** | Only if the underlying range satisfies `borrowed_range` |
+| **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |
+| **Borrowed range** | Only if the underlying range satisfies [`borrowed_range`](range-concepts.md#borrowed_range) |
 
 ## Members
 
@@ -49,7 +49,7 @@ The following list of member functions refers to the `keys_view` class. Recall t
 | [`base`](#base)<sup>C++20</sup> | Get the underlying range. |
 | [`begin`](#begin)<sup>C++20</sup> | Get an iterator to the first element. |
 | [`end`](#end)<sup>C++20</sup> | Get the sentinel at the end of the view. |
-| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy `sized_range`. |
+| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy [`sized_range`](range-concepts.md#sized_range). |
 | **Inherited from [`view_interface`](view-interface.md)** | **Description** |
 | [`back`](view-interface.md#back)<sup>C++20</sup> | Get the last element. |
 | [`empty`](view-interface.md#empty)<sup>C++20</sup> | Test whether the `keys_view` is empty. |
@@ -237,7 +237,7 @@ The number of elements in the `keys_view`.
 
 ### Remarks
 
-The size of the view is only available if the underlying range is a `sized_range`, or in other words, bounded.
+The size of the view is only available if the underlying range is a [`sized_range`](range-concepts.md#sized_range), or in other words, bounded.
 
 ## See also
 

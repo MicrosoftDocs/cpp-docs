@@ -1,0 +1,396 @@
+---
+description: "Learn more about range concepts and range iterator concepts."
+title: "Concepts for ranges and range iterators"
+ms.date: 11/01/2022
+f1_keywords: ["ranges/std::ranges::range"]
+helpviewer_keywords: ["std::ranges [C++], range"]
+---
+# Concepts for `<ranges>`
+
+Concepts are a C++20 language feature that constrain template parameters at compile time. They help prevent incorrect template instantiations, convey template argument requirements in a readable form, and provide more succinct template related compiler errors.
+
+Consider the following example, which defines a concept to prevent instantiating a template with a type that doesn't support division:
+
+```cpp
+// requires /std:c++20 or later
+#include <iostream>
+
+// Definition of the concept "dividable" that requires 
+// that arguments a & b of type T support division
+template <typename T>
+concept dividable = requires (T a, T b)
+{
+    a / b;
+};
+
+// Apply the concept to a template.
+// The template will only be instantiated if the argument T supports division.
+// This prevents the template from being instantiated with types that don't support division.
+// This could have been applied to the parameter of a template function, but because
+// most of the concepts in the <ranges> library are applied to classes, this form is used.
+template <class T> requires dividable<T>
+class DivideEmUp
+{
+public:
+    T Divide(T x, T y)
+    {
+        return x / y;
+    }
+};
+
+int main()
+{
+    DivideEmUp<int> dividerOfInts;
+    std::cout << dividerOfInts.Divide(6, 3); // outputs 2
+    // The following line will not compile because the template can't be instantiated 
+    // with char* because char* can be divided
+    DivideEmUp<char*> dividerOfCharPtrs; // compiler error: cannot deduce template arguments 
+}
+```
+
+The following concepts are defined in `std::ranges` and are declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
+
+| **Range concept ** | **Description** |
+|--|--|
+| [`range`](#range)<sup>C++20</sup> | A type that can be iterated. |
+| [`bidirectional_range`](#bidirectional_range)<sup>C++20</sup> | Supports reading and writing forwards and backwards. |
+| [`borrowed_range`](#borrowed_range)<sup>C++20</sup> | The lifetime of the type's iterators aren't tied to the object's lifetime. |
+| [`common_range`](#common_range)<sup>C++20</sup> | The type of the iterator and the sentinel are the same. |
+| [`contiguous_range`](#contiguous_range)<sup>C++20</sup> | The elements are sequential in memory and can be accessed by index. |
+| [`forward_range`](#forward_range)<sup>C++20</sup> | Supports reading multiple times. |
+| [`input_range`](#input_range)<sup>C++20</sup> | Supports reading. |
+| [`output_range`](#output_range)<sup>C++20</sup> | Supports writing. |
+| [`random_access_range`](#random_access_range)<sup>C++20</sup> | Supports reading and writing by index. |
+| [`simple_view`](#simple_view)<sup>C++20</sup> | Not an official concept defined as part of the standard library, but used as a 'helper' concept on some interfaces. |
+| [`sized_range`](#sized_range)<sup>C++20</sup> | Provides the number of elements efficiently. |
+| [`view`](#view)<sup>C++20</sup> | Has efficient (constant time) move construction, assignment, and destruction. |
+| [`viewable_range`](#viewable_range)<sup>C++20</sup> | A type that either is a view or can be converted to one. |
+
+## `bidirectional_range`
+
+A `bidirectional_range` supports reading and writing forwards and backwards.
+
+```cpp
+template<class T>
+concept bidirectional_range =
+    forward_range<T> && bidirectional_iterator<iterator_t<T>>;
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `bidirectional_range`.
+
+### Remarks
+
+A `bidirectional_iterator` has the capabilities of a `forward_iterator`, but can also iterate backwards.
+
+Some examples of a `bidirectional_range` are `std::set`, `std::vector`, and `std::list`.
+
+## `borrowed_range`
+
+A type models `borrowed_range` if the validity of iterators you get from the object can outlive the lifetime of the object.
+
+```cpp
+template<class T>
+concept borrowed_range =
+    range<T> &&
+    (is_lvalue_reference_v<T> || enable_borrowed_range<remove_cvref_t<T>>);
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `borrowed_range`.
+
+## `common_range`
+
+The type of the iterator for a `common_range` is the same type as the sentinel type. That is, the types returned from `begin()` and `end()` are the same.
+
+```cpp
+template<class T>
+concept common_range =
+   ranges::range<T> && std::same_as<ranges::iterator_t<T>, ranges::sentinel_t<T>>;
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `common_range`.
+
+### Remarks
+
+Providing the same iterator type from `std::ranges::begin()` and `std::ranges::end()` is important for algorithms that calculate the distance between two iterators and for algorithms that accept ranges denoted by iterator pairs.
+
+The standard containers (for example, `vector`) meet the requirements of `common_range`.
+
+## `contiguous_range`
+
+The elements of a `contiguous_range` are laid out sequentially in memory and can be accessed using pointer arithmetic. An array is a `contiguous_range`, for example.
+
+```cpp
+template<class T>
+concept contiguous_range =
+    random_access_range<T> && contiguous_iterator<iterator_t<T>> &&
+    requires(T& t) {{ ranges::data(t) } -> same_as<add_pointer_t<range_reference_t<T>>>;};
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `contiguous_range`.
+
+### Remarks
+
+A `contiguous_range` can be accessed by pointer arithmetic because the elements are laid out sequentially in memory and are the same size.
+
+Some examples of a `contiguous_range` are `std::array`, `std::vector`, and `std::string`.
+
+### Example `contiguous_range`
+
+The following example shows using pointer arithmetic to access a `contiguous_range`:
+
+```cpp
+// requires /std:c++20 or later
+#include <ranges>
+#include <iostream>
+#include <vector>
+
+int main()
+{
+    // Show that vector is a contiguous_range
+    std::vector<int> v = {0,1,2,3,4,5};
+    std::cout << std::boolalpha << std::ranges::contiguous_range<decltype(v)> << '\n'; // outputs "true"
+
+    // Show that pointer arithmetic can be used to access the elements of a contiguous_range
+    auto ptr = v.data();
+    ptr += 2;
+    std::cout << *ptr << '\n'; // outputs 2
+}
+```
+
+```output
+true
+2
+```
+
+## `forward_range`
+
+A `forward_range` supports reading and possibly writing a `range` multiple times.
+
+```cpp
+template<class T>
+concept forward_range = input_range<T> && forward_iterator<iterator_t<T>>;
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `forward_range`.
+
+### Remarks
+
+A `forward_iterator` can iterate over a range multiple times.
+
+## `input_range`
+
+An `input_range` is a `range` that can be read from at least once.
+
+```cpp
+template<class T>
+concept input_range = range<T> && input_iterator<iterator_t<T>>;
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's an `input_range`.
+
+### Remarks
+
+When a type meets the requirements of `input_range`:
+
+- The `ranges::begin()` function returns an `input_iterator`. Calling `begin()` more than once for an `input_range` has undefined behavior.
+- You can dereference an `input_iterator` repeatedly, which yields the same value each time. An `input_range` isn't multi-pass. Incrementing an iterator invalidates any copies.
+- It can be used with `ranges::for_each`.
+- It *at least* has an `input_iterator`. It may have a more capable iterator type.
+
+## `output_range`
+
+An `output_range` is a `range` that you can write to.
+
+```cpp
+template<class R, class T>
+concept output_range = range<R> && output_iterator<iterator_t<R>, T>;
+```
+
+### Parameters
+
+*`R`*\
+The type of the range.
+
+*`T`*\
+The type of the data to write to the `range`.
+
+### Remarks
+
+The meaning of `output_iterator<iterator_t<R>, T>` is that the type provides an iterator that can write values of type `T` to a `range` of type `R`.
+
+## `random_access_range`
+
+A `random_access_range` can read or write a `range` by index.
+
+```cpp
+template<class T>
+concept random_access_range =
+bidirectional_range<T> && random_access_iterator<iterator_t<T>>;
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `sized_range`.
+
+### Remarks
+
+A `random_access_range` provides the most flexible iterator. It provides the capabilities of an `input_range`, `output_range`, `forward_range`, and `bidirectional_range`. A `random_access_range` is also sortable.
+
+Some examples of a `random_access_range` are `std::vector`, `std::array`, and `std::deque`.
+
+## `range`
+
+Defines the requirements a type must meet to be a `range`. A `range` provides an iterator and a sentinel for iterating over its elements.
+
+```cpp
+template<class R>
+concept range = requires(T& rg)
+{
+  ranges::begin(rg);
+  ranges::end(rg);
+};
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `range`.
+
+### Remarks
+
+The requirements of a `range` are:
+- It can be iterated using `std::ranges::begin()` and `std::ranges::end()`
+- `ranges::begin()` and `ranges::end()` run in amortized constant time and don't modify the `range`. Amortized constant time doesn't mean O(1), but that the average cost over a series of calls, even in the worst case, is O(n) rather than O(n^2) or worse.
+- \[`ranges::begin()`, `ranges::end()`) denotes a valid range.
+
+## `Simple_View`
+
+A `Simple_View` is an exposition-only concept used on some `ranges` interfaces. It isn't defined in the library. It's only used in the specification to help describe the behavior of some range adaptors.
+
+```cpp
+template<class V>
+  concept Simple_View = // exposition only
+    ranges::view<V> && ranges::range<const V> &&
+    std::same_as<std::ranges::iterator_t<V>, std::ranges::iterator_t<const V>> &&
+    std::same_as<std::ranges::sentinel_t<V>, std::ranges::sentinel_t<const V>>;
+```
+
+### Parameters
+
+*`V`*\
+The type to test to see if it's a `Simple_View`.
+
+### Remarks
+
+A `view V` is a [`Simple_View`](#simple_view) if `V` is a `view`, `const V` is a `range`, and both `v` and `const V` have the same iterator and sentinel types.
+
+## `sized_range`
+
+A `sized_range` provides the number of elements in the range in amortized constant time.
+
+```cpp
+template<class T>
+  concept sized_range = range<T> &&
+    requires(T& t) { ranges::size(t); };
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a `sized_range`.
+
+### Remarks
+
+The requirements of a `sized_range` are that calling `ranges::size` on it:
+
+- Doesn't modify the `range`.
+- Returns the number of elements in amortized constant time. Amortized constant time doesn't mean O(1), but that the average cost over a series of calls, even in the worst case, is O(n) rather than O(n^2) or worse.
+
+Some examples of a `sized_range` are `std::list` and `std::vector`.
+
+### Example `sized_range`
+
+The following example shows that a `vector` of `int` is a `sized_range`:
+
+```cpp
+// requires /std:c++20 or later
+#include <ranges>
+#include <iostream>
+#include <vector>
+
+int main()
+{
+    std::cout << std::boolalpha << std::ranges::sized_range<std::vector<int>> << '\n'; // outputs "true"
+}    
+```
+
+## `view`
+
+A `view` has constant time move construction, assignment, and destruction operations regardless of the number of elements it has. Views don't need to be copy constructible or copy assignable, but if they are those operations must also be constant time.
+
+Because of this performance in constant time, views can be efficiently composed. For example, given a vector of `int` called `input`, a lambda that determines if a number is divisible by three, and a lambda that squares a number, the statement `auto x = input | std::views::filter(divisible_by_three) | std::views::transform(square);` efficiently produces a view that contains the squares of the numbers in input that are divisible by three. Connecting views together with `|` is referred to as composing the views. If a type satisfies the `view` concept, then it meets the requirements of being efficiently composable.
+
+```cpp
+template<class T>
+concept view = ranges::range<T> && std::movable<T> && ranges::enable_view<T>;
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it's a composable `view`.
+
+### Remarks
+
+The essential requirement that makes a `view` composable is that it's cheap to move/copy. This is because the `view` is moved/copied when it's composed with another `view`. It must be a movable `range`.
+
+`ranges::enable_view<T>` is a trait used to claim conformance to the semantic requirements of the `view` concept. A type can "opt-in" by:
+1. publicly and unambiguously deriving from a specialization of `ranges::view_interface`
+2. publicly and unambiguously deriving from the empty class `ranges::view_base`, or
+3. specializing `ranges::enable_view<T>` to `true`
+
+Option 1 is generally preferred because `view_interface` also provides default implementations that save some boilerplate code you have to write. Failing that, option 2 is a little simpler than option 3. The advantage of option 3 is that it's possible without changing the definition of the type.
+
+## `viewable_range`
+
+A `viewable_range` is a type that either is a `view` or that can be converted to one.
+
+```cpp
+template<class T>
+  concept viewable_range =
+    range<T> && (borrowed_range<T> || view<remove_cvref_t<T>>);
+```
+
+### Parameters
+
+*`T`*\
+The type to test to see if it either is a `view` or can be converted to one.
+
+### Remarks
+
+Use `std::ranges::views::all()` to convert a `range` to a `view`.
+
+## See also
+
+[`<ranges>`](ranges.md)\
+[Range adaptors](range-adaptors.md)\
+[View classes](view-classes.md)

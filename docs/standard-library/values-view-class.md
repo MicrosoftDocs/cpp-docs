@@ -31,13 +31,13 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::values`](range-adaptors.md#values) |
-| **Underlying range** | Must satisfy `forward_range` or higher |
+| **Underlying range** | Must satisfy [`forward_range`](range-concepts.md#forward_range) or higher |
 | **Element type** | Same as the type of the second tuple element |
-| **View iterator category** | `forward_range`, `bidirectional_range`, or `random_access_range` |
-| **Sized** | Only if the underlying range satisfies `sized_range` |
+| **View iterator category** | `forward_range`, [`bidirectional_range`](range-concepts.md#bidirectional_range), or [`random_access_range`](range-concepts.md#random_access_range) |
+| **Sized** | Only if the underlying range satisfies [`sized_range`](range-concepts.md#sized_range) |
 | **Is `const`-iterable** | Only if the underlying range satisfies `const-iterable` |
-| **Common range** | Only if the underlying range satisfies `common_range` |
-| **Borrowed range** | Only if the underlying range satisfies `borrowed_range` |
+| **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |
+| **Borrowed range** | Only if the underlying range satisfies [`borrowed_range`](range-concepts.md#borrowed_range) |
 
 ## Members
 
@@ -238,7 +238,7 @@ The number of elements in the `values_view`.
 
 ### Remarks
 
-The size of the view is only available if the underlying range is a `sized_range`, or in other words, bounded.
+The size of the view is only available if the underlying range is a [`sized_range`](range-concepts.md#sized_range), or in other words, bounded.
 
 ## See also
 

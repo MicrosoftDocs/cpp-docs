@@ -7,7 +7,7 @@ f1_keywords: ["cliext::hash_map", "cliext::hash_map::begin", "cliext::hash_map::
 helpviewer_keywords: ["<cliext/hash_map> header [STL/CLR]", "<hash_map> header [STL/CLR]", "hash_map class [STL/CLR]", "begin member [STL/CLR]", "bucket_count member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "hash_delegate member [STL/CLR]", "hash_map member [STL/CLR]", "hasher member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "load_factor member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "mapped_type member [STL/CLR]", "max_load_factor member [STL/CLR]", "operator= member [STL/CLR]", "operator member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rehash member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: c3cfc69b-04c6-42ae-a30e-0eda953fe883
 ---
-# hash_map (STL/CLR)
+# `hash_map` (STL/CLR)
 
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `hash_map` to manage a sequence of elements as a hash table, each table entry storing a bidirectional linked list of nodes, and each node storing one element. An element consists of a key, for ordering the sequence, and a mapped value, which goes along for the ride.
 
@@ -17,9 +17,9 @@ In the description below, `GValue` is the same as:
 
 where:
 
-`GKey` is the same as `Key` unless the latter is a ref type, in which case it is `Key^`
+`GKey` is the same as `Key` unless the latter is a ref type, in which case it's `Key^`
 
-`GMapped` is the same as `Mapped` unless the latter is a ref type, in which case it is `Mapped^`
+`GMapped` is the same as `Mapped` unless the latter is a ref type, in which case it's `Mapped^`
 
 ## Syntax
 
@@ -41,123 +41,123 @@ template<typename Key,
 
 ### Parameters
 
-*Key*<br/>
+*`Key`*\
 The type of the key component of an element in the controlled sequence.
 
-*Mapped*<br/>
-The type of the additional component of an element in the controlled sequence.
+*`Mapped`*\
+The type of the other component of an element in the controlled sequence.
 
 ## Requirements
 
 **Header:** \<cliext/hash_map>
 
-**Namespace:** cliext
+**Namespace:** `cliext`
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[hash_map::const_iterator (STL/CLR)](#const_iterator)|The type of a constant iterator for the controlled sequence.|
-|[hash_map::const_reference (STL/CLR)](#const_reference)|The type of a constant reference to an element.|
-|[hash_map::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|
-|[hash_map::difference_type (STL/CLR)](#difference_type)|The type of a (possibly signed) distance between two elements.|
-|[hash_map::generic_container (STL/CLR)](#generic_container)|The type of the generic interface for the container.|
-|[hash_map::generic_iterator (STL/CLR)](#generic_iterator)|The type of an iterator for the generic interface for the container.|
-|[hash_map::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|The type of a reverse iterator for the generic interface for the container.|
-|[hash_map::generic_value (STL/CLR)](#generic_value)|The type of an element for the generic interface for the container.|
-|[hash_map::hasher (STL/CLR)](#hasher)|The hashing delegate for a key.|
-|[hash_map::iterator (STL/CLR)](#iterator)|The type of an iterator for the controlled sequence.|
-|[hash_map::key_compare (STL/CLR)](#key_compare)|The ordering delegate for two keys.|
-|[hash_map::key_type (STL/CLR)](#key_type)|The type of an ordering key.|
-|[hash_map::mapped_type (STL/CLR)](#mapped_type)|The type of the mapped value associated with each key.|
-|[hash_map::reference (STL/CLR)](#reference)|The type of a reference to an element.|
-|[hash_map::reverse_iterator (STL/CLR)](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|
-|[hash_map::size_type (STL/CLR)](#size_type)|The type of a (non-negative) distance between two elements.|
-|[hash_map::value_compare (STL/CLR)](#value_compare)|The ordering delegate for two element values.|
-|[hash_map::value_type (STL/CLR)](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`hash_map::const_iterator`](#const_iterator) | The type of a constant iterator for the controlled sequence. |
+| [`hash_map::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`hash_map::const_reverse_iterator`](#const_reverse_iterator) | The type of a constant reverse iterator for the controlled sequence. |
+| [`hash_map::difference_type`](#difference_type) | The type of a (possibly signed) distance between two elements. |
+| [`hash_map::generic_container`](#generic_container) | The type of the generic interface for the container. |
+| [`hash_map::generic_iterator`](#generic_iterator) | The type of an iterator for the generic interface for the container. |
+| [`hash_map::generic_reverse_iterator`](#generic_reverse_iterator) | The type of a reverse iterator for the generic interface for the container. |
+| [`hash_map::generic_value`](#generic_value) | The type of an element for the generic interface for the container. |
+| [`hash_map::hasher`](#hasher) | The hashing delegate for a key. |
+| [`hash_map::iterator`](#iterator) | The type of an iterator for the controlled sequence. |
+| [`hash_map::key_compare`](#key_compare) | The ordering delegate for two keys. |
+| [`hash_map::key_type`](#key_type) | The type of an ordering key. |
+| [`hash_map::mapped_type`](#mapped_type) | The type of the mapped value associated with each key. |
+| [`hash_map::reference`](#reference) | The type of a reference to an element. |
+| [`hash_map::reverse_iterator`](#reverse_iterator) | The type of a reverse iterator for the controlled sequence. |
+| [`hash_map::size_type`](#size_type) | The type of a (non-negative) distance between two elements. |
+| [`hash_map::value_compare`](#value_compare) | The ordering delegate for two element values. |
+| [`hash_map::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[hash_map::begin (STL/CLR)](#begin)|Designates the beginning of the controlled sequence.|
-|[hash_map::bucket_count (STL/CLR)](#bucket_count)|Counts the number of buckets.|
-|[hash_map::clear (STL/CLR)](#clear)|Removes all elements.|
-|[hash_map::count (STL/CLR)](#count)|Counts elements matching a specified key.|
-|[hash_map::empty (STL/CLR)](#empty)|Tests whether no elements are present.|
-|[hash_map::end (STL/CLR)](#end)|Designates the end of the controlled sequence.|
-|[hash_map::equal_range (STL/CLR)](#equal_range)|Finds range that matches a specified key.|
-|[hash_map::erase (STL/CLR)](#erase)|Removes elements at specified positions.|
-|[hash_map::find (STL/CLR)](#find)|Finds an element that matches a specified key.|
-|[hash_map::hash_delegate (STL/CLR)](#hash_delegate)|Copies the hashing delegate for a key.|
-|[hash_map::hash_map (STL/CLR)](#hash_map)|Constructs a container object.|
-|[hash_map::insert (STL/CLR)](#insert)|Adds elements.|
-|[hash_map::key_comp (STL/CLR)](#key_comp)|Copies the ordering delegate for two keys.|
-|[hash_map::load_factor (STL/CLR)](#load_factor)|Counts the average elements per bucket.|
-|[hash_map::lower_bound (STL/CLR)](#lower_bound)|Finds beginning of range that matches a specified key.|
-|[hash_map::make_value (STL/CLR)](#make_value)|Constructs a value object.|
-|[hash_map::max_load_factor (STL/CLR)](#max_load_factor)|Gets or sets the maximum elements per bucket.|
-|[hash_map::rbegin (STL/CLR)](#rbegin)|Designates the beginning of the reversed controlled sequence.|
-|[hash_map::rehash (STL/CLR)](#rehash)|Rebuilds the hash table.|
-|[hash_map::rend (STL/CLR)](#rend)|Designates the end of the reversed controlled sequence.|
-|[hash_map::size (STL/CLR)](#size)|Counts the number of elements.|
-|[hash_map::swap (STL/CLR)](#swap)|Swaps the contents of two containers.|
-|[hash_map::to_array (STL/CLR)](#to_array)|Copies the controlled sequence to a new array.|
-|[hash_map::upper_bound (STL/CLR)](#upper_bound)|Finds end of range that matches a specified key.|
-|[hash_map::value_comp (STL/CLR)](#value_comp)|Copies the ordering delegate for two element values.|
+| Member function | Description |
+|---|---|
+| [`hash_map::begin`](#begin) | Designates the beginning of the controlled sequence. |
+| [`hash_map::bucket_count`](#bucket_count) | Counts the number of buckets. |
+| [`hash_map::clear`](#clear) | Removes all elements. |
+| [`hash_map::count`](#count) | Counts elements matching a specified key. |
+| [`hash_map::empty`](#empty) | Tests whether no elements are present. |
+| [`hash_map::end`](#end) | Designates the end of the controlled sequence. |
+| [`hash_map::equal_range`](#equal_range) | Finds range that matches a specified key. |
+| [`hash_map::erase`](#erase) | Removes elements at specified positions. |
+| [`hash_map::find`](#find) | Finds an element that matches a specified key. |
+| [`hash_map::hash_delegate`](#hash_delegate) | Copies the hashing delegate for a key. |
+| [`hash_map::hash_map`](#hash_map) | Constructs a container object. |
+| [`hash_map::insert`](#insert) | Adds elements. |
+| [`hash_map::key_comp`](#key_comp) | Copies the ordering delegate for two keys. |
+| [`hash_map::load_factor`](#load_factor) | Counts the average elements per bucket. |
+| [`hash_map::lower_bound`](#lower_bound) | Finds beginning of range that matches a specified key. |
+| [`hash_map::make_value`](#make_value) | Constructs a value object. |
+| [`hash_map::max_load_factor`](#max_load_factor) | Gets or sets the maximum elements per bucket. |
+| [`hash_map::rbegin`](#rbegin) | Designates the beginning of the reversed controlled sequence. |
+| [`hash_map::rehash`](#rehash) | Rebuilds the hash table. |
+| [`hash_map::rend`](#rend) | Designates the end of the reversed controlled sequence. |
+| [`hash_map::size`](#size) | Counts the number of elements. |
+| [`hash_map::swap`](#swap) | Swaps the contents of two containers. |
+| [`hash_map::to_array`](#to_array) | Copies the controlled sequence to a new array. |
+| [`hash_map::upper_bound`](#upper_bound) | Finds end of range that matches a specified key. |
+| [`hash_map::value_comp`](#value_comp) | Copies the ordering delegate for two element values. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[hash_map::operator= (STL/CLR)](#op_as)|Replaces the controlled sequence.|
-|[hash_map::operator(STL/CLR)](#op)|Maps a key to its associated mapped value.|
+| Operator | Description |
+|---|---|
+| [`hash_map::operator=`](#op_as) | Replaces the controlled sequence. |
+| [`hash_map::operator[]`](#op) | Maps a key to its associated mapped value. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|<xref:System.Collections.IEnumerable>|Sequence through elements.|
-|<xref:System.Collections.ICollection>|Maintain group of elements.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Sequence through typed elements.|
-|<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|
-|<xref:System.Collections.Generic.IDictionary%602>|Maintain group of {key, value} pairs.|
-|IHash<Key, Value>|Maintain generic container.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| <xref:System.Collections.IEnumerable> | Sequence through elements. |
+| <xref:System.Collections.ICollection> | Maintain group of elements. |
+| <xref:System.Collections.Generic.IEnumerable%601> | Sequence through typed elements. |
+| <xref:System.Collections.Generic.ICollection%601> | Maintain group of typed elements. |
+| <xref:System.Collections.Generic.IDictionary%602> | Maintain group of {key, value} pairs. |
+| `IHash<Key, Value>` | Maintain generic container. |
 
 ## Remarks
 
 The object allocates and frees storage for the sequence it controls as individual nodes in a bidirectional linked list. To speed access, the object also maintains a varying-length array of pointers into the list (the hash table), effectively managing the whole list as a sequence of sublists, or buckets. It inserts elements into a bucket that it keeps ordered by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements.
 
-The object orders each bucket it controls by calling a stored delegate object of type [hash_set::key_compare (STL/CLR)](./hash-set-stl-clr.md#key_compare). You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the comparison `operator<=(key_type, key_type)`.
+The object orders each bucket it controls by calling a stored delegate object of type [`hash_set::key_compare`](./hash-set-stl-clr.md#key_compare). You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the comparison `operator<=(key_type, key_type)`.
 
-You access the stored delegate object by calling the member function [hash_set::key_comp (STL/CLR)](./hash-set-stl-clr.md#key_comp)`()`. Such a delegate object must define equivalent ordering between keys of type [hash_set::key_type (STL/CLR)](./hash-set-stl-clr.md#key_type). That means, for any two keys `X` and `Y`:
+You access the stored delegate object by calling the member function [`hash_set::key_comp()`](./hash-set-stl-clr.md#key_comp). Such a delegate object must define equivalent ordering between keys of type [`hash_set::key_type`](./hash-set-stl-clr.md#key_type). That means, for any two keys `X` and `Y`:
 
 `key_comp()(X, Y)` returns the same Boolean result on every call.
 
 If `key_comp()(X, Y) && key_comp()(Y, X)` is true, then `X` and `Y` are said to have equivalent ordering.
 
-Any ordering rule that behaves like `operator<=(key_type, key_type)`, `operator>=(key_type, key_type)` or `operator==(key_type, key_type)` defines eqivalent ordering.
+Any ordering rule that behaves like `operator<=(key_type, key_type)`, `operator>=(key_type, key_type)` or `operator==(key_type, key_type)` defines equivalent ordering.
 
-Note that the container ensures only that elements whose keys have equivalent ordering (and which hash to the same integer value) are adjacent within a bucket. Unlike template class [hash_multimap (STL/CLR)](../dotnet/hash-multimap-stl-clr.md), an object of template class `hash_map` ensures that keys for all elements are unique. (No two keys have equivalent ordering.)
+The container ensures only that elements whose keys have equivalent ordering (and which hash to the same integer value) are adjacent within a bucket. Unlike template class [`hash_multimap`](../dotnet/hash-multimap-stl-clr.md), an object of template class `hash_map` ensures that keys for all elements are unique. (No two keys have equivalent ordering.)
 
-The object determines which bucket should contain a given ordering key by calling a stored delegate object of type [hash_set::hasher (STL/CLR)](./hash-set-stl-clr.md#hasher). You access this stored object by calling the member function [hash_set::hash_delegate (STL/CLR)](./hash-set-stl-clr.md#hash_delegate)`()` to obtain an integer value that depends on the key value. You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the function `System::Object::hash_value(key_type)`. That means, for any keys `X` and `Y`:
+The object determines which bucket should contain a given ordering key by calling a stored delegate object of type [`hash_set::hasher`](./hash-set-stl-clr.md#hasher). You access this stored object by calling the member function [`hash_set::hash_delegate`](./hash-set-stl-clr.md#hash_delegate) to obtain an integer value that depends on the key value. You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the function `System::Object::hash_value(key_type)`. That means, for any keys `X` and `Y`:
 
 `hash_delegate()(X)` returns the same integer result on every call.
 
 If `X` and `Y` have equivalent ordering, then `hash_delegate()(X)` should return the same integer result as `hash_delegate()(Y)`.
 
-Each element contains a separate key and a mapped value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations that is independent of the number of elements in the sequence (constant time) -- at least in the best of cases. Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators which point at the removed element.
+Each element contains a separate key and a mapped value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element in constant time. That is, the number of operations is independent of the number of elements in the sequence, at least in the best of cases. Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators that point at the removed element.
 
-If hashed values are not uniformly distributed, however, a hash table can degenerate. In the extreme -- for a hash function that always returns the same value -- lookup, insertion, and removal are proportional to the number of elements in the sequence (linear time). The container endeavors to choose a reasonable hash function, mean bucket size, and hash-table size (total number of buckets), but you can override any or all of these choices. See, for example, the functions [hash_set::max_load_factor (STL/CLR)](./hash-set-stl-clr.md#max_load_factor) and [hash_set::rehash (STL/CLR)](./hash-set-stl-clr.md#rehash).
+If hashed values aren't uniformly distributed, however, a hash table can degenerate. In the extreme (for a hash function that always returns the same value), lookup, insertion, and removal are proportional to the number of elements in the sequence (linear time). The container endeavors to choose a reasonable hash function, mean bucket size, and hash-table size (total number of buckets), but you can override any or all of these choices. See, for example, the functions [`hash_set::max_load_factor`](./hash-set-stl-clr.md#max_load_factor) and [`hash_set::rehash`](./hash-set-stl-clr.md#rehash).
 
-A hash_map supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [hash_map::end (STL/CLR)](#end)`()`. You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a hash_map iterator to reach the head node, and it will then compare equal to `end()`. But you cannot dereference the iterator returned by `end()`.
+A `hash_map` supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [`end()`](#end). You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a `hash_map` iterator to reach the head node, and it will then compare equal to `end()`. But you can't dereference the iterator returned by `end()`.
 
-Note that you cannot refer to a hash_map element directly given its numerical position -- that requires a random-access iterator.
+You can't refer to a `hash_map` element directly given its numerical position; that requires a random-access iterator.
 
-A hash_map iterator stores a handle to its associated hash_map node, which in turn stores a handle to its associated container. You can use iterators only with their associated container objects. A hash_map iterator remains valid so long as its associated hash_map node is associated with some hash_map. Moreover, a valid iterator is dereferencable -- you can use it to access or alter the element value it designates -- so long as it is not equal to `end()`.
+A `hash_map` iterator stores a handle to its associated `hash_map` node, which in turn stores a handle to its associated container. You can use iterators only with their associated container objects. A `hash_map` iterator remains valid so long as its associated `hash_map` node is associated with some `hash_map`. Moreover, a valid iterator is dereferencable. You can use it to access or alter the element value it designates, so long as it's not equal to `end()`.
 
-Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does *not* destroy its elements.
+Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles doesn't* destroy its elements.
 
 ## Members
 
-## <a name="begin"></a> hash_map::begin (STL/CLR)
+## <a name="begin"></a> `hash_map::begin`
 
 Designates the beginning of the controlled sequence.
 
@@ -208,7 +208,7 @@ int main()
 *++begin() = [b 2]
 ```
 
-## <a name="bucket_count"></a> hash_map::bucket_count (STL/CLR)
+## <a name="bucket_count"></a> `hash_map::bucket_count`
 
 Counts the number of buckets.
 
@@ -220,7 +220,7 @@ int bucket_count();
 
 ### Remarks
 
-The member functions returns the current number of buckets. You use it to determine the size of the hash table.
+The member function returns the current number of buckets. You use it to determine the size of the hash table.
 
 ### Example
 
@@ -282,7 +282,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="clear"></a> hash_map::clear (STL/CLR)
+## <a name="clear"></a> `hash_map::clear`
 
 Removes all elements.
 
@@ -294,7 +294,7 @@ void clear();
 
 ### Remarks
 
-The member function effectively calls [hash_map::erase (STL/CLR)](#erase)`(` [hash_map::begin (STL/CLR)](#begin)`(),` [hash_map::end (STL/CLR)](#end)`())`. You use it to ensure that the controlled sequence is empty.
+The member function effectively calls `erase(begin(), end())`. You use it to ensure that the controlled sequence is empty.
 
 ### Example
 
@@ -340,7 +340,7 @@ size() = 0
 size() = 0
 ```
 
-## <a name="const_iterator"></a> hash_map::const_iterator (STL/CLR)
+## <a name="const_iterator"></a> `hash_map::const_iterator`
 
 The type of a constant iterator for the controlled sequence.
 
@@ -382,7 +382,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="const_reference"></a> hash_map::const_reference (STL/CLR)
+## <a name="const_reference"></a> `hash_map::const_reference`
 
 The type of a constant reference to an element.
 
@@ -427,9 +427,9 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="const_reverse_iterator"></a> hash_map::const_reverse_iterator (STL/CLR)
+## <a name="const_reverse_iterator"></a> `hash_map::const_reverse_iterator`
 
-The type of a constant reverse iterator for the controlled sequence..
+The type of a constant reverse iterator for the controlled sequence.
 
 ### Syntax
 
@@ -469,7 +469,7 @@ int main()
 [c 3] [b 2] [a 1]
 ```
 
-## <a name="count"></a> hash_map::count (STL/CLR)
+## <a name="count"></a> `hash_map::count`
 
 Finds the number of elements matching a specified key.
 
@@ -481,12 +481,12 @@ size_type count(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-The member function returns the number of elements in the controlled sequence that have equivalent ordering with *key*. You use it to determine the number of elements currently in the controlled sequence that match a specified key.
+The member function returns the number of elements in the controlled sequence that have equivalent ordering with *`key`*. You use it to determine the number of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -522,7 +522,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="difference_type"></a> hash_map::difference_type (STL/CLR)
+## <a name="difference_type"></a> `hash_map::difference_type`
 
 The types of a signed distance between two elements.
 
@@ -577,7 +577,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="empty"></a> hash_map::empty (STL/CLR)
+## <a name="empty"></a> `hash_map::empty`
 
 Tests whether no elements are present.
 
@@ -589,7 +589,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [hash_map::size (STL/CLR)](#size)`() == 0`. You use it to test whether the hash_map is empty.
+The member function returns `true` for an empty controlled sequence. It's equivalent to `size() == 0`. You use it to test whether the `hash_map` is empty.
 
 ### Example
 
@@ -629,7 +629,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="end"></a> hash_map::end (STL/CLR)
+## <a name="end"></a> `hash_map::end`
 
 Designates the end of the controlled sequence.
 
@@ -641,7 +641,7 @@ iterator end();
 
 ### Remarks
 
-The member function returns a bidirectional iterator that points just beyond the end of the controlled sequence. You use it to obtain an iterator that designates the end of the controlled sequence; its status doesn not change if the length of the controlled sequence changes.
+The member function returns a bidirectional iterator that points just beyond the end of the controlled sequence. You use it to obtain an iterator that designates the end of the controlled sequence; its status doesn't change if the length of the controlled sequence changes.
 
 ### Example
 
@@ -682,7 +682,7 @@ int main()
 *--end() = [c 3]
 ```
 
-## <a name="equal_range"></a> hash_map::equal_range (STL/CLR)
+## <a name="equal_range"></a> `hash_map::equal_range`
 
 Finds range that matches a specified key.
 
@@ -694,7 +694,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
@@ -743,7 +743,7 @@ equal_range(L'x') empty = True
 [b 2]
 ```
 
-## <a name="erase"></a> hash_map::erase (STL/CLR)
+## <a name="erase"></a> `hash_map::erase`
 
 Removes elements at specified positions.
 
@@ -757,25 +757,25 @@ bool erase(key_type key)
 
 #### Parameters
 
-*first*<br/>
+*`first`*\
 Beginning of range to erase.
 
-*key*<br/>
+*`key`*\
 Key value to erase.
 
-*last*<br/>
+*`last`*\
 End of range to erase.
 
-*where*<br/>
+*`where`*\
 Element to erase.
 
 ### Remarks
 
-The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [hash_map::end (STL/CLR)](#end)`()` if no such element exists. You use it to remove a single element.
+The first member function removes the element of the controlled sequence pointed to by *`where`*, and returns an iterator that designates the first element remaining beyond the element removed, or [`end()`](#end) if no such element exists. You use it to remove a single element.
 
-The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.
+The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists. You use it to remove zero or more contiguous elements.
 
-The third member function removes any element of the controlled sequence whose key has equivalent ordering to *key*, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.
+The third member function removes any element of the controlled sequence whose key has equivalent ordering to *`key`*, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.
 
 Each element erasure takes time proportional to the logarithm of the number of elements in the controlled sequence.
 
@@ -836,7 +836,7 @@ erase(L'x') = 0
 erase(L'e') = 1
 ```
 
-## <a name="find"></a> hash_map::find (STL/CLR)
+## <a name="find"></a> `hash_map::find`
 
 Finds an element that matches a specified key.
 
@@ -848,12 +848,12 @@ iterator find(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [hash_map::end (STL/CLR)](#end)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.
+If at least one element in the controlled sequence has equivalent ordering with *`key`*, the member function returns an iterator designating one of those elements; otherwise it returns [`end()`](#end). You use it to locate an element currently in the controlled sequence that matches a specified key.
 
 ### Example
 
@@ -895,7 +895,7 @@ find b = [b 2]
 find C = False
 ```
 
-## <a name="generic_container"></a> hash_map::generic_container (STL/CLR)
+## <a name="generic_container"></a> `hash_map::generic_container`
 
 The type of the generic interface for the container.
 
@@ -959,7 +959,7 @@ int main()
 [a 1] [b 2] [c 3] [d 4] [e 5]
 ```
 
-## <a name="generic_iterator"></a> hash_map::generic_iterator (STL/CLR)
+## <a name="generic_iterator"></a> `hash_map::generic_iterator`
 
 The type of an iterator for use with the generic interface for the container.
 
@@ -1016,7 +1016,7 @@ int main()
 [a 1]
 ```
 
-## <a name="generic_reverse_iterator"></a> hash_map::generic_reverse_iterator (STL/CLR)
+## <a name="generic_reverse_iterator"></a> `hash_map::generic_reverse_iterator`
 
 The type of a reverse iterator for use with the generic interface for the container.
 
@@ -1072,7 +1072,7 @@ int main()
 [c 3]
 ```
 
-## <a name="generic_value"></a> hash_map::generic_value (STL/CLR)
+## <a name="generic_value"></a> `hash_map::generic_value`
 
 The type of an element for use with the generic interface for the container.
 
@@ -1126,7 +1126,7 @@ int main()
 [a 1]
 ```
 
-## <a name="hash_delegate"></a> hash_map::hash_delegate (STL/CLR)
+## <a name="hash_delegate"></a> `hash_map::hash_delegate`
 
 Finds an element that matches a specified key.
 
@@ -1164,7 +1164,7 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="hash_map"></a> hash_map::hash_map (STL/CLR)
+## <a name="hash_map"></a> `hash_map::hash_map`
 
 Constructs a container object.
 
@@ -1193,19 +1193,19 @@ hash_map(System::Collections::Generic::IEnumerable<GValue>^ right,
 
 #### Parameters
 
-*first*<br/>
+*`first`*\
 Beginning of range to insert.
 
-*hashfn*<br/>
+*`hashfn`*\
 Hash function for mapping keys to buckets.
 
-*last*<br/>
+*`last`*\
 End of range to insert.
 
-*pred*<br/>
+*`pred`*\
 Ordering predicate for the controlled sequence.
 
-*right*<br/>
+*`right`*\
 Object or range to insert.
 
 ### Remarks
@@ -1220,25 +1220,25 @@ The constructor:
 
 `explicit hash_map(key_compare^ pred);`
 
-initializes the controlled sequence with no elements, with the ordering predicate *pred*, and with the default hash function. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and the default hash function.
+initializes the controlled sequence with no elements, with the ordering predicate *`pred`*, and with the default hash function. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and the default hash function.
 
 The constructor:
 
 `hash_map(key_compare^ pred, hasher^ hashfn);`
 
-initializes the controlled sequence with no elements, with the ordering predicate *pred*, and with the hash function *hashfn*. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and hash function.
+initializes the controlled sequence with no elements, with the ordering predicate *`pred`*, and with the hash function *`hashfn`*. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and hash function.
 
 The constructor:
 
 `hash_map(hash_map<Key, Mapped>% right);`
 
-initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_map object *right*, with the default ordering predicate and hash function.
+initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `hash_map` object *`right`*, with the default ordering predicate and hash function.
 
 The constructor:
 
 `hash_map(hash_map<Key, Mapped>^ right);`
 
-initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_map object *right*, with the default ordering predicate and hash function.
+initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `hash_map` object *`right`*, with the default ordering predicate and hash function.
 
 The constructor:
 
@@ -1250,31 +1250,31 @@ The constructor:
 
 `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred);`
 
-initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *pred*, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.
+initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *`pred`*, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.
 
 The constructor:
 
 `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`
 
-initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *pred*, and with the hash function *hashfn*. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.
+initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *`pred`*, and with the hash function *`hashfn`*. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.
 
 The constructor:
 
 `hash_map(System::Collections::Generic::IEnumerable<Key>^ right);`
 
-initializes the controlled sequence with the sequence designated by the enumerator *right*, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate and hash function.
+initializes the controlled sequence with the sequence designated by the enumerator *`right`*, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate and hash function.
 
 The constructor:
 
 `hash_map(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`
 
-initializes the controlled sequence with the sequence designated by the enumerator *right*, with the ordering predicate *pred*, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and default hash function.
+initializes the controlled sequence with the sequence designated by the enumerator *`right`*, with the ordering predicate *`pred`*, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and default hash function.
 
 The constructor:
 
 `hash_map(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`
 
-initializes the controlled sequence with the sequence designated by the enumerator *right*, with the ordering predicate *pred*, and with the hash function *hashfn*. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and hash function.
+initializes the controlled sequence with the sequence designated by the enumerator *`right`*, with the ordering predicate *`pred`*, and with the hash function *`hashfn`*. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and hash function.
 
 ### Example
 
@@ -1407,7 +1407,7 @@ size() = 0
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="hasher"></a> hash_map::hasher (STL/CLR)
+## <a name="hasher"></a> `hash_map::hasher`
 
 The hashing delegate for a key.
 
@@ -1446,7 +1446,7 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="insert"></a> hash_map::insert (STL/CLR)
+## <a name="insert"></a> `hash_map::insert`
 
 Adds elements.
 
@@ -1462,19 +1462,19 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
 
 #### Parameters
 
-*first*<br/>
+*`first`*\
 Beginning of range to insert.
 
-*last*<br/>
+*`last`*\
 End of range to insert.
 
-*right*<br/>
+*`right`*\
 Enumeration to insert.
 
-*val*<br/>
+*`val`*\
 Key value to insert.
 
-*where*<br/>
+*`where`*\
 Where in container to insert (hint only).
 
 ### Remarks
@@ -1483,13 +1483,13 @@ Each of the member functions inserts a sequence specified by the remaining opera
 
 The first member function endeavors to insert an element with value `val`, and returns a pair of values `X`. If `X.second` is true, `X.first` designates the newly inserted element; otherwise `X.first` designates an element with equivalent ordering that already exists and no new element is inserted. You use it to insert a single element.
 
-The second member function inserts an element with value *val*, using *where* as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.
+The second member function inserts an element with value *`val`*, using *`where`* as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element that might be next to an element you know.
 
 The third member function inserts the sequence [`first`, `last`). You use it to insert zero or more elements copied from another sequence.
 
-The fourth member function inserts the sequence designated by the *right*. You use it to insert a sequence described by an enumerator.
+The fourth member function inserts the sequence designated by the *`right`*. You use it to insert a sequence described by an enumerator.
 
-Each element insertion takes time proportional to the logarithm of the number of elements in the controlled sequence. Insertion can occur in amortized constant time, however, given a hint that designates an element adjacent to the insertion point.
+Each element insertion takes time proportional to the logarithm of the number of elements in the controlled sequence. Insertion can occur in amortized constant time, however, given a hint that designates an element next to the insertion point.
 
 ### Example
 
@@ -1566,7 +1566,7 @@ insert(begin(), [L'y' 25]) = [y 25]
 [a 1] [b 2] [c 3] [x 24] [y 25]
 ```
 
-## <a name="iterator"></a> hash_map::iterator (STL/CLR)
+## <a name="iterator"></a> `hash_map::iterator`
 
 The type of an iterator for the controlled sequence.
 
@@ -1608,7 +1608,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="key_comp"></a> hash_map::key_comp (STL/CLR)
+## <a name="key_comp"></a> `hash_map::key_comp`
 
 Copies the ordering delegate for two keys.
 
@@ -1667,7 +1667,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="key_compare"></a> hash_map::key_compare (STL/CLR)
+## <a name="key_compare"></a> `hash_map::key_compare`
 
 The ordering delegate for two keys.
 
@@ -1727,7 +1727,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="key_type"></a> hash_map::key_type (STL/CLR)
+## <a name="key_type"></a> `hash_map::key_type`
 
 The type of an ordering key.
 
@@ -1739,7 +1739,7 @@ typedef Key key_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Key*.
+The type is a synonym for the template parameter *`Key`*.
 
 ### Example
 
@@ -1772,7 +1772,7 @@ int main()
 a b c
 ```
 
-## <a name="load_factor"></a> hash_map::load_factor (STL/CLR)
+## <a name="load_factor"></a> `hash_map::load_factor`
 
 Counts the average elements per bucket.
 
@@ -1784,7 +1784,7 @@ float load_factor();
 
 ### Remarks
 
-The member function returns `(float)`[hash_map::size (STL/CLR)](#size)`() /` [hash_map::bucket_count (STL/CLR)](#bucket_count)`()`. You use it to determine the average bucket size.
+The member function returns `(float)size() / bucket_count()`. You use it to determine the average bucket size.
 
 ### Example
 
@@ -1846,7 +1846,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="lower_bound"></a> hash_map::lower_bound (STL/CLR)
+## <a name="lower_bound"></a> `hash_map::lower_bound`
 
 Finds beginning of range that matches a specified key.
 
@@ -1858,12 +1858,12 @@ iterator lower_bound(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-The member function determines the first element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, it returns [hash_map::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the first element `X` in the controlled sequence that hashes to the same bucket as *`key`* and has equivalent ordering to *`key`*. If no such element exists, it returns [`end()`](#end); otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -1905,7 +1905,7 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = [b 2]
 ```
 
-## <a name="make_value"></a> hash_map::make_value (STL/CLR)
+## <a name="make_value"></a> `hash_map::make_value`
 
 Constructs a value object.
 
@@ -1917,15 +1917,15 @@ static value_type make_value(key_type key, mapped_type mapped);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to use.
 
-*mapped*<br/>
+*`mapped`*\
 Mapped value to search for.
 
 ### Remarks
 
-The member function returns a `value_type` object whose key is *key* and whose mapped value is *mapped*. You use it to compose an object suitable for use with several other member functions.
+The member function returns a `value_type` object whose key is *`key`* and whose mapped value is *`mapped`*. You use it to compose an object suitable for use with several other member functions.
 
 ### Example
 
@@ -1954,7 +1954,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapped_type"></a> hash_map::mapped_type (STL/CLR)
+## <a name="mapped_type"></a> `hash_map::mapped_type`
 
 The type of a mapped value associated with each key.
 
@@ -1999,7 +1999,7 @@ int main()
 1 2 3
 ```
 
-## <a name="max_load_factor"></a> hash_map::max_load_factor (STL/CLR)
+## <a name="max_load_factor"></a> `hash_map::max_load_factor`
 
 Gets or sets the maximum elements per bucket.
 
@@ -2012,14 +2012,14 @@ void max_load_factor(float new_factor);
 
 #### Parameters
 
-*new_factor*<br/>
+*`new_factor`*\
 New maximum load factor to store.
 
 ### Remarks
 
 The first member function returns the current stored maximum load factor. You use it to determine the maximum average bucket size.
 
-The second member function replaces the store maximum load factor with *new_factor*. No automatic rehashing occurs until a subsequent insert.
+The second member function replaces the store maximum load factor with *`new_factor`*. No automatic rehashing occurs until a subsequent insert.
 
 ### Example
 
@@ -2081,7 +2081,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="op_as"></a> hash_map::operator= (STL/CLR)
+## <a name="op_as"></a> `hash_map::operator=`
 
 Replaces the controlled sequence.
 
@@ -2093,12 +2093,12 @@ hash_map<Key, Mapped>% operator=(hash_map<Key, Mapped>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *`right`* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *`right`*.
 
 ### Example
 
@@ -2136,7 +2136,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="op"></a> hash_map::operator(STL/CLR)
+## <a name="op"></a> `hash_map::operator[]`
 
 Maps a key to its associated mapped value.
 
@@ -2148,12 +2148,12 @@ mapped_type operator[](key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-The member functions endeavors to find an element with equivalent ordering to *key*. If it finds one, it returns the associated mapped value; otherwise, it inserts `value_type(key, mapped_type())` and returns the associated (default) mapped value. You use it to look up a mapped value given its associated key, or to ensure that an entry exists for the key if none is found.
+The member functions endeavors to find an element with equivalent ordering to *`key`*. If it finds one, it returns the associated mapped value; otherwise, it inserts `value_type(key, mapped_type())` and returns the associated (default) mapped value. You use it to look up a mapped value given its associated key, or to ensure that an entry exists for the key if none is found.
 
 ### Example
 
@@ -2203,7 +2203,7 @@ c1[b] = 2
 [a 1] [A 10] [b 2] [c 13]
 ```
 
-## <a name="rbegin"></a> hash_map::rbegin (STL/CLR)
+## <a name="rbegin"></a> `hash_map::rbegin`
 
 Designates the beginning of the reversed controlled sequence.
 
@@ -2254,7 +2254,7 @@ int main()
 *++rbegin() = [b 2]
 ```
 
-## <a name="reference"></a> hash_map::reference (STL/CLR)
+## <a name="reference"></a> `hash_map::reference`
 
 The type of a reference to an element.
 
@@ -2299,7 +2299,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="rehash"></a> hash_map::rehash (STL/CLR)
+## <a name="rehash"></a> `hash_map::rehash`
 
 Rebuilds the hash table.
 
@@ -2311,7 +2311,7 @@ void rehash();
 
 ### Remarks
 
-The member function rebuilds the hash table, ensuring that [hash_map::load_factor (STL/CLR)](#load_factor)`() <=` [hash_map::max_load_factor (STL/CLR)](#max_load_factor). Otherwise, the hash table increases in size only as needed after an insertion. (It never automatically decreases in size.) You use it to adjust the size of the hash table.
+The member function rebuilds the hash table, ensuring that `load_factor() <= max_load_factor()`. Otherwise, the hash table increases in size only as needed after an insertion. (It never automatically decreases in size.) You use it to adjust the size of the hash table.
 
 ### Example
 
@@ -2373,7 +2373,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="rend"></a> hash_map::rend (STL/CLR)
+## <a name="rend"></a> `hash_map::rend`
 
 Designates the end of the reversed controlled sequence.
 
@@ -2426,7 +2426,7 @@ int main()
 *--rend() = [a 1]
 ```
 
-## <a name="reverse_iterator"></a> hash_map::reverse_iterator (STL/CLR)
+## <a name="reverse_iterator"></a> `hash_map::reverse_iterator`
 
 The type of a reverse iterator for the controlled sequence.
 
@@ -2468,7 +2468,7 @@ int main()
 [c 3] [b 2] [a 1]
 ```
 
-## <a name="size"></a> hash_map::size (STL/CLR)
+## <a name="size"></a> `hash_map::size`
 
 Counts the number of elements.
 
@@ -2480,7 +2480,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [hash_map::empty (STL/CLR)](#empty)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [`hash_map::empty`](#empty).
 
 ### Example
 
@@ -2520,9 +2520,9 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="size_type"></a> hash_map::size_type (STL/CLR)
+## <a name="size_type"></a> `hash_map::size_type`
 
-The type of a signed distance between two element.
+The type of a signed distance between two elements.
 
 ### Syntax
 
@@ -2568,7 +2568,7 @@ int main()
 end()-begin() = 3
 ```
 
-## <a name="swap"></a> hash_map::swap (STL/CLR)
+## <a name="swap"></a> `hash_map::swap`
 
 Swaps the contents of two containers.
 
@@ -2580,12 +2580,12 @@ void swap(hash_map<Key, Mapped>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between **`this`** and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
+The member function swaps the controlled sequences between **`this`** and *`right`*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
 
 ### Example
 
@@ -2636,7 +2636,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="to_array"></a> hash_map::to_array (STL/CLR)
+## <a name="to_array"></a> `hash_map::to_array`
 
 Copies the controlled sequence to a new array.
 
@@ -2686,7 +2686,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="upper_bound"></a> hash_map::upper_bound (STL/CLR)
+## <a name="upper_bound"></a> `hash_map::upper_bound`
 
 Finds end of range that matches a specified key.
 
@@ -2698,12 +2698,12 @@ iterator upper_bound(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-The member function determines the last element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [hash_map::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the last element `X` in the controlled sequence that hashes to the same bucket as *`key`* and has equivalent ordering to *`key`*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [`end()`](#end); otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -2745,7 +2745,7 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = [c 3]
 ```
 
-## <a name="value_comp"></a> hash_map::value_comp (STL/CLR)
+## <a name="value_comp"></a> `hash_map::value_comp`
 
 Copies the ordering delegate for two element values.
 
@@ -2792,7 +2792,7 @@ compare([L'a', 1], [L'b', 2]) = True
 compare([L'b', 2], [L'a', 1]) = False
 ```
 
-## <a name="value_compare"></a> hash_map::value_compare (STL/CLR)
+## <a name="value_compare"></a> `hash_map::value_compare`
 
 The ordering delegate for two element values.
 
@@ -2840,7 +2840,7 @@ compare([L'a', 1], [L'b', 2]) = True
 compare([L'b', 2], [L'a', 1]) = False
 ```
 
-## <a name="value_type"></a> hash_map::value_type (STL/CLR)
+## <a name="value_type"></a> `hash_map::value_type`
 
 The type of an element.
 

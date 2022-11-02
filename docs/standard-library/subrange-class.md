@@ -24,7 +24,7 @@ class subrange : public view_interface<subrange<I, S, K>>
  The begin iterator type. The `input_or_output_iterator` concept ensures that *`I`* is an iterator that can read all of the elements.
 
 *`K`*\
-The kind of subrange: Use `subrange_kind::sized` to specify a sized subrange. Use `sized_sentinel_for<S, I>` if the iterator and sentinel can be subtracted to yield the size. The requirement `subrange_kind::sized || !sized_sentinel_for<S, I>` stores the size locally in the subrange object, and requires that you construct the subrange either using the constructor that takes a `sized_range` (for which you would specify `subrange_kind::sized` here) or via the constructor that takes an `iterator`, `sentinel`, and `size` (so you would specify `sized_sentinel_for<S, I>` here).
+The kind of subrange: Use `subrange_kind::sized` to specify a sized subrange. Use `sized_sentinel_for<S, I>` if the iterator and sentinel can be subtracted to yield the size. The requirement `subrange_kind::sized || !sized_sentinel_for<S, I>` stores the size locally in the subrange object, and requires that you construct the subrange either using the constructor that takes a [`sized_range`](range-concepts.md#sized_range) (for which you would specify `subrange_kind::sized` here) or via the constructor that takes an `iterator`, `sentinel`, and `size` (so you would specify `sized_sentinel_for<S, I>` here).
 
 *`S`*\
  The end iterator type. The `sized_sentinel_for` concept ensures that *`S`* can be used as a sentinel for *`I`* and that it's possible to compute the distance between the sentinel and the current iterator position in *`I`* in constant time.

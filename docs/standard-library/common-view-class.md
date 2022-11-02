@@ -30,13 +30,13 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::common`](range-adaptors.md#common) |
-| **Underlying range** | Must satisfy `forward_range` or higher |
+| **Underlying range** | Must satisfy [`forward_range`](range-concepts.md#forward_range) or higher |
 | **Element type** | Same as the underlying range |
-| **View iterator category** | Supports `forward_range` or `random_access_range` when the underlying range satisfies `random_access_range` and `sized_range` |
-| **Sized** | Only if the underlying range satisfies `sized_range` |
+| **View iterator category** | Supports `forward_range` or [`random_access_range`](range-concepts.md#random_access_range) when the underlying range satisfies `random_access_range` and [`sized_range`](range-concepts.md#sized_range) |
+| **Sized** | Only if the underlying range satisfies [`sized_range`](range-concepts.md#sized_range) |
 | **Is `const`-iterable** | Only if the underlying range is `const` iterable |
 | **Common range** | Yes |
-| **Borrowed range** | Only if the underlying range satisfies `borrowed_range` |
+| **Borrowed range** | Only if the underlying range satisfies [`borrowed_range`](range-concepts.md#borrowed_range) |
 
 ## Members
 

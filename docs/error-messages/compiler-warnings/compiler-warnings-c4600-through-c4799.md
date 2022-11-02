@@ -2,8 +2,8 @@
 description: "Learn more about: Compiler warnings C4600 Through C4799"
 title: "Compiler warnings C4600 Through C4799"
 ms.date: 05/03/2021
-f1_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767", "C4770"]
-helpviewer_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767", "C4770"]
+f1_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767"]
+helpviewer_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767"]
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
 ---
 # Compiler warnings C4600 Through C4799
@@ -147,7 +147,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 4) C4764](compiler-warning-level-4-c4764.md)|Can not align catch objects to greater than 16 bytes|
 |Compiler warning (level 4) C4767|section name '%s' is longer than 8 characters and will be truncated by the linker|
 |[Compiler warning (level 3) C4768](c4768.md)|__declspec attributes before linkage specification are ignored|
-|Compiler warning C4770|partially validated enum '*name*' used as index|
+| [Compiler warning (level 4) C4770](./c4770.md) | partially validated enum '*name*' used as index |
 |Compiler warning C4771|Bounds must be created using a simple pointer; MPX intrinsic function ignored|
 |[Compiler warning (level 1, Error) C4772](../../error-messages/compiler-warnings/compiler-warning-level-1-c4772.md)|#import referenced a type from a missing type library; 'missing_type' used as a placeholder|
 |Compiler warning (level 4) C4774|'*string*' : format string expected in argument *number* is not a string literal|

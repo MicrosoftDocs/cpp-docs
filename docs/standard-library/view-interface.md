@@ -69,7 +69,7 @@ The last element in the derived view.
 
 ### Remarks
 
-The derived view must satisfy `bidirectional_range` and `common_range`.\
+The derived view must satisfy [`bidirectional_range`](range-concepts.md#bidirectional_range) and [`common_range`](range-concepts.md#common_range).\
 The behavior of `back()` and `front()` are undefined for any empty view.
 
 ## `data`
@@ -138,7 +138,7 @@ The last element in the derived view.
 
 ### Remarks
 
-The derived view must satisfy `forward_range`.\
+The derived view must satisfy [`forward_range`](range-concepts.md#forward_range).\
 The behavior of `front()` is undefined for `std::ranges::empty_view`.
 
 ## `size`
@@ -189,7 +189,7 @@ The element at the specified position relative to the beginning iterator.
 
 ### Remarks
 
-The derived view must satisfy `random_access_range`.\
+The derived view must satisfy [`random_access_range`](range-concepts.md#random_access_range).\
 The behavior of this operator is undefined for `std::ranges::empty_view`.
 
 ### `operator[]` example
