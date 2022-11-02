@@ -7,11 +7,11 @@ f1_keywords: ["cliext::queue", "cliext::queue::assign", "cliext::queue::back", "
 helpviewer_keywords: ["<queue> header [STL/CLR]", "queue class [STL/CLR]", "<cliext/queue> header [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "back member [STL/CLR]", "back_item member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "push member [STL/CLR]", "queue member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
 ---
-# queue (STL/CLR)
+# `queue` (STL/CLR)
 
 The template class describes an object that controls a varying-length sequence of elements that has first-in first-out access. You use the container adapter `queue` to manage an underlying container as a queue.
 
-In the description below, `GValue` is the same as *Value* unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as *Container* unless the latter is a ref type, in which case it is `Container^`.
+In the description below, `GValue` is the same as *`Value`* unless the latter is a ref type, in which case it's `Value^`. Similarly, `GContainer` is the same as *`Container`* unless the latter is a ref type, in which case it's `Container^`.
 
 ## Syntax
 
@@ -27,73 +27,73 @@ template<typename Value,
 
 ### Parameters
 
-*Value*<br/>
+*`Value`*\
 The type of an element in the controlled sequence.
 
-*Container*<br/>
+*`Container`*\
 The type of the underlying container.
 
 ## Requirements
 
 **Header:** \<cliext/queue>
 
-**Namespace:** cliext
+**Namespace:** `cliext`
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[queue::const_reference (STL/CLR)](#const_reference)|The type of a constant reference to an element.|
-|[queue::container_type (STL/CLR)](#container_type)|The type of the underlying container.|
-|[queue::difference_type (STL/CLR)](#difference_type)|The type of a signed distance between two elements.|
-|[queue::generic_container (STL/CLR)](#generic_container)|The type of the generic interface for the container adapter.|
-|[queue::generic_value (STL/CLR)](#generic_value)|The type of an element for the generic interface for the container adapter.|
-|[queue::reference (STL/CLR)](#reference)|The type of a reference to an element.|
-|[queue::size_type (STL/CLR)](#size_type)|The type of a signed distance between two elements.|
-|[queue::value_type (STL/CLR)](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`queue::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`queue::container_type`](#container_type) | The type of the underlying container. |
+| [`queue::difference_type`](#difference_type) | The type of a signed distance between two elements. |
+| [`queue::generic_container`](#generic_container) | The type of the generic interface for the container adapter. |
+| [`queue::generic_value`](#generic_value) | The type of an element for the generic interface for the container adapter. |
+| [`queue::reference`](#reference) | The type of a reference to an element. |
+| [`queue::size_type`](#size_type) | The type of a signed distance between two elements. |
+| [`queue::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[queue::assign (STL/CLR)](#assign)|Replaces all elements.|
-|[queue::back (STL/CLR)](#back)|Accesses the last element.|
-|[queue::empty (STL/CLR)](#empty)|Tests whether no elements are present.|
-|[queue::front (STL/CLR)](#front)|Accesses the first element.|
-|[queue::get_container (STL/CLR)](#get_container)|Accesses the underlying container.|
-|[queue::pop (STL/CLR)](#pop)|Removes the first element.|
-|[queue::push (STL/CLR)](#push)|Adds a new last element.|
-|[queue::queue (STL/CLR)](#queue)|Constructs a container object.|
-|[queue::size (STL/CLR)](#size)|Counts the number of elements.|
-|[queue::to_array (STL/CLR)](#to_array)|Copies the controlled sequence to a new array.|
+| Member function | Description |
+|---|---|
+| [`queue::assign`](#assign) | Replaces all elements. |
+| [`queue::back`](#back) | Accesses the last element. |
+| [`queue::empty`](#empty) | Tests whether no elements are present. |
+| [`queue::front`](#front) | Accesses the first element. |
+| [`queue::get_container`](#get_container) | Accesses the underlying container. |
+| [`queue::pop`](#pop) | Removes the first element. |
+| [`queue::push`](#push) | Adds a new last element. |
+| [`queue::queue`](#queue) | Constructs a container object. |
+| [`queue::size`](#size) | Counts the number of elements. |
+| [`queue::to_array`](#to_array) | Copies the controlled sequence to a new array. |
 
-|Property|Description|
-|--------------|-----------------|
-|[queue::back_item (STL/CLR)](#back_item)|Accesses the last element.|
-|[queue::front_item (STL/CLR)](#front_item)|Accesses the first element.|
+| Property | Description |
+|---|---|
+| [`queue::back_item`](#back_item) | Accesses the last element. |
+| [`queue::front_item`](#front_item) | Accesses the first element. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[queue::operator= (STL/CLR)](#op_as)|Replaces the controlled sequence.|
-|[operator!= (queue) (STL/CLR)](#op_neq)|Determines if a `queue` object is not equal to another `queue` object.|
-|[operator< (queue) (STL/CLR)](#op_lt)|Determines if a `queue` object is less than another `queue` object.|
-|[operator<= (queue) (STL/CLR)](#op_lteq)|Determines if a `queue` object is less than or equal to another `queue` object.|
-|[operator== (queue) (STL/CLR)](#op_eq)|Determines if a `queue` object is equal to another `queue` object.|
-|[operator> (queue) (STL/CLR)](#op_gt)|Determines if a `queue` object is greater than another `queue` object.|
-|[operator>= (queue) (STL/CLR)](#op_gteq)|Determines if a `queue` object is greater than or equal to another `queue` object.|
+| Operator | Description |
+|---|---|
+| [`queue::operator=`](#op_as) | Replaces the controlled sequence. |
+| [`operator!=` (queue)](#op_neq) | Determines if a `queue` object isn't equal to another `queue` object. |
+| [`operator<` (queue)](#op_lt) | Determines if a `queue` object is less than another `queue` object. |
+| [`operator<=` (queue)](#op_lteq) | Determines if a `queue` object is less than or equal to another `queue` object. |
+| [`operator==` (queue)](#op_eq) | Determines if a `queue` object is equal to another `queue` object. |
+| [`operator>` (queue)](#op_gt) | Determines if a `queue` object is greater than another `queue` object. |
+| [`operator>=` (queue)](#op_gteq) | Determines if a `queue` object is greater than or equal to another `queue` object. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|IQueue\<Value, Container>|Maintain generic container adapter.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| `IQueue<Value, Container>` | Maintain generic container adapter. |
 
 ## Remarks
 
-The object allocates and frees storage for the sequence it controls through an underlying container, of type `Container`, that stores `Value` elements and grows on demand. The object restricts access to just pushing the first element and popping the last element, implementing a first-in first-out queue (also known as a FIFO queue, or simply a queue).
+The object allocates and frees storage for the sequence it controls through an underlying container of type *`Container`* that stores *`Value`* elements and grows on demand. The object restricts access to just pushing the first element and popping the last element, implementing a first-in first-out queue (also known as a FIFO queue, or simply a queue).
 
 ## Members
 
-## <a name="assign"></a> queue::assign (STL/CLR)
+## <a name="assign"></a> `queue::assign`
 
 Replaces all elements.
 
@@ -105,7 +105,7 @@ void assign(queue<Value, Container>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container adapter to insert.
 
 ### Remarks
@@ -147,7 +147,7 @@ a b c
 a b c
 ```
 
-## <a name="back"></a> queue::back (STL/CLR)
+## <a name="back"></a> `queue::back`
 
 Accesses the last element.
 
@@ -159,7 +159,7 @@ reference back();
 
 ### Remarks
 
-The member function returns a reference to the last element of the controlled sequence, which must be non-empty. You use it to access the last element, when you know it exists.
+The member function returns a reference to the last element of the controlled sequence, which must be non-empty. You use it to access the last element, when you know one exists.
 
 ### Example
 
@@ -199,7 +199,7 @@ back() = c
 a b x
 ```
 
-## <a name="back_item"></a> queue::back_item (STL/CLR)
+## <a name="back_item"></a> `queue::back_item`
 
 Accesses the last element.
 
@@ -211,7 +211,7 @@ property value_type back_item;
 
 ### Remarks
 
-The property accesses the last element of the controlled sequence, which must be non-empty. You use it to read or write the last element, when you know it exists.
+The property accesses the last element of the controlled sequence, which must be non-empty. You use it to read or write the last element, when you know one exists.
 
 ### Example
 
@@ -251,7 +251,7 @@ back_item = c
 a b x
 ```
 
-## <a name="const_reference"></a> queue::const_reference (STL/CLR)
+## <a name="const_reference"></a> `queue::const_reference`
 
 The type of a constant reference to an element.
 
@@ -295,7 +295,7 @@ int main()
 a b c
 ```
 
-## <a name="container_type"></a> queue::container_type (STL/CLR)
+## <a name="container_type"></a> `queue::container_type`
 
 The type of the underlying container.
 
@@ -337,7 +337,7 @@ int main()
 a b c
 ```
 
-## <a name="difference_type"></a> queue::difference_type (STL/CLR)
+## <a name="difference_type"></a> `queue::difference_type`
 
 The types of a signed distance between two elements.
 
@@ -395,7 +395,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="empty"></a> queue::empty (STL/CLR)
+## <a name="empty"></a> `queue::empty`
 
 Tests whether no elements are present.
 
@@ -407,7 +407,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [queue::size (STL/CLR)](#size)`() == 0`. You use it to test whether the queue is empty.
+The member function returns true for an empty controlled sequence. It's equivalent to `size() == 0`. You use it to test whether the `queue` is empty.
 
 ### Example
 
@@ -449,7 +449,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="front"></a> queue::front (STL/CLR)
+## <a name="front"></a> `queue::front`
 
 Accesses the first element.
 
@@ -461,7 +461,7 @@ reference front();
 
 ### Remarks
 
-The member function returns a reference to the first element of the controlled sequence, which must be non-empty. You use it to access the first element, when you know it exists.
+The member function returns a reference to the first element of the controlled sequence, which must be non-empty. You use it to access the first element, when you know one exists.
 
 ### Example
 
@@ -501,7 +501,7 @@ front() = a
 x b c
 ```
 
-## <a name="front_item"></a> queue::front_item (STL/CLR)
+## <a name="front_item"></a> `queue::front_item`
 
 Accesses the first element.
 
@@ -513,7 +513,7 @@ property value_type front_item;
 
 ### Remarks
 
-The property accesses the first element of the controlled sequence, which must be non-empty. You use it to read or write the first element, when you know it exists.
+The property accesses the first element of the controlled sequence, which must be non-empty. You use it to read or write the first element, when you know one exists.
 
 ### Example
 
@@ -553,7 +553,7 @@ front_item = a
 x b c
 ```
 
-## <a name="generic_container"></a> queue::generic_container (STL/CLR)
+## <a name="generic_container"></a> `queue::generic_container`
 
 The type of the generic interface for the container adapter.
 
@@ -616,7 +616,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="generic_value"></a> queue::generic_value (STL/CLR)
+## <a name="generic_value"></a> `queue::generic_value`
 
 The type of an element for use with the generic interface for the container.
 
@@ -674,7 +674,7 @@ a b c
 a b c
 ```
 
-## <a name="get_container"></a> queue::get_container (STL/CLR)
+## <a name="get_container"></a> `queue::get_container`
 
 Accesses the underlying container.
 
@@ -715,7 +715,7 @@ int main()
 a b c
 ```
 
-## <a name="op_as"></a> queue::operator= (STL/CLR)
+## <a name="op_as"></a> `queue::operator=`
 
 Replaces the controlled sequence.
 
@@ -727,12 +727,12 @@ queue <Value, Container>% operator=(queue <Value, Container>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *`right`* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *`right`*.
 
 ### Example
 
@@ -769,7 +769,7 @@ a b c
 a b c
 ```
 
-## <a name="pop"></a> queue::pop (STL/CLR)
+## <a name="pop"></a> `queue::pop`
 
 Removes the last element.
 
@@ -781,7 +781,7 @@ void pop();
 
 ### Remarks
 
-The member function removes the last element of the controlled sequence, which must be non-empty. You use it to shorten the queue by one element at the back.
+The member function removes the last element of the controlled sequence, which must be non-empty. You use it to shorten the `queue` by one element at the back.
 
 ### Example
 
@@ -817,7 +817,7 @@ a b c
 b c
 ```
 
-## <a name="push"></a> queue::push (STL/CLR)
+## <a name="push"></a> `queue::push`
 
 Adds a new last element.
 
@@ -858,7 +858,7 @@ int main()
 a b c
 ```
 
-## <a name="queue"></a> queue::queue (STL/CLR)
+## <a name="queue"></a> `queue::queue`
 
 Constructs a container adapter object.
 
@@ -873,10 +873,10 @@ explicit queue(container_type% wrapped);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Object to copy.
 
-*wrapped*<br/>
+*`wrapped`*\
 Wrapped container to use.
 
 ### Remarks
@@ -891,19 +891,19 @@ The constructor:
 
 `queue(queue<Value, Container>% right);`
 
-creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the queue object *right*.
+creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `queue` object *`right`*.
 
 The constructor:
 
 `queue(queue<Value, Container>^ right);`
 
-creates a wrapped container that is a copy of `right->get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the queue object `*right`.
+creates a wrapped container that is a copy of `right->get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `queue` object `*right`.
 
 The constructor:
 
 `explicit queue(container_type wrapped);`
 
-uses the existing container *wrapped* as the wrapped container. You use it to construct a queue from an existing container.
+uses the existing container *`wrapped`* as the wrapped container. You use it to construct a `queue` from an existing container.
 
 ### Example
 
@@ -951,7 +951,7 @@ x x x x x
 x x x x x
 ```
 
-## <a name="reference"></a> queue::reference (STL/CLR)
+## <a name="reference"></a> `queue::reference`
 
 The type of a reference to an element.
 
@@ -1000,7 +1000,7 @@ a b c
 a b x
 ```
 
-## <a name="size"></a> queue::size (STL/CLR)
+## <a name="size"></a> `queue::size`
 
 Counts the number of elements.
 
@@ -1012,7 +1012,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [queue::empty (STL/CLR)](#empty)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [`empty()`](#empty).
 
 ### Example
 
@@ -1054,9 +1054,9 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="size_type"></a> queue::size_type (STL/CLR)
+## <a name="size_type"></a> `queue::size_type`
 
-The type of a signed distance between two element.
+The type of a signed distance between two elements.
 
 ### Syntax
 
@@ -1103,7 +1103,7 @@ a b c
 size difference = 2
 ```
 
-## <a name="to_array"></a> queue::to_array (STL/CLR)
+## <a name="to_array"></a> `queue::to_array`
 
 Copies the controlled sequence to a new array.
 
@@ -1153,7 +1153,7 @@ a b c d
 a b c
 ```
 
-## <a name="value_type"></a> queue::value_type (STL/CLR)
+## <a name="value_type"></a> `queue::value_type`
 
 The type of an element.
 
@@ -1165,7 +1165,7 @@ typedef Value value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Value*.
+The type is a synonym for the template parameter *`Value`*.
 
 ### Example
 
@@ -1198,9 +1198,9 @@ int main()
 a b c
 ```
 
-## <a name="op_neq"></a> operator!= (queue) (STL/CLR)
+## <a name="op_neq"></a> `operator!=` (queue)
 
-Queue not equal comparison.
+`Queue` not equal comparison.
 
 ### Syntax
 
@@ -1213,15 +1213,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two queues are compared element by element.
+The operator function returns `!(left == right)`. You use it to test whether *`left`* isn't ordered the same as *`right`* when the two queues are compared element by element.
 
 ### Example
 
@@ -1269,9 +1269,9 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> `operator<` (queue) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (queue)
 
-Queue less than comparison.
+`Queue` less than comparison.
 
 ### Syntax
 
@@ -1284,15 +1284,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[queue::size (STL/CLR)](#size)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two queues are compared element by element.
+The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it's also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()`. You use it to test whether *`left`* is ordered before *`right`* when the two queues are compared element by element.
 
 ### Example
 
@@ -1340,9 +1340,9 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> `operator<=` (queue) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (queue)
 
-Queue less than or equal comparison.
+`Queue` less than or equal comparison.
 
 ### Syntax
 
@@ -1355,15 +1355,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two queues are compared element by element.
+The operator function returns `!(right < left)`. You use it to test whether *`left`* isn't ordered after *`right`* when the two queues are compared element by element.
 
 ### Example
 
@@ -1411,9 +1411,9 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="op_eq"></a> operator== (queue) (STL/CLR)
+## <a name="op_eq"></a> `operator==` (queue)
 
-Queue equal comparison.
+`Queue` equal comparison.
 
 ### Syntax
 
@@ -1426,15 +1426,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns true only if the sequences controlled by *left* and *right* have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether *left* is ordered the same as *right* when the two queues are compared element by element.
+The operator function returns true only if the sequences controlled by *`left`* and *`right`* have the same length and, for each position `i`, `left[i] == right[i]`. You use it to test whether *`left`* is ordered the same as *`right`* when the two queues are compared element by element.
 
 ### Example
 
@@ -1482,9 +1482,9 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> `operator>` (queue) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (queue)
 
-Queue greater than comparison.
+`Queue` greater than comparison.
 
 ### Syntax
 
@@ -1497,15 +1497,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two queues are compared element by element.
+The operator function returns `right < left`. You use it to test whether *`left`* is ordered after *`right`* when the two queues are compared element by element.
 
 ### Example
 
@@ -1553,9 +1553,9 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> `operator>=` (queue) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (queue)
 
-Queue greater than or equal comparison.
+`Queue` greater than or equal comparison.
 
 ### Syntax
 
@@ -1568,15 +1568,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two queues are compared element by element.
+The operator function returns `!(left < right)`. You use it to test whether *`left`* isn't ordered before *`right`* when the two queues are compared element by element.
 
 ### Example
 
