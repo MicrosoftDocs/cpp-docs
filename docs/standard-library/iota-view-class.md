@@ -35,7 +35,7 @@ For a description of the following entries, see [View class characteristics](vie
 | **Range adaptor** | [`views::iota`](range-adaptors.md#iota) |
 | **Underlying range** | Not applicable because this view generates its members |
 | **Element type** | Same as the template parameter `W` |
-| **View iterator category** | Supports `input_range` up to `random_access_range`, depending on the type of `W` |
+| **View iterator category** | Supports [`input_range`](range-concepts.md#input_range) up to [`random_access_range`](range-concepts.md#random_access_range), depending on the type of `W` |
 | **Sized** | Only if the range has an end value, that is, it isn't an infinite series |
 | **Is `const`-iterable** | Yes |
 | **Common range** | Only if `Bound` is the same type as `W` |

@@ -35,8 +35,8 @@ For a description of the following entries, see [View class characteristics](vie
 | **View iterator category** | Same as the underlying range |
 | **Sized** | No |
 | **Is `const`-iterable** | Only if the underlying range is `const` iterable |
-| **Common range** | Only if the underlying range satisfies `random_access_range` and `sized_range` |
-| **Borrowed range** | Only if the underlying range is borrowed |
+| **Common range** | Only if the underlying range satisfies [`random_access_range`](range-concepts.md#random_access_range) and [`sized_range`](range-concepts.md#sized_range) |
+| **Borrowed range** | Only if the underlying range is [`borrowed_range`](range-concepts.md#borrowed_range) |
 
 ## Members
 
@@ -46,7 +46,7 @@ For a description of the following entries, see [View class characteristics](vie
 | [`base`](#base)<sup>C++20</sup> | Get the underlying range. |
 | [`begin`](#begin)<sup>C++20</sup> | Get an iterator to the first element. |
 | [`end`](#end)<sup>C++20</sup> | Get the sentinel at the end of the view. |
-| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy `sized_range`. |
+| [`size`](#size)<sup>C++20</sup> | Get the number of elements. The underlying range must satisfy [`sized_range`](range-concepts.md#sized_range). |
 | **Inherited from [`view_interface`](view-interface.md)** | **Description** |
 | [`back`](view-interface.md#back)<sup>C++20</sup> | Get the last element. |
 | [`data`](view-interface.md#data)<sup>C++20</sup> | Get a pointer to the first element. |

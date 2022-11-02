@@ -9,7 +9,7 @@ helpviewer_keywords: ["RANGES/VIEWS/std", "VIEWS/std"]
 
 A *view* is a lightweight range that refers to elements that it doesn't own (except for [`owning_view`](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it, whether by transforming or filtering it. For example, [`std::views::filter`](filter-view-class.md) is a view that uses the criteria that you specify to select elements from another range.
 
-When you access the elements in a view, it's done "lazily" so that work is done only when you get an element. This also makes it possible to combine, or *compose*, views without a performance penalty. 
+When you access the elements in a view, it's done "lazily" so that work is done only when you get an element. This also makes it possible to combine, or *compose*, views without a performance penalty.
 
 For example, you could create a view that provides only the even elements from a range and then transform them by squaring them. The work to do the filtering and transformation is done only for the elements that you access, and only when you access them.
 
@@ -133,7 +133,7 @@ Each view class topic has a **Characteristics** section after the syntax section
 * **View iterator category**: The iterator category of the view. When a view adapts a range, the iterator type for the view is typically the same as the iterator type of the underlying range. However, it might be different for some views. For example, `reverse_view` has a `bidirectional_iterator` category, even if the underlying range has a `random_access_iterator` category.
 * **Element type**: The type of the elements that the view's iterator returns.
 * **Sized**: Whether the view can return the number of elements that it refers to. Not all views can.
-* **Common range**: Specifies whether the view is a `common_range`, which means that the begin iterator and sentinel types are the same. Common ranges are useful for pre-range code that works with iterator pairs. An example is iterator pair constructors for a sequence container, like `vector(ranges::begin(x), ranges::end(x))`.
+* **Common range**: Specifies whether the view is a [`common_range`](range-concepts.md#common_range), which means that the begin iterator and sentinel types are the same. Common ranges are useful for pre-range code that works with iterator pairs. An example is iterator pair constructors for a sequence container, like `vector(ranges::begin(x), ranges::end(x))`.
 * **Borrowed range**: Specifies whether the view is a borrowed range. `borrowed_range<T>` means you can use iterators for `T` after `T` is destroyed. 
 
   No standard container is a borrowed range, because destroying the container frees the elements and invalidates any iterators. In that case, we say that the iterators are left "dangling" after destruction. 
@@ -151,16 +151,16 @@ That hierarchy, in increasing order of capability, is:
 
 | Range iterator category | Description |
 |--|--|
-| `output_range` | Write-only, only moves forward; single-pass. |
-| `input_range` | Only moves forward; single-pass. |
+| [`output_range`](range-concepts.md#output_range)  | Write-only, only moves forward; single-pass. |
+| [`input_range`](range-concepts.md#input_range) | Only moves forward; single-pass. |
 | `forward_range` | Only moves forward; multi-pass. |
-| `bidirectional_range` | Can move forward and backward; multi-pass. |
+| [`bidirectional_range`](range-concepts.md#bidirectional_range) | Can move forward and backward; multi-pass. |
 | `random_access_range` | Can access the collection with an index; multi-pass. |
 | `contiguous_range` | Can access the collection with an index, and elements are stored contiguously in memory. |
 
-An iterator also has the capability of the iterators that precede it in the table. For example, `bidirectional_range` can be used with a `forward_range` iterator, but not vice versa.
+An iterator also has the capability of the iterators that precede it in the table. For example, [`bidirectional_range`](range-concepts.md#bidirectional_range) can be used with a [`forward_range`](range-concepts.md#forward_range) iterator, but not vice versa.
 
-The statement "requires `input_range` or better" means that the view can be used with an `input_range`, `forward_range`, `bidirectional_range`, `random_access_range`, or `contiguous_range` iterator, because any of those categories is as capable as `input_range`.
+The statement "requires [`input_range`](range-concepts.md#input_range) or higher" means that the view can be used with an `input_range`, `forward_range`, `bidirectional_range`, [`random_access_range`](range-concepts.md#random_access_range), or `contiguous_range` iterator, because any of those categories is as capable as `input_range`.
 
 ## See also
 

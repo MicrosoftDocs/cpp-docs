@@ -21,7 +21,7 @@ class join_view : public view_interface<join_view<R>>;
 ### Template parameters
 
 *`R`*\
-The type of the underlying range. Must satisfy `input_range` or better.
+The type of the underlying range. Must satisfy [`input_range`](range-concepts.md#input_range) or higher.
 
 ## View characteristics
 
@@ -30,12 +30,12 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::join`](range-adaptors.md#join) |
-| **Underlying range** | Must satisfy `input_range` or higher |
+| **Underlying range** | Must satisfy [`input_range`](range-concepts.md#input_range) or higher |
 | **Element type** | Same as the underlying range |
-| **View iterator category** | Supports `input_range` up to `bidirectional_range` depending on the underlying range being iterated |
+| **View iterator category** | Supports `input_range` up to [`bidirectional_range`](range-concepts.md#bidirectional_range) depending on the underlying range being iterated |
 | **Sized** | No |
 | **Is `const`-iterable** | Only if the underlying range is `const` iterable |
-| **Common range** | Only if the underlying range satisfies `common_range` |
+| **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |
 | **Borrowed range** | No |
 
 ## Members

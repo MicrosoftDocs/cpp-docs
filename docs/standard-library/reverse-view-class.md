@@ -31,13 +31,13 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::reverse`](range-adaptors.md#reverse) |
-| **Underlying range** | Must satisfy `bidirectional_range` up to `random_access` |
+| **Underlying range** | Must satisfy [`bidirectional_range`](range-concepts.md#bidirectional_range) up to [`random_access_range`](range-concepts.md#random_access_range) |
 | **Element type** | Same as the underlying range |
 | **View iterator category** | Same as the underlying range |
-| **Sized** | Only if the underlying range satisfies `sized_range` |
+| **Sized** | Only if the underlying range satisfies [`sized_range`](range-concepts.md#sized_range) |
 | **Is `const`-iterable** | Only if the underlying range is a [`common_view`](common-view-class.md) and satisfies `const-iterable` |
 | **Common range** | Yes |
-| **Borrowed range** | Only if the underlying range satisfies `borrowed_range` |
+| **Borrowed range** | Only if the underlying range satisfies [`borrowed_range`](range-concepts.md#borrowed_range) |
 
 ## Members
 
@@ -158,7 +158,7 @@ An iterator pointing at the first element in the `reverse_view`.
 
 After the first call to `begin()`, subsequent calls run in constant time, O(1), no matter how many elements are in the `reverse_view`. This has implications because `reverse_view` caches the value of `last` so it can return it repeatedly from `begin`. This means you shouldn't reuse a view after the underlying container is modified. If the underlying range is modified, generate a new view, which is inexpensive.
 
-2\) The underlying view must satisfy `common_range`, which means that the underlying view must have the same begin and end iterator type.\
+2\) The underlying view must satisfy [`common_range`](range-concepts.md#common_range), which means that the underlying view must have the same begin and end iterator type.\
 3\) The underlying view must satisfy `common_range` for a const view to iterate over a `const reverse_view`.
 
 ## `end`
@@ -182,7 +182,7 @@ The sentinel that follows the last element in the `reverse_view`.
 
 ### Remarks
 
-For 2, the underlying view must satisfy `common_range` for a const view, which means that the underlying view must have the same begin and end iterator type.
+For 2, the underlying view must satisfy [`common_range`](range-concepts.md#common_range) for a const view, which means that the underlying view must have the same begin and end iterator type.
 
 ## `size`
 
@@ -203,7 +203,7 @@ The number of elements in the `reverse_view`.
 
 ### Remarks
 
-The size of the view is only available if the underlying range is a `sized_range`, or in other words, bounded.
+The size of the view is only available if the underlying range is a [`sized_range`](range-concepts.md#sized_range), or in other words, bounded.
 
 ## See also
 

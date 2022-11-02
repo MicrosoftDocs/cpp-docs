@@ -44,13 +44,13 @@ int main()
 0 9 36 81
 ```
 
-The first range adaptor, `std::views::filter`, provides a view that contains the elements from `input` that are divisible by three. The other range adaptor, `std::views::transform`, takes the view that contains the elements divisible by three and provides a view of the square of those elements.
+The first range adaptor, [`filter`](filter-view-class.md), provides a view that contains the elements from `input` that are divisible by three. The other range adaptor, [`transform`](transform-view-class.md), takes the view that contains the elements divisible by three and provides a view of the square of those elements.
 
-When a range adaptor produces a view, it doesn't incur the cost of transforming every element in the range to produce that view. The cost to process an element in the view is paid only when you access that element. 
+When a range adaptor produces a view, it doesn't incur the cost of transforming every element in the range to produce that view. The cost to process an element in the view is paid only when you access that element.
 
 Creating a view only prepares to do work in the future. In the previous example, creating the view doesn't result in finding all the elements divisible by three. It also doesn't square the elements that it finds. That work happens only when you access an element in the view.
 
-Elements of a view are usually the actual elements of the range that are used to create the view. The view usually doesn't own the elements (`owning_view` is an exception); it just refers to them. Changing an element changes that element in the range that the view was created from. The following example shows this behavior:
+Elements of a view are usually the actual elements of the range that are used to create the view. The view usually doesn't own the elements ([`owning_view`](owning-view-class.md) is an exception); it just refers to them. Changing an element changes that element in the range that the view was created from. The following example shows this behavior:
 
 ```cpp
 #include <algorithm>
@@ -79,9 +79,9 @@ int main()
 
 Range adaptors come in many forms. For example, there are range adaptors that allow you to produce a view by:
 
-- Filtering another range based on a predicate (`view::filter`).
-- Transforming the elements in a range (`view::transform`).
-- Splitting a range (`view::split`).
+- Filtering another range based on a predicate ([`filter`](filter-view-class.md)).
+- Transforming the elements in a range ([`transform`](transform-view-class.md)).
+- Splitting a range ([`split`](split-view-class.md)).
 
 Range adaptors can be chained together (composed). That's where the power and flexibility of ranges are most apparent. Composing range adaptors allows you to overcome a core problem with the previous Standard Template Library (STL) algorithms, which is that they aren't easy to chain together.
 
@@ -109,8 +109,8 @@ The following range adaptors are available in the `std::views` namespace. The `s
 
 In the previous table, a range adaptor is typically described as taking a range and producing a view. To be precise, range adaptors have a range argument that accepts one of the following:
 
-- The `cv-unqualified` type models `view`, and the argument is an rvalue or is copyable.
-- When you pass the argument as an lvalue, it must model `range` and live as long as the view.
+- The `cv-unqualified` type models [`view`](range-concepts.md#view), and the argument is an rvalue or is copyable.
+- When you pass the argument as an lvalue, it must model [`range`](range-concepts.md#range) and live as long as the view.
 - When you pass the argument as an rvalue, such as when calling [`owning_view`](owning-view-class.md), it must model `range` and `movable`.
 
 Range adaptor functions are typically [function objects](https://eel.is/c++draft/function.objects), which look like function calls and enforce constraints on the types that can be passed.
@@ -269,7 +269,7 @@ A [`span`](span-class.md) is returned if `it` is a `contiguous_iterator` for arr
 
 ### Remarks
 
-The included elements are `it` and `count`.
+The included elements are `[it, count)`.
 
 After the view is created, the number of elements in the view stays the same, even if the range that it was created from changes. However, if the underlying range changes, accessing elements from the view might result in undefined behavior.
 
@@ -344,7 +344,7 @@ If you specify more elements to drop than exist in the underlying range, an [`em
 
 The returned view is typically, but not always, a specialization of [`drop_view`](drop-view-class.md). That is:
 
-- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
+- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both [`random_access_range`](range-concepts.md#random_access_range) and [`sized_range`](range-concepts.md#sized_range), the result is a specialization of `V`.
 - Otherwise, the result is a [`drop_view`](drop-view-class.md).
 
 ### Remarks
@@ -911,12 +911,12 @@ A [`lazy_split_view`](lazy-split-view-class.md) that contains one or more subran
 
 The delimiter isn't part of the result. For example, if you split the range `1,2,3` on the value `2`, you get two subranges: `1` and `3`.
 
-A related adaptor is [`split`](#split). The primary differences between `split_view` and `lazy_split_view` are:
+A related adaptor is [`split`](#split). The primary differences between [`split_view](split-view-class.md) and `lazy_split_view` are:
 
 | View | Can split a `const` range | Range iterator |
 |--|--|--|
-| `split_view` | no | Supports `forward_range` or higher |
-| `lazy_split_view` | yes | `input_range` or higher |
+| `split_view` | no | Supports [`forward_range`](range-concepts.md#forward_range) or higher |
+| `lazy_split_view` | yes | [`input_range`](range-concepts.md#input_range) or higher |
 
 Prefer `split_view` because it's more efficient, unless you must split a range that is `const`.
 
@@ -1119,8 +1119,8 @@ A related adaptor is [`lazy_split`](#lazy_split). The primary differences betwee
 
 | View | Can split a `const` range | Range type |
 |---|---|---|
-| `split_view` | no | Supports `forward_range` or higher |
-| `lazy_split_view` | yes | Supports `input_range` or higher |
+| `split_view` | no | Supports [`forward_range`](range-concepts.md#forward_range) or higher |
+| `lazy_split_view` | yes | Supports [`input_range`](range-concepts.md#input_range) or higher |
 
 Prefer `split_view` because it's more efficient, unless you must split a range that is `const`.
 
@@ -1198,7 +1198,7 @@ The number of elements to take from the front of `rg`.
 
 The returned view is typically, but not always, a specialization of [`take_view`](take-view-class.md). Specifically:
 
-- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both `random_access_range` and `sized_range`, the result is a specialization of `V`.
+- If `V` is a specialization of [`empty_view`](empty-view-class.md), or is a specialization of [`span`](span-class.md), [`basic_string_view`](basic-string-view-class.md), [`iota_view`](iota-view-class.md), or [`subrange`](subrange-class.md) that is both [`random_access_range`](range-concepts.md#random_access_range) and [`sized_range`](range-concepts.md#sized_range), the result is a specialization of `V`.
 - Otherwise, the result is a [`take_view`](take-view-class.md).
 
 ### Remarks
