@@ -926,13 +926,13 @@ items:
       items: 
         - name: <ranges>
           href: ranges.md
+        - name: <ranges> concepts
+          href: range-concepts.md
         - name: <ranges> functions
           href: range-functions.md
-        - name: <range> adaptors
+        - name: <ranges> adaptors
           href: range-adaptors.md
-        - name: <range> concepts
-          href: range-concepts.md
-        - name: <range> view classes
+        - name: <ranges> view classes
           href: view-classes.md
           expanded: false
           items:
