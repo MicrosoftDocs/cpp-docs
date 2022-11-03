@@ -1,7 +1,7 @@
 ---
 title: "<ranges>"
 description: "Get an overview of the Standard Template Library (STL) ranges."
-ms.date: 10/25/2022
+ms.date: 11/02/2022
 f1_keywords: ["<ranges>"]
 helpviewer_keywords: ["ranges"]
 ---

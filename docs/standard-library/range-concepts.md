@@ -1,7 +1,7 @@
 ---
 description: "Learn more about range concepts and range iterator concepts."
 title: "Concepts for ranges and range iterators"
-ms.date: 11/01/2022
+ms.date: 11/02/2022
 f1_keywords: ["ranges/std::ranges::range"]
 helpviewer_keywords: ["std::ranges [C++], range"]
 ---
