@@ -443,9 +443,9 @@ const string_type& native() const noexcept;
 
 ### Remarks
 
-The path is available in a portable generic format (see [`generic_string()`](#generic_string)). Or, you can get the native format of the path. This function returns the native string. On a POSIX system, the generic format and the native format are the same.
+The path is available in a portable generic format (see [`generic_string()`](#generic_string)) or the native format of the path. This function returns the native string. On a POSIX system, the generic format and the native format are the same.
 
-In the following example, tested on Windows 11, the generic path string is `c:/t/temp/temp.txt` and the native string is `c:\\t\\temp.txt`
+In the following example running on Windows 11, the generic path string is `c:/t/temp/temp.txt` and the native string is `c:\\t\\temp.txt`
 
 ```cpp
 // Compile with /std:c++17 or higher
