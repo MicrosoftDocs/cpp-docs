@@ -416,5 +416,5 @@ Use `std::ranges::views::all()` to convert a range to a view.
 ## See also
 
 [`<ranges>`](ranges.md)\
-[`<ranges> adaptors](range-adaptors.md)\
+[`<ranges>` adaptors](range-adaptors.md)\
 [View classes](view-classes.md)
