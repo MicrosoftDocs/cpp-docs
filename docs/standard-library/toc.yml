@@ -932,8 +932,6 @@ items:
           href: range-functions.md
         - name: <ranges> view classes
           href: view-classes.md
-        - name: Range adaptors
-          href: range-adaptors.md
           expanded: false
           items:
             - name: basic_istream_view class
@@ -980,6 +978,8 @@ items:
               href: values-view-class.md
             - name: view_interface
               href: view-interface.md
+        - name: Range adaptors
+          href: range-adaptors.md
     - name: <ratio>
       href: ratio.md
     - name: <regex>
