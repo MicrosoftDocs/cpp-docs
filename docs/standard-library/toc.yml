@@ -930,10 +930,10 @@ items:
           href: range-concepts.md
         - name: <ranges> functions
           href: range-functions.md
-        - name: <ranges> adaptors
-          href: range-adaptors.md
         - name: <ranges> view classes
           href: view-classes.md
+        - name: Range adaptors
+          href: range-adaptors.md
           expanded: false
           items:
             - name: basic_istream_view class
