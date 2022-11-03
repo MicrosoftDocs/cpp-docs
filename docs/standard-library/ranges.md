@@ -16,7 +16,7 @@ With ranges, you can call `std::ranges::sort(myVector);`, which is treated as if
 
 But perhaps the most important benefit of ranges is that you can compose STL algorithms that operate on ranges in a style that's reminiscent of functional programming.
 
-## An example of ranges
+## A ranges example
 
 Before ranges, if you wanted to transform the elements of a collection that met a certain criterion, you needed to introduce an intermediate step to hold the results between operations. For example, if you wanted to build a vector of squares from the elements in another vector that are divisible by three, you could write something like:
 
@@ -95,7 +95,7 @@ For more information about creating views, see [Range adaptors](range-adaptors.m
 
 Some range algorithms take a range argument. An example is `std::ranges::sort(myVector);`.
 
-The range algorithms are almost identical to the corresponding iterator-pair algorithms in the `std` namespace. The difference is that they have concept-enforced constraints, and they accept either range arguments or more iterator-sentinel argument pairs. They can work directly on a container and can be easily chained together.
+The range algorithms are almost identical to the corresponding iterator-pair algorithms in the `std` namespace. The difference is that they have [concept-enforced constraints](range-concepts.md), and they accept either range arguments or more iterator-sentinel argument pairs. They can work directly on a container and can be easily chained together.
 
 ## `<ranges>` functions
 
@@ -133,6 +133,7 @@ The range concepts mirror the hierarchy of iterator categories. The following ta
 
 ## See also
 
-[Range functions](range-functions.md)\
-[Range adaptors](range-adaptors.md)\
+[`<ranges>` functions](range-functions.md)\
+[`<ranges>` adaptors](range-adaptors.md)\
+[`<ranges>` concepts](range-concepts.md)\
 [Header files reference](../standard-library/cpp-standard-library-header-files.md)
