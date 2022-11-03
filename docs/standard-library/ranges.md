@@ -134,6 +134,6 @@ The range concepts mirror the hierarchy of iterator categories. The following ta
 ## See also
 
 [`<ranges>` functions](range-functions.md)\
-[`<ranges>` adaptors](range-adaptors.md)\
 [`<ranges>` concepts](range-concepts.md)\
+[Range adaptors](range-adaptors.md)\
 [Header files reference](../standard-library/cpp-standard-library-header-files.md)

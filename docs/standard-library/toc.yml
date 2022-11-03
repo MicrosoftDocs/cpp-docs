@@ -930,8 +930,6 @@ items:
           href: range-concepts.md
         - name: <ranges> functions
           href: range-functions.md
-        - name: <ranges> adaptors
-          href: range-adaptors.md
         - name: <ranges> view classes
           href: view-classes.md
           expanded: false
@@ -980,6 +978,8 @@ items:
               href: values-view-class.md
             - name: view_interface
               href: view-interface.md
+        - name: Range adaptors
+          href: range-adaptors.md
     - name: <ratio>
       href: ratio.md
     - name: <regex>

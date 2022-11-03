@@ -1,11 +1,11 @@
 ---
 description: "Learn more about range adaptors, which create views on ranges."
 title: "Range adaptors"
-ms.date: 11/2/2022
+ms.date: 11/3/2022
 f1_keywords: ["ranges/std::all", "ranges/std::all_t", "ranges/std::common", "ranges/std::counted", "ranges/std::drop", "ranges/std::drop_while", "ranges/std::elements", "ranges/std::filter", "ranges/std::iota", "ranges/std::join", "ranges/std::keys", "ranges/std::lazy_split", "ranges/std::reverse", "ranges/std::split", "ranges/std::subrange", "ranges/std::take", "ranges/std::take_while", "ranges/std::transform"]
 helpviewer_keywords: ["std::ranges [C++], all", "std::ranges [C++], all_t", "std::ranges [C++], common", "std::ranges [C++], counted", "std::ranges [C++], drop", "std::ranges [C++], drop_while", "std::ranges [C++], elements", "std::ranges [C++], filter", "std::ranges [C++], iota", "std::ranges [C++], join", "std::ranges [C++], keys", "std::ranges [C++], lazy_split", "std::ranges [C++], reverse", "std::ranges [C++], split", "std::ranges [C++], subrange", "std::ranges [C++], take", "std::ranges [C++], take_while", "std::ranges [C++], transform"]
 ---
-# `ranges` adaptors
+# Range adaptors
 
 Range adaptors create a *view* (one of the [View classes](view-classes.md) in the `std::views` namespace) from a range. We recommend that you use an adaptor in `std::ranges::views` instead of creating the view types directly. The adaptors are the intended way to access views. They're easier to use, and in some cases more efficient, than creating instances of the view types directly.
 
