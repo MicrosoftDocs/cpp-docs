@@ -388,7 +388,7 @@ The essential requirement that makes a view composable is that it's cheap to mov
 - publicly and unambiguously deriving from the empty class `ranges::view_base`, or
 - specializing `ranges::enable_view<T>` to `true`
 
-Option 1 is generally preferred because `view_interface` also provides default implementation that save some boilerplate code you have to write.
+Option 1 is generally preferred because `view_interface` also provides default implementation that saves some boilerplate code you have to write.
 
 Failing that, option 2 is a little simpler than option 3.
 
