@@ -982,7 +982,6 @@ template <class T>
 void swap(
     weak_ptr<T>& left,
     weak_ptr<T>& right) noexcept;
-
 ```
 
 ### Parameters

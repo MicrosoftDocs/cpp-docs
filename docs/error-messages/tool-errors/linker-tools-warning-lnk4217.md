@@ -29,7 +29,6 @@ int main()
     func();
     return 0;
 }
-
 ```
 
 And then,

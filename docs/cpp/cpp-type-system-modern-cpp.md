@@ -78,7 +78,6 @@ The **`void`** type is a special type; you cannot declare a variable of type **`
 Any built-in or user-defined type may be qualified by the const keyword. Additionally, member functions may be **`const`**-qualified and even **`const`**-overloaded. The value of a **`const`** type cannot be modified after it is initialized.
 
 ```cpp
-
 const double PI = 3.1415;
 PI = .75 //Error. Cannot modify const variable.
 ```

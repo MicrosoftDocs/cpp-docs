@@ -229,7 +229,6 @@ The following ruleset schema describes the XML schema of a ruleset file. The rul
   </xs:simpleType>
   
 </xs:schema>
-
 ```
 
 Schema element details:

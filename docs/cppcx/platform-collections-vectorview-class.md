@@ -65,7 +65,6 @@ Returns an iterator that specifies the first element in the VectorView.
 ### Syntax
 
 ```
-
 virtual Windows::Foundation::Collections::IIterator<T>^
    First();
 ```
@@ -85,7 +84,6 @@ Retrieves the element of the current VectorView that is indicated by the specifi
 ### Syntax
 
 ```
-
 T GetAt(
    UInt32 index
 );
@@ -107,7 +105,6 @@ Retrieves a sequence of items from the current VectorView, starting at the speci
 ### Syntax
 
 ```
-
 virtual unsigned int GetMany(
    unsigned int startIndex,
    ::Platform::WriteOnlyArray<T>^ dest
@@ -133,7 +130,6 @@ Searches for the specified item in the current VectorView, and if found, returns
 ### Syntax
 
 ```
-
 virtual bool IndexOf(
    T value,
    unsigned int* index
@@ -161,7 +157,6 @@ Returns the number of elements in the current VectorView object.
 ### Syntax
 
 ```
-
 virtual property unsigned int Size;
 ```
 

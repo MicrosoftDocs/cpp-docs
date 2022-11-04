@@ -301,7 +301,6 @@ Constructs a `string_view` from a string literal. Requires namespace `std::liter
 ### Example
 
 ```cpp
-
 using namespace std;
 using namespace literals::string_view_literals;
 

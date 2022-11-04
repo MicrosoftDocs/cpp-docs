@@ -779,7 +779,6 @@ struct Comparer  {
       return a.a < b.a;
    }
 };
-
 ```
 
 ## <a name="improvements_163"></a> Conformance improvements in Visual Studio 2019 version 16.3

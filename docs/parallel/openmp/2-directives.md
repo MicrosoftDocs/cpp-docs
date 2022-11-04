@@ -798,7 +798,6 @@ The restrictions to the `reduction` clause are as follows:
 The `copyin` clause provides a mechanism to assign the same value to `threadprivate` variables for each thread in the team executing the parallel region. For each variable specified in a `copyin` clause, the value of the variable in the master thread of the team is copied, as if by assignment, to the thread-private copies at the beginning of the parallel region. The syntax of the `copyin` clause is as follows:
 
 ```cpp
-
 copyin(
 variable-list
 )
@@ -817,7 +816,6 @@ The `copyprivate` clause provides a mechanism to use a private variable to broad
 The syntax of the `copyprivate` clause is as follows:
 
 ```cpp
-
 copyprivate(
 variable-list
 )
