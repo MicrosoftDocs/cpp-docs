@@ -3,7 +3,6 @@ description: "Learn more about: path Class"
 title: "path Class"
 ms.date: 06/17/2022
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
-ms.custom: devdivchpfy22
 ---
 
 # `path` Class
@@ -63,7 +62,7 @@ class path;
 |[`is_absolute`](#is_absolute)|For Windows, the function returns `has_root_name() && has_root_directory()`. For POSIX, the function returns `has_root_directory()`.|
 |[`is_relative`](#is_relative)|Returns `!is_absolute()`.|
 |[`make_preferred`](#make_preferred)|Converts each separator to a `preferred_separator` as needed.|
-|[`native`](#native)|Returns `myname`.|
+|[`native`](#native)|Returns the native representation of the path.|
 |[`parent_path`](#parent_path)|Returns the parent path component of `myname`.|
 |[`preferred_separator`](#preferred_separator)|The constant object gives the preferred character for separating path components, depending on the host operating system. |
 |[`relative_path`](#relative_path)|Returns the relative path component of `myname`. |
@@ -436,10 +435,28 @@ path& make_preferred();
 
 ## <a name="native"></a> `path::native`
 
-Returns `myname`.
+Get the native string representation of the path.
 
 ```cpp
 const string_type& native() const noexcept;
+```
+
+### Remarks
+
+The path is available in a portable generic format (see [`generic_string()`](#generic_string)) or the native format of the path. This function returns the native string. On a POSIX system, the generic format and the native format are the same.
+
+In the following example running on Windows 11, the generic path string is `c:/t/temp/temp.txt` and the native string is `c:\\t\\temp.txt`
+
+```cpp
+// Compile with /std:c++17 or higher
+#include <filesystem>
+
+int main()
+{
+    std::filesystem::path p(R"(c:\t\temp.txt)");
+    auto native = p.native(); // Windows: L"c:\\t\temp.txt"
+    auto generic = p.generic_string(); // Windows: "c:/t/temp.txt"
+}
 ```
 
 ## <a name="op_as"></a> `path::operator=`
