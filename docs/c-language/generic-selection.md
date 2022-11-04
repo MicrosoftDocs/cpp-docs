@@ -67,7 +67,6 @@ int main()
 /* Output:
 Type name: double
 */
-
 ```
 
 ## Requirements

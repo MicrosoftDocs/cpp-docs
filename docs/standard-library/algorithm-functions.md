@@ -1305,6 +1305,7 @@ int main()
     equal_range_demo<string>( v2, "fred" );
     equal_range_demo<string>( v2, "fred", shorter_than, "shorter_than" );
 }
+
 ```
 
 ```Output
@@ -1336,8 +1337,7 @@ Vector sorted by the binary predicate shorter_than:
     fun cute blah fluffy kittens meowmeowmeow 
 
 Result of equal_range with value = fred:
-    fun [ cute blah ] fluffy kittens meowmeowmeow 
-
+    fun [ cute blah ] fluffy kittens meowmeowmeow
 ```
 
 ## <a name="fill"></a> `fill`

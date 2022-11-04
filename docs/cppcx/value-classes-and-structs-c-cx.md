@@ -12,7 +12,6 @@ A *value struct* or *value class* is a Windows Runtime-compatible POD ("plain ol
 The following examples show how to declare and initialize value structs.
 
 ```
-
 // in mainpage.xaml.h:
     value struct TestStruct
     {
@@ -125,7 +124,6 @@ bool MainPage::IsCurrentlyEnrolled(Student s)
 A value struct itself may be made nullable in the same way, as shown here:
 
 ```
-
 public value struct MyStruct
 {
 public:

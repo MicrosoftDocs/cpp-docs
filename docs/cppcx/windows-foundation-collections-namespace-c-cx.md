@@ -13,7 +13,6 @@ C++/CX supplements the Windows::Foundation::Collections namespace with functions
 ## Syntax
 
 ```
-
 namespace Windows {
     namespace Foundation {
         namespace Collections;

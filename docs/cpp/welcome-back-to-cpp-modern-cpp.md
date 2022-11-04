@@ -37,7 +37,6 @@ void functionUsingWidget() {
     w.do_something();
     // ...
 } // automatic destruction and deallocation for w and w.data
-
 ```
 
 Whenever possible, use a smart pointer to manage heap memory. If you must use the **`new`** and **`delete`** operators explicitly, follow the principle of RAII. For more information, see [Object lifetime and resource management (RAII)](object-lifetime-and-resource-management-modern-cpp.md).

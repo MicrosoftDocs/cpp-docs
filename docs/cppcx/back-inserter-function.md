@@ -13,7 +13,6 @@ Returns an iterator that is used to insert elements at the end of the specified 
 ## Syntax
 
 ```
-
 template <typename T>
 Platform::BackInsertIterator<T>
     back_inserter(IVector<T>^ v);

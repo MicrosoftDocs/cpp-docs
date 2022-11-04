@@ -21,7 +21,6 @@ DAO is used with Access databases and is supported through Office 2013. DAO 3.6 
 This function initializes the DAO database engine.
 
 ```
-
 void AfxDaoInit();
 
 throw(CDaoException*);
@@ -42,7 +41,6 @@ For related information, and for an example of calling `AfxDaoInit`, see [Techni
 This function terminates the DAO database engine.
 
 ```
-
 void AfxDaoTerm();
 ```
 
