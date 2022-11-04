@@ -63,7 +63,7 @@ example.cpp(31): error C2780: 'DivideEmUp<T> DivideEmUp(DivideEmUp<T>)': expects
 example.cpp(18): note: see declaration of 'DivideEmUp'
 ```
 
-If you specify the compiler switch `/diagnostics:caret`, then the errors generated notably includes concept `dividable<char*>` evaluated to false and even points directly to the expression requirement `(a / b)` that failed.
+If you specify the compiler switch `/diagnostics:caret`, then one of the errors is concept `dividable<char*>` evaluated to false. It even points directly to the expression requirement `(a / b)` that failed.
 
 The following concepts are defined in `std::ranges` and are declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
@@ -383,7 +383,7 @@ The type to test to see if it's a view.
 
 The essential requirement that makes a view composable is that it's cheap to move/copy. This is because the view is moved/copied when it's composed with another view. It must be a movable `range`.
 
-`ranges::enable_view<T>` is a trait used to claim conformance to the semantic requirements of the `view` concept. A type can opt-in by:
+`ranges::enable_view<T>` is a trait used to claim conformance to the semantic requirements of the `view` concept. A type can opt in by:
 - publicly and unambiguously deriving from a specialization of `ranges::view_interface`
 - publicly and unambiguously deriving from the empty class `ranges::view_base`, or
 - specializing `ranges::enable_view<T>` to `true`
