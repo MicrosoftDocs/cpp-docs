@@ -1305,7 +1305,6 @@ int main()
     equal_range_demo<string>( v2, "fred" );
     equal_range_demo<string>( v2, "fred", shorter_than, "shorter_than" );
 }
-
 ```
 
 ```Output

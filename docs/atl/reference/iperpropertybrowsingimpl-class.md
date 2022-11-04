@@ -15,7 +15,7 @@ This class implements `IUnknown` and allows a client to access the information i
 
 ## Syntax
 
-```cpp
+```
 template <class T>
 class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
     public IPerPropertyBrowsing
