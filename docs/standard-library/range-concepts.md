@@ -383,7 +383,7 @@ The type to test to see if it's a view.
 
 The essential requirement that makes a view composable is that it's cheap to move/copy. This is because the view is moved/copied when it's composed with another view. It must be a movable `range`.
 
-`ranges::enable_view<T>` is a trait used to claim conformance to the semantic requirements of the `view` concept. A type can opt-in by:
+`ranges::enable_view<T>` is a trait used to claim conformance to the semantic requirements of the `view` concept. A type can opt in by:
 - publicly and unambiguously deriving from a specialization of `ranges::view_interface`
 - publicly and unambiguously deriving from the empty class `ranges::view_base`, or
 - specializing `ranges::enable_view<T>` to `true`
