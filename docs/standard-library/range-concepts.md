@@ -63,7 +63,7 @@ example.cpp(31): error C2780: 'DivideEmUp<T> DivideEmUp(DivideEmUp<T>)': expects
 example.cpp(18): note: see declaration of 'DivideEmUp'
 ```
 
-If you specify the compiler switch `/diagnostics:caret`, then the errors generated notably includes concept `dividable<char*>` evaluated to false and even points directly to the expression requirement `(a / b)` that failed.
+If you specify the compiler switch `/diagnostics:caret`, then one of the errors is concept `dividable<char*>` evaluated to false. It even points directly to the expression requirement `(a / b)` that failed.
 
 The following concepts are defined in `std::ranges` and are declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
