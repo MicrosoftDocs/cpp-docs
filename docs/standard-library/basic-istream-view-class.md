@@ -1,9 +1,9 @@
 ---
 title: "basic_istream_view class (C++ Standard Library)| Microsoft Docs"
-description: "API reference for the Standard Template Library (STL) <ranges> basic_istream_view class, which reads (using operator>>) successive elements from an input stream."
-ms.date: 09/27/2022
-f1_keywords: ["ranges/std::basic_istream_view", "ranges/std::basic_istream_view::base", "ranges/std::basic_istream_view::begin", "ranges/std::basic_istream_view::data", "ranges/std::basic_istream_view::empty", "ranges/std::basic_istream_view::end", "ranges/std::basic_istream_view::size", "ranges/std::basic_istream_view::operator bool", "ranges/std::basic_istream_view::back", "ranges/std::basic_istream_view::front", "ranges/std::basic_istream_view::operator[]"]
-helpviewer_keywords: ["std::ranges::basic_istream_view [C++]", "std::ranges::basic_istream_view::base [C++]", "std::ranges::basic_istream_view::begin [C++]", "std::ranges::basic_istream_view::data [C++]", "std::ranges::basic_istream_view::empty [C++]", "std::ranges::basic_istream_view::end [C++]", "std::ranges::basic_istream_view::size [C++]", "std::ranges::basic_istream_view::back [C++]", "std::ranges::basic_istream_view::front [C++]", "std::ranges::basic_istream_view::operator[] [C++]", "std::ranges::basic_istream_view::operator bool [C++]"]
+description: "API reference for the Standard Template Library (STL) <ranges> basic_istream_view class, which reads (using operator>>) successive elements from an input stream. Also includes the istream_view and wistream_view specializations."
+ms.date: 11/04/2022
+f1_keywords: ["ranges/std::basic_istream_view", "ranges/std::istream_view", "ranges/std::wistream_view", "ranges/std::basic_istream_view::begin", "ranges/std::basic_istream_view::end", "ranges/std::istream_view::begin", "ranges/std::istream_view::end", "ranges/std::wistream_view::begin", "ranges/std::wistream_view::end"]
+helpviewer_keywords: ["std::ranges::basic_istream_view [C++]", "std::ranges::istream_view [C++]", "std::ranges::wistream_view [C++]", "std::ranges::basic_istream_view::base [C++]", "std::ranges::basic_istream_view::begin [C++]", "std::ranges::basic_istream_view::end [C++]", ]
 dev_langs: ["C++"]
 ---
 # `basic_istream_view` class (C++ Standard Library)
@@ -55,7 +55,7 @@ For a description of the following entries, see [View class characteristics](vie
 | **Common range** | No |
 | **Borrowed range** | No |
 
-## Specializations
+## Specializations:`istream_view` and `wistream_view`
 
 Convenience alias templates are provided for `char` and `wchar_t` streams, as follows:
 
@@ -114,7 +114,9 @@ A `basic_istream_view` instance. The `basic_istream_view` internal stream pointe
 
 The best way to create a `basic_istream_view` is by using the [`views::istream`](range-adaptors.md#istream) range adaptor. Range adaptors are the intended way to create view classes. The view types are exposed in case you want to create your own custom view type.
 
-### Example:  `basic_istream_view`
+### Example: `basic_istream_view`, `istream_view`, and `wistream_view`
+
+```cpp
 
 ```cpp
 // requires /std:c++20 or later
@@ -152,7 +154,7 @@ int main()
 
     // specify all template arguments
     std::wistringstream misc(L"S T L");
-    std::ranges::basic_istream_view<wchar_t, wchar_t, std::char_traits<wchar_t>> basic{ misc };
+    std::ranges::basic_istream_view<wchar_t, wchar_t, std::char_traits<wchar_t>> basic{misc};
     for (const auto& elem : basic)
     {
         std::wcout << elem << ' '; // STL
