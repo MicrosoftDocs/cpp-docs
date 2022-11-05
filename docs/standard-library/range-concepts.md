@@ -48,22 +48,7 @@ int main()
 }
 ```
 
-Using Visual Studio 2022, version 17.4p4, the errors generated for the preceding example are:
-
-```output
-example.cpp
-example.cpp(31): error C7602: 'DivideEmUp': the associated constraints are not satisfied
-example.cpp(18): note: see declaration of 'DivideEmUp'
-example.cpp(16): note: the concept 'dividable<char*>' evaluated to false
-example.cpp(9): note: the expression is invalid
-example.cpp(31): error C2641: cannot deduce template arguments for 'DivideEmUp'
-example.cpp(31): error C2783: 'DivideEmUp<T> DivideEmUp(void)': could not deduce template argument for 'T'
-example.cpp(18): note: see declaration of 'DivideEmUp'
-example.cpp(31): error C2780: 'DivideEmUp<T> DivideEmUp(DivideEmUp<T>)': expects 1 arguments - 0 provided
-example.cpp(18): note: see declaration of 'DivideEmUp'
-```
-
-If you specify the compiler switch `/diagnostics:caret`, then one of the errors is concept `dividable<char*>` evaluated to false. It even points directly to the expression requirement `(a / b)` that failed.
+When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4p4 or later, the error that concept `dividable<char*>` evaluated to false will even point directly to the expression requirement `(a / b)` that failed.
 
 The following concepts are defined in `std::ranges` and are declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
