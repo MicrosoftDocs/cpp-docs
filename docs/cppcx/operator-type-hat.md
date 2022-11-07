@@ -31,7 +31,6 @@ rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 The next example shows how to convert between `TypeName` and `Type`.
 
 ```
-
 // Convert from Type to TypeName
 TypeName tn = TypeName(MainPage::typeid);
 

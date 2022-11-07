@@ -90,7 +90,6 @@ Determines whether the current MapView contains the specified key.
 ### Syntax
 
 ```
-
 bool HasKey(K key);
 ```
 

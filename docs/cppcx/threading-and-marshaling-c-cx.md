@@ -31,7 +31,6 @@ For various reasons, some classes can't be agile. If you are accessing instances
 Of the non-agile classes, the easiest to deal with are those that have `ThreadingModel`=Both and `MarshallingType`=Standard.  You can make these classes agile just by using the `Agile<T>` helper class.   The following example shows a declaration of a non-agile object of type `Windows::Security::Credentials::UI::CredentialPickerOptions^`, and the compiler warning that's issued as a result.
 
 ```
-
 ref class MyOptions
     {
     public:
@@ -63,7 +62,6 @@ If neither of those conditions apply, then you can mark the containing class as 
 The following example shows how to use `Agile<T>` so that you can safely ignore the warning.
 
 ```
-
 #include <agile.h>
 ref class MyOptions
     {

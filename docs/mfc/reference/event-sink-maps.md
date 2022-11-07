@@ -248,7 +248,6 @@ For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_cus
 Use the ON_PROPNOTIFY_RANGE macro to define an event sink map entry for handling property notifications from any OLE control having a control ID within a contiguous range of IDs.
 
 ```
-
 ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
 ```
 
@@ -281,7 +280,6 @@ Pointer to a member function that handles the `OnChanged` notification for this 
 The ON_PROPNOTIFY_REFLECT macro, when used in the event sink map of an OLE control's wrapper class, receives property notifications sent by the control before they are handled by the control's container.
 
 ```
-
 ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
 ```
 

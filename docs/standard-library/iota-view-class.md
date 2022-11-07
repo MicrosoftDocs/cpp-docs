@@ -1,7 +1,7 @@
 ---
 title: "iota_view class (C++ Standard Library)| Microsoft Docs"
 description: "API reference for the Standard Template Library (STL) <ranges> iota_view class: a factory that generates a view from a bounded or unbounded series of repeatedly incrementing values."
-ms.date: 10/14/2022
+ms.date: 11/04/2022
 f1_keywords: ["ranges/std::iota_view", "ranges/std::iota_view::base", "ranges/std::iota_view::begin", "ranges/std::iota_view::end", "ranges/std::iota_view::size", "ranges/std::iota_view::empty", "ranges/std::iota_view::operator bool", "ranges/std::iota_view::back", "ranges/std::iota_view::front", "ranges/std::iota_view::operator[]"]
 helpviewer_keywords: ["std::ranges::iota_view [C++]", "std::ranges::iota_view [C++], base", "std::ranges::iota_view [C++], begin", "std::ranges::iota_view [C++], end", "std::ranges::iota_view [C++], size", "std::ranges::iota_view [C++], empty", "std::ranges::iota_view [C++], operator bool", "std::ranges::iota_view [C++], front", "std::ranges::iota_view [C++], back", "std::ranges::iota_view [C++], operator[]"]
 dev_langs: ["C++"]
@@ -124,13 +124,12 @@ int main()
 {
     std::ranges::iota_view<int> iv; // create an iota_view with an unbounded range, starting at 0 
     std::ranges::iota_view<int> iv2(5); // create an iota_view with an unbounded range, starting at 5.
-    std::ranges::iota_view<int, int> iv3{ 5, 10 }; // create an iota_view with a bounded range, starting at 5 and ending at 9
+    std::ranges::iota_view<int, int> iv3{5, 10}; // create an iota_view with a bounded range, starting at 5 and ending at 9
     
     std::vector<int> v{10, 20, 35, 45, 50, 66, 77, 82, 90, 100};
     auto start = std::ranges::find(v, 35);
     auto end = std::ranges::find(v, 82);
-    auto iv4 = std::ranges::iota_view(start, end);
-    for (auto &&val : iv4)
+    for (auto &&val : std::ranges::iota_view(start, end))
     {
         std::cout << *val << ' '; // outputs 35 45 50 66 77
     }

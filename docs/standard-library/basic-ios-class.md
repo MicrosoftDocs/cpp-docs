@@ -13,7 +13,6 @@ The class template describes the storage and member functions common to both inp
 ## Syntax
 
 ```cpp
-
 template <class Elem, class Traits>
 class basic_ios : public ios_base
 ```

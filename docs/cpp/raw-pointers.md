@@ -232,7 +232,6 @@ A pointer to **`void`** simply points to a raw memory location. Sometimes it's n
 When a typed pointer is cast to a `void` pointer, the contents of the memory location are unchanged. However, the type information is lost, so that you can't do increment or decrement operations. A memory location can be cast, for example, from `MyClass*` to `void*` and back again to `MyClass*`. Such operations are inherently error-prone and require great care to avoid errors. Modern C++ discourages the use of `void` pointers in almost all circumstances.
 
 ```cpp
-
 //func.c
 void func(void* data, int length)
 {

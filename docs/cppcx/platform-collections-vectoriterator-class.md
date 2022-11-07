@@ -96,7 +96,6 @@ Decrements the current VectorIterator.
 ### Syntax
 
 ```
-
 VectorIterator& operator--();
 VectorIterator operator--(int);
 ```
@@ -267,7 +266,6 @@ Subtracts either a specified number of elements from the current iterator yieldi
 ### Syntax
 
 ```
-
 VectorIterator operator-(difference_type n) const;
 
 difference_type operator-(const VectorIterator& other) const;
@@ -311,7 +309,6 @@ Returns a VectorIterator that references the element at the specified displaceme
 ### Syntax
 
 ```
-
 VectorIterator operator+(difference_type n);
 
 template <typename T>

@@ -74,7 +74,6 @@ To override this functionality and the way that a Help context is determined, yo
 ## WM_COMMANDHELP
 
 ```
-
 afx_msg LRESULT CWnd::OnCommandHelp(WPARAM wParam, LPARAM lParam)
 ```
 
@@ -103,7 +102,6 @@ If the user chooses a command from the menu, it is handled as help on that comma
 ## WM_HELPHITTEST
 
 ```
-
 afx_msg LRESULT CWnd::OnHelpHitTest(
 WPARAM, LPARAM lParam)
 ```
