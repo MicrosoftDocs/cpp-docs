@@ -117,9 +117,6 @@ The best way to create a `basic_istream_view` is by using the [`views::istream`]
 ### Example: `basic_istream_view`, `istream_view`, and `wistream_view`
 
 ```cpp
-
-```cpp
-// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <sstream>
@@ -127,26 +124,34 @@ The best way to create a `basic_istream_view` is by using the [`views::istream`]
 int main()
 {
     // range adaptor
-    std::istringstream doubles{ "1.1 2.2 3.3 4.4 5.5" };
-    for (const auto& elem : std::views::istream<double>(doubles))
+    std::istringstream streamOfdoubles{ "1.1 2.2 3.3 4.4 5.5" };
+    for (const auto& elem : std::views::istream<double>(streamOfdoubles))
     {
         std::cout << elem << ' '; // 1.1 2.2 3.3 4.4 5.5
+    }
+    std::cout << '\n';
+
+    // range adaptor - create a wistream_view
+    std::wistringstream streamOfInts{ L"1 2 3 4 5" };
+    for (const auto& elem : std::views::istream<int>(streamOfInts))
+    {
+        std::cout << elem << ' '; // 1 2 3 4 5
     }
     std::cout << '\n';
 
     // istream_view alias
     std::istringstream cpu1{ "8 0 8 0" };
     // equivalent std::ranges::istream_view<int, char>
-    for (const auto& elem : std::ranges::istream_view<int>{cpu1})
+    for (const auto& elem : std::ranges::istream_view<int>{ cpu1 })
     {
         std::cout << elem; // 8080
     }
     std::cout << '\n';
-    
+
     // wistream_view alias
     std::wistringstream cpu2{ L"6 5 0 2" };
     // equivalent std::ranges::istream_view<int, wchar_t>
-    for (const auto& elem : std::ranges::wistream_view<int>{cpu2})
+    for (const auto& elem : std::ranges::wistream_view<int>{ cpu2 })
     {
         std::cout << elem; // 6502
     }
@@ -154,16 +159,17 @@ int main()
 
     // specify all template arguments
     std::wistringstream misc(L"S T L");
-    std::ranges::basic_istream_view<wchar_t, wchar_t, std::char_traits<wchar_t>> basic{misc};
+    std::ranges::basic_istream_view<wchar_t, wchar_t, std::char_traits<wchar_t>> basic{ misc };
     for (const auto& elem : basic)
     {
-        std::wcout << elem << ' '; // STL
+        std::wcout << elem << ' '; // S T L
     }
 }
 ```
 
 ```output
 1.1 2.2 3.3 4.4 5.5
+1 2 3 4 5
 8080
 6502
 S T L
