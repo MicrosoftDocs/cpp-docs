@@ -100,7 +100,7 @@ The following view classes are defined in the `std::ranges` namespace.
 
 | View | Description |
 |--|--|
-| [`basic_istream_view`](basic-istream-view-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. Includes `istream_view` and `wistream_view`. |
+| [`basic_istream_view`](basic-istream-view-class.md)<sup>C++20</sup> | A view of successive elements from an input stream. Specializations include `istream_view` and `wistream_view`. |
 | [`common_view`](common-view-class.md)<sup>C++20</sup> | Adapts a view that has different iterator/sentinel types into a view with the same iterator/sentinel types. |
 | [`drop_view`](drop-view-class.md)<sup>C++20</sup> | Created from another view, skipping the first `count` elements. |
 | [`drop_while_view`](drop-while-view-class.md)<sup>C++20</sup> | Created from another view, skipping leading elements as long as a predicate holds. |
