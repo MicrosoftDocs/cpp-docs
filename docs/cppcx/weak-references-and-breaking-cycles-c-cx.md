@@ -11,7 +11,6 @@ In any type system that's based on reference-counting, references to types can f
 One scenario in which `WeakReference` must be used is when the **`this`** pointer is captured in a lambda expression that's used to define an event handler. We recommend that you use named methods when you define event handlers, but if you want to use a lambda for your event handler—or if you have to break a reference counting cycle in some other situation—use `WeakReference`. Here's an example:
 
 ```
-
 using namespace Platform::Details;
 using namespace Windows::UI::Xaml;
 using namespace Windows::UI::Xaml::Input;

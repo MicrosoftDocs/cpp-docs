@@ -53,7 +53,6 @@ void functionUsingWidget() {
     w.do_something();
 
 } // automatic destruction and deallocation for w and w.data
-
 ```
 
 Since C++11, there's a better way to write the previous example: by using a smart pointer from the standard library. The smart pointer handles the allocation and deletion of the memory it owns. Using a smart pointer eliminates the need for an explicit destructor in the `widget` class.

@@ -23,7 +23,6 @@ void example(bool a, bool b) {
     bool c = a & b;    // Flagged: Bitwise AND operator used with Boolean variables.
     bool d = a || b;   // OK: Logical OR operator used with Boolean variables.
 }
-
 ```
 
 Only use bitwise operators on integer values.

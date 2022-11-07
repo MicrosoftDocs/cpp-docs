@@ -150,7 +150,6 @@ Indicates whether the current VectorViewIterator is greater than a specified Vec
 ### Syntax
 
 ```
-
 bool operator>(const VectorViewIterator& other) const;
 ```
 
@@ -170,7 +169,6 @@ Indicates whether the current `VectorViewIterator` is greater than or equal to t
 ### Syntax
 
 ```
-
 bool operator>=(const VectorViewIterator& other) const;
 ```
 
@@ -190,7 +188,6 @@ Increments the current VectorViewIterator.
 ### Syntax
 
 ```
-
 VectorViewIterator& operator++();
 VectorViewIterator operator++(int);
 ```
@@ -250,7 +247,6 @@ Indicates whether the current `VectorIterator` is less than or equal to a specif
 ### Syntax
 
 ```
-
 bool operator<=(const VectorViewIterator& other) const;
 ```
 
@@ -270,7 +266,6 @@ Subtracts either a specified number of elements from the current iterator yieldi
 ### Syntax
 
 ```
-
 VectorViewIterator operator-(difference_type n) const;
 
 difference_type operator-(const VectorViewIterator& other) const;
@@ -314,7 +309,6 @@ Returns a VectorViewIterator that references the element at the specified displa
 ### Syntax
 
 ```
-
 VectorViewIterator operator+(difference_type n) const;
 
 template <typename T>
@@ -385,7 +379,6 @@ Initializes a new instance of the VectorViewIterator class.
 ### Syntax
 
 ```
-
 VectorViewIterator();
 
 explicit VectorViewIterator(
