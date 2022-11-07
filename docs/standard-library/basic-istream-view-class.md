@@ -142,7 +142,7 @@ int main()
     // istream_view alias
     std::istringstream cpu1{ "8 0 8 0" };
     // equivalent std::ranges::istream_view<int, char>
-    for (const auto& elem : std::ranges::istream_view<int>{ cpu1 })
+    for (const auto& elem : std::ranges::istream_view<int>{cpu1})
     {
         std::cout << elem; // 8080
     }
@@ -151,7 +151,7 @@ int main()
     // wistream_view alias
     std::wistringstream cpu2{ L"6 5 0 2" };
     // equivalent std::ranges::istream_view<int, wchar_t>
-    for (const auto& elem : std::ranges::wistream_view<int>{ cpu2 })
+    for (const auto& elem : std::ranges::wistream_view<int>{cpu2})
     {
         std::cout << elem; // 6502
     }
@@ -159,7 +159,7 @@ int main()
 
     // specify all template arguments
     std::wistringstream misc(L"S T L");
-    std::ranges::basic_istream_view<wchar_t, wchar_t, std::char_traits<wchar_t>> basic{ misc };
+    std::ranges::basic_istream_view<wchar_t, wchar_t, std::char_traits<wchar_t>> basic{misc};
     for (const auto& elem : basic)
     {
         std::wcout << elem << ' '; // S T L
