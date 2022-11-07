@@ -117,9 +117,6 @@ The best way to create a `basic_istream_view` is by using the [`views::istream`]
 ### Example: `basic_istream_view`, `istream_view`, and `wistream_view`
 
 ```cpp
-
-```cpp
-// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <sstream>
@@ -127,10 +124,18 @@ The best way to create a `basic_istream_view` is by using the [`views::istream`]
 int main()
 {
     // range adaptor
-    std::istringstream doubles{ "1.1 2.2 3.3 4.4 5.5" };
-    for (const auto& elem : std::views::istream<double>(doubles))
+    std::istringstream streamOfdoubles{ "1.1 2.2 3.3 4.4 5.5" };
+    for (const auto& elem : std::views::istream<double>(streamOfdoubles))
     {
         std::cout << elem << ' '; // 1.1 2.2 3.3 4.4 5.5
+    }
+    std::cout << '\n';
+
+    // range adaptor - create a wistream_view
+    std::wistringstream streamOfInts{ L"1 2 3 4 5" };
+    for (const auto& elem : std::views::istream<int>(streamOfInts))
+    {
+        std::cout << elem << ' '; // 1 2 3 4 5
     }
     std::cout << '\n';
 
@@ -142,7 +147,7 @@ int main()
         std::cout << elem; // 8080
     }
     std::cout << '\n';
-    
+
     // wistream_view alias
     std::wistringstream cpu2{ L"6 5 0 2" };
     // equivalent std::ranges::istream_view<int, wchar_t>
@@ -157,13 +162,14 @@ int main()
     std::ranges::basic_istream_view<wchar_t, wchar_t, std::char_traits<wchar_t>> basic{misc};
     for (const auto& elem : basic)
     {
-        std::wcout << elem << ' '; // STL
+        std::wcout << elem << ' '; // S T L
     }
 }
 ```
 
 ```output
 1.1 2.2 3.3 4.4 5.5
+1 2 3 4 5
 8080
 6502
 S T L
