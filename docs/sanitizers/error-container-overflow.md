@@ -61,21 +61,13 @@ devenv /debugexe example1.exe
 
 ## Custom Allocators plus Container Overflow
 
-Address Sanitizer container overflow checking does support non-`std::allocator` allocators; however, because ASan cannot
-trust custom allocators to have some important properties, it may not always be able to check that accesses on the
-latter end of an allocation are correct.
+Address Sanitizer container overflow checking does support non-`std::allocator` allocators; however, because ASan can't trust custom allocators to have some important properties, it may not always be able to check that accesses on the latter end of an allocation are correct.
 
-ASan marks blocks of memory in 8-byte chunks, and due to how its shadow memory works, it cannot place
-inaccessible bytes before accessible bytes in a single chunk. In other words, 8 accessible bytes in a chunk is valid,
-as is 4 accessible bytes followed by 4 inaccessible bytes;
-however, 4 inaccessible bytes followed by 4 accessible bytes does not work.
+ASan marks blocks of memory in 8-byte chunks, and due to how its shadow memory works, it can't place inaccessible bytes before accessible bytes in a single chunk. In other words, it's valid to have 8 accessible bytes in a chunk, or 4 accessible bytes followed by 4 inaccessible bytes, but you can't have 4 inaccessible bytes followed by 4 accessible bytes.
 
-This means that if the end of an allocation from a custom allocator does not strictly align with the end of an
-8-byte chunk, ASan must assume that the bytes after the end of the allocation but before the end of the chunk
-may be in use by someone else, and therefore cannot mark the bytes in the final 8-byte chunk as inaccessible.
-For example:
+So, if the end of an allocation from a custom allocator doesn't strictly align with the end of an 8-byte chunk, there's a problem. ASan must assume that the bytes after the end of the allocation, but before the end of the chunk, may be in use by someone else. Therefore, it can't mark the bytes in the final 8-byte chunk as inaccessible. For example:
 
-```cxx
+```cpp
 std::vector<uint8_t, MyCustomAlloc<uint8_t>> v;
 v.reserve(20);
 v.assign({0, 1, 2, 3});
@@ -83,23 +75,13 @@ v.assign({0, 1, 2, 3});
 //   | v.data()
 //   |       | v.data() + v.size()
 //   |       |                                     | v.data() + v.capacity()
-// [ 0 1 2 3 ? ? ? ? ][ ? ? ? ? ? ? ? ? ][ ? ? ? ? - - - - ]
-//       chunk 1            chunk 2            chunk 3
+//  [ 0 1 2 3 ? ? ? ? ][ ? ? ? ? ? ? ? ? ][ ? ? ? ? - - - - ]
+//        chunk 1            chunk 2            chunk 3
 ```
 
-We would like to mark the shadow memory such that `v.data() + [0, v.size())` are accessible,
-and `v.data() + [v.size(), v.capacity())` are inaccessible.
-However, since the user is using a custom allocator that we don't have information about,
-we cannot know whether the memory after `v.data() + v.capacity()` is accessible or not, so we must assume it is.
-Therefore, even though we would prefer to mark those bytes as inaccessible, we must instead mark them as accessible
-so that one can still access the bytes after the allocation.
+Ideally, we'd mark the shadow memory such that `v.data() + [0, v.size())` are accessible, and `v.data() + [v.size(), v.capacity())` are inaccessible. However, since the user is using a custom allocator that we don't have information about, we can't know whether the memory after `v.data() + v.capacity()` is accessible or not, so we must assume that it is. Therefore, even though we'd prefer to mark those bytes as inaccessible, we must instead mark them as accessible so it's still possible to access the bytes after the allocation.
 
-`std::allocator` uses the `_Minimum_asan_allocation_alignment` static member variable as a way to tell
-`vector` and `string` that they can trust the allocator to not put data right after the allocation,
-and that the pointer returned by the allocation functions. If you want your own allocator to be trusted
-by the implementation, you can also set `_Minimum_asan_allocation_alignment` to your actual minimum alignment
-(for ASan to work correctly, the alignment must be at least `8`).
-
+`std::allocator` uses the `_Minimum_asan_allocation_alignment` static member variable as a way to tell `vector` and `string` that they can trust the allocator not to put data right after the allocation, so the pointer returned by the allocation functions. If you want the implementation to trust an allocator of your own, you can also set `_Minimum_asan_allocation_alignment` to your actual minimum alignment. (For ASan to work correctly, the alignment must be at least `8`.)
 
 ## See also
 
