@@ -115,7 +115,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4841](../error-messages/compiler-warnings/c4841.md) (level 4) | non-standard extension used: compound member designator used in offsetof |
 | C4842 (level 4) | the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases |
 | [C4866](../error-messages/compiler-warnings/c4866.md) (level 4) | '*file*(*line-number*)' compiler may not enforce left-to-right evaluation order for call to *operator* |
-| [C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (level 4) | '_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
+| [C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (level 4) | '*file*(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
 | [C4905](../error-messages/compiler-warnings/compiler-warning-level-1-c4905.md) (level 1) | wide string literal cast to 'LPSTR' |
 | [C4906](../error-messages/compiler-warnings/compiler-warning-level-1-c4906.md) (level 1) | string literal cast to 'LPWSTR' |
 | [C4917](../error-messages/compiler-warnings/compiler-warning-level-1-c4917.md) (level 1) | '*declarator*': a GUID can only be associated with a class, interface, or namespace |
@@ -135,6 +135,9 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5029 (level 4) | nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only |
 | C5031 (level 4) | #pragma warning(pop): likely mismatch, popping warning state pushed in different file <sup>14.1</sup> |
 | C5032 (level 4) | detected #pragma warning(push) with no corresponding #pragma warning(pop) <sup>14.1</sup> |
+
+| Warning | Message |
+|--|--|
 | C5034 | use of intrinsic '*intrinsic*' causes function *function-name* to be compiled as guest code <sup>15.3</sup> |
 | C5035 | use of feature '*feature*' causes function *function-name* to be compiled as guest code <sup>15.3</sup> |
 | C5036 (level 1) | varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*' <sup>15.3</sup> |
@@ -143,7 +146,10 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5041 (level 4) | '*member-name*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17. <sup>15.2</sup> |
 | C5042 (level 3) | '*function*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier <sup>15.5</sup> |
 | [C5045](../error-messages/compiler-warnings/c5045.md) | Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified <sup>15.7</sup> |
-| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++*version* and requires use of the '*option*' command-line option` <sup>16.1</sup> |
+
+| Warning | Message |
+|--|--|
+| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++ *version* and requires use of the '*option*' command-line option` <sup>16.1</sup> |
 | C5204 (level 3) | A class with virtual functions has non-virtual trivial destructor. <sup>16.5</sup> |
 | C5214 (level 4) | applying '*keyword*' to an operand with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
 | C5215 (level 4) | '*function-parameter*' a function parameter with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
@@ -158,14 +164,17 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
 | [C5247 (level 1)](../error-messages/compiler-warnings/c5247.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
 | [C5248 (level 1)](../error-messages/compiler-warnings/c5248.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Variable manually put into the section may be optimized out and its order relative to compiler generated dynamic initializers is unspecified <sup>16.11</sup> |
+
+| Warning | Message |
+|--|--|
 | C5249 (level 1) | '*bitfield*' of type '*enumeration_name*' has named enumerators with values that cannot be represented in the given bit field width of '*bitfield_width*'. <sup>17.0</sup> |
 | C5250 (level 3) | '*function_name*': intrinsic function not declared. <sup>17.0</sup> |
 | C5251 (level 4) | *segment-name* changed after including header <sup>17.1</sup> |
 | C5254 (level 4) | language feature 'terse static assert' requires compiler flag '/std:c++17' <sup>17.1</sup> |
 | C5256 (level 1) | '*enumeration*': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration <sup>17.2</sup> |
 | C5258 (level 4) | explicit capture of '*symbol*' is not required for this use <sup>17.2</sup> |
-| C5259 (level 4) | '*specialized-type*': explicit specialization requires 'template <>' <sup>17.3</sup> |
-| C5262 (level 1) | implicit fall-through occurs here; are you missing a break statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases <sup>17.4</sup> |
+| C5259 (level 4) | '*specialized-type*': explicit specialization requires '`template <>`' <sup>17.3</sup> |
+| C5262 (level 1) | implicit fall-through occurs here; are you missing a `break` statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases <sup>17.4</sup> |
 | C5263 (level 4) | calling '`std::move`' on a temporary object prevents copy elision <sup>17.4</sup> |
 | C5264 (level 4) | '*variable-name*': 'const' variable is not used <sup>17.4</sup> |
 
