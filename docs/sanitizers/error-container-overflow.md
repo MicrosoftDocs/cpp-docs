@@ -94,7 +94,11 @@ we cannot know whether the memory after `v.data() + v.capacity()` is accessible 
 Therefore, even though we would prefer to mark those bytes as inaccessible, we must instead mark them as accessible
 so that one can still access the bytes after the allocation.
 
-`std::allocator` uses the `_Minimum_asan_alignment`
+`std::allocator` uses the `_Minimum_asan_allocation_alignment` static member variable as a way to tell
+`vector` and `string` that they can trust the allocator to not put data right after the allocation,
+and that the pointer returned by the allocation functions. If you want your own allocator to be trusted
+by the implementation, you can also set `_Minimum_asan_allocation_alignment` to your actual minimum alignment
+(for ASan to work correctly, the alignment must be at least `8`).
 
 
 ## See also
