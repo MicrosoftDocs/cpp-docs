@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 11/08/2021
+ms.date: 11/07/2022
 ms.technology: "cpp-language"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
@@ -175,6 +175,50 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P1353R0 Missing feature-test macros`](https://wg21.link/P1353R0) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0735R1 Interaction of memory_order_consume with release sequences`](https://wg21.link/P0735R1) | N/A |
 | &emsp;[`P1236R1 Signed integers are two's complement`](https://wg21.link/P1236R1) | N/A |
+| **C++23 Core language features** | **Supported** |
+| &emsp;[`P0330R8 Literal Suffix for (signed) size_t`](https://wg21.link/p0330r8) | no |
+| &emsp;[`P0847R7 Deducing this`](https://wg21.link/p0847r7) | no |
+| &emsp;[`P0849R8 auto(x): decay-copy in the language`](https://wg21.link/p0849r8) | no |
+| &emsp;[`P1102R2 Down with ()!`](https://wg21.link/p1102r2) | no |
+| &emsp;[`P1169R4 static operator()`](https://wg21.link/p1169r4) | no |
+| &emsp;[`P1401R5 Narrowing contextual conversions to bool`](https://wg21.link/p1401r5) | no |
+| &emsp;[`P1467R9 Extended floating-point types and standard names`](https://wg21.link/p1467r9) | no |
+| &emsp;[`P1774R8 Portable assumptions`](https://wg21.link/p1774r8) | no |
+| &emsp;[`P1787R6 Declarations and where to find them`](https://wg21.link/p1787r6) | no |
+| &emsp;[`P1847R4 Make declaration order layout mandated`](https://wg21.link/p1847r4) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1938R3 if consteval`](https://wg21.link/p1938r3) | no |
+| &emsp;[`P1949R7 C++ Identifier Syntax using Unicode Standard Annex 31`](https://wg21.link/p1949r7) | no |
+| &emsp;[`P2029R4 Proposed resolution for core issues 411, 1656, and 2333; numeric and universal character escapes in character and string literals`](https://wg21.link/p2029r4) | no |
+| &emsp;[`P2036R3 Change scope of lambda trailing-return-type`](https://wg21.link/p2036r3) | no |
+| &emsp;[`P2071R2 Named universal character escapes`](https://wg21.link/p2071r2) | no |
+| &emsp;[`P2128R6 Multidimensional subscript operator`](https://wg21.link/p2128r6) | no |
+| &emsp;[`P2156R1 Allow Duplicate Attributes`](https://wg21.link/p2156r1) | no |
+| &emsp;[`P2173R1 Attributes on Lambda-Expressions`](https://wg21.link/p2173r1) | no |
+| &emsp;[`P2186R2 Remove Garbage Collection Support`](https://wg21.link/p2186r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2201R1 Mixed string literal concatenation`](https://wg21.link/p2201r1) | no |
+| &emsp;[`P2223R2 Trimming whitespaces before line splicing`](https://wg21.link/p2223r2) | no |
+| &emsp;[`P2242R3 Non-literal variables (and labels and gotos) in constexpr functions`](https://wg21.link/p2242r3) | no |
+| &emsp;[`P2246R1 Character encoding of diagnostic text`](https://wg21.link/p2246r1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2266R3 Simpler implicit move`](https://wg21.link/p2266r3) | no |
+| &emsp;[`P2280R4 Using unknown pointers and references in constant expressions`](https://wg21.link/p2280r4) | no |
+| &emsp;[`P2290R3 Delimited escape sequences`](https://wg21.link/p2290r3) | no |
+| &emsp;[`P2295R6 Support for UTF-8 as a portable source file encoding`](https://wg21.link/p2295r6) | no |
+| &emsp;[`P2314R4 Character sets and encodings`](https://wg21.link/p2314r4) | no |
+| &emsp;[`P2316R2 Consistent character literal encoding`](https://wg21.link/p2316r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2324R2 Labels at the end of compound statements (C compatibility)`](https://wg21.link/p2324r2) | no |
+| &emsp;[`P2327R1 De-deprecating volatile compound operations`](https://wg21.link/p2327r1) | no |
+| &emsp;[`P2334R1 preprocessing directives elifdef and elifndef`](https://wg21.link/p2334r1) | no |
+| &emsp;[`P2360R0 Extend init-statement to allow alias-declaration`](https://wg21.link/p2360r0) | no |
+| &emsp;[`P2362R3 Remove non-encodable wide character literals and multicharacter wide character literals`](https://wg21.link/p2362r3) | no |
+| &emsp;[`P2437R1 Support for #warning`](https://wg21.link/p2437r1) | no |
+| &emsp;[`P2448R2 Relaxing some constexpr restrictions`](https://wg21.link/p2448r2) | no |
+| &emsp;[`P2460R2 Relax requirements on wchar_t to match existing practices`](https://wg21.link/p2460r2) | no |
+| &emsp;[`P2493R0 Missing feature test macros for C++20 core papers`](https://wg21.link/p2493r0) | no |
+| &emsp;[`P2493R0 Missing feature test macros for C++20 core papers`](https://wg21.link/p2493r0) | no |
+| &emsp;[`P2513R3 char8_t Compatibility and Portability Fix`](https://wg21.link/p2513r3) | VS 2022 17.4 <sup>[DR](#note_DR)</sup> |
+| &emsp;[`P2579R0 Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type”`](https://wg21.link/p2579r0) | no |
+| &emsp;[`P2582R1 Wording for class template argument deduction from inherited constructors`](https://wg21.link/p2582r1) | no |
+| &emsp;[`P2668R2 The Equality Operator You Are Looking For`](https://wg21.link/p2668r2) | no |
 
 ## C++ Standard library features
 
@@ -401,18 +445,61 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P2367R0 Remove misuses of list-initialization from clause 24 ranges`](https://wg21.link/P2367R0) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P2259R1 Partial LWG issue resolution: repairing Input Range Adaptors and counted_iterator`](https://wg21.link/P2259R1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | **C++23 Standard library features** | **Supported** |
-| &emsp;[`P0401R6 Providing size feedback in the allocator interface`](https://wg21.link/P0401R6) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P0881R7 <stacktrace>`](https://wg21.link/p0881r7) | No |
-| &emsp;[`P0943R6 Supporting C Atomics In C++`](https://wg21.link/P0943R6) | VS 2022 17.0  <sup>[T](#note_T)</sup> |
-| &emsp;[`P1048R1 is_scoped_enum`](https://wg21.link/P1048R1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P1132R7 out_ptr(), inout_ptr()`](https://wg21.link/P1132R7) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P1679R3 contains() for basic_string/basic_string_view`](https://wg21.link/P1679R3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P1682R3 to_underlying() for enumerations`](https://wg21.link/P1682R3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P1951R1 Default template arguments for pair's forwarding constructor`](https://wg21.link/P1951R1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P1989R2 Range Constructor For string_view`](https://wg21.link/P1989R2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0288R9 move_only_function​`](https://wg21.link/p0288r9) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0323R12 <expected>​​`](https://wg21.link/p0323r12) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0401R6 Providing Size Feedback In The Allocator Interface​`](https://wg21.link/p0401r6) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0448R4 <spanstream>​`](https://wg21.link/p0448r4) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0627R6 unreachable()​`](https://wg21.link/p0627r6) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0798R8 Monadic Operations For optional​`](https://wg21.link/p0798r8) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0849R8 auto(x): decay-copy In The Language​`](https://wg21.link/p0849r8) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0881R7 <stacktrace>​`](https://wg21.link/p0881r7) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0943R6 Supporting C Atomics In C++​`](https://wg21.link/p0943r6) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1048R1 is_scoped_enum​`](https://wg21.link/p1048r1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1072R10 basic_string::resize_and_overwrite​`](https://wg21.link/p1072r10) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1132R7 out_ptr(), inout_ptr()​`](https://wg21.link/p1132r7) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1147R1 Printing volatile Pointers​`](https://wg21.link/p1147r1) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1206R7 Conversions From Ranges To Containers​`](https://wg21.link/p1206r7) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1272R4 byteswap()​`](https://wg21.link/p1272r4) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1328R1 constexpr type_info::operator==()​`](https://wg21.link/p1328r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1413R3 Deprecate aligned_storage And aligned_union​​`](https://wg21.link/p1413r3) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1425R4 Iterator Pair Constructors For stack And queue​`](https://wg21.link/p1425r4) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1518R2 Stop Overconstraining Allocators In Container Deduction Guides​`](https://wg21.link/p1518r2) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1659R3 ranges::starts_with, ranges::ends_with​`](https://wg21.link/p1659r3) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1679R3 contains() For basic_string/basic_string_view​`](https://wg21.link/p1679r3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1682R3 to_underlying() For Enumerations​`](https://wg21.link/p1682r3) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1899R3 views::stride​`](https://wg21.link/p1899r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1951R1 Default Template Arguments For pair's Forwarding Constructor​`](https://wg21.link/p1951r1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1989R2 Range Constructor For string_view​`](https://wg21.link/p1989r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2077R3 Heterogeneous Erasure Overloads For Associative Containers​`](https://wg21.link/p2077r3) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2136R3 invoke_r()​`](https://wg21.link/p2136r3) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2162R2 Inheriting from std::variant`](https://wg21.link/P2162R2) | VS 2022 17.0 <sup>[17](#note_17)</sup> |
 | &emsp;[`P2166R1 Prohibit basic_string and basic_string_view from being constructed from nullptr`](https://wg21.link/P2166R1) | VS 2022 17.0 <sup>[23](#note_23), [R](#note_R)</sup> |
 | &emsp;[`P2186R2 Removed garbage collection support`](https://wg21.link/P2186R2) | VS 2022 17.0 <sup>[23](#note_23), [Q](#note_Q)</sup> |
+| &emsp;[`P2251R1 Require span And basic_string_view To Be Trivially Copyable​`](https://wg21.link/p2251r1) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2273R3 constexpr unique_ptr​​`](https://wg21.link/p2273r3) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2291R3 constexpr Integral <charconv>​`](https://wg21.link/p2291r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2302R4 ranges::contains, ranges::contains_subrange​`](https://wg21.link/p2302r4) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2322R6 ranges::fold_left, ranges::fold_right, etc.​`](https://wg21.link/p2322r6) | no |
+| &emsp;[`P2387R3 Pipe Support For User-Defined Range Adaptors​`](https://wg21.link/p2387r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2393R1 Cleaning Up Integer-Class Types​`](https://wg21.link/p2393r1) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2401R0 Conditional noexcept For exchange()​`](https://wg21.link/p2401r0) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2408R5 Ranges Iterators As Inputs To Non-Ranges Algorithms​`](https://wg21.link/p2408r5) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2417R2 More constexpr bitset​`](https://wg21.link/p2417r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2419R2 Clarify Handling Of Encodings In Localized Formatting Of chrono Types​`](https://wg21.link/p2419r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2438R2 string::substr() &&​`](https://wg21.link/p2438r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2440R1 ranges::iota, ranges::shift_left, ranges::shift_right​`](https://wg21.link/p2440r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2441R2 views::join_with​`](https://wg21.link/p2441r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2442R1 Windowing Range Adaptors: views::chunk, views::slide​​`](https://wg21.link/p2442r1) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2443R1 views::chunk_by​​`](https://wg21.link/p2443r1) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2445R1 forward_like()​`](https://wg21.link/p2445r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2446R2 views::as_rvalue​`](https://wg21.link/p2446r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2465R3 Standard Library Modules std And std.compat​`](https://wg21.link/p2465r3) | no |
+| &emsp;[`P2494R2 Relaxing Range Adaptors To Allow Move-Only Types​`](https://wg21.link/p2494r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2499R0 string_view Range Constructor Should Be explicit​`](https://wg21.link/p2499r0) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2508R1 basic_format_string, format_string, wformat_string​`](https://wg21.link/p2508r1) | no |
+| &emsp;[`P2517R1 Conditional noexcept For apply()​`](https://wg21.link/p2517r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2520R0 move_iterator<T*> Should Be A Random-Access Iterator​​`](https://wg21.link/p2520r0) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2549R1 unexpected<E>::error()`](https://wg21.link/p2549r1) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
 
 A group of papers listed together indicates a Standard feature along with one or more approved improvements or expansions. These features are implemented together.
 
@@ -476,7 +563,11 @@ A group of papers listed together indicates a Standard feature along with one or
 **VS 2019 16.8** Supported in Visual Studio 2019 version 16.8.\
 **VS 2019 16.9** Supported in Visual Studio 2019 version 16.9.\
 **VS 2019 16.10** Supported in Visual Studio 2019 version 16.10.\
-**VS 2022 17.0** Supported in Visual Studio 2022 version 17.0.
+**VS 2022 17.0** Supported in Visual Studio 2022 version 17.0.\
+**VS 2022 17.1** Supported in Visual Studio 2022 version 17.1.\
+**VS 2022 17.2** Supported in Visual Studio 2022 version 17.2.\
+**VS 2022 17.3** Supported in Visual Studio 2022 version 17.3.\
+**VS 2022 17.4** Supported in Visual Studio 2022 version 17.4.
 
 ### Notes
 

@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 04/15/2022
+ms.date: 11/07/2022
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -212,9 +212,11 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Z7`](z7-zi-zi-debug-information-format.md) | Generates C 7.0-compatible debugging information. |
 | [`/Za`](za-ze-disable-language-extensions.md) | Disables some C89 language extensions in C code. |
 | [`/Zc:__cplusplus[-]`](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard (off by default). |
+| [`/Zc:__STDC__`](zc-stdc.md) | Enable the `__STDC__` macro to report the C standard is supported (off by default). |
 | [`/Zc:alignedNew[-]`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation (on by default in C++17). |
 | [`/Zc:auto[-]`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`** (on by default). |
 | [`/Zc:char8_t[-]`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t` (off by default, except under **`/std:c++20`**). |
+| [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for `enum` type deduction (off by default). |
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions (implied by **`/permissive-`**). |
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |

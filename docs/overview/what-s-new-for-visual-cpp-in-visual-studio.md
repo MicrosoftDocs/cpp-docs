@@ -1,13 +1,71 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 09/29/2022
+ms.date: 11/08/2022
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
 # What's new for C++ in Visual Studio 2022
 
-Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
+Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
+
+For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md)
+
+## What's new for C++ in Visual Studio version 17.4
+
+For a summary of new features and bug fixes in Visual Studio in version 17.34, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.4).
+
+- Improved compiler error messages to provide more correct and useful information, especially for concepts.
+
+- Added experimental MSVC flag **`/experimental:log<directory>`** to output SARIF build logs to the specified directory.
+
+- Added support for C23 attributes to IntelliSense and continued progress in C++20 modules support.
+
+- Improved indexing performance when opening a new solution. Large projects could see a 20-35% improvement from 17.3.
+
+- Improved Named Return Value Optimization (NRVO):
+  - NRVO is enabled for cases that involve exception handling or loops.
+  - NRVO is enabled even under **`/Od`** if the user passes the **`/Zc:nrvo`** flag, or **`/std:c++20`** or later, or **`/permissive-`**.
+  - You can now disable NRVO with the **`/Zc:nrvo-`** flag.
+
+- Upgraded the version of LLVM shipped with Visual Studio to 15.0.1. For more information on what is available, see the [LLVM](https://releases.llvm.org/15.0.0/docs/ReleaseNotes.html) and [Clang](https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html) release notes.
+
+- Added support to Visual Studio for vcpkg artifacts with CMake projects. For projects that include a vcpkg manifest, the environment is activated automatically on project open. Learn more about this feature in the [vcpkg environment activation in Visual Studio](https://aka.ms/vsvcpkgenv) blog post.
+
+- You can now use Dev Containers for your C++ projects. Learn more about this feature in our [Dev Containers for C++](https://aka.ms/vscppdevcontainer) blog post.
+
+- IntelliSense now respects the order of pre-included headers when one is a PCH. Previously, when a PCH was used via **`/Yu`** and force-included via **`/FI`**, IntelliSense would always process it first, before any other headers included via **`/FI`**. This behavior didn't match the build behavior. With this change, **`/FI`** headers are processed in the order they're specified.
+
+- Removed internal prefixes from CTest names in Test Explorer.
+
+- Updated the version of CMake shipped with Visual Studio to version 3.24.1. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.24/release/3.24.html).
+
+- Android SDK update:
+  - Ant scripts have been removed, so users will no longer see Ant-based templates in the New Project dialog. For help migrating from Ant templates to Gradle templates, see [Migrating Builds From Apache Ant](https://docs.gradle.org/current/userguide/migrating_from_ant.html)
+  - Added support for building with NDK 23 and 24
+  - Updated NDK component to the LTS version 23
+
+- Added vectorized implementations of `ranges::min_element()`, `ranges::max_element()`, and `ranges::minmax_element()`
+
+- We continue to track the latest developments in C++ standardization. Support for these C++23 features is available by including [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) in your compiler options:
+  - [P2302R4](https://wg21.link/p2302r4) `ranges::contains`, `ranges::contains_subrange`
+  - [P2499R0](https://wg21.link/p2499r0) `string_view` Range Constructor Should Be `explicit`
+  - [P0849R8](https://wg21.link/p0849r8) `auto(x)`: decay-copy In The Language
+
+    (The compiler part isn't implemented yet. The library part was implemented in C++20 mode when Ranges support was initially implemented.)
+  - [P0881R7](https://wg21.link/p0881r7) `<stacktrace>`
+  - [P2301R1](https://wg21.link/p2301r1) Add A `pmr` Alias For `std::stacktrace`
+  - [P1328R1](https://wg21.link/p1328r1) `constexpr type_info::operator==()`
+  - [P2440R1](https://wg21.link/p2440r1) `ranges::iota`, `ranges::shift_left`, `ranges::shift_right`
+  - [P2441R2](https://wg21.link/p2441r2) `views::join_with`
+
+- Added an option "Navigation after Create Declaration/Definition" to allow you to choose the navigation behavior of the Create Declaration/Definition feature. You can select between peeking (the default) or opening the document, or no navigation.
+
+- Arm64 builds of Visual Studio now bundle Arm64 versions of CMake and Ninja.
+
+- Added support for CMake Presets version 4. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.23/release/3.23.html#id6).
+
+- Remote system connections using the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md) now support SSH ProxyJump. ProxyJump is used to access an SSH host via another SSH host (for example, to access a host behind a firewall).
 
 ## What's new for C++ in Visual Studio version 17.3
 
