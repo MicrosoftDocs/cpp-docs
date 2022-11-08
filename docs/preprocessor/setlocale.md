@@ -8,7 +8,7 @@ no-loc: ["pragma"]
 ---
 # `setlocale` pragma
 
-Defines the *locale*, the country, region, and language to use when translating wide-character constants and string literals.
+Defines the *locale*, the country/region and language to use when translating wide-character constants and string literals.
 
 ## Syntax
 
