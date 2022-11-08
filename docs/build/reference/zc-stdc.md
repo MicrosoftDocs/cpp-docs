@@ -1,11 +1,11 @@
 ---
-description: "Learn more about the /Zc:__STDC__ (Enable enum type deduction) compiler option."
-title: "/Zc:__STDC__ (Enable C++20 __STDC__ type)"
+description: "Learn more about the /Zc:__STDC__ (Enable __STDC__ macro) compiler option."
+title: "/Zc:__STDC__ (Enable __STDC__ macro)"
 ms.date: 11/07/2022
 f1_keywords: ["/Zc:__STDC__"]
 helpviewer_keywords: ["-Zc:__STDC__ compiler option (C++)", "/Zc:__STDC__ compiler option (C++)"]
 ---
-# `/Zc:__STDC__` (Define `__STDC__` in C)
+# `/Zc:__STDC__` (Enable `__STDC__` macro)
 
 The **`/Zc:__STDC__`** compiler option defines the built-in `__STDC__` preprocessor macro as 1 in C code.
 

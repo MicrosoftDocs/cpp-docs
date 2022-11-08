@@ -1,6 +1,6 @@
 ---
 description: "Learn more about the /Zc:enumTypes (Enable enum type deduction) compiler option."
-title: "/Zc:enumTypes (Enable C++20 enumTypes type)"
+title: "/Zc:enumTypes (Enable enum type deduction)"
 ms.date: 11/07/2022
 f1_keywords: ["/Zc:enumTypes"]
 helpviewer_keywords: ["-Zc:enumTypes compiler option (C++)", "/Zc:enumTypes compiler option (C++)"]
@@ -80,7 +80,7 @@ In this example the enumerator `A` should have type **`char`** prior to the clos
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. In **Additional options**, add **`/Zc:enumTypes`** or **`/Zc:enumTypes-`**. Choose **OK** or **Apply** to save your changes.
+1. In **Additional options**, add *`/Zc:enumTypes`* or *`/Zc:enumTypes-`*. Choose **OK** or **Apply** to save your changes.
 
 ## See also
 
