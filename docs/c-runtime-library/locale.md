@@ -3,7 +3,7 @@ description: "Learn more about: Locale"
 title: "Locale"
 ms.date: "04/11/2018"
 f1_keywords: ["c.international"]
-helpviewer_keywords: ["localization, locale", "country information", "language information routines", "setlocale function", "locale routines"]
+helpviewer_keywords: ["localization, locale", "country/region information", "language information routines", "setlocale function", "locale routines"]
 ---
 # Locale
 
