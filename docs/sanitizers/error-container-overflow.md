@@ -72,9 +72,9 @@ std::vector<uint8_t, MyCustomAlloc<uint8_t>> v;
 v.reserve(20);
 v.assign({0, 1, 2, 3});
 // the buffer of `v` is as follows:
-//   | v.data()
-//   |       | v.data() + v.size()
-//   |       |                                     | v.data() + v.capacity()
+//    | v.data()
+//    |       | v.data() + v.size()
+//    |       |                                     | v.data() + v.capacity()
 //  [ 0 1 2 3 ? ? ? ? ][ ? ? ? ? ? ? ? ? ][ ? ? ? ? - - - - ]
 //        chunk 1            chunk 2            chunk 3
 ```
