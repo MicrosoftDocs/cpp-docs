@@ -1,7 +1,7 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 description: "Table of Microsoft C/C++ compiler warnings C4800 through C5999."
-ms.date: 08/08/2022
+ms.date: 11/07/2022
 f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5300", "C5301", "C5302"]
 helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5300", "C5301", "C5302"]
 ---
@@ -57,7 +57,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C4857 | C++/CLI mode does not support C++ versions newer than C++17; setting language to `/std:c++17` |
 | [Compiler warning (level 4) C4866](c4866.md) | compiler may not enforce left-to-right evaluation order for call to *operator_name* |
 | [Compiler warning (level 1, error) C4867](compiler-warning-c4867.md) | '*function*': function call missing argument list; use '*call*' to create a pointer to member |
-| [Compiler warning (level 4) C4868](compiler-warning-c4868.md) | '_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
+| [Compiler warning (level 4) C4868](compiler-warning-c4868.md) | '*file*(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
 | Compiler warning (level 2) C4872 | floating point division by zero detected when compiling the call graph for the `concurrency::parallel_for_each` at: '*location*' |
 | Compiler warning (level 1) C4880 | casting from 'const *type_1*' to '*type_2*': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function |
 | Compiler warning (level 4) C4881 | the constructor and/or the destructor will not be invoked for `tile_static` variable '*variable-name*' |
@@ -241,6 +241,12 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1, off) C5256 | '*enumeration*': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration |
 | Compiler warning (level 1 or 4) C5257 | '*enumeration*': enumeration was previously declared without a fixed underlying type |
 | Compiler warning (level 4, off) C5258 | explicit capture of '*symbol*' is not required for this use |
+| Compiler warning (level 4, off) C5259 | '*specialized-type*': explicit specialization requires 'template <>' |
+| Compiler warning (level 1) C5260 | the constant variable '*variable-name*' has internal linkage in an included header file context, but external linkage in imported header unit context; consider declaring it 'inline' as well if it will be shared across translation units, or 'static' to express intent to use it local to this translation unit |
+| Compiler warning (level 2) C5261 | no integer type can represent all enumerator values in enumeration '*enum-name*' |
+| Compiler warning (level 1, off) C5262 | implicit fall-through occurs here; are you missing a break statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases |
+| Compiler warning (level 4, off) C5263 | calling '`std::move`' on a temporary object prevents copy elision |
+| Compiler warning (level 4, off) C5264 | '*variable-name*': 'const' variable is not used |
 | Compiler warning (level 1, error) C5300 | '#pragma omp atomic': left operand of '*operator*' must match left hand side of assignment-expression |
 | Compiler warning (level 1) C5301 | '#pragma omp for': '*symbol*' increases while loop condition uses '*comparison*'; non-terminating loop? |
 | Compiler warning (level 1) C5302 | '#pragma omp for': '*symbol*' decreases while loop condition uses '*comparison*'; non-terminating loop? |

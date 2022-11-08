@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: 08/08/2022
+ms.date: 11/07/2022
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
@@ -165,6 +165,9 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5256 (level 1) | '*enumeration*': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration <sup>17.2</sup> |
 | C5258 (level 4) | explicit capture of '*symbol*' is not required for this use <sup>17.2</sup> |
 | C5259 (level 4) | '*specialized-type*': explicit specialization requires 'template <>' <sup>17.3</sup> |
+| C5262 (level 1) | implicit fall-through occurs here; are you missing a break statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases <sup>17.4</sup> |
+| C5263 (level 4) | calling '`std::move`' on a temporary object prevents copy elision <sup>17.4</sup> |
+| C5264 (level 4) | '*variable-name*': 'const' variable is not used <sup>17.4</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
 <sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
@@ -182,6 +185,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 <sup>17.1</sup> This warning is available starting in Visual Studio 2022 version 17.1.\
 <sup>17.2</sup> This warning is available starting in Visual Studio 2022 version 17.2.\
 <sup>17.3</sup> This warning is available starting in Visual Studio 2022 version 17.3.\
+<sup>17.4</sup> This warning is available starting in Visual Studio 2022 version 17.4.\
 <sup>Perm</sup> This warning is off unless the [`/permissive-`](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions
