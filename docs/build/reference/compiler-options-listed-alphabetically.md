@@ -184,7 +184,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/utf-8`](utf-8-set-source-and-executable-character-sets-to-utf-8.md) | Set source and execution character sets to UTF-8. |
 | [`/V`](v-version-number.md) | Deprecated. Sets the version string. |
 | [`/validate-charset`](validate-charset-validate-for-compatible-characters.md) | Validate UTF-8 files for only compatible characters. |
-| [`/vd0`, `/vd1`, `/vd2`](vd-disable-construction-displacements.md) | Suppresses or enables hidden `vtordisp` class members. |
+| [`/vd{0|1|2}`](vd-disable-construction-displacements.md) | Suppresses or enables hidden `vtordisp` class members. |
 | [`/vmb`](vmb-vmg-representation-method.md) | Uses best base for pointers to members. |
 | [`/vmg`](vmb-vmg-representation-method.md) | Uses full generality for pointers to members. |
 | [`/vmm`](vmm-vms-vmv-general-purpose-representation.md) | Declares multiple inheritance. |
