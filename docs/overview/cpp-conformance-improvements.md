@@ -10,13 +10,78 @@ Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug f
 
 This document lists the changes in Visual Studio 2022. For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
+## <a name="improvements_174"></a> Conformance improvements in Visual Studio 2022 version 17.4
+
+Visual Studio 2022 version 17.4 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### Underlying types of unscoped `enum` with no fixed type
+
+In versions of Visual Studio before Visual Studio 2022 version 17.4, the C++ compiler didn't correctly determine the underlying type of an unscoped enumeration with no fixed base type. Under [`/Zc:enumTypes`](../build/reference/zc-enumtypes.md), we now correctly implement the standard behavior.
+
+The C++ Standard requires the underlying type of an **`enum`** to be large enough to hold all enumerators in that **`enum`**. Sufficiently large enumerators can set the underlying type of the **`enum`** to **`unsigned int`**, **`long long`**, or **`unsigned long long`**. Previously, such **`enum`** types always had an underlying type of **`int`** in the Microsoft compiler, regardless of enumerator values.
+
+When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix may affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
+
+#### Example
+
+```cpp
+enum Unsigned
+{
+    A = 0xFFFFFFFF // Value 'A' does not fit in 'int'.
+};
+
+// Previously, failed this static_assert. Now passes with /Zc:enumTypes.
+static_assert(std::is_same_v<std::underlying_type_t<Unsigned>, unsigned int>);
+
+template <typename T>
+void f(T x)
+{
+}
+
+int main()
+{
+    // Previously called f<int>, now calls f<unsigned int>.
+    f(+A);
+}
+
+// Previously this enum would have an underlying type of `int`, but Standard C++ requires this to have
+// a 64-bit underlying type. Using /Zc:enumTypes changes the size of this enum from 4 to 8, which could
+// impact binary compatibility with code compiled with an earlier compiler version or without the switch.
+enum Changed
+{
+    X = -1,
+    Y = 0xFFFFFFFF
+};
+```
+
+### Types of enumerators within an `enum` definition with no fixed underlying type
+
+In versions of Visual Studio before Visual Studio 2022 version 17.4, the C++ compiler didn't correctly model the types of enumerators. It could assume an incorrect type in enumerations without a fixed underlying type before the closing brace of the enumeration. Under [`/Zc:enumTypes`](../build/reference/zc-enumtypes.md), the compiler now correctly implements the standard behavior.
+
+The C++ Standard specifies that within an enumeration definition of no fixed underlying type, the types of enumerators are determined by their initializers. Or, for the enumerators with no initializer, by the type of the previous enumerator (accounting for overflow). Previously, such enumerators were always given the deduced type of the enumeration, with a placeholder for the underlying type (typically **`int`**).
+
+When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix may affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
+
+#### Example
+
+```cpp
+enum Enum {
+    A = 'A',
+    B = sizeof(A)
+};
+
+static_assert(B == 1); // previously failed, now succeeds under /Zc:enumTypes
+```
+
+In this example the enumerator `A` should have type **`char`** prior to the closing brace of the enumeration, so `B` should be initialized using `sizeof(char)`. Before the **`/Zc:enumTypes`** fix, `A` had enumeration type `Enum` with a deduced underlying type **`int`**, and `B` was initialized using `sizeof(Enum)`, or 4.
+
 ## <a name="improvements_173"></a> Conformance improvements in Visual Studio 2022 version 17.3
 
-Visual Studio 2022 version 17.3 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+Visual Studio 2022 version 17.3 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 ### C: Improved modifier compatibility checking between pointers
 
-The C compiler didn't properly compare modifiers between pointers, especially `void*`. This could result in an improper diagnosis of incompatibility between `const int**` and `void*` and compatibility between `int* volatile*` and `void*`.
+The C compiler didn't properly compare modifiers between pointers, especially `void*`. This defect could result in an improper diagnosis of incompatibility between `const int**` and `void*` and compatibility between `int* volatile*` and `void*`.
 
 #### Example
 
@@ -36,7 +101,7 @@ int main()
 
 ## <a name="improvements_172"></a> Conformance improvements in Visual Studio 2022 version 17.2
 
-Visual Studio 2022 version 17.2 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+Visual Studio 2022 version 17.2 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 ### Unterminated bidirectional character warnings
 
@@ -115,9 +180,9 @@ This rounded DOWN.
 
 ### `/Zc:__STDC__` makes `__STDC__` available for C
 
-The C standard requires that a conforming C implementation defines `__STDC__` as `1`. Due to the behavior of the UCRT, which doesn't expose POSIX functions when `__STDC__` is `1`, it isn't possible to define this macro for C by default without introducing breaking changes to the stable language versions. Visual Studio 2022 version 17.2 and later add a conformance option, `/Zc:__STDC__`, that defines this macro. There's no negative version of the option. Currently, we plan to use this option by default for future versions of C.
+The C standard requires that a conforming C implementation defines `__STDC__` as `1`. Due to the behavior of the UCRT, which doesn't expose POSIX functions when `__STDC__` is `1`, it isn't possible to define this macro for C by default without introducing breaking changes to the stable language versions. Visual Studio 2022 version 17.2 and later add a conformance option [`/Zc:__STDC__`](../build/reference/zc-stdc.md) that defines this macro. There's no negative version of the option. Currently, we plan to use this option by default for future versions of C.
 
-This change is a source breaking change. It applies when C11 or C17 mode is enabled, **`/std:c11`** or **`/std:c17`**, together with `/Zc:__STDC__`.
+This change is a source breaking change. It applies when C11 or C17 mode is enabled, **`/std:c11`** or **`/std:c17`**, together with **`/Zc:__STDC__`**.
 
 #### Example
 
@@ -185,17 +250,17 @@ void f()
 
 ## <a name="improvements_171"></a> Conformance improvements in Visual Studio 2022 version 17.1
 
-Visual Studio 2022 version 17.1 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+Visual Studio 2022 version 17.1 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 ### Detect ill-formed capture default in non-local lambda-expressions
 
-The C++ Standard only allows a lambda expression in block scope to have a capture-default. In Visual C++ 2022 version 17.1 and later, the compiler detects when a capture default isn't allowed in a non-local lambda expression. It emits a new level 4 warning, C5253.
+The C++ Standard only allows a lambda expression in block scope to have a capture-default. In Visual Studio 2022 version 17.1 and later, the compiler detects when a capture default isn't allowed in a non-local lambda expression. It emits a new level 4 warning, C5253.
 
 This change is a source breaking change. It applies in any mode that uses the new lambda processor: **`/Zc:lambda`**, **`/std:c++20`**, or **`/std:c++latest`**.
 
 #### Example
 
-In Visual C++ 2022 version 17.1 this code now emits an error:
+In Visual Studio 2022 version 17.1 this code now emits an error:
 
 ```cpp
 #pragma warning(error:5253)
@@ -236,11 +301,11 @@ int main(void)
 // C4113: 'int (__cdecl *)(char *)' differs in parameter lists from 'int (__cdecl *)(int)'
 ```
 
-### Error on a non-dependent static_assert
+### Error on a non-dependent `static_assert`
 
 In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
-This change is a source breaking change. It applies in any mode that implies **`/Zc:permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
+This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 
 #### Example
 
@@ -271,7 +336,7 @@ With this change, the compiler only emits an error if the function template `f` 
 
 ## <a name="improvements_170"></a> Conformance improvements in Visual Studio 2022 version 17.0
 
-Visual Studio 2022 version 17.0 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
+Visual Studio 2022 version 17.0 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 ### Warning on bitfield width for enumeration type
 

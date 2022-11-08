@@ -769,14 +769,18 @@ items:
                   items: 
                     - name: /Zc (Conformance)
                       href: ../build/reference/zc-conformance.md
+                    - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
+                      href: ../build/reference/zc-cplusplus.md
+                    - name: "/Zc:__STDC__ (Enable __STDC__ macro)"
+                      href: ../build/reference/zc-stdc.md
                     - name: "/Zc:alignedNew (C++17 over-aligned allocation)"
                       href: ../build/reference/zc-alignednew.md
                     - name: "/Zc:auto (Deduce variable type)"
                       href: ../build/reference/zc-auto-deduce-variable-type.md
                     - name: "/Zc:char8_t (Enable C++20 char8_t type)"
                       href: ../build/reference/zc-char8-t.md
-                    - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
-                      href: ../build/reference/zc-cplusplus.md
+                    - name: '/Zc:enumTypes (Enable enum type deduction)'
+                      href: ../build/reference/zc-enumtypes.md
                     - name: '/Zc:externC (Use Standard C++ extern "C" rules)'
                       href: ../build/reference/zc-externc.md
                     - name: "/Zc:externConstexpr (Enable extern constexpr variables)"
