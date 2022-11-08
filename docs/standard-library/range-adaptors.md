@@ -2,8 +2,8 @@
 description: "Learn more about range adaptors, which create views on ranges."
 title: "Range adaptors"
 ms.date: 11/3/2022
-f1_keywords: ["ranges/std::all", "ranges/std::all_t", "ranges/std::common", "ranges/std::counted", "ranges/std::drop", "ranges/std::drop_while", "ranges/std::elements", "ranges/std::filter", "ranges/std::iota", "ranges/std::join", "ranges/std::keys", "ranges/std::lazy_split", "ranges/std::reverse", "ranges/std::split", "ranges/std::subrange", "ranges/std::take", "ranges/std::take_while", "ranges/std::transform"]
-helpviewer_keywords: ["std::ranges [C++], all", "std::ranges [C++], all_t", "std::ranges [C++], common", "std::ranges [C++], counted", "std::ranges [C++], drop", "std::ranges [C++], drop_while", "std::ranges [C++], elements", "std::ranges [C++], filter", "std::ranges [C++], iota", "std::ranges [C++], join", "std::ranges [C++], keys", "std::ranges [C++], lazy_split", "std::ranges [C++], reverse", "std::ranges [C++], split", "std::ranges [C++], subrange", "std::ranges [C++], take", "std::ranges [C++], take_while", "std::ranges [C++], transform"]
+f1_keywords: ["ranges/std::all", "ranges/std::all_t", "ranges/std::common", "ranges/std::counted", "ranges/std::drop", "ranges/std::drop_while", "ranges/std::elements", "ranges/std::empty", "ranges/std::filter", "ranges/std::iota", "ranges/std::istream", "ranges/std::join", "ranges/std::keys", "ranges/std::lazy_split", "ranges/std::reverse", "ranges/std::single", "ranges/std::split", "ranges/std::subrange", "ranges/std::take", "ranges/std::take_while", "ranges/std::transform", "ranges/std::values"]
+helpviewer_keywords: ["std::ranges [C++], all", "std::ranges [C++], all_t", "std::ranges [C++], common", "std::ranges [C++], counted", "std::ranges [C++], drop", "std::ranges [C++], drop_while", "std::ranges [C++], elements", "std::ranges [C++], empty", "std::ranges [C++], filter", "std::ranges [C++], iota", "std::ranges [C++], istream", "std::ranges [C++], join", "std::ranges [C++], keys", "std::ranges [C++], lazy_split", "std::ranges [C++], reverse", "std::ranges [C++], single", "std::ranges [C++], split", "std::ranges [C++], subrange", "std::ranges [C++], take", "std::ranges [C++], take_while", "std::ranges [C++], transform", "std::ranges [C++], values"]
 ---
 # Range adaptors
 
@@ -95,8 +95,11 @@ The following range adaptors are available in the `std::views` namespace. The `s
 | [`drop`](#drop)<sup>C++20</sup> | Create a view from another view, skipping the specified number of elements from the front. |
 | [`drop_while`](#drop_while)<sup>C++20</sup> | Create a view that contains the elements of a range that remain after the leading elements that match the specified condition are dropped. |
 | [`elements`](#elements)<sup>C++20</sup> | Create a view of the selected index into each tuple-like value in a range. |
+| [`empty`](#empty)<sup>C++20</sup> | Create a view that has no elements. |
 | [`filter`](#filter)<sup>C++20</sup> | Create a view that contains the elements of a range that match the specified condition. |
 | [`iota`](#iota)<sup>C++20</sup> | Create a view that contains a sequence of increasing values. |
+| [`istream`](#istream)<sup>C++20</sup> | Create a view over the elements of a stream. |
+| [`join`](#join)<sup>C++20</sup> | Create a view that combines all the elements of multiple ranges into a single view. |
 | [`keys`](#keys)<sup>C++20</sup> | Create a view of the first index into each tuple-like value in a collection. |
 | [`lazy_split`](#lazy_split)<sup>C++20</sup> | Split a view into subranges based on a delimiter. |
 | [`reverse`](#reverse)<sup>C++20</sup> | Create a view of the elements of a range in reverse order. |

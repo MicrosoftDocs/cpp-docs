@@ -11,6 +11,8 @@ helpviewer_keywords:
     "MSVC downloads",
     "[C++] downloads",
   ]
+author: MahmoudGSaleh
+ms.author: msaleh
 ---
 
 # Microsoft Visual C++ Redistributable latest supported downloads
