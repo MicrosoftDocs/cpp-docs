@@ -1,7 +1,7 @@
 ---
 description: "Reference for header-units.json file"
 title: "C++ header unit.json reference"
-ms.date: 02/11/2022
+ms.date: 11/09/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["header-units.json"]
@@ -19,7 +19,7 @@ This file must be in the same directory as the included header file. This file i
 
 ## Rationale
 
-Some header files can't be safely translated to header units. Header files that depend on macros that aren't defined on the command line, or that are defined outside of the  aren't defined in the header files included by the header, can't be translated to header units.
+Some header files can't be safely translated to header units. Header files that depend on macros that aren't defined on the command line, or that aren't defined in the header files included by the header, can't be translated to header units.
 
 If a header defines macros that affect whether other headers are included, it can't be safely translated. For example, given `a.h`, `b.h` and `macros.h`, which are all in the same directory:
 
