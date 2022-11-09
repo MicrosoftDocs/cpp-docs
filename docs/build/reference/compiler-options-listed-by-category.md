@@ -195,11 +195,11 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zc:ternary[-]`](zc-ternary.md) | Enforce conditional operator rules on operand types (off by default). |
 | [`/Zc:threadSafeInit[-]`](zc-threadsafeinit-thread-safe-local-static-initialization.md) | Enable thread-safe local static initialization (on by default). |
 | [`/Zc:throwingNew[-]`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure (off by default). |
+| [`/Zc:tlsGuards[-]`](zc-tlsguards.md) | Generate runtime checks for TLS variable initialization (on by default). |
 | [`/Zc:trigraphs`](zc-trigraphs-trigraphs-substitution.md) | Enable trigraphs (obsolete, off by default). |
-| `/Zc:tlsGuards[-]` | Generate runtime checks for TLS variable initialization (on by default). |
 | [`/Zc:twoPhase[-]`](zc-twophase.md) | Use non-conforming template parsing behavior (conforming by default). |
 | [`/Zc:wchar_t[-]`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** is a native type, not a typedef (on by default). |
-| `/Zc:zeroSizeArrayNew[-]` | Call member `new`/`delete` for 0-size arrays of objects (on by default). |
+| [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for 0-size arrays of objects (on by default). |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables C89 language extensions. |
 | [`/Zf`](zf.md) | Improves PDB generation time in parallel builds. |
 | [`/ZH:[MD5|SHA1|SHA_256]`](zh.md) | Specifies MD5, SHA-1, or SHA-256 for checksums in debug info. |
@@ -207,7 +207,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zi`](z7-zi-zi-debug-information-format.md) | Generates complete debugging information. |
 | [`/Zl`](zl-omit-default-library-name.md) | Removes the default library name from the *`.obj`* file. |
 | [`/Zo[-]`](zo-enhance-optimized-debugging.md) | Generate richer debugging information for optimized code. |
-| [`/Zp[n]`](zp-struct-member-alignment.md) *n* | Packs structure members. |
+| [`/Zp[n]`](zp-struct-member-alignment.md) | Packs structure members. |
 | [`/Zs`](zs-syntax-check-only.md) | Checks syntax only. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
 

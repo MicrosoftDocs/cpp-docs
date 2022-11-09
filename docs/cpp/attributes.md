@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Attributes in C++"
 title: "Attributes in C++"
-ms.date: 04/27/2022
+ms.date: 11/08/2022
 ---
 # Attributes in C++
 
@@ -82,3 +82,5 @@ Attributes represent a standardized alternative to vendor-specific extensions su
   - 26481 (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
   The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress(bounds)]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
+
+- `[[msvc:no_tls_guard]]` This Microsoft-specific attribute disables checks for initialization on first access to thread-local variables in DLLs. The checks are enabled by default in code built using Visual Studio 2019 version 16.5 and later versions. This attribute applies only to the specific variable that follows it. To disable checks globally, use the [`/Zc:tlsGuards-`](../build/reference/zc-tlsguards.md) compiler option.
