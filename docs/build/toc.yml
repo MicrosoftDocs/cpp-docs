@@ -811,16 +811,20 @@ items:
                       href: ../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
                     - name: "/Zc:ternary (Enforce conditional operator rules)"
                       href: ../build/reference/zc-ternary.md
-                    - name: "/Zc:threadSafeInit  (Thread-safe local static initialization)"
+                    - name: "/Zc:threadSafeInit (Thread-safe local static initialization)"
                       href: ../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md
                     - name: "/Zc:throwingNew (Assume operator new throws)"
                       href: ../build/reference/zc-throwingnew-assume-operator-new-throws.md
+                    - name: "/Zc:tlsGuards (Check TLS initialization)"
+                      href: ../build/reference/zc-tlsguards.md
                     - name: "/Zc:trigraphs (Trigraphs substitution)"
                       href: ../build/reference/zc-trigraphs-trigraphs-substitution.md
                     - name: "/Zc:twoPhase- (disable two-phase name lookup)"
                       href: ../build/reference/zc-twophase.md
                     - name: "/Zc:wchar_t (wchar_t is native type)"
                       href: ../build/reference/zc-wchar-t-wchar-t-is-native-type.md
+                    - name: "/Zc:zeroSizeArrayNew (Call member new/delete on arrays)"
+                      href: ../build/reference/zc-zerosizearraynew.md
                 - name: /Zf (Faster PDB generation)
                   href: ../build/reference/zf.md
                 - name: /Zg (Generate function prototypes)
