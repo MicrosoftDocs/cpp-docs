@@ -182,16 +182,19 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions (implied by **`/permissive-`**). |
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
+| [`/Zc:gotoScope`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization (implied by **`/permissive-`**). |
 | [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**) |
 | [`/Zc:implicitNoexcept[-]`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
 | [`/Zc:inline[-]`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced functions or data if they're COMDAT or have internal linkage only (off by default). |
 | [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. |
 | [`/Zc:noexceptTypes[-]`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules (on by default in C++17 or later). |
+| [`/Zc:nrvo[-]`](zc-nrvo.md) | Enable optional copy and move elisions (on by default under **`/O2`**, **`/permissive-`**, or **`/std:c++20`** or later). |
 | [`/Zc:preprocessor[-]`](zc-preprocessor.md) | Use the new conforming preprocessor (off by default, except in C11/C17). |
 | [`/Zc:referenceBinding[-]`](zc-referencebinding-enforce-reference-binding-rules.md) | A UDT temporary won't bind to a non-const lvalue reference (off by default). |
 | [`/Zc:rvalueCast[-]`](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules (off by default). |
 | [`/Zc:sizedDealloc[-]`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | Enable C++14 global sized deallocation functions (on by default). |
 | [`/Zc:strictStrings[-]`](zc-strictstrings-disable-string-literal-type-conversion.md) | Disable string-literal to `char*` or `wchar_t*` conversion (off by default). |
+| [`/Zc:templateScope[-]`](zc-templatescope.md) | Enforce Standard C++ template parameter shadowing rules (off by default). |
 | [`/Zc:ternary[-]`](zc-ternary.md) | Enforce conditional operator rules on operand types (off by default). |
 | [`/Zc:threadSafeInit[-]`](zc-threadsafeinit-thread-safe-local-static-initialization.md) | Enable thread-safe local static initialization (on by default). |
 | [`/Zc:throwingNew[-]`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure (off by default). |
