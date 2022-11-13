@@ -787,6 +787,8 @@ items:
                       href: ../build/reference/zc-externconstexpr.md
                     - name: "/Zc:forScope (Force conformance in for loop scope)"
                       href: ../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md
+                    - name: "/Zc:gotoScope (Enforce conformance in goto scope)"
+                      href: ../build/reference/zc-gotoscope.md
                     - name: "/Zc:hiddenFriend (Enforce Standard C++ hidden friend rules)"
                       href: ../build/reference/zc-hiddenfriend.md
                     - name: "/Zc:implicitNoexcept (Implicit exception specifiers)"
@@ -797,6 +799,8 @@ items:
                       href: ../build/reference/zc-lambda.md
                     - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
                       href: ../build/reference/zc-noexcepttypes.md
+                    - name: "/Zc:nrvo (Control optional NRVO)"
+                      href: ../build/reference/zc-nrvo.md
                     - name: "/Zc:preprocessor (Enable preprocessor conformance mode)"
                       href: ../build/reference/zc-preprocessor.md
                     - name: "/Zc:referenceBinding (Enforce reference binding rules)"
@@ -809,6 +813,8 @@ items:
                       href: ../build/reference/zc-static-assert.md
                     - name: "/Zc:strictStrings (Disable string literal type conversion)"
                       href: ../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
+                    - name: "/Zc:templateScope (Check template parameter shadowing)"
+                      href: ../build/reference/zc-templatescope.md
                     - name: "/Zc:ternary (Enforce conditional operator rules)"
                       href: ../build/reference/zc-ternary.md
                     - name: "/Zc:threadSafeInit (Thread-safe local static initialization)"
