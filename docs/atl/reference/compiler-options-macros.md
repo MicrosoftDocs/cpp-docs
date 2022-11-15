@@ -23,6 +23,7 @@ These macros control specific compiler features.
 |[ATL_NO_VTABLE](#atl_no_vtable)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|
 |[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function shouldn't be inlined.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|
+|[_ATL_MODULES](#_ATL_MODULES)|Removes the use of __if_exists/__if_not_exists in ATL headers.|
 
 ## <a name="_atl_all_warnings"></a> _ATL_ALL_WARNINGS
 
@@ -202,6 +203,14 @@ _ATL_SINGLE_THREADED
 ### Remarks
 
 Specifies that the object always runs in the primary COM thread. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
+
+```
+_ATL_MODULES
+```
+
+### Remarks
+
+Removes the use of __if_exists/__if_not_exists in ATL headers. This  prevents crashes on ATL when ussing permissive-
 
 ## See also
 
