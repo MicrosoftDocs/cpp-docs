@@ -31,7 +31,6 @@ void f(T&& t) {
 
 /* Output:
 t.cpp(3): error C7527: 'T': a template parameter name cannot be reused within its scope
-Compiling with '/Zc:templateScope' will inform the compiler to generate this diagnostic.
 */
 ```
 
@@ -46,5 +45,5 @@ Compiling with '/Zc:templateScope' will inform the compiler to generate this dia
 ## See also
 
 [`/Zc` (Conformance)](zc-conformance.md)\
-[`/permissive-](./permissive-standards-conformance.md)\
+[`/permissive-`](./permissive-standards-conformance.md)\
 [`/std` (Specify language standard version)](std-specify-language-standard-version.md)

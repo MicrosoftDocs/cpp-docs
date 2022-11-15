@@ -89,5 +89,5 @@ t.cpp(17): error C2362: initialization of 's' is skipped by 'goto OnError'
 ## See also
 
 [`/Zc` (Conformance)](zc-conformance.md)\
-[`/permissive-](./permissive-standards-conformance.md)\
+[`/permissive-`](./permissive-standards-conformance.md)\
 [`/std` (Specify language standard version)](std-specify-language-standard-version.md)
