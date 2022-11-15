@@ -45,5 +45,5 @@ For more information and examples of mandatory and optional copy elision under *
 
 [`/Zc` (Conformance)](zc-conformance.md)\
 [`/O2`](./o1-o2-minimize-size-maximize-speed.md)\
-[`/permissive-](./permissive-standards-conformance.md)\
+[`/permissive-`](./permissive-standards-conformance.md)\
 [`/std` (Specify language standard version)](std-specify-language-standard-version.md)

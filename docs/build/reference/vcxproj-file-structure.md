@@ -1,7 +1,7 @@
 ---
 title: ".vcxproj and .props file structure"
 description: "How the C++ native MSBuild project system .vcxproj and .props files store project information."
-ms.date: 09/30/2020
+ms.date: 11/14/2022
 helpviewer_keywords: [".vcxproj file structure"]
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 ---
@@ -9,15 +9,15 @@ ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 
 [MSBuild](../msbuild-visual-cpp.md) is the default project system in Visual Studio; when you choose **File** > **New Project** in Visual C++ you're creating an MSBuild project whose settings are stored in an XML project file that has the extension *`.vcxproj`*. The project file may also import *`.props`* files and *`.targets`* files where settings can be stored.
 
-We recommend you only create and modify *`.vcxproj`* projects in the IDE, and avoid manual editing as much as possible. In most cases, you never need to manually edit the project file. Whenever possible you should use the Visual Studio property pages to modify project settings. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+If you intend to maintain your project properties in the IDE, we recommend you only create and modify your *`.vcxproj`* projects in the IDE, and avoid manual edits to the files. In most cases, you never need to manually edit the project file. Manual edits may break the project connections required to modify project settings in the Visual Studio property pages, and can cause build errors that are difficult to debug and repair. For more information about using the property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-If you need customizations that aren't possible in the IDE, we recommend you add custom props or targets. Handy places to insert customizations are the *`Directory.Build.props`* and *`Directory.Build.targets`* files, which are automatically imported in all MSBuild-based projects.
+At scale, managing many individual projects in the IDE becomes tedious and error-prone. It's hard to maintain consistency or enforce standardization across tens or hundreds of projects. In these cases, it's worthwhile to edit your project files to use customized *`.props`* or *`.targets`* files for common properties across many projects. You may also use these files when you require customizations that aren't possible in the IDE. Handy places to insert customizations are the *`Directory.Build.props`* and *`Directory.Build.targets`* files, which are automatically imported in all MSBuild-based projects.
 
-In some cases, you may still need to modify a *`.vcxproj`* project file or property sheet manually. We don't recommend you edit it manually unless you have a good understanding of MSBuild, and follow the guidelines in this article. In order for the IDE to load and update *`.vcxproj`* files automatically, these files have several restrictions that don't apply to other MSBuild project files. They weren't designed for manual editing. Mistakes can cause the IDE to crash or behave in unexpected ways.
+In some cases, customized *`.props`* or *`.targets`* files alone may not be sufficient for your project management needs. You may still need to modify *`.vcxproj`* project files or property sheets manually. Manual editing requires a good understanding of MSBuild, and must follow the guidelines in this article. In order for the IDE to load and update *`.vcxproj`* files automatically, these files have several restrictions that don't apply to other MSBuild project files. Mistakes can cause the IDE to crash or behave in unexpected ways.
 
 For manual editing scenarios, this article contains basic information about the structure of *`.vcxproj`* and related files.
 
-**Important:**
+## Important considerations
 
 If you choose to manually edit a *`.vcxproj`* file, be aware of these facts:
 
@@ -42,7 +42,7 @@ If you choose to manually edit a *`.vcxproj`* file, be aware of these facts:
    </ItemGroup>
    ```
 
-   "Not supported" means that macros aren't guaranteed to work for all operations in the IDE. Macros that don't change their value in different configurations should work, but might not be preserved if an item is moved to a different filter or project. Macros that change their value for different configurations will cause problems. That's because the IDE doesn't expect project item paths to be different for different project configurations.
+   "Not supported" means that macros aren't guaranteed to work for all operations in the IDE. Macros that don't change their value in different configurations should work, but might not be preserved if an item is moved to a different filter or project. Macros that change their value for different configurations will cause problems. The IDE doesn't expect project item paths to be different for different project configurations.
 
 - To add, remove, or modify project properties correctly when you edit them in the **Project Properties** dialog, the file must contain separate groups for each project configuration. The conditions must be in this form:
 
@@ -272,7 +272,7 @@ Defines (directly or through imports) C++ targets such as build, clean, and so o
 
 This group contains imports for the Build Customization target files.
 
-## Impact of incorrect ordering
+## Consequences of incorrect ordering
 
 The Visual Studio IDE depends on the project file having the ordering described previously. For example, when you define a property value in the property pages, the IDE will generally place the property definition in the property group with the empty label. This ordering ensures that default values brought in the system property sheets are overridden by user-defined values. Similarly, the target files are imported at the end since they consume the properties defined before, and since they generally don't define properties themselves. Likewise, user property sheets are imported after the system property sheets (included by *`Microsoft.Cpp.props`*). This order ensures that the user can override any defaults brought in by the system property sheets.
 
