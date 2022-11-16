@@ -218,7 +218,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2513R3 char8_t Compatibility and Portability Fix`](https://wg21.link/p2513r3) | VS 2022 17.4 <sup>[DR](#note_DR)</sup> |
 | &emsp;[`P2579R0 Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type”`](https://wg21.link/p2579r0) | no |
 | &emsp;[`P2582R1 Wording for class template argument deduction from inherited constructors`](https://wg21.link/p2582r1) | no |
-| &emsp;[`P2668R2 The Equality Operator You Are Looking For`](https://wg21.link/p2668r2) | no |
+| &emsp;[`P2468R2 The Equality Operator You Are Looking For`](https://wg21.link/p2468r2) | no |
 
 ## C++ Standard library features
 
