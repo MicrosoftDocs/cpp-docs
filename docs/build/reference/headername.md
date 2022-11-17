@@ -1,7 +1,7 @@
 ---
 title: "/headerName (Build a header unit from the specified header)"
 description: "Use the /headerName compiler option to establish a mapping between a header file and the header unit to build."
-ms.date: 04/21/2022
+ms.date: 11/16/2022
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/headerName"]
@@ -59,7 +59,7 @@ cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algo
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Set the **Configuration** drop-down to **All Configurations**.
+1. Set the **Configuration** drop-down to **All Configurations**. Set the **Platform** drop-down to **All Platforms**.
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
