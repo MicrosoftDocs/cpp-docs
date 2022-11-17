@@ -485,16 +485,16 @@ Select the default calling convention for your application (can be overridden by
 
 ### Compile As
 
-Select compile language option for *`.c`* and *`.cpp`* files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md).
+Select compile language option for source files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md), [/interface](./interface.md), ([`/internalPartition`](./internal-partition.md), or [`/exportHeader`](./module-exportheader.md) options.
 
 #### Choices
 
 - **Default** - Default.
-- **Compile as C Code ([/TC](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile as C Code.
-- **Compile as C++ Code ([/TP](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile as C++ Code.
-- **Compile as C++ Module Code ([/interface](./interface.md))** - Compile as C++ module code.
-- **Compile as C++ Module Internal Partition ([/internalPartition](./internal-partition.md))** - Compile as C++ module internal partition.
-- **Compile as C++ Header Unit ([/exportHeader](./module-exportheader.md))** - Compile as C++ header unit.
+- **Compile as C Code ([`/TC`](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile specified source files as C code. By default, files with a *`.c`* extension are compiled as C.
+- **Compile as C++ Code ([`/TP`](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile specified source files as C++ code. By default, all source files that don't have a *`.c`*, *`.ixx`*, *`.cppm`*, *`.h`*, or no extension are compiled as C++.
+- **Compile as C++ Module Code ([`/interface`](./interface.md))** - Compile specified source files as C++ module code. By default, files with a *`.ixx`* or *`.cppm`* extension are compiled as C++ module code.
+- **Compile as C++ Module Internal Partition ([`/internalPartition`](./internal-partition.md))** - Compile specified source files as C++ module internal partition.
+- **Compile as C++ Header Unit ([`/exportHeader`](./module-exportheader.md))** - Compile specified source files as C++ header unit. By default, files with a *`.h`* extension or no extension are compiled as header units.
 
 ### Disable Specific Warnings
 
