@@ -52,7 +52,7 @@ This option can't be used with the [`/interface`](interface.md) compiler option.
 
 ### To set this compiler option in the Visual Studio development environment
 
-You normally shouldn't set this in the Visual Studio development environment unless you use a different extension for your partition files. By default, the build system applies this option to files that have a *`.ixx`** extension.
+You normally shouldn't set this option in the Visual Studio development environment unless you use a different extension for your partition files. By default, the build system applies this option to files that have a *`.ixx`** extension.
 
 1. To apply the **`/internalPartition`** option to a file explicitly in the IDE, select the file in **Solution Explorer**. Right-click to open the context menu and select **Properties** to open the Property Pages dialog.
 

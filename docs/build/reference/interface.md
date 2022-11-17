@@ -34,7 +34,7 @@ This switch must be used in with the [`/TP` (Specify source file type)](tc-tp-tc
 
 ### To set this compiler option in the Visual Studio development environment
 
-You normally shouldn't set this in the Visual Studio development environment unless you use a different extension for your module interface files. By default, the build system applies this option to files that have a *`.ixx`** extension.
+You normally shouldn't set this option in the Visual Studio development environment unless you use a different extension for your module interface files. By default, the build system applies this option to files that have a *`.ixx`** extension.
 
 1. To apply the **`/interface`** option to a file explicitly in the IDE, select the file in **Solution Explorer**. Right-click to open the context menu and select **Properties** to open the Property Pages dialog.
 
