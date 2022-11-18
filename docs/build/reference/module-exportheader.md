@@ -53,11 +53,19 @@ cl . . . /std:c++latest /exportHeader /headerName:quote util/util.h
 
 ### To set this compiler option in the Visual Studio development environment
 
-You normally shouldn't set this in the Visual Studio development environment. It is set by the build system.
+You normally shouldn't set this option in the Visual Studio development environment unless you use a different extension for your header files. By default, the build system applies this option to compiled files that have a *`.h`* extension, or no extension.
+
+1. To apply the **`/exportHeader`** option to a file explicitly in the IDE, select the file in **Solution Explorer**. Right-click to open the context menu and select **Properties** to open the Property Pages dialog.
+
+1. Set the **Configuration** dropdown to **All Configurations**. Set the **Platform** dropdown to **All Platforms**.
+
+1. Open the **Configuration Properties** > **C/C++** > **Advanced** property page.
+
+1. Use the dropdown control to modify the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**. Choose **OK** or **Apply** to save your changes.
 
 ## See also
 
-[`/headerName (Build a header unit from the specified header)`](headername.md)\
+[`/headerName` (Build a header unit from the specified header)](headername.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

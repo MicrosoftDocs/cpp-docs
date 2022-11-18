@@ -1,7 +1,7 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
 description: "Reference guide to the Visual Studio Microsoft C/C++ project Property Pages properties."
-ms.date: 06/30/2022
+ms.date: 11/17/2022
 ms.topic: "article"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalModuleDirectories", "VC.Project.VCCLCompilerTool.ScanSourceForModuleDependencies"]
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
@@ -36,7 +36,7 @@ Specifies one or more header units to use to resolve names passed to an `import`
 
 When set to **Yes**, the compiler scans all C++ sources, not just module interface and header unit sources, for module and header units dependencies. The build system builds the full dependencies graph, which ensures that all imported modules and header units are built before compiling the files that depend on them. When combined with **Translate Includes to Imports**, any header file that's specified in a [`header-units.json`](header-unit-json-reference.md) file in the same directory as the header file is compiled into a header unit.
 
-Files that have the extension *`.ixx`*, and files that have their **File properties** > **C/C++** > **Compile As** property set to **Compile as C++ Header Unit (/export)**, are always scanned.
+Files that have the extension *`.ixx`*, and files that have their **File properties** > **C/C++** > **Compile As** property set to **Compile as C++ Header Unit (/exportHeader)**, are always scanned.
 
 ### Translate Includes to Imports
 
@@ -485,13 +485,16 @@ Select the default calling convention for your application (can be overridden by
 
 ### Compile As
 
-Select compile language option for *`.c`* and *`.cpp`* files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md).
+Select compile language option for source files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md), [/interface](./interface.md), [`/internalPartition`](./internal-partition.md), or [`/exportHeader`](./module-exportheader.md) options.
 
 #### Choices
 
 - **Default** - Default.
-- **Compile as C Code** - Compile as C Code.
-- **Compile as C++ Code** - Compile as C++ Code.
+- **Compile as C Code ([`/TC`](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile specified source files as C code. By default, files with a *`.c`* extension are compiled as C.
+- **Compile as C++ Code ([`/TP`](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile specified source files as C++ code. By default, all source files that don't have a *`.c`*, *`.ixx`*, *`.cppm`*, *`.h`*, or no extension are compiled as C++.
+- **Compile as C++ Module Code ([`/interface`](./interface.md))** - Compile specified source files as C++ module code. By default, files with a *`.ixx`* or *`.cppm`* extension are compiled as C++ module code.
+- **Compile as C++ Module Internal Partition ([`/internalPartition`](./internal-partition.md))** - Compile specified source files as C++ module internal partition.
+- **Compile as C++ Header Unit ([`/exportHeader`](./module-exportheader.md))** - Compile specified source files as C++ header unit. By default, files with a *`.h`* extension or no extension are compiled as header units.
 
 ### Disable Specific Warnings
 
