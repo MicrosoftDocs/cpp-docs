@@ -485,7 +485,7 @@ Select the default calling convention for your application (can be overridden by
 
 ### Compile As
 
-Select compile language option for source files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md), [/interface](./interface.md), ([`/internalPartition`](./internal-partition.md), or [`/exportHeader`](./module-exportheader.md) options.
+Select compile language option for source files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md), [/interface](./interface.md), [`/internalPartition`](./internal-partition.md), or [`/exportHeader`](./module-exportheader.md) options.
 
 #### Choices
 
