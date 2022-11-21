@@ -11,7 +11,7 @@ monikerRange: '>=msvc-160'
 
 # Walkthrough: Build and import header units in Microsoft Visual C++
 
-This article is about building and importing header units with Visual Studio 2022. To learn how to import Standard Template Library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
+This article is about building and importing header units with Visual Studio 2022. To learn how to import C++ standard library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md). For an even faster and more robust way to import the standard library, see [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md).
 
 Header units are the recommended alternative to [precompiled header files](creating-precompiled-header-files.md) (PCH). Header units are easier to set up and use, are significantly smaller on disk, provide similar performance benefits, and are more flexible than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio).
 
@@ -49,7 +49,7 @@ There are several ways to compile a file into a header unit:
 
 - **Automatically scan for and build header units**. This approach is convenient, but is best suited to smaller projects because it doesn't guarantee optimal build throughput. For details about this approach, see [Approach 2: Automatically scan for header units](#approach2).
 
-- As mentioned in the introduction, you can build and import STL header files as header units and automatically treat `#include` for STL library headers as `import` without rewriting your code. To see how, visit [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
+- As mentioned in the introduction, you can build and import STL header files as header units, and automatically treat `#include` for STL library headers as `import` without rewriting your code. To see how, visit [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md).
 
 ## <a name="approach1"></a>Approach 1: Translate a specific file into a header unit
 
@@ -157,4 +157,5 @@ Enabling the new preprocessor affects the processing of variadic macros. For mor
 [`/headerUnit`](./reference/headerunit.md)\
 [`header-units.json`](./reference/header-unit-json-reference.md)\
 [Overview of modules in C++](../cpp/modules-cpp.md)\
+[Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
 [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1)

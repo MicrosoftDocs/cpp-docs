@@ -1,12 +1,12 @@
 ---
-title: "C runtime (CRT) and C++ Standard Library (STL) lib files"
-description: "List of Microsoft C runtime and C++ Standard Library (STL) lib files that you can link against and their associated compiler options and preprocessor directives."
+title: "C runtime (CRT) and C++ standard library (STL) lib files"
+description: "List of Microsoft C runtime and C++ standard library (STL) lib files that you can link against and their associated compiler options and preprocessor directives."
 ms.date: "3/5/2021"
 ms.topic: "reference"
 ms.custom: contperf-fy21q3
 helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries", "STL libraries", "Microsoft standard template libraries"]
 ---
-# C runtime (CRT) and C++ Standard Library (STL) `.lib` files
+# C runtime (CRT) and C++ standard library (STL) `.lib` files
 
 This article lists the Microsoft C runtime library `.lib` files that you can link against when you develop your application, and their associated compiler options and preprocessor directives.
 
@@ -15,13 +15,13 @@ See [Redistributing Visual C++ files](../windows/redistributing-visual-cpp-files
 See [C runtime library reference](./c-run-time-library-reference.md) if you're looking for API reference for the C runtime library.
 
 >[!NOTE]
-> Microsoft's implementation of the C++ Standard Library is often referred to as the *STL* or *Standard Template Library*. Although *C++ Standard Library* is the official name of the library as defined in ISO 14882, due to the popular use of "STL" and "Standard Template Library" in search engines, we occasionally use those names to make it easier to find our documentation.
+> Microsoft's implementation of the C++ standard library is often referred to as the *STL* or *Standard Template Library*. Although *C++ standard library* is the official name of the library as defined in ISO 14882, due to the popular use of "STL" and "Standard Template Library" in search engines, we occasionally use those names to make it easier to find our documentation.
 
-From a historical perspective, "STL" originally referred to the Standard Template Library written by Alexander Stepanov. Parts of that library were standardized in the C++ Standard Library. The Standard Library also incorporated the ISO C runtime library, parts of the Boost library, and other functionality. Sometimes "STL" is used to refer to the containers and algorithms parts of the C++ Standard Library adapted from Stepanov's STL. In this documentation, Standard Template Library (STL) refers to the C++ Standard Library as a whole.
+From a historical perspective, "STL" originally referred to the Standard Template Library written by Alexander Stepanov. Parts of that library were standardized in the C++ standard library. The standard library also incorporates the ISO C runtime library, parts of the Boost library, and other functionality. Sometimes "STL" is used to refer to the containers and algorithms parts of the C++ standard library adapted from Stepanov's STL. In this documentation, Standard Template Library (STL) refers to the C++ standard library as a whole.
 
 ## C runtime `.lib` files
 
-The C runtime Library (CRT) is the part of the C++ Standard Library that incorporates the ISO C standard library. The Visual C++ libraries that implement the CRT support native code development, and both mixed native and managed code. All versions of the CRT support multi-threaded development. Most of the libraries support both static linking, to link the library directly into your code, or dynamic linking to let your code use common DLL files.
+The ISO C standard library is part of the C++ standard library. The Visual C++ libraries that implement the CRT support native code development, and both mixed native and managed code. All versions of the CRT support multi-threaded development. Most of the libraries support both static linking, to link the library directly into your code, or dynamic linking to let your code use common DLL files.
 
 In Visual Studio 2015, the CRT was refactored into new binaries. The Universal CRT (UCRT) contains the functions and globals exported by the standard C99 CRT library. The UCRT is now a Windows component, and ships as part of Windows 10 and later versions. The static library, DLL import library, and header files for the UCRT are now found in the Windows SDK. When you install Visual C++, Visual Studio setup installs the subset of the Windows SDK required to use the UCRT. You can use the UCRT on any version of Windows supported by Visual Studio 2015 and later versions. You can redistribute it using vcredist for supported versions of Windows other than Windows 10 or later. For more information, see [Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md).
 
@@ -47,7 +47,7 @@ This table lists the libraries that implement the vcruntime library.
 
 > [!NOTE]
 > When the UCRT was refactored, the Concurrency Runtime functions were moved into
-*`concrt140.dll`*, which was added to the C++ redistributable package. This DLL is required for C++ parallel containers and algorithms such as `concurrency::parallel_for`. In addition, the C++ Standard Library requires this DLL on Windows XP to support synchronization primitives, because Windows XP doesn't have condition variables.
+*`concrt140.dll`*, which was added to the C++ redistributable package. This DLL is required for C++ parallel containers and algorithms such as `concurrency::parallel_for`. In addition, the C++ standard library requires this DLL on Windows XP to support synchronization primitives, because Windows XP doesn't have condition variables.
 
 The code that initializes the CRT is in one of several libraries, based on whether the CRT library is statically or dynamically linked, or native, managed, or mixed code. This code handles CRT startup, internal per-thread data initialization, and termination. It's specific to the version of the compiler used. This library is always statically linked, even when using a dynamically linked UCRT.
 
@@ -78,16 +78,16 @@ To build a debug version of your application, the [`_DEBUG`](./debug.md) flag mu
 
 This version of the CRT isn't fully conformant with the C99 standard. In versions before Visual Studio 2019 version 16.8, the `<tgmath.h>` header isn't supported. In all versions, the `CX_LIMITED_RANGE` and `FP_CONTRACT` pragma macros aren't supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use **`/Zc`** compiler conformance options and specify linker options to control some aspects of library conformance.
 
-## C++ Standard Library (STL) `.lib` files
+## C++ standard library (STL) `.lib` files
 
-| C++ Standard Library | Characteristics | Option | Preprocessor directives |
+| C++ standard library | Characteristics | Option | Preprocessor directives |
 |--|--|--|--|
 | *`libcpmt.lib`* | Multithreaded, static link | **`/MT`** | `_MT` |
 | *`msvcprt.lib`* | Multithreaded, dynamic link (import library for *`msvcp<version>.dll`*) | **`/MD`** | `_MT`, `_DLL` |
 | *`libcpmtd.lib`* | Multithreaded, static link | **`/MTd`** | `_DEBUG`, `_MT` |
 | *`msvcprtd.lib`* | Multithreaded, dynamic link (import library for *`msvcp<version>d.dll`*) | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 
-When you build a release version of your project, one of the basic C runtime libraries (*`libcmt.lib`*, *`msvcmrt.lib`*, *`msvcrt.lib`*) is linked by default, depending on the compiler option you choose (multithreaded, DLL, **`/clr`**). If you include one of the [C++ Standard Library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ Standard Library will be linked automatically by Visual C++ at compile time. For example:
+When you build a release version of your project, one of the basic C runtime libraries (*`libcmt.lib`*, *`msvcmrt.lib`*, *`msvcrt.lib`*) is linked by default, depending on the compiler option you choose (multithreaded, DLL, **`/clr`**). If you include one of the [C++ standard library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ standard library will be linked automatically by Visual C++ at compile time. For example:
 
 ```cpp
 #include <ios>
