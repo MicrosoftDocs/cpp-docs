@@ -10,7 +10,7 @@ monikerRange: '>=msvc-160'
 ---
 # Walkthrough: Import STL libraries as header units
 
-This walkthrough shows how to import C++ Standard Template Library (STL) libraries as header units in Visual Studio.
+This walkthrough shows how to import C++ Standard Template Library (STL) libraries as header units in Visual Studio. For an even faster and more robust way to import the standard library, see [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md).
 
 Importing an STL header as a header unit is simpler than using [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and use, are substantially smaller on disk, provide similar performance benefits, and are more flexible than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio).
 
@@ -219,5 +219,6 @@ The main consideration for whether to use this approach is the balance between c
 
 ## See also
 
-[Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md) \
+[Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
+[Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md)\
 [`/translateInclude`](./reference/translateinclude.md)

@@ -111,7 +111,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hotpatchable image. |
 | [`/I<dir>`](i-additional-include-directories.md) | Searches a directory for include files. |
-| **`/ifcOutput`** | Specify output file or directory for *`.ifc`* files. |
+| [`/ifcOutput`](ifc-output.md) | Specify output file name or directory for built *`.ifc`* files. |
 | [`/interface`](interface.md) | Treat the input file as a module interface unit. |
 | [`/internalPartition`](internal-partition.md) | Treat the input file as an internal partition unit. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
