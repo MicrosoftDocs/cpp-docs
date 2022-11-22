@@ -137,7 +137,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/exportHeader`](module-exportheader.md) | Create the header units files (*`.ifc`*) specified by the input arguments. |
 | [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (*`.ifc`*) for the specified header. |
 | [`/headerName`](headername.md) | Build a header unit from the specified header. |
-| **`/ifcOutput`** | Specify output file or directory for *`.ifc`* files. |
+| [`/ifcOutput`](ifc-output.md) | Specify the output file name or directory for built *`.ifc`* files. |
 | [`/interface`](interface.md) | Treat the input file as a module interface unit. |
 | [`/internalPartition`](internal-partition.md) | Treat the input file as an internal partition unit. |
 | [`/reference`](module-reference.md) | Use named module IFC. |
