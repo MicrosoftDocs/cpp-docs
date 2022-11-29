@@ -45,7 +45,7 @@ The **`auto`** initialization expression can take several forms:
 
 - Universal initialization syntax, such as `auto a { 42 };`.
 - Assignment syntax, such as `auto b = 0;`.
-- Universal assignment syntax, which combines the two previous forms, such as `auto c = { 3.14156 };`.
+- Universal assignment syntax, which combines the two previous forms, such as `auto c = { 3.14159 };`.
 - Direct initialization, or constructor-style syntax, such as `auto d( 1.41421f );`.
 
 For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.
