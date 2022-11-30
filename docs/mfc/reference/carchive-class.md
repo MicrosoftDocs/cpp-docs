@@ -310,11 +310,11 @@ You can call `MapObject` when you store to and load from the `CArchive` object. 
 ### Example
 
 [!code-cpp[NVC_MFCSerialization#18](../../mfc/codesnippet/cpp/carchive-class_7.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCSerialization#19](../../mfc/codesnippet/cpp/carchive-class_8.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCSerialization#20](../../mfc/codesnippet/cpp/carchive-class_9.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCSerialization#21](../../mfc/codesnippet/cpp/carchive-class_10.cpp)]
 
 ## <a name="m_pdocument"></a> `CArchive::m_pDocument`

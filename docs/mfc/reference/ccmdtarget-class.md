@@ -447,7 +447,7 @@ If you override `OnCmdMsg`, you must supply the appropriate value for *`nCode`*,
 ### Example
 
 [!code-cpp[NVC_MFCDocView#44](../../mfc/codesnippet/cpp/ccmdtarget-class_2.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#45](../../mfc/codesnippet/cpp/ccmdtarget-class_3.cpp)]
 
 ## <a name="onfinalrelease"></a> `CCmdTarget::OnFinalRelease`

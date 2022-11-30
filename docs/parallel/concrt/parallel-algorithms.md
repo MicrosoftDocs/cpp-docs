@@ -265,7 +265,7 @@ For illustration, this example uses a relatively small data set. You can increas
 This example uses a lambda expression as the hash function. You can also use one of the built-in implementations of the std::[hash class](../../standard-library/hash-class.md) or define your own specialization. You can also use a custom hash function object, as shown in this example:
 
 [!code-cpp[concrt-parallel-sort-points#2](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_13.cpp)]
-
+&nbsp;
 [!code-cpp[concrt-parallel-sort-points#3](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_14.cpp)]
 
 The hash function must return an integral type ([std::is_integral::value](../../standard-library/is-integral-class.md) must be **`true`**). This integral type must be convertible to type `size_t`.

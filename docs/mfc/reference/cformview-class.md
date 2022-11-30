@@ -86,7 +86,7 @@ The form-view window and child controls aren't created until `CWnd::Create` is c
 ### Example
 
 [!code-cpp[NVC_MFCDocView#90](../../mfc/codesnippet/cpp/cformview-class_1.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/cpp/cformview-class_2.cpp)]
 
 ## <a name="isinitdlgcompleted"></a> `CFormView::IsInitDlgCompleted`

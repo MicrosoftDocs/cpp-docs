@@ -2154,7 +2154,7 @@ The *`lParam1`* and *`lParam2`* parameters correspond to the `lParam` member of 
 ### Example
 
 [!code-cpp[NVC_MFC_CTreeCtrl#38](../../mfc/reference/codesnippet/cpp/ctreectrl-class_46.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFC_CTreeCtrl#39](../../mfc/reference/codesnippet/cpp/ctreectrl-class_47.cpp)]
 
 ## See also

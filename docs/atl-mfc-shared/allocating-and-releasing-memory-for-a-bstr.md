@@ -15,13 +15,13 @@ In general, the rules for allocating and releasing memory allocated for `BSTR`s 
 - When you call into a function that expects a `BSTR` argument, you must allocate the memory for the `BSTR` before the call and release it afterwards. For example:
 
    [!code-cpp[NVC_ATLMFC_Utilities#192](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_1.cpp)]
-
+   &nbsp;
    [!code-cpp[NVC_ATLMFC_Utilities#193](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_2.cpp)]
 
 - When you call into a function that returns a `BSTR`, you must free the string yourself. For example:
 
    [!code-cpp[NVC_ATLMFC_Utilities#194](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_3.cpp)]
-
+   &nbsp;
    [!code-cpp[NVC_ATLMFC_Utilities#195](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_4.cpp)]
 
 - When you implement a function that returns a `BSTR`, allocate the string but do not free it. The receiving function releases the memory. For example:
