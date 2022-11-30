@@ -538,7 +538,7 @@ This assertion is not enabled by default. Define `ATL_CCOMBSTR_ADDRESS_OF_ASSERT
 ### Example
 
 [!code-cpp[NVC_ATL_Utilities#46](../../atl/codesnippet/cpp/ccombstr-class_14.cpp)]
-&nbsp;
+
 [!code-cpp[NVC_ATL_Utilities#47](../../atl/codesnippet/cpp/ccombstr-class_15.cpp)]
 
 ## <a name="operator_add_eq"></a> `CComBSTR::operator +=`
