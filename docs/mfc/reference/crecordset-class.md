@@ -504,7 +504,7 @@ Your stored procedure needs to have bound fields if you want to call `FlushResul
 The following code assumes that `COutParamRecordset` is a `CRecordset`-derived object based on a predefined query with an input parameter and an output parameter, and having multiple result sets. Note the structure of the [`DoFieldExchange`](#dofieldexchange) override.
 
 [!code-cpp[NVC_MFCDatabase#21](../../mfc/codesnippet/cpp/crecordset-class_5.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDatabase#22](../../mfc/codesnippet/cpp/crecordset-class_6.cpp)]
 
 ## <a name="getbookmark"></a> `CRecordset::GetBookmark`

@@ -391,7 +391,7 @@ Do not call this member function if you use the framework to manage your MDI chi
 ### Example
 
 [!code-cpp[NVC_MFCWindowing#19](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_7.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#20](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_8.cpp)]
 
 ## <a name="mditile"></a> CMDIFrameWnd::MDITile

@@ -103,7 +103,7 @@ Dynamically allocate a `CSingleDocTemplate` object and pass it to `CWinApp::AddD
 ### Example
 
 [!code-cpp[NVC_MFCDocViewSDI#13](../../mfc/codesnippet/cpp/csingledoctemplate-class_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocViewSDI#14](../../mfc/codesnippet/cpp/csingledoctemplate-class_2.cpp)]
 
 ## See also

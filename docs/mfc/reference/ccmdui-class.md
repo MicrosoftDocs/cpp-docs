@@ -96,7 +96,7 @@ TRUE to enable the item, FALSE to disable it.
 ### Example
 
 [!code-cpp[NVC_MFCDocView#46](../../mfc/codesnippet/cpp/ccmdui-class_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#47](../../mfc/codesnippet/cpp/ccmdui-class_2.cpp)]
 
 ## <a name="m_nid"></a> CCmdUI::m_nID

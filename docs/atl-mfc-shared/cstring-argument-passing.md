@@ -25,7 +25,7 @@ If the string contents are to be changed by a function, declare the parameter as
 Typically you can return `CString` objects from functions because `CString` objects follow value semantics like primitive types. To return a read-only string, use a constant `CString` reference (`const CString&`). The following example illustrates the use of `CString` parameters and return types:
 
 [!code-cpp[NVC_ATLMFC_Utilities#197](../atl-mfc-shared/codesnippet/cpp/cstring-argument-passing_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_ATLMFC_Utilities#198](../atl-mfc-shared/codesnippet/cpp/cstring-argument-passing_2.cpp)]
 
 ## See also

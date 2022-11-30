@@ -252,7 +252,7 @@ One of the standard HRESULT values.
 ### Example
 
 [!code-cpp[NVC_ATL_COM#19](../../atl/codesnippet/cpp/ccomcontrolbase-class_2.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_ATL_COM#20](../../atl/codesnippet/cpp/ccomcontrolbase-class_3.h)]
 
 ## <a name="fireviewchange"></a> CComControlBase::FireViewChange
