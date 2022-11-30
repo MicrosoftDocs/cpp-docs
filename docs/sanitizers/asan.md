@@ -44,7 +44,7 @@ Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer techno
 
 ### Installing AddressSanitizer
 
-AddressSanitizer IDE integration and libraries are installed by default with C++ workloads in the Visual Studio Installer. However, if you're upgrading from an older version of Visual Studio 2019, use the Installer to enable ASan support after the upgrade:
+The AddressSanitizer IDE integration and libraries are installed by default with C++ workloads in the Visual Studio Installer. However, if you're upgrading from an older version of Visual Studio 2019, use the Installer to enable ASan support after the upgrade:
 
 :::image type="content" source="media/asan-installer-option.png" alt-text="Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component":::
 
