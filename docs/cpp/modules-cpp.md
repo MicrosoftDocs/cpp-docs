@@ -10,7 +10,7 @@ C++20 introduces *modules*, a modern solution that turns C++ libraries and progr
 
 You can use modules side by side with header files. A C++ source file can `import` modules and also `#include` header files. In some cases, you can import a header file as a module rather than include it textually by using `#include` in the preprocessor. We recommend you use modules in new projects rather than header files as much as possible. For larger existing projects under active development, experiment with converting legacy headers to modules. Base your adoption on whether you get a meaningful reduction in compilation times.
 
-To contrast modules with other ways to import the standard library, see [Compare header units, modules, and precompiled headers](compare-header-units-modules-and-precompiled-headers.md).
+To contrast modules with other ways to import the standard library, see [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md).
 
 ## Enable modules in the Microsoft C++ compiler
 
@@ -203,4 +203,4 @@ import "myheader.h";
 
 [`module`, `import`, `export`](import-export-module.md)\
 [Named modules tutorial](tutorial-named-modules-cpp.md)\
-[Compare header units, modules, and precompiled headers](compare-header-units-modules-and-precompiled-headers.md)
+[Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md)
