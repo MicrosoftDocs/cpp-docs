@@ -274,7 +274,7 @@ You can call `EndDialog` at any time, even in [OnInitDialog](#oninitdialog), in 
 ### Example
 
 [!code-cpp[NVC_MFCControlLadenDialog#64](../../mfc/codesnippet/cpp/cdialog-class_3.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCControlLadenDialog#65](../../mfc/codesnippet/cpp/cdialog-class_4.cpp)]
 
 ## <a name="getdefid"></a> CDialog::GetDefID

@@ -33,7 +33,7 @@ You will rarely need to access the run-time class object directly. A more common
 1. Call the `IsKindOf` member function for objects of that class, using the `RUNTIME_CLASS` macro to generate the `CRuntimeClass` argument, as shown here:
 
    [!code-cpp[NVC_MFCCObjectSample#2](codesnippet/cpp/accessing-run-time-class-information_2.h)]
-
+   &nbsp;
    [!code-cpp[NVC_MFCCObjectSample#5](codesnippet/cpp/accessing-run-time-class-information_3.cpp)]
 
     > [!NOTE]

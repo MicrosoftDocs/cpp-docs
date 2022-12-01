@@ -705,9 +705,9 @@ Note that there are cases where `OnNewDocument` is called twice. This occurs whe
 The following examples illustrate alternative methods of initializing a document object.
 
 [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/cpp/cdocument-class_5.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#61](../../mfc/codesnippet/cpp/cdocument-class_6.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#62](../../mfc/codesnippet/cpp/cdocument-class_7.cpp)]
 
 ## <a name="onopendocument"></a> `CDocument::OnOpenDocument`
@@ -738,11 +738,11 @@ If the user chooses the File Open command in an SDI application, the framework u
 The following examples illustrate alternative methods of initializing a document object.
 
 [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/cpp/cdocument-class_5.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#61](../../mfc/codesnippet/cpp/cdocument-class_6.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#62](../../mfc/codesnippet/cpp/cdocument-class_7.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#63](../../mfc/codesnippet/cpp/cdocument-class_8.cpp)]
 
 ## <a name="onpreviewhandlerqueryfocus"></a> `CDocument::OnPreviewHandlerQueryFocus`

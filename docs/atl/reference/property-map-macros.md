@@ -78,7 +78,7 @@ When you create an ActiveX control, the wizard inserts this macro after the prop
 In the following example, the extent of the object (`m_sizeExtent`) is being persisted.
 
 [!code-cpp[NVC_ATL_Windowing#131](../../atl/codesnippet/cpp/property-map-macros_2.h)]
-
+&nbsp;
 [!code-cpp[NVC_ATL_Windowing#132](../../atl/codesnippet/cpp/property-map-macros_3.h)]
 
 ## <a name="prop_entry_type"></a> PROP_ENTRY_TYPE
