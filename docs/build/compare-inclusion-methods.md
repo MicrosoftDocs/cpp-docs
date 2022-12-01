@@ -17,7 +17,7 @@ Header units were introduced as a way to temporarily bridge the gap between head
 
 Then, the C++23 standard library introduced support for importing the standard library as named modules--which is the fastest and most robust way to consume the standard library.
 
-To help you sort out the different options, this article compares the traditional `#include` method against precompiled headers, header units, and the `std` and `std.compat` named modules.
+To help you sort out the different options, this article compares the traditional `#include` method against precompiled headers, header units, and importing the `std` and `std.compat` named modules.
 
 The following table is arranged by compiler processing speed and robustness, with `#include` being the slowest and least robust, and `import` being the fastest and most robust.
 
@@ -28,11 +28,11 @@ The following table is arranged by compiler processing speed and robustness, wit
 | [Header units](../build/walkthrough-header-units.md) | This is a new feature in C++20 that allows you to import 'well-behaved' header files as modules. Header units are faster than `#include`, and are easier, significantly smaller, and faster than pre-compiled header files (PCH). Header units are an 'in-between' step meant to help transition to named modules in cases where you rely on macros defined in header files, since named modules don't expose macros. Header units are slower than importing a named module. Header units aren't affected by macro defines unless they're specified on the command line when the header unit is built--making them more robust than header files. Header units expose the macros and internal implementation defined in them just as header file do, which named modules don't. As a rough approximation of file size, a 250-megabyte PCH file might be represented by an 80-megabyte header unit file. |
 | [Modules](../cpp/modules-cpp.md) | This is the fastest and most robust way to import functionality. Support for importing modules was introduced in C++20. The C++23 standard library introduces the two named modules described in this topic. When you import `std`, you get the standard names such as `std::vector`, `std::cout`, but no extensions, no internal helpers such as `_Sort_unchecked`, and no macros. The order of imports doesn't matter because there are no macro or other side-effects. As a rough approximation of file size, a 250-megabyte PCH file might be represented by an 80-megabyte header unit file, which might be represented by a 25-megabyte module. The reason named modules are faster is because when a named module is compiled into an `.ifc` file and an `.obj` file, the compiler emits a structured representation of the source code that can be loaded quickly when the module is imported. The compiler can do some work (like name resolution) before emitting the `.ifc` file because of how named modules are order-independent and macro-independent--so this work doesn't have to be done when the module is imported. In contrast, when a header file is consumed with `#include`, its contents must be preprocessed and compiled again and again in every translation unit. Precompiled headers, which are compiler memory snapshots, can mitigate those costs, but not as well as named modules. |
 
-If you can use C++20 features and the C++23 standard library, use named modules.
+If you can use C++20 features and the C++23 standard library in your app, use named modules.
 
 If you can't use C++20 features, use header units. If you can't use C++20 features or header units, use precompiled headers.
 
-If you can't use C++20 features, header units, or precompiled headers, you're left with `#include`, which is the slowest and least robust method.
+If you can't use C++20 features, header units, or precompiled headers, use `#include`.
 
 ## See also
 

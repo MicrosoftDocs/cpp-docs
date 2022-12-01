@@ -47,9 +47,9 @@ C++20 introduces a modern alternative called *modules*. In C++23, we were able t
 
 Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which they're imported. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Macro definitions defined in a named module aren't exposed, nor are private implementation details.
 
-For in depth information about modules, see [Overview of modules in C++](../build/modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it.
+For in depth information about modules, see [Overview of modules in C++](modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it.
 
-This article demonstrates the new and best way to consume the standard library. For more information about alternative ways to consume the standard library, see [Different ways to consume the standard library](#different-ways-to-consume-the-standard-library).
+This article demonstrates the new and best way to consume the standard library. For more information about alternative ways to consume the standard library, see [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md).
 
 ## Import the standard library with `std`
 
