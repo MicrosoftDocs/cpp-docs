@@ -447,11 +447,11 @@ For more information on how to make a wizard-type property sheet, see [`CPropert
 ### Example
 
 [!code-cpp[NVC_MFCDocView#119](../../mfc/codesnippet/cpp/cpropertypage-class_9.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#120](../../mfc/codesnippet/cpp/cpropertypage-class_10.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#121](../../mfc/codesnippet/cpp/cpropertypage-class_11.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#122](../../mfc/codesnippet/cpp/cpropertypage-class_12.cpp)]
 
 ## <a name="onwizardnext"></a> `CPropertyPage::OnWizardNext`
@@ -505,9 +505,9 @@ If a page returns a nonzero value, the property sheet doesn't send the message t
 ### Example
 
 [!code-cpp[NVC_MFCDocView#124](../../mfc/codesnippet/cpp/cpropertypage-class_14.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#125](../../mfc/codesnippet/cpp/cpropertypage-class_15.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#126](../../mfc/codesnippet/cpp/cpropertypage-class_16.cpp)]
 
 ## <a name="setmodified"></a> `CPropertyPage::SetModified`

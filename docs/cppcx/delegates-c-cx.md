@@ -81,7 +81,7 @@ It then calls the member function and passes the delegate. Assume that `ci` is a
 In the next example, a client app passes a custom delegate to a public method in a Windows Runtime component that executes the delegate against each item in a `Vector`:
 
 [!code-cpp[Cx_delegates#118](../cppcx/codesnippet/CPP/clientapp/mainpage.xaml.cpp#118)]
-
+&nbsp;
 [!code-cpp[Cx_delegates#119](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#119)]
 
 ### Construction

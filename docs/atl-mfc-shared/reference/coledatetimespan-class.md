@@ -102,7 +102,7 @@ These operators compare two date/time-span values and return TRUE if the conditi
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#25](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_ATLMFC_Utilities#26](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_2.cpp)]
 
 ## <a name="coledatetimespan"></a> COleDateTimeSpan::COleDateTimeSpan

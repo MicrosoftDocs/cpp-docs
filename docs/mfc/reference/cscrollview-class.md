@@ -341,7 +341,7 @@ You must set the mapping mode to any of the Windows mapping modes except `MM_ISO
 ### Example
 
 [!code-cpp[NVC_MFCDocView#168](../../mfc/codesnippet/cpp/cscrollview-class_5.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]
 
 ## See also

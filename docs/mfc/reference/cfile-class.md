@@ -547,7 +547,7 @@ The following table describes the possible results of `Open`.
 ### Example
 
 [!code-cpp[NVC_MFCFiles#13](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_9.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]
 
 ## <a name="operator_handle"></a> CFile::operator HANDLE

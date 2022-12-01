@@ -315,7 +315,7 @@ To display a modal property sheet, call [`DoModal`](#domodal) instead.
 ### Example
 
 [!code-cpp[NVC_MFCDocView#132](../../mfc/codesnippet/cpp/cpropertysheet-class_4.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#133](../../mfc/codesnippet/cpp/cpropertysheet-class_5.cpp)]
 
 ## <a name="domodal"></a> `CPropertySheet::DoModal`
@@ -750,9 +750,9 @@ If you want to change the text on the Finish button or hide the Next and Back bu
 A `CPropertySheet` has three wizard property pages: `CStylePage`, `CColorPage`, and `CShapePage`.  The code fragment below shows how to enable and disable the **Back** and **Next** buttons on the wizard property page.
 
 [!code-cpp[NVC_MFCDocView#140](../../mfc/codesnippet/cpp/cpropertysheet-class_13.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#141](../../mfc/codesnippet/cpp/cpropertysheet-class_14.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]
 
 ## <a name="setwizardmode"></a> `CPropertySheet::SetWizardMode`
