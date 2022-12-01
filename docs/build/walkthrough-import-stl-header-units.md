@@ -14,7 +14,7 @@ This walkthrough shows how to import C++ Standard Template Library (STL) librari
 
 Importing an STL header as a header unit is simpler than using [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and use, are substantially smaller on disk, provide similar performance benefits, and are more flexible than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio).
 
-For more detailed information about what header units are and the benefits they provide, see [What is a header unit?](walkthrough-header-units.md#what-is-a-header-unit)
+For more detailed information about what header units are and the benefits they provide, see [What is a header unit?](walkthrough-header-units.md#what-is-a-header-unit). To contrast header units with other ways to import the standard library, see [Compare header units, modules, and precompiled headers](compare-header-units-modules-and-precompiled-headers.md).
 
 ## Prerequisites
 
@@ -219,6 +219,7 @@ The main consideration for whether to use this approach is the balance between c
 
 ## See also
 
+[Compare header units, modules, and precompiled headers](compare-header-units-modules-and-precompiled-headers.md)\
 [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
 [Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md)\
 [`/translateInclude`](./reference/translateinclude.md)

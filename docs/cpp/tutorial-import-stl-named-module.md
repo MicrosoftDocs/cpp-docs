@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules (C++)"
-ms.date: 11/18/2022
+ms.date: 12/01/2022
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -11,11 +11,11 @@ description: Learn how to import the C++ standard library (STL) using modules
 
 Learn how to import the C++ standard library using C++ library modules. Which is significantly faster to compile and more robust than using header files or header units or precompiled headers (PCH).
 
-In this tutorial, you'll learn about:
+In this tutorial, learn about:
 
 - How to import the standard library as a module from the command line.
-- The performance and usability benefits of modules
-- The two standard library modules `std` and `std.compat` and the difference between them
+- The performance and usability benefits of modules.
+- The two standard library modules `std` and `std.compat` and the difference between them.
 
 ## Prerequisites
 
@@ -26,7 +26,9 @@ This tutorial requires Visual Studio 2022 17.5 or later.
 
 ## An introduction to the standard library modules
 
-Header files suffer from problems caused by dependencies, semantics that can change depending on macro definitions, semantics that can change depending on the order you include header files, and slow compilation. Modules solve these problems. It's now possible to import the standard library as a module instead of as a tangle of header files. This is significantly faster and more robust than including header files.
+Header files suffer from semantics that change depending on macro definitions, semantics that change depending on the order you include them, and they slow compilation. Modules solve these problems.
+
+It's now possible to import the standard library as a module instead of as a tangle of header files. This is significantly faster and more robust than including header files or header units or precompiled headers (PCH).
 
 The C++23 standard library introduces two named modules: `std` and `std.compat`.
 
@@ -39,13 +41,15 @@ Because named modules don't expose macros, macros like `assert`, `errno`, `offse
 
 ## A little about C++ modules
 
-Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you would include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they have to be reprocessed by every source file that includes them.
+Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they have to be reprocessed by every source file that includes them.
 
 C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules for the standard library.
 
 Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which they're imported. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Macro definitions defined in a named module aren't exposed, nor are private implementation details.
 
-For more information about modules, see [Overview of modules in C++](modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it. This article demonstrates the new and best way to consume the standard library. For more information about alternative ways to consume the standard library, see [Different ways to consume the standard library](#different-ways-to-consume-the-standard-library) later in this article.
+For more information about the different ways to include standard library functionality in C++, see [Compare header units, modules, and precompiled headers](compare-header-units-modules-and-precompiled-headers.md).
+
+For in depth information about modules, see [Overview of modules in C++](modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it. This article demonstrates the new and best way to consume the standard library. For more information about alternative ways to consume the standard library, see [Different ways to consume the standard library](#different-ways-to-consume-the-standard-library).
 
 ## Import the standard library with `std`
 
@@ -195,19 +199,6 @@ Before you can use `import std.compat;` in your code, you must compile the named
     555
     ```
 
-## Different ways to consume the standard library
-
-In this tutorial, you've seen how to import the standard library as a named module. This is the fastest and most robust way to consume the C++ standard library in your application.
-
-There are other ways to consume the standard library that may make sense depending on your situation. Here's a summary so that you're aware of the other options. These are arranged in terms of compiler processing speed and robustness, with `#include` being the slowest and least robust, and `import` being the fastest and most robust.
-
-| Method | Summary |
-|---|---|
-| `#include` | This is the 'classic' way of doing things. Disadvantages: exposes macros and internal implementation (functions and types that start with an underscore which library implementors use to indicate it's internal and shouldn't use), is fragile (the order of #includes can modify behavior or break code and are affected by macro definitions), is slow and gets slower when the same file is included in multiple files because the header file has to be reprocessed for each file that includes it. |
-| [Precompiled header](../build/creating-precompiled-header-files.md) | A precompiled header (PCH) improves compile time by creating a compiler memory snapshot of a set of header files. This is an improvement on rebuilding header files over and over. PCH files have restrictions that make them difficult to build and maintain. In terms of speed and robustness, PCH files are faster than `#include` but slower than `import`.|
-| [Header units](../build/walkthrough-header-units.md) | This is a new feature in C++20 that allows you to import 'well-behaved' header files as modules. Header units are faster than `#include`, and are easier, significantly smaller, and faster than pre-compiled header files (PCH). Header units are an 'in-between' step meant to help transition to named modules in cases where you rely on macros defined in header files, since named modules don't expose macros. Header units are slower than importing a named module. Header units aren't affected by macro defines unless they're specified on the command line when the header unit is built--making them more robust than header files. Header units expose the macros and internal implementation defined in them just as header file do, which named modules don't. As a rough approximation of file size, a 250-megabyte PCH file might be represented by an 80-megabyte header unit file. |
-| [Modules](modules-cpp.md) | This is the fastest and most robust way to import functionality. Support for importing modules was introduced in C++20. The C++23 standard library introduces the two named modules described in this topic. When you import `std`, you get the standard names such as `std::vector`, `std::cout`, but no extensions, no internal helpers such as `_Sort_unchecked`, and no macros. The order of imports doesn't matter because there are no macro or other side-effects. As a rough approximation of file size, a 250-megabyte PCH file might be represented by an 80-megabyte header unit file, which might be represented by a 25-megabyte module. The reason named modules are faster is because when a named module is compiled into an `.ifc` file and an `.obj` file, the compiler emits a structured representation of the source code that can be loaded quickly when the module is imported. The compiler can do some work (like name resolution) before emitting the `.ifc` file because of how named modules are order-independent and macro-independent--so this work doesn't have to be done when the module is imported. In contrast, when a header file is consumed with `#include`, its contents must be preprocessed and compiled again and again in every translation unit. Precompiled headers, which are compiler memory snapshots, can mitigate those costs, but not as well as named modules. |
-
 ## Standard library named module considerations
 
 Versioning for named modules is the same as for headers. The `.ixx` named module files live alongside the headers, for example: `"%VCToolsInstallDir%\modules\std.ixx`, which resolves to `C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.35.32019\modules\std.ixx` in the version of the tools used at the time of this writing. Select the version of the named module to use the same way you choose the version of the header file to use--by the directory you refer to them from.
@@ -230,6 +221,7 @@ In this tutorial, you've imported the standard library using modules. Next, lear
 
 ## See also
 
+[Compare header units, modules, and precompiled headers](compare-header-units-modules-and-precompiled-headers.md)\
 [Overview of modules in C++](modules-cpp.md)\
 [A Tour of C++ Modules in Visual Studio](https://devblogs.microsoft.com/cppblog/a-tour-of-cpp-modules-in-visual-studio)\
-[Moving a project to C++ named Modules](https://devblogs.microsoft.com/cppblog/moving-a-project-to-cpp-named-modules)\
+[Moving a project to C++ named Modules](https://devblogs.microsoft.com/cppblog/moving-a-project-to-cpp-named-modules)
