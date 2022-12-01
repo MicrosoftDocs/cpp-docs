@@ -99,9 +99,9 @@ For more information, see [Windows Sockets: Using Sockets with Archives](../../m
 ### Example
 
 [!code-cpp[NVC_MFCSocketThread#1](../../mfc/reference/codesnippet/cpp/csocket-class_2.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCSocketThread#2](../../mfc/reference/codesnippet/cpp/csocket-class_3.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCSocketThread#3](../../mfc/reference/codesnippet/cpp/csocket-class_4.cpp)]
 
 ## <a name="cancelblockingcall"></a> `CSocket::CancelBlockingCall`

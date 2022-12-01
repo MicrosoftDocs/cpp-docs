@@ -1972,7 +1972,7 @@ For more information, see [`EM_STREAMIN`](/windows/win32/Controls/em-streamin) m
 ### Example
 
 [!code-cpp[NVC_MFC_CRichEditCtrl#34](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_34.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFC_CRichEditCtrl#35](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_35.cpp)]
 
 ## <a name="streamout"></a> `CRichEditCtrl::StreamOut`
@@ -2018,7 +2018,7 @@ For more information, see [`EM_STREAMOUT`](/windows/win32/Controls/em-streamout)
 ### Example
 
 [!code-cpp[NVC_MFC_CRichEditCtrl#36](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_36.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFC_CRichEditCtrl#37](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_37.cpp)]
 
 ## <a name="undo"></a> `CRichEditCtrl::Undo`

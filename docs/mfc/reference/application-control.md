@@ -67,7 +67,7 @@ Call this function to access the current `COleMessageFilter`-derived object, jus
 ### Example
 
 [!code-cpp[NVC_MFCAutomation#3](../../mfc/codesnippet/cpp/application-control_2.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCAutomation#4](../../mfc/codesnippet/cpp/application-control_3.cpp)]
 
 ### Requirements

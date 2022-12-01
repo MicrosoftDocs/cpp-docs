@@ -462,9 +462,9 @@ After you call `SetPaneText`, you must add a UI update handler to display the ne
 ### Example
 
 [!code-cpp[NVC_MFCDocView#176](../../mfc/codesnippet/cpp/cstatusbar-class_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#177](../../mfc/codesnippet/cpp/cstatusbar-class_2.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]
 
 ## See also
