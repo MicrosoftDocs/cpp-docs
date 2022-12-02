@@ -2,7 +2,7 @@
 description: "Learn about the different ways to include library headers in C++: header files vs modules vs header units vs precompiled headers."
 title: "Compare header units, modules, and precompiled headers"
 ms.date: 11/30/2022
-f1_keywords: ["#include", "header file", "header unit", "module", "named module", "PCH", "precompiled header unit", "IFC"]
+f1_keywords: ["#include", "header file", "header unit", "module", "named module", "PCH", "precompiled header file", "IFC"]
 helpviewer_keywords: ["headers, C++ library", "libraries, Standard C++", "C++ Standard Library, headers", "STL", "Standard template library, headers", "precompiled header files, creating", "PCH files, creating", "import", "header unit", "ifc", "modules [C++]", "named modules [C++]", "import standard library (STL) using named modules"]
 ---
 # Compare header units, modules, and precompiled headers
@@ -30,9 +30,9 @@ The following table is arranged by compiler processing speed and robustness, wit
 
 If you can use C++20 features and the C++23 standard library in your app, use named modules.
 
-If you can't use C++20 features, use header units. If you can't use C++20 features or header units, use precompiled headers.
+If you can use C++20 features but want to transition over time to modules, use header units in the interim.
 
-If you can't use C++20 features, header units, or precompiled headers, use `#include`.
+If you can't use C++20 features, use `#include` and consider precompiled headers.
 
 ## See also
 
