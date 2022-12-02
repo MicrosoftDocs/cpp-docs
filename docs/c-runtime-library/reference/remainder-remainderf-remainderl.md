@@ -3,7 +3,7 @@ title: "remainder, remainderf, remainderl"
 description: "API reference for remainder, remainderf, and remainderl; which compute the remainder of the quotient of two floating-point values, rounded to the nearest integral value."
 ms.date: "9/1/2020"
 api_name: ["remainderl", "remainder", "remainderf", "_o_remainder", "_o_remainderf", "_o_remainderl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["remainderf", "remainder", "remainderl"]
