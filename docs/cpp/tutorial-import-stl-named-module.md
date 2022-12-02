@@ -9,7 +9,7 @@ description: Learn how to import the C++ standard library (STL) using modules
 ---
 # Tutorial: Import the C++ standard library using modules
 
-Learn how to import the C++ standard library using C++ library modules. Which is significantly faster to compile and more robust than using header files or header units or precompiled headers (PCH).
+Learn how to import the C++ standard library using C++ library modules. This is significantly faster to compile and more robust than using header files or header units or precompiled headers (PCH).
 
 In this tutorial, learn about:
 
@@ -45,7 +45,7 @@ Header files are how declarations and definitions have been shared between sourc
 
 C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules for the standard library.
 
-Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which they're imported. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Macro definitions defined in a named module aren't exposed, nor are private implementation details.
+Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which you import them. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Macro definitions defined in a named module aren't exposed, nor are private implementation details.
 
 For in depth information about modules, see [Overview of modules in C++](modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it.
 
@@ -53,7 +53,7 @@ This article demonstrates the new and best way to consume the standard library. 
 
 ## Import the standard library with `std`
 
-The following demonstrates how to consume the standard library as a module using the command line compiler. The Visual Studio IDE experience for importing the standard library as a module is still being implemented.
+The following examples demonstrates how to consume the standard library as a module using the command line compiler. The Visual Studio IDE experience for importing the standard library as a module is still being implemented.
 
 The standard library is imported into your application with the statement `import std;` or `import std.compat;`. But first, you must compile the standard library named modules. The following steps demonstrate how.
 
@@ -203,9 +203,9 @@ Before you can use `import std.compat;` in your code, you must compile the named
 
 Versioning for named modules is the same as for headers. The `.ixx` named module files live alongside the headers, for example: `"%VCToolsInstallDir%\modules\std.ixx`, which resolves to `C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.35.32019\modules\std.ixx` in the version of the tools used at the time of this writing. Select the version of the named module to use the same way you choose the version of the header file to use--by the directory you refer to them from.
 
-Don't mix and match importing header units and named modules. That is, don't `import <vector>;` and `import std;` in the same file, for example. You'll get a compiler error.
+Don't mix and match importing header units and named modules. For example, don't `import <vector>;` and `import std;` in the same file.
 
-Don't mix and match importing C++ standard library header files and named modules. That is, don't `#include <vector>` and `import std;` in the same file, for example. However, you can include C headers and import named modules in the same file. For example, you can `#include <math.h>`, though you shouldn't include the C++ standard library version `<cmath>`.
+Don't mix and match importing C++ standard library header files and named modules. For example, don't `#include <vector>` and `import std;` in the same file. However, you can include C headers and import named modules in the same file. For example, you can `import std;` and `#include <math.h>` in the same file. Just don't include the C++ standard library version, `<cmath>`.
 
 You don't have to defend against importing a module multiple times: no header guard `#ifndef` required. The compiler knows when it has already imported a named module and ignores duplicate attempts to do so.
 
@@ -213,7 +213,7 @@ If you need to use the `assert()` macro, then `#include <assert.h>`.
 
 If you need to use the `errno` macro, `#include <errno.h>`. Because named modules don't expose macros, this is the workaround if you need to check for errors from `<math.h>`, for example.
 
-Macros such as `NAN`, `INFINITY`, and `INT_MIN` are defined by `<limits.h>`, which you could include. However, if you use `import std;`, you can use `numeric_limits<double>::quiet_NaN()` and `numeric_limits<double>::infinity()` instead of `NAN` and `INFINITY`, and `std::numeric_limits<int>::min()` instead of `INT_MIN`.
+Macros such as `NAN`, `INFINITY`, and `INT_MIN` are defined by `<limits.h>`, which you can include. However, if you `import std;` you can use `numeric_limits<double>::quiet_NaN()` and `numeric_limits<double>::infinity()` instead of `NAN` and `INFINITY`, and `std::numeric_limits<int>::min()` instead of `INT_MIN`.
 
 ## Summary
 
