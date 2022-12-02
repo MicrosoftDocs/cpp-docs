@@ -28,7 +28,7 @@ An integral type that is convertible to the iterator's difference type and that 
 
 The range must be nonsingular, where the iterators must be dereferenceable or past the end.
 
-If the `InputIterator` satisfies the requirements for a bidirectional iterator type, then *Off* may be negative. If `InputIterator` is an input or forward iterator type, *`Off`* must be nonnegative.
+If the `InputIterator` satisfies the requirements for a bidirectional iterator type, then *`Off`* may be negative. If `InputIterator` is an input or forward iterator type, *`Off`* must be nonnegative.
 
 The advance function has constant complexity when `InputIterator` satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.
 
@@ -268,7 +268,7 @@ auto cbegin(const Container& cont)
 ### Parameters
 
 *`cont`*\
-A container or initializer_list.
+A container or `initializer_list`.
 
 ### Return Value
 
@@ -276,7 +276,7 @@ A constant `cont.begin()`.
 
 ### Remarks
 
-This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
+This function works with all C++ Standard Library containers and with [`initializer_list`](../standard-library/initializer-list-class.md).
 
 You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
 
@@ -329,7 +329,7 @@ Get a reverse read-only iterator to the elements of the container, starting at t
 template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
 ```
 
-## Parameters
+### Parameters
 
 *`C`*\
 The type of the container.
@@ -372,7 +372,7 @@ Get the sentinel at the end of a read-only reversed sequence of elements.
 template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
 ```
 
-## Parameters
+### Parameters
 
 *`C`*\
 The type of the container.
@@ -548,7 +548,7 @@ template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
 template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
 ```
 
-## Parameters
+### Parameters
 
 *`C`*\
 The type of the container.
@@ -700,7 +700,7 @@ After the front insertions, the list L is:
 ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-## <a name="inserter"></a> inserter
+## <a name="inserter"></a> `inserter`
 
 A helper template function that lets you use `inserter(Cont, Where)` instead of `insert_iterator<Container>(Cont, Where)`.
 
@@ -717,12 +717,12 @@ inserter(
 *`Cont`*\
 The container to which new elements are to be added.
 
-*Where*\
+*`Where`*\
 An iterator locating the point of insertion.
 
 ### Remarks
 
-The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator)`<Container>(Cont, Where)`.
+The template function returns [`insert_iterator`](../standard-library/insert-iterator-class.md#insert_iterator)`<Container>(Cont, Where)`.
 
 ### Example
 
