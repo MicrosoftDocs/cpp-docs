@@ -3,7 +3,7 @@ description: "Learn more about: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l"
 title: "strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l"
 ms.date: "5/28/2020"
 api_name: ["wcscpy_s", "_mbscpy_s", "_mbscpy_s_l", "strcpy_s", "_o__mbscpy_s", "_o__mbscpy_s_l", "_o_strcpy_s", "_o_wcscpy_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strcpy_s", "_mbscpy_s", "_mbscpy_s_l", "_tcscpy_s", "wcscpy_s"]

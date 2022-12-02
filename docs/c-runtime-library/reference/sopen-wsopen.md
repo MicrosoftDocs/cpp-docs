@@ -3,7 +3,7 @@ description: "Learn more about: _sopen, _wsopen"
 title: "_sopen, _wsopen"
 ms.date: 05/18/2022
 api_name: ["_sopen", "_wsopen", "_o__sopen"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_IO/_sopen", "CORECRT_WIO/_wsopen", "TCHAR/_tsopen", "_sopen", "_wsopen", "_tsopen", "sopen", "wsopen"]

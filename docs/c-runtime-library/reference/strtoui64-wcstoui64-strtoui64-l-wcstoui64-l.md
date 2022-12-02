@@ -3,7 +3,7 @@ description: "Learn more about: _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64
 title: "_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l"
 ms.date: 05/18/2022
 api_name: ["_strtoui64", "_strtoui64_l", "_wcstoui64", "_wcstoui64_l", "_o__strtoui64", "_o__strtoui64_l", "_o__wcstoui64", "_o__wcstoui64_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CRT_OPEN/_strtoui64", "CRT_OPEN/_strtoui64_l", "STDLIB/_strtoui64", "STDLIB/_strtoui64_l", "CORECRT_WSTDLIB/_wcstoui64", "CORECRT_WSTDLIB/_wcstoui64_l", "TCHAR/_tcstoui64", "TCHAR/_tcstoui64_l", "_strtoui64", "_strtoui64_l", "_wcstoui64", "_wcstoui64_l", "_tcstoui64", "_tcstoui64_l", "strtoui64", "strtoui64_l", "wcstoui64", "wcstoui64_l"]
