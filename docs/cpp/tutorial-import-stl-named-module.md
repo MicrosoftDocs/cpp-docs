@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules (C++)"
-ms.date: 12/01/2022
+ms.date: 12/02/2022
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -205,15 +205,15 @@ Versioning for named modules is the same as for headers. The `.ixx` named module
 
 Don't mix and match importing header units and named modules. That is, don't `import <vector>;` and `import std;` in the same file, for example. You'll get a compiler error.
 
-Don't mix and match importing header units and name modules. That is, don't `#include <vector>` and `import std;` in the same file, for example.
+Don't mix and match importing C++ standard library header files and named modules. That is, don't `#include <vector>` and `import std;` in the same file, for example. However, you can include C headers and import named modules in the same file. For example, you can `#include <math.h>`, though you shouldn't include the C++ standard library version `<cmath>`.
 
-You don't have to defend against importing a module multiple times. No header guard `#ifndef` required. The compiler knows when it has already imported a named module and ignores duplicate attempts to do so.
+You don't have to defend against importing a module multiple times: no header guard `#ifndef` required. The compiler knows when it has already imported a named module and ignores duplicate attempts to do so.
 
 If you need to use the `assert()` macro, then `#include <assert.h>`.
 
-If you need to use the `errno` macro, `#include <assert.h>`. Because named modules don't expose macros, this is the workaround if you need to check for errors from `<cmath>` functions.
+If you need to use the `errno` macro, `#include <errno.h>`. Because named modules don't expose macros, this is the workaround if you need to check for errors from `<math.h>`, for example.
 
-`INT_MIN` is defined by `<limits.h>` and `<climits>` and works with header files/header units. However, those two headers won't work as a named module because named modules don't expose macros. You can use `std::numeric_limits<int>::min()` instead.
+Macros such as `NAN`, `INFINITY`, and `INT_MIN` are defined by `<limits.h>`, which you could include. However, if you use `import std;`, you can use `numeric_limits<double>::quiet_NaN()` and `numeric_limits<double>::infinity()` instead of `NAN` and `INFINITY`, and `std::numeric_limits<int>::min()` instead of `INT_MIN`.
 
 ## Summary
 
