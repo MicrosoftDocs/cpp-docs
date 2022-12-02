@@ -10,7 +10,7 @@ f1_keywords: ["isfinite", "finite", "_finite", "_finitef", "math/isfinite", "mat
 helpviewer_keywords: ["finite function", "_finite function", "_finitef function"]
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
 ---
-# isfinite, _finite, _finitef
+# `isfinite`, `_finite`, `_finitef`
 
 Determines whether a floating-point value is finite.
 
@@ -37,12 +37,12 @@ int _finitef(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to test.
 
 ## Return value
 
-The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zero value if *x* is either a normal or subnormal finite value. They return 0 if the argument is infinite or a NaN. The C++ inline template function `isfinite` behaves the same way, but returns **`true`** or **`false`**.
+The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zero value if *`x`* is either a normal or subnormal finite value. They return 0 if the argument is infinite or a NaN. The C++ inline template function `isfinite` behaves the same way, but returns **`true`** or **`false`**.
 
 ## Remarks
 
@@ -50,18 +50,18 @@ The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zer
 
 ## Requirements
 
-|Function|Required header (C)|Required header (C++)|
-|--------------|---------------------------|-------------------------------|
-|`_finite`|\<float.h> or \<math.h>|\<float.h>, \<math.h>, \<cfloat>, or \<cmath>|
-|`isfinite`, `_finitef`|\<math.h>|\<math.h> or \<cmath>|
+| Function | Required header (C) | Required header (C++) |
+|---|---|---|
+| `_finite` | \<float.h> or \<math.h> | \<float.h>, \<math.h>, \<cfloat>, or \<cmath> |
+| `isfinite`, `_finitef` | \<math.h> | \<math.h> or \<cmath> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fpclassify](fpclassify.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isinf](isinf.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[isnormal](isnormal.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`fpclassify`](fpclassify.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)\
+[`isinf`](isinf.md)\
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)\
+[`isnormal`](isnormal.md)

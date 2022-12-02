@@ -56,7 +56,7 @@ Some upgraded projects and solutions can be built successfully without modificat
 
 1. Consider other opportunities for modernizing the code. For example, replace custom data structures and algorithms with ones from the C++ standard library, or the Boost open-source library. By using standard features, you make it easier for others to maintain the code. You can be confident that this code has been well-tested and reviewed by many experts on the standards committee and the broader C++ community.
 
-For hard-to-fix errors, you can search for solutions or post a question on [Microsoft Docs Q&A](/answers/topics/c%2B%2B.html). For problems in the C++ compiler and tools, try the [C++ Developer Community](https://aka.ms/vsfeedback/browsecpp) website.
+For hard-to-fix errors, you can search for solutions or post a question on [Microsoft Learn Q&A](/answers/topics/c%2B%2B.html). For problems in the C++ compiler and tools, try the [C++ Developer Community](https://aka.ms/vsfeedback/browsecpp) website.
 
 ## In this section
 

@@ -43,14 +43,14 @@ Use safe_cast if the code does not declare the relationship but you are sure tha
     // ...
     A^ obj = ref new Class1();
 
-    // You know that obj’s backing type implements A and B, but
-    // the compiler can’t tell this by comparing A and B. The run-time type check succeeds.
+    // You know that obj's backing type implements A and B, but
+    // the compiler can't tell this by comparing A and B. The run-time type check succeeds.
     B^ obj2 = safe_cast<B^>(obj);
 ```
 
 ## dynamic_cast
 
-Use **`dynamic_cast`** when you cast an object (more specifically, a hat **^**) to a more derived type, you expect either that the target object might sometimes be **`nullptr`** or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Blank App (Universal Windows)** project template, the `OnLaunched` method in app.xaml.cpp uses **`dynamic_cast`** to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.
+Use **`dynamic_cast`** when you cast an object (more specifically, a hat **^**) to a more derived type, you expect either that the target object might sometimes be **`nullptr`** or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Blank App (Universal Windows)** project template, the `OnLaunched` method in app.xaml.cpp uses **`dynamic_cast`** to test whether the app window has content. It's not an error if it doesn't have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.
 
 ```cpp
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)
@@ -77,7 +77,7 @@ You can also apply a **`dynamic_cast`** to a tracking reference, but in this cas
 
 ## reinterpret_cast
 
-We recommend that you not use [reinterpret_cast](../cpp/reinterpret-cast-operator.md) because neither a compile-time check nor a run-time check is performed. In the worst case, a **`reinterpret_cast`** makes it possible for programming errors to go undetected at development time and cause subtle or catastrophic errors in your program’s behavior. Therefore, we recommend that you use **`reinterpret_cast`** only in those rare cases when you must cast between unrelated types and you know that the cast will succeed. An example of a rare use is to convert a Windows Runtime type to its underlying ABI type—this means that you are taking control of the reference counting for the object. To do this, we recommend that you use the [ComPtr Class](../cpp/com-ptr-t-class.md) smart pointer. Otherwise, you must specifically call Release on the interface. The following example shows how a ref class can be cast to an `IInspectable*`.
+We recommend that you not use [reinterpret_cast](../cpp/reinterpret-cast-operator.md) because neither a compile-time check nor a run-time check is performed. In the worst case, a **`reinterpret_cast`** makes it possible for programming errors to go undetected at development time and cause subtle or catastrophic errors in your program's behavior. Therefore, we recommend that you use **`reinterpret_cast`** only in those rare cases when you must cast between unrelated types and you know that the cast will succeed. An example of a rare use is to convert a Windows Runtime type to its underlying ABI type—this means that you are taking control of the reference counting for the object. To do this, we recommend that you use the [ComPtr Class](../cpp/com-ptr-t-class.md) smart pointer. Otherwise, you must specifically call Release on the interface. The following example shows how a ref class can be cast to an `IInspectable*`.
 
 ```cpp
 #include <wrl.h>

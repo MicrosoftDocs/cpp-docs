@@ -151,7 +151,7 @@ Options for the key. The default value is `REG_OPTION_NON_VOLATILE`. For a list 
 The security access for the key. The default value is `KEY_READ | KEY_WRITE`. For a list of possible values and descriptions, see `RegCreateKeyEx`.
 
 *`lpSecAttr`*\
-A pointer to a [`SECURITY_ATTRIBUTES`](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is `NULL` (meaning the handle can’t be inherited).
+A pointer to a [`SECURITY_ATTRIBUTES`](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is `NULL` (meaning the handle can't be inherited).
 
 *`lpdwDisposition`*\
 [out] If non-`NULL`, retrieves either `REG_CREATED_NEW_KEY` (if the key didn't exist and was created) or `REG_OPENED_EXISTING_KEY` (if the key existed and was opened).
@@ -381,7 +381,7 @@ Specifies a set of flags that control which changes should be reported. This par
 Handle to an event. If the *`bAsync`* parameter is `TRUE`, the method returns immediately and changes are reported by signaling this event. If *`bAsync`* is `FALSE`, *`hEvent`* is ignored.
 
 *`bAsync`*\
-Specifies a flag that indicates how the method reports changes. If this parameter is `TRUE`, the method returns immediately and reports changes by signaling the specified event. When this parameter is `FALSE`, the method doesn't return until a change has occurred. If *`hEvent`* doesn't specify a valid event, the *`bAsync`* parameter can’t be `TRUE`.
+Specifies a flag that indicates how the method reports changes. If this parameter is `TRUE`, the method returns immediately and reports changes by signaling the specified event. When this parameter is `FALSE`, the method doesn't return until a change has occurred. If *`hEvent`* doesn't specify a valid event, the *`bAsync`* parameter can't be `TRUE`.
 
 ### Return Value
 

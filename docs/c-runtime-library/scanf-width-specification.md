@@ -26,33 +26,33 @@ If the *`width`* field isn't used, `scanf_s` attempts to read the entire token i
 
 ## The size prefix
 
-The optional prefixes **`h`**, **`hh`**, **`l`**, **`ll`**, **`I64`**, and **`L`** indicate the size of the `argument` (long or short, single-byte character or wide character, depending upon the type character that they modify). These format-specification characters are used with type characters in `scanf` or `wscanf` functions to specify interpretation of arguments as shown in the following table. The type prefix **`I64`** is a Microsoft extension and isn't compatible with Standard C. The type characters and their meanings are described in the "Type Characters for scanf functions" table in [`scanf` Type Field Characters](../c-runtime-library/scanf-type-field-characters.md).
+The optional prefixes **`h`**, **`hh`**, **`l`**, **`ll`**, **`I64`**, and **`L`** indicate the size of the `argument` (long or short, single-byte character or wide character, depending upon the type character that they modify). These format-specification characters are used with type characters in `scanf` or `wscanf` functions to specify interpretation of arguments as shown in the following table. The type prefix **`I64`** is a Microsoft extension and isn't compatible with Standard C. The type characters and their meanings are described in the "Type Characters for scanf functions" table in [`scanf` type field characters](./scanf-type-field-characters.md).
 
 > [!NOTE]
 > The **`h`**, **`l`**, and **`L`** prefixes are Microsoft extensions when used with data of type **`char`**.
 
 ### Size prefixes for `scanf` and `wscanf` format-type specifiers
 
-|To specify|Use prefix|With type specifier|
-|----------------|----------------|-------------------------|
-|**`double`**|**`l`**|**`e`**, **`E`**, **`f`**, **`g`**, or **`G`**|
-|**`long double`** (same as **`double`**)|**`L`**|**`e`**, **`E`**, **`f`**, **`g`**, or **`G`**|
-|**`long int`**|**`l`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`long unsigned int`**|**`l`**|**`u`**|
-|**`long long`**|**`ll`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`short int`**|**`h`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`short unsigned int`**|**`h`**|**`u`**|
-|**`char`**|**`hh`**|**`d`**, **`i`**, **`o`**, **`x`**, or **`X`**|
-|**`unsigned char`**|**`hh`**|**`u`**|
-|**`int64`**|**`I64`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
-|Single-byte character with `scanf`|**`h`**|**`c`** or **`C`**|
-|Single-byte character with `wscanf`|**`h`**|**`c`** or **`C`**|
-|Wide character with `scanf`|**`l`**|**`c`** or **`C`**|
-|Wide character with `wscanf`|**`l`**|**`c`**, or **`C`**|
-|Single-byte character string with `scanf`|**`h`**|**`s`** or **`S`**|
-|Single-byte character string with `wscanf`|**`h`**|**`s`** or **`S`**|
-|Wide character string with `scanf`|**`l`**|**`s`** or **`S`**|
-|Wide character string with `wscanf`|**`l`**|**`s`** or **`S`**|
+| To specify | Use prefix | With type specifier |
+|---|---|---|
+| **`double`** | **`l`** | **`e`**, **`E`**, **`f`**, **`g`**, or **`G`** |
+| **`long double`** (same as **`double`**) | **`L`** | **`e`**, **`E`**, **`f`**, **`g`**, or **`G`** |
+| **`long int`** | **`l`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`long unsigned int`** | **`l`** | **`u`** |
+| **`long long`** | **`ll`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`short int`** | **`h`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`short unsigned int`** | **`h`** | **`u`** |
+| **`char`** | **`hh`** | **`d`**, **`i`**, **`o`**, **`x`**, or **`X`** |
+| **`unsigned char`** | **`hh`** | **`u`** |
+| **`int64`** | **`I64`** | **`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
+| Single-byte character with `scanf` | **`h`** | **`c`** or **`C`** |
+| Single-byte character with `wscanf` | **`h`** | **`c`** or **`C`** |
+| Wide character with `scanf` | **`l`** | **`c`** or **`C`** |
+| Wide character with `wscanf` | **`l`** | **`c`**, or **`C`** |
+| Single-byte character string with `scanf` | **`h`** | **`s`** or **`S`** |
+| Single-byte character string with `wscanf` | **`h`** | **`s`** or **`S`** |
+| Wide character string with `scanf` | **`l`** | **`s`** or **`S`** |
+| Wide character string with `wscanf` | **`l`** | **`s`** or **`S`** |
 
 The following examples use **`h`** and **`l`** with `scanf_s` functions and `wscanf_s` functions:
 
@@ -89,7 +89,7 @@ For whatever reason, when the `scanf` function stops reading an input field, the
 
 ## See also
 
-[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[Format Specification Fields: `scanf` and `wscanf` Functions](../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md)<br/>
-[`scanf` Type Field Characters](../c-runtime-library/scanf-type-field-characters.md)<br/>
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](./reference/scanf-scanf-l-wscanf-wscanf-l.md)\
+[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](./reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)\
+[Format specification fields: `scanf` and `wscanf` functions](./format-specification-fields-scanf-and-wscanf-functions.md)\
+[`scanf` type field characters](./scanf-type-field-characters.md)

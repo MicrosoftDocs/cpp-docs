@@ -3,16 +3,16 @@ description: "Learn more about: _chsize"
 title: "_chsize"
 ms.date: "4/2/2020"
 api_name: ["_chsize", "_o__chsize"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_chsize"]
 helpviewer_keywords: ["size", "_chsize function", "size, changing file", "files [C++], changing size", "chsize function"]
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
 ---
-# _chsize
+# `_chsize`
 
-Changes the size of a file. A more secure version is available; see [_chsize_s](chsize-s.md).
+Changes the size of a file. A more secure version is available; see [`_chsize_s`](chsize-s.md).
 
 ## Syntax
 
@@ -25,33 +25,33 @@ int _chsize(
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*\
 File descriptor referring to an open file.
 
-*size*<br/>
+*`size`*\
 New length of the file in bytes.
 
-## Return Value
+## Return value
 
-**_chsize** returns the value 0 if the file size is successfully changed. A return value of -1 indicates an error: **errno** is set to **EACCES** if the specified file is read-only or the specified file is locked against access, to **EBADF** if the descriptor is invalid, **ENOSPC** if no space is left on the device, or **EINVAL** if *size* is less than zero.
+**`_chsize`** returns the value 0 if the file size is successfully changed. A return value of -1 indicates an error: `errno` is set to `EACCES` if the specified file is read-only or the specified file is locked against access, to `EBADF` if the descriptor is invalid, `ENOSPC` if no space is left on the device, or `EINVAL` if *`size`* is less than zero.
 
-See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_chsize** function extends or truncates the file associated with *fd* to the length specified by *size*. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
+The **`_chsize`** function extends or truncates the file associated with *`fd`* to the length specified by *`size`*. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
 
-This function validates its parameters. If *size* is less than zero or *fd* is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If *`size`* is less than zero or *`fd`* is a bad file descriptor, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**_chsize**|\<io.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_chsize`** | \<io.h> | \<errno.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -95,7 +95,7 @@ File length after:  329678
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](close.md)<br/>
-[_sopen, _wsopen](sopen-wsopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+[File handling](../file-handling.md)\
+[`_close`](close.md)\
+[`_sopen`, `_wsopen`](sopen-wsopen.md)\
+[`_open`, `_wopen`](open-wopen.md)

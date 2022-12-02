@@ -62,7 +62,7 @@ The `hash_map` orders the sequence it controls by calling a stored hash *`Traits
 
 In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they're equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate f(x y) is a function object that has two argument objects `x` and `y` and a return value of **`true`** or **`false`**. An ordering imposed on a `hash_map` is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects `x` and `y` are defined to be equivalent when both f(x, y) and f(y, x) are `false`. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
-The actual order of elements in the controlled sequence depends on the hash function, the ordering function, and the current size of the hash table stored in the container object. You can’t determine the current size of the hash table, so you can’t in general predict the order of elements in the controlled sequence. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had specifically pointed at the removed elements.
+The actual order of elements in the controlled sequence depends on the hash function, the ordering function, and the current size of the hash table stored in the container object. You can't determine the current size of the hash table, so you can't in general predict the order of elements in the controlled sequence. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had specifically pointed at the removed elements.
 
 The iterator provided by the `hash_map` class is a bidirectional iterator, but the class member functions [`insert`](#insert) and [`hash_map`](#hash_map) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements, and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it's enough to be able to talk meaningfully about a range of iterators `[First, Last)` in the context of the class member functions.
 
@@ -423,7 +423,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### Remarks
 
-A type `const_iterator` can’t be used to modify the value of an element.
+A type `const_iterator` can't be used to modify the value of an element.
 
 The `const_iterator` defined by `hash_map` points to elements that are objects of [`value_type`](#value_type), that is of type `pair< const Key, Type >`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
@@ -448,7 +448,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
 
 ### Remarks
 
-A type `const_pointer` can’t be used to modify the value of an element.
+A type `const_pointer` can't be used to modify the value of an element.
 
 In most cases, an [`iterator`](#iterator) should be used to access the elements in a `hash_map` object.
 
@@ -521,7 +521,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### Remarks
 
-A type `const_reverse_iterator` can’t modify the value of an element and is used to iterate through the `hash_map` in reverse.
+A type `const_reverse_iterator` can't modify the value of an element and is used to iterate through the `hash_map` in reverse.
 
 The `const_reverse_iterator` defined by `hash_map` points to elements that are objects of [`value_type`](#value_type), that is of type `pair< const Key, Type >`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
@@ -625,7 +625,7 @@ A `const` reverse bidirectional iterator addressing the first element in a rever
 
 `crbegin` is used with a reversed `hash_map` just as [`begin`](#begin) is used with a `hash_map`.
 
-With the return value of `crbegin`, the `hash_map` object can’t be modified.
+With the return value of `crbegin`, the `hash_map` object can't be modified.
 
 `crbegin` can be used to iterate through a `hash_map` backwards.
 
@@ -677,7 +677,7 @@ A `const` reverse bidirectional iterator that addresses the location succeeding 
 
 `crend` is used with a reversed `hash_map` just as [`hash_map::end`](#end) is used with a `hash_map`.
 
-With the return value of `crend`, the `hash_map` object can’t be modified.
+With the return value of `crend`, the `hash_map` object can't be modified.
 
 `crend` can be used to test to whether a reverse iterator has reached the end of its `hash_map`.
 
@@ -1261,7 +1261,7 @@ An iterator that addresses the location of an element with a specified key, or t
 
 `find` returns an iterator that addresses an element in the `hash_map` whose sort key is equivalent to the argument key under a binary predicate that induces an ordering based on a less than comparability relation.
 
-If the return value of `find` is assigned to a [`const_iterator`](#const_iterator), the `hash_map` object can’t be modified. If the return value of `find` is assigned to an [`iterator`](#iterator), the `hash_map` object can be modified
+If the return value of `find` is assigned to a [`const_iterator`](#const_iterator), the `hash_map` object can't be modified. If the return value of `find` is assigned to an [`iterator`](#iterator), the `hash_map` object can be modified
 
 ### Example
 
@@ -1813,7 +1813,7 @@ The argument key value to be compared with the sort key of an element from the `
 
 An [`iterator`](#iterator) or [`const_iterator`](#const_iterator) that addresses the location of an element in a `hash_map` that with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the `hash_map` if no match is found for the key.
 
-If the return value of `lower_bound` is assigned to a `const_iterator`, the `hash_map` object can’t be modified. If the return value of `lower_bound` is assigned to a `iterator`, the `hash_map` object can be modified.
+If the return value of `lower_bound` is assigned to a `const_iterator`, the `hash_map` object can't be modified. If the return value of `lower_bound` is assigned to a `iterator`, the `hash_map` object can be modified.
 
 ### Remarks
 
@@ -2122,7 +2122,7 @@ A reverse bidirectional iterator addressing the first element in a reversed `has
 
 `rbegin` is used with a reversed `hash_map` just as [`begin`](#begin) is used with a `hash_map`.
 
-If the return value of `rbegin` is assigned to a [`const_reverse_iterator`](#const_reverse_iterator), then the `hash_map` object can’t be modified. If the return value of `rbegin` is assigned to a [`reverse_iterator`](#reverse_iterator), then the `hash_map` object can be modified.
+If the return value of `rbegin` is assigned to a [`const_reverse_iterator`](#const_reverse_iterator), then the `hash_map` object can't be modified. If the return value of `rbegin` is assigned to a [`reverse_iterator`](#reverse_iterator), then the `hash_map` object can be modified.
 
 `rbegin` can be used to iterate through a `hash_map` backwards.
 
@@ -2269,7 +2269,7 @@ A reverse bidirectional iterator that addresses the location succeeding the last
 
 `rend` is used with a reversed `hash_map` just as [`end`](#end) is used with a `hash_map`.
 
-If the return value of `rend` is assigned to a [`const_reverse_iterator`](#const_reverse_iterator), then the `hash_map` object can’t be modified. If the return value of `rend` is assigned to a [`reverse_iterator`](#reverse_iterator), then the `hash_map` object can be modified.
+If the return value of `rend` is assigned to a [`const_reverse_iterator`](#const_reverse_iterator), then the `hash_map` object can't be modified. If the return value of `rend` is assigned to a [`reverse_iterator`](#reverse_iterator), then the `hash_map` object can be modified.
 
 `rend` can be used to test to whether a reverse iterator has reached the end of its `hash_map`.
 
@@ -2351,7 +2351,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
 
 ### Remarks
 
-A type `reverse_iterator` can’t modify the value of an element and is used to iterate through the `hash_map` in reverse.
+A type `reverse_iterator` can't modify the value of an element and is used to iterate through the `hash_map` in reverse.
 
 The `reverse_iterator` defined by `hash_map` points to elements that are objects of [value_type](#value_type), that is of type `pair<const Key, Type>`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
@@ -2526,7 +2526,7 @@ The argument key value to be compared with the sort key value of an element from
 
 An [`iterator`](#iterator) or [`const_iterator`](#const_iterator) that addresses the location of an element in a `hash_map` that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the `hash_map` if no match is found for the key.
 
-If the return value is assigned to a `const_iterator`, the `hash_map` object can’t be modified. If the return value is assigned to an `iterator`, the `hash_map` object can be modified.
+If the return value is assigned to a `const_iterator`, the `hash_map` object can't be modified. If the return value is assigned to an `iterator`, the `hash_map` object can be modified.
 
 ### Remarks
 

@@ -1,13 +1,13 @@
 ---
 title: "basic_string_view Class"
-description: "API reference for `basic_string_view` which refers to a constant contiguous sequence of char-like objects."
+description: "API reference for `basic_string_view`, which refers to a constant contiguous sequence of char-like objects."
 ms.date: "9/8/2020"
 f1_keywords: ["xstring/std::basic_string_view", "xstring/std::basic_string_view::allocator_type", "xstring/std::basic_string_view::const_iterator", "xstring/std::basic_string_view::const_pointer", "xstring/std::basic_string_view::const_reference", "xstring/std::basic_string_view::const_reverse_iterator", "xstring/std::basic_string_view::difference_type", "xstring/std::basic_string_view::ends_with", "xstring/std::basic_string_view::starts_with", "xstring/std::basic_string_view::iterator", "xstring/std::basic_string_view::npos", "xstring/std::basic_string_view::pointer", "xstring/std::basic_string_view::reference", "xstring/std::basic_string_view::reverse_iterator", "xstring/std::basic_string_view::size_type", "xstring/std::basic_string_view::traits_type", "xstring/std::basic_string_view::value_type", "xstring/std::basic_string_view::append", "xstring/std::basic_string_view::assign", "xstring/std::basic_string_view::at", "xstring/std::basic_string_view::back", "xstring/std::basic_string_view::begin", "xstring/std::basic_string_view::c_str", "xstring/std::basic_string_view::capacity", "xstring/std::basic_string_view::cbegin", "xstring/std::basic_string_view::cend", "xstring/std::basic_string_view::clear", "xstring/std::basic_string_view::compare", "xstring/std::basic_string_view::copy", "xstring/std::basic_string_view::_Copy_s", "xstring/std::basic_string_view::crbegin", "xstring/std::basic_string_view::crend", "xstring/std::basic_string_view::data", "xstring/std::basic_string_view::empty", "xstring/std::basic_string_view::end", "xstring/std::basic_string_view::erase", "xstring/std::basic_string_view::find", "xstring/std::basic_string_view::find_first_not_of", "xstring/std::basic_string_view::find_first_of", "xstring/std::basic_string_view::find_last_not_of", "xstring/std::basic_string_view::find_last_of", "xstring/std::basic_string_view::front", "xstring/std::basic_string_view::get_allocator", "xstring/std::basic_string_view::insert", "xstring/std::basic_string_view::length", "xstring/std::basic_string_view::max_size", "xstring/std::basic_string_view::pop_back", "xstring/std::basic_string_view::push_back", "xstring/std::basic_string_view::rbegin", "xstring/std::basic_string_view::rend", "xstring/std::basic_string_view::remove_prefix","xstring/std::basic_string_view::remove_suffix", "xstring/std::basic_string_view::replace", "xstring/std::basic_string_view::reserve", "xstring/std::basic_string_view::resize", "xstring/std::basic_string_view::rfind", "xstring/std::basic_string_view::shrink_to_fit", "xstring/std::basic_string_view::size", "xstring/std::basic_string_view::substr", "xstring/std::basic_string_view::swap"]
 helpviewer_keywords: ["std::basic_string_view", "std::basic_string_view, allocator_type", "std::basic_string_view, const_iterator", "std::basic_string_view, const_pointer", "std::basic_string_view, const_reference", "std::basic_string_view, const_reverse_iterator", "std::basic_string_view, difference_type", "std::basic_string_view, iterator", "std::basic_string_view, npos", "std::basic_string_view, pointer", "std::basic_string_view, reference", "std::basic_string_view, reverse_iterator", "std::basic_string_view, size_type", "std::basic_string_view, traits_type", "std::basic_string_view, value_type", "std::basic_string_view, append", "std::basic_string_view, assign", "std::basic_string_view, at", "std::basic_string_view, back", "std::basic_string_view, begin", "std::basic_string_view, c_str", "std::basic_string_view, capacity", "std::basic_string_view, cbegin", "std::basic_string_view, cend", "std::basic_string_view, clear", "std::basic_string_view, compare", "std::basic_string_view, copy", "std::basic_string_view, crbegin", "std::basic_string_view, crend", "std::basic_string_view, data", "std::basic_string_view, empty", "std::basic_string_view, end",  "std::basic_string_view, ends_with", "std::basic_string_view, erase", "std::basic_string_view, find", "std::basic_string_view, find_first_not_of", "std::basic_string_view, find_first_of", "std::basic_string_view, find_last_not_of", "std::basic_string_view, find_last_of", "std::basic_string_view, front", "std::basic_string_view, get_allocator", "std::basic_string_view, insert", "std::basic_string_view, length", "std::basic_string_view, max_size", "std::basic_string_view, pop_back", "std::basic_string_view, push_back", "std::basic_string_view, rbegin", "std::basic_string_view, rend", "std::basic_string_view, remove_prefix","std::basic_string_view, remove_suffix","std::basic_string_view, replace", "std::basic_string_view, reserve", "std::basic_string_view, resize", "std::basic_string_view, rfind", "std::basic_string_view, shrink_to_fit", "std::basic_string_view, size",  "std::basic_string_view, starts_with", "std::basic_string_view, substr", "std::basic_string_view, swap"]
 ---
-# `basic_string_view` Class
+# `basic_string_view` class
 
-The class template `basic_string_view<charT>` was added in C++17 to serve as a safe and efficient way for a function to accept various unrelated string types without the function having to be templatized on those types. The class holds a non-owning pointer to a contiguous sequence of character data, and a length that specifies the number of characters in the sequence. No assumption is made with respect to whether the sequence is null-terminated.
+The class template `basic_string_view<charT>` was added in C++17 to serve as a safe and efficient way for a function to accept various unrelated string types without the function having to be templatized on those types. The class holds a non-owning pointer to a contiguous sequence of character data, and a length that specifies the number of characters in the sequence. No assumption is made about whether the sequence is null-terminated.
 
 The standard library defines several specializations based on the type of the elements:
 
@@ -146,7 +146,7 @@ If a function is asked to generate a sequence longer than [`max_size`](#max_size
 
 ## <a name="at"></a> `basic_string_view::at`
 
-Returns a `const_reference` to the character at the specified 0-based index.
+Returns a `const_reference` to the character at the specified zero-based index.
 
 ```cpp
 constexpr const_reference at(size_type offset) const;
@@ -157,7 +157,7 @@ constexpr const_reference at(size_type offset) const;
 *`offset`*\
 The index of the element to be referenced.
 
-### Return Value
+### Return value
 
 A `const_reference` to the character at the position specified by the parameter index.
 
@@ -167,7 +167,7 @@ The first element has an index of zero and the following elements are indexed co
 
 In general, we recommend that **`at`** for sequences such as `std::vector` and `basic_string_view` should never be used. An invalid index passed to a sequence is a logic error that should be discovered and fixed during development. If a program isn't certain that its indices are valid, it should test them, not call `at()` and rely on exceptions to defend against careless programming.
 
-See [`basic_string_view::operator[]`](#op_at) for more information.
+For more information, see [`basic_string_view::operator[]`](#op_at).
 
 ### Example
 
@@ -194,7 +194,7 @@ Returns a `const_reference` to the last element.
 constexpr const_reference back() const;
 ```
 
-### Return Value
+### Return value
 
 A `const_reference` to the last element in the `basic_string_view`.
 
@@ -255,7 +255,7 @@ Same as [`cbegin`](#cbegin).
 constexpr const_iterator begin() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 Returns a `const_iterator` addressing the first element.
 
@@ -267,7 +267,7 @@ Returns a `const_iterator` that addresses the first element in the range.
 constexpr const_iterator cbegin() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A **`const`** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
@@ -279,7 +279,7 @@ Returns a `const_iterator` that addresses the location just beyond the last elem
 constexpr const_iterator cend() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A **`const`** random-access iterator that points just beyond the end of the range.
 
@@ -320,7 +320,7 @@ The index of *`strv`* at which the comparison begins.
 *`ptr`*\
 The C string to be compared to this `basic_string_view`.
 
-### Return Value
+### Return value
 
 - A negative value if this `basic_string_view` is less than *`strv`* or *`ptr`*
 - Zero if the two character sequences are equal
@@ -457,7 +457,7 @@ The number of characters to be copied, at most, from the source `basic_string_vi
 *`offset`*\
 The beginning position in the source `basic_string_view` from which copies are to be made.
 
-### Return Value
+### Return value
 
 The number of characters copied.
 
@@ -491,7 +491,7 @@ The number of characters to be copied, at most, from the source string.
 *`_Off`*\
 The beginning position in the source string from which copies are to be made.
 
-### Return Value
+### Return value
 
 The number of characters copied.
 
@@ -509,7 +509,7 @@ Returns a `const_reverse_iterator` that addresses the first element in a reverse
 constexpr const_reverse_iterator crbegin() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A `const_reverse_iterator` that addresses the first element in a reversed `basic_string_view`.
 
@@ -521,7 +521,7 @@ Same as [`rend`](#rend).
 constexpr const_reverse_iterator crend() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 Returns a `const_reverse_iterator` that addresses one past the end of a reversed `basic_string_view`.
 
@@ -533,13 +533,13 @@ Returns a raw non-owning pointer to the const character sequence of the object t
 constexpr value_type *data() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A pointer-to-const to the first element of the character sequence.
 
 ### Remarks
 
-The pointer can’t modify the characters.
+The pointer can't modify the characters.
 
 A sequence of `basic_string_view` characters isn't necessarily null-terminated. The return type for `data` isn't a valid C string, because no null character gets appended. The null character `\0` has no special meaning in an object of type `basic_string_view` and may be a part of the `basic_string_view` object just like any other character.
 
@@ -551,7 +551,7 @@ Tests whether the `basic_string_view` contains characters or not.
 constexpr bool empty() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 **`true`** if the `basic_string_view` object contains no characters; **`false`** if it has at least one character.
 
@@ -567,7 +567,7 @@ Returns a random-access `const_iterator` that points to one past the last elemen
 constexpr const_iterator end() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 Returns a random-access `const_iterator` that points to one past the last element.
 
@@ -597,7 +597,7 @@ You can pass a `std::basic_string`, which converts to a `basic_string_view`.
 *`x`*\
 Null-terminated character string containing the suffix to look for.
 
-### Return Value
+### Return value
 
 `true` if the string view ends with the specified suffix; `false` otherwise.
 
@@ -661,7 +661,7 @@ The C string for which the member function is to search.
 *`count`*\
 The number of characters in *`ptr`*, counting forward from the first character.
 
-### Return Value
+### Return value
 
 The index of the first character of the substring searched for when successful; otherwise `npos`.
 
@@ -693,7 +693,7 @@ The C string for which the member function is to search.
 *`count`*\
 The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
-### Return Value
+### Return value
 
 The index of the first character of the substring searched for when successful; otherwise `npos`.
 
@@ -725,7 +725,7 @@ The number of characters, counting forward from the first character, in the C st
 *`str`*\
 The `basic_string_view` for which the member function is to search.
 
-### Return Value
+### Return value
 
 The index of the first character of the substring searched for when successful; otherwise `npos`.
 
@@ -757,7 +757,7 @@ The C string for which the member function is to search.
 *`count`*\
 The number of characters, counting forward from the first character, in *`ptr`*.
 
-### Return Value
+### Return value
 
 The index of the first character of the substring searched for when successful; otherwise `string_view::npos`.
 
@@ -789,7 +789,7 @@ The C string for which the member function is to search.
 *`count`*\
 The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
-### Return Value
+### Return value
 
 The index of the last character of the substring searched for when successful; otherwise `npos`.
 
@@ -801,7 +801,7 @@ Returns a `const_reference` to the first element.
 constexpr const_reference front() const;
 ```
 
-### Return Value
+### Return value
 
 A `const_reference` to the first element.
 
@@ -829,7 +829,7 @@ Returns the maximum number of characters a `basic_string_view` can contain.
 constexpr size_type max_size() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 The maximum number of characters a `basic_string_view` can contain.
 
@@ -865,7 +865,7 @@ constexpr const_reference operator[](size_type offset) const;
 *`offset`*\
 The index of the element to be referenced.
 
-### Return Value
+### Return value
 
 A `const_reference` to the character at the position specified by the parameter index.
 
@@ -889,7 +889,7 @@ Returns a `const` iterator to the first element in a reversed `basic_string_view
 constexpr const_reverse_iterator rbegin() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 Returns a random-access iterator to the first element in a reversed `basic_string_view`, addressing what would be the last element in the corresponding unreversed `basic_string_view`.
 
@@ -929,7 +929,7 @@ Returns a `const` iterator that points to one past the last element in a reverse
 constexpr reverse_iterator rend() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 A `const` reverse random-access iterator that points to one past the last element in a reversed `basic_string_view`.
 
@@ -965,7 +965,7 @@ The number of characters, counting forward from the first character, in the C st
 *`str`*\
 The `basic_string_view` for which the member function is to search.
 
-### Return Value
+### Return value
 
 The index of the first character of the substring when successful; otherwise `npos`.
 
@@ -977,7 +977,7 @@ Returns the number of elements in the `basic_string_view`.
 constexpr size_type size() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 The length of the `basic_string_view`.
 
@@ -1007,7 +1007,7 @@ You can pass a `std::basic_string`, which converts to a string view.
 *`x`*\
 Null-terminated character string containing the prefix to look for.
 
-### Return Value
+### Return value
 
 `true` if the string starts with the specified prefix; `false` otherwise.
 
@@ -1059,7 +1059,7 @@ An index locating the element at the position from which the copy is made, with 
 *`count`*\
 The number of characters to include in the substring, if they're present.
 
-### Return Value
+### Return value
 
 A `basic_string_view` object that represents the specified subsequence of elements.
 

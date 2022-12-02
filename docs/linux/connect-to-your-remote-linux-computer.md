@@ -50,7 +50,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    sudo service ssh start
    ```
 
-1. If you’d like the ssh server to start automatically when the system boots, enable it using systemctl:
+1. If you'd like the ssh server to start automatically when the system boots, enable it using systemctl:
 
    ```bash
    sudo systemctl enable ssh
@@ -102,7 +102,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 ## Host key verification
 
-In Visual Studio version 16.10 or later, you'll be asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you’ve used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
+In Visual Studio version 16.10 or later, you'll be asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you've used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
 
 The first time Visual Studio establishes a new remote connection, you'll be asked to accept or deny the host key fingerprint presented by the server. Or, anytime there are changes to a cached fingerprint. You can also verify a fingerprint on demand: select a connection in the Connection Manager and choose **Verify**.
 
@@ -116,8 +116,8 @@ Starting in Visual Studio version 16.9, support for older, insecure SSH algorith
 
 | Algorithm type | Supported algorithms |
 |--|--|
-| Encryption | `aes128-cbc`</br>`aes128-cbc`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
-| HMAC | `hmac-sha2-256`</br>`hmac-sha2-256` |
+| Encryption | `aes128-cbc`</br>`aes128-ctr`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
+| HMAC | `hmac-sha2-256`</br>`hmac-sha2-512` |
 | Key exchange | `diffie-hellman-group14-sha256`</br>`diffie-hellman-group16-sha512`</br>`diffie-hellman-group-exchange-sha256`</br>`ecdh-sha2-nistp256`</br>`ecdh-sha2-nistp384`</br>`ecdh-sha2-nistp521` |
 | Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`ssh-dss`</br>`ssh-rsa` |
 

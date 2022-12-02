@@ -42,55 +42,54 @@ int _fwprintf_l(
 
 ### Parameters
 
-*`stream`*<br/>
-Pointer to **FILE** structure.
+*`stream`*\
+Pointer to `FILE` structure.
 
-*`format`*<br/>
+*`format`*\
 Format-control string.
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments.
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-**`fprintf`** returns the number of bytes written. **`fwprintf`** returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *`stream`* or *`format`* is **`NULL`**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **`errno`** to **`EINVAL`**. The format string is not checked for valid formatting characters as it is when using **`fprintf_s`** or **`fwprintf_s`**.
+**`fprintf`** returns the number of bytes written. **`fwprintf`** returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *`stream`* or *`format`* is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`. The format string isn't checked for valid formatting characters as it is when using **`fprintf_s`** or **`fwprintf_s`**.
 
-See [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
+For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-**`fprintf`** formats and prints a series of characters and values to the output *`stream`*. Each function *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. For **`fprintf`**, the *`format`* argument has the same syntax and use that it has in **`printf`**.
+**`fprintf`** formats and prints a series of characters and values to the output *`stream`*. Each function *`argument`* (if any) is converted and output according to the corresponding format specification in *`format`*. For **`fprintf`**, the *`format`* argument has the same syntax that it has in **`printf`**.
 
-**`fwprintf`** is a wide-character version of **`fprintf`**; in **`fwprintf`**, *`format`* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **`fprintf`** does not currently support output into a UNICODE stream.
+**`fwprintf`** is a wide-character version of **`fprintf`**; in **`fwprintf`**, *`format`* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **`fprintf`** doesn't currently support output into a UNICODE stream.
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
-> Ensure that *format* is not a user-defined string.
->
+> Ensure that *`format`* is not a user-defined string.
 >
 > Starting in Windows 10 version 2004  (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_ftprintf`**|**`fprintf`**|**`fprintf`**|**`fwprintf`**|
-|**`_ftprintf_l`**|**`_fprintf_l`**|**`_fprintf_l`**|**`_fwprintf_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_ftprintf`** | **`fprintf`** | **`fprintf`** | **`fwprintf`** |
+| **`_ftprintf_l`** | **`_fprintf_l`** | **`_fprintf_l`** | **`_fwprintf_l`** |
 
-For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fprintf`**, **`_fprintf_l`**|`<stdio.h>`|
-|**`fwprintf`**, **`_fwprintf_l`**|`<stdio.h>` or `<wchar.h>`|
+| Function | Required header |
+|---|---|
+| **`fprintf`**, **`_fprintf_l`** | `<stdio.h>` |
+| **`fwprintf`**, **`_fwprintf_l`** | `<stdio.h>` or `<wchar.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -131,8 +130,8 @@ this is a string
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[`fscanf`, `_fscanf_l`, `fwscanf`, `_fwscanf_l`](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `_swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[Format Specification Syntax: `printf` and `wprintf` Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
+[`fscanf`, `_fscanf_l`, `fwscanf`, `_fwscanf_l`](fscanf-fscanf-l-fwscanf-fwscanf-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `_swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md)

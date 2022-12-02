@@ -10,15 +10,25 @@ C++20 introduces *modules*, a modern solution that turns C++ libraries and progr
 
 You can use modules side by side with header files. A C++ source file can `import` modules and also `#include` header files. In some cases, you can import a header file as a module rather than include it textually by using `#include` in the preprocessor. We recommend you use modules in new projects rather than header files as much as possible. For larger existing projects under active development, experiment with converting legacy headers to modules. Base your adoption on whether you get a meaningful reduction in compilation times.
 
+To contrast modules with other ways to import the standard library, see [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md).
+
 ## Enable modules in the Microsoft C++ compiler
 
-Modules have had experimental support in the Microsoft C++ compiler for a long time. As of Visual Studio 2022 version 17.1, C++20 standard modules are fully implemented in the Microsoft C++ compiler. You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for Standard Library modules, compile with [`/experimental:module`](../build/reference/experimental-module.md) and [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md). In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
+As of Visual Studio 2022 version 17.1, C++20 standard modules are fully implemented in the Microsoft C++ compiler.
+
+Before it was specified by the C++20 standard, Microsoft had experimental support for modules in the Microsoft C++ compiler. The compiler also supported importing the Standard Library as modules, described below.
+
+Starting with Visual Studio 2022 version 17.5, importing the Standard Library as a module is both standardized and fully implemented in the Microsoft C++ compiler. This section describes the older, experimental method, which is still supported. For information about the new standardized way to import the Standard Library using modules, see [Import the C++ standard library using modules](tutorial-import-stl-named-module.md).
+
+You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for Standard Library modules, compile with [`/experimental:module`](../build/reference/experimental-module.md) and [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md). In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
 
 A module and the code that consumes it must be compiled with the same compiler options.
 
-## Consume the C++ Standard Library as modules
+## Consume C++ Standard Library as modules (experimental)
 
-Although not specified by the C++20 standard, Microsoft makes its implementation of the C++ Standard Library importable as modules. By importing the C++ Standard Library as modules rather than including it through header files, you can potentially speed up compilation times depending on the size of your project. The library is split into the following named modules:
+This section describes the experimental implementation, which is still supported. The new standardized way of consuming the C++ Standard Library as modules is described in [Import the C++ standard library using modules](tutorial-import-stl-named-module.md).
+
+By importing the C++ Standard Library as modules rather than including it through header files, you can potentially speed up compilation times depending on the size of your project. The experimental library is split into the following named modules:
 
 - `std.regex` provides the content of header `<regex>`
 - `std.filesystem` provides the content of header `<filesystem>`
@@ -99,7 +109,7 @@ The `import` declaration can appear only at global scope.
 
 ## Implementing modules
 
-A *module interface* exports the module name and all the namespaces, types, functions and so on that make up the public interface of the module. A *module implementation* defines the things exported by the module. In its simplest form, a module can consist of a single file that combines the module interface and implementation. You can also put the implementations in one or more separate module implementation files, similar to how *`.h`* and *`.cpp`* files are used.
+A *module interface* exports the module name and all the namespaces, types, functions, and so on that make up the public interface of the module. A *module implementation* defines the things exported by the module. In its simplest form, a module can consist of a single file that combines the module interface and implementation. You can also put the implementations in one or more separate module implementation files, similar to how *`.h`* and *`.cpp`* files are used.
 
 For larger modules, you can split parts of the module into submodules called *partitions*. Each partition consists of a module interface file that exports a module partition name. A partition may also have one or more partition implementation files. The module as a whole has one *primary module interface*, the public interface of the module that may also import and export the partition interfaces.
 
@@ -192,4 +202,5 @@ import "myheader.h";
 ## See also
 
 [`module`, `import`, `export`](import-export-module.md)\
-[Named modules tutorial](tutorial-named-modules-cpp.md)
+[Named modules tutorial](tutorial-named-modules-cpp.md)\
+[Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md)

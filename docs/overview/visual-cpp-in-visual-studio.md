@@ -1,7 +1,7 @@
 ---
 title: "C and C++ in Visual Studio"
 description: "Learn how to use the Microsoft C/C++ compiler and related tools to develop C++ and assembly programs for Windows, Linux, Android, and iOS."
-ms.date: 04/20/2022
+ms.date: 09/29/2022
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
@@ -43,14 +43,20 @@ helpviewer_keywords: ["Visual C++, home page"]
 
 :::moniker-end
 
-Microsoft Visual C++ (MSVC) refers to the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create Universal Windows Platform (UWP) apps, native Windows desktop and server applications, cross-platform libraries and apps that run on Windows, Linux, Android, and iOS, as well as managed apps and libraries that use the .NET Framework. You can use MSVC to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop, from device drivers and operating system components to cross-platform games for mobile devices, and from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
+Microsoft Visual C++ (MSVC) refers to the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create native Windows desktop and server applications, Universal Windows Platform (UWP) apps, or managed apps and libraries that use the .NET Framework. Create cross-platform libraries and apps that run on Windows, Linux, Android, and iOS. You can use MSVC to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop. Write device drivers and operating system components or cross-platform games for mobile devices. Target anything from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
 
 Visual Studio 2015, 2017, 2019, and 2022 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
 
 ## What's new for C++ in Visual Studio
 
-[What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
-Find out what's new in Visual Studio.
+[What's New for C++ in Visual Studio 2022](what-s-new-for-visual-cpp-in-visual-studio.md)\
+Find out what's new in Visual Studio 2022.
+
+[What's New for C++ in Visual Studio 2019](./what-s-new-for-cpp-2019.md)\
+Find out what's new in Visual Studio 2019.
+
+[What's New for C++ in Visual Studio 2017](./what-s-new-for-cpp-2017.md)\
+Find out what's new in Visual Studio 2017.
 
 [What's New for C++ in Visual Studio 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)\
 Find out what was new in C++ for each version of Visual Studio from 2003 through 2015.
@@ -70,7 +76,7 @@ Learn about the breaking changes in previous versions.
 Download Visual Studio and install the Microsoft C/C++ toolset.
 
 [Microsoft C++ porting and upgrading guide](../porting/visual-cpp-porting-and-upgrading-guide.md)\
-Guidance for porting code and upgrading projects to Visual Studio 2015 or later to take advantage of greater compiler conformance to the C++ standard as well as greatly improved compilation times and security features such as Spectre mitigation.
+Guidance for porting code and upgrading projects to Visual Studio 2015 or later. Take advantage of greater compiler conformance to the C++ standard, greatly improved compilation times, and security features such as Spectre mitigation.
 
 [C++ tools and features in Visual Studio editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)\
 Find out about different Visual Studio editions.
@@ -127,7 +133,7 @@ Find guides and reference content on the Windows Developer Center. For informati
 Use the Visual Studio IDE to code and deploy to a remote Linux machine for compilation with GCC.
 
 [Create C/C++ DLLs in Visual Studio](../build/dlls-in-visual-cpp.md)\
-Find out how to use Win32, ATL, and MFC to create Windows desktop DLLs, and provides information about how to compile and register your DLL.
+Find out how to use Win32, ATL, and MFC to create Windows desktop DLLs. Provides information about how to compile and register your DLL.
 
 [Parallel programming](../parallel/parallel-programming-in-visual-cpp.md)\
 Learn how to use the Parallel Patterns Library, C++ AMP, OpenMP, and other features that are related to multithreading on Windows.
@@ -155,7 +161,7 @@ The reference guide to the Microsoft implementation of the C programming languag
 [C/C++ preprocessor reference](../preprocessor/c-cpp-preprocessor-reference.md)\
 A common reference to the shared C and C++ language preprocessor.
 
-[C++/CX language reference](/cpp/cppcx/visual-c-language-reference-c-cx)\
+[C++/CX language reference](../cppcx/visual-c-language-reference-c-cx.md)\
 The reference guide to the Microsoft extensions to the C++ language for creating C++ Universal Windows Platform apps, C++ Windows runtime components that can be consumed by JavaScript-based Windows apps, and Windows DirectX games and graphics-intensive apps.
 
 [C++/CLI language reference](https://www.ecma-international.org/wp-content/uploads/ECMA-372_1st_edition_december_2005.pdf)\
@@ -198,8 +204,8 @@ The cross-platform **vcpkg** command-line tool greatly simplifies the discovery 
 
 ## Visual Studio C++ feedback and community
 
-[Microsoft Docs Q&A](/answers/topics/c%2B%2B.html)\
-Microsoft Docs hosts searchable forums for questions and answers. Add a `C++` tag to your post for community assistance on C++-related issues.
+[Microsoft Learn Q&A](/answers/topics/c%2B%2B.html)\
+Microsoft Learn hosts searchable forums for questions and answers. Add a `C++` tag to your post for community assistance on C++-related issues.
 
 [How to report a problem with the Microsoft C/C++ toolset](how-to-report-a-problem-with-the-visual-cpp-toolset.md)\
 Learn how to create effective error reports against the Microsoft C/C++ toolset (compiler, linker, and other tools), and ways to submit your report.

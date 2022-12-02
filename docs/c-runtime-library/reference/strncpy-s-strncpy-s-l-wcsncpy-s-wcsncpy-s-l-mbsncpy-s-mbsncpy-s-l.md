@@ -3,7 +3,7 @@ description: "Learn more about: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l
 title: "strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l", "_o__mbsncpy_s", "_o__mbsncpy_s_l", "_o_strncpy_s", "_o_wcsncpy_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsncpy_s", "_wcsncpy_s_l", "strncpy_s", "_strncpy_s_l", "wcsncpy_s", "_tcsncpy_s_l"]
@@ -12,7 +12,7 @@ ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
 ---
 # `strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`
 
-Copies characters of one string to another.  These versions of [`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Copies characters of one string to another.  These versions of [`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > **`_mbsncpy_s`** and **`_mbsncpy_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -102,39 +102,39 @@ errno_t _mbsncpy_s_l(
 
 ### Parameters
 
-*`strDest`*<br/>
+*`strDest`*\
 Destination string.
 
-*`numberOfElements`*<br/>
+*`numberOfElements`*\
 The size of the destination string, in characters.
 
-*`strSource`*<br/>
+*`strSource`*\
 Source string.
 
-*`count`*<br/>
-Number of characters to be copied, or [`_TRUNCATE`](../../c-runtime-library/truncate.md).
+*`count`*\
+Number of characters to be copied, or [`_TRUNCATE`](../truncate.md).
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-Zero if successful, **`STRUNCATE`** if truncation occurred, otherwise an error code.
+Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.
 
-### Error Conditions
+### Error conditions
 
-|*`strDest`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDest`*|
-|---------------|------------------------|-----------------|------------------|---------------------------|
-|**`NULL`**|any|any|**`EINVAL`**|not modified|
-|any|any|**`NULL`**|**`EINVAL`**|*`strDest[0]`* set to 0|
-|any|0|any|**`EINVAL`**|not modified|
-|not **`NULL`**|too small|any|**`ERANGE`**|*`strDest[0]`* set to 0|
+| *`strDest`* | *`numberOfElements`* | *`strSource`* | Return value | Contents of *`strDest`* |
+|---|---|---|---|---|
+| `NULL` | any | any | `EINVAL` | not modified |
+| any | any | `NULL` | `EINVAL` | *`strDest[0]`* set to 0 |
+| any | 0 | any | `EINVAL` | not modified |
+| not `NULL` | too small | any | `ERANGE` | *`strDest[0]`* set to 0 |
 
 ## Remarks
 
-These functions try to copy the first *`D`* characters of *`strSource`* to *`strDest`*, where *`D`* is the lesser of *`count`* and the length of *`strSource`*. If those *`D`* characters will fit within *`strDest`* (whose size is given as *`numberOfElements`*) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, *`strDest[0]`* is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions try to copy the first *`D`* characters of *`strSource`* to *`strDest`*, where *`D`* is the lesser of *`count`* and the length of *`strSource`*. If those *`D`* characters will fit within *`strDest`* (whose size is given as *`numberOfElements`*) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, *`strDest[0]`* is set to the null character and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-There is an exception to the above paragraph. If *`count`* is **`_TRUNCATE`**, then as much of *`strSource`* as will fit into *`strDest`* is copied while still leaving room for the terminating null which is always appended.
+There's an exception to the above paragraph. If *`count`* is `_TRUNCATE`, then as much of *`strSource`* as will fit into *`strDest`* is copied while still leaving room for the terminating null, which is always appended.
 
 For example,
 
@@ -143,50 +143,50 @@ char dst[5];
 strncpy_s(dst, 5, "a long string", 5);
 ```
 
-means that we are asking **`strncpy_s`** to copy five characters into a buffer five bytes long; this would leave no space for the null terminator, hence **`strncpy_s`** zeroes out the string and calls the invalid parameter handler.
+means that **`strncpy_s`** copies five characters into a 5-byte buffer. This copy would leave no space for the null terminator, so **`strncpy_s`** zeroes out the string, and calls the invalid parameter handler.
 
-If truncation behavior is needed, use **`_TRUNCATE`** or (*`size`* - 1):
+If truncation behavior is needed, use `_TRUNCATE` or (*`size`* - 1):
 
 ```C
 strncpy_s(dst, 5, "a long string", _TRUNCATE);
 strncpy_s(dst, 5, "a long string", 4);
 ```
 
-Note that unlike **`strncpy`**, if *`count`* is greater than the length of *`strSource`*, the destination string is NOT padded with null characters up to length *`count`*.
+Unlike **`strncpy`**, if *`count`* is greater than the length of *`strSource`*, the destination string is NOT padded with null characters up to length *`count`*.
 
 The behavior of **`strncpy_s`** is undefined if the source and destination strings overlap.
 
-If *`strDest`* or *`strSource`* is **`NULL`**, or *`numberOfElements`* is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
+If *`strDest`* or *`strSource`* is `NULL`, or *`numberOfElements`* is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`.
 
 **`wcsncpy_s`** and **`_mbsncpy_s`** are wide-character and multibyte-character versions of **`strncpy_s`**. The arguments and return value of **`wcsncpy_s`** and **`mbsncpy_s`** do vary accordingly. These six functions behave identically otherwise.
 
-The output value is affected by the setting of the **`LC_CTYPE`** category setting of the locale; see [`setlocale`](setlocale-wsetlocale.md) for more information. The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsncpy_s`**|**`strncpy_s`**|**`_mbsnbcpy_s`**|**`wcsncpy_s`**|
-|**`_tcsncpy_s_l`**|**`_strncpy_s_l`**|**`_mbsnbcpy_s_l`**|**`_wcsncpy_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcsncpy_s` | **`strncpy_s`** | **`_mbsnbcpy_s`** | **`wcsncpy_s`** |
+| `_tcsncpy_s_l` | **`_strncpy_s_l`** | **`_mbsnbcpy_s_l`** | **`_wcsncpy_s_l`** |
 
 > [!NOTE]
-> **`_strncpy_s_l`**, **`_wcsncpy_s_l`** and **`_mbsncpy_s_l`** have no locale dependence and are provided just for **`_tcsncpy_s_l`** and are not intended to be called directly.
+> **`_strncpy_s_l`**, **`_wcsncpy_s_l`** and **`_mbsncpy_s_l`** have no locale dependence. They're provided just for `_tcsncpy_s_l` and aren't intended to be called directly.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strncpy_s`**, **`_strncpy_s_l`**|`<string.h>`|
-|**`wcsncpy_s`**, **`_wcsncpy_s_l`**|`<string.h>` or `<wchar.h>`|
-|**`_mbsncpy_s`**, **`_mbsncpy_s_l`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strncpy_s`**, **`_strncpy_s_l`** | `<string.h>` |
+| **`wcsncpy_s`**, **`_wcsncpy_s_l`** | `<string.h>` or `<wchar.h>` |
+| **`_mbsncpy_s`**, **`_mbsncpy_s_l`** | `<mbstring.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example: Copy chars to a buffer
 
@@ -361,16 +361,16 @@ After strncpy_s (with null-termination):
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[`_mbsnbcpy`, `_mbsnbcpy_l`](mbsnbcpy-mbsnbcpy-l.md)<br/>
-[`strcat_s`, `wcscat_s`, `_mbscat_s`](strcat-s-wcscat-s-mbscat-s.md)<br/>
-[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)<br/>
-[`strcpy_s`, `wcscpy_s`, `_mbscpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
-[`strncat_s`, `_strncat_s_l`, `wcsncat_s`, `_wcsncat_s_l`, `_mbsncat_s`, `_mbsncat_s_l`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)<br/>
-[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[`_mbsnbcpy`, `_mbsnbcpy_l`](mbsnbcpy-mbsnbcpy-l.md)\
+[`strcat_s`, `wcscat_s`, `_mbscat_s`](strcat-s-wcscat-s-mbscat-s.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcpy_s`, `wcscpy_s`, `_mbscpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md)\
+[`strncat_s`, `_strncat_s_l`, `wcsncat_s`, `_wcsncat_s_l`, `_mbsncat_s`, `_mbsncat_s_l`](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

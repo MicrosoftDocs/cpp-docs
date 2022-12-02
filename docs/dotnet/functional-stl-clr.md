@@ -1,15 +1,15 @@
 ---
 description: "Learn more about: functional (STL/CLR)"
 title: "functional (STL/CLR)"
-ms.date: "11/04/2016"
+ms.date: 09/28/2022
 ms.topic: "reference"
 f1_keywords: ["<cliext/functional>", "cliext::binary_delegate", "cliext::binary_delegate_noreturn", "cliext::binary_negate", "cliext::bind1st", "cliext::bind2nd", "cliext::binder1st", "cliext::binder2nd", "cliext::divides", "cliext::equal_to", "cliext::greater", "cliext::greater_equal", "cliext::less", "cliext::less_equal", "cliext::logical_and", "cliext::logical_not", "cliext::logical_or", "cliext::minus", "cliext::modulus", "cliext::multiplies", "cliext::negate", "cliext::not_equal_to", "cliext::not1", "cliext::not2", "cliext::plus", "cliext::unary_delegate", "cliext::unary_delegate_noreturn", "cliext::unary_negate"]
 helpviewer_keywords: ["<functional> header [STL/CLR]", "<cliext/functional> header [STL/CLR]", "functional functions [STL/CLR]", "binary_delegate function [STL/CLR]", "binary_delegate_noreturn function [STL/CLR]", "binary_negate function [STL/CLR]", "bind1st function [STL/CLR]", "bind2nd function [STL/CLR]", "binder1st function [STL/CLR]", "binder2nd function [STL/CLR]", "divides function [STL/CLR]", "equal_to function [STL/CLR]", "greater function [STL/CLR]", "greater_equal function [STL/CLR]", "less function [STL/CLR]", "less_equal function [STL/CLR]", "logical_and function [STL/CLR]", "logical_not function [STL/CLR]", "logical_or function [STL/CLR]", "minus function [STL/CLR]", "modulus function [STL/CLR]", "multiplies function [STL/CLR]", "negate function [STL/CLR]", "not_equal_to function [STL/CLR]", "not1 function [STL/CLR]", "not2 function [STL/CLR]", "plus function [STL/CLR]", "unary_delegate function [STL/CLR]", "unary_delegate_noreturn function [STL/CLR]", "unary_negate function [STL/CLR]"]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
 ---
-# functional (STL/CLR)
+# `functional` (STL/CLR)
 
-Include the STL/CLR header `<cliext/functional>` to define the a number of template classes and related template delegates and functions.
+Include the STL/CLR header `<cliext/functional>` to define functional class templates and related template delegates and functions.
 
 ## Syntax
 
@@ -21,51 +21,51 @@ Include the STL/CLR header `<cliext/functional>` to define the a number of templ
 
 **Header:** \<cliext/functional>
 
-**Namespace:** cliext
+**Namespace:** `cliext`
 
 ## Declarations
 
-|Delegate|Description|
-|--------------|-----------------|
-|[binary_delegate (STL/CLR)](#binary_delegate)|Two-argument delegate.|
-|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|Two-argument delegate returning **`void`**.|
-|[unary_delegate (STL/CLR)](#unary_delegate)|One-argument delegate.|
-|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|One-argument delegate returning **`void`**.|
+| Delegate | Description |
+|--|--|
+| [`binary_delegate` (STL/CLR)](#binary_delegate) | Two-argument delegate. |
+| [`binary_delegate_noreturn` (STL/CLR)](#binary_delegate_noreturn) | Two-argument delegate returning **`void`**. |
+| [`unary_delegate` (STL/CLR)](#unary_delegate) | One-argument delegate. |
+| [`unary_delegate_noreturn` (STL/CLR)](#unary_delegate_noreturn) | One-argument delegate returning **`void`**. |
 
-|Class|Description|
-|-----------|-----------------|
-|[binary_negate (STL/CLR)](#binary_negate)|Functor to negate a two-argument functor.|
-|[binder1st (STL/CLR)](#binder1st)|Functor to bind first argument to a two-argument functor.|
-|[binder2nd (STL/CLR)](#binder2nd)|Functor to bind second argument to a two-argument functor.|
-|[divides (STL/CLR)](#divides)|Divide functor.|
-|[equal_to (STL/CLR)](#equal_to)|Equal comparison functor.|
-|[greater (STL/CLR)](#greater)|Greater comparison functor.|
-|[greater_equal (STL/CLR)](#greater_equal)|Greater or equal comparison functor.|
-|[less (STL/CLR)](#less)|Less comparison functor.|
-|[less_equal (STL/CLR)](#less_equal)|Less or equal comparison functor.|
-|[logical_and (STL/CLR)](#logical_and)|Logical AND functor.|
-|[logical_not (STL/CLR)](#logical_not)|Logical NOT functor.|
-|[logical_or (STL/CLR)](#logical_or)|Logical OR functor.|
-|[minus (STL/CLR)](#minus)|Subtract functor.|
-|[modulus (STL/CLR)](#modulus)|Modulus functor.|
-|[multiplies (STL/CLR)](#multiplies)|Multiply functor.|
-|[negate (STL/CLR)](#negate)|Functor to return its argument negated.|
-|[not_equal_to (STL/CLR)](#not_equal_to)|Not equal comparison functor.|
-|[plus (STL/CLR)](#plus)|Add functor.|
-|[unary_negate (STL/CLR)](#unary_negate)|Functor to negate a one-argument functor.|
+| Class | Description |
+|--|--|
+| [`binary_negate` (STL/CLR)](#binary_negate) | Functor to negate a two-argument functor. |
+| [`binder1st` (STL/CLR)](#binder1st) | Functor to bind first argument to a two-argument functor. |
+| [`binder2nd` (STL/CLR)](#binder2nd) | Functor to bind second argument to a two-argument functor. |
+| [`divides` (STL/CLR)](#divides) | Divide functor. |
+| [`equal_to` (STL/CLR)](#equal_to) | Equal comparison functor. |
+| [`greater` (STL/CLR)](#greater) | Greater comparison functor. |
+| [`greater_equal` (STL/CLR)](#greater_equal) | Greater or equal comparison functor. |
+| [`less` (STL/CLR)](#less) | Less comparison functor. |
+| [`less_equal` (STL/CLR)](#less_equal) | Less or equal comparison functor. |
+| [`logical_and` (STL/CLR)](#logical_and) | Logical AND functor. |
+| [`logical_not` (STL/CLR)](#logical_not) | Logical NOT functor. |
+| [`logical_or` (STL/CLR)](#logical_or) | Logical OR functor. |
+| [`minus` (STL/CLR)](#minus) | Subtract functor. |
+| [`modulus` (STL/CLR)](#modulus) | Modulus functor. |
+| [`multiplies` (STL/CLR)](#multiplies) | Multiply functor. |
+| [`negate` (STL/CLR)](#negate) | Functor to return its argument negated. |
+| [`not_equal_to` (STL/CLR)](#not_equal_to) | Not equal comparison functor. |
+| [`plus` (STL/CLR)](#plus) | Add functor. |
+| [`unary_negate` (STL/CLR)](#unary_negate) | Functor to negate a one-argument functor. |
 
-|Function|Description|
-|--------------|-----------------|
-|[bind1st (STL/CLR)](#bind1st)|Generates a binder1st for an argument and functor.|
-|[bind2nd (STL/CLR)](#bind2nd)|Generates a binder2nd for an argument and functor.|
-|[not1 (STL/CLR)](#not1)|Generates a unary_negate for a functor.|
-|[not2 (STL/CLR)](#not2)|Generates a binary_negate for a functor.|
+| Function | Description |
+|--|--|
+| [`bind1st` (STL/CLR)](#bind1st) | Generates a binder1st for an argument and functor. |
+| [`bind2nd` (STL/CLR)](#bind2nd) | Generates a binder2nd for an argument and functor. |
+| [`not1` (STL/CLR)](#not1) | Generates a unary_negate for a functor. |
+| [`not2` (STL/CLR)](#not2) | Generates a binary_negate for a functor. |
 
 ## Members
 
-## <a name="binary_delegate"></a> binary_delegate (STL/CLR)
+## <a name="binary_delegate"></a> `binary_delegate` (STL/CLR)
 
-The genereic class describes a two-argument delegate. You use it specify a delegate in terms of its argument and return types.
+The generic class describes a two-argument delegate. You use it specify a delegate in terms of its argument and return types.
 
 ### Syntax
 
@@ -78,20 +78,20 @@ generic<typename Arg1,
 
 #### Parameters
 
-*Arg1*<br/>
+*`Arg1`*\
 The type of the first argument.
 
-*Arg2*<br/>
+*`Arg2`*\
 The type of the second argument.
 
-*Result*<br/>
+*`Result`*\
 The return type.
 
 ### Remarks
 
-The genereic delegate describes a two-argument function.
+The generic delegate describes a two-argument function.
 
-Note that for:
+In these function templates:
 
 `binary_delegate<int, int, int> Fun1;`
 
@@ -103,7 +103,7 @@ the types `Fun1` and `Fun2` are synonyms, while for:
 
 `delegate int Fun2(int, int);`
 
-they are not the same type.
+they aren't the same type.
 
 ### Example
 
@@ -139,9 +139,9 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="binary_delegate_noreturn"></a> binary_delegate_noreturn (STL/CLR)
+## <a name="binary_delegate_noreturn"></a> `binary_delegate_noreturn` (STL/CLR)
 
-The genereic class describes a two-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument.
+The generic class describes a two-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument.
 
 ### Syntax
 
@@ -153,17 +153,17 @@ generic<typename Arg1,
 
 #### Parameters
 
-*Arg1*<br/>
+*`Arg1`*\
 The type of the first argument.
 
-*Arg2*<br/>
+*`Arg2`*\
 The type of the second argument.
 
 ### Remarks
 
-The genereic delegate describes a two-argument function that returns **`void`**.
+The generic delegate describes a two-argument function that returns **`void`**.
 
-Note that for:
+In these function templates:
 
 `binary_delegate_noreturn<int, int> Fun1;`
 
@@ -175,7 +175,7 @@ the types `Fun1` and `Fun2` are synonyms, while for:
 
 `delegate void Fun2(int, int);`
 
-they are not the same type.
+they aren't the same type.
 
 ### Example
 
@@ -209,7 +209,7 @@ compare(a, b) = True
 compare(b, a) = False
 ```
 
-## <a name="binary_negate"></a> binary_negate (STL/CLR)
+## <a name="binary_negate"></a> `binary_negate` (STL/CLR)
 
 The template class describes a functor that, when called, returns the logical NOT of its stored two-argument functor. You use it specify a function object in terms of its stored functor.
 
@@ -239,27 +239,27 @@ public:
 
 #### Parameters
 
-*Fun*<br/>
+*`Fun`*\
 The type of the stored functor.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
-|stored_function_type|The type of the functor.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
+|`stored_function_type`|The type of the functor.|
 
 |Member|Description|
 |------------|-----------------|
-|binary_negate|Constructs the functor.|
+|`binary_negate`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^()|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^()`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -323,7 +323,7 @@ int main()
 1 0
 ```
 
-## <a name="bind1st"></a> bind1st (STL/CLR)
+## <a name="bind1st"></a> `bind1st` (STL/CLR)
 
 Generates a `binder1st` for an argument and functor.
 
@@ -338,23 +338,23 @@ template<typename Fun,
 
 #### Template Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the argument.
 
-*Fun*<br/>
+*`Fun`*\
 The type of the functor.
 
 #### Function Parameters
 
-*functor*<br/>
+*`functor`*\
 The functor to wrap.
 
-*left*<br/>
+*`left`*\
 The first argument to wrap.
 
 ### Remarks
 
-The template function returns [binder1st (STL/CLR)](#binder1st)`<Fun>(functor, left)`. You use it as a convenient way to wrap a two-argument functor and its first argument in a one-argument functor that calls it with a second argument.
+The function template returns [`binder1st<Fun>(functor, left)`](#binder1st). You use it as a convenient way to wrap a two-argument functor and its first argument in a one-argument functor that calls it with a second argument.
 
 ### Example
 
@@ -404,7 +404,7 @@ int main()
 -1 0
 ```
 
-## <a name="bind2nd"></a> bind2nd (STL/CLR)
+## <a name="bind2nd"></a> `bind2nd` (STL/CLR)
 
 Generates a `binder2nd` for an argument and functor.
 
@@ -419,23 +419,23 @@ template<typename Fun,
 
 #### Template Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the argument.
 
-*Fun*<br/>
+*`Fun`*\
 The type of the functor.
 
 #### Function Parameters
 
-*functor*<br/>
+*`functor`*\
 The functor to wrap.
 
-*right*<br/>
+*`right`*\
 The second argument to wrap.
 
 ### Remarks
 
-The template function returns [binder2nd (STL/CLR)](#binder2nd)`<Fun>(functor, right)`. You use it as a convenient way to wrap a two-argument functor and its second argument in a one-argument functor that calls it with a first argument.
+The function template returns [`binder2nd<Fun>(functor, right)`](#binder2nd). You use it as a convenient way to wrap a two-argument functor and its second argument in a one-argument functor that calls it with a first argument.
 
 ### Example
 
@@ -485,7 +485,7 @@ int main()
 0 -1
 ```
 
-## <a name="binder1st"></a> binder1st (STL/CLR)
+## <a name="binder1st"></a> `binder1st` (STL/CLR)
 
 The template class describes a one-argument functor that, when called, returns its stored two-argument functor called with its stored first argument and the supplied second argument. You use it specify a function object in terms of its stored functor.
 
@@ -514,27 +514,27 @@ public:
 
 #### Parameters
 
-*Fun*<br/>
+*`Fun`*\
 The type of the stored functor.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
-|stored_function_type|The type of the functor.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
+|`stored_function_type`|The type of the functor.|
 
 |Member|Description|
 |------------|-----------------|
-|binder1st|Constructs the functor.|
+|`binder1st`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^()|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^()`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -590,7 +590,7 @@ int main()
 -1 0
 ```
 
-## <a name="binder2nd"></a> binder2nd (STL/CLR)
+## <a name="binder2nd"></a> `binder2nd` (STL/CLR)
 
 The template class describes a one-argument functor that, when called, returns its stored two-argument functor called with the supplied first argument and its stored second argument. You use it specify a function object in terms of its stored functor.
 
@@ -619,27 +619,27 @@ public:
 
 #### Parameters
 
-*Fun*<br/>
+*`Fun`*\
 The type of the stored functor.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
-|stored_function_type|The type of the functor.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
+|`stored_function_type`|The type of the functor.|
 
 |Member|Description|
 |------------|-----------------|
-|binder2nd|Constructs the functor.|
+|`binder2nd`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^()|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^()`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -695,7 +695,7 @@ int main()
 0 -1
 ```
 
-## <a name="divides"></a> divides (STL/CLR)
+## <a name="divides"></a> `divides` (STL/CLR)
 
 The template class describes a functor that, when called, returns the first argument divided by the second. You use it specify a function object in terms of its argument type.
 
@@ -724,26 +724,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments and return value.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|divides|Constructs the functor.|
+|`divides`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^()|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^()`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -796,7 +796,7 @@ int main()
 2 3
 ```
 
-## <a name="equal_to"></a> equal_to (STL/CLR)
+## <a name="equal_to"></a> `equal_to` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if the first argument is equal to the second. You use it specify a function object in terms of its argument type.
 
@@ -825,26 +825,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|equal_to|Constructs the functor.|
+|`equal_to`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^()|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^()`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -897,7 +897,7 @@ int main()
 1 0
 ```
 
-## <a name="greater"></a> greater (STL/CLR)
+## <a name="greater"></a> `greater` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if the first argument is greater than the second. You use it specify a function object in terms of its argument type.
 
@@ -926,26 +926,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|greater|Constructs the functor.|
+|`greater`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -998,7 +998,7 @@ int main()
 1 0
 ```
 
-## <a name="greater_equal"></a> greater_equal (STL/CLR)
+## <a name="greater_equal"></a> `greater_equal` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if the first argument is greater than or equal to the second. You use it specify a function object in terms of its argument type.
 
@@ -1027,26 +1027,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|greater_equal|Constructs the functor.|
+|`greater_equal`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1099,7 +1099,7 @@ int main()
 1 0
 ```
 
-## <a name="less"></a> less (STL/CLR)
+## <a name="less"></a> `less` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if the first argument is less than the second. You use it specify a function object in terms of its argument type.
 
@@ -1128,26 +1128,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|less|Constructs the functor.|
+|`less`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1200,7 +1200,7 @@ int main()
 0 1
 ```
 
-## <a name="less_equal"></a> less_equal (STL/CLR)
+## <a name="less_equal"></a> `less_equal` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if the first argument is less than or equal to the second. You use it specify a function object in terms of its argument type.
 
@@ -1229,26 +1229,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|less_equal|Constructs the functor.|
+|`less_equal`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1301,7 +1301,7 @@ int main()
 0 1
 ```
 
-## <a name="logical_and"></a> logical_and (STL/CLR)
+## <a name="logical_and"></a> `logical_and` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if both the first argument and the second test as true. You use it specify a function object in terms of its argument type.
 
@@ -1330,26 +1330,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|logical_and|Constructs the functor.|
+|`logical_and`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1402,7 +1402,7 @@ int main()
 1 0
 ```
 
-## <a name="logical_not"></a> logical_not (STL/CLR)
+## <a name="logical_not"></a> `logical_not` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if either its argument tests as false. You use it specify a function object in terms of its argument type.
 
@@ -1429,25 +1429,25 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|argument_type|The type of the functor argument.|
-|delegate_type|The type of the generic delegate.|
-|result_type|The type of the functor result.|
+|`argument_type`|The type of the functor argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`result_type`|The type of the functor result.|
 
 |Member|Description|
 |------------|-----------------|
-|logical_not|Constructs the functor.|
+|`logical_not`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1492,7 +1492,7 @@ int main()
 0 1
 ```
 
-## <a name="logical_or"></a> logical_or (STL/CLR)
+## <a name="logical_or"></a> `logical_or` (STL/CLR)
 
 The template class describes a functor that, when called, returns true only if either the first argument or the second tests as true. You use it specify a function object in terms of its argument type.
 
@@ -1521,26 +1521,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|logical_or|Constructs the functor.|
+|`logical_or`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1593,7 +1593,7 @@ int main()
 1 0
 ```
 
-## <a name="minus"></a> minus (STL/CLR)
+## <a name="minus"></a> `minus` (STL/CLR)
 
 The template class describes a functor that, when called, returns the first argument minus the second. You use it specify a function object in terms of its argument type.
 
@@ -1622,26 +1622,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments and return value.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|minus|Constructs the functor.|
+|`minus`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1694,7 +1694,7 @@ int main()
 2 2
 ```
 
-## <a name="modulus"></a> modulus (STL/CLR)
+## <a name="modulus"></a> `modulus` (STL/CLR)
 
 The template class describes a functor that, when called, returns the first argument modulo the second. You use it specify a function object in terms of its argument type.
 
@@ -1723,26 +1723,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments and return value.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|modulus|Constructs the functor.|
+|`modulus`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1795,7 +1795,7 @@ int main()
 1 0
 ```
 
-## <a name="multiplies"></a> multiplies (STL/CLR)
+## <a name="multiplies"></a> `multiplies` (STL/CLR)
 
 The template class describes a functor that, when called, returns the first argument times the second. You use it specify a function object in terms of its argument type.
 
@@ -1824,26 +1824,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments and return value.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|multiplies|Constructs the functor.|
+|`multiplies`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1896,7 +1896,7 @@ int main()
 8 3
 ```
 
-## <a name="negate"></a> negate (STL/CLR)
+## <a name="negate"></a> `negate` (STL/CLR)
 
 The template class describes a functor that, when called, returns its argument negated. You use it specify a function object in terms of its argument type.
 
@@ -1923,25 +1923,25 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|argument_type|The type of the functor argument.|
-|delegate_type|The type of the generic delegate.|
-|result_type|The type of the functor result.|
+|`argument_type`|The type of the functor argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`result_type`|The type of the functor result.|
 
 |Member|Description|
 |------------|-----------------|
-|negate|Constructs the functor.|
+|`negate`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -1986,9 +1986,9 @@ int main()
 -4 3
 ```
 
-## <a name="not_equal_to"></a> not_equal_to (STL/CLR)
+## <a name="not_equal_to"></a> `not_equal_to` (STL/CLR)
 
-The template class describes a functor that, when called, returns true only if the first argument is not equal to the second. You use it specify a function object in terms of its argument type.
+The template class describes a functor that, when called, returns true only if the first argument isn't equal to the second. You use it specify a function object in terms of its argument type.
 
 ### Syntax
 
@@ -2015,30 +2015,30 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|not_equal_to|Constructs the functor.|
+|`not_equal_to`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
-The template class describes a two-argument functor. It defines the member operator `operator()` so that, when the object is called as a function, it returns true only if the first argument is not equal to the second.
+The template class describes a two-argument functor. It defines the member operator `operator()` so that, when the object is called as a function, it returns true only if the first argument isn't equal to the second.
 
 You can also pass the object as a function argument whose type is `delegate_type^` and it will be converted appropriately.
 
@@ -2087,7 +2087,7 @@ int main()
 0 1
 ```
 
-## <a name="not1"></a> not1 (STL/CLR)
+## <a name="not1"></a> `not1` (STL/CLR)
 
 Generates a `unary_negate` for a functor.
 
@@ -2100,17 +2100,17 @@ template<typename Fun>
 
 #### Template Parameters
 
-*Fun*<br/>
+*`Fun`*\
 The type of the functor.
 
 #### Function Parameters
 
-*functor*<br/>
+*`functor`*\
 The functor to wrap.
 
 ### Remarks
 
-The template function returns [unary_negate (STL/CLR)](#unary_negate)`<Fun>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.
+The function template returns [`unary_negate<Fun>(functor)`](#unary_negate). You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.
 
 ### Example
 
@@ -2159,7 +2159,7 @@ int main()
 1 0
 ```
 
-## <a name="not2"></a> not2 (STL/CLR)
+## <a name="not2"></a> `not2` (STL/CLR)
 
 Generates a `binary_negate` for a functor.
 
@@ -2172,17 +2172,17 @@ template<typename Fun>
 
 #### Template Parameters
 
-*Fun*<br/>
+*`Fun`*\
 The type of the functor.
 
 #### Function Parameters
 
-*functor*<br/>
+*`functor`*\
 The functor to wrap.
 
 ### Remarks
 
-The template function returns [binary_negate (STL/CLR)](#negate)`<Fun>(functor)`. You use it as a convenient way to wrap a two-argument functor in a functor that delivers its logical NOT.
+The function template returns [`binary_negate<Fun>(functor)`](#negate). You use it as a convenient way to wrap a two-argument functor in a functor that delivers its logical NOT.
 
 ### Example
 
@@ -2240,7 +2240,7 @@ int main()
 1 0
 ```
 
-## <a name="plus"></a> plus (STL/CLR)
+## <a name="plus"></a> `plus` (STL/CLR)
 
 The template class describes a functor that, when called, returns the first argument plus the second. You use it specify a function object in terms of its argument type.
 
@@ -2269,26 +2269,26 @@ public:
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the arguments and return value.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|delegate_type|The type of the generic delegate.|
-|first_argument_type|The type of the functor first argument.|
-|result_type|The type of the functor result.|
-|second_argument_type|The type of the functor second argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`first_argument_type`|The type of the functor first argument.|
+|`result_type`|The type of the functor result.|
+|`second_argument_type`|The type of the functor second argument.|
 
 |Member|Description|
 |------------|-----------------|
-|plus|Constructs the functor.|
+|`plus`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|operator delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`operator delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 
@@ -2341,9 +2341,9 @@ int main()
 6 4
 ```
 
-## <a name="unary_delegate"></a> unary_delegate (STL/CLR)
+## <a name="unary_delegate"></a> `unary_delegate` (STL/CLR)
 
-The genereic class describes a one-argument delegate. You use it specify a delegate in terms of its argument and return types.
+The generic class describes a one-argument delegate. You use it specify a delegate in terms of its argument and return types.
 
 ### Syntax
 
@@ -2355,21 +2355,21 @@ generic<typename Arg,
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the argument.
 
-*Result*<br/>
+*`Result`*\
 The return type.
 
 ### Remarks
 
-The genereic delegate describes a one-argument function.
+The generic delegate describes a one-argument function.
 
-Note that for:
+In these function templates:
 
-`unary_delegare<int, int> Fun1;`
+`unary_delegate<int, int> Fun1;`
 
-`unary_delegare<int, int> Fun2;`
+`unary_delegate<int, int> Fun2;`
 
 the types `Fun1` and `Fun2` are synonyms, while for:
 
@@ -2377,7 +2377,7 @@ the types `Fun1` and `Fun2` are synonyms, while for:
 
 `delegate int Fun2(int);`
 
-they are not the same type.
+they aren't the same type.
 
 ### Example
 
@@ -2407,9 +2407,9 @@ hash(L'a') = 5
 hash(L'b') = 22
 ```
 
-## <a name="unary_delegate_noreturn"></a> unary_delegate_noreturn (STL/CLR)
+## <a name="unary_delegate_noreturn"></a> `unary_delegate_noreturn` (STL/CLR)
 
-The genereic class describes a one-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument type.
+The generic class describes a one-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument type.
 
 ### Syntax
 
@@ -2420,18 +2420,18 @@ generic<typename Arg>
 
 #### Parameters
 
-*Arg*<br/>
+*`Arg`*\
 The type of the argument.
 
 ### Remarks
 
-The genereic delegate describes a one-argument function that returns **`void`**.
+The generic delegate describes a one-argument function that returns **`void`**.
 
-Note that for:
+In these function templates:
 
-`unary_delegare_noreturn<int> Fun1;`
+`unary_delegate_noreturn<int> Fun1;`
 
-`unary_delegare_noreturn<int> Fun2;`
+`unary_delegate_noreturn<int> Fun2;`
 
 the types `Fun1` and `Fun2` are synonyms, while for:
 
@@ -2439,7 +2439,7 @@ the types `Fun1` and `Fun2` are synonyms, while for:
 
 `delegate void Fun2(int);`
 
-they are not the same type.
+they aren't the same type.
 
 ### Example
 
@@ -2470,7 +2470,7 @@ hash(a) = 5
 hash(b) = 22
 ```
 
-## <a name="unary_negate"></a> unary_negate (STL/CLR)
+## <a name="unary_negate"></a> `unary_negate` (STL/CLR)
 
 The template class describes a functor that, when called, returns the logical NOT of its stored one-argument functor. You use it specify a function object in terms of its stored functor.
 
@@ -2498,25 +2498,25 @@ public:
 
 #### Parameters
 
-*Fun*<br/>
+*`Fun`*\
 The type of the stored functor.
 
 ### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
-|argument_type|The type of the functor argument.|
-|delegate_type|The type of the generic delegate.|
-|result_type|The type of the functor result.|
+|`argument_type`|The type of the functor argument.|
+|`delegate_type`|The type of the generic delegate.|
+|`result_type`|The type of the functor result.|
 
 |Member|Description|
 |------------|-----------------|
-|unary_negate|Constructs the functor.|
+|`unary_negate`|Constructs the functor.|
 
 |Operator|Description|
 |--------------|-----------------|
-|operator()|Computes the desired function.|
-|delegate_type^|Casts the functor to a delegate.|
+|`operator()`|Computes the desired function.|
+|`delegate_type^`|Casts the functor to a delegate.|
 
 ### Remarks
 

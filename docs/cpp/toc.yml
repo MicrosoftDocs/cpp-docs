@@ -554,6 +554,8 @@ items:
           href: ../cpp/modules-cpp.md
         - name: module, import, export
           href: ../cpp/import-export-module.md
+        - name: "Tutorial: Import the standard library as a module"
+          href: ../cpp/tutorial-import-stl-named-module.md
         - name: Named modules tutorial in C++
           href: ../cpp/tutorial-named-modules-cpp.md
     - name: Templates

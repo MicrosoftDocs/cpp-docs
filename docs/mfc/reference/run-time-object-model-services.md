@@ -268,7 +268,7 @@ For more information, see [`CObject` Class Topics](../../mfc/using-cobject.md).
 ### Example
 
 [!code-cpp[NVC_MFCCObjectSample#2](../../mfc/codesnippet/cpp/run-time-object-model-services_3.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCCObjectSample#3](../../mfc/codesnippet/cpp/run-time-object-model-services_4.cpp)]
 
 ### Requirements
@@ -304,7 +304,7 @@ Note that this macro definition will invoke the default constructor for your cla
 ### Example
 
 [!code-cpp[NVC_MFCCObjectSample#22](../../mfc/codesnippet/cpp/run-time-object-model-services_5.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCCObjectSample#23](../../mfc/codesnippet/cpp/run-time-object-model-services_6.cpp)]
 
 ### Requirements

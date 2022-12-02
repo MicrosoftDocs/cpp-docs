@@ -4156,6 +4156,8 @@ items:
           href: compiler-warnings/compiler-warning-level-4-c4764.md
         - name: Compiler warning (level 4) C4768
           href: compiler-warnings/c4768.md
+        - name: Compiler warning (level 4) C4770
+          href: compiler-warnings/c4770.md
         - name: Compiler warning (level 1) C4772
           href: compiler-warnings/compiler-warning-level-1-c4772.md
         - name: Compiler warning (Level 1) C4788

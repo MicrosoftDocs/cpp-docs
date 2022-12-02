@@ -3,7 +3,7 @@ description: "Learn more about: memcpy_s, wmemcpy_s"
 title: "memcpy_s, wmemcpy_s"
 ms.date: "4/2/2020"
 api_name: ["memcpy_s", "wmemcpy_s", "_o_memcpy_s", "_o_wmemcpy_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wmemcpy_s", "memcpy_s"]
@@ -12,7 +12,7 @@ ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
 ---
 # `memcpy_s`, `wmemcpy_s`
 
-Copies bytes between buffers. These are versions of [`memcpy`, `wmemcpy`](memcpy-wmemcpy.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Copies bytes between buffers. These functions are versions of [`memcpy`, `wmemcpy`](memcpy-wmemcpy.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -33,47 +33,47 @@ errno_t wmemcpy_s(
 
 ### Parameters
 
-*`dest`*<br/>
+*`dest`*\
 New buffer.
 
-*`destSize`*<br/>
+*`destSize`*\
 Size of the destination buffer, in bytes for `memcpy_s` and wide characters (`wchar_t`) for `wmemcpy_s`.
 
-*`src`*<br/>
+*`src`*\
 Buffer to copy from.
 
-*`count`*<br/>
+*`count`*\
 Number of characters to copy.
 
-## Return Value
+## Return value
 
 Zero if successful; an error code on failure.
 
-### Error Conditions
+### Error conditions
 
-|*`dest`*|*`destSize`*|*`src`*|*`count`*|Return value|Contents of *`dest`*|
-|------------|----------------|-----------|---|------------------|------------------------|
-|any|any|any|0|0|Not modified|
-|**`NULL`**|any|any|non-zero|**`EINVAL`**|Not modified|
-|any|any|**`NULL`**|non-zero|**`EINVAL`**|*`dest`* is zeroed out|
-|any|< *`count`*|any|non-zero|**`ERANGE`**|*`dest`* is zeroed out|
+| *`dest`* | *`destSize`* | *`src`* | *`count`* | Return value | Contents of *`dest`* |
+|---|---|---|---|---|---|
+| any | any | any | 0 | 0 | Not modified |
+| `NULL` | any | any | non-zero | `EINVAL` | Not modified |
+| any | any | `NULL` | non-zero | `EINVAL` | *`dest`* is zeroed out |
+| any | < *`count`* | any | non-zero | `ERANGE` | *`dest`* is zeroed out |
 
 ## Remarks
 
-**`memcpy_s`** copies *`count`* bytes from *`src`* to *`dest`*; **`wmemcpy_s`** copies *`count`* wide characters (two bytes). If the source and destination overlap, the behavior of **`memcpy_s`** is undefined. Use **`memmove_s`** to handle overlapping regions.
+**`memcpy_s`** copies *`count`* bytes from *`src`* to *`dest`*; **`wmemcpy_s`** copies *`count`* wide characters. If the source and destination regions overlap, the behavior of **`memcpy_s`** is undefined. Use **`memmove_s`** to handle overlapping regions.
 
-These functions validate their parameters. If *`count`* is non-zero and *`dest`* or *`src`* is a null pointer, or *`destSize`* is smaller than *`count`*, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **`EINVAL`** or **`ERANGE`** and set **`errno`** to the return value.
+These functions validate their parameters. If *`count`* is non-zero and *`dest`* or *`src`* is a null pointer, or *`destSize`* is smaller than *`count`*, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` or `ERANGE`, and set `errno` to the return value.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memcpy_s`**|`<memory.h>` or `<string.h>`|
-|**`wmemcpy_s`**|`<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`memcpy_s`** | `<memory.h>` or `<string.h>` |
+| **`wmemcpy_s`** | `<wchar.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -117,12 +117,12 @@ int main()
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[`_memccpy`](memccpy.md)<br/>
-[`memchr`, `wmemchr`](memchr-wmemchr.md)<br/>
-[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)<br/>
-[`memmove`, `wmemmove`](memmove-wmemmove.md)<br/>
-[`memset`, `wmemset`](memset-wmemset.md)<br/>
-[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)<br/>
-[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[`strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
+[Buffer manipulation](../buffer-manipulation.md)\
+[`_memccpy`](memccpy.md)\
+[`memchr`, `wmemchr`](memchr-wmemchr.md)\
+[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
+[`memmove`, `wmemmove`](memmove-wmemmove.md)\
+[`memset`, `wmemset`](memset-wmemset.md)\
+[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)

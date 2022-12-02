@@ -10,7 +10,7 @@ f1_keywords: ["__set_app_type"]
 helpviewer_keywords: ["__set_app_type"]
 ms.assetid: f0ac0f4d-70e6-4e96-9e43-eb9d1515490c
 ---
-# __set_app_type
+# `__set_app_type`
 
 Sets the current application type.
 
@@ -22,21 +22,21 @@ void __set_app_type (
    )
 ```
 
-#### Parameters
+### Parameters
 
-*at*<br/>
+*`at`*\
 A value that indicates the application type. The possible values are:
 
-|Value|Description|
-|-----------|-----------------|
-|_UNKNOWN_APP|Unknown application type.|
-|_CONSOLE_APP|Console (command-line) application.|
-|_GUI_APP|GUI (Windows) application.|
+| Value | Description |
+|---|---|
+| `_UNKNOWN_APP` | Unknown application type. |
+| `_CONSOLE_APP` | Console (command-line) application. |
+| `_GUI_APP` | GUI (Windows) application. |
 
 ## Remarks
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|__set_app_type|internal.h|
+| Routine | Required header |
+|---|---|
+| **`__set_app_type`** | `internal.h` |

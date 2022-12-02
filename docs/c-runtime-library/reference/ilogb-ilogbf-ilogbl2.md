@@ -10,7 +10,7 @@ f1_keywords: ["ilogb", "ilogbf", "ilogbl", "math/ilogb", "math/ilogbf", "math/il
 helpviewer_keywords: ["ilogb function", "ilogbf function", "ilogbl function"]
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
 ---
-# ilogb, ilogbf, ilogbl
+# `ilogb`, `ilogbf`, `ilogbl`
 
 Retrieves an integer that represents the unbiased base-2 exponent of the specified value.
 
@@ -42,41 +42,41 @@ int ilogbl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The specified value.
 
-## Return Value
+## Return value
 
-If successful, return the base-2 exponent of *x* as a **`signed int`** value.
+If successful, these functions return the base-2 exponent of *`x`* as a **`signed int`** value.
 
-Otherwise, returns one of the following values, defined in \<math.h>:
+Otherwise, the functions return one of the following values, defined in \<math.h>:
 
-|Input|Result|
-|-----------|------------|
-|±0|FP_ILOGB0|
-|±inf, ±nan, indefinite|FP_ILOGBNAN|
+| Input | Result |
+|---|---|
+| ±0 | `FP_ILOGB0` |
+| ± INF, ± NAN, IND | `FP_ILOGBNAN` |
 
-Errors are reported as specified in [_matherr](matherr.md).
+Errors are reported as specified in [`_matherr`](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ilogb** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **ilogb** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`ilogb`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`ilogb`** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `ilogb()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `ilogb()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
-Calling this function is similar to calling the equivalent **logb** function, then casting the return value to **`int`**.
+Calling this function is similar to calling the equivalent `logb` function, then casting the return value to **`int`**.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
-|**ilogb** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`ilogb`**, **`ilogbf`**, **`ilogbl`** | \<math.h> | \<cmath> |
+| **`ilogb`** macro | \<tgmath.h> |  |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[frexp](frexp.md)<br/>
-[logb, logbf, logbl, _logb, _logbf](logb-logbf-logbl-logb-logbf.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`frexp`](frexp.md)\
+[`logb`, `logbf`, `logbl`, `_logb`, `_logbf`](logb-logbf-logbl-logb-logbf.md)

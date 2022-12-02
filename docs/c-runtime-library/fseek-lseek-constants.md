@@ -6,26 +6,26 @@ f1_keywords: ["SEEK_END", "SEEK_SET", "SEEK_CUR"]
 helpviewer_keywords: ["SEEK_SET constant", "SEEK_END constant", "SEEK_CUR constant"]
 ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
 ---
-# fseek, _lseek Constants
+# `fseek`, `_lseek` constants
 
 ## Syntax
 
-```
+```C
 #include <stdio.h>
 ```
 
 ## Remarks
 
-The *origin* argument specifies the initial position and can be one of the following manifest constants:
+The *`origin`* argument specifies the initial position and can be one of the following manifest constants:
 
-|Constant|Meaning|
-|--------------|-------------|
-|`SEEK_END`|End of file|
-|`SEEK_CUR`|Current position of file pointer|
-|`SEEK_SET`|Beginning of file|
+| Constant | Meaning |
+|---|---|
+| `SEEK_END` | End of file |
+| `SEEK_CUR` | Current position of file pointer |
+| `SEEK_SET` | Beginning of file |
 
 ## See also
 
-[fseek, _fseeki64](../c-runtime-library/reference/fseek-fseeki64.md)<br/>
-[_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+[`fseek`, `_fseeki64`](./reference/fseek-fseeki64.md)\
+[`_lseek`, `_lseeki64`](./reference/lseek-lseeki64.md)\
+[Global constants](./global-constants.md)

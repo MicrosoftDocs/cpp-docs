@@ -3,7 +3,7 @@ description: "Learn more about: _setmode"
 title: "_setmode"
 ms.date: "4/2/2020"
 api_name: ["_setmode", "_o__setmode"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_setmode"]
@@ -25,25 +25,25 @@ int _setmode (
 
 ### Parameters
 
-*`fd`*<br/>
+*`fd`*\
 File descriptor.
 
-*`mode`*<br/>
+*`mode`*\
 New translation mode.
 
-## Return Value
+## Return value
 
 If successful, returns the previous translation mode.
 
-If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to either **`EBADF`**, which indicates an invalid file descriptor, or **`EINVAL`**, which indicates an invalid *`mode`* argument.
+If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to either `EBADF`, which indicates an invalid file descriptor, or `EINVAL`, which indicates an invalid *`mode`* argument.
 
-For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`_setmode`** function sets to *`mode`* the translation mode of the file given by *`fd`*. Passing **`_O_TEXT`** as *`mode`* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing **`_O_BINARY`** sets binary (untranslated) mode, in which these translations are suppressed.
+The **`_setmode`** function sets to *`mode`* the translation mode of the file given by *`fd`*. Passing `_O_TEXT` as *`mode`* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing `_O_BINARY` sets binary (untranslated) mode, in which these translations are suppressed.
 
-You can also pass **`_O_U16TEXT`**, **`_O_U8TEXT`**, or **`_O_WTEXT`** to enable Unicode mode, as demonstrated in the second example later in this document.
+You can also pass `_O_U16TEXT`, `_O_U8TEXT`, or `_O_WTEXT` to enable Unicode mode, as demonstrated in the second example later in this document.
 
 > [!CAUTION]
 > Unicode mode is for wide print functions (for example, `wprintf`) and is not supported for narrow print functions. Use of a narrow print function on a Unicode mode stream triggers an assert.
@@ -53,15 +53,15 @@ You can also pass **`_O_U16TEXT`**, **`_O_U8TEXT`**, or **`_O_WTEXT`** to enable
 > [!CAUTION]
 > If you write data to a file stream, explicitly flush the code by using [`fflush`](fflush.md) before you use **`_setmode`** to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|Optional Headers|
-|-------------|---------------------|----------------------|
-|**`_setmode`**|`<io.h>`|`<fcntl.h>`|
+| Routine | Required header | Optional Headers |
+|---|---|---|
+| **`_setmode`** | `<io.h>` | `<fcntl.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example: Use `_setmode` to change stdin
 
@@ -113,8 +113,8 @@ int main(void) {
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[`_creat`, `_wcreat`](creat-wcreat.md)<br/>
-[`fopen`, `_wfopen`](fopen-wfopen.md)<br/>
-[`_open`, `_wopen`](open-wopen.md)<br/>
-[`_set_fmode`](set-fmode.md)<br/>
+[File handling](../file-handling.md)\
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_set_fmode`](set-fmode.md)

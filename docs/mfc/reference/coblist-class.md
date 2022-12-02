@@ -33,12 +33,12 @@ class CObList : public CObject
 |[`CObList::FindIndex`](#findindex)|Gets the position of an element specified by a zero-based index.|
 |[`CObList::GetAt`](#getat)|Gets the element at a given position.|
 |[`CObList::GetCount`](#getcount)|Returns the number of elements in this list.|
-|[`CObList::GetHead`](#gethead)|Returns the head element of the list (can’t be empty).|
+|[`CObList::GetHead`](#gethead)|Returns the head element of the list (can't be empty).|
 |[`CObList::GetHeadPosition`](#getheadposition)|Returns the position of the head element of the list.|
 |[`CObList::GetNext`](#getnext)|Gets the next element for iterating.|
 |[`CObList::GetPrev`](#getprev)|Gets the previous element for iterating.|
 |[`CObList::GetSize`](#getsize)|Returns the number of elements in this list.|
-|[`CObList::GetTail`](#gettail)|Returns the tail element of the list (can’t be empty).|
+|[`CObList::GetTail`](#gettail)|Returns the tail element of the list (can't be empty).|
 |[`CObList::GetTailPosition`](#gettailposition)|Returns the position of the tail element of the list.|
 |[`CObList::InsertAfter`](#insertafter)|Inserts a new element after a given position.|
 |[`CObList::InsertBefore`](#insertbefore)|Inserts a new element before a given position.|
@@ -299,7 +299,7 @@ See the return value description for [`GetHead`](#gethead).
 
 ### Remarks
 
-It isn't the same as an index, and you can’t operate on a `POSITION` value yourself. `GetAt` retrieves the `CObject` pointer associated with a given position.
+It isn't the same as an index, and you can't operate on a `POSITION` value yourself. `GetAt` retrieves the `CObject` pointer associated with a given position.
 
 You must ensure that your `POSITION` value represents a valid position in the list. If it's invalid, then the Debug version of the Microsoft Foundation Class Library asserts.
 
@@ -840,7 +840,7 @@ The `CObject` pointer to be written to the list.
 
 ### Remarks
 
-A variable of type `POSITION` is a key for the list. It isn't the same as an index, and you can’t operate on a `POSITION` value yourself. `SetAt` writes the `CObject` pointer to the specified position in the list.
+A variable of type `POSITION` is a key for the list. It isn't the same as an index, and you can't operate on a `POSITION` value yourself. `SetAt` writes the `CObject` pointer to the specified position in the list.
 
 You must ensure that your `POSITION` value represents a valid position in the list. If it's invalid, then the Debug version of the Microsoft Foundation Class Library asserts.
 

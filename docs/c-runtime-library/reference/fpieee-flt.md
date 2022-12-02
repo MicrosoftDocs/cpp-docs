@@ -10,7 +10,7 @@ f1_keywords: ["fpieee_flt", "_fpieee_flt"]
 helpviewer_keywords: ["_fpieee_flt function", "exception handling, floating-point", "floating-point exception handling", "fpieee_flt function"]
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740
 ---
-# _fpieee_flt
+# `_fpieee_flt`
 
 Invokes a user-defined trap handler for IEEE floating-point exceptions.
 
@@ -26,41 +26,41 @@ int _fpieee_flt(
 
 ### Parameters
 
-*excCode*<br/>
+*`excCode`*\
 Exception code.
 
-*excInfo*<br/>
+*`excInfo`*\
 Pointer to the Windows NT exception information structure.
 
-*handler*<br/>
+*`handler`*\
 Pointer to the user's IEEE trap-handler routine.
 
-## Return Value
+## Return value
 
-The return value of **_fpieee_flt** is the value returned by *handler*. As such, the IEEE filter routine might be used in the except clause of a structured exception-handling (SEH) mechanism.
+The return value of **`_fpieee_flt`** is the value returned by *`handler`*. As such, the IEEE filter routine might be used in the except clause of a structured exception-handling (SEH) mechanism.
 
 ## Remarks
 
-The **_fpieee_flt** function invokes a user-defined trap handler for IEEE floating-point exceptions and provides it with all relevant information. This routine serves as an exception filter in the SEH mechanism, which invokes your own IEEE exception handler when necessary.
+The **`_fpieee_flt`** function invokes a user-defined trap handler for IEEE floating-point exceptions and provides it with all relevant information. This routine serves as an exception filter in the SEH mechanism, which invokes your own IEEE exception handler when necessary.
 
-The **_FPIEEE_RECORD** structure, defined in Fpieee.h, contains information pertaining to an IEEE floating-point exception. This structure is passed to the user-defined trap handler by **_fpieee_flt**.
+The `_FPIEEE_RECORD` structure, defined in Fpieee.h, contains information pertaining to an IEEE floating-point exception. This structure is passed to the user-defined trap handler by **`_fpieee_flt`**.
 
-|_FPIEEE_RECORD field|Description|
-|----------------------------|-----------------|
-|**RoundingMode**<br/>**Precision**|These **`unsigned int`** fields contain information about the floating-point environment at the time the exception occurred.|
-|**Operation**|This **`unsigned int`** field indicates the type of operation that caused the trap. If the type is a comparison (**_FpCodeCompare**), you can supply one of the special **_FPIEEE_COMPARE_RESULT** values (as defined in Fpieee.h) in the **Result.Value** field. The conversion type (**_FpCodeConvert**) indicates that the trap occurred during a floating-point conversion operation. You can look at the **Operand1** and **Result** types to determine the type of conversion being attempted.|
-|**Operand1**<br/>**Operand2**<br/>**Result**|These **_FPIEEE_VALUE** structures indicate the types and values of the proposed result and operands. Each structure contains these fields:<br /><br /> **OperandValid** - Flag indicating whether the responding value is valid.<br />**Format** - Data type of the corresponding value. The format type might be returned even if the corresponding value is not valid.<br />**Value** - Result or operand data value.|
-|**Cause**<br/>**Enable**<br/>**Status**|**_FPIEEE_EXCEPTION_FLAGS** contains one bit field per type of floating point exception. There is a correspondence between these fields and the arguments used to mask the exceptions supplied to [_controlfp](control87-controlfp-control87-2.md). The exact meaning of each bit depends on context:<br /><br /> **Cause** - Each set bit indicates the particular exception that was raised.<br />**Enable** - Each set bit indicates that the particular exception is currently unmasked.<br />**Status** - Each set bit indicates that the particular exception is currently pending. This includes exceptions that have not been raised because they were masked by **_controlfp**.|
+| _FPIEEE_RECORD field | Description |
+|---|---|
+| `RoundingMode`<br/>`Precision` | These **`unsigned int`** fields contain information about the floating-point environment at the time the exception occurred. |
+| `Operation` | This **`unsigned int`** field indicates the type of operation that caused the trap. If the type is a comparison (`_FpCodeCompare`), you can supply one of the special `_FPIEEE_COMPARE_RESULT` values (as defined in Fpieee.h) in the **Result.Value** field. The conversion type (`_FpCodeConvert`) indicates that the trap occurred during a floating-point conversion operation. You can look at the `Operand1` and `Result` types to determine the type of conversion being attempted. |
+| `Operand1`<br/>`Operand2`<br/>`Result` | These `_FPIEEE_VALUE` structures indicate the types and values of the proposed result and operands. Each structure contains these fields:<br /><br /> `OperandValid` - Flag indicating whether the responding value is valid.<br />`Format` - Data type of the corresponding value. The format type might be returned even if the corresponding value isn't valid.<br />`Value` - Result or operand data value. |
+| `Cause`<br/>`Enable`<br/>`Status` | `_FPIEEE_EXCEPTION_FLAGS` contains a bit field for each type of floating point exception. There's a correspondence between these fields and the arguments used to mask the exceptions supplied to [`_controlfp`](control87-controlfp-control87-2.md). The exact meaning of each bit depends on context:<br /><br /> `Cause` - Each set bit indicates the particular exception that was raised.<br />`Enable` - Each set bit indicates that the particular exception is currently unmasked.<br />`Status` - Each set bit indicates that the particular exception is currently pending, which includes exceptions that haven't been raised because they were masked by `_controlfp`. |
 
-Pending exceptions that are disabled are raised when you enable them. This can result in undefined behavior when using **_fpieee_flt** as an exception filter. Always call [_clearfp](clear87-clearfp.md) before enabling floating point exceptions.
+Pending exceptions that are disabled are raised when you enable them. These exceptions can result in undefined behavior when using **`_fpieee_flt`** as an exception filter. Always call [`_clearfp`](clear87-clearfp.md) before enabling floating point exceptions.
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**_fpieee_flt**|\<fpieee.h>|
+| Function | Required header |
+|---|---|
+| **`_fpieee_flt`** | \<fpieee.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -131,6 +131,6 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
-[_controlfp_s](controlfp-s.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`_control87`, `_controlfp`, `__control87_2`](control87-controlfp-control87-2.md)\
+[`_controlfp_s`](controlfp-s.md)

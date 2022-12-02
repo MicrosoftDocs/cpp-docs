@@ -10,7 +10,7 @@ f1_keywords: ["_memccpy"]
 helpviewer_keywords: ["_memccpy function", "memccpy function"]
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
 ---
-# _memccpy
+# `_memccpy`
 
 Copies characters from a buffer.
 
@@ -27,39 +27,39 @@ void *_memccpy(
 
 ### Parameters
 
-*dest*<br/>
+*`dest`*\
 Pointer to the destination.
 
-*src*<br/>
+*`src`*\
 Pointer to the source.
 
-*c*<br/>
+*`c`*\
 Last character to copy.
 
-*count*<br/>
+*`count`*\
 Number of characters.
 
-## Return Value
+## Return value
 
-If the character *c* is copied, **_memccpy** returns a pointer to the char in *dest* that immediately follows the character. If *c* is not copied, it returns **NULL**.
+If the character *`c`* is copied, **`_memccpy`** returns a pointer to the char in *`dest`* that immediately follows the character. If *`c`* isn't copied, it returns `NULL`.
 
 ## Remarks
 
-The **_memccpy** function copies 0 or more characters of *src* to *dest*, halting when the character *c* has been copied or when *count* characters have been copied, whichever comes first.
+The **`_memccpy`** function copies zero or more characters of *`src`* to *`dest`*, halting when the character *`c`* has been copied or when *`count`* characters have been copied, whichever comes first.
 
-**Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_memccpy**|\<memory.h> or \<string.h>|
+| Routine | Required header |
+|---|---|
+| **`_memccpy`** | \<memory.h> or \<string.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -97,8 +97,8 @@ Length: 25 characters
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[memchr, wmemchr](memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
+[Buffer manipulation](../buffer-manipulation.md)\
+[`memchr`, `wmemchr`](memchr-wmemchr.md)\
+[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`memset`, `wmemset`](memset-wmemset.md)

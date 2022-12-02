@@ -63,7 +63,7 @@ auto val_4 = 0x8000000000000000ULL << 16;     // unsigned long long
 **Digit separators**: You can use the single-quote character (apostrophe) to separate place values in larger numbers to make them easier for humans to read. Separators have no effect on compilation.
 
 ```cpp
-long long i = 24'847'458'121
+long long i = 24'847'458'121;
 ```
 
 ## Floating point literals

@@ -9,7 +9,7 @@ ms.assetid: 5de49f7d-e5e3-43e9-bbca-666caf226cef
 ---
 # CancelTransitionPolicy Enumeration
 
-Indicates how an asynchronous operation’s attempt to transition to a terminal state of completed or error should behave with respect to a client-requested canceled state.
+Indicates how an asynchronous operation's attempt to transition to a terminal state of completed or error should behave with respect to a client-requested canceled state.
 
 ## Syntax
 

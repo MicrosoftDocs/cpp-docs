@@ -9,20 +9,19 @@ f1_keywords: ["not_eq", "std::not_eq", "std.not_eq"]
 helpviewer_keywords: ["not_eq function"]
 ms.assetid: d87ad299-8b50-4393-a57f-06f70e1f23fb
 ---
-# not_eq
+# `not_eq`
 
-An alternative to the != operator.
+An alternative to the **`!=`** operator.
 
 ## Syntax
 
 ```C
-
 #define not_eq !=
 ```
 
 ## Remarks
 
-The macro yields the operator !=.
+The macro yields the operator **`!=`**.
 
 ## Example
 

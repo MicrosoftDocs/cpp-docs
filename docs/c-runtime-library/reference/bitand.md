@@ -9,7 +9,7 @@ f1_keywords: ["std::bitand", "std.bitand", "bitand"]
 helpviewer_keywords: ["bitand function"]
 ms.assetid: 279cf9b5-fac1-49de-b329-f1a31b3481fe
 ---
-# bitand
+# `bitand`
 
 An alternative to the & operator.
 

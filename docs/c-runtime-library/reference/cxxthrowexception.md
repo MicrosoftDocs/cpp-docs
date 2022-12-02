@@ -10,7 +10,7 @@ f1_keywords: ["CxxThrowException", "_CxxThrowException"]
 helpviewer_keywords: ["_CxxThrowException function", "CxxThrowException function"]
 ms.assetid: 0b90bef5-b7d2-46e0-88e2-59e531e01a4d
 ---
-# _CxxThrowException
+# `_CxxThrowException`
 
 Builds the exception record and calls the runtime environment to start processing the exception.
 
@@ -25,15 +25,15 @@ extern "C" void __stdcall _CxxThrowException(
 
 ### Parameters
 
-*pExceptionObject*<br/>
+*`pExceptionObject`*\
 The object that generated the exception.
 
-*pThrowInfo*<br/>
+*`pThrowInfo`*\
 The information that is required to process the exception.
 
 ## Remarks
 
-This method is included in a compiler-only file that the compiler uses to process exceptions. Do not call the method directly from your code.
+This method is included in a compiler-only file that the compiler uses to process exceptions. Don't call the method directly from your code.
 
 ## Requirements
 
@@ -41,4 +41,4 @@ This method is included in a compiler-only file that the compiler uses to proces
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)

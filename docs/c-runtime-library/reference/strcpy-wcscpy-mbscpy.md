@@ -3,7 +3,7 @@ description: "Learn more about: strcpy, wcscpy, _mbscpy"
 title: "strcpy, wcscpy, _mbscpy"
 ms.date: "4/2/2020"
 api_name: ["strcpy", "wcscpy", "_mbscpy", "_o_wcscpy"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbscpy", "_ftcscpy", "wcscpy", "_tcscpy", "strcpy"]
@@ -51,44 +51,44 @@ unsigned char *_mbscpy(
 
 ### Parameters
 
-*`strDestination`*<br/>
+*`strDestination`*\
 Destination string.
 
-*`strSource`*<br/>
+*`strSource`*\
 Null-terminated source string.
 
-## Return Value
+## Return value
 
 Each of these functions returns the destination string. No return value is reserved to indicate an error.
 
 ## Remarks
 
-The **`strcpy`** function copies *strSource*, including the terminating null character, to the location that's specified by *`strDestination`*. The behavior of **`strcpy`** is undefined if the source and destination strings overlap.
+The **`strcpy`** function copies *`strSource`*, including the terminating null character, to the location that's specified by *`strDestination`*. The behavior of **`strcpy`** is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
-> Because **`strcpy`** does not check for sufficient space in *strDestination* before it copies *`strSource`*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [`strcpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md) instead.
+> Because **`strcpy`** does not check for sufficient space in *`strDestination`* before it copies *`strSource`*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [`strcpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md) instead.
 
-**`wcscpy`** and **`_mbscpy`** are, respectively, wide-character and multibyte-character versions of **`strcpy`**. The arguments and return value of **`wcscpy`** are wide-character strings; those of **`_mbscpy`** are multibyte-character strings. These three functions behave identically otherwise.
+**`wcscpy`** and **`_mbscpy`** are, respectively, wide-character and multibyte-character versions of **`strcpy`**. The arguments and return value of **`wcscpy`** are wide-character strings. The arguments and return value of **`_mbscpy`** are multibyte-character strings. These three functions behave identically otherwise.
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcscpy`**|**`strcpy`**|**`_mbscpy`**|**`wcscpy`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcscpy` | **`strcpy`** | **`_mbscpy`** | **`wcscpy`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strcpy`**|`<string.h>`|
-|**`wcscpy`**|`<string.h>` or `<wchar.h>`|
-|**`_mbscpy`**|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strcpy`** | `<string.h>` |
+| **`wcscpy`** | `<string.h>` or `<wchar.h>` |
+| **`_mbscpy`** | `<mbstring.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -127,12 +127,12 @@ String = Hello world from strcpy and strcat!
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md)<br/>
-[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)<br/>
-[`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
-[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[`strcat`, `wcscat`, `_mbscat`](strcat-wcscat-mbscat.md)\
+[`strcmp`, `wcscmp`, `_mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

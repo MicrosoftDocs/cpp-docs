@@ -145,7 +145,7 @@ It's possible to enable FIPS mode globally in Windows.
 1. In the **Local Security Setting** tab, select **Enabled** or **Disabled**, and then choose **OK** to save your changes.
 
 > [!WARNING]
-> Enabling FIPS mode may cause some applications to break or behave unexpectedly. For more information, see the blog post [Why We’re Not Recommending "FIPS mode" Anymore](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037).
+> Enabling FIPS mode may cause some applications to break or behave unexpectedly. For more information, see the blog post [Why We're Not Recommending "FIPS mode" Anymore](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037).
 
 ## Additional resources
 
@@ -155,7 +155,7 @@ It's possible to enable FIPS mode globally in Windows.
 
 [Cryptographic Algorithm Validation Program: Validation Notes](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/Validation-Notes) (from NIST)
 
-Microsoft blog post on [Why We’re Not Recommending "FIPS mode" Anymore](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037)
+Microsoft blog post on [Why We're Not Recommending "FIPS mode" Anymore](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037)
 
 [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config)
 

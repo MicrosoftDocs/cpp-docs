@@ -6,7 +6,7 @@ ms.date: 08/02/2021
 helpviewer_keywords: ["CRT initialization [C++]"]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
 ---
-# CRT Initialization
+# CRT initialization
 
 This article describes how the CRT initializes global state in native code.
 
@@ -14,11 +14,11 @@ By default, the linker includes the CRT library, which provides its own startup 
 
 It's possible, though not recommended, to take advantage of Microsoft-specific linker behavior to insert your own global initializers in a specific order. This code isn't portable, and comes with some important caveats.
 
-## Initializing a Global Object
+## Initializing a global object
 
 Consider the following code:
 
-```
+```C
 int func(void)
 {
     return 3;
@@ -112,4 +112,4 @@ The names `.CRT$XCT` and `.CRT$XCV` aren't used by either the compiler or the CR
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md)

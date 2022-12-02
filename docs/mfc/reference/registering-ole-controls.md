@@ -224,7 +224,7 @@ This function updates the registry with the type library name and its location o
 ### Example
 
 [!code-cpp[NVC_MFCAutomation#7](../../mfc/codesnippet/cpp/registering-ole-controls_3.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCAutomation#8](../../mfc/codesnippet/cpp/registering-ole-controls_4.cpp)]
 
 ### Requirements

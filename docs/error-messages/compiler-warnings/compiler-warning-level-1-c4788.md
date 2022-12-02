@@ -14,7 +14,7 @@ The compiler limits the maximum length allowed for a function name. When the com
 
 The resulting funclet name can be too long, and the compiler will truncate it and generate C4788.
 
-To resolve this warning, shorten the original function name. If the function is a C++ template function or method, use a typedef for part of the name. For example:
+To resolve this warning, shorten the original function name. If the function is a C++ function template or method, use a typedef for part of the name. For example:
 
 ```cpp
 C1<x, y, z<T>>::C2<a,b,c>::f

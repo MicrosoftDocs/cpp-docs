@@ -6,11 +6,11 @@ f1_keywords: ["TMP_MAX", "L_tmpnam"]
 helpviewer_keywords: ["temporary files, length", "L_tmpnam constant", "TMP_MAX constant"]
 ms.assetid: ab19fd0c-b5b7-49f7-b23d-da9dfbcf0c1f
 ---
-# TMP_MAX, L_tmpnam
+# `TMP_MAX`, `L_tmpnam`
 
 ## Syntax
 
-```
+```C
 #include <stdio.h>
 ```
 
@@ -20,4 +20,4 @@ ms.assetid: ab19fd0c-b5b7-49f7-b23d-da9dfbcf0c1f
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+[Global constants](./global-constants.md)

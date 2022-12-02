@@ -3,7 +3,7 @@ title: "qsort"
 description: "Describes the Microsoft C runtime quick sort API `qsort`"
 ms.date: "10/23/2020"
 api_name: ["qsort", "_o_qsort"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["qsort"]
@@ -50,25 +50,25 @@ compare( (void *) & elem1, (void *) & elem2 );
 
 The routine compares the elements and returns one of the following values.
 
-|Compare function return value|Description|
-|-----------------------------------|-----------------|
-|< 0|**`elem1`** less than **`elem2`**|
-|0|**`elem1`** equivalent to **`elem2`**|
-|> 0|**`elem1`** greater than **`elem2`**|
+| Compare function return value | Description |
+|---|---|
+| < 0 | **`elem1`** less than **`elem2`** |
+| 0 | **`elem1`** equivalent to **`elem2`** |
+| > 0 | **`elem1`** greater than **`elem2`** |
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
-This function validates its parameters. If *`compare`* or *`number`* is **`NULL`**, or if *`base`* is **`NULL`** and *`number`* is nonzero, or if *`width`* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns and **`errno`** is set to **`EINVAL`**.
+This function validates its parameters. If *`compare`* or *`number`* is `NULL`, or if *`base`* is `NULL` and *`number`* is nonzero, or if *`width`* is less than zero, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns, and `errno` is set to `EINVAL`.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`qsort`**|`<stdlib.h>` and `<search.h>`|
+| Routine | Required header |
+|---|---|
+| **`qsort`** | `<stdlib.h>` and `<search.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -116,6 +116,6 @@ boy deserves every favor good
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)\
+[Searching and sorting](../searching-and-sorting.md)\
 [`bsearch`](bsearch.md)\
 [`_lsearch`](lsearch.md)

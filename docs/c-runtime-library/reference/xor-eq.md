@@ -9,20 +9,19 @@ f1_keywords: ["std.xor_eq", "xor_eq", "std::xor_eq"]
 helpviewer_keywords: ["xor_eq function"]
 ms.assetid: eca4b6b4-b77a-4d44-a09a-5a7e69fdb56c
 ---
-# xor_eq
+# `xor_eq`
 
-An alternative to the ^= operator.
+An alternative to the **`^=`** operator.
 
 ## Syntax
 
 ```C
-
 #define xor_eq ^=
 ```
 
 ## Remarks
 
-The macro yields the operator ^=.
+The macro yields the operator **`^=`**.
 
 ## Example
 

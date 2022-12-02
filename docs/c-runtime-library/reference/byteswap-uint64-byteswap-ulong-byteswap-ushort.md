@@ -24,18 +24,18 @@ unsigned __int64 _byteswap_uint64 ( unsigned __int64 val );
 
 ### Parameters
 
-*`val`*<br/>
+*`val`*\
 The integer to reverse byte order.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_byteswap_ushort`**|`<stdlib.h>`|
-|**`_byteswap_ulong`**|`<stdlib.h>`|
-|**`_byteswap_uint64`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`_byteswap_ushort`** | `<stdlib.h>` |
+| **`_byteswap_ulong`** | `<stdlib.h>` |
+| **`_byteswap_uint64`** | `<stdlib.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -60,4 +60,4 @@ byteswap of 1020304 = 4030201
 
 ## See also
 
-[Universal C runtime routines by category](../../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Universal C runtime routines by category](../run-time-routines-by-category.md)

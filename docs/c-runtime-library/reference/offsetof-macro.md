@@ -9,7 +9,7 @@ f1_keywords: ["offsetof"]
 helpviewer_keywords: ["structure members, offset", "offsetof macro"]
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
 ---
-# offsetof Macro
+# `offsetof` Macro
 
 Retrieves the offset of a member from the beginning of its parent structure.
 
@@ -24,35 +24,35 @@ size_t offsetof(
 
 ### Parameters
 
-*structName*<br/>
+*`structName`*\
 Name of the parent data structure.
 
-*memberName*<br/>
+*`memberName`*\
 Name of the member in the parent data structure for which to determine the offset.
 
-## Return Value
+## Return value
 
-**offsetof** returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.
+**`offsetof`** returns the offset in bytes of the specified member from the beginning of its parent data structure. It's undefined for bit fields.
 
 ## Remarks
 
-The **offsetof** macro returns the offset in bytes of *memberName* from the beginning of the structure specified by *structName* as a value of type **size_t**. You can specify types with the **`struct`** keyword.
+The **`offsetof`** macro returns the offset in bytes of *`memberName`* from the beginning of the structure specified by *`structName`* as a value of type `size_t`. You can specify types with the **`struct`** keyword.
 
 > [!NOTE]
-> **offsetof** is not a function and cannot be described using a C prototype.
+> **`offsetof`** is not a function and cannot be described using a C prototype.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**offsetof**|\<stddef.h>|
+| Routine | Required header |
+|---|---|
+| **`offsetof`** | \<stddef.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
+[Memory allocation](../memory-allocation.md)

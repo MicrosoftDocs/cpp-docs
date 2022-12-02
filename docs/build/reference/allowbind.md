@@ -11,7 +11,6 @@ ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
 Specifies whether a DLL can be bound.
 
 ```
-
 /ALLOWBIND[:NO]
 ```
 

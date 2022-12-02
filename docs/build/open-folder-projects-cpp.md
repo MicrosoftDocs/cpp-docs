@@ -147,7 +147,6 @@ This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual 
     }
   ]
 }
-
 ```
 
 The JSON file is placed in the *.vs* subfolder. To see that folder, click on the **Show All Files** button at the top of **Solution Explorer**. You can run this task by right-clicking on the root node in **Solution Explorer** and choosing **build hello**. When the task completes you should see a new file, *hello.exe* in **Solution Explorer**.
@@ -194,7 +193,6 @@ To customize your program's command line arguments and debugging instructions, r
     }
   ]
 }
-
 ```
 
 To start debugging, choose the executable in the debug dropdown, then click the green arrow:

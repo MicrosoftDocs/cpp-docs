@@ -1,17 +1,17 @@
 ---
-description: "Learn more about: Overload Resolution of Function Template Calls"
-title: "Overload Resolution of Function Template Calls"
-ms.date: "11/04/2016"
+description: "Learn more about: Overload resolution of function template calls"
+title: "Overload resolution of function template calls"
+ms.date: 09/27/2022
 helpviewer_keywords: ["function templates overload resolution"]
 ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
 ---
-# Overload Resolution of Function Template Calls
+# Overload resolution of function template calls
 
-A function template can overload nontemplate functions of the same name. In this scenario, function calls are resolved by first using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, the other function overloads are considered to resolve the call. These other overloads, also known as the candidate set, include nontemplate functions and other instantiated function templates. If template argument deduction succeeds, then the generated function is compared with the other functions to determine the best match, following the rules for overload resolution. For more information, see [Function Overloading](function-overloading.md).
+A function template can overload non-template functions of the same name. In this scenario, the compiler first attempts to resolve a function call by using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, then the compiler considers both instantiated function template overloads and non-template function overloads to resolve the call. These other overloads are known as the *candidate set*. If template argument deduction succeeds, then the generated function is compared with the other functions in the candidate set to determine the best match, following the rules for overload resolution. For more information, see [Function overloading](function-overloading.md).
 
-## Example: Choose a nontemplate function
+## Example: Choose a non-template function
 
-If a nontemplate function is an equally good match to a template function, the nontemplate function is chosen (unless the template arguments were explicitly specified), as in the call `f(1, 1)` in the following example.
+If a non-template function is an equally good match to a function template, the non-template function is chosen (unless the template arguments were explicitly specified), as in the call `f(1, 1)` in the following example.
 
 ```cpp
 // template_name_resolution9.cpp
@@ -30,8 +30,8 @@ void f(T1, T2)
 
 int main()
 {
-   f(1, 1);   // Equally good match; choose the nontemplate function.
-   f('a', 1); // Chooses the template function.
+   f(1, 1);   // Equally good match; choose the non-template function.
+   f('a', 1); // Chooses the function template.
    f<int, int>(2, 2);  // Template arguments explicitly specified.
 }
 ```
@@ -42,9 +42,9 @@ void f(T1, T2)
 void f(T1, T2)
 ```
 
-## Example: Exact match template function preferred
+## Example: Exact match function template preferred
 
-The next example illustrates that the exactly matching template function is preferred if the nontemplate function requires a conversion.
+The next example illustrates that the exactly matching function template is preferred if the non-template function requires a conversion.
 
 ```cpp
 // template_name_resolution10.cpp
@@ -64,7 +64,7 @@ int main()
 {
    long l = 0;
    int i = 0;
-   // Call the template function f(long, int) because f(int, int)
+   // Call the function template f(long, int) because f(int, int)
    // would require a conversion from long to int.
    f(l, i);
 }
@@ -76,5 +76,5 @@ void f(T1, T2)
 
 ## See also
 
-[Name Resolution](../cpp/templates-and-name-resolution.md)<br/>
-[typename](../cpp/typename.md)
+[Name resolution](templates-and-name-resolution.md)\
+[`typename`](typename.md)

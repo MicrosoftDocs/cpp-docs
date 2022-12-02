@@ -61,7 +61,7 @@ For more information on using `CTypedPtrList`, see the articles [Collections](..
 This example creates an instance of `CTypedPtrList`, adds one object, serializes the list to disk, and then deletes the object:
 
 [!code-cpp[NVC_MFCCollections#110](../../mfc/codesnippet/cpp/ctypedptrlist-class_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCCollections#111](../../mfc/codesnippet/cpp/ctypedptrlist-class_2.cpp)]
 
 ## Inheritance Hierarchy

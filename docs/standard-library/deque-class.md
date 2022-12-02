@@ -237,7 +237,7 @@ If *`pos`* is greater than the size of the `deque`, `at` throws an exception.
 
 ### Remarks
 
-If the return value of `at` is assigned to a `const_reference`, the `deque` object can’t be modified. If the return value of `at` is assigned to a `reference`, the `deque` object can be modified.
+If the return value of `at` is assigned to a `const_reference`, the `deque` object can't be modified. If the return value of `at` is assigned to a `reference`, the `deque` object can be modified.
 
 ### Example
 
@@ -282,7 +282,7 @@ The last element of the `deque`. If the `deque` is empty, the return value is un
 
 ### Remarks
 
-If the return value of `back` is assigned to a `const_reference`, the `deque` object can’t be modified. If the return value of `back` is assigned to a `reference`, the `deque` object can be modified.
+If the return value of `back` is assigned to a `const_reference`, the `deque` object can't be modified. If the return value of `back` is assigned to a `reference`, the `deque` object can be modified.
 
 When compiled by using [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty `deque`.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 
@@ -331,7 +331,7 @@ A random-access iterator addressing the first element in the `deque` or to the l
 
 ### Remarks
 
-If the return value of `begin` is assigned to a `const_iterator`, the `deque` object can’t be modified. If the return value of `begin` is assigned to an `iterator`, the `deque` object can be modified.
+If the return value of `begin` is assigned to a `const_iterator`, the `deque` object can't be modified. If the return value of `begin` is assigned to an `iterator`, the `deque` object can be modified.
 
 ### Example
 
@@ -382,7 +382,7 @@ A **`const`** random-access iterator that points at the first element of the ran
 
 ### Remarks
 
-With the return value of `cbegin`, the elements in the range can’t be modified.
+With the return value of `cbegin`, the elements in the range can't be modified.
 
 You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
@@ -468,7 +468,7 @@ typedef implementation-defined const_iterator;
 
 ### Remarks
 
-A type `const_iterator` can’t be used to modify the value of an element.
+A type `const_iterator` can't be used to modify the value of an element.
 
 ### Example
 
@@ -484,7 +484,7 @@ typedef typename Allocator::const_pointer const_pointer;
 
 ### Remarks
 
-A type `const_pointer` can’t be used to modify the value of an element. An [`iterator`](#iterator) is more commonly used to access a `deque` element.
+A type `const_pointer` can't be used to modify the value of an element. An [`iterator`](#iterator) is more commonly used to access a `deque` element.
 
 ## <a name="const_reference"></a> `const_reference`
 
@@ -496,7 +496,7 @@ typedef typename Allocator::const_reference const_reference;
 
 ### Remarks
 
-A type `const_reference` can’t be used to modify the value of an element.
+A type `const_reference` can't be used to modify the value of an element.
 
 ### Example
 
@@ -540,7 +540,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### Remarks
 
-A type `const_reverse_iterator` can’t modify the value of an element and is used to iterate through the `deque` in reverse.
+A type `const_reverse_iterator` can't modify the value of an element and is used to iterate through the `deque` in reverse.
 
 ### Example
 
@@ -560,7 +560,7 @@ A `const` reverse random-access iterator addressing the first element in a rever
 
 ### Remarks
 
-With the return value of `crbegin`, the `deque` object can’t be modified.
+With the return value of `crbegin`, the `deque` object can't be modified.
 
 ### Example
 
@@ -611,7 +611,7 @@ A `const` reverse random-access iterator that addresses the location succeeding 
 
 `crend` is used with a reversed `deque` just as [`array::cend`](../standard-library/array-class-stl.md#cend) is used with a `deque`.
 
-With the return value of `crend` (suitably decremented), the `deque` object can’t be modified.
+With the return value of `crend` (suitably decremented), the `deque` object can't be modified.
 
 `crend` can be used to test to whether a reverse iterator has reached the end of its `deque`.
 
@@ -1328,7 +1328,7 @@ If the `deque` is empty, the return is undefined.
 
 ### Remarks
 
-If the return value of `front` is assigned to a `const_reference`, the `deque` object can’t be modified. If the return value of `front` is assigned to a `reference`, the `deque` object can be modified.
+If the return value of `front` is assigned to a `const_reference`, the `deque` object can't be modified. If the return value of `front` is assigned to a `reference`, the `deque` object can be modified.
 
 When compiled by using [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element in an empty `deque`. See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 
@@ -1526,7 +1526,7 @@ A reference to the element whose position is specified in the argument. If the p
 
 ### Remarks
 
-If the return value of `operator[]` is assigned to a `const_reference`, the `deque` object can’t be modified. If the return value of `operator[]` is assigned to a `reference`, the `deque` object can be modified.
+If the return value of `operator[]` is assigned to a `const_reference`, the `deque` object can't be modified. If the return value of `operator[]` is assigned to a `reference`, the `deque` object can be modified.
 
 When compiled by using [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the `deque`.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 
@@ -1818,7 +1818,7 @@ A reverse random-access iterator addressing the first element in a reversed `deq
 
 `rbegin` is used with a reversed `deque` just as [`begin`](#begin) is used with a `deque`.
 
-If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the `deque` object can’t be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, the `deque` object can be modified.
+If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the `deque` object can't be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, the `deque` object can be modified.
 
 `rbegin` can be used to iterate through a `deque` backwards.
 
@@ -1930,7 +1930,7 @@ A reverse random-access iterator that addresses the location succeeding the last
 
 `rend` is used with a reversed `deque` just as [`end`](#end) is used with a `deque`.
 
-If the return value of `rend` is assigned to a `const_reverse_iterator`, the `deque` object can’t be modified. If the return value of `rend` is assigned to a `reverse_iterator`, the `deque` object can be modified.
+If the return value of `rend` is assigned to a `const_reverse_iterator`, the `deque` object can't be modified. If the return value of `rend` is assigned to a `reverse_iterator`, the `deque` object can be modified.
 
 `rend` can be used to test whether a reverse iterator has reached the end of its `deque`.
 

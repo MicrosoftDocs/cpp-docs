@@ -211,7 +211,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
 
 Universal character names can't encode values in the surrogate code point range D800-DFFF. For Unicode surrogate pairs, specify the universal character name by using `\UNNNNNNNN`, where NNNNNNNN is the eight-digit code point for the character. The compiler generates a surrogate pair if necessary.
 
-In C++03, the language only allowed a subset of characters to be represented by their universal character names, and allowed some universal character names that didn’t actually represent any valid Unicode characters. This mistake was fixed in the C++11 standard. In C++11, both character and string literals and identifiers can use universal character names.  For more information on universal character names, see [Character Sets](../cpp/character-sets.md). For more information about Unicode, see [Unicode](/windows/win32/intl/unicode). For more information about surrogate pairs, see [Surrogate Pairs and Supplementary Characters](/windows/win32/Intl/surrogates-and-supplementary-characters).
+In C++03, the language only allowed a subset of characters to be represented by their universal character names, and allowed some universal character names that didn't actually represent any valid Unicode characters. This mistake was fixed in the C++11 standard. In C++11, both character and string literals and identifiers can use universal character names.  For more information on universal character names, see [Character Sets](../cpp/character-sets.md). For more information about Unicode, see [Unicode](/windows/win32/intl/unicode). For more information about surrogate pairs, see [Surrogate Pairs and Supplementary Characters](/windows/win32/Intl/surrogates-and-supplementary-characters).
 
 ## <a name="string-literals"></a> String literals
 
@@ -391,7 +391,7 @@ The actual result is a hexadecimal 5F, which is the ASCII code for an underscore
 "\x05" "five"  // Use string splicing.
 ```
 
-`std::string` literals (and the related `std::u8string`, `std::u16string`, and `ste::u32string`) can be concatenated with the **`+`** operator that's defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
+`std::string` literals (and the related `std::u8string`, `std::u16string`, and `std::u32string`) can be concatenated with the **`+`** operator that's defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
 
 ```cpp
 auto x1 = "hello" " " " world"; // OK

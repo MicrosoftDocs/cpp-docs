@@ -52,7 +52,6 @@ You may require an array that's too large to allocate on the stack, or whose siz
 The following example shows how to define an array on the heap at run time. It shows how to access the array elements using the subscript operator and by using pointer arithmetic:
 
 ```cpp
-
 void do_something(size_t size)
 {
     // Declare an array of doubles to be allocated on the heap
@@ -104,7 +103,6 @@ int main()
 {
     do_something(108);
 }
-
 ```
 
 ## Initializing arrays

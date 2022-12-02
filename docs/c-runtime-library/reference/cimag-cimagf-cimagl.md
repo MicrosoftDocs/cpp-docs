@@ -10,7 +10,7 @@ f1_keywords: ["cimagf", "cimagl", "complex/cimag", "complex/cimagf", "complex/ci
 helpviewer_keywords: ["cimag function", "cimagf function", "cimagl function"]
 ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
 ---
-# cimag, cimagf, cimagl
+# `cimag`, `cimagf`, `cimagl`
 
 Retrieves the imaginary part of a complex number.
 
@@ -28,34 +28,34 @@ long double cimag( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-*z*\
+*`z`*\
 A complex number.
 
-## Return Value
+## Return value
 
-The imaginary part of *z*.
+The imaginary part of *`z`*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cimag** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **cimag** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **`cimag`** that take `_Fcomplex` or `_Lcomplex` values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`cimag`** always takes a `_Dcomplex` value and returns a **`double`** value.
 
-If you use the \<tgmath.h> `cimag()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `cimag()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**cimag**, **cimagf**, **cimagl**|\<complex.h>|\<ccomplex>|
-|**cimag** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cimag`**, **`cimagf`**, **`cimagl`** | \<complex.h> | \<ccomplex> |
+| **`cimag`** macro | \<tgmath.h> |  |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`norm`, `normf`, `norml`](norm-normf-norml1.md)\
+[`creal`, `crealf`, `creall`](creal-crealf-creall.md)\
+[`cproj`, `cprojf`, `cprojl`](cproj-cprojf-cprojl.md)\
+[`conj`, `conjf`, `conjl`](conj-conjf-conjl.md)\
+[`carg`, `cargf`, `cargl`](carg-cargf-cargl.md)\
+[`cabs`, `cabsf`, `cabsl`](cabs-cabsf-cabsl.md)

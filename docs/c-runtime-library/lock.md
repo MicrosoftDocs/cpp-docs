@@ -10,7 +10,7 @@ f1_keywords: ["lock", "_lock"]
 helpviewer_keywords: ["lock function", "_lock function"]
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
 ---
-# _lock
+# `_lock`
 
 Acquires a multi-thread lock.
 
@@ -27,12 +27,12 @@ void __cdecl _lock
 
 #### Parameters
 
-*locknum*<br/>
+*`locknum`*\
 [in] The identifier of the lock to acquire.
 
 ## Remarks
 
-If the lock has already been acquired, this method acquires the lock anyway and causes an internal C run-time (CRT) error. If the method cannot acquire a lock, it exits with a fatal error and sets the error code to `_RT_LOCK`.
+If the lock has already been acquired, this method acquires the lock anyway and causes an internal C run-time (CRT) error. If the method can't acquire a lock, it exits with a fatal error and sets the error code to `_RT_LOCK`.
 
 ## Requirements
 
@@ -40,5 +40,5 @@ If the lock has already been acquired, this method acquires the lock anyway and 
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_unlock](../c-runtime-library/unlock.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`_unlock`](./unlock.md)

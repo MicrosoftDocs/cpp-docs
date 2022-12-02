@@ -18,7 +18,7 @@ A Windows Runtime class can support concurrent thread access in various ways, as
 
 - `MarshallingBehavior` attribute can have one of the values—Agile, None, or Standard as defined by the `MarshallingType` enumeration.
 
-The `ThreadingModel` attribute specifies where the class is loaded when activated: only in a user-interface thread (STA) context, only in a background thread (MTA) context, or in the context of the thread that creates the object (Both). The `MarshallingBehavior` attribute values refer to how the object behaves in the various threading contexts; in most cases, you don’t have to understand these values in detail.  Of the classes that are provided by the Windows API, about 90 percent have `ThreadingModel`=Both and `MarshallingType`=Agile. This means that they can handle low-level threading details transparently and efficiently.   When you use `ref new` to create an "agile" class, you can call methods on it from your main app thread or from one or more worker threads.  In other words, you can use an agile class—no matter whether it's provided by Windows or by a third party—from anywhere in your code. You don’t have to be concerned with the class’s threading model or marshaling behavior.
+The `ThreadingModel` attribute specifies where the class is loaded when activated: only in a user-interface thread (STA) context, only in a background thread (MTA) context, or in the context of the thread that creates the object (Both). The `MarshallingBehavior` attribute values refer to how the object behaves in the various threading contexts; in most cases, you don't have to understand these values in detail.  Of the classes that are provided by the Windows API, about 90 percent have `ThreadingModel`=Both and `MarshallingType`=Agile. This means that they can handle low-level threading details transparently and efficiently.   When you use `ref new` to create an "agile" class, you can call methods on it from your main app thread or from one or more worker threads.  In other words, you can use an agile class—no matter whether it's provided by Windows or by a third party—from anywhere in your code. You don't have to be concerned with the class's threading model or marshaling behavior.
 
 ## Consuming Windows Runtime components
 
@@ -31,7 +31,6 @@ For various reasons, some classes can't be agile. If you are accessing instances
 Of the non-agile classes, the easiest to deal with are those that have `ThreadingModel`=Both and `MarshallingType`=Standard.  You can make these classes agile just by using the `Agile<T>` helper class.   The following example shows a declaration of a non-agile object of type `Windows::Security::Credentials::UI::CredentialPickerOptions^`, and the compiler warning that's issued as a result.
 
 ```
-
 ref class MyOptions
     {
     public:
@@ -63,7 +62,6 @@ If neither of those conditions apply, then you can mark the containing class as 
 The following example shows how to use `Agile<T>` so that you can safely ignore the warning.
 
 ```
-
 #include <agile.h>
 ref class MyOptions
     {

@@ -1,17 +1,104 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 05/24/2022
+ms.date: 11/08/2022
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
 # What's new for C++ in Visual Studio 2022
 
-Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application. For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
+Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
+
+For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md)
+
+## What's new for C++ in Visual Studio version 17.4
+
+For a summary of new features and bug fixes in Visual Studio in version 17.34, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.4).
+
+- Improved compiler error messages to provide more correct and useful information, especially for concepts.
+
+- Added experimental MSVC flag **`/experimental:log<directory>`** to output SARIF build logs to the specified directory.
+
+- Added support for C23 attributes to IntelliSense and continued progress in C++20 modules support.
+
+- Improved indexing performance when opening a new solution. Large projects could see a 20-35% improvement from 17.3.
+
+- Improved Named Return Value Optimization (NRVO):
+  - NRVO is enabled for cases that involve exception handling or loops.
+  - NRVO is enabled even under **`/Od`** if the user passes the **`/Zc:nrvo`** flag, or **`/std:c++20`** or later, or **`/permissive-`**.
+  - You can now disable NRVO with the **`/Zc:nrvo-`** flag.
+
+- Upgraded the version of LLVM shipped with Visual Studio to 15.0.1. For more information on what is available, see the [LLVM](https://releases.llvm.org/15.0.0/docs/ReleaseNotes.html) and [Clang](https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html) release notes.
+
+- Added support to Visual Studio for vcpkg artifacts with CMake projects. For projects that include a vcpkg manifest, the environment is activated automatically on project open. Learn more about this feature in the [vcpkg environment activation in Visual Studio](https://aka.ms/vsvcpkgenv) blog post.
+
+- You can now use Dev Containers for your C++ projects. Learn more about this feature in our [Dev Containers for C++](https://aka.ms/vscppdevcontainer) blog post.
+
+- IntelliSense now respects the order of pre-included headers when one is a PCH. Previously, when a PCH was used via **`/Yu`** and force-included via **`/FI`**, IntelliSense would always process it first, before any other headers included via **`/FI`**. This behavior didn't match the build behavior. With this change, **`/FI`** headers are processed in the order they're specified.
+
+- Removed internal prefixes from CTest names in Test Explorer.
+
+- Updated the version of CMake shipped with Visual Studio to version 3.24.1. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.24/release/3.24.html).
+
+- Android SDK update:
+  - Ant scripts have been removed, so users will no longer see Ant-based templates in the New Project dialog. For help migrating from Ant templates to Gradle templates, see [Migrating Builds From Apache Ant](https://docs.gradle.org/current/userguide/migrating_from_ant.html)
+  - Added support for building with NDK 23 and 24
+  - Updated NDK component to the LTS version 23
+
+- Added vectorized implementations of `ranges::min_element()`, `ranges::max_element()`, and `ranges::minmax_element()`
+
+- We continue to track the latest developments in C++ standardization. Support for these C++23 features is available by including [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) in your compiler options:
+  - [P2302R4](https://wg21.link/p2302r4) `ranges::contains`, `ranges::contains_subrange`
+  - [P2499R0](https://wg21.link/p2499r0) `string_view` Range Constructor Should Be `explicit`
+  - [P0849R8](https://wg21.link/p0849r8) `auto(x)`: decay-copy In The Language
+
+    (The compiler part isn't implemented yet. The library part was implemented in C++20 mode when Ranges support was initially implemented.)
+  - [P0881R7](https://wg21.link/p0881r7) `<stacktrace>`
+  - [P2301R1](https://wg21.link/p2301r1) Add A `pmr` Alias For `std::stacktrace`
+  - [P1328R1](https://wg21.link/p1328r1) `constexpr type_info::operator==()`
+  - [P2440R1](https://wg21.link/p2440r1) `ranges::iota`, `ranges::shift_left`, `ranges::shift_right`
+  - [P2441R2](https://wg21.link/p2441r2) `views::join_with`
+
+- Added an option "Navigation after Create Declaration/Definition" to allow you to choose the navigation behavior of the Create Declaration/Definition feature. You can select between peeking (the default) or opening the document, or no navigation.
+
+- Arm64 builds of Visual Studio now bundle Arm64 versions of CMake and Ninja.
+
+- Added support for CMake Presets version 4. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.23/release/3.23.html#id6).
+
+- Remote system connections using the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md) now support SSH ProxyJump. ProxyJump is used to access an SSH host via another SSH host (for example, to access a host behind a firewall).
+
+## What's new for C++ in Visual Studio version 17.3
+
+For a summary of new features and bug fixes in Visual Studio in version 17.3, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3).
+
+- The Arm64EC toolchain is no longer marked as experimental and is ready for production use.
+
+- The Visual Studio Terminal can now be used as an SSH client with your stored SSH connections. With the C++ for Linux Tools installed, open the Terminal tool window. The Terminal dropdown is populated with your stored connections. When you select a connection, a new Terminal window opens inside Visual Studio that shows a pseudo-terminal on your remote system. Control characters, colors, and cursor positional awareness are all supported.
+
+- Visual Studio can now add Unreal Engine class templates for your UE projects. To try this feature, ensure **IDE support for Unreal Engine** is selected in the **Game development with C++** workload in the Visual Studio Installer. When you're working on a UE project, right-click in the project or a folder/filter and select **Add** > **UE Class**.
+
+- **Go to Definition** now remembers the prior signature and navigates accordingly when a better match isn't available (for example, after you manually change the signature of one of the pair).
+We've improved responsiveness of **Go To All**. Previously, results appeared after you stopped typing. In the new experience, results show as you type.
+
+- In contexts requiring `enum` type completion (for example, assignments to `enum` variables, case labels, returning `enum` type, and so on), the autocompletion list is now filtered to just the matching enumerators and related constructs.
+
+- Added NuGet PackageReference support for C++/CLI MSBuild projects targeting .NET Core. This change was made to unblock mixed codebases from being able to adopt .NET Core. This support doesn't work for other C++ project types or any C++ project types targeting .NET Framework. There are no plans to extend PackageReference support to other C++ scenarios. The team is working on separate experiences involving vcpkg, which will work for non-MSBuild scenarios and add greater functionality.
+
+- Added a Serial Monitor window for embedded development, available through **Debug** > **Windows** > **Serial Monitor**.
+
+- Improved C++ indexing by ~66% compared to 17.2.
+
+- Updated the version of CMake shipped with Visual Studio to version 3.23. See the [CMake 3.23 release notes](https://cmake.org/cmake/help/v3.23/release/3.23.html) for details of what is available.
+
+- Upgraded the versions of LLVM tools shipped with Visual Studio to v14. For details of what is available, see the [LLVM](https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html) and [Clang](https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html) release notes.
+
+- Updated the side-by-side Dev 16.11 C++ Toolset to version 14.29.30145.00. The latest version of the Dev 16.11 C++ Toolset contains important bug fixes, including fixing all remaining C++20 defect reports. For more information about bug fixes, including C++20 defect reports in Dev 16.11, see [Visual Studio 2019 version 16.11.14 release notes](/visualstudio/releases/2019/release-notes#16.11.14).
+
+- We have made various improvements to the in-editor experience of C++ modules. We're continuously working on improving the quality of the experience but encourage you to try them in 17.3. Report remaining issues through [Developer Community](https://aka.ms/vsfeedback/browsecpp).
 
 ## What's new for C++ in Visual Studio version 17.2
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.2](/visualstudio/releases/2022/release-notes).
+For a summary of new features and bug fixes in Visual Studio in version 17.2, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.2).
 
 - Added compiler support for C++23 feature [deducing `this`](https://wg21.link/p0847), available under the **`/std:c++latest`** option.
 
@@ -23,12 +110,12 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 - In 17.1, we introduced peripheral register and RTOS views for embedded developers. We continue to improve the capabilities of those views with usability improvements in 17.2:
   - The RTOS tool window is now hidden by default. It prevents showing a tool window with error messages that aren't relevant when you're not using an RTOS.
-  - When you double click on an RTOS object in the tool window, it adds a watch for the object.
+  - When you choose (double-click) an RTOS object in the tool window, it adds a watch for the object.
   - When you select the start and end values for the stack pointer in the RTOS tool window, it's opened in the memory window.
   - We've added thread awareness for device targets to the call stack window.
   - Users can now select a pin icon next to peripherals, registers, or fields to pin them the top of the Peripheral View.
 
-- We've added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20 `** option. For more information about the implemented backports, see the [C++20 Defect Reports project](https://github.com/microsoft/STL/projects/9) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
+- We've added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20`** option. For more information about the implemented backports, see the [C++20 Defect Reports project](https://github.com/microsoft/STL/projects/9) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
 
 - We added various C++23 Library features, available under the **`/std:c++latest`** option. For more information about the new features, see the [STL Repo changelog](https://github.com/microsoft/STL/wiki/Changelog).
 
@@ -36,7 +123,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ## What's new for C++ in Visual Studio version 17.1
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.1](/visualstudio/releases/2022/release-notes-v17.1).
+For a summary of new features and bug fixes in Visual Studio in version 17.1, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1).
 
 - A new **Configure Preset** template has been added to configure and build CMake projects on a remote macOS system with *`CMakePresets.json`*. You can also launch CMake targets on a remote macOS system, and then debug remotely in the Visual Studio debugger backed by GDB or LLDB.
 
@@ -52,7 +139,7 @@ For a summary of new features and bug fixes in Visual Studio, see [What's New in
 
 ## What's new for C++ in Visual Studio version 17.0
 
-For a summary of new features and bug fixes in Visual Studio, see [What's New in Visual Studio 2022 version 17.0](/visualstudio/releases/2022/release-notes-v17.0).
+For a summary of new features and bug fixes in Visual Studio, see [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0).
 
 - The Visual Studio IDE, *`devenv.exe`*, is now a native 64-bit application.
 
@@ -84,7 +171,7 @@ In Visual Studio 2022, when you start your app in the debugger, you can use the 
 
 - The Project menu in CMake projects has been streamlined and exposes options to "Delete Cache and Reconfigure" and "View Cache".
 
-- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689R4](https://wg21.link/P1689r4). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
+- Implemented the **`/scanDependencies`** compiler option to list C++20 module dependencies for CMake projects, as described in [P1689R5](https://wg21.link/P1689r5). It's a step towards support for building modules-based projects with CMake and we're working on completing this support in later releases.
 
 ### Standard Library improvements
 
@@ -122,7 +209,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 ### C++ AMP deprecated
 
-- C++ AMP headers are now deprecated. Including `<amp.h>` in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](/cpp/parallel/amp/cpp-amp-overview).
+- C++ AMP headers are now deprecated. Including `<amp.h>` in a C++ project generates build errors. To silence the errors, define `_SILENCE_AMP_DEPRECATION_WARNINGS`. For more information, see [our AMP Deprecation links](../parallel/amp/cpp-amp-overview.md).
 
 ### IntelliSense improvements
 

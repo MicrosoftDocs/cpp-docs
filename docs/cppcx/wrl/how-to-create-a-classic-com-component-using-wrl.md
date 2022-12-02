@@ -68,7 +68,7 @@ This document shows how to use the Windows Runtime C++ Template Library to creat
     @="1.0"
     ```
 
-2. Run RegScript.reg or add it to your project’s **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).
+2. Run RegScript.reg or add it to your project's **Post-Build Event**. For more information, see [Pre-build Event/Post-build Event Command Line Dialog Box](/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).
 
 3. Add a **Win32 Console Application** project to the solution. Name the project, for example, `Calculator`.
 

@@ -10,7 +10,7 @@ f1_keywords: ["creal", "crealf", "creall", "complex/creal", "complex/crealf", "c
 helpviewer_keywords: ["creal function", "crealf function", "creall function"]
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
 ---
-# creal, crealf, creall
+# `creal`, `crealf`, `creall`
 
 Retrieves the real part of a complex number.
 
@@ -28,35 +28,35 @@ long double creal( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number.
 
-## Return Value
+## Return value
 
-The real part of *z*.
+The real part of *`z`*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **creal** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **creal** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **`creal`** that take `_Fcomplex` or `_Lcomplex` values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`creal`** always takes a `_Dcomplex` value and returns a **`double`** value.
 
-If you use the \<tgmath.h> `creal()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `creal()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**creal**, **crealf**, **creall**|\<complex.h>|\<ccomplex>|
-|**creal** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`creal`**, **`crealf`**, **`creall`** | \<complex.h> | \<ccomplex> |
+| **`creal`** macro | \<tgmath.h> |  |
 
-The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The `_Fcomplex`, `_Dcomplex`, and `_Lcomplex` types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[_Cbuild, _FCbuild, _LCbuild](cbuild-fcbuild-lcbuild.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`_Cbuild`, `_FCbuild`, `_LCbuild`](cbuild-fcbuild-lcbuild.md)\
+[`norm`, `normf`, `norml`](norm-normf-norml1.md)\
+[`cproj`, `cprojf`, `cprojl`](cproj-cprojf-cprojl.md)\
+[`conj`, `conjf`, `conjl`](conj-conjf-conjl.md)\
+[`cimag`, `cimagf`, `cimagl`](cimag-cimagf-cimagl.md)\
+[`carg`, `cargf`, `cargl`](carg-cargf-cargl.md)\
+[`cabs`, `cabsf`, `cabsl`](cabs-cabsf-cabsl.md)

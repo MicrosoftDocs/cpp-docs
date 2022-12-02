@@ -599,7 +599,7 @@ BOOL GetSilent() const;
 
 ### Return Value
 
-Nonzero if dialog boxes can’t be displayed from the WebBrowser control; otherwise zero.
+Nonzero if dialog boxes can't be displayed from the WebBrowser control; otherwise zero.
 
 ### Remarks
 

@@ -1,7 +1,7 @@
 ---
 title: "ARM64 exception handling"
 description: Describes the exception handling conventions and data used by windows on ARM64.
-ms.date: 04/07/2022
+ms.date: 10/10/2022
 ---
 # ARM64 exception handling
 
@@ -39,9 +39,9 @@ These assumptions are made in the exception handling description:
 
 - There's no conditional code in epilogs.
 
-- Dedicated frame pointer register: If the sp is saved in another register (x29) in the prolog, that register remains untouched throughout the function. It means the original sp may be recovered at any time.
+- Dedicated frame pointer register: If the `sp` is saved in another register (`x29`) in the prolog, that register remains untouched throughout the function. It means the original `sp` may be recovered at any time.
 
-- Unless the sp is saved in another register, all manipulation of the stack pointer occurs strictly within the prolog and epilog.
+- Unless the `sp` is saved in another register, all manipulation of the stack pointer occurs strictly within the prolog and epilog.
 
 - The stack frame layout is organized as described in the next section.
 
@@ -49,7 +49,7 @@ These assumptions are made in the exception handling description:
 
 ![Diagram that shows the stack frame layout for functions.](media/arm64-exception-handling-stack-frame.png "stack frame layout")
 
-For frame chained functions, the fp and lr pair can be saved at any position in the local variable area, depending on optimization considerations. The goal is to maximize the number of locals that can be reached by a single instruction based on the frame pointer (x29) or stack pointer (sp). However, for `alloca` functions, it must be chained, and x29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register save areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<x29, lr> pair) and outgoing parameter size, respectively.
+For frame chained functions, the `fp` and `lr` pair can be saved at any position in the local variable area, depending on optimization considerations. The goal is to maximize the number of locals that can be reached by a single instruction based on the frame pointer (`x29`) or stack pointer (`sp`). However, for `alloca` functions, it must be chained, and `x29` must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register save areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding `alloca` area). `#localsz` and `#outsz` denote local area size (including the save area for the `<x29, lr>` pair) and outgoing parameter size, respectively.
 
 1. Chained, #localsz \<= 512
 
@@ -79,7 +79,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         add    x29,sp,#outsz            // setup x29 points to bottom of local area
     ```
 
-1. Unchained, leaf functions (lr unsaved)
+1. Unchained, leaf functions (`lr` unsaved)
 
     ```asm
         stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
@@ -90,9 +90,9 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   All locals are accessed based on SP. \<x29,lr> points to the previous frame. For frame size \<= 512, the "sub sp, ..." can be optimized away if the regs saved area is moved to the bottom of stack. The downside is that it's not consistent with other layouts above. And, saved regs take part of the range for pair-regs and pre- and post-indexed offset addressing mode.
+   All locals are accessed based on `sp`. `<x29,lr>` points to the previous frame. For frame size \<= 512, the `sub sp, ...` can be optimized away if the regs saved area is moved to the bottom of stack. The downside is that it's not consistent with other layouts above. And, saved regs take part of the range for pair-regs and pre- and post-indexed offset addressing mode.
 
-1. Unchained, non-leaf functions (lr is saved in Int saved area)
+1. Unchained, non-leaf functions (saves `lr` in Int saved area)
 
     ```asm
         stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
@@ -114,7 +114,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   Only x19 saved:
+   Only `x19` saved:
 
     ```asm
         sub    sp,sp,#16                // reg save area allocation*
@@ -122,9 +122,9 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp,sp,#(framesz-16)      // allocate the remaining local area
     ```
 
-   \* The reg save area allocation isn't folded into the stp because a pre-indexed reg-lr stp can't be represented with the unwind codes.
+   \* The reg save area allocation isn't folded into the `stp` because a pre-indexed reg-lr `stp` can't be represented with the unwind codes.
 
-   All locals are accessed based on SP. \<x29> points to the previous frame.
+   All locals are accessed based on `sp`. `<x29>` points to the previous frame.
 
 1. Chained, #framesz \<= 512, #outsz = 0
 
@@ -135,7 +135,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         stp    d8,d9,[sp,#(framesz-16)]     // save FP pair
     ```
 
-   Compared to the first prolog example above, this example has an advantage: all register save instructions are ready to execute after only one stack allocation instruction. That means there's no anti-dependence on sp that prevents instruction level parallelism.
+   Compared to the first prolog example above, this example has an advantage: all register save instructions are ready to execute after only one stack allocation instruction. That means there's no anti-dependence on `sp` that prevents instruction level parallelism.
 
 1. Chained, frame size > 512 (optional for functions without `alloca`)
 
@@ -149,7 +149,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp,sp,#(framesz-80)          // allocate the remaining local area
     ```
 
-   For optimization purpose, x29 can be put at any position in local area to provide a better coverage for "reg-pair" and pre-/post-indexed offset addressing mode. Locals below frame pointers can be accessed based on SP.
+   For optimization purpose, `x29` can be put at any position in local area to provide a better coverage for "reg-pair" and pre-/post-indexed offset addressing mode. Locals below frame pointers can be accessed based on `sp`.
 
 1. Chained, frame size > 4K, with or without alloca(),
 
@@ -178,7 +178,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
 
 ### `.pdata` records
 
-The `.pdata` records are an ordered array of fixed-length items that describe every stack-manipulating function in a PE binary. The phrase "stack-manipulating" is significant: leaf functions that don't require any local storage, and don't need to save/restore non-volatile registers, don't require a `.pdata` record. These records should be explicitly omitted to save space. An unwind from one of these functions can get the return address directly from LR to move up to the caller.
+The `.pdata` records are an ordered array of fixed-length items that describe every stack-manipulating function in a PE binary. The phrase "stack-manipulating" is significant: leaf functions that don't require any local storage, and don't need to save/restore non-volatile registers, don't require a `.pdata` record. These records should be explicitly omitted to save space. An unwind from one of these functions can get the return address directly from `lr` to move up to the caller.
 
 Each `.pdata` record for ARM64 is 8 bytes in length. The general format of each record places the 32-bit RVA of the function start in the first word, followed by a second word that contains either a pointer to a variable-length `.xdata` block, or a packed word describing a canonical function unwinding sequence.
 
@@ -202,7 +202,7 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
 
 This data is broken into four sections:
 
-1. A 1 or 2-word header describing the overall size of the structure and providing key function data. The second word is only present if both the **Epilog Count** and **Code Words** fields are set to 0. The header has these bit fields:
+1. A 1-word or 2-word header describing the overall size of the structure and providing key function data. The second word is only present if both the **Epilog Count** and **Code Words** fields are set to 0. The header has these bit fields:
 
    a. **Function Length** is an 18-bit field. It indicates the total length of the function in bytes, divided by 4. If a function is larger than 1M, then multiple `.pdata` and `.xdata` records must be used to describe the function. For more information, see the [Large functions](#large-functions) section.
 
@@ -271,7 +271,7 @@ Although the prolog and each epilog has its own index into the unwind codes, the
 
 ### Unwind codes
 
-The array of unwind codes is a pool of sequences that describe exactly how to undo the effects of the prolog. They're stored in the same order the operations need to be undone. The unwind codes can be thought of as a small instruction set, encoded as a string of bytes. When execution is complete, the return address to the calling function is in the lr register. And, all non-volatile registers are restored to their values at the time the function was called.
+The array of unwind codes is a pool of sequences that describe exactly how to undo the effects of the prolog. They're stored in the same order the operations need to be undone. The unwind codes can be thought of as a small instruction set, encoded as a string of bytes. When execution is complete, the return address to the calling function is in the `lr` register. And, all non-volatile registers are restored to their values at the time the function was called.
 
 If exceptions were guaranteed to only ever occur within a function body, and never within a prolog or any epilog, then only a single sequence would be necessary. However, the Windows unwinding model requires that code can unwind from within a partially executed prolog or epilog. To meet this requirement, the unwind codes have been carefully designed so they unambiguously map 1:1 to each relevant opcode in the prolog and epilog. This design has several implications:
 
@@ -281,48 +281,60 @@ If exceptions were guaranteed to only ever occur within a function body, and nev
 
 - By counting the number of instructions before the end of the prolog, it's possible to skip the equivalent number of unwind codes. We can execute the rest of the sequence to undo only those parts of the prolog that have completed execution.
 
-The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack. There are 21 unwind codes in total. Each unwind code maps exactly one instruction in the prolog/epilog, to allow for unwinding of partially executed prologs and epilogs.
+The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack. There are 22 unwind codes in total. Each unwind code maps exactly one instruction in the prolog/epilog, to allow for unwinding of partially executed prologs and epilogs.
 
 | Unwind code | Bits and interpretation |
 |--|--|
 | `alloc_s` | 000xxxxx: allocate small stack with size \< 512 (2^5 * 16). |
-| `save_r19r20_x` | 001zzzzz: save \<x19,x20> pair at `[sp-#Z*8]!`, pre-indexed offset >= -248 |
-| `save_fplr` | 01zzzzzz: save \<x29,lr> pair at `[sp+#Z*8]`,  offset \<= 504. |
-| `save_fplr_x` | 10zzzzzz: save \<x29,lr> pair at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
+| `save_r19r20_x` | 001zzzzz: save `<x19,x20>` pair at `[sp-#Z*8]!`, pre-indexed offset >= -248 |
+| `save_fplr` | 01zzzzzz: save `<x29,lr>` pair at `[sp+#Z*8]`,  offset \<= 504. |
+| `save_fplr_x` | 10zzzzzz: save `<x29,lr>` pair at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
 | `alloc_m` | 11000xxx'xxxxxxxx: allocate large stack with size \< 16k (2^11 * 16). |
-| `save_regp` | 110010xx'xxzzzzzz: save x(19+#X) pair at `[sp+#Z*8]`, offset \<= 504 |
-| `save_regp_x` | 110011xx'xxzzzzzz: save pair x(19+#X) at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
-| `save_reg` | 110100xx'xxzzzzzz: save reg x(19+#X) at `[sp+#Z*8]`, offset \<= 504 |
-| `save_reg_x` | 1101010x'xxxzzzzz: save reg x(19+#X) at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -256 |
-| `save_lrpair` | 1101011x'xxzzzzzz: save pair \<x(19+2*#X),lr> at `[sp+#Z*8]`, offset \<= 504 |
-| `save_fregp` | 1101100x'xxzzzzzz: save pair d(8+#X) at `[sp+#Z*8]`, offset \<= 504 |
-| `save_fregp_x` | 1101101x'xxzzzzzz: save pair d(8+#X), at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
-| `save_freg` | 1101110x'xxzzzzzz: save reg d(8+#X) at `[sp+#Z*8]`, offset \<= 504 |
-| `save_freg_x` | 11011110'xxxzzzzz: save reg d(8+#X) at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -256 |
+| `save_regp` | 110010xx'xxzzzzzz: save `x(19+#X)` pair at `[sp+#Z*8]`, offset \<= 504 |
+| `save_regp_x` | 110011xx'xxzzzzzz: save pair `x(19+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
+| `save_reg` | 110100xx'xxzzzzzz: save reg `x(19+#X)` at `[sp+#Z*8]`, offset \<= 504 |
+| `save_reg_x` | 1101010x'xxxzzzzz: save reg `x(19+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -256 |
+| `save_lrpair` | 1101011x'xxzzzzzz: save pair `<x(19+2*#X),lr>` at `[sp+#Z*8]`, offset \<= 504 |
+| `save_fregp` | 1101100x'xxzzzzzz: save pair `d(8+#X)` at `[sp+#Z*8]`, offset \<= 504 |
+| `save_fregp_x` | 1101101x'xxzzzzzz: save pair `d(8+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
+| `save_freg` | 1101110x'xxzzzzzz: save reg `d(8+#X)` at `[sp+#Z*8]`, offset \<= 504 |
+| `save_freg_x` | 11011110'xxxzzzzz: save reg `d(8+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -256 |
 | `alloc_l` | 11100000'xxxxxxxx'xxxxxxxx'xxxxxxxx: allocate large stack with size \< 256M (2^24 * 16) |
-| `set_fp` | 11100001: set up x29: with: `mov x29,sp` |
-| `add_fp` | 11100010'xxxxxxxx: set up x29 with: `add x29,sp,#x*8` |
+| `set_fp` | 11100001: set up `x29` with `mov x29,sp` |
+| `add_fp` | 11100010'xxxxxxxx: set up `x29` with `add x29,sp,#x*8` |
 | `nop` | 11100011: no unwind operation is required. |
-| `end` | 11100100: end of unwind code. Implies ret in epilog. |
+| `end` | 11100100: end of unwind code. Implies `ret` in epilog. |
 | `end_c` | 11100101: end of unwind code in current chained scope. |
 | `save_next` | 11100110: save next non-volatile Int or FP register pair. |
 |  | 11100111: reserved |
 |  | 11101xxx: reserved for custom stack cases below only generated for asm routines |
-|  | 11101000: Custom stack for MSFT_OP_TRAP_FRAME |
-|  | 11101001: Custom stack for MSFT_OP_MACHINE_FRAME |
-|  | 11101010: Custom stack for MSFT_OP_CONTEXT |
-|  | 11101100: Custom stack for MSFT_OP_CLEAR_UNWOUND_TO_CALL |
-|  | 1111xxxx: reserved |
+|  | 11101000: Custom stack for `MSFT_OP_TRAP_FRAME` |
+|  | 11101001: Custom stack for `MSFT_OP_MACHINE_FRAME` |
+|  | 11101010: Custom stack for `MSFT_OP_CONTEXT` |
+|  | 11101011: Custom stack for `MSFT_OP_EC_CONTEXT` |
+|  | 11101100: Custom stack for `MSFT_OP_CLEAR_UNWOUND_TO_CALL` |
+|  | 11101101: reserved |
+|  | 11101110: reserved |
+|  | 11101111: reserved |
+|  | 11110xxx: reserved |
+|  | 11111000'yyyyyyyy : reserved |
+|  | 11111001'yyyyyyyy'yyyyyyyy : reserved |
+|  | 11111010'yyyyyyyy'yyyyyyyy'yyyyyyyy : reserved |
+|  | 11111011'yyyyyyyy'yyyyyyyy'yyyyyyyy'yyyyyyyy : reserved |
+| `pac_sign_lr` | 11111100: sign the return address in `lr` with `pacibsp` |
+|  | 11111101: reserved |
+|  | 11111110: reserved |
+|  | 11111111: reserved |
 
 In instructions with large values covering multiple bytes, the most significant bits are stored first. This design makes it possible to find the total size in bytes of the unwind code by looking up only the first byte of the code. Since each unwind code is exactly mapped to an instruction in a prolog or epilog, you can compute the size of the prolog or epilog. Walk from the sequence start to the end, and use a lookup table or similar device to determine the length of the corresponding opcode.
 
-Post-indexed offset addressing isn't allowed in a prolog. All offset ranges (#Z) match the encoding of STP/STR addressing except `save_r19r20_x`, in which 248 is sufficient for all save areas (10 Int registers + 8 FP registers + 8 input registers).
+Post-indexed offset addressing isn't allowed in a prolog. All offset ranges (#Z) match the encoding of `stp`/`str` addressing except `save_r19r20_x`, in which 248 is sufficient for all save areas (10 Int registers + 8 FP registers + 8 input registers).
 
 `save_next` must follow a save for Int or FP volatile register pair: `save_regp`, `save_regp_x`, `save_fregp`, `save_fregp_x`, `save_r19r20_x`, or another `save_next`. It saves the next register pair at the next 16-byte slot in "growing up" order. A `save_next` refers to the first FP register pair when it follows the `save-next` that denotes the last Int register pair.
 
-Since the sizes of regular return and jump instructions are the same, there's no need of a separated `end` unwind code for tail-call scenarios.
+Since the sizes of regular return and jump instructions are the same, there's no need for a separated `end` unwind code in tail-call scenarios.
 
-`end_c` is designed to handle noncontiguous function fragments for optimization purposes. An `end_c` that indicates the end of unwind codes in the current scope must be followed by another series of unwind code ended with a real `end`. The unwind codes between `end_c` and `end` represent the prolog operations in the parent region ("phantom" prolog).  More details and examples are described in the section below.
+`end_c` is designed to handle noncontiguous function fragments for optimization purposes. An `end_c` that indicates the end of unwind codes in the current scope must be followed by another series of unwind codes ending with a real `end`. The unwind codes between `end_c` and `end` represent the prolog operations in the parent region (a "phantom" prolog). More details and examples are described in the section below.
 
 ### Packed unwind data
 
@@ -343,10 +355,10 @@ The fields are as follows:
 - **Function Length** is an 11-bit field providing the length of the entire function in bytes, divided by 4. If the function is larger than 8k, a full `.xdata` record must be used instead.
 - **Frame Size** is a 9-bit field indicating the number of bytes of stack that is allocated for this function, divided by 16. Functions that allocate greater than (8k-16) bytes of stack must use a full `.xdata` record. It includes the local variable area, outgoing parameter area, callee-saved Int and FP area, and home parameter area. It excludes the dynamic allocation area.
 - **CR** is a 2-bit flag indicating whether the function includes extra instructions to set up a frame chain and return link:
-  - 00 = unchained function, \<x29,lr> pair isn't saved in stack.
-  - 01 = unchained function, \<lr> is saved in stack
-  - 10 = reserved;
-  - 11 = chained function, a store/load pair instruction is used in prolog/epilog \<x29,lr>
+  - 00 = unchained function, `<x29,lr>` pair isn't saved in stack
+  - 01 = unchained function, `<lr>` is saved in stack
+  - 10 = chained function with signed return address
+  - 11 = chained function, a store/load pair instruction is used in prolog/epilog `<x29,lr>`
 - **H** is a 1-bit flag indicating whether the function homes the integer parameter registers (x0-x7) by storing them at the very start of the function. (0 = doesn't home registers, 1 = homes registers).
 - **RegI** is a 4-bit field indicating the number of non-volatile INT registers (x19-x28) saved in the canonical stack location.
 - **RegF** is a 3-bit field indicating the number of non-volatile FP registers (d8-d15) saved in the canonical stack location. (RegF=0: no FP register is saved; RegF>0: RegF+1 FP registers are saved). Packed unwind data can't be used for function that save only one FP register.
@@ -355,38 +367,41 @@ Canonical prologs that fall into categories 1, 2 (without outgoing parameter are
 
 Step 0: Pre-compute of the size of each area.
 
-Step 1: Save Int callee-saved registers.
+Step 1: Sign the return address.
 
-Step 2: This step is specific for type 4 in early sections. lr is saved at the end of Int area.
+Step 2: Save Int callee-saved registers.
 
-Step 3: Save FP callee-saved registers.
+Step 3: This step is specific for type 4 in early sections. `lr` is saved at the end of Int area.
 
-Step 4: Save input arguments in the home parameter area.
+Step 4: Save FP callee-saved registers.
 
-Step 5: Allocate remaining stack, including local area, \<x29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
+Step 5: Save input arguments in the home parameter area.
+
+Step 6: Allocate remaining stack, including local area, `<x29,lr>` pair, and outgoing parameter area. 6a corresponds to canonical type 1. 6b and 6c are for canonical type 2. 6d and 6e are for both type 3 and type 4.
 
 | Step # | Flag values | # of instructions | Opcode | Unwind code |
 |--|--|--|--|--|
 | 0 |  |  | `#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz` |
-| 1 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
-| 2 | **CR** == 01\* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
-| 3 | 0 < **RegF** <= 7 | (**RegF** + 1) / 2 +<br/>(**RegF** + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
-| 4 | **H** == 1 | 4 | `stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]` | `nop`<br/>`nop`<br/>`nop`<br/>`nop` |
-| 5a | **CR** == 11 &&<br/> `#locsz` <= 512 | 2 | `stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\* | `save_fplr_x`<br/>`set_fp` |
-| 5b | **CR** == 11 &&<br/>512 < `#locsz` <= 4080 | 3 | `sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`save_fplr`<br/>`set_fp` |
-| 5c | **CR** == 11 &&<br/> `#locsz` > 4080 | 4 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp` |
-| 5d | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
-| 5e | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
+| 1 | **CR** == 11 | 1 | `pacibsp` | `pac_sign_lr` |
+| 2 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
+| 3 | **CR** == 01\* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
+| 4 | 0 < **RegF** <= 7 | (**RegF** + 1) / 2 +<br/>(**RegF** + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
+| 5 | **H** == 1 | 4 | `stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]` | `nop`<br/>`nop`<br/>`nop`<br/>`nop` |
+| 6a | (**CR** == 10 \|\| **CR** == 11) &&<br/> `#locsz` <= 512 | 2 | `stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\* | `save_fplr_x`<br/>`set_fp` |
+| 6b | (**CR** == 10 \|\| **CR** == 11) &&<br/>512 < `#locsz` <= 4080 | 3 | `sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`save_fplr`<br/>`set_fp` |
+| 6c | (**CR** == 10 \|\| **CR** == 11) &&<br/> `#locsz` > 4080 | 4 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0` | `alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp` |
+| 6d | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
+| 6e | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
 
-\* If **CR** == 01 and **RegI** is an odd number, Step 2 and last `save_rep` in step 1 are merged into one `save_regp`.
+\* If **CR** == 01 and **RegI** is an odd number, Step 2 and the last `save_rep` in step 1 are merged into one `save_regp`.
 
 \*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first `stp` for the floating-point does the predecrement.
 
-\*\*\* No instruction corresponding to `mov x29,sp` is present in the epilog. Packed unwind data can't be used if a function requires restoration of sp from x29.
+\*\*\* No instruction corresponding to `mov x29,sp` is present in the epilog. Packed unwind data can't be used if a function requires restoration of `sp` from `x29`.
 
 ### Unwinding partial prologs and epilogs
 
-In the most common unwinding situations, the exception or call occurs in the body of the function, away from the prolog and all epilogs. In these situations, unwinding is straightforward: the unwinder simply executes the codes in the unwind array. It begins at index 0 and continues until an end opcode is detected.
+In the most common unwinding situations, the exception or call occurs in the body of the function, away from the prolog and all epilogs. In these situations, unwinding is straightforward: the unwinder simply executes the codes in the unwind array. It begins at index 0 and continues until an `end` opcode is detected.
 
 It's more difficult to correctly unwind in the case where an exception or interrupt occurs while executing a prolog or epilog. In these situations, the stack frame is only partially constructed. The problem is to determine exactly what's been done, to correctly undo it.
 
@@ -413,11 +428,11 @@ So, for both the prolog and epilog, we're left with a common set of unwind codes
 
 The epilog case is straightforward, since it's in normal order. Starting at offset 0 within the epilog (which starts at offset 0x100 in the function), we'd expect the full unwind sequence to execute, as no cleanup has yet been done. If we find ourselves one instruction in (at offset 2 in the epilog), we can successfully unwind by skipping the first unwind code. We can generalize this situation, and assume a 1:1 mapping between opcodes and unwind codes. Then, to start unwinding from instruction *n* in the epilog, we should skip the first *n* unwind codes, and begin executing from there.
 
-It turns out that a similar logic works for the prolog, except in reverse. If we start unwinding from offset 0 in the prolog, we want to execute nothing. If we unwind from offset 2, which is one instruction in, then we want to start executing the unwind sequence one unwind code from the end. (Remember, the codes are stored in reverse order.) And here too, we can generalize: if we start unwinding from instruction n in the prolog, we should start executing n unwind codes from the end of the list of codes.
+It turns out that a similar logic works for the prolog, except in reverse. If we start unwinding from offset 0 in the prolog, we want to execute nothing. If we unwind from offset 2, which is one instruction in, then we want to start executing the unwind sequence one unwind code from the end. (Remember, the codes are stored in reverse order.) And here too, we can generalize: if we start unwinding from instruction *n* in the prolog, we should start executing *n* unwind codes from the end of the list of codes.
 
 Prolog and epilog codes don't always match exactly, which is why the unwind array may need to contain several sequences of codes. To determine the offset of where to begin processing codes, use the following logic:
 
-1. If unwinding from within the body of the function, begin executing unwind codes at index 0 and continue until hitting an "end" opcode.
+1. If unwinding from within the body of the function, begin executing unwind codes at index 0 and continue until hitting an `end` opcode.
 
 1. If unwinding from within an epilog, use the epilog-specific starting index provided with the epilog scope as a starting point. Compute how many bytes the PC in question is from the start of the epilog. Then advance forward through the unwind codes, skipping unwind codes until all of the already-executed instructions are accounted for. Then execute starting at that point.
 
@@ -427,11 +442,11 @@ These rules mean the unwind codes for the prolog must always be the first in the
 
 ### Function fragments
 
-For code optimization purposes and other reasons, it may be preferable to split a function into separated fragments (also called regions). When split, each resulting function fragment requires its own separate `.pdata` (and possibly `.xdata`) record.
+For code optimization purposes and other reasons, it may be preferable to split a function into separated fragments (also called *regions*). When split, each resulting function fragment requires its own separate `.pdata` (and possibly `.xdata`) record.
 
 For each separated secondary fragment that has its own prolog, it's expected that no stack adjustment is done in its prolog. All stack space required by a secondary region must be pre-allocated by its parent region (or called host region). This preallocation keeps stack pointer manipulation strictly in the function's original prolog.
 
-A typical case of function fragments is "code separation" with that compiler may move a region of code out of its host function. There are three unusual cases that could be resulted by code separation.
+A typical case of function fragments is "code separation", where the compiler may move a region of code out of its host function. There are three unusual cases that could result from code separation.
 
 #### Example
 
@@ -474,7 +489,7 @@ A typical case of function fragments is "code separation" with that compiler may
 
 1. Epilogs only (region 2: prolog is in host region)
 
-   It's assumed that by the time control jumping into this region, all prolog codes have been executed. Partial unwind can happen in epilogs the same way as in a normal function. This type of region can't be represented by compact `.pdata`. In full `.xdata` record, it can be encoded with a "phantom" prolog, bracketed by an `end_c` and `end` unwind code pair.  The leading `end_c` indicates the size of prolog is zero. Epilog start index of the single epilog points to `set_fp`.
+   It's assumed that by the time control jumps into this region, all prolog codes have been executed. Partial unwind can happen in epilogs the same way as in a normal function. This type of region can't be represented by compact `.pdata`. In a full `.xdata` record, it can be encoded with a "phantom" prolog, bracketed by an `end_c` and `end` unwind code pair.  The leading `end_c` indicates the size of prolog is zero. Epilog start index of the single epilog points to `set_fp`.
 
    Unwind code for region 2: `end_c`, `set_fp`, `save_regp 0,240`, `save_fplr_x_256`, `end`.
 
@@ -515,7 +530,7 @@ Another more complicated case of function fragments is "shrink wrapping." The co
 
 In the prolog of region 1, stack space is pre-allocated. You can see that region 2 will have the same unwind code even it's moved out of its host function.
 
-Region 1: `set_fp`, `save_regp 0,240`, `save_fplr_x_256`, `end` with Epilog Start Index points to `set_fp` as usual.
+Region 1: `set_fp`, `save_regp 0,240`, `save_fplr_x_256`, `end`. Epilog Start Index points to `set_fp` as usual.
 
 Region 2: `save_regp 2, 224`, `end_c`, `set_fp`, `save_regp 0,240`, `save_fplr_x_256`, `end`. Epilog Start Index points to first unwind code `save_regp 2, 224`.
 
@@ -538,7 +553,7 @@ If a fragment has no prolog and no epilog, it still requires its own `.pdata` (a
     sub     sp,sp,#0x810            // alloc_m
     stp     fp,lr,[sp]              // save_fplr
     mov     fp,sp                   // set_fp
-                                    //  end of prolog
+                                    // end of prolog
     ...
 
 |$pdata$Foo|

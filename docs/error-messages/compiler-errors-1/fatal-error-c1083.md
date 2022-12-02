@@ -10,7 +10,7 @@ ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
 
 > Cannot open *filetype* file: '*file*': *message*
 
-The compiler generates a C1083 error when it can’t find a file it requires. There are many possible causes for this error. An incorrect include search path or missing or misnamed header files are the most common causes, but other file types and issues can also cause C1083. Here are some of the common reasons why the compiler generates this error.
+The compiler generates a C1083 error when it can't find a file it requires. There are many possible causes for this error. An incorrect include search path or missing or misnamed header files are the most common causes, but other file types and issues can also cause C1083. Here are some of the common reasons why the compiler generates this error.
 
 ## The specified file name is wrong
 
@@ -64,7 +64,7 @@ Even when header files are listed in **Solution Explorer** as part of a project,
 
 To fix this issue, correct the path that the compiler uses to search for the included or imported file. A new project uses default include search paths. You may have to modify the include search path to add a directory for your project. If you are compiling on the command line, add the path to the **INCLUDE** environment variable or the **`/I`** compiler option to specify the path to the file.
 
-To set the include directory path in Visual Studio, open the project’s **Property Pages** dialog box. Select **VC++ Directories** under **Configuration Properties** in the left pane, and then edit the **Include Directories** property. For more information about the per-user and per-project directories searched by the compiler in Visual Studio, see [VC++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md). For more information about the **`/I`** compiler option, see [`/I` (Additional Include Directories)](../../build/reference/i-additional-include-directories.md).
+To set the include directory path in Visual Studio, open the project's **Property Pages** dialog box. Select **VC++ Directories** under **Configuration Properties** in the left pane, and then edit the **Include Directories** property. For more information about the per-user and per-project directories searched by the compiler in Visual Studio, see [VC++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md). For more information about the **`/I`** compiler option, see [`/I` (Additional Include Directories)](../../build/reference/i-additional-include-directories.md).
 
 ## The command line INCLUDE or LIB environment is not set
 

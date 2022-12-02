@@ -10,7 +10,7 @@ f1_keywords: ["fmin", "fminf", "fminl", "math/fmin", "math/fminf", "math/fminl"]
 helpviewer_keywords: ["fmin function", "fminf function", "fminl function"]
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
 ---
-# fmin, fminf, fminl
+# `fmin`, `fminf`, `fminl`
 
 Determines the smaller of the two specified values.
 
@@ -47,40 +47,40 @@ long double fminl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The first value to compare.
 
-*y*\
+*`y`*\
 The second value to compare.
 
-## Return Value
+## Return value
 
-If successful, returns the smaller of *x* or *y*.
+If successful, returns the smaller of *`x`* or *`y`*.
 
-|Input|Result|
-|-----------|------------|
-|*x* is NaN|*y*|
-|*y* is NaN|*x*|
-|*x* and *y* are NaN|NaN|
+| Input | Result |
+|---|---|
+| *`x`* is NaN | *`y`* |
+| *`y`* is NaN | *`x`* |
+| *`x`* and *`y`* are NaN | NaN |
 
-The function does not cause [_matherr](matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
+The function doesn't cause [`_matherr`](matherr.md) to be invoked, cause any floating-point exceptions, or change the value of `errno`.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **fmin** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **fmin** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`fmin`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`fmin`** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `fmin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `fmin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**fmin**, **fminf**, **fminl**|C: \<math.h><br />C++: \<math.h> or \<cmath>|
-|**fmin** macro | \<tgmath.h> |
+| Routine | Required header |
+|---|---|
+| **`fmin`**, **`fminf`**, **`fminl`** | C: \<math.h><br />C++: \<math.h> or \<cmath> |
+| **`fmin`** macro | \<tgmath.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`fmax`, `fmaxf`, `fmaxl`](fmax-fmaxf-fmaxl.md)

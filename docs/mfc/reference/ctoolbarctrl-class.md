@@ -121,7 +121,7 @@ This control (and therefore the `CToolBarCtrl` class) is available only to progr
 
 A Windows toolbar common control is a rectangular child window that contains one or more buttons. These buttons can display a bitmap image, a string, or both. When the user chooses a button, it sends a command message to the toolbar's owner window. Typically, the buttons in a toolbar correspond to items in the application's menu; they provide a more direct way for the user to access an application's commands.
 
-`CToolBarCtrl` objects contain several important internal data structures: a list of button image bitmaps or an image list, a list of button label strings, and a list of `TBBUTTON` structures that associate an image and/or string with the position, style, state, and command ID of the button. Each of the elements of these data structures is referred to by a zero-based index. Before you can use a `CToolBarCtrl` object, you must set up these data structures. The list of strings can only be used for button labels; you can’t retrieve strings from the toolbar.
+`CToolBarCtrl` objects contain several important internal data structures: a list of button image bitmaps or an image list, a list of button label strings, and a list of `TBBUTTON` structures that associate an image and/or string with the position, style, state, and command ID of the button. Each of the elements of these data structures is referred to by a zero-based index. Before you can use a `CToolBarCtrl` object, you must set up these data structures. The list of strings can only be used for button labels; you can't retrieve strings from the toolbar.
 
 To use a `CToolBarCtrl` object, you'll typically follow these steps:
 
@@ -257,7 +257,7 @@ The members are as follows:
 
   - `TBSTATE_ENABLED` The button accepts user input. A button that doesn't have this state doesn't accept user input and is grayed.
 
-  - `TBSTATE_HIDDEN` The button isn't visible and can’t receive user input.
+  - `TBSTATE_HIDDEN` The button isn't visible and can't receive user input.
 
   - `TBSTATE_INDETERMINATE` The button is grayed.
 
@@ -2108,18 +2108,18 @@ void SetRows(
 Requested number of rows.
 
 *`bLarger`*\
-Tells whether to use more rows or fewer rows if the toolbar can’t be resized to the requested number of rows.
+Tells whether to use more rows or fewer rows if the toolbar can't be resized to the requested number of rows.
 
 *`lpRect`*\
 Points to the [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object or [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure that will receive the new bounding rectangle of the toolbar.
 
 ### Remarks
 
-If the toolbar can’t resize itself to the requested number or rows, it will resize itself to either the next larger or next smaller valid size, depending on the value of *`bLarger`*. If *`bLarger`* is `TRUE`, the new number of rows will be larger than the number requested. If *`bLarger`* is `FALSE`, the new number of rows will be smaller than the number requested.
+If the toolbar can't resize itself to the requested number or rows, it will resize itself to either the next larger or next smaller valid size, depending on the value of *`bLarger`*. If *`bLarger`* is `TRUE`, the new number of rows will be larger than the number requested. If *`bLarger`* is `FALSE`, the new number of rows will be smaller than the number requested.
 
 A given number of rows is valid for the toolbar if the buttons can be arranged such that all of the rows have the same number of buttons (except perhaps the last row). For example, a toolbar that contains four buttons couldn't be sized to three rows because the last two rows would have to be shorter. If you attempted to size it to three rows, you would get four rows if *`bLarger`* was `TRUE` and two rows if *`bLarger`* was `FALSE`.
 
-If there are separators in the toolbar, the rules for when a given number of rows is valid are more complicated. The layout is computed such that button groups (buttons with a separator before the first and the last button in the group) are never broken up on several rows unless the group can’t fit on one row.
+If there are separators in the toolbar, the rules for when a given number of rows is valid are more complicated. The layout is computed such that button groups (buttons with a separator before the first and the last button in the group) are never broken up on several rows unless the group can't fit on one row.
 
 If a group doesn't fit on one row, the next group will start on the next row even if it would fit on the row where the large group ended. The purpose of this rule is to make the separation between large groups more noticeable. The resulting vertical separators are counted as rows.
 

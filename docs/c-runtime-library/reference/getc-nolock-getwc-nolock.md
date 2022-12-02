@@ -3,14 +3,14 @@ description: "Learn more about: _getc_nolock, _getwc_nolock"
 title: "_getc_nolock, _getwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_getc_nolock", "_getwc_nolock", "_o__getc_nolock", "_o__getwc_nolock"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getc_nolock", "_gettc_nolock", "_getc_nolock", "getwc_nolock", "gettc_nolock", "_getwc_nolock"]
 helpviewer_keywords: ["characters, reading", "_getc_nolock function", "_getwc_nolock function", "getwc_nolock function", "streams, reading characters from", "reading characters from streams", "getc_nolock function", "gettc_nolock function", "_gettc_nolock function"]
 ms.assetid: eb37b272-e177-41c9-b077-12ce7ffd3b88
 ---
-# _getc_nolock, _getwc_nolock
+# `_getc_nolock`, `_getwc_nolock`
 
 Reads a character from a stream.
 
@@ -27,33 +27,33 @@ wint_t _getwc_nolock(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Input stream.
 
-## Return Value
+## Return value
 
-See [getc, getwc](getc-getwc.md).
+See [`getc`, `getwc`](getc-getwc.md).
 
 ## Remarks
 
-These functions are identical to **getc** and **getwc** except that they do not lock the calling thread. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+These functions are identical to `getc` and `getwc` except that they don't lock the calling thread. They might be faster because they don't incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**_gettc_nolock**|**getc_nolock**|**getc_nolock**|**getwc_nolock**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_gettc_nolock` | **`getc_nolock`** | **`getc_nolock`** | **`getwc_nolock`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**getc_nolock**|\<stdio.h>|
-|**getwc_nolock**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`getc_nolock`** | \<stdio.h> |
+| **`getwc_nolock`** | \<stdio.h> or \<wchar.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -106,8 +106,8 @@ Input was: Line the first.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[_getch, _getwch](getch-getwch.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
-[ungetc, ungetwc](ungetc-ungetwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fgetc`, `fgetwc`](fgetc-fgetwc.md)\
+[`_getch`, `_getwch`](getch-getwch.md)\
+[`putc`, `putwc`](putc-putwc.md)\
+[`ungetc`, `ungetwc`](ungetc-ungetwc.md)

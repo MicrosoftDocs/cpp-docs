@@ -7,11 +7,11 @@ f1_keywords: ["cliext::stack", "cliext::stack::assign", "cliext::stack::const_re
 helpviewer_keywords: ["<stack> header [STL/CLR]", "<cliext/stack> header [STL/CLR]", "stack class [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "push member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "stack member [STL/CLR]", "to_array member [STL/CLR]", "top member [STL/CLR]", "top_item member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb
 ---
-# stack (STL/CLR)
+# `stack` (STL/CLR)
 
 The template class describes an object that controls a varying-length sequence of elements that has last-in first-out access. You use the container adapter `stack` to manage an underlying container as a push-down stack.
 
-In the description below, `GValue` is the same as *Value* unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as *Container* unless the latter is a ref type, in which case it is `Container^`.
+In the description below, `GValue` is the same as *`Value`* unless the latter is a ref type, in which case it's `Value^`. Similarly, `GContainer` is the same as *`Container`* unless the latter is a ref type, in which case it's `Container^`.
 
 ## Syntax
 
@@ -27,71 +27,71 @@ template<typename Value,
 
 ### Parameters
 
-*Value*<br/>
+*`Value`*\
 The type of an element in the controlled sequence.
 
-*Container*<br/>
+*`Container`*\
 The type of the underlying container.
 
 ## Requirements
 
 **Header:** \<cliext/stack>
 
-**Namespace:** cliext
+**Namespace:** `cliext`
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[stack::const_reference (STL/CLR)](#const_reference)|The type of a constant reference to an element.|
-|[stack::container_type (STL/CLR)](#container_type)|The type of the underlying container.|
-|[stack::difference_type (STL/CLR)](#difference_type)|The type of a signed distance between two elements.|
-|[stack::generic_container (STL/CLR)](#generic_container)|The type of the generic interface for the container adapter.|
-|[stack::generic_value (STL/CLR)](#generic_value)|The type of an element for the generic interface for the container adapter.|
-|[stack::reference (STL/CLR)](#reference)|The type of a reference to an element.|
-|[stack::size_type (STL/CLR)](#size_type)|The type of a signed distance between two elements.|
-|[stack::value_type (STL/CLR)](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`stack::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`stack::container_type`](#container_type) | The type of the underlying container. |
+| [`stack::difference_type`](#difference_type) | The type of a signed distance between two elements. |
+| [`stack::generic_container`](#generic_container) | The type of the generic interface for the container adapter. |
+| [`stack::generic_value`](#generic_value) | The type of an element for the generic interface for the container adapter. |
+| [`stack::reference`](#reference) | The type of a reference to an element. |
+| [`stack::size_type`](#size_type) | The type of a signed distance between two elements. |
+| [`stack::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[stack::assign (STL/CLR)](#assign)|Replaces all elements.|
-|[stack::empty (STL/CLR)](#empty)|Tests whether no elements are present.|
-|[stack::get_container (STL/CLR)](#get_container)|Accesses the underlying container.|
-|[stack::pop (STL/CLR)](#pop)|Removes the last element.|
-|[stack::push (STL/CLR)](#push)|Adds a new last element.|
-|[stack::size (STL/CLR)](#size)|Counts the number of elements.|
-|[stack::stack (STL/CLR)](#stack)|Constructs a container object.|
-|[stack::top (STL/CLR)](#top)|Accesses the last element.|
-|[stack::to_array (STL/CLR)](#to_array)|Copies the controlled sequence to a new array.|
+| Member function | Description |
+|---|---|
+| [`stack::assign`](#assign) | Replaces all elements. |
+| [`stack::empty`](#empty) | Tests whether no elements are present. |
+| [`stack::get_container`](#get_container) | Accesses the underlying container. |
+| [`stack::pop`](#pop) | Removes the last element. |
+| [`stack::push`](#push) | Adds a new last element. |
+| [`stack::size`](#size) | Counts the number of elements. |
+| [`stack::stack`](#stack) | Constructs a container object. |
+| [`stack::top`](#top) | Accesses the last element. |
+| [`stack::to_array`](#to_array) | Copies the controlled sequence to a new array. |
 
-|Property|Description|
-|--------------|-----------------|
-|[stack::top_item (STL/CLR)](#top_item)|Accesses the last element.|
+| Property | Description |
+|---|---|
+| [`stack::top_item`](#top_item) | Accesses the last element. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[stack::operator= (STL/CLR)](#op_as)|Replaces the controlled sequence.|
-|[operator!= (stack) (STL/CLR)](#op_neq)|Determines if a `stack` object is not equal to another `stack` object.|
-|[operator< (stack) (STL/CLR)](#op_lt)|Determines if a `stack` object is less than another `stack` object.|
-|[operator<= (stack) (STL/CLR)](#op_lteq)|Determines if a `stack` object is less than or equal to another `stack` object.|
-|[operator== (stack) (STL/CLR)](#op_eq)|Determines if a `stack` object is equal to another `stack` object.|
-|[operator> (stack) (STL/CLR)](#op_gt)|Determines if a `stack` object is greater than another `stack` object.|
-|[operator>= (stack) (STL/CLR)](#op_gteq)|Determines if a `stack` object is greater than or equal to another `stack` object.|
+| Operator | Description |
+|---|---|
+| [`stack::operator=`](#op_as) | Replaces the controlled sequence. |
+| [`operator!=` (stack)](#op_neq) | Determines if a `stack` object isn't equal to another `stack` object. |
+| [`operator<` (stack)](#op_lt) | Determines if a `stack` object is less than another `stack` object. |
+| [`operator<=` (stack)](#op_lteq) | Determines if a `stack` object is less than or equal to another `stack` object. |
+| [`operator==` (stack)](#op_eq) | Determines if a `stack` object is equal to another `stack` object. |
+| [`operator>` (stack)](#op_gt) | Determines if a `stack` object is greater than another `stack` object. |
+| [`operator>=` (stack)](#op_gteq) | Determines if a `stack` object is greater than or equal to another `stack` object. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|IStack\<Value, Container>|Maintain generic container adapter.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| `IStack<Value, Container>` | Maintain generic container adapter. |
 
 ## Remarks
 
-The object allocates and frees storage for the sequence it controls through an underlying container, of type *Container*, that stores *Value* elements and grows on demand. The object restricts access to pushing and popping just the last element, implementing a last-in first-out queue (also known as a LIFO queue, or stack).
+The object allocates and frees storage for the sequence it controls through an underlying container of type *`Container`* that stores *`Value`* elements and grows on demand. The object restricts access to pushing and popping just the last element, implementing a last-in first-out queue (also known as a LIFO queue, or stack).
 
 ## Members
 
-## <a name="assign"></a> stack::assign (STL/CLR)
+## <a name="assign"></a> `stack::assign`
 
 Replaces all elements.
 
@@ -103,7 +103,7 @@ void assign(stack<Value, Container>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container adapter to insert.
 
 ### Remarks
@@ -145,7 +145,7 @@ a b c
 a b c
 ```
 
-## <a name="const_reference"></a> stack::const_reference (STL/CLR)
+## <a name="const_reference"></a> `stack::const_reference`
 
 The type of a constant reference to an element.
 
@@ -189,7 +189,7 @@ int main()
 c b a
 ```
 
-## <a name="container_type"></a> stack::container_type (STL/CLR)
+## <a name="container_type"></a> `stack::container_type`
 
 The type of the underlying container.
 
@@ -201,7 +201,7 @@ typedef Container value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Container*.
+The type is a synonym for the template parameter *`Container`*.
 
 ### Example
 
@@ -231,7 +231,7 @@ int main()
 a b c
 ```
 
-## <a name="difference_type"></a> stack::difference_type (STL/CLR)
+## <a name="difference_type"></a> `stack::difference_type`
 
 The types of a signed distance between two elements.
 
@@ -289,7 +289,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="empty"></a> stack::empty (STL/CLR)
+## <a name="empty"></a> `stack::empty`
 
 Tests whether no elements are present.
 
@@ -301,7 +301,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [stack::size (STL/CLR)](#size)`() == 0`. You use it to test whether the stack is empty.
+The member function returns true for an empty controlled sequence. It's equivalent to `size() == 0`. You use it to test whether the `stack` is empty.
 
 ### Example
 
@@ -343,7 +343,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="generic_container"></a> stack::generic_container (STL/CLR)
+## <a name="generic_container"></a> `stack::generic_container`
 
 The type of the generic interface for the container adapter.
 
@@ -406,7 +406,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="generic_value"></a> stack::generic_value (STL/CLR)
+## <a name="generic_value"></a> `stack::generic_value`
 
 The type of an element for use with the generic interface for the container.
 
@@ -464,7 +464,7 @@ a b c
 c b a
 ```
 
-## <a name="get_container"></a> stack::get_container (STL/CLR)
+## <a name="get_container"></a> `stack::get_container`
 
 Accesses the underlying container.
 
@@ -506,24 +506,24 @@ int main()
 a b c
 ```
 
-## <a name="op_as"></a> stack::operator= (STL/CLR)
+## <a name="op_as"></a> `stack::operator=`
 
 Replaces the controlled sequence.
 
 ### Syntax
 
 ```cpp
-stack <Value, Container>% operator=(stack <Value, Container>% right);
+stack<Value, Container>% operator=(stack<Value, Container>% right);
 ```
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *`right`* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *`right`*.
 
 ### Example
 
@@ -560,7 +560,7 @@ a b c
 a b c
 ```
 
-## <a name="pop"></a> stack::pop (STL/CLR)
+## <a name="pop"></a> `stack::pop`
 
 Removes the last element.
 
@@ -572,7 +572,7 @@ void pop();
 
 ### Remarks
 
-The member function removes the last element of the controlled sequence, which must be non-empty. You use it to shorten the stack by one element at the back.
+The member function removes the last element of the controlled sequence, which must be non-empty. You use it to shorten the `stack` by one element at the back.
 
 ### Example
 
@@ -608,7 +608,7 @@ a b c
 a b
 ```
 
-## <a name="push"></a> stack::push (STL/CLR)
+## <a name="push"></a> `stack::push`
 
 Adds a new last element.
 
@@ -649,7 +649,7 @@ int main()
 a b c
 ```
 
-## <a name="reference"></a> stack::reference (STL/CLR)
+## <a name="reference"></a> `stack::reference`
 
 The type of a reference to an element.
 
@@ -698,7 +698,7 @@ a b c
 a b x
 ```
 
-## <a name="size"></a> stack::size (STL/CLR)
+## <a name="size"></a> `stack::size`
 
 Counts the number of elements.
 
@@ -710,7 +710,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [stack::empty (STL/CLR)](#empty)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [`stack::empty`](#empty).
 
 ### Example
 
@@ -752,9 +752,9 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="size_type"></a> stack::size_type (STL/CLR)
+## <a name="size_type"></a> `stack::size_type`
 
-The type of a signed distance between two element.
+The type of a signed distance between two elements.
 
 ### Syntax
 
@@ -801,7 +801,7 @@ a b c
 size difference = 2
 ```
 
-## <a name="stack"></a> stack::stack (STL/CLR)
+## <a name="stack"></a> `stack::stack`
 
 Constructs a container adapter object.
 
@@ -816,10 +816,10 @@ explicit stack(container_type% wrapped);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Object to copy.
 
-*wrapped*<br/>
+*`wrapped`*\
 Wrapped container to use.
 
 ### Remarks
@@ -834,19 +834,19 @@ The constructor:
 
 `stack(stack<Value, Container>% right);`
 
-creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the stack object *right*.
+creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `stack` object *`right`*.
 
 The constructor:
 
 `stack(stack<Value, Container>^ right);`
 
-creates a wrapped container that is a copy of `right->get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the stack object `*right`.
+creates a wrapped container that is a copy of `right->get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `stack` object `*right`.
 
 The constructor:
 
 `explicit stack(container_type% wrapped);`
 
-uses the existing container *wrapped* as the wrapped container. You use it to construct a stack from an existing container.
+uses the existing container *`wrapped`* as the wrapped container. You use it to construct a `stack` from an existing container.
 
 ### Example
 
@@ -894,7 +894,7 @@ x x x x x
 x x x x x
 ```
 
-## <a name="to_array"></a> stack::to_array (STL/CLR)
+## <a name="to_array"></a> `stack::to_array`
 
 Copies the controlled sequence to a new array.
 
@@ -944,7 +944,7 @@ a b c d
 a b c
 ```
 
-## <a name="top"></a> stack::top (STL/CLR)
+## <a name="top"></a> `stack::top`
 
 Accesses the last element.
 
@@ -956,7 +956,7 @@ reference top();
 
 ### Remarks
 
-The member function returns a reference to the last element of the controlled sequence, which must be non-empty. You use it to access the last element, when you know it exists.
+The member function returns a reference to the last element of the controlled sequence, which must be non-empty. You use it to access the last element, when you know one exists.
 
 ### Example
 
@@ -996,7 +996,7 @@ top() = c
 a b x
 ```
 
-## <a name="top_item"></a> stack::top_item (STL/CLR)
+## <a name="top_item"></a> `stack::top_item`
 
 Accesses the last element.
 
@@ -1008,7 +1008,7 @@ property value_type top_item;
 
 ### Remarks
 
-The property accesses the last element of the controlled sequence, which must be non-empty. You use it to read or write the last element, when you know it exists.
+The property accesses the last element of the controlled sequence, which must be non-empty. You use it to read or write the last element, when you know one exists.
 
 ### Example
 
@@ -1048,7 +1048,7 @@ top_item = c
 a b x
 ```
 
-## <a name="value_type"></a> stack::value_type (STL/CLR)
+## <a name="value_type"></a> `stack::value_type`
 
 The type of an element.
 
@@ -1060,7 +1060,7 @@ typedef Value value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Value*.
+The type is a synonym for the template parameter *`Value`*.
 
 ### Example
 
@@ -1093,9 +1093,9 @@ int main()
 c b a
 ```
 
-## <a name="op_neq"></a> operator!= (stack) (STL/CLR)
+## <a name="op_neq"></a> `operator!=` (stack)
 
-Stack not equal comparison.
+`Stack` not equal comparison.
 
 ### Syntax
 
@@ -1108,15 +1108,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two stacks are compared element by element.
+The operator function returns `!(left == right)`. You use it to test whether *`left`* isn't ordered the same as *`right`* when the two stacks are compared element by element.
 
 ### Example
 
@@ -1164,9 +1164,9 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> `operator<` (stack) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (stack)
 
-Stack less than comparison.
+`Stack` less than comparison.
 
 ### Syntax
 
@@ -1179,15 +1179,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[stack::size (STL/CLR)](#size)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two stacks are compared element by element.
+The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it's also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()`. You use it to test whether *`left`* is ordered before *`right`* when the two stacks are compared element by element.
 
 ### Example
 
@@ -1235,9 +1235,9 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> `operator<=` (stack) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (stack)
 
-Stack less than or equal comparison.
+`Stack` less than or equal comparison.
 
 ### Syntax
 
@@ -1250,15 +1250,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two stacks are compared element by element.
+The operator function returns `!(right < left)`. You use it to test whether *`left`* isn't ordered after *`right`* when the two stacks are compared element by element.
 
 ### Example
 
@@ -1306,9 +1306,9 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="op_eq"></a> operator== (stack) (STL/CLR)
+## <a name="op_eq"></a> `operator==` (stack)
 
-Stack equal comparison.
+`Stack` equal comparison.
 
 ### Syntax
 
@@ -1321,15 +1321,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns true only if the sequences controlled by *left* and *right* have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether *left* is ordered the same as *right* when the two stacks are compared element by element.
+The operator function returns true only if the sequences controlled by *`left`* and *`right`* have the same length and, for each position `i`, `left[i] == right[i]`. You use it to test whether *`left`* is ordered the same as *`right`* when the two stacks are compared element by element.
 
 ### Example
 
@@ -1377,9 +1377,9 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> `operator>` (stack) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (stack)
 
-Stack greater than comparison.
+`Stack` greater than comparison.
 
 ### Syntax
 
@@ -1392,15 +1392,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two stacks are compared element by element.
+The operator function returns `right < left`. You use it to test whether *`left`* is ordered after *`right`* when the two stacks are compared element by element.
 
 ### Example
 
@@ -1448,9 +1448,9 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> `operator>=` (stack) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (stack)
 
-Stack greater than or equal comparison.
+`Stack` greater than or equal comparison.
 
 ### Syntax
 
@@ -1463,15 +1463,15 @@ template<typename Value,
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two stacks are compared element by element.
+The operator function returns `!(left < right)`. You use it to test whether *`left`* isn't ordered before *`right`* when the two stacks are compared element by element.
 
 ### Example
 

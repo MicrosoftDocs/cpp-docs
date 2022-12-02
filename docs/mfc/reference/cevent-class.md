@@ -53,7 +53,7 @@ For more information about how to use `CEvent` objects, see [Multithreading: How
 ## Example
 
 [!code-cpp[NVC_MFC_Utilities#45](../../mfc/codesnippet/cpp/cevent-class_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFC_Utilities#46](../../mfc/codesnippet/cpp/cevent-class_2.cpp)]
 
 ## Inheritance Hierarchy

@@ -1,26 +1,24 @@
 ---
 description: "Learn more about: typename"
 title: "typename"
-ms.date: "11/04/2016"
+ms.date: 09/27/2022
 f1_keywords: ["typename_cpp"]
 helpviewer_keywords: ["typename template specifier"]
 ms.assetid: 52e1d901-220d-4f0d-ab43-dae7e05fb491
 ---
-# typename
+# `typename`
 
-In template definitions, provides a hint to the compiler that an unknown identifier is a type. In template parameter lists, is used to specify a type parameter.
+In template definitions, **`typename`** provides a hint to the compiler that an unknown identifier is a type. In template parameter lists, it's used to specify a type parameter.
 
 ## Syntax
 
-```
-typename identifier;
-```
+> **`typename`** *`identifier`***`;`**
 
 ## Remarks
 
-This keyword must be used if a name in a template definition is a qualified name that is dependent on a template argument; it is optional if the qualified name is not dependent. For more information, see [Templates and Name Resolution](../cpp/templates-and-name-resolution.md).
+The **`typename`** keyword must be used if a name in a template definition is a qualified name that is dependent on a template argument; it's optional if the qualified name isn't dependent. For more information, see [Templates and Name Resolution](../cpp/templates-and-name-resolution.md).
 
-**`typename`** can be used by any type anywhere in a template declaration or definition. It is not allowed in the base class list, unless as a template argument to a template base class.
+**`typename`** can be used by any type anywhere in a template declaration or definition. It isn't allowed in the base class list, unless as a template argument to a template base class.
 
 ```cpp
 template <class T>
@@ -54,5 +52,5 @@ int main()
 
 ## See also
 
-[Templates](../cpp/templates-cpp.md)<br/>
+[Templates](../cpp/templates-cpp.md)\
 [Keywords](../cpp/keywords-cpp.md)

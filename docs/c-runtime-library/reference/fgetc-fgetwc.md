@@ -3,14 +3,14 @@ description: "Learn more about: fgetc, fgetwc"
 title: "fgetc, fgetwc"
 ms.date: "4/2/2020"
 api_name: ["fgetwc", "fgetc", "_o_fgetc", "_o_fgetwc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fgettc", "fgetwc", "fgetc"]
 helpviewer_keywords: ["fgettc function", "characters, reading", "_fgettc function", "fgetc function", "streams, reading characters from", "reading characters from streams", "fgetwc function"]
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
 ---
-# fgetc, fgetwc
+# `fgetc`, `fgetwc`
 
 Read a character from a stream.
 
@@ -27,41 +27,41 @@ wint_t fgetwc(
 
 ### Parameters
 
-*stream*<br/>
-Pointer to **FILE** structure.
+*`stream`*\
+Pointer to `FILE` structure.
 
-## Return Value
+## Return value
 
-**fgetc** returns the character read as an **`int`** or returns **EOF** to indicate an error or end of file. **fgetwc** returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *stream* is **NULL**, **fgetc** and **fgetwc** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EOF**.
+**`fgetc`** returns the character read as an **`int`** or returns `EOF` to indicate an error or end of file. **`fgetwc`** returns, as a [`wint_t`](../standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use `feof` or `ferror` to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *`stream`* is `NULL`, **`fgetc`** and **`fgetwc`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EOF`.
 
 ## Remarks
 
-Each of these functions reads a single character from the current position of the file associated with *stream*. The function then increments the associated file pointer (if defined) to point to the next character. If the stream is at end of file, the end-of-file indicator for the stream is set.
+Each of these functions reads a single character from the current position of the file associated with *`stream`*. The function then increments the associated file pointer (if defined) to point to the next character. If the stream is at end of file, the end-of-file indicator for the stream is set.
 
-**fgetc** is equivalent to **getc**, but is implemented only as a function, rather than as a function and a macro.
+**`fgetc`** is equivalent to `getc`, but is implemented only as a function, rather than as a function and a macro.
 
-**fgetwc** is the wide-character version of **fgetc**; it reads **c** as a multibyte character or a wide character according to whether *stream* is opened in text mode or binary mode.
+**`fgetwc`** is the wide-character version of **`fgetc`**; it reads **c** as a multibyte character or a wide character when *`stream`* is opened in text mode or binary mode, respectively.
 
-The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads.
+The versions with the `_nolock` suffix are identical except that they aren't protected from interference by other threads.
 
-For more information about processing wide characters and multibyte characters in text and binary modes, see [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
+For more information about processing wide characters and multibyte characters in text and binary modes, see [Unicode stream I/O in text and binary modes](../unicode-stream-i-o-in-text-and-binary-modes.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**_fgettc**|**fgetc**|**fgetc**|**fgetwc**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_fgettc` | **`fgetc`** | **`fgetc`** | **`fgetwc`** |
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**fgetc**|\<stdio.h>|
-|**fgetwc**|\<stdio.h> or \<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`fgetc`** | \<stdio.h> |
+| **`fgetwc`** | \<stdio.h> or \<wchar.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -116,6 +116,6 @@ Line two.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](fputc-fputwc.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fputc`, `fputwc`](fputc-fputwc.md)\
+[`getc`, `getwc`](getc-getwc.md)

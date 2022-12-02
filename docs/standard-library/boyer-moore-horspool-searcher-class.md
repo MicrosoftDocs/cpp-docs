@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::boyer_moore_horspool_searcher [C++]"]
 ---
 # boyer_moore_horspool_searcher class
 
-The `boyer_moore_horspool_searcher` class is a function object type that uses the Boyer-Moore-Horspool algorithm to search for a sequence specified in the object's constructor. The search is done within another sequence provided to the object’s function call operator. This class is passed as a parameter to one of the overloads of [std::search](algorithm-functions.md#search).
+The `boyer_moore_horspool_searcher` class is a function object type that uses the Boyer-Moore-Horspool algorithm to search for a sequence specified in the object's constructor. The search is done within another sequence provided to the object's function call operator. This class is passed as a parameter to one of the overloads of [std::search](algorithm-functions.md#search).
 
 ## Syntax
 

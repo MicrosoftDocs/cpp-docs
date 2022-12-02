@@ -10,7 +10,7 @@ f1_keywords: ["RTC_GetErrDesc", "_RTC_GetErrDesc"]
 helpviewer_keywords: ["run-time errors", "_RTC_GetErrDesc function", "RTC_GetErrDesc function"]
 ms.assetid: 7994ec2b-5488-4fd4-806d-a166c9a9f927
 ---
-# _RTC_GetErrDesc
+# `_RTC_GetErrDesc`
 
 Returns a brief description of a run-time error check (RTC) type.
 
@@ -24,26 +24,26 @@ const char * _RTC_GetErrDesc(
 
 ### Parameters
 
-*errnum*<br/>
-A number between zero and one less than the value returned by **_RTC_NumErrors**.
+*`errnum`*\
+A number between zero and one less than the value returned by `_RTC_NumErrors`.
 
-## Return Value
+## Return value
 
-A character string that contains a short description of one of the error types detected by the run-time error check system. If error is less than zero or greater than or equal to the value returned by [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** returns **NULL**.
+A character string that contains a short description of one of the error types detected by the run-time error check system. If error is less than zero or greater than or equal to the value returned by [`_RTC_NumErrors`](rtc-numerrors.md), **`_RTC_GetErrDesc`** returns `NULL`.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_RTC_GetErrDesc**|\<rtcapi.h>|
+| Routine | Required header |
+|---|---|
+| **`_RTC_GetErrDesc`** | \<rtcapi.h> |
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[_RTC_NumErrors](rtc-numerrors.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+[`_RTC_NumErrors`](rtc-numerrors.md)\
+[Runtime error checking](../run-time-error-checking.md)

@@ -725,7 +725,7 @@ Writes a formatted string and a variable list of arguments to a **`CStringT`** s
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#119](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_14.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_ATLMFC_Utilities#120](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_15.cpp)]
 
 ## <a name="getenvironmentvariable"></a> `CStringT::GetEnvironmentVariable`

@@ -863,7 +863,7 @@ Serializable `CObject`-derived classes are classes derived using the DECLARE_SER
 ### Example
 
 [!code-cpp[NVC_MFCCollections#113](../../mfc/codesnippet/cpp/diagnostic-services_16.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCCollections#114](../../mfc/codesnippet/cpp/diagnostic-services_17.cpp)]
 
 ### Requirements
@@ -898,7 +898,7 @@ Stack, global, or embedded objects are not enumerated. The pointer passed to `Af
 ### Example
 
 [!code-cpp[NVC_MFCCollections#115](../../mfc/codesnippet/cpp/diagnostic-services_18.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/cpp/diagnostic-services_19.cpp)]
 
 ## See also

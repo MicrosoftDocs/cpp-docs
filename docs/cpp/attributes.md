@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: Attributes in C++"
 title: "Attributes in C++"
-ms.date: 04/27/2022
+ms.date: 11/08/2022
 ---
 # Attributes in C++
 
 The C++ Standard defines a common set of attributes. It also allows compiler vendors to define their own attributes within a vendor-specific namespace. However, compilers are only required to recognize the attributes defined in the standard.
 
-In some cases, standard attributes overlap with compiler-specific `__declspec` parameters. In Microsoft C++, you can use the `[[deprecated]]` attribute instead of using `__declspec(deprecated)`. The `[[deprecated]]` attribute is recognized by any conforming compiler. For all other `__declspec` parameters such as `dllimport` and `dllexport`, so far there's no attribute equivalent, so you must continue to use `__declspec` syntax. Attributes don't affect the type system, and they don’t change the meaning of a program. Compilers ignore attribute values they don't recognize.
+In some cases, standard attributes overlap with compiler-specific `__declspec` parameters. In Microsoft C++, you can use the `[[deprecated]]` attribute instead of using `__declspec(deprecated)`. The `[[deprecated]]` attribute is recognized by any conforming compiler. For all other `__declspec` parameters such as `dllimport` and `dllexport`, so far there's no attribute equivalent, so you must continue to use `__declspec` syntax. Attributes don't affect the type system, and they don't change the meaning of a program. Compilers ignore attribute values they don't recognize.
 
 **Visual Studio 2017 version 15.3 and later** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later): In the scope of an attribute list, you can specify the namespace for all names with a single **`using`** introducer:
 
@@ -82,3 +82,5 @@ Attributes represent a standardized alternative to vendor-specific extensions su
   - 26481 (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
   The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress(bounds)]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
+
+- `[[msvc:no_tls_guard]]` This Microsoft-specific attribute disables checks for initialization on first access to thread-local variables in DLLs. The checks are enabled by default in code built using Visual Studio 2019 version 16.5 and later versions. This attribute applies only to the specific variable that follows it. To disable checks globally, use the [`/Zc:tlsGuards-`](../build/reference/zc-tlsguards.md) compiler option.

@@ -3,7 +3,7 @@ title: "setjmp"
 description: "API reference for setjmp; which saves the current state of the program."
 ms.date: "1/14/2021"
 api_name: ["setjmp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["setjmp"]
@@ -27,9 +27,9 @@ int setjmp(
 *`env`*\
 Variable in which environment is stored.
 
-## Return Value
+## Return value
 
-Returns 0 after saving the stack environment. If **`setjmp`** returns because of a `longjmp` call, it returns the *value* argument of `longjmp`, or if the *value* argument of `longjmp` is 0, **`setjmp`** returns 1. There's no error return.
+Returns 0 after saving the stack environment. If **`setjmp`** returns because of a `longjmp` call, it returns the *`value`* argument of `longjmp`, or if the *`value`* argument of `longjmp` is 0, **`setjmp`** returns 1. There's no error return.
 
 ## Remarks
 
@@ -53,11 +53,11 @@ For more information, see [Using `setjmp` and `longjmp`](../../cpp/using-setjmp-
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`setjmp`**|\<setjmp.h>|
+| Routine | Required header |
+|---|---|
+| **`setjmp`** | \<setjmp.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -65,5 +65,5 @@ See the example for [`_fpreset`](fpreset.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`longjmp`](longjmp.md)

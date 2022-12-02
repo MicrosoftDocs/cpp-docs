@@ -10,7 +10,7 @@ f1_keywords: ["_copysignl", "copysign", "copysignf", "_copysign", "copysignl", "
 helpviewer_keywords: ["copysignl function", "_copysignl function", "copysign function", "_copysignf function", "_copysign function", "copysignf function"]
 ms.assetid: 009216d6-72a2-402d-aa6c-91d924b2c9e4
 ---
-# copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
+# `copysign`, `copysignf`, `copysignl`, `_copysign`, `_copysignf`, `_copysignl`
 
 Returns a value that has the magnitude of one argument and the sign of another.
 
@@ -50,35 +50,35 @@ long double _copysignl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The floating-point value that's returned as the magnitude of the result.
 
-*y*\
+*`y`*\
 The floating-point value that's returned as the sign of the result.
 
-[Floating-Point Support Routines](../../c-runtime-library/floating-point-support.md)
+[Math and floating-point support](../floating-point-support.md)
 
-## Return Value
+## Return value
 
-The **copysign** functions return a floating-point value that combines the magnitude of *x* and the sign of *y*. There's no error return.
+The **`copysign`** functions return a floating-point value that combines the magnitude of *`x`* and the sign of *`y`*. There's no error return.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **copysign** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **copysign** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`copysign`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`copysign`** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `copysign()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `copysign()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_copysign**|\<float.h>|
-|**copysign**, **copysignf**, **copysignl**, **_copysignf**, **_copysignl**|\<math.h>|
-|**copysign** macro | \<tgmath.h> |
+| Routine | Required header |
+|---|---|
+| **`_copysign`** | \<float.h> |
+| **`copysign`**, **`copysignf`**, **`copysignl`**, **`_copysignf`**, **`_copysignl`** | \<math.h> |
+| **`copysign`** macro | \<tgmath.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
-[_chgsign, _chgsignf, _chgsignl](chgsign-chgsignf-chgsignl.md)<br/>
+[`fabs`, `fabsf`, `fabsl`](fabs-fabsf-fabsl.md)\
+[`_chgsign`, `_chgsignf`, `_chgsignl`](chgsign-chgsignf-chgsignl.md)

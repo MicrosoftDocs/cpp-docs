@@ -802,13 +802,13 @@ If your type has a finalizer, the compiler generates a `Finalize(void)` method t
 
 If a type has either a finalizer or a destructor, the compiler generates a `Dispose(bool)` method, according to the design pattern. (For information, see [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)). You can't explicitly author or call `Dispose(bool)` in Visual C++.
 
-If a type has a base class that conforms to the design pattern, the destructors for all base classes are called when the destructor for the derived class is called. (If your type is written in Visual C++, the compiler ensures that your types implement this pattern.) In other words, the destructor of a reference class chains to its bases and members as specified by the C++ standard. First, the class’s destructor is run. Then, the destructors for its members get run in the reverse of the order in which they were constructed. Finally, the destructors for its base classes get run in the reverse of the order in which they were constructed.
+If a type has a base class that conforms to the design pattern, the destructors for all base classes are called when the destructor for the derived class is called. (If your type is written in Visual C++, the compiler ensures that your types implement this pattern.) In other words, the destructor of a reference class chains to its bases and members as specified by the C++ standard. First, the class's destructor is run. Then, the destructors for its members get run in the reverse of the order in which they were constructed. Finally, the destructors for its base classes get run in the reverse of the order in which they were constructed.
 
 Destructors and finalizers aren't allowed inside value types or interfaces.
 
 A finalizer can only be defined or declared in a reference type. Like a constructor and destructor, a finalizer has no return type.
 
-After an object's finalizer runs, finalizers in any base classes are also called, beginning with the least derived type. Finalizers for data members aren't automatically chained to by a class’s finalizer.
+After an object's finalizer runs, finalizers in any base classes are also called, beginning with the least derived type. Finalizers for data members aren't automatically chained to by a class's finalizer.
 
 If a finalizer deletes a native pointer in a managed type, you must ensure that references to or through the native pointer aren't prematurely collected. Call the destructor on the managed type instead of using <xref:System.GC.KeepAlive%2A>.
 

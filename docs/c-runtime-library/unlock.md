@@ -10,7 +10,7 @@ f1_keywords: ["unlock", "_unlock"]
 helpviewer_keywords: ["unlock function", "_unlock function"]
 ms.assetid: 2eda2507-a134-4997-aa12-f2f8cb319e14
 ---
-# _unlock
+# `_unlock`
 
 Releases a multi-thread lock.
 
@@ -27,7 +27,7 @@ void __cdecl _unlock(
 
 #### Parameters
 
-*locknum*<br/>
+*`locknum`*\
 [in] The identifier of the lock to release.
 
 ## Requirements
@@ -36,5 +36,5 @@ void __cdecl _unlock(
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_lock](../c-runtime-library/lock.md)
+[Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
+[`_lock`](./lock.md)

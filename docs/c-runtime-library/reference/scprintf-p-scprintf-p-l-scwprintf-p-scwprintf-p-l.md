@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_scwprintf_p_l", "_sctprintf_p", "scprintf_p_l", "scprintf_p", "_sctprintf_p_l", "scwprintf_p", "_scprintf_p_l", "scwprintf_p_l", "_scprintf_p", "_scwprintf_p"]
 helpviewer_keywords: ["sctprintf_p_l function", "_scwprintf_p_l function", "scprintf_p_l function", "_scprintf_p function", "_scprintf_p_l function", "scprintf_p function", "sctprintf_p function", "_scwprintf_p function", "_sctprintf_p function", "scwprintf_p function", "scwprintf_p_l function", "_sctprintf_p_l function"]
 ---
-# _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
+# `_scprintf_p`, `_scprintf_p_l`, `_scwprintf_p`, `_scwprintf_p_l`
 
 Returns the number of characters in the formatted string, with the ability to specify the order in which parameters are used in the format string.
 
@@ -38,55 +38,54 @@ int _scwprintf_p _l(
 
 ### Parameters
 
-*format*<br/>
+*`format`*\
 Format-control string.
 
-*argument*<br/>
+*`argument`*\
 Optional arguments.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. **_scwprintf_p** performs the same function for wide characters.
+Returns the number of characters that would be generated if the string were to be printed or sent to a file or buffer using the specified formatting codes. The value returned doesn't include the terminating null character. **`_scwprintf_p`** performs the same function for wide characters.
 
-The difference between **_scprintf_p** and **_scprintf** is that **_scprintf_p** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+The difference between **`_scprintf_p`** and `_scprintf` is that **`_scprintf_p`** supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
 
-If *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
-For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Each *argument* (if any) is converted according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](printf-printf-l-wprintf-wprintf-l.md).
+Each *`argument`* (if any) is converted according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
-> Ensure that *format* is not a user-defined string.
->
+> Ensure that *`format`* is not a user-defined string.
 >
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**_sctprintf_p**|**_scprintf_p**|**_scprintf_p**|**_scwprintf_p**|
-|**_sctprintf_p_l**|**_scprintf_p_l**|**_scprintf_p_l**|**_scwprintf_p_l**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_sctprintf_p` | **`_scprintf_p`** | **`_scprintf_p`** | **`_scwprintf_p`** |
+| `_sctprintf_p_l` | **`_scprintf_p_l`** | **`_scprintf_p_l`** | **`_scwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_scprintf_p**, **_scprintf_p_l**|\<stdio.h>|
-|**_scwprintf_p**, **_scwprintf_p_l**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`_scprintf_p`**, **`_scprintf_p_l`** | \<stdio.h> |
+| **`_scwprintf_p`**, **`_scwprintf_p_l`** | \<stdio.h> or \<wchar.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_scprintf, _scprintf_l, _scwprintf, _scwprintf_l](scprintf-scprintf-l-scwprintf-scwprintf-l.md)<br/>
-[_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`_scprintf`, `_scprintf_l`, `_scwprintf`, `_scwprintf_l`](scprintf-scprintf-l-scwprintf-scwprintf-l.md)\
+[`_printf_p`, `_printf_p_l`, `_wprintf_p`, `_wprintf_p_l`](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)

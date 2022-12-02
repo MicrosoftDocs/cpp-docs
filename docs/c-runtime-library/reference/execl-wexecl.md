@@ -10,7 +10,7 @@ f1_keywords: ["_execl", "_wexecl", "wexecl"]
 helpviewer_keywords: ["_execl function", "wexecl function", "_wexecl function", "execl function"]
 ms.assetid: 81fefb8a-0a06-4221-b2bc-be18e38e89f4
 ---
-# _execl, _wexecl
+# `_execl`, `_wexecl`
 
 Loads and executes new child processes.
 
@@ -36,52 +36,52 @@ intptr_t _wexecl(
 
 ### Parameters
 
-*cmdname*<br/>
+*`cmdname`*\
 Path of the file to be executed.
 
-*arg0*, ... *argn*<br/>
+*`arg0`*, ... *`argN`*\
 List of pointers to the parameters.
 
-## Return Value
+## Return value
 
-If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the **errno** global variable is set.
+If successful, these functions don't return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.
 
-|errno value|Description|
-|-----------------|-----------------|
-|**E2BIG**|The space required for the arguments and environment settings exceeds 32 KB.|
-|**EACCES**|The specified file has a locking or sharing violation.|
-|**EINVAL**|Invalid parameter (one or more of the parameters was a null pointer or empty string).|
-|**EMFILE**|Too many files open (the specified file must be opened to determine whether it is executable).|
-|**ENOENT**|The file or path is not found.|
-|**ENOEXEC**|The specified file is not executable or has an invalid executable-file format.|
-|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process was not allocated properly.|
+| `errno` value | Description |
+|---|---|
+| `E2BIG` | The space required for the arguments and environment settings exceeds 32 KB. |
+| `EACCES` | The specified file has a locking or sharing violation. |
+| `EINVAL` | Invalid parameter (one or more of the parameters was a null pointer or empty string). |
+| `EMFILE` | Too many files open (the specified file must be opened to determine whether it's executable). |
+| `ENOENT` | The file or path isn't found. |
+| `ENOEXEC` | The specified file isn't executable or has an invalid executable-file format. |
+| `ENOMEM` | Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process wasn't allocated properly. |
 
 ## Remarks
 
 Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter. The first argument is the command or executable file name, and the second argument should be the same as the first. It becomes `argv[0]` in the executed process. The third argument is the first argument, `argv[1]`, of the process being executed.
 
-The **_execl** functions validate their parameters. If either *cmdname* or *arg0* is a null pointer or empty string, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1. No new process is executed.
+The **`_execl`** functions validate their parameters. If either *`cmdname`* or *`arg0`* is a null pointer or empty string, these functions invoke the invalid parameter handler as described in [Parameter validation](../parameter-validation.md) If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.
 
 ## Requirements
 
-|Function|Required header|Optional header|
-|--------------|---------------------|---------------------|
-|**_execl**|\<process.h>|\<errno.h>|
-|**_wexecl**|\<process.h> or \<wchar.h>|\<errno.h>|
+| Function | Required header | Optional header |
+|---|---|---|
+| **`_execl`** | \<process.h> | \<errno.h> |
+| **`_wexecl`** | \<process.h> or \<wchar.h> | \<errno.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).
+See the example in [`_exec`, `_wexec` functions](../exec-wexec-functions.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
-[atexit](atexit.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`_exec`, `_wexec` functions](../exec-wexec-functions.md)\
+[`abort`](abort.md)\
+[`atexit`](atexit.md)\
+[`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
+[`_onexit`, `_onexit_m`](onexit-onexit-m.md)\
+[`_spawn`, `_wspawn` functions](../spawn-wspawn-functions.md)\
+[`system`, `_wsystem`](system-wsystem.md)

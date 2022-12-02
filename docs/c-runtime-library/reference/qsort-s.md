@@ -3,16 +3,16 @@ description: "Learn more about: qsort_s"
 title: "qsort_s"
 ms.date: "4/2/2020"
 api_name: ["qsort_s", "_o_qsort_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["qsort_s"]
 helpviewer_keywords: ["arrays [C++], sorting", "quick-sort algorithm", "qsort_s function", "sorting arrays"]
 ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
 ---
-# qsort_s
+# `qsort_s`
 
-Performs a quick sort. A version of [qsort](qsort.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a quick sort. A version of [`qsort`](qsort.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -28,24 +28,24 @@ void qsort_s(
 
 ### Parameters
 
-*base*<br/>
+*`base`*\
 Start of target array.
 
-*number*<br/>
+*`number`*\
 Array size in elements.
 
-*width*<br/>
+*`width`*\
 Element size in bytes.
 
-*compare*<br/>
-Comparison function. The first argument is the *context* pointer. The second argument is a pointer to the *key* for the search. The third argument is a pointer to the array element to be compared with *key*.
+*`compare`*\
+Comparison function. The first argument is the *`context`* pointer. The second argument is a pointer to the *`key`* for the search. The third argument is a pointer to the array element to be compared with *`key`*.
 
-*context*<br/>
-A pointer to a context, which can be any object that the *compare* routine needs to access.
+*`context`*\
+A pointer to a context, which can be any object that the *`compare`* routine needs to access.
 
 ## Remarks
 
-The **qsort_s** function implements a quick-sort algorithm to sort an array of *number* elements, each of *width* bytes. The argument *base* is a pointer to the base of the array to be sorted. **qsort_s** overwrites this array with the sorted elements. The argument *compare* is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. **qsort_s** calls the *compare* routine one or more times during the sort, passing pointers to two array elements on each call:
+The **`qsort_s`** function implements a quick-sort algorithm to sort an array of *`number`* elements, each of *`width`* bytes. The argument *`base`* is a pointer to the base of the array to be sorted. **`qsort_s`** overwrites this array with the sorted elements. The argument *`compare`* is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. **`qsort_s`** calls the *`compare`* routine one or more times during the sort, passing pointers to two array elements on each call:
 
 ```C
 compare( context, (void *) & elem1, (void *) & elem2 );
@@ -53,42 +53,42 @@ compare( context, (void *) & elem1, (void *) & elem2 );
 
 The routine must compare the elements and then return one of the following values:
 
-|Return value|Description|
-|------------------|-----------------|
-|< 0|**elem1** less than **elem2**|
-|0|**elem1** equivalent to **elem2**|
-|> 0|**elem1** greater than **elem2**|
+| Return value | Description |
+|---|---|
+| < 0 | *element 1* less than *element 2* |
+| 0 | *element 1* equivalent to *element 2* |
+| > 0 | *element 1* greater than *element 2* |
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, then the function returns and **errno** is set to **EINVAL**. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, then the function returns, and `errno` is set to `EINVAL`. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Error Conditions
+### Error conditions
 
-|key|base|compare|num|width|errno|
-|---------|----------|-------------|---------|-----------|-----------|
-|**NULL**|any|any|any|any|**EINVAL**|
-|any|**NULL**|any|!= 0|any|**EINVAL**|
-|any|any|any|any|<= 0|**EINVAL**|
-|any|any|**NULL**|any|any|**EINVAL**|
+| key | base | compare | num | width | errno |
+|---|---|---|---|---|---|
+| `NULL` | any | any | any | any | `EINVAL` |
+| any | `NULL` | any | != 0 | any | `EINVAL` |
+| any | any | any | any | <= 0 | `EINVAL` |
+| any | any | `NULL` | any | any | `EINVAL` |
 
-**qsort_s** has the same behavior as **qsort** but has the *context* parameter and sets **errno**. By passing a *context* parameter, comparison functions can use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the *context* parameter makes **qsort_s** more secure because *context* can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the *compare* function.
+**`qsort_s`** has the same behavior as `qsort` but has the *`context`* parameter and sets `errno`. The *`context`* parameter allows comparison functions to use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the *`context`* parameter makes **`qsort_s`** more secure because *`context`* can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the *`compare`* function.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**qsort_s**|\<stdlib.h> and \<search.h>|
+| Routine | Required header |
+|---|---|
+| **`qsort_s`** | \<stdlib.h> and \<search.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
-**Libraries:** All versions of the [C runtime libraries](../../c-runtime-library/crt-library-features.md).
+**Libraries:** All versions of the [C runtime libraries](../crt-library-features.md).
 
 ## Example
 
-The following example demonstrates how to use the *context* parameter in the **qsort_s** function. The *context* parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different *context* parameter in each sort. In this example, a locale object is used as the *context* parameter.
+The following example demonstrates how to use the *`context`* parameter in the **`qsort_s`** function. The *`context`* parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different *`context`* parameter in each sort. In this example, a locale object is used as the *`context`* parameter.
 
 ```cpp
 // crt_qsort_s.cpp
@@ -227,7 +227,7 @@ int main( )
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Unsorted input:
@@ -242,7 +242,7 @@ table tablet tableux
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](bsearch-s.md)<br/>
-[_lsearch_s](lsearch-s.md)<br/>
-[qsort](qsort.md)<br/>
+[Searching and sorting](../searching-and-sorting.md)\
+[`bsearch_s`](bsearch-s.md)\
+[`_lsearch_s`](lsearch-s.md)\
+[`qsort`](qsort.md)

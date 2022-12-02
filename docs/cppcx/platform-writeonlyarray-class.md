@@ -30,7 +30,7 @@ These methods have internal accessibility—that is, they are only accessible wi
 |[WriteOnlyArray::begin](#begin)|An iterator that points to the first element of the array.|
 |[WriteOnlyArray::Data](#data)|A pointer to the data buffer.|
 |[WriteOnlyArray::end](#end)|An iterator that points to one past the last element in the array.|
-|[WriteOnlyArray::FastPass](#fastpass)|Indicates whether the array can use the FastPass mechanism, which is an optimization transparently performed by the system. Don’t use this in your code|
+|[WriteOnlyArray::FastPass](#fastpass)|Indicates whether the array can use the FastPass mechanism, which is an optimization transparently performed by the system. Don't use this in your code|
 |[WriteOnlyArray::Length](#length)|Returns the number of elements in the array.|
 |[WriteOnlyArray::set](#set)|Sets the specified element to the specified value.|
 

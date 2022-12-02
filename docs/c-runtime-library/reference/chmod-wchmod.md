@@ -3,14 +3,14 @@ description: "Learn more about: _chmod, _wchmod"
 title: "_chmod, _wchmod"
 ms.date: "4/2/2020"
 api_name: ["_chmod", "_wchmod", "_o__chmod", "_o__wchmod"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_chmod", "_wchmod", "wchmod"]
 helpviewer_keywords: ["_chmod function", "wchmod function", "file permissions [C++]", "chmod function", "files [C++], changing permissions", "_wchmod function"]
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
 ---
-# _chmod, _wchmod
+# `_chmod`, `_wchmod`
 
 Changes the file-permission settings.
 
@@ -23,19 +23,19 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 ### Parameters
 
-*filename*<br/>
+*`filename`*\
 Name of the existing file.
 
-*pmode*<br/>
+*`pmode`*\
 Permission setting for the file.
 
-## Return Value
+## Return value
 
-These functions return 0 if the permission setting is successfully changed. A return value of -1 indicates failure. If the specified file couldn't be found, **errno** is set to **ENOENT**; if a parameter is invalid, **errno** is set to **EINVAL**.
+These functions return 0 if the permission setting is successfully changed. A return value of -1 indicates failure. If the specified file couldn't be found, `errno` is set to `ENOENT`; if a parameter is invalid, `errno` is set to `EINVAL`.
 
 ## Remarks
 
-The **_chmod** function changes the permission setting of the file specified by *filename*. The permission setting controls the read and write access to the file. The integer expression *pmode* contains one or both of the following manifest constants, defined in SYS\Stat.h.
+The **`_chmod`** function changes the permission setting of the file specified by *`filename`*. The permission setting controls the read and write access to the file. The integer expression *`pmode`* contains one or both of the following manifest constants, defined in SYS\Stat.h.
 
 | *`pmode`* | Meaning |
 |-|-|
@@ -45,26 +45,26 @@ The **_chmod** function changes the permission setting of the file specified by 
 
 When both constants are given, they're joined with the bitwise or operator (**`|`**). If write permission isn't given, the file is read-only. Note that all files are always readable; it isn't possible to give write-only permission. Thus, the modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are equivalent.
 
-**_wchmod** is a wide-character version of **_chmod**; the *filename* argument to **_wchmod** is a wide-character string. **_wchmod** and **_chmod** behave identically otherwise.
+**`_wchmod`** is a wide-character version of **`_chmod`**; the *`filename`* argument to **`_wchmod`** is a wide-character string. **`_wchmod`** and **`_chmod`** behave identically otherwise.
 
-This function validates its parameters. If *pmode* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores them. If *filename* is **`NULL`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns -1.
+This function validates its parameters. If *`pmode`* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores them. If *`filename`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.
 
 By default, this function's global state is scoped to the application. To change it, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tchmod**|**_chmod**|**_chmod**|**_wchmod**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tchmod` | **`_chmod`** | **`_chmod`** | **`_wchmod`** |
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**_chmod**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
-|**_wchmod**|\<io.h> or \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_chmod`** | \<io.h> | \<sys/types.h>, \<sys/stat.h>, \<errno.h> |
+| **`_wchmod`** | \<io.h> or \<wchar.h> | \<sys/types.h>, \<sys/stat.h>, \<errno.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -144,9 +144,9 @@ Mode set to read/write
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](access-waccess.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)<br/>
+[File handling](../file-handling.md)\
+[`_access`, `_waccess`](access-waccess.md)\
+[`_creat`, `_wcreat`](creat-wcreat.md)\
+[`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)\
+[`_open`, `_wopen`](open-wopen.md)\
+[`_stat`, `_wstat` functions](stat-functions.md)

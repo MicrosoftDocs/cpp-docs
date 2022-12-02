@@ -3,7 +3,7 @@ description: "Learn more about: set_unexpected (CRT)"
 title: "set_unexpected (CRT)"
 ms.date: "1/14/2021"
 api_name: ["set_unexpected"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["set_unexpected"]
@@ -25,13 +25,13 @@ unexpected_function set_unexpected( unexpected_function unexpFunction );
 *`unexpFunction`*\
 Pointer to a function that you write to replace the **`unexpected`** function.
 
-## Return Value
+## Return value
 
-Returns a pointer to the previous termination function registered by **`_set_unexpected`** so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be **`NULL`**.
+Returns a pointer to the previous termination function registered by **`_set_unexpected`** so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be `NULL`.
 
 ## Remarks
 
-The **`set_unexpected`** function installs *unexpFunction* as the function called by **`unexpected`**. **`unexpected`** is not used in the current C++ exception-handling implementation. The **`unexpected_function`** type is defined in EH.H as a pointer to a user-defined unexpected function, *unexpFunction* that returns **`void`**. Your custom *unexpFunction* function should not return to its caller.
+The **`set_unexpected`** function installs *`unexpFunction`* as the function called by **`unexpected`**. **`unexpected`** isn't used in the current C++ exception-handling implementation. The **`unexpected_function`** type is defined in EH.H as a pointer to a user-defined unexpected function, *`unexpFunction`* that returns **`void`**. Your custom *`unexpFunction`* function shouldn't return to its caller.
 
 ```cpp
 typedef void ( *unexpected_function )( );
@@ -43,21 +43,21 @@ Unlike the custom termination function installed by a call to **`set_terminate`*
 
 In a multithreaded environment, unexpected functions are maintained separately for each thread. Each new thread needs to install its own unexpected function. Thus, each thread is in charge of its own unexpected handling.
 
-In the current Microsoft implementation of C++ exception handling, **`unexpected`** calls **`terminate`** by default and is never called by the exception-handling run-time library. There is no particular advantage to calling **`unexpected`** rather than **`terminate`**.
+In the current Microsoft implementation of C++ exception handling, **`unexpected`** calls **`terminate`** by default and is never called by the exception-handling run-time library. There's no particular advantage to calling **`unexpected`** rather than **`terminate`**.
 
-There is a single **`set_unexpected`** handler for all dynamically linked DLLs or EXEs; even if you call **`set_unexpected`** your handler may be replaced by another or that you are replacing a handler set by another DLL or EXE.
+There's a single **`set_unexpected`** handler for all dynamically linked DLLs or EXEs; even if you call **`set_unexpected`** your handler may be replaced by another or that you're replacing a handler set by another DLL or EXE.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`set_unexpected`**|`<eh.h>`|
+| Routine | Required header |
+|---|---|
+| **`set_unexpected`** | `<eh.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)\
+[Exception handling routines](../exception-handling-routines.md)\
 [`abort`](abort.md)\
 [`_get_unexpected`](get-unexpected.md)\
 [`set_terminate`](set-terminate-crt.md)\

@@ -3,7 +3,7 @@ description: "Learn more about: unexpected (CRT)"
 title: "unexpected (CRT)"
 ms.date: "1/14/2021"
 api_name: ["unexpected"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["unexpected"]
@@ -26,17 +26,17 @@ The **`unexpected`** routine isn't used with the current implementation of C++ e
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`unexpected`**|`<eh.h>`|
+| Routine | Required header |
+|---|---|
+| **`unexpected`** | `<eh.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
-[_set_se_translator](set-se-translator.md)<br/>
-[set_terminate](set-terminate-crt.md)<br/>
-[set_unexpected](set-unexpected-crt.md)<br/>
-[terminate](terminate-crt.md)<br/>
+[Exception handling routines](../exception-handling-routines.md)\
+[`abort`](abort.md)\
+[`_set_se_translator`](set-se-translator.md)\
+[`set_terminate`](set-terminate-crt.md)\
+[`set_unexpected`](set-unexpected-crt.md)\
+[`terminate`](terminate-crt.md)

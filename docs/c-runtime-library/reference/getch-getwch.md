@@ -3,7 +3,7 @@ title: "_getch, _getwch"
 description: "API reference for _getch and _getwch; which get a character from the console without echo."
 ms.date: "4/2/2020"
 api_name: ["_getch", "_getwch", "_o__getch", "_o__getwch"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["getwch", "_getch", "_getwch"]
@@ -23,7 +23,7 @@ int _getch( void );
 wint_t _getwch( void );
 ```
 
-## Return Value
+## Return value
 
 Returns the character read. There's no error return.
 
@@ -33,22 +33,22 @@ The **`_getch`** and **`_getwch`** functions read a single character from the co
 
 These functions lock the calling thread and so are thread-safe. For non-locking versions, see [`_getch_nolock`, `_getwch_nolock`](getch-nolock-getwch-nolock.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**`_gettch`**|**`_getch`**|**`_getch`**|**`_getwch`**|
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_gettch`** | **`_getch`** | **`_getch`** | **`_getwch`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getch`**|`<conio.h>`|
-|**`_getwch`**|`<conio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`_getch`** | `<conio.h>` |
+| **`_getwch`** | `<conio.h>` or `<wchar.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -88,8 +88,8 @@ Type 'Y' when finished typing keys: Y
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)\
+[Console and port I/O](../console-and-port-i-o.md)\
 [`_getche`, `_getwche`](getche-getwche.md)\
-[`_cgets`, `_cgetws`](../../c-runtime-library/cgets-cgetws.md)\
+[`_cgets`, `_cgetws`](../cgets-cgetws.md)\
 [`getc`, `getwc`](getc-getwc.md)\
 [`_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)

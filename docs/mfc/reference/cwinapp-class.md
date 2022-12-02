@@ -975,7 +975,7 @@ Use the `LoadOEMCursor` or [LoadStandardCursor](#loadstandardcursor) member func
 ### Example
 
 [!code-cpp[NVC_MFCWindowing#45](../../mfc/reference/codesnippet/cpp/cwinapp-class_12.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#46](../../mfc/reference/codesnippet/cpp/cwinapp-class_13.cpp)]
 
 ## <a name="loadoemicon"></a> CWinApp::LoadOEMIcon
@@ -1386,7 +1386,7 @@ See [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md) for
 ### Example
 
 [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/cpp/cwinapp-class_26.cpp)]
 
 ## <a name="onfileopen"></a> CWinApp::OnFileOpen
@@ -1406,7 +1406,7 @@ For information on default behavior and guidance on how to override this member 
 ### Example
 
 [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/cpp/cwinapp-class_26.cpp)]
 
 ## <a name="onfileprintsetup"></a> CWinApp::OnFilePrintSetup
@@ -1426,7 +1426,7 @@ For information on default behavior and guidance on how to override this member 
 ### Example
 
 [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#50](../../mfc/reference/codesnippet/cpp/cwinapp-class_26.cpp)]
 
 ## <a name="onhelp"></a> CWinApp::OnHelp

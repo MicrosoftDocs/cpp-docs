@@ -7,11 +7,11 @@ helpviewer_keywords: ["CRT", "runtime libraries", "CRT, reference"]
 ---
 # Microsoft C runtime library (CRT) reference
 
-The Microsoft runtime library provides routines for programming the Microsoft Windows operating system. These routines automate many common programming tasks that are not provided by the C and C++ languages.
+The Microsoft runtime library provides routines for programming the Microsoft Windows operating system. These routines automate many common programming tasks that aren't provided by the C and C++ languages.
 
-Sample programs are included in the individual reference topics for most routines in the library.
+Sample programs are included in the individual reference articles for most routines in the library.
 
-## In This Section
+## In this section
 
 [Universal C runtime routines by category](run-time-routines-by-category.md)\
 Provides links to the runtime library by category.
@@ -40,7 +40,7 @@ Describes how to use the `setlocale` function to set the language and Country/Re
 [C runtime (CRT) and C++ Standard Library (STL) `.lib` files](crt-library-features.md)\
 List of `.lib` files that make up the C runtime libraries and their associated compiler options and preprocessor directives.
 
-## Related Sections
+## Related sections
 
 [Debug routines](debug-routines.md)\
 Provides links to the debug versions of the runtime library routines.

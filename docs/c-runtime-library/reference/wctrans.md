@@ -10,7 +10,7 @@ f1_keywords: ["wctrans"]
 helpviewer_keywords: ["character codes, wctrans", "characters, codes", "characters, converting", "wctrans function"]
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
 ---
-# wctrans
+# `wctrans`
 
 Determines a mapping from one set of character codes to another.
 
@@ -24,31 +24,31 @@ wctrans_t wctrans(
 
 ### Parameters
 
-*property*<br/>
+*`property`*\
 A string that specifies one of the valid transformations.
 
-## Return Value
+## Return value
 
-If the **LC_CTYPE** category of the current locale does not define a mapping whose name matches the property string *property*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](towctrans.md).
+If the `LC_CTYPE` category of the current locale doesn't define a mapping whose name matches the property string *`property`*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [`towctrans`](towctrans.md).
 
 ## Remarks
 
 This function determines a mapping from one set of character codes to another.
 
-The following pairs of calls have the same behavior in all locales, but it is possible to define additional mappings even in the "C" locale:
+The following pairs of calls have the same behavior in all locales, but it's possible to define more mappings even in the "C" locale:
 
-|Function|Same As|
-|--------------|-------------|
-|tolower(c)|towctrans(c, wctrans("towlower"))|
-|towupper(c)|towctrans(c, wctrans("toupper"))|
+| Function | Same As |
+|---|---|
+| `tolower(c)` | `towctrans(c, wctrans("towlower"))` |
+| `towupper(c)` | `towctrans(c, wctrans("toupper"))` |
 
 ## Requirements
 
-|Routine|Required Header|
-|-------------|---------------------|
-|**wctrans**|\<wctype.h>|
+| Routine | Required Header |
+|---|---|
+| **`wctrans`** | \<wctype.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -88,5 +88,5 @@ int main()
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+[Data conversion](../data-conversion.md)\
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)

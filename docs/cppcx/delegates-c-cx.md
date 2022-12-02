@@ -12,7 +12,7 @@ The **`delegate`** keyword is used to declare a reference type that is the Windo
 public delegate void PrimeFoundHandler(int result);
 ```
 
-Delegates are most commonly used in conjunction with events. An event has a delegate type, in much the same way that a class can have an interface type. The delegate represents a contract that event handlers much fulfill. Here’s an event class member whose type is the previously-defined delegate:
+Delegates are most commonly used in conjunction with events. An event has a delegate type, in much the same way that a class can have an interface type. The delegate represents a contract that event handlers much fulfill. Here's an event class member whose type is the previously-defined delegate:
 
 ```cpp
 event PrimeFoundHandler^ primeFoundEvent;
@@ -81,7 +81,7 @@ It then calls the member function and passes the delegate. Assume that `ci` is a
 In the next example, a client app passes a custom delegate to a public method in a Windows Runtime component that executes the delegate against each item in a `Vector`:
 
 [!code-cpp[Cx_delegates#118](../cppcx/codesnippet/CPP/clientapp/mainpage.xaml.cpp#118)]
-
+&nbsp;
 [!code-cpp[Cx_delegates#119](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#119)]
 
 ### Construction
@@ -105,7 +105,7 @@ The following example shows how to construct a delegate from each of these objec
 
 ### Generic delegates
 
-Generic delegates in C++/CX have restrictions similar to declarations of generic classes. They cannot be declared as public. You can declare a private or internal generic delegate and consume it from C++, but .NET or JavaScript clients can’t consume it because it is not emitted into the .winmd metadata. This example declares a generic delegate that can only be consumed by C++:
+Generic delegates in C++/CX have restrictions similar to declarations of generic classes. They cannot be declared as public. You can declare a private or internal generic delegate and consume it from C++, but .NET or JavaScript clients can't consume it because it is not emitted into the .winmd metadata. This example declares a generic delegate that can only be consumed by C++:
 
 [!code-cpp[Cx_delegates#116](../cppcx/codesnippet/CPP/delegatesevents/class1.h#116)]
 
@@ -123,7 +123,7 @@ If the code that executes the delegate is running on a different thread—for ex
 
 If you want your created delegate to be called back on the same thread that it was created on—for example, if you pass it to a component that runs in an MTA apartment—and you want it to be invoked on the same thread as the creator, then use the delegate constructor overload that takes a second `CallbackContext` parameter. Only use this overload on delegates that have a registered proxy/stub; not all of the delegates that are defined in Windows.winmd are registered.
 
-If you are familiar with event handlers in .NET, you know that the recommended practice is to make a local copy of an event before you fire it. This avoids race conditions in which an event handler might be removed just before the event is invoked. It isn’t necessary to do this in C++/CX because when event handlers are added or removed a new handler list is created. Because a C++ object increments the reference count on the handler list before invoking an event, it is guaranteed that all handlers will be valid. However, this also means that if you remove an event handler on the consuming thread, that handler might still get invoked if the publishing object is still operating on its copy of the list, which is now out-of-date. The publishing object will not get the updated list until the next time it fires the event.
+If you are familiar with event handlers in .NET, you know that the recommended practice is to make a local copy of an event before you fire it. This avoids race conditions in which an event handler might be removed just before the event is invoked. It isn't necessary to do this in C++/CX because when event handlers are added or removed a new handler list is created. Because a C++ object increments the reference count on the handler list before invoking an event, it is guaranteed that all handlers will be valid. However, this also means that if you remove an event handler on the consuming thread, that handler might still get invoked if the publishing object is still operating on its copy of the list, which is now out-of-date. The publishing object will not get the updated list until the next time it fires the event.
 
 ## See also
 

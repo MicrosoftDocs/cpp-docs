@@ -711,9 +711,9 @@ Nonzero if successful; otherwise 0.
 This example shows how to use `Attach` and `Detach` to map to the MDI client window.
 
 [!code-cpp[NVC_MFCWindowing#67](../../mfc/reference/codesnippet/cpp/cwnd-class_2.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#68](../../mfc/reference/codesnippet/cpp/cwnd-class_3.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#69](../../mfc/reference/codesnippet/cpp/cwnd-class_4.cpp)]
 
 ## <a name="beginmodalstate"></a> `CWnd::BeginModalState`
@@ -2059,7 +2059,7 @@ The default tool tips provided for your windows by `EnableToolTips` do not have 
 ### Example
 
 [!code-cpp[NVC_MFCWindowing#91](../../mfc/reference/codesnippet/cpp/cwnd-class_30.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#92](../../mfc/reference/codesnippet/cpp/cwnd-class_31.cpp)]
 
 ## <a name="enabletrackingtooltips"></a> `CWnd::EnableTrackingToolTips`

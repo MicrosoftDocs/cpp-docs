@@ -3,7 +3,7 @@ description: "Learn more about: _set_new_handler"
 title: "_set_new_handler"
 ms.date: 05/21/2022
 api_name: ["_set_new_handler", "_o__set_new_handler"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_set_new_handler", "set_new_handler"]
@@ -31,7 +31,7 @@ Returns a pointer to the previous exception handling function registered by **`_
 
 ## Remarks
 
-The C++ **`_set_new_handler`** function specifies an exception-handling function that gains control if the **`new`** operator fails to allocate memory. If **`new`** fails, the run-time system automatically calls the exception-handling function that was passed as an argument to **`_set_new_handler`**. **`_PNH`**, defined in `<new.h>`, is a pointer to a function that returns type **`int`** and takes an argument of type **`size_t`**. Use **`size_t`** to specify the amount of space to be allocated.
+The C++ **`_set_new_handler`** function specifies an exception-handling function that gains control if the **`new`** operator fails to allocate memory. If **`new`** fails, the run-time system automatically calls the exception-handling function that was passed as an argument to **`_set_new_handler`**. `_PNH`, defined in `<new.h>`, is a pointer to a function that returns type **`int`** and takes an argument of type **`size_t`**. Use **`size_t`** to specify the amount of space to be allocated.
 
 There's no default handler.
 
@@ -82,7 +82,7 @@ There's a single **`_set_new_handler`** handler for all dynamically linked DLLs 
 |--|--|
 | **`_set_new_handler`** | `<new.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -170,7 +170,7 @@ bad_alloc caught: bad allocation
 
 ## See also
 
-[Memory allocation](../../c-runtime-library/memory-allocation.md)\
+[Memory allocation](../memory-allocation.md)\
 [`calloc`](calloc.md)\
 [`free`](free.md)\
 [`realloc`](realloc.md)

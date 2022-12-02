@@ -22,7 +22,7 @@ public ref class String sealed : Object,
 
 ## Iterators
 
-Two iterator functions, which are not members of the String class, can be used with the `std::for_each` template function to enumerate the characters in a String object.
+Two iterator functions, which are not members of the String class, can be used with the `std::for_each` function template to enumerate the characters in a String object.
 
 |Member|Description|
 |------------|-----------------|

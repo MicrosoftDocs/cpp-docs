@@ -179,7 +179,7 @@ This operator returns a reference to the contained `CDataSource` object, allowin
 If you have a function (such as `func` below) that takes a `CDataSource` reference, you can use `CDataSource&` to pass a `CDataConnection` object instead.
 
 [!code-cpp[NVC_OLEDB_Consumer#3](../../data/oledb/codesnippet/cpp/cdataconnection-operator-cdatasource-amp_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_OLEDB_Consumer#4](../../data/oledb/codesnippet/cpp/cdataconnection-operator-cdatasource-amp_2.cpp)]
 
 ## <a name="op_cdata_star"></a> `CDataConnection::operator CDataSource*`
@@ -217,7 +217,7 @@ This operator returns a reference to the contained `CSession` object, allowing y
 If you have a function (such as `func` below) that takes a `CSession` reference, you can use `CSession&` to pass a `CDataConnection` object instead.
 
 [!code-cpp[NVC_OLEDB_Consumer#5](../../data/oledb/codesnippet/cpp/cdataconnection-operator-csession-amp_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_OLEDB_Consumer#6](../../data/oledb/codesnippet/cpp/cdataconnection-operator-csession-amp_2.cpp)]
 
 ## <a name="op_csession_star"></a> `CDataConnection::operator CSession*`

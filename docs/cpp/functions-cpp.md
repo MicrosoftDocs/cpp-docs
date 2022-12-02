@@ -195,7 +195,6 @@ void DoSomething(const std::string&& input){...}
 A function declared with the single keyword **`void`** in the parameter declaration list takes no arguments, as long as the keyword **`void`** is the first and only member of the argument declaration list. Arguments of type **`void`** elsewhere in the list produce errors. For example:
 
 ```cpp
-
 // OK same as GetTickCount()
 long GetTickCount( void );
 ```

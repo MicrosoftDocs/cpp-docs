@@ -10,7 +10,7 @@ f1_keywords: ["cpow", "cpowf", "cpowl", "complex/cpow", "complex/cpowf", "comple
 helpviewer_keywords: ["cpow function", "cpowf function", "complex/cpowl function"]
 ms.assetid: 83fe2187-22b7-4295-ab16-4d77abdbb80b
 ---
-# cpow, cpowf, cpowl
+# `cpow`, `cpowf`, `cpowl`
 
 Retrieves the value of a number raised to the specified power, where the base and exponent are complex numbers. This function has a branch cut for the exponent along the negative real axis.
 
@@ -36,31 +36,31 @@ _Lcomplex cpowl(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The base.
 
-*y*<br/>
+*`y`*\
 The exponent.
 
-## Return Value
+## Return value
 
-The value of *x* raised to the power of *y* with a branch cut for *x* along the negative real axis.
+The value of *`x`* raised to the power of *`y`* with a branch cut for *`x`* along the negative real axis.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cpow** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cpow** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`cpow`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`cpow`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**cpow**,               **cpowf**, **cpowl**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`cpow`**, **`cpowf`**, **`cpowl`** | \<complex.h> | \<ccomplex> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](clog-clogf-clogl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`cexp`, `cexpf`, `cexpl`](cexp-cexpf-cexpl.md)\
+[`clog10`, `clog10f`, `clog10l`](clog10-clog10f-clog10l.md)\
+[`clog`, `clogf`, `clogl`](clog-clogf-clogl.md)

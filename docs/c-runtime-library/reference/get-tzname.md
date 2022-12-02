@@ -3,7 +3,7 @@ description: "Learn more about: _get_tzname"
 title: "_get_tzname"
 ms.date: 08/23/2022
 api_name: ["_get_tzname", "_o__get_tzname"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_get_tzname", "get_tzname"]
@@ -38,44 +38,44 @@ The size of the *`timeZoneName`* character string in bytes.
 *`index`*\
 The *`index`* of one of the two time zone names to retrieve.
 
-|*`index`*|Contents of *`timeZoneName`*|*`timeZoneName`* default value|
-|-|-|-|
-|0|Time zone name|`"PST"`|
-|1|Daylight standard time zone name|`"PDT"`|
-|> 1 or < 0|**`errno`** set to `EINVAL`|not modified|
+| *`index`* | Contents of *`timeZoneName`* | *`timeZoneName`* default value |
+|---|---|---|
+| 0 | Time zone name | `"PST"` |
+| 1 | Daylight standard time zone name | `"PDT"` |
+| > 1 or < 0 | `errno` set to `EINVAL` | not modified |
 
 Unless explicitly updated during runtime, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. For more information, see the [Remarks](#remarks).
 
 The time zone string isn't guaranteed to be the same between OS releases. Official time zone names can and do change.
 
-## Return Value
+## Return value
 
-Zero if successful, otherwise an **`errno`** type value.
+Zero if successful, otherwise an `errno` type value.
 
-If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to `EINVAL` and returns `EINVAL`.
+If either *`timeZoneName`* is `NULL`, or *`sizeInBytes`* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
-### Error Conditions
+### Error conditions
 
-|*`pReturnValue`*|*`timeZoneName`*|*`sizeInBytes`*|*`index`*|Return value|Contents of *`timeZoneName`*|
-|--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
-|size of TZ name|`NULL`|0|0 or 1|0|not modified|
-|size of TZ name|any|> 0|0 or 1|0|TZ name|
-|not modified|`NULL`|> 0|any|`EINVAL`|not modified|
-|not modified|any|zero|any|`EINVAL`|not modified|
-|not modified|any|> 0|> 1|`EINVAL`|not modified|
+| *`pReturnValue`* | *`timeZoneName`* | *`sizeInBytes`* | *`index`* | Return value | Contents of *`timeZoneName`* |
+|---|---|---|---|---|---|
+| size of TZ name | `NULL` | 0 | 0 or 1 | 0 | not modified |
+| size of TZ name | any | > 0 | 0 or 1 | 0 | TZ name |
+| not modified | `NULL` | > 0 | any | `EINVAL` | not modified |
+| not modified | any | zero | any | `EINVAL` | not modified |
+| not modified | any | > 0 | > 1 | `EINVAL` | not modified |
 
 ## Remarks
 
-The `_get_tzname` function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of *`timeZoneName`* depending on the *`index`* value, along with the size of the string in *`pReturnValue`*. If *`timeZoneName`* is `NULL` and *`sizeInBytes`* is zero, the size of the string required to hold the specified time zone and a terminating `NULL` in bytes is returned in *`pReturnValue`*.
+The `_get_tzname` function retrieves the character string representation of the current time zone name or the daylight standard time zone name (DST) into the address of *`timeZoneName`* depending on the *`index`* value, along with the size of the string in *`pReturnValue`*. If *`timeZoneName`* is `NULL` and *`sizeInBytes`* is zero, the size of the string in bytes required to hold both the specified time zone, and a terminating `NULL`, is returned in *`pReturnValue`*.
 
 The *`index`* values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values have undetermined results.
 
-By default, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. The true time zone name is updated the first time it's needed by a function that requires time zone information, such as [`strftime`](strftime-wcsftime-strftime-l-wcsftime-l.md), [`ftime`](ftime-ftime32-ftime64.md), [`ftime_s`](ftime-s-ftime32-s-ftime64-s.md), [`mktime`](mktime-mktime32-mktime64.md), [`localtime`](localtime-localtime32-localtime64.md), and others. If a function that doesn't require time zone information isn't called prior to calling `_get_tzname`, the default values are returned unless you first explicitly update them with one of the functions just mentioned, or a call to [`tzset()`](tzset.md). Also, if the `TZ` environment variable is set, it takes precedence over the time zone name reported by the OS. Even in this case, one of the functions mentioned above must be called before `_get_tzname` is called or the default time zone value will be returned. For more information about the `TZ` environment variable and the CRT, see [`_tzset`](tzset.md).
+By default, `"PST"` is returned for the standard time zone and `"PDT"` for the daylight standard time zone. The true time zone name is updated the first time it's needed by a function that requires time zone information, such as [`strftime`](strftime-wcsftime-strftime-l-wcsftime-l.md), [`ftime`](ftime-ftime32-ftime64.md), [`ftime_s`](ftime-s-ftime32-s-ftime64-s.md), [`mktime`](mktime-mktime32-mktime64.md), [`localtime`](localtime-localtime32-localtime64.md), and others. If a function that doesn't require time zone information isn't called prior to calling `_get_tzname`, the default values are returned unless you first explicitly update them using one of the functions mentioned, or by a call to [`tzset`](tzset.md). Also, if the `TZ` environment variable is set, it takes precedence over the time zone name reported by the OS. Even in this case, one of the functions mentioned above must be called before `_get_tzname` is called or the default time zone value will be returned. For more information about the `TZ` environment variable and the CRT, see [`_tzset`](tzset.md).
 
 > [!WARNING]
 > The time zone string is not guaranteed to be the same between OS releases. Official time zone names can and do change.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Example
 
@@ -133,16 +133,16 @@ The current Daylight standard time zone name is Pacific Daylight Time.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`_get_tzname`|`<time.h>`|
+| Routine | Required header |
+|---|---|
+| `_get_tzname` | `<time.h>` |
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)\
-[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)\
+[Time management](../time-management.md)\
+[`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md)\
 [`_get_daylight`](get-daylight.md)\
 [`_get_dstbias`](get-dstbias.md)\
 [`_get_timezone`](get-timezone.md)
