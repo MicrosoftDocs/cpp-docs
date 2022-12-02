@@ -3,7 +3,7 @@ title: "lrint, lrintf, lrintl, llrint, llrintf, llrintl"
 description: "API reference for lrint(), lrintf(), lrintl(), llrint(), llrintf(), and llrintl(); which rounds the specified floating-point value to the nearest integral value, by using the current rounding mode and direction."
 ms.date: "9/1/2020"
 api_name: ["lrint", "lrintl", "lrintf", "llrint", "llrintf", "llrintl", "_o_llrint", "_o_llrintf", "_o_llrintl", "_o_lrint", "_o_lrintf", "_o_lrintl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["lrint", "lrintf", "lrintl", "llrint", "llrintf", "llrintl", "math/lrint", "math/lrintf", "math/lrintl", "math/llrint", "math/llrintf", "math/llrintl"]
