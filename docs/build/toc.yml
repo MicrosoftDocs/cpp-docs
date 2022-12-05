@@ -78,7 +78,9 @@ items:
       href: ../build/cmake-predefined-configuration-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
-- name: "Build and import header units"
+- name: "Compare header units, modules, and precompiled headers"
+  href: ../build/compare-inclusion-methods.md
+- name: "Header units"
   expanded: false
   items:
     - name: "Walkthrough: Build and import header units in Visual C++ projects"
