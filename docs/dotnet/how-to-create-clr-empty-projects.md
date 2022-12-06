@@ -18,7 +18,8 @@ To create a CLR empty project, use the **CLR Empty Project** template, which is 
 
    The **New Project** dialog box appears.
 
-1. Under **Installed Templates**, click the **Visual C++** node; then click the **CLR** node. Choose the **CLR Empty Project** icon.
+1. Under **Installed Templates**, click the **Visual C++** node; then click the **CLR** node. Choose the **CLR Empty Project** icon. If you don't see the CLR empty project templates in the Create a new project dialog, you may need to install C++/CLI support. For more information, see [Install C++/CLI support in Visual Studio 2022](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md#install-ccli-support-in-visual-studio-2022).
+
 
 1. In the **Name** box, enter a unique name for your application.
 
