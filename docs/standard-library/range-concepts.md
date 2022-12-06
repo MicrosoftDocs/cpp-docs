@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ra
 ---
 # `<ranges>` concepts
 
-Concepts are a C++20 language feature that constrain template parameters at compile time. They help prevent incorrect template instantiations, convey template argument requirements in a readable form, and provide more succinct template related compiler errors.
+Concepts are a C++20 language feature that constrain template parameters at compile time. They help prevent incorrect template instantiation, convey template argument requirements in a readable form, and provide more succinct template related compiler errors.
 
 Consider the following example, which defines a concept to prevent instantiating a template with a type that doesn't support division:
 
@@ -15,7 +15,7 @@ Consider the following example, which defines a concept to prevent instantiating
 // requires /std:c++20 or later
 #include <iostream>
 
-// Definition of dividable concept that requires 
+// Definition of dividable concept which requires 
 // that arguments a & b of type T support division
 template <typename T>
 concept dividable = requires (T a, T b)
@@ -24,10 +24,10 @@ concept dividable = requires (T a, T b)
 };
 
 // Apply the concept to a template.
-// The template will only be instantiated if the argument T supports division.
+// The template will only be instantiated if argument T supports division.
 // This prevents the template from being instantiated with types that don't support division.
 // This could have been applied to the parameter of a template function, but because
-// most of the concepts in the <ranges> library are applied to classes, this form is used.
+// most of the concepts in the <ranges> library are applied to classes, this form is demonstrated.
 template <class T> requires dividable<T>
 class DivideEmUp
 {
@@ -48,7 +48,7 @@ int main()
 }
 ```
 
-When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4p4 or later, the error that concept `dividable<char*>` evaluated to false will even point directly to the expression requirement `(a / b)` that failed.
+When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4p4 or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
 
 The following concepts are defined in `std::ranges` and are declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 

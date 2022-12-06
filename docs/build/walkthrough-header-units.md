@@ -15,6 +15,7 @@ This article is about building and importing header units with Visual Studio 202
 
 Header units are the recommended alternative to [precompiled header files](creating-precompiled-header-files.md) (PCH). Header units are easier to set up and use, are significantly smaller on disk, provide similar performance benefits, and are more flexible than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio).
 
+To contrast header units with other ways to include functionality in your programs, see [Compare header units, modules, and precompiled headers](compare-inclusion-methods.md).
 ## Prerequisites
 
 To use header units, you need Visual Studio 2019 16.10 or later.
@@ -156,6 +157,7 @@ Enabling the new preprocessor affects the processing of variadic macros. For mor
 [`/exportHeader`](./reference/module-exportheader.md)\
 [`/headerUnit`](./reference/headerunit.md)\
 [`header-units.json`](./reference/header-unit-json-reference.md)\
+[Compare header units, modules, and precompiled headers](compare-inclusion-methods.md)\
 [Overview of modules in C++](../cpp/modules-cpp.md)\
 [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
 [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1)

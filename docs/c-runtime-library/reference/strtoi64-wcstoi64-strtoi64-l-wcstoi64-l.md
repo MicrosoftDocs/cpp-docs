@@ -3,7 +3,7 @@ description: "Learn more about: _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l"
 title: "_strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l"
 ms.date: 05/18/2022
 api_name: ["_strtoi64", "_strtoi64_l", "_wcstoi64_l", "_wcstoi64", "_o__strtoi64", "_o__strtoi64_l", "_o__wcstoi64", "_o__wcstoi64_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CRT_OPEN/_strtoi64", "CRT_OPEN/_stroi64_l", "CORECRT_WSTDLIB/_wcstoi64", "CORECRT_WSTDLIB/_wcstoi64_l", "TCHAR/_tcstoi64", "TCHAR/_tcstoi64_l", "_strtoi64", "_stroi64_l", "_wcstoi64", "_wcstoi64_l", "_tcstoi64", "_tcstoi64_l", "strtoi64", "strtoi64_l", "wcstoi64", "wcstoi64_l"]
