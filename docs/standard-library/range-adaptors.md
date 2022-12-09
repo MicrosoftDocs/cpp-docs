@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::ranges [C++], all", "std::ranges [C++], all_t", "std
 ---
 # Range adaptors
 
-Range adaptors create a *view* (one of the [View classes](view-classes.md) in the `std::views` namespace) from a range. We recommend that you use an adaptor in `std::ranges::views` instead of creating the view types directly. The adaptors are the intended way to access views. They're easier to use, and in some cases more efficient, than creating instances of the view types directly.
+Range adaptors create a *view* (one of the [View classes](view-classes.md) in the `std::views` namespace) from a range. We recommend that you use an adaptor to create views instead of creating the view types directly. The adaptors are the intended way to access views. They're easier to use, and in some cases more efficient, than creating instances of the view types directly.
 
 A view is a lightweight object that refers to elements from a range. A view can:
 
@@ -48,9 +48,9 @@ The first range adaptor, [`filter`](filter-view-class.md), provides a view that 
 
 When a range adaptor produces a view, it doesn't incur the cost of transforming every element in the range to produce that view. The cost to process an element in the view is paid only when you access that element.
 
-Creating a view only prepares to do work in the future. In the previous example, creating the view doesn't result in finding all the elements divisible by three. It also doesn't square the elements that it finds. That work happens only when you access an element in the view.
+Creating a view is preparation to do work in the future. In the previous example, creating the view doesn't result in finding all the elements divisible by three or squaring those elements. Work happens only when you access an element in the view.
 
-Elements of a view are usually the actual elements of the range that are used to create the view. The view usually doesn't own the elements ([`owning_view`](owning-view-class.md) is an exception); it just refers to them. Changing an element changes that element in the range that the view was created from. The following example shows this behavior:
+Elements of a view are usually the actual elements of the range used to create the view. The view usually doesn't own the elements; it just refers to them. Although ([`owning_view`](owning-view-class.md) is an exception. Changing an element changes that element in the range that the view was created from. The following example shows this behavior:
 
 ```cpp
 #include <algorithm>

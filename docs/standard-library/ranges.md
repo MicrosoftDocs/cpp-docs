@@ -1,14 +1,14 @@
 ---
 title: "<ranges>"
 description: "Get an overview of the Standard Template Library (STL) ranges."
-ms.date: 11/02/2022
+ms.date: 12/06/2022
 f1_keywords: ["<ranges>"]
 helpviewer_keywords: ["ranges"]
 ---
 
 # `<ranges>`
 
-At a high level, a *range* is something that you can iterate over. The containers, such as `vector` and `list`, in the C++ Standard Library are ranges. A range abstracts iterators in a way that simplifies and amplifies your ability to use the Standard Template Library (STL).
+At a high level, a *range* is something that you can iterate over. A range is represented by an iterator that marks the beginning of the range, and a sentinel that marks the end of the range. The sentinel may be the same type as the begin iterator, or it may be different. The containers, such as `vector` and `list`, in the C++ Standard Library are ranges. A range abstracts iterators in a way that simplifies and amplifies your ability to use the Standard Template Library (STL).
 
 STL algorithms usually take iterators that point to the portion of the collection that they should operate on. For example, consider how you sort a `vector` by using `std::sort()`. You pass two iterators that mark the beginning and end of the `vector`. That provides flexibility, but passing the iterators to the algorithm is extra work because you probably just want to sort the whole thing.
 
@@ -31,10 +31,12 @@ std::transform(intermediate.begin(), intermediate.end(), std::back_inserter(outp
 With ranges, you can accomplish the same thing without needing the `intermediate` vector:
 
 ```cpp
-// requires /std:c++latest
-std::vector<int> input = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+// requires /std:c++20
+std::vector<int> input = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-auto output = input | std::views::filter([](const int n) {return n % 3 == 0; }) | std::views::transform([](const int n) {return n * n; });
+auto output = input
+    | std::views::filter([](const int n) {return n % 3 == 0; })
+    | std::views::transform([](const int n) {return n * n; });
 ```
 
 Besides being easier to read, this code avoids the memory allocation that's required for the `intermediate` vector and its contents. It also allows you to compose two operations.
@@ -42,9 +44,6 @@ Besides being easier to read, this code avoids the memory allocation that's requ
 In the preceding code, each element that's divisible by three is combined with an operation to square that element. The pipe (`|`) symbol chains the operations together and is read left to right.
 
 The result, `output`, is itself a kind of range called a *view*.
-
-> [!NOTE]
-> This example of ranges requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Because post-release updates to `<ranges>` in the C++20 standard are a work in progress, the features that require `std::views` aren't enabled yet under `/std:c++20`.
 
 ## Views
 
@@ -59,7 +58,7 @@ Views are composable, which is powerful. In the previous example, the view of ve
 The elements of a view are evaluated lazily. That is, the transformations that you apply to each element in a view aren't evaluated until you ask for the element. For example, if you run the following code in a debugger and put a breakpoint on the lines `auto divisible_by_three = ...` and `auto square =  ...`, you'll see that you hit the `divisible_by_three` lambda breakpoint as each element in `input` is tested for divisibility by three. The `square` lambda breakpoint will be hit as the elements that are divisible by three are squared.
 
 ```cpp
-// requires /std:c++latest
+// requires /std:c++20
 #include <ranges>
 #include <vector>
 #include <iostream>
@@ -115,16 +114,17 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 | [`size`](range-functions.md#size)<sup>C++20</sup> | Get the size of the range as an unsigned value. |
 | [`ssize`](range-functions.md#ssize)<sup>C++20</sup> | Get the size of the range as a signed value. |
 
-### Types of ranges
+### Kinds of ranges
 
-How you view the elements of a range depends on its underlying iterator type. The iterator types are specified as C++20 concepts.
+How you can iterate over the elements of a range depends on its underlying iterator type. The iterator type a range requires is specified as a C++20 concept.
 
 In C++20, to say that concept *X* refines concept *Y* means that everything that satisfies concept *Y* also satisfies concept *X*. For example: *car*, *bus*, and *truck* all refine *vehicle*.
 
-The range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to:
+Some of the range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to. The order 
 
 | Range concept | Description | Supported containers |
 |--|--|--|
+| `std::ranges::output_range` | Can iterate forward. JTW |
 | `std::ranges::input_range` | Can iterate from beginning to end at least once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` |
 | `std::ranges::forward_range` | Can iterate from beginning to end more than once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset` |
 | `std::ranges::bidirectional_range` | Can iterate forward and backward more than once. | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|

@@ -592,6 +592,8 @@ items:
       items: 
         - name: <iterator>
           href: iterator.md
+        - name: <iterator> concepts
+          href: iterator-concepts.md
         - name: <iterator> functions
           href: iterator-functions.md
         - name: <iterator> operators
@@ -930,8 +932,6 @@ items:
           href: range-concepts.md
         - name: <ranges> functions
           href: range-functions.md
-        - name: <ranges> iterators
-          href: range-iterators.md
         - name: <ranges> view classes
           href: view-classes.md
           expanded: false

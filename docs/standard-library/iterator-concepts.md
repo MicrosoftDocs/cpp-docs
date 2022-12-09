@@ -1,11 +1,11 @@
 ---
-description: "Learn more about range concepts."
-title: "<ranges> concepts"
+description: "Learn more about iterator concepts."
+title: "<iterator> concepts"
 ms.date: 12/05/2022
 f1_keywords: ["ranges/std::ranges::range", "ranges/std::ranges::bidirectional_range", "ranges/std::ranges::borrowed_range", "ranges/std::ranges::common_range", "ranges/std::ranges::contiguous_range", "ranges/std::ranges::forward_range", "ranges/std::ranges::input_range", "ranges/std::ranges::output_range", "ranges/std::ranges::random_access_range", "ranges/std::ranges::simple_view", "ranges/std::ranges::sized_range", "ranges/std::ranges::view", "ranges/std::ranges::viewable_range"]
 helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ranges::bidirectional_range", "std::ranges [C++], ranges::borrowed_range", "std::ranges [C++], ranges::common_range", "std::ranges [C++], ranges::contiguous_range", "std::ranges [C++], ranges::forward_range", "std::ranges [C++], ranges::input_range", "std::ranges [C++], ranges::output_range", "std::ranges [C++], ranges::random_access_range", "std::ranges [C++], ranges::simple_view", "std::ranges [C++], ranges::sized_range", "std::ranges [C++], ranges::view", "std::ranges [C++], ranges::viewable_range"]
 ---
-# `<ranges>` concepts
+# `<iterator>` concepts
 
 Concepts are a C++20 language feature that constrain template parameters at compile time. They help prevent incorrect template instantiation, specify template argument requirements in a readable form, and provide more succinct template related compiler errors.
 
@@ -50,11 +50,11 @@ int main()
 
 When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4p4 or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
 
-Range concepts are defined in the `std::ranges` namespace as declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
+Iterator concepts are defined in the `std` namespace as declared in the `<iterator>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
-There are six categories of ranges. They are related to the categories of iterators listed in [`<iterator> concepts](iterator-concepts.md).
+There are six categories of ranges. They are directly related to the categories of ranges listed in [`<iterator>](iterator.md#remarks).
 
-In order of increasing capability, the categories are:
+In order of increasing power, the categories are:
 
 | Range concept | Description |
 |--|--|

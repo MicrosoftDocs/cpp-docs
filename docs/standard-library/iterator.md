@@ -19,7 +19,19 @@ There are three classes of insert iterator adaptors: front, back, and general. T
 
 ## Remarks
 
-Iterators are a generalization of pointers that allow a C++ program to work with different data structures in a uniform way. Instead of operating on specific data types, algorithms operate on a range specified by a type of iterator. Any data structure that satisfies the requirements of the iterator can be operated upon by the algorithm. There are five types or categories of iterators:
+Iterators are a generalization of pointers that allow a C++ program to work with different data structures in a uniform way. Instead of operating on specific data types, algorithms operate on a range specified by a type of iterator. Any data structure that satisfies the requirements of the iterator can be operated upon by the algorithm. In C++20, there are x categories of iterators:
+
+JTW fix this table up
+
+| Kind  | Direction | Read/Write| Example types|
+|---|---|---|---|
+| Output | Forward  | Write | `ostream`, `inserter` |
+| Input | Forward | Read | `istream`|
+| Forward | Forward | Read/Write | |
+| Bidirectional | Forward and backward | Read/Write | `list`, `set`, `multiset`, `map`, and `multimap`. |
+| Random access | Any order | Read/Write | `vector`, `deque`, `string`, and `array`. |
+
+Until In C++17, there are five types or categories of iterators:
 
 | Kind  | Direction | Read/Write| Example types|
 |---|---|---|---|
@@ -73,6 +85,10 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 |[`operator>=`](../standard-library/iterator-operators.md#op_gt_eq)|Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.|
 |[`operator+`](../standard-library/iterator-operators.md#op_add)|Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.|
 |[`operator-`](../standard-library/iterator-operators.md#operator-)|Subtracts one iterator from another and returns the difference.|
+
+### Concepts
+
+
 
 ### Classes
 
