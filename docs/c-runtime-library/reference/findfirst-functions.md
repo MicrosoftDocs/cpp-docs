@@ -91,7 +91,7 @@ If an invalid parameter is passed in, these functions invoke the invalid paramet
 
 ## Remarks
 
-You must call [`_findclose`](findclose.md) after you're finished with either the **`_findfirst`** or [`_findnext`](findnext-functions.md) function (or any variants) provided the call to `_findfirst` succeeded by returning a valid handle. `_findclose` frees resources used by these functions in your application.
+You must call [`_findclose`](findclose.md) after you're finished with either the **`_findfirst`** or [`_findnext`](findnext-functions.md) function (or any variants) provided the call to `_findfirst` succeeded. `_findclose` frees resources used by these functions in your application. Calling `_findclose` on an invalid handle returns `-1` and sets `errno` to `EINVAL`.
 
 The variations of these functions that have the **`w`** prefix are wide-character versions; otherwise, they're identical to the corresponding single-byte functions.
 
