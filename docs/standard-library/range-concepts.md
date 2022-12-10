@@ -65,7 +65,7 @@ In order of increasing capability, the categories are:
 | [`random_access_range`](#random_access_range) | Specifies a range that can read and write by index. |
 | [`contiguous_range`](#contiguous_range) | Specifies a range whose elements are sequential in memory and can be accessed using pointer arithmetic. |
 
-In the preceding table, concepts are listed in order of increasing capability. A range that meets the requirements of a concept for a category generally meets the requirements of all concepts in the categories that precede it. For example, a `random_access_range` has the capability of a `bidirectional_range`, `forward_range`, `input_range`, and `output_range`. However, an exception is `input_range` which doesn't have the capability of an `output_range` because it can't be written to.
+In the preceding table, concepts are listed in order of increasing capability. A range that meets the requirements of a concept for a category generally meets the requirements of the concepts in rows that precede it. For example, a `random_access_range` has the capability of a `bidirectional_range`, `forward_range`, `input_range`, and `output_range`. However, an exception is `input_range` which doesn't have the capability of an `output_range` because it can't be written to.
 
 Other range concepts include:
 
@@ -78,8 +78,6 @@ Other range concepts include:
 | [`sized_range`](#sized_range)<sup>C++20</sup> | Specifies a range that can provide the number of elements in a range efficiently. |
 | [`view`](#view)<sup>C++20</sup> | Specifies a type that has efficient (constant time) move construction, assignment, and destruction. |
 | [`viewable_range`](#viewable_range)<sup>C++20</sup> | Specifies a type that either is a view or can be converted to one. |
-
-For a list of JTW
 
 ## `bidirectional_range`
 
