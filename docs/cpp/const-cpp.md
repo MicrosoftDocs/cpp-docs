@@ -165,7 +165,7 @@ But to get the same behavior in C++, you must declare your **`const`** variable 
 extern const int i = 2;
 ```
 
-If you wish to declare an **`extern`** variable in a C++ source code file for use in a C source code file, use:
+If you wish to declare an **`extern`** variable in a C++ source code file (e.g header file) for use in a C source code file, use:
 
 ```cpp
 extern "C" const int x=10;
