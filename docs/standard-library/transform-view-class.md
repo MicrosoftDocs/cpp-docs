@@ -1,7 +1,7 @@
 ---
 title: "transform_view class (C++ Standard Library)| Microsoft Docs"
 description: "API reference for the Standard Template Library (STL) <ranges> transform_view class, which is a view of an underlying sequence after applying a transformation function to each element."
-ms.date: 10/07/2022
+ms.date: 12/14/2022
 f1_keywords: ["ranges/std::transform_view", "ranges/std::transform_view::base", "ranges/std::transform_view::begin", "ranges/std::transform_view::empty", "ranges/std::transform_view::end", "ranges/std::transform_view::operator bool", "ranges/std::transform_view::back", "ranges/std::transform_view::front", "ranges/std::transform_view::operator[]"]
 helpviewer_keywords: ["std::ranges::transform_view [C++]", "std::ranges::transform_view::base [C++]", "std::ranges::transform_view::begin [C++]", "std::ranges::transform_view::empty [C++]", "std::ranges::transform_view::end [C++]", "std::ranges::transform_view::back [C++]", "std::ranges::transform_view::front [C++]", "std::ranges::transform_view::operator bool [C++]", "std::ranges::transform_view::operator[] [C++]"]
 dev_langs: ["C++"]
@@ -37,7 +37,7 @@ For a description of the following entries, see [View class characteristics](vie
 | **Range adaptor** | [`views::transform`](range-adaptors.md#transform) |
 | **Underlying range** | Must satisfy [`input_range`](range-concepts.md#input_range) or higher |
 | **Element type** | Same as the transformation function's return type. |
-| **View iterator category** | Supports [`input_range`](range-concepts.md#input_range) up to `random_access`, depending on the underlying range |
+| **View iterator category** | Supports [`input_range`](range-concepts.md#input_range) up to [`random_access_range`](range-concepts.md#random_access_range), depending on the underlying range |
 | **Sized** | Only if the underlying range satisfies [`sized_range`](range-concepts.md#sized_range) |
 | **Is `const`-iterable** | Only if the underlying range is `const` iterable and the transformation works on `const` references. |
 | **Common range** | Only if the underlying range satisfies [`common_range`](range-concepts.md#common_range) |

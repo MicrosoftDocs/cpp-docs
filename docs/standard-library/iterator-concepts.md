@@ -64,14 +64,14 @@ DONE | [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Tes
 DONE | [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Test for an iterator that can read and write by index. |
 DONE | [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Test for an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. |
 
-An iterator that meets the requirements of a concept generally meets the requirements of the concepts in the rows that precede it. For example, a `random_access_iterator` has the capability of a `bidirectional_iterator`, `forward_iterator`, `input_iterator`, and `output_iterator`. An exception is `input_iterator` which doesn't have the capability of an `output_iterator` because it can't be written to.
+An iterator that meets the requirements of a concept generally meets the requirements of the concepts in the rows that precede it in the previous table. For example, a `random_access_iterator` has the capability of a `bidirectional_iterator`, `forward_iterator`, `input_iterator`, and `output_iterator`. An exception is `input_iterator` which doesn't have the capability of an `output_iterator` because it can't be written to.
 
 Other iterator concepts include:
 
 | Iterator concept | Description |
 |--|--|
-| [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | Test that a type is a sentinel for an iterator type. |
-| [`sized_sentinel_for`](#sized_sentinel_for)<sup>C++20</sup> | Specifies that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time. |
+DONE | [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | Test that a type is a sentinel for an iterator type. |
+DONE | [`sized_sentinel_for`](#sized_sentinel_for)<sup>C++20</sup> | Specifies that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time. |
 
 ## `bidirectional_iterator`
 

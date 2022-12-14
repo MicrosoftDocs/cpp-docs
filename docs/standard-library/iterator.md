@@ -1,13 +1,15 @@
 ---
 description: "Learn more about: <iterator>"
 title: "<iterator>"
-ms.date: 09/29/2022
+ms.date: 12/14/2022
 f1_keywords: ["<iterator>"]
 helpviewer_keywords: ["iterator header"]
 ---
 # `<iterator>`
 
-Defines iterator primitives, predefined iterators and stream iterators, and several supporting templates. The predefined iterators include insert and reverse adaptors.
+Defines predefined iterators and stream iterators, iterator primitives, and supporting templates.
+
+The predefined iterators include insert and reverse adaptors.
 
 There are three classes of insert iterator adaptors: front, back, and general. They provide insert semantics rather than overwrite semantics that the container member function iterators provide.
 
@@ -19,13 +21,14 @@ There are three classes of insert iterator adaptors: front, back, and general. T
 
 ## Remarks
 
-Iterators are a generalization of pointers that allow a C++ program to work with different data structures in a uniform way. Instead of operating on specific data types, algorithms operate on a range specified by a type of iterator. Any data structure that satisfies the requirements of the iterator can be operated upon by the algorithm. In C++20, there are x categories of iterators:
+Iterators are a generalization of pointers that allow a C++ program to work with different data structures in a uniform way. Instead of operating on specific data types, algorithms operate on a range specified by a type of iterator. Any data structure that satisfies the requirements of the iterator can be operated upon by the algorithm. In C++20, there are 6 categories of iterators:
 
 JTW fix this table up
 
 | Kind  | Direction | Read/Write| Example types|
 |---|---|---|---|
 | `bidirectional_iterator` | Forward and backward | Read/Write | `list`, `set`, `multiset`, `map`, and `multimap`. |
+| `contiguous_iterator` | Forward and backward | Read/Write | JTW |
 | `forward_iterator` | Forward | Read/Write | `vector` |
 | `input_iterator` | Forward | Read | `istream`|
 | `output_iterator` | Forward  | Write | `ostream`, `inserter` |
@@ -86,20 +89,6 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 |[`operator+`](../standard-library/iterator-operators.md#op_add)|Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.|
 |[`operator-`](../standard-library/iterator-operators.md#operator-)|Subtracts one iterator from another and returns the difference.|
 
-### Concepts
-
-| Iterator concept | Description |
-|--|--|
-| [`bidirectional_iterator`](iterator-concepts.md#bidirectional_iterator) | Specifies an iterator that can read and write both forwards and backwards. |
-| [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator) | Specifies an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. |
-| [`forward_iterator`](iterator-concepts.md#forward_iterator) | Specifies an iterator that can read (and possibly write) multiple times. |
-| [`input_iterator`](iterator-concepts.md#input_iterator) | Specifies an iterator that you can read from at least once. |
-| [`input_or_output_iterator`](iterator-concepts.md#input_or_output_iterator) | The basis of the iterator concept taxonomy. |
-| [`output_iterator`](iterator-concepts.md#output_iterator) | Specifies an iterator that you can write to. |
-| [`random_access_iterator`]iterator-concepts.md(#random_access_iterator) | Specifies an iterator that can read and write by index. |
-| [`sentinel_for`](iterator-concepts.md#sentinel_for)<sup>C++20</sup> | JTW |
-| [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for)<sup>C++20</sup> | JTW |
-
 ### Classes
 
 |Name|Description|
@@ -122,6 +111,20 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 |[`random_access_iterator_tag`](../standard-library/random-access-iterator-tag-struct.md)|A class that provides a return type for `iterator_category` function that represents a random-access iterator.|
 |[`reverse_iterator`](../standard-library/reverse-iterator-class.md)|The class template describes an object that behaves like a random-access iterator, only in reverse.|
 |[`unchecked_array_iterator`](../standard-library/unchecked-array-iterator-class.md)|A class that accesses an array using a random access, unchecked iterator. **Note:**  This class is a Microsoft extension of the C++ Standard Library. Code implemented by using this function isn't portable to C++ Standard build environments that don't support this Microsoft extension.|
+
+## Concepts
+
+| Iterator concept | Description |
+|--|--|
+| [`bidirectional_iterator`](iterator-concepts.md#bidirectional_iterator) | Specifies an iterator that can read and write both forwards and backwards. |
+| [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator) | Specifies an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. |
+| [`forward_iterator`](iterator-concepts.md#forward_iterator) | Specifies an iterator that can read (and possibly write) multiple times. |
+| [`input_iterator`](iterator-concepts.md#input_iterator) | Specifies an iterator that you can read from at least once. |
+| [`input_or_output_iterator`](iterator-concepts.md#input_or_output_iterator) | The basis of the iterator concept taxonomy. |
+| [`output_iterator`](iterator-concepts.md#output_iterator) | Specifies an iterator that you can write to. |
+| [`random_access_iterator`](iterator-concepts.md#random_access_iterator) | Specifies an iterator that can read and write by index. |
+| [`sentinel_for`](iterator-concepts.md#sentinel_for)<sup>C++20</sup> | JTW |
+| [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for)<sup>C++20</sup> | JTW |
 
 ## See also
 

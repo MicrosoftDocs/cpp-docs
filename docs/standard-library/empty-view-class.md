@@ -32,7 +32,7 @@ For a description of the following entries, see [View class characteristics](vie
 | **Range adaptor** | [`views::empty`](range-adaptors.md#empty) |
 | **Underlying range** | None |
 | **Element type** | As specified when the `empty_view` is created |
-| **View iterator category** | Supports `contiguous_range` |
+| **View iterator category** | `contiguous_range` |
 | **Sized** | Yes. Always returns 0 |
 | **Is `const`-iterable** | Yes |
 | **Common range** | Yes |
