@@ -25,23 +25,23 @@ JTW fix this table up
 
 | Kind  | Direction | Read/Write| Example types|
 |---|---|---|---|
-| Output | Forward  | Write | `ostream`, `inserter` |
-| Input | Forward | Read | `istream`|
-| Forward | Forward | Read/Write | |
-| Bidirectional | Forward and backward | Read/Write | `list`, `set`, `multiset`, `map`, and `multimap`. |
-| Random access | Any order | Read/Write | `vector`, `deque`, `string`, and `array`. |
+| `bidirectional_iterator` | Forward and backward | Read/Write | `list`, `set`, `multiset`, `map`, and `multimap`. |
+| `forward_iterator` | Forward | Read/Write | `vector` |
+| `input_iterator` | Forward | Read | `istream`|
+| `output_iterator` | Forward  | Write | `ostream`, `inserter` |
+| `random_access_iterator` | Any order | Read/Write | `vector`, `deque`, `string`, and `array`. |
 
 Until In C++17, there are five types or categories of iterators:
 
-| Kind  | Direction | Read/Write| Example types|
+| Kind  | Direction | Read/Write| Multipass | Some example types|
 |---|---|---|---|
-| Output | Forward  | Write | `ostream`, `inserter` |
-| Input | Forward | Read | `istream`|
-| Forward | Forward | Read/Write | |
-| Bidirectional | Forward and backward | Read/Write | `list`, `set`, `multiset`, `map`, and `multimap`. |
-| Random access | Any order | Read/Write | `vector`, `deque`, `string`, and `array`. |
+| Output | Forward  | Write | No | `ostream`, `inserter` |
+| Input | Forward | Read | No | `istream`|
+| Forward | Forward | Read/Write | Yes | `vector`, `unordered_set`, `unordered_multiset`, `unordered_map`, and `unordered_multimap`. |
+| Bidirectional | Forward and backward | Read/Write | Yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
+| Random access | Any order | Read/Write | Yes | `vector`, `deque`, `string`, and `array`. |
 
-Iterators are arranged in a hierarchy of capability. In the table above, output iterators are at the low end of the hierarchy, and random-access iterators are at the high end. Iterators higher in the hierarchy can be used in place of those that are lower, but not vice-versa. For example, a random-access iterator can be used in place of a forward iterator, but not the other way around.
+Iterators are arranged in a hierarchy of capability. In the table above, output iterators are at the low end of the capability hierarchy, and random-access iterators are at the high end. Iterators higher in the hierarchy can generally be used in place of those that are lower, but not vice-versa. For example, a random-access iterator can be used in place of a forward iterator, but not the other way around.
 
 Visual Studio has added extensions to C++ Standard Library iterators to support debugging for checked and unchecked iterators. For more information, see [Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md).
 
@@ -88,7 +88,17 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 
 ### Concepts
 
-
+| Iterator concept | Description |
+|--|--|
+| [`bidirectional_iterator`](iterator-concepts.md#bidirectional_iterator) | Specifies an iterator that can read and write both forwards and backwards. |
+| [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator) | Specifies an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. |
+| [`forward_iterator`](iterator-concepts.md#forward_iterator) | Specifies an iterator that can read (and possibly write) multiple times. |
+| [`input_iterator`](iterator-concepts.md#input_iterator) | Specifies an iterator that you can read from at least once. |
+| [`input_or_output_iterator`](iterator-concepts.md#input_or_output_iterator) | The basis of the iterator concept taxonomy. |
+| [`output_iterator`](iterator-concepts.md#output_iterator) | Specifies an iterator that you can write to. |
+| [`random_access_iterator`]iterator-concepts.md(#random_access_iterator) | Specifies an iterator that can read and write by index. |
+| [`sentinel_for`](iterator-concepts.md#sentinel_for)<sup>C++20</sup> | JTW |
+| [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for)<sup>C++20</sup> | JTW |
 
 ### Classes
 
