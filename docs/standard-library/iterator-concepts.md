@@ -52,28 +52,26 @@ When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 ver
 
 Iterator concepts are defined in the `std` namespace as declared in the `<iterator>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
-There are six categories of iterators. They are directly related to the categories of ranges listed in [`<ranges>`](ranges.md#kinds-of-ranges). In order of increasing power, the categories are:
+There are six categories of iterators. They are directly related to the categories of ranges listed in [`<ranges>`](ranges.md#kinds-of-ranges). In order of increasing capability, the categories are:
 
 | Iterator concept | Description |
 |--|--|
-DONE | [`input_or_output_iterator`](#input_or_output_iterator) | The basis of the iterator concept taxonomy. |
-DONE | [`output_iterator`](#output_iterator) | Test for an iterator that you can write to. |
-DONE | [`input_iterator`](#input_iterator) | Test for an iterator that you can read from at least once. |
-DONE | [`forward_iterator`](#forward_iterator) | Test for an iterator that can read (and possibly write) multiple times. |
-DONE | [`bidirectional_iterator`](#bidirectional_iterator) | Test for an iterator that can read and write both forwards and backwards. |
-DONE | [`random_access_iterator`](#random_access_iterator) | Test for an iterator that can read and write by index. |
-DONE | [`contiguous_iterator`](#contiguous_iterator) | Test for an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. |
+DONE | [`input_or_output_iterator`](#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. |
+DONE | [`output_iterator`](#output_iterator)<sup>C++20</sup> | Test for an iterator that you can write to. |
+DONE | [`input_iterator`](#input_iterator)<sup>C++20</sup> | Test for an iterator that you can read from at least once. |
+DONE | [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Test for an iterator that can read (and possibly write) multiple times. |
+DONE | [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Test for an iterator that can read and write both forwards and backwards. |
+DONE | [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Test for an iterator that can read and write by index. |
+DONE | [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Test for an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. |
 
 An iterator that meets the requirements of a concept generally meets the requirements of the concepts in the rows that precede it. For example, a `random_access_iterator` has the capability of a `bidirectional_iterator`, `forward_iterator`, `input_iterator`, and `output_iterator`. An exception is `input_iterator` which doesn't have the capability of an `output_iterator` because it can't be written to.
 
-Here's a general summary of the capabilities of the iterators
-
 Other iterator concepts include:
 
-| Range concept | Description |
+| Iterator concept | Description |
 |--|--|
-| [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | JTW |
-| [`sized_sentinel_for`](#sized_sentinel_for)<sup>C++20</sup> | JTW |
+| [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | Test that a type is a sentinel for an iterator type. |
+| [`sized_sentinel_for`](#sized_sentinel_for)<sup>C++20</sup> | Specifies that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time. |
 
 ## `bidirectional_iterator`
 
@@ -335,6 +333,93 @@ The following example shows that a `vector` of `int` is a `random_access_iterato
 int main()
 {
     std::cout << std::boolalpha << std::random_access_iterator<std::vector<int>::iterator> << '\n'; // outputs "true"
+}    
+```
+
+## `sentinel_for`
+
+Test that a type is a sentinel for an iterator.
+
+```cpp
+template<class S, class I>
+concept sentinel_for =
+    semiregular<S> &&
+    input_or_output_iterator<I> &&
+    weakly-equality-comparable-with <S, I>;
+```
+
+### Parameters
+
+*`I`*\
+The iterator type.
+
+*`S`*\
+The sentinel type to test to see if it's a sentinel for `I`.
+
+### Remarks
+
+A sentinel is a type that can be compared to an iterator to determine if the iterator has reached the end. This concept determines if a type is a sentinel for one of the `input_or_output_iterator` types which includes `input_iterator`, `output_iterator`, `forward_iterator`, `bidirectional_iterator`, `random_access_iterator`, and `contiguous_iterator`.
+
+### Example: `sentinel_for`
+
+The following example shows that a `vector` of `int` is a `random_access_iterator`:
+
+```cpp
+// requires /std:c++20 or later
+#include <iostream>
+#include <vector>
+
+int main()
+{
+    std::vector<int> v = { 1, 2, 3, 4, 5 };
+    std::vector<int>::iterator i = v.begin();
+    // test if std::vector<int>::iterator is a sentinel for i
+    std::cout << std::boolalpha << std::sentinel_for<std::vector<int>::iterator, decltype(i)>; // outputs true
+}    
+```
+
+## `sized_sentinel_for`
+
+Test that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time.
+
+```cpp
+template<class S, class I>
+concept sized_sentinel_for =
+    sentinel_for<S, I> &&
+    !disable_sized_sentinel_for<remove_cv_t<S>, remove_cv_t<I>> &&
+    requires(const I& i, const S& s) {
+        {s - i} -> same_as<iter_difference_t<I>>;
+        {i - s} -> same_as<iter_difference_t<I>>;
+    };
+```
+
+### Parameters
+
+*`I`*\
+The iterator type.
+
+*`S`*\
+The sentinel type to test.
+
+### Remarks
+
+### Example: `sized_sentinel_for`
+
+The following example shows that a the sentinel for a `vector` can be subtracted from a vector iterator in constant time:
+
+```cpp
+// requires /std:c++20 or later
+#include <iostream>
+#include <vector>
+
+int main()
+{
+    std::vector<int> v = { 1, 2, 3, 4, 5 };
+    std::vector<int>::iterator i = v.begin();
+    std::vector<int>::iterator end = v.end();
+    // test if i can be subtracted from end in constant time
+    std::cout << std::boolalpha << std::sized_sentinel_for<decltype(end), decltype(i)>; << "\n"; // outputs true
+    std::cout << end - i; // output 5
 }    
 ```
 
