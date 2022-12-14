@@ -1,7 +1,7 @@
 ---
 title: "/permissive- (Standards conformance)"
 description: "Reference guide to the Microsoft C++ /permissive- (Standards conformance) compiler option."
-ms.date: 06/29/2022
+ms.date: 12/14/2022
 f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
 helpviewer_keywords: ["/permissive compiler options [C++]", "-permissive compiler options [C++]", "Standards conformance compiler options", "permissive compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
@@ -54,25 +54,37 @@ void func(int default); // Error C2321: 'default' is a keyword, and
 template <typename T>
 struct B {
     void f();
+    template <typename U>
+    struct S {};
 };
 
 template <typename T>
 struct D : public B<T> // B is a dependent base because its type
                        // depends on the type of T.
 {
-    // One possible fix is to uncomment the following line.
-    // If this is a type, don't forget the 'typename' keyword.
+    // One possible fix for member functions is to uncomment
+    // the following line:
     // using B<T>::f;
+    // If it's a type, don't forget the 'typename' keyword.
 
     void g() {
         f(); // error C3861: 'f': identifier not found
              // Another fix is to change it to 'this->f();'
+    }
+
+    void h() {
+        S<int> s; // C2065 'S': undeclared identifier
+        // Since template S is dependent, D::template S isn't enough.
+        // The type must be qualified with the `typename` keyword.
+        // To fix, replace the above with this uncommented line:
+        // typename D::template S<int> s;
     }
 };
 
 void h() {
     D<int> d;
     d.g();
+    d.h();
 }
 ```
 
