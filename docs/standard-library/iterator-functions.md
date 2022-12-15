@@ -236,7 +236,7 @@ int main()
 160 106 80 70 53 40 35 23 20 16 10 8 5 4 2 1
 ```
 
-The function `reverse_sort` supports containers of any kind, in addition to regular arrays, because it calls the non-member version of `begin()`. If `reverse_sort` were coded to use the container member `begin()`:
+The function `reverse_sort` supports containers of any kind, in addition to regular arrays, because it calls the non-member version of `begin()`. Coding `reverse_sort` to use the container member `begin()`:
 
 ```cpp
 template <typename C>
@@ -249,7 +249,7 @@ void reverse_sort(C& c) {
 }
 ```
 
-Then sending an array to it would cause this compiler error:
+Then sending an array to it, causes this compiler error:
 
 ```Output
 error C2228: left of '.begin' must have class/struct/union
@@ -1031,7 +1031,7 @@ The template function returns `next` decremented `off` times.
 
 ## <a name="rbegin"></a> `rbegin`
 
-Get an iterator which returns the elements of the container in reverse order.
+Get an iterator, which returns the elements of the container in reverse order.
 
 ```cpp
 template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());

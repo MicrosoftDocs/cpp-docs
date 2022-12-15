@@ -7,7 +7,7 @@ helpviewer_keywords: ["RANGES/VIEWS/std", "VIEWS/std"]
 ---
 # View classes
 
-A *view* is a lightweight range that refers to elements that it doesn't own (with the exception of [`owning_view`](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it, whether by transforming or filtering it. For example, [`std::views::filter`](filter-view-class.md) is a view that uses the criteria that you specify to select elements from another range.
+A *view* is a lightweight range that refers to elements that it doesn't own (except [`owning_view`](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it, whether by transforming or filtering it. For example, [`std::views::filter`](filter-view-class.md) is a view that uses the criteria that you specify to select elements from another range.
 
 When you access the elements in a view, it's done "lazily" so that work is done only when you get an element. This makes it possible to combine, or *compose*, views without a performance penalty.
 
@@ -157,9 +157,9 @@ In the **Characteristics** section of each view class topic, the iterator catego
 | [`random_access_range`](range-concepts.md#random_access_range) | Can access the collection with an index; multi-pass. |
 | [`contiguous_range`](range-concepts.md#contiguous_range) | Can access the collection with an index, and elements are stored contiguously in memory. |
 
-Generally speaking, an iterator has the capability of the iterators that precede it in the table. For example, [`bidirectional_range`](range-concepts.md#bidirectional_range) has the capabilities of [`forward_range`](range-concepts.md#forward_range), but not vice versa. An exception is `input_range` which doesn't have the capability of `output_range` because you can't write to an `input_range`.
+Generally speaking, an iterator has the capability of the iterators that precede it in the table. For example, [`bidirectional_range`](range-concepts.md#bidirectional_range) has the capabilities of [`forward_range`](range-concepts.md#forward_range), but not vice versa. Except `input_range`, which doesn't have the capability of `output_range` because you can't write to an `input_range`.
 
-The statement "requires `input_range` or higher" means that the view can be used with an `input_range`, `forward_range`, `bidirectional_range`, `random_access_range`, or `contiguous_range` iterator, because they are all as capable as `input_range`.
+The statement "requires `input_range` or higher" means that the view can be used with an `input_range`, `forward_range`, `bidirectional_range`, `random_access_range`, or `contiguous_range` iterator, because they're all as capable as `input_range`.
 
 The ranges iterator hierarchy is directly related to the iterator hierarchy. For more information, see [Iterator concepts](iterator-concepts.md).
 

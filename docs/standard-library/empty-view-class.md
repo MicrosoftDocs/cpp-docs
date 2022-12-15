@@ -82,7 +82,7 @@ inline constexpr empty_view<T> empty{};
 ### Parameters
 
 *`T`*\
- The type of the underlying element, of which there are none.
+ The type of the underlying element, of which there is none.
 
 ### Remarks
 

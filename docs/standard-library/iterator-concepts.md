@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ra
 ---
 # Iterator concepts
 
-Concepts are a C++20 language feature that constrain template parameters at compile time. They help prevent incorrect template instantiation, specify template argument requirements in a readable form, and provide more succinct template related compiler errors.
+Concepts are a C++20 language feature that constrains template parameters at compile time. They help prevent incorrect template instantiation, specify template argument requirements in a readable form, and provide more succinct template related compiler errors.
 
 Consider the following example, which defines a concept to prevent instantiating a template with a type that doesn't support division:
 
@@ -52,7 +52,7 @@ When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 ver
 
 Iterator concepts are defined in the `std` namespace as declared in the `<iterator>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
-There are six categories of iterators. They are directly related to the categories of ranges listed under [Range concepts](ranges.md#range-concepts).
+There are six categories of iterators. They're directly related to the categories of ranges listed under [Range concepts](ranges.md#range-concepts).
 
 The following iterator concepts are listed in order of increasing capability. `input_or_output_iterator` is at the low end of the capability hierarchy, and `contiguous_iterator` is at the high end. Iterators higher in the hierarchy can generally be used in place of those that are lower, but not vice-versa. For example, a `random_access_iterator` iterator can be used in place of a `forward_iterator`, but not the other way around. An exception is `input_iterator`, which can't be used in place of `output_iterator` because it can't write.
 
@@ -411,7 +411,7 @@ The type to test to see if it's a sentinel for `I`.
 
 ### Remarks
 
-A sentinel is a type that can be compared to an iterator to determine if the iterator has reached the end. This concept determines if a type is a sentinel for one of the `input_or_output_iterator` types which includes `input_iterator`, `output_iterator`, `forward_iterator`, `bidirectional_iterator`, `random_access_iterator`, and `contiguous_iterator`.
+A sentinel is a type that can be compared to an iterator to determine if the iterator has reached the end. This concept determines if a type is a sentinel for one of the `input_or_output_iterator` types, which includes `input_iterator`, `output_iterator`, `forward_iterator`, `bidirectional_iterator`, `random_access_iterator`, and `contiguous_iterator`.
 
 ### Example: `sentinel_for`
 

@@ -19,7 +19,7 @@ Defines predefined iterators and stream iterators, iterator primitives, and supp
 
 Iterators are a generalization of pointers that allow a C++ program to work with different data structures in a uniform way. Instead of operating on specific data types, algorithms operate on a range of values as specified by a kind of iterator. Algorithms can operate on any data structure that satisfies the requirements of the iterator.
 
-In C++20, there are 6 categories of iterators. Iterators are arranged in a hierarchy of capability. Their capabilities are specified by C++20 concepts. For a description of the various iterators and their capabilities, see [Iterator concepts](iterator-concepts.md)
+In C++20, there are six categories of iterators. Iterators are arranged in a hierarchy of capability. Their capabilities are specified by C++20 concepts. For a description of the various iterators and their capabilities, see [Iterator concepts](iterator-concepts.md)
 
 Visual Studio has added extensions to C++ Standard Library iterators to support debugging for checked and unchecked iterators. For more information, see [Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md).
 
