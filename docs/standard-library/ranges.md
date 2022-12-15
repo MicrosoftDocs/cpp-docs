@@ -116,7 +116,7 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 
 ### Kinds of ranges
 
-How you can iterate over the elements of a range depends on its underlying iterator type. The iterator type a range requires is specified as a C++20 concept.
+How you can iterate over the elements of a range depends on its underlying iterator type. Ranges use C++ concepts to specify the iterator they support.
 
 In C++20, to say that concept *X* refines concept *Y* means that everything that satisfies concept *Y* also satisfies concept *X*. For example: *car*, *bus*, and *truck* all refine *vehicle*.
 
