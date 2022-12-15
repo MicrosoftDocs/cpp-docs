@@ -89,12 +89,12 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 
 ## Concepts
 
-The following concepts are defined in the `std` namespace. They apply to iterators, and are related to the iterator categories for ranges described in [`<ranges>` concepts](range-concepts.md).
+The following concepts are defined in the `std` namespace. They apply to iterators, and are directly related to the iterator categories for ranges described in [`<ranges>` concepts](range-concepts.md).
 
 | Iterator concept | Description |
 |--|--|
 | [`bidirectional_iterator`](iterator-concepts.md#bidirectional_iterator)<sup>C++20</sup> | Specifies an iterator that can read and write both forwards and backwards. |
-| [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. |
+| [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, and can be accessed using pointer arithmetic. |
 | [`forward_iterator`](iterator-concepts.md#forward_iterator)<sup>C++20</sup> | Specifies an iterator that can read (and possibly write) multiple times. |
 | [`input_iterator`](iterator-concepts.md#input_iterator)<sup>C++20</sup> | Specifies an iterator that you can read from at least once. |
 | [`input_or_output_iterator`](iterator-concepts.md#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. |

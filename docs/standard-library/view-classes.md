@@ -130,7 +130,7 @@ Many of these classes have corresponding [range adaptors](range-adaptors.md) in 
 Each view class topic has a **Characteristics** section after the syntax section. The **Characteristics** section has the following entries:
 
 * **Range adaptor**: A link to the range adaptor that creates the view. You typically use a range adaptor to create a view rather than create a view class directly, so it's listed here for convenience.
-* **Underlying range**: Views have different iterator requirements for the kind of underlying range that they can use. See [ranges iterator hierarchy](#ranges_iterator_hierarchy) for more information about the kinds of iterators.
+* **Underlying range**: Views have different iterator requirements for the kind of underlying range that they can use. See [ranges iterator hierarchy](#ranges-iterator-hierarchy) for more information about the kinds of iterators.
 * **View iterator category**: The iterator category of the view. When a view adapts a range, the iterator type for the view is typically the same as the iterator type of the underlying range. However, it might be different for some views. For example, `reverse_view` has a `bidirectional_iterator`, even if the underlying range has a `random_access_iterator`.
 * **Element type**: The type of the elements that the view's iterator returns.
 * **Sized**: Whether the view can return the number of elements that it refers to. Not all views can.

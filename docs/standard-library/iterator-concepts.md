@@ -56,14 +56,18 @@ There are six categories of iterators. They're directly related to the categorie
 
 The following iterator concepts are listed in order of increasing capability. `input_or_output_iterator` is at the low end of the capability hierarchy, and `contiguous_iterator` is at the high end. Iterators higher in the hierarchy can generally be used in place of those that are lower, but not vice-versa. For example, a `random_access_iterator` iterator can be used in place of a `forward_iterator`, but not the other way around. An exception is `input_iterator`, which can't be used in place of `output_iterator` because it can't write.
 
-| Iterator concept | Description | Direction | Read/write | Multi-pass | Example types that use this iterator |
+In the following table, "Multi-pass" refers to whether the iterator can revisit the same element more than once. For example, `vector::iterator` is a multi-pass iterator because you can make a copy of the iterator, read the elements in the collection, and then restore the iterator to the value in the copy, and revisit the same elements again. If an iterator is single-pass, you can only visit the elements in the collection once.
+
+In the following table, "Types" refers to the types of collections/iterators that satisfy the concept.
+
+| Iterator concept | Description | Direction | Read/write | Multi-pass | Types |
 |--|--|--|--|--|--|
-| [`input_or_output_iterator`](#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. | Forward | Read or write | no | `std::istream_iterator`, `std::ostream_iterator` |
+| [`input_or_output_iterator`](#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. | Forward | Read/write | no | `istream_iterator`, `ostream_iterator` |
 | [`output_iterator`](#output_iterator)<sup>C++20</sup> | Test for an iterator that you can write to. | Forward | Write | no | `ostream`, `inserter` |
 | [`input_iterator`](#input_iterator)<sup>C++20</sup> | Test for an iterator that you can read from at least once. | Forward | Read | no | `istream`, `istreambuf_iterator` |
-| [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Test for an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector::iterator`, `list::iterator` |
+| [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Test for an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector`, `list` |
 | [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Test for an iterator that can read and write both forwards and backwards. | Forward/backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
-| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Test for an iterator that can read and write by index. | Forward/Backward | Read/write | yes | `vector::iterator`, `array::iterator`, `deque::iterator` |
+| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Test for an iterator that can read and write by index. | Forward/Backward | Read/write | yes | `vector`, `array`, `deque` |
 | [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Test for an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. | Forward/backward | Read/write | yes | `array`, `vector` `string`.|
 
 Other iterator concepts include:
@@ -97,7 +101,7 @@ The iterator to test to see if it's a `bidirectional_iterator`.
 
 A `bidirectional_iterator` has the capabilities of a `forward_iterator`, but can also iterate backwards.
 
-Some examples of containers that can be used with a `bidirectional_iterator` are `std::set`, `std::vector`, and `std::list`.
+Some examples of containers that can be used with a `bidirectional_iterator` are `set`, `vector`, and `list`.
 
 ### Example: `bidirectional_iterator`
 
@@ -139,13 +143,9 @@ template<class I>
 *`I`*\
 The type to test to see if it's a `contiguous_iterator`.
 
-The elements of a `contiguous_iterator` are stored sequentially in memory and can be accessed using pointer arithmetic. A `std::array` has a `contiguous_iterator`.
-
 ### Remarks
 
-A `contiguous_iterator` can be accessed by pointer arithmetic because the elements are laid out sequentially in memory and are the same size.
-
-Some examples of a `contiguous_iterator` are `std::array`, `std::vector`, and `std::string`.
+A `contiguous_iterator` can be accessed by pointer arithmetic because the elements are laid out sequentially in memory and are the same size. Some examples of a `contiguous_iterator` are `array`, `vector`, and `string`.
 
 ### Example: `contiguous_iterator`
 
@@ -189,7 +189,7 @@ The iterator to test to see if it's a `forward_iterator`.
 
 A `forward_iterator` can only move forward.
 
-Some examples of containers that can be used with a `forward_iterator` are `std::unordered_set`, `std::unordered_multiset`, `std::unordered_map`, and `std::unordered_multimap`.
+Some examples of containers that can be used with a `forward_iterator` are `unordered_set`, `unordered_multiset`, `unordered_map`, and `unordered_multimap`.
 
 ### Example: `forward_iterator`
 
@@ -231,9 +231,7 @@ The type to test to see if it's an `input_iterator`.
 
 ### Remarks
 
-When a type meets the requirements of `input_iterator`:
-
-- Calling `begin()` more than once on an `input_iterator` results in undefined behavior. This implies that if a type only models `input_iterator`, it isn't multi-pass and can read an element only once. Consider reading from standard input (`cin`) for example. In this case, you can only read the current element once and you can't re-read characters you've already read. You can only read an `input_iterator` forward, not backwards.
+Calling `begin()` on an `input_iterator` more than once results in undefined behavior. This implies that if a type only models `input_iterator`, it isn't multi-pass and can read an element only once. Consider reading from standard input (`cin`) for example. In this case, you can only read the current element once and you can't re-read characters you've already read. An `input_iterator` only reads forward, not backwards.
 
 ### Example: `input_iterator`
 
@@ -368,7 +366,7 @@ The type to test to see if it's a `random_access_iterator`.
 
 A `random_access_iterator` has the capabilities of an `input_iterator`, `output_iterator`, `forward_iterator`, and `bidirectional_iterator`.
 
-Some examples of a `random_access_iterator` are `std::vector`, `std::array`, and `std::deque`.
+Some examples of a `random_access_iterator` are `vector`, `array`, and `deque`.
 
 ### Example: `random_access_iterator`
 
@@ -416,7 +414,7 @@ A sentinel is a type that can be compared to an iterator to determine if the ite
 
 ### Example: `sentinel_for`
 
-The following example uses the `sentinel_for` concept to show that `std::vector<int>::iterator` is a sentinel for `vector<int>`:
+The following example uses the `sentinel_for` concept to show that `vector<int>::iterator` is a sentinel for `vector<int>`:
 
 ```cpp
 // requires /std:c++20 or later
@@ -434,7 +432,7 @@ int main()
 
 ## `sized_sentinel_for`
 
-Test that an iterator and its sentinel can be subtracted (using `-`) to find the difference in constant time.
+Test that an iterator and its sentinel can be subtracted using `-` to find the difference, in constant time.
 
 ```cpp
 template<class S, class I>
