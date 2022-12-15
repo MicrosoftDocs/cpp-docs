@@ -17,7 +17,7 @@ The **`/Zc:tlsGuards`** compiler option generates runtime checks for thread loca
 
 The **`/Zc:tlsGuards`** compiler option enables checks for initialization of thread-local variables in DLLs. Previously, thread-local variables in DLLs weren't correctly initialized. Other than on the thread that loaded the DLL, they weren't initialized before first use on threads that existed before the DLL was loaded. The **`/Zc:tlsGuards`** option enables code that corrects this defect. Thread-local variables in such a DLL get initialized immediately before their first use on such threads.
 
-The **`/Zc:tlsGuards`** option is new in Visual Studio 2019 version 16.5. This option is on by default in all compiler modes. The new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler option. To disable checks for specific thread-local variables, use the [`[[msvc:no_tls_guard]]`](../../cpp/attributes.md) attribute.
+The **`/Zc:tlsGuards`** option is new in Visual Studio 2019 version 16.5. This option is on by default in all compiler modes. The new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler option. To disable checks for specific thread-local variables, use the [`[[msvc::no_tls_guard]]`](../../cpp/attributes.md) attribute.
 
 ### To set this compiler option in Visual Studio
 
