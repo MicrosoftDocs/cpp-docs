@@ -336,6 +336,7 @@ int main()
     std::vector<int> v = { 0,1,2,3,4,5 };
     std::cout << std::boolalpha << std::output_iterator<decltype(v)::iterator, int>; // outputs true
 }
+```
 
 ## `random_access_iterator`
 
