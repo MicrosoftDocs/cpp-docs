@@ -52,14 +52,12 @@ When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 ver
 
 Range concepts are defined in the `std::ranges` namespace as declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
-There are six categories of ranges. They are related to the categories of iterators listed in [`<iterator> concepts](iterator-concepts.md).
-
-In order of increasing capability, the categories are:
+There are six categories of ranges. They are related to the categories of iterators listed in [`<iterator>` concepts](iterator-concepts.md). In order of increasing capability, the categories are:
 
 | Range concept | Description |
 |--|--|
-| [`output_range`](#output_range) | Specifies a range that you can write to. JTW It supports [output_iterator](iterators.md# JTW) Repeat this pattern for the entries below. |
-| [`input_range`](#input_range) | Specifies a range that you can read from at least once. |
+| [`output_range`](#output_range) | Specifies a range that you can write to. |
+| [`input_range`](#input_range) | Specifies a range that you can read from at least once.|
 | [`forward_range`](#forward_range) | Specifies a range that can read (and possibly write) multiple times. |
 | [`bidirectional_range`](#bidirectional_range) | Specifies a range that can read and write both forwards and backwards. |
 | [`random_access_range`](#random_access_range) | Specifies a range that can read and write by index. |
@@ -96,6 +94,7 @@ The type to test to see if it's a `bidirectional_range`.
 
 ### Remarks
 
+This kind of range supports [`bidirectional_iterator`](iterator-concepts.md#bidirectional_iterator) or above.
 A `bidirectional_iterator` has the capabilities of a `forward_iterator`, but can also iterate backwards.
 
 Some examples of a `bidirectional_range` are `std::set`, `std::vector`, and `std::list`.
@@ -155,7 +154,7 @@ The type to test to see if it's a `contiguous_range`.
 
 ### Remarks
 
-A `contiguous_range` can be accessed by pointer arithmetic because the elements are laid out sequentially in memory and are the same size.
+A `contiguous_range` can be accessed by pointer arithmetic because the elements are laid out sequentially in memory and are the same size. This kind of range supports [`continguous_iterator`](iterator-concepts.md#contiguous_iterator) which is the most flexible of all the iterators.
 
 Some examples of a `contiguous_range` are `std::array`, `std::vector`, and `std::string`.
 
@@ -203,7 +202,7 @@ The type to test to see if it's a `forward_range`.
 
 ### Remarks
 
-A `forward_iterator` can iterate over a range multiple times.
+This kind of range supports [`forward_iterator`](iterator-concepts.md#forward_iterator) or above. A `forward_iterator` can iterate over a range multiple times.
 
 ## `input_range`
 
@@ -226,7 +225,7 @@ When a type meets the requirements of `input_range`:
 - The `ranges::begin()` function returns an `input_iterator`. Calling `begin()` more than once on an `input_range` results in undefined behavior.
 - You can dereference an `input_iterator` repeatedly, which yields the same value each time. An `input_range` isn't multi-pass. Incrementing an iterator invalidates any copies.
 - It can be used with `ranges::for_each`.
-- It *at least* has an `input_iterator`. It may have a more capable iterator type.
+- It supports [`input_iterator`](iterator-concepts.md#input_iterator) or above.
 
 ## `output_range`
 
@@ -247,7 +246,7 @@ The type of the data to write to the range.
 
 ### Remarks
 
-The meaning of `output_iterator<iterator_t<R>, T>` is that the type provides an iterator that can write values of type `T` to a range of type `R`.
+The meaning of `output_iterator<iterator_t<R>, T>` is that the type provides an iterator that can write values of type `T` to a range of type `R`. In other words, it supports [`output_iterator`](iterator-concepts.md#output_iterator) or above.
 
 ## `random_access_range`
 
@@ -266,7 +265,7 @@ The type to test to see if it's a `sized_range`.
 
 ### Remarks
 
-A `random_access_range` is the most flexible iterator. It has the capabilities of an `input_range`, `output_range`, `forward_range`, and `bidirectional_range`. A `random_access_range` is also sortable.
+This kind of range supports [`random_access_iterator`](iterator-concepts.md#random_access_iterator) or above. A `random_access_range` has the capabilities of an `input_range`, `output_range`, `forward_range`, and `bidirectional_range`. A `random_access_range` is sortable.
 
 Some examples of a `random_access_range` are `std::vector`, `std::array`, and `std::deque`.
 

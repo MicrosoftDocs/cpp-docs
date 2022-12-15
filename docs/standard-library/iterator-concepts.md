@@ -1,7 +1,7 @@
 ---
 description: "Learn more about iterator concepts."
 title: "Iterator concepts"
-ms.date: 12/05/2022
+ms.date: 12/15/2022
 f1_keywords: ["ranges/std::ranges::range", "ranges/std::ranges::bidirectional_iterator", "ranges/std::ranges::borrowed_iterator", "ranges/std::ranges::common_iterator", "ranges/std::ranges::contiguous_iterator", "ranges/std::ranges::forward_iterator", "ranges/std::ranges::input_iterator", "ranges/std::ranges::output_iterator", "ranges/std::ranges::random_access_iterator", "ranges/std::ranges::simple_view", "ranges/std::ranges::sized_iterator", "ranges/std::ranges::view", "ranges/std::ranges::viewable_iterator"]
 helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ranges::bidirectional_iterator", "std::ranges [C++], ranges::borrowed_iterator", "std::ranges [C++], ranges::common_iterator", "std::ranges [C++], ranges::contiguous_iterator", "std::ranges [C++], ranges::forward_iterator", "std::ranges [C++], ranges::input_iterator", "std::ranges [C++], ranges::output_iterator", "std::ranges [C++], ranges::random_access_iterator", "std::ranges [C++], ranges::simple_view", "std::ranges [C++], ranges::sized_iterator", "std::ranges [C++], ranges::view", "std::ranges [C++], ranges::viewable_iterator"]
 ---
@@ -52,28 +52,26 @@ When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 ver
 
 Iterator concepts are defined in the `std` namespace as declared in the `<iterator>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
-There are six categories of iterators. They are directly related to the categories of ranges listed in [`<ranges>`](ranges.md#kinds-of-ranges).
+There are six categories of iterators. They are directly related to the categories of ranges listed under [Range concepts](ranges.md#range-concepts).
 
-The following iterator concepts are listed in order of increasing capability. `input_or_output_iterator` is at the low end of the capability hierarchy, and `contiguous_iterator` is at the high end. Iterators higher in the hierarchy can generally be used in place of those that are lower, but not vice-versa. For example, a `random_access_iterator` iterator can be used in place of a `forward_iterator`, but not the other way around. An exception to the rule that iterators higher in the hierarchy can generally be used in place of those that are lower is `input_iterator`, which can't be used in place of `output_iterator` because it can't write.
+The following iterator concepts are listed in order of increasing capability. `input_or_output_iterator` is at the low end of the capability hierarchy, and `contiguous_iterator` is at the high end. Iterators higher in the hierarchy can generally be used in place of those that are lower, but not vice-versa. For example, a `random_access_iterator` iterator can be used in place of a `forward_iterator`, but not the other way around. An exception is `input_iterator`, which can't be used in place of `output_iterator` because it can't write.
 
 | Iterator concept | Description | Direction | Read/write | Multi-pass | Example types that use this iterator |
 |--|--|--|--|--|--|
-| [`input_or_output_iterator`](#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. | Forward | Read or write | Single-pass | `std::istream_iterator`, `std::ostream_iterator` |
-| [`output_iterator`](#output_iterator)<sup>C++20</sup> | Test for an iterator that you can write to. | Forward | Write | Single-pass | `ostream`, `inserter` |
-| [`input_iterator`](#input_iterator)<sup>C++20</sup> | Test for an iterator that you can read from at least once. | Forward | Read | Single-pass | `istream`, `istreambuf_iterator` |
-| [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Test for an iterator that can read (and possibly write) multiple times. | Forward | Read/write | Multi-pass | `vector::iterator`, `list::iterator` |
-| [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Test for an iterator that can read and write both forwards and backwards. | Forward/Backward | Read/write | Multi-pass | `list`, `set`, `multiset`, `map`, and `multimap`. |
-| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Test for an iterator that can read and write by index. | Read/write | Multi-pass | `vector::iterator`, `array::iterator` |
-| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Test for an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. | Read/write | Multi-pass | `array`, `vector` |
-
-An iterator that meets the requirements of a concept generally meets the requirements of the concepts in the rows that precede it in the previous table. For example, a `random_access_iterator` has the capability of a `bidirectional_iterator`, `forward_iterator`, `input_iterator`, and `output_iterator`. An exception is `input_iterator` which doesn't have the capability of an `output_iterator` because it can't be written to.
+| [`input_or_output_iterator`](#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. | Forward | Read or write | no | `std::istream_iterator`, `std::ostream_iterator` |
+| [`output_iterator`](#output_iterator)<sup>C++20</sup> | Test for an iterator that you can write to. | Forward | Write | no | `ostream`, `inserter` |
+| [`input_iterator`](#input_iterator)<sup>C++20</sup> | Test for an iterator that you can read from at least once. | Forward | Read | no | `istream`, `istreambuf_iterator` |
+| [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Test for an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector::iterator`, `list::iterator` |
+| [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Test for an iterator that can read and write both forwards and backwards. | Forward/backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
+| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Test for an iterator that can read and write by index. | Forward/Backward | Read/write | yes | `vector::iterator`, `array::iterator`, `deque::iterator` |
+| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Test for an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. | Forward/backward | Read/write | yes | `array`, `vector` `string`.|
 
 Other iterator concepts include:
 
 | Iterator concept | Description |
 |--|--|
-DONE | [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | Test that a type is a sentinel for an iterator type. |
-DONE | [`sized_sentinel_for`](#sized_sentinel_for)<sup>C++20</sup> | Specifies that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time. |
+| [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | Test that a type is a sentinel for an iterator type. |
+| [`sized_sentinel_for`](#sized_sentinel_for)<sup>C++20</sup> | Specifies that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time. |
 
 ## `bidirectional_iterator`
 
@@ -103,7 +101,7 @@ Some examples of containers that can be used with a `bidirectional_iterator` are
 
 ### Example: `bidirectional_iterator`
 
-The following example shows that a `vector` of `int` has a `bidirectional_iterator`:
+The following example uses the `bidirectional_iterator` concept to show that `vector<int>` has a `bidirectional_iterator`:
 
 ```cpp
 // requires /std:c++20 or later
@@ -113,6 +111,10 @@ The following example shows that a `vector` of `int` has a `bidirectional_iterat
 int main()
 {
     std::cout << std::boolalpha << std::bidirectional_iterator<std::vector<int>::iterator> << '\n'; // outputs "true"
+
+    // another way to test
+    std::vector<int> v = {0,1,2};
+    std::cout << std::boolalpha << std::contiguous_iterator<decltype(v)::iterator>; // outputs true
 }
 ```
 
@@ -137,7 +139,7 @@ template<class I>
 *`I`*\
 The type to test to see if it's a `contiguous_iterator`.
 
-The elements of a `contiguous_iterator` are stored sequentially in memory and can be accessed using pointer arithmetic. For example, an array iterator is a `contiguous_iterator`.
+The elements of a `contiguous_iterator` are stored sequentially in memory and can be accessed using pointer arithmetic. A `std::array` has a `contiguous_iterator`.
 
 ### Remarks
 
@@ -147,7 +149,7 @@ Some examples of a `contiguous_iterator` are `std::array`, `std::vector`, and `s
 
 ### Example: `contiguous_iterator`
 
-The following example shows that a vector is a `contiguous_iterator`:
+The following example uses the `contiguous_iterator` concept to show that a `vector<int>` has a `contiguous_iterator`:
 
 ```cpp
 // requires /std:c++20 or later
@@ -156,8 +158,11 @@ The following example shows that a vector is a `contiguous_iterator`:
 
 int main()
 {
-    // Show that vector has a contiguous_iterator
-    std::vector<int> v = {0,1,2,3,4,5};
+    // Show that vector<int> has a contiguous_iterator
+    std::cout << std::boolalpha << std::contiguous_iterator<std::vector<int>::iterator> << '\n'; // outputs "true"
+    
+    // another way to test
+    std::vector<int> v = {0,1,2};
     std::cout << std::boolalpha << std::contiguous_iterator<decltype(v)::iterator>; // outputs true
 }
 ```
@@ -188,7 +193,7 @@ Some examples of containers that can be used with a `forward_iterator` are `std:
 
 ### Example: `forward_iterator`
 
-The following example shows that an `unordered_set` has a `forward_iterator`:
+The following example uses the `forward_iterator` concept to show that a `vector<int>` has a `forward_iterator`:
 
 ```cpp
 // requires /std:c++20 or later
@@ -198,7 +203,10 @@ The following example shows that an `unordered_set` has a `forward_iterator`:
 int main()
 {
     // Show that vector has a forward_iterator
-    std::vector<int> v = {0,1,2,3,4,5};
+    std::cout << std::boolalpha << std::forward_iterator<std::vector<int>::iterator> << '\n'; // outputs "true"
+
+    // another way to test
+    std::vector<int> v = {0,1,2};
     std::cout << std::boolalpha << std::forward_iterator<decltype(v)::iterator>; // outputs true
 }
 ```
@@ -229,23 +237,23 @@ When a type meets the requirements of `input_iterator`:
 
 ### Example: `input_iterator`
 
-The following example shows that an `istream_iterator` is an `input_iterator`:
+The following example uses the `input_iterator` concept to show that an `istream_iterator` has an `input_iterator`:
 
 ```cpp
 // requires /std:c++20 or later
 #include <iostream>
-#include <vector>
 
 int main()
 {
+    // Show that a istream_iterator has an input_iterator
     std::cout << std::boolalpha << std::input_iterator<std::istream_iterator<int>>; // outputs true
 }
 ```
 
 ## `input_or_output_iterator`
 
-An `input_or_output_iterator` is the basis of the iterator concept taxonomy and supports dereferencing and incrementing
-an iterator. Every iterator models `input_or_output_iterator`, at a minimum.
+An `input_or_output_iterator` is the basis of the iterator concept taxonomy. It supports dereferencing and incrementing
+an iterator. Every iterator models `input_or_output_iterator`.
 
 ```cpp
 template<class I>
@@ -259,11 +267,30 @@ concept input_or_output_iterator =
 ### Parameters
 
 *`I`*\
-The type to test to see if it's an `input_iterator`.
+The type to test to see if it's an `input_or_output_iterator`.
 
 ### Remarks
 
 The concept `can-reference` means that the type `I` is a reference, a pointer, or a type that can be implicitly converted to a reference.
+
+### Example: `input_or_output_iterator`
+
+The following example uses the `input_or_output_iterator` concept to show that `vector<int>` has an `input_or_output_iterator`:
+
+```cpp
+// requires /std:c++20 or later
+#include <iostream>
+
+int main()
+{
+    // Show that a vector has an input_or_output_iterator
+    std::cout << std::boolalpha << std::input_or_output_iterator<std::vector<int>::iterator> << '\n'; // outputs true
+
+    // another way to test
+    std::vector<int> v = {0,1,2};
+    std::cout << std::boolalpha << std::input_or_output_iterator<decltype(v)::iterator>; // outputs true
+}
+```
 
 ## `output_iterator`
 
@@ -290,6 +317,25 @@ The type of the values to write.
 ### Remarks
 
 An `output_iterator` is single pass. That is, it can only write to the same element once.
+
+### Example: `output_iterator`
+
+The following example uses the `output_iterator` concept to show that `vector<int>` has an `output_iterator`:
+
+```cpp
+// requires /std:c++20 or later
+#include <iostream>
+#include <vector>
+
+int main()
+{
+    // Show that vector<int> has an output_iterator
+    std::cout << std::boolalpha << std::output_iterator<std::vector<int>::iterator, int> << "\n"; // outputs "true"
+
+    // another way to test
+    std::vector<int> v = { 0,1,2,3,4,5 };
+    std::cout << std::boolalpha << std::output_iterator<decltype(v)::iterator, int>; // outputs true
+}
 
 ## `random_access_iterator`
 
@@ -319,13 +365,13 @@ The type to test to see if it's a `random_access_iterator`.
 
 ### Remarks
 
-A `random_access_iterator` is the most flexible iterator. It has the capabilities of an `input_iterator`, `output_iterator`, `forward_iterator`, and `bidirectional_iterator`.
+A `random_access_iterator` has the capabilities of an `input_iterator`, `output_iterator`, `forward_iterator`, and `bidirectional_iterator`.
 
 Some examples of a `random_access_iterator` are `std::vector`, `std::array`, and `std::deque`.
 
 ### Example: `random_access_iterator`
 
-The following example shows that a `vector` of `int` is a `random_access_iterator`:
+The following example shows that a `vector<int>` has a `random_access_iterator`:
 
 ```cpp
 // requires /std:c++20 or later
@@ -334,7 +380,12 @@ The following example shows that a `vector` of `int` is a `random_access_iterato
 
 int main()
 {
+    // Show that vector<int> has a random_access_iterator
     std::cout << std::boolalpha << std::random_access_iterator<std::vector<int>::iterator> << '\n'; // outputs "true"
+
+    // another way to test
+    std::vector<int> v = {0,1,2};
+    std::cout << std::boolalpha << std::random_access_iterator<decltype(v)::iterator>; // outputs true
 }    
 ```
 
@@ -356,7 +407,7 @@ concept sentinel_for =
 The iterator type.
 
 *`S`*\
-The sentinel type to test to see if it's a sentinel for `I`.
+The type to test to see if it's a sentinel for `I`.
 
 ### Remarks
 
@@ -364,7 +415,7 @@ A sentinel is a type that can be compared to an iterator to determine if the ite
 
 ### Example: `sentinel_for`
 
-The following example shows that a `vector` of `int` is a `random_access_iterator`:
+The following example uses the `sentinel_for` concept to show that `std::vector<int>::iterator` is a sentinel for `vector<int>`:
 
 ```cpp
 // requires /std:c++20 or later
@@ -373,16 +424,16 @@ The following example shows that a `vector` of `int` is a `random_access_iterato
 
 int main()
 {
-    std::vector<int> v = { 1, 2, 3, 4, 5 };
+    std::vector<int> v = {0, 1, 2};
     std::vector<int>::iterator i = v.begin();
-    // test if std::vector<int>::iterator is a sentinel for i
+    // show that vector<int>::iterator is a sentinel for vector<int>
     std::cout << std::boolalpha << std::sentinel_for<std::vector<int>::iterator, decltype(i)>; // outputs true
 }    
 ```
 
 ## `sized_sentinel_for`
 
-Test that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time.
+Test that an iterator and its sentinel can be subtracted (using `-`) to find the difference in constant time.
 
 ```cpp
 template<class S, class I>
@@ -407,7 +458,7 @@ The sentinel type to test.
 
 ### Example: `sized_sentinel_for`
 
-The following example shows that a the sentinel for a `vector` can be subtracted from a vector iterator in constant time:
+The following example uses the `sized_sentinel_for` concept to verify that the sentinel for a `vector<int>` can be subtracted from the vectors iterator in constant time:
 
 ```cpp
 // requires /std:c++20 or later
@@ -416,12 +467,12 @@ The following example shows that a the sentinel for a `vector` can be subtracted
 
 int main()
 {
-    std::vector<int> v = { 1, 2, 3, 4, 5 };
+    std::vector<int> v = { 1, 2, 3 };
     std::vector<int>::iterator i = v.begin();
     std::vector<int>::iterator end = v.end();
-    // test if i can be subtracted from end in constant time
-    std::cout << std::boolalpha << std::sized_sentinel_for<decltype(end), decltype(i)>; << "\n"; // outputs true
-    std::cout << end - i; // output 5
+    // use the sized_sentinel_for concept to verify that i can be subtracted from end in constant time
+    std::cout << std::boolalpha << std::sized_sentinel_for<decltype(end), decltype(i)> << "\n"; // outputs true
+    std::cout << end - i; // outputs 3
 }    
 ```
 

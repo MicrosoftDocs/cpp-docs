@@ -161,6 +161,8 @@ Generally speaking, an iterator has the capability of the iterators that precede
 
 The statement "requires `input_range` or higher" means that the view can be used with an `input_range`, `forward_range`, `bidirectional_range`, `random_access_range`, or `contiguous_range` iterator, because they are all as capable as `input_range`.
 
+The ranges iterator hierarchy is directly related to the iterator hierarchy. For more information, see [Iterator concepts](iterator-concepts.md).
+
 ## See also
 
 [`<ranges>`](ranges.md)\

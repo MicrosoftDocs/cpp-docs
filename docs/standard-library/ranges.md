@@ -114,17 +114,17 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 | [`size`](range-functions.md#size)<sup>C++20</sup> | Get the size of the range as an unsigned value. |
 | [`ssize`](range-functions.md#ssize)<sup>C++20</sup> | Get the size of the range as a signed value. |
 
-### Kinds of ranges
+### Range concepts
 
-How you can iterate over the elements of a range depends on its underlying iterator type. Ranges use C++ concepts to specify the iterator they support.
+How you iterate over the elements of a range depends on its underlying iterator type. Ranges use C++ concepts to specify the iterator they support.
 
 In C++20, to say that concept *X* refines concept *Y* means that everything that satisfies concept *Y* also satisfies concept *X*. For example: *car*, *bus*, and *truck* all refine *vehicle*.
 
-Some of the range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to. The order 
+Some of the range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to.
 
 | Range concept | Description | Supported containers |
 |--|--|--|
-| `std::ranges::output_range` | Can iterate forward. JTW |
+| `std::ranges::output_range` | Can iterate forward. |
 | `std::ranges::input_range` | Can iterate from beginning to end at least once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` |
 | `std::ranges::forward_range` | Can iterate from beginning to end more than once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset` |
 | `std::ranges::bidirectional_range` | Can iterate forward and backward more than once. | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|
