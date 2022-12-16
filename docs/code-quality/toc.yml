@@ -607,6 +607,10 @@ items:
     href: ../code-quality/c26829.md
   - name: Warning C26830
     href: ../code-quality/c26830.md
+  - name: Warning C26859
+    href: ../code-quality/c26859.md
+  - name: Warning C26860
+    href: ../code-quality/c26860.md
   - name: Warning C28020
     href: ../code-quality/c28020.md
   - name: Warning C28021
