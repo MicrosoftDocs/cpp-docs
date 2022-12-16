@@ -48,7 +48,7 @@ int main()
 }
 ```
 
-When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4p4 or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
+When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4 or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
 
 Range concepts are defined in the `std::ranges` namespace as declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
