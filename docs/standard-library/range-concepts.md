@@ -65,6 +65,8 @@ There are six categories of ranges. They're related to the categories of iterato
 
 In the preceding table, concepts are listed in order of increasing capability. A range that meets the requirements of a concept generally meets the requirements of the concepts in the rows that precede it. For example, a `random_access_range` has the capability of a `bidirectional_range`, `forward_range`, `input_range`, and `output_range`. Except `input_range`, which doesn't have the capability of an `output_range` because it can't be written to.
 
+:::image type="content" source="media/ranges-iterator-hiearchy.svg" alt-text="Diagram of the ranges iterator hierarchy. input_range and output_range are the base. forward_range is next and refines both input_range and output_range. bidirectional_range refines forward_range. random_access_range refines bidirectional_range. Finally, contiguous_range refines random_access_range":::
+
 Other range concepts include:
 
 | Range concept | Description |
@@ -95,7 +97,7 @@ The type to test to see if it's a `bidirectional_range`.
 ### Remarks
 
 This kind of range supports [`bidirectional_iterator`](iterator-concepts.md#bidirectional_iterator) or greater.
-A `bidirectional_iterator` has the capabilities of a `forward_iterator`, but can also iterate backwards.
+A `bidirectional_iterator` has the capabilities of a [`forward_iterator`](iterator-concepts.md#forward_iterator), but can also iterate backwards.
 
 Some examples of a `bidirectional_range` are `std::set`, `std::vector`, and `std::list`.
 
@@ -222,10 +224,10 @@ The type to test to see if it's an `input_range`.
 
 When a type meets the requirements of `input_range`:
 
-- The `ranges::begin()` function returns an `input_iterator`. Calling `begin()` more than once on an `input_range` results in undefined behavior.
+- The `ranges::begin()` function returns an [`input_iterator`](iterator-concepts.md#input_iterator). Calling `begin()` more than once on an `input_range` results in undefined behavior.
 - You can dereference an `input_iterator` repeatedly, which yields the same value each time. An `input_range` isn't multi-pass. Incrementing an iterator invalidates any copies.
 - It can be used with `ranges::for_each`.
-- It supports [`input_iterator`](iterator-concepts.md#input_iterator) or greater.
+- It supports `input_iterator` or greater.
 
 ## `output_range`
 

@@ -268,7 +268,7 @@ An iterator to the element in the range to start with. The element that the iter
 
 ### Return value
 
-A [`span`](span-class.md) is returned if `it` is a `contiguous_iterator` for arrays, vectors, and other containers that store their elements contiguously. Otherwise, a [`subrange`](subrange-class.md) is returned.
+A [`span`](span-class.md) is returned if `it` is a [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator) for arrays, vectors, and other containers that store their elements contiguously. Otherwise, a [`subrange`](subrange-class.md) is returned.
 
 ### Remarks
 
