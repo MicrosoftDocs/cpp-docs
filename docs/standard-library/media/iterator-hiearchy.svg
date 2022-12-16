@@ -64,7 +64,7 @@
 			<v:textRect cx="86.4" cy="589.5" width="172.8" height="72"/>
 			<rect x="0" y="553.5" width="172.8" height="72" class="st1"/>
 			<text x="41.8" y="593.7" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>output_iterator</text>		</g>
-		<g id="shape5-14" v:mID="5" v:groupContext="shape" transform="translate(108,-330.3)">
+		<g id="shape5-14" v:mID="5" v:groupContext="shape" transform="translate(102.6,-330.3)">
 			<title>Rectangle.5</title>
 			<desc>forward_iterator</desc>
 			<v:userDefs>
@@ -74,7 +74,7 @@
 			<v:textRect cx="86.4" cy="589.5" width="172.8" height="72"/>
 			<rect x="0" y="553.5" width="172.8" height="72" class="st1"/>
 			<text x="38.47" y="593.7" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>forward_iterator</text>		</g>
-		<g id="shape6-18" v:mID="6" v:groupContext="shape" transform="translate(108,-6.3)">
+		<g id="shape6-18" v:mID="6" v:groupContext="shape" transform="translate(102.6,-6.75)">
 			<title>Rectangle.6</title>
 			<desc>contiguous_iterator</desc>
 			<v:userDefs>
@@ -84,7 +84,7 @@
 			<v:textRect cx="86.4" cy="589.5" width="172.8" height="72"/>
 			<rect x="0" y="553.5" width="172.8" height="72" class="st1"/>
 			<text x="29.85" y="593.7" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>contiguous_iterator</text>		</g>
-		<g id="shape7-22" v:mID="7" v:groupContext="shape" transform="translate(108,-114.3)">
+		<g id="shape7-22" v:mID="7" v:groupContext="shape" transform="translate(102.6,-114.6)">
 			<title>Rectangle.7</title>
 			<desc>random_access_iterator</desc>
 			<v:userDefs>
@@ -94,7 +94,7 @@
 			<v:textRect cx="86.4" cy="589.5" width="172.8" height="72"/>
 			<rect x="0" y="553.5" width="172.8" height="72" class="st1"/>
 			<text x="17.06" y="593.7" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>random_access_iterator</text>		</g>
-		<g id="shape8-26" v:mID="8" v:groupContext="shape" transform="translate(108,-222.3)">
+		<g id="shape8-26" v:mID="8" v:groupContext="shape" transform="translate(102.6,-222.45)">
 			<title>Rectangle.8</title>
 			<desc>bidirectional_iterator</desc>
 			<v:userDefs>
@@ -104,71 +104,62 @@
 			<v:textRect cx="86.4" cy="589.5" width="172.8" height="72"/>
 			<rect x="0" y="553.5" width="172.8" height="72" class="st1"/>
 			<text x="25.48" y="593.7" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>bidirectional_iterator</text>		</g>
-		<g id="shape17-30" v:mID="17" v:groupContext="shape" transform="translate(-431.1,547.2) rotate(-90)">
+		<g id="shape17-30" v:mID="17" v:groupContext="shape" transform="translate(-436.5,546.75) rotate(-90)">
 			<title>Line Arrow.17</title>
 			<v:userDefs>
 				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="visVersion" v:val="VT0(17):26"/>
 			</v:userDefs>
-			<path d="M29.61 622.3 L29.61 628.7 L36 625.5 L29.61 622.3 Z" class="st3"/>
-			<path d="M29.61 622.3 L29.61 628.7 L36 625.5 L29.61 622.3" class="st4"/>
-			<path d="M0 625.5 L29.61 625.5" class="st4"/>
+			<path d="M29.46 622.3 L29.46 628.7 L35.85 625.5 L29.46 622.3 Z" class="st3"/>
+			<path d="M29.46 622.3 L29.46 628.7 L35.85 625.5 L29.46 622.3" class="st4"/>
+			<path d="M0 625.5 L29.46 625.5" class="st4"/>
 		</g>
-		<g id="shape18-34" v:mID="18" v:groupContext="shape" transform="translate(-431.1,439.2) rotate(-90)">
+		<g id="shape18-34" v:mID="18" v:groupContext="shape" transform="translate(-436.5,438.9) rotate(-90)">
 			<title>Line Arrow.18</title>
 			<v:userDefs>
 				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="visVersion" v:val="VT0(17):26"/>
 			</v:userDefs>
-			<path d="M29.61 622.3 L29.61 628.7 L36 625.5 L29.61 622.3 Z" class="st3"/>
-			<path d="M29.61 622.3 L29.61 628.7 L36 625.5 L29.61 622.3" class="st4"/>
-			<path d="M0 625.5 L29.61 625.5" class="st4"/>
+			<path d="M29.46 622.3 L29.46 628.7 L35.85 625.5 L29.46 622.3 Z" class="st3"/>
+			<path d="M29.46 622.3 L29.46 628.7 L35.85 625.5 L29.46 622.3" class="st4"/>
+			<path d="M0 625.5 L29.46 625.5" class="st4"/>
 		</g>
-		<g id="shape20-38" v:mID="20" v:groupContext="shape" transform="translate(-394.38,583.92) rotate(-90)">
-			<title>Line Arrow.20</title>
-			<v:userDefs>
-				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
-				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
-				<v:ud v:nameU="visVersion" v:val="VT0(17):26"/>
-			</v:userDefs>
-			<path d="M0 625.5 L36 625.5" class="st4"/>
-		</g>
-		<g id="shape21-41" v:mID="21" v:groupContext="shape" transform="translate(-431.1,331.2) rotate(-90)">
+		<g id="shape21-38" v:mID="21" v:groupContext="shape" transform="translate(-436.5,331.05) rotate(-90)">
 			<title>Line Arrow.21</title>
 			<v:userDefs>
 				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="visVersion" v:val="VT0(17):26"/>
 			</v:userDefs>
-			<path d="M29.61 622.3 L29.61 628.7 L36 625.5 L29.61 622.3 Z" class="st3"/>
-			<path d="M29.61 622.3 L29.61 628.7 L36 625.5 L29.61 622.3" class="st4"/>
-			<path d="M0 625.5 L29.61 625.5" class="st4"/>
+			<path d="M29.46 622.3 L29.46 628.7 L35.85 625.5 L29.46 622.3 Z" class="st3"/>
+			<path d="M29.46 622.3 L29.46 628.7 L35.85 625.5 L29.46 622.3" class="st4"/>
+			<path d="M0 625.5 L29.46 625.5" class="st4"/>
 		</g>
-		<g id="shape22-45" v:mID="22" v:groupContext="shape" transform="translate(-46.1769,-354.185) rotate(-22.6199)">
+		<g id="shape22-42" v:mID="22" v:groupContext="shape" transform="translate(-39.3622,-359.124) rotate(-21.413)">
 			<title>Line Arrow.22</title>
 			<v:userDefs>
 				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="visVersion" v:val="VT0(17):26"/>
 			</v:userDefs>
-			<path d="M87.21 622.3 L87.21 628.7 L93.6 625.5 L87.21 622.3 Z" class="st3"/>
-			<path d="M87.21 622.3 L87.21 628.7 L93.6 625.5 L87.21 622.3" class="st4"/>
-			<path d="M0 625.5 L87.21 625.5" class="st4"/>
+			<path d="M92.21 622.3 L92.21 628.7 L98.61 625.5 L92.21 622.3 Z" class="st3"/>
+			<path d="M92.21 622.3 L92.21 628.7 L98.61 625.5 L92.21 622.3" class="st4"/>
+			<path d="M0 625.5 L92.21 625.5" class="st4"/>
 		</g>
-		<g id="shape23-49" v:mID="23" v:groupContext="shape" transform="translate(-16.7675,811.977) rotate(-160.269)">
+		<g id="shape23-46" v:mID="23" v:groupContext="shape" transform="translate(-32.7012,808.092) rotate(-159.241)">
 			<title>Line Arrow.23</title>
 			<v:userDefs>
 				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
 				<v:ud v:nameU="visVersion" v:val="VT0(17):26"/>
 			</v:userDefs>
-			<path d="M100.24 622.3 L100.24 628.7 L106.64 625.5 L100.24 622.3 Z" class="st3"/>
-			<path d="M100.24 622.3 L100.24 628.7 L106.64 625.5 L100.24 622.3" class="st4"/>
-			<path d="M0 625.5 L100.24 625.5" class="st4"/>
+			<path d="M95.18 622.3 L95.18 628.7 L101.57 625.5 L95.18 622.3 Z" class="st3"/>
+			<path d="M95.18 622.3 L95.18 628.7 L101.57 625.5 L95.18 622.3" class="st4"/>
+			<path d="M0 625.5 L95.18 625.5" class="st4"/>
 		</g>
-		<g id="shape24-53" v:mID="24" v:groupContext="shape" transform="translate(40.2231,692.585) rotate(-157.38)">
+		<g id="shape24-50" v:mID="24" v:groupContext="shape" transform="translate(40.2231,692.585) rotate(-157.38)">
 			<title>Line Arrow.24</title>
 			<v:userDefs>
 				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
@@ -179,7 +170,7 @@
 			<path d="M87.21 622.3 L87.21 628.7 L93.6 625.5 L87.21 622.3" class="st4"/>
 			<path d="M0 625.5 L87.21 625.5" class="st4"/>
 		</g>
-		<g id="shape25-57" v:mID="25" v:groupContext="shape" transform="translate(-117.143,-473.577) rotate(-19.7306)">
+		<g id="shape25-54" v:mID="25" v:groupContext="shape" transform="translate(-117.143,-473.577) rotate(-19.7306)">
 			<title>Line Arrow.25</title>
 			<v:userDefs>
 				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
