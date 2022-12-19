@@ -60,9 +60,9 @@ The following iterator concepts are listed in order of increasing capability. `i
 
 In the following table, "Multi-pass" refers to whether the iterator can revisit the same element more than once. For example, `vector::iterator` is a multi-pass iterator because you can make a copy of the iterator, read the elements in the collection, and then restore the iterator to the value in the copy, and revisit the same elements again. If an iterator is single-pass, you can only visit the elements in the collection once.
 
-In the following table, "Types" refers to the types of collections/iterators that satisfy the concept.
+In the following table, "Example types" refers to collections/iterators that satisfy the concept.
 
-| Iterator concept | Description | Direction | Read/write | Multi-pass | Types |
+| Iterator concept | Description | Direction | Read/write | Multi-pass | Example types |
 |--|--|--|--|--|--|
 | [`input_or_output_iterator`](#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. | Forward | Read/write | no | `istream_iterator`, `ostream_iterator` |
 | [`output_iterator`](#output_iterator)<sup>C++20</sup> | Specifies an iterator that you can write to. | Forward | Write | no | `ostream`, `inserter` |
