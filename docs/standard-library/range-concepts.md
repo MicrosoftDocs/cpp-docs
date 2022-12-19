@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ra
 ---
 # `<ranges>` concepts
 
-Concepts are a C++20 language feature that constrains template parameters at compile time. They help prevent incorrect template instantiation, specify template argument requirements in a readable form, and provide more succinct template related compiler errors.
+Concepts are a C++20 language feature that constrain template parameters at compile time. They help prevent incorrect template instantiation, specify template argument requirements in a readable form, and provide more succinct template related compiler errors.
 
 Consider the following example, which defines a concept to prevent instantiating a template with a type that doesn't support division:
 
@@ -48,24 +48,23 @@ int main()
 }
 ```
 
-When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4 or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
+When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4 preview 4, or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
 
-Range concepts are defined in the `std::ranges` namespace as declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
+Range concepts are defined in the `std::ranges` namespace, and declared in the `<ranges>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
 There are six categories of ranges. They're related to the categories of iterators listed in [`<iterator>` concepts](iterator-concepts.md). In order of increasing capability, the categories are:
 
 | Range concept | Description |
 |--|--|
-| [`output_range`](#output_range) | Specifies a range that you can write to. |
-| [`input_range`](#input_range) | Specifies a range that you can read from at least once.|
-| [`forward_range`](#forward_range) | Specifies a range that can read (and possibly write) multiple times. |
-| [`bidirectional_range`](#bidirectional_range) | Specifies a range that can read and write both forwards and backwards. |
-| [`random_access_range`](#random_access_range) | Specifies a range that can read and write by index. |
-| [`contiguous_range`](#contiguous_range) | Specifies a range whose elements are sequential in memory and can be accessed using pointer arithmetic. |
+| [`output_range`](#output_range)<br>[`input_range`](#input_range) | Specifies a range that you can write to.<br>Specifies a range that you can read from once. |
+| [`forward_range`](#forward_range) | Specifies a range that you can read (and possibly write) multiple times. |
+| [`bidirectional_range`](#bidirectional_range) | Specifies a range that you can read and write both forwards and backwards. |
+| [`random_access_range`](#random_access_range) | Specifies a range that you can read and write by index. |
+| [`contiguous_range`](#contiguous_range) | Specifies a range whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. |
 
-In the preceding table, concepts are listed in order of increasing capability. A range that meets the requirements of a concept generally meets the requirements of the concepts in the rows that precede it. For example, a `random_access_range` has the capability of a `bidirectional_range`, `forward_range`, `input_range`, and `output_range`. Except `input_range`, which doesn't have the capability of an `output_range` because it can't be written to.
+In the preceding table, concepts are listed in order of increasing capability. A range that meets the requirements of a concept generally meets the requirements of the concepts in the rows that precede it. For example, a `random_access_range` has the capability of a `bidirectional_range`, `forward_range`, `input_range`, and `output_range`. The exception is `input_range`, which can't be written to, so it doesn't have the capabilities of `output_range`.
 
-:::image type="content" source="media/ranges-iterator-hiearchy.svg" alt-text="Diagram of the ranges iterator hierarchy. input_range and output_range are the base. forward_range is next and refines both input_range and output_range. bidirectional_range refines forward_range. random_access_range refines bidirectional_range. Finally, contiguous_range refines random_access_range":::
+:::image type="content" source="media/ranges-iterator-hiearchy.svg" alt-text="Diagram of the ranges iterator hierarchy. input_range and output_range are the most basic iterators. forward_range is next and refines both input_range and output_range. bidirectional_range refines forward_range. random_access_range refines bidirectional_range. Finally, contiguous_range refines random_access_range":::
 
 Other range concepts include:
 
@@ -75,7 +74,7 @@ Other range concepts include:
 | [`borrowed_range`](#borrowed_range)<sup>C++20</sup> | Specifies that the lifetime of the range's iterators aren't tied to the range's lifetime. |
 | [`common_range`](#common_range)<sup>C++20</sup> | Specifies that the type of the range's iterator and the type of the range's sentinel are the same. |
 | [`Simple_View`](#simple_view)<sup>C++20</sup> | Not an official concept defined as part of the standard library, but used as a helper concept on some interfaces. |
-| [`sized_range`](#sized_range)<sup>C++20</sup> | Specifies a range that can provide the number of elements in a range efficiently. |
+| [`sized_range`](#sized_range)<sup>C++20</sup> | Specifies a range that can provide its number of elements efficiently. |
 | [`view`](#view)<sup>C++20</sup> | Specifies a type that has efficient (constant time) move construction, assignment, and destruction. |
 | [`viewable_range`](#viewable_range)<sup>C++20</sup> | Specifies a type that either is a view or can be converted to one. |
 
@@ -208,7 +207,7 @@ This kind of range supports [`forward_iterator`](iterator-concepts.md#forward_it
 
 ## `input_range`
 
-An `input_range` is a range that can be read from at least once.
+An `input_range` is a range that can be read from once.
 
 ```cpp
 template<class T>

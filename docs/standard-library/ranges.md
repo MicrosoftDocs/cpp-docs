@@ -8,7 +8,7 @@ helpviewer_keywords: ["ranges"]
 
 # `<ranges>`
 
-At a high level, a *range* is something that you can iterate over. A range is represented by an iterator that marks the beginning of the range, and a sentinel that marks the end of the range. The sentinel may be the same type as the begin iterator, or it may be different. The containers, such as `vector` and `list`, in the C++ Standard Library are ranges. A range abstracts iterators in a way that simplifies and amplifies your ability to use the Standard Template Library (STL).
+At a high level, a *range* is something that you can iterate over. A range is represented by an iterator that marks the beginning of the range and a sentinel that marks the end of the range. The sentinel may be the same type as the begin iterator, or it may be different. The containers, such as `vector` and `list`, in the C++ Standard Library are ranges. A range abstracts iterators in a way that simplifies and amplifies your ability to use the Standard Template Library (STL).
 
 STL algorithms usually take iterators that point to the portion of the collection that they should operate on. For example, consider how you sort a `vector` by using `std::sort()`. You pass two iterators that mark the beginning and end of the `vector`. That provides flexibility, but passing the iterators to the algorithm is extra work because you probably just want to sort the whole thing.
 
@@ -116,11 +116,11 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 
 ### Range concepts
 
-How you iterate over the elements of a range depends on its underlying iterator type. Ranges use C++ concepts to specify the iterator they support.
+How you iterate over the elements of a range depends on its underlying iterator type. Ranges use C++ concepts that specify which iterator they support.
 
 In C++20, to say that concept *X* refines concept *Y* means that everything that satisfies concept *Y* also satisfies concept *X*. For example: *car*, *bus*, and *truck* all refine *vehicle*.
 
-Some of the range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to.
+Some range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to.
 
 | Range concept | Description | Supported containers |
 |--|--|--|

@@ -146,7 +146,7 @@ Each view class topic has a **Characteristics** section after the syntax section
 
 ### Ranges iterator hierarchy
 
-In the **Characteristics** section of each view class topic, the iterator category in **Underlying range** and **View iterator category** refers to the kind of iterator that the range/view supports. Ranges iterators are categorized into six levels of capability, which are identified by C++20 concepts. That hierarchy, in increasing order of capability, is:
+In the **Characteristics** section of each view class topic, the iterator category in **Underlying range** and **View iterator category** refers to the kind of iterator that the range/view supports. There are six categories of Ranges iterators, which are identified by C++20 concepts. The hierarchy of range iterators, in increasing order of capability, is:
 
 | Range iterator concept | Description |
 |--|--|

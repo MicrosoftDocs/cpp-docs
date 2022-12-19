@@ -89,18 +89,18 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 
 ## Concepts
 
-The following concepts are defined in the `std` namespace. They apply to iterators, and are directly related to the iterator categories for ranges described in [`<ranges>` concepts](range-concepts.md).
+The following concepts are defined in the `std` namespace. They apply to iterators, and are also related to the iterator categories for ranges described in [`<ranges>` concepts](range-concepts.md).
 
 | Iterator concept | Description |
 |--|--|
 | [`bidirectional_iterator`](iterator-concepts.md#bidirectional_iterator)<sup>C++20</sup> | Specifies an iterator that can read and write both forwards and backwards. |
-| [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, and can be accessed using pointer arithmetic. |
+| [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, the same size, and can be accessed using pointer arithmetic. |
 | [`forward_iterator`](iterator-concepts.md#forward_iterator)<sup>C++20</sup> | Specifies an iterator that can read (and possibly write) multiple times. |
 | [`input_iterator`](iterator-concepts.md#input_iterator)<sup>C++20</sup> | Specifies an iterator that you can read from at least once. |
 | [`input_or_output_iterator`](iterator-concepts.md#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. |
 | [`output_iterator`](iterator-concepts.md#output_iterator) | Specifies an iterator that you can write to. |
-| [`random_access_iterator`](iterator-concepts.md#random_access_iterator)<sup>C++20</sup> | Specifies an iterator that can read and write by index. |
-| [`sentinel_for`](iterator-concepts.md#sentinel_for)<sup>C++20</sup> | Test that a type is a sentinel for an iterator type. |
+| [`random_access_iterator`](iterator-concepts.md#random_access_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write by index. |
+| [`sentinel_for`](iterator-concepts.md#sentinel_for)<sup>C++20</sup> | Specifies a sentinel for an iterator type. |
 | [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for)<sup>C++20</sup> | Specifies that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time. |
 
 ## See also

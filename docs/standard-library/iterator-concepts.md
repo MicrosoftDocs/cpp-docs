@@ -7,9 +7,9 @@ helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ra
 ---
 # Iterator concepts
 
-Concepts are a C++20 language feature that constrains template parameters at compile time. They help prevent incorrect template instantiation, specify template argument requirements in a readable form, and provide more succinct template related compiler errors.
+Concepts are a C++20 language feature that constrain template parameters at compile time. They help prevent incorrect template instantiation, specify template argument requirements in a readable form, and provide more succinct template related compiler errors.
 
-Consider the following example, which defines a concept to prevent instantiating a template with a type that doesn't support division:
+Consider the following example, which defines a concept to prevent instantiating the template with a type that doesn't support division:
 
 ```cpp
 // requires /std:c++20 or later
@@ -48,9 +48,9 @@ int main()
 }
 ```
 
-When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4 or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
+When you pass the compiler switch `/diagnostics:caret` to Visual Studio 2022 version 17.4 preview 4 or later, the error that concept `dividable<char*>` evaluated to false will point directly to the expression requirement `(a / b)` that failed.
 
-Iterator concepts are defined in the `std` namespace as declared in the `<iterator>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
+Iterator concepts are defined in the `std` namespace, and are declared in the `<iterator>` header file. They're used in the declarations of [range adaptors](range-adaptors.md), [views](view-classes.md), and so on.
 
 There are six categories of iterators. They're directly related to the categories of ranges listed under [Range concepts](ranges.md#range-concepts).
 
@@ -65,18 +65,18 @@ In the following table, "Types" refers to the types of collections/iterators tha
 | Iterator concept | Description | Direction | Read/write | Multi-pass | Types |
 |--|--|--|--|--|--|
 | [`input_or_output_iterator`](#input_or_output_iterator)<sup>C++20</sup> | The basis of the iterator concept taxonomy. | Forward | Read/write | no | `istream_iterator`, `ostream_iterator` |
-| [`output_iterator`](#output_iterator)<sup>C++20</sup> | Test for an iterator that you can write to. | Forward | Write | no | `ostream`, `inserter` |
-| [`input_iterator`](#input_iterator)<sup>C++20</sup> | Test for an iterator that you can read from at least once. | Forward | Read | no | `istream`, `istreambuf_iterator` |
-| [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Test for an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector`, `list` |
-| [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Test for an iterator that can read and write both forwards and backwards. | Forward/backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
-| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Test for an iterator that can read and write by index. | Forward/Backward | Read/write | yes | `vector`, `array`, `deque` |
-| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Test for an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic. | Forward/backward | Read/write | yes | `array`, `vector` `string`.|
+| [`output_iterator`](#output_iterator)<sup>C++20</sup> | Specifies an iterator that you can write to. | Forward | Write | no | `ostream`, `inserter` |
+| [`input_iterator`](#input_iterator)<sup>C++20</sup> | Specifies an iterator that you can read from once. | Forward | Read | no | `istream`, `istreambuf_iterator` |
+| [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Specifies an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector`, `list` |
+| [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write both forwards and backwards. | Forward/backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
+| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write by index. | Forward/Backward | Read/write | yes | `vector`, `array`, `deque` |
+| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. | Forward/backward | Read/write | yes | `array`, `vector` `string`.|
 
 Other iterator concepts include:
 
 | Iterator concept | Description |
 |--|--|
-| [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | Test that a type is a sentinel for an iterator type. |
+| [`sentinel_for`](#sentinel_for)<sup>C++20</sup> | Specifies that a type is a sentinel for an iterator type. |
 | [`sized_sentinel_for`](#sized_sentinel_for)<sup>C++20</sup> | Specifies that an iterator and its sentinel can be subtracted (using `-`) to find their difference in constant time. |
 
 ## `bidirectional_iterator`
@@ -103,7 +103,7 @@ The iterator to test to see if it's a `bidirectional_iterator`.
 
 A `bidirectional_iterator` has the capabilities of a `forward_iterator`, but can also iterate backwards.
 
-Some examples of containers that can be used with a `bidirectional_iterator` are `set`, `vector`, and `list`.
+Some examples of containers that can be used with a `bidirectional_iterator` are `set`, `multiset`, `map`, `multimap`, `vector`, and `list`.
 
 ### Example: `bidirectional_iterator`
 
@@ -126,7 +126,7 @@ int main()
 
 ## `contiguous_iterator`
 
-Specifies an iterator whose elements are sequential in memory and can be accessed using pointer arithmetic.
+Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic.
 
 ```cpp
 template<class I>
@@ -171,7 +171,7 @@ int main()
 
 ## `forward_iterator`
 
-Has the capabilities of an `input_iterator` and an `output_iterator`. Also supports iterating over a collection multiple times.
+Has the capabilities of an `input_iterator` and an `output_iterator`. Supports iterating over a collection multiple times.
 
 ```cpp
 template<class I>
@@ -191,7 +191,7 @@ The iterator to test to see if it's a `forward_iterator`.
 
 A `forward_iterator` can only move forward.
 
-Some examples of containers that can be used with a `forward_iterator` are `unordered_set`, `unordered_multiset`, `unordered_map`, and `unordered_multimap`.
+Some examples of containers that can be used with a `forward_iterator` are `vector`, `list`, `unordered_set`, `unordered_multiset`, `unordered_map`, and `unordered_multimap`.
 
 ### Example: `forward_iterator`
 
@@ -233,7 +233,7 @@ The type to test to see if it's an `input_iterator`.
 
 ### Remarks
 
-Calling `begin()` on an `input_iterator` more than once results in undefined behavior. This implies that if a type only models `input_iterator`, it isn't multi-pass and can read an element only once. Consider reading from standard input (`cin`) for example. In this case, you can only read the current element once and you can't re-read characters you've already read. An `input_iterator` only reads forward, not backwards.
+Calling `begin()` on an `input_iterator` more than once results in undefined behavior. A type that only models `input_iterator` isn't multi-pass. Consider reading from standard input (`cin`) for example. In this case, you can only read the current element once and you can't re-read characters you've already read. An `input_iterator` only reads forward, not backwards.
 
 ### Example: `input_iterator`
 
@@ -294,7 +294,7 @@ int main()
 
 ## `output_iterator`
 
-An `output_iterator` is a type that you can write to.
+An `output_iterator` is an iterator that you can write to.
 
 ```cpp
 template<class I, class T>
@@ -333,7 +333,7 @@ int main()
     std::cout << std::boolalpha << std::output_iterator<std::vector<int>::iterator, int> << "\n"; // outputs "true"
 
     // another way to test
-    std::vector<int> v = { 0,1,2,3,4,5 };
+    std::vector<int> v = {0,1,2,3,4,5};
     std::cout << std::boolalpha << std::output_iterator<decltype(v)::iterator, int>; // outputs true
 }
 ```
@@ -392,7 +392,7 @@ int main()
 
 ## `sentinel_for`
 
-Test that a type is a sentinel for an iterator.
+Specifies that a type is a sentinel for an iterator.
 
 ```cpp
 template<class S, class I>
