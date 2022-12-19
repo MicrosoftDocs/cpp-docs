@@ -68,9 +68,9 @@ In the following table, "Types" refers to the types of collections/iterators tha
 | [`output_iterator`](#output_iterator)<sup>C++20</sup> | Specifies an iterator that you can write to. | Forward | Write | no | `ostream`, `inserter` |
 | [`input_iterator`](#input_iterator)<sup>C++20</sup> | Specifies an iterator that you can read from once. | Forward | Read | no | `istream`, `istreambuf_iterator` |
 | [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Specifies an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector`, `list` |
-| [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write both forwards and backwards. | Forward/backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
-| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write by index. | Forward/Backward | Read/write | yes | `vector`, `array`, `deque` |
-| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. | Forward/backward | Read/write | yes | `array`, `vector` `string`.|
+| [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write both forwards and backwards. | Forward or backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
+| [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write by index. | Forward or backward | Read/write | yes | `vector`, `array`, `deque` |
+| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. | Forward or backward | Read/write | yes | `array`, `vector` `string`.|
 
 Other iterator concepts include:
 
