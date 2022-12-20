@@ -73,6 +73,8 @@ Previously, MSVC allowed direct binding of a reference from a type with mismatch
 
 The compiler for Visual Studio 2019 versions 16.0 through 16.8 instead creates a temporary, as was required by the standard at that time. Later, the standard retroactively changed making the previous behavior of Visual Studio 2017 and earlier correct, and the behavior of Visual Studio 2019 version 16.0 through 16.8 wrong. Consequently, this change was reverted starting in Visual Studio 2019 version 16.9.
 
+See [Similar types and reference binding](#similar-types-and-reference-binding) for a related change.
+
 As an example, in Visual Studio 2017, the following code compiles without warnings. In Visual Studio 2019 versions 16.0 through 16.8, the compiler raises warning C4172. Starting with Visual Studio 2019 version 16.9, the code once again compiles without warnings:
 
 ```cpp
@@ -2076,9 +2078,11 @@ With this change, a destructor is also potentially throwing if it has a virtual 
 
 Core Working Group issue [CWG 2352](https://wg21.link/cwg2352) deals with an inconsistency between the reference binding rules and changes to type similarity. The inconsistency was introduced in earlier Defect Reports (such as [CWG 330](https://wg21.link/cwg330)). This affected Visual Studio 2019 versions 16.0 through 16.8.
 
-With this change, starting in Visual Studio 2019 version 16.9, code that previously bound a reference to a temporary may now bind directly when the types involved differ only by cv-qualifiers.
+With this change, starting in Visual Studio 2019 version 16.9, code that previously bound a reference to a temporary in Visual Studio 2019 version 16.0 throught 16.8 may now bind directly when the types involved differ only by cv-qualifiers.
 
 Visual Studio 2019 version 16.9 implements the changed behavior in all **`/std`** compiler modes. It's potentially a source breaking change.
+
+See [References to types with mismatched cv-qualifiers](#references-to-types-with-mismatched-cv-qualifiers) for a related change.
 
 This sample shows the changed behavior:
 
