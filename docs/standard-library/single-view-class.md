@@ -32,7 +32,7 @@ For a description of the following entries, see [View class characteristics](vie
 | **Range adaptor** | [`views::single`](range-adaptors.md#single) |
 | **Underlying range** | None |
 | **Element type** | Specified when the `single_view` is created |
-| **View iterator category** | Supports `contiguous_range` |
+| **View iterator category** | `contiguous_range` |
 | **Sized** | Always returns 1 |
 | **Is `const`-iterable** | Yes |
 | **Common range** | Yes |
