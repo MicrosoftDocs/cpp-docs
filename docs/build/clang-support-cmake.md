@@ -21,7 +21,6 @@ You can use Visual Studio with Clang to edit and debug C++ CMake projects that t
 **Linux**: For Linux CMake projects, no special Visual Studio support is required. You can install Clang using your distro's package manager, and add the appropriate commands in the CMakeLists.txt file.
 
 ## Install
-
 ::: moniker-end
 ::: moniker range="msvc-160"
 
