@@ -25,12 +25,12 @@ You can use Visual Studio with Clang to edit and debug C++ CMake projects that t
 ::: moniker-end
 ::: moniker range="msvc-160"
 
-For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **C++ Clang-cl for v142 build tools** component.
+For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **MSBuild support for LLVM (clang-cl) toolset** component.
 
 ::: moniker-end
 ::: moniker range="msvc-170"
 
-For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **C++ Clang-cl for v143 build tools** component.
+For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **MSBuild support for LLVM (clang-cl) toolset** component.
 
 ::: moniker-end
 ::: moniker range=">=msvc-160"
