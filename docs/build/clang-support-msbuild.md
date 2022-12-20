@@ -12,10 +12,11 @@ helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 Clang/LLVM support for both CMake and MSBuild projects is available in Visual Studio 2019 and Visual Studio 2022.
 
 ::: moniker-end
-
 ::: moniker range=">=msvc-160"
 
 You can use Visual Studio 2019 version 16.2 and later with Clang/LLVM to edit, build, and debug C++ Visual Studio projects (MSBuild) that target Windows or Linux.
+
+::: moniker-end
 
 ## Install
 
@@ -26,7 +27,9 @@ For best IDE support in Visual Studio, we recommend using the latest Clang compi
 For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have the tools, you can install them by opening the Visual Studio Installer and choosing **C++ Clang tools for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose **MSBuild support for LLVM (clang-cl) toolset**.
 ::: moniker-end
 
+::: moniker range=">=msvc-160"
 The Microsoft C++ Standard Library requires at least Clang 8.0.0.
+::: moniker-end
 
 ::: moniker range="=msvc-160"
 ![Screenshot of the Visual Studio installer with the Individual components tab selected and the C plus plus Clang components visible.](media/clang-install-vs2019.png)
@@ -35,6 +38,7 @@ The Microsoft C++ Standard Library requires at least Clang 8.0.0.
 ![Screenshot of the Visual Studio installer with the Individual components tab selected and the C plus plus Clang components visible.](media/clang-install-vs2022.png)
 ::: moniker-end
 
+::: moniker range=">=msvc-160"
 Later versions of Visual Studio provide newer versions of the Clang toolset. The bundled version of Clang gets updated automatically to stay current with updates in the Microsoft implementation of the Standard Library. For example, Visual Studio 2019 version 16.11 includes Clang v12.
 
 ## Configure a Windows project to use Clang tools
@@ -93,7 +97,7 @@ The **LLVM Toolset Version** property only appears when the LLVM platform toolse
 
 When you add a *Directory.build.props* file to a project or solution, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the *Directory.build.props* file.
 
-## Set additional properties, edit, build, and debug
+## Set properties, edit, build, and debug
 
 After you have set up a Clang configuration, right-click again on the project node and choose **Reload project**. You can now build and debug the project using the Clang tools. Visual Studio detects that you're using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**. The project property pages for a Clang configuration are similar to the ones for MSVC. However, some compiler-dependent features such as Edit and Continue aren't available for Clang configurations. You can set a Clang compiler or linker option that isn't available in the property pages. Add it manually in the property pages under **Configuration Properties** > **C/C++ (or Linker)** > **Command Line** > **Additional Options**.
 
