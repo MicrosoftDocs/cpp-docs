@@ -130,7 +130,7 @@ Get a `const` pointer to the first element in the contiguous range.
 
 ```cpp
 template<class T>
-constexpr std::add_pointer_t<ranges::range_reference_t</*const T*/>> cdata(T&& rg);
+constexpr std::add_pointer_t<ranges::range_reference_t<const T>> cdata(T&& rg);
 ```
 
 ### Parameters

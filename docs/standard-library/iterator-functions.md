@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: <iterator> functions"
 title: "<iterator> functions"
-ms.date: 09/28/2022
+ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
 helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::begin [C++]", "std::cbegin [C++]", "std::cend [C++]", "std::distance [C++]", "std::end [C++]", "std::front_inserter [C++]", "std::inserter [C++]", "std::make_checked_array_iterator [C++]", "std::make_move_iterator [C++]", "std::make_unchecked_array_iterator [C++]", "std::next [C++]", "std::prev [C++]"]
 ---
 # `<iterator>` functions
 
-## <a name="advance">` advance`
+## <a name="advance"></a> `advance`
 
 Increments an iterator by a specified number of positions.
 
@@ -100,7 +100,7 @@ A `back_insert_iterator` associated with the container object *`Cont`*.
 
 ### Remarks
 
-Within the C++ Standard Library, the argument must refer to one of the three sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md), or [vector Class](../standard-library/vector-class.md).
+Within the C++ Standard Library, the argument must refer to one of the three sequence containers that have the member function `push_back`: [`deque` Class](../standard-library/deque-class.md), [`list` Class](../standard-library/list-class.md), or [`vector` Class](../standard-library/vector-class.md).
 
 ### Example
 
@@ -236,7 +236,7 @@ int main()
 160 106 80 70 53 40 35 23 20 16 10 8 5 4 2 1
 ```
 
-The function `reverse_sort` supports containers of any kind, in addition to regular arrays, because it calls the non-member version of `begin()`. If `reverse_sort` were coded to use the container member `begin()`:
+The function `reverse_sort` supports containers of any kind, in addition to regular arrays, because it calls the non-member version of `begin()`. Coding `reverse_sort` to use the container member `begin()`:
 
 ```cpp
 template <typename C>
@@ -249,7 +249,7 @@ void reverse_sort(C& c) {
 }
 ```
 
-Then sending an array to it would cause this compiler error:
+Then sending an array to it, causes this compiler error:
 
 ```Output
 error C2228: left of '.begin' must have class/struct/union
@@ -276,7 +276,7 @@ A constant `cont.begin()`.
 
 ### Remarks
 
-This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
+This function works with all C++ Standard Library containers and with [`initializer_list`](../standard-library/initializer-list-class.md).
 
 You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
 
@@ -301,7 +301,7 @@ auto cend(const Container& cont)
 ### Parameters
 
 *`cont`*\
-A container or initializer_list.
+A container or `initializer_list`.
 
 ### Return Value
 
@@ -1031,7 +1031,7 @@ The template function returns `next` decremented `off` times.
 
 ## <a name="rbegin"></a> `rbegin`
 
-Get an iterator which returns the elements of the container in reverse order.
+Get an iterator, which returns the elements of the container in reverse order.
 
 ```cpp
 template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
