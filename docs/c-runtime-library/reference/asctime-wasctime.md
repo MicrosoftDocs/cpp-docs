@@ -56,7 +56,7 @@ For information about configuring the local time, see the [`time`](time-time32-t
 
 The string result produced by **`asctime`** contains exactly 26 characters and has the form `Wed Jan  2 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The newline character and the null character occupy the last two positions of the string. **`asctime`** uses a single, statically allocated buffer to hold the return string. Each call to this function destroys the result of the previous call.
 
-**`_wasctime`** is a wide-character version of **`asctime`**, and is otherwise identical to **`asctime`**.
+**`_wasctime`** is a wide-character version of **`asctime`**, and otherwise behaves identically to **`asctime`**.
 
 These functions validate their parameters. If *`timeptr`* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.
 
