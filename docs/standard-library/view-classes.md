@@ -1,11 +1,11 @@
 ---
-description: "Learn more about view classes, which allow you to inexpensively refer to and transform ranges."
+description: "Learn more about the ranges view classes, which allow you to inexpensively transform ranges."
 title: "View classes"
-ms.date: 12/06/2022
+ms.date: 12/20/2022
 f1_keywords: ["RANGES/std::ranges::views", "RANGES/std::views"]
 helpviewer_keywords: ["RANGES/VIEWS/std", "VIEWS/std"]
 ---
-# View classes
+# `<ranges>` view classes
 
 A *view* is a lightweight range that refers to elements that it doesn't own (except [`owning_view`](owning-view-class.md)). A view is typically based on another range and provides a different way of looking at it, whether by transforming or filtering it. For example, [`std::views::filter`](filter-view-class.md) is a view that uses the criteria that you specify to select elements from another range.
 
