@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: asctime, _wasctime"
 title: "asctime, _wasctime"
-ms.date: "4/2/2020"
+ms.date: 12/21/2022
 api_name: ["_wasctime", "asctime", "_o__wasctime", "_o_asctime"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -52,11 +52,11 @@ The **`asctime`** function converts a time stored as a structure to a character 
 | `tm_yday` | Day of year (0-365; January 1 = 0) |
 | `tm_year` | Year (current year minus 1900) |
 
-The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [`time`](time-time32-time64.md), [`_ftime`](ftime-ftime32-ftime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions. For information about defining the time zone environment and global variables, see the [`_tzset`](tzset.md) function.
+For information about configuring the local time, see the [`time`](time-time32-time64.md), [`_ftime`](ftime-ftime32-ftime64.md), and [`localtime`](localtime-localtime32-localtime64.md) functions. For information about defining the time zone environment and global variables, see the [`_tzset`](tzset.md) function.
 
 The string result produced by **`asctime`** contains exactly 26 characters and has the form `Wed Jan  2 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The newline character and the null character occupy the last two positions of the string. **`asctime`** uses a single, statically allocated buffer to hold the return string. Each call to this function destroys the result of the previous call.
 
-**`_wasctime`** is a wide-character version of **`asctime`**. **`_wasctime`** and **`asctime`** behave identically otherwise.
+**`_wasctime`** is a wide-character version of **`asctime`**, and is otherwise identical to **`asctime`**.
 
 These functions validate their parameters. If *`timeptr`* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.
 
@@ -64,7 +64,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mapping
 
-| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_tasctime` | **`asctime`** | **`asctime`** | **`_wasctime`** |
 
@@ -72,12 +72,12 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header |
 |---|---|
-| **`asctime`** | \<time.h> |
-| **`_wasctime`** | \<time.h> or \<wchar.h> |
+| **`asctime`** | `<time.h>` |
+| **`_wasctime`** | `<time.h>` or `<wchar.h>` |
 
 ## Example
 
-This program places the system time in the long integer `aclock`, translates it into the structure `newtime` and then converts it to string form for output, using the **`asctime`** function.
+This program places the system time in the long integer `aclock`, translates it into the structure `newtime`, and then converts it to string form for output using the **`asctime`** function.
 
 ```C
 // crt_asctime.c
