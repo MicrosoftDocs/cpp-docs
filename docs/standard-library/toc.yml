@@ -592,6 +592,8 @@ items:
       items: 
         - name: <iterator>
           href: iterator.md
+        - name: <iterator> concepts
+          href: iterator-concepts.md
         - name: <iterator> functions
           href: iterator-functions.md
         - name: <iterator> operators

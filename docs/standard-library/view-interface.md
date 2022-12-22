@@ -94,7 +94,7 @@ A pointer to the first element in the derived view.
 
 ### Remarks
 
-The iterator for the derived view must satisfy `contiguous_iterator`.
+The iterator for the derived view must satisfy [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator).
 
 ## `empty`
 
@@ -164,7 +164,7 @@ The number of elements in the derived view.
 
 ### Remarks
 
-The iterator for the derived view must satisfy `sized_sentinel_for`.
+The iterator for the derived view must satisfy [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for).
 
 ## <a name="op_at"></a> `operator[]`
 

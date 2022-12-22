@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["STDIO/fopen", "CORECRT_WSTDIO/_wfopen", "TCHAR/_tfopen", "fopen", "_wfopen", "_tfopen"]
 helpviewer_keywords: ["opening files, for file I/O", "wfopen function", "tfopen function", "_tfopen function", "_wfopen function", "files [C++], opening", "fopen function"]
-ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
 ---
 # `fopen`, `_wfopen`
 
@@ -70,7 +69,7 @@ The following table summarizes the modes that are used for various **`ccs`** fla
 
 ### Encodings used based on ccs flag and BOM
 
-| ccs flag | No BOM (or new file) | BOM: UTF-8 | BOM: UTF-16 |
+| `ccs` flag | No BOM (or new file) | BOM: UTF-8 | BOM: UTF-16 |
 |--|--|--|--|
 | `UNICODE` | **`UTF-16LE`** | **`UTF-8`** | **`UTF-16LE`** |
 | **`UTF-8`** | **`UTF-8`** | **`UTF-8`** | **`UTF-16LE`** |
@@ -82,7 +81,7 @@ If *`mode`* is **`a, ccs=encoding`** for some `encoding` value, **`fopen`** firs
 
 ### Generic-text routine mappings
 
-| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |--|--|--|--|
 | **`_tfopen`** | **`fopen`** | **`fopen`** | **`_wfopen`** |
 
@@ -130,7 +129,7 @@ The following options can be appended to *`mode`* to specify more behaviors.
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`T`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
 | **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
-| **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or `UNICODE`) for this file. Leave unspecified if you want ANSI encoding. |
+| **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or `UNICODE`) for this file. Leave unspecified if you want ANSI encoding. This flag is separated from flags that precede it by a comma (`,`). For example: `FILE *f = fopen("newfile.txt", "rt+, ccs=UTF-8");` |
 
 Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
 
