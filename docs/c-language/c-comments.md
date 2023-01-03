@@ -51,7 +51,7 @@ While you can use comments to render certain lines of code inactive for test pur
 
 **Microsoft Specific**
 
-The Microsoft compiler also supports single-line comments preceded by two forward slashes (__//__). If you compile with /Za (ANSI standard), these comments generate errors. These comments cannot extend to a second line.
+The Microsoft compiler also supports single-line comments preceded by two forward slashes (__//__). These comments cannot extend to a second line.
 
 ```C
 // This is a valid comment
