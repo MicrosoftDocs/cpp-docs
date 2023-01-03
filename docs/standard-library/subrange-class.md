@@ -21,13 +21,13 @@ class subrange : public view_interface<subrange<I, S, K>>
 ### Template parameters
 
 *`I`*\
- The begin iterator type. The `input_or_output_iterator` concept ensures that *`I`* is an iterator that can read all of the elements.
+ The begin iterator type. The [`input_or_output_iterator`](iterator-concepts.md#input_or_output_iterator) concept ensures that *`I`* is an iterator that can read all of the elements.
 
 *`K`*\
 The kind of subrange: Use `subrange_kind::sized` to specify a sized subrange. Use `sized_sentinel_for<S, I>` if the iterator and sentinel can be subtracted to yield the size. The requirement `subrange_kind::sized || !sized_sentinel_for<S, I>` stores the size locally in the subrange object, and requires that you construct the subrange either using the constructor that takes a [`sized_range`](range-concepts.md#sized_range) (for which you would specify `subrange_kind::sized` here) or via the constructor that takes an `iterator`, `sentinel`, and `size` (so you would specify `sized_sentinel_for<S, I>` here).
 
 *`S`*\
- The end iterator type. The `sized_sentinel_for` concept ensures that *`S`* can be used as a sentinel for *`I`* and that it's possible to compute the distance between the sentinel and the current iterator position in *`I`* in constant time.
+ The end iterator type. The [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for) concept ensures that *`S`* can be used as a sentinel for *`I`* and that it's possible to compute the distance between the sentinel and the current iterator position in *`I`* in constant time.
 
 ## View characteristics
 
@@ -105,7 +105,7 @@ Iterator that points to the first element in the subrange.
 Sentinel that points to the end of the subrange. The element it points to isn't included in the subrange.
 
 *`sizeHint`*\
-The size of the range in elements. This is used to optimize the `size` member function and is necessary if you want to make a sized `subrange` from an iterator and sentinel whose types don't model `sized_sentinel_for`.
+The size of the range in elements. This is used to optimize the `size` member function and is necessary if you want to make a sized `subrange` from an iterator and sentinel whose types don't model [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for).
 
 For information about template parameter types, see [Template parameters](#template-parameters).
 

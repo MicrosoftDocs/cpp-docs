@@ -36,7 +36,7 @@ For a description of the following entries, see [View class characteristics](vie
 | Characteristic | Description |
 |--|--|
 | **Range adaptor** | [`views::drop_while`](range-adaptors.md#drop_while) |
-| **Underlying range** | Must satisfy [`forward_range`](range-concepts.md#forward_range) or higher and the underlying range's iterators must model `sized_sentinel_for` |
+| **Underlying range** | Must satisfy [`forward_range`](range-concepts.md#forward_range) or higher and the underlying range's iterators must model [`sized_sentinel_for`](iterator-concepts.md#sized_sentinel_for) |
 | **Element type** | Same as the underlying range |
 | **View iterator category** | Same as the underlying range |
 | **Sized** | Only if the underlying range satisfies [`random_access_range`](range-concepts.md#random_access_range) |
