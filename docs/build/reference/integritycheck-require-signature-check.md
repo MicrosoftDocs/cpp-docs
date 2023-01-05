@@ -13,7 +13,7 @@ Specifies that the digital signature of the binary image must be checked at load
 
 By default, **`/INTEGRITYCHECK`** is off.
 
-The **`/INTEGRITYCHECK`** linker option sets a flag, `IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY`, in the PE header of the DLL file or executable file. This flag tells the memory manager to check for a digital signature in order to load the image in Windows. This option must be set for both 32-bit and 64-bit DLLs that implement kernel-mode code loaded by certain Windows features. It's recommended for all device drivers on Windows Vista, Windows Server 2008, and all later versions of Windows and Windows Server. Versions of Windows prior to Windows Vista ignore this flag. For more information, see [Forced Integrity Signing of Portable Executable (PE) files](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx).
+The **`/INTEGRITYCHECK`** linker option sets a flag, `IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY`, in the PE header of the DLL file or executable file. This flag tells the memory manager to check for a digital signature in order to load the image in Windows. This option must be set for both 32-bit and 64-bit DLLs that are loaded by certain Windows features. It's recommended for all device drivers on Windows Vista, Windows Server 2008, and all later versions of Windows and Windows Server. Versions of Windows prior to Windows Vista ignore this flag. For more information, see [Forced Integrity Signing of Portable Executable (PE) files](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx).
 
 ### Signing `/INTEGRITYCHECK` files
 
