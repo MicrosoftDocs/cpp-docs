@@ -225,7 +225,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 - Updated to NDK r21 LTS in the **C++ Mobile Development** workload.
 
-- The **Game development with C++** workload now installs the latest Unreal Engine with support with for Visual Studio 2022.
+- The **Game development with C++** workload now installs the latest Unreal Engine with support for Visual Studio 2022.
 
 ### Code analysis improvements
 
