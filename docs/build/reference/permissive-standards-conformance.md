@@ -52,32 +52,38 @@ void func(int default); // Error C2321: 'default' is a keyword, and
 
 ```cpp
 template <typename T>
-struct B {
-    void f();
+struct B
+{
+    void f() {}
     template <typename U>
-    struct S {};
+    struct S { void operator()(){ return; } };
 };
 
 template <typename T>
 struct D : public B<T> // B is a dependent base because its type
                        // depends on the type of T.
 {
-    // One possible fix for member functions is to uncomment
-    // the following line:
+    // One possible fix for non-template members and function
+    // template members is a using statement:
     // using B<T>::f;
     // If it's a type, don't forget the 'typename' keyword.
 
-    void g() {
+    void g()
+    {
         f(); // error C3861: 'f': identifier not found
-             // Another fix is to change it to 'this->f();'
+        // Another fix is to change the call to 'this->f();'
     }
 
-    void h() {
-        S<int> s; // C2065 'S': undeclared identifier
-        // Since template S is dependent, D::template S isn't enough.
-        // The type must be qualified with the `typename` keyword.
-        // To fix, replace the above with this uncommented line:
+    void h()
+    {
+        S<int> s; // C2065 or C3878
+        // Since template S is dependent, the type must be qualified
+        // with the `typename` keyword.
+        // To fix, replace the declaration of s with:
+        // typename B<T>::template S<int> s;
+        // Or, use this:
         // typename D::template S<int> s;
+        s();
     }
 };
 
