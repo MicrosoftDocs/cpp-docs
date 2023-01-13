@@ -1,7 +1,7 @@
 ---
 title: "ARM64 exception handling"
 description: Describes the exception handling conventions and data used by windows on ARM64.
-ms.date: 10/10/2022
+ms.date: 01/13/2023
 ---
 # ARM64 exception handling
 
@@ -281,7 +281,7 @@ If exceptions were guaranteed to only ever occur within a function body, and nev
 
 - By counting the number of instructions before the end of the prolog, it's possible to skip the equivalent number of unwind codes. We can execute the rest of the sequence to undo only those parts of the prolog that have completed execution.
 
-The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack. There are 22 unwind codes in total. Each unwind code maps exactly one instruction in the prolog/epilog, to allow for unwinding of partially executed prologs and epilogs.
+The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack (`alloc_l`). There are 22 unwind codes in total. Each unwind code maps exactly one instruction in the prolog/epilog, to allow for unwinding of partially executed prologs and epilogs.
 
 | Unwind code | Bits and interpretation |
 |--|--|
@@ -289,7 +289,7 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 | `save_r19r20_x` | 001zzzzz: save `<x19,x20>` pair at `[sp-#Z*8]!`, pre-indexed offset >= -248 |
 | `save_fplr` | 01zzzzzz: save `<x29,lr>` pair at `[sp+#Z*8]`,  offset \<= 504. |
 | `save_fplr_x` | 10zzzzzz: save `<x29,lr>` pair at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
-| `alloc_m` | 11000xxx'xxxxxxxx: allocate large stack with size \< 16k (2^11 * 16). |
+| `alloc_m` | 11000xxx'xxxxxxxx: allocate large stack with size \< 32K (2^11 * 16). |
 | `save_regp` | 110010xx'xxzzzzzz: save `x(19+#X)` pair at `[sp+#Z*8]`, offset \<= 504 |
 | `save_regp_x` | 110011xx'xxzzzzzz: save pair `x(19+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
 | `save_reg` | 110100xx'xxzzzzzz: save reg `x(19+#X)` at `[sp+#Z*8]`, offset \<= 504 |
