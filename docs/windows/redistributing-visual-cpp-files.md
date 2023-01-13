@@ -1,7 +1,7 @@
 ---
 title: "Redistributing Visual C++ Files"
 description: "Visual Studio includes Redistributable libraries and components you can deploy with your app."
-ms.date: 02/07/2022
+ms.date: 01/13/2023
 helpviewer_keywords: ["application deployment [C++], file redistributing", "redistributing applications [C++]", "deploying applications [C++], file redistributing", "file redistribution [C++]", "redistributing applications [C++], about redistributing applications"]
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
 ---
@@ -52,7 +52,17 @@ In Visual Studio 2022 and 2019, merge module files are part of an optional insta
 
 The Visual C++ Redistributable Packages install and register all Visual C++ libraries. If you use one, run it as a prerequisite on the target system before you install your application. We recommend that you use these packages for your deployments because they enable automatic updating of the Visual C++ libraries. For an example about how to use these packages, see [Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package](deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).
 
-Each Visual C++ Redistributable package checks for the existence of a more recent version on the machine. If a more recent version is found, the package won't get installed. In Visual Studio 2015 or later, Redistributable packages display an error message stating that setup failed. If a package is run by using the **`/quiet`** flag, no error message is displayed. In either case, an error is logged by the Microsoft installer, and an error result is returned to the caller. In Visual Studio 2015 and later, you can avoid this error by checking the registry to find out if a more recent version is installed. The current installed version number is stored in the `HKEY_LOCAL_MACHINE\SOFTWARE[\Wow6432Node]\Microsoft\VisualStudio\14.0\VC\Runtimes\{x86|x64|ARM}` key. The version number is 14.0 for Visual Studio 2015, 2017, 2019, and 2022 because the latest Redistributable is binary compatible with previous versions back to 2015. The key is `ARM`, `x86`, or `x64` depending on the installed vcredist versions for the platform. (You need to check under the `Wow6432Node` subkey only if you're using Regedit to view the version of the installed x86 package on an x64 platform.) The version number is stored in the `REG_SZ` string value **`Version`** and also in the set of **`Major`**, **`Minor`**, **`Bld`**, and **`Rbld`** `REG_DWORD` values. To avoid an error at install time, you must skip installation of the Redistributable package if the currently installed version is more recent.
+Each Visual C++ Redistributable package checks for the existence of a more recent version on the machine. If a more recent version is found, the package won't get installed. In Visual Studio 2015 or later, Redistributable packages display an error message stating that setup failed. If a package is run by using the **`/quiet`** flag, no error message is displayed. In either case, an error is logged by the Microsoft installer, and an error result is returned to the caller. In Visual Studio 2015 and later, you can avoid this error by checking the registry to find out if a more recent version is installed. The current installed version number is stored in the `HKEY_LOCAL_MACHINE\SOFTWARE[\Wow6432Node]\Microsoft\VisualStudio\14.0\VC\Runtimes\{x86|x64|arm64}` key. The version number is 14.0 for Visual Studio 2015, 2017, 2019, and 2022 because the latest Redistributable is binary compatible with previous versions back to 2015. The key is `arm64`, `x86`, or `x64` depending on the installed vcredist versions for the platform. (You need to check under the `Wow6432Node` subkey only if you're using Regedit to view the version of the installed x86 package on an x64 platform.) The version number is stored in the `REG_SZ` string value **`Version`** and also in the set of **`Major`**, **`Minor`**, **`Bld`**, and **`Rbld`** `REG_DWORD` values. To avoid an error at install time, you must skip installation of the Redistributable package if the currently installed version is more recent.
+
+### Command-line options for the Redistributable packages
+
+The Visual C++ Redistributable supports several command-line options. The `/?`, `/h`, or `/help` options display a pop-up dialog that lists the available options. You may specify `/install` to install, `/repair` to repair, or `/uninstall` to uninstall the Redistributable. The `/layout` option copies the complete contents of the Redistributable in the current directory. By default, the Redistributable installs its contents and prompts the user for information and whether to restart after installation. You can specify the `/passive` option, which displays progress, but doesn't otherwise require user interaction. You can also specify a `/quiet` option, which doesn't display any UI or require any user interaction. The `/norestart` option suppresses any attempts to restart. By default, a log file is created in *`%TEMP%`*. You can use `/log filename.txt` to log to a specific file.
+
+This example command installs the x64 Redistributable. It shows installation progress, but doesn't require user interaction or a restart:
+
+```cmd
+vc_redist.x64.exe /install /passive /norestart
+```
 
 ## Install the redistributable merge modules
 
