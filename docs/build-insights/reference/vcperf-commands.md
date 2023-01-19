@@ -18,7 +18,7 @@ This article lists and describes the commands available in *`vcperf.exe`*, and h
 ## Commands to start and stop traces
 
 > [!IMPORTANT]
-> Unless /noadmin is provided, all the following commands require administrative privileges.
+> Unless /noadmin is provided, the following commands require administrative privileges.
 
 | Option           | Arguments and description |
 |------------------|---------------------------|
