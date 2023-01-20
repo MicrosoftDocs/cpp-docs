@@ -167,6 +167,13 @@ int main()
 }
 ```
 
+```Output
+The second element of vb is false
+The held value from the second element of vb is false
+The second element of vb is true
+The held value from the second element of vb is false
+```
+
 ## <a name="pointer"></a> `vector<bool>::pointer`
 
 A type that describes an object that can serve as a pointer to a Boolean element of the sequence contained by the `vector<bool>` object.
