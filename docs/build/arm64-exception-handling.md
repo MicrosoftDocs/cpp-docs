@@ -222,7 +222,7 @@ This data is broken into four sections:
 
    g. **Extended Epilog Count** and **Extended Code Words** are 16-bit and 8-bit fields, respectively. They provide more space for encoding an unusually large number of epilogs, or an unusually large number of unwind code words. The extension word that contains these fields is only present if both the **Epilog Count** and **Code Words** fields in the first header word are 0.
 
-1. If **Epilog Count** isn't zero, a list of information about epilog scopes, packed one to a word,  comes after the header and optional extended header. They're stored in order of increasing starting offset. Each scope contains the following bits:
+1. If the count of epilogs isn't zero, a list of information about epilog scopes, packed one to a word, comes after the header and optional extended header. They're stored in order of increasing starting offset. Each scope contains the following bits:
 
    a. **Epilog Start Offset** is an 18-bit field that has the offset in bytes, divided by 4, of the epilog relative to the start of the function.
 
