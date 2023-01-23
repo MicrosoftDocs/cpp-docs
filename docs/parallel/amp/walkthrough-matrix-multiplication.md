@@ -2,7 +2,6 @@
 description: "Learn more about: Walkthrough: Matrix Multiplication"
 title: "Walkthrough: Matrix Multiplication"
 ms.date: 10/27/2021
-ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
 ---
 # Walkthrough: Matrix Multiplication
 
@@ -13,10 +12,12 @@ This step-by-step walkthrough demonstrates how to use C++ AMP to accelerate the 
 Before you start:
 
 - Read [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md).
-
 - Read [Using Tiles](../../parallel/amp/using-tiles.md).
-
 - Make sure that you are running at least Windows 7, or Windows Server 2008 R2.
+
+> [!NOTE]
+> C++ AMP headers are deprecated starting with Visual Studio 2022 version 17.0.
+> Including any AMP headers will generate build errors. Define `_SILENCE_AMP_DEPRECATION_WARNINGS` before including any AMP headers to silence the warnings.
 
 ### To create the project
 
