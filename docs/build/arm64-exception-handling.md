@@ -218,7 +218,7 @@ This data is broken into four sections:
 
       2. If **E** is 1, then this field specifies the index of the first unwind code that describes the one and only epilog.
 
-   f. **Code Words** is a 5-bit field that specifies the number of 32-bit words needed to contain all of the unwind codes in section 3. If more than 31 words are required (that is, if there are more than 124 unwind code bytes), then this field must be 0 to indicate that an extension word is required.
+   f. **Code Words** is a 5-bit field that specifies the number of 32-bit words needed to contain all of the unwind codes in section 3. If more than 31 words (that is, 124 unwind codes) are required, then this field must be 0 to indicate that an extension word is required.
 
    g. **Extended Epilog Count** and **Extended Code Words** are 16-bit and 8-bit fields, respectively. They provide more space for encoding an unusually large number of epilogs, or an unusually large number of unwind code words. The extension word that contains these fields is only present if both the **Epilog Count** and **Code Words** fields in the first header word are 0.
 
