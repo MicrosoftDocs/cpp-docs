@@ -2,17 +2,20 @@
 description: "Learn more about: Graphics (C++ AMP)"
 title: "Graphics (C++ AMP)"
 ms.date: "11/04/2016"
-ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
 ---
 # Graphics (C++ AMP)
 
-C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) namespace that you can use to access the texture support on GPUs. Some common scenarios are:
+C++ AMP contains several APIs in the [`Concurrency::graphics`](../../parallel/amp/reference/concurrency-graphics-namespace.md) namespace that you can use to access the texture support on GPUs. Some common scenarios are:
 
-- You can use the [texture](../../parallel/amp/reference/texture-class.md) class as a data container for computation and exploit the *spatial locality* of the texture cache and layouts of GPU hardware. Spatial locality is the property of data elements being physically close to each other.
+- You can use the [`texture`](../../parallel/amp/reference/texture-class.md) class as a data container for computation and exploit the *spatial locality* of the texture cache and layouts of GPU hardware. Spatial locality is the property of data elements being physically close to each other.
 
 - The runtime provides efficient interoperability with non-compute shaders. Pixel, vertex, tessellation, and hull shaders frequently consume or produce textures that you can use in your C++ AMP computations.
 
 - The graphics APIs in C++ AMP provide alternative ways to access sub-word packed buffers. Textures that have formats that represent *texels* (texture elements) that are composed of 8-bit or 16-bit scalars allow access to such packed data storage.
+
+> [!NOTE]
+> C++ AMP headers are deprecated starting with Visual Studio 2022 version 17.0.
+> Including any AMP headers will generate build errors. Define `_SILENCE_AMP_DEPRECATION_WARNINGS` before including any AMP headers to silence the warnings.
 
 ## The norm and unorm Types
 
@@ -56,7 +59,7 @@ The Short Vector Library supports the `vector_type.identifier` accessor construc
 
 ## Texture Classes
 
-Many GPUs have hardware and caches that are optimized to fetch pixels and texels and to render images and textures. The [texture\<T,N>](../../parallel/amp/reference/texture-class.md) class, which is a container class for texel objects, exposes the texture functionality of these GPUs. A texel can be:
+Many GPUs have hardware and caches that are optimized to fetch pixels and texels and to render images and textures. The [`texture<T,N>`](../../parallel/amp/reference/texture-class.md) class, which is a container class for texel objects, exposes the texture functionality of these GPUs. A texel can be:
 
 - An **`int`**, `uint`, **`float`**, **`double`**, `norm`, or `unorm` scalar.
 

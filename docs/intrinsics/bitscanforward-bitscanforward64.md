@@ -39,7 +39,7 @@ unsigned char _BitScanForward64(
 
 ## Remarks
 
-If a set bit is found, the bit position of the first set bit found is returned in the first parameter. If no set bit is found, 0 is returned; otherwise, 1 is returned.
+If a set bit is found, the bit position of the first set bit is written to the address specified in the first parameter and the function returns 1. If no bit is found, the function returns 0 and the value written to the address in the first parameter is undefined.
 
 ## Requirements
 
