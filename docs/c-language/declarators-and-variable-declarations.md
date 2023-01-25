@@ -35,22 +35,22 @@ You use declarators to declare arrays of values, pointers to values, and functio
 
 ## Syntax
 
-*`declarator`*:<br/>
+*`declarator`*:\
 &emsp;*`pointer`*<sub>opt</sub> *`direct-declarator`*
 
-*`direct-declarator`*:<br/>
-&emsp;*`identifier`*<br/>
-&emsp;**`(`**  *`declarator`*  **`)`**<br/>
-&emsp;*`direct-declarator`* **`[`** *`constant-expression`*<sub>opt</sub> **`]`**<br/>
-&emsp;*`direct-declarator`* **`(`** *`parameter-type-list`* **`)`**<br/>
+*`direct-declarator`*:\
+&emsp;*`identifier`*\
+&emsp;**`(`**  *`declarator`*  **`)`**\
+&emsp;*`direct-declarator`* **`[`** *`constant-expression`*<sub>opt</sub> **`]`**\
+&emsp;*`direct-declarator`* **`(`** *`parameter-type-list`* **`)`**\
 &emsp;*`direct-declarator`* **`(`** *`identifier-list`*<sub>opt</sub> **`)`**
 
-*`pointer`*:<br/>
-&emsp;**`*`** *`type-qualifier-list`*<sub>opt</sub><br/>
+*`pointer`*:\
+&emsp;**`*`** *`type-qualifier-list`*<sub>opt</sub>\
 &emsp;**`*`** *`type-qualifier-list`*<sub>opt</sub> *`pointer`*
 
-*`type-qualifier-list`*:<br/>
-&emsp;*`type-qualifier`*<br/>
+*`type-qualifier-list`*:\
+&emsp;*`type-qualifier`*\
 &emsp;*`type-qualifier-list`* *`type-qualifier`*
 
 > [!NOTE]

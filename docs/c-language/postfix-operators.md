@@ -11,14 +11,14 @@ The postfix operators have the highest precedence (the tightest binding) in expr
 
 ## Syntax
 
-*postfix-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*primary-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **[**  *expression*  **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **(**  *argument-expression-list*<sub>opt</sub> **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **.**  *identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **->**  *identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **++**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **--**
+*`postfix-expression`*:\
+&emsp;*`primary-expression`*\
+&emsp;*`postfix-expression`*  **`[`**  *`expression`*  **`]`**\
+&emsp;*`postfix-expression`*  **`(`**  *`argument-expression-list`*<sub>opt</sub> **`)`**\
+&emsp;*`postfix-expression`*  **`.`**  *`identifier`*\
+&emsp;*`postfix-expression`*  **`->`**  *`identifier`*\
+&emsp;*`postfix-expression`*  **`++`**\
+&emsp;*`postfix-expression`*  **`--`**
 
 Operators in this precedence level are the array subscripts, function calls, structure and union members, and postfix increment and decrement operators.
 

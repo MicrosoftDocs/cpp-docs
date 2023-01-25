@@ -12,8 +12,8 @@ The **`break`** statement terminates the execution of the nearest enclosing **`d
 
 ## Syntax
 
-*jump-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**break ;**
+*`jump-statement`*:\
+&emsp;**`break ;`**
 
 The **`break`** statement is frequently used to terminate the processing of a particular case within a **`switch`** statement. Lack of an enclosing iterative or **`switch`** statement generates an error.
 

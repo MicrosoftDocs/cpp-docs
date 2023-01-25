@@ -11,29 +11,29 @@ Arguments are names of values passed to a function by a function call. Parameter
 
 ## Syntax
 
-*`function-definition`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`*<sub>opt</sub> *`attribute-seq`*<sub>opt</sub> *`declarator`* *`declaration-list`*<sub>opt</sub> *`compound-statement`*
+*`function-definition`*:\
+&emsp;*`declaration-specifiers`*<sub>opt</sub> *`attribute-seq`*<sub>opt</sub> *`declarator`* *`declaration-list`*<sub>opt</sub> *`compound-statement`*
 
 /\* *`attribute-seq`* is Microsoft-specific \*/
 
-*`declarator`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`pointer`*<sub>opt</sub> *`direct-declarator`*
+*`declarator`*:\
+&emsp;*`pointer`*<sub>opt</sub> *`direct-declarator`*
 
-*`direct-declarator`*: /\* A function declarator \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`parameter-type-list`*  **`)`** /\* New-style declarator \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`identifier-list`*<sub>opt</sub> **`)`** /\* Obsolete-style declarator \*/
+*`direct-declarator`*: /\* A function declarator \*/\
+&emsp;*`direct-declarator`*  **`(`**  *`parameter-type-list`*  **`)`** /\* New-style declarator \*/\
+&emsp;*`direct-declarator`*  **`(`**  *`identifier-list`*<sub>opt</sub> **`)`** /\* Obsolete-style declarator \*/
 
-*`parameter-type-list`*: /\* The parameter list \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`, ...`**
+*`parameter-type-list`*: /\* The parameter list \*/\
+&emsp;*`parameter-list`* \
+&emsp;*`parameter-list`* **`, ...`**
 
-*`parameter-list`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-declaration`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`,`**  *`parameter-declaration`*
+*`parameter-list`*:\
+&emsp;*`parameter-declaration`*\
+&emsp;*`parameter-list`* **`,`**  *`parameter-declaration`*
 
-*`parameter-declaration`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`* *`declarator`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`* *`abstract-declarator`*<sub>opt</sub>
+*`parameter-declaration`*:\
+&emsp;*`declaration-specifiers`* *`declarator`*\
+&emsp;*`declaration-specifiers`* *`abstract-declarator`*<sub>opt</sub>
 
 The *`parameter-type-list`* is a sequence of parameter declarations separated by commas. The form of each parameter in a parameter list looks like this:
 

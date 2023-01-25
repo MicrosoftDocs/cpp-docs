@@ -11,15 +11,15 @@ Primary expressions are the building blocks of more complex expressions. They ma
 ## Syntax
 
 *`primary-expression`*:\
-&nbsp;&nbsp;&nbsp;&nbsp;*`identifier`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`constant`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`string-literal`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *`expression`* **)**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`generic-selection`*
+&emsp;*`identifier`*\
+&emsp;*`constant`*\
+&emsp;*`string-literal`*\
+&emsp;**`(`** *`expression`* **`)`**\
+&emsp;*`generic-selection`*
 
-*expression*:\
-&nbsp;&nbsp;&nbsp;&nbsp;*`assignment-expression`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`expression`***,** *`assignment-expression`*
+*`expression`*:\
+&emsp;*`assignment-expression`*\
+&emsp;*`expression`* **`,`** *`assignment-expression`*
 
 ## See also
 

@@ -14,19 +14,19 @@ Allows selection among multiple sections of code, depending on the value of an i
 ## Syntax
 
 > *`selection-statement`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; **`switch`**&nbsp;**`(`**&nbsp;*`init-statement`*<sub>opt</sub><sup>C++17</sup>&nbsp;*`condition`*&nbsp;**`)`**&nbsp;*`statement`*
+> &emsp; **`switch`**&nbsp;**`(`**&nbsp;*`init-statement`*<sub>opt</sub><sup>C++17</sup>&nbsp;*`condition`*&nbsp;**`)`**&nbsp;*`statement`*
 
 > *`init-statement`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; *`expression-statement`*\
-> &nbsp;&nbsp;&nbsp;&nbsp; *`simple-declaration`*
+> &emsp; *`expression-statement`*\
+> &emsp; *`simple-declaration`*
 
 > *`condition`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; *`expression`*\
-> &nbsp;&nbsp;&nbsp;&nbsp; *`attribute-specifier-seq`*<sub>opt</sub>&nbsp;*`decl-specifier-seq`*&nbsp;*`declarator`*&nbsp;*`brace-or-equal-initializer`*
+> &emsp; *`expression`*\
+> &emsp; *`attribute-specifier-seq`*<sub>opt</sub>&nbsp;*`decl-specifier-seq`*&nbsp;*`declarator`*&nbsp;*`brace-or-equal-initializer`*
 
 > *`labeled-statement`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; **`case`**&nbsp;*`constant-expression`*&nbsp;**`:`**&nbsp;*`statement`*\
-> &nbsp;&nbsp;&nbsp;&nbsp; **`default`**&nbsp;**`:`**&nbsp;*`statement`*
+> &emsp; **`case`**&nbsp;*`constant-expression`*&nbsp;**`:`**&nbsp;*`statement`*\
+> &emsp; **`default`**&nbsp;**`:`**&nbsp;*`statement`*
 
 ## Remarks
 

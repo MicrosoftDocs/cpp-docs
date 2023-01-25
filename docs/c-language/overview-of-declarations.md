@@ -11,23 +11,23 @@ A "declaration" specifies the interpretation and attributes of a set of identifi
 
 ## Syntax
 
-*`declaration`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`* *`attribute-seq`*<sub>opt</sub> *`init-declarator-list`*<sub>opt</sub>**`;`**
+*`declaration`*:\
+&emsp;*`declaration-specifiers`* *`attribute-seq`*<sub>opt</sub> *`init-declarator-list`*<sub>opt</sub> **`;`**
 
 /\* *`attribute-seq`*<sub>opt</sub> is Microsoft-specific */
 
-*`declaration-specifiers`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`storage-class-specifier`* *`declaration-specifiers`*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`type-specifier`* *`declaration-specifiers`*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`type-qualifier`* *`declaration-specifiers`*<sub>opt</sub>
+*`declaration-specifiers`*:\
+&emsp;*`storage-class-specifier`* *`declaration-specifiers`*<sub>opt</sub>\
+&emsp;*`type-specifier`* *`declaration-specifiers`*<sub>opt</sub>\
+&emsp;*`type-qualifier`* *`declaration-specifiers`*<sub>opt</sub>
 
-*`init-declarator-list`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator-list`* **`,`** *`init-declarator`*
+*`init-declarator-list`*:\
+&emsp;*`init-declarator`*\
+&emsp;*`init-declarator-list`* **`,`** *`init-declarator`*
 
-*`init-declarator`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`* **`=`** *`initializer`*
+*`init-declarator`*:\
+&emsp;*`declarator`*\
+&emsp;*`declarator`* **`=`** *`initializer`*
 
 > [!NOTE]
 > This syntax for *`declaration`* is not repeated in the following sections. Syntax in the following sections usually begins with the *`declarator`* nonterminal.
@@ -46,7 +46,7 @@ declares a variable named `fp` as a pointer to a nonmodifiable (**`const`**) **`
 
 A declaration must have at least one declarator, or its type specifier must declare a structure tag, union tag, or members of an enumeration. Declarators provide any remaining information about an identifier. A declarator is an identifier that can be modified with brackets (**`[ ]`**), asterisks (<strong>`*`</strong>), or parentheses ( **`( )`** ) to declare an array, pointer, or function type, respectively. When you declare simple variables (such as character, integer, and floating-point items), or structures and unions of simple variables, the `declarator` is just an identifier. For more information on declarators, see [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md).
 
-All definitions are implicitly declarations, but not all declarations are definitions. For example, variable declarations that begin with the **`extern`** storage-class specifier are "referencing," rather than "defining" declarations. If an external variable is to be referred to before it's defined, or if it's defined in another source file from the one where it's used, an **`extern`** declaration is necessary. Storage is not allocated by "referencing" declarations, nor can variables be initialized in declarations.
+All definitions are implicitly declarations, but not all declarations are definitions. For example, variable declarations using the **`extern`** storage-class specifier are "referencing," rather than "defining" declarations. If an external variable is to be referred to before it's defined, or if it's defined in another source file from the one where it's used, an **`extern`** declaration is necessary. Storage isn't allocated by "referencing" declarations, nor can variables be initialized in declarations.
 
 A storage class or a type (or both) is required in variable declarations. Except for **`__declspec`**, only one storage-class specifier is allowed in a declaration and not all storage-class specifiers are permitted in every context. The **`__declspec`** storage class is allowed with other storage-class specifiers, and it's allowed more than once. The storage-class specifier of a declaration affects how the declared item is stored and initialized, and which parts of a program can reference the item.
 
@@ -56,7 +56,7 @@ The location of the declaration within the source program and the presence or ab
 
 Type specifiers provide some information about the data types of identifiers. The default type specifier is **`int`**. For more information, see [Type Specifiers](../c-language/c-type-specifiers.md). Type specifiers can also define type tags, structure and union component names, and enumeration constants. For more information, see [Enumeration Declarations](../c-language/c-enumeration-declarations.md), [Structure Declarations](../c-language/structure-declarations.md), and [Union Declarations](../c-language/union-declarations.md).
 
-There are two *`type-qualifier`* terminals: **`const`** and **`volatile`**. These qualifiers specify additional properties of types that are relevant only when accessing objects of that type through l-values. For more information on **`const`** and **`volatile`**, see [Type Qualifiers](../c-language/type-qualifiers.md). For a definition of l-values, see [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md).
+There are two *`type-qualifier`* terminals: **`const`** and **`volatile`**. These qualifiers specify extra properties of types that are relevant only when accessing objects of that type through l-values. For more information on **`const`** and **`volatile`**, see [Type Qualifiers](../c-language/type-qualifiers.md). For a definition of l-values, see [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md).
 
 ## See also
 
