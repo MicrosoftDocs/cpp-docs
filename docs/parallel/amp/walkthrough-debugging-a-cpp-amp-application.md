@@ -9,25 +9,22 @@ helpviewer_keywords: ["debugging, C++ Accelerated Massive Parallelism", "C++ AMP
 This article demonstrates how to debug an application that uses C++ Accelerated Massive Parallelism (C++ AMP) to take advantage of the graphics processing unit (GPU). It uses a parallel-reduction program that sums up a large array of integers. This walkthrough illustrates the following tasks:
 
 - Launching the GPU debugger.
-
 - Inspecting GPU threads in the GPU Threads window.
-
 - Using the **Parallel Stacks** window to simultaneously observe the call stacks of multiple GPU threads.
-
 - Using the **Parallel Watch** window to inspect values of a single expression across multiple threads at the same time.
-
 - Flagging, freezing, thawing, and grouping GPU threads.
-
 - Executing all the threads of a tile to a specific location in code.
 
 ## Prerequisites
 
 Before you start this walkthrough:
 
+> [!NOTE]
+> C++ AMP headers are deprecated starting with Visual Studio 2022 version 17.0.
+> Including any AMP headers will generate build errors. Define `_SILENCE_AMP_DEPRECATION_WARNINGS` before including any AMP headers to silence the warnings.
+
 - Read [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md).
-
 - Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display line numbers in the editor](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).
-
 - Make sure you're running at least Windows 8 or Windows Server 2012 to support debugging on the software emulator.
 
 [!INCLUDE[note_settings_general](../../mfc/includes/note_settings_general_md.md)]
