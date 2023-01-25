@@ -11,14 +11,14 @@ Operands of the postfix increment and decrement operators are scalar types that 
 
 ## Syntax
 
-*postfix-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **++**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*  **--**
+*`postfix-expression`*:\
+&emsp;*`postfix-expression`*  **`++`**\
+&emsp;*`postfix-expression`*  **`--`**
 
 The result of the postfix increment or decrement operation is the value of the operand. After the result is obtained, the value of the operand is incremented (or decremented). The following code illustrates the postfix increment operator.
 
-```
-if( var++ > 0 )
+```C
+if ( var++ > 0 )
     *p++ = *q++;
 ```
 

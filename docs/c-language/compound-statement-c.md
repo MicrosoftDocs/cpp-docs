@@ -11,24 +11,24 @@ A compound statement (also called a "block") typically appears as the body of an
 
 ## Syntax
 
-*compound-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-list*<sub>opt</sub> *statement-list*<sub>opt</sub> **}**
+*`compound-statement`*:\
+&emsp;**`{`** *`declaration-list`*<sub>opt</sub> *`statement-list`*<sub>opt</sub> **`}`**
 
-*declaration-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration-list* *declaration*
+*`declaration-list`*:\
+&emsp;*`declaration`*\
+&emsp;*`declaration-list`* *`declaration`*
 
-*statement-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*statement-list* *statement*
+*`statement-list`*:\
+&emsp;*`statement`*\
+&emsp;*`statement-list`* *`statement`*
 
-If there are declarations, they must come before any statements. The scope of each identifier declared at the beginning of a compound statement extends from its declaration point to the end of the block. It is visible throughout the block unless a declaration of the same identifier exists in an inner block.
+If there are declarations, they must come before any statements. The scope of each identifier declared at the beginning of a compound statement extends from its declaration point to the end of the block. It's visible throughout the block unless a declaration of the same identifier exists in an inner block.
 
 Identifiers in a compound statement are presumed **`auto`** unless explicitly declared otherwise with **`register`**, **`static`**, or **`extern`**, except functions, which can only be **`extern`**. You can leave off the **`extern`** specifier in function declarations and the function will still be **`extern`**.
 
-Storage is not allocated and initialization is not permitted if a variable or function is declared in a compound statement with storage class **`extern`**. The declaration refers to an external variable or function defined elsewhere.
+Storage isn't allocated and initialization isn't permitted if a variable or function is declared in a compound statement with storage class **`extern`**. The declaration refers to an external variable or function defined elsewhere.
 
-Variables declared in a block with the **`auto`** or **`register`** keyword are reallocated and, if necessary, initialized each time the compound statement is entered. These variables are not defined after the compound statement is exited. If a variable declared inside a block has the **`static`** attribute, the variable is initialized when program execution begins and keeps its value throughout the program. See [Storage Classes](../c-language/c-storage-classes.md) for information about **`static`**.
+Variables declared in a block with the **`auto`** or **`register`** keyword are reallocated and, if necessary, initialized each time the compound statement is entered. These variables are no longer defined after the compound statement is exited. If a variable declared inside a block has the **`static`** attribute, the variable is initialized when program execution begins and keeps its value throughout the program. See [Storage Classes](../c-language/c-storage-classes.md) for information about **`static`**.
 
 This example illustrates a compound statement:
 

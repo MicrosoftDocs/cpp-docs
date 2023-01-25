@@ -10,9 +10,9 @@ ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
 
 ## Syntax
 
-*expression* *assignment-operator* *expression*
+*`expression`* *`assignment-operator`* *`expression`*
 
-*assignment-operator*: one of<br/>
+*`assignment-operator`*: one of\
 &emsp;**`=`**&emsp;**`*=`**&emsp;**`/=`**&emsp;**`%=`**&emsp;**`+=`**&emsp;**`-=`**&emsp;**`<<=`**&emsp;**`>>=`**&emsp;**`&=`**&emsp;**`^=`**&emsp;**`|=`**
 
 ## Remarks

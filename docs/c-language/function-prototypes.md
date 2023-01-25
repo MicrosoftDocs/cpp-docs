@@ -11,32 +11,32 @@ A function declaration precedes the function definition and specifies the name, 
 
 ## Syntax
 
-*declaration*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers* *attribute-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
+*`declaration`*:\
+&emsp;*`declaration-specifiers`* *`attribute-seq`*<sub>opt</sub> *`init-declarator-list`*<sub>opt</sub> **`;`**
 
-/\* *attribute-seq*<sub>opt</sub> is Microsoft-specific \*/
+/\* *`attribute-seq`*<sub>opt</sub> is Microsoft-specific \*/
 
-*declaration-specifiers*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declaration-specifiers*<sub>opt</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier* *declaration-specifiers*<sub>opt</sub>
+*`declaration-specifiers`*:\
+&emsp;*`storage-class-specifier`* *`declaration-specifiers`*<sub>opt</sub> \
+&emsp;*`type-specifier`* *`declaration-specifiers`*<sub>opt</sub> \
+&emsp;*`type-qualifier`* *`declaration-specifiers`*<sub>opt</sub>
 
-*init-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list*  **,**  *init-declarator*
+*`init-declarator-list`*:\
+&emsp;*`init-declarator`*\
+&emsp;*`init-declarator-list`*  **`,`**  *`init-declarator`*
 
-*init-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declarator* **=** *initializer*
+*`init-declarator`*:\
+&emsp;*`declarator`*\
+&emsp;*`declarator`* **`=`** *`initializer`*
 
-*declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*
+*`declarator`*:\
+&emsp;*`pointer`*<sub>opt</sub> *`direct-declarator`*
 
-*direct-declarator*: /\* A function declarator \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *parameter-type-list*  **)**  /\* New-style declarator \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *identifier-list*<sub>opt</sub> **)** /\* Obsolete-style declarator \*/
+*`direct-declarator`*: /\* A function declarator \*/\
+&emsp;*`direct-declarator`*  **`(`**  *`parameter-type-list`*  **`)`**  /\* New-style declarator \*/\
+&emsp;*`direct-declarator`*  **`(`**  *`identifier-list`*<sub>opt</sub> **`)`** /\* Obsolete-style declarator \*/
 
-The prototype has the same form as the function definition, except that it is terminated by a semicolon immediately following the closing parenthesis and therefore has no body. In either case, the return type must agree with the return type specified in the function definition.
+The prototype has the same form as the function definition, except that it's terminated by a semicolon immediately following the closing parenthesis and therefore has no body. In either case, the return type must agree with the return type specified in the function definition.
 
 Function prototypes have the following important uses:
 
@@ -48,7 +48,7 @@ Function prototypes have the following important uses:
 
 - The parameter list is used to check that arguments in the function call match the parameters in the function definition.
 
-The converted type of each parameter determines the interpretation of the arguments that the function call places on the stack. A type mismatch between an argument and a parameter may cause the arguments on the stack to be misinterpreted. For example, on a 16-bit computer, if a 16-bit pointer is passed as an argument, then declared as a **`long`** parameter, the first 32 bits on the stack are interpreted as a **`long`** parameter. This error creates problems not only with the **`long`** parameter, but with any parameters that follow it. You can detect errors of this kind by declaring complete function prototypes for all functions.
+The converted type of each parameter determines the interpretation of the arguments that the function call places on the stack. A type mismatch between an argument and a parameter may cause the arguments on the stack to be misinterpreted. For example, on a 16-bit computer, if a 16-bit pointer is passed as an argument, then declared as a **`long`** parameter, the first 32 bits on the stack are interpreted as a **`long`** parameter. This error creates problems not only with the **`long`** parameter, but with all the subsequent parameters. You can detect errors of this kind by declaring complete function prototypes for all functions.
 
 A prototype establishes the attributes of a function. Then, function calls that precede the function definition (or that occur in other source files) can be checked for argument-type and return-type mismatches. For example, if you specify the **`static`** storage-class specifier in a prototype, you must also specify the **`static`** storage class in the function definition.
 
@@ -73,7 +73,7 @@ struct S;
 void func1( struct S * );
 ```
 
-Under **/Ze**, the tag is still entered at global scope.
+Under **`/Ze`**, the tag is still entered at global scope.
 
 ## See also
 

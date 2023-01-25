@@ -72,7 +72,7 @@ For more information about basic Internet programming tasks, see the article [In
 ## Inheritance Hierarchy
 
 [`CObject`](../../mfc/reference/cobject-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`CInternetSession`
+&emsp;`CInternetSession`
 
 ## Requirements
 

@@ -13,31 +13,31 @@ The **#if** directive, with the **#elif**, **#else**, and **#endif** directives,
 ## Grammar
 
 *conditional* :\
-&nbsp;&nbsp;&nbsp;&nbsp;*if-part elif-parts*<sub>opt</sub> *else-part*<sub>opt</sub> *endif-line*
+&emsp;*if-part elif-parts*<sub>opt</sub> *else-part*<sub>opt</sub> *endif-line*
 
 *if-part* :\
-&nbsp;&nbsp;&nbsp;&nbsp;*if-line text*
+&emsp;*if-line text*
 
 *if-line* :\
-&nbsp;&nbsp;&nbsp;&nbsp;**#if** *constant-expression*\
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef** *identifier*\
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef** *identifier*
+&emsp;**#if** *constant-expression*\
+&emsp;**#ifdef** *identifier*\
+&emsp;**#ifndef** *identifier*
 
 *elif-parts* :\
-&nbsp;&nbsp;&nbsp;&nbsp;*elif-line text*\
-&nbsp;&nbsp;&nbsp;&nbsp;*elif-parts elif-line text*
+&emsp;*elif-line text*\
+&emsp;*elif-parts elif-line text*
 
 *elif-line* :\
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif**  *constant-expression*
+&emsp;**#elif**  *constant-expression*
 
 *else-part* :\
-&nbsp;&nbsp;&nbsp;&nbsp;*else-line text*
+&emsp;*else-line text*
 
 *else-line* :\
-&nbsp;&nbsp;&nbsp;&nbsp;**#else**
+&emsp;**#else**
 
 *endif-line* :\
-&nbsp;&nbsp;&nbsp;&nbsp;**#endif**
+&emsp;**#endif**
 
 ## Remarks
 
