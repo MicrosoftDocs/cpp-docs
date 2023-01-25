@@ -11,23 +11,23 @@ Type specifiers in declarations define the type of a variable or function declar
 
 ## Syntax
 
-*type-specifier*:
-&nbsp;&nbsp;&nbsp;&nbsp;**`void`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`char`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`short`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`int`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`long`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`float`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`double`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`signed`**
-&nbsp;&nbsp;&nbsp;&nbsp;**`unsigned`**
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier*
-&nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier*
-&nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*
+*`type-specifier`*:
+&emsp;**`void`**
+&emsp;**`char`**
+&emsp;**`short`**
+&emsp;**`int`**
+&emsp;**`long`**
+&emsp;**`float`**
+&emsp;**`double`**
+&emsp;**`signed`**
+&emsp;**`unsigned`**
+&emsp;*`struct-or-union-specifier`*
+&emsp;*`enum-specifier`*
+&emsp;*`typedef-name`*
 
-The **`signed char`**, **`signed int`**, **`signed short int`**, and **signed long int** types, together with their **`unsigned`** counterparts and **`enum`**, are called *integral* types. The **`float`**, **`double`**, and **`long double`** type specifiers are referred to as *floating* or *floating-point* types. You can use any integral or floating-point type specifier in a variable or function declaration. If a *type-specifier* is not provided in a declaration, it is taken to be **`int`**.
+The **`signed char`**, **`signed int`**, **`signed short int`**, and **signed long int** types, together with their **`unsigned`** counterparts and **`enum`**, are called *integral* types. The **`float`**, **`double`**, and **`long double`** type specifiers are referred to as *floating* or *floating-point* types. You can use any integral or floating-point type specifier in a variable or function declaration. Originally, if a *`type-specifier`* wasn't provided in a declaration, it was taken to be **`int`**. The Microsoft compiler no longer accepts default **`int`** declarations.
 
-The optional keywords **`signed`** and **`unsigned`** can precede or follow any of the integral types, except **`enum`**, and can also be used alone as type specifiers, in which case they are understood as **`signed int`** and **`unsigned int`**, respectively. When used alone, the keyword **`int`** is assumed to be **`signed`**. When used alone, the keywords **`long`** and **`short`** are understood as **long int** and **`short int`**.
+The optional keywords **`signed`** and **`unsigned`** can precede or follow any of the integral types, except **`enum`**, and can also be used alone as type specifiers, in which case they're understood as **`signed int`** and **`unsigned int`**, respectively. When used alone, the keyword **`int`** is assumed to be **`signed`**. When used alone, the keywords **`long`** and **`short`** are understood as **long int** and **`short int`**.
 
 Enumeration types are considered basic types. Type specifiers for enumeration types are discussed in [Enumeration Declarations](../c-language/c-enumeration-declarations.md).
 
@@ -35,7 +35,7 @@ The keyword **`void`** has three uses: to specify a function return type, to spe
 
 **Microsoft Specific**
 
-Type checking is now ANSI-conforming, which means that type **`short`** and type **`int`** are distinct types. For example, this is a redefinition in the Microsoft C compiler that was accepted by previous versions of the compiler.
+Type checking is now ANSI-conforming, which means that type **`short`** and type **`int`** are distinct types. For example, this sample shows a redefinition in the Microsoft C compiler that was accepted by previous versions of the compiler.
 
 ```C
 int   myfunc();
@@ -60,13 +60,13 @@ unsigned int *pu
 pi = pu;  /* Now generates warning */
 ```
 
-Type **`void`** expressions are evaluated for side effects. You cannot use the (nonexistent) value of an expression that has type **`void`** in any way, nor can you convert a **`void`** expression (by implicit or explicit conversion) to any type except **`void`**. If you do use an expression of any other type in a context where a **`void`** expression is required, its value is discarded.
+Type **`void`** expressions are evaluated for side effects. You can't use the (nonexistent) value of an expression that has type **`void`** in any way, nor can you convert a **`void`** expression (by implicit or explicit conversion) to any type except **`void`**. If you do use an expression of any other type in a context where a **`void`** expression is required, its value is discarded.
 
-To conform to the ANSI specification, <strong>void\*\*</strong> cannot be used as <strong>int\*\*</strong>. Only **`void`**<strong>\*</strong> can be used as a pointer to an unspecified type.
+To conform to the ANSI specification, `void**` can't be used as `int**`. Only `void*` can be used as a pointer to an unspecified type.
 
 **END Microsoft Specific**
 
-You can create additional type specifiers with **`typedef`** declarations, as described in [Typedef Declarations](../c-language/typedef-declarations.md). See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information on the size of each type.
+You can create more type specifiers with **`typedef`** declarations, as described in [Typedef Declarations](../c-language/typedef-declarations.md). See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information on the size of each type.
 
 ## See also
 

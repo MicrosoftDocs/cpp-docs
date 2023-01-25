@@ -16,17 +16,17 @@ The extended attribute syntax for specifying storage-class information uses the 
 
 ## Syntax
 
-*`storage-class-specifier`*:<br/>
+*`storage-class-specifier`*:\
 &emsp;**`__declspec (`** *`extended-decl-modifier-seq`* **`)`** /\* Microsoft-specific \*/
 
-*`extended-decl-modifier-seq`*:&emsp;/\* Microsoft-specific \*/<br/>
-&emsp;*`extended-decl-modifier`*<sub>opt</sub><br/>
+*`extended-decl-modifier-seq`*:&emsp;/\* Microsoft-specific \*/\
+&emsp;*`extended-decl-modifier`*<sub>opt</sub>\
 &emsp;*`extended-decl-modifier-seq`* *`extended-decl-modifier`*
 
-*`extended-decl-modifier`*:&emsp;/\* Microsoft-specific \*/<br/>
-&emsp;**`thread`**<br/>
-&emsp;**`naked`**<br/>
-&emsp;**`dllimport`**<br/>
+*`extended-decl-modifier`*:&emsp;/\* Microsoft-specific \*/\
+&emsp;**`thread`**\
+&emsp;**`naked`**\
+&emsp;**`dllimport`**\
 &emsp;**`dllexport`**
 
 White space separates the declaration modifiers. An *`extended-decl-modifier-seq`* can be empty; in this case, **`__declspec`** has no effect.

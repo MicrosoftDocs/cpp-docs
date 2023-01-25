@@ -11,14 +11,14 @@ The shift operators shift their first operand left (**`<<`**) or right (**`>>`**
 
 ## Syntax
 
-*shift-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression* **`<<`** *additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression* **`>>`** *additive-expression*
+*`shift-expression`*:\
+&emsp;*`additive-expression`*\
+&emsp;*`shift-expression`* **`<<`** *`additive-expression`*\
+&emsp;*`shift-expression`* **`>>`** *`additive-expression`*
 
 Both operands must be integral values. These operators perform the usual arithmetic conversions; the type of the result is the type of the left operand after conversion.
 
-For leftward shifts, the vacated right bits are set to 0. For rightward shifts, the vacated left bits are filled based on the type of the first operand after conversion. If the type is **`unsigned`**, they are set to 0. Otherwise, they are filled with copies of the sign bit. For left-shift operators without overflow, the statement
+For leftward shifts, the vacated right bits are set to 0. For rightward shifts, the vacated left bits are filled based on the type of the first operand after conversion. If the type is **`unsigned`**, they're set to 0. Otherwise, they're filled with copies of the sign bit. For left-shift operators without overflow, the statement
 
 ```C
 expr1 << expr2
@@ -34,7 +34,7 @@ is equivalent to division by 2<sup>expr2</sup> if `expr1` is unsigned or has a n
 
 The result of a shift operation is undefined if the second operand is negative, or if the right operand is greater than or equal to the width in bits of the promoted left operand.
 
-Since the conversions performed by the shift operators do not provide for overflow or underflow conditions, information may be lost if the result of a shift operation cannot be represented in the type of the first operand after conversion.
+Since the conversions performed by the shift operators don't provide for overflow or underflow conditions, information may be lost if the result of a shift operation can't be represented in the type of the first operand after conversion.
 
 ```C
 unsigned int x, y, z;

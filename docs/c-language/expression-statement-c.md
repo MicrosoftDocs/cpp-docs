@@ -11,10 +11,10 @@ When an expression statement is executed, the expression is evaluated according 
 
 ## Syntax
 
-*expression-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*expression*<sub>opt</sub> **;**
+*`expression-statement`*:\
+&emsp;*`expression`*<sub>opt</sub> **`;`**
 
-All side effects from the expression evaluation are completed before the next statement is executed. An empty expression statement is called a null statement. See [The Null Statement](../c-language/null-statement-c.md) for more information.
+All side effects from the expression evaluation are completed before the next statement is executed. An empty expression statement is called a null statement. For more information, see [The Null Statement](../c-language/null-statement-c.md).
 
 These examples demonstrate expression statements.
 

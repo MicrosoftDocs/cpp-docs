@@ -52,10 +52,10 @@ The following example demonstrates how to use various methods in the `CMFCReBar`
 
 [CObject](../../mfc/reference/cobject-class.md)\
 └&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CPane](../../mfc/reference/cpane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CMFCReBar](../../mfc/reference/cmfcrebar-class.md)
+&emsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
+&emsp;&emsp;└&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
+&emsp;&emsp;&emsp;└&nbsp;[CPane](../../mfc/reference/cpane-class.md)\
+&emsp;&emsp;&emsp;&emsp;└&nbsp;[CMFCReBar](../../mfc/reference/cmfcrebar-class.md)
 
 ## Requirements
 

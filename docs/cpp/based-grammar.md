@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["based addressing"]
 ms.assetid: a68ff750-c7fa-4c0c-8d5f-2df76e4686c5
 ---
-# __based Grammar
+# `__based` Grammar
 
 **Microsoft Specific**
 
@@ -15,20 +15,20 @@ The only form of based addressing acceptable in 32-bit and 64-bit compilations i
 
 ## Grammar
 
-*based-range-modifier*:
-**__based(**  *base-expression*  **)**
+*`based-range-modifier`*:\
+&emsp;**`__based(`**  *`base-expression`*  **`)`**
 
-*base-expression*:
-*based-variablebased-abstract-declaratorsegment-namesegment-cast*
+*`base-expression`*:\
+&emsp;*`based-variable`* *`based-abstract-declarator`* *`segment-name`* *`segment-cast`*
 
-*based-variable*:
-*identifier*
+*`based-variable`*:\
+&emsp;*`identifier`*
 
-*based-abstract-declarator*:
-*abstract-declarator*
+*`based-abstract-declarator`*:\
+&emsp;*`abstract-declarator`*
 
-*base-type*:
-*type-name*
+*`base-type`*:\
+&emsp;*`type-name`*
 
 **END Microsoft Specific**
 

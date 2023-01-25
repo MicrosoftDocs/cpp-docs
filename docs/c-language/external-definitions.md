@@ -7,16 +7,16 @@ ms.assetid: 41e37bfc-b360-43b1-9972-28af2d365b20
 ---
 # External Definitions
 
-*translation-unit*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*external-declaration* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*translation-unit* *external-declaration*
+*`translation-unit`*:\
+&emsp;*`external-declaration`* \
+&emsp;*`translation-unit`* *`external-declaration`*
 
-*external-declaration*: /\* Allowed only at external (file) scope \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*function-definition*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration*
+*`external-declaration`*: /\* Allowed only at external (file) scope \*/\
+&emsp;*`function-definition`*\
+&emsp;*`declaration`*
 
-*function-definition*: /\* Declarator here is the function declarator \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
+*`function-definition`*: /\* This declarator is the function declarator \*/\
+&emsp;*`declaration-specifiers`*<sub>opt</sub> *`declarator`* *`declaration-list`*<sub>opt</sub> *`compound-statement`*
 
 ## See also
 
