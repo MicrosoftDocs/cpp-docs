@@ -12,6 +12,7 @@ In a C source program, the basic element recognized by the compiler is the "toke
 ## Syntax
 
 *token*:
+
 *keyword*
 
 *identifier*
