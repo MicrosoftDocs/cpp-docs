@@ -1,14 +1,13 @@
 ---
 title: "_popen, _wpopen"
 description: "A reference for the Microsoft C runtime (CRT) library functions _popen and _wpopen."
-ms.date: "4/2/2020"
+ms.date: "1/25/2023"
 api_name: ["_popen", "_wpopen", "_o__popen", "_o__wpopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tpopen", "popen", "wpopen", "_popen", "_wpopen", "_tpopen"]
 helpviewer_keywords: ["tpopen function", "pipes, creating", "_popen function", "_tpopen function", "popen function", "wpopen function", "_wpopen function"]
-ms.assetid: eb718ff2-c87d-4bd4-bd2e-ba317c3d6973
 no-loc: [_popen, _wpopen, _tpopen, _doserrno, errno, _sys_errlist, _sys_nerr, EINVAL]
 ---
 # `_popen`, `_wpopen`
@@ -85,7 +84,7 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 ## Example
 
 ```C
-// crt_popen.c
+// popen.c
 /* This program uses _popen and _pclose to receive a
 * stream of text from a system process.
 */
@@ -93,36 +92,39 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 #include <stdio.h>
 #include <stdlib.h>
 
-int main( void )
+int main(void)
 {
+    char psBuffer[128];
+    FILE* pPipe;
 
-   char   psBuffer[128];
-   FILE   *pPipe;
+    /* Run DIR so that it writes its output to a pipe. Open this
+     * pipe with read text attribute so that we can read it
+     * like a text file.
+     */
 
-        /* Run DIR so that it writes its output to a pipe. Open this
-         * pipe with read text attribute so that we can read it
-         * like a text file.
-         */
+    if ((pPipe = _popen("dir *.c /on /p", "rt")) == NULL)
+    {
+        exit(1);
+    }
 
-   if( (pPipe = _popen( "dir *.c /on /p", "rt" )) == NULL )
-      exit( 1 );
+    /* Read pipe until end of file, or an error occurs. */
 
-   /* Read pipe until end of file, or an error occurs. */
+    while (fgets(psBuffer, 128, pPipe))
+    {
+        puts(psBuffer);
+    }
 
-   while(fgets(psBuffer, 128, pPipe))
-   {
-      puts(psBuffer);
-   }
+    int endOfFileVal = feof(pPipe);
+    int closeReturnVal = _pclose(pPipe);
 
-   /* Close pipe and print return value of pPipe. */
-   if (feof( pPipe))
-   {
-     printf( "\nProcess returned %d\n", _pclose( pPipe ) );
-   }
-   else
-   {
-     printf( "Error: Failed to read the pipe to the end.\n");
-   }
+    if (endOfFileVal)
+    {
+        printf("\nProcess returned %d\n", closeReturnVal);
+    }
+    else
+    {
+        printf("Error: Failed to read the pipe to the end.\n");
+    }
 }
 ```
 
