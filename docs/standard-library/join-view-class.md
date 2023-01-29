@@ -90,6 +90,7 @@ For information about the template parameter type, see [Template parameters](#te
 ### Example: `join_view`
 
 ```cpp
+// requires /std:c++20, or later
 #include <iostream>
 #include <vector>
 #include <ranges>

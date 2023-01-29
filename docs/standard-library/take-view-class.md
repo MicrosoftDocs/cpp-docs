@@ -96,7 +96,7 @@ The best way to create a `take_view` is by using the [`views::take`](range-adapt
 If *`count`* is less than the number of elements in the underlying range, then `count` determines the size of the `take_view`.\
 If *`count`* is greater than the number of elements in the underlying range, then the `take_view` includes all of the elements in the underlying range.
 
-### `take_view` example
+### Example: `take_view`
 
 ```cpp
 // requires /std:c++20 or later

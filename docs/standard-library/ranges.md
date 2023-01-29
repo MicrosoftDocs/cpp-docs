@@ -1,7 +1,7 @@
 ---
 title: "<ranges>"
 description: "Get an overview of the Standard Template Library (STL) ranges."
-ms.date: 12/06/2022
+ms.date: 01/27/2023
 f1_keywords: ["<ranges>"]
 helpviewer_keywords: ["ranges"]
 ---
@@ -80,6 +80,8 @@ int main()
 }
 ```
 
+For more information about views, see [`<ranges>` view classes](view-classes.md).
+
 ## Range adaptors
 
 Range adaptors take a range and produce a view. Range adaptors produce lazily evaluated views. That is, you don't incur the cost of transforming every element in the range to produce the view. You only pay the cost to process an element in the view when you access that element.
@@ -98,6 +100,8 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 
 ## `<ranges>` functions
 
+The following functions are used to create iterators and sentinels for ranges, and to get the size of a range.
+
 | Function | Description |
 |--|--|
 | [`begin`](range-functions.md#begin)<sup>C++20</sup> | Get an iterator to the first element in the range. |
@@ -114,22 +118,45 @@ The range algorithms are almost identical to the corresponding iterator-pair alg
 | [`size`](range-functions.md#size)<sup>C++20</sup> | Get the size of the range as an unsigned value. |
 | [`ssize`](range-functions.md#ssize)<sup>C++20</sup> | Get the size of the range as a signed value. |
 
-### Range concepts
+For more information, see [`<ranges>` functions](range-functions.md).
+
+## Range concepts
 
 How you iterate over the elements of a range depends on its underlying iterator type. Ranges use C++ concepts that specify which iterator they support.
 
 In C++20, to say that concept *X* refines concept *Y* means that everything that satisfies concept *Y* also satisfies concept *X*. For example: *car*, *bus*, and *truck* all refine *vehicle*.
 
-Some range concepts mirror the hierarchy of iterator categories. The following table lists various range concepts, along with the types of containers that they can be applied to.
+Some range concepts mirror the hierarchy of iterator categories. The following table lists the range concepts, along with the types of containers that they can be applied to.
 
 | Range concept | Description | Supported containers |
 |--|--|--|
-| `std::ranges::output_range` | Can iterate forward. |
-| `std::ranges::input_range` | Can iterate from beginning to end at least once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` |
-| `std::ranges::forward_range` | Can iterate from beginning to end more than once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset` |
-| `std::ranges::bidirectional_range` | Can iterate forward and backward more than once. | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|
-| `std::ranges::random_access_range` | Can access an arbitrary element (in constant time) by using the `[]` operator. | `std::deque` |
-| `std::ranges::contiguous_range` | The elements are stored in memory consecutively. | `std::array`<br>`std::string`<br>`std::vector` |
+| [`std::ranges::output_range`](range-concepts.md#output_range) | Can iterate forward. ||
+| [`std::ranges::input_range`](range-concepts.md#input_range) | Can iterate from beginning to end at least once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view`|
+| [`std::ranges::forward_range`](range-concepts.md#forward_range) | Can iterate from beginning to end more than once. | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset` |
+| [`std::ranges::bidirectional_range`](range-concepts.md#bidirectional_range) | Can iterate forward and backward more than once. | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|
+| [`std::ranges::random_access_range`](range-concepts.md#random_access_range) | Can access an arbitrary element (in constant time) by using the `[]` operator. | `std::deque` |
+| [`std::ranges::contiguous_range`](range-concepts.md#contiguous_range) | The elements are stored in memory consecutively. | `std::array`<br>`std::string`<br>`std::vector` |
+
+See [`<ranges>` concepts](range-concepts.md) for more information about these concepts.
+
+## `<ranges>` alias templates
+
+The following alias templates determine the types of iterators and sentinels for a range:
+
+| Alias template | Description |
+|--|--|
+| [`borrowed_iterator_t`](ranges-alias-templates.md#borrowed_iterator_t)<sup>C++20</sup> | Determine if an iterator returned for a `range` refers to a range whose lifetime has ended. |
+| [`borrowed_subrange_t`](ranges-alias-templates.md#borrowed_subrange_t)<sup>C++20</sup> | Determine if an iterator returned for a `subrange` refers to a subrange whose lifetime has ended.|
+| [`dangling`](ranges-alias-templates.md#dangling)<sup>C++20</sup> | Indicates that the returned iterator of a `range`/`subrange` outlives the lifetime of the `range`/`subrange` it refers to. |
+| [`iterator_t`](ranges-alias-templates.md#iterator_t)<sup>C++20</sup> | Returns the iterator type of the specified range type. |
+| [`range_difference_t`](ranges-alias-templates.md#range_difference_t)<sup>C++20</sup> | Returns the difference type of the specified range's iterator type. |
+| [`range_reference_t`](ranges-alias-templates.md#range_reference_t)<sup>C++20</sup> | Returns the reference type of the specified range's iterator type. |
+| [`range_rvalue_reference_t`](ranges-alias-templates.md#range_rvalue_reference_t)<sup>C++20</sup> | Returns the rvalue reference type for the specified range's iterator type. In other words, the rvalue reference type of the range's elements. |
+| [`range_size_t`](ranges-alias-templates.md#range_size_t)<sup>C++20</sup> | Returns the type used to report the specified range's size. |
+| [`range_value_t`](ranges-alias-templates.md#range_value_t)<sup>C++20</sup> | Returns the value type of the specified range's iterator type. Or in other words, the type of the elements in the range. |
+| [`sentinel_t`](ranges-alias-templates.md#sentinel_t)<sup>C++20</sup> | Returns the sentinel type of the specified range. |
+
+For more information about these alias templates, see [`<ranges>` alias templates](ranges-alias-templates.md).
 
 ## See also
 

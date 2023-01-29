@@ -90,7 +90,7 @@ The best way to create a `ref_view` is by using the [`views::all`](range-adaptor
 
 A `ref_view` is useful for converting a container to a view. For example, you can use `ref_view` to convert a `vector` to a view, which makes it inexpensive to pass the elements of the vector around.
 
-### `ref_view` example
+### Example: `ref_view`
 
 ```cpp
 // requires /std:c++20 or later
