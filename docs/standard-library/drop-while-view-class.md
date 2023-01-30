@@ -100,7 +100,7 @@ The best way to create a `drop_while_view` is by using the [`views::drop_while`]
 1\) Move constructs the `drop_while_view` from a *`base`* view and a *`pred`* predicate. Both *`base`* and *`pred`* are moved via `std::move()`.\
 2\) Default-constructs a `drop_while_view`.
 
-### `drop_while_view` example
+### Example: `drop_while_view`
 
 ```cpp
 // requires /std:c++20 or later
