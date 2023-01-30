@@ -113,7 +113,7 @@ The best way to create a `split_view` is by using the [`views::split`](range-ada
 2\) Create a `split_view` by splitting the view using a sequence of delimiters.\
 3\) Create a `split_view` by splitting the view using a single delimiter.
 
-### `split_view` example
+### Example `split_view`
 
 ```cpp
 // requires /std:c++20 or later

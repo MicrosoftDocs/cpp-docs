@@ -94,7 +94,7 @@ The best way to create an `values_view` is by using the [`values`](range-adaptor
 1) Create an `values_view` from the specified view.
 2) The default constructor creates a default-constructed `values_view`.
 
-### Example:  `values_view`
+### Example: `values_view`
 
 ```cpp
 // requires /std:c++20 or later

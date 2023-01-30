@@ -116,6 +116,14 @@ concept borrowed_range =
 *`T`*\
 The type to test to see if it's a `borrowed_range`.
 
+### Remarks
+
+The lifetime of an rvalue range can end following a function call whether the range models `borrowed_range` or not. If it's a `borrowed_range`, you may be able to continue to use the iterators with well-defined behavior regardless of when the range's lifetime ends.
+
+Cases where this isn't true are, for example, for containers like `vector` or `list` because when the container's lifetime ends, the iterators would refer to elements that have been destroyed.
+
+You can continue to use the iterators for a `borrowed_range`, for example, for a `view` like `iota_view<int>{0, 42}` whose iterators are over set of values that aren't subject to being destroyed because they're generated on demand.
+
 ## `common_range`
 
 The type of the iterator for a `common_range` is the same as the type of the sentinel. That is, `begin()` and `end()` return the same type.
@@ -384,7 +392,7 @@ The essential requirement that makes a view composable is that it's cheap to mov
 - publicly and unambiguously deriving from the empty class `ranges::view_base`, or
 - specializing `ranges::enable_view<T>` to `true`
 
-Option 1 is generally preferred because `view_interface` also provides default implementation that saves some boilerplate code you have to write.
+Option 1 is preferred because `view_interface` also provides default implementation that saves some boilerplate code you have to write.
 
 Failing that, option 2 is a little simpler than option 3.
 

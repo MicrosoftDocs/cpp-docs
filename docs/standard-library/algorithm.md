@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: <algorithm>"
 title: "<algorithm>"
-ms.date: "11/04/2016"
+ms.date: 01/27/2023
 f1_keywords: ["<algorithm>"]
 helpviewer_keywords: ["algorithm header [C++]", "C++ Standard Library, algorithms", "<algorithm> header"]
-ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
 ---
 # `<algorithm>`
 
@@ -13,7 +12,7 @@ Defines C++ Standard Library container template functions that perform algorithm
 ## Syntax
 
 ```cpp
-(see relevant links below for specific algorithm syntax)
+(see links below for specific algorithm syntax)
 ```
 
 > [!NOTE]
@@ -21,21 +20,23 @@ Defines C++ Standard Library container template functions that perform algorithm
 
 ## Remarks
 
-The C++ Standard Library algorithms are generic because they can operate on a variety of data structures. The data structures that they can operate on include not only the C++ Standard Library container classes such as `vector` and `list`, but also program-defined data structures and arrays of elements that satisfy the requirements of a particular algorithm. C++ Standard Library algorithms achieve this level of generality by accessing and traversing the elements of a container indirectly through iterators.
+The C++ Standard Library algorithms can operate on various data structures. The data structures that they can operate on include not only the C++ Standard Library container classes such as `vector` and `list`, but also user-defined data structures and arrays of elements, as long as they satisfy the requirements of a particular algorithm. C++ Standard Library algorithms achieve this level of generality by accessing and traversing the elements of a container indirectly through iterators.
 
-C++ Standard Library algorithms process iterator ranges that are typically specified by their beginning or ending positions. The ranges referred to must be valid in the sense that all pointers in the ranges must be dereferenceable and, within the sequences of each range, the last position must be reachable from the first by incrementation.
+C++ Standard Library algorithms process iterator ranges that are typically specified by their beginning or ending positions. The ranges referred to must be valid in the sense that all iterators in the ranges must be dereferenceable and, within the sequences of each range, the last position must be reachable from the first by incrementing the iterator.
 
-The C++ Standard Library algorithms extend the actions supported by the operations and member functions of each C++ Standard Library container and allow working, for example, with different types of container objects at the same time. Two suffixes have been used to convey information about the purpose of the algorithms.
+Starting in C++20, most of the algorithms defined in [`<algorithm>`](algorithm.md) are also available in a form that takes a `range`. For example, rather than call `sort(v1.begin(), v1.end(), greater<int>());`, you can call `ranges::sort(v1, greater<int>());`
 
-- The `_if` suffix indicates that the algorithm is used with function objects operating on the values of the elements rather than on the elements themselves. The `find_if` algorithm looks for elements whose values satisfy the criterion specified by a function object, and the `find` algorithm searches for a particular value.
+The C++ Standard Library algorithms can work with different types of container objects at the same time. Two suffixes have been used to convey information about the purpose of the algorithms:
 
-- The _copy suffix indicates that the algorithm not only manipulates the values of the elements but also copies the modified values into a destination range. The `reverse` algorithm reverses the order of the elements within a range, and the `reverse_copy` algorithm also copies the result into a destination range.
+- The `_if` suffix indicates that the algorithm is used with function objects that operate on the values of the elements rather than on the elements themselves. For example, the `find_if` algorithm looks for elements whose values satisfy the criterion specified by a function object, whereas the `find` algorithm searches for a particular value.
 
-C++ Standard Library algorithms are often classified into groups that indicate something about their purpose or requirements. These include modifying algorithms that change the value of elements as compared with non-modifying algorithms that do not. Mutating algorithms change the order of elements, but not the values of their elements. Removing algorithms can eliminate elements from a range or a copy of a range. Sorting algorithms reorder the elements in a range in various ways and sorted range algorithms only act on ranges whose elements have been sorted in a particular way.
+- The `_copy` suffix indicates that the algorithm generally modifies copied values rather than copy modified values. In other words, they don't modify the source range's elements but put the results into an output range/iterator. For example, the `reverse` algorithm reverses the order of the elements within a range, whereas the `reverse_copy` algorithm copies the reversed result into a destination range.
 
-The C++ Standard Library numeric algorithms that are provided for numerical processing have their own header file [`<numeric>`](numeric.md), and function objects and adaptors are defined in the header [`<functional>`](functional.md) Function objects that return Boolean values are known as predicates. The default binary predicate is the comparison `operator<`. In general, the elements being ordered need to be less than comparable so that, given any two elements, it can be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering among the nonequivalent elements.
+C++ Standard Library algorithms are often classified into groups to indicate their purpose or requirements. These include modifying algorithms that change the value of elements as compared with non-modifying algorithms that don't. Mutating algorithms change the order of elements, but not the values of their elements. Removing algorithms can eliminate elements from a range or a copy of a range. Sorting algorithms reorder the elements in a range in various ways and sorted range algorithms only act on ranges whose elements have been sorted in a particular way.
 
-### Function templates
+The C++ Standard Library numeric algorithms that are provided for numerical processing have their own header file [`<numeric>`](numeric.md), and function objects and adaptors are defined in the header [`<functional>`](functional.md). Function objects that return Boolean values are known as predicates. The default binary predicate is the comparison `operator<`. In general, the elements being ordered need to be less than comparable so that, given any two elements, it can be determined either that they're equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering among the nonequivalent elements.
+
+### Algorithms
 
 |Name|Description|
 |-|-|
@@ -58,11 +59,11 @@ The C++ Standard Library numeric algorithms that are provided for numerical proc
 |[`find_end`](algorithm-functions.md#find_end)|Looks in a range for the last subsequence that is identical to a specified sequence or that is equivalent in a sense specified by a binary predicate.|
 |[`find_first_of`](algorithm-functions.md#find_first_of)|Searches for the first occurrence of any of several values within a target range or for the first occurrence of any of several elements that are equivalent in a sense specified by a binary predicate to a specified set of the elements.|
 |[`find_if`](algorithm-functions.md#find_if)|Locates the position of the first occurrence of an element in a range that satisfies a specified condition.|
-|[`find_if_not`](algorithm-functions.md#find_if_not)|Returns the first element in the indicated range that does not satisfy a condition.|
+|[`find_if_not`](algorithm-functions.md#find_if_not)|Returns the first element in the indicated range that doesn't satisfy a condition.|
 |[`for_each`](algorithm-functions.md#for_each)|Applies a specified function object to each element in a forward order within a range and returns the function object.|
 |[`for_each_n`](algorithm-functions.md#for_each_n)||
 |[`generate`](algorithm-functions.md#generate)|Assigns the values generated by a function object to each element in a range.|
-|[`generate_n`](algorithm-functions.md#generate_n)|Assigns the values generated by a function object to a specified number of element is a range and returns to the position one past the last assigned value.|
+|[`generate_n`](algorithm-functions.md#generate_n)|Assigns the values generated by a function object to a specified number of elements in a range and returns to the position one past the last assigned value.|
 |[`includes`](algorithm-functions.md#includes)|Tests whether one sorted range contains all the elements contained in a second sorted range, where the ordering or equivalence criterion between elements may be specified by a binary predicate.|
 |[`inplace_merge`](algorithm-functions.md#inplace_merge)|Combines the elements from two consecutive sorted ranges into a single sorted range, where the ordering criterion may be specified by a binary predicate.|
 |[`is_heap`](algorithm-functions.md#is_heap)|Returns **`true`** if the elements in the specified range form a heap.|
@@ -92,14 +93,14 @@ The C++ Standard Library numeric algorithms that are provided for numerical proc
 |[`partial_sort_copy`](algorithm-functions.md#partial_sort_copy)|Copies elements from a source range into a destination range where the source elements are ordered by either less than or another specified binary predicate.|
 |[`partition`](algorithm-functions.md#partition)|Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it.|
 |[`partition_copy`](algorithm-functions.md#partition_copy)|Copies elements for which a condition is **`true`** to one destination, and for which the condition is **`false`** to another. The elements must come from a specified range.|
-|[`partition_point`](algorithm-functions.md#partition_point)|Returns the first element in the given range that does not satisfy the condition. The elements are sorted so that those that satisfy the condition come before those that do not.|
+|[`partition_point`](algorithm-functions.md#partition_point)|Returns the first element in the given range that doesn't satisfy the condition. The elements are sorted so that those that satisfy the condition come before those that don't.|
 |[`pop_heap`](algorithm-functions.md#pop_heap)|Removes the largest element from the front of a heap to the next-to-last position in the range and then forms a new heap from the remaining elements.|
 |[`prev_permutation`](algorithm-functions.md#prev_permutation)|Reorders the elements in a range so that the original ordering is replaced by the lexicographically next greater permutation if it exists, where the sense of next may be specified with a binary predicate.|
 |[`push_heap`](algorithm-functions.md#push_heap)|Adds an element that is at the end of a range to an existing heap consisting of the prior elements in the range.|
 |[`random_shuffle`](algorithm-functions.md#random_shuffle)|Rearranges a sequence of *N* elements in a range into one of *N*! possible arrangements selected at random.|
 |[`remove`](algorithm-functions.md#remove)|Eliminates a specified value from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.|
-|[`remove_copy`](algorithm-functions.md#remove_copy)|Copies elements from a source range to a destination range, except that elements of a specified value are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.|
-|[`remove_copy_if`](algorithm-functions.md#remove_copy_if)|Copies elements from a source range to a destination range, except that satisfying a predicate are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.|
+|[`remove_copy`](algorithm-functions.md#remove_copy)|Copies elements from a source range to a destination range, except that elements of a specified value aren't copied, without disturbing the order of the remaining elements and returning the end of a new destination range.|
+|[`remove_copy_if`](algorithm-functions.md#remove_copy_if)|Copies elements from a source range to a destination range, except that satisfying a predicate aren't copied, without disturbing the order of the remaining elements and returning the end of a new destination range.|
 |[`remove_if`](algorithm-functions.md#remove_if)|Eliminates elements that satisfy a predicate from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.|
 |[`replace`](algorithm-functions.md#replace)|Examines each element in a range and replaces it if it matches a specified value.|
 |[`replace_copy`](algorithm-functions.md#replace_copy)|Examines each element in a source range and replaces it if it matches a specified value while copying the result into a new destination range.|
@@ -124,8 +125,8 @@ The C++ Standard Library numeric algorithms that are provided for numerical proc
 |[`swap`](algorithm-functions.md#swap)|Exchanges the values of the elements between two types of objects, assigning the contents of the first object to the second object and the contents of the second to the first.|
 |[`swap_ranges`](algorithm-functions.md#swap_ranges)|Exchanges the elements of one range with the elements of another, equal sized range.|
 |[`transform`](algorithm-functions.md#transform)|Applies a specified function object to each element in a source range or to a pair of elements from two source ranges and copies the return values of the function object into a destination range.|
-|[`unique`](algorithm-functions.md#unique)|Removes duplicate elements that are adjacent to each other in a specified range.|
-|[`unique_copy`](algorithm-functions.md#unique_copy)|Copies elements from a source range into a destination range except for the duplicate elements that are adjacent to each other.|
+|[`unique`](algorithm-functions.md#unique)|Removes duplicate elements that are next to each other in a specified range.|
+|[`unique_copy`](algorithm-functions.md#unique_copy)|Copies elements from a source range into a destination range except for the duplicate elements that are next to each other.|
 |[`upper_bound`](algorithm-functions.md#upper_bound)|Finds the position of the first element in an ordered range that has a value that is greater than a specified value, where the ordering criterion may be specified by a binary predicate.|
 
 ## See also

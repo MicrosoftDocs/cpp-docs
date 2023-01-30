@@ -98,7 +98,7 @@ The best way to create a `transform_view` is by using the [`views::transform`](r
 1\) Create a value-initialized `transform_view`. The transformation function and the underlying view must be default-initializable.\
 2\) Move construct the `transform_view` from a *`base`* view and a transformation function *`func`*. Both *`base`* and *`func`* are moved via `std::move()`.
 
-### `transform_view` example
+### Example: `transform_view`
 
 ```cpp
 // requires /std:c++20 or later

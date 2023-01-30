@@ -90,7 +90,7 @@ The best way to create a `reverse_view` is by using the [`views::reverse`](range
 1\) The default constructor default-initializes a `reverse_view`.\
 2\) Create a `reverse_view` from the specified view.
 
-### Example:  `reverse_view`
+### Example: `reverse_view`
 
 ```cpp
 // requires /std:c++20 or later

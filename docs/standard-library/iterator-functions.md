@@ -343,7 +343,7 @@ This iterator returns the elements of the container in reverse order, starting a
 
 :::image type="content" source="media/crbegin-crend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled crend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled crbegin().":::
 
-### `crbegin` example
+### Example: `crbegin`
 
 ```cpp
 #include <vector>

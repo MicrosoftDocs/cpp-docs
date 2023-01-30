@@ -60,7 +60,7 @@ If `auto(rg.begin())` yields an iterator, returns the equivalent of `auto(rg.beg
 
 `ranges::begin()` works on all ranges, whereas `std::begin()` may not.
 
-### `begin` example
+### Example: `begin`
 
 ```cpp
 // requires /std:c++20 or later
@@ -107,7 +107,7 @@ If `auto(rg.cbegin())` yields an iterator, returns the equivalent of `auto(rg.cb
 
 `ranges::cbegin()` works on all ranges, whereas `std::cbegin()` may not.
 
-### `cbegin` example
+### Example: `cbegin`
 
 ```cpp
 // requires /std:c++20 or later
@@ -145,7 +145,7 @@ A range.
 
 A `const` pointer, based on the type of the range, to the first element data in the contiguous range. For example, if the range is a vector of integers, the type of the return value is a `const int *`.
 
-### `cdata` Example
+### Example: `cdata`
 
 ```cpp
 #include <ranges>
@@ -193,7 +193,7 @@ The sentinel that follows the last element in the `const`-qualified range:
 
 `ranges::cend()` works on all ranges, whereas `std::cend()` may not.
 
-### `cend` example
+### Example: `cend`
 
 ```cpp
 // requires /std:c++20 or later
@@ -243,7 +243,7 @@ If `auto(rg.crbegin())` yields an iterator, returns the equivalent of `auto(rg.c
 
 `ranges::crbegin()` works on all bidirectional ranges, whereas `std::crbegin()` may not.
 
-### `crbegin` example
+### Example: `crbegin`
 
 ```cpp
 // requires /std:c++20 or later
