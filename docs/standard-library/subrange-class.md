@@ -49,7 +49,7 @@ For a description of the following entries, see [View class characteristics](vie
 | **Member functions** | **Description** |
 |--|--|
 | [Constructors](#constructors)<sup>C++20</sup> | Construct a `subrange`. |
-| [`operator PairLike`](#op_pairlike)<sup>C++20</sup> | Convert a `subrange`to a pair-like type. |
+| [`operator PairLike`](#op_pairlike)<sup>C++20</sup> | Convert a `subrange` to a pair-like type. |
 | [`advance`](#advance)<sup>C++20</sup> | Move the iterator a specified distance. |
 | [`begin`](#begin) | Get an iterator to the first element. |
 | [`empty`](#empty)<sup>C++20</sup> | Test whether the `subrange` is empty. |
@@ -123,7 +123,7 @@ A `subrange`instance.
 
 The [`counted`](range-adaptors.md#counted) range adaptor can create a `subrange`. That adaptor takes a begin iterator and a count.
 
-### Example: `subrange`
+### Example: `counted`
 
 ```cpp
 // requires /std:c++20 or later
@@ -192,7 +192,7 @@ std::ranges::subrange<I, S, K>
 std::tuple<T, U>
 ```
 
-### `operator PairLike()` example
+### Example: `operator PairLike()`
 
 ```cpp
 // requires /std:c++20 or later
@@ -467,7 +467,7 @@ return tmp;
 
 ```cpp
 // requires /std:c++20 or later
-#include <iostream> // cout
+#include <iostream>
 #include <ranges>
 #include <string>
 #include <vector>

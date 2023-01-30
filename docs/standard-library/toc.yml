@@ -980,6 +980,8 @@ items:
               href: values-view-class.md
             - name: view_interface
               href: view-interface.md
+        - name: <ranges> alias templates
+          href: ranges-alias-templates.md
         - name: Range adaptors
           href: range-adaptors.md
     - name: <ratio>
