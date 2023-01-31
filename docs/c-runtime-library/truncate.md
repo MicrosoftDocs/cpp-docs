@@ -2,7 +2,7 @@
 description: "Learn more about: _TRUNCATE"
 title: "_TRUNCATE"
 ms.date: "11/04/2016"
-f1_keywords: ["_TRUNCATE", "TRUNCATE"]
+f1_keywords: ["_TRUNCATE", "CORECRT/_TRUNCATE"]
 helpviewer_keywords: ["TRUNCATE constant", "_TRUNCATE constant"]
 ---
 # `_TRUNCATE`

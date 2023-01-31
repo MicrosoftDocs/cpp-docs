@@ -6,7 +6,7 @@ api_name: ["wcscoll", "_mbscoll", "_mbscoll_l", "strcoll", "_strcoll_l", "_wcsco
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["wcscoll", "_mbscoll", "_tcscoll", "_ftcscoll"]
+f1_keywords: ["STRING/strcoll", "CORECRT_WSTRING/wcscoll", "MBSTRING/_mbscoll", "TCHAR/_tcscoll", "TCHAR/_ftcscoll", "STRING/_strcoll_l", "CORECRT_WSTRING/_wcscoll_l", "MBSTRING/_mbscoll_l", "TCHAR/_tcscoll_l", "strcoll", "wcscoll", "_mbscoll", "_tcscoll", "_ftcscoll", "_strcoll_l", "_wcscoll_l", "_mbscoll_l", "_tcscoll_l"]
 helpviewer_keywords: ["code pages, using for string comparisons", "mbscoll function", "wcscoll_l function", "ftcscoll function", "wcscoll function", "_strcoll_l function", "tcscoll function", "_ftcscoll function", "_tcscoll function", "_wcscoll_l function", "_mbscoll function", "strcoll_l function", "strcoll functions", "strings [C++], comparing by code page"]
 ms.assetid: 900a7540-c7ec-4c2f-b292-7a85f63e3fe8
 ---

@@ -6,7 +6,7 @@ api_name: ["_strncoll", "_mbsncoll_l", "_wcsncoll", "_wcsncoll_l", "_mbsncoll", 
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["mbsncoll_l", "strncoll", "_wcsncoll", "_tcsnccoll", "_ftcsnccoll", "wcsncoll", "_mbsncoll", "wcsncoll_l", "strncoll_l", "_ftcsncoll", "_strncoll", "_tcsncoll", "mbsncoll"]
+f1_keywords: ["STRING/_strncoll", "MBSTRING/_mbsncoll", "CORECRT_WSTRING/_wcsncoll", "TCHAR/_tcsncoll", "TCHAR/_tcsnccoll", "TCHAR/_ftcsncoll", "TCHAR/_ftcsnccoll", "STRING/_strncoll_l", "MBSTRING/_mbsncoll_l", "CORECRT_WSTRING/_wcsncoll_l", "TCHAR/_tcsncoll_l", "_strncoll", "_mbsncoll", "_wcsncoll", "_tcsncoll", "_tcsnccoll", "_ftcsncoll", "_ftcsnccoll", "_strncoll_l", "_mbsncoll_l", "_wcsncoll_l", "_tcsncoll_l", "strncoll", "mbsncoll", "wcsncoll", "tcsncoll", "tcsnccoll", "ftcsncoll", "ftcsnccoll", "strncoll_l", "mbsncoll_l", "wcsncoll_l", "tcsncoll_l"]
 helpviewer_keywords: ["_strncoll_l function", "code pages, using for string comparisons", "_strncoll function", "_mbsncoll function", "ftcsncoll function", "strncoll function", "_ftcsncoll function", "strncoll_l function", "wcsncoll function", "mbsncoll function", "_tcsncoll function", "_tcsnccoll function", "wcsncoll_l function", "tcsnccoll function", "mbsncoll_l function", "_mbsncoll_l function", "tcsncoll function", "_wcsncoll function", "strings [C++], comparing by code page", "_ftcsnccoll function", "ftcsnccoll function", "_wcsncoll_l function"]
 ms.assetid: e659a5a4-8afe-4033-8e72-17ffd4bdd8e9
 ---
