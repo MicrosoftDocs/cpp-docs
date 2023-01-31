@@ -2,7 +2,7 @@
 description: "Learn more about: setvbuf Constants"
 title: "setvbuf Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["_IOFBF", "_IONBF", "_IOLBF"]
+f1_keywords: ["STDIO/_IOFBF", "STDIO/_IONBF", "STDIO/_IOLBF", "_IOFBF", "_IONBF", "_IOLBF"]
 helpviewer_keywords: ["_IOFBF constant", "IOFBF constant", "IONBF constant", "_IOLBF constant", "IOLBF constant", "_IONBF constant"]
 ms.assetid: a6ec4dd5-1f24-498c-871a-e874cd28d33c
 ---
