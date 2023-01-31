@@ -84,7 +84,7 @@ By default, this function's global state is scoped to the application. To change
 | Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_tcsncoll` | [`_strncoll`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | **`_mbsnbcoll`** | [`_wcsncoll`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) |
-| `_tcsncoll_l` | [`_strncoll`, `_wcsncoll`, `_mbsncoll`, `_strncoll_l`, `_wcsncoll_l`, `_mbsncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | **`_mbsnbcoll_l`** | [`_wcsncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) |
+| `_tcsncoll_l` | [`_strncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) | **`_mbsnbcoll_l`** | [`_wcsncoll_l`](strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md) |
 | `_tcsnicoll` | [`_strnicoll`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) | **`_mbsnbicoll`** | [`_wcsnicoll`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) |
 | `_tcsnicoll_l` | [`_strnicoll_l`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) | **`_mbsnbicoll_l`** | [`_wcsnicoll_l`](strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md) |
 
