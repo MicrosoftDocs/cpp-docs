@@ -2,7 +2,7 @@
 description: "Learn more about: stdin, stdout, stderr"
 title: "stdin, stdout, stderr"
 ms.date: "10/23/2018"
-f1_keywords: ["stdin", "stderr", "stdout"]
+f1_keywords: ["CORECRT_WSTDIO/stdin", "CORECRT_WSTDIO/stderr", "CORECRT_WSTDIO/stdout", "stdin", "stderr", "stdout"]
 helpviewer_keywords: ["stdout function", "standard output stream", "standard error stream", "stdin function", "standard input stream", "stderr function"]
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
 ---

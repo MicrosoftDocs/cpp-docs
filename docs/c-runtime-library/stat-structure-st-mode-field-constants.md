@@ -2,7 +2,7 @@
 description: "Learn more about: _stat Structure st_mode Field Constants"
 title: "_stat Structure st_mode Field Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["S_IFCHR", "S_IFDIR", "_S_IWRITE", "S_IFMT", "_S_IFDIR", "_S_IREAD", "S_IEXEC", "_S_IEXEC", "_S_IFMT", "S_IWRITE", "S_IFREG", "S_IREAD", "_S_IFCHR", "_S_IFREG"]
+f1_keywords: ["STAT/S_IFCHR", "STAT/S_IFDIR", "STAT/_S_IWRITE", "STAT/S_IFMT", "STAT/_S_IFDIR", "STAT/_S_IREAD", "STAT/S_IEXEC", "STAT/_S_IEXEC", "STAT/_S_IFMT", "STAT/S_IWRITE", "STAT/S_IFREG", "STAT/S_IREAD", "STAT/_S_IFCHR", "STAT/_S_IFREG", "S_IFCHR", "S_IFDIR", "_S_IWRITE", "S_IFMT", "_S_IFDIR", "_S_IREAD", "S_IEXEC", "_S_IEXEC", "_S_IFMT", "S_IWRITE", "S_IFREG", "S_IREAD", "_S_IFCHR", "_S_IFREG"]
 helpviewer_keywords: ["S_IFDIR constant", "stat structure", "S_IWRITE constant", "S_IEXEC constant", "_S_IFREG constant", "S_IREAD constant", "stat structure, constants", "_S_IFMT constant", "st_mode field constants", "S_IFMT constant", "_S_IEXEC constant", "_S_IWRITE constant", "_S_IFDIR constant", "S_IFREG constant", "S_IFCHR constant", "_S_IREAD constant", "_S_IFCHR constant"]
 ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
 ---
