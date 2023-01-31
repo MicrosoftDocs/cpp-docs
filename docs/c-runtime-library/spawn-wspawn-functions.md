@@ -2,9 +2,6 @@
 description: "Learn more about: _spawn, _wspawn Functions"
 title: "_spawn, _wspawn Functions"
 ms.date: "11/04/2016"
-api_location: ["msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll"]
-api_type: ["DLLExport"]
-topic_type: ["apiref"]
 f1_keywords: ["_spawn", "_tspawnlp", "_tspawnlpe", "_tspawnve", "_tspawnvp", "_tspawnvpe", "_tspawnl", "spawn", "_tspawnv", "_tspawnle", "wspawn"]
 helpviewer_keywords: ["_tspawnve function", "_spawn functions", "_tspawnlpe function", "tspawnvpe function", "processes, creating", "tspawnve function", "_tspawnvp function", "spawn functions", "tspawnl function", "tspawnlp function", "_tspawnvpe function", "_tspawnl function", "tspawnvp function", "tspawnv function", "processes, executing new", "_tspawnv function", "tspawnle function", "process creation", "_tspawnlp function", "tspawnlpe function", "_tspawnle function"]
 ---
@@ -12,20 +9,14 @@ helpviewer_keywords: ["_tspawnve function", "_spawn functions", "_tspawnlpe func
 
 Each of the `_spawn` functions creates and executes a new process:
 
-:::row:::
-   :::column span="":::
-      [`_spawnl`, `_wspawnl`](./reference/spawnl-wspawnl.md)\
-      [`_spawnle`, `_wspawnle`](./reference/spawnle-wspawnle.md)\
-      [`_spawnlp`, `_wspawnlp`](./reference/spawnlp-wspawnlp.md)\
-      [`_spawnlpe`, `_wspawnlpe`](./reference/spawnlpe-wspawnlpe.md)
-   :::column-end:::
-   :::column span="":::
-      [`_spawnv`, `_wspawnv`](./reference/spawnv-wspawnv.md)\
-      [`_spawnve`, `_wspawnve`](./reference/spawnve-wspawnve.md)\
-      [`_spawnvp`, `_wspawnvp`](./reference/spawnvp-wspawnvp.md)\
-      [`_spawnvpe`, `_wspawnvpe`](./reference/spawnvpe-wspawnvpe.md)
-   :::column-end:::
-:::row-end:::
+[`_spawnl`, `_wspawnl`](./reference/spawnl-wspawnl.md)\
+[`_spawnle`, `_wspawnle`](./reference/spawnle-wspawnle.md)\
+[`_spawnlp`, `_wspawnlp`](./reference/spawnlp-wspawnlp.md)\
+[`_spawnlpe`, `_wspawnlpe`](./reference/spawnlpe-wspawnlpe.md)\
+[`_spawnv`, `_wspawnv`](./reference/spawnv-wspawnv.md)\
+[`_spawnve`, `_wspawnve`](./reference/spawnve-wspawnve.md)\
+[`_spawnvp`, `_wspawnvp`](./reference/spawnvp-wspawnvp.md)\
+[`_spawnvpe`, `_wspawnvpe`](./reference/spawnvpe-wspawnvpe.md)
 
 The letters at the end of the function name determine the variation.
 
