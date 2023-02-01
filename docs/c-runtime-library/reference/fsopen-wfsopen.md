@@ -80,7 +80,6 @@ The argument *`shflag`* is a constant expression consisting of one of the follow
 
 | Term | Definition |
 |---|---|
-| `_SH_COMPAT` | Sets Compatibility mode for 16-bit applications. |
 | `_SH_DENYNO` | Permits read and write access. |
 | `_SH_DENYRD` | Denies read access to the file. |
 | `_SH_DENYRW` | Denies read and write access to the file. |
