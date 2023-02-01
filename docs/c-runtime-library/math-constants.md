@@ -2,7 +2,7 @@
 description: "Learn more about: Math Constants"
 title: "Math Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["c.constants.math"]
+f1_keywords: ["c.constants.math", "_USE_MATH_DEFINES", "CORECRT_MATH_DEFINES/M_E", "CORECRT_MATH_DEFINES/M_LOG2E", "CORECRT_MATH_DEFINES/M_LOG10E", "CORECRT_MATH_DEFINES/M_LN2", "CORECRT_MATH_DEFINES/M_LN10", "CORECRT_MATH_DEFINES/M_PI", "CORECRT_MATH_DEFINES/M_PI_2", "CORECRT_MATH_DEFINES/M_PI_4", "CORECRT_MATH_DEFINES/M_1_PI", "CORECRT_MATH_DEFINES/M_2_PI", "CORECRT_MATH_DEFINES/M_2_SQRTPI", "CORECRT_MATH_DEFINES/M_SQRT2", "CORECRT_MATH_DEFINES/M_SQRT1_2", "M_E", "M_LOG2E", "M_LOG10E", "M_LN2", "M_LN10", "M_PI", "M_PI_2", "M_PI_4", "M_1_PI", "M_2_PI", "M_2_SQRTPI", "M_SQRT2", "M_SQRT1_2"]
 helpviewer_keywords: ["M_PI constant", "M_PI_2 constant", "math constants", "M_2_PI constant", "M_1_PI constant", "M_E constant", "USE_MATH_DEFINES constant", "M_LOG2E constant", "M_LOG10E constant", "M_LN10 constant", "M_SQRT1_2 constant", "_USE_MATH_DEFINES constant", "M_PI_4 constant", "constants, math", "M_2_SQRTPI constant", "M_SQRT2 constant", "M_LN2 constant"]
 ms.assetid: db533c3f-6ae8-4520-9d35-c8fabbef3529
 ---

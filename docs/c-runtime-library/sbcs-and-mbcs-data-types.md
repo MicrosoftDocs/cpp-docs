@@ -3,7 +3,7 @@ title: "SBCS and MBCS Data Types"
 description: "How to represent single and multibyte characters in the Microsoft C runtime."
 ms.topic: "conceptual"
 ms.date: "04/11/2018"
-f1_keywords: ["MBCS", "SBCS"]
+f1_keywords: ["_MBCS", "MBCS", "SBCS"]
 helpviewer_keywords: ["SBCS and MBCS data types", "data types [C], MBCS and SBCS"]
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
 ---

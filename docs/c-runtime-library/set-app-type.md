@@ -6,7 +6,7 @@ api_name: ["_set_app_type", "_o__set_app_type"]
 api_location: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type"]
+f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type", "corecrt_startup/_crt_app_type", "corecrt_startup/_crt_unknown_app", "corecrt_startup/_crt_console_app", "corecrt_startup/_crt_gui_app"]
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
 ---
 # `_set_app_type`
