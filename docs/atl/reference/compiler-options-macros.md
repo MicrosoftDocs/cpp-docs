@@ -23,7 +23,7 @@ These macros control specific compiler features.
 |[ATL_NO_VTABLE](#atl_no_vtable)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|
 |[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function shouldn't be inlined.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|
-|[_ATL_MODULES](#_ATL_MODULES)|Removes the use of __if_exists/__if_not_exists in ATL headers.|
+|[_ATL_MODULES](#_ATL_MODULES)|Allows you to compile ATL projects with [permissive-](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).|
 
 ## <a name="_atl_all_warnings"></a> _ATL_ALL_WARNINGS
 
@@ -210,7 +210,7 @@ _ATL_MODULES
 
 ### Remarks
 
-Removes the use of __if_exists/__if_not_exists in ATL headers. This  prevents crashes on ATL when ussing permissive-
+Allows you to compile ATL projects with [permissive-](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).
 
 ## See also
 
