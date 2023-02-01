@@ -25,7 +25,7 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 ## Capabilities
 
 - **Monitor a serial port**: Choose the **Start Monitoring** or **Stop Monitoring** button to control whether to monitor data coming from the port.
-- **Send data to a serial port**: Enter text into the text field at the bottom of the view. Use the **Send Message** button to send the data.
+- **Send data to a serial port**: Enter text into the text field at the bottom of the view. Use the **Enter** key or choose the **Send Message** button to send the data.
 - **Clear the Serial Monitor output**: Choose the **Clear Output** button to clear the incoming data text field.
 - **Send preset control signals**: Use the split-button next to the input field to send preset control signals (Ctrl+C, Ctrl+D, Ctrl+X, and Ctrl+Z).
 - **Configure Serial Monitor and port connection settings**: See the following table to learn about the settings that the Serial Monitor provides.
