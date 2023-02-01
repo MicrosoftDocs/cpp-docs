@@ -2,7 +2,7 @@
 description: "Learn more about: Locale Categories"
 title: "Locale Categories"
 ms.date: "11/04/2016"
-f1_keywords: ["LC_MAX", "LC_MIN", "LC_MONETARY", "LC_TIME", "LC_NUMERIC", "LC_COLLATE", "LC_CTYPE", "LC_ALL"]
+f1_keywords: ["LOCALE/LC_MAX", "LOCALE/LC_MIN", "LOCALE/LC_MONETARY", "LOCALE/LC_TIME", "LOCALE/LC_NUMERIC", "LOCALE/LC_COLLATE", "LOCALE/LC_CTYPE", "LOCALE/LC_ALL", "LC_MAX", "LC_MIN", "LC_MONETARY", "LC_TIME", "LC_NUMERIC", "LC_COLLATE", "LC_CTYPE", "LC_ALL"]
 helpviewer_keywords: ["LC_MIN constant", "LC_MONETARY constant", "LC_CTYPE constant", "locale constants", "LC_MAX constant", "LC_ALL constant", "LC_TIME constant", "LC_NUMERIC constant", "LC_COLLATE constant"]
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
 ---
