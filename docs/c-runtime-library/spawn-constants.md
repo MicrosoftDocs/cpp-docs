@@ -2,7 +2,7 @@
 description: "Learn more about: spawn Constants"
 title: "spawn Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["_P_NOWAIT", "_P_OVERLAY", "_P_WAIT", "_P_DETACH", "_P_NOWAITO"]
+f1_keywords: ["PROCESS/_P_NOWAIT", "PROCESS/_P_OVERLAY", "PROCESS/_P_WAIT", "PROCESS/_P_DETACH", "PROCESS/_P_NOWAITO", "_P_NOWAIT", "_P_OVERLAY", "_P_WAIT", "_P_DETACH", "_P_NOWAITO"]
 helpviewer_keywords: ["_P_OVERLAY constant", "P_DETACH constant", "P_OVERLAY constant", "P_NOWAIT constant", "_P_DETACH constant", "_P_NOWAIT constant", "_P_NOWAITO constant", "P_NOWAITO constant", "spawn constants", "P_WAIT constant", "_P_WAIT constant"]
 ms.assetid: e0533e88-d362-46fc-b53c-5f193226d879
 ---

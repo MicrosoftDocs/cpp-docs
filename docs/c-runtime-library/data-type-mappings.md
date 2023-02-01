@@ -18,7 +18,7 @@ For related information, see [Using TCHAR.H Data Types with _MBCS Code](../text/
 |---|---|---|---|
 | `_TCHAR` | **`char`** | **`char`** | **`wchar_t`** |
 | `_tfinddata_t` | `_finddata_t` | `_finddata_t` | `_wfinddata_t` |
-| `_tfinddata64_t` | `__finddata64_t` | `__finddata64_t` | `__wfinddata64_t` |
+| `_tfinddata64_t` | `__finddata64_t` | `__finddata64_t` | `_wfinddata64_t` |
 | `_tfinddatai64_t` | `_finddatai64_t` | `_finddatai64_t` | `_wfinddatai64_t` |
 | `_TINT` | **`int`** | **`int`** | `wint_t` |
 | `_TSCHAR` | **`signed char`** | **`signed char`** | **`wchar_t`** |
