@@ -2,7 +2,7 @@
 description: "Learn more about: Compiler Options Macros"
 title: "Compiler Options Macros"
 ms.date: "08/19/2019"
-f1_keywords: ["_ATL_ALL_WARNINGS", "_ATL_APARTMENT_THREADED", "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS ", "_ATL_ENABLE_PTM_WARNING", "_ATL_FREE_THREADED", "_ATL_MULTI_THREADED", "_ATL_NO_AUTOMATIC_NAMESPACE", "_ATL_NO_COM_SUPPORT", "ATL_NO_VTABLE", "ATL_NOINLINE", "_ATL_SINGLE_THREADED"]
+f1_keywords: ["_ATL_ALL_WARNINGS", "_ATL_APARTMENT_THREADED", "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS ", "_ATL_ENABLE_PTM_WARNING", "_ATL_FREE_THREADED", "_ATL_MODULES", "_ATL_MULTI_THREADED", "_ATL_NO_AUTOMATIC_NAMESPACE", "_ATL_NO_COM_SUPPORT", "ATL_NO_VTABLE", "ATL_NOINLINE", "_ATL_SINGLE_THREADED"]
 helpviewer_keywords: ["compiler options, macros"]
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
 ---
@@ -17,13 +17,13 @@ These macros control specific compiler features.
 |[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|
 |[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro to require C++ standard syntax. It generates the C4867 compiler error when non-standard syntax is used to initialize a pointer to a member function.|
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|Define if one or more of your objects use free or neutral threading.|
+|[_ATL_MODULES](#_ATL_MODULES)|Allows you to compile ATL projects with [permissive-](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|A symbol that indicates the project will have objects that are marked as Both, Free or Neutral. The macro [_ATL_FREE_THREADED](#_atl_free_threaded) should be used instead.|
 |[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|A symbol that prevents the default use of namespace as ATL.|
 |[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|A symbol that prevents COM-related code from being compiled with your project.|
 |[ATL_NO_VTABLE](#atl_no_vtable)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|
 |[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function shouldn't be inlined.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|
-|[_ATL_MODULES](#_ATL_MODULES)|Allows you to compile ATL projects with [permissive-](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).|
 
 ## <a name="_atl_all_warnings"></a> _ATL_ALL_WARNINGS
 
@@ -123,6 +123,14 @@ _ATL_FREE_THREADED
 
 Specifies free threading. Free threading is equivalent to a multithread apartment model. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
 
+## <a name="_ATL_MODULES"></a> `_ATLMODULES`
+
+Allows you to compile ATL projects with [permissive-](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).
+
+```
+_ATL_MODULES
+```
+
 ## <a name="_atl_multi_threaded"></a> _ATL_MULTI_THREADED
 
 A symbol that indicates the project will have objects that are marked as Both, Free or Neutral.
@@ -203,14 +211,6 @@ _ATL_SINGLE_THREADED
 ### Remarks
 
 Specifies that the object always runs in the primary COM thread. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
-
-```
-_ATL_MODULES
-```
-
-### Remarks
-
-Allows you to compile ATL projects with [permissive-](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).
 
 ## See also
 
