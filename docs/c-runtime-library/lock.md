@@ -6,7 +6,7 @@ api_name: ["_lock"]
 api_location: ["msvcr110_clr0400.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll", "msvcr80.dll", "msvcr110.dll", "msvcrt.dll", "msvcr120_clr0400.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["lock", "_lock"]
+f1_keywords: ["_lock"]
 helpviewer_keywords: ["lock function", "_lock function"]
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
 ---
