@@ -2,7 +2,7 @@
 description: "Learn more about: RAND_MAX"
 title: "RAND_MAX"
 ms.date: "11/04/2016"
-f1_keywords: ["RAND_MAX"]
+f1_keywords: ["STDLIB/RAND_MAX", "RAND_MAX"]
 helpviewer_keywords: ["RAND_MAX constant"]
 ---
 # `RAND_MAX`
