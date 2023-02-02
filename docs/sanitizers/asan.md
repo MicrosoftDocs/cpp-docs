@@ -34,21 +34,19 @@ Use AddressSanitizer to reduce your time spent on:
 
 AddressSanitizer, originally [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany), is a powerful alternative to both [`/RTC` (Runtime error checks)](../build/reference/rtc-run-time-error-checks.md) and [`/analyze` (Static analysis)](../build/reference/analyze-code-analysis.md). It provides run-time bug-finding technologies that use your existing build systems and existing test assets directly.
 
-AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using one extra compiler option: **`/fsanitize=address`**. The new option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
+AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using the compiler option: **`/fsanitize=address`**. The new option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
 
-Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file gets created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of AddressSanitizer easier for:
+Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file is created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of AddressSanitizer easier for:
 
-- Local machine testing,
-- On-premise distributed testing, and
-- Cloud-based workflows for testing.
+- Local machine testing
+- On-premise distributed testing
+- Cloud-based workflows for testing
 
 ### Install AddressSanitizer
 
-C++ workloads in the Visual Studio Installer install the AddressSanitizer libraries and IDE integration by default. However, if you're upgrading from an older version of Visual Studio 2019, use the Installer to enable ASan support after the upgrade:
+C++ workloads in the Visual Studio Installer install the AddressSanitizer libraries and IDE integration by default. However, if you're using an older version of Visual Studio, use the Visual Studio Installer to enable ASan support after the upgrade. You can open the installer from the **Control Panel** > Programs and Features > right-click Visual Studio in the list of programs and choose **change**. That will display the Visual Studio **Workloads screen**. Select the **Desktop Development with C++** workload and check the **C++ AddressSantizer** option:
 
-:::image type="content" source="media/asan-installer-option.png" alt-text="Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component":::
-
-You can choose **Modify** on your existing Visual Studio installation from the Visual Studio Installer to get to the screen above.
+:::image type="content" source="media/asan-installer-option.png" alt-text="Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component under the Optional section":::
 
 > [!NOTE]
 > If you run Visual Studio on the new update but haven't installed ASan, you'll get an error when you run your code:

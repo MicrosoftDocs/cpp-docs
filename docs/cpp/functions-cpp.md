@@ -3,7 +3,6 @@ description: "Learn more about: Functions (C++)"
 title: "Functions (C++)"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["defaults, arguments", "function definitions", "function definitions, about function definitions", "default arguments", "declarators, functions"]
-ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
 ---
 # Functions (C++)
 
@@ -112,11 +111,6 @@ Optional parts of a function declaration are:
 1. (member functions only) **`static`** applied to a member function means that the function is not associated with any object instances of the class.
 
 1. (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (`*this`) is an rvalue reference vs. an lvalue reference. For more information, see [Function Overloading](function-overloading.md#ref-qualifiers).
-
-The following figure shows the parts of a function definition. The shaded area is the function body.
-
-![Diagram of the parts of a function definition.](../cpp/media/vc38ru1.gif "Parts of a function definition") <br/>
-Parts of a function definition
 
 ## Function definitions
 
