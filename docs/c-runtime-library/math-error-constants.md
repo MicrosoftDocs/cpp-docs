@@ -2,7 +2,7 @@
 description: "Learn more about: Math Error Constants"
 title: "Math Error Constants"
 ms.date: "11/04/2016"
-f1_keywords: ["_PLOSS", "_UNDERFLOW", "_TLOSS", "_SING", "_DOMAIN", "_OVERFLOW"]
+f1_keywords: ["CORECRT_MATH/_PLOSS", "CORECRT_MATH/_UNDERFLOW", "CORECRT_MATH/_TLOSS", "CORECRT_MATH/_SING", "CORECRT_MATH/_DOMAIN", "CORECRT_MATH/_OVERFLOW", "_PLOSS", "_UNDERFLOW", "_TLOSS", "_SING", "_DOMAIN", "_OVERFLOW"]
 helpviewer_keywords: ["_TLOSS constant", "_SING constant", "PLOSS constant", "UNDERFLOW constant", "_UNDERFLOW constant", "_OVERFLOW constant", "DOMAIN constant", "OVERFLOW constant", "TLOSS constant", "SING constant", "_DOMAIN constant", "_PLOSS constant", "math error constants"]
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
 ---
