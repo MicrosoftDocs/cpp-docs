@@ -81,9 +81,9 @@ The following example demonstrates how to create an object of the `CDockSite` cl
 
 [CObject](../../mfc/reference/cobject-class.md)\
 └&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CDockSite](../../mfc/reference/cdocksite-class.md)
+&emsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
+&emsp;&emsp;└&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
+&emsp;&emsp;&emsp;└&nbsp;[CDockSite](../../mfc/reference/cdocksite-class.md)
 
 ## Requirements
 

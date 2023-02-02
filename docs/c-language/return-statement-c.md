@@ -5,22 +5,22 @@ ms.date: "06/10/2020"
 helpviewer_keywords: ["( ) parentheses in return statements"]
 ms.assetid: 18cd82cf-f899-4b28-83ad-4eff353ddcb4
 ---
-# return Statement (C)
+# `return` Statement (C)
 
 A **`return`** statement ends the execution of a function, and returns control to the calling function. Execution resumes in the calling function at the point immediately following the call. A **`return`** statement can return a value to the calling function. For more information, see [Return type](../c-language/return-type.md).
 
 ## Syntax
 
-> *jump-statement*:\
-> &nbsp;&nbsp;&nbsp;&nbsp;**`return`** *expression*<sub>opt</sub> **`;`**
+> *`jump-statement`*:\
+> &emsp;**`return`** *`expression`*<sub>opt</sub> **`;`**
 
-The value of *expression*, if present, is returned to the calling function. If *expression* is omitted, the return value of the function is undefined. The expression, if present, is evaluated and then converted to the type returned by the function. When a **`return`** statement contains an expression in functions that have a **`void`** return type, the compiler generates a warning, and the expression isn't evaluated.
+The value of *`expression`*, if present, is returned to the calling function. If *`expression`* is omitted, the return value of the function is undefined. The expression, if present, is evaluated and then converted to the type returned by the function. When a **`return`** statement contains an expression in functions that have a **`void`** return type, the compiler generates a warning, and the expression isn't evaluated.
 
 If no **`return`** statement appears in a function definition, control automatically returns to the calling function after the last statement of the called function is executed. In this case, the return value of the called function is undefined. If the function has a return type other than **`void`**, it's a serious bug, and the compiler prints a warning diagnostic message. If the function has a **`void`** return type, this behavior is okay, but may be considered poor style. Use a plain **`return`** statement to make your intent clear.
 
 As a good engineering practice, always specify a return type for your functions. If a return value isn't required, declare the function to have **`void`** return type. If a return type isn't specified, the C compiler assumes a default return type of **`int`**.
 
-Many programmers use parentheses to enclose the *expression* argument of the **`return`** statement. However, C doesn't require the parentheses.
+Many programmers use parentheses to enclose the *`expression`* argument of the **`return`** statement. However, C doesn't require the parentheses.
 
 The compiler may issue a warning diagnostic message about unreachable code if it finds any statements placed after the **`return`** statement.
 

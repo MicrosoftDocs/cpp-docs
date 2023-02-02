@@ -192,7 +192,7 @@ The element at the specified position relative to the beginning iterator.
 The derived view must satisfy [`random_access_range`](range-concepts.md#random_access_range).\
 The behavior of this operator is undefined for `std::ranges::empty_view`.
 
-### `operator[]` example
+### Example: `operator[]`
 
 ```cpp
 // requires /std:c++20 or later
@@ -242,7 +242,7 @@ The iterator for the derived view must satisfy `std::ranges::forward_iterator`.\
 This operator is equivalent to `!empty()`. This makes it convenient to write `if (someRange) {...}` to test whether there's something in the range to operate on.\
 The behavior of this operator is undefined for `std::ranges::empty_view`.
 
-### `operator bool` example
+### Example: `operator bool`
 
 ```cpp
 // requires /std:c++20 or later

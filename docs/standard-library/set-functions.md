@@ -7,7 +7,7 @@ ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406
 ---
 # `<set>` functions
 
-## <a name="swap"></a> swap (map)
+## <a name="swap"></a> swap (set)
 
 Exchanges the elements of two sets.
 

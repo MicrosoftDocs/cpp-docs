@@ -11,7 +11,7 @@ The **`continue`** statement passes control to the next iteration of the nearest
 
 ## Syntax
 
-*`jump-statement`*:<br/>
+*`jump-statement`*:\
 &emsp;**`continue ;`**
 
 The next iteration of a **`do`**, **`for`**, or **`while`** statement is determined as follows:

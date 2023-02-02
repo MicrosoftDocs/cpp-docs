@@ -102,7 +102,7 @@ The best way to create a `take_while_view` is by using the [`views::take_while`]
 1\) Move constructs the `take_while_view` from a *`base`* view and a *`pred`* predicate. Both *`base`* and *`pred`* are moved via `std::move()`.\
 2\) Constructs an empty `take_while_view`. The underlying view and predicate are default constructed.
 
-### `take_while_view` example
+### Example: `take_while_view`
 
 ```cpp
 // requires /std:c++20 or later

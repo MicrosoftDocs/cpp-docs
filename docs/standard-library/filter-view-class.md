@@ -94,7 +94,7 @@ The best way to create a `filter_view` is by using the [`views::filter`](range-a
 1\) Create a value-initialized `filter_view`. The predicate and the underlying view must be default-initializable.\
 2\) Move constructs the `filter_view` from a *`base`* view and a *`pred`* predicate. Both *`base`* and *`pred`* are moved via `std::move()`.
 
-### `filter_view` example
+### Example: `filter_view`
 
 ```cpp
 // requires /std:c++20 or later

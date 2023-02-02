@@ -2,7 +2,6 @@
 description: "Learn more about: Using Tiles"
 title: "Using Tiles"
 ms.date: "11/19/2018"
-ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
 ---
 # Using Tiles
 
@@ -19,6 +18,10 @@ You can use tiling to maximize the acceleration of your app. Tiling divides thre
 To take advantage of tiling, your algorithm must partition the compute domain into tiles and then copy the tile data into `tile_static` variables for faster access.
 
 ## Example of Global, Tile, and Local Indices
+
+> [!NOTE]
+> C++ AMP headers are deprecated starting with Visual Studio 2022 version 17.0.
+> Including any AMP headers will generate build errors. Define `_SILENCE_AMP_DEPRECATION_WARNINGS` before including any AMP headers to silence the warnings.
 
 The following diagram represents an 8x9 matrix of data that is arranged in 2x3 tiles.
 

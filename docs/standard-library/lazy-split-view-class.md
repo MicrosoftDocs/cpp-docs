@@ -126,7 +126,7 @@ The best way to create a `lazy_split_view` is by using the [`views::lazy_split`]
 2\) Create a `lazy_split_view` by splitting the view using a delimiter sequence.\
 3\) Create a `lazy_split_view` by splitting the view using a delimiter element.
 
-### `lazy_split_view` example
+### Example: `lazy_split_view`
 
 ```cpp
 // requires /std:c++20 or later

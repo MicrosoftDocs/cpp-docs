@@ -2,11 +2,14 @@
 description: "Learn more about: Using C++ AMP in UWP Apps"
 title: "Using C++ AMP in UWP Apps"
 ms.date: "11/04/2016"
-ms.assetid: 85577298-2c28-4209-9470-eb21048615db
 ---
 # Using C++ AMP in UWP Apps
 
 You can use C++ AMP (C++ Accelerated Massive Parallelism) in your Universal Windows Platform (UWP) app to perform calculations on the GPU (Graphics Processing Unit) or other computational accelerators. However, C++ AMP doesn't provide APIs for working directly with Windows Runtime types, and the Windows Runtime doesn't provide a wrapper for C++ AMP. When you use Windows Runtime types in your code—including those that you've created yourself—you must convert them to types that are compatible with C++ AMP.
+
+> [!NOTE]
+> C++ AMP headers are deprecated starting with Visual Studio 2022 version 17.0.
+> Including any AMP headers will generate build errors. Define `_SILENCE_AMP_DEPRECATION_WARNINGS` before including any AMP headers to silence the warnings.
 
 ## Performance considerations
 
