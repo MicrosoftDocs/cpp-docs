@@ -13,7 +13,7 @@ Specifies whether to treat linker warnings as errors.
 ## Syntax
 
 > **`/WX`**\[**`:NO`**]\
-> **`/WX`**\[**`:`***`nnnn`*[**`,`***`nnnn`*...]]
+> **`/WX`**\[**`:`***`nnnn`*\[**`,`***`nnnn`*...]]
 
 ## Remarks
 
