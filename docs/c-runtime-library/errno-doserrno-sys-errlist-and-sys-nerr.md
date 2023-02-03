@@ -2,10 +2,6 @@
 description: "Learn more about: errno, _doserrno, _sys_errlist, and _sys_nerr"
 title: "errno, _doserrno, _sys_errlist, and _sys_nerr"
 ms.date: "11/04/2016"
-api_name: ["_errno"]
-api_location: ["msvcrt.dll"]
-api_type: ["DLLExport"]
-topic_type: ["apiref"]
 f1_keywords: ["errno", "ERRNO/errno", "_doserrno", "ERRNO/_doserrno", "_sys_errlist", "STDLIB/_sys_errlist", "_sys_nerr", "STDLIB/_sys_nerr"]
 helpviewer_keywords: ["error codes, printing", "sys_errlist global variable", "doserrno global variable", "errno global variable", "_doserrno global variable", "_sys_errlist global variable", "_sys_nerr global variable", "sys_nerr global variable"]
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
