@@ -35,7 +35,7 @@ When passed a valid debug heap pointer, the **`_CrtReportBlockType`** function r
 
 To extract the type and subtype returned by **`_CrtReportBlockType`**, use the macros `_BLOCK_TYPE` and `_BLOCK_SUBTYPE` (both defined in Crtdbg.h) on the return value.
 
-For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
+For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap).
 
 ## Requirements
 

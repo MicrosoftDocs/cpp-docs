@@ -35,7 +35,7 @@ The **`_CrtMemDumpAllObjectsSince`** function dumps the debug header information
 
 If the application has installed a dump hook function by calling [`_CrtSetDumpClient`](crtsetdumpclient.md), then every time **`_CrtMemDumpAllObjectsSince`** dumps information about a `_CLIENT_BLOCK` type of block, it calls the application-supplied dump function as well. By default, internal C run-time blocks (`_CRT_BLOCK`) aren't included in memory dump operations. The [`_CrtSetDbgFlag`](crtsetdbgflag.md) function can be used to turn on the `_CRTDBG_CHECK_CRT_DF` bit of `_crtDbgFlag` to include these blocks. In addition, blocks marked as freed or ignored (`_FREE_BLOCK`, `_IGNORE_BLOCK`) aren't included in the memory dump.
 
-For more information about heap state functions and the `_CrtMemState` structure, see [Heap state reporting functions](/visualstudio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about heap state functions and the `_CrtMemState` structure, see [Heap state reporting functions](../crt-debug-heap-details.md#heap-state-reporting-functions). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 ## Requirements
 

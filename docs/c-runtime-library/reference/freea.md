@@ -41,7 +41,7 @@ If an error occurs in freeing the memory, `errno` is set with information from t
 
 After a memory block has been freed, [`_heapmin`](heapmin.md) minimizes the amount of free memory on the heap by coalescing the unused regions and releasing them back to the operating system. Freed memory that isn't released to the operating system is restored to the free pool and is available for allocation again.
 
-A call to **`_freea`** must accompany all calls to `_malloca`. It's also an error to call **`_freea`** twice on the same memory. When the application is linked with a debug version of the C run-time libraries, particularly with [`_malloc_dbg`](malloc-dbg.md) features enabled by defining `_CRTDBG_MAP_ALLOC`, it's easier to find missing or duplicated calls to **`_freea`**. For more information about how the heap is managed during the debugging process, see [The CRT debug heap](/visualstudio/debugger/crt-debug-heap-details).
+A call to **`_freea`** must accompany all calls to `_malloca`. It's also an error to call **`_freea`** twice on the same memory. When the application is linked with a debug version of the C run-time libraries, particularly with [`_malloc_dbg`](malloc-dbg.md) features enabled by defining `_CRTDBG_MAP_ALLOC`, it's easier to find missing or duplicated calls to **`_freea`**. For more information about how the heap is managed during the debugging process, see [The CRT debug heap](../crt-debug-heap-details.md).
 
 **`_freea`** is marked `__declspec(noalias)`, meaning that the function is guaranteed not to modify global variables. For more information, see [`noalias`](../../cpp/noalias.md).
 
