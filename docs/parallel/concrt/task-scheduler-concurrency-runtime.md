@@ -7,7 +7,7 @@ ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
 ---
 # Task Scheduler (Concurrency Runtime)
 
-The topics in this part of the documentation describe the important features of the Concurrency Runtime Task Scheduler. The Task Scheduler is useful when you want fine-tune the performance of your existing code that uses the Concurrency Runtime.
+The topics in this part of the documentation describe the important features of the Concurrency Runtime Task Scheduler. The Task Scheduler is useful when you want to fine-tune the performance of your existing code that uses the Concurrency Runtime.
 
 > [!IMPORTANT]
 > The Task Scheduler is not available from a Universal Windows Platform (UWP) app. For more information, see [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
