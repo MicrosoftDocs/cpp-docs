@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer"
 description: "Top-level description of the AddressSanitizer feature for Microsoft C/C++."
-ms.date: 03/05/2021
+ms.date: 02/03/2023
 f1_keywords: ["AddressSanitizer"]
 helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer"]
 ---
@@ -44,9 +44,11 @@ Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer techno
 
 ### Install AddressSanitizer
 
-C++ workloads in the Visual Studio Installer install the AddressSanitizer libraries and IDE integration by default. However, if you're using an older version of Visual Studio, use the Visual Studio Installer to enable ASan support after the upgrade. You can open the installer from the **Control Panel** > Programs and Features > right-click Visual Studio in the list of programs and choose **change**. That will display the Visual Studio **Workloads screen**. Select the **Desktop Development with C++** workload and check the **C++ AddressSantizer** option:
+The Visual Studio Installer C++ workloads install the AddressSanitizer libraries and IDE integration by default. However, if you're using an older version of Visual Studio, use the Visual Studio Installer to enable ASan support after the upgrade. You can open the installer from the Visual Studio main menu via **Tools** > **Get Tools and Features...**
 
-:::image type="content" source="media/asan-installer-option.png" alt-text="Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component under the Optional section":::
+On the Installer's **Workloads** pane, select the **Desktop development with C++** workload and check the **C++ AddressSantizer** option:
+
+:::image type="content" source="media/asan-installer-option.png" alt-text="Screenshot of the Visual Studio Installer. The C++ AddressSanitizer component, under the Optional section, is highlighted":::
 
 > [!NOTE]
 > If you run Visual Studio on the new update but haven't installed ASan, you'll get an error when you run your code:
@@ -103,13 +105,15 @@ int main() {
 
 Using a developer command prompt for Visual Studio 2019, compile *`main.cpp`* using `/fsanitize=address /Zi`
 
-:::image type="content" source="media/asan-command-basic-global-overflow.png" alt-text="Screenshot of a command prompt showing the command to compile with AddressSanitizer options.":::
+:::image type="content" source="media/asan-command-basic-global-overflow.png" alt-text="Screenshot of a command prompt showing the command to compile with AddressSanitizer options. The command is: cl main.cpp -faanitize-address /Zi.":::
 
 When you run the resulting *`main.exe`* at the command line, it creates the formatted error report seen below.
 
 Consider the overlaid, red boxes that highlight seven key pieces of information:
 
-:::image type="content" source="media/asan-basic-global-overflow.png" alt-text="Screenshot of the debugger showing a basic global overflow error.":::
+:::image type="complex" source="media/asan-basic-global-overflow.png" alt-text="Screenshot of the debugger showing a basic global overflow error."
+There are seven red highlights identifying key pieces of information in the error report. They map to the numbered list that follows this screenshot. The numbered boxes highlight the following text: 1) global-buffer-overflow 2) WRITE of size 4 3) basic-global-overflow.cpp 7 4) to the right of global variable 'x' defined in 'basic-global-overflow.cpp:3:8' 5) of size 400 6) 00 00[f9]f9 f9 7) Box is in the shadow byte legend area and contains Global redzone: f9
+:::image-end
 
 ### Red highlights, from top to bottom
 
@@ -136,7 +140,7 @@ To build from the IDE, opt out of any [incompatible options](./asan-known-issues
 - Turn off [`/RTC1` (runtime checks)](../build/reference/rtc-run-time-error-checks.md)
 - Turn off [`/INCREMENTAL` (incremental linking)](../build/reference/incremental-link-incrementally.md)
 
-To build and run the debugger, enter **F5**. You'll see this window in Visual Studio:
+To build and run the debugger, press **F5**. You'll see an **Exception Thrown** window in Visual Studio:
 
 :::image type="content" source="media/asan-global-buffer-overflow-F5.png" alt-text="Screenshot of the debugger showing a global buffer overflow error.":::
 
@@ -148,15 +152,13 @@ To enable AddressSanitizer for [a CMake project created to target Windows](../bu
 
    :::image type="content" source="media/asan-cmake-configuration-dropdown.png" alt-text="Screenshot of the CMake configuration dropdown.":::
 
-   That selection opens the CMake Project Settings editor, which is saved in a CMakeSettings.json file.
-
-1. Choose the **Edit JSON** link in the editor. This selection switches the view to raw JSON.
+   That selection opens the CMake Project Settings editor, which is saved in a `CMakePresets.json` file.
 
 1. Add the property: **"addressSanitizerEnabled": true**
 
-   This image is of CMakeSettings.json after that change:
+   This image is of `CMakePresets.json` after that change: ========= JTW THIS LOOKS BROKEN-UPDATE ==========
 
-   :::image type="content" source="media/asan-cmake-json.png" alt-text="Screenshot of the text editor view of CMakeSettings.json.":::
+   :::image type="content" source="media/asan-cmake-json.png" alt-text="Screenshot of the text editor view of CMakePresets.json.":::
 
 1. Enter **Ctrl+S** to save this JSON file, then enter **F5** to recompile and run under the debugger.
 
