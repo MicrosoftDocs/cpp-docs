@@ -1,5 +1,5 @@
 ---
-title: "Debug versions of heap allocation functions | Microsoft Docs"
+title: Debug versions of heap allocation functions
 description: Use debug versions of heap allocation functions in the C run-time library. These functions have the same names as the release versions with _dbg appended.
 ms.date: 02/03/2023
 helpviewer_keywords:

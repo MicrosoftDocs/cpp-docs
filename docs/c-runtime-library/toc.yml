@@ -38,7 +38,7 @@ items:
       href: ../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md
     - name: CRT debugging
       items:
-        - name: CRT Debugging techniques
+        - name: CRT debugging techniques
           href: ../c-runtime-library/crt-debugging-techniques.md
         - name: CRT debug heap details
           href: ../c-runtime-library/crt-debug-heap-details.md
