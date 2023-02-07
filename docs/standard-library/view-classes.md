@@ -135,12 +135,12 @@ Each view class topic has a **Characteristics** section after the syntax section
 * **Element type**: The type of the elements that the view's iterator returns.
 * **Sized**: Whether the view can return the number of elements that it refers to. Not all views can.
 * **Common range**: Specifies whether the view is a [`common_range`](range-concepts.md#common_range), which means that the begin iterator and sentinel types are the same. Common ranges are useful for pre-range code that works with iterator pairs. An example is iterator pair constructors for a sequence container, like `vector(ranges::begin(x), ranges::end(x))`.
-* **Borrowed range**: Specifies whether the view is a borrowed range. `borrowed_range<T>` means you can use iterators for `T` after `T` is destroyed. 
+* **Borrowed range**: Specifies whether the view is a borrowed range. `borrowed_range<T>` means you can use iterators for `T` after `T` is destroyed.
 
-  No standard container is a borrowed range, because destroying the container frees the elements and invalidates any iterators. In that case, we say that the iterators are left "dangling" after destruction. 
+  No standard container is a borrowed range, because destroying the container frees the elements and invalidates any iterators. In that case, we say that the iterators are left "dangling" after destruction.
 
-  For example, `std::ranges::find()` typically returns an iterator to the found element in the range argument. If the range argument is a temporary (rvalue) container, it's a mistake to store the returned iterator and use it later because it's "dangling." 
-  
+  For example, `std::ranges::find()` typically returns an iterator to the found element in the range argument. If the range argument is a temporary (rvalue) container, it's a mistake to store the returned iterator and use it later because it's "dangling."
+
   Range algorithms that return iterators (or subranges) do so only when their arguments are lvalues (non-temporaries) or borrowed ranges. Otherwise, they return a `std::dangling` object, which provides a hint in error messages about what went wrong if you tried to use it like an iterator.
 * **Is `const` iterable**: Indicates whether you can iterate over a `const` instance of the view. Not all `const` views can be iterated. If a view isn't `const` iterable, you can't iterate with `for (const auto& element : as_const(theView))` or pass it to a function that takes a `const` reference to the view and then tries to iterate over it.
 

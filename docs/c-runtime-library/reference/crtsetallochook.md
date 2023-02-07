@@ -53,7 +53,7 @@ When the hook function wants the main allocation process to continue as if the t
 
 To clear the hook function, pass `NULL` to **`_CrtSetAllocHook`**.
 
-For more information about how **`_CrtSetAllocHook`** can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug hook function writing](/visualstudio/debugger/debug-hook-function-writing).
+For more information about how **`_CrtSetAllocHook`** can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug hook function writing](../crt-debugging-techniques.md#debug-hook-function-writing).
 
 > [!NOTE]
 > **`_CrtSetAllocHook`** is not supported under **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and removed in Visual Studio 2017.

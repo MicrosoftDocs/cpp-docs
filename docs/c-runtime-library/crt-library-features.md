@@ -74,7 +74,7 @@ If you're using the **`/clr`** compiler switch, your code will be linked with a 
 
 For more information on using the CRT with **`/clr`**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md).
 
-To build a debug version of your application, the [`_DEBUG`](./debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
+To build a debug version of your application, the [`_DEBUG`](./debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT debugging techniques](./crt-debugging-techniques.md).
 
 This version of the CRT isn't fully conformant with the C99 standard. In versions before Visual Studio 2019 version 16.8, the `<tgmath.h>` header isn't supported. In all versions, the `CX_LIMITED_RANGE` and `FP_CONTRACT` pragma macros aren't supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use **`/Zc`** compiler conformance options and specify linker options to control some aspects of library conformance.
 

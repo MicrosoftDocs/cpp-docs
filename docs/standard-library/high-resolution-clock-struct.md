@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: high_resolution_clock struct"
-title: "high_resolution_clock struct | Microsoft Docs"
+title: high_resolution_clock struct
 ms.custom: ""
 ms.date: 08/19/2021
 ms.technology: "cpp-standard-libraries"

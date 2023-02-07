@@ -52,7 +52,7 @@ The following figure demonstrates the relationship between the compiler and the 
 ![Diagram showing component attribute communication.](../media/vccompattrcomm.gif "Component attribute communication")
 
 > [!NOTE]
-> Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
+> Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [`/Fx` (Merge Injected Code)](../../build/reference/fx-merge-injected-code.md) and [Debug injected code](#debug-injected-code).
 
 Like most C++ constructs, attributes have a set of characteristics that defines their proper usage. This is referred to as the context of the attribute and is addressed in the attribute context table for each attribute reference topic. For example, the [coclass](coclass.md) attribute can only be applied to an existing class or structure, as opposed to the [cpp_quote](cpp-quote.md) attribute, which can be inserted anywhere within a C++ source file.
 
@@ -93,6 +93,38 @@ This field lists other attributes that need to be present (that is, applied to t
 ### Invalid Attributes
 
 This field lists other attributes that are incompatible with the specified attribute. It is uncommon for an attribute to have any entries for this field.
+
+## Debug injected code
+
+Using attributes can greatly simplify C++ programming. For more information, see [Concepts](/cpp/windows/attributed-programming-concepts). Some attributes are interpreted directly by the compiler. Other attributes inject code into the program source, which the compiler then compiles. This injected code makes programming easier by reducing the amount of code you have to write. Sometimes, however, a bug may cause your application to fail while it is executing injected code. When this happens, you will probably want to look at the injected code. Visual Studio provides two ways for you to see injected code:
+
+- You can view injected code in the **Disassembly** window.
+
+- Using [/Fx](/cpp/build/reference/fx-merge-injected-code), you can create a merged source file that contains original and injected code.
+
+The **Disassembly** window shows assembly-language instructions that correspond to the source code and the code injected by attributes. In addition, the **Disassembly** window can show the source-code annotation.
+
+### To turn on Source Annotation
+
+- Right-click the **Disassembly** window, and choose **Show Source Code** from the shortcut menu.
+
+     If you know the location of an attribute in a source window, you can use the shortcut menu to find the injected code in the **Disassembly** window.
+
+### To view injected code
+
+1. The debugger must be in break mode.
+
+2. In a source code window, place the cursor in front of the attribute whose injected code you want to view.
+
+3. Right-click, and select **Go To Disassembly** from the shortcut menu.
+
+     If the attribute location is near the current execution point, you can select the **Disassembly** window from the **Debug** menu.
+
+### To view the disassembly code at the current execution point
+
+1. The debugger must be in break mode.
+
+2. From the **Debug** menu, choose **Windows**, and click **Disassembly**.
 
 ## In This Section
 

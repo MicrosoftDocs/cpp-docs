@@ -68,7 +68,7 @@ As a consequence of the above behavior, a dialog box is always displayed followi
 | `Retry` | Break into debugger during `abort` | Break into debugger during `assert` |
 | `Ignore` | Finish exiting via `abort` | Continue program as though `assert` didn't fire (may result in undefined behavior since preconditions of the calling code weren't met) |
 
-For more information about CRT debugging, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
+For more information about CRT debugging, see [CRT debugging techniques](../crt-debugging-techniques.md).
 
 The `_assert` and `_wassert` functions are internal CRT functions. They help minimize the code required in your object files to support assertions. We don't recommend that you call these functions directly.
 

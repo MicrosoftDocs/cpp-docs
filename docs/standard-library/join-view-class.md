@@ -1,5 +1,5 @@
 ---
-title: "join_view class (C++ Standard Library)| Microsoft Docs"
+title: join_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> join_view class, which combines the elements of multiple ranges into a single view."
 ms.date: 09/28/2022
 f1_keywords: ["ranges/std::join_view", "ranges/std::join_view::base", "ranges/std::join_view::begin", "ranges/std::join_view::end", "ranges/std::join_view::empty", "ranges/std::join_view::operator bool", "ranges/std::join_view::back", "ranges/std::join_view::front"]

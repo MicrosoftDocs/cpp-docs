@@ -53,7 +53,7 @@ On successful completion, this function returns a pointer to the user portion of
 
 **`_malloc_dbg`** sets `errno` to `ENOMEM` if a memory allocation fails or if the amount of memory needed (including the overhead mentioned previously) exceeds `_HEAP_MAXREQ`. For information about this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between standard heap functions and debug versions, see [Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap). For information about the differences between standard heap functions and debug versions, see [Debug versions of heap allocation functions](../debug-versions-of-heap-allocation-functions.md).
 
 ## Requirements
 

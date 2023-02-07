@@ -1,5 +1,5 @@
 ---
-title: "transform_view class (C++ Standard Library)| Microsoft Docs"
+title: transform_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> transform_view class, which is a view of an underlying sequence after applying a transformation function to each element."
 ms.date: 12/14/2022
 f1_keywords: ["ranges/std::transform_view", "ranges/std::transform_view::base", "ranges/std::transform_view::begin", "ranges/std::transform_view::empty", "ranges/std::transform_view::end", "ranges/std::transform_view::operator bool", "ranges/std::transform_view::back", "ranges/std::transform_view::front", "ranges/std::transform_view::operator[]"]
