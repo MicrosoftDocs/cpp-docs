@@ -1,5 +1,5 @@
 ---
-title: "ref_view class (C++ Standard Library)| Microsoft Docs"
+title: ref_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> ref_view class, which is a view that references the elements of another range. It's essentially a view of the elements of another range."
 ms.date: 10/05/2022
 f1_keywords: ["ranges/std::ref_view", "ranges/std::ref_view::base", "ranges/std::ref_view::begin", "ranges/std::ref_view::data", "ranges/std::ref_view::empty", "ranges/std::ref_view::end", "ranges/std::ref_view::size", "ranges/std::ref_view::operator bool", "ranges/std::ref_view::back", "ranges/std::ref_view::front", "ranges/std::ref_view::operator[]"]

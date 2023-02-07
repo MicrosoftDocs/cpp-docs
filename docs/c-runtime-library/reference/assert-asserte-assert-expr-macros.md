@@ -49,7 +49,7 @@ _CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);
 
 When the destination is a debug message window and the user selects the **Retry** button, `_CrtDbgReportW` returns 1, causing the `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` macros to start the debugger if just-in-time (JIT) debugging is enabled.
 
-For more information about the reporting process, see the [`_CrtDbgReport`, `_CrtDbgReportW`](crtdbgreport-crtdbgreportw.md) function. For more information about resolving assertion failures and using these macros as a debugging error handling mechanism, see [Using macros for verification and reporting](/visualstudio/debugger/macros-for-reporting).
+For more information about the reporting process, see the [`_CrtDbgReport`, `_CrtDbgReportW`](crtdbgreport-crtdbgreportw.md) function. For more information about resolving assertion failures and using these macros as a debugging error handling mechanism, see [Macros for reporting](../crt-debugging-techniques.md#macros-for-reporting).
 
 In addition to the `_ASSERT` macros, the [`assert`](assert-macro-assert-wassert.md) macro can be used to verify program logic. This macro is available in both the debug and release versions of the libraries. The [`_RPT`, `_RPTF`](rpt-rptf-rptw-rptfw-macros.md) debug macros are also available for generating a debug report, but they don't evaluate an expression. The `_RPT` macros generate a simple report. The `_RPTF` macros include the source file and line number where the report macro was called in the generated report. Wide character versions of these macros are available (`_RPTW`, `_RPTFW`). The wide character versions are identical to the narrow character versions except that wide character strings are used for all string parameters and output.
 

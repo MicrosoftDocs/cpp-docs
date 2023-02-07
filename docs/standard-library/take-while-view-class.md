@@ -1,5 +1,5 @@
 ---
-title: "take_while_view class (C++ Standard Library)| Microsoft Docs"
+title: take_while_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> take_while_view class, which is a view that contains the leading elements of a range that match a predicate."
 ms.date: 08/04/2022
 f1_keywords: ["ranges/std::take_while_view", "ranges/std::take_while_view::base", "ranges/std::take_while_view::begin", "ranges/std::take_while_view::data", "ranges/std::take_while_view::empty", "ranges/std::take_while_view::end", "ranges/std::take_while_view::size", "ranges/std::take_while_view::operator bool",  "ranges/std::take_while_view::pred", "ranges/std::take_while_view::back", "ranges/std::take_while_view::front", "ranges/std::take_while_view::operator[]"]

@@ -1,5 +1,5 @@
 ---
-title: "take_view class (C++ Standard Library)| Microsoft Docs"
+title: take_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> take_view class. It's a view that contains the specified number of elements taken from the front of another view."
 ms.date: 10/19/2022
 f1_keywords: ["ranges/std::take_view", "ranges/std::take_view::base", "ranges/std::take_view::begin", "ranges/std::take_view::data", "ranges/std::take_view::empty", "ranges/std::take_view::end", "ranges/std::take_view::size", "ranges/std::take_view::operator bool", "ranges/std::take_view::back", "ranges/std::take_view::front", "ranges/std::take_view::operator[]"]
@@ -212,6 +212,7 @@ None.
 
 The number of elements in the `take_view`.\
 If the `take_view` was constructed with an explicit *`count`*:
+
 - if *`count`* is less than the number of elements in the underlying range, it's returned as the size of the view.
 - if *`count`* is greater than the number of elements in the underlying range, then the size of the view is `ranges::size(base)`.
 

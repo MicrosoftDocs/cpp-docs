@@ -60,7 +60,7 @@ _set_new_mode(1);
 
 early in ones program, or link with NEWMODE.OBJ (see [Link options](../link-options.md)).
 
-When the application is linked with a debug version of the C run-time libraries, **`realloc`** resolves to [`_realloc_dbg`](realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **`realloc`** resolves to [`_realloc_dbg`](realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](../crt-debug-heap-details.md).
 
 **`realloc`** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned isn't aliased. For more information, see [`noalias`](../../cpp/noalias.md) and [`restrict`](../../cpp/restrict.md).
 

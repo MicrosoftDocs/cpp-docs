@@ -1,5 +1,5 @@
 ---
-title: "keys_view class (C++ Standard Library)| Microsoft Docs"
+title: keys_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> keys_view class, which provides a view over the first index into each tuple-like value in a collection. It's useful for extracting keys from associative containers."
 ms.date: 09/28/2022
 f1_keywords: ["ranges/std::keys_view", "ranges/std::keys_view::base", "ranges/std::keys_view::begin", "ranges/std::keys_view::empty", "ranges/std::keys_view::end", "ranges/std::keys_view::size", "ranges/std::keys_view::operator bool", "ranges/std::keys_view::back", "ranges/std::keys_view::front", "ranges/std::keys_view::operator[]"]

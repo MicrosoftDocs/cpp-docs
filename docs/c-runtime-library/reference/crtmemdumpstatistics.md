@@ -33,7 +33,7 @@ The **`_CrtMemDumpStatistics`** function dumps the debug header information for 
 
 The *`state`* parameter must be a pointer to a `_CrtMemState` structure that has been filled in by [`_CrtMemCheckpoint`](crtmemcheckpoint.md) or returned by [`_CrtMemDifference`](crtmemdifference.md) before **`_CrtMemDumpStatistics`** is called. If *`state`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and no action is taken. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-For more information about heap state functions and the `_CrtMemState` structure, see [Heap state reporting functions](/visualstudio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about heap state functions and the `_CrtMemState` structure, see [Heap state reporting functions](../crt-debug-heap-details.md#heap-state-reporting-functions). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 ## Requirements
 

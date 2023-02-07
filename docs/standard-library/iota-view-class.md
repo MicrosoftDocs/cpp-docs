@@ -1,5 +1,5 @@
 ---
-title: "iota_view class (C++ Standard Library)| Microsoft Docs"
+title: iota_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> iota_view class: a factory that generates a view from a bounded or unbounded series of repeatedly incrementing values."
 ms.date: 11/04/2022
 f1_keywords: ["ranges/std::iota_view", "ranges/std::iota_view::base", "ranges/std::iota_view::begin", "ranges/std::iota_view::end", "ranges/std::iota_view::size", "ranges/std::iota_view::empty", "ranges/std::iota_view::operator bool", "ranges/std::iota_view::back", "ranges/std::iota_view::front", "ranges/std::iota_view::operator[]"]

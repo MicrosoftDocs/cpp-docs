@@ -40,7 +40,7 @@ The **`_CrtSetDbgFlag`** function allows the application to control how the debu
 
 When [`_DEBUG`](../debug.md) isn't defined, calls to **`_CrtSetDbgFlag`** are removed during preprocessing.
 
-The following table lists the bit fields for **`_crtDbgFlag`** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits aren't set (turned off) by default. For more information about these bit fields, see [Heap state reporting functions](/visualstudio/debugger/crt-debug-heap-details).
+The following table lists the bit fields for **`_crtDbgFlag`** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits aren't set (turned off) by default. For more information about these bit fields, see [Heap state reporting functions](../crt-debug-heap-details.md#heap-state-reporting-functions).
 
 | Bit field | Default | Description |
 |---|---|---|
@@ -117,7 +117,7 @@ tmpFlag &= ~_CRTDBG_CHECK_ALWAYS_DF;
 _CrtSetDbgFlag( tmpFlag );
 ```
 
-For an overview of memory management and the debug heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For an overview of memory management and the debug heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 To disable a flag with the **`_CrtSetDbgFlag`** function, use a bitwise "and" (`&`) of the variable with the bitwise "not" (`~`) of the bitmask.
 

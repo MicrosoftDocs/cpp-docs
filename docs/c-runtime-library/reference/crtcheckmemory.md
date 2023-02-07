@@ -37,7 +37,7 @@ Because this function returns `TRUE` or `FALSE`, it can be passed to one of the 
 _ASSERTE( _CrtCheckMemory( ) );
 ```
 
-For more information about how **`_CrtCheckMemory`** can be used with other debug functions, see [Heap state reporting functions](/visualstudio/debugger/crt-debug-heap-details). For an overview of memory management and the debug heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about how **`_CrtCheckMemory`** can be used with other debug functions, see [Heap state reporting functions](../crt-debug-heap-details.md#heap-state-reporting-functions). For an overview of memory management and the debug heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 ## Requirements
 

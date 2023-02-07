@@ -1,5 +1,5 @@
 ---
-title: "split_view class (C++ Standard Library)| Microsoft Docs"
+title: split_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> split_view class. Splits a view into subranges based on a delimiter. The delimiter can be a single element or a view of elements."
 ms.date: 10/05/2022
 f1_keywords: ["ranges/std::split_view", "ranges/std::split_view::base", "ranges/std::split_view::begin", "ranges/std::split_view::data", "ranges/std::split_view::empty", "ranges/std::split_view::end", "ranges/std::split_view::size", "ranges/std::split_view::operator bool", "ranges/std::split_view::back", "ranges/std::split_view::front", "ranges/std::split_view::operator[]"]

@@ -48,7 +48,7 @@ The **`_CrtMemDifference`** function compares *`oldState`* and *`newState`* and 
 
 By default, internal C run-time blocks (`_CRT_BLOCK`) aren't included in memory state operations. The [`_CrtSetDbgFlag`](crtsetdbgflag.md) function can be used to turn on the `_CRTDBG_CHECK_CRT_DF` bit of **`_crtDbgFlag`** to include these blocks in leak detection and other memory state operations. Freed memory blocks (`_FREE_BLOCK`) don't cause **`_CrtMemDifference`** to return `TRUE`.
 
-For more information about heap state functions and the **`_CrtMemState`** structure, see [Heap state reporting functions](/visualstudio/debugger/crt-debug-heap-details). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about heap state functions and the **`_CrtMemState`** structure, see [Heap state reporting functions](../crt-debug-heap-details.md#heap-state-reporting-functions). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 ## Requirements
 
