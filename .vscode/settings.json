@@ -13,14 +13,5 @@
         "Makefile",
         "VB.NET",
         "XML"
-    ],
-    "cSpell.words": [
-        "fread",
-        "helpviewer",
-        "Inout",
-        "objbase",
-        "SCODE",
-        "UNINIT",
-        "USEHEADER"
     ]
 }
