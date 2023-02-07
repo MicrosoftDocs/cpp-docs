@@ -1,5 +1,5 @@
 ---
-title: "values_view class (C++ Standard Library)| Microsoft Docs"
+title: values_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> values_view class, which provides a view over the second index into each tuple-like value in a collection. It's useful for extracting values from associative containers."
 ms.date: 10/07/2022
 f1_keywords: ["ranges/std::values_view", "ranges/std::values_view::base", "ranges/std::values_view::begin", "ranges/std::values_view::empty", "ranges/std::values_view::end", "ranges/std::values_view::size", "ranges/std::values_view::operator bool", "ranges/std::values_view::back", "ranges/std::values_view::front", "ranges/std::values_view::operator[]"]

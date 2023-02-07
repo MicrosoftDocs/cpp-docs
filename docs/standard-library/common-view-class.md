@@ -1,5 +1,5 @@
 ---
-title: "common_view class (C++ Standard Library)| Microsoft Docs"
+title: common_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> common_view class, which takes a view that has different iterator and sentinel types and creates a view that has the same iterator and sentinel type."
 ms.date: 09/27/2022
 f1_keywords: ["ranges/std::common_view", "ranges/std::common_view::base", "ranges/std::common_view::begin", "ranges/std::common_view::end", "ranges/std::common_view::size", "ranges/std::common_view::empty", "ranges/std::common_view::operator bool", "ranges/std::common_view::data", "ranges/std::common_view::back", "ranges/std::common_view::front", "ranges/std::common_view::operator[]"]

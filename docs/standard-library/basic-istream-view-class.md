@@ -1,5 +1,5 @@
 ---
-title: "basic_istream_view class (C++ Standard Library)| Microsoft Docs"
+title: basic_istream_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> basic_istream_view class, which reads (using operator>>) successive elements from an input stream. Also includes the istream_view and wistream_view specializations."
 ms.date: 11/07/2022
 f1_keywords: ["ranges/std::basic_istream_view", "ranges/std::istream_view", "ranges/std::wistream_view", "ranges/std::basic_istream_view::begin", "ranges/std::basic_istream_view::end", "ranges/std::istream_view::begin", "ranges/std::istream_view::end", "ranges/std::wistream_view::begin", "ranges/std::wistream_view::end"]

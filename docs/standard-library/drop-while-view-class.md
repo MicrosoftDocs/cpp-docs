@@ -1,5 +1,5 @@
 ---
-title: "drop_while_view class (C++ Standard Library)| Microsoft Docs"
+title: drop_while_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> drop_while_view class, which is a view that contains those elements of a range that remain once the leading elements that match a predicate are dropped."
 ms.date: 08/04/2022
 f1_keywords: ["ranges/std::drop_while_view", "ranges/std::drop_while_view::base", "ranges/std::drop_while_view::begin", "ranges/std::drop_while_view::data", "ranges/std::drop_while_view::empty", "ranges/std::drop_while_view::end", "ranges/std::drop_while_view::size", "ranges/std::drop_while_view::operator bool",  "ranges/std::drop_while_view::pred", "ranges/std::drop_while_view::back", "ranges/std::drop_while_view::front", "ranges/std::drop_while_view::operator[]"]

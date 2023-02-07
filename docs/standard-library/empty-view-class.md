@@ -1,5 +1,5 @@
 ---
-title: "empty_view class (C++ Standard Library)| Microsoft Docs"
+title: empty_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> empty_view class, which is a view that has no elements. This view is useful for test purposes such as calling code that needs to be provided with a view but doesn't need to access its underlying data."
 ms.date: 10/18/2022
 f1_keywords: ["ranges/std::empty_view", "ranges/std::empty_view::base", "ranges/std::empty_view::begin", "ranges/std::empty_view::end", "ranges/std::empty_view::size", "ranges/std::empty_view::empty", "ranges/std::empty_view::operator bool", "ranges/std::empty_view::data", "ranges/std::empty_view::back", "ranges/std::empty_view::front", "ranges/std::empty_view::operator[]"]

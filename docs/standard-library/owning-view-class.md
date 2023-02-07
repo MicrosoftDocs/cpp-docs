@@ -1,5 +1,5 @@
 ---
-title: "owning_view class (C++ Standard Library)| Microsoft Docs"
+title: owning_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> owning_view class, which takes ownership of the elements in a range."
 ms.date: 10/05/2022
 f1_keywords: ["ranges/std::owning_view", "ranges/std::owning_view::base", "ranges/std::owning_view::begin", "ranges/std::owning_view::end", "ranges/std::owning_view::size", "ranges/std::owning_view::empty", "ranges/std::owning_view::operator bool", "ranges/std::owning_view::data", "ranges/std::owning_view::back", "ranges/std::owning_view::front", "ranges/std::owning_view::operator[]", "ranges/std::owning_view::operator="]
