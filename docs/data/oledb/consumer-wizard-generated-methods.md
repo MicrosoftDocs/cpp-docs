@@ -15,7 +15,7 @@ The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker range="<=msvc-150"
 
-The **ATL OLE DB Consumer Wizard** and the **MFC Application Wizard** generate certain functions of which you should be aware. Some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
+The **ATL OLE DB Consumer Wizard** and the **MFC Application Wizard** generate certain functions of which you should be aware. Some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](../../windows/attributes/cpp-attributes-com-net.md#debug-injected-code).
 
 - `OpenAll` opens the data source, rowsets, and turns on bookmarks if they're available.
 

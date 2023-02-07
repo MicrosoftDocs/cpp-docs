@@ -34,7 +34,7 @@ Pointer to the memory block.
 
 The **`_msize`** function returns the size, in bytes, of the memory block allocated by a call to **`calloc`**, **`malloc`**, or **`realloc`**.
 
-When the application is linked with a debug version of the C run-time libraries, **`_msize`** resolves to [`_msize_dbg`](msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **`_msize`** resolves to [`_msize_dbg`](msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](../crt-debug-heap-details.md).
 
 This function validates its parameter. If *`memblock`* is a `NULL` pointer, **`_msize`** invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.
 

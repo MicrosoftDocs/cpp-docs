@@ -35,7 +35,7 @@ The **`_aligned_free_dbg`** function is a debug version of the [`_aligned_free`]
 
 If an error occurs in freeing the memory, `errno` is set with information from the operating system on the nature of the failure. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between standard heap functions and their debug versions, see [Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap). For information about the differences between standard heap functions and their debug versions, see [Debug versions of heap allocation functions](../debug-versions-of-heap-allocation-functions.md).
 
 ## Requirements
 

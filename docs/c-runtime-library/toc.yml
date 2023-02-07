@@ -36,6 +36,17 @@ items:
           href: ../c-runtime-library/stream-states.md
     - name: Recommendations for choosing between functions and macros
       href: ../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md
+    - name: CRT debugging
+      items:
+        - name: CRT debugging techniques
+          href: ../c-runtime-library/crt-debugging-techniques.md
+        - name: CRT debug heap details
+          href: ../c-runtime-library/crt-debug-heap-details.md
+        - name: Debug versions of heap allocation functions
+          href: ../c-runtime-library/debug-versions-of-heap-allocation-functions.md
+        - name: Find memory leaks using the CRT library
+          href: ../c-runtime-library/find-memory-leaks-using-the-crt-library.md
+      href: ../c-runtime-library/type-checking-crt.md
     - name: Type checking (CRT)
       href: ../c-runtime-library/type-checking-crt.md
     - name: Direction flag

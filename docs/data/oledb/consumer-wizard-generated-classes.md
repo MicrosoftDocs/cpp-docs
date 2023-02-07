@@ -19,7 +19,7 @@ When you use the **ATL OLE DB Consumer Wizard** to generate a consumer, you have
 
 - If you select a templated consumer, the wizard generates a command class and a user record class. The command class will have the name that you enter in the **Class** box in the wizard (for example, `CProducts`), and the user record class will have a name of the form "*ClassName*Accessor" (for example, `CProductsAccessor`). Both classes are placed in the consumer's header file.
 
-- If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you'll be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
+- If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you'll be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](../../windows/attributes/cpp-attributes-com-net.md#debug-injected-code).
 
 The following examples use a command class created on the `Products` table of the `Northwind` database to demonstrate the wizard-generated consumer code for the command class and user record class.
 
@@ -178,7 +178,7 @@ class CProducts : public CCommand<CAccessor<_CProductsAccessor>>
 
 Most of the injected code is the same as or similar to the templated version. The main differences are in the injected methods, which are described in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).
 
-For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
+For information about viewing injected code, see [Debugging Injected Code](../../windows/attributes/cpp-attributes-com-net.md#debug-injected-code).
 
 ::: moniker-end
 

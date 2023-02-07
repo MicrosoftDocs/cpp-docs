@@ -59,9 +59,9 @@ A pointer to the memory block that was allocated or `NULL` if the operation fail
 
 This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_offset_malloc` validates its parameters. If *`alignment`* isn't a power of 2, or if *`offset`* is non-zero and greater than or equal to *`size`*, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
 
-For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
-For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
+For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap).
 
 ## Requirements
 

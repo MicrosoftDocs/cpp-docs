@@ -59,7 +59,7 @@ It's an error to reallocate memory and change the alignment of a block.
 
 Also, **`_aligned_realloc_dbg`** validates its parameters. If *`alignment`* isn't a power of 2, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
 
-For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between standard heap functions and their debug versions, see [Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap). For information about the differences between standard heap functions and their debug versions, see [Debug versions of heap allocation functions](../debug-versions-of-heap-allocation-functions.md).
 
 ## Requirements
 
