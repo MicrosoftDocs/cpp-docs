@@ -52,7 +52,7 @@ The following figure demonstrates the relationship between the compiler and the 
 ![Diagram showing component attribute communication.](../media/vccompattrcomm.gif "Component attribute communication")
 
 > [!NOTE]
-> Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](../../windows/attributes/cpp-attributes-com-net.md#debug-injected-code).
+> Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [`/Fx` (Merge Injected Code)](../../build/reference/fx-merge-injected-code.md) and [Debug injected code](#debug-injected-code).
 
 Like most C++ constructs, attributes have a set of characteristics that defines their proper usage. This is referred to as the context of the attribute and is addressed in the attribute context table for each attribute reference topic. For example, the [coclass](coclass.md) attribute can only be applied to an existing class or structure, as opposed to the [cpp_quote](cpp-quote.md) attribute, which can be inserted anywhere within a C++ source file.
 
