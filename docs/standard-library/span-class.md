@@ -1,5 +1,5 @@
 ---
-title: "span class (C++ Standard Library)| Microsoft Docs"
+title: span class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) span class, which provides a lightweight view over a contiguous sequence of objects."
 ms.date: "05/28/2020"
 f1_keywords: ["span/std::span", "span/std::span::const_pointer", "span/std::span::const_reference", "span/std::span::difference_type", "span/std::span::element_type", "span/std::span::iterator", "span/std::span::pointer", "span/std::span::reference", "span/std::span::reverse_iterator", "span/std::span::size_type", "span/std::span::value_type", "span/std::span::at", "span/std::span::assign", "span/std::span::back", "span/std::span::begin", "span/std::span::data", "span/std::span::empty", "span/std::span::end", "span/std::span::front", "span/std::span::rbegin", "span/std::span::rend",

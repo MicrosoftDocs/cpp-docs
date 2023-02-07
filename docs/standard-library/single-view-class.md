@@ -1,5 +1,5 @@
 ---
-title: "single_view class (C++ Standard Library)| Microsoft Docs"
+title: single_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> single_view class, which is a view that has only one element."
 ms.date: 10/05/2022
 f1_keywords: ["ranges/std::single_view", "ranges/std::single_view::base", "ranges/std::single_view::begin", "ranges/std::single_view::end", "ranges/std::single_view::size", "ranges/std::single_view::empty", "ranges/std::single_view::operator bool", "ranges/std::single_view::data", "ranges/std::single_view::back", "ranges/std::single_view::front", "ranges/std::single_view::operator[]"]
