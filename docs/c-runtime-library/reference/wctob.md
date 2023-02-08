@@ -6,7 +6,7 @@ api_name: ["wctob", "_o_wctob"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["wctob"]
+f1_keywords: ["WCHAR/wctob", "wctob"]
 helpviewer_keywords: ["wide characters, converting", "wctob function", "characters, converting"]
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
 ---
