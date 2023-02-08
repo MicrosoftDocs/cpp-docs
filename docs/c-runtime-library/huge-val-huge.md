@@ -6,7 +6,7 @@ api_name: ["_HUGE"]
 api_location: ["msvcrt.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["CORECRT_MATH/HUGE_VAL", "CORECRT_MATH/HUGE_VALF", "CORECRT_MATH/HUGE_VALL", "CORECRT_MATH/HUGE","CORECRT_MATH/_HUGE", "HUGE_VAL" "HUGE_VALF", "HUGE_VALL", "HUGE", "_HUGE"]
+f1_keywords: ["CORECRT_MATH/HUGE_VAL", "CORECRT_MATH/HUGE_VALF", "CORECRT_MATH/HUGE_VALL", "CORECRT_MATH/HUGE", "CORECRT_MATH/_HUGE", "HUGE_VAL", "HUGE_VALF", "HUGE_VALL", "HUGE", "_HUGE"]
 helpviewer_keywords: ["_HUGE constant", "HUGE_VAL constant", "double value"]
 ms.assetid: 3f044b45-02cd-46b2-b1de-87fd0441dd6a
 ---
