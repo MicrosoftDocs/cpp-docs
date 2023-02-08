@@ -6,7 +6,7 @@ api_name: ["wcsrtombs_s", "_o_wcsrtombs_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["wcsrtombs_s"]
+f1_keywords: ["WCHAR/wcsrtombs_s", "wcsrtombs_s"]
 helpviewer_keywords: ["string conversion, wide characters", "wcsrtombs_s function", "wide characters, strings"]
 ms.assetid: 9dccb766-113c-44bb-9b04-07a634dddec8
 ---
