@@ -6,7 +6,7 @@ api_name: ["vscanf_s", "vwscanf_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_vtscanf_s", "vscanf_s", "vwscanf_s"]
+f1_keywords: ["STDIO/vscanf_s", "CORECRT_WSTDIO/vwscanf_s", "TCHAR/_vtscanf_s", "vscanf_s", "vwscanf_s", "_vtscanf_s"]
 ms.assetid: 23a1c383-5b01-4887-93ce-534a1e38ed93
 ---
 # `vscanf_s`, `vwscanf_s`
