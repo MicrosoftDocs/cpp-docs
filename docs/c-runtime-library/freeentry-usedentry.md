@@ -2,7 +2,7 @@
 description: "Learn more about: _FREEENTRY, _USEDENTRY"
 title: "_FREEENTRY, _USEDENTRY"
 ms.date: "11/04/2016"
-f1_keywords: ["USEDENTRY", "_USEDENTRY", "_FREEENTRY", "FREEENTRY"]
+f1_keywords: ["MALLOC/_USEDENTRY", "MALLOC/_FREEENTRY", "_USEDENTRY", "_FREEENTRY", "USEDENTRY", "FREEENTRY"]
 helpviewer_keywords: ["_USEDENTRY constant", "_FREEENTRY constant", "FREEENTRY constant", "USEDENTRY constant"]
 ms.assetid: 26f658e6-6846-4a4e-9984-262cfe392770
 ---
