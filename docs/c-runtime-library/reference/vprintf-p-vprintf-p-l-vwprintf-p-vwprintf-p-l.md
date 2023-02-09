@@ -6,7 +6,7 @@ api_name: ["_vwprintf_p", "_vprintf_p", "_vprintf_p_l", "_vwprintf_p_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["STDIO/_vprintf_p", "STDIO/_vprintf_p_l", "TCHAR/_vtprintf_p", "TCHAR/_vtprintf_p_l", "CORECRT_WSTDIO/_vwprintf_p","CORECRT_WSTDIO/_vwprintf_p_l", "_vprintf_p", "_vprintf_p_l", "_vtprintf_p", "_vtprintf_p_l", "_vwprintf_p","_vwprintf_p_l"]
+f1_keywords: ["STDIO/_vprintf_p", "STDIO/_vprintf_p_l", "CORECRT_WSTDIO/_vwprintf_p","CORECRT_WSTDIO/_vwprintf_p_l", "TCHAR/_vtprintf_p", "TCHAR/_vtprintf_p_l", "_vprintf_p", "_vprintf_p_l", "_vwprintf_p", "_vwprintf_p_l", "_vtprintf_p", "_vtprintf_p_l"]
 helpviewer_keywords: ["_vtprintf_p_l function", "_vtprintf_p function", "vtprintf_p function", "_vwprintf_p function", "_vwprintf_p_l function", "_vprintf_p function", "_vprintf_p_l function", "vprintf_p_l function", "vwprintf_p function", "vprintf_p function", "vtprintf_p_l function", "vwprintf_p_l function", "formatted text [C++]"]
 ---
 # `_vprintf_p`, `_vprintf_p_l`, `_vwprintf_p`, `_vwprintf_p_l`

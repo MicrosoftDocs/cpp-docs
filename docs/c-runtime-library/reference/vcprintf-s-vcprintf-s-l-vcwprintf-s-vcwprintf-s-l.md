@@ -6,7 +6,7 @@ api_name: ["_vcprintf_s", "_vcprintf_s_l", "_vcwprintf_s", "_vcwprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["vcprintf_s", "vcwprintf_s_l", "_vcwprintf_s", "_vcwprintf_s_l", "_vcprintf_s_l", "_vtcprintf_s", "vcwprintf_s", "vcprintf_s_l", "_vcprintf_s"]
+f1_keywords: ["CONIO/_vcprintf_s", "CONIO/_vcprintf_s_l", "CORECRT_WCONIO/_vcwprintf_s", "CORECRT_WCONIO/_vcwprintf_s_l", "TCHAR/_vtcprintf_s", "TCHAR/_vtcprintf_s_l", "_vcprintf_s", "_vcprintf_s_l", "_vcwprintf_s", "_vcwprintf_s_l", "_vtcprintf_s", "_vtcprintf_s_l"]
 helpviewer_keywords: ["_vtcprintf_s_l function", "_vcwprintf_s_l function", "_vtcprintf_s function", "vtcprintf_s_l function", "vcprintf_s_l function", "_vcprintf_s function", "_vcwprintf_s function", "vcwprintf_s_l function", "vcwprintf_s function", "vcprintf_s function", "_vcprintf_s_l function", "vtcprintf_s function", "formatted text [C++]"]
 ---
 # `_vcprintf_s`, `_vcprintf_s_l`, `_vcwprintf_s`, `_vcwprintf_s_l`
@@ -19,21 +19,21 @@ Writes formatted output to the console by using a pointer to a list of arguments
 ## Syntax
 
 ```C
-int _vcprintf(
-   const char* format,
+int _vcprintf_s(
+   char const* const format,
    va_list argptr
 );
-int _vcprintf(
-   const char* format,
+int _vcprintf_s_l(
+   char const* const format,
    _locale_t locale,
    va_list argptr
 );
 int _vcwprintf_s(
-   const wchar_t* format,
+   wchar_t const* const format,
    va_list argptr
 );
 int _vcwprintf_s_l(
-   const wchar_t* format,
+   wchar_t const* const format,
    _locale_t locale,
    va_list argptr
 );
