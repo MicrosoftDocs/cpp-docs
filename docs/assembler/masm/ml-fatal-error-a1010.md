@@ -2,7 +2,7 @@
 description: "Learn more about: ML Fatal Error A1010"
 title: "ML Fatal Error A1010"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A1010"]
 helpviewer_keywords: ["A1010"]
 ms.assetid: 9e0b5241-67f4-4740-8701-3b2d2d1ad9e4

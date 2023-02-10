@@ -2,7 +2,7 @@
 description: "Learn more about: ML Fatal Error A1007"
 title: "ML Fatal Error A1007"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A1007"]
 helpviewer_keywords: ["A1007"]
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf

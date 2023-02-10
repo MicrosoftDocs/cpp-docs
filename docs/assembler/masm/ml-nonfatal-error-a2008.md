@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2008"
 title: "ML Nonfatal Error A2008"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2008"]
 helpviewer_keywords: ["A2008"]
 ms.assetid: ca24157f-c88a-4678-ae06-3bc3cd956001

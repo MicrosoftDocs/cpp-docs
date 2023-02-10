@@ -2,7 +2,7 @@
 description: "Learn more about: ML Fatal Error A1017"
 title: "ML Fatal Error A1017"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A1017"]
 helpviewer_keywords: ["A1017"]
 ms.assetid: bef0b312-5431-4e5a-b637-c19919acf01b
