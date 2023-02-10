@@ -36,6 +36,6 @@ We prefer all communications to be in English.
 
 ## Policy
 
-Microsoft follows the principle of [Coordinated Vulnerability Disclosure](https://aka.ms/opensource/security/cvd).
-
+Microsoft follows the principle of [Coordinated Vulnerability Disclosure][(https://aka.ms/opensource/security/cvd).
+](https://github.com/MicrosoftDocs/cpp-docs/edit/main/SECURITY.md)
 <!-- END MICROSOFT SECURITY.MD BLOCK -->
