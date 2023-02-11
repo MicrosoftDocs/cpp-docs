@@ -35,7 +35,7 @@ For more information, see [Creating a forms-based MFC application](creating-a-fo
 
 :::image type="complex" source="media/mfc-app-wizard.png" alt-text="Screenshot of the MFC Application wizard in Visual Studios 2022.":::
 The dialog shows options for the application type which is set to single document. Application type options include tabbed documents, which is checked, and document/view architecture support, which is checked. There are other options for project style, resource language, and so on that are set to their default values.
-:::image-end
+:::image-end:::
 
 ## To create an MFC console application
 
@@ -48,23 +48,23 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 :::image type="complex" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop Project wizard in Visual Studios 2022.":::
 The dialog shows the application type, set to Console Application (.exe). Under Additional Options, Precompiled header is checked as is MFC headers. Precompiled header is checked automatically when MFC headers is checked.
-:::image-end
+:::image-end:::
 ::: moniker-end
 
 ::: moniker range="=msvc-150"
 
 ## To create an MFC forms or dialog-based application
 
-1. From the main menu, choose **File** > **New** > **Project**.
-1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add them.
-1. Choose **MFC Application** from the center pane.
-1. Modify the configuration values as needed, then press **Finish**.
+1. From the Visual Studio main menu, choose **File** > **New** > **Project**.
+1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add MFC/ATL functionality. You can access the installer from the Visual Studio menu via **Tools** > **Get Tools and Features...** In the installer, select **Individual components** and search for **mfc** and then select the appropriate library for your machine such as **Visual C++ MFC for x86 and x64 with Spectre Mitigations**.
+1. Choose **MFC App** from the center pane.
+1. Modify the configuration values as needed, then press **OK**.
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
 :::image type="complex" source="media/mfc-app-wizard.png" alt-text="Screenshot of the MFC Application wizard in Visual Studios 2017.":::
 The dialog shows the various settings set to their default, such as the application type set to console application.exe; precompiled header is checked and security development lifecycle (SDL) is checked. Add common headers for: MFC is not checked, but you will select it.
-:::image-end
+:::image-end:::
 
 ## To create an MFC console application
 
@@ -72,13 +72,13 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 1. From the main menu, choose **File** > **New** > **Project**.
 1. Under the **Installed** templates, choose **Visual C++** > **Windows Desktop**.
-1. Choose **Windows Desktop Wizard** from the center pane.
+1. From the center pane, choose **Windows Desktop Wizard**.
 1. Modify the project name as needed, then press **OK** to open the **Windows Desktop Wizard**.
 1. Check the **MFC Headers** box and set other values as needed, then press **OK**.
 
 :::image type="complex" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop Project wizard in Visual Studios 2017.":::
 The dialog shows the application type set to Console Application (.exe). Under additional options, Precompiled header is checked and MFC headers is checked.
-:::image-end
+:::image-end:::
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ For more information, see [Creating a Forms-Based MFC Application](creating-a-fo
 
 :::image type="complex" source="media/mfc-app-wizard-2015.png" alt-text="Screenshot of the MFC Application wizard in Visual Studios 2015.":::
 The dialog lists the current project settings such as: tabbed multiple document interface, no database support, no compound document support, customizable menu bar and toolbar interface, Visual Studio 2008 application appearance, Visual Studio project style, and restart manager support.
-:::image-end
+:::image-end:::
 
 ## To create an MFC console application
 
