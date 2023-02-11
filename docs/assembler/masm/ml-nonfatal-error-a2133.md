@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2133"
 title: "ML Nonfatal Error A2133"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2133"]
 helpviewer_keywords: ["A2133"]
 ms.assetid: 5ba50911-22c8-43b7-90e2-946fc612e05f

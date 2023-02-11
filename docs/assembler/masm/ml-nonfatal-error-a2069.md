@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2069"
 title: "ML Nonfatal Error A2069"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2069"]
 helpviewer_keywords: ["A2069"]
 ms.assetid: 57dbf072-da61-4306-8d41-a4d9c97fec1a
