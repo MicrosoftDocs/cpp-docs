@@ -111,9 +111,9 @@ When you run the resulting *`main.exe`* at the command line, it creates the form
 
 Consider the overlaid, red boxes that highlight seven key pieces of information:
 
-:::image type="complex" source="media/asan-basic-global-overflow.png" alt-text="Screenshot of the debugger showing a basic global overflow error."
+:::image type="complex" source="media/asan-basic-global-overflow.png" alt-text="Screenshot of the debugger showing a basic global overflow error.":::
 There are seven red highlights identifying key pieces of information in the error report. They map to the numbered list that follows this screenshot. The numbered boxes highlight the following text: 1) global-buffer-overflow 2) WRITE of size 4 3) basic-global-overflow.cpp 7 4) to the right of global variable 'x' defined in 'basic-global-overflow.cpp:3:8' 5) of size 400 6) 00 00[f9]f9 f9 7) Box is in the shadow byte legend area and contains Global redzone: f9
-:::image-end
+:::image-end:::
 
 ### Red highlights, from top to bottom
 
@@ -158,13 +158,13 @@ To enable AddressSanitizer for [a CMake project created to target Windows](../bu
 
    This image is of `CMakePresets.json` after that change: ========= JTW THIS LOOKS BROKEN-UPDATE ==========
 
-   :::image type="content" source="media/asan-cmake-json.png" alt-text="Screenshot of the text editor view of CMakePresets.json.":::
+   :::image type="content" source="./media/asan-cmake-json.png" alt-text="Screenshot of the text editor view of CMakePresets.json.":::
 
 1. Enter **Ctrl+S** to save this JSON file, then enter **F5** to recompile and run under the debugger.
 
 This screenshot captures the error from the CMake build.
 
-:::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of the CMake build error message.":::
+:::image type="content" source="./media/asan-cmake-error-f5.png" alt-text="Screenshot of the CMake build error message.":::
 
 ## <a name="crash-dumps"></a> AddressSanitizer crash dumps
 

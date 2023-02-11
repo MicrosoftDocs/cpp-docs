@@ -42,8 +42,7 @@ We recommend using at least CMake version 3.14 or later.
 
 In some older versions of Visual Studio, **Tools** > **Options** > **CMake** > **General** only has a single option to enable *`CMakePresets.json`* integration:
 
-:::image type="content" source="./media/enable-cmakepresets.png" alt-text="Screenshot of older Visual Studio enable CMakePresets.json checkbox which is labeled: Use C Make Presets .json to drive CMake configure, build, and test."
-:::image-end:::
+:::image type="content" source="./media/enable-cmakepresets.png" alt-text="Screenshot of older Visual Studio enable CMakePresets.json checkbox which is labeled: Use C Make Presets .json to drive CMake configure, build, and test.":::
 
 The following table indicates when *`CMakePresets.json`* is used instead of *`CMakeSettings.json`* to drive CMake configuration and build in Visual Studio 2022 and Visual Studio 2019 version 16.10 and later. If no configuration file is present, default Configure Presets are used.
 

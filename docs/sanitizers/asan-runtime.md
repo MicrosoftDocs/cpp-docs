@@ -74,7 +74,7 @@ Microsoft C/C++ (MSVC) uses a runtime based on the [Clang AddressSanitizer runti
 > [!NOTE]
 > The AddressSanitizer runtime option `halt_on_error` doesn't function the way you might expect. In both the Clang and the MSVC runtime libraries, many error types are considered **non-continuable**, including most memory corruption errors.
 
-For more information, see the [Differences with Clang 12.0](./asan.md#differences) section.
+For more information, see the [Differences with Clang 12.0](asan.md#differences) section.
 
 ### MSVC-specific AddressSanitizer runtime options
 
