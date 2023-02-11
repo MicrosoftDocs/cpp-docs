@@ -42,12 +42,12 @@ The dialog shows options for the application type which is set to single documen
 An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
 
 1. From the main menu, choose **File** > **New** > **Project**.
-1. Enter "Desktop" into the search box and then choose **Windows Desktop Wizard** from the result list.
+1. Enter "Desktop" into the search box and then choose **Windows Desktop Wizard** from the result list, then press **Next**.
 1. Modify the project name and location as needed, then press **Create** to open the **Windows Desktop Wizard**.
 1. Check the **MFC Headers** box and set other values as needed, then press **OK**.
 
-:::image type="complex" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop wizard in Visual Studios 2022.":::
-The dialog shows the application type, set to Console Application (.exe), and Additional Options, which includes empty project, Precompiled header (checked), export symbols,and MFC headers (checked).
+:::image type="complex" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop Project wizard in Visual Studios 2022.":::
+The dialog shows the application type, set to Console Application (.exe). Under Additional Options, Precompiled header is checked as is MFC headers. Precompiled header is checked automatically when MFC headers is checked.
 :::image-end
 ::: moniker-end
 
@@ -74,9 +74,9 @@ An MFC console application is a command-line program that uses MFC libraries but
 1. Under the **Installed** templates, choose **Visual C++** > **Windows Desktop**.
 1. Choose **Windows Desktop Wizard** from the center pane.
 1. Modify the project name as needed, then press **OK** to open the **Windows Desktop Wizard**.
-1. Check the **MFC Headers** box and set other values as needed, then press **Finish**.
+1. Check the **MFC Headers** box and set other values as needed, then press **OK**.
 
-:::image type="complex" source="media/windows-desktop-wizard-2017.png" alt-text="Screenshot of the Windows Desktop wizard in Visual Studios 2017.":::
+:::image type="complex" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop Project wizard in Visual Studios 2017.":::
 The dialog shows the application type set to Console Application (.exe). Under additional options, Precompiled header is checked and MFC headers is checked.
 :::image-end
 
