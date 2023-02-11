@@ -6,7 +6,7 @@ api_name: ["timespec_get", "_timespec32_get", "_timespec64_get", "_o__timespec32
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["timespec_get", "_timespec32_get", "_timespec64_get", "time/timespec_get", "time/_timespec32_get", "time/_timespec64_get", "timespec", "_timespec32", "_timespec64"]
+f1_keywords: ["TIME/timespec_get", "TIME/_timespec32_get", "TIME/_timespec64_get", "TIME/timespec", "TIME/_timespec32", "TIME/_timespec64", "timespec_get", "_timespec32_get", "_timespec64_get", "timespec", "_timespec32", "_timespec64"]
 helpviewer_keywords: ["timespec_get function", "_timespec32_get function", "_timespec64_get function"]
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
 ---

@@ -6,7 +6,7 @@ api_name: ["_vscprintf", "_vscprintf_l", "_vscwprintf_l", "_vscwprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["vscprintf_l", "vscwpeintf", "_vscwprintf", "_vsctprintf", "_vscprintf", "vscwprintf_l", "vscprintf", "_vscwprintf_l"]
+f1_keywords: ["STDIO/_vscprintf", "STDIO/_vscprintf_l", "CORECRT_WSTDIO/_vscwprintf", "CORECRT_WSTDIO/_vscwprintf_l", "TCHAR/_vsctprintf", "TCHAR/_vsctprintf_l", "_vscprintf", "_vscprintf_l", "_vscwprintf", "_vscwprintf_l", "_vsctprintf", "_vsctprintf_l"]
 helpviewer_keywords: ["vsctprintf function", "_vscprintf_l function", "_vsctprintf_l function", "_vsctprintf function", "_vscwprintf_l function", "vscwprintf_l function", "_vscprintf function", "_vscwprintf function", "vscwprintf function", "vsctprintf_l function", "formatted text [C++]", "vscprintf function", "vscprintf_l function"]
 ---
 # `_vscprintf`, `_vscprintf_l`, `_vscwprintf`, `_vscwprintf_l`

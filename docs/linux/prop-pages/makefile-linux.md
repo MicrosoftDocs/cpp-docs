@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Makefile Project Properties (Linux C++)"
-title: "General Properties (Linux C++ Makefile Project)| Microsoft Docs"
+title: General Properties (Linux C++ Makefile Project)
 ms.date: "06/07/2019"
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
 ---

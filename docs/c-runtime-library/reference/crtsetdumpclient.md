@@ -45,7 +45,7 @@ The *`userPortion`* argument is a pointer to the beginning of the user data port
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
 ```
 
-For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client block hook functions](/visualstudio/debugger/client-block-hook-functions). The [`_CrtReportBlockType`](crtreportblocktype.md) function can be used to return information about block types and subtypes.
+For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client block hook functions](../crt-debugging-techniques.md#client-block-hook-functions). The [`_CrtReportBlockType`](crtreportblocktype.md) function can be used to return information about block types and subtypes.
 
 ## Requirements
 

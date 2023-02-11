@@ -12,7 +12,7 @@ ms.assetid: f0ac0f4d-70e6-4e96-9e43-eb9d1515490c
 ---
 # `__set_app_type`
 
-Sets the current application type.
+Sets the current application type. This internal function is obsolete.
 
 ## Syntax
 

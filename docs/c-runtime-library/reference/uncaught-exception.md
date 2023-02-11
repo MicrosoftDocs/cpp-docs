@@ -6,7 +6,7 @@ api_name: ["__uncaught_exception"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["__uncaught_exception"]
+f1_keywords: ["EH/__uncaught_exception"]
 helpviewer_keywords: ["__uncaught_exception"]
 ms.assetid: 4d9b75c6-c9c7-4876-b761-ea9ab1925e96
 ---

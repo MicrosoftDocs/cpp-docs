@@ -69,7 +69,7 @@ If an `_RPT` macro is called, and `_CrtSetReportMode` and `_CrtSetReportFile` ha
 | `_CRT_ERROR` | A pop-up window. Same as if `_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_WNDW);` had been specified. |
 | `_CRT_ASSERT` | Same as `_CRT_ERROR`. |
 
-When the destination is a debug message window and the user chooses the **Retry** button, `_CrtDbgReport` or `_CrtDbgReportW` returns 1. This return value causes these macros to start the debugger, if just-in-time (JIT) debugging is enabled. For more information about using these macros as a debugging error handling mechanism, see [Using macros for verification and reporting](/visualstudio/debugger/macros-for-reporting).
+When the destination is a debug message window and the user chooses the **Retry** button, `_CrtDbgReport` or `_CrtDbgReportW` returns 1. This return value causes these macros to start the debugger, if just-in-time (JIT) debugging is enabled. For more information about using these macros as a debugging error handling mechanism, see [Macros for reporting](../crt-debugging-techniques.md#macros-for-reporting).
 
 Two other macros exist that generate a debug report. The [`_ASSERT`](assert-asserte-assert-expr-macros.md) macro generates a report, but only when its expression argument evaluates to `FALSE`. [`_ASSERTE`](assert-asserte-assert-expr-macros.md) is exactly like `_ASSERT`, but includes the failed expression in the generated report.
 

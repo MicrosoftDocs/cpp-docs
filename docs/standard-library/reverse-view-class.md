@@ -1,5 +1,5 @@
 ---
-title: "reverse_view class (C++ Standard Library)| Microsoft Docs"
+title: reverse_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> reverse_view class, which returns the elements of a range in reverse order."
 ms.date: 10/19/2022
 f1_keywords: ["ranges/std::reverse_view", "ranges/std::reverse_view::base", "ranges/std::reverse_view::begin", "ranges/std::reverse_view::empty", "ranges/std::reverse_view::end", "ranges/std::reverse_view::size", "ranges/std::reverse_view::operator bool", "ranges/std::reverse_view::back", "ranges/std::reverse_view::front", "ranges/std::reverse_view::operator[]"]

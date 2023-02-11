@@ -67,17 +67,17 @@ class TestClass
 public:
     ~TestClass()
     {
-        printf("Destroying TestClass!\r\n");
+        printf("Destroying TestClass!\n");
     }
 };
 
 __declspec(noinline) void TestCPPEX()
 {
 #ifdef CPPEX
-    printf("Throwing C++ exception\r\n");
+    printf("Throwing C++ exception\n");
     throw std::exception("");
 #else
-    printf("Triggering SEH exception\r\n");
+    printf("Triggering SEH exception\n");
     volatile int *pInt = 0x00000000;
     *pInt = 20;
 #endif
@@ -97,7 +97,7 @@ int main()
     }
     __except(EXCEPTION_EXECUTE_HANDLER)
     {
-        printf("Executing SEH __except block\r\n");
+        printf("Executing SEH __except block\n");
     }
 
     return 0;

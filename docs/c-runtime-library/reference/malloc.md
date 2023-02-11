@@ -90,7 +90,7 @@ The startup code uses **`malloc`** to allocate storage for the **`_environ`**, *
 
 The C++ [`_set_new_mode`](set-new-mode.md) function sets the new handler mode for **`malloc`**. The new handler mode indicates whether, on failure, **`malloc`** is to call the new handler routine as set by [`_set_new_handler`](set-new-handler.md). By default, **`malloc`** doesn't call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **`malloc`** fails to allocate memory, **`malloc`** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call `_set_new_mode(1)` early in your program, or link with `NEWMODE.OBJ` (see [Link options](../link-options.md)).
 
-When the application is linked with a debug version of the C run-time libraries, **`malloc`** resolves to [`_malloc_dbg`](malloc-dbg.md). For more information about how the heap is managed during the debugging process, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **`malloc`** resolves to [`_malloc_dbg`](malloc-dbg.md). For more information about how the heap is managed during the debugging process, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 **`malloc`** is marked `__declspec(noalias)` and `__declspec(restrict)`. These attributes mean that the function is guaranteed not to modify global variables, and that the pointer returned isn't aliased. For more information, see [`noalias`](../../cpp/noalias.md) and [`restrict`](../../cpp/restrict.md).
 

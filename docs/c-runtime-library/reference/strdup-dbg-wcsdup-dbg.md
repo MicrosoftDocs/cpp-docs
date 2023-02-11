@@ -53,7 +53,7 @@ Each of these functions returns a pointer to the storage location for the copied
 
 The **`_strdup_dbg`** and **`_wcsdup_dbg`** functions are identical to `_strdup` and `_wcsdup` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc`, `_malloc_dbg`, to allocate memory for the duplicated string. For information on the debugging features of `_malloc_dbg`, see [`_malloc_dbg`](malloc-dbg.md).
 
-You don't need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_strdup` and `_wcsdup` are remapped to **`_strdup_dbg`** and **`_wcsdup_dbg`**, respectively, with the *`blockType`* set to `_NORMAL_BLOCK`. Thus, you don't need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
+You don't need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_strdup` and `_wcsdup` are remapped to **`_strdup_dbg`** and **`_wcsdup_dbg`**, respectively, with the *`blockType`* set to `_NORMAL_BLOCK`. Thus, you don't need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information on block types, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap).
 
 ### Generic-text routine mappings
 
@@ -77,4 +77,4 @@ All debug versions of the [C run-time libraries](../crt-library-features.md).
 
 [String manipulation](../string-manipulation-crt.md)\
 [`_strdup`, `_wcsdup`, `_mbsdup`](strdup-wcsdup-mbsdup.md)\
-[Debug versions of heap allocation functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)
+[Debug versions of heap allocation functions](../debug-versions-of-heap-allocation-functions.md)
