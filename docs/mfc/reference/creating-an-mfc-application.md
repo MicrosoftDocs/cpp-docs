@@ -33,7 +33,7 @@ The easiest way to create an MFC application is to use the MFC Application Wizar
 
 For more information, see [Creating a forms-based MFC application](creating-a-forms-based-mfc-application.md).
 
-:::image type="complex" source="./media/mfc-app-wizard.png" alt-text="Screenshot of the MFC Application wizard in Visual Studios 2022.":::
+:::image type="complex" source="media/mfc-app-wizard.png" alt-text="Screenshot of the MFC Application wizard in Visual Studios 2022.":::
 The dialog shows options for the application type which is set to single document. Application type options include tabbed documents, which is checked, and document/view architecture support, which is checked. There are other options for project style, resource language, and so on that are set to their default values.
 :::image-end
 
