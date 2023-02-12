@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2066"
 title: "ML Nonfatal Error A2066"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2066"]
 helpviewer_keywords: ["A2066"]
 ms.assetid: 58220fdf-fb8f-47fc-a36d-737867361185

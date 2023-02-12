@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2006"
 title: "ML Nonfatal Error A2006"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2006"]
 helpviewer_keywords: ["A2006"]
 ms.assetid: b8a8f096-95df-42b5-85ed-d2530560a84c

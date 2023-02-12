@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2050"
 title: "ML Nonfatal Error A2050"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2050"]
 helpviewer_keywords: ["A2050"]
 ms.assetid: 16f3a58f-4bde-48f1-b0e3-2ed9612780a5

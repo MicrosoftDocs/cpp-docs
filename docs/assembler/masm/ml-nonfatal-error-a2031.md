@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2031"
 title: "ML Nonfatal Error A2031"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2031"]
 helpviewer_keywords: ["A2031"]
 ms.assetid: d5b11f58-4a00-42be-9062-8fa8728e6306
