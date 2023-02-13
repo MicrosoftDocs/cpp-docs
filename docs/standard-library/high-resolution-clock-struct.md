@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: high_resolution_clock struct"
-title: "high_resolution_clock struct | Microsoft Docs"
+title: high_resolution_clock struct
 ms.custom: ""
 ms.date: 08/19/2021
 ms.technology: "cpp-standard-libraries"
@@ -9,7 +9,6 @@ f1_keywords: ["chrono/std::chrono::high_resolution_clock", chrono/std::chrono::h
 helpviewer_keywords: ["std::chrono [C++], high_resolution_clock"]
 dev_langs: ["C++"]
 author: "corob-msft"
-ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # `high_resolution_clock` struct

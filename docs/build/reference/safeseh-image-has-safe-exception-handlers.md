@@ -1,20 +1,25 @@
 ---
 description: "Learn more about: /SAFESEH (Image has Safe Exception Handlers)"
 title: "/SAFESEH (Image has Safe Exception Handlers)"
-ms.date: 03/02/2022
-f1_keywords: ["/SAFESEH"]
+ms.date: 09/19/2022
+f1_keywords: ["VC.Project.VCLinkerTool.ImageHasSafeExceptionHandlers", "/SAFESEH"]
 helpviewer_keywords: ["/SAFESEH linker option", "-SAFESEH linker option", "SAFESEH linker option"]
 ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7
 ---
 # `/SAFESEH` (Image has Safe Exception Handlers)
 
-> **`/SAFESEH`**[**`:NO`**]
+When **`/SAFESEH`** is specified, the linker only produces an image if it can also produce a table of the image's safe exception handlers. This table specifies to the operating system which exception handlers are valid for the image.
 
-When **`/SAFESEH`** is specified, the linker will only produce an image if it can also produce a table of the image's safe exception handlers. This table specifies for the operating system which exception handlers are valid for the image.
+## Syntax
+
+> **`/SAFESEH`**\
+> **`/SAFESEH:NO`**
+
+## Remarks
 
 **`/SAFESEH`** is only valid when linking for x86 targets. **`/SAFESEH`** isn't supported for platforms that already have the exception handlers noted. For example, on x64 and ARM, all exception handlers are noted in the PDATA. ML64.exe has support for adding annotations that emit SEH information (XDATA and PDATA) into the image, allowing you to unwind through ml64 functions. For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
-If **`/SAFESEH`** isn't specified, the linker will produce an image with a table of safe exceptions handlers if all code segments are compatible with the safe exception handling feature. If any code segments weren't compatible with the safe exception handling feature, the resulting image won't contain a table of safe exception handlers. If [`/SUBSYSTEM`](subsystem-specify-subsystem.md) specifies WINDOWSCE or one of the `EFI_*` options, the linker won't attempt to produce an image with a table of safe exceptions handlers, as neither of those subsystems can make use of the information.
+If **`/SAFESEH`** isn't specified, the linker will produce an image with a table of safe exceptions handlers if all code segments are compatible with the safe exception handling feature. If any code segments weren't compatible with the safe exception handling feature, the resulting image won't contain a table of safe exception handlers. If [`/SUBSYSTEM`](subsystem-specify-subsystem.md) specifies `WINDOWSCE` or one of the `EFI_*` options, the linker won't attempt to produce an image with a table of safe exceptions handlers, as neither of those subsystems can make use of the information.
 
 If **`/SAFESEH:NO`** is specified, the linker won't produce an image with a table of safe exceptions handlers even if all code segments are compatible with the safe exception handling feature.
 
@@ -87,13 +92,11 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
-1. Select the **Linker** folder.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
-1. Select the **Command Line** property page.
-
-1. Enter the option into the **Additional Options** box.
+1. Modify the **Image Has Safe Exception Handlers** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
 
@@ -102,4 +105,4 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
 ## See also
 
 [MSVC linker reference](linking.md)\
-[MSVC Linker Options](linker-options.md)
+[MSVC linker options](linker-options.md)

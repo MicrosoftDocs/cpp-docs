@@ -13,7 +13,6 @@ Specifies behavior for manifest lookup.
 ## Syntax
 
 ```
-
 /ALLOWISOLATION[:NO]
 ```
 

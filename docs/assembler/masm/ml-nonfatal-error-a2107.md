@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2107"
 title: "ML Nonfatal Error A2107"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2107"]
 helpviewer_keywords: ["A2107"]
 ms.assetid: 0385b9f2-36df-4e30-a905-ab49bdc504d1

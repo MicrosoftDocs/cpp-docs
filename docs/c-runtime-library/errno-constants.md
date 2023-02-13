@@ -15,31 +15,31 @@ helpviewer_keywords: ["E2BIG constant", "EACCES constant", "EAGAIN constant", "E
 
 ## Remarks
 
-The **`errno`** constants are values assigned to [`errno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) in the event of various error conditions.
+The `errno` constants are values assigned to [`errno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) for various error conditions.
 
-`ERRNO.H` contains the definitions of the **`errno`** values. However, not all the definitions given in `ERRNO.H` are used in 32-bit Windows operating systems. Some of the values in `ERRNO.H` are present to maintain compatibility with the UNIX family of operating systems. The **`errno`** values in a 32-bit Windows operating system are a subset of the values for **`errno`** in UNIX systems.
+`ERRNO.H` contains the definitions of the `errno` values. However, not all the definitions given in `ERRNO.H` are used in 32-bit Windows operating systems. Some of the values in `ERRNO.H` are present to maintain compatibility with the UNIX family of operating systems. The `errno` values in a 32-bit Windows operating system are a subset of the values for `errno` in UNIX systems.
 
-The **`errno`** value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
+The `errno` value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
 
-The following **`errno`** values are supported:
+The following `errno` values are supported:
 
 | Constant | Description | Value |
 |--|--|--|
 | `E2BIG` | Argument list too long. | 7 |
-| `EACCES` | Permission denied. The file's permission setting does not allow the specified access. This error signifies that an attempt was made to access a file (or, in some cases, a directory) in a way that is incompatible with the file's attributes.<br/><br/>For example, the error can occur when an attempt is made to read from a file that is not open, to open an existing read-only file for writing, or to open a directory instead of a file. Under MS-DOS operating system versions 3.0 and later, `EACCES` may also indicate a locking or sharing violation.<br/><br/>The error can also occur in an attempt to rename a file or directory or to remove an existing directory. | 13 |
-| `EAGAIN` | No more processes or not enough memory or maximum nesting level reached. An attempt to create a new process failed because there are no more process slots, or there is not enough memory, or the maximum nesting level has been reached. | 11 |
-| `EBADF` | Bad file number. There are two possible causes: 1) The specified file descriptor is not a valid value or does not refer to an open file. 2) An attempt was made to write to a file or device opened for read-only access. | 9 |
+| `EACCES` | Permission denied. The file's permission setting doesn't allow the specified access. An attempt was made to access a file (or, in some cases, a directory) in a way that's incompatible with the file's attributes.<br/><br/>For example, the error can occur when an attempt is made to read from a file that isn't open. Or, on an attempt to open an existing read-only file for writing, or to open a directory instead of a file. Under MS-DOS operating system versions 3.0 and later, `EACCES` may also indicate a locking or sharing violation.<br/><br/>The error can also occur in an attempt to rename a file or directory or to remove an existing directory. | 13 |
+| `EAGAIN` | No more processes or not enough memory or maximum nesting level reached. An attempt to create a new process failed because there are no more process slots, or there isn't enough memory, or the maximum nesting level has been reached. | 11 |
+| `EBADF` | Bad file number. There are two possible causes: 1) The specified file descriptor isn't a valid value or doesn't refer to an open file. 2) An attempt was made to write to a file or device opened for read-only access. | 9 |
 | `EBUSY` | Device or resource busy. | 16 |
 | `ECHILD` | No spawned processes. | 10 |
 | `EDEADLK` | Resource deadlock would occur. | 36 |
 | `EDEADLOCK` | Same as `EDEADLK` for compatibility with older Microsoft C versions. | 36 |
-| `EDOM` | Math argument. The argument to a math function is not in the domain of the function. | 33 |
+| `EDOM` | Math argument. The argument to a math function isn't in the domain of the function. | 33 |
 | `EEXIST` | Files exists. An attempt has been made to create a file that already exists. For example, the `_O_CREAT` and `_O_EXCL` flags are specified in an `_open` call, but the named file already exists. | 17 |
 | `EFAULT` | Bad address. | 14 |
 | `EFBIG` | File too large. | 27 |
 | `EILSEQ` | Illegal sequence of bytes (for example, in an `MBCS` string). | 42 |
 | `EINTR` | Interrupted function. | 4 |
-| `EINVAL` | Invalid argument. An invalid value was given for one of the arguments to a function. For example, the value given for the origin when positioning a file pointer (by means of a call to `fseek`) is before the beginning of the file. | 22 |
+| `EINVAL` | Invalid argument. An invalid value was given for one of the arguments to a function. For example, the value given for the origin when positioning a file pointer (by a call to `fseek`) is before the beginning of the file. | 22 |
 | `EIO` | I/O error. | 5 |
 | `EISDIR` | Is a directory. | 21 |
 | `EMFILE` | Too many open files. No more file descriptors are available, so no more files can be opened. | 24 |
@@ -47,10 +47,10 @@ The following **`errno`** values are supported:
 | `ENAMETOOLONG` | Filename too long. | 38 |
 | `ENFILE` | Too many files open in system. | 23 |
 | `ENODEV` | No such device. | 19 |
-| `ENOENT` | No such file or directory. The specified file or directory does not exist or cannot be found. This message can occur whenever a specified file does not exist or a component of a path does not specify an existing directory. | 2 |
-| `ENOEXEC` | Exec format error. An attempt was made to execute a file that is not executable or that has an invalid executable-file format. | 8 |
+| `ENOENT` | No such file or directory. The specified file or directory doesn't exist or can't be found. This message can occur whenever a specified file doesn't exist or a component of a path doesn't specify an existing directory. | 2 |
+| `ENOEXEC` | Exec format error. An attempt was made to execute a file that isn't executable or that has an invalid executable-file format. | 8 |
 | `ENOLCK` | No locks available. | 39 |
-| `ENOMEM` | Not enough memory is available for the attempted operator. For example, this message can occur when insufficient memory is available to execute a child process, or when the allocation request in a `_getcwd` call cannot be satisfied. | 12 |
+| `ENOMEM` | Not enough memory is available for the attempted operator. For example, this message can occur when insufficient memory is available to execute a child process, or when the allocation request in a `_getcwd` call can't be satisfied. | 12 |
 | `ENOSPC` | No space left on device. No more space for writing is available on the device (for example, when the disk is full). | 28 |
 | `ENOSYS` | Function not supported. | 40 |
 | `ENOTDIR` | Not a directory. | 20 |
@@ -64,7 +64,7 @@ The following **`errno`** values are supported:
 | `ESPIPE` | Invalid seek. | 29 |
 | `ESRCH` | No such process. | 3 |
 | `EXDEV` | Cross-device link. An attempt was made to move a file to a different device (using the `rename` function). | 18 |
-| `STRUNCATE` | A string copy or concatenation resulted in a truncated string. See [`_TRUNCATE`](../c-runtime-library/truncate.md). | 80 |
+| `STRUNCATE` | A string copy or concatenation resulted in a truncated string. See [`_TRUNCATE`](./truncate.md). | 80 |
 
 The following values are supported for compatibility with POSIX:
 
@@ -114,4 +114,4 @@ The following values are supported for compatibility with POSIX:
 
 ## See also
 
-[Global constants](../c-runtime-library/global-constants.md)
+[Global constants](./global-constants.md)

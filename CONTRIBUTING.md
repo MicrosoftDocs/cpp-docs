@@ -2,13 +2,13 @@
 
 Thank you for your interest in contributing to the Visual C++ documentation!
 
-In this topic, you'll see the basic process for adding or updating content in the [Visual C++ documentation site](https://docs.microsoft.com/cpp).
+In this topic, you'll see the basic process for adding or updating content in the [Visual C++ documentation site](https://learn.microsoft.com/cpp/).
 
 In this topic, we'll cover:
 
 - [Process for contributing](#process-for-contributing)
 - [DOs and DON'Ts](#dos-and-donts)
-- [Building the docs](#building-the-docs)
+- [Building the documentation](#building-the-documentation)
 - [Contributing to samples](#contributing-to-samples)
 - [Contributor license agreement](#contributor-license-agreement)
 
@@ -44,7 +44,7 @@ docs
             wstring-conversion.png
 ```
 
-**Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/master`.
+**Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/main`.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description, so the issue can be automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
@@ -52,9 +52,9 @@ The Visual Studio team will review your PR and let you know if the change looks 
 
 **Step 6:** Make any necessary updates to your branch as discussed with the team.
 
-The maintainers will merge your PR into the master branch once feedback has been applied and your change looks good.
+The maintainers will merge your PR into the main branch once feedback has been applied and your change looks good.
 
-On a certain cadence, we push all commits from master branch into the live branch and then you'll be able to see your contribution live on [docs.microsoft.com](https://docs.microsoft.com/cpp/).
+On a certain cadence, we push all commits from main branch into the live branch and then you'll be able to see your contribution on [Microsoft Learn](https://learn.microsoft.com/cpp/).
 
 ## DOs and DON'Ts
 
@@ -70,11 +70,11 @@ Below is a short list of guiding rules that you should keep in mind when you are
 > [!NOTE]
 > You might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/MicrosoftDocs/cpp-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
 
-## Building the docs
+## Building the documentation
 
-The documentation is written in [GitHub Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](https://dotnet.github.io/docfx/) and other internal publishing/building tools. It is hosted at [docs.microsoft.com](https://docs.microsoft.com/).
+The documentation is written in [GitHub-Flavored Markdown](https://help.github.com/categories/writing-on-github/) and built using [DocFX](https://dotnet.github.io/docfx/) and other internal publishing and build tools. It's published to [Microsoft Learn](https://learn.microsoft.com/).
 
-If you want to build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/); latest versions are the best.
+If you want to build the documentation locally, you need to install the latest version of [DocFX](https://dotnet.github.io/docfx/).
 
 There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool. If you are comfortable with other ways listed on the link above, feel free to use those.
 
@@ -94,6 +94,6 @@ For now, include required sample code as inline code blocks in your article. The
 
 ## Contributor license agreement
 
-You must sign the [Contribution License Agreement (CLA)](LICENSE) before your PR is merged. This is a one-time requirement for projects in docs.microsoft.com. You can read more about [Contribution License Agreements (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+You must sign the [Contribution License Agreement (CLA)](LICENSE) before your PR is merged. This is a one-time requirement for projects on Microsoft Learn. You can read more about [Contribution License Agreements (CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
 You don't have to sign the agreement up-front. You can clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you fixed a typo), then the PR is labeled with CLA-not-required. Otherwise, it's classified as CLA-required. Once you signed the CLA, the current and all future pull requests are labeled as CLA-signed.

@@ -3,7 +3,7 @@ title: "memset, wmemset"
 description: "Learn more about: memset, wmemset"
 ms.date: "11/29/2021"
 api_name: ["wmemset", "memset", "_o_memset"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["memset", "wmemset"]
@@ -39,7 +39,7 @@ Character to set.
 *`count`*\
 Number of characters.
 
-## Return Value
+## Return value
 
 The value of *`dest`*.
 
@@ -47,22 +47,22 @@ The value of *`dest`*.
 
 Sets the first *`count`* characters of *`dest`* to the character *`c`*.
 
-**Security Note** Make sure that the destination buffer has enough room for at least *`count`* characters. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Security Note** Make sure that the destination buffer has enough room for at least *`count`* characters. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`memset`**|`<memory.h>` or `<string.h>`|
-|**`wmemset`**|`<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`memset`** | `<memory.h>` or `<string.h>` |
+| **`wmemset`** | `<wchar.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -122,7 +122,7 @@ After:  **** is a test of the wmemset function
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)\
+[Buffer manipulation](../buffer-manipulation.md)\
 [`_memccpy`](memccpy.md)\
 [`memchr`, `wmemchr`](memchr-wmemchr.md)\
 [`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\

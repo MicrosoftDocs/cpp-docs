@@ -12,7 +12,7 @@ ms.assetid: 956e65c8-00a5-43e8-a2f2-0f547ac9e56c
 ---
 # `sscanf_s`, `_sscanf_s_l`, `swscanf_s`, `_swscanf_s_l`
 
-Reads formatted data from a string. These versions of [`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data from a string. These versions of [`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -43,38 +43,38 @@ int _swscanf_s_l(
 
 ### Parameters
 
-*`buffer`*<br/>
+*`buffer`*\
 Stored data
 
-*`format`*<br/>
-Format-control string. For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+*`format`*\
+Format-control string. For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
-*`argument`*<br/>
+*`argument`*\
 Optional arguments
 
-*`locale`*<br/>
+*`locale`*\
 The locale to use
 
-## Return Value
+## Return value
 
-Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **`EOF`** for an error or if the end of the string is reached before the first conversion.
+Each of these functions returns the number of fields that are successfully converted and assigned. The return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.
 
-If *`buffer`* or *`format`* is a **`NULL`** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**
+If *`buffer`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`
 
-For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`sscanf_s`** function reads data from *`buffer`* into the location that's given by each *`argument`*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md), a buffer size parameter is required when you use the type field characters **`c`**, **`C`**, **`s`**, **`S`**, or string control sets that are enclosed in **`[]`**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it. For example, if you are reading into a string, the buffer size for that string is passed as follows:
+The **`sscanf_s`** function reads data from *`buffer`* into the location that's given by each *`argument`*. The arguments after the format string specify pointers to variables that have a type that corresponds to a type specifier in *`format`*. Unlike the less secure version [`sscanf`](sscanf-sscanf-l-swscanf-swscanf-l.md), a buffer size parameter is required when you use the type field characters **`c`**, **`C`**, **`s`**, **`S`**, or string control sets that are enclosed in **`[]`**. The buffer size in characters must be supplied as an extra parameter immediately after each buffer parameter that requires it. For example, if you're reading into a string, the buffer size for that string is passed as follows:
 
 ```C
 wchar_t ws[10];
 swscanf_s(in_str, L"%9s", ws, (unsigned)_countof(ws)); // buffer size is 10, width specification is 9
 ```
 
-The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
+The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too large to fit in the buffer, nothing is written to that buffer.
 
-In the case of characters, a single character may be read as follows:
+A single character may be read as follows:
 
 ```C
 wchar_t wc;
@@ -88,32 +88,32 @@ char c[4];
 sscanf_s(input, "%4c", &c, (unsigned)_countof(c)); // not null terminated
 ```
 
-For more information, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [`scanf` Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
+For more information, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [`scanf` type field characters](../scanf-type-field-characters.md).
 
 > [!NOTE]
 > The size parameter is of type **`unsigned`**, not **`size_t`**. When compiling for 64-bit targets, use a static cast to convert **`_countof`** or **`sizeof`** results to the correct size.
 
 The *`format`* argument controls the interpretation of the input fields and has the same form and function as the *`format`* argument for the **`scanf_s`** function. If copying occurs between strings that overlap, the behavior is undefined.
 
-**`swscanf_s`** is a wide-character version of **`sscanf_s`**; the arguments to **`swscanf_s`** are wide-character strings. **`sscanf_s`** does not handle multibyte hexadecimal characters. **`swscanf_s`** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`swscanf_s`** and **`sscanf_s`** behave identically.
+**`swscanf_s`** is a wide-character version of **`sscanf_s`**; the arguments to **`swscanf_s`** are wide-character strings. **`sscanf_s`** doesn't handle multibyte hexadecimal characters. **`swscanf_s`** doesn't handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`swscanf_s`** and **`sscanf_s`** behave identically.
 
 The versions of these functions that have the **`_l`** suffix are identical except that they use the locale parameter that's passed in instead of the current thread locale.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_stscanf_s`**|**`sscanf_s`**|**`sscanf_s`**|**`swscanf_s`**|
-|**`_stscanf_s_l`**|**`_sscanf_s_l`**|**`_sscanf_s_l`**|**`_swscanf_s_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_stscanf_s` | **`sscanf_s`** | **`sscanf_s`** | **`swscanf_s`** |
+| `_stscanf_s_l` | **`_sscanf_s_l`** | **`_sscanf_s_l`** | **`_swscanf_s_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`sscanf_s`**, **`_sscanf_s_l`**|`<stdio.h>`|
-|**`swscanf_s`**, **`_swscanf_s_l`**|`<stdio.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`sscanf_s`**, **`_sscanf_s_l`** | `<stdio.h>` |
+| **`swscanf_s`**, **`_swscanf_s_l`** | `<stdio.h>` or `<wchar.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -157,8 +157,8 @@ Real:     = 15.000000
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`fscanf`, `_fscanf_l`, `fwscanf`, `_fwscanf_l`](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[`snprintf`, `_snprintf`, `_snprintf_l`, `_snwprintf`, `_snwprintf_l`](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fscanf`, `_fscanf_l`, `fwscanf`, `_fwscanf_l`](fscanf-fscanf-l-fwscanf-fwscanf-l.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[`snprintf`, `_snprintf`, `_snprintf_l`, `_snwprintf`, `_snwprintf_l`](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)

@@ -88,249 +88,261 @@ items:
   items: 
     - name: Compiler fatal errors C999 through C1999
       href: compiler-errors-1/compiler-fatal-errors-c999-through-c1999.md
-    - name: fatal error C999
+    - name: Fatal error C999
       href: compiler-errors-1/fatal-error-c999.md
-    - name: fatal error C1001
+    - name: Fatal error C1000, C1999
+      href: compiler-errors-1/fatal-error-c1000-c1999.md
+    - name: Fatal error C1001
       href: compiler-errors-1/fatal-error-c1001.md
-    - name: fatal error C1002
+    - name: Fatal error C1002
       href: compiler-errors-1/fatal-error-c1002.md
-    - name: fatal error C1003
+    - name: Fatal error C1003
       href: compiler-errors-1/fatal-error-c1003.md
-    - name: fatal error C1004
+    - name: Fatal error C1004
       href: compiler-errors-1/fatal-error-c1004.md
-    - name: fatal error C1005
+    - name: Fatal error C1005
       href: compiler-errors-1/fatal-error-c1005.md
-    - name: fatal error C1007
+    - name: Fatal error C1007
       href: compiler-errors-1/fatal-error-c1007.md
-    - name: fatal error C1008
+    - name: Fatal error C1008
       href: compiler-errors-1/fatal-error-c1008.md
-    - name: fatal error C1009
+    - name: Fatal error C1009
       href: compiler-errors-1/fatal-error-c1009.md
-    - name: fatal error C1010
+    - name: Fatal error C1010
       href: compiler-errors-1/fatal-error-c1010.md
-    - name: fatal error C1012
+    - name: Fatal error C1011
+      href: compiler-errors-1/fatal-error-c1011.md
+    - name: Fatal error C1012
       href: compiler-errors-1/fatal-error-c1012.md
-    - name: fatal error C1013
+    - name: Fatal error C1013
       href: compiler-errors-1/fatal-error-c1013.md
-    - name: fatal error C1014
+    - name: Fatal error C1014
       href: compiler-errors-1/fatal-error-c1014.md
-    - name: fatal error C1016
+    - name: Fatal error C1015
+      href: compiler-errors-1/fatal-error-c1015.md
+    - name: Fatal error C1016
       href: compiler-errors-1/fatal-error-c1016.md
-    - name: fatal error C1017
+    - name: Fatal error C1017
       href: compiler-errors-1/fatal-error-c1017.md
-    - name: fatal error C1018
+    - name: Fatal error C1018
       href: compiler-errors-1/fatal-error-c1018.md
-    - name: fatal error C1019
+    - name: Fatal error C1019
       href: compiler-errors-1/fatal-error-c1019.md
-    - name: fatal error C1020
+    - name: Fatal error C1020
       href: compiler-errors-1/fatal-error-c1020.md
-    - name: fatal error C1021
+    - name: Fatal error C1021
       href: compiler-errors-1/fatal-error-c1021.md
-    - name: fatal error C1022
+    - name: Fatal error C1022
       href: compiler-errors-1/fatal-error-c1022.md
-    - name: fatal error C1023
+    - name: Fatal error C1023
       href: compiler-errors-1/fatal-error-c1023.md
-    - name: fatal error C1026
+    - name: Fatal error C1025, C1115
+      href: compiler-errors-1/fatal-error-c1025-c1115.md
+    - name: Fatal error C1026
       href: compiler-errors-1/fatal-error-c1026.md
-    - name: fatal error C1033
+    - name: Fatal error C1033
       href: compiler-errors-1/fatal-error-c1033.md
-    - name: fatal error C1035
+    - name: Fatal error C1035
       href: compiler-errors-1/fatal-error-c1035.md
-    - name: fatal error C1037
+    - name: Fatal error C1037
       href: compiler-errors-1/fatal-error-c1037.md
-    - name: fatal error C1038
+    - name: Fatal error C1038
       href: compiler-errors-1/fatal-error-c1038.md
-    - name: fatal error C1045
+    - name: Fatal error C1045
       href: compiler-errors-1/fatal-error-c1045.md
-    - name: fatal error C1046
+    - name: Fatal error C1046
       href: compiler-errors-1/fatal-error-c1046.md
-    - name: fatal error C1047
+    - name: Fatal error C1047
       href: compiler-errors-1/fatal-error-c1047.md
-    - name: fatal error C1049
+    - name: Fatal error C1049
       href: compiler-errors-1/fatal-error-c1049.md
-    - name: fatal error C1051
+    - name: Fatal error C1051
       href: compiler-errors-1/fatal-error-c1051.md
-    - name: fatal error C1052
+    - name: Fatal error C1052
       href: compiler-errors-1/fatal-error-c1052.md
-    - name: fatal error C1053
+    - name: Fatal error C1053
       href: compiler-errors-1/fatal-error-c1053.md
-    - name: fatal error C1054
+    - name: Fatal error C1054
       href: compiler-errors-1/fatal-error-c1054.md
-    - name: fatal error C1055
+    - name: Fatal error C1055
       href: compiler-errors-1/fatal-error-c1055.md
-    - name: fatal error C1057
+    - name: Fatal error C1057
       href: compiler-errors-1/fatal-error-c1057.md
-    - name: fatal error C1060
+    - name: Fatal error C1060
       href: compiler-errors-1/fatal-error-c1060.md
-    - name: fatal error C1061
+    - name: Fatal error C1061
       href: compiler-errors-1/fatal-error-c1061.md
-    - name: fatal error C1064
+    - name: Fatal error C1064
       href: compiler-errors-1/fatal-error-c1064.md
-    - name: fatal error C1065
+    - name: Fatal error C1065
       href: compiler-errors-1/fatal-error-c1065.md
-    - name: fatal error C1067
+    - name: Fatal error C1067
       href: compiler-errors-1/fatal-error-c1067.md
-    - name: fatal error C1068
+    - name: Fatal error C1068
       href: compiler-errors-1/fatal-error-c1068.md
-    - name: fatal error C1070
+    - name: Fatal error C1070
       href: compiler-errors-1/fatal-error-c1070.md
-    - name: fatal error C1071
+    - name: Fatal error C1071
       href: compiler-errors-1/fatal-error-c1071.md
-    - name: fatal error C1073
+    - name: Fatal error C1073
       href: compiler-errors-1/fatal-error-c1073.md
-    - name: fatal error C1074
+    - name: Fatal error C1074
       href: compiler-errors-1/fatal-error-c1074.md
-    - name: fatal error C1075
+    - name: Fatal error C1075
       href: compiler-errors-1/fatal-error-c1075.md
-    - name: fatal error C1076
+    - name: Fatal error C1076
       href: compiler-errors-1/fatal-error-c1076.md
-    - name: fatal error C1077
+    - name: Fatal error C1077
       href: compiler-errors-1/fatal-error-c1077.md
-    - name: fatal error C1079
+    - name: Fatal error C1079
       href: compiler-errors-1/fatal-error-c1079.md
-    - name: fatal error C1080
+    - name: Fatal error C1080
       href: compiler-errors-1/fatal-error-c1080.md
-    - name: fatal error C1081
+    - name: Fatal error C1081
       href: compiler-errors-1/fatal-error-c1081.md
-    - name: fatal error C1082
+    - name: Fatal error C1082
       href: compiler-errors-1/fatal-error-c1082.md
-    - name: fatal error C1083
+    - name: Fatal error C1083
       href: compiler-errors-1/fatal-error-c1083.md
-    - name: fatal error C1084
+    - name: Fatal error C1084
       href: compiler-errors-1/fatal-error-c1084.md
-    - name: fatal error C1085
+    - name: Fatal error C1085
       href: compiler-errors-1/fatal-error-c1085.md
-    - name: fatal error C1086
+    - name: Fatal error C1086
       href: compiler-errors-1/fatal-error-c1086.md
-    - name: fatal error C1087
+    - name: Fatal error C1087
       href: compiler-errors-1/fatal-error-c1087.md
-    - name: fatal error C1088
+    - name: Fatal error C1088
       href: compiler-errors-1/fatal-error-c1088.md
-    - name: fatal error C1089
+    - name: Fatal error C1089
       href: compiler-errors-1/fatal-error-c1089.md
-    - name: fatal error C1090
+    - name: Fatal error C1090
       href: compiler-errors-1/fatal-error-c1090.md
-    - name: fatal error C1091
+    - name: Fatal error C1091
       href: compiler-errors-1/fatal-error-c1091.md
-    - name: fatal error C1092
+    - name: Fatal error C1092
       href: compiler-errors-1/fatal-error-c1092.md
-    - name: fatal error C1093
+    - name: Fatal error C1093
       href: compiler-errors-1/fatal-error-c1093.md
-    - name: fatal error C1094
+    - name: Fatal error C1094
       href: compiler-errors-1/fatal-error-c1094.md
-    - name: fatal error C1098
+    - name: Fatal error C1098
       href: compiler-errors-1/fatal-error-c1098.md
-    - name: fatal error C1099
+    - name: Fatal error C1099
       href: compiler-errors-1/fatal-error-c1099.md
-    - name: fatal error C1100
+    - name: Fatal error C1100
       href: compiler-errors-1/fatal-error-c1100.md
-    - name: fatal error C1103
+    - name: Fatal error C1103
       href: compiler-errors-1/fatal-error-c1103.md
-    - name: fatal error C1104
+    - name: Fatal error C1104
       href: compiler-errors-1/fatal-error-c1104.md
-    - name: fatal error C1107
+    - name: Fatal error C1107
       href: compiler-errors-1/fatal-error-c1107.md
-    - name: fatal error C1108
+    - name: Fatal error C1108
       href: compiler-errors-1/fatal-error-c1108.md
-    - name: fatal error C1109
+    - name: Fatal error C1109
       href: compiler-errors-1/fatal-error-c1109.md
-    - name: fatal error C1113
+    - name: Fatal error C1113
       href: compiler-errors-1/fatal-error-c1113.md
-    - name: fatal error C1120
+    - name: Fatal error C1116
+      href: compiler-errors-1/fatal-error-c1116.md
+    - name: Fatal error C1117
+      href: compiler-errors-1/fatal-error-c1117.md
+    - name: Fatal error C1120
       href: compiler-errors-1/fatal-error-c1120.md
-    - name: fatal error C1121
+    - name: Fatal error C1121
       href: compiler-errors-1/fatal-error-c1121.md
-    - name: fatal error C1126
+    - name: Fatal error C1126
       href: compiler-errors-1/fatal-error-c1126.md
-    - name: fatal error C1128
+    - name: Fatal error C1128
       href: compiler-errors-1/fatal-error-c1128.md
-    - name: fatal error C1189
+    - name: Fatal error C1189
       href: compiler-errors-1/fatal-error-c1189.md
-    - name: fatal error C1190
+    - name: Fatal error C1190
       href: compiler-errors-1/fatal-error-c1190.md
-    - name: fatal error C1191
+    - name: Fatal error C1191
       href: compiler-errors-1/fatal-error-c1191.md
-    - name: fatal error C1192
+    - name: Fatal error C1192
       href: compiler-errors-1/fatal-error-c1192.md
-    - name: fatal error C1196
+    - name: Fatal error C1196
       href: compiler-errors-1/fatal-error-c1196.md
-    - name: fatal error C1197
+    - name: Fatal error C1197
       href: compiler-errors-1/fatal-error-c1197.md
-    - name: fatal error C1201
+    - name: Fatal error C1201
       href: compiler-errors-1/fatal-error-c1201.md
-    - name: fatal error C1202
+    - name: Fatal error C1202
       href: compiler-errors-1/fatal-error-c1202.md
-    - name: fatal error C1205
+    - name: Fatal error C1205
       href: compiler-errors-1/fatal-error-c1205.md
-    - name: fatal error C1206
+    - name: Fatal error C1206
       href: compiler-errors-1/fatal-error-c1206.md
-    - name: fatal error C1207
+    - name: Fatal error C1207
       href: compiler-errors-1/fatal-error-c1207.md
-    - name: fatal error C1208
+    - name: Fatal error C1208
       href: compiler-errors-1/fatal-error-c1208.md
-    - name: fatal error C1209
+    - name: Fatal error C1209
       href: compiler-errors-1/fatal-error-c1209.md
-    - name: fatal error C1210
+    - name: Fatal error C1210
       href: compiler-errors-1/fatal-error-c1210.md
-    - name: fatal error C1211
+    - name: Fatal error C1211
       href: compiler-errors-1/fatal-error-c1211.md
-    - name: fatal error C1305
+    - name: Fatal error C1305
       href: compiler-errors-1/fatal-error-c1305.md
-    - name: fatal error C1307
+    - name: Fatal error C1307
       href: compiler-errors-1/fatal-error-c1307.md
-    - name: fatal error C1308
+    - name: Fatal error C1308
       href: compiler-errors-1/fatal-error-c1308.md
-    - name: fatal error C1309
+    - name: Fatal error C1309
       href: compiler-errors-1/fatal-error-c1309.md
-    - name: fatal error C1310
+    - name: Fatal error C1310
       href: compiler-errors-1/fatal-error-c1310.md
-    - name: fatal error C1311
+    - name: Fatal error C1311
       href: compiler-errors-1/fatal-error-c1311.md
-    - name: fatal error C1312
+    - name: Fatal error C1312
       href: compiler-errors-1/fatal-error-c1312.md
-    - name: fatal error C1313
+    - name: Fatal error C1313
       href: compiler-errors-1/fatal-error-c1313.md
-    - name: fatal error C1350
+    - name: Fatal error C1350
       href: compiler-errors-1/fatal-error-c1350.md
-    - name: fatal error C1351
+    - name: Fatal error C1351
       href: compiler-errors-1/fatal-error-c1351.md
-    - name: fatal error C1352
+    - name: Fatal error C1352
       href: compiler-errors-1/fatal-error-c1352.md
-    - name: fatal error C1353
+    - name: Fatal error C1353
       href: compiler-errors-1/fatal-error-c1353.md
-    - name: fatal error C1382
+    - name: Fatal error C1382
       href: compiler-errors-1/fatal-error-c1382.md
-    - name: fatal error C1383
+    - name: Fatal error C1383
       href: compiler-errors-1/fatal-error-c1383.md
-    - name: fatal error C1506
+    - name: Fatal error C1506
       href: compiler-errors-1/fatal-error-c1506.md
-    - name: fatal error C1508
+    - name: Fatal error C1508
       href: compiler-errors-1/fatal-error-c1508.md
-    - name: fatal error C1509
+    - name: Fatal error C1509
       href: compiler-errors-1/fatal-error-c1509.md
-    - name: fatal error C1510
+    - name: Fatal error C1510
       href: compiler-errors-1/fatal-error-c1510.md
-    - name: fatal error C1601
+    - name: Fatal error C1601
       href: compiler-errors-1/fatal-error-c1601.md
-    - name: fatal error C1602
+    - name: Fatal error C1602
       href: compiler-errors-1/fatal-error-c1602.md
-    - name: fatal error C1603
+    - name: Fatal error C1603
       href: compiler-errors-1/fatal-error-c1603.md
-    - name: fatal error C1852
+    - name: Fatal error C1852
       href: compiler-errors-1/fatal-error-c1852.md
-    - name: fatal error C1853
+    - name: Fatal error C1853
       href: compiler-errors-1/fatal-error-c1853.md
-    - name: fatal error C1854
+    - name: Fatal error C1854
       href: compiler-errors-1/fatal-error-c1854.md
-    - name: fatal error C1900
+    - name: Fatal error C1900
       href: compiler-errors-1/fatal-error-c1900.md
-    - name: fatal error C1902
+    - name: Fatal error C1902
       href: compiler-errors-1/fatal-error-c1902.md
-    - name: fatal error C1903
+    - name: Fatal error C1903
       href: compiler-errors-1/fatal-error-c1903.md
-    - name: fatal error C1904
+    - name: Fatal error C1904
       href: compiler-errors-1/fatal-error-c1904.md
-    - name: fatal error C1905
+    - name: Fatal error C1905
       href: compiler-errors-1/fatal-error-c1905.md
 - name: Compiler errors
   expanded: false
@@ -372,6 +384,8 @@ items:
           href: compiler-errors-1/compiler-error-c2014.md
         - name: Compiler error C2015
           href: compiler-errors-1/compiler-error-c2015.md
+        - name: Compiler error C2016
+          href: compiler-errors-1/compiler-error-c2016.md
         - name: Compiler error C2017
           href: compiler-errors-1/compiler-error-c2017.md
         - name: Compiler error C2018
@@ -384,6 +398,12 @@ items:
           href: compiler-errors-1/compiler-error-c2021.md
         - name: Compiler error C2022
           href: compiler-errors-1/compiler-error-c2022.md
+        - name: Compiler error C2023
+          href: compiler-errors-1/compiler-error-c2023.md
+        - name: Compiler error C2024
+          href: compiler-errors-1/compiler-error-c2024.md
+        - name: Compiler error C2025
+          href: compiler-errors-1/compiler-error-c2025.md
         - name: Compiler error C2026
           href: compiler-errors-1/compiler-error-c2026.md
         - name: Compiler error C2027
@@ -392,14 +412,22 @@ items:
           href: compiler-errors-1/compiler-error-c2028.md
         - name: Compiler error C2030
           href: compiler-errors-1/compiler-error-c2030.md
+        - name: Compiler error C2031
+          href: compiler-errors-1/compiler-error-c2031.md
         - name: Compiler error C2032
           href: compiler-errors-1/compiler-error-c2032.md
         - name: Compiler error C2033
           href: compiler-errors-1/compiler-error-c2033.md
         - name: Compiler error C2034
           href: compiler-errors-1/compiler-error-c2034.md
+        - name: Compiler error C2035
+          href: compiler-errors-1/compiler-error-c2035.md
         - name: Compiler error C2036
           href: compiler-errors-1/compiler-error-c2036.md
+        - name: Compiler error C2037
+          href: compiler-errors-1/compiler-error-c2037.md
+        - name: Compiler error C2038
+          href: compiler-errors-1/compiler-error-c2038.md
         - name: Compiler error C2039
           href: compiler-errors-1/compiler-error-c2039.md
         - name: Compiler error C2040
@@ -420,6 +448,8 @@ items:
           href: compiler-errors-1/compiler-error-c2047.md
         - name: Compiler error C2048
           href: compiler-errors-1/compiler-error-c2048.md
+        - name: Compiler error C2049
+          href: compiler-errors-1/compiler-error-c2049.md
         - name: Compiler error C2050
           href: compiler-errors-1/compiler-error-c2050.md
         - name: Compiler error C2051
@@ -456,6 +486,8 @@ items:
           href: compiler-errors-1/compiler-error-c2066.md
         - name: Compiler error C2067
           href: compiler-errors-1/compiler-error-c2067.md
+        - name: Compiler error C2068
+          href: compiler-errors-1/compiler-error-c2068.md
         - name: Compiler error C2069
           href: compiler-errors-1/compiler-error-c2069.md
         - name: Compiler error C2070
@@ -470,12 +502,16 @@ items:
           href: compiler-errors-1/compiler-error-c2074.md
         - name: Compiler error C2075
           href: compiler-errors-1/compiler-error-c2075.md
+        - name: Compiler error C2076
+          href: compiler-errors-1/compiler-error-c2076.md
         - name: Compiler error C2077
           href: compiler-errors-1/compiler-error-c2077.md
         - name: Compiler error C2078
           href: compiler-errors-1/compiler-error-c2078.md
         - name: Compiler error C2079
           href: compiler-errors-1/compiler-error-c2079.md
+        - name: Compiler error C2080
+          href: compiler-errors-1/compiler-error-c2080.md
         - name: Compiler error C2081
           href: compiler-errors-1/compiler-error-c2081.md
         - name: Compiler error C2082
@@ -506,8 +542,12 @@ items:
           href: compiler-errors-1/compiler-error-c2094.md
         - name: Compiler error C2095
           href: compiler-errors-1/compiler-error-c2095.md
+        - name: Compiler error C2096
+          href: compiler-errors-1/compiler-error-c2096.md
         - name: Compiler error C2097
           href: compiler-errors-1/compiler-error-c2097.md
+        - name: Compiler error C2098
+          href: compiler-errors-1/compiler-error-c2098.md
         - name: Compiler error C2099
           href: compiler-errors-1/compiler-error-c2099.md
     - name: Compiler errors C2100 through C2199
@@ -4116,6 +4156,8 @@ items:
           href: compiler-warnings/compiler-warning-level-4-c4764.md
         - name: Compiler warning (level 4) C4768
           href: compiler-warnings/c4768.md
+        - name: Compiler warning (level 4) C4770
+          href: compiler-warnings/c4770.md
         - name: Compiler warning (level 1) C4772
           href: compiler-warnings/compiler-warning-level-1-c4772.md
         - name: Compiler warning (Level 1) C4788

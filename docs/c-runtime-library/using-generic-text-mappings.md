@@ -7,19 +7,19 @@ f1_keywords: ["_UNICODE"]
 helpviewer_keywords: ["_TXCHAR type", "TINT type", "_TCHAR type", "TSCHAR type", "TEXT type", "TCHAR type", "TCHAR.H data types, mappings defined in", "generic-text data types", "_TINT type", "TUCHAR type", "_UNICODE constant", "TXCHAR type", "generic-text mappings", "_TSCHAR type", "T type", "mappings, generic-text", "_TUCHAR type", "MBCS data type", "_MBCS data type", "_TEXT type", "UNICODE constant", "_T type"]
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
 ---
-# Using Generic-Text Mappings
+# Using generic-text mappings
 
 **Microsoft Specific**
 
-To simplify code development for various international markets, the Microsoft run-time library provides Microsoft-specific "generic-text" mappings for many data types, routines, and other objects. These mappings are defined in TCHAR.H. You can use these name mappings to write generic code that can be compiled for any of the three kinds of character sets: ASCII (SBCS), MBCS, or Unicode, depending on a manifest constant you define using a `#define` statement. Generic-text mappings are Microsoft extensions that are not ANSI compatible.
+To simplify code development for various international markets, the Microsoft run-time library provides Microsoft-specific "generic-text" mappings for many data types, routines, and other objects. These mappings are defined in TCHAR.H. You can use these name mappings to write generic code that can be compiled for any of the three kinds of character sets: ASCII (SBCS), MBCS, or Unicode, depending on a manifest constant you define using a `#define` statement. Generic-text mappings are Microsoft extensions that aren't ANSI compatible.
 
-### Preprocessor Directives for Generic-Text Mappings
+### Preprocessor directives for generic-text mappings
 
-|#define|Compiled version|Example|
-|--------------|----------------------|-------------|
-|`_UNICODE`|Unicode (wide-character)|`_tcsrev` maps to `_wcsrev`|
-|`_MBCS`|Multibyte-character|`_tcsrev` maps to `_mbsrev`|
-|None (the default: neither `_UNICODE` nor `_MBCS` defined)|SBCS (ASCII)|`_tcsrev` maps to `strrev`|
+| `#define` | Compiled version | Example |
+|---|---|---|
+| `_UNICODE` | Unicode (wide-character) | `_tcsrev` maps to `_wcsrev` |
+| `_MBCS` | Multibyte-character | `_tcsrev` maps to `_mbsrev` |
+| None (the default: both `_UNICODE` and `_MBCS` not defined) | SBCS (ASCII) | `_tcsrev` maps to `strrev` |
 
 For example, the generic-text function `_tcsrev`, defined in TCHAR.H, maps to `mbsrev` if `MBCS` has been defined in your program, or to `_wcsrev` if `_UNICODE` has been defined. Otherwise `_tcsrev` maps to `strrev`.
 
@@ -27,53 +27,53 @@ The generic-text data type `_TCHAR`, also defined in TCHAR.H, maps to type **`ch
 
 ### Generic-Text Data Type Mappings
 
-|Generic-text data type name|SBCS (_UNICODE, _MBCS not defined)|_MBCS defined|_UNICODE defined|
-|----------------------------------|--------------------------------------------|--------------------|-----------------------|
-|`_TCHAR`|**`char`**|**`char`**|**`wchar_t`**|
-|`_TINT`|**`int`**|**`int`**|`wint_t`|
-|`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
-|`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
-|`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
-|`_T` or `_TEXT`|No effect (removed by preprocessor)|No effect (removed by preprocessor)|`L` (converts following character or string to its Unicode counterpart)|
+| Generic-text data type name | SBCS (_UNICODE, _MBCS not defined) | _MBCS defined | _UNICODE defined |
+|---|---|---|---|
+| `_TCHAR` | **`char`** | **`char`** | **`wchar_t`** |
+| `_TINT` | **`int`** | **`int`** | `wint_t` |
+| `_TSCHAR` | **`signed char`** | **`signed char`** | **`wchar_t`** |
+| `_TUCHAR` | **`unsigned char`** | **`unsigned char`** | **`wchar_t`** |
+| `_TXCHAR` | **`char`** | **`unsigned char`** | **`wchar_t`** |
+| `_T` or `_TEXT` | No effect (removed by preprocessor) | No effect (removed by preprocessor) | `L` (converts following character or string to its Unicode counterpart) |
 
-For a complete list of generic-text mappings of routines, variables, and other objects, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md).
+For a complete list of generic-text mappings of routines, variables, and other objects, see [Generic-text mappings](./generic-text-mappings.md).
 
 The following code fragments illustrate the use of `_TCHAR` and `_tcsrev` for mapping to the MBCS, Unicode, and SBCS models.
 
-```
+```C
 _TCHAR *RetVal, *szString;
 RetVal = _tcsrev(szString);
 ```
 
 If `MBCS` has been defined, the preprocessor maps the preceding fragment to the following code:
 
-```
+```C
 char *RetVal, *szString;
 RetVal = _mbsrev(szString);
 ```
 
 If `_UNICODE` has been defined, the preprocessor maps the same fragment to the following code:
 
-```
+```C
 wchar_t *RetVal, *szString;
 RetVal = _wcsrev(szString);
 ```
 
-If neither `_MBCS` nor `_UNICODE` has been defined, the preprocessor maps the fragment to single-byte ASCII code, as follows:
+If both `_MBCS` and `_UNICODE` haven't been defined, the preprocessor maps the fragment to single-byte ASCII code, as follows:
 
-```
+```C
 char *RetVal, *szString;
 RetVal = strrev(szString);
 ```
 
-Thus you can write, maintain, and compile a single source code file to run with routines that are specific to any of the three kinds of character sets.
+These macros let you write, maintain, and compile a single source code file using routines specific to all three kinds of character sets.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
-[Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>
-[Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Routine Mappings](../c-runtime-library/routine-mappings.md)<br/>
-[A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)
+[Generic-text mappings](./generic-text-mappings.md)\
+[Data type mappings](./data-type-mappings.md)\
+[Constant and global variable mappings](./constant-and-global-variable-mappings.md)\
+[Routine mappings](./routine-mappings.md)\
+[A sample generic-text program](./a-sample-generic-text-program.md)

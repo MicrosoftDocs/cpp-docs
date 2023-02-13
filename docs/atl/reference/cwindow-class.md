@@ -781,7 +781,7 @@ HRESULT GetDlgControl(
 
 ### Return Value
 
-Returns `S_OK` on success or any valid error `HRESULT`. For example, the function returns `E_FAIL` if the control specified by *`nID`* can’t be found and it returns `E_NOINTERFACE` if the control can be found, but it doesn't support the interface specified by *`iid`*.
+Returns `S_OK` on success or any valid error `HRESULT`. For example, the function returns `E_FAIL` if the control specified by *`nID`* can't be found and it returns `E_NOINTERFACE` if the control can be found, but it doesn't support the interface specified by *`iid`*.
 
 ### Remarks
 

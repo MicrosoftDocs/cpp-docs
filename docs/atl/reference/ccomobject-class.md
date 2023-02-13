@@ -125,7 +125,7 @@ If you do not need direct access to the object, but still want to create a new o
 ### Example
 
 [!code-cpp[NVC_ATL_COM#38](../../atl/codesnippet/cpp/ccomobject-class_1.h)]
-
+&nbsp;
 [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]
 
 ## <a name="queryinterface"></a> CComObject::QueryInterface

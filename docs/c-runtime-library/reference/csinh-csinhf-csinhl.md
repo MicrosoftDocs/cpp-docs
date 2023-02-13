@@ -10,7 +10,7 @@ f1_keywords: ["csinh", "csinhf", "csinhl", "complex/csinh", "complex/csinhf", "c
 helpviewer_keywords: ["csinh function", "csinhf function", "csinhl function"]
 ms.assetid: cc616e55-d14d-4cd3-91f0-fbee03ce5edf
 ---
-# csinh, csinhf, csinhl
+# `csinh`, `csinhf`, `csinhl`
 
 Retrieves the hyperbolic sine of a complex number.
 
@@ -36,37 +36,37 @@ _Lcomplex csinhl(
 
 ### Parameters
 
-*z*<br/>
+*`z`*\
 A complex number that represents an angle, in radians.
 
-## Return Value
+## Return value
 
-The hyperbolic sine of *z*, in radians.
+The hyperbolic sine of *`z`*, in radians.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **csinh** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **csinh** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`csinh`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`csinh`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**csinh**,               **csinhf**, **csinhl**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`csinh`**, **`csinhf`**, **`csinhl`** | \<complex.h> | \<ccomplex> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>
-[ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)<br/>
-[catan, catanf, catanl](catan-catanf-catanl.md)<br/>
-[casinh, casinhf, casinhl](casinh-casinhf-casinhl.md)<br/>
-[ccosh, ccoshf, ccoshl](ccosh-ccoshf-ccoshl.md)<br/>
-[cacosh, cacoshf, cacoshl](cacosh-cacoshf-cacoshl.md)<br/>
-[cacos, cacosf, cacosl](cacos-cacosf-cacosl.md)<br/>
-[ctan, ctanf, ctanl](ctan-ctanf-ctanl.md)<br/>
-[csin, csinf, csinl](csin-csinf-csinl.md)<br/>
-[casin, casinf, casinl](casin-casinf-casinl.md)<br/>
-[ccos, ccosf, ccosl](ccos-ccosf-ccosl.md)<br/>
-[csqrt, csqrtf, csqrtl](csqrt-csqrtf-csqrtl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`catanh`, `catanhf`, `catanhl`](catanh-catanhf-catanhl.md)\
+[`ctanh`, `ctanhf`, `ctanhl`](ctanh-ctanhf-ctanhl.md)\
+[`catan`, `catanf`, `catanl`](catan-catanf-catanl.md)\
+[`casinh`, `casinhf`, `casinhl`](casinh-casinhf-casinhl.md)\
+[`ccosh`, `ccoshf`, `ccoshl`](ccosh-ccoshf-ccoshl.md)\
+[`cacosh`, `cacoshf`, `cacoshl`](cacosh-cacoshf-cacoshl.md)\
+[`cacos`, `cacosf`, `cacosl`](cacos-cacosf-cacosl.md)\
+[`ctan`, `ctanf`, `ctanl`](ctan-ctanf-ctanl.md)\
+[`csin`, `csinf`, `csinl`](csin-csinf-csinl.md)\
+[`casin`, `casinf`, `casinl`](casin-casinf-casinl.md)\
+[`ccos`, `ccosf`, `ccosl`](ccos-ccosf-ccosl.md)\
+[`csqrt`, `csqrtf`, `csqrtl`](csqrt-csqrtf-csqrtl.md)

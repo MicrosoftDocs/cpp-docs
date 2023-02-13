@@ -3,7 +3,7 @@ title: "modf, modff, modfl"
 description: "API reference for modf, modff, and modfl; which split a floating-point value into fractional and integer parts."
 ms.date: "1/15/2021"
 api_name: ["modff", "modf", "modfl", "_o_modf", "_o_modff"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["modff", "_modfl", "modf", "modfl", "math/modf", "math/modff", "math/modfl"]
@@ -34,27 +34,27 @@ Floating-point value.
 *`intptr`*\
 Pointer to stored integer portion.
 
-## Return Value
+## Return value
 
 This function returns the signed fractional portion of *`x`*. There's no error return.
 
 ## Remarks
 
-The **modf** functions break down the floating-point value *`x`* into fractional and integer parts, each of which has the same sign as *`x`*. The signed fractional portion of *`x`* is returned. The integer portion is stored as a floating-point value at *`intptr`*.
+The **`modf`** functions break down the floating-point value *`x`* into fractional and integer parts, each of which has the same sign as *`x`*. The signed fractional portion of *`x`* is returned. The integer portion is stored as a floating-point value at *`intptr`*.
 
-**modf** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
+**`modf`** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [`_set_SSE2_enable`](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
 C++ allows overloading, so you can call overloads of **`modf`** that take and return **`float`** or **`long double`** parameters. In a C program, **`modf`** always takes two double values and returns a double value.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`modf`**, **`modff`**, **`modfl`**|C: `<math.h>`<br /><br /> C++: , `<cmath>` or `<math.h>`|
+| Routine | Required header |
+|---|---|
+| **`modf`**, **`modff`**, **`modfl`** | C: `<math.h>`<br /><br /> C++: , `<cmath>` or `<math.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -82,6 +82,6 @@ For -14.876543, the fraction is -0.876543 and the integer is -14
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`frexp`](frexp.md)\
 [`ldexp`](ldexp.md)

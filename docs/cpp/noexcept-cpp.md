@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: noexcept (C++)"
 title: "noexcept (C++)"
-ms.date: 11/30/2021
+ms.date: 09/27/2022
 f1_keywords: ["noexcept_cpp"]
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
 ---
@@ -31,7 +31,7 @@ Mark a function as **`noexcept`** only if all the functions that it calls, eithe
 
 ## Example
 
-A template function that copies its argument might be declared **`noexcept`** on the condition that the object being copied is a plain old data type (POD). Such a function could be declared like this:
+A function template that copies its argument might be declared **`noexcept`** on the condition that the object being copied is a plain old data type (POD). Such a function could be declared like this:
 
 ```cpp
 #include <type_traits>

@@ -968,7 +968,6 @@ If you want to add a custom element (for example, a color button) to the ribbon 
 The following example shows how to use the `SetElementRTCByID` method:
 
 ```
-
 // Load and add toolbar with standard buttons. This toolbar
 // should display a custom color button with id ID_CHAR_COLOR:
 

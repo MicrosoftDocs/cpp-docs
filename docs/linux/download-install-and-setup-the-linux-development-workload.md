@@ -2,7 +2,6 @@
 title: "Install the C++ Linux workload in Visual Studio"
 description: "How to download, install, and set up the Linux workload for C++ in Visual Studio."
 ms.date: "05/03/2020"
-ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 ms.custom: intro-installation
 ---
 # Download, install, and set up the Linux workload
@@ -29,11 +28,11 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 1. Type "Visual Studio Installer" in the Windows search box:
 
-   ![Screenshot showing the Windows search box.](media/visual-studio-installer-search.png)
+   ![Screenshot of the Windows search box which contains the text: `visual studio installer`.](media/visual-studio-installer-search.png)
 
 1. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
 
-   ![Screenshot showing the Visual C++ for Linux Development workload item in Visual Studio Installer.](media/linuxworkload.png)
+   ![Screenshot highlighting the Visual C++ for Linux Development workload item in Visual Studio Installer.](media/linuxworkload.png)
 
 1. If you're targeting IoT or embedded platforms, go to the **Installation details** pane on the right. Under **Linux development with C++**, expand **Optional Components**, and choose the components you need. CMake support for Linux is selected by default.
 

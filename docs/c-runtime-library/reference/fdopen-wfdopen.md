@@ -3,7 +3,7 @@ description: "Learn more about: _fdopen, _wfdopen"
 title: "_fdopen, _wfdopen"
 ms.date: 05/18/2022
 api_name: ["_fdopen", "_wfdopen", "_o__fdopen", "_o__wfdopen"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["STDIO/_fdopen", "CORECRT_WSTDIO/_wfdopen", "TCHAR/_tfdopen", "_fdopen", "_wfdopen", "_tfdopen", "wfdopen", "tfdopen"]
@@ -37,13 +37,13 @@ Type of file access.
 
 ## Return value
 
-Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set either to `EBADF`, which indicates a bad file descriptor, or `EINVAL`, which indicates that *`mode`* was a null pointer.
+Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set either to `EBADF`, which indicates a bad file descriptor, or `EINVAL`, which indicates that *`mode`* was a null pointer.
 
-For more information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **`_fdopen`** function associates an I/O stream with the file that is identified by *`fd`*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **`_wfdopen`** is a wide-character version of **`_fdopen`**; the *mode* argument to **`_wfdopen`** is a wide-character string. **`_wfdopen`** and **`_fdopen`** otherwise behave identically.
+The **`_fdopen`** function associates an I/O stream with the file that is identified by *`fd`*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. **`_wfdopen`** is a wide-character version of **`_fdopen`**; the *`mode`* argument to **`_wfdopen`** is a wide-character string. **`_wfdopen`** and **`_fdopen`** otherwise behave identically.
 
 File descriptors passed into **`_fdopen`** are owned by the returned `FILE *` stream. If **`_fdopen`** is successful, don't call [`_close`](close.md) on the file descriptor. Calling [`fclose`](fclose-fcloseall.md) on the returned `FILE *` also closes the file descriptor.
 
@@ -62,18 +62,18 @@ The *`mode`* character string specifies the type of file access requested for th
 
 When a file is opened with the **`"a"`** or **`"a+"`** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), but it's always moved back to the end of the file before any write operation is carried out. Thus, existing data can't be overwritten. When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [`fflush`](fflush.md), [`fsetpos`](fsetpos.md), [`fseek`](fseek-fseeki64.md), or [`rewind`](rewind.md) operation. You can specify the current position for the [`fsetpos`](fsetpos.md) or [`fseek`](fseek-fseeki64.md) operation, if you want to.
 
-In addition to the above values, the following characters can also be included in *mode* to specify the translation mode for newline characters:
+In addition to the above values, the following characters can also be included in *`mode`* to specify the translation mode for newline characters:
 
 | *`mode`* modifier | Behavior |
 |-----------------|----------|
 | **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input. |
 | **`b`** | Open in binary (untranslated) mode. Any translations from **`t`** mode are suppressed. |
-| **`c`** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
-| **`n`** | Reset the commit flag for the associated *filename* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`Commode.obj`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`Commode.obj`*. |
+| **`c`** | Enable the commit flag for the associated *`filename`* so that the contents of the file buffer are written directly to disk if either **`fflush`** or **`_flushall`** is called. |
+| **`n`** | Reset the commit flag for the associated *`filename`* to "no-commit." This flag is the default. It also overrides the global commit flag if you link your program with *`Commode.obj`*. The global commit flag default is "no-commit" unless you explicitly link your program with *`Commode.obj`*. |
 
 The **`t`**, **`c`**, and **`n`** *`mode`* options are Microsoft extensions for **`fopen`** and **`_fdopen`**. Don't use them if you want to preserve ANSI portability.
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and binary mode file I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
 Valid characters for the *`mode`* string used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as shown in this table:
 
@@ -97,7 +97,7 @@ Valid characters for the *`mode`* string used in **`fopen`** and **`_fdopen`** c
 | **`_fdopen`** | `<stdio.h>` | `<cstdio>` |
 | **`_wfdopen`** | `<stdio.h>` or `<wchar.h>` | `<cstdio>` |
 
-For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information on standards conformance and naming conventions in the C runtime library, see [Compatibility](../compatibility.md).
 
 ### Generic-text routine mappings
 
@@ -157,7 +157,7 @@ Lines in file: 2
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[Stream I/O](../stream-i-o.md)\
 [`_dup`, `_dup2`](dup-dup2.md)\
 [`fclose`, `_fcloseall`](fclose-fcloseall.md)\
 [`fopen`, `_wfopen`](fopen-wfopen.md)\

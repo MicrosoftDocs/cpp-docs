@@ -7,41 +7,43 @@ ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
 ---
 # Return Type
 
-The return type of a function establishes the size and type of the value returned by the function and corresponds to the type-specifier in the syntax below:
+The return type of a function establishes the size and type of the value returned by the function. It corresponds to the *`type-specifier`* in the Syntax section:
 
 ## Syntax
 
-*function-definition*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
+*`function-definition`*:\
+&emsp;*`declaration-specifiers`*<sub>opt</sub> *`attribute-seq`*<sub>opt</sub> *`declarator`* *`declaration-list`*<sub>opt</sub> *`compound-statement`*
 
-/\* *attribute-seq* is Microsoft-specific \*/
+/\* *`attribute-seq`* is Microsoft-specific \*/
 
-*declaration-specifiers*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declaration-specifiers*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier* *declaration-specifiers*<sub>opt</sub>
+*`declaration-specifiers`*:\
+&emsp;*`storage-class-specifier`* *`declaration-specifiers`*<sub>opt</sub>\
+&emsp;*`type-specifier`* *`declaration-specifiers`*<sub>opt</sub>\
+&emsp;*`type-qualifier`* *`declaration-specifiers`*<sub>opt</sub>
 
-*type-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`void`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`char`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`short`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`int`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int8`** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int16`** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int32`** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int64`** /\* Microsoft-specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`long`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`float`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`double`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`signed`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`unsigned`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*
+*`type-specifier`*:\
+&emsp;**`void`**\
+&emsp;**`char`**\
+&emsp;**`short`**\
+&emsp;**`int`**\
+&emsp;**`__int8`** /\* Microsoft-specific \*/\
+&emsp;**`__int16`** /\* Microsoft-specific \*/\
+&emsp;**`__int32`** /\* Microsoft-specific \*/\
+&emsp;**`__int64`** /\* Microsoft-specific \*/\
+&emsp;**`long`**\
+&emsp;**`long long`**\
+&emsp;**`float`**\
+&emsp;**`double`**\
+&emsp;**`long double`**\
+&emsp;**`signed`**\
+&emsp;**`unsigned`**\
+&emsp;*`struct-or-union-specifier`*\
+&emsp;*`enum-specifier`*\
+&emsp;*`typedef-name`*
 
-The *type-specifier* can specify any fundamental, structure, or union type. If you do not include *type-specifier*, the return type **`int`** is assumed.
+The *`type-specifier`* can specify any fundamental, structure, or union type.
 
-The return type given in the function definition must match the return type in declarations of the function elsewhere in the program. A function returns a value when a **`return`** statement containing an expression is executed. The expression is evaluated, converted to the return value type if necessary, and returned to the point at which the function was called. If a function is declared with return type **`void`**, a return statement containing an expression generates a warning and the expression is not evaluated.
+The return type given in the function definition must match the return type in declarations of the function elsewhere in the program. A function returns a value when a **`return`** statement containing an expression is executed. The expression is evaluated, converted to the return value type if necessary, and returned to the point at which the function was called. If a function is declared with return type **`void`**, a return statement containing an expression generates a warning, and the expression isn't evaluated.
 
 The following examples illustrate function return values.
 

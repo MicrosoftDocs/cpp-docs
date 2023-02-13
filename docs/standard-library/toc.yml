@@ -592,6 +592,8 @@ items:
       items: 
         - name: <iterator>
           href: iterator.md
+        - name: <iterator> concepts
+          href: iterator-concepts.md
         - name: <iterator> functions
           href: iterator-functions.md
         - name: <iterator> operators
@@ -926,8 +928,62 @@ items:
       items: 
         - name: <ranges>
           href: ranges.md
+        - name: <ranges> concepts
+          href: range-concepts.md
         - name: <ranges> functions
           href: range-functions.md
+        - name: <ranges> view classes
+          href: view-classes.md
+          expanded: false
+          items:
+            - name: basic_istream_view class
+              href: basic-istream-view-class.md
+            - name: common_view class
+              href: common-view-class.md
+            - name: drop_view class
+              href: drop-view-class.md
+            - name: drop_while_view class
+              href: drop-while-view-class.md
+            - name: elements_view class
+              href: elements-view-class.md
+            - name: empty_view class
+              href: empty-view-class.md
+            - name: filter_view class
+              href: filter-view-class.md
+            - name: iota_view class
+              href: iota-view-class.md
+            - name: join_view class
+              href: join-view-class.md
+            - name: keys_view class
+              href: keys-view-class.md
+            - name: lazy_split_view class
+              href: lazy-split-view-class.md
+            - name: owning_view class
+              href: owning-view-class.md
+            - name: ref_view class
+              href: ref-view-class.md
+            - name: reverse_view class
+              href: reverse-view-class.md
+            - name: single_view class
+              href: single-view-class.md
+            - name: split_view class
+              href: split-view-class.md
+            - name: subrange class
+              href: subrange-class.md
+            - name: take_view class
+              href: take-view-class.md
+            - name: take_while_view class
+              href: take-while-view-class.md
+            - name: transform_view class
+              href: transform-view-class.md
+            - name: values_view class
+              href: values-view-class.md
+            - name: view_interface
+              href: view-interface.md
+        - name: <ranges> alias templates
+          href: ranges-alias-templates.md
+        - name: Range adaptors
+          href: range-adaptors.md
     - name: <ratio>
       href: ratio.md
     - name: <regex>

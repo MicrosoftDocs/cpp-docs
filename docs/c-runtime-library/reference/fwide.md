@@ -10,7 +10,7 @@ f1_keywords: ["fwide"]
 helpviewer_keywords: ["fwide function"]
 ms.assetid: a4641f5b-d74f-4946-95d5-53a64610d28d
 ---
-# fwide
+# `fwide`
 
 Unimplemented.
 
@@ -25,15 +25,15 @@ int fwide(
 
 ### Parameters
 
-*stream*<br/>
-Pointer to **FILE** structure (ignored).
+*`stream`*\
+Pointer to `FILE` structure (ignored).
 
-*mode*<br/>
+*`mode`*\
 The new width of the stream: positive for wide character, negative for byte, zero to leave unchanged. (This value is ignored.)
 
-## Return Value
+## Return value
 
-This function currently just returns *mode*.
+This function currently just returns *`mode`*.
 
 ## Remarks
 
@@ -41,8 +41,8 @@ The current version of this function doesn't conform to the C Standard.
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**fwide**|\<wchar.h>|
+| Function | Required header |
+|---|---|
+| **`fwide`** | \<wchar.h> |
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).

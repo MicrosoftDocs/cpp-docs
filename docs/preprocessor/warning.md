@@ -13,8 +13,8 @@ Enables selective modification of the behavior of compiler warning messages.
 ## Syntax
 
 > **`#pragma warning(`**\
-> &nbsp;&nbsp;&nbsp;&nbsp;*`warning-specifier`* **`:`** *`warning-number-list`*\
-> &nbsp;&nbsp;&nbsp;&nbsp;[**`;`** *`warning-specifier`* **`:`** *`warning-number-list`* ... ] **`)`**\
+> &emsp;*`warning-specifier`* **`:`** *`warning-number-list`*\
+> &emsp;[**`;`** *`warning-specifier`* **`:`** *`warning-number-list`* ... ] **`)`**\
 > **`#pragma warning( push`** [ **`,`** *n* ] **`)`**\
 > **`#pragma warning( pop )`**
 

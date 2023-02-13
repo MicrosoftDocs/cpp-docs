@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: Dialog Box Controls (C++)"
-title: "Dialog Box Controls (C++)| Microsoft Docs"
+title: Dialog Box Controls (C++)
 ms.date: "02/15/2019"
 f1_keywords: ["Custom Control"]
 helpviewer_keywords: ["controls [C++], dialog boxes", "dialog box controls [C++], about dialog box controls", "dialog box controls", "controls [C++], templates", "custom controls [C++], dialog boxes", "custom controls [C++]", "dialog box controls [C++], custom (user) controls", "Dialog Editor [C++], custom controls"]

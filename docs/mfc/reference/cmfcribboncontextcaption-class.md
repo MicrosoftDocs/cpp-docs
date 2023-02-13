@@ -81,7 +81,7 @@ The color of the caption can be set by calling [CMFCRibbonCategory::SetTabColor]
 
 ## <a name="getrighttabx"></a> CMFCRibbonContextCaption::GetRightTabX
 
-Retrieves the position of the right-hand edge of the category’s ribbon tab.
+Retrieves the position of the right-hand edge of the category's ribbon tab.
 
 ```
 int GetRightTabX() const;
@@ -89,7 +89,7 @@ int GetRightTabX() const;
 
 ### Return Value
 
-Returns the right-hand X-value of the enclosing rectangle of the `CMFCRibbonCategory` object’s ribbon tab, or a value of -1 if the tab is truncated.
+Returns the right-hand X-value of the enclosing rectangle of the `CMFCRibbonCategory` object's ribbon tab, or a value of -1 if the tab is truncated.
 
 ### Remarks
 

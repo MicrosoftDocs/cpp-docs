@@ -9,7 +9,7 @@ ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
 
 Profile-guided optimization (PGO) lets you optimize a whole executable file, where the optimizer uses data from test runs of the .exe or .dll file. The data represents the likely performance of the program in a production environment.
 
-Profile-guided optimizations are only available for x86 or x64 native targets. Profile-guided optimizations aren't available for executable files that run on the common language runtime. Even if you produce an assembly with mixed native and managed code (by using the **/clr** compiler option), you can't use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
+Profile-guided optimizations are only available for x86, x64, or ARM64 native targets. Profile-guided optimizations aren't available for executable files that run on the common language runtime. Even if you produce an assembly with mixed native and managed code (by using the **/clr** compiler option), you can't use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
 
 > [!NOTE]
 > Information that's gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [/Ob (Inline Function Expansion)](reference/ob-inline-function-expansion.md) and [/Os, /Ot (Favor Small Code, Favor Fast Code)](reference/os-ot-favor-small-code-favor-fast-code.md).

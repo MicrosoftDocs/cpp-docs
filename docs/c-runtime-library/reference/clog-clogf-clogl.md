@@ -10,7 +10,7 @@ f1_keywords: ["clog", "clogf", "clogl", "complex/clog", "complex/clogf", "comple
 helpviewer_keywords: ["clog function", "clogf function", "clogl function"]
 ms.assetid: 870b9b0b-6618-46f3-bfcf-da595cbd5e18
 ---
-# clog, clogf, clogl
+# `clog`, `clogf`, `clogl`
 
 Retrieves the natural logarithm of a complex number, with a branch cut along the negative real axis.
 
@@ -36,38 +36,38 @@ _Lcomplex clogl(
 
 ### Parameters
 
-*z*\
+*`z`*\
 The base of the logarithm.
 
-## Return Value
+## Return value
 
-The natural logarithm of *z*. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.
+The natural logarithm of *`z`*. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.
 
 The possible return values are:
 
-|z parameter|Return value|
-|-----------------|------------------|
-|Positive|The base 10 logarithm of z|
-|Zero|- ∞|
-|Negative|NaN|
-|NaN|NaN|
-|+ ∞|+ ∞|
+| *`z`* parameter | Return value |
+|---|---|
+| Positive | The logarithm (base 10) of *`z`* |
+| Zero | - INF |
+| Negative | NaN |
+| NaN | NaN |
+| + INF | + INF |
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **clog** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **clog** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`clog`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, **`clog`** always takes and returns a `_Dcomplex` value.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**clog**,               **clogf**, **clogl**|\<complex.h>|\<ccomplex>|
+| Routine | C header | C++ header |
+|---|---|---|
+| **`clog`**, **`clogf`**, **`clogl`** | \<complex.h> | \<ccomplex> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`cexp`, `cexpf`, `cexpl`](cexp-cexpf-cexpl.md)\
+[`cpow`, `cpowf`, `cpowl`](cpow-cpowf-cpowl.md)\
+[`clog10`, `clog10f`, `clog10l`](clog10-clog10f-clog10l.md)

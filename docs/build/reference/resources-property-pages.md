@@ -14,7 +14,6 @@ f1_keywords:
   - VC.Project.VCResourceCompilerTool.SuppressStartupBanner
   - VC.Project.VCResourceCompilerTool.ResourceOutputFileName
   - VC.Project.VCResourceCompilerTool.NullTerminateStrings
-  - vc.project.AdditionalOptionsPage
 ---
 # Resources property page
 

@@ -12,9 +12,9 @@ UWP apps don't support the following CRT features:
 
 - Most CRT functions that are related to unsupported functionality.
 
-   For example, a UWP app cannot create a process by using the **exec** and **spawn** families of routines.
+   For example, a UWP app can't create a process by using the `exec` and `spawn` families of routines.
 
-   When a CRT function is not supported in a UWP app, that fact is noted in its reference article.
+   When a CRT function isn't supported in a UWP app, that fact is noted in its reference article.
 
 - Most multibyte character and string functions.
 
@@ -30,13 +30,13 @@ UWP apps don't support the following CRT features:
 
 - An app that's built by using the [/MDd](../build/reference/md-mt-ld-use-run-time-library.md) compiler option.
 
-   That is, a debug, multithread, and DLL-specific version of the CRT. Such an app is not supported on the Windows Runtime.
+   That is, a debug, multithread, and DLL-specific version of the CRT. Such an app isn't supported on the Windows Runtime.
 
-For a complete list of CRT functions that are not available in a UWP app and suggestions for alternative functions, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+For a complete list of CRT functions that aren't available in a UWP app and suggestions for alternative functions, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)<br/>
-[Windows Runtime Unsupported CRT Functions](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Compatibility](./compatibility.md)\
+[Windows Runtime unsupported CRT functions](./windows-runtime-unsupported-crt-functions.md)\
+[Universal C runtime routines by category](./run-time-routines-by-category.md)\
 [Create a Universal Windows Platform console app](/windows/uwp/launch-resume/console-uwp)

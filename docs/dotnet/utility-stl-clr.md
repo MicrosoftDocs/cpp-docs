@@ -7,42 +7,42 @@ f1_keywords: ["<cliext/utility>", "cliext::pair", "cliext::pair::pair", "cliext:
 helpviewer_keywords: ["<utility> header [STL/CLR]", "utility header [STL/CLR]", "<cliext/utility> header [STL/CLR]", "first member [STL/CLR]", "first_type member [STL/CLR]", "second member [STL/CLR]", "second_type member [STL/CLR]", "swap member [STL/CLR]", "make_pair function [STL/CLR]", "pair class [STL/CLR]", "pair member [STL/CLR]", "operator== member [STL/CLR]", "operator= member [STL/CLR]", "operator>= member [STL/CLR]", "operator> member [STL/CLR]", "operator!= member [STL/CLR]", "operator<= member [STL/CLR]", "operator< member [STL/CLR]"]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
 ---
-# utility (STL/CLR)
+# `<cliext/utility>` (STL/CLR)
 
-Include the STL/CLR header `<cliext/utility>` to define the template class `pair` and several supporting template functions.
+Include the STL/CLR header `<cliext/utility>` to define the class template `pair` and several supporting function templates.
 
 ## Syntax
 
 ```cpp
-#include <utility>
+#include <cliext/utility>
 ```
 
 ## Requirements
 
 **Header:** \<cliext/utility>
 
-**Namespace:** cliext
+**Namespace:** `cliext`
 
 ## Declarations
 
-|Class|Description|
-|-----------|-----------------|
-|[pair (STL/CLR)](#pair)|Wrap a pair of elements.|
+| Class | Description |
+|---|---|
+| [`pair`](#pair) | Wrap a pair of elements. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[operator== (pair) (STL/CLR)](#op_eq)|Pair equal comparison.|
-|[operator!= (pair) (STL/CLR)](#op_neq)|Pair not equal comparison.|
-|[operator< (pair) (STL/CLR)](#op_lt)|Pair less than comparison.|
-|[operator\<= (pair) (STL/CLR)](#op_lteq)|Pair less than or equal comparison.|
-|[operator> (pair) (STL/CLR)](#op_gt)|Pair greater than comparison.|
-|[operator>= (pair) (STL/CLR)](#op_gteq)|Pair greater than or equal comparison.|
+| Operator | Description |
+|---|---|
+| [`operator==` (pair)](#op_eq) | `pair` equal comparison. |
+| [`operator!=` (pair)](#op_neq) | `pair` not equal comparison. |
+| [`operator<` (pair)](#op_lt) | `pair` less than comparison. |
+| [`operator<=` (pair)](#op_lteq) | `pair` less than or equal comparison. |
+| [`operator>` (pair)](#op_gt) | `pair` greater than comparison. |
+| [`operator>=` (pair)](#op_gteq) | `pair` greater than or equal comparison. |
 
-|Function|Description|
-|--------------|-----------------|
-|[make_pair (STL/CLR)](#make_pair)|Make a pair from a pair of values.|
+| Function | Description |
+|---|---|
+| [`make_pair`](#make_pair) | Make a `pair` from a pair of values. |
 
-## <a name="pair"></a> pair (STL/CLR)
+## <a name="pair"></a> `pair`
 
 The template class describes an object that wraps a pair of values.
 
@@ -56,38 +56,38 @@ template<typename Value1,
 
 #### Parameters
 
-*Value1*<br/>
+*`Value1`*\
 The type of first wrapped value.
 
-*Value2*<br/>
+*`Value2`*\
 The type of second wrapped value.
 
 ## Members
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[pair::first_type (STL/CLR)](#first_type)|The type of the first wrapped value.|
-|[pair::second_type (STL/CLR)](#second_type)|The type of the second wrapped value.|
+| Type definition | Description |
+|---|---|
+| [`pair::first_type`](#first_type) | The type of the first wrapped value. |
+| [`pair::second_type`](#second_type) | The type of the second wrapped value. |
 
-|Member Object|Description|
-|-------------------|-----------------|
-|[pair::first (STL/CLR)](#first)|The first stored value.|
-|[pair::second (STL/CLR)](#second)|The second stored value.|
+| Member object | Description |
+|---|---|
+| [`pair::first`](#first) | The first stored value. |
+| [`pair::second`](#second) | The second stored value. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[pair::pair (STL/CLR)](#pair_pair)|Constructs a pair object.|
-|[pair::swap (STL/CLR)](#swap)|Swaps the contents of two pairs.|
+| Member function | Description |
+|---|---|
+| [`pair::pair`](#pair_pair) | Constructs a `pair` object. |
+| [`pair::swap`](#swap) | Swaps the contents of two `pair` objects. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[pair::operator= (STL/CLR)](#op_as)|Replaces the stored pair of values.|
+| Operator | Description |
+|---|---|
+| [`pair::operator=`](#op_as) | Replaces the stored pair of values. |
 
 ## Remarks
 
 The object stores a pair of values. You use this template class to combine two values into a single object. Also, the object `cliext::pair` (described here) stores only managed types; to store a pair of unmanaged types use `std::pair`, declared in `<utility>`.
 
-## <a name="first"></a> pair::first (STL/CLR)
+## <a name="first"></a> `pair::first`
 
 The first wrapped value.
 
@@ -124,7 +124,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="first_type"></a> pair::first_type (STL/CLR)
+## <a name="first_type"></a> `pair::first_type`
 
 The type of the first wrapped value.
 
@@ -136,7 +136,7 @@ typedef Value1 first_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Value1*.
+The type is a synonym for the template parameter *`Value1`*.
 
 ### Example
 
@@ -161,7 +161,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="op_as"></a> pair::operator= (STL/CLR)
+## <a name="op_as"></a> `pair::operator=`
 
 Replaces the stored pair of values.
 
@@ -173,12 +173,12 @@ pair<Value1, Value2>% operator=(pair<Value1, Value2>% right);
 
 #### Parameters
 
-*right*<br/>
-Pair to copy.
+*`right`*\
+`pair` to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the stored pair of values with a copy of the stored pair of values in *right*.
+The member operator copies *`right`* to the object, then returns **`*this`**. You use it to replace the stored pair of values with a copy of the stored pair of values in *`right`*.
 
 ### Example
 
@@ -205,9 +205,9 @@ int main()
 [x, 3]
 ```
 
-## <a name="pair_pair"></a> pair::pair (STL/CLR)
+## <a name="pair_pair"></a> `pair::pair`
 
-Constructs a pair object.
+Constructs a `pair` object.
 
 ### Syntax
 
@@ -220,13 +220,13 @@ pair(Value1 val1, Value2 val2);
 
 #### Parameters
 
-*right*<br/>
-Pair to store.
+*`right`*\
+`pair` to store.
 
-*val1*<br/>
+*`val1`*\
 First value to store.
 
-*val2*<br/>
+*`val2`*\
 Second value to store.
 
 ### Remarks
@@ -241,17 +241,17 @@ The constructor:
 
 `pair(pair<Value1, Value2>% right);`
 
-initializes the stored pair with `right.`[pair::first (STL/CLR)](#first) and `right.`[pair::second (STL/CLR)](#second).
+initializes the stored pair with `right.first` and `right.second`.
 
 `pair(pair<Value1, Value2>^ right);`
 
-initializes the stored pair with `right->`[pair::first (STL/CLR)](#first) and `right>`[pair::second (STL/CLR)](#second).
+initializes the stored pair with `right->first` and `right->second`.
 
 The constructor:
 
 `pair(Value1 val1, Value2 val2);`
 
-initializes the stored pair with *val1* and *val2*.
+initializes the stored pair with *`val1`* and *`val2`*.
 
 ### Example
 
@@ -290,7 +290,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="second"></a> pair::second (STL/CLR)
+## <a name="second"></a> `pair::second`
 
 The second wrapped value.
 
@@ -327,7 +327,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="second_type"></a> pair::second_type (STL/CLR)
+## <a name="second_type"></a> `pair::second_type`
 
 The type of the second wrapped value.
 
@@ -339,7 +339,7 @@ typedef Value2 second_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Value2*.
+The type is a synonym for the template parameter *`Value2`*.
 
 ### Example
 
@@ -364,9 +364,9 @@ int main()
 [x, 3]
 ```
 
-## <a name="swap"></a> pair::swap (STL/CLR)
+## <a name="swap"></a> `pair::swap`
 
-Swaps the contents of two pairs.
+Swaps the contents of two `pair` objects.
 
 ### Syntax
 
@@ -376,12 +376,12 @@ void swap(pair<Value1, Value2>% right);
 
 #### Parameters
 
-*right*<br/>
-Pair to swap contents with.
+*`right`*\
+`pair` to swap contents with.
 
 ### Remarks
 
-The member function swaps the stored pair of values between **`*this`** and *right*.
+The member function swaps the stored pair of values between **`*this`** and *`right`*.
 
 ### Example
 
@@ -433,7 +433,7 @@ x x x x x
 a b c
 ```
 
-## <a name="make_pair"></a> make_pair (STL/CLR)
+## <a name="make_pair"></a> `make_pair`
 
 Make a `pair` from a pair of values.
 
@@ -447,21 +447,21 @@ template<typename Value1,
 
 #### Parameters
 
-*Value1*<br/>
+*`Value1`*\
 The type of the first wrapped value.
 
-*Value2*<br/>
+*`Value2`*\
 The type of the second wrapped value.
 
-*first*<br/>
+*`first`*\
 First value to wrap.
 
-*second*<br/>
+*`second`*\
 Second value to wrap.
 
 ### Remarks
 
-The template function returns `pair<Value1, Value2>(first, second)`. You use it to construct a `pair<Value1, Value2>` object from a pair of values.
+The function template returns `pair<Value1, Value2>(first, second)`. You use it to construct a `pair<Value1, Value2>` object from a pair of values.
 
 ### Example
 
@@ -486,9 +486,9 @@ int main()
 [y, 4]
 ```
 
-## <a name="op_neq"></a> operator!= (pair) (STL/CLR)
+## <a name="op_neq"></a> `operator!=` (pair)
 
-Pair not equal comparison.
+`pair` not equal comparison.
 
 ### Syntax
 
@@ -501,15 +501,15 @@ template<typename Value1,
 
 #### Parameters
 
-*left*<br/>
-Left pair to compare.
+*`left`*\
+Left `pair` to compare.
 
-*right*<br/>
-Right pair to compare.
+*`right`*\
+Right `pair` to compare.
 
 ### Remarks
 
-The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two pairs are compared element by element.
+The operator function returns `!(left == right)`. You use it to test whether *`left`* isn't ordered the same as *`right`* when the two `pair` objects are compared element by element.
 
 ### Example
 
@@ -540,9 +540,9 @@ int main()
 [x 3] != [x 4] is True
 ```
 
-## <a name="op_lt"></a> `operator<` (pair) (STL/CLR)
+## <a name="op_lt"></a> `operator<`
 
-Pair less than comparison.
+`pair` less than comparison.
 
 ### Syntax
 
@@ -555,15 +555,15 @@ template<typename Value1,
 
 #### Parameters
 
-*left*<br/>
-Left pair to compare.
+*`left`*\
+Left `pair` to compare.
 
-*right*<br/>
-Right pair to compare.
+*`right`*\
+Right `pair` to compare.
 
 ### Remarks
 
-The operator function returns `left.first <` `right.first || !(right.first <` `left.first &&` `left.second <` `right.second`. You use it to test whether *left* is ordered the before *right* when the two pairs are compared element by element.
+The operator function returns `left.first < right.first || !(right.first < left.first && left.second < right.second`. You use it to test whether *`left`* is ordered the before *`right`* when the two `pair` objects are compared element by element.
 
 ### Example
 
@@ -594,9 +594,9 @@ int main()
 [x 3] < [x 4] is True
 ```
 
-## <a name="op_lteq"></a> `operator<=` (pair) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=`
 
-Pair less than or equal comparison.
+`pair` less than or equal comparison.
 
 ### Syntax
 
@@ -609,15 +609,15 @@ template<typename Value1,
 
 #### Parameters
 
-*left*<br/>
-Left pair to compare.
+*`left`*\
+Left `pair` to compare.
 
-*right*<br/>
-Right pair to compare.
+*`right`*\
+Right `pair` to compare.
 
 ### Remarks
 
-The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two pairs are compared element by element.
+The operator function returns `!(right < left)`. You use it to test whether *`left`* isn't ordered after *`right`* when the two `pair` objects are compared element by element.
 
 ### Example
 
@@ -648,9 +648,9 @@ int main()
 [x 4] <= [x 3] is False
 ```
 
-## <a name="op_eq"></a> operator== (pair) (STL/CLR)
+## <a name="op_eq"></a> `operator==`
 
-Pair equal comparison.
+`pair` equal comparison.
 
 ### Syntax
 
@@ -663,15 +663,15 @@ template<typename Value1,
 
 #### Parameters
 
-*left*<br/>
-Left pair to compare.
+*`left`*\
+Left `pair` to compare.
 
-*right*<br/>
-Right pair to compare.
+*`right`*\
+Right `pair` to compare.
 
 ### Remarks
 
-The operator function returns `left.first ==` `right.first &&` `left.second ==` `right.second`. You use it to test whether *left* is ordered the same as *right* when the two pairs are compared element by element.
+The operator function returns `left.first == right.first && left.second == right.second`. You use it to test whether *`left`* is ordered the same as *`right`* when the two `pair` objects are compared element by element.
 
 ### Example
 
@@ -702,9 +702,9 @@ int main()
 [x 3] == [x 4] is False
 ```
 
-## <a name="op_gt"></a> `operator>` (pair) (STL/CLR)
+## <a name="op_gt"></a> `pair::operator>`
 
-Pair greater than comparison.
+`pair` greater than comparison.
 
 ### Syntax
 
@@ -717,15 +717,15 @@ template<typename Value1,
 
 #### Parameters
 
-*left*<br/>
-Left pair to compare.
+*`left`*\
+Left `pair` to compare.
 
-*right*<br/>
-Right pair to compare.
+*`right`*\
+Right `pair` to compare.
 
 ### Remarks
 
-The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two pairs are compared element by element.
+The operator function returns `right < left`. You use it to test whether *`left`* is ordered after *`right`* when the two `pair` objects are compared element by element.
 
 ### Example
 
@@ -756,9 +756,9 @@ int main()
 [x 4] > [x 3] is True
 ```
 
-## <a name="op_gteq"></a> `operator>=` (pair) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=`
 
-Pair greater than or equal comparison.
+`pair` greater than or equal comparison.
 
 ### Syntax
 
@@ -771,15 +771,15 @@ template<typename Value1,
 
 #### Parameters
 
-*left*<br/>
-Left pair to compare.
+*`left`*\
+Left `pair` to compare.
 
-*right*<br/>
-Right pair to compare.
+*`right`*\
+Right `pair` to compare.
 
 ### Remarks
 
-The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two pairs are compared element by element.
+The operator function returns `!(left < right)`. You use it to test whether *`left`* isn't ordered before *`right`* when the two `pair` objects are compared element by element.
 
 ### Example
 

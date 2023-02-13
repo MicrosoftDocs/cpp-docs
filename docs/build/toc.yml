@@ -78,7 +78,9 @@ items:
       href: ../build/cmake-predefined-configuration-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
-- name: "Build and import header units"
+- name: "Compare header units, modules, and precompiled headers"
+  href: ../build/compare-inclusion-methods.md
+- name: "Header units"
   expanded: false
   items:
     - name: "Walkthrough: Build and import header units in Visual C++ projects"
@@ -372,7 +374,7 @@ items:
               href: ../build/reference/help-files-html-help.md
             - name: Winhelp help files
               href: ../build/reference/help-files-winhelp.md
-            - name: Hint files for Intellisense
+            - name: Hint files for IntelliSense
               href: ../build/reference/hint-files.md
             - name: Property page XML files
               href: ../build/reference/property-page-xml-files.md
@@ -616,9 +618,11 @@ items:
                   href: ../build/reference/hotpatch-create-hotpatchable-image.md
                 - name: /I (Additional include directories)
                   href: ../build/reference/i-additional-include-directories.md
-                - name: /interface (treat input file as a module interface unit)
+                - name: /ifcOutput (Specify where the compiled `.ifc` should go.)
+                  href: ../build/reference/ifc-output.md
+                - name: /interface (Treat input file as a module interface unit)
                   href: ../build/reference/interface.md
-                - name: /internalPartition (treat the input file as an internal partition unit.)
+                - name: /internalPartition (Treat the input file as an internal partition unit.)
                   href: ../build/reference/internal-partition.md
                 - name: /J (Default char type is unsigned)
                   href: ../build/reference/j-default-char-type-is-unsigned.md
@@ -769,20 +773,26 @@ items:
                   items: 
                     - name: /Zc (Conformance)
                       href: ../build/reference/zc-conformance.md
+                    - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
+                      href: ../build/reference/zc-cplusplus.md
+                    - name: "/Zc:__STDC__ (Enable __STDC__ macro)"
+                      href: ../build/reference/zc-stdc.md
                     - name: "/Zc:alignedNew (C++17 over-aligned allocation)"
                       href: ../build/reference/zc-alignednew.md
                     - name: "/Zc:auto (Deduce variable type)"
                       href: ../build/reference/zc-auto-deduce-variable-type.md
                     - name: "/Zc:char8_t (Enable C++20 char8_t type)"
                       href: ../build/reference/zc-char8-t.md
-                    - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
-                      href: ../build/reference/zc-cplusplus.md
+                    - name: '/Zc:enumTypes (Enable enum type deduction)'
+                      href: ../build/reference/zc-enumtypes.md
                     - name: '/Zc:externC (Use Standard C++ extern "C" rules)'
                       href: ../build/reference/zc-externc.md
                     - name: "/Zc:externConstexpr (Enable extern constexpr variables)"
                       href: ../build/reference/zc-externconstexpr.md
                     - name: "/Zc:forScope (Force conformance in for loop scope)"
                       href: ../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md
+                    - name: "/Zc:gotoScope (Enforce conformance in goto scope)"
+                      href: ../build/reference/zc-gotoscope.md
                     - name: "/Zc:hiddenFriend (Enforce Standard C++ hidden friend rules)"
                       href: ../build/reference/zc-hiddenfriend.md
                     - name: "/Zc:implicitNoexcept (Implicit exception specifiers)"
@@ -793,6 +803,8 @@ items:
                       href: ../build/reference/zc-lambda.md
                     - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
                       href: ../build/reference/zc-noexcepttypes.md
+                    - name: "/Zc:nrvo (Control optional NRVO)"
+                      href: ../build/reference/zc-nrvo.md
                     - name: "/Zc:preprocessor (Enable preprocessor conformance mode)"
                       href: ../build/reference/zc-preprocessor.md
                     - name: "/Zc:referenceBinding (Enforce reference binding rules)"
@@ -805,18 +817,24 @@ items:
                       href: ../build/reference/zc-static-assert.md
                     - name: "/Zc:strictStrings (Disable string literal type conversion)"
                       href: ../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
+                    - name: "/Zc:templateScope (Check template parameter shadowing)"
+                      href: ../build/reference/zc-templatescope.md
                     - name: "/Zc:ternary (Enforce conditional operator rules)"
                       href: ../build/reference/zc-ternary.md
-                    - name: "/Zc:threadSafeInit  (Thread-safe local static initialization)"
+                    - name: "/Zc:threadSafeInit (Thread-safe local static initialization)"
                       href: ../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md
                     - name: "/Zc:throwingNew (Assume operator new throws)"
                       href: ../build/reference/zc-throwingnew-assume-operator-new-throws.md
+                    - name: "/Zc:tlsGuards (Check TLS initialization)"
+                      href: ../build/reference/zc-tlsguards.md
                     - name: "/Zc:trigraphs (Trigraphs substitution)"
                       href: ../build/reference/zc-trigraphs-trigraphs-substitution.md
                     - name: "/Zc:twoPhase- (disable two-phase name lookup)"
                       href: ../build/reference/zc-twophase.md
                     - name: "/Zc:wchar_t (wchar_t is native type)"
                       href: ../build/reference/zc-wchar-t-wchar-t-is-native-type.md
+                    - name: "/Zc:zeroSizeArrayNew (Call member new/delete on arrays)"
+                      href: ../build/reference/zc-zerosizearraynew.md
                 - name: /Zf (Faster PDB generation)
                   href: ../build/reference/zf.md
                 - name: /Zg (Generate function prototypes)
@@ -965,14 +983,16 @@ items:
               href: ../build/reference/ignore-ignore-specific-warnings.md
             - name: /IGNOREIDL (Don't process attributes into MIDL)
               href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
-            - name: /INFERASANLIBS (Use inferred sanitizer libs)
-              href: ../build/reference/inferasanlibs.md
+            - name: /ILK (Name incremental database file)
+              href: ../build/reference/ilk-name-incremental-database-file.md
             - name: /IMPLIB (Name import library)
               href: ../build/reference/implib-name-import-library.md
             - name: /INCLUDE (Force symbol references)
               href: ../build/reference/include-force-symbol-references.md
             - name: /INCREMENTAL (Link incrementally)
               href: ../build/reference/incremental-link-incrementally.md
+            - name: /INFERASANLIBS (Use inferred sanitizer libs)
+              href: ../build/reference/inferasanlibs.md
             - name: /INTEGRITYCHECK (Require signature check)
               href: ../build/reference/integritycheck-require-signature-check.md
             - name: /KEYCONTAINER (Specify a key container to sign an assembly)
@@ -989,6 +1009,8 @@ items:
               href: ../build/reference/linkreprotarget.md
             - name: /LTCG (Link-time code generation)
               href: ../build/reference/ltcg-link-time-code-generation.md
+            - name: /LTCGOUT (Name LTCG .iobj file)
+              href: ../build/reference/ltcgout.md
             - name: /MACHINE (Specify target platform)
               href: ../build/reference/machine-specify-target-platform.md
             - name: /MANIFEST (Create side-by-side assembly manifest)

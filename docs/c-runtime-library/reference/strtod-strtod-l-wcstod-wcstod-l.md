@@ -3,7 +3,7 @@ title: "strtod, _strtod_l, wcstod, _wcstod_l"
 description: "API reference for strtod, _strtod_l, wcstod, and _wcstod_l; which convert strings to a double-precision value."
 ms.date: "08/27/2020"
 api_name: ["wcstod", "_wcstod_l", "_strtod_l", "strtod", "_o__strtod_l", "_o__wcstod_l", "_o_strtod", "_o_wcstod"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcstod", "strtod", "wcstod", "_strtod_l", "_wcstod_l", "stdlib/strtod", "corecrt_wstdlib/wcstod", "stdlib/_strtod_l", "corecrt_wstdlib/_wcstod_l"]
@@ -47,33 +47,33 @@ Pointer to character that stops scan.
 *`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-**`strtod`** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**`HUGE_VAL`**. The sign of **`HUGE_VAL`** matches the sign of the value that can't be represented. **`strtod`** returns `0` if no conversion can be performed or an underflow occurs.
+**`strtod`** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VAL`. The sign of `HUGE_VAL` matches the sign of the value that can't be represented. **`strtod`** returns `0` if no conversion can be performed or an underflow occurs.
 
 **`wcstod`** returns values analogously to **`strtod`**:
 
-- For both functions, **`errno`** is set to **`ERANGE`** if overflow or underflow occurs.
-- If there are invalid parameters, **`errno`** is set to **`EINVAL`** and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+- For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.
+- If there are invalid parameters, `errno` is set to `EINVAL` and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
-For more information on this and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information on this and other return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 Each function converts the input string *`strSource`* to a **`double`**. The **`strtod`** function converts *`strSource`* to a double-precision value. **`strtod`** stops reading the string *`strSource`* at the first character it can't recognize as part of a number. This character may be the terminating null character. **`wcstod`** is a wide-character version of **`strtod`**; its *`strSource`* argument is a wide-character string. These functions behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcstod`**|**`strtod`**|**`strtod`**|**`wcstod`**|
-|**`_tcstod_l`**|**`_strtod_l`**|**`_strtod_l`**|**`_wcstod_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tcstod`** | **`strtod`** | **`strtod`** | **`wcstod`** |
+| **`_tcstod_l`** | **`_strtod_l`** | **`_strtod_l`** | **`_wcstod_l`** |
 
-The **`LC_NUMERIC`** category setting of the current locale determines recognition of the radix point character in *`strSource`*. For more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtod_l`** is identical to **`_strtod`** except the former uses the *`locale`* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `LC_NUMERIC` category setting of the current locale determines recognition of the radix point character in *`strSource`*. For more information, see [`setlocale`](setlocale-wsetlocale.md). The functions without the **`_l`** suffix use the current locale; **`_strtod_l`** is identical to **`_strtod`** except the former uses the *`locale`* passed in instead. For more information, see [Locale](../locale.md).
 
-If *`endptr`* isn't **`NULL`**, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
+If *`endptr`* isn't `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *`endptr`*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *`strSource`* is stored at the location pointed to by *`endptr`*.
 
 **`strtod`** expects *`strSource`* to point to a string of one of the following forms:
 
@@ -99,16 +99,16 @@ In either form, if there isn't an exponent part or a radix point character, a ra
 
 Case is ignored in both the **`INF`** and **`NAN`** forms. The first character that doesn't fit one of these forms stops the scan.
 
-The UCRT versions of these functions don't support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code. The UCRT versions support hexadecimal strings and round-tripping of `INF` and `NAN` values, which weren't supported in earlier versions. This can also cause breaking changes in your code. For example, the string "`0x1a`" would be interpreted by **`strtod`** as 0.0 in previous versions, but as 26.0 in the UCRT version.
+The UCRT versions of these functions don't support conversion of Fortran-style (**`d`** or **`D`**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code. The UCRT versions support hexadecimal strings and round-tripping of `INF` and `NAN` values, which weren't supported in earlier versions. This support can also cause breaking changes in your code. For example, the string "`0x1a`" would be interpreted by **`strtod`** as 0.0 in previous versions, but as 26.0 in the UCRT version.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`strtod`**, **`_strtod_l`**|C: `<stdlib.h>` C++: `<cstdlib>` or `<stdlib.h>` |
-|**`wcstod`**, **`_wcstod_l`**|C: `<stdlib.h>` or `<wchar.h>` C++: `<cstdlib>`, `<stdlib.h>`, or `<wchar.h>` |
+| Routine | Required header |
+|---|---|
+| **`strtod`**, **`_strtod_l`** | C: `<stdlib.h>` C++: `<cstdlib>` or `<stdlib.h>` |
+| **`wcstod`**, **`_wcstod_l`** | C: `<stdlib.h>` or `<wchar.h>` C++: `<cstdlib>`, `<stdlib.h>`, or `<wchar.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -203,11 +203,11 @@ No Fortran style support. Stopped parsing at d+49
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
-[Locale](../../c-runtime-library/locale.md)\
-[String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)\
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[Locale](../locale.md)\
+[String to numeric value functions](../string-to-numeric-value-functions.md)\
 [`strtol`, `wcstol`, `_strtol_l`, `_wcstol_l`](strtol-wcstol-strtol-l-wcstol-l.md)\
 [`strtoul`, `_strtoul_l`, `wcstoul`, `_wcstoul_l`](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\
 [`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\

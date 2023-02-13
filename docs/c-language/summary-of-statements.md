@@ -6,56 +6,56 @@ ms.assetid: ce45d2fe-ec0e-459f-afb1-80ab6a7f0239
 ---
 # Summary of C statements
 
-*`statement`*:<br/>
-&emsp;*`labeled-statement`*<br/>
-&emsp;*`compound-statement`*<br/>
-&emsp;*`expression-statement`*<br/>
-&emsp;*`selection-statement`*<br/>
-&emsp;*`iteration-statement`*<br/>
-&emsp;*`jump-statement`*<br/>
-&emsp;*`try-except-statement`* /\* Microsoft-specific \*/<br/>
+*`statement`*:\
+&emsp;*`labeled-statement`*\
+&emsp;*`compound-statement`*\
+&emsp;*`expression-statement`*\
+&emsp;*`selection-statement`*\
+&emsp;*`iteration-statement`*\
+&emsp;*`jump-statement`*\
+&emsp;*`try-except-statement`* /\* Microsoft-specific \*/\
 &emsp;*`try-finally-statement`* /\* Microsoft-specific \*/
 
-*`jump-statement`*:<br/>
-&emsp;**`goto`** *`identifier`* **`;`**<br/>
-&emsp;**`continue ;`**<br/>
-&emsp;**`break ;`**<br/>
-&emsp;**`return`** *`expression`*<sub>opt</sub> **`;`**<br/>
+*`jump-statement`*:\
+&emsp;**`goto`** *`identifier`* **`;`**\
+&emsp;**`continue ;`**\
+&emsp;**`break ;`**\
+&emsp;**`return`** *`expression`*<sub>opt</sub> **`;`**\
 &emsp;**`__leave ;`** /\* Microsoft-specific<sup>1</sup> \*/
 
-*`compound-statement`*:<br/>
+*`compound-statement`*:\
 &emsp;**`{`** *`declaration-list`*<sub>opt</sub> *`statement-list`*<sub>opt</sub> **`}`**
 
-*`declaration-list`*:<br/>
-&emsp;*`declaration`*<br/>
+*`declaration-list`*:\
+&emsp;*`declaration`*\
 &emsp;*`declaration-list`* *`declaration`*
 
-*`statement-list`*:<br/>
-&emsp;*`statement`*<br/>
+*`statement-list`*:\
+&emsp;*`statement`*\
 &emsp;*`statement-list`* *`statement`*
 
-*`expression-statement`*:<br/>
+*`expression-statement`*:\
 &emsp;*`expression`*<sub>opt</sub> **`;`**
 
-*`iteration-statement`*:<br/>
-&emsp;**`while (`** *`expression`* **`)`** *`statement`*<br/>
-&emsp;**`do`** *`statement`* **`while (`** *`expression`* **`) ;`**<br/>
+*`iteration-statement`*:\
+&emsp;**`while (`** *`expression`* **`)`** *`statement`*\
+&emsp;**`do`** *`statement`* **`while (`** *`expression`* **`) ;`**\
 &emsp;**`for (`** *`expression`*<sub>opt</sub> **`;`** *`expression`*<sub>opt</sub> **`;`** *`expression`*<sub>opt</sub> **`)`** *`statement`*
 
-*`selection-statement`*:<br/>
-&emsp;**`if (`** *`expression`* **`)`** *`statement`*<br/>
-&emsp;**`if (`** *`expression`* **`)`** *`statement`* **`else`** *`statement`*<br/>
+*`selection-statement`*:\
+&emsp;**`if (`** *`expression`* **`)`** *`statement`*\
+&emsp;**`if (`** *`expression`* **`)`** *`statement`* **`else`** *`statement`*\
 &emsp;**`switch (`** *`expression`* **`)`** *`statement`*
 
-*`labeled-statement`*:<br/>
-&emsp;*`identifier`* **`:`** *`statement`*<br/>
-&emsp;**`case`** *`constant-expression`* **`:`** *`statement`*<br/>
+*`labeled-statement`*:\
+&emsp;*`identifier`* **`:`** *`statement`*\
+&emsp;**`case`** *`constant-expression`* **`:`** *`statement`*\
 &emsp;**`default :`** *`statement`*
 
-*`try-except-statement`*: /\* Microsoft-specific \*/<br/>
+*`try-except-statement`*: /\* Microsoft-specific \*/\
 &emsp;**`__try`** *`compound-statement`* **`__except (`** *`expression`* **`)`** *`compound-statement`*
 
-*`try-finally-statement`*: /\* Microsoft-specific \*/<br/>
+*`try-finally-statement`*: /\* Microsoft-specific \*/\
 &emsp;**`__try`** *`compound-statement`* **`__finally`** *`compound-statement`*
 
 1 The **`__leave`** keyword is only valid within the **`__try`** block of a *`try-except-statement`* or a *`try-finally-statement`*.

@@ -11,45 +11,45 @@ A "structure declaration" names a type and specifies a sequence of variable valu
 
 ## Syntax
 
-*struct-or-union-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union* *identifier*<sub>opt</sub> **{** *struct-declaration-list* **}**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union* *identifier*
+*`struct-or-union-specifier`*:\
+&emsp;*`struct-or-union`* *`identifier`*<sub>opt</sub> **`{`** *`struct-declaration-list`* **`}`**\
+&emsp;*`struct-or-union`* *`identifier`*
 
-*struct-or-union*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`struct`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`union`**
+*`struct-or-union`*:\
+&emsp;**`struct`**\
+&emsp;**`union`**
 
-*struct-declaration-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-declaration*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-declaration-list* *struct-declaration*
+*`struct-declaration-list`*:\
+&emsp;*`struct-declaration`*\
+&emsp;*`struct-declaration-list`* *`struct-declaration`*
 
-*struct-declaration*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*specifier-qualifier-list* *struct-declarator-list* **;**
+*`struct-declaration`*:\
+&emsp;*`specifier-qualifier-list`* *`struct-declarator-list`* **`;`**
 
-*specifier-qualifier-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *specifier-qualifier-list*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier* *specifier-qualifier-list*<sub>opt</sub>
+*`specifier-qualifier-list`*:\
+&emsp;*`type-specifier`* *`specifier-qualifier-list`*<sub>opt</sub>\
+&emsp;*`type-qualifier`* *`specifier-qualifier-list`*<sub>opt</sub>
 
-*struct-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-declarator* *struct-declarator-list* **,** *struct-declarator*
+*`struct-declarator-list`*:\
+&emsp;*`struct-declarator`* *`struct-declarator-list`* **`,`** *`struct-declarator`*
 
-*struct-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declarator*<sub>opt</sub> **:** *constant-expression*
+*`struct-declarator`*:\
+&emsp;*`declarator`*\
+&emsp;*`type-specifier`* *`declarator`*<sub>opt</sub> **`:`** *`constant-expression`*
 
-The declaration of a structure type does not set aside space for a structure. It is only a template for later declarations of structure variables.
+The declaration of a structure type doesn't set aside space for a structure. It's only a template for later declarations of structure variables.
 
-A previously defined *identifier* (tag) can be used to refer to a structure type defined elsewhere. In this case, *struct-declaration-list* cannot be repeated as long as the definition is visible. Declarations of pointers to structures and typedefs for structure types can use the structure tag before the structure type is defined. However, the structure definition must be encountered prior to any actual use of the size of the fields. This is an incomplete definition of the type and the type tag. For this definition to be completed, a type definition must appear later in the same scope.
+A previously defined *`identifier`* (tag) can be used to refer to a structure type defined elsewhere. In this case, *`struct-declaration-list`* can't be repeated as long as the definition is visible. Declarations of pointers to structures and typedefs for structure types can use the structure tag before the structure type is defined. However, the structure definition must be encountered prior to any actual use of the size of the fields. This use is an incomplete definition of the type and the type tag. For this definition to be completed, a type definition must appear later in the same scope.
 
-The *struct-declaration-list* specifies the types and names of the structure members. A *struct-declaration-list* argument contains one or more variable or bit-field declarations.
+The *`struct-declaration-list`* specifies the types and names of the structure members. A *`struct-declaration-list`* argument contains one or more variable or bit-field declarations.
 
-Each variable declared in *struct-declaration-list* is defined as a member of the structure type. Variable declarations within *struct-declaration-list* have the same form as other variable declarations discussed in this section, except that the declarations cannot contain storage-class specifiers or initializers. The structure members can have any variable types except type **`void`**, an incomplete type, or a function type.
+Each variable declared in *`struct-declaration-list`* is defined as a member of the structure type. Variable declarations within *`struct-declaration-list`* have the same form as other variable declarations discussed in this section, except that the declarations can't contain storage-class specifiers or initializers. The structure members can have any variable types except type **`void`**, an incomplete type, or a function type.
 
-A member cannot be declared to have the type of the structure in which it appears. However, a member can be declared as a pointer to the structure type in which it appears as long as the structure type has a tag. This allows you to create linked lists of structures.
+A member can't be declared to have the type of the structure in which it appears. However, a member can be declared as a pointer to the structure type in which it appears as long as the structure type has a tag. It allows you to create linked lists of structures.
 
 Structures follow the same scoping as other identifiers. Structure identifiers must be distinct from other structure, union, and enumeration tags with the same visibility.
 
-Each *struct-declaration* in a *struct-declaration-list* must be unique within the list. However, identifier names in a *struct-declaration-list* do not have to be distinct from ordinary variable names or from identifiers in other structure declaration lists.
+Each *`struct-declaration`* in a *`struct-declaration-list`* must be unique within the list. However, identifier names in a *`struct-declaration-list`* don't have to be distinct from ordinary variable names or from identifiers in other structure declaration lists.
 
 Nested structures can also be accessed as though they were declared at the file-scope level. For example, given this declaration:
 
@@ -112,7 +112,7 @@ struct sample   /* Defines a structure named x */
 
 The first two members of the structure are a **`char`** variable and a pointer to a **`float`** value. The third member, `next`, is declared as a pointer to the structure type being defined (`sample`).
 
-Anonymous structures can be useful when the tag named is not needed. This is the case when one declaration defines all structure instances. For example:
+Anonymous structures can be useful when the tag name isn't needed, such as when one declaration defines all structure instances. For example:
 
 ```C
 struct
@@ -137,13 +137,13 @@ struct somestruct
 
 **Microsoft Specific**
 
-The compiler allows an unsized or zero-sized array as the last member of a structure. This can be useful if the size of a constant array differs when used in various situations. The declaration of such a structure looks like this:
+The compiler allows an unsized or zero-sized array as the last member of a structure. It's useful if the size of a constant array differs when used in various situations. The declaration of such a structure looks like this:
 
-**`struct`** *identifier* **{** *set-of-declarations* *type* <em>array-name</em>**\[]; };**
+**`struct`** *`identifier`* **`{`** *`set-of-declarations`* *`type`* *`array-name`* **`[]; };`**
 
-Unsized arrays can appear only as the last member of a structure. Structures containing unsized array declarations can be nested within other structures as long as no further members are declared in any enclosing structures. Arrays of such structures are not allowed. The **`sizeof`** operator, when applied to a variable of this type or to the type itself, assumes 0 for the size of the array.
+Unsized arrays can appear only as the last member of a structure. Structures containing unsized array declarations can be nested within other structures as long as no further members are declared in any enclosing structures. Arrays of such structures aren't allowed. The **`sizeof`** operator, when applied to a variable of this type or to the type itself, assumes 0 for the size of the array.
 
-Structure declarations can also be specified without a declarator when they are members of another structure or union. The field names are promoted into the enclosing structure. For example, a nameless structure looks like this:
+Structure declarations can also be specified without a declarator when they're members of another structure or union. The field names are promoted into the enclosing structure. For example, a nameless structure looks like this:
 
 ```C
 struct s
@@ -161,7 +161,7 @@ struct s
 p_s->b = 100;  /* A reference to a field in the s structure */
 ```
 
-See [Structure and Union Members](../c-language/structure-and-union-members.md) for information about structure references.
+For more information about structure references, see [Structure and Union Members](../c-language/structure-and-union-members.md).
 
 **END Microsoft Specific**
 

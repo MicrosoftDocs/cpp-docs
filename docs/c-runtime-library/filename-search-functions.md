@@ -7,15 +7,15 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 helpviewer_keywords: ["file names [C++], searching for", "_find function", "wfind function", "find function", "_wfind function"]
 ---
-# Filename Search Functions
+# Filename search functions
 
 These functions search for and close searches for specified file names:
 
-- [`_findnext`, `_wfindnext`](../c-runtime-library/reference/findnext-functions.md)
+- [`_findnext`, `_wfindnext`](./reference/findnext-functions.md)
 
-- [`_findfirst`, `_wfindfirst`](../c-runtime-library/reference/findfirst-functions.md)
+- [`_findfirst`, `_wfindfirst`](./reference/findfirst-functions.md)
 
-- [`_findclose`](../c-runtime-library/reference/findclose.md)
+- [`_findclose`](./reference/findclose.md)
 
 ## Remarks
 
@@ -27,7 +27,7 @@ The functions return file information in a `_finddata_t` structure, which is def
 File attribute.
 
 `time_t time_create`\
-Time of file creation (`-1L` for FAT file systems). This time is stored in UTC format. To convert to the local time, use [`localtime_s`](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).
+Time of file creation (`-1L` for FAT file systems). This time is stored in UTC format. To convert to the local time, use [`localtime_s`](./reference/localtime-s-localtime32-s-localtime64-s.md).
 
 `time_t time_access`\
 Time of the last file access (`-1L` for FAT file systems). This time is stored in UTC format. To convert to the local time, use `localtime_s`.
@@ -45,19 +45,19 @@ In file systems that don't support the creation and last access times of a file,
 
 `_MAX_PATH` is defined in `Stdlib.h` as 260 bytes.
 
-You can’t specify target attributes (such as `_A_RDONLY`) to limit the find operation. These attributes are returned in the `attrib` field of the `_finddata_t` structure and can have the following values (defined in `IO.h`). Users shouldn't rely on these being the only values possible for the `attrib` field.
+You can't specify target attributes (such as `_A_RDONLY`) to limit the find operation. These attributes are returned in the `attrib` field of the `_finddata_t` structure and can have the following values (defined in `IO.h`). Users shouldn't rely on these attributes being the only values possible for the `attrib` field.
 
 `_A_ARCH`\
 Archive. Set whenever the file is changed and cleared by the **`BACKUP`** command. Value: `0x20`.
 
 `_A_HIDDEN`\
-Hidden file. Not generally seen with the `DIR` command, unless you use the **`/AH`** option. Returns information about normal files and files that have this attribute. Value: `0x02`.
+Hidden file. Not often seen with the `DIR` command, unless you use the **`/AH`** option. Returns information about normal files and files that have this attribute. Value: `0x02`.
 
 `_A_NORMAL`\
 Normal. File has no other attributes set and can be read or written to without restriction. Value: `0x00`.
 
 `_A_RDONLY`\
-Read-only. File can’t be opened for writing and a file that has the same name can’t be created. Value: `0x01`.
+Read-only. File can't be opened for writing and a file that has the same name can't be created. Value: `0x01`.
 
 `_A_SUBDIR`\
 Subdirectory. Value: `0x10`.
@@ -69,21 +69,21 @@ System file. Not ordinarily seen with the **`DIR`** command, unless the **`/A`**
 
 You can nest the `_find` functions. For example, if a call to `_findfirst` or `_findnext` finds the file that is a subdirectory, a new search can be initiated with another call to `_findfirst` or `_findnext`.
 
-`_wfindfirst` and `_wfindnext` are wide-character versions of `_findfirst` and `_findnext`. The structure argument of the wide-character versions has the `_wfinddata_t` data type, which is defined in `IO.h` and in `Wchar.h`. The fields of this data type are the same as those of the `_finddata_t` data type, except that in `_wfinddata_t` the name field is of type **`wchar_t`** instead of type **`char`**. Otherwise `_wfindfirst` and `_wfindnext` behave identically to `_findfirst` and `_findnext`.
+`_wfindfirst` and `_wfindnext` are wide-character versions of `_findfirst` and `_findnext`. The structure argument of the wide-character versions has the `_wfinddata_t` data type, which is defined in `IO.h` and in `Wchar.h`. The fields of this data type are the same as the fields of the `_finddata_t` data type, except that in `_wfinddata_t` the `name` field is of type **`wchar_t`** instead of type **`char`**. Otherwise, `_wfindfirst` and `_wfindnext` behave identically to `_findfirst` and `_findnext`.
 
-`_findfirst` and `_findnext` use the 64-bit time type. If you must use the old 32-bit time type, you can define `_USE_32BIT_TIME_T`. The versions of these functions that have the `32` suffix in their names use the 32-bit time type, and those with the `64` suffix use the 64-bit time type.
+`_findfirst` and `_findnext` use the 64-bit time type. If you must use the old 32-bit time type, you can define `_USE_32BIT_TIME_T`. The versions of these functions that have the `32` suffix in their names use the 32-bit time type, and the ones with the `64` suffix use the 64-bit time type.
 
 Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindnext32i64` also behave identically to the 32-bit time type versions of these functions except they use and return 64-bit file lengths. Functions `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`, and `_wfindnext64i32` use the 64-bit time type but use 32-bit file lengths. These functions use appropriate variations of the `_finddata_t` type in which the fields have different types for the time and the file size.
 
 `_finddata_t` is actually a macro that evaluates to `_finddata64i32_t` (or `_finddata32_t` if `_USE_32BIT_TIME_T` is defined). The following table summarizes the variations on `_finddata_t`:
 
-|Structure|Time type|File size type|
-|---------------|---------------|--------------------|
-|`_finddata_t`, `_wfinddata_t`|`__time64_t`|`_fsize_t`|
-|`_finddata32_t`, `_wfinddata32_t`|`__time32_t`|`_fsize_t`|
-|`__finddata64_t`, `__wfinddata64_t`|`__time64_t`|**`__int64`**|
-|`_finddata32i64_t`, `_wfinddata32i64_t`|`__time32_t`|**`__int64`**|
-|`_finddata64i32_t`, `_wfinddata64i32_t`|`__time64_t`|`_fsize_t`|
+| Structure | Time type | File size type |
+|---|---|---|
+| `_finddata_t`, `_wfinddata_t` | `__time64_t` | `_fsize_t` |
+| `_finddata32_t`, `_wfinddata32_t` | `__time32_t` | `_fsize_t` |
+| `__finddata64_t`, `_wfinddata64_t` | `__time64_t` | **`__int64`** |
+| `_finddata32i64_t`, `_wfinddata32i64_t` | `__time32_t` | **`__int64`** |
+| `_finddata64i32_t`, `_wfinddata64i32_t` | `__time64_t` | `_fsize_t` |
 
 `_fsize_t` is a **`typedef`** for **`unsigned long`** (32 bits).
 
@@ -139,4 +139,4 @@ N   N   N   Y   test.c       Wed Feb 06 14:30:44 2002        312
 
 ## See also
 
-[System Calls](../c-runtime-library/system-calls.md)
+[System calls](./system-calls.md)

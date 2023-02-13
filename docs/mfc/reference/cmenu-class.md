@@ -1286,7 +1286,7 @@ The Windows `GetMenuCheckMarkDimensions` function retrieves the dimensions of th
 ### Example
 
 [!code-cpp[NVC_MFCWindowing#32](../../mfc/reference/codesnippet/cpp/cmenu-class_12.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCWindowing#33](../../mfc/reference/codesnippet/cpp/cmenu-class_13.cpp)]
 
 ## <a name="setmenuiteminfo"></a> `CMenu::SetMenuItemInfo`

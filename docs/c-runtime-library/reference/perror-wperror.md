@@ -3,14 +3,14 @@ description: "Learn more about: perror, _wperror"
 title: "perror, _wperror"
 ms.date: "4/2/2020"
 api_name: ["_wperror", "perror", "_o__wperror"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wperror", "_tperror", "perror"]
 helpviewer_keywords: ["_tperror function", "tperror function", "wperror function", "error messages, printing", "printing error messages", "_wperror function", "perror function"]
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5
 ---
-# perror, _wperror
+# `perror`, `_wperror`
 
 Print an error message.
 
@@ -27,41 +27,41 @@ void _wperror(
 
 ### Parameters
 
-*message*<br/>
+*`message`*\
 String message to print.
 
 ## Remarks
 
-The **perror** function prints an error message to **stderr**. **_wperror** is a wide-character version of **_perror**; the *message* argument to **_wperror** is a wide-character string. **_wperror** and **_perror** behave identically otherwise.
+The **`perror`** function prints an error message to `stderr`. **`_wperror`** is a wide-character version of **`_perror`**; the *`message`* argument to **`_wperror`** is a wide-character string. **`_wperror`** and **`_perror`** behave identically otherwise.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**_tperror**|**perror**|**perror**|**_wperror**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tperror` | **`perror`** | **`perror`** | **`_wperror`** |
 
-*message* is printed first, followed by a colon, then by the system error message for the last library call that produced the error, and finally by a newline character. If *message* is a null pointer or a pointer to a null string, **perror** prints only the system error message.
+*`message`* is printed first, followed by a colon, then by the system error message for the last library call that produced the error, and finally by a newline character. If *`message`* is a null pointer or a pointer to a null string, **`perror`** prints only the system error message.
 
-The error number is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) (defined in ERRNO.H). The system error messages are accessed through the variable [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **perror** prints the appropriate error message using the **errno** value as an index to **_sys_errlist**. The value of the variable [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the **_sys_errlist** array.
+The error number is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md) (defined in ERRNO.H). The system error messages are accessed through the variable [`_sys_errlist`](../errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **`perror`** prints the appropriate error message using the `errno` value as an index to **`_sys_errlist`**. The value of the variable [`_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the **`_sys_errlist`** array.
 
-For accurate results, call **perror** immediately after a library routine returns with an error. Otherwise, subsequent calls can overwrite the **errno** value.
+For accurate results, call **`perror`** immediately after a library routine returns an error. Otherwise, subsequent calls can overwrite the `errno` value.
 
-In the Windows operating system, some **errno** values listed in ERRNO.H are unused. These values are reserved for use by the UNIX operating system. See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for a listing of **errno** values used by the Windows operating system. **perror** prints an empty string for any **errno** value not used by these platforms.
+In the Windows operating system, some `errno` values listed in ERRNO.H are unused. These values are reserved for use by the UNIX operating system. See [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) for a listing of `errno` values used by the Windows operating system. **`perror`** prints an empty string for any `errno` value not used by these platforms.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**perror**|\<stdio.h> or \<stdlib.h>|
-|**_wperror**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`perror`** | \<stdio.h> or \<stdlib.h> |
+| **`_wperror`** | \<stdio.h> or \<wchar.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -113,7 +113,7 @@ _strerror says open failed: No such file or directory
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`clearerr`](clearerr.md)\
+[`ferror`](ferror.md)\
+[`strerror`, `_strerror`, `_wcserror`, `__wcserror`](strerror-strerror-wcserror-wcserror.md)

@@ -50,7 +50,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    sudo service ssh start
    ```
 
-1. If you’d like the ssh server to start automatically when the system boots, enable it using systemctl:
+1. If you'd like the ssh server to start automatically when the system boots, enable it using systemctl:
 
    ```bash
    sudo systemctl enable ssh
@@ -64,11 +64,11 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   ![Screenshot showing the Connection Manager dialog.](media/settings_connectionmanager.png)
+   ![Screenshot showing the options pane and CrossPlatform > C plus plus > Connection Manager selected. The Add button is highlighted.](media/settings_connectionmanager.png)
 
    In either scenario, the **Connect to Remote System** window is displayed.
 
-   ![Screenshot showing the Connect to Remote System window.](media/connect.png)
+   ![Screenshot showing the Connect to Remote System window which has fields for host name, port, user name, authentication type, and password.](media/connect.png)
 
 1. Enter the following information:
 
@@ -90,7 +90,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
    If the connection fails, the entry boxes that need to be changed are outlined in red.
 
-   ![Screenshot showing a Connection Manager Error.](media/settings_connectionmanagererror.png)
+   ![Screenshot of the Connect to Remote System window with the host name and port fields outlined in red to indicate that they are incorrect.](media/settings_connectionmanagererror.png)
 
    If you use key files for authentication, make sure the target machine's SSH server is running and configured properly.
 
@@ -102,7 +102,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 ## Host key verification
 
-In Visual Studio version 16.10 or later, you'll be asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you’ve used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
+In Visual Studio version 16.10 or later, you'll be asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you've used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
 
 The first time Visual Studio establishes a new remote connection, you'll be asked to accept or deny the host key fingerprint presented by the server. Or, anytime there are changes to a cached fingerprint. You can also verify a fingerprint on demand: select a connection in the Connection Manager and choose **Verify**.
 
@@ -116,8 +116,8 @@ Starting in Visual Studio version 16.9, support for older, insecure SSH algorith
 
 | Algorithm type | Supported algorithms |
 |--|--|
-| Encryption | `aes128-cbc`</br>`aes128-cbc`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
-| HMAC | `hmac-sha2-256`</br>`hmac-sha2-256` |
+| Encryption | `aes128-cbc`</br>`aes128-ctr`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
+| HMAC | `hmac-sha2-256`</br>`hmac-sha2-512` |
 | Key exchange | `diffie-hellman-group14-sha256`</br>`diffie-hellman-group16-sha512`</br>`diffie-hellman-group-exchange-sha256`</br>`ecdh-sha2-nistp256`</br>`ecdh-sha2-nistp384`</br>`ecdh-sha2-nistp521` |
 | Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`ssh-dss`</br>`ssh-rsa` |
 
@@ -181,7 +181,7 @@ For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
    You can enable logging to help troubleshoot connection problems. On the menu bar, select **Tools > Options**. In the **Options** dialog, select **Cross Platform > Logging**:
 
-   ![Screenshot showing Remote Logging.](media/remote-logging-vs2019.png)
+   ![Screenshot of the Remote Logging screen with options to enable logging, log file location, and whether to log to the output window.](media/remote-logging-vs2019.png)
 
    Logs include connections, all commands sent to the remote machine (their text, exit code and execution time), and all output from Visual Studio to the shell. Logging works for any cross-platform CMake project or MSBuild-based Linux project in Visual Studio.
 
@@ -199,13 +199,11 @@ For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
 The `rsync` command is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, you'll see this error when the download of remote headers for IntelliSense begins:
 
-![Screenshot showing a Headers Error.](media/port-forwarding-headers-error.png)
-
-
+![Screenshot showing an error that the SSH channel couldn't be opened, and a path to log file for more details.](media/port-forwarding-headers-error.png)
 
 `rsync` is also used by Visual Studio's CMake support to copy source files to the remote system. If you can't enable TCP port forwarding, you can use `sftp` as your remote copy sources method. `sftp` is often slower than `rsync`, but doesn't have a dependency on TCP port forwarding. You can manage your remote copy sources method with the `remoteCopySourcesMethod` property in the [CMake Settings Editor](../build/cmakesettings-reference.md#settings-for-cmake-linux). If TCP port forwarding is disabled on your remote system, you'll see an error in the CMake output window the first time it invokes `rsync`.
 
-![Screenshot showing an Rsync Error.](media/port-forwarding-copy-error.png)
+![Screenshot of the output window which shows an Rsync Error that the SSH channel couldn't be opened.](media/port-forwarding-copy-error.png)
 
 `gdbserver` can be used for debugging on embedded devices. If you can't enable TCP port forwarding, then you must use `gdb` for all remote debugging scenarios. `gdb` is used by default when debugging projects on a remote system.
 

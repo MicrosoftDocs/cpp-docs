@@ -5,11 +5,11 @@ ms.date: "11/04/2016"
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["and_eq", "std.and_eq", "std::and_eq"]
+f1_keywords: ["ISO646/and_eq", "and_eq", "std.and_eq", "std::and_eq"]
 helpviewer_keywords: ["and_eq macro"]
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
 ---
-# and_eq
+# `and_eq`
 
 An alternative to the &= operator.
 

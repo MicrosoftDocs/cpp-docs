@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["getch"]
 helpviewer_keywords: ["getch function"]
 ---
-# getch
+# `getch`
 
 The Microsoft-specific function name `getch` is a deprecated alias for the [`_getch`](getch-getwch.md) function. By default, it generates [Compiler warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). The name is deprecated because it doesn't follow the Standard C rules for implementation-specific names. However, the function is still supported.
 

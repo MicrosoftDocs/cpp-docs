@@ -10,26 +10,26 @@ A "floating-point constant" is a decimal number that represents a signed real nu
 
 ## Syntax
 
-*`floating-point-constant`*:<br/>
-&emsp;*`fractional-constant`* *`exponent-part`*<sub>opt</sub> *`floating-suffix`*<sub>opt</sub><br/>
+*`floating-point-constant`*:\
+&emsp;*`fractional-constant`* *`exponent-part`*<sub>opt</sub> *`floating-suffix`*<sub>opt</sub>\
 &emsp;*`digit-sequence`* *`exponent-part`* *`floating-suffix`*<sub>opt</sub>
 
-*`fractional-constant`*:<br/>
-&emsp;*`digit-sequence`*<sub>opt</sub> **.** *`digit-sequence`*<br/>
+*`fractional-constant`*:\
+&emsp;*`digit-sequence`*<sub>opt</sub> **.** *`digit-sequence`*\
 &emsp;*`digit-sequence`*  **.**
 
-*`exponent-part`*:<br/>
-&emsp;**e** *`sign`*<sub>opt</sub> *`digit-sequence`*<br/>
+*`exponent-part`*:\
+&emsp;**e** *`sign`*<sub>opt</sub> *`digit-sequence`*\
 &emsp;**E** *`sign`*<sub>opt</sub> *`digit-sequence`*
 
-*`sign`*: one of<br/>
+*`sign`*: one of\
 &emsp;**`+`** **`-`**
 
-*`digit-sequence`*:<br/>
-&emsp;*`digit`*<br/>
+*`digit-sequence`*:\
+&emsp;*`digit`*\
 &emsp;*`digit-sequence`* *`digit`*
 
-*`floating-suffix`*: one of<br/>
+*`floating-suffix`*: one of\
 &emsp;**`f`** **`l`** **`F`** **`L`**
 
 You can omit either the digits before the decimal point (the integer portion of the value) or the digits after the decimal point (the fractional portion), but not both. You may leave out the decimal point only if you include an exponent. No white-space characters can separate the digits or characters of the constant.

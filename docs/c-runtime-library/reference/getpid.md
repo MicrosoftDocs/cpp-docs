@@ -22,7 +22,7 @@ Gets the process identification.
 int _getpid( void );
 ```
 
-## Return Value
+## Return value
 
 Returns the process ID obtained from the system. There's no error return.
 
@@ -32,11 +32,11 @@ The **`_getpid`** function obtains the process ID from the system. The process I
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_getpid`**|`<process.h>`|
+| Routine | Required header |
+|---|---|
+| **`_getpid`** | `<process.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -63,5 +63,5 @@ Process id: 3584
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`_mktemp`, `_wmktemp`](mktemp-wmktemp.md)

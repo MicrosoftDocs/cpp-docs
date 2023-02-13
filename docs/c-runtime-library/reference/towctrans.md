@@ -6,11 +6,11 @@ api_name: ["towctrans"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["towctrans"]
+f1_keywords: ["WCTYPE/towctrans", "towctrans"]
 helpviewer_keywords: ["towctrans function"]
 ms.assetid: 1ed1e70d-7b31-490f-a7d9-42564b5924ca
 ---
-# towctrans
+# `towctrans`
 
 Transforms a character.
 
@@ -25,32 +25,32 @@ wint_t towctrans(
 
 ### Parameters
 
-*c*<br/>
+*`c`*\
 The character you want to transform.
 
-*category*<br/>
-An identifier that contains the return value of [wctrans](wctrans.md).
+*`category`*\
+An identifier that contains the return value of [`wctrans`](wctrans.md).
 
-## Return Value
+## Return value
 
-The character *c*, after **towctrans** used the transform rule in *category*.
+The character *`c`*, after **`towctrans`** used the transform rule in *`category`*.
 
 ## Remarks
 
-The value of *category* must have been returned by an earlier successful call to [wctrans](wctrans.md).
+The value of *`category`* must have been returned by an earlier successful call to [`wctrans`](wctrans.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**towctrans**|\<wctype.h>|
+| Routine | Required header |
+|---|---|
+| **`towctrans`** | \<wctype.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
-See **wctrans** for a sample that uses **towctrans**.
+See `wctrans` for a sample that uses **`towctrans`**.
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+[Data conversion](../data-conversion.md)

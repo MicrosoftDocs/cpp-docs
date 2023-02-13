@@ -85,7 +85,7 @@ The code shown below provides a generic function to handle the creation and init
 
 [!code-cpp[NVC_ATL_COM#34](../../atl/codesnippet/cpp/ccomenumonstl-class_1.h)]
 
-This template function can be used to implement the `_NewEnum` property of a collection interface as shown below:
+This function template can be used to implement the `_NewEnum` property of a collection interface as shown below:
 
 [!code-cpp[NVC_ATL_COM#35](../../atl/codesnippet/cpp/ccomenumonstl-class_2.h)]
 

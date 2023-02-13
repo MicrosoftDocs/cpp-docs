@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package"
 title: "Deploy an App By Using the Redistributable Package (C++)"
-ms.date: 06/28/2022
+ms.date: 01/13/2023
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
 ms.custom: intro-deployment
@@ -33,6 +33,8 @@ You must have these components to complete this walkthrough:
     mkdir "C:\Program Files\MyMFCApp"
     copy MyMFCApp.exe "C:\Program Files\MyMFCApp"
     ```
+
+   You can apply command-line options to the Redistributable executable in your batch file. For more information, see [Command-line options for the Redistributable packages](./redistributing-visual-cpp-files.md#command-line-options-for-the-redistributable-packages).
 
 1. Create a self-extracting setup file:
 
@@ -81,7 +83,7 @@ You must have these components to complete this walkthrough:
       The self-extracting setup file installs the app that's in the folder you specified in `setup.bat`. The app should run successfully because the Microsoft Visual C++ Redistributable Package installer is included in the self-extracting setup file.
 
       > [!IMPORTANT]
-      > To determine which version of the runtime is installed, the installer checks the registry key `\HKLM\SOFTWARE\Microsoft\VisualStudio\<version>\VC\Runtimes\<platform>\Version`. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
+      > To determine which version of the runtime is installed, the installer checks the registry key `\HKLM\SOFTWARE\Microsoft\VisualStudio\<version>\VC\Runtimes\<platform>\Version`. (The `<version>` value used for Visual Studio 2015, 2017, 2019, and 2022 is 14.0.) If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
 
 ## See also
 

@@ -69,7 +69,7 @@ At the point of the full definition of the class X, the behavior is the same as 
 The following two code examples have identical meaning and effect. The first example uses a partial class and the second example doesn't.
 
 [!code-cpp[cx_partial#05](../cppcx/codesnippet/CPP/partialclassexample/class1.h#05)]
-
+&nbsp;
 [!code-cpp[cx_partial#06](../cppcx/codesnippet/CPP/partialclassexample/class1.h#06)]
 
 ## Templates
@@ -87,7 +87,7 @@ The **`partial`** keyword is supported only in combination with the **`ref class
 The following example defines the `Address` class across two code files. The designer modifies `Address.details.h` and you modify `Address.h`. Only the class definition in the first file uses the **`partial`** keyword.
 
 [!code-cpp[cx_partial#07](../cppcx/codesnippet/CPP/partialclassexample/address.details.h#07)]
-
+&nbsp;
 [!code-cpp[cx_partial#09](../cppcx/codesnippet/CPP/partialclassexample/address.h#09)]
 
 ## See also

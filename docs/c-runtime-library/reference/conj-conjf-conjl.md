@@ -10,7 +10,7 @@ f1_keywords: ["conj", "conjf", "conjl", "complex/conj", "complex/conjf", "comple
 helpviewer_keywords: ["conj function", "conjf function", "conjl function"]
 ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6
 ---
-# conj, conjf, conjl
+# `conj`, `conjf`, `conjl`
 
 Retrieves the complex conjugate of a complex number.
 
@@ -37,34 +37,34 @@ _Lcomplex conjl(
 
 ### Parameters
 
-*z*\
+*`z`*\
 A complex number.
 
-## Return Value
+## Return value
 
-The complex conjugate  of *z*.  The result has the same real and imaginary part as *z*, but with the opposite sign.
+The complex conjugate  of *`z`*.  The result has the same real and imaginary part as *`z`*, but with the opposite sign.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **conj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **conj** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **`conj`** that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`conj`** always takes and returns a `_Dcomplex` value.
 
-If you use the \<tgmath.h> `conj()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `conj()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**conj**, **conjf**, **conjl**|\<complex.h>|\<ccomplex>|
-|**conj** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`conj`**, **`conjf`**, **`conjl`** | \<complex.h> | \<ccomplex> |
+| **`conj`** macro | \<tgmath.h> |  |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`norm`, `normf`, `norml`](norm-normf-norml1.md)\
+[`creal`, `crealf`, `creall`](creal-crealf-creall.md)\
+[`cproj`, `cprojf`, `cprojl`](cproj-cprojf-cprojl.md)\
+[`cimag`, `cimagf`, `cimagl`](cimag-cimagf-cimagl.md)\
+[`carg`, `cargf`, `cargl`](carg-cargf-cargl.md)\
+[`cabs`, `cabsf`, `cabsl`](cabs-cabsf-cabsl.md)

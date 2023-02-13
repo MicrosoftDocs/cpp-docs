@@ -575,7 +575,7 @@ items:
       items: 
         - name: SQL in ODBC
           href: ../data/odbc/sql.md
-        - name: "SQL: Customizing Your recordset’s SQL statement (ODBC)"
+        - name: "SQL: Customizing Your recordset's SQL statement (ODBC)"
           href: ../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md
         - name: "SQL: SQL and C++ data types (ODBC)"
           href: ../data/odbc/sql-sql-and-cpp-data-types-odbc.md

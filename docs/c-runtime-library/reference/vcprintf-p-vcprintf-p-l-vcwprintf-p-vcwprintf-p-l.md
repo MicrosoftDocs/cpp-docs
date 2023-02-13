@@ -6,10 +6,10 @@ api_name: ["_vcprintf_p", "_vcwprintf_p_l", "_vcprintf_p_l", "_vcwprintf_p"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["vcwprintf_p", "vcprintf_p_l", "_vcprintf_p", "_vcprintf_p_l", "vcwprintf_p_l", "vcprintf_p", "_vcwprintf_p", "_vcwprintf_p_l"]
+f1_keywords: ["CONIO/_vcprintf_p", "CONIO/_vcprintf_p_l", "CORECRT_WCONIO/_vcwprintf_p", "CORECRT_WCONIO/_vcwprintf_p_l", "TCHAR/_vtcprintf_p", "TCHAR/_vtcprintf_p_l", "_vcprintf_p", "_vcprintf_p_l", "_vcwprintf_p", "_vcwprintf_p_l", "_vtcprintf_p", "_vtcprintf_p_l"]
 helpviewer_keywords: ["_vtcprintf_p_l function", "vcprintf_p_l function", "_vcprintf_p_l function", "vtcprintf_p_l function", "vcprintf_p function", "_vcwprintf_p function", "_vcprintf_p function", "vcwprintf_p function", "vcwprintf_p_l function", "vtcprintf_p function", "_vcwprintf_p_l function", "_vtcprintf_p function"]
 ---
-# _vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
+# `_vcprintf_p`, `_vcprintf_p_l`, `_vcwprintf_p`, `_vcwprintf_p_l`
 
 Writes formatted output to the console by using a pointer to a list of arguments, and supports positional parameters in the format string.
 
@@ -41,51 +41,51 @@ int _vcwprintf_p_l(
 
 ### Parameters
 
-*format*<br/>
+*`format`*\
 The format specification.
 
-*argptr*<br/>
+*`argptr`*\
 A pointer to a list of arguments.
 
-*locale*<br/>
+*`locale`*\
 The locale to use.
 
-For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+For more information, see [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md).
 
-## Return Value
+## Return value
 
-The number of characters that are written, or a negative value if an output error occurs. If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and -1 is returned.
+The number of characters that are written, or a negative value if an output error occurs. If *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and -1 is returned.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, and then uses the **_putch** function to format and write the given data to the console. (**_vcwprintf_p** uses **_putwch** instead of **_putch**. **_vcwprintf_p** is the wide-character version of **_vcprintf_p**. It takes a wide-character string as an argument.)
+Each of these functions takes a pointer to an argument list, and then uses the `_putch` function to format and write the given data to the console. (**`_vcwprintf_p`** uses `_putwch` instead of `_putch`. **`_vcwprintf_p`** is the wide-character version of **`_vcprintf_p`**. It takes a wide-character string as an argument.)
 
-The versions of these functions that have the **_l** suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
+The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
 
-Each *argument* (if any) is converted and is output according to the corresponding format specification in *format*. The format specification supports positional parameters so that you can specify the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format specification supports positional parameters so that you can specify the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../printf-p-positional-parameters.md).
 
-These functions do not translate line-feed characters into carriage return-line feed (CR-LF) combinations when they are output.
+These functions don't translate line-feed characters on output into carriage return-line feed (CR-LF) combinations.
 
 > [!IMPORTANT]
-> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Ensure that *`format`* is not a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-These functions validate the input pointer and the format string. If *format* or *argument* is **NULL**, or if the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+These functions validate the input pointer and the format string. If *`format`* or *`argument`* is `NULL`, or if the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**_vtcprintf_p**|**_vcprintf_p**|**_vcprintf_p**|**_vcwprintf_p**|
-|**_vtcprintf_p_l**|**_vcprintf_p_l**|**_vcprintf_p_l**|**_vcwprintf_p_l**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vtcprintf_p` | **`_vcprintf_p`** | **`_vcprintf_p`** | **`_vcwprintf_p`** |
+| `_vtcprintf_p_l` | **`_vcprintf_p_l`** | **`_vcprintf_p_l`** | **`_vcwprintf_p_l`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_vcprintf_p**, **_vcprintf_p_l**|\<conio.h> and \<stdarg.h>|
-|**_vcwprintf_p**, **_vcwprintf_p_l**|\<conio.h> and \<stdarg.h>|
+| Routine | Required header |
+|---|---|
+| **`_vcprintf_p`**, **`_vcprintf_p_l`** | \<conio.h> and \<stdarg.h> |
+| **`_vcwprintf_p`**, **`_vcwprintf_p_l`** | \<conio.h> and \<stdarg.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 > [!IMPORTANT]
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with [`legacy_stdio_float_rounding.obj`](../link-options.md).
@@ -123,7 +123,7 @@ parameter 2 = 222; parameter 1 = one
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
-[printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
+[Console and port I/O](../console-and-port-i-o.md)\
+[`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
+[`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)\
+[printf_p Positional Parameters](../printf-p-positional-parameters.md)

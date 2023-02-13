@@ -11,11 +11,11 @@ A pointer to one type of value can be converted to a pointer to a different type
 
 A pointer to **`void`** can be converted to or from a pointer to any type, without restriction or loss of information. If the result is converted back to the original type, the original pointer is recovered.
 
-If a pointer is converted to another pointer with the same type but having different or additional qualifiers, the new pointer is the same as the old except for restrictions imposed by the new qualifier.
+If a pointer is converted to another pointer with the same type but having different or extra qualifiers, the new pointer is the same as the old except for restrictions imposed by the new qualifier.
 
 A pointer value can also be converted to an integral value. The conversion path depends on the size of the pointer and the size of the integral type, according to the following rules:
 
-- If the size of the pointer is greater than or equal to the size of the integral type, the pointer behaves like an unsigned value in the conversion, except that it cannot be converted to a floating value.
+- If the size of the pointer is greater than or equal to the size of the integral type, the pointer behaves like an unsigned value in the conversion, except that it can't be converted to a floating value.
 
 - If the pointer is smaller than the integral type, the pointer is first converted to a pointer with the same size as the integral type, then converted to the integral type.
 
@@ -23,9 +23,9 @@ Conversely, an integral type can be converted to a pointer type according to the
 
 - If the integral type is the same size as the pointer type, the conversion simply causes the integral value to be treated as a pointer (an unsigned integer).
 
-- If the size of the integral type is different from the size of the pointer type, the integral type is first converted to the size of the pointer, using the conversion paths given in the tables [Conversion from Signed Integral Types](../c-language/conversions-from-signed-integral-types.md) and [Conversion from Unsigned Integral Types](../c-language/conversions-from-unsigned-integral-types.md). It is then treated as a pointer value.
+- If the size of the integral type is different from the size of the pointer type, the integral type is first converted to the size of the pointer, using the conversion paths given in the tables [Conversion from Signed Integral Types](../c-language/conversions-from-signed-integral-types.md) and [Conversion from Unsigned Integral Types](../c-language/conversions-from-unsigned-integral-types.md). It's then treated as a pointer value.
 
-An integral constant expression with value 0 or such an expression cast to type **`void`** <strong>\*</strong> can be converted by a type cast, by assignment, or by comparison to a pointer of any type. This produces a null pointer that is equal to another null pointer of the same type, but this null pointer is not equal to any pointer to a function or to an object. Integers other than the constant 0 can be converted to pointer type, but the result is not portable.
+An integral constant expression with value 0 or such an expression cast to type `void*` can be converted by a type cast, by assignment, or by comparison to a pointer of any type. This operation produces a null pointer that's equal to another null pointer of the same type, but it isn't equal to any pointer to a function or to an object. Integers other than the constant 0 can be converted to pointer type, but the result isn't portable.
 
 ## See also
 

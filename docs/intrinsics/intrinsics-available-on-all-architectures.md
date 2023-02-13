@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Intrinsics available on all architectures"
 title: "Intrinsics available on all architectures"
-ms.date: 02/04/2021
+ms.date: 08/30/2022
 helpviewer_keywords: ["cl.exe compiler, intrinsics"]
 ---
 # Intrinsics available on all architectures
@@ -152,6 +152,13 @@ The following UCRT functions have intrinsic forms on all architectures:
 | [`wcscpy`](../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md) | string.h |
 | [`wcslen`](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md) | string.h |
 | [`_wcsset`](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) | string.h |
+
+In Visual Studio 2022 version 17.2 and later, these functions have intrinsic forms on x64 and ARM64 platforms:
+
+| Intrinsic | Header |
+|--|--|
+| [`log2`](../c-runtime-library/reference/log2-log2f-log2l.md) | math.h |
+| [`log2f`](../c-runtime-library/reference/log2-log2f-log2l.md) | math.h |
 
 ## See also
 

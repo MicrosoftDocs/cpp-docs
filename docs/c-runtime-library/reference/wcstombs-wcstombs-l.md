@@ -3,10 +3,10 @@ description: "Learn more about: wcstombs, _wcstombs_l"
 title: "wcstombs, _wcstombs_l"
 ms.date: "4/2/2020"
 api_name: ["wcstombs", "_wcstombs_l", "_o__wcstombs_l", "_o_wcstombs"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["wcstombs", "_wcstombs_l"]
+f1_keywords: ["STDLIB/wcstombs", "STDLIB/_wcstombs_l", "wcstombs", "_wcstombs_l"]
 helpviewer_keywords: ["_wcstombs_l function", "wcstombs function", "string conversion, wide characters", "wide characters, converting", "wcstombs_l function", "characters, converting", "string conversion, multibyte character strings"]
 ---
 # `wcstombs`, `_wcstombs_l`
@@ -56,34 +56,34 @@ The maximum number of bytes that can be stored in the multibyte output string.
 *`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can’t convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets **`errno`** to **`EILSEQ`**.
+If **`wcstombs`** successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *`mbstr`* argument is `NULL`, **`wcstombs`** returns the required size in bytes of the destination string. If **`wcstombs`** encounters a wide character it can't convert to a multibyte character, it returns -1 cast to type **`size_t`** and sets `errno` to `EILSEQ`.
 
 ## Remarks
 
-The **`wcstombs`** function converts the wide-character string pointed to by *`wcstr`* to the corresponding multibyte characters and stores the results in the *`mbstr`* array. The *`count`* parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of *`mbstr`*). In general, it isn't known how many bytes will be required when converting a wide-character string. Some wide characters will require only one byte in the output string; others require two. If there are two bytes in the multibyte output string for every wide character in the input string (including the wide character `NULL`), the result is guaranteed to fit.
+The **`wcstombs`** function converts the wide-character string pointed to by *`wcstr`* to the corresponding multibyte characters and stores the results in the *`mbstr`* array. The *`count`* parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of *`mbstr`*). In general, it isn't known how many bytes will be required when converting a wide-character string. Some wide characters will require only a single byte in the output string; others require 2 bytes. If there are 2 bytes in the multibyte output string for every wide character in the input string (including the wide character `NULL`), the result is guaranteed to fit.
 
 If **`wcstombs`** encounters the wide-character `NULL` character (L'\0') either before or when *`count`* occurs, it converts it to an 8-bit 0 and stops. Thus, the multibyte character string at *`mbstr`* is null-terminated only if **`wcstombs`** encounters a wide-character `NULL` character during conversion. If the sequences pointed to by *`wcstr`* and *`mbstr`* overlap, the behavior of **`wcstombs`** is undefined.
 
-If the *`mbstr`* argument is **`NULL`**, **`wcstombs`** returns the required size in bytes of the destination string.
+If the *`mbstr`* argument is `NULL`, **`wcstombs`** returns the required size in bytes of the destination string.
 
-**`wcstombs`** validates its parameters. If *`wcstr`* is **`NULL`**, or if *`count`* is greater than **`INT_MAX`**, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **`errno`** to **`EINVAL`** and returns -1.
+**`wcstombs`** validates its parameters. If *`wcstr`* is `NULL`, or if *`count`* is greater than `INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
 
-**`wcstombs`** uses the current locale for any locale-dependent behavior; **`_wcstombs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**`wcstombs`** uses the current locale for any locale-dependent behavior; **`_wcstombs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`wcstombs`**|`<stdlib.h>`|
-|**`_wcstombs_l`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`wcstombs`** | `<stdlib.h>` |
+| **`_wcstombs_l`** | `<stdlib.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -129,8 +129,8 @@ Convert wide-character string:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Locale](../../c-runtime-library/locale.md)\
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
 [`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
 [`mbstowcs`, `_mbstowcs_l`](mbstowcs-mbstowcs-l.md)\
 [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\

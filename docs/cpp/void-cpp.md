@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: void (C++)"
 title: "void (C++)"
-ms.date: 10/15/2021
+ms.date: 12/13/2022
 f1_keywords: ["void_cpp"]
 helpviewer_keywords: ["void keyword [C++]", "functions [C++], void", "pointers, void"]
 ms.assetid: d203edba-38e6-4056-8b89-011437351057
@@ -16,16 +16,26 @@ In C++, a **`void`** pointer can point to a free function (a function that's not
 
 You can't declare a variable of type **`void`**.
 
+As a matter of style, the C++ Core Guidelines recommend you don't use **`void`** to specify an empty formal parameter list. For more information, see [C++ Core Guidelines NL.25: Don't use `void` as an argument type](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#nl25-dont-use-void-as-an-argument-type).
+
 ## Example
 
 ```cpp
 // void.cpp
+
+void return_nothing()
+{
+   // A void function can have a return with no argument,
+   // or no return statement.
+}
+
 void vobject;   // C2182
 void *pv;   // okay
 int *pint; int i;
-int main() {
+int main()
+{
    pv = &i;
-   // Cast optional in C required in C++
+   // Cast is optional in C, required in C++
    pint = (int *)pv;
 }
 ```

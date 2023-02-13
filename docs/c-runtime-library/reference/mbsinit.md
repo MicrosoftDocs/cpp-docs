@@ -10,7 +10,7 @@ f1_keywords: ["mbsinit"]
 helpviewer_keywords: ["mbsinit function"]
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034
 ---
-# mbsinit
+# `mbsinit`
 
 Tracks the state of a multibyte character conversion.
 
@@ -24,16 +24,16 @@ int mbsinit(
 
 ### Parameters
 
-*ps*<br/>
-A pointer to an [mbstate_t](../../c-runtime-library/standard-types.md) variable.
+*`ps`*\
+A pointer to an [`mbstate_t`](../standard-types.md) variable.
 
-## Return Value
+## Return value
 
-Nonzero if *ps* is **NULL** or if not in the middle of a conversion.
+Nonzero if *`ps`* is `NULL` or if not in the middle of a conversion.
 
 ## Remarks
 
-When using one of the ANSI functions that takes an **mbstate_t** pointer, passing the address of your **mbstate_t** will return information about whether the last byte in the buffer was converted.
+When using one of the ANSI functions that takes an `mbstate_t` pointer, passing the address of your `mbstate_t` will return information about whether the last byte in the buffer was converted.
 
 The appropriate code page needs to be installed to support your multibyte characters.
 
@@ -131,7 +131,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Locale set to: "Japanese_Japan.932"
@@ -145,4 +145,4 @@ WC String: AaBbCcxXyYzZ
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+[Byte classification](../byte-classification.md)

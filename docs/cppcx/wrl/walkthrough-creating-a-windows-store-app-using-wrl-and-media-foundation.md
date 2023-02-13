@@ -86,7 +86,7 @@ You can usually use C++/CX to create Windows Runtime components. However, someti
 
    [!code-cpp[wrl-media-capture#6](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_6.cpp)]
 
-1. In the project’s **Property Pages** dialog box, set the following **Linker** properties.
+1. In the project's **Property Pages** dialog box, set the following **Linker** properties.
 
    1. Under **Input**, for the **Module Definition File**, specify `GrayScaleTransform.def`.
 

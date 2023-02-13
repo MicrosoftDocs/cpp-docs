@@ -43,7 +43,7 @@ The object whose value is copied or moved into `val`.
 
 ### Remarks
 
-For complex types, `exchange` avoids copying the old value when a move constructor is available, avoids copying the new value if it’s a temporary object or is moved, and accepts any type as the new value, using any available converting assignment operator. The exchange function is different from [`std::swap`](../standard-library/algorithm-functions.md#swap) in that the left argument isn't moved or copied to the right argument.
+For complex types, `exchange` avoids copying the old value when a move constructor is available, avoids copying the new value if it's a temporary object or is moved, and accepts any type as the new value, using any available converting assignment operator. The exchange function is different from [`std::swap`](../standard-library/algorithm-functions.md#swap) in that the left argument isn't moved or copied to the right argument.
 
 ### Example
 

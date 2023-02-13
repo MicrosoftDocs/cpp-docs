@@ -6,12 +6,12 @@ api_name: ["vswscanf_s", "vsscanf_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["vsscanf_s", "vswscanf_s", "_vstscanf_s"]
+f1_keywords: ["STDIO/vsscanf_s", "CORECRT_WSTDIO/vswscanf_s", "TCHAR/_vstscanf_s", "vsscanf_s", "vswscanf_s", "_vstscanf_s"]
 ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
 ---
-# vsscanf_s, vswscanf_s
+# `vsscanf_s`, `vswscanf_s`
 
-Reads formatted data from a string. These versions of [vsscanf, vswscanf](vsscanf-vswscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data from a string. These versions of [`vsscanf`, `vswscanf`](vsscanf-vswscanf.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -30,52 +30,52 @@ int vswscanf_s(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Stored data
 
-*format*<br/>
-Format-control string. For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+*`format`*\
+Format-control string. For more information, see [Format specification fields: `scanf` and `wscanf` functions](../format-specification-fields-scanf-and-wscanf-functions.md).
 
-*arglist*<br/>
+*`arglist`*\
 Variable argument list.
 
-## Return Value
+## Return value
 
-Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion.
+Each of these functions returns the number of fields that are successfully converted and assigned. The return value doesn't include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.
 
-If *buffer* or *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *`buffer`* or *`format`* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
-For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **vsscanf_s** function reads data from *buffer* into the locations that are given by each argument in the *arglist* argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version **vsscanf**, a buffer size parameter is required when you use the type field characters **c**, **C**, **s**, **S**, or string-control sets that are enclosed in **[]**. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it.
+The **`vsscanf_s`** function reads data from *`buffer`* into the locations that are given by each argument in the *`arglist`* argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in *`format`*. Unlike the less secure version **`vsscanf`**, a buffer size parameter is required when you use the type field characters **c**, **C**, **s**, **S**, or string-control sets that are enclosed in **[]**. The buffer size in characters must be supplied as another parameter immediately after each buffer parameter that requires it.
 
-The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
+The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too large to fit in the buffer, nothing is written to that buffer.
 
-For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
+For more information, see [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../scanf-type-field-characters.md).
 
 > [!NOTE]
-> The size parameter is of type **`unsigned`**, not **size_t**.
+> The size parameter is of type **`unsigned`**, not `size_t`.
 
-The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the **scanf_s** function. If copying occurs between strings that overlap, the behavior is undefined.
+The *`format`* argument controls the interpretation of the input fields and has the same form and function as the *`format`* argument for the `scanf_s` function. If copying occurs between strings that overlap, the behavior is undefined.
 
-**vswscanf_s** is a wide-character version of **vsscanf_s**; the arguments to **vswscanf_s** are wide-character strings. **vsscanf_s** does not handle multibyte hexadecimal characters. **vswscanf_s** does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **vswscanf_s** and **vsscanf_s** behave identically.
+**`vswscanf_s`** is a wide-character version of **`vsscanf_s`**; the arguments to **`vswscanf_s`** are wide-character strings. **`vsscanf_s`** doesn't handle multibyte hexadecimal characters. **`vswscanf_s`** doesn't handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, **`vswscanf_s`** and **`vsscanf_s`** behave identically.
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**_vstscanf_s**|**vsscanf_s**|**vsscanf_s**|**vswscanf_s**|
+| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_vstscanf_s` | **`vsscanf_s`** | **`vsscanf_s`** | **`vswscanf_s`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**vsscanf_s**|\<stdio.h>|
-|**vswscanf_s**|\<stdio.h> or \<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`vsscanf_s`** | \<stdio.h> |
+| **`vswscanf_s`** | \<stdio.h> or \<wchar.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -131,9 +131,9 @@ Real:     = 15.000000
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vsscanf, vswscanf](vsscanf-vswscanf.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)\
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)\
+[`sscanf_s`, `_sscanf_s_l`, `swscanf_s`, `_swscanf_s_l`](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)\
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[`vsscanf`, `vswscanf`](vsscanf-vswscanf.md)

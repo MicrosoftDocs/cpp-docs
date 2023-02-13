@@ -3,33 +3,32 @@ description: "Learn more about: <iterator> functions"
 title: "<iterator> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
-ms.assetid: 4a57c9a3-7e36-411f-8655-e0be2eec88e7
 helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::begin [C++]", "std::cbegin [C++]", "std::cend [C++]", "std::distance [C++]", "std::end [C++]", "std::front_inserter [C++]", "std::inserter [C++]", "std::make_checked_array_iterator [C++]", "std::make_move_iterator [C++]", "std::make_unchecked_array_iterator [C++]", "std::next [C++]", "std::prev [C++]"]
 ---
 # `<iterator>` functions
 
-## <a name="advance"></a> advance
+## <a name="advance"></a> `advance`
 
 Increments an iterator by a specified number of positions.
 
 ```cpp
 template <class InputIterator, class Distance>
-    void advance(InputIterator& InIt, Distance Off);
+void advance(InputIterator& InIt, Distance Off);
 ```
 
 ### Parameters
 
-*InIt*\
+*`InIt`*\
 The iterator that is to be incremented and that must satisfy the requirements for an input iterator.
 
-*Off*\
+*`Off`*\
 An integral type that is convertible to the iterator's difference type and that specifies the number of increments the position of the iterator is to be advanced.
 
 ### Remarks
 
-The range advanced through must be nonsingular, where the iterators must be dereferenceable or past the end.
+The range must be nonsingular, where the iterators must be dereferenceable or past the end.
 
-If the `InputIterator` satisfies the requirements for a bidirectional iterator type, then *Off* may be negative. If `InputIterator` is an input or forward iterator type, *Off* must be nonnegative.
+If the `InputIterator` satisfies the requirements for a bidirectional iterator type, then *`Off`* may be negative. If `InputIterator` is an input or forward iterator type, *`Off`* must be nonnegative.
 
 The advance function has constant complexity when `InputIterator` satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.
 
@@ -42,33 +41,34 @@ The advance function has constant complexity when `InputIterator` satisfies the 
 #include <list>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   int i;
+    using namespace std;
 
-   list<int> L;
-   for ( i = 1 ; i < 9 ; ++i )
-   {
-      L.push_back ( i );
-   }
-   list <int>::iterator L_Iter, LPOS = L.begin ( );
+    list<int> L;
+    for (int i = 1; i < 9; ++i)
+    {
+        L.push_back(i);
+    }
+    list<int>::iterator LPOS = L.begin();
 
-   cout << "The list L is: ( ";
-   for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++)
-      cout << *L_Iter << " ";
-   cout << ")." << endl;
+    cout << "The list L is: ( ";
+    for (auto L_Iter = L.begin(); L_Iter != L.end(); L_Iter++)
+    {
+        cout << *L_Iter << " ";
+    }
+    cout << ")." << endl;
 
-   cout << "The iterator LPOS initially points to the first element: "
+    cout << "The iterator LPOS initially points to the first element: "
         << *LPOS << "." << endl;
 
-   advance ( LPOS , 4 );
-   cout << "LPOS is advanced 4 steps forward to point"
+    advance(LPOS, 4);
+    cout << "LPOS is advanced 4 steps forward to point"
         << " to the fifth element: "
         << *LPOS << "." << endl;
 
-   advance ( LPOS , -3 );
-   cout << "LPOS is moved 3 steps back to point to the "
+    advance(LPOS, -3);
+    cout << "LPOS is moved 3 steps back to point to the "
         << "2nd element: " << *LPOS << "." << endl;
 }
 ```
@@ -80,27 +80,27 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.
 ```
 
-## <a name="back_inserter"></a> back_inserter
+## <a name="back_inserter"></a> `back_inserter`
 
 Creates an iterator that can insert elements at the back of a specified container.
 
 ```cpp
 template <class Container>
-back_insert_iterator<Container> back_inserter(Container& _Cont);
+back_insert_iterator<Container> back_inserter(Container& Cont);
 ```
 
 ### Parameters
 
-*_Cont*\
+*`Cont`*\
 The container into which the back insertion is to be executed.
 
 ### Return Value
 
-A `back_insert_iterator` associated with the container object *_Cont*.
+A `back_insert_iterator` associated with the container object *`Cont`*.
 
 ### Remarks
 
-Within the C++ Standard Library, the argument must refer to one of the three sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md), or [vector Class](../standard-library/vector-class.md).
+Within the C++ Standard Library, the argument must refer to one of the three sequence containers that have the member function `push_back`: [`deque` Class](../standard-library/deque-class.md), [`list` Class](../standard-library/list-class.md), or [`vector` Class](../standard-library/vector-class.md).
 
 ### Example
 
@@ -111,38 +111,40 @@ Within the C++ Standard Library, the argument must refer to one of the three seq
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   int i;
+    using namespace std;
 
-   vector<int> vec;
-   for ( i = 0 ; i < 3 ; ++i )
-   {
-      vec.push_back ( i );
-   }
+    vector<int> vec;
+    for (int i = 0; i < 3; ++i)
+    {
+        vec.push_back(i);
+    }
 
-   vector <int>::iterator vIter;
-   cout << "The initial vector vec is: ( ";
-   for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++)
-      cout << *vIter << " ";
-   cout << ")." << endl;
+    cout << "The initial vector vec is: ( ";
+    for (auto vIter = vec.begin(); vIter != vec.end(); vIter++)
+    {
+        cout << *vIter << " ";
+    }
+    cout << ")." << endl;
 
-   // Insertions can be done with template function
-   back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 30;
-   backiter++;
-*backiter = 40;
+    // Insertions can be done with template function
+    back_insert_iterator<vector<int> > backiter(vec);
+    *backiter = 30;
+    backiter++;
+    *backiter = 40;
 
-   // Alternatively, insertions can be done with the
-   // back_insert_iterator member function
-   back_inserter ( vec ) = 500;
-   back_inserter ( vec ) = 600;
+    // Alternatively, insertions can be done with the
+    // back_insert_iterator member function
+    back_inserter(vec) = 500;
+    back_inserter(vec) = 600;
 
-   cout << "After the insertions, the vector vec is: ( ";
-   for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++ )
-      cout << *vIter << " ";
-   cout << ")." << endl;
+    cout << "After the insertions, the vector vec is: ( ";
+    for (auto vIter = vec.begin(); vIter != vec.end(); vIter++)
+    {
+        cout << *vIter << " ";
+    }
+    cout << ")." << endl;
 }
 ```
 
@@ -151,7 +153,7 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
 ```
 
-## <a name="begin"></a> begin
+## <a name="begin"></a> `begin`
 
 Retrieves an iterator to the first element in a specified container.
 
@@ -170,17 +172,17 @@ Ty *begin(Ty (& array)[Size]);
 
 ### Parameters
 
-*cont*\
+*`cont`*\
 A container.
 
-*array*\
+*`array`*\
 An array of objects of type `Ty`.
 
 ### Return Value
 
 The first two template functions return `cont.begin()`. The first function is non-constant; the second one is constant.
 
-The third template function returns *array*.
+The third template function returns *`array`*.
 
 ### Example
 
@@ -194,22 +196,22 @@ We recommend that you use this template function in place of container member `b
 #include <iterator>
 #include <vector>
 
-template <typename C> void reverse_sort(C& c) {
-    using std::begin;
-    using std::end;
-
-    std::sort(begin(c), end(c), std::greater<>());
+template <typename C> void reverse_sort(C& c)
+{
+    std::sort(std::begin(c), std::end(c), std::greater<>());
 }
 
-template <typename C> void print(const C& c) {
-    for (const auto& e : c) {
+template <typename C> void print(const C& c)
+{
+    for (const auto& e : c)
+    {
         std::cout << e << " ";
     }
-
     std::cout << "\n";
 }
 
-int main() {
+int main() 
+{
     std::vector<int> v = { 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1 };
 
     print(v);
@@ -234,7 +236,7 @@ int main() {
 160 106 80 70 53 40 35 23 20 16 10 8 5 4 2 1
 ```
 
-The function `reverse_sort` supports containers of any kind, in addition to regular arrays, because it calls the non-member version of `begin()`. If `reverse_sort` were coded to use the container member `begin()`:
+The function `reverse_sort` supports containers of any kind, in addition to regular arrays, because it calls the non-member version of `begin()`. Coding `reverse_sort` to use the container member `begin()`:
 
 ```cpp
 template <typename C>
@@ -247,15 +249,15 @@ void reverse_sort(C& c) {
 }
 ```
 
-Then sending an array to it would cause this compiler error:
+Then sending an array to it, causes this compiler error:
 
 ```Output
 error C2228: left of '.begin' must have class/struct/union
 ```
 
-## <a name="cbegin"></a> cbegin
+## <a name="cbegin"></a> `cbegin`
 
-Retrieves a const iterator to the first element in a specified container.
+Retrieves a const (read-only) iterator to the first element in a specified container.
 
 ```cpp
 template <class Container>
@@ -265,8 +267,8 @@ auto cbegin(const Container& cont)
 
 ### Parameters
 
-*cont*\
-A container or initializer_list.
+*`cont`*\
+A container or `initializer_list`.
 
 ### Return Value
 
@@ -274,9 +276,9 @@ A constant `cont.begin()`.
 
 ### Remarks
 
-This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
+This function works with all C++ Standard Library containers and with [`initializer_list`](../standard-library/initializer-list-class.md).
 
-You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -286,9 +288,9 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a> cend
+## <a name="cend"></a> `cend`
 
-Retrieves a const iterator to the element that follows the last element in the specified container.
+Retrieves a const (read-only) iterator to the element that follows the last element in the specified container.
 
 ```cpp
 template <class Container>
@@ -298,8 +300,8 @@ auto cend(const Container& cont)
 
 ### Parameters
 
-*cont*\
-A container or initializer_list.
+*`cont`*\
+A container or `initializer_list`.
 
 ### Return Value
 
@@ -307,9 +309,9 @@ A constant `cont.end()`.
 
 ### Remarks
 
-This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
+This function works with all C++ Standard Library containers and with [`initializer_list`](../standard-library/initializer-list-class.md).
 
-You can use this member function in place of the [end()](../standard-library/iterator-functions.md#end) template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the [`end()`](../standard-library/iterator-functions.md#end) template function to guarantee that the return value is `const_iterator`. Typically, it's used with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -319,28 +321,152 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="crbegin"></a> crbegin
+## <a name="crbegin"></a> `crbegin`
+
+Get a reverse read-only iterator to the elements of the container, starting at the end of the container.
 
 ```cpp
 template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
 ```
 
-## <a name="crend"></a> crend
+### Parameters
+
+*`C`*\
+The type of the container.
+
+*`c`*\
+A container instance.
+
+### Return value
+
+This iterator returns the elements of the container in reverse order, starting at the end of the container.
+
+:::image type="content" source="media/crbegin-crend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled crend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled crbegin().":::
+
+### Example: `crbegin`
+
+```cpp
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v{10, 20, 30};
+    for (auto i = std::crbegin(v); i != std::crend(v); ++i)
+    {
+        std::cout << *i << ' '; // outputs 30 20 10
+    }
+    // v[1] = 100; // error because the iterator is const
+}
+```
+
+```output
+30 20 10
+```
+
+## <a name="crend"></a> `crend`
+
+Get the sentinel at the end of a read-only reversed sequence of elements.
 
 ```cpp
 template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
 ```
 
-## <a name="data"></a> data
+### Parameters
+
+*`C`*\
+The type of the container.
+
+*`c`*\
+A container instance.
+
+### Return value
+
+The sentinel follows the last element in a reversed view of the container.
+
+:::image type="content" source="media/crbegin-crend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled crend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled crbegin().":::
+
+### `crend`example
 
 ```cpp
-template <class C> constexpr auto data(C& c) -> decltype(c.data());
-template <class C> constexpr auto data(const C& c) -> decltype(c.data());
-template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
-template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v{10, 20, 30};
+    auto vi = std::crend(v);
+    --vi; // get off the sentinel and onto the last element in the reversed range
+    std::cout << *vi; // outputs 10
+    // vi[0] = 300; // error because the iterator is const
+}
 ```
 
-## <a name="distance"></a> distance
+```output
+10
+```
+
+## <a name="data"></a> `data`
+
+Get a pointer to the first element in the container.
+
+```cpp
+1) template <class C> constexpr auto data(C& c) -> decltype(c.data());
+2) template <class C> constexpr auto data(const C& c) -> decltype(c.data());
+3) template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
+4) template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
+```
+
+### Parameters
+
+*`C`*\
+The type of the container.
+
+*`c`*\
+An instance of a container.
+
+*`E`*\
+The element type of the initializer list.
+
+*`il`*\
+An initializer list.
+
+*`N`*\
+The number of elements in the array.
+
+*`T`*\
+The type of the data in the array.
+
+### Return value
+
+1, 2\) A pointer, based on the type of the container, to the first element. For example, if the container is a vector of integers, the type of the return value is an `int *`.
+
+3\) A pointer to the first element as an array.
+
+4\) A pointer to the first element of the initializer list.
+
+### Example `data`
+
+```cpp
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v{ 10, 20, 30 };
+    std::string src{ "a string" };
+
+    const char *charPtr = std::data(src);
+    int* intPtr = std::data(v);
+    std::cout << charPtr << ", " << *intPtr << '\n'; // a string, 10
+}
+```
+
+```output
+a string, 10
+```
+
+## <a name="distance"></a> `distance`
 
 Determines the number of increments between the positions addressed by two iterators.
 
@@ -351,15 +477,15 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### Parameters
 
-*first*\
+*`first`*\
 The first iterator whose distance from the second is to be determined.
 
-*last*\
+*`last`*\
 The second iterator whose distance from the first is to be determined.
 
 ### Return Value
 
-The number of times that *first* must be incremented until it equal *last*.
+The number of times that *`first`* must be incremented until it equals *`last`*.
 
 ### Remarks
 
@@ -374,34 +500,35 @@ The distance function has constant complexity when `InputIterator` satisfies the
 #include <list>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   int i;
+    using namespace std;
 
-   list<int> L;
-   for ( i = -1 ; i < 9 ; ++i )
-   {
-      L.push_back ( 2 * i );
-   }
-   list <int>::iterator L_Iter, LPOS = L.begin ( );
+    list<int> L;
+    for (int i = -1; i < 9; ++i)
+    {
+        L.push_back(2 * i);
+    }
+    list <int>::iterator L_Iter, LPOS = L.begin();
 
-   cout << "The list L is: ( ";
-   for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
-      cout << *L_Iter << " ";
-   cout << ")." << endl;
+    cout << "The list L is: ( ";
+    for (L_Iter = L.begin(); L_Iter != L.end(); L_Iter++)
+    {
+        cout << *L_Iter << " ";
+    }
+    cout << ")." << endl;
 
-   cout << "The iterator LPOS initially points to the first element: "
-        << *LPOS << "." << endl;
+    cout << "The iterator LPOS initially points to the first element: "
+         << *LPOS << "." << endl;
 
-   advance ( LPOS , 7 );
-   cout << "LPOS is advanced 7 steps forward to point "
+    advance(LPOS, 7);
+    cout << "LPOS is advanced 7 steps forward to point "
         << " to the eighth element: "
         << *LPOS << "." << endl;
 
-   list<int>::difference_type Ldiff ;
-   Ldiff = distance ( L.begin ( ) , LPOS );
-   cout << "The distance from L.begin( ) to LPOS is: "
+    list<int>::difference_type Ldiff;
+    Ldiff = distance(L.begin(), LPOS);
+    cout << "The distance from L.begin( ) to LPOS is: "
         << Ldiff << "." << endl;
 }
 ```
@@ -413,7 +540,7 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
 ```
 
-## <a name="empty"></a> empty
+## <a name="empty"></a> `empty`
 
 ```cpp
 template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());
@@ -421,7 +548,51 @@ template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
 template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
 ```
 
-## <a name="end"></a> end
+### Parameters
+
+*`C`*\
+The type of the container.
+
+*`c`*\
+An instance of a container.
+
+*`E`*\
+The element type of the initializer list.
+
+*`il`*\
+An initializer list.
+
+*`N`*\
+The number of elements in the array.
+
+*`T`*\
+The type of the data in the array.
+
+### Return value
+
+Returns `true` if the container has no elements; otherwise `false.`
+
+### Example
+
+```cpp
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v{ 10,20,30 };
+    std::vector<int> v2;
+
+    std::cout << std::boolalpha << std::empty(v); // outputs false
+    std::cout << std::boolalpha << ", " << std::empty(v2); // outputs true
+}
+```
+
+```output
+false, true
+```
+
+## <a name="end"></a> `end`
 
 Retrieves an iterator to the element that follows the last element in the specified container.
 
@@ -440,10 +611,10 @@ Ty *end(Ty (& array)[Size]);
 
 ### Parameters
 
-*cont*\
+*`cont`*\
 A container.
 
-*array*\
+*`array`*\
 An array of objects of type `Ty`.
 
 ### Return Value
@@ -454,25 +625,25 @@ The third template function returns `array + Size`.
 
 ### Remarks
 
-For a code example, see [begin](../standard-library/iterator-functions.md#begin).
+For a code example, see [`begin`](../standard-library/iterator-functions.md#begin).
 
-## <a name="front_inserter"></a> front_inserter
+## <a name="front_inserter"></a> `front_inserter`
 
 Creates an iterator that can insert elements at the front of a specified container.
 
 ```cpp
 template <class Container>
-front_insert_iterator<Container> front_inserter(Container& _Cont);
+front_insert_iterator<Container> front_inserter(Container& Cont);
 ```
 
 ### Parameters
 
-*_Cont*\
+*`Cont`*\
 The container object whose front is having an element inserted.
 
 ### Return Value
 
-A `front_insert_iterator` associated with the container object *_Cont*.
+A `front_insert_iterator` associated with the container object *`Cont`*.
 
 ### Remarks
 
@@ -489,34 +660,36 @@ Within the C++ Standard Library, the argument must refer to one of the two seque
 #include <list>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   int i;
-   list <int>::iterator L_Iter;
+    using namespace std;
 
-   list<int> L;
-   for ( i = -1 ; i < 9 ; ++i )
-   {
-      L.push_back ( i );
-   }
+    list<int> L;
+    for (int i = -1; i < 9; ++i)
+    {
+        L.push_back(i);
+    }
 
-   cout << "The list L is:\n ( ";
-   for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++)
-      cout << *L_Iter << " ";
-   cout << ")." << endl;
+    cout << "The list L is:\n ( ";
+    for (auto L_Iter = L.begin(); L_Iter != L.end(); L_Iter++)
+    {
+        cout << *L_Iter << " ";
+    }
+    cout << ")." << endl;
 
-   // Using the template function to insert an element
-   front_insert_iterator< list < int> > Iter(L);
-*Iter = 100;
+    // Using the template function to insert an element
+    front_insert_iterator<list <int>> Iter(L);
+    *Iter = 100;
 
-   // Alternatively, you may use the front_insert member function
-   front_inserter ( L ) = 200;
+    // Alternatively, you may use the front_insert member function
+    front_inserter(L) = 200;
 
-   cout << "After the front insertions, the list L is:\n ( ";
-   for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++)
-      cout << *L_Iter << " ";
-   cout << ")." << endl;
+    cout << "After the front insertions, the list L is:\n ( ";
+    for (auto L_Iter = L.begin(); L_Iter != L.end(); L_Iter++)
+    {
+        cout << *L_Iter << " ";
+    }
+    cout << ")." << endl;
 }
 ```
 
@@ -527,29 +700,29 @@ After the front insertions, the list L is:
 ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-## <a name="inserter"></a> inserter
+## <a name="inserter"></a> `inserter`
 
-A helper template function that lets you use `inserter(_Cont, _Where)` instead of `insert_iterator<Container>(_Cont, _Where)`.
+A helper template function that lets you use `inserter(Cont, Where)` instead of `insert_iterator<Container>(Cont, Where)`.
 
 ```cpp
 template <class Container>
 insert_iterator<Container>
 inserter(
-    Container& _Cont,
-    typename Container::iterator _Where);
+    Container& Cont,
+    typename Container::iterator Where);
 ```
 
 ### Parameters
 
-*_Cont*\
+*`Cont`*\
 The container to which new elements are to be added.
 
-*_Where*\
+*`Where`*\
 An iterator locating the point of insertion.
 
 ### Remarks
 
-The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator)`<Container>(_Cont, _Where)`.
+The template function returns [`insert_iterator`](../standard-library/insert-iterator-class.md#insert_iterator)`<Container>(Cont, Where)`.
 
 ### Example
 
@@ -560,34 +733,36 @@ The template function returns [insert_iterator](../standard-library/insert-itera
 #include <list>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   int i;
-   list <int>::iterator L_Iter;
+    using namespace std;
 
-   list<int> L;
-   for (i = 2 ; i < 5 ; ++i )
-   {
-      L.push_back ( 10 * i );
-   }
+    list<int> L;
+    for (int i = 2; i < 5; ++i)
+    {
+        L.push_back(10 * i);
+    }
 
-   cout << "The list L is:\n ( ";
-   for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
-      cout << *L_Iter << " ";
-   cout << ")." << endl;
+    cout << "The list L is:\n ( ";
+    for (auto L_Iter = L.begin(); L_Iter != L.end(); L_Iter++)
+    {
+        cout << *L_Iter << " ";
+    }
+    cout << ")." << endl;
 
-   // Using the template version to insert an element
-   insert_iterator<list <int> > Iter( L, L.begin ( ) );
-*Iter = 1;
+    // Using the template version to insert an element
+    insert_iterator<list<int>> Iter(L, L.begin());
+    *Iter = 1;
 
-   // Alternatively, using the member function to insert an element
-   inserter ( L, L.end ( ) ) = 500;
+    // Alternatively, using the member function to insert an element
+    inserter(L, L.end()) = 500;
 
-   cout << "After the insertions, the list L is:\n ( ";
-   for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++)
-      cout << *L_Iter << " ";
-   cout << ")." << endl;
+    cout << "After the insertions, the list L is:\n ( ";
+    for (auto L_Iter = L.begin(); L_Iter != L.end(); L_Iter++)
+    {
+        cout << *L_Iter << " ";
+    }
+    cout << ")." << endl;
 }
 ```
 
@@ -598,7 +773,7 @@ After the insertions, the list L is:
 ( 1 20 30 40 500 ).
 ```
 
-## <a name="make_checked_array_iterator"></a> make_checked_array_iterator
+## <a name="make_checked_array_iterator"></a> `make_checked_array_iterator`
 
 Creates a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) that can be used by other algorithms.
 
@@ -616,13 +791,13 @@ Iter Ptr,
 
 ### Parameters
 
-*Ptr*\
+*`Ptr`*\
 A pointer to the destination array.
 
-*Size*\
+*`Size`*\
 The size of the destination array.
 
-*Index*\
+*`Index`*\
 Optional index into the array.
 
 ### Return Value
@@ -652,10 +827,12 @@ In the following example, a [vector](../standard-library/vector-class.md) is cre
 
 using namespace std;
 
-template <typename C> void print(const string& s, const C& c) {
+template <typename C> void print(const string& s, const C& c)
+{
     cout << s;
 
-    for (const auto& e : c) {
+    for (const auto& e : c) 
+    {
         cout << e << " ";
     }
 
@@ -672,7 +849,8 @@ int main()
 
     vector<int> v;
 
-    for (int i = 0; i < dest_size; ++i) {
+    for (int i = 0; i < dest_size; ++i) 
+    {
         v.push_back(i);
     }
     print("vector v: ", v);
@@ -680,38 +858,40 @@ int main()
     copy(v.begin(), v.end(), stdext::make_checked_array_iterator(dest, dest_size));
 
     cout << "int array dest: ";
-    for (int i = 0; i < dest_size; ++i) {
+    for (int i = 0; i < dest_size; ++i)
+    {
         cout << dest[i] << " ";
     }
     cout << endl;
 
     // Add another element to the vector to force an overrun.
     v.push_back(10);
-    // The next line causes a debug assertion when it executes.
+
+    // ! The next line causes a debug assertion when it executes.
     copy(v.begin(), v.end(), stdext::make_checked_array_iterator(dest, dest_size));
 }
 ```
 
-## <a name="make_move_iterator"></a> make_move_iterator
+## <a name="make_move_iterator"></a> `make_move_iterator`
 
 Creates a `move iterator` that contains the provided iterator as the `stored` iterator.
 
 ```cpp
 template <class Iterator>
 move_iterator<Iterator>
-make_move_iterator(const Iterator& _It);
+make_move_iterator(const Iterator& It);
 ```
 
 ### Parameters
 
-*_It*\
+*`It`*\
 The iterator stored in the new move iterator.
 
 ### Remarks
 
 The template function returns `move_iterator` `<Iterator>(_It)`.
 
-## <a name="make_unchecked_array_iterator"></a> make_unchecked_array_iterator
+## <a name="make_unchecked_array_iterator"></a> `make_unchecked_array_iterator`
 
 Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.
 
@@ -726,7 +906,7 @@ unchecked_array_iterator<Iter>
 
 ### Parameters
 
-*Ptr*\
+*`Ptr`*\
 A pointer to the destination array.
 
 ### Return Value
@@ -755,10 +935,12 @@ In the following example, a [vector](../standard-library/vector-class.md) is cre
 
 using namespace std;
 
-template <typename C> void print(const string& s, const C& c) {
+template <typename C> void print(const string& s, const C& c)
+{
     cout << s;
 
-    for (const auto& e : c) {
+    for (const auto& e : c) 
+    {
         cout << e << " ";
     }
 
@@ -768,10 +950,11 @@ template <typename C> void print(const string& s, const C& c) {
 int main()
 {
     const size_t dest_size = 10;
-    int *dest = new int[dest_size];
+    int* dest = new int[dest_size];
     vector<int> v;
 
-    for (int i = 0; i < dest_size; ++i) {
+    for (int i = 0; i < dest_size; ++i) 
+    {
         v.push_back(i);
     }
     print("vector v: ", v);
@@ -781,7 +964,8 @@ int main()
     copy(v.begin(), v.end(), stdext::make_unchecked_array_iterator(dest));
 
     cout << "int array dest: ";
-    for (int i = 0; i < dest_size; ++i) {
+    for (int i = 0; i < dest_size; ++i)
+    {
         cout << dest[i] << " ";
     }
     cout << endl;
@@ -790,7 +974,12 @@ int main()
 }
 ```
 
-## <a name="next"></a> next
+```output
+vector v: 0 1 2 3 4 5 6 7 8 9
+int array dest: 0 1 2 3 4 5 6 7 8 9
+```
+
+## <a name="next"></a> `next`
 
 Iterates a specified number of times and returns the new iterator position.
 
@@ -798,26 +987,26 @@ Iterates a specified number of times and returns the new iterator position.
 template <class InputIterator>
 InputIterator next(
     InputIterator first,
-    typename iterator_traits<InputIterator>::difference_type _Off = 1);
+    typename iterator_traits<InputIterator>::difference_type off = 1);
 ```
 
 ### Parameters
 
-*first*\
+*`first`*\
 The current position.
 
-*_Off*\
+*`off`*\
 The number of times to iterate.
 
 ### Return Value
 
-Returns the new iterator position after iterating *_Off* times.
+Returns the new iterator position after iterating *`off`* times.
 
 ### Remarks
 
-The template function returns `next` incremented *_Off* times
+The template function returns `next` incremented *`off`* times
 
-## <a name="prev"></a> prev
+## <a name="prev"></a> `prev`
 
 Iterates in reverse a specified number of times and returns the new iterator position.
 
@@ -825,38 +1014,147 @@ Iterates in reverse a specified number of times and returns the new iterator pos
 template <class BidirectionalIterator>
 BidirectionalIterator prev(
     BidirectionalIterator first,
-    typename iterator_traits<BidirectionalIterator>::difference_type _Off = 1);
+    typename iterator_traits<BidirectionalIterator>::difference_type off = 1);
 ```
 
 ### Parameters
 
-*first*\
+*`first`*\
 The current position.
 
-*_Off*\
+*`off`*\
 The number of times to iterate.
 
 ### Remarks
 
 The template function returns `next` decremented `off` times.
 
-## <a name="rbegin"></a> rbegin
+## <a name="rbegin"></a> `rbegin`
+
+Get an iterator, which returns the elements of the container in reverse order.
 
 ```cpp
 template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
 template <class C> constexpr auto rbegin(const C& c) -> decltype(c.rbegin());
 ```
 
-## <a name="rend"></a> rend
+### Parameters
+
+*`C`*\
+The type of the container.
+
+*`c`*\
+A container instance.
+
+### Return value
+
+The returned iterator presents the elements of the container in reverse order, starting at the end of the reversed range.
+
+:::image type="content" source="media/rbegin-rend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled rend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled rbegin().":::
+
+### Example `rbegin`
 
 ```cpp
-template <class C> constexpr auto rend(C& c) -> decltype(c.rend());
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v{ 10, 20, 30 };
+
+	for (auto e = std::rbegin(v); e != std::rend(v); ++e)
+	{
+		std::cout << *e << ' '; // outputs 30 20 10
+	}
+}
+```
+
+```output
+30 20 10
+```
+
+## <a name="rend"></a> `rend`
+
+Get the sentinel at the end of a reversed sequence of elements.
+
+```cpp
+template <class C> constexpr auto rend(C& c)-> decltype(c.rend());
 template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());
 ```
 
-## <a name="size"></a> size
+### Parameters
+
+*`C`*\
+The type of the container.
+
+*`c`*\
+A container instance.
+
+### Return value
+
+A reverse iterator to the sentinel at the end of the container. The sentinel follows the last element in the reversed view of the container:
+
+:::image type="content" source="media/rbegin-rend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled rend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled rbegin().":::
+
+### `rend`example
 
 ```cpp
-template <class C> constexpr auto size(const C& c) -> decltype(c.size());
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v{10, 20, 30};
+    auto vi = std::rend(v);
+    --vi; // get off the sentinel and onto the last element in the reversed range
+    std::cout << *vi; // outputs 10
+}
+```
+
+```output
+10
+```
+
+## <a name="size"></a> `size`
+
+```cpp
+template <class C> constexpr auto size(const C& c)
+    -> decltype(c.size());
 template <class T, size_t N> constexpr size_t size(const T (&array)[N]) noexcept;
+```
+
+### Parameters
+
+*`C`*\
+The type of the container.
+
+*`c`*\
+An instance of a container.
+
+*`N`*\
+The number of elements in the array.
+
+*`T`*\
+The type of the data in the array.
+
+### Return value
+
+The number of elements in the container as an unsigned integer-like value.
+
+### Example `size`
+
+```cpp
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v{ 10, 20, 30 };
+    size_t s = std::size(v);
+    std::cout << s; // outputs 3
+}
+```
+
+```output
+3
 ```

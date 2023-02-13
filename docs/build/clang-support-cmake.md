@@ -21,21 +21,23 @@ You can use Visual Studio with Clang to edit and debug C++ CMake projects that t
 **Linux**: For Linux CMake projects, no special Visual Studio support is required. You can install Clang using your distro's package manager, and add the appropriate commands in the CMakeLists.txt file.
 
 ## Install
-
 ::: moniker-end
 ::: moniker range="msvc-160"
 
-For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **C++ Clang-cl for v142 build tools** component.
+For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose the **C++ Clang-cl for v142 build tools** or **C++ Clang-cl for v143 build tools** component.
+
+![Screenshot of the Visual Studio Installer Individual Components page that shows Clang components available for installation.](media/clang-install-vs2019.png)
 
 ::: moniker-end
 ::: moniker range="msvc-170"
 
-For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **C++ Clang-cl for v143 build tools** component.
+For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose the **MSBuild support for LLVM (clang-cl) toolset** component.
+
+![Screenshot of the Visual Studio Installer Individual Components page that shows Clang components available for installation.](media/clang-install-vs2022.png)
 
 ::: moniker-end
 ::: moniker range=">=msvc-160"
 
-![Screenshot of the Visual Studio Installer Individual Components page that shows Clang components available for installation.](media/clang-install-vs2019.png)
 
 ## Create a new configuration
 
@@ -82,9 +84,9 @@ You can modify these values in **CMake Settings** under **CMake variables and ca
 
 ## Edit, build, and debug
 
-After you have set up a Clang configuration, you can build and debug the project. Visual Studio detects that you are using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**.
+After you have set up a Clang configuration, you can build and debug the project. Visual Studio detects that you're using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**.
 
-When debugging, you can use breakpoints, memory and data visualization, and most other debugging features. Some compiler-dependent features such as Edit and Continue are not available for Clang configurations.
+When debugging, you can use breakpoints, memory and data visualization, and most other debugging features. Some compiler-dependent features such as Edit and Continue aren't available for Clang configurations.
 
 ![Screenshot of the Visual Studio debugger debugging a CMake Clang project.](media/clang-debug-visualize.png)
 

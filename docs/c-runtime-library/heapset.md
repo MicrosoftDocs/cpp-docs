@@ -10,7 +10,7 @@ f1_keywords: ["_heapset", "heapset"]
 helpviewer_keywords: ["checking heap", "heapset function", "heaps, checking", "debugging [CRT], heap-related problems", "_heapset function"]
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
 ---
-# _heapset
+# `_heapset`
 
 Checks heaps for minimal consistency and sets the free entries to a specified value.
 
@@ -19,7 +19,7 @@ Checks heaps for minimal consistency and sets the free entries to a specified va
 
 ## Syntax
 
-```
+```C
 int _heapset(
    unsigned int fill
 );
@@ -27,35 +27,35 @@ int _heapset(
 
 #### Parameters
 
-*fill*<br/>
+*`fill`*\
 Fill character.
 
-## Return Value
+## Return value
 
-`_heapset` returns one of the following integer manifest constants defined in Malloc.h.
+**`_heapset`** returns one of the following integer manifest constants defined in Malloc.h.
 
-|Value|Description|
-|-|-|
-| `_HEAPBADBEGIN`  | Initial header information invalid or not found.  |
-| `_HEAPBADNODE`  | Heap damaged or bad node found.  |
-| `_HEAPEMPTY`  | Heap not initialized.  |
-| `_HEAPOK`  | Heap appears to be consistent.  |
+| Value | Description |
+|---|---|
+| `_HEAPBADBEGIN` | Initial header information invalid or not found. |
+| `_HEAPBADNODE` | Heap damaged or bad node found. |
+| `_HEAPEMPTY` | Heap not initialized. |
+| `_HEAPOK` | Heap appears to be consistent. |
 
-In addition, if an error occurs, `_heapset` sets `errno` to `ENOSYS`.
+In addition, if an error occurs, **`_heapset`** sets `errno` to `ENOSYS`.
 
 ## Remarks
 
-The `_heapset` function shows free memory locations or nodes that have been unintentionally overwritten.
+The **`_heapset`** function shows free memory locations or nodes that have been unintentionally overwritten.
 
-`_heapset` checks for minimal consistency on the heap and then sets each byte of the heap's free entries to the `fill` value. This known value shows which memory locations of the heap contain free nodes and which contain data that were unintentionally written to freed memory. If the operating system does not support `_heapset`(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.
+**`_heapset`** checks for minimal consistency on the heap and then sets each byte of the heap's free entries to the `fill` value. This known value shows which memory locations of the heap contain free nodes and which contain data that were unintentionally written to freed memory. If the operating system doesn't support **`_heapset`**(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|`_heapset`|\<malloc.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_heapset`** | \<malloc.h> | \<errno.h> |
 
-For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](./compatibility.md) in the Introduction.
 
 ## Example
 
@@ -101,8 +101,8 @@ OK - heap is fine
 
 ## See also
 
-[Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
-[_heapadd](../c-runtime-library/heapadd.md)<br/>
-[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
-[_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
-[_heapwalk](../c-runtime-library/reference/heapwalk.md)
+[Memory allocation](./memory-allocation.md)\
+[`_heapadd`](./heapadd.md)\
+[`_heapchk`](./reference/heapchk.md)\
+[`_heapmin`](./reference/heapmin.md)\
+[`_heapwalk`](./reference/heapwalk.md)

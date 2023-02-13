@@ -26,23 +26,29 @@ int _CrtSetDbgFlag(
 *`newFlag`*\
 New state for **`_crtDbgFlag`**.
 
-## Return Value
+## Return value
 
 Returns the previous state of **`_crtDbgFlag`**.
 
 ## Remarks
 
-The **`_CrtSetDbgFlag`** function allows the application to control how the debug heap manager tracks memory allocations by modifying the bit fields of the **`_crtDbgFlag`** flag. By setting the bits (turning on), the application can instruct the debug heap manager to perform special debugging operations, including checking for memory leaks when the application exits and reporting if any are found, simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list, and verifying the integrity of the heap by inspecting each memory block at every allocation request. When [`_DEBUG`](../../c-runtime-library/debug.md) isn't defined, calls to **`_CrtSetDbgFlag`** are removed during preprocessing.
+The **`_CrtSetDbgFlag`** function allows the application to control how the debug heap manager tracks memory allocations by modifying the bit fields of the **`_crtDbgFlag`** flag. By setting the bit fields, the application can instruct the debug heap manager to perform special debugging operations. There are several possible operations:
 
-The following table lists the bit fields for **`_crtDbgFlag`** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits aren't set (turned off) by default. For more information about these bit fields, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details).
+- Checking for memory leaks when the application exits and reporting if any are found,
+- Simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list,
+- Verifying the integrity of the heap by inspecting each memory block at every allocation request.
 
-|Bit field|Default|Description|
-|---------------|-------------|-----------------|
-|**`_CRTDBG_ALLOC_MEM_DF`**|ON|ON: Enable debug heap allocations and use of memory block type identifiers, such as **`_CLIENT_BLOCK`**. OFF: Add new allocations to heap's linked list, but set block type to **`_IGNORE_BLOCK`**.<br /><br /> Can also be combined with any of the heap-frequency check macros.|
-|**`_CRTDBG_CHECK_ALWAYS_DF`**|OFF|ON: Call [`_CrtCheckMemory`](crtcheckmemory.md) at every allocation and deallocation request. OFF: **`_CrtCheckMemory`** must be called explicitly.<br /><br /> Heap-frequency check macros have no effect when this flag is set.|
-|**`_CRTDBG_CHECK_CRT_DF`**|OFF|ON: Include **`_CRT_BLOCK`** types in leak detection and memory state difference operations. OFF: Memory used internally by the run-time library is ignored by these operations.<br /><br /> Can also be combined with any of the heap-frequency check macros.|
-|**`_CRTDBG_DELAY_FREE_MEM_DF`**|OFF|ON: Keep freed memory blocks in the heap's linked list, assign them the **`_FREE_BLOCK`** type, and fill them with the byte value 0xDD. OFF: Don't keep freed blocks in the heap's linked list.<br /><br /> Can also be combined with any of the heap-frequency check macros.|
-|**`_CRTDBG_LEAK_CHECK_DF`**|OFF|ON: Perform automatic leak checking at program exit through a call to [`_CrtDumpMemoryLeaks`](crtdumpmemoryleaks.md) and generate an error report if the application failed to free all the memory it allocated. OFF: Don't automatically perform leak checking at program exit.<br /><br /> Can also be combined with any of the heap-frequency check macros.|
+When [`_DEBUG`](../debug.md) isn't defined, calls to **`_CrtSetDbgFlag`** are removed during preprocessing.
+
+The following table lists the bit fields for **`_crtDbgFlag`** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits aren't set (turned off) by default. For more information about these bit fields, see [Heap state reporting functions](../crt-debug-heap-details.md#heap-state-reporting-functions).
+
+| Bit field | Default | Description |
+|---|---|---|
+| `_CRTDBG_ALLOC_MEM_DF` | ON | ON: Enable debug heap allocations and use of memory block type identifiers, such as `_CLIENT_BLOCK`. OFF: Add new allocations to heap's linked list, but set block type to `_IGNORE_BLOCK`.<br /><br /> Can also be combined with any of the heap-frequency check macros. |
+| `_CRTDBG_CHECK_ALWAYS_DF` | OFF | ON: Call [`_CrtCheckMemory`](crtcheckmemory.md) at every allocation and deallocation request. OFF: **`_CrtCheckMemory`** must be called explicitly.<br /><br /> Heap-frequency check macros have no effect when this flag is set. |
+| `_CRTDBG_CHECK_CRT_DF` | OFF | ON: Include `_CRT_BLOCK` types in leak detection and memory state difference operations. OFF: Memory used internally by the run-time library is ignored by these operations.<br /><br /> Can also be combined with any of the heap-frequency check macros. |
+| `_CRTDBG_DELAY_FREE_MEM_DF` | OFF | ON: Keep freed memory blocks in the heap's linked list, assign them the `_FREE_BLOCK` type, and fill them with the byte value 0xDD. OFF: Don't keep freed blocks in the heap's linked list.<br /><br /> Can also be combined with any of the heap-frequency check macros. |
+| `_CRTDBG_LEAK_CHECK_DF` | OFF | ON: Perform automatic leak checking at program exit through a call to [`_CrtDumpMemoryLeaks`](crtdumpmemoryleaks.md) and generate an error report if the application failed to free all the memory it allocated. OFF: Don't automatically perform leak checking at program exit.<br /><br /> Can also be combined with any of the heap-frequency check macros. |
 
 **Heap-Check Frequency Macros**
 
@@ -50,12 +56,12 @@ You can specify how often the C run-time library performs validation of the debu
 
 **`_CrtSetDbgFlag`** then inspects the upper 16 bits of the *`newFlag`* parameter for a value. The value specified is the number of **`malloc`**, **`realloc`**, **`free`**, and **`_msize`** calls between **`_CrtCheckMemory`** calls. Four predefined macros are provided for this purpose.
 
-|Macro|Number of `malloc`, `realloc`, `free`, and `_msize` calls between calls to `_CrtCheckMemory`|
-|-----------|------------------------------------------------------------------------------------------|
-|`_CRTDBG_CHECK_EVERY_16_DF`|16|
-|`_CRTDBG_CHECK_EVERY_128_DF`|128|
-|`_CRTDBG_CHECK_EVERY_1024_DF`|1024|
-|`_CRTDBG_CHECK_DEFAULT_DF`|0 (by default, no heap checks)|
+| Macro | Number of `malloc`, `realloc`, `free`, and `_msize` calls between calls to `_CrtCheckMemory` |
+|---|---|
+| `_CRTDBG_CHECK_EVERY_16_DF` | 16 |
+| `_CRTDBG_CHECK_EVERY_128_DF` | 128 |
+| `_CRTDBG_CHECK_EVERY_1024_DF` | 1024 |
+| `_CRTDBG_CHECK_DEFAULT_DF` | 0 (by default, no heap checks) |
 
 By default, **`_CrtCheckMemory`** isn't called during memory operations. You can change that by sending the flags shown above to [`_CrtSetDbgFlag()`](crtsetdbgflag.md).
 
@@ -84,7 +90,7 @@ The upper 16 bits of the *`newFlag`* parameter are ignored when `_CRTDBG_CHECK_A
 
 ### To change one or more of these bit fields and create a new state for the flag
 
-1. Call **`_CrtSetDbgFlag`** with *`newFlag`* equal to **`_CRTDBG_REPORT_FLAG`** to obtain the current **`_crtDbgFlag`** state and store the returned value in a temporary variable.
+1. Call **`_CrtSetDbgFlag`** with *`newFlag`* equal to `_CRTDBG_REPORT_FLAG` to obtain the current **`_crtDbgFlag`** state and store the returned value in a temporary variable.
 
 1. Turn on any bits by a bitwise "or" (`|`) of the temporary variable with the corresponding bitmasks (represented in the application code by manifest constants).
 
@@ -111,23 +117,23 @@ tmpFlag &= ~_CRTDBG_CHECK_ALWAYS_DF;
 _CrtSetDbgFlag( tmpFlag );
 ```
 
-For an overview of memory management and the debug heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
+For an overview of memory management and the debug heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 To disable a flag with the **`_CrtSetDbgFlag`** function, use a bitwise "and" (`&`) of the variable with the bitwise "not" (`~`) of the bitmask.
 
-If *`newFlag`* isn't a valid value, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns the previous state of **`_crtDbgFlag`**.
+If *`newFlag`* isn't a valid value, this function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns the previous state of **`_crtDbgFlag`**.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_CrtSetDbgFlag`**|`<crtdbg.h>`|
+| Routine | Required header |
+|---|---|
+| **`_CrtSetDbgFlag`** | `<crtdbg.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -195,6 +201,6 @@ int main( )
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)\
-[`_crtDbgFlag`](../../c-runtime-library/crtdbgflag.md)\
+[Debug routines](../debug-routines.md)\
+[`_crtDbgFlag`](../crtdbgflag.md)\
 [`_CrtCheckMemory`](crtcheckmemory.md)

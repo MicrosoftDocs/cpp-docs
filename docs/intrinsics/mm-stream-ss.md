@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: _mm_stream_ss"
 title: "_mm_stream_ss"
-ms.date: "09/02/2019"
+ms.date: 01/04/2023
 f1_keywords: ["_mm_stream_ss"]
 helpviewer_keywords: ["movntss instruction", "_mm_stream_ss intrinsic"]
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
 ---
-# _mm_stream_ss
+# `_mm_stream_ss`
 
 **Microsoft Specific**
 
@@ -35,9 +35,9 @@ None.
 
 ## Requirements
 
-|Intrinsic|Architecture|
-|---------------|------------------|
-|`_mm_stream_ss`|SSE4a|
+| Intrinsic | Architecture |
+|---|---|
+| `_mm_stream_ss` | SSE4a |
 
 **Header file** \<intrin.h>
 
@@ -70,7 +70,7 @@ int main()
     vals.m128_f32[3] = 3.;
     _mm_stream_ss(&f[3], vals);
     cout << "f[0] = " << f[0] << ", f[1] = " << f[1] << endl;
-    cout << "f[1] = " << f[1] << ", f[3] = " << f[3] << endl;
+    cout << "f[2] = " << f[2] << ", f[3] = " << f[3] << endl;
 }
 ```
 
@@ -85,8 +85,8 @@ Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Rep
 
 ## See also
 
-[_mm_stream_sd](../intrinsics/mm-stream-sd.md)\
-[_mm_stream_ps](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_stream_ps)\
-[_mm_store_ss](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_store_ss)\
-[_mm_sfence](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_sfence)\
+[`_mm_stream_sd`](../intrinsics/mm-stream-sd.md)\
+[`_mm_stream_ps`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_stream_ps)\
+[`_mm_store_ss`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_store_ss)\
+[`_mm_sfence`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_sfence)\
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

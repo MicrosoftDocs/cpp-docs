@@ -60,7 +60,7 @@ HRESULT hr = wr.As(&strongRef);
 // Check the input pointer instead.
 if(wr == nullptr)
 {
-    wprintf(L"Couldn’t get strong ref!");
+    wprintf(L"Couldn't get strong ref!");
 }
 ```
 

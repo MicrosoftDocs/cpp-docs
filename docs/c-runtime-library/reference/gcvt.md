@@ -3,16 +3,16 @@ description: "Learn more about: _gcvt"
 title: "_gcvt"
 ms.date: "4/2/2020"
 api_name: ["_gcvt", "_o__gcvt"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_gcvt"]
 helpviewer_keywords: ["_gcvt function", "_CVTBUFSIZE", "gcvt function", "floating-point functions, converting number to string", "numbers, converting to strings", "conversions, floating point to strings", "strings [C++], converting from floating point", "CVTBUFSIZE"]
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
 ---
-# _gcvt
+# `_gcvt`
 
-Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [_gcvt_s](gcvt-s.md).
+Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [`_gcvt_s`](gcvt-s.md).
 
 ## Syntax
 
@@ -26,36 +26,36 @@ char *_gcvt(
 
 ### Parameters
 
-*value*<br/>
+*`value`*\
 Value to be converted.
 
-*digits*<br/>
+*`digits`*\
 Number of significant digits stored.
 
-*buffer*<br/>
+*`buffer`*\
 Storage location for the result.
 
-## Return Value
+## Return value
 
-**_gcvt** returns a pointer to the string of digits.
+**`_gcvt`** returns a pointer to the string of digits.
 
 ## Remarks
 
-The **_gcvt** function converts a floating-point *value* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *buffer*. The *buffer* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *digits* + 1 is used, the function overwrites the end of the buffer. This is because the converted string includes a decimal point and can contain sign and exponent information. There is no provision for overflow. **_gcvt** attempts to produce *digits* digits in decimal format. If it cannot, it produces *digits* digits in exponential format. Trailing zeros might be suppressed in the conversion.
+The **`_gcvt`** function converts a floating-point *`value`* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *`buffer`*. The *`buffer`* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *`digits`* + 1 is used, the function overwrites the end of the buffer. The overwrite happens because the converted string includes a decimal point and can also contain sign and exponent information. The function doesn't account for the overflow. **`_gcvt`** attempts to produce *`digits`* digits in decimal format. If it can't, it produces *`digits`* digits in exponential format. Trailing zeros might be suppressed in the conversion.
 
-A *buffer* of length **_CVTBUFSIZE** is sufficient for any floating point value.
+A *`buffer`* of length `_CVTBUFSIZE` is sufficient for any floating point value.
 
-This function validates its parameters. If *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
+This function validates its parameters. If *`buffer`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_gcvt**|\<stdlib.h>|
+| Routine | Required header |
+|---|---|
+| **`_gcvt`** | \<stdlib.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -115,8 +115,8 @@ buffer: '-1.23456789012e-002' (19 chars)
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_fcvt](fcvt.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_ecvt`](ecvt.md)\
+[`_fcvt`](fcvt.md)

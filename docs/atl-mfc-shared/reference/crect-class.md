@@ -12,7 +12,7 @@ Similar to a Windows [`RECT`](/windows/win32/api/windef/ns-windef-rect) structur
 
 ## Syntax
 
-```
+```cpp
 class CRect : public tagRECT
 ```
 
@@ -428,7 +428,7 @@ ASSERT(rect1.EqualRect(&test));
 
 Calculates the height of `CRect` by subtracting the top value from the bottom value.
 
-```
+```cpp
 int Height() const throw();
 ```
 
@@ -510,7 +510,7 @@ ASSERT(rect == CRect(-50, -200, 350, 500));
 
 Makes a `CRect` equal to the intersection of two existing rectangles.
 
-```
+```cpp
 BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ```
 
@@ -553,7 +553,7 @@ ASSERT(rectInter2 == CRect(125, 75, 150, 95));
 
 Determines whether `CRect` is empty.
 
-```
+```cpp
 BOOL IsRectEmpty() const throw();
 ```
 
@@ -583,7 +583,7 @@ ASSERT(rectEmpty.IsRectEmpty());
 
 Determines whether the top, left, bottom, and right values of `CRect` are all equal to 0.
 
-```
+```cpp
 BOOL IsRectNull() const throw();
 ```
 
@@ -747,7 +747,7 @@ ASSERT(rect == CRect(230, 230, 265, 265));
 
 ## <a name="operator_lpcrect"></a> `CRect::operator LPCRECT` Converts a `CRect` to an [`LPCRECT`](../../mfc/reference/data-types-mfc.md).
 
-```
+```cpp
 operator LPCRECT() const throw();
 ```
 
@@ -759,7 +759,7 @@ When you use this function, you don't need the address-of (**`&`**) operator. Th
 
 Converts a `CRect` to an [`LPRECT`](../../mfc/reference/data-types-mfc.md).
 
-```
+```cpp
 operator LPRECT() throw();
 ```
 
@@ -798,7 +798,7 @@ ASSERT(rect2 == CRect(0, 0, 127, 168));
 
 Determines whether `rect` is equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.
 
-```
+```cpp
 BOOL operator==(const RECT& rect) const throw();
 ```
 
@@ -838,7 +838,7 @@ ASSERT(rect1 == test);
 
 Determines whether *`rect`* is not equal to `CRect` by comparing the coordinates of their upper-left and lower-right corners.
 
-```
+```cpp
 BOOL operator!=(const RECT& rect) const throw();
 ```
 
@@ -1009,7 +1009,7 @@ ASSERT(rectResult == rect1);
 
 The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.
 
-```
+```cpp
 CRect operator+(POINT point) const throw();
 CRect operator+(LPCRECT lpRect) const throw();
 CRect operator+(SIZE size) const throw();
@@ -1052,7 +1052,7 @@ ASSERT(rectResult == rect2);
 
 The first two overloads return a `CRect` object that is equal to `CRect` displaced by the specified offsets.
 
-```
+```cpp
 CRect operator-(POINT point) const throw();
 CRect operator-(SIZE size) const throw();
 CRect operator-(LPCRECT lpRect) const throw();
@@ -1095,7 +1095,7 @@ ASSERT(rect2 == rectResult);
 
 Returns a `CRect` that is the intersection of `CRect` and *rect2*.
 
-```
+```cpp
 CRect operator&(const RECT& rect2) const throw();
 ```
 
@@ -1131,7 +1131,7 @@ ASSERT(rectResult == rect3);
 
 Returns a `CRect` that is the union of `CRect` and *`rect2`*.
 
-```
+```cpp
 CRect operator|(const RECT&
 rect2) const throw();
 ```
@@ -1168,7 +1168,7 @@ ASSERT(rectResult == rect3);
 
 Determines whether the specified point lies within `CRect`.
 
-```
+```cpp
 BOOL PtInRect(POINT point) const throw();
 ```
 
@@ -1295,7 +1295,7 @@ ASSERT(sz.cx == 40 && sz.cy == 40);
 
 Makes the dimensions of the `CRect` equal to the subtraction of `lpRectSrc2` from `lpRectSrc1`.
 
-```
+```cpp
 BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 ```
 
@@ -1362,7 +1362,7 @@ ASSERT(rectResult == rectOut);
 
 The coordinates are returned as a reference to a [`CPoint`](cpoint-class.md) object that is contained in `CRect`.
 
-```
+```cpp
 CPoint& TopLeft() throw();
 const CPoint& TopLeft() const throw();
 ```
@@ -1383,7 +1383,7 @@ See the example for [`CRect::CenterPoint`](#centerpoint).
 
 Makes the dimensions of `CRect` equal to the union of the two source rectangles.
 
-```
+```cpp
 BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ```
 
@@ -1424,7 +1424,7 @@ ASSERT(rectResult == rect3);
 
 Calculates the width of `CRect` by subtracting the left value from the right value.
 
-```
+```cpp
 int Width() const throw();
 ```
 

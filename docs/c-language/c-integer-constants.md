@@ -7,66 +7,66 @@ ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
 ---
 # C Integer Constants
 
-An *integer constant* is a decimal (base 10), octal (base 8), or hexadecimal (base 16) number that represents an integral value. Use integer constants to represent integer values that cannot be changed.
+An *integer constant* is a decimal (base 10), octal (base 8), or hexadecimal (base 16) number that represents an integral value. Use integer constants to represent integer values that can't be changed.
 
 ## Syntax
 
-*integer-constant*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *integer-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *integer-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *integer-suffix*<sub>opt</sub>
+*`integer-constant`*:\
+&emsp;*`decimal-constant`* *`integer-suffix`*<sub>opt</sub>\
+&emsp;*`octal-constant`* *`integer-suffix`*<sub>opt</sub>\
+&emsp;*`hexadecimal-constant`* *`integer-suffix`*<sub>opt</sub>
 
-*decimal-constant*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*nonzero-digit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *digit*
+*`decimal-constant`*:\
+&emsp;*`nonzero-digit`*\
+&emsp;*`decimal-constant`* *`digit`*
 
-*octal-constant*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *octal-digit*
+*`octal-constant`*:\
+&emsp;**`0`**\
+&emsp;*`octal-constant`* *`octal-digit`*
 
-*hexadecimal-constant*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-prefix* *hexadecimal-digit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *hexadecimal-digit*
+*`hexadecimal-constant`*:\
+&emsp;*`hexadecimal-prefix`* *`hexadecimal-digit`*\
+&emsp;*`hexadecimal-constant`* *`hexadecimal-digit`*
 
-*hexadecimal-prefix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**
+*`hexadecimal-prefix`*: one of\
+&emsp;**`0x`**  **`0X`**
 
-*nonzero-digit*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**
+*`nonzero-digit`*: one of\
+&emsp;**`1 2 3 4 5 6 7 8 9`**
 
-*octal-digit*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**
+*`octal-digit`*: one of\
+&emsp;**`0 1 2 3 4 5 6 7`**
 
-*hexadecimal-digit*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**a b c d e f**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**
+*`hexadecimal-digit`*: one of\
+&emsp;**`0 1 2 3 4 5 6 7 8 9`**\
+&emsp;**`a b c d e f`**\
+&emsp;**`A B C D E F`**
 
-*integer-suffix*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*unsigned-suffix* *long-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*unsigned-suffix* *long-long-suffix*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*unsigned-suffix* *64-bit-integer-suffix*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*long-suffix* *unsigned-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*long-long-suffix* *unsigned-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-integer-suffix*
+*`integer-suffix`*:\
+&emsp;*`unsigned-suffix`* *`long-suffix`*<sub>opt</sub>\
+&emsp;*`unsigned-suffix`* *`long-long-suffix`*\
+&emsp;*`unsigned-suffix`* *`64-bit-integer-suffix`*\
+&emsp;*`long-suffix`* *`unsigned-suffix`*<sub>opt</sub>\
+&emsp;*`long-long-suffix`* *`unsigned-suffix`*<sub>opt</sub>\
+&emsp;*`64-bit-integer-suffix`*
 
-*unsigned-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**u U**
+*`unsigned-suffix`*: one of\
+&emsp;**`u U`**
 
-*long-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**l L**
+*`long-suffix`*: one of\
+&emsp;**`l L`**
 
-*long-long-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**
+*`long-long-suffix`*: one of\
+&emsp;**`ll LL`**
 
-*64-bit-integer-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**
+*`64-bit-integer-suffix`*: one of\
+&emsp;**`i64 I64`**
 
-The **i64** and **I64** suffixes are Microsoft-specific.
+The **`i64`** and **`I64`** suffixes are Microsoft-specific.
 
-Integer constants are positive unless they are preceded by a minus sign (**-**). The minus sign is interpreted as the unary arithmetic negation operator. (See [Unary Arithmetic Operators](../c-language/unary-arithmetic-operators.md) for information about this operator.)
+Integer constants are positive unless they're preceded by a minus sign (**`-`**). The minus sign is interpreted as the unary arithmetic negation operator. (See [Unary Arithmetic Operators](../c-language/unary-arithmetic-operators.md) for information about this operator.)
 
-If an integer constant begins with **0x** or **0X**, it is hexadecimal. If it begins with the digit **0**, it is octal. Otherwise, it is assumed to be decimal.
+If an integer constant begins with **`0x`** or **`0X`**, it's hexadecimal. If it begins with the digit **`0`**, it's octal. Otherwise, it's assumed to be decimal.
 
 The following integer constants are equivalent:
 

@@ -7,9 +7,9 @@ ms.assetid: 0f5f2825-e673-49e7-8669-94e2f5294989
 ---
 # C Comments
 
-A "comment" is a sequence of characters beginning with a forward slash/asterisk combination (<strong>/\*</strong>) that is treated as a single white-space character by the compiler and is otherwise ignored. A comment can include any combination of characters from the representable character set, including newline characters, but excluding the "end comment" delimiter (<strong>\*/</strong>). Comments can occupy more than one line but cannot be nested.
+A "comment" is a sequence of characters beginning with a forward slash/asterisk combination (<strong>/\*</strong>) that is treated as a single white-space character by the compiler and is otherwise ignored. A comment can include any combination of characters from the representable character set, including newline characters, but excluding the "end comment" delimiter (<strong>\*/</strong>). Comments can occupy more than one line but can't be nested.
 
-Comments can appear anywhere a white-space character is allowed. Since the compiler treats a comment as a single white-space character, you cannot include comments within tokens. The compiler ignores the characters in the comment.
+Comments can appear anywhere a white-space character is allowed. Since the compiler treats a comment as a single white-space character, you can't include comments within tokens. The compiler ignores the characters in the comment.
 
 Use comments to document your code. This example is a comment accepted by the compiler:
 
@@ -32,7 +32,7 @@ You can choose to precede functions or program modules with a descriptive commen
 */
 ```
 
-Since comments cannot contain nested comments, this example causes an error:
+Since comments can't contain nested comments, this example causes an error:
 
 ```C
 /* Comment out this routine for testing
@@ -51,13 +51,13 @@ While you can use comments to render certain lines of code inactive for test pur
 
 **Microsoft Specific**
 
-The Microsoft compiler also supports single-line comments preceded by two forward slashes (__//__). If you compile with /Za (ANSI standard), these comments generate errors. These comments cannot extend to a second line.
+The Microsoft compiler also supports single-line comments preceded by two forward slashes (**`//`**). These comments can't extend to a second line.
 
 ```C
 // This is a valid comment
 ```
 
-Comments beginning with two forward slashes (__//__) are terminated by the next newline character that is not preceded by an escape character. In the next example, the newline character is preceded by a backslash (**\\**), creating an "escape sequence." This escape sequence causes the compiler to treat the next line as part of the previous line. (For more information, see [Escape Sequences](../c-language/escape-sequences.md).)
+Comments beginning with two forward slashes (**`//`**) are terminated by the next newline character that isn't preceded by an escape character. In the next example, the newline character is preceded by a backslash (**`\`**), creating an "escape sequence." This escape sequence causes the compiler to treat the next line as part of the previous line. (For more information, see [Escape Sequences](../c-language/escape-sequences.md).)
 
 ```C
 // my comment \

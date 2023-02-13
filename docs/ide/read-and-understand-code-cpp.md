@@ -11,19 +11,19 @@ The C++ code editor and Visual Studio IDE provide many coding aids. Some are uni
 
 Visual Studio colorizes syntax elements to differentiate between types of symbols such as language keywords, type names, variable names, function parameters, string literals, and so on.
 
-![Screenshot showing code colorization in the editor.](../ide/media/code-outline-colorization.png "C++ colorization")
+![Screenshot showing code colorization in the editor. Keywords are shown in different colors such as blue for if, while and green for comments](../ide/media/code-outline-colorization.png "C++ colorization")
 
 Unused code (such as code under an #if 0) is more faded in color.
 
-![Screenshot showing inactive code in the editor.](../ide/media/inactive-code-cpp.png "C++ inactive code")
+![Screenshot showing inactive code in the editor, which appears faded compared to active code.](../ide/media/inactive-code-cpp.png "C++ inactive code")
 
-You can customize the colors by typing "Fonts" in **Quick Launch**, and then choosing **Fonts and Colors**. In the **Fonts and Colors** dialog scroll down to the C/C++ options and then choose a custom font and/or color.
+You can customize the colors by typing "Fonts" in **Quick Launch**, and then choosing **Fonts and Colors**. In the **Fonts and Colors** dialog, scroll down to the C/C++ options and then choose a custom font and/or color.
 
 ## Outlining
 
-Right-click anywhere in a source code file and choose **Outlining** to collapse or expand code blocks and/or custom regions to make it easier to browse only the code you are interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
+Right-click anywhere in a source code file and choose **Outlining** to collapse or expand code blocks and/or custom regions to make it easier to browse only the code you're interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
 
-![Screenshot of C plus plus Outlining.](../ide/media/vs2015_cpp_outlining.png)
+![Screenshot of the outlining window shows the body of classes collapsed. Options for Collapse to Definitions, Toggle All Outlining, etc. are visible.](../ide/media/vs2015_cpp_outlining.png)
 
 When you place your cursor in front of a curly brace, '{' or '}', the editor highlights its matching counterpart.
 
@@ -37,11 +37,11 @@ You can add line numbers to your project by going to **Tools** > **Options** > *
 
 You can zoom in or out in the editor by pressing the **Ctrl** key and scrolling with your mouse wheel. You can also zoom by using the zoom setting in the bottom left corner.
 
-![Screenshot of the C plus plus Zoom Control.](../ide/media/zoom-control.png)
+![Screenshot of the Zoom Control in the lower left of the screen. It's a dropdown with various zoom options like 133%.](../ide/media/zoom-control.png)
 
 Scrollbar **Map Mode** enables you to quickly scroll and browse through a code file without leaving your current location. You can click anywhere on the code map to go directly to that location.
 
-![Screenshot of the Code Map in C plus plus.](../ide/media/vs2015-cpp-code-map.png)
+![Screenshot of the Code Map which shows an outline of the entire file on the right and a window displaying the code from the selected part of the map.](../ide/media/vs2015-cpp-code-map.png)
 
 To turn on **Map Mode**, type "map" in the **Quick Launch** search box in the main toolbar and choose **Use scroll map mode**. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
@@ -53,13 +53,13 @@ Hover over any variable, function, or other symbol to get information about it, 
 
 ::: moniker range=">=msvc-160"
 
-![Screenshot showing the Quick Info tooltip in Visual Studio 2019.](../ide/media/quick-info-vs2019.png "Quick Info")
+![Screenshot of the Quick Info tooltip displaying the definition of a function that the user is hovering over in the code window.](../ide/media/quick-info-vs2019.png "Quick Info")
 
 The **Quick Info** tooltip has a **Search Online** link. Go to **Tools** > **Options** > **Text Editor** > **C++** > **View** to specify the search provider.
 
-If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the Error List window.
+If there's an error in your code, you can hover over it, and **Quick Info** will display the error message. You can also find the error message in the Error List window.
 
-![Screenshot showing Quick Info on error.](../ide/media/quickinfo-on-error.png "Quick Info on error")
+![Screenshot of the Quick Info tooltip showing the error associated with a code squiggle.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
 ::: moniker-end
 
@@ -67,43 +67,43 @@ If there is an error in your code, you can hover over it and **Quick Info** will
 
 ![Screenshot showing the Quick Info tooltip in Visual Studio 2017.](../ide/media/quick-info.png "Quick Info")
 
-If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the **Error List** window.
+If there's an error in your code, you can hover over it, and **Quick Info** will display the error message. You can also find the error message in the **Error List** window.
 
-![Screenshot showing Quick Info on error.](../ide/media/quickinfo-on-error.png "Quick Info on error")
+![Screenshot of the Quick Info tooltip showing the error associated with a code squiggle.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
 ::: moniker-end
 
-When you call a function, **Parameter Info** shows the types of parameters and the order in which they are expected.
+When you call a function, **Parameter Info** shows the types of parameters and the order in which they're expected.
 
-![Screenshot of Parameter Info in C plus plus.](../ide/media/parameter-info.png)
+![Screenshot of parameter info showing the parameters for the function resize on vector v. The parameter info is: const size_t _Newsize, const int & _Val.](../ide/media/parameter-info.png)
 
 ## Peek Definition
 
 Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition without navigating away from your current location. For more information, see [Peek Definition (Alt+F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).
 
-![Screenshot of C plus plus Peek Definition.](../ide/media/vs2015_cpp_peek_definition.png)
+![Screenshot of the drop-down that appears when you right-click a function. Peek Definition appears in the menu along with the shortcut Alt + F 12.](../ide/media/vs2015_cpp_peek_definition.png)
 
 ## F1 Help
 
-Place the cursor on or just after any type, keyword or function and press **F1** to go directly to the relevant reference topic on docs.microsoft.com. **F1** also works on items in the error list, and in many dialog boxes.
+Place the cursor on or just after any type, keyword or function and press **F1** to go directly to the relevant reference topic on Microsoft Learn. **F1** also works on items in the error list and in many dialog boxes.
 
 ## Class View
 
 **Class View** displays a searchable set of trees of all code symbols and their scope and parent/child hierarchies, organized on a per-project basis. You can configure what **Class View** displays from **Class View Settings** (click the gear box icon at the top of the window).
 
-![Screenshot of Class View in C plus plus.](../ide/media/class-view.png)
+![Screenshot of the Class View window displaying the classes in the project such as CipherFactory, FilterTester, and so on.](../ide/media/class-view.png)
 
 ## Generate graph of include files
 
 Right click on a code file in your project and choose **Generate graph of include files** to see a graph of which files are included by other files.
 
-![Screenshot of C plus plus graph of include files.](../ide/media/vs2015_cpp_include_graph.png)
+![Screenshot of a graph of include files. The graph shows that NAMSPACE DLL .CPP includes Namespace DLL .h, which includes V_10 .H, among other files.](../ide/media/vs2015_cpp_include_graph.png)
 
 ## View Call Hierarchy
 
 Right click on any function call and view a recursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](/visualstudio/ide/reference/call-hierarchy).
 
-![Screenshot of C plus plus Call Hierarchy.](../ide/media/vs2015_cpp_call_hierarchy.png)
+![Screenshot of the Call Hierarchy window which shows calls to and from Floating_to_wstring(). For example, to_wstring() calls Floating_to_wstring().](../ide/media/vs2015_cpp_call_hierarchy.png)
 
 ## See Also
 

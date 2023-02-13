@@ -12,7 +12,7 @@ Represents a relative time, a time span.
 
 ## Syntax
 
-```
+```cpp
 class COleDateTimeSpan
 ```
 
@@ -76,7 +76,7 @@ For more information on the `COleDateTime` and `COleDateTimeSpan` classes, see t
 
 Comparison operators.
 
-```
+```cpp
 bool operator==(const COleDateTimeSpan& dateSpan) const throw();
 bool operator!=(const COleDateTimeSpan& dateSpan) const throw();
 bool operator<(const COleDateTimeSpan& dateSpan) const throw();
@@ -102,14 +102,14 @@ These operators compare two date/time-span values and return TRUE if the conditi
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#25](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_1.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_ATLMFC_Utilities#26](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_2.cpp)]
 
 ## <a name="coledatetimespan"></a> COleDateTimeSpan::COleDateTimeSpan
 
 Constructs a `COleDateTimeSpan` object.
 
-```
+```cpp
 COleDateTimeSpan() throw();
 COleDateTimeSpan(double dblSpanSrc) throw();
 COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
@@ -145,7 +145,7 @@ For more information about the bounds for `COleDateTimeSpan` values, see the art
 
 Generates a formatted string representation of a `COleDateTimeSpan` object.
 
-```
+```cpp
 CString Format(LPCTSTR pFormat) const;
 CString Format(UINT nID) const;
 ```
@@ -194,7 +194,7 @@ This form formats the value using the format string that contains special format
 
 Retrieves the day portion of this date/time-span value.
 
-```
+```cpp
 LONG GetDays() const throw();
 ```
 
@@ -230,7 +230,7 @@ For other functions that query the value of a `COleDateTimeSpan` object, see the
 
 Retrieves the hour portion of this date/time-span value.
 
-```
+```cpp
 LONG GetHours() const throw();
 ```
 
@@ -266,7 +266,7 @@ For other functions that query the value of a `COleDateTimeSpan` object, see the
 
 Retrieves the minute portion of this date/time-span value.
 
-```
+```cpp
 LONG GetMinutes() const throw();
 ```
 
@@ -302,7 +302,7 @@ For other functions that query the value of a `COleDateTimeSpan` object, see the
 
 Retrieves the second portion of this date/time-span value.
 
-```
+```cpp
 LONG GetSeconds() const throw();
 ```
 
@@ -338,7 +338,7 @@ For other functions that query the value of a `COleDateTimeSpan` object, see the
 
 Gets the status (validity) of this `COleDateTimeSpan` object.
 
-```
+```cpp
 DateTimeSpanStatus GetStatus() const throw();
 ```
 
@@ -350,7 +350,7 @@ The status of this `COleDateTimeSpan` value.
 
 The return value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.
 
-```
+```cpp
 enum DateTimeSpanStatus{
    valid = 0,
    invalid = 1,
@@ -382,7 +382,7 @@ For more information about the bounds for `COleDateTimeSpan` values, see the art
 
 Retrieves this date/time-span value expressed in days.
 
-```
+```cpp
 double GetTotalDays() const throw();
 ```
 
@@ -418,7 +418,7 @@ For other functions that query the value of a `COleDateTimeSpan` object, see the
 
 Retrieves this date/time-span value expressed in hours.
 
-```
+```cpp
 double GetTotalHours() const throw();
 ```
 
@@ -454,7 +454,7 @@ See the example for [GetTotalDays](#gettotaldays).
 
 Retrieves this date/time-span value expressed in minutes.
 
-```
+```cpp
 double GetTotalMinutes() const throw();
 ```
 
@@ -490,7 +490,7 @@ See the example for [GetTotalDays](#gettotaldays).
 
 Retrieves this date/time-span value expressed in seconds.
 
-```
+```cpp
 double GetTotalSeconds() const throw();
 ```
 
@@ -526,7 +526,7 @@ See the example for [GetTotalDays](#gettotaldays).
 
 The underlying **`double`** value for this `COleDateTime` object.
 
-```
+```cpp
 double m_span;
 ```
 
@@ -541,13 +541,13 @@ This value expresses the date/time-span in days.
 
 The type for this data member is the enumerated type `DateTimeSpanStatus`, which is defined within the `COleDateTimeSpan` class.
 
-```
+```cpp
 DateTimeSpanStatus m_status;
 ```
 
 ### Remarks
 
-```
+```cpp
 enum DateTimeSpanStatus{
    valid = 0,
    invalid = 1,
@@ -582,7 +582,7 @@ For more information about the bounds for `COleDateTimeSpan` values, see the art
 
 Copies a `COleDateTimeSpan` value.
 
-```
+```cpp
 COleDateTimeSpan& operator=(double dblSpanSrc) throw();
 ```
 
@@ -594,7 +594,7 @@ This overloaded assignment operator copies the source date/time-span value into 
 
 Add, subtract, and change sign for `COleDateTimeSpan` values.
 
-```
+```cpp
 COleDateTimeSpan operator+(const COleDateTimeSpan& dateSpan) const throw();
 COleDateTimeSpan operator-(const COleDateTimeSpan& dateSpan) const throw();
 COleDateTimeSpan operator-() const throw();
@@ -618,7 +618,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 Add and subtract a `COleDateTimeSpan` value from this `COleDateTimeSpan` value.
 
-```
+```cpp
 COleDateTimeSpan& operator+=(const COleDateTimeSpan dateSpan) throw();
 COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
 ```
@@ -639,7 +639,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 Converts this `COleDateTimeSpan` value to a **`double`**.
 
-```
+```cpp
 operator double() const throw();
 ```
 
@@ -701,7 +701,7 @@ The new status value for this `COleDateTimeSpan` object.
 
 The *Status* parameter value is defined by the `DateTimeSpanStatus` enumerated type, which is defined within the `COleDateTimeSpan` class.
 
-```
+```cpp
 enum DateTimeSpanStatus{
    valid = 0,
    invalid = 1,

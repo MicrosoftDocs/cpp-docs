@@ -3,16 +3,16 @@ description: "Learn more about: _fcvt"
 title: "_fcvt"
 ms.date: "4/2/2020"
 api_name: ["_fcvt", "_o__fcvt"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fcvt"]
 helpviewer_keywords: ["converting floating point, to strings", "_fcvt function", "floating-point functions, converting number to string", "fcvt function", "floating-point functions"]
 ms.assetid: 74584c88-f0dd-4907-8fca-52da5df583f5
 ---
-# _fcvt
+# `_fcvt`
 
-Converts a floating-point number to a string. A more secure version of this function is available; see [_fcvt_s](fcvt-s.md).
+Converts a floating-point number to a string. A more secure version of this function is available; see [`_fcvt_s`](fcvt-s.md).
 
 ## Syntax
 
@@ -27,45 +27,45 @@ char *_fcvt(
 
 ### Parameters
 
-*value*<br/>
+*`value`*\
 Number to be converted.
 
-*count*<br/>
+*`count`*\
 Number of digits after the decimal point.
 
-*dec*<br/>
+*`dec`*\
 Pointer to the stored decimal-point position.
 
-*sign*<br/>
+*`sign`*\
 Pointer to the stored sign indicator.
 
-## Return Value
+## Return value
 
-**_fcvt** returns a pointer to the string of digits, **NULL** on error.
+**`_fcvt`** returns a pointer to the string of digits, `NULL` on error.
 
 ## Remarks
 
-The **_fcvt** function converts a floating-point number to a null-terminated character string. The *value* parameter is the floating-point number to be converted. **_fcvt** stores the digits of *value* as a string and appends a null character ('\0'). The *count* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *count* places. If there are fewer than *count* digits of precision, the string is padded with zeros.
+The **`_fcvt`** function converts a floating-point number to a null-terminated character string. The *`value`* parameter is the floating-point number to be converted. **`_fcvt`** stores the digits of *`value`* as a string and appends a null character ('\0'). The *`count`* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *`count`* places. If there are fewer than *`count`* digits of precision, the string is padded with zeros.
 
-The total number of digits returned by **_fcvt** will not exceed **_CVTBUFSIZE**.
+The total number of digits returned by **`_fcvt`** won't exceed `_CVTBUFSIZE`.
 
-Only digits are stored in the string. The position of the decimal point and the sign of *value* can be obtained from *dec* and sign after the call. The *dec* parameter points to an integer value; this integer value gives the position of the decimal point with respect to the beginning of the string. A zero or negative integer value indicates that the decimal point lies to the left of the first digit. The parameter *sign* points to an integer indicating the sign of *value*. The integer is set to 0 if *value* is positive and is set to a nonzero number if *value* is negative.
+Only digits are stored in the string. The position of the decimal point and the sign of *`value`* can be obtained from *`dec`* and sign after the call. The *`dec`* parameter points to an integer value; this integer value gives the position of the decimal point with respect to the beginning of the string. A zero or negative integer value indicates that the decimal point lies to the left of the first digit. The parameter *`sign`* points to an integer indicating the sign of *`value`*. The integer is set to 0 if *`value`* is positive and is set to a nonzero number if *`value`* is negative.
 
-The difference between **_ecvt** and **_fcvt** is in the interpretation of the *count* parameter. **_ecvt** interprets *count* as the total number of digits in the output string, whereas **_fcvt** interprets *count* as the number of digits after the decimal point.
+The difference between `_ecvt` and **`_fcvt`** is in the interpretation of the *`count`* parameter. `_ecvt` interprets *`count`* as the total number of digits in the output string, whereas **`_fcvt`** interprets *`count`* as the number of digits after the decimal point.
 
-**_ecvt** and **_fcvt** use a single statically allocated buffer for the conversion. Each call to one of these routines destroys the results of the previous call.
+`_ecvt` and **`_fcvt`** use a single statically allocated buffer for the conversion. Each call to one of these routines destroys the results of the previous call.
 
-This function validates its parameters. If *dec* or *sign* is **NULL**, or *count* is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and **NULL** is returned.
+This function validates its parameters. If *`dec`* or *`sign`* is `NULL`, or *`count`* is 0, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and `NULL` is returned.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**_fcvt**|\<stdlib.h>|
+| Function | Required header |
+|---|---|
+| **`_fcvt`** | \<stdlib.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -98,8 +98,8 @@ source: 3.1415926535   buffer: '31415927'   decimal: 1   sign: 0
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_gcvt](gcvt.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](atof-atof-l-wtof-wtof-l.md)\
+[`_ecvt`](ecvt.md)\
+[`_gcvt`](gcvt.md)

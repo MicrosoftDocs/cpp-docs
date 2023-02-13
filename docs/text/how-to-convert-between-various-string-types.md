@@ -2,7 +2,7 @@
 description: "Learn more about: How to: Convert Between Various String Types"
 title: "How to: Convert Between Various String Types"
 ms.custom: "get-started-article"
-ms.date: 05/09/2022
+ms.date: 09/29/2022
 helpviewer_keywords: ["converting string types", "string conversion [C++]", "strings [C++], converting"]
 ---
 # How to: Convert between various string types
@@ -17,7 +17,7 @@ For more background information about converting narrow and wide strings, see [C
 
 ## Run the examples
 
-To run the examples in Visual Studio 2022, you can either create a new C++ Windows Console App or, if you have installed C++/CLI support, you can create a CLR Console App (.NET Framework).
+To run the examples in Visual Studio 2022, you can create a new C++ Windows Console App. Or, if you've installed C++/CLI support, you can create a CLR Console App (.NET Framework).
 
 If you create a CLR Console App, you don't have to make the following changes to the compiler and debugger settings. However, you'll need to add `#include "pch.h"` to the top of each example.
 
@@ -29,12 +29,12 @@ If you create a new C++ Windows Console app to run the examples, make the follow
 
 The `/clr` switch conflicts with some compiler switches that are set when you create a C++ Windows Console App project. The following links provide instructions for where in the IDE you can turn off the conflicting switches:
 
-- Turn off [Set Basic Runtime Checks to Default (/RTC1)](../build/reference/rtc-run-time-error-checks.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **Code Generation** > **Basic Runtime Checks** > **Default**
-- Turn off [/EHs (Exception handling model)](../build/reference/eh-exception-handling-model.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **Code Generation** > **Enable C++ Exceptions** > **No**
-- Exchange [/Zi (Debug information format)](../build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment) for [/Z7](/cpp/build/reference/z7-zi-zi-debug-information-format#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Debug Information Format** > **C7 compatible**.
-- Turn off [/JMC (Just My Code debugging)](../build/reference/jmc.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Support Just My Code Debugging** > **No**
+- Turn off [`/RTC1` (Set Basic Runtime Checks to Default)](../build/reference/rtc-run-time-error-checks.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **Code Generation** > **Basic Runtime Checks** > **Default**
+- Turn off [`/EHs` (Exception handling model)](../build/reference/eh-exception-handling-model.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **Code Generation** > **Enable C++ Exceptions** > **No**
+- Exchange [`/Zi` (Debug information format)](../build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment) for [`/Z7`](../build/reference/z7-zi-zi-debug-information-format.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Debug Information Format** > **C7 compatible**
+- Turn off [`/JMC` (Just My Code debugging)](../build/reference/jmc.md#to-set-this-compiler-option-in-the-visual-studio-development-environment): **Project Properties** > **C/C++** > **General** > **Support Just My Code Debugging** > **No**
 - Set the debugger type to mixed: **Project Properties** > **Debugging** > **Debugger Type** > **Mixed (.NET framework)**
-- Turn on [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute#to-set-this-linker-option-in-the-visual-studio-development-environment): **Project properties** > **Linker** > **Debugging** > **Debuggable Assembly** > **Yes (ASSEMBLYDEBUG)**
+- Turn on [`/ASSEMBLYDEBUG`](../build/reference/assemblydebug-add-debuggableattribute.md#to-set-this-linker-option-in-the-visual-studio-development-environment): **Project properties** > **Linker** > **Debugging** > **Debuggable Assembly** > **Yes (ASSEMBLYDEBUG)**
 
 ## Example: Convert from `char *`
 
@@ -270,6 +270,7 @@ Hello, World! (System::String)
 This example demonstrates how to convert from a `_bstr_t` to other string types. The `_bstr_t` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and doesn't use a null character to terminate the string, but the string type you convert to may require a terminating null character.
 
 For information about running and debugging this example, see [Run the examples](#run-the-examples).
+
 ### Code
 
 ```cpp
@@ -844,7 +845,7 @@ On an `en-US` language version of Windows, the code page defaults to 1033. If yo
 
 There's a mismatch in the way that `CStringA` performs a wide to narrow conversion and the way that `gcnew string(CHAR*)` performs a narrow to wide conversion. `CStringA` passes `CP_THREAD_ACP`, which means to use the current *thread* code page, to the narrowing conversion method. But `string.ctor(sbyte*)` passes `CP_ACP`, which means to use the current *system* code page, to the widening conversion method. If the system and thread code pages don't match, it can cause round-trip data corruption.
 
-To reconcile this difference, use the constant `_CONVERSION_DONT_USE_THREAD_LOCALE`) to get the conversion to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [_CONVERSION_DONT_USE_THREAD_LOCALE](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
+To reconcile this difference, use the constant `_CONVERSION_DONT_USE_THREAD_LOCALE`) to get the conversion to use `CP_ACP` (like .NET) instead of `CP_THREAD_ACP`. For more information, see [`_CONVERSION_DONT_USE_THREAD_LOCALE`](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f3820781-c418-40bf-8c4f-7250001e5b68/visual-studio-2015-update-1-implicit-string-narrow-wide-conversion-and).
 
 Another approach is to use [`pinvoke`](/dotnet/standard/native-interop/pinvoke) to call [`GetThreadLocale`](/windows/win32/api/winnls/nf-winnls-getthreadlocale). Use the returned `LCID` to create a [`CultureInfo`](/dotnet/api/system.globalization.cultureinfo). Then use `CultureInfo.TextInfo` to get the code page to use in the conversion.
 
@@ -856,8 +857,8 @@ Another approach is to use [`pinvoke`](/dotnet/standard/native-interop/pinvoke) 
 [How to: convert `System::String` to standard `String`](../dotnet/how-to-convert-system-string-to-standard-string.md)\
 [How to: convert `System::String` to `wchar_t*` or `char*`](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)\
 [Programming with `CComBSTR`](../atl/programming-with-ccombstr-atl.md)\
-[`mbstowcs_s, _mbstowcs_s_l`](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)\
-[`wcstombs_s, _wcstombs_s_l`](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)\
-[`strcpy_s, wcscpy_s, _mbscpy_s`](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)\
-[`strcat_s, wcscat_s, _mbscat_s`](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)\
+[`mbstowcs_s`, `_mbstowcs_s_l`](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)\
+[`wcstombs_s`, `_wcstombs_s_l`](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)\
+[`strcpy_s`, `wcscpy_s`, `_mbscpy_s`](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)\
+[`strcat_s`, `wcscat_s`, `_mbscat_s`](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)\
 [`pin_ptr` (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)

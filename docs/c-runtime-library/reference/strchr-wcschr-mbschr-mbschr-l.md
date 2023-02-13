@@ -3,7 +3,7 @@ description: "Learn more about: strchr, wcschr, _mbschr, _mbschr_l"
 title: "strchr, wcschr, _mbschr, _mbschr_l"
 ms.date: "4/2/2020"
 api_name: ["strchr", "wcschr", "_mbschr_l", "_mbschr", "_o__mbschr", "_o__mbschr_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftcschr", "strchr", "wcschr", "_tcschr", "_mbschr"]
@@ -15,7 +15,7 @@ ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
 Finds a character in a string, by using the current locale or a specified `LC_CTYPE` conversion-state category.
 
 > [!IMPORTANT]
-> `_mbschr` and `_mbschr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbschr`** and **`_mbschr_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -75,47 +75,46 @@ const unsigned char *_mbschr_l(
 
 ### Parameters
 
-*`str`*<br/>
+*`str`*\
 Null-terminated source string.
 
-*`c`*<br/>
+*`c`*\
 Character to be located.
 
-*`locale`*<br/>
+*`locale`*\
 Locale to use.
 
-## Return Value
+## Return value
 
-Each of these functions returns a pointer to the first occurrence of *`c`* in *`str`*, or `NULL` if *`c`* is not found.
+Each of these functions returns a pointer to the first occurrence of *`c`* in *`str`*, or `NULL` if *`c`* isn't found.
 
 ## Remarks
 
-The `strchr` function finds the first occurrence of *`c`* in *`str`*, or it returns `NULL` if *`c`* is not found. The null terminating character is included in the search.
+The **`strchr`** function finds the first occurrence of *`c`* in *`str`*, or it returns `NULL` if *`c`* isn't found. The null terminating character is included in the search.
 
-`wcschr`, `_mbschr` and `_mbschr_l` are wide-character and multibyte-character versions of `strchr`. The arguments and return value of `wcschr` are wide-character strings; those of `_mbschr` are multibyte-character strings. `_mbschr` recognizes multibyte-character sequences. Also, if the string is a null pointer, `_mbschr` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbschr` returns `NULL` and sets `errno` to `EINVAL`. `strchr` and `wcschr` do not validate their parameters. These three functions behave identically otherwise.
+**`wcschr`**, **`_mbschr`** and **`_mbschr_l`** are wide-character and multibyte-character versions of **`strchr`**. The arguments and return value of **`wcschr`** are wide-character strings. The arguments and return value of **`_mbschr`** are multibyte-character strings. **`_mbschr`** recognizes multibyte-character sequences. Also, if the string is a null pointer, **`_mbschr`** invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbschr`** returns `NULL` and sets `errno` to `EINVAL`. **`strchr`** and **`wcschr`** don't validate their parameters. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; for more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; for more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
 In C, these functions take a **`const`** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **`const`** returns a pointer to **`const`**; the version that takes a pointer to non-**`const`** returns a pointer to non-**`const`**. The macro `_CRT_CONST_CORRECT_OVERLOADS` is defined if both the **`const`** and non-**`const`** versions of these functions are available. If you require the non-**`const`** behavior for both C++ overloads, define the symbol `_CONST_RETURN`.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcschr`|`strchr`|`_mbschr`|`wcschr`|
-|**_n/a**|**n/a**|`_mbschr_l`|**n/a**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_tcschr` | **`strchr`** | **`_mbschr`** | **`wcschr`** |
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`strchr`|`<string.h>`|
-|`wcschr`|`<string.h>` or `<wchar.h>`|
-|`_mbschr`, `_mbschr_l`|`<mbstring.h>`|
+| Routine | Required header |
+|---|---|
+| **`strchr`** | `<string.h>` |
+| **`wcschr`** | `<string.h>` or `<wchar.h>` |
+| **`_mbschr`**, **`_mbschr_l`** | `<mbstring.h>` |
 
-For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information about compatibility, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -176,14 +175,14 @@ Result:   last r found at position 30
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[`strcspn`, `wcscspn`, `_mbscspn`, `_mbscspn_l`](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
-[`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
-[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[`strpbrk`, `wcspbrk`, `_mbspbrk`, `_mbspbrk_l`](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)<br/>
-[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[`strstr`, `wcsstr`, `_mbsstr`, `_mbsstr_l`](strstr-wcsstr-mbsstr-mbsstr-l.md)<br/>
+[String manipulation](../string-manipulation-crt.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[`strcspn`, `wcscspn`, `_mbscspn`, `_mbscspn_l`](strcspn-wcscspn-mbscspn-mbscspn-l.md)\
+[`strncat`, `_strncat_l`, `wcsncat`, `_wcsncat_l`, `_mbsncat`, `_mbsncat_l`](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)\
+[`strncmp`, `wcsncmp`, `_mbsncmp`, `_mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strpbrk`, `wcspbrk`, `_mbspbrk`, `_mbspbrk_l`](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)\
+[`strrchr`, `wcsrchr`, `_mbsrchr`, `_mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`strstr`, `wcsstr`, `_mbsstr`, `_mbsstr_l`](strstr-wcsstr-mbsstr-mbsstr-l.md)

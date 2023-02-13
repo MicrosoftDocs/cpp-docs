@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2047"
 title: "ML Nonfatal Error A2047"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2047"]
 helpviewer_keywords: ["A2047"]
 ms.assetid: 7799f988-6c2e-4022-a447-c56b48473f0c

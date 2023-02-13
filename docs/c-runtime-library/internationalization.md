@@ -11,7 +11,7 @@ ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
 
 The Microsoft runtime library provides many routines that you can use to customize your app for international markets such as:
 
-- [locale-related routines](../c-runtime-library/locale.md)
+- [locale-related routines](./locale.md)
 - wide-character routines
 - multibyte-character routines
 - generic-text routines
@@ -24,4 +24,4 @@ ISO646 operator alternatives are also included.
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+[Universal C runtime routines by category](./run-time-routines-by-category.md)

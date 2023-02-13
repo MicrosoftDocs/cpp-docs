@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: `auto` (C++)"
 title: "auto (C++)"
-ms.date: "12/10/2019"
+ms.date: 09/27/2022
 f1_keywords: ["auto_CPP", "auto"]
 helpviewer_keywords: ["auto keyword [C++]"]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
@@ -25,9 +25,9 @@ The **`auto`** keyword directs the compiler to use the initialization expression
 
 We recommend that you use the **`auto`** keyword for most situations—unless you really want a conversion—because it provides these benefits:
 
-- **Robustness:** If the expression’s type is changed—this includes when a function return type is changed—it just works.
+- **Robustness:** If the expression's type is changed—including when a function return type is changed—it just works.
 
-- **Performance:** You’re guaranteed that there will be no conversion.
+- **Performance:** You're guaranteed that there's no conversion.
 
 - **Usability:** You don't have to worry about type name spelling difficulties and typos.
 
@@ -35,9 +35,9 @@ We recommend that you use the **`auto`** keyword for most situations—unless yo
 
 Conversion cases in which you might not want to use **`auto`**:
 
-- When you want a specific type and nothing else will do.
+- You want a specific type and nothing else will do.
 
-- Expression template helper types—for example, `(valarray+valarray)`.
+- In expression template helper types—for example, `(valarray+valarray)`.
 
 To use the **`auto`** keyword, use it instead of a type to declare a variable, and specify an initialization expression. In addition, you can modify the **`auto`** keyword by using specifiers and declarators such as **`const`**, **`volatile`**, pointer (**`*`**), reference (**`&`**), and rvalue reference (**`&&`**). The compiler evaluates the initialization expression and then uses that information to deduce the type of the variable.
 
@@ -45,14 +45,14 @@ The **`auto`** initialization expression can take several forms:
 
 - Universal initialization syntax, such as `auto a { 42 };`.
 - Assignment syntax, such as `auto b = 0;`.
-- Universal assignment syntax, which combines the two previous forms, such as `auto c = { 3.14156 };`.
+- Universal assignment syntax, which combines the two previous forms, such as `auto c = { 3.14159 };`.
 - Direct initialization, or constructor-style syntax, such as `auto d( 1.41421f );`.
 
 For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.
 
 When **`auto`** is used to declare the loop parameter in a range-based **`for`** statement, it uses a different initialization syntax, for example `for (auto& i : iterable) do_action(i);`. For more information, see [Range-based `for` Statement (C++)](../cpp/range-based-for-statement-cpp.md).
 
-The **`auto`** keyword is a placeholder for a type, but it is not itself a type. Therefore, the **`auto`** keyword cannot be used in casts or operators such as [`sizeof`](../cpp/sizeof-operator.md) and (for C++/CLI) [`typeid`](../extensions/typeid-cpp-component-extensions.md).
+The **`auto`** keyword is a placeholder for a type, but it isn't itself a type. Therefore, the **`auto`** keyword can't be used in casts or operators such as [`sizeof`](../cpp/sizeof-operator.md) and (for C++/CLI) [`typeid`](../extensions/typeid-cpp-component-extensions.md).
 
 ## Usefulness
 
@@ -62,11 +62,11 @@ You can also use **`auto`** to declare and initialize a variable to a lambda exp
 
 ## Trailing Return Types
 
-You can use **`auto`**, together with the **`decltype`** type specifier, to help write template libraries. Use **`auto`** and **`decltype`** to declare a template function whose return type depends on the types of its template arguments. Or, use **`auto`** and **`decltype`** to declare a template function that wraps a call to another function, and then returns whatever is the return type of that other function. For more information, see [`decltype`](../cpp/decltype-cpp.md).
+You can use **`auto`**, together with the **`decltype`** type specifier, to help write template libraries. Use **`auto`** and **`decltype`** to declare a function template whose return type depends on the types of its template arguments. Or, use **`auto`** and **`decltype`** to declare a function template that wraps a call to another function, and then returns whatever is the return type of that other function. For more information, see [`decltype`](../cpp/decltype-cpp.md).
 
 ## References and cv-qualifiers
 
-Note that using **`auto`** drops references, **`const`** qualifiers, and **`volatile`** qualifiers. Consider the following example:
+Using **`auto`** drops references, **`const`** qualifiers, and **`volatile`** qualifiers. Consider the following example:
 
 ```cpp
 // cl.exe /analyze /EHsc /W4
@@ -88,7 +88,7 @@ int main( )
 }
 ```
 
-In the previous example, myAuto is an **`int`**, not an **`int`** reference, so the output is `11 11`, not `11 12` as would be the case if the reference qualifier had not been dropped by **`auto`**.
+In the previous example, myAuto is an **`int`**, not an **`int`** reference, so the output is `11 11`, not `11 12` as would be the case if the reference qualifier hadn't been dropped by **`auto`**.
 
 ## Type deduction with braced initializers (C++14)
 
@@ -119,21 +119,21 @@ int main()
 }
 ```
 
-## Restrictions and Error Messages
+## Restrictions and error messages
 
 The following table lists the restrictions on the use of the **`auto`** keyword, and the corresponding diagnostic error message that the compiler emits.
 
-|Error number|Description|
-|------------------|-----------------|
-|[C3530](../error-messages/compiler-errors-2/compiler-error-c3530.md)|The **`auto`** keyword cannot be combined with any other type-specifier.|
-|[C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md)|A symbol that is declared with the **`auto`** keyword must have an initializer.|
-|[C3532](../error-messages/compiler-errors-2/compiler-error-c3532.md)|You incorrectly used the **`auto`** keyword to declare a type. For example, you declared a method return type or an array.|
-|[C3533](../error-messages/compiler-errors-2/compiler-error-c3533.md), [C3539](../error-messages/compiler-errors-2/compiler-error-c3539.md)|A parameter or template argument cannot be declared with the **`auto`** keyword.|
-|[C3535](../error-messages/compiler-errors-2/compiler-error-c3535.md)|A method or template parameter cannot be declared with the **`auto`** keyword.|
-|[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|A symbol cannot be used before it is initialized. In practice, this means that a variable cannot be used to initialize itself.|
-|[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|You cannot cast to a type that is declared with the **`auto`** keyword.|
-|[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|All the symbols in a declarator list that is declared with the **`auto`** keyword must resolve to the same type. For more information, see [Declarations and Definitions](declarations-and-definitions-cpp.md).|
-|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|The [sizeof](../cpp/sizeof-operator.md) and [typeid](../extensions/typeid-cpp-component-extensions.md) operators cannot be applied to a symbol that is declared with the **`auto`** keyword.|
+| Error number | Description |
+|--|--|
+| [C3530](../error-messages/compiler-errors-2/compiler-error-c3530.md) | The **`auto`** keyword can't be combined with any other type-specifier. |
+| [C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md) | A symbol that is declared with the **`auto`** keyword must have an initializer. |
+| [C3532](../error-messages/compiler-errors-2/compiler-error-c3532.md) | You incorrectly used the **`auto`** keyword to declare a type. For example, you declared a method return type or an array. |
+| [C3533](../error-messages/compiler-errors-2/compiler-error-c3533.md), [C3539](../error-messages/compiler-errors-2/compiler-error-c3539.md) | A parameter or template argument can't be declared with the **`auto`** keyword. |
+| [C3535](../error-messages/compiler-errors-2/compiler-error-c3535.md) | A method or template parameter can't be declared with the **`auto`** keyword. |
+| [C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md) | A symbol can't be used before it's initialized. In practice, it means that a variable can't be used to initialize itself. |
+| [C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md) | You can't cast to a type that is declared with the **`auto`** keyword. |
+| [C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md) | All the symbols in a declarator list that is declared with the **`auto`** keyword must resolve to the same type. For more information, see [Declarations and Definitions](declarations-and-definitions-cpp.md). |
+| [C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md) | The [sizeof](../cpp/sizeof-operator.md) and [typeid](../extensions/typeid-cpp-component-extensions.md) operators can't be applied to a symbol that is declared with the **`auto`** keyword. |
 
 ## Examples
 
@@ -221,12 +221,12 @@ int main()
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[`/Zc:auto` (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
-[`sizeof` Operator](../cpp/sizeof-operator.md)<br/>
-[`typeid`](../extensions/typeid-cpp-component-extensions.md)<br/>
-[`operator new`](new-operator-cpp.md)<br/>
-[Declarations and Definitions](declarations-and-definitions-cpp.md)<br/>
-[Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)<br/>
-[Initializers](../cpp/initializers.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)\
+[`/Zc:auto` (Deduce variable type)](../build/reference/zc-auto-deduce-variable-type.md)\
+[`sizeof` operator](../cpp/sizeof-operator.md)\
+[`typeid`](../extensions/typeid-cpp-component-extensions.md)\
+[`operator new`](new-operator-cpp.md)\
+[Declarations and definitions](declarations-and-definitions-cpp.md)\
+[Examples of lambda expressions](../cpp/examples-of-lambda-expressions.md)\
+[Initializers](../cpp/initializers.md)\
 [`decltype`](../cpp/decltype-cpp.md)

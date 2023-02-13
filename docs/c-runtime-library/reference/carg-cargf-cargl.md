@@ -10,7 +10,7 @@ f1_keywords: ["carg", "cargf", "cargl", "complex/carg", "complex/cargf", "comple
 helpviewer_keywords: ["carg function", "cargf function", "cargl function"]
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
 ---
-# carg, cargf, cargl
+# `carg`, `cargf`, `cargl`
 
 Retrieves the argument of a complex number, with a branch cut along the negative real axis.
 
@@ -37,34 +37,34 @@ long double cargl(
 
 ### Parameters
 
-*z*\
+*`z`*\
 A complex number.
 
-## Return Value
+## Return value
 
-The argument (also known as the phase) of *z*. The result is in the interval [-π, +π].
+The argument (also known as the phase) of *`z`*. The result is in the interval [-π, +π].
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **carg** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **carg** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **`carg`** that take `_Fcomplex` or `_Lcomplex` values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`carg`** always takes a `_Dcomplex` value and returns a **`double`** value.
 
-If you use the \<tgmath.h> `carg()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `carg()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
-|Routine|C header|C++ header|
-|-------------|--------------|------------------|
-|**carg**, **cargf**, **cargl**|\<complex.h>|\<ccomplex>|
-|**carg** macro | \<tgmath.h> ||
+| Routine | C header | C++ header |
+|---|---|---|
+| **`carg`**, **`cargf`**, **`cargl`** | \<complex.h> | \<ccomplex> |
+| **`carg`** macro | \<tgmath.h> |  |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`norm`, `normf`, `norml`](norm-normf-norml1.md)\
+[`creal`, `crealf`, `creall`](creal-crealf-creall.md)\
+[`cproj`, `cprojf`, `cprojl`](cproj-cprojf-cprojl.md)\
+[`conj`, `conjf`, `conjl`](conj-conjf-conjl.md)\
+[`cimag`, `cimagf`, `cimagl`](cimag-cimagf-cimagl.md)\
+[`cabs`, `cabsf`, `cabsl`](cabs-cabsf-cabsl.md)

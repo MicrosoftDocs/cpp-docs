@@ -3,14 +3,14 @@ description: "Learn more about: _cputs, _cputws"
 title: "_cputs, _cputws"
 ms.date: "4/2/2020"
 api_name: ["_cputws", "_cputs", "_o__cputs", "_o__cputws"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cputws", "_cputs", "_cputws"]
 helpviewer_keywords: ["strings [C++], writing", "_cputs function", "_cputws function", "putting strings to the console", "cputs function", "console, sending strings to", "cputws function"]
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
 ---
-# _cputs, _cputws
+# `_cputs`, `_cputws`
 
 Puts a string to the console.
 
@@ -30,39 +30,39 @@ int _cputws(
 
 ### Parameters
 
-*str*<br/>
+*`str`*\
 Output string.
 
-## Return Value
+## Return value
 
-If successful, **_cputs** returns 0. If the function fails, it returns a nonzero value.
+If successful, **`_cputs`** returns 0. If the function fails, it returns a nonzero value.
 
 ## Remarks
 
-The **_cputs** function writes the null-terminated string that's pointed to by *str* directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.
+The **`_cputs`** function writes the null-terminated string that's pointed to by *`str`* directly to the console. A carriage return-line feed (CR-LF) combination isn't automatically appended to the string.
 
-This function validates its parameter. If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and -1 is returned.
+This function validates its parameter. If *`str`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`, and -1 is returned.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
-|---------------------|--------------------------------------|--------------------|-----------------------|
-|**_cputts**|**_cputs**|**_cputs**|**_cputws**|
+| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| `_cputts` | **`_cputs`** | **`_cputs`** | **`_cputws`** |
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**_cputs**|\<conio.h>|\<errno.h>|
-|**_cputws**|\<conio.h>|\<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_cputs`** | \<conio.h> | \<errno.h> |
+| **`_cputws`** | \<conio.h> | \<errno.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -123,5 +123,5 @@ Hello world (courtesy of _cputws)!
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_putch, _putwch](putch-putwch.md)<br/>
+[Console and port I/O](../console-and-port-i-o.md)\
+[`_putch`, `_putwch`](putch-putwch.md)

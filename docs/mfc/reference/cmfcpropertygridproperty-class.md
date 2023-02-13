@@ -1,19 +1,19 @@
 ---
-description: "Learn more about: CMFCPropertyGridProperty Class"
-title: "CMFCPropertyGridProperty Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CMFCPropertyGridProperty class"
+title: "CMFCPropertyGridProperty class"
+ms.date: "10/12/2022"
 f1_keywords: ["CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AddOption", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AddSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AdjustButtonRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AdjustInPlaceEditRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AllowEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateInPlaceEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateSpinControl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Enable", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::EnableSpinControl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Expand", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::FormatProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetExpandedSubItems", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetHierarchyLevel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetNameTooltip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOption", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOptionCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetParent", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetSubItemsCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetValueTooltip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::HitTest", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsAllowEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsEnabled", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsExpanded", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsGroup", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsInPlaceEditing", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsModified", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsParentExpanded", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsSelected", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsVisible", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnCloseCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDblClk", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawExpandBox", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnEndEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnKillSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnPosSizeChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnRClickName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnRClickValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSelectCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSetCursor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSetSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnUpdateValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::PushChar", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Redraw", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::RemoveAllOptions", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::RemoveSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::ResetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Show", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::HasButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Init", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsValueChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnCtlColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDestroyWindow", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnKillFocus", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatDouble", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatFloat", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatLong", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatShort"]
 helpviewer_keywords: ["CMFCPropertyGridProperty [MFC], CMFCPropertyGridProperty", "CMFCPropertyGridProperty [MFC], AddOption", "CMFCPropertyGridProperty [MFC], AddSubItem", "CMFCPropertyGridProperty [MFC], AdjustButtonRect", "CMFCPropertyGridProperty [MFC], AdjustInPlaceEditRect", "CMFCPropertyGridProperty [MFC], AllowEdit", "CMFCPropertyGridProperty [MFC], CreateInPlaceEdit", "CMFCPropertyGridProperty [MFC], CreateSpinControl", "CMFCPropertyGridProperty [MFC], Enable", "CMFCPropertyGridProperty [MFC], EnableSpinControl", "CMFCPropertyGridProperty [MFC], Expand", "CMFCPropertyGridProperty [MFC], FormatProperty", "CMFCPropertyGridProperty [MFC], GetData", "CMFCPropertyGridProperty [MFC], GetDescription", "CMFCPropertyGridProperty [MFC], GetExpandedSubItems", "CMFCPropertyGridProperty [MFC], GetHierarchyLevel", "CMFCPropertyGridProperty [MFC], GetName", "CMFCPropertyGridProperty [MFC], GetNameTooltip", "CMFCPropertyGridProperty [MFC], GetOption", "CMFCPropertyGridProperty [MFC], GetOptionCount", "CMFCPropertyGridProperty [MFC], GetOriginalValue", "CMFCPropertyGridProperty [MFC], GetParent", "CMFCPropertyGridProperty [MFC], GetRect", "CMFCPropertyGridProperty [MFC], GetSubItem", "CMFCPropertyGridProperty [MFC], GetSubItemsCount", "CMFCPropertyGridProperty [MFC], GetValue", "CMFCPropertyGridProperty [MFC], GetValueTooltip", "CMFCPropertyGridProperty [MFC], HitTest", "CMFCPropertyGridProperty [MFC], IsAllowEdit", "CMFCPropertyGridProperty [MFC], IsEnabled", "CMFCPropertyGridProperty [MFC], IsExpanded", "CMFCPropertyGridProperty [MFC], IsGroup", "CMFCPropertyGridProperty [MFC], IsInPlaceEditing", "CMFCPropertyGridProperty [MFC], IsModified", "CMFCPropertyGridProperty [MFC], IsParentExpanded", "CMFCPropertyGridProperty [MFC], IsSelected", "CMFCPropertyGridProperty [MFC], IsVisible", "CMFCPropertyGridProperty [MFC], OnClickButton", "CMFCPropertyGridProperty [MFC], OnClickName", "CMFCPropertyGridProperty [MFC], OnClickValue", "CMFCPropertyGridProperty [MFC], OnCloseCombo", "CMFCPropertyGridProperty [MFC], OnDblClk", "CMFCPropertyGridProperty [MFC], OnDrawButton", "CMFCPropertyGridProperty [MFC], OnDrawDescription", "CMFCPropertyGridProperty [MFC], OnDrawExpandBox", "CMFCPropertyGridProperty [MFC], OnDrawName", "CMFCPropertyGridProperty [MFC], OnDrawValue", "CMFCPropertyGridProperty [MFC], OnEdit", "CMFCPropertyGridProperty [MFC], OnEndEdit", "CMFCPropertyGridProperty [MFC], OnKillSelection", "CMFCPropertyGridProperty [MFC], OnPosSizeChanged", "CMFCPropertyGridProperty [MFC], OnRClickName", "CMFCPropertyGridProperty [MFC], OnRClickValue", "CMFCPropertyGridProperty [MFC], OnSelectCombo", "CMFCPropertyGridProperty [MFC], OnSetCursor", "CMFCPropertyGridProperty [MFC], OnSetSelection", "CMFCPropertyGridProperty [MFC], OnUpdateValue", "CMFCPropertyGridProperty [MFC], PushChar", "CMFCPropertyGridProperty [MFC], Redraw", "CMFCPropertyGridProperty [MFC], RemoveAllOptions", "CMFCPropertyGridProperty [MFC], RemoveSubItem", "CMFCPropertyGridProperty [MFC], ResetOriginalValue", "CMFCPropertyGridProperty [MFC], SetData", "CMFCPropertyGridProperty [MFC], SetDescription", "CMFCPropertyGridProperty [MFC], SetName", "CMFCPropertyGridProperty [MFC], SetOriginalValue", "CMFCPropertyGridProperty [MFC], SetValue", "CMFCPropertyGridProperty [MFC], Show", "CMFCPropertyGridProperty [MFC], CreateCombo", "CMFCPropertyGridProperty [MFC], HasButton", "CMFCPropertyGridProperty [MFC], Init", "CMFCPropertyGridProperty [MFC], IsSubItem", "CMFCPropertyGridProperty [MFC], IsValueChanged", "CMFCPropertyGridProperty [MFC], OnCtlColor", "CMFCPropertyGridProperty [MFC], OnDestroyWindow", "CMFCPropertyGridProperty [MFC], OnKillFocus", "CMFCPropertyGridProperty [MFC], m_strFormatDouble", "CMFCPropertyGridProperty [MFC], m_strFormatFloat", "CMFCPropertyGridProperty [MFC], m_strFormatLong", "CMFCPropertyGridProperty [MFC], m_strFormatShort"]
 ---
-# `CMFCPropertyGridProperty` Class
+# `CMFCPropertyGridProperty` class
 
 A `CMFCPropertyGridProperty` object represents a list item in a property list control.
 
-   For more detail see the source code located in the **`mfc`** folder of your Visual Studio installation. For example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.
+   For more detail, see the source code located in the **`mfc`** folder of your Visual Studio installation. For example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.
 
 ## Syntax
 
-```
+```cpp
 class CMFCPropertyGridProperty : public CObject
 ```
 
@@ -39,11 +39,11 @@ class CMFCPropertyGridProperty : public CObject
 |[`CMFCPropertyGridProperty::CreateSpinControl`](#createspincontrol)|Called by the framework to create an editable spin button control.|
 |[`CMFCPropertyGridProperty::Enable`](#enable)|Enables or disables a property.|
 |[`CMFCPropertyGridProperty::EnableSpinControl`](#enablespincontrol)|Enables or disables a spin button control that is used to modify a property value.|
-|[`CMFCPropertyGridProperty::Expand`](#expand)|Expands or collapses a property that contains sub-properties.|
+|[`CMFCPropertyGridProperty::Expand`](#expand)|Expands or collapses a property that contains subproperties.|
 |[`CMFCPropertyGridProperty::FormatProperty`](#formatproperty)|Formats the text representation of a property value.|
 |[`CMFCPropertyGridProperty::GetData`](#getdata)|Retrieves a DWORD value that is associated with a property.|
 |[`CMFCPropertyGridProperty::GetDescription`](#getdescription)|Retrieves a property description.|
-|[`CMFCPropertyGridProperty::GetExpandedSubItems`](#getexpandedsubitems)|Retrieves the number of expanded sub-items.|
+|[`CMFCPropertyGridProperty::GetExpandedSubItems`](#getexpandedsubitems)|Retrieves the number of expanded subitems.|
 |[`CMFCPropertyGridProperty::GetHierarchyLevel`](#gethierarchylevel)|Retrieves the zero-based index of the property's hierarchy level.|
 |[`CMFCPropertyGridProperty::GetName`](#getname)|Retrieves the name of the property.|
 |[`CMFCPropertyGridProperty::GetNameTooltip`](#getnametooltip)|Called by the framework to display the name of the property in a tooltip.|
@@ -52,8 +52,8 @@ class CMFCPropertyGridProperty : public CObject
 |[`CMFCPropertyGridProperty::GetOriginalValue`](#getoriginalvalue)|Retrieves the initial value of the current property.|
 |[`CMFCPropertyGridProperty::GetParent`](#getparent)|Retrieves a pointer to a parent property.|
 |[`CMFCPropertyGridProperty::GetRect`](#getrect)|Retrieves the bounding rectangle of a property.|
-|[`CMFCPropertyGridProperty::GetSubItem`](#getsubitem)|Retrieves a sub-property identified by a zero-based index.|
-|[`CMFCPropertyGridProperty::GetSubItemsCount`](#getsubitemscount)|Retrieves the number of sub-items.|
+|[`CMFCPropertyGridProperty::GetSubItem`](#getsubitem)|Retrieves a subproperty identified by a zero-based index.|
+|[`CMFCPropertyGridProperty::GetSubItemsCount`](#getsubitemscount)|Retrieves the number of subitems.|
 |`CMFCPropertyGridProperty::GetThisClass`|Used by the framework to obtain a pointer to the [`CRuntimeClass`](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
 |[`CMFCPropertyGridProperty::GetValue`](#getvalue)|Retrieves a property value.|
 |[`CMFCPropertyGridProperty::GetValueTooltip`](#getvaluetooltip)|Called by the framework to retrieve the text representation of the property value that is then displayed in a tooltip.|
@@ -74,7 +74,7 @@ class CMFCPropertyGridProperty : public CObject
 |[`CMFCPropertyGridProperty::OnDblClk`](#ondblclk)|Called by the framework when the user double clicks a property.|
 |[`CMFCPropertyGridProperty::OnDrawButton`](#ondrawbutton)|Called by the framework to draw a button that is contained in a property.|
 |[`CMFCPropertyGridProperty::OnDrawDescription`](#ondrawdescription)|Called by the framework to display the property description.|
-|[`CMFCPropertyGridProperty::OnDrawExpandBox`](#ondrawexpandbox)|Called by the framework to draw an expand box control near a property that contains sub-properties.|
+|[`CMFCPropertyGridProperty::OnDrawExpandBox`](#ondrawexpandbox)|Called by the framework to draw an expand box control near a property that contains subproperties.|
 |[`CMFCPropertyGridProperty::OnDrawName`](#ondrawname)|Called by the framework to display the property name.|
 |[`CMFCPropertyGridProperty::OnDrawValue`](#ondrawvalue)|Called by the framework to display the property value.|
 |[`CMFCPropertyGridProperty::OnEdit`](#onedit)|Called by the framework when the user is about to modify a property value.|
@@ -90,7 +90,7 @@ class CMFCPropertyGridProperty : public CObject
 |[`CMFCPropertyGridProperty::PushChar`](#pushchar)|Called from the property list control when the property is selected and the user enters a new character.|
 |[`CMFCPropertyGridProperty::Redraw`](#redraw)|Redraws the property.|
 |[`CMFCPropertyGridProperty::RemoveAllOptions`](#removealloptions)|Removes all options (items) from a property.|
-|[`CMFCPropertyGridProperty::RemoveSubItem`](#removesubitem)|Removes the specified sub-item.|
+|[`CMFCPropertyGridProperty::RemoveSubItem`](#removesubitem)|Removes the specified subitem.|
 |[`CMFCPropertyGridProperty::ResetOriginalValue`](#resetoriginalvalue)|Restores the original value of an edited property.|
 |[`CMFCPropertyGridProperty::SetData`](#setdata)|Associates a DWORD value with a property.|
 |[`CMFCPropertyGridProperty::SetDescription`](#setdescription)|Specifies the text that describes the current property.|
@@ -106,7 +106,7 @@ class CMFCPropertyGridProperty : public CObject
 |[`CMFCPropertyGridProperty::CreateCombo`](#createcombo)|Called by the framework to add a combo box to a property.|
 |[`CMFCPropertyGridProperty::HasButton`](#hasbutton)|Indicates whether a property contains a button.|
 |[`CMFCPropertyGridProperty::Init`](#init)|Called by the framework to initialize a property object.|
-|[`CMFCPropertyGridProperty::IsSubItem`](#issubitem)|Indicates whether the specified property is a sub-item of the current property.|
+|[`CMFCPropertyGridProperty::IsSubItem`](#issubitem)|Indicates whether the specified property is a subitem of the current property.|
 |[`CMFCPropertyGridProperty::IsValueChanged`](#isvaluechanged)|Indicates whether the value of the current property has changed.|
 |[`CMFCPropertyGridProperty::OnCtlColor`](#onctlcolor)|Called by the framework when it must retrieve a brush to fill the background color of a property.|
 |[`CMFCPropertyGridProperty::OnDestroyWindow`](#ondestroywindow)|Called by the framework when a property is destroyed or when editing is finished.|
@@ -129,7 +129,7 @@ A property object can represent data types such as strings, dates, and Boolean o
 
 ## Example
 
-The following example demonstrates how to construct a `CMFCPropertyGridProperty` object. The example also demonstrates how to use various methods in the `CMFCPropertyGridProperty` class to add an option, add a sub-item, enable a property, and show a property. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
+The following example demonstrates how to construct a `CMFCPropertyGridProperty` object. The example also demonstrates how to use various methods in the `CMFCPropertyGridProperty` class to add an option, add a subitem, enable a property, and show a property. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#27](../../mfc/reference/codesnippet/cpp/cmfcpropertygridproperty-class_1.cpp)]
 
@@ -147,7 +147,7 @@ The following example demonstrates how to construct a `CMFCPropertyGridProperty`
 
 Adds a new list item to a property list control.
 
-```
+```cpp
 BOOL AddOption(
     LPCTSTR lpszOption,
     BOOL bInsertUnique=TRUE);
@@ -165,13 +165,11 @@ BOOL AddOption(
 
 `TRUE`, which means that the list item is added. Otherwise, `FALSE`, which means that the list item isn't added because the *`bInsertUnique`* parameter is `TRUE` and the list item specified by the *`lpszOption`* parameter already exists.
 
-### Remarks
-
 ## <a name="addsubitem"></a> `CMFCPropertyGridProperty::AddSubItem`
 
 Adds a child item to a property.
 
-```
+```cpp
 BOOL AddSubItem(CMFCPropertyGridProperty* pProp);
 ```
 
@@ -192,7 +190,7 @@ Use this method to create a hierarchical list of parent and child properties. Af
 
 Called by the parent property list control to tell a property to resize the bounding rectangle of an embedded button.
 
-```
+```cpp
 virtual void AdjustButtonRect();
 ```
 
@@ -200,17 +198,15 @@ virtual void AdjustButtonRect();
 
 By default, this method:
 
-- Adjusts the width of the button equal to the height of the button plus 3 pixels.
-
+- Adjusts the width of the button equal to the height of the button plus three pixels.
 - Moves the bounding rectangle of the button to the right edge of the property.
-
 - Shifts the button 1 pixel below the top edge of the property.
 
 ## <a name="adjustinplaceeditrect"></a> `CMFCPropertyGridProperty::AdjustInPlaceEditRect`
 
 Retrieves the boundaries of the text box and optional spin button control that are used to set a property value.
 
-```
+```cpp
 virtual void AdjustInPlaceEditRect(
     CRect& rectEdit,
     CRect& rectSpin);
@@ -241,13 +237,11 @@ void AllowEdit(BOOL bAllow=TRUE);
 *`bAllow`*\
 [in] `TRUE` to make the property editable; `FALSE` to make the property read-only. The default value is `TRUE`.
 
-### Remarks
-
 ## <a name="cmfcpropertygridproperty"></a> `CMFCPropertyGridProperty::CMFCPropertyGridProperty`
 
 Constructs a `CMFCPropertyGridProperty` object.
 
-```
+```cpp
 CMFCPropertyGridProperty(
     const CString& strGroupName,
     DWORD_PTR dwData=0,
@@ -292,13 +286,11 @@ CMFCPropertyGridProperty(
 *`bIsValueList`*\
 [in] `TRUE` if the property represents a list of values; `FALSE` if the property represents a single value. The default value is `FALSE`.
 
-### Remarks
-
 ## <a name="createcombo"></a> `CMFCPropertyGridProperty::CreateCombo`
 
 Called by the framework to add a combo box to a property.
 
-```
+```cpp
 virtual CComboBox* CreateCombo(
     CWnd* pWndParent,
     CRect rect);
@@ -316,13 +308,11 @@ virtual CComboBox* CreateCombo(
 
 Pointer to a new [`CComboBox`](../../mfc/reference/ccombobox-class.md) object.
 
-### Remarks
-
 ## <a name="createinplaceedit"></a> `CMFCPropertyGridProperty::CreateInPlaceEdit`
 
 Called by the framework to create an editable control for a property.
 
-```
+```cpp
 virtual CWnd* CreateInPlaceEdit(
     CRect rectEdit,
     BOOL& bDefaultFormat);
@@ -350,7 +340,7 @@ This method creates a [`CMFCMaskedEdit`](../../mfc/reference/cmfcmaskededit-clas
 
 Called by the framework to create an editable spin button control.
 
-```
+```cpp
 virtual CSpinButtonCtrl* CreateSpinControl(CRect rectSpin);
 ```
 
@@ -379,8 +369,6 @@ void Enable(BOOL bEnable=TRUE);
 
 *`bEnable`*\
 [in] `TRUE` to enable the property; `FALSE` to disable the property. Disabled properties don't respond to mouse or keyboard input. The default value is `TRUE`.
-
-### Remarks
 
 ## <a name="enablespincontrol"></a> `CMFCPropertyGridProperty::EnableSpinControl`
 
@@ -412,7 +400,7 @@ The property type, which is specified by the *`varValue`* parameter of the [`CMF
 
 ## <a name="expand"></a> `CMFCPropertyGridProperty::Expand`
 
-Expands or collapses a property that contains sub-properties.
+Expands or collapses a property that contains subproperties.
 
 ```cpp
 void Expand(BOOL bExpand=TRUE);
@@ -423,13 +411,11 @@ void Expand(BOOL bExpand=TRUE);
 *`bExpand`*\
 [in] `TRUE` to expand the property; `FALSE` to collapse the property. The default value is `TRUE`.
 
-### Remarks
-
 ## <a name="formatproperty"></a> `CMFCPropertyGridProperty::FormatProperty`
 
 Formats the text representation of a property value.
 
-```
+```cpp
 virtual CString FormatProperty();
 ```
 
@@ -445,7 +431,7 @@ This method is called by the framework before the property value is displayed.
 
 Retrieves a `DWORD` value that is associated with a property.
 
-```
+```cpp
 DWORD_PTR GetData() const;
 ```
 
@@ -461,7 +447,7 @@ The data that is returned is an application-specific value, such as a number or 
 
 Retrieves a property description.
 
-```
+```cpp
 const CString& GetDescription() const;
 ```
 
@@ -475,28 +461,26 @@ Property list control also uses this method to display the description of the pr
 
 ## <a name="getexpandedsubitems"></a> `CMFCPropertyGridProperty::GetExpandedSubItems`
 
-Retrieves the number of expanded sub-items.
+Retrieves the number of expanded subitems.
 
-```
+```cpp
 int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
 ```
 
 ### Parameters
 
 *`bIncludeHidden`*\
-[in] `TRUE` to include the hidden sub-items in the count; otherwise, `FALSE`. The default value is `TRUE`.
+[in] `TRUE` to include the hidden subitems in the count; otherwise, `FALSE`. The default value is `TRUE`.
 
 ### Return Value
 
-The number of expanded sub-items.
-
-### Remarks
+The number of expanded subitems.
 
 ## <a name="gethierarchylevel"></a> `CMFCPropertyGridProperty::GetHierarchyLevel`
 
 Retrieves the zero-based index of the property's hierarchy level.
 
-```
+```cpp
 int GetHierarchyLevel() const;
 ```
 
@@ -504,13 +488,11 @@ int GetHierarchyLevel() const;
 
 The property's hierarchical level.
 
-### Remarks
-
 ## <a name="getname"></a> `CMFCPropertyGridProperty::GetName`
 
 Retrieves the name of the property.
 
-```
+```cpp
 LPCTSTR GetName() const;
 ```
 
@@ -518,13 +500,11 @@ LPCTSTR GetName() const;
 
 Pointer to a string that contains the name of the property.
 
-### Remarks
-
 ## <a name="getnametooltip"></a> `CMFCPropertyGridProperty::GetNameTooltip`
 
 Called by the framework to display the name of the property in a tooltip.
 
-```
+```cpp
 virtual CString GetNameTooltip();
 ```
 
@@ -532,13 +512,11 @@ virtual CString GetNameTooltip();
 
 A string that contains the property name. By default, the return value is the empty string.
 
-### Remarks
-
 ## <a name="getoption"></a> `CMFCPropertyGridProperty::GetOption`
 
 Retrieves the text of the option that is specified by an index.
 
-```
+```cpp
 LPCTSTR GetOption(int nIndex) const;
 ```
 
@@ -551,13 +529,11 @@ The zero-based index of the property list item (option) to retrieve.
 
 Pointer to a string that contains the option text.
 
-### Remarks
-
 ## <a name="getoptioncount"></a> `CMFCPropertyGridProperty::GetOptionCount`
 
 Retrieves the number of options that belong to a property.
 
-```
+```cpp
 int GetOptionCount() const;
 ```
 
@@ -573,7 +549,7 @@ Call the [`CMFCPropertyGridProperty::AddOption`](#addoption) method to add items
 
 Retrieves the initial value of the current property.
 
-```
+```cpp
 const COleVariant& GetOriginalValue() const;
 ```
 
@@ -591,7 +567,7 @@ The original value of the current property is set by the [`CMFCPropertyGridPrope
 
 Retrieves a pointer to a parent property.
 
-```
+```cpp
 CMFCPropertyGridProperty* GetParent() const;
 ```
 
@@ -599,13 +575,11 @@ CMFCPropertyGridProperty* GetParent() const;
 
 A pointer to a parent property object, or `NULL` for the top-level property.
 
-### Remarks
-
 ## <a name="getrect"></a> `CMFCPropertyGridProperty::GetRect`
 
 Retrieves the bounding rectangle of a property.
 
-```
+```cpp
 CRect GetRect() const;
 ```
 
@@ -613,20 +587,18 @@ CRect GetRect() const;
 
 A [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that describes the bounding rectangle.
 
-### Remarks
-
 ## <a name="getsubitem"></a> `CMFCPropertyGridProperty::GetSubItem`
 
-Retrieves a sub-property identified by a zero-based index.
+Retrieves a subproperty identified by a zero-based index.
 
-```
+```cpp
 CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 ```
 
 ### Parameters
 
 *`nIndex`*\
-[in] The zero-based index of the property to retrieve. This parameter is invalid if it's less than zero or greater than or equal to the number of sub-properties.
+[in] The zero-based index of the property to retrieve. This parameter is invalid if it's less than zero or greater than or equal to the number of subproperties.
 
 ### Return Value
 
@@ -636,13 +608,11 @@ A pointer to a property object that is a child item of this property.
 
 In retail mode, `NULL` if the *`nIndex`* parameter is invalid. In debug mode, this method asserts.
 
-### Remarks
-
 ## <a name="getsubitemscount"></a> `CMFCPropertyGridProperty::GetSubItemsCount`
 
-Retrieves the number of sub-items.
+Retrieves the number of subitems.
 
-```
+```cpp
 int GetSubItemsCount() const;
 ```
 
@@ -650,13 +620,11 @@ int GetSubItemsCount() const;
 
 The number of child items.
 
-### Remarks
-
 ## <a name="getvalue"></a> `CMFCPropertyGridProperty::GetValue`
 
 Retrieves a property value.
 
-```
+```cpp
 virtual const _variant_t& GetValue() const;
 ```
 
@@ -664,13 +632,11 @@ virtual const _variant_t& GetValue() const;
 
 A variant that contains the property value.
 
-### Remarks
-
 ## <a name="getvaluetooltip"></a> `CMFCPropertyGridProperty::GetValueTooltip`
 
 Called by the framework to retrieve the text representation of the property value that is then displayed in a tooltip.
 
-```
+```cpp
 virtual CString GetValueTooltip();
 ```
 
@@ -678,13 +644,11 @@ virtual CString GetValueTooltip();
 
 A `CString` object containing the textual representation of the property value. By default, this value is the empty string.
 
-### Remarks
-
 ## <a name="hasbutton"></a> `CMFCPropertyGridProperty::HasButton`
 
 Indicates whether a property contains a button.
 
-```
+```cpp
 virtual BOOL HasButton() const;
 ```
 
@@ -692,13 +656,11 @@ virtual BOOL HasButton() const;
 
 `TRUE` if a property contains a button (or property list); otherwise, `FALSE`.
 
-### Remarks
-
 ## <a name="hittest"></a> `CMFCPropertyGridProperty::HitTest`
 
 Points to the property object that corresponds to the property list item that corresponds to a point.
 
-```
+```cpp
 CMFCPropertyGridProperty* HitTest(
     CPoint point,
     CMFCPropertyGridProperty::ClickArea* pnArea=NULL);
@@ -729,7 +691,7 @@ A pointer to a property object or `NULL`.
 
 ### Remarks
 
-By default, this method tests property sub-items if the specified point isn't found within any of the property items.
+By default, this method tests property subitems if the specified point isn't found within any of the property items.
 
 The following table lists the values that can be returned to the *`pnArea`* parameter.
 
@@ -747,13 +709,11 @@ Called by the framework to initialize a property object.
 void Init();
 ```
 
-### Remarks
-
 ## <a name="isallowedit"></a> `CMFCPropertyGridProperty::IsAllowEdit`
 
 Indicates whether a property is editable.
 
-```
+```cpp
 BOOL IsAllowEdit() const;
 ```
 
@@ -761,13 +721,11 @@ BOOL IsAllowEdit() const;
 
 `TRUE` if the property is editable; otherwise `FALSE`.
 
-### Remarks
-
 ## <a name="isenabled"></a> `CMFCPropertyGridProperty::IsEnabled`
 
 Indicates whether a property is enabled or disabled.
 
-```
+```cpp
 BOOL IsEnabled() const;
 ```
 
@@ -783,7 +741,7 @@ Tells whether a property is enabled or disabled.
 
 Indicates whether a property is expanded or collapsed.
 
-```
+```cpp
 BOOL IsExpanded() const;
 ```
 
@@ -791,13 +749,11 @@ BOOL IsExpanded() const;
 
 `TRUE` if the property is expanded; `FALSE` if the property is collapsed.
 
-### Remarks
-
 ## <a name="isgroup"></a> `CMFCPropertyGridProperty::IsGroup`
 
 Indicates whether the current property represents a group.
 
-```
+```cpp
 BOOL IsGroup() const;
 ```
 
@@ -813,7 +769,7 @@ A *group* is a collection of related properties in a property grid control. If t
 
 Indicates whether the current property is editable.
 
-```
+```cpp
 BOOL IsInPlaceEditing() const;
 ```
 
@@ -821,13 +777,11 @@ BOOL IsInPlaceEditing() const;
 
 `TRUE` if the current property is editable; otherwise, `FALSE`.
 
-### Remarks
-
 ## <a name="ismodified"></a> `CMFCPropertyGridProperty::IsModified`
 
 Indicates whether the current property is modified.
 
-```
+```cpp
 BOOL IsModified() const;
 ```
 
@@ -835,13 +789,11 @@ BOOL IsModified() const;
 
 `TRUE` if the property is modified; otherwise, `FALSE`.
 
-### Remarks
-
 ## <a name="isparentexpanded"></a> `CMFCPropertyGridProperty::IsParentExpanded`
 
 Indicates whether the parents of the current property are expanded.
 
-```
+```cpp
 BOOL IsParentExpanded() const;
 ```
 
@@ -849,13 +801,11 @@ BOOL IsParentExpanded() const;
 
 `TRUE` if all parents of the current property are expanded; `FALSE` if the parent properties are collapsed.
 
-### Remarks
-
 ## <a name="isselected"></a> `CMFCPropertyGridProperty::IsSelected`
 
 Indicates whether the current property is selected.
 
-```
+```cpp
 virtual BOOL IsSelected() const;
 ```
 
@@ -863,13 +813,11 @@ virtual BOOL IsSelected() const;
 
 `TRUE` if the current property is selected; otherwise, `FALSE`.
 
-### Remarks
-
 ## <a name="issubitem"></a> `CMFCPropertyGridProperty::IsSubItem`
 
-Indicates whether the specified property is a sub-item of the current property.
+Indicates whether the specified property is a subitem of the current property.
 
-```
+```cpp
 BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
 ```
 
@@ -880,13 +828,13 @@ BOOL IsSubItem(CMFCPropertyGridProperty* pProp) const;
 
 ### Return Value
 
-`TRUE` if the specified property is a sub-item of the current property; otherwise, `FALSE`.
+`TRUE` if the specified property is a subitem of the current property; otherwise, `FALSE`.
 
 ## <a name="isvaluechanged"></a> `CMFCPropertyGridProperty::IsValueChanged`
 
 Indicates whether the value of the current property has changed.
 
-```
+```cpp
 virtual BOOL IsValueChanged() const;
 ```
 
@@ -894,13 +842,11 @@ virtual BOOL IsValueChanged() const;
 
 `TRUE` if the value of the current property has changed; otherwise, `FALSE`.
 
-### Remarks
-
 ## <a name="isvisible"></a> `CMFCPropertyGridProperty::IsVisible`
 
 Indicates whether the current property is visible.
 
-```
+```cpp
 BOOL IsVisible() const;
 ```
 
@@ -908,53 +854,43 @@ BOOL IsVisible() const;
 
 `TRUE` if the current property is visible; otherwise; `FALSE`.
 
-### Remarks
-
 ## <a name="m_strformatdouble"></a> `CMFCPropertyGridProperty::m_strFormatDouble`
 
 Holds a format string for a value of type double.
 
-```
+```cpp
 static CString m_strFormatDouble;
 ```
-
-### Remarks
 
 ## <a name="m_strformatfloat"></a> `CMFCPropertyGridProperty::m_strFormatFloat`
 
 Holds a format string for a value of type float.
 
-```
+```cpp
 static CString m_strFormatFloat;
 ```
-
-### Remarks
 
 ## <a name="m_strformatlong"></a> `CMFCPropertyGridProperty::m_strFormatLong`
 
 Holds a format string for a value of type long.
 
-```
+```cpp
 static CString m_strFormatLong;
 ```
-
-### Remarks
 
 ## <a name="m_strformatshort"></a> `CMFCPropertyGridProperty::m_strFormatShort`
 
 Holds a format string for a value of type short.
 
-```
+```cpp
 static CString m_strFormatShort;
 ```
-
-### Remarks
 
 ## <a name="onclickbutton"></a> `CMFCPropertyGridProperty::OnClickButton`
 
 Called by the framework when the user selects a button that is contained in a property.
 
-```
+```cpp
 virtual void OnClickButton(CPoint point);
 ```
 
@@ -971,7 +907,7 @@ By default, this method does nothing.
 
 Called by a parent property list control when a user selects the name field of a property.
 
-```
+```cpp
 virtual void OnClickName(CPoint C);
 ```
 
@@ -988,7 +924,7 @@ By default, this method does nothing.
 
 Called by a parent property list control when a user selects the value field of a property.
 
-```
+```cpp
 virtual BOOL OnClickValue(
     UINT uiMsg,
     CPoint point);
@@ -1014,17 +950,15 @@ By default, this method returns `FALSE` if the current property isn't editable. 
 
 Called by the framework when a combo box that is contained in a property is closed.
 
-```
+```cpp
 virtual void OnCloseCombo();
 ```
-
-### Remarks
 
 ## <a name="onctlcolor"></a> `CMFCPropertyGridProperty::OnCtlColor`
 
 Called by the framework when it must retrieve a brush to fill the background color of a property.
 
-```
+```cpp
 virtual HBRUSH OnCtlColor(
     CDC* pDC,
     UINT nCtlColor);
@@ -1042,13 +976,11 @@ virtual HBRUSH OnCtlColor(
 
 The handle to a brush if this method is successful; otherwise, `NULL`.
 
-### Remarks
-
 ## <a name="ondblclk"></a> `CMFCPropertyGridProperty::OnDblClk`
 
 Called by the framework when the user double clicks a property.
 
-```
+```cpp
 virtual BOOL OnDblClk(CPoint point);
 ```
 
@@ -1069,17 +1001,15 @@ By default, this method selects the next property item in the property list cont
 
 Called by the framework when a property is destroyed or when editing is finished.
 
-```
+```cpp
 virtual void OnDestroyWindow();
 ```
-
-### Remarks
 
 ## <a name="ondrawbutton"></a> `CMFCPropertyGridProperty::OnDrawButton`
 
 Called by the framework to draw a button that is contained in a property.
 
-```
+```cpp
 virtual void OnDrawButton(
     CDC* pDC,
     CRect rectButton);
@@ -1093,13 +1023,11 @@ virtual void OnDrawButton(
 *`rectButton`*\
 [in] A bounding rectangle that specifies where to draw a button.
 
-### Remarks
-
 ## <a name="ondrawdescription"></a> `CMFCPropertyGridProperty::OnDrawDescription`
 
 Called by the framework to draw the property description.
 
-```
+```cpp
 virtual void OnDrawDescription(
     CDC* pDC,
     CRect rect);
@@ -1119,9 +1047,9 @@ By default, this method draws the property name and description in the font used
 
 ## <a name="ondrawexpandbox"></a> `CMFCPropertyGridProperty::OnDrawExpandBox`
 
-Called by the framework to draw an expand box control near a property that contains sub-properties.
+Called by the framework to draw an expand box control near a property that contains subproperties.
 
-```
+```cpp
 virtual void OnDrawExpandBox(
     CDC* pDC,
     CRect rectExpand);
@@ -1137,13 +1065,13 @@ virtual void OnDrawExpandBox(
 
 ### Remarks
 
-Select the expand box control to expand or collapse a list of sub-properties. The expand box control is designated by a square that contains a plus (**+**) or minus (**-**) sign. A plus sign indicates that the property can be expanded to show a list of sub-properties. A minus sign indicates that the list can be collapsed to show only the property.
+Select the expand box control to expand or collapse a list of subproperties. The expand box control is designated by a square that contains a plus (**+**) or minus (**-**) sign. A plus sign indicates that the property can be expanded to show a list of subproperties. A minus sign indicates that the list can be collapsed to show only the property.
 
 ## <a name="ondrawname"></a> `CMFCPropertyGridProperty::OnDrawName`
 
 Called by the framework to display the property name.
 
-```
+```cpp
 virtual void OnDrawName(
     CDC* pDC,
     CRect rect);
@@ -1157,13 +1085,11 @@ virtual void OnDrawName(
 *`rect`*\
 [in] A bounding rectangle that specifies where to draw the property name.
 
-### Remarks
-
 ## <a name="ondrawvalue"></a> `CMFCPropertyGridProperty::OnDrawValue`
 
 Called by the framework to display the property value.
 
-```
+```cpp
 virtual void OnDrawValue(
     CDC* pDC,
     CRect rect);
@@ -1177,13 +1103,11 @@ virtual void OnDrawValue(
 *`rect`*\
 [in] A bounding rectangle that specifies where to draw the property value.
 
-### Remarks
-
 ## <a name="onedit"></a> `CMFCPropertyGridProperty::OnEdit`
 
 Called by the framework when the user is about to modify a property value.
 
-```
+```cpp
 virtual BOOL OnEdit(LPPOINT lptClick);
 ```
 
@@ -1204,7 +1128,7 @@ This function is called by the framework when the user is about to modify a prop
 
 Called by the framework when the user is finished modifying a property value.
 
-```
+```cpp
 virtual BOOL OnEndEdit();
 ```
 
@@ -1220,7 +1144,7 @@ By default, this method destroys the current editing control and then returns `T
 
 Called by the framework when the property loses the input focus.
 
-```
+```cpp
 virtual BOOL OnKillFocus(CWnd*);
 ```
 
@@ -1239,7 +1163,7 @@ By default, this method does nothing and then returns `TRUE`. If you override th
 
 ## <a name="onkillselection"></a> `CMFCPropertyGridProperty::OnKillSelection`
 
-```
+```cpp
 virtual void OnKillSelection(CMFCPropertyGridProperty*);
 ```
 
@@ -1253,7 +1177,7 @@ By default, this method does nothing.
 
 ## <a name="onpossizechanged"></a> `CMFCPropertyGridProperty::OnPosSizeChanged`
 
-```
+```cpp
 virtual void OnPosSizeChanged(CRect);
 ```
 
@@ -1269,7 +1193,7 @@ By default, this method does nothing.
 
 Called by the framework when the user selects the right mouse button in the property name area.
 
-```
+```cpp
 virtual void OnRClickName(CPoint C);
 ```
 
@@ -1286,7 +1210,7 @@ By default, this method does nothing.
 
 Called by the framework when the user selects the right mouse button in the property value area.
 
-```
+```cpp
 virtual void OnRClickValue(
     CPoint C,
     BOOL B);
@@ -1308,7 +1232,7 @@ By default, this method does nothing and the *`B`* parameter has no predefined p
 
 Called by the framework when the user selects an item from the editable combo box.
 
-```
+```cpp
 virtual void OnSelectCombo();
 ```
 
@@ -1320,7 +1244,7 @@ By default, this method uses the text of the selected item to update the propert
 
 Called by the framework when the mouse pointer moves to a property item.
 
-```
+```cpp
 virtual BOOL OnSetCursor() const;
 ```
 
@@ -1334,7 +1258,7 @@ This method supports the following variant types: `VT_INT`, `VT_I2`, `VT_I4`, `V
 
 ## <a name="onsetselection"></a> `CMFCPropertyGridProperty::OnSetSelection`
 
-```
+```cpp
 virtual void OnSetSelection CMFCPropertyGridProperty*);
 ```
 
@@ -1350,7 +1274,7 @@ By default, this method does nothing.
 
 Called by the framework when the value of an editable property has changed.
 
-```
+```cpp
 virtual BOOL OnUpdateValue();
 ```
 
@@ -1358,13 +1282,11 @@ virtual BOOL OnUpdateValue();
 
 `TRUE` if this method is successful; otherwise, `FALSE`.
 
-### Remarks
-
 ## <a name="pushchar"></a> `CMFCPropertyGridProperty::PushChar`
 
 Called from the property list control when the property is selected and the user enters a new character.
 
-```
+```cpp
 virtual BOOL PushChar(UINT nChar);
 ```
 
@@ -1389,8 +1311,6 @@ Redraws the property.
 void Redraw();
 ```
 
-### Remarks
-
 ## <a name="removealloptions"></a> `CMFCPropertyGridProperty::RemoveAllOptions`
 
 Removes all options (items) from a property.
@@ -1405,9 +1325,9 @@ Options are also known as the list items of a property list control.
 
 ## <a name="removesubitem"></a> `CMFCPropertyGridProperty::RemoveSubItem`
 
-Removes the specified sub-item.
+Removes the specified subitem.
 
-```
+```cpp
 BOOL RemoveSubItem(
     CMFCPropertyGridProperty*& pProp,
     BOOL bDelete=TRUE);
@@ -1416,7 +1336,7 @@ BOOL RemoveSubItem(
 ### Parameters
 
 *`pProp`*\
-[in] Pointer to a property sub-item.
+[in] Pointer to a property subitem.
 
 *`bDelete`*\
 [in] `TRUE` to delete the property object that is specified by the *`pProp`* parameter; otherwise, `FALSE`. The default value is `TRUE`.
@@ -1425,17 +1345,15 @@ BOOL RemoveSubItem(
 
 ### Remarks
 
-Specify `FALSE` for the *`bDelete`* parameter if you intend to move the specified sub-item; that is, remove the sub-item and then add it elsewhere.
+Specify `FALSE` for the *`bDelete`* parameter if you intend to move the specified subitem; that is, remove the subitem and then add it elsewhere.
 
 ## <a name="resetoriginalvalue"></a> `CMFCPropertyGridProperty::ResetOriginalValue`
 
 Restores the original value of an edited property.
 
-```
+```cpp
 virtual void ResetOriginalValue();
 ```
-
-### Remarks
 
 ## <a name="setdata"></a> `CMFCPropertyGridProperty::SetData`
 
@@ -1467,8 +1385,6 @@ void SetDescription(const CString& strDescr);
 *`strDescr`*\
 [in] Text that describes the current property.
 
-### Remarks
-
 ## <a name="setname"></a> `CMFCPropertyGridProperty::SetName`
 
 Sets the name of a property.
@@ -1487,13 +1403,11 @@ void SetName(
 *`bRedraw`*\
 [in] `TRUE` to redraw the property immediately; otherwise, `FALSE`. The default value is `TRUE`.
 
-### Remarks
-
 ## <a name="setoriginalvalue"></a> `CMFCPropertyGridProperty::SetOriginalValue`
 
 Sets the original value of an editable property.
 
-```
+```cpp
 virtual void SetOriginalValue(const COleVariant& varValue);
 ```
 
@@ -1510,16 +1424,27 @@ Use the [`CMFCPropertyGridProperty::ResetOriginalValue`](#resetoriginalvalue) me
 
 Sets the value of a property grid property.
 
-```
+```cpp
 virtual void SetValue(const _variant_t& varValue);
 ```
 
 ### Parameters
 
 *`varValue`*\
-[in] A reference to a value.
+[in] A reference to the value to set the property to.
 
-### Remarks
+### Example: `SetValue`
+
+```cpp
+void SetPropBarValue(UINT propId, const DWORD& barPropDwordValue)
+{
+  auto property = propertiesGridCtrlList.FindItemByData(propId);
+  if (property != nullptr)
+  {
+    property->SetValue(static_cast<_variant_t >(barPropDwordValue == 1)); // set value to true or false depending on dword value
+  }
+}
+```
 
 ## <a name="show"></a> `CMFCPropertyGridProperty::Show`
 
@@ -1534,7 +1459,7 @@ void Show(
 ### Parameters
 
 *`bShow`*\
-[in] `TRUE` to display the current property and its sub-items; `FALSE` to hide the current property and its sub-items. The default value is `TRUE`.
+[in] `TRUE` to display the current property and its subitems; `FALSE` to hide the current property and its subitems. The default value is `TRUE`.
 
 *`bAdjustLayout`*\
 [in] `TRUE` to recalculate how to draw the label and value of a property and then draw the property; `FALSE` to use existing calculations to draw the property. The default value is `TRUE`.
@@ -1543,4 +1468,4 @@ void Show(
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)\
 [Classes](../../mfc/reference/mfc-classes.md)\
-[`CMFCPropertyGridCtrl` Class](../../mfc/reference/cmfcpropertygridctrl-class.md)
+[`CMFCPropertyGridCtrl` class](../../mfc/reference/cmfcpropertygridctrl-class.md)

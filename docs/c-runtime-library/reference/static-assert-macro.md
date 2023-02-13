@@ -9,9 +9,9 @@ f1_keywords: ["_STATIC_ASSERT"]
 helpviewer_keywords: ["_STATIC_ASSERT macro"]
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
 ---
-# _STATIC_ASSERT Macro
+# `_STATIC_ASSERT` macro
 
-Evaluate an expression at compile time and generate an error when the result is **FALSE**.
+Evaluate an expression at compile time and generate an error when the result is `FALSE`.
 
 ## Syntax
 
@@ -23,16 +23,16 @@ _STATIC_ASSERT(
 
 ### Parameters
 
-*booleanExpression*<br/>
-Expression (including pointers) that evaluates to nonzero (**TRUE**) or 0 (**FALSE**).
+*`booleanExpression`*\
+Expression (including pointers) that evaluates to nonzero (`TRUE`) or 0 (`FALSE`).
 
 ## Remarks
 
-This macro resembles the [_ASSERT and _ASSERTE macros](assert-asserte-assert-expr-macros.md), except that *booleanExpression* is evaluated at compile time instead of at runtime. If *booleanExpression* evaluates to **FALSE** (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.
+This macro resembles the [`_ASSERT` and `_ASSERTE` macros](assert-asserte-assert-expr-macros.md), except that *`booleanExpression`* is evaluated at compile time instead of at runtime. If *`booleanExpression`* evaluates to `FALSE` (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.
 
 ## Example
 
-In this example, we check whether the [sizeof](../../c-language/sizeof-operator-c.md) an **`int`** is larger than or equal to 2 bytes and whether the [sizeof](../../c-language/sizeof-operator-c.md) a **`long`** is 1 byte. The program will not compile and it will generate [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) because a **`long`** is larger than 1 byte.
+In this example, we check whether the [`sizeof`](../../c-language/sizeof-operator-c.md) an **`int`** is larger than or equal to 2 bytes and whether the [`sizeof`](../../c-language/sizeof-operator-c.md) a **`long`** is 1 byte. The program won't compile and it will generate [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) because a **`long`** is larger than 1 byte.
 
 ```C
 // crt__static_assert.c
@@ -54,11 +54,11 @@ int main()
 
 ## Requirements
 
-|Macro|Required header|
-|-----------|---------------------|
-|**_STATIC_ASSERT**|\<crtdbg.h>|
+| Macro | Required header |
+|---|---|
+| **`_STATIC_ASSERT`** | \<crtdbg.h> |
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](assert-asserte-assert-expr-macros.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`_ASSERT`, `_ASSERTE`, `_ASSERT_EXPR` macros](assert-asserte-assert-expr-macros.md)

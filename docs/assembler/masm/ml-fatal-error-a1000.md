@@ -2,7 +2,7 @@
 description: "Learn more about: ML Fatal Error A1000"
 title: "ML Fatal Error A1000"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A1000"]
 helpviewer_keywords: ["A1000"]
 ms.assetid: 4fc77a83-8796-4dcf-9c37-6395d635b817

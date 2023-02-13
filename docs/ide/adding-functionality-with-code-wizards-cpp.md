@@ -10,7 +10,7 @@ ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
 Once you have created a project, you will want to change or add to that project's functionality. Such tasks include creating new classes, adding new member functions and variables, and adding Automation methods and properties. The code wizards are designed to let you do all these things.
 
 > [!NOTE]
-> The following rarely-used code wizards are removed in Visual Studio 2019. General support for ATL and MFC is not impacted by the removal of these wizards. Sample code for these technologies is archived at Microsoft Docs and the VCSamples GitHub repository.
+> The following rarely-used code wizards are removed in Visual Studio 2019. General support for ATL and MFC is not impacted by the removal of these wizards. Sample code for these technologies is archived in Microsoft Learn and the VCSamples GitHub repository.
 
 - ATL COM+ 1.0 Component Wizard
 - ATL Active Server Pages Component Wizard

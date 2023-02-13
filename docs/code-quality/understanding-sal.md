@@ -20,7 +20,6 @@ Simply stated, SAL is an inexpensive way to let the compiler check your code for
 SAL can help you make your code design more understandable, both for humans and for code analysis tools. Consider this example that shows the C runtime function `memcpy`:
 
 ```cpp
-
 void * memcpy(
    void *dest,
    const void *src,
@@ -42,7 +41,6 @@ The documentation contains a couple of bits of information that suggest that you
 However, the compiler can't read the documentation or informal comments. It doesn't know that there is a relationship between the two buffers and `count`, and it also can't effectively guess about a relationship. SAL could provide more clarity about the properties and implementation of the function, as shown here:
 
 ```cpp
-
 void * memcpy(
    _Out_writes_bytes_all_(count) void *dest,
    _In_reads_bytes_(count) const void *src,
@@ -53,7 +51,6 @@ void * memcpy(
 Notice that these annotations resemble the information in the documentation, but they are more concise and they follow a semantic pattern. When you read this code, you can quickly understand the properties of this function and how to avoid buffer overrun security issues. Even better, the semantic patterns that SAL provides can improve the efficiency and effectiveness of automated code analysis tools in the early discovery of potential bugs. Imagine that someone writes this buggy implementation of `wmemcpy`:
 
 ```cpp
-
 wchar_t * wmemcpy(
    _Out_writes_all_(count) wchar_t *dest,
    _In_reads_(count) const wchar_t *src,
@@ -155,7 +152,6 @@ If you use Visual Studio Code Analysis on this example, it validates that the ca
 `_In_opt_` is the same as `_In_`, except that the input parameter is allowed to be NULL and, therefore, the function should check for this.
 
 ```cpp
-
 void GoodInOptCallee(_In_opt_ int *pInt)
 {
    if(pInt != NULL) {

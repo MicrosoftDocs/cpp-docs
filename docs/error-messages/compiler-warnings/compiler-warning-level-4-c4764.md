@@ -38,7 +38,7 @@ int main()
         a.x = 15;
         throw a;
     }
-    catch (ALIGNEDA b) // can’t align b to > 16 bytes
+    catch (ALIGNEDA b) // can't align b to > 16 bytes
     {
         printf_s("%d\n", b.x);
     }

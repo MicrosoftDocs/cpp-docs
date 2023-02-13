@@ -13,12 +13,12 @@ The **`switch`** and **`case`** statements help control complex conditional and 
 
 ## Syntax
 
-> *`selection-statement`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; **`switch (`**&nbsp;*`expression`* &nbsp;**`)`**&nbsp;*`statement`*
+*`selection-statement`*:\
+&emsp; **`switch (`**&nbsp;*`expression`*&nbsp;**`)`**&nbsp;*`statement`*
 
-> *`labeled-statement`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; **`case`**&nbsp;*`constant-expression`*&nbsp;**`:`**&nbsp;*`statement`*\
-> &nbsp;&nbsp;&nbsp;&nbsp; **`default`**&nbsp;**`:`**&nbsp;*`statement`*
+*`labeled-statement`*:\
+&emsp; **`case`**&nbsp;*`constant-expression`*&nbsp;**`:`**&nbsp;*`statement`*\
+&emsp; **`default`**&nbsp;**`:`**&nbsp;*`statement`*
 
 ## Remarks
 
@@ -103,7 +103,7 @@ switch( c )
 }
 ```
 
-In this example, if *constant-expression* equals any letter between `'a'` and `'f'`, the `convert_hex` function is called.
+In this example, if *`constant-expression`* equals any letter between `'a'` and `'f'`, the `convert_hex` function is called.
 
 ### Microsoft-specific
 

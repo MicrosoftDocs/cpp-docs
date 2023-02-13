@@ -3,14 +3,14 @@ title: "cbrt, cbrtf, cbrtl"
 description: "API reference for cbrt, cbrtf, and cbrtl; which calculate a cube root"
 ms.date: "9/1/2020"
 api_name: ["cbrt", "cbrtf", "cbrtl", "_o_cbrt", "_o_cbrtf"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cbrtl", "cbrt", "cbrtf"]
 helpviewer_keywords: ["cbrtl function", "cbrtf function", "cbrt function"]
 ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f
 ---
-# cbrt, cbrtf, cbrtl
+# `cbrt`, `cbrtf`, `cbrtl`
 
 Calculates the cube root.
 
@@ -37,33 +37,33 @@ long double cbrtl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 Floating-point value
 
-## Return Value
+## Return value
 
-The **cbrt** functions return the cube-root of *x*.
+The **`cbrt`** functions return the cube-root of *`x`*.
 
-|Input|SEH Exception|**_matherr** Exception|
-|-----------|-------------------|--------------------------|
-|± ∞, QNAN, IND|none|none|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± INF, QNaN, IND | none | none |
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cbrt** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **cbrt** always takes and returns **`double`**.
+Because C++ allows overloading, you can call overloads of **`cbrt`** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`cbrt`** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `cbrt()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `cbrt()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**cbrt**, **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|
-|**cbrt** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`cbrt`**, **`cbrtf`**, **`cbrtl`** | \<math.h> | \<cmath> |
+| **`cbrt`** macro | \<tgmath.h> |  |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -91,7 +91,7 @@ The cube root of -64.64 is -4.013289
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[exp, expf, expl](exp-expf.md)<br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
-[pow, powf, powl](pow-powf-powl.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`exp`, `expf`, `expl`](exp-expf.md)\
+[`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)\
+[`pow`, `powf`, `powl`](pow-powf-powl.md)

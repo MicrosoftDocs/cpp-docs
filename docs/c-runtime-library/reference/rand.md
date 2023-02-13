@@ -3,7 +3,7 @@ title: "rand"
 description: "API reference for rand, which generates a pseudorandom number by using a well-known and fully reproducible algorithm."
 ms.date: "7/7/2021"
 api_name: ["rand", "_o_rand"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["STDLIB/rand", "rand"]
@@ -19,25 +19,25 @@ Generates a pseudorandom number. A more programmatically secure version of this 
 int rand(void);
 ```
 
-## Return Value
+## Return value
 
 **`rand`** returns a pseudorandom number, as described above. There's no error return.
 
 ## Remarks
 
-The **`rand`** function returns a pseudorandom integer in the range 0 to **`RAND_MAX`** (32767). Use the [`srand`](srand.md) function to seed the pseudorandom-number generator before calling **`rand`**.
+The **`rand`** function returns a pseudorandom integer in the range 0 to `RAND_MAX` (32767). Use the [`srand`](srand.md) function to seed the pseudorandom-number generator before calling **`rand`**.
 
 The **`rand`** function generates a well-known sequence and isn't appropriate for use as a cryptographic function. For more cryptographically secure random number generation, use [`rand_s`](rand-s.md) or the functions declared in the C++ Standard Library in [`<random>`](../../standard-library/random.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`rand`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`rand`** | `<stdlib.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -72,7 +72,7 @@ void RangedRandDemo(int range_min, int range_max, int n)
         // generating random numbers across a large range using the method below.
         // The approach below also may result in a non-uniform distribution.
         // More robust random number functionality is available in the C++ <random> header.
-        // See https://docs.microsoft.com/cpp/standard-library/random
+        // See https://learn.microsoft.com/cpp/standard-library/random
         int r = ((double)rand() / RAND_MAX) * (range_max - range_min) + range_min;
         printf("  %6d\n", r);
     }
@@ -120,7 +120,7 @@ Random number in a range demo ====
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`srand`](srand.md)\
 [`rand_s`](rand-s.md)\
 [C++ `<random>` library](../../standard-library/random.md)

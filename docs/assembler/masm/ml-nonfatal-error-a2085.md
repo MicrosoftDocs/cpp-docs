@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2085"
 title: "ML Nonfatal Error A2085"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2085"]
 helpviewer_keywords: ["A2085"]
 ms.assetid: c2fef415-a32b-4249-896c-6d981fc6e327

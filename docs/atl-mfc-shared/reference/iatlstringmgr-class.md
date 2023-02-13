@@ -12,7 +12,7 @@ This class represents the interface to a `CStringT` memory manager.
 
 ## Syntax
 
-```
+```cpp
 __interface IAtlStringMgr
 ```
 
@@ -42,7 +42,7 @@ You can also use this class to implement a custom memory manager for your custom
 
 Allocates a new string data structure.
 
-```
+```cpp
 CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 ```
 
@@ -72,7 +72,7 @@ Call [IAtlStringMgr::Free](#free) or [IAtlStringMgr::ReAllocate](#reallocate) to
 
 Returns a pointer to a new string manager for use with another instance of `CSimpleStringT`.
 
-```
+```cpp
 IAtlStringMgr* Clone() throw();
 ```
 
@@ -113,7 +113,7 @@ Frees the specified memory block previously allocated by [Allocate](#allocate) o
 
 Returns a pointer to a string data structure for an empty string.
 
-```
+```cpp
 CStringData* GetNilString() throw();
 ```
 
@@ -135,7 +135,7 @@ Call this function to return a representation of an empty string.
 
 Reallocates a string data structure.
 
-```
+```cpp
 CStringData* Reallocate(
     CStringData* pData,
     int nAllocLength,

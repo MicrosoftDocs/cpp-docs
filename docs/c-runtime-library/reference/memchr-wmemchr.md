@@ -3,14 +3,14 @@ description: "Learn more about: memchr, wmemchr"
 title: "memchr, wmemchr"
 ms.date: "1/14/2021"
 api_name: ["wmemchr", "memchr"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["memchr", "wmemchr"]
 helpviewer_keywords: ["memchr function", "wmemchr function"]
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
 ---
-# memchr, wmemchr
+# `memchr`, `wmemchr`
 
 Find characters in a buffer.
 
@@ -51,37 +51,37 @@ const wchar_t *wmemchr(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*\
 Pointer to buffer.
 
-*c*<br/>
+*`c`*\
 Character to look for.
 
-*count*<br/>
+*`count`*\
 Number of characters to check.
 
-## Return Value
+## Return value
 
-If successful, returns a pointer to the first location of *c* in *buffer*. Otherwise it returns NULL.
+If successful, returns a pointer to the first location of *`c`* in *`buffer`*. Otherwise it returns NULL.
 
 ## Remarks
 
-`memchr` and `wmemchr` look for the first occurrence of *c* in the first *count* characters of *buffer*. It stops when it finds *c* or when it has checked the first *count* characters.
+`memchr` and `wmemchr` look for the first occurrence of *`c`* in the first *`count`* characters of *`buffer`*. It stops when it finds *`c`* or when it has checked the first *`count`* characters.
 
-In C, these functions take a **`const`** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **`const`** returns a pointer to **`const`**; the version that takes a pointer to non-**`const`** returns a pointer to non-**`const`**. The macro \_CRT\_CONST\_CORRECT\_OVERLOADS is defined if both the **`const`** and non-**`const`** versions of these functions are available. If you require the non-**`const`** behavior for both C++ overloads in C++, define the symbol \_CONST\_RETURN.
+In C, these functions take a **`const`** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **`const`** returns a pointer to **`const`**; the version that takes a pointer to non-**`const`** returns a pointer to non-**`const`**. The macro `_CRT_CONST_CORRECT_OVERLOADS` is defined if both the **`const`** and non-**`const`** versions of these functions are available. If you require the non-**`const`** behavior for both C++ overloads in C++, define the symbol `_CONST_RETURN`.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`memchr`|\<memory.h> or \<string.h>|
-|`wmemchr`|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| `memchr` | \<memory.h> or \<string.h> |
+| `wmemchr` | \<wchar.h> |
 
-For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information about compatibility, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -128,9 +128,9 @@ Result:      r found at position 12
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
-[strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
+[Buffer manipulation](../buffer-manipulation.md)\
+[`_memccpy`](memccpy.md)\
+[`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`memset`, `wmemset`](memset-wmemset.md)\
+[`strchr`, `wcschr`, `_mbschr`, `_mbschr_l`](strchr-wcschr-mbschr-mbschr-l.md)

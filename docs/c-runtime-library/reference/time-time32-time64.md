@@ -6,7 +6,7 @@ api_name: ["time", "_time64", "_time32"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["time", "_time64", "time/time", "time/_time32", "time/_time64", "_time32"]
+f1_keywords: ["TIME/time", "TIME/_time32", "TIME/_time64", "time", "_time32", "_time64"]
 helpviewer_keywords: ["time32 function", "_time32 function", "_time64 function", "time functions", "system time", "time64 function"]
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
 ---
@@ -24,26 +24,26 @@ __time64_t _time64( __time64_t *destTime );
 
 ### Parameters
 
-*`destTime`*<br/>
+*`destTime`*\
 Pointer to the storage location for time.
 
-## Return Value
+## Return value
 
-Returns the time as seconds elapsed since midnight, January 1, 1970, or -1 in the case of an error.
+Returns the time as seconds elapsed since midnight, January 1, 1970, or -1 if there's an error.
 
 ## Remarks
 
-The **`time`** function returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Coordinated Universal Time (UTC), according to the system clock. The return value is stored in the location given by *`destTime`*. This parameter may be **`NULL`**, in which case the return value is not stored.
+The **`time`** function returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Coordinated Universal Time (UTC), according to the system clock. The return value is stored in the location given by *`destTime`*. This parameter may be `NULL`, in which case the return value isn't stored.
 
-**`time`** is a wrapper for **`_time64`** and **`time_t`** is, by default, equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. This is not recommended because your application may fail after January 18, 2038; the use of this macro is not allowed on 64-bit platforms.
+**`time`** is a wrapper for **`_time64`** and **`time_t`** is, by default, equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. We don't recommend `_USE_32BIT_TIME_T`, because your application may fail after January 18, 2038; the use of this macro isn't allowed on 64-bit platforms.
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------|------|---------------------|
-|**`time`**, **`_time32`**, **`_time64`**|`<time.h>`|`<ctime>` or `<time.h>`|
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`time`**, **`_time32`**, **`_time64`** | `<time.h>` | `<ctime>` or `<time.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -199,12 +199,12 @@ Today is Friday, day 25 of April in the year 2003.
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[`asctime`, `_wasctime`](asctime-wasctime.md)<br/>
-[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)<br/>
-[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)<br/>
-[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)<br/>
-[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)<br/>
-[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)<br/>
-[`_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`](utime-utime32-utime64-wutime-wutime32-wutime64.md)<br/>
+[Time management](../time-management.md)\
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
+[`_ftime`, `_ftime32`, `_ftime64`](ftime-ftime32-ftime64.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
+[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)\
+[`_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`](utime-utime32-utime64-wutime-wutime32-wutime64.md)

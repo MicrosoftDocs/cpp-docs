@@ -3,7 +3,7 @@ description: "Learn more about: fseek, _fseeki64"
 title: "fseek, _fseeki64"
 ms.date: "4/2/2020"
 api_name: ["_fseeki64", "fseek", "_o__fseeki64", "_o_fseek"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fseek", "_fseeki64"]
@@ -31,28 +31,28 @@ int _fseeki64(
 
 ### Parameters
 
-*`stream`*<br/>
-Pointer to **`FILE`** structure.
+*`stream`*\
+Pointer to `FILE` structure.
 
-*`offset`*<br/>
+*`offset`*\
 Number of bytes from *`origin`*.
 
-*`origin`*<br/>
+*`origin`*\
 Initial position.
 
-## Return Value
+## Return value
 
-If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* is not one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+If successful, **`fseek`** and **`_fseeki64`** returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *`stream`* is a null pointer, or if *`origin`* isn't one of allowed values described below, **`fseek`** and **`_fseeki64`** invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 ## Remarks
 
 The **`fseek`** and **`_fseeki64`** functions moves the file pointer (if any) associated with *`stream`* to a new location that is *`offset`* bytes from *`origin`*. The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument *`origin`* must be one of the following constants, defined in `STDIO.H`:
 
-|origin value|Meaning|
-|-|-|
-| **`SEEK_CUR`** | Current position of file pointer. |
-| **`SEEK_END`** | End of file. |
-| **`SEEK_SET`** | Beginning of file. |
+| origin value | Meaning |
+|---|---|
+| `SEEK_CUR` | Current position of file pointer. |
+| `SEEK_END` | End of file. |
+| `SEEK_SET` | Beginning of file. |
 
 You can use **`fseek`** and **`_fseeki64`** to reposition the pointer anywhere in a file. The pointer can also be positioned beyond the end of the file. **`fseek`** and **`_fseeki64`** clears the end-of-file indicator and negates the effect of any prior [`ungetc`](ungetc-ungetwc.md) calls against *`stream`*.
 
@@ -64,22 +64,22 @@ For streams opened in text mode, **`fseek`** and **`_fseeki64`** have limited us
 
 - Seeking from the beginning of the file with an offset value returned from a call to [`ftell`](ftell-ftelli64.md) when using **`fseek`** or [`_ftelli64`](ftell-ftelli64.md) when using **`_fseeki64`**.
 
-Also in text mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, [`fopen`](fopen-wfopen.md) and all related routines check for a CTRL+Z at the end of the file and remove it if possible. This is done because using the combination of **`fseek`** and [`ftell`](ftell-ftelli64.md) or **`_fseeki64`** and [`_ftelli64`](ftell-ftelli64.md), to move within a file that ends with a CTRL+Z may cause **`fseek`** or **`_fseeki64`** to behave improperly near the end of the file.
+Also in text mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, [`fopen`](fopen-wfopen.md) and all related routines check for a CTRL+Z at the end of the file and remove it if possible. It's removed because using the combination of **`fseek`** and [`ftell`](ftell-ftelli64.md) or **`_fseeki64`** and [`_ftelli64`](ftell-ftelli64.md), to move within a file that ends with a CTRL+Z may cause **`fseek`** or **`_fseeki64`** to behave improperly near the end of the file.
 
-When the CRT opens a file that begins with a Byte Order Mark (BOM), the file pointer is positioned after the BOM (that is, at the start of the file's actual content). If you have to **`fseek`** to the beginning of the file, use [`ftell`](ftell-ftelli64.md) to get the initial position and **`fseek`** to it rather than to position 0.
+When the CRT opens a file that begins with a Byte Order Mark (BOM), the file pointer is positioned after the BOM. (That is, it's positioned at the start of the file's actual content). If you have to **`fseek`** to the beginning of the file, use [`ftell`](ftell-ftelli64.md) to get the initial position, and then **`fseek`** to that position rather than to position 0.
 
 This function locks out other threads during execution and is therefore thread-safe. For a non-locking version, see [`_fseek_nolock`, `_fseeki64_nolock`](fseek-nolock-fseeki64-nolock.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**`fseek`**|`<stdio.h>`|
-|**`_fseeki64`**|`<stdio.h>`|
+| Function | Required header |
+|---|---|
+| **`fseek`** | `<stdio.h>` |
+| **`_fseeki64`** | `<stdio.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -123,8 +123,8 @@ This is the file 'fseek.out'.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[`fopen`, `_wfopen`](fopen-wfopen.md)<br/>
-[`ftell`, `_ftelli64`](ftell-ftelli64.md)<br/>
-[`_lseek`, `_lseeki64`](lseek-lseeki64.md)<br/>
-[`rewind`](rewind.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`ftell`, `_ftelli64`](ftell-ftelli64.md)\
+[`_lseek`, `_lseeki64`](lseek-lseeki64.md)\
+[`rewind`](rewind.md)

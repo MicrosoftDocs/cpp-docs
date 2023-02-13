@@ -7,11 +7,11 @@ f1_keywords: ["cliext::set", "cliext::set::begin", "cliext::set::clear", "cliext
 helpviewer_keywords: ["<cliext/set> header [STL/CLR]", "<set> header [STL/CLR]", "set class [STL/CLR]", "operator!= (set) member [STL/CLR]", "operator< (set) member [STL/CLR]", "operator<= (set) member [STL/CLR]", "operator== (set) member [STL/CLR]", "operator> (set) member [STL/CLR]", "operator>= (set) member [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "operator= member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "set member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 27d3628c-741a-43a7-bef1-5085536f679e
 ---
-# set (STL/CLR)
+# `set` (STL/CLR)
 
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `set` to manage a sequence of elements as a (nearly) balanced ordered tree of nodes, each storing one element.
 
-In the description below, `GValue` is the same as `GKey`, which in turn is the same as *Key* unless the latter is a ref type, in which case it is `Key^`.
+In the description below, `GValue` is the same as `GKey`, which in turn is the same as *`Key`* unless the latter is a ref type, in which case it's `Key^`.
 
 ## Syntax
 
@@ -31,87 +31,87 @@ template<typename Key>
 
 ### Parameters
 
-*Key*<br/>
+*`Key`*\
 The type of the key component of an element in the controlled sequence.
 
 ## Requirements
 
 **Header:** \<cliext/set>
 
-**Namespace:** cliext
+**Namespace:** `cliext`
 
 ## Declarations
 
-|Type Definition|Description|
-|---------------------|-----------------|
-|[set::const_iterator (STL/CLR)](#const_iterator)|The type of a constant iterator for the controlled sequence.|
-|[set::const_reference (STL/CLR)](#const_reference)|The type of a constant reference to an element.|
-|[set::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|
-|[set::difference_type (STL/CLR)](#difference_type)|The type of a (possibly signed) distance between two elements.|
-|[set::generic_container (STL/CLR)](#generic_container)|The type of the generic interface for the container.|
-|[set::generic_iterator (STL/CLR)](#generic_iterator)|The type of an iterator for the generic interface for the container.|
-|[set::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|The type of a reverse iterator for the generic interface for the container.|
-|[set::generic_value (STL/CLR)](#generic_value)|The type of an element for the generic interface for the container.|
-|[set::iterator (STL/CLR)](#iterator)|The type of an iterator for the controlled sequence.|
-|[set::key_compare (STL/CLR)](#key_compare)|The ordering delegate for two keys.|
-|[set::key_type (STL/CLR)](#key_type)|The type of an ordering key.|
-|[set::reference (STL/CLR)](#reference)|The type of a reference to an element.|
-|[set::reverse_iterator (STL/CLR)](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|
-|[set::size_type (STL/CLR)](#size_type)|The type of a (non-negative) distance between two elements.|
-|[set::value_compare (STL/CLR)](#value_compare)|The ordering delegate for two element values.|
-|[set::value_type (STL/CLR)](#value_type)|The type of an element.|
+| Type definition | Description |
+|---|---|
+| [`set::const_iterator`](#const_iterator) | The type of a constant iterator for the controlled sequence. |
+| [`set::const_reference`](#const_reference) | The type of a constant reference to an element. |
+| [`set::const_reverse_iterator`](#const_reverse_iterator) | The type of a constant reverse iterator for the controlled sequence. |
+| [`set::difference_type`](#difference_type) | The type of a (possibly signed) distance between two elements. |
+| [`set::generic_container`](#generic_container) | The type of the generic interface for the container. |
+| [`set::generic_iterator`](#generic_iterator) | The type of an iterator for the generic interface for the container. |
+| [`set::generic_reverse_iterator`](#generic_reverse_iterator) | The type of a reverse iterator for the generic interface for the container. |
+| [`set::generic_value`](#generic_value) | The type of an element for the generic interface for the container. |
+| [`set::iterator`](#iterator) | The type of an iterator for the controlled sequence. |
+| [`set::key_compare`](#key_compare) | The ordering delegate for two keys. |
+| [`set::key_type`](#key_type) | The type of an ordering key. |
+| [`set::reference`](#reference) | The type of a reference to an element. |
+| [`set::reverse_iterator`](#reverse_iterator) | The type of a reverse iterator for the controlled sequence. |
+| [`set::size_type`](#size_type) | The type of a (non-negative) distance between two elements. |
+| [`set::value_compare`](#value_compare) | The ordering delegate for two element values. |
+| [`set::value_type`](#value_type) | The type of an element. |
 
-|Member Function|Description|
-|---------------------|-----------------|
-|[set::begin (STL/CLR)](#begin)|Designates the beginning of the controlled sequence.|
-|[set::clear (STL/CLR)](#clear)|Removes all elements.|
-|[set::count (STL/CLR)](#count)|Counts elements matching a specified key.|
-|[set::empty (STL/CLR)](#empty)|Tests whether no elements are present.|
-|[set::end (STL/CLR)](#end)|Designates the end of the controlled sequence.|
-|[set::equal_range (STL/CLR)](#equal_range)|Finds range that matches a specified key.|
-|[set::erase (STL/CLR)](#erase)|Removes elements at specified positions.|
-|[set::find (STL/CLR)](#find)|Finds an element that matches a specified key.|
-|[set::insert (STL/CLR)](#insert)|Adds elements.|
-|[set::key_comp (STL/CLR)](#key_comp)|Copies the ordering delegate for two keys.|
-|[set::lower_bound (STL/CLR)](#lower_bound)|Finds beginning of range that matches a specified key.|
-|[set::make_value (STL/CLR)](#make_value)|Constructs a value object.|
-|[set::rbegin (STL/CLR)](#rbegin)|Designates the beginning of the reversed controlled sequence.|
-|[set::rend (STL/CLR)](#rend)|Designates the end of the reversed controlled sequence.|
-|[set::set (STL/CLR)](#set)|Constructs a container object.|
-|[set::size (STL/CLR)](#size)|Counts the number of elements.|
-|[set::swap (STL/CLR)](#swap)|Swaps the contents of two containers.|
-|[set::to_array (STL/CLR)](#to_array)|Copies the controlled sequence to a new array.|
-|[set::upper_bound (STL/CLR)](#upper_bound)|Finds end of range that matches a specified key.|
-|[set::value_comp (STL/CLR)](#value_comp)|Copies the ordering delegate for two element values.|
+| Member function | Description |
+|---|---|
+| [`set::begin`](#begin) | Designates the beginning of the controlled sequence. |
+| [`set::clear`](#clear) | Removes all elements. |
+| [`set::count`](#count) | Counts elements matching a specified key. |
+| [`set::empty`](#empty) | Tests whether no elements are present. |
+| [`set::end`](#end) | Designates the end of the controlled sequence. |
+| [`set::equal_range`](#equal_range) | Finds range that matches a specified key. |
+| [`set::erase`](#erase) | Removes elements at specified positions. |
+| [`set::find`](#find) | Finds an element that matches a specified key. |
+| [`set::insert`](#insert) | Adds elements. |
+| [`set::key_comp`](#key_comp) | Copies the ordering delegate for two keys. |
+| [`set::lower_bound`](#lower_bound) | Finds beginning of range that matches a specified key. |
+| [`set::make_value`](#make_value) | Constructs a value object. |
+| [`set::rbegin`](#rbegin) | Designates the beginning of the reversed controlled sequence. |
+| [`set::rend`](#rend) | Designates the end of the reversed controlled sequence. |
+| [`set::set`](#set) | Constructs a container object. |
+| [`set::size`](#size) | Counts the number of elements. |
+| [`set::swap`](#swap) | Swaps the contents of two containers. |
+| [`set::to_array`](#to_array) | Copies the controlled sequence to a new array. |
+| [`set::upper_bound`](#upper_bound) | Finds end of range that matches a specified key. |
+| [`set::value_comp`](#value_comp) | Copies the ordering delegate for two element values. |
 
-|Operator|Description|
-|--------------|-----------------|
-|[set::operator= (STL/CLR)](#op_as)|Replaces the controlled sequence.|
-|[operator!= (set) (STL/CLR)](#op_neq)|Determines if a `set` object is not equal to another `set` object.|
-|[operator< (set) (STL/CLR)](#op_lt)|Determines if a `set` object is less than another `set` object.|
-|[operator<= (set) (STL/CLR)](#op_lteq)|Determines if a `set` object is less than or equal to another `set` object.|
-|[operator== (set) (STL/CLR)](#op_eq)|Determines if a `set` object is equal to another `set` object.|
-|[operator> (set) (STL/CLR)](#op_gt)|Determines if a `set` object is greater than another `set` object.|
-|[operator>= (set) (STL/CLR)](#op_gteq)|Determines if a `set` object is greater than or equal to another `set` object.|
+| Operator | Description |
+|---|---|
+| [`set::operator=`](#op_as) | Replaces the controlled sequence. |
+| [`operator!=` (set)](#op_neq) | Determines if a `set` object isn't equal to another `set` object. |
+| [`operator<` (set)](#op_lt) | Determines if a `set` object is less than another `set` object. |
+| [`operator<=` (set)](#op_lteq) | Determines if a `set` object is less than or equal to another `set` object. |
+| [`operator==` (set)](#op_eq) | Determines if a `set` object is equal to another `set` object. |
+| [`operator>` (set)](#op_gt) | Determines if a `set` object is greater than another `set` object. |
+| [`operator>=` (set)](#op_gteq) | Determines if a `set` object is greater than or equal to another `set` object. |
 
 ## Interfaces
 
-|Interface|Description|
-|---------------|-----------------|
-|<xref:System.ICloneable>|Duplicate an object.|
-|<xref:System.Collections.IEnumerable>|Sequence through elements.|
-|<xref:System.Collections.ICollection>|Maintain group of elements.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Sequence through typed elements.|
-|<xref:System.Collections.Generic.ICollection%601>|Maintain group of typed elements.|
-|ITree\<Key, Value>|Maintain generic container.|
+| Interface | Description |
+|---|---|
+| <xref:System.ICloneable> | Duplicate an object. |
+| <xref:System.Collections.IEnumerable> | Sequence through elements. |
+| <xref:System.Collections.ICollection> | Maintain group of elements. |
+| <xref:System.Collections.Generic.IEnumerable%601> | Sequence through typed elements. |
+| <xref:System.Collections.Generic.ICollection%601> | Maintain group of typed elements. |
+| `ITree<Key, Value>` | Maintain generic container. |
 
 ## Remarks
 
 The object allocates and frees storage for the sequence it controls as individual nodes. It inserts elements into a (nearly) balanced tree that it keeps ordered by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements.
 
-The object orders the sequence it controls by calling a stored delegate object of type [set::key_compare (STL/CLR)](#key_compare). You can specify the stored delegate object when you construct the set; if you specify no delegate object, the default is the comparison `operator<(key_type, key_type)`. You access this stored object by calling the member function [set::key_comp (STL/CLR)](#key_comp)`()`.
+The object orders the sequence it controls by calling a stored delegate object of type [`set::key_compare`](#key_compare). You can specify the stored delegate object when you construct the set; if you specify no delegate object, the default is the comparison `operator<(key_type, key_type)`. You access this stored object by calling the member function [`set::key_comp`](#key_comp).
 
-Such a delegate object must impose a strict weak ordering on keys of type [set::key_type (STL/CLR)](#key_type). That means, for any two keys `X` and `Y`:
+Such a delegate object must impose a strict weak ordering on keys of type [`set::key_type`](#key_type). That means, for any two keys `X` and `Y`:
 
 `key_comp()(X, Y)` returns the same Boolean result on every call.
 
@@ -121,21 +121,21 @@ If `key_comp()(X, Y)` is true, then `X` is said to be ordered before `Y`.
 
 If `!key_comp()(X, Y) && !key_comp()(Y, X)` is true, then `X` and `Y` are said to have equivalent ordering.
 
-For any element `X` that precedes `Y` in the controlled sequence, `key_comp()(Y, X)` is false. (For the default delegate object, keys never decrease in value.) Unlike template class [set](../dotnet/set-stl-clr.md), an object of template class `set` does not require that keys for all elements are unique. (Two or more keys can have equivalent ordering.)
+For any element `X` that precedes `Y` in the controlled sequence, `key_comp()(Y, X)` is false. (For the default delegate object, keys never decrease in value.) Unlike template class [set](../dotnet/set-stl-clr.md), an object of template class `set` doesn't require that keys for all elements are unique. (Two or more keys can have equivalent ordering.)
 
-Each element serves as both a ey and a value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations proportional to the logarithm of the number of elements in the sequence (logarithmic time). Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators which point at the removed element.
+Each element serves as both a key and a value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element in logarithmic time. That is, the number of operations is proportional to the logarithm of the number of elements in the sequence. Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators that point at the removed element.
 
-A set supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [set::end (STL/CLR)](#end)`()`. You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a set iterator to reach the head node, and it will then compare equal to `end()`. But you cannot dereference the iterator returned by `end()`.
+A `set` supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [`end()`](#end). You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a `set` iterator to reach the head node, and it will then compare equal to `end()`. But you can't dereference the iterator returned by `end()`.
 
-Note that you cannot refer to a set element directly given its numerical position -- that requires a random-access iterator.
+You can't refer to a `set` element directly given its numerical position. That requires a random-access iterator.
 
-A set iterator stores a handle to its associated set node, which in turn stores a handle to its associated container. You can use iterators only with their associated container objects. A set iterator remains valid so long as its associated set node is associated with some set. Moreover, a valid iterator is dereferencable -- you can use it to access or alter the element value it designates -- so long as it is not equal to `end()`.
+A `set` iterator stores a handle to its associated `set` node, which in turn stores a handle to its associated container. You can use iterators only with their associated container objects. A `set` iterator remains valid so long as its associated `set` node is associated with some set. Moreover, a valid iterator is dereferencable. You can use it to access or alter the element value it designates, so long as it isn't equal to `end()`.
 
-Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does *not* destroy its elements.
+Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. However, a container of handles doesn't destroy its elements.
 
 ## Members
 
-## <a name="begin"></a> set::begin (STL/CLR)
+## <a name="begin"></a> `set::begin`
 
 Designates the beginning of the controlled sequence.
 
@@ -183,7 +183,7 @@ a b c
 *++begin() = b
 ```
 
-## <a name="clear"></a> set::clear (STL/CLR)
+## <a name="clear"></a> `set::clear`
 
 Removes all elements.
 
@@ -195,7 +195,7 @@ void clear();
 
 ### Remarks
 
-The member function effectively calls [set::erase (STL/CLR)](#erase)`(` [set::begin (STL/CLR)](#begin)`(),` [set::end (STL/CLR)](#end)`())`. You use it to ensure that the controlled sequence is empty.
+The member function effectively calls `erase(begin(), end())`. You use it to ensure that the controlled sequence is empty.
 
 ### Example
 
@@ -241,7 +241,7 @@ a b
 size() = 0
 ```
 
-## <a name="const_iterator"></a> set::const_iterator (STL/CLR)
+## <a name="const_iterator"></a> `set::const_iterator`
 
 The type of a constant iterator for the controlled sequence.
 
@@ -283,7 +283,7 @@ int main()
 a b c
 ```
 
-## <a name="const_reference"></a> set::const_reference (STL/CLR)
+## <a name="const_reference"></a> `set::const_reference`
 
 The type of a constant reference to an element.
 
@@ -328,9 +328,9 @@ int main()
 a b c
 ```
 
-## <a name="const_reverse_iterator"></a> set::const_reverse_iterator (STL/CLR)
+## <a name="const_reverse_iterator"></a> `set::const_reverse_iterator`
 
-The type of a constant reverse iterator for the controlled sequence..
+The type of a constant reverse iterator for the controlled sequence.
 
 ### Syntax
 
@@ -370,7 +370,7 @@ int main()
 c b a
 ```
 
-## <a name="count"></a> set::count (STL/CLR)
+## <a name="count"></a> `set::count`
 
 Finds the number of elements matching a specified key.
 
@@ -382,12 +382,12 @@ size_type count(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-The member function returns the number of elements in the controlled sequence that have equivalent ordering with *key*. You use it to determine the number of elements currently in the controlled sequence that match a specified key.
+The member function returns the number of elements in the controlled sequence that have equivalent ordering with *`key`*. You use it to determine the number of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -423,7 +423,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="difference_type"></a> set::difference_type (STL/CLR)
+## <a name="difference_type"></a> `set::difference_type`
 
 The types of a signed distance between two elements.
 
@@ -478,7 +478,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="empty"></a> set::empty (STL/CLR)
+## <a name="empty"></a> `set::empty`
 
 Tests whether no elements are present.
 
@@ -490,7 +490,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [set::size (STL/CLR)](#size)`() == 0`. You use it to test whether the set is empty.
+The member function returns true for an empty controlled sequence. It's equivalent to `size() == 0`. You use it to test whether the `set` is empty.
 
 ### Example
 
@@ -530,7 +530,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="end"></a> set::end (STL/CLR)
+## <a name="end"></a> `set::end`
 
 Designates the end of the controlled sequence.
 
@@ -542,7 +542,7 @@ iterator end();
 
 ### Remarks
 
-The member function returns a bidirectional iterator that points just beyond the end of the controlled sequence. You use it to obtain an iterator that designates the end of the controlled sequence; its status doesn not change if the length of the controlled sequence changes.
+The member function returns a bidirectional iterator that points just beyond the end of the controlled sequence. You use it to obtain an iterator that designates the end of the controlled sequence; its status doesn't change if the length of the controlled sequence changes.
 
 ### Example
 
@@ -579,7 +579,7 @@ a b c
 *--end() = c
 ```
 
-## <a name="equal_range"></a> set::equal_range (STL/CLR)
+## <a name="equal_range"></a> `set::equal_range`
 
 Finds range that matches a specified key.
 
@@ -591,12 +591,12 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*<br/>
 Key value to search for.
 
 ### Remarks
 
-The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [set::lower_bound (STL/CLR)](#lower_bound)`(key),` [set::upper_bound (STL/CLR)](#upper_bound)`(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.
+The member function returns a pair of iterators `cliext::pair<iterator, iterator>(lower_bound(key), upper_bound(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -639,7 +639,7 @@ equal_range(L'x') empty = True
 b
 ```
 
-## <a name="erase"></a> set::erase (STL/CLR)
+## <a name="erase"></a> `set::erase`
 
 Removes elements at specified positions.
 
@@ -653,25 +653,25 @@ size_type erase(key_type key)
 
 #### Parameters
 
-*first*<br/>
+*`first`*\
 Beginning of range to erase.
 
-*key*<br/>
+*`key`*\
 Key value to erase.
 
-*last*<br/>
+*`last`*\
 End of range to erase.
 
-*where*<br/>
+*`where`*\
 Element to erase.
 
 ### Remarks
 
-The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [set::end (STL/CLR)](#end)`()` if no such element exists. You use it to remove a single element.
+The first member function removes the element of the controlled sequence pointed to by *`where`*, and returns an iterator that designates the first element remaining beyond the element removed, or [`end()`](#end) if no such element exists. You use it to remove a single element.
 
-The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.
+The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists. You use it to remove zero or more contiguous elements.
 
-The third member function removes any element of the controlled sequence whose key has equivalent ordering to *key*, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.
+The third member function removes any element of the controlled sequence whose key has equivalent ordering to *`key`*, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.
 
 Each element erasure takes time proportional to the logarithm of the number of elements in the controlled sequence.
 
@@ -723,7 +723,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="find"></a> set::find (STL/CLR)
+## <a name="find"></a> `set::find`
 
 Finds an element that matches a specified key.
 
@@ -735,12 +735,12 @@ iterator find(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [set::end (STL/CLR)](#end)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.
+If at least one element in the controlled sequence has equivalent ordering with *`key`*, the member function returns an iterator designating one of those elements; otherwise it returns [`end()`](#end). You use it to locate an element currently in the controlled sequence that matches a specified key.
 
 ### Example
 
@@ -779,7 +779,7 @@ find b = b
 find C = False
 ```
 
-## <a name="generic_container"></a> set::generic_container (STL/CLR)
+## <a name="generic_container"></a> `set::generic_container`
 
 The type of the generic interface for the container.
 
@@ -843,7 +843,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="generic_iterator"></a> set::generic_iterator (STL/CLR)
+## <a name="generic_iterator"></a> `set::generic_iterator`
 
 The type of an iterator for use with the generic interface for the container.
 
@@ -899,7 +899,7 @@ a b c
 a
 ```
 
-## <a name="generic_reverse_iterator"></a> set::generic_reverse_iterator (STL/CLR)
+## <a name="generic_reverse_iterator"></a> `set::generic_reverse_iterator`
 
 The type of a reverse iterator for use with the generic interface for the container.
 
@@ -955,7 +955,7 @@ a b c
 c
 ```
 
-## <a name="generic_value"></a> set::generic_value (STL/CLR)
+## <a name="generic_value"></a> `set::generic_value`
 
 The type of an element for use with the generic interface for the container.
 
@@ -1009,7 +1009,7 @@ a b c
 a
 ```
 
-## <a name="insert"></a> set::insert (STL/CLR)
+## <a name="insert"></a> `set::insert`
 
 Adds elements.
 
@@ -1025,34 +1025,34 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
 
 #### Parameters
 
-*first*<br/>
+*`first`*\
 Beginning of range to insert.
 
-*last*<br/>
+*`last`*\
 End of range to insert.
 
-*right*<br/>
+*`right`*\
 Enumeration to insert.
 
-*val*<br/>
+*`val`*\
 Key value to insert.
 
-*where*<br/>
+*`where`*\
 Where in container to insert (hint only).
 
 ### Remarks
 
 Each of the member functions inserts a sequence specified by the remaining operands.
 
-The first member function endeavors to insert an element with value *val*, and returns a pair of values `X`. If `X.second` is true, `X.first` designates the newly inserted element; otherwise `X.first` designates an element with equivalent ordering that already exists and no new element is inserted. You use it to insert a single element.
+The first member function endeavors to insert an element with value *`val`*, and returns a pair of values `X`. If `X.second` is true, `X.first` designates the newly inserted element; otherwise `X.first` designates an element with equivalent ordering that already exists and no new element is inserted. You use it to insert a single element.
 
-The second member function inserts an element with value *val*, using *where* as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.
+The second member function inserts an element with value *`val`*, using *`where`* as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element that might be next to an element you know.
 
 The third member function inserts the sequence [`first`, `last`). You use it to insert zero or more elements copied from another sequence.
 
-The fourth member function inserts the sequence designated by the *right*. You use it to insert a sequence described by an enumerator.
+The fourth member function inserts the sequence designated by the *`right`*. You use it to insert a sequence described by an enumerator.
 
-Each element insertion takes time proportional to the logarithm of the number of elements in the controlled sequence. Insertion can occur in amortized constant time, however, given a hint that designates an element adjacent to the insertion point.
+Each element insertion takes time proportional to the logarithm of the number of elements in the controlled sequence. Insertion can occur in amortized constant time, however, given a hint that designates an element next to the insertion point.
 
 ### Example
 
@@ -1125,7 +1125,7 @@ a b c x
 a b c x y
 ```
 
-## <a name="iterator"></a> set::iterator (STL/CLR)
+## <a name="iterator"></a> `set::iterator`
 
 The type of an iterator for the controlled sequence.
 
@@ -1167,7 +1167,7 @@ int main()
 a b c
 ```
 
-## <a name="key_comp"></a> set::key_comp (STL/CLR)
+## <a name="key_comp"></a> `set::key_comp`
 
 Copies the ordering delegate for two keys.
 
@@ -1226,7 +1226,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="key_compare"></a> set::key_compare (STL/CLR)
+## <a name="key_compare"></a> `set::key_compare`
 
 The ordering delegate for two keys.
 
@@ -1286,7 +1286,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="key_type"></a> set::key_type (STL/CLR)
+## <a name="key_type"></a> `set::key_type`
 
 The type of an ordering key.
 
@@ -1298,7 +1298,7 @@ typedef Key key_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter *Key*.
+The type is a synonym for the template parameter *`Key`*.
 
 ### Example
 
@@ -1331,7 +1331,7 @@ int main()
 a b c
 ```
 
-## <a name="lower_bound"></a> set::lower_bound (STL/CLR)
+## <a name="lower_bound"></a> `set::lower_bound`
 
 Finds beginning of range that matches a specified key.
 
@@ -1343,12 +1343,12 @@ iterator lower_bound(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-The member function determines the first element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, it returns [set::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the first element `X` in the controlled sequence that has equivalent ordering to *`key`*. If no such element exists, it returns [`end()`](#end); otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -1388,7 +1388,7 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = b
 ```
 
-## <a name="make_value"></a> set::make_value (STL/CLR)
+## <a name="make_value"></a> `set::make_value`
 
 Constructs a value object.
 
@@ -1400,12 +1400,12 @@ static value_type make_value(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to use.
 
 ### Remarks
 
-The member function returns a `value_type` object whose key is *key*. You use it to compose an object suitable for use with several other member functions.
+The member function returns a `value_type` object whose key is *`key`*. You use it to compose an object suitable for use with several other member functions.
 
 ### Example
 
@@ -1434,7 +1434,7 @@ int main()
 a b c
 ```
 
-## <a name="op_as"></a> set::operator= (STL/CLR)
+## <a name="op_as"></a> `set::operator=`
 
 Replaces the controlled sequence.
 
@@ -1446,12 +1446,12 @@ set<Key>% operator=(set<Key>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *`right`* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *`right`*.
 
 ### Example
 
@@ -1489,7 +1489,7 @@ a b c
 a b c
 ```
 
-## <a name="rbegin"></a> set::rbegin (STL/CLR)
+## <a name="rbegin"></a> `set::rbegin`
 
 Designates the beginning of the reversed controlled sequence.
 
@@ -1537,7 +1537,7 @@ a b c
 *++rbegin() = b
 ```
 
-## <a name="reference"></a> set::reference (STL/CLR)
+## <a name="reference"></a> `set::reference`
 
 The type of a reference to an element.
 
@@ -1582,7 +1582,7 @@ int main()
 a b c
 ```
 
-## <a name="rend"></a> set::rend (STL/CLR)
+## <a name="rend"></a> `set::rend`
 
 Designates the end of the reversed controlled sequence.
 
@@ -1631,7 +1631,7 @@ a b c
 *--rend() = a
 ```
 
-## <a name="reverse_iterator"></a> set::reverse_iterator (STL/CLR)
+## <a name="reverse_iterator"></a> `set::reverse_iterator`
 
 The type of a reverse iterator for the controlled sequence.
 
@@ -1673,7 +1673,7 @@ int main()
 c b a
 ```
 
-## <a name="set"></a> set::set (STL/CLR)
+## <a name="set"></a> `set::set`
 
 Constructs a container object.
 
@@ -1696,16 +1696,16 @@ set(System::Collections::Generic::IEnumerable<GValue>^ right,
 
 #### Parameters
 
-*first*<br/>
+*`first`*\
 Beginning of range to insert.
 
-*last*<br/>
+*`last`*\
 End of range to insert.
 
-*pred*<br/>
+*`pred`*\
 Ordering predicate for the controlled sequence.
 
-*right*<br/>
+*`right`*\
 Object or range to insert.
 
 ### Remarks
@@ -1720,19 +1720,19 @@ The constructor:
 
 `explicit set(key_compare^ pred);`
 
-initializes the controlled sequence with no elements, with the ordering predicate *pred*. You use it to specify an empty initial controlled sequence, with the specified ordering predicate.
+initializes the controlled sequence with no elements, with the ordering predicate *`pred`*. You use it to specify an empty initial controlled sequence, with the specified ordering predicate.
 
 The constructor:
 
 `set(set<Key>% right);`
 
-initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object *right*, with the default ordering predicate.
+initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `set` object *`right`*, with the default ordering predicate.
 
 The constructor:
 
 `set(set<Key>^ right);`
 
-initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object *right*, with the default ordering predicate.
+initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the `set` object *`right`*, with the default ordering predicate.
 
 The constructor:
 
@@ -1744,19 +1744,19 @@ The constructor:
 
 `template<typename InIter> set(InIter first, InIter last, key_compare^ pred);`
 
-initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *pred*. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.
+initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *`pred`*. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.
 
 The constructor:
 
 `set(System::Collections::Generic::IEnumerable<Key>^ right);`
 
-initializes the controlled sequence with the sequence designated by the enumerator *right*, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate.
+initializes the controlled sequence with the sequence designated by the enumerator *`right`*, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate.
 
 The constructor:
 
 `set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`
 
-initializes the controlled sequence with the sequence designated by the enumerator *right*, with the ordering predicate *pred*. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate.
+initializes the controlled sequence with the sequence designated by the enumerator *`right`*, with the ordering predicate *`pred`*. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate.
 
 ### Example
 
@@ -1844,7 +1844,7 @@ c b a
 a b c
 ```
 
-## <a name="size"></a> set::size (STL/CLR)
+## <a name="size"></a> `set::size`
 
 Counts the number of elements.
 
@@ -1856,7 +1856,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [set::empty (STL/CLR)](#empty)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [`empty()`](#empty).
 
 ### Example
 
@@ -1898,9 +1898,9 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="size_type"></a> set::size_type (STL/CLR)
+## <a name="size_type"></a> `set::size_type`
 
-The type of a signed distance between two element.
+The type of a signed distance between two elements.
 
 ### Syntax
 
@@ -1946,7 +1946,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="swap"></a> set::swap (STL/CLR)
+## <a name="swap"></a> `set::swap`
 
 Swaps the contents of two containers.
 
@@ -1958,12 +1958,12 @@ void swap(set<Key>% right);
 
 #### Parameters
 
-*right*<br/>
+*`right`*\
 Container to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between **`this`** and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
+The member function swaps the controlled sequences between **`this`** and *`right`*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
 
 ### Example
 
@@ -2014,7 +2014,7 @@ d e f
 a b c
 ```
 
-## <a name="to_array"></a> set::to_array (STL/CLR)
+## <a name="to_array"></a> `set::to_array`
 
 Copies the controlled sequence to a new array.
 
@@ -2064,7 +2064,7 @@ a b c d
 a b c
 ```
 
-## <a name="upper_bound"></a> set::upper_bound (STL/CLR)
+## <a name="upper_bound"></a> `set::upper_bound`
 
 Finds end of range that matches a specified key.
 
@@ -2076,12 +2076,12 @@ iterator upper_bound(key_type key);
 
 #### Parameters
 
-*key*<br/>
+*`key`*\
 Key value to search for.
 
 ### Remarks
 
-The member function determines the last element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [set::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the last element `X` in the controlled sequence that has equivalent ordering to *`key`*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [`end()`](#end); otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -2121,7 +2121,7 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = c
 ```
 
-## <a name="value_comp"></a> set::value_comp (STL/CLR)
+## <a name="value_comp"></a> `set::value_comp`
 
 Copies the ordering delegate for two element values.
 
@@ -2165,7 +2165,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="value_compare"></a> set::value_compare (STL/CLR)
+## <a name="value_compare"></a> `set::value_compare`
 
 The ordering delegate for two element values.
 
@@ -2210,7 +2210,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="value_type"></a> set::value_type (STL/CLR)
+## <a name="value_type"></a> `set::value_type`
 
 The type of an element.
 
@@ -2255,7 +2255,7 @@ int main()
 a b c
 ```
 
-## <a name="op_neq"></a> operator!= (set) (STL/CLR)
+## <a name="op_neq"></a> `operator!=` (set)
 
 List not equal comparison.
 
@@ -2269,15 +2269,15 @@ template<typename Key>
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two sets are compared element by element.
+The operator function returns `!(left == right)`. You use it to test whether *`left`* isn't ordered the same as *`right`* when the two sets are compared element by element.
 
 ### Example
 
@@ -2325,7 +2325,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="op_lt"></a> `operator<` (set) (STL/CLR)
+## <a name="op_lt"></a> `operator<` (set)
 
 List less than comparison.
 
@@ -2339,15 +2339,15 @@ template<typename Key>
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()` You use it to test whether *left* is ordered before *right* when the two sets are compared element by element.
+The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it's also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()`. You use it to test whether *`left`* is ordered before *`right`* when the two sets are compared element by element.
 
 ### Example
 
@@ -2395,7 +2395,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="op_lteq"></a> `operator<=` (set) (STL/CLR)
+## <a name="op_lteq"></a> `operator<=` (set)
 
 List less than or equal comparison.
 
@@ -2409,15 +2409,15 @@ template<typename Key>
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two sets are compared element by element.
+The operator function returns `!(right < left)`. You use it to test whether *`left`* isn't ordered after *`right`* when the two sets are compared element by element.
 
 ### Example
 
@@ -2465,7 +2465,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="op_eq"></a> operator== (set) (STL/CLR)
+## <a name="op_eq"></a> `operator==` (set)
 
 List equal comparison.
 
@@ -2479,15 +2479,15 @@ template<typename Key>
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns true only if the sequences controlled by *left* and *right* have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether *left* is ordered the same as *right* when the two sets are compared element by element.
+The operator function returns true only if the sequences controlled by *`left`* and *`right`* have the same length and, for each position `i`, `left[i] == right[i]`. You use it to test whether *`left`* is ordered the same as *`right`* when the two sets are compared element by element.
 
 ### Example
 
@@ -2535,7 +2535,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="op_gt"></a> `operator>` (set) (STL/CLR)
+## <a name="op_gt"></a> `operator>` (set)
 
 List greater than comparison.
 
@@ -2549,15 +2549,15 @@ template<typename Key>
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two sets are compared element by element.
+The operator function returns `right < left`. You use it to test whether *`left`* is ordered after *`right`* when the two sets are compared element by element.
 
 ### Example
 
@@ -2605,7 +2605,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="op_gteq"></a> `operator>=` (set) (STL/CLR)
+## <a name="op_gteq"></a> `operator>=` (set)
 
 List greater than or equal comparison.
 
@@ -2619,15 +2619,15 @@ template<typename Key>
 
 #### Parameters
 
-*left*<br/>
+*`left`*\
 Left container to compare.
 
-*right*<br/>
+*`right`*\
 Right container to compare.
 
 ### Remarks
 
-The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two sets are compared element by element.
+The operator function returns `!(left < right)`. You use it to test whether *`left`* isn't ordered before *`right`* when the two sets are compared element by element.
 
 ### Example
 

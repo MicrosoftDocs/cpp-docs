@@ -3,12 +3,11 @@ description: "Learn more about: C++ AMP Overview"
 title: "C++ AMP Overview"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, requirements", "C++ Accelerated Massive Parallelism, architecture", "C++ AMP", "C++ Accelerated Massive Parallelism, overview", "C++ Accelerated Massive Parallelism"]
-ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 ---
 # C++ AMP Overview
 
 > [!NOTE]
-> C++ AMP headers are deprecated, starting with Visual Studio 2022 version 17.0.
+> C++ AMP headers are deprecated starting with Visual Studio 2022 version 17.0.
 > Including any AMP headers will generate build errors. Define `_SILENCE_AMP_DEPRECATION_WARNINGS` before including any AMP headers to silence the warnings.
 
 C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code by taking advantage of data-parallel hardware such as a graphics processing unit (GPU) on a discrete graphics card. By using C++ AMP, you can code multi-dimensional data algorithms so that execution can be accelerated by using parallelism on heterogeneous hardware. The C++ AMP programming model includes multidimensional arrays, indexing, memory transfer, tiling, and a mathematical function library. You can use C++ AMP language extensions to control how data is moved from the CPU to the GPU and back, so that you can improve performance.
@@ -17,7 +16,7 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
 
 - Windows 7 or later
 
-- Windows Server 2008 R2 or later
+- Windows Server 2008 R2 through Visual Studio 2019.
 
 - DirectX 11 Feature Level 11.0 or later hardware
 
@@ -232,9 +231,9 @@ The following table summarizes the similarities and differences between the `arr
 
 Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior.
 
-`array` objects can be used to specify fine-grained control over the use of shared memory if the associated accelerator supports it. Whether an accelerator supports shared memory is determined by the accelerator’s [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) property, which returns **`true`** when shared memory is supported. If shared memory is supported, the default [access_type Enumeration](reference/concurrency-namespace-enums-amp.md#access_type) for memory allocations on the accelerator is determined by the `default_cpu_access_type` property. By default, `array` and `array_view` objects take on the same `access_type` as the primary associated `accelerator`.
+`array` objects can be used to specify fine-grained control over the use of shared memory if the associated accelerator supports it. Whether an accelerator supports shared memory is determined by the accelerator's [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) property, which returns **`true`** when shared memory is supported. If shared memory is supported, the default [access_type Enumeration](reference/concurrency-namespace-enums-amp.md#access_type) for memory allocations on the accelerator is determined by the `default_cpu_access_type` property. By default, `array` and `array_view` objects take on the same `access_type` as the primary associated `accelerator`.
 
-By setting the [array::cpu_access_type Data Member](reference/array-class.md#cpu_access_type) property of an `array` explicitly, you can exercise fine-grained control over how shared memory is used, so that you can optimize the app for the hardware’s performance characteristics, based on the memory access patterns of its computation kernels. An `array_view` reflects the same `cpu_access_type` as the `array` that it’s associated with; or, if the array_view is constructed without a data source, its `access_type` reflects the environment that first causes it to allocate storage. That is, if it’s first accessed by the host (CPU), then it behaves as if it were created over a CPU data source and shares the `access_type` of the `accelerator_view` associated by capture; however, if it's first accessed by an `accelerator_view`, then it behaves as if it were created over an `array` created on that `accelerator_view` and shares the `array`’s `access_type`.
+By setting the [array::cpu_access_type Data Member](reference/array-class.md#cpu_access_type) property of an `array` explicitly, you can exercise fine-grained control over how shared memory is used, so that you can optimize the app for the hardware's performance characteristics, based on the memory access patterns of its computation kernels. An `array_view` reflects the same `cpu_access_type` as the `array` that it's associated with; or, if the array_view is constructed without a data source, its `access_type` reflects the environment that first causes it to allocate storage. That is, if it's first accessed by the host (CPU), then it behaves as if it were created over a CPU data source and shares the `access_type` of the `accelerator_view` associated by capture; however, if it's first accessed by an `accelerator_view`, then it behaves as if it were created over an `array` created on that `accelerator_view` and shares the `array`'s `access_type`.
 
 The following code example shows how to determine whether the default accelerator supports shared memory, and then creates several arrays that have different cpu_access_type configurations.
 
@@ -248,7 +247,7 @@ int main()
 {
     accelerator acc = accelerator(accelerator::default_accelerator);
 
-    // Early out if the default accelerator doesn’t support shared memory.
+    // Early out if the default accelerator doesn't support shared memory.
     if (!acc.supports_cpu_shared_memory)
     {
         std::cout << "The default accelerator does not support shared memory" << std::endl;
@@ -425,7 +424,7 @@ for (int i = 0; i <4; i++) {
 
 ## Math Libraries
 
-C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It conforms to the [C99 Specification (ISO/IEC 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](reference/accelerator-class.md#supports_double_precision). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only **`float`** operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The **`restrict`** keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.
+C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It conforms to the [C99 Specification (ISO/IEC 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](reference/accelerator-class.md#supports_double_precision). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only **`float`** operands, execute more quickly but aren't as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The **`restrict`** keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.
 
 ```cpp
 #include <amp.h>

@@ -7,12 +7,12 @@ api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvc
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_isnan", "isnan", "math/isnan", "math/_isnan", "math/_isnanf", "_isnanf"]
-helpviewer_keywords: ["NAN (not a number)", "_isnan function", "IEEE floating-point representation", "Not a Number (NANs)", "isnan function"]
+helpviewer_keywords: ["NaN (not a number)", "_isnan function", "IEEE floating-point representation", "Not a Number (NaNs)", "isnan function"]
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
 ---
-# isnan, _isnan, _isnanf
+# `isnan`, `_isnan`, `_isnanf`
 
-Tests if a floating-point value is not a number (NAN).
+Tests if a floating-point value is a NaN ("Not a Number").
 
 ## Syntax
 
@@ -37,37 +37,37 @@ bool isnan(
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 The floating-point value to test.
 
-## Return Value
+## Return value
 
-In C, the **isnan** macro and the **_isnan** and **_isnanf** functions return a non-zero value if the argument *x* is a NAN; otherwise they return 0.
+In C, the **`isnan`** macro and the **`_isnan`** and **`_isnanf`** functions return a non-zero value if the argument *`x`* is a NaN; otherwise they return 0.
 
-In C++, the **isnan** template function returns **`true`** if the argument *x* is a NaN; otherwise it returns **`false`**.
+In C++, the **`isnan`** template function returns **`true`** if the argument *`x`* is a NaN; otherwise it returns **`false`**.
 
 ## Remarks
 
-Because a NaN value does not compare as equal to any other NaN value, you must use one of these functions or macros to detect one. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [printf](printf-printf-l-wprintf-wprintf-l.md).
+Because a NaN value doesn't compare as equal to itself or to any other NaN value, to detect one, you must use one of these functions or macros. A NaN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NaN is represented for output, see [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
-When compiled as C++, the **isnan** macro is not defined, and an **isnan** template function is defined instead. It behaves the same way as the macro, but returns a value of type **`bool`** instead of an integer.
+When compiled as C++, the **`isnan`** macro isn't defined, and an **`isnan`** template function is defined instead. It behaves the same way as the macro, but returns a value of type **`bool`** instead of an integer.
 
-The **_isnan** and **_isnanf** functions are Microsoft-specific. The **_isnanf** function is only available when compiled for x64.
+The **`_isnan`** and **`_isnanf`** functions are Microsoft-specific. The **`_isnanf`** function is only available when compiled for x64.
 
 ## Requirements
 
-|Routine|Required header (C)|Required header (C++)|
-|-------------|---------------------------|-------------------------------|
-|**isnan**, **_isnanf**|\<math.h>|\<math.h> or \<cmath>|
-|**_isnan**|\<float.h>|\<float.h> or \<cfloat>|
+| Routine | Required header (C) | Required header (C++) |
+|---|---|---|
+| **`isnan`**, **`_isnanf`** | \<math.h> | \<math.h> or \<cmath> |
+| **`_isnan`** | \<float.h> | \<float.h> or \<cfloat> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fpclassify](fpclassify.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
-[isnormal](isnormal.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`fpclassify`](fpclassify.md)\
+[`_fpclass`, `_fpclassf`](fpclass-fpclassf.md)\
+[`isfinite`, `_finite`, `_finitef`](finite-finitef.md)\
+[`isinf`](isinf.md)\
+[`isnormal`](isnormal.md)

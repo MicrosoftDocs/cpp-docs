@@ -2,14 +2,14 @@
 description: "Learn more about: RAND_MAX"
 title: "RAND_MAX"
 ms.date: "11/04/2016"
-f1_keywords: ["RAND_MAX"]
+f1_keywords: ["STDLIB/RAND_MAX", "RAND_MAX"]
 helpviewer_keywords: ["RAND_MAX constant"]
 ---
 # `RAND_MAX`
 
 ## Syntax
 
-```
+```C
 #include <stdlib.h>
 ```
 
@@ -19,5 +19,5 @@ The constant `RAND_MAX` is the maximum value that can be returned by the `rand` 
 
 ## See also
 
-[`rand`](../c-runtime-library/reference/rand.md)\
-[Global Constants](../c-runtime-library/global-constants.md)
+[`rand`](./reference/rand.md)\
+[Global constants](./global-constants.md)

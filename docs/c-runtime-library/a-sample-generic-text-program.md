@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["_TCHAR type", "mappings, TCHAR.H data types", "generic-text example [CRT]", "TCHAR type", "TCHAR.H data types, mapping"]
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
 ---
-# A Sample Generic-Text Program
+# A sample generic-text program
 
 **Microsoft Specific**
 
@@ -87,7 +87,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
-If `_UNICODE` has been defined, GENTEXT.C maps to the following Unicode version of the program. For more information about using `wmain` in Unicode programs as a replacement for `main`, see [Using wmain](../c-language/using-wmain.md) in *C Language Reference*.
+If `_UNICODE` has been defined, GENTEXT.C maps to the following Unicode version of the program. For more information about using `wmain` in Unicode programs as a replacement for `main`, see [Using `wmain`](../c-language/using-wmain.md) in *C Language Reference*.
 
 ```C
 // crt_unicgtxt.c
@@ -125,7 +125,7 @@ int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)
 }
 ```
 
-If neither `_MBCS` nor `_UNICODE` has been defined, GENTEXT.C maps to single-byte ASCII code, as follows:
+If `_MBCS` or `_UNICODE` hasn't been defined, GENTEXT.C maps to single-byte ASCII code, as follows:
 
 ```C
 // crt_sbcsgtxt.c
@@ -166,8 +166,8 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 ## See also
 
-[Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
-[Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>
-[Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Routine Mappings](../c-runtime-library/routine-mappings.md)<br/>
-[Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)
+[Generic-text mappings](./generic-text-mappings.md)\
+[Data type mappings](./data-type-mappings.md)\
+[Constant and global variable mappings](./constant-and-global-variable-mappings.md)\
+[Routine mappings](./routine-mappings.md)\
+[Using generic-text mappings](./using-generic-text-mappings.md)

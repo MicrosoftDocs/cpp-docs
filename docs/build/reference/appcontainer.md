@@ -11,7 +11,6 @@ ms.assetid: 0ca4f1ec-c8de-4a37-b3e2-deda7af0bb88
 Marks an executable that must run in an app container—for example, a Microsoft Store or Universal Windows app.
 
 ```
-
 /APPCONTAINER[:NO]
 ```
 

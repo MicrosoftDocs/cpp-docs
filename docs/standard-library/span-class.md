@@ -1,5 +1,5 @@
 ---
-title: "span class (C++ Standard Library)| Microsoft Docs"
+title: span class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) span class, which provides a lightweight view over a contiguous sequence of objects."
 ms.date: "05/28/2020"
 f1_keywords: ["span/std::span", "span/std::span::const_pointer", "span/std::span::const_reference", "span/std::span::difference_type", "span/std::span::element_type", "span/std::span::iterator", "span/std::span::pointer", "span/std::span::reference", "span/std::span::reverse_iterator", "span/std::span::size_type", "span/std::span::value_type", "span/std::span::at", "span/std::span::assign", "span/std::span::back", "span/std::span::begin", "span/std::span::data", "span/std::span::empty", "span/std::span::end", "span/std::span::front", "span/std::span::rbegin", "span/std::span::rend",
@@ -912,7 +912,7 @@ A `span` doesn't free storage for items in the `span` because it doesn't own the
 |---------|---------|
 |`span()` | Construct an empty `span`. Only considered during overload resolution when the template parameter `Extent` is `0` or `dynamic_extent`.|
 |`span(It first, size_type count)` | Construct a `span` from the first `count` elements from iterator `first`.  Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. |
-|`span(It first, End last)` | Construct a `span` from the elements in iterator `first` until the end `last` is reached. Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a `contiguous_iterator`.  |
+|`span(It first, End last)` | Construct a `span` from the elements in iterator `first` until the end `last` is reached. Only considered during overload resolution when template parameter `Extent` isn't `dynamic_extent`. `It` must be a [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator). |
 |`span(array<T, N>& arr) noexcept;`<br /><br />`span(const array<T, N>& arr) noexcept;`<br /><br />`span(type_identity_t<element_type> (&arr)[N]) noexcept;` |  Construct a `span` from `N` elements of the specified array. Only considered during overload resolution when template parameter `Extent` is `dynamic_extent` or equals `N`. |
 |`span(R&& r)` |  Construct a `span` from a range. Only participates in overload resolution if template parameter `Extent` isn't `dynamic_extent`.|
 |`span(const span& other)` |  The compiler-generated copy constructor. A shallow copy of the data pointer is safe because the `span` doesn't allocate the memory to hold the elements. |

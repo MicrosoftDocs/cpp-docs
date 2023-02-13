@@ -138,7 +138,7 @@ If you compile with `_ITERATOR_DEBUG_LEVEL` set, a run-time error occurs if you 
 
 ### Example
 
-This code example shows the correct use of `vector<bool>::operator[]` and two common coding mistakes, which are commented out. These mistakes cause errors because the address of the `vector<bool>::reference` object that `vector<bool>::operator[]` returns can’t be taken.
+This code example shows the correct use of `vector<bool>::operator[]` and two common coding mistakes, which are commented out. These mistakes cause errors because the address of the `vector<bool>::reference` object that `vector<bool>::operator[]` returns can't be taken.
 
 ```cpp
 // cl.exe /EHsc /nologo /W4 /MTd
@@ -167,6 +167,13 @@ int main()
 }
 ```
 
+```Output
+The second element of vb is false
+The held value from the second element of vb is false
+The second element of vb is true
+The held value from the second element of vb is false
+```
+
 ## <a name="pointer"></a> `vector<bool>::pointer`
 
 A type that describes an object that can serve as a pointer to a Boolean element of the sequence contained by the `vector<bool>` object.
@@ -181,7 +188,7 @@ The `vector<bool>::reference` class is a proxy class provided by the [`vector<bo
 
 ### Remarks
 
-A simulated reference is required because C++ doesn't natively allow direct references to bits. `vector<bool>` uses only one bit per element, which can be referenced by using this proxy class. However, the reference simulation isn't complete because certain assignments aren't valid. For example, because the address of the `vector<bool>::reference` object can’t be taken, the following code that uses [`vector<bool>::operator[]`](#op_at) isn't correct:
+A simulated reference is required because C++ doesn't natively allow direct references to bits. `vector<bool>` uses only one bit per element, which can be referenced by using this proxy class. However, the reference simulation isn't complete because certain assignments aren't valid. For example, because the address of the `vector<bool>::reference` object can't be taken, the following code that uses [`vector<bool>::operator[]`](#op_at) isn't correct:
 
 ```cpp
 vector<bool> vb;
@@ -251,7 +258,7 @@ The Boolean value of the element of the `vector<bool>` object.
 
 #### Remarks
 
-The `vector<bool>` object can’t be modified by this operator.
+The `vector<bool>` object can't be modified by this operator.
 
 ### <a name="reference_operator_eq"></a> `vector<bool>::reference::operator=`
 

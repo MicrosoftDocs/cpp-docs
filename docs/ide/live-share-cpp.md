@@ -7,13 +7,13 @@ ms.date: "05/24/2019"
 
 In Visual Studio 2019 and Visual Studio Code, you can use **Live Share** to collaborate on C++ projects in real-time. With **Live Share** another person can edit and debug your code without having to install your project or any of its dependencies. You see each other's edits as they occur, and each edit is tagged with the name of the person who made it.
 
-![Screenshot of C plus plus Live Share Editing.](../ide/media/live-share-edit-cpp.png)
+![Screenshot of C plus plus Live Share Editing. A change to the code specifying a color is highlighted and annotated with the name of the person making it.](../ide/media/live-share-edit-cpp.png)
 
 ## Live Share host and guests
 
-In a Live Share session there is a host and one or more guests. Both host and guests can use either Visual Studio or Visual Studio Code. A Visual Studio 2019 host on Windows can share with a Visual Studio Code guest on Linux.
+In a Live Share session, there's a host and one or more guests. Both host and guests can use either Visual Studio or Visual Studio Code. A Visual Studio 2019 host on Windows can share with a Visual Studio Code guest on Linux.
 
-The host provides the guests with everything they need to be productive. Guests are not required to have the source code, compiler, external dependencies, or even the same installed components.
+The host provides the guests with everything they need to be productive. Guests aren't required to have the source code, compiler, external dependencies, or even the same installed components.
 
 The host and guests can use these IntelliSense features:
 
@@ -27,7 +27,7 @@ The host and guests can use these IntelliSense features:
 - Reference Highlighting
 - Diagnostics/Errors/Squiggles
 
-![Screenshot of C plus plus Live Share Debugging.](../ide/media/live-share-debug-cpp.png)
+![A side-by-side screenshot of a C plus plus Live Share Debugging intended to show two people seeing the debugging experience on their own screen.](../ide/media/live-share-debug-cpp.png)
 
 ## Start and end a Live Share session
 

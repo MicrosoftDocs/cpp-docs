@@ -3,13 +3,13 @@ description: "Learn more about: mbstowcs, _mbstowcs_l"
 title: "mbstowcs, _mbstowcs_l"
 ms.date: "4/2/2020"
 api_name: ["mbstowcs", "_mbstowcs_l", "_o__mbstowcs_l", "_o_mbstowcs"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbstowcs"]
 helpviewer_keywords: ["_mbstowcs_l function", "mbstowcs_l function", "mbstowcs function"]
 ---
-# mbstowcs, _mbstowcs_l
+# `mbstowcs`, `_mbstowcs_l`
 
 Converts a sequence of multibyte characters to a corresponding sequence of wide characters. More secure versions of these functions are available; see [`mbstowcs_s`, `_mbstowcs_s_l`](mbstowcs-s-mbstowcs-s-l.md).
 
@@ -56,9 +56,9 @@ The maximum number of multibyte characters to convert.
 *`locale`*\
 The locale to use.
 
-## Return Value
+## Return value
 
-If **`mbstowcs`** successfully converts the source string, it returns the number of converted multibyte characters. If the *`wcstr`* argument is **`NULL`**, the function returns the required size (in wide characters) of the destination string. If **`mbstowcs`** encounters an invalid multibyte character, it returns -1. If the return value is *`count`*, the wide-character string is not null-terminated.
+If **`mbstowcs`** successfully converts the source string, it returns the number of converted multibyte characters. If the *`wcstr`* argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If **`mbstowcs`** encounters an invalid multibyte character, it returns -1. If the return value is *`count`*, the wide-character string isn't null-terminated.
 
 > [!IMPORTANT]
 > Ensure that *`wcstr`* and *`mbstr`* do not overlap, and that *`count`* correctly reflects the number of multibyte characters to convert.
@@ -67,24 +67,24 @@ If **`mbstowcs`** successfully converts the source string, it returns the number
 
 The **`mbstowcs`** function converts up to a maximum number of *`count`* multibyte characters pointed to by *`mbstr`* to a string of corresponding wide characters that are determined by the current locale. It stores the resulting wide-character string at the address represented by *`wcstr`*. The result is similar to a series of calls to [`mbtowc`](mbtowc-mbtowc-l.md). If **`mbstowcs`** encounters the single-byte null character ('\0') either before or when *`count`* occurs, it converts the null character to a wide-character null character (`L'\0'`) and stops. Thus the wide-character string at *`wcstr`* is null-terminated only if a null character is encountered during conversion. If the sequences pointed to by *`wcstr`* and *`mbstr`* overlap, the behavior is undefined.
 
-If the *`wcstr`* argument is **`NULL`**, **`mbstowcs`** returns the number of wide characters that would result from conversion, not including a null terminator. The source string must be null-terminated for the correct value to be returned. If you need the resulting wide character string to be null-terminated, add one to the returned value.
+If the *`wcstr`* argument is `NULL`, **`mbstowcs`** returns the number of wide characters that would result from conversion, not including a null terminator. The source string must be null-terminated for the correct value to be returned. If you need the resulting wide character string to be null-terminated, add one to the returned value.
 
-If the *`mbstr`* argument is **`NULL`**, or if *`count`* is > **`INT_MAX`**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to **`EINVAL`** and the function returns -1.
+If the *`mbstr`* argument is `NULL`, or if *`count`* is > `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.
 
-**`mbstowcs`** uses the current locale for any locale-dependent behavior; **`_mbstowcs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+**`mbstowcs`** uses the current locale for any locale-dependent behavior; **`_mbstowcs_l`** is identical except that it uses the locale passed in instead. For more information, see [Locale](../locale.md).
 
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`mbstowcs`**|`<stdlib.h>`|
-|**`_mbstowcs_l`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`mbstowcs`** | `<stdlib.h>` |
+| **`_mbstowcs_l`** | `<stdlib.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -183,9 +183,9 @@ Convert back to wide-character string:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Locale](../../c-runtime-library/locale.md)\
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
 [`_mbclen`, `mblen`, `_mblen_l`](mbclen-mblen-mblen-l.md)\
 [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md)\
 [`wcstombs`, `_wcstombs_l`](wcstombs-wcstombs-l.md)\

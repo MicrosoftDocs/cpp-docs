@@ -193,7 +193,7 @@ You may find it convenient to embed the `CDatabase` object in your document clas
 This example illustrates using `CDatabase` in a `CDocument`-derived class.
 
 [!code-cpp[NVC_MFCDatabase#9](../../mfc/codesnippet/cpp/cdatabase-class_1.h)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDatabase#10](../../mfc/codesnippet/cpp/cdatabase-class_2.cpp)]
 
 ## <a name="close"></a> `CDatabase::Close`

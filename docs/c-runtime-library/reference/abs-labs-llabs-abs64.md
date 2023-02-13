@@ -6,7 +6,7 @@ api_name: ["abs", "_abs64", "labs", "llabs"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["stdlib/_abs64", "math/abs", "_abs64", "abs", "labs", "math/labs", "llabs", "math/llabs", "cmath/abs"]
+f1_keywords: ["_abs64", "STDLIB/_abs64", "abs", "CORECRT_MATH/abs", "STDLIB/abs", "CSTDLIB/abs", "labs", "CORECRT_MATH/labs", "llabs", "CORECRT_MATH/llabs"]
 helpviewer_keywords: ["absolute values", "abs function", "abs64 function", "_abs64 function", "calculating absolute values"]
 ---
 # `abs`, `labs`, `llabs`, `_abs64`
@@ -35,7 +35,7 @@ float abs( float n );   // C++ only
 *`n`*\
 Numeric value.
 
-## Return Value
+## Return value
 
 The **`abs`**, **`labs`**, **`llabs`**, and **`_abs64`** functions return the absolute value of the parameter *`n`*. There's no error return.
 
@@ -43,14 +43,14 @@ The **`abs`**, **`labs`**, **`llabs`**, and **`_abs64`** functions return the ab
 
 Because C++ allows overloading, you can call overloads of **`abs`** that take and return **`long`**, **`long long`**, **`float`**, **`double`**, and **`long double`** values. These overloads are defined in the `<cmath>` header. In a C program, **`abs`** always takes and returns an **`int`**.
 
-**Microsoft-specific**: Because the range of negative integers that can be represented by using any integral type is larger than the range of positive integers that can be represented by using that type, it's possible to supply an argument to these functions that can't be converted. If the absolute value of the argument can’t be represented by the return type, the **`abs`** functions return the argument value unchanged. Specifically, `abs(INT_MIN)` returns `INT_MIN`, `labs(LONG_MIN)` returns `LONG_MIN`, `llabs(LLONG_MIN)` returns `LLONG_MIN`, and `_abs64(_I64_MIN)` returns `_I64_MIN`. This means that the **`abs`** functions can’t be used to guarantee a positive value.
+**Microsoft-specific**: The range of negative integers representable in any integral type is larger than the range of positive integers representable in that type. So, it's possible to supply an argument to these functions that can't be converted. If the absolute value of the argument can't be represented by the return type, the **`abs`** functions return the argument value unchanged. Specifically, `abs(INT_MIN)` returns `INT_MIN`, `labs(LONG_MIN)` returns `LONG_MIN`, `llabs(LLONG_MIN)` returns `LLONG_MIN`, and `_abs64(_I64_MIN)` returns `_I64_MIN`. Effectively, the **`abs`** functions can't be used to guarantee a positive value.
 
 ## Requirements
 
-|Routine|Required C header|Required C++ header|
-|-------------|-----------------------|---------------------------|
-|**`abs`**, **`labs`**, **`llabs`**|`<math.h>` or `<stdlib.h>`|`<cmath>`, `<cstdlib>`, `<stdlib.h>` or `<math.h>`|
-|**`_abs64`**|`<stdlib.h>`|`<cstdlib>` or `<stdlib.h>`|
+| Routine | Required C header | Required C++ header |
+|---|---|---|
+| **`abs`**, **`labs`**, **`llabs`** | `<math.h>` or `<stdlib.h>` | `<cmath>`, `<cstdlib>`, `<stdlib.h>` or `<math.h>` |
+| **`_abs64`** | `<stdlib.h>` | `<cstdlib>` or `<stdlib.h>` |
 
 To use the overloaded versions of **`abs`** in C++, you must include the `<cmath>` header.
 
@@ -113,8 +113,8 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)\
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Data conversion](../data-conversion.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`_cabs`](cabs.md)\
 [`fabs`, `fabsf`, `fabsl`](fabs-fabsf-fabsl.md)\
 [`imaxabs`](imaxabs.md)

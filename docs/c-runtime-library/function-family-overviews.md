@@ -10,7 +10,7 @@ This section lists C runtime library routines by function family.
 
 ## CRT library routine families
 
-[_exec, _wexec](exec-wexec-functions.md)\
+[`_exec`, `_wexec`](exec-wexec-functions.md)\
 Functions to load and execute a new process.
 
 [Filename search functions](filename-search-functions.md)\
@@ -23,7 +23,7 @@ Describes the format string and arguments for `printf` and `wprintf`.
 Describes the format specification fields for parsing an input stream for the entire `scanf` family of functions.
 
 [`is`, `isw` functions](is-isw-routines.md)\
-Functions for testing characters for things like whether they are uppercase, ASCII, numeric, punctuation, and so on.
+Functions for testing characters for things like whether they're uppercase, ASCII, numeric, punctuation, and so on.
 
 [`_ismbb` functions](ismbb-routines.md)\
 Functions for testing an integer value for whether it represents an alpha character, blank character, a print character, and so on.
@@ -32,13 +32,13 @@ Functions for testing an integer value for whether it represents an alpha charac
 Functions for testing a multibyte character for whether it represents an alpha character, blank character, a print character, and so on.
 
 [operator `delete` (CRT)](delete-operator-crt.md)\
-Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator delete function. It is now part of the C++ Standard Library.
+Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator delete function. It's now part of the C++ Standard Library.
 
 [operator `new` (CRT)](new-operator-crt.md)\
-Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator new function. It is now part of the C++ Standard Library.
+Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator new function. It's now part of the C++ Standard Library.
 
 [`printf` positional parameter functions](printf-p-positional-parameters.md)\
-Positional parameters specify by number which of the arguments is to be substituted into a field in a format string.
+Positional parameters specify by number the argument to substitute into a field in a format string.
 
 [`scanf` type field characters](scanf-type-field-characters.md)\
 The type character determines whether the associated argument is interpreted as a character, string, or number for any of the `scanf` family of functions, including the secure versions, such as `scanf_s`.
@@ -56,7 +56,7 @@ The `strcoll` and `wcscoll` functions compare two strings according to the `LC_C
 The `strtod` family of functions convert a null-terminated string to a numeric value.
 
 [`vprintf` functions](vprintf-functions.md)\
-The `vprintf` functions take a pointer to an argument list, formats it, and writes the result to the specified destination. The functions differ in the parameter validation performed, whether they take wide or single-byte character strings, the output destination, and support for specifying the order in which parameters are used in the format string.
+The `vprintf` functions take a pointer to an argument list, format it, and write the result to the specified destination. The functions differ in several ways: the parameter validation performed; whether they take wide or single-byte character strings; the output destination; and support for specifying the order in which parameters are used in the format string.
 
 ## See also
 

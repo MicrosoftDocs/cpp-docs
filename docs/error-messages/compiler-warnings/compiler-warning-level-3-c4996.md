@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 3) C4996"
 description: "Explains why Compiler warning C4996 happens, and describes what to do about it."
-ms.date: 07/09/2020
+ms.date: 08/30/2022
 f1_keywords: ["C4996"]
 helpviewer_keywords: ["C4996"]
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
@@ -15,7 +15,9 @@ Your code uses a function, class member, variable, or typedef that's marked *dep
 
 ## Remarks
 
-Many functions, member functions, template functions, and global variables in Visual Studio libraries are *deprecated*. Some, such as POSIX and Microsoft-specific functions, are deprecated because they now have a different preferred name. Some C runtime library functions are deprecated because they're insecure and have a more secure variant. Others are deprecated because they're obsolete. The deprecation messages usually include a suggested replacement for the deprecated function or global variable.
+Many functions, member functions, function templates, and global variables in Visual Studio libraries are *deprecated*. Some, such as POSIX and Microsoft-specific functions, are deprecated because they now have a different preferred name. Some C runtime library functions are deprecated because they're insecure and have a more secure variant. Others are deprecated because they're obsolete. The deprecation messages usually include a suggested replacement for the deprecated function or global variable.
+
+The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enable-additional-security-checks.md) compiler option elevates this warning to an error.
 
 ## Turn off the warning
 
@@ -87,7 +89,7 @@ For more information about these deprecated functions and globals, see [Security
 
 **`'std::`** *`function_name`* **`::_Unchecked_iterators::_Deprecate' Call to std::`** *`function_name`* **`with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'`**
 
-In Visual Studio 2015, this warning appears in debug builds because certain C++ Standard Library template functions don't check parameters for correctness. Often it's because not enough information is available to the function to check container bounds. Or, because iterators may be used incorrectly with the function. This warning helps you identify these functions, because they may be a source of serious security holes in your program. For more information, see [Checked iterators](../../standard-library/checked-iterators.md).
+In Visual Studio 2015, this warning appears in debug builds because certain C++ Standard Library function templates don't check parameters for correctness. Often it's because not enough information is available to the function to check container bounds. Or, because iterators may be used incorrectly with the function. This warning helps you identify these functions, because they may be a source of serious security holes in your program. For more information, see [Checked iterators](../../standard-library/checked-iterators.md).
 
 For example, this warning appears in Debug mode if you pass an element pointer to `std::copy`, instead of a plain array. To fix this issue, use an appropriately declared array, so the library can check the array extents and do bounds checking.
 

@@ -3,14 +3,14 @@ description: "Learn more about: mbrtowc"
 title: "mbrtowc"
 ms.date: "4/2/2020"
 api_name: ["mbrtowc", "_o_mbrtowc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbrtowc"]
 helpviewer_keywords: ["mbrtowc function"]
 ms.assetid: a1e87fcc-6de0-4ca1-bf26-508d28490286
 ---
-# mbrtowc
+# `mbrtowc`
 
 Convert a multibyte character in the current locale into the equivalent wide character, with the capability of restarting in the middle of a multibyte character.
 
@@ -27,47 +27,47 @@ size_t mbrtowc(
 
 ### Parameters
 
-*wchar*<br/>
+*`wchar`*\
 Address of a wide character to receive the converted wide character string (type **`wchar_t`**). This value can be a null pointer if no return wide character is required.
 
-*mbchar*<br/>
+*`mbchar`*\
 Address of a sequence of bytes (a multibyte character).
 
-*count*<br/>
+*`count`*\
 Number of bytes to check.
 
-*mbstate*<br/>
-Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *mbstate* argument.
+*`mbstate`*\
+Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal `mbstate_t` object isn't thread-safe, we recommend that you always pass your own *`mbstate`* argument.
 
-## Return Value
+## Return value
 
 One of the following values:
 
 0
-The next *count* or fewer bytes complete the multibyte character that represents the null wide character, which is stored in *wchar*, if *wchar* is not a null pointer.
+The next *`count`* or fewer bytes complete the multibyte character that represents the null wide character, which is stored in *`wchar`*, if *`wchar`* isn't a null pointer.
 
-1 to *count*, inclusive
-The next *count* or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character. The wide character equivalent is stored in *wchar*, if *wchar* is not a null pointer.
+1 to *`count`*, inclusive
+The next *`count`* or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character. The wide character equivalent is stored in *`wchar`*, if *`wchar`* isn't a null pointer.
 
 (size_t)(-1)
-An encoding error occurred. The next *count* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, **errno** is set to EILSEQ and the conversion shift state in *mbstate* is unspecified.
+An encoding error occurred. The next *`count`* or fewer bytes don't contribute to a complete and valid multibyte character. In this case, `errno` is set to EILSEQ and the conversion shift state in *`mbstate`* is unspecified.
 
 (size_t)(-2)
-The next *count* bytes contribute to an incomplete but potentially valid multibyte character, and all *count* bytes have been processed. No value is stored in *wchar*, but *mbstate* is updated to restart the function.
+The next *`count`* bytes contribute to an incomplete but potentially valid multibyte character, and all *`count`* bytes have been processed. No value is stored in *`wchar`*, but *`mbstate`* is updated to restart the function.
 
 ## Remarks
 
-If *mbchar* is a null pointer, the function is equivalent to the call:
+If *`mbchar`* is a null pointer, the function is equivalent to the call:
 
 `mbrtowc(NULL, "", 1, &mbstate)`
 
-In this case, the value of the arguments *wchar* and *count* are ignored.
+In this case, the values of the *`wchar`* and *`count`* arguments are ignored.
 
-If *mbchar* is not a null pointer, the function examines *count* bytes from *mbchar* to determine the required number of bytes that are required to complete the next multibyte character. If the next character is valid, the corresponding multibyte character is stored in *wchar* if it is not a null pointer. If the character is the corresponding wide null character, the resulting state of *mbstate* is the initial conversion state.
+If *`mbchar`* isn't a null pointer, the function examines *`count`* bytes from *`mbchar`* to determine the required number of bytes that are required to complete the next multibyte character. If the next character is valid, the corresponding multibyte character is stored in *`wchar`* if it isn't a null pointer. If the character is the corresponding wide null character, the resulting state of *`mbstate`* is the initial conversion state.
 
-The **mbrtowc** function differs from [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use **wcsrlen** instead of **wcslen** if a subsequent call to **wcsrtombs** is used instead of **wcstombs**.
+The **`mbrtowc`** function differs from [`mbtowc`, `_mbtowc_l`](mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in *`mbstate`* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `wcsrlen` instead of `wcslen` if a subsequent call to `wcsrtombs` is used instead of `wcstombs`.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Example
 
@@ -179,7 +179,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Locale set to: "French_Canada.1252"
@@ -190,12 +190,12 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**mbrtowc**|\<wchar.h>|
+| Routine | Required header |
+|---|---|
+| **`mbrtowc`** | \<wchar.h> |
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Data conversion](../data-conversion.md)\
+[Locale](../locale.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)

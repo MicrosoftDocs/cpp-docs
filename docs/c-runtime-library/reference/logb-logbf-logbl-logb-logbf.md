@@ -3,7 +3,7 @@ title: "logb, logbf, logbl, _logb, _logbf"
 description: "API reference for logb, logbf, logbl, _logb, and _logbf; which extract the exponent value of a floating-point argument."
 ms.date: "1/15/2021"
 api_name: ["logb", "_logb", "_logbl", "logbf", "_logbf", "logbl", "_o__logb", "_o_logb", "_o_logbf", "_o_logbl", "_o__logbf"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["logb", "logbl", "_logb", "_logbf", "logbf"]
@@ -45,7 +45,7 @@ float _logbf(
 *`x`*\
 A floating-point value.
 
-## Return Value
+## Return value
 
 **`logb`** returns the unbiased exponent value of *`x`* as a signed integer represented as a floating-point value.
 
@@ -55,30 +55,30 @@ The **`logb`** functions extract the exponential value of the floating-point arg
 
 Because C++ allows overloading, you can call overloads of **`logb`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`logb`** always takes and returns a **`double`**.
 
-If you use the `<tgmath.h>` `logb()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `logb` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
-|Input|SEH exception|`Matherr` exception|
-|-----------|-------------------|-----------------------|
-|`± QNAN`,`IND`|None|`_DOMAIN`|
-|± 0|`ZERODIVIDE`|`_SING`|
+| Input | SEH exception | `_matherr` exception |
+|---|---|---|
+| ± QNaN, IND | None | `_DOMAIN` |
+| ± 0 | `ZERODIVIDE` | `_SING` |
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`_logb`**|`<float.h>`|
-|**`logb`**, **`logbf`**, **`logbl`**, **`_logbf`**|`<math.h>`|
-|**`logb`** macro | `<tgmath.h>` |
+| Routine | Required header |
+|---|---|
+| **`_logb`** | `<float.h>` |
+| **`logb`**, **`logbf`**, **`logbl`**, **`_logbf`** | `<math.h>` |
+| **`logb`** macro | `<tgmath.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`frexp`](frexp.md)

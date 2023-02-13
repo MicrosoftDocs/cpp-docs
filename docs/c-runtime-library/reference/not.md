@@ -5,13 +5,13 @@ ms.date: "11/04/2016"
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["std::not", "std.not", "Not"]
+f1_keywords: ["std::not", "std.not", "ISO646/not", "not"]
 helpviewer_keywords: ["not function"]
 ms.assetid: d2ddbd5c-33c0-4aff-8961-feac155b4ba1
 ---
-# not
+# `not`
 
-An alternative to the ! operator.
+An alternative to the **`!`** operator.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ An alternative to the ! operator.
 
 ## Remarks
 
-The macro yields the operator !.
+The macro yields the operator **`!`**.
 
 ## Example
 

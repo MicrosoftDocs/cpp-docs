@@ -3,14 +3,14 @@ description: "Learn more about: _set_fmode"
 title: "_set_fmode"
 ms.date: "4/2/2020"
 api_name: ["_set_fmode", "_o__set_fmode"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_set_fmode", "set_fmode"]
 helpviewer_keywords: ["file translation [C++], default mode", "_set_fmode function", "file translation [C++], setting mode", "set_fmode function"]
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
 ---
-# _set_fmode
+# `_set_fmode`
 
 Sets the default file translation mode for file I/O operations.
 
@@ -24,28 +24,28 @@ errno_t _set_fmode(
 
 ### Parameters
 
-*mode*<br/>
-The file translation mode desired: **_O_TEXT** or **_O_BINARY**.
+*`mode`*\
+The file translation mode desired: `_O_TEXT` or `_O_BINARY`.
 
-## Return Value
+## Return value
 
-Returns zero if successful, an error code on failure. If *mode* is not **_O_TEXT** or **_O_BINARY** or **_O_WTEXT**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+Returns zero if successful, an error code on failure. If *`mode`* isn't `_O_TEXT` or `_O_BINARY` or `_O_WTEXT`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ## Remarks
 
-The function sets the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations **_open** and **_pipe**.
+The function sets the [`_fmode`](../fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations `_open` and `_pipe`.
 
-**_O_TEXT** and **_O_BINARY** are defined in Fcntl.h. **EINVAL** is defined in Errno.h.
+`_O_TEXT` and `_O_BINARY` are defined in Fcntl.h. `EINVAL` is defined in Errno.h.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Routine|Required header|Optional header|
-|-------------|---------------------|---------------------|
-|**_set_fmode**|\<stdlib.h>|\<fcntl.h>, \<errno.h>|
+| Routine | Required header | Optional header |
+|---|---|---|
+| **`_set_fmode`** | \<stdlib.h> | \<fcntl.h>, \<errno.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -112,7 +112,7 @@ A   B   C   D   E   F   G   H   I   J   K   L
 
 ## See also
 
-[_fmode](../../c-runtime-library/fmode.md)<br/>
-[_get_fmode](get-fmode.md)<br/>
-[_setmode](setmode.md)<br/>
-[Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+[`_fmode`](../fmode.md)\
+[`_get_fmode`](get-fmode.md)\
+[`_setmode`](setmode.md)\
+[Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md)

@@ -49,15 +49,15 @@ The numerator.
 *`denom`*\
 The denominator.
 
-## Return Value
+## Return value
 
 **`div`** called by using arguments of type **`int`** returns a structure of type `div_t`, which contains the quotient and the remainder. The return value with arguments of type **`long`** is `ldiv_t`, and the return value with arguments of type **`long long`** is `lldiv_t`. The `div_t`, `ldiv_t`, and `lldiv_t` types are defined in \<stdlib.h>.
 
 ## Remarks
 
-The **`div`** function divides *`numer`* by *`denom`* and computes the quotient and the remainder. The [`div_t`](../../c-runtime-library/standard-types.md) structure contains the quotient, `quot`, and the remainder, `rem`. The sign of the quotient is the same as the sign of the mathematical quotient. Its absolute value is the largest integer that's less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
+The **`div`** function divides *`numer`* by *`denom`* and computes the quotient and the remainder. The [`div_t`](../standard-types.md) structure contains the quotient, `quot`, and the remainder, `rem`. The sign of the quotient is the same as the sign of the mathematical quotient. Its absolute value is the largest integer that's less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
 
-The overloads of **`div`** that take arguments of type **`long`** or **`long long`** are only available to C++ code. The return types [`ldiv_t`](../../c-runtime-library/standard-types.md) and [`lldiv_t`](../../c-runtime-library/standard-types.md) contains members `quot` and `rem`, which have the same meanings as the members of `div_t`.
+The overloads of **`div`** that take arguments of type **`long`** or **`long long`** are only available to C++ code. The return types [`ldiv_t`](../standard-types.md) and [`lldiv_t`](../standard-types.md) contains members `quot` and `rem`, which have the same meanings as the members of `div_t`.
 
 ## Requirements
 
@@ -65,7 +65,7 @@ The overloads of **`div`** that take arguments of type **`long`** or **`long lon
 |--|--|
 | **`div`**, **`ldiv`**, **`lldiv`** | \<stdlib.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -107,5 +107,5 @@ The quotient is 67, and the remainder is 5
 
 ## See also
 
-[Floating-point support](../../c-runtime-library/floating-point-support.md)\
+[Math and floating-point support](../floating-point-support.md)\
 [`imaxdiv`](imaxdiv.md)

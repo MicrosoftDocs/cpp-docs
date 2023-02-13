@@ -72,7 +72,7 @@ For more information about basic Internet programming tasks, see the article [In
 ## Inheritance Hierarchy
 
 [`CObject`](../../mfc/reference/cobject-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;`CInternetSession`
+&emsp;`CInternetSession`
 
 ## Requirements
 
@@ -169,7 +169,7 @@ When handling status callback, you can provide status about the progress of the 
 
 Because callbacks occur during the request's processing, the application should spend as little time as possible in the callback to prevent degradation of data throughput to the network. For example, putting up a dialog box in a callback may be such a lengthy operation that the server terminates the request.
 
-The status callback can’t be removed as long as any callbacks are pending.
+The status callback can't be removed as long as any callbacks are pending.
 
 To handle any operations asynchronously, you must either create your own thread or use the WinInet functions without MFC.
 

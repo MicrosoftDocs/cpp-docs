@@ -10,7 +10,7 @@ f1_keywords: ["imaxdiv"]
 helpviewer_keywords: ["imaxdiv function"]
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
 ---
-# imaxdiv
+# `imaxdiv`
 
 Computes the quotient and the remainder of two integer values of any size as a single operation.
 
@@ -25,27 +25,27 @@ imaxdiv_t imaxdiv(
 
 ### Parameters
 
-*numer*<br/>
+*`numer`*\
 The numerator.
 
-*denom*<br/>
+*`denom`*\
 The denominator.
 
-## Return Value
+## Return value
 
-**imaxdiv** called with arguments of type [intmax_t](../../c-runtime-library/standard-types.md) returns a structure of type [imaxdiv_t](../../c-runtime-library/standard-types.md) that comprises the quotient and the remainder.
+**`imaxdiv`**, called with arguments of type [`intmax_t`](../standard-types.md), returns a structure of type [`imaxdiv_t`](../standard-types.md) that comprises the quotient and the remainder.
 
 ## Remarks
 
-The **imaxdiv** function divides *numer* by *denom* and thereby computes the quotient and the remainder. The **imaxdiv_t** structure contains the quotient, **intmax_t** **quot**, and the remainder, **intmax_t** **rem**. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
+The **`imaxdiv`** function divides *`numer`* by *`denom`* and thereby computes the quotient and the remainder. The `imaxdiv_t` structure contains the quotient, `intmax_t` `quot`, and the remainder, `intmax_t` **`rem`**. The sign of the quotient is the same as the sign of the mathematical quotient. Its absolute value is the largest integer that's less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**imaxdiv**|\<inttypes.h>|
+| Routine | Required header |
+|---|---|
+| **`imaxdiv`** | \<inttypes.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -84,6 +84,6 @@ results in a quotient of 1079252848505, and a remainder of 5170
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[div](div.md)<br/>
-[ldiv, lldiv](./div.md)<br/>
+[Math and floating-point support](../floating-point-support.md)\
+[`div`](div.md)\
+[`ldiv`, `lldiv`](./div.md)

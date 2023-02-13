@@ -6,7 +6,7 @@ api_name: ["va_arg", "va_end", "va_copy", "va_start"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["va_arg", "va_start", "va_list", "va_alist", "va_dcl", "va_copy", "va_end"]
+f1_keywords: ["STDARG/va_arg", "STDARG/va_copy", "STDARG/va_end", "VADEFS/va_list", "STDARG/va_start", "va_alist", "va_arg", "va_copy", "va_dcl", "va_end", "va_list", "va_start"]
 helpviewer_keywords: ["variable argument lists, accessing", "va_start macro", "va_arg macro", "va_end macro", "arguments [C++], argument lists", "va_list macro", "va_dcl macro", "va_alist macro", "va_copy macro"]
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907
 ---
@@ -39,24 +39,24 @@ void va_start(
 
 ### Parameters
 
-*`type`*<br/>
+*`type`*\
 Type of argument to be retrieved.
 
-*`arg_ptr`*<br/>
+*`arg_ptr`*\
 Pointer to the list of arguments.
 
-*`dest`*<br/>
+*`dest`*\
 Pointer to the list of arguments to be initialized from *`src`*
 
-*`src`*<br/>
+*`src`*\
 Pointer to the initialized list of arguments to copy to *`dest`*.
 
-*`prev_param`*<br/>
+*`prev_param`*\
 Parameter that precedes the first optional argument.
 
-## Return Value
+## Return value
 
-**`va_arg`** returns the current argument. **`va_copy`**, **`va_start`** and **`va_end`** do not return values.
+**`va_arg`** returns the current argument. **`va_copy`**, **`va_start`** and **`va_end`** don't return values.
 
 ## Remarks
 
@@ -72,12 +72,12 @@ The C standard macros, defined in `STDARG.H`, are used as follows:
 
 - **`va_copy`** makes a copy of a list of arguments in its current state. The *`src`* parameter must already be initialized with **`va_start`**; it may have been updated with **`va_arg`** calls, but must not have been reset with **`va_end`**. The next argument that's retrieved by **`va_arg`** from *`dest`* is the same as the next argument that's retrieved from *`src`*.
 
-- After all arguments have been retrieved, **`va_end`** resets the pointer to **`NULL`**. **`va_end`** must be called on each argument list that's initialized with **`va_start`** or **`va_copy`** before the function returns.
+- After all arguments have been retrieved, **`va_end`** resets the pointer to `NULL`. **`va_end`** must be called on each argument list that's initialized with **`va_start`** or **`va_copy`** before the function returns.
 
 > [!NOTE]
 > The macros in VARARGS.H are deprecated and are retained only for backwards compatibility with code that was written before the ANSI C89 standard. In all other cases, use the macros in STDARGS.H.
 
-When they are compiled by using [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), programs that use these macros may generate unexpected results because of differences between native and common language runtime (CLR) type systems. Consider this program:
+When they're compiled by using [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), programs that use these macros may generate unexpected results because of differences between native and common language runtime (CLR) type systems. Consider this program:
 
 ```C
 #include <stdio.h>
@@ -109,7 +109,7 @@ int main()
 }
 ```
 
-Notice that **`testit`** expects its second parameter to be either an **`int`** or a **`char*`**. The arguments being passed are 0xffffffff (an **`unsigned int`**, not an **`int`**) and **`NULL`** (actually an **`int`**, not a **`char*`**). When the program is compiled for native code, it produces this output:
+Notice that **`testit`** expects its second parameter to be either an **`int`** or a **`char*`**. The arguments being passed are 0xffffffff (an **`unsigned int`**, not an **`int`**) and `NULL` (actually an **`int`**, not a **`char*`**). When the program is compiled for native code, it produces this output:
 
 ```Output
 -1
@@ -125,7 +125,7 @@ Notice that **`testit`** expects its second parameter to be either an **`int`** 
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -194,5 +194,5 @@ Deviation is: 0.000000
 
 ## See also
 
-[Argument Access](../../c-runtime-library/argument-access.md)<br/>
-[`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>
+[Argument access](../argument-access.md)\
+[`vfprintf`, `_vfprintf_l`, `vfwprintf`, `_vfwprintf_l`](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)

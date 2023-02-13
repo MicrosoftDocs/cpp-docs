@@ -2,24 +2,20 @@
 description: "Learn more about: String to numeric value functions"
 title: "String to numeric value functions"
 ms.date: 05/18/2022
-api_location: ["msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll"]
-api_type: ["DLLExport"]
-topic_type: ["apiref"]
-f1_keywords: ["_tcstoi64"]
 helpviewer_keywords: ["parsing, numeric strings", "string conversion, to numeric values"]
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
 ---
 # String to numeric value functions
 
-- [`strtod`, `_strtod_l`, `wcstod`, `_wcstod_l`](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)
+- [`strtod`, `_strtod_l`, `wcstod`, `_wcstod_l`](./reference/strtod-strtod-l-wcstod-wcstod-l.md)
 
-- [`strtol`, `wcstol`, `_strtol_l`, `_wcstol_l`](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)
+- [`strtol`, `wcstol`, `_strtol_l`, `_wcstol_l`](./reference/strtol-wcstol-strtol-l-wcstol-l.md)
 
-- [`strtoul`, `_strtoul_l`, `wcstoul`, `_wcstoul_l`](../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)
+- [`strtoul`, `_strtoul_l`, `wcstoul`, `_wcstoul_l`](./reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)
 
-- [`_strtoi64`, `_wcstoi64`, `_strtoi64_l`, `_wcstoi64_l`](../c-runtime-library/reference/strtoi64-wcstoi64-strtoi64-l-wcstoi64-l.md)
+- [`_strtoi64`, `_wcstoi64`, `_strtoi64_l`, `_wcstoi64_l`](./reference/strtoi64-wcstoi64-strtoi64-l-wcstoi64-l.md)
 
-- [`_strtoui64`, `_wcstoui64`, `_strtoui64_l`, `_wcstoui64_l`](../c-runtime-library/reference/strtoui64-wcstoui64-strtoui64-l-wcstoui64-l.md)
+- [`_strtoui64`, `_wcstoui64`, `_strtoui64_l`, `_wcstoui64_l`](./reference/strtoui64-wcstoui64-strtoui64-l-wcstoui64-l.md)
 
 ## Remarks
 
@@ -51,9 +47,9 @@ The `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64` functions expect a string
 
 [*`whitespace`*] [{**`+`** \| **`-`**}] [**`0`** [{ **`x`** \| **`X`** }]] [`digits`]
 
-If the base argument is between 2 and 36, then it's used as the base of the number. If it's 0, the initial characters referenced to by the end-of-conversion pointer are used to determine the base. If the first character is 0 and the second character isn't 'x' or 'X', the string is interpreted as an octal integer; otherwise, it's interpreted as a decimal number. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *base* are permitted. `strtoul` and `_strtoui64` allow a plus (**`+`**) or minus (**`-`**) sign prefix; a leading minus sign indicates that the return value is negated.
+If the base argument is between 2 and 36, then it's used as the base of the number. If it's 0, the initial characters referenced to by the end-of-conversion pointer are used to determine the base. If the first character is 0 and the second character isn't 'x' or 'X', the string is interpreted as an octal integer; otherwise, it's interpreted as a decimal number. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *`base`* are permitted. `strtoul` and `_strtoui64` allow a plus (**`+`**) or minus (**`-`**) sign prefix; a leading minus sign indicates that the return value is negated.
 
-The output value is affected by the setting of the `LC_NUMERIC` category setting of the locale. For more information, see [`setlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead.
+The output value is affected by the setting of the `LC_NUMERIC` category setting of the locale. For more information, see [`setlocale`](./reference/setlocale-wsetlocale.md). The versions of these functions without the **`_l`** suffix use the current locale for this locale-dependent behavior; the versions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead.
 
 When the value returned by these functions would cause an overflow or underflow, or when conversion isn't possible, special case values are returned as shown:
 
@@ -76,8 +72,8 @@ When the value returned by these functions would cause an overflow or underflow,
 
 ## See also
 
-[Data conversion](../c-runtime-library/data-conversion.md)\
-[Locale](../c-runtime-library/locale.md)\
-[Interpretation of multibyte-character sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\
-[Floating-point support](../c-runtime-library/floating-point-support.md)\
-[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)
+[Data conversion](./data-conversion.md)\
+[Locale](./locale.md)\
+[Interpretation of multibyte-character sequences](./interpretation-of-multibyte-character-sequences.md)\
+[Math and floating-point support](./floating-point-support.md)\
+[`atof`, `_atof_l`, `_wtof`, `_wtof_l`](./reference/atof-atof-l-wtof-wtof-l.md)

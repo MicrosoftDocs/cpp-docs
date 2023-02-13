@@ -3,7 +3,7 @@ title: "getenv, _wgetenv"
 description: "Describes the Microsoft C runtime library getenv and _wgetenv functions."
 ms.date: "4/2/2020"
 api_name: ["getenv", "_wgetenv", "_o__wgetenv", "_o_getenv"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wgetenv", "getenv", "_tgetenv"]
@@ -13,7 +13,7 @@ no-loc: [getenv, _wgetenv, getenv_s, _wgetenv_s, _putenv_s, main, wmain, errno, 
 ---
 # `getenv`, `_wgetenv`
 
-Gets a value from the current environment. More secure versions of these functions are available; see [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
+Gets a value from the current environment. More secure versions of these functions are available; see [`getenv_s`, `_wgetenv_s`](getenv-s-wgetenv-s.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -31,51 +31,51 @@ wchar_t *_wgetenv(
 
 ### Parameters
 
-*`varname`*<br/>
+*`varname`*\
 Environment variable name.
 
 ## Return value
 
-Returns a pointer to the environment table entry containing *`varname`*. It is not safe to modify the value of the environment variable using the returned pointer. Use the [`_putenv`](putenv-wputenv.md) function to modify the value of an environment variable. The return value is **`NULL`** if *`varname`* is not found in the environment table.
+Returns a pointer to the environment table entry containing *`varname`*. It isn't safe to modify the value of the environment variable using the returned pointer. Use the [`_putenv`](putenv-wputenv.md) function to modify the value of an environment variable. The return value is `NULL` if *`varname`* isn't found in the environment table.
 
 ## Remarks
 
-The **`getenv`** function searches the list of environment variables for *`varname`*. **`getenv`** is not case sensitive in the Windows operating system. **`getenv`** and **`_putenv`** use the copy of the environment pointed to by the global variable **`_environ`** to access the environment. **`getenv`** operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the *`envp`* argument to [`main`](../../cpp/main-function-command-line-args.md) or [`wmain`](../../cpp/main-function-command-line-args.md) may retrieve invalid information.
+The **`getenv`** function searches the list of environment variables for *`varname`*. **`getenv`** isn't case sensitive in the Windows operating system. **`getenv`** and **`_putenv`** use the copy of the environment pointed to by the global variable **`_environ`** to access the environment. **`getenv`** operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the *`envp`* argument to [`main`](../../cpp/main-function-command-line-args.md) or [`wmain`](../../cpp/main-function-command-line-args.md) may retrieve invalid information.
 
-If *`varname`* is **`NULL`**, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns **`NULL`**.
+If *`varname`* is `NULL`, this function invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 
 **`_wgetenv`** is a wide-character version of **`getenv`**; the argument and return value of **`_wgetenv`** are wide-character strings. The **`_wenviron`** global variable is a wide-character version of **`_environ`**.
 
-In an MBCS program (for example, in an SBCS ASCII program), **`_wenviron`** is initially **`NULL`** because the environment is composed of multibyte-character strings. Then, on the first call to [`_wputenv`](putenv-wputenv.md), or on the first call to **`_wgetenv`** if an (MBCS) environment already exists, a corresponding wide-character string environment is created and is then pointed to by **`_wenviron`**.
+In an MBCS program (for example, in an SBCS ASCII program), **`_wenviron`** is initially `NULL` because the environment is composed of multibyte-character strings. Then, on the first call to [`_wputenv`](putenv-wputenv.md), or on the first call to **`_wgetenv`** if an (MBCS) environment already exists, a corresponding wide-character string environment is created and is then pointed to by **`_wenviron`**.
 
-Similarly in a Unicode (**`_wmain`**) program, **`_environ`** is initially **`NULL`** because the environment is composed of wide-character strings. Then, on the first call to **`_putenv`**, or on the first call to **`getenv`** if a (Unicode) environment already exists, a corresponding MBCS environment is created and is then pointed to by **`_environ`**.
+Similarly in a Unicode (**`_wmain`**) program, **`_environ`** is initially `NULL` because the environment is composed of wide-character strings. Then, on the first call to **`_putenv`**, or on the first call to **`getenv`** if a (Unicode) environment already exists, a corresponding MBCS environment is created and is then pointed to by **`_environ`**.
 
 When two copies of the environment (MBCS and Unicode) exist simultaneously in a program, the run-time system must maintain both copies, resulting in slower execution time. For example, whenever you call **`_putenv`**, a call to **`_wputenv`** is also executed automatically, so that the two environment strings correspond.
 
 > [!CAUTION]
-> In rare instances, when the run-time system is maintaining both a Unicode version and a multibyte version of the environment, these two environment versions may not correspond exactly. This is because, although any unique multibyte-character string maps to a unique Unicode string, the mapping from a unique Unicode string to a multibyte-character string is not necessarily unique. For more information, see [`_environ`, `_wenviron`](../../c-runtime-library/environ-wenviron.md).
+> In rare instances, when the run-time system is maintaining both a Unicode version and a multibyte version of the environment, these two environment versions may not correspond exactly. This is because, although any unique multibyte-character string maps to a unique Unicode string, the mapping from a unique Unicode string to a multibyte-character string is not necessarily unique. For more information, see [`_environ`, `_wenviron`](../environ-wenviron.md).
 
 > [!NOTE]
 > The **`_putenv`** and **`_getenv`** families of functions are not thread-safe. **`_getenv`** could return a string pointer while **`_putenv`** is modifying the string, causing random failures. Make sure that calls to these functions are synchronized.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-Text Routine Mappings
+### Generic-text routine mappings
 
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tgetenv`**|**`getenv`**|**`getenv`**|**`_wgetenv`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|---|---|---|---|
+| **`_tgetenv`** | **`getenv`** | **`getenv`** | **`_wgetenv`** |
 
-To check or change the value of the **`TZ`** environment variable, use **`getenv`**, **`_putenv`** and **`_tzset`** as necessary. For more information about **`TZ`**, see [`_tzset`](tzset.md) and [`_daylight`, `timezone`, and `_tzname`](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+To check or change the value of the **`TZ`** environment variable, use **`getenv`**, **`_putenv`** and **`_tzset`** as necessary. For more information about **`TZ`**, see [`_tzset`](tzset.md) and [`_daylight`, `timezone`, and `_tzname`](../daylight-dstbias-timezone-and-tzname.md).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`getenv`**|`<stdlib.h>`|
-|**`_wgetenv`**|`<stdlib.h>` or `<wchar.h>`|
+| Routine | Required header |
+|---|---|
+| **`getenv`** | `<stdlib.h>` |
+| **`_wgetenv`** | `<stdlib.h>` or `<wchar.h>` |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -121,6 +121,6 @@ New LIB variable is: c:\mylib;c:\yourlib
 
 ## See also
 
-[Process and environment control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[`_putenv`, `_wputenv`](putenv-wputenv.md)<br/>
-[Environmental constants](../../c-runtime-library/environmental-constants.md)<br/>
+[Process and environment control](../process-and-environment-control.md)\
+[`_putenv`, `_wputenv`](putenv-wputenv.md)\
+[Environmental constants](../environmental-constants.md)

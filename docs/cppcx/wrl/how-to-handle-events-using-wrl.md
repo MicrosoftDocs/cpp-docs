@@ -39,7 +39,7 @@ The following steps start an `ABI::Windows::System::Threading::IDeviceWatcher` o
    [!code-cpp[wrl-consume-event#4](../codesnippet/CPP/how-to-handle-events-using-wrl_4.cpp)]
 
    > [!NOTE]
-   > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don’t wait for async operations to complete.
+   > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don't wait for async operations to complete.
 
 5. Create an activation factory for the `IDeviceWatcher` interface.
 

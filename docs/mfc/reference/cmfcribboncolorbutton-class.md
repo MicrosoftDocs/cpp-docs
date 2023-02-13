@@ -241,7 +241,7 @@ The size of the color buttons in the drop-down color palette.
 
 ## <a name="getcolumns"></a> CMFCRibbonColorButton::GetColumns
 
-Gets the number of items in a row of the ribbon color button’s gallery display.
+Gets the number of items in a row of the ribbon color button's gallery display.
 
 ```
 int GetColumns() const;

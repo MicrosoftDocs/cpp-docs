@@ -37,7 +37,6 @@ void functionUsingWidget() {
     w.do_something();
     // ...
 } // automatic destruction and deallocation for w and w.data
-
 ```
 
 Whenever possible, use a smart pointer to manage heap memory. If you must use the **`new`** and **`delete`** operators explicitly, follow the principle of RAII. For more information, see [Object lifetime and resource management (RAII)](object-lifetime-and-resource-management-modern-cpp.md).
@@ -71,7 +70,7 @@ When performance optimization is needed, consider using:
 
 - Sorted `vector`. For more information, see [Algorithms](../standard-library/algorithms.md).
 
-Don’t use C-style arrays. For older APIs that need direct access to the data, use accessor methods such as `f(vec.data(), vec.size());` instead. For more information about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+Don't use C-style arrays. For older APIs that need direct access to the data, use accessor methods such as `f(vec.data(), vec.size());` instead. For more information about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 ## Standard Library algorithms
 

@@ -26,13 +26,13 @@ int atexit(
 *`func`*\
 Function to be called.
 
-## Return Value
+## Return value
 
 **`atexit`** returns 0 if successful, or a nonzero value if an error occurs.
 
 ## Remarks
 
-The **`atexit`** function is passed the address of a function *`func`* to be called when the program terminates normally. Successive calls to **`atexit`** create a register of functions that are executed in last-in, first-out (LIFO) order. The functions passed to **`atexit`** can’t take parameters. **`atexit`** and **`_onexit`** use the heap to hold the register of functions. Thus, the number of functions that can be registered is limited only by heap memory.
+The **`atexit`** function is passed the address of a function *`func`* to be called when the program terminates normally. Successive calls to **`atexit`** create a register of functions that are executed in last-in, first-out (LIFO) order. The functions passed to **`atexit`** can't take parameters. **`atexit`** and **`_onexit`** use the heap to hold the register of functions. Thus, the number of functions that can be registered is limited only by heap memory.
 
 The code in the **`atexit`** function shouldn't contain any dependency on any DLL that could have already been unloaded when the **`atexit`** function is called.
 
@@ -40,9 +40,9 @@ To generate an ANSI-conformant application, use the ANSI-standard **`atexit`** f
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**`atexit`**|`<stdlib.h>`|
+| Routine | Required header |
+|---|---|
+| **`atexit`** | `<stdlib.h>` |
 
 ## Example
 
@@ -92,7 +92,7 @@ This is executed next.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[Process and environment control](../process-and-environment-control.md)\
 [`abort`](abort.md)\
 [`exit`, `_Exit`, `_exit`](exit-exit-exit.md)\
 [`_onexit`, `_onexit_m`](onexit-onexit-m.md)

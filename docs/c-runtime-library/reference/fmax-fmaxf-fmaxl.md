@@ -10,7 +10,7 @@ f1_keywords: ["fmax", "fmaxf", "fmaxl", "math/fmax", "math/fmaxf", "math/fmaxl"]
 helpviewer_keywords: ["fmax function", "fmaxf function", "fmaxl function"]
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
 ---
-# fmax, fmaxf, fmaxl
+# `fmax`, `fmaxf`, `fmaxl`
 
 Determine the larger of two specified numeric values.
 
@@ -47,42 +47,42 @@ long double fmaxl(
 
 ### Parameters
 
-*x*\
+*`x`*\
 The first value to compare.
 
-*y*\
+*`y`*\
 The second value to compare.
 
-## Return Value
+## Return value
 
-If successful, returns the larger of *x* or *y*. The value returned is exact, and does not depend on any form of rounding.
+If successful, returns the larger of *`x`* or *`y`*. The value returned is exact, and doesn't depend on any form of rounding.
 
 Otherwise, may return one of the following values:
 
-|Issue|Return|
-|-----------|------------|
-|*x* = NaN|*y*|
-|*y* = NaN|*x*|
-|*x* and *y* = NaN|NaN|
+| Issue | Return |
+|---|---|
+| *`x`* = NaN | *`y`* |
+| *`y`* = NaN | *`x`* |
+| *`x`* and *`y`* = NaN | NaN |
 
-This function does not use the errors specified in  [_matherr](matherr.md).
+This function doesn't use the errors specified in  [`_matherr`](matherr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of fmax that take and return `float` and `long double` types. In a C program, unless you're using the \<tgmath.h> macro to call this function, `fmax` always takes and returns a double.
 
-If you use the \<tgmath.h> `fmax()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `fmax()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 ## Requirements
 
-|Function|C header|C++ header|
-|--------------|--------------|------------------|
-|**fmax**, **fmaxf**, **fmaxl**|\<math.h>|\<cmath> or \<math.h>|
-|**fmax** macro | \<tgmath.h> ||
+| Function | C header | C++ header |
+|---|---|---|
+| **`fmax`**, **`fmaxf`**, **`fmaxl`** | \<math.h> | \<cmath> or \<math.h> |
+| **`fmax`** macro | \<tgmath.h> |  |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fmin, fminf, fminl](fmin-fminf-fminl.md)<br/>
+[Alphabetical function reference](crt-alphabetical-function-reference.md)\
+[`fmin`, `fminf`, `fminl`](fmin-fminf-fminl.md)

@@ -119,7 +119,7 @@ See the example for [`basic_ifstream` Class](../standard-library/basic-ifstream-
 |[`swap`](#swap)|Exchanges this `basic_istream` object for the provided `basic_istream` object parameter.|
 |[`sync`](#sync)|Synchronizes the stream's associated input device with the stream's buffer.|
 |[`tellg`](#tellg)|Reports the current read position in the stream.|
-|[u`nget](#unget)|Puts the most recently read character back into the stream.|
+|[`unget`](#unget)|Puts the most recently read character back into the stream.|
 
 ### Operators
 
@@ -161,7 +161,7 @@ A `basic_istream` object to copy.
 
 The first constructor initializes the base class by calling `init(strbuf)`. It also stores zero in the extraction count. For more information, see [`init`](../standard-library/basic-ios-class.md#init). And for more information about this extraction count, see the Remarks section of the [`basic_istream` Class](../standard-library/basic-istream-class.md) overview.
 
-The second constructor initializes the base class by calling `move(right)`. It also stores `right.gcount()` in the extraction count and stores zero in the extraction count for *`right`**.
+The second constructor initializes the base class by calling `move(right)`. It also stores `right.gcount()` in the extraction count and stores zero in the extraction count for *`right`*.
 
 ### Example
 

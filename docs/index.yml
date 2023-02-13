@@ -127,19 +127,19 @@ tools:
   title: Languages and frameworks
   items:
     - title: C++
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: cpp/index.yml
     - title: C
-      imageSrc: https://docs.microsoft.com/media/logos/logo_C.svg
+      imageSrc: /media/logos/logo_C.svg
       url: c-language/index.yml
     - title: Microsoft Assembler
       imageSrc: media/index/logo-asm.svg
       url: intrinsics/index.yml
     - title: C++/CX for Windows Runtime
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: cppcx/visual-c-language-reference-c-cx.md
     - title: C++/CLI for .NET
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md
     - title: Active Template Library (ATL)
       imageSrc: media/index/logo-atl.svg
@@ -148,7 +148,7 @@ tools:
       imageSrc: media/index/logo-mfc.svg
       url: mfc/mfc-desktop-applications.md
     - title: C++/WinRT for Windows Runtime
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      imageSrc: /media/logos/logo_Cplusplus.svg
       url: /windows/uwp/cpp-and-winrt-apis/
 
 # additionalContent section (optional)
@@ -206,4 +206,4 @@ additionalContent:
             - text: Universal Windows Platform libraries
               url: cppcx/namespaces-reference-c-cx.md
   # footer (optional)
-  footer: "[Microsoft Docs Q&A](/answers/topics/c%2B%2B.html) - [C++ Team Blog](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Developer Community](https://aka.ms/vsfeedback/browsecpp) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [How to report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Suggest a feature](https://aka.ms/feedback/suggest?space=62) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."
+  footer: "[Microsoft Learn Q&A](/answers/topics/c%2B%2B.html) - [C++ Team Blog](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Developer Community](https://aka.ms/vsfeedback/browsecpp) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [How to report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Suggest a feature](https://aka.ms/feedback/suggest?space=62) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."

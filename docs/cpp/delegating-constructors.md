@@ -57,7 +57,7 @@ int main() {
 
 As you step through the previous example, notice that the constructor `class_c(int, int, int)` first calls the constructor `class_c(int, int)`, which in turn calls `class_c(int)`. Each of the constructors performs only the work that is not performed by the other constructors.
 
-The first constructor that's called initializes the object so that all of its members are initialized at that point. You can’t do member initialization in a constructor that delegates to another constructor, as shown here:
+The first constructor that's called initializes the object so that all of its members are initialized at that point. You can't do member initialization in a constructor that delegates to another constructor, as shown here:
 
 ```cpp
 class class_a {
@@ -66,7 +66,7 @@ public:
     // member initialization here, no delegate
     class_a(string str) : m_string{ str } {}
 
-    //can’t do member initialization here
+    //can't do member initialization here
     // error C3511: a call to a delegating constructor shall be the only member-initializer
     class_a(string str, double dbl) : class_a(str) , m_double{ dbl } {}
 

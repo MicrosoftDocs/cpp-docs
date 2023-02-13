@@ -1436,7 +1436,7 @@ This method always returns `TRUE`.
 
 ### Remarks
 
-The quick customize menu is a pop-up menu that appears when you click the toolbar’s customize button
+The quick customize menu is a pop-up menu that appears when you click the toolbar's customize button
 
 ## <a name="onshowpanes"></a> `CFrameWndEx::OnShowPanes`
 

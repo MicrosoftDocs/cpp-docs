@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 12/01/2021
+ms.date: 11/07/2022
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -44,12 +44,51 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2019 version 16.11 | 19.29.30100.0 |
 | Visual Studio 2022 version 17.0 RTW | 19.30 |
 | Visual Studio 2022 version 17.1 | 19.31 |
+| Visual Studio 2022 version 17.2 | 19.32 |
+| Visual Studio 2022 version 17.3 | 19.33 |
+| Visual Studio 2022 version 17.4 | 19.34 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= msvc-170"
+
+## Warnings introduced in Visual Studio 2022 version 17.4 (compiler version 19.34)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.33`**.
+
+| Warning | Message |
+|--|--|
+| C5260 | the constant variable '*variable-name*' has internal linkage in an included header file context, but external linkage in imported header unit context; consider declaring it '`inline`' as well if it will be shared across translation units, or '`static`' to express intent to use it local to this translation unit |
+| C5261 | no integer type can represent all enumerator values in enumeration '*enum-name*' |
+| C5262 | implicit fall-through occurs here; are you missing a `break` statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases |
+| C5263 | calling '`std::move`' on a temporary object prevents copy elision |
+| C5264 | '*variable-name*': '`const`' variable is not used |
+
+## Warnings introduced in Visual Studio 2022 version 17.3 (compiler version 19.33)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.32`**.
+
+| Warning | Message |
+|--|--|
+| C5259 | '*specialized-type*': explicit specialization requires 'template <>' |
+
+## Warnings introduced in Visual Studio 2022 version 17.2 (compiler version 19.32)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.31`**.
+
+| Warning | Message |
+|--|--|
+| C4983 | '/analyze:sarif:hashname' ignored because the argument to '/analyze:log' is a single file rather than a directory |
+| C5081 | Secure hotpatch is not supported with /GENPROFILE, /FASTGENPROFILE or /LTCG:PGI, disabling secure hotpatch. |
+| C5255 | unterminated bidirectional character encountered: 'U+XXXX' |
+| C5256 | '*enumeration*': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration |
+| C5257 | '*enumeration*': enumeration was previously declared without a fixed underlying type |
+| C5258 | explicit capture of '*symbol*' is not required for this use |
+| C5300 | '#pragma omp atomic': left operand of '*operator*' must match left hand side of assignment-expression |
+| C5301 | '#pragma omp for': '*symbol*' increases while loop condition uses '*comparison*'; non-terminating loop? |
+| C5302 | '#pragma omp for': '*symbol*' decreases while loop condition uses '*comparison*'; non-terminating loop? |
 
 ## Warnings introduced in Visual Studio 2022 version 17.1 (compiler version 19.31)
 

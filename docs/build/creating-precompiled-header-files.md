@@ -3,7 +3,6 @@ description: "Learn more about: Precompiled header files"
 title: "Precompiled Header Files"
 ms.date: 06/29/2022
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
-ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ---
 # Precompiled header files
 
@@ -21,7 +20,7 @@ Precompiled code is useful during the development cycle to reduce compilation ti
 
 - You always use a large body of code that changes infrequently.
 
-- Your program comprises multiple modules, all of which use a standard set of include files and the same compilation options. In this case, all include files can be precompiled into one precompiled header.
+- Your program comprises multiple modules, all of which use a standard set of include files and the same compilation options. In this case, all include files can be precompiled into one precompiled header. For more information about newer ways to handle include files, see [Compare header units, modules, and precompiled headers](compare-inclusion-methods.md).
 
 The first compilation (the one that creates the precompiled header file) takes a bit longer than subsequent compilations. Subsequent compilations can proceed more quickly by including the precompiled code.
 
@@ -341,5 +340,10 @@ int main( void )
 
 ## See also
 
+[Compare header units, modules, and precompiled headers](compare-inclusion-methods.md)\
 [C/C++ building reference](reference/c-cpp-building-reference.md)\
 [MSVC compiler options](reference/compiler-options.md)
+[Overview of modules in C++](../cpp/modules-cpp.md)\
+[Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
+[Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md)\
+[Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1)

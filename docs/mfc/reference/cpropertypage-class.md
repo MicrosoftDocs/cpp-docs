@@ -83,7 +83,7 @@ void CancelToClose();
 
 ### Remarks
 
-This function will change the **OK** button to **Close** and disable the **Cancel** button. This change alerts the user that a change is permanent and the modifications can’t be canceled.
+This function will change the **OK** button to **Close** and disable the **Cancel** button. This change alerts the user that a change is permanent and the modifications can't be canceled.
 
 The `CancelToClose` member function does nothing in a modeless property sheet, because a modeless property sheet doesn't have a **Cancel** button by default.
 
@@ -194,7 +194,7 @@ ID of the name to be placed in the tab for this page. If 0, the name will be tak
 
 *`dwSize`*\
 *`lpszTemplateName`*
-Points to a string containing the name of the template for this page. Can’t be `NULL`.
+Points to a string containing the name of the template for this page. Can't be `NULL`.
 
 *`nIDHeaderTitle`*\
 ID of the name to be placed in the title location of the property page header.
@@ -447,11 +447,11 @@ For more information on how to make a wizard-type property sheet, see [`CPropert
 ### Example
 
 [!code-cpp[NVC_MFCDocView#119](../../mfc/codesnippet/cpp/cpropertypage-class_9.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#120](../../mfc/codesnippet/cpp/cpropertypage-class_10.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#121](../../mfc/codesnippet/cpp/cpropertypage-class_11.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#122](../../mfc/codesnippet/cpp/cpropertypage-class_12.cpp)]
 
 ## <a name="onwizardnext"></a> `CPropertyPage::OnWizardNext`
@@ -505,9 +505,9 @@ If a page returns a nonzero value, the property sheet doesn't send the message t
 ### Example
 
 [!code-cpp[NVC_MFCDocView#124](../../mfc/codesnippet/cpp/cpropertypage-class_14.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#125](../../mfc/codesnippet/cpp/cpropertypage-class_15.cpp)]
-
+&nbsp;
 [!code-cpp[NVC_MFCDocView#126](../../mfc/codesnippet/cpp/cpropertypage-class_16.cpp)]
 
 ## <a name="setmodified"></a> `CPropertyPage::SetModified`

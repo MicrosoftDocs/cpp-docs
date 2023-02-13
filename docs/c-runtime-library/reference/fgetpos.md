@@ -3,14 +3,14 @@ description: "Learn more about: fgetpos"
 title: "fgetpos"
 ms.date: "4/2/2020"
 api_name: ["fgetpos", "_o_fgetpos"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fgetpos"]
 helpviewer_keywords: ["fgetpos function", "streams, file position indicator"]
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
 ---
-# fgetpos
+# `fgetpos`
 
 Gets a stream's file-position indicator.
 
@@ -25,29 +25,29 @@ int fgetpos(
 
 ### Parameters
 
-*stream*<br/>
+*`stream`*\
 Target stream.
 
-*pos*<br/>
+*`pos`*\
 Position-indicator storage.
 
-## Return Value
+## Return value
 
-If successful, **fgetpos** returns 0. On failure, it returns a nonzero value and sets **errno** to one of the following manifest constants (defined in STDIO.H): **EBADF**, which means the specified stream is not a valid file pointer or is not accessible, or **EINVAL**, which means the *stream* value or the value of *pos* is invalid, such as if either is a null pointer. If *stream* or *pos* is a **NULL** pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If successful, **`fgetpos`** returns 0. On failure, it returns a nonzero value and sets `errno` to one of the following manifest constants (defined in STDIO.H): `EBADF`, which means the specified stream isn't a valid file pointer or isn't accessible, or `EINVAL`, which means the *`stream`* value or the value of *`pos`* is invalid, such as if either is a null pointer. If *`stream`* or *`pos`* is a `NULL` pointer, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md).
 
 ## Remarks
 
-The **fgetpos** function gets the current value of the *stream* argument's file-position indicator and stores it in the object pointed to by *pos*. The **fsetpos** function can later use information stored in *pos* to reset the *stream* argument's pointer to its position at the time **fgetpos** was called. The *pos* value is stored in an internal format and is intended for use only by **fgetpos** and **fsetpos**.
+The **`fgetpos`** function gets the current value of the *`stream`* argument's file-position indicator and stores it in the object pointed to by *`pos`*. The `fsetpos` function can later use information stored in *`pos`* to reset the *`stream`* argument's pointer to its position at the time **`fgetpos`** was called. The *`pos`* value is stored in an internal format and is intended for use only by **`fgetpos`** and `fsetpos`.
 
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
 
-|Function|Required header|
-|--------------|---------------------|
-|**fgetpos**|\<stdio.h>|
+| Function | Required header |
+|---|---|
+| **`fgetpos`** | \<stdio.h> |
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -106,5 +106,5 @@ after fsetpos: gets a stream
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fsetpos](fsetpos.md)<br/>
+[Stream I/O](../stream-i-o.md)\
+[`fsetpos`](fsetpos.md)

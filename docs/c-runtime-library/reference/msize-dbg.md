@@ -10,7 +10,7 @@ f1_keywords: ["_msize_dbg", "msize_dbg"]
 helpviewer_keywords: ["memory blocks", "_msize_dbg function", "msize_dbg function"]
 ms.assetid: a333f4b6-f8a2-4e61-bb69-cb34063b8cef
 ---
-# _msize_dbg
+# `_msize_dbg`
 
 Calculates the size of a block of memory in the heap (debug version only).
 
@@ -25,35 +25,35 @@ size_t _msize_dbg(
 
 ### Parameters
 
-*userData*<br/>
+*`userData`*\
 Pointer to the memory block for which to determine the size.
 
-*blockType*<br/>
-Type of the specified memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.
+*`blockType`*\
+Type of the specified memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-## Return Value
+## Return value
 
-On successful completion, **_msize_dbg** returns the size (in bytes) of the specified memory block; otherwise it returns **NULL**.
+On successful completion, **`_msize_dbg`** returns the size (in bytes) of the specified memory block; otherwise it returns `NULL`.
 
 ## Remarks
 
-**_msize_dbg** is a debug version of the _[msize](msize.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_msize_dbg** is reduced to a call to **_msize**. Both **_msize** and **_msize_dbg** calculate the size of a memory block in the base heap, but **_msize_dbg** adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
+**`_msize_dbg`** is a debug version of the _[`msize`](msize.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **`_msize_dbg`** is reduced to a call to `_msize`. Both `_msize` and **`_msize_dbg`** calculate the size of a memory block in the base heap, but **`_msize_dbg`** adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
 
-For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between calling a standard heap function and its debug version in a debug build of an application, see [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap). For information about the differences between standard heap functions and the debug versions, see [Debug versions of heap allocation functions](../debug-versions-of-heap-allocation-functions.md).
 
-This function validates its parameter. If *memblock* is a null pointer, **_msize** invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function sets **errno** to **EINVAL** and returns -1.
+This function validates its parameter. If *`memblock`* is a null pointer, **`_msize_dbg`** invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_msize_dbg**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_msize_dbg`** | \<crtdbg.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -116,5 +116,5 @@ Size of block after _realloc_dbg of 40 more longs: 320
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_malloc_dbg](malloc-dbg.md)<br/>
+[Debug routines](../debug-routines.md)\
+[`_malloc_dbg`](malloc-dbg.md)

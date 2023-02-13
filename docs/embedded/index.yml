@@ -44,9 +44,9 @@ landingContent:
     linkLists: 
       - linkListType: reference
         links:
-          - text: Peripheral Viewer
+          - text: Peripheral View
             url: ./peripheral-view.md
-          - text: RTOS Viewer
+          - text: RTOS View
             url: ./rtos-view.md
           - text: Serial Monitor
             url: ./serial-monitor.md

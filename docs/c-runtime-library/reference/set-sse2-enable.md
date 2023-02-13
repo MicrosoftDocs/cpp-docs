@@ -10,9 +10,9 @@ f1_keywords: ["_set_SSE2_enable", "set_SSE2_enable"]
 helpviewer_keywords: ["_set_SSE2_enable function", "Streaming SIMD Extensions 2 instructions", "set_SSE2_enable function"]
 ms.assetid: 55db895d-fc1e-475a-9110-b781a9bb51c5
 ---
-# _set_SSE2_enable
+# `_set_SSE2_enable`
 
-Enables or disables the use of Streaming SIMD Extensions 2 (SSE2) instructions in CRT math routines. (This function is not available on x64 architectures because SSE2 is enabled by default.)
+Enables or disables the use of Streaming SIMD Extensions 2 (SSE2) instructions in CRT math routines. (This function isn't available on x64 architectures because SSE2 is enabled by default.)
 
 ## Syntax
 
@@ -24,47 +24,47 @@ int _set_SSE2_enable(
 
 ### Parameters
 
-*flag*<br/>
+*`flag`*\
 1 to enable the SSE2 implementation; 0 to disable the SSE2 implementation. By default, SSE2 implementation is enabled on processors that support it.
 
-## Return Value
+## Return value
 
 Nonzero if SSE2 implementation is enabled; zero if SSE2 implementation is disabled.
 
 ## Remarks
 
-The following functions have SSE2 implementations that can be enabled by using **_set_SSE2_enable**:
+The following functions have SSE2 implementations that can be enabled by using **`_set_SSE2_enable`**:
 
-- [atan](atan-atanf-atanl-atan2-atan2f-atan2l.md)
+- [`atan`](atan-atanf-atanl-atan2-atan2f-atan2l.md)
 
-- [ceil](ceil-ceilf-ceill.md)
+- [`ceil`](ceil-ceilf-ceill.md)
 
-- [exp](exp-expf.md)
+- [`exp`](exp-expf.md)
 
-- [floor](floor-floorf-floorl.md)
+- [`floor`](floor-floorf-floorl.md)
 
-- [log](log-logf-log10-log10f.md)
+- [`log`](log-logf-log10-log10f.md)
 
-- [log10](log-logf-log10-log10f.md)
+- [`log10`](log-logf-log10-log10f.md)
 
-- [modf](modf-modff-modfl.md)
+- [`modf`](modf-modff-modfl.md)
 
-- [pow](pow-powf-powl.md)
+- [`pow`](pow-powf-powl.md)
 
-The SSE2 implementations of these functions might give slightly different answers than the default implementations, because SSE2 intermediate values are 64-bit floating-point quantities but the default implementation intermediate values are 80-bit floating-point quantities.
+The SSE2 implementations of these functions might give slightly different answers than the default implementations. SSE2 intermediate values are 64-bit floating-point quantities, but the default implementation intermediate values are 80-bit floating-point quantities.
 
 > [!NOTE]
-> If you use the [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) compiler option to compile the project, it may appear that **_set_SSE2_enable** has no effect. The **/Oi** compiler option gives the compiler the authority to use intrinsics to replace CRT calls; this behavior overrides the effect of **_set_SSE2_enable**. If you want to guarantee that **/Oi** does not override **_set_SSE2_enable**, use **/Oi-** to compile your project. This might also be good practice when you use other compiler switches that imply **/Oi**.
+> If you use the [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) compiler option to compile the project, it may appear that **`_set_SSE2_enable`** has no effect. The **/Oi** compiler option gives the compiler the authority to use intrinsics to replace CRT calls; this behavior overrides the effect of **`_set_SSE2_enable`**. If you want to guarantee that **/Oi** does not override **`_set_SSE2_enable`**, use **/Oi-** to compile your project. This might also be good practice when you use other compiler switches that imply **/Oi**.
 
-The SSE2 implementation is only used if all exceptions are masked. Use [_control87, _controlfp](control87-controlfp-control87-2.md) to mask exceptions.
+The SSE2 implementation is only used if all exceptions are masked. Use [`_control87`, `_controlfp`](control87-controlfp-control87-2.md) to mask exceptions.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_set_SSE2_enable**|\<math.h>|
+| Routine | Required header |
+|---|---|
+| **`_set_SSE2_enable`** | \<math.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -91,4 +91,4 @@ SSE2 enabled.
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../crt-library-features.md)

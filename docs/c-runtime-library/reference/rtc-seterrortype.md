@@ -10,7 +10,7 @@ f1_keywords: ["RTC_SetErrorType", "_RTC_SetErrorType"]
 helpviewer_keywords: ["run-time errors", "RTC_SetErrorType function", "_RTC_SetErrorType function"]
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
 ---
-# _RTC_SetErrorType
+# `_RTC_SetErrorType`
 
 Associates an error that is detected by run-time error checks (RTCs) with a type. Your error handler processes how to output errors of the specified type.
 
@@ -25,37 +25,37 @@ int _RTC_SetErrorType(
 
 ### Parameters
 
-*errnum*<br/>
-A number between zero and one less than the value returned by [_RTC_NumErrors](rtc-numerrors.md).
+*`errnum`*\
+A number between zero and one less than the value returned by [`_RTC_NumErrors`](rtc-numerrors.md).
 
-*ErrType*<br/>
-A value to assign to this *errnum*. For example, you might use **_CRT_ERROR**. If you are using **_CrtDbgReport** as your error handler, *ErrType* can only be one of the symbols defined in [_CrtSetReportMode](crtsetreportmode.md). If you have your own error handler ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)), you can have as many *ErrType*s as there are *errnum*s.
+*`ErrType`*\
+A value to assign to this *`errnum`*. For example, you might use `_CRT_ERROR`. If you're using `_CrtDbgReport` as your error handler, *`ErrType`* can only be one of the symbols defined in [`_CrtSetReportMode`](crtsetreportmode.md). If you have your own error handler ([`_RTC_SetErrorFunc`](rtc-seterrorfunc.md)), you can have as many *`ErrType`* values as there are *`errnum`* values.
 
-An *ErrType* of _RTC_ERRTYPE_IGNORE has special meaning to **_CrtSetReportMode**; the error is ignored.
+An *`ErrType`* of `_RTC_ERRTYPE_IGNORE` has special meaning to `_CrtSetReportMode`; the error is ignored.
 
-## Return Value
+## Return value
 
-The previous value for the error type *type*.
+The previous value for the error type replaced by *`ErrType`*.
 
 ## Remarks
 
-By default, all errors are set to *ErrType* = 1, which corresponds to **_CRT_ERROR**. For more information about the default error types such as **_CRT_ERROR**, see [_CrtDbgReport](crtdbgreport-crtdbgreportw.md).
+By default, all errors are set to *`ErrType`* = 1, which corresponds to `_CRT_ERROR`. For more information about the default error types such as `_CRT_ERROR`, see [`_CrtDbgReport`](crtdbgreport-crtdbgreportw.md).
 
-Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
+Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using runtime checks without the C runtime library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_RTC_SetErrorType**|\<rtcapi.h>|
+| Routine | Required header |
+|---|---|
+| **`_RTC_SetErrorType`** | \<rtcapi.h> |
 
-For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## See also
 
-[_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+[`_RTC_GetErrDesc`](rtc-geterrdesc.md)\
+[Runtime error checking](../run-time-error-checking.md)

@@ -3,7 +3,7 @@ description: "Learn more about: _umask_s"
 title: "_umask_s"
 ms.date: 05/18/2022
 api_name: ["_umask_s", "_o__umask_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_IO/_umask_s", "_umask_s", "umask_s"]
@@ -12,7 +12,7 @@ ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
 ---
 # `_umask_s`
 
-Sets the default file-permission mask. A version of [`_umask`](umask.md) with security enhancements as described in [Security features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Sets the default file-permission mask. A version of [`_umask`](umask.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -33,16 +33,16 @@ The previous value of the permission setting.
 
 ## Return value
 
-Returns an error code if *`mode`* doesn't specify a valid mode or the *`pOldMode`* pointer is **`NULL`**.
+Returns an error code if *`mode`* doesn't specify a valid mode or the *`pOldMode`* pointer is `NULL`.
 
 ### Error conditions
 
 | *`mode`* | *`pOldMode`* | Return value | Contents of *`pOldMode`* |
 |--|--|--|--|
-| any | **`NULL`** | **`EINVAL`** | not modified |
-| invalid mode | any | **`EINVAL`** | not modified |
+| any | `NULL` | `EINVAL` | not modified |
+| invalid mode | any | `EINVAL` | not modified |
 
-If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`_umask_s`** returns **`EINVAL`** and sets **`errno`** to **`EINVAL`**.
+If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_umask_s`** returns `EINVAL` and sets `errno` to `EINVAL`.
 
 ## Remarks
 
@@ -52,11 +52,11 @@ The integer expression *`mode`* contains one or both of the following manifest c
 
 | *`mode`* | Description |
 |--|--|
-| **`_S_IWRITE`** | Writing permitted. |
-| **`_S_IREAD`** | Reading permitted. |
+| `_S_IWRITE` | Writing permitted. |
+| `_S_IREAD` | Reading permitted. |
 | **`_S_IREAD | _S_IWRITE`** | Reading and writing permitted. |
 
-When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`mode`* argument is **`_S_IREAD`**, reading isn't allowed (the file is write-only). If the *`mode`* argument is **`_S_IWRITE`**, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask_s`** has no effect on the file's modes.
+When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`mode`* argument is `_S_IREAD`, reading isn't allowed (the file is write-only). If the *`mode`* argument is `_S_IWRITE`, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask_s`** has no effect on the file's modes.
 
 If *`mode`* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function ignores them.
 
@@ -68,7 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |--|--|
 | **`_umask_s`** | `<io.h>` and `<sys/stat.h>` and `<sys/types.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Example
 
@@ -106,8 +106,8 @@ Oldmask = 0x0000
 
 ## See also
 
-[File handling](../../c-runtime-library/file-handling.md)\
-[Low-level I/O](../../c-runtime-library/low-level-i-o.md)\
+[File handling](../file-handling.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\

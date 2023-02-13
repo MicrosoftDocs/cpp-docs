@@ -10,7 +10,7 @@ f1_keywords: ["set_output_format", "_set_output_format"]
 helpviewer_keywords: ["_TWO_DIGIT_EXPONENT constant", "output formatting", "TWO_DIGIT_EXPONENT constant", "_set_output_format function", "set_output_format function"]
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
 ---
-# _set_output_format
+# `_set_output_format`
 
 Customizes output formats used by formatted I/O functions.
 
@@ -19,7 +19,7 @@ Customizes output formats used by formatted I/O functions.
 
 ## Syntax
 
-```
+```C
 unsigned int _set_output_format(
    unsigned int format
 );
@@ -27,7 +27,7 @@ unsigned int _set_output_format(
 
 #### Parameters
 
-*format*<br/>
+*`format`*\
 [in] An value representing the format to use.
 
 ## Return value
@@ -36,19 +36,19 @@ The previous output format.
 
 ## Remarks
 
-`_set_output_format` is used to configure the output of formatted I/O functions such as [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). At present, the only formatting convention that can be changed by this function is the number of digits displayed in exponents in the output of floating point numbers.
+**`_set_output_format`** is used to configure the output of formatted I/O functions such as [`printf_s`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). The only formatting convention that can be changed by this function is the number of digits displayed in exponents in the output of floating point numbers.
 
-By default, the output of floating point numbers by functions such as `printf_s`, `wprintf_s`, and related functions in the Visual C++ Standard C library prints three digits for the exponent, even if three digits are not required to represent the value of the exponent. Zeroes are used to pad the value to three digits. `_set_output_format` allows you to change this behavior so that only two digits are printed in the exponent unless a third digit is required by the size of the exponent.
+By default, the output of floating point numbers by functions such as `printf_s`, `wprintf_s`, and related functions in the Visual C++ Standard C library prints three digits for the exponent, even if three digits aren't required to represent the value of the exponent. Zeroes are used to pad the value to three digits. **`_set_output_format`** allows you to change this behavior so that only two digits are printed in the exponent unless a third digit is required by the size of the exponent.
 
 To enable two-digit exponents, call this function with the parameter `_TWO_DIGIT_EXPONENT`, as shown in the example. To disable two digit exponents, call this function with an argument of 0.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|`_set_output_format`|\<stdio.h>|
+| Routine | Required header |
+|---|---|
+| **`_set_output_format`** | \<stdio.h> |
 
-For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](./compatibility.md) in the Introduction.
 
 ## Example
 
@@ -102,5 +102,5 @@ int main()
 
 ## See also
 
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
-[_get_output_format](../c-runtime-library/get-output-format.md)
+[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)\
+[`_get_output_format`](./get-output-format.md)

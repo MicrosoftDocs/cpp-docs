@@ -15,7 +15,7 @@ You can use the  **CLR Console Application** template in the **New Project** dia
 
 You can use the **CLR Console App** template in the **New Project** dialog to create a console app project that already has essential project references and files.
 
-C++/CLI support isn't installed by default when you install a Visual Studio C++ workload. If you don't see a CLR heading under Visual C++ in the **New Project** dialog, you may need to install C++/CLI support. For more information, see [.NET programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+C++/CLI support isn't installed by default when you install a Visual Studio C++ workload. If you don't see a CLR heading under Visual C++ in the **New Project** dialog, you may need to install C++/CLI support. For more information, see [Install C++/CLI support in Visual Studio 2022](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md#install-ccli-support-in-visual-studio-2022).
 
 ::: moniker-end
 ::: moniker range=">=msvc-160"

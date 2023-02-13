@@ -3,7 +3,7 @@ title: "_umask"
 description: "API reference for _umask; which sets the default file-permission mask."
 ms.date: "4/2/2020"
 api_name: ["_umask", "_o__umask"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_IO/_umask", "_umask"]
@@ -37,11 +37,11 @@ The integer expression *`pmode`* contains one or both of the following manifest 
 
 | *`pmode`* | Description |
 |--|--|
-| **`_S_IWRITE`** | Writing permitted. |
-| **`_S_IREAD`** | Reading permitted. |
+| `_S_IWRITE` | Writing permitted. |
+| `_S_IREAD` | Reading permitted. |
 | **`_S_IREAD | _S_IWRITE`** | Reading and writing permitted. |
 
-When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`pmode`* argument is **`_S_IREAD`**, reading isn't allowed (the file is write-only). If the *`pmode`* argument is **`_S_IWRITE`**, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask`** has no effect on the file's modes.
+When both constants are given, they're joined with the bitwise-OR operator ( **`|`** ). If the *`pmode`* argument is `_S_IREAD`, reading isn't allowed (the file is write-only). If the *`pmode`* argument is `_S_IWRITE`, writing isn't allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. In MS-DOS and the Windows operating systems, all files are readable; it isn't possible to give write-only permission. Therefore, setting the read bit with **`_umask`** has no effect on the file's modes.
 
 If *`pmode`* isn't a combination of one of the manifest constants or incorporates an alternate set of constants, the function ignores them.
 
@@ -53,11 +53,11 @@ By default, this function's global state is scoped to the application. To change
 |--|--|
 | **`_umask`** | `<io.h>`, `<sys/stat.h>`, `<sys/types.h>` |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../crt-library-features.md).
 
 ## Example
 
@@ -90,8 +90,8 @@ Oldmask = 0x0000
 
 ## See also
 
-[File handling](../../c-runtime-library/file-handling.md)\
-[Low-level I/O](../../c-runtime-library/low-level-i-o.md)\
+[File handling](../file-handling.md)\
+[Low-level I/O](../low-level-i-o.md)\
 [`_chmod`, `_wchmod`](chmod-wchmod.md)\
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`_mkdir`, `_wmkdir`](mkdir-wmkdir.md)\

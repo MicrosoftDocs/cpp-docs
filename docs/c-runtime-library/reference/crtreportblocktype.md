@@ -10,7 +10,7 @@ f1_keywords: ["_CrtReportBlockType", "CrtReportBlockType"]
 helpviewer_keywords: ["CrtReportBlockType function", "BLOCK_SUBTYPE macro", "_CrtReportBlockType function", "_BLOCK_TYPE macro", "_BLOCK_SUBTYPE macro", "BLOCK_TYPE macro"]
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
 ---
-# _CrtReportBlockType
+# `_CrtReportBlockType`
 
 Returns the block type/subtype associated with a given debug heap block pointer.
 
@@ -24,30 +24,30 @@ int _CrtReportBlockType(
 
 ### Parameters
 
-*pBlock*<br/>
+*`pBlock`*\
 Pointer to a valid debug heap block.
 
-## Return Value
+## Return value
 
-When passed a valid debug heap pointer, the **_CrtReportBlockType** function returns the block type and subtype in the form of an **`int`**. When passed an invalid pointer, the function returns -1.
+When passed a valid debug heap pointer, the **`_CrtReportBlockType`** function returns the block type and subtype in the form of an **`int`**. When passed an invalid pointer, the function returns -1.
 
 ## Remarks
 
-To extract the type and subtype returned by **_CrtReportBlockType**, use the macros **_BLOCK_TYPE** and **_BLOCK_SUBTYPE** (both defined in Crtdbg.h) on the return value.
+To extract the type and subtype returned by **`_CrtReportBlockType`**, use the macros `_BLOCK_TYPE` and `_BLOCK_SUBTYPE` (both defined in Crtdbg.h) on the return value.
 
-For information about the allocation block types and how they are used, see [Types of Blocks on the Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_CrtReportBlockType**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtReportBlockType`** | \<crtdbg.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## Example
 
@@ -89,7 +89,7 @@ int main(void)
 }
 ```
 
-### Sample Output
+### Sample output
 
 ```Output
 Dumper found block at 00314F78: type 4, subtype 3
@@ -110,7 +110,7 @@ Object dump complete.
 
 ## See also
 
-[_CrtDoForAllClientObjects](crtdoforallclientobjects.md)<br/>
-[_CrtSetDumpClient](crtsetdumpclient.md)<br/>
-[_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md)<br/>
-[_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md)<br/>
+[`_CrtDoForAllClientObjects`](crtdoforallclientobjects.md)\
+[`_CrtSetDumpClient`](crtsetdumpclient.md)\
+[`_CrtMemDumpAllObjectsSince`](crtmemdumpallobjectssince.md)\
+[`_CrtDumpMemoryLeaks`](crtdumpmemoryleaks.md)

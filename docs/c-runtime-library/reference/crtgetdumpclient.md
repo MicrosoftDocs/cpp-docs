@@ -10,9 +10,9 @@ f1_keywords: ["CrtGetDumpClient", "_CrtGetDumpClient"]
 helpviewer_keywords: ["_CrtGetDumpClient function", "CrtGetDumpClient function"]
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
 ---
-# _CrtGetDumpClient
+# `_CrtGetDumpClient`
 
-Retrieves the current application-defined function for dumping the **_CLIENT_BLOCK** type memory blocks (debug version only).
+Retrieves the current application-defined function for dumping the `_CLIENT_BLOCK` type memory blocks (debug version only).
 
 ## Syntax
 
@@ -20,30 +20,30 @@ Retrieves the current application-defined function for dumping the **_CLIENT_BLO
 _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 ```
 
-## Return Value
+## Return value
 
 Returns the current dump routine.
 
 ## Remarks
 
-The **_CrtGetDumpClient** function retrieves the current hook function for dumping objects stored in the **_CLIENT_BLOCK** memory blocks for the C run-time debug memory dump process.
+The **`_CrtGetDumpClient`** function retrieves the current hook function for dumping objects stored in the `_CLIENT_BLOCK` memory blocks.
 
-For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).
+For more information about using other hook-capable run-time functions and writing your own client-defined hook functions, see [Debug hook function writing](../crt-debugging-techniques.md#debug-hook-function-writing).
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**_CrtGetDumpClient**|\<crtdbg.h>|
+| Routine | Required header |
+|---|---|
+| **`_CrtGetDumpClient`** | \<crtdbg.h> |
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../compatibility.md).
 
 ## Libraries
 
-Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
+Debug versions of [C run-time libraries](../crt-library-features.md) only.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtReportBlockType](crtreportblocktype.md)<br/>
-[_CrtSetDumpClient](crtsetdumpclient.md)<br/>
+[Debug routines](../debug-routines.md)\
+[`_CrtReportBlockType`](crtreportblocktype.md)\
+[`_CrtSetDumpClient`](crtsetdumpclient.md)
