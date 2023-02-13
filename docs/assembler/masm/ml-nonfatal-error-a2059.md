@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2059"
 title: "ML Nonfatal Error A2059"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2059"]
 helpviewer_keywords: ["A2059"]
 ms.assetid: fadabbce-3054-4758-aeae-34d8540ce410
