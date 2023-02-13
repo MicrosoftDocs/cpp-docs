@@ -6,7 +6,7 @@ api_name: ["tmpfile_s", "_o_tmpfile_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["tmpfile_s"]
+f1_keywords: ["STDIO/tmpfile_s", "tmpfile_s"]
 helpviewer_keywords: ["temporary files", "tmpfile_s function", "temporary files, creating"]
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
 ---
