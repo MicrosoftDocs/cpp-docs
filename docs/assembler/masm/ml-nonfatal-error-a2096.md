@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2096"
 title: "ML Nonfatal Error A2096"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2096"]
 helpviewer_keywords: ["A2096"]
 ms.assetid: bab0b5ee-b39f-4e44-a41a-3f949fab4297

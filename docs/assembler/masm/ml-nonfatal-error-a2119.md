@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2119"
 title: "ML Nonfatal Error A2119"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2119"]
 helpviewer_keywords: ["A2119"]
 ms.assetid: 4d4ee6da-3a58-495c-a1da-c3a405c4c18d

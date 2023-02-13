@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2078"
 title: "ML Nonfatal Error A2078"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2078"]
 helpviewer_keywords: ["A2078"]
 ms.assetid: 42ac48fd-ac7f-4e74-a11e-20181d443faf
