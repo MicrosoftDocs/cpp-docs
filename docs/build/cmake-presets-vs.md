@@ -127,7 +127,7 @@ On the Visual Studio toolbar, there are dropdowns for the Target Systems, Config
 The dropdown list on the left indicates the active *Target System*. It's the system on which CMake is invoked to configure and build the project. This dropdown list includes your local machine, all SSH connections in Connection Manager by host name, and all Windows Subsystem for Linux (WSL) installations that Visual Studio can find:
 
 :::image type="complex" source="./media/target-system-selections.png" alt-text="Screenshot of the Target System dropdown list":::
-The dropdown lists contains several entries including: Local Machine, an ip address 192.168.0.5, WSL: ubuntu2004, WSL: debian, and Manage Connections.":::
+The dropdown lists contains several entries including: Local Machine, an ip address 192.168.0.5, WSL: ubuntu2004, WSL: debian, and Manage Connections.":::image-end:::
 
 In the preceding example:
 
