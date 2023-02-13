@@ -35,14 +35,16 @@ We recommend using at least CMake version 3.14 or later.
 
 *`CMakePresets.json`* integration isn't enabled by default in Visual Studio. You can enable it in **Tools** > **Options** > **CMake** > **General**:
 
-:::image type="content" source="./media/enable-cmakepresets-new.png" alt-text="Screenshot of the older Visual Studio enable CMakePresets.json checkbox. The checkbox reads: Always use CMakePresets.json.":::
+:::image type="complex" source="./media/enable-cmakepresets-new.png" alt-text="Screenshot showing 'Always use CMakePresets.json' selected.":::
+This screen is reached from the Visual Studio 2022 menu: Tools > Options > CMake > General. The option is under the CMake configure file section."
+:::image-end:::
 
 > [!IMPORTANT]
 > Close and reopen the folder in Visual Studio to activate the integration.
 
 In some older versions of Visual Studio, **Tools** > **Options** > **CMake** > **General** only has a single option to enable *`CMakePresets.json`* integration:
 
-:::image type="content" source="./media/enable-cmakepresets.png" alt-text="Screenshot of older Visual Studio enable CMakePresets.json checkbox which is labeled: Use C Make Presets .json to drive CMake configure, build, and test.":::
+:::image type="content" source="./media/enable-cmakepresets.png" alt-text="Screenshot of an older version of Visual Studio. There is a checkbox labeled 'Use C Make Presets .json to drive CMake configure, build, and test.'":::
 
 The following table indicates when *`CMakePresets.json`* is used instead of *`CMakeSettings.json`* to drive CMake configuration and build in Visual Studio 2022 and Visual Studio 2019 version 16.10 and later. If no configuration file is present, default Configure Presets are used.
 
@@ -124,7 +126,8 @@ On the Visual Studio toolbar, there are dropdowns for the Target Systems, Config
 
 The dropdown list on the left indicates the active *Target System*. It's the system on which CMake is invoked to configure and build the project. This dropdown list includes your local machine, all SSH connections in Connection Manager by host name, and all Windows Subsystem for Linux (WSL) installations that Visual Studio can find:
 
-:::image type="content" source="./media/target-system-selections.png" alt-text="Screenshot of the Target System dropdown list which contains: Local Machine, 192.168.0.5, WSL: ubuntu2004, WSL: debian, and Manage Connections.":::
+:::image type="complex" source="./media/target-system-selections.png" alt-text="Screenshot of the Target System dropdown list":::
+The dropdown lists contains several entries including: Local Machine, an ip address 192.168.0.5, WSL: ubuntu2004, WSL: debian, and Manage Connections.":::
 
 In the preceding example:
 
@@ -183,7 +186,7 @@ Use a forward slash (`/`) for paths in *`CMakePresets.json`* and *`CMakeUserPres
 
 To add a new Configure Preset to *`CMakePresets.json`*, from **Solution Explorer**, right-click *`CMakePresets.json`* from **Folder View** and select **Add Configuration** from the shortcut menu. The dialog to select a Configure Preset template appears:
 
-:::image type="content" source="./media/add-configure-preset-to-cmakepresets.png" alt-text="Screenshot of Visual Studio Add Configure Preset to the JSON file dialog. It contains entries such as Linux Debug, macOS Debug, x64 Debug, and more.":::
+:::image type="content" source="./media/add-configure-preset-to-cmakepresets.png" alt-text="Screenshot of the Add Configure Preset to the JSON file dialog. It contains entries such as Linux Debug, macOS Debug, x64 Debug, and so on.":::
 
 Select the **Windows x64 Debug** template to configure on Windows systems. Select the **Linux Debug** template to configure on WSL and remote Linux systems. For more information about editing *`CMakePresets.json`*, see [Edit presets](#edit-presets).
 

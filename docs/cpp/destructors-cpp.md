@@ -140,7 +140,7 @@ B1 dtor
 Destructors for virtual base classes are called in the reverse order of their appearance in a directed acyclic graph (depth-first, left-to-right, postorder traversal). the following figure depicts an inheritance graph.
 
 :::image type="complex" source="../cpp/media/vc392j1.gif" alt-text="Inheritance graph that shows virtual base classes.":::
-There are five classes, labeled A through E, arranged in an inheritance graph. Class E is the base class of classes B, C, and D. Classes C and D are the base class of classes A and B.
+Five classes, labeled A through E, are arranged in an inheritance graph. Class E is the base class of B, C, and D. Classes C and D are the base class of A and B.
 :::image-end:::
 
 The following lists the class heads for the classes shown in the figure.

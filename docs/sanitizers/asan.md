@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer"
 description: "Top-level description of the AddressSanitizer feature for Microsoft C/C++."
-ms.date: 02/03/2023
+ms.date: 03/05/2021
 f1_keywords: ["AddressSanitizer"]
 helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer"]
 ---
@@ -34,21 +34,21 @@ Use AddressSanitizer to reduce your time spent on:
 
 AddressSanitizer, originally [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany), is a powerful alternative to both [`/RTC` (Runtime error checks)](../build/reference/rtc-run-time-error-checks.md) and [`/analyze` (Static analysis)](../build/reference/analyze-code-analysis.md). It provides run-time bug-finding technologies that use your existing build systems and existing test assets directly.
 
-AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using the compiler option: **`/fsanitize=address`**. The new option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
+AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using one extra compiler option: **`/fsanitize=address`**. The new option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
 
-Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file is created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of AddressSanitizer easier for:
+Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file gets created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of AddressSanitizer easier for:
 
-- Local machine testing
-- On-premise distributed testing
-- Cloud-based workflows for testing
+- Local machine testing,
+- On-premise distributed testing, and
+- Cloud-based workflows for testing.
 
 ### Install AddressSanitizer
 
-The Visual Studio Installer C++ workloads install the AddressSanitizer libraries and IDE integration by default. However, if you're using an older version of Visual Studio, use the Visual Studio Installer to enable ASan support after the upgrade. You can open the installer from the Visual Studio main menu via **Tools** > **Get Tools and Features...**
+C++ workloads in the Visual Studio Installer install the AddressSanitizer libraries and IDE integration by default. However, if you're upgrading from an older version of Visual Studio 2019, use the Installer to enable ASan support after the upgrade:
 
-On the Installer's **Workloads** pane, select the **Desktop development with C++** workload and check the **C++ AddressSantizer** option:
+:::image type="content" source="media/asan-installer-option.png" alt-text="Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component":::
 
-:::image type="content" source="media/asan-installer-option.png" alt-text="Screenshot of the Visual Studio Installer. The C++ AddressSanitizer component, under the Optional section, is highlighted":::
+You can choose **Modify** on your existing Visual Studio installation from the Visual Studio Installer to get to the screen above.
 
 > [!NOTE]
 > If you run Visual Studio on the new update but haven't installed ASan, you'll get an error when you run your code:
@@ -105,15 +105,13 @@ int main() {
 
 Using a developer command prompt for Visual Studio 2019, compile *`main.cpp`* using `/fsanitize=address /Zi`
 
-:::image type="content" source="media/asan-command-basic-global-overflow.png" alt-text="Screenshot of a command prompt showing the command to compile with AddressSanitizer options. The command is: cl main.cpp -faanitize-address /Zi.":::
+:::image type="content" source="media/asan-command-basic-global-overflow.png" alt-text="Screenshot of a command prompt showing the command to compile with AddressSanitizer options.":::
 
 When you run the resulting *`main.exe`* at the command line, it creates the formatted error report seen below.
 
 Consider the overlaid, red boxes that highlight seven key pieces of information:
 
-:::image type="complex" source="media/asan-basic-global-overflow.png" alt-text="Screenshot of the debugger showing a basic global overflow error.":::
-There are seven red highlights identifying key pieces of information in the error report. They map to the numbered list that follows this screenshot. The numbered boxes highlight the following text: 1) global-buffer-overflow 2) WRITE of size 4 3) basic-global-overflow.cpp 7 4) to the right of global variable 'x' defined in 'basic-global-overflow.cpp:3:8' 5) of size 400 6) 00 00[f9]f9 f9 7) Box is in the shadow byte legend area and contains Global redzone: f9
-:::image-end:::
+:::image type="content" source="media/asan-basic-global-overflow.png" alt-text="Screenshot of the debugger showing a basic global overflow error.":::
 
 ### Red highlights, from top to bottom
 
@@ -140,7 +138,7 @@ To build from the IDE, opt out of any [incompatible options](./asan-known-issues
 - Turn off [`/RTC1` (runtime checks)](../build/reference/rtc-run-time-error-checks.md)
 - Turn off [`/INCREMENTAL` (incremental linking)](../build/reference/incremental-link-incrementally.md)
 
-To build and run the debugger, press **F5**. You'll see an **Exception Thrown** window in Visual Studio:
+To build and run the debugger, enter **F5**. You'll see this window in Visual Studio:
 
 :::image type="content" source="media/asan-global-buffer-overflow-F5.png" alt-text="Screenshot of the debugger showing a global buffer overflow error.":::
 
@@ -152,19 +150,21 @@ To enable AddressSanitizer for [a CMake project created to target Windows](../bu
 
    :::image type="content" source="media/asan-cmake-configuration-dropdown.png" alt-text="Screenshot of the CMake configuration dropdown.":::
 
-   That selection opens the CMake Project Settings editor, which is saved in a `CMakePresets.json` file.
+   That selection opens the CMake Project Settings editor, which is saved in a CMakeSettings.json file.
+
+1. Choose the **Edit JSON** link in the editor. This selection switches the view to raw JSON.
 
 1. Add the property: **"addressSanitizerEnabled": true**
 
-   This image is of `CMakePresets.json` after that change: ========= JTW THIS LOOKS BROKEN-UPDATE ==========
+   This image is of CMakeSettings.json after that change:
 
-   :::image type="content" source="./media/asan-cmake-json.png" alt-text="Screenshot of the text editor view of CMakePresets.json.":::
+   :::image type="content" source="media/asan-cmake-json.png" alt-text="Screenshot of the text editor view of CMakeSettings.json.":::
 
 1. Enter **Ctrl+S** to save this JSON file, then enter **F5** to recompile and run under the debugger.
 
 This screenshot captures the error from the CMake build.
 
-:::image type="content" source="./media/asan-cmake-error-f5.png" alt-text="Screenshot of the CMake build error message.":::
+:::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of the CMake build error message.":::
 
 ## <a name="crash-dumps"></a> AddressSanitizer crash dumps
 
