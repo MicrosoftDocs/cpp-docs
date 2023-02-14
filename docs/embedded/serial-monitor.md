@@ -33,8 +33,8 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 | **Line Ending** | The line ending to use in messages sent to the connected device | Use the **Line Ending** dropdown | None, LF, CR, CRLF |
 | **Timestamp** | Adds timestamps to the output of data received from the connected port | Use the **timestamp** toggle button | On/Off |
 | **Autoscroll** | Whether to auto-scroll new content that comes from the connected port | Use the **autoscroll** toggle button | On/Off |
-| **Automatic Reconnection** | Allows for automatic reconnection and monitoring of disconnected selected ports | Use the **automatic reconnection** toggle button | On/Off |
-| **Message Encoding** | Can select type of encoding for messages sent to serial port | Use the **message encoding** dropdown | Text (utf8), Hex, Binary |
+| **Automatic Reconnection** | Allows for automatic reconnection and monitoring of disconnected selected ports | Use the **automatic reconnection** toggle button in **Serial** mode | On/Off |
+| **Message Encoding** | Can select type of encoding for messages sent to serial port | Use the **message encoding** dropdown in **Serial** mode | Text (utf8), Hex, Binary |
 | **Data bits** | Can select how many data bits are used for the serial port connection | Use the **Data bits** dropdown in the **additional settings** | 5, 6, 7, 8 |
 | **Stop bits** | Can select how many stop bits are used for the serial port connection | Use the **Stop bits** dropdown in the **additional settings** | 1, 1.5, 2 |
 | **Parity** | Can select what parity is used for the serial port connection | Use the **Parity** dropdown in the **additional settings** | None, Odd, Even, Mark, Space |
@@ -74,6 +74,6 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 | **Stop bits** | Can select how many stop bits are used for the serial port connection | Use the **Stop bits** dropdown in the **additional settings** | 1, 1.5, 2 |
 | **Parity** | Can select what parity is used for the serial port connection | Use the **Parity** dropdown in the **additional settings** | None, Odd, Even, Mark, Space |
 | **File Logging** | Allows the ability to log output to a file | Use the **file logging** toggle button, as well as the **Choose Log File Directory** button to choose the desired directory in the **additional settings** | On/Off |
-| **Serial Wire Output (SWO)** | Can enable Serial Wire Output (SWO) decoding in **TCP** mode | Use the **Serial Wire Output** toggle in the **additional settings** | On/Off |
+| **Serial Wire Output (SWO)** | Can enable Serial Wire Output (SWO) decoding | Use the **Serial Wire Output** toggle in the **additional settings** in **TCP** mode | On/Off |
 
 ---
