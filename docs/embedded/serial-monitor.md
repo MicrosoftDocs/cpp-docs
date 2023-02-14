@@ -98,3 +98,5 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 | **File Logging** | Allows the ability to log output to a file | Use the **file logging** toggle button, as well as the **Choose Log File Directory** button to choose the desired directory in the **additional settings** | On/Off |
 
 ---
+
+---
