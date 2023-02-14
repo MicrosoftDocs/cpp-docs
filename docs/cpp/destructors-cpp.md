@@ -8,7 +8,7 @@ helpviewer_keywords: ["objects [C++], destroying", "destructors, C++"]
 
 A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **`delete`**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
 
-If you don't define a destructor, the compiler will provide a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
+If you don't define a destructor, the compiler provides a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
 
 Consider the following declaration of a `String` class:
 
@@ -93,7 +93,7 @@ When an object goes out of scope or is deleted, the sequence of events in its co
 
 1. The class's destructor is called, and the body of the destructor function is executed.
 
-1. Destructors for nonstatic member objects are called in the reverse order in which they appear in the class declaration. The optional member initialization list used in construction of these members does not affect the order of construction or destruction.
+1. Destructors for nonstatic member objects are called in the reverse order in which they appear in the class declaration. The optional member initialization list used in construction of these members doesn't affect the order of construction or destruction.
 
 1. Destructors for non-virtual base classes are called in the reverse order of declaration.
 
@@ -189,7 +189,7 @@ Therefore, for class `E`, the order of destruction is:
 
 This process produces an ordered list of unique entries. No class name appears twice. Once the list is constructed, it's walked in reverse order, and the destructor for each of the classes in the list from the last to the first is called.
 
-The order of construction or destruction is primarily important when constructors or destructors in one class rely on the other component being created first or persisting longer—for example, if the destructor for `A` (in the figure shown above) relied on `B` still being present when its code executed, or vice versa.
+The order of construction or destruction is primarily important when constructors or destructors in one class rely on the other component being created first or persisting longer—for example, if the destructor for `A` (in the figure shown previously) relied on `B` still being present when its code executed, or vice versa.
 
 Such interdependencies between classes in an inheritance graph are inherently dangerous because classes derived later can alter which is the leftmost path, thereby changing the order of construction and destruction.
 

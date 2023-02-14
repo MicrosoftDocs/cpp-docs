@@ -64,7 +64,7 @@ New projects have this `#define` set in *pch.h* (*stdafx.h* in Visual Studio 201
 
 Define if one or more of your objects use apartment threading.
 
-```c
+```
 _ATL_APARTMENT_THREADED
 ```
 
