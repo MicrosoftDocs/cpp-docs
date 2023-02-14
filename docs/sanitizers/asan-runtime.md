@@ -2,7 +2,7 @@
 title: "AddressSanitizer runtime"
 description: "Technical description of the AddressSanitizer runtime for Microsoft C/C++."
 ms.date: 03/02/2021
-helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "ASan runtime"]
+helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "Asan runtime"]
 ---
 
 # AddressSanitizer runtime
