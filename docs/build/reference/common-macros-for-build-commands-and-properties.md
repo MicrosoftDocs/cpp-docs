@@ -16,7 +16,7 @@ For example, in the left pane, select **Configuration Properties** > **VC++ Dire
 
 The dollar sign and parenthesis surrounding these two values indicates that they are macros. The expansion of those two macros sets the include directories to search.
 
-Select **Include Directories** and and dropdown will appear at the end of the row. Select the dropdown button, then select **Edit**. In the **Include Directories** dialog box that appears, select the **Macros>>** button.
+Select **Include Directories** and a dropdown will appear at the end of the row. Select the dropdown button, then select **Edit**. In the **Include Directories** dialog box that appears, select the **Macros>>** button.
 
 That expands the dialog to show the current set of properties and macros visible to Visual Studio, along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
 
