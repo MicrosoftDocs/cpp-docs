@@ -1,7 +1,7 @@
 ---
 title: Configure and build with CMake Presets
 description: "Reference for using CMake Presets to configure and build CMake projects."
-ms.date: 09/13/2022
+ms.date: 02/01/2023
 ms.topic: reference
 ---
 
@@ -21,22 +21,30 @@ We recommend *`CMakePresets.json`* as an alternative to *`CMakeSettings.json`*. 
 
 ## Supported CMake and  *`CMakePresets.json`* versions
 
-The supported *`CMakePresets.json`* and *`CMakeUserPresets.json`* schema versions depend on your version of Visual Studio. Visual Studio 2019 version 16.10 and later support schema versions 2 and 3. Visual Studio 2022 version 17.4 preview 2 adds support for schema versions 4 and 5. You can update the version by changing the `"version"` field in the root object. For an example and more information, see [`CMakePresets.json` format](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#format).
+The supported *`CMakePresets.json`* and *`CMakeUserPresets.json`* schema versions depend on your version of Visual Studio:
+- Visual Studio 2019 version 16.10 and later support schema versions 2 and 3.
+- Visual Studio 2022 version 17.4 preview 2 adds support for schema versions 4 and 5.
 
-CMake version 3.20 or later is required when you're invoking CMake with *`CMakePresets.json`* from the command line. However, Visual Studio reads and evaluates *`CMakePresets.json`* and *`CMakeUserPresets.json`* itself and doesn't invoke CMake directly with the `--preset` option. So, CMake version 3.20 or later isn't strictly required when you're building with *`CMakePresets.json`* inside Visual Studio. We recommend using at least CMake version 3.14 or later.
+You can update the version by changing the `"version"` field in the root object. For an example and more information, see [`CMakePresets.json` format](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#format).
+
+CMake version 3.20 or later is required when you're invoking CMake with *`CMakePresets.json`* from the command line. However, Visual Studio reads and evaluates *`CMakePresets.json`* and *`CMakeUserPresets.json`* itself and doesn't invoke CMake directly with the `--preset` option. So, CMake version 3.20 or later isn't strictly required when you're building with *`CMakePresets.json`* inside Visual Studio.
+
+We recommend using at least CMake version 3.14 or later.
 
 ## <a name="enable-cmakepresets-json-integration"></a> Enable *`CMakePresets.json`* integration in Visual Studio
 
 *`CMakePresets.json`* integration isn't enabled by default in Visual Studio. You can enable it in **Tools** > **Options** > **CMake** > **General**:
 
-![Screenshot showing the checkbox to enable CMakePresets.json on the CMake General page of the Tools Options dialog in Visual Studio 2022 version 17.1.](./media/enable-cmakepresets-new.png)
+:::image type="complex" source="./media/enable-cmakepresets-new.png" alt-text="Screenshot showing 'Always use CMakePresets.json' selected.":::
+This screen is reached from the Visual Studio 2022 menu: Tools > Options > CMake > General. The option is under the CMake configure file section.
+:::image-end:::
 
 > [!IMPORTANT]
 > Close and reopen the folder in Visual Studio to activate the integration.
 
 In some older versions of Visual Studio, **Tools** > **Options** > **CMake** > **General** only has a single option to enable *`CMakePresets.json`* integration:
 
-![Screenshot showing the checkbox to enable CMakePresets.json on the CMake General page of the Tools Options dialog in Visual Studio 2019.](./media/enable-cmakepresets.png)
+:::image type="content" source="./media/enable-cmakepresets.png" alt-text="Screenshot of an older version of Visual Studio. There is a checkbox labeled 'Use C Make Presets .json to drive CMake configure, build, and test.'":::
 
 The following table indicates when *`CMakePresets.json`* is used instead of *`CMakeSettings.json`* to drive CMake configuration and build in Visual Studio 2022 and Visual Studio 2019 version 16.10 and later. If no configuration file is present, default Configure Presets are used.
 
@@ -110,15 +118,17 @@ If you try to open or modify a *`CMakePresets.json`* file that doesn't exist, Vi
 
 ## Configure and build
 
-Visual Studio provides dropdown lists for the Target Systems, Configure Presets, and Build Presets when *`CMakePresets.json`* integration is enabled:
+On the Visual Studio toolbar, there are dropdowns for the Target Systems, Configure Presets, and Build Presets when *`CMakePresets.json`* integration is enabled:
 
-![Screenshot that shows the dropdown lists for the Target System.](./media/target-system-dropdown.png)
+:::image type="content" source="./media/target-system-dropdown.png" alt-text="Screenshot showing the dropdowns for target system set to Local Machine, configuration set to windows-arm64, and build preset set to default.":::
 
 ### Select a Target System
 
 The dropdown list on the left indicates the active *Target System*. It's the system on which CMake is invoked to configure and build the project. This dropdown list includes your local machine, all SSH connections in Connection Manager by host name, and all Windows Subsystem for Linux (WSL) installations that Visual Studio can find:
 
-![Screenshot of the selections in the dropdown list for the Target System.](./media/target-system-selections.png)
+:::image type="complex" source="./media/target-system-selections.png" alt-text="Screenshot of the Target System dropdown list":::
+The dropdown list contains several entries including Local Machine, an ip address 192.168.0.5, WSL: ubuntu2004, WSL: debian, and Manage Connections.
+:::image-end:::
 
 In the preceding example:
 
@@ -177,7 +187,7 @@ Use a forward slash (`/`) for paths in *`CMakePresets.json`* and *`CMakeUserPres
 
 To add a new Configure Preset to *`CMakePresets.json`*, from **Solution Explorer**, right-click *`CMakePresets.json`* from **Folder View** and select **Add Configuration** from the shortcut menu. The dialog to select a Configure Preset template appears:
 
-![Screenshot of the dialog for adding a Configure Preset to the J S O N file.](./media/add-configure-preset-to-cmakepresets.png)
+:::image type="content" source="./media/add-configure-preset-to-cmakepresets.png" alt-text="Screenshot of the Add Configure Preset to the JSON file dialog. It contains entries such as Linux Debug, macOS Debug, x64 Debug, and so on.":::
 
 Select the **Windows x64 Debug** template to configure on Windows systems. Select the **Linux Debug** template to configure on WSL and remote Linux systems. For more information about editing *`CMakePresets.json`*, see [Edit presets](#edit-presets).
 
@@ -474,8 +484,8 @@ The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2
 Learn more about configuring and debugging CMake projects in Visual Studio:
 
 > [!div class="nextstepaction"]
-> [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/><br/>
-> [Customize CMake build settings](customize-cmake-settings.md)<br/><br/>
-> [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/><br/>
+> [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)\
+> [Customize CMake build settings](customize-cmake-settings.md)\
+> [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)\
 > [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
 >

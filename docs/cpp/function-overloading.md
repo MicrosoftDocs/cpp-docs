@@ -1,15 +1,14 @@
 ---
 description: "Learn more about: Function Overloading"
 title: "Function Overloading"
-ms.date: 06/10/2022
+ms.date: 02/01/2023
 helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]
-ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 ---
 # Function Overloading
 
 C++ lets you specify more than one function of the same name in the same scope. These functions are called *overloaded* functions, or *overloads*. Overloaded functions enable you to supply different semantics for a function, depending on the types and number of its arguments.
 
-For example, consider a `print` function that takes a `std::string` argument. This function might perform very different tasks than a function that takes an argument of type **`double`**. Overloading keeps you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the types and number of arguments passed in by the caller. If you call `print(42.0)`, then the `void print(double d)` function is invoked. If you call `print("hello world")`, then the `void print(std::string)` overload is invoked.
+For example, consider a `print` function that takes a `std::string` argument. This function might perform very different tasks than a function that takes an argument of type `double`. Overloading keeps you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the types and number of arguments passed in by the caller. If you call `print(42.0)`, then the `void print(double d)` function is invoked. If you call `print("hello world")`, then the `void print(std::string)` overload is invoked.
 
 You can overload both member functions and free functions. The following table shows which parts of a function declaration C++ uses to differentiate between groups of functions with the same name in the same scope.
 
@@ -270,9 +269,9 @@ The sequence in which conversions are attempted is as follows:
 
    - Conversion from a pointer to a derived class, to a pointer to a direct or indirect base class is preferable to converting to `void *` or `const void *`.
 
-   - Conversion from a pointer to a derived class, to a pointer to a base class produces a better match the closer the base class is to a direct base class. Suppose the class hierarchy is as shown in the following figure.
+   - Conversion from a pointer to a derived class, to a pointer to a base class produces a better match the closer the base class is to a direct base class. Suppose the class hierarchy is as shown in the following figure:
 
-![Graph of preferred conversions.](../cpp/media/vc391t1.gif "Graph of preferred conversions")\
+:::image type="content" source="../cpp/media/vc391t1.gif" alt-text="Example class hierarchy showing that class A inherits from B which inherits from C which inherits from D.":::\
 Graph showing preferred conversions.
 
 Conversion from type `D*` to type `C*` is preferable to conversion from type `D*` to type `B*`. Similarly, conversion from type `D*` to type `B*` is preferable to conversion from type `D*` to type `A*`.
@@ -283,7 +282,7 @@ This same rule applies to pointer-to-member conversions. Conversion from type `T
 
 The preceding rule applies only along a given path of derivation. Consider the graph shown in the following figure.
 
-![Diagram of multiple inheritance that shows preferred conversions.](../cpp/media/vc391t2.gif)\
+:::image type="content" source="../cpp/media/vc391t2.gif" alt-text="Diagram of multiple inheritance that shows preferred conversions. Class C is the base class of class B and D. Class A inherits from class B":::\
 Multiple-inheritance graph that shows preferred conversions.
 
 Conversion from type `C*` to type `B*` is preferable to conversion from type `C*` to type `A*`. The reason is that they are on the same path, and `B*` is closer. However, conversion from type `C*` to type `D*` isn't preferable to conversion to type `A*`; there's no preference because the conversions follow different paths.

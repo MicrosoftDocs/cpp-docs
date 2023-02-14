@@ -3,7 +3,6 @@ description: "Learn more about: Functions (C++)"
 title: "Functions (C++)"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["defaults, arguments", "function definitions", "function definitions, about function definitions", "default arguments", "declarators, functions"]
-ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
 ---
 # Functions (C++)
 
@@ -27,15 +26,15 @@ int main()
 }
 ```
 
-There is no practical limit to function length, but good design aims for functions that perform a single well-defined task. Complex algorithms should be broken up into easy-to-understand simpler functions whenever possible.
+There's no practical limit to function length, but good design aims for functions that perform a single well-defined task. Complex algorithms should be broken up into easy-to-understand simpler functions whenever possible.
 
-Functions that are defined at class scope are called member functions. In C++, unlike other languages, a function can also be defined at namespace scope (including the implicit global namespace). Such functions are called *free functions* or *non-member functions*; they are used extensively in the Standard Library.
+Functions that are defined at class scope are called member functions. In C++, unlike other languages, a function can also be defined at namespace scope (including the implicit global namespace). Such functions are called *free functions* or *non-member functions*; they're used extensively in the Standard Library.
 
 Functions may be *overloaded*, which means different versions of a function may share the same name if they differ by the number and/or type of formal parameters. For more information, see [Function Overloading](../cpp/function-overloading.md).
 
 ## Parts of a function declaration
 
-A minimal function *declaration* consists of the return type, function name, and parameter list (which may be empty), along with optional keywords that provide additional instructions to the compiler. The following example is a function declaration:
+A minimal function *declaration* consists of the return type, function name, and parameter list (which may be empty), along with optional keywords that provide more instructions to the compiler. The following example is a function declaration:
 
 ```cpp
 int sum(int a, int b);
@@ -56,7 +55,7 @@ The required parts of a function declaration are:
 
 1. The return type, which specifies the type of the value that the function returns, or **`void`** if no value is returned. In C++11, **`auto`** is a valid return type that instructs the compiler to infer the type from the return statement. In C++14, `decltype(auto)` is also allowed. For more information, see Type Deduction in Return Types below.
 
-1. The function name, which must begin with a letter or underscore and cannot contain spaces. In general, leading underscores in the Standard Library function names indicate private member functions, or non-member functions that are not intended for use by your code.
+1. The function name, which must begin with a letter or underscore and can't contain spaces. In general, leading underscores in the Standard Library function names indicate private member functions, or non-member functions that aren't intended for use by your code.
 
 1. The parameter list, a brace delimited, comma-separated set of zero or more parameters that specify the type and optionally a local name by which the values may be accessed inside the function body.
 
@@ -94,7 +93,7 @@ Optional parts of a function declaration are:
 
    For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).
 
-1. A **`noexcept`** expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to **`true`**.
+1. A **`noexcept`** expression, which specifies whether or not the function can throw an exception. In the following example, the function doesn't throw an exception if the `is_pod` expression evaluates to **`true`**.
 
     ```cpp
     #include <type_traits>
@@ -107,16 +106,11 @@ Optional parts of a function declaration are:
 
 1. (Member functions only) The cv-qualifiers, which specify whether the function is **`const`** or **`volatile`**.
 
-1. (Member functions only) **`virtual`**, **`override`**, or **`final`**. **`virtual`** specifies that a function can be overridden in a derived class. **`override`** means that a function in a derived class is overriding a virtual function. **`final`** means a function cannot be overridden in any further derived class. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
+1. (Member functions only) **`virtual`**, **`override`**, or **`final`**. **`virtual`** specifies that a function can be overridden in a derived class. **`override`** means that a function in a derived class is overriding a virtual function. **`final`** means a function can't be overridden in any further derived class. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
 
-1. (member functions only) **`static`** applied to a member function means that the function is not associated with any object instances of the class.
+1. (member functions only) **`static`** applied to a member function means that the function isn't associated with any object instances of the class.
 
 1. (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (`*this`) is an rvalue reference vs. an lvalue reference. For more information, see [Function Overloading](function-overloading.md#ref-qualifiers).
-
-The following figure shows the parts of a function definition. The shaded area is the function body.
-
-![Diagram of the parts of a function definition.](../cpp/media/vc38ru1.gif "Parts of a function definition") <br/>
-Parts of a function definition
 
 ## Function definitions
 
@@ -149,7 +143,7 @@ Variables declared inside the body are called local variables or locals. They go
 
 ## const and constexpr functions
 
-You can declare a member function as **`const`** to specify that the function is not allowed to change the values of any data members in the class. By declaring a member function as **`const`**, you help the compiler to enforce *const-correctness*. If someone mistakenly tries to modify the object by using a function declared as **`const`**, a compiler error is raised. For more information, see [const](const-cpp.md).
+You can declare a member function as **`const`** to specify that the function isn't allowed to change the values of any data members in the class. By declaring a member function as **`const`**, you help the compiler to enforce *const-correctness*. If someone mistakenly tries to modify the object by using a function declared as **`const`**, a compiler error is raised. For more information, see [const](const-cpp.md).
 
 Declare a function as **`constexpr`** when the value it produces can possibly be determined at compile time. A constexpr function generally executes faster than a regular function. For more information, see [`constexpr`](constexpr-cpp.md).
 
@@ -172,9 +166,9 @@ For more information, see [Function Templates](../cpp/function-templates.md)
 
 ## Function parameters and arguments
 
-A function has a comma-separated parameter list of zero or more types, each of which has a name by which it can be accessed inside the function body. A function template may specify additional type or value parameters. The caller passes arguments, which are concrete values whose types are compatible with the parameter list.
+A function has a comma-separated parameter list of zero or more types, each of which has a name by which it can be accessed inside the function body. A function template may specify more type or value parameters. The caller passes arguments, which are concrete values whose types are compatible with the parameter list.
 
-By default, arguments are passed to the function by value, which means the function receives a copy of the object being passed. For large objects, making a copy can be expensive and is not always necessary. To cause arguments to be passed by reference (specifically lvalue reference), add a reference quantifier to the parameter:
+By default, arguments are passed to the function by value, which means the function receives a copy of the object being passed. For large objects, making a copy can be expensive and isn't always necessary. To cause arguments to be passed by reference (specifically lvalue reference), add a reference quantifier to the parameter:
 
 ```cpp
 void DoSomething(std::string& input){...}
@@ -199,7 +193,7 @@ A function declared with the single keyword **`void`** in the parameter declarat
 long GetTickCount( void );
 ```
 
-Note that, while it is illegal to specify a **`void`** argument except as outlined here, types derived from type **`void`** (such as pointers to **`void`** and arrays of **`void`**) can appear anywhere the argument declaration list.
+While it's illegal to specify a **`void`** argument except as outlined here, types derived from type **`void`** (such as pointers to **`void`** and arrays of **`void`**) can appear anywhere the argument declaration list.
 
 ### Default Arguments
 
@@ -232,7 +226,7 @@ A function may not return another function, or a built-in array; however it can 
 
 ### Trailing return types
 
-An "ordinary" return type is located on the left side of the function signature. A *trailing return type* is located on the right most side of the signature and is preceded by the **`->`** operator. Trailing return types are especially useful in function templates when the type of the return value depends on template parameters.
+An "ordinary" return type is located on the left side of the function signature. A *trailing return type* is located on the rightmost side of the signature and is preceded by the **`->`** operator. Trailing return types are especially useful in function templates when the type of the return value depends on template parameters.
 
 ```cpp
 template<typename Lhs, typename Rhs>
@@ -242,13 +236,13 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 }
 ```
 
-When **`auto`** is used in conjunction with a trailing return type, it just serves as a placeholder for whatever the decltype expression produces, and does not itself perform type deduction.
+When **`auto`** is used in conjunction with a trailing return type, it just serves as a placeholder for whatever the decltype expression produces, and doesn't itself perform type deduction.
 
 ## Function local variables
 
-A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the *named return value optimization* to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.
+A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they're declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the *named return value optimization* to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.
 
-In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
+In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit`. If a static object wasn't constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
 
 ## <a name="type_deduction"></a> Type deduction in return types (C++14)
 
@@ -264,7 +258,7 @@ auto Add2(const Lhs& lhs, const Rhs& rhs)
 }
 ```
 
-Note that **`auto`** does not preserve the const-ness of the type it deduces. For forwarding functions whose return value needs to preserve the const-ness or ref-ness of its arguments, you can use the **`decltype(auto)`** keyword, which uses the **`decltype`** type inference rules and preserves all the type information. **`decltype(auto)`** may be used as an ordinary return value on the left side, or as a trailing return value.
+Note that **`auto`** doesn't preserve the const-ness of the type it deduces. For forwarding functions whose return value needs to preserve the const-ness or ref-ness of its arguments, you can use the **`decltype(auto)`** keyword, which uses the **`decltype`** type inference rules and preserves all the type information. **`decltype(auto)`** may be used as an ordinary return value on the left side, or as a trailing return value.
 
 The following example (based on code from [N3493](https://wg21.link/n3493)), shows **`decltype(auto)`** being used to enable perfect forwarding of function arguments in a return type that isn't known until the template is instantiated.
 
@@ -351,7 +345,7 @@ There are various ways to return more than one value from a function:
     }
     ```
 
-1. **Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In the statement `auto[x, y, z] = f();` the brackets introduce and initialize names that are in scope for the entire function block.
+1. **Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they're declared, which in some cases can be significantly more efficient. In the statement `auto[x, y, z] = f();` the brackets introduce and initialize names that are in scope for the entire function block.
 
     ```cpp
     #include <tuple>
@@ -397,26 +391,26 @@ There are various ways to return more than one value from a function:
 
 C++ supports function pointers in the same manner as the C language. However a more type-safe alternative is usually to use a function object.
 
-It is recommended that **`typedef`** be used to declare an alias for the function pointer type if declaring a function that returns a function pointer type.  For example
+It's recommended that you use **`typedef`** to declare an alias for the function pointer type if declaring a function that returns a function pointer type. For example
 
 ```cpp
 typedef int (*fp)(int);
 fp myFunction(char* s); // function returning function pointer
 ```
 
-If this is not done, the proper syntax for the function declaration may be deduced from the declarator syntax for the function pointer by replacing the identifier (`fp` in the above example) with the functions name and argument list, as follows:
+If this isn't done, the proper syntax for the function declaration may be deduced from the declarator syntax for the function pointer by replacing the identifier (`fp` in the above example) with the functions name and argument list, as follows:
 
 ```cpp
 int (*myFunction(char* s))(int);
 ```
 
-The preceding declaration is equivalent to the declaration using **`typedef`** above.
+The preceding declaration is equivalent to the declaration using **`typedef`** earlier.
 
 ## See also
 
-[Function Overloading](../cpp/function-overloading.md)<br/>
-[Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)<br/>
-[Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)<br/>
-[Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)<br/>
-[Default Arguments](../cpp/default-arguments.md)<br/>
+[Function Overloading](../cpp/function-overloading.md)\
+[Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)\
+[Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)\
+[Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)\
+[Default Arguments](../cpp/default-arguments.md)\
 [Inline Functions](../cpp/inline-functions-cpp.md)
