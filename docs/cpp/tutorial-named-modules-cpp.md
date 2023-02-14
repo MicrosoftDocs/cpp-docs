@@ -66,7 +66,7 @@ A module consists of one or more files. One of these files must be what is calle
 
 To add a primary module interface unit, in **Solution Explorer**, right-click **Source Files** then select **Add** > **Module**.
 
-![Add item dialog in solution explorer with Add > Module... highlighted to illustrate where to click to add a module](media/add-module.png)
+![Add item dialog in solution explorer with Add > Module... highlighted to illustrate where to click to add a module.](media/add-module.png)
 
 In the **Add New Item** dialog that appears, give the new module the name *`BasicPlane.Figures.ixx`* and choose **Add**.
 

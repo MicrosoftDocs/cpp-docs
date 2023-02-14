@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Lambda Expressions in C++"
 title: "Lambda expressions in C++"
-ms.date: 07/13/2021
+ms.date: 01/30/2023
 helpviewer_keywords: ["lambda expressions [C++]", "lambda expressions [C++], overview", "lambda expressions [C++], vs. function objects"]
-ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
 ---
 # Lambda expressions in C++
 
@@ -17,7 +16,7 @@ In C++11 and later, a lambda expression—often called a *lambda*—is a conveni
 
 ## Parts of a lambda expression
 
-The ISO C++ Standard shows a simple lambda that is passed as the third argument to the `std::sort()` function:
+Here is a simple lambda that is passed as the third argument to the `std::sort()` function:
 
 ```cpp
 #include <algorithm>
@@ -33,9 +32,10 @@ void abssort(float* x, unsigned n) {
 }
 ```
 
-This illustration shows the parts of a lambda:
+This illustration shows the parts of lambda syntax:
 
 ![An illustration of the structural elements of a lambda expression.](../cpp/media/lambdaexpsyntax.png "Structural elements of a lambda expression")
+:::image type="complex" source="../cpp/media/lambdaexpsyntax.png" alt-text="Diagram that identifies the various parts of a lambda expression":::The lambda expression example is [=]() mutable throw() -> int { return x+y; } The [=] is the capture clause; also known as the lambda-introducer in the C++ specification. The parenthesis are for the parameter list. The mutable keyword is optional. throw() is the optional exception specification. -> int is the optional trailing return type. The lambda body consists of the statement inside the curly braces, or return x+y; These are explained in more detail following the image.:::image-end:::
 
 1. *capture clause* (Also known as the *lambda-introducer* in the C++ specification.)
 

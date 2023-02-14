@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Common macros for MSBuild commands and properties"
 title: "Common macros for MSBuild commands and properties"
-ms.date: 03/15/2022
+ms.date: 02/13/2023
 helpviewer_keywords: ["$(FrameworkSDKDir) macro", "ProjectName macro $(ProjectName)", "DevEnvDir macro $(DevEnvDir)", "$(DevEnvDir) macro", "TargetPath macro $(TargetPath)", "VSInstallDir macro $(VSInstallDir)", "$(InputFileName) macro", "$(SolutionFileName) macro", "macros [C++], build macros", "InputFileName macro $(InputFileName)", "$(VCInstallDir) macro", "$(IntDir) macro", "$(ConfigurationName) macro", "SolutionDir macro $(SolutionDir)", "$(TargetPath) macro", "$(Inherit) macro", "$(SolutionPath) macro", "WebDeployRoot macro $(WebDeployRoot)", "WebDeployPath macro $(WebDeployPath)", "StopEvaluating macro $(StopEvaluating)", "$(RootNamespace) macro", "$(WebDeployRoot) macro", "ProjectPath macro $(ProjectPath)", "$(ProjectPath) macro", "$(InputDir) macro", "SolutionName macro $(SolutionName)", "ProjectExt macro $(ProjectExt)", "$(TargetExt) macro", "$(ProjectFileName) macro", "TargetName macro $(TargetName)", "$(References) macro", "References macro $(References)", "TargetExt macro $(TargetExt)", "ProjectDir macro $(ProjectDir)", "$(TargetDir) macro", "SolutionExt macro $(SolutionExt)", "$(SolutionDir) macro", "ProjectFileName macro $(ProjectFileName)", "VCInstallDir macro $(VCInstallDir)", "$(InputExt) macro", "$(TargetFileName) macro", "$(SolutionExt) macro", "PlatformName macro $(PlatformName)", "IntDir macro $(IntDir)", "$(FrameworkVersion) macro", "$(ProjectDir) macro", "build macros [C++]", "InputPath macro $(InputPath)", "$(VSInstallDir) macro", "$(WebDeployPath) macro", "TargetFileName macro $(TargetFileName)", "NoInherit macro $(NoInherit)", "ConfigurationName macro $(ConfigurationName)", "$(ProjectExt) macro", "TargetDir macro $(TargetDir)", "InputName macro $(InputName)", "$(ProjectName) macro", "FrameworkSDKDir macro $(FrameworkSDKDir)", "$(ParentName) macro", "InputExt macro $(InputExt)", "$(SafeRootNamespace) macro", "InputDir macro $(InputDir)", "$(FxCopDir) macro", "$(RemoteMachine) macro", "Inherit macro $(Inherit)", "FrameworkVersion macro $(FrameworkVersion)", "$(StopEvaluating) macro", "$(OutDir) macro", "FrameworkDir macro $(FrameworkDir)", "SolutionFileName macro $(SolutionFileName)", "$(NoInherit) macro", "RemoteMachine macro $(RemoteMachine)", "properties [C++], build property macros", "$(TargetName) macro", "$(SolutionName) macro", "$(InputPath) macro", "ParentName macro $(ParentName)", "OutDir macro $(OutDir)", "SafeRootNamespace macro $(SafeRootNamespace)", "FxCopDir macro $(FxCopDir)", "$(InputName) macro", "RootNamespace macro $(RootNamespace)", "builds [C++], macros", "$(FrameworkDir) macro", "$(PlatformName) macro", "$(PlatformShortName) macro","SolutionPath macro $(SolutionPath)"]
-ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
 ---
 # Common macros for MSBuild commands and properties
 
@@ -11,9 +10,19 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 
 ## View the current properties and macros
 
-To display all of the currently available macros, in the **Property Pages** dialog, under **VC++ Directories**, choose the drop-down arrow at the end of a property row. Select **Edit** and then in the Edit dialog box, choose the **Macros** button. The current set of properties and macros visible to Visual Studio is listed along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
+To display all of the currently available macros, open the project property pages from the main menu by selecting **Project** > **Properties**. In the **Property Pages** dialog, choose an entry that has a macro in it. You can recognize a macro by the dollar sign and parenthesis that surround its name. 
 
-![Screenshot of the Library Directories dialog after choosing the Macros button.](../media/vcppdir_libdir_macros.png "Macros menu")
+For example, in the left pane, select **Configuration Properties** > **VC++ Directories**, and then in the right pane, select **Include directories**. The value for **Include directories** is `$(VC_IncludePath);$(WindowsSDK_IncludePath);`.
+
+The dollar sign and parenthesis surrounding these two values indicates that they are macros. The expansion of those two macros sets the include directories to search.
+
+Select **Include Directories** and a dropdown will appear at the end of the row. Select the dropdown button, then select **Edit**. In the **Include Directories** dialog box that appears, select the **Macros>>** button.
+
+That expands the dialog to show the current set of properties and macros visible to Visual Studio, along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
+
+:::image type="complex" source="../media/vcppdir_libdir_macros.png" alt-text="Screenshot of the Visual Studio Include Directories dialog after choosing the Macros button.":::
+On the right is a list of Visual Studio macros such as $(AllowLocalNetworkLoopback). The left pane shows the evaluated value of the include directory property. The bottom pane shows which macros were expanded, if any, to produce the include directory property value. Because the Include Directories macro is a combination of two other macros, $(VC_IncludePath) and $(WindowsSDK_IncludePath), the bottom pane, labeled Inherited values, lists those two macros.
+:::image-end:::
 
 ## List of common macros
 
@@ -56,7 +65,7 @@ This table describes a commonly used subset of the available macros; there are m
 
 ## Obsolete macros
 
-The build system for C++ was changed significantly between Visual Studio 2008 and Visual Studio 2010. Many macros used in earlier project types have been changed to new ones. These macros are no longer used or have been replaced by one or more equivalent properties or [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**`%(item-name)`**) values. Macros that are marked "migrated" can be updated by the project migration tool. If the project that contains the macro is migrated from Visual Studio 2008 or earlier to Visual Studio 2010, Visual Studio converts the macro to the equivalent current macro. Later versions of Visual Studio can't convert projects from Visual Studio 2008 and earlier to the new project type. You must convert these projects in two steps; first convert them to Visual Studio 2010, and then convert the result to your newer version of Visual Studio. For more information, see [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
+The build system for C++ was changed significantly between Visual Studio 2008 and Visual Studio 2010. Many macros used in earlier project types have been changed to new ones. These macros are no longer used or have been replaced by one or more equivalent properties or [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**`%(item-name)`**) values. Macros marked "migrated" can be updated by the project migration tool. If a project containing the macro is migrated from Visual Studio 2008 or earlier to Visual Studio 2010, Visual Studio converts the macro to the equivalent current macro. Later versions of Visual Studio can't convert projects from Visual Studio 2008 and earlier to the new project type. You must convert these projects in two steps; first convert them to Visual Studio 2010, and then convert the result to your newer version of Visual Studio. For more information, see [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
 
 | Macro | Description |
 |--|--|
