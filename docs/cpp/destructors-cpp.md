@@ -3,13 +3,12 @@ description: "Learn more about: Destructors (C++)"
 title: "Destructors (C++)"
 ms.date: "07/20/2019"
 helpviewer_keywords: ["objects [C++], destroying", "destructors, C++"]
-ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 ---
 # Destructors (C++)
 
 A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **`delete`**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
 
-If you do not define a destructor, the compiler will provide a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
+If you don't define a destructor, the compiler provides a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
 
 Consider the following declaration of a `String` class:
 
@@ -58,13 +57,13 @@ Destructors are functions with the same name as the class but preceded by a tild
 
 Several rules govern the declaration of destructors. Destructors:
 
-- Do not accept arguments.
+- Don't accept arguments.
 
-- Do not return a value (or **`void`**).
+- Don't return a value (or **`void`**).
 
-- Cannot be declared as **`const`**, **`volatile`**, or **`static`**. However, they can be invoked for the destruction of objects declared as **`const`**, **`volatile`**, or **`static`**.
+- Can't be declared as **`const`**, **`volatile`**, or **`static`**. However, they can be invoked for the destruction of objects declared as **`const`**, **`volatile`**, or **`static`**.
 
-- Can be declared as **`virtual`**. Using virtual destructors, you can destroy objects without knowing their type — the correct destructor for the object is invoked using the virtual function mechanism. Note that destructors can also be declared as pure virtual functions for abstract classes.
+- Can be declared as **`virtual`**. Using virtual destructors, you can destroy objects without knowing their type—the correct destructor for the object is invoked using the virtual function mechanism. Destructors can also be declared as pure virtual functions for abstract classes.
 
 ## Using destructors
 
@@ -84,9 +83,9 @@ Destructors can freely call class member functions and access class member data.
 
 There are two restrictions on the use of destructors:
 
-- You cannot take its address.
+- You can't take its address.
 
-- Derived classes do not inherit the destructor of their base class.
+- Derived classes don't inherit the destructor of their base class.
 
 ## Order of destruction
 
@@ -94,7 +93,7 @@ When an object goes out of scope or is deleted, the sequence of events in its co
 
 1. The class's destructor is called, and the body of the destructor function is executed.
 
-1. Destructors for nonstatic member objects are called in the reverse order in which they appear in the class declaration. The optional member initialization list used in construction of these members does not affect the order of construction or destruction.
+1. Destructors for nonstatic member objects are called in the reverse order in which they appear in the class declaration. The optional member initialization list used in construction of these members doesn't affect the order of construction or destruction.
 
 1. Destructors for non-virtual base classes are called in the reverse order of declaration.
 
@@ -140,8 +139,9 @@ B1 dtor
 
 Destructors for virtual base classes are called in the reverse order of their appearance in a directed acyclic graph (depth-first, left-to-right, postorder traversal). the following figure depicts an inheritance graph.
 
-![Inheritance graph that shows virtual base classes.](../cpp/media/vc392j1.gif "Inheritance graph that shows virtual base classes") <br/>
-Inheritance graph that shows virtual base classes
+:::image type="complex" source="../cpp/media/vc392j1.gif" alt-text="Inheritance graph that shows virtual base classes.":::
+Five classes, labeled A through E, are arranged in an inheritance graph. Class E is the base class of B, C, and D. Classes C and D are the base class of A and B.
+:::image-end:::
 
 The following lists the class heads for the classes shown in the figure.
 
@@ -161,9 +161,9 @@ To determine the order of destruction of the virtual base classes of an object o
 
 1. Revisit the previous node (down and to the right) to find out whether the node being remembered is a virtual base class.
 
-1. If the remembered node is a virtual base class, scan the list to see whether it has already been entered. If it is not a virtual base class, ignore it.
+1. If the remembered node is a virtual base class, scan the list to see whether it has already been entered. If it isn't a virtual base class, ignore it.
 
-1. If the remembered node is not yet in the list, add it to the bottom of the list.
+1. If the remembered node isn't yet in the list, add it to the bottom of the list.
 
 1. Traverse the graph up and along the next path to the right.
 
@@ -187,9 +187,9 @@ Therefore, for class `E`, the order of destruction is:
 
 1. The virtual base class `A`.
 
-This process produces an ordered list of unique entries. No class name appears twice. Once the list is constructed, it is walked in reverse order, and the destructor for each of the classes in the list from the last to the first is called.
+This process produces an ordered list of unique entries. No class name appears twice. Once the list is constructed, it's walked in reverse order, and the destructor for each of the classes in the list from the last to the first is called.
 
-The order of construction or destruction is primarily important when constructors or destructors in one class rely on the other component being created first or persisting longer — for example, if the destructor for `A` (in the figure shown above) relied on `B` still being present when its code executed, or vice versa.
+The order of construction or destruction is primarily important when constructors or destructors in one class rely on the other component being created first or persisting longer—for example, if the destructor for `A` (in the figure shown previously) relied on `B` still being present when its code executed, or vice versa.
 
 Such interdependencies between classes in an inheritance graph are inherently dangerous because classes derived later can alter which is the leftmost path, thereby changing the order of construction and destruction.
 
@@ -206,7 +206,7 @@ In the preceding example, the destructor for `Base2` is called before the destru
 
 ## Explicit destructor calls
 
-Calling a destructor explicitly is seldom necessary. However, it can be useful to perform cleanup of objects placed at absolute addresses. These objects are commonly allocated using a user-defined **`new`** operator that takes a placement argument. The **`delete`** operator cannot deallocate this memory because it is not allocated from the free store (for more information, see [The new and delete Operators](../cpp/new-and-delete-operators.md)). A call to the destructor, however, can perform appropriate cleanup. To explicitly call the destructor for an object, `s`, of class `String`, use one of the following statements:
+Calling a destructor explicitly is seldom necessary. However, it can be useful to perform cleanup of objects placed at absolute addresses. These objects are commonly allocated using a user-defined **`new`** operator that takes a placement argument. The **`delete`** operator can't deallocate this memory because it isn't allocated from the free store (for more information, see [The new and delete Operators](../cpp/new-and-delete-operators.md)). A call to the destructor, however, can perform appropriate cleanup. To explicitly call the destructor for an object, `s`, of class `String`, use one of the following statements:
 
 ```cpp
 s.String::~String();     // non-virtual call
@@ -222,7 +222,7 @@ The notation for explicit calls to destructors, shown in the preceding, can be u
 
 A class needs a destructor if it acquires a resource, and to manage the resource safely it probably has to implement a copy constructor and a copy assignment.
 
-If these special functions are not defined by the user, they are implicitly defined by the compiler. The implicitly generated constructors and assignment operators perform shallow, memberwise copy, which is almost certainly wrong if an object is managing a resource.
+If these special functions aren't defined by the user, they're implicitly defined by the compiler. The implicitly generated constructors and assignment operators perform shallow, memberwise copy, which is almost certainly wrong if an object is managing a resource.
 
 In the next example, the implicitly generated copy constructor will make the pointers `str1.text` and `str2.text` refer to the same memory, and when we return from `copy_strings()`, that memory will be deleted twice, which is undefined behavior:
 
