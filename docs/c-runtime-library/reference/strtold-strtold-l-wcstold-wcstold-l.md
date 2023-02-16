@@ -6,7 +6,7 @@ api_name: ["wcstold", "strtold", "_strtold_l", "_wcstold_l", "_o__strtold_l", "_
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_tcstold_l", "_wcstold_l", "_tcstold", "strtold", "_strtold_l", "wcstold"]
+f1_keywords: ["STDLIB/strtold", "STDLIB/_strtold_l", "CORECRT_WSTDLIB/wcstold", "CORECRT_WSTDLIB/_wcstold_l", "TCHAR/_tcstold", "TCHAR/_tcstold_l", "strtold", "_strtold_l", "wcstold", "_wcstold_l", "_tcstold", "_tcstold_l"]
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
 ---
 # `strtold`, `_strtold_l`, `wcstold`, `_wcstold_l`
