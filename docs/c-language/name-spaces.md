@@ -14,19 +14,19 @@ The compiler sets up "name spaces" to distinguish between the identifiers used f
 
 This list describes the name spaces used in C.
 
-Statement labels
+**Statement labels**\
 Named statement labels are part of statements. Definitions of statement labels are always followed by a colon but are not part of **`case`** labels. Uses of statement labels always immediately follow the keyword **`goto`**. Statement labels do not have to be distinct from other names or from label names in other functions.
 
-Structure, union, and enumeration tags
+**Structure, union, and enumeration tags**\
 These tags are part of structure, union, and enumeration type specifiers and, if present, always immediately follow the reserved words **`struct`**, **`union`**, or **`enum`**. The tag names must be distinct from all other structure, enumeration, or union tags with the same visibility.
 
-Members of structures or unions
+**Members of structures or unions**\
 Member names are allocated in name spaces associated with each structure and union type. That is, the same identifier can be a component name in any number of structures or unions at the same time. Definitions of component names always occur within structure or union type specifiers. Uses of component names always immediately follow the member-selection operators (**->** and **.**). The name of a member must be unique within the structure or union, but it does not have to be distinct from other names in the program, including the names of members of different structures and unions, or the name of the structure itself.
 
-Ordinary identifiers
+**Ordinary identifiers**\
 All other names fall into a name space that includes variables, functions (including formal parameters and local variables), and enumeration constants. Identifier names have nested visibility, so you can redefine them within blocks.
 
-Typedef names
+**Typedef names**\
 Typedef names cannot be used as identifiers in the same scope.
 
 For example, since structure tags, structure members, and variable names are in three different name spaces, the three items named `student` in this example do not conflict. The context of each item allows correct interpretation of each occurrence of `student` in the program. (For information about structures, see [Structure Declarations](../c-language/structure-declarations.md).)

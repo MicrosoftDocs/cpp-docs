@@ -6,7 +6,7 @@ api_name: ["strtol", "wcstol", "_strtol_l", "_wcstol_l", "_o__strtol_l", "_o__wc
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_wcstol_l", "strtol", "_tcstol", "wcstol", "_strtol_l", "_tcstol_l"]
+f1_keywords: ["STDLIB/strtol", "STDLIB/_strtol_l", "CORECRT_WSTDLIB/wcstol", "CORECRT_WSTDLIB/_wcstol_l", "TCHAR/_tcstol", "TCHAR/_tcstol_l", "strtol", "_strtol_l", "wcstol", "_wcstol_l", "_tcstol", "_tcstol_l"]
 helpviewer_keywords: ["wcstol function", "wcstol_l function", "_tcstol function", "string conversion, to integers", "tcstol function", "strtol_l function", "_wcstol_l function", "_strtol_l function", "strtol function"]
 no-loc: [strtol, wcstol, _strtol_l, _wcstol_l, LONG_MAX, LONG_MIN, errno, ERANGE, EINVAL, LC_NUMERIC, _tcstol, _tcstol_l, localeconv, setlocale, _wsetlocale, strtod, _strtod_l, wcstod, _wcstod_l, strtoll, _strtoll_l, wcstoll, _wcstoll_l, strtoul, _strtoul_l, wcstoul, _wcstoul_l, atof, _atof_l, _wtof, _wtof_l]
 ---
