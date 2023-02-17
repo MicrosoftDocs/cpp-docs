@@ -6,7 +6,7 @@ api_name: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l", "
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_mbstok", "strtok", "_tcstok", "wcstok"]
+f1_keywords: ["STRING/strtok", "TCHAR/_strtok_l", "MBSTRING/_mbstok", "MBSTRING/_mbstok_l", "CORECRT_WSTRING/wcstok", "TCHAR/_wcstok_l", "TCHAR/_tcstok", "TCHAR/_tcstok_l", "strtok", "strtok_l", "_mbstok", "_mbstok_l", "wcstok", "_wcstok_l", "_tcstok", "_tcstok_l"]
 helpviewer_keywords: ["mbstok_l function", "strings [C++], searching", "tcstok function", "_tcstok function", "_strtok_l function", "strtok function", "mbstok function", "wcstok_l function", "_mbstok function", "tcstok_l function", "tokens, finding in strings", "_mbstok_l function", "wcstok function", "_wcstok_l function", "_tcstok_l function", "strtok_l function"]
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
 ---
@@ -24,12 +24,12 @@ char *strtok(
    char *strToken,
    const char *strDelimit
 );
-char *strtok_l(
+char *_strtok_l(
    char *strToken,
    const char *strDelimit,
    _locale_t locale
 );
-wchar_t *wcstok(
+wchar_t *wcstok( /* Non-standard, define _CRT_NON_CONFORMING_WCSTOK to use */
    wchar_t *strToken,
    const wchar_t *strDelimit
 );
@@ -38,7 +38,7 @@ wchar_t *wcstok(
    const wchar_t *strDelimit,
    wchar_t **context
 );
-wchar_t *wcstok_l(
+wchar_t *_wcstok_l(
    wchar_t *strToken,
    const wchar_t *strDelimit,
    _locale_t locale
