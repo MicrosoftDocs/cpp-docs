@@ -34,7 +34,9 @@ void abssort(float* x, unsigned n) {
 
 This illustration shows the parts of lambda syntax:
 
-:::image type="complex" source="../cpp/media/lambdaexpsyntax.png" alt-text="Diagram that identifies the various parts of a lambda expression":::The lambda expression example is [=]() mutable throw() -> int { return x+y; } The [=] is the capture clause; also known as the lambda-introducer in the C++ specification. The parenthesis are for the parameter list. The mutable keyword is optional. throw() is the optional exception specification. -> int is the optional trailing return type. The lambda body consists of the statement inside the curly braces, or return x+y; These are explained in more detail following the image.:::image-end:::
+:::image type="complex" source="../cpp/media/lambdaexpsyntax.png" alt-text="Diagram that identifies the various parts of a lambda expression.":::
+The lambda expression example is [=]() mutable throw() -> int { return x+y; } The [=] is the capture clause; also known as the lambda-introducer in the C++ specification. The parenthesis are for the parameter list. The mutable keyword is optional. throw() is the optional exception specification. -> int is the optional trailing return type. The lambda body consists of the statement inside the curly braces, or return x+y; These are explained in more detail following the image.
+:::image-end:::
 
 1. *capture clause* (Also known as the *lambda-introducer* in the C++ specification.)
 
