@@ -61,7 +61,7 @@ The following rules apply to constexpr functions:
 
 - A **`constexpr`** function can be recursive.
 
-- It can't be [virtual](../cpp/virtual-cpp.md). A constructor can't be defined as **`constexpr`** when the enclosing class has any virtual base classes.
+- Before C++20 it couldn't be [virtual](../cpp/virtual-cpp.md). A constructor couldn't be defined as **`constexpr`** when the enclosing class had any virtual base classes. Visual C++ supports **`constexpr`**  virtual functions since Visual Studio 2019 16.10.
 
 - The body can be defined as `= default` or `= delete`.
 
