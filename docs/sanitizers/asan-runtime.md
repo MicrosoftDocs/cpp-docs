@@ -93,6 +93,10 @@ For more information, see the [Differences with Clang 12.0](asan.md#differences)
   - If set to `"protect"`, the runtime attempts to avoid using the overwritten definition and proceeds. Effectively, the original `memoryapi` definition of the function is used from inside the runtime to avoid infinite recursion. Other modules in the process still use the overwritten definition.
   - If set to `"ignore"`, the runtime doesn't attempt to correct any overwritten functions and proceeds with execution.
 
+- `windows_fast_fail_on_error`
+Boolean (false by default), set to `true` to enable the process to terminate with a __fastfail(71) after printing the error report.
+>[!NOTE]
+>When abort_on_error value is set to true, on Windows the program terminates with an exit(3). In order to not change current behavior we decided to introduce this new option instead. If both abort_on_error and windows_fast_fail_on_error are true, the program will exit with the __fastfail.
 
 ## <a name="intercepted_functions"></a> AddressSanitizer list of intercepted functions (Windows)
 
