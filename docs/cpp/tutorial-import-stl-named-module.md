@@ -1,13 +1,13 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
-ms.date: 12/02/2022
+ms.date: 2/23/2023
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
 helpviewer_keywords: ["modules [C++]", "modules [C++]", "named modules [C++], import standard library (STL) using named modules"]
-description: Learn how to import the C++ standard library (STL) using modules
+description: Learn how to import the C++ standard library (STL) using modules from the command line
 ---
-# Tutorial: Import the C++ standard library using modules from the Command Line
+# Tutorial: Import the C++ standard library using modules from the command line
 
 Learn how to import the C++ standard library using C++ library modules. This is significantly faster to compile and more robust than using header files or header units or precompiled headers (PCH).
 
@@ -32,8 +32,8 @@ It's now possible to import the standard library as a module instead of as a tan
 
 The C++23 standard library introduces two named modules: `std` and `std.compat`.
 
-- `std` exports the declarations and names defined in the C++ standard library namespace `std` such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cmath>`, `<cstdio>`, `<cstdlib>` that provides `std::byte`, `std::printf()`, and so on. The C functions defined in the *global namespace* such as `::printf()` and `::fopen` aren't exported. This improves the situation where previously including a C wrapper header like `<cstdio>`, which provides `std::` qualified versions of the C runtime functions, *also* included the actual C header like `stdio.h`, which brought in the C global namespace versions. This is no longer a problem if you import `std`.
-- `std.compat` exports everything in `std`, and adds the global namespace counterparts of the C runtime such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. This module makes it easier when working with a codebase that refers to many C runtime functions/types in the global namespace.
+- `std` exports the declarations and names defined in the C++ standard library namespace `std` such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cstdio>` and `<cstdlib>`, which provide functions like `std::printf()`. C functions defined in the *global namespace*, such as `::printf()`, aren't exported. This improves the situation where including a C wrapper header like `<cstdio>` *also* included C header files like `stdio.h`, which brought in the C global namespace versions. This is no longer a problem if you import `std`.
+- `std.compat` exports everything in `std` and adds the global namespace counterparts of the C runtime such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. This module makes it easier to work with a codebase that refers to many C runtime functions/types in the global namespace.
 
 The compiler imports the entire standard library when you use `import std;` or `import std.compat;` and does it faster than bringing in a single header file. That is, it's faster to bring in the entire standard library with `import std;` (or `import std.compat`) than it's to `#include <vector>`, for example.
 
