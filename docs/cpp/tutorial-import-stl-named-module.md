@@ -60,7 +60,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 ### Example: `std`
 
 1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell. If you use PowerShell, substitute `"$Env:VCToolsInstallDir\modules\std.ixx"` for `"%VCToolsInstallDir\modules\std.ixx"`.
-1. Create a directory, such as `C:\{user}\projects\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
+1. Create a directory, such as `C:\{username}\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
 1. Compile the `std` named module with the following command:
 
     ```dos
@@ -138,7 +138,7 @@ The `std.compat` named module is a compatibility layer provided to ease migratin
 Before you can use `import std.compat;` in your code, you must compile the named module `std.compat.ixx`. The steps are similar to for building the `std` named module. The steps include building the `std` named module first because `std.compat` depends on it:
 
 1. Open a Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. If you use the wrong version of the prompt, you'll get compiler errors.
-1. Create a directory to try this example, such as `C:\{user}\projects\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
+1. Create a directory to try this example, such as `C:\{username}\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
 1. Compile the `std` and `std.compat` named modules with the following command:
 
     ```dos
