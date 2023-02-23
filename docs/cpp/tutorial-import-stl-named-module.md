@@ -41,7 +41,7 @@ Because named modules don't expose macros, macros like `assert`, `errno`, `offse
 
 ## A little about C++ modules
 
-Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they are reprocessed by every source file that includes them.
+Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they're reprocessed by every source file that includes them.
 
 C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules for the standard library.
 
@@ -53,7 +53,7 @@ This article demonstrates the new and best way to consume the standard library. 
 
 ## Import the standard library with `std`
 
-The following examples demonstrates how to consume the standard library as a module using the command line compiler. The Visual Studio IDE experience for importing the standard library as a module is being implemented.
+The following examples demonstrate how to consume the standard library as a module using the command line compiler. The Visual Studio IDE experience for importing the standard library as a module is being implemented.
 
 The statement `import std;` or `import std.compat;` imports the standard library into your application. But first, you must compile the standard library named modules. The following steps demonstrate how.
 
@@ -71,7 +71,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
     You should compile the `std` named module using the same compiler settings that you intend to use with the code that imports it. If you have a multi-project solution, you can compile the standard library named module once, and then refer to it from all of your projects by using the [`/reference`](../build/reference/module-reference.md) compiler option.
 
-    Using the compiler command above, the compiler outputs two files:
+    Using the previous compiler command, the compiler outputs two files:
     - `std.ifc` is the compiled binary representation of the named module interface that the compiler consults to process the `import std;` statement. This is a compile-time only artifact. It doesn't ship with your application.
     - `std.obj` contains the implementation of the named module. Add `std.obj` to the command line when you compile the sample app to statically link the functionality you use from the standard library into your application.
 
@@ -131,13 +131,13 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
 The C++ standard library includes the ISO C standard library. The `std.compat` module provides all of the functionality of the `std` module like `std::vector`, `std::cout`, `std::printf`, `std::scanf`, and so on. But it also provides the global namespace versions of these functions such as `::printf`, `::scanf`, `::fopoen`, `::size_t`, and so on.
 
-The `std.compat` named module is a compatibility layer provided to ease migrating existing code that refers to C runtime functions in the global namespace. If you want to avoid adding names to the global namespace, use `import std;`. If you need to ease migrating a codebase that uses many unqualified (that is, global namespace) C runtime functions, use `import std.compat;`. This provides the global namespace C runtime names so that you don't have to qualify all the global name mentions with `std::`. If you don't have any existing code that uses the global namespace C runtime functions, then you don't need to use `import std.compat;`. If you only call a few C runtime functions in your code, it may be better to use `import std;` and qualify the few global namespace C runtime names that need it with `std::`, for example, `std::printf()`. You'll know that you should consider using `import std.compat;` if you see an error like `error C3861: 'printf': identifier not found` when you try to compile your code.
+The `std.compat` named module is a compatibility layer provided to ease migrating existing code that refers to C runtime functions in the global namespace. If you want to avoid adding names to the global namespace, use `import std;`. If you need to ease migrating a codebase that uses many unqualified (that is, global namespace) C runtime functions, use `import std.compat;`. This provides the global namespace C runtime names so that you don't have to qualify all the global name mentions with `std::`. If you don't have any existing code that uses the global namespace C runtime functions, then you don't need to use `import std.compat;`. If you only call a few C runtime functions in your code, it may be better to use `import std;` and qualify the few global namespace C runtime names that need it with `std::`, for example, `std::printf()`. If you see an error like `error C3861: 'printf': identifier not found` when you try to compile your code, consider using `import std.compat;` to import the global namespace C runtime functions.
 
 ### Example: `std.compat`
 
 Before you can use `import std.compat;` in your code, you must compile the named module `std.compat.ixx`. The steps are similar to for building the `std` named module. The steps include building the `std` named module first because `std.compat` depends on it:
 
-1. Open a Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. If you use the wrong version of the prompt, you'll get compiler errors.
+1. Open a Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get compiler errors if you use the wrong version of the prompt.
 1. Create a directory to try this example, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
 1. Compile the `std` and `std.compat` named modules with the following command:
 
@@ -192,7 +192,7 @@ Before you can use `import std.compat;` in your code, you must compile the named
 
     I've shown them as separate steps in this tutorial because you only need to build the standard library named modules once, and then you can refer to them from your project, or from multiple projects. But it may be convenient to build them all at once.
 
-     The compiler command above produces an executable named `stdCompatExample.exe`. When you run it, it produces the following output:
+     The previous compiler command produces an executable named `stdCompatExample.exe`. When you run it, it produces the following output:
 
     ```output
     Import std.compat to get global names like printf()
