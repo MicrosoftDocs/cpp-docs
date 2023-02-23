@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Import the standard library (STL) using modules from the Command Line (C++)"
+title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
 ms.date: 12/02/2022
 ms.topic: "tutorial"
 author: "tylermsft"
