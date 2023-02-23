@@ -181,7 +181,7 @@ virtual BOOL ReadString(CString& rString);
 Specifies a pointer to a user-supplied buffer that will receive a null-terminated text string.
 
 *`nMax`*<br/>
-Specifies the maximum number of characters to read, not counting the terminating null character.
+Specifies the maximum number of characters to write into the *`lpsz`* buffer, including the terminating null.
 
 *`rString`*<br/>
 A reference to a `CString` object that will contain the string when the function returns.
