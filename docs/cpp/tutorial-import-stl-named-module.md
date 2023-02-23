@@ -32,7 +32,7 @@ It's now possible to import the standard library as a module instead of as a tan
 
 The C++23 standard library introduces two named modules: `std` and `std.compat`.
 
-- `std` exports the declarations and names defined in the C++ standard library that are in namespace `std` such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cmath>`, `<cstdio>`, `<cstdlib>` that provide `std::byte`, `std::printf()`, and so on. The C functions defined in the *global namespace* such as `::printf()` and `::fopen` aren't exported. This improves the situation where previously including a C wrapper header like `<cstdio>` which provides `std::` qualified versions of the C runtime functions *also* included the actual C header, like `stdio.h`, which meant the C global namespace versions were also brought in. This is no longer a problem if you import `std`.
+- `std` exports the declarations and names defined in the C++ standard library namespace `std` such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cmath>`, `<cstdio>`, `<cstdlib>` that provides `std::byte`, `std::printf()`, and so on. The C functions defined in the *global namespace* such as `::printf()` and `::fopen` aren't exported. This improves the situation where previously including a C wrapper header like `<cstdio>`, which provides `std::` qualified versions of the C runtime functions, *also* included the actual C header like `stdio.h`, which brought in the C global namespace versions. This is no longer a problem if you import `std`.
 - `std.compat` exports everything in `std`, and adds the global namespace counterparts of the C runtime such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. This module makes it easier when working with a codebase that refers to many C runtime functions/types in the global namespace.
 
 The compiler imports the entire standard library when you use `import std;` or `import std.compat;` and does it faster than bringing in a single header file. That is, it's faster to bring in the entire standard library with `import std;` (or `import std.compat`) than it's to `#include <vector>`, for example.
@@ -41,11 +41,11 @@ Because named modules don't expose macros, macros like `assert`, `errno`, `offse
 
 ## A little about C++ modules
 
-Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they have to be reprocessed by every source file that includes them.
+Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they are reprocessed by every source file that includes them.
 
 C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules for the standard library.
 
-Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which you import them. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Macro definitions defined in a named module aren't exposed, nor are private implementation details.
+Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which you import them. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Named modules don't expose macro definitions or private implementation details.
 
 For in depth information about modules, see [Overview of modules in C++](modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it.
 
@@ -53,9 +53,9 @@ This article demonstrates the new and best way to consume the standard library. 
 
 ## Import the standard library with `std`
 
-The following examples demonstrates how to consume the standard library as a module using the command line compiler. The Visual Studio IDE experience for importing the standard library as a module is still being implemented.
+The following examples demonstrates how to consume the standard library as a module using the command line compiler. The Visual Studio IDE experience for importing the standard library as a module is being implemented.
 
-The standard library is imported into your application with the statement `import std;` or `import std.compat;`. But first, you must compile the standard library named modules. The following steps demonstrate how.
+The statement `import std;` or `import std.compat;` imports the standard library into your application. But first, you must compile the standard library named modules. The following steps demonstrate how.
 
 ### Example: `std`
 
@@ -73,7 +73,7 @@ The standard library is imported into your application with the statement `impor
 
     Using the compiler command above, the compiler outputs two files:
     - `std.ifc` is the compiled binary representation of the named module interface that the compiler consults to process the `import std;` statement. This is a compile-time only artifact. It doesn't ship with your application.
-    - `std.obj` contains the implementation of the named module. Add `std.obj` to the command line when you compile the sample app so that functionality you use from the standard library can be statically linked into your application.
+    - `std.obj` contains the implementation of the named module. Add `std.obj` to the command line when you compile the sample app to statically link the functionality you use from the standard library into your application.
 
     The key command-line switches in this example are:
 
@@ -153,7 +153,7 @@ Before you can use `import std.compat;` in your code, you must compile the named
     - `std.ifc` is the compiled binary named module interface that the compiler consults to process the `import std;` statement. The compiler also consults `std.ifc` to process `import std.compat;` because `std.compat` builds on `std`. This is a compile-time only artifact. It doesn't ship with your application.
     - `std.obj` contains the implementation of the standard library.
     - `std.compat.ifc` is the compiled binary named module interface that the compiler consults to process the `import std.compat;` statement. This is a compile-time only artifact. It doesn't ship with your application.
-    - `std.compat.obj` contains implementation. However, most of the implementation is provided by `std.obj`. Add `std.obj` to the command line as well when you compile the sample app so that the functionality you use from the standard library can be statically linked into your application.
+    - `std.compat.obj` contains implementation. However, most of the implementation is provided by `std.obj`. Add `std.obj` to the command line when you compile the sample app to statically link the functionality that you use from the standard library into your application.
 
 1. To try out importing the `std.compat` library, create a file named `stdCompatExample.cpp` with the following content:
 
