@@ -145,7 +145,7 @@ If you don't define the `"type"`, the `"STRING"` type is assumed by default.
 
 ## <a name="environments"></a> Environments
 
-An *environment* encapsulates the environment variables set in the process that Visual Studio uses to invoke CMake. For MSVC projects, it captures the variables set in a [developer command prompt](building-on-the-command-line.md) for a specific platform. For example, the `msvc_x64_x64` environment is the same as running the **Developer Command Prompt for VS 2017** or **Developer Command Prompt for VS 2019** with the **-arch=amd64 -host_arch=amd64** arguments. You can use the `env.{<variable_name>}` syntax in *`CMakeSettings.json`* to reference the individual environment variables, for example to construct paths to folders.  The following predefined environments are provided:
+An *environment* encapsulates the environment variables set in the process that Visual Studio uses to invoke CMake. For MSVC projects, it captures the variables set in a [developer command prompt](building-on-the-command-line.md) for a specific platform. For example, the `msvc_x64_x64` environment is the same as running the **Developer Command Prompt for VS {version}** with the **-arch=amd64 -host_arch=amd64** arguments. You can use the `env.{<variable_name>}` syntax in *`CMakeSettings.json`* to reference the individual environment variables, for example to construct paths to folders.  The following predefined environments are provided:
 
 - `linux_arm`: Target ARM Linux remotely.
 - `linux_x64`: Target x64 Linux remotely.
