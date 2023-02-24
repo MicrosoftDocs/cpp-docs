@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Working with Projects and Solutions (C++)"
 title: "Walkthrough: Working with Projects and Solutions (C++)"
-ms.date: 10/27/2021
+ms.date: 02/23/2023
 helpviewer_keywords: ["solutions [C++]", "projects [C++], about projects", "projects [C++]", "solutions [C++], about solutions"]
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
 ---
@@ -19,7 +19,7 @@ It helps if you understand the fundamentals of the C++ language, and know what a
 
 ## Create a project
 
-To create a project, first choose a project-type template. For each project type, Visual Studio sets compiler settings and—depending on the type—generates starter code that you can modify later. The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
+To create a project, first choose a project-type template. For each project type, Visual Studio sets compiler settings and—depending on the type—generates starter code that you can modify later. The following steps vary depending on which version of Visual Studio you're using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker range=">=msvc-160"
 
@@ -49,7 +49,7 @@ To create a project, first choose a project-type template. For each project type
 
 1. In the left pane of the **New Project** dialog box, expand **Installed** and select **Visual C++**, if it isn't open already.
 
-1. In the list of installed templates in the center pane, select **Windows Console Application**.
+1. In the list of installed templates in the center pane, select **Console App**.
 
 1. Enter a name for the project in the **Name** box. For this example, enter *Game*.
 
@@ -79,7 +79,11 @@ To create a project, first choose a project-type template. For each project type
 
    When you create a project, Visual Studio puts the project in a solution. By default, the solution has the same name as the project. You can change the name in the **Solution name** box, but for this example, keep the default name.
 
-1. Choose the **OK** button to create the project.
+1. Choose the **OK** button to dismiss the **New Project** dialog and start the **Win32 Application Wizard**.
+
+1. In the wizard, choose the **Next** button. On the **Application Settings** page, under **Additional options**, clear the **Precompiled header** check box.
+
+1. Choose the **Finish** button to create the project.
 
    Visual Studio creates your new solution and project files, and opens the editor for the Game.cpp source code file it generated.
 
@@ -99,7 +103,7 @@ This part of the walkthrough shows how to add a class to the project. When you a
 
 1. In the **Add Class** dialog, enter *Cardgame* in the **Class Name** box. Don't modify the default file names and settings. Choose the **OK** button.
 
-   Visual Studio creates new files and adds them to your project. You can see them in the **Solution Explorer** window. The Cardgame.h and Cardgame.cpp files are opened in the editor.
+   Visual Studio creates new files and adds them to your project. You can see them in the **Solution Explorer** window. Visual Studio opens the Cardgame.h and Cardgame.cpp files in the editor.
 
 1. Edit the Cardgame.h file, and make these changes:
 
@@ -120,12 +124,12 @@ This part of the walkthrough shows how to add a class to the project. When you a
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
       `Cardgame(int players);`
 
-   - After the default destructor, add an inline declaration for a `static int` member function named *GetParticipants* that takes no parameters and returns the `totalParticipants` value.
+   - After the default destructor, add an inline declaration for a `static int` member function named `GetParticipants` that takes no parameters and returns the `totalParticipants` value.
 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->
       `static int GetParticipants() { return totalParticipants; }`
 
-   The Cardgame.h file should resemble the code below after you change it:
+   The Cardgame.h file should resemble this code after you change it:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#103](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_4.h)]-->
 
@@ -142,7 +146,7 @@ This part of the walkthrough shows how to add a class to the project. When you a
     };
     ```
 
-   The line `#pragma once` tells the compiler to include the header file only one time. For more information, see [once](../preprocessor/once.md). For information about other C++ keywords in the header file above, see [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../cpp/storage-classes-cpp.md), and [public](../cpp/public-cpp.md).
+   The line `#pragma once` tells the compiler to include the header file only one time. For more information, see [`once`](../preprocessor/once.md). For information about other C++ keywords in the header file, see [`class`](../cpp/class-cpp.md), [`int`](../cpp/fundamental-types-cpp.md), [`static`](../cpp/storage-classes-cpp.md), and [`public`](../cpp/public-cpp.md).
 
 1. Choose the **Cardgame.cpp** tab at the top of the editing pane to open it for editing.
 
@@ -151,7 +155,6 @@ This part of the walkthrough shows how to add a class to the project. When you a
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
 
     ```cpp
-    #include "pch.h" // remove this line in Visual Studio 2019
     #include "Cardgame.h"
     #include <iostream>
 
@@ -164,7 +167,7 @@ This part of the walkthrough shows how to add a class to the project. When you a
     {
         totalParticipants += players;
         cout << players << " players have started a new game.  There are now "
-             << totalParticipants << " players in total." << endl;
+             << totalParticipants << " players in total.\n";
     }
 
     Cardgame::~Cardgame()
@@ -189,7 +192,6 @@ Add some code to your app that tests the new functions.
     // Game.cpp : Defines the entry point for the console application.
     //
 
-    #include "pch.h" // remove this line in Visual Studio 2019
     #include "Cardgame.h"
     #include <iostream>
 
