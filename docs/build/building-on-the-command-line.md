@@ -147,7 +147,7 @@ When used with no arguments, *`vcvarsall.bat`* configures the environment variab
 
 ### `vcvarsall` syntax
 
-> **`vcvarsall.bat`** [*`architecture`*] [*`platform_type`*] [*`winsdk_version`*] [**`-vcvars_ver=`**_`vcversion`_] [*`spectre_mode`*]
+> **`vcvarsall.bat`** [*`architecture`*] [*`platform_type`*] [*`winsdk_version`*] [**`-vcvars_ver=`***`vcversion`*] [*`spectre_mode`*]
 
 *`architecture`*<br/>
 This optional argument specifies the host and target architecture to use. If *architecture* isn't specified, the default build environment is used. These arguments are supported:

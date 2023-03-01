@@ -177,6 +177,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7660 | '%s': requires '%s' command line option(s) |
 | Compiler error C7661 | header-name '%s' has an ambiguous resolution to header '%s' |
 | Compiler error C7662 | '%$S': a coroutine cannot be constexpr or consteval |
+| [Compiler error C7688](compiler-error-c7688.md) | '`#pragma omp atomic`': expected an expression of scalar type |
 | Compiler error C7700 | type '%$T' in _Generic association compatible with previous association type '%$T' |
 | Compiler error C7701 | default _Generic association previously specified |
 | Compiler error C7702 | no compatible type for '%$T' in _Generic association list |
