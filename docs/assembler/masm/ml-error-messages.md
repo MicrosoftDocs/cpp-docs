@@ -2,7 +2,7 @@
 description: "Learn more about: ML Error Messages"
 title: "ML Error Messages"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["vc.errors.ml"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), ML error messages"]
 ms.assetid: e7e164b3-6d65-4b5b-8925-bfbebc043523

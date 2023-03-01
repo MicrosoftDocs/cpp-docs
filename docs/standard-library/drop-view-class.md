@@ -1,5 +1,5 @@
 ---
-title: "drop_view class (C++ Standard Library)| Microsoft Docs"
+title: drop_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> drop_view class, which creates a view from another view, skipping the first count elements."
 ms.date: 10/19/2022
 f1_keywords: ["ranges/std::drop_view", "ranges/std::drop_view::base", "ranges/std::drop_view::begin", "ranges/std::drop_view::data", "ranges/std::drop_view::empty", "ranges/std::drop_view::end", "ranges/std::drop_view::size", "ranges/std::drop_view::operator bool", "ranges/std::drop_view::back", "ranges/std::drop_view::front", "ranges/std::drop_view::operator[]"]

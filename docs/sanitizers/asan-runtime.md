@@ -2,7 +2,7 @@
 title: "AddressSanitizer runtime"
 description: "Technical description of the AddressSanitizer runtime for Microsoft C/C++."
 ms.date: 03/02/2021
-helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "ASan runtime"]
+helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "Asan runtime"]
 ---
 
 # AddressSanitizer runtime
@@ -74,17 +74,17 @@ Microsoft C/C++ (MSVC) uses a runtime based on the [Clang AddressSanitizer runti
 > [!NOTE]
 > The AddressSanitizer runtime option `halt_on_error` doesn't function the way you might expect. In both the Clang and the MSVC runtime libraries, many error types are considered **non-continuable**, including most memory corruption errors.
 
-For more information, see the [Differences with Clang 12.0](./asan.md#differences) section.
+For more information, see the [Differences with Clang 12.0](asan.md#differences) section.
 
 ### MSVC-specific AddressSanitizer runtime options
 
 - `windows_hook_legacy_allocators`
-  Boolean, set to `true` to enable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
+  Boolean, set to `false` to disable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
 
-> [!NOTE]
-> The option `windows_hook_legacy_allocators` wasn't available in the public llvm-project runtime when this article was written. The option may eventually be contributed back to the public project; however, it's dependent on code review and community acceptance.
->
-> The option `windows_hook_rtl_allocators`, previously an opt-in feature while AddressSanitizer was experimental, is now enabled by default.
+  > [!NOTE]
+  > The option `windows_hook_legacy_allocators` wasn't available in the public llvm-project runtime when this article was written. The option may eventually be contributed back to the public project; however, it's dependent on code review and community acceptance.
+  >
+  > The option `windows_hook_rtl_allocators`, previously an opt-in feature while AddressSanitizer was experimental, is now enabled by default. In versions before Visual Studio 2022 version 17.4.6, the default option value is `false`. In Visual Studio 2022 version 17.4.6 and later versions, the option `windows_hook_rtl_allocators` defaults to `true`.
 
 - `iat_overwrite`
   String, set to `"error"` by default. Other possible values are `"protect"` and `"ignore"`. Some modules may overwrite the [`import address table`](/windows/win32/debug/pe-format#import-address-table) of other modules to customize implementations of certain functions. For example, drivers commonly provide custom implementations for specific hardware. The `iat_overwrite` option manages the AddressSanitizer runtime's protection against overwrites for specific [`memoryapi.h`](/windows/win32/api/memoryapi/) functions. The runtime currently tracks the [`VirtualAlloc`](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc), [`VirtualProtect`](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect), and [`VirtualQuery`](/windows/win32/api/memoryapi/nf-memoryapi-virtualquery) functions for protection. This option is available in Visual Studio 2022 version 17.5 preview 1 and later versions. The following `iat_overwrite` values control how the runtime reacts when protected functions are overwritten:
@@ -93,6 +93,10 @@ For more information, see the [Differences with Clang 12.0](./asan.md#difference
   - If set to `"protect"`, the runtime attempts to avoid using the overwritten definition and proceeds. Effectively, the original `memoryapi` definition of the function is used from inside the runtime to avoid infinite recursion. Other modules in the process still use the overwritten definition.
   - If set to `"ignore"`, the runtime doesn't attempt to correct any overwritten functions and proceeds with execution.
 
+- `windows_fast_fail_on_error`
+Boolean (false by default), set to `true` to enable the process to terminate with a __fastfail(71) after printing the error report.
+>[!NOTE]
+>When abort_on_error value is set to true, on Windows the program terminates with an exit(3). In order to not change current behavior we decided to introduce this new option instead. If both abort_on_error and windows_fast_fail_on_error are true, the program will exit with the __fastfail.
 
 ## <a name="intercepted_functions"></a> AddressSanitizer list of intercepted functions (Windows)
 
@@ -173,8 +177,8 @@ The AddressSanitizer runtime hot-patches many functions to enable memory safety 
 
 ### Optional interceptors
 
-The interceptors listed here are only installed when an AddressSanitizer runtime option is enabled. Set `windows_hook_legacy_allocators` to `true` to enable legacy allocator interception.
-`set ASAN_OPTIONS=windows_hook_legacy_allocators=true`
+The interceptors listed here are only installed when an AddressSanitizer runtime option is enabled. Set `windows_hook_legacy_allocators` to `false` to disable legacy allocator interception.
+`set ASAN_OPTIONS=windows_hook_legacy_allocators=false`
 
 - [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc)
 - [`GlobalFree`](/windows/win32/api/winbase/nf-winbase-GlobalFree)

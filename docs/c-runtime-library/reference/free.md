@@ -34,7 +34,7 @@ If an error occurs in freeing the memory, `errno` is set with information from t
 
 After a memory block has been freed, [`_heapmin`](heapmin.md) minimizes the amount of free memory on the heap by coalescing the unused regions and releasing them back to the operating system. Freed memory that isn't released to the operating system is restored to the free pool and is available for allocation again.
 
-When the application is linked with a debug version of the C run-time libraries, **`free`** resolves to [`_free_dbg`](free-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **`free`** resolves to [`_free_dbg`](free-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT debug heap](../crt-debug-heap-details.md).
 
 **`free`** is marked `__declspec(noalias)`, meaning that the function is guaranteed not to modify global variables. For more information, see [`noalias`](../../cpp/noalias.md).
 

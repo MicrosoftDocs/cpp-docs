@@ -26,13 +26,11 @@ To enable compilation for C++/CX, you must use the [/ZW](reference/zw-windows-ru
 
 #### To compile a C++/CX application on the command line
 
-1. Open a **Developer Command Prompt** window.
+1. Open a **Developer Command Prompt** window. For specific instructions, see [To open a developer command prompt window](building-on-the-command-line.md#developer_command_prompt).
 
-   On the **Start** window, open **Apps**. Open the **Visual Studio Tools** folder under your version of Visual Studio, and then choose the **Developer Command Prompt** shortcut.) For more information about how to open a Developer Command Prompt window, see [Use the MSVC toolset from the command line](building-on-the-command-line.md).
+   Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the command prompt window as an administrator, right-click to open the shortcut menu for the command prompt and then choose **More** > **Run as administrator**.
 
-   Another approach is to use the system's search functionality, namely by holding down the `Windows` key and single press `S` key to launch the system search window, then type `Developer PowerShell`, and click `Open` to launch the application.
-
-   Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the Command Prompt window as an administrator, open the shortcut menu for **Developer Command Prompt** and then choose **Run as administrator**.
+1. Change the current working directory in the command prompt window to a directory you can write to, such as your Documents directory.
 
 1. At the command prompt, enter **notepad basiccx.cpp**.
 

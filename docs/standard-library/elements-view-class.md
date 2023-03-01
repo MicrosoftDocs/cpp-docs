@@ -1,5 +1,5 @@
 ---
-title: "elements_view class (C++ Standard Library)| Microsoft Docs"
+title: elements_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> elements_view class, which provides a view over the selected index into each tuple-like value in a range."
 ms.date: 09/27/2022
 f1_keywords: ["ranges/std::elements_view", "ranges/std::elements_view::base", "ranges/std::elements_view::begin", "ranges/std::elements_view::empty", "ranges/std::elements_view::end", "ranges/std::elements_view::size", "ranges/std::elements_view::operator bool", "ranges/std::elements_view::back", "ranges/std::elements_view::front", "ranges/std::elements_view::operator[]"]
@@ -80,7 +80,7 @@ Construct an instance of a `elements_view`.
 ### Parameters
 
 *`base`*\
-The underlying range. 
+The underlying range.
 
 For information about the template parameter type, see [Template parameters](#template-parameters).
 

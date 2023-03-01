@@ -1,5 +1,5 @@
 ---
-title: "lazy_split_view class (C++ Standard Library)| Microsoft Docs"
+title: lazy_split_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> lazy_split_view class. Splits a view into subranges based on a delimiter."
 ms.date: 10/18/2022
 f1_keywords: ["ranges/std::lazy_split_view", "ranges/std::lazy_split_view::base", "ranges/std::lazy_split_view::begin", "ranges/std::lazy_split_view::data", "ranges/std::lazy_split_view::empty", "ranges/std::lazy_split_view::end", "ranges/std::lazy_split_view::size", "ranges/std::lazy_split_view::operator bool", "ranges/std::lazy_split_view::back", "ranges/std::lazy_split_view::front", "ranges/std::lazy_split_view::operator[]"]

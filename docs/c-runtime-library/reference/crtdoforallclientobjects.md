@@ -37,7 +37,7 @@ The **`_CrtDoForAllClientObjects`** function searches the heap's linked list for
 
 If the `_CRTDBG_ALLOC_MEM_DF` bit field of the [`_crtDbgFlag`](../crtdbgflag.md) flag isn't turned on, **`_CrtDoForAllClientObjects`** immediately returns. When [`_DEBUG`](../debug.md) isn't defined, calls to **`_CrtDoForAllClientObjects`** are removed during preprocessing.
 
-For more information about the `_CLIENT_BLOCK` type and how it can be used by other debug functions, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about the `_CLIENT_BLOCK` type and how it can be used by other debug functions, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 If *`pfn`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is set to `EINVAL` and the function returns.
 
@@ -55,5 +55,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Debug routines](../debug-routines.md)\
 [`_CrtSetDbgFlag`](crtsetdbgflag.md)\
-[Heap state reporting functions](/visualstudio/debugger/crt-debug-heap-details)\
+[Heap state reporting functions](../crt-debug-heap-details.md#heap-state-reporting-functions)\
 [`_CrtReportBlockType`](crtreportblocktype.md)

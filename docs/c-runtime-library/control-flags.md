@@ -8,7 +8,7 @@ ms.assetid: 8dbd24a5-0633-42d1-9771-776db338465f
 ---
 # Control flags
 
-The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT debugging techniques](/visualstudio/debugger/crt-debugging-techniques).
+The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT debugging techniques](./crt-debugging-techniques.md).
 
 | Flag | Description |
 |---|---|

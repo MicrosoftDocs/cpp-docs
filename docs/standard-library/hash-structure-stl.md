@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: hash Structure (C++ Standard Library)"
-title: "hash Structure (C++ Standard Library)| Microsoft Docs"
+title: hash Structure (C++ Standard Library)
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::hash"]
 ms.assetid: 4a8bf5bc-4334-4070-936b-98585f8a073b

@@ -80,7 +80,7 @@ The following table lists the available choices for the report mode or modes and
 | `_CRTDBG_MODE_FILE` | `_CRTDBG_FILE_STDERR` | Writes message to `stderr`. |
 | `_CRTDBG_MODE_FILE` | `_CRTDBG_FILE_STDOUT` | Writes message to `stdout`. |
 
-The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting).
+The report can be sent to one, two, or three destinations or to no destination at all. For more information about specifying the report mode or modes and report file, see the [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions. For more information about using the debug macros and reporting functions, see [Macros for reporting](../crt-debugging-techniques.md#macros-for-reporting).
 
 If your application needs more flexibility than that provided by **`_CrtDbgReport`** and **`_CrtDbgReportW`**, you can write your own reporting function and hook it into the C run-time library reporting mechanism by using the [`_CrtSetReportHook`](crtsetreporthook.md) function.
 

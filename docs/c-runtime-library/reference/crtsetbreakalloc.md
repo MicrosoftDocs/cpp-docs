@@ -37,7 +37,7 @@ Returns the previous object allocation order number that had a breakpoint set.
 
 The object allocation order number is stored in the *`lRequest`* field of the `_CrtMemBlockHeader` structure, defined in Crtdbg.h. When information about a memory block is reported by one of the debug dump functions, this number is enclosed in braces, such as {36}.
 
-For more information about how **`_CrtSetBreakAlloc`** can be used with other memory management functions, see [Tracking heap allocation requests](/visualstudio/debugger/crt-debug-heap-details). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about how **`_CrtSetBreakAlloc`** can be used with other memory management functions, see [Tracking heap allocation requests](../crt-debug-heap-details.md#track-heap-allocation-requests). For more information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 ## Requirements
 

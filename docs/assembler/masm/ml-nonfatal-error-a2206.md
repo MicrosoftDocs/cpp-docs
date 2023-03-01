@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2206"
 title: "ML Nonfatal Error A2206"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2206"]
 helpviewer_keywords: ["A2206"]
 ms.assetid: 711846d0-5a09-4353-8857-60588c25526a

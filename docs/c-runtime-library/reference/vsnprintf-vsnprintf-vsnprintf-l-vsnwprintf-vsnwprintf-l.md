@@ -6,7 +6,7 @@ api_name: ["_vsnprintf", "_vsnprintf_l", "_vsnwprintf", "_vsnwprintf_l", "_vsnpr
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_vsnprintf", "_vsnwprintf", "_vsntprintf", "vsnprintf", "stdio/vsnprintf", "stdio/_vsnprintf", "stdio/_vsnprintf_l", "stdio/_vsnwprintf", "stdio/_vsnwprintf_l", "_vsnprintf_l", "_vsnwprintf_l"]
+f1_keywords: ["STDIO/vsnprintf", "STDIO/_vsnprintf", "CORECRT_WSTDIO/_vsnwprintf", "TCHAR/_vsntprintf", "STDIO/_vsnprintf_l", "CORECRT_WSTDIO/_vsnwprintf_l", "TCHAR/_vsntprintf_l", "vsnprintf", "_vsnprintf", "_vsnwprintf", "_vsntprintf", "_vsnprintf_l", "_vsnwprintf_l", "_vsntprintf_l"]
 helpviewer_keywords: ["vsntprintf function", "_vsnwprintf_l function", "vsnwprintf_l function", "vsntprintf_l function", "_vsntprintf function", "_vsnprintf_l function", "vsnprintf function", "_vsntprintf_l function", "vsnprintf_l function", "_vsnwprintf function", "_vsnprintf function", "formatted text [C++]", "vsnwprintf function"]
 ---
 # `vsnprintf`, `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf`, `_vsnwprintf_l`

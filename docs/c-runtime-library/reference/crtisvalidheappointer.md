@@ -40,7 +40,7 @@ Because this function returns `TRUE` or `FALSE`, it can be passed to one of the 
 _ASSERTE( _CrtIsValidHeapPointer( userData ) );
 ```
 
-For more information about how **`_CrtIsValidHeapPointer`** can be used with other debug functions and macros, see [Macros for reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](/visualstudio/debugger/crt-debug-heap-details).
+For more information about how **`_CrtIsValidHeapPointer`** can be used with other debug functions and macros, see [Macros for reporting](../crt-debugging-techniques.md#macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md).
 
 ## Requirements
 

@@ -6,7 +6,7 @@ api_name: ["_unlink", "_wunlink", "_o__unlink", "_o__wunlink"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_tunlink", "_unlink", "wunlink", "_wunlink"]
+f1_keywords: ["CORECRT_IO/_unlink", "CORECRT_WIO/_wunlink", "TCHAR/_tunlink", "_unlink", "_wunlink", "_tunlink"]
 helpviewer_keywords: ["files [C++], deleting", "_wunlink function", "wunlink function", "unlink function", "_unlink function", "tunlink function", "files [C++], removing", "_tunlink function"]
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
 ---

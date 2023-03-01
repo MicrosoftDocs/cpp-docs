@@ -6,7 +6,7 @@ api_name: ["strupr", "wcsupr"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["strupr", "wcsupr"]
+f1_keywords: ["STRING/strupr", "CORECRT_WSTRING/wcsupr", "strupr", "wcsupr"]
 helpviewer_keywords: ["strupr function", "wcsupr function"]
 ms.assetid: 17dfe1cd-3b09-4702-9f89-2207f44953e6
 ---

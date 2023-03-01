@@ -2,7 +2,7 @@
 description: "Learn more about: ML Nonfatal Error A2063"
 title: "ML Nonfatal Error A2063"
 ms.date: "12/17/2019"
-ms.custom: "error-reference"
+ms.topic: error-reference
 f1_keywords: ["A2063"]
 helpviewer_keywords: ["A2063"]
 ms.assetid: 12976b25-2159-4e0c-9df3-dcfac61091ee
