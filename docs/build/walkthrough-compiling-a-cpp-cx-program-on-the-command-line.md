@@ -51,7 +51,7 @@ To enable compilation for C++/CX, you must use the [/ZW](reference/zw-windows-ru
 
    You've created a C++ source file that uses the Windows Runtime [Platform namespace](../cppcx/platform-namespace-c-cx.md) namespace.
 
-1. At the command prompt, enter **cl /EHsc /ZW basiccx.cpp /link /SUBSYSTEM:CONSOLE**. The cl.exe compiler compiles the source code into an .obj file, and then runs the linker to generate an executable program named basiccx.exe. (The [/EHsc](reference/eh-exception-handling-model.md) compiler option specifies the C++ exception-handling model, and the [/link](reference/link-pass-options-to-linker.md) flag specifies a console application.)
+1. At the command prompt, enter `cl /EHsc /ZW basiccx.cpp /link /SUBSYSTEM:CONSOLE`. The `cl.exe` compiler compiles the source code into an `.obj` file, and then runs the linker to generate an executable program named basiccx.exe. The [/EHsc](reference/eh-exception-handling-model.md) compiler option specifies the C++ exception-handling model, and the [/link](reference/link-pass-options-to-linker.md) flag specifies a console application.
 
 1. To run the basiccx.exe program, at the command prompt, enter **basiccx**.
 
