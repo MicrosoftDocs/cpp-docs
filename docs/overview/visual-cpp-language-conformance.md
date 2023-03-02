@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 11/07/2022
+ms.date: 03/01/2023
 ms.technology: "cpp-language"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
@@ -479,7 +479,8 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P2273R3 constexpr unique_ptr​​`](https://wg21.link/p2273r3) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2291R3 constexpr Integral <charconv>​`](https://wg21.link/p2291r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2302R4 ranges::contains, ranges::contains_subrange​`](https://wg21.link/p2302r4) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2322R6 ranges::fold_left, ranges::fold_right, etc.​`](https://wg21.link/p2322r6) | no |
+| &emsp;[`P2321R2 std::zip​`](https://wg21.link/p2321r2) | partial in VS 2022 17.5 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2322R6 ranges::fold_left, ranges::fold_right, etc.​`](https://wg21.link/p2322r6) | VS 2022 17.5 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2387R3 Pipe Support For User-Defined Range Adaptors​`](https://wg21.link/p2387r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2393R1 Cleaning Up Integer-Class Types​`](https://wg21.link/p2393r1) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2401R0 Conditional noexcept For exchange()​`](https://wg21.link/p2401r0) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
@@ -496,7 +497,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P2465R3 Standard Library Modules std And std.compat​`](https://wg21.link/p2465r3) | no |
 | &emsp;[`P2494R2 Relaxing Range Adaptors To Allow Move-Only Types​`](https://wg21.link/p2494r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2499R0 string_view Range Constructor Should Be explicit​`](https://wg21.link/p2499r0) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2508R1 basic_format_string, format_string, wformat_string​`](https://wg21.link/p2508r1) | no |
+| &emsp;[`P2508R1 basic_format_string, format_string, wformat_string​`](https://wg21.link/p2508r1) | VS 2022 17.5 <sup>[23](#note_23) |
 | &emsp;[`P2517R1 Conditional noexcept For apply()​`](https://wg21.link/p2517r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2520R0 move_iterator<T*> Should Be A Random-Access Iterator​​`](https://wg21.link/p2520r0) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2549R1 unexpected<E>::error()`](https://wg21.link/p2549r1) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
@@ -567,7 +568,8 @@ A group of papers listed together indicates a Standard feature along with one or
 **VS 2022 17.1** Supported in Visual Studio 2022 version 17.1.\
 **VS 2022 17.2** Supported in Visual Studio 2022 version 17.2.\
 **VS 2022 17.3** Supported in Visual Studio 2022 version 17.3.\
-**VS 2022 17.4** Supported in Visual Studio 2022 version 17.4.
+**VS 2022 17.4** Supported in Visual Studio 2022 version 17.4.\
+**VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.
 
 ### Notes
 

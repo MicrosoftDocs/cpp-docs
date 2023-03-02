@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: 11/07/2022
+ms.date: 02/28/2023
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
@@ -31,12 +31,14 @@ You can enable warnings that are normally off by default by using one of the fol
 
 ## Warnings that are off by default
 
+### Visual Studio 2015 and later versions
+
 The following warnings are turned off by default in Visual Studio 2015 and later versions:
 
 | Warning | Message |
 |--|--|
-| [C4061](../error-messages/compiler-warnings/compiler-warning-level-4-c4061.md) (level 4) | enumerator '*identifier*' in a switch of enum '*enumeration*' is not explicitly handled by a case label |
-| [C4062](../error-messages/compiler-warnings/compiler-warning-level-4-c4062.md) (level 4) | enumerator '*identifier*' in a switch of enum '*enumeration*' is not handled |
+| [C4061](../error-messages/compiler-warnings/compiler-warning-level-4-c4061.md) (level 4) | enumerator '*identifier*' in a switch of enum '*enumeration*' is not explicitly handled by a case label. |
+| [C4062](../error-messages/compiler-warnings/compiler-warning-level-4-c4062.md) (level 4) | enumerator '*identifier*' in a switch of enum '*enumeration*' is not handled. |
 | [C4165](../error-messages/compiler-warnings/compiler-warning-level-1-c4165.md) (level 1) | 'HRESULT' is being converted to 'bool'; are you sure this is what you want? |
 | [C4191](../error-messages/compiler-warnings/compiler-warning-level-3-c4191.md) (level 3) | '*operator*': unsafe conversion from '*type_of_expression*' to '*type_required*' |
 | [C4242](../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md) (level 4) | '*identifier*': conversion from '*type1*' to '*type2*', possible loss of data |
@@ -55,13 +57,13 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4355](../error-messages/compiler-warnings/compiler-warning-c4355.md) | 'this' : used in base member initializer list |
 | [C4365](../error-messages/compiler-warnings/compiler-warning-level-4-c4365.md) (level 4) | '*action*': conversion from '*type_1*' to '*type_2*', signed/unsigned mismatch |
 | C4370 (level 3) | layout of class has changed from a previous version of the compiler due to better packing |
-| [C4371](../error-messages/compiler-warnings/c4371.md) (level 3) | '*classname*': layout of class may have changed from a previous version of the compiler due to better packing of member '*member*' |
+| [C4371](../error-messages/compiler-warnings/c4371.md) (level 3) | '*class-name*': layout of class may have changed from a previous version of the compiler due to better packing of member '*member*' |
 | [C4388](../error-messages/compiler-warnings/c4388.md) (level 4) | signed/unsigned mismatch |
 | [C4412](../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md) (level 2) | '*function*': function signature contains type '*type*'; C++ objects are unsafe to pass between pure code and mixed or native |
 | C4426 (level 1) | optimization flags changed after including header, may be due to #pragma optimize() <sup>14.1</sup> |
-| [C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (level 4) | '*class1*' : Object layout under /vd2 will change due to virtual base '*class2*' |
-| [C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (level 4) | dynamic_cast from virtual base '*class1*' to '*class2*' could fail in some contexts |
-| C4444 (level 3) | top level '__unaligned' is not implemented in this context |
+| [C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (level 4) | '*class1*' : Object layout under /vd2 will change due to virtual base '*class2*'. |
+| [C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (level 4) | dynamic_cast from virtual base '*class1*' to '*class2*' could fail in some contexts. |
+| C4444 (level 3) | top level '__unaligned' is not implemented in this context. |
 | [C4464](../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md) (level 4) | relative include path contains '..' |
 | [C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (level 4) | a forward declaration of an unscoped enumeration must have an underlying type (int assumed) <sup>Perm</sup> |
 | C4472 (level 1) | '*identifier*' is a native enum: add an access specifier (private/public) to declare a managed enum |
@@ -83,7 +85,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C4588 (level 1) | '*anonymous_structure*': behavior change: destructor is no longer implicitly called |
 | [C4596](../error-messages/compiler-warnings/c4596.md) (level 4) | '*identifier*': illegal qualified name in member declaration <sup>14.3</sup> <sup>Perm</sup> |
 | C4598 (level 1 and level 3) | '#include "*header*"': header number *header-number* in the precompiled header does not match current compilation at that position <sup>14.3</sup> |
-| C4599 (level 3) | '*option* *path*': command-line argument number *number* does not match pre-compiled header <sup>14.3</sup> |
+| C4599 (level 3) | '*option* *path*': command-line argument number *arg_number* does not match pre-compiled header <sup>14.3</sup> |
 | C4605 (level 1) | '/D*macro*' specified on current command line, but was not specified when precompiled header was built |
 | [C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (level 3) | '*union_member*' has already been initialized by another union member in the initializer list, '*union_member*' <sup>Perm</sup> |
 | [C4619](../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md) (level 3) | #pragma warning: there is no warning number '*number*' |
@@ -96,7 +98,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C4647 (level 3) | behavior change: __is_pod(*type*) has different value in previous versions |
 | C4654 (level 4) | Code placed before include of precompiled header line will be ignored. Add code to precompiled header. <sup>14.1</sup> |
 | [C4668](../error-messages/compiler-warnings/compiler-warning-level-4-c4668.md) (level 4) | '*symbol*' is not defined as a preprocessor macro, replacing with '0' for '*directives*' |
-| [C4682](../error-messages/compiler-warnings/compiler-warning-level-4-c4682.md) (level 4) | '*symbol*' : no directional parameter attribute specified, defaulting to [in] |
+| [C4682](../error-messages/compiler-warnings/compiler-warning-level-4-c4682.md) (level 4) | '*symbol*' : no directional parameter attribute specified, defaulting to \[in] |
 | [C4686](../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md) (level 3) | '*user-defined type*': possible change in behavior, change in UDT return calling convention |
 | [C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) (level 1) | '*function*': signature of non-private member contains assembly private native type '*native_type*' |
 | [C4710](../error-messages/compiler-warnings/compiler-warning-level-4-c4710.md) (level 4) | '*function*': function not inlined |
@@ -111,7 +113,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (level 4) | '*bytes*' bytes padding added after construct '*member_name*' |
 | [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (level 1) | '*member*': local class member function does not have a body |
 | C4826 (level 2) | Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior. |
-| C4837 (level 4) | trigraph detected: '??*character*' replaced by '*character*' |
+| C4837 (level 4) | trigraph detected: '`??`*character*' replaced by '*character*' |
 | [C4841](../error-messages/compiler-warnings/c4841.md) (level 4) | non-standard extension used: compound member designator used in offsetof |
 | C4842 (level 4) | the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases |
 | [C4866](../error-messages/compiler-warnings/c4866.md) (level 4) | '*file*(*line-number*)' compiler may not enforce left-to-right evaluation order for call to *operator* |
@@ -136,16 +138,24 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5031 (level 4) | #pragma warning(pop): likely mismatch, popping warning state pushed in different file <sup>14.1</sup> |
 | C5032 (level 4) | detected #pragma warning(push) with no corresponding #pragma warning(pop) <sup>14.1</sup> |
 
+### Visual Studio 2017 and later versions
+
+The following warnings are turned off by default in Visual Studio 2017 and later versions:
+
 | Warning | Message |
 |--|--|
 | C5034 | use of intrinsic '*intrinsic*' causes function *function-name* to be compiled as guest code <sup>15.3</sup> |
 | C5035 | use of feature '*feature*' causes function *function-name* to be compiled as guest code <sup>15.3</sup> |
 | C5036 (level 1) | varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*' <sup>15.3</sup> |
 | [C5038](../error-messages/compiler-warnings/c5038.md) (level 4) | data member '*member1*' will be initialized after data member '*member2*' <sup>15.3</sup> |
-| C5039 (level 4) | '*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception. <sup>15.5</sup> |
+| C5039 (level 4) | '*function*': pointer or reference to potentially throwing function passed to extern C function under `-EHc`. Undefined behavior may occur if this function throws an exception. <sup>15.5</sup> |
 | C5041 (level 4) | '*member-name*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17. <sup>15.2</sup> |
 | C5042 (level 3) | '*function*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier <sup>15.5</sup> |
 | [C5045](../error-messages/compiler-warnings/c5045.md) | Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified <sup>15.7</sup> |
+
+### Visual Studio 2019 and later versions
+
+The following warnings are turned off by default in Visual Studio 2019 and later versions:
 
 | Warning | Message |
 |--|--|
@@ -165,6 +175,10 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C5247 (level 1)](../error-messages/compiler-warnings/c5247.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
 | [C5248 (level 1)](../error-messages/compiler-warnings/c5248.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Variable manually put into the section may be optimized out and its order relative to compiler generated dynamic initializers is unspecified <sup>16.11</sup> |
 
+### Visual Studio 2022 and later versions
+
+The following warnings are turned off by default in Visual Studio 2022 and later versions:
+
 | Warning | Message |
 |--|--|
 | C5249 (level 1) | '*bitfield*' of type '*enumeration_name*' has named enumerators with values that cannot be represented in the given bit field width of '*bitfield_width*'. <sup>17.0</sup> |
@@ -174,7 +188,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5256 (level 1) | '*enumeration*': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration <sup>17.2</sup> |
 | C5258 (level 4) | explicit capture of '*symbol*' is not required for this use <sup>17.2</sup> |
 | C5259 (level 4) | '*specialized-type*': explicit specialization requires '`template <>`' <sup>17.3</sup> |
-| C5262 (level 1) | implicit fall-through occurs here; are you missing a `break` statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases <sup>17.4</sup> |
+| [C5262](../error-messages/compiler-warnings/c5262.md) (level 1, error) | implicit fall-through occurs here; are you missing a `break` statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases <sup>17.4</sup> |
 | C5263 (level 4) | calling '`std::move`' on a temporary object prevents copy elision <sup>17.4</sup> |
 | C5264 (level 4) | '*variable-name*': 'const' variable is not used <sup>17.4</sup> |
 
