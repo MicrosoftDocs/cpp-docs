@@ -6,8 +6,8 @@ metadata:
   title: Linux development with C++
   description: Learn how to use C++ in Visual Studio 2017 and later to create and debug applications for Linux.
   ms.topic: landing-page
-  author: corob-msft
-  ms.author: corob
+  author: tylermsft
+  ms.author: twhitney
   ms.date: 04/26/2020
   ms.custom: intro-landing-hub
 

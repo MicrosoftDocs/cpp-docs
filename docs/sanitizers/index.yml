@@ -6,8 +6,8 @@ metadata:
   title: C/C++ Sanitizers
   description: Learn how to use sanitizers for defect reporting, analysis, and prevention.
   ms.topic: landing-page
-  author: corob-msft
-  ms.author: corob
+  author: tylermsft
+  ms.author: twhitney
   ms.date: 02/26/2021
   ms.custom: intro-landing-hub
 

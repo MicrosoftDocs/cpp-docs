@@ -2,8 +2,8 @@
 title: "/scanDependencies (List module and header unit dependencies per Standard)"
 description: "Reference guide to the /scanDependencies compiler option in Microsoft C++."
 ms.date: 09/21/2022
-author: "corob-msft"
-ms.author: "corob"
+author: "tylermsft"
+ms.author: "twhitney"
 f1_keywords: ["/scanDependencies"]
 helpviewer_keywords: ["/scanDependencies compiler option", "/scanDependencies"]
 ---

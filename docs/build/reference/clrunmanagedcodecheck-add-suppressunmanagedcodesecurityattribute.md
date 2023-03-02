@@ -6,8 +6,8 @@ ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.CLRUnmanagedCodeCheck", "/CLRUNMANAGEDCODECHECK"]
 helpviewer_keywords: ["-CLRUNMANAGEDCODECHECK linker option", "/CLRUNMANAGEDCODECHECK linker option"]
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
-author: "corob-msft"
-ms.author: "corob"
+author: "tylermsft"
+ms.author: "twhitney"
 ---
 # `/CLRUNMANAGEDCODECHECK` (Remove SuppressUnmanagedCodeSecurityAttribute)
 

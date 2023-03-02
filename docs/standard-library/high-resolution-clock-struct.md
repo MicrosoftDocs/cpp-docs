@@ -8,7 +8,7 @@ ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::high_resolution_clock", chrono/std::chrono::high_resolution_clock::now", "chrono/std::chrono::high_resolution_clock::is_steady constant"]
 helpviewer_keywords: ["std::chrono [C++], high_resolution_clock"]
 dev_langs: ["C++"]
-author: "corob-msft"
+author: "tylermsft"
 ms.workload: ["cplusplus"]
 ---
 # `high_resolution_clock` struct
