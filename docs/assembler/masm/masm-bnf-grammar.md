@@ -22,7 +22,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses *`qu
 &emsp; *`endOfLine`* &vert; *`comment`*
 
 *`=Dir`*\
-&emsp; *`id`* = *`immExpr`* *`;;`*
+&emsp; *`id`* **`=`** *`immExpr`* *`;;`*
 
 *`addOp`*\
 &emsp; **`+`** &vert; **`-`**
@@ -492,7 +492,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses *`qu
 &emsp; *`immExpr`*\
 &emsp; &vert; *`string`*\
 &emsp; &vert; **`?`**\
-&emsp; &vert; *`constExpr`* **`DUP`** ( *`scalarInstList`* )\
+&emsp; &vert; *`constExpr`* **`DUP`** **`(`** *`scalarInstList`* **`)`**\
 &emsp; &vert; *`floatNumber`*\
 &emsp; &vert; *`bcdConst`*
 
@@ -591,7 +591,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses *`qu
 
 *`macroCall`*\
 &emsp; *`id`* *`macroArgList`* *`;;`*\
-&emsp; &vert; *`id`* ( *`macroArgList`* )
+&emsp; &vert; *`id`* **`(`** *`macroArgList`* **`)`**
 
 *`macroDir`*\
 &emsp; *`id`* **`MACRO`** ⟦ *`macroParmList`* ⟧ *`;;`*\
@@ -716,7 +716,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses *`qu
 &emsp; &vert; **`OLDMACROS`** &vert; **`NOOLDMACROS`**\
 &emsp; &vert; **`OLDSTRUCTS`** &vert; **`NOOLDSTRUCTS`**\
 &emsp; &vert; **`PROC`** **`:`** *`oVisibility`*\
-&emsp; &vert; **`PROLOGUE`** : *`macroId`*\
+&emsp; &vert; **`PROLOGUE`** **`:`** *`macroId`*\
 &emsp; &vert; **`READONLY`** &vert; **`NOREADONLY`**\
 &emsp; &vert; **`SCOPED`** &vert; **`NOSCOPED`**\
 &emsp; &vert; **`SEGMENT`** **`:`** *`segSize`*\
