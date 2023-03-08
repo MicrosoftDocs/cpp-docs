@@ -1,15 +1,15 @@
 ---
-description: "Learn more about: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
+description: "Learn more about: sprintf, _sprintf_l, swprintf, _swprintf, _swprintf_l, __swprintf_l"
 title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
 ms.date: "3/9/2021"
-api_name: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]
+api_name: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf", "_swprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_stprintf_l", "__swprintf_l", "sprintf_l", "swprintf", "_sprintf_l", "sprintf", "_stprintf", "stprintf_l"]
-helpviewer_keywords: ["_swprintf_l function", "_stprintf function", "__swprintf_l function", "stprintf function", "sprintf function", "_sprintf_l function", "_stprintf_l function", "swprintf function", "strings [C++], writing to", "_CRT_NON_CONFORMING_SWPRINTFS", "swprintf_l function", "stprintf_l function", "sprintf_l function", "formatted text [C++]"]
+f1_keywords: ["_stprintf_l", "__swprintf_l", "sprintf_l", "_swprintf", "swprintf", "_sprintf_l", "sprintf", "_stprintf", "stprintf_l"]
+helpviewer_keywords: ["_swprintf_l function", "_stprintf function", "__swprintf_l function", "stprintf function", "sprintf function", "_sprintf_l function", "_stprintf_l function", "swprintf function", "_swprintf function", "strings [C++], writing to", "_CRT_NON_CONFORMING_SWPRINTFS", "swprintf_l function", "stprintf_l function", "sprintf_l function", "formatted text [C++]"]
 ---
-# `sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`
+# `sprintf`, `_sprintf_l`, `swprintf`, `_swprintf`, `_swprintf_l`, `__swprintf_l`
 
 Write formatted data to a string. More secure versions of some of these functions are available; see [`sprintf_s`, `_sprintf_s_l`, `swprintf_s`, `_swprintf_s_l`](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of **`swprintf`** and **`_swprintf_l`** take the size of the buffer as a parameter.
 
@@ -21,18 +21,27 @@ int sprintf(
    const char *format [,
    argument] ...
 );
+
 int _sprintf_l(
    char *buffer,
    const char *format,
    _locale_t locale [,
    argument] ...
 );
+
 int swprintf(
    wchar_t *buffer,
    size_t count,
    const wchar_t *format [,
    argument]...
 );
+
+int _swprintf(
+   wchar_t *buffer,
+   const wchar_t *format [,
+   argument]...
+);
+
 int _swprintf_l(
    wchar_t *buffer,
    size_t count,
@@ -40,18 +49,21 @@ int _swprintf_l(
    _locale_t locale [,
    argument] ...
 );
+
 int __swprintf_l(
    wchar_t *buffer,
    const wchar_t *format,
    _locale_t locale [,
    argument] ...
 );
+
 template <size_t size>
 int sprintf(
    char (&buffer)[size],
    const char *format [,
    argument] ...
 ); // C++ only
+
 template <size_t size>
 int _sprintf_l(
    char (&buffer)[size],
@@ -97,7 +109,7 @@ The **`sprintf`** function formats and stores a series of characters and values 
 
 **`swprintf`** is a wide-character version of **`sprintf`**; the pointer arguments to **`swprintf`** are wide-character strings. Detection of encoding errors in **`swprintf`** may differ from **`sprintf`**. **`swprintf`** and **`fwprintf`** behave identically except **`swprintf`** writes output to a string rather than to a destination of type `FILE`, and **`swprintf`** requires the *`count`* parameter to specify the maximum number of characters to write. The versions of these functions with the **`_l`** suffix are identical except they use the locale parameter passed in instead of the current thread locale.
 
-**`swprintf`** conforms to the ISO C Standard, which requires the second parameter, *`count`*, of type **`size_t`**. To force the old nonstandard behavior, define `_CRT_NON_CONFORMING_SWPRINTFS`. In a future version, the old behavior may be removed, so code should be changed to use the new conformant behavior.
+Before the signature for `swprintf` was standardized, a version shipped in an older Microsoft C runtime library that didn't take the character count parameter. The older version is still available in the Microsoft C runtime library, but it's deprecated and was renamed `_swprintf()`. /For code that was written against the older signature, define `_CRT_NON_CONFORMING_SWPRINTFS` which maps calls to `swprintf` to `_swprintf`. In a future version, the old behavior may be removed, so code should be changed to use the new conformant behavior.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
 
@@ -113,7 +125,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 | Routine | Required header |
 |---|---|
 | **`sprintf`**, **`_sprintf_l`** | `<stdio.h>` |
-| **`swprintf`**, **`_swprintf_l`** | `<stdio.h>` or `<wchar.h>` |
+| **`swprintf`**, **`_swprintf`**, **`_swprintf_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
