@@ -1,7 +1,7 @@
 ---
 title: "_getch, _getwch"
 description: "API reference for _getch and _getwch; which get a character from the console without echo."
-ms.date: "4/2/2020"
+ms.date: "3/8/2023"
 api_name: ["_getch", "_getwch", "_o__getch", "_o__getwch"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -29,7 +29,7 @@ Returns the character read. There's no error return.
 
 ## Remarks
 
-The **`_getch`** and **`_getwch`** functions read a single character from the console without echoing the character. None of these functions can be used to read CTRL+C. To read a function key or arrow key, each function must be called twice. The first call returns `0` or `0xE0`. The second call returns the [key scan code](/previous-versions/visualstudio/visual-studio-6.0/aa299374(v=vs.60)).
+The **`_getch`** and **`_getwch`** functions read a single character from the console without echoing the character. To read a function key or arrow key, each function must be called twice. The first call returns `0` or `0xE0`. The second call returns the [key scan code](/previous-versions/visualstudio/visual-studio-6.0/aa299374(v=vs.60)).
 
 These functions lock the calling thread and so are thread-safe. For non-locking versions, see [`_getch_nolock`, `_getwch_nolock`](getch-nolock-getwch-nolock.md).
 
