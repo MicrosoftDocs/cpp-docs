@@ -122,7 +122,7 @@ _ATL_FREE_THREADED
 
 Specifies free threading. Free threading is equivalent to a multithread apartment model. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
 
-## <a name="_ATL_MODULES"></a> `_ATLMODULES`
+## <a name="_ATL_MODULES"></a> `_ATL_MODULES`
 
 Allows you to compile ATL projects with [`permissive-`](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).
 
