@@ -60,8 +60,10 @@ Error Conditions
 | `NULL` | >0 | `EINVAL` | not modified |
 | any | >`INT_MAX` | `EINVAL` | not modified |
 | any | too small | `EINVAL` | not modified |
-
+ 
 If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `wctomb` returns `EINVAL` and sets `errno` to `EINVAL`.
+
+Return value `EILSEQ` indicates an encoding error has occurred. 
 
 ## Remarks
 
