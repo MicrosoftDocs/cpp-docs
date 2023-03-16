@@ -83,6 +83,9 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    | **Passphrase** | Passphrase used with private key selected above |
 
    You can use either a password or a key file and passphrase for authentication. For many development scenarios, password authentication is sufficient, but key files are more secure. If you already have a key pair, it's possible to reuse it. Currently Visual Studio only supports RSA and DSA keys for remote connections.
+   
+   > [!NOTE]
+   > If using `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`. 
 
 1. Choose the **Connect** button to attempt a connection to the remote computer.
 
