@@ -44,7 +44,7 @@ The address of a multibyte character.
 Size of the buffer *`mbchar`*.
 
 *`wchar`*\
-A wide character.
+The wide character to convert.
 
 *`locale`*\
 The locale to use.
@@ -63,7 +63,7 @@ Error Conditions
  
 If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `wctomb` returns `EINVAL` and sets `errno` to `EINVAL`.
 
-Return value `EILSEQ` indicates an encoding error has occurred. 
+The return value [EILSEQ](../errno-constants.md) indicates that the value passed via the parameter `wchar` is not a valid wide character.
 
 ## Remarks
 
