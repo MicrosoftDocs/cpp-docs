@@ -63,7 +63,7 @@ Error Conditions
  
 If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, `wctomb` returns `EINVAL` and sets `errno` to `EINVAL`.
 
-The return value [EILSEQ](../errno-constants.md) indicates that the value passed via the parameter `wchar` is not a valid wide character.
+The return value [`EILSEQ`](../errno-constants.md) indicates that the value passed via the parameter `wchar` is not a valid wide character.
 
 ## Remarks
 
