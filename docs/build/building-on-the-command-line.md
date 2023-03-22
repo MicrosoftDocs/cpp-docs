@@ -79,6 +79,9 @@ The Start menu folder and shortcut names vary depending on the installed version
 
 For an even faster way to open a developer command prompt, enter *developer command prompt* in the desktop search box. Then choose the result you want.
 
+> [!NOTE]
+> By default, the current working directory in a developer command prompt is the root of your Visual Studio installation in the Program Files directory. This isn't an appropriate location for your code and projects. Change the current working directory to another location before you create a project. The IDE creates projects in your user directory, typically in *%USERPROFILE%\\source\\repos*.
+
 ## <a name="developer_command_file_locations"></a> Developer command file locations
 
 If you prefer to set the build environment in an existing command prompt window, you can use one of the command files created by the installer. We recommend you set the environment in a new command prompt window. We don't recommend you later switch environments in the same command window.
@@ -144,7 +147,7 @@ When used with no arguments, *`vcvarsall.bat`* configures the environment variab
 
 ### `vcvarsall` syntax
 
-> **`vcvarsall.bat`** [*`architecture`*] [*`platform_type`*] [*`winsdk_version`*] [**`-vcvars_ver=`**_`vcversion`_] [*`spectre_mode`*]
+> **`vcvarsall.bat`** [*`architecture`*] [*`platform_type`*] [*`winsdk_version`*] [**`-vcvars_ver=`***`vcversion`*] [*`spectre_mode`*]
 
 *`architecture`*<br/>
 This optional argument specifies the host and target architecture to use. If *architecture* isn't specified, the default build environment is used. These arguments are supported:

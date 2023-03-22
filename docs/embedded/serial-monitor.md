@@ -19,7 +19,7 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 ## Capabilities
 
 - **Monitor a serial port**: Choose the **Start Monitoring** or **Stop Monitoring** button to control whether to monitor data coming from the port.
-- **Send data to a serial port**: Enter text into the text field at the bottom of the view. Use the **Enter** key or choose the **Send Message** button to send the data.
+- **Send data to a serial port**: Enter text into the text field at the bottom of the view. Use the **Enter** key or choose the **Send Message** arrow button to send the data.
 - **Clear the Serial Monitor output**: Choose the **Clear Output** button to clear the incoming data text field.
 - **Send preset control signals**: Use the split-button next to the input field to send preset control signals (Ctrl+C, Ctrl+D, Ctrl+X, and Ctrl+Z).
 - **Configure Serial Monitor and port connection settings**: See the following table to learn about the settings that the Serial Monitor provides.
@@ -50,7 +50,7 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 - **Toggle the serial monitor mode**: Choose **Serial** or **TCP** from the **Monitor Mode** dropdown.
 - **Monitor a serial/tcp port**: Choose the **Start Monitoring** or **Stop Monitoring** button to control whether to monitor data coming from the port.
 - **Monitor multiple serial/tcp ports at a time**: Press the **Open an additional Monitor** button to open another monitor.
-- **Send data to a serial/tcp port**: Enter text into the text field at the bottom of the view. Use the **Enter** key or choose the **Send Message** button to send the data.
+- **Send data to a serial/tcp port**: Enter text into the text field at the bottom of the view. Use the **Enter** key or choose the **Send Message** arrow button to send the data. When sending hex or binary data, bytes are automatically separated by spaces.
 - **Clear the Serial Monitor output**: Choose the **Clear Output** button to clear the incoming data text field.
 - **Send preset control signals**: Use the split-button next to the input field to send preset control signals (Ctrl+C, Ctrl+D, Ctrl+X, and Ctrl+Z).
 - **Configure Serial Monitor and connection settings**: See the following table to learn about the settings that the Serial Monitor provides.
@@ -66,9 +66,12 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 | **Host** | Name of your host address | Use the **Host** text box to enter your host name in **TCP** mode | Any string that matches a valid host |
 | **Port** | The port number of your address | Use the **Port** text box in **TCP** mode | Any valid TCP port |
 | **Line Ending** | The line ending to use in messages sent to the connected device | Use the **Line Ending** dropdown in **Serial** mode | None, LF, CR, CRLF |
+| **DTR** | Allows the DTR COM output line to be manually set | Use the **DTR** checkbox | True/False |
+| **RTS** | Allows the RTS COM output line to be manually set | Use the **RTS** checkbox | True/False |
 | **Timestamp** | Adds timestamps to the output of data received from the connected port | Use the **timestamp** toggle button | On/Off |
 | **Autoscroll** | Whether to auto-scroll new content that comes from the connected port | Use the **autoscroll** toggle button | On/Off |
 | **Automatic Reconnection** | Allows for automatic reconnection and monitoring of disconnected selected ports | Use the **automatic reconnection** toggle button | On/Off|
+| **Message Echoing** | Allows the ability to echo/not echo messages you send | Use the **message echoing** toggle button | On/Off |
 | **Message Encoding** | Can select type of encoding for messages sent to serial port | Use the **message encoding** dropdown | Text (utf8), Hex, Binary |
 | **Data bits** | Can select how many data bits are used for the serial port connection | Use the **Data bits** dropdown in the **additional settings** | 5, 6, 7, 8 |
 | **Stop bits** | Can select how many stop bits are used for the serial port connection | Use the **Stop bits** dropdown in the **additional settings** | 1, 1.5, 2 |

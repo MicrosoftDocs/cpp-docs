@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 11/08/2022
+ms.date: 02/28/2023
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
@@ -9,15 +9,69 @@ ms.custom: intro-whats-new
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 
-For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md)
+For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md)
+
+## What's new for C++ in Visual Studio version 17.5
+
+For a summary of new features and bug fixes in Visual Studio in version 17.5, see [Visual Studio 2022 version 17.5 Release Notes](/visualstudio/releases/2022/release-notes-v17.5).
+
+- `std::move`, `std::forward`, `std::move_if_noexcept`, and `std::forward_like` now don't produce function calls in generated code, even in debug mode. This change avoids named casts causing unnecessary overhead in debug builds. `/permissive-` (or an option that implies it, such as `/std:c++20` or `std:c++latest`) is required.
+
+- Added [`[[msvc::intrinsic]]`](../cpp/attributes.md#msvcintrinsic) to support the above item. You can apply this attribute to non-recursive functions consisting of a single cast, which take only one parameter.
+
+- Added support for Linux Console in the Integrated Terminal, which allows for terminal I/O.
+
+- Added initial experimental support for C11 atomic primitives (`<stdatomic.h>`). You can enable this experimental feature with the `/experimental:c11atomics` option in `/std:c11` mode or later.
+
+- Added a new set of experimental high-confidence checks to the Lifetime Checker for reduced noise.
+
+- A new preview feature, Remote File Explorer, lets you view the file directory on your remote machines within VS, and upload and download files to it.
+
+- Changed versioning of CMake executables shipped with Visual Studio to match Kitware versions.
+
+- Added support for Hot Reload to the CMake Project template.
+
+- Go To Definition for C++ now uses a more subtle indicator of the operation taking more time, replacing the modal dialog from previous versions.
+
+- Started rollout of an experiment providing more smart results in the C++ autocompletion and member list. This functionality was previously known as Predictive IntelliSense but now uses a new presentation method.
+
+- We now ship a native Arm64 Clang toolset with our LLVM workload, allowing native compilation on Arm64 machines.
+
+- Added localization to the [Image Watch Extension](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatchForVisualStudio2022) (This extension is available in the Marketplace, and isn't bundled through the Visual Studio Installer).
+
+- Added support for opening a Terminal window into the currently running Developer Container.
+
+- Made several improvements to IntelliSense macro expansion. Notably, we enabled recursive expansion in more contexts, and we added options to the pop up to copy the expansion to the clipboard or expand the macro inline.
+
+- Concurrent monitoring is now supported in the Serial Monitor. Concurrent monitoring allows you to monitor multiple ports at the same time side by side. Press the plus button to open another Serial Monitor and get started.
+
+- You can now view properties from base classes modified in an Unreal Blueprint asset without leaving Visual Studio. Double-click in a Blueprint reference for a C++ class or property to open the UE Asset Inspector in Visual Studio.
+
+- Enabled running DevContainers on a remote Linux machine.
+
+- Enabled selection of multiple targets to build in the CMake Targets view.
+
+- Added support for CMakePresets.json version 5. See the [CMake documentation](https://cmake.org/cmake/help/v3.24/manual/cmake-presets.7.html) for information of new features.
+
+- Enabled Test Explorer to build and test multiple CMake targets in parallel.
+
+- Added "Open container in terminal" option to Dev Containers.
+
+- Implemented standard library features:
+
+  - [P2508R1](https://wg21.link/P2508R1) `basic_format_string`, `format_string`, `wformat_string`
+
+  - [P2322R6](https://wg21.link/P2322R6) `ranges::fold_left`, `ranges::fold_right`, and so on.
+
+  - [P2321R2](https://wg21.link/P2321R2) `views::zip` (doesn't include `zip_transform`, `adjacent`, and `adjacent_transform`)
 
 ## What's new for C++ in Visual Studio version 17.4
 
-For a summary of new features and bug fixes in Visual Studio in version 17.34, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.4).
+For a summary of new features and bug fixes in Visual Studio in version 17.4, see [Visual Studio 2022 version 17.4 Release Notes](/visualstudio/releases/2022/release-notes-v17.4).
 
 - Improved compiler error messages to provide more correct and useful information, especially for concepts.
 
-- Added experimental MSVC flag **`/experimental:log<directory>`** to output SARIF build logs to the specified directory.
+- Added experimental MSVC option **`/experimental:log<directory>`** to output SARIF build logs to the specified directory.
 
 - Added support for C23 attributes to IntelliSense and continued progress in C++20 modules support.
 
@@ -25,8 +79,8 @@ For a summary of new features and bug fixes in Visual Studio in version 17.34, s
 
 - Improved Named Return Value Optimization (NRVO):
   - NRVO is enabled for cases that involve exception handling or loops.
-  - NRVO is enabled even under **`/Od`** if the user passes the **`/Zc:nrvo`** flag, or **`/std:c++20`** or later, or **`/permissive-`**.
-  - You can now disable NRVO with the **`/Zc:nrvo-`** flag.
+  - NRVO is enabled even under **`/Od`** if the user passes the **`/Zc:nrvo`** option, or **`/std:c++20`** or later, or **`/permissive-`**.
+  - You can now disable NRVO with the **`/Zc:nrvo-`** option.
 
 - Upgraded the version of LLVM shipped with Visual Studio to 15.0.1. For more information on what is available, see the [LLVM](https://releases.llvm.org/15.0.0/docs/ReleaseNotes.html) and [Clang](https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html) release notes.
 
@@ -41,7 +95,7 @@ For a summary of new features and bug fixes in Visual Studio in version 17.34, s
 - Updated the version of CMake shipped with Visual Studio to version 3.24.1. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.24/release/3.24.html).
 
 - Android SDK update:
-  - Ant scripts have been removed, so users will no longer see Ant-based templates in the New Project dialog. For help migrating from Ant templates to Gradle templates, see [Migrating Builds From Apache Ant](https://docs.gradle.org/current/userguide/migrating_from_ant.html)
+  - Ant scripts have been removed, so users no longer see Ant-based templates in the New Project dialog. For help migrating from Ant templates to Gradle templates, see [Migrating Builds From Apache Ant](https://docs.gradle.org/current/userguide/migrating_from_ant.html)
   - Added support for building with NDK 23 and 24
   - Updated NDK component to the LTS version 23
 
@@ -82,7 +136,7 @@ We've improved responsiveness of **Go To All**. Previously, results appeared aft
 
 - In contexts requiring `enum` type completion (for example, assignments to `enum` variables, case labels, returning `enum` type, and so on), the autocompletion list is now filtered to just the matching enumerators and related constructs.
 
-- Added NuGet PackageReference support for C++/CLI MSBuild projects targeting .NET Core. This change was made to unblock mixed codebases from being able to adopt .NET Core. This support doesn't work for other C++ project types or any C++ project types targeting .NET Framework. There are no plans to extend PackageReference support to other C++ scenarios. The team is working on separate experiences involving vcpkg, which will work for non-MSBuild scenarios and add greater functionality.
+- Added NuGet PackageReference support for C++/CLI MSBuild projects targeting .NET Core. This change was made to unblock mixed codebases from being able to adopt .NET Core. This support doesn't work for other C++ project types or any C++ project types targeting .NET Framework. There are no plans to extend PackageReference support to other C++ scenarios. The team is working on separate experiences involving vcpkg for non-MSBuild scenarios and to add greater functionality.
 
 - Added a Serial Monitor window for embedded development, available through **Debug** > **Windows** > **Serial Monitor**.
 
@@ -131,7 +185,7 @@ For a summary of new features and bug fixes in Visual Studio in version 17.1, se
 
 - The versions of [`Clang`](https://releases.llvm.org/13.0.0/tools/clang/docs/ReleaseNotes.html) and [`LLVM`](https://releases.llvm.org/13.0.0/docs/ReleaseNotes.html) shipped with Visual Studio have been upgraded to v13.
 
-- Visual Studio's CMake integration is only active when a *`CMakeLists.txt`* is identified at the root of the open workspace. If a *`CMakeLists.txt`* is identified at another level of the workspace, then you'll be prompted to activate Visual Studio's CMake integration with a notification.
+- Visual Studio's CMake integration is only active when a *`CMakeLists.txt`* is identified at the root of the open workspace. If a *`CMakeLists.txt`* is identified at another level of the workspace, then you're prompted to activate Visual Studio's CMake integration with a notification.
 
 - Added a new register visualization window for embedded targets, available through **Debug** > **Windows** > **Embedded Registers**.
 
@@ -255,4 +309,4 @@ We'd love to hear from you! You can [Report a Problem or Suggest a Feature](/vis
 
 ## Blogs
 
-Take advantage of the insights and recommendations available in the [Microsoft Developer Blogs](https://devblogs.microsoft.com/) site. They'll keep you up to date on all new releases. The blogs include deep dive posts on a broad range of features. You'll find the [C++ Team Blog](https://devblogs.microsoft.com/cppblog) and the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio) of particular interest.
+Take advantage of the insights and recommendations available in the [Microsoft Developer Blogs](https://devblogs.microsoft.com/) site to stay up to date on all new releases. The blogs include deep dive posts on a broad range of features. The [C++ Team Blog](https://devblogs.microsoft.com/cppblog) and the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio) are of particular interest.

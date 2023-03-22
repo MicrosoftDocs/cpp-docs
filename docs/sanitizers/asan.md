@@ -32,7 +32,7 @@ Use AddressSanitizer to reduce your time spent on:
 - Stress testing
 - Integrating new code
 
-AddressSanitizer, originally [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany), is a powerful alternative to both [`/RTC` (Runtime error checks)](../build/reference/rtc-run-time-error-checks.md) and [`/analyze` (Static analysis)](../build/reference/analyze-code-analysis.md). It provides run-time bug-finding technologies that use your existing build systems and existing test assets directly.
+AddressSanitizer, originally [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany), provides run-time bug-finding technologies that use your existing build systems and existing test assets directly.
 
 AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using one extra compiler option: **`/fsanitize=address`**. The new option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
 

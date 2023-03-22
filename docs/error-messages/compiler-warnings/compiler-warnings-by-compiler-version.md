@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 11/07/2022
+ms.date: 02/28/2023
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -47,12 +47,22 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2022 version 17.2 | 19.32 |
 | Visual Studio 2022 version 17.3 | 19.33 |
 | Visual Studio 2022 version 17.4 | 19.34 |
+| Visual Studio 2022 version 17.5 | 19.35 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= msvc-170"
+
+## Warnings introduced in Visual Studio 2022 version 17.5 (compiler version 19.35)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.34`**.
+
+| Warning | Message |
+|--|--|
+| C5082 | second argument to '`va_start`' is not the last named parameter |
+| C5265 | cannot open search path '*pathname*' |
 
 ## Warnings introduced in Visual Studio 2022 version 17.4 (compiler version 19.34)
 

@@ -26,6 +26,8 @@ To enable compilation for C++/CLI, you must use the [/clr](reference/clr-common-
 
    Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the command prompt window as an administrator, right-click to open the shortcut menu for the command prompt and then choose **More** > **Run as administrator**.
 
+1. Change the current working directory in the command prompt window to a directory you can write to, such as your Documents directory.
+
 1. At the command prompt, enter `notepad basicclr.cpp`.
 
    Choose **Yes** when you're prompted to create a file.

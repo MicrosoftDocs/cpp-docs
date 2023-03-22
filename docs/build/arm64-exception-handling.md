@@ -357,7 +357,7 @@ The fields are as follows:
 - **CR** is a 2-bit flag indicating whether the function includes extra instructions to set up a frame chain and return link:
   - 00 = unchained function, `<x29,lr>` pair isn't saved in stack
   - 01 = unchained function, `<lr>` is saved in stack
-  - 10 = chained function with signed return address
+  - 10 = chained function with a `pacibsp` signed return address
   - 11 = chained function, a store/load pair instruction is used in prolog/epilog `<x29,lr>`
 - **H** is a 1-bit flag indicating whether the function homes the integer parameter registers (x0-x7) by storing them at the very start of the function. (0 = doesn't home registers, 1 = homes registers).
 - **RegI** is a 4-bit field indicating the number of non-volatile INT registers (x19-x28) saved in the canonical stack location.
@@ -382,7 +382,7 @@ Step 6: Allocate remaining stack, including local area, `<x29,lr>` pair, and out
 | Step # | Flag values | # of instructions | Opcode | Unwind code |
 |--|--|--|--|--|
 | 0 |  |  | `#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz` |
-| 1 | **CR** == 11 | 1 | `pacibsp` | `pac_sign_lr` |
+| 1 | **CR** == 10 | 1 | `pacibsp` | `pac_sign_lr` |
 | 2 | 0 < **RegI** <= 10 | **RegI** / 2 +<br/> **RegI** % 2 | `stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...` | `save_regp_x`<br/>`save_regp`<br/>`...` |
 | 3 | **CR** == 01\* | 1 | `str lr,[sp,#(intsz-8)]`\* | `save_reg` |
 | 4 | 0 < **RegF** <= 7 | (**RegF** + 1) / 2 +<br/>(**RegF** + 1) % 2) | `stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]` | `save_fregp`<br/>`...`<br/>`save_freg` |
