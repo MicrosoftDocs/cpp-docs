@@ -38,6 +38,7 @@ Locale specifier.
 ## Return value
 
 If a valid *`locale`* and *`category`* are given, the functions return a pointer to the string associated with the specified *`locale`* and *`category`*.
+If the *`locale`*  argument is `NULL`, the functions return the current locale.
 
 If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, each function sets `errno` to `EINVAL`, and returns `NULL`.
 
