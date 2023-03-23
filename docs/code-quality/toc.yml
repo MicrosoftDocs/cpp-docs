@@ -255,6 +255,8 @@ items:
     href: ../code-quality/c6014.md
   - name: Warning C6029
     href: ../code-quality/c6029.md
+  - name: Warning C6030
+    href: ../code-quality/c6030.md
   - name: Warning C6031
     href: ../code-quality/c6031.md
   - name: Warning C6053
@@ -267,6 +269,8 @@ items:
     href: ../code-quality/c6063.md
   - name: Warning C6064
     href: ../code-quality/c6064.md
+  - name: Warning C6065
+    href: ../code-quality/c6065.md
   - name: Warning C6066
     href: ../code-quality/c6066.md
   - name: Warning C6067
