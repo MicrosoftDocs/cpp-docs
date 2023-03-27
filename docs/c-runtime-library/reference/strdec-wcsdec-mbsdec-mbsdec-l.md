@@ -15,7 +15,7 @@ ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
 Moves a string pointer back one character.
 
 > [!IMPORTANT]
-> **`mbsdec`** and **`mbsdec_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsdec`** and **`_mbsdec_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
