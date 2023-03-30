@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Best practices and examples (SAL)"
 title: Best practices and examples (SAL)
-ms.date: 01/27/2022
+ms.date: 03/30/2023
 ms.topic: "conceptual"
 ---
 # Best practices and examples (SAL)
@@ -10,7 +10,7 @@ Here are some ways to get the most out of the Source Code Annotation Language (S
 
 ## `_In_`
 
-If the function is supposed to write to the element, use `_Inout_` instead of `_In_`. This is particularly relevant in cases of automated conversion from older macros to SAL. Prior to SAL, many programmers used macros as comments—macros that were named `IN`, `OUT`, `IN_OUT`, or variants of these names. Although we recommend that you convert these macros to SAL, we also urge you to be careful when you convert them because the code might have changed since the original prototype was written and the old macro might no longer reflect what the code does. Be especially careful about the `OPTIONAL` comment macro because it's frequently placed incorrectly—for example, on the wrong side of a comma.
+If the function is supposed to write to the element, use `_Inout_` instead of `_In_`. This is relevant in cases of automated conversion from older macros to SAL. Prior to SAL, many programmers used macros as comments—macros that were named `IN`, `OUT`, `IN_OUT`, or variants of these names. Although we recommend that you convert these macros to SAL, we also urge you to be careful when you convert them because the code might have changed since the original prototype was written and the old macro might no longer reflect what the code does. Be especially careful about the `OPTIONAL` comment macro because it's frequently placed incorrectly—for example, on the wrong side of a comma.
 
 ```cpp
 #include <sal.h>
@@ -25,7 +25,10 @@ void Func1(_In_ int *p1)
 }
 
 // Correct
-void Func2(_Inout_ PCHAR p1)
+// _Out_opt_ because the function tolerates NULL as a valid argument, i.e.
+// no error is returned. If the function didn't check p1 for NULL, then
+// _Out_ would be the better choice
+void Func2(_Out_opt_ PCHAR p1)
 {
     if (p1 == NULL)
         return;
@@ -36,7 +39,7 @@ void Func2(_Inout_ PCHAR p1)
 
 ## `_opt_`
 
-If the caller isn't allowed to pass in a null pointer, use `_In_` or `_Out_` instead of `_In_opt_` or `_Out_opt_`. This applies even to a function that checks its parameters and returns an error if it is `NULL` when it shouldn't be. Although having a function check its parameter for unexpected `NULL` and return gracefully is a good defensive coding practice, it doesn't mean that the parameter annotation can be of an optional type (`_*Xxx*_opt_`).
+If the caller isn't allowed to pass in a null pointer, use `_In_` or `_Out_` instead of `_In_opt_` or `_Out_opt_`. This applies even to a function that checks its parameters and returns an error if it's `NULL` when it shouldn't be. Although having a function check its parameter for unexpected `NULL` and return gracefully is a good defensive coding practice, it doesn't mean that the parameter annotation can be of an optional type (`_*Xxx*_opt_`).
 
 ```cpp
 #include <sal.h>
@@ -56,7 +59,7 @@ void Func2(_Out_ int *p1)
 
 ## `_Pre_defensive_` and `_Post_defensive_`
 
-If a function appears at a trust boundary, we recommend that you use the `_Pre_defensive_` annotation.  The "defensive" modifier modifies certain annotations to indicate that, at the point of call, the interface should be checked strictly, but in the implementation body it should assume that incorrect parameters might be passed. In that case, `_In_ _Pre_defensive_` is preferred at a trust boundary to indicate that although a caller will get an error if it attempts to pass `NULL`, the function body will be analyzed as if the parameter might be `NULL`, and any attempts to de-reference the pointer without first checking it for `NULL` will be flagged.  A `_Post_defensive_` annotation is also available, for use in callbacks where the trusted party is assumed to be the caller and the untrusted code is the called code.
+If a function appears at a trust boundary, we recommend that you use the `_Pre_defensive_` annotation.  The "defensive" modifier modifies certain annotations to indicate that, at the point of call, the interface should be checked strictly, but in the implementation body it should assume that incorrect parameters might be passed. In that case, `_In_ _Pre_defensive_` is preferred at a trust boundary to indicate that although a caller gets an error if it attempts to pass `NULL`, the function body is analyzed as if the parameter might be `NULL`, and any attempts to dereference the pointer without first checking it for `NULL` are flagged.  A `_Post_defensive_` annotation is also available, for use in callbacks where the trusted party is assumed to be the caller and the untrusted code is the called code.
 
 ## `_Out_writes_`
 
@@ -71,7 +74,7 @@ void Func1(_Out_writes_(size) CHAR *pb,
 );
 ```
 
-The annotation `_Out_writes_` signifies that you have a buffer. It has `cb` bytes allocated, with the first byte initialized on exit. This annotation isn't strictly wrong and it's helpful to express the allocated size. However, it doesn't tell how many elements are initialized by the function.
+The annotation `_Out_writes_` signifies that you have a buffer. It has `cb` bytes allocated, with the first byte initialized on exit. This annotation isn't strictly wrong and it's helpful to express the allocated size. However, it doesn't tell how many elements the function initializes.
 
 The next example shows three correct ways to fully specify the exact size of the initialized portion of the buffer.
 
@@ -204,7 +207,7 @@ BOOL WINAPI TryEnterCriticalSection(
 
 ## Reference variable
 
-For a reference variable, the previous version of SAL used the implied pointer as the annotation target and required the addition of a `__deref` to annotations that attached to a reference variable. This version uses the object itself and doesn't require the additional `_Deref_`.
+For a reference variable, the previous version of SAL used the implied pointer as the annotation target and required the addition of a `__deref` to annotations that attached to a reference variable. This version uses the object itself and doesn't require `_Deref_`.
 
 ```cpp
 #include <sal.h>
