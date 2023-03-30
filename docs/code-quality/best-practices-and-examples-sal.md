@@ -25,7 +25,10 @@ void Func1(_In_ int *p1)
 }
 
 // Correct
-void Func2(_Out_ PCHAR p1)
+// _Out_opt_ because the function tolerates NULL as a valid argument, i.e.
+// no error is returned. If the function didn't check p1 for NULL, then
+// _Out_ would be the better choice
+void Func2(_Out_opt_ PCHAR p1)
 {
     if (p1 == NULL)
         return;
