@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Best practices and examples (SAL)"
 title: Best practices and examples (SAL)
-ms.date: 01/27/2022
+ms.date: 03/30/2023
 ms.topic: "conceptual"
 ---
 # Best practices and examples (SAL)
@@ -25,7 +25,7 @@ void Func1(_In_ int *p1)
 }
 
 // Correct
-void Func2(_Inout_ PCHAR p1)
+void Func2(_Out_ PCHAR p1)
 {
     if (p1 == NULL)
         return;
