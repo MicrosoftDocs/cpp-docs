@@ -39,6 +39,7 @@
     "globalMetadata": {
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
       "extendBreadcrumb": "true",
+      "uhfHeaderId": "MSDocsHeader-CPP",
       "ROBOTS": "INDEX,FOLLOW",
       "manager": "markl",
       "ms.date": "11/16/2016",
