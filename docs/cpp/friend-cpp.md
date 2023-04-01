@@ -4,7 +4,6 @@ title: "friend (C++)"
 ms.date: 06/30/2022
 f1_keywords: ["friend_cpp"]
 helpviewer_keywords: ["member access, from friend functions", "friend classes [C++]", "friend keyword [C++]"]
-ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
 ---
 # `friend` (C++)
 
@@ -225,8 +224,9 @@ Friendship isn't inherited, meaning that classes derived from `YourOtherClass` c
 
 The following figure shows four class declarations: `Base`, `Derived`, `aFriend`, and `anotherFriend`. Only class `aFriend` has direct access to the private members of `Base` (and to any members `Base` might have inherited).
 
-![Diagram showing the derivation implications of a friend relationship.](../cpp/media/vc38v41.gif "Implications of friend relationship") <br/>
-Implications of friend relationship
+::image type="complex" source="../cpp/media/vc38v41.gif" alt-text="Diagram showing the derivation implications of a friend relationship.":::
+The diagram shows that class anotherFriend doesn't have a friend relationship with class base which friends class aFriend. Class aFriend is friended by class Base, but it doesn't have a friend relationship with class Derived even though class Derived inherits from Base, thus showing that inheritance doesn't imply the derived class has the same friends as the base class.
+:::image-end:::
 
 ## Inline `friend` definitions
 

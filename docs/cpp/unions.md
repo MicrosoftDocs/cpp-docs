@@ -4,7 +4,6 @@ description: "A description of the Standard C++ union class-type and keyword, it
 ms.date: "08/18/2020"
 f1_keywords: ["union_cpp"]
 helpviewer_keywords: ["class type [C++], union as", "union keyword [C++]"]
-ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
 no-loc: ["union", "struct", "enum", "class", "static"]
 ---
 # `union`
@@ -536,8 +535,9 @@ int main()
 
 The `NumericType` union is arranged in memory (conceptually) as shown in the following figure.
 
-![Diagram that shows the overlapping storage of data in a numeric type union.](../cpp/media/vc38ul1.png "Storage of data in a NumericType union") <br/>
-Storage of data in a `NumericType` union
+:::image type="complex" source="../cpp/media/vc38ul1.png" alt-text="Diagram that shows the overlapping storage of data in the NumericType union.":::
+The diagram shows 8 bytes of data. The type double dValue occupies the entire 8 bytes. The type long lValue occupies the first four bytes. The type short iValue occupies the first byte.
+:::image-end:::
 
 ## <a name="anonymous_unions"></a> Anonymous union
 

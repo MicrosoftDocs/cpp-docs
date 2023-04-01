@@ -4,7 +4,6 @@ description: "Overview of the C++ language dynamic_cast operator."
 ms.date: "02/03/2020"
 f1_keywords: ["dynamic_cast_cpp"]
 helpviewer_keywords: ["dynamic_cast keyword [C++]"]
-ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
 ---
 # dynamic_cast Operator
 
@@ -114,8 +113,9 @@ int main() {
 }
 ```
 
-![Class hierarchy that shows multiple inheritance.](../cpp/media/vc39011.gif "Class hierarchy that shows multiple inheritance") <br/>
-Class hierarchy that shows multiple inheritance
+:::image type="complex" source="../cpp/media/vc39011.gif" alt-text="Class hierarchy that shows multiple inheritance.":::
+The diagram shows a class hierarchy with A as a base class of B which in turn is a base class of D. A is also a base class for C which in turn is a base class for D. Note that class D inherits from both B and C.
+:::image-end:::  
 
 A pointer to an object of type `D` can be safely cast to `B` or `C`. However, if `D` is cast to point to an `A` object, which instance of `A` would result? This would result in an ambiguous casting error. To get around this problem, you can perform two unambiguous casts. For example:
 
@@ -137,14 +137,18 @@ void f() {
 
 Further ambiguities can be introduced when you use virtual base classes. Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows virtual base classes.](../cpp/media/vc39012.gif "Class hierarchy that shows virtual base classes") <br/>
+:::image type="complex" source="../cpp/media/vc39012.gif" alt-text="Class hierarchy that shows virtual base classes.":::
+The diagram shows the classes A, B, C, D, and E arranged as follows: Class A is a base class of B. Classes C and E each derive from B. Class E also inherits from D which inherits from class B which in turn inherits from class A.
+:::image-end:::  
 Class hierarchy that shows virtual base classes
 
 In this hierarchy, `A` is a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a **`dynamic_cast`** to a pointer to `B` will fail due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.
 
 Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows duplicate base classes.](../cpp/media/vc39013.gif "Class hierarchy that shows duplicate base classes") <br/>
+:::image type="complex" source="../cpp/media/vc39013.gif" alt-text="Class hierarchy that shows duplicate base classes.":::
+The diagram shows the classes A, B, C, D, and E arranged as follows: Class B derives from Class A. Class C derives from class A. class D derives from class B. Class E derives from class C which derives from class A. In this case, the duplicate base class is class A which is directly or indirectly inherited by all the other classes. Class A is inherited directly by classes B and C, and indirectly by class D via class B, and indirectly by class E via class C, and indirectly in class D via class B.
+:::image-end:::  
 Class hierarchy that shows duplicate base classes
 
 Given an object of type `E` and a pointer to the `D` subobject, to navigate from the `D` subobject to the left-most `A` subobject, three conversions can be made. You can perform a **`dynamic_cast`** conversion from the `D` pointer to an `E` pointer, then a conversion (either **`dynamic_cast`** or an implicit conversion) from `E` to `B`, and finally an implicit conversion from `B` to `A`. For example:

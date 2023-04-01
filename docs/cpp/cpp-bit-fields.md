@@ -3,7 +3,6 @@ description: "Learn more about: C++ Bit Fields"
 title: "C++ Bit Fields"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["bitfields [C++]", "fields [C++], bit", "bit fields"]
-ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
 ---
 # C++ Bit Fields
 
@@ -35,8 +34,9 @@ struct Date {
 
 The conceptual memory layout of an object of type `Date` is shown in the following figure.
 
-![Memory layout of a date object, showing the nWeekDay, nMonthDay, nMonth, and nYear bit fields.](../cpp/media/vc38uq1.png "Memory layout of a date object") <br/>
-Memory Layout of Date Object
+:::image type="complex" source="../cpp/media/vc38uq1.png" alt-text="Memory layout of a date object, showing where the nWeekDay, nMonthDay, nMonth, and nYear bit fields fall.":::
+32 bits of memory are displayed in a row. The rightmost 3 bits are for nWeekDay. The next 6 bits to the left are for nMonthDay. The next 5 bits to the left are for nMonth. The next two bits are unused. The next 8 bits are for nYear. The remaining 8 bits to the left are unused.
+:::image-end:::  
 
 Note that `nYear` is 8 bits long and would overflow the word boundary of the declared type, **`unsigned short`**. Therefore, it is begun at the beginning of a new **`unsigned short`**. It is not necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
 
@@ -62,8 +62,9 @@ struct Date {
 
 then the memory layout is as shown in the following figure:
 
-![Layout of a Date object with a zero length bit field, which forces alignment padding.](../cpp/media/vc38uq2.png) <br/>
-Layout of Date Object with Zero-Length Bit Field
+:::image type="complex" source="../cpp/media/vc38uq2.png" alt-text="Layout of a Date object with a zero length bit field, which forces alignment padding.":::
+64 bits of memory are displayed in a row. The rightmost 5 bits are for nMonth. The next 8 bits to the left are for nYear. The next 19 bits to the left are unused. The next 3 bits to the left are for nWeekDay. The next 6 bits to the left are for nMonthDay. The remaining bits to the left are unused.
+:::image-end:::  
 
 The underlying type of a bit field must be an integral type, as described in [Built-in types](../cpp/fundamental-types-cpp.md).
 
