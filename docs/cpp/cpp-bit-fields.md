@@ -38,7 +38,7 @@ The conceptual memory layout of an object of type `Date` is shown in the followi
 32 bits of memory are displayed in a row. Starting with the least significant bit, 3 bits are for nWeekDay. The next 6 bits are for nMonthDay. The next 5 bits are for nMonth. The next 2 bits are unused. The next 8 bits are for nYear. The remaining 8 bits are unused.
 :::image-end:::  
 
-`nYear` is 8 bits long which would overflow the word boundary of the declared type, **`unsigned short`**. Therefore, it starts at the beginning of a new **`unsigned short`**. It isn't necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
+`nYear` is 8 bits long, which would overflow the word boundary of the declared type, **`unsigned short`**. Therefore, it starts at the beginning of a new **`unsigned short`**. It isn't necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
 
 **Microsoft Specific**
 
