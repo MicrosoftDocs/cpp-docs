@@ -32,7 +32,7 @@ struct Date {
 };
 ```
 
-The conceptual memory layout of an object of type `Date` is shown in the following figure.
+The conceptual memory layout of an object of type `Date` is shown in the following figure:
 
 :::image type="complex" source="../cpp/media/vc38uq1.png" alt-text="Memory layout of a date object, showing where the nWeekDay, nMonthDay, nMonth, and nYear bit fields fall.":::
 32 bits of memory are displayed in a row. Starting with the least significant bit, 3 bits are for nWeekDay. The next 6 bits are for nMonthDay. The next 5 bits are for nMonth. The next 2 bits are unused. The next 8 bits are for nYear. The remaining 8 bits are unused.
@@ -46,7 +46,7 @@ The ordering of data declared as bit fields is from low to high bit, as shown in
 
 **END Microsoft Specific**
 
-If the declaration of a structure includes an unnamed field of length 0, as shown in the following example,
+If the declaration of a structure includes an unnamed field of length 0, as shown in the following example:
 
 ```cpp
 // bit_fields2.cpp
@@ -60,7 +60,7 @@ struct Date {
 };
 ```
 
-then the memory layout is as shown in the following figure:
+Then the memory layout is as shown in the following figure:
 
 :::image type="complex" source="../cpp/media/vc38uq2.png" alt-text="Layout of a Date object with a zero length bit field, which forces alignment padding.":::
 64 bits of memory are displayed in a row. Starting with the least significant bit, 5 bits are for nMonth. The next 8 bits are for nYear. The next 19 bits are unused. The next 3 bits are for nWeekDay. The next 6 bits are for nMonthDay. The remaining bits are unused.

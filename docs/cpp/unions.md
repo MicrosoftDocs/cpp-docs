@@ -533,7 +533,7 @@ int main()
 */
 ```
 
-The `NumericType` union is arranged in memory (conceptually) as shown in the following figure.
+The `NumericType` union is arranged in memory (conceptually) as shown in the following figure:
 
 :::image type="complex" source="../cpp/media/vc38ul1.png" alt-text="Diagram that shows the overlapping storage of data in the NumericType union.":::
 The diagram shows 8 bytes of data. The double type dValue occupies the entire 8 bytes. The type long lValue occupies the first 4 bytes. The short type iValue occupies the first byte.

@@ -23,11 +23,11 @@ See [static_cast](../cpp/static-cast-operator.md) for an explanation of the diff
 
 There are two breaking changes in the behavior of **`dynamic_cast`** in managed code:
 
-- **`dynamic_cast`** to a pointer to the underlying type of a boxed enum fails at runtime, returning 0 instead of the converted pointer.
+- **`dynamic_cast`** to a pointer to the underlying type of a boxed enum will fail at runtime, returning 0 instead of the converted pointer.
 
-- **`dynamic_cast`** won't throw an exception when `type-id` is an interior pointer to a value type; instead, the cast fails at runtime. The cast returns the 0 pointer value instead of throwing.
+- **`dynamic_cast`** will no longer throw an exception when `type-id` is an interior pointer to a value type; instead, the cast fails at runtime. The cast returns the 0 pointer value instead of throwing.
 
-If `type-id` is a pointer to an unambiguous accessible direct or indirect base class of `expression`; a pointer to the unique subobject of type `type-id` is the result. For example:
+If `type-id` is a pointer to an unambiguous accessible direct or indirect base class of `expression`, then a pointer to the unique subobject of type `type-id` is the result. For example:
 
 ```cpp
 // dynamic_cast_1.cpp

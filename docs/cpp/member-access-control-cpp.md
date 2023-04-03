@@ -228,7 +228,7 @@ In the preceding example, calling the virtual function `GetState` using a pointe
 
 ## Access control with multiple inheritance
 
-In multiple-inheritance lattices involving virtual base classes, a given name can be reached through more than one path. Because different access control can be applied along these different paths, the compiler chooses the path that gives the most access. See the following figure.
+In multiple-inheritance lattices involving virtual base classes, a given name can be reached through more than one path. Because different access control can be applied along these different paths, the compiler chooses the path that gives the most access. See the following figure:
 
 :::image type="complex" source="../cpp/media/vc38v91.gif" alt-text="Diagram showing access along the paths of an inheritance graph.":::
 The diagram shows the following inheritance hierarchy: class VBase is the base class. Class LeftPath inherits from VBase using virtual private VBase. class RightPath also inherits from VBase but using virtual public VBase. Finally, class Derived inherits from both class LeftPath and class RightPath using public LeftPath, public RightPath.
