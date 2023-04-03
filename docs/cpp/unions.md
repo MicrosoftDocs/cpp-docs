@@ -13,7 +13,7 @@ no-loc: ["union", "struct", "enum", "class", "static"]
 
 A **`union`** is a user-defined type in which all members share the same memory location. This definition means that at any given time, a union can contain no more than one object from its list of members. It also means that no matter how many members a union has, it always uses only enough memory to store the largest member.
 
-A union can be useful for conserving memory when you have lots of objects and limited memory. However, a union requires extra care to use correctly. You're responsible for ensuring that you always access the same member you assigned. If any member types have a non-trivial constructor, then you must write additional code to explicitly construct and destroy that member. Before you use a union, consider whether the problem you're trying to solve could be better expressed by using a base class and derived class types.
+A union can be useful for conserving memory when you have lots of objects and limited memory. However, a union requires extra care to use correctly. You're responsible for ensuring that you always access the same member you assigned. If any member types have a nontrivial constructor, then you must write code to explicitly construct and destroy that member. Before you use a union, consider whether the problem you're trying to solve could be better expressed by using a base class and derived class types.
 
 ## Syntax
 
@@ -21,10 +21,10 @@ A union can be useful for conserving memory when you have lots of objects and li
 
 ### Parameters
 
-*`tag`*<br/>
+*`tag`*\
 The type name given to the union.
 
-*`member-list`*<br/>
+*`member-list`*\
 Members that the union can contain.
 
 ## Declare a union
@@ -143,7 +143,7 @@ It's easy to misuse the `Input` struct in the example. It's up to the user to us
 
 ## Unrestricted union (C++11)
 
-In C++03 and earlier, a union can contain non-static data members that have a class type, as long as the type has no user provided constructors, destructors, or assignment operators. In C++11, these restrictions are removed. If you include such a member in your union, the compiler automatically marks any special member functions that aren't user provided as **`deleted`**. If the union is an anonymous union inside a class or struct, then any special member functions of the class or struct that aren't user provided are marked as **`deleted`**. The following example shows how to handle this case. One of the members of the union has a member that requires this special treatment:
+In C++03 and earlier, a union can contain nonstatic data members that have a class type, as long as the type has no user provided constructors, destructors, or assignment operators. In C++11, these restrictions are removed. If you include such a member in your union, the compiler automatically marks any special member functions that aren't user provided as **`deleted`**. If the union is an anonymous union inside a class or struct, then any special member functions of the class or struct that aren't user provided are marked as **`deleted`**. The following example shows how to handle this case. One of the members of the union has a member that requires this special treatment:
 
 ```cpp
 // for MyVariant
@@ -536,7 +536,7 @@ int main()
 The `NumericType` union is arranged in memory (conceptually) as shown in the following figure.
 
 :::image type="complex" source="../cpp/media/vc38ul1.png" alt-text="Diagram that shows the overlapping storage of data in the NumericType union.":::
-The diagram shows 8 bytes of data. The type double dValue occupies the entire 8 bytes. The type long lValue occupies the first four bytes. The type short iValue occupies the first byte.
+The diagram shows 8 bytes of data. The double type dValue occupies the entire 8 bytes. The type long lValue occupies the first 4 bytes. The short type iValue occupies the first byte.
 :::image-end:::
 
 ## <a name="anonymous_unions"></a> Anonymous union
@@ -547,17 +547,15 @@ An anonymous union is one declared without a *`class-name`* or *`declarator-list
 
 Names declared in an anonymous union are used directly, like nonmember variables. It implies that the names declared in an anonymous union must be unique in the surrounding scope.
 
-An anonymous union is subject to these additional restrictions:
+An anonymous union is subject to these restrictions:
 
 - If declared in file or namespace scope, it must also be declared as **`static`**.
-
 - It can have only **`public`** members; having **`private`** and **`protected`** members in an anonymous union generates errors.
-
 - It can't have member functions.
 
 ## See also
 
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[`class`](../cpp/class-cpp.md)<br/>
+[Classes and Structs](../cpp/classes-and-structs-cpp.md)\
+[Keywords](../cpp/keywords-cpp.md)\
+[`class`](../cpp/class-cpp.md)\
 [`struct`](../cpp/struct-cpp.md)
