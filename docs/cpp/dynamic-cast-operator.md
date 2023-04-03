@@ -4,7 +4,6 @@ description: "Overview of the C++ language dynamic_cast operator."
 ms.date: "02/03/2020"
 f1_keywords: ["dynamic_cast_cpp"]
 helpviewer_keywords: ["dynamic_cast keyword [C++]"]
-ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
 ---
 # dynamic_cast Operator
 
@@ -20,15 +19,15 @@ dynamic_cast < type-id > ( expression )
 
 The `type-id` must be a pointer or a reference to a previously defined class type or a "pointer to void". The type of `expression` must be a pointer if `type-id` is a pointer, or an l-value if `type-id` is a reference.
 
-See [static_cast](../cpp/static-cast-operator.md) for an explanation of the difference between static and dynamic casting conversions, and when it is appropriate to use each.
+See [static_cast](../cpp/static-cast-operator.md) for an explanation of the difference between static and dynamic casting conversions, and when it's appropriate to use each.
 
 There are two breaking changes in the behavior of **`dynamic_cast`** in managed code:
 
 - **`dynamic_cast`** to a pointer to the underlying type of a boxed enum will fail at runtime, returning 0 instead of the converted pointer.
 
-- **`dynamic_cast`** will no longer throw an exception when `type-id` is an interior pointer to a value type, with the cast failing at runtime.  The cast will now return the 0 pointer value instead of throwing.
+- **`dynamic_cast`** will no longer throw an exception when `type-id` is an interior pointer to a value type; instead, the cast fails at runtime. The cast returns the 0 pointer value instead of throwing.
 
-If `type-id` is a pointer to an unambiguous accessible direct or indirect base class of `expression`, a pointer to the unique subobject of type `type-id` is the result. For example:
+If `type-id` is a pointer to an unambiguous accessible direct or indirect base class of `expression`, then a pointer to the unique subobject of type `type-id` is the result. For example:
 
 ```cpp
 // dynamic_cast_1.cpp
@@ -45,7 +44,7 @@ void f(D* pd) {
 }
 ```
 
-This type of conversion is called an "upcast" because it moves a pointer up a class hierarchy, from a derived class to a class it is derived from. An upcast is an implicit conversion.
+This type of conversion is called an "upcast" because it moves a pointer up a class hierarchy, from a derived class to a class it's derived from. An upcast is an implicit conversion.
 
 If `type-id` is void*, a run-time check is made to determine the actual type of `expression`. The result is a pointer to the complete object pointed to by `expression`. For example:
 
@@ -66,7 +65,7 @@ void f() {
 }
 ```
 
-If `type-id` is not void*, a run-time check is made to see if the object pointed to by `expression` can be converted to the type pointed to by `type-id`.
+If `type-id` isn't `void*`, a run-time check is made to see if the object pointed to by `expression` can be converted to the type pointed to by `type-id`.
 
 If the type of `expression` is a base class of the type of `type-id`, a run-time check is made to see if `expression` actually points to a complete object of the type of `type-id`. If this is true, the result is a pointer to a complete object of the type of `type-id`. For example:
 
@@ -114,8 +113,9 @@ int main() {
 }
 ```
 
-![Class hierarchy that shows multiple inheritance.](../cpp/media/vc39011.gif "Class hierarchy that shows multiple inheritance") <br/>
-Class hierarchy that shows multiple inheritance
+:::image type="complex" source="../cpp/media/vc39011.gif" alt-text="Diagram that shows multiple inheritance.":::
+The diagram shows a class hierarchy with A as a base class of B which is a base class of D. A is also a base class for C, which is a base class for D. Class D inherits from both B and C.
+:::image-end:::  
 
 A pointer to an object of type `D` can be safely cast to `B` or `C`. However, if `D` is cast to point to an `A` object, which instance of `A` would result? This would result in an ambiguous casting error. To get around this problem, you can perform two unambiguous casts. For example:
 
@@ -137,14 +137,18 @@ void f() {
 
 Further ambiguities can be introduced when you use virtual base classes. Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows virtual base classes.](../cpp/media/vc39012.gif "Class hierarchy that shows virtual base classes") <br/>
+:::image type="complex" source="../cpp/media/vc39012.gif" alt-text="Diagram of a class hierarchy that shows virtual base classes.":::
+The diagram shows the classes A, B, C, D, and E arranged as follows: Class A is a base class of B. Classes C and E each derive from B. Class E also inherits from D, which inherits from class B, which inherits from class A.
+:::image-end:::  
 Class hierarchy that shows virtual base classes
 
-In this hierarchy, `A` is a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a **`dynamic_cast`** to a pointer to `B` will fail due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.
+In this hierarchy, `A` is a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a **`dynamic_cast`** to a pointer to `B` fails due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.
 
 Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows duplicate base classes.](../cpp/media/vc39013.gif "Class hierarchy that shows duplicate base classes") <br/>
+:::image type="complex" source="../cpp/media/vc39013.gif" alt-text="Diagram of a class hierarchy that shows duplicate base classes.":::
+The diagram shows the classes A, B, C, D, and E arranged as follows: Class B derives from Class A. Class C derives from class A. class D derives from class B. Class E derives from class C, which derives from class A. In this case, the duplicate base class is class A, which is directly or indirectly inherited by all the other classes. Class A is inherited directly by classes B and C, and indirectly by class D via class B, and indirectly by class E via class C, and indirectly in class D via class B.
+:::image-end:::  
 Class hierarchy that shows duplicate base classes
 
 Given an object of type `E` and a pointer to the `D` subobject, to navigate from the `D` subobject to the left-most `A` subobject, three conversions can be made. You can perform a **`dynamic_cast`** conversion from the `D` pointer to an `E` pointer, then a conversion (either **`dynamic_cast`** or an implicit conversion) from `E` to `B`, and finally an implicit conversion from `B` to `A`. For example:
@@ -165,9 +169,9 @@ void f(D* pd) {
 }
 ```
 
-The **`dynamic_cast`** operator can also be used to perform a "cross cast." Using the same class hierarchy, it is possible to cast a pointer, for example, from the `B` subobject to the `D` subobject, as long as the complete object is of type `E`.
+The **`dynamic_cast`** operator can also be used to perform a "cross cast." Using the same class hierarchy, it's possible to cast a pointer, for example, from the `B` subobject to the `D` subobject, as long as the complete object is of type `E`.
 
-Considering cross casts, it is actually possible to do the conversion from a pointer to `D` to a pointer to the left-most `A` subobject in just two steps. You can perform a cross cast from `D` to `B`, then an implicit conversion from `B` to `A`. For example:
+Considering cross casts, it's possible to do the conversion from a pointer to `D` to a pointer to the left-most `A` subobject in just two steps. You can perform a cross cast from `D` to `B`, then an implicit conversion from `B` to `A`. For example:
 
 ```cpp
 // dynamic_cast_6.cpp
@@ -186,7 +190,7 @@ void f(D* pd) {
 
 A null pointer value is converted to the null pointer value of the destination type by **`dynamic_cast`**.
 
-When you use `dynamic_cast < type-id > ( expression )`, if `expression` cannot be safely converted to type `type-id`, the run-time check causes the cast to fail. For example:
+When you use `dynamic_cast < type-id > ( expression )`, if `expression` can't be safely converted to type `type-id`, the run-time check causes the cast to fail. For example:
 
 ```cpp
 // dynamic_cast_7.cpp
@@ -201,7 +205,7 @@ void f() {
 }
 ```
 
-The value of a failed cast to pointer type is the null pointer. A failed cast to reference type throws a [bad_cast Exception](../cpp/bad-cast-exception.md).   If `expression` does not point to or reference a valid object, a `__non_rtti_object` exception is thrown.
+The value of a failed cast to pointer type is the null pointer. A failed cast to reference type throws a [bad_cast Exception](../cpp/bad-cast-exception.md).   If `expression` doesn't point to or reference a valid object, a `__non_rtti_object` exception is thrown.
 
 See [typeid](../cpp/typeid-operator.md) for an explanation of the `__non_rtti_object` exception.
 
@@ -209,7 +213,7 @@ See [typeid](../cpp/typeid-operator.md) for an explanation of the `__non_rtti_ob
 
 The following sample creates the base class (struct A) pointer, to an object (struct C).  This, plus the fact there are virtual functions, enables runtime polymorphism.
 
-The sample also calls a non-virtual function in the hierarchy.
+The sample also calls a nonvirtual function in the hierarchy.
 
 ```cpp
 // dynamic_cast_8.cpp
@@ -270,7 +274,7 @@ int main() {
     C ConStack;
     Globaltest(ConStack);
 
-   // will fail because B knows nothing about C
+   // fails because B knows nothing about C
     B BonStack;
     Globaltest(BonStack);
 }

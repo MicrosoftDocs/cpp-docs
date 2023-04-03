@@ -3,7 +3,6 @@ title: "Initializers"
 ms.date: "07/29/2019"
 description: "How to initialize classes, structs, arrays and fundamental types in C++."
 helpviewer_keywords: ["arrays [C++], array-element initializers", "aggregate initializers [C++]"]
-ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
 ---
 # Initializers
 
@@ -65,7 +64,7 @@ Initializers may take these forms:
 
 ## Kinds of initialization
 
-There are several kinds of initialization, which may occur at different points in program execution. Different kinds of initialization are not mutually exclusive—for example, list initialization can trigger value initialization and in other circumstances, it can trigger aggregate initialization.
+There are several kinds of initialization, which may occur at different points in program execution. Different kinds of initialization aren't mutually exclusive—for example, list initialization can trigger value initialization and in other circumstances, it can trigger aggregate initialization.
 
 ### Zero initialization
 
@@ -115,9 +114,9 @@ MyClass mc1;
 MyClass* mc3 = new MyClass;
 ```
 
-If the class, struct, or union does not have a default constructor, the compiler emits an error.
+If the class, struct, or union doesn't have a default constructor, the compiler emits an error.
 
-Scalar variables are default initialized when they are defined with no initialization expression. They have indeterminate values.
+Scalar variables are default initialized when they're defined with no initialization expression. They have indeterminate values.
 
 ```cpp
 int i1;
@@ -125,17 +124,17 @@ float f;
 char c;
 ```
 
-Arrays are default initialized when they are defined with no initialization expression. When an array is default-initialized, its members are default initialized and have indeterminate values, as in the following example:
+Arrays are default initialized when they're defined with no initialization expression. When an array is default-initialized, its members are default initialized and have indeterminate values, as in the following example:
 
 ```cpp
 int int_arr[3];
 ```
 
-If the array members do not have a default constructor, the compiler emits an error.
+If the array members don't have a default constructor, the compiler emits an error.
 
 #### Default initialization of constant variables
 
-Constant variables must be declared together with an initializer. If they are scalar types they cause a compiler error, and if they are class types that have a default constructor they cause a warning:
+Constant variables must be declared together with an initializer. If they're scalar types they cause a compiler error, and if they're class types that have a default constructor they cause a warning:
 
 ```cpp
 class MyClass{};
@@ -250,10 +249,10 @@ int main() {
 }
 ```
 
-Copy initialization cannot invoke explicit constructors.
+Copy initialization can't invoke explicit constructors.
 
 ```cpp
-vector<int> v = 10; // the constructor is explicit; compiler error C2440: cannot convert from 'int' to 'std::vector<int,std::allocator<_Ty>>'
+vector<int> v = 10; // the constructor is explicit; compiler error C2440: can't convert from 'int' to 'std::vector<int,std::allocator<_Ty>>'
 regex r = "a.*b"; // the constructor is explicit; same error
 shared_ptr<int> sp = new int(1729); // the constructor is explicit; same error
 ```
@@ -423,7 +422,7 @@ myArr3: 8 9 10 0 0
 
 #### Initializing unions and structs
 
-If a union does not have a constructor, you can initialize it with a single value (or with another instance of a union). The value is used to initialize the first non-static field. This is different from struct initialization, in which the first value in the initializer is used to initialize the first field, the second to initialize the second field, and so on. Compare the initialization of unions and structs in the following example:
+If a union doesn't have a constructor, you can initialize it with a single value (or with another instance of a union). The value is used to initialize the first non-static field. This is different from struct initialization, in which the first value in the initializer is used to initialize the first field, the second to initialize the second field, and so on. Compare the initialization of unions and structs in the following example:
 
 ```cpp
 struct MyStruct {
@@ -489,7 +488,7 @@ int main()
 }
 ```
 
-The only way to initialize a reference with a temporary object is to initialize a constant temporary object. Once initialized, a reference-type variable always points to the same object; it cannot be modified to point to another object.
+The only way to initialize a reference with a temporary object is to initialize a constant temporary object. Once initialized, a reference-type variable always points to the same object; it can't be modified to point to another object.
 
 Although the syntax can be the same, initialization of reference-type variables and assignment to reference-type variables are semantically different. In the preceding example, the assignments that change `iVar` and `lVar` look similar to the initializations, but have different effects. The initialization specifies the object to which the reference-type variable points; the assignment assigns to the referred-to object through the reference.
 
@@ -523,13 +522,15 @@ Reference-type variables can be declared without initializers only in the follow
 
 When initializing a reference-type variable, the compiler uses the decision graph shown in the following figure to select between creating a reference to an object or creating a temporary object to which the reference points.
 
-![Decision graph for initialization of reference types.](../cpp/media/vc38s71.gif "Decision graph for initialization of reference types") <br/>
+::image type="complex" source="../cpp/media/vc38s71.gif" alt-text="Decision graph for initialization of reference types.":::
+The decision graph begins with: is the initializer an lvalue of the same type or a type derived from the type of reference? If yes, the reference refers to the object specified in the initializer. If no, the next decision is whether the reference-type variable is a const T reference being initialized and can the initializer be implicitly converted to a T? If yes, the temporary is created and the reference variable becomes a name for that temporary. If no, it's an error.
+:::image-end:::
 Decision graph for initialization of reference types
 
-References to **`volatile`** types (declared as **`volatile`** *typename*<strong>&</strong> *identifier*) can be initialized with **`volatile`** objects of the same type or with objects that have not been declared as **`volatile`**. They cannot, however, be initialized with **`const`** objects of that type. Similarly, references to **`const`** types (declared as **`const`** *typename*<strong>&</strong> *identifier*) can be initialized with **`const`** objects of the same type (or anything that has a conversion to that type or with objects that have not been declared as **`const`**). They cannot, however, be initialized with **`volatile`** objects of that type.
+References to **`volatile`** types (declared as **`volatile`** *typename*<strong>&</strong> *identifier*) can be initialized with **`volatile`** objects of the same type or with objects that haven't been declared as **`volatile`**. They can't, however, be initialized with **`const`** objects of that type. Similarly, references to **`const`** types (declared as **`const`** *typename*<strong>&</strong> *identifier*) can be initialized with **`const`** objects of the same type (or anything that has a conversion to that type or with objects that haven't been declared as **`const`**). They can't, however, be initialized with **`volatile`** objects of that type.
 
-References that are not qualified with either the **`const`** or **`volatile`** keyword can be initialized only with objects declared as neither **`const`** nor **`volatile`**.
+References that aren't qualified with either the **`const`** or **`volatile`** keyword can be initialized only with objects declared as neither **`const`** nor **`volatile`**.
 
 ### Initialization of external variables
 
-Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as **`extern`**.
+Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables aren't declared as **`extern`**.
