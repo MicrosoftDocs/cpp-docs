@@ -113,7 +113,7 @@ int main() {
 }
 ```
 
-:::image type="complex" source="../cpp/media/vc39011.gif" alt-text="Class hierarchy that shows multiple inheritance.":::
+:::image type="complex" source="../cpp/media/vc39011.gif" alt-text="Diagram that shows multiple inheritance.":::
 The diagram shows a class hierarchy with A as a base class of B which is a base class of D. A is also a base class for C, which is a base class for D. Class D inherits from both B and C.
 :::image-end:::  
 
@@ -137,7 +137,7 @@ void f() {
 
 Further ambiguities can be introduced when you use virtual base classes. Consider the class hierarchy shown in the following figure.
 
-:::image type="complex" source="../cpp/media/vc39012.gif" alt-text="Class hierarchy that shows virtual base classes.":::
+:::image type="complex" source="../cpp/media/vc39012.gif" alt-text="Diagram of a class hierarchy that shows virtual base classes.":::
 The diagram shows the classes A, B, C, D, and E arranged as follows: Class A is a base class of B. Classes C and E each derive from B. Class E also inherits from D, which inherits from class B, which inherits from class A.
 :::image-end:::  
 Class hierarchy that shows virtual base classes
@@ -146,7 +146,7 @@ In this hierarchy, `A` is a virtual base class. Given an instance of class `E` a
 
 Consider the class hierarchy shown in the following figure.
 
-:::image type="complex" source="../cpp/media/vc39013.gif" alt-text="Class hierarchy that shows duplicate base classes.":::
+:::image type="complex" source="../cpp/media/vc39013.gif" alt-text="Diagram of a class hierarchy that shows duplicate base classes.":::
 The diagram shows the classes A, B, C, D, and E arranged as follows: Class B derives from Class A. Class C derives from class A. class D derives from class B. Class E derives from class C, which derives from class A. In this case, the duplicate base class is class A, which is directly or indirectly inherited by all the other classes. Class A is inherited directly by classes B and C, and indirectly by class D via class B, and indirectly by class E via class C, and indirectly in class D via class B.
 :::image-end:::  
 Class hierarchy that shows duplicate base classes

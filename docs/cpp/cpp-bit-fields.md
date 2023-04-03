@@ -34,7 +34,7 @@ struct Date {
 
 The conceptual memory layout of an object of type `Date` is shown in the following figure:
 
-:::image type="complex" source="../cpp/media/vc38uq1.png" alt-text="Memory layout of a date object, showing where the nWeekDay, nMonthDay, nMonth, and nYear bit fields fall.":::
+:::image type="complex" source="../cpp/media/vc38uq1.png" alt-text="Diagram of the memory layout of a date object, showing where the n WeekDay, n MonthDay, n Month, and n Year bit fields are located.":::
 32 bits of memory are displayed in a row. Starting with the least significant bit, 3 bits are for nWeekDay. The next 6 bits are for nMonthDay. The next 5 bits are for nMonth. The next 2 bits are unused. The next 8 bits are for nYear. The remaining 8 bits are unused.
 :::image-end:::  
 
@@ -62,8 +62,8 @@ struct Date {
 
 Then the memory layout is as shown in the following figure:
 
-:::image type="complex" source="../cpp/media/vc38uq2.png" alt-text="Layout of a Date object with a zero length bit field, which forces alignment padding.":::
-64 bits of memory are displayed in a row. Starting with the least significant bit, 5 bits are for nMonth. The next 8 bits are for nYear. The next 19 bits are unused. The next 3 bits are for nWeekDay. The next 6 bits are for nMonthDay. The remaining bits are unused.
+:::image type="complex" source="../cpp/media/vc38uq2.png" alt-text="Diagram of the layout of a Date object, with a zero length bit field, which forces alignment padding.":::
+64 bits of memory are displayed in a row. Starting with the least significant bit, 5 bits are for n Month. The next 8 bits are for n Year. The next 19 bits are unused. The next 3 bits are for n WeekDay. The next 6 bits are for n MonthDay. The remaining bits are unused.
 :::image-end:::  
 
 The underlying type of a bit field must be an integral type, as described in [Built-in types](../cpp/fundamental-types-cpp.md).

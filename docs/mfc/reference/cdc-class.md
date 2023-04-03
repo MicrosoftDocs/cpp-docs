@@ -2838,7 +2838,7 @@ A pointer to a `CBrush` object if successful; otherwise `NULL`.
 
 A halftone brush shows pixels that are alternately foreground and background colors to create a dithered pattern. The following diagram shows an example of a dithered pattern created by a halftone brush:
 
-:::image type="complex" source="../../mfc/reference/media/vc318s1.gif" alt-text="Detail of a dithered pen stroke.":::
+:::image type="complex" source="../../mfc/reference/media/vc318s1.gif" alt-text="Diagram that shows how a dithered pen stroke is composed.":::
 The diagram shows how the background color of black, and the foreground color of yellow, are combined into a pattern by alternating the black and yellow pixels with each other to create a dithered pen stroke.
 :::image-end:::  
 

@@ -18,8 +18,8 @@ The C++17 standard defines expression value categories as follows:
 
 The following diagram illustrates the relationships between the categories:
 
-:::image type="complex" source="media/value_categories.png" alt-text="C++ expression value categories.":::
-The diagram begins with a box labeled expression, which has two children: glvalue and rvalue. glvalue has two children: lvalue and xvalue. rvalue has two children: prvalue, and it shares xvalue, which is also a child of glvalue.
+:::image type="complex" source="media/value_categories.png" alt-text="Diagram of C++ expression value categories.":::
+The diagram begins with a box labeled expression, which has two children: glvalue and rvalue. glvalue has two children: lvalue and xvalue. rvalue has two children: prvalue and xvalue; xvalue is also a child of glvalue.
 :::image-end:::  
 
 
