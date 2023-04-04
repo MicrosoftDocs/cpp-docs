@@ -3,7 +3,6 @@ description: "Learn more about: C++ Bit Fields"
 title: "C++ Bit Fields"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["bitfields [C++]", "fields [C++], bit", "bit fields"]
-ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
 ---
 # C++ Bit Fields
 
@@ -15,7 +14,7 @@ Classes and structures can contain members that occupy less storage than an inte
 
 ## Remarks
 
-The (optional) *declarator* is the name by which the member is accessed in the program. It must be an integral type (including enumerated types). The *constant-expression* specifies the number of bits the member occupies in the structure. Anonymous bit fields — that is, bit-field members with no identifier — can be used for padding.
+The (optional) *declarator* is the name by which the member is accessed in the program. It must be an integral type (including enumerated types). The *constant-expression* specifies the number of bits the member occupies in the structure. Anonymous bit fields—that is, bit-field members with no identifier—can be used for padding.
 
 > [!NOTE]
 > An unnamed bit field of width 0 forces alignment of the next bit field to the next **type** boundary, where **type** is the type of the member.
@@ -33,20 +32,21 @@ struct Date {
 };
 ```
 
-The conceptual memory layout of an object of type `Date` is shown in the following figure.
+The conceptual memory layout of an object of type `Date` is shown in the following figure:
 
-![Memory layout of a date object, showing the nWeekDay, nMonthDay, nMonth, and nYear bit fields.](../cpp/media/vc38uq1.png "Memory layout of a date object") <br/>
-Memory Layout of Date Object
+:::image type="complex" source="../cpp/media/vc38uq1.png" alt-text="Diagram of the memory layout of a date object, showing where the n WeekDay, n MonthDay, n Month, and n Year bit fields are located.":::
+32 bits of memory are displayed in a row. Starting with the least significant bit, 3 bits are for nWeekDay. The next 6 bits are for nMonthDay. The next 5 bits are for nMonth. The next 2 bits are unused. The next 8 bits are for nYear. The remaining 8 bits are unused.
+:::image-end:::  
 
-Note that `nYear` is 8 bits long and would overflow the word boundary of the declared type, **`unsigned short`**. Therefore, it is begun at the beginning of a new **`unsigned short`**. It is not necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
+`nYear` is 8 bits long, which would overflow the word boundary of the declared type, **`unsigned short`**. Therefore, it starts at the beginning of a new **`unsigned short`**. It isn't necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
 
 **Microsoft Specific**
 
-The ordering of data declared as bit fields is from low to high bit, as shown in the figure above.
+The ordering of data declared as bit fields is from low to high bit, as shown in the previous figure.
 
 **END Microsoft Specific**
 
-If the declaration of a structure includes an unnamed field of length 0, as shown in the following example,
+If the declaration of a structure includes an unnamed field of length 0, as shown in the following example:
 
 ```cpp
 // bit_fields2.cpp
@@ -60,14 +60,15 @@ struct Date {
 };
 ```
 
-then the memory layout is as shown in the following figure:
+Then the memory layout is as shown in the following figure:
 
-![Layout of a Date object with a zero length bit field, which forces alignment padding.](../cpp/media/vc38uq2.png) <br/>
-Layout of Date Object with Zero-Length Bit Field
+:::image type="complex" source="../cpp/media/vc38uq2.png" alt-text="Diagram of the layout of a Date object, with a zero length bit field, which forces alignment padding.":::
+64 bits of memory are displayed in a row. Starting with the least significant bit, 5 bits are for n Month. The next 8 bits are for n Year. The next 19 bits are unused. The next 3 bits are for n WeekDay. The next 6 bits are for n MonthDay. The remaining bits are unused.
+:::image-end:::  
 
 The underlying type of a bit field must be an integral type, as described in [Built-in types](../cpp/fundamental-types-cpp.md).
 
-If the initializer for a reference of type `const T&` is an lvalue that refers to a bit field of type `T`, the reference is not bound to the bit field directly. Instead, the reference is bound to a temporary initialized to hold the value of the bit field.
+If the initializer for a reference of type `const T&` is an lvalue that refers to a bit field of type `T`, the reference isn't bound to the bit field directly. Instead, the reference is bound to a temporary initialized to hold the value of the bit field.
 
 ## Restrictions on bit fields
 

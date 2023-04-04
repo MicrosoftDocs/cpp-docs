@@ -5,7 +5,7 @@ ms.date: 02/01/2023
 f1_keywords: ["_ATL_ALL_WARNINGS", "_ATL_APARTMENT_THREADED", "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS ", "_ATL_ENABLE_PTM_WARNING", "_ATL_FREE_THREADED", "_ATL_MODULES", "_ATL_MULTI_THREADED", "_ATL_NO_AUTOMATIC_NAMESPACE", "_ATL_NO_COM_SUPPORT", "ATL_NO_VTABLE", "ATL_NOINLINE", "_ATL_SINGLE_THREADED"]
 helpviewer_keywords: ["compiler options, macros"]
 ---
-# Compiler Options Macros
+# Compiler Options Macros acrolinx
 
 These macros control specific compiler features.
 
@@ -14,7 +14,7 @@ These macros control specific compiler features.
 |[`_ATL_ALL_WARNINGS`](#_atl_all_warnings)|A symbol that enables errors in projects converted from previous versions of ATL.|
 |[`_ATL_APARTMENT_THREADED`](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|
 |[`_ATL_CSTRING_EXPLICIT_CONSTRUCTORS`](#_atl_cstring_explicit_constructors)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|
-|[`_ATL_ENABLE_PTM_WARNING`](#_atl_enable_ptm_warning)|Define this macro to require C++ standard syntax. It generates the C4867 compiler error when non-standard syntax is used to initialize a pointer to a member function.|
+|[`_ATL_ENABLE_PTM_WARNING`](#_atl_enable_ptm_warning)|Define this macro to require C++ standard syntax. It generates the C4867 compiler error when nonstandard syntax is used to initialize a pointer to a member function.|
 |[`_ATL_FREE_THREADED`](#_atl_free_threaded)|Define if one or more of your objects use free or neutral threading.|
 |[`_ATL_MODULES`](#_ATL_MODULES)|Allows you to compile ATL projects with [permissive-](../../build/reference/permissive-standards-conformance.md) and use ATL with [C++ modules](../../cpp/modules-cpp.md).|
 |[`_ATL_MULTI_THREADED`](#_atl_multi_threaded)|A symbol that indicates the project has objects marked as Both, Free or Neutral. The macro [`_ATL_FREE_THREADED`](#_atl_free_threaded) should be used instead.|
@@ -64,7 +64,7 @@ New projects have this `#define` set in *pch.h* (*stdafx.h* in Visual Studio 201
 
 Define if one or more of your objects use apartment threading.
 
-```
+```cpp
 _ATL_APARTMENT_THREADED
 ```
 
@@ -88,7 +88,7 @@ By using the `_T` macro on all constructor string arguments, you can define `_AT
 
 ## <a name="_atl_enable_ptm_warning"></a> `_ATL_ENABLE_PTM_WARNING`
 
-Define this macro in order to force the use of ANSI C++ standard-conforming syntax for pointer to member functions. Using this macro causes the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.
+Define this macro in order to force the use of ANSI C++ standard-conforming syntax for pointer to member functions. Using this macro causes the C4867 compiler error to be generated when nonstandard syntax is used to initialize a pointer to a member function.
 
 ```cpp
 #define _ATL_ENABLE_PTM_WARNING
@@ -100,7 +100,7 @@ The ATL and MFC libraries have been changed to match the Microsoft C++ compiler'
 
 When [`_ATL_ENABLE_PTM_WARNING`](#_atl_enable_ptm_warning) isn't defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define `_ATL_ENABLE_PTM_WARNING`, your code should conform to the C++ standard.
 
-However, the non-standard form has been deprecated. You need to move existing code to C++ standard syntax. For example, the following code:
+However, the nonstandard form has been deprecated. You need to move existing code to C++ standard syntax. For example, the following code:
 
 [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]
 
@@ -132,7 +132,7 @@ _ATL_MODULES
 
 ## <a name="_atl_multi_threaded"></a> `_ATL_MULTI_THREADED`
 
-A symbol that indicates the project will have objects that are marked as Both, Free or Neutral.
+A symbol that indicates the project has objects that are marked as Both, Free or Neutral.
 
 ```
 _ATL_MULTI_THREADED
@@ -193,11 +193,11 @@ A symbol that indicates a function shouldn't be inlined.
 ### Parameters
 
 *`myfunction`*\
-The function that should not be inlined.
+The function that shouldn't be inlined.
 
 ### Remarks
 
-Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to `__declspec(noinline)`.
+Use this symbol if you want to ensure a function doesn't get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to `__declspec(noinline)`.
 
 ## <a name="_atl_single_threaded"></a> `_ATL_SINGLE_THREADED`
 
