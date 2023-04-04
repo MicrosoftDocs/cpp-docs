@@ -4,11 +4,10 @@ title: "friend (C++)"
 ms.date: 06/30/2022
 f1_keywords: ["friend_cpp"]
 helpviewer_keywords: ["member access, from friend functions", "friend classes [C++]", "friend keyword [C++]"]
-ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
 ---
 # `friend` (C++)
 
-In some circumstances, it's useful for a class to grant member-level access to functions that aren't members of the class, or to all members in a separate class. These free functions and classes are known as *friends*, marked by the **`friend`** keyword. Only the class implementer can declare who its friends are. A function or class can't declare itself as a friend of any class. In a class definition, use the **`friend`** keyword and the name of a non-member function or other class to grant it access to the private and protected members of your class. In a template definition, a type parameter can be declared as a **`friend`**.
+In some circumstances, it's useful for a class to grant member-level access to functions that aren't members of the class, or to all members in a separate class. These free functions and classes are known as *friends*, marked by the **`friend`** keyword. Only the class implementer can declare who its friends are. A function or class can't declare itself as a friend of any class. In a class definition, use the **`friend`** keyword and the name of a nonmember function or other class to grant it access to the private and protected members of your class. In a template definition, a type parameter can be declared as a **`friend`**.
 
 ## Syntax
 
@@ -225,8 +224,9 @@ Friendship isn't inherited, meaning that classes derived from `YourOtherClass` c
 
 The following figure shows four class declarations: `Base`, `Derived`, `aFriend`, and `anotherFriend`. Only class `aFriend` has direct access to the private members of `Base` (and to any members `Base` might have inherited).
 
-![Diagram showing the derivation implications of a friend relationship.](../cpp/media/vc38v41.gif "Implications of friend relationship") <br/>
-Implications of friend relationship
+:::image type="complex" source="../cpp/media/vc38v41.gif" alt-text="A diagram that shows the derivation implications of a friend relationship.":::
+The diagram shows that class anotherFriend doesn't have a friend relationship with class base which friends class aFriend. Class aFriend is friended by class Base, but it doesn't have a friend relationship with class Derived even though class Derived inherits from Base. This demonstrates that inheritance doesn't imply that the derived class has the same friends as the base class.
+:::image-end:::
 
 ## Inline `friend` definitions
 

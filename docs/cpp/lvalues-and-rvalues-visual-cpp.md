@@ -3,7 +3,6 @@ description: "Learn more about: Lvalues and Rvalues (C++)"
 title: "Value Categories: Lvalues and Rvalues (C++)"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["R-values [C++]", "L-values [C++]"]
-ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
 ---
 # Lvalues and Rvalues (C++)
 
@@ -14,16 +13,19 @@ The C++17 standard defines expression value categories as follows:
 - A *glvalue* is an expression whose evaluation determines the identity of an object, bit-field, or function.
 - A *prvalue* is an expression whose evaluation initializes an object or a bit-field, or computes the value of the operand of an operator, as specified by the context in which it appears.
 - An *xvalue* is a glvalue that denotes an object or bit-field whose resources can be reused (usually because it is near the end of its lifetime). Example: Certain kinds of expressions involving rvalue references (8.3.2) yield xvalues, such as a call to a function whose return type is an rvalue reference or a cast to an rvalue reference type.
-- An *lvalue* is a glvalue that is not an xvalue.
+- An *lvalue* is a glvalue that isn't an xvalue.
 - An *rvalue* is a prvalue or an xvalue.
 
 The following diagram illustrates the relationships between the categories:
 
-![C++ expression value categories.](media/value_categories.png "C++ expression value categories")
+:::image type="complex" source="media/value_categories.png" alt-text="Diagram of C++ expression value categories.":::
+The diagram begins with a box labeled expression, which has two children: glvalue and rvalue. glvalue has two children: lvalue and xvalue. rvalue has two children: prvalue and xvalue; xvalue is also a child of glvalue.
+:::image-end:::  
+
 
 An lvalue has an address that your program can access. Examples of lvalue expressions include variable names, including **`const`** variables, array elements, function calls that return an lvalue reference, bit-fields, unions, and class members.
 
-A prvalue expression has no address that is accessible by your program. Examples of prvalue expressions include literals, function calls that return a non-reference type, and temporary objects that are created during expression evaluation but accessible only by the compiler.
+A prvalue expression has no address that is accessible by your program. Examples of prvalue expressions include literals, function calls that return a nonreference type, and temporary objects that are created during expression evaluation but accessible only by the compiler.
 
 An xvalue expression has an address that no longer accessible by your program but can be used to initialize an rvalue reference, which provides access to the expression. Examples include function calls that return an rvalue reference, and the array subscript, member and pointer to member expressions where the array or object is an rvalue reference.
 
